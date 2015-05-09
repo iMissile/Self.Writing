@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://heckyesmarkdown.com/go/ -->
+<html g_init="6839"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Avoiding common data-interpretation errors – @ASmartBear</title>
+  <link href="./Avoiding common data-interpretation errors – @ASmartBear_files/css" rel="stylesheet" type="text/css">
+  <link href="./Avoiding common data-interpretation errors – @ASmartBear_files/css(1)" rel="stylesheet" type="text/css">
+  <link href="http://heckyesmarkdown.com/go/css/amblin.css" rel="stylesheet">
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body class="inverted">
+  <header>
+    <p id="back"><a href="http://heckyesmarkdown.com/?u=http%3A%2F%2Fblog.asmartbear.com%2Fdata-interpretation-mistakes.html&read=1" title="Home"># heckyesmarkdown.com</a></p>
+    <div id="d_clip_container">
+			<a id="d_clip_button" class="my_clip_button">Copy</a>
+		<div style="position: absolute; left: 0px; top: 3px; width: 94px; height: 23px; z-index: 99;"><embed id="ZeroClipboardMovie_1" src="ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="94" height="23" name="ZeroClipboardMovie_1" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=1&amp;width=94&amp;height=23" wmode="transparent"></div></div>
+				<a id="previewbutton" class="my_clip_button">Close preview</a>
+		    <form action="./Avoiding common data-interpretation errors – @ASmartBear_files/Avoiding common data-interpretation errors – @ASmartBear.html" method="post">
+      <input type="hidden" name="u" value="http://blog.asmartbear.com/data-interpretation-mistakes.html">
+      <input type="hidden" name="showframe" value="1">
+            
+        <input type="submit" name="submit" value="Again"> <label for="read"><input type="checkbox" id="read" name="read" value="1" checked="checked"> with Readability</label>
+          <!--<label for="preview"> <input type="checkbox" name="preview" id="preview" value="1" > and view as HTML</label> -->
+
+    </form>
+
+  </header>
+<article>
+<div id="preblock">
+<div id="previewdiv"><p><a href="http://blog.asmartbear.com/data-interpretation-mistakes.html" title="Permalink to Avoiding common data-interpretation errors – @ASmartBear">Source</a></p>
+
+<h1 id="avoidingcommondata-interpretationerrors–asmartbear">Avoiding common data-interpretation errors –&nbsp;@ASmartBear</h1>
+
+<p>They say “statistics lie,” but they don’t. People do.</p>
+
+<p>Well, that’s a little harsh. Sure <em>some </em>people intentionally skew numbers and selectively pull data, but most folks misinterpret data by accident.</p>
+
+<p>Why do you care if you’re not a scientist? &nbsp;Because you collect data about your business all the time&nbsp;— web traffic, revenue sources, expenses, customer behavior&nbsp;— and make decisions based on your (mis)understanding of that data.</p>
+
+<p>Here’s a few basic mistakes I encounter constantly.</p>
+
+<h3 id="statisticsdonttellthewholestory">Statistics don’t tell the whole&nbsp;story</h3>
+
+<p>It’s easy to boil a data set down to a single number, like an average. Easy&nbsp;— and often shortsighted.</p>
+
+<p>Single numbers feel powerful; you feel able to wrap your mind around a lot of data. Sometimes that is indeed useful, but it can also obscure the truth.</p>
+
+<p>Consider <a href="http://en.wikipedia.org/wiki/Anscombe's_quartet" title="Wikipedia has more detail">Anscombe’s Quartet</a>, four graphs that have <em>identical</em> statistical properties, yet clearly represent four distinct processes:</p>
+
+<figure>
+<img src="./Avoiding common data-interpretation errors – @ASmartBear_files/anscombe-quartet.png" alt="anscombe quartet" id="2" title="anscombe quartet">
+<figcaption>anscombe quartet</figcaption></figure>
+
+<p>Since the statistics are identical in each case, it’s clear that statistics alone don’t describe what’s actually happening with the data.</p>
+
+<p>The true story of each graph:</p>
+
+<ol>
+<li>The process is mostly linear. The best-fit line is handy in describing the relationship, but there are other possibly-random factors at work as well.</li>
+<li>The data are perfectly related, but not linear. Applying typical linear statistics is just wrong.</li>
+<li>The data are perfectly linear, with one outlier. Probably the outlier should be ignored, and the best-fit line should reflect the other points.</li>
+<li>The data don’t vary at all in the <em>x</em> direction, except for an outlier which probably should be ignored. All the standard statistical numbers are useless.</li>
+</ol>
+
+<p><strong>Lessons:</strong></p>
+
+<ul>
+<li>Processes can’t be boiled down to a single number.</li>
+<li>Blindly applying statistics doesn’t explain what’s happening.</li>
+<li>Charts can help.</li>
+</ul>
+
+<h3 id="averageisoftenuseless">“Average” is often&nbsp;useless</h3>
+
+<p>You can’t open an analytics tool without being attacked by averages:&nbsp;Average hits/day, average conversion ratios, average transaction size, average time on site.</p>
+
+<p>Trouble is, the average is often not only useless, but misleading. Take “average time-on-site,” a typical web analytics metric. It’s important enough in Google Analytics that it appears on the top-level site information dashboard, as shown in this real example from my blog:</p>
+
+<figure>
+<img src="./Avoiding common data-interpretation errors – @ASmartBear_files/google-analytics-avg-time-on-site.png" alt="Average time on site, Google Analytics" id="3" title="Average time on site, Google Analytics">
+<figcaption>Average time on site, Google Analytics</figcaption></figure>
+
+<p>Of course it’s better if a visitor spends longer on a site because it means they’re engaged.</p>
+
+<p><strong>Is 1:33 good? Actually that’s the wrong question.</strong> The true story&nbsp;becomes clear when you break this single number into pieces:</p>
+
+<figure>
+<img src="./Avoiding common data-interpretation errors – @ASmartBear_files/annotated-time-on-site-bi-modal.png" alt="annotated-time-on-site-bi-modal" id="4" title="annotated-time-on-site-bi-modal">
+<figcaption>annotated-time-on-site-bi-modal</figcaption></figure>
+
+<p>The “average” time-on-site of 93 seconds is useless when trying to explain user behavior. The correct way to think about time-on-site is:</p>
+
+<ol>
+<li>Most visitors “bounce” off the site without really looking at it.</li>
+<li>About a third of the visitors stayed long enough to read some articles.</li>
+</ol>
+
+<p>Furthermore, the way you optimize #1 and #2 are completely different:</p>
+
+<ol>
+<li>Bouncing can indicate that the traffic source is poor (i.e. we attracted eyeballs, but they weren’t the right eyeballs) or the landing page was poor (i.e. we attracted the right eyeballs, but we failed to lure them into reading further).</li>
+<li>Getting a few minutes of time on a blog is already “success.” Trying to get someone to stay even longer (e.g. 10 minutes instead of 5) probably isn’t useful. So the better question is: How do we get more people into this category, rather than trying to “increase the average” in this category?</li>
+</ol>
+
+<p>So not only is the average value 1:33 useless in <em>describing reality</em>, it’s useless in deciding <em>what to do next</em>.</p>
+
+<p><strong>Lessons:</strong></p>
+
+<ul>
+<li>The simple “average” is often meaningless.</li>
+<li>Using a single number to describe a process obscures the truth.</li>
+<li>Using a single number to describe a process prevents you from learning how to improve and optimize.</li>
+</ul>
+
+<h3 id="thedangersoftop10″andothers">The dangers of “Top 10″ and&nbsp;”Others"</h3>
+
+<p>Whether it’s a cover article in Cosmo or a web analytics report, people love to read "Top 10″ lists.</p>
+
+<p>Top lists can be useful. For example, here are the origins of search engine traffic to my blog:</p>
+
+<figure>
+<img src="./Avoiding common data-interpretation errors – @ASmartBear_files/top-search-engines-barchart.png" alt="top search engines" id="5" title="top search engines">
+<figcaption>top search engines</figcaption></figure>
+
+<p>There are several “other” search engines (e.g. Ask and AOL), but the traffic doesn’t amount to a hill of beans (as we say in Texas). It’s useful to cut those out of the chart because they’re just noise.</p>
+
+<p>The trouble starts when “Other” isn’t so trivial. The following chart is a real report from a board meeting I was in years ago (only the names and layout have been altered):</p>
+
+<figure>
+<img src="./Avoiding common data-interpretation errors – @ASmartBear_files/top-accounts-four.png" alt="top accounts no other" id="6" title="top accounts no other">
+<figcaption>top accounts no other</figcaption></figure>
+
+<p>Looks fine. But later I was poking around the data myself and decided to add a category for “Others”:</p>
+
+<figure>
+<img src="./Avoiding common data-interpretation errors – @ASmartBear_files/top-accounts-four-other.png" alt="top-accounts-four-other" id="7" title="top-accounts-four-other">
+<figcaption>top-accounts-four-other</figcaption></figure>
+
+<p>Some people call this the&nbsp;<a href="http://en.wikipedia.org/wiki/The_Long_Tail" title="Wikipedia definition ">Long Tail</a>&nbsp;— a pattern&nbsp;wherein a few big players are far larger than any other single player, but when you add up all the little players they collectively match or&nbsp;— as in this case&nbsp;— tower over the big players.</p>
+
+<p>If you discover a Long Tail in your data, there’s several ways to react. Consider the case of having a Long Tail in sales of your product line, as with iTunes and Amazon who have a few blockbuster hits plus a long tail containing millions of products that sell infrequently. Here are four opposing viewpoints of how you could approach the situation:</p>
+
+<ul>
+<li>The Long Tail is too expensive to sell into because it requires reaching a lot of people, each of whom don’t give us much money, so&nbsp;<a href="http://www.newstatesman.com/business/2009/05/anderson-wired-business" title="Andrew Orlowski argues that there&#39;s a lack of empirical evidence of the Long Tail effect actually working">it won’t be cost-effective</a>.</li>
+<li>The Long Tail is the least expensive way to sell because it means reaching under-served&nbsp;markets, which means cheap ads and hungry customers.</li>
+<li>Addressing the Long Tail means we have to be all things to all people, and that means we’re unfocused. Instead, let’s try to be #1 at one thing.</li>
+<li>Trying to be #1 at anything is hard, and often the spoils go to those with the most money, not to the smartest or most passionate. Rather than fight the 800-pound&nbsp;gorilla, let’s address the rest of the market that gorillas&nbsp;ignore, but which contains a ton of potential business.</li>
+</ul>
+
+<p>No one of these views is automatically correct. For example, iTunes gets most of their revenue from the big players (contrary to “common” knowledge), but other companies like <a href="http://www.beatport.com/" title="Beatport company home page">Beatport</a> make millions of dollars off the Long Tail of niche music markets (electronic music, in their case).</p>
+
+<p>The only wrong thing is to <em>ignore</em> your “Others” column.</p>
+
+<p><strong>Lessons:</strong></p>
+
+<ul>
+<li>"Top 10″ lists can hide important data.</li>
+<li>Any time you truncate data you must first be certain you’re not throwing away important information.</li>
+<li>Data patterns like the “Long Tail” aren’t “good” or “bad” <em>per se. </em>There are usually many equally-viable ways for you to react.</li>
+</ul>
+
+<h3 id="metricsandstatisticsrulescannotbeappliedblindly">Metrics and statistics “rules” cannot be applied&nbsp;blindly</h3>
+
+<p>Consider the following (intentionally unlabelled) chart:</p>
+
+<figure>
+<img src="./Avoiding common data-interpretation errors – @ASmartBear_files/mystery-data.png" alt="mystery data" id="11" title="mystery data">
+<figcaption>mystery data</figcaption></figure>
+
+<p>It’s tempting to start making observations:</p>
+
+<ul>
+<li>The average value is 57. (But you already know this is crap, right?)</li>
+<li>The value is generally increasing as we move to the right.</li>
+<li>Some data is missing. Maybe they should be discarded.</li>
+</ul>
+
+<p>Unfortunately, even these basic observations are assumptions, and could be wrong depending on context. Consider these&nbsp;scenarios:</p>
+
+<ol>
+<li>These are a student’s test scores over time. The student was failing and not turning in assignments. However, in the middle of the period the student hired a tutor. Results improved, and by the end of the class the student had mastered the material.This student should probably be awarded an A or B because of the clear improvement and steady results at the end of the year when tests are hardest. <strong>The student should not receive a grade of 57&nbsp;— the average. </strong></li>
+<li>Each result represents a survey of one person on the effectiveness of a certain advertisement.The “zero” rating from subjects #2 and #4 is real data, and it’s a bad sign. This could indicate something drastically wrong with the ad, for example being offensive. We need to dig in with those participants and learn more about this failure.In general the average value&nbsp;— including the zeros&nbsp;— is probably a useful indication of the ad’s overall effectiveness. It’s curious that the results “improved” so much in later trials since the participants were supposed to be randomized. &nbsp;This may indicate a bias in the test itself.</li>
+</ol>
+
+<p>An interesting result of #1 is that <strong>in order to obtain a useful “average” value we ought to throw away almost all our data points!</strong> The opposite is true with #2.</p>
+
+<p>The point is that the <em>context</em> for the data determines how the data is interpreted. You can’t blindly apply a “rule,” such as which data points can be ignored.</p>
+
+<p><strong>Lessons:</strong></p>
+
+<ul>
+<li>You have to&nbsp;_interpret_ results <em>in context</em>, not blindly apply formulas.</li>
+<li>Form a theory first, then see whether the data supports or invalidates your theory.</li>
+</ul>
+
+<h3 id="formulasarenotasubstituteforthinking.">Formulas are not a substitute for&nbsp;thinking.</h3>
+
+<p>Like any tool, statistics is useful when used properly and dangerous otherwise. Like any algorithm, garbage in yields garbage out.</p>
+
+<p>Yes this means “metrics analysis” is harder than it looks. Yes this means you have to take time with your data and verify your thought process with others.</p>
+
+<p>But what’s the alternative? Thinking about your processes incorrectly and then wasting time on senseless “solutions?”</p>
+
+<p>Final lesson: <strong>Since metrics are hard and take time and effort to get correct, don’t attempt to measure and act on 100 variables.</strong> Pick just a few you really understand and can act on, and optimize with those alone. You’re more likely to make a genuine, positive change in your business.</p>
+
+<p>**What tips do you have? <a href="http://blog.asmartbear.com/data-interpretation-mistakes.html#respond">**Leave a comment</a> and join the conversation.</p></div>
+<div id="maindiv" class="hyphenate markdown hljs " style="display: none;">
+[<span class="hljs-link_label">Source</span>](<a href="http://blog.asmartbear.com/data-interpretation-mistakes.html"><span class="hljs-link_url">http://blog.asmartbear.com/data-interpretation-mistakes.html</span></a><span class="hljs-link_url"> "Permalink to Avoiding common data-interpretation errors – @ASmartBear"</span>)
+
+<span class="hljs-header"># Avoiding common data-interpretation errors – @ASmartBear</span>
+
+They say "statistics lie," but they don't. People do.
+
+Well, that's a little harsh. Sure <span class="hljs-emphasis">_some _</span>people intentionally skew numbers and selectively pull data, but most folks misinterpret data by accident.
+
+Why do you care if you're not a scientist? &nbsp;Because you collect data about your business all the time&nbsp;— web traffic, revenue sources, expenses, customer behavior&nbsp;— and make decisions based on your (mis)understanding of that data.
+
+Here's a few basic mistakes I encounter constantly.
+
+<span class="hljs-header">### **Statistics don't tell the whole story**</span>
+
+It's easy to boil a data set down to a single number, like an average. Easy&nbsp;— and often shortsighted.
+
+Single numbers feel powerful; you feel able to wrap your mind around a lot of data. Sometimes that is indeed useful, but it can also obscure the truth.
+
+Consider <a href="javascript:void()" class="reflink" original-title="http://en.wikipedia.org/wiki/Anscombe&#39;s_quartet">[<span class="hljs-link_label">Anscombe's Quartet</span>][<span class="hljs-link_reference">1</span>]</a>, four graphs that have <span class="hljs-emphasis">_identical_</span> statistical properties, yet clearly represent four distinct processes:
+
+!<a href="javascript:void()" class="reflink" original-title="http://asmartbear.wpengine.netdna-cdn.com/wp-content/uploads/anscombe-quartet.png">[<span class="hljs-link_label">anscombe quartet</span>][<span class="hljs-link_reference">2</span>]</a>
+
+Since the statistics are identical in each case, it's clear that statistics alone don't describe what's actually happening with the data.
+
+The true story of each graph:
+
+<span class="hljs-bullet">1. </span>The process is mostly linear. The best-fit line is handy in describing the relationship, but there are other possibly-random factors at work as well.
+<span class="hljs-bullet">2. </span>The data are perfectly related, but not linear. Applying typical linear statistics is just wrong.
+<span class="hljs-bullet">3. </span>The data are perfectly linear, with one outlier. Probably the outlier should be ignored, and the best-fit line should reflect the other points.
+<span class="hljs-bullet">4. </span>The data don't vary at all in the <span class="hljs-emphasis">_x_</span> direction, except for an outlier which probably should be ignored. All the standard statistical numbers are useless.
+
+<span class="hljs-strong">**Lessons:**</span>
+
+<span class="hljs-bullet">* </span>Processes can't be boiled down to a single number.
+<span class="hljs-bullet">* </span>Blindly applying statistics doesn't explain what's happening.
+<span class="hljs-bullet">* </span>Charts can help.
+
+<span class="hljs-header">### **"Average" is often useless**</span>
+
+You can't open an analytics tool without being attacked by averages:&nbsp;Average hits/day, average conversion ratios, average transaction size, average time on site.
+
+Trouble is, the average is often not only useless, but misleading. Take "average time-on-site," a typical web analytics metric. It's important enough in Google Analytics that it appears on the top-level site information dashboard, as shown in this real example from my blog:
+
+!<a href="javascript:void()" class="reflink" original-title="http://asmartbear.wpengine.netdna-cdn.com/wp-content/uploads/google-analytics-avg-time-on-site.png">[<span class="hljs-link_label">Average time on site, Google Analytics</span>][<span class="hljs-link_reference">3</span>]</a>
+
+Of course it's better if a visitor spends longer on a site because it means they're engaged.
+
+<span class="hljs-strong">**Is 1:33 good? Actually that's the wrong question.**</span> The true story&nbsp;becomes clear when you break this single number into pieces:
+
+!<a href="javascript:void()" class="reflink" original-title="http://asmartbear.wpengine.netdna-cdn.com/wp-content/uploads/annotated-time-on-site-bi-modal.png">[<span class="hljs-link_label">annotated-time-on-site-bi-modal</span>][<span class="hljs-link_reference">4</span>]</a>
+
+The "average" time-on-site of 93 seconds is useless when trying to explain user behavior. The correct way to think about time-on-site is:
+
+<span class="hljs-bullet">1. </span>Most visitors "bounce" off the site without really looking at it.
+<span class="hljs-bullet">2. </span>About a third of the visitors stayed long enough to read some articles.
+
+Furthermore, the way you optimize #1 and #2 are completely different:
+
+<span class="hljs-bullet">1. </span>Bouncing can indicate that the traffic source is poor (i.e. we attracted eyeballs, but they weren't the right eyeballs) or the landing page was poor (i.e. we attracted the right eyeballs, but we failed to lure them into reading further).
+<span class="hljs-bullet">2. </span>Getting a few minutes of time on a blog is already "success." Trying to get someone to stay even longer (e.g. 10 minutes instead of 5) probably isn't useful. So the better question is: How do we get more people into this category, rather than trying to "increase the average" in this category?
+
+So not only is the average value 1:33 useless in <span class="hljs-emphasis">_describing reality_</span>, it's useless in deciding <span class="hljs-emphasis">_what to do next_</span>.
+
+<span class="hljs-strong">**Lessons:**</span>
+
+<span class="hljs-bullet">* </span>The simple "average" is often meaningless.
+<span class="hljs-bullet">* </span>Using a single number to describe a process obscures the truth.
+<span class="hljs-bullet">* </span>Using a single number to describe a process prevents you from learning how to improve and optimize.
+
+<span class="hljs-header">### **The dangers of "Top 10″ and "Others"**</span>
+
+Whether it's a cover article in Cosmo or a web analytics report, people love to read "Top 10″ lists.
+
+Top lists can be useful. For example, here are the origins of search engine traffic to my blog:
+
+!<a href="javascript:void()" class="reflink" original-title="http://asmartbear.wpengine.netdna-cdn.com/wp-content/uploads/top-search-engines-barchart.png">[<span class="hljs-link_label">top search engines</span>][<span class="hljs-link_reference">5</span>]</a>
+
+There are several "other" search engines (e.g. Ask and AOL), but the traffic doesn't amount to a hill of beans (as we say in Texas). It's useful to cut those out of the chart because they're just noise.
+
+The trouble starts when "Other" isn't so trivial. The following chart is a real report from a board meeting I was in years ago (only the names and layout have been altered):
+
+!<a href="javascript:void()" class="reflink" original-title="http://asmartbear.wpengine.netdna-cdn.com/wp-content/uploads/top-accounts-four.png">[<span class="hljs-link_label">top accounts no other</span>][<span class="hljs-link_reference">6</span>]</a>
+
+Looks fine. But later I was poking around the data myself and decided to add a category for "Others":
+
+!<a href="javascript:void()" class="reflink" original-title="http://asmartbear.wpengine.netdna-cdn.com/wp-content/uploads/top-accounts-four-other.png">[<span class="hljs-link_label">top-accounts-four-other</span>][<span class="hljs-link_reference">7</span>]</a>
+
+Some people call this the&nbsp;<a href="javascript:void()" class="reflink" original-title="http://en.wikipedia.org/wiki/The_Long_Tail">[<span class="hljs-link_label">Long Tail</span>][<span class="hljs-link_reference">8</span>]</a>&nbsp;— a pattern&nbsp;wherein a few big players are far larger than any other single player, but when you add up all the little players they collectively match or&nbsp;— as in this case&nbsp;— tower over the big players.
+
+If you discover a Long Tail in your data, there's several ways to react. Consider the case of having a Long Tail in sales of your product line, as with iTunes and Amazon who have a few blockbuster hits plus a long tail containing millions of products that sell infrequently. Here are four opposing viewpoints of how you could approach the situation:
+
+<span class="hljs-bullet">* </span>The Long Tail is too expensive to sell into because it requires reaching a lot of people, each of whom don't give us much money, so&nbsp;<a href="javascript:void()" class="reflink" original-title="http://www.newstatesman.com/business/2009/05/anderson-wired-business">[<span class="hljs-link_label">it won't be cost-effective</span>][<span class="hljs-link_reference">9</span>]</a>.
+<span class="hljs-bullet">* </span>The Long Tail is the least expensive way to sell because it means reaching under-served&nbsp;markets, which means cheap ads and hungry customers.
+<span class="hljs-bullet">* </span>Addressing the Long Tail means we have to be all things to all people, and that means we're unfocused. Instead, let's try to be #1 at one thing.
+<span class="hljs-bullet">* </span>Trying to be #1 at anything is hard, and often the spoils go to those with the most money, not to the smartest or most passionate. Rather than fight the 800-pound&nbsp;gorilla, let's address the rest of the market that gorillas&nbsp;ignore, but which contains a ton of potential business.
+
+No one of these views is automatically correct. For example, iTunes gets most of their revenue from the big players (contrary to "common" knowledge), but other companies like <a href="javascript:void()" class="reflink" original-title="http://www.beatport.com">[<span class="hljs-link_label">Beatport</span>][<span class="hljs-link_reference">10</span>]</a> make millions of dollars off the Long Tail of niche music markets (electronic music, in their case).
+
+The only wrong thing is to <span class="hljs-emphasis">_ignore_</span> your "Others" column.
+
+<span class="hljs-strong">**Lessons:**</span>
+
+<span class="hljs-bullet">* </span>"Top 10″ lists can hide important data.
+<span class="hljs-bullet">* </span>Any time you truncate data you must first be certain you're not throwing away important information.
+<span class="hljs-bullet">* </span>Data patterns like the "Long Tail" aren't "good" or "bad" <span class="hljs-emphasis">_per se. _</span>There are usually many equally-viable ways for you to react.
+
+<span class="hljs-header">### **Metrics and statistics "rules" cannot be applied blindly**</span>
+
+Consider the following (intentionally unlabelled) chart:
+
+!<a href="javascript:void()" class="reflink" original-title="http://asmartbear.wpengine.netdna-cdn.com/wp-content/uploads/mystery-data.png">[<span class="hljs-link_label">mystery data</span>][<span class="hljs-link_reference">11</span>]</a>
+
+It's tempting to start making observations:
+
+<span class="hljs-bullet">* </span>The average value is 57. (But you already know this is crap, right?)
+<span class="hljs-bullet">* </span>The value is generally increasing as we move to the right.
+<span class="hljs-bullet">* </span>Some data is missing. Maybe they should be discarded.
+
+Unfortunately, even these basic observations are assumptions, and could be wrong depending on context. Consider these&nbsp;scenarios:
+
+<span class="hljs-bullet">1. </span>These are a student's test scores over time. The student was failing and not turning in assignments. However, in the middle of the period the student hired a tutor. Results improved, and by the end of the class the student had mastered the material.This student should probably be awarded an A or B because of the clear improvement and steady results at the end of the year when tests are hardest. <span class="hljs-strong">**The student should not receive a grade of 57&nbsp;— the average. **</span>
+<span class="hljs-bullet">2. </span>Each result represents a survey of one person on the effectiveness of a certain advertisement.The "zero" rating from subjects #2 and #4 is real data, and it's a bad sign. This could indicate something drastically wrong with the ad, for example being offensive. We need to dig in with those participants and learn more about this failure.In general the average value&nbsp;— including the zeros&nbsp;— is probably a useful indication of the ad's overall effectiveness. It's curious that the results "improved" so much in later trials since the participants were supposed to be randomized. &nbsp;This may indicate a bias in the test itself.
+
+An interesting result of #1 is that <span class="hljs-strong">**in order to obtain a useful "average" value we ought to throw away almost all our data points!**</span> The opposite is true with #2.
+
+The point is that the <span class="hljs-emphasis">_context_</span> for the data determines how the data is interpreted. You can't blindly apply a "rule," such as which data points can be ignored.
+
+<span class="hljs-strong">**Lessons:**</span>
+
+<span class="hljs-bullet">* </span>You have to&nbsp;<span class="hljs-emphasis">_interpret_</span> results <span class="hljs-emphasis">_in context_</span>, not blindly apply formulas.
+<span class="hljs-bullet">* </span>Form a theory first, then see whether the data supports or invalidates your theory.
+
+<span class="hljs-header">### **Formulas are not a substitute for thinking.**</span>
+
+Like any tool, statistics is useful when used properly and dangerous otherwise. Like any algorithm, garbage in yields garbage out.
+
+Yes this means "metrics analysis" is harder than it looks. Yes this means you have to take time with your data and verify your thought process with others.
+
+But what's the alternative? Thinking about your processes incorrectly and then wasting time on senseless "solutions?"
+
+Final lesson: <span class="hljs-strong">**Since metrics are hard and take time and effort to get correct, don't attempt to measure and act on 100 variables.**</span> Pick just a few you really understand and can act on, and optimize with those alone. You're more likely to make a genuine, positive change in your business.
+
+<span class="hljs-strong">**What tips do you have? </span><a href="javascript:void()" class="reflink" original-title="http://blog.asmartbear.com/data-interpretation-mistakes.html#respond"><span class="hljs-strong">[**</span>Leave a comment][12]</a> and join the conversation.
+
+[<span class="hljs-link_reference">1</span>]:<span class="hljs-link_url"> </span><a href="http://en.wikipedia.org/wiki/Anscombe's_quartet"><span class="hljs-link_url">http://en.wikipedia.org/wiki/Anscombe's_quartet</span></a><span class="hljs-link_url"> "Wikipedia has more detail"</span><span class="hljs-link_url">
+[2]: </span><a href="./Avoiding common data-interpretation errors – @ASmartBear_files/anscombe-quartet.png"><span class="hljs-link_url">http://asmartbear.wpengine.netdna-cdn.com/wp-content/uploads/anscombe-quartet.png</span></a><span class="hljs-link_url"> "anscombe quartet"</span><span class="hljs-link_url">
+[3]: </span><a href="./Avoiding common data-interpretation errors – @ASmartBear_files/google-analytics-avg-time-on-site.png"><span class="hljs-link_url">http://asmartbear.wpengine.netdna-cdn.com/wp-content/uploads/google-analytics-avg-time-on-site.png</span></a><span class="hljs-link_url"> "Average time on site, Google Analytics"</span><span class="hljs-link_url">
+[4]: </span><a href="./Avoiding common data-interpretation errors – @ASmartBear_files/annotated-time-on-site-bi-modal.png"><span class="hljs-link_url">http://asmartbear.wpengine.netdna-cdn.com/wp-content/uploads/annotated-time-on-site-bi-modal.png</span></a><span class="hljs-link_url"> "annotated-time-on-site-bi-modal"</span><span class="hljs-link_url">
+[5]: </span><a href="./Avoiding common data-interpretation errors – @ASmartBear_files/top-search-engines-barchart.png"><span class="hljs-link_url">http://asmartbear.wpengine.netdna-cdn.com/wp-content/uploads/top-search-engines-barchart.png</span></a><span class="hljs-link_url"> "top search engines"</span><span class="hljs-link_url">
+[6]: </span><a href="./Avoiding common data-interpretation errors – @ASmartBear_files/top-accounts-four.png"><span class="hljs-link_url">http://asmartbear.wpengine.netdna-cdn.com/wp-content/uploads/top-accounts-four.png</span></a><span class="hljs-link_url"> "top accounts no other"</span><span class="hljs-link_url">
+[7]: </span><a href="./Avoiding common data-interpretation errors – @ASmartBear_files/top-accounts-four-other.png"><span class="hljs-link_url">http://asmartbear.wpengine.netdna-cdn.com/wp-content/uploads/top-accounts-four-other.png</span></a><span class="hljs-link_url"> "top-accounts-four-other"</span><span class="hljs-link_url">
+[8]: </span><a href="http://en.wikipedia.org/wiki/The_Long_Tail"><span class="hljs-link_url">http://en.wikipedia.org/wiki/The_Long_Tail</span></a><span class="hljs-link_url"> "Wikipedia definition "</span><span class="hljs-link_url">
+[9]: </span><a href="http://www.newstatesman.com/business/2009/05/anderson-wired-business"><span class="hljs-link_url">http://www.newstatesman.com/business/2009/05/anderson-wired-business</span></a><span class="hljs-link_url"> "Andrew Orlowski argues that there's a lack of empirical evidence of the Long Tail effect actually working"</span><span class="hljs-link_url">
+[10]: </span><a href="http://www.beatport.com/"><span class="hljs-link_url">http://www.beatport.com</span></a><span class="hljs-link_url"> "Beatport company home page"</span><span class="hljs-link_url">
+[11]: </span><a href="./Avoiding common data-interpretation errors – @ASmartBear_files/mystery-data.png"><span class="hljs-link_url">http://asmartbear.wpengine.netdna-cdn.com/wp-content/uploads/mystery-data.png</span></a><span class="hljs-link_url"> "mystery data"</span><span class="hljs-link_url">
+[12]: </span><a href="http://blog.asmartbear.com/data-interpretation-mistakes.html#respond"><span class="hljs-link_url">http://blog.asmartbear.com/data-interpretation-mistakes.html#respond</span></a><span class="hljs-link_url">
+  </span></div>
+</div>
+</article>
+<footer>
+  <form><label for="nightmode"><input type="checkbox" id="nightmode" name="nightmode" value="nightmode" checked="checked"> Night Mode</label></form>
+</footer>
+<script async="" src="./Avoiding common data-interpretation errors – @ASmartBear_files/ga.js"></script><script src="./Avoiding common data-interpretation errors – @ASmartBear_files/ZeroClipboard.js"></script>
+<script src="./Avoiding common data-interpretation errors – @ASmartBear_files/jquery.js"></script>
+<script src="./Avoiding common data-interpretation errors – @ASmartBear_files/jquery.tipsy.js"></script>
+<script src="./Avoiding common data-interpretation errors – @ASmartBear_files/jquery.tap.js"></script>
+<script src="./Avoiding common data-interpretation errors – @ASmartBear_files/jquery.cookie.js"></script>
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    if ($.cookie('fymdnightmode') === "1") {
+      $('body').addClass('inverted');
+      $('#nightmode').attr('checked','checked');
+    }
+    var $maindiv = $('#maindiv'),
+      original_markdown = $maindiv.html(),
+      refRe = /\[(\d+)\]: (\S+)(?:\s|$)/g,
+      matches = original_markdown.match(refRe),
+      links = {};
+
+    $(matches).each(function(i,n) {
+      n.replace(refRe, function(match, id, url) {
+        links[id] = url;
+      });
+    });
+    var markup_markdown = original_markdown.replace(/(https?:\/\/\S+)/g,"<a href=\"$1\">$1</a>").replace(/(\[.*?\]\[(\d+)\])/g, function(match, ref, id) {
+
+      return '<a href="javascript:void()" title="'+links[id]+'" class="reflink">'+match+'</a>';
+    });
+
+    $maindiv.html(markup_markdown);
+    hljs.highlightBlock($('#maindiv').get(0));
+    $('.reflink').tipsy({gravity: $.fn.tipsy.autoNS, opacity: 1, trigger: 'manual'});
+    $('a.reflink, div.tipsy').on('tap', function(ev) {
+      ev.preventDefault();
+      $('.showing_tipsy').tipsy('hide').removeClass('showing_tipsy');
+      if ($(this).hasClass('reflink')) {
+        $(this).addClass('showing_tipsy');
+        $(this).tipsy('show');
+      }
+      return false;
+    });
+    $('a.reflink').on('click', function(ev) {
+      ev.preventDefault();
+      return false;
+    })
+    $('#maindiv').on('tap', function(ev) {
+      $('.showing_tipsy').tipsy('hide').removeClass('showing_tipsy');
+      return true;
+    });
+
+    // $('#d_clip_button').on('tap', function() {
+    //   if (!$('#copyfield').length) {
+    //     $('<textarea id="copyfield">').val($('#maindiv').text()).prependTo('#preblock').css({
+    //           position: 'absolute',
+    //           top: 0,
+    //           left: 0,
+    //           width: '100%',
+    //           height: '100%',
+    //           fontSize: '14px'
+    //         }); // .attr('onfocus','this.selectionStart=0; this.selectionEnd=this.value.length');
+    //   }
+    //   document.getElementById('copyfield').selectionStart = 0;
+    //   document.getElementById('copyfield').selectionEnd = 99999999999999999999;
+    // });
+
+
+
+
+    var clip = null;
+    clip = new ZeroClipboard.Client();
+    clip.setHandCursor( true );
+
+    clip.addEventListener('load', function (client) {
+    });
+
+    clip.addEventListener('mouseOver', function (client) {
+      clip.setText( original_markdown );
+    });
+
+    clip.addEventListener('complete', function (client, text) {
+      $('#d_clip_button').html('Copied!');
+      setTimeout(function() {
+            $('#d_clip_button').html('Copy');
+          }, 2500);
+    });
+
+    clip.glue( 'd_clip_button', 'd_clip_container' );
+
+    // smooth scrolling
+    $('a[href^=#]').click(function() {
+       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+       && location.hostname == this.hostname) {
+         var $target = $(this.hash);
+         $target = $target.length && $target
+         || $('[id=' + this.hash.slice(1) +']');
+         if ($target.length) {
+           var targetOffset = $target.offset().top;
+           $('#contentdiv').animate({scrollTop: targetOffset - 40}, 1000);
+          return false;
+         }
+       }
+      });
+
+    $('#previewbutton').click(function(e){
+      e.preventDefault();
+      if ($('#previewdiv').is(':visible')) {
+        $('#previewbutton').text('Preview');
+        $('#previewdiv').stop(true,true).fadeOut('fast',function(){
+          $(this).html('');
+          $('#maindiv').stop(true,true).fadeIn();
+        }).unbind('click');
+      } else {
+        $.post('/go/',{domarkdown: 1,text: $('#maindiv').text()},function(data){
+          $('#maindiv').stop(true,true).fadeOut('fast',function(){
+            $('#previewdiv').stop(true,true).html(data).fadeIn('fast');
+            $('#previewbutton').text('Close preview');
+            // widon't titles
+            $('h1,h2,h3,h4').each(function(){
+              $(this).html($(this).text().replace(/([^\s])\s+([^\s]+)\s*$/, '$1&nbsp;$2'));
+            });
+          });
+        });
+      }
+      return false;
+    });
+    $('#nightmode').click(function(){
+      if ($(this).is(':checked')) {
+        $('body').addClass('inverted');
+        $.cookie('fymdnightmode',1);
+      } else {
+        $('body').removeClass('inverted');
+        $.cookie('fymdnightmode',0);
+      }
+    });
+          });
+</script>
+
+<script>
+  var _gaq = [['_setAccount', 'UA-19894778-2'], ['_trackPageview']];
+  (function(d, t) {
+   var g = d.createElement(t),
+       s = d.getElementsByTagName(t)[0];
+   g.async = true;
+   g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   s.parentNode.insertBefore(g, s);
+  })(document, 'script');
+</script>
+<script src="./Avoiding common data-interpretation errors – @ASmartBear_files/highlight.min.js"></script>
+
+
+</body></html>
