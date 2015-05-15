@@ -24,6 +24,8 @@
 - [R and foreign characters](http://quantifyingmemory.blogspot.ru/)
 - [Interactive visualizations with R](http://ouzor.github.io/blog/2014/11/21/interactive-visualizations.html) - a minireview
 - [How to make a great R reproducible example?](http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example)
+- [R Tutorial: Intro to Loops (While, For, Repeat, Apply, etc!)](https://blog.udemy.com/r-tutorial/)
+- [R Grouping functions: sapply vs. lapply vs. apply. vs. tapply vs. by vs. aggregate](http://stackoverflow.com/questions/3505701/r-grouping-functions-sapply-vs-lapply-vs-apply-vs-tapply-vs-by-vs-aggrega)
 
 ## Data Processing articles (COOL)
 - [Data Processing with dplyr & tidyr](https://rpubs.com/bradleyboehmke/data_wrangling)
@@ -39,6 +41,7 @@
 - [Hands-on with dplyr](https://github.com/dgrapov/TeachingDemos/blob/master/Demos/dplyr/hands_on_with_dplyr.md)
 - [How dplyr replaced my most common R idioms](http://www.onthelambda.com/2014/02/10/how-dplyr-replaced-my-most-common-r-idioms/)
 - [NOTE](http://rpackages.ianhowson.com/cran/dplyr/man/select.html): one_of("x", "y", "z"): selects variables provided in a character vector.
+- [Top 50 Data Science Resources: The Best Blogs, Forums, Videos and Tutorials to Learn All about Data Science](http://www.ngdata.com/top-data-science-resources/)
 
 ## подвал
 	Solution: the pipe operator from magrittr
@@ -55,6 +58,10 @@
 - [DeployR](http://deployr.revolutionanalytics.com/) is an integration technology for deploying R analytics inside Web, desktop, mobile, dashboard applications and backend systems. DeployR makes it easy for application developers to collaborate with R programmers and integrate R analytics without any R programming knowledge.
 - [SimilaR](http://similar.rexamine.com/). Code similarity (aka code cloning or antiplagiarism) of R functions detection portal
 - At [rOpenSci](https://ropensci.org/) we are creating packages that allow access to data repositories through the R statistical programming environment that is already a familiar part of the workflow of many scientists. Our tools not only facilitate drawing data into an environment where it can readily be manipulated, but also one in which those analyses and methods can be easily shared, replicated, and extended by other researchers.
+- [The Lyra Visualization Design Environment (VDE) bet](http://idl.cs.washington.edu/projects/lyra/). Lyra is an interactive environment that enables custom visualization design without writing any code. Graphical “marks” can be bound to data fields using property drop zones; dynamically positioned using connectors; and directly moved, rotated, and resized using handles. Lyra also provides a data pipeline interface for iterative visual specification of data transformations and layout algorithms. Lyra is more expressive than interactive systems like Tableau, allowing designers to create custom visualizations comparable to hand-coded visualizations built with D3 or Processing. These visualizations can then be easily published and reused on the Web.
+- [Mode](https://modeanalytics.com/). Collaborative tools for analysts who fuel data-driven companies.Mode is the best place for analytical work: write SQL, share ad-hoc analysis, and build powerful visualizations to help everyone make better decisions.
+- [Silk](https://www.silk.co/product) is a place to publish your data. Each Silk contains data on a specific topic. Anyone can explore a Silk and create interactive visualizations.
+- [Visually](http://visual.ly/) Your On-Demand Creative Services Team.
 
 ## Shiny etc.
 - [Shiny articles](http://shiny.rstudio.com/articles/)
@@ -78,6 +85,7 @@
 - [Create Dashboards with 'Shiny'](http://rpackages.ianhowson.com/cran/shinydashboard/)
 - [DataTable Options](http://shiny.rstudio.com/gallery/datatables-options.html)
 - Shinyapps.io demos. [Google search](https://www.google.ru/?gws_rd=ssl#newwindow=1&q=site:https:%2F%2Fdemo.shinyapps.io)
+- [Google Analytics Effect](https://mark.shinyapps.io/ga-effect/). This webapp uses Bayesian time-series to model your Google Analytics traffic under normal circumstances.
 
 ## Data Manipulation
 - [DataWrangler](http://vis.stanford.edu/wrangler/) is an interactive tool for data cleaning and transformation. Spend less time formatting and more time analyzing your data. **UPDATE**: The Wrangler research project is complete, and the software is no longer actively supported. The team behind Wrangler has moved on to work on a commercial venture, [Trifacta](http://www.trifacta.com/).
@@ -98,6 +106,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [H2O](http://0xdata.com/product/) is for data scientists and business analysts who need scalable and fast machine learning. H2O is an open source predictive analytics platform. Unlike traditional analytics tools, H2O provides a combination of extraordinary math and high performance parallel processing with unrivaled ease of use. H2O speaks the language of data science with support for R, Python, Scala, Java and a robust REST API. Smart business applications are powered by H2O’s NanoFastTM Scoring Engine.
 - [Bioconductor](http://master.bioconductor.org/) provides tools for the analysis and comprehension of high-throughput genomic data. Bioconductor uses the R statistical programming language, and is open source and open development.
 - [JUT is a Dataflow Analytics Platform Built For Devops](http://www.jut.io/) Live Meets Historical Events Meets Metrics
+- [4 data wrangling tasks in R for advanced beginners](http://www.computerworld.com/article/2486425/business-intelligence-4-data-wrangling-tasks-in-r-for-advanced-beginners.html)
 - [Hands-on with dplyr](https://github.com/dgrapov/TeachingDemos/blob/master/Demos/dplyr/hands_on_with_dplyr.md)
 
 
@@ -117,6 +126,9 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [Coursera](https://www.coursera.org) 
 	-[Machine Learning](https://www.coursera.org/learn/machine-learning)
 - [R Tutorial](http://www.cyclismo.org/tutorial/R/index.html)
+- [Learn Data Science](http://nborwankar.github.io/LearnDataScience/). Open content for self-directed learning in data science. [Видеолекции ШАД](https://yandexdataschool.ru/edu-process/courses)
+- [Machine Learning. Курс от Яндекса для тех, кто хочет провести новогодние каникулы с пользой](http://habrahabr.ru/company/yandex/blog/208034/)
+- [MachineLearning.ru](http://www.machinelearning.ru). Профессиональный информационно-аналитический ресурс, посвященный машинному обучению, распознаванию образов и интеллектуальному анализу данных.
 
 ###Tutorial
 - [A very quick introduction to ggplot2](http://chrisladroue.com/extra/ggplot2Intro/introductionGGplot2/)
@@ -134,10 +146,10 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [Bar Graphs (Ch 3)](https://rpubs.com/gokul108/ch3)
 
 
-
 ### Бизнес-решения
-- [StatIce](http://statace.com/). Predictive analytics in the cloud based on R. Трансформировались в [Intuitics](https://www.intuitics.com/) и **пока не работают**. Build advanced analytics web apps with ease
+- [StatAce](http://statace.com/). Predictive analytics in the cloud based on R. Трансформировались в [Intuitics](https://www.intuitics.com/) и **пока не работают**. Build advanced analytics web apps with ease
 Intuitics increases the speed with which data insights reach decision makers. Instead of waiting for the data science team to rerun an analysis, a business user can now do it on her own, with her data and parameters, in an intuitive web application, built in Intuitics.
+- [Intuitics](https://www.intuitics.com/) turns your R, SAS and Python models into interactive web apps, quickly and easily
 - [Plotly](https://plot.ly/). Collaborative data science. Plotly is the easiest way to graph and share your data.
 - [Import.io](https://import.io/). Instantly Turn Web Pages into Data. No Plugin, No Training, No Setup.
 - [KeyLines Network Visualization](http://keylines.com/). KeyLines is a technology for understanding connected data. By exploring the networks and in your data, you will find patterns and trends that are otherwise hidden, generating actionable insight.
@@ -312,7 +324,8 @@ This problem is not usually addressed in time series analysis, because time seri
 
 
 # DataScience
-[What is the difference between a data scientist and a business intelligence analyst?](http://devres.zoomquiet.io/data/20121120180245/index.html)
+
+## [What is the difference between a data scientist and a business intelligence analyst?](http://devres.zoomquiet.io/data/20121120180245/index.html)
 
 They sound like they're pretty much identical except in title. The flashier SV startups like to call it "data scientist" and the e-commerce, old commerce, etc. companies like to call it "business intelligence." True?
   
@@ -321,3 +334,32 @@ I think the question Big Data: Will 'data scientists' live up to the expectation
 - While there's a lot of people who argue both ways, I generally find that the following differences are generally accepted:
    - Data scientists work with a mix of Big Data tools such as Hadoop/Map-Reduce/Hive, NoSQL, MPPs, traditional databases, and basically anything that stores/has data.  They also tend to have a stronger technology skill set in that they also programmers, and also have very strong math skills particularly in thing like statistics.  I've also seen that a data scientist would generally need to know how to do data visualization.  The data scientist also needs to have a strong understanding of the business as they typically would work directly with the business.  I believe this is a role in which realistically very few people could fill, even with extensive training.
    - A BI Analyst would be a person who works with BI tools to perform analysis. Generally speaking they would be a person who is somewhat educated on data warhousing and understands how a star schema is modeled.  This allows them to do things such as perform ad-hoc analysis either through a reporting tool or using SQL to create the charts, graphs, excel sheets, etc that the business users require.  They can also serve as the middleman between business and IT when creating new BI functionality.  Basically will work more with the technology and business users as opposed to trying to play that single role.
+
+## [What is the difference between Artificial Intelligence, Machine Learning, Statistics, and Data Mining](http://shakthydoss.com/what-is-the-difference-between-artificial-intelligence-machine-learning-statistics-and-data-mining/)
+
+I assume the author of that question is trying to get a clear picture by understanding the line of separation that distinguish each field from the other. So here is my take to explain it in a more simplified way that I ever could do.
+
+Machine learning is a science that involves development of self-learning algorithms. These algorithms are more generic in nature that it can be applied to various domain related problems.
+
+Data mining is a practice of applying algorithms (mostly Machine learning algorithms) with the data available from domain to solve domain related problems.
+
+Statistics is a study of how to collect, organizes, analyze, and interpret numerical information from data. Statistics can slip into two taxonomy called Descriptive statistics and Inferential statistics. Descriptive statistics involves method of organizing, summering and picturing information from data. Inferential statistics invokes method of using information from sample to draw conclusion about the population.
+
+Machine learning uses statistics (mostly inferential statistics) to develop self learning algorithms.
+
+Data mining uses statistics (mostly Descriptive statistics) on results obtained from algorithms, it used to solve the problem.
+
+Data mining as a field emerged to solve problems in the miscellaneous domain (particularity in business), acquired different techniques and practices that are used in different field of studies.
+
+In 1960 practitioners who solved problems (mostly business problems) used term Data fishing to call the work they do. In 1989 Gregory Piatetsky Shapiro used term knowledge Discovery in the Database (KDD). In 1990 a company used term Data mining with the trademark to represent their work. Today data mining and KDD are used interchangeably.
+
+Artificial Intelligence is a science to develop a system or software to mimic human to respond and behave in a circumference. As field with extremely broad scope, AI has defined its goal into multiple chunks. Later each chuck has become a separate field of study to solve its problem.
+
+## [What's the difference between data mining, machine learning and deep learning?](http://www.sas.com/en_us/insights/analytics/machine-learning.html)
+
+The difference between machine learning and other statistical and mathematical approaches, such as data mining, is another popular subject of debate. In simple terms, while machine learning uses many of the same algorithms and techniques as data mining, **one difference lies in what the two disciplines predict**.
+
+- Data mining discovers previously unknown patterns and knowledge.
+- Machine learning is used to reproduce known patterns and knowledge, automatically apply that to other data, and then automatically apply those results to decision making and actions.
+
+## [Top 50 Data Science Resources: The Best Blogs, Forums, Videos and Tutorials to Learn All about Data Science](http://www.ngdata.com/top-data-science-resources/)

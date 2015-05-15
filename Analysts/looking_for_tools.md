@@ -223,3 +223,11 @@ Sandboxing is required for all apps available on the Mac and iOS app store, in o
 
 ## Web\Blog
 - [Cactus](https://github.com/koenbok/Cactus). A fast, easy and free static site generator. [Cactus for Mac](http://cactusformac.com/)
+
+
+# Big Data
+
+## Hadoop & MapReduce
+- [What is Hadoop?](http://escience.washington.edu/get-help-now/what-hadoop)
+- [What lies at the core of Hadoop?](http://blog.enablecloud.com/2012/06/what-lies-at-core-of-hadoop.html)
+- С чего начался Google. [The Anatomy of a Large-Scale Hypertextual Web Search Engine](http://infolab.stanford.edu/pub/papers/google.pdf). Sergey Brin and Lawrence Page
