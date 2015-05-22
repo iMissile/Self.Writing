@@ -64,6 +64,7 @@ Predictive applications automate decision-making based on current and historical
 - [inside-R](http://www.inside-r.org/): A Community Site for R (Sponsored by Revolution Analytics)
 - [Sweave](http://www.stat.uni-muenchen.de/~leisch/Sweave/) is a tool that allows to embed the R code for complete data analyses in latex documents.
 - [R-Studio](http://www.rstudio.com/) is a free and open source integrated development environment for R. You can run it on your desktop (Windows, Mac, or Linux) or even over the web using RStudio Server.
+  - [R-Studio Keyboard Shortcuts](https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts)
 - [R-Commander](http://socserv.mcmaster.ca/jfox/Misc/Rcmdr/): A Basic-Statistics GUI for R
 - [DeployR](http://deployr.revolutionanalytics.com/) is an integration technology for deploying R analytics inside Web, desktop, mobile, dashboard applications and backend systems. DeployR makes it easy for application developers to collaborate with R programmers and integrate R analytics without any R programming knowledge.
 - [SimilaR](http://similar.rexamine.com/). Code similarity (aka code cloning or antiplagiarism) of R functions detection portal
@@ -72,10 +73,14 @@ Predictive applications automate decision-making based on current and historical
 - [Mode](https://modeanalytics.com/). Collaborative tools for analysts who fuel data-driven companies.Mode is the best place for analytical work: write SQL, share ad-hoc analysis, and build powerful visualizations to help everyone make better decisions.
 - [Silk](https://www.silk.co/product) is a place to publish your data. Each Silk contains data on a specific topic. Anyone can explore a Silk and create interactive visualizations.
 - [Visually](http://visual.ly/) Your On-Demand Creative Services Team.
+- [Using R in Sublime Text 3](http://www.kevjohnson.org/using-r-in-sublime-text-3/)
+
+
 
 ## Shiny etc.
 - [Shiny articles](http://shiny.rstudio.com/articles/)
 - [Bootstrap](http://getbootstrap.com/) is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
+  - [Free themes for Bootstrap](http://bootswatch.com/)
 - [shinyapps.io by RStudio](http://www.shinyapps.io/). Share your Shiny Applications Online. Deploy your Shiny applications on the Web in minutes
 - [Getting started with shinyapps.io](http://shiny.rstudio.com/articles/shinyapps.html)
 - [Dashboards in R with Shiny & Plotly](http://moderndata.plot.ly/dashboards-in-r-with-shiny-plotly/)
@@ -95,7 +100,9 @@ Predictive applications automate decision-making based on current and historical
 - [Create Dashboards with 'Shiny'](http://rpackages.ianhowson.com/cran/shinydashboard/)
 - [DataTable Options](http://shiny.rstudio.com/gallery/datatables-options.html)
 - Shinyapps.io demos. [Google search](https://www.google.ru/?gws_rd=ssl#newwindow=1&q=site:https:%2F%2Fdemo.shinyapps.io)
+- [Pilot Police Demand Planning Tool](https://gallery.shinyapps.io/TSupplyDemand/)
 - [Google Analytics Effect](https://mark.shinyapps.io/ga-effect/). This webapp uses Bayesian time-series to model your Google Analytics traffic under normal circumstances.
+- [Using Action Buttons](http://shiny.rstudio.com/articles/action-buttons.html)
 
 ## Data Manipulation
 - [DataWrangler](http://vis.stanford.edu/wrangler/) is an interactive tool for data cleaning and transformation. Spend less time formatting and more time analyzing your data. **UPDATE**: The Wrangler research project is complete, and the software is no longer actively supported. The team behind Wrangler has moved on to work on a commercial venture, [Trifacta](http://www.trifacta.com/).
@@ -120,7 +127,6 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [Hands-on with dplyr](https://github.com/dgrapov/TeachingDemos/blob/master/Demos/dplyr/hands_on_with_dplyr.md)
 
 
-
 ## Курсы обучения и интересные бизнес решения на базе R
 ### Курсы\Learning
 - [Data School](http://www.dataschool.io/). Data science for beginners!
@@ -130,7 +136,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [Journal of Statistical Software](http://www.jstatsoft.org/)
 - [Harry Potter and the Methods of Rationality](hpmor.com). HPMOR.com is an authorized mirror of Less Wrong‘s / Eliezer Yudkowsky‘s epic Harry Potter fanfic-in-progress, Harry Potter and the Methods of Rationality.
 - [pipeR Tutorial](http://renkun.me/pipeR-tutorial/) by Kun Ren
-- [LearnR](http://renkun.me/learnR/) by Kun ren
+- [LearnR](http://renkun.me/learnR/) by Kun Ren
 - [Ops School](http://ops-school.readthedocs.org/en/latest/index.html) is a comprehensive program that will help you learn to be an operations engineer.
 - [CodeSchool](http://tryr.codeschool.com/). Learn By Doing. No setup. No hassle. Just learning. [R Learning](http://tryr.codeschool.com/levels/1)
 - [Coursera](https://www.coursera.org) 
@@ -143,8 +149,9 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [The Open Source Data Science Masters](http://datasciencemasters.org/) Curriculum for Data Science
 - [FREE DATA SCIENCE COURSES](http://datascienceacademy.com/free-data-science-courses/)
 - [Hadley Wickham presentations](http://www.slideshare.net/hadley/presentations)
-- [R Tutorial Series](http://www.theanalysisfactor.com/r/). The statistical programming language R is becoming a popular means for analyzing data. But it’s not always easy to use. We have a number of resources about learning and using R, including a several-part tutorial blog series. В частности, рассмотрение линейной регрессии ["R Is Not So Hard! A Tutorial, Part 4: Fitting a Quadratic Model"](http://www.theanalysisfactor.com/r-tutorial-4/)
+- [The Analysis Factor](http://www.theanalysisfactor.com/r/). The statistical programming language R is becoming a popular means for analyzing data. But it’s not always easy to use. We have a number of resources about learning and using R, including a several-part tutorial blog series. В частности, рассмотрение линейной регрессии ["R Is Not So Hard! A Tutorial, Part 4: Fitting a Quadratic Model"](http://www.theanalysisfactor.com/r-tutorial-4/)
 - [R Tutorial Series](http://rtutorialseries.blogspot.ru/) by John M Quick. The R Tutorial Series provides a collection of user-friendly tutorials to people who want to learn how to use R for statistical analysis. Use the links along the side of the page to explore the tutorial topics.
+- [R Tutorial](http://www.princeton.edu/~mattg/statar/) by Matthieu Gomez. These notes on R are primarily designed for Stata users. Just as Stata is normally learned, operations on datasets are presented first, while operations on atomic vectors and lists follow. This guide is centered on recent R packages - in particular dplyr and data.table which bring R syntax and memory gestion closer to Stata.
 
 ###Tutorial
 - [A very quick introduction to ggplot2](http://chrisladroue.com/extra/ggplot2Intro/introductionGGplot2/)
@@ -345,5 +352,7 @@ This problem is not usually addressed in time series analysis, because time seri
 - [Introducing practical and robust anomaly detection in a time series](https://blog.twitter.com/2015/introducing-practical-and-robust-anomaly-detection-in-a-time-series). Twitter open-source R package [AnomalyDetection](https://github.com/twitter/AnomalyDetection).
 - [Anomaly Detection – Using Machine Learning to Detect Abnormalities in Time Series Data](http://blogs.technet.com/b/machinelearning/archive/2014/11/05/anomaly-detection-using-machine-learning-to-detect-abnormalities-in-time-series-data.aspx). Microsoft Machine Learning Blog
 
-
+# Linear Regression
+- [The Analysis Factor](http://www.theanalysisfactor.com/r/). В частности, рассмотрение линейной регрессии ["R Is Not So Hard! A Tutorial, Part 4: Fitting a Quadratic Model"](http://www.theanalysisfactor.com/r-tutorial-4/)
+- [R Tutorial Series](http://rtutorialseries.blogspot.ru/) by John M Quick. The R Tutorial Series provides a collection of user-friendly tutorials to people who want to learn how to use R for statistical analysis. Use the links along the side of the page to explore the tutorial topics.
 

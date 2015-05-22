@@ -12,17 +12,20 @@ http://www.worldtimebuddy.com/
 1. [StackEdit](https://stackedit.io)
 1. [Draft](https://draftin.com)
 1. [Markable](http://markable.in/editor)
-2. [Writebox](https://write-box.appspot.com)
+1. [Writebox](https://write-box.appspot.com)
 
 ## Offline Editors
 1. [MarkdownPad](http://markdownpad.com)
 1. [Atom](https://atom.io)
 1. [MarkPad](http://code52.org/DownmarkerWPF)
 1. [Texts](http://www.texts.io)
-2. [Marked 2](http://marked2app.com/) - Markdown viewer. Авторский [сайт](http://brettterpstra.com/).
-3. [Typed](http://realmacsoftware.com/typed) is the Best Minimal Writing App and Markdown Editor for Mac.
-4. [Mou](http://25.io/mou/). Markdown editor for developers.
-5. [Remarkable](http://remarkableapp.net/) A Free Fully Featured Markdown Editor For Linux
+1. [Marked 2](http://marked2app.com/) - Markdown viewer. Авторский [сайт](http://brettterpstra.com/).
+1. [Typed](http://realmacsoftware.com/typed) is the Best Minimal Writing App and Markdown Editor for Mac.
+1. [Mou](http://25.io/mou/). Markdown editor for developers.
+1. [Remarkable](http://remarkableapp.net/) A Free Fully Featured Markdown Editor For Linux
+1. [SublimeText](http://www.sublimetext.com/)
+  1. [Using R in Sublime Text 3](http://www.kevjohnson.org/using-r-in-sublime-text-3/). This post will get you up and running using R in Sublime Text 3. If you’re not familiar with Sublime Text I recommend watching these videos. It focuses on Macs and it’s a bit outdated, but it’s a really good introduction to what you can do with Sublime Text.
+  1. [Package Control](https://packagecontrol.io/installation)
 
 ## Blogging Platforms
 - [16 Blogging Platforms That Won't Distract From Your Writing](http://mashable.com/2014/05/09/16-minimalist-blogging-platforms/)
@@ -60,6 +63,7 @@ Sandboxing is required for all apps available on the Mac and iOS app store, in o
 - [Remark](remarkjs.com). A simple, in-browser, markdown-driven slideshow tool.
 - [Scribble](http://www.tryscribble.com/). Simple. Markdown. Wikis.
 - [Pen.io](http://pen.io/). Publish a Beautiful Blog Post Online in Seconds. It takes just seconds to publish your article and share it with the world
+- [Slidify](http://ramnathv.github.io/slidify/). Stunning presentations from markdown. [Get Started](http://ramnathv.github.io/slidify/start.html). You can install Slidify, write a three page slide deck and publish it to Github, all in less than 5 minutes! [Slidify - Interactive Docs with R Markdown](http://slidify.github.io/)
 
 
 - [Overleaf](http://www.overleaf.com/). Collaborative Writing and Publishing. The easiest way to create, edit and publish your research. (**News**: WriteLaTeX Relaunching as Overleaf)

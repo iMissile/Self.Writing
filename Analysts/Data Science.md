@@ -39,6 +39,9 @@ The difference between machine learning and other statistical and mathematical a
 
 ## [Top 50 Data Science Resources: The Best Blogs, Forums, Videos and Tutorials to Learn All about Data Science](http://www.ngdata.com/top-data-science-resources/)
 
+## Data Science resources
+- [Starter Books for Data Science](http://www.exploringdatascience.com/featured/starter-books-data-science/)
+
 
 #========================================
 # Описание позиции
