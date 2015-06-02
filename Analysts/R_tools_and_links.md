@@ -9,6 +9,7 @@
 - [A non-comprehensive list of awesome things other people did in 2014](http://simplystatistics.org/2014/12/17/a-non-comprehensive-list-of-awesome-things-other-people-did-in-2014/)
 - [Hadley Wickham "Tidy Data"](http://www.jstatsoft.org/v59/i10/) или [здесь](http://vita.had.co.nz/papers/tidy-data.pdf)
 - [10 R packages I wish I knew about earlier](http://blog.yhathq.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html)
+- [Top 10 R Packages to be a Kaggle Champion](http://www.kdnuggets.com/2015/04/top-10-r-packages-kaggle.html)
 - [A brief introduction to “apply” in R](https://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/)
 - [Now's a great time to learn R. Here's how](http://blog.revolutionanalytics.com/2015/01/nows-a-great-time-to-learn-r-heres-how.html).
 - [The ensurer package (validation inside pipes)](http://www.r-statistics.com/2014/11/the-ensurer-package-validation-inside-pipes/)
@@ -74,7 +75,7 @@ Predictive applications automate decision-making based on current and historical
 - [Silk](https://www.silk.co/product) is a place to publish your data. Each Silk contains data on a specific topic. Anyone can explore a Silk and create interactive visualizations.
 - [Visually](http://visual.ly/) Your On-Demand Creative Services Team.
 - [Using R in Sublime Text 3](http://www.kevjohnson.org/using-r-in-sublime-text-3/)
-
+- [Rodeo](https://github.com/yhat/rodeo/) is a data centric IDE for Python. You can think of it as an alternative UI to the notebook for the IPython Kernel. It's heavily inspired by great projects like Sublime Text and Eclipse.
 
 
 ## Shiny etc.
@@ -152,6 +153,8 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [The Analysis Factor](http://www.theanalysisfactor.com/r/). The statistical programming language R is becoming a popular means for analyzing data. But it’s not always easy to use. We have a number of resources about learning and using R, including a several-part tutorial blog series. В частности, рассмотрение линейной регрессии ["R Is Not So Hard! A Tutorial, Part 4: Fitting a Quadratic Model"](http://www.theanalysisfactor.com/r-tutorial-4/)
 - [R Tutorial Series](http://rtutorialseries.blogspot.ru/) by John M Quick. The R Tutorial Series provides a collection of user-friendly tutorials to people who want to learn how to use R for statistical analysis. Use the links along the side of the page to explore the tutorial topics.
 - [R Tutorial](http://www.princeton.edu/~mattg/statar/) by Matthieu Gomez. These notes on R are primarily designed for Stata users. Just as Stata is normally learned, operations on datasets are presented first, while operations on atomic vectors and lists follow. This guide is centered on recent R packages - in particular dplyr and data.table which bring R syntax and memory gestion closer to Stata.
+- [R Studio Webinars and Videos On Demand](http://www.rstudio.com/resources/webinars/)
+- [nbviewer](http://nbviewer.ipython.org/). A simple way to share Jupyter Notebooks
 
 ###Tutorial
 - [A very quick introduction to ggplot2](http://chrisladroue.com/extra/ggplot2Intro/introductionGGplot2/)
@@ -175,6 +178,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 Intuitics increases the speed with which data insights reach decision makers. Instead of waiting for the data science team to rerun an analysis, a business user can now do it on her own, with her data and parameters, in an intuitive web application, built in Intuitics.
 - [Intuitics](https://www.intuitics.com/) turns your R, SAS and Python models into interactive web apps, quickly and easily
 - [Plotly](https://plot.ly/). Collaborative data science. Plotly is the easiest way to graph and share your data.
+- [Lightning](http://lightning-viz.org/) is a data-visualization server providing API-based access to reproducible, web-based, interactive visualizations. It includes a core set of visualization types, but is built for extendability and customization. Lightning supports modern libraries like d3.js and three.js, and is designed for interactivity over large data sets and continuously updating data streams.
 - [Import.io](https://import.io/). Instantly Turn Web Pages into Data. No Plugin, No Training, No Setup.
 - [KeyLines Network Visualization](http://keylines.com/). KeyLines is a technology for understanding connected data. By exploring the networks and in your data, you will find patterns and trends that are otherwise hidden, generating actionable insight.
 - [CHARTED](http://www.charted.co/). Beautiful, automatic charts.
@@ -194,11 +198,17 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [BayesiaLab 5.4](http://www.bayesia.us/) is a powerful Artificial Intelligence software (Win/Mac/Unix), which provides scientists a comprehensive “lab” environment for machine learning, knowledge modeling, analytics, simulation, and optimization — all based on the Bayesian network paradigm.
 - [Metafor Software](http://www.metaforsoftware.com/) Detect the anomalies that matter – automatically and in real time. Analyze the behavior of millions of logs and metrics of any type from any data source. Get alerted at the earliest sign of a problem so you can fix it immediately; no threshold or rule setting required.
 
+- [PiktoChart](http://piktochart.com/). Easy-To-Use Infographic Creator. Discover how non-designers are creating beautiful infographics in as little as 10 minutes
+- [Datawrapper](https://datawrapper.de/). Create charts and maps in just four steps. This tool reduces the time you need to create visualizations from hours to minutes.
+- [Gliffy](https://www.gliffy.com/). Where Ideas Take Shape. Create professional-quality Flowcharts, Wireframes, UML diagrams, and more.
+- [Canva](https://www.canva.com/) makes design simple for eceryone. It gives you everything you need to easily turn ideas into outstanding designs. You can startwith a custom layout or a blank page. There’s no limits to your creativity with all the tools in one place. Just search and drag to create beautiful designs and Canva will take care of the boring bits. The tool is online and free to use.
+- [Dipity](http://www.dipity.com/) is a free digital timeline website. Our mission is to organize the web's content by date and time. Users can create, share, embed and collaborate on interactive, visually engaging timelines that integrate video, audio, images, text, links, social media, location and timestamps.
 
 ### Смежные бизнес-решения
 - [ReportServer BI Suite](http://reportserver.net/en/) is the modern and versatile open source business intelligence (OSBI) platform for your company.
 - [1010data](https://www.1010data.com) offers a complete suite of products for big data discovery and data sharing for both business and technical users. Companies look to 1010data to help them become data-driven enterprises.
 - [BOARD](http://www.board.com/in/) is a software solution that unifies Business Intelligence, Performance Management and Analytics in a single environment. BOARD Version 9 introduces a 360 degree improvement of the BOARD software platform, by delivering significant improvement to the self service analysis capabilities, and also by offering the capability to easily embed Predictive Analytics into enterprise decision making processes.
+- [Data Driven Security](http://datadrivensecurity.info/). Welcome to a resource-laden destination on your journey into Security Data Science. Jay Jacobs (@jayjacobs) & Bob Rudis (@hrbrmstr) have created and compiled a plethora of resources for explorers at every every level.
 
 
 ### Other DataMining Solutions
@@ -265,6 +275,7 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [CausalImpact](http://google.github.io/CausalImpact/CausalImpact.html). An R package for causal inference using Bayesian structural time-series models. What does the package do? This R package implements an approach to estimating the causal effect of a designed intervention on a time series. For example, how many additional daily clicks were generated by an advertising campaign? Answering a question like this can be difficult when a randomized experiment is not available.	
 - The [Behavioral Change Point Analysis (BCPA)](http://wiki.cbr.washington.edu/qerm/index.php/Behavioral_Change_Point_Analysis) is a method of identifying hidden shifts in the underlying parameters of a time series, developed specifically to be applied to animal movement data which is irregularly sampled.
 - Dealing with Missing Data in R: Omit, Approx, or Spline [Part 1](http://publish.illinois.edu/spencer-guerrero/2014/12/11/2-dealing-with-missing-data-in-r-omit-approx-or-spline-part-1/), [Part 2](http://publish.illinois.edu/spencer-guerrero/2014/12/11/2-dealing-with-missing-data-in-r-omit-approx-or-spline-part-2/)
+- [Time Series Data Analysis with pandas](http://pyvideo.org/video/1198/time-series-data-analysis-with-pandas). (Video)
 
 ## StackoverFlow etc.
 - [Creating a Data Frame based on day of week from a Data Frame containing several months of data](http://stackoverflow.com/questions/8992585/creating-a-data-frame-based-on-day-of-week-from-a-data-frame-containing-several)
@@ -356,3 +367,5 @@ This problem is not usually addressed in time series analysis, because time seri
 - [The Analysis Factor](http://www.theanalysisfactor.com/r/). В частности, рассмотрение линейной регрессии ["R Is Not So Hard! A Tutorial, Part 4: Fitting a Quadratic Model"](http://www.theanalysisfactor.com/r-tutorial-4/)
 - [R Tutorial Series](http://rtutorialseries.blogspot.ru/) by John M Quick. The R Tutorial Series provides a collection of user-friendly tutorials to people who want to learn how to use R for statistical analysis. Use the links along the side of the page to explore the tutorial topics.
 
+
+# Развлечения с кодом

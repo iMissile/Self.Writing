@@ -92,6 +92,8 @@ Sandboxing is required for all apps available on the Mac and iOS app store, in o
 - [Proto.io](https://proto.io/). Silly-fast prototyping. Create fully-interactive high-fidelity prototypes that look and work exactly like your app should. No coding required.
 - [GraphLab Create™](https://dato.com/) provides a machine learning platform for data scientists and business analysts with some programming background to easily take their ideas from inspiration to production with the same code base.
 - [Piwik](http://piwik.org/) is the leading open source web analytics platform that gives you valuable insights into your website’s visitors, your marketing campaigns and much more, so you can optimize your strategy and online experience of your visitors.
+- [ObjectRocket](http://objectrocket.com/). Fast, scalable, reliable, and automated MongoDB & Redis.
+- [TravisCI](https://travis-ci.org/). Test and Deploy with Confidence. Easily sync your GitHub projects with Travis CI and you’ll be testing your code in minutes! The home of open source testing. Over 200k open source projects and 126k users are testing on Travis CI.
 
 ## ETL
 - [DaData.ru](http://dadata.ru/). Нормализация почтовых адресов. Автоматически исправляем ошибки в адресах, ФИО и телефонах.

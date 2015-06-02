@@ -42,6 +42,7 @@ The difference between machine learning and other statistical and mathematical a
 ## Data Science resources
 - [Starter Books for Data Science](http://www.exploringdatascience.com/featured/starter-books-data-science/)
 
+http://techcrunch.com/2015/05/07/the-business-economics-and-opportunity-of-open-source-data-science/
 
 #========================================
 # Описание позиции
@@ -66,3 +67,30 @@ The difference between machine learning and other statistical and mathematical a
 - владение одним из математических пакетов: Mathematica, MathLab и пр.
 - знакомство с принципами работы современных распределенных аналитических решений: Hadoop и Storm
 - знание предметных областей: рекламные технологии, телекоммуникации, ритейл
+
+# Курсы, инструменты
+Используемые технологии и инструменты: Python (scikit-learn, nltk), Excel, Weka, R, Octave/Matlab, C++, UNIX Shell, JSON, Hadoop, Machine Learning, Data Mining, Natural Language Processing, Sentiment analysis, scoring.
+
+Обо мне
+• Научные интересы: машинное обучение (анализ и предсказание данных), компьютерная лингвистика, анализ тональности текстов, математика (теория чисел, теория вероятностей, мат. статистика, теория массового обслуживания), физика, медицинские и биотехнологические системы, алгоритмы, структуры данных, big data, криптография, цифровая обработка звуковых сигналов и изображений
+• Алгоритмы машинного обучения: Random Forest, Neural Networks, Logistic Regression, SVM, CRF, clustering, etc.
+• Профессиональная разработка программного обеспечения с 1997 года
+• Технологии разработки и управления проектами: юнит-тестирование, OOP/OOD, UML, юзабилити, системы контроля версий (Git, SVN, Hg, Perforce), системы баг-трекинга и code review (Jira+Agile, Bugzilla, PVCS Tracker, Code Collaborator, Crucible), билд-системы (TeamCity, IncreadiBuild), профилирование, многопоточность, методологии разработки ПО (RUP, Agile=SCRUM/XP, MSF, CMM, TDD, MDD, …)
+• Программирование: Python, C++, Excel, Octave (Matlab), R, Unix Shell, Awk, C#/R#, VB, Perl, Object Pascal/Delphi, Assembler x86, SQL, Hadoop
+• Сети: TCP, UDP, HTTP/HTTPS, IKE, IPSec ESP/AH, …
+• Криптография: DES, AES, RSA, DSA, MD5, SHA-1, GOST, …
+• MS Excel (эксперт)
+
+
+- Курсы Coursera (Johns Hopkins University)
+	- "Statistical Reasoning for Public Health" (distributions, confidence intervals, hypothesis testing, Kaplan-Meier curves)., Практические задания в Excel.
+- Курсы Coursera (Saint Petersburg State University)
+	- "Введение в биоинформатику" (технологии секвенирования, сборка ДНК, выравнивание фрагментов, аннотация генов)., Практические задания в системе BioLinux.
+- Курсы Coursera (University of California, San Diego)
+	- "Bioinformatics Algorithms" (DNA replication, Sequence Alignment, Genome Assembly). Алгоритмы на строках, графах, комбинаторика., Практические задания на Python, C++
+- Курсы coursera.org (Stanford University)
+	- "Machine Learning" (by Andrew Ng): Linear & Logistic regression, SVM, Neural Networks, clustering, feature selection, etc., Практические задания с использованием Octave (MatLab).
+- Курсы coursera.org
+	- "Web Intelligence and Big Data" (Indexing, Sentiment/Intent analysis, Map-reduce, Machine Learning, Clustering, Data Mining)., Практические задания с использованием Python/Orange
+- Курсы coursera.org (Stanford University)
+	- "Probabilistic graphical models" (Байесовские сети, Марковские сети, CRF, общая теория машинного обучения)., Практические задания в системе Octave (MatLab).
