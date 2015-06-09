@@ -99,9 +99,6 @@ Sandboxing is required for all apps available on the Mac and iOS app store, in o
 - [DaData.ru](http://dadata.ru/). Нормализация почтовых адресов. Автоматически исправляем ошибки в адресах, ФИО и телефонах.
 - [Охотник за адресами](http://ixlab.ru). Сервис ahunter.ru представляет собой облачное решение по проверке, исправлению и стандартизации почтовых адресов и телефонных номеров России.
 
-## BI
-- [SpagoBI](http://www.spagobi.org/) is the only entirely Open Source Business Intelligence suite. It covers all the analytical areas of Business Intelligence projects, with innovative themes and engines. SpagoBI offers a wide range of analytical tools, as follows
-
 ## Подборки
 
 - The Architecture of Open Source Applications [eBook](http://www.aosabook.org/en/index.html)
@@ -129,10 +126,19 @@ Sandboxing is required for all apps available on the Mac and iOS app store, in o
 - [Linkurious](http://linkurio.us/). Visualize graph databases easily. The easiest way to explore graph databases. Linkurious helps you make sense of your graph data through a simple web-based interface.
 - [Cytoscape](http://cytoscape.org/) is an open source software platform for visualizing complex networks and integrating these with any type of attribute data. A lot of Apps are available for various kinds of problem domains, including bioinformatics, social network analysis, and semantic web.
 - [vis.js](http://visjs.org/). A dynamic, browser based visualization library. The library is designed to be easy to use, to handle large amounts of dynamic data, and to enable manipulation of and interaction with the data. The library consists of the components DataSet, Timeline, Network, Graph2d and Graph3d.
+
+## BI
+- [SpagoBI](http://www.spagobi.org/) is the only entirely Open Source Business Intelligence suite. It covers all the analytical areas of Business Intelligence projects, with innovative themes and engines. SpagoBI offers a wide range of analytical tools, as follows
+
+## CEPH. Интересные ссылки
 - [CEPH: THE FUTURE OF STORAGE](http://ceph.com/docs/master/cephfs/). Ceph is a unified, distributed storage system designed for excellent performance, reliability and scalability.
   - [Распределенная файловая система Ceph FS за 15 минут](http://habrahabr.ru/post/179823/).
   - [Ceph Benchmarks](http://www.sebastien-han.fr/blog/2012/08/26/ceph-benchmarks/).
   - [Глава 8. Наблюдение за вашим кластером Ceph](http://onreader.mdl.ru/LearningCeph/content/Ch08.html)
+- Sébastien Han [Personal Blog](http://www.sebastien-han.fr/blog/) & [Company Blog](http://techs.enovance.com/). French Cloud Engineer working for [eNovance](http://www.enovance.com/). Daily job focused on Ceph and OpenStack
+- Ceph Performance. Web [slides](http://slides.com/sebastienhan/ceph-performance-and-benchmarking#/)
+- [Orchestration API (Heat)](https://launchpad.net/heat) - Orchestration service for OpenStack. Heat combines resources such as OpenStack instances, volumes, floating IPs, and Linux applications into a running cloud stack.
+
 
 
 #Monitoring
@@ -211,7 +217,7 @@ Sandboxing is required for all apps available on the Mac and iOS app store, in o
 #e-books
 - [IT e-books](http://www.it-ebooks.info/). Free Download IT eBooks
 - [MAXKIR.com](http://www.maxkir.com/): Самое интересное о разработке программного обеспечения.
-  - ["Как начать свое дело"](http://www.maxkir.com/), Пол Грэхем
+  - ["Как начать свое дело"](http://www.maxkir.com/sd/HowToStartYourCompany.html), Пол Грэхем
 
 #Tools
 
@@ -226,6 +232,7 @@ Sandboxing is required for all apps available on the Mac and iOS app store, in o
 ## Примеры дашбордов
 - [Дашборд офис-менеджера](http://dashboard.sidlee.com/)
 - [SonarSource Customizable Dashboards](http://www.sonarsource.com/products/features/customizable-dashboards/) products allow users to create fully customizable dashboards and filters that focus only on key areas of interest.
+- [vizGrimoire](http://vizgrimoire.bitergia.org/). Analyzing and visualizing software development. vizGrimoire (usually pronounced /ˌvɪzɡrɪmˈwɑr/) is a toolset and framework to analyze and visualize data about software development. Currently, it is focused on data produced by the MetricsGrimoire tools (CVSAnalY, Bicho and MailingListStats).
 
 ## Web\Blog
 - [Cactus](https://github.com/koenbok/Cactus). A fast, easy and free static site generator. [Cactus for Mac](http://cactusformac.com/)

@@ -366,6 +366,15 @@ This problem is not usually addressed in time series analysis, because time seri
 # Linear Regression
 - [The Analysis Factor](http://www.theanalysisfactor.com/r/). В частности, рассмотрение линейной регрессии ["R Is Not So Hard! A Tutorial, Part 4: Fitting a Quadratic Model"](http://www.theanalysisfactor.com/r-tutorial-4/)
 - [R Tutorial Series](http://rtutorialseries.blogspot.ru/) by John M Quick. The R Tutorial Series provides a collection of user-friendly tutorials to people who want to learn how to use R for statistical analysis. Use the links along the side of the page to explore the tutorial topics.
+- [Least squares and linear regression](https://rpubs.com/davoodastaraky/LSLR	) by Davood Astaraky.
 
 
 # Развлечения с кодом
+## линейная регрессия
+Необходимо нарисовать прямую по которой была проведена регрессия, а не сплайны geom_smooth
+Есть 2 варианта:
+# я хочу нарисовать прямую по которой была проведена регрессия, а не сплайны.
+1. [ggplot2 Quick Reference: geom_abline](http://sape.inf.usi.ch/quick-reference/ggplot2/geom_abline), примеры есть [здесь](http://docs.ggplot2.org/current/geom_abline.html)
+  - slope - (required) slope of the line (the "a" in "y=ax+b")
+  - intercept - (required) intercept with the y axis of the line (the "b" in "y=ax+b").
+2. Использовать функцию [stat_function()](https://kohske.wordpress.com/2010/12/25/draw-function-without-data-in-ggplot2/)

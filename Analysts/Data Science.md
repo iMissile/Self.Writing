@@ -41,8 +41,8 @@ The difference between machine learning and other statistical and mathematical a
 
 ## Data Science resources
 - [Starter Books for Data Science](http://www.exploringdatascience.com/featured/starter-books-data-science/)
-
-http://techcrunch.com/2015/05/07/the-business-economics-and-opportunity-of-open-source-data-science/
+- [The Business Economics And Opportunity Of Open-Source Data Science](http://techcrunch.com/2015/05/07/the-business-economics-and-opportunity-of-open-source-data-science/)
+- [Applied Statistics Is A Way Of Thinking, Not Just A Toolbox](https://datafloq.com/read/applied-statistics-is-way-thinking-not-toolbox/1154)
 
 #========================================
 # Описание позиции
