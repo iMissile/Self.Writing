@@ -1,6 +1,6 @@
 # Материалы по LaTeX
 - [Лекции МИФИ](http://theor.mephi.ru/wiki/index.php?title=LaTex)
-- Презентация ["Документы и презентации в LaTeX (Introduction to LaTeX)"](https://www.coursera.org/course/latex) на Courcera.org
+- Презентация ["Документы и презентации в LaTeX (Introduction to LaTeX)"](https://www.coursera.org/course/latex) на Coursera.org
 
 # TikZ для Beamer LaTeX
 ## Что такое TikZ
