@@ -53,6 +53,7 @@ Predictive applications automate decision-making based on current and historical
 - [NOTE](http://rpackages.ianhowson.com/cran/dplyr/man/select.html): one_of("x", "y", "z"): selects variables provided in a character vector.
 - [Top 50 Data Science Resources: The Best Blogs, Forums, Videos and Tutorials to Learn All about Data Science](http://www.ngdata.com/top-data-science-resources/)
 - [4 data wrangling tasks in R for advanced beginners](http://www.computerworld.com/article/2486425/business-intelligence-4-data-wrangling-tasks-in-r-for-advanced-beginners.html)
+- [Say it in R with "by", "apply" and friends](http://www.magesblog.com/2012/01/say-it-in-r-with-by-apply-and-friends.html)
 
 ## подвал
 	Solution: the pipe operator from magrittr
@@ -197,6 +198,7 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [PredictionIO](https://prediction.io/) - An open-source machine learning server for developers and data scientists to create predictive engines for production environments. Built on top of Apache Spark, HBase and Spray.
 - [BayesiaLab 5.4](http://www.bayesia.us/) is a powerful Artificial Intelligence software (Win/Mac/Unix), which provides scientists a comprehensive “lab” environment for machine learning, knowledge modeling, analytics, simulation, and optimization — all based on the Bayesian network paradigm.
 - [Metafor Software](http://www.metaforsoftware.com/) Detect the anomalies that matter – automatically and in real time. Analyze the behavior of millions of logs and metrics of any type from any data source. Get alerted at the earliest sign of a problem so you can fix it immediately; no threshold or rule setting required.
+- [Geogebra](http://www.geogebra.org/) is a multi-platform mathematics software that gives everyone the chance to experience the extraordinary insights that math makes possible
 
 - [PiktoChart](http://piktochart.com/). Easy-To-Use Infographic Creator. Discover how non-designers are creating beautiful infographics in as little as 10 minutes
 - [Datawrapper](https://datawrapper.de/). Create charts and maps in just four steps. This tool reduces the time you need to create visualizations from hours to minutes.
@@ -366,7 +368,7 @@ This problem is not usually addressed in time series analysis, because time seri
 # Linear Regression
 - [The Analysis Factor](http://www.theanalysisfactor.com/r/). В частности, рассмотрение линейной регрессии ["R Is Not So Hard! A Tutorial, Part 4: Fitting a Quadratic Model"](http://www.theanalysisfactor.com/r-tutorial-4/)
 - [R Tutorial Series](http://rtutorialseries.blogspot.ru/) by John M Quick. The R Tutorial Series provides a collection of user-friendly tutorials to people who want to learn how to use R for statistical analysis. Use the links along the side of the page to explore the tutorial topics.
-- [Least squares and linear regression](https://rpubs.com/davoodastaraky/LSLR	) by Davood Astaraky.
+- [Least squares and linear regression](https://rpubs.com/davoodastaraky/LSLR) by Davood Astaraky.
 
 
 # Развлечения с кодом
