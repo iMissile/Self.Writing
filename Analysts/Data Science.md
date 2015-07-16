@@ -37,6 +37,40 @@ The difference between machine learning and other statistical and mathematical a
 - Data mining discovers previously unknown patterns and knowledge.
 - Machine learning is used to reproduce known patterns and knowledge, automatically apply that to other data, and then automatically apply those results to decision making and actions.
 
+## 10 Reasons of Why I Love Data Analytics by Paul Balm
+[Source](http://www.amadeus.com/blog/04/06/10-reasons-why-i-love-data-and-analytics/ "Permalink to 10 Reasons of Why I Love Data Analytics by Paul Balm")
+
+_![Data Science][1]Editor's note: It's been labelled the sexiest profession of the 21st Century, one where demand has raced ahead of supply, a hybrid of data hacker, analyst, communicator, and trusted advisor. [Data scientists][2] __are people with the skill set (and the mind-set) to tame Big Data technologies and put them to good use. But what kind of person does this? Who has that powerful –and rare- combination of skills?  In this series, Amadeus' team of [Data Scientists][2] __seek to unlock the answers to those questions and their impact on travel._
+
+Not long ago, I was in a job interview at a small software start-up. This was the third round of interviews and they were being very thorough in the selection process.  After an hour or so, the interviewers fell silent. "We actually don't think you're a very good fit for this position we have", said one of them, "but we believe that you could be our data scientist." It was at this point that I discovered my love for data and analytics. I went on to find my current job as a Data Scientist with the Travel Intelligence unit at Amadeus – and eventually I came to wonder, what exactly is it that is so fulfilling about working as a data scientist? After a little consideration, I've identified ten reasons why I love data and analytics.
+
+1. **Data and analytics allow us to make informed decisions – and to stop guessing.** I was never fond of making decisions based on gut feeling, perhaps because the gut says one thing one day, and something quite different the following day. The data 'is what it is' – even if [it can also be easily abused][3].
+2. **Who likes to argue?** Data analysis provides objective answers that can put an end to an argument. The added benefit is that, being the data scientist in the discussion, you are at a clear advantage!
+3. **Businesses need to make trade-offs**. Airlines can trade yield for load, or the other way around; travel agencies need to spend their advertising budget with maximum effect. Data and analytics can have real influence on the decisions a business takes, and on the outcome.
+
+Aside from the business impact, for me there are more personal reasons for loving my new professional field as well.
+
+4. **It's exciting.** At the risk of making overly bold statements, the tools for handling large amounts of data and doing analytics are quite possibly advancing more rapidly than any other technology field today. With better tools, comes better understanding of how we should be doing analytics and how we should use the resulting information, all of which is evolving extremely fast.
+5. **It satisfies curiosity**. You might be sitting at an airport looking at aircrafts come and go, docking at the gates, boarding passengers and taking off again, and wonder… Whatever questions you may have, it's likely that analysis of data flowing through Amadeus' systems can answer them.
+6. **It's mysterious**. Tell me: [What][4] [is][5] [data][6] [science][7]?  In such a new field, finding consensus around one single definition is hard. But in my opinion, data science is the process of creating (business) value from data. One of the best definitions of [Big Data][8] I've come across is: "Big Data is data that is so large that its volume becomes a problem in its own right." Not only understanding the data, or how to make predictions based on the data, but the very fact that there's so much of it that even something as simple as calculating final ticket fares requires specialised technology. That's one of the things that sets data science apart from statistics.
+7. **It can be applied to many different domains**. In my job, I'm applying data science to travel industry data – tickets, schedules, bookings, searches – and to data that is not necessarily travel industry data, but that somehow affects travel, like currency exchange rates or weather data. But data science can be applied to many domains. For example, if you have investments, how are they doing and why?
+8. **What about money?** Well… Who married his partner for money? Put your hand down!  I don't think money is often a factor that leads to love, or even fondness, but the current scarcity of data scientists in the job market, the attention from recruiters, and the appreciation in the workplace, certainly helps.
+9. Looking back at my CV with fresh eyes, I now realise I also love data because **it makes so much sense**. I studied Physics and have a PhD in Science. After that, I worked on data processing for scientific projects. Why, since I had done Science as well as worked with data, did it not occur to me earlier I might like data science? Now if you needed any more convincing arguments about the excitement in data, analytics and being a data scientist, there is the media to proclaim that:
+10. [Data Scientist is the sexiest job of the 21st century!][9]
+
+In a future post in this series, we will take up the last of these in more detail. Stay tuned!
+
+[1]: http://blogamadeus.com/wp-content/uploads/2015/06/shutterstock_167436176-300x225.jpg
+[2]: http://www.amadeus.com/blog/tag/data-scientist/
+[3]: http://en.wikipedia.org/wiki/Lies,_damned_lies,_and_statistics
+[4]: http://en.wikipedia.org/wiki/Data_science
+[5]: http://datascience.berkeley.edu/about/what-is-data-science/
+[6]: http://datascience.nyu.edu/what-is-data-science/
+[7]: http://www.forbes.com/sites/gilpress/2013/05/28/a-very-short-history-of-data-science/
+[8]: http://en.wikipedia.org/wiki/Big_data
+[9]: https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century/
+  
+
 ## [Top 50 Data Science Resources: The Best Blogs, Forums, Videos and Tutorials to Learn All about Data Science](http://www.ngdata.com/top-data-science-resources/)
 
 ## Data Science resources
@@ -44,6 +78,9 @@ The difference between machine learning and other statistical and mathematical a
 - [The Business Economics And Opportunity Of Open-Source Data Science](http://techcrunch.com/2015/05/07/the-business-economics-and-opportunity-of-open-source-data-science/)
 - [Applied Statistics Is A Way Of Thinking, Not Just A Toolbox](https://datafloq.com/read/applied-statistics-is-way-thinking-not-toolbox/1154)
 - [Top 10 Data Mining Algorithms, Demystified](https://datafloq.com/read/top-10-data-mining-algorithms-demystified/1144)
+- [What (Really) is a Data Scientist?](http://qualityandinnovation.com/2015/07/13/what-really-is-a-data-scientist/)
+- [Learn Data Science the Hard Way](http://www.dataphoric.com/2015/06/27/learn_data_science_the_hard_way/)
+
 
 #========================================
 # Описание позиции

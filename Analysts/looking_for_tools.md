@@ -64,6 +64,7 @@ Sandboxing is required for all apps available on the Mac and iOS app store, in o
 - [Scribble](http://www.tryscribble.com/). Simple. Markdown. Wikis.
 - [Pen.io](http://pen.io/). Publish a Beautiful Blog Post Online in Seconds. It takes just seconds to publish your article and share it with the world
 - [Slidify](http://ramnathv.github.io/slidify/). Stunning presentations from markdown. [Get Started](http://ramnathv.github.io/slidify/start.html). You can install Slidify, write a three page slide deck and publish it to Github, all in less than 5 minutes! [Slidify - Interactive Docs with R Markdown](http://slidify.github.io/)
+- [SketchPad](https://sketch.io/sketchpad/) is a non-destructive illustration app featuring a wide spectrum of functionality
 
 
 - [Overleaf](http://www.overleaf.com/). Collaborative Writing and Publishing. The easiest way to create, edit and publish your research. (**News**: WriteLaTeX Relaunching as Overleaf)
@@ -126,6 +127,7 @@ Sandboxing is required for all apps available on the Mac and iOS app store, in o
 - [Linkurious](http://linkurio.us/). Visualize graph databases easily. The easiest way to explore graph databases. Linkurious helps you make sense of your graph data through a simple web-based interface.
 - [Cytoscape](http://cytoscape.org/) is an open source software platform for visualizing complex networks and integrating these with any type of attribute data. A lot of Apps are available for various kinds of problem domains, including bioinformatics, social network analysis, and semantic web.
 - [vis.js](http://visjs.org/). A dynamic, browser based visualization library. The library is designed to be easy to use, to handle large amounts of dynamic data, and to enable manipulation of and interaction with the data. The library consists of the components DataSet, Timeline, Network, Graph2d and Graph3d.
+- [Robomongo](http://robomongo.org/). Shell-centric cross-platform MongoDB management tool
 
 ## BI
 - [SpagoBI](http://www.spagobi.org/) is the only entirely Open Source Business Intelligence suite. It covers all the analytical areas of Business Intelligence projects, with innovative themes and engines. SpagoBI offers a wide range of analytical tools, as follows
@@ -154,6 +156,7 @@ Sandboxing is required for all apps available on the Mac and iOS app store, in o
 - [SpiceWorks Network Mapping](http://www.spiceworks.com/free-network-mapping-software/) (Free)
 
 #Development
+- [Docker](https://www.docker.com/whatisdocker) allows you to package an application with all of its dependencies into a standardized unit for software development.
 - [DevExtreme Web](http://js.devexpress.com/WebDevelopment/) Create highly responsive web apps for touch-enabled devices and traditional desktops.
 - [JUMLY](http://jumly.tmtk.net/) is a JavaScript library for UML diagram rendering engine
 
@@ -165,6 +168,8 @@ Sandboxing is required for all apps available on the Mac and iOS app store, in o
 - [Webix](http://webix.com/) provides a great number of JavaScript UI widgets with a pefect look and feel great on various devices. All of them can be effortlessly customized in accordance with your preferences thanks to the rich and clear API.
 - [jquery-plugins.net/](http://jquery-plugins.net/)
 - [tablesorter](https://mottie.github.io/tablesorter/docs/example-widget-grouping.html). Flexible client-side table sorting
+- [Variance charts](https://variancecharts.com/). Build powerful data visualizations for the web. Without writing JavaScript.
+Variance empowers engineers, designers, journalists, scientists, and analysts to build elegant bespoke data graphics for the web, using only HTML & CSS. Our intuitive, markup-based grammar emphasizes clear, practical graphics and serves as the foundation for a wide range of visualizations.
 
 # JS frameworks
 

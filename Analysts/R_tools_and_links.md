@@ -1,3 +1,5 @@
+[Универсальный декодер - конвертер кириллицы](http://2cyr.com/decode/?lang=ru)
+
 #R
 
 ## Концептуальные материалы
@@ -11,6 +13,7 @@
 - [10 R packages I wish I knew about earlier](http://blog.yhathq.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html)
 - [Top 10 R Packages to be a Kaggle Champion](http://www.kdnuggets.com/2015/04/top-10-r-packages-kaggle.html)
 - [A brief introduction to “apply” in R](https://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/)
+- [Repeating things: looping and the apply family](http://nicercode.github.io/guides/repeating-things/)
 - [Now's a great time to learn R. Here's how](http://blog.revolutionanalytics.com/2015/01/nows-a-great-time-to-learn-r-heres-how.html).
 - [The ensurer package (validation inside pipes)](http://www.r-statistics.com/2014/11/the-ensurer-package-validation-inside-pipes/)
 - [12 nifty tips for scientists who use computers](http://www.petrkeil.com/?p=2356)
@@ -27,6 +30,12 @@
 - [How to make a great R reproducible example?](http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example)
 - [R Tutorial: Intro to Loops (While, For, Repeat, Apply, etc!)](https://blog.udemy.com/r-tutorial/)
 - [R Grouping functions: sapply vs. lapply vs. apply. vs. tapply vs. by vs. aggregate](http://stackoverflow.com/questions/3505701/r-grouping-functions-sapply-vs-lapply-vs-apply-vs-tapply-vs-by-vs-aggrega)
+- [Nice R Code](http://nicercode.github.io/). Punning code better since 2013
+- [The R Consortium, Inc.](https://www.r-consortium.org/) is a group of businesses organized under an open source governance and foundation model to provide support to the R community, the R Foundation and groups and individuals, using, maintaining and distributing R software.
+- [DATA.TABLE VS. DPLYR IN SPLIT APPLY COMBINE STYLE ANALYSIS](http://www.brodieg.com/?p=7)
+- [LaTeX2exp](http://cran.r-project.org/web/packages/latex2exp/vignettes/latex2exp.html) is an R package that parses and converts LaTeX math formulas to R’s plotmath expressions. 
+- [SparkRext - SparkR extension for closer to dplyr](http://mockquant.blogspot.jp/2015/07/sparkrext-sparkr-extension-for-closer.html)
+- [Easy Bayesian Bootstrap in R](http://www.sumsar.net/blog/2015/07/easy-bayesian-bootstrap-in-r/)
 
 ## [Gartner "Cool Vendors in Data Science", 2015](https://www.gartner.com/doc/3031420/cool-vendors-data-science-)
 
@@ -37,7 +46,7 @@ Predictive applications automate decision-making based on current and historical
 
 
 ## Data Processing articles (COOL)
-- [Data Processing with dplyr & tidyr](https://rpubs.com/bradleyboehmke/data_wrangling)
+- [Data Processing with dplyr & tidyr](https://rpubs.com/bradleyboehmke/data_wrangling) by Brad Boehmke, February 13th, 2015
 - [A new data processing workflow for R: dplyr, magrittr, tidyr, ggplot2](http://zevross.com/blog/2015/01/13/a-new-data-processing-workflow-for-r-dplyr-magrittr-tidyr-ggplot2/)
 - [Four reasons why you should check out the R package dplyr](http://zevross.com/blog/2014/03/26/four-reasons-why-you-should-check-out-the-r-package-dplyr-3/)
 - [Introduction to data.tree](http://cran.r-project.org/web/packages/data.tree/vignettes/data.tree.html)
@@ -54,6 +63,8 @@ Predictive applications automate decision-making based on current and historical
 - [Top 50 Data Science Resources: The Best Blogs, Forums, Videos and Tutorials to Learn All about Data Science](http://www.ngdata.com/top-data-science-resources/)
 - [4 data wrangling tasks in R for advanced beginners](http://www.computerworld.com/article/2486425/business-intelligence-4-data-wrangling-tasks-in-r-for-advanced-beginners.html)
 - [Say it in R with "by", "apply" and friends](http://www.magesblog.com/2012/01/say-it-in-r-with-by-apply-and-friends.html)
+- [Window functions and grouped mutate/filter](http://cran.r-project.org/web/packages/dplyr/vignettes/window-functions.html). ! Offsets lead() and lag() allow you to access the previous and next values in a vector, making it easy to compute differences and trends.
+- [Cheat Sheet – 10 Machine Learning Algorithms & R Commands](http://vitalflux.com/cheat-sheet-10-machine-learning-algorithms-r-commands/)
 
 ## подвал
 	Solution: the pipe operator from magrittr
@@ -105,6 +116,8 @@ Predictive applications automate decision-making based on current and historical
 - [Pilot Police Demand Planning Tool](https://gallery.shinyapps.io/TSupplyDemand/)
 - [Google Analytics Effect](https://mark.shinyapps.io/ga-effect/). This webapp uses Bayesian time-series to model your Google Analytics traffic under normal circumstances.
 - [Using Action Buttons](http://shiny.rstudio.com/articles/action-buttons.html)
+- [Persistent data storage in Shiny apps](http://deanattali.com/blog/shiny-persistent-data-storage/)
+- [Building an Instructional Simulation App in Shiny](https://homer.shinyapps.io/sim_tutorial_Rmd)
 
 ## Data Manipulation
 - [DataWrangler](http://vis.stanford.edu/wrangler/) is an interactive tool for data cleaning and transformation. Spend less time formatting and more time analyzing your data. **UPDATE**: The Wrangler research project is complete, and the software is no longer actively supported. The team behind Wrangler has moved on to work on a commercial venture, [Trifacta](http://www.trifacta.com/).
@@ -127,6 +140,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [JUT is a Dataflow Analytics Platform Built For Devops](http://www.jut.io/) Live Meets Historical Events Meets Metrics
 - [4 data wrangling tasks in R for advanced beginners](http://www.computerworld.com/article/2486425/business-intelligence-4-data-wrangling-tasks-in-r-for-advanced-beginners.html)
 - [Hands-on with dplyr](https://github.com/dgrapov/TeachingDemos/blob/master/Demos/dplyr/hands_on_with_dplyr.md)
+- [Two of my favorite data.table features](http://educate-r.org/2014/01/06/FavDataTable/)
 
 
 ## Курсы обучения и интересные бизнес решения на базе R
@@ -156,6 +170,9 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [R Tutorial](http://www.princeton.edu/~mattg/statar/) by Matthieu Gomez. These notes on R are primarily designed for Stata users. Just as Stata is normally learned, operations on datasets are presented first, while operations on atomic vectors and lists follow. This guide is centered on recent R packages - in particular dplyr and data.table which bring R syntax and memory gestion closer to Stata.
 - [R Studio Webinars and Videos On Demand](http://www.rstudio.com/resources/webinars/)
 - [nbviewer](http://nbviewer.ipython.org/). A simple way to share Jupyter Notebooks
+- [Jennifer (Jenny) Bryan](https://github.com/jennybc) on GitHub
+- [SlideRule](https://www.mysliderule.com) -- your online learning hub
+- [Learn X in Y minutes](http://learnxinyminutes.com/docs/python/). Where X=python
 
 ###Tutorial
 - [A very quick introduction to ggplot2](http://chrisladroue.com/extra/ggplot2Intro/introductionGGplot2/)
@@ -175,6 +192,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 
 
 ### Бизнес-решения
+- [MapR](https://www.mapr.com/) is a complete distribution for Apache Hadoop that packages more than a dozen projects from the Hadoop ecosystem to provide you with a broad set of big data capabilities. The MapR platform not only provides enterprise-grade features such as high availability, disaster recovery, security, and full data protection but also allows Hadoop to be easily accessed as traditional network attached storage (NAS) with read-write capabilities
 - [StatAce](http://statace.com/). Predictive analytics in the cloud based on R. Трансформировались в [Intuitics](https://www.intuitics.com/) и **пока не работают**. Build advanced analytics web apps with ease
 Intuitics increases the speed with which data insights reach decision makers. Instead of waiting for the data science team to rerun an analysis, a business user can now do it on her own, with her data and parameters, in an intuitive web application, built in Intuitics.
 - [Intuitics](https://www.intuitics.com/) turns your R, SAS and Python models into interactive web apps, quickly and easily
@@ -278,6 +296,7 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - The [Behavioral Change Point Analysis (BCPA)](http://wiki.cbr.washington.edu/qerm/index.php/Behavioral_Change_Point_Analysis) is a method of identifying hidden shifts in the underlying parameters of a time series, developed specifically to be applied to animal movement data which is irregularly sampled.
 - Dealing with Missing Data in R: Omit, Approx, or Spline [Part 1](http://publish.illinois.edu/spencer-guerrero/2014/12/11/2-dealing-with-missing-data-in-r-omit-approx-or-spline-part-1/), [Part 2](http://publish.illinois.edu/spencer-guerrero/2014/12/11/2-dealing-with-missing-data-in-r-omit-approx-or-spline-part-2/)
 - [Time Series Data Analysis with pandas](http://pyvideo.org/video/1198/time-series-data-analysis-with-pandas). (Video)
+- [R financial time series tips everyone should know about](http://www.thertrader.com/2015/07/07/r-financial-time-series-tips-everyone-should-know-about/)
 
 ## StackoverFlow etc.
 - [Creating a Data Frame based on day of week from a Data Frame containing several months of data](http://stackoverflow.com/questions/8992585/creating-a-data-frame-based-on-day-of-week-from-a-data-frame-containing-several)
@@ -290,6 +309,7 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [How to label histogram bars with data values or percents in R](http://stackoverflow.com/questions/9317948/how-to-label-histogram-bars-with-data-values-or-percents-in-r)
 - [smooth.Pspline wrapper for stat_smooth (in ggplot2)](http://stackoverflow.com/questions/19284897/smooth-pspline-wrapper-for-stat-smooth-in-ggplot2/19285387#19285387)
 - [tally {dplyr}](http://www.inside-r.org/node/230679). Tally observations by group. tally is a convenient wrapper for summarise that will either call n or sum(n) depending on whether you're tallying for the first time, or re-tallying.
+- [How to perform join over date ranges using data.table?](http://stackoverflow.com/questions/27487949/how-to-perform-join-over-date-ranges-using-data-table)
 
 
 ## Почему надо выбор остановить на R

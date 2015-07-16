@@ -42,9 +42,7 @@
 - [NetMotion Wireless](http://www.netmotionwireless.com/)
 - [Nexthink](http://www.nexthink.com/why-nexthink-is-unique/) is the innovator of End-user IT Analytics for security, ITSM and workplace transformation. Nexthink maps all the IT services, how they are being consumed, and how the IT infrastructure is operating, from the only perspective that matters most, the end-users (workers). Nexthink provides essential visibility and insight into IT operations and security for IT Governance.
 - [Sumo Logic](http://www.sumologic.com/) is a Scalable, Service-Based Log Management.
-- [ThousandEyes](https://www.thousandeyes.com/) Monitors Complex, Distributed Networks
-Enterprise IT, online operations and network security teams use ThousandEyes to diagnose and instrument their
-internal and external networks in order to improve application performance and reduce service interruptions.
+- [ThousandEyes](https://www.thousandeyes.com/) Monitors Complex, Distributed Networks. Enterprise IT, online operations and network security teams use ThousandEyes to diagnose and instrument their internal and external networks in order to improve application performance and reduce service interruptions.
 
 
 ## Cool Vendors in Application Performance Monitoring, 2013
@@ -111,6 +109,7 @@ Transform your monitoring data into valuable insight at any layer of the stack.
 
 # Примеры комплексов на базе фреймворков и компонентов
 - [Fluentd](http://www.fluentd.org/) is an open source data collector for unified logging layer. Aggregate and Analyze Syslog with InfluxDB.
+- [Graylog](https://www.graylog.org/) is a fully integrated open source log management platform for collecting, indexing, and analyzing both structured and unstructured data from almost any source.
 - [logstash](http://logstash.net/) is a tool for managing events and logs.
 - [Graphana](http://grafana.org/) is an open source, feature rich metrics dashboard and graph editor for Graphite, InfluxDB & OpenTSDB.
 - [Treasure Data](http://www.treasuredata.com/technology.php) provides a cloud-based, managed service for data and analytics, helping businesses get value from big data in days, not months. [QuickStart](http://docs.treasuredata.com/articles/treasure-agent-monitoring-service)
@@ -125,7 +124,8 @@ Transform your monitoring data into valuable insight at any layer of the stack.
 ## Доп. материалы
 - Алгоритмы прогнозирования. Онлайн книга [Forecasting: principles and practice](https://www.otexts.org/book/fpp)
 - Библиотеки для прогнозирования метрик на основе теории очередей. [Guerilla Capacity Planning](http://www.perfdynamics.com/)
-- Библиотека визуализации [D3.js](http://d3js.org/). Онлайн книга [Interactive Data Visualization for the Web,](http://chimera.labs.oreilly.com/books/1230000000345/index.html) 
+- Библиотека визуализации [D3.js](http://d3js.org/). Онлайн книга [Interactive Data Visualization for the Web,](http://chimera.labs.oreilly.com/books/1230000000345/index.html)
+- [dc.js - Dimensional Charting Javascript Library](https://dc-js.github.io/dc.js/). dc.js is a javascript charting library with native crossfilter support and allowing highly efficient exploration on large multi-dimensional dataset (inspired by crossfilter's demo). It leverages d3 engine to render charts in css friendly svg format. 
 - [Over 2000 D3.js Examples and Demos](http://techslides.com/over-2000-d3-js-examples-and-demos)
 - Спарклайны с D3.js: [Angular.js Inline Visualization with D3.js](https://blog.safaribooksonline.com/2014/02/12/inline-visualization-d3-js/)
 - [Spakline Examples](https://sparkline.wikispaces.com/Examples)
@@ -138,7 +138,6 @@ Transform your monitoring data into valuable insight at any layer of the stack.
 ## Time-Series database
 - [OpenTSDB](http://opentsdb.net/). The Scalable Time Series Database.
 - [InfluxDB](http://influxdb.com/). An open-source, distributed, time series database with no external dependencies.
-- [Whisper](http://graphite.readthedocs.org/en/1.0/whisper.html) is a fixed-size database, similar in design and purpose to RRD (round-robin-database). It provides fast, reliable storage of numeric data over time. Whisper allows for higher resolution (seconds per point) of recent data to degrade into lower resolutions for long-term retention of historical data.
 - [Axibase Time-Series Database (ATSD)](http://axibase.com/) is a next-generation statistics database built for companies that need to extract value from large amounts of time-series data which exists in their IT and operational infrastructure.
 - [The Whisper Database](http://graphite.readthedocs.org/en/1.0/whisper.html) is a fixed-size database, similar in design and purpose to RRD (round-robin-database). It provides fast, reliable storage of numeric data over time. Whisper allows for higher resolution (seconds per point) of recent data to degrade into lower resolutions for long-term retention of historical data
 
@@ -165,8 +164,7 @@ Transform your monitoring data into valuable insight at any layer of the stack.
 - [Netflix Open Source Software Center](http://netflix.github.io/). [Blog](http://techblog.netflix.com/)
 - [Icinga](http://www.icinga.org/). Icinga 2 is a drop-in replacement for Nagios and Icinga 1, compatible with all existing plugins, user interfaces (eg. Classic UI, Icinga Web) and addons. It is designed however, to be easier to install, extend and scale while being incredibly fast and robust.
 - [Prometheus](http://prometheus.io/). An open-source service monitoring system and time series database.
-- [Takipi](https://www.takipi.com/) tells you when and why code breaks in production.
-Get actionable information to fix the errors that impact your users the most.
+- [Takipi](https://www.takipi.com/) tells you when and why code breaks in production. Get actionable information to fix the errors that impact your users the most.
 
 
 ##Блог записи

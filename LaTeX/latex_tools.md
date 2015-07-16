@@ -1,6 +1,7 @@
 # Материалы по LaTeX
 - [Лекции МИФИ](http://theor.mephi.ru/wiki/index.php?title=LaTex)
 - Презентация ["Документы и презентации в LaTeX (Introduction to LaTeX)"](https://www.coursera.org/course/latex) на Coursera.org
+- [TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/) is a question and answer site for users of TeX, LaTeX, ConTeXt, and related typesetting systems. It's 100% free, no registration required. 
 
 # TikZ для Beamer LaTeX
 ## Что такое TikZ
