@@ -36,6 +36,7 @@
 - [LaTeX2exp](http://cran.r-project.org/web/packages/latex2exp/vignettes/latex2exp.html) is an R package that parses and converts LaTeX math formulas to R’s plotmath expressions. 
 - [SparkRext - SparkR extension for closer to dplyr](http://mockquant.blogspot.jp/2015/07/sparkrext-sparkr-extension-for-closer.html)
 - [Easy Bayesian Bootstrap in R](http://www.sumsar.net/blog/2015/07/easy-bayesian-bootstrap-in-r/)
+- [Global and local variables in R](http://stackoverflow.com/questions/10904124/global-and-local-variables-in-r)
 
 ## [Gartner "Cool Vendors in Data Science", 2015](https://www.gartner.com/doc/3031420/cool-vendors-data-science-)
 
@@ -309,8 +310,8 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [How to label histogram bars with data values or percents in R](http://stackoverflow.com/questions/9317948/how-to-label-histogram-bars-with-data-values-or-percents-in-r)
 - [smooth.Pspline wrapper for stat_smooth (in ggplot2)](http://stackoverflow.com/questions/19284897/smooth-pspline-wrapper-for-stat-smooth-in-ggplot2/19285387#19285387)
 - [tally {dplyr}](http://www.inside-r.org/node/230679). Tally observations by group. tally is a convenient wrapper for summarise that will either call n or sum(n) depending on whether you're tallying for the first time, or re-tallying.
-- [How to perform join over date ranges using data.table?](http://stackoverflow.com/questions/27487949/how-to-perform-join-over-date-ranges-using-data-table)
-
+- [How to remove selected R variables without having to type their names](http://stackoverflow.com/questions/21677923/how-to-remove-selected-r-variables-without-having-to-type-their-names)
+- [Shoud I get a habit of removing unused variables in R?](http://stackoverflow.com/questions/17218404/shoud-i-get-a-habit-of-removing-unused-variables-in-r)
 
 ## Почему надо выбор остановить на R
 - [Getting Started in Data Science](http://treycausey.com/getting_started.html)
@@ -389,6 +390,7 @@ This problem is not usually addressed in time series analysis, because time seri
 - [The Analysis Factor](http://www.theanalysisfactor.com/r/). В частности, рассмотрение линейной регрессии ["R Is Not So Hard! A Tutorial, Part 4: Fitting a Quadratic Model"](http://www.theanalysisfactor.com/r-tutorial-4/)
 - [R Tutorial Series](http://rtutorialseries.blogspot.ru/) by John M Quick. The R Tutorial Series provides a collection of user-friendly tutorials to people who want to learn how to use R for statistical analysis. Use the links along the side of the page to explore the tutorial topics.
 - [Least squares and linear regression](https://rpubs.com/davoodastaraky/LSLR) by Davood Astaraky.
+- [Fitting & Interpreting Linear Models in R](http://blog.yhathq.com/posts/r-lm-summary.html)
 
 
 # Развлечения с кодом
