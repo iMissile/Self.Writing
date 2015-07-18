@@ -312,6 +312,8 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [tally {dplyr}](http://www.inside-r.org/node/230679). Tally observations by group. tally is a convenient wrapper for summarise that will either call n or sum(n) depending on whether you're tallying for the first time, or re-tallying.
 - [How to remove selected R variables without having to type their names](http://stackoverflow.com/questions/21677923/how-to-remove-selected-r-variables-without-having-to-type-their-names)
 - [Shoud I get a habit of removing unused variables in R?](http://stackoverflow.com/questions/17218404/shoud-i-get-a-habit-of-removing-unused-variables-in-r)
+- [ggplot2: Adding Regression Line Equation and R2 on graph](http://stackoverflow.com/questions/7549694/ggplot2-adding-regression-line-equation-and-r2-on-graph)
+- [ggplot: Adding Regression Line Equation and R2 with Facet [duplicate]](http://stackoverflow.com/questions/19699858/ggplot-adding-regression-line-equation-and-r2-with-facet)
 
 ## Почему надо выбор остановить на R
 - [Getting Started in Data Science](http://treycausey.com/getting_started.html)
@@ -338,8 +340,7 @@ Intuitics increases the speed with which data insights reach decision makers. In
 # BI tools
 - [TIBCO Jaspesoft](https://www.jaspersoft.com/editions)
 - [SpagoBI](http://spagobi.org/). 100% Open Source Business Intelligence. A comprehensive, innovative and flexible suite for advanced analytics
-- [Microsoft Power BI](https://www.powerbi.com/dashboards). Bring your data to life.
-Insights are hiding in your company's data - see the impact of bringing them into focus with Power BI.
+- [Microsoft Power BI](https://www.powerbi.com/dashboards). Bring your data to life. Insights are hiding in your company's data - see the impact of bringing them into focus with Power BI.
 
 # Онлайн-учебники (Лида)
 - [f(x,y,z).ru](http://www.fxyz.ru/) -- формулы и расчеты онлайн
@@ -391,6 +392,9 @@ This problem is not usually addressed in time series analysis, because time seri
 - [R Tutorial Series](http://rtutorialseries.blogspot.ru/) by John M Quick. The R Tutorial Series provides a collection of user-friendly tutorials to people who want to learn how to use R for statistical analysis. Use the links along the side of the page to explore the tutorial topics.
 - [Least squares and linear regression](https://rpubs.com/davoodastaraky/LSLR) by Davood Astaraky.
 - [Fitting & Interpreting Linear Models in R](http://blog.yhathq.com/posts/r-lm-summary.html)
+- [PLOTTING LM AND GLM MODELS WITH GGPLOT #RSTATS](https://strengejacke.wordpress.com/2013/03/22/plotting-lm-and-glm-models-with-ggplot-rstats/)
+- [Residual Plot](http://www.r-tutor.com/elementary-statistics/simple-linear-regression/residual-plot)
+- [Introducing R. Linear Models](http://data.princeton.edu/R/linearModels.html)
 
 
 # Развлечения с кодом
