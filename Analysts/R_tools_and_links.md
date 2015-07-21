@@ -98,13 +98,10 @@ Predictive applications automate decision-making based on current and historical
 - [shinyapps.io by RStudio](http://www.shinyapps.io/). Share your Shiny Applications Online. Deploy your Shiny applications on the Web in minutes
 - [Getting started with shinyapps.io](http://shiny.rstudio.com/articles/shinyapps.html)
 - [Dashboards in R with Shiny & Plotly](http://moderndata.plot.ly/dashboards-in-r-with-shiny-plotly/)
-- [Show me Shiny](http://www.showmeshiny.com/) Gallery Of R Web Apps
-- [Просмотр конфигурации массивов Storwize с R – Shiny Dashboard](http://habrahabr.ru/post/256689/)
-- [Визуализация статистики производительности оборудования с R – Shiny](http://habrahabr.ru/post/253419/)
 - [R в качестве инструмента мониторинга цен](http://habrahabr.ru/post/255173/)
 - [Building [Security] Dashboards w/R & Shiny + shinydashboard](http://datadrivensecurity.info/blog/posts/2015/Jan/building-security-dashboards-with-r-and-shiny-shinydashboard/)
 - [What do you use to generate a dashboard in R?](http://datascience.stackexchange.com/questions/904/what-do-you-use-to-generate-a-dashboard-in-r)
-- [Gllimer Shiny dynamic demo]( http://glimmer.rstudio.com/reinholdsson/shiny-dashboard/)
+- [Gllimer Shiny dynamic demo](http://glimmer.rstudio.com/reinholdsson/shiny-dashboard/)
 - [The R package DT](https://rstudio.github.io/DT/) provides an R interface to the JavaScript library DataTables. R data objects (matrices or data frames) can be displayed as tables on HTML pages, and DataTables provides filtering, pagination, sorting, and many other features in the tables.
 - [Using DT in Shiny](https://rstudio.github.io/DT/shiny.html), [artice](http://shiny.rstudio.com/articles/datatables.html) from RStudio.
 - [dygraphs](http://dygraphs.com/) is a fast, flexible open source JavaScript charting library. [The Dygraphs Blog](http://blog.dygraphs.com/)
@@ -113,12 +110,15 @@ Predictive applications automate decision-making based on current and historical
 - [Radiant](http://vnijs.github.io/blog/2015/05/introducing-radiant.html) is a platform-independent browser-based interface for business analytics in R, based on the Shiny package.
 - [Create Dashboards with 'Shiny'](http://rpackages.ianhowson.com/cran/shinydashboard/)
 - [DataTable Options](http://shiny.rstudio.com/gallery/datatables-options.html)
-- Shinyapps.io demos. [Google search](https://www.google.ru/?gws_rd=ssl#newwindow=1&q=site:https:%2F%2Fdemo.shinyapps.io)
-- [Pilot Police Demand Planning Tool](https://gallery.shinyapps.io/TSupplyDemand/)
 - [Google Analytics Effect](https://mark.shinyapps.io/ga-effect/). This webapp uses Bayesian time-series to model your Google Analytics traffic under normal circumstances.
 - [Using Action Buttons](http://shiny.rstudio.com/articles/action-buttons.html)
 - [Persistent data storage in Shiny apps](http://deanattali.com/blog/shiny-persistent-data-storage/)
+### Demo
 - [Building an Instructional Simulation App in Shiny](https://homer.shinyapps.io/sim_tutorial_Rmd)
+- [Show me Shiny](http://www.showmeshiny.com/) Gallery Of R Web Apps
+- [Просмотр конфигурации массивов Storwize с R – Shiny Dashboard](http://habrahabr.ru/post/256689/)
+- [Визуализация статистики производительности оборудования с R – Shiny](http://habrahabr.ru/post/253419/)
+- [Pilot Police Demand Planning Tool](https://gallery.shinyapps.io/TSupplyDemand/)
 
 ## Data Manipulation
 - [DataWrangler](http://vis.stanford.edu/wrangler/) is an interactive tool for data cleaning and transformation. Spend less time formatting and more time analyzing your data. **UPDATE**: The Wrangler research project is complete, and the software is no longer actively supported. The team behind Wrangler has moved on to work on a commercial venture, [Trifacta](http://www.trifacta.com/).
@@ -314,6 +314,10 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [Shoud I get a habit of removing unused variables in R?](http://stackoverflow.com/questions/17218404/shoud-i-get-a-habit-of-removing-unused-variables-in-r)
 - [ggplot2: Adding Regression Line Equation and R2 on graph](http://stackoverflow.com/questions/7549694/ggplot2-adding-regression-line-equation-and-r2-on-graph)
 - [ggplot: Adding Regression Line Equation and R2 with Facet [duplicate]](http://stackoverflow.com/questions/19699858/ggplot-adding-regression-line-equation-and-r2-with-facet)
+- [What is the appropriate timezone argument syntax for scale_datetime() in ggplot 0.9.0](http://stackoverflow.com/questions/10339618/what-is-the-appropriate-timezone-argument-syntax-for-scale-datetime-in-ggplot)
+- Groupping
+	- [Relative frequency with dplyr](http://stackoverflow.com/questions/24576515/relative-frequency-with-dplyr)
+	- [dplyr: finding percentage in a sub-group using group_by and summarise](http://stackoverflow.com/questions/29549731/dplyr-finding-percentage-in-a-sub-group-using-group-by-and-summarise)
 
 ## Почему надо выбор остановить на R
 - [Getting Started in Data Science](http://treycausey.com/getting_started.html)
