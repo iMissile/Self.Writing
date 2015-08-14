@@ -1,5 +1,8 @@
 # DataScience
 
+## [Deep Learning vs Machine Learning vs Pattern Recognition](http://www.computervisionblog.com/2015/03/deep-learning-vs-machine-learning-vs.html)
+Machine Learning is here to stay. Don't think about it as Pattern Recognition vs Machine Learning vs Deep Learning, just realize that each term emphasizes something a little bit different.  But the search continues.  Go ahead and explore. Break something. We will continue building smarter software and our algorithms will continue to learn, but we've only begun to explore the kinds of architectures that can truly rule-them-all.
+
 ## [What is the difference between a data scientist and a business intelligence analyst?](http://devres.zoomquiet.io/data/20121120180245/index.html)
 
 They sound like they're pretty much identical except in title. The flashier SV startups like to call it "data scientist" and the e-commerce, old commerce, etc. companies like to call it "business intelligence." True?
@@ -9,6 +12,9 @@ I think the question Big Data: Will 'data scientists' live up to the expectation
 - While there's a lot of people who argue both ways, I generally find that the following differences are generally accepted:
    - Data scientists work with a mix of Big Data tools such as Hadoop/Map-Reduce/Hive, NoSQL, MPPs, traditional databases, and basically anything that stores/has data.  They also tend to have a stronger technology skill set in that they also programmers, and also have very strong math skills particularly in thing like statistics.  I've also seen that a data scientist would generally need to know how to do data visualization.  The data scientist also needs to have a strong understanding of the business as they typically would work directly with the business.  I believe this is a role in which realistically very few people could fill, even with extensive training.
    - A BI Analyst would be a person who works with BI tools to perform analysis. Generally speaking they would be a person who is somewhat educated on data warhousing and understands how a star schema is modeled.  This allows them to do things such as perform ad-hoc analysis either through a reporting tool or using SQL to create the charts, graphs, excel sheets, etc that the business users require.  They can also serve as the middleman between business and IT when creating new BI functionality.  Basically will work more with the technology and business users as opposed to trying to play that single role.
+
+## [Statistics vs Data Science vs BI](http://blog.revolutionanalytics.com/2013/05/statistics-vs-data-science-vs-bi.html)
+Комментарии, правда, весьма противоречивые.
 
 ## [What is the difference between Artificial Intelligence, Machine Learning, Statistics, and Data Mining](http://shakthydoss.com/what-is-the-difference-between-artificial-intelligence-machine-learning-statistics-and-data-mining/)
 

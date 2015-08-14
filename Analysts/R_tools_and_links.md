@@ -2,6 +2,25 @@
 
 #R
 
+## Hadley Wickham
+- MRAN - Managed R Archive Network. [Explore Packages](https://mran.revolutionanalytics.com/packages/)
+- Hadley Wickham on [GitHub](https://github.com/hadley)
+- [Hadley Wickham, the Man Who Revolutionized R](http://priceonomics.com/hadley-wickham-the-man-who-revolutionized-r/)
+- Hadley packages:
+	- Beginners
+		- readr - Reading files
+		- lubridate - Date and time handling
+		- stringr - Working with text strings
+		- tidyr - Make tidy data
+		- dplyr - Data manipulation
+		- ggplot2 -  The graphical grammar
+	- 	Advanced
+		- ggvis - Web graphics
+		- rvest - Web scraping
+		- devtools - Package development
+		- roxygen2 - Document your functions
+		- testthat - Automatic code testing
+
 ## Концептуальные материалы
 - [Simpler R coding with pipes > the present and future of the magrittr package](http://www.r-statistics.com/2014/08/simpler-r-coding-with-pipes-the-present-and-future-of-the-magrittr-package/)
 - [dplyr and pipes: the basics](http://seananderson.ca/2014/09/13/dplyr-intro.html). [NOTE](http://rpackages.ianhowson.com/cran/dplyr/man/select.html): one_of("x", "y", "z"): selects variables provided in a character vector.
@@ -37,6 +56,10 @@
 - [SparkRext - SparkR extension for closer to dplyr](http://mockquant.blogspot.jp/2015/07/sparkrext-sparkr-extension-for-closer.html)
 - [Easy Bayesian Bootstrap in R](http://www.sumsar.net/blog/2015/07/easy-bayesian-bootstrap-in-r/)
 - [Global and local variables in R](http://stackoverflow.com/questions/10904124/global-and-local-variables-in-r)
+- [Streaming Data IO in R]]https://jeroenooms.github.io/mongo-slides/#1) curl, jsonlite, mongolite
+- [PARTOOLS: A SENSIBLE R PACKAGE FOR LARGE DATA SETS](https://matloff.wordpress.com/2015/08/05/partools-a-sensible-r-package-for-large-data-sets/)
+- [The Keep Function](http://www.beardedanalytics.com/the-keep-function/)
+- [Deep Learning vs Machine Learning vs Pattern Recognition](http://www.computervisionblog.com/2015/03/deep-learning-vs-machine-learning-vs.html)
 
 ## [Gartner "Cool Vendors in Data Science", 2015](https://www.gartner.com/doc/3031420/cool-vendors-data-science-)
 
@@ -48,6 +71,8 @@ Predictive applications automate decision-making based on current and historical
 
 ## Data Processing articles (COOL)
 - [Data Processing with dplyr & tidyr](https://rpubs.com/bradleyboehmke/data_wrangling) by Brad Boehmke, February 13th, 2015
+- [Hands-on with dplyr](https://github.com/dgrapov/TeachingDemos/blob/master/Demos/dplyr/hands_on_with_dplyr.md)
+- [The complete catalog of argument variations of select() in dplyr](http://mockquant.blogspot.ru/2015/07/the-complete-catalog-of-argument.html)
 - [A new data processing workflow for R: dplyr, magrittr, tidyr, ggplot2](http://zevross.com/blog/2015/01/13/a-new-data-processing-workflow-for-r-dplyr-magrittr-tidyr-ggplot2/)
 - [Four reasons why you should check out the R package dplyr](http://zevross.com/blog/2014/03/26/four-reasons-why-you-should-check-out-the-r-package-dplyr-3/)
 - [Introduction to data.tree](http://cran.r-project.org/web/packages/data.tree/vignettes/data.tree.html)
@@ -57,15 +82,19 @@ Predictive applications automate decision-making based on current and historical
 - [Concatenating a list of data frames](http://www.exegetic.biz/blog/2014/06/concatenating-a-list-of-data-frames/)
 - [expand.grid()](http://www.endmemo.com/program/R/expand_grid.php) function creates a data frame from all combinations of the supplied vectors or factors.
 - [A better way of saving and loading objects in R](http://www.fromthebottomoftheheap.net/2012/04/01/saving-and-loading-r-objects/). Вышел по ссылке [отсюда](http://stackoverflow.com/questions/13206876/saving-and-loading-data-frames)
-- [Hands-on with dplyr](https://github.com/dgrapov/TeachingDemos/blob/master/Demos/dplyr/hands_on_with_dplyr.md)
+- [do(). As well as the specialised operations described above, dplyr also provides the generic do() function which applies any R function to each group of the data.](https://cran.r-project.org/web/packages/dplyr/README.html)
 - [How dplyr replaced my most common R idioms](http://www.onthelambda.com/2014/02/10/how-dplyr-replaced-my-most-common-r-idioms/)
 - [Introduction to dplyr for Faster Data Manipulation in R](https://rpubs.com/justmarkham/dplyr-tutorial)
 - [NOTE](http://rpackages.ianhowson.com/cran/dplyr/man/select.html): one_of("x", "y", "z"): selects variables provided in a character vector.
 - [Top 50 Data Science Resources: The Best Blogs, Forums, Videos and Tutorials to Learn All about Data Science](http://www.ngdata.com/top-data-science-resources/)
 - [4 data wrangling tasks in R for advanced beginners](http://www.computerworld.com/article/2486425/business-intelligence-4-data-wrangling-tasks-in-r-for-advanced-beginners.html)
 - [Say it in R with "by", "apply" and friends](http://www.magesblog.com/2012/01/say-it-in-r-with-by-apply-and-friends.html)
-- [Window functions and grouped mutate/filter](http://cran.r-project.org/web/packages/dplyr/vignettes/window-functions.html). ! Offsets lead() and lag() allow you to access the previous and next values in a vector, making it easy to compute differences and trends.
+- dplyr
+	- [Window functions and grouped mutate/filter](http://cran.r-project.org/web/packages/dplyr/vignettes/window-functions.html). ! Offsets lead() and lag() allow you to access the previous and next values in a vector, making it easy to compute differences and trends.
+	- [Non-standard evaluation](https://cran.r-project.org/web/packages/dplyr/vignettes/nse.html). Здесь можно почитать про конструкцию '.dot' (п. Setting variable names)
 - [Cheat Sheet – 10 Machine Learning Algorithms & R Commands](http://vitalflux.com/cheat-sheet-10-machine-learning-algorithms-r-commands/)
+- [A Visual Introduction to Machine Learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
+- [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
 
 ## подвал
 	Solution: the pipe operator from magrittr
@@ -148,6 +177,9 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 ### Курсы\Learning
 - [Data School](http://www.dataschool.io/). Data science for beginners!
 - [DataCamp](https://www.datacamp.com/). The easiest way to learn R programming and data science. Learn R and data analysis in the comfort of your browser with video lessons and coding challenges. Discover our R tutorials and data science courses, and start analyzing your own data.
+	- [R tutorial on the Apply family of functions](http://blog.datacamp.com/r-tutorial-apply-family/)
+	- [A Tutorial on Loops in R – Usage and Alternatives](http://blog.datacamp.com/tutorial-on-loops-in-r/)
+- [Introduction to R](http://ateucher.github.io/rcourse_site/). On this page you will find links to the data we need for the course, as well as course notes for each of the modules
 - [Swirl](http://swirlstats.com/) teaches you R programming and data science interactively, at your own pace, and right in the R console!
 - [A slightly different introduction to R](https://martinsbioblogg.wordpress.com/a-slightly-different-introduction-to-r/). This is tutorial on how to get started with R for data analysis.
 - [Journal of Statistical Software](http://www.jstatsoft.org/)
@@ -174,6 +206,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [Jennifer (Jenny) Bryan](https://github.com/jennybc) on GitHub
 - [SlideRule](https://www.mysliderule.com) -- your online learning hub
 - [Learn X in Y minutes](http://learnxinyminutes.com/docs/python/). Where X=python
+- [DataScience Heroes](http://datascienceheroes.com/learning.html) LEARNING. Guided Lessons & Instructor Support
 
 ###Tutorial
 - [A very quick introduction to ggplot2](http://chrisladroue.com/extra/ggplot2Intro/introductionGGplot2/)
@@ -194,6 +227,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 
 ### Бизнес-решения
 - [MapR](https://www.mapr.com/) is a complete distribution for Apache Hadoop that packages more than a dozen projects from the Hadoop ecosystem to provide you with a broad set of big data capabilities. The MapR platform not only provides enterprise-grade features such as high availability, disaster recovery, security, and full data protection but also allows Hadoop to be easily accessed as traditional network attached storage (NAS) with read-write capabilities
+- [Walnut](http://thewalnut.io/). The value of visualizing algorithms. Walnut is where you can bring algorithms and data to life. Visualize the interaction that occurred, making the cognitive process faster, more efficient and powerful.
 - [StatAce](http://statace.com/). Predictive analytics in the cloud based on R. Трансформировались в [Intuitics](https://www.intuitics.com/) и **пока не работают**. Build advanced analytics web apps with ease
 Intuitics increases the speed with which data insights reach decision makers. Instead of waiting for the data science team to rerun an analysis, a business user can now do it on her own, with her data and parameters, in an intuitive web application, built in Intuitics.
 - [Intuitics](https://www.intuitics.com/) turns your R, SAS and Python models into interactive web apps, quickly and easily
@@ -279,6 +313,8 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [Yet Another Forecast Dashboard](http://systematicinvestor.wordpress.com/2012/07/31/yet-another-forecast-dashboard/)
 - [Autoplot: Graphical Methods with ggplot2](http://librestats.com/2012/06/11/autoplot-graphical-methods-with-ggplot2/)
 - [knitr](http://yihui.name/knitr/). Elegant, flexible and fast dynamic report generation with R.
+- [Leaflet](https://rstudio.github.io/leaflet/) is one of the most popular open-source JavaScript libraries for interactive maps. It’s used by websites ranging from The New York Times and The Washington Post to GitHub and Flickr, as well as GIS specialists like OpenStreetMap, Mapbox, and CartoDB.
+- [mapView](http://environmentalinformatics-marburg.github.io/web-presentations/20150723_mapView.html): basic interactive viewing of spatial data in R
 
 
 ## Time Series & forecasting
@@ -307,17 +343,27 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [Frequently Asked Questions about R: How can I subset a data set?](http://www.ats.ucla.edu/stat/r/faq/subset_R.htm)
 - [Dygraph - how to change language in date format?](http://stackoverflow.com/questions/23867618/dygraph-how-to-change-language-in-date-format). with the options is harder because you have to considerer the granularity, but you can edit dygraph-combined.js changing the names of months and days, for example, replace text "Jan" with "Sty" and so on, then save and use it
 - [Saving and loading data.frames](http://stackoverflow.com/questions/13206876/saving-and-loading-data-frames)
-- [How to label histogram bars with data values or percents in R](http://stackoverflow.com/questions/9317948/how-to-label-histogram-bars-with-data-values-or-percents-in-r)
-- [smooth.Pspline wrapper for stat_smooth (in ggplot2)](http://stackoverflow.com/questions/19284897/smooth-pspline-wrapper-for-stat-smooth-in-ggplot2/19285387#19285387)
 - [tally {dplyr}](http://www.inside-r.org/node/230679). Tally observations by group. tally is a convenient wrapper for summarise that will either call n or sum(n) depending on whether you're tallying for the first time, or re-tallying.
 - [How to remove selected R variables without having to type their names](http://stackoverflow.com/questions/21677923/how-to-remove-selected-r-variables-without-having-to-type-their-names)
 - [Shoud I get a habit of removing unused variables in R?](http://stackoverflow.com/questions/17218404/shoud-i-get-a-habit-of-removing-unused-variables-in-r)
-- [ggplot2: Adding Regression Line Equation and R2 on graph](http://stackoverflow.com/questions/7549694/ggplot2-adding-regression-line-equation-and-r2-on-graph)
-- [ggplot: Adding Regression Line Equation and R2 with Facet [duplicate]](http://stackoverflow.com/questions/19699858/ggplot-adding-regression-line-equation-and-r2-with-facet)
-- [What is the appropriate timezone argument syntax for scale_datetime() in ggplot 0.9.0](http://stackoverflow.com/questions/10339618/what-is-the-appropriate-timezone-argument-syntax-for-scale-datetime-in-ggplot)
+- [ggplot2]
+	- [How to nicely annotate a ggplot2 (manual)](http://stackoverflow.com/questions/2409357/how-to-nicely-annotate-a-ggplot2-manual)
+	- [Matching geom_text color to elements in plot and removing legend title in ggplot2](http://stackoverflow.com/questions/27925153/matching-geom-text-color-to-elements-in-plot-and-removing-legend-title-in-ggplot)
+	- [What is the appropriate timezone argument syntax for scale_datetime() in ggplot 0.9.0](http://stackoverflow.com/questions/10339618/what-is-the-appropriate-timezone-argument-syntax-for-scale-datetime-in-ggplot)
+- [How to label histogram bars with data values or percents in R](http://stackoverflow.com/questions/9317948/how-to-label-histogram-bars-with-data-values-or-percents-in-r)
+- [smooth. Pspline wrapper for stat_smooth (in ggplot2)](http://stackoverflow.com/questions/19284897/smooth-pspline-wrapper-for-stat-smooth-in-ggplot2/19285387#19285387)
+- [Facet regression line]
+	- [ggplot2: Adding Regression Line Equation and R2 on graph](http://stackoverflow.com/questions/7549694/ggplot2-adding-regression-line-equation-and-r2-on-graph)
+	- [ggplot: Adding Regression Line Equation and R2 with Facet [duplicate]](http://stackoverflow.com/questions/19699858/ggplot-adding-regression-line-equation-and-r2-with-facet)
+	- [Display regression slopes for multiple subsets in ggplot2 (facet_grid)](http://stackoverflow.com/questions/28162486/display-regression-slopes-for-multiple-subsets-in-ggplot2-facet-grid)
+	- [ggplot2: Adding Regression Line Equation and R2 on graph](https://stackoverflow.com/questions/7549694/ggplot2-adding-regression-line-equation-and-r2-on-graph)
+	- [ggplot2: geom_text() with facet_grid()?](http://stackoverflow.com/questions/15867263/ggplot2-geom-text-with-facet-grid). Basically, you create a **data.frame** with the text which contains a column with the text, and a column with the variables you use for **facet_grid**. You can then simply add a **geom_text** with that data.frame. See the documentation of **geom_text** for more details on text placement and such.
+	- [Add Text Annotations to ggplot2 Faceted Plot](https://trinkerrstuff.wordpress.com/2012/09/01/add-text-annotations-to-ggplot2-faceted-plot/)
 - Groupping
 	- [Relative frequency with dplyr](http://stackoverflow.com/questions/24576515/relative-frequency-with-dplyr)
 	- [dplyr: finding percentage in a sub-group using group_by and summarise](http://stackoverflow.com/questions/29549731/dplyr-finding-percentage-in-a-sub-group-using-group-by-and-summarise)
+- [dplyr: How to apply do() on result of group_by?](http://stackoverflow.com/questions/22182442/dplyr-how-to-apply-do-on-result-of-group-by)
+- [Group by multiple columns in dplyr, using string vector input](http://stackoverflow.com/questions/21208801/group-by-multiple-columns-in-dplyr-using-string-vector-input)
 
 ## Почему надо выбор остановить на R
 - [Getting Started in Data Science](http://treycausey.com/getting_started.html)
@@ -399,6 +445,7 @@ This problem is not usually addressed in time series analysis, because time seri
 - [PLOTTING LM AND GLM MODELS WITH GGPLOT #RSTATS](https://strengejacke.wordpress.com/2013/03/22/plotting-lm-and-glm-models-with-ggplot-rstats/)
 - [Residual Plot](http://www.r-tutor.com/elementary-statistics/simple-linear-regression/residual-plot)
 - [Introducing R. Linear Models](http://data.princeton.edu/R/linearModels.html)
+- [Generalised Linear Models in R](http://www.magesblog.com/2015/08/generalised-linear-models-in-r.html)
 
 
 # Развлечения с кодом
