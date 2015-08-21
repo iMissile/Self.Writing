@@ -158,7 +158,7 @@ Transform your monitoring data into valuable insight at any layer of the stack.
 
 [How to make a choice between OpenTSDB and InfluxDB or other TSDS?](http://stackoverflow.com/questions/25540722/how-to-make-a-choice-between-opentsdb-and-influxdb-or-other-tsds)
 
-##Системы мониторинга и инструменты
+## Системы мониторинга и инструменты
 - [Ganglia](http://ganglia.info/)
 - [Metrics](https://dropwizard.github.io/metrics/3.1.0/) is a Java library which gives you unparalleled insight into what your code does in production.
 - [Netflix Open Source Software Center](http://netflix.github.io/). [Blog](http://techblog.netflix.com/)
@@ -167,7 +167,7 @@ Transform your monitoring data into valuable insight at any layer of the stack.
 - [Takipi](https://www.takipi.com/) tells you when and why code breaks in production. Get actionable information to fix the errors that impact your users the most.
 
 
-##Блог записи
+## Блог записи
 - [Measure Anything, Measure Everything](https://codeascraft.com/2011/02/15/measure-anything-measure-everything/)
 - Тинькофф Банк. [В поисках идеального мониторинга](http://habrahabr.ru/company/tcsbank/blog/252907/)
 - [Detecting Outliers](http://www.brendangregg.com/Articles/Detecting_Outliers.pdf)
@@ -187,3 +187,9 @@ Moviri is a member of itSMF (IT Service Management Forum), UK CMG (UK Computer M
 ## e-books
 Mastering proxmox
 Learning CEPH
+
+
+# Математика и мониторинг
+- [A Guide to Fault Detection and Diagnosis](http://gregstanleyandassociates.com/whitepapers/FaultDiagnosis/faultdiagnosis.htm), в частности
+  - [Fault Management - the Overall Process and Life Cycle of a Fault](http://gregstanleyandassociates.com/whitepapers/FaultDiagnosis/Fault-Management/fault-management.htm);
+  - [Neural Nets for Fault Detection and Diagnosis](http://gregstanleyandassociates.com/whitepapers/FaultDiagnosis/NeuralNets/neuralnets.htm)

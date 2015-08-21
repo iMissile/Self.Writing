@@ -4,9 +4,9 @@
 
 ## Hadley Wickham
 - MRAN - Managed R Archive Network. [Explore Packages](https://mran.revolutionanalytics.com/packages/)
-- Hadley Wickham on [GitHub](https://github.com/hadley)
+- [Hadley Wickham on GitHub](https://github.com/hadley)
 - [Hadley Wickham, the Man Who Revolutionized R](http://priceonomics.com/hadley-wickham-the-man-who-revolutionized-r/)
-- Hadley packages:
+- Hadley packages. [Packages of the Hadleyverse. Power for your R. Barry Rowlingson. Lancaster University](http://barryrowlingson.github.io/hadleyverse/#1):
 	- Beginners
 		- readr - Reading files
 		- lubridate - Date and time handling
@@ -70,31 +70,34 @@ Predictive applications automate decision-making based on current and historical
 
 
 ## Data Processing articles (COOL)
-- [Data Processing with dplyr & tidyr](https://rpubs.com/bradleyboehmke/data_wrangling) by Brad Boehmke, February 13th, 2015
-- [Hands-on with dplyr](https://github.com/dgrapov/TeachingDemos/blob/master/Demos/dplyr/hands_on_with_dplyr.md)
-- [The complete catalog of argument variations of select() in dplyr](http://mockquant.blogspot.ru/2015/07/the-complete-catalog-of-argument.html)
-- [A new data processing workflow for R: dplyr, magrittr, tidyr, ggplot2](http://zevross.com/blog/2015/01/13/a-new-data-processing-workflow-for-r-dplyr-magrittr-tidyr-ggplot2/)
-- [Four reasons why you should check out the R package dplyr](http://zevross.com/blog/2014/03/26/four-reasons-why-you-should-check-out-the-r-package-dplyr-3/)
+- dplyr
+	- [Window functions and grouped mutate/filter](http://cran.r-project.org/web/packages/dplyr/vignettes/window-functions.html). ! Offsets lead() and lag() allow you to access the previous and next values in a vector, making it easy to compute differences and trends.
+	- [Non-standard evaluation](https://cran.r-project.org/web/packages/dplyr/vignettes/nse.html). Здесь можно почитать про конструкцию '.dot' (п. Setting variable names)
+	- [dplyr/vignettes](https://cran.rstudio.com/web/packages/dplyr/vignettes/) by Hadley Wickham. data_frames.html; databases.html; hybrid-evaluation.html; introduction.html; new-sql-backend.html; nse.html; two-table.html;  window-functions.html;
+	- [Data Processing with dplyr & tidyr](https://rpubs.com/bradleyboehmke/data_wrangling) by Brad Boehmke, February 13th, 2015
+	- [Hands-on with dplyr](https://github.com/dgrapov/TeachingDemos/blob/master/Demos/dplyr/hands_on_with_dplyr.md)
+	- [The complete catalog of argument variations of select() in dplyr](http://mockquant.blogspot.ru/2015/07/the-complete-catalog-of-argument.html)
+	- [A new data processing workflow for R: dplyr, magrittr, tidyr, ggplot2](http://zevross.com/blog/2015/01/13/a-new-data-processing-workflow-for-r-dplyr-magrittr-tidyr-ggplot2/)
+	- [Four reasons why you should check out the R package dplyr](http://zevross.com/blog/2014/03/26/four-reasons-why-you-should-check-out-the-r-package-dplyr-3/)
+	- [Introduction to dplyr for Faster Data Manipulation in R](https://rpubs.com/justmarkham/dplyr-tutorial)
+	- [How dplyr replaced my most common R idioms](http://www.onthelambda.com/2014/02/10/how-dplyr-replaced-my-most-common-r-idioms/)
+	- [do()](https://cran.r-project.org/web/packages/dplyr/README.html). As well as the specialised operations described above, dplyr also provides the generic do() function which applies any R function to each group of the data.
 - [Introduction to data.tree](http://cran.r-project.org/web/packages/data.tree/vignettes/data.tree.html)
-- [Machine Learning Done Wrong](http://ml.posthaven.com/machine-learning-done-wrong)
 - [Debugging Tools in R with Michael Hannon](http://www.noamross.net/blog/2013/4/18/r-debug-tools.html)
 - [readr 0.1.0](http://blog.rstudio.org/2015/04/09/readr-0-1-0/)
 - [Concatenating a list of data frames](http://www.exegetic.biz/blog/2014/06/concatenating-a-list-of-data-frames/)
 - [expand.grid()](http://www.endmemo.com/program/R/expand_grid.php) function creates a data frame from all combinations of the supplied vectors or factors.
 - [A better way of saving and loading objects in R](http://www.fromthebottomoftheheap.net/2012/04/01/saving-and-loading-r-objects/). Вышел по ссылке [отсюда](http://stackoverflow.com/questions/13206876/saving-and-loading-data-frames)
-- [do(). As well as the specialised operations described above, dplyr also provides the generic do() function which applies any R function to each group of the data.](https://cran.r-project.org/web/packages/dplyr/README.html)
-- [How dplyr replaced my most common R idioms](http://www.onthelambda.com/2014/02/10/how-dplyr-replaced-my-most-common-r-idioms/)
-- [Introduction to dplyr for Faster Data Manipulation in R](https://rpubs.com/justmarkham/dplyr-tutorial)
+- [Say it in R with "by", "apply" and friends](http://www.magesblog.com/2012/01/say-it-in-r-with-by-apply-and-friends.html)
 - [NOTE](http://rpackages.ianhowson.com/cran/dplyr/man/select.html): one_of("x", "y", "z"): selects variables provided in a character vector.
 - [Top 50 Data Science Resources: The Best Blogs, Forums, Videos and Tutorials to Learn All about Data Science](http://www.ngdata.com/top-data-science-resources/)
 - [4 data wrangling tasks in R for advanced beginners](http://www.computerworld.com/article/2486425/business-intelligence-4-data-wrangling-tasks-in-r-for-advanced-beginners.html)
-- [Say it in R with "by", "apply" and friends](http://www.magesblog.com/2012/01/say-it-in-r-with-by-apply-and-friends.html)
-- dplyr
-	- [Window functions and grouped mutate/filter](http://cran.r-project.org/web/packages/dplyr/vignettes/window-functions.html). ! Offsets lead() and lag() allow you to access the previous and next values in a vector, making it easy to compute differences and trends.
-	- [Non-standard evaluation](https://cran.r-project.org/web/packages/dplyr/vignettes/nse.html). Здесь можно почитать про конструкцию '.dot' (п. Setting variable names)
 - [Cheat Sheet – 10 Machine Learning Algorithms & R Commands](http://vitalflux.com/cheat-sheet-10-machine-learning-algorithms-r-commands/)
 - [A Visual Introduction to Machine Learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
+- [Machine Learning Done Wrong](http://ml.posthaven.com/machine-learning-done-wrong)
 - [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
+- [Sorting Algorithm Animations](http://www.sorting-algorithms.com/)
+- [Graphical Data Analysis with R](http://www.gradaanwr.net/) by Antony Unwin
 
 ## подвал
 	Solution: the pipe operator from magrittr
@@ -207,6 +210,11 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [SlideRule](https://www.mysliderule.com) -- your online learning hub
 - [Learn X in Y minutes](http://learnxinyminutes.com/docs/python/). Where X=python
 - [DataScience Heroes](http://datascienceheroes.com/learning.html) LEARNING. Guided Lessons & Instructor Support
+- [Data Science Central](http://www.datasciencecentral.com/) is the industry's online resource for big data practitioners. From Analytics to Data Integration to Visualization, Data Science Central provides a community experience that includes a robust editorial platform, social interaction, forum-based technical support, the latest in technology, tools and trends and industry job opportunities.
+- [Tutorials at KDD 2015](http://www.kdd.org/kdd2015/tutorial.html)
+- [An Extensive Glossary Of Big Data Terminology](https://datafloq.com/read/abc-big-data-glossary-terminology/169)
+- [Google Learning, Alexander Ihler](https://www.youtube.com/channel/UCUSRKgnYeos2aX_JnV9qa3w)
+- [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
 
 ###Tutorial
 - [A very quick introduction to ggplot2](http://chrisladroue.com/extra/ggplot2Intro/introductionGGplot2/)

@@ -1,5 +1,81 @@
 # DataScience
 
+## Myths about Statistics & Big Data
+### [Seven Myths About Big Data](https://datafloq.com/read/seven-myths-about-big-data/155)
+It may be clear that there is enough information to be found on the web regarding big data. Everyone has a different explanation of big data and what it can mean for organisations. With so much information around big data to be found, it is easy to become confused and to read the wrong information. So let’s dispel some of the most common big data myths and big data strategies.
+
+1. Big Data is New
+90% of the available data has been created in the last two years and the term big data has been around 2005, when it was launched by O’Reilly Media in 2005.  However, the usage of big data and the need to understand all available data has been around much longer. There are a lot of examples of companies that were into big data before it was called big data. A well-known example is Walmart that has been using data analytics already for many years.
+
+2. Big Data is Just a Hype
+Big data is not something like social media, which indeed was a hype a few years back. At the beginning of social media everyone thought that social media was the Holy Grail, well it ended differently. Social media is just a marketing tool to better understand you customers. Big data on the other hand is a transformative trend that will mean a paradigm shift in all industries for all companies, big or small. The amount of data will only grow in the coming years and all that data can be turned into information that can be used to improve organisations in many different ways. Already, companies that have developed and implemented a big data strategy financially outperform their peers by 20%. This will only increase and companies that will not move into the direction of big data most probably will not be able to survive in the future.
+
+3. You Need to Have a Lot of Data to Talk About Big Data
+Big data does not necessarily have to be a lot of data. Although Volume is one of the three V’s that is generally used to describe big data, it is definitely not a requirement to have a minimum of for example a Petabyte of data. Especially the combination of different data sets (such as  combining company data with social data and public data ) provides a lot of insights and this can also happen with smaller data sets.
+
+4. Big Data is Only for Large Corporations
+A small business has to look differently at big data, simply because less data is created. That does not mean however that small businesses cannot develop a big data strategy. Especially when small businesses start combining various data sets they can also obtain the insights that large corporations achieve with big data. It will however probably take a bit longer before small organizations will start to see the benefits of developing a big data strategy.
+
+5. You Need to Hire a Big Data Scientist to Start With Big Data
+There are many big data startups that offer innovative tools for companies as a SaaS or DaaS (Data-as-a-Service) solution. For each aspect of big data (processing, storing, analysing, visualizing) there are different startups that offer such a SaaS or DaaS solution. For these solutions there is no need at all to build a Hadoop cluster and to hire an expensive big data scientist or big data analyst.
+
+6. Hadoop is the Holy Grail of Big Data
+Hadoop offers a lot of advantages such as massive amounts of data that can be easily stored, processed and analyzed in a fraction of a second. It uses commodity hardware and can easily be scaled at relatively low costs. Combined with a fault tolerance system that copies all data several times over different clusters and nodes, Hadoop offers a lot of advantages. However, Hadoop is not the Holy Grail. There are quite some substantial disadvantages of Hadoop. Getting Hadoop operational is difficult and requires specialized engineers that are expensive. Subsequently cluster management is hard and debugging is pretty difficult and without a top layer real-time analytics is not possible. Therefore, using Hadoop is not a guarantee for success.
+
+7. A Big Data Strategy is an IT Responsibility
+Quite often, big data is seen as an IT matter, after all you need hardware and software to implement a big data strategy. It is true that the hardware and software need to be developed by highly skilled technical big data employees (in-house or outsourced). This is nothing strange, as the required IT of big data is different from what we have had so far. However, the required IT is merely a means to an end to achieve a big data strategy defined by the organization. This strategy could be “to increase customer satisfaction” or “to increase revenue” or “to improve the operational efficiency” and the route to achieve that strategy could be big data or any other solution for that matter. If the strategy is “to increase customer satisfaction” it would be strange to define it an IT matter or have the IT Director be the sponsor of the strategy. Therefore, big data is a strategy matter that should be dealt with, ideally, at board level.
+
+### Statistics Denial by Randy Bartlett
+Randy Bartlett
+
+Principal
+Business Analytics/BI professional with 20+ years of experience leading analytics teams; working with clients; reviewing analytics-based decisions; and practicing the trade. Certified PSTAT® (ASA) statistician.
+Specialties: Leading quants; addressing Big Data; making and supporting analytics-based decisions; performing statistical review; evaluating datasets and software needs;and re-organizing analytics teams.
+
+This series of blogs will outline the minefield of statistics denial obstructing fact-based decision makers and disrupting those who manage and analyze the data: 
+
+- Blog 1: [Essays On Statistics Denial](https://datafloq.com/read/blog-1-essays-on-statistics-denial/1113)
+
+- Blog 2: Statistics Denial, Statistical Debacles & The Coming Flood Of Statistical Malfeasance
+
+- Blog 3: Statistics Denial, Applied Statistics Is A Way Of Thinking, Not Just A Toolbox
+
+- Blog 4: Statistics Denial, Best Statistical Practice
+
+- Blog 5: [Statistics Denial Myth #1, Traditional Techniques Straw Man](https://datafloq.com/read/statistics-denial-traditional-techniques-straw-man/1195)
+	- \#1: Statistics consists of only certain 'traditional' techniques or those from STAT 201
+
+- Blog 6: [Statistics Denial Myth #2, Traditional Practice Straw Man](https://datafloq.com/read/Statisticians-Not-Practice-Traditional-Statistics/1236)
+	- \#2:Statisticians (and other quants), work within 'traditional statistics’
+
+- Blog 7: [Statistics Denial Myth #3, Repackaging Statistics With Straddling Terms.](https://datafloq.com/read/Data-Mining-Machine-Learning-Distinct-Statistics/1263)
+	- \#3: Data mining, machine learning, Big data analysis, business analytics, and data science are distinct from statistics
+	- False Implication: We can solve statistics problems without using statistics thinking, tools, and assumptions because we have these other disciplines
+
+- Blog 8: [Statistics Denial Myth #4, Rebranding Predictive Modeling](https://datafloq.com/read/prediction-is-is-not-part-of-statistics/1383)
+	- \#4: Prediction is not part of statistics
+
+- Blog 9: Statistics Denial Myths #5-6, Mischaracterizing Statistical Significance
+	- \#5: For a large number of observations (Big Data: Volume), all the variables are significant so statistics does not work
+	- \#6: Statistics does not accommodate 'consequential' statistical significance
+
+- Blog 10: Statistics Denial Myths #7-9, About Big Data
+	- \#7: Big Data Volume (Or Large N) contains complete information
+	- \#8: Big Data Volume (Or Large N) speaks for itself
+	- \#9: Big Data Volume (Or Large N) replaces sampling and other statistics—so much information
+
+- Blog 11: Statistics Denial Myths #10-11, Analyzing Big Data
+	- \#10: (Statistical) sampling does not work for Big Data
+	- \#11: Current statistics techniques will not work for Big Data
+
+- Blog 12: Statistics Denial Myth #12, Publications Straw Man
+	- \#12: Statistics is defined by the recent publishing activities of statistics professors
+	- False Implication: Statistics is limited to some toolbox defined by academics
+
+- Blog 13: Statistics Denial Myths #13-14, About Statisticians
+	- \#13: Statisticians are homogeneous
+	- \#14: Academic statisticians are typical of and can speak for the whole profession
+
 ## [Deep Learning vs Machine Learning vs Pattern Recognition](http://www.computervisionblog.com/2015/03/deep-learning-vs-machine-learning-vs.html)
 Machine Learning is here to stay. Don't think about it as Pattern Recognition vs Machine Learning vs Deep Learning, just realize that each term emphasizes something a little bit different.  But the search continues.  Go ahead and explore. Break something. We will continue building smarter software and our algorithms will continue to learn, but we've only begun to explore the kinds of architectures that can truly rule-them-all.
 
