@@ -27,12 +27,11 @@
 - "Data manipulation with dplyr", Chief Scientist, RStudio, Hadley Wickham (pdf)
 - [magrittr 1.5](http://blog.rstudio.org/2014/12/01/magrittr-1-5/) (RStudio Blog)
 - [An Introduction to reshape2](http://seananderson.ca/2013/10/19/reshape.html)
+- [Reshape and aggregate data with the R package reshape2](https://tgmstat.wordpress.com/2013/10/31/reshape-and-aggregate-data-with-the-r-package-reshape2/)
 - [A non-comprehensive list of awesome things other people did in 2014](http://simplystatistics.org/2014/12/17/a-non-comprehensive-list-of-awesome-things-other-people-did-in-2014/)
 - [Hadley Wickham "Tidy Data"](http://www.jstatsoft.org/v59/i10/) или [здесь](http://vita.had.co.nz/papers/tidy-data.pdf)
 - [10 R packages I wish I knew about earlier](http://blog.yhathq.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html)
 - [Top 10 R Packages to be a Kaggle Champion](http://www.kdnuggets.com/2015/04/top-10-r-packages-kaggle.html)
-- [A brief introduction to “apply” in R](https://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/)
-- [Repeating things: looping and the apply family](http://nicercode.github.io/guides/repeating-things/)
 - [Now's a great time to learn R. Here's how](http://blog.revolutionanalytics.com/2015/01/nows-a-great-time-to-learn-r-heres-how.html).
 - [The ensurer package (validation inside pipes)](http://www.r-statistics.com/2014/11/the-ensurer-package-validation-inside-pipes/)
 - [12 nifty tips for scientists who use computers](http://www.petrkeil.com/?p=2356)
@@ -47,8 +46,6 @@
 - [R and foreign characters](http://quantifyingmemory.blogspot.ru/)
 - [Interactive visualizations with R](http://ouzor.github.io/blog/2014/11/21/interactive-visualizations.html) - a minireview
 - [How to make a great R reproducible example?](http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example)
-- [R Tutorial: Intro to Loops (While, For, Repeat, Apply, etc!)](https://blog.udemy.com/r-tutorial/)
-- [R Grouping functions: sapply vs. lapply vs. apply. vs. tapply vs. by vs. aggregate](http://stackoverflow.com/questions/3505701/r-grouping-functions-sapply-vs-lapply-vs-apply-vs-tapply-vs-by-vs-aggrega)
 - [Nice R Code](http://nicercode.github.io/). Punning code better since 2013
 - [The R Consortium, Inc.](https://www.r-consortium.org/) is a group of businesses organized under an open source governance and foundation model to provide support to the R community, the R Foundation and groups and individuals, using, maintaining and distributing R software.
 - [DATA.TABLE VS. DPLYR IN SPLIT APPLY COMBINE STYLE ANALYSIS](http://www.brodieg.com/?p=7)
@@ -70,7 +67,7 @@ Predictive applications automate decision-making based on current and historical
 
 
 ## Data Processing articles (COOL)
-- dplyr
+- dplyr:
 	- [Window functions and grouped mutate/filter](http://cran.r-project.org/web/packages/dplyr/vignettes/window-functions.html). ! Offsets lead() and lag() allow you to access the previous and next values in a vector, making it easy to compute differences and trends.
 	- [Non-standard evaluation](https://cran.r-project.org/web/packages/dplyr/vignettes/nse.html). Здесь можно почитать про конструкцию '.dot' (п. Setting variable names)
 	- [dplyr/vignettes](https://cran.rstudio.com/web/packages/dplyr/vignettes/) by Hadley Wickham. data_frames.html; databases.html; hybrid-evaluation.html; introduction.html; new-sql-backend.html; nse.html; two-table.html;  window-functions.html;
@@ -82,6 +79,17 @@ Predictive applications automate decision-making based on current and historical
 	- [Introduction to dplyr for Faster Data Manipulation in R](https://rpubs.com/justmarkham/dplyr-tutorial)
 	- [How dplyr replaced my most common R idioms](http://www.onthelambda.com/2014/02/10/how-dplyr-replaced-my-most-common-r-idioms/)
 	- [do()](https://cran.r-project.org/web/packages/dplyr/README.html). As well as the specialised operations described above, dplyr also provides the generic do() function which applies any R function to each group of the data.
+- Apply family:
+	- [Repeating things: looping and the apply family](http://nicercode.github.io/guides/repeating-things/)
+	- [Vectorization in R: Why?](http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html)
+	- [R Tutorial: Intro to Loops (While, For, Repeat, Apply, etc!)](https://blog.udemy.com/r-tutorial/)
+	- [R tutorial on the Apply family of functions](http://blog.datacamp.com/r-tutorial-apply-family/)
+	- [A Tutorial on Loops in R – Usage and Alternatives](http://blog.datacamp.com/tutorial-on-loops-in-r/)
+	- [Using apply, sapply, lapply in R](http://petewerner.blogspot.ru/2012/12/using-apply-sapply-lapply-in-r.html)
+	- [Sean C. Anderson. plyr: Split-Apply-Combine for Mortals](http://seananderson.ca/2013/12/01/plyr.html)
+	- [A brief introduction to “apply” in R](https://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/)
+	- [R Grouping functions: sapply vs. lapply vs. apply. vs. tapply vs. by vs. aggregate](http://stackoverflow.com/questions/3505701/r-grouping-functions-sapply-vs-lapply-vs-apply-vs-tapply-vs-by-vs-aggrega)
+	- [Say it in R with "by", "apply" and friends](http://www.magesblog.com/2012/01/say-it-in-r-with-by-apply-and-friends.html)
 - [Introduction to data.tree](http://cran.r-project.org/web/packages/data.tree/vignettes/data.tree.html)
 - [Debugging Tools in R with Michael Hannon](http://www.noamross.net/blog/2013/4/18/r-debug-tools.html)
 - [readr 0.1.0](http://blog.rstudio.org/2015/04/09/readr-0-1-0/)
@@ -98,6 +106,8 @@ Predictive applications automate decision-making based on current and historical
 - [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
 - [Sorting Algorithm Animations](http://www.sorting-algorithms.com/)
 - [Graphical Data Analysis with R](http://www.gradaanwr.net/) by Antony Unwin
+- [Using with( ) and by( )](http://www.statmethods.net/stats/withby.html)
+- [Vectorization in R: Why?](http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html) by Noam Ross, 16 April 2014
 
 ## подвал
 	Solution: the pipe operator from magrittr
@@ -117,7 +127,6 @@ Predictive applications automate decision-making based on current and historical
 - At [rOpenSci](https://ropensci.org/) we are creating packages that allow access to data repositories through the R statistical programming environment that is already a familiar part of the workflow of many scientists. Our tools not only facilitate drawing data into an environment where it can readily be manipulated, but also one in which those analyses and methods can be easily shared, replicated, and extended by other researchers.
 - [The Lyra Visualization Design Environment (VDE) bet](http://idl.cs.washington.edu/projects/lyra/). Lyra is an interactive environment that enables custom visualization design without writing any code. Graphical “marks” can be bound to data fields using property drop zones; dynamically positioned using connectors; and directly moved, rotated, and resized using handles. Lyra also provides a data pipeline interface for iterative visual specification of data transformations and layout algorithms. Lyra is more expressive than interactive systems like Tableau, allowing designers to create custom visualizations comparable to hand-coded visualizations built with D3 or Processing. These visualizations can then be easily published and reused on the Web.
 - [Mode](https://modeanalytics.com/). Collaborative tools for analysts who fuel data-driven companies.Mode is the best place for analytical work: write SQL, share ad-hoc analysis, and build powerful visualizations to help everyone make better decisions.
-- [Silk](https://www.silk.co/product) is a place to publish your data. Each Silk contains data on a specific topic. Anyone can explore a Silk and create interactive visualizations.
 - [Visually](http://visual.ly/) Your On-Demand Creative Services Team.
 - [Using R in Sublime Text 3](http://www.kevjohnson.org/using-r-in-sublime-text-3/)
 - [Rodeo](https://github.com/yhat/rodeo/) is a data centric IDE for Python. You can think of it as an alternative UI to the notebook for the IPython Kernel. It's heavily inspired by great projects like Sublime Text and Eclipse.
@@ -145,6 +154,7 @@ Predictive applications automate decision-making based on current and historical
 - [Google Analytics Effect](https://mark.shinyapps.io/ga-effect/). This webapp uses Bayesian time-series to model your Google Analytics traffic under normal circumstances.
 - [Using Action Buttons](http://shiny.rstudio.com/articles/action-buttons.html)
 - [Persistent data storage in Shiny apps](http://deanattali.com/blog/shiny-persistent-data-storage/)
+
 ### Demo
 - [Building an Instructional Simulation App in Shiny](https://homer.shinyapps.io/sim_tutorial_Rmd)
 - [Show me Shiny](http://www.showmeshiny.com/) Gallery Of R Web Apps
@@ -174,6 +184,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [4 data wrangling tasks in R for advanced beginners](http://www.computerworld.com/article/2486425/business-intelligence-4-data-wrangling-tasks-in-r-for-advanced-beginners.html)
 - [Hands-on with dplyr](https://github.com/dgrapov/TeachingDemos/blob/master/Demos/dplyr/hands_on_with_dplyr.md)
 - [Two of my favorite data.table features](http://educate-r.org/2014/01/06/FavDataTable/)
+- [New Pacakge “docxtractr” – Easily Extract Tables From Microsoft Word Docs](http://rud.is/b/2015/08/24/new-pacakge-docxtractr-easily-extract-tables-from-microsoft-word-docs/). docxtractr is an R pacakge for extracting tables out of Word documents (docx)
 
 
 ## Курсы обучения и интересные бизнес решения на базе R
@@ -215,8 +226,13 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [An Extensive Glossary Of Big Data Terminology](https://datafloq.com/read/abc-big-data-glossary-terminology/169)
 - [Google Learning, Alexander Ihler](https://www.youtube.com/channel/UCUSRKgnYeos2aX_JnV9qa3w)
 - [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
+- [Logistic Regression Fundamentals](http://gormanalysis.com/logistic-regression-fundamentals/)
+- [How to Become a Data Scientist for Free. (DSC)](http://www.datasciencecentral.com/profiles/blogs/how-to-become-a-data-scientist-for-free)
+- [How to become a Data Scientist for Free. (KDnuggets)](http://www.kdnuggets.com/2015/08/how-become-data-scientist-free.html)
+- [Udacity](https://www.udacity.com/)
+- [RPubs R Cookbook & R Graphics Cookbook](https://rpubs.com/escott8908) by escott8908 Edgar James Scott II
 
-###Tutorial
+### Tutorial
 - [A very quick introduction to ggplot2](http://chrisladroue.com/extra/ggplot2Intro/introductionGGplot2/)
 - [Quick Introduction to ggplot2](http://blog.echen.me/2012/01/17/quick-introduction-to-ggplot2/)
 - [An Introduction to reshape2](http://seananderson.ca/2013/10/19/reshape.html)
@@ -235,15 +251,18 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 
 ### Бизнес-решения
 - [MapR](https://www.mapr.com/) is a complete distribution for Apache Hadoop that packages more than a dozen projects from the Hadoop ecosystem to provide you with a broad set of big data capabilities. The MapR platform not only provides enterprise-grade features such as high availability, disaster recovery, security, and full data protection but also allows Hadoop to be easily accessed as traditional network attached storage (NAS) with read-write capabilities
+	- [Axibase Time Series Database (ATSD](https://www.mapr.com/apps/axibase-time-series-database#main). ATSD is a statistics database built on top of HBase that includes metric storage, analytical rule engine, alerting, forecasting and visualization.
+- [AxiBase](http://axibase.com/). End-to-end Reporting And Analytics For Enterprise It. Products:
+	- Axibase Time-Series Database
+	- Axibase Enterprise Reporter
+	- Axibase Fabrica
 - [Walnut](http://thewalnut.io/). The value of visualizing algorithms. Walnut is where you can bring algorithms and data to life. Visualize the interaction that occurred, making the cognitive process faster, more efficient and powerful.
 - [StatAce](http://statace.com/). Predictive analytics in the cloud based on R. Трансформировались в [Intuitics](https://www.intuitics.com/) и **пока не работают**. Build advanced analytics web apps with ease
 Intuitics increases the speed with which data insights reach decision makers. Instead of waiting for the data science team to rerun an analysis, a business user can now do it on her own, with her data and parameters, in an intuitive web application, built in Intuitics.
 - [Intuitics](https://www.intuitics.com/) turns your R, SAS and Python models into interactive web apps, quickly and easily
-- [Plotly](https://plot.ly/). Collaborative data science. Plotly is the easiest way to graph and share your data.
 - [Lightning](http://lightning-viz.org/) is a data-visualization server providing API-based access to reproducible, web-based, interactive visualizations. It includes a core set of visualization types, but is built for extendability and customization. Lightning supports modern libraries like d3.js and three.js, and is designed for interactivity over large data sets and continuously updating data streams.
 - [Import.io](https://import.io/). Instantly Turn Web Pages into Data. No Plugin, No Training, No Setup.
 - [KeyLines Network Visualization](http://keylines.com/). KeyLines is a technology for understanding connected data. By exploring the networks and in your data, you will find patterns and trends that are otherwise hidden, generating actionable insight.
-- [CHARTED](http://www.charted.co/). Beautiful, automatic charts.
 - [Quandl](https://www.quandl.com/). Find and Use Data. Easily. Get the data you need in the form you want; instant download, API or direct to your app.
 - [RPowerLABS](http://rpowerlabs.org/). Pioneering Online Electric Power System Laboratories from Africa
 - [Actian](http://www.actian.com/products/analytics-platform/). The Actian Analytics Platform™. Accelerate your transition to Big Data 2.0. Transform big data into business value with the Actian Analytics Platform.
@@ -260,12 +279,21 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [BayesiaLab 5.4](http://www.bayesia.us/) is a powerful Artificial Intelligence software (Win/Mac/Unix), which provides scientists a comprehensive “lab” environment for machine learning, knowledge modeling, analytics, simulation, and optimization — all based on the Bayesian network paradigm.
 - [Metafor Software](http://www.metaforsoftware.com/) Detect the anomalies that matter – automatically and in real time. Analyze the behavior of millions of logs and metrics of any type from any data source. Get alerted at the earliest sign of a problem so you can fix it immediately; no threshold or rule setting required.
 - [Geogebra](http://www.geogebra.org/) is a multi-platform mathematics software that gives everyone the chance to experience the extraordinary insights that math makes possible
+- [Logi Analytics](http://www.logianalytics.com/). Self-service analytics every user will embrace.
 
 - [PiktoChart](http://piktochart.com/). Easy-To-Use Infographic Creator. Discover how non-designers are creating beautiful infographics in as little as 10 minutes
 - [Datawrapper](https://datawrapper.de/). Create charts and maps in just four steps. This tool reduces the time you need to create visualizations from hours to minutes.
 - [Gliffy](https://www.gliffy.com/). Where Ideas Take Shape. Create professional-quality Flowcharts, Wireframes, UML diagrams, and more.
 - [Canva](https://www.canva.com/) makes design simple for eceryone. It gives you everything you need to easily turn ideas into outstanding designs. You can startwith a custom layout or a blank page. There’s no limits to your creativity with all the tools in one place. Just search and drag to create beautiful designs and Canva will take care of the boring bits. The tool is online and free to use.
 - [Dipity](http://www.dipity.com/) is a free digital timeline website. Our mission is to organize the web's content by date and time. Users can create, share, embed and collaborate on interactive, visually engaging timelines that integrate video, audio, images, text, links, social media, location and timestamps.
+
+### Визуализация
+- [Plotly](https://plot.ly/). Collaborative data science. Plotly is the easiest way to graph and share your data.
+- [Silk](https://www.silk.co/product) is a place to publish your data. Each Silk contains data on a specific topic. Anyone can explore a Silk and create interactive visualizations.
+- [CHARTED](http://www.charted.co/). Beautiful, automatic charts.
+- [VARIANCE](https://variancecharts.com/) Build powerful data visualizations for the web. Without writing JavaScript. Variance empowers engineers, designers, journalists, scientists, and analysts to build elegant bespoke data graphics for the web, using only HTML & CSS. Our intuitive, markup-based grammar emphasizes clear, practical graphics and serves as the foundation for a wide range of visualizations.
+- [Visualizing MBTA (= Boston’s Massachusetts Bay Transit Authority) Data](http://mbtaviz.github.io/). An interactive exploration of Boston's subway system
+
 
 ### Смежные бизнес-решения
 - [ReportServer BI Suite](http://reportserver.net/en/) is the modern and versatile open source business intelligence (OSBI) platform for your company.
@@ -372,11 +400,23 @@ Intuitics increases the speed with which data insights reach decision makers. In
 	- [dplyr: finding percentage in a sub-group using group_by and summarise](http://stackoverflow.com/questions/29549731/dplyr-finding-percentage-in-a-sub-group-using-group-by-and-summarise)
 - [dplyr: How to apply do() on result of group_by?](http://stackoverflow.com/questions/22182442/dplyr-how-to-apply-do-on-result-of-group-by)
 - [Group by multiple columns in dplyr, using string vector input](http://stackoverflow.com/questions/21208801/group-by-multiple-columns-in-dplyr-using-string-vector-input)
+- [R - how to call apply-like function on each row of dataframe with multiple arguments from each row of the df](http://stackoverflow.com/questions/15059076/r-how-to-call-apply-like-function-on-each-row-of-dataframe-with-multiple-argum)
+- [Change value of variable with dplyr <duplicate>](http://stackoverflow.com/questions/28013850/change-value-of-variable-with-dplyr). I regularly need to change the values of a variable based on the values on a different variable, like this:
+
+	mtcars$mpg[mtcars$cyl == 4] <- NA
+
+I tried doing this with dplyr but failed miserably:
+
+	mtcars %>%
+	mutate(mpg = mpg == NA[cyl == 4]) %>%
+	as.data.frame()
+How could I do this with dplyr?
 
 ## Почему надо выбор остановить на R
 - [Getting Started in Data Science](http://treycausey.com/getting_started.html)
 - [Why you should learn R first for data science](http://www.sharpsightlabs.com/learn-r-data-science/)
 - [Why you should start by learning data visualization and manipulation](http://www.sharpsightlabs.com/start-with-data-visualization-manipulation/)
+- [R: Why it’s the next programming language you should learn](http://blog.pluralsight.com/r-programming-language)
 - [dplyr: How to do data manipulation with R](http://www.sharpsightlabs.com/dplyr-intro-data-manipulation-with-r/). As you learn data visualization, eventually you’ll reach a bottleneck. Either your data will be in the wrong format, you’ll need more data, or you’ll simply need to “dig deeper” into the data you already have.  At this point, you should learn some basic data manipulation.
 - What is the [difference](http://shakthydoss.com/what-is-the-difference-between-artificial-intelligence-machine-learning-statistics-and-data-mining/) between Artificial Intelligence, Machine Learning, Statistics, and Data Mining
 - [R Is Still Hot – and Getting Hotter](http://www.revolutionanalytics.com/r-is-still-hot)
@@ -414,6 +454,12 @@ Intuitics increases the speed with which data insights reach decision makers. In
 # Another visualization
 - [Vega](http://trifacta.github.io/vega/) is a visualization grammar, a declarative format for creating, saving and sharing visualization designs.
 
+# Machine Learning materials
+- [A Neural Network in 11 lines of Python (Part 1)](http://iamtrask.github.io/2015/07/12/basic-python-network/). A bare bones neural network implementation to describe the inner workings of backpropagation.
+- [A Neural Network in 13 lines of Python (Part 2 - Gradient Descent)](http://iamtrask.github.io/2015/07/27/python-network-part2/). Improving our neural network by optimizing Gradient Descent
+- [Torch](http://torch.ch/) is a scientific computing framework with wide support for machine learning algorithms. It is easy to use and efficient, thanks to an easy and fast scripting language, LuaJIT, and an underlying C/CUDA implementation.
+- [Caffe](http://caffe.berkeleyvision.org/) is a deep learning framework made with expression, speed, and modularity in mind. It is developed by the Berkeley Vision and Learning Center (BVLC) and by community contributors. Yangqing Jia created the project during his PhD at UC Berkeley. Caffe is released under the BSD 2-Clause license.
+- [Theano](http://deeplearning.net/software/theano/) is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.
 
 # Python
 # Концептуальные материалы
@@ -454,6 +500,8 @@ This problem is not usually addressed in time series analysis, because time seri
 - [Residual Plot](http://www.r-tutor.com/elementary-statistics/simple-linear-regression/residual-plot)
 - [Introducing R. Linear Models](http://data.princeton.edu/R/linearModels.html)
 - [Generalised Linear Models in R](http://www.magesblog.com/2015/08/generalised-linear-models-in-r.html)
+- [Kickin' it with elastic net regression](http://www.onthelambda.com/2015/08/19/kickin-it-with-elastic-net-regression/)
+- [Linear models with weighted observations](http://bc.bojanorama.pl/2015/09/linear-models-with-weighted-observations/)
 
 
 # Развлечения с кодом

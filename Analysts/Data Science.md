@@ -79,6 +79,9 @@ This series of blogs will outline the minefield of statistics denial obstructing
 ## [Deep Learning vs Machine Learning vs Pattern Recognition](http://www.computervisionblog.com/2015/03/deep-learning-vs-machine-learning-vs.html)
 Machine Learning is here to stay. Don't think about it as Pattern Recognition vs Machine Learning vs Deep Learning, just realize that each term emphasizes something a little bit different.  But the search continues.  Go ahead and explore. Break something. We will continue building smarter software and our algorithms will continue to learn, but we've only begun to explore the kinds of architectures that can truly rule-them-all.
 
+## [Machine learning explained in simple words](http://nkonst.com/machine-learning-explained-simple-words/)
+ML works with data and processes it to discover patterns that can be later used to analyse new data. ML usually relies on specific representation of data, a set of “features” that are understandable for a computer. For example, if we are talking about text it should be represented through the words it contains or some other characteristics such as length of the text, number of emotional words etc. This presentation depends on the task you are dealing with and is typically referred to as “feature extraction”.
+
 ## [What is the difference between a data scientist and a business intelligence analyst?](http://devres.zoomquiet.io/data/20121120180245/index.html)
 
 They sound like they're pretty much identical except in title. The flashier SV startups like to call it "data scientist" and the e-commerce, old commerce, etc. companies like to call it "business intelligence." True?
@@ -155,7 +158,7 @@ In a future post in this series, we will take up the last of these in more detai
 
 ## [Top 50 Data Science Resources: The Best Blogs, Forums, Videos and Tutorials to Learn All about Data Science](http://www.ngdata.com/top-data-science-resources/)
 
-## Data Science resources
+### Data Science resources
 - [Starter Books for Data Science](http://www.exploringdatascience.com/featured/starter-books-data-science/)
 - [The Business Economics And Opportunity Of Open-Source Data Science](http://techcrunch.com/2015/05/07/the-business-economics-and-opportunity-of-open-source-data-science/)
 - [Applied Statistics Is A Way Of Thinking, Not Just A Toolbox](https://datafloq.com/read/applied-statistics-is-way-thinking-not-toolbox/1154)
@@ -163,8 +166,99 @@ In a future post in this series, we will take up the last of these in more detai
 - [What (Really) is a Data Scientist?](http://qualityandinnovation.com/2015/07/13/what-really-is-a-data-scientist/)
 - [Learn Data Science the Hard Way](http://www.dataphoric.com/2015/06/27/learn_data_science_the_hard_way/)
 
+### Cool Articles
+- [Three Things About Data Science You Won't Find In the Books](http://blog.mikiobraun.de/2015/03/three-things-about-data-science.html)
+- [Software development skills for data scientists](http://treycausey.com/software_dev_skills.html)
+- [The Three Kinds Of Data Science Project Exams That Show Up In A Data Science Interview](https://www.datayou.org/articles/the-three-kinds-of-data-science-project-exams-that-show-up-in-a-data-science-interview)
+- [Becoming a Full-Stack Statistician in 6 Easy Steps](http://blog.dato.com//becoming-a-full-stack-statistician-in-6-easy-steps)
+	1. Prototyping. For every question, think about how to get the best answer if only given 1 hour, 1 day, and 1 week. A one-off prototype can lead to a discussion that renders the 1 week version obsolete. Design and analyze experiments that help you decide whether the prototype achieves its goal.
+	1. Data carpentry. Dealing with data may require parsing JSON, dealing with UTF-8, writing SQL and Hive queries, a one-off sed command, and so on. Know how to extract features that might be help you understand or model the data.
+	1. Exploration. Know a plotting library like ggplot or bokeh, and know how to make interactive visualizations when appropriate. Projects should have a dashboard containing plots that help you tell a story about what you have found.
+	1. Problem formulation. Know which methods will give you a good enough answer, e.g. for classification problems will logistic regression be sufficient, or is it worth switching to GBMs, factorization machines, or a neural net? For each model, be familiar with using good implementations and know how to tune them. For each model, know how to explain what features are important according to the model.
+	1. Sharing. Be able to explain your results accurately. Each project should have a one-line, big-picture lesson or takeaway. Use git and have a README for all your projects. Write well-commented code that is optimized for collaboration and reproducibility.
+	1. Optimization. If you’re using R or Python, know how to use Rcpp/numba/cython, etc. to make your inner loops fast. Be able to write your code in Java/C++/Rust if necessary. Be able to distribute embarrassingly parallel jobs using a cluster (or AWS if you don’t have one).
+- [Why a Mathematician, Statistician, & Machine Learner Solve the Same Problem Differently](http://www.galvanize.com/blog/2015/08/26/why-a-mathematician-statistician-machine-learner-solve-the-same-problem-differently-2/)
+- [9 Must-Have Skills You Need to Become a Data Scientist](http://www.kdnuggets.com/2014/11/9-must-have-skills-data-scientist.html)
+- [How to become a Data Scientist for Free](http://www.kdnuggets.com/2015/08/how-become-data-scientist-free.html)
+- [Top 10 Data Analysis Tools for Business](http://www.kdnuggets.com/2014/06/top-10-data-analysis-tools-business.html)
 
-#========================================
+
+### 9 Must-Have Skills You Need to Become a Data Scientist
+[Source](http://www.kdnuggets.com/2014/11/9-must-have-skills-data-scientist.html "Permalink to 9 Must-Have Skills You Need to Become a Data Scientist")
+
+Burtch Works details the top 9 data science skills that potential data scientists must have to be competitive in this growing marketplace from the perspective of a recruiter.
+
+by Burtch Works, Nov 2014.
+
+![][1] Over the past year, interest in data science has soared. [Nate Silver][2] is a household name, companies everywhere are [searching for unicorns][3], and professionals in many different disciplines have begun eyeing the [well-salaried profession][4] as a possible career move.
+
+In our recruiting searches here at Burtch Works, we've spoken to many analytics professionals who are considering adapting their skills to the growing field of data science, and have questions about how to do so. From my perspective as a recruiter, I wanted to put together a list of technical and non-technical skills that are critical to success in data science, and at the top of hiring managers' lists.
+
+Every company will value skills and tools a bit differently, and this is by no means an [exhaustive list][5], but if you have experience in these areas you will be making a strong case for yourself as a data science candidate.
+
+**Technical Skills: Analytics**
+
+1. **Education** – Data scientists are highly educated – 88% have at least a Master's degree and 46% have PhDs – and while there are notable exceptions, a very strong educational background is usually required to develop the depth of knowledge necessary to be a data scientist. Their most common fields of study are Mathematics and Statistics (32%), followed by Computer Science (19%) and Engineering (16%).
+2. **SAS and/or R** – In-depth knowledge of at least one of these analytical tools, for data science R is generally preferred.
+
+**Technical Skills: Computer Science**
+
+3. **Python Coding** – Python is the most common coding language I typically see required in data science roles, along with Java, Perl, or C/C++.
+4. **Hadoop Platform** – Although this isn't always a requirement, it is heavily preferred in many cases. Having experience with Hive or Pig is also a strong selling point. Familiarity with cloud tools such as Amazon S3 can also be beneficial.
+5. **SQL Database/Coding** – Even though NoSQL and Hadoop have become a large component of data science, it is still expected that a candidate will be able to write and execute complex queries in SQL.
+6. **Unstructured data** – It is critical that a data scientist be able to work with unstructured data, whether it is from social media, video feeds or audio.
+
+**Non-Technical Skills **
+
+7. **Intellectual curiosity **– No doubt you've seen this phrase everywhere lately, especially as it relates to data scientists. Frank Lo describes what it means, and talks about other necessary "soft skills" in his [guest blog][6] posted a few months ago.
+8. **Business acumen **– To be a data scientist you'll need a solid understanding of the industry you're working in, and know what business problems your company is trying to solve. In terms of data science, being able to discern which problems are important to solve for the business is critical, in addition to identifying new ways the business should be leveraging its data.
+9. **Communication skills **– Companies searching for a strong data scientist are looking for someone who can clearly and fluently translate their technical findings to a non-technical team, such as the Marketing or Sales departments. A data scientist must enable the business to make decisions by arming them with quantified insights, in addition to understanding the needs of their non-technical colleagues in order to wrangle the data appropriately. Check out [our recent flash survey][7] for more information on communication skills for quantitative professionals.
+
+![Computer and Book][8]
+
+The next question I always get is, "What can I do to develop these skills?" There are many resources around the web, but I don't want to give anyone the mistaken impression that the path to data science is as simple as taking a few MOOCs. Unless you already have a strong quantitative background, the road to becoming a data scientist will be challenging – but not impossible.
+
+However, if it's something you're sincerely interested in, and have a passion for data and lifelong learning, don't let your background discourage you from pursuing data science as a career. Here are a few of the resources we've found to be helpful:
+
+**Resources**
+
+1. **Advanced Degree** – More [Data Science programs][9] are popping up to serve the current demand, but there are also many Mathematics, Statistics, and Computer Science [programs][10].
+2. **MOOCs** –[Coursera][11], [Udacity][12], and [codeacademy][13] are good places to start.
+3. **Certifications** – KDnuggets has [compiled an extensive list][14].
+4. **Bootcamps** – For more information about how this approach compares to degree programs or MOOCs, [check out this guest blog][15] from the data scientists at Datascope Analytics.
+5. **Kaggle** – [Kaggle][16] hosts data science competitions where you can practice, hone your skills with messy, real world data, and tackle actual business problems. Employers take Kaggle rankings seriously, as they can be seen as relevant, hands-on project work.
+6. **LinkedIn Groups** – Join relevant groups to interact with other members of the data science community.
+7. **Data Science Central and KDnuggets** – [Data Science Central][17] and [KDnuggets][18] are good resources for staying at the forefront of industry trends in data science.
+8. **The Burtch Works Study: Salaries of Data Scientists** – If you're looking for more information about the salaries and demographics of current data scientists be sure to [download our data scientist salary study][4].
+
+I'm sure there are items I may have missed, so if there's a crucial skill or resource you think would be helpful to any data science hopefuls, feel free to share it in the comments below!
+
+Original: <http: www.burtchworks.com="" 2014="" 11="" 17="" must-have-skills-to-become-a-data-scientist="">
+
+**Related:**   
+
+[1]: http://www.kdnuggets.com/images/blackboard-data-scientist.jpg
+[2]: http://en.wikipedia.org/wiki/Nate_Silver
+[3]: http://www.informationweek.com/big-data/big-data-analytics/are-you-recruiting-a-data-scientist-or-unicorn/d/d-id/899843
+[4]: http://www.burtchworks.com/big-data-analyst-salary/big-data-career-tips/
+[5]: http://www.datasciencecentral.com/profiles/blogs/job-skills-required-to-get-hired-data-science-startups
+[6]: http://www.burtchworks.com/2014/03/12/tips-for-hiring-data-scientists/
+[7]: http://www.burtchworks.com/2014/09/23/flash-survey-quants-communication-skills/
+[8]: http://www.burtchworks.com/files/2014/11/onlineeducation2-300x200.jpg
+[9]: http://datasciencereport.com/2014/10/09/23-top-us-schools-offering-a-masters-programs-in-data-science/?utm_content=buffer640f5&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer#.VD7SLWddWSp
+[10]: http://www.kdnuggets.com/education/usa-canada.html?utm_content=buffer725db&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer
+[11]: https://www.coursera.org/
+[12]: https://www.udacity.com/
+[13]: http://www.codecademy.com/
+[14]: http://www.kdnuggets.com/education/analytics-data-mining-certificates.html
+[15]: http://www.burtchworks.com/2014/08/04/becoming-a-data-scientist-masters-program-bootcamp-or-moocs/
+[16]: https://www.kaggle.com/
+[17]: http://www.datasciencecentral.com
+[18]: http://www.kdnuggets.com
+
+
+
+#==================================================================
 # Описание позиции
 ## Круг задач:
 - Участие в проекте разработки платформы мониторинга в части алгоритмов и методов обработки данных.

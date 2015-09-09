@@ -81,6 +81,7 @@ Transform your monitoring data into valuable insight at any layer of the stack.
 - [NOC](https://kb.nocproject.org/display/SITE/NOC) is the scalable, high-performance and open-source OSS system for ISP, service and content providers
 - [KNOA](http://www.knoa.com/) Business-Driven User Experience Management
 - [signal fx](https://signalfx.com/). Metrics + Streaming Analytics + Interaction = Monitoring Evolved
+- [Dataminer](http://www.dataminer.co/) или [здесь](http://www.skyline.be/). Global leading end-to-end multi-vendor network management & OSS solutions for the IPTV, satellite, HFC broadband and broadcast industry
 
 ### Capacity Planner\Capacity Management
 - [Sumerian's Capacity Planning](http://www.sumerian.com/) as a Service. Sumerian has spent the last 12 years working with leading global companies, doing Forward Thinking predictive analytics to help optimize the performance and capacity of their IT estates, and ensure their IT investments generate a better return.
@@ -125,6 +126,7 @@ Transform your monitoring data into valuable insight at any layer of the stack.
 - Алгоритмы прогнозирования. Онлайн книга [Forecasting: principles and practice](https://www.otexts.org/book/fpp)
 - Библиотеки для прогнозирования метрик на основе теории очередей. [Guerilla Capacity Planning](http://www.perfdynamics.com/)
 - Библиотека визуализации [D3.js](http://d3js.org/). Онлайн книга [Interactive Data Visualization for the Web,](http://chimera.labs.oreilly.com/books/1230000000345/index.html)
+- [GoJS](http://www.gojs.net/). Interactive Diagrams for JavaScript and HTML
 - [dc.js - Dimensional Charting Javascript Library](https://dc-js.github.io/dc.js/). dc.js is a javascript charting library with native crossfilter support and allowing highly efficient exploration on large multi-dimensional dataset (inspired by crossfilter's demo). It leverages d3 engine to render charts in css friendly svg format. 
 - [Over 2000 D3.js Examples and Demos](http://techslides.com/over-2000-d3-js-examples-and-demos)
 - Спарклайны с D3.js: [Angular.js Inline Visualization with D3.js](https://blog.safaribooksonline.com/2014/02/12/inline-visualization-d3-js/)
@@ -134,6 +136,7 @@ Transform your monitoring data into valuable insight at any layer of the stack.
 - [AngularJS vs. Backbone.js vs. Ember.js](http://www.airpair.com/js/javascript-framework-comparison)
 - Wikipedia: [Comparison of JavaScript frameworks](http://en.wikipedia.org/wiki/Comparison_of_JavaScript_frameworks)
 - Time Series, метрики и статистика: [знакомство с InfluxDB](http://habrahabr.ru/company/selectel/blog/245515/) (блог компании Selectel)
+- [The complete style of the Bootflat Framework](http://bootflat.github.io/documentation.html)
 
 ## Time-Series database
 - [OpenTSDB](http://opentsdb.net/). The Scalable Time Series Database.
@@ -153,6 +156,7 @@ Transform your monitoring data into valuable insight at any layer of the stack.
 - [SoapUI](http://www.soapui.org/About-SoapUI/what-is-soapui.html) is a free and open source cross-platform Functional Testing solution.
 - [Kieker](http://kieker-monitoring.net/) provides complementary dynamic analysis capabilities, i.e., monitoring and analyzing a software system’s runtime behavior — enabling Application Performance Monitoring and Architecture Discovery. The internal behavior of large-scale software systems cannot be determined on the basis of static (e.g., source code) analysis alone. 
 - [Membrane Service Proxy](http://www.membrane-soa.org/service-proxy/) is an reverse HTTP proxy and framework written in Java, licensed under the ASF 2.0 Open Source License, that can be used to...
+- [Amazon Kinesis](http://aws.amazon.com/kinesis/). Amazon Kinesis is a fully managed, cloud-based service for real-time data processing over large, distributed data streams. Amazon Kinesis can continuously capture and store terabytes of data per hour from hundreds of thousands of sources such as website clickstreams, financial transactions, social media feeds, IT logs, and location-tracking events. With Amazon Kinesis Client Library (KCL), you can build Amazon Kinesis Applications and use streaming data to power real-time dashboards, generate alerts, implement dynamic pricing and advertising, and more. You can also emit data from Amazon Kinesis to other AWS services such as Amazon Simple Storage Service (Amazon S3), Amazon Redshift, Amazon Elastic Map Reduce (Amazon EMR), and AWS Lambda.
 
 
 
@@ -176,6 +180,7 @@ Transform your monitoring data into valuable insight at any layer of the stack.
 # Материалы к публикации
 - The Netflix Tech Blog. [RAD - Outlier Detection on Big Data](http://techblog.netflix.com/2015/02/rad-outlier-detection-on-big-data.html)
 - Microsoft [to acquire](http://blogs.microsoft.com/blog/2015/01/23/microsoft-acquire-revolution-analytics-help-customers-find-big-data-value-advanced-statistical-analysis/) Revolution Analytics to help customers find big data value with advanced statistical analysis
+- [The Log: What every software engineer should know about real-time data's unifying abstraction](http://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
 
 # Performance Testing
 - [Neotys](http://www.neotys.com/) Load Testing and Performance Monitoring for Web and Mobile Applications
@@ -193,3 +198,18 @@ Learning CEPH
 - [A Guide to Fault Detection and Diagnosis](http://gregstanleyandassociates.com/whitepapers/FaultDiagnosis/faultdiagnosis.htm), в частности
   - [Fault Management - the Overall Process and Life Cycle of a Fault](http://gregstanleyandassociates.com/whitepapers/FaultDiagnosis/Fault-Management/fault-management.htm);
   - [Neural Nets for Fault Detection and Diagnosis](http://gregstanleyandassociates.com/whitepapers/FaultDiagnosis/NeuralNets/neuralnets.htm)
+
+
+# Web инструменты (на оформление)
+- [BrowserStack](https://www.browserstack.com/). Live, Web-Based Browser Testing Instant access to all desktop and mobile browsers.
+Say goodbye to your setup of virtual machines and devices.
+- [Less](http://lesscss.org/) is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable. Less runs inside Node, in the browser and inside Rhino. There are also many 3rd party tools that allow you to compile your files and watch for changes.
+- [Pattern Lab](http://patternlab.io/) is a collection of tools to help you create atomic design systems.
+- [Sketch 3](http://bohemiancoding.com/sketch/). Professional digital design for Mac. Sketch gives you the power, flexibility and speed you always wanted in a lightweight and easy-to-use package. Finally you can focus on what you do best: Design.
+- [GRUNT](http://gruntjs.com/). The JavaScript Task Runner 
+- [Macaw](http://macaw.co/) provides the same flexibility as your favorite image editor but also writes semantic HTML and remarkably succinct CSS. It's time to expect more from a web design tool. Stop writing code, start drawing it.
+- [Coda 2](https://panic.com/coda/). Coda is everything you need to hand-code a website, in one beautiful app.
+- [Emmet](http://emmet.io/) — the essential toolkit for web-developers. Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow:
+- [Typecast](http://typecast.com/) by Monotype. Design for the reader by putting type first
+Use Typecast to create visual and semantic designs. Check for readability, rendering and beauty then share a working prototype of your design.
+- [StyleTiles](http://styletil.es/). A Visual Web Design Process for Clients & Responsive Web.
