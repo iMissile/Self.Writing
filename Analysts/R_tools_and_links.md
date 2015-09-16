@@ -22,6 +22,7 @@
 		- testthat - Automatic code testing
 
 ## Концептуальные материалы
+- [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
 - [Simpler R coding with pipes > the present and future of the magrittr package](http://www.r-statistics.com/2014/08/simpler-r-coding-with-pipes-the-present-and-future-of-the-magrittr-package/)
 - [dplyr and pipes: the basics](http://seananderson.ca/2014/09/13/dplyr-intro.html). [NOTE](http://rpackages.ianhowson.com/cran/dplyr/man/select.html): one_of("x", "y", "z"): selects variables provided in a character vector.
 - "Data manipulation with dplyr", Chief Scientist, RStudio, Hadley Wickham (pdf)
@@ -133,6 +134,9 @@ Predictive applications automate decision-making based on current and historical
 
 
 ## Shiny etc.
+- [Different Shinyapps demo]
+  - [Shiny User Showcase](https://www.rstudio.com/products/shiny/shiny-user-showcase/). Shiny is designed for fully interactive visualization, using JavaScript libraries like d3, Leaflet, and Google Charts. Our users create fantastic examples, and some have shared them with the community. Here are some examples that we particularly like.
+  - [GA Dashboard Demo](https://mark.shinyapps.io/GA-dashboard-demo)
 - [Shiny articles](http://shiny.rstudio.com/articles/)
 - [Bootstrap](http://getbootstrap.com/) is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
   - [Free themes for Bootstrap](http://bootswatch.com/)
@@ -146,7 +150,7 @@ Predictive applications automate decision-making based on current and historical
 - [The R package DT](https://rstudio.github.io/DT/) provides an R interface to the JavaScript library DataTables. R data objects (matrices or data frames) can be displayed as tables on HTML pages, and DataTables provides filtering, pagination, sorting, and many other features in the tables.
 - [Using DT in Shiny](https://rstudio.github.io/DT/shiny.html), [artice](http://shiny.rstudio.com/articles/datatables.html) from RStudio.
 - [dygraphs](http://dygraphs.com/) is a fast, flexible open source JavaScript charting library. [The Dygraphs Blog](http://blog.dygraphs.com/)
-- [dygraphs for R](https://rstudio.github.io/dygraphs/). The dygraphs package is an R interface to the dygraphs JavaScript charting library. It provides rich facilities for charting time-series data in R, including...
+	- [dygraphs for R](https://rstudio.github.io/dygraphs/). The dygraphs package is an R interface to the dygraphs JavaScript charting library. It provides rich facilities for charting time-series data in R, including...
 	- [Using in Shiny Applications](https://rstudio.github.io/dygraphs/shiny.html)
 - [Radiant](http://vnijs.github.io/blog/2015/05/introducing-radiant.html) is a platform-independent browser-based interface for business analytics in R, based on the Shiny package.
 - [Create Dashboards with 'Shiny'](http://rpackages.ianhowson.com/cran/shinydashboard/)
@@ -231,6 +235,9 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [How to become a Data Scientist for Free. (KDnuggets)](http://www.kdnuggets.com/2015/08/how-become-data-scientist-free.html)
 - [Udacity](https://www.udacity.com/)
 - [RPubs R Cookbook & R Graphics Cookbook](https://rpubs.com/escott8908) by escott8908 Edgar James Scott II
+- [16+ Free Data Science Books](http://www.wzchen.com/data-science-books/). As a data scientist at Quora, I often get asked for my advice about becoming a data scientist. To help those people, I've took some time to compile my top recommendations of quality data science books that are either available for free (by generosity of the author) or are Pay What You Want (PWYW) with $0 minimum.
+- [Probabilistic Programming & Bayesian Methods for Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/)
+- [](https://leanpub.com/)
 
 ### Tutorial
 - [A very quick introduction to ggplot2](http://chrisladroue.com/extra/ggplot2Intro/introductionGGplot2/)
@@ -280,12 +287,14 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [Metafor Software](http://www.metaforsoftware.com/) Detect the anomalies that matter – automatically and in real time. Analyze the behavior of millions of logs and metrics of any type from any data source. Get alerted at the earliest sign of a problem so you can fix it immediately; no threshold or rule setting required.
 - [Geogebra](http://www.geogebra.org/) is a multi-platform mathematics software that gives everyone the chance to experience the extraordinary insights that math makes possible
 - [Logi Analytics](http://www.logianalytics.com/). Self-service analytics every user will embrace.
+- [Anaconda](http://go.continuum.io/anaconda-package-management-dsw/). Be a Data Scientist, Not a Package Manager. Spend less time managing packages and dependencies. Spend more time finding insights in data with Anaconda. Anaconda includes conda, the package and environment manager, for open data science.
 
 - [PiktoChart](http://piktochart.com/). Easy-To-Use Infographic Creator. Discover how non-designers are creating beautiful infographics in as little as 10 minutes
 - [Datawrapper](https://datawrapper.de/). Create charts and maps in just four steps. This tool reduces the time you need to create visualizations from hours to minutes.
 - [Gliffy](https://www.gliffy.com/). Where Ideas Take Shape. Create professional-quality Flowcharts, Wireframes, UML diagrams, and more.
 - [Canva](https://www.canva.com/) makes design simple for eceryone. It gives you everything you need to easily turn ideas into outstanding designs. You can startwith a custom layout or a blank page. There’s no limits to your creativity with all the tools in one place. Just search and drag to create beautiful designs and Canva will take care of the boring bits. The tool is online and free to use.
 - [Dipity](http://www.dipity.com/) is a free digital timeline website. Our mission is to organize the web's content by date and time. Users can create, share, embed and collaborate on interactive, visually engaging timelines that integrate video, audio, images, text, links, social media, location and timestamps.
+
 
 ### Визуализация
 - [Plotly](https://plot.ly/). Collaborative data science. Plotly is the easiest way to graph and share your data.
@@ -457,6 +466,7 @@ How could I do this with dplyr?
 # Machine Learning materials
 - [A Neural Network in 11 lines of Python (Part 1)](http://iamtrask.github.io/2015/07/12/basic-python-network/). A bare bones neural network implementation to describe the inner workings of backpropagation.
 - [A Neural Network in 13 lines of Python (Part 2 - Gradient Descent)](http://iamtrask.github.io/2015/07/27/python-network-part2/). Improving our neural network by optimizing Gradient Descent
+- WildML. [Implementing a Neural Network from Scratch – An Introduction](http://www.wildml.com/2015/09/implementing-a-neural-network-from-scratch/)
 - [Torch](http://torch.ch/) is a scientific computing framework with wide support for machine learning algorithms. It is easy to use and efficient, thanks to an easy and fast scripting language, LuaJIT, and an underlying C/CUDA implementation.
 - [Caffe](http://caffe.berkeleyvision.org/) is a deep learning framework made with expression, speed, and modularity in mind. It is developed by the Berkeley Vision and Learning Center (BVLC) and by community contributors. Yangqing Jia created the project during his PhD at UC Berkeley. Caffe is released under the BSD 2-Clause license.
 - [Theano](http://deeplearning.net/software/theano/) is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.
