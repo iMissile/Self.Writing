@@ -22,6 +22,7 @@
 		- testthat - Automatic code testing
 
 ## Концептуальные материалы
+- [What is R?](http://www.inside-r.org/what-is-r)
 - [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
 - [Simpler R coding with pipes > the present and future of the magrittr package](http://www.r-statistics.com/2014/08/simpler-r-coding-with-pipes-the-present-and-future-of-the-magrittr-package/)
 - [dplyr and pipes: the basics](http://seananderson.ca/2014/09/13/dplyr-intro.html). [NOTE](http://rpackages.ianhowson.com/cran/dplyr/man/select.html): one_of("x", "y", "z"): selects variables provided in a character vector.
@@ -91,6 +92,7 @@ Predictive applications automate decision-making based on current and historical
 	- [A brief introduction to “apply” in R](https://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/)
 	- [R Grouping functions: sapply vs. lapply vs. apply. vs. tapply vs. by vs. aggregate](http://stackoverflow.com/questions/3505701/r-grouping-functions-sapply-vs-lapply-vs-apply-vs-tapply-vs-by-vs-aggrega)
 	- [Say it in R with "by", "apply" and friends](http://www.magesblog.com/2012/01/say-it-in-r-with-by-apply-and-friends.html)
+	- [Using the apply family of functions in R](http://datascienceplus.com/using-the-apply-family-of-functions-in-r/)
 - [Introduction to data.tree](http://cran.r-project.org/web/packages/data.tree/vignettes/data.tree.html)
 - [Debugging Tools in R with Michael Hannon](http://www.noamross.net/blog/2013/4/18/r-debug-tools.html)
 - [readr 0.1.0](http://blog.rstudio.org/2015/04/09/readr-0-1-0/)
@@ -121,8 +123,14 @@ Predictive applications automate decision-making based on current and historical
 - [inside-R](http://www.inside-r.org/): A Community Site for R (Sponsored by Revolution Analytics)
 - [Sweave](http://www.stat.uni-muenchen.de/~leisch/Sweave/) is a tool that allows to embed the R code for complete data analyses in latex documents.
 - [R-Studio](http://www.rstudio.com/) is a free and open source integrated development environment for R. You can run it on your desktop (Windows, Mac, or Linux) or even over the web using RStudio Server.
-  - [R-Studio Keyboard Shortcuts](https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts)
+	- [R-Studio Keyboard Shortcuts](https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts)
+	- [RStudio v0.99 Preview: Graphviz and DiagrammeR](http://blog.rstudio.org/2015/05/01/rstudio-v0-99-preview-graphviz-and-diagrammer/)
+	- [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
 - [R-Commander](http://socserv.mcmaster.ca/jfox/Misc/Rcmdr/): A Basic-Statistics GUI for R
+- [Another editor]
+	- [EmEditor Professional as an R script editor](http://datadebrief.blogspot.ru/2010/09/emeditor-professional-as-r-script.html)
+	- [EmEditor R code macro - Almost interactive R development for Emeditor](http://datadebrief.blogspot.ru/2011/01/emeditor-r-code-macro-almost.html)
+	- [Emeditor R syntax file](https://www.emeditor.com/files/r-esy/). [Q. How can I install an EmEditor syntax file?](https://www.emeditor.com/help/faq/setup/setup_syntax.htm)
 - [DeployR](http://deployr.revolutionanalytics.com/) is an integration technology for deploying R analytics inside Web, desktop, mobile, dashboard applications and backend systems. DeployR makes it easy for application developers to collaborate with R programmers and integrate R analytics without any R programming knowledge.
 - [SimilaR](http://similar.rexamine.com/). Code similarity (aka code cloning or antiplagiarism) of R functions detection portal
 - At [rOpenSci](https://ropensci.org/) we are creating packages that allow access to data repositories through the R statistical programming environment that is already a familiar part of the workflow of many scientists. Our tools not only facilitate drawing data into an environment where it can readily be manipulated, but also one in which those analyses and methods can be easily shared, replicated, and extended by other researchers.
@@ -440,6 +448,7 @@ How could I do this with dplyr?
 - [htmlwidgets for R](http://www.htmlwidgets.org/). Bring the best of JavaScript data visualization to R
 - [SOLARIZED](http://ethanschoonover.com/solarized). Precision colors for machines and people. Solarized is a sixteen color palette (eight monotones, eight accent colors) designed for use with terminal and gui applications. It has several unique properties. I designed this colorscheme with both precise CIELAB lightness relationships and a refined set of hues based on fixed color wheel relationships. It has been tested extensively in real world use on color calibrated displays (as well as uncalibrated/intentionally miscalibrated displays) and in a variety of lighting conditions.
 - [COLORBREWER 2.0](http://colorbrewer2.org/). Color advice for cartography
+- [Cheat Sheets for Plotting Symbols and Color Palettes](http://vis.supstat.com/2013/04/plotting-symbols-and-color-palettes/)
 - [Preceden](https://www.preceden.com/). Make a beautiful timeline that you can print and share in minutes — even if you've never created one before.
 
 - [Building Intelligence: Software Development and Design](http://www.intellergy.net/building-dashboards/). ![](http://www.intellergy.net/files/cache/5bb5a8c4ab421c78cd6ad43f54bfa1c2.jpg)
