@@ -256,6 +256,24 @@ Original: <http: www.burtchworks.com="" 2014="" 11="" 17="" must-have-skills-to-
 [17]: http://www.datasciencecentral.com
 [18]: http://www.kdnuggets.com
 
+## About DS workflow
+- [Learning to learn, or the advent of augmented data scientists](https://medium.com/the-programmable-chronicles/learning-to-learn-or-the-advent-of-augmented-data-scientists-20873282e181)
+The typical data scientist workflow, when you consider it from defining the problem at hand to debugging a live production system is, in our experience, very intricate and certainly not linear. Thankfully, this process can easily be broken down into distinct parts. Rich Caruana (Microsoft Research) formulates the following pipeline, which feels very familiar for us:
+	- Problem definition
+	- Data collection
+	- Data cleaning
+	- Data coding (feature engineering)
+	- Metric selection
+	- Algorithm selection
+	- Parameter optimization
+	- Post-processing
+	- Deployment
+	- Online evaluation
+	- Debug
+
+## Data Scientists interview
+- [What it's like to be on the data science job market](http://treycausey.com/data_science_interviews.html)
+- [66 job interview questions for data scientists](http://www.datasciencecentral.com/profiles/blogs/66-job-interview-questions-for-data-scientists)
 
 
 #==================================================================

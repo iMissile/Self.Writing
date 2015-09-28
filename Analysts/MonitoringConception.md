@@ -200,6 +200,7 @@ Learning CEPH
 - [A Guide to Fault Detection and Diagnosis](http://gregstanleyandassociates.com/whitepapers/FaultDiagnosis/faultdiagnosis.htm), в частности
   - [Fault Management - the Overall Process and Life Cycle of a Fault](http://gregstanleyandassociates.com/whitepapers/FaultDiagnosis/Fault-Management/fault-management.htm);
   - [Neural Nets for Fault Detection and Diagnosis](http://gregstanleyandassociates.com/whitepapers/FaultDiagnosis/NeuralNets/neuralnets.htm)
+- [Principles Of Chaos Engineering](http://www.principlesofchaos.org/). Chaos Engineering is the discipline of experimenting on a distributed system in order to build confidence in the system’s capability to withstand turbulent conditions in production.
 
 
 # Web инструменты (на оформление)

@@ -86,13 +86,14 @@ Predictive applications automate decision-making based on current and historical
 	- [Vectorization in R: Why?](http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html)
 	- [R Tutorial: Intro to Loops (While, For, Repeat, Apply, etc!)](https://blog.udemy.com/r-tutorial/)
 	- [R tutorial on the Apply family of functions](http://blog.datacamp.com/r-tutorial-apply-family/)
-	- [A Tutorial on Loops in R – Usage and Alternatives](http://blog.datacamp.com/tutorial-on-loops-in-r/)
 	- [Using apply, sapply, lapply in R](http://petewerner.blogspot.ru/2012/12/using-apply-sapply-lapply-in-r.html)
 	- [Sean C. Anderson. plyr: Split-Apply-Combine for Mortals](http://seananderson.ca/2013/12/01/plyr.html)
 	- [A brief introduction to “apply” in R](https://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/)
 	- [R Grouping functions: sapply vs. lapply vs. apply. vs. tapply vs. by vs. aggregate](http://stackoverflow.com/questions/3505701/r-grouping-functions-sapply-vs-lapply-vs-apply-vs-tapply-vs-by-vs-aggrega)
 	- [Say it in R with "by", "apply" and friends](http://www.magesblog.com/2012/01/say-it-in-r-with-by-apply-and-friends.html)
 	- [Using the apply family of functions in R](http://datascienceplus.com/using-the-apply-family-of-functions-in-r/)
+	- [A Tutorial on Loops in R – Usage and Alternatives](http://blog.datacamp.com/tutorial-on-loops-in-r/)
+	- [R Tutorial: Intro to Loops (While, For, Repeat, Apply, etc!)](https://blog.udemy.com/r-tutorial/)
 - [Introduction to data.tree](http://cran.r-project.org/web/packages/data.tree/vignettes/data.tree.html)
 - [Debugging Tools in R with Michael Hannon](http://www.noamross.net/blog/2013/4/18/r-debug-tools.html)
 - [readr 0.1.0](http://blog.rstudio.org/2015/04/09/readr-0-1-0/)
@@ -111,6 +112,10 @@ Predictive applications automate decision-making based on current and historical
 - [Graphical Data Analysis with R](http://www.gradaanwr.net/) by Antony Unwin
 - [Using with( ) and by( )](http://www.statmethods.net/stats/withby.html)
 - [Vectorization in R: Why?](http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html) by Noam Ross, 16 April 2014
+- [Passing arguments to an R script from command lines](http://tuxette.nathalievilla.org/?p=1696)
+- Web scrapping
+	- [SelectorGadget](http://selectorgadget.com/): point and click CSS selectors
+	- [rvest: easy web scraping with R](http://blog.rstudio.org/2014/11/24/rvest-easy-web-scraping-with-r/)
 
 ## подвал
 	Solution: the pipe operator from magrittr
@@ -139,6 +144,11 @@ Predictive applications automate decision-making based on current and historical
 - [Visually](http://visual.ly/) Your On-Demand Creative Services Team.
 - [Using R in Sublime Text 3](http://www.kevjohnson.org/using-r-in-sublime-text-3/)
 - [Rodeo](https://github.com/yhat/rodeo/) is a data centric IDE for Python. You can think of it as an alternative UI to the notebook for the IPython Kernel. It's heavily inspired by great projects like Sublime Text and Eclipse.
+- [R kernel for Jupyter](http://irkernel.github.io/)
+- [Continuum Analytics](http://continuum.io/)
+	- [Anaconda](https://store.continuum.io/cshop/anaconda/). Completely free enterprise-ready Python distribution for large-scale data processing, predictive analytics, and scientific computing
+	- [Miniconda](http://conda.pydata.org/miniconda.html)
+	- [Jupyter and conda for R](http://continuum.io/blog/conda-jupyter-irkernel)
 
 
 ## Shiny etc.
@@ -149,6 +159,7 @@ Predictive applications automate decision-making based on current and historical
 - [Bootstrap](http://getbootstrap.com/) is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
   - [Free themes for Bootstrap](http://bootswatch.com/)
 - [shinyapps.io by RStudio](http://www.shinyapps.io/). Share your Shiny Applications Online. Deploy your Shiny applications on the Web in minutes
+- [Adding Authentication to Shiny Open Source Edition](https://auth0.com/blog/2015/09/24/adding-authentication-to-shiny-open-source-edition/)
 - [Getting started with shinyapps.io](http://shiny.rstudio.com/articles/shinyapps.html)
 - [Dashboards in R with Shiny & Plotly](http://moderndata.plot.ly/dashboards-in-r-with-shiny-plotly/)
 - [R в качестве инструмента мониторинга цен](http://habrahabr.ru/post/255173/)
@@ -245,10 +256,13 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [RPubs R Cookbook & R Graphics Cookbook](https://rpubs.com/escott8908) by escott8908 Edgar James Scott II
 - [16+ Free Data Science Books](http://www.wzchen.com/data-science-books/). As a data scientist at Quora, I often get asked for my advice about becoming a data scientist. To help those people, I've took some time to compile my top recommendations of quality data science books that are either available for free (by generosity of the author) or are Pay What You Want (PWYW) with $0 minimum.
 - [Probabilistic Programming & Bayesian Methods for Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/)
-- [](https://leanpub.com/)
+- [Leanpub](https://leanpub.com/). Publish early, publish often. Authors and publishers use Leanpub to publish amazing in-progress and completed books.
+- [Analytics Vidhya - Learn everything about Analytics](http://www.analyticsvidhya.com/blog/)
+	- [Top Data Scientists to Follow & Best Data Science Tutorials on GitHub](http://www.analyticsvidhya.com/blog/2015/07/github-special-data-scientists-to-follow-best-tutorials/)
 
 ### Tutorial
 - [A very quick introduction to ggplot2](http://chrisladroue.com/extra/ggplot2Intro/introductionGGplot2/)
+- COOL! [Beautiful plotting in R: A ggplot2 cheatsheet](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/)
 - [Quick Introduction to ggplot2](http://blog.echen.me/2012/01/17/quick-introduction-to-ggplot2/)
 - [An Introduction to reshape2](http://seananderson.ca/2013/10/19/reshape.html)
 - [RHadoop Tutorial](http://cdn.oreillystatic.com/en/assets/1/event/100/Using%20R%20and%20Hadoop%20for%20Statistical%20Computation%20at%20Scale%20Presentation.htm#/)
@@ -274,6 +288,9 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [Walnut](http://thewalnut.io/). The value of visualizing algorithms. Walnut is where you can bring algorithms and data to life. Visualize the interaction that occurred, making the cognitive process faster, more efficient and powerful.
 - [StatAce](http://statace.com/). Predictive analytics in the cloud based on R. Трансформировались в [Intuitics](https://www.intuitics.com/) и **пока не работают**. Build advanced analytics web apps with ease
 Intuitics increases the speed with which data insights reach decision makers. Instead of waiting for the data science team to rerun an analysis, a business user can now do it on her own, with her data and parameters, in an intuitive web application, built in Intuitics.
+- [yHat](https://www.yhathq.com/). Build a data-driven business. Helping businesses draw value from data science.
+	- [ScienceCluster](https://www.yhathq.com/products/sciencecluster). Distributed, Scalable, Collaborative Data Science
+	- [ScienceOps](https://www.yhathq.com/products/scienceops). Embed And Scale Predictive Models In Production Applications
 - [Intuitics](https://www.intuitics.com/) turns your R, SAS and Python models into interactive web apps, quickly and easily
 - [Lightning](http://lightning-viz.org/) is a data-visualization server providing API-based access to reproducible, web-based, interactive visualizations. It includes a core set of visualization types, but is built for extendability and customization. Lightning supports modern libraries like d3.js and three.js, and is designed for interactivity over large data sets and continuously updating data streams.
 - [Import.io](https://import.io/). Instantly Turn Web Pages into Data. No Plugin, No Training, No Setup.
@@ -375,7 +392,7 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [Time Series Analysis and Order Prediction with R](http://www.inside-r.org/howto/time-series-analysis-and-order-prediction-r)
 - [Using R for Time Series Analysis](http://a-little-book-of-r-for-time-series.readthedocs.org/en/latest/src/timeseries.html)
 - [Forecasting time series using R](http://robjhyndman.com/talks/melbournerug/)
-- [Forecasting with daily data](http://www.r-bloggers.com/forecasting-with-daily-data/)
+- [Forecasting with daily data](http://robjhyndman.com/hyndsight/dailydata/)
 - [Cross Validated](http://stats.stackexchange.com/)  is a question and answer site for statisticians, data analysts, data miners and data visualization experts. It's 100% free, no registration required.
 - [Using R](https://www.otexts.org/fpp/using-r) This book is designed to be used with R. It is free, available on almost every operating system, and there are thousands of add-on packages to do almost anything you could ever want to do. We recommend you use R with RStudio.
 - [Read Excel files from R (Milano R net)](http://www.milanor.net/blog/?p=779)
@@ -387,6 +404,7 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - Dealing with Missing Data in R: Omit, Approx, or Spline [Part 1](http://publish.illinois.edu/spencer-guerrero/2014/12/11/2-dealing-with-missing-data-in-r-omit-approx-or-spline-part-1/), [Part 2](http://publish.illinois.edu/spencer-guerrero/2014/12/11/2-dealing-with-missing-data-in-r-omit-approx-or-spline-part-2/)
 - [Time Series Data Analysis with pandas](http://pyvideo.org/video/1198/time-series-data-analysis-with-pandas). (Video)
 - [R financial time series tips everyone should know about](http://www.thertrader.com/2015/07/07/r-financial-time-series-tips-everyone-should-know-about/)
+- [Autocorrelation functions of materially different time series](http://ellisp.github.io/blog/2015/09/19/timeseries-same-acf/)
 
 ## StackoverFlow etc.
 - [Creating a Data Frame based on day of week from a Data Frame containing several months of data](http://stackoverflow.com/questions/8992585/creating-a-data-frame-based-on-day-of-week-from-a-data-frame-containing-several)
@@ -428,6 +446,10 @@ I tried doing this with dplyr but failed miserably:
 	mutate(mpg = mpg == NA[cyl == 4]) %>%
 	as.data.frame()
 How could I do this with dplyr?
+- [Timing]
+	- [Measuring function execution time in R](http://stackoverflow.com/questions/6262203/measuring-function-execution-time-in-r)
+	- [R FAQ
+How can I time my code?](http://www.ats.ucla.edu/stat/r/faq/timing_code.htm)
 
 ## Почему надо выбор остановить на R
 - [Getting Started in Data Science](http://treycausey.com/getting_started.html)
@@ -471,21 +493,35 @@ How could I do this with dplyr?
 
 # Another visualization
 - [Vega](http://trifacta.github.io/vega/) is a visualization grammar, a declarative format for creating, saving and sharing visualization designs.
+- [Because it's Friday: Visualizing the Discrete Fourier Transform](http://blog.revolutionanalytics.com/2015/09/because-its-friday-visualizing-ffts.html)
 
 # Machine Learning materials
 - [A Neural Network in 11 lines of Python (Part 1)](http://iamtrask.github.io/2015/07/12/basic-python-network/). A bare bones neural network implementation to describe the inner workings of backpropagation.
 - [A Neural Network in 13 lines of Python (Part 2 - Gradient Descent)](http://iamtrask.github.io/2015/07/27/python-network-part2/). Improving our neural network by optimizing Gradient Descent
 - WildML. [Implementing a Neural Network from Scratch – An Introduction](http://www.wildml.com/2015/09/implementing-a-neural-network-from-scratch/)
+- [Introduction to Machine Learning with Web Analytics: Random Forests and K-Means](http://markedmondson.me/intro-to-machine-learning-with-web-analytics-random-forests-and-k-means). Mark Edmondson
+An Englishman in Copenhagen writing about digital, music and anything else. Presentation [here](http://rpubs.com/MarkeD/machine-learning-measurecamp-2015)	
+- [How do you know if your model is going to work?](http://www.win-vector.com/blog/2015/09/isyourmodelgoingtowork/)
+- [Fitting a neural network in R; neuralnet package](http://datascienceplus.com/fitting-neural-network-in-r/)
+- [Essentials of Machine Learning Algorithms (with Python and R Codes)](http://www.analyticsvidhya.com/blog/2015/08/common-machine-learning-algorithms/)
+- [Some nice ML-libraries](http://auduno.com/post/96084011658/some-nice-ml-libraries)
+
 - [Torch](http://torch.ch/) is a scientific computing framework with wide support for machine learning algorithms. It is easy to use and efficient, thanks to an easy and fast scripting language, LuaJIT, and an underlying C/CUDA implementation.
 - [Caffe](http://caffe.berkeleyvision.org/) is a deep learning framework made with expression, speed, and modularity in mind. It is developed by the Berkeley Vision and Learning Center (BVLC) and by community contributors. Yangqing Jia created the project during his PhD at UC Berkeley. Caffe is released under the BSD 2-Clause license.
 - [Theano](http://deeplearning.net/software/theano/) is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.
+
+- [Machine Learning Trick of the Day (1): Replica Trick](http://blog.shakirm.com/2015/07/machine-learning-trick-of-the-day-1-replica-trick/)
+- [Machine Learning Trick of the Day (2): Gaussian Integral Trick](http://blog.shakirm.com/2015/08/machine-learning-trick-of-the-day-2-gaussian-integral-trick/)
+- [Machine Learning Trick of the Day (3): Hutchinson's Trick](http://blog.shakirm.com/2015/09/machine-learning-trick-of-the-day-3-hutchinsons-trick/)
 
 # Python
 # Концептуальные материалы
 - [Python 3 Readiness](http://py3readiness.org/). Python 3 support graph for 360 most popular Python packages!
 - [Python2orPython3](https://wiki.python.org/moin/Python2orPython3). Should I use Python 2 or Python 3 for my development activity
+- [Quick reference to Python in a single script](http://www.dataschool.io/python-quick-reference/)
 - [Damn the torpedoes, full speed ahead: making the switch to Python 3](http://www.onthelambda.com/2014/05/13/damn-the-torpedoes-full-speed-ahead-making-the-switch-to-python-3/)
 - [Sake](http://tonyfischetti.github.io/sake/). A self-documenting build automation tool
+- [Pineapple](http://nwhitehead.github.io/pineapple/). The next generation of scientific notebook. A standalone frontend to IPython for Mac.
 
 
 # Cross-Correlation
