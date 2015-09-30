@@ -168,6 +168,7 @@ In a future post in this series, we will take up the last of these in more detai
 
 ### Cool Articles
 - [Three Things About Data Science You Won't Find In the Books](http://blog.mikiobraun.de/2015/03/three-things-about-data-science.html)
+- [The Fundamentals of Data Science](http://www.micfarris.com/2014/10/the-fundamentals-of-data-science/)
 - [Software development skills for data scientists](http://treycausey.com/software_dev_skills.html)
 - [The Three Kinds Of Data Science Project Exams That Show Up In A Data Science Interview](https://www.datayou.org/articles/the-three-kinds-of-data-science-project-exams-that-show-up-in-a-data-science-interview)
 - [Becoming a Full-Stack Statistician in 6 Easy Steps](http://blog.dato.com//becoming-a-full-stack-statistician-in-6-easy-steps)
@@ -181,7 +182,10 @@ In a future post in this series, we will take up the last of these in more detai
 - [9 Must-Have Skills You Need to Become a Data Scientist](http://www.kdnuggets.com/2014/11/9-must-have-skills-data-scientist.html)
 - [How to become a Data Scientist for Free](http://www.kdnuggets.com/2015/08/how-become-data-scientist-free.html)
 - [Top 10 Data Analysis Tools for Business](http://www.kdnuggets.com/2014/06/top-10-data-analysis-tools-business.html)
-
+- [Your Guide to Master Hypothesis Testing in Statistics](http://www.analyticsvidhya.com/blog/2015/09/hypothesis-testing-explained/)
+- [Top Data Scientists to Follow & Best Data Science Tutorials on GitHub](http://www.analyticsvidhya.com/blog/2015/07/github-special-data-scientists-to-follow-best-tutorials/)
+- [Planning a late career shift to Analytics / Big data? Better be prepared!](http://www.analyticsvidhya.com/blog/2014/05/planning-late-career-shift-analytics-big-data-prepared/)
+- [Common myths about a career in Business Analytics: Busted!](http://www.analyticsvidhya.com/blog/2013/08/common-myths-career-business-analytics/)
 
 ### 9 Must-Have Skills You Need to Become a Data Scientist
 [Source](http://www.kdnuggets.com/2014/11/9-must-have-skills-data-scientist.html "Permalink to 9 Must-Have Skills You Need to Become a Data Scientist")
@@ -274,6 +278,8 @@ The typical data scientist workflow, when you consider it from defining the prob
 ## Data Scientists interview
 - [What it's like to be on the data science job market](http://treycausey.com/data_science_interviews.html)
 - [66 job interview questions for data scientists](http://www.datasciencecentral.com/profiles/blogs/66-job-interview-questions-for-data-scientists)
+- [Crushed it! Landing a data science job](http://www.erinshellman.com/crushed-it-landing-a-data-science-job/)
+Data science interviews are the worst because data science is interdisciplinary: code for “you have to know everything about all the disciplines.”  Depending on the company and the team, your interview might look like a software developer’s interview, or it might look a like a statistician’s interview, and the bad news is that virtually none of the material overlaps.  I recently spent a ton of time studying for interviews and I’ve got some hot tips to pass along if you’re thinking about a move soon.
 
 
 #==================================================================

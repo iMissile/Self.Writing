@@ -128,12 +128,13 @@ Transform your monitoring data into valuable insight at any layer of the stack.
 - Алгоритмы прогнозирования. Онлайн книга [Forecasting: principles and practice](https://www.otexts.org/book/fpp)
 - Библиотеки для прогнозирования метрик на основе теории очередей. [Guerilla Capacity Planning](http://www.perfdynamics.com/)
 - Библиотека визуализации [D3.js](http://d3js.org/). Онлайн книга [Interactive Data Visualization for the Web,](http://chimera.labs.oreilly.com/books/1230000000345/index.html)
+	- [Over 2000 D3.js Examples and Demos](http://techslides.com/over-2000-d3-js-examples-and-demos)
+	- [How Selections Work](http://bost.ocks.org/mike/selection/) by Mike Bostock. Interactive
+- Визуализация Time-Series в D3.js: [Focus+Context via Brushing](http://bl.ocks.org/mbostock/1667367)
 - [GoJS](http://www.gojs.net/). Interactive Diagrams for JavaScript and HTML
 - [dc.js - Dimensional Charting Javascript Library](https://dc-js.github.io/dc.js/). dc.js is a javascript charting library with native crossfilter support and allowing highly efficient exploration on large multi-dimensional dataset (inspired by crossfilter's demo). It leverages d3 engine to render charts in css friendly svg format. 
-- [Over 2000 D3.js Examples and Demos](http://techslides.com/over-2000-d3-js-examples-and-demos)
 - Спарклайны с D3.js: [Angular.js Inline Visualization with D3.js](https://blog.safaribooksonline.com/2014/02/12/inline-visualization-d3-js/)
 - [Spakline Examples](https://sparkline.wikispaces.com/Examples)
-- Визуализация Time-Series в D3.js: [Focus+Context via Brushing](http://bl.ocks.org/mbostock/1667367)
 - [15 лучших JS библиотек](http://habrahabr.ru/post/246907) для построения диаграмм и схем (дек.'14)
 - [AngularJS vs. Backbone.js vs. Ember.js](http://www.airpair.com/js/javascript-framework-comparison)
 - Wikipedia: [Comparison of JavaScript frameworks](http://en.wikipedia.org/wiki/Comparison_of_JavaScript_frameworks)

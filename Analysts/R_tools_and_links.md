@@ -13,6 +13,7 @@
 		- stringr - Working with text strings
 		- tidyr - Make tidy data
 		- dplyr - Data manipulation
+		- purrr - ???
 		- ggplot2 -  The graphical grammar
 	- 	Advanced
 		- ggvis - Web graphics
@@ -81,6 +82,7 @@ Predictive applications automate decision-making based on current and historical
 	- [Introduction to dplyr for Faster Data Manipulation in R](https://rpubs.com/justmarkham/dplyr-tutorial)
 	- [How dplyr replaced my most common R idioms](http://www.onthelambda.com/2014/02/10/how-dplyr-replaced-my-most-common-r-idioms/)
 	- [do()](https://cran.r-project.org/web/packages/dplyr/README.html). As well as the specialised operations described above, dplyr also provides the generic do() function which applies any R function to each group of the data.
+ - [Purrr](https://github.com/hadley/purrr). [Purrr 0.1.0 released](http://blog.rstudio.org/2015/09/29/purrr-0-1-0/). Purrr makes your pure functions purr by completing R's functional programming tools with important features from other languages, in the style of the JS packages underscore.js, lodash and lazy.js.
 - Apply family:
 	- [Repeating things: looping and the apply family](http://nicercode.github.io/guides/repeating-things/)
 	- [Vectorization in R: Why?](http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html)
@@ -104,6 +106,9 @@ Predictive applications automate decision-making based on current and historical
 - [NOTE](http://rpackages.ianhowson.com/cran/dplyr/man/select.html): one_of("x", "y", "z"): selects variables provided in a character vector.
 - [Top 50 Data Science Resources: The Best Blogs, Forums, Videos and Tutorials to Learn All about Data Science](http://www.ngdata.com/top-data-science-resources/)
 - [4 data wrangling tasks in R for advanced beginners](http://www.computerworld.com/article/2486425/business-intelligence-4-data-wrangling-tasks-in-r-for-advanced-beginners.html)
+- [A Data Cleaning Example](http://justanotherdatablog.blogspot.ru/2015/09/a-data-cleaning-example.html). Objective:
+Clean a dataset with single column containing multiple variables as delimited key-value pairs.
+Solution: This can be done using tidyr functions spread, gather, separate, etc.
 - [Cheat Sheet – 10 Machine Learning Algorithms & R Commands](http://vitalflux.com/cheat-sheet-10-machine-learning-algorithms-r-commands/)
 - [A Visual Introduction to Machine Learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
 - [Machine Learning Done Wrong](http://ml.posthaven.com/machine-learning-done-wrong)
@@ -116,11 +121,18 @@ Predictive applications automate decision-making based on current and historical
 - Web scrapping
 	- [SelectorGadget](http://selectorgadget.com/): point and click CSS selectors
 	- [rvest: easy web scraping with R](http://blog.rstudio.org/2014/11/24/rvest-easy-web-scraping-with-r/)
+- [From good to bad and back: Convert data.tree to and from list, json, networkD3, and more](http://ipub.com/data-tree-to-networkd3/)
+- [A Few Days of Python: Using R in Python](http://mathewanalytics.com/2015/09/29/a-few-days-of-python-using-r-in-python/)
+- [A Few Days of Python: Automating Tasks Involving Excel Files](http://mathewanalytics.com/2015/09/30/a-few-days-of-python-automating-tasks-involving-excel-files/)
 
 ## подвал
 	Solution: the pipe operator from magrittr
 	x %>% f(y) -> f(x, y)
 	Hint: pronounce %>% as then
+
+	Purrr: Anonymous functions are verbose in R, so we provide two convenient shorthands. 
+	For predicate functions, ~ .x + 1 is equivalent to function(.x) .x + 1. 
+	For chains of transformations functions, . %>% f() %>% g() is equivalent to function(.) . %>% f() %>% g().
 
 ## Tools
 - [R](http://www.revolutionanalytics.com/) is the world’s most powerful programming language for statistical computing, machine learning and graphics as well as a thriving global community of users, developers and contributors.
@@ -140,7 +152,9 @@ Predictive applications automate decision-making based on current and historical
 - [SimilaR](http://similar.rexamine.com/). Code similarity (aka code cloning or antiplagiarism) of R functions detection portal
 - At [rOpenSci](https://ropensci.org/) we are creating packages that allow access to data repositories through the R statistical programming environment that is already a familiar part of the workflow of many scientists. Our tools not only facilitate drawing data into an environment where it can readily be manipulated, but also one in which those analyses and methods can be easily shared, replicated, and extended by other researchers.
 - [The Lyra Visualization Design Environment (VDE) bet](http://idl.cs.washington.edu/projects/lyra/). Lyra is an interactive environment that enables custom visualization design without writing any code. Graphical “marks” can be bound to data fields using property drop zones; dynamically positioned using connectors; and directly moved, rotated, and resized using handles. Lyra also provides a data pipeline interface for iterative visual specification of data transformations and layout algorithms. Lyra is more expressive than interactive systems like Tableau, allowing designers to create custom visualizations comparable to hand-coded visualizations built with D3 or Processing. These visualizations can then be easily published and reused on the Web.
-- [Mode](https://modeanalytics.com/). Collaborative tools for analysts who fuel data-driven companies.Mode is the best place for analytical work: write SQL, share ad-hoc analysis, and build powerful visualizations to help everyone make better decisions.
+- [InstantAtlas](http://www.instantatlas.com/). Information visualization software and solutions InstantAtlas™ enables data professionals to design and publish highly-interactive reports, presentations and websites
+that combine statistics and maps to inform better decision-making.
+- [Mode](https://modeanalytics.com/). Collaborative tools for analysts who fuel data-driven companies. Mode is the best place for analytical work: write SQL, share ad-hoc analysis, and build powerful visualizations to help everyone make better decisions.
 - [Visually](http://visual.ly/) Your On-Demand Creative Services Team.
 - [Using R in Sublime Text 3](http://www.kevjohnson.org/using-r-in-sublime-text-3/)
 - [Rodeo](https://github.com/yhat/rodeo/) is a data centric IDE for Python. You can think of it as an alternative UI to the notebook for the IPython Kernel. It's heavily inspired by great projects like Sublime Text and Eclipse.
@@ -150,14 +164,20 @@ Predictive applications automate decision-making based on current and historical
 	- [Miniconda](http://conda.pydata.org/miniconda.html)
 	- [Jupyter and conda for R](http://continuum.io/blog/conda-jupyter-irkernel)
 
+- [RFiddle](http://www.r-fiddle.org/) provides an easy-to-use interactive R console that you can run from your browser.
+- [DataJoy](https://www.getdatajoy.com/). Python & R, for scientists. Easy to use, online data processing with Python and R
+
 
 ## Shiny etc.
 - [Different Shinyapps demo]
-  - [Shiny User Showcase](https://www.rstudio.com/products/shiny/shiny-user-showcase/). Shiny is designed for fully interactive visualization, using JavaScript libraries like d3, Leaflet, and Google Charts. Our users create fantastic examples, and some have shared them with the community. Here are some examples that we particularly like.
-  - [GA Dashboard Demo](https://mark.shinyapps.io/GA-dashboard-demo)
+ 	- [Shiny User Showcase](https://www.rstudio.com/products/shiny/shiny-user-showcase/). Shiny is designed for fully interactive visualization, using JavaScript libraries like d3, Leaflet, and Google Charts. Our users create fantastic examples, and some have shared them with the community. Here are some examples that we particularly like.
+ 	- [GA Dashboard Demo](https://mark.shinyapps.io/GA-dashboard-demo)
+	- [Shiny CRUD App](http://ipub.com/shiny-crud-app/)
+	- [Shiny-based Online Tool for X-13 Seasonal Adjustment](https://usefulr.wordpress.com/2015/09/29/shiny-based-online-tool-for-x-13-seasonal-adjustment-new-features/)
 - [Shiny articles](http://shiny.rstudio.com/articles/)
 - [Bootstrap](http://getbootstrap.com/) is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
   - [Free themes for Bootstrap](http://bootswatch.com/)
+- [shinyBS](http://ebailey78.github.io/shinyBS/). Twitter Bootstrap Components for Shiny. 	Add additional functionality and interactivity to your Shiny applications
 - [shinyapps.io by RStudio](http://www.shinyapps.io/). Share your Shiny Applications Online. Deploy your Shiny applications on the Web in minutes
 - [Adding Authentication to Shiny Open Source Edition](https://auth0.com/blog/2015/09/24/adding-authentication-to-shiny-open-source-edition/)
 - [Getting started with shinyapps.io](http://shiny.rstudio.com/articles/shinyapps.html)
@@ -226,7 +246,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [Ops School](http://ops-school.readthedocs.org/en/latest/index.html) is a comprehensive program that will help you learn to be an operations engineer.
 - [CodeSchool](http://tryr.codeschool.com/). Learn By Doing. No setup. No hassle. Just learning. [R Learning](http://tryr.codeschool.com/levels/1)
 - [Coursera](https://www.coursera.org) 
-	-[Machine Learning](https://www.coursera.org/learn/machine-learning)
+	- [Machine Learning](https://www.coursera.org/learn/machine-learning)
 - [R Tutorial](http://www.cyclismo.org/tutorial/R/index.html)
 - [Learn Data Science](http://nborwankar.github.io/LearnDataScience/). Open content for self-directed learning in data science. [Видеолекции ШАД](https://yandexdataschool.ru/edu-process/courses)
 - [Machine Learning. Курс от Яндекса для тех, кто хочет провести новогодние каникулы с пользой](http://habrahabr.ru/company/yandex/blog/208034/)
@@ -256,9 +276,11 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [RPubs R Cookbook & R Graphics Cookbook](https://rpubs.com/escott8908) by escott8908 Edgar James Scott II
 - [16+ Free Data Science Books](http://www.wzchen.com/data-science-books/). As a data scientist at Quora, I often get asked for my advice about becoming a data scientist. To help those people, I've took some time to compile my top recommendations of quality data science books that are either available for free (by generosity of the author) or are Pay What You Want (PWYW) with $0 minimum.
 - [Probabilistic Programming & Bayesian Methods for Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/)
-- [Leanpub](https://leanpub.com/). Publish early, publish often. Authors and publishers use Leanpub to publish amazing in-progress and completed books.
 - [Analytics Vidhya - Learn everything about Analytics](http://www.analyticsvidhya.com/blog/)
 	- [Top Data Scientists to Follow & Best Data Science Tutorials on GitHub](http://www.analyticsvidhya.com/blog/2015/07/github-special-data-scientists-to-follow-best-tutorials/)
+
+- [Leanpub](https://leanpub.com/). Publish early, publish often. Authors and publishers use Leanpub to publish amazing in-progress and completed books.
+- [OpenIntro](https://www.openintro.org/) We support educational materials that are open and innovative. Manage a course or use our materials. It's all free.
 
 ### Tutorial
 - [A very quick introduction to ggplot2](http://chrisladroue.com/extra/ggplot2Intro/introductionGGplot2/)
@@ -385,6 +407,7 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [knitr](http://yihui.name/knitr/). Elegant, flexible and fast dynamic report generation with R.
 - [Leaflet](https://rstudio.github.io/leaflet/) is one of the most popular open-source JavaScript libraries for interactive maps. It’s used by websites ranging from The New York Times and The Washington Post to GitHub and Flickr, as well as GIS specialists like OpenStreetMap, Mapbox, and CartoDB.
 - [mapView](http://environmentalinformatics-marburg.github.io/web-presentations/20150723_mapView.html): basic interactive viewing of spatial data in R
+- [geomorph](http://www.geomorph.net/). Geomorph is a software package for performing all stages of geometric morphometric shape analysis of landmark points and curves in 2-and-3-dimensions as well as 3D surfaces in the R statistical computing environment. This blog is dedicated to document geomorph related updates, current problems, their proposed solutions, and new ideas.
 
 
 ## Time Series & forecasting
@@ -472,6 +495,7 @@ How can I time my code?](http://www.ats.ucla.edu/stat/r/faq/timing_code.htm)
 - [COLORBREWER 2.0](http://colorbrewer2.org/). Color advice for cartography
 - [Cheat Sheets for Plotting Symbols and Color Palettes](http://vis.supstat.com/2013/04/plotting-symbols-and-color-palettes/)
 - [Preceden](https://www.preceden.com/). Make a beautiful timeline that you can print and share in minutes — even if you've never created one before.
+- [BIRT](http://www.eclipse.org/birt/). An open source technology platform used to create data visualizations and reports that can be embedded into rich client and web applications.
 
 - [Building Intelligence: Software Development and Design](http://www.intellergy.net/building-dashboards/). ![](http://www.intellergy.net/files/cache/5bb5a8c4ab421c78cd6ad43f54bfa1c2.jpg)
 
@@ -522,6 +546,8 @@ An Englishman in Copenhagen writing about digital, music and anything else. Pres
 - [Damn the torpedoes, full speed ahead: making the switch to Python 3](http://www.onthelambda.com/2014/05/13/damn-the-torpedoes-full-speed-ahead-making-the-switch-to-python-3/)
 - [Sake](http://tonyfischetti.github.io/sake/). A self-documenting build automation tool
 - [Pineapple](http://nwhitehead.github.io/pineapple/). The next generation of scientific notebook. A standalone frontend to IPython for Mac.
+- [Python(x,y) - the scientific Python distribution](http://python-xy.github.io/)
+- [Bokeh](http://bokeh.pydata.org/en/latest/) is a Python interactive visualization library that targets modern web browsers for presentation. Its goal is to provide elegant, concise construction of novel graphics in the style of D3.js, but also deliver this capability with high-performance interactivity over very large or streaming datasets. Bokeh can help anyone who would like to quickly and easily create interactive plots, dashboards, and data applications.
 
 
 # Cross-Correlation
@@ -557,7 +583,8 @@ This problem is not usually addressed in time series analysis, because time seri
 - [Generalised Linear Models in R](http://www.magesblog.com/2015/08/generalised-linear-models-in-r.html)
 - [Kickin' it with elastic net regression](http://www.onthelambda.com/2015/08/19/kickin-it-with-elastic-net-regression/)
 - [Linear models with weighted observations](http://bc.bojanorama.pl/2015/09/linear-models-with-weighted-observations/)
-
+- [Введение в множественную регрессию](http://baguzin.ru/wp/?p=6136)
+- [Using Linear Regression to Predict Energy Output of a Power Plant](http://datascienceplus.com/linear-regression-predict-energy-output-power-plant/)
 
 # Развлечения с кодом
 ## линейная регрессия
@@ -568,3 +595,15 @@ This problem is not usually addressed in time series analysis, because time seri
   - slope - (required) slope of the line (the "a" in "y=ax+b")
   - intercept - (required) intercept with the y axis of the line (the "b" in "y=ax+b").
 2. Использовать функцию [stat_function()](https://kohske.wordpress.com/2010/12/25/draw-function-without-data-in-ggplot2/)
+
+
+
+
+# Great Visualisation demo
+- [Mike Bostock](http://bost.ocks.org/mike/). CO-O-O-L Visualization
+	- [Visualizing Algorithms](http://bost.ocks.org/mike/algorithms/)
+- [Visualizing Sort Algorithms with ggplot](http://jkunst.com/r/visualizing-sort-algorithms-with-ggplot/)
+- [A Visual Introduction to Machine Learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
+- [MLDemos](http://mldemos.epfl.ch/) is an open-source visualization tool for machine learning algorithms created to help studying and understanding how several algorithms function and how their parameters affect and modify the results in problems of classification, regression, clustering, dimensionality reduction, dynamical systems and reward maximization.
+MLDemos is open-source and free for personal and academic use.
+- [Visualizing MBTA Data](http://mbtaviz.github.io/). An interactive exploration of Boston's subway system

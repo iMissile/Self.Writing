@@ -71,6 +71,8 @@ Sandboxing is required for all apps available on the Mac and iOS app store, in o
 - [Authorea](http://www.authorea.com/) is the _collaborative_ editor for research. Write and manage your documents in one place, for free.
 - [ShareLaTeX](http://www.sharelatex.com/). LaTeX, Evolved. The easy to use, online, collaborative LaTeX editor. [ShareLaTeX Documentation Home](http://www.sharelatex.com/learn/Main_Page). 
 ![Сравнение различных инструментов для совместной работы над научными документами](http://i.imgur.com/f7i2qn6.png)
+- [DataJoy](https://www.getdatajoy.com). Python & R, for scientists. Easy to use, online data processing with Python and R
+
 
 - [MindMeister](http://www.mindmeister.com/). Collaborativ mindmapping. Present your ideas. Wow your audience with a gorgeous new way of presenting.
 - [Droplr](http://droplr.com/). Sharing should be easy. Instantly swap screenshots and files with teammates and clients. Show work from the Adobe suite with a keystroke. Customize it all with your brand. Share smarter with Droplr.
@@ -160,6 +162,8 @@ Sandboxing is required for all apps available on the Mac and iOS app store, in o
 - [DevExtreme Web](http://js.devexpress.com/WebDevelopment/) Create highly responsive web apps for touch-enabled devices and traditional desktops.
 - [JUMLY](http://jumly.tmtk.net/) is a JavaScript library for UML diagram rendering engine
 
+- [Flot](http://www.flotcharts.org/). Attractive JavaScript plotting for jQuery. Flot is a pure JavaScript plotting library for jQuery, with a focus on simple usage, attractive looks and interactive features.
+- [NetworkX](https://networkx.github.io/#) is a Python language software package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
 - [Semantic UI](http://semantic-ui.com/) User Interface is the vocabulary of the web.
 - [uilang](http://uilang.com/) is a minimal, ui-focused programming language for web designers.
 - [TimelineJS](http://timeline.knightlab.com/). Beautifully crafted timelines that are easy and intuitive to use.
