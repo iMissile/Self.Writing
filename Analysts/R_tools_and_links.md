@@ -635,3 +635,5 @@ MLDemos is open-source and free for personal and academic use.
 
 # GIT
 - [Github Windows 'Failed to sync this branch'](http://stackoverflow.com/questions/15387640/github-windows-failed-to-sync-this-branch)
+- [Github failed to sync branch](http://stackoverflow.com/questions/15082809/github-failed-to-sync-branch). *** Couldn't reserve space for cygwin's heap, Win32 error 0
+- [Git Extensions: Win32 error 487: Couldn't reserve space for cygwin's heap, Win32 error 0](http://stackoverflow.com/questions/18502999/git-extensions-win32-error-487-couldnt-reserve-space-for-cygwins-heap-win32)
