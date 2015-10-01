@@ -82,7 +82,9 @@ Predictive applications automate decision-making based on current and historical
 	- [Introduction to dplyr for Faster Data Manipulation in R](https://rpubs.com/justmarkham/dplyr-tutorial)
 	- [How dplyr replaced my most common R idioms](http://www.onthelambda.com/2014/02/10/how-dplyr-replaced-my-most-common-r-idioms/)
 	- [do()](https://cran.r-project.org/web/packages/dplyr/README.html). As well as the specialised operations described above, dplyr also provides the generic do() function which applies any R function to each group of the data.
- - [Purrr](https://github.com/hadley/purrr). [Purrr 0.1.0 released](http://blog.rstudio.org/2015/09/29/purrr-0-1-0/). Purrr makes your pure functions purr by completing R's functional programming tools with important features from other languages, in the style of the JS packages underscore.js, lodash and lazy.js.
+- [PURRR]
+	- [Purrr](https://github.com/hadley/purrr). [Purrr 0.1.0 released](http://blog.rstudio.org/2015/09/29/purrr-0-1-0/). Purrr makes your pure functions purr by completing R's functional programming tools with important features from other languages, in the style of the JS packages underscore.js, lodash and lazy.js.
+	- [Rebuilding Map Example With Apply Functions](http://opiateforthemass.es/articles/rebuilding-map-example-with-apply-functions/)
 - Apply family:
 	- [Repeating things: looping and the apply family](http://nicercode.github.io/guides/repeating-things/)
 	- [Vectorization in R: Why?](http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html)
@@ -430,6 +432,9 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [Autocorrelation functions of materially different time series](http://ellisp.github.io/blog/2015/09/19/timeseries-same-acf/)
 
 ## StackoverFlow etc.
+- [Unicode]
+	- [RStudio Unicode support](https://support.rstudio.com/hc/en-us/articles/200532197-Character-Encoding)
+	- [RStudio not picking the encoding I'm telling it to use when reading a file](http://stackoverflow.com/questions/23324872/rstudio-not-picking-the-encoding-im-telling-it-to-use-when-reading-a-file)
 - [Creating a Data Frame based on day of week from a Data Frame containing several months of data](http://stackoverflow.com/questions/8992585/creating-a-data-frame-based-on-day-of-week-from-a-data-frame-containing-several)
 - [Forecasting time series data](http://stackoverflow.com/questions/10302261/forecasting-time-series-data)  (возврат к датам по оси X)
 - [Is there an easy way to revert a forecast back into a time series for plotting?](http://stackoverflow.com/questions/18137745/is-there-an-easy-way-to-revert-a-forecast-back-into-a-time-series-for-plotting) (возврат к датам по оси X)
@@ -456,8 +461,9 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - Groupping
 	- [Relative frequency with dplyr](http://stackoverflow.com/questions/24576515/relative-frequency-with-dplyr)
 	- [dplyr: finding percentage in a sub-group using group_by and summarise](http://stackoverflow.com/questions/29549731/dplyr-finding-percentage-in-a-sub-group-using-group-by-and-summarise)
-- [dplyr: How to apply do() on result of group_by?](http://stackoverflow.com/questions/22182442/dplyr-how-to-apply-do-on-result-of-group-by)
-- [Group by multiple columns in dplyr, using string vector input](http://stackoverflow.com/questions/21208801/group-by-multiple-columns-in-dplyr-using-string-vector-input)
+	- [dplyr: How to apply do() on result of group_by?](http://stackoverflow.com/questions/22182442/dplyr-how-to-apply-do-on-result-of-group-by)
+	- [Group by multiple columns in dplyr, using string vector input](http://stackoverflow.com/questions/21208801/group-by-multiple-columns-in-dplyr-using-string-vector-input)
+	- [dplyr: How to use group_by inside a function?](http://stackoverflow.com/questions/21815060/dplyr-how-to-use-group-by-inside-a-function)
 - [R - how to call apply-like function on each row of dataframe with multiple arguments from each row of the df](http://stackoverflow.com/questions/15059076/r-how-to-call-apply-like-function-on-each-row-of-dataframe-with-multiple-argum)
 - [Change value of variable with dplyr <duplicate>](http://stackoverflow.com/questions/28013850/change-value-of-variable-with-dplyr). I regularly need to change the values of a variable based on the values on a different variable, like this:
 
@@ -548,8 +554,20 @@ An Englishman in Copenhagen writing about digital, music and anything else. Pres
 - [Pineapple](http://nwhitehead.github.io/pineapple/). The next generation of scientific notebook. A standalone frontend to IPython for Mac.
 - [Python(x,y) - the scientific Python distribution](http://python-xy.github.io/)
 - [Bokeh](http://bokeh.pydata.org/en/latest/) is a Python interactive visualization library that targets modern web browsers for presentation. Its goal is to provide elegant, concise construction of novel graphics in the style of D3.js, but also deliver this capability with high-performance interactivity over very large or streaming datasets. Bokeh can help anyone who would like to quickly and easily create interactive plots, dashboards, and data applications.
+- [CORBA & Python]
+	- [omniORB is a robust high performance CORBA ORB for C++ and Python](http://omniorb.sourceforge.net/)
+	- [PyORBit](https://github.com/GNOME/pyorbit) или на [PyPI](https://pypi.python.org/pypi/PyORBit). This is a Python language binding for the ORBit2 CORBA implementation.
+- [The Blaze ecosystem](http://blaze.pydata.org/) is a set of libraries that help users store, describe, query and process data. It is composed of the following core projects:
+	- Blaze: An interface to query data on different storage systems
+	- Dask: Parallel computing through task scheduling and blocked algorithms
+	- Datashape: A data description language
+	- DyND: A C++ library for dynamic, multidimensional arrays
+	- Odo: Data migration between different storage systems
 
-
+# Julia
+- [Julia](http://julialang.org/) is a high-level, high-performance dynamic programming language for technical computing, with syntax that is familiar to users of other technical computing environments. It provides a sophisticated compiler, distributed parallel execution, numerical accuracy, and an extensive mathematical function library.
+- [JuliaBox beta](https://www.juliabox.org/). Run Julia from the Browser. No setup.
+- [Почему я делаю ставку на Julia](http://habrahabr.ru/post/210298/)
 # Cross-Correlation
 - [Cross-correlation](http://en.wikipedia.org/wiki/Cross-correlation). From Wikipedia, the free encyclopedia
 - [How to correlate two time series, with possible time differences](http://stats.stackexchange.com/questions/23993/how-to-correlate-two-time-series-with-possible-time-differences)
@@ -572,7 +590,8 @@ This problem is not usually addressed in time series analysis, because time seri
 - [Introducing practical and robust anomaly detection in a time series](https://blog.twitter.com/2015/introducing-practical-and-robust-anomaly-detection-in-a-time-series). Twitter open-source R package [AnomalyDetection](https://github.com/twitter/AnomalyDetection).
 - [Anomaly Detection – Using Machine Learning to Detect Abnormalities in Time Series Data](http://blogs.technet.com/b/machinelearning/archive/2014/11/05/anomaly-detection-using-machine-learning-to-detect-abnormalities-in-time-series-data.aspx). Microsoft Machine Learning Blog
 
-# Linear Regression
+# Regression
+## Linear
 - [The Analysis Factor](http://www.theanalysisfactor.com/r/). В частности, рассмотрение линейной регрессии ["R Is Not So Hard! A Tutorial, Part 4: Fitting a Quadratic Model"](http://www.theanalysisfactor.com/r-tutorial-4/)
 - [R Tutorial Series](http://rtutorialseries.blogspot.ru/) by John M Quick. The R Tutorial Series provides a collection of user-friendly tutorials to people who want to learn how to use R for statistical analysis. Use the links along the side of the page to explore the tutorial topics.
 - [Least squares and linear regression](https://rpubs.com/davoodastaraky/LSLR) by Davood Astaraky.
@@ -585,6 +604,8 @@ This problem is not usually addressed in time series analysis, because time seri
 - [Linear models with weighted observations](http://bc.bojanorama.pl/2015/09/linear-models-with-weighted-observations/)
 - [Введение в множественную регрессию](http://baguzin.ru/wp/?p=6136)
 - [Using Linear Regression to Predict Energy Output of a Power Plant](http://datascienceplus.com/linear-regression-predict-energy-output-power-plant/)
+## Non-linear
+- [Multivariate multiple nonlinear regression in R](http://stats.stackexchange.com/questions/142317/multivariate-multiple-nonlinear-regression-in-r). I want to do *multivariate* (with more than 1 response variables) *multiple* (with more than 1 predictor variables) *nonlinear regression* in *R*.
 
 # Развлечения с кодом
 ## линейная регрессия
