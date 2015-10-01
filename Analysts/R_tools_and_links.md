@@ -604,6 +604,9 @@ This problem is not usually addressed in time series analysis, because time seri
 - [Linear models with weighted observations](http://bc.bojanorama.pl/2015/09/linear-models-with-weighted-observations/)
 - [Введение в множественную регрессию](http://baguzin.ru/wp/?p=6136)
 - [Using Linear Regression to Predict Energy Output of a Power Plant](http://datascienceplus.com/linear-regression-predict-energy-output-power-plant/)
+- [Multivariate linear regression in R](http://stats.stackexchange.com/questions/44384/multivariate-linear-regression-in-r)
+- [Multivariate multiple regression in R](http://stats.stackexchange.com/questions/11127/multivariate-multiple-regression-in-r/11132#11132)
+
 ## Non-linear
 - [Multivariate multiple nonlinear regression in R](http://stats.stackexchange.com/questions/142317/multivariate-multiple-nonlinear-regression-in-r). I want to do *multivariate* (with more than 1 response variables) *multiple* (with more than 1 predictor variables) *nonlinear regression* in *R*.
 
