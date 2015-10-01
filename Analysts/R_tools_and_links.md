@@ -171,11 +171,6 @@ that combine statistics and maps to inform better decision-making.
 
 
 ## Shiny etc.
-- [Different Shinyapps demo]
- 	- [Shiny User Showcase](https://www.rstudio.com/products/shiny/shiny-user-showcase/). Shiny is designed for fully interactive visualization, using JavaScript libraries like d3, Leaflet, and Google Charts. Our users create fantastic examples, and some have shared them with the community. Here are some examples that we particularly like.
- 	- [GA Dashboard Demo](https://mark.shinyapps.io/GA-dashboard-demo)
-	- [Shiny CRUD App](http://ipub.com/shiny-crud-app/)
-	- [Shiny-based Online Tool for X-13 Seasonal Adjustment](https://usefulr.wordpress.com/2015/09/29/shiny-based-online-tool-for-x-13-seasonal-adjustment-new-features/)
 - [Shiny articles](http://shiny.rstudio.com/articles/)
 - [Bootstrap](http://getbootstrap.com/) is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
   - [Free themes for Bootstrap](http://bootswatch.com/)
@@ -200,7 +195,12 @@ that combine statistics and maps to inform better decision-making.
 - [Using Action Buttons](http://shiny.rstudio.com/articles/action-buttons.html)
 - [Persistent data storage in Shiny apps](http://deanattali.com/blog/shiny-persistent-data-storage/)
 
-### Demo
+### Shiny Demo
+- [Different Shinyapps demo]
+ 	- [Shiny User Showcase](https://www.rstudio.com/products/shiny/shiny-user-showcase/). Shiny is designed for fully interactive visualization, using JavaScript libraries like d3, Leaflet, and Google Charts. Our users create fantastic examples, and some have shared them with the community. Here are some examples that we particularly like.
+ 	- [GA Dashboard Demo](https://mark.shinyapps.io/GA-dashboard-demo)
+	- [Shiny CRUD App](http://ipub.com/shiny-crud-app/)
+	- [Shiny-based Online Tool for X-13 Seasonal Adjustment](https://usefulr.wordpress.com/2015/09/29/shiny-based-online-tool-for-x-13-seasonal-adjustment-new-features/)
 - [Building an Instructional Simulation App in Shiny](https://homer.shinyapps.io/sim_tutorial_Rmd)
 - [Show me Shiny](http://www.showmeshiny.com/) Gallery Of R Web Apps
 - [Просмотр конфигурации массивов Storwize с R – Shiny Dashboard](http://habrahabr.ru/post/256689/)
@@ -631,3 +631,7 @@ This problem is not usually addressed in time series analysis, because time seri
 - [MLDemos](http://mldemos.epfl.ch/) is an open-source visualization tool for machine learning algorithms created to help studying and understanding how several algorithms function and how their parameters affect and modify the results in problems of classification, regression, clustering, dimensionality reduction, dynamical systems and reward maximization.
 MLDemos is open-source and free for personal and academic use.
 - [Visualizing MBTA Data](http://mbtaviz.github.io/). An interactive exploration of Boston's subway system
+
+
+# GIT
+- [Github Windows 'Failed to sync this branch'](http://stackoverflow.com/questions/15387640/github-windows-failed-to-sync-this-branch)
