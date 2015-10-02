@@ -24,6 +24,7 @@
 
 ## Концептуальные материалы
 - [What is R?](http://www.inside-r.org/what-is-r)
+- [Why use R?](http://www.inside-r.org/why-use-r)
 - [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
 - [Simpler R coding with pipes > the present and future of the magrittr package](http://www.r-statistics.com/2014/08/simpler-r-coding-with-pipes-the-present-and-future-of-the-magrittr-package/)
 - [dplyr and pipes: the basics](http://seananderson.ca/2014/09/13/dplyr-intro.html). [NOTE](http://rpackages.ianhowson.com/cran/dplyr/man/select.html): one_of("x", "y", "z"): selects variables provided in a character vector.
@@ -32,7 +33,10 @@
 - [An Introduction to reshape2](http://seananderson.ca/2013/10/19/reshape.html)
 - [Reshape and aggregate data with the R package reshape2](https://tgmstat.wordpress.com/2013/10/31/reshape-and-aggregate-data-with-the-r-package-reshape2/)
 - [A non-comprehensive list of awesome things other people did in 2014](http://simplystatistics.org/2014/12/17/a-non-comprehensive-list-of-awesome-things-other-people-did-in-2014/)
-- [Hadley Wickham "Tidy Data"](http://www.jstatsoft.org/v59/i10/) или [здесь](http://vita.had.co.nz/papers/tidy-data.pdf)
+- [Tidy Data]
+	- [Hadley Wickham "Tidy Data"](http://www.jstatsoft.org/v59/i10/) или [здесь](http://vita.had.co.nz/papers/tidy-data.pdf)
+	- [broom: a package for tidying statistical models into data frames](http://varianceexplained.org/r/broom-intro/)
+
 - [10 R packages I wish I knew about earlier](http://blog.yhathq.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html)
 - [Top 10 R Packages to be a Kaggle Champion](http://www.kdnuggets.com/2015/04/top-10-r-packages-kaggle.html)
 - [Now's a great time to learn R. Here's how](http://blog.revolutionanalytics.com/2015/01/nows-a-great-time-to-learn-r-heres-how.html).
@@ -79,9 +83,11 @@ Predictive applications automate decision-making based on current and historical
 	- [The complete catalog of argument variations of select() in dplyr](http://mockquant.blogspot.ru/2015/07/the-complete-catalog-of-argument.html)
 	- [A new data processing workflow for R: dplyr, magrittr, tidyr, ggplot2](http://zevross.com/blog/2015/01/13/a-new-data-processing-workflow-for-r-dplyr-magrittr-tidyr-ggplot2/)
 	- [Four reasons why you should check out the R package dplyr](http://zevross.com/blog/2014/03/26/four-reasons-why-you-should-check-out-the-r-package-dplyr-3/)
+	- [Welcome to dplyr (presentation)](http://rpubs.com/datalove/WARG2015). Tommy M O'Dell (tommy.odell@gmail.com). September 10th, 2015
 	- [Introduction to dplyr for Faster Data Manipulation in R](https://rpubs.com/justmarkham/dplyr-tutorial)
 	- [How dplyr replaced my most common R idioms](http://www.onthelambda.com/2014/02/10/how-dplyr-replaced-my-most-common-r-idioms/)
 	- [do()](https://cran.r-project.org/web/packages/dplyr/README.html). As well as the specialised operations described above, dplyr also provides the generic do() function which applies any R function to each group of the data.
+	- dplyr in 100 lines [Pt1 intro](http://datalove.org/r/dplyr/2015/01/25/dplyr-100-lines-01-intro/), [Pt2 filter](http://datalove.org/r/dplyr/2015/01/26/dplyr-100-lines-02-filter/), [Pt3 mutate](http://datalove.org/r/dplyr/2015/01/27/dplyr-100-lines-03-mutate/).
 - [PURRR]
 	- [Purrr](https://github.com/hadley/purrr). [Purrr 0.1.0 released](http://blog.rstudio.org/2015/09/29/purrr-0-1-0/). Purrr makes your pure functions purr by completing R's functional programming tools with important features from other languages, in the style of the JS packages underscore.js, lodash and lazy.js.
 	- [Rebuilding Map Example With Apply Functions](http://opiateforthemass.es/articles/rebuilding-map-example-with-apply-functions/)
@@ -112,10 +118,6 @@ Predictive applications automate decision-making based on current and historical
 Clean a dataset with single column containing multiple variables as delimited key-value pairs.
 Solution: This can be done using tidyr functions spread, gather, separate, etc.
 - [Cheat Sheet – 10 Machine Learning Algorithms & R Commands](http://vitalflux.com/cheat-sheet-10-machine-learning-algorithms-r-commands/)
-- [A Visual Introduction to Machine Learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
-- [Machine Learning Done Wrong](http://ml.posthaven.com/machine-learning-done-wrong)
-- [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
-- [Sorting Algorithm Animations](http://www.sorting-algorithms.com/)
 - [Graphical Data Analysis with R](http://www.gradaanwr.net/) by Antony Unwin
 - [Using with( ) and by( )](http://www.statmethods.net/stats/withby.html)
 - [Vectorization in R: Why?](http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html) by Noam Ross, 16 April 2014
@@ -371,6 +373,7 @@ Intuitics increases the speed with which data insights reach decision makers. In
 
 ## Blogs
 - [FlowingData](http://flowingdata.com/)
+- [Blog of David Robinson, a Data Scientist at Stack Overflow](http://varianceexplained.org/)
 - [is.R()](http://is-r.tumblr.com/)
 - [PirateGrunt - 24 Days of R](http://pirategrunt.com/2013/12/01/24-days-of-r-day-1-5/)
 - [Forecasting: principles and practice](https://www.otexts.org/book/fpp) - free, open and online textbooks
@@ -525,12 +528,20 @@ How can I time my code?](http://www.ats.ucla.edu/stat/r/faq/timing_code.htm)
 - [Vega](http://trifacta.github.io/vega/) is a visualization grammar, a declarative format for creating, saving and sharing visualization designs.
 - [Because it's Friday: Visualizing the Discrete Fourier Transform](http://blog.revolutionanalytics.com/2015/09/because-its-friday-visualizing-ffts.html)
 
-# Machine Learning materials
+# Machine Learning \ Neural Networks materials
+- [The fourth generation of machine learning: Adaptive learning](http://idibon.com/the-fourth-generation-of-machine-learning-adaptive-learning/)
+- [A Visual Introduction to Machine Learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
+- [Machine Learning Done Wrong](http://ml.posthaven.com/machine-learning-done-wrong)
+- [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
 - [A Neural Network in 11 lines of Python (Part 1)](http://iamtrask.github.io/2015/07/12/basic-python-network/). A bare bones neural network implementation to describe the inner workings of backpropagation.
 - [A Neural Network in 13 lines of Python (Part 2 - Gradient Descent)](http://iamtrask.github.io/2015/07/27/python-network-part2/). Improving our neural network by optimizing Gradient Descent
-- WildML. [Implementing a Neural Network from Scratch – An Introduction](http://www.wildml.com/2015/09/implementing-a-neural-network-from-scratch/)
+- [WildML](http://www.wildml.com/)
+	- [Implementing a Neural Network from Scratch – An Introduction](http://www.wildml.com/2015/09/implementing-a-neural-network-from-scratch/)
+	- [Recurrent Neural Networks Tutorial, Part 1 – Introduction to RNN](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/)
+	- [Recurrent Neural Networks Tutorial, Part 2 – Implementing a RNN with Python, Numpy and Theano](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-2-implementing-a-language-model-rnn-with-python-numpy-and-theano/)
 - [Introduction to Machine Learning with Web Analytics: Random Forests and K-Means](http://markedmondson.me/intro-to-machine-learning-with-web-analytics-random-forests-and-k-means). Mark Edmondson
-An Englishman in Copenhagen writing about digital, music and anything else. Presentation [here](http://rpubs.com/MarkeD/machine-learning-measurecamp-2015)	
+An Englishman in Copenhagen writing about digital, music and anything else. Presentation [here](http://rpubs.com/MarkeD/machine-learning-measurecamp-2015)
+- [How do neural networks learn?](http://blog.fastforwardlabs.com/post/129793362663/how-do-neural-networks-learn)
 - [How do you know if your model is going to work?](http://www.win-vector.com/blog/2015/09/isyourmodelgoingtowork/)
 - [Fitting a neural network in R; neuralnet package](http://datascienceplus.com/fitting-neural-network-in-r/)
 - [Essentials of Machine Learning Algorithms (with Python and R Codes)](http://www.analyticsvidhya.com/blog/2015/08/common-machine-learning-algorithms/)
@@ -627,6 +638,7 @@ This problem is not usually addressed in time series analysis, because time seri
 - [Mike Bostock](http://bost.ocks.org/mike/). CO-O-O-L Visualization
 	- [Visualizing Algorithms](http://bost.ocks.org/mike/algorithms/)
 - [Visualizing Sort Algorithms with ggplot](http://jkunst.com/r/visualizing-sort-algorithms-with-ggplot/)
+- [Sorting Algorithm Animations](http://www.sorting-algorithms.com/)
 - [A Visual Introduction to Machine Learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
 - [MLDemos](http://mldemos.epfl.ch/) is an open-source visualization tool for machine learning algorithms created to help studying and understanding how several algorithms function and how their parameters affect and modify the results in problems of classification, regression, clustering, dimensionality reduction, dynamical systems and reward maximization.
 MLDemos is open-source and free for personal and academic use.
@@ -636,4 +648,4 @@ MLDemos is open-source and free for personal and academic use.
 # GIT
 - [Github Windows 'Failed to sync this branch'](http://stackoverflow.com/questions/15387640/github-windows-failed-to-sync-this-branch)
 - [Github failed to sync branch](http://stackoverflow.com/questions/15082809/github-failed-to-sync-branch). *** Couldn't reserve space for cygwin's heap, Win32 error 0
-- [Git Extensions: Win32 error 487: Couldn't reserve space for cygwin's heap, Win32 error 0](http://stackoverflow.com/questions/18502999/git-extensions-win32-error-487-couldnt-reserve-space-for-cygwins-heap-win32)
+- [Git Extensions: Win32 error 487: Couldn't reserve space for cygwin's heap, Win32 error 0](http://stackoverflow.com/questions/18502999/git-extensions-win32-error-487-couldnt-reserve-space-for-cygwins-heap-win32). tasklist /m msys-1.0.dll
