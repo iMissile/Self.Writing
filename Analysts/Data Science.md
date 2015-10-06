@@ -1,5 +1,7 @@
 # DataScience
 
+## [Как устроен рынок big data в России](http://rusbase.com/howto/big-data-in-russia/)
+
 ## Myths about Statistics & Big Data
 ### [Seven Myths About Big Data](https://datafloq.com/read/seven-myths-about-big-data/155)
 It may be clear that there is enough information to be found on the web regarding big data. Everyone has a different explanation of big data and what it can mean for organisations. With so much information around big data to be found, it is easy to become confused and to read the wrong information. So let’s dispel some of the most common big data myths and big data strategies.

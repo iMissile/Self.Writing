@@ -54,10 +54,14 @@
 - [Interactive visualizations with R](http://ouzor.github.io/blog/2014/11/21/interactive-visualizations.html) - a minireview
 - [How to make a great R reproducible example?](http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example)
 - [Nice R Code](http://nicercode.github.io/). Punning code better since 2013
+- [MapReduce\Hadoop\SparkR etc...]
+	- [SparkRext - SparkR extension for closer to dplyr](http://mockquant.blogspot.jp/2015/07/sparkrext-sparkr-extension-for-closer.html)
+	- [SparkR quick start that works](http://cartesianfaith.com/2015/10/04/sparkr-quick-start-that-works/)
+	- [SparkR Quick Start](https://github.com/amplab-extras/SparkR-pkg/wiki/SparkR-Quick-Start)
+
 - [The R Consortium, Inc.](https://www.r-consortium.org/) is a group of businesses organized under an open source governance and foundation model to provide support to the R community, the R Foundation and groups and individuals, using, maintaining and distributing R software.
 - [DATA.TABLE VS. DPLYR IN SPLIT APPLY COMBINE STYLE ANALYSIS](http://www.brodieg.com/?p=7)
-- [LaTeX2exp](http://cran.r-project.org/web/packages/latex2exp/vignettes/latex2exp.html) is an R package that parses and converts LaTeX math formulas to R’s plotmath expressions. 
-- [SparkRext - SparkR extension for closer to dplyr](http://mockquant.blogspot.jp/2015/07/sparkrext-sparkr-extension-for-closer.html)
+- [LaTeX2exp](http://cran.r-project.org/web/packages/latex2exp/vignettes/latex2exp.html) is an R package that parses and converts LaTeX math formulas to R’s plotmath expressions.
 - [Easy Bayesian Bootstrap in R](http://www.sumsar.net/blog/2015/07/easy-bayesian-bootstrap-in-r/)
 - [Global and local variables in R](http://stackoverflow.com/questions/10904124/global-and-local-variables-in-r)
 - [Streaming Data IO in R]]https://jeroenooms.github.io/mongo-slides/#1) curl, jsonlite, mongolite
@@ -125,6 +129,7 @@ Solution: This can be done using tidyr functions spread, gather, separate, etc.
 - Web scrapping
 	- [SelectorGadget](http://selectorgadget.com/): point and click CSS selectors
 	- [rvest: easy web scraping with R](http://blog.rstudio.org/2014/11/24/rvest-easy-web-scraping-with-r/)
+- [Using differential privacy to reuse training data](http://www.win-vector.com/blog/2015/10/using-differential-privacy-to-reuse-training-data/)
 - [From good to bad and back: Convert data.tree to and from list, json, networkD3, and more](http://ipub.com/data-tree-to-networkd3/)
 - [A Few Days of Python: Using R in Python](http://mathewanalytics.com/2015/09/29/a-few-days-of-python-using-r-in-python/)
 - [A Few Days of Python: Automating Tasks Involving Excel Files](http://mathewanalytics.com/2015/09/30/a-few-days-of-python-automating-tasks-involving-excel-files/)
@@ -405,7 +410,9 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [Memory treaks](http://adv-r.had.co.nz/memory.html#modification) @ Advanced R by Hadley Wickham
 
 
-## Packets & ideas
+## Packets, Packages & ideas
+- [wakefield](https://github.com/trinker/wakefield) is designed to quickly generate random data sets. [The user passes n (number of rows) and predefined vectors to the r_data_frame function to produce a dplyr::tbl_df object.](https://trinkerrstuff.wordpress.com/2015/04/30/wakefield-random-data-set-part-ii/)
+- The [pacman package](https://cran.r-project.org/web/packages/pacman/vignettes/Introduction_to_pacman.html) is an R package management tool that combines the functionality of base library related functions into intuitively named functions.
 - [The fanplot package for R](http://gjabel.wordpress.com/2012/08/13/the-fanplot-package-for-r/)
 - [Yet Another Forecast Dashboard](http://systematicinvestor.wordpress.com/2012/07/31/yet-another-forecast-dashboard/)
 - [Autoplot: Graphical Methods with ggplot2](http://librestats.com/2012/06/11/autoplot-graphical-methods-with-ggplot2/)

@@ -1,0 +1,3 @@
+- [Response Times: The 3 Important Limits](http://www.nngroup.com/articles/response-times-3-important-limits/) by JAKOB NIELSEN on January 1, 1993
+- [Introducing RAIL: A User-Centric Model For Performance](http://www.smashingmagazine.com/2015/10/rail-user-centric-model-performance/)
+- [The RAIL Performance Model](https://developers.google.com/web/tools/profile-performance/evaluate-performance/rail?hl=en)
