@@ -60,7 +60,6 @@
 	- [SparkR Quick Start](https://github.com/amplab-extras/SparkR-pkg/wiki/SparkR-Quick-Start)
 
 - [The R Consortium, Inc.](https://www.r-consortium.org/) is a group of businesses organized under an open source governance and foundation model to provide support to the R community, the R Foundation and groups and individuals, using, maintaining and distributing R software.
-- [DATA.TABLE VS. DPLYR IN SPLIT APPLY COMBINE STYLE ANALYSIS](http://www.brodieg.com/?p=7)
 - [LaTeX2exp](http://cran.r-project.org/web/packages/latex2exp/vignettes/latex2exp.html) is an R package that parses and converts LaTeX math formulas to R’s plotmath expressions.
 - [Easy Bayesian Bootstrap in R](http://www.sumsar.net/blog/2015/07/easy-bayesian-bootstrap-in-r/)
 - [Global and local variables in R](http://stackoverflow.com/questions/10904124/global-and-local-variables-in-r)
@@ -78,6 +77,7 @@ Predictive applications automate decision-making based on current and historical
 
 
 ## Data Processing articles (COOL)
+- [DATA.TABLE VS. DPLYR IN SPLIT APPLY COMBINE STYLE ANALYSIS](http://www.brodieg.com/?p=7)
 - dplyr:
 	- [Window functions and grouped mutate/filter](http://cran.r-project.org/web/packages/dplyr/vignettes/window-functions.html). ! Offsets lead() and lag() allow you to access the previous and next values in a vector, making it easy to compute differences and trends.
 	- [Non-standard evaluation](https://cran.r-project.org/web/packages/dplyr/vignettes/nse.html). Здесь можно почитать про конструкцию '.dot' (п. Setting variable names)
@@ -92,7 +92,7 @@ Predictive applications automate decision-making based on current and historical
 	- [How dplyr replaced my most common R idioms](http://www.onthelambda.com/2014/02/10/how-dplyr-replaced-my-most-common-r-idioms/)
 	- [do()](https://cran.r-project.org/web/packages/dplyr/README.html). As well as the specialised operations described above, dplyr also provides the generic do() function which applies any R function to each group of the data.
 	- dplyr in 100 lines [Pt1 intro](http://datalove.org/r/dplyr/2015/01/25/dplyr-100-lines-01-intro/), [Pt2 filter](http://datalove.org/r/dplyr/2015/01/26/dplyr-100-lines-02-filter/), [Pt3 mutate](http://datalove.org/r/dplyr/2015/01/27/dplyr-100-lines-03-mutate/).
-- [PURRR]
+- PURRR
 	- [Purrr](https://github.com/hadley/purrr). [Purrr 0.1.0 released](http://blog.rstudio.org/2015/09/29/purrr-0-1-0/). Purrr makes your pure functions purr by completing R's functional programming tools with important features from other languages, in the style of the JS packages underscore.js, lodash and lazy.js.
 	- [Rebuilding Map Example With Apply Functions](http://opiateforthemass.es/articles/rebuilding-map-example-with-apply-functions/)
 - Apply family:
@@ -108,11 +108,21 @@ Predictive applications automate decision-making based on current and historical
 	- [Using the apply family of functions in R](http://datascienceplus.com/using-the-apply-family-of-functions-in-r/)
 	- [A Tutorial on Loops in R – Usage and Alternatives](http://blog.datacamp.com/tutorial-on-loops-in-r/)
 	- [R Tutorial: Intro to Loops (While, For, Repeat, Apply, etc!)](https://blog.udemy.com/r-tutorial/)
-- [Introduction to data.tree](http://cran.r-project.org/web/packages/data.tree/vignettes/data.tree.html)
-- [Debugging Tools in R with Michael Hannon](http://www.noamross.net/blog/2013/4/18/r-debug-tools.html)
+- Exception handling & Debugging
+	- [Debugging Tools in R with Michael Hannon](http://www.noamross.net/blog/2013/4/18/r-debug-tools.html)
+	- [Using R — Basic error Handing with tryCatch()](http://mazamascience.com/WorkingWithData/?p=912)
+	- [Exception handling](https://cran.r-project.org/doc/manuals/R-lang.html#Exception-handling)
+	- [Debugging, condition handling, and defensive programming](http://adv-r.had.co.nz/Exceptions-Debugging.html)
+- Data Frames & Data Tables
+	- [Data frames](https://cran.r-project.org/web/packages/dplyr/vignettes/data_frames.html). Best Practice. data_frame() is a nice way to create data frames. It encapsulates best practices for data frames.
+	- [Concatenating a list of data frames](http://www.exegetic.biz/blog/2014/06/concatenating-a-list-of-data-frames/)
+	- [expand.grid()](http://www.endmemo.com/program/R/expand_grid.php) function creates a data frame from all combinations of the supplied vectors or factors.
+	- [The R data.table package provides an enhanced version of data.frame](https://github.com/Rdatatable/data.table/wiki)
+	- [data.table vs dplyr: can one do something well the other can't or does poorly?](http://stackoverflow.com/questions/21435339/data-table-vs-dplyr-can-one-do-something-well-the-other-cant-or-does-poorly)
+	- [automatic indexing vs between() on integer ranges](https://gist.github.com/arunsrinivasan/dacb9d1cac301de8d9ff)
+
 - [readr 0.1.0](http://blog.rstudio.org/2015/04/09/readr-0-1-0/)
-- [Concatenating a list of data frames](http://www.exegetic.biz/blog/2014/06/concatenating-a-list-of-data-frames/)
-- [expand.grid()](http://www.endmemo.com/program/R/expand_grid.php) function creates a data frame from all combinations of the supplied vectors or factors.
+- [Introduction to data.tree](http://cran.r-project.org/web/packages/data.tree/vignettes/data.tree.html)
 - [A better way of saving and loading objects in R](http://www.fromthebottomoftheheap.net/2012/04/01/saving-and-loading-r-objects/). Вышел по ссылке [отсюда](http://stackoverflow.com/questions/13206876/saving-and-loading-data-frames)
 - [Say it in R with "by", "apply" and friends](http://www.magesblog.com/2012/01/say-it-in-r-with-by-apply-and-friends.html)
 - [NOTE](http://rpackages.ianhowson.com/cran/dplyr/man/select.html): one_of("x", "y", "z"): selects variables provided in a character vector.
@@ -133,6 +143,9 @@ Solution: This can be done using tidyr functions spread, gather, separate, etc.
 - [From good to bad and back: Convert data.tree to and from list, json, networkD3, and more](http://ipub.com/data-tree-to-networkd3/)
 - [A Few Days of Python: Using R in Python](http://mathewanalytics.com/2015/09/29/a-few-days-of-python-using-r-in-python/)
 - [A Few Days of Python: Automating Tasks Involving Excel Files](http://mathewanalytics.com/2015/09/30/a-few-days-of-python-automating-tasks-involving-excel-files/)
+- [paste, paste0, and sprintf](https://trinkerrstuff.wordpress.com/2013/09/15/paste-paste0-and-sprintf-2/)
+- [Introducing the rlogging package for simple logging in R](http://www.maartenjan.org/artikelen/2013-09-20-introducing-the-rlogging-package-for-simple-logging-in-r.html)
+
 
 ## подвал
 	Solution: the pipe operator from magrittr
@@ -445,6 +458,11 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [Unicode]
 	- [RStudio Unicode support](https://support.rstudio.com/hc/en-us/articles/200532197-Character-Encoding)
 	- [RStudio not picking the encoding I'm telling it to use when reading a file](http://stackoverflow.com/questions/23324872/rstudio-not-picking-the-encoding-im-telling-it-to-use-when-reading-a-file)
+- [Warning Message Line Number R](http://stackoverflow.com/questions/15190022/warning-message-line-number-r)
+	You could try setting:
+	> options(warn=2)
+	and then, when your code stops at the first warning, using traceback() to see the stack trace.
+	This will only help you with the first warning though.
 - [Creating a Data Frame based on day of week from a Data Frame containing several months of data](http://stackoverflow.com/questions/8992585/creating-a-data-frame-based-on-day-of-week-from-a-data-frame-containing-several)
 - [Forecasting time series data](http://stackoverflow.com/questions/10302261/forecasting-time-series-data)  (возврат к датам по оси X)
 - [Is there an easy way to revert a forecast back into a time series for plotting?](http://stackoverflow.com/questions/18137745/is-there-an-easy-way-to-revert-a-forecast-back-into-a-time-series-for-plotting) (возврат к датам по оси X)

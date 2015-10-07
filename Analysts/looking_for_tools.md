@@ -27,6 +27,17 @@ http://www.worldtimebuddy.com/
   1. [Using R in Sublime Text 3](http://www.kevjohnson.org/using-r-in-sublime-text-3/). This post will get you up and running using R in Sublime Text 3. If you’re not familiar with Sublime Text I recommend watching these videos. It focuses on Macs and it’s a bit outdated, but it’s a really good introduction to what you can do with Sublime Text.
   1. [Package Control](https://packagecontrol.io/installation)
 
+# JSON\XML
+- [JSON Editor Online](http://www.jsoneditoronline.org/)
+- [JSONmate](http://jsonmate.com/)
+- The [JSON Formatter](https://jsonformatter.curiousconcept.com/) was created to help with debugging. As JSON data is often output without line breaks to save space, it is extremely difficult to actually read and make sense of it. This little tool hoped to solve the problem by formatting the JSON data so that it is easy to read and debug by human beings.
+- [Code Beautify. JSON Viewer](http://codebeautify.org/jsonviewer)
+- [Cocoa JSON Editor](http://www.cocoajsoneditor.com/). Providing the most advanced features for iOS / OSX application developers. Whenever you need to connect to API, edit JSON String or test offline responses, Cocoa JSON Editor is the tool that will speed up your work.
+- [JSON Viewer](http://jsonviewer.stack.hu/)
+- [XMLpad](http://wmhelp.com/) is a professional editor for XML docs processing which allows presenting the data in tabular style.
+
+
+
 ## Blogging Platforms
 - [16 Blogging Platforms That Won't Distract From Your Writing](http://mashable.com/2014/05/09/16-minimalist-blogging-platforms/)
 - [Best Blogging Platforms of 2014.](https://medium.com/@rendr/best-blogging-platforms-of-2014-d62682d9b0aa) Finding the perfect home for your blog isn’t as easy as it seems. But, don’t worry. I’m here to help.
