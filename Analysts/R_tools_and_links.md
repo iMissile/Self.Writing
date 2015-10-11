@@ -33,6 +33,7 @@
 - [An Introduction to reshape2](http://seananderson.ca/2013/10/19/reshape.html)
 - [Reshape and aggregate data with the R package reshape2](https://tgmstat.wordpress.com/2013/10/31/reshape-and-aggregate-data-with-the-r-package-reshape2/)
 - [A non-comprehensive list of awesome things other people did in 2014](http://simplystatistics.org/2014/12/17/a-non-comprehensive-list-of-awesome-things-other-people-did-in-2014/)
+- [Some key Win-Vector serial data science articles](http://www.win-vector.com/blog/2015/10/some-key-win-vector-serial-data-science-articles/)
 - [Tidy Data]
 	- [Hadley Wickham "Tidy Data"](http://www.jstatsoft.org/v59/i10/) или [здесь](http://vita.had.co.nz/papers/tidy-data.pdf)
 	- [broom: a package for tidying statistical models into data frames](http://varianceexplained.org/r/broom-intro/)
@@ -145,7 +146,7 @@ Solution: This can be done using tidyr functions spread, gather, separate, etc.
 - [A Few Days of Python: Automating Tasks Involving Excel Files](http://mathewanalytics.com/2015/09/30/a-few-days-of-python-automating-tasks-involving-excel-files/)
 - [paste, paste0, and sprintf](https://trinkerrstuff.wordpress.com/2013/09/15/paste-paste0-and-sprintf-2/)
 - [Introducing the rlogging package for simple logging in R](http://www.maartenjan.org/artikelen/2013-09-20-introducing-the-rlogging-package-for-simple-logging-in-r.html)
-
+- [Integrating Python and R into a Data Analysis Pipeline – Part 1](http://www.mango-solutions.com/wp/2015/10/integrating-python-and-r-into-a-data-analysis-pipeline-part-1/)
 
 ## подвал
 	Solution: the pipe operator from magrittr
@@ -155,6 +156,17 @@ Solution: This can be done using tidyr functions spread, gather, separate, etc.
 	Purrr: Anonymous functions are verbose in R, so we provide two convenient shorthands. 
 	For predicate functions, ~ .x + 1 is equivalent to function(.x) .x + 1. 
 	For chains of transformations functions, . %>% f() %>% g() is equivalent to function(.) . %>% f() %>% g().
+
+- [Treasure Trove of R Scripts for Auto Classification, Chart Generation, Solr, Mongo, MySQL and Ton More](https://github.com/datadolphyn/R)
+In this repository hosted at github, the datadolph.in team is sharing all of the R codebase that it developed to analyze large quantities of data.
+datadolph.in team has benefited tremendously from fellow R bloggers and other open source communities and is proud to contribute all of its codebase into the community.
+The codebase includes ETL and integration scripts on -
+ - R-Solr Integration
+ - R-Mongo Interaction
+ - R-MySQL Interaction
+ - Fetching, cleansing and transforming data
+ - Classification (identify column types)
+ - Default chart generation (based on simple heuristics and matching a dimension with a measure)
 
 ## Tools
 - [R](http://www.revolutionanalytics.com/) is the world’s most powerful programming language for statistical computing, machine learning and graphics as well as a thriving global community of users, developers and contributors.
@@ -367,6 +379,7 @@ Intuitics increases the speed with which data insights reach decision makers. In
 
 ### Визуализация
 - [Plotly](https://plot.ly/). Collaborative data science. Plotly is the easiest way to graph and share your data.
+- [Talent Lab](http://talent-lab.com/) is an interactive business intelligence platform that helps you discover and share the stories behind your human capital data.
 - [Silk](https://www.silk.co/product) is a place to publish your data. Each Silk contains data on a specific topic. Anyone can explore a Silk and create interactive visualizations.
 - [CHARTED](http://www.charted.co/). Beautiful, automatic charts.
 - [VARIANCE](https://variancecharts.com/) Build powerful data visualizations for the web. Without writing JavaScript. Variance empowers engineers, designers, journalists, scientists, and analysts to build elegant bespoke data graphics for the web, using only HTML & CSS. Our intuitive, markup-based grammar emphasizes clear, practical graphics and serves as the foundation for a wide range of visualizations.
@@ -463,6 +476,7 @@ Intuitics increases the speed with which data insights reach decision makers. In
 	> options(warn=2)
 	and then, when your code stops at the first warning, using traceback() to see the stack trace.
 	This will only help you with the first warning though.
+- [Find duplicated elements with dplyr](http://stackoverflow.com/questions/28244123/find-duplicated-elements-with-dplyr)
 - [Creating a Data Frame based on day of week from a Data Frame containing several months of data](http://stackoverflow.com/questions/8992585/creating-a-data-frame-based-on-day-of-week-from-a-data-frame-containing-several)
 - [Forecasting time series data](http://stackoverflow.com/questions/10302261/forecasting-time-series-data)  (возврат к датам по оси X)
 - [Is there an easy way to revert a forecast back into a time series for plotting?](http://stackoverflow.com/questions/18137745/is-there-an-easy-way-to-revert-a-forecast-back-into-a-time-series-for-plotting) (возврат к датам по оси X)
@@ -564,6 +578,8 @@ How can I time my code?](http://www.ats.ucla.edu/stat/r/faq/timing_code.htm)
 	- [Implementing a Neural Network from Scratch – An Introduction](http://www.wildml.com/2015/09/implementing-a-neural-network-from-scratch/)
 	- [Recurrent Neural Networks Tutorial, Part 1 – Introduction to RNN](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/)
 	- [Recurrent Neural Networks Tutorial, Part 2 – Implementing a RNN with Python, Numpy and Theano](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-2-implementing-a-language-model-rnn-with-python-numpy-and-theano/)
+	- [Recurrent Neural Networks Tutorial, Part 3 – Backpropagation Through Time and Vanishing Gradients](http://www.wildml.com/2015/10/recurrent-neural-networks-tutorial-part-3-backpropagation-through-time-and-vanishing-gradients/)
+
 - [Introduction to Machine Learning with Web Analytics: Random Forests and K-Means](http://markedmondson.me/intro-to-machine-learning-with-web-analytics-random-forests-and-k-means). Mark Edmondson
 An Englishman in Copenhagen writing about digital, music and anything else. Presentation [here](http://rpubs.com/MarkeD/machine-learning-measurecamp-2015)
 - [How do neural networks learn?](http://blog.fastforwardlabs.com/post/129793362663/how-do-neural-networks-learn)
@@ -584,6 +600,7 @@ An Englishman in Copenhagen writing about digital, music and anything else. Pres
 # Концептуальные материалы
 - [Python 3 Readiness](http://py3readiness.org/). Python 3 support graph for 360 most popular Python packages!
 - [Python2orPython3](https://wiki.python.org/moin/Python2orPython3). Should I use Python 2 or Python 3 for my development activity
+- [Learn Python TheHard Way](http://learnpythonthehardway.org/)
 - [Quick reference to Python in a single script](http://www.dataschool.io/python-quick-reference/)
 - [Damn the torpedoes, full speed ahead: making the switch to Python 3](http://www.onthelambda.com/2014/05/13/damn-the-torpedoes-full-speed-ahead-making-the-switch-to-python-3/)
 - [Sake](http://tonyfischetti.github.io/sake/). A self-documenting build automation tool
@@ -599,6 +616,9 @@ An Englishman in Copenhagen writing about digital, music and anything else. Pres
 	- Datashape: A data description language
 	- DyND: A C++ library for dynamic, multidimensional arrays
 	- Odo: Data migration between different storage systems
+- [Scipy Lecture Notes
+One document to learn numerics, science, and data with Python](http://www.scipy-lectures.org/)
+
 
 # Julia
 - [Julia](http://julialang.org/) is a high-level, high-performance dynamic programming language for technical computing, with syntax that is familiar to users of other technical computing environments. It provides a sophisticated compiler, distributed parallel execution, numerical accuracy, and an extensive mathematical function library.
@@ -642,6 +662,7 @@ This problem is not usually addressed in time series analysis, because time seri
 - [Using Linear Regression to Predict Energy Output of a Power Plant](http://datascienceplus.com/linear-regression-predict-energy-output-power-plant/)
 - [Multivariate linear regression in R](http://stats.stackexchange.com/questions/44384/multivariate-linear-regression-in-r)
 - [Multivariate multiple regression in R](http://stats.stackexchange.com/questions/11127/multivariate-multiple-regression-in-r/11132#11132)
+- [Plotting regression curves with confidence intervals for LM, GLM and GLMM in R](https://biologyforfun.wordpress.com/2015/10/08/plotting-regression-curves-with-confidence-intervals-for-lm-glm-and-glmm-in-r/)
 
 ## Non-linear
 - [Multivariate multiple nonlinear regression in R](http://stats.stackexchange.com/questions/142317/multivariate-multiple-nonlinear-regression-in-r). I want to do *multivariate* (with more than 1 response variables) *multiple* (with more than 1 predictor variables) *nonlinear regression* in *R*.
