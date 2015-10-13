@@ -6,7 +6,7 @@
 - MRAN - Managed R Archive Network. [Explore Packages](https://mran.revolutionanalytics.com/packages/)
 - [Hadley Wickham on GitHub](https://github.com/hadley)
 - [Hadley Wickham, the Man Who Revolutionized R](http://priceonomics.com/hadley-wickham-the-man-who-revolutionized-r/)
-- Hadley packages. [Packages of the Hadleyverse. Power for your R. Barry Rowlingson. Lancaster University](http://barryrowlingson.github.io/hadleyverse/#1):
+- Hadley packages. [Packages of the Hadleyverse. Power for your R.](http://barryrowlingson.github.io/hadleyverse/#1) Barry Rowlingson. Lancaster University:
 	- Beginners
 		- readr - Reading files
 		- lubridate - Date and time handling
@@ -115,7 +115,7 @@ Predictive applications automate decision-making based on current and historical
 	- [Exception handling](https://cran.r-project.org/doc/manuals/R-lang.html#Exception-handling)
 	- [Debugging, condition handling, and defensive programming](http://adv-r.had.co.nz/Exceptions-Debugging.html)
 - Data Frames & Data Tables
-	- [Data frames](https://cran.r-project.org/web/packages/dplyr/vignettes/data_frames.html). Best Practice. data_frame() is a nice way to create data frames. It encapsulates best practices for data frames.
+	- [Data frames](https://cran.r-project.org/web/packages/dplyr/vignettes/data_frames.html). Best Practice. data_frame() is a nice way to create data frames. It encapsulates best practices for data frames. (tbl_df, data_frame)
 	- [Concatenating a list of data frames](http://www.exegetic.biz/blog/2014/06/concatenating-a-list-of-data-frames/)
 	- [expand.grid()](http://www.endmemo.com/program/R/expand_grid.php) function creates a data frame from all combinations of the supplied vectors or factors.
 	- [The R data.table package provides an enhanced version of data.frame](https://github.com/Rdatatable/data.table/wiki)
@@ -132,7 +132,6 @@ Predictive applications automate decision-making based on current and historical
 - [A Data Cleaning Example](http://justanotherdatablog.blogspot.ru/2015/09/a-data-cleaning-example.html). Objective:
 Clean a dataset with single column containing multiple variables as delimited key-value pairs.
 Solution: This can be done using tidyr functions spread, gather, separate, etc.
-- [Cheat Sheet – 10 Machine Learning Algorithms & R Commands](http://vitalflux.com/cheat-sheet-10-machine-learning-algorithms-r-commands/)
 - [Graphical Data Analysis with R](http://www.gradaanwr.net/) by Antony Unwin
 - [Using with( ) and by( )](http://www.statmethods.net/stats/withby.html)
 - [Vectorization in R: Why?](http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html) by Noam Ross, 16 April 2014
@@ -147,6 +146,13 @@ Solution: This can be done using tidyr functions spread, gather, separate, etc.
 - [paste, paste0, and sprintf](https://trinkerrstuff.wordpress.com/2013/09/15/paste-paste0-and-sprintf-2/)
 - [Introducing the rlogging package for simple logging in R](http://www.maartenjan.org/artikelen/2013-09-20-introducing-the-rlogging-package-for-simple-logging-in-r.html)
 - [Integrating Python and R into a Data Analysis Pipeline – Part 1](http://www.mango-solutions.com/wp/2015/10/integrating-python-and-r-into-a-data-analysis-pipeline-part-1/)
+- Cheatsheets
+	- [Cheat Sheet – 10 Machine Learning Algorithms & R Commands](http://vitalflux.com/cheat-sheet-10-machine-learning-algorithms-r-commands/)
+	- [Machine Learning. Patterns for Predictive Analytics](https://dzone.com/refcardz/machine-learning-predictive)
+by Ricky Ho. Covers machine learning for predictive analytics, explains setting up training and testing data, and offers machine learning model snippets.
+	- [DZone Refcardz](https://dzone.com/refcardz). The world's largest library of technical cheat sheets
+
+
 
 ## подвал
 	Solution: the pipe operator from magrittr
@@ -271,6 +277,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 	- [R tutorial on the Apply family of functions](http://blog.datacamp.com/r-tutorial-apply-family/)
 	- [A Tutorial on Loops in R – Usage and Alternatives](http://blog.datacamp.com/tutorial-on-loops-in-r/)
 - [Introduction to R](http://ateucher.github.io/rcourse_site/). On this page you will find links to the data we need for the course, as well as course notes for each of the modules
+- [OnePageR. A Survival Guide to Data Science with R](http://togaware.com/onepager/)
 - [Swirl](http://swirlstats.com/) teaches you R programming and data science interactively, at your own pace, and right in the R console!
 - [A slightly different introduction to R](https://martinsbioblogg.wordpress.com/a-slightly-different-introduction-to-r/). This is tutorial on how to get started with R for data analysis.
 - [Journal of Statistical Software](http://www.jstatsoft.org/)
@@ -468,6 +475,8 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [Autocorrelation functions of materially different time series](http://ellisp.github.io/blog/2015/09/19/timeseries-same-acf/)
 
 ## StackoverFlow etc.
+- import data
+	- [Quickly reading very large tables as dataframes in R](http://stackoverflow.com/questions/1727772/quickly-reading-very-large-tables-as-dataframes-in-r)
 - [Unicode]
 	- [RStudio Unicode support](https://support.rstudio.com/hc/en-us/articles/200532197-Character-Encoding)
 	- [RStudio not picking the encoding I'm telling it to use when reading a file](http://stackoverflow.com/questions/23324872/rstudio-not-picking-the-encoding-im-telling-it-to-use-when-reading-a-file)
@@ -618,6 +627,7 @@ An Englishman in Copenhagen writing about digital, music and anything else. Pres
 	- Odo: Data migration between different storage systems
 - [Scipy Lecture Notes
 One document to learn numerics, science, and data with Python](http://www.scipy-lectures.org/)
+- [from R to Python (2): libraries for statistical analysis](https://tmfujis.wordpress.com/2015/04/23/from-r-to-python-2-libraries-for-statistical-analysis/)
 
 
 # Julia

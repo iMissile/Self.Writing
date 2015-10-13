@@ -9,7 +9,7 @@ E-mail: ishutov@gmail.com
  - фундаментальное образование в области точных наук и наукоемких технологий;
  - практические навыки по использованию элементов DataScience в бизнес-задачах;
  - широкий опыт ведения докладов, сопровождающихся презентациями;
- - опыт ведения коммерческих переговоров и продаж;
+ - опыт ведения коммерческих переговоров и продаж, разработки ROI;
  - междисциплинарный кругозор, большой практический опыт выравнивания технических задач в соответствии с бизнес-потребностями;
  - опыт управления рабочими группами в матричной структуре;
  - опыт развития бизнеса с 0.
@@ -51,7 +51,7 @@ E-mail: ishutov@gmail.com
 Линия функционирует по настоящий момент.
 
 # ======================================
-Публикации:
+Публикации*:
 - [Системы OSS/BSS уходят в свободное плавание](http://www.connect-wit.ru/sistemy-oss-bss-uhodyat-v-svobodnoe-plavanie.html), Connect.WIT, N 4 2015
 - [Оптимизация IT-инфраструктуры](http://www.it-weekly.ru/analytics/tech/43890.html), 2013/01
 - [Простаивающий сервер тратит 15 – 30% от пиковой мощности абсолютно бесполезно](http://ibusiness.ru/blog/ilya.shutov/34775), 2014/09
@@ -65,6 +65,8 @@ E-mail: ishutov@gmail.com
 - The role of IT-monitoring to ensure the Quality of Service, OSS/BSS forum, 2007 (http://www.exposystems.ru/boss/)
 - [Trends in Telecom OSS, Summit on information-communication technologies (ICT Summit 2007), September 27-28, 2007, Tashkent, Uzbekistan](http://www.поиск.uz/ict_summit_27/1539717), [оригинальная программа](http://summit2007.ictp.uz/ru/agenda)
 - [CBOSScrbt. Experience in the product implementation at Azercell, Conference "VAS, mobile content, Technology & Business", 24/03/2005, Moscow] (http://www.comptek.ru/vas/2/program.html) 
+
+* приведены изначальные адреса материалов с целью доступа к устаревшим ссылкам через WayBackMachine.org
 
 Сопутствующие навыки:
  - R, Mathematica, Python, LaTeX, формирование визуальных представлений, дизайн интерфейсов

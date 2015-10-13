@@ -282,8 +282,19 @@ The typical data scientist workflow, when you consider it from defining the prob
 - [66 job interview questions for data scientists](http://www.datasciencecentral.com/profiles/blogs/66-job-interview-questions-for-data-scientists)
 - [Crushed it! Landing a data science job](http://www.erinshellman.com/crushed-it-landing-a-data-science-job/)
 Data science interviews are the worst because data science is interdisciplinary: code for “you have to know everything about all the disciplines.”  Depending on the company and the team, your interview might look like a software developer’s interview, or it might look a like a statistician’s interview, and the bad news is that virtually none of the material overlaps.  I recently spent a ton of time studying for interviews and I’ve got some hot tips to pass along if you’re thinking about a move soon.
+- [Statistics and Probability Homework Question](https://www.quora.com/Statistics-and-Probability-Homework-Question)
+- [Data Science Interviews](https://www.quora.com/Data-Science-Interviews)
 
-
+## DataScience interesting articles
+- [Hacking the Random Walk Hypothesis](http://www.turingfinance.com/hacking-the-random-walk-hypothesis/)
+- [Five principles for applying data science for social good](https://www.oreilly.com/ideas/five-principles-for-applying-data-science-for-social-good). How to go from well-intentioned efforts to lasting impact with your data projects. By Jake Porway October 1, 2015. Jake Porway is a machine learning and technology enthusiast who loves nothing more than seeing good values in data. He is the founder and executive director of DataKind, an organization that brings together leading data scientists with high impact social organizations to better collect, analyze, and visualize data in the service of humanity. Jake was most recently the data scientist in the New York Times R&D lab and remains an active member of the data science community, bringing his technical experience from his past work with groups lik...
+- [Why do we make statistics so hard for our students?](https://scientistseessquirrel.wordpress.com/2015/10/06/why-do-we-make-statistics-so-hard-for-our-students/)
+- [Unboxing the Random Forest Classifier: The Threshold Distributions](http://nerds.airbnb.com/unboxing-the-random-forest-classifier/)
+- [Bot or Not: an end-to-end data analysis in Python](http://www.erinshellman.com/bot-or-not/)
+- [What to do with “small” data?](https://medium.com/rants-on-machine-learning/what-to-do-with-small-data-d253254d1a89) By Ahmed El Deeb
+- [Lessons learned from working at Continuum](https://asmeurer.github.io/blog/posts/lessons-learned-from-working-at-continuum/)
+- [Logistic Regression – Geometric Intuition](http://florianhartl.com/logistic-regression-geometric-intuition.html)
+- [Probability, Paradox, and the Reasonable Person Principle](http://nbviewer.ipython.org/url/norvig.com/ipython/Probability.ipynb)
 #==================================================================
 # Описание позиции
 ## Круг задач:
