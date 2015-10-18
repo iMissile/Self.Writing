@@ -9,13 +9,14 @@
 - Hadley packages. [Packages of the Hadleyverse. Power for your R.](http://barryrowlingson.github.io/hadleyverse/#1) Barry Rowlingson. Lancaster University:
 	- Beginners
 		- readr - Reading files
+		- readxls - Reading Excel files
 		- lubridate - Date and time handling
 		- stringr - Working with text strings
 		- tidyr - Make tidy data
 		- dplyr - Data manipulation
 		- purrr - ???
 		- ggplot2 -  The graphical grammar
-	- 	Advanced
+	- Advanced
 		- ggvis - Web graphics
 		- rvest - Web scraping
 		- devtools - Package development
@@ -23,6 +24,7 @@
 		- testthat - Automatic code testing
 
 ## Концептуальные материалы
+- [Gartner. Massive innovations in data science yet to come](http://blogs.gartner.com/alexander-linden/2015/08/27/massive-innovations-in-data-science-yet-to-come/). August 27, 2015
 - [What is R?](http://www.inside-r.org/what-is-r)
 - [Why use R?](http://www.inside-r.org/why-use-r)
 - [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
@@ -35,7 +37,9 @@
 - [A non-comprehensive list of awesome things other people did in 2014](http://simplystatistics.org/2014/12/17/a-non-comprehensive-list-of-awesome-things-other-people-did-in-2014/)
 - [Some key Win-Vector serial data science articles](http://www.win-vector.com/blog/2015/10/some-key-win-vector-serial-data-science-articles/)
 - [Tidy Data]
-	- [Hadley Wickham "Tidy Data"](http://www.jstatsoft.org/v59/i10/) или [здесь](http://vita.had.co.nz/papers/tidy-data.pdf)
+	- [Hadley Wickham "Tidy Data" article](http://www.jstatsoft.org/v59/i10/) или [здесь](http://vita.had.co.nz/papers/tidy-data.pdf)
+	- [Tidy data](https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html). Hadley Wickham, 2015-09-09
+	- [Data Tidying](http://garrettgman.github.io/tidying/). Data Science with R by Garrett Grolemund
 	- [broom: a package for tidying statistical models into data frames](http://varianceexplained.org/r/broom-intro/)
 
 - [10 R packages I wish I knew about earlier](http://blog.yhathq.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html)
@@ -79,6 +83,7 @@ Predictive applications automate decision-making based on current and historical
 
 ## Data Processing articles (COOL)
 - [DATA.TABLE VS. DPLYR IN SPLIT APPLY COMBINE STYLE ANALYSIS](http://www.brodieg.com/?p=7)
+- [Data Science with R by Garrett Grolemund](http://garrettgman.github.io/)
 - dplyr:
 	- [Window functions and grouped mutate/filter](http://cran.r-project.org/web/packages/dplyr/vignettes/window-functions.html). ! Offsets lead() and lag() allow you to access the previous and next values in a vector, making it easy to compute differences and trends.
 	- [Non-standard evaluation](https://cran.r-project.org/web/packages/dplyr/vignettes/nse.html). Здесь можно почитать про конструкцию '.dot' (п. Setting variable names)
@@ -580,6 +585,7 @@ How can I time my code?](http://www.ats.ucla.edu/stat/r/faq/timing_code.htm)
 - [The fourth generation of machine learning: Adaptive learning](http://idibon.com/the-fourth-generation-of-machine-learning-adaptive-learning/)
 - [A Visual Introduction to Machine Learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
 - [Machine Learning Done Wrong](http://ml.posthaven.com/machine-learning-done-wrong)
+- [Top 10 data mining algorithms in plain English](http://rayli.net/blog/data/top-10-data-mining-algorithms-in-plain-english/)
 - [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
 - [A Neural Network in 11 lines of Python (Part 1)](http://iamtrask.github.io/2015/07/12/basic-python-network/). A bare bones neural network implementation to describe the inner workings of backpropagation.
 - [A Neural Network in 13 lines of Python (Part 2 - Gradient Descent)](http://iamtrask.github.io/2015/07/27/python-network-part2/). Improving our neural network by optimizing Gradient Descent
@@ -589,6 +595,7 @@ How can I time my code?](http://www.ats.ucla.edu/stat/r/faq/timing_code.htm)
 	- [Recurrent Neural Networks Tutorial, Part 2 – Implementing a RNN with Python, Numpy and Theano](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-2-implementing-a-language-model-rnn-with-python-numpy-and-theano/)
 	- [Recurrent Neural Networks Tutorial, Part 3 – Backpropagation Through Time and Vanishing Gradients](http://www.wildml.com/2015/10/recurrent-neural-networks-tutorial-part-3-backpropagation-through-time-and-vanishing-gradients/)
 
+- [Neural Networks using R](http://bicorner.com/2015/05/13/neural-networks-using-r/)
 - [Introduction to Machine Learning with Web Analytics: Random Forests and K-Means](http://markedmondson.me/intro-to-machine-learning-with-web-analytics-random-forests-and-k-means). Mark Edmondson
 An Englishman in Copenhagen writing about digital, music and anything else. Presentation [here](http://rpubs.com/MarkeD/machine-learning-measurecamp-2015)
 - [How do neural networks learn?](http://blog.fastforwardlabs.com/post/129793362663/how-do-neural-networks-learn)
