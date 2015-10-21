@@ -98,6 +98,7 @@ Predictive applications automate decision-making based on current and historical
 	- [How dplyr replaced my most common R idioms](http://www.onthelambda.com/2014/02/10/how-dplyr-replaced-my-most-common-r-idioms/)
 	- [do()](https://cran.r-project.org/web/packages/dplyr/README.html). As well as the specialised operations described above, dplyr also provides the generic do() function which applies any R function to each group of the data.
 	- dplyr in 100 lines [Pt1 intro](http://datalove.org/r/dplyr/2015/01/25/dplyr-100-lines-01-intro/), [Pt2 filter](http://datalove.org/r/dplyr/2015/01/26/dplyr-100-lines-02-filter/), [Pt3 mutate](http://datalove.org/r/dplyr/2015/01/27/dplyr-100-lines-03-mutate/).
+	- [Introducing the dplyrXdf package](http://blog.revolutionanalytics.com/2015/10/the-dplyrxdf-package.html). The dplyrXdf package implements such a backend for the xdf file format, a technology supplied as part of Revolution R Enterprise. All of the data transformation and modelling functions provided with Revolution R Enterprise support xdf files, which allow you to break R’s memory barrier: by storing the data on disk, rather than in memory, they make it possible to work with multi-gigabyte or terabyte-sized datasets.
 - PURRR
 	- [Purrr](https://github.com/hadley/purrr). [Purrr 0.1.0 released](http://blog.rstudio.org/2015/09/29/purrr-0-1-0/). Purrr makes your pure functions purr by completing R's functional programming tools with important features from other languages, in the style of the JS packages underscore.js, lodash and lazy.js.
 	- [Rebuilding Map Example With Apply Functions](http://opiateforthemass.es/articles/rebuilding-map-example-with-apply-functions/)
@@ -278,6 +279,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 ## Курсы обучения и интересные бизнес решения на базе R
 ### Курсы\Learning
 - [Data School](http://www.dataschool.io/). Data science for beginners!
+	- [In-depth introduction to machine learning in 15 hours of expert videos](http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/)
 - [DataCamp](https://www.datacamp.com/). The easiest way to learn R programming and data science. Learn R and data analysis in the comfort of your browser with video lessons and coding challenges. Discover our R tutorials and data science courses, and start analyzing your own data.
 	- [R tutorial on the Apply family of functions](http://blog.datacamp.com/r-tutorial-apply-family/)
 	- [A Tutorial on Loops in R – Usage and Alternatives](http://blog.datacamp.com/tutorial-on-loops-in-r/)
