@@ -300,6 +300,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [Machine Learning. Курс от Яндекса для тех, кто хочет провести новогодние каникулы с пользой](http://habrahabr.ru/company/yandex/blog/208034/)
 - [MachineLearning.ru](http://www.machinelearning.ru). Профессиональный информационно-аналитический ресурс, посвященный машинному обучению, распознаванию образов и интеллектуальному анализу данных.
 - [Machine Learning (Theory)](http://hunch.net/)
+- [Visual Information Theory](http://colah.github.io/posts/2015-09-Visual-Information/)
 - [The Open Source Data Science Masters](http://datasciencemasters.org/) Curriculum for Data Science
 - [FREE DATA SCIENCE COURSES](http://datascienceacademy.com/free-data-science-courses/)
 - [Hadley Wickham presentations](http://www.slideshare.net/hadley/presentations)
@@ -584,6 +585,9 @@ How can I time my code?](http://www.ats.ucla.edu/stat/r/faq/timing_code.htm)
 - [Because it's Friday: Visualizing the Discrete Fourier Transform](http://blog.revolutionanalytics.com/2015/09/because-its-friday-visualizing-ffts.html)
 
 # Machine Learning \ Neural Networks materials
+- [Theoretical Motivations for Deep Learning](http://rinuboney.github.io/2015/10/18/theoretical-motivations-deep-learning.html). Deep learning is a branch of machine learning algorithms based on learning multiple levels of representation. The multiple levels of representation corresponds to multiple levels of abstraction. This post explores the idea that if we can successfully learn multiple levels of representation then we can generalize well.
+- [Deep Learning Startups, Applications and Acquisitions – A Summary](http://blog.dennybritz.com/2015/10/13/deep-learning-startups-applications-and-acquisitions-a-summary/). October'15
+- [Machine Learning for Developers (xyclade.ml)](https://xyclade.github.io/MachineLearning/). COOL	
 - [The fourth generation of machine learning: Adaptive learning](http://idibon.com/the-fourth-generation-of-machine-learning-adaptive-learning/)
 - [A Visual Introduction to Machine Learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
 - [Machine Learning Done Wrong](http://ml.posthaven.com/machine-learning-done-wrong)
@@ -637,6 +641,7 @@ An Englishman in Copenhagen writing about digital, music and anything else. Pres
 - [Scipy Lecture Notes
 One document to learn numerics, science, and data with Python](http://www.scipy-lectures.org/)
 - [from R to Python (2): libraries for statistical analysis](https://tmfujis.wordpress.com/2015/04/23/from-r-to-python-2-libraries-for-statistical-analysis/)
+- [assertpy](https://github.com/ActivisionGameScience/assertpy). Dead simple assertions framework for unit testing in Python with a nice fluent API. Supports both Python 2 and 3.
 
 
 # Julia

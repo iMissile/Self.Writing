@@ -286,6 +286,8 @@ Data science interviews are the worst because data science is interdisciplinary:
 - [Data Science Interviews](https://www.quora.com/Data-Science-Interviews)
 
 ## DataScience interesting articles
+- [How To Start A Data Science Project When You Are A Beginner](https://www.datayou.org/articles/how-to-start-a-data-science-project-when-you-are-a-beginner)
+- [Data Science Project Checklist To Use Before You Start A Project To Convey You Can Actually Get Work Done](https://www.datayou.org/articles/data-science-project-checklist-to-use-before-you-start-a-project-to-convey-you-can-actually-get-work-done)
 - [Hacking the Random Walk Hypothesis](http://www.turingfinance.com/hacking-the-random-walk-hypothesis/)
 - [Five principles for applying data science for social good](https://www.oreilly.com/ideas/five-principles-for-applying-data-science-for-social-good). How to go from well-intentioned efforts to lasting impact with your data projects. By Jake Porway October 1, 2015. Jake Porway is a machine learning and technology enthusiast who loves nothing more than seeing good values in data. He is the founder and executive director of DataKind, an organization that brings together leading data scientists with high impact social organizations to better collect, analyze, and visualize data in the service of humanity. Jake was most recently the data scientist in the New York Times R&D lab and remains an active member of the data science community, bringing his technical experience from his past work with groups lik...
 - [Why do we make statistics so hard for our students?](https://scientistseessquirrel.wordpress.com/2015/10/06/why-do-we-make-statistics-so-hard-for-our-students/)
