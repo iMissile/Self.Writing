@@ -284,8 +284,12 @@ The typical data scientist workflow, when you consider it from defining the prob
 Data science interviews are the worst because data science is interdisciplinary: code for “you have to know everything about all the disciplines.”  Depending on the company and the team, your interview might look like a software developer’s interview, or it might look a like a statistician’s interview, and the bad news is that virtually none of the material overlaps.  I recently spent a ton of time studying for interviews and I’ve got some hot tips to pass along if you’re thinking about a move soon.
 - [Statistics and Probability Homework Question](https://www.quora.com/Statistics-and-Probability-Homework-Question)
 - [Data Science Interviews](https://www.quora.com/Data-Science-Interviews)
+- [Interview with a Data Scientist: Trey Causey](https://peadarcoyle.wordpress.com/2015/10/28/interview-with-a-data-scientist-trey-causey/)
 
 ## DataScience interesting articles
+- [Academia to Industry: Data Science Myths and Truths](http://www.insightdatascience.com/blog/academia_to_industry_data_science_myths_and_truths.html)
+- [The First Step To Take When Looking For A Data Science Job](https://www.datayou.org/articles/the-first-step-to-take-when-looking-for-a-data-science-job)
+- [The Simple Process To Get Real World Data Science Experience](https://www.datayou.org/articles/the-simple-process-to-get-real-world-data-science-experience)
 - [How To Start A Data Science Project When You Are A Beginner](https://www.datayou.org/articles/how-to-start-a-data-science-project-when-you-are-a-beginner)
 - [Data Science Project Checklist To Use Before You Start A Project To Convey You Can Actually Get Work Done](https://www.datayou.org/articles/data-science-project-checklist-to-use-before-you-start-a-project-to-convey-you-can-actually-get-work-done)
 - [Hacking the Random Walk Hypothesis](http://www.turingfinance.com/hacking-the-random-walk-hypothesis/)
