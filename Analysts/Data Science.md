@@ -172,7 +172,6 @@ In a future post in this series, we will take up the last of these in more detai
 - [Three Things About Data Science You Won't Find In the Books](http://blog.mikiobraun.de/2015/03/three-things-about-data-science.html)
 - [The Fundamentals of Data Science](http://www.micfarris.com/2014/10/the-fundamentals-of-data-science/)
 - [Software development skills for data scientists](http://treycausey.com/software_dev_skills.html)
-- [The Three Kinds Of Data Science Project Exams That Show Up In A Data Science Interview](https://www.datayou.org/articles/the-three-kinds-of-data-science-project-exams-that-show-up-in-a-data-science-interview)
 - [Becoming a Full-Stack Statistician in 6 Easy Steps](http://blog.dato.com//becoming-a-full-stack-statistician-in-6-easy-steps)
 	1. Prototyping. For every question, think about how to get the best answer if only given 1 hour, 1 day, and 1 week. A one-off prototype can lead to a discussion that renders the 1 week version obsolete. Design and analyze experiments that help you decide whether the prototype achieves its goal.
 	1. Data carpentry. Dealing with data may require parsing JSON, dealing with UTF-8, writing SQL and Hive queries, a one-off sed command, and so on. Know how to extract features that might be help you understand or model the data.
@@ -278,6 +277,7 @@ The typical data scientist workflow, when you consider it from defining the prob
 	- Debug
 
 ## Data Scientists interview
+- [Trending Buzzwords in Tech Job Posting 2015](http://whatsthebigdata.com/2015/11/12/trending-buzzwords-in-tech-job-posting-2015/)
 - [What it's like to be on the data science job market](http://treycausey.com/data_science_interviews.html)
 - [66 job interview questions for data scientists](http://www.datasciencecentral.com/profiles/blogs/66-job-interview-questions-for-data-scientists)
 - [Crushed it! Landing a data science job](http://www.erinshellman.com/crushed-it-landing-a-data-science-job/)
@@ -287,11 +287,20 @@ Data science interviews are the worst because data science is interdisciplinary:
 - [Interview with a Data Scientist: Trey Causey](https://peadarcoyle.wordpress.com/2015/10/28/interview-with-a-data-scientist-trey-causey/)
 
 ## DataScience interesting articles
+- [The Data Science Industry: Who Does What (Infographic)](http://blog.datacamp.com/data-science-industry-infographic/)
+- [Data Science Falls Into Many Roles](http://www.forbes.com/sites/rawnshah/2015/10/06/data-science-falls-into-many-roles/)
+- [Standards: Work to Live](https://madebysidecar.com/journal/standards-work-to-live)
+- [The Deep Learning Gold Rush of 2015](http://www.computervisionblog.com/2015/11/the-deep-learning-gold-rush-of-2015.html)
+- [Top Skills and Backgrounds of Data Scientists on LinkedIn](http://whatsthebigdata.com/2015/11/08/top-skills-and-backgrounds-of-data-scientists-on-linkedin/)
 - [Academia to Industry: Data Science Myths and Truths](http://www.insightdatascience.com/blog/academia_to_industry_data_science_myths_and_truths.html)
-- [The First Step To Take When Looking For A Data Science Job](https://www.datayou.org/articles/the-first-step-to-take-when-looking-for-a-data-science-job)
-- [The Simple Process To Get Real World Data Science Experience](https://www.datayou.org/articles/the-simple-process-to-get-real-world-data-science-experience)
-- [How To Start A Data Science Project When You Are A Beginner](https://www.datayou.org/articles/how-to-start-a-data-science-project-when-you-are-a-beginner)
-- [Data Science Project Checklist To Use Before You Start A Project To Convey You Can Actually Get Work Done](https://www.datayou.org/articles/data-science-project-checklist-to-use-before-you-start-a-project-to-convey-you-can-actually-get-work-done)
+- [DataYou]
+	- [The Three Kinds Of Data Science Project Exams That Show Up In A Data Science Interview](https://www.datayou.org/articles/the-three-kinds-of-data-science-project-exams-that-show-up-in-a-data-science-interview)
+	- [The First Step To Take When Looking For A Data Science Job](https://www.datayou.org/articles/the-first-step-to-take-when-looking-for-a-data-science-job)
+	- [The Simple Process To Get Real World Data Science Experience](https://www.datayou.org/articles/the-simple-process-to-get-real-world-data-science-experience)
+	- [How To Start A Data Science Project When You Are A Beginner](https://www.datayou.org/articles/how-to-start-a-data-science-project-when-you-are-a-beginner)
+	- [Data Science Project Checklist To Use Before You Start A Project To Convey You Can Actually Get Work Done](https://www.datayou.org/articles/data-science-project-checklist-to-use-before-you-start-a-project-to-convey-you-can-actually-get-work-done)
+	- [How To Figure Out The Gaps In Your Data Science Skill Set](https://www.datayou.org/articles/how-to-figure-out-the-gaps-in-your-data-science-skill-set)
+
 - [Hacking the Random Walk Hypothesis](http://www.turingfinance.com/hacking-the-random-walk-hypothesis/)
 - [Five principles for applying data science for social good](https://www.oreilly.com/ideas/five-principles-for-applying-data-science-for-social-good). How to go from well-intentioned efforts to lasting impact with your data projects. By Jake Porway October 1, 2015. Jake Porway is a machine learning and technology enthusiast who loves nothing more than seeing good values in data. He is the founder and executive director of DataKind, an organization that brings together leading data scientists with high impact social organizations to better collect, analyze, and visualize data in the service of humanity. Jake was most recently the data scientist in the New York Times R&D lab and remains an active member of the data science community, bringing his technical experience from his past work with groups lik...
 - [Why do we make statistics so hard for our students?](https://scientistseessquirrel.wordpress.com/2015/10/06/why-do-we-make-statistics-so-hard-for-our-students/)

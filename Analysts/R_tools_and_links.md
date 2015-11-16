@@ -42,6 +42,7 @@
 	- [Data Tidying](http://garrettgman.github.io/tidying/). Data Science with R by Garrett Grolemund
 	- [broom: a package for tidying statistical models into data frames](http://varianceexplained.org/r/broom-intro/)
 
+- [The problem with the data science language wars](http://wesmckinney.com/blog/the-problem-with-the-data-science-language-wars/)
 - [10 R packages I wish I knew about earlier](http://blog.yhathq.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html)
 - [Top 10 R Packages to be a Kaggle Champion](http://www.kdnuggets.com/2015/04/top-10-r-packages-kaggle.html)
 - [Now's a great time to learn R. Here's how](http://blog.revolutionanalytics.com/2015/01/nows-a-great-time-to-learn-r-heres-how.html).
@@ -80,8 +81,13 @@
 Predictive applications automate decision-making based on current and historical data allowing you to benefit from more efficient business processes. By using artificial intelligence and self-learning algorithms, precise forecasting can be made in real time, allowing you to make permanently optimized decisions. Previously slow, rare and ad hoc decisions can now be continuously adjusted for perfect performance.
 - [BigML](https://bigml.com/) provides commoditized machine learning as a service for business analysts and application integration. [Details](http://machinelearningmastery.com/bigml-review-discover-the-clever-features-in-this-machine-learning-as-a-service-platform/)
 
+## e-books
+- [R programming Wikibook](https://en.wikibooks.org/wiki/R_Programming)
+- [60+ Free Books on Big Data, Data Science, Data Mining, Machine Learning, Python, R, and more](http://www.kdnuggets.com/2015/09/free-data-science-books.html)
 
 ## Data Processing articles (COOL)
+- [The Fallacy of Sample Size](http://datadrivensecurity.info/blog/posts/2015/Nov/samplesize/)
+- [Using MonetDB[Lite] with real-world CSV files](http://rud.is/b/2015/11/11/using-monetdblite-with-real-world-csv-files/)
 - [DATA.TABLE VS. DPLYR IN SPLIT APPLY COMBINE STYLE ANALYSIS](http://www.brodieg.com/?p=7)
 - [Data Science with R by Garrett Grolemund](http://garrettgman.github.io/)
 - dplyr:
@@ -160,7 +166,8 @@ Solution: This can be done using tidyr functions spread, gather, separate, etc.
 	- [Machine Learning. Patterns for Predictive Analytics](https://dzone.com/refcardz/machine-learning-predictive)
 by Ricky Ho. Covers machine learning for predictive analytics, explains setting up training and testing data, and offers machine learning model snippets.
 	- [DZone Refcardz](https://dzone.com/refcardz). The world's largest library of technical cheat sheets
-
+- [SparkR & Cloud]
+	- [Launch Apache Spark on AWS EC2 and Initialize SparkR Using RStudio](http://blog.sparkiq-labs.com/2015/11/10/launch-apache-spark-on-aws-ec2-and-initialize-sparkr-using-rstudio/)
 
 
 ## подвал
@@ -398,6 +405,10 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [Canva](https://www.canva.com/) makes design simple for eceryone. It gives you everything you need to easily turn ideas into outstanding designs. You can startwith a custom layout or a blank page. There’s no limits to your creativity with all the tools in one place. Just search and drag to create beautiful designs and Canva will take care of the boring bits. The tool is online and free to use.
 - [Dipity](http://www.dipity.com/) is a free digital timeline website. Our mission is to organize the web's content by date and time. Users can create, share, embed and collaborate on interactive, visually engaging timelines that integrate video, audio, images, text, links, social media, location and timestamps.
 
+- [The Omid project](https://github.com/yahoo/omid) provides transactional support for key-value stores using Snapshot Isolation. Omid stands for Optimistically transactional Management in Datasources. HBase is the only datastore currently supported, though adaption to any datastore that provides multiple versions per cell should be straightforward.
+	- [Introducing Omid - Transaction Processing for Apache HBase](http://yahoohadoop.tumblr.com/post/129089878751/introducing-omid-transaction-processing-for)
+	- [Omid Architecture and Protocol](http://yahoolabs.tumblr.com/post/132886806261/omid-architecture-and-protocol)
+
 
 ### Визуализация
 - [Plotly](https://plot.ly/). Collaborative data science. Plotly is the easiest way to graph and share your data.
@@ -592,6 +603,8 @@ How can I time my code?](http://www.ats.ucla.edu/stat/r/faq/timing_code.htm)
 - [Because it's Friday: Visualizing the Discrete Fourier Transform](http://blog.revolutionanalytics.com/2015/09/because-its-friday-visualizing-ffts.html)
 
 # Machine Learning \ Neural Networks materials
+- [Machine Learning Isn’t Data Science](https://medium.com/@nwokedi/machine-learning-isn-t-data-science-67cc66867dbc)
+- [TensorFlow™](http://www.tensorflow.org/) is an open source software library for numerical computation using data flow graphs. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them. The flexible architecture allows you to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API. TensorFlow was originally developed by researchers and engineers working on the Google Brain Team within Google's Machine Intelligence research organization for the purposes of conducting machine learning and deep neural networks research, but the system is general enough to be applicable in a wide variety of other domains as well.
 - [Theoretical Motivations for Deep Learning](http://rinuboney.github.io/2015/10/18/theoretical-motivations-deep-learning.html). Deep learning is a branch of machine learning algorithms based on learning multiple levels of representation. The multiple levels of representation corresponds to multiple levels of abstraction. This post explores the idea that if we can successfully learn multiple levels of representation then we can generalize well.
 - [Deep Learning Startups, Applications and Acquisitions – A Summary](http://blog.dennybritz.com/2015/10/13/deep-learning-startups-applications-and-acquisitions-a-summary/). October'15
 - [Machine Learning for Developers (xyclade.ml)](https://xyclade.github.io/MachineLearning/). COOL	
@@ -649,6 +662,8 @@ An Englishman in Copenhagen writing about digital, music and anything else. Pres
 One document to learn numerics, science, and data with Python](http://www.scipy-lectures.org/)
 - [from R to Python (2): libraries for statistical analysis](https://tmfujis.wordpress.com/2015/04/23/from-r-to-python-2-libraries-for-statistical-analysis/)
 - [assertpy](https://github.com/ActivisionGameScience/assertpy). Dead simple assertions framework for unit testing in Python with a nice fluent API. Supports both Python 2 and 3.
+- [Advanced Jupyter Notebook Tricks — Part I](http://blog.dominodatalab.com/lesser-known-ways-of-using-notebooks/)
+- [Building Interactive Dashboards with Jupyter - Part II](http://blog.dominodatalab.com/interactive-dashboards-in-jupyter/)
 
 
 # Julia
@@ -676,6 +691,15 @@ This problem is not usually addressed in time series analysis, because time seri
 # Anomaly Detection
 - [Introducing practical and robust anomaly detection in a time series](https://blog.twitter.com/2015/introducing-practical-and-robust-anomaly-detection-in-a-time-series). Twitter open-source R package [AnomalyDetection](https://github.com/twitter/AnomalyDetection).
 - [Anomaly Detection – Using Machine Learning to Detect Abnormalities in Time Series Data](http://blogs.technet.com/b/machinelearning/archive/2014/11/05/anomaly-detection-using-machine-learning-to-detect-abnormalities-in-time-series-data.aspx). Microsoft Machine Learning Blog
+
+# Stats & p-Value
+- [What’s the probability that a significant p-value indicates a true effect?](http://www.nicebread.de/whats-the-probability-that-a-significant-p-value-indicates-a-true-effect/)
+- [VARIANCE EXPLAINED](http://varianceexplained.org/posts/)
+	- [Understanding the Bayesian approach to false discovery rates (using baseball statistics)](http://varianceexplained.org/r/bayesian_fdr_baseball/)
+	- [Understanding the beta distribution (using baseball statistics)](http://varianceexplained.org/statistics/beta_distribution_and_baseball/)
+	- [Understanding empirical Bayes estimation (using baseball statistics)](http://varianceexplained.org/r/empirical_bayes_baseball/)
+	- [Understanding credible intervals (using baseball statistics)](http://varianceexplained.org/r/credible_intervals_baseball/)
+
 
 # Regression
 ## Linear
@@ -721,8 +745,13 @@ This problem is not usually addressed in time series analysis, because time seri
 MLDemos is open-source and free for personal and academic use.
 - [Visualizing MBTA Data](http://mbtaviz.github.io/). An interactive exploration of Boston's subway system
 
+## HTML slides
+- [R you ready to ggplot2?](http://tonyfujs.github.io/ggplot_post/02_gg_basic) (Presentation) Basic Plots. October 15, 2014. Tony Fujs
+- [RHadoop Tutorial](http://cdn.oreillystatic.com/en/assets/1/event/100/Using%20R%20and%20Hadoop%20for%20Statistical%20Computation%20at%20Scale%20Presentation.htm#/)
+- [INTERACTIVE CHARTS USING HTMLWIDGETS](http://patilv.com/introtohtmlwidgets/)
 
 # GIT
 - [Github Windows 'Failed to sync this branch'](http://stackoverflow.com/questions/15387640/github-windows-failed-to-sync-this-branch)
 - [Github failed to sync branch](http://stackoverflow.com/questions/15082809/github-failed-to-sync-branch). *** Couldn't reserve space for cygwin's heap, Win32 error 0
 - [Git Extensions: Win32 error 487: Couldn't reserve space for cygwin's heap, Win32 error 0](http://stackoverflow.com/questions/18502999/git-extensions-win32-error-487-couldnt-reserve-space-for-cygwins-heap-win32). tasklist /m msys-1.0.dll
+- [Comprehensive Review of Atlassian SourceTree](http://hanxue-it.blogspot.com/2014/06/comprehensive-review-of-atlassian.html)
