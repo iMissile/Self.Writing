@@ -29,16 +29,20 @@ E-mail: ishutov@gmail.com
 Начальник отдела продаж OSS\BSS\ITSM решений, Департамент Прикладных Решений
 ТЕХНОСЕРВ (www.technoserv.com)
 
-1. Обеспечение полного цикла продажи OSS\BSS\ITSM решений. Успешная реализация различных комплексных решений (макс бюджет ~$12 млн.)
+1. Обеспечение полного цикла продажи OSS\BSS\ITSM решений. Успешная реализация различных комплексных программных решений (макс бюджет ~$12 млн.)
 Значимые заказчики: ДИТ Правительства Москвы, МТС, Yota, Гринатом, Связьтранснефть, МТТ, Теле2, Синтерра, СО ЕЭС, UCS, Ростелеком (различные МРФ), Промсвязьбанк, ВТБ 24, X5, Магнит, Эра Глонасс.
 Основные вендоры: CA, BMC, EMC, FNT, HP, IBM, RSA, ServiceNow, Teoco
 2. Технологический куратор разработки T.Mon\T.Advizor (собственная разработка ТС).
+ - проектирование архитектуры в контексте модернизации системы мониторинга в сторону аналитического инструмента для ИТ и бизнеса;
+ - полный цикл руководства мат. группой (найм, обучение, постановка задач, контроль результатов);
+ - разработка алгоритмических подходов в аналитической части;
+ - продвижение решения на рынке.
 
 04/2003 - 07/2006
 Руководитель группы проектирования интеллектуальных услуг
 Ассоциация CBOSS (www.cboss.ru)
 
-Менеджер VAS продуктов CBOSScallScreening (Система фильтрации вызовов); CBOSScrbt (Система управления мелодиями вызова); CBOSScallback (Система обратного вызова); CBOSSsplitCharging (Система распределения начислений за звонки); CBOSSvpn (Виртуальная частная сеть)
+Архитектор VAS продуктов CBOSScallScreening (Система фильтрации вызовов); CBOSScrbt (Система управления мелодиями вызова); CBOSScallback (Система обратного вызова); CBOSSsplitCharging (Система распределения начислений за звонки); CBOSSvpn (Виртуальная частная сеть)
 
 11/1999 – 11/2000
 Старший оператор
@@ -65,6 +69,14 @@ E-mail: ishutov@gmail.com
 - The role of IT-monitoring to ensure the Quality of Service, OSS/BSS forum, 2007 (http://www.exposystems.ru/boss/)
 - [Trends in Telecom OSS, Summit on information-communication technologies (ICT Summit 2007), September 27-28, 2007, Tashkent, Uzbekistan](http://www.поиск.uz/ict_summit_27/1539717), [оригинальная программа](http://summit2007.ictp.uz/ru/agenda)
 - [CBOSScrbt. Experience in the product implementation at Azercell, Conference "VAS, mobile content, Technology & Business", 24/03/2005, Moscow] (http://www.comptek.ru/vas/2/program.html) 
+
+Публичные материалы для продвижения: 
+(полный цикл от разработки контента до верстки)
+- Отличительные возможности T.Mon. Текущее состояние и архитектурные компоненты (https://www.dropbox.com/s/9i0pb0d8s8yhnyk/t.Mon-features_v1.1.pdf?dl=0)
+- T.Mon — система контроля здоровья информационных комплексов (https://www.dropbox.com/s/0hytsesxy5lqjr9/t.Mon-sales_v5.1.pdf?dl=0)
+- Мониторинг ИТ-инфраструктуры (https://www.dropbox.com/s/w5whs2irbblt7qf/IT.CA.IT.monitoring.4pages.unnamed.pdf?dl=0)
+- Технико-экономическое обоснование систем мониторинга (https://www.dropbox.com/s/m1j6zlhy630vula/IT.ROI.6pages.unnamed.pdf?dl=0)
+
 
 * приведены изначальные адреса материалов с целью доступа к устаревшим ссылкам через WayBackMachine.org
 

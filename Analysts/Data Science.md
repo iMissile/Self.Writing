@@ -1,6 +1,12 @@
 # DataScience
 
 ## [Как устроен рынок big data в России](http://rusbase.com/howto/big-data-in-russia/)
+	- [Yandex Data Factory](https://yandexdatafactory.com/)
+	- [Алгомост](http://algomost.com/)
+	- [Data-Centric Alliance](http://datacentric.ru/)
+	- [Human Factor Labs](http://hflabs.ru/)
+
+- [Everpoint GIS](http://www.everpoint.ru/)
 
 ## Myths about Statistics & Big Data
 ### [Seven Myths About Big Data](https://datafloq.com/read/seven-myths-about-big-data/155)
@@ -169,6 +175,7 @@ In a future post in this series, we will take up the last of these in more detai
 - [Learn Data Science the Hard Way](http://www.dataphoric.com/2015/06/27/learn_data_science_the_hard_way/)
 
 ### Cool Articles
+- [What’s the Difference Between Data Engineering and Data Science?](http://www.galvanize.com/blog/difference-between-data-engineering-and-data-science/)
 - [Three Things About Data Science You Won't Find In the Books](http://blog.mikiobraun.de/2015/03/three-things-about-data-science.html)
 - [The Fundamentals of Data Science](http://www.micfarris.com/2014/10/the-fundamentals-of-data-science/)
 - [Software development skills for data scientists](http://treycausey.com/software_dev_skills.html)
@@ -287,6 +294,7 @@ Data science interviews are the worst because data science is interdisciplinary:
 - [Interview with a Data Scientist: Trey Causey](https://peadarcoyle.wordpress.com/2015/10/28/interview-with-a-data-scientist-trey-causey/)
 
 ## DataScience interesting articles
+- [Who are security data scientist?](http://www.securitydatascience.org/)
 - [The Data Science Industry: Who Does What (Infographic)](http://blog.datacamp.com/data-science-industry-infographic/)
 - [Data Science Falls Into Many Roles](http://www.forbes.com/sites/rawnshah/2015/10/06/data-science-falls-into-many-roles/)
 - [Standards: Work to Live](https://madebysidecar.com/journal/standards-work-to-live)

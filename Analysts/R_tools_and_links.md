@@ -40,11 +40,13 @@
 	- [Hadley Wickham "Tidy Data" article](http://www.jstatsoft.org/v59/i10/) или [здесь](http://vita.had.co.nz/papers/tidy-data.pdf)
 	- [Tidy data](https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html). Hadley Wickham, 2015-09-09
 	- [Data Tidying](http://garrettgman.github.io/tidying/). Data Science with R by Garrett Grolemund
+	- [Tidy data](http://r4ds.had.co.nz/tidy.html). R for data science by Garrett Grolemund and Hadley Wickham]
 	- [broom: a package for tidying statistical models into data frames](http://varianceexplained.org/r/broom-intro/)
 
 - [The problem with the data science language wars](http://wesmckinney.com/blog/the-problem-with-the-data-science-language-wars/)
 - [10 R packages I wish I knew about earlier](http://blog.yhathq.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html)
 - [Top 10 R Packages to be a Kaggle Champion](http://www.kdnuggets.com/2015/04/top-10-r-packages-kaggle.html)
+- [Seven Python Tools All Data Scientists Should Know How to Use](http://www.galvanize.com/blog/seven-python-tools-all-data-scientists-should-know-how-to-use/)
 - [Now's a great time to learn R. Here's how](http://blog.revolutionanalytics.com/2015/01/nows-a-great-time-to-learn-r-heres-how.html).
 - [The ensurer package (validation inside pipes)](http://www.r-statistics.com/2014/11/the-ensurer-package-validation-inside-pipes/)
 - [12 nifty tips for scientists who use computers](http://www.petrkeil.com/?p=2356)
@@ -222,9 +224,11 @@ that combine statistics and maps to inform better decision-making.
 
 - [RFiddle](http://www.r-fiddle.org/) provides an easy-to-use interactive R console that you can run from your browser.
 - [DataJoy](https://www.getdatajoy.com/). Python & R, for scientists. Easy to use, online data processing with Python and R
+- [Interactive Data Science with R in Apache Zeppelin Notebook](http://blog.sparkiq-labs.com/2015/11/16/interactive-data-science-with-r-in-apache-zeppelin-notebook/)
 
 
 ## Shiny etc.
+- [Using Apache SparkR to Power Shiny Applications: Part I](http://blog.sparkiq-labs.com/2015/11/22/using-apache-sparkr-to-power-shiny-applications-part-i/)
 - [Shiny articles](http://shiny.rstudio.com/articles/)
 - [Bootstrap](http://getbootstrap.com/) is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
   - [Free themes for Bootstrap](http://bootswatch.com/)
@@ -250,6 +254,7 @@ that combine statistics and maps to inform better decision-making.
 - [Persistent data storage in Shiny apps](http://deanattali.com/blog/shiny-persistent-data-storage/)
 
 ### Shiny Demo
+- [BigQuery Visualiser](https://mark.shinyapps.io/bigquery-viz)
 - [Different Shinyapps demo]
  	- [Shiny User Showcase](https://www.rstudio.com/products/shiny/shiny-user-showcase/). Shiny is designed for fully interactive visualization, using JavaScript libraries like d3, Leaflet, and Google Charts. Our users create fantastic examples, and some have shared them with the community. Here are some examples that we particularly like.
  	- [GA Dashboard Demo](https://mark.shinyapps.io/GA-dashboard-demo)
@@ -296,6 +301,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 	- [R tutorial on the Apply family of functions](http://blog.datacamp.com/r-tutorial-apply-family/)
 	- [A Tutorial on Loops in R – Usage and Alternatives](http://blog.datacamp.com/tutorial-on-loops-in-r/)
 - [Introduction to R](http://ateucher.github.io/rcourse_site/). On this page you will find links to the data we need for the course, as well as course notes for each of the modules
+- [Introduction to R](https://ramnathv.github.io/pycon2014-r/). These are notes for an introductory R workshop I am teaching for Python Programmers.
 - [OnePageR. A Survival Guide to Data Science with R](http://togaware.com/onepager/)
 - [Swirl](http://swirlstats.com/) teaches you R programming and data science interactively, at your own pace, and right in the R console!
 - [A slightly different introduction to R](https://martinsbioblogg.wordpress.com/a-slightly-different-introduction-to-r/). This is tutorial on how to get started with R for data analysis.
@@ -388,8 +394,6 @@ Intuitics increases the speed with which data insights reach decision makers. In
 	- Accelerate your on-ramp for big data with disruptive price performance
 - [Angoss](http://www.angoss.com/) is a global leader in delivering powerful predictive analytics that help businesses discover valuable insights and intelligence, while providing clear and detailed recommendations to improve risk, marketing and sales performance.
 - [Kaggle](http://www.kaggle.com/competitions), the leading platform for predictive modeling competitions.
-- [Vernier](http://www.vernier.com/products/software/ga-app/) Graphical Analysis™ for iPad®, iPhone®, iPod touch®, and Android.
-- [WebPlotDigitizer](http://arohatgi.info/WebPlotDigitizer/). Web based tool to extract data from plots, images, and maps.
 - [FigTree](http://beast.bio.ed.ac.uk/figtree) is a graphical user-interface (GUI) application for viewing phylogenies and producing publication quality figures.
 - [Sense](https://sense.io/) is a collaborative platform to accelerate data science from exploration to production.
 - [PredictionIO](https://prediction.io/) - An open-source machine learning server for developers and data scientists to create predictive engines for production environments. Built on top of Apache Spark, HBase and Spray.
@@ -409,6 +413,9 @@ Intuitics increases the speed with which data insights reach decision makers. In
 	- [Introducing Omid - Transaction Processing for Apache HBase](http://yahoohadoop.tumblr.com/post/129089878751/introducing-omid-transaction-processing-for)
 	- [Omid Architecture and Protocol](http://yahoolabs.tumblr.com/post/132886806261/omid-architecture-and-protocol)
 
+- [Vernier](http://www.vernier.com/products/software/ga-app/) Graphical Analysis™ for iPad®, iPhone®, iPod touch®, and Android.
+- [WebPlotDigitizer](http://arohatgi.info/WebPlotDigitizer/). Web based tool to extract data from plots, images, and maps.
+- [Engauge Digitizer](http://digitizer.sourceforge.net/). This open source, digitizing software converts an image file showing a graph or map, into numbers.
 
 ### Визуализация
 - [Plotly](https://plot.ly/). Collaborative data science. Plotly is the easiest way to graph and share your data.
@@ -477,6 +484,7 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [Autoplot: Graphical Methods with ggplot2](http://librestats.com/2012/06/11/autoplot-graphical-methods-with-ggplot2/)
 - [knitr](http://yihui.name/knitr/). Elegant, flexible and fast dynamic report generation with R.
 - [Leaflet](https://rstudio.github.io/leaflet/) is one of the most popular open-source JavaScript libraries for interactive maps. It’s used by websites ranging from The New York Times and The Washington Post to GitHub and Flickr, as well as GIS specialists like OpenStreetMap, Mapbox, and CartoDB.
+	- [Visualising your hiking trails and photos with My Tracks, R and Leaflet](http://mhermans.net/hiking-gpx-r-leaflet.html)
 - [mapView](http://environmentalinformatics-marburg.github.io/web-presentations/20150723_mapView.html): basic interactive viewing of spatial data in R
 - [geomorph](http://www.geomorph.net/). Geomorph is a software package for performing all stages of geometric morphometric shape analysis of landmark points and curves in 2-and-3-dimensions as well as 3D surfaces in the R statistical computing environment. This blog is dedicated to document geomorph related updates, current problems, their proposed solutions, and new ideas.
 
@@ -506,6 +514,9 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [Unicode]
 	- [RStudio Unicode support](https://support.rstudio.com/hc/en-us/articles/200532197-Character-Encoding)
 	- [RStudio not picking the encoding I'm telling it to use when reading a file](http://stackoverflow.com/questions/23324872/rstudio-not-picking-the-encoding-im-telling-it-to-use-when-reading-a-file)
+	- [How to source() .R file saved using UTF-8 encoding?](http://stackoverflow.com/questions/5031630/how-to-source-r-file-saved-using-utf-8-encoding)
+	- [How to set unicode locale in R?](http://stackoverflow.com/questions/20571147/how-to-set-unicode-locale-in-r)
+	- [Quantifying Memory: R and foreign characters](http://quantifyingmemory.blogspot.com/2013/01/r-and-foreign-characters.html)
 - [Warning Message Line Number R](http://stackoverflow.com/questions/15190022/warning-message-line-number-r)
 	You could try setting:
 	> options(warn=2)
@@ -603,8 +614,15 @@ How can I time my code?](http://www.ats.ucla.edu/stat/r/faq/timing_code.htm)
 - [Because it's Friday: Visualizing the Discrete Fourier Transform](http://blog.revolutionanalytics.com/2015/09/because-its-friday-visualizing-ffts.html)
 
 # Machine Learning \ Neural Networks materials
+- [The Basics of Classifier Evaluation, Part 1](http://www.svds.com/the-basics-of-classifier-evaluation-part-1/)
+- [The Basics of Classifier Evaluation, Part 2](http://www.svds.com/classifiers2/)
+- [Avoiding Common Mistakes with Time Series](http://www.r-bloggers.com/fitting-generalized-regression-neural-network-with-python/)
+
+
+- [Play Go Against a Deep Neural Network](https://chrisc36.github.io/deep-go/)
 - [Machine Learning Isn’t Data Science](https://medium.com/@nwokedi/machine-learning-isn-t-data-science-67cc66867dbc)
 - [TensorFlow™](http://www.tensorflow.org/) is an open source software library for numerical computation using data flow graphs. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them. The flexible architecture allows you to deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API. TensorFlow was originally developed by researchers and engineers working on the Google Brain Team within Google's Machine Intelligence research organization for the purposes of conducting machine learning and deep neural networks research, but the system is general enough to be applicable in a wide variety of other domains as well.
+	- [TensorBoard: Graph Visualization](http://tensorflow.org/how_tos/graph_viz/index.md)
 - [Theoretical Motivations for Deep Learning](http://rinuboney.github.io/2015/10/18/theoretical-motivations-deep-learning.html). Deep learning is a branch of machine learning algorithms based on learning multiple levels of representation. The multiple levels of representation corresponds to multiple levels of abstraction. This post explores the idea that if we can successfully learn multiple levels of representation then we can generalize well.
 - [Deep Learning Startups, Applications and Acquisitions – A Summary](http://blog.dennybritz.com/2015/10/13/deep-learning-startups-applications-and-acquisitions-a-summary/). October'15
 - [Machine Learning for Developers (xyclade.ml)](https://xyclade.github.io/MachineLearning/). COOL	
@@ -642,6 +660,7 @@ An Englishman in Copenhagen writing about digital, music and anything else. Pres
 # Концептуальные материалы
 - [Python 3 Readiness](http://py3readiness.org/). Python 3 support graph for 360 most popular Python packages!
 - [Python2orPython3](https://wiki.python.org/moin/Python2orPython3). Should I use Python 2 or Python 3 for my development activity
+- [10 awesome features of Python that you can't use because you refuse to upgrade to Python 3](https://asmeurer.github.io/python3-presentation/python3-presentation.pdf)
 - [Learn Python TheHard Way](http://learnpythonthehardway.org/)
 - [Quick reference to Python in a single script](http://www.dataschool.io/python-quick-reference/)
 - [Damn the torpedoes, full speed ahead: making the switch to Python 3](http://www.onthelambda.com/2014/05/13/damn-the-torpedoes-full-speed-ahead-making-the-switch-to-python-3/)
@@ -649,21 +668,22 @@ An Englishman in Copenhagen writing about digital, music and anything else. Pres
 - [Pineapple](http://nwhitehead.github.io/pineapple/). The next generation of scientific notebook. A standalone frontend to IPython for Mac.
 - [Python(x,y) - the scientific Python distribution](http://python-xy.github.io/)
 - [Bokeh](http://bokeh.pydata.org/en/latest/) is a Python interactive visualization library that targets modern web browsers for presentation. Its goal is to provide elegant, concise construction of novel graphics in the style of D3.js, but also deliver this capability with high-performance interactivity over very large or streaming datasets. Bokeh can help anyone who would like to quickly and easily create interactive plots, dashboards, and data applications.
-- [CORBA & Python]
-	- [omniORB is a robust high performance CORBA ORB for C++ and Python](http://omniorb.sourceforge.net/)
-	- [PyORBit](https://github.com/GNOME/pyorbit) или на [PyPI](https://pypi.python.org/pypi/PyORBit). This is a Python language binding for the ORBit2 CORBA implementation.
+- [Scipy Lecture Notes
+One document to learn numerics, science, and data with Python](http://www.scipy-lectures.org/)
 - [The Blaze ecosystem](http://blaze.pydata.org/) is a set of libraries that help users store, describe, query and process data. It is composed of the following core projects:
 	- Blaze: An interface to query data on different storage systems
 	- Dask: Parallel computing through task scheduling and blocked algorithms
 	- Datashape: A data description language
 	- DyND: A C++ library for dynamic, multidimensional arrays
 	- Odo: Data migration between different storage systems
-- [Scipy Lecture Notes
-One document to learn numerics, science, and data with Python](http://www.scipy-lectures.org/)
+
 - [from R to Python (2): libraries for statistical analysis](https://tmfujis.wordpress.com/2015/04/23/from-r-to-python-2-libraries-for-statistical-analysis/)
 - [assertpy](https://github.com/ActivisionGameScience/assertpy). Dead simple assertions framework for unit testing in Python with a nice fluent API. Supports both Python 2 and 3.
 - [Advanced Jupyter Notebook Tricks — Part I](http://blog.dominodatalab.com/lesser-known-ways-of-using-notebooks/)
 - [Building Interactive Dashboards with Jupyter - Part II](http://blog.dominodatalab.com/interactive-dashboards-in-jupyter/)
+- [CORBA & Python]
+	- [omniORB is a robust high performance CORBA ORB for C++ and Python](http://omniorb.sourceforge.net/)
+	- [PyORBit](https://github.com/GNOME/pyorbit) или на [PyPI](https://pypi.python.org/pypi/PyORBit). This is a Python language binding for the ORBit2 CORBA implementation.
 
 
 # Julia
@@ -699,6 +719,7 @@ This problem is not usually addressed in time series analysis, because time seri
 	- [Understanding the beta distribution (using baseball statistics)](http://varianceexplained.org/statistics/beta_distribution_and_baseball/)
 	- [Understanding empirical Bayes estimation (using baseball statistics)](http://varianceexplained.org/r/empirical_bayes_baseball/)
 	- [Understanding credible intervals (using baseball statistics)](http://varianceexplained.org/r/credible_intervals_baseball/)
+	- [The 'lost boarding pass' puzzle: efficient simulation in R](http://varianceexplained.org/r/boarding-pass-simulation/)
 
 
 # Regression
@@ -733,8 +754,6 @@ This problem is not usually addressed in time series analysis, because time seri
 2. Использовать функцию [stat_function()](https://kohske.wordpress.com/2010/12/25/draw-function-without-data-in-ggplot2/)
 
 
-
-
 # Great Visualisation demo
 - [Mike Bostock](http://bost.ocks.org/mike/). CO-O-O-L Visualization
 	- [Visualizing Algorithms](http://bost.ocks.org/mike/algorithms/)
@@ -744,6 +763,7 @@ This problem is not usually addressed in time series analysis, because time seri
 - [MLDemos](http://mldemos.epfl.ch/) is an open-source visualization tool for machine learning algorithms created to help studying and understanding how several algorithms function and how their parameters affect and modify the results in problems of classification, regression, clustering, dimensionality reduction, dynamical systems and reward maximization.
 MLDemos is open-source and free for personal and academic use.
 - [Visualizing MBTA Data](http://mbtaviz.github.io/). An interactive exploration of Boston's subway system
+- [Visualising your hiking trails and photos with My Tracks, R and Leaflet](http://mhermans.net/hiking-gpx-r-leaflet.html)
 
 ## HTML slides
 - [R you ready to ggplot2?](http://tonyfujs.github.io/ggplot_post/02_gg_basic) (Presentation) Basic Plots. October 15, 2014. Tony Fujs
@@ -755,3 +775,6 @@ MLDemos is open-source and free for personal and academic use.
 - [Github failed to sync branch](http://stackoverflow.com/questions/15082809/github-failed-to-sync-branch). *** Couldn't reserve space for cygwin's heap, Win32 error 0
 - [Git Extensions: Win32 error 487: Couldn't reserve space for cygwin's heap, Win32 error 0](http://stackoverflow.com/questions/18502999/git-extensions-win32-error-487-couldnt-reserve-space-for-cygwins-heap-win32). tasklist /m msys-1.0.dll
 - [Comprehensive Review of Atlassian SourceTree](http://hanxue-it.blogspot.com/2014/06/comprehensive-review-of-atlassian.html)
+- Git-Flow:
+	- [Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows)
+- [Git Tutorial](http://tutorials.jenkov.com/git/index.html)

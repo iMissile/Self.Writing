@@ -17,6 +17,11 @@
 	- [Web Development Reading List #110: Jekyll, libSass, 2G Tuesdays and Service Workers](http://www.smashingmagazine.com/2015/10/web-development-reading-list-110/)
 	- [Why Static Website Generators Are The Next Big Thing](http://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/)
 	- [ECMAScript 6 (ES6): What’s New In The Next Version Of JavaScript](http://www.smashingmagazine.com/2015/10/es6-whats-new-next-version-javascript/)
+	- [Why Performance Matters, Part 1: The Perception Of Time](http://www.smashingmagazine.com/2015/09/why-performance-matters-the-perception-of-time/)
+	- [Why Performance Matters, Part 2: Perception Management](http://www.smashingmagazine.com/2015/11/why-performance-matters-part-2-perception-management/)
+	- [Why Performance Matters, Part 3: Tolerance Management](http://www.smashingmagazine.com/2015/12/performance-matters-part-3-tolerance-management/)
+
+- [10 Recommended eBooks for UX/UI Designers](https://medium.com/muzli-design-inspiration/10-recommended-ebooks-for-ux-ui-designers-f296838b202c#.fomhgsk4y)
 
 
 
