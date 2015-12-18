@@ -294,6 +294,7 @@ Data science interviews are the worst because data science is interdisciplinary:
 - [Interview with a Data Scientist: Trey Causey](https://peadarcoyle.wordpress.com/2015/10/28/interview-with-a-data-scientist-trey-causey/)
 
 ## DataScience interesting articles
+- [Importance of Data Science for IoT business](http://www.kdnuggets.com/2015/12/importance-data-science-iot-business.html)
 - [Who are security data scientist?](http://www.securitydatascience.org/)
 - [The Data Science Industry: Who Does What (Infographic)](http://blog.datacamp.com/data-science-industry-infographic/)
 - [Data Science Falls Into Many Roles](http://www.forbes.com/sites/rawnshah/2015/10/06/data-science-falls-into-many-roles/)

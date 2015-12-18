@@ -10,9 +10,15 @@
 	- netplwiz - управление учетными записями пользователей
 	- control userpasswords2 - управление учетными записями пользователей
 	- dcomcnfg - настройка компонент (в частности, DCOM)
+	- "RunDll32.exe shell32.dll,Control_RunDLL hotplug.dll" - восстановление иконки безопасного извлечения устройства в Windows
+	- mmc devmgmt.msc - запуск диспетчера устройств
 
 - Запуск центра обновления Windows:
    Пуск -> Параметры -> Обновления и безопасность
+
+- [Что делать, если пропало безопасное извлечение устройства в Windows](http://remontka.pro/propalo-bezopasnoe-izvlechenie/) или [здесь](http://pomogaemkompu.temaretik.com/741888136915716896/chto-delat-esli-propalo-bezopasnoe-izvlechenie-ustrojstva-v-windows/) 
+- [«Безопасное извлечение устройства» использовать или нет?](http://nn-lab.ru/windows/bezopasnoe-izvlechenie-ustrojstva-ispolzovat-ili-net.php)
+А [тут вот] детальные изыскания по поводу пропавшей закладки "Политика"
 
 Win 10 ставится на Win 8.1
 SP1 можно получить через web: [Service Pack and Update Center](http://windows.microsoft.com/en-us/windows/service-packs-download)

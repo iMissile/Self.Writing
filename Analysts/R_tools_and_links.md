@@ -22,6 +22,7 @@
 		- devtools - Package development
 		- roxygen2 - Document your functions
 		- testthat - Automatic code testing
+		- secure -  Secure vault within a publicly available code repository
 
 ## Концептуальные материалы
 - [Gartner. Massive innovations in data science yet to come](http://blogs.gartner.com/alexander-linden/2015/08/27/massive-innovations-in-data-science-yet-to-come/). August 27, 2015
@@ -88,7 +89,10 @@ Predictive applications automate decision-making based on current and historical
 - [60+ Free Books on Big Data, Data Science, Data Mining, Machine Learning, Python, R, and more](http://www.kdnuggets.com/2015/09/free-data-science-books.html)
 
 ## Data Processing articles (COOL)
+- [RDataMining.com: R and Data Mining](http://www.rdatamining.com/home)
+- [Recommendation System in R](http://blog.yhathq.com/posts/recommender-system-in-r.html)
 - [The Fallacy of Sample Size](http://datadrivensecurity.info/blog/posts/2015/Nov/samplesize/)
+- [Securely storing your secrets in R code](http://blog.revolutionanalytics.com/2015/12/securely-storing-your-secrets-in-r-code.html)
 - [Using MonetDB[Lite] with real-world CSV files](http://rud.is/b/2015/11/11/using-monetdblite-with-real-world-csv-files/)
 - [DATA.TABLE VS. DPLYR IN SPLIT APPLY COMBINE STYLE ANALYSIS](http://www.brodieg.com/?p=7)
 - [Data Science with R by Garrett Grolemund](http://garrettgman.github.io/)
@@ -115,6 +119,7 @@ Predictive applications automate decision-making based on current and historical
 - Apply family:
 	- [Repeating things: looping and the apply family](http://nicercode.github.io/guides/repeating-things/)
 	- [Vectorization in R: Why?](http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html)
+	- [7 Important Ways to Summarise Data in R](http://www.analyticsvidhya.com/blog/2015/12/7-important-ways-summarise-data/). apply, lapply, sapply, tapply, by, sqldf, ddply
 	- [R Tutorial: Intro to Loops (While, For, Repeat, Apply, etc!)](https://blog.udemy.com/r-tutorial/)
 	- [R tutorial on the Apply family of functions](http://blog.datacamp.com/r-tutorial-apply-family/)
 	- [Using apply, sapply, lapply in R](http://petewerner.blogspot.ru/2012/12/using-apply-sapply-lapply-in-r.html)
@@ -136,6 +141,8 @@ Predictive applications automate decision-making based on current and historical
 	- [expand.grid()](http://www.endmemo.com/program/R/expand_grid.php) function creates a data frame from all combinations of the supplied vectors or factors.
 	- [The R data.table package provides an enhanced version of data.frame](https://github.com/Rdatatable/data.table/wiki)
 	- [data.table vs dplyr: can one do something well the other can't or does poorly?](http://stackoverflow.com/questions/21435339/data-table-vs-dplyr-can-one-do-something-well-the-other-cant-or-does-poorly)
+	- [Two of my favorite data.table features](http://educate-r.org/2014/01/06/FavDataTable/)
+	- [Solve common R problems efficiently with data.table](http://jangorecki.github.io/blog/2015-12-11/Solve-common-R-problems-efficiently-with-data.table.html)
 	- [automatic indexing vs between() on integer ranges](https://gist.github.com/arunsrinivasan/dacb9d1cac301de8d9ff)
 
 - [readr 0.1.0](http://blog.rstudio.org/2015/04/09/readr-0-1-0/)
@@ -287,7 +294,6 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [JUT is a Dataflow Analytics Platform Built For Devops](http://www.jut.io/) Live Meets Historical Events Meets Metrics
 - [4 data wrangling tasks in R for advanced beginners](http://www.computerworld.com/article/2486425/business-intelligence-4-data-wrangling-tasks-in-r-for-advanced-beginners.html)
 - [Hands-on with dplyr](https://github.com/dgrapov/TeachingDemos/blob/master/Demos/dplyr/hands_on_with_dplyr.md)
-- [Two of my favorite data.table features](http://educate-r.org/2014/01/06/FavDataTable/)
 - [New Pacakge “docxtractr” – Easily Extract Tables From Microsoft Word Docs](http://rud.is/b/2015/08/24/new-pacakge-docxtractr-easily-extract-tables-from-microsoft-word-docs/). docxtractr is an R pacakge for extracting tables out of Word documents (docx)
 
 
@@ -370,6 +376,8 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 
 
 ### Бизнес-решения
+- [Data Science Hero](http://datascienceheroes.com/). We are a new company working for the best results on Data Science projects. 
+We have a mixed skill set and a lot of experience with Data Science with Big Data, we can help you get your project done.
 - [MapR](https://www.mapr.com/) is a complete distribution for Apache Hadoop that packages more than a dozen projects from the Hadoop ecosystem to provide you with a broad set of big data capabilities. The MapR platform not only provides enterprise-grade features such as high availability, disaster recovery, security, and full data protection but also allows Hadoop to be easily accessed as traditional network attached storage (NAS) with read-write capabilities
 	- [Axibase Time Series Database (ATSD](https://www.mapr.com/apps/axibase-time-series-database#main). ATSD is a statistics database built on top of HBase that includes metric storage, analytical rule engine, alerting, forecasting and visualization.
 - [AxiBase](http://axibase.com/). End-to-end Reporting And Analytics For Enterprise It. Products:
@@ -662,6 +670,7 @@ An Englishman in Copenhagen writing about digital, music and anything else. Pres
 - [Python2orPython3](https://wiki.python.org/moin/Python2orPython3). Should I use Python 2 or Python 3 for my development activity
 - [10 awesome features of Python that you can't use because you refuse to upgrade to Python 3](https://asmeurer.github.io/python3-presentation/python3-presentation.pdf)
 - [Learn Python TheHard Way](http://learnpythonthehardway.org/)
+- [Welcome to the LearnPython.org interactive Python tutorial.](http://www.learnpython.org/)
 - [Quick reference to Python in a single script](http://www.dataschool.io/python-quick-reference/)
 - [Damn the torpedoes, full speed ahead: making the switch to Python 3](http://www.onthelambda.com/2014/05/13/damn-the-torpedoes-full-speed-ahead-making-the-switch-to-python-3/)
 - [Sake](http://tonyfischetti.github.io/sake/). A self-documenting build automation tool
@@ -709,6 +718,7 @@ This problem is not usually addressed in time series analysis, because time seri
 Соотв. R пакеты. [www.gstat.org](http://www.gstat.org/). [Sgeostat](http://www.rdocumentation.org/packages/sgeostat)
 
 # Anomaly Detection
+- [Anomaly Detection in R](http://blog.datascienceheroes.com/anomaly-detection-in-r/)
 - [Introducing practical and robust anomaly detection in a time series](https://blog.twitter.com/2015/introducing-practical-and-robust-anomaly-detection-in-a-time-series). Twitter open-source R package [AnomalyDetection](https://github.com/twitter/AnomalyDetection).
 - [Anomaly Detection – Using Machine Learning to Detect Abnormalities in Time Series Data](http://blogs.technet.com/b/machinelearning/archive/2014/11/05/anomaly-detection-using-machine-learning-to-detect-abnormalities-in-time-series-data.aspx). Microsoft Machine Learning Blog
 
