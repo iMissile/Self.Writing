@@ -97,6 +97,7 @@ Predictive applications automate decision-making based on current and historical
 - [DATA.TABLE VS. DPLYR IN SPLIT APPLY COMBINE STYLE ANALYSIS](http://www.brodieg.com/?p=7)
 - [Data Science with R by Garrett Grolemund](http://garrettgman.github.io/)
 - dplyr:
+	- [Hands-on with dplyr](https://github.com/dgrapov/TeachingDemos/blob/master/Demos/dplyr/hands_on_with_dplyr.md)
 	- [Window functions and grouped mutate/filter](http://cran.r-project.org/web/packages/dplyr/vignettes/window-functions.html). ! Offsets lead() and lag() allow you to access the previous and next values in a vector, making it easy to compute differences and trends.
 	- [Non-standard evaluation](https://cran.r-project.org/web/packages/dplyr/vignettes/nse.html). Здесь можно почитать про конструкцию '.dot' (п. Setting variable names)
 	- [dplyr/vignettes](https://cran.rstudio.com/web/packages/dplyr/vignettes/) by Hadley Wickham. data_frames.html; databases.html; hybrid-evaluation.html; introduction.html; new-sql-backend.html; nse.html; two-table.html;  window-functions.html;
