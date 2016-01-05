@@ -145,6 +145,10 @@ Predictive applications automate decision-making based on current and historical
 	- [Two of my favorite data.table features](http://educate-r.org/2014/01/06/FavDataTable/)
 	- [Solve common R problems efficiently with data.table](http://jangorecki.github.io/blog/2015-12-11/Solve-common-R-problems-efficiently-with-data.table.html)
 	- [automatic indexing vs between() on integer ranges](https://gist.github.com/arunsrinivasan/dacb9d1cac301de8d9ff)
+- Subsetting
+	- [Frequently Asked Questions about R: How can I subset a data set?](http://www.ats.ucla.edu/stat/r/faq/subset_R.htm)
+	- [subset vs array indexing: which will cause the least grief in R?](http://shape-of-code.coding-guidelines.com/2016/01/04/subset-vs-array-indexing-which-will-cause-the-least-grief-in-r/)
+	- [Non-standard evaluation in subset](http://adv-r.had.co.nz/Computing-on-the-language.html#subset)
 
 - [readr 0.1.0](http://blog.rstudio.org/2015/04/09/readr-0-1-0/)
 - [Introduction to data.tree](http://cran.r-project.org/web/packages/data.tree/vignettes/data.tree.html)
@@ -309,6 +313,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 	- [A Tutorial on Loops in R – Usage and Alternatives](http://blog.datacamp.com/tutorial-on-loops-in-r/)
 - [Introduction to R](http://ateucher.github.io/rcourse_site/). On this page you will find links to the data we need for the course, as well as course notes for each of the modules
 - [Introduction to R](https://ramnathv.github.io/pycon2014-r/). These are notes for an introductory R workshop I am teaching for Python Programmers.
+- [Getting started with d3.js](http://vudlab.com/#/learn). I'm assuming you know nothing about programming. Don't get worried if something is confusing, and DON'T bang your head against a wall trying to figure things out. Check if someone on stack overflow has already had the same problem, ask someone at VUDlab, or just move on and keep reading.
 - [OnePageR. A Survival Guide to Data Science with R](http://togaware.com/onepager/)
 - [Swirl](http://swirlstats.com/) teaches you R programming and data science interactively, at your own pace, and right in the R console!
 - [A slightly different introduction to R](https://martinsbioblogg.wordpress.com/a-slightly-different-introduction-to-r/). This is tutorial on how to get started with R for data analysis.
@@ -536,7 +541,6 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [Forecasting time series data](http://stackoverflow.com/questions/10302261/forecasting-time-series-data)  (возврат к датам по оси X)
 - [Is there an easy way to revert a forecast back into a time series for plotting?](http://stackoverflow.com/questions/18137745/is-there-an-easy-way-to-revert-a-forecast-back-into-a-time-series-for-plotting) (возврат к датам по оси X)
 - [R: sourcing files using a relative path](http://stackoverflow.com/questions/12048436/r-sourcing-files-using-a-relative-path)
-- [Frequently Asked Questions about R: How can I subset a data set?](http://www.ats.ucla.edu/stat/r/faq/subset_R.htm)
 - [Dygraph - how to change language in date format?](http://stackoverflow.com/questions/23867618/dygraph-how-to-change-language-in-date-format). with the options is harder because you have to considerer the granularity, but you can edit dygraph-combined.js changing the names of months and days, for example, replace text "Jan" with "Sty" and so on, then save and use it
 - [Saving and loading data.frames](http://stackoverflow.com/questions/13206876/saving-and-loading-data-frames)
 - [tally {dplyr}](http://www.inside-r.org/node/230679). Tally observations by group. tally is a convenient wrapper for summarise that will either call n or sum(n) depending on whether you're tallying for the first time, or re-tallying.
@@ -775,6 +779,9 @@ This problem is not usually addressed in time series analysis, because time seri
 MLDemos is open-source and free for personal and academic use.
 - [Visualizing MBTA Data](http://mbtaviz.github.io/). An interactive exploration of Boston's subway system
 - [Visualising your hiking trails and photos with My Tracks, R and Leaflet](http://mhermans.net/hiking-gpx-r-leaflet.html)
+- [Simpson's Paradox](http://vudlab.com/simpsons/). Girls gone average. Averages gone wild.
+- [Visualizing the BART Labor Dispute](http://enjalot.github.io/bart/)
+- [The Visualizing Urban Data Idealab (VUDlab)](http://vudlab.com/#/portfolio) is a student-led organization formed at University of California-Berkeley in May 2013. It is a project of the Blum Center for Developing Economies IdeaLabs program.
 
 ## HTML slides
 - [R you ready to ggplot2?](http://tonyfujs.github.io/ggplot_post/02_gg_basic) (Presentation) Basic Plots. October 15, 2014. Tony Fujs
