@@ -366,6 +366,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 ### Tutorial
 - [A very quick introduction to ggplot2](http://chrisladroue.com/extra/ggplot2Intro/introductionGGplot2/)
 - COOL! [Beautiful plotting in R: A ggplot2 cheatsheet](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/)
+- [ggplot2, ggthemes and ggthemr](https://rpubs.com/m_dev/gg_themes) by M. Devlin, July 2015
 - [Quick Introduction to ggplot2](http://blog.echen.me/2012/01/17/quick-introduction-to-ggplot2/)
 - [An Introduction to reshape2](http://seananderson.ca/2013/10/19/reshape.html)
 - [RHadoop Tutorial](http://cdn.oreillystatic.com/en/assets/1/event/100/Using%20R%20and%20Hadoop%20for%20Statistical%20Computation%20at%20Scale%20Presentation.htm#/)
