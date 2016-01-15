@@ -95,6 +95,7 @@ Predictive applications automate decision-making based on current and historical
 - [Securely storing your secrets in R code](http://blog.revolutionanalytics.com/2015/12/securely-storing-your-secrets-in-r-code.html)
 - [Using MonetDB[Lite] with real-world CSV files](http://rud.is/b/2015/11/11/using-monetdblite-with-real-world-csv-files/)
 - [DATA.TABLE VS. DPLYR IN SPLIT APPLY COMBINE STYLE ANALYSIS](http://www.brodieg.com/?p=7)
+- [What Do We Ask In Stack Overflow](http://jkunst.com/r/what-do-we-ask-in-stackoverflow/)
 - [Data Science with R by Garrett Grolemund](http://garrettgman.github.io/)
 - dplyr:
 	- [Hands-on with dplyr](https://github.com/dgrapov/TeachingDemos/blob/master/Demos/dplyr/hands_on_with_dplyr.md)
@@ -639,7 +640,7 @@ How can I time my code?](http://www.ats.ucla.edu/stat/r/faq/timing_code.htm)
 	- [TensorBoard: Graph Visualization](http://tensorflow.org/how_tos/graph_viz/index.md)
 - [Theoretical Motivations for Deep Learning](http://rinuboney.github.io/2015/10/18/theoretical-motivations-deep-learning.html). Deep learning is a branch of machine learning algorithms based on learning multiple levels of representation. The multiple levels of representation corresponds to multiple levels of abstraction. This post explores the idea that if we can successfully learn multiple levels of representation then we can generalize well.
 - [Deep Learning Startups, Applications and Acquisitions – A Summary](http://blog.dennybritz.com/2015/10/13/deep-learning-startups-applications-and-acquisitions-a-summary/). October'15
-- [Machine Learning for Developers (xyclade.ml)](https://xyclade.github.io/MachineLearning/). COOL	
+- [Machine Learning for Developers (xyclade.ml)](https://xyclade.github.io/MachineLearning/). COOL!
 - [The fourth generation of machine learning: Adaptive learning](http://idibon.com/the-fourth-generation-of-machine-learning-adaptive-learning/)
 - [A Visual Introduction to Machine Learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
 - [Machine Learning Done Wrong](http://ml.posthaven.com/machine-learning-done-wrong)
