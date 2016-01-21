@@ -10,12 +10,15 @@ http://www.worldtimebuddy.com/
 Краткая сводка по редакторам позаимствована [отсюда](http://sixrevisions.com/tools/online-markdown-editors) и [отсюда](http://mashable.com/2013/06/24/markdown-tools/) (_78 Tools for Writing and Previewing Markdown_)
 
 1. [StackEdit](https://stackedit.io)
+1. [Dillinger](http://dillinger.io)
 1. [Draft](https://draftin.com)
 1. [Markable](http://markable.in/editor)
 1. [Writebox](https://write-box.appspot.com)
 
 ## Offline Editors
 1. [MarkdownPad](http://markdownpad.com)
+1. [Haroopad](http://pad.haroopress.com)
+1. [Writemonkey](http://writemonkey.com)
 1. [Atom](https://atom.io)
 1. [MarkPad](http://code52.org/DownmarkerWPF)
 1. [Texts](http://www.texts.io)
@@ -49,8 +52,8 @@ http://www.worldtimebuddy.com/
 - [Dropplets](http://dropplets.com/). Welcome to an Easier Way to Blog. Introducing Dropplets, a fresh platform dedicated to making blogging simple again. With no database, you can install Dropplets in seconds on any server, compose offline using markdown, then simply upload to publish.
 
 ## Converters
-- [to-markdown](http://domchristie.github.io/to-markdown/) online конвертер текста. Ссылка взята [отсюда](http://galengidman.com/2014/03/13/html-to-markdown-converter/)
 - [URL to Markdown online converter and Reader](http://heckyesmarkdown.com/). Brought to you by Marked 2. Авторский [сайт](http://brettterpstra.com/). | **Welcome to Heck Yes Markdown!**
+- [to-markdown](http://domchristie.github.io/to-markdown/) online конвертер текста. Ссылка взята [отсюда](http://galengidman.com/2014/03/13/html-to-markdown-converter/)
 - [Universal Text Document Converter](http://devotter.com/converter). Преобразование файлов.
 - [Pandoc](http://johnmacfarlane.net/pandoc/) is a universal document converter
 - [Tables Generator](http://www.tablesgenerator.com/). Entering tables in LaTeX documents can be burdensome because of the necessary formatting directives. For this purpose we created this online generator which (hopefully) will allow you to generate LaTeX code you can just copy & paste into your document's source. Our editor is close to WYSIWYG (What You See Is What You Got) principle, i.e. the table displayed in the editor should resemble the final table

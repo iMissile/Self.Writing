@@ -1,11 +1,10 @@
 # DataScience
 
 ## [Как устроен рынок big data в России](http://rusbase.com/howto/big-data-in-russia/)
-	- [Yandex Data Factory](https://yandexdatafactory.com/)
-	- [Алгомост](http://algomost.com/)
-	- [Data-Centric Alliance](http://datacentric.ru/)
-	- [Human Factor Labs](http://hflabs.ru/)
-
+- [Yandex Data Factory](https://yandexdatafactory.com/)
+- [Алгомост](http://algomost.com/)
+- [Data-Centric Alliance](http://datacentric.ru/)
+- [Human Factor Labs](http://hflabs.ru/)
 - [Everpoint GIS](http://www.everpoint.ru/)
 
 ## Myths about Statistics & Big Data
@@ -294,6 +293,7 @@ Data science interviews are the worst because data science is interdisciplinary:
 - [Interview with a Data Scientist: Trey Causey](https://peadarcoyle.wordpress.com/2015/10/28/interview-with-a-data-scientist-trey-causey/)
 
 ## DataScience interesting articles
+- [Data Scientist vs Data Engineer](http://datareview.info/article/data-scientist-vs-data-engineer/). На русском. Нашел по поиску DAD vs ETL.
 - [Importance of Data Science for IoT business](http://www.kdnuggets.com/2015/12/importance-data-science-iot-business.html)
 - [Who are security data scientist?](http://www.securitydatascience.org/)
 - [The Data Science Industry: Who Does What (Infographic)](http://blog.datacamp.com/data-science-industry-infographic/)

@@ -1,3 +1,7 @@
+# Распродажа софта
+- [$2 tuesday](http://twodollartues.com/)
+- [Mac App Deals](http://www.macappdeals.com/). Your Source To Finding Discounts On Great Mac Software
+
 # Полезные сайты про macos
 - [ixrevo](http://ixrevo.me/blog/). Привет! Меня зовут Александр Сокол. Я интересуюсь музыкой, наукой, компьютерами Mac, веб‑дизайном, WordPress разработкой и веду этот блог.
 - [MacOS World](http://macosworld.ru/). Про программы.
@@ -11,11 +15,12 @@
 
 Итого, 
 1. Сносим Evernote с помощью CleanMyMac, если стояла инсталляция с AppStore. Загружаем с сайта www.evernote.com
-2. В пользовательской директории делаем видимой папку Библиотеки. **chflags nohidden ~/Library**
+2. В пользовательской директории делаем видимой папку Библиотеки. Вбиваем в Терминале **chflags nohidden ~/Library**
 3. Ищем базу данных. [5.6 Version of the Direct Download](http://www.christopher-mayo.com/?p=135)
 /Users/Your Username Here/Library/Application Support/com.evernote.Evernote/accounts/
 Переносим ее на внешний диск.
-4. Переходим в терминале в директорию где надо сделать ссылку с данными. Делаем Symbolic Link с помощью команды ln -s "перетаскиваем терминал директорию, ссылку на которую надо сделать"
+4. Переходим в терминале в директорию где надо сделать ссылку с данными. Делаем Symbolic Link с помощью команды ln -s "перетаскиваем в терминал директорию, ссылку на которую надо сделать"
+5. Обратно скрываем папку Библиотеки. Вбиваем в Терминале **chflags hidden ~/Library**
 
 
 
@@ -30,3 +35,9 @@
 
 # Разное
 - [Запятая и точка на русской клавиатуре Mac. Удобное сочетание клавиш](http://yablyk.com/037778-lajfxak-udobnyj-sposob-nabora-zapyatoj-i-tochki-na-os-x/)
+- [Finder минималиста](http://macosworld.ru/finder-minimalista/)
+- [OS X Mavericks: Как открыть программу от неустановленного разработчика](https://support.apple.com/kb/PH14369?locale=ru_RU&viewlocale=ru_RU). Дополнительный вариант настроек через меню безопасности можно найти здесь: [Вариант 2 - Запуск Firefox через Системные настройки](https://support.mozilla.org/ru/kb/firefox-ne-zapuskaetsya-posle-ustanovki-ego-na-mac)
+- [Как правильно смотреть любое видео на Mac](http://kakpravilno.info/kak-pravilno-smotret-ljuboe-video-na-mac-46.html)
+
+
+
