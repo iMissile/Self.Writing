@@ -772,6 +772,7 @@ This problem is not usually addressed in time series analysis, because time seri
 
 
 # Great Visualisation demo
+- [Information is beatiful](http://www.informationisbeautiful.net/). Ideas, issues, knowledge, data - visualized!
 - [Mike Bostock](http://bost.ocks.org/mike/). CO-O-O-L Visualization
 	- [Visualizing Algorithms](http://bost.ocks.org/mike/algorithms/)
 - [Visualizing Sort Algorithms with ggplot](http://jkunst.com/r/visualizing-sort-algorithms-with-ggplot/)

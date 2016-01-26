@@ -1,6 +1,10 @@
 # Распродажа софта
 - [$2 tuesday](http://twodollartues.com/)
 - [Mac App Deals](http://www.macappdeals.com/). Your Source To Finding Discounts On Great Mac Software
+- [MacUpdate](http://www.macupdate.com/) simplifies finding, buying and installing apps for your Mac
+- [BundleHunt](http://bundlehunt.com/). A one-stop daily deals site
+- [Stack Social](https://stacksocial.com/)
+- [AppShopper(]http://appshopper.com/mac/)
 
 # Полезные сайты про macos
 - [ixrevo](http://ixrevo.me/blog/). Привет! Меня зовут Александр Сокол. Я интересуюсь музыкой, наукой, компьютерами Mac, веб‑дизайном, WordPress разработкой и веду этот блог.

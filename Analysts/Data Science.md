@@ -293,6 +293,10 @@ Data science interviews are the worst because data science is interdisciplinary:
 - [Interview with a Data Scientist: Trey Causey](https://peadarcoyle.wordpress.com/2015/10/28/interview-with-a-data-scientist-trey-causey/)
 
 ## DataScience interesting articles
+- 10 More lessons learned from building real-life Machine Learning systems 
+	— [Part I](https://medium.com/@xamat/10-more-lessons-learned-from-building-real-life-ml-systems-part-i-b309cafc7b5e)
+	- [Part II](https://medium.com/@xamat/10-more-lessons-learned-from-building-real-life-machine-learning-systems-part-ii-93fe7008fa9)
+- [Scientific American Blog](http://www.scientificamerican.com/)
 - [Data Scientist vs Data Engineer](http://datareview.info/article/data-scientist-vs-data-engineer/). На русском. Нашел по поиску DAD vs ETL.
 - [Importance of Data Science for IoT business](http://www.kdnuggets.com/2015/12/importance-data-science-iot-business.html)
 - [Who are security data scientist?](http://www.securitydatascience.org/)
