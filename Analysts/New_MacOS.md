@@ -6,9 +6,14 @@
 - [Stack Social](https://stacksocial.com/)
 - [AppShopper(]http://appshopper.com/mac/)
 
+# Hack
+- [MacX.ws](https://macx.ws)
+
 # Полезные сайты про macos
-- [ixrevo](http://ixrevo.me/blog/). Привет! Меня зовут Александр Сокол. Я интересуюсь музыкой, наукой, компьютерами Mac, веб‑дизайном, WordPress разработкой и веду этот блог.
+- [ixrevo](http://ixrevo.me/blog/). Привет! Меня зовут Александр Сокол. Я интересуюсь музыкой, наукой, компьютерами Mac, веб-дизайном, WordPress разработкой и веду этот блог.
 - [MacOS World](http://macosworld.ru/). Про программы.
+- [Set up Git and Mercurial (Mac OSX)](https://confluence.atlassian.com/bitbucket/set-up-git-and-mercurial-mac-osx-269981802.html)
+
 
 # Перенос базы Evernote на другой диск
 1. Вообще, зачем это надо: [Slim down your SSD with symbolic link](http://www.macworld.com/article/2148490/slim-down-your-ssd-with-symbolic-links.html#tk.nl_mwdaily)

@@ -26,6 +26,7 @@ http://www.worldtimebuddy.com/
 1. [Typed](http://realmacsoftware.com/typed) is the Best Minimal Writing App and Markdown Editor for Mac.
 1. [Mou](http://25.io/mou/). Markdown editor for developers.
 1. [Remarkable](http://remarkableapp.net/) A Free Fully Featured Markdown Editor For Linux
+1. [Qute for PC/Mac](http://www.inkcode.net/qute) is a text editor with Markdown and TeX support. Qute offers per paragraph preview, i.e., users can switch between editing the source and viewing a rich text rendering with typeset formulas for each paragraph separately.
 1. [SublimeText](http://www.sublimetext.com/)
   1. [Using R in Sublime Text 3](http://www.kevjohnson.org/using-r-in-sublime-text-3/). This post will get you up and running using R in Sublime Text 3. If you’re not familiar with Sublime Text I recommend watching these videos. It focuses on Macs and it’s a bit outdated, but it’s a really good introduction to what you can do with Sublime Text.
   1. [Package Control](https://packagecontrol.io/installation)
