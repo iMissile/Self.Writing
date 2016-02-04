@@ -89,6 +89,8 @@ Predictive applications automate decision-making based on current and historical
 - [60+ Free Books on Big Data, Data Science, Data Mining, Machine Learning, Python, R, and more](http://www.kdnuggets.com/2015/09/free-data-science-books.html)
 
 ## Data Processing articles (COOL)
+- [# R & Github little_tricks](https://github.com/bdemeshev/em301/wiki/little_tricks). Русские не сдаются! Общая стратегия: переводить все файлы в одну кодировку.
+На linux и mac -- в utf8. На windows -- в cp1251. О utf8 остаётся только мечтать.
 - [RDataMining.com: R and Data Mining](http://www.rdatamining.com/home)
 - [Recommendation System in R](http://blog.yhathq.com/posts/recommender-system-in-r.html)
 - [The Fallacy of Sample Size](http://datadrivensecurity.info/blog/posts/2015/Nov/samplesize/)

@@ -1,10 +1,17 @@
 # Распродажа софта
 - [$2 tuesday](http://twodollartues.com/)
-- [Mac App Deals](http://www.macappdeals.com/). Your Source To Finding Discounts On Great Mac Software
+- [MacAppDeals](http://www.macappdeals.com/). Your Source To Finding Discounts On Great Mac Software
 - [MacUpdate](http://www.macupdate.com/) simplifies finding, buying and installing apps for your Mac
 - [BundleHunt](http://bundlehunt.com/). A one-stop daily deals site
 - [Stack Social](https://stacksocial.com/)
-- [AppShopper(]http://appshopper.com/mac/)
+- [AppShopper]http://appshopper.com/mac/)
+- [AppGratis](http://appgratis.com/). Перестаньте платить! Ежедневные бесплатные приложения и скидки!
+
+# Софт под Мак
+## Tools
+- [AppZapper](http://www.appzapper.com/). The Unistaller Apple forgot
+## Текстовые редакторы
+- [Выбор текстового редактора или «хочу все в одном»](http://habrahabr.ru/post/260865/). Победил Brackets
 
 # Hack
 - [MacX.ws](https://macx.ws)
@@ -13,6 +20,12 @@
 - [ixrevo](http://ixrevo.me/blog/). Привет! Меня зовут Александр Сокол. Я интересуюсь музыкой, наукой, компьютерами Mac, веб-дизайном, WordPress разработкой и веду этот блог.
 - [MacOS World](http://macosworld.ru/). Про программы.
 - [Set up Git and Mercurial (Mac OSX)](https://confluence.atlassian.com/bitbucket/set-up-git-and-mercurial-mac-osx-269981802.html)
+
+
+# Как полностью удалить Office для Mac 2011
+- [How to Completely Uninstall Office 2011 for Mac OS X](http://www.howtogeek.com/212650/how-to-completely-uninstall-office-2011-for-mac/). Очень хорошая подробная статья про удаление в картинках.
+- [Как полностью удалить Microsoft Office 2011 из OS X](http://macilove.com/news/how-to-completely-remove-microsoft-office-2011-from-os-x/). Пошаговая инструкция по удалению пакета Office 2011 и всех его сопутствующих файлов из Mac OS X
+- [База знаний Microsoft](https://support.microsoft.com/ru-ru/kb/2398768)
 
 
 # Перенос базы Evernote на другой диск
@@ -33,19 +46,19 @@
 
 
 
-## Акции и скидки
-- [MacAppDeals](http://www.macappdeals.com/). Your Source To Finding Discounts On Great Mac Software
-
-# Софт под Мак
-## Tools
-- [AppZapper](http://www.appzapper.com/). The Unistaller Apple forgot
-## Текстовые редакторы
-- [Выбор текстового редактора или «хочу все в одном»](http://habrahabr.ru/post/260865/). Победил Brackets
+# iOS
+- [Как продлить время автономной работы iPhone с iOS 9](https://www.iphones.ru/iNotes/481843)
 
 # Разное
+- [Top 10 Best VPN](http://www.top10bestvpn.com/). Find the Best VPN Service for You. Check out our top VPN services for total privacy, protection and super-fast connections.
+- Открытие и переименование файлов
+	- [[Mac для чайников] №29 Переименование](http://i-ekb.ru/2010/11/mak-dlya-chajnikov-29-pereimenovanie/). Если вы хотите, открыть файл, вы можете либо дважды щелкнуть по нему, либо выбрать его и нажать Command + O или Command + Стрелка Вниз на клавиатуре. А, отнюдь, не Enter, как в Windows.
+	- [Как открыть программу на Mac](http://appleprofi.ru/kak-otkryt-programmu-na-mac/)
 - [Запятая и точка на русской клавиатуре Mac. Удобное сочетание клавиш](http://yablyk.com/037778-lajfxak-udobnyj-sposob-nabora-zapyatoj-i-tochki-na-os-x/)
 - [Finder минималиста](http://macosworld.ru/finder-minimalista/)
-- [OS X Mavericks: Как открыть программу от неустановленного разработчика](https://support.apple.com/kb/PH14369?locale=ru_RU&viewlocale=ru_RU). Дополнительный вариант настроек через меню безопасности можно найти здесь: [Вариант 2 - Запуск Firefox через Системные настройки](https://support.mozilla.org/ru/kb/firefox-ne-zapuskaetsya-posle-ustanovki-ego-na-mac)
+- [OS X Mavericks: Как открыть программу от неустановленного разработчика](https://support.apple.com/kb/PH14369?locale=ru_RU&viewlocale=ru_RU). 1) В Finder найдите программу, которую нужно открыть. Не используйте для этого Launchpad. В Launchpad нельзя использовать контекстное меню.
+2) Нажмите клавишу Control, затем нажмите значок программы. 3) В контекстном меню выберите «Открыть». 4) Нажмите «Открыть».
+Дополнительный вариант настроек через меню безопасности можно найти здесь: [Вариант 2 - Запуск Firefox через Системные настройки](https://support.mozilla.org/ru/kb/firefox-ne-zapuskaetsya-posle-ustanovki-ego-na-mac)
 - [Как правильно смотреть любое видео на Mac](http://kakpravilno.info/kak-pravilno-smotret-ljuboe-video-na-mac-46.html)
 
 

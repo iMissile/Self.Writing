@@ -1,5 +1,6 @@
 http://www.worldtimebuddy.com/
 
+
 #Markdown разметка
 
 ## Стандарты
@@ -7,6 +8,7 @@ http://www.worldtimebuddy.com/
 - [MathJax](http://www.mathjax.org/) is an open source JavaScript display engine for mathematics that works in all browsers.
 
 ## Online Editors
+- [Онлайн-генератор таблиц](http://www.tablesgenerator.com/)
 Краткая сводка по редакторам позаимствована [отсюда](http://sixrevisions.com/tools/online-markdown-editors) и [отсюда](http://mashable.com/2013/06/24/markdown-tools/) (_78 Tools for Writing and Previewing Markdown_)
 
 1. [StackEdit](https://stackedit.io)
