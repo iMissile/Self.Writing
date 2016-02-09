@@ -1,3 +1,8 @@
+# Backups
+- [Arq](https://www.arqbackup.com/) Backs up all your computers. Simple. Awesome. 
+Arq automatically backs up all your Macs and PCs. Your files are stored securely, readable only by you.
+- [Amazon Cloud Drive](https://www.amazon.com/clouddrive/home). Unlimited Cloud Storage from Amazon
+
 # Распродажа софта
 - [$2 tuesday](http://twodollartues.com/)
 - [MacAppDeals](http://www.macappdeals.com/). Your Source To Finding Discounts On Great Mac Software

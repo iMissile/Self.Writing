@@ -734,6 +734,7 @@ This problem is not usually addressed in time series analysis, because time seri
 # Stats & p-Value
 - [What’s the probability that a significant p-value indicates a true effect?](http://www.nicebread.de/whats-the-probability-that-a-significant-p-value-indicates-a-true-effect/)
 - [VARIANCE EXPLAINED](http://varianceexplained.org/posts/)
+	- [Analyzing networks of characters in 'Love Actually'](http://varianceexplained.org/r/love-actually-network/)
 	- [Understanding the Bayesian approach to false discovery rates (using baseball statistics)](http://varianceexplained.org/r/bayesian_fdr_baseball/)
 	- [Understanding the beta distribution (using baseball statistics)](http://varianceexplained.org/statistics/beta_distribution_and_baseball/)
 	- [Understanding empirical Bayes estimation (using baseball statistics)](http://varianceexplained.org/r/empirical_bayes_baseball/)

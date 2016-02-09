@@ -178,6 +178,7 @@ In a future post in this series, we will take up the last of these in more detai
 - [Learn Data Science the Hard Way](http://www.dataphoric.com/2015/06/27/learn_data_science_the_hard_way/)
 
 ### Cool Articles
+- [An Introduction to Machine Learning with Python](https://districtdatalabs.silvrback.com/an-introduction-to-machine-learning-with-python) by Rebecca Bilbro
 - [What’s the Difference Between Data Engineering and Data Science?](http://www.galvanize.com/blog/difference-between-data-engineering-and-data-science/)
 - [Three Things About Data Science You Won't Find In the Books](http://blog.mikiobraun.de/2015/03/three-things-about-data-science.html)
 - [The Fundamentals of Data Science](http://www.micfarris.com/2014/10/the-fundamentals-of-data-science/)
@@ -327,6 +328,63 @@ Data science interviews are the worst because data science is interdisciplinary:
 - [Lessons learned from working at Continuum](https://asmeurer.github.io/blog/posts/lessons-learned-from-working-at-continuum/)
 - [Logistic Regression – Geometric Intuition](http://florianhartl.com/logistic-regression-geometric-intuition.html)
 - [Probability, Paradox, and the Reasonable Person Principle](http://nbviewer.ipython.org/url/norvig.com/ipython/Probability.ipynb)
+
+-------------------------------------------------------------------------------------------------------------------
+# [20 Questions to Detect Fake Data Scientists](https://www.import.io/post/20-questions-to-detect-fake-data-scientists/)
+
+## Вопросы
+1. Explain what regularization is and why it is useful.
+2. Which data scientists do you admire most? which startups?
+3. How would you validate a model you created to generate a predictive model of a quantitative outcome variable using multiple regression.
+4. Explain what precision and recall are. How do they relate to the ROC curve?
+5. How can you prove that one improvement you’ve brought to an algorithm is really an improvement over not doing anything?
+6. What is root cause analysis?
+7. Are you familiar with pricing optimization, price elasticity, inventory management, competitive intelligence? Give examples.
+8. What is statistical power?
+9. Explain what resampling methods are and why they are useful. Also explain their limitations.
+10. Is it better to have too many false positives, or too many false negatives? Explain.
+11. What is selection bias, why is it important and how can you avoid it?
+12. Give an example of how you would use experimental design to answer a question about user behavior.
+13. What is the difference between “long” and “wide” format data?
+14. What method do you use to determine whether the statistics published in an article (e.g. newspaper) are either wrong or presented to support the author’s point of view, rather than correct, comprehensive factual information on a specific subject?
+15. Explain Edward Tufte’s concept of “chart junk.”
+16. How would you screen for outliers and what should you do if you find one?
+17. How would you use either the extreme value theory, monte carlo simulations or mathematical statistics (or anything else) to correctly estimate the chance of a very rare event?
+18. What is a recommendation engine? How does it work?
+19. Explain what a false positive and a false negative are. Why is it important to differentiate these from each other?
+20. Which tools do you use for visualization? What do you think of Tableau? R? SAS? (for graphs). How to efficiently represent 5 dimension in a chart (or in a video)?
+
+## Найденные ответы
+1. Explain what regularization is and why it is useful.
+2. Which data scientists do you admire most? which startups?
+3. How would you validate a model you created to generate a predictive model of a quantitative outcome variable using multiple regression.
+4. Explain what precision and recall are. How do they relate to the ROC curve?
+5. How can you prove that one improvement you’ve brought to an algorithm is really an improvement over not doing anything?
+6. What is root cause analysis?
+7. Are you familiar with pricing optimization, price elasticity, inventory management, competitive intelligence? Give examples.
+8. What is statistical power?
+9. Explain what resampling methods are and why they are useful. Also explain their limitations.
+10. Is it better to have too many false positives, or too many false negatives? Explain.
+Найдено [здесь](https://www.quora.com/Is-it-better-to-have-too-many-false-positives-or-too-many-false-negatives)
+Two people owed (быть должным) money to a certain moneylender. One owed him $500, and the other $50. Neither of them had the money to pay him back, so he forgave the debts of both. Now which of them will love him more? I suppose the one who had the bigger debt forgiven.
+Let us put things into some perspective by considering the long-term effect of either option on, say, a business entity. In this sense, a false positive would mean we hired many Petersons because they made impressions that they would help take our firm to the next level. But the reality is that these Peters just won't deliver on their promises. Because they are so confident and outspoken they arm-twisted us into paying them $100,000 only for us to get a measly $10000 in return. They are ever good at making appearances, so they always manage to cover their tracks so well we can't link them to any of the losses we make. Over time, this is potentially disastrous. A false negative, on the other hand, would mean we failed to hire a couple of Joneses because they failed to impress us initially. The truth is that the Joneses, given the chance, would have indeed taken our firm to the next level. Since we didn’t hire them, our production suffers. We could have hired them for $60,000 and made $600,000 on them.
+In this case, a false positive is generally expensive but unproductive whereas a false negative is generally cheaper yet brings with it better returns.
+If we can make them (the false negative) realize that they had a heavier debt but it got waivered nonetheless, then we have them in our reins. Robert Greene says in his second Law of Power "Never put too much trust in friends, learn how to use enemies." In his opinion, which I agree with, your friends will tend to betray you quicker than your allies and enemies. Enemies are more loyal than friends because they have so much more to prove. Although it's easy to recruit friends in a time of need, you often don't know who your real friends are. This is because the nature of friendship yields many pleasantries, but these acts may not be sincere. Friend or foe, develop the ability to judge who is the best to further your agenda...the ability to read beyond the cover. Keep friends as friends, but work with those who are intelligent and skilled. 
+
+11. What is selection bias, why is it important and how can you avoid it?
+12. Give an example of how you would use experimental design to answer a question about user behavior.
+13. What is the difference between “long” and “wide” format data?
+14. What method do you use to determine whether the statistics published in an article (e.g. newspaper) are either wrong or presented to support the author’s point of view, rather than correct, comprehensive factual information on a specific subject?
+15. Explain Edward Tufte’s concept of “chart junk.”
+16. How would you screen for outliers and what should you do if you find one?
+17. How would you use either the extreme value theory, monte carlo simulations or mathematical statistics (or anything else) to correctly estimate the chance of a very rare event?
+18. What is a recommendation engine? How does it work?
+19. Explain what a false positive and a false negative are. Why is it important to differentiate these from each other?
+20. Which tools do you use for visualization? What do you think of Tableau? R? SAS? (for graphs). How to efficiently represent 5 dimension in a chart (or in a video)?
+
+
+
+
 #==================================================================
 # Описание позиции
 ## Круг задач:
