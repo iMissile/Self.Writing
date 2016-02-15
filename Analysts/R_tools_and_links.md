@@ -789,6 +789,18 @@ MLDemos is open-source and free for personal and academic use.
 - [Visualizing the BART Labor Dispute](http://enjalot.github.io/bart/)
 - [The Visualizing Urban Data Idealab (VUDlab)](http://vudlab.com/#/portfolio) is a student-led organization formed at University of California-Berkeley in May 2013. It is a project of the Blum Center for Developing Economies IdeaLabs program.
 
+# Great Visualisation conceptions & articles 
+- [38 Tools For Beautiful Data Visualisations](http://www.dbi.io/uk/blog/38-tools-for-beautiful-data-visualisations/)
+- [10 free tools for creating cool Infographics and Charts](http://www.freepik.com/blog/10-free-tools-for-creating-cool-infographics-and-charts/)
+
+- [Europe’s #1 Digital Analytics Agency](http://www.dbi.io/uk/)
+We help businesses harness the power of data and marketing technology. By joining the dots across device and across channels; we deliver increased sales and greater visibility on performance.]
+- [Visually](http://visual.ly/). Visual Content That Works. We create engaging, beautiful content that helps you stand out. It's fast, simple, and affordable.
+- [Infoactive](https://infoactive.co/).
+An online platform that enables the creation of interactive computer graphics from images and data. Infoactive offers a variety of tools to customize infographics: fonts, charts, maps, icons, and interactive filters. You can save, download and share your image, also it has an option to embed it in a blog. For use you need to create an account.
+!!!!! Infoactive joins Tableau. Infoactive has been acquired and we'll be winding down activities in the coming months. Please read our announcement.
+
+
 ## HTML slides
 - [R you ready to ggplot2?](http://tonyfujs.github.io/ggplot_post/02_gg_basic) (Presentation) Basic Plots. October 15, 2014. Tony Fujs
 - [RHadoop Tutorial](http://cdn.oreillystatic.com/en/assets/1/event/100/Using%20R%20and%20Hadoop%20for%20Statistical%20Computation%20at%20Scale%20Presentation.htm#/)
