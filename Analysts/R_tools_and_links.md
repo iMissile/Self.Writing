@@ -207,6 +207,15 @@ The codebase includes ETL and integration scripts on -
  - Classification (identify column types)
  - Default chart generation (based on simple heuristics and matching a dimension with a measure)
 
+## Scheduling tools
+- [Mistral](https://wiki.openstack.org/wiki/Mistral). Mistral is a workflow service. Most business processes consist of multiple distinct interconnected steps that need to be executed in a particular order in a distributed environment. One can describe such process as a set of tasks and task relations and upload such description to Mistral so that it takes care of state management, correct execution order, parallelism, synchronization and high availability. Mistral also provides flexible task scheduling so that we can run a process according to a specified schedule (i.e. every Sunday at 4.00pm) instead of running it immediately. We call such set of tasks and relations between them a workflow.
+- [MS Azure Scheduler](https://azure.microsoft.com/en-us/services/scheduler/). [Get started with Azure Scheduler in Azure portal](https://azure.microsoft.com/en-us/documentation/articles/scheduler-get-started-portal/)
+- [scheduleR](https://github.com/Bart6114/scheduleR/) is a framework that can be used to deploy R tasks, reports and apps.
+
+## Cloud Services
+- [JumpCloud](https://jumpcloud.com/) connects employee identities to their devices, apps, and networks
+- [MongoLab](https://mongolab.com/). Fully managed MongoDB-as-a-Service. Bring your data, and we'll manage the machines. Never think about ops again.
+
 ## Tools
 - [R](http://www.revolutionanalytics.com/) is the world’s most powerful programming language for statistical computing, machine learning and graphics as well as a thriving global community of users, developers and contributors.
 - [Quick-R](http://www.statmethods.net/): accessing the power of R
@@ -368,6 +377,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 
 ### Tutorial
 - [A very quick introduction to ggplot2](http://chrisladroue.com/extra/ggplot2Intro/introductionGGplot2/)
+- [Making Faceted Heatmaps with ggplot2](http://rud.is/b/2016/02/14/making-faceted-heatmaps-with-ggplot2/)
 - COOL! [Beautiful plotting in R: A ggplot2 cheatsheet](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/)
 - [ggplot2, ggthemes and ggthemr](https://rpubs.com/m_dev/gg_themes) by M. Devlin, July 2015
 - [Quick Introduction to ggplot2](http://blog.echen.me/2012/01/17/quick-introduction-to-ggplot2/)
@@ -386,6 +396,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 
 
 ### Бизнес-решения
+- [DataRobot](https://www.datarobot.com/). If it's not DataRobot, it's not Data Science. The world's best data scientists have built the most advanced machine learning platform ever... for you.
 - [Data Science Hero](http://datascienceheroes.com/). We are a new company working for the best results on Data Science projects. 
 We have a mixed skill set and a lot of experience with Data Science with Big Data, we can help you get your project done.
 - [MapR](https://www.mapr.com/) is a complete distribution for Apache Hadoop that packages more than a dozen projects from the Hadoop ecosystem to provide you with a broad set of big data capabilities. The MapR platform not only provides enterprise-grade features such as high availability, disaster recovery, security, and full data protection but also allows Hadoop to be easily accessed as traditional network attached storage (NAS) with read-write capabilities
