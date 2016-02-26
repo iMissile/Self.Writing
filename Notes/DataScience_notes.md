@@ -1,6 +1,15 @@
 # 26.02.2016
 - [DevMate](http://devmate.com/) is 100% free now. App Development and Distribution Platform. Advanced Marketing Metrics & Analytics
 - [Backblaze coupon](http://www.retailmenot.com/view/backblaze.com?c=7626828). 25% Off 1 Or 2 Year Subscription
+- [РЎРІСЏР·РЅРѕР№. РџР»Р°РЅС€РµС‚ Apple iPad Air 2 128Gb Wi-Fi + Cellular (СЃРµСЂС‹Р№)](http://www.svyaznoy.ru/catalog/notebook/7063/2200859)
+- [Volter](http://www.volter.su). РЎС‚Р°Р±РёР»РёР·Р°С‚РѕСЂС‹ РЅР°РїСЂСЏР¶РµРЅРёСЏ.
+- [Р­РЅРµСЂРіРёСЏ](http://energiya.msk.ru). РЎС‚Р°Р±РёР»РёР·Р°С‚РѕСЂС‹ РЅР°РїСЂСЏР¶РµРЅРёСЏ.
+
+## DS
+- [DataRobot](https://www.datarobot.com/). If it's not DataRobot, it's not Data Science. The world's best data scientists have built the most advanced machine learning platform ever... for you.
+
+## IoT
+- [PubNup](https://www.pubnub.com/). Realtime Apps Made Simple. The global data stream network for IoT, Mobile, and Web applications
 
 # 25.02.2016
 ## Blogging
@@ -10,7 +19,7 @@ Hosted directly from your GitHub repository. Just edit, push, and your changes a
 - [Jekyll + GitHub Pages](http://jekyllrb.com/docs/github-pages/)
 
 ## UI
-- [CUBA platform](https://www.cuba-platform.ru/). Высокоуровневая Java платформа для создания корпоративных информационных систем
+- [CUBA platform](https://www.cuba-platform.ru/). Р’С‹СЃРѕРєРѕСѓСЂРѕРІРЅРµРІР°СЏ Java РїР»Р°С‚С„РѕСЂРјР° РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РєРѕСЂРїРѕСЂР°С‚РёРІРЅС‹С… РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹С… СЃРёСЃС‚РµРј
 
 ## IoT
-- [ThingWorx](http://www.thingworx.com/). Платформа ThingWorx предоставляет полноценную интеллектуальную среду для разработки приложений, которую можно использовать в качестве среды выполнения, и обладает следующими характеристиками.
+- [ThingWorx](http://www.thingworx.com/). РџР»Р°С‚С„РѕСЂРјР° ThingWorx РїСЂРµРґРѕСЃС‚Р°РІР»СЏРµС‚ РїРѕР»РЅРѕС†РµРЅРЅСѓСЋ РёРЅС‚РµР»Р»РµРєС‚СѓР°Р»СЊРЅСѓСЋ СЃСЂРµРґСѓ РґР»СЏ СЂР°Р·СЂР°Р±РѕС‚РєРё РїСЂРёР»РѕР¶РµРЅРёР№, РєРѕС‚РѕСЂСѓСЋ РјРѕР¶РЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РІ РєР°С‡РµСЃС‚РІРµ СЃСЂРµРґС‹ РІС‹РїРѕР»РЅРµРЅРёСЏ, Рё РѕР±Р»Р°РґР°РµС‚ СЃР»РµРґСѓСЋС‰РёРјРё С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРєР°РјРё.
