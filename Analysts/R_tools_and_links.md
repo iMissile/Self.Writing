@@ -316,6 +316,9 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 
 ## Курсы обучения и интересные бизнес решения на базе R
 ### Курсы\Learning
+- [Webscraping. SSRMC lectures in Web Scraping, HT 2014](http://fredheir.github.io/WebScraping/)
+Welcome to Web Scraping.
+This site contains links to the slides for the course Web Scraping: Digital Data Collection for the Humanities and Social Sciences, conducted in Hilary Term 2014 at the University of Cambridge, hosted by the Social Sciences' Research Methods Centre (SSRMC), and taught by Rolf Fredheim
 - [Code School]()
 	- [The Magical Marvels of MongoDB](http://campus.codeschool.com/courses/the-magical-marvels-of-mongodb/contents)
 - [Data School](http://www.dataschool.io/). Data science for beginners!

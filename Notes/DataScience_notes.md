@@ -7,6 +7,13 @@
 
 ## DS
 - [DataRobot](https://www.datarobot.com/). If it's not DataRobot, it's not Data Science. The world's best data scientists have built the most advanced machine learning platform ever... for you.
+- [The Fallacy of Sample Size](http://datadrivensecurity.info/blog/posts/2015/Nov/samplesize/)
+- [Alteryx](http://www.alteryx.com/). The Leading Platform for Self-Service Data Analytics
+- [Platfora](http://www.platfora.com/) is the leading full-stack big data discovery platform for Hadoop and Spark. We bring together traditionally separate tools to streamline and simplify data discovery.
+	- [ESG Lab Review: End-to-end Big Data Discovery with Platfora](http://www.esg-global.com/lab-reports/esg-lab-review-end-to-end-big-data-discovery-with-platfora/)
+- [CUBA](https://www.cuba-platform.ru/). Высокоуровневая Java платформа для создания корпоративных информационных систем
+	- [YARG](https://www.cuba-platform.ru/YARG) — open-source библиотека для генерации отчётов
+- [Webscraping. SSRMC lectures in Web Scraping, HT 2014](http://fredheir.github.io/WebScraping/)
 
 ## IoT
 - [PubNup](https://www.pubnub.com/). Realtime Apps Made Simple. The global data stream network for IoT, Mobile, and Web applications
