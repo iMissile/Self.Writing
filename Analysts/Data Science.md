@@ -355,6 +355,11 @@ Data science interviews are the worst because data science is interdisciplinary:
 19. Explain what a false positive and a false negative are. Why is it important to differentiate these from each other?
 20. Which tools do you use for visualization? What do you think of Tableau? R? SAS? (for graphs). How to efficiently represent 5 dimension in a chart (or in a video)?
 
+## Более полезные найденные ответы
+- 21 Must-Know Data Science Interview Questions and Answers	
+	- [Part 1](http://www.kdnuggets.com/2016/02/21-data-science-interview-questions-answers.html)
+	- [Part 2](http://www.kdnuggets.com/2016/02/21-data-science-interview-questions-answers-part2.html)
+	- [What is the difference between L1 and L2 regularization?](https://www.quora.com/What-is-the-difference-between-L1-and-L2-regularization)
 ## Найденные ответы
 1. Explain what regularization is and why it is useful.
 2. Which data scientists do you admire most? which startups?
