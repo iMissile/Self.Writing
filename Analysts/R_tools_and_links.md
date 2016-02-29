@@ -456,7 +456,10 @@ Intuitics increases the speed with which data insights reach decision makers. In
 - [CHARTED](http://www.charted.co/). Beautiful, automatic charts.
 - [VARIANCE](https://variancecharts.com/) Build powerful data visualizations for the web. Without writing JavaScript. Variance empowers engineers, designers, journalists, scientists, and analysts to build elegant bespoke data graphics for the web, using only HTML & CSS. Our intuitive, markup-based grammar emphasizes clear, practical graphics and serves as the foundation for a wide range of visualizations.
 - [Visualizing MBTA (= Boston’s Massachusetts Bay Transit Authority) Data](http://mbtaviz.github.io/). An interactive exploration of Boston's subway system
-
+- [Vega. A Visualization Grammar](https://vega.github.io/)
+Vega is a declarative format for creating, saving, and sharing visualization designs. With Vega, visualizations are described in JSON, and generate interactive views using either HTML5 Canvas or SVG.
+	- [DataVoager](http://vega.github.io/voyager/)
+	- [A Tale of Two Charting Paradigms: Vega-Lite vs R+ggplot2](http://rud.is/b/2016/02/28/a-tale-of-two-charting-paradigms-vega-lite-vs-rggplot2/)
 
 ### Смежные бизнес-решения
 - [ReportServer BI Suite](http://reportserver.net/en/) is the modern and versatile open source business intelligence (OSBI) platform for your company.
@@ -698,6 +701,7 @@ An Englishman in Copenhagen writing about digital, music and anything else. Pres
 - [Damn the torpedoes, full speed ahead: making the switch to Python 3](http://www.onthelambda.com/2014/05/13/damn-the-torpedoes-full-speed-ahead-making-the-switch-to-python-3/)
 - [Sake](http://tonyfischetti.github.io/sake/). A self-documenting build automation tool
 - [Pineapple](http://nwhitehead.github.io/pineapple/). The next generation of scientific notebook. A standalone frontend to IPython for Mac.
+- [Scrapy](http://scrapy.org/). An open source and collaborative framework for extracting the data you need from websites. In a fast, simple, yet extensible way.
 - [Python(x,y) - the scientific Python distribution](http://python-xy.github.io/)
 - [Bokeh](http://bokeh.pydata.org/en/latest/) is a Python interactive visualization library that targets modern web browsers for presentation. Its goal is to provide elegant, concise construction of novel graphics in the style of D3.js, but also deliver this capability with high-performance interactivity over very large or streaming datasets. Bokeh can help anyone who would like to quickly and easily create interactive plots, dashboards, and data applications.
 - [Scipy Lecture Notes
@@ -716,7 +720,9 @@ One document to learn numerics, science, and data with Python](http://www.scipy-
 - [CORBA & Python]
 	- [omniORB is a robust high performance CORBA ORB for C++ and Python](http://omniorb.sourceforge.net/)
 	- [PyORBit](https://github.com/GNOME/pyorbit) или на [PyPI](https://pypi.python.org/pypi/PyORBit). This is a Python language binding for the ORBit2 CORBA implementation.
-
+- [New Coder](http://newcoder.io/) five life jackets to throw to the new coder
+You’re a new coder. You’re interested in learning how to code, not just syntax. You’re sick of monkey-see, monkey-do types of tutorials.
+Let’s set your teeth into some real coding. Your hand will be held in the beginning, but as you progress you’ll see yourself approaching the projects more comfortably.
 
 # Julia
 - [Julia](http://julialang.org/) is a high-level, high-performance dynamic programming language for technical computing, with syntax that is familiar to users of other technical computing environments. It provides a sophisticated compiler, distributed parallel execution, numerical accuracy, and an extensive mathematical function library.

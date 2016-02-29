@@ -1,3 +1,9 @@
+# 29.02.2016
+- [Ваш персональный курс по Big Data](https://sohabr.net/habr/post/252743/)
+- [Ваши вопросы о Data Science](https://sohabr.net/habr/post/259321/)
+- [MLClass | Твой путь в DataScience](http://mlclass.ru/)
+- [Demystifying Data Science: 4 Kinds of Data Science Jobs and 8 Skills that Will Get You Hired](http://blog.udacity.com/2014/11/data-science-job-skills.html)
+
 # 26.02.2016
 - [DevMate](http://devmate.com/) is 100% free now. App Development and Distribution Platform. Advanced Marketing Metrics & Analytics
 - [Backblaze coupon](http://www.retailmenot.com/view/backblaze.com?c=7626828). 25% Off 1 Or 2 Year Subscription
@@ -14,6 +20,8 @@
 - [CUBA](https://www.cuba-platform.ru/). Высокоуровневая Java платформа для создания корпоративных информационных систем
 	- [YARG](https://www.cuba-platform.ru/YARG) — open-source библиотека для генерации отчётов
 - [Webscraping. SSRMC lectures in Web Scraping, HT 2014](http://fredheir.github.io/WebScraping/)
+- [Scrapy](http://scrapy.org/)
+An open source and collaborative framework for extracting the data you need from websites. In a fast, simple, yet extensible way.
 
 ## IoT
 - [PubNup](https://www.pubnub.com/). Realtime Apps Made Simple. The global data stream network for IoT, Mobile, and Web applications
