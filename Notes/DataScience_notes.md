@@ -5,11 +5,20 @@
 ## DS
 - [lazyeval](https://github.com/hadley/lazyeval) by Hadley Wickham. 
 Lazy evaluation is a principled way to do non-standard evaluation (NSE) in R. It is centered around formulas which capture an expression and the current environment.
+- [rvest: easy web scraping with R](http://blog.rstudio.org/2014/11/24/rvest-easy-web-scraping-with-r/)
 - [Hadley Wickham](http://hadley.nz/), Chief Scientist at RStudio, and an Adjunct Professor of Statistics at the University of Auckland.
 	- [R for Data Science](http://r4ds.had.co.nz/). This is the book site for “R for data science”. This book will teach you how to do data science with R: You’ll learn how to get your data into R, get it into the most useful structure, transform it, visualise it and model it. In this book, you will find a practicum of skills for data science. Just as a chemist learns how to clean test tubes and stock a lab, you’ll learn how to clean data and draw plots—and many other things besides. These are the skills that allow data science to happen, and here you will find the best practices for doing each of these things with R. You’ll learn how to use the grammar of graphics, literate programming, and reproducible research to save time. You’ll also learn how to manage cognitive resources to facilitate discoveries when wrangling, visualizing, and exploring data. (R for Data Science was formally called Data Science with R in Hands-On Programming with R)
 
 [**Big Data**](http://r4ds.had.co.nz/intro.html)
 _Many big data problems are often small data problems **in disguise**_. Often your complete dataset is big, but the data needed to answer a specific question is small. It’s often possible to find a subset, subsample, or summary that fits in memory and still allows you to answer the question that you’re interested in. The challenge here is finding the right small data, which often requires a lot of iteration. We’ll touch on this idea in transform.
+
+- [R Maps in Microsoft Power BI: Getting Started](https://dataveld.wordpress.com/2016/02/15/getting-started-with-r-maps-in-microsoft-power-bi/)
+- [R Maps in Microsoft Power BI: Small Multiples](https://dataveld.wordpress.com/2016/02/18/r-maps-in-microsoft-power-bi-small-multiples/)
+
+- [Sensu](https://sensuapp.org/). Monitoring for today's infrastructure. Monitor servers, services, application health, and business KPIs. Get notified about failures before your users do. Collect and analyze custom metrics. Give your business the competitive advantage it deserves.
+- [Tools That Work With Graphite](http://graphite.readthedocs.org/en/latest/tools.html)
+- [RainTank](http://raintank.io/)ю openSaaS monitoring from the team behind Grafana.
+
 
 # 29.02.2016
 ## DS
