@@ -19,6 +19,7 @@
 	- Advanced
 		- ggvis - Web graphics
 		- rvest - Web scraping
+		- httr - ???
 		- devtools - Package development
 		- roxygen2 - Document your functions
 		- testthat - Automatic code testing
@@ -29,6 +30,7 @@
 - [What is R?](http://www.inside-r.org/what-is-r)
 - [Why use R?](http://www.inside-r.org/why-use-r)
 - [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
+- [Rtips. Revival 2014!](http://pj.freefaculty.org/R/Rtips.html)
 - [Simpler R coding with pipes > the present and future of the magrittr package](http://www.r-statistics.com/2014/08/simpler-r-coding-with-pipes-the-present-and-future-of-the-magrittr-package/)
 - [dplyr and pipes: the basics](http://seananderson.ca/2014/09/13/dplyr-intro.html). [NOTE](http://rpackages.ianhowson.com/cran/dplyr/man/select.html): one_of("x", "y", "z"): selects variables provided in a character vector.
 - "Data manipulation with dplyr", Chief Scientist, RStudio, Hadley Wickham (pdf)
@@ -72,7 +74,16 @@
 - [LaTeX2exp](http://cran.r-project.org/web/packages/latex2exp/vignettes/latex2exp.html) is an R package that parses and converts LaTeX math formulas to R’s plotmath expressions.
 - [Easy Bayesian Bootstrap in R](http://www.sumsar.net/blog/2015/07/easy-bayesian-bootstrap-in-r/)
 - [Global and local variables in R](http://stackoverflow.com/questions/10904124/global-and-local-variables-in-r)
-- [Streaming Data IO in R]]https://jeroenooms.github.io/mongo-slides/#1) curl, jsonlite, mongolite
+- JSON
+	- [Streaming Data IO in R](https://jeroenooms.github.io/mongo-slides/#1) curl, jsonlite, mongolite. [Альтернативная ссылка](http://bit.ly/mongo-slides)
+	- [From good to bad and back: Convert data.tree to and from list, json, networkD3, and more](http://ipub.com/data-tree-to-networkd3/)
+	- [Converting JSON to Data Frame in R](http://mkseo.pe.kr/stats/?p=898)
+	- [A biased comparsion of JSON packages in R](http://rstudio-pubs-static.s3.amazonaws.com/31702_9c22e3d1a0c44968a4a1f9656f1800ab.html)
+	- [New package: jsonlite. A smart(er) JSON encoder/decoder](https://www.opencpu.org/posts/jsonlite-a-smarter-json-encoder/)
+	- [How to import JSON into R and convert it to table?](http://stackoverflow.com/questions/20925492/how-to-import-json-into-r-and-convert-it-to-table)
+	- [tidyjson](https://github.com/sailthru/tidyjson) is a complementary set of tools to tidyr for working with JSON data. It's primary objective is to turn JSON data into tidy tables for downstream use by dplyr or other relational, analytical or machine learning frameworks in R. Behind the scenes, tidyjson uses jsonlite to parse the JSON data. tidyjson is also designed to be used with the %>% operator imported into dplyr from the magrittr package.
+	- [Why use tidyjson?](https://cran.r-project.org/web/packages/tidyjson/vignettes/introduction-to-tidyjson.html)
+There are already several libraries for working with JSON data in R, such as rjson, rjsonio and jsonlite. Using these libraries, you can transform JSON into a nested R list. However, working with nested lists using base R functionality is difficult.
 - [PARTOOLS: A SENSIBLE R PACKAGE FOR LARGE DATA SETS](https://matloff.wordpress.com/2015/08/05/partools-a-sensible-r-package-for-large-data-sets/)
 - [The Keep Function](http://www.beardedanalytics.com/the-keep-function/)
 - [Deep Learning vs Machine Learning vs Pattern Recognition](http://www.computervisionblog.com/2015/03/deep-learning-vs-machine-learning-vs.html)
@@ -171,7 +182,6 @@ Solution: This can be done using tidyr functions spread, gather, separate, etc.
 	- [SelectorGadget](http://selectorgadget.com/): point and click CSS selectors
 	- [rvest: easy web scraping with R](http://blog.rstudio.org/2014/11/24/rvest-easy-web-scraping-with-r/)
 - [Using differential privacy to reuse training data](http://www.win-vector.com/blog/2015/10/using-differential-privacy-to-reuse-training-data/)
-- [From good to bad and back: Convert data.tree to and from list, json, networkD3, and more](http://ipub.com/data-tree-to-networkd3/)
 - [A Few Days of Python: Using R in Python](http://mathewanalytics.com/2015/09/29/a-few-days-of-python-using-r-in-python/)
 - [A Few Days of Python: Automating Tasks Involving Excel Files](http://mathewanalytics.com/2015/09/30/a-few-days-of-python-automating-tasks-involving-excel-files/)
 - [paste, paste0, and sprintf](https://trinkerrstuff.wordpress.com/2013/09/15/paste-paste0-and-sprintf-2/)

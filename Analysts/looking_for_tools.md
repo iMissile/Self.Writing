@@ -18,6 +18,10 @@ http://www.worldtimebuddy.com/
 1. [Writebox](https://write-box.appspot.com)
 
 ## Offline Editors
+1. [Brackets](http://brackets.io/) by Adobe. A modern, open source text editor that understands web design
+	1. [10 Awesome Brackets Extensions You Really Need](http://beebom.com/2015/03/brackets-extensions-you-really-need)
+	1. [My Recommended Brackets Extensions](http://www.johnpapa.net/my-recommended-brackets-extensions/)
+	1. [Brackets Themes](http://brackets-themes.github.io/). A collection of Brackets editor themes
 1. [MarkdownPad](http://markdownpad.com)
 1. [Haroopad](http://pad.haroopress.com)
 1. [Writemonkey](http://writemonkey.com)
@@ -29,9 +33,17 @@ http://www.worldtimebuddy.com/
 1. [Mou](http://25.io/mou/). Markdown editor for developers.
 1. [Remarkable](http://remarkableapp.net/) A Free Fully Featured Markdown Editor For Linux
 1. [Qute for PC/Mac](http://www.inkcode.net/qute) is a text editor with Markdown and TeX support. Qute offers per paragraph preview, i.e., users can switch between editing the source and viewing a rich text rendering with typeset formulas for each paragraph separately.
+1. [MdCharm](http://www.mdcharm.com/). MdCharm is a wiki editor, currently it supports markdown(markdown extra) and MultiMarkdown.
+1. [CuteMarkEd](https://cloose.github.io/CuteMarkEd/). A Qt-based, free and open source Markdown editor with live HTML preview, math expressions, code and markdown syntax highlighting. See the features page for more information.
 1. [SublimeText](http://www.sublimetext.com/)
-  1. [Using R in Sublime Text 3](http://www.kevjohnson.org/using-r-in-sublime-text-3/). This post will get you up and running using R in Sublime Text 3. If you’re not familiar with Sublime Text I recommend watching these videos. It focuses on Macs and it’s a bit outdated, but it’s a really good introduction to what you can do with Sublime Text.
-  1. [Package Control](https://packagecontrol.io/installation)
+	1. [Using R in Sublime Text 3](http://www.kevjohnson.org/using-r-in-sublime-text-3/). This post will get you up and running using R in Sublime Text 3. If you’re not familiar with Sublime Text I recommend watching these videos. It focuses on Macs and it’s a bit outdated, but it’s a really good introduction to what you can do with Sublime Text.
+	1. [Package Control](https://packagecontrol.io/installation)
+
+- Brackets plugins. Детальная сводка того, что поставил
+	- [Code Folding](https://github.com/thehogfather/brackets-code-folding). How to install: Navigate to **Brackets > File > Install Extension** and paste url https://github.com/thehogfather/brackets-code-folding.
+From release 1.3, code folding will be integrated into Brackets (although without custom region folding). This repository is still active for users who are running Brackets versions less than 1.3. If you are running 1.3 and would like custom region code folding you can find it here.
+	- [Markdown Preview](https://github.com/gruehle/MarkdownPreview). Installation: Select File > Extension Manager... (or click the "brick" icon in the toolbar), Search for "Markdown Preview", Click the Install button
+
 
 # JSON\XML
 - [JSON Editor Online](http://www.jsoneditoronline.org/)
@@ -61,6 +73,13 @@ http://www.worldtimebuddy.com/
 - [Pandoc](http://johnmacfarlane.net/pandoc/) is a universal document converter
 - [Tables Generator](http://www.tablesgenerator.com/). Entering tables in LaTeX documents can be burdensome because of the necessary formatting directives. For this purpose we created this online generator which (hopefully) will allow you to generate LaTeX code you can just copy & paste into your document's source. Our editor is close to WYSIWYG (What You See Is What You Got) principle, i.e. the table displayed in the editor should resemble the final table
 - [TextBundle.org](http://textbundle.org/). The TextBundle file format aims to provide a more seamless user expericence when exchanging plain text files, like Markdown or Fountain, between sandboxed applications.
+- [Time]
+	- [Epoch & Unix Timestamp Conversion Tools](http://www.epochconverter.com/)
+	- [currentdate/time in millisecondsmillis](http://currentmillis.com/)
+	- [Timestamp Generator](http://www.timestampgenerator.com/)
+	- [World Time Buddy (WTB)](www.worldtimebuddy.com) is a convenient world clock, a time zone converter, and an online meeting scheduler. It's one of the best online productivity tools for those often finding themselves traveling, in flights, in online meetings or just calling friends and family abroad.
+- [HTML URL Encoding Reference](http://www.w3schools.com/tags/ref_urlencode.asp)
+- [URL Encode/Decode](http://www.url-encode-decode.com/)
 
 Sandboxing is required for all apps available on the Mac and iOS app store, in order to grant users a high level of data security. Sandboxed apps are only permitted access to files explicitly provided by the user - for example Markdown text files. When working with different Markdown applications, sandboxing can cause inconveniences for the user.
 
