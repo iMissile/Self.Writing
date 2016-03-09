@@ -1,4 +1,31 @@
+# 09.03.2016
+## DS
+- [21 Must-Know Data Science Interview Questions and Answers](http://www.kdnuggets.com/2016/02/21-data-science-interview-questions-answers.html)
+
+# 04.03.2016
+## R + Shiny
+- Action Buttons
+    - [Using Action Buttons](http://shiny.rstudio.com/articles/action-buttons.html). This article describes five patterns to use with Shiny’s action buttons and action links. Action buttons and action links are different from other Shiny widgets because they are intended to be used exclusively with `observeEvent()` or `eventReactive()`.
+    - [Using Action Demo](http://shiny.rstudio.com/gallery/actionbutton-demo.html)
+    - [Depricated Shiny Tutorial. Reactivity Overview](http://rstudio.github.io/shiny/tutorial/#reactivity-overview). It’s easy to build interactive applications with Shiny, but to get the most out of it, you’ll need to understand the reactive programming model used by Shiny.
+    - [Using Leaflet with Shiny](https://rstudio.github.io/leaflet/shiny.html)
+
+## R
+- Functional Programming
+    - [What's the difference between lapply and do.call in R?](http://stackoverflow.com/questions/10801750/whats-the-difference-between-lapply-and-do-call-in-r)
+    - [funprog {base}](https://stat.ethz.ch/R-manual/R-devel/library/base/html/funprog.html). Common Higher-Order Functions in Functional Programming Languages
+    - [Advanced R by Hadley Wickham: Functional programming](http://adv-r.had.co.nz/Functional-programming.html)
+
+
 # 03.03.2016
+## IoT
+- [Open Source Hardware in the 1970s](https://dzone.com/articles/open-source-hardware-1970s-edition). How open source hardware has been kicking around since before the Internet, through popular magazines and manufacturing standards.
+- [Five million pages of AM FM & TV Broadcasting history online](http://www.americanradiohistory.com/)
+
+## Viz
+- [Plot.ly in Shiny](http://www.showmeshiny.com/plot-ly-in-shiny/). Link ggplot2 plots to Plot.ly to create interactive, web-based plots drawn with D3.js and rendered with Shiny. Само приложение [здесь](https://plotly.shinyapps.io/plotly_in_shiny/)
+
+
 ## R tips
 - [R function as() lapply() rbind() and do.call() for use in TweetFrame()](https://github.com/lmaccherone/Lumenize/issues/60)
     - as() performs a type coercion: in other words it changes one type to another type.

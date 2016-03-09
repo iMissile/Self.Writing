@@ -142,6 +142,7 @@ Predictive applications automate decision-making based on current and historical
 	- [A brief introduction to “apply” in R](https://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/)
 	- [R Grouping functions: sapply vs. lapply vs. apply. vs. tapply vs. by vs. aggregate](http://stackoverflow.com/questions/3505701/r-grouping-functions-sapply-vs-lapply-vs-apply-vs-tapply-vs-by-vs-aggrega)
 	- [Say it in R with "by", "apply" and friends](http://www.magesblog.com/2012/01/say-it-in-r-with-by-apply-and-friends.html)
+	- [What's the difference between lapply and do.call in R?](http://stackoverflow.com/questions/10801750/whats-the-difference-between-lapply-and-do-call-in-r)
 	- [Using the apply family of functions in R](http://datascienceplus.com/using-the-apply-family-of-functions-in-r/)
 	- [A Tutorial on Loops in R – Usage and Alternatives](http://blog.datacamp.com/tutorial-on-loops-in-r/)
 	- [R Tutorial: Intro to Loops (While, For, Repeat, Apply, etc!)](https://blog.udemy.com/r-tutorial/)
@@ -183,6 +184,8 @@ Solution: This can be done using tidyr functions spread, gather, separate, etc.
 	- [rvest: easy web scraping with R](http://blog.rstudio.org/2014/11/24/rvest-easy-web-scraping-with-r/)
 - [Using differential privacy to reuse training data](http://www.win-vector.com/blog/2015/10/using-differential-privacy-to-reuse-training-data/)
 - [A Few Days of Python: Using R in Python](http://mathewanalytics.com/2015/09/29/a-few-days-of-python-using-r-in-python/)
+- [Introduction to rpy2](http://rpy.sourceforge.net/rpy2/doc-2.1/html/introduction.html)¶
+This introduction aims at making a gentle start to rpy2, either when coming from R to Python/rpy2, from Python to rpy2/R, or from elsewhere to Python/rpy2/R.
 - [A Few Days of Python: Automating Tasks Involving Excel Files](http://mathewanalytics.com/2015/09/30/a-few-days-of-python-automating-tasks-involving-excel-files/)
 - [paste, paste0, and sprintf](https://trinkerrstuff.wordpress.com/2013/09/15/paste-paste0-and-sprintf-2/)
 - [Introducing the rlogging package for simple logging in R](http://www.maartenjan.org/artikelen/2013-09-20-introducing-the-rlogging-package-for-simple-logging-in-r.html)
@@ -262,14 +265,25 @@ that combine statistics and maps to inform better decision-making.
 
 
 ## Shiny etc.
+- [ggplot2 Theme Builder](https://bchartoff.shinyapps.io/ggShinyApp/). 
 - [Using Apache SparkR to Power Shiny Applications: Part I](http://blog.sparkiq-labs.com/2015/11/22/using-apache-sparkr-to-power-shiny-applications-part-i/)
 - [Shiny articles](http://shiny.rstudio.com/articles/)
+	- [Shiny Application layout guide](http://shiny.rstudio.com/articles/layout-guide.html)
+- [Tutorial: Building 'Shiny' Applications with R](http://rstudio.github.io/shiny/tutorial/). This tutorial is deprecated. Learn more about Shiny at our new location, shiny.rstudio.com.
 - [Bootstrap](http://getbootstrap.com/) is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
   - [Free themes for Bootstrap](http://bootswatch.com/)
-- [shinyBS](http://ebailey78.github.io/shinyBS/). Twitter Bootstrap Components for Shiny. 	Add additional functionality and interactivity to your Shiny applications
+- [shinyBS](http://ebailey78.github.io/shinyBS/). Twitter Bootstrap Components for Shiny. Add additional functionality and interactivity to your Shiny applications
+- [shinydashboard](https://rstudio.github.io/shinydashboard/structure.html)
 - [shinyapps.io by RStudio](http://www.shinyapps.io/). Share your Shiny Applications Online. Deploy your Shiny applications on the Web in minutes
-- [Adding Authentication to Shiny Open Source Edition](https://auth0.com/blog/2015/09/24/adding-authentication-to-shiny-open-source-edition/)
 - [Getting started with shinyapps.io](http://shiny.rstudio.com/articles/shinyapps.html)
+	- Action Buttons
+		- [Using Action Buttons](http://shiny.rstudio.com/articles/action-buttons.html). This article describes five patterns to use with Shiny’s action buttons and action links. Action buttons and action links are different from other Shiny widgets because they are intended to be used exclusively with `observeEvent()` or `eventReactive()`.
+		- [Using Action Demo](http://shiny.rstudio.com/gallery/actionbutton-demo.html)
+		- [Depricated Shiny Tutorial. Reactivity Overview](http://rstudio.github.io/shiny/tutorial/#reactivity-overview). It’s easy to build interactive applications with Shiny, but to get the most out of it, you’ll need to understand the reactive programming model used by Shiny.
+- [Adding Authentication to Shiny Open Source Edition](https://auth0.com/blog/2015/09/24/adding-authentication-to-shiny-open-source-edition/)
+- [ShinyApps: Experience Statistics](http://shinyapps.org/). This website collects useful or experimental statistical widgets. They can be used for teaching, exploration, or for performing specialized calculations without the need to go through a complete R installation. All widgets are Shiny apps, which run on a open source Shiny Server, provided by the RStudio team. 
+The source code of some of the widgets can be found in Github repository.
+- [Tidy R code using formatR](https://yihui.shinyapps.io/formatR/) by Yihui Xie. This app uses a textarea input to store R code, which is reformatted by formatR::tidy_source(). The result is written back in the text box. Click the demo button to load a demo, or paste your own R code here to see what this app can do.
 - [Dashboards in R with Shiny & Plotly](http://moderndata.plot.ly/dashboards-in-r-with-shiny-plotly/)
 - [R в качестве инструмента мониторинга цен](http://habrahabr.ru/post/255173/)
 - [Building [Security] Dashboards w/R & Shiny + shinydashboard](http://datadrivensecurity.info/blog/posts/2015/Jan/building-security-dashboards-with-r-and-shiny-shinydashboard/)
@@ -530,6 +544,8 @@ Vega is a declarative format for creating, saving, and sharing visualization des
 - [knitr](http://yihui.name/knitr/). Elegant, flexible and fast dynamic report generation with R.
 - [Leaflet](https://rstudio.github.io/leaflet/) is one of the most popular open-source JavaScript libraries for interactive maps. It’s used by websites ranging from The New York Times and The Washington Post to GitHub and Flickr, as well as GIS specialists like OpenStreetMap, Mapbox, and CartoDB.
 	- [Visualising your hiking trails and photos with My Tracks, R and Leaflet](http://mhermans.net/hiking-gpx-r-leaflet.html)
+	- [Using Leaflet with Shiny](https://rstudio.github.io/leaflet/shiny.html)
+	- [Tutorial: How to put dots on a Leaflet map with R](http://trendct.org/2015/06/26/tutorial-how-to-put-dots-on-a-leaflet-map-with-r/)
 - [mapView](http://environmentalinformatics-marburg.github.io/web-presentations/20150723_mapView.html): basic interactive viewing of spatial data in R
 - [geomorph](http://www.geomorph.net/). Geomorph is a software package for performing all stages of geometric morphometric shape analysis of landmark points and curves in 2-and-3-dimensions as well as 3D surfaces in the R statistical computing environment. This blog is dedicated to document geomorph related updates, current problems, their proposed solutions, and new ideas.
 
