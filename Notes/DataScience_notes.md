@@ -1,6 +1,15 @@
+# 10.03.2016
+# Tools
+- [Instant Logo Search](http://instantlogosearch.com/). Search & download thousands of logos instantly
 # 09.03.2016
 ## DS
 - [21 Must-Know Data Science Interview Questions and Answers](http://www.kdnuggets.com/2016/02/21-data-science-interview-questions-answers.html)
+- [Jut](http://www.jut.io/). Jut is the company behind Juttle
+Juttle is a powerful new open source dataflow language and streaming analytics platform.
+
+Juttle can connect to multiple data back ends, easily run queries, perform sophisticated analytics, and enrich or join disparate data, to power smart alerting or compelling visualizations.
+
+Deploy alongside your production infrastructure to drive dashboards or alerts, use the Juttle Engine to power application analytics, or embed client-side as part of your presentation layer.
 
 # 04.03.2016
 ## R + Shiny
