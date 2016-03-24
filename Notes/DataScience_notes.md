@@ -1,3 +1,74 @@
+# 22.03.2016
+## IoT
+- [Корректная реализация разностной схемы ПИД регулятора. Tutorial](https://habrahabr.ru/post/143388/)
+- [ПИД-регулятор своими руками. Tutorial](https://habrahabr.ru/post/145991/)
+
+## Math
+- [MathWorks Help. PID Controller Types for Tuning](http://www.mathworks.com/help/control/ug/pid-controller-types-for-tuning.html)
+- [Wolfram SystemModeller](http://forum.ru-board.com/topic.cgi?forum=35&topic=1174&start=0&limit=1&m=38#1), на [сайте Wolfram](http://www.wolfram.com/system-modeler/)
+- Wolfram Help
+	- [Архитектура ПИД регуляторов](https://www.wolfram.com/mathematica/new-in-9/enhanced-control-systems/pid-controller-architectures.html)
+	- [PID Controller Architectures](https://reference.wolfram.com/language/example/PIDControllerArchitectures.html)
+	- [PIDTune](https://reference.wolfram.com/language/ref/PIDTune.html)
+	- [PID Control of a Tank Level. Interraction View](http://demonstrations.wolfram.com/PIDControlOfATankLevel/)
+- [PID Control-R](http://oddhypothesis.blogspot.ru/2013/02/pid-control-r.html)
+
+## Software
+- [Definition: Iterative and Incremental Development](https://blogs.msdn.microsoft.com/aridle/2007/07/25/definition-iterative-and-incremental-development/)
+- [Scrum.org](https://www.scrum.org/Resources)
+- [Scrum Guides](http://www.scrumguides.org/)
+
+
+# 21.02.2016
+## DS
+- Яндекс геокодирование. [Параметры HTTP-запроса](https://tech.yandex.ru/maps/doc/geocoder/desc/concepts/input_params-docpage/)
+	- [Пример запроса] (https://geocode-maps.yandex.ru/1.x/?format=json&geocode=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,%20%D0%B4%D0%BE%D0%BC%2024,%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%90%D1%80%D0%B1%D0%B0%D1%82)
+- [ФИАС - Федеральная Информационная Адресная Система](http://www.ifias.ru/)
+
+## IoT
+- [PID Control of the Heat Exchanger](http://controlguru.com/pid-control-of-the-heat-exchanger/)
+
+
+# 18.03.2016
+## DVCS
+- [Moving and Renaming Files on GitHub](https://github.com/blog/1436-moving-and-renaming-files-on-github)
+- [20. Moving files](https://githowto.com/moving_files)
+
+## IoT
+- [EMBEDDED](http://www.embedded.com/). Cracking the code to systems development
+	- [PID without a PhD](http://www.embedded.com/design/prototyping-and-development/4211211/PID-without-a-PhD) by Tim Wescott, October 01, 2000. Можно искать в гугле полную pdf статью.
+
+## iOS
+- [Wacom Bamboo Stylus fineline](http://wacom.ru/styluses/fineline.html). Профессиональный инструмент для творческой личности.
+Используйте в полной мере все возможности iPad®. Представляем принципиально новое перо Bamboo Stylus fineline! Благодаря этому высокоточному перу для создания заметок, рукописного ввода и зарисовок ваши идеи обретут крылья. Начните работу и посмотрите, как ведущие приложения* поддерживают Bamboo Stylus fineline:
+
+# 17.03.2016
+## MacOS
+- [CrossOver](https://www.codeweavers.com/)
+	- [CrossOver - запуск любых Windows программ под Mac OS](http://macintoshim.ru/emulators/crossover---zapusk-lyubyh-windows-programm-pod-mac-os.html)
+	- [CrossOver 15](https://macx.ws/mac-os-unix/3200-crossover-15.html)
+
+## IoT
+- [Навигация в закрытых помещениях – от идеи до рабочего прототипа](http://www.dataart.ru/blog/2015/09/navigatsiya-v-zakry-ty-h-pomeshheniyah-ot-idei-do-rabochego-prototipa/)
+- [Навигация в помещениях с iBeacon и ИНС](https://habrahabr.ru/post/245325/)
+- [Системы локального позиционирования ](http://www.wless.ru/technology/?tech=11)
+- [Indoor-навигация: Большой обзор iBeacon Hardware](https://habrahabr.ru/company/navigine/blog/269195/)
+- [Фильтр Калмана — Введение](https://habrahabr.ru/post/140274/). Фильтр Калмана — это, наверное, самый популярный алгоритм фильтрации, используемый во многих областях науки и техники. Благодаря своей простоте и эффективности его можно встретить в GPS-приемниках, обработчиках показаний датчиков, при реализации систем управления и т.д.
+
+## DS
+- [A First Look at the Kalman Filter](http://www.quant-econ.net/jl/kalman.html)
+- [Kalman filter example visualised with R](http://www.magesblog.com/2015/01/kalman-filter-example-visualised-with-r.html)
+- [Measuring temperature with my Arduino](http://www.magesblog.com/2014/12/measuring-temperature-with-my-arduino.html)
+- [Filtering Sensor Data with a Kalman Filter](http://interactive-matter.eu/blog/2009/12/18/filtering-sensor-data-with-a-kalman-filter/). December 18, 2009 in Tinkering
+
+
+# 15.03.2016
+- [SmartCat](http://www.smartcat.pro/ru/). Одно решение для всех переводческих задач. Эффективно. Технологично. Бесплатно.
+	- [Сравнение сервисов Переводчик Google и ABBYY SmartCAT.Pro](https://startpack.ru/compare/google-translate/abbyy-smartcat-pro)
+
+## IoT
+- [Новостной портал Russia M2M News](http://www.m2mrussianews.com/)
+
 # 10.03.2016
 # Tools
 - [Instant Logo Search](http://instantlogosearch.com/). Search & download thousands of logos instantly
