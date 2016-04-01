@@ -266,7 +266,8 @@ that combine statistics and maps to inform better decision-making.
 
 
 ## Shiny etc.
-- [ggplot2 Theme Builder](https://bchartoff.shinyapps.io/ggShinyApp/). 
+- [ggplot2 Theme Builder](https://bchartoff.shinyapps.io/ggShinyApp/).
+- [Highcharter](http://jkunst.com/highcharter/) is a R wrapper for highcharts javascript libray and its modules. Highcharts is very mature and flexible javascript charting library and it has a great and powerful API.
 - [Using Apache SparkR to Power Shiny Applications: Part I](http://blog.sparkiq-labs.com/2015/11/22/using-apache-sparkr-to-power-shiny-applications-part-i/)
 - [Shiny articles](http://shiny.rstudio.com/articles/)
 	- [Shiny Application layout guide](http://shiny.rstudio.com/articles/layout-guide.html)

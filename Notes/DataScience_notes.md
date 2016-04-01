@@ -1,3 +1,47 @@
+# 01.04.2016
+## Math
+- [Равномерное распределение точек на диске](http://dxdy.ru/topic91607.html)
+- [Spreading points on a disc and on a sphere](http://blog.marmakoide.org/?p=1)
+- [Иллюстрации на Геогебре]():
+	- [Isocel disc tesselation](http://tube.geogebra.org/student/m286087)
+	- [Points distributed on a disc](http://tube.geogebra.org/student/m286063)
+
+# 30.03.2016
+## Office
+- Есть проблема с нумерацией страниц в колонтитулах: "Ошибка! Только основной документ", далее:
+	- [Некоторые рекомендации по организации автонумерации при написании научных статей и диссертаций средствами Microsoft Word](https://habrahabr.ru/post/187398/)
+	- [Field codes: Seq (Sequence) field](https://support.office.com/en-us/article/Field-codes-Seq-Sequence-field-062a387b-dfc9-4ef8-8235-29ee113d59be?rs=en-US&ui=en-US&ad=US) или перевод на русский [Коды полей: SEQ (последовательность)](https://support.office.com/ru-ru/article/%D0%9A%D0%BE%D0%B4%D1%8B-%D0%BF%D0%BE%D0%BB%D0%B5%D0%B9-SEQ-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C-062a387b-dfc9-4ef8-8235-29ee113d59be?rs=ru-RU&ui=ru-RU&ad=RU)
+	- [Как создать две различные схемы нумерации страниц в одном и том же документе Microsoft Word 2002](http://www.interface.ru/home.asp?artId=16736)
+
+# 29.03.2016
+## PID
+- [Control System Lectures](https://www.youtube.com/watch?v=oBc_BHxw78s&list=PLUMWjy5jgHK1NC52DXXrriwihVrYZKqjk)
+- [Understanding PID in 4 minutes](https://www.youtube.com/watch?v=wbmEUi2p-nA)
+- [PID Math Demystified ](https://www.youtube.com/watch?v=JEpWlTl95Tw)
+- [Teaching Old Motors New Tricks - Part 1](https://www.youtube.com/watch?v=fpTvZlnrsP0)
+
+
+# 25.03.2016
+## DS
+- [MRAN Frequently Asked Questions](https://mran.revolutionanalytics.com/faq/). Here are some common questions about Microsoft R Open. Got a question that isn’t answered here? Contact us.
+	- [Reproducibility: Using Fixed CRAN Repository Snapshots](https://mran.revolutionanalytics.com/documents/rro/reproducibility/)
+- [Highcharter](http://jkunst.com/highcharter/) is a R wrapper for highcharts javascript libray and its modules. Highcharts is very mature and flexible javascript charting library and it has a great and powerful API.
+	- [Highcharts Demos](http://www.highcharts.com/demo)
+	- [Highcharts R code Examples](http://jkunst.com/highcharter/highcharts.html)
+
+
+# 24.03.2016
+## Graphics
+- [Pixlr](https://pixlr.com/editor/). Online Image Editor by Autodesk
+
+## DS
+- [Visualizing MBTA Data. An interactive exploration of Boston's subway system](http://mbtaviz.github.io/).
+	- [MBTA Subway Delays](https://mbta.meteor.com/)
+
+## Other
+- [Как мы строили метро](http://www.metro.ru/library/kak_my_stroili_metro/). В марте нынешнего года редакция «Истории метро» выпустила в свет книгу «Рассказы строителей метро» — первый сборник по истории московского метрополитена имени Л. М. Кагановича, написанный ударниками и ударницами — строителями метро.
+
+Настоящая книга — второй сборник по истории метро. Он написан инженерами, архитекторами, политическими работниками вместе со славной армией ударников и ударниц, комсомольцев и комсомолок, построившими лучший по всеобщему признанию метро в мире — московский метрополитен имени Л. М. Кагановича.
 # 22.03.2016
 ## IoT
 - [Корректная реализация разностной схемы ПИД регулятора. Tutorial](https://habrahabr.ru/post/143388/)
