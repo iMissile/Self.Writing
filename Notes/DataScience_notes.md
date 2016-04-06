@@ -1,3 +1,42 @@
+# 05.04.2016
+## Python
+- [geopy](https://geopy.readthedocs.org/en/1.10.0/#) is a Python 2 and 3 client for several popular geocoding web services. 
+geopy makes it easy for Python developers to locate the coordinates of addresses, cities, countries, and landmarks across the globe using third-party geocoders and other data sources.
+geopy is tested against CPython 2.7, CPython 3.2, CPython 3.4, PyPy, and PyPy3.
+- Yandex. Клуб API Карт. [Параметры в URL панорамы](https://yandex.ru/blog/mapsapi/10932)
+
+## DS
+- [Static API Карт](https://tech.yandex.ru/maps/staticapi/). Статичные изображения Яндекс.Карт, отдаваемые по HTTP-запросу.
+- [Everything You Never Wanted to Know About Google Maps' Parameters](https://moz.com/ugc/everything-you-never-wanted-to-know-about-google-maps-parameters).
+- [URL to dynamic Google Map with path](http://stackoverflow.com/questions/13883615/url-to-dynamic-google-map-with-path)
+- GIS
+	- [Visualising your hiking trails and photos with My Tracks, R and Leaflet](http://mhermans.net/hiking-gpx-r-leaflet.html)
+	- [Intro to GIS mapping in R](http://remi-daigle.github.io/GIS_mapping_in_R/)
+	- [Tips for reading spatial files into R with rgdal](http://zevross.com/blog/2016/01/13/tips-for-reading-spatial-files-into-r-with-rgdal/)
+	- [Geospatial Data Processing and Analysis in R](http://rpubs.com/ajlyons/rspatialdata). Andy Lyons, Stanford University, The Berkeley R Language Beginner Study Group, August 19, 2014
+	- [Возможности работы с пространственными данными статистического пакета R](http://gis-lab.info/qa/rspatial.html)
+	- [Spatial.ly R Spatial Tips](http://spatial.ly/r/)
+	- [Geospatial Data in R](http://nathanlane.info/tutorials/2015/10/18/taking-geospatial-data-to-r-how-to-ditch-arcgis.html)
+	- [Geospatial Data in R and Beyond](http://www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/)
+	- [Applied Spatial Data Science with R](http://blog.dominodatalab.com/applied-spatial-data-science-with-r/) by Daniel Emaasit
+	- [Introduction to visualising spatial data in R](https://github.com/Robinlovelace/Creating-maps-in-R). Introductory tutorial on graphical display of geographical information in R, to contribute to teaching material. For the context of this tutorial and a video introduction, please see here: http://robinlovelace.net/r/2014/01/30/spatial-data-with-R-tutorial.html
+	- COOL.  NEON Spatial Data Lessions:
+		- [Neon Spatial Vector Data in R](http://data-lessons.github.io/NEON-R-Spatial-Vector/)
+		- [Neon Raster Data in R](http://data-lessons.github.io/NEON-R-Spatial-Raster/).
+
+
+## GPS
+- [Trails](https://trails.io/en/). Your iPhone GPS tracks logbook. Record all your outdoor activities be it hiking, jogging, cycling, canoeing or skiing down the Alps.
+
+# 04.04.2016
+## R
+- [Plotting a vector field in R + ggplot](http://codereview.stackexchange.com/questions/93974/plotting-a-vector-field-in-r-ggplot)
+- [vector field visualisation R](http://stackoverflow.com/questions/14936504/vector-field-visualisation-r). If there is a lot of data (the question says "big file"), plotting the individual vectors may not give a very readable plot. Here is another approach: the vector field describes a way of deforming something drawn on the plane; apply it to a white noise image. Here is a example from the R-Help of **pracma-package**.
+- [Draw a circle with ggplot2](http://stackoverflow.com/questions/6862742/draw-a-circle-with-ggplot2)
+- [assign multiple new variables in a single line in R](http://stackoverflow.com/questions/7519790/assign-multiple-new-variables-in-a-single-line-in-r)
+
+
+
 # 01.04.2016
 ## Math
 - [Равномерное распределение точек на диске](http://dxdy.ru/topic91607.html)
@@ -5,6 +44,10 @@
 - [Иллюстрации на Геогебре]():
 	- [Isocel disc tesselation](http://tube.geogebra.org/student/m286087)
 	- [Points distributed on a disc](http://tube.geogebra.org/student/m286063)
+	- [Distribution points over unit disk](http://tube.geogebra.org/material/show/id/424961)
+- [GeoGebra](http://www.geogebra.org/). The Graphing Calculator for Functions, Geometry, Algebra, Calculus, Statistics and 3D Math!. Dynamic mathematics for learning and teaching
+- [Wolfram MathWorld. Sphere Point Picking](http://mathworld.wolfram.com/SpherePointPicking.html)
+- [Distributing points on the sphere](https://www.maths.unsw.edu.au/about/distributing-points-sphere)
 
 # 30.03.2016
 ## Office
