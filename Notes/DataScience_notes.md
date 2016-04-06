@@ -23,10 +23,22 @@ geopy is tested against CPython 2.7, CPython 3.2, CPython 3.4, PyPy, and PyPy3.
 	- COOL.  NEON Spatial Data Lessions:
 		- [Neon Spatial Vector Data in R](http://data-lessons.github.io/NEON-R-Spatial-Vector/)
 		- [Neon Raster Data in R](http://data-lessons.github.io/NEON-R-Spatial-Raster/).
+	- [writeOGR column limit error: “Creating Name field failed”](http://gis.stackexchange.com/questions/93135/writeogr-column-limit-error-creating-name-field-failed)
+	- [GPX-overview: R function create overview .gpx files (using leaflet RgoogleMaps)](http://www.digital-geography.com/gpx-overview-r-function-create-overview-gpx-files-using-leaflet-rgooglemaps)
+	- [Переход от одной системы координат к другой - методы трансформации](http://gis-lab.info/qa/datum-transform-methods.html)
 
 
-## GPS
+## GPS & GIS
 - [Trails](https://trails.io/en/). Your iPhone GPS tracks logbook. Record all your outdoor activities be it hiking, jogging, cycling, canoeing or skiing down the Alps.
+- [Google CRS](http://spatialreference.org/ref/sr-org/google-projection/)
+- [Recommended Web sites with GPS trails in GPX format](http://www.expertgps.com/tutorials/recommended-web-sites-with-gps-trails-in-gpx-format.asp)
+- [How do I convert a set of latitude/longitude coordinates with timestamps to a GPX tracklog?](http://gis.stackexchange.com/questions/94087/how-do-i-convert-a-set-of-latitude-longitude-coordinates-with-timestamps-to-a-gp)
+- [Convert a GPS file to plain text or GPX](http://www.gpsvisualizer.com/convert_input)
+- [Find coordinates by moving around the map](http://mondeca.com/index.php/en/any-place-en). This page uses the Google Maps API to find out accurate geographical coordinates (latitude and longitude) for any place on Earth.
+It provides two ways to search, either by moving around the map and zooming in, or by typing an address if the place is unknown. The default location and address are those of Mondeca office in Paris.
+Comments and questions to bernard.vatant at mondeca dot com
+- [Работа с геолокациями в режиме highload](https://habrahabr.ru/post/228023/)
+- [Вычисление расстояния и начального азимута между двумя точками на сфере](http://gis-lab.info/qa/great-circles.html)
 
 # 04.04.2016
 ## R

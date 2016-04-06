@@ -128,6 +128,7 @@ Predictive applications automate decision-making based on current and historical
 	- [Introducing the dplyrXdf package](http://blog.revolutionanalytics.com/2015/10/the-dplyrxdf-package.html). The dplyrXdf package implements such a backend for the xdf file format, a technology supplied as part of Revolution R Enterprise. All of the data transformation and modelling functions provided with Revolution R Enterprise support xdf files, which allow you to break R’s memory barrier: by storing the data on disk, rather than in memory, they make it possible to work with multi-gigabyte or terabyte-sized datasets.
 	- [Using the dplyrXdf package](http://blog.revolutionanalytics.com/2015/10/using-the-dplyrxdf-package.html) by Hong Ooi, Sr. Data Scientist, Microsoft
 	- [Don’t use stats::aggregate()](http://www.win-vector.com/blog/2015/10/dont-use-statsaggregate/)
+	- [dplyr filter: Get rows with minimum of variable, but only the first if multiple minima](http://stackoverflow.com/questions/21308436/dplyr-filter-get-rows-with-minimum-of-variable-but-only-the-first-if-multiple)
 - PURRR
 	- [Purrr](https://github.com/hadley/purrr). [Purrr 0.1.0 released](http://blog.rstudio.org/2015/09/29/purrr-0-1-0/). Purrr makes your pure functions purr by completing R's functional programming tools with important features from other languages, in the style of the JS packages underscore.js, lodash and lazy.js.
 	- [Rebuilding Map Example With Apply Functions](http://opiateforthemass.es/articles/rebuilding-map-example-with-apply-functions/)
