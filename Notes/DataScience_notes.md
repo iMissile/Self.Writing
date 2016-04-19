@@ -1,3 +1,26 @@
+# 19.04.2016
+- [Получение международного водительского удостоверения](https://www.gosuslugi.ru/pgu/service/10000467319_10000029570.html#!_places)
+	- 2 ОЭР МО ГИБДД ТНРЭР № 5 ГУ МВД России по г. Москве (Киевская, 20)
+	- 2 отделение по экзаменационной работе МО ГИБДД ТНРЭР №1 ГУ МВД России по г. Москве (ул. Б. Ордынка, д.8)
+	- ГУОБДД МВД России
+
+# DS
+- [Using with() and by()](http://www.statmethods.net/stats/withby.html)
+- [Displaying Maps and Spatial Data](http://www.unomaha.edu/mahbubulmajumder/data-science/fall-2014/lectures/06-display-spatial-data/06-display-spatial-data.html#/) by Mahbubul Majumder, PhD. Sep 11, 2014
+- [Methods for doing heatmaps, level / contour plots, and hexagonal binning](http://stackoverflow.com/questions/7851602/methods-for-doing-heatmaps-level-contour-plots-and-hexagonal-binning)
+	The options for 2D plots of (x,y,z) in R are a bit numerous. However, grappling with the options is a bit of a challenge, especially in the case that all three are continuous.
+	To clarify the problem (and possibly assist in explaining why I might be getting tripped up with contour or image), here is a possible classification scheme:
+	- Case 1: The value of z is not provided but is a conditional density based on values in (x,y). (Note: this is essentially relegating the calculation of z to a separate function - a density estimation. Something still has to use the output of that calculation, so allowing for arbitrary calculations would be nice.)
+	- Case 2: (x,y) pairs are unique and regularly spaced. This implies that only one value of z is provided per (x,y) value.
+	- Case 3: (x,y) pairs are unique, but are continuous. Coloring or shading is still determined by only 1 unique z value.
+	- Case 4: (x,y) pairs are not unique, but are regularly spaced. Coloring or shading is determined by an aggregation function on the z values.
+	- Case 5: (x,y) pairs are not unique, are continuous. Coloring / shading must be determined by an aggregation function on the z values.
+- [GEOG 414/515:  Advanced Geographic Data Analysis. Contouring and surface fitting](http://www.geog.uoregon.edu/bartlein/old_courses/geog414f03/lectures/lec13.htm). Ключевые слова: "Three-dimensional interpolation"
+- [3D spline surface]
+	- [Obtain spline surface on R](http://stackoverflow.com/questions/24810501/obtain-spline-surface-on-r)
+	- [R: Plotting a 3D surface from x, y, z](http://stackoverflow.com/questions/3979240/r-plotting-a-3d-surface-from-x-y-z)
+	- [How to improve interp with akima?](http://stackoverflow.com/questions/24410292/how-to-improve-interp-with-akima)
+
 # 05.04.2016
 ## Python
 - [geopy](https://geopy.readthedocs.org/en/1.10.0/#) is a Python 2 and 3 client for several popular geocoding web services. 
@@ -20,7 +43,7 @@ geopy is tested against CPython 2.7, CPython 3.2, CPython 3.4, PyPy, and PyPy3.
 	- [Geospatial Data in R and Beyond](http://www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/)
 	- [Applied Spatial Data Science with R](http://blog.dominodatalab.com/applied-spatial-data-science-with-r/) by Daniel Emaasit
 	- [Introduction to visualising spatial data in R](https://github.com/Robinlovelace/Creating-maps-in-R). Introductory tutorial on graphical display of geographical information in R, to contribute to teaching material. For the context of this tutorial and a video introduction, please see here: http://robinlovelace.net/r/2014/01/30/spatial-data-with-R-tutorial.html
-	- COOL.  NEON Spatial Data Lessions:
+	- COOL. NEON Spatial Data Lessions:
 		- [Neon Spatial Vector Data in R](http://data-lessons.github.io/NEON-R-Spatial-Vector/)
 		- [Neon Raster Data in R](http://data-lessons.github.io/NEON-R-Spatial-Raster/).
 	- [writeOGR column limit error: “Creating Name field failed”](http://gis.stackexchange.com/questions/93135/writeogr-column-limit-error-creating-name-field-failed)
@@ -46,8 +69,6 @@ Comments and questions to bernard.vatant at mondeca dot com
 - [vector field visualisation R](http://stackoverflow.com/questions/14936504/vector-field-visualisation-r). If there is a lot of data (the question says "big file"), plotting the individual vectors may not give a very readable plot. Here is another approach: the vector field describes a way of deforming something drawn on the plane; apply it to a white noise image. Here is a example from the R-Help of **pracma-package**.
 - [Draw a circle with ggplot2](http://stackoverflow.com/questions/6862742/draw-a-circle-with-ggplot2)
 - [assign multiple new variables in a single line in R](http://stackoverflow.com/questions/7519790/assign-multiple-new-variables-in-a-single-line-in-r)
-
-
 
 # 01.04.2016
 ## Math

@@ -263,7 +263,9 @@ that combine statistics and maps to inform better decision-making.
 
 - [RFiddle](http://www.r-fiddle.org/) provides an easy-to-use interactive R console that you can run from your browser.
 - [DataJoy](https://www.getdatajoy.com/). Python & R, for scientists. Easy to use, online data processing with Python and R
+- [Apache Arrow](http://arrow.apache.org/). Powering Columnar In-Memory Analytics. Отсылка отсюда: [Feather: A Fast On-Disk Format for Data Frames for R and Python, powered by Apache Arrow](http://blog.rstudio.org/2016/03/29/feather/)
 - [Interactive Data Science with R in Apache Zeppelin Notebook](http://blog.sparkiq-labs.com/2015/11/16/interactive-data-science-with-r-in-apache-zeppelin-notebook/)
+
 
 
 ## Shiny etc.
@@ -487,6 +489,7 @@ Intuitics increases the speed with which data insights reach decision makers. In
 Vega is a declarative format for creating, saving, and sharing visualization designs. With Vega, visualizations are described in JSON, and generate interactive views using either HTML5 Canvas or SVG.
 	- [DataVoager](http://vega.github.io/voyager/)
 	- [A Tale of Two Charting Paradigms: Vega-Lite vs R+ggplot2](http://rud.is/b/2016/02/28/a-tale-of-two-charting-paradigms-vega-lite-vs-rggplot2/)
+- [rbokeh - R Interface to Bokeh](http://hafen.github.io/rbokeh/). Bokeh is a visualization library that provides a flexible and powerful declarative framework for creating web-based plots. Bokeh renders plots using HTML canvas and provides many mechanisms for interactivity. Bokeh has interfaces in Python, Scala, Julia, and now R.
 
 ### Смежные бизнес-решения
 - [ReportServer BI Suite](http://reportserver.net/en/) is the modern and versatile open source business intelligence (OSBI) platform for your company.
@@ -545,10 +548,33 @@ Vega is a declarative format for creating, saving, and sharing visualization des
 - [Yet Another Forecast Dashboard](http://systematicinvestor.wordpress.com/2012/07/31/yet-another-forecast-dashboard/)
 - [Autoplot: Graphical Methods with ggplot2](http://librestats.com/2012/06/11/autoplot-graphical-methods-with-ggplot2/)
 - [knitr](http://yihui.name/knitr/). Elegant, flexible and fast dynamic report generation with R.
+
+## GIS
+- [Mapbox | Design and publish beautiful maps](https://www.mapbox.com/). An open source mapping platform for custom designed maps. Our APIs and SDKs are the building blocks to integrate location into any mobile or web app.
+- [rMaps](http://rmaps.github.io/). Interactive Maps from R. rMaps makes it easy to create, customize and share interactive maps from R, with a few lines of code. It supports several javascript based mapping libraries like Leaflet, DataMaps and Crosslet, with many more to be added.
+- [Crosslet](http://sztanko.github.io/crosslet/) is a free small (22k without dependencies) JavaScript widget for interactive visualisation and analysis of geostatistical datasets. You can also use it for visualizing and comparing multivariate datasets.
+	
 - [Leaflet](https://rstudio.github.io/leaflet/) is one of the most popular open-source JavaScript libraries for interactive maps. It’s used by websites ranging from The New York Times and The Washington Post to GitHub and Flickr, as well as GIS specialists like OpenStreetMap, Mapbox, and CartoDB.
 	- [Visualising your hiking trails and photos with My Tracks, R and Leaflet](http://mhermans.net/hiking-gpx-r-leaflet.html)
 	- [Using Leaflet with Shiny](https://rstudio.github.io/leaflet/shiny.html)
 	- [Tutorial: How to put dots on a Leaflet map with R](http://trendct.org/2015/06/26/tutorial-how-to-put-dots-on-a-leaflet-map-with-r/)
+	- [Creating a Leaflet choropleth map with a pop-up in R](https://rpubs.com/walkerke/leaflet_choropleth). Полезная подсказка по цветовой настройке. With the Leaflet package, creating a functional interactive map takes just a few lines of R code. Notice that I first define a ColorBrewer color ramp and means of classifying my data using the built-in colorQuantile function. I then define the parameters of my html pop-up. I then call the leaflet function, pull in tiles from CartoDB, and then style the polygons within the addPolygons function. 
+    `pal <- colorQuantile("YlGn", NULL, n = 5)`
+- COOL. NEON Spatial Data Lessions:
+	- [Neon Spatial Vector Data in R](http://data-lessons.github.io/NEON-R-Spatial-Vector/)
+		- В частности, [Vector 04: Convert from .csv to a Shapefile in R](http://data-lessons.github.io/NEON-R-Spatial-Vector/R/csv-to-shapefile-R/)
+	- [Neon Raster Data in R](http://data-lessons.github.io/NEON-R-Spatial-Raster/).
+
+- Leaflet heatmap hacks
+	- [Interactive Maps for John Snow’s Cholera Data](http://freakonometrics.hypotheses.org/19473)
+	- [R : How to build heatmap with the leaflet package](http://gis.stackexchange.com/questions/168886/r-how-to-build-heatmap-with-the-leaflet-package). Пояснения к предыдущему. bke2d lets you do 2d binning (kernel density estimation) for a set of points (so lng/lat pairs work well). the ks package supports kernel smoothing for data from 1- to 6-dimensions. the akima package can do interpolation (useful when you need a regular grid). it might be worth reading up on the spatial task view for this before attempting to produce something that may not represent the data properly.
+	- [rleafmap](http://www.francoiskeck.fr/rleafmap/). Interactive maps with R and leaflet
+	
+- [03 - Spatial Data in R](http://jwhollister.com/iale_open_science/2015/07/05/03-Spatial-Data-In-R/)
+- [Stamen](http://maps.stamen.com/#watercolor). For over a decade, Stamen has been exploring cartography with our clients and in research. These maps are presented here for your enjoyment and use wherever you display OpenStreetMap data.]
+- [R fastest Leaflet map to load](http://stackoverflow.com/questions/35421238/r-fastest-leaflet-map-to-load)
+- [Leaflet Providers Demo](http://leaflet-extras.github.io/leaflet-providers/preview/)
+
 - [mapView](http://environmentalinformatics-marburg.github.io/web-presentations/20150723_mapView.html): basic interactive viewing of spatial data in R
 - [geomorph](http://www.geomorph.net/). Geomorph is a software package for performing all stages of geometric morphometric shape analysis of landmark points and curves in 2-and-3-dimensions as well as 3D surfaces in the R statistical computing environment. This blog is dedicated to document geomorph related updates, current problems, their proposed solutions, and new ideas.
 
@@ -660,6 +686,8 @@ How can I time my code?](http://www.ats.ucla.edu/stat/r/faq/timing_code.htm)
 - [TIBCO Jaspesoft](https://www.jaspersoft.com/editions)
 - [SpagoBI](http://spagobi.org/). 100% Open Source Business Intelligence. A comprehensive, innovative and flexible suite for advanced analytics
 - [Microsoft Power BI](https://www.powerbi.com/dashboards). Bring your data to life. Insights are hiding in your company's data - see the impact of bringing them into focus with Power BI.
+	- [R Maps in Microsoft Power BI: Getting Started](https://dataveld.wordpress.com/2016/02/15/getting-started-with-r-maps-in-microsoft-power-bi/)
+	- [R Maps in Microsoft Power BI: Small Multiples](https://dataveld.wordpress.com/2016/02/18/r-maps-in-microsoft-power-bi-small-multiples/)
 
 # Онлайн-учебники (Лида)
 - [f(x,y,z).ru](http://www.fxyz.ru/) -- формулы и расчеты онлайн
