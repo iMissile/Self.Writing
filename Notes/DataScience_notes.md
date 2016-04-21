@@ -1,4 +1,58 @@
+# 21.04.2016
+## DS + GIS
+Глобальная проблема -- очень долго выводится тепловая карта посредством geom_tile. проблема в том, что при выводе каждого полигона осуществляется преобразование координат.
+можно использоват geom_raster, но при этом возникают проблемы с наложением координат.
+
+Детально можно почитать в ряде следующих статей:
+"I am having a problem combining geom_raster and ggmap. They each work independently, but when I try to combine the two I get the error message "Error: geom_raster only works with Cartesian coordinates""
+- [geom_raster and ggmap](https://groups.google.com/forum/embed/#!topic/ggplot2/nqzBX22MeAQ)
+```
+Perhaps the best way to see it is through example :
+
+library(ggmap)
+gc <- geocode('the white house')
+
+
+
+# the bad way  
+qmap('washington, dc', zoom = 10) + # ok
+  geom_point(colour = 'red', data = gc) +
+  coord_cartesian()
+
+  
+qmap('washington, dc', zoom = 7) + # slightly north?
+  geom_point(colour = 'red', data = gc) +
+  coord_cartesian()
+
+  
+qmap('washington, dc', zoom = 4) + # in northern pennsylvania
+  geom_point(colour = 'red', data = gc) +
+  coord_cartesian()  
+
+  
+qmap('washington, dc', zoom = 1) + # potus = santa claus
+  geom_point(colour = 'red', data = gc) +
+  coord_cartesian()
+```
+- [Add raster to base map: Set Alpha and fill to inset_raster() in ggplot2](http://stackoverflow.com/questions/33530055/add-raster-to-base-map-set-alpha-and-fill-to-inset-raster-in-ggplot2)
+- [R: ggmap – Overlay shapefile with filled polygon of regions](http://www.markhneedham.com/blog/2014/11/17/r-ggmap-overlay-shapefile-with-filled-polygon-of-regions/)
+
+# 20.04.2016
+## DS
+- [R shiny. Error pops up while using ggmap](http://stackoverflow.com/questions/28935768/r-shiny-error-pops-up-while-using-ggmap)
+- [The basic plot interaction demo](http://shiny.rstudio.com/gallery/plot-interaction-basic.html)
+- [Shiny Apps and ggmaps](http://keeganhin.es/blog/maps.html)
+- [Experimenting With R – Point to Point Mapping With Great Circles](https://blog.ouseful.info/2014/03/24/experimenting-with-r-point-to-point-mapping-with-great-circles/)
+- [ShinyMap. Data product developement course project](http://rstudio-pubs-static.s3.amazonaws.com/23390_18f799a4d9ea46c392460b252fed6f15.html#1) by Eric Fan, Engineer. 
+- [Making Maps in R (Part 1)](http://www.kevjohnson.org/making-maps-in-r/). COOL!
+- [Making Maps in R (Part 2)](http://www.kevjohnson.org/making-maps-in-r-part-2/). COOL! нашел ответ про контурные карты
+- [Social Data Science. Lectures](http://sebastianbarfort.github.io/sds/slides/)
+	- [Lecture 4: Data Visualization in R (maps). Social Data Science](http://sebastianbarfort.github.io/sds/slides/lecture4.html) by Sebastian Barfort. September, 2015
+- [R: Isotherms as isolines using ggplot2](http://stackoverflow.com/questions/32679844/r-isotherms-as-isolines-using-ggplot2)
+
+
 # 19.04.2016
+## General
 - [Получение международного водительского удостоверения](https://www.gosuslugi.ru/pgu/service/10000467319_10000029570.html#!_places)
 	- 2 ОЭР МО ГИБДД ТНРЭР № 5 ГУ МВД России по г. Москве (Киевская, 20)
 	- 2 отделение по экзаменационной работе МО ГИБДД ТНРЭР №1 ГУ МВД России по г. Москве (ул. Б. Ордынка, д.8)

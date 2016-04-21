@@ -275,6 +275,7 @@ that combine statistics and maps to inform better decision-making.
 - [Shiny articles](http://shiny.rstudio.com/articles/)
 	- [Shiny Application layout guide](http://shiny.rstudio.com/articles/layout-guide.html)
 - [Tutorial: Building 'Shiny' Applications with R](http://rstudio.github.io/shiny/tutorial/). This tutorial is deprecated. Learn more about Shiny at our new location, shiny.rstudio.com.
+- [R powered web applications with Shiny (a tutorial and cheat sheet with 40 example apps)](http://zevross.com/blog/2016/04/19/r-powered-web-applications-with-shiny-a-tutorial-and-cheat-sheet-with-40-example-apps/)
 - [Bootstrap](http://getbootstrap.com/) is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
   - [Free themes for Bootstrap](http://bootswatch.com/)
 - [shinyBS](http://ebailey78.github.io/shinyBS/). Twitter Bootstrap Components for Shiny. Add additional functionality and interactivity to your Shiny applications
@@ -569,7 +570,7 @@ Vega is a declarative format for creating, saving, and sharing visualization des
 	- [Interactive Maps for John Snow’s Cholera Data](http://freakonometrics.hypotheses.org/19473)
 	- [R : How to build heatmap with the leaflet package](http://gis.stackexchange.com/questions/168886/r-how-to-build-heatmap-with-the-leaflet-package). Пояснения к предыдущему. bke2d lets you do 2d binning (kernel density estimation) for a set of points (so lng/lat pairs work well). the ks package supports kernel smoothing for data from 1- to 6-dimensions. the akima package can do interpolation (useful when you need a regular grid). it might be worth reading up on the spatial task view for this before attempting to produce something that may not represent the data properly.
 	- [rleafmap](http://www.francoiskeck.fr/rleafmap/). Interactive maps with R and leaflet
-	
+- [R sp graphics example figures](http://rspatial.r-forge.r-project.org/gallery/)	
 - [03 - Spatial Data in R](http://jwhollister.com/iale_open_science/2015/07/05/03-Spatial-Data-In-R/)
 - [Stamen](http://maps.stamen.com/#watercolor). For over a decade, Stamen has been exploring cartography with our clients and in research. These maps are presented here for your enjoyment and use wherever you display OpenStreetMap data.]
 - [R fastest Leaflet map to load](http://stackoverflow.com/questions/35421238/r-fastest-leaflet-map-to-load)
