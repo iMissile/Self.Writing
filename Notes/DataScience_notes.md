@@ -1,3 +1,128 @@
+# 06.05.16
+## R
+- [Changing R default library path using .libPaths in Rprofile.site fails to work](http://stackoverflow.com/questions/15170399/changing-r-default-library-path-using-libpaths-in-rprofile-site-fails-to-work)
+Месторасположение файла `C:\Program Files\R\R-3.3.0\etc\Rprofile.site`
+В ProgramFiles записать не может, поэтому RStudio гонит сюда:
+`Installing package into ‘C:/Users/<User>/Documents/R/win-library/3.3’`
+- [Aesthetics: group](http://docs.ggplot2.org/current/aes_group_order.html).
+- [How to plot factors in a specified order in ggplot](http://rstudio-pubs-static.s3.amazonaws.com/7433_4537ea5073dc4162950abb715f513469.html). We need to change the order of factor levels by specifying the order explicitly.
+- [convert data.frame column format from character to factor](http://stackoverflow.com/questions/9251326/convert-data-frame-column-format-from-character-to-factor)
+- [How to change factor labels into string in a data frame](http://stackoverflow.com/questions/19204729/how-to-change-factor-labels-into-string-in-a-data-frame)
+- COOL! [R Learning Module. Factor variables](http://www.ats.ucla.edu/stat/r/modules/factor_variables.htm). Здесь я нашел ответ!!! `ses.order <- ordered(ses, levels = c("low", "middle", "high"))`
+
+# 05.05.16
+## General
+- [Samsung. Форма проверки регистрации электронной гарантии](http://www.samsung.com/ru/support/ewarranty/)
+
+# 04.05.16
+## R
+- [Best way to make a custom palette with ggplot2](http://amitkohli.com/best-way-to-make-a-custom-palette-with-ggplot2/)
+```
+#' @export
+#' @rdname scale_brewer
+scale_fill_distiller <- function(..., type = "seq", palette = 1, direction = -1, values = NULL, space = "Lab", na.value = "grey50", guide = "colourbar") {
+  type <- match.arg(type, c("seq", "div", "qual"))
+  if (type == "qual") {
+    warning("Using a discrete colour palette in a continuous scale.\n  Consider using type = \"seq\" or type = \"div\" instead", call. = FALSE)
+  }
+  continuous_scale("fill", "distiller",
+    gradient_n_pal(brewer_pal(type, palette, direction)(6), values, space), na.value = na.value, guide = guide, ...)
+}
+```
+- [Error in continuous_scale when using scale_fill_gradient](http://stackoverflow.com/questions/33363108/error-in-continuous-scale-when-using-scale-fill-gradient). Scale_fill_distiller -> scale_fill_gradientn
+- Хак по работе функции scale_fill_distiller: [GitHub.  ggplot2/R/scale-brewer.r](https://github.com/hadley/ggplot2/blob/master/R/scale-brewer.r)
+- [How to get multiple ggplot2 scale_fill_gradientn with same scale?](http://stackoverflow.com/questions/22235580/how-to-get-multiple-ggplot2-scale-fill-gradientn-with-same-scale)
+
+# 29.04.2016
+## R
+- [Assign categories based on relations](http://stackoverflow.com/questions/19118080/assign-categories-based-on-relations)
+	- [Does ifelse really calculate both of its vectors every time? Is it slow?](http://stackoverflow.com/questions/16275149/does-ifelse-really-calculate-both-of-its-vectors-every-time-is-it-slow/16275201)
+
+## Shiny
+- [Interactively change the selectInput choices](http://stackoverflow.com/questions/16173325/interactively-change-the-selectinput-choices)
+- [Shiny example: dynamic input fields](https://gist.github.com/wch/4211337)
+
+
+# 28.04.2016
+## Wolfram
+- [How to | Display the Timing of an Evaluation in a Notebook Window](https://reference.wolfram.com/language/howto/DisplayTheTimingOfAnEvaluationInANotebookWindow.html)
+- [TimeUsed[]](https://reference.wolfram.com/language/ref/TimeUsed.html) gives the total number of seconds of CPU time used so far in the current Wolfram System session.
+- [AbsoluteTiming[expr]](https://reference.wolfram.com/language/ref/AbsoluteTiming.html) evaluates expr, returning a list of the absolute number of seconds in real time that have elapsed, together with the result obtained.
+- [Timing[expr]](https://reference.wolfram.com/language/ref/Timing.html) evaluates expr, and returns a list of the time in seconds used, together with the result obtained. 
+
+## R
+- Shiny Reactive Programming
+	- [Reactivity: An overview](http://shiny.rstudio.com/articles/reactivity-overview.html)
+	- [A few things I learned about shiny (and reactive programming)](https://shinydata.wordpress.com/2015/02/02/a-few-things-i-learned-about-shiny-and-reactive-programming/)
+	- [Reactive Programming with R Shiny](http://www.alshum.com/shiny-reactive/)
+- [GridExtra. Arranging multiple grobs on a page](https://cran.r-project.org/web/packages/gridExtra/vignettes/arrangeGrob.html)
+- [Quick-R. Combining Plots](http://www.statmethods.net/advgraphs/layout.html)
+- [Combined plot of ggplot2 (Not in a single Plot), using par() or layout() function? [duplicate]](http://stackoverflow.com/questions/9490482/combined-plot-of-ggplot2-not-in-a-single-plot-using-par-or-layout-functio)
+
+## DS
+- [Two Y-Axes](https://kieranhealy.org/blog/archives/2016/01/16/two-y-axes/). Matt remarked that “Friends don’t let friends use two y-axes”. It’s a good rule. The topic came up a couple of times during the data visualization short course I taught last semester. Using two y-axes makes it even easier than usual to fool yourself (or someone else) about the degree of association between two variables. This is because you can adjust the scaling of the axes to relative to one another in way that moves the data series around more or less however you like.
+- [Dual axes for ggplot2](https://gist.github.com/jslefche/e4c0e9f57f0af49fca87). Modified from: [ggplot2-adding-secondary-transformed-x-axis-on-top-of-plot](https://stackoverflow.com/questions/21026598/ggplot2-adding-secondary-transformed-x-axis-on-top-of-plot) & [dual_axis_in_ggplot2](https://rpubs.com/kohske/dual_axis_in_ggplot2)
+- [R: single plot with two different y-axes](http://www.gettinggeneticsdone.com/2015/04/r-single-plot-with-two-different-y-axes.html)
+
+
+# 27.04.2016
+## DS
+- [Wes Anderson Palettes](https://github.com/karthik/wesanderson). Tired of generic mass produced palettes for your plots? Short of adding an owl and dressing up your plot in a bowler hat, here's the most indie thing you can do to one. First round of palettes derived from the amazing Tumblr blog Wes Anderson Palettes.
+- [The viridis color palettes] (https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html). Bob Rudis, Noam Ross and Simon Garnier
+- [Introduction to ggthemes](https://cran.r-project.org/web/packages/ggthemes/vignettes/ggthemes.html)
+- [ggthemr](https://github.com/cttobin/ggthemr). Themes for ggplot2. The idea of this package is that you can just set the theme and then forget about it. You shouldn't have to change any of your existing code. There are several parts to a theme:
+
+## Shiny
+- [Dean Attali's Shiny Server](http://daattali.com/shiny/)
+- Scoping in Shiny
+	- [Scoping rules for Shiny apps](http://shiny.rstudio.com/articles/scoping.html)
+	- [Scoping (depricated)](http://rstudio.github.io/shiny/tutorial/#scoping)
+	- [Use R scripts and data](http://shiny.rstudio.com/tutorial/lesson5/). См. пункт "Execution" 
+- [Using DT in Shiny](https://rstudio.github.io/DT/shiny.html)
+- [Control the height in fluidRow in R shiny](http://stackoverflow.com/questions/25340847/control-the-height-in-fluidrow-in-r-shiny). HTML +CSS
+
+# 26.04.2016
+## General
+- [Альфабанк. Услуга «Мой контроль»](https://alfabank.ru/retail/cards/mycontrol/)
+
+## Development
+- [Painless Merge Conflict Resolution in Git ](http://blog.wuwon.id.au/2010/09/painless-merge-conflict-resolution-in.html). 
+  При установке Github Desktop Merge tools указывается во временном конфиг файле: C:\Users\<User>\AppData\Local\GitHub\PortableGit_25d850739bc178b2eb13c3e2a9faafea2f9143c0\mingw32\etc\
+Добавляем в конфиг:
+```
+[merge]
+	tool = am
+[mergetool]
+	prompt = true
+	keepBackup = false
+[mergetool "am"]
+	cmd = \"C:/Program Files/Araxis/Araxis Merge/Merge.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+	trustExitCode = true
+```
+После выполнения настроек запускаем из командной строки git: `git mergetool
+
+## R
+- [Determining memory usage of objects? (duplicate)](http://stackoverflow.com/questions/1395270/determining-memory-usage-of-objects)
+	При крайне простой процедуре округления, 130 кб данных превращаются в 35 мегабайт. POSIXct (520 байт) превращается в POSIXlt, размером в 2 кб каждая запись:
+```
+> t <- row.df$timestamp
+> object.size(t)
+130232 bytes
+> m <- lapply(row.df$timestamp, function(x){round(x, units="hours")})
+> object.size(m)
+35022280 bytes
+```
+Решение:
+```
+# m <- lapply(row.df$timestamp, function(x){round(x, units="hours")}) # так из 130 кб получаем 35 Мб, надо использовать round_date {lubridate}
+# m <- lapply(t, function(x){round_date(x, unit = "hour")}) # тут получаем 8Мб !!!
+# m <- round_date(t, unit = "hour") # самый быстрый и компактный вариант
+```
+
+# 25.04.2016
+## DS
+- [OpenWeatherMap](http://openweathermap.org/api). Our weather API is simple, clear and free. We also offer higher levels of support, please see our paid plan options. To access the API you need to sign up for an API key if you are on a free or paid plan. 
+
 # 21.04.2016
 ## DS + GIS
 Глобальная проблема -- очень долго выводится тепловая карта посредством geom_tile. проблема в том, что при выводе каждого полигона осуществляется преобразование координат.

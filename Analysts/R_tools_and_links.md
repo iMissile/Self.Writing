@@ -269,7 +269,6 @@ that combine statistics and maps to inform better decision-making.
 
 
 ## Shiny etc.
-- [ggplot2 Theme Builder](https://bchartoff.shinyapps.io/ggShinyApp/).
 - [Highcharter](http://jkunst.com/highcharter/) is a R wrapper for highcharts javascript libray and its modules. Highcharts is very mature and flexible javascript charting library and it has a great and powerful API.
 - [Using Apache SparkR to Power Shiny Applications: Part I](http://blog.sparkiq-labs.com/2015/11/22/using-apache-sparkr-to-power-shiny-applications-part-i/)
 - [Shiny articles](http://shiny.rstudio.com/articles/)
@@ -308,6 +307,11 @@ The source code of some of the widgets can be found in Github repository.
 - [Persistent data storage in Shiny apps](http://deanattali.com/blog/shiny-persistent-data-storage/)
 
 ### Shiny Demo
+- [ggplot2 Theme Builder](https://bchartoff.shinyapps.io/ggShinyApp/).
+- [Dean Attali](http://deanattali.com/)
+	- [Building Shiny apps - an interactive tutorial](http://deanattali.com/blog/building-shiny-apps-tutorial/)
+	- [Dean Attali's Shiny Server](http://daattali.com/shiny/)
+	- [Building Shiny apps - an interactive tutorial](http://bit.ly/shiny-tutorial). Google presentation
 - [BigQuery Visualiser](https://mark.shinyapps.io/bigquery-viz)
 - [Different Shinyapps demo]
  	- [Shiny User Showcase](https://www.rstudio.com/products/shiny/shiny-user-showcase/). Shiny is designed for fully interactive visualization, using JavaScript libraries like d3, Leaflet, and Google Charts. Our users create fantastic examples, and some have shared them with the community. Here are some examples that we particularly like.

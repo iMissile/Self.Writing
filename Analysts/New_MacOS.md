@@ -23,6 +23,9 @@ Arq automatically backs up all your Macs and PCs. Your files are stored securely
 # Hack
 - [MacX.ws](https://macx.ws)
 - [Mac Torrent Download](http://www.mac-torrent-download.net/application/utility/arq-4-15-1/)
+- [CrossOver](https://www.codeweavers.com/)
+	- [CrossOver - запуск любых Windows программ под Mac OS](http://macintoshim.ru/emulators/crossover---zapusk-lyubyh-windows-programm-pod-mac-os.html)
+	- [CrossOver 15](https://macx.ws/mac-os-unix/3200-crossover-15.html)
 
 # Полезные сайты про macos
 - [ixrevo](http://ixrevo.me/blog/). Привет! Меня зовут Александр Сокол. Я интересуюсь музыкой, наукой, компьютерами Mac, веб-дизайном, WordPress разработкой и веду этот блог.
