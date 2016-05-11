@@ -71,6 +71,9 @@ Arq automatically backs up all your Macs and PCs. Your files are stored securely
 2) Нажмите клавишу Control, затем нажмите значок программы. 3) В контекстном меню выберите «Открыть». 4) Нажмите «Открыть».
 Дополнительный вариант настроек через меню безопасности можно найти здесь: [Вариант 2 - Запуск Firefox через Системные настройки](https://support.mozilla.org/ru/kb/firefox-ne-zapuskaetsya-posle-ustanovki-ego-na-mac)
 - [Как правильно смотреть любое видео на Mac](http://kakpravilno.info/kak-pravilno-smotret-ljuboe-video-na-mac-46.html)
+- [Bluetooth]
+	- [How To Fix ‘Bluetooth Not Available’ Mac OS X Problem](http://www.howtoturnitoffandonagain.com/2016/03/01/how-to-fix-bluetooth-not-available-mac-os-x-problem/)
+	- [Fixing a “Bluetooth Not Available” Error on a Mac](http://osxdaily.com/2014/02/17/fix-bluetooth-not-available-error-mac/)
 
 
 

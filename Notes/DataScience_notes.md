@@ -1,3 +1,30 @@
+# 11.05.16
+## Weather
+- [И снова Яндекс.Погода для сайта: время суток, направление ветра и прочие параметры](https://habrahabr.ru/post/233243/)
+
+## R
+- [Read a CSV from github into R](http://stackoverflow.com/questions/14441729/read-a-csv-from-github-into-r)
+- Ура-а-а-а! Решена проблема с unicode файлами под виндой. [How to source() .R file saved using UTF-8 encoding?](http://stackoverflow.com/questions/5031630/how-to-source-r-file-saved-using-utf-8-encoding). Меняем `source()` на `eval(parse(filename, encoding="UTF-8"))` или на
+```
+source.utf8 <- function(f) {
+    l <- readLines(f, encoding="UTF-8")
+    eval(parse(text = l), envir=.GlobalEnv)
+}
+```
+
+## ggplot tweaks
+- [Plotting rectangles in ggplot2 - Invalid input: time_trans works with objects of class POSIXct only [Resolved]](http://blogs.candoerz.com/question/79734/plotting-rectangles-in-ggplot2-invalid-input-time_trans-works-with-objects-of-class-posixct-only.aspx). Здесь пытаются сделать что-то в виде диграмм ганта средствами ggplot.
+- [Оно же](http://stackoverflow.com/questions/32590776/plotting-rectangles-in-ggplot2-invalid-input-time-trans-works-with-objects-of), но на stackoveflow.
+- Как нарисовать график для переменной X, выступающей в качестве фактора. [Using `geom_line()` with X axis being factors](http://stackoverflow.com/questions/16350720/using-geom-line-with-x-axis-being-factors)
+- [X-axis major and minor tick date labels and breaks (epicurve)](http://stackoverflow.com/questions/26118963/x-axis-major-and-minor-tick-date-labels-and-breaks-epicurve)
+- [# build the plot](http://stackoverflow.com/questions/26118963/x-axis-major-and-minor-tick-date-labels-and-breaks-epicurve): `gg2 <- ggplot_gtable(ggplot_build(gg1))`
+- [Introduction to cowplot](https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html). The cowplot package is a simple add-on to ggplot2. It is meant to provide a publication-ready theme for ggplot2, one that requires a minimum amount of fiddling with sizes of axis labels, plot backgrounds, etc. Its primary purpose is to give my students and postdocs an easy way to make figures that I will approve of. Thus, this package meets my personal needs and tastes. Yours may be different.
+- [An Introduction on How to Make Beautiful Charts With R and ggplot2](http://minimaxir.com/2015/02/ggplot-tutorial/)
+- [Annotate ggplot with an extra tick and label](http://stackoverflow.com/questions/29824773/annotate-ggplot-with-an-extra-tick-and-label)
+- Произвольные форматтеры для меток
+	- [How to put ggplot2 ticks labels between dollars?](http://stackoverflow.com/questions/20326946/how-to-put-ggplot2-ticks-labels-between-dollars)
+	- [Can you change the default scale_x_datetime?](http://stackoverflow.com/questions/16239830/can-you-change-the-default-scale-x-datetime)
+
 # 06.05.16
 ## R
 - [Changing R default library path using .libPaths in Rprofile.site fails to work](http://stackoverflow.com/questions/15170399/changing-r-default-library-path-using-libpaths-in-rprofile-site-fails-to-work)
@@ -9,6 +36,9 @@
 - [convert data.frame column format from character to factor](http://stackoverflow.com/questions/9251326/convert-data-frame-column-format-from-character-to-factor)
 - [How to change factor labels into string in a data frame](http://stackoverflow.com/questions/19204729/how-to-change-factor-labels-into-string-in-a-data-frame)
 - COOL! [R Learning Module. Factor variables](http://www.ats.ucla.edu/stat/r/modules/factor_variables.htm). Здесь я нашел ответ!!! `ses.order <- ordered(ses, levels = c("low", "middle", "high"))`
+
+## Weather
+- [How to use API key in API call](http://openweathermap.org/appid)
 
 # 05.05.16
 ## General
@@ -29,6 +59,7 @@ scale_fill_distiller <- function(..., type = "seq", palette = 1, direction = -1,
     gradient_n_pal(brewer_pal(type, palette, direction)(6), values, space), na.value = na.value, guide = guide, ...)
 }
 ```
+- [Gradient of n colors ranging from color 1 and color 2](http://stackoverflow.com/questions/13353213/gradient-of-n-colors-ranging-from-color-1-and-color-2)
 - [Error in continuous_scale when using scale_fill_gradient](http://stackoverflow.com/questions/33363108/error-in-continuous-scale-when-using-scale-fill-gradient). Scale_fill_distiller -> scale_fill_gradientn
 - Хак по работе функции scale_fill_distiller: [GitHub.  ggplot2/R/scale-brewer.r](https://github.com/hadley/ggplot2/blob/master/R/scale-brewer.r)
 - [How to get multiple ggplot2 scale_fill_gradientn with same scale?](http://stackoverflow.com/questions/22235580/how-to-get-multiple-ggplot2-scale-fill-gradientn-with-same-scale)
