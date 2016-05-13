@@ -1,3 +1,34 @@
+# 13.05.16
+## R
+- [You want to use different fonts in your graphs.](http://www.cookbook-r.com/Graphs/Fonts/)
+- [extrafont package](https://github.com/wch/extrafont). The extrafont package makes it easier to use fonts other than the basic PostScript fonts that R uses. Fonts that are imported into extrafont can be used with PDF or PostScript output files. On Windows, extrafont will also make system fonts available for bitmap output.
+- COOL. [ggrepel: Avoid overlapping of text labels](http://www.sthda.com/english/wiki/ggplot2-texts-add-text-annotations-to-a-graph-in-r-software)
+- [Autoresize text]
+	- [Mixing ggplot2 graphs with other graphical output](https://github.com/hadley/ggplot2/wiki/Mixing-ggplot2-graphs-with-other-graphical-output)
+	- [ggplot2 texts : Add text annotations to a graph in R software](http://www.sthda.com/english/wiki/ggplot2-texts-add-text-annotations-to-a-graph-in-r-software)
+	- [Automatically scale font size (etc.) of ggplot2 inside an Rmarkdown document](http://stackoverflow.com/questions/28835491/automatically-scale-font-size-etc-of-ggplot2-inside-an-rmarkdown-document)
+	- [ggplot2: geom_text resize with the plot and force/fit text within geom_bar](http://stackoverflow.com/questions/36319229/ggplot2-geom-text-resize-with-the-plot-and-force-fit-text-within-geom-bar)
+	- [Creating a text grob that automatically adjusts to viewport size](https://ryouready.wordpress.com/2012/08/01/creating-a-text-grob-that-automatically-adjusts-to-viewport-size/)
+	- [unit {grid}. Function to Create a Unit Object](http://www.inside-r.org/r-doc/grid/unit)
+	- [textGrob placement relative to changing plot size](http://stackoverflow.com/questions/28415461/textgrob-placement-relative-to-changing-plot-size)
+	- [R ggplot2 arrangeGrob() – arrange ggplots on a page](https://jonkimanalyze.wordpress.com/2014/03/26/ggplot2-arrangegrob-arrange-ggplots-on-a-page/)
+- [git2r - An R Package to Interface Git](http://srug.ropensci.org/git2r-2015-07-08-srug.html#/) by Stefan Widgren. Stockholm R useR group, 2015-07-08
+- [git2r: Provides Access to Git Repositories](https://github.com/ropensci/git2r). Interface to the 'libgit2' library, which is a pure C implementation of the 'Git' core methods. Provides access to 'Git' repositories to extract data and running some basic 'Git' commands.
+
+
+# 12.05.16
+## R
+- [Combining date and time into a Date column for plotting](http://stackoverflow.com/questions/24105984/combining-date-and-time-into-a-date-column-for-plotting)
+- [How to get your very own RStudio Server and Shiny Server with DigitalOcean](http://deanattali.com/2015/05/09/setup-rstudio-shiny-server-digital-ocean/)
+
+## ggplot
+- [How to nicely annotate a ggplot2 (manual)](http://stackoverflow.com/questions/2409357/how-to-nicely-annotate-a-ggplot2-manual)
+- [Benchmark plot creation time. Broken down into construct, build, render and draw times.](http://docs.ggplot2.org/current/benchplot.html)
+
+## General
+- [пересчитываем из гектопаскалей (hPa) в мм рт. столба](https://www.unitjuggler.com/%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-pressure-%D0%B8%D0%B7-hPa-%D0%B2-mmHg.html)
+
+
 # 11.05.16
 ## Weather
 - [И снова Яндекс.Погода для сайта: время суток, направление ветра и прочие параметры](https://habrahabr.ru/post/233243/)
@@ -24,6 +55,8 @@ source.utf8 <- function(f) {
 - Произвольные форматтеры для меток
 	- [How to put ggplot2 ticks labels between dollars?](http://stackoverflow.com/questions/20326946/how-to-put-ggplot2-ticks-labels-between-dollars)
 	- [Can you change the default scale_x_datetime?](http://stackoverflow.com/questions/16239830/can-you-change-the-default-scale-x-datetime)
+	- Что делать, если метки на графике надо расставить по фиксированным местам? [how to fix x-axis and y-axis scale](http://stackoverflow.com/questions/30799845/how-to-fix-x-axis-and-y-axis-scale)
+	- [ggplot: conflict between date_breaks() and limits](http://stackoverflow.com/questions/29212722/ggplot-conflict-between-date-breaks-and-limits)
 
 # 06.05.16
 ## R
