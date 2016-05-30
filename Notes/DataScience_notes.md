@@ -1,11 +1,146 @@
+# 30.05.2016
+## Медиа-Тел
+- Общество с ограниченной ответственностью «Медиа-тел» (ООО «Медиа-тел»). [Карточка реквизитов](http://card.1os.su/media-tel.bitrix24.ru)
+```
+Общество с ограниченной ответственностью «Медиа-тел» (ООО «Медиа-тел»)
+Директор Кушнарев Кирилл Викторич
+Телефон: +7 (499) 272-76-58
+Адрес: 119002, г. Москва, ул. Арбат, д.28
+Веб-сайт: http://media-tel.ru
+ИНН: 7704241358
+КПП: 770401001
+ОГРН: 1037700097731
+Р/с: 40702810702450000018
+БИК:
+044525593
+АО "АЛЬФА-БАНК"
+К/с: 30101810200000000593
+```
+
+## R
+- Task Scheduller
+	- [Track your local R scheduled tasks with CommandCenter2000!!!](http://amitkohli.com/track-your-local-r-scheduled-tasks-with-commandcenter2000/)
+	- [taskscheduleR: R package to schedule R scripts with the Windows task manager](http://www.bnosac.be/index.php/blog/56-taskscheduler-r-package-to-schedule-r-scripts-with-the-windows-task-manager)
+	- [New RStudio add-in to schedule R scripts](http://www.bnosac.be/index.php/blog/57-new-rstudio-add-in-to-schedule-r-scripts)
+- ggplot & Legends:
+	- Multiple legends for the same aesthetic. [Тут](http://www.r-bloggers.com/multiple-legends-for-the-same-aesthetic-2/) с картинками. А [тут](http://www.milanor.net/blog/multiple-legends-for-the-same-aesthetic-2/) исходная публикация 
+	- [ggplot2-plotly-cookbook/legends.R](https://github.com/chriddyp/ggplot2-plotly-cookbook/blob/master/legends.R)
+	- [Remove fill around legend key in ggplot](http://stackoverflow.com/questions/21066077/remove-fill-around-legend-key-in-ggplot)
+	- [Legend key features overridden - remove fill and diagonal line](http://stackoverflow.com/questions/28971135/legend-key-features-overridden-remove-fill-and-diagonal-line)
+	- [Adding legend entry makes all other legend entries diagonal and rectangles](http://www.lfpsc.com/article/dbegbahj-adding-legend-entry-makes-all-other-legend-entries-diagonal-and-rectangles.html)
+- [filter for complete cases in data.frame using dplyr (case-wise deletion)](http://stackoverflow.com/questions/22353633/filter-for-complete-cases-in-data-frame-using-dplyr-case-wise-deletion)
+- [STAT 545: Cheatsheet for dplyr join functions](http://stat545.com/bit001_dplyr-cheatsheet.html)
+
+# 27.05.16
+## Shiny
+- [The application unexpectedly exited. Diagnostic information has been dumped to the JavaScript error console. #864](https://github.com/rstudio/shiny/issues/864)
+
+## R
+- [Pacman package](https://github.com/trinker/pacman). The pacman package is an R package management tool that combines the functionality of base library related functions into intuitively named functions. This package is ideally added to .Rprofile to increase workflow by reducing time recalling obscurely named functions, reducing code and integrating functionality of base functions to simultaneously perform multiple actions. 
+- COOL! [wakefield](https://trinkerrstuff.wordpress.com/2015/04/30/wakefield-random-data-set-part-ii/) is designed to quickly generate random data sets. The user passes n (number of rows) and predefined vectors to the r_data_frame function to produce a dplyr::tbl_df object. `devtools::install_github("trinker/wakefield")`
+- Преобразование Date в POSIXct осуществляется в UTC
+```
+m <- dmy("25-05-2016")
+m
+[1] "2016-05-25"
+str(m)
+ Date[1:1], format: "2016-05-25"
+dput(m)
+structure(16946, class = "Date")
+as.POSIXct(m)
+[1] "2016-05-25 03:00:00 MSK"
+```
+
+- Пример правильного преобразования: `force_tz(with_tz(as.POSIXct(dmy("25-05-2016")), tz = "GMT"), tz = "Europe/Moscow")`
+as.POSIXct дает в местной локали (со смещением в часах), отматываем время к нулевой отметке -- к GMT, дальше форсируем использование интересуемой часовой зоны.
+
+## R color
+- [Create Colorful Graphs in R with RColorBrewer and Plotly](http://moderndata.plot.ly/create-colorful-graphs-in-r-with-rcolorbrewer-and-plotly/)
+
+# 26.05.16
+## R
+- Как решить задачу выравнивания осей X у разных графиков
+	- [Align a double line chart and a bar plot on the x axis when both charts have the same X axis. ggplot2](http://stackoverflow.com/questions/31573288/align-a-double-line-chart-and-a-bar-plot-on-the-x-axis-when-both-charts-have-the)
+	- [Align x axes of box plot and line plot using ggplot](http://stackoverflow.com/questions/30402930/align-x-axes-of-box-plot-and-line-plot-using-ggplot)
+	- [Formatting dates on X axis in ggplot2](http://stackoverflow.com/questions/11748384/formatting-dates-on-x-axis-in-ggplot2)
+	- [ggplot bar chart for time series](http://stackoverflow.com/questions/28557393/ggplot-bar-chart-for-time-series)
+	- [Align multiple ggplot2 graphs with a common x axis and different y axes, each with different y-axis labels](https://gist.github.com/tomhopper/faa24797bb44addeba79)
+	- [using ggsave and arrangeGrob after updating gridExtra to 2.0.0](http://stackoverflow.com/questions/33823361/using-ggsave-and-arrangegrob-after-updating-gridextra-to-2-0-0)
+	- [gridExtra github](https://github.com/baptiste/gridextra)
+Какие тут есть соображения (из ссылок сверху)
+1. you have to equalize the plot widths `Bar_plot$widths <-Line_plot$widths `. But in general you also need to equalize the plot widths. If, for example, the y labels on one of the plots take up more space than on the other, even if you use the same axis on each plot, they will not line up when passed to grid.arrange. Соображения [здесь](http://stackoverflow.com/questions/30402930/align-x-axes-of-box-plot-and-line-plot-using-ggplot)
+2. with the dev version of gridExtra, I would do `grid.draw(join(g1, g2, along=2))`. Соображения [здесь](http://stackoverflow.com/questions/31573288/align-a-double-line-chart-and-a-bar-plot-on-the-x-axis-when-both-charts-have-the)
+3. The gridlines on the x axes will be aligned if you use `scale_x_continuous` to force ggplot to use limits you specify. Now, when you add the layers, the axes will share the common scaling. Соображения [здесь](http://stackoverflow.com/questions/30402930/align-x-axes-of-box-plot-and-line-plot-using-ggplot)
+- [Setting limits with scale_x_datetime and time data](http://stackoverflow.com/questions/30607514/setting-limits-with-scale-x-datetime-and-time-data). 
+I want to set bounds for the x-axis for a plot of time-series data which features only time (no dates). My limits are:
+```
+lims <- strptime(c("03:00","16:00"), format = "%H:%M")
+```
+And my ggplot prints fine, but when I add this to scale_x_datetime`scale_x_datetime(limits = lims)`
+I get Error: `Invalid input: time_trans works with objects of class POSIXct only`
+>> the error message says that you should use as.POSIXct on lims. You also need to add the date (year, month and day) in lims, because by default it will be `2015, which is off limits.
+
+- [Introduction to ggbio](http://rpubs.com/lcollado/ggbioIntro)
+
+# 24.05.16
+## DVCS
+- [Mercurial Server for Windows](https://hglabhq.com/). Behind-the-firewall self-hosted Mercurial server and source control management system
+
+# 23.05.16
+## R
+- [The curl package: a modern R interface to libcurl](https://cran.r-project.org/web/packages/curl/vignettes/intro.html)
+
+# 20.05.16
+## R
+- [Append an object to a list in R in amortized constant time, O(1)?](http://stackoverflow.com/questions/2436688/append-an-object-to-a-list-in-r-in-amortized-constant-time-o1)
+
+# 19.05.16
+
+## R + Shiny + DT
+- [How to sort a dataframe by a timestamp column formatted as “%d/%m/%Y %H:%M:%S” for Shiny R script](http://stackoverflow.com/questions/36635045/how-to-sort-a-dataframe-by-a-timestamp-column-formatted-as-d-m-y-hms-f/36643209#36643209)
+- [Prevent column name wrap in shiny DataTable](http://stackoverflow.com/questions/31293506/prevent-column-name-wrap-in-shiny-datatable)
+
+# 18.05.16
+
+## Beeline
+- [Популярная проблема: как отключить смс на Билайне правильно?](http://x-tarif.ru/kak-otklyuchit-sms-na-bilayne.html)
+
+## R
+- [How to run R scripts from the command line](https://support.rstudio.com/hc/en-us/articles/218012917-How-to-run-R-scripts-from-the-command-line)
+- [Run R script from command line](http://stackoverflow.com/questions/18306362/run-r-script-from-command-line)
+
+# 17.05.16
+
+## R
+- [Check for installed packages before running install.packages()](http://stackoverflow.com/questions/9341635/check-for-installed-packages-before-running-install-packages)
+- [Elegant way to check for missing packages and install them?](http://stackoverflow.com/questions/4090169/elegant-way-to-check-for-missing-packages-and-install-them)
+- Logging
+	- [A futile try/catch.](https://cartesianfaith.com/2013/05/29/futile-logger-1-3-3-rc-available/) It is now possible to capture non-futile warnings and errors by wrapping a block in ftry, which is essentially a wrapper around tryCatch.
+	- [futile.logger is a logging utility for R.](https://github.com/zatonovo/futile.logger) Originally built based on log4j, the latest version introduces a new API that is more consistent with R idioms. In practice this means an interface that works equally well in the shell for interactive use and also in scripts for system use.
+	- [How to log using futile logger from within a parallel method in R?](http://stackoverflow.com/questions/20930112/how-to-log-using-futile-logger-from-within-a-parallel-method-in-r)
+	- [logR -- Extended logging solution](https://github.com/jangorecki/logR).
+	- [Is there any standard logging package for R?](http://stackoverflow.com/questions/1928332/is-there-any-standard-logging-package-for-r)
+
+## Shiny
+- [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)`
+- [How can I save the result of str() as a string in R?](http://stackoverflow.com/questions/30964224/how-can-i-save-the-result-of-str-as-a-string-in-r). `capture.output` will create a character vector (one element for each line printed to the console). If you want it in one string, you could concatenate it with paste(foo, collapse="\n").
+- [Shiny: What is the option setting to display in the console the messages between server and ui](http://stackoverflow.com/questions/23002712/shiny-what-is-the-option-setting-to-display-in-the-console-the-messages-between). `options(shiny.trace = TRUE)`
+- [Write error messages for your UI with validate](http://shiny.rstudio.com/articles/validation.html)
+- `sessionInfo()`
+
+
+# 16.05.16
+## Shiny Server
+- [Where to deploy R project in local shiny server {closed}](http://stackoverflow.com/questions/36565085/where-to-deploy-r-project-in-local-shiny-server)
+
 # 13.05.16
 ## R
 - [You want to use different fonts in your graphs.](http://www.cookbook-r.com/Graphs/Fonts/)
 - [extrafont package](https://github.com/wch/extrafont). The extrafont package makes it easier to use fonts other than the basic PostScript fonts that R uses. Fonts that are imported into extrafont can be used with PDF or PostScript output files. On Windows, extrafont will also make system fonts available for bitmap output.
 - COOL. [ggrepel: Avoid overlapping of text labels](http://www.sthda.com/english/wiki/ggplot2-texts-add-text-annotations-to-a-graph-in-r-software)
-- [Autoresize text]
+- Autoresize text
 	- [Mixing ggplot2 graphs with other graphical output](https://github.com/hadley/ggplot2/wiki/Mixing-ggplot2-graphs-with-other-graphical-output)
-	- [ggplot2 texts : Add text annotations to a graph in R software](http://www.sthda.com/english/wiki/ggplot2-texts-add-text-annotations-to-a-graph-in-r-software)
+	- [ggplot2 texts: Add text annotations to a graph in R software](http://www.sthda.com/english/wiki/ggplot2-texts-add-text-annotations-to-a-graph-in-r-software)
 	- [Automatically scale font size (etc.) of ggplot2 inside an Rmarkdown document](http://stackoverflow.com/questions/28835491/automatically-scale-font-size-etc-of-ggplot2-inside-an-rmarkdown-document)
 	- [ggplot2: geom_text resize with the plot and force/fit text within geom_bar](http://stackoverflow.com/questions/36319229/ggplot2-geom-text-resize-with-the-plot-and-force-fit-text-within-geom-bar)
 	- [Creating a text grob that automatically adjusts to viewport size](https://ryouready.wordpress.com/2012/08/01/creating-a-text-grob-that-automatically-adjusts-to-viewport-size/)
@@ -150,8 +285,8 @@ scale_fill_distiller <- function(..., type = "seq", palette = 1, direction = -1,
 - [Альфабанк. Услуга «Мой контроль»](https://alfabank.ru/retail/cards/mycontrol/)
 
 ## Development
-- [Painless Merge Conflict Resolution in Git ](http://blog.wuwon.id.au/2010/09/painless-merge-conflict-resolution-in.html). 
-  При установке Github Desktop Merge tools указывается во временном конфиг файле: C:\Users\<User>\AppData\Local\GitHub\PortableGit_25d850739bc178b2eb13c3e2a9faafea2f9143c0\mingw32\etc\
+- [Painless Merge Conflict Resolution in Git](http://blog.wuwon.id.au/2010/09/painless-merge-conflict-resolution-in.html). 
+  При установке Github Desktop Merge tools указывается во временном конфиг файле gitconfig: C:\Users\<User>\AppData\Local\GitHub\PortableGit_<... numbers ...>\mingw32\etc\
 Добавляем в конфиг:
 ```
 [merge]
@@ -163,7 +298,21 @@ scale_fill_distiller <- function(..., type = "seq", palette = 1, direction = -1,
 	cmd = \"C:/Program Files/Araxis/Araxis Merge/Merge.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
 	trustExitCode = true
 ```
-После выполнения настроек запускаем из командной строки git: `git mergetool
+После выполнения настроек запускаем из командной строки git: `git mergetool`
+
+- [MAC: How do I configure Araxis Merge for use with Git?](http://stackoverflow.com/questions/14593817/how-do-i-configure-araxis-merge-for-use-with-git)
+`git config --global mergetool.araxis.path "/Applications/Araxis Merge.app/Contents/Utilities/compare"`
+После этого запускаем vim: [How to locate the git config file in Mac {duplicate}](http://stackoverflow.com/questions/16283280/how-to-locate-the-git-config-file-in-mac)
+Добавляем в конфиг файл.
+	- `vim ~/.gitconfig`
+	- ESC+I -- переход в режим редактирования
+	- ESC+:+wq! -- выход с сохранением после редактирования
+
+[merge]
+	tool = am
+[mergetool]
+	prompt = true
+	keepBackup = false
 
 ## R
 - [Determining memory usage of objects? (duplicate)](http://stackoverflow.com/questions/1395270/determining-memory-usage-of-objects)

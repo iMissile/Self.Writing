@@ -298,6 +298,7 @@ Data science interviews are the worst because data science is interdisciplinary:
 - [Interview with a Data Scientist: Trey Causey](https://peadarcoyle.wordpress.com/2015/10/28/interview-with-a-data-scientist-trey-causey/)
 
 ## DataScience interesting articles
+- [On the scalability of statistical procedures: why the p-value bashers just don't get it.](http://simplystatistics.org/2014/02/14/on-the-scalability-of-statistical-procedures-why-the-p-value-bashers-just-dont-get-it/)
 - [What is Model-Based Machine Learning?](http://blog.yhat.com/posts/model-based-machine-learning.html)
 - 10 More lessons learned from building real-life Machine Learning systems 
 	— [Part I](https://medium.com/@xamat/10-more-lessons-learned-from-building-real-life-ml-systems-part-i-b309cafc7b5e)

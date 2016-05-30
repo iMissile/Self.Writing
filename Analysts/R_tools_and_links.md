@@ -2,6 +2,14 @@
 
 #R
 
+## R & math Kernel Library
+- [Linking R with Intel’s math kernel libraries](https://wbnicholson.wordpress.com/2014/07/23/linking-r-with-intels-math-kernel-libraries/)
+- [The Benefits of Multithreaded Performance with Microsoft R Open](https://mran.microsoft.com/documents/rro/multithread/)
+	- [Step-by-Step Installing Microsoft R Open 3.2.4](https://mran.microsoft.com/documents/rro/installation/#revorinst-win-steps)
+- [A Data Scientist’s Perspective on Microsoft R](http://blog.revolutionanalytics.com/2016/04/data-scientist-perspective.html)
+- [Introduction to MRO and MRS](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html). Microsoft recently announced that it now offers Microsoft R Server (formerly Revolution R Enterprise) free for developers and Microsoft R Open (formerly Revolution R Open) free for everyone.
+The purpose of this write-up is to help data scientists who are familiar with R better understand the commonalities and differences among R, Microsoft R Open (MRO) and Microsoft R Server (MRS).
+
 ## Hadley Wickham
 - MRAN - Managed R Archive Network. [Explore Packages](https://mran.revolutionanalytics.com/packages/)
 - [Hadley Wickham on GitHub](https://github.com/hadley)
