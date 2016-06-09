@@ -1,3 +1,109 @@
+# 09.06.2016
+## R
+- ['names' attribute \[9\] must be the same length as the vector \[1\]](http://stackoverflow.com/questions/14153092/meaning-of-ddply-error-names-attribute-9-must-be-the-same-length-as-the-vec)
+```
+> mode(priority.train)
+[1] "list"
+> names(priority.train)
+[1] "Date"       "From.EMail" "Subject"    "Message"    "Path"      
+> sapply(priority.train, mode)
+       Date  From.EMail     Subject     Message        Path 
+     "list" "character" "character" "character" "character" 
+> sapply(priority.train, class)
+> length(priority.train)
+[1] 5
+> nrow(priority.train)
+[1] 1250
+> ncol(priority.train)
+[1] 5
+> str(priority.train)
+```
+- [How to flatten nested data frames returned from jsonlite](http://stackoverflow.com/questions/26498185/how-to-flatten-nested-data-frames-returned-from-jsonlite)
+
+# 07.06.2016
+## OS
+- [Copy files over SSH]
+	- [WinSCP. Copy a file from a Windows command line](http://winscp.net/forum/viewtopic.php?t=4989)
+	- [Scripting and Task Automation](http://winscp.net/eng/docs/scripting)
+	- [Automate file transfers (or synchronization) to FTP server or SFTP server](http://winscp.net/eng/docs/guide_automation)
+	- [How to Transfer Files Using PuTTY](http://www.it.cornell.edu/services/managed_servers/howto/file_transfer/fileputty.cfm)
+	- [PyTTY manual. Chapter 5: Using PSCP to transfer files securely](http://the.earth.li/~sgtatham/putty/0.67/htmldoc/Chapter5.html)
+	- [In Windows, how do I transfer files using an SSH or SFTP client?](https://kb.iu.edu/d/akjs)
+- [Run commands over SSH]
+	- [SSH Via Command Prompt Or Batch File In Windows](http://technologyplusblog.com/2012/networking/ssh-via-command-prompt-or-batch-file-in-windows/)
+	- [PuTTY manual. Chapter 7: Using the command-line connection tool Plink](http://the.earth.li/~sgtatham/putty/0.67/htmldoc/Chapter7.html)
+	- [How can I send multiple commands to Interactive telnet/ssh session from command line?](http://stackoverflow.com/questions/17253636/how-can-i-send-multiple-commands-to-interactive-telnet-ssh-session-from-command)
+    Create a file input.txt with content:
+```
+    53
+    GIVE 5 next 3
+```
+
+    Run plink like this:
+```
+    plink user@host < input.txt
+```
+ОБЯЗАТЕЛЬНО файл input.txt закончить CR+CL
+
+## R integration
+- [DeployR](https://deployr.revolutionanalytics.com/documents/getting-started/about/) is an integration technology for deploying R analytics inside web, desktop, mobile, and dashboard applications as well as backend systems. DeployR turns your R scripts into analytics web services, so R code can be easily executed by applications running on a secure server.
+	- [Application Developer Documentation and Tools. Version 8.0.0](https://deployr.revolutionanalytics.com/dev/)
+
+
+## R & Computer Science
+- [HPCC Systems (High Performance Computing Cluster)](https://hpccsystems.com/why-hpcc-systems) is an open source, massive parallel-processing computing platform for big data processing and analytics.
+- [Domino Data Lab](https://www.dominodatalab.com/). A Platform to Accelerate Data Science
+
+
+# 06.06.2016
+## R
+- Operator [, [[, $
+	- [Subsetting](http://adv-r.had.co.nz/Subsetting.html). Advanced R by Hadley Wickham
+	- [The most important distinction between [, [[ and $ is that the [ can select more than one element whereas the other two select a single element.](http://stackoverflow.com/questions/9624169/how-to-subset-from-a-list-in-r)
+- [Create an empty data.frame](http://stackoverflow.com/questions/10689055/create-an-empty-data-frame). The most efficient way to do this is to use structure to create a list that has the class "data.frame":
+```
+structure(list(Date = as.Date(character()), File = character(), User = character()), class = "data.frame")
+```
+- [Understanding data.table](http://r-norberg.blogspot.ru/2016/06/understanding-datatable-rolling-joins.html) by Rolling Joins
+
+- R Profiling
+	- [Profiling in R](http://ipub.com/r-profiling/). R has a built in performance and memory profiling facility: Rprof. Type  ?Rprof into your console to learn more. The way the profiler works is as follows:
+    		* you start the profiler by calling Rprof, providing a filename where the profiling data should be stored
+    		* you call the R functions that you want to analyse
+    		* you call Rprof(NULL) to stop the profiler
+    		* you analyse the file created by Rprof, typically using  summaryRprof
+	- [Profiling with RStudio and profvis](https://blog.rstudio.org/2016/05/23/profiling-with-rstudio-and-profvis/). RStudio Blog
+
+# 03.06.2016
+## R & Wolfram
+- [How-To: Equivalent of R's dplyr::summarize in Wolfram Language ](http://community.wolfram.com/groups/-/m/t/579134)
+
+# 02.06.2016
+## R
+- [How to access the last value in a vector?](http://stackoverflow.com/questions/77434/how-to-access-the-last-value-in-a-vector). Целое исследование с тестами.
+
+# 01.06.2016
+## R
+- [A million ways to connect R and Excel](http://www.thertrader.com/2014/02/11/a-million-ways-to-connect-r-and-excel/)
+
+# 31.05.2016
+## Date
+- [Date and Time Formats](https://www.w3.org/TR/NOTE-datetime)
+```
+1994-11-05T08:15:30-05:00 corresponds to November 5, 1994, 8:15:30 am, US Eastern Standard Time.
+1994-11-05T13:15:30Z corresponds to the same instant.
+```
+
+## R & Tidy Data & join
+- [Tidy data](https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html). Hadley Wickham, 2016-02-05
+
+- [Data Processing with dplyr & tidyr](https://rpubs.com/bradleyboehmke/data_wrangling) Brad Boehmke, February 13th, 2015
+- [Data Tidying. Data Science with R by Garrett Grolemund](http://garrettgman.github.io/tidying/)
+- [Two-table verbs](https://cran.r-project.org/web/packages/dplyr/vignettes/two-table.html)
+- [STAT 545: Cheatsheet for dplyr join functions](http://stat545.com/bit001_dplyr-cheatsheet.html)
+- [SQL join в картинках](https://encrypted.google.com/search?q=sql+join&tbm=isch)
+
+
 # 30.05.2016
 ## Медиа-Тел
 - Общество с ограниченной ответственностью «Медиа-тел» (ООО «Медиа-тел»). [Карточка реквизитов](http://card.1os.su/media-tel.bitrix24.ru)
@@ -29,7 +135,7 @@
 	- [Legend key features overridden - remove fill and diagonal line](http://stackoverflow.com/questions/28971135/legend-key-features-overridden-remove-fill-and-diagonal-line)
 	- [Adding legend entry makes all other legend entries diagonal and rectangles](http://www.lfpsc.com/article/dbegbahj-adding-legend-entry-makes-all-other-legend-entries-diagonal-and-rectangles.html)
 - [filter for complete cases in data.frame using dplyr (case-wise deletion)](http://stackoverflow.com/questions/22353633/filter-for-complete-cases-in-data-frame-using-dplyr-case-wise-deletion)
-- [STAT 545: Cheatsheet for dplyr join functions](http://stat545.com/bit001_dplyr-cheatsheet.html)
+
 
 # 27.05.16
 ## Shiny
