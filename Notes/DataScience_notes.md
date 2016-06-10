@@ -5,11 +5,28 @@
 А отсылка на визуализацию ведет сюда: [World's Biggest Data Breaches. Selected losses greater than 30,000 records (updated 6th May 2016)](http://www.informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/)
 - [R for Publication by Page Piccinini: Lesson 3 – Logistic Regression](http://datascienceplus.com/r-for-publication-by-page-piccinini-lesson-3-logistic-regression/)
 - Разбивка на диапазоны. Ключевое слово -- "ДИСКРЕТИЗАЦИЯ". См. область из машинного обучения. `discretize {arules}`, см. [Convert a Continuous Variable into a Categorical Variable](http://www.inside-r.org/packages/cran/arules/docs/discretize)
+- Conditional dplyr mutate
+	- [dplyr mutate/replace on a subset of rows](http://stackoverflow.com/questions/34096162/dplyr-mutate-replace-on-a-subset-of-rows)
+	- [Function to replace values for specific rows #425](https://github.com/hadley/dplyr/issues/425)
+- [Handling factor variables in dplyr](http://stackoverflow.com/questions/27879121/handling-factor-variables-in-dplyr). 
+I want to use dplyr to extract the last value in grade.history and check it against current.grade: <...skipped...>. However, dplyr seems to convert the factors to integers, so I get this: <...skipped...>
+- [dplyr join warning: joining factors with different levels](http://stackoverflow.com/questions/30468412/dplyr-join-warning-joining-factors-with-different-levels).
+You can make sure that both factors have the same levels before merging
+```
+combined <- sort(union(levels(x$a), levels(y$a)))
+n <- left_join(mutate(x, a=factor(a, levels=combined)),
+    mutate(x, a=factor(a, levels=combined)))
+# Joining by: "a"
+class(n$a)
+#[1] "factor"
+```
 
 ## Visulization
 - [Learn data-visualization](http://www.informationisbeautiful.net/about/). I’m David McCandless, a London-based author, writer and designer. I’ve written for The Guardian, Wired and others. I’m into anything strange and interesting. 
 These days I’m an independent data journalist and information designer. A passion of mine is visualizing information – facts, data, ideas, subjects, issues, statistics, questions – all with the minimum of words.
 
+## Steam
+- [Как вернуть деньги за игры, купленные в Steam](http://kanobu.ru/articles/kak-vernut-dengi-za-igryi-kuplennyie-v-steam-369053/)
 
 # 09.06.2016
 ## R
