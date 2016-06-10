@@ -1,3 +1,16 @@
+# 10.05.2016
+
+## R
+- [';--have i been pwned?](https://haveibeenpwned.com/). Check if you have an account that has been compromised in a data breach. Вариант использования взят [отсюда](http://itsalocke.com/hibpwned-on-cran/)
+А отсылка на визуализацию ведет сюда: [World's Biggest Data Breaches. Selected losses greater than 30,000 records (updated 6th May 2016)](http://www.informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/)
+- [R for Publication by Page Piccinini: Lesson 3 – Logistic Regression](http://datascienceplus.com/r-for-publication-by-page-piccinini-lesson-3-logistic-regression/)
+- Разбивка на диапазоны. Ключевое слово -- "ДИСКРЕТИЗАЦИЯ". См. область из машинного обучения. `discretize {arules}`, см. [Convert a Continuous Variable into a Categorical Variable](http://www.inside-r.org/packages/cran/arules/docs/discretize)
+
+## Visulization
+- [Learn data-visualization](http://www.informationisbeautiful.net/about/). I’m David McCandless, a London-based author, writer and designer. I’ve written for The Guardian, Wired and others. I’m into anything strange and interesting. 
+These days I’m an independent data journalist and information designer. A passion of mine is visualizing information – facts, data, ideas, subjects, issues, statistics, questions – all with the minimum of words.
+
+
 # 09.06.2016
 ## R
 - ['names' attribute \[9\] must be the same length as the vector \[1\]](http://stackoverflow.com/questions/14153092/meaning-of-ddply-error-names-attribute-9-must-be-the-same-length-as-the-vec)
