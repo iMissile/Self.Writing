@@ -1,3 +1,63 @@
+# 17.06.2016
+## R
+- [foreach]
+	- [The Wonders of foreach](http://www.exegetic.biz/blog/2013/08/the-wonders-of-foreach/). Posted by Andrew Collier on 25 August 2013.
+	- [How-to go parallel in R – basics + tips](http://gforge.se/2015/02/how-to-go-parallel-in-r-basics-tips/)
+	- [For each row in an R dataframe](http://stackoverflow.com/questions/1699046/for-each-row-in-an-r-dataframe)
+- [Check existence of directory and create if doesn't exist](http://stackoverflow.com/questions/4216753/check-existence-of-directory-and-create-if-doesnt-exist)
+
+install.packages(c("ggplot2", "lubridate", "dplyr", "tidyr", "readr", "reshape2", "curl", "httr", "jsonlite", "magrittr", "arules", "futile.logger", "scales", "iterators", "foreach", "gtable", "grid", "gridExtra", "ggmap"))
+
+## DeployR
+- Работа с внешними файлами
+	- [Adding Files to External Directories](https://msdn.microsoft.com/en-us/microsoft-r/deployr-admin-manage-big-data)
+	- [DeployR Open - Restrict file system access](http://stackoverflow.com/questions/36709291/deployr-open-restrict-file-system-access)
+	- [Loading Data into the R Session](https://msdn.microsoft.com/en-us/microsoft-r/deployr-repository-manager/deployr-repository-manager-testing-debugging-scripts). Ищем такой пункт в тексте.
+	- [Repository-Managed Files](https://msdn.microsoft.com/en-us/microsoft-r/deployr-api-reference). Ищем такой пункт в тексте.
+	- [6.3 Working with the Project Workspace APIs](https://deployr.revolutionanalytics.com/documents/dev/api-doc/guide/single.html#projectworkspaceload)
+	- [6.4 Working with the Project Directory APIs](https://deployr.revolutionanalytics.com/documents/dev/api-doc/guide/single.html#projectdirectory). "6.4.7 /r/project/directory/load"
+- [The DeployR command line interface](https://github.com/Microsoft/deployr-cli)
+- [DeployR. Simple R Analytics Integration for Application Developers](https://github.com/deployr)
+
+# 16.06.16
+## R
+- [githubinstall: New R Package for Easy to Install R Packages on GitHub](http://mockquant.blogspot.ru/2016/06/githubinstall-new-r-package-for-easy-to.html). The githubinstall package provides a way to install packages on GitHub by only the package names just like install.packages(). githubinstall() suggests the GitHub repository from package names, and asks whether you want to execute the installation.
+- [The R Project for Maps](http://www.web-maps.com/gisblog/?p=2365). R changes things in the geospatial world. The R project originated as a modular statistics and graphics toolkit. Unless you happen to be a true math prodigy, statistics are best visualized graphically. With powerful graphics libraries, R has evolved into a useful platform for ad hoc spatial analysis.
+- [Welcome to R Tools for Visual Studio Preview!](http://microsoft.github.io/RTVS-docs/)
+- [Introduction to data.tree](http://cran.r-project.org/web/packages/data.tree/vignettes/data.tree.html)
+- [ipub. bridging finance and IT](http://ipub.com): 
+	- [Solving Tic-Tac-Toe with R data.tree](http://ipub.com/tic-tac-toe/)
+	- [Reference semantics in R](http://ipub.com/reference-semantics/)
+- [MRAN checkpoint. Reproducibility: Using Fixed CRAN Repository Snapshots](https://mran.revolutionanalytics.com/documents/rro/reproducibility/)
+- [Images as x-axis labels (updated)](http://jcarroll.com.au/2016/06/03/images-as-x-axis-labels-updated/)
+- [Using caret to compare models](http://blog.revolutionanalytics.com/2016/05/using-caret-to-compare-models.html)
+- [Good R Packages](http://blog.revolutionanalytics.com/2016/05/good-r-packages.html)
+
+- COOL!. [For each row in an R dataframe](http://stackoverflow.com/questions/1699046/for-each-row-in-an-r-dataframe)
+
+## IoT
+- [IoT – Internet of Things (das Ding an sich)](http://www.web-maps.com/gisblog/?p=2404)
+- [Azure IoT Suite](http://www.web-maps.com/gisblog/?p=2404)
+
+# 15.06.16
+## R
+- Linear Regression
+	- [Fitting & Interpreting Linear Models in R](http://blog.yhat.com/posts/r-lm-summary.html)
+	- [Slides from my talk on the broom package](http://varianceexplained.org/r/broom-slides/)
+	- [broom: a package for tidying statistical models into data frames](http://varianceexplained.org/r/broom-intro/)
+	- [Estimated Simple Regression Equation](http://www.r-tutor.com/elementary-statistics/simple-linear-regression/estimated-simple-regression-equation)
+- [Size of each object in R’s workspace](http://isomorphism.es/post/92559575719/size-of-each-object-in-rs-workspace)
+
+# 14.06.16
+
+## R
+- Get current function name
+	- [How to get the name of the calling function inside the called routine?](http://stackoverflow.com/questions/15595478/how-to-get-the-name-of-the-calling-function-inside-the-called-routine)
+Or just deparse(sys.call()) – hadley Mar 25 '13 at 23:45
+@hadley, nope, that gets the current call. I want the call one level above. – Ferdinand.kraft Mar 25 '13 at 23:54
+Oh, that wasn't clear from your question. Try sys.call(-1) – hadley Mar 26 '13 at 13:13
+@hadley, thanks, this is even better! – Ferdinand.kraft Mar 26 '13 at 15:58 
+
 # 10.05.2016
 
 ## R
@@ -131,6 +191,7 @@ structure(list(Date = as.Date(character()), File = character(), User = character
 - [Data Tidying. Data Science with R by Garrett Grolemund](http://garrettgman.github.io/tidying/)
 - [Two-table verbs](https://cran.r-project.org/web/packages/dplyr/vignettes/two-table.html)
 - [STAT 545: Cheatsheet for dplyr join functions](http://stat545.com/bit001_dplyr-cheatsheet.html)
+- [STAT 545: Computing by groups within data.frames with plyr](http://stat545.com/block013_plyr-ddply.html#introduction-to-ddply)
 - [SQL join в картинках](https://encrypted.google.com/search?q=sql+join&tbm=isch)
 
 

@@ -19,6 +19,9 @@ Arq automatically backs up all your Macs and PCs. Your files are stored securely
 ## Текстовые редакторы
 - [Выбор текстового редактора или «хочу все в одном»](http://habrahabr.ru/post/260865/). Победил Brackets
 
+# Запуск Windows программ под Mac
+- [Как легко запускать Windows-приложения на Mac? Приложение Wineskin](http://lifehacker.ru/2014/03/03/kak-legko-zapuskat-windows-prilozhenie-na-mac-prilozhenie-wineskin/)
+- [Три способа запустить Windows программу на Mac OS](http://geekpro.ru/tri-sposoba-zapustit-windows-programmu-na-mac-os)
 
 # Hack
 - [MacX.ws](https://macx.ws)

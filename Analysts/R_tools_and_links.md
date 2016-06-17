@@ -108,7 +108,7 @@ Predictive applications automate decision-making based on current and historical
 - [60+ Free Books on Big Data, Data Science, Data Mining, Machine Learning, Python, R, and more](http://www.kdnuggets.com/2015/09/free-data-science-books.html)
 
 ## Data Processing articles (COOL)
-- [# R & Github little_tricks](https://github.com/bdemeshev/em301/wiki/little_tricks). Русские не сдаются! Общая стратегия: переводить все файлы в одну кодировку.
+- [R & Github little_tricks](https://github.com/bdemeshev/em301/wiki/little_tricks). Русские не сдаются! Общая стратегия: переводить все файлы в одну кодировку.
 На linux и mac -- в utf8. На windows -- в cp1251. О utf8 остаётся только мечтать.
 - [RDataMining.com: R and Data Mining](http://www.rdatamining.com/home)
 - [Recommendation System in R](http://blog.yhathq.com/posts/recommender-system-in-r.html)
@@ -166,6 +166,7 @@ Predictive applications automate decision-making based on current and historical
 	- [expand.grid()](http://www.endmemo.com/program/R/expand_grid.php) function creates a data frame from all combinations of the supplied vectors or factors.
 	- [The R data.table package provides an enhanced version of data.frame](https://github.com/Rdatatable/data.table/wiki)
 	- [data.table vs dplyr: can one do something well the other can't or does poorly?](http://stackoverflow.com/questions/21435339/data-table-vs-dplyr-can-one-do-something-well-the-other-cant-or-does-poorly)
+	- [Intro to The data.table Package](https://rollingyours.wordpress.com/2016/06/14/fast-aggregation-of-large-data-with-the-data-table-package/)
 	- [Two of my favorite data.table features](http://educate-r.org/2014/01/06/FavDataTable/)
 	- [Solve common R problems efficiently with data.table](http://jangorecki.github.io/blog/2015-12-11/Solve-common-R-problems-efficiently-with-data.table.html)
 	- [automatic indexing vs between() on integer ranges](https://gist.github.com/arunsrinivasan/dacb9d1cac301de8d9ff)
@@ -176,6 +177,7 @@ Predictive applications automate decision-making based on current and historical
 
 - [readr 0.1.0](http://blog.rstudio.org/2015/04/09/readr-0-1-0/)
 - [Introduction to data.tree](http://cran.r-project.org/web/packages/data.tree/vignettes/data.tree.html)
+
 - [A better way of saving and loading objects in R](http://www.fromthebottomoftheheap.net/2012/04/01/saving-and-loading-r-objects/). Вышел по ссылке [отсюда](http://stackoverflow.com/questions/13206876/saving-and-loading-data-frames)
 - [Say it in R with "by", "apply" and friends](http://www.magesblog.com/2012/01/say-it-in-r-with-by-apply-and-friends.html)
 - [NOTE](http://rpackages.ianhowson.com/cran/dplyr/man/select.html): one_of("x", "y", "z"): selects variables provided in a character vector.
@@ -361,6 +363,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [Webscraping. SSRMC lectures in Web Scraping, HT 2014](http://fredheir.github.io/WebScraping/)
 Welcome to Web Scraping.
 This site contains links to the slides for the course Web Scraping: Digital Data Collection for the Humanities and Social Sciences, conducted in Hilary Term 2014 at the University of Cambridge, hosted by the Social Sciences' Research Methods Centre (SSRMC), and taught by Rolf Fredheim
+- [Introduction to R for Data Science](http://www.exactness.net/post/145682161575/introduction-to-r-for-data-science-session-7) :: Session 7 [Multiple Linear Regression Model in R  + Categorical Predictors, Partial and Part Correlation]
 - [Code School]()
 	- [The Magical Marvels of MongoDB](http://campus.codeschool.com/courses/the-magical-marvels-of-mongodb/contents)
 - [Data School](http://www.dataschool.io/). Data science for beginners!
@@ -521,6 +524,7 @@ Vega is a declarative format for creating, saving, and sharing visualization des
 
 
 ## Blogs
+- [HOXO-M - anonymous data analyst group in Japan](http://mockquant.blogspot.ru/)
 - [FlowingData](http://flowingdata.com/)
 - [Blog of David Robinson, a Data Scientist at Stack Overflow](http://varianceexplained.org/)
 - [is.R()](http://is-r.tumblr.com/)
@@ -555,6 +559,7 @@ Vega is a declarative format for creating, saving, and sharing visualization des
 
 
 ## Packets, Packages & ideas
+- [githubinstall: New R Package for Easy to Install R Packages on GitHub](http://mockquant.blogspot.ru/2016/06/githubinstall-new-r-package-for-easy-to.html). The githubinstall package provides a way to install packages on GitHub by only the package names just like install.packages(). githubinstall() suggests the GitHub repository from package names, and asks whether you want to execute the installation.
 - [wakefield](https://github.com/trinker/wakefield) is designed to quickly generate random data sets. [The user passes n (number of rows) and predefined vectors to the r_data_frame function to produce a dplyr::tbl_df object.](https://trinkerrstuff.wordpress.com/2015/04/30/wakefield-random-data-set-part-ii/)
 - The [pacman package](https://cran.r-project.org/web/packages/pacman/vignettes/Introduction_to_pacman.html) is an R package management tool that combines the functionality of base library related functions into intuitively named functions.
 - [The fanplot package for R](http://gjabel.wordpress.com/2012/08/13/the-fanplot-package-for-r/)
