@@ -1,3 +1,32 @@
+# 21.06.2016
+
+## R
+- ggplot leneds tweaking
+	- [Turning off some legends in a ggplot](http://stackoverflow.com/questions/14604435/turning-off-some-legends-in-a-ggplot)
+	- [Remove extra legends in ggplot2](http://stackoverflow.com/questions/11714951/remove-extra-legends-in-ggplot2)
+- [Increase the size of variable-size points in ggplot2 scatter plot (duplicate)](http://stackoverflow.com/questions/20251119/increase-the-size-of-variable-size-points-in-ggplot2-scatter-plot)
+- [setTimeLimit persists after function completes](http://stackoverflow.com/questions/12514899/settimelimit-persists-after-function-completes). Снимем лимиты времени, чтобы избежать ошибки "In is.gtable(x) : reached elapsed time limit"
+- [How to expand color palette with ggplot and RColorBrewer](http://novyden.blogspot.ru/2013/09/how-to-expand-color-palette-with-ggplot.html)
+# 20.06.2016
+## R
+- Join .CSV files
+	- [Merge all files in a directory using R into a single dataframe](https://psychwire.wordpress.com/2011/06/03/merge-all-files-in-a-directory-using-r-into-a-single-dataframe/)
+	- [Repeating things: looping and the apply family](http://nicercode.github.io/guides/repeating-things/)
+	- [Using Lapply to Import Files to R](http://brianmannmath.github.io/blog/2014/01/20/using-lapply-to-import-files-to-r/)
+
+- ['install_github' gives timeout reached error #877](https://github.com/hadley/devtools/issues/877). 
+You'll need to do something like
+```
+library(httr)
+with_config(use_proxy(...), install_github(...))
+```
+
+- [Five Interactive R Visualizations With D3, ggplot2, & RStudio](http://moderndata.plot.ly/interactive-r-visualizations-with-d3-ggplot2-rstudio/)
+- [ggnet2: network visualization with ggplot2](https://briatte.github.io/ggnet/)
+
+# Wolfram
+- [How to color each point with a different color in ListPlot??](http://community.wolfram.com/groups/-/m/t/504085)
+
 # 17.06.2016
 ## R
 - [foreach]
@@ -334,7 +363,7 @@ I get Error: `Invalid input: time_trans works with objects of class POSIXct only
 ## R
 - [You want to use different fonts in your graphs.](http://www.cookbook-r.com/Graphs/Fonts/)
 - [extrafont package](https://github.com/wch/extrafont). The extrafont package makes it easier to use fonts other than the basic PostScript fonts that R uses. Fonts that are imported into extrafont can be used with PDF or PostScript output files. On Windows, extrafont will also make system fonts available for bitmap output.
-- COOL. [ggrepel: Avoid overlapping of text labels](http://www.sthda.com/english/wiki/ggplot2-texts-add-text-annotations-to-a-graph-in-r-software)
+- COOL. [ggrepel: Avoid overlapping of text labels](https://cran.r-project.org/web/packages/ggrepel/vignettes/ggrepel.html)
 - Autoresize text
 	- [Mixing ggplot2 graphs with other graphical output](https://github.com/hadley/ggplot2/wiki/Mixing-ggplot2-graphs-with-other-graphical-output)
 	- [ggplot2 texts: Add text annotations to a graph in R software](http://www.sthda.com/english/wiki/ggplot2-texts-add-text-annotations-to-a-graph-in-r-software)
