@@ -1,3 +1,122 @@
+# 30.06.2106
+- [rud.is](https://rud.is/b/). "In God we trust. All others must bring data"
+- excellent 6-part [Beginners guide to R](http://www.computerworld.com/s/article/9239625/Beginner_s_guide_to_R_Introduction)
+- [Advanced Beginner's Guide to R](http://www.computerworld.com/resources/106345/advanced-beginners-guide-to-r.html)
+- [Plotly R figure reference](https://plot.ly/r/reference/)
+- [Pining for the fjoRds & monitoring SSL/TLS certificate expiration in R with flexdashboard](https://rud.is/b/2016/05/01/pining-for-the-fjords-monitoring-ssltls-certificate-expiration-in-r-with-flexdashboard/)
+- [split data.frame into list by rows](http://stackoverflow.com/questions/5110732/r-converting-each-row-of-a-data-frame-into-a-list-item)
+```
+df2 <- data.frame(x = as.numeric(df.label$x), y = -df.label$y, text = as.character(df.label$text), showarrow = TRUE, stringsAsFactors = FALSE)
+am <- split(df2, 1:nrow(df2))
+a <- lapply(am, as.list)
+```
+сообржаения
+```
+# list(annotation = a) дает ошибку 
+# "Error in FUN(X[[i]], ...) : 'options' must be a fully named list, or have no names (NULL)"
+# Не совсем ясно, почему. Но plotly_build(p2)$layout$annotations существет и туда засунута легенда
+# если сделать так:   layout(annotations = NULL) %>% layout(annotations = a), то все проходит
+```
+- [flexdashboard Examples](http://rmarkdown.rstudio.com/flexdashboard/examples.html)
+The examples below illustrate the use of flexdashboard with various packages and layouts. If you want to learn more about how the dashboards were created each example includes a link to it’s source code.
+
+# 29.06.2016
+## R
+- [Express Intro to dplyr. Working The Data Like a Boss!](https://rollingyours.wordpress.com/2016/06/29/express-intro-to-dplyr/).
+- Slides
+	- [jsonlite and mongolite](http://bit.ly/mongo-slides) from [UseR! 2015](http://user2015.math.aau.dk/oral_sessions)
+	- [The gridGraphics Package](https://www.stat.auckland.ac.nz/~paul/Talks/useR2015/gridgraphics.html)
+
+
+## plotly
+- [geom_label() in plotly](https://github.com/ropensci/plotly/issues/546) -> [ Dynamic list of unsupported geoms #348](https://github.com/ropensci/plotly/issues/348)
+
+# 28.06.2016
+## Other
+- [CTRLQ.org. SEARCH BY IMAGE. Know more about any photograph with Google Reverse Image Search](https://ctrlq.org/google/images/)
+- [TinEye Reverse Image Search](https://www.tineye.com/)
+- [Best Reverse Image Search Engines, Apps And Its Uses (2016)](http://beebom.com/reverse-image-search-engines-apps-uses/)
+
+# 27.06.2016
+## R
+- [Data Science End-to-End Walkthrough. Microsoft SQL Server 2016](https://msdn.microsoft.com/en-gb/library/mt612857.aspx)
+- COOL! [Microsoft Analytics in 2016](http://www.cybaea.net/journal/2016/06/24/Microsoft-Analytics-in-2016)
+ -[Fixing R’s design flaws in a new version of pqR](https://radfordneal.wordpress.com/2016/06/25/fixing-rs-design-flaws-in-a-new-version-of-pqr/). Operator `..`
+- [archivist](http://pbiecek.github.io/archivist/). Archiving, Managing and Sharing R Objects. 
+Archivist allows you to store selected artifacts as binary files together with their metadata and relations. Archivist allows you to share artifacts with others, either through a shared folder or github. Archivist allows you to look for already created artifacts by using its class, name, date of creation or other properties. It also facilitates restoring such artifacts. Archivist allows to check if a new artifact is the exact copy of the one that was produced some time ago. This might be useful either for testing or caching.
+- [Easy data validation with the validate package](http://www.markvanderloo.eu/yaRb/2016/03/25/easy-data-validation-with-the-validate-package/)
+
+## Shiny
+- [Shiny + archivist = reproducible interactive exploration](http://smarterpoland.pl/index.php/2016/06/shiny-archivist-reproducible-interactive-exploration/). [Archivist](http://pbiecek.github.io/archivist/) is a package for management of R objects. It allows you to create a repository (local folder or git repo) and push all interesting R objects to it. Each object will be stored along with its metadata. Each object will get it’s unique key, i.e. md5hash.
+Then you or your collaborators may access these objects from any R process, local or remote.] 
+
+# 24.06.2016
+## Shiny
+- [Stop Shiny and Close Browser Together](http://data-steve.github.io/shiny-shutdown-with-browser-close/). We wanted to be able to deploy local instances of shiny app and then when user is done with session, the user can close out the session by closing the browser and shutting down shiny server at same time.
+- [Scaling and Performance - Tuning Applications in Shiny Server Pro](https://support.rstudio.com/hc/en-us/articles/220546267-Scaling-and-Performance-Tuning-Applications-in-Shiny-Server-Pro). Added: June 07, 2016
+- [Scaling and Performance Tuning with shinyapps.io](http://shiny.rstudio.com/articles/scaling-and-tuning.html). Added: 07 Jan 2015
+- [3.8 Reactivity Log](http://docs.rstudio.com/shiny-server/#server-hierarchy)
+- [How do I deploy Shiny applications to Shiny Server?](https://support.rstudio.com/hc/en-us/articles/221319028-How-do-I-deploy-Shiny-applications-to-Shiny-Server-)
+- [What web server is used by Shiny Server and Shiny Server Pro?](https://support.rstudio.com/hc/en-us/articles/218294977-What-web-server-is-used-by-Shiny-Server-and-Shiny-Server-Pro-). A: We currently use Node.js.
+	- [What is Node.js? {closed}](http://stackoverflow.com/questions/1884724/what-is-node-js)
+	- [Node.js - Introduction. What is Node.js?](http://www.tutorialspoint.com/nodejs/nodejs_introduction.htm). Node.js is a server side platform built on Google Chrome's JavaScript Engine (V8 Engine). Node.js was developed by Ryan Dahl in 2009 and its latest version is v0.10.36. The definition of Node.js as supplied by its official documentation is as follows −
+```
+Node.js is a platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
+```
+
+
+
+## R
+- [Open Analytics. Architect](https://www.openanalytics.eu/products). Data scientists manage rich data sources, build statistical models and communicate findings. They work at the intersection of computer science and statistics and often rely on a multitude of tools to keep on top. 
+- [Fastest way to check if dataframe is empty {duplicate}](http://stackoverflow.com/questions/30808195/fastest-way-to-check-if-dataframe-is-empty)
+
+# 23.06.2016
+## R
+- Полезные команды для анализа инсталляции R:
+	- `packageStatus()`
+	- `sessionInfo()`
+	- `update.packages(checkBuilt=TRUE)`
+
+- [A step by step (screenshots) tutorial for upgrading R on Windows](http://www.r-statistics.com/2015/06/a-step-by-step-screenshots-tutorial-for-upgrading-r-on-windows/)
+- [UpdateR package: update R version with a function (on MAC OSX)](https://andreacirilloblog.wordpress.com/2015/10/22/updater-package-update-r-version-with-a-function-on-mac-osx/)
+- Ручное обновление R под Mac. [Update R using RStudio](http://stackoverflow.com/questions/13656699/update-r-using-rstudio)
+- [Greek and alpha numeric in ggplot2 axis labels](http://stackoverflow.com/questions/15841538/greek-and-alpha-numeric-in-ggplot2-axis-labels)
+
+## Dashboards
+- [Dashbuilder](http://dashbuilder.org/) (Development is sponsored by Red Hat) is a full featured web application which allows non-technical users to visually create business dashboards.
+Dashboard data can be extracted from heterogeneous sources of information such as JDBC databases or regular text files.
+- [Business dashboard software for teams who want to continuously monitor the health of their business.](https://www.klipfolio.com/)
+- [Bring your data to life with Microsoft Power BI](https://powerbi.microsoft.com/en-us/). Microsoft Power BI transforms your company's data into rich visuals for you to collect and organize so you can focus on what matters to you. Stay in the know, spot trends as they happen, and push your business further.
+- [opCharts | Modern Charts, UI and Dashboards](https://opmantek.com/opcharts-dashboards-charts-management/). Modern, dynamic, interactive charting, custom dashboards and a RESTful API to visualize NMIS data and more. opCharts is ideal as a custom user interface and a customer portal.
+- [iDasboards](http://www.idashboards.com/). Since our launch in 2003, iDashboards has provided clients with an easy-to-implement dashboard solution that offers dynamic chart and table options. While most competitors focus on numbers, we believe that the big picture should be attractive as well.
+
+
+## Shiny etc.
+- [New Zealand Tourism Dashboard](https://mbienz.shinyapps.io/tourism_dashboard_prod/). The New Zealand Tourism Dashboard is a one-stop shop for all information about tourism. It brings together a range of tourism datasets produced by MBIE and Statistics New Zealand into one easy-to-use tool. Information is presented using dynamic graphs and data tables.
+	- [Just a short note](http://ellisp.github.io/blog/2016/02/24/tourism-dashboard/) that in my day job we’ve released the New Zealand Tourism Dashboard, launched by the Associate Minister for Tourism earlier today. It’s built with R and Shiny and I won’t say more about it than that to avoid mixing up my work and outside-work hats. Except that it’s really really awesome, and there’s an enormous amount of data in there to explore. Great work by the team.
+	- Source code, minus a few design elements, is now available at [GitHub](https://github.com/nz-mbie/tourism-dashboard-public)
+- [R-bloggers. 1012 search results for "Shiny"](http://www.r-bloggers.com/search/shiny/)
+
+## Other
+- [Scarabey.org](www.scarabey.org)
+
+# 22.06.2016
+
+## R
+- COOL. [How to reshape data in R: tidyr vs reshape2](http://www.milanor.net/blog/reshape-data-r-tidyr-vs-reshape2/)
+- Reproducible research
+	- PirateGrunt. Pirates, grunts, etc. [represtools is on CRAN](http://pirategrunt.com/r/2016/06/21/ReprestoolsOnCran/)
+	- [represtools. Reproducible research tools](http://pirategrunt.com/represtools/)
+- [Research Triangle Analysts](http://www.rtpanalysts.org/home) is a unique forum for data enthusiasts in the Research Triangle of North Carolina (Raleigh, Durham, Chapel Hill, and the surrounding area).
+- [Introducing the p-hacker app: Train your expert p-hacking skills](http://www.nicebread.de/introducing-p-hacker/)
+- [MonetDBLite because fast](http://www.asdfree.com/2016/06/monetdblite-because-fast.html)
+
+
+## IoT
+- [InitialState](https://www.initialstate.com/). The Place To Keep Your Data. Data analytics for the internet of things.
+- [Tutorial: How to send data to Initial State in SiteWhere](http://blog.initialstate.com/tutorial-how-to-send-data-to-initial-state-in-sitewhere/)
+- ЖЖ Олега Артамонова. [Unwired Devices LLC и «Интернет вещей»](http://olegart.livejournal.com/1487714.html).
+
 # 21.06.2016
 
 ## R

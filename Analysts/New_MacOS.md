@@ -16,6 +16,8 @@ Arq automatically backs up all your Macs and PCs. Your files are stored securely
 ## Tools
 - [AppZapper](http://www.appzapper.com/). The Unistaller Apple forgot
 - [A look back at 2015: My Top Mac Apps](http://brettterpstra.com/2016/02/17/a-look-back-at-2015-my-top-mac-apps/)
+- [Homebrew. The missing package manager for OS X](http://brew.sh/)
+
 ## Текстовые редакторы
 - [Выбор текстового редактора или «хочу все в одном»](http://habrahabr.ru/post/260865/). Победил Brackets
 
