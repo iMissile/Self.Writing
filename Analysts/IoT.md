@@ -1,3 +1,6 @@
+# Future IoT
+- [How the new hardware movement is even bigger than the Internet of Things](https://www.oreilly.com/ideas/how-the-new-hardware-movement-is-even-bigger-than-the-internet-of-things)
+
 # IoT платформы
 ## Quora
 - [Top 49 Tools For The Internet of Things](https://blog.profitbricks.com/top-49-tools-internet-of-things/)

@@ -1,4 +1,12 @@
+# 01.07.2016
+- [Gapminer. A fact-based worldview](https://www.gapminder.org/)
+
+## DevOps
+- [The Periodic Table of DevOps Tools](https://dzone.com/articles/the-periodic-table-of-devops-tools-v2-is-here-1). Или на [XebiaLabs](https://xebialabs.com/periodic-table-of-devops-tools/)
+
 # 30.06.2106
+
+## R
 - [rud.is](https://rud.is/b/). "In God we trust. All others must bring data"
 - excellent 6-part [Beginners guide to R](http://www.computerworld.com/s/article/9239625/Beginner_s_guide_to_R_Introduction)
 - [Advanced Beginner's Guide to R](http://www.computerworld.com/resources/106345/advanced-beginners-guide-to-r.html)
