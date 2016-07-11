@@ -1,3 +1,24 @@
+# Переход на SSD
+- [Оптимизация настроек Windows 10 для работы SSD диска](http://windowsten.ru/optimizaciya-nastroek-windows-10-dlya-raboty-ssd-diska/)
+- [Новые технологии. Обзор Samsung 850 Pro 31.08.2014](http://allssd.ru/obzor-samsung-850-pro/)
+- [SSD Mini Tweaker](http://spb-chas.ucoz.ru/). Программа для изменения настроек и параметров системы под твердотельный накопитель. Цель программы - это снизить обращение системы к SSD для более продолжительной его работы. Распространяется бесплатно и предназначена для тех, у кого система установлена на SSD-диске.
+- [Lenovo v580 (20147) и mSATA SSD как загрузочный диск!](https://forums.lenovo.com/t5/%D0%A1%D0%B5%D1%80%D0%B8%D0%B8-U-%D0%B8-V/Lenovo-v580-20147-%D0%B8-mSATA-SSD-%D0%BA%D0%B0%D0%BA-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BE%D1%87%D0%BD%D1%8B%D0%B9-%D0%B4%D0%B8%D1%81%D0%BA/td-p/2149052)
+- [Lenovo V580c установка Windows 10 на SSD](https://forums.lenovo.com/t5/%D0%A1%D0%B5%D1%80%D0%B8%D0%B8-U-%D0%B8-V/Lenovo-V580c-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Windows-10-%D0%BD%D0%B0-SSD/m-p/3354438)
+- [Для SSD диска в V580c (20160) - незадействованный слот miniPCIe или mSATA?](http://lenovo-forums.ru/topic/5670-%D0%B4%D0%BB%D1%8F-ssd-%D0%B4%D0%B8%D1%81%D0%BA%D0%B0-%D0%B2-v580c-20160-%D0%BD%D0%B5%D0%B7%D0%B0%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9-%D1%81%D0%BB%D0%BE%D1%82-minipcie-%D0%B8%D0%BB%D0%B8-msata/)
+Вчера купил твердотельный накопитель (SSD) Plextor 128Gb mSATA (PX-128M5M). Всё встало отлично. Сразу определилось.
+Возникли некоторые проблемы с переносом Windows 7 на SSD. Это потому, что пробовал делать средствами Acronis True Image. Делать это лучше, как оказалось,  AOMEI Partition Assistant Home Edition – бесплатной программкой с большим функционалом. Вот здесь инструкция, как пользоваться:
+- [AOMEI Partition Assistant 6.0](http://www.aomeitech.com/aomei-partition-assistant.html). Professional and complete disk partition solution for Windows OS
+	- [The easiest OS migration to new hard drive or SSD](http://www.disk-partition.com/features/migrate-os-to-ssd.html)
+	- [Learn How to Migrate OS to SSD or HDD](http://www.disk-partition.com/features/migrate-os-to-ssd.html)
+
+http://it-like.ru/kak-perenesti-windows-7-na-ssd-disk/
+
+Далее, можно обновить прошивку. Вот инструкция как делать и где взять: http://pk-help.com/workstation/upgrade-plextor-m5s/
+- [жесткий диск SSD 500ГБ, mSATA, SATA III, Samsung 850 EVO Series, MZ-M5E500BW](https://www.ulmart.ru/goods/3498218#tab-properties)
+
+
+
+# Проблемы Lenovo с видеодрайвером
 1. Удалить Nvidia Update & UpdatusUser (через netplwiz)
 2. Удалить Norton и прочую фигню
 3. Office 365 со скидкой 50%. [Хак](http://news.microsoft.com/ru-ru/office-2016-for-windows-10/)

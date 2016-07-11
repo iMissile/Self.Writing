@@ -1,3 +1,11 @@
+# SSD
+- [Что такое TRIM и зачем его включать](http://macosworld.ru/kingston-hyperx-fury-ssd-v-macbook/)
+Особенность SSD такова, что перед записью какой либо информации всегда нужно очистить блок памяти, в который она будет записана. Чтобы не тратить на это время непосредственно перед записью и существует команда TRIM. Она позволяет очищать «грязные» блоки в свободное время.Увы, но в OS X команда TRIM отключена для сторонних SSD, поэтому со временем их производительность падает.
+То есть, TRIM не добавит вам скорости, но будет поддерживать её на максимально возможном уровне за счёт предварительно очистки «грязных» блоков.
+Включить TRIM можно специальными утилитами вроде [Trim Enabler](https://www.cindori.org/trim-enabler-and-yosemite/) и [Chameleon SSD Optimizer](http://chameleon.alessandroboschini.com/). Лично я воспользовался последним.
+- [MacBook Pro 13" Unibody Early 2011 Hard Drive Replacement](https://ru.ifixit.com/Guide/MacBook+Pro+13-Inch+Unibody+Early+2011+Hard+Drive+Replacement/5119)
+
+
 # Backups
 - [Arq](https://www.arqbackup.com/) Backs up all your computers. Simple. Awesome. 
 Arq automatically backs up all your Macs and PCs. Your files are stored securely, readable only by you.
@@ -9,7 +17,7 @@ Arq automatically backs up all your Macs and PCs. Your files are stored securely
 - [MacUpdate](http://www.macupdate.com/) simplifies finding, buying and installing apps for your Mac
 - [BundleHunt](http://bundlehunt.com/). A one-stop daily deals site
 - [Stack Social](https://stacksocial.com/)
-- [AppShopper]http://appshopper.com/mac/)
+- [AppShopper](http://appshopper.com/mac/)
 - [AppGratis](http://appgratis.com/). Перестаньте платить! Ежедневные бесплатные приложения и скидки!
 
 # Софт под Мак
@@ -42,6 +50,8 @@ Arq automatically backs up all your Macs and PCs. Your files are stored securely
 - [How to Completely Uninstall Office 2011 for Mac OS X](http://www.howtogeek.com/212650/how-to-completely-uninstall-office-2011-for-mac/). Очень хорошая подробная статья про удаление в картинках.
 - [Как полностью удалить Microsoft Office 2011 из OS X](http://macilove.com/news/how-to-completely-remove-microsoft-office-2011-from-os-x/). Пошаговая инструкция по удалению пакета Office 2011 и всех его сопутствующих файлов из Mac OS X
 - [База знаний Microsoft](https://support.microsoft.com/ru-ru/kb/2398768)
+- [Mathtype & Office 365](http://www.dessci.com/en/products/mathtype_mac/faqs.htm#office_versions)
+	Mac Office 2016: MathType is not yet compatible with this version of Office. Microsoft decided to sandbox Office. Sandboxing is an Apple security technology that, as its name implies, isolates each application from others running on the same computer in order to protect them against malware. Unfortunately, this also prevents MathType from interacting with them. We are working with Microsoft engineers on a solution but it will require significant work to implement. We wish we could give you a more definite answer. In the meantime, MathType 6.7 for Mac still works great with Office 2011 for Mac. Thank you for your patience.
 
 
 # Перенос базы Evernote на другой диск
@@ -59,8 +69,6 @@ Arq automatically backs up all your Macs and PCs. Your files are stored securely
 Переносим ее на внешний диск.
 4. Переходим в терминале в директорию где надо сделать ссылку с данными. Делаем Symbolic Link с помощью команды ln -s "перетаскиваем в терминал директорию, ссылку на которую надо сделать"
 5. Обратно скрываем папку Библиотеки. Вбиваем в Терминале **chflags hidden ~/Library**
-
-
 
 # iOS
 - [Как продлить время автономной работы iPhone с iOS 9](https://www.iphones.ru/iNotes/481843)

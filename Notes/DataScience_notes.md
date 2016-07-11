@@ -1,3 +1,33 @@
+# 06.07.2016
+## Software Development
+- [International Function Point Users Group](http://www.ifpug.org/)
+- [AUDITING FUNCTION POINT COUNTS](http://www.softwaremetrics.com/fpsteps.htm)
+- [Измерение трудозатрат на разработку информационной системы по методике COCOMO II и с помощью хронометража](http://itue.ru/?p=311)
+- [Function Point Languages Table. Version 5.0](http://www.qsm.com/resources/function-point-languages-table). The QSM Function Points Languages Table contains updated function point language gearing factors for 37 distinct programming languages/technologies. The data supporting release 5.0 was drawn from 2192 recently completed function point projects from the QSM database.  The sample included 126 languages, 37 of which had sufficient data to be included in the table.
+- [COCOMO II - Constructive Cost Model Online Calculator](http://csse.usc.edu/tools/COCOMOII.php)
+
+# 05.07.2016
+## R
+- [The ggthemr package – Theme and colour your ggplot figures](http://www.shanelynn.ie/themes-and-colours-for-r-ggplots-with-ggthemr/). 
+Shane Lynn. Data science, Startups, Data visualisation. Currently building KillBiller.com
+- [Analysis of Weather data using Pandas, Python, and Seaborn](http://www.shanelynn.ie/analysis-of-weather-data-using-pandas-python-and-seaborn/)
+
+
+# 04.07.2016
+- [How to Apply Machine Learning to Event Processing](http://www.rtinsights.com/big-data-machine-learning-software-event-processing-analytics/)
+
+## Visualisation
+- Plot.ly [Click callback for pie chart](https://github.com/plotly/plotly.js/issues/105)
+- Click Events in R.
+	- [How to bind callback functions to click events in R charts with JavaScript](https://plot.ly/r/click-events/)
+- [Sisense](https://www.sisense.com/). Simplifying Business Intelligence for Complex Data. The only business intelligence software that lets you easily prepare and analyze both big and disparate datasets. 
+	- [Embedding Dashboards and Widgets](https://www.sisense.com/documentation/embedding-dashboards-widgets/)
+- [DASH](https://www.thedash.com/). Create beautiful dashboards with a few clicks. Dash is realtime dashboards for your website, your business, and your life. Your first dashboard is free forever.
+
+## R
+- [TIBCO Enterprise Runtime for R (TERR)](http://spotfire.tibco.com/discover-spotfire/what-does-spotfire-do/predictive-analytics/tibco-enterprise-runtime-for-r-terr)
+
+
 # 01.07.2016
 - [Gapminer. A fact-based worldview](https://www.gapminder.org/)
 
