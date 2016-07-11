@@ -1,3 +1,7 @@
+# 11.07.2016
+## Software Development
+- [Когда «agile» (не) к месту](http://makhmetov.ru/articles/agile.html)
+
 # 06.07.2016
 ## Software Development
 - [International Function Point Users Group](http://www.ifpug.org/)
