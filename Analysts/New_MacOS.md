@@ -1,9 +1,19 @@
+# апгрейд Macbook Pro
+- [Своими силами: как заменить/проапгрейдить HDD/SSD и RAM в MacBook Pro](http://lifehacker.ru/2011/08/18/how-to-upgrade-hddssdram/)
+- [Как выбрать тип оперативной памяти для вашего Mac](http://macilove.com/news/how-to-choose-the-type-of-ram-for-your-mac/). Инструкция по замене оперативной памяти для iMac, MacBook, Mac Pro, Mac mini
+- [MacBook Pro: извлечение или установка модулей памяти](https://support.apple.com/ru-ru/HT201165). В этой статье описан процесс извлечения и установки модулей памяти в ноутбуках MacBook Pro.
+- [Kingston 4GB 1600MHz DDR3L (PC3-12800) SO-DIMM for Mac](http://maccentre.ru/shop/memory/ram-memory/?filter_params=87:621;91:642;86:612)
+
 # SSD
 - [Что такое TRIM и зачем его включать](http://macosworld.ru/kingston-hyperx-fury-ssd-v-macbook/)
 Особенность SSD такова, что перед записью какой либо информации всегда нужно очистить блок памяти, в который она будет записана. Чтобы не тратить на это время непосредственно перед записью и существует команда TRIM. Она позволяет очищать «грязные» блоки в свободное время.Увы, но в OS X команда TRIM отключена для сторонних SSD, поэтому со временем их производительность падает.
 То есть, TRIM не добавит вам скорости, но будет поддерживать её на максимально возможном уровне за счёт предварительно очистки «грязных» блоков.
 Включить TRIM можно специальными утилитами вроде [Trim Enabler](https://www.cindori.org/trim-enabler-and-yosemite/) и [Chameleon SSD Optimizer](http://chameleon.alessandroboschini.com/). Лично я воспользовался последним.
 - [MacBook Pro 13" Unibody Early 2011 Hard Drive Replacement](https://ru.ifixit.com/Guide/MacBook+Pro+13-Inch+Unibody+Early+2011+Hard+Drive+Replacement/5119)
+- [The EVO speed issues may be related to the 840 EVO's issues with the nand voltage degradation.](https://www.gearslutz.com/board/music-computers/1012589-enable-trim-3rd-party-ssd-yosemite-tried-disk-sensei.html)
+- [Chameleon SSD Optimizer: enanche your ssd performance](http://chameleon.alessandroboschini.com/). Apple added a new command named “trimforce” from OS X 10.10.4 and OS X 10.11 (El Capitan). 
+To run trimforce type the following command into the terminal window : `sudo trimforce enable`
+- [Disk Sensei](https://www.cindori.org/software/disksensei/). [Safely enable Trim on Yosemite and El Capitan!](https://www.cindori.org/safely-enable-trim-on-yosemite-and-el-capitan/)
 
 
 # Backups
