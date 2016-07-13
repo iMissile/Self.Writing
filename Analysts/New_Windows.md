@@ -1,5 +1,6 @@
 # Переход на SSD
 - [Оптимизация настроек Windows 10 для работы SSD диска](http://windowsten.ru/optimizaciya-nastroek-windows-10-dlya-raboty-ssd-diska/)
+- [SSD-твикинг: мифы и реальность](http://www.thg.ru/storage/ssd_tweaks/onepage.html). Тут есть про настройку схем энергопитания.
 - [Новые технологии. Обзор Samsung 850 Pro 31.08.2014](http://allssd.ru/obzor-samsung-850-pro/)
 - [SSD Mini Tweaker](http://spb-chas.ucoz.ru/). Программа для изменения настроек и параметров системы под твердотельный накопитель. Цель программы - это снизить обращение системы к SSD для более продолжительной его работы. Распространяется бесплатно и предназначена для тех, у кого система установлена на SSD-диске.
 - [Lenovo v580 (20147) и mSATA SSD как загрузочный диск!](https://forums.lenovo.com/t5/%D0%A1%D0%B5%D1%80%D0%B8%D0%B8-U-%D0%B8-V/Lenovo-v580-20147-%D0%B8-mSATA-SSD-%D0%BA%D0%B0%D0%BA-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BE%D1%87%D0%BD%D1%8B%D0%B9-%D0%B4%D0%B8%D1%81%D0%BA/td-p/2149052)
@@ -15,6 +16,7 @@ http://it-like.ru/kak-perenesti-windows-7-na-ssd-disk/
 
 Далее, можно обновить прошивку. Вот инструкция как делать и где взять: http://pk-help.com/workstation/upgrade-plextor-m5s/
 - [жесткий диск SSD 500ГБ, mSATA, SATA III, Samsung 850 EVO Series, MZ-M5E500BW](https://www.ulmart.ru/goods/3498218#tab-properties)
+- [Технология Over-Provisioning в SSD](http://www.nix.ru/computer_hardware_news/hardware_news_viewer.html?id=178629)
 
 
 

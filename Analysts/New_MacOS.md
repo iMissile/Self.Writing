@@ -1,8 +1,21 @@
 # апгрейд Macbook Pro
 - [Своими силами: как заменить/проапгрейдить HDD/SSD и RAM в MacBook Pro](http://lifehacker.ru/2011/08/18/how-to-upgrade-hddssdram/)
 - [Как выбрать тип оперативной памяти для вашего Mac](http://macilove.com/news/how-to-choose-the-type-of-ram-for-your-mac/). Инструкция по замене оперативной памяти для iMac, MacBook, Mac Pro, Mac mini
+ 	– формат SO-DIMM DDR3
+	– 67,6 x 30 мм
+	– 2 или 4 ГБ
+	– 204 контакта
+	– ОЗУ PC3-12800 DDR3, 1600 МГц
 - [MacBook Pro: извлечение или установка модулей памяти](https://support.apple.com/ru-ru/HT201165). В этой статье описан процесс извлечения и установки модулей памяти в ноутбуках MacBook Pro.
-- [Kingston 4GB 1600MHz DDR3L (PC3-12800) SO-DIMM for Mac](http://maccentre.ru/shop/memory/ram-memory/?filter_params=87:621;91:642;86:612)
+- [Как самостоятельно настроить новый SSD-диск в OS X Yosemite](http://lifehacker.ru/2014/11/05/ssd-os-x/)
+- [Оптимизация OS X для продления жизни SSD](https://geektimes.ru/company/ocz/blog/265746/)
+- [Disk Utility: How to Resize a Mac Volume (OS X El Capitan or Later)](http://macs.about.com/od/systemutilities/fl/Disk-Utility-How-to-Resize-a-Mac-Volume-OS-X-El-Capitan-or-Later.htm)
+- [Мнение экспертов. MacBook Pro и 16 гигабайт оперативной памяти](http://appleinsider.ru/macbook-pro/mnenie-ekspertov-macbook-pro-i-16-gigabajt-operativnoj-pamyati.html)
+- Апгрейд памяти
+	- [Crucial: Apple MacBook Pro (13-inch and 15-inch, Mid 2012) compatible upgrades](http://www.crucial.com/usa/en/compatible-upgrade-for/Apple/macbook-pro-%2813-inch-and-15-inch%2C-mid-2012%29)
+	- [Kingston: Модули памяти конкретных систем для Apple MacBook Pro 13-inch and 15-inch (Mid 2012)]http://www.kingston.com/ru/memory/search?DeviceType=&Mfr=APP&Line=MacBook%20Pro&Model=78047)
+	- [Kingston 4GB 1600MHz DDR3L (PC3-12800) SO-DIMM for Mac](http://maccentre.ru/shop/memory/ram-memory/?filter_params=87:621;91:642;86:612)
+	- [Какой тип памяти (1.35 или 1.5В) у Macbook pro mid 2012?](https://toster.ru/q/83200). Планирую увеличить оперативную память macbook pro md102 (i7/8Gb 1600MHz) id2012 до 16Gb, стал выбирать и столкнулся с тем, что есть два типа памяти DDR3 (1.5В) и DDR3L (1.35В).
 
 # SSD
 - [Что такое TRIM и зачем его включать](http://macosworld.ru/kingston-hyperx-fury-ssd-v-macbook/)
