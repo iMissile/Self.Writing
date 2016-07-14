@@ -1,5 +1,7 @@
 http://www.worldtimebuddy.com/
 
+# Диаграммы
+- [LucidChart](https://www.lucidchart.com/). DiagramsDone Right. Lucidchart is your diagram maker
 
 #Markdown разметка
 

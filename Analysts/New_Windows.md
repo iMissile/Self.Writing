@@ -1,3 +1,14 @@
+# Как определить ключ установки Windows
+- [Почему нельзя выполнять чистую установку Windows 10 обладателям Windows 7 и 8](https://lifehacker.ru/2015/08/04/tonkosti-ustanovki-windows-10/)
+- [5 простых способов как узнать ключ продукта ОС Windows 10](http://geek-nose.com/5-prostyx-sposobov-kak-uznat-klyuch-produkta-os-windows-10/)
+- [Как узнать ключ продукта Windows 10](http://remontka.pro/windows-10-key/)
+- Выбираем средства с GUI:
+	- [Как узнать OEM ключ из UEFI](http://remontka.pro/windows-10-key/)
+	- [ProduKey от NirSoft](http://www.nirsoft.net/utils/product_cd_key_viewer.html) для определения ключа Windows 10 и не только. “ProduKey” от NirSoft умеет определять ключи других копий Windows, установленных на локальном и удаленных компьютерах, в том числе на всех машинах в домене. Также он может вытащить ключ из реестра незагруженной системы. Последнее бывает необходимо при переустановке ОС, чтобы повторно активировать Windows 10, когда она потребует ключ продукта.
+	- [ShowKeyPlus](https://github.com/Superfly-Inc/ShowKeyPlus/releases/). “ShowKeyPlus” – единственный продукт, который смог определить ключ установленной ОС Windows 10 и ее предшественницы Windows 7 (“семерка” в нашем примере была обновлена до “десятки”). Как и “ProduKey” от NirSoft, она не требует инсталляции и не распространяет рекламу, ее достаточно скачать и запустить. Ключи продуктов отображаются в основном окне. Нажатием “Save” их можно скопировать и сохранить в текстовом файле.
+Кроме того, “ShowKeyPlus” умеет извлекать product key из реестра незагруженной ОС. Кликните для этого “Retrieve key from backup” и укажите путь к источнику – файлу Software, который находится в каталоге Буква_раздела\Windows\system32\config.
+
+
 # Переход на SSD
 - [Оптимизация настроек Windows 10 для работы SSD диска](http://windowsten.ru/optimizaciya-nastroek-windows-10-dlya-raboty-ssd-diska/)
 - [SSD-твикинг: мифы и реальность](http://www.thg.ru/storage/ssd_tweaks/onepage.html). Тут есть про настройку схем энергопитания.
