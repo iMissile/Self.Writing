@@ -34,6 +34,7 @@ The purpose of this write-up is to help data scientists who are familiar with R 
 		- secure -  Secure vault within a publicly available code repository
 
 ## Концептуальные материалы
+- [R visuals in the Power BI Service](https://powerbi.microsoft.com/en-us/blog/r-visuals-in-powerbi-service/)
 - [Gartner. Massive innovations in data science yet to come](http://blogs.gartner.com/alexander-linden/2015/08/27/massive-innovations-in-data-science-yet-to-come/). August 27, 2015
 - [What is R?](http://www.inside-r.org/what-is-r)
 - [Why use R?](http://www.inside-r.org/why-use-r)
@@ -335,6 +336,7 @@ The source code of some of the widgets can be found in Github repository.
 - [Pilot Police Demand Planning Tool](https://gallery.shinyapps.io/TSupplyDemand/)
 
 ## Data Manipulation
+- [GREA (Gotta Read 'Em All)](https://github.com/Stan125/GREA) is an RStudio Add-In assisting to read all popular file formats into R through R base functions and rio. In the beginning, the user selects a file on his computer. After some optional adjustments (which are done interactively), the proper function to read the file is pasted into the console, with an object name that can be specified by the user. Supported file formats include Stata (.dta), SPSS (.sav), Matlab (.mat), Excel (.xls, .xlsx) and various text/delimited-formats (.raw, .csv, .txt, .asc, .dat, etc.).
 - [DataWrangler](http://vis.stanford.edu/wrangler/) is an interactive tool for data cleaning and transformation. Spend less time formatting and more time analyzing your data. **UPDATE**: The Wrangler research project is complete, and the software is no longer actively supported. The team behind Wrangler has moved on to work on a commercial venture, [Trifacta](http://www.trifacta.com/).
 - [Trifacta](http://www.trifacta.com). People. Transforming. Data. Развитие [DataWrangler](http://vis.stanford.edu/wrangler/)
 - [OpenRefine](http://openrefine.org/) (formerly Google Refine) is a powerful tool for working with messy data: cleaning it; transforming it from one format into another; extending it with web services; and linking it to databases like Freebase.

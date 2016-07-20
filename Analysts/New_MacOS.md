@@ -17,6 +17,14 @@
 	- [Kingston 4GB 1600MHz DDR3L (PC3-12800) SO-DIMM for Mac](http://maccentre.ru/shop/memory/ram-memory/?filter_params=87:621;91:642;86:612)
 	- [Какой тип памяти (1.35 или 1.5В) у Macbook pro mid 2012?](https://toster.ru/q/83200). Планирую увеличить оперативную память macbook pro md102 (i7/8Gb 1600MHz) id2012 до 16Gb, стал выбирать и столкнулся с тем, что есть два типа памяти DDR3 (1.5В) и DDR3L (1.35В).
 
+апгрейд памяти:
+- [Оперативная память 8GB DDR3 PC12800 (1600MHz) SO-DIMM CL11, Transcend для Mac (Apple)](http://www.maxmemory.ru/product_123392.html)
+- [DDR II Hynix (3rd) 2Gb 800Mhz PC6400](http://maxmemory.ru/product_121293.html)
+(3020 +1370)*2 +250 (курьеры -отдельные персонажи )
+9000 будет
+
+- [Foxconn G41MX-F 2.0](http://www.foxconnchannel.com/ProductDetail.aspx?T=motherboard&U=en-us0000463)
+
 # SSD
 - [Что такое TRIM и зачем его включать](http://macosworld.ru/kingston-hyperx-fury-ssd-v-macbook/)
 Особенность SSD такова, что перед записью какой либо информации всегда нужно очистить блок памяти, в который она будет записана. Чтобы не тратить на это время непосредственно перед записью и существует команда TRIM. Она позволяет очищать «грязные» блоки в свободное время.Увы, но в OS X команда TRIM отключена для сторонних SSD, поэтому со временем их производительность падает.
@@ -27,6 +35,12 @@
 - [Chameleon SSD Optimizer: enanche your ssd performance](http://chameleon.alessandroboschini.com/). Apple added a new command named “trimforce” from OS X 10.10.4 and OS X 10.11 (El Capitan). 
 To run trimforce type the following command into the terminal window : `sudo trimforce enable`
 - [Disk Sensei](https://www.cindori.org/software/disksensei/). [Safely enable Trim on Yosemite and El Capitan!](https://www.cindori.org/safely-enable-trim-on-yosemite-and-el-capitan/)
+- [Can Alfred work without Spotlight enabled?](https://www.alfredapp.com/help/troubleshooting/indexing/spotlight/) Alfred relies on the same OS X metadata index as Spotlight. As such, it's important for you to let Spotlight run on your Mac to maintain an index of the files on it. Turning off Spotlight indexing will still allow you to use Alfred as a web launcher but you'll no longer be able to find files on your Mac. Take a look at the [Indexing Troubleshooting page](https://www.alfredapp.com/help/troubleshooting/indexing/) for help with indexing issues.
+
+# Статейки про всякие фичи
+- [10 tiny features I love about OS X El Capitan](http://www.imore.com/10-tiny-features-i-love-os-x-el-capitan).
+- [27 secret features in Mac OS X El Capitan](http://www.macworld.co.uk/feature/mac-software/27-secret-features-in-mac-os-x-el-capitan-3626097/)
+- [6 Great Apps To Measure You Mac’s Performance](http://www.chriswrites.com/6-great-apps-to-measure-you-macs-performance/)
 
 
 # Backups
@@ -48,9 +62,12 @@ Arq automatically backs up all your Macs and PCs. Your files are stored securely
 - [AppZapper](http://www.appzapper.com/). The Unistaller Apple forgot
 - [A look back at 2015: My Top Mac Apps](http://brettterpstra.com/2016/02/17/a-look-back-at-2015-my-top-mac-apps/)
 - [Homebrew. The missing package manager for OS X](http://brew.sh/)
+- [Default Folder X](http://www.stclairsoft.com/DefaultFolderX/index.html)
+- [Alfred](https://www.alfredapp.com/). Spotlight replacement & extension
 
 ## Текстовые редакторы
 - [Выбор текстового редактора или «хочу все в одном»](http://habrahabr.ru/post/260865/). Победил Brackets
+
 
 # Запуск Windows программ под Mac
 - [Как легко запускать Windows-приложения на Mac? Приложение Wineskin](http://lifehacker.ru/2014/03/03/kak-legko-zapuskat-windows-prilozhenie-na-mac-prilozhenie-wineskin/)
