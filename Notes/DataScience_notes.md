@@ -1,3 +1,20 @@
+# 18.08.2016
+## R
+- [Making fast, good decisions with the FFTrees R package](http://nathanieldphillips.com/2016/08/making-fast-good-decisions-with-the-fftrees-r-package/)
+- [Dual axes time series plots may be ok sometimes after all](http://ellisp.github.io/blog/2016/08/18/dualaxes). Dual axis time series charts are often deprecated, but the standard alternatives have weaknesses too. In some circumstances, if done carefully, dual axis time series charts may be ok after all. In particular, you can choose two vertical scales so the drawing on the page is equivalent to drawing two indexed series, but retaining the meaningful mapping to the scale of the original variables.
+- [Use quick formula functions in purrr::map (+ base vs tidtyverse idiom comparisons/examples)](https://rud.is/b/2016/07/26/use-quick-formula-functions-in-purrrmap-base-vs-tidtyverse-idiom-comparisonsexamples/)
+
+- [JASP](https://jasp-stats.org/), a low fat alternative to SPSS, a delicious alternative to R. Bayesian statistics made accessible.
+
+## Other
+- [map.aviasales.ru](http://map.aviasales.ru)
+- [Chart: It’s not your imagination, US gun violence is over the top this summer](http://qz.com/741391/its-not-your-imagination-gun-violence-is-over-the-top-this-summer/)
+- [Donald Trump’s Ghostwriter Tells All](http://www.newyorker.com/magazine/2016/07/25/donald-trumps-ghostwriter-tells-all). “The Art of the Deal” made America see Trump as a charmer with an unfailing knack for business. Tony Schwartz helped create that myth—and regrets it.
+
+## Visialization
+- [The Counted. People killed by police in the US](http://www.theguardian.com/us-news/ng-interactive/2015/jun/01/the-counted-police-killings-us-database)
+- [The math of mass shootings](https://www.washingtonpost.com/graphics/national/mass-shootings-in-america/)
+
 # 11.07.2016
 ## Software Development
 - [Когда «agile» (не) к месту](http://makhmetov.ru/articles/agile.html)

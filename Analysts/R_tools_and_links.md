@@ -362,8 +362,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 
 ## Курсы обучения и интересные бизнес решения на базе R
 ### Курсы\Learning
-- [Webscraping. SSRMC lectures in Web Scraping, HT 2014](http://fredheir.github.io/WebScraping/)
-Welcome to Web Scraping.
+- [Webscraping. SSRMC lectures in Web Scraping, HT 2014](http://fredheir.github.io/WebScraping/). Welcome to Web Scraping.
 This site contains links to the slides for the course Web Scraping: Digital Data Collection for the Humanities and Social Sciences, conducted in Hilary Term 2014 at the University of Cambridge, hosted by the Social Sciences' Research Methods Centre (SSRMC), and taught by Rolf Fredheim
 - [Introduction to R for Data Science](http://www.exactness.net/post/145682161575/introduction-to-r-for-data-science-session-7) :: Session 7 [Multiple Linear Regression Model in R  + Categorical Predictors, Partial and Part Correlation]
 - [Code School]()
@@ -510,6 +509,7 @@ Vega is a declarative format for creating, saving, and sharing visualization des
 - [rbokeh - R Interface to Bokeh](http://hafen.github.io/rbokeh/). Bokeh is a visualization library that provides a flexible and powerful declarative framework for creating web-based plots. Bokeh renders plots using HTML canvas and provides many mechanisms for interactivity. Bokeh has interfaces in Python, Scala, Julia, and now R.
 
 ### Смежные бизнес-решения
+- [The Business Intelligence Markup Language (Biml)](http://bimlscript.com/GetStarted/AboutBimlScript) is an XML dialect that specifies many aspects of a business intelligence solution, including relational models, data transformation packages, multi-dimensional models (OLAP), and permissions. 
 - [ReportServer BI Suite](http://reportserver.net/en/) is the modern and versatile open source business intelligence (OSBI) platform for your company.
 - [1010data](https://www.1010data.com) offers a complete suite of products for big data discovery and data sharing for both business and technical users. Companies look to 1010data to help them become data-driven enterprises.
 - [BOARD](http://www.board.com/in/) is a software solution that unifies Business Intelligence, Performance Management and Analytics in a single environment. BOARD Version 9 introduces a 360 degree improvement of the BOARD software platform, by delivering significant improvement to the self service analysis capabilities, and also by offering the capability to easily embed Predictive Analytics into enterprise decision making processes.
@@ -526,6 +526,7 @@ Vega is a declarative format for creating, saving, and sharing visualization des
 
 
 ## Blogs
+- [Modern Data](http://moderndata.plot.ly/). New generation of data science
 - [HOXO-M - anonymous data analyst group in Japan](http://mockquant.blogspot.ru/)
 - [FlowingData](http://flowingdata.com/)
 - [Blog of David Robinson, a Data Scientist at Stack Overflow](http://varianceexplained.org/)
@@ -543,6 +544,7 @@ Vega is a declarative format for creating, saving, and sharing visualization des
 - [Noam Ross](http://www.noamross.net/blog). Real-time research in ecology, economics, and sustainability
 - [From the bootom of the heap](http://www.fromthebottomoftheheap.net/2013/10/23/time-series-plots-with-lattice-and-ggplot/)
 - [ZevRoss](http://zevross.com/blog/). Know your data. Technical Tidbits From Spatial Analysis & Data Science
+- [Steph Locke presentations](http://itsalocke.com/about-us/)
 
 ## Community
 - [CrossRef](http://www.crossref.org/) is an association of scholarly publishers that develops shared infrastructure to support more effective scholarly communications. Our citation-linking network today covers over 72 million journal articles and other content items (books chapters, data, theses, technical reports) from thousands of scholarly and professional publishers around the globe.

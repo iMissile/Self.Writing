@@ -7,6 +7,7 @@
 	– 204 контакта
 	– ОЗУ PC3-12800 DDR3, 1600 МГц
 - [MacBook Pro: извлечение или установка модулей памяти](https://support.apple.com/ru-ru/HT201165). В этой статье описан процесс извлечения и установки модулей памяти в ноутбуках MacBook Pro.
+- [Клонирование жесткого диска через установщик MacOS](http://applemix.ru/2012/03/22/klonirovanie-zhestkogo-diska-cherez-ustanovshhik-macos.html)
 - [Как самостоятельно настроить новый SSD-диск в OS X Yosemite](http://lifehacker.ru/2014/11/05/ssd-os-x/)
 - [Оптимизация OS X для продления жизни SSD](https://geektimes.ru/company/ocz/blog/265746/)
 - [Disk Utility: How to Resize a Mac Volume (OS X El Capitan or Later)](http://macs.about.com/od/systemutilities/fl/Disk-Utility-How-to-Resize-a-Mac-Volume-OS-X-El-Capitan-or-Later.htm)
@@ -20,7 +21,7 @@
 апгрейд памяти:
 - [Оперативная память 8GB DDR3 PC12800 (1600MHz) SO-DIMM CL11, Transcend для Mac (Apple)](http://www.maxmemory.ru/product_123392.html)
 - [DDR II Hynix (3rd) 2Gb 800Mhz PC6400](http://maxmemory.ru/product_121293.html)
-(3020 +1370)*2 +250 (курьеры -отдельные персонажи )
+(3020+1370)*2 + 250 (курьеры - отдельные персонажи )
 9000 будет
 
 - [Foxconn G41MX-F 2.0](http://www.foxconnchannel.com/ProductDetail.aspx?T=motherboard&U=en-us0000463)
@@ -47,6 +48,9 @@ To run trimforce type the following command into the terminal window : `sudo tri
 - [Arq](https://www.arqbackup.com/) Backs up all your computers. Simple. Awesome. 
 Arq automatically backs up all your Macs and PCs. Your files are stored securely, readable only by you.
 - [Amazon Cloud Drive](https://www.amazon.com/clouddrive/home). Unlimited Cloud Storage from Amazon
+- [TimeMachineEditor](http://tclementdev.com/timemachineeditor/)
+TimeMachineEditor is a software for OS X that lets you change the default one-hour backup interval of Time Machine. You can change the interval or create a more sophisticated scheduling (see screenshots below)
+
 
 # Распродажа софта
 - [$2 tuesday](http://twodollartues.com/)
