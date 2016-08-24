@@ -1,3 +1,53 @@
+# 23.08.2016
+## R
+- [Hadley Wickham twitter](https://twitter.com/hadleywickham)
+- [#rstats Twitter](https://twitter.com/hashtag/rstats?src=hash)
+- [forcats](https://github.com/hadley/forcats). forcats provides tools for categorical variables (forcats is an anagram of factors).
+- ggplot2
+	- [ggplot2 extensions - gallery](http://www.ggplot2-exts.org/)
+	- [ggpolypath](https://github.com/mdsumner/ggpolypath). A ggplot2 geom for polygons with holes, called 'geom_polypath'.
+- [Plotting background data for groups with ggplot2](https://drsimonj.svbtle.com/plotting-background-data-for-groups-with-ggplot2)
+- [Improving R animated GIFs with tweenr](http://lenkiefer.com/2016/05/29/improving-R-animated-gifs-with-tweenr)
+- [Efficient R programming. E-book](https://csgillespie.github.io/efficientR/)
+- [JSM 2016 session on Reproducibility in Statistics and Data Science](http://citizen-statistician.org/2016/08/03/jsm-2016-session-on-reproducibility-in-statistics-and-data-science/)
+	- [Links to slides from JSM 2016](https://github.com/kbroman/JSM2016slides). Links to slides to talks at the 2016 Joint Statistical Meetings in Chicago, Illinois. Pull requests welcome! Or add an issue, or tweet @kwbroman or email Karl Broman.
+- [Comparison of Statistical Packages](https://r-economics.com/2016/04/02/comparison-of-statistical-packages/)
+
+## Microsoft
+- [Активация Office 365, Office 2016 или Office 2013](https://support.office.com/ru-ru/article/%D0%90%D0%BA%D1%82%D0%B8%D0%B2%D0%B0%D1%86%D0%B8%D1%8F-Office-365-Office-2016-%D0%B8%D0%BB%D0%B8-Office-2013-1144e0de-e849-496e-8e33-ed6fb1b34202)
+- [Поиск ключа продукта Office](https://support.office.com/ru-ru/article/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA-%D0%BA%D0%BB%D1%8E%D1%87%D0%B0-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0-Office-12a5763a-d45c-4685-8c95-a44500213759)
+
+# 22.08.2016
+# R CO-O-O-OL!
+- [SNAP TECH](https://blog.snap.uaf.edu/). Technological solutions at SNAP, giving back to the community we learn from every day
+	- [Customizable charts: Alaska communities, daily precipitation](https://uasnap.shinyapps.io/ak_daily_precipitation/)
+	- [Community Charts v4 Lite](https://uasnap.shinyapps.io/cc4liteFinal/). Explore the climate outlook for your community
+- [Matthew Leonawicz](http://leonawicz.github.io/) Statistician | Statistical Programmer | useR
+- RStudio IDE: How did I not know about Alt-Shift-K (shows all keyboard shortcuts)?
+
+- [Combining data tables and sparklines](http://leonawicz.github.io/HtmlWidgetExamples/ex_dt_sparkline.html). Examples using Edmonton, Alberta climate data
+In the examples below, I use a 1950 - 2009 subset of SNAP’s 2-km resolution downscaled CRU 3.2 temperature and precipitation data for Edmonton, Alberta to demonstrate the use of the DT package for data tables and the sparkline package for inline graphs as well as integration of inline graphs into data tables. These packages make use of the htmlwidgets package and are interfaces to the jQuery plugins dataTables and sparkline.
+- [sparklines for R](http://fishyoperations.com/2015/04/10/sparklines-for-R.html)
+- [htmlwidgets for R - gallery](http://gallery.htmlwidgets.org/)
+- [visNetwork](http://datastorm-open.github.io/visNetwork/) is an R package for network visualization, using vis.js javascript library (http://visjs.org/). All remarks and bugs are welcome on github : https://github.com/datastorm-open/visNetwork.
+- [Sparkline](https://github.com/htmlwidgets/sparkline). This is an experimental R package that provides support for jquery sparkline as a HTML widget.
+
+
+# .io projects
+- [cimon.io](https://cimon.io/). BUILD AND DEPLOY AUTOMATION
+- [codepen.io](http://codepen.io/). CodePen is a playground for the front end web. Show off your latest creation and get feedback. Build a test case for that pesky bug. Find example design patterns and inspiration for your projects.
+- [CodeShare](https://codeshare.io/). Share code in real-time with other developers
+- [Squad. Code Together](https://squadedit.com/). Squad is a web-based collaborative IDE. We make it simple to open, edit and share code in real time.
+- [jsfiddle.net](https://jsfiddle.net/). Test your JavaScript, CSS, HTML or CoffeeScript online with JSFiddle code editor.
+- [Online Coding. repl.it](https://repl.it/languages/javascript)
+- [Online JavaScript console](https://jsconsole.com/)
+
+# 19.08.2016
+- [Enterprise Mashups](https://msdn.microsoft.com/en-us/library/bb906060.aspx) by Larry Clarkin and Josh Holmes. The Architecture Journal
+- [Mash-up and visualise your data](http://www.lovesdata.com/blog/2014/mash-visualise-data)
+- [x2w.js - xls2web jQuery plug-in](https://github.com/xls2web/x2w/). x2w.js is a jQuery plugin that bridges your custom Microsoft Excel spreadsheet saved on Onedrive (former Skydrive) and your website DOM elements. Inspired by www.excelmashup.com this small library is aimed at making your Excel mash-up development process as easy as calling your spreadheet by token and further processing of a JSON response.
+
+
 # 18.08.2016
 ## R
 - [Making fast, good decisions with the FFTrees R package](http://nathanieldphillips.com/2016/08/making-fast-good-decisions-with-the-fftrees-r-package/)

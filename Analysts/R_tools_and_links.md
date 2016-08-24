@@ -140,6 +140,8 @@ Predictive applications automate decision-making based on current and historical
 	- [dplyr filter: Get rows with minimum of variable, but only the first if multiple minima](http://stackoverflow.com/questions/21308436/dplyr-filter-get-rows-with-minimum-of-variable-but-only-the-first-if-multiple)
 - PURRR
 	- [Purrr](https://github.com/hadley/purrr). [Purrr 0.1.0 released](http://blog.rstudio.org/2015/09/29/purrr-0-1-0/). Purrr makes your pure functions purr by completing R's functional programming tools with important features from other languages, in the style of the JS packages underscore.js, lodash and lazy.js.
+	- [purrr 0.2.0](https://blog.rstudio.org/2016/01/06/purrr-0-2-0/)
+	- [Purrr package for R is good for performance](http://shawnmehan.com/purrr-package-for-r-is-good-for-performance/)
 	- [Rebuilding Map Example With Apply Functions](http://opiateforthemass.es/articles/rebuilding-map-example-with-apply-functions/)
 - Apply family:
 	- [Repeating things: looping and the apply family](http://nicercode.github.io/guides/repeating-things/)
@@ -362,6 +364,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 
 ## Курсы обучения и интересные бизнес решения на базе R
 ### Курсы\Learning
+- [LovesData](http://www.lovesdata.com/)
 - [Webscraping. SSRMC lectures in Web Scraping, HT 2014](http://fredheir.github.io/WebScraping/). Welcome to Web Scraping.
 This site contains links to the slides for the course Web Scraping: Digital Data Collection for the Humanities and Social Sciences, conducted in Hilary Term 2014 at the University of Cambridge, hosted by the Social Sciences' Research Methods Centre (SSRMC), and taught by Rolf Fredheim
 - [Introduction to R for Data Science](http://www.exactness.net/post/145682161575/introduction-to-r-for-data-science-session-7) :: Session 7 [Multiple Linear Regression Model in R  + Categorical Predictors, Partial and Part Correlation]
