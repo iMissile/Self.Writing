@@ -1,3 +1,44 @@
+# 29.08.2016
+## R
+- [How to reshape data in R: tidyr vs reshape2](http://www.milanor.net/blog/reshape-data-r-tidyr-vs-reshape2/). Ну не заменяют они друг друга, а дополняют
+- [How to expand color palette with ggplot and RColorBrewer](http://novyden.blogspot.ru/2013/09/how-to-expand-color-palette-with-ggplot.html)
+- [How to generate column dependent random variable with dplyr](http://stackoverflow.com/questions/30352497/how-to-generate-column-dependent-random-variable-with-dplyr)
+
+
+## Web
+- [Google Web Designer](http://www.google.com/webdesigner/). Create engaging, interactive HTML5-based designs and motion graphics that can run on any device.
+
+# 26.08.2016
+## R
+- [Analysis of the #7FavPackages hashtag](http://varianceexplained.org/r/seven-fav-packages/)
+- [Microsoft ratchets up its R enthusiasm](http://www.computerworld.com/article/3109533/business-intelligence/microsoft-ratchets-up-its-r-enthusiasm.html)
+- [R with Power BI: Import, Transform, Visualize and Share](http://blog.revolutionanalytics.com/2016/08/powerbi-and-r.html)
+- [Python style logging in R](http://mazamascience.com/WorkingWithData/?p=1727)
+
+# 25.08.2016
+## Bootstrap & HTML
+- [Уроки по Bootstrap. Урок №1: что это и как начать с ним работать ](http://dedushka.org/uroki/6901.html)
+- [7 Bootstrap Editors for Rapid Development of Responsive Websites](https://bootstrapbay.com/blog/bootstrap-editors/)
+- [Reveal.js](http://lab.hakim.se/reveal-js/). The HTML Presentation Framework.
+	- [Исходники на Github](https://github.com/hakimel/reveal.js/)
+
+## R
+- [Rperform](https://github.com/analyticalmonk/rperform). R package for tracking performance metrics across git versions and branches. https://analyticalmonk.github.io/Rperform
+- [A Helpful Way to Install R Packages Hosted on GitHub](https://cran.r-project.org/web/packages/githubinstall/vignettes/githubinstall.html). Koji MAKIYAMA (@hoxo_m), 2016-08-11
+- [The pacman package](https://github.com/trinker/pacman) is an R package management tool that combines the functionality of base library related functions into intuitively named functions.
+- [githubinstall package](https://cran.r-project.org/web/packages/githubinstall/vignettes/githubinstall.html). The githubinstall package provides a way to install packages on GitHub by only their package names just like install.packages(). [Запись на блоге автора](http://mockquant.blogspot.ru/2016/06/githubinstall-new-r-package-for-easy-to.html)
+- COOL! User R 2016!. Effective Shiny Programming. [Slides](https://cdn.rawgit.com/jcheng5/user2016-tutorial-shiny/master/slides.html). Joe Cheng <joe@rstudio.com> #useR2016 — June 27, 2016
+- R as ETL
+	- [ETL for Medium Data](http://www.science.smith.edu/~bbaumer/talks/useR_talk.html)
+	- Небольшой холивар. [R vs Pentaho Spoon as an ETL tool (closed)](http://stackoverflow.com/questions/14996712/r-vs-pentaho-spoon-as-an-etl-tool)
+	- [etl: Extract-Transform-Load Framework for Medium Data](https://cran.r-project.org/web/packages/etl/index.html)
+	- [R package to facilitate ETL operations](https://github.com/beanumber/etl)
+
+
+## Полезные функции
+ - `sessionInfo()`
+ - `gh_show_source("mutate", repo = "dplyr")` or `library(dplyr); gh_show_source(mutate)`. Show the Source Code of Functions on GitHub
+
 # 23.08.2016
 ## R
 - [Hadley Wickham twitter](https://twitter.com/hadleywickham)
@@ -9,6 +50,8 @@
 - [Plotting background data for groups with ggplot2](https://drsimonj.svbtle.com/plotting-background-data-for-groups-with-ggplot2)
 - [Improving R animated GIFs with tweenr](http://lenkiefer.com/2016/05/29/improving-R-animated-gifs-with-tweenr)
 - [Efficient R programming. E-book](https://csgillespie.github.io/efficientR/)
+- [Bookdown: Authoring Books with R Markdown. E-book](https://bookdown.org/yihui/bookdown/). Yihui Xie, 2016-07-19
+
 - [JSM 2016 session on Reproducibility in Statistics and Data Science](http://citizen-statistician.org/2016/08/03/jsm-2016-session-on-reproducibility-in-statistics-and-data-science/)
 	- [Links to slides from JSM 2016](https://github.com/kbroman/JSM2016slides). Links to slides to talks at the 2016 Joint Statistical Meetings in Chicago, Illinois. Pull requests welcome! Or add an issue, or tweet @kwbroman or email Karl Broman.
 - [Comparison of Statistical Packages](https://r-economics.com/2016/04/02/comparison-of-statistical-packages/)
