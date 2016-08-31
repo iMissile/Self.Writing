@@ -1,8 +1,59 @@
+# 31.08.2016
+## R
+- [ezknitr](http://deanattali.com/blog/ezknitr-package/): R package to avoid the typical working directory pain when using knitr
+- [revealjs](https://cran.rstudio.com/web/packages/revealjs/): R Markdown format for 'reveal.js' presentations, a framework for easily creating beautiful presentations using HTML.
+- [The printr](http://yihui.name/printr/) (read “printer” or “print R”) package is a companion package to knitr. Its main purpose is to extend the S3 generic function knit_print() in knitr, which is the default value of the chunk option render, as explained in the vignette knit_print.html.
+- validate package. [Rules in text files](https://cran.r-project.org/web/packages/validate/vignettes/rule-files.html) by Mark van der Loo and Edwin de Jonge
+- [FiveThirtyEight. Our 47 Weirdest Charts From 2015](http://fivethirtyeight.com/features/our-47-weirdest-charts-from-2015/). Отличная инфографика. А вот их доклад на UseR! 2016: [FiveThirtyEight's data journalism workflow with R](https://channel9.msdn.com/events/useR-international-R-User-conference/useR2016/FiveThirtyEights-data-journalism-workflow-with-R)
+- [YAML](http://www.yaml.org/): YAML Ain't Markup Language
+
+# 30.08.2016
+## R
+- COOL. [Shiny tips & tricks for improving your apps and solving common problems](http://deanattali.com/blog/advanced-shiny-tips/). Github [sources](https://github.com/daattali/advanced-shiny#readme)
+- [shinyjs](https://github.com/daattali/shinyjs). Easily improve the user interaction and user experience in your Shiny apps in seconds
+- [Joe Cheng RPubs](https://rpubs.com/jcheng)
+- [Interactive scatterplots with scatterD3](https://cran.r-project.org/web/packages/scatterD3/vignettes/introduction.html)
+- PURRR. Type stable functions. Look at RStudio blog: [purrr 0.2.0, January 6, 2016 in Packages](https://blog.rstudio.org/2016/01/06/purrr-0-2-0/)
+- [addinslist package](http://deanattali.com/blog/addinslist-package/). An RStudio addin to discover and install RStudio addins
+- [The R Package Known As DiagrammeR](http://rich-iannone.github.io/DiagrammeR/). R + RStudio + htmlwidgets + JavaScript + d3.js + viz.js + mermaid.js
+Generate graph diagrams using text in a Markdown-like syntax.
+- [timevis](https://github.com/daattali/timevis). Create interactive timeline visualizations in R
+- [Crosstalk](https://github.com/rstudio/crosstalk). A package for R that enhances htmlwidgets with client side, inter-widget interactions (currently linked brushing and filtering).
+- [robservable](https://github.com/ramnathv/robservable) is an R package that brings observables to R. It provides a generic framework to create reactive widgets that can interact with each other using a shiny-like API. This will allow R users to build entire web apps with interactive widgets that can be rendered purely in a browser.
+- [set color scaling of a vector in R](http://stackoverflow.com/questions/27810944/set-color-scaling-of-a-vector-in-r)
+```{r}
+# Create a color function that will return colors in the range we want
+colorfunc = colorRamp(c("blue","white","red"))
+# Use colorfunc to create colors that range from blue to white to red across the range of x
+mycolors = rgb(colorfunc(x), maxColorValue=255)
+```
+- [htmlwidgets for R - gallery](http://gallery.htmlwidgets.org/). 76 registered widgets available to explore (30.08.2016)
+
+## R Markdown
+- [R Markdown from RStudio](http://rmarkdown.rstudio.com/)
+- [Bookdown: Authoring Books with R Markdown](https://bookdown.org/yihui/bookdown/). Yihui Xie, 2016-07-19
+- [knitr in a knutshell a minimal tutorial](http://kbroman.org/knitr_knutshell/). KnitR is a really important tool for reproducible research. You create documents that are a mixture of text and code; when processed through KnitR, the code is replaced by the results and/or figures produced.
+- [Tufte Handout](https://rstudio.github.io/tufte/). An implementation in R Markdown. JJ Allaire and Yihui Xie
+- [Tutorial R Markdown](http://www.jacolienvanrij.com/Tutorials/tutorialMarkdown.html) by Jacolien van Rij
+
+
+## Web
+- [CSS для Чайников](http://technologyweb.org/div-%D0%B8-span/)
+- [MobX was formerly known as Mobservable.](https://github.com/mobxjs/mobx) Simple, scalable state management.
+
+
 # 29.08.2016
 ## R
 - [How to reshape data in R: tidyr vs reshape2](http://www.milanor.net/blog/reshape-data-r-tidyr-vs-reshape2/). Ну не заменяют они друг друга, а дополняют
 - [How to expand color palette with ggplot and RColorBrewer](http://novyden.blogspot.ru/2013/09/how-to-expand-color-palette-with-ggplot.html)
 - [How to generate column dependent random variable with dplyr](http://stackoverflow.com/questions/30352497/how-to-generate-column-dependent-random-variable-with-dplyr)
+- Dual axes
+	- [Dual axes time series plots may be ok sometimes after all](http://ellisp.github.io/blog/2016/08/18/dualaxes). Dual axis time series charts are often deprecated, but the standard alternatives have weaknesses too. In some circumstances, if done carefully, dual axis time series charts may be ok after all. In particular, you can choose two vertical scales so the drawing on the page is equivalent to drawing two indexed series, but retaining the meaningful mapping to the scale of the original variables.
+	- [Dual axes time series plots with various more awkward data](http://ellisp.github.io/blog/2016/08/28/dualaxes2). TL;DR Summary:
+I finish enhancements of the dual axes time series plotting function in R so it handles reasonably well series that may start at different times, have different frequencies, or include negatives.
+	- [Two Y-Axes](https://kieranhealy.org/blog/archives/2016/01/16/two-y-axes/). Matt remarked that “Friends don’t let friends use two y-axes”. It’s a good rule. The topic came up a couple of times during the data visualization short course I taught last semester. Using two y-axes makes it even easier than usual to fool yourself (or someone else) about the degree of association between two variables. This is because you can adjust the scaling of the axes to relative to one another in way that moves the data series around more or less however you like.
+	- [Dual axes for ggplot2](https://gist.github.com/jslefche/e4c0e9f57f0af49fca87). Modified from: [ggplot2-adding-secondary-transformed-x-axis-on-top-of-plot](https://stackoverflow.com/questions/21026598/ggplot2-adding-secondary-transformed-x-axis-on-top-of-plot) & [dual_axis_in_ggplot2](https://rpubs.com/kohske/dual_axis_in_ggplot2)
+	- [R: single plot with two different y-axes](http://www.gettinggeneticsdone.com/2015/04/r-single-plot-with-two-different-y-axes.html)
 
 
 ## Web
@@ -94,7 +145,6 @@ In the examples below, I use a 1950 - 2009 subset of SNAP’s 2-km resolution do
 # 18.08.2016
 ## R
 - [Making fast, good decisions with the FFTrees R package](http://nathanieldphillips.com/2016/08/making-fast-good-decisions-with-the-fftrees-r-package/)
-- [Dual axes time series plots may be ok sometimes after all](http://ellisp.github.io/blog/2016/08/18/dualaxes). Dual axis time series charts are often deprecated, but the standard alternatives have weaknesses too. In some circumstances, if done carefully, dual axis time series charts may be ok after all. In particular, you can choose two vertical scales so the drawing on the page is equivalent to drawing two indexed series, but retaining the meaningful mapping to the scale of the original variables.
 - [Use quick formula functions in purrr::map (+ base vs tidtyverse idiom comparisons/examples)](https://rud.is/b/2016/07/26/use-quick-formula-functions-in-purrrmap-base-vs-tidtyverse-idiom-comparisonsexamples/)
 
 - [JASP](https://jasp-stats.org/), a low fat alternative to SPSS, a delicious alternative to R. Bayesian statistics made accessible.
@@ -754,12 +804,6 @@ scale_fill_distiller <- function(..., type = "seq", palette = 1, direction = -1,
 - [GridExtra. Arranging multiple grobs on a page](https://cran.r-project.org/web/packages/gridExtra/vignettes/arrangeGrob.html)
 - [Quick-R. Combining Plots](http://www.statmethods.net/advgraphs/layout.html)
 - [Combined plot of ggplot2 (Not in a single Plot), using par() or layout() function? [duplicate]](http://stackoverflow.com/questions/9490482/combined-plot-of-ggplot2-not-in-a-single-plot-using-par-or-layout-functio)
-
-## DS
-- [Two Y-Axes](https://kieranhealy.org/blog/archives/2016/01/16/two-y-axes/). Matt remarked that “Friends don’t let friends use two y-axes”. It’s a good rule. The topic came up a couple of times during the data visualization short course I taught last semester. Using two y-axes makes it even easier than usual to fool yourself (or someone else) about the degree of association between two variables. This is because you can adjust the scaling of the axes to relative to one another in way that moves the data series around more or less however you like.
-- [Dual axes for ggplot2](https://gist.github.com/jslefche/e4c0e9f57f0af49fca87). Modified from: [ggplot2-adding-secondary-transformed-x-axis-on-top-of-plot](https://stackoverflow.com/questions/21026598/ggplot2-adding-secondary-transformed-x-axis-on-top-of-plot) & [dual_axis_in_ggplot2](https://rpubs.com/kohske/dual_axis_in_ggplot2)
-- [R: single plot with two different y-axes](http://www.gettinggeneticsdone.com/2015/04/r-single-plot-with-two-different-y-axes.html)
-
 
 # 27.04.2016
 ## DS
