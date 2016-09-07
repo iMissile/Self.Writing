@@ -1,3 +1,29 @@
+# 07.09.2016
+## R
+- [Hadleyverse](http://blog.revolutionanalytics.com/2015/03/hadleyverse.html)
+- [R manually set shape by factor](http://stackoverflow.com/questions/26218002/r-manually-set-shape-by-factor)
+
+# 02.09.2016
+## R
+- [Dean Attali's Shiny Server](http://daattali.com/shiny/)
+
+# 01.09.2016
+## CoolVendors in Data Science
+- [Satalia](https://www.satalia.com/)
+- [Algorithmia](https://algorithmia.com/)
+- [Dato](https://turi.com/index.html), ранее https://dato.com.
+- [SparkBeyond](http://www.sparkbeyond.com/)
+- [CoSMo](https://www.thecosmocompany.com/)
+
+## Math
+- [Статистика вокруг нас](https://habrahabr.ru/company/stepic/blog/250527/)
+- [Online курс 'Основа статистики' ](https://stepic.org/course/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8-76/syllabus)
+
+## R
+- [R AnalyticFlow](http://r.analyticflow.com/en/) is a data analysis software that utilizes the R environment for statistical computing.
+In addition to intuitive user interface, it also provides advanced features for R experts. These features enable you to share the processes of data analysis between users with differing levels of proficiency. R AnalyticFlow works on Windows, Mac OS X, and Linux and is free for any use.
+- [useR 2016 tutorial on "Understanding and creating interactive graphics"](https://github.com/tdhock/interactive-tutorial)
+
 # 31.08.2016
 ## R
 - [ezknitr](http://deanattali.com/blog/ezknitr-package/): R package to avoid the typical working directory pain when using knitr
@@ -17,7 +43,7 @@
 - [addinslist package](http://deanattali.com/blog/addinslist-package/). An RStudio addin to discover and install RStudio addins
 - [The R Package Known As DiagrammeR](http://rich-iannone.github.io/DiagrammeR/). R + RStudio + htmlwidgets + JavaScript + d3.js + viz.js + mermaid.js
 Generate graph diagrams using text in a Markdown-like syntax.
-- [timevis](https://github.com/daattali/timevis). Create interactive timeline visualizations in R
+- [timevis](https://daattali.com/shiny/timevis-demo/). An R package for creating timeline visualizations. GitHub [code](https://github.com/daattali/timevis).
 - [Crosstalk](https://github.com/rstudio/crosstalk). A package for R that enhances htmlwidgets with client side, inter-widget interactions (currently linked brushing and filtering).
 - [robservable](https://github.com/ramnathv/robservable) is an R package that brings observables to R. It provides a generic framework to create reactive widgets that can interact with each other using a shiny-like API. This will allow R users to build entire web apps with interactive widgets that can be rendered purely in a browser.
 - [set color scaling of a vector in R](http://stackoverflow.com/questions/27810944/set-color-scaling-of-a-vector-in-r)
@@ -35,6 +61,8 @@ mycolors = rgb(colorfunc(x), maxColorValue=255)
 - [knitr in a knutshell a minimal tutorial](http://kbroman.org/knitr_knutshell/). KnitR is a really important tool for reproducible research. You create documents that are a mixture of text and code; when processed through KnitR, the code is replaced by the results and/or figures produced.
 - [Tufte Handout](https://rstudio.github.io/tufte/). An implementation in R Markdown. JJ Allaire and Yihui Xie
 - [Tutorial R Markdown](http://www.jacolienvanrij.com/Tutorials/tutorialMarkdown.html) by Jacolien van Rij
+- [knitr](http://yihui.name/knitr/). Elegant, flexible and fast dynamic report generation with R
+- [Introduction to knitr](https://sachsmc.github.io/knit-git-markr-guide/knitr/knit.html)
 
 
 ## Web
@@ -355,8 +383,6 @@ with_config(use_proxy(...), install_github(...))
 	- [How-to go parallel in R – basics + tips](http://gforge.se/2015/02/how-to-go-parallel-in-r-basics-tips/)
 	- [For each row in an R dataframe](http://stackoverflow.com/questions/1699046/for-each-row-in-an-r-dataframe)
 - [Check existence of directory and create if doesn't exist](http://stackoverflow.com/questions/4216753/check-existence-of-directory-and-create-if-doesnt-exist)
-
-install.packages(c("ggplot2", "lubridate", "dplyr", "tidyr", "readr", "reshape2", "curl", "httr", "jsonlite", "magrittr", "arules", "futile.logger", "scales", "iterators", "foreach", "gtable", "grid", "gridExtra", "ggmap"))
 
 ## DeployR
 - Работа с внешними файлами

@@ -163,6 +163,7 @@ Predictive applications automate decision-making based on current and historical
 	- [Using R — Basic error Handing with tryCatch()](http://mazamascience.com/WorkingWithData/?p=912)
 	- [Exception handling](https://cran.r-project.org/doc/manuals/R-lang.html#Exception-handling)
 	- [Debugging, condition handling, and defensive programming](http://adv-r.had.co.nz/Exceptions-Debugging.html)
+	- [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html)
 - Data Frames & Data Tables
 	- [Data frames](https://cran.r-project.org/web/packages/dplyr/vignettes/data_frames.html). Best Practice. data_frame() is a nice way to create data frames. It encapsulates best practices for data frames. (tbl_df, data_frame)
 	- [Concatenating a list of data frames](http://www.exegetic.biz/blog/2014/06/concatenating-a-list-of-data-frames/)
@@ -293,6 +294,7 @@ that combine statistics and maps to inform better decision-making.
 - [shinyBS](http://ebailey78.github.io/shinyBS/). Twitter Bootstrap Components for Shiny. Add additional functionality and interactivity to your Shiny applications
 - [shinydashboard](https://rstudio.github.io/shinydashboard/structure.html)
 - [shinyapps.io by RStudio](http://www.shinyapps.io/). Share your Shiny Applications Online. Deploy your Shiny applications on the Web in minutes
+- [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html)
 - [Getting started with shinyapps.io](http://shiny.rstudio.com/articles/shinyapps.html)
 	- Action Buttons
 		- [Using Action Buttons](http://shiny.rstudio.com/articles/action-buttons.html). This article describes five patterns to use with Shiny’s action buttons and action links. Action buttons and action links are different from other Shiny widgets because they are intended to be used exclusively with `observeEvent()` or `eventReactive()`.
@@ -368,7 +370,7 @@ Thanks to its visual and interactive workspace, it is accessible to both Data Sc
 - [Webscraping. SSRMC lectures in Web Scraping, HT 2014](http://fredheir.github.io/WebScraping/). Welcome to Web Scraping.
 This site contains links to the slides for the course Web Scraping: Digital Data Collection for the Humanities and Social Sciences, conducted in Hilary Term 2014 at the University of Cambridge, hosted by the Social Sciences' Research Methods Centre (SSRMC), and taught by Rolf Fredheim
 - [Introduction to R for Data Science](http://www.exactness.net/post/145682161575/introduction-to-r-for-data-science-session-7) :: Session 7 [Multiple Linear Regression Model in R  + Categorical Predictors, Partial and Part Correlation]
-- [Code School]()
+- Code School
 	- [The Magical Marvels of MongoDB](http://campus.codeschool.com/courses/the-magical-marvels-of-mongodb/contents)
 - [Data School](http://www.dataschool.io/). Data science for beginners!
 	- [In-depth introduction to machine learning in 15 hours of expert videos](http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/)
@@ -441,7 +443,7 @@ This site contains links to the slides for the course Web Scraping: Digital Data
 - Advanced R by Hadley Wickham: [Style guide](http://adv-r.had.co.nz/Style.html)
 - [R Tutorial](http://www.cyclismo.org/tutorial/R/index.html). Kelly Black, Department of Mathematics and Computer Science, Clarkson University
 - [Dashboards in R with Shiny & Plotly](http://moderndata.plot.ly/dashboards-in-r-with-shiny-plotly/)
-- [Ggplot2 Guide](http://sharpstatistics.co.uk/r/ggplot2-guide/)
+- [ggplot2 Guide](http://sharpstatistics.co.uk/r/ggplot2-guide/)
 - [ggplot2 Cheatsheet from R for Public Health](http://felixfan.github.io/rstudy/2014/02/28/ggplot2-cheatsheet/)
 - [Bar Graphs (Ch 3)](https://rpubs.com/gokul108/ch3)
 - [Awesome Data Science](https://github.com/okulbilisim/awesome-datascience)

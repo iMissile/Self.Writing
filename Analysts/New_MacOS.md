@@ -132,5 +132,8 @@ TimeMachineEditor is a software for OS X that lets you change the default one-ho
 	- [How To Fix ‘Bluetooth Not Available’ Mac OS X Problem](http://www.howtoturnitoffandonagain.com/2016/03/01/how-to-fix-bluetooth-not-available-mac-os-x-problem/)
 	- [Fixing a “Bluetooth Not Available” Error on a Mac](http://osxdaily.com/2014/02/17/fix-bluetooth-not-available-error-mac/)
 
-
+# Работа с фотографиями в Mac
+- [Как слить фото с камеры на Mac OS X без iPhoto?](https://www.stableit.ru/2012/03/mac-os-x-iphoto.html) Используем "Захват изображений" ('Image Capture')
+- [Как скопировать (перенести) фото с iPhone на компьютер (Инструкция)](http://macnoob.ru/ifaq/kak-skopirovat-perenesti-foto-s-iphone-na-kompyuter/)
+- [iFunBox](http://www.i-funbox.com/). The File and App Management Tool for iPhone, iPad & iPod Touch. It's available on Windows and Mac OSX, ... and It's Free !
 
