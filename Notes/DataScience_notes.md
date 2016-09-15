@@ -1,7 +1,96 @@
+# 15.09.2016
+## R
+- [R-bloggers. 2175 search results for "time series"](https://www.r-bloggers.com/search/time%20series/page/4/)
+- Blog [Data * Science + R](http://things-about-r.tumblr.com/). Exploring the world of data with R, Tableau and other nice stuff 
+	- [Change Point Detection in Time Series with R and Tableau](http://things-about-r.tumblr.com/post/106806522699/change-point-detection-in-time-series-with-r-and). 
+- [Change Point Detection Packages in R](http://things-about-r.tumblr.com/post/106806522699/change-point-detection-in-time-series-with-r-and):
+	- [CPM](https://cran.r-project.org/web/packages/cpm/index.html) – “Parametric and Nonparametric Sequential Change Detection in R”:
+    Useful for detecting multiple change points in a time series from an unknown underlying distribution. Another bonus is that the method is applicable to data streams, where an observation is only considered once. Because of the “stream nature” of the cpm approach a second output are the detection points themselves. They mark the time when the change point is detected by the algorithm and quantify the delay. Unfortunately the cpm package is no longer maintained on CRAN. For windows users I uploaded a zipped version of the installed package from my R library here. It should work with R 3.0 and 3.1 under Windows 7/8.
+	- [BCP](https://cran.r-project.org/web/packages/bcp/index.html) – “An R Package for Performing a Bayesian Analysis of Change Point Problems”:
+    A package using Markov Chain Monte Carlo to find multiple change points within a sequence. The implementation is generalized to the multivariate case where we expect that within a segment all sequences have a constant mean where the mean is not necessarily the same for all sequences. Finding change points in multivariate time series is not discussed in this posting.
+	- [ECP](https://cran.r-project.org/web/packages/ecp/index.html) – “An R Package for Nonparametric Multiple Change Point Analysis of Multivariate Data”:
+    Another package for the detection of multiple change points within a time series that is also applicable to multivariate time series and makes no assumptions about the distribution. It uses an approach similar to hierarchical clustering with either a divisive or an agglomerative procedure to identify the change points. Even if it is not explicitly stated, most probably the “E” stands for energy as the method is using the energy statistic of Székely and Rizzo to identify changes.
+- [bayes.js: A Small Library for Doing MCMC in the Browser](http://www.sumsar.net/blog/2015/12/bayes-js-a-small-library-for-doing-mcmc-in-the-browser/)
+- [Autocorrelation functions of materially different time series](http://ellisp.github.io/blog/2015/09/19/timeseries-same-acf)
+
+## Math
+- [Using R for Time Series Analysis](http://a-little-book-of-r-for-time-series.readthedocs.io/en/latest/src/timeseries.html)
+- [Calculating Pearson correlation and significance in Python](http://stackoverflow.com/questions/3949226/calculating-pearson-correlation-and-significance-in-python)
+- STAT 510. Applied Time Series Analysis. [8.2 Cross Correlation Functions and Lagged Regressions](https://onlinecourses.science.psu.edu/stat510/node/74)
+
+# 14.09.2016
+## R
+- [Spurious correlations](http://www.tylervigen.com/spurious-correlations)
+- [Creating an animation using R](http://datascienceplus.com/creating-an-animation-using-r/)
+- [Exploring ways for using DiagrammeR to generate graphs/plots that can be exported to svg and included in knitr documents.](http://www.carlboettiger.info/2015/05/15/diagrammer.html)
+	- [Week 14 | Exporting Widget](http://www.buildingwidgets.com/blog/2015/4/9/week-14-exporting-widget)
+- [Creating network visualisations interactively with DiagrammeR and Shiny](https://timesenses.wordpress.com/2016/01/05/creating-network-visualisations-interactively-with-diagrammer-and-shiny/)
+-[Using DiagrammeR in Word document (generated using rMarkdown)](http://stackoverflow.com/questions/30307191/using-diagrammer-in-word-document-generated-using-rmarkdown)
+
+- [Trelliscope: Detailed Visualization of Large Complex Data in R](https://github.com/tesseradata/trelliscope)
+	- [trelliscope - Tutorial](http://tessera.io/docs-trelliscope/#introduction). Trelliscope provides a way to flexibly visualize large, complex data in great detail from within the R statistical programming environment. Trelliscope is a component in the Tessera environment.
+	- [trelliscope v.0.9.4 by Ryan Hafen](http://www.rdocumentation.org/packages/trelliscope/versions/0.9.4)
+- [PhantomJS](http://phantomjs.org/) is a headless WebKit scriptable with a JavaScript API. It has fast and native support for various web standards: DOM handling, CSS selector, JSON, Canvas, and SVG.
+- [Capturing wild widgets with webshot](https://rud.is/b/2016/03/04/capturing-wild-widgets-with-webshot/)
+	- Winston Chang released his webshot package to CRAN this past week. The package wraps the immensely useful phantomjs utility and makes it dirt simple to capture whole or partial web pages in R. One beautiful bonus feature of webshot is that you can install phamtomjs with it (getting phantomjs to work on Windows is a pain).
+- [An Introduction to the webshot Package](https://cran.r-project.org/web/packages/webshot/vignettes/intro.html)
+
+- [Заметки по R: R внутри документов](http://bdemeshev.github.io/r_cycle/cycle_files/26_literate_programming.html)
+- [File path issues in R using Windows (“Hex digits in character string” error)](http://stackoverflow.com/questions/8425409/file-path-issues-in-r-using-windows-hex-digits-in-character-string-error)
+- [Efficiently convert backslash to forward slash in R](http://stackoverflow.com/questions/17605563/efficiently-convert-backslash-to-forward-slash-in-r)
+
+## R. вывод в файл содержания htmlwidget
+текст функции widgetThumbnail {trelliscope} [здесь](https://gist.github.com/hrbrmstr/b5e8ec60490b825ea889)
+под windows эта функция в PhantomJS не работает, поскольку они генерирую в js файле такую ссылку:
+file://C:\Users\Ilya\AppData\Local\Temp\RtmpC49SU3\file4ac030a64c90.html
+а надо
+file:///D:/iwork.GH/R.projects/_phjs/file4ac030a64c90.html
+
+Наверное, это связано со спецсимволами
+А имя файла, включая путь, генерится функцией tempfile() {base}, но там слеши выдаются закрытыми
+Если запустить `phantomjs --debug=true file4ac0211e48f0.js`, то видна диагностика. При неправильных слешах пропадает последняя директория и всякие htmlwidgets.js не находятся
+
+
+# 13.09.2016
+## Mathematica
+- [How to export large graphics?](http://mathematica.stackexchange.com/questions/296/how-to-export-large-graphics)
+- [Formats for Text in Graphics](https://reference.wolfram.com/language/tutorial/FormatsForTextInGraphics.html)
+This tells the Wolfram Language what default text style to use for all subsequent plots.
+In[4]:=	
+ Click for copyable input
+✕ SetOptions[Plot, BaseStyle -> {FontFamily -> "Times", FontSize -> 14}];
+
+## R
+- [Upgrade notes for Shiny 0.14](http://shiny.rstudio.com/articles/upgrade-0.14.html)
+- [What is Parallel Computing?](http://www.parallelr.com/r-with-parallel-computing/)
+
+# 12.09.2016
+## Tools
+- [Upgrading Git/Mercurial in SourceTree for Windows](https://confluence.atlassian.com/sourcetreekb/upgrading-git-mercurial-in-sourcetree-for-windows-695108075.html). Место загрузки изменилось: https://www.mercurial-scm.org/downloads
+
+# 08.09.2016
+## R
+- [HW Checker: R, AppScripts, & Google Forms](http://data-steve.github.io/build-homework-checker-pt1/)
+- [Integrating Google Spreadsheet/Apps Script with R: Enabling social network analysis in TAGS](https://mashe.hawksey.info/2012/01/tags-r/)
+- [RStudio v0.99 Preview: Graphviz and DiagrammeR](https://blog.rstudio.org/2015/05/01/rstudio-v0-99-preview-graphviz-and-diagrammer/). May 1, 2015 in RStudio IDE	
+- [Create Graph Diagrams and Flowcharts Using R](http://rpackages.ianhowson.com/cran/DiagrammeR/)
+	- [R + mermaid.js](http://rpackages.ianhowson.com/cran/DiagrammeR/man/mermaid.html). Make diagrams in R using mermaid.js with infrastructure provided by htmlwidgets. 
+- [V8: Embedded JavaScript Engine for R](https://cran.r-project.org/web/packages/V8/index.html). An R interface to Google's open source JavaScript engine. V8 is written in C++ and implements ECMAScript as specified in ECMA-262, 5th edition. In addition, this package implements typed arrays as specified in ECMA 6 used for high-performance computing and libraries compiled with 'emscripten'.
+- [rio: A Swiss-Army Knife for Data I/O](https://cran.r-project.org/web/packages/rio/README.html)
+
+## Tools
+- [Mermaid](https://knsv.github.io/mermaid/#mermaid). Generation of diagrams and flowcharts from text in a similar manner as markdown.
+
 # 07.09.2016
 ## R
 - [Hadleyverse](http://blog.revolutionanalytics.com/2015/03/hadleyverse.html)
+- [The Hitchhiker's Guide to the Hadleyverse](http://adolfoalvarez.cl/the-hitchhikers-guide-to-the-hadleyverse/)
+- ebook [A MODERN DIVE into Data with R](https://ismayc.github.io/moderndiver-book/)
+- ebook in GIF. [Getting used to R, RStudio, and R Markdown](https://ismayc.github.io/rbasics-book/index.html)
 - [R manually set shape by factor](http://stackoverflow.com/questions/26218002/r-manually-set-shape-by-factor)
+
+## Shiny
+- [JavaScript Events in Shiny](https://cran.r-project.org/web/packages/shiny/vignettes/events.html)
 
 # 02.09.2016
 ## R
@@ -40,6 +129,7 @@ In addition to intuitive user interface, it also provides advanced features for 
 - [Joe Cheng RPubs](https://rpubs.com/jcheng)
 - [Interactive scatterplots with scatterD3](https://cran.r-project.org/web/packages/scatterD3/vignettes/introduction.html)
 - PURRR. Type stable functions. Look at RStudio blog: [purrr 0.2.0, January 6, 2016 in Packages](https://blog.rstudio.org/2016/01/06/purrr-0-2-0/)
+- [Use quick formula functions in purrr::map (+ base vs tidtyverse idiom comparisons/examples)](https://rud.is/b/2016/07/26/use-quick-formula-functions-in-purrrmap-base-vs-tidtyverse-idiom-comparisonsexamples/)
 - [addinslist package](http://deanattali.com/blog/addinslist-package/). An RStudio addin to discover and install RStudio addins
 - [The R Package Known As DiagrammeR](http://rich-iannone.github.io/DiagrammeR/). R + RStudio + htmlwidgets + JavaScript + d3.js + viz.js + mermaid.js
 Generate graph diagrams using text in a Markdown-like syntax.
@@ -64,11 +154,9 @@ mycolors = rgb(colorfunc(x), maxColorValue=255)
 - [knitr](http://yihui.name/knitr/). Elegant, flexible and fast dynamic report generation with R
 - [Introduction to knitr](https://sachsmc.github.io/knit-git-markr-guide/knitr/knit.html)
 
-
 ## Web
 - [CSS для Чайников](http://technologyweb.org/div-%D0%B8-span/)
 - [MobX was formerly known as Mobservable.](https://github.com/mobxjs/mobx) Simple, scalable state management.
-
 
 # 29.08.2016
 ## R
@@ -82,7 +170,6 @@ I finish enhancements of the dual axes time series plotting function in R so it 
 	- [Two Y-Axes](https://kieranhealy.org/blog/archives/2016/01/16/two-y-axes/). Matt remarked that “Friends don’t let friends use two y-axes”. It’s a good rule. The topic came up a couple of times during the data visualization short course I taught last semester. Using two y-axes makes it even easier than usual to fool yourself (or someone else) about the degree of association between two variables. This is because you can adjust the scaling of the axes to relative to one another in way that moves the data series around more or less however you like.
 	- [Dual axes for ggplot2](https://gist.github.com/jslefche/e4c0e9f57f0af49fca87). Modified from: [ggplot2-adding-secondary-transformed-x-axis-on-top-of-plot](https://stackoverflow.com/questions/21026598/ggplot2-adding-secondary-transformed-x-axis-on-top-of-plot) & [dual_axis_in_ggplot2](https://rpubs.com/kohske/dual_axis_in_ggplot2)
 	- [R: single plot with two different y-axes](http://www.gettinggeneticsdone.com/2015/04/r-single-plot-with-two-different-y-axes.html)
-
 
 ## Web
 - [Google Web Designer](http://www.google.com/webdesigner/). Create engaging, interactive HTML5-based designs and motion graphics that can run on any device.
@@ -113,10 +200,9 @@ I finish enhancements of the dual axes time series plotting function in R so it 
 	- [etl: Extract-Transform-Load Framework for Medium Data](https://cran.r-project.org/web/packages/etl/index.html)
 	- [R package to facilitate ETL operations](https://github.com/beanumber/etl)
 
-
 ## Полезные функции
  - `sessionInfo()`
- - `gh_show_source("mutate", repo = "dplyr")` or `library(dplyr); gh_show_source(mutate)`. Show the Source Code of Functions on GitHub
+ - githubibstall: `gh_show_source("mutate", repo = "dplyr")` or `library(dplyr); gh_show_source(mutate)`. Show the Source Code of Functions on GitHub
 
 # 23.08.2016
 ## R
@@ -173,7 +259,6 @@ In the examples below, I use a 1950 - 2009 subset of SNAP’s 2-km resolution do
 # 18.08.2016
 ## R
 - [Making fast, good decisions with the FFTrees R package](http://nathanieldphillips.com/2016/08/making-fast-good-decisions-with-the-fftrees-r-package/)
-- [Use quick formula functions in purrr::map (+ base vs tidtyverse idiom comparisons/examples)](https://rud.is/b/2016/07/26/use-quick-formula-functions-in-purrrmap-base-vs-tidtyverse-idiom-comparisonsexamples/)
 
 - [JASP](https://jasp-stats.org/), a low fat alternative to SPSS, a delicious alternative to R. Bayesian statistics made accessible.
 

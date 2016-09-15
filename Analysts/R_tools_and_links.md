@@ -322,6 +322,7 @@ The source code of some of the widgets can be found in Github repository.
 - [Persistent data storage in Shiny apps](http://deanattali.com/blog/shiny-persistent-data-storage/)
 
 ### Shiny Demo
+- [College Scorecard](https://beta.rstudioconnect.com/jcheng/scorecard-app/). A Shiny demo app by RStudio
 - [ggplot2 Theme Builder](https://bchartoff.shinyapps.io/ggShinyApp/).
 - [Dean Attali](http://deanattali.com/)
 	- [Building Shiny apps - an interactive tutorial](http://deanattali.com/blog/building-shiny-apps-tutorial/)
