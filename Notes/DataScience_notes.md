@@ -17,6 +17,7 @@
 - [Using R for Time Series Analysis](http://a-little-book-of-r-for-time-series.readthedocs.io/en/latest/src/timeseries.html)
 - [Calculating Pearson correlation and significance in Python](http://stackoverflow.com/questions/3949226/calculating-pearson-correlation-and-significance-in-python)
 - STAT 510. Applied Time Series Analysis. [8.2 Cross Correlation Functions and Lagged Regressions](https://onlinecourses.science.psu.edu/stat510/node/74)
+- [Pearson product-moment correlation coefficient](https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient)
 
 # 14.09.2016
 ## R
