@@ -1,8 +1,19 @@
-# 15.09.2016
-## R
-- [R-bloggers. 2175 search results for "time series"](https://www.r-bloggers.com/search/time%20series/page/4/)
-- Blog [Data * Science + R](http://things-about-r.tumblr.com/). Exploring the world of data with R, Tableau and other nice stuff 
-	- [Change Point Detection in Time Series with R and Tableau](http://things-about-r.tumblr.com/post/106806522699/change-point-detection-in-time-series-with-r-and). 
+# 16.09.2016
+## Machine Learning
+- [10 More lessons learned from building real-life Machine Learning systems — Part I — Medium](https://medium.com/@xamat/10-more-lessons-learned-from-building-real-life-ml-systems-part-i-b309cafc7b5e)
+- [Machine Learning is Fun! Part 2 — Medium](https://medium.com/@ageitgey/machine-learning-is-fun-part-2-a26a10b68df3)
+- [A Neural Network in 11 lines of Python (Part 1) - i am trask](http://iamtrask.github.io/2015/07/12/basic-python-network/)
+- [The state of Computer Vision and AI: we are really, really far away](http://karpathy.github.io/2012/10/22/state-of-computer-vision/)
+
+## Web
+- [Wix](http://ru.wix.com/) Все начинается с красивого сайта. Создайте свой. Это легко и бесплатно.
+
+## BigData
+- [Все итоги ICBDA 2015](http://rb.ru/list/vse-itogi-icbda-2015/)
+- [RusBase](http://rb.ru/)
+
+## Time-series
+- [Change point analysis](http://stats.stackexchange.com/questions/59755/change-point-analysis). Could someone please explain change point to me. I'm using the package in R, and I don't really understand what the different methods mean, the pros and cons of each, and I especially do not understand the penalty value. When you increase the penalty value, what does that mean and what does it do? I have done a good amount of research online but I just keep finding the cran R and quick R sites, which are good, but the way they say it just isn't cutting it for me.
 - [Change Point Detection Packages in R](http://things-about-r.tumblr.com/post/106806522699/change-point-detection-in-time-series-with-r-and):
 	- [CPM](https://cran.r-project.org/web/packages/cpm/index.html) – “Parametric and Nonparametric Sequential Change Detection in R”:
     Useful for detecting multiple change points in a time series from an unknown underlying distribution. Another bonus is that the method is applicable to data streams, where an observation is only considered once. Because of the “stream nature” of the cpm approach a second output are the detection points themselves. They mark the time when the change point is detected by the algorithm and quantify the delay. Unfortunately the cpm package is no longer maintained on CRAN. For windows users I uploaded a zipped version of the installed package from my R library here. It should work with R 3.0 and 3.1 under Windows 7/8.
@@ -10,6 +21,35 @@
     A package using Markov Chain Monte Carlo to find multiple change points within a sequence. The implementation is generalized to the multivariate case where we expect that within a segment all sequences have a constant mean where the mean is not necessarily the same for all sequences. Finding change points in multivariate time series is not discussed in this posting.
 	- [ECP](https://cran.r-project.org/web/packages/ecp/index.html) – “An R Package for Nonparametric Multiple Change Point Analysis of Multivariate Data”:
     Another package for the detection of multiple change points within a time series that is also applicable to multivariate time series and makes no assumptions about the distribution. It uses an approach similar to hierarchical clustering with either a divisive or an agglomerative procedure to identify the change points. Even if it is not explicitly stated, most probably the “E” stands for energy as the method is using the energy statistic of Székely and Rizzo to identify changes.
+
+## R
+- [tidyverse 1.0.0](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/). The tidyverse is a set of packages that work in harmony because they share common data representations and API design. The tidyverse package is designed to make it easy to install and load core packages from the tidyverse in a single command.
+```{r}
+library(tidyverse)
+tidyverse_conflicts()
+tidyverse_update()
+```
+- [The ensurer package](https://cran.r-project.org/web/packages/ensurer/vignettes/ensurer.html)
+- [colourpicker: A colour picker widget for Shiny apps, RStudio, R-markdown, and 'htmlwidgets'](http://deanattali.com/blog/colourpicker-package/)
+- COOL! [Reading and combining many tidy data files in R](http://serialmentor.com/blog/2016/6/13/reading-and-combining-many-tidy-data-files-in-R)
+- [Simple algorithm for online outlier detection of a generic time series](http://stats.stackexchange.com/questions/1142/simple-algorithm-for-online-outlier-detection-of-a-generic-time-series)
+- [Simpler R coding with pipes > the present and future of the magrittr package](https://www.r-statistics.com/2014/08/simpler-r-coding-with-pipes-the-present-and-future-of-the-magrittr-package/)
+- COOL! [Use of ~ (tilde) in R programming Language](http://stackoverflow.com/questions/14976331/use-of-tilde-in-r-programming-language). 
+The thing on the right of <- is a formula object. It is often used to denote a statistical model, where the thing on the left of the ~ is the response and the things on the right of the ~ are the explanatory variables. So in English you'd say something like "Species depends on Sepal Length, Sepal Width, Petal Length and Petal Width".
+The myFormula <- part of that line stores the formula in an object called myFormula so you can use it in other parts of your R code.
+Other common uses of formula objects in R
+	- The lattice package uses them to [specify the variables to plot](http://www.inside-r.org/packages/CRAN/lattice/docs/xyplot).
+	- The ggplot2 package uses them to [specify panels for plotting](http://www.inside-r.org/packages/CRAN/ggplot2/docs/facet_wrap).
+	- The dplyr package uses them for [non-standard evaulation](http://cran.r-project.org/web/packages/dplyr/vignettes/nse.html).
+- dplyr & operator ~ (tilde). NSE = [non-standard evaulation](http://cran.r-project.org/web/packages/dplyr/vignettes/nse.html)
+- [Non-standard evaluation](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
+- [R: PARALLEL COMPUTING IN 5 MINUTES](http://blog.aicry.com/r-parallel-computing-in-5-minutes/)
+
+# 15.09.2016
+## R
+- [R-bloggers. 2175 search results for "time series"](https://www.r-bloggers.com/search/time%20series/page/4/)
+- Blog [Data * Science + R](http://things-about-r.tumblr.com/). Exploring the world of data with R, Tableau and other nice stuff 
+	- [Change Point Detection in Time Series with R and Tableau](http://things-about-r.tumblr.com/post/106806522699/change-point-detection-in-time-series-with-r-and). 
 - [bayes.js: A Small Library for Doing MCMC in the Browser](http://www.sumsar.net/blog/2015/12/bayes-js-a-small-library-for-doing-mcmc-in-the-browser/)
 - [Autocorrelation functions of materially different time series](http://ellisp.github.io/blog/2015/09/19/timeseries-same-acf)
 
