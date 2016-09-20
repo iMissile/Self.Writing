@@ -1,3 +1,33 @@
+# 20.09.2016
+## R
+- [A brief foray into parallel processing with R](https://beckmw.wordpress.com/2014/01/21/a-brief-foray-into-parallel-processing-with-r/), January 21, 2014
+- [A few thoughts on the existing code parallelization](http://www.vesnam.com/Rblog/existing-code-parallelization-yes-or-no/), September 17, 2016 
+
+# 19.09.2016
+## R
+- [R 3.3.0 is another motivation for Docker](http://r-addict.com/2016/05/13/Docker-Motivation.html)
+- [Monitoring R Applications with RZabbix](http://r-addict.com/2016/09/15/RZabbix-Announcement.html)
+	- [Monitoring Analytics](https://github.com/monitoringartist/monitoring-analytics). R statistical computing and graphic tool for monitoring metrics from data scientists https://hub.docker.com/r/monitoringartist/monitoring-analytics
+- [Why Averages Suck and Percentiles are Great](http://apmblog.dynatrace.com/2012/11/14/why-averages-suck-and-percentiles-are-great/)
+
+## R + Business
+- [17 Revolution Analytics Case Studies](http://www.featuredcustomers.com/vendor/revolution-analytics-1/case-studies)
+- [Why The R Programming Language Is Good For Business](https://www.fastcompany.com/3030063/why-the-r-programming-language-is-good-for-business)
+Thanks to one company, the same code that is revolutionizing the scientific community is now moving up the ranks of the business world.
+	- "R can do literally everything, and all new research is done in R. So especially for businesses that really want to out-compete their competitors on the basis of advanced analytics, they can get access to everything they need within R, things that might not come for five or 10 years through commercial software," says Smith.
+
+## Big Data
+- [Поминки по Big Data](http://www.globalcio.ru/workshops/1358/)
+- [Конец Big Data](http://fastsalttimes.com/sections/obzor/628.html). Видимо, перепечатка.
+- [The Demise of Big Data, Its Lessons and the State of Things to Come](https://www.gartner.com/doc/3115022/demise-big-data-lessons-state)
+- [The end of Big Data. It’s all over now.](http://blogs.gartner.com/andrew_white/2015/08/20/the-end-of-big-data-its-all-over-now/) by Andrew White  |  August 20, 2015
+- [Big Data Isn’t Obsolete. It’s Normal.](http://blogs.gartner.com/nick-heudecker/big-data-is-now-normal/) by Nick Heudecker  |  August 20, 2015
+- [NewProLab facebook](https://www.facebook.com/newprolab/posts/1054494544663918:0)
+
+## Auto
+- [Курьер](https://dostavista.ru/order?standard)
+- [Разборка](http://евроавто.рф/)
+
 # 16.09.2016
 ## Machine Learning
 - [10 More lessons learned from building real-life Machine Learning systems — Part I — Medium](https://medium.com/@xamat/10-more-lessons-learned-from-building-real-life-ml-systems-part-i-b309cafc7b5e)
@@ -23,6 +53,13 @@
     Another package for the detection of multiple change points within a time series that is also applicable to multivariate time series and makes no assumptions about the distribution. It uses an approach similar to hierarchical clustering with either a divisive or an agglomerative procedure to identify the change points. Even if it is not explicitly stated, most probably the “E” stands for energy as the method is using the energy statistic of Székely and Rizzo to identify changes.
 
 ## R
+### R+Business
+- [Why The R Programming Language Is Good For Business](https://www.fastcompany.com/3030063/why-the-r-programming-language-is-good-for-business).
+Thanks to one company, the same code that is revolutionizing the scientific community is now moving up the ranks of the business world.
+- [17 Revolution Analytics Case Studies](http://www.featuredcustomers.com/vendor/revolution-analytics-1/case-studies)
+- [Revolution Analytics Review](http://www.butleranalytics.com/revolution-analytics-review/)
+
+### Technical
 - [tidyverse 1.0.0](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/). The tidyverse is a set of packages that work in harmony because they share common data representations and API design. The tidyverse package is designed to make it easy to install and load core packages from the tidyverse in a single command.
 ```{r}
 library(tidyverse)
