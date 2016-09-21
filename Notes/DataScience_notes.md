@@ -1,7 +1,48 @@
-# 20.09.2016
+# 21.09.2016
 ## R
+- [Handling and Processing Strings in R - Gaston Sanchez](http://gastonsanchez.com/Handling_and_Processing_Strings_in_R.pdf)
+- [R / Notes](http://f.briatte.org/r/). This page contains a collection of short notes on using the R statistical software.
+Интересный блог с практическими примерами.
+	- [ggnetwork: Network geometries for ggplot2](http://f.briatte.org/r/ggnetwork-network-geometries-for-ggplot2)
+	- [String manipulations on full names](http://f.briatte.org/r/string-manipulation-on-full-names)
+- Проверка объектов на схожесть:
+	- [Testing](http://r-pkgs.had.co.nz/tests.html). There are two basic ways to test for equality: expect_equal(), and expect_identical(). expect_equal() is the most commonly used: it uses all.equal() to check for equality within a numerical tolerance. If you want to test for exact equivalence, or need to compare a more exotic object like an environment, use expect_identical(). It’s built on top of identical().
+	- [identical {base}](https://stat.ethz.ch/R-manual/R-devel/library/base/html/identical.html). Test Objects for Exact Equality. 
+The safe and reliable way to test two objects for being exactly equal. It returns TRUE in this case, FALSE in every other case.
+	- [all.equal {base}](https://stat.ethz.ch/R-manual/R-devel/library/base/html/all.equal.html). Test if Two Objects are (Nearly) Equal.
+all.equal(x, y) is a utility to compare R objects x and y testing ‘near equality’. If they are different, comparison is still made to some extent, and a report of the differences is returned. Do not use all.equal directly in if expressions—either use isTRUE(all.equal(....)) or identical if appropriate.
+
+## R Slicing
+- [Data Science with R by Garrett Grolemund](http://garrettgman.github.io/tidying/). Data Tidying
+“Tidy datasets are all alike but every messy dataset is messy in its own way.” – Hadley Wickham
+- [Convert R vector to string vector of 1 element](http://stackoverflow.com/questions/13973116/convert-r-vector-to-string-vector-of-1-element).
+Use the collapse argument to paste: 
+```
+paste(a,collapse=" ")
+[1] "aa bb cc
+```
+- [How to split a data frame?](http://stackoverflow.com/questions/3302356/how-to-split-a-data-frame)
+- [Emulate split() with dplyr group_by: return a list of data frames](http://stackoverflow.com/questions/33775239/emulate-split-with-dplyr-group-by-return-a-list-of-data-frames)
+- [tidyr 0.4.0](https://blog.rstudio.org/2016/02/02/tidyr-0-4-0/). There are two big features in this release: support for nested data frames, and improved tools for turning implicit missing values into explicit missing values. Пришел отсюда: [with recent version of tidyr (0.4.1), you could replace do(vals=data.frame(.)) by nest(). vals will be named data by default – aurelien Mar 8 at 12:01](http://stackoverflow.com/questions/33775239/emulate-split-with-dplyr-group-by-return-a-list-of-data-frames)
+- [I'll add the data.table version for anyone else Googling it (i.e., @BondedDust's solution translated to data.table)](http://stackoverflow.com/questions/4126326/how-to-quickly-form-groups-quartiles-deciles-etc-by-ordering-columns-in-a/27646599#27646599):
+```
+library(data.table)
+setDT(temp)
+temp[ , quartile := cut(value,
+                        breaks = quantile(value, probs = seq(0, 1, by = 1/4)),
+                        labels = 1:4, right = FALSE)]
+```
+
+
+# 20.09.2016
+## Other
+- [HighLoad++ 2016](http://www.highload.ru). Профессиональная конференция разработчиков высоконагруженных систем
+
+## R
+- [CRAN Task View: High-Performance and Parallel Computing with R](https://cran.r-project.org/web/views/HighPerformanceComputing.html)
 - [A brief foray into parallel processing with R](https://beckmw.wordpress.com/2014/01/21/a-brief-foray-into-parallel-processing-with-r/), January 21, 2014
 - [A few thoughts on the existing code parallelization](http://www.vesnam.com/Rblog/existing-code-parallelization-yes-or-no/), September 17, 2016 
+
 
 # 19.09.2016
 ## R
