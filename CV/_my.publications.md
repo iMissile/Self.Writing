@@ -56,6 +56,7 @@ E-mail: ishutov@gmail.com
 
 # ======================================
 Публикации*:
+- [DataScience трансформация: системы мониторинга как аналитический инструмент для ИТ. Применение в промышленности](https://avtprom.ru/article/datascience-transformatsiya-sist), Автоматизация в промышленности N 1 2016, стр. 18
 - [Системы OSS/BSS уходят в свободное плавание](http://www.connect-wit.ru/sistemy-oss-bss-uhodyat-v-svobodnoe-plavanie.html), Connect.WIT, N 4 2015
 - [Оптимизация IT-инфраструктуры](http://www.it-weekly.ru/analytics/tech/43890.html), 2013/01
 - [Простаивающий сервер тратит 15 – 30% от пиковой мощности абсолютно бесполезно](http://ibusiness.ru/blog/ilya.shutov/34775), 2014/09

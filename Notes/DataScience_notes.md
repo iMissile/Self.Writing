@@ -1,3 +1,86 @@
+# 27.09.2016
+## R
+- [Upgrading to plotly 4.0 (and above)](http://nvxwizlsnzsgc5db.obwg65bonr4q.cmle.ru/upgrading-to-plotly-4-0-and-above/)
+
+# 24.09.2016
+## Wolfram
+- [Color Schemes](https://reference.wolfram.com/language/guide/ColorSchemes.html). The Wolfram Language includes a wide selection of carefully chosen color schemes that can immediately be used throughout the Wolfram Language graphics and visualization system.
+
+## Изыскания по yandex.taxi
+- dplyr unique
+	- [Select unique values with 'select' function in 'dplyr' library](http://stackoverflow.com/questions/25571547/select-unique-values-with-select-function-in-dplyr-library)
+	- [Select distinct/unique rows](https://rdrr.io/cran/dplyr/man/distinct.html)
+	- [Using purrr with dplyr](http://lionel-.github.io/2015/10/08/using-purrr-with-dplyr/). Мапируем на каждую колонку
+- dplyr conditional mutate
+	- [Better syntax for mutate() than nested "ifelse" functions #1518](https://github.com/hadley/dplyr/issues/1518)
+	- [can dplyr package be used for conditional mutating?](http://stackoverflow.com/questions/24459752/can-dplyr-package-be-used-for-conditional-mutating)
+	- [Using conditions in dplyr::mutate](http://stackoverflow.com/questions/28080814/using-conditions-in-dplyrmutate)
+	- [R for Data Science, 19.4 Conditional execution](http://r4ds.had.co.nz/functions.html#conditional-execution)
+	- [Equivalent of SQL CASE #631. Closed](https://github.com/hadley/dplyr/issues/631). `case_when` конструкция.	
+	- [dplyr mutate with function call returning incorrect value](http://stackoverflow.com/questions/36300381/dplyr-mutate-with-function-call-returning-incorrect-value).
+You could also use Vectorize
+	- [Use variable names in functions of `dplyr`](http://stackoverflow.com/questions/24569154/use-variable-names-in-functions-of-dplyr)
+
+- [Woking with Dates and Times with lubridate in R](https://rpubs.com/davoodastaraky/lubridate)
+- [Window functions and grouped mutate/filter](https://cran.r-project.org/web/packages/dplyr/vignettes/window-functions.html)
+- [rminer: Data Mining Classification and Regression Methods](https://cran.r-project.org/web/packages/rminer/). Facilitates the use of data mining algorithms in classification and regression (including time series forecasting) tasks by presenting a short and coherent set of functions.
+- [TimeZones](http://unicode.org/repos/cldr/trunk/common/supplemental/windowsZones.xml)
+
+# 23.09.2016
+## Microsoft
+- [How to Install and Use the Linux Bash Shell on Windows 10](http://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/).
+Windows 10’s Anniversary Update offers a big new feature for developers: A full, Ubuntu-based Bash shell that can run Linux software directly on Windows. This is made possible by the new “Windows Subsystem for Linux” Microsoft is adding to Windows 10.
+	- Документация находится на веб-сайте https://aka.ms/wsldocs
+
+## Data Science
+- COO-O-L! [Which tool should I use?](http://brohrer.github.io/which_tool_should_i_use.html). Data Science and Robots Blog
+
+## R
+- [String manipulations on full names](http://f.briatte.org/r/string-manipulation-on-full-names)
+- [Handling and Processing Strings in R](http://gastonsanchez.com/Handling_and_Processing_Strings_in_R.pdf), Gaston Sanchez
+- [Using purrr with dplyr](http://lionel-.github.io/2015/10/08/using-purrr-with-dplyr/)
+08 October 2015
+
+## Telco operator churn
+- [Анализ оттока клиентов с помощью Машинного обучения Azure](https://azure.microsoft.com/ru-ru/documentation/articles/machine-learning-azure-ml-customer-churn-scenario/)
+- [Negative Correlation Learning for Customer Churn Prediction: A Comparison Study](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4386545/)
+- [Customer churn prediction using improved balanced random forests](http://lib.cufe.edu.cn/upload_files/file/20140521/3_20140521_Customer%20churn%20prediction%20using%20improved%20balanced%20random%20forests.pdf)
+- [Churn prediction in telecom using Random Forest and PSO based data balancing in combination with various feature selection strategies](https://www.researchgate.net/publication/256918723_Churn_prediction_in_telecom_using_Random_Forest_and_PSO_based_data_balancing_in_combination_with_various_feature_selection_strategies)
+
+# 22.09.2016
+## Machine Learning & Random Forest
+- [7 tools in every data scientist’s toolbox](http://blog.datadive.net/7-tools-in-every-data-scientists-toolbox/)
+- [Interpreting random forests](http://blog.datadive.net/interpreting-random-forests/)
+- [A Complete Tutorial on Tree Based Modeling from Scratch (in R & Python)](https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/)
+- [A Gentle Introduction to Random Forests, Ensembles, and Performance Metrics in a Commercial System](https://citizennet.com/blog/2012/11/10/random-forests-ensembles-and-performance-metrics/)
+- [Деревья принятия решений с примерами на R](http://www.algorithmist.ru/2012/05/decision-trees-in-r.html)
+- [Random Forest с примерами на R](http://www.algorithmist.ru/2012/05/random-forest-r.html)
+- [Использование Random Forest (случайного леса) для предсказания цен акций](http://rforfinance.ru/random-forest/)
+- [Random Forests](https://www.stat.berkeley.edu/~breiman/RandomForests/). Leo Breiman and Adele Cutler
+Random Forests(tm) is a trademark of Leo Breiman and Adele Cutler and is licensed exclusively to Salford Systems for the commercial release of the software.
+Our trademarks also include RF(tm), RandomForests(tm), RandomForest(tm) and Random Forest(tm).
+
+
+## Big Data
+- [Informatica Big Data Management and Ranger Integration](http://blogs.informatica.com/2016/06/07/informatica-big-data-management-and-ranger-integration/)
+
+## R
+- [Welcome to the Tidyverse](http://blog.revolutionanalytics.com/2016/09/tidyverse.html)
+- [The tidy tools manifesto](https://mran.microsoft.com/web/packages/tidyverse/vignettes/manifesto.html). Hadley Wickham. 2016-09-09
+- [Creating nests without tidyr](http://nacnudus.github.io/crossprod/creating-nests-without-tidyr)
+- [Nest repeated values in a list-variable](https://www.rdocumentation.org/packages/tidyr/versions/0.6.0/topics/nest). Тут вместе с онлайн консолью выполнения кода.
+- [mrdwab/splitstackshape](https://github.com/mrdwab/splitstackshape). R functions to split concatenated data, conveniently stack columns of data.frames, and conveniently reshape data.frames. 
+- [the most useful R function of the week: unnest from tidyr](http://bioinfoblog.it/2015/02/the-most-useful-r-command-unnest-from-tidyr/)
+- [Crossprod blog](http://nacnudus.github.io/crossprod/)
+- Queuing theory with R. The simmer package is a relatively new R package for discrete event simulation (DES). It’s an exciting development, because there isn’t a lot of open-source DES software. SimPy seems to be the only serious competitor for teaching DES and queueing theory.
+	- [Simmer vs SimPy: The Bank, Part I](http://nacnudus.github.io/crossprod/simmer-vs-simpy-the-bank-part-i)
+	- [Simmer vs SimPy: The Bank, Part II](http://nacnudus.github.io/crossprod/simmer-vs-simpy-the-bank-part-ii)
+	- [Hacking the Data Science Radar with Data Science]
+- [Introduction to R](https://ramnathv.github.io/pycon2014-r/). These are notes for an introductory R workshop I am teaching for Python Programmers.
+- [Will Stanton's Data Science Blog](http://will-stanton.com/)
+	- [Why you should learn Spark if you want to be a data scientist](http://will-stanton.com/why-you-should-learn-spark-if-you-want-to-be-a-data-scientist/)
+	- [Machine Learning with R: An Irresponsibly Fast Tutorial](http://will-stanton.com/machine-learning-with-r-an-irresponsibly-fast-tutorial/). Анализ данных проекта "Титаник\Titanic" с помощью пакета 'caret'
+
 # 21.09.2016
 ## R
 - [Handling and Processing Strings in R - Gaston Sanchez](http://gastonsanchez.com/Handling_and_Processing_Strings_in_R.pdf)
@@ -22,6 +105,7 @@ paste(a,collapse=" ")
 [1] "aa bb cc
 ```
 - [How to split a data frame?](http://stackoverflow.com/questions/3302356/how-to-split-a-data-frame)
+- [Split data.table into roughly equal parts](http://stackoverflow.com/questions/32125795/split-data-table-into-roughly-equal-parts)
 - [Emulate split() with dplyr group_by: return a list of data frames](http://stackoverflow.com/questions/33775239/emulate-split-with-dplyr-group-by-return-a-list-of-data-frames)
 - [tidyr 0.4.0](https://blog.rstudio.org/2016/02/02/tidyr-0-4-0/). There are two big features in this release: support for nested data frames, and improved tools for turning implicit missing values into explicit missing values. Пришел отсюда: [with recent version of tidyr (0.4.1), you could replace do(vals=data.frame(.)) by nest(). vals will be named data by default – aurelien Mar 8 at 12:01](http://stackoverflow.com/questions/33775239/emulate-split-with-dplyr-group-by-return-a-list-of-data-frames)
 - [I'll add the data.table version for anyone else Googling it (i.e., @BondedDust's solution translated to data.table)](http://stackoverflow.com/questions/4126326/how-to-quickly-form-groups-quartiles-deciles-etc-by-ordering-columns-in-a/27646599#27646599):
@@ -41,7 +125,9 @@ temp[ , quartile := cut(value,
 ## R
 - [CRAN Task View: High-Performance and Parallel Computing with R](https://cran.r-project.org/web/views/HighPerformanceComputing.html)
 - [A brief foray into parallel processing with R](https://beckmw.wordpress.com/2014/01/21/a-brief-foray-into-parallel-processing-with-r/), January 21, 2014
-- [A few thoughts on the existing code parallelization](http://www.vesnam.com/Rblog/existing-code-parallelization-yes-or-no/), September 17, 2016 
+- [A few thoughts on the existing code parallelization](http://www.vesnam.com/Rblog/existing-code-parallelization-yes-or-no/), September 17, 2016
+- [Хабр: Разработка → Запуск функций R на нескольких машинах](https://habrahabr.ru/company/infopulse/blog/309052/)
+- [Хабр: Разработка → Небольшое введение в параллельное программирование на R](https://habrahabr.ru/company/infopulse/blog/307708/)
 
 
 # 19.09.2016
