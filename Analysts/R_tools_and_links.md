@@ -788,6 +788,7 @@ An Englishman in Copenhagen writing about digital, music and anything else. Pres
 - [Pineapple](http://nwhitehead.github.io/pineapple/). The next generation of scientific notebook. A standalone frontend to IPython for Mac.
 - [Scrapy](http://scrapy.org/). An open source and collaborative framework for extracting the data you need from websites. In a fast, simple, yet extensible way.
 - [Python(x,y) - the scientific Python distribution](http://python-xy.github.io/)
+- [Using Python decorators to be a lazy programmer: a case study](http://www.onthelambda.com/2016/07/08/using-python-decorators-to-be-a-lazy-programmer-a-case-study/)
 - [Bokeh](http://bokeh.pydata.org/en/latest/) is a Python interactive visualization library that targets modern web browsers for presentation. Its goal is to provide elegant, concise construction of novel graphics in the style of D3.js, but also deliver this capability with high-performance interactivity over very large or streaming datasets. Bokeh can help anyone who would like to quickly and easily create interactive plots, dashboards, and data applications.
 - [Scipy Lecture Notes
 One document to learn numerics, science, and data with Python](http://www.scipy-lectures.org/)

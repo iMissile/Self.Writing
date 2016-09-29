@@ -1,3 +1,38 @@
+# 29.09.2016
+## Data Science
+- [Wakari.io](https://wakari.io/). Web-based Python Data Analysis
+- [Domino makes data scientists more productive and facilitates collaborative, reproducible, reusable analysis.](https://www.dominodatalab.com/)
+- Google Cloud Platform
+	- [Architecture: Real-Time Stream Processing for IoT](https://cloud.google.com/solutions/architecture/real-time-stream-processing-iot)
+
+
+## Value Proposition
+- [26 Value Proposition Examples That Convert Visitors](https://sumome.com/stories/value-proposition-examples)
+- [7 of the Best Value Proposition Examples We’ve Ever Seen](http://www.wordstream.com/blog/ws/2016/04/27/value-proposition-examples)
+
+# 28.09.2016
+## R
+- Тонкий тюнинг readxl
+	- Настройка параметров импорта: ["Specifying Column Types when Importing xlsx Data to R with Package readxl"](http://stackoverflow.com/questions/31633891/specifying-column-types-when-importing-xlsx-data-to-r-with-package-readxl/31634003)
+`readxl:::xlsx_col_types(path = "a.xlsx", nskip = 116, n = 1)`
+- Как обработать колонки с отсутстующими именами (NA). См. документацию по tibble: repair_names ensures its input has non-missing and unique names (duplicated names get a numeric
+suffix). Valid names are left as is.
+- [Removing NA in dplyr pipe [duplicate]](http://stackoverflow.com/questions/26665319/removing-na-in-dplyr-pipe)
+- [Removing NA observations with dplyr::filter()](http://stackoverflow.com/questions/28857653/removing-na-observations-with-dplyrfilter)
+na.omit(), complete.cases()
+- [R FAQ. How does R handle date values?](http://www.ats.ucla.edu/stat/r/faq/dates.htm). 
+```
+as.numeric(as.Date(edates, origin = "1900-01-01"))
+[1] -3514  8415 14707
+```
+When R looks at dates as integers, its origin is January 1, 1970.
+```
+    as.numeric(as.Date(edates, origin = "1900-01-01"))
+    [1] -3514  8415 14707
+    startdate <- "1970-01-01"
+    as.numeric(as.Date(startdate))
+```
+
 # 27.09.2016
 ## R
 - [Upgrading to plotly 4.0 (and above)](http://nvxwizlsnzsgc5db.obwg65bonr4q.cmle.ru/upgrading-to-plotly-4-0-and-above/)
