@@ -1,3 +1,15 @@
+# 04.10.2016
+## R
+- LDA
+	- COOL! [A gentle introduction to topic modeling using R](https://eight2late.wordpress.com/2015/09/29/a-gentle-introduction-to-topic-modeling-using-r/)
+	- [Введение для новичков: что такое Латентное размещение Дирихле (LDA)?](https://mebius.io/analysis/intro-to-LDA). Популярно о сложном — об известнейшем методе машинного обучения под названием «Латентное размещение Дирихле».
+- [Find out more about Themescape](http://ip-science.thomsonreuters.com/winningmove/secure/TI_Themescape_QT.html)
+
+# 03.10.2016
+## R
+- [Danger, Caution H2O steam is very hot!!](https://longhowlam.wordpress.com/2016/10/01/danger-caution-h2o-steam-is-very-hot/)
+- [Some insights in soccer transfers using Market Basket Analysis](https://longhowlam.wordpress.com/2016/09/12/some-insights-in-soccer-transfers-using-market-basket-analysis/)
+
 # 29.09.2016
 ## Data Science
 - [Wakari.io](https://wakari.io/). Web-based Python Data Analysis
