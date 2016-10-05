@@ -1,9 +1,41 @@
+# 05.10.2016
+## R
+- [The Art of the Chart: Weather Radials](http://www.highcharts.com/blog/209-the-art-of-the-chart-weather-radials)
+- [Visualizing the Daily Variability of Bitcoin with Quandl and Highcharts](https://fronkonstin.com/2016/10/04/visualizing-the-daily-variability-of-bitcoin-with-quandl-and-highcharts/)
+- [Linpe: make sending and receiving data analysis faster and easier](http://www.quantide.com/linpe-make-sending-receiving-data-analysis-faster-easier/)
+- [Metrum Research Group](http://metrumrg.com/opensourcetools.html) At MRG, we are strong advocates of open-source software development efforts. In fact, we make several of the useful tools we've developed for our own work available as free, open-source software under GPL. 
+- [Example models for Stan http://mc-stan.org/](https://github.com/stan-dev/example-models). This repository holds open source Stan models, data simulators, and real data. There are models translating those found in books, most of the BUGS examples, and some basic examples used in the manual.
+
+- SaveRDS
+	- [A better way of saving and loading objects in R](http://www.fromthebottomoftheheap.net/2012/04/01/saving-and-loading-r-objects/)
+	- [saveRDS and compression](http://rpubs.com/hadley/saveRDS). Experiment by Hadley Wickham
+	- [Effect of compression type and file complexity on saveRDS size and speed](http://rpubs.com/dgrtwo/saveRDS). Experiment by David Robinson. Github [source](https://gist.github.com/dgrtwo/de967c2714e3ff490439)
+- [gather on tibble = Error: Each variable must have a unique name](https://github.com/hadley/tidyr/issues/231). It looks like one solution is to specify key and value names by myself. It's a pity that key = "key", value = "value" aren't the default parameters.
+
+## RandomForest
+- [Trees, Random Forsets, Boosting for Continuous Variable Prediction](http://rstudio-pubs-static.s3.amazonaws.com/156481_80ee6ee3a0414fd38f5d3ad33d14c771.html)
+- [Getting random forest prediction accuracy for a continuous variable in R](http://stackoverflow.com/questions/29996435/getting-random-forest-prediction-accuracy-for-a-continuous-variable-in-r)
+- COOL! [Part 4a: Modelling - predicting the amount of rain](http://theanalyticalminds.blogspot.ru/2015/04/part-4a-modelling-predicting-amount-of.html)
+- [Разработка → Препроцессинг данных и анализ моделей tutorial](https://habrahabr.ru/post/173049/)
+- COOL! [Заметки по R: Случайный лес (random forest)](http://bdemeshev.github.io/r_cycle/cycle_files/22_forest.html)
+- COOL! [Разработка → Модель Random Forest для классификации, реализация на c#](https://habrahabr.ru/post/215453/)
+- [Random Forest с примерами на R](http://www.algorithmist.ru/2012/05/random-forest-r.html)
+
+## Other
+- [Лучшие плагины для Mozilla FireFox (мой выбор)](http://sonikelf.ru/luchshie-plaginy-dlya-mozilla-firefox-ili-moj-lyubimyj-brauzer/)
+- [Logentries](https://logentries.com/). Cloud Live Log Management and Analytics
+
 # 04.10.2016
 ## R
 - LDA
 	- COOL! [A gentle introduction to topic modeling using R](https://eight2late.wordpress.com/2015/09/29/a-gentle-introduction-to-topic-modeling-using-r/)
 	- [Введение для новичков: что такое Латентное размещение Дирихле (LDA)?](https://mebius.io/analysis/intro-to-LDA). Популярно о сложном — об известнейшем методе машинного обучения под названием «Латентное размещение Дирихле».
+- [Bayesian and frequentist reasoning in plain English](http://stats.stackexchange.com/questions/22/bayesian-and-frequentist-reasoning-in-plain-english)
+- Блестящий цикла материалов про LDA:
+	- [Вероятностные модели: от наивного Байеса к LDA, часть 1](https://habrahabr.ru/company/surfingbird/blog/228249/)
+	- [Вероятностные модели: LDA, часть 2](https://habrahabr.ru/company/surfingbird/blog/230103/)
 - [Find out more about Themescape](http://ip-science.thomsonreuters.com/winningmove/secure/TI_Themescape_QT.html)
+- [Консалтинговая контора по DataScience](https://projectbotticelli.com/). Взял с конференции Микрософт:[Putting Science into the Business of Data Science](https://channel9.msdn.com/Events/Machine-Learning-and-Data-Sciences-Conference/Data-Science-Summit-2016/MSDSS05), Date: September 26, 2016, Speakers: Rafal Lukawiecki
 
 # 03.10.2016
 ## R
@@ -577,7 +609,7 @@ df2 <- data.frame(x = as.numeric(df.label$x), y = -df.label$y, text = as.charact
 am <- split(df2, 1:nrow(df2))
 a <- lapply(am, as.list)
 ```
-сообржаения
+соображения
 ```
 # list(annotation = a) дает ошибку 
 # "Error in FUN(X[[i]], ...) : 'options' must be a fully named list, or have no names (NULL)"
