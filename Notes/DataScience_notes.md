@@ -1,3 +1,43 @@
+# 07.10.2016
+## DataScience
+- [Text Mining in R and Python: 8 Tips To Get Started](https://www.datacamp.com/community/blog/text-mining-in-r-and-python-tips)
+- [BeakerTM](http://beakernotebook.com/). The Data Scientist's Laboratory
+Beaker is a notebook-style development environment for working interactively with large and complex datasets. Its plugin-based architecture allows you to switch between languages or add new ones with ease, ensuring that you always have the right tool for any of your analysis and visualization needs.
+- [Jupyter Notebook](https://jupyter.org/). Open source, interactive data science and scientific computing across over 40 programming languages.
+- DeepLearning
+	- [Computational Network Toolkit](https://www.cntk.ai/). Production-quality, Open Source, Multi-machine, Multi-GPU, Highly efficient RNN training, Speech, Image, Text
+	- [Computational Network Toolkit (CNTK)](https://github.com/Microsoft/CNTK)
+	- [Microsoft releases CNTK, its open source deep learning toolkit, on GitHub](http://blogs.microsoft.com/next/2016/01/25/microsoft-releases-cntk-its-open-source-deep-learning-toolkit-on-github/)
+
+## R
+- [Basic Forecasting Methods using R](https://gallery.cortanaintelligence.com/Notebook/Basic-Forecasting-Methods-using-R-1)
+- [R Wrong encoding in Rstudio console (but ok in R GUI and ggplot2)](http://stackoverflow.com/questions/19900668/r-wrong-encoding-in-rstudio-console-but-ok-in-r-gui-and-ggplot2). `Sys.setlocale("LC_CTYPE", "en_RU.UTF-8")` Did the job! now utf files with Cyrillic characters display properly in the R/RStudio Console. But that only seems to work until R or RStudio is restarted.
+- [UTF-8 with R Markdown, knitr and Windows](http://stackoverflow.com/questions/39022872/utf-8-with-r-markdown-knitr-and-windows?noredirect=1&lq=1)
+- [R Markdown & knitr (encoding)](https://support.rstudio.com/hc/en-us/community/posts/200635258-R-Markdown-knitr-encoding-)
+
+Под Windows консоль переключается так 9[Table of locales](https://docs.moodle.org/dev/Table_of_locales)):
+```
+Sys.setlocale("LC_CTYPE", "English")
+Sys.setlocale("LC_CTYPE", "Russian_Russia.1251")
+```
+
+
+# 06.10.2016
+## R color palettes
+- [The viridis color palettes](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html)
+- [A Wes Anderson color palette for R](https://github.com/karthik/wesanderson)
+- [Colors (ggplot2)](https://habrahabr.ru/company/piter/blog/276675/)
+- [Introducing artyfarty: a theming package for ggplot2](http://fishyoperations.com/2016/10/05/introducing-artyfarty.html)
+	- [ggplot2 theme presets](https://github.com/Bart6114/artyfarty). artyfarty focuses on providing easy access to a few 'nice' ggplot theme, it also includes a number of predefined palettes and watermark convenience functions.
+
+artyfarty is a work in progress. For now you can install the development version using devtools.
+
+## R
+- [Extract elements from nested list only using functions from purrr package](http://stackoverflow.com/questions/34751624/extract-elements-from-nested-list-only-using-functions-from-purrr-package)
+- [R Notebooks](http://rmarkdown.rstudio.com/r_notebooks.html) An R Notebook is an R Markdown document with chunks that can be executed independently and interactively, with output visible immediately beneath the input.
+NOTE: R Notebooks are new feature of RStudio, and are currently available only in the RStudio Preview Release. If you want to try out the features described below please install the preview release.
+Overview
+
 # 05.10.2016
 ## R
 - [The Art of the Chart: Weather Radials](http://www.highcharts.com/blog/209-the-art-of-the-chart-weather-radials)

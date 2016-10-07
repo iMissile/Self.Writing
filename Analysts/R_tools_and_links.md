@@ -630,11 +630,16 @@ Vega is a declarative format for creating, saving, and sharing visualization des
 - import data
 	- [Quickly reading very large tables as dataframes in R](http://stackoverflow.com/questions/1727772/quickly-reading-very-large-tables-as-dataframes-in-r)
 - [Unicode]
+	- [R Wrong encoding in Rstudio console (but ok in R GUI and ggplot2)](http://stackoverflow.com/questions/19900668/r-wrong-encoding-in-rstudio-console-but-ok-in-r-gui-and-ggplot2). `Sys.setlocale("LC_CTYPE", "en_RU.UTF-8")` Did the job! now utf files with Cyrillic characters display properly in the R/RStudio Console. But that only seems to work until R or RStudio is restarted.
 	- [RStudio Unicode support](https://support.rstudio.com/hc/en-us/articles/200532197-Character-Encoding)
+	- [Encodings and R](https://developer.r-project.org/Encodings_and_R.html)
 	- [RStudio not picking the encoding I'm telling it to use when reading a file](http://stackoverflow.com/questions/23324872/rstudio-not-picking-the-encoding-im-telling-it-to-use-when-reading-a-file)
 	- [How to source() .R file saved using UTF-8 encoding?](http://stackoverflow.com/questions/5031630/how-to-source-r-file-saved-using-utf-8-encoding)
 	- [How to set unicode locale in R?](http://stackoverflow.com/questions/20571147/how-to-set-unicode-locale-in-r)
+	- [UTF-8 with R Markdown, knitr and Windows](http://stackoverflow.com/questions/39022872/utf-8-with-r-markdown-knitr-and-windows?noredirect=1&lq=1)
 	- [Quantifying Memory: R and foreign characters](http://quantifyingmemory.blogspot.com/2013/01/r-and-foreign-characters.html)
+	- [Write file as UTF-8 encoding in R for Windows](https://tomizonor.wordpress.com/2013/04/17/file-utf8-windows/)
+	- [Table of locales](https://docs.moodle.org/dev/Table_of_locales)
 - [Warning Message Line Number R](http://stackoverflow.com/questions/15190022/warning-message-line-number-r)
 	You could try setting:
 	> options(warn=2)
