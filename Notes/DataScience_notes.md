@@ -1,3 +1,72 @@
+# 14.10.2016
+## R
+- Convert Character Vector between Encodings
+```
+iconv(x, from = "", to = "", sub = NA, mark = TRUE, toRaw = FALSE)
+iconvlist()
+```
+- [Converting a \u escaped Unicode string to ASCII](http://stackoverflow.com/questions/17761858/converting-a-u-escaped-unicode-string-to-ascii)
+- [Decode <e8> <e9> etc. characters in R](http://stackoverflow.com/questions/10110585/decode-e8-e9-etc-characters-in-r)
+- [stringi: Character String Processing Facilities](https://cran.r-project.org/web/packages/stringi/)
+	- `stri_enc_list(simplify = FALSE)`
+- [UTF-8 encoder/decoder](https://mothereff.in/utf-8)
+- [STAT 545: Regular Expression in R](http://stat545.com/block022_regular-expression.html)
+- [R: gsub of exact full string with fixed = T](http://stackoverflow.com/questions/30918550/r-gsub-of-exact-full-string-with-fixed-t)
+
+## Office & Python
+- [Use VBA SaveAs in Excel 2007-2016](http://www.rondebruin.nl/win/s5/win001.htm)
+- [Python and Microsoft Office – Using PyWin32](http://www.blog.pythonlibrary.org/2010/07/16/python-and-microsoft-office-using-pywin32/)
+
+
+# 13.10.2016
+## R
+- install.packages("RDocumentation")
+library("RDocumentation")
+Do you want to automatically load RDocumentation when you start R? [y|n] y
+Congratulations!
+R will now use RDocumentation to display your help files.
+If you're offline, R will just display your local documentation.
+To avoid automatically loading the RDocumentation package, use disable_autoload().
+If you don't want the ? and help functionality to show RDocumentation pages, use disable_override().
+- [3 Reasons to Learn Caret](https://www.datacamp.com/community/blog/3-reasons-to-learn-caret)
+- [Tutorial: Scalable R on Spark with SparkR, sparklyr and RevoScaleR](http://blog.revolutionanalytics.com/2016/10/tutorial-scalable-r-on-spark.html). [all of the materials available on Github](https://github.com/Azure/Azure-MachineLearning-DataScience/tree/master/Misc/KDDCup2016)
+- Filling in NAs with last non-NA value
+	- [R: dplyr – Update rows with earlier/previous rows values](http://www.markhneedham.com/blog/2015/06/28/r-dplyr-update-rows-with-earlierprevious-rows-values/)
+	- [Filling in NAs with last non-NA value](http://www.cookbook-r.com/Manipulating_data/Filling_in_NAs_with_last_non-NA_value/)
+	- [Replace missing value with previous value](http://stackoverflow.com/questions/14655286/replace-missing-value-with-previous-value)
+- data.frame: select column by name
+	- [how can i tell select() in dplyr that the string it is seeing is a column name in a data frame](http://stackoverflow.com/questions/22028937/how-can-i-tell-select-in-dplyr-that-the-string-it-is-seeing-is-a-column-name-i)
+	- dplyr.pdf: 
+'''
+vars <- c("Petal.Length", "Petal.Width")
+select(iris, one_of(vars))
+'''
+
+# 12.10.2016
+## Blog
+- [Top 16 Blogging Platforms For 2016](https://www.hover.com/blog/top-16-blogging-platforms-for-2016/)
+
+## R
+- [access attributes of a class in R](http://stackoverflow.com/questions/6449565/access-attributes-of-a-class-in-r)
+- [corrr 0.2.1 now on CRAN](https://drsimonj.svbtle.com/corrr-021-now-on-cran). [Using corrr](https://cran.r-project.org/web/packages/corrr/vignettes/using-corrr.html)
+
+# 11.10.2016
+## R
+- COOL! [The ggiraph package let R users to make ggplot interactive](http://davidgohel.github.io/ggiraph/introduction.html). The package is an htmlwidget.
+- [Mapping (historic) tracks in ggplot2](http://spatial.ly/2016/10/mapping-historic-tracks-ggplot2/)
+- [Streamline your analyses linking R to SAS: the workfloweR experiment](http://datascienceplus.com/streamline-your-analyses-linking-r-to-sas/)
+- [Animate maps with mapmate: R package for map- and globe-based still image sequences](https://blog.snap.uaf.edu/2016/10/10/animate-maps-with-mapmate-r-package-for-map-and-globe-based-still-image-sequences/)
+- [Shiny leaflet example](https://uasnap.shinyapps.io/ex_leaflet/) by Matthew Leonawicz
+
+# 10.10.2016
+## R
+- [Extending accessibility of open-source statistical software to the masses: A shiny case study.](http://educate-r.org//2016/10/07/canam.html) Brandon LeBeau, University of Iowa
+- [Haven](http://haven.tidyverse.org/index.html) allows you to load foreign data formats (SAS, SPSS and Stata) in to R by wrapping the fantastic ReadStat C library written by Evan Miller.
+- [R Tutorial. S3 Classes](http://www.cyclismo.org/tutorial/R/s3Classes.html)
+- [R Tutorial. S4 Classes](http://www.cyclismo.org/tutorial/R/s4Classes.html)
+- Open Source Patent Analytics. A work in progress home for the WIPO Open Source Patent Analytics Manual. [Reading and Writing an Excel File in R](http://poldham.github.io/reading-writing-excel-files-R/)
+
+
 # 07.10.2016
 ## DataScience
 - [Text Mining in R and Python: 8 Tips To Get Started](https://www.datacamp.com/community/blog/text-mining-in-r-and-python-tips)
@@ -526,7 +595,9 @@ I finish enhancements of the dual axes time series plotting function in R so it 
 
 ## Полезные функции
  - `sessionInfo()`
- - githubibstall: `gh_show_source("mutate", repo = "dplyr")` or `library(dplyr); gh_show_source(mutate)`. Show the Source Code of Functions on GitHub
+ - githubibstall: `gh_show_source("mutate", repo = "dplyr")` or `library(dplyr); gh_show_source(mutate)`. Show the Source Code of Functions on GitHub.
+По githubistall смотри: [A Helpful Way to Install R Packages Hosted on GitHub](https://cran.r-project.org/web/packages/githubinstall/vignettes/githubinstall.html);
+[A Helpful Way to Install R Packages](https://github.com/hoxo-m/githubinstall); [githubinstall 0.1.0: New Feature for A Helpful Way to Install R Packages Hosted on GitHub](http://mockquant.blogspot.ru/)
 
 # 23.08.2016
 ## R
