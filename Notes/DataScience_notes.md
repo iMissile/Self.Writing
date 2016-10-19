@@ -1,3 +1,19 @@
+# 18.10.2016
+## R
+- [Model assessment. Purrr + dplyr](http://r4ds.had.co.nz/model-assess.html)
+- [How to Manipulate Files in R](http://www.dummies.com/programming/r/how-to-manipulate-files-in-r/). Occasionally, you may want to write a script in R that will traverse a given folder and perform actions on all the data in the files or a subset of files in that folder.
+To get a list of files in a specific folder, use `list.files()` or `dir()`. These two functions do exactly the same thing, but for backward-compatibility reasons, the same function has two names
+- [Working with files and folders in R](http://www.masterdataanalysis.com/r/working-with-files-and-folders-in-r/)
+- [Find duplicated elements with dplyr](http://stackoverflow.com/questions/28244123/find-duplicated-elements-with-dplyr)
+- COOL! [Selecting columns and renaming are so easy with dplyr](https://blog.exploratory.io/selecting-columns-809bdd1ef615)
+- [replace string in R giving a vector of patterns and vector of replacements](http://stackoverflow.com/questions/28529823/replace-string-in-r-giving-a-vector-of-patterns-and-vector-of-replacements)
+
+# 17.10.2016
+## R
+- [XML XPath syntax](http://www.w3schools.com/xml/xpath_syntax.asp)
+- COOL! [How do R and Python complement each other in data science?](http://stats.stackexchange.com/questions/238726/how-do-r-and-python-complement-each-other-in-data-science)
+- [Interview with J.J. Allaire](Interview with J.J. Allaire)
+
 # 14.10.2016
 ## R
 - Convert Character Vector between Encodings
