@@ -1,3 +1,30 @@
+# 20.10.2016
+## R
+- [mutate_each / summarise_each in dplyr: how do I select certain columns and give new names to mutated columns?](http://stackoverflow.com/questions/27027347/mutate-each-summarise-each-in-dplyr-how-do-i-select-certain-columns-and-give). Как превратиь все строковые колонки в числовые?
+## RandomForest
+- [NA/NaN/Inf in foreign function call (arg 1)](https://discuss.analyticsvidhya.com/t/error-in-randomforest-default-m-y-na-nan-inf-in-foreign-function-call-arg-1-in-r/1264)
+This error generally occurs in randomForest due to the following reasons:
+	- If a variable passed is character
+	- actual NaNs and Infs
+ -[How to eliminate “NA/NaN/Inf in foreign function call (arg 7)” running predict with randomForest](http://stackoverflow.com/questions/21964078/how-to-eliminate-na-nan-inf-in-foreign-function-call-arg-7-running-predict-w)
+One cause of the error message:
+    NA/NaN/Inf in foreign function call (arg X)
+When training a randomForest is having character-class variables in your data.frame. If it comes with the warning:
+
+# 19.10.2016
+- Not well-formed XML. Undefined 'deg' entity.
+Проблема в том, что всякие &deg; не распознаются xml парсером, пока не добавишь определение всяких ENTITY. Это не проблема xml2.
+[“Reference to undefined entity” error in XML file](https://alexatnet.com/articles/reference-undefined-entity-error-xml-file)
+You may think that if entities are added into XHTML documents they can be added to XML feed too. Good idea but it will add to feed for about 30Kb of DOCTYPE definition. If it is OK, then only what you need to do is to download the following plain text files:
+	- http://www.w3.org/TR/xhtml1/DTD/xhtml-lat1.ent
+	- http://www.w3.org/TR/xhtml1/DTD/xhtml-symbol.ent
+	- http://www.w3.org/TR/xhtml1/DTD/xhtml-special.ent
+```
+<!DOCTYPE feed [
+ paste the content of xhtml-lat1.ent, 
+ xhtml-symbol.ent and xhtml-special.ent here ]>
+```
+
 # 18.10.2016
 ## R
 - [Model assessment. Purrr + dplyr](http://r4ds.had.co.nz/model-assess.html)
