@@ -1,6 +1,86 @@
+# 27.10.2016
+## R
+- [arules: Association Rule Mining with R — A Tutorial](http://michael.hahsler.net/research/arules_RUG_2015/demo/)
+- [Sharing our R Programs — With Style](http://blog.revolutionanalytics.com/2016/10/sharing-r-code-with-style.html)
+- [September Package Picks by Joseph Rickert](https://www.rstudio.com/2016/10/26/september-package-picks/)
+	- [plotwidgets : Spider Plots, ROC Curves, Pie Charts and More for Use in Other Plots](https://mran.revolutionanalytics.com/package/plotwidgets/)
+	- [Plotluck - “I’m feeling lucky” for ggplot](https://mran.revolutionanalytics.com/web/packages/plotluck/vignettes/plotluck.html)
+	- [thief : Temporal Hierarchical Forecasting](https://mran.revolutionanalytics.com/package/thief/)
+- archivist package
+	- [News from archivist 2.0 on eRum2016 conference](http://r-addict.com/2016/10/26/archivist-on-eRum2016.html)
+	- [archivist 2.0: (News from) Managing Data Analysis Results Toolkit](http://r-addict.com/eRum2016/#/). Presentation by Marcin Kosiński, October 13, 2016
+	- [archivist.github: Tools for Archiving, Managing and Sharing R Objects via GitHub](https://cran.r-project.org/web/packages/archivist.github/)
+	- [archivist and GitHub integration: archivist.github](http://r-addict.com/archivist.github/)
+	- [The list of blog-posts and conference talks about archivist](http://pbiecek.github.io/archivist/Posts.html)
+	- COOL! [All your models belong to us: how to combine package archivist and function trace()](http://smarterpoland.pl/index.php/2016/05/all-your-models-belong-to-us-how-to-combine-package-archivist-and-function-trace/)
+- [Radiant](https://github.com/radiant-rstats/radiant) is an open-source platform-independent browser-based interface for business analytics in R. The application is based on the Shiny package and can be run locally or on a server. Radiant was developed by Vincent Nijs. Please use the issue tracker on GitHub to suggest enhancements or report problems: https://github.com/radiant-rstats/radiant/issues. For other questions and comments please use radiant@rady.ucsd.edu.
+- [What's the difference between seq_len() and seq_along() in the R programming language?](https://www.quora.com/Whats-the-difference-between-seq_len-and-seq_along-in-the-R-programming-language)
+- [R: for loop iteration with seq_along vectors of a list](http://stackoverflow.com/questions/27848385/r-for-loop-iteration-with-seq-along-vectors-of-a-list)
+
+
+## Parallel R
+- [ParallelR blog](http://www.parallelr.com/blog/)
+	- [R and openMP: boosting compiled code on multi-core cpu-s](http://www.parallelr.com/r-and-openmp-boosting-compiled-code-on-multi-core-cpu-s/)
+- [Parallelism, R, and OpenMP](https://wrathematics.github.io/RparallelGuide/)
+- [CRAN Task View: High-Performance and Parallel Computing with R](https://cran.r-project.org/web/views/HighPerformanceComputing.html)
+- [A gentle introduction to parallel computing in R](http://www.win-vector.com/blog/2016/01/parallel-computing-in-r/)
+- [Running R jobs quickly on many machines](http://www.win-vector.com/blog/2016/01/running-r-jobs-quickly-on-many-machines/)
+
+# 25.10.2016
+## Collaboration
+- [Список команд чата Skype](https://habrahabr.ru/post/97561/)
+- [Минимальный почтовый сервер на основе Postfix и Dovecot. Часть 1: Dovecot](https://habrahabr.ru/post/258279/)
+- [Минимальный почтовый сервер на основе Postfix и Dovecot. Часть 2: Postfix](https://habrahabr.ru/post/258407/)
+- [Rsyslog is a rocket-fast system for log processing]http://www.rsyslog.com/doc/v8-stable/). It offers high-performance, great security features and a modular design. While it started as a regular syslogd, rsyslog has evolved into a kind of swiss army knife of logging, being able to
+	- accept inputs from a wide variety of sources,
+	- transform them,
+	- and output the results to diverse destinations.
+- [IPVS (IP Virtual Server)](http://www.linuxvirtualserver.org/software/ipvs.html) implements transport-layer load balancing inside the Linux kernel, so called Layer-4 switching. IPVS running on a host acts as a load balancer at the front of a cluster of real servers, it can direct requests for TCP/UDP based services to the real servers, and makes services of the real servers to appear as a virtual service on a single IP address.
+- [Балансировка нагрузки с LVS](https://habrahabr.ru/post/104621/)
+- [Loadbalancing / failover with IPVS and keepalived](http://blackbird.si/loadbalancing-failover-with-ipvs-and-keepalived/)
+- [Keepalived](http://www.keepalived.org/) is a routing software written in C. The main goal of this project is to provide simple and robust facilities for loadbalancing and high-availability to Linux system and Linux based infrastructures. Loadbalancing framework relies on well-known and widely used Linux Virtual Server (IPVS) kernel module providing Layer4 loadbalancing. 
+- [Amavisd](https://www.amavis.org/) is a high-performance interface between mailer (MTA) and content checkers: virus scanners, and/or SpamAssassin.
+- [ClamAV®](http://www.clamav.net/) is an open source antivirus engine for detecting trojans, viruses, malware & other malicious threats.
+
+
+## R
+- [Set Application Domain Name with Shiny Server](https://www.r-statistics.com/2016/10/set-application-domain-name-with-shiny-server/)
+- [Google spreadsheets + google forms + R = Easily collecting and importing data for analysis](https://www.r-statistics.com/2010/03/google-spreadsheets-google-forms-r-easily-collecting-and-importing-data-for-analysis/)
+
+# 24.10.2016
+## R
+- readr::read_delim
+	- Добавлена [locales](https://blog.rstudio.org/2015/10/28/readr-0-2-0/) `vignette("locales")`
+
+# 21.10.2016
+## R
+- New! [The R graph Gallery](http://www.r-graph-gallery.com/)
+- [Do Faster Data Manipulation using These 7 R Packages](https://www.analyticsvidhya.com/blog/2015/12/faster-data-manipulation-7-packages/)
+- Fast write CSV
+	- [Fast csv writing for R](http://blog.h2o.ai/2016/04/fast-csv-writing-for-r/)
+	- [Fast Writing of Data From R to txt|csv Files: readr package]
+	- [Most efficient way of exporting large (3.9 mill obs) data.frames to text file?](http://stackoverflow.com/questions/9703068/most-efficient-way-of-exporting-large-3-9-mill-obs-data-frames-to-text-file)
+	- [write.csv for large data.table in R](http://stackoverflow.com/questions/12013953/write-csv-for-large-data-table-in-r)
+
+
+
+## Anomaly
+- [Introducing practical and robust anomaly detection in a time series](https://blog.twitter.com/2015/introducing-practical-and-robust-anomaly-detection-in-a-time-series)
+- [Anomaly Detection with Twitter in R](https://anomaly.io/anomaly-detection-twitter-r/).
+- [Anomaly Detection Using Elasticsearch](http://info.prelert.com/prelert-elastic-user-group-meetup).
+- [Anomaly.io](https://anomaly.io/). Detect unusual patterns
+
+
+
+
+
 # 20.10.2016
 ## R
 - [mutate_each / summarise_each in dplyr: how do I select certain columns and give new names to mutated columns?](http://stackoverflow.com/questions/27027347/mutate-each-summarise-each-in-dplyr-how-do-i-select-certain-columns-and-give). Как превратиь все строковые колонки в числовые?
+- R & Spark
+	- [Tutorial: Scalable R on Spark with SparkR, sparklyr and RevoScaleR](http://blog.revolutionanalytics.com/2016/10/tutorial-scalable-r-on-spark.html)
+	- [KDD 2016: Scalable R on Spark](https://github.com/Azure/Azure-MachineLearning-DataScience/tree/master/Misc/KDDCup2016)
+
 ## RandomForest
 - [NA/NaN/Inf in foreign function call (arg 1)](https://discuss.analyticsvidhya.com/t/error-in-randomforest-default-m-y-na-nan-inf-in-foreign-function-call-arg-1-in-r/1264)
 This error generally occurs in randomForest due to the following reasons:
@@ -10,6 +90,12 @@ This error generally occurs in randomForest due to the following reasons:
 One cause of the error message:
     NA/NaN/Inf in foreign function call (arg X)
 When training a randomForest is having character-class variables in your data.frame. If it comes with the warning:
+
+## DevOps
+- [Когда Chef и Puppet — не решение. Часть 1](https://habrahabr.ru/post/263595/)
+- [Managing code with r10k](https://docs.puppet.com/pe/latest/r10k.html). r10k is a code management tool that allows you to manage your environment configurations (such as production, testing, and development) in a source control repository. Based on the code in your control repo branches, r10k creates environments on your master and installs and updates the modules you want in each environment.
+- [Capistrano](http://capistranorb.com/). A remote server automation and deployment tool written in Ruby.
+- [The Ultimate List of Deployment Tools](https://xebialabs.com/the-ultimate-devops-tool-chest/deployment/)
 
 # 19.10.2016
 - Not well-formed XML. Undefined 'deg' entity.
@@ -1785,7 +1871,7 @@ _Many big data problems are often small data problems **in disguise**_. Often yo
 - [Demystifying Data Science: 4 Kinds of Data Science Jobs and 8 Skills that Will Get You Hired](http://blog.udacity.com/2014/11/data-science-job-skills.html)
 - [Moscow Data Science](http://www.meetup.com/Moscow-Data-Science/). Группа для людей, занимающихся и/или интересующихся Data Science, анализом, майнингом и визуализацией структурированных и неструктурированных данных. Keywords: Data science, visualization, business analytics, predictive modeling, data mining, web analytics, business intelligence, computational finance, quant, operations research, machine learning, data analysis, data warehousing, text mining, BI.
 - [Профессия Data Scientist: как не ошибиться с выбором](https://habrahabr.ru/company/airbnb/blog/237081/)
-- [Sense.io](https://sense.io/). A Modern Platform for Data Science and Big Data Analytics.
+- [Sense.io](https://sense.io/). !! Sense is now part of Cloudera!! A Modern Platform for Data Science and Big Data Analytics.
 Go beyond BI. Accelerate data science from exploration to production using R, Python, Spark and more. Deploy pipelines and models on-premise or in the cloud.
 
 ## MQQT
