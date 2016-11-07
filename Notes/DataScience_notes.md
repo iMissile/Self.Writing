@@ -14,7 +14,44 @@ devtools::install_github("kaneplusplus/bigalgebra")
 devtools::install_github("kaneplusplus/synchronicity")
 ```
 
+## Parallel & optimization
+- [FasteR! HigheR! StrongeR! - A Guide to Speeding Up R Code for Busy People](http://www.noamross.net/blog/2013/4/25/faster-talk.html)
+- COOL [R: parallel computing in 5 minutes (with foreach and doParallel)](http://blog.aicry.com/r-parallel-computing-in-5-minutes/)
+- COOL [How-to go parallel in R – basics + tips](http://gforge.se/2015/02/how-to-go-parallel-in-r-basics-tips/). См. п. "Debugging"
+Debugging is especially hard when working in a parallelized environment. You cannot simply call browser/cat/print in order to find out what the issue is.
+	- Never use set.seed(), use clusterSetRNGStream() instead, to set the cluster seed if you want reproducible results
+- [When does foreach call .combine?](http://stackoverflow.com/questions/18704115/when-does-foreach-call-combine)
+- [foreach as List Comprehensions](ftp://cran.r-project.org/pub/R/web/packages/foreach/vignettes/foreach.pdf). см документ "Using The foreach Package"
+If you're familiar with the Python programming language, it may have occurred to you that the foreach package provides something that is not too dierent from Python's list comprehensions. In fact, the foreach package also includes a function called when which can prevent some of the evaluations from happening, very much like the \if" clause in Python's list comprehensions.
+- [“un-register” a doParallel cluster](http://stackoverflow.com/questions/25097729/un-register-a-doparallel-cluster)
+- [How can I print when using %dopar%](http://stackoverflow.com/questions/10903787/how-can-i-print-when-using-dopar)
+- [How to log when using foreach (print or futile.logger)](http://stackoverflow.com/questions/38828344/how-to-log-when-using-foreach-print-or-futile-logger)
+- [R parallel computing with snowfall - writing to files from separate workers](http://stackoverflow.com/questions/12994063/r-parallel-computing-with-snowfall-writing-to-files-from-separate-workers)
+- [How to log using futile logger from within a parallel method in R?](http://stackoverflow.com/questions/20930112/how-to-log-using-futile-logger-from-within-a-parallel-method-in-r/20952480#20952480)
+- [Shared memory in parallel foreach in R](http://stackoverflow.com/questions/31575585/shared-memory-in-parallel-foreach-in-r?rq=1)
+	- [reading global variables using foreach in R](http://stackoverflow.com/questions/18028452/reading-global-variables-using-foreach-in-r)
+	- [writing to global environment when running in parallel](http://stackoverflow.com/questions/6251662/writing-to-global-environment-when-running-in-parallel)
+- [future: A Future API for R](https://github.com/HenrikBengtsson/future). The purpose of the future package is to provide a very simple and uniform way of evaluating R expressions asynchronously using various resources available to the user.
+In programming, a future is an abstraction for a value that may be available at some point in the future. The state of a future can either be unresolved or resolved. As soon as it is resolved, the value is available instantaneously. If the value is queried while the future is still unresolved, the current process is blocked until the future is resolved. It is possible to check whether a future is resolved or not without blocking. Exactly how and when futures are resolved depends on what strategy is used to evaluate them. For instance, a future can be resolved using a "lazy" strategy, which means it is resolved only when the value is requested. Another approach is an "eager" strategy, which means that it starts to resolve the future as soon as it is created. Yet other strategies may be to resolve futures asynchronously, for instance, by evaluating expressions concurrently on a compute cluster.
+	- [Asynchronous and Distributed Programming in R with the Future Package](https://alexioannides.com/2016/11/02/asynchronous-and-distributed-programming-in-r-with-the-future-package/)
+	- [Remote Processing Using Futures](http://www.jottr.org/2016/10/remote-processing-using-futures.html)
+- [R foreach error: Unserialize(node$con) when combining results](http://stackoverflow.com/questions/33444931/r-foreach-error-unserializenodecon-when-combining-results)
+- [Problems using foreach parallelization](http://stackoverflow.com/questions/5007458/problems-using-foreach-parallelization)
+- [Parallelization in R: %dopar% vs %do%. Why using a single core yields to better performance?](http://stackoverflow.com/questions/15194465/parallelization-in-r-dopar-vs-do-why-using-a-single-core-yields-to-better)
+- [Why is the parallel package slower than just using apply?](http://stackoverflow.com/questions/14614306/why-is-the-parallel-package-slower-than-just-using-apply)
+- [Why is foreach() %do% sometimes slower than for?](http://stackoverflow.com/questions/10411871/why-is-foreach-do-sometimes-slower-than-for?noredirect=1&lq=1)
+- [Monitoring progress of a foreach parallel job](http://blog.revolutionanalytics.com/2015/02/monitoring-progress-of-a-foreach-parallel-job.html)
+- COOL! [Netcat for Windows](https://joncraton.org/blog/46/netcat-for-windows/). Netcat is a simple networking utility which reads and writes data across network connections using the TCP/IP protocol. It's a wonderful tool for debugging all kinds of network problems.
+- [Increasing the speed of {raster} processing with R](http://www.gis-blog.com/)
+	- [Part 1/3](http://www.gis-blog.com/increasing-the-speed-of-raster-processing-with-r-part-13/)
+	- [Part 2/3: Parallelisation](http://www.gis-blog.com/increasing-the-speed-of-raster-processing-with-r-part-23-parallelisation/)
+	- [Part 3/3: Cluster](http://www.gis-blog.com/increasing-the-speed-of-raster-processing-with-r-part-33-cluster/)
 
+
+
+- Полезные команды
+	- registerDoSEQ() -- выход из параллельного блока foreach (# specify that %dopar% should run sequentially)
+	- tracemem() -- This function marks an object so that a message is printed whenever the internal code copies the object. It is a major cause of hard-to-predict memory use in R.
 
 ## Other
 - [Pattern recognition for satellite imagery – Terrapattern](http://www.gis-blog.com/pattern-recognition-for-satellity-imagery-terrapattern/)
@@ -62,38 +99,6 @@ devtools::install_github("kaneplusplus/synchronicity")
 	- [Remote Processing Using Futures](http://www.jottr.org/2016/10/remote-processing-using-futures.html)
 - [ReporteRs](http://davidgohel.github.io/ReporteRs/) is an R package for creating Microsoft (Word docx and Powerpoint pptx) and html documents. It does not require any Microsoft component to be used. It runs on Windows, Linux, Unix and Mac OS systems. This is the ideal tool to automate reporting generation from R.
 	- [A quick exploration of the ReporteRs package](https://statbandit.wordpress.com/2016/10/28/a-quick-exploration-of-reporters/)
-
-## Parallel & optimization
-- [FasteR! HigheR! StrongeR! - A Guide to Speeding Up R Code for Busy People](http://www.noamross.net/blog/2013/4/25/faster-talk.html)
-- COOL [R: parallel computing in 5 minutes (with foreach and doParallel)](http://blog.aicry.com/r-parallel-computing-in-5-minutes/)
-- COOL [How-to go parallel in R – basics + tips](http://gforge.se/2015/02/how-to-go-parallel-in-r-basics-tips/). См. п. "Debugging"
-Debugging is especially hard when working in a parallelized environment. You cannot simply call browser/cat/print in order to find out what the issue is.
-	- Never use set.seed(), use clusterSetRNGStream() instead, to set the cluster seed if you want reproducible results
-- [When does foreach call .combine?](http://stackoverflow.com/questions/18704115/when-does-foreach-call-combine)
-- [foreach as List Comprehensions](ftp://cran.r-project.org/pub/R/web/packages/foreach/vignettes/foreach.pdf). см документ "Using The foreach Package"
-If you're familiar with the Python programming language, it may have occurred to you that the foreach package provides something that is not too dierent from Python's list comprehensions. In fact, the foreach package also includes a function called when which can prevent some of the evaluations from happening, very much like the \if" clause in Python's list comprehensions.
-- [“un-register” a doParallel cluster](http://stackoverflow.com/questions/25097729/un-register-a-doparallel-cluster)
-- [How can I print when using %dopar%](http://stackoverflow.com/questions/10903787/how-can-i-print-when-using-dopar)
-- [How to log when using foreach (print or futile.logger)](http://stackoverflow.com/questions/38828344/how-to-log-when-using-foreach-print-or-futile-logger)
-- [R parallel computing with snowfall - writing to files from separate workers](http://stackoverflow.com/questions/12994063/r-parallel-computing-with-snowfall-writing-to-files-from-separate-workers)
-- [How to log using futile logger from within a parallel method in R?](http://stackoverflow.com/questions/20930112/how-to-log-using-futile-logger-from-within-a-parallel-method-in-r/20952480#20952480)
-- [Shared memory in parallel foreach in R](http://stackoverflow.com/questions/31575585/shared-memory-in-parallel-foreach-in-r?rq=1)
-	- [reading global variables using foreach in R](http://stackoverflow.com/questions/18028452/reading-global-variables-using-foreach-in-r)
-- [future: A Future API for R](https://github.com/HenrikBengtsson/future). The purpose of the future package is to provide a very simple and uniform way of evaluating R expressions asynchronously using various resources available to the user.
-In programming, a future is an abstraction for a value that may be available at some point in the future. The state of a future can either be unresolved or resolved. As soon as it is resolved, the value is available instantaneously. If the value is queried while the future is still unresolved, the current process is blocked until the future is resolved. It is possible to check whether a future is resolved or not without blocking. Exactly how and when futures are resolved depends on what strategy is used to evaluate them. For instance, a future can be resolved using a "lazy" strategy, which means it is resolved only when the value is requested. Another approach is an "eager" strategy, which means that it starts to resolve the future as soon as it is created. Yet other strategies may be to resolve futures asynchronously, for instance, by evaluating expressions concurrently on a compute cluster.
-	- [Asynchronous and Distributed Programming in R with the Future Package](https://alexioannides.com/2016/11/02/asynchronous-and-distributed-programming-in-r-with-the-future-package/)
-	- [Remote Processing Using Futures](http://www.jottr.org/2016/10/remote-processing-using-futures.html)
-- [R foreach error: Unserialize(node$con) when combining results](http://stackoverflow.com/questions/33444931/r-foreach-error-unserializenodecon-when-combining-results)
-- [Problems using foreach parallelization](http://stackoverflow.com/questions/5007458/problems-using-foreach-parallelization)
-- [Parallelization in R: %dopar% vs %do%. Why using a single core yields to better performance?](http://stackoverflow.com/questions/15194465/parallelization-in-r-dopar-vs-do-why-using-a-single-core-yields-to-better)
-- [Why is the parallel package slower than just using apply?](http://stackoverflow.com/questions/14614306/why-is-the-parallel-package-slower-than-just-using-apply)
-- [Why is foreach() %do% sometimes slower than for?](http://stackoverflow.com/questions/10411871/why-is-foreach-do-sometimes-slower-than-for?noredirect=1&lq=1)
-- [Monitoring progress of a foreach parallel job](http://blog.revolutionanalytics.com/2015/02/monitoring-progress-of-a-foreach-parallel-job.html)
-- COOL! [Netcat for Windows](https://joncraton.org/blog/46/netcat-for-windows/). Netcat is a simple networking utility which reads and writes data across network connections using the TCP/IP protocol. It's a wonderful tool for debugging all kinds of network problems.
-- [Increasing the speed of {raster} processing with R](http://www.gis-blog.com/)
-	- [Part 1/3](http://www.gis-blog.com/increasing-the-speed-of-raster-processing-with-r-part-13/)
-	- [Part 2/3: Parallelisation](http://www.gis-blog.com/increasing-the-speed-of-raster-processing-with-r-part-23-parallelisation/)
-	- [Part 3/3: Cluster](http://www.gis-blog.com/increasing-the-speed-of-raster-processing-with-r-part-33-cluster/)
 
 # 27.10.2016
 ## R
