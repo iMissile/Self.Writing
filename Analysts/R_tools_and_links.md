@@ -283,6 +283,8 @@ that combine statistics and maps to inform better decision-making.
 
 
 ## Shiny etc.
+- [What is ShinyProxy?](http://www.shinyproxy.io/) ShinyProxy is your favourite way to deploy Shiny apps in an enterprise context. It has built-in functionality for LDAP authentication and authorization, makes securing Shiny traffic (over TLS) a breeze and has no limits on concurrent usage of a Shiny app. 
+	- [ShinyProxy 0.6.0 released!](https://www.openanalytics.eu/blog/shinyproxy-060-released) ShinyProxy is a novel, open source platform to deploy Shiny apps for the enterprise or larger organizations.
 - [Highcharter](http://jkunst.com/highcharter/) is a R wrapper for highcharts javascript libray and its modules. Highcharts is very mature and flexible javascript charting library and it has a great and powerful API.
 - [Using Apache SparkR to Power Shiny Applications: Part I](http://blog.sparkiq-labs.com/2015/11/22/using-apache-sparkr-to-power-shiny-applications-part-i/)
 - [Shiny articles](http://shiny.rstudio.com/articles/)
