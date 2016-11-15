@@ -1,5 +1,141 @@
+# 15.11.2016
+## DS
+- [Do data scientists use Excel?](http://datascience.stackexchange.com/questions/5443/do-data-scientists-use-excel)
+	- [European Spreadsheet Risks Interest Group - Horror Stories](http://www.eusprig.org/horror-stories.htm)
+	- [You shouldn’t use a spreadsheet for important work (I mean it)](http://www.eusprig.org/horror-stories.htm)
+	- [Microsoft's Excel Might Be The Most Dangerous Software On The Planet](http://www.forbes.com/sites/timworstall/2013/02/13/microsofts-excel-might-be-the-most-dangerous-software-on-the-planet/)
+	- [Destroy Your Data Using Excel With This One Weird Trick!](http://randyzwitch.com/excel-destroys-data/)
+	- [Excel spreadsheets are hard to get right](http://www.win-vector.com/blog/2014/11/excel-spreadsheets-are-hard-to-get-right/)
+
+## R
+- [Displaying tables as grid graphics](ftp://cran.r-project.org/pub/R/web/packages/gridExtra/vignettes/tableGrob.html)
+- [Arranging multiple grobs on a page](https://cran.r-project.org/web/packages/gridExtra/vignettes/arrangeGrob.html)
+- [ggplot2 - Easy way to mix multiple graphs on the same page](http://www.sthda.com/english/wiki/ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page-r-software-and-data-visualization)
+	- [Mix table, text and ggplot2 graphs](http://www.sthda.com/english/wiki/ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page-r-software-and-data-visualization#mix-table-text-and-ggplot2-graphs)
+	- [Add a common legend for multiple ggplot2 graphs](http://www.sthda.com/english/wiki/ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page-r-software-and-data-visualization#add-a-common-legend-for-multiple-ggplot2-graphs)
+
+
+# 14.11.2016
+## Docker
+- [Разработка → 350+ полезных ресурсов, книг и инструментов для работы с Docker](https://habrahabr.ru/company/1cloud/blog/275015/). перевод 
+
+## Python 2 or Python 3 for DataScience
+ - [Киллер-фичи Python 3](http://alxpy.com/blog/killer-features-of-python-3/), JANUARY 22, 2015
+ - [10 awesome features of Python that you can't use because you refuse to upgrade to Python 3](http://www.asmeurer.com/python3-presentation/python3-presentation.pdf)
+ - COOL! [Will Scientists Ever Move to Python 3?](https://jakevdp.github.io/blog/2013/01/03/will-scientists-ever-move-to-python-3/). March 2016: Please note the date on this post. Given the developments in the last three years, I would no longer agree with much of what I've written here. In particular, I substantially underestimated the ability of tools like six and python-future to enable single-codebase Python 2/3 support, and virtually all scientific packages now use such tools to support both. Short version: just use Python 3. There's almost no reason not to any more.
+
+## R и целые числа (Int 32)
+- COOL! [R in a 64 bit world](http://www.win-vector.com/blog/2015/06/r-in-a-64-bit-world/)
+- COOL! [My criticism of R numeric summary](http://www.win-vector.com/blog/2016/08/my-criticism-of-r-numeric-summary/#more-4319)
+- COOL! [Appendix D. What Every Computer Scientist Should Know About Floating-Point Arithmetic](http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html)
+- [Calculations precision level in R](http://stackoverflow.com/questions/18742985/calculations-precision-level-in-r)
+- [Correcting “summary” in R with appropriate # of digits of precision](http://stackoverflow.com/questions/7840073/correcting-summary-in-r-with-appropriate-of-digits-of-precision)
+
+- [Book Review: Statistics Done Wrong](http://blog.revolutionanalytics.com/2015/07/book-review-statistics-done-wrong.html) by Joseph Rickert
+
+## R
+- [Ordering categories within ggplot2 facets](https://drsimonj.svbtle.com/ordering-categories-within-ggplot2-facets)
+- [RStudio IDE Easy Tricks You Might’ve Missed](https://www.rstudio.com/rviews/2016/11/11/easy-tricks-you-mightve-missed/)
+- COOL! [Explicitly calling return in a function or not](http://stackoverflow.com/questions/11738823/explicitly-calling-return-in-a-function-or-not)
+
+## R. Solving the Task
+- [Filtering row which contains a certain string using dplyr](http://stackoverflow.com/questions/22850026/filtering-row-which-contains-a-certain-string-using-dplyr)
+- [Using dplyr mutate to find position of character in string](http://stackoverflow.com/questions/37170093/using-dplyr-mutate-to-find-position-of-character-in-string)
+- [replace NA in a dplyr chain](http://stackoverflow.com/questions/21714867/replace-na-in-a-dplyr-chain)
+- [Replace missing values](https://rdrr.io/cran/tidyr/man/replace_na.html). replace_na(data, replace = list(), ...)
+- [R ggplot2: stat_count() must not be used with a y aesthetic error in Bar graph](http://stackoverflow.com/questions/39679057/r-ggplot2-stat-count-must-not-be-used-with-a-y-aesthetic-error-in-bar-graph)
+- "Как решить задачу выравнивания осей X у разных графиков", см ссылки ниже от 26.05.16 (R), grid.draw
+
+
+## R
+- [Data Manipulation with sparklyr on Azure HDInsight](http://blog.revolutionanalytics.com/2016/11/data-manipulation-with-sparklyr-on-azure-hdinsight.html)
+# 10.11.2016
+## R
+- [Numerical Mathematics Task View devoted to "Multi-Precision Arithmetic and Symbolic Mathematics"](https://cran.r-project.org/web/views/NumericalMathematics.html)
+	- [How to work with large numbers in R?](http://stackoverflow.com/questions/22466328/how-to-work-with-large-numbers-in-r)
+- [R - How to test for character(0) in IF statement](http://stackoverflow.com/questions/25640161/r-how-to-test-for-character0-in-if-statement)
+- [What is the difference between NULL and character(0) in R?](http://stackoverflow.com/questions/7195248/what-is-the-difference-between-null-and-character0-in-r)
+
+# 09.11.2016
+## R
+- [R Views: an R Community Blog](https://www.rstudio.com/rviews/)
+
+## Availability
+- [Reliability and availability basics](http://www.eventhelix.com/RealtimeMantra/FaultHandling/reliability_availability_basics.htm)
+- [System Reliability and Availability](http://www.eventhelix.com/RealtimeMantra/FaultHandling/system_reliability_availability.htm)
+- [Failure Rates, MTBFs, and All That](http://www.mathpages.com/home/kmath498/kmath498.htm)
+- [Infinite Parallel Redundancy](http://www.mathpages.com/home/kmath326/kmath326.HTM)
+- [Mean Time Between Failures & Mean Time To Repair](http://world-class-manufacturing.com/KPI/mtbf.html)
+- [MTBF online calculator](http://www.pixelbeat.org/docs/reliability_calculator/)
+
+# 08.11.2016
+## R
+- [The Lab-R-torian blog](http://labrtorian.com)
+	- [Make Easy Heatmaps to Visualize your Turnaround Times](http://labrtorian.com/2016/09/08/make-easy-heatmaps-to-visualize-your-turnaround-times/)
+	- [Conditional Formatting of a Table in R](http://labrtorian.com/2016/11/07/conditional-formatting-of-a-table-in-r/)
+- [Useful tools for shiny developers in the new version of shinyjs](http://deanattali.com/blog/shinyjs-v08/)
+- [avoid string printed to console getting truncated (in RStudio)](http://stackoverflow.com/questions/36800475/avoid-string-printed-to-console-getting-truncated-in-rstudio)
+- [list output truncated - How to expand listed variables with str() in R](http://stackoverflow.com/questions/28895044/list-output-truncated-how-to-expand-listed-variables-with-str-in-r):
+You can use the argument list.len: `str(df, list.len=ncol(df))`
+
+## Encodings & web scrapping
+- [Selector Gadget](http://selectorgadget.com/)
+- [Best practices for writing an API package](https://cran.r-project.org/web/packages/httr/vignettes/api-packages.html)
+- [httr quickstart guide](https://cran.r-project.org/web/packages/httr/vignettes/quickstart.html)
+- [httr: a friendly http package for R](https://github.com/hadley/httr)
+- [Force character vector encoding from “unknown” to “UTF-8” in R](http://stackoverflow.com/questions/23699271/force-character-vector-encoding-from-unknown-to-utf-8-in-r). 
+To check whether each string consists of valid UTF-8 byte sequences, call: `all(stri_enc_isutf8(poli.dt$word))`
+- [Encoding issue while scraping website in R](http://stackoverflow.com/questions/33012907/encoding-issue-while-scraping-website-in-r)
+- [R rvest encoding errors with UTF-8](http://stackoverflow.com/questions/37867465/r-rvest-encoding-errors-with-utf-8)
+- [R: rvest - is not proper UTF-8, indicate encoding?](http://stackoverflow.com/questions/32833894/r-rvest-is-not-proper-utf-8-indicate-encoding)
+- [encoding issues with rvest, “Â ” appearing instead of a space in character strings](http://stackoverflow.com/questions/37903528/encoding-issues-with-rvest-%C3%82-appearing-instead-of-a-space-in-character-strin)
+- [Using rvest to Scrape an HTML Table](http://blog.corynissen.com/2015/01/using-rvest-to-scrape-html-table.html)
+- [How to Scrape Japanese Text Using the rvest Package](http://masterr.org/r/how-to-scrape-Japanese-text-using-rvest/)
+- [Web scraping with `rvest` in R](http://francojc.github.io/web-scraping-with-rvest/)
+- [HTML Widgets: Advanced Topics](https://cran.r-project.org/web/packages/htmlwidgets/vignettes/develop_advanced.html)
+- [rvest tutorial: scraping the web using R](rvest tutorial: scraping the web using R)
+- Javascript generated pages
+	- [Scraping Javascript generated data](http://stackoverflow.com/questions/15330393/scraping-javascript-generated-data)
+	- [Short R tutorial: Scraping Javascript Generated Data with R](https://www.datacamp.com/community/tutorials/scraping-javascript-generated-data-with-r)
+	- [download javascript-loading data from the web using R? tricky web scraping](http://stackoverflow.com/questions/27993898/download-javascript-loading-data-from-the-web-using-r-tricky-web-scraping)
+	- [CasperJS](http://casperjs.org/). Navigation scripting & testing for PhantomJS and SlimerJS
+	- [mozilla/geckodriver](https://github.com/mozilla/geckodriver). WebDriver <-> Marionette proxy 
+	- [RSelenium: R Bindings for Selenium WebDriver](https://cran.r-project.org/web/packages/RSelenium/index.html)
+	- [How to drive a Web browser with R (and RSelenium)](http://www.computerworld.com/article/2971265/application-development/how-to-drive-a-web-browser-with-r-and-rselenium.html)
+	- [Trying to run RSelenium (Windows 7/ Mac OS X)](http://stackoverflow.com/questions/32129427/trying-to-run-rselenium-windows-7-mac-os-x). [1] "Connecting to remote server" Undefined error in RCurl call.
+	- [webscraping with Selenium - part 1](http://thiagomarzagao.com/2013/11/12/webscraping-with-selenium-part-1/)
+	- [Scraping gnarly sites with phantomjs & rvest](https://gist.github.com/hrbrmstr/dc62bb2b35617e9badc5)
+	- [Web-Scraping JavaScript rendered Sites](https://flovv.github.io/Scrape-JS-Sites/)
+	- [Scrape webpage with phantomjs and rvest](http://stackoverflow.com/questions/35446515/scrape-webpage-with-phantomjs-and-rvest)
+	- [How to scrape all the hotel reviews from HolidayIQ using Rvest and phantomJS](http://stackoverflow.com/questions/36152621/how-to-scrape-all-the-hotel-reviews-from-holidayiq-using-rvest-and-phantomjs)
+
+## RSelenium
+1. Качаем Selenium
+1. Качаем RSelenium: `devtools::install_github("ropensci/RSelenium")`
+1. Качаем WebDriver, кладем в PATH (лучше рядом). [ChromeDriver - WebDriver for Chrome](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+1. Запускаем `remDr <- remoteDriver(browserName = "chrome")`, описание здесь:[RSelenium: Driving OS/Browsers local and remote](https://cran.r-project.org/web/packages/RSelenium/vignettes/RSelenium-saucelabs.html)
+
+
+
+## Google
+- [Как обезопасить аккаунт, который был взломан в прошлом?](https://productforums.google.com/forum/?utm_medium=email&utm_source=footer#!topic/gmail-ru/XK2-BLWfWKs)
+- [где в gmail находится архив? я отправил письма в архив и теперь не могу их найти](https://productforums.google.com/forum/#!topic/gmail-ru/ByqLwh1laVQ)
+'-is:chat -in:draft -in:trash -in:inbox -in:sent -in:spam -is:starred'
+
+- [iOS, url schemes](http://ios-swift-dev.blogspot.ru/2016/05/url-schemes.html): 
+Name - Gmail
+com.google.sso.390630100053://
+com.google.sso.532713016892-ev29m8tv9gejefcvvv1o3coj5bhkc1ar://
+googlegmail://
+googlegmail-x-callback:// 
+
 # 07.11.2016
 ## R
+- [Rocker - explanation and motivation for Docker containers usage in applications development](http://r-addict.com/2016/10/03/Rocker-Presentation-eRka10.html)
+	- [Rocker: explanation and motivation for Docker containers usage in applications development](http://r-addict.com/eRka10/#/). Marcin Kosiński. September 30, 2016
+	- Font Awesome. [Cheatsheet](http://fontawesome.io/cheatsheet/). The complete Font Awesome 4.7.0 icon reference
+- [R Markdown Format for reveal.js Presentations](https://github.com/rstudio/revealjs)
+- RStudio. [Presentations with reveal.js](http://rmarkdown.rstudio.com/revealjs_presentation_format.html)
 - [A Simple Guide to S3 Methods](http://www.njtierney.com/r/missing%20data/rbloggers/2016/11/06/simple-s3-methods/). [Драфт](https://arxiv.org/abs/1608.07161) публикации
 - [Evaluating the Design of the R Language](http://r.cs.purdue.edu/pub/ecoop12.pdf)
 - [Timeseries forecasting using extreme gradient boosting](http://ellisp.github.io/blog/2016/11/06/forecastxgb).
@@ -27,8 +163,8 @@ If you're familiar with the Python programming language, it may have occurred to
 - [How can I print when using %dopar%](http://stackoverflow.com/questions/10903787/how-can-i-print-when-using-dopar)
 - [How to log when using foreach (print or futile.logger)](http://stackoverflow.com/questions/38828344/how-to-log-when-using-foreach-print-or-futile-logger)
 - [R parallel computing with snowfall - writing to files from separate workers](http://stackoverflow.com/questions/12994063/r-parallel-computing-with-snowfall-writing-to-files-from-separate-workers)
-- [How to log using futile logger from within a parallel method in R?](http://stackoverflow.com/questions/20930112/how-to-log-using-futile-logger-from-within-a-parallel-method-in-r/20952480#20952480)
-- [Shared memory in parallel foreach in R](http://stackoverflow.com/questions/31575585/shared-memory-in-parallel-foreach-in-r?rq=1)
+- [How to log using futile logger from within a parallel method in R?](http://stackoverflow.com/questions/20930112/how-to-log-using-futile-logger-from-within-a-parallel-method-in-r)
+- [Shared memory in parallel foreach in R](http://stackoverflow.com/questions/31575585/shared-memory-in-parallel-foreach-in-r)
 	- [reading global variables using foreach in R](http://stackoverflow.com/questions/18028452/reading-global-variables-using-foreach-in-r)
 	- [writing to global environment when running in parallel](http://stackoverflow.com/questions/6251662/writing-to-global-environment-when-running-in-parallel)
 - [future: A Future API for R](https://github.com/HenrikBengtsson/future). The purpose of the future package is to provide a very simple and uniform way of evaluating R expressions asynchronously using various resources available to the user.
@@ -39,7 +175,7 @@ In programming, a future is an abstraction for a value that may be available at 
 - [Problems using foreach parallelization](http://stackoverflow.com/questions/5007458/problems-using-foreach-parallelization)
 - [Parallelization in R: %dopar% vs %do%. Why using a single core yields to better performance?](http://stackoverflow.com/questions/15194465/parallelization-in-r-dopar-vs-do-why-using-a-single-core-yields-to-better)
 - [Why is the parallel package slower than just using apply?](http://stackoverflow.com/questions/14614306/why-is-the-parallel-package-slower-than-just-using-apply)
-- [Why is foreach() %do% sometimes slower than for?](http://stackoverflow.com/questions/10411871/why-is-foreach-do-sometimes-slower-than-for?noredirect=1&lq=1)
+- [Why is foreach() %do% sometimes slower than for?](http://stackoverflow.com/questions/10411871/why-is-foreach-do-sometimes-slower-than-for)
 - [Monitoring progress of a foreach parallel job](http://blog.revolutionanalytics.com/2015/02/monitoring-progress-of-a-foreach-parallel-job.html)
 - COOL! [Netcat for Windows](https://joncraton.org/blog/46/netcat-for-windows/). Netcat is a simple networking utility which reads and writes data across network connections using the TCP/IP protocol. It's a wonderful tool for debugging all kinds of network problems.
 - [Increasing the speed of {raster} processing with R](http://www.gis-blog.com/)
@@ -56,6 +192,7 @@ In programming, a future is an abstraction for a value that may be available at 
 ## Other
 - [Pattern recognition for satellite imagery – Terrapattern](http://www.gis-blog.com/pattern-recognition-for-satellity-imagery-terrapattern/)
 - [Plot Google Maps images in R using geocoding {dismo}](http://www.gis-blog.com/plot-google-maps-images-in-r-using-geocoding-dismo/)
+- [Visual Studio for Mac - Introducing Visual Studio for Mac](https://msdn.microsoft.com/en-us/magazine/mt790182.aspx)
 
 
 # 03.11.2016
