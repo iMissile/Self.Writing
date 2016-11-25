@@ -1,3 +1,215 @@
+# 25.11.2016
+## DS
+- [import of a opj file (Origin)](http://mathematica.stackexchange.com/questions/92745/import-of-a-opj-file-origin)
+- [The Origin® Link for Mathematica®](http://www.originlab.com/doc/Origin-Help/ExternalAPP-Mathematica-Link) tool provides access to Mathematica from within Origin. The tool allows the Origin user to exchange worksheet and matrix data between Origin and Mathematica, to evaluate Mathematica expressions, and to create Origin graphs using Mathematica functions.
+To utilize the tool from Origin, you'd better have Mathematica version 8 or higher (minimum support version is 4.2) installed on your computer either as a local or network copy.
+- [23.5.1 Data Analysis in Origin with R Console](http://www.originlab.com/doc/Origin-Help/Analysis-Origin-Rconsole)
+- [EventStudio System Designer 6](http://eventhelix.com/). Model object and message interactions in text. Visualize with sequence diagrams and context diagrams.
+- [What are eTOM and TAM? Should you be using them?](http://www.ossline.com/2014/05/what-are-etom-and-tam-should-you-be-using-them.html)
+
+# 24.11.2016
+## R
+- [Reading data from google sheets into R](http://www.opiniomics.org/reading-data-from-google-sheets-into-r/)
+- COOL! [Announcing ggforce: Accelerating ggplot2](http://www.data-imaginist.com/2016/Announcing-ggforce/). Репозиторий [здесь](https://github.com/thomasp85/ggforce)
+- [October Package Picks](https://www.rstudio.com/rviews/2016/11/23/october-package-picks/) by Joseph Rickert
+
+# 23.11.2016
+## Open-Source
+- [It's an open-source world: ​78 percent of companies run open-source software](http://www.zdnet.com/article/its-an-open-source-world-78-percent-of-companies-run-open-source-software/)
+Black Duck Software and North Bridge's survey found open-source software in businesses everywhere, but few are managing it worth a darn.
+- [2016 Future of Open Source Survey Results](http://www.slideshare.net/blackducksoftware/2016-future-of-open-source-survey-results)
+
+# 22.11.2016
+## DS
+- [Web Scraper](http://webscraper.io/). Web Scraper is a company specializing in data extraction from web pages. We offer 2 great options for our users. Our free Google Chrome Extension, and our Enterprise Data Extraction Service.]
+- [Tune Machine Learning Algorithms in R (random forest case study)](http://machinelearningmastery.com/tune-machine-learning-algorithms-in-r/) TuneRF.
+
+## e-books
+- [Essays on the formal aspects of electromagnetic theory](http://gen.lib.rus.ec/book/index.php?md5=1549856b87339e19788ed724f5e32ff9) by Akhlesh Lakhtakia
+	- [at Libgen.io](http://libgen.io/ads.php?md5=1549856B87339E19788ED724F5E32FF9)
+
+# 21.11.2016
+## R
+- [Tracking progress in R](https://kevinkuang.net/tracking-progress-in-r-ad97998c359f#.2y2rp9kv0). An better (and still easy) solution is to adopt a package named pbapply. According to its dev page, the package has been very popular — 90k downloads.
+	- [Tracking the progress of mc*apply with progress bar](https://github.com/kvnkuang/pbmcapply)
+- [Bayesian Blood](https://fronkonstin.com/2016/11/17/bayesian-blood/)
+- [Source code files for the book Reproducible Research with R/RStudio http://christophergandrud.github.io/RepResR-RStudio/](https://github.com/christophergandrud/Rep-Res-Book)
+- [CommandCenter2000!](https://github.com/mexindian/CommandCenter). This repo helps track R jobs
+- [How to change language settings in R](http://stackoverflow.com/questions/13575180/how-to-change-language-settings-in-r). You can set this using the Sys.setenv() function. My R session defaults to English, so I'll set it to French and then back again:
+```
+> Sys.setenv(LANG = "fr")
+> 2 + x
+Erreur : objet 'x' introuvable
+> Sys.setenv(LANG = "en")
+> 2 + x
+Error: object 'x' not found
+```
+- [RStudio: Using Different Versions of R](https://support.rstudio.com/hc/en-us/articles/200486138-Using-Different-Versions-of-R)
+
+## R & Access
+Прикольно, но удалось решить эту задачку без танцев с бубном, только посредством установки доп. драйверов. Непонятно почему.
+1. Установил Microsoft Access Database Engine 2010 Redistributable. [x64!](https://www.microsoft.com/en-us/download/confirmation.aspx?id=13255). При этом у меня стоит Office365 x32.
+2.
+```
+library("RODBC") #load package
+
+# эксперимент №1: https://gist.github.com/dainiuxt/23ce714e0deedc8da9a0
+
+Sys.setenv(LANG = "en")
+db <- file.path("./data/Access2007PureSQL.accdb") #connect database.
+# normalizePath(db, winslash="/")
+# db <- file.path("Access2007PureSQL.accdb") #connect database.
+
+#Note the UNIX style slash (/). "\" is "escape character" so all "\"you should replace either with "/" or "\\"
+# channel <- odbcConnectAccess2007(db) #internal RODBC function
+# outputFile = paste(normalizePath(dirname(inputFile)),"\\", "my_file.ext", sep = "")
+# Error in odbcConnectAccess(db): odbcConnectAccess is only usable with 32-bit Windows
+channel <- odbcConnectAccess2007(db) #internal RODBC function
+
+table_list <- sqlTables(channel) # запросим список таблиц
+dataSetName <- sqlFetch(channel, "Products") #read particular table from Access database file.
+close(channel) #do not forget this, otherwise you lock access database from editing.
+```
+- [R RODBC Show all tables](http://stackoverflow.com/questions/31521908/r-rodbc-show-all-tables)
+
+Общая проблема: доступ к access базе можно обеспечить только через 32-х битный драйвер, а его может использовать только 32-х битный R
+- [How to connect R with Access database in 64-bit Window?](http://stackoverflow.com/questions/13070706/how-to-connect-r-with-access-database-in-64-bit-window). Запуск отдельного процесса и общение через сокеты.
+- [How to Connect to an MS Access database in R](http://rprogramming.net/connect-to-ms-access-in-r/)
+- [Query MS Access DB from R with 64-bit Windows](http://stackoverflow.com/questions/36160751/query-ms-access-db-from-r-with-64-bit-windows)
+- [Connect MS Access database to R (RStudio) in Windows](https://gist.github.com/dainiuxt/23ce714e0deedc8da9a0)
+- [Microsoft Access Database Engine 2010 Redistributable](https://www.microsoft.com/en-us/download/details.aspx?id=13255). I think the problem is as error message suggests - you don't have x64 Microsoft Access driver installed. Check it in **Control panel - ODBC Data Sources (x64)** on the Drivers tab. If it's not there, try to install Microsoft Access Database Engine 2010 Redistributable.
+- [Using 64-bit Applications with Microsoft Access Database Files](https://www.altova.com/Access-Database-OLEDB-32bit-64bit.html). **There is currently an unfortunate limitation of the 64-bit ACE driver – it cannot co-exist with 32-bit versions of Microsoft Office.**
+- Steps to use, assuming 32 bit Access on windows 8
+	- Select 32 bit R (is just a setting in R studio)
+	- search on windows for Set up ODBC data sources (32 bit)
+	- Go to System DSN>Add
+	- Choose Driver do Microsoft Access (*.mdb) > Finish
+	- Data source name: ProjecnameAcc
+	- Description: ProjectnameAcc
+	- Make sure to actually select the database > OK
+Now I could run the code that I liked
+```
+channel <- odbcConnect("ProjectnameAcc")
+Table1Dat <- sqlFetch(channel, "Table1")
+```
+
+
+## R. Solving the Task
+- [Filtering row which contains a certain string using dplyr](http://stackoverflow.com/questions/22850026/filtering-row-which-contains-a-certain-string-using-dplyr)
+- [Using dplyr mutate to find position of character in string](http://stackoverflow.com/questions/37170093/using-dplyr-mutate-to-find-position-of-character-in-string)
+- [replace NA in a dplyr chain](http://stackoverflow.com/questions/21714867/replace-na-in-a-dplyr-chain)
+- [Replace missing values](https://rdrr.io/cran/tidyr/man/replace_na.html). replace_na(data, replace = list(), ...)
+- [R ggplot2: stat_count() must not be used with a y aesthetic error in Bar graph](http://stackoverflow.com/questions/39679057/r-ggplot2-stat-count-must-not-be-used-with-a-y-aesthetic-error-in-bar-graph)
+- "Как решить задачу выравнивания осей X у разных графиков", см ссылки ниже от 26.05.16 (R), grid.draw
+- [Listing all files matching a full-path pattern in R](http://stackoverflow.com/questions/10353540/listing-all-files-matching-a-full-path-pattern-in-r)
+- [Regular expression to match line that doesn't contain a word?](http://stackoverflow.com/questions/406230/regular-expression-to-match-line-that-doesnt-contain-a-word)
+- [Cookbook for R >> Basics Working with NULL, NA, and NaN](http://www.cookbook-r.com/Basics/Working_with_NULL_NA_and_NaN/)
+- [na.omit() for lists in R]()https://gist.github.com/rhochreiter/7029236): `na.omit.list <- function(y) { return(y[!sapply(y, function(x) all(is.na(x)))]) }`
+- [Simplest way to get rbind to ignore column names](http://stackoverflow.com/questions/19297475/simplest-way-to-get-rbind-to-ignore-column-names)
+- [Reordering columns in a large dataframe](http://stackoverflow.com/questions/18339370/reordering-columns-in-a-large-dataframe). To move specific columns to the beginning or end of a data.frame, use select from the dplyr package and its everything() function. In this example we are sending to the end:
+```
+library(dplyr)
+df %>%
+  select(-b, -c, everything())
+```
+- [normalizePath {base}: Express File Paths in Canonical Form](https://stat.ethz.ch/R-manual/R-devel/library/base/html/normalizePath.html)
+- [How do I get the absolute path of an input file in R](http://stackoverflow.com/questions/13311180/how-do-i-get-the-absolute-path-of-an-input-file-in-r)
+
+# 18.11.2016
+## R & Excel
+Не все файлы excel, особенно сформированные во внешних BI, могут быть прочитаны сторонними парсерами.
+Например, при открытии xls файла, присланного Казариным, получаем такую ошибку: `zip file './data-verification/022 - Отчет о см. ст. по ОКС (Отчет №3).xls' cannot be opened`
+
+- [Problem reading some xlsx - Error: Couldn't find 'xl/worksheets/sheet1.xml'](https://github.com/hadley/readxl/issues/80)
+- [Unwanted *printed* output from read_excel](https://github.com/hadley/readxl/issues/82) `DEFINEDNAME: 21 00 00 01 0`. Suggested [Workaround](https://github.com/hadley/readxl/issues/82#issuecomment-166767220)
+- [Bad Zip File Error from reading XLS files](https://community.qlik.com/thread/75785)
+
+
+# 17.11.2016
+## R
+- [dplyr & r: Anonymous functions myst be parenthesized](http://stackoverflow.com/questions/28074797/dplyr-r-anonymous-functions-myst-be-parenthesized)
+- [Convenient Data Exchange between R and Microsoft Excel](https://github.com/gdemin/excel.link). The excel.link package mainly consists of two rather independent parts: one is for transferring data/graphics to running instance of Excel, another part - work with data table in Excel in similar way as with usual data.frame.
+
+
+# 16.11.2016
+## DS
+- [Introducing the Team Data Science Process from Microsoft](https://blogs.technet.microsoft.com/machinelearning/2016/10/11/introducing-the-team-data-science-process-from-microsoft/)
+- [Probability Distributions Library for JavaScript](http://statisticsblog.com/probability-distributions/)
+- COOL! [Why you need version control](http://ellisp.github.io/blog/2016/09/16/version-control)
+
+## R Markdown & Notebooks
+- [My table looks better than yours](https://www.stat.ubc.ca/~jenny/STAT545A/topic10_tablesCSS.html)
+- [pander: An R Pandoc Writer](http://rapporter.github.io/pander/)
+- [R Code Chunks](http://rmarkdown.rstudio.com/authoring_rcodechunks.html)
+- COOL! [Render reports directly from R scripts](http://brooksandrew.github.io/simpleblog/articles/render-reports-directly-from-R-scripts/)
+	- [A collection of css themes for Markdown http://jasonm23.github.io/markdown-css-themes/](https://github.com/jasonm23/markdown-css-themes)
+	- [Markdown css themes Preview](http://jasonm23.github.io/markdown-css-themes/)
+
+## R
+- [Introducing R-hub, the R package builder service](http://blog.revolutionanalytics.com/2016/10/r-hub-public-beta.html)
+	- [The r-hub builder](https://builder.r-hub.io/)
+- rJava: версия R и версия Java должны совпадать (либо оба x86, либо оба x64)
+	- [package or namespace load failed for ‘rJava’ #49]
+	- [R - Error: .onLoad failed in loadNamespace() for 'rJava'](http://stackoverflow.com/questions/37735108/r-error-onload-failed-in-loadnamespace-for-rjava)
+This error is often resolved by installing a Java version (i.e. 64-bit Java or 32-bit Java) that fits to the type of R version that you are using (i.e. 64-bit R or 32-bit R). This problem can easily effect Windows 7 users, since they might have installed a version of Java that is different than the version of R they are using.
+Note that it is necessary to ‘manually download and install’ the 64 bit version of JAVA. By default, the download page gives a 32 bit version .
+You can pick the exact version of Java you wish to install from this link. If you might (for some reason) work on both versions of R, you can install both version of Java (Installing the “Java Runtime Environment” is probably good enough for your needs). (Source: Uwe Ligges)
+Other possible solutions is trying to re-install rJava.
+If that doesn’t work, you could also manually set the directory of your Java location by setting it before loading the library:
+```
+Sys.setenv(JAVA_HOME='C:\\Program Files\\Java\\jre7') # for 64-bit version
+Sys.setenv(JAVA_HOME='C:\\Program Files (x86)\\Java\\jre7') # for 32-bit version
+library(rJava)
+```
+
+## R ggplot
+- [ggedit – interactive ggplot aesthetic and theme editor](https://www.r-statistics.com/2016/11/ggedit-interactive-ggplot-aesthetic-and-theme-editor/)
+- Диагностика графических объектов: `library(gtable) gtable_show_layout(ggplotGrob(gp2))`
+- [Align multiple ggplot graphs with and without legends](http://stackoverflow.com/questions/26159495/align-multiple-ggplot-graphs-with-and-without-legends)
+- [baptiste/gridextra: arranging ggplot](https://github.com/baptiste/gridextra/wiki/arranging-ggplot)
+- [R grid.arrange: nrow * ncol >= n is not TRUE](http://stackoverflow.com/questions/33694159/r-grid-arrange-nrow-ncol-n-is-not-true)
+- [Combine plots that have a legend with one that doesn't](http://stackoverflow.com//questions/38017042/combine-plots-that-have-a-legend-with-one-that-doesnt). Разбираются с ошибкой `Error: ncol(x) == ncol(y) is not TRUE`. The reason you are getting the error is because one of your 3 gtable objects has 5 columns while the other has 6 (the p.3 object has 5 because you exclude the legend). You can check out the different layouts of the gtable objects by doing:
+```
+library(gtable)
+gtable_show_layout(ggplotGrob(p.1))
+gtable_show_layout(ggplotGrob(p.2))
+gtable_show_layout(ggplotGrob(p.3))
+```
+- [Displaying tables as grid graphics](ftp://cran.r-project.org/pub/R/web/packages/gridExtra/vignettes/tableGrob.html)
+- [Arranging multiple grobs on a page](https://cran.r-project.org/web/packages/gridExtra/vignettes/arrangeGrob.html)
+- [ggplot2 - Easy way to mix multiple graphs on the same page](http://www.sthda.com/english/wiki/ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page-r-software-and-data-visualization)
+	- [Mix table, text and ggplot2 graphs](http://www.sthda.com/english/wiki/ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page-r-software-and-data-visualization#mix-table-text-and-ggplot2-graphs)
+	- [Add a common legend for multiple ggplot2 graphs](http://www.sthda.com/english/wiki/ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page-r-software-and-data-visualization#add-a-common-legend-for-multiple-ggplot2-graphs)
+- Как решить задачу выравнивания осей X у разных графиков
+	- [Align a double line chart and a bar plot on the x axis when both charts have the same X axis. ggplot2](http://stackoverflow.com/questions/31573288/align-a-double-line-chart-and-a-bar-plot-on-the-x-axis-when-both-charts-have-the)
+	- [Align x axes of box plot and line plot using ggplot](http://stackoverflow.com/questions/30402930/align-x-axes-of-box-plot-and-line-plot-using-ggplot)
+	- [Formatting dates on X axis in ggplot2](http://stackoverflow.com/questions/11748384/formatting-dates-on-x-axis-in-ggplot2)
+	- [ggplot bar chart for time series](http://stackoverflow.com/questions/28557393/ggplot-bar-chart-for-time-series)
+	- [Align multiple ggplot2 graphs with a common x axis and different y axes, each with different y-axis labels](https://gist.github.com/tomhopper/faa24797bb44addeba79)
+	- [using ggsave and arrangeGrob after updating gridExtra to 2.0.0](http://stackoverflow.com/questions/33823361/using-ggsave-and-arrangegrob-after-updating-gridextra-to-2-0-0)
+	- [gridExtra github](https://github.com/baptiste/gridextra)
+Какие тут есть соображения (из ссылок сверху)
+1. you have to equalize the plot widths `Bar_plot$widths <-Line_plot$widths `. But in general you also need to equalize the plot widths. If, for example, the y labels on one of the plots take up more space than on the other, even if you use the same axis on each plot, they will not line up when passed to grid.arrange. Соображения [здесь](http://stackoverflow.com/questions/30402930/align-x-axes-of-box-plot-and-line-plot-using-ggplot)
+2. with the dev version of gridExtra, I would do `grid.draw(join(g1, g2, along=2))`. Соображения [здесь](http://stackoverflow.com/questions/31573288/align-a-double-line-chart-and-a-bar-plot-on-the-x-axis-when-both-charts-have-the)
+3. The gridlines on the x axes will be aligned if you use `scale_x_continuous` to force ggplot to use limits you specify. Now, when you add the layers, the axes will share the common scaling. Соображения [здесь](http://stackoverflow.com/questions/30402930/align-x-axes-of-box-plot-and-line-plot-using-ggplot)
+- [Setting limits with scale_x_datetime and time data](http://stackoverflow.com/questions/30607514/setting-limits-with-scale-x-datetime-and-time-data). 
+I want to set bounds for the x-axis for a plot of time-series data which features only time (no dates). My limits are:
+```
+lims <- strptime(c("03:00","16:00"), format = "%H:%M")
+```
+And my ggplot prints fine, but when I add this to scale_x_datetime`scale_x_datetime(limits = lims)`
+I get Error: `Invalid input: time_trans works with objects of class POSIXct only`
+>> the error message says that you should use as.POSIXct on lims. You also need to add the date (year, month and day) in lims, because by default it will be `2015, which is off limits.
+
+## Revolution Analytics
+Recommended Sites
+- [FlowingData](http://flowingdata.com/). Modern data visualization
+- [One R Tip A Day](http://onertipaday.blogspot.com/). Code examples for graphics and analysis
+- [Probability and statistics blog](http://www.statisticsblog.com/). Monte Carlo simulations in R
+- [R Bloggers](http://www.r-bloggers.com/). Daily news and tutorials about R, contributed by R bloggers worldwide.
+- [R Project group on analyticbridge.com](http://www.analyticbridge.com/group/rprojectandotherfreesoftwaretools). Community and discussion forum
+- [Statistical Modeling, Causal Inference, and Social Science](http://www.stat.columbia.edu/~cook/movabletype/mlm/). Andrew Gelman's statistics blog
+
 # 15.11.2016
 ## DS
 - [Do data scientists use Excel?](http://datascience.stackexchange.com/questions/5443/do-data-scientists-use-excel)
@@ -6,13 +218,6 @@
 	- [Microsoft's Excel Might Be The Most Dangerous Software On The Planet](http://www.forbes.com/sites/timworstall/2013/02/13/microsofts-excel-might-be-the-most-dangerous-software-on-the-planet/)
 	- [Destroy Your Data Using Excel With This One Weird Trick!](http://randyzwitch.com/excel-destroys-data/)
 	- [Excel spreadsheets are hard to get right](http://www.win-vector.com/blog/2014/11/excel-spreadsheets-are-hard-to-get-right/)
-
-## R
-- [Displaying tables as grid graphics](ftp://cran.r-project.org/pub/R/web/packages/gridExtra/vignettes/tableGrob.html)
-- [Arranging multiple grobs on a page](https://cran.r-project.org/web/packages/gridExtra/vignettes/arrangeGrob.html)
-- [ggplot2 - Easy way to mix multiple graphs on the same page](http://www.sthda.com/english/wiki/ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page-r-software-and-data-visualization)
-	- [Mix table, text and ggplot2 graphs](http://www.sthda.com/english/wiki/ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page-r-software-and-data-visualization#mix-table-text-and-ggplot2-graphs)
-	- [Add a common legend for multiple ggplot2 graphs](http://www.sthda.com/english/wiki/ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page-r-software-and-data-visualization#add-a-common-legend-for-multiple-ggplot2-graphs)
 
 
 # 14.11.2016
@@ -37,15 +242,6 @@
 - [Ordering categories within ggplot2 facets](https://drsimonj.svbtle.com/ordering-categories-within-ggplot2-facets)
 - [RStudio IDE Easy Tricks You Might’ve Missed](https://www.rstudio.com/rviews/2016/11/11/easy-tricks-you-mightve-missed/)
 - COOL! [Explicitly calling return in a function or not](http://stackoverflow.com/questions/11738823/explicitly-calling-return-in-a-function-or-not)
-
-## R. Solving the Task
-- [Filtering row which contains a certain string using dplyr](http://stackoverflow.com/questions/22850026/filtering-row-which-contains-a-certain-string-using-dplyr)
-- [Using dplyr mutate to find position of character in string](http://stackoverflow.com/questions/37170093/using-dplyr-mutate-to-find-position-of-character-in-string)
-- [replace NA in a dplyr chain](http://stackoverflow.com/questions/21714867/replace-na-in-a-dplyr-chain)
-- [Replace missing values](https://rdrr.io/cran/tidyr/man/replace_na.html). replace_na(data, replace = list(), ...)
-- [R ggplot2: stat_count() must not be used with a y aesthetic error in Bar graph](http://stackoverflow.com/questions/39679057/r-ggplot2-stat-count-must-not-be-used-with-a-y-aesthetic-error-in-bar-graph)
-- "Как решить задачу выравнивания осей X у разных графиков", см ссылки ниже от 26.05.16 (R), grid.draw
-
 
 ## R
 - [Data Manipulation with sparklyr on Azure HDInsight](http://blog.revolutionanalytics.com/2016/11/data-manipulation-with-sparklyr-on-azure-hdinsight.html)
@@ -308,7 +504,7 @@ In programming, a future is an abstraction for a value that may be available at 
 - [Introducing practical and robust anomaly detection in a time series](https://blog.twitter.com/2015/introducing-practical-and-robust-anomaly-detection-in-a-time-series)
 - [Anomaly Detection with Twitter in R](https://anomaly.io/anomaly-detection-twitter-r/).
 - [Anomaly Detection Using Elasticsearch](http://info.prelert.com/prelert-elastic-user-group-meetup).
-- [Anomaly.io](https://anomaly.io/). Detect unusual patterns
+- [Anomaly.io](https://anomaly.io/). Detect unusual patterns. То, чем должен был бы быть tAdvizor.
 
 
 
