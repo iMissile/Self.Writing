@@ -7,6 +7,7 @@ To utilize the tool from Origin, you'd better have Mathematica version 8 or high
 - [EventStudio System Designer 6](http://eventhelix.com/). Model object and message interactions in text. Visualize with sequence diagrams and context diagrams.
 - [What are eTOM and TAM? Should you be using them?](http://www.ossline.com/2014/05/what-are-etom-and-tam-should-you-be-using-them.html)
 
+
 # 24.11.2016
 ## R
 - [Reading data from google sheets into R](http://www.opiniomics.org/reading-data-from-google-sheets-into-r/)
