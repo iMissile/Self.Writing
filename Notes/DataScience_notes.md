@@ -1,3 +1,44 @@
+# 30.11.2016
+## R
+- [elasticsearchr: a Lightweight Elasticsearch Client for R](https://alexioannides.com/2016/11/28/elasticsearchr-a-lightweight-elasticsearch-client-for-r/)
+- [Introduction to Sub-Processes in R](https://cran.r-project.org/web/packages/subprocess/vignettes/intro.html)
+- [dynamically-generate-rmarkdown-chunks-to-display-datatable](https://gist.github.com/ReportMort/e54ec050d97d79996189)
+
+# 29.11.2016
+## Math
+- COOL! [Visualizing fits, inference, implications of (G)LMMs](http://www.ashander.info/posts/2015/04/D-RUG-mixed-effects-viz/)
+- COOL! [An overview of gradient descent optimization algorithms](http://sebastianruder.com/optimizing-gradient-descent/index.html)
+
+## R Markdown
+- [Rmarkdown and DT: result do not render](http://stackoverflow.com/questions/33343241/rmarkdown-and-dt-result-do-not-render)
+- [Is it possible to have sortable(Interactive) table in rMarkdown?](http://stackoverflow.com/questions/27120002/is-it-possible-to-have-sortableinteractive-table-in-rmarkdown)
+- [Howto include js dependencies of DT datatable in Rmarkdown using knitr and pandoc](http://stackoverflow.com/questions/28303827/howto-include-js-dependencies-of-dt-datatable-in-rmarkdown-using-knitr-and-pando)
+- [Programmatically creating Markdown tables in R with KnitR](http://stackoverflow.com/questions/15488350/programmatically-creating-markdown-tables-in-r-with-knitr)
+- [An Introduction to The printr Package](http://yihui.name/printr/)
+
+# 28.11.2016
+## IP adressing
+- [Online IP calcuator](http://ip-calculator.ru)
+- [ip validator](http://formvalidation.io/validators/ip/). Validate an IP address. Support both IPv4 and IPv6
+
+## R
+- [Converting decimal to binary in R?](http://stackoverflow.com/questions/6614283/converting-decimal-to-binary-in-r)
+- [Converting Decimal to Binary in R](https://196sigma.wordpress.com/2012/02/09/converting-decimal-to-binary-in-r/)
+- [Building a column selecter](https://edwinth.github.io/blog/column-selecter/)
+- [Daily metric tracking with ggplot2](http://johnmackintosh.com/2016-11-27-calendar-heatmaps/)
+- [F is for Forecast. First steps with time series and prediction in R](http://johnmackintosh.com/2016-11-14-f-for-forecast/)
+- [ggExtra is Extra useful](http://johnmackintosh.com/2016-04-04-ggextra-is-extra-handy/)
+- [ggExtra: R package for adding marginal histograms to ggplot2](http://deanattali.com/2015/03/29/ggExtra-r-package/)
+- [InveRness RUG - Intro to ggplot2](https://cdn.rawgit.com/johnmackintosh/ggplotdemo/master/pres.html#1). Отличные HTML слайды
+- [Slaying CIDR Orcs with Triebeard (a.k.a. fast trie-based ‘IPv4-in-CIDR’ lookups in R)](https://rud.is/b/2016/07/12/slaying-cidr-orcs-with-triebeard-a-k-a-fast-trie-based-ipv4-in-cidr-lookups-in-r/)
+- [elasticsearchr: a Lightweight Elasticsearch Client for R](https://alexioannides.com/2016/11/28/elasticsearchr-a-lightweight-elasticsearch-client-for-r/)
+
+## Документирование
+- [ОФОРМЛЕНИЕ ДИССЕРТАЦИИ И АВТОРЕФЕРАТА](http://dis.finansy.ru/ofr/oformlen06.htm). Основные нормативные параметры форматирования. Из книги проф. Селеткова С. Г. "Соискателю ученой степени"
+Количество знаков:
+в строке - 60-64;
+на странице (полностью заполненной) - 1800-1960.
+
 # 25.11.2016
 ## DS
 - [import of a opj file (Origin)](http://mathematica.stackexchange.com/questions/92745/import-of-a-opj-file-origin)
@@ -12,6 +53,7 @@ To utilize the tool from Origin, you'd better have Mathematica version 8 or high
 ## R
 - [Reading data from google sheets into R](http://www.opiniomics.org/reading-data-from-google-sheets-into-r/)
 - COOL! [Announcing ggforce: Accelerating ggplot2](http://www.data-imaginist.com/2016/Announcing-ggforce/). Репозиторий [здесь](https://github.com/thomasp85/ggforce)
+- COOL! [ggalt.  Extra Coordinate Systems, Geoms, Statistical Transformations & Scales for 'ggplot2'](https://github.com/hrbrmstr/ggalt). Also available on CRAN.
 - [October Package Picks](https://www.rstudio.com/rviews/2016/11/23/october-package-picks/) by Joseph Rickert
 
 # 23.11.2016
