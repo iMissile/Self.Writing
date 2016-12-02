@@ -1,3 +1,27 @@
+# 02.12.2016
+## R
+- [ggplot2: multiple legends for the same aesthetic](http://www.quantide.com/ggplot-multiple-legends-for-the-same-aesthetic/)
+- [BERT: a newcomer in the R Excel connection](http://www.thertrader.com/2016/11/30/bert-a-newcomer-in-the-r-excel-connection/)
+
+# 01.12.2016
+## R
+- [Наглядная статистика. Используем R!](https://cran.r-project.org/doc/contrib/Shipunov-rbook.pdf) А. Б. Шипунов, Е. М. Балдин, П. А. Волкова, А. И. Коробейников, С. А. Назарова, С. В. Петров, В. Г. Суфиянов. 13 июля 2014 г.
+- [Анализ данных с R.](http://www.inp.nsk.su/~baldin/DataAnalysis/R/) © А. Б. Шипунов, Е. М. Балдин
+- [Функции в R](http://aakinshin.net/ru/blog/r/functions/) Дата: 02 июня 2013
+- [Раскрашиваем R в терминале: пакет colorout](http://aakinshin.net/ru/blog/r/colorout/)
+- [Perpetuum Software. Advanced reporting and data visualization components for .NET](http://www.perpetuumsoft.com/Home.aspx?lang=en)
+- Все, пропал бесплатный DeployR. [Microsoft R Product Comparison](https://msdn.microsoft.com/en-us/microsoft-r/microsoft-r-getting-started#compare-prods)
+- [Лицензирование SQL Server](https://www.microsoft.com/ru-ru/server-cloud/products/sql-server/purchasing.aspx)
+- [SQL Server 2016 SP1 Developer edition is now free](https://www.microsoft.com/en-us/sql-server/sql-server-editions-developers)
+- [SQL Server 2016 Developer, Release date 01.06.2016](https://my.visualstudio.com/Downloads?q=SQL%20Server%20Developer)
+
+- [
+- [A List of ggplot2 extensions](https://www.ggplot2-exts.org/). This site tracks and lists ggplot2 extensions developed by R users in the community. The aim is to make it easy for R users to find developed extensions.
+- [Recreating the vaccination heatmaps in R](https://benjaminlmoore.wordpress.com/2015/04/09/recreating-the-vaccination-heatmaps-in-r/)
+
+## DS
+- [Статистика ожиданий SQL Server'а или пожалуйста, скажите мне, где болит](https://habrahabr.ru/post/216309/#comment_8863343)
+
 # 30.11.2016
 ## R
 - [elasticsearchr: a Lightweight Elasticsearch Client for R](https://alexioannides.com/2016/11/28/elasticsearchr-a-lightweight-elasticsearch-client-for-r/)
