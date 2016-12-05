@@ -1,3 +1,31 @@
+# 05.12.16
+## R
+- [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
+- [Introduction of the pdfsearch package](http://educate-r.org//2016/12/02/intro_pdfsearch.html)
+- COOL! [Relational operators for intervals with the intrval R package](http://peter.solymos.org/code/2016/12/02/relational-operators-for-intervals-with-the-intrval-r-package.html)
+- INTERACTIVE VISUALISATION, SHINY [D3PartitionR 0.3.0 is available on CRAN](https://antoineguillot.wordpress.com/2016/12/02/d3partitionr-0-3-0-is-available-on-cran/)
+- [An extensive tutorial of D3partitionR 0.2](https://antoineguillot.wordpress.com/2016/11/20/an-extensive-tutorial-of-d3partitionr-0-2/)
+- [High Performance CommonMark and Github Markdown Rendering in R](http://ropensci.org/blog/blog/2016/12/02/commonmark)
+- [Be careful evaluating model predictions](http://www.win-vector.com/blog/2016/12/be-careful-evaluating-model-predictions/)
+- [Parametric variable names and dplyr](http://www.win-vector.com/blog/2016/12/parametric-variable-names-and-dplyr/)
+- [plumber — Convert R Code to a Web API](http://trestletech.com/2015/06/rapier-convert-r-code-to-a-web-api/)
+- [When Documents Become Databases – Tabulizer R Wrapper for Tabula PDF Table Extractor](https://blog.ouseful.info/2016/05/02/when-documents-become-databases-tabulizer-r-wrapper-for-tabula-pdf-table-extractor/)
+- [ropenscilabs/tabulizer](https://github.com/ropenscilabs/tabulizer) Bindings for Tabula PDF Table Extractor Library
+tabulizer is not yet on CRAN. To install the latest development version you can:
+```
+if(!require("ghit")){
+    install.packages("ghit")
+}
+# on 64-bit Windows
+ghit::install_github(c("ropenscilabs/tabulizerjars", "ropenscilabs/tabulizer"), INSTALL_opts = "--no-multiarch")
+# elsewhere
+ghit::install_github(c("ropenscilabs/tabulizerjars", "ropenscilabs/tabulizer"))
+```
+
+## Windows
+- [Chocolatey - Software Management Automation](https://chocolatey.org/). The package manager for Windows
+
+
 # 02.12.2016
 ## R
 - [ggplot2: multiple legends for the same aesthetic](http://www.quantide.com/ggplot-multiple-legends-for-the-same-aesthetic/)
@@ -14,10 +42,12 @@
 - [Лицензирование SQL Server](https://www.microsoft.com/ru-ru/server-cloud/products/sql-server/purchasing.aspx)
 - [SQL Server 2016 SP1 Developer edition is now free](https://www.microsoft.com/en-us/sql-server/sql-server-editions-developers)
 - [SQL Server 2016 Developer, Release date 01.06.2016](https://my.visualstudio.com/Downloads?q=SQL%20Server%20Developer)
+- [SQL Server 2016 RTM Enterprise on Windows Server 2012 R2 Virtual Machine](https://azure.microsoft.com/en-us/marketplace/partners/microsoft/sqlserver2016rtmenterprisewindowsserver2012r2/?wt.mc_id=sqL16_vm)
 
-- [
+- [](http://www.r-graph-gallery.com/)
 - [A List of ggplot2 extensions](https://www.ggplot2-exts.org/). This site tracks and lists ggplot2 extensions developed by R users in the community. The aim is to make it easy for R users to find developed extensions.
 - [Recreating the vaccination heatmaps in R](https://benjaminlmoore.wordpress.com/2015/04/09/recreating-the-vaccination-heatmaps-in-r/)
+- [Making Faceted Heatmaps with ggplot2](https://rud.is/b/2016/02/14/making-faceted-heatmaps-with-ggplot2/)
 
 ## DS
 - [Статистика ожиданий SQL Server'а или пожалуйста, скажите мне, где болит](https://habrahabr.ru/post/216309/#comment_8863343)
@@ -499,6 +529,7 @@ In programming, a future is an abstraction for a value that may be available at 
 	- [Remote Processing Using Futures](http://www.jottr.org/2016/10/remote-processing-using-futures.html)
 - [ReporteRs](http://davidgohel.github.io/ReporteRs/) is an R package for creating Microsoft (Word docx and Powerpoint pptx) and html documents. It does not require any Microsoft component to be used. It runs on Windows, Linux, Unix and Mac OS systems. This is the ideal tool to automate reporting generation from R.
 	- [A quick exploration of the ReporteRs package](https://statbandit.wordpress.com/2016/10/28/a-quick-exploration-of-reporters/)
+- [Create and format Word documents using R software and Reporters package](http://www.sthda.com/english/wiki/create-and-format-word-documents-using-r-software-and-reporters-package)
 
 # 27.10.2016
 ## R
