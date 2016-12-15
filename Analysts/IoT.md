@@ -1,3 +1,9 @@
+# 09.12.2016
+- [Node-RED](https://nodered.org/). A visual tool for wiring the Internet of Things
+- [Программируем управление освещением по датчикам движения и освещения на Node-RED](https://geektimes.ru/post/279814/)
+
+
+
 # Future IoT
 - [How the new hardware movement is even bigger than the Internet of Things](https://www.oreilly.com/ideas/how-the-new-hardware-movement-is-even-bigger-than-the-internet-of-things)
 

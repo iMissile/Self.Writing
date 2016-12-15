@@ -1,3 +1,11 @@
+# Настройка приложений Windows 10
+- [Как включить всем привычный Просмотр Фотографий в Windows 10](http://g-ek.com/prosmotr-fotografij-v-windows-10)
+- [iPhone или iPad не синхронизируется с компьютером?](http://appleinsider.ru/iphone/iphone-ili-ipad-ne-sinxroniziruetsya-s-kompyuterom-est-reshenie.html) Есть решение. Если вы столкнулись с подобной проблемой, может помочь сброс папки Lockdown на Mac или Windows
+- [Невозможность создания резервной копии данных iPhone, iPad или восстановления из резервной копии в iTunes](http://app-s.ru/publ/rezervnaja_kopija_v_itunes_ne_udaetsja_vypolnit_rezervnoe_kopirovanie_ili_vosstanovlenie_iz_rezervnoj_kopii_v_itunes/1-1-0-215)
+- Решение найдено в YouTube:
+Диспетчер устройств -> Переносные устройства -> Apple iPad -> Обновить драйверы -> Manual -> "C:\Program Files\Common Files\Apple\Mobile Device Support\Drivers"
+
+
 # Как определить ключ установки Windows
 - [Почему нельзя выполнять чистую установку Windows 10 обладателям Windows 7 и 8](https://lifehacker.ru/2015/08/04/tonkosti-ustanovki-windows-10/)
 - [5 простых способов как узнать ключ продукта ОС Windows 10](http://geek-nose.com/5-prostyx-sposobov-kak-uznat-klyuch-produkta-os-windows-10/)

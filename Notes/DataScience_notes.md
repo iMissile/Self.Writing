@@ -1,5 +1,216 @@
+# 15.12.2016
+## English
+- [Обучающие мультфильмы на английском](http://www.english-cartoons.ru/educationalenglishcartoons.html)
+
+## R
+- [Современное прогнозирование. Использование R](http://forecasting.svetunkov.ru/using-r/)
+- Проблема со структурой data.frame, полученного с помощью `ggnetwork`. вместо векторов создаются матрицы nx1.
+[Can't mutate despite object as data.frame](http://stackoverflow.com/questions/38328609/cant-mutate-despite-object-as-data-frame)
+	- [R-friendly way to convert R data.frame column to a vector?](http://stackoverflow.com/questions/7070173/r-friendly-way-to-convert-r-data-frame-column-to-a-vector)
+	- [Change the class of many columns in a data frame](http://stackoverflow.com/questions/3796266/change-the-class-of-many-columns-in-a-data-frame)
+	- [How to convert data.frame column from Factor to numeric {duplicate}](http://stackoverflow.com/questions/27528907/how-to-convert-data-frame-column-from-factor-to-numeric)
+	- [How to convert a factor to an integer\numeric without a loss of information?](http://stackoverflow.com/questions/3418128/how-to-convert-a-factor-to-an-integer-numeric-without-a-loss-of-information)
+	- [R -apply- convert many columns from numeric to factor](http://stackoverflow.com/questions/34124444/r-apply-convert-many-columns-from-numeric-to-factor)
+- [How to normalize data to 0-1 range?](http://stats.stackexchange.com/questions/70801/how-to-normalize-data-to-0-1-range)
+	-  if you have `clusterSim` package, Simply do - `normX = data.Normalization(x, type="n4");`
+- [Scale a series between two points](http://stackoverflow.com/questions/5468280/scale-a-series-between-two-points)
+	- `scale(x,center=min(x),scale=diff(range(x)))`
+	- `rescale(s, to=c(0,10))`
+	- `rescale(s, from=c(0, max(s)))`
+
+# 14.12.2016
+## Медицина
+1 шт. Беродуал Н аэр д/ингал 200доз 10мл Boehringer Ingelheim	Германия	484,00
+2 шт. Вильпрафен таб покр пл/о 500мг №10 Астеллас Фарма/Теммлер Верке ГмбХ	Германия	527,00
+1 шт. Кораксан таб п/о 7,5мг №56 Servier/Сердикс ООО	Россия	1170,49
+1 шт. Валокордин капли 50мл Krewel Meuselbach	Германия	231,00
+
+## R
+- [CCTZ is a C++ library for translating between absolute and civil times using the rules of a time zone](http://dirk.eddelbuettel.com/blog/2016/12/12/#rcppcctz_0.1.0)
+
+## R Interactive plots
+- [Interactive plots](https://shiny.rstudio.com/articles/plot-interaction.html)
+- [Interactive plotting in shiny using mouse clicks](http://stackoverflow.com/questions/28023342/interactive-plotting-in-shiny-using-mouse-clicks)
+- [Interactive hovering Shiny graphs](http://stackoverflow.com/questions/32251987/interactive-hovering-shiny-graphs)
+- [Plot Interaction Zoom](https://gallery.shinyapps.io/105-plot-interaction-zoom/)
+- [How to add a background image to ggplot2 graphs](http://datascienceplus.com/how-to-add-a-background-image-to-ggplot2-graphs/)
+- COOL! [R ggplot background image not showing](http://howtoprogram.eu/question/r-ggplot-background-image-not-showing,17169)
+- [The 'rsvg' Package: High Quality Image Rendering in R](https://www.opencpu.org/posts/svg-release/)
+- [Introduction to cowplot](https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html). The cowplot package is a simple add-on to ggplot2.
+- [Crime in Downtown Houston, Texas : Combining ggplot2 and Google Maps](https://github.com/tidyverse/ggplot2/wiki/crime-in-downtown-houston,-texas-:-combining-ggplot2-and-google-maps)
+- [Annotating Plots](http://chrisalbon.com/r-stats/annotating-plots.html)
+- [Plot labels at ends of lines](http://stackoverflow.com/questions/29357612/plot-labels-at-ends-of-lines)
+- [R package grid disappeared?](http://stackoverflow.com/questions/29349398/r-package-grid-disappeared) According to the [grid changelog](https://stat.ethz.ch/R-manual/R-devel/library/grid/doc/changes.txt), it became a base package with version 1.8.0. Therefore, it no longer needs to be available on the CRAN repository.
+- COOL! [Network visualization with R](http://kateto.net/network-visualization). Тут, кстати, есть ссылка на хорошую версию в PDF. Почти то же самое, но в статике: [Network Analysis and Visualization with R and igraph](http://kateto.net/networks-r-igraph). 
+- [USC Annenberg Networks Network: A Prezi Introduction](http://kateto.net/2011/01/usc-annenberg-networks-network-an-introduction/)
+- [R igraph manual pages](http://igraph.org/r/doc/). Use this if you are using igraph from R
+	- [Layouts](www.londonr.org/download/?id=97), стр 41.
+A layout is just a set of x and y coordinates. They can be specified manually but more often we will use
+one of the layout_ functions.
+- COOL! [Preparing Network Data in R](http://www.mjdenny.com/Preparing_Network_Data_In_R.html)
+- [Going viral with R's igraph package](http://blog.ryanwalker.us/2014/03/going-viral-with-rs-igraph-package.html)
+- COOL! [ggnetwork: Network geometries for ggplot2](https://cran.r-project.org/web/packages/ggnetwork/vignettes/ggnetwork.html)
+	- [gplot.layout From sna](http://www.rdocumentation.org/packages/sna/functions/gplot.layout) Vertex Layout Functions For Gplot. Various functions which generate vertex layouts for the gplot visualization routine.
+	- COOL! [A guide to the gplot layout algorithms of the sna library for R](http://www.melissaclarkson.com/resources/R_guides/documents/gplot_layout_Ver1.pdf)
+- [How to control the igraph plot layout with Fixed Positions?](http://stackoverflow.com/questions/5364264/how-to-control-the-igraph-plot-layout-with-fixed-positions)
+- разбираем принцип устройства ggnetwork::fortify.network: https://github.com/briatte/ggnetwork/blob/0e572df0d3a715416a3ed08de598042b76f0537c/R/fortify-network.R
+Вроде как можно просто матрицу подсунуть!: `class(layout) == "matrix" &&`
+- COOL! [sctyner/geomnet](https://github.com/sctyner/geomnet). geomnet is a package built on top of the most recent major ggplot2 release. It provides a ggplot2 geom called geom_net to visualize graphs and networks.
+- [R code for igraph animation](http://www.joyofdata.de/blog/r-code-for-igraph-animation/)
+- [More network analysis with igraph and Cytoscape](https://rpubs.com/keiono/cyrest3)
+- [From igraph to network and back again](https://brokeringclosure.wordpress.com/2010/08/25/from-igraph-to-network-and-back-again/)
+- [Short tutorial on using functions in package "intergraph"](https://cran.r-project.org/web/packages/intergraph/vignettes/howto.html)
+- [Intergraph](http://mbojan.github.io/intergraph/) R package with coercion routines for network data objects
+	- [Short tutorial on using functions in package “intergraph”](http://mbojan.github.io/intergraph/howto.html#network-igraph)
+- [Interactive and Dynamic Network Visualization in R](http://curleylab.psych.columbia.edu/netviz/). slides from my NYC R Meetup Talk on 6th April 2016.
+- [Examples for the igraph package](http://michael.hahsler.net/SMU/LearnROnYourOwn/code/igraph.html)
+
+## IoT
+- [Alternatives to Standard Arduino IDE: Which One To Choose?](https://www.intorobotics.com/alternatives-standard-arduino-ide-one-choose/)
+- [Почему я не люблю Arduino](http://microsin.net/programming/avr/why-i-hate-arduino.html)
+- [Arduion homepage](https://www.arduino.cc/)
+
+# 13.12.2016
+## R
+- [Taking a Subset of a Data Frame in R](https://qualityandinnovation.com/2016/12/13/taking-a-subset-of-a-data-frame-in-r/)
+- COOL! [(A Very) Experimental Threading in R](https://random-remarks.net/2016/12/11/a-very-experimental-threading-in-r/)
+- [THREADING IN R?](https://matloff.wordpress.com/2016/12/11/threading-in-r/)
+- [pqR - a pretty quick version of R](http://www.pqr-project.org/)
+- [Chaos, bifurcation diagrams and Lyapunov exponents with R (2)](http://a-blog-from-sydney.blogspot.ru/2016/12/chaos-bifurcation-diagrams-and-lyapunov.html)
+- [Using PostgreSQL in R: A quick how-to](http://www.win-vector.com/blog/2016/02/using-postgresql-in-r/)
+- [The Case For Using -> In R](http://www.win-vector.com/blog/2016/12/the-case-for-using-in-r/)
+
+## Dev
+- [RawGit](http://rawgit.com/) serves raw files directly from GitHub with proper Content-Type headers.
+# 12.12.2016
+## R
+- [Don’t give up on single trees yet…. An interactive tree with Microsoft R](https://longhowlam.wordpress.com/2016/12/10/dont-give-up-on-single-trees-yet-an-interactive-tree-with-microsoft-r/)
+- COOL! [The case for index-free data manipulation](http://www.win-vector.com/blog/2016/12/the-case-for-index-free-data-manipulation/)
+SQL is actually a rich modeling environment with interesting semantics due to its relation to E.F. Codd’s relational model. However, working with SQL databases presents a number of practical difficulties.
+- COOL! [Grid search in the tidyverse](https://drsimonj.svbtle.com/grid-search-in-the-tidyverse). For anyone who’s unfamiliar with the term, grid search involves running a model many times with combinations of various hyperparameters. The point is to identify which hyperparameters are likely to work best. A more technical definition from Wikipedia, grid search is:
+
+an exhaustive searching through a manually specified subset of the hyperparameter space of a learning algorithm
+- [Creating beautiful charts in chinese with ggplot2](http://pacha.hk/ggplot2_chinese.html)
+- [XLConnect: Excel Connector for R. Provides comprehensive functionality to read, write and format Excel data](https://cran.r-project.org/web/packages/XLConnect/index.html)
+
+## IoT
+- [Создание интеллектуальных датчиков с использованием сервисов Bluemix Business Rules, Watson IoT Platform и Insights for Weather](https://www.ibm.com/developerworks/ru/library/bpm/1604_siddiqui-bluemix-trs/)
+- [OpenLoRa](http://openlora.com/forum/)
+- [Lora-net/LoRaMac-node](https://github.com/Lora-net/LoRaMac-node). Reference implementation and documentation of a LoRa network node. The LoRaWAN stack API documentation can be found at: [http://stackforce.github.io/LoRaMac-doc/](http://stackforce.github.io/LoRaMac-doc/)
+- [Gateway IMST IC880A / RBPI](https://www.thethingsnetwork.org/forum/t/gateway-imst-ic880a-rbpi/134)
+- [TheThingsNetwork/lora_gateway](https://github.com/TheThingsNetwork/lora_gateway). Driver/HAL to build a gateway using a concentrator board based on Semtech SX1301 multi-channel modem and SX1257/SX1255 RF transceivers.
+- [TheThingsNetwork/packet_forwarder](https://github.com/TheThingsNetwork/packet_forwarder). A LoRa packet forwarder is a program running on the host of a LoRa gateway that forwards RF packets receive by the concentrator to a server through a IP/UDP link, and emits RF packets that are sent by the server.
+- COOL! [Building your LoRa devices](http://cpham.perso.univ-pau.fr/LORA/LoRaDevices.html)
+- COOL! [From zero to LoRaWAN in a weekend](https://github.com/ttn-zh/ic880a-gateway/wiki)
+- [iC880A - LoRaWAN Concentrator 868MHz](http://www.wireless-solutions.de/products/radiomodules/ic880a)
+- [LoRa Modems and Modules](https://www.loriot.io/lora-end-nodes.html). Our aim is to support all the LoRaWAN compliant modems in the LoRa ecosystem. We suggest using either the manufacturer's stack or adapting the IBM's LMiC implementation of the LoRaWAN end device protocol.
+- [Address Space in LoRaWAN](https://www.thethingsnetwork.org/wiki/LoRaWAN/Address-Space)
+- [IEEE Guidelines for 64-bit Global Identifier (EUI-64)](http://standards.ieee.org/develop/regauth/tut/eui64.pdf)
+- [A Closer Look at LoRaWAN and The Things Network](https://www.rs-online.com/designspark/a-closer-look-at-lorawan-and-the-things-network)
+- [The Things Network with the Moteino and RN2483](https://github.com/lukastheiler/ttn_moteino)
+
+
+# 09.12.2016
+## Arduino
+- [Я презираю Arduino](https://geektimes.ru/post/255760/)
+- [Arduino Pro Mini](http://arduino.ru/Hardware/ArduinoBoardProMini) или [тут](http://arduino-diy.com/arduino-pro-mini)
+- [Arduino Pro Mini (Eng)](https://www.arduino.cc/en/Main/ArduinoBoardProMini)
+- [Интерфейс I2C](http://robocraft.ru/blog/communication/780.html)
+- [Описание шины I2C](http://www.itt-ltd.com/reference/ref_i2c.html)
+- [Термистор и Arduino](http://arduino-diy.com/arduino-thermistor)
+
+
+## R
+### Tasks
+- Проблема с импортом Excel файла (Пермяков). Ошибка "Error: Need one name and type for each column". Тикет открыт: [Error using col_names and col_types](https://github.com/hadley/readxl/issues/81)
+Да, импортируется пустая последняя колонка....
+
+Ищем в тексте внутри гитхаба:
+https://github.com/hadley/readxl/search?utf8=%E2%9C%93&q=Need+one+name+and+type+for+each+column
+Если покопаться поглубже, то выплывают blank колонки в еще большем числе
+ctypes <- readxl:::xlsx_col_types(datafile) дает 152 против 148 видимых. Связано это с тем, что у этих 4-х колонок изменено форматирование.
+
+
+### R as web-service
+- [Calling R as a web service with parameters and load a JSON?](http://stackoverflow.com/questions/30141204/calling-r-as-a-web-service-with-parameters-and-load-a-json)
+- [How do I expose R code as a web service?](https://www.quora.com/How-do-I-expose-R-code-as-a-web-service)
+Hadley Wickham, Chief Scientist, RStudio:
+There are quite a few packages that will help you do this, but I can’t remember all their names off the top of my head (and I’m sure you’re just as good at googling as I am). The one that I’d start with is plumbr, by Jeff Allen (Jeff works at RStudio with me, but this is a personal project, not an official RStudio project).
+- [plumber](https://github.com/trestletech/plumber) allows you to create a REST API by merely decorating your existing R source code with special comments. Take a look at an example.
+- [Quickstart: Add your first R function to Blockspring](https://www.blockspring.com/docs/r-quickstart)
+- [CRAN Task View: Web Technologies and Services](https://cran.r-project.org/web/views/WebTechnologies.html)
+- [Microsoft/deployr-rserve](https://github.com/Microsoft/deployr-rserve/releases)
+- [FastRWeb - Fast Interactive Web Framework for Data Mining Using R](https://rforge.net/FastRWeb/). Infrastrcture for creating rich, dynamic web content using R scripts while maintaining very fast response time. CRAN [page](https://cran.r-project.org/web/packages/FastRWeb/index.html)
+- [OpenCPU](https://www.opencpu.org/) - an API for Embedded Scientific Computing.
+	- [Introduction to OpenCPU for R on EC2 with Python](http://www.joyofdata.de/blog/introduction-to-opencpu-for-r-on-ec2-with-python/)
+	- [How to run a custom.R script using OpenCPU](http://stackoverflow.com/questions/37978834/how-to-run-a-custom-r-script-using-opencpu)
+	- [Send an image file using opencpu for processing](http://stackoverflow.com/questions/29211599/send-an-image-file-using-opencpu-for-processing)
+OpenCPU is a system for embedded scientific computing and reproducible research. The OpenCPU server provides a reliable and interoperable HTTP API for data analysis based on R. You can either use the public servers or host your own.
+- [Jug is a small web development framework for R which relies heavily upon the httpuv package. It’s main focus is to make building APIs for your code as easy as possible.](https://cran.r-project.org/web/packages/jug/vignettes/jug.html)
+
+### Shiny
+- [Arrow72/CoolDashboard](https://github.com/Arrow72/CoolDashboard). R dashboard as a designer http://ru-datascience.ru/2015/10/28/dizajnerskij-dashboard/
+- [Cairo](https://cran.r-project.org/web/packages/Cairo/index.html) graphics device that can be use to create high-quality vector (PDF, PostScript and SVG) and bitmap output (PNG,JPEG,TIFF), and high-quality rendering in displays (X11 and Win32).
+
+
+## Python
+- COOL! [PYTHON FOR EXCEL. FREE & OPEN SOURCE](https://www.xlwings.org/)
+- [vinta/awesome-python](https://github.com/vinta/awesome-python). A curated list of awesome Python frameworks, libraries, software and resources http://awesome-python.com/
+- [ПИТОНТЬЮТОР](http://pythontutor.ru/). УЧИТЕ ПИТОН. Бесплатный курс по программированию с нуля. Работает прямо в браузере.
+
+# 08.12.2016
+
+## Operationalization = DeployR on Windows R Server 9.0.1
+1. [Включаем иконки на рабочем столе Win 2012 Serer](http://did5.ru/it/windows/kak-dobavit-ikonku-kompyuter-na-rabochij-stol-v-windows-server-2012.html)
+1. Инсталлируем R Server (вопросы с лицензией пока открыты)
+1. [Настраиваем DeployR](https://msdn.microsoft.com/en-us/microsoft-r/operationalize/configuration-initial)
+1. [Запускаем диагностику](https://msdn.microsoft.com/en-us/microsoft-r/operationalize/admin-utility#test)
+
+## R
+- [Visualizing 15k Instagram Posts with TrelliscopeJS](http://ryanhafen.com/blog/insta-trelliscopejs)
+- [Pipe Dream. Plusses and Arrows and Percents, oh my!]()https://dariustg.github.io/2016/12/pipe-dream.html)
+- [Automating R Demonstration Videos](https://www.stat.auckland.ac.nz/~paul/Reports/Video/PoC/video-poc.html)
+- [Using replyr::let to Parameterize dplyr Expressions](http://www.win-vector.com/blog/2016/12/using-replyrlet-to-parameterize-dplyr-expressions/)
+- [Structural Equation Modelling in R (Part 1)](http://pacha.hk/sem_r_part_1.html)
+- [Getting started with Microsoft R Client is as easy as 1-2-3](https://msdn.microsoft.com/en-us/microsoft-r/r-client-get-started)
+
+## Development
+- [DeepGit is a tool to investigate the history of source code. It is based on git blame and makes it easy to trace changes to a line or block of code. DeepGit will detect code movements, even if lines are not identical.](http://www.syntevo.com/deepgit/?referrer=program&edition=foundation)
+
+## Microsoft
+- [Как добавить иконку Компьютер на рабочий стол в Windows Server 2012](http://did5.ru/it/windows/kak-dobavit-ikonku-kompyuter-na-rabochij-stol-v-windows-server-2012.html)
+- [Microsoft R Client provides a free taste of R Server](http://www.infoworld.com/article/3094828/data-science/microsoft-r-client-provides-a-free-taste-of-r-server.html). It's limited in power, but low in price: R Client provides a reduced but functional set of features from the full Microsoft R Server product
+- [Installing DeployR for Microsoft R Server 2016 (8.0.5) on Windows](https://msdn.microsoft.com/en-us/microsoft-r/deployr-install-on-windows)
+- [Configuring R Server for Operationalization](https://msdn.microsoft.com/en-us/microsoft-r/operationalize/configuration-initial). Operationalization = DeployR.
+- [mrsdeploy Remote Execution functions in Microsoft R (vignette)](https://msdn.microsoft.com/en-us/microsoft-r/mrsdeploy/mrsdeploy-remoteexec-vignette)
+- [Comparing Operationalization in R Server 9.0 to DeployR 8.x](https://msdn.microsoft.com/en-us/microsoft-r/operationalize/about-compare-to-8.0.5)
+- [Microsoft R Server 9.0.1](https://my.visualstudio.com/downloads)
+	- [Operationalization with R Server](https://msdn.microsoft.com/en-us/microsoft-r/operationalize/about)
+А вот, что обнаружилось в EULA при инсталляции отдельного дистрибутива Microsoft R Server 9.0.1:
+```
+Microsoft R Server for Windows, supplement to Microsoft SQL Server 2016 Enterprise Core
+PLEASE NOTE: Refer to your license terms for Microsoft SQL Server 2016 Enterprise Core software (the “software”) to identify the entity licensing this supplement to you and for support information. You may use a copy of this supplement with each validly licensed copy of the software. You may not use this supplement if you do not have (a) a valid license or subscription to the software, and (b) active Software Assurance covering the software. The license terms for the software apply to your use of this supplement.
+```
+
+
+# 07.12.2016
+## DS
+- [Deep Learning Cheat Sheet](https://hackernoon.com/deep-learning-cheat-sheet-25421411e460)
+- mermaid Diagrams and flowcharts from textsimilar to markdown. [Gant diagrams](http://knsv.github.io/mermaid/gantt.html)
+- [Gantt Charts in R using Plotly](http://moderndata.plot.ly/gantt-charts-in-r-using-plotly/)
+- [Generating an interactive Gantt/timeline chart in R](https://www.packtpub.com/mapt/book/Big-Data-and-Business-Intelligence/9781783989508/2/ch02lvl1sec34/Generating%20an%20interactive%20Gantt/timeline%20chart%20in%20R)
+- [MPP to XLS online converter](http://www.zamzar.com/convert/mpp-to-xls/). Convert MPP to XLS - Convert your file now - online and free - this page also contains information on the MPP and XLS file extensions.
+
+# 06.12.2016
+## R
+- [Optimization matchup: R's glpkAPI vs Julia's JuMP](http://rsnippets.blogspot.ru/2016/12/optimization-matchup-rs-glpkapi-vs.html)
+- [How to Get paid Udemy courses for free?](https://www.quora.com/How-to-Get-paid-Udemy-courses-for-free)
+- [Creating and Hosting a Personal Site on GitHub](http://jmcglone.com/guides/github-pages/). A step-by-step beginner's guide to creating a personal website and blog using Jekyll and hosting it for free using GitHub Pages.
+
 # 05.12.16
 ## R
+- [How to set up your own R blog with Github pages and Jekyll Bootstrap](https://shiring.github.io/blogging/2016/12/04/diy_your_own_blog)
+	- [Jekyll Installation](http://jekyllrb.com/docs/installation/). Getting Jekyll installed and ready-to-go should only take a few minutes.
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
 - [Introduction of the pdfsearch package](http://educate-r.org//2016/12/02/intro_pdfsearch.html)
 - COOL! [Relational operators for intervals with the intrval R package](http://peter.solymos.org/code/2016/12/02/relational-operators-for-intervals-with-the-intrval-r-package.html)
@@ -84,6 +295,7 @@ ghit::install_github(c("ropenscilabs/tabulizerjars", "ropenscilabs/tabulizer"))
 - [ggExtra is Extra useful](http://johnmackintosh.com/2016-04-04-ggextra-is-extra-handy/)
 - [ggExtra: R package for adding marginal histograms to ggplot2](http://deanattali.com/2015/03/29/ggExtra-r-package/)
 - [InveRness RUG - Intro to ggplot2](https://cdn.rawgit.com/johnmackintosh/ggplotdemo/master/pres.html#1). Отличные HTML слайды
+- [RevoTreeView sample](http://rawgit.com/longhowlam/titanicTree/master/tree.html)
 - [Slaying CIDR Orcs with Triebeard (a.k.a. fast trie-based ‘IPv4-in-CIDR’ lookups in R)](https://rud.is/b/2016/07/12/slaying-cidr-orcs-with-triebeard-a-k-a-fast-trie-based-ipv4-in-cidr-lookups-in-r/)
 - [elasticsearchr: a Lightweight Elasticsearch Client for R](https://alexioannides.com/2016/11/28/elasticsearchr-a-lightweight-elasticsearch-client-for-r/)
 
@@ -193,6 +405,7 @@ Table1Dat <- sqlFetch(channel, "Table1")
 
 ## R. Solving the Task
 - [Filtering row which contains a certain string using dplyr](http://stackoverflow.com/questions/22850026/filtering-row-which-contains-a-certain-string-using-dplyr)
+`str_detect`
 - [Using dplyr mutate to find position of character in string](http://stackoverflow.com/questions/37170093/using-dplyr-mutate-to-find-position-of-character-in-string)
 - [replace NA in a dplyr chain](http://stackoverflow.com/questions/21714867/replace-na-in-a-dplyr-chain)
 - [Replace missing values](https://rdrr.io/cran/tidyr/man/replace_na.html). replace_na(data, replace = list(), ...)
@@ -408,8 +621,6 @@ To check whether each string consists of valid UTF-8 byte sequences, call: `all(
 1. Качаем WebDriver, кладем в PATH (лучше рядом). [ChromeDriver - WebDriver for Chrome](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 1. Запускаем `remDr <- remoteDriver(browserName = "chrome")`, описание здесь:[RSelenium: Driving OS/Browsers local and remote](https://cran.r-project.org/web/packages/RSelenium/vignettes/RSelenium-saucelabs.html)
 
-
-
 ## Google
 - [Как обезопасить аккаунт, который был взломан в прошлом?](https://productforums.google.com/forum/?utm_medium=email&utm_source=footer#!topic/gmail-ru/XK2-BLWfWKs)
 - [где в gmail находится архив? я отправил письма в архив и теперь не могу их найти](https://productforums.google.com/forum/#!topic/gmail-ru/ByqLwh1laVQ)
@@ -464,6 +675,7 @@ If you're familiar with the Python programming language, it may have occurred to
 In programming, a future is an abstraction for a value that may be available at some point in the future. The state of a future can either be unresolved or resolved. As soon as it is resolved, the value is available instantaneously. If the value is queried while the future is still unresolved, the current process is blocked until the future is resolved. It is possible to check whether a future is resolved or not without blocking. Exactly how and when futures are resolved depends on what strategy is used to evaluate them. For instance, a future can be resolved using a "lazy" strategy, which means it is resolved only when the value is requested. Another approach is an "eager" strategy, which means that it starts to resolve the future as soon as it is created. Yet other strategies may be to resolve futures asynchronously, for instance, by evaluating expressions concurrently on a compute cluster.
 	- [Asynchronous and Distributed Programming in R with the Future Package](https://alexioannides.com/2016/11/02/asynchronous-and-distributed-programming-in-r-with-the-future-package/)
 	- [Remote Processing Using Futures](http://www.jottr.org/2016/10/remote-processing-using-futures.html)
+	- [HenrikBengtsson/future](https://github.com/HenrikBengtsson/future)
 - [R foreach error: Unserialize(node$con) when combining results](http://stackoverflow.com/questions/33444931/r-foreach-error-unserializenodecon-when-combining-results)
 - [Problems using foreach parallelization](http://stackoverflow.com/questions/5007458/problems-using-foreach-parallelization)
 - [Parallelization in R: %dopar% vs %do%. Why using a single core yields to better performance?](http://stackoverflow.com/questions/15194465/parallelization-in-r-dopar-vs-do-why-using-a-single-core-yields-to-better)
@@ -475,7 +687,6 @@ In programming, a future is an abstraction for a value that may be available at 
 	- [Part 1/3](http://www.gis-blog.com/increasing-the-speed-of-raster-processing-with-r-part-13/)
 	- [Part 2/3: Parallelisation](http://www.gis-blog.com/increasing-the-speed-of-raster-processing-with-r-part-23-parallelisation/)
 	- [Part 3/3: Cluster](http://www.gis-blog.com/increasing-the-speed-of-raster-processing-with-r-part-33-cluster/)
-
 
 
 - Полезные команды
@@ -603,9 +814,6 @@ In programming, a future is an abstraction for a value that may be available at 
 - [Anomaly Detection with Twitter in R](https://anomaly.io/anomaly-detection-twitter-r/).
 - [Anomaly Detection Using Elasticsearch](http://info.prelert.com/prelert-elastic-user-group-meetup).
 - [Anomaly.io](https://anomaly.io/). Detect unusual patterns. То, чем должен был бы быть tAdvizor.
-
-
-
 
 
 # 20.10.2016
@@ -1325,7 +1533,7 @@ In the examples below, I use a 1950 - 2009 subset of SNAP’s 2-km resolution do
 - [Chart: It’s not your imagination, US gun violence is over the top this summer](http://qz.com/741391/its-not-your-imagination-gun-violence-is-over-the-top-this-summer/)
 - [Donald Trump’s Ghostwriter Tells All](http://www.newyorker.com/magazine/2016/07/25/donald-trumps-ghostwriter-tells-all). “The Art of the Deal” made America see Trump as a charmer with an unfailing knack for business. Tony Schwartz helped create that myth—and regrets it.
 
-## Visialization
+## Visualization
 - [The Counted. People killed by police in the US](http://www.theguardian.com/us-news/ng-interactive/2015/jun/01/the-counted-police-killings-us-database)
 - [The math of mass shootings](https://www.washingtonpost.com/graphics/national/mass-shootings-in-america/)
 
@@ -1351,7 +1559,7 @@ Shane Lynn. Data science, Startups, Data visualisation. Currently building KillB
 # 04.07.2016
 - [How to Apply Machine Learning to Event Processing](http://www.rtinsights.com/big-data-machine-learning-software-event-processing-analytics/)
 
-## Visualisation
+## Visualization
 - Plot.ly [Click callback for pie chart](https://github.com/plotly/plotly.js/issues/105)
 - Click Events in R.
 	- [How to bind callback functions to click events in R charts with JavaScript](https://plot.ly/r/click-events/)
@@ -1436,8 +1644,6 @@ Then you or your collaborators may access these objects from any R process, loca
 ```
 Node.js is a platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
 ```
-
-
 
 ## R
 - [Open Analytics. Architect](https://www.openanalytics.eu/products). Data scientists manage rich data sources, build statistical models and communicate findings. They work at the intersection of computer science and statistics and often rely on a multitude of tools to keep on top. 
@@ -1839,6 +2045,7 @@ I get Error: `Invalid input: time_trans works with objects of class POSIXct only
 
 ## Shiny
 - [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)`
+Showcase Mode!!!
 - [How can I save the result of str() as a string in R?](http://stackoverflow.com/questions/30964224/how-can-i-save-the-result-of-str-as-a-string-in-r). `capture.output` will create a character vector (one element for each line printed to the console). If you want it in one string, you could concatenate it with paste(foo, collapse="\n").
 - [Shiny: What is the option setting to display in the console the messages between server and ui](http://stackoverflow.com/questions/23002712/shiny-what-is-the-option-setting-to-display-in-the-console-the-messages-between). `options(shiny.trace = TRUE)`
 - [Write error messages for your UI with validate](http://shiny.rstudio.com/articles/validation.html)

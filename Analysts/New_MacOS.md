@@ -1,9 +1,3 @@
-# iPad
-- [iPhone или iPad не синхронизируется с компьютером?](http://appleinsider.ru/iphone/iphone-ili-ipad-ne-sinxroniziruetsya-s-kompyuterom-est-reshenie.html) Есть решение. Если вы столкнулись с подобной проблемой, может помочь сброс папки Lockdown на Mac или Windows
-- [Невозможность создания резервной копии данных iPhone, iPad или восстановления из резервной копии в iTunes](http://app-s.ru/publ/rezervnaja_kopija_v_itunes_ne_udaetsja_vypolnit_rezervnoe_kopirovanie_ili_vosstanovlenie_iz_rezervnoj_kopii_v_itunes/1-1-0-215)
-- Решение найдено в YouTube:
-Диспетчер устройств -> Переносные устройства -> Apple iPad -> Обновить драйверы -> Manual -> "C:\Program Files\Common Files\Apple\Mobile Device Support\Drivers"
-
 # апгрейд Macbook Pro
 - [Своими силами: как заменить/проапгрейдить HDD/SSD и RAM в MacBook Pro](http://lifehacker.ru/2011/08/18/how-to-upgrade-hddssdram/)
 - [Как выбрать тип оперативной памяти для вашего Mac](http://macilove.com/news/how-to-choose-the-type-of-ram-for-your-mac/). Инструкция по замене оперативной памяти для iMac, MacBook, Mac Pro, Mac mini
