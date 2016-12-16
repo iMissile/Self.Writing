@@ -1,3 +1,32 @@
+# 16.12.2016
+## Shiny
+- [Dynamically generated Shiny UI](http://www.mango-solutions.com/wp/2016/12/dynamically-generated-shiny-ui/) 15 Dec 16, Gábor Csárdi — Mango Solutions
+
+## R
+- При использовании 'geom_nodelabel_repel'(`ggnetwork`) возникает следующая ошибка: "Ignoring unknown parameters: segment.color"
+	- [ggrepel: plot labels above points](http://stackoverflow.com/questions/39943123/ggrepel-plot-labels-above-points/39947042#39947042)
+	- [geom_nodetext_repel](https://www.rdocumentation.org/packages/ggnetwork/versions/0.5.1/topics/geom_nodetext_repel) From ggnetwork v0.5.1. Draw Repulsive Node Labels. All arguments to these geoms are identical to those of geom_text_repel and geom_label_repel.
+Да все потому что ПЕРЕИМЕНОВАЛИ `segment.color` в `segment.coloUr`
+- Разобрался с ошибкой в geom_edgetext. Надо ставить из github `devtools::install_github("briatte/ggnetwork")`, там ошибка исправлена: 
+[avoid removal of perfectly orthogonal edges (closes #5) ](https://github.com/briatte/ggnetwork/commit/8b7043fd05fa1eb5702a7aab6ede1e6afb5d1e9d)
+- COOL! [10 tips for making your R graphics look their best](http://blog.revolutionanalytics.com/2009/01/10-tips-for-making-your-r-graphics-look-their-best.html)
+- COOL! [Exporting nice plots from R](http://gforge.se/2013/02/exporting-nice-plots-in-r/) A vital part of statistics is producing nice plots, an area where R is outstanding. The graphical ablility of R is often listed as a major reason for choosing the language. It is therefore funny that exporting these plots is such an issue in Windows. This post is all about how to export anti-aliased, high resolution plots from R in Windows.
+См. пункт "lines and text anti-aliased - not fills/polygons"
+- [How to plot smoother curves in R](http://stackoverflow.com/questions/15447622/how-to-plot-smoother-curves-in-r)
+- [imager: an R package for image processing](http://dahtah.github.io/imager/imager.html)
+- Работа с графом. Соседи, соединительные грани, пути.
+	- [neighbors function in igraph package in R](http://stackoverflow.com/questions/29096085/neighbors-function-in-igraph-package-in-r)
+	- [igraph edge between two vertices](http://stackoverflow.com/questions/12964332/igraph-edge-between-two-vertices)
+	- [igraph get edge from - to value](http://stackoverflow.com/questions/21243965/igraph-get-edge-from-to-value)
+	- [How to get id vertex from name vertex in R and Igraph?](http://stackoverflow.com/questions/10124168/how-to-get-id-vertex-from-name-vertex-in-r-and-igraph)
+- [igraph R Traps](http://igraph.wikidot.com/r-traps)
+- [ggpmisc 0.2.13. Debugging ggplots](https://cran.r-project.org/web/packages/ggpmisc/vignettes/debug.html)
+
+- igraph manual !!!
+It is often desirable to follow vertices along a number of graph operations, and vertex ids don’t
+allow this because of the renumbering. The solution is to assign attributes to the vertices. These are
+kept by all operations, if possible. See more about attributes in the next section.
+
 # 15.12.2016
 ## English
 - [Обучающие мультфильмы на английском](http://www.english-cartoons.ru/educationalenglishcartoons.html)
@@ -62,8 +91,8 @@ one of the layout_ functions.
 - [Short tutorial on using functions in package "intergraph"](https://cran.r-project.org/web/packages/intergraph/vignettes/howto.html)
 - [Intergraph](http://mbojan.github.io/intergraph/) R package with coercion routines for network data objects
 	- [Short tutorial on using functions in package “intergraph”](http://mbojan.github.io/intergraph/howto.html#network-igraph)
-- [Interactive and Dynamic Network Visualization in R](http://curleylab.psych.columbia.edu/netviz/). slides from my NYC R Meetup Talk on 6th April 2016.
-- [Examples for the igraph package](http://michael.hahsler.net/SMU/LearnROnYourOwn/code/igraph.html)
+- COOL! [Interactive and Dynamic Network Visualization in R](http://curleylab.psych.columbia.edu/netviz/). slides from my NYC R Meetup Talk on 6th April 2016.
+- COOL! [Examples for the igraph package](http://michael.hahsler.net/SMU/LearnROnYourOwn/code/igraph.html)
 
 ## IoT
 - [Alternatives to Standard Arduino IDE: Which One To Choose?](https://www.intorobotics.com/alternatives-standard-arduino-ide-one-choose/)
