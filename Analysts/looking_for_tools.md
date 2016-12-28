@@ -109,7 +109,19 @@ Sandboxing is required for all apps available on the Mac and iOS app store, in o
 - [Authorea](http://www.authorea.com/) is the _collaborative_ editor for research. Write and manage your documents in one place, for free.
 - [ShareLaTeX](http://www.sharelatex.com/). LaTeX, Evolved. The easy to use, online, collaborative LaTeX editor. [ShareLaTeX Documentation Home](http://www.sharelatex.com/learn/Main_Page). 
 ![Сравнение различных инструментов для совместной работы над научными документами](http://i.imgur.com/f7i2qn6.png)
-- [DataJoy](https://www.getdatajoy.com). Python & R, for scientists. Easy to use, online data processing with Python and R
+- [Fidus Writer](https://www.fiduswriter.org/) is an online collaborative editor especially made for academics who need to use citations and/or formulas. The editor focuses on the content rather than the layout, so that with the same text, you can later on publish it in multiple ways: On a website, as a printed book, or as an ebook. In each case, you can choose from a number of layouts that are adequate for the medium of choice.
+- [Penflip](https://www.penflip.com). Write better with others
+	- [Github for Writers](http://www.madebyloren.com/github-for-writers)
+- [Booktype](https://www.sourcefabric.org/en/booktype/). Booktype allows authors to create beautiful books for print and digital distribution. Publishers use Booktype to manage their entire catalogue in one place, providing authors, translators and proofreaders with all the tools they need.
+	- [THE TOP SEVEN FEATURES AUTHORS LOVE IN BOOKTYPE](https://booktype.pro/en/booktype/news/3504/The-top-seven-features-authors-love-in-Booktype.htm)
+- [Reedsy](https://reedsy.com/). A free| writing tool from Reedsy. Write and export a beautifully| typeset book.
+- [Scrivener](https://www.literatureandlatte.com/scrivener.php)
+- [GitBook](https://www.gitbook.com/). Documentation made easy. GitBook helps your team write, collaborate and publish content online.
+- [Pressbook](https://pressbooks.com/). Create Books: Print and Ebooks. Easily create professional quality print and ebook editions of your book.
+- [Etherpad](http://etherpad.org/) is a highly customizable Open Source online editor providing collaborative editing in really real-time.
+- [Gingko](https://gingkoapp.com/). Let Your Writing Flow
+- [Amium](https://www.amium.com): the app that makes collaborating on files easy. So you can work better, together.
+- [DataJoy](https://www.getdatajoy.com). Python & R, for scientists. Easy to use, online data processing with Python and R. Все, с 2017 года закрывается
 
 
 - [MindMeister](http://www.mindmeister.com/). Collaborativ mindmapping. Present your ideas. Wow your audience with a gorgeous new way of presenting.

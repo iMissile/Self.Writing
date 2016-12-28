@@ -1,7 +1,13 @@
+# 22.12.2016
+## LoRa
+- [LoRaWAN™ For Developers](https://www.lora-alliance.org/For-Developers/LoRaWANDevelopers)
+- [LoRaWAN](https://www.thethingsnetwork.org/wiki/LoRaWAN/Home)
+LoRaWAN is a media access control (MAC) protocol for wide area networks. It is designed to allow low-powered devices to communicate with Internet-connected applications over long range wireless connections. LoRaWAN can be mapped to the second and third layer of the OSI model. It is implemented on top of LoRa or FSK modulation in industrial, scientific and medical (ISM) radio bands. The LoRaWAN protocols are defined by the LoRa Alliance and formalized in the LoRaWAN Specification.
+
+
 # 09.12.2016
 - [Node-RED](https://nodered.org/). A visual tool for wiring the Internet of Things
 - [Программируем управление освещением по датчикам движения и освещения на Node-RED](https://geektimes.ru/post/279814/)
-
 
 
 # Future IoT

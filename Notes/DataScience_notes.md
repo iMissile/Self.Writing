@@ -1,6 +1,117 @@
+- [Запчасти к мясорубке Zelmer](http://vaprom.ru/shop/c16.zelmer.htm)
+
+# 27.12.2016
+## R
+- COOL! [Data Preparation, Long Form and tl;dr Form](http://www.win-vector.com/blog/2016/12/data-preparation-long-form-and-tldr-form/). Or alternately, below is the tl;dr (“too long; didn’t read”) form.
+Our concrete advice is: when building a supervised model (regression or classification) in R, prepare your training, test, and application data by doing the following.
+- COOL! [Why you should master R (even if it might eventually become obsolete)](http://sharpsightlabs.com/blog/master-r-obsolete)
+
+# 26.12.2016
+## R
+- Материалы для обучения R. [Descriptive Analytics-Part 5: Data Visualisation (Spatial data)](http://r-exercises.com/2016/12/26/descriptive-analytics-part-5-data-visualisation-spatial/)
+- [Functional programming and unit testing for data munging with R available on Leanpub](http://www.brodrigues.co/2016/12/24/functional-programming-and-unit-testing-for-data-munging-with-r-available-on-leanpub)
+
+## Shiny
+- [Googly: An interactive app for analyzing IPL players, matches and teams using R package yorkr](https://gigadom.wordpress.com/2016/12/25/googly-an-interactive-app-for-analyzing-ipl-players-matches-and-teams-using-r-package-yorkr/). Само приложение хостится [здесь](https://tvganesh.shinyapps.io/googly/)
+
+# 23.12.2016
+## R
+- [Comparative examples using replyr:let](http://www.win-vector.com/blog/2016/12/comparative-examples-using-replyrlet/)
+
+
+# 22.12.2016
+
+## Games
+- [REVIEW: SPACE FOOD TRUCK BY JP MARR 10 DEC 2016](http://www.pockettactics.com/reviews/review-space-food-truck/)
+	- [OML has posted a series of video tutorials to YouTube](https://www.youtube.com/user/onemanleftstudios)
+## R
+- [Work on lists of datasets instead of individual datasets by using functional programming](http://www.brodrigues.co/2016/12/21/work-on-lists-of-datasets-instead-of-individual-datasets-by-using-functional-programming)
+- [Inspecting R in GDB (with Python)](https://random-remarks.net/2016/12/21/inspecting-r-in-gdb-with-python/). Today I spent a few hours debugging a hanging R process that left a zombie sh which so far suggests bug (race condition?) in R’s system2() call.
+- [R for Enterprise: How to Scale Your Analytics Using R](https://www.rstudio.com/rviews/2016/12/21/r-for-enterprise-how-to-scale-your-analytics-using-r/)
+
+# 21.12.2016
+## R
+- Статья [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html)
+- Презентация [Debugging with Shiny](http://rpubs.com/jmcphers/149638)
+- [Shiny tips & tricks for improving your apps and solving common problems](http://deanattali.com/blog/advanced-shiny-tips/)
+- [Using R packages and education to scale Data Science at Airbnb](https://medium.com/airbnb-engineering/using-r-packages-and-education-to-scale-data-science-at-airbnb-906faa58e12d)
+- [ggplot2 tech themes, scales, and geoms https://twitter.com/ricardobion](https://github.com/ricardo-bion/ggtech)
+
+# 20.12.2016
+## Math
+- [Среднеквадратическая ошибка модели. RMSE\MSE](http://statistica.ru/glossary/general/srednekvadraticheskaya-oshibka/)
+- [Среднеквадратичная ошибка (RMSE)](http://gis-lab.info/qa/rmse.html). Краткое объяснение что такое RMSE применительно к данным ДЗЗ
+- [Compare R-squared from two different Random Forest models](http://stats.stackexchange.com/questions/13869/compare-r-squared-from-two-different-random-forest-models)
+
+## R
+- [Baseline Characteristics Tables with qwraps2](http://www.peteredewitt.com//2016/summary-table/)
+- [Secondary Axis in ggplot2 v2.2.0](http://www.peteredewitt.com/2016/secondary-axis-ggplot2-v2.2.0/)
+### Gantt Charts
+- COOL! [Gantt charts with R](http://stackoverflow.com/questions/3550341/gantt-charts-with-r). Подборка различных методик.
+- COOL! [Revisiting Gantt Charts](http://mescal.imag.fr/membres/arnaud.legrand/blog/2013/03/20/revisiting-gantt-charts.php)
+- [Gantt charts in R](http://lazappi.id.au/gantt-charts-in-r/). Using DiagrammeR/mermaid
+- [Gantt Chart in R](https://rpubs.com/mramos/ganttchart). Using plotrix
+- [PlotPrjNetworks](https://cran.r-project.org/web/packages/PlotPrjNetworks/index.html): Useful Networking Tools for Project Management
+- [Plotting “time of day” data using ggplot2](https://nsaunders.wordpress.com/2010/04/14/plotting-time-of-day-data-using-ggplot2/)
+- [Gantt Charts in R using Plotly](http://moderndata.plot.ly/gantt-charts-in-r-using-plotly/)
+- [vis.js](http://visjs.org/). A dynamic, browser based visualization library. The library is designed to be easy to use, to handle large amounts of dynamic data, and to enable manipulation of and interaction with the data. The library consists of the components DataSet, Timeline, Network, Graph2d and Graph3d.
+- [TimelineJS](http://timeline.knightlab.com/). Beautifully crafted timelines that are easy and intuitive to use.
+- [Variance charts](https://variancecharts.com/). Build powerful data visualizations for the web. Without writing JavaScript. Timeline.
+Variance empowers engineers, designers, journalists, scientists, and analysts to build elegant bespoke data graphics for the web, using only HTML & CSS. Our intuitive, markup-based grammar emphasizes clear, practical graphics and serves as the foundation for a wide range of visualizations.
+- Другие инструменты. [What open source or free tool makes beautiful Gantt Charts?](https://www.quora.com/What-open-source-or-free-tool-makes-beautiful-Gantt-Charts)
+	- [Online Gantt Chart Software](http://www.teamgantt.com/)
+	- [Office timeline](https://www.officetimeline.com/)
+- COOL! [10 Unmissable Tools for the Gantt Chart Guru](http://www.eventmanagerblog.com/tools-gantt-chart/)
+- [Instagantt](https://instagantt.com/). Gantt Charts for Asana
+- [GanttProject](http://www.ganttproject.biz/index.php). Free project scheduling and management app for Windows, OSX and Linux.
+- [Gantic](http://www.ganttic.com/tour). Ganttic is a resource planning software for the big and the small. It gets things done.
+- [Liquid Planner](https://www.liquidplanner.com/). Good Teams Plan. Great Teams Execute. Try the only Dynamic Project Management solution designed for fast-moving teams.
+- [Gantter](http://gantter.com/). FREE cloud-based project scheduling.
+
+## DS
+- [What is rosettaHUB?](https://www.rosettahub.com/welcome) A revolutionary cloud-native platform designed to empower data scientists, researchers and educators who need virtual, collaborative and traceable access to data science tools and infrastructures
+
+
+# 19.12.2016
+## Windows
+- [AutoHotkey (AHK)](https://autohotkey.com/) is a free, open-source macro-creation and automation software for Windows that allows users to automate repetitive tasks.
+- [Determining which program trapping which hot key shortcut](http://superuser.com/questions/219629/determining-which-program-trapping-which-hot-key-shortcut)
+- [Hotkey Commander (Abbreviation HC)](http://hkcmdr.anymania.com/index.html) is a powerful hotkey managing and overriding tool for Windows®. If you are a frequent hotkey user, you may found that while hotkeys bring much convenience and advantages, they act rudely and annoyingly sometimes. Hotkeys are usually defined or registered by individual applications. Some moral applications would allow users to redefine their hotkey combination so that they don't conflict with other hotkeys. Some "evil" applications won't at all. No matter what more and more hotkeys may become chaos and make you confused at last. Even if you don't use hotkeys at all, you may want to disable or override hotkeys occasionally so as not to be interrputed by their default actions.
+
+## R
+- [Minding the zoo{keeper} with R](https://rud.is/b/2016/12/16/minding-the-zookeeper-with-r/)
+- [R graphs and tables in Power BI Desktop](https://tomaztsql.wordpress.com/2016/12/18/r-graphs-and-tables-in-power-bi-desktop/)
+- COOL! [SPEED UP YOUR CODE: PARALLEL PROCESSING WITH MULTIDPLYR](http://www.mattdancho.com/code-tools/2016/12/18/multidplyr.html)
+- [hadley/multidplyr. Partitioned data frames for 'dplyr'](https://github.com/hadley/multidplyr)
+- [Using googlesheets and mailR packages in R to automate reporting](http://pacha.hk/googlesheets_automatic_reporting.html)
+- [Customizable defaults for Positioning Functions](http://directlabels.r-forge.r-project.org/examples.html)/. Не совсем в идеологии ggplot.
+
+## DS
+- [Why Type 1 errors are more important than Type 2 errors (if you care about evidence)](http://daniellakens.blogspot.ru/2016/12/why-type-1-errors-are-more-important.html)
+
 # 16.12.2016
 ## Shiny
 - [Dynamically generated Shiny UI](http://www.mango-solutions.com/wp/2016/12/dynamically-generated-shiny-ui/) 15 Dec 16, Gábor Csárdi — Mango Solutions
+- COOL! [ggplot2 graph quality in shiny on shinyapps.io](http://stackoverflow.com/questions/26285786/ggplot2-graph-quality-in-shiny-on-shinyapps-io).
+- [R Shiny server not rendering correct ggplot font family](http://stackoverflow.com/questions/31859911/r-shiny-server-not-rendering-correct-ggplot-font-family)
+Just a guess, try including `library(Cairo);options(shiny.usecairo=TRUE)` in your server.R or in global.R.
+- [Shiny 0.12: Interactive Plots with ggplot2](https://blog.rstudio.org/2015/06/16/shiny-0-12-interactive-plots-with-ggplot2/)
+You can use mouse events to read mouse coordinates, select or deselect points, and implement zooming. Here are some example applications:
+	- [Basic interactions](http://shiny.rstudio.com/gallery/plot-interaction-basic.html)
+	- [Zooming](http://shiny.rstudio.com/gallery/plot-interaction-zoom.html)
+	- [Advanced interactions: This demonstrates many advanced features of interactive plots.](http://shiny.rstudio.com/gallery/plot-interaction-advanced.html)
+	- [Excluding points {as depicted in the screen capture above}](http://shiny.rstudio.com/gallery/plot-interaction-exclude.html)
+- [Selecting rows of data](http://shiny.rstudio.com/articles/selecting-rows-of-data.html)
+- [Shiny Interactive plots articles](http://shiny.rstudio.com/articles/#interactive-plots)
+- [Shiny + GGplot - mouse click coordinates](http://stackoverflow.com/questions/30781379/shiny-ggplot-mouse-click-coordinates)
+	- [Global options for Shiny](https://shiny.rstudio.com/reference/shiny/latest/shiny-options.html)
+- [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)` Showcase Mode!!!
+- [showcase display mode for published app in shinyapps.io](http://stackoverflow.com/questions/26291523/showcase-display-mode-for-published-app-in-shinyapps-io)
+You can provide information about your app that Shiny showcase will use by creating a DESCRIPTION file.
+- [Scoping rules for Shiny apps](https://shiny.rstudio.com/articles/scoping.html)
+- [Shiny Display modes](http://shiny.rstudio.com/articles/display-modes.html)
+- [Effectively debugging Shiny apps](http://stackoverflow.com/questions/31920286/effectively-debugging-shiny-apps)
+- [Display element ids for debugging Shiny apps](http://blog.mckuhn.de/2016/04/display-element-ids-for-debugging-shiny.html)
 
 ## R
 - При использовании 'geom_nodelabel_repel'(`ggnetwork`) возникает следующая ошибка: "Ignoring unknown parameters: segment.color"
@@ -56,6 +167,7 @@ kept by all operations, if possible. See more about attributes in the next secti
 
 ## R
 - [CCTZ is a C++ library for translating between absolute and civil times using the rules of a time zone](http://dirk.eddelbuettel.com/blog/2016/12/12/#rcppcctz_0.1.0)
+- [nanotime 0.0.1: New package for Nanosecond Resolution Time for R](http://dirk.eddelbuettel.com/blog/2016/12/16/#nanotime_0.0.1)
 
 ## R Interactive plots
 - [Interactive plots](https://shiny.rstudio.com/articles/plot-interaction.html)
@@ -93,11 +205,6 @@ one of the layout_ functions.
 	- [Short tutorial on using functions in package “intergraph”](http://mbojan.github.io/intergraph/howto.html#network-igraph)
 - COOL! [Interactive and Dynamic Network Visualization in R](http://curleylab.psych.columbia.edu/netviz/). slides from my NYC R Meetup Talk on 6th April 2016.
 - COOL! [Examples for the igraph package](http://michael.hahsler.net/SMU/LearnROnYourOwn/code/igraph.html)
-
-## IoT
-- [Alternatives to Standard Arduino IDE: Which One To Choose?](https://www.intorobotics.com/alternatives-standard-arduino-ide-one-choose/)
-- [Почему я не люблю Arduino](http://microsin.net/programming/avr/why-i-hate-arduino.html)
-- [Arduion homepage](https://www.arduino.cc/)
 
 # 13.12.2016
 ## R
@@ -179,6 +286,7 @@ OpenCPU is a system for embedded scientific computing and reproducible research.
 
 ### Shiny
 - [Arrow72/CoolDashboard](https://github.com/Arrow72/CoolDashboard). R dashboard as a designer http://ru-datascience.ru/2015/10/28/dizajnerskij-dashboard/
+- [R: How to Layout and Design an Infographic](http://alstatr.blogspot.ru/2015/02/r-how-to-layout-and-design-infographic.html)
 - [Cairo](https://cran.r-project.org/web/packages/Cairo/index.html) graphics device that can be use to create high-quality vector (PDF, PostScript and SVG) and bitmap output (PNG,JPEG,TIFF), and high-quality rendering in displays (X11 and Win32).
 
 
@@ -1318,7 +1426,7 @@ Other common uses of formula objects in R
 - [Exploring ways for using DiagrammeR to generate graphs/plots that can be exported to svg and included in knitr documents.](http://www.carlboettiger.info/2015/05/15/diagrammer.html)
 	- [Week 14 | Exporting Widget](http://www.buildingwidgets.com/blog/2015/4/9/week-14-exporting-widget)
 - [Creating network visualisations interactively with DiagrammeR and Shiny](https://timesenses.wordpress.com/2016/01/05/creating-network-visualisations-interactively-with-diagrammer-and-shiny/)
--[Using DiagrammeR in Word document (generated using rMarkdown)](http://stackoverflow.com/questions/30307191/using-diagrammer-in-word-document-generated-using-rmarkdown)
+- [Using DiagrammeR in Word document (generated using rMarkdown)](http://stackoverflow.com/questions/30307191/using-diagrammer-in-word-document-generated-using-rmarkdown)
 
 - [Trelliscope: Detailed Visualization of Large Complex Data in R](https://github.com/tesseradata/trelliscope)
 	- [trelliscope - Tutorial](http://tessera.io/docs-trelliscope/#introduction). Trelliscope provides a way to flexibly visualize large, complex data in great detail from within the R statistical programming environment. Trelliscope is a component in the Tessera environment.
