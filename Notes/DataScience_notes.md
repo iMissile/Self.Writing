@@ -3,6 +3,11 @@
 
 # 09.01.2017
 
+## Запускаем Rmd -> PDF
+- При компиляции в PDF возникает ошибка `! Package inputenc Error: Unicode char Рѕ (U+43E)`. Ищем ответы здесь: [Package inputenc Error: Unicode char \u8 in RStudio](http://stackoverflow.com/questions/32794157/package-inputenc-error-unicode-char-u8-in-rstudio)
+- Компиляция .tex ломается на команде '\href{}' при `inputenc=utf8` и `fontencoding=T2A`
+- [Knit PDF and la-tex (russian text)](http://qa.piterdata.ninja/p/1742/)
+
 ## Reports
 - [Markdown to PDF](http://www.markdowntopdf.com/). Just select a file that contains some markup and we'll convert it to a pdf in a snap.
 
@@ -39,10 +44,14 @@ createReport <- function(xmlfile, Rnwfile) {
   save the pdf file on disc
 }
 ```
+- [R Markdown: PDF Documents](http://rmarkdown.rstudio.com/pdf_document_format.html)
+- [use knitr (knit2pdf) to generate a PDF report in a Shiny app](http://bl.ocks.org/yihui/6091942)
 - [create pretty PDF report file in R](http://stackoverflow.com/questions/31054359/create-pretty-pdf-report-file-in-r)
 - [Automated PDF reports using R Markdown](https://www.orchardplatform.com/blog/automated-pdf-reports-using-r-markdown-2/). **There are a few limitations, and LaTeX is a bit difficult to work with, but the R Markdown facility is by far the best PDF report builder that we have found so far.** Пример [отчетика](http://www.orchardplatform.com/wp-content/uploads/2015/09/Consumer-Unsecured-Quarterly-Profile.pdf)
 - [Create PDF reports using R, R Markdown, LaTeX and knitr (on Windows 10)](https://medium.com/@sorenlind/create-pdf-reports-using-r-r-markdown-latex-and-knitr-on-windows-10-952b0c48bfa9)
 - [Create multiple customized reports using latex, sweave, and R](https://www.linkedin.com/pulse/creating-repetitive-reports-using-latex-sweave-r-anissa-mike)
+- [pander: An R Pandoc Writer](https://cran.r-project.org/web/packages/pander/README.html)
+- [Reproducible research with R, Knitr, Pandoc and Word](http://blog.rolffredheim.com/2013/02/reproducible-research-with-r-knitr.html)
 
 
 ## Radio
