@@ -18,6 +18,16 @@
 - [Что такое DevAddr?](http://lorawan.lace.io/sp_faq/devaddr/)
 DevAddr — 32-битный (четырехбайтный) сетевой адрес для адресации пакетов на сетевом уровне, имеет уникальное значение в пределах сети оператора (можно провести аналогию c MAC адресом, который тоже обеспечивает адресацию на 2 уровне модели OSI в сетях Ethernet, но способ получения DevAddr при OTAA сходен с получением динамического IP адреса, получаемого от DHCP сервера в TCP/IP сетях). Старшие 7 бит DevAddr содержат адрес сети оператора NwkID, это значение должно быть уникальными для находящихся рядом сетей и для сетей, имеющих перекрывающиеся зоны покрытия. Чаще всего, для обозначения DevAddr, используют четырехбайтную последовательность, например: 02:D1:D2:01, в которой старший байт является адресом сети NwkID (если снова проводить аналогию, то адрес сети оператора NwkID аналогичен трехбайтному коду изготовителя сетевого оборудования в MAC адресах в Ethernet сетях).
 - [Методика расчета температуры по сопротивлению термометров сопротивления](http://temperatures.ru/pages/raschet_temperatury)
+- Детальный тред на TTN по запуску Node. [Over-the-air-activation OTAA with LMIC](https://www.thethingsnetwork.org/forum/t/over-the-air-activation-otaa-with-lmic/1921/7)
+- Тред [Arduino LMIC library updated](https://www.thethingsnetwork.org/forum/t/arduino-lmic-library-updated/1295) by matthijs
+
+## LmIc FAQ
+Q: Каким образом можно изменить настройку диагностических сообщений библиотеки?
+A: Библиотека 'lmic/config.h'. Установить `LMIC_DEBUG_LEVEL` в уровень 2 и раскомментировать строку `//#define LMIC_PRINTF_TO Serial`
+
+Q: Что такое PIR?
+A: PIR - Passive infrared sensor
+
 
 # Arduiono & PIC
 - [Знакомство с Arduino](http://atroshin.ru/ru/content/znakomstvo-s-arduino)
@@ -54,6 +64,8 @@ To begin talking to the radio, you will need to download the RadioHead library. 
 Note that while all the code in the examples below are based on this version you can visit the RadioHead documentation page to get the most recent version which may have bug-fixes or more functionality
 - [LoRa FeatherWing IOX for Adafruit Feather](http://syncchannel.blogspot.ru/2016/03/lora-featherwing-iox-for-adafruit.html). Once I am done developing boards for the RFM95/96(W) modules, I may turn to a more sophisticated LoRaWAN module, such as the MicroChip RN2903.
 - [Lo-Ra - Сообщество разработчиков LoRaWAN LPWAN](http://lo-ra.ru/forum/)
+- [Pirio. LoRa PIR Sensor](http://allorafactory.com/pirio/) Accurate motion monitoring.
+- [Пироэлектрический инфракрасный (PIR) датчик движения и Arduino](http://arduino-diy.com/arduino-piroelektricheskiy-infrakrasnyy-PIR-datchik-dvizheniya)
 
 
 ## Проблемы с выводом в Serial

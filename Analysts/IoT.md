@@ -1,3 +1,7 @@
+# 29.12.2016
+## Hardware
+- [The Parallella Board](https://www.parallella.org/). 18-core credit card sized computer
+
 # 22.12.2016
 ## LoRa
 - [LoRaWAN™ For Developers](https://www.lora-alliance.org/For-Developers/LoRaWANDevelopers)

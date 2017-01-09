@@ -1,5 +1,61 @@
 - [Запчасти к мясорубке Zelmer](http://vaprom.ru/shop/c16.zelmer.htm)
 
+
+# 09.01.2017
+
+## Reports
+- [Markdown to PDF](http://www.markdowntopdf.com/). Just select a file that contains some markup and we'll convert it to a pdf in a snap.
+
+## R
+- [The Most Important Commodity in 2017 is Data](https://rud.is/b/2017/01/04/the-most-important-commodity-in-2017-is-data/)
+- [ReportLab](http://www.reportlab.com/). Generating PDFs from Wall Street to Wikipedia. 
+We build solutions to generate rich, attractive and fully bespoke PDF documents at incredible speeds. Serve high quality personalised documents in real time and support all kinds of delivery from web downloads to digital print from a single API.
+
+## Python
+- [Creating PDF Reports with Pandas, Jinja and WeasyPrint](http://pbpython.com/pdf-reports.html)
+
+# 29.12.2016
+## R
+- [Behind the scenes of CRAN](http://blog.h2o.ai/2016/12/behind-the-scenes-of-cran/). Just from my point of view as a package maintainer.
+	Весьма интересно поглядеть про автотесты и поиск причины поломки. https://github.com/Rdatatable/data.table/blob/master/inst/tests/tests.Rraw#L444-L447
+- [Authentication Proxy on Shiny Open Source](http://blog.datascienceheroes.com/authentication-proxy-on-shiny-open-source/)
+- [Adding Authentication to Shiny Server in 4 Simple Steps](https://auth0.com/blog/adding-authentication-to-shiny-server/). Learn how to add authentication to your free Shiny Server setup and secure your interactive R apps!
+	- [Auth0 + Shiny proxy](https://github.com/auth0/shiny-auth0). This server proxies a shiny instance protecting it with Auth0
+	- [Auth0](https://auth0.com). Auth0 is an enterprise-grade platform for modern identity. We give you tools that eliminate the friction of authentication for your applications and APIs - all accessible through your account dashboard.
+	- [Webtask](https://webtask.io/). All you need is code. Run code with an HTTP call. No provisioning. No deployment.
+- [Shiny: Generating downloadable reports](https://shiny.rstudio.com/articles/generating-reports.html). After interacting with a Shiny application and getting it certain state, your users may want to download a report in HTML or PDF format. You can easily add the ability to generate a report with knitr and rmarkdown at the click of a button.
+	- [PDF report download Demo app](http://shiny.rstudio.com/gallery/download-knitr-reports.html)
+- [Top 10 things that suck about Sweave](https://www.r-bloggers.com/top-10-things-that-suck-about-sweave/). December 1, 2010
+- [How to create PDF reports with R](http://blog.revolutionanalytics.com/2010/12/how-to-create-pdf-reports-with-r.html). December 01, 2010
+- [Generate Report in R](http://stackoverflow.com/questions/37097535/generate-report-in-r)
+- [create pdf reports in a loop (using latex and knitr) {duplicate}](http://stackoverflow.com/questions/25413091/create-pdf-reports-in-a-loop-using-latex-and-knitr)
+```{r}
+createReport <- function(xmlfile, Rnwfile) {
+  ff <- parse xmlfile
+  extract relevant data from ff
+  calculate stats and generate tables and figures
+  call knitr such that the correct variable names, stats, etc are fed into the Rnw file
+  knit into a pdf file
+  save the pdf file on disc
+}
+```
+- [create pretty PDF report file in R](http://stackoverflow.com/questions/31054359/create-pretty-pdf-report-file-in-r)
+- [Automated PDF reports using R Markdown](https://www.orchardplatform.com/blog/automated-pdf-reports-using-r-markdown-2/). **There are a few limitations, and LaTeX is a bit difficult to work with, but the R Markdown facility is by far the best PDF report builder that we have found so far.** Пример [отчетика](http://www.orchardplatform.com/wp-content/uploads/2015/09/Consumer-Unsecured-Quarterly-Profile.pdf)
+- [Create PDF reports using R, R Markdown, LaTeX and knitr (on Windows 10)](https://medium.com/@sorenlind/create-pdf-reports-using-r-r-markdown-latex-and-knitr-on-windows-10-952b0c48bfa9)
+- [Create multiple customized reports using latex, sweave, and R](https://www.linkedin.com/pulse/creating-repetitive-reports-using-latex-sweave-r-anissa-mike)
+
+
+## Radio
+- [Multimedia with LTE - real bonding instead of only Load Balancing](https://www.viprinet.com/en/technology/combinable-media/lte-4g)
+- [Paplink MAX Multi-Cellular Router](http://www.peplink.com/products/max-cellular-router/multi-cellular/#M700). Quad USB Rugged Mobile Router
+- [SpeedFusionTM Bonding Technology](http://www.peplink.com/technology/speedfusion-bonding-technology/)
+- [Rerouting T1 signal over a wide area network](https://www.google.com/patents/US9094152)
+- [Введение в LTE-Advanced](http://www.russianelectronics.ru/leader-r/review/2187/doc/56316/)
+- [Building a Software-Defined Radio](http://www.digikey.com/en/articles/techzone/2014/feb/building-a-software-defined-radio)
+- [Software-Defined Radio Solutions from Analog Devices](http://www.analog.com/media/en/news-marketing-collateral/solutions-bulletins-brochures/Software-Defined-Radio-Solutions-From-ADI.pdf)
+- [OpenLTE](http://openlte.sourceforge.net/). OpenLTE is an open source implementation of the 3GPP LTE specifications.
+
+
 # 27.12.2016
 ## R
 - COOL! [Data Preparation, Long Form and tl;dr Form](http://www.win-vector.com/blog/2016/12/data-preparation-long-form-and-tldr-form/). Or alternately, below is the tl;dr (“too long; didn’t read”) form.
