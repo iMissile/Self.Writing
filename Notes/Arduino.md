@@ -1,3 +1,27 @@
+# Запускаем TTN
+## Конфигурация
+Терминал построен на Arduino Pro Mini (ATmega 328, 3.3V). Для правильной диагностики через COM порт необходимо корректно выставлять частоту в IDE.
+Модем -- [AnyLink lora DP1276](http://www.eltech.spb.ru/news/radiomodul_dp1276_dlya_diapazona_433868915_mgc_s_dalnostyu_raboti_do_12_km_ot_anylink)
+
+## Вывод в COM порт. Особенности
+- [Русский текст в монитор порта. Сбой кодировки.](http://arduino.ru/forum/obshchii/russkii-tekst-v-monitor-porta-sboi-kodirovki)
+- [Arduino Serial Monitor Pro (Ардуино Монитор Порта Про)](http://arduino.on.kg/serialMonitor)
+- [Как отправлять русский текст в сериал порт](http://blog.iarduino.ru/page/kak-otpravlyat-russkiy-tekst-v-serial-port/)
+
+## Шаги по запуску
+- Для разводки используем пример [Build the cheapest possible node yourself](https://www.thethingsnetwork.org/labs/story/build-the-cheapest-possible-node-yourself) by Martijn Quaedvlieg.
+- Используем библиотеку [LoraWAN-in-C library, adapted to run under the Arduino environment](https://github.com/matthijskooijman/arduino-lmic)
+- Из директории `examples` берем скетч `ttn-otaa`
+- Включаем вывод диагностических сообщений. Библиотека 'lmic/config.h': Установить `LMIC_DEBUG_LEVEL` в уровень 2 и раскомментировать строку `//#define LMIC_PRINTF_TO Serial`
+- Добавим дополнительный диагностический вывод по проверке версии радиочипа
+```{c}
+ // some sanity checks, e.g., read version number
+    u1_t v = readReg(RegVersion);
+    printf("%o\n", v);
+```
+
+
+
 # Интерфейсы
 - [Обзор шины SPI и разработка драйвера ведомого SPI устройства для embedded Linux (Часть первая, обзорная)](https://habrahabr.ru/post/123145/)
 	- Что это за статья?
@@ -84,9 +108,7 @@ Note that while all the code in the examples below are based on this version you
 - [Introducing Pro Trinket. Trinket's got a big sister in town - the Pro Trinket 5V!](https://learn.adafruit.com/introducing-pro-trinket/overview)
 
 # Arduino IDE
-- [Русский текст в монитор порта. Сбой кодировки.](http://arduino.ru/forum/obshchii/russkii-tekst-v-monitor-porta-sboi-kodirovki)
-- [Arduino Serial Monitor Pro (Ардуино Монитор Порта Про)](http://arduino.on.kg/serialMonitor)
-- [Как отправлять русский текст в сериал порт](http://blog.iarduino.ru/page/kak-otpravlyat-russkiy-tekst-v-serial-port/)
+
 
 # Электроника
 - [ATmega328](http://www.atmel.com/ru/ru/devices/ATMEGA328.aspx)
