@@ -19,7 +19,20 @@
     u1_t v = readReg(RegVersion);
     printf("%o\n", v);
 ```
-
+- Проверяем, как устроен ресет радиомодема. У нас модем sx1276, макрос определен в `config.h`. Код из `\libraries\arduino-lmic-master\src\lmic\radio.c`
+```{c}
+     671  void radio_init () {
+     672      hal_disableIRQs();
+     673  
+     674      // manually reset radio
+     675  #ifdef CFG_sx1276_radio
+     676      hal_pin_rst(0); // drive RST pin low
+     677  #else
+     678      hal_pin_rst(1); // drive RST pin high
+     679  #endif
+```
+Подобная ошибка обсуждается на форуме TTN: [HOPERF95W on Arduino MEGA - not working](https://www.thethingsnetwork.org/forum/t/hoperf95w-on-arduino-mega-not-working/718). Можно заглянуть еще в блок 'Pin mapping'
+- Не до конца понятно, что такое floating состояние. Видимо, просто висящий конец. Но не понятно, как это осуществляется путем установки rst в 2. К сведению, полезная публикация, проливающая свет на вопрос плавающих входов: [Arduino Internal Pull-Up Resistor Tutorial. Make pushbuttons behave with one simple keyword]()https://www.baldengineer.com/arduino-internal-pull-up-resistor-tutorial.html). А также, видео [Floating Pins, Pull-Up Resistors and Arduino](https://programmingelectronics.com/floating-pins-pull-up-resistors-and-arduino/) и комиксы [AVR. Учебный курс. Устройство и работа портов ввода-вывода](http://easyelectronics.ru/avr-uchebnyj-kurs-ustrojstvo-i-rabota-portov-vvoda-vyvoda.html)
 
 
 # Интерфейсы
