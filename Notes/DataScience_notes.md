@@ -1,20 +1,58 @@
 - [Запчасти к мясорубке Zelmer](http://vaprom.ru/shop/c16.zelmer.htm)
 
 
+# 10.01.2017
+## R
+- [awesome-r](https://libraries.io/github/uhub/awesome-r). A curated list of awesome R frameworks, libraries and software.
+- [hrbrmisc](https://github.com/hrbrmstr/hrbrmisc). personal R pkg. Вышел на опцию `install_github("hrbrmstr/hrbrmisc")`
+- См. ниже решение проблемы по апдейту ReporteRs. Надо ручкаи указывать `install.packages("ReporteRs", INSTALL_opts = "--no-multiarch")`, чтобы R выбирал правильную x архитектуру.
+
+
+
 # 09.01.2017
 
 ## Запускаем Rmd -> PDF
 - При компиляции в PDF возникает ошибка `! Package inputenc Error: Unicode char Рѕ (U+43E)`. Ищем ответы здесь: [Package inputenc Error: Unicode char \u8 in RStudio](http://stackoverflow.com/questions/32794157/package-inputenc-error-unicode-char-u8-in-rstudio)
 - Компиляция .tex ломается на команде '\href{}' при `inputenc=utf8` и `fontencoding=T2A`
-- [Knit PDF and la-tex (russian text)](http://qa.piterdata.ninja/p/1742/)
+- [Knit PDF and la-tex (russian text)](http://qa.piterdata.ninja/p/1742/). Тут много полезного про управление опциями в заголовке самого документа.
+- Попытка включить T2A шрифты (видимо, так) приводит к такой ошибке: `pdfTeX error (font expansion): auto expansion is only possible with scalable fonts. \AtBegShi@Output ...ipout \box \AtBeginShipoutBox`
+- Как обычно, мучаемся с русскими шрифтами в LaTeX в PDF. [Установка PSCyr для Latex](http://blog.harrix.org/article/444)
+- Русские буквы, используем XeLaTeX:
+```
+    latex_engine: xelatex
+header-includes:
+ \usepackage[T2A]{fontenc}
+ \usepackage[utf8]{inputenc}
+ \usepackage[russian]{babel}
+ \usepackage{fontspec}
+ \setmainfont{Cambria}
+```
+- Проблема с отображением русских букв на графиках. Ошибки подобного рода:
+	- Warning in title(...): неизвестна ширина символа 0xf2	
+	- Warning in grid.Call(L_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : неизвестна ширина символа 0xf0
+	- Warning in grid.Call(L_stringMetric, as.graphicsAnnot(x$label)): неизвестны шрифтовые метрики для символа 0xe
+Нашел очень подробный багтрекер на эту тему в репозитории knitr: [[R Sweave] Cyrillic characters in plots #436](https://github.com/yihui/knitr/issues/436). Также полезно почитать про механику генерации графиков в идеологии knitr в книге "Dynamic Documents with R anf knitr, 2nd edition". Концепции Graphical Device, Encoding, Plot Recording (п. 7.1, 7.2). Рекомендуют использовать cairo_pdf, в т.ч. в книге (п 7.2)ю
+В принципе, решение указывать в chunk опцию `dev="cairo_pdf"` срабатывает.
+- Нюансы с подключением доп пакетов и стилей в R markdown имеют несколько решений. Примеры решений, например, в этой подборке:
+	- [How to include LaTeX package in R Markdown?](http://tex.stackexchange.com/questions/171711/how-to-include-latex-package-in-r-markdown)
+	- [R markdown: PDF Documents. Overview](http://rmarkdown.rstudio.com/pdf_document_format.html)
+- Много полезных примеров в [Knitr with R Markdown by Karl Broman](http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html)
+- Читаем подробненько про схему работы knitr также в [Introduction to knitr by Michael Sachs](https://sachsmc.github.io/knit-git-markr-guide/knitr/knit.html)
+- [MarkdownReports. An R function library to generate (scientific) reports easily](http://markdownreports.github.io/). MarkdownReports is a set of R functions that allows you to generate precise figures easily, and create clean reports about what you just discovered with your analysis script.
+- [Programmatically creating Markdown tables in R with KnitR](http://stackoverflow.com/questions/15488350/programmatically-creating-markdown-tables-in-r-with-knitr)
+- Весьма нетривиальный вопрос, а как же сделать комментарии в R markdown. В ответе [Comments in Markdown](http://stackoverflow.com/questions/4823468/comments-in-markdown) рассмотрена масса различные варианты для markdown в целом.
 
 ## Reports
 - [Markdown to PDF](http://www.markdowntopdf.com/). Just select a file that contains some markup and we'll convert it to a pdf in a snap.
-
-## R
-- [The Most Important Commodity in 2017 is Data](https://rud.is/b/2017/01/04/the-most-important-commodity-in-2017-is-data/)
 - [ReportLab](http://www.reportlab.com/). Generating PDFs from Wall Street to Wikipedia. 
 We build solutions to generate rich, attractive and fully bespoke PDF documents at incredible speeds. Serve high quality personalised documents in real time and support all kinds of delivery from web downloads to digital print from a single API.
+
+## R
+- [How to annotate() ggplot with latex]()http://stackoverflow.com/questions/12514612/how-to-annotate-ggplot-with-latex)
+- LaTeX формулы на графиках:
+	- Подход 1. Функция `expression`: [Greek and alpha numeric in ggplot2 axis labels](http://stackoverflow.com/questions/15841538/greek-and-alpha-numeric-in-ggplot2-axis-labels)
+	- Подход 2. Пакет `latex2exp`: [latex2exp is an R package that parses and converts LaTeX math formulas to R’s plotmath expressions.](ftp://cran.r-project.org/pub/R/web/packages/latex2exp/vignettes/using-latex2exp.html)
+- [The Most Important Commodity in 2017 is Data](https://rud.is/b/2017/01/04/the-most-important-commodity-in-2017-is-data/)
 
 ## Python
 - [Creating PDF Reports with Pandas, Jinja and WeasyPrint](http://pbpython.com/pdf-reports.html)
@@ -660,7 +698,7 @@ df %>%
 ## R
 - [Introducing R-hub, the R package builder service](http://blog.revolutionanalytics.com/2016/10/r-hub-public-beta.html)
 	- [The r-hub builder](https://builder.r-hub.io/)
-- rJava: версия R и версия Java должны совпадать (либо оба x86, либо оба x64)
+- rJava: версия R и версия Java должны совпадать (либо оба x86, либо оба x64). Важно в т.ч. для пакета ReporteR.
 	- [package or namespace load failed for ‘rJava’ #49]
 	- [R - Error: .onLoad failed in loadNamespace() for 'rJava'](http://stackoverflow.com/questions/37735108/r-error-onload-failed-in-loadnamespace-for-rjava)
 This error is often resolved by installing a Java version (i.e. 64-bit Java or 32-bit Java) that fits to the type of R version that you are using (i.e. 64-bit R or 32-bit R). This problem can easily effect Windows 7 users, since they might have installed a version of Java that is different than the version of R they are using.
@@ -673,6 +711,29 @@ Sys.setenv(JAVA_HOME='C:\\Program Files\\Java\\jre7') # for 64-bit version
 Sys.setenv(JAVA_HOME='C:\\Program Files (x86)\\Java\\jre7') # for 32-bit version
 library(rJava)
 ```
+- Отличный набор советов по попытке оживления rJava. [Error caused by rJava when loading ReporteRs package](http://stackoverflow.com/questions/29384396/error-caused-by-rjava-when-loading-reporters-package). Here is a range of possible solutions for you to explore:
+	- Install the latest rJava version. Earlier versions may not work!
+	- Tell R about the updated java version.
+	- Add jvm.dll to your PATH and have it in the proper directory.
+	- Define the path for R to find java.
+	- Make sure your architectures match.
+	- Re-launch R from the Windows Menu.
+- Проблема с инсталляцией ReporteRs из-за rJava. У меня возникает ошибка
+```
+Error : .onLoad failed in loadNamespace() for 'rJava', details:
+  call: inDL(x, as.logical(local), as.logical(now), ...)
+  error: не могу загрузить разделяемый объект 'C:/Users/Ilya/Documents/R/win-library/3.3/rJava/libs/i386/rJava.dll':
+  LoadLibrary failure:  %1 не является приложением Win32.
+```
+Нашел расподробнейшее описание аналогичной проблемы: [Error installing 'ReporteRs' and 'ReporteRsjars'](http://stackoverflow.com/questions/40644971/error-installing-reporters-and-reportersjars)
+Ерунда в том, что он загружает rJava i386, а у меня все поставлено x64. Решение таково:
+Based on the response from David Gohel in the this ReporteRs Issues, the following code with the `INSTALL_opts = "--no-multiarch"` added may fix the issue:
+```
+install.packages("ReporteRs", contriburl=cran_dir_url,
+                 repos = cran_dir_url, 
+                 type = 'source', INSTALL_opts = "--no-multiarch")
+```
+если точнее, то можно запустить такой командой: `install.packages("ReporteRs", INSTALL_opts = "--no-multiarch")`
 
 ## R ggplot
 - [ggedit – interactive ggplot aesthetic and theme editor](https://www.r-statistics.com/2016/11/ggedit-interactive-ggplot-aesthetic-and-theme-editor/)
