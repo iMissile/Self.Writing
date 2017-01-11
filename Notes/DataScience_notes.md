@@ -1,4 +1,23 @@
 - [Запчасти к мясорубке Zelmer](http://vaprom.ru/shop/c16.zelmer.htm)
+- [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
+- [Plot Colour Helper - Finally an easy way to pick colours for your R plots!](http://deanattali.com/blog/plot-colour-helper/)
+	- [colourpicker - A Colour Picker Tool for Shiny and for Selecting Colours in Plots](https://github.com/daattali/colourpicker)
+
+# 11.01.2017
+## R
+- [Announcing RStudio Connect – For all the work your teams do in R](https://blog.rstudio.org/2017/01/10/announcing-rstudio-connect-for-all-the-work-your-teams-do-in-r/)
+- [Delaware River Water Quality Visualization App](http://adventuresindata.blogspot.ru/2017/01/delaware-river-water-quality.html)
+- [Using xml schema and xslt in R](http://ropensci.org/blog/blog/2017/01/10/xslt-release)
+- [Math Expressions with Facets in ggplot2](http://sahirbhatnagar.com/facet_wrap_labels)
+
+## Closures in R
+- [Dynamic Documents with R and knitr, 2nd ed (2015) - Yihui Xie](https://books.google.ru/books?id=lpTYCQAAQBAJ&pg=PA112&lpg=PA112&dq=r+$set+$get&source=bl&ots=CjM0B0bu6J&sig=edacC9eJvfNmH1k6lDrgROFjJqA&hl=ru&sa=X&ved=0ahUKEwjkuMDr17nRAhUJ2CwKHVB6AtgQ6AEISTAF#v=onepage&q=Closures%20play%20a%20central%20role%20in%20knitr&f=false). A.2 Closures. Closures play a central role in knitr; some common objects such as opts_chunk (Section 5.1.1) and knit_engines (Chapter 11) are built on closures.
+A closure is essentially a function, and it also has access to non-local variables.
+- [Advanced R by Hadley Wickham](http://adv-r.had.co.nz/Functional-programming.html#closures). Closures.
+“An object is data with functions. A closure is a function with data.” — John D. Cook
+
+One use of anonymous functions is to create small functions that are not worth naming. Another important use is to create closures, functions written by functions. Closures get their name because they enclose the environment of the parent function and can access all its variables. This is useful because it allows us to have two levels of parameters: a parent level that controls operation and a child level that does the work.
+- [R: how to use get and set functions in a package?](http://stackoverflow.com/questions/30690929/r-how-to-use-get-and-set-functions-in-a-package)
 
 
 # 10.01.2017
@@ -7,11 +26,10 @@
 - [hrbrmisc](https://github.com/hrbrmstr/hrbrmisc). personal R pkg. Вышел на опцию `install_github("hrbrmstr/hrbrmisc")`
 - См. ниже решение проблемы по апдейту ReporteRs. Надо ручкаи указывать `install.packages("ReporteRs", INSTALL_opts = "--no-multiarch")`, чтобы R выбирал правильную x архитектуру.
 
-
-
 # 09.01.2017
 
-## Запускаем Rmd -> PDF
+## knitr. Запускаем Rmd -> PDF
+Смотрим ссылки ниже. Важный концепт, который держим в голове -- возможность генерации отчетов из .R файлов (не .Rmd) посредством `spin`. `rmarkdown::render()` автоматически выбирает spin\knit в зависимости от расширения файла.
 - При компиляции в PDF возникает ошибка `! Package inputenc Error: Unicode char Рѕ (U+43E)`. Ищем ответы здесь: [Package inputenc Error: Unicode char \u8 in RStudio](http://stackoverflow.com/questions/32794157/package-inputenc-error-unicode-char-u8-in-rstudio)
 - Компиляция .tex ломается на команде '\href{}' при `inputenc=utf8` и `fontencoding=T2A`
 - [Knit PDF and la-tex (russian text)](http://qa.piterdata.ninja/p/1742/). Тут много полезного про управление опциями в заголовке самого документа.
@@ -40,12 +58,22 @@ header-includes:
 - Читаем подробненько про схему работы knitr также в [Introduction to knitr by Michael Sachs](https://sachsmc.github.io/knit-git-markr-guide/knitr/knit.html)
 - [MarkdownReports. An R function library to generate (scientific) reports easily](http://markdownreports.github.io/). MarkdownReports is a set of R functions that allows you to generate precise figures easily, and create clean reports about what you just discovered with your analysis script.
 - [Programmatically creating Markdown tables in R with KnitR](http://stackoverflow.com/questions/15488350/programmatically-creating-markdown-tables-in-r-with-knitr)
-- Весьма нетривиальный вопрос, а как же сделать комментарии в R markdown. В ответе [Comments in Markdown](http://stackoverflow.com/questions/4823468/comments-in-markdown) рассмотрена масса различные варианты для markdown в целом.
+- Весьма нетривиальный вопрос, а как же сделать комментарии в R markdown. В ответе [Comments in Markdown](http://stackoverflow.com/questions/4823468/comments-in-markdown) рассмотрена масса различных варианты для markdown в целом.
+- Размышления про различные директории. [Working with knitr using subdirectories](http://stackoverflow.com/questions/24585254/working-with-knitr-using-subdirectories)
+- Dean Attali. 
+	- [Knitr's best hidden gem: spin](http://deanattali.com/2015/03/24/knitrs-best-hidden-gem-spin/). Stop knitting & start spinning - spin can help you write reports much faster and avoid repeating yourself
+	- [ezknitr: R package to avoid the typical working directory pain when using knitr](http://deanattali.com/blog/ezknitr-package/)
+- [Compiling Reports from R Scripts](http://rmarkdown.rstudio.com/articles_report_from_r_script.html)
 
 ## Reports
 - [Markdown to PDF](http://www.markdowntopdf.com/). Just select a file that contains some markup and we'll convert it to a pdf in a snap.
 - [ReportLab](http://www.reportlab.com/). Generating PDFs from Wall Street to Wikipedia. 
 We build solutions to generate rich, attractive and fully bespoke PDF documents at incredible speeds. Serve high quality personalised documents in real time and support all kinds of delivery from web downloads to digital print from a single API.
+- Пошаговая инструкция как автоматически генерировать отчеты: [Scheduling R Markdown Reports via Email](http://www.analyticsforfun.com/2016/01/scheduling-r-markdown-reports-via-email.html)
+- [Create Multiple Reports with RMarkdown](http://www.reed.edu/data-at-reed/software/R/markdown_multiple_reports.html) by Rich Majerus
+- [Create Dynamic R Statistical Reports Using R Markdown](https://onlinecourses.science.psu.edu/statprogram/markdown)
+- [Tutorial R Markdown](http://www.jacolienvanrij.com/Tutorials/tutorialMarkdown.html) by Jacolien van Rij
+
 
 ## R
 - [How to annotate() ggplot with latex]()http://stackoverflow.com/questions/12514612/how-to-annotate-ggplot-with-latex)

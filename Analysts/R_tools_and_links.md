@@ -324,6 +324,7 @@ The source code of some of the widgets can be found in Github repository.
 - [Persistent data storage in Shiny apps](http://deanattali.com/blog/shiny-persistent-data-storage/)
 
 ### Shiny Demo
+- [DRBC Special Protection Waters Monitoring Program Explorer](https://elainepanuccio.shinyapps.io/specialprotectionwatersexplorer/)
 - [College Scorecard](https://beta.rstudioconnect.com/jcheng/scorecard-app/). A Shiny demo app by RStudio
 - [ggplot2 Theme Builder](https://bchartoff.shinyapps.io/ggShinyApp/).
 - [Dean Attali](http://deanattali.com/)
