@@ -32,7 +32,9 @@
      679  #endif
 ```
 Подобная ошибка обсуждается на форуме TTN: [HOPERF95W on Arduino MEGA - not working](https://www.thethingsnetwork.org/forum/t/hoperf95w-on-arduino-mega-not-working/718). Можно заглянуть еще в блок 'Pin mapping'
-- Не до конца понятно, что такое floating состояние. Видимо, просто висящий конец. Но не понятно, как это осуществляется путем установки rst в 2. К сведению, полезная публикация, проливающая свет на вопрос плавающих входов: [Arduino Internal Pull-Up Resistor Tutorial. Make pushbuttons behave with one simple keyword]()https://www.baldengineer.com/arduino-internal-pull-up-resistor-tutorial.html). А также, видео [Floating Pins, Pull-Up Resistors and Arduino](https://programmingelectronics.com/floating-pins-pull-up-resistors-and-arduino/) и комиксы [AVR. Учебный курс. Устройство и работа портов ввода-вывода](http://easyelectronics.ru/avr-uchebnyj-kurs-ustrojstvo-i-rabota-portov-vvoda-vyvoda.html)
+- Не до конца понятно, что такое floating состояние. Видимо, просто висящий конец. Но не понятно, как это осуществляется путем установки rst в 2. К сведению, полезная публикация, проливающая свет на вопрос плавающих входов: [Arduino Internal Pull-Up Resistor Tutorial. Make pushbuttons behave with one simple keyword]()https://www.baldengineer.com/arduino-internal-pull-up-resistor-tutorial.html). А также, видео [Floating Pins, Pull-Up Resistors and Arduino](https://programmingelectronics.com/floating-pins-pull-up-resistors-and-arduino/) и комиксы [AVR. Учебный курс. Устройство и работа портов ввода-вывода](http://easyelectronics.ru/avr-uchebnyj-kurs-ustrojstvo-i-rabota-portov-vvoda-vyvoda.html).
+
+Новая напасть. Используемый FTDI переходник [SparkFun FTDI Basic Breakout - 3.3V](https://www.sparkfun.com/products/9873) сильно греется при подключении платы радиомодуля. Последняя так и не заводится. Возможно, что не хватает питания, о этом есть отдельные комментарии по приведенной выше ссылке.
 
 
 # Интерфейсы
