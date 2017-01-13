@@ -1,7 +1,31 @@
 - [Запчасти к мясорубке Zelmer](http://vaprom.ru/shop/c16.zelmer.htm)
+- [УЗНАТЬ КТО ВАМ ЗВОНИТ!](https://www.neberitrubku.ru/). Вам звонят с незнакомого номера и вы думаете не брать трубку? Найдите этот номер и узнайте, кто пытается вам дозвониться.
+
+
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
-- [Plot Colour Helper - Finally an easy way to pick colours for your R plots!](http://deanattali.com/blog/plot-colour-helper/)
-	- [colourpicker - A Colour Picker Tool for Shiny and for Selecting Colours in Plots](https://github.com/daattali/colourpicker)
+
+# 13.01.2017
+## R
+- [R exercises](http://r-exercises.com/). Очень неплохой ресурс с заданиями по R.
+- COOL! Классный пакет для Simmer [Discrete-Event Simulator for R](http://fishyoperations.com/2017/01/12/extensions-for-simmer.html). Вообще, на этом сайте очень много записей про симуляцию.
+
+
+## LaTeX
+- [Differences between LuaTeX, ConTeXt and XeTeX](http://tex.stackexchange.com/questions/3393/what-is-xetex-exactly-and-why-should-i-use-it). Look at [Joseph Wright's answer](http://tex.stackexchange.com/questions/36/differences-between-luatex-context-and-xetex/72#72) to the _Differences between LuaTeX, ConTeXt and XeTeX_ question: Luatex is intended to be the successor project to Pdftex, and he is informative about what is ahead.
+- [Дополнительная статья про XeLaTeX в Wikipedia](https://ru.wikipedia.org/wiki/XeTeX). Там есть детали про особенности новых пакетов (языковые, шрифтовые)
+- [Getting started with XeLaTeX](http://robjhyndman.com/hyndsight/xelatex/) by Rob J Hyndman. Отдельный набор [записей в блоге](http://robjhyndman.com/hyndsight/latex/)
+- [The LaTeX3 Project](https://www.latex-project.org/latex3/)
+- [Installing LaTeX on Mac OS X](http://www.howtotex.com/howto/installing-latex-on-mac-os-x/)
+
+
+# 12.01.2017
+## R
+- COOL! [Custom images for Shiny dashboard valueBox icons](https://blog.snap.uaf.edu/2017/01/11/custom-images-for-shiny-dashboard-valuebox-icons/)
+	- gist: [Use custom local image files as icons in a Shiny Dashboard value box](https://gist.github.com/leonawicz/0fab3796b02a62b7f3bd0c02a171f0b7)
+- [lingtypology: Linguistic Typology and Mapping](https://cran.rstudio.com/web/packages/lingtypology/). Пример применения на картах упомянут в [December 2016 Package Picks by Joseph Rickert](https://www.rstudio.com/rviews/2017/01/11/december-2016-package-picks/)
+- [Magic reprex]()http://www.njtierney.com/r/rbloggers/2017/01/11/reprex-magic/) Making reproducible examples can be hard.
+- [Random Forest Classification of Mushrooms](https://stoltzmaniac.com/random-forest-classification-of-mushrooms/)
+- [Repeatedly applying a function](https://tjmahr.github.io/repeatedly-calling-a-function/)
 
 # 11.01.2017
 ## R
@@ -9,6 +33,8 @@
 - [Delaware River Water Quality Visualization App](http://adventuresindata.blogspot.ru/2017/01/delaware-river-water-quality.html)
 - [Using xml schema and xslt in R](http://ropensci.org/blog/blog/2017/01/10/xslt-release)
 - [Math Expressions with Facets in ggplot2](http://sahirbhatnagar.com/facet_wrap_labels)
+- [Plot Colour Helper - Finally an easy way to pick colours for your R plots!](http://deanattali.com/blog/plot-colour-helper/)
+	- [colourpicker - A Colour Picker Tool for Shiny and for Selecting Colours in Plots](https://github.com/daattali/colourpicker)
 
 ## Closures in R
 - [Dynamic Documents with R and knitr, 2nd ed (2015) - Yihui Xie](https://books.google.ru/books?id=lpTYCQAAQBAJ&pg=PA112&lpg=PA112&dq=r+$set+$get&source=bl&ots=CjM0B0bu6J&sig=edacC9eJvfNmH1k6lDrgROFjJqA&hl=ru&sa=X&ved=0ahUKEwjkuMDr17nRAhUJ2CwKHVB6AtgQ6AEISTAF#v=onepage&q=Closures%20play%20a%20central%20role%20in%20knitr&f=false). A.2 Closures. Closures play a central role in knitr; some common objects such as opts_chunk (Section 5.1.1) and knit_engines (Chapter 11) are built on closures.
@@ -413,7 +439,10 @@ There are quite a few packages that will help you do this, but I can’t remembe
 	- [How to run a custom.R script using OpenCPU](http://stackoverflow.com/questions/37978834/how-to-run-a-custom-r-script-using-opencpu)
 	- [Send an image file using opencpu for processing](http://stackoverflow.com/questions/29211599/send-an-image-file-using-opencpu-for-processing)
 OpenCPU is a system for embedded scientific computing and reproducible research. The OpenCPU server provides a reliable and interoperable HTTP API for data analysis based on R. You can either use the public servers or host your own.
-- [Jug is a small web development framework for R which relies heavily upon the httpuv package. It’s main focus is to make building APIs for your code as easy as possible.](https://cran.r-project.org/web/packages/jug/vignettes/jug.html)
+- [Jug is a small web development framework for R which relies heavily upon the httpuv package. It’s main focus is to make building APIs for your code as easy as possible.](https://cran.r-project.org/web/packages/jug/vignettes/jug.html). [What is Jug?](http://bart6114.github.io/jug/)
+Jug is a small web development framework for R which relies heavily upon the httpuv package. It’s main focus is to make building APIs for your code as easy as possible.
+
+Jug is not supposed to be either an especially performant nor an uber stable web framework. Other tools (and languages) might be more suited for that. It’s main focus is to easily allow you to create APIs for your R code. However, the flexibility of Jug means that, in theory, you could built an extensive web framework with it.
 
 ### Shiny
 - [Arrow72/CoolDashboard](https://github.com/Arrow72/CoolDashboard). R dashboard as a designer http://ru-datascience.ru/2015/10/28/dizajnerskij-dashboard/
