@@ -2,6 +2,59 @@
 ## Конфигурация
 Терминал построен на Arduino Pro Mini (ATmega 328, 3.3V). Для правильной диагностики через COM порт необходимо корректно выставлять частоту в IDE.
 Модем -- [AnyLink lora DP1276](http://www.eltech.spb.ru/news/radiomodul_dp1276_dlya_diapazona_433868915_mgc_s_dalnostyu_raboti_do_12_km_ot_anylink)
+Тема работы с децибелами хорошо освещена в книге "И.П. Шелестов. Радиолюбителям. Полезные схемы. Книга 3", п. 6.1. Перевод величин из децибелов в абсолютные значения, стр. 206 (смотрим djvu с аналогичным названием).
+
+What is RSSI and what does it mean for a WiFi network?
+
+RSSI, or “Received Signal Strength Indicator”, is a measurement of how well your device can hear a signal from an access point or router. It’s a value that is useful for determining if you have enough signal to get a good wireless connection.
+
+## Разбираем код LMIC
+- Что такое макрос F? [The hidden Arduino Macro F() fixes random lock ups](https://www.baldengineer.com/arduino-f-macro.html).
+[Why is the F() Macro Needed?](http://playground.arduino.cc/Learning/Memory)
+- Что такое LMIC? Ответ находим в документации на "LMiC-v1.5" 2.4 The LMIC Struct
+Instead of passing numerous parameters back and forth between API and callback functions, information about the protocol state can be accessed via a global LMIC structure as shown below. Определяется он через #define в oslmic.h: `#define DEFINE_LMIC  struct lmic_t LMIC`
+- Что за цифирьки выводятся в логе "engineUpdate, opmode=0x..."? Ответ можем найти в файле `lmic.h`: MAC operation modes.
+- Читаем дебаг строчку `"%lu: RXMODE_SINGLE, freq=%lu, SF=%d, BW=%d, CR=4/%d, IH=%d\n"`. Детали в `radio.c` ~590 строчка. Частично ответ находим в файле `lorabase.h`:
+```
+// Radio parameter set (encodes SF/BW/CR/IH/NOCRC)
+enum _cr_t { CR_4_5=0, CR_4_6, CR_4_7, CR_4_8 };
+enum _sf_t { FSK=0, SF7, SF8, SF9, SF10, SF11, SF12, SFrfu };
+enum _bw_t { BW125=0, BW250, BW500, BWrfu };
+```
+По сути параметров читаем мануал Semtech ["LoRa Modem Designer’s Guide"](https://www.semtech.com/images/datasheet/LoraDesignGuide_STD.pdf).
+	- CR = Chip (Coding) Rate (2.4 BW and Chip Rate)
+	- SF = Spreading Factor
+	- BW = Bandwidth (2.4 BW and Chip Rate)
+
+и [Semtech Corporation LoRa® FAQ](http://www.semtech.com/wireless-rf/lora/LoRa-FAQs.pdf)
+_20.) How do you choose the LoRa® Bandwidth (BW), Spreading factor (SF) and Coding Rate (CR)?_. LoRaWAN™ uses primarily the 125kHz BW setting but other proprietary protocols can utilize other BW settings. 
+Changing the BW, SF, and CR changes the link budget and time on air, which results in a battery lifetime vs range tradeoff.
+Please use the LoRa Modem Calculator to evaluate the tradeoffs.
+	
+- Еще раз смотрим на мануал по запуску LoRaWAN: [LoRaWAN IoT with Arduino Uno,
+Dragino v1.3 & TheThingsNetwork](http://www.tamberg.org/chopen/2016/LoRaWANIoTWorkshop.pdf) Из мануала выше получаем ответ как же выцепить полученные на стороне Arduino данные (слайд 65 "Receiving data  on the Arduino")
+- Что за время выводится в debug log? Ответ -- данные от функции `os_getTime()`. Детали по функции см. в "LMiC-v1.5"
+2.2.5 ostime_t os_getTime()
+Query absolute system time (in ticks).
+```
+ostime_t os_getTime () {
+	return hal_ticks();
+      }
+```
+Есть функция `sec2osticks()` (точнее, #define, определенный в `oslmic.h`), которая переводит секунды в тики ОС arduino.
+Там же определена обратная функция `osticks2ms(os)`
+- Каким образом напечатать в Serial содержимое буфера `uint8_t`? У нас тестовые данные на передачу лежат в таком виде ("Hello World").
+	- The `uint8_t` is a unsigned integer on 8 bits. In Arduino, it's called a "byte". 
+	- Смежный вопрос [How to send an int over uint8_t data?](http://stackoverflow.com/questions/24588234/how-to-send-an-int-over-uint8-t-data)
+	- [Determine size of uint8_t* and convert to ASCII?](http://forum.arduino.cc/index.php?topic=37877.0)
+
+В принципе, вариантов множество. Один из оптимальных ответов выглядит следующим образом:
+```
+ // Serial.write(mydata); // https://www.arduino.cc/en/Serial/write
+ Serial.write("Simple Hello\n");
+ Serial.write(mydata, strlen(mydata));
+```
+
 
 ## Вывод в COM порт. Особенности
 - [Русский текст в монитор порта. Сбой кодировки.](http://arduino.ru/forum/obshchii/russkii-tekst-v-monitor-porta-sboi-kodirovki)
@@ -14,13 +67,13 @@
 - Из директории `examples` берем скетч `ttn-otaa`
 - Включаем вывод диагностических сообщений. Библиотека 'lmic/config.h': Установить `LMIC_DEBUG_LEVEL` в уровень 2 и раскомментировать строку `//#define LMIC_PRINTF_TO Serial`
 - Добавим дополнительный диагностический вывод по проверке версии радиочипа
-```{c}
+```
  // some sanity checks, e.g., read version number
     u1_t v = readReg(RegVersion);
     printf("%o\n", v);
 ```
 - Проверяем, как устроен ресет радиомодема. У нас модем sx1276, макрос определен в `config.h`. Код из `\libraries\arduino-lmic-master\src\lmic\radio.c`
-```{c}
+```
      671  void radio_init () {
      672      hal_disableIRQs();
      673  
@@ -33,17 +86,20 @@
 ```
 Подобная ошибка обсуждается на форуме TTN: [HOPERF95W on Arduino MEGA - not working](https://www.thethingsnetwork.org/forum/t/hoperf95w-on-arduino-mega-not-working/718). Можно заглянуть еще в блок 'Pin mapping'
 - Не до конца понятно, что такое floating состояние. Видимо, просто висящий конец. Но не понятно, как это осуществляется путем установки rst в 2. К сведению, полезная публикация, проливающая свет на вопрос плавающих входов: [Arduino Internal Pull-Up Resistor Tutorial. Make pushbuttons behave with one simple keyword]()https://www.baldengineer.com/arduino-internal-pull-up-resistor-tutorial.html). А также, видео [Floating Pins, Pull-Up Resistors and Arduino](https://programmingelectronics.com/floating-pins-pull-up-resistors-and-arduino/) и комиксы [AVR. Учебный курс. Устройство и работа портов ввода-вывода](http://easyelectronics.ru/avr-uchebnyj-kurs-ustrojstvo-i-rabota-portov-vvoda-vyvoda.html).
-
-Новая напасть. Используемый FTDI переходник [SparkFun FTDI Basic Breakout - 3.3V](https://www.sparkfun.com/products/9873) сильно греется при подключении платы радиомодуля. Последняя так и не заводится. Возможно, что не хватает питания, о этом есть отдельные комментарии по приведенной выше ссылке.
+- Новая напасть. Используемый FTDI переходник [SparkFun FTDI Basic Breakout - 3.3V](https://www.sparkfun.com/products/9873) сильно греется при подключении платы радиомодуля. Последняя так и не заводится. Возможно, что не хватает питания, о этом есть отдельные комментарии по приведенной выше ссылке.
+- Примеры терминальных скетчей различной функциональности на базе LMiC можно взять в этом репозитории: [Software for an RFM95W based TTN node](https://github.com/tijnonlijn/RFM-node). Там же лежит [Lightweight low power library for Arduino](https://github.com/tijnonlijn/RFM-node)
+- Для оценки передаваемого объема данных полезно ознакомиться с Semtech LoRa Calculator и его производными. LoRaWAN != LoRa, поэтому лучше начать с этого форума: [LoRa Calculator with LoRaWAN](http://openlora.com/forum/viewtopic.php?t=914).
 
 
 # Интерфейсы
+- [Интерфейс JTAG? — Это очень просто!](https://habrahabr.ru/post/190012/)
 - [Обзор шины SPI и разработка драйвера ведомого SPI устройства для embedded Linux (Часть первая, обзорная)](https://habrahabr.ru/post/123145/)
 	- Что это за статья?
 Эта статья представляет собой компиляцию информации из различных источников, вольный перевод некоторых частей документации, а также мои собственные комментарии, дополнения и описания возникших проблем.
 	- Для кого эта статья?
 В первую очередь, для новичков, каковым являюсь и я. На форумах по embedded Linux очень часто можно встретить вопрос: «А как на этой плате работать с SPI?». Именно на него я и попытаюсь дать ответ. В качестве примера, я приведу код написанный для работы с моим тестовым SPI устройством.
 Существует четыре режима работы SPI устройств. Как правило, именно они вызывают больше всего путаницы у новичков. Данные четыре режима представляют собой комбинацию двух бит: CPOL & CPHA
+
 ![SPI modes Oscilogramm](https://habrastorage.org/getpro/habr/post_images/b3f/cc5/435/b3fcc5435f56489815c50fbb7581049e.png)
 
 # Запуск LoRaWAN на Arduino Pro Mini и AnyLink lora модема
@@ -69,6 +125,8 @@ A: PIR - Passive infrared sensor
 
 
 # Arduiono & PIC
+- Очень хорошая демонстрация, как отличается работа с портами от работы с регистром напрямую. СКОРОСТЬ!!!! [Tutorial: Arduino Port Manipulation](http://tronixstuff.com/2011/10/22/tutorial-arduino-port-manipulation/)
+
 - [Знакомство с Arduino](http://atroshin.ru/ru/content/znakomstvo-s-arduino)
 - [Последовательный порт - TTL и RS232](http://atroshin.ru/ru/content/posledovatelnyy-port-ttl-i-rs232)
 - [Alternatives to Standard Arduino IDE: Which One To Choose?](https://www.intorobotics.com/alternatives-standard-arduino-ide-one-choose/)
