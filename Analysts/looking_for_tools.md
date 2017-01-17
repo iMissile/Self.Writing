@@ -8,6 +8,10 @@ http://www.worldtimebuddy.com/
 ## Стандарты
 - [Markdown: Syntax](http://daringfireball.net/projects/markdown/syntax) by John Gruber.
 - [MathJax](http://www.mathjax.org/) is an open source JavaScript display engine for mathematics that works in all browsers.
+- Весьма нетривиальный вопрос, а как же сделать комментарии в R markdown. В ответе [Comments in Markdown](http://stackoverflow.com/questions/4823468/comments-in-markdown) рассмотрена масса различных варианты для markdown в целом.
+- [How do I insert a comment in Markdown?](https://www.quora.com/How-do-I-insert-a-comment-in-Markdown)
+- [What is CriticMarkup?](http://criticmarkup.com/) CriticMarkup is a way for authors and editors to track changes to documents in plain text. As with Markdown, small groups of distinctive characters allow you to highlight insertions, deletions, substitutions and comments, all without the overhead of heavy, proprietary office suites.
+
 
 ## Online Editors
 - [Онлайн-генератор таблиц](http://www.tablesgenerator.com/)
@@ -20,6 +24,7 @@ http://www.worldtimebuddy.com/
 1. [Writebox](https://write-box.appspot.com)
 
 ## Offline Editors
+1. [SmartDown](
 1. [Brackets](http://brackets.io/) by Adobe. A modern, open source text editor that understands web design
 	1. [10 Awesome Brackets Extensions You Really Need](http://beebom.com/2015/03/brackets-extensions-you-really-need)
 	1. [My Recommended Brackets Extensions](http://www.johnpapa.net/my-recommended-brackets-extensions/)
