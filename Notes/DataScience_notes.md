@@ -4,6 +4,46 @@
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 17.01.2017
+## R
+- COOL! [Top 50 ggplot2 Visualizations - The Master List (With Full R Code)](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)
+
+## [More components of the R ecosystem](http://f.briatte.org/r/more-components-of-the-r-ecosystem)
+This note lists a few of the organizations that are pushing the R language forward, as of early 2017. R is happy language right now.
+
+Historically, the [R Project for Statistical Computing](https://www.r-project.org/) has been supported by the [R Foundation](https://www.r-project.org/foundation/) since its inception in 2002. It has laid down some of the most important building blocks of the R ecosystem, including, of course, [CRAN](https://cran.r-project.org/), as well as the [_R Journal_](https://journal.r-project.org/) and the [R mailing-lists](https://www.r-project.org/mail.html).
+
+Fifteen years later, many other organizations have been set up to help developing R and its user base, at various levels and through various means:
+
+* The R Foundation has set up the [R Foundation Taskforce on Women and Other Under-Represented Groups](https://forwards.github.io/), which teams up with a new kind of R user group, [R-Ladies](https://rladies.org/), a worldwide initiative to encourage gender diversity in the R community.
+* The [R Consortium](https://www.r-consortium.org/) brings private-sector funds to R developers through grants for development and community projects. [Its blog](https://www.r-consortium.org/blog) documents the progress made on each project, many of which are [pretty awesome](https://www.r-consortium.org/projects/awarded-projects).
+* The [R-Bloggers](https://www.r-bloggers.com/) blogs aggregator has been around for a while, and a new initiative launched last year, [R Weekly](https://rweekly.org/), provides a more digestible list of R-related material, at a slower pace. The list is written [collaboratively](https://github.com/rweekly/rweekly.org/blob/gh-pages/draft.md).
+* Last but not least, the [RStudio](https://www.rstudio.com/) company develops the [RStudio IDE](https://www.rstudio.com/products/rstudio/) and related things like [Shiny](https://www.rstudio.com/products/shiny/), R server-side products, and many R packages. It also just recently held its very first conference, [rstudio::conf](https://www.rstudio.com/conference/).
+
+This list does not cover the smaller organizations, such as the recently created [r-spatial](https://github.com/r-spatial) group, which help developing R packages for a myriad of different applications with often very different audiences.
+
+I would say that R has a [pretty happy community](https://hackernoon.com/which-programming-languages-have-the-happiest-and-angriest-commenters-ebe91b3852ed#.ix9sjdtdh) right now. Getting help to use R is [easier than ever](https://www.r-project.org/help.html), the quality of many new software releases is very high, and the user base is becoming more and more diverse, which is a huge (and indispensable) asset.
+
+The next step might be to boost the [job opportunities](https://www.r-users.com/) available to R users, and to better organise the ways that it is taught in universities, on online learning platforms like [Coursera](https://www.coursera.org/) or [DataCamp](https://www.datacamp.com/), or through private training firms.
+
+Although there is no single way to keep track of everything going on in the R community, almost everything shows up on Twitter at some point, generally labelled with the [#rstats](https://twitter.com/search?src=typd&amp;q=%23rstats) hashtag.
+
+Go and explore, and happy new year!
+
+
+# 16.01.2017
+## R COOL
+- HighlandR blog. [R to the Rescue. A strategy for gathering scattered spreadsheet data with R](http://johnmackintosh.com/2017-01-15-taming-wild-spreadsheets/)
+- [Feature Selection in Machine Learning (Breast Cancer Datasets)](https://shiring.github.io/machine_learning/2017/01/15/rfe_ga_post)
+- [Structural Equation Modelling in R (Part 2)](http://pacha.hk/sem_r_part_2.html)
+- [Text Mining in R: A Tidy Approach](http://juliasilge.com/blog/RStudio-Conf/)
+- [Links to slides for talks at the 2017 rstudio::conf ](https://github.com/kbroman/RStudioConf2017Slides)
+- [Jennifer (Jenny) Bryan 'jennybc'](https://github.com/jennybc?tab=repositories) repository on GitHb
+- [Happy Git and GitHub for the useR](http://happygitwithr.com/)
+- useR! 2016 international R User conference. [jailbreakr: Get out of Excel, free](https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/jailbreakr-Get-out-of-Excel-free). PDF slides [here](https://github.com/jennybc/2016-06_spreadsheets/blob/master/2016-06_genentech-bioc.pdf)
+- [Tidy Text Mining with R](http://tidytextmining.com/) by Julia Silge and David Robinson
+
+
 # 13.01.2017
 ## R
 - [R exercises](http://r-exercises.com/). Очень неплохой ресурс с заданиями по R.
@@ -85,6 +125,7 @@ header-includes:
 - [MarkdownReports. An R function library to generate (scientific) reports easily](http://markdownreports.github.io/). MarkdownReports is a set of R functions that allows you to generate precise figures easily, and create clean reports about what you just discovered with your analysis script.
 - [Programmatically creating Markdown tables in R with KnitR](http://stackoverflow.com/questions/15488350/programmatically-creating-markdown-tables-in-r-with-knitr)
 - Весьма нетривиальный вопрос, а как же сделать комментарии в R markdown. В ответе [Comments in Markdown](http://stackoverflow.com/questions/4823468/comments-in-markdown) рассмотрена масса различных варианты для markdown в целом.
+- [How do I insert a comment in Markdown?](https://www.quora.com/How-do-I-insert-a-comment-in-Markdown)
 - Размышления про различные директории. [Working with knitr using subdirectories](http://stackoverflow.com/questions/24585254/working-with-knitr-using-subdirectories)
 - Dean Attali. 
 	- [Knitr's best hidden gem: spin](http://deanattali.com/2015/03/24/knitrs-best-hidden-gem-spin/). Stop knitting & start spinning - spin can help you write reports much faster and avoid repeating yourself
