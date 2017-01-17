@@ -27,7 +27,7 @@ enum _bw_t { BW125=0, BW250, BW500, BWrfu };
 	- BW = Bandwidth (2.4 BW and Chip Rate)
 
 и [Semtech Corporation LoRa® FAQ](http://www.semtech.com/wireless-rf/lora/LoRa-FAQs.pdf)
-_20.) How do you choose the LoRa® Bandwidth (BW), Spreading factor (SF) and Coding Rate (CR)?_. LoRaWAN™ uses primarily the 125kHz BW setting but other proprietary protocols can utilize other BW settings. 
+*20.) How do you choose the LoRa® Bandwidth (BW), Spreading factor (SF) and Coding Rate (CR)* ? LoRaWAN™ uses primarily the 125kHz BW setting but other proprietary protocols can utilize other BW settings. 
 Changing the BW, SF, and CR changes the link budget and time on air, which results in a battery lifetime vs range tradeoff.
 Please use the LoRa Modem Calculator to evaluate the tradeoffs.
 	
@@ -89,6 +89,12 @@ ostime_t os_getTime () {
 - Новая напасть. Используемый FTDI переходник [SparkFun FTDI Basic Breakout - 3.3V](https://www.sparkfun.com/products/9873) сильно греется при подключении платы радиомодуля. Последняя так и не заводится. Возможно, что не хватает питания, о этом есть отдельные комментарии по приведенной выше ссылке.
 - Примеры терминальных скетчей различной функциональности на базе LMiC можно взять в этом репозитории: [Software for an RFM95W based TTN node](https://github.com/tijnonlijn/RFM-node). Там же лежит [Lightweight low power library for Arduino](https://github.com/tijnonlijn/RFM-node)
 - Для оценки передаваемого объема данных полезно ознакомиться с Semtech LoRa Calculator и его производными. LoRaWAN != LoRa, поэтому лучше начать с этого форума: [LoRa Calculator with LoRaWAN](http://openlora.com/forum/viewtopic.php?t=914).
+- Для конвертации ascii payload в hex можно использовать онлайн-ресурсы, например, 
+[ASCII to Hex ...and other free text conversion tools](http://www.asciitohex.com/)
+- Неплохая статья по диагностированию TCP соединений. [How to prepare TCP](https://habrahabr.ru/company/billing/blog/252819/)
+- Хорошие [Protocol CheatSheets](http://packetlife.net/library/cheat-sheets/)
+- [TCP Selective Acknowledgments (SACK)](http://packetlife.net/blog/2010/jun/17/tcp-selective-acknowledgments-sack/)
+ 
 
 
 # Интерфейсы
