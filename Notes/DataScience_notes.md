@@ -4,9 +4,33 @@
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 18.01.2017
+## *nix
+- [ConEmu-Maximus5](http://conemu.github.io/) is a Windows console emulator with tabs, which presents multiple consoles and simple GUI applications as one customizable GUI window with various features.
+- [Замена Putty — ищем удобный SSH клиент с вкладками](http://yvision.kz/post/676001)
+
+## R
+- [Using R — Installing Packages](http://mazamascience.com/WorkingWithData/?p=728)
+- [Using R — Package Installation Problems](http://mazamascience.com/WorkingWithData/?p=1185)
+- [The RProtobuf package](http://dirk.eddelbuettel.com/code/rprotobuf.html) provides R with facilities to read, write, ... Google Protocol Buffers files and messages.]
+	- [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview?csw=1). Welcome to the developer documentation for protocol buffers – a language-neutral, platform-neutral, extensible way of serializing structured data for use in communications protocols, data storage, and more.
+- [ggedit](https://www.r-statistics.com/2016/11/ggedit-interactive-ggplot-aesthetic-and-theme-editor/) – interactive ggplot aesthetic and theme editor. Installation `devtools::install_github("metrumresearchgroup/ggedit",subdir="ggedit")`
+- [ggedit 0.0.2](https://www.r-statistics.com/2017/01/ggedit-0-0-2-a-gui-for-advanced-editing-of-ggplot2-objects/): a GUI for advanced editing of ggplot2 objects
+
+
 # 17.01.2017
+## Development
+- [Git: наглядная справка](https://marklodato.github.io/visual-git-guide/index-ru.html)
+
 ## R
 - COOL! [Top 50 ggplot2 Visualizations - The Master List (With Full R Code)](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)
+- [RStudio Conference 2017 Recap](http://www.gettinggeneticsdone.com/2017/01/rstudio-conference-2017-recap.html)
+- [The tidyverse](http://tidyverse.org/) is a collection of R packages that share common philosophies and are designed to work together. This site is a work-in-progress guide to the tidyverse and its packages.
+- purr:
+	- [2-hour purrr tutorial](http://bit.ly/purrr-rstudioconf)
+	- [purrr tutorial. Lessons and examples](https://jennybc.github.io/purrr-tutorial/)
+- [RemarkJS Slides framework](https://remarkjs.com)
+- [An R package for creating slideshows with remark.js through R Markdown](https://github.com/yihui/xaringan).
 
 ## [More components of the R ecosystem](http://f.briatte.org/r/more-components-of-the-r-ecosystem)
 This note lists a few of the organizations that are pushing the R language forward, as of early 2017. R is happy language right now.
@@ -834,7 +858,7 @@ install.packages("ReporteRs", contriburl=cran_dir_url,
 если точнее, то можно запустить такой командой: `install.packages("ReporteRs", INSTALL_opts = "--no-multiarch")`
 
 ## R ggplot
-- [ggedit – interactive ggplot aesthetic and theme editor](https://www.r-statistics.com/2016/11/ggedit-interactive-ggplot-aesthetic-and-theme-editor/)
+- [ggedit](https://www.r-statistics.com/2016/11/ggedit-interactive-ggplot-aesthetic-and-theme-editor/) – interactive ggplot aesthetic and theme editor.
 - Диагностика графических объектов: `library(gtable) gtable_show_layout(ggplotGrob(gp2))`
 - [Align multiple ggplot graphs with and without legends](http://stackoverflow.com/questions/26159495/align-multiple-ggplot-graphs-with-and-without-legends)
 - [baptiste/gridextra: arranging ggplot](https://github.com/baptiste/gridextra/wiki/arranging-ggplot)
