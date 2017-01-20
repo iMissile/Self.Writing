@@ -4,6 +4,25 @@
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 20.01.2017
+## R
+- [https://yihui.name/xran/](https://yihui.name/xran/). This is a personal and experimental R package repository of Yihui Xie. It contains some of my source packages under development. These packages may be subject to significant changes day to day. Please consider CRAN if you want to install packages for production purposes.
+- [Installing package from a local zip file in R {duplicate}](http://stackoverflow.com/questions/37548198/installing-package-from-a-local-zip-file-in-r)
+
+# 19.01.2017
+## R
+- COOL! [Introducing padr](https://edwinth.github.io/blog/padr-intro/)
+I am happy to introduce the padr package, which is now available on CRAN. If you frequently work with data containing a timestamp, especially automatically created data, you might find this package helpful. It solves two problems that you can be confronted with when preparing datetime data for analysis. First, data is often recorded on too low a level for your analysis. For instance the timestamp records the moment up to the second, where you want to do the analysis on an hourly level. Second, when no events toke place there are typically no data records. This is sensible from a storage perspective, but often unhelpful for analyzing the data. When calculating a moving average for example, you want missing observations to have the value 0. You don’t want them to be lacking from your set.
+- [Debugging R Functions](http://seananderson.ca/2013/08/23/debugging-r.html)
+- [Debugme](https://github.com/gaborcsardi/debugme). Easy and efficient debugging for R packages. gaborcsardi/debugme
+- COOL! Классный сайт с примерами визуализации. [Welcome to Kristoffer Magnusson's blog about R, STATISTICS, PSYCHOLOGY, OPEN SCIENCE, DATA VISUALIZATION](http://rpsychologist.com/parsing-data-from-a-text-file-and-plotting-where-people-live-using-ggplot2-and-openstreetmaps/)
+- COOL presentation. [Advanced R Markdown. Behind the Knit Button](https://slides.yihui.name/2017-rstudio-conf-rmarkdown-Yihui-Xie.html#1) by Yihui Xie, RStudio
+
+## Developing R Packages
+- [R package primer a minimal tutorial](http://kbroman.org/pkg_primer/)
+- [Developing Packages with RStudio](https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio) by Josh Paulson, November 08, 2016 
+- [Writing an R package from scratch](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/)
+
 # 18.01.2017
 ## *nix
 - [ConEmu-Maximus5](http://conemu.github.io/) is a Windows console emulator with tabs, which presents multiple consoles and simple GUI applications as one customizable GUI window with various features.
