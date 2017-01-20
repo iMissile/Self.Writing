@@ -49,14 +49,13 @@ RStudio Server v0.99 requires RedHat or CentOS version 5.4 (or higher) as well a
 - Ставим RStudio Server по [инструкции](https://www.rstudio.com/products/rstudio/download-server/) с RStudio 
 - [Запускаем RStudio](http://youriporhosname:8787/) и логинимся под созданным non-root пользователем.
 - Ставим Python по инструкции. The IUS repo community has done a wonderful job of providing the absolute latest Python 3 releases as rpm packages for RHEL and CentOS that easily install alongside the default system Python.
+	- [Install Latest Python on CentOS 7](http://www.codeghar.com/blog/install-latest-python-on-centos-7.html)
+	- Еще инструкция: ["How To Install Python 3 and Set Up a Local Programming Environment on CentOS 7"](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-centos-7)
+	- [How to Install Pip on CentOS 7](https://www.liquidweb.com/kb/how-to-install-pip-on-centos-7/)
 ```
 $ sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
 $ sudo yum update
 ```
-
-	- [Install Latest Python on CentOS 7](http://www.codeghar.com/blog/install-latest-python-on-centos-7.html)
-	- Еще инструкция: ["How To Install Python 3 and Set Up a Local Programming Environment on CentOS 7"](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-centos-7)
-	- [How to Install Pip on CentOS 7](https://www.liquidweb.com/kb/how-to-install-pip-on-centos-7/)
 	 
 - При установке пакетов по root (для всех) запускаем R от рута `sudo -i R` и прогоняему установку. Для успешного прогона необходимо доставлять системные либы (CentOS specific commands).
 
