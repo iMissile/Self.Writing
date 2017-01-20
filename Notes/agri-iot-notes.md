@@ -76,6 +76,9 @@ $ sudo yum update
 	sudo yum install cairo-devel
 	sudo yum install libXt-devel
 	sudo yum install gtk2-devel
+	sudo yum install v8-devel
+	sudo yum install udunits2
+	sudo yum install udunits2-devel
 	sudo yum install xorg-x11-server-Xvfb
 	
 	'# это я бы не ставил, если не потребуется
@@ -109,7 +112,41 @@ $ sudo yum update
 	- Связанная ошибка [no DISPLAY variable so Tk is not available for R](http://terradelfoc.blogspot.ru/2014/10/no-display-variable-so-tk-is-not.html)
 	
 	Это все вызвано отсутствием подсистемы X11 на машине. По идее лечится (но не получилось) установкой всего графического десктопа: [Installing the Graphical Window System (X.org-X11) and the Default Desktop Environment on CentOS 6](http://www.linuxquestions.org/questions/blog/gearge-611791/installing-the-graphical-window-system-x-org-x11-and-the-default-desktop-environment-on-centos-6-4098/). Если пакеты с tk\tcl интерфейсом не требуются, то можно и не ставить.   
-	Есть еще вариант: ["How to run R on a server without X11, and avoid broken dependencies"](http://stackoverflow.com/questions/1710853/how-to-run-r-on-a-server-without-x11-and-avoid-broken-dependencies). Тут рекомендуют "*Use the virtual framebuffer X11 server -- we do the same to build packages requiring X11 for R builds in headless chroots*." Читаем дальше [How to install and configure Xvfb in Linux/Centos](http://ithubinfo.blogspot.ru/2013/11/how-to-install-and-configure-xvfb-in.html) 
+	Есть еще вариант: ["How to run R on a server without X11, and avoid broken dependencies"](http://stackoverflow.com/questions/1710853/how-to-run-r-on-a-server-without-x11-and-avoid-broken-dependencies). Тут рекомендуют "*Use the virtual framebuffer X11 server -- we do the same to build packages requiring X11 for R builds in headless chroots*." Читаем дальше [How to install and configure Xvfb in Linux/Centos](http://ithubinfo.blogspot.ru/2013/11/how-to-install-and-configure-xvfb-in.html)  
+	
+	Эмуляция X11 приводит к проблеме появления окна с выбором CRAN репозитория, а в консоли это не отображается. Поэтому надо вручную установить репозиторий. Детали читаем в переписке ["How to select a CRAN mirror in R"](http://stackoverflow.com/questions/11488174/how-to-select-a-cran-mirror-in-r). Как резюме, перед инсталляцией надо исполнить команду `chooseCRANmirror(graphics=FALSE, ind=37)`. 37 -- Россия, список индексов отображается просто командой `chooseCRANmirror()`.
+	
+	УРА!!!!! Набор шаманств позволил поставить пакет следующими командами:
+	```
+	sudo yum install xorg-x11-server-Xvfb
+	sudo -i xvfb-run R --no-save
+	chooseCRANmirror(graphics=FALSE, ind=37)
+	pacman::p_load("gWidgetstcltk")
+	```
+- Установка пакета `printr` делается ручками. В CRAN его нет, а частный репозиторий организован криво. Последовательность команд такова:
+```
+wget https://yihui.name/xran/src/contrib/printr_0.0.6.tar.gz
+install.packages(<pathtopackage>, repos = NULL, type="source")
+install.packages("printr_0.0.6.tar.gz", repos = NULL, type="source")
+```
+- Установка пакета `DiagrammeRsvg` требует установки библиотек V8
+- Установка пакета `ggforce` требует установки библиотек udunits2
+- Установка пакета `udunits2`, используемого пакетом `thomasp85/ggforce` приводит к ошибке:
+```
+     -----Error: udunits2.h not found-----
+     If the udunits2 library is installed in a non-standard location,
+     use --configure-args='--with-udunits2-lib=/usr/local/lib' for example,
+     or --configure-args='--with-udunits2-include=/usr/include/udunits2'
+     replacing paths with appropriate values for your installation.
+     You can alternatively use the UDUNITS2_INCLUDE and UDUNITS2_LIB
+     environment variables.
+     If udunits2 is not installed, please install it.
+     It is required for this package.
+```
+Частично почитать ответы по загрузке пакета `udunits2` можно здесь: ["Installing packages with complex dependencies"](https://github.com/PecanProject/pecan/issues/71). После установки библиотек ищем расположение h файлов следующей командой `find . -type f -name udunits2.h` и запускаем инсталляцию с параметрами:
+`install.packages("udunits2", configure.args='--with-udunits2-include=/usr/include/udunits2/')`
+
+
 
 
 ## Настройка git клиента
