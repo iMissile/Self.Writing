@@ -44,6 +44,9 @@ http://it-like.ru/kak-perenesti-windows-7-na-ssd-disk/
 2. Удалить Norton и прочую фигню
 3. Office 365 со скидкой 50%. [Хак](http://news.microsoft.com/ru-ru/office-2016-for-windows-10/)
 
+# Windows 7 и выше. Проблемы с принтером HP Laserjet 1300
+- Начал решение отсюда: [Помогите найти драйвер способный печатать на HP Lasejet 1300 в Windows 7/Vista в родном для принтера разрешении 1200 dpi](http://forum.ixbt.com/topic.cgi?id=58:14)
+- Нашел решение здесь: [Установка драйвера HP LaserJet 1320 в Windows 10. Решено!!!](https://dyrik.ru/windows/ustanovka-drajvera-hp-laserjet-1320-v-windows-7-windows-8-i-windows-10-resheno.html)
 
 # Полезные твики по настройке Windows
 
