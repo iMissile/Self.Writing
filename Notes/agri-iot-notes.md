@@ -58,7 +58,7 @@ $ sudo yum update
 ```
 	 
 - При установке пакетов по root (для всех) запускаем R от рута `sudo -i R` и прогоняему установку. Для успешного прогона необходимо доставлять системные либы (CentOS specific commands).
-
+```
 	sudo yum install libcurl-devel
 	sudo yum install openssl-devel
 	sudo yum install cyrus-sasl-devel
@@ -85,7 +85,7 @@ $ sudo yum update
 	sudo yum -y groupinstall "X Window System" "Desktop" "Fonts" "General Purpose Desktop"
 	sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
 	sudo yum update	
-
+```
 - Поиск пакетов по репозиторию: `sudo yum search python | grep dev`
 
 - Пакеты надо ставить из под рута, в помощь очень полезные статьи:
