@@ -8,7 +8,7 @@
 
 Разобрался. Дело в том что CentOS7 для синхронизации времени по умолчанию использует сервис chrony. ntpd не будет стартовать автоматически пока не отключишь chrony.
 Что бы отключить chrony нужно выполнить команду: `systemctl disable chronyd.service`
-А вообще chrony по функциям очень сильно напоминае ntpd.
+А вообще chrony по функциям очень сильно напоминает ntpd.
 
 Также смотрим статью ["CentOS 7 настройка сервера"](https://serveradmin.ru/centos-7-nastroyka-servera/). Тут учтены нюансы, связанные с сервисом chrony в 7-ой версии CentOS.
 
@@ -22,9 +22,11 @@
  - Проверяем, нормально ли запустился: `systemctl status chronyd`
 
 ### Добавление OS репозиториев
-
 Для инсталляции различного софта необходимо подключить репозитории в CentOS. Наиболее популярные это EPEL и rpmforge (note: в январе 2017 больше не поддерживается), поэтому добавим их. Сначала ставим EPEL. С ним все просто, он добавляется из стандартного репозитория:
 `yum -y install epel-release`
+
+### Перезагрузка
+`reboot now`
 
 ### Операции с файлами
 - [How do I remove a full directory in Linux?](http://www.computerhope.com/issues/ch000798.htm) `rm -rf mydir`
@@ -146,15 +148,54 @@ install.packages("printr_0.0.6.tar.gz", repos = NULL, type="source")
 Частично почитать ответы по загрузке пакета `udunits2` можно здесь: ["Installing packages with complex dependencies"](https://github.com/PecanProject/pecan/issues/71). После установки библиотек ищем расположение h файлов следующей командой `find . -type f -name udunits2.h` и запускаем инсталляцию с параметрами:
 `install.packages("udunits2", configure.args='--with-udunits2-include=/usr/include/udunits2/')`
 
+**Может возникнуть ситуация**, когда потребуется доставлять фортран. Детально (в т.ч. и про управление пользователями) можно почитать в этой публикации: ["Install RStudio Server on centOS6.5"](http://blog.supstat.com/2014/05/install-rstudio-server-on-centos6-5/)
 
+### Управление пользователями
+Тут не все прозрачно, пытаемся разобраться по частям.
 
+- [RStudio prohibits signing in with a user id below 100. Make sure your user id is above this threshold.](https://support.rstudio.com/hc/en-us/articles/200717203-RStudio-Server-Log-in-and-User-Authentication-Problems). А root имеет id=0.
+- [How can I look up a username by id in linux?](http://unix.stackexchange.com/questions/36580/how-can-i-look-up-a-username-by-id-in-linux). `id -u <user-name>`
 
-## Настройка git клиента
+[Дополнительные ограничения](https://support.rstudio.com/hc/en-us/articles/200552306-Accessing-RStudio-Server-Open-Source):  
+- RStudio Server will not permit logins by system users (those with user ids lower than 100).  
+- User credentials are encrypted using RSA as they travel over the network.  
+- You can manage users with standard Linux user administration tools like useradd, userdel, etc.  
+- Each user needs to be created with a home directory.
+
+If you are unable to access the server after installation, you should run the verify-installation command to output additional diagnostics:
+`$ sudo rstudio-server verify-installation`
+
+В официальной документации на RStudio Server Pro есть такой пункт:
+```
+3.2 Restricting Access to Specific Users
+3.2.1 Minimum User Id
+By default RStudio Server only allows normal (as opposed to system) users to successfully authenticate.
+The minimum user id is determined by reading the UID_MIN value from the /etc/login.defs
+file. If the file doesn’t exist or UID_MIN isn’t defined within it then a default value of 1000 is used.
+You change the minimum user id by specifying the auth-minimum-user-id option. For example:
+/etc/rstudio/rserver.conf
+```
+
+## Настройка git на GitHub и на клиенте
 - [Репозиторий кода](https://github.com/iMissile/agri-iot-code)
 - [Репозиторий данных](https://github.com/iot-rus/agri-iot-data)
 
 На машине-сборщике эти репозитории частично мапируются на директории scripts & data. В scripts делаем выгрузку скриптов, а в data делаем клон репозитория данных.
 Детально смотрим статью ["Working with Git on Linux"](http://guides.beanstalkapp.com/version-control/git-on-linux.html)
+
+
+### Multiple account
+Для справки смотрим официцальный мануал ["Set Up Git"](https://help.github.com/articles/set-up-git/).
+
+- [Multiple GitHub Accounts & SSH Config](http://stackoverflow.com/questions/3225862/multiple-github-accounts-ssh-config)
+- [Multiple SSH Keys settings for different github account](https://gist.github.com/jexchan/2351996)
+- [Could not open a connection to your authentication agent](http://stackoverflow.com/questions/17846529/could-not-open-a-connection-to-your-authentication-agent). You might need to start ssh-agent before you run the ssh-add command:
+```
+eval `ssh-agent -s`
+ssh-add
+```
+- [Start ssh-agent on login](http://stackoverflow.com/questions/18880024/start-ssh-agent-on-login/18915067#18915067)
+
 
 ### Настройка прав на стороне клиента
 
@@ -182,6 +223,8 @@ Omit --global to set the identity only in this repository.
 
 Если соединение не устанавливается (ошибка доступа), проходим процедуру лечения:
 ["Help, I keep getting a 'Permission Denied (publickey)' error when I push!"](https://gist.github.com/adamjohnson/5682757)
+
+ВАЖНО!: репозиторий сломался, когда я его перевел с авторизации по HTTP на авторизацию по SSH. При этом надо лечить существующий клон репозитория. Ответ по смене ссылки репозитория читаем здесь: ["Changing a remote's URL"](https://help.github.com/articles/changing-a-remote-s-url/)
 
 #### Генерация нескольких ключей
 Для простых задач можно ограничиться одним ключом, но есть возможность для каждого хоста сделать свой RSA ключ.
@@ -245,11 +288,12 @@ Use new mode:
 
 ## Технические шаги
 ### Выгрузка репозитория погоды
-Репозиторий данных ручками создали на GitHub. На машине-сборщике первоначальную инсталляцию делаем руками. В верхней директории запускаем команду `git clone https://github.com/iot-rus/agri-iot-data data`. Имя директории меняем.
+Репозиторий данных ручками создали на GitHub. На машине-сборщике первоначальную инсталляцию делаем руками. В верхней директории запускаем команду `git clone https://github.com/iot-rus/agri-iot-data data`. Здесь мы принудительно меняем имя директории.
 
 В принципе, надо делать пустные файлы данных сразу на GitHub. Тогда не придется их добавлять ручками на клиентской стороне. Но если не сделал, то можно это исправить командой `git add <name>` 
 
 ВАЖНО!: репозиторий сломался, когда я его перевел с авторизации по HTTP на авторизацию по SSH. При этом надо лечить существующий клон репозитория. Ответ по смене ссылки репозитория читаем здесь: ["Changing a remote's URL"](https://help.github.com/articles/changing-a-remote-s-url/)
+
 
 ### Первоначальная выгрузка скриптов на linux машине
 - Проверка установленной версии git командой `git version`
@@ -333,3 +377,88 @@ You should look at adjusting logrotate rules, instead of your custom cron, which
 Читаем детальную статью ["Crontab error "/bin/sh: root: command not found"](http://rhosted.blogspot.ru/2010/04/crontab-error-binsh-root-command-not.html).
 Там все очень подробно описано и разобрано. 
 ПРАВИЛЬНАЯ итоговая команда: `*/10 * * * * /root/scripts/weather.sh`, в личном расписании не требуется указания имени пользователя.
+
+
+# Настройка данных для использования R
+
+Настройку git веду по подсказкам из ["Multiple GitHub Accounts & SSH Config"](http://stackoverflow.com/questions/3225862/multiple-github-accounts-ssh-config)
+
+1. логинимся по ruser, все делаем от него.
+2. Включаем в WinSCP отображение скрытых файлов (`Ctrl+Alt+H`)
+3. создаем 2 ключа для GitHub: data и code. ~ надо принудительно раскрыть в `/home/user/`, иначе не генерируется
+	- `ssh-keygen -t rsa -C "mail1@gmail.com"`,  `~/.ssh/id_rsa_data`.
+	- `ssh-keygen -t rsa -C "mail2@gmail.com"`,  `~/.ssh/id_rsa_code`
+4. Добавляем ключи в репозитории GitHub.
+5. Прописываем созданные ключи в директории $HOME/.ssh/config`:
+```
+ # Data GitHub
+Host github.com-data
+    HostName github.com
+    PreferredAuthentications publickey
+    User git
+    IdentityFile ~/.ssh/id_rsa_data
+
+ # Code GitHub
+Host github.com-code
+    HostName github.com
+    PreferredAuthentications publickey
+    User git
+    IdentityFile ~/.ssh/id_rsa_code
+```
+5. Запускаем ssh агента: `eval $(ssh-agent -s)`
+6. Добавляем ключи и проверяем:
+```
+ssh-add ~/.ssh/id_rsa_data
+ssh-add ~/.ssh/id_rsa_code
+ssh-add -l
+```
+7. Проверяем корректность подключений
+```
+ssh -T git@github.com-code
+ssh -T git@github.com-data
+```
+В случае успеха должно быть сообщение "Hi <USER>! You've successfully authenticated, but GitHub does not provide shell access."
+9. создаем структуру директорий
+	cd ~
+	mkdir IoT
+	cd ./IoT
+10. Клонируем репозитории в директории IoT и модифицируем конфигурации
+```
+git clone git@github.com:iot-rus/agri-iot-data.git data
+git clone git@github.com:iMissile/agri-iot-code.git code
+```
+для возможности коммитов устанавливаем дефолтовых пользователей этих директорий:
+```
+cd code
+git config user.name "<NAME>"
+git config user.email "<MAIL>@gmail.com"
+cd data
+git config user.name "<NAME>"
+git config user.email "<MAIL>@gmail.com"
+```
+11. Проверяем конфиурации командой `git config -l`  
+12. Смотрим настройки удаленного репозитория: `git remote -v`
+13. Меняем настройки удаленного репозитория в соответствии с именами, указанными в  git config (иначе коммит не проходит, поскольку система не знает, какой ключ использовать).
+```
+code:
+git remote set-url origin git@github.com-code:kuchaguangjie/pygtrans.git
+data:
+git remote set-url origin git@github.com-data:kuchaguangjie/pygtrans.git
+```
+13. Настраиваем исполнение скрипта в crone от лица ruser:
+```
+cd ~/IoT/code/cron-scripts/
+sudo chmod +x ./request_weather.sh
+crontab -e 
+*/1 * * * * ~/IoT/code/cron-scripts/request_weather.sh
+```
+14. Рестартуем cron, проверяем исполнение задач cron по лог файлу: 
+```
+systemctl restart crond.service
+cat /var/log/cron (под рутом)
+```
+15. Настроим новую модель поведения `git push`:
+```
+git config --global push.default matching
+ # git config --global push.default simple
+```
