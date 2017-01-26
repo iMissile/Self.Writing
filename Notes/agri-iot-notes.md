@@ -175,6 +175,96 @@ file. If the file doesn’t exist or UID_MIN isn’t defined within it then a de
 You change the minimum user id by specifying the auth-minimum-user-id option. For example:
 /etc/rstudio/rserver.conf
 ```
+## Установка RStudio Shiny Server
+Читаем оригинальную инструкцию по инсталляции ["Installing Shiny Server Open Source"](https://www.rstudio.com/products/shiny/download-server/)
+
+Once installed, view the [Administrator’s Guide](http://docs.rstudio.com/shiny-server/) to learn how to manage and configure Shiny Server. Stay up to date on Shiny Server news and software updates by subscribing above.
+
+- Проверяем, что процесс запущен:  
+`sudo systemctl status shiny-server`
+- Cмотрим log файл:  
+`/var/log/shiny-server.log`
+
+По умолчанию Shiny Server доступен по порту 3838.
+
+Смапируем наше приложение на location '/iot'. Делается это в конфиге `/etc/shiny-server/shiny-server.conf`. Читаем мануал '2.2.2 Location'  
+И рестартуем сервер  
+`sudo systemctl restart shiny-server`
+
+При проблемах функционирования начинаем читать логи:  
+- `systemctl status shiny-server.service`  
+- `journalctl -xe` for details.
+
+
+### Управление Shiny Server
+Читаем х"1.4 Stopping and Starting"](http://docs.rstudio.com/shiny-server/#stopping-and-starting)
+
+
+### Настройка Shiny Server для нескольких пользователей
+Читаем мануал + разъяснительную статью ["Shiny Server Quick Start: Run Shiny Server on multiple ports"](https://support.rstudio.com/hc/en-us/articles/219045167-Shiny-Server-Quick-Start-Run-Shiny-Server-on-multiple-ports)
+
+По шагам
+1. Включаем в конфиге многопользовательский режим. При этом все пользовательские приложения будут мэпиться на `~/ShinyApps`. 
+2. Делаем линк (мягкая ссылка) разрабатываемого приложения в эту директорию.
+3. Меняем конфиг сервера и рестартуем.
+4. Проверяем по путям 
+	- `http://10.0.0.228:3838/` -- общая стартовая страница с приложениями
+	- `http://10.0.0.228:3838/example1/` -- общее приложение по ссылке 
+	- `http://ip:3838/users/ruser/iot/` -- частное приложение
+	
+Конфигурация выглядит следующим образом:
+```
+# Instruct Shiny Server to run applications as the user ':HOME_USER:', where
+# possible (this username only takes effect in locations managed by
+# 'user_dirs'). In all other locations, we should fall back to the 'shiny' user.
+run_as :HOME_USER: shiny;
+
+# Specify the authentication method to be used.
+# Initially, a flat-file database stored at the path below.
+# auth_passwd_file /etc/shiny-server/passwd;
+
+# Log all Shiny output to files in this directory
+log_dir /var/log/shiny-server;
+
+# Define a server that listens on port 3838
+server {
+  listen 3838;
+
+  # Define a location at the base URL
+  location / {
+
+    # Host the directory of Shiny Apps stored in this directory
+    site_dir /srv/shiny-server;
+
+    # Log all Shiny output to files in this directory
+    log_dir /var/log/shiny-server;
+
+    # When a user visits the base URL rather than a particular application,
+    # an index of the applications available in this directory will be shown.
+    directory_index on;
+  }
+
+  # Define a location at the URL "/example1"
+  location /example1 {
+    app_dir /srv/shiny-server/sample-apps/hello;
+  }
+
+  # Define a location at the URL "/users"
+  location /users {
+    # Allow users to host their own apps in ~/ShinyApps
+    user_dirs;
+    
+    # Optionally, you can restrict the privilege of hosting Shiny applications
+    # only to members of a particular Linux group.
+    # members_of shinyUsers;    
+    
+    # When a user visits the base URL rather than a particular application,
+    # an index of the applications available in this directory will be shown.
+    directory_index on;
+  }
+
+}
+```
 
 ## Настройка git на GitHub и на клиенте
 - [Репозиторий кода](https://github.com/iMissile/agri-iot-code)
@@ -456,6 +546,8 @@ crontab -e
 ```
 systemctl restart crond.service
 cat /var/log/cron (под рутом)
+ # или только строчки с коммитами
+cat /var/log/cron | egrep  "file.? changed" 
 ```
 15. Настроим новую модель поведения `git push`:
 ```

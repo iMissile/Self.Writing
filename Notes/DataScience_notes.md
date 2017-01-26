@@ -4,16 +4,93 @@
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+#26.01.2017
+## R
+- COOL! [Designing R projects](https://nicercode.github.io/blog/2013-04-05-projects/)
+- [Writing an R package from scratch](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/)
+- [Packrat is a dependency management system for R.](https://rstudio.github.io/packrat/)
+- [What's a good R package name? {closed}](http://stackoverflow.com/questions/24201568/whats-a-good-r-package-name)
+	- [Writing R Extensions](https://cran.r-project.org/doc/manuals/r-devel/R-exts.html#Creating-R-packages)
+	- Writing R Extensions only provides the following constraints: The mandatory ‘Package’ field gives the name of the package. This should contain only (ASCII) letters, numbers and dot, have at least two characters and start with a letter and not end in a dot.
+- [Making Your First R Package](http://tinyheero.github.io/jekyll/update/2015/07/26/making-your-first-R-package.html)
+- [STAT 545. Write your own R package](http://stat545.com/packages00_index.html)
+- COOL! [R package development - the Leek group way!](https://github.com/jtleek/rpackages)
+- [devtool error message "Could not find package root"](https://support.rstudio.com/hc/en-us/community/posts/218049167-devtool-error-message-Could-not-find-package-root-). 
+`load_all` doesn't create DESCRIPTION files (and the absence of one is probably why you're getting the error). Here's a walkthrough for creating a package's base file requirements that may help:
+http://r-pkgs.had.co.nz/package.html
+	- Найденное решение: `devtools::load_all()` надо делать, установив рабочую директорию в местоположение пакета.
+- [R packages by Hadley Wickham. Package structure](http://r-pkgs.had.co.nz/package.html)
+- [library() vs require() in R](https://yihui.name/en/2014/07/library-vs-require/)
+- Как подключать другие пакеты при разработке своего? [R package primer. Connecting to other packages](http://kbroman.org/pkg_primer/pages/depends.html)
+
+## Shiny
+- [Manage paths when deploying R Shiny?](http://stackoverflow.com/questions/30160334/manage-paths-when-deploying-r-shiny)
+- [r shiny server is running, but the app is not workinпg](http://stackoverflow.com/questions/37022020/r-shiny-server-is-running-but-the-app-is-not-working)
+
+## R packages
+- Решаем проблему документирования нескольких функций в одной .R файле. 
+	- [R roxygen2 document multiple functions in same file](http://stackoverflow.com/questions/28861525/r-roxygen2-document-multiple-functions-in-same-file)
+	- [Writing Package Documentation](https://support.rstudio.com/hc/en-us/articles/200532317-Writing-Package-Documentation)
+	- Book "R packages": Use either @rdname or @describeIn to control where method documentation goes. See “Documenting Multiple Functions in the Same File” on page 55 for details..
+	- Book "R packages": Or you can create a dummy documentation file by documenting NULL and setting an informative @name:
+
+# 25.01.2017
+## R
+- Reverse purrr. [Rebuilding Map Example With Apply Functions](http://opiateforthemass.es/articles/rebuilding-map-example-with-apply-functions/)
+
+# 24.01.2017
+## Monitoring
+- Куда же делся Integrien Alive? Это теперь VMware vRealize Operations. Выяснил я это по логам, опубликованным в статье ["Performing a side-by-side upgrade of a VMware vRealize Operations 5.x Appliance to vRealize Operations Manager 6.0.x (2031543)"](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2031543)
+
+## R
+- [How to run R scripts from the command line](https://support.rstudio.com/hc/en-us/articles/218012917-How-to-run-R-scripts-from-the-command-line)
+- [How to suppress warning messages when loading a library?](http://stackoverflow.com/questions/18931006/how-to-suppress-warning-messages-when-loading-a-library)
+- [Python style logging in R](http://mazamascience.com/WorkingWithData/?p=1727)
+- [Better logging in R (aka futile.logger 1.3.0 released)](https://cartesianfaith.com/2013/03/10/better-logging-in-r-aka-futile-logger-1-3-0-released/)
+
+# 23.01.2017
+## Bash
+- [Loop through array of strings in bash script?](http://stackoverflow.com/questions/8880603/loop-through-array-of-strings-in-bash-script)
+- [Regular Expressions In grep](https://www.cyberciti.biz/faq/grep-regular-expressions/)
+
+## R
+- Поиск дубликатов строк в текстовом файле.
+	- Дискуссия про решение задачи средствами unix. [Identify duplicate lines in a file without deleting them?](http://askubuntu.com/questions/434545/identify-duplicate-lines-in-a-file-without-deleting-them)
+	- Stringi явно лидирует по скорости перед Stringr. [Get unique string from a vector of similar strings](http://stackoverflow.com/questions/25447296/get-unique-string-from-a-vector-of-similar-strings).
+	- [Identifying and Removing Duplicate Data in R](http://www.sthda.com/english/wiki/identifying-and-removing-duplicate-data-in-r)
+- Попробуем сделать это через hash:
+	- [How to create md5 hash of a column in R?](http://stackoverflow.com/questions/21686645/how-to-create-md5-hash-of-a-column-in-r)
+	- [How to get a hash code as integer in R?](http://stackoverflow.com/questions/27442991/how-to-get-a-hash-code-as-integer-in-r)
+- А теперь через dplyr:
+	- [Remove duplicated rows using dplyr](http://stackoverflow.com/questions/22959635/remove-duplicated-rows-using-dplyr)
+- [break/exit script](http://stackoverflow.com/questions/17837289/break-exit-script)
+- [Splitting a file name](http://stackoverflow.com/questions/14173754/splitting-a-file-name)
+- [Getting filename without extension in R {duplicate}](http://stackoverflow.com/questions/29113973/getting-filename-without-extension-in-r)
+- Time [ISO 8601](https://ru.wikipedia.org/wiki/ISO_8601). ISO 8601 — международный стандарт, выданный организацией ISO (International Organization for Standardization), который описывает формат даты и времени и даёт рекомендации для его использования в международном контексте.
+- [How does dplyr's select helper function everything() differ from copying?](http://stackoverflow.com/questions/37171891/how-does-dplyrs-select-helper-function-everything-differ-from-copying)
+- [Reordering columns in a large dataframe](http://stackoverflow.com/questions/18339370/reordering-columns-in-a-large-dataframe). To move specific columns to the beginning or end of a data.frame, use select from the dplyr package and its everything() function. In this example we are sending to the end:
+```
+library(dplyr)
+df %>%
+  select(-b, -c, everything())
+```
+
+
 # 20.01.2017
 ## R
 - [https://yihui.name/xran/](https://yihui.name/xran/). This is a personal and experimental R package repository of Yihui Xie. It contains some of my source packages under development. These packages may be subject to significant changes day to day. Please consider CRAN if you want to install packages for production purposes.
 - [Installing package from a local zip file in R {duplicate}](http://stackoverflow.com/questions/37548198/installing-package-from-a-local-zip-file-in-r)
+- Передача параметров в командной строке
+	- [Passing arguments to an R script from command lines](http://tuxette.nathalievilla.org/?p=1696)
+	- [Bash+R: howto pass parameters from bash script to R](http://www.milanor.net/blog/bashr-howto-pass-parameters-from-bash-script-to-r/)
+	- [Is it possible to specify command line parameters to R-script in RStudio?](http://stackoverflow.com/questions/14980322/is-it-possible-to-specify-command-line-parameters-to-r-script-in-rstudio)
 
 # 19.01.2017
 ## R
 - COOL! [Introducing padr](https://edwinth.github.io/blog/padr-intro/)
 I am happy to introduce the padr package, which is now available on CRAN. If you frequently work with data containing a timestamp, especially automatically created data, you might find this package helpful. It solves two problems that you can be confronted with when preparing datetime data for analysis. First, data is often recorded on too low a level for your analysis. For instance the timestamp records the moment up to the second, where you want to do the analysis on an hourly level. Second, when no events toke place there are typically no data records. This is sensible from a storage perspective, but often unhelpful for analyzing the data. When calculating a moving average for example, you want missing observations to have the value 0. You don’t want them to be lacking from your set.
 - [Debugging R Functions](http://seananderson.ca/2013/08/23/debugging-r.html)
+- [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
 - [Debugme](https://github.com/gaborcsardi/debugme). Easy and efficient debugging for R packages. gaborcsardi/debugme
 - COOL! Классный сайт с примерами визуализации. [Welcome to Kristoffer Magnusson's blog about R, STATISTICS, PSYCHOLOGY, OPEN SCIENCE, DATA VISUALIZATION](http://rpsychologist.com/parsing-data-from-a-text-file-and-plotting-where-people-live-using-ggplot2-and-openstreetmaps/)
 - COOL presentation. [Advanced R Markdown. Behind the Knit Button](https://slides.yihui.name/2017-rstudio-conf-rmarkdown-Yihui-Xie.html#1) by Yihui Xie, RStudio
@@ -44,6 +121,7 @@ I am happy to introduce the padr package, which is now available on CRAN. If you
 ## R
 - COOL! [Top 50 ggplot2 Visualizations - The Master List (With Full R Code)](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)
 - [RStudio Conference 2017 Recap](http://www.gettinggeneticsdone.com/2017/01/rstudio-conference-2017-recap.html)
+- [kbroman/RStudioConf2017Slides](https://github.com/kbroman/RStudioConf2017Slides/blob/master/ReadMe.md)
 - [The tidyverse](http://tidyverse.org/) is a collection of R packages that share common philosophies and are designed to work together. This site is a work-in-progress guide to the tidyverse and its packages.
 - purr:
 	- [2-hour purrr tutorial](http://bit.ly/purrr-rstudioconf)
@@ -105,7 +183,7 @@ Go and explore, and happy new year!
 ## R
 - COOL! [Custom images for Shiny dashboard valueBox icons](https://blog.snap.uaf.edu/2017/01/11/custom-images-for-shiny-dashboard-valuebox-icons/)
 	- gist: [Use custom local image files as icons in a Shiny Dashboard value box](https://gist.github.com/leonawicz/0fab3796b02a62b7f3bd0c02a171f0b7)
-- [lingtypology: Linguistic Typology and Mapping](https://cran.rstudio.com/web/packages/lingtypology/). Пример применения на картах упомянут в [December 2016 Package Picks by Joseph Rickert](https://www.rstudio.com/rviews/2017/01/11/december-2016-package-picks/)
+- В применении к leaflet. [lingtypology: Linguistic Typology and Mapping](https://cran.rstudio.com/web/packages/lingtypology/). Пример применения на картах упомянут в [December 2016 Package Picks by Joseph Rickert](https://www.rstudio.com/rviews/2017/01/11/december-2016-package-picks/)
 - [Magic reprex]()http://www.njtierney.com/r/rbloggers/2017/01/11/reprex-magic/) Making reproducible examples can be hard.
 - [Random Forest Classification of Mushrooms](https://stoltzmaniac.com/random-forest-classification-of-mushrooms/)
 - [Repeatedly applying a function](https://tjmahr.github.io/repeatedly-calling-a-function/)
@@ -797,6 +875,7 @@ Table1Dat <- sqlFetch(channel, "Table1")
 - [Cookbook for R >> Basics Working with NULL, NA, and NaN](http://www.cookbook-r.com/Basics/Working_with_NULL_NA_and_NaN/)
 - [na.omit() for lists in R]()https://gist.github.com/rhochreiter/7029236): `na.omit.list <- function(y) { return(y[!sapply(y, function(x) all(is.na(x)))]) }`
 - [Simplest way to get rbind to ignore column names](http://stackoverflow.com/questions/19297475/simplest-way-to-get-rbind-to-ignore-column-names)
+- [How does dplyr's select helper function everything() differ from copying?](http://stackoverflow.com/questions/37171891/how-does-dplyrs-select-helper-function-everything-differ-from-copying)
 - [Reordering columns in a large dataframe](http://stackoverflow.com/questions/18339370/reordering-columns-in-a-large-dataframe). To move specific columns to the beginning or end of a data.frame, use select from the dplyr package and its everything() function. In this example we are sending to the end:
 ```
 library(dplyr)
