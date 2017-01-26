@@ -214,56 +214,56 @@ Once installed, view the [Administrator’s Guide](http://docs.rstudio.com/shiny
 	
 Конфигурация выглядит следующим образом:
 ```
-# Instruct Shiny Server to run applications as the user ':HOME_USER:', where
-# possible (this username only takes effect in locations managed by
-# 'user_dirs'). In all other locations, we should fall back to the 'shiny' user.
-run_as :HOME_USER: shiny;
-
-# Specify the authentication method to be used.
-# Initially, a flat-file database stored at the path below.
-# auth_passwd_file /etc/shiny-server/passwd;
-
-# Log all Shiny output to files in this directory
-log_dir /var/log/shiny-server;
-
-# Define a server that listens on port 3838
-server {
-  listen 3838;
-
-  # Define a location at the base URL
-  location / {
-
-    # Host the directory of Shiny Apps stored in this directory
-    site_dir /srv/shiny-server;
-
+    # Instruct Shiny Server to run applications as the user ':HOME_USER:', where
+    # possible (this username only takes effect in locations managed by
+    # 'user_dirs'). In all other locations, we should fall back to the 'shiny' user.
+    run_as :HOME_USER: shiny;
+    
+    # Specify the authentication method to be used.
+    # Initially, a flat-file database stored at the path below.
+    # auth_passwd_file /etc/shiny-server/passwd;
+    
     # Log all Shiny output to files in this directory
     log_dir /var/log/shiny-server;
-
-    # When a user visits the base URL rather than a particular application,
-    # an index of the applications available in this directory will be shown.
-    directory_index on;
-  }
-
-  # Define a location at the URL "/example1"
-  location /example1 {
-    app_dir /srv/shiny-server/sample-apps/hello;
-  }
-
-  # Define a location at the URL "/users"
-  location /users {
-    # Allow users to host their own apps in ~/ShinyApps
-    user_dirs;
     
-    # Optionally, you can restrict the privilege of hosting Shiny applications
-    # only to members of a particular Linux group.
-    # members_of shinyUsers;    
+    # Define a server that listens on port 3838
+    server {
+      listen 3838;
     
-    # When a user visits the base URL rather than a particular application,
-    # an index of the applications available in this directory will be shown.
-    directory_index on;
-  }
-
-}
+      # Define a location at the base URL
+      location / {
+    
+        # Host the directory of Shiny Apps stored in this directory
+        site_dir /srv/shiny-server;
+    
+        # Log all Shiny output to files in this directory
+        log_dir /var/log/shiny-server;
+    
+        # When a user visits the base URL rather than a particular application,
+        # an index of the applications available in this directory will be shown.
+        directory_index on;
+      }
+    
+      # Define a location at the URL "/example1"
+      location /example1 {
+        app_dir /srv/shiny-server/sample-apps/hello;
+      }
+    
+      # Define a location at the URL "/users"
+      location /users {
+        # Allow users to host their own apps in ~/ShinyApps
+        user_dirs;
+        
+        # Optionally, you can restrict the privilege of hosting Shiny applications
+        # only to members of a particular Linux group.
+        # members_of shinyUsers;    
+        
+        # When a user visits the base URL rather than a particular application,
+        # an index of the applications available in this directory will be shown.
+        directory_index on;
+      }
+    
+    }
 ```
 
 ## Настройка git на GitHub и на клиенте
