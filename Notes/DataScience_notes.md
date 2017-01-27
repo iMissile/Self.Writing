@@ -4,6 +4,70 @@
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 27.01.2017
+## Разработка Shiny портала
+Сюда складываю различные интересные порталы и исходнички, которые можно и нужно использовать для разработки.
+- [Shiny tips & tricks for improving your apps and solving common problems](http://deanattali.com/blog/advanced-shiny-tips/)
+- [SHOW ME SHINY. GALLERY OF R WEB APPS](http://www.showmeshiny.com/)
+- [Style your apps with CSS](https://shiny.rstudio.com/articles/css.html)
+- [Shiny Themes](https://rstudio.github.io/shinythemes/). If you’ve created any shiny app in the past, you’re probably used to the default Bootstrap theme. However, you can also easily alter the overall appearance of your Shiny application using the shinythemes package. Here are screenshots of the same application with different themes.
+- [CodeShare.io. Share code in real-time with other developers](https://codeshare.io/)
+- [Climate projections by cities: R + Shiny + rCharts + leaflet](https://blog.snap.uaf.edu/2015/05/27/climate-projections-by-cities-r-shiny-rcharts-leaflet/)
+	- [Community Charts v4 Lite Portal](https://uasnap.shinyapps.io/cc4liteFinal/). [Code](https://github.com/ua-snap/shiny-apps/tree/master/cc4liteFinal)
+- [Up-to-date daily data: Alaska precipitation app + ACIS API](https://blog.snap.uaf.edu/2014/04/10/up-to-date-daily-data-alaska-precipitation-app-acis-api/)
+	- [Customizable charts: Alaska communities, daily precipitation](https://uasnap.shinyapps.io/ak_daily_precipitation/). Черный фон!
+	- [Code](https://github.com/ua-snap/shiny-apps/tree/master/ak_daily_precipitation)
+- [SNAP data QA/QCby Matthew leonawicz](http://leonawicz.github.io/SNAPQAQC/) refers to multiple threads of collections of R code in the form of scripts and functions across various projects utilizing SNAP data sets. Пришел отсюда: ["Plots from CMIP3 / CMIP5 climate model R Shiny app"](https://blog.snap.uaf.edu/2014/06/19/plots-from-cmip3-cmip5-climate-model-r-shiny-app/#more-817)
+
+## Unicode
+- COOL! [UTF-8 Everywhere. Manifesto](http://utf8everywhere.org/)
+- [Unicode Tips in Python 2 and R](http://fdatamining.blogspot.ru/2013/07/unicode-tips-in-python-2-and-r.html)
+- COOL! [Escaping from character encoding hell in R on Windows](http://people.fas.harvard.edu/~izahn/posts/reading-data-with-non-native-encoding-in-r/)
+
+## R
+- [Using system and web fonts in R plots](http://www.magesblog.com/2015/06/using-system-and-web-fonts-in-r-plots.html)
+- [Beautiful plotting in R: A ggplot2 cheatsheet](http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/)
+- [Center Plot title in ggplot2](http://stackoverflow.com/questions/40675778/center-plot-title-in-ggplot2). From the release news of ggplot 2.2.0: "The main plot title is now left-aligned to better work better with a subtitle". See also the plot.title argument in ?theme: "left-aligned by default".
+- [Package rtrie on CRAN](http://www.r-chart.com/). The rtrie package allows you to quickly create Tries from a list of strings.
+
+## Почему purrr не импортировался на shiny server? Разбираемся на локалке
+1. Warning: Error in gatherRawWeatherData: could not find function "safely"
+2. Выгрузить purrr не получилось, дает такое сообщение: "‘purrr’ пространство имен нельзя выгрузить:
+  пространство имен ‘purrr’ импортировано из ‘modelr’ и потому его нельзя выгрузить"
+- [Error: could not find function … in R](http://stackoverflow.com/questions/7027288/error-could-not-find-function-in-r). Тут большой ряд подсказок. В частности, команда 
+`getAnywhere(<FUNC>)`
+- [laply is part of what package in R?](http://stackoverflow.com/questions/7004710/laply-is-part-of-what-package-in-r)
+A useful way to find functions that are somewhere in some contributed package on CRAN is
+```
+install.packages("sos")
+library("sos")
+findFn("laply")
+```
+- [How to properly use functions from other packages in a R package](http://stackoverflow.com/questions/5260079/how-to-properly-use-functions-from-other-packages-in-a-r-package). Отвечает Hadley.
+- [How to import only one function from another package, without loading the entire namespace](http://stackoverflow.com/questions/19838360/how-to-import-only-one-function-from-another-package-without-loading-the-entire). Никак, но объяснения очень подробные, надо читать.
+
+Решение, взято из книги "R Packages":
+```
+It’s common for packages to be listed in Imports in DESCRIPTION, but not in
+NAMESPACE. In fact, this is what I recommend: list the package in DESCRIPTION
+so that it’s installed, then always refer to it explicitly with pkg::fun(). Unless there is
+a strong reason not to, it’s better to be explicit. It’s a little more work to write, but a lot
+easier to read when you come back to the code in the future. The converse is not true.
+Every package mentioned in NAMESPACE must also be present in the Imports or
+Depends fields.
+```
+Дополнительные комментарии читаем здесь:
+	- [Loading vs. attaching packages, ищем поиском, не в начале статьи]https://cran.r-project.org/web/packages/easypackages/README.html)
+Techincally, I've been using the word load incorrectly so far. In R, loading a package means having its contents available in memory, such that you can only access its functions via the :: and ::: operators. Attaching a package means loading it and then adding it to the search path so that you can access its functions directly. You can learn more about the distinctions between loading and attaching here.
+	- [library() vs require() in R](https://yihui.name/en/2014/07/library-vs-require/)
+
+И циклически возвращаемся к книге "R Pfckages", [Chapter 'Namespaces'](http://r-pkgs.had.co.nz/namespace.html)
+If a package is installed,  
+	- Loading will load code, data and any DLLs; register S3 and S4 methods; and run the .onLoad() function. After loading, the package is available in memory, but because it’s not in the search path, you won’t be able to access its components without using ::. Confusingly, :: will also load a package automatically if it isn’t already loaded. It’s rare to load a package explicitly, but you can do so with requireNamespace() or loadNamespace().
+	- Attaching puts the package in the search path. You can’t attach a package without first loading it, so both library() or require(), load then attach the package. You can see the currently attached packages with search().
+
+
+
 #26.01.2017
 ## R
 - COOL! [Designing R projects](https://nicercode.github.io/blog/2013-04-05-projects/)
@@ -26,6 +90,14 @@ http://r-pkgs.had.co.nz/package.html
 ## Shiny
 - [Manage paths when deploying R Shiny?](http://stackoverflow.com/questions/30160334/manage-paths-when-deploying-r-shiny)
 - [r shiny server is running, but the app is not workinпg](http://stackoverflow.com/questions/37022020/r-shiny-server-is-running-but-the-app-is-not-working)
+- [Modularizing Shiny app code](https://shiny.rstudio.com/articles/modules.html)
+- Hieght conroll in Shiny
+	- [Control the height in fluidRow in R shiny](http://stackoverflow.com/questions/25340847/control-the-height-in-fluidrow-in-r-shiny). HTML +CSS
+	- [Create a page that fills the window](https://shiny.rstudio.com/reference/shiny/latest/fillPage.html). Note that `fillPage(plotOutput("plot"))` will not cause the plot to fill the page. Like most Shiny output widgets, plotOutput's default height is a fixed number of pixels. You must explicitly set height = "100%" if you want a plot (or htmlwidget, say) to fill its container.
+	- [Plotly & Shiny, reactive height of plots](https://community.plot.ly/t/plotly-shiny-reactive-height-of-plots/1503)
+- [R Shiny: Tooltip in ggplot](http://stackoverflow.com/questions/38992270/r-shiny-tooltip-in-ggplot)
+- [Tooltip in shiny UI for help text](http://stackoverflow.com/questions/36670065/tooltip-in-shiny-ui-for-help-text)
+- [Run a plotting function and save the output as a PNG](http://shiny.rstudio.com/reference/shiny/latest/plotPNG.html)
 
 ## R packages
 - Решаем проблему документирования нескольких функций в одной .R файле. 
@@ -33,6 +105,11 @@ http://r-pkgs.had.co.nz/package.html
 	- [Writing Package Documentation](https://support.rstudio.com/hc/en-us/articles/200532317-Writing-Package-Documentation)
 	- Book "R packages": Use either @rdname or @describeIn to control where method documentation goes. See “Documenting Multiple Functions in the Same File” on page 55 for details..
 	- Book "R packages": Or you can create a dummy documentation file by documenting NULL and setting an informative @name:
+- Как посмотреть все функции, заявленные в пакете? Примеры команд (детализация ниже): `pacman::p_funs(pkgName)`.
+If you want all exported functions (i.e. functions accessible via ::), then `getNamespaceExports(pkgName)` will do the trick.  
+If you want all functions in the package, including the ones accessible via :::, you can do `ls(getNamespace(pkgName))`.
+	- [Is there a command in R to view all the functions present in a package? {duplicate}](http://stackoverflow.com/questions/30392542/is-there-a-command-in-r-to-view-all-the-functions-present-in-a-package)
+	- [Seeking Functions in a Package](http://stackoverflow.com/questions/20535247/seeking-functions-in-a-package)
 
 # 25.01.2017
 ## R
@@ -112,6 +189,7 @@ I am happy to introduce the padr package, which is now available on CRAN. If you
 	- [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview?csw=1). Welcome to the developer documentation for protocol buffers – a language-neutral, platform-neutral, extensible way of serializing structured data for use in communications protocols, data storage, and more.
 - [ggedit](https://www.r-statistics.com/2016/11/ggedit-interactive-ggplot-aesthetic-and-theme-editor/) – interactive ggplot aesthetic and theme editor. Installation `devtools::install_github("metrumresearchgroup/ggedit",subdir="ggedit")`
 - [ggedit 0.0.2](https://www.r-statistics.com/2017/01/ggedit-0-0-2-a-gui-for-advanced-editing-of-ggplot2-objects/): a GUI for advanced editing of ggplot2 objects
+- [ggplot2 Theme Builder](https://bchartoff.shinyapps.io/ggShinyApp/). [Code](https://github.com/bchartoff/ggShinyApp)
 
 
 # 17.01.2017
