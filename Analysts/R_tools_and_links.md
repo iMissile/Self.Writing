@@ -785,6 +785,8 @@ An Englishman in Copenhagen writing about digital, music and anything else. Pres
 
 # Python
 # Концептуальные материалы
+- Отличная статья, почему эра Python 2.0 закончилась. [As someone interested in learning Python, should I start with 2.x or go straight to 3.x?](https://www.quora.com/As-someone-interested-in-learning-Python-should-I-start-with-2-x-or-go-straight-to-3-x)
+- [Why Python 3 exists](https://snarky.ca/why-python-3-exists/)
 - [Python 3 Readiness](http://py3readiness.org/). Python 3 support graph for 360 most popular Python packages!
 - [Python2orPython3](https://wiki.python.org/moin/Python2orPython3). Should I use Python 2 or Python 3 for my development activity
 - [10 awesome features of Python that you can't use because you refuse to upgrade to Python 3](https://asmeurer.github.io/python3-presentation/python3-presentation.pdf)

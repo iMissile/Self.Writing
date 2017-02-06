@@ -442,3 +442,155 @@ If we can make them (the false negative) realize that they had a heavier debt bu
 	- "Web Intelligence and Big Data" (Indexing, Sentiment/Intent analysis, Map-reduce, Machine Learning, Clustering, Data Mining)., Практические задания с использованием Python/Orange
 - Курсы coursera.org (Stanford University)
 	- "Probabilistic graphical models" (Байесовские сети, Марковские сети, CRF, общая теория машинного обучения)., Практические задания в системе Octave (MatLab).
+====================================
+
+[Source](https://www.quora.com/What-is-the-difference-between-Data-Analytics-Data-Analysis-Data-Mining-Data-Science-Machine-Learning-and-Big-Data-1 "Permalink to What is the difference between Data Analytics, Data Analysis, Data Mining, Data Science, Machine Learning, and Big Data?")
+
+# What is the difference between Data Analytics, Data Analysis, Data Mining, Data Science, Machine Learning, and Big Data?
+
+Lots of good answers already - however the question is such that I think perhaps a business rather than technical description might be warranted.
+
+First things first, doing stuff with data, whatever you want to call it is going to require some investment - fortunately the entry price has come right down and you can do pretty much all of this at home with a reasonably priced machine and online access to a host of free or purchased resources. Commercial organizations have realized that there is huge value hiding in the data and are employing the techniques you ask about to realize that value. Ultimately what all of this work produces is insights, things that you may not have known otherwise. Insights are the items of information that cause a change in behavior.
+
+Let's begin with a real world example, looking at a farm that is growing strawberries (here's a simple backgrounder [The Secret Life Of California's World-Class Strawberries][1], this [High-Tech Greenhouse Yields Winter Strawberries][2] , and this [Growing Strawberry Plants Commercially][3])
+
+![][4]
+
+What would a farmer need to consider if they are growing strawberries? The farmer will be selecting the types of plants, fertilizers, pesticides. Also looking at machinery, transportation, storage and labor. Weather, water supply and pestlience are also likely concerns. Ultimately the farmer is also investigating the market price so supply and demand and timing of the harvest (which will determine the dates to prepare the soil, to plant, to thin out the crop, to nurture and to harvest) are also concerns.
+
+So the objective of all the data work is to create insights that will help the farmer make a set of decisions that will optimize their commercial growing operation.
+
+Let's think about the data available to the farmer, here's a simplified breakdown:
+
+1\. Historic weather patterns
+
+2\. Plant breeding data and productivity for each strain
+
+3\. Fertilizer specifications
+
+4\. Pesticide specifications
+
+5\. Soil productivity data
+
+6\. Pest cycle data
+
+7\. Machinery cost, reliability, fault and cost data
+
+8\. Water supply data
+
+9\. Historic supply and demand data
+
+10\. Market spot price and futures data
+
+Now to explain the definitions in context (with some made-up insights, so if you're a strawberry farmer, this might not be the best set of examples):
+
+**Big Data:** _Using all of the data available to provide new insights to a problem._ Traditionally the farmer may have made their decisions based on only a few of the available data points, for example selecting the breeds of strawberries that had the highest yield for their soil and water table. The Big Data approach may show that the market price slightly earlier in the season is a lot higher and local weather patterns are such that a new breed variation of strawberry would do well. So the insight would be switching to a new breed would allow the farmer to take advantage of a higher prices earlier in the season, and the cost of labor, storage and transportation at that time would be slightly lower. There's another thing you might hear in the Big Data marketing hype: Volume, Velocity, Variety, Veracity - so there is a huge amount of data here, a lot of data is being generated each minute (so weather patterns, stock prices and machine sensors), and the data is liable to change at any time (e.g. a new source of social media data that is a great predictor for consumer demand),
+
+**Data Analysis**: _Analysis is really a heuristic activity, where scanning through all the data the analyst gains some insight_. Looking at a single data set - say the one on machine reliability, I might be able to say that certain machines are expensive to purchase but have fewer general operational faults leading to less downtime and lower maintenance costs. There are other cheaper machines that are more costly in the long run. The farmer might not have enough working capital to afford the expensive machine and they would have to decide whether to purchase the cheaper machine and incur the additional maintenance costs and risk the downtime or to borrow money with the interest payment, to afford the expensive machine.
+
+**Data Analytics**: _Analytics is about applying a mechanical or algorithmic process to derive the insights for example running through various data sets looking for meaningful correlations between them._ Looking at the weather data and pest data we see that there is a high correlation of a certain type of fungus when the humidity level reaches a certain point. The future weather projections for the next few months (during planting season) predict a low humidity level and therefore lowered risk of that fungus. For the farmer this might mean being able to plant a certain type of strawberry, higher yield, higher market price and not needing to purchase a certain fungicide.
+
+**Data Mining**: _this term was most widely used in the late 90's and early 00's when a business consolidated all of its data into an Enterprise Data Warehouse. All of that data was brought together to discover previously unknown trends, anomalies and correlations_ such as the famed 'beer and diapers' correlation ([Diapers, Beer, and data science in retail][5]). Going back to the strawberries, assuming that our farmer was a large conglomerate like Cargill, then all of the data above would be sitting ready for analysis in the warehouse so questions such as this could be answered with relative ease: What is the best time to harvest strawberries to get the highest market price? Given certain soil conditions and rainfall patterns at a location, what are the highest yielding strawberry breeds that we should grow?
+
+**Data Science**: _a combination of mathematics, statistics, programming, the context of the problem being solved, ingenious ways of capturing data that may not be being captured right now plus the ability to look at things 'differently' (like this [__Why UPS Trucks Don't Turn Left_][6]_ ) and of course the significant and necessary activity of cleansing, preparing and aligning the data._ So in the strawberry industry we're going to be building some models that tell us when the optimal time is to sell, which gives us the time to harvest which gives us a combination of breeds to plant at various times to maximize overall yield. We might be short of consumer demand data - so maybe we figure out that when strawberry recipes are published online or on television, then demand goes up - and Tweets and Instagram or Facebook likes provide an indicator of demand. Then we need to align demand data up with market price to give us the final insights and maybe to create a way to drive up demand by promoting certain social media activity.
+
+**Machine Learning**: _this is one of the tools used by data scientist, where a model is created that mathematically describes a certain process and its outcomes, then the model provides recommendations and monitors the results once those recommendations are implemented and uses the results to improve the model_. When Google provides a set of results for the search term "strawberry" people might click on the first 3 entries and ignore the 4th one - over time, that 4th entry will not appear as high in the results because the machine is learning what users are responding to. Applied to the farm, when the system creates recommendations for which breeds of strawberry to plant, and collects the results on the yeilds for each berry under various soil and weather conditions, machine learning will allow it to build a model that can make a better set of recommendations for the next growing season.
+
+I am adding this next one because there seems to be some popular misconceptions as to what this means. My belief is that 'predictive' is much overused and hyped.
+
+**Predictive Analytics:** _Creating a quantitative model that allows an outcome to be predicted based on as much historical information as can be gathered. In this input data, there will be multiple variables to consider, some of which may be significant and others less significant in determining the outcome. The predictive model determines what signals in the data can be used to make an accurate prediction. The models become useful if there are certain variables than can be changed that will increase chances of a desired outcome._ So what might be useful for our strawberry farmer to want to predict? Let's go back to the commercial strawberry grower who is selling product to grocery retailers and food manufacturers - the supply deals are in tens and hundreds of thousands of dollars and there is a large salesforce. How can they predict whether a deal is likely to close or not? To begin with, they could look at the history of that company and the quantities and frequencies of produce purchased over time, the most recent purchases being stronger indicators. They could then look at the salesperson's history of selling that product to those types of companies. Those are the obvious indicators. Less obvious ones would be the what competing growers are also bidding for the contract, perhaps certain competitors always win because they always undercut. How many visits the rep has paid to the prospective client over the year, how many emails and phone calls. How many product complaints has the prospective client made regarding product quality? Have all our deliveries been the correct quantity, delivered on time? All of these variables may contribute to the next deal being closed. If there is enough historical data, we can build a model that will predict that a deal will close or not. We can use a sample of the historic data set aside to test if the model works. If we are confident, then we can use it to predict the next deal
+
+[1]: http://www.npr.org/sections/thesalt/2012/05/17/152522900/the-secret-life-of-californias-world-class-strawberries
+[2]: http://www.laboratoryequipment.com/news/2013/12/high-tech-greenhouse-yields-winter-strawberries
+[3]: http://strawberryplants.org/2010/09/growing-strawberry-plants-commercially/
+[4]: https://qph.ec.quoracdn.net/main-qimg-138d55f32154b66a94d93bd47a48cabf-c?convert_to_webp=true
+[5]: http://canworksmart.com/diapers-beer-retail-predictive-analytics/
+[6]: http://priceonomics.com/why-ups-trucks-dont-turn-left/
+
+=======================================
+
+[Source](https://www.quora.com/As-someone-interested-in-learning-Python-should-I-start-with-2-x-or-go-straight-to-3-x "Permalink to As someone interested in learning Python, should I start with 2.x or go straight to 3.x?")
+
+# As someone interested in learning Python, should I start with 2.x or go straight to 3.x?
+
+![][1]
+
+&gt; _'Python 2 vs Python 3′ image credit: [__Digitalocean_][2]
+
+Let's take a brief look at the history.
+
+**Python 3.0 was released in 2008 (not a typo - 9 years ago!)**
+
+On December 3rd, 2008, Python released version 3.0 . What was special about this was that it was backwards incompatible release (if you want to read more about why, [I recommend this excellent post from Brett Cannon][3])
+
+As a result, for anyone who was using Python 2.x at that time, to migrate they also needed to change a lot of their code base - this not only included individual projects, but also all the libraries that form part of the Python ecosystem.
+
+As a result, the change was seen as extremely controversial, and many projects resisted the pain of moving over, especially in the Scientific Python community. It took two years for the main numeric library NumPy to release its first 3.x release, after which other projects started to release 3.x compatible versions in the years that followed.
+
+By 2012, a lot of libraries had support, but most were still being written in 2.x. Over time, tools were released that made porting code across easier, but there was still a great resistance to move.
+
+A great read on the topic is this post from 2013 where Jake VanderPlas wonders [Will Scientists Ever Move to Python 3?][4]
+
+In the few years that followed, several tools were release to help the transition of older codebases from Python 2 to Python 3.
+
+The original end of life date for Python 2.x was scheduled for 2015, but in 2014 Python announced they would extend this by 5 years to 2020, in part [to relieve worries for those users who cannot yet migrate to Python 3][5].
+
+**Fast-Forward to Today**
+
+Today, there are very few libraries that do not support Python 3. [Python 3 Readiness][6] shows that 342 of the 360 top packages for Python support 3.x
+
+![][7]
+
+In addition, many packages are announcing the end of support for 2.x. [Python 3 Statement][8] is a project where many of the main (scientific) libraries are committing to stop supporting 2.x in 2020 or sooner.
+
+Recently, the popular web-framework Django announced that [their new 2.0 version would not support Python 2.x][9].
+
+**So why is this even a question?**
+
+There are a lot of older, free resources online to learn Python that are based in Python 2, including most MOOC courses at places like Coursera, Udemy and edX.
+
+Added to this, Zed Shaw's extremely popular 'Learn Python the Hard Way' was written in Python 2.x and has not been updated. Until recently, I thought this was just because Zed was too lazy to update his course, but recently he published a controversial article: [The Case against Python 3.][10]
+
+You might also like to read Eevee's excellent rebuttal: [A Rebuttal For Python 3,][11] as well as the thoughts of many software developers in the [hacker news thread for Zed's article][12]).
+
+TL;DR - the number of people who agree with Zed's rant are in the extreme minority.
+
+**Why you should learn Python 3**
+
+From one perspective, I was lucky enough to enter the world of Python much more recently, in early 2016. I started learning Python as part of the data science curriculum at [Dataquest][13] (For whom I now work, and highly recommend as a resource to learn). Dataquest only teaches 3.x, and for quite a time I didn't know of this whole 2 vs 3 controversy.
+
+I've used Python 3.x and rarely run into compatibility issues.
+
+Very occasionally (maybe once every 3–4 months), I'll find I'm trying to run something that requires Python 2 support, and the [virtualenv][14] allows me to instantly create a 2.x environment on my machine to run that piece of legacy software.
+
+Python 3.x is the future, and with Python 2.x support dwindling, you should put your time into learning the version that will help you into the future.
+
+**Why you should learn Python 2**
+
+You shouldn't. Very soon there will be no future security or bug fixes for Python 2.x, and your time is better spent learning 3.x.
+
+In the unlikely event that you end up working with a legacy Python 2 code base, tools like [python-future][15] will make it easy for you to use having only learned Python 3.
+
+* * *
+
+_If you liked this answer, please consider upvoting it and following me._
+
+_I work for Dataquest, the best online platform for learning Python &amp; Data Science. If that interests you, you can signup and complete our first course for free at [__Dataquest.io_][13]
+
+[1]: https://qph.ec.quoracdn.net/main-qimg-ede279a594a8ba647f0aaa9d66bcac54-c?convert_to_webp=true
+[2]: https://www.digitalocean.com/community/tutorials/python-2-vs-python-3-practical-considerations-2
+[3]: https://snarky.ca/why-python-3-exists/
+[4]: https://jakevdp.github.io/blog/2013/01/03/will-scientists-ever-move-to-python-3/
+[5]: https://hg.python.org/peps/rev/76d43e52d978
+[6]: http://py3readiness.org/
+[7]: https://qph.ec.quoracdn.net/main-qimg-d8c005471b3d324e1b14d96ca61fb127?convert_to_webp=true
+[8]: http://www.python3statement.org/
+[9]: https://news.ycombinator.com/item?id=13433927
+[10]: https://learnpythonthehardway.org/book/nopython3.html
+[11]: https://eev.ee/blog/2016/11/23/a-rebuttal-for-python-3/
+[12]: https://news.ycombinator.com/item?id=13019819
+[13]: https://www.dataquest.io
+[14]: https://virtualenv.pypa.io/en/stable/
+[15]: http://python-future.org/
+
+  

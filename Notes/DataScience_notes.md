@@ -3,6 +3,134 @@
 
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
+- [Сравнение кластера надежности и "обычного" сервера](http://www.team.ru/server/stbl_compare.shtml)
+ - [High Availability Network Fundamentals](http://www.ciscopress.com/store/high-availability-network-fundamentals-9781587130175#largeCover) By Chris Oggerino. Стр 22, про расчет надежности
+
+# 06.02.2007
+## R
+- [Strung Out On String Ops – A Brief Comparison of stringi and stringr](https://rud.is/b/2017/02/06/strung-out-on-string-ops-a-brief-comparison-of-stringi-and-stringr/)
+- [random 0.2.6](http://dirk.eddelbuettel.com/blog/2017/02/05/#random_0.2.6). A pure maintenance release of the random package for truly (hardware-based) random numbers as provided by random.org is now on CRAN.
+- [RPushbullet 0.3.0](http://dirk.eddelbuettel.com/blog/2017/02/03/#rpushbullet_0.3.0). A major new update of the RPushbullet package is now on CRAN. RPushbullet interfacing the neat Pushbullet service for inter-device messaging, communication, and more. It lets you easily send alerts like the one to the to your browser, phone, tablet, ... -- or all at once.
+- [Superheat: supercharged heatmaps for R](http://blog.revolutionanalytics.com/2017/02/superheat-supercharged-heatmaps-for-r.html)
+
+
+## Workflow
+- [Open Source Airflow: a workflow management platform]http://nerds.airbnb.com/airflow/). Airbnb is a fast growing, data informed company. Our data teams and data volume are growing quickly, and accordingly, so does the complexity of the challenges we take on. Our growing workforce of data engineers, data scientists and analysts are using Airflow, a platform we built to allow us to move fast, keep our momentum as we author, monitor and retrofit data pipelines.
+	- [Apache Airflow (Incubating)](https://github.com/apache/incubator-airflow)
+	- [Apache Airflow (incubating) Documentation](https://airflow.incubator.apache.org/)
+	- [Tutorial](http://pythonhosted.org/airflow/tutorial.html). This tutorial walks you through some of the fundamental Airflow concepts, objects, and 
+	- [Integrating Apache Airflow and Databricks: Building ETL pipelines with Apache Spark](https://databricks.com/blog/2016/12/08/integrating-apache-airflow-databricks-building-etl-pipelines-apache-spark.html)
+	- [Building a Data Pipeline with Airflow](http://tech.marksblogg.com/airflow-postgres-redis-forex.html)
+their usage while writing your first pipeline.
+- [Gulp workflow for front-end development](https://github.com/mohamdio/gulp-workflow)
+	- [Meeting Gulp for the first time.](http://lifes.gd/2015/02/24/my-gulp-workflow.html)
+	- [A simple frontend workflow for Gulp](http://inchoo.net/magento/magento-frontend/a-simple-frontend-workflow-for-gulp/)
+	- [Improving our Front-end workflow with Gulp](http://engageinteractive.co.uk/blog/improve-front-end-workflow-gulp)
+	- [A Simple Gulp Workflow](https://bitsofco.de/a-simple-gulp-workflow/)
+- [Iron.io](iron.io). Open Source Serverless Computing.
+- [Toil. Developing a workflow](http://toil.readthedocs.io/en/releases-3.3.x/developing.html).
+This tutorial walks through the features of Toil necessary for developing a workflow using the Toil Python API.
+- [Chaps.io](https://github.com/chaps-io/gush). Fast and distributed workflow runner using only Sidekiq and Redis
+- [Rundeck](http://rundeck.org/). Turn your operations procedures into self-service jobs. Safely give others the control and visibility they need.
+- [Oozie Specification, a Hadoop Workflow System](https://oozie.apache.org/docs/3.2.0-incubating/WorkflowFunctionalSpec.html)
+- [How to use cron jobs for automation on Ubuntu 14.04](https://vexxhost.com/resources/tutorials/how-to-use-cron-jobs-for-automation-on-ubuntu-14-04/)
+- [Workflow Description Language (WDL) - Specification and Implementations](https://github.com/broadinstitute/wdl)
+WDL is a workflow language meant to be read and written by humans. Broader documentation is provided by the WDL website. Any questions or issues can be discussed at our support forum.
+- [FireWorks](https://pythonhosted.org/FireWorks/) is a free, open-source code for defining, managing, and executing workflows. Complex workflows can be defined using Python, JSON, or YAML, are stored using MongoDB, and can be monitored through a built-in web interface. Workflow execution can be automated over arbitrary computing resources, including those that have a queueing system. FireWorks has been used to run millions of workflows encompassing tens of millions of CPU-hours across diverse application areas and in long-term production projects over the span of multiple years.
+- [Arvados Core Platform](https://arvados.org/)
+The Arvados core is a platform for production data science with very large data sets. It is made up of two major systems and a number of related services and components including APIs, SDKs, and visual tools.
+- [Welcome to the Workflow Patterns home page](http://www.workflowpatterns.com/)
+
+# 02.02.2017
+## R
+- RStudio blog. [The R Formula Method: The Good Parts](https://www.rstudio.com/rviews/2017/02/01/the-r-formula-method-the-good-parts/)
+- RStudio Blog. [roxygen2 6.0.0](https://blog.rstudio.org/2017/02/01/roxygen2-6-0-0/)
+- [Why swirl? Learn R, in R.](https://jonmcalder.github.io/2017-01-09-why-swirl)
+- [Halite. May the best bot win](https://jonmcalder.github.io/2017-02-02-halite/)
+Halite is an artificial intelligence programming challenge. Players control a bot using the programming language of their choice. Bots fight for control of a 2D grid and the bot with the most territory at the end wins.
+- [A look back at the year in R and Microsoft](http://blog.revolutionanalytics.com/2017/02/the-year-in-r.html)
+- [Materials for rstudio::conf 2017](https://github.com/rstudio/rstudio-conf)
+
+## UiPath
+- [How to properly use AnchorBase activity?](https://forum.uipath.com/t/how-to-properly-use-anchorbase-activity/243)
+- [User Guide. Managing Variables](https://www.uipath.com/guides/managing-variables)
+- [How to send several HotKeys](https://forum.uipath.com/t/how-to-send-several-hotkeys/995)
+
+# 01.02.2017
+## Reliability
+- [MTBF — откуда берется «миллион часов MTBF»](https://geektimes.ru/post/122529/)
+
+## Shiny
+- COOL Presentation.  [Effective Shiny Programming](https://cdn.rawgit.com/jcheng5/user2016-tutorial-shiny/master/slides.html). Joe Cheng <joe@rstudio.com>, #useR2016 — June 27, 2016
+	- [Сопутствующие материалы](https://github.com/jcheng5/user2016-tutorial-shiny)
+	- [Видеозапись с конференции](https://www.rstudio.com/resources/videos/effective-reactive-programming/)
+- [Announcing ShinyTester – a package that helps you build Shiny apps](http://amitkohli.com/announcing-shinytester-a-package-that-helps-you-build-shiny-apps/)
+- [R Shiny: reactiveValues vs reactive](http://stackoverflow.com/questions/39436713/r-shiny-reactivevalues-vs-reactive)
+There is a catch, though it won't come into play in your example.
+	- The shiny developers designed reactive() to be lazy, meaning that the expression contained in it will only be executed when it is called by one of its dependents. When one of its reactive dependencies is changed, it clears its cache and notifies its dependents, but it is not itself executed until asked to by one of its dependents. (So if, say, its sole dependent is a textOutput() element on a hidden tab, it won't actually be executed if/until that tab is opened.)
+	- observe(), on the other hand, is eager; the expression that it contains will be executed right away whenever one of its reactive dependencies is changed -- even if it's value is not needed by any of its dependents (and in fact even if has no dependents). Such eagerness is desirable when you're calling observe() for its side-effects, but it can be wasteful when you're only using it to pass on the return value of its contents to other reactive expressions or endpoints down the line.
+
+## R
+- [Using the Bizarro Pipe to Debug magrittr Pipelines in R](http://www.win-vector.com/blog/2017/01/using-the-bizarro-pipe-to-debug-magrittr-pipelines-in-r/)
+- [The magrittr monad](http://www.win-vector.com/blog/2016/08/the-magrittr-monad/)
+- [Upgrading to macOS Sierra (nee OSX) for R users](http://www.win-vector.com/blog/2017/01/upgrading-to-macos-sierra-nee-osx-for-r-users/)
+
+
+## DS 
+- [Alpine Data](http://alpinedata.com/product/). Bring machine learning, data, and people together to create operational solutions for the business.
+- [Sense.io](https://sense.io/). !! Sense is now part of Cloudera!! A Modern Platform for Data Science and Big Data Analytics.
+Go beyond BI. Accelerate data science from exploration to production using R, Python, Spark and more. Deploy pipelines and models on-premise or in the cloud.
+- Мои соображения по поводу intelligent Automation.
+Насчет термина Intelligent Automation (оно же RPA, Robotic Process Automation).
+http://www.cio.com/article/2952121/business-process-management/intelligent-automation-what-it-is-why-it-matters.html
+- [Памятка на случай ДТП от PDDMASTER.RU](http://pddmaster.ru/dtp/pamyatka-pri-dtp.html)
+
+Не все так радужно, как пишут в презентациях.
+Особенно, если посмотреть видео и презентации с позиционированием и решаемыми задачами.
+Все видео говорят о решении только одной принципиально тупой задачи -- автоматизация элементов типового бизнес-процесса, когда необходимо: 
+ - собрать кучу данных из форм различного корпоративного ПО;
+ - возможно, сверить;
+ - вдолбить набор данных, включающий полученное ранее подмножество, в еще N форм другого корпоративного ПО.
+Часто это ПО является древним legacy.
+Сейчас это делает несчастная женщина. Долго, муторно и с ошибками. С "роботом" немного веселее.
+
+
+Blue Prism:
+https://www.youtube.com/watch?v=xybnfQDVQJg
+Accenture:
+https://www.youtube.com/watch?v=fIw7BwIoGus&t=27s
+E&Y:
+https://www.youtube.com/watch?v=tnUSN2JLDOI
+Deloitte:
+https://www.youtube.com/watch?v=FV8lM9SIFQ8
+
+Вообще, все это напоминает первые шаги в робототехнике. Человекоподобность была очень быстро отметена.
+Роботам удобнее работать через свои интерфейсы (API), а не через человеческий UI.
+
+А в контексте упомянутой задачи это вообще все притянуто за уши. Там чистый data processing. Элементарная попытка распарсить хитроформатированый excel приведет в никуда.
+
+
+
+
+
+# 31.01.2017
+## Office
+- [MS Office 2016. Перевод текста с другого языка](https://support.office.com/ru-ru/article/%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B0-%D1%81-%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B3%D0%BE-%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0-287380e4-a56c-48a1-9977-f2dca89ce93f)
+- [DocTranslator. Instantly translate and preserve the layout of any document format into any language. Free.](https://www.onlinedoctranslator.com/index.html)
+
+# 30.01.2017
+## Python
+- Отличная статья, почему эра Python 2.0 закончилась. [As someone interested in learning Python, should I start with 2.x or go straight to 3.x?](https://www.quora.com/As-someone-interested-in-learning-Python-should-I-start-with-2-x-or-go-straight-to-3-x)
+- [Why Python 3 exists](https://snarky.ca/why-python-3-exists/)
+
+## General
+- [What is the difference between Data Analytics, Data Analysis, Data Mining, Data Science, Machine Learning, and Big Data?](https://www.quora.com/What-is-the-difference-between-Data-Analytics-Data-Analysis-Data-Mining-Data-Science-Machine-Learning-and-Big-Data-1)
+
+## R
+- [detach all packages while working in R](http://stackoverflow.com/questions/7505547/detach-all-packages-while-working-in-r)
+- При использовании Shiny NavBar отображается надпись 'tab-pane active'. [R Shiny navbarMenu](http://stackoverflow.com/questions/22429601/r-shiny-navbarmenu)
+- [ggplot2 extensions](https://www.ggplot2-exts.org/)
+- Проблема со сверткой последовательных пробелов в один. Это фишка HTML, однако! Ключевое слово -- preserve.
 
 # 27.01.2017
 ## Разработка Shiny портала
@@ -10,6 +138,7 @@
 - [Shiny tips & tricks for improving your apps and solving common problems](http://deanattali.com/blog/advanced-shiny-tips/)
 - [SHOW ME SHINY. GALLERY OF R WEB APPS](http://www.showmeshiny.com/)
 - [Style your apps with CSS](https://shiny.rstudio.com/articles/css.html)
+- [AnalytixWare/ShinySky. Various UI widgets/components not part of Shiny e.g. alerts, styled buttons](https://github.com/AnalytixWare/ShinySky)	
 - [Shiny Themes](https://rstudio.github.io/shinythemes/). If you’ve created any shiny app in the past, you’re probably used to the default Bootstrap theme. However, you can also easily alter the overall appearance of your Shiny application using the shinythemes package. Here are screenshots of the same application with different themes.
 - [CodeShare.io. Share code in real-time with other developers](https://codeshare.io/)
 - [Climate projections by cities: R + Shiny + rCharts + leaflet](https://blog.snap.uaf.edu/2015/05/27/climate-projections-by-cities-r-shiny-rcharts-leaflet/)
@@ -18,6 +147,7 @@
 	- [Customizable charts: Alaska communities, daily precipitation](https://uasnap.shinyapps.io/ak_daily_precipitation/). Черный фон!
 	- [Code](https://github.com/ua-snap/shiny-apps/tree/master/ak_daily_precipitation)
 - [SNAP data QA/QCby Matthew leonawicz](http://leonawicz.github.io/SNAPQAQC/) refers to multiple threads of collections of R code in the form of scripts and functions across various projects utilizing SNAP data sets. Пришел отсюда: ["Plots from CMIP3 / CMIP5 climate model R Shiny app"](https://blog.snap.uaf.edu/2014/06/19/plots-from-cmip3-cmip5-climate-model-r-shiny-app/#more-817)
+
 
 ## Unicode
 - COOL! [UTF-8 Everywhere. Manifesto](http://utf8everywhere.org/)
@@ -35,7 +165,7 @@
 2. Выгрузить purrr не получилось, дает такое сообщение: "‘purrr’ пространство имен нельзя выгрузить:
   пространство имен ‘purrr’ импортировано из ‘modelr’ и потому его нельзя выгрузить"
 - [Error: could not find function … in R](http://stackoverflow.com/questions/7027288/error-could-not-find-function-in-r). Тут большой ряд подсказок. В частности, команда 
-`getAnywhere(<FUNC>)`
+**`getAnywhere(<FUNC>)`**
 - [laply is part of what package in R?](http://stackoverflow.com/questions/7004710/laply-is-part-of-what-package-in-r)
 A useful way to find functions that are somewhere in some contributed package on CRAN is
 ```
@@ -61,7 +191,7 @@ Depends fields.
 Techincally, I've been using the word load incorrectly so far. In R, loading a package means having its contents available in memory, such that you can only access its functions via the :: and ::: operators. Attaching a package means loading it and then adding it to the search path so that you can access its functions directly. You can learn more about the distinctions between loading and attaching here.
 	- [library() vs require() in R](https://yihui.name/en/2014/07/library-vs-require/)
 
-И циклически возвращаемся к книге "R Pfckages", [Chapter 'Namespaces'](http://r-pkgs.had.co.nz/namespace.html)
+И циклически возвращаемся к книге "R Packages", [Chapter 'Namespaces'](http://r-pkgs.had.co.nz/namespace.html)
 If a package is installed,  
 	- Loading will load code, data and any DLLs; register S3 and S4 methods; and run the .onLoad() function. After loading, the package is available in memory, but because it’s not in the search path, you won’t be able to access its components without using ::. Confusingly, :: will also load a package automatically if it isn’t already loaded. It’s rare to load a package explicitly, but you can do so with requireNamespace() or loadNamespace().
 	- Attaching puts the package in the search path. You can’t attach a package without first loading it, so both library() or require(), load then attach the package. You can see the currently attached packages with search().
@@ -204,7 +334,7 @@ I am happy to introduce the padr package, which is now available on CRAN. If you
 - purr:
 	- [2-hour purrr tutorial](http://bit.ly/purrr-rstudioconf)
 	- [purrr tutorial. Lessons and examples](https://jennybc.github.io/purrr-tutorial/)
-- [RemarkJS Slides framework](https://remarkjs.com)
+- COOL! [RemarkJS Slides framework](https://remarkjs.com)
 - [An R package for creating slideshows with remark.js through R Markdown](https://github.com/yihui/xaringan).
 
 ## [More components of the R ecosystem](http://f.briatte.org/r/more-components-of-the-r-ecosystem)
@@ -239,7 +369,9 @@ Go and explore, and happy new year!
 - [Links to slides for talks at the 2017 rstudio::conf ](https://github.com/kbroman/RStudioConf2017Slides)
 - [Jennifer (Jenny) Bryan 'jennybc'](https://github.com/jennybc?tab=repositories) repository on GitHb
 - [Happy Git and GitHub for the useR](http://happygitwithr.com/)
-- useR! 2016 international R User conference. [jailbreakr: Get out of Excel, free](https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/jailbreakr-Get-out-of-Excel-free). PDF slides [here](https://github.com/jennybc/2016-06_spreadsheets/blob/master/2016-06_genentech-bioc.pdf)
+- useR! 2016 international R User conference. [jailbreakr: Get out of Excel, free](https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/jailbreakr-Get-out-of-Excel-free). 
+	- PDF slides [here](https://github.com/jennybc/2016-06_spreadsheets/blob/master/2016-06_genentech-bioc.pdf)
+	- [rsheets/jailbreakr](https://github.com/rsheets/jailbreakr)
 - [Tidy Text Mining with R](http://tidytextmining.com/) by Julia Silge and David Robinson
 
 

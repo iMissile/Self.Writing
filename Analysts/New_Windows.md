@@ -1,3 +1,13 @@
+# Ubuntu on Windows10
+- [Everything You Can Do With Windows 10’s New Bash Shell](http://www.howtogeek.com/265900/everything-you-can-do-with-windows-10s-new-bash-shell/)
+- Так не заработало. Ни прямая инсталляция, ни апдейты. [How to Update the Windows Bash Shell to Ubuntu 16.04](http://www.howtogeek.com/278152/how-to-update-the-windows-bash-shell/). 
+- [How to Upgrade Bash on Windows 10 to Ubuntu 16.04 LTS](http://www.omgubuntu.co.uk/2016/08/upgrade-bash-windows-10-ubuntu-16-04-lts). Пробуем таким образом:
+	- `sudo do-release-upgrade -f DistUpgradeViewNonInteractive -d`
+	- `sudo -S dpkg --configure -a`
+	- `sudo -S apt-get update`
+	- `sudo -S apt-get dist-upgrade`
+	- `sudo -S apt-get autoremove`
+
 # Настройка приложений Windows 10
 - [Как включить всем привычный Просмотр Фотографий в Windows 10](http://g-ek.com/prosmotr-fotografij-v-windows-10)
 - [iPhone или iPad не синхронизируется с компьютером?](http://appleinsider.ru/iphone/iphone-ili-ipad-ne-sinxroniziruetsya-s-kompyuterom-est-reshenie.html) Есть решение. Если вы столкнулись с подобной проблемой, может помочь сброс папки Lockdown на Mac или Windows
