@@ -6,6 +6,45 @@
 - [Сравнение кластера надежности и "обычного" сервера](http://www.team.ru/server/stbl_compare.shtml)
  - [High Availability Network Fundamentals](http://www.ciscopress.com/store/high-availability-network-fundamentals-9781587130175#largeCover) By Chris Oggerino. Стр 22, про расчет надежности
 
+# 07.02.2017
+## R и работа с графами
+- COOL! [Network visualization with R](http://kateto.net/network-visualization). 
+	- Тут, кстати, есть ссылка на хорошую версию в PDF. Почти то же самое, но в статике: [Network Analysis and Visualization with R and igraph](http://kateto.net/networks-r-igraph). 
+- [USC Annenberg Networks Network: A Prezi Introduction](http://kateto.net/2011/01/usc-annenberg-networks-network-an-introduction/)
+- Работа с графом. Соседи, соединительные грани, пути.
+	- [neighbors function in igraph package in R](http://stackoverflow.com/questions/29096085/neighbors-function-in-igraph-package-in-r)
+	- [igraph edge between two vertices](http://stackoverflow.com/questions/12964332/igraph-edge-between-two-vertices)
+	- [igraph get edge from - to value](http://stackoverflow.com/questions/21243965/igraph-get-edge-from-to-value)
+	- [How to get id vertex from name vertex in R and Igraph?](http://stackoverflow.com/questions/10124168/how-to-get-id-vertex-from-name-vertex-in-r-and-igraph)
+- [igraph R Traps](http://igraph.wikidot.com/r-traps)
+- [ggpmisc 0.2.13. Debugging ggplots](https://cran.r-project.org/web/packages/ggpmisc/vignettes/debug.html)
+- igraph manual !!!
+It is often desirable to follow vertices along a number of graph operations, and vertex ids don’t allow this because of the renumbering. The solution is to assign attributes to the vertices. These are kept by all operations, if possible. See more about attributes in the next section.
+- [R igraph manual pages](http://igraph.org/r/doc/). Use this if you are using igraph from R
+	- [Layouts](www.londonr.org/download/?id=97), стр 41.
+A layout is just a set of x and y coordinates. They can be specified manually but more often we will use
+one of the layout_ functions.
+- COOL! [Preparing Network Data in R](http://www.mjdenny.com/Preparing_Network_Data_In_R.html)
+- [Going viral with R's igraph package](http://blog.ryanwalker.us/2014/03/going-viral-with-rs-igraph-package.html)
+- COOL! [ggnetwork: Network geometries for ggplot2](https://cran.r-project.org/web/packages/ggnetwork/vignettes/ggnetwork.html)
+	- [gplot.layout From sna](http://www.rdocumentation.org/packages/sna/functions/gplot.layout) Vertex Layout Functions For Gplot. Various functions which generate vertex layouts for the gplot visualization routine.
+	- COOL! [A guide to the gplot layout algorithms of the sna library for R](http://www.melissaclarkson.com/resources/R_guides/documents/gplot_layout_Ver1.pdf)
+- [How to control the igraph plot layout with Fixed Positions?](http://stackoverflow.com/questions/5364264/how-to-control-the-igraph-plot-layout-with-fixed-positions)
+- разбираем принцип устройства ggnetwork::fortify.network: https://github.com/briatte/ggnetwork/blob/0e572df0d3a715416a3ed08de598042b76f0537c/R/fortify-network.R
+Вроде как можно просто матрицу подсунуть!: `class(layout) == "matrix" &&`
+- COOL! [sctyner/geomnet](https://github.com/sctyner/geomnet). geomnet is a package built on top of the most recent major ggplot2 release. It provides a ggplot2 geom called geom_net to visualize graphs and networks.
+- [R code for igraph animation](http://www.joyofdata.de/blog/r-code-for-igraph-animation/)
+- [More network analysis with igraph and Cytoscape](https://rpubs.com/keiono/cyrest3)
+- [From igraph to network and back again](https://brokeringclosure.wordpress.com/2010/08/25/from-igraph-to-network-and-back-again/)
+- [Short tutorial on using functions in package "intergraph"](https://cran.r-project.org/web/packages/intergraph/vignettes/howto.html)
+- [Intergraph](http://mbojan.github.io/intergraph/) R package with coercion routines for network data objects
+	- [Short tutorial on using functions in package “intergraph”](http://mbojan.github.io/intergraph/howto.html#network-igraph)
+- COOL! [Interactive and Dynamic Network Visualization in R](http://curleylab.psych.columbia.edu/netviz/). slides from my NYC R Meetup Talk on 6th April 2016.
+- COOL! [Examples for the igraph package](http://michael.hahsler.net/SMU/LearnROnYourOwn/code/igraph.html)
+- [Shizuka Lab. Social Networks in R](http://www.shizukalab.com/toolkits/sna).
+I use social network analysis as a tool for understanding the social relationships between individuals in some avian systems. I am in the process of learning to use two packages for social network analysis in R--statnet and igraph--and I have decided to post what I have learned in hopes that someone else might find this information useful. Below are small tutorials I have written up for various aspects of social network analysis in R. I hope you find some of this useful.
+
+
 # 06.02.2007
 ## R
 - [Strung Out On String Ops – A Brief Comparison of stringi and stringr](https://rud.is/b/2017/02/06/strung-out-on-string-ops-a-brief-comparison-of-stringi-and-stringr/)
@@ -85,33 +124,6 @@ Go beyond BI. Accelerate data science from exploration to production using R, Py
 http://www.cio.com/article/2952121/business-process-management/intelligent-automation-what-it-is-why-it-matters.html
 - [Памятка на случай ДТП от PDDMASTER.RU](http://pddmaster.ru/dtp/pamyatka-pri-dtp.html)
 
-Не все так радужно, как пишут в презентациях.
-Особенно, если посмотреть видео и презентации с позиционированием и решаемыми задачами.
-Все видео говорят о решении только одной принципиально тупой задачи -- автоматизация элементов типового бизнес-процесса, когда необходимо: 
- - собрать кучу данных из форм различного корпоративного ПО;
- - возможно, сверить;
- - вдолбить набор данных, включающий полученное ранее подмножество, в еще N форм другого корпоративного ПО.
-Часто это ПО является древним legacy.
-Сейчас это делает несчастная женщина. Долго, муторно и с ошибками. С "роботом" немного веселее.
-
-
-Blue Prism:
-https://www.youtube.com/watch?v=xybnfQDVQJg
-Accenture:
-https://www.youtube.com/watch?v=fIw7BwIoGus&t=27s
-E&Y:
-https://www.youtube.com/watch?v=tnUSN2JLDOI
-Deloitte:
-https://www.youtube.com/watch?v=FV8lM9SIFQ8
-
-Вообще, все это напоминает первые шаги в робототехнике. Человекоподобность была очень быстро отметена.
-Роботам удобнее работать через свои интерфейсы (API), а не через человеческий UI.
-
-А в контексте упомянутой задачи это вообще все притянуто за уши. Там чистый data processing. Элементарная попытка распарсить хитроформатированый excel приведет в никуда.
-
-
-
-
 
 # 31.01.2017
 ## Office
@@ -130,7 +142,13 @@ https://www.youtube.com/watch?v=FV8lM9SIFQ8
 - [detach all packages while working in R](http://stackoverflow.com/questions/7505547/detach-all-packages-while-working-in-r)
 - При использовании Shiny NavBar отображается надпись 'tab-pane active'. [R Shiny navbarMenu](http://stackoverflow.com/questions/22429601/r-shiny-navbarmenu)
 - [ggplot2 extensions](https://www.ggplot2-exts.org/)
-- Проблема со сверткой последовательных пробелов в один. Это фишка HTML, однако! Ключевое слово -- preserve.
+- Проблема со сверткой последовательных пробелов (spaces) в один. Это фишка HTML, однако! Ключевое слово -- preserve.
+	- [How to leave space in HTML](http://stackoverflow.com/questions/12144968/how-to-leave-space-in-html). много ссылок.
+	- [](). Thomas • 2 years ago
+Hi,
+Is it possible to display two consecutive blanks? I realized when I type p("Thank you.") there is only one blank shown in the result although I typed two.
+Dean Attali -> Thomas • 2 years ago
+That's nothing to do with shiny, that's how HTML is generally rendered. Whitespace is collapsed into a single space. If you want to preserve whitespace (eg. have two spaces in a row) then you need to use the `pre` tag (available via `tags$pre()`) instead of the `p` tag. Another option is to use `&nb sp;` instead of a space (look up "how to preserve whitespace in HTML" to see how to use this)
 
 # 27.01.2017
 ## Разработка Shiny портала
@@ -654,18 +672,6 @@ You can provide information about your app that Shiny showcase will use by creat
 См. пункт "lines and text anti-aliased - not fills/polygons"
 - [How to plot smoother curves in R](http://stackoverflow.com/questions/15447622/how-to-plot-smoother-curves-in-r)
 - [imager: an R package for image processing](http://dahtah.github.io/imager/imager.html)
-- Работа с графом. Соседи, соединительные грани, пути.
-	- [neighbors function in igraph package in R](http://stackoverflow.com/questions/29096085/neighbors-function-in-igraph-package-in-r)
-	- [igraph edge between two vertices](http://stackoverflow.com/questions/12964332/igraph-edge-between-two-vertices)
-	- [igraph get edge from - to value](http://stackoverflow.com/questions/21243965/igraph-get-edge-from-to-value)
-	- [How to get id vertex from name vertex in R and Igraph?](http://stackoverflow.com/questions/10124168/how-to-get-id-vertex-from-name-vertex-in-r-and-igraph)
-- [igraph R Traps](http://igraph.wikidot.com/r-traps)
-- [ggpmisc 0.2.13. Debugging ggplots](https://cran.r-project.org/web/packages/ggpmisc/vignettes/debug.html)
-
-- igraph manual !!!
-It is often desirable to follow vertices along a number of graph operations, and vertex ids don’t
-allow this because of the renumbering. The solution is to assign attributes to the vertices. These are
-kept by all operations, if possible. See more about attributes in the next section.
 
 # 15.12.2016
 ## English
@@ -711,29 +717,6 @@ kept by all operations, if possible. See more about attributes in the next secti
 - [Annotating Plots](http://chrisalbon.com/r-stats/annotating-plots.html)
 - [Plot labels at ends of lines](http://stackoverflow.com/questions/29357612/plot-labels-at-ends-of-lines)
 - [R package grid disappeared?](http://stackoverflow.com/questions/29349398/r-package-grid-disappeared) According to the [grid changelog](https://stat.ethz.ch/R-manual/R-devel/library/grid/doc/changes.txt), it became a base package with version 1.8.0. Therefore, it no longer needs to be available on the CRAN repository.
-- COOL! [Network visualization with R](http://kateto.net/network-visualization). Тут, кстати, есть ссылка на хорошую версию в PDF. Почти то же самое, но в статике: [Network Analysis and Visualization with R and igraph](http://kateto.net/networks-r-igraph). 
-- [USC Annenberg Networks Network: A Prezi Introduction](http://kateto.net/2011/01/usc-annenberg-networks-network-an-introduction/)
-- [R igraph manual pages](http://igraph.org/r/doc/). Use this if you are using igraph from R
-	- [Layouts](www.londonr.org/download/?id=97), стр 41.
-A layout is just a set of x and y coordinates. They can be specified manually but more often we will use
-one of the layout_ functions.
-- COOL! [Preparing Network Data in R](http://www.mjdenny.com/Preparing_Network_Data_In_R.html)
-- [Going viral with R's igraph package](http://blog.ryanwalker.us/2014/03/going-viral-with-rs-igraph-package.html)
-- COOL! [ggnetwork: Network geometries for ggplot2](https://cran.r-project.org/web/packages/ggnetwork/vignettes/ggnetwork.html)
-	- [gplot.layout From sna](http://www.rdocumentation.org/packages/sna/functions/gplot.layout) Vertex Layout Functions For Gplot. Various functions which generate vertex layouts for the gplot visualization routine.
-	- COOL! [A guide to the gplot layout algorithms of the sna library for R](http://www.melissaclarkson.com/resources/R_guides/documents/gplot_layout_Ver1.pdf)
-- [How to control the igraph plot layout with Fixed Positions?](http://stackoverflow.com/questions/5364264/how-to-control-the-igraph-plot-layout-with-fixed-positions)
-- разбираем принцип устройства ggnetwork::fortify.network: https://github.com/briatte/ggnetwork/blob/0e572df0d3a715416a3ed08de598042b76f0537c/R/fortify-network.R
-Вроде как можно просто матрицу подсунуть!: `class(layout) == "matrix" &&`
-- COOL! [sctyner/geomnet](https://github.com/sctyner/geomnet). geomnet is a package built on top of the most recent major ggplot2 release. It provides a ggplot2 geom called geom_net to visualize graphs and networks.
-- [R code for igraph animation](http://www.joyofdata.de/blog/r-code-for-igraph-animation/)
-- [More network analysis with igraph and Cytoscape](https://rpubs.com/keiono/cyrest3)
-- [From igraph to network and back again](https://brokeringclosure.wordpress.com/2010/08/25/from-igraph-to-network-and-back-again/)
-- [Short tutorial on using functions in package "intergraph"](https://cran.r-project.org/web/packages/intergraph/vignettes/howto.html)
-- [Intergraph](http://mbojan.github.io/intergraph/) R package with coercion routines for network data objects
-	- [Short tutorial on using functions in package “intergraph”](http://mbojan.github.io/intergraph/howto.html#network-igraph)
-- COOL! [Interactive and Dynamic Network Visualization in R](http://curleylab.psych.columbia.edu/netviz/). slides from my NYC R Meetup Talk on 6th April 2016.
-- COOL! [Examples for the igraph package](http://michael.hahsler.net/SMU/LearnROnYourOwn/code/igraph.html)
 
 # 13.12.2016
 ## R
@@ -747,6 +730,7 @@ one of the layout_ functions.
 
 ## Dev
 - [RawGit](http://rawgit.com/) serves raw files directly from GitHub with proper Content-Type headers.
+
 # 12.12.2016
 ## R
 - [Don’t give up on single trees yet…. An interactive tree with Microsoft R](https://longhowlam.wordpress.com/2016/12/10/dont-give-up-on-single-trees-yet-an-interactive-tree-with-microsoft-r/)
@@ -924,7 +908,7 @@ ghit::install_github(c("ropenscilabs/tabulizerjars", "ropenscilabs/tabulizer"))
 - [SQL Server 2016 Developer, Release date 01.06.2016](https://my.visualstudio.com/Downloads?q=SQL%20Server%20Developer)
 - [SQL Server 2016 RTM Enterprise on Windows Server 2012 R2 Virtual Machine](https://azure.microsoft.com/en-us/marketplace/partners/microsoft/sqlserver2016rtmenterprisewindowsserver2012r2/?wt.mc_id=sqL16_vm)
 
-- [](http://www.r-graph-gallery.com/)
+- [THE R GRAPH GALLERY](http://www.r-graph-gallery.com/)
 - [A List of ggplot2 extensions](https://www.ggplot2-exts.org/). This site tracks and lists ggplot2 extensions developed by R users in the community. The aim is to make it easy for R users to find developed extensions.
 - [Recreating the vaccination heatmaps in R](https://benjaminlmoore.wordpress.com/2015/04/09/recreating-the-vaccination-heatmaps-in-r/)
 - [Making Faceted Heatmaps with ggplot2](https://rud.is/b/2016/02/14/making-faceted-heatmaps-with-ggplot2/)
