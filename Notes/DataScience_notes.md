@@ -6,7 +6,67 @@
 - [Сравнение кластера надежности и "обычного" сервера](http://www.team.ru/server/stbl_compare.shtml)
  - [High Availability Network Fundamentals](http://www.ciscopress.com/store/high-availability-network-fundamentals-9781587130175#largeCover) By Chris Oggerino. Стр 22, про расчет надежности
 
+# 09.02.2017
+## R
+- Проблема со сверткой последовательных пробелов (spaces) в один. Это фишка HTML, однако! Ключевое слово -- preserve.
+	- [How to leave space in HTML](http://stackoverflow.com/questions/12144968/how-to-leave-space-in-html). много ссылок.
+	- [Shiny Lesson 2. Build a user-interface](http://disq.us/p/xx4z6l). Thomas • 2 years ago
+Hi,
+Is it possible to display two consecutive blanks? I realized when I type p("Thank you.") there is only one blank shown in the result although I typed two.
+Dean Attali -> Thomas • 2 years ago
+That's nothing to do with shiny, that's how HTML is generally rendered. Whitespace is collapsed into a single space. If you want to preserve whitespace (eg. have two spaces in a row) then you need to use the `pre` tag (available via `tags$pre()`) instead of the `p` tag. Another option is to use `&nb sp;` instead of a space (look up "how to preserve whitespace in HTML" to see how to use this)
+	- Отчасти решена проблема со схлопыванием whitespaces в тексте. Использование непосредственно CSS помогает и в общем и в частном случаях:
+`h3(textOutput("cweather_text"), style="white-space:pre")`
+	- [CSS white-space](http://htmlbook.ru/css/white-space)
+	- [CSS Almanac » white-space](https://css-tricks.com/almanac/properties/w/whitespace/)
+Но не все так гладко. При включении `white-space:pre;` увеличиваются расстояния между h2 и h3 (у меня строки были так размечены)
+Дело в том, что `pre` в h3 начинает учитывать первод строки и табы во внутренних блоках! Поэтому пробуем решить через css$tags
+- [Change the color and font of text in Shiny App](http://stackoverflow.com/questions/24049159/change-the-color-and-font-of-text-in-shiny-app)
+РЕШЕНИЕ ТАКОЕ:
+`tags$style(type='text/css', '#cweather_text {white-space:pre;}'`
+
+
+# 08.02.2017
+## R
+- [Retail customer analytics with SQL Server R Services](http://blog.revolutionanalytics.com/2017/02/retail-applications-with-microsoft-r.html)
+- [Reproducible Finance with R: Sector Correlations Shiny App](https://www.rstudio.com/rviews/2017/02/03/reproducible-finance-with-r-sector-correlations-shiny-app/)
+	- [Demo app, flexidashboard](http://colorado.rstudio.com:3939/content/264/)
+
+## Shiny
+- [How to trigger a data refresh in shiny?](http://stackoverflow.com/questions/24680246/how-to-trigger-a-data-refresh-in-shiny).
+	- [Пример приложения](http://shiny.rstudio.com/gallery/reactive-poll-and-file-reader.html), использующего reactivePoll и reactiveFileReader
+- [Use reactivePoll to accumulate data for output](http://stackoverflow.com/questions/19898113/use-reactivepoll-to-accumulate-data-for-output)
+- [Style your apps with CSS](https://shiny.rstudio.com/articles/css.html)
+- [Shiny HTML Tags Glossary](https://shiny.rstudio.com/articles/tag-glossary.html)
+- Проблема со схлопыванием whitespaces в тексте
+
+- [Firebug](https://getfirebug.com/downloads/). Web Development Evolved.
+The Firebug extension isn't being developed or maintained any longer. We invite you to use the Firefox DevTools instead, which ship with Firebug.next
+- [Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools)
+- [Mastering margin collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
+- [CSS Tools: Reset CSS](http://meyerweb.com/eric/tools/css/reset/)
+
+
 # 07.02.2017
+## DS
+- [Artificial Neural Networks/Print Version](https://en.wikibooks.org/wiki/Artificial_Neural_Networks/Print_Version)
+- [Understanding Networks. Mastering networkh theory, one post at a time.](https://understandingnetworks.wordpress.com/2010/02/15/log-4-degree/)
+- [Neural networks in a nutshell](https://themenwhostareatcodes.wordpress.com/2014/03/02/neural-networks-in-a-nutshell/)
+- COOL! [Deep Learning in R](http://www.rblog.uni-freiburg.de/2017/02/07/deep-learning-in-r/)
+- [Wolfram Language™. Neural Networks](https://www.wolfram.com/language/11/neural-networks/)
+
+
+## Shiny
+- [Shiny JS lessons]
+	- [Lesson 1. How to build a JavaScript based widget.](http://shiny.rstudio.com/tutorial/js-lesson1/)
+	- [Lesson 2. How to add functionality to JavaScript widgets](http://shiny.rstudio.com/tutorial/js-lesson2/)
+	- [Final dashboard](https://js-tutorial.shinyapps.io/dashboardApp/)
+	- [JSfiddle](http://jsfiddle.net/). Test your JavaScript, CSS, HTML or CoffeeScript online with JSFiddle code editor.
+
+## R
+- COOL! [From a million nested `ifelse`s to the plater package](http://ropensci.org/blog/blog/2017/02/06/plater-blog-post)
+- COOL! [Calculus on Computational Graphs: Backpropagation](https://colah.github.io/posts/2015-08-Backprop/). Posted on August 31, 2015
+
 ## R и работа с графами
 - COOL! [Network visualization with R](http://kateto.net/network-visualization). 
 	- Тут, кстати, есть ссылка на хорошую версию в PDF. Почти то же самое, но в статике: [Network Analysis and Visualization with R and igraph](http://kateto.net/networks-r-igraph). 
@@ -43,7 +103,9 @@ one of the layout_ functions.
 - COOL! [Examples for the igraph package](http://michael.hahsler.net/SMU/LearnROnYourOwn/code/igraph.html)
 - [Shizuka Lab. Social Networks in R](http://www.shizukalab.com/toolkits/sna).
 I use social network analysis as a tool for understanding the social relationships between individuals in some avian systems. I am in the process of learning to use two packages for social network analysis in R--statnet and igraph--and I have decided to post what I have learned in hopes that someone else might find this information useful. Below are small tutorials I have written up for various aspects of social network analysis in R. I hope you find some of this useful.
+- Вопрос очень похожий на расчет импакта в SOI, но пока ответа нет. [propagate vertex attributes using igraph package in R](http://stackoverflow.com/questions/41817664/propagate-vertex-attributes-using-igraph-package-in-r)
 
+- [igraph example: edge-labeled graph or weighted graph](https://c13s.wordpress.com/2010/07/23/igraph-example-edge-labeled-graph-or-weighted-graph/)
 
 # 06.02.2007
 ## R
@@ -103,6 +165,7 @@ Halite is an artificial intelligence programming challenge. Players control a bo
 - COOL Presentation.  [Effective Shiny Programming](https://cdn.rawgit.com/jcheng5/user2016-tutorial-shiny/master/slides.html). Joe Cheng <joe@rstudio.com>, #useR2016 — June 27, 2016
 	- [Сопутствующие материалы](https://github.com/jcheng5/user2016-tutorial-shiny)
 	- [Видеозапись с конференции](https://www.rstudio.com/resources/videos/effective-reactive-programming/)
+	- [Handling missing inputs with req(...)](https://shiny.rstudio.com/articles/req.html)
 - [Announcing ShinyTester – a package that helps you build Shiny apps](http://amitkohli.com/announcing-shinytester-a-package-that-helps-you-build-shiny-apps/)
 - [R Shiny: reactiveValues vs reactive](http://stackoverflow.com/questions/39436713/r-shiny-reactivevalues-vs-reactive)
 There is a catch, though it won't come into play in your example.
@@ -142,13 +205,7 @@ http://www.cio.com/article/2952121/business-process-management/intelligent-autom
 - [detach all packages while working in R](http://stackoverflow.com/questions/7505547/detach-all-packages-while-working-in-r)
 - При использовании Shiny NavBar отображается надпись 'tab-pane active'. [R Shiny navbarMenu](http://stackoverflow.com/questions/22429601/r-shiny-navbarmenu)
 - [ggplot2 extensions](https://www.ggplot2-exts.org/)
-- Проблема со сверткой последовательных пробелов (spaces) в один. Это фишка HTML, однако! Ключевое слово -- preserve.
-	- [How to leave space in HTML](http://stackoverflow.com/questions/12144968/how-to-leave-space-in-html). много ссылок.
-	- [](). Thomas • 2 years ago
-Hi,
-Is it possible to display two consecutive blanks? I realized when I type p("Thank you.") there is only one blank shown in the result although I typed two.
-Dean Attali -> Thomas • 2 years ago
-That's nothing to do with shiny, that's how HTML is generally rendered. Whitespace is collapsed into a single space. If you want to preserve whitespace (eg. have two spaces in a row) then you need to use the `pre` tag (available via `tags$pre()`) instead of the `p` tag. Another option is to use `&nb sp;` instead of a space (look up "how to preserve whitespace in HTML" to see how to use this)
+
 
 # 27.01.2017
 ## Разработка Shiny портала
@@ -397,6 +454,7 @@ Go and explore, and happy new year!
 ## R
 - [R exercises](http://r-exercises.com/). Очень неплохой ресурс с заданиями по R.
 - COOL! Классный пакет для Simmer [Discrete-Event Simulator for R](http://fishyoperations.com/2017/01/12/extensions-for-simmer.html). Вообще, на этом сайте очень много записей про симуляцию.
+- [Discrete Event Simulation using R: Hospital Capacity Planning.](https://www.codeproject.com/Articles/1111093/Discrete-Event-Simulation-using-R-Hospital-Capacit)
 
 
 ## LaTeX
