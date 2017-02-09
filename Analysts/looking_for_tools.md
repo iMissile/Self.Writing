@@ -24,7 +24,7 @@ http://www.worldtimebuddy.com/
 1. [Writebox](https://write-box.appspot.com)
 
 ## Offline Editors
-1. [SmartDown](
+1. [SmartDown](aflava.com)
 1. [Brackets](http://brackets.io/) by Adobe. A modern, open source text editor that understands web design
 	1. [10 Awesome Brackets Extensions You Really Need](http://beebom.com/2015/03/brackets-extensions-you-really-need)
 	1. [My Recommended Brackets Extensions](http://www.johnpapa.net/my-recommended-brackets-extensions/)
