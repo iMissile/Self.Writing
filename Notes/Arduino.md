@@ -8,7 +8,11 @@ What is RSSI and what does it mean for a WiFi network?
 
 RSSI, or “Received Signal Strength Indicator”, is a measurement of how well your device can hear a signal from an access point or router. It’s a value that is useful for determining if you have enough signal to get a good wireless connection.
 
+- Доступ к нашему тестовому устройству в TTN: [Device Overview](https://console.thethingsnetwork.org/applications/test_zond/devices/test_device)
+- Готовим строчку для передачи Payload: [ASCII to Hex ...and other free text conversion tools](http://www.asciitohex.com/) 
+
 ## Разбираем код LMIC
+- расположение текущих экспериментов: 'D:\iwork.GH\Arduino.projects\02 LoRa-test-APM\ttn-otaa\ttn-otaa.ino'
 - Что такое макрос F? [The hidden Arduino Macro F() fixes random lock ups](https://www.baldengineer.com/arduino-f-macro.html).
 [Why is the F() Macro Needed?](http://playground.arduino.cc/Learning/Memory)
 - Что такое LMIC? Ответ находим в документации на "LMiC-v1.5" 2.4 The LMIC Struct
@@ -131,8 +135,11 @@ A: PIR - Passive infrared sensor
 
 
 # Arduiono & PIC
+- [Arduino Pro Mini](http://arduino.ua/ru/hardware/ProMini)
+- [Arduino Pro Mini — распиновка и характеристики](http://skproj.ru/arduino-pro-mini-raspinovka-i-harakteristiki/)
+- [10 Ways to Destroy An Arduino](https://www.rugged-circuits.com/10-ways-to-destroy-an-arduino/)
+- [Feeding power to Arduino: the ultimate guide](https://www.open-electronics.org/the-power-of-arduino-this-unknown/)
 - Очень хорошая демонстрация, как отличается работа с портами от работы с регистром напрямую. СКОРОСТЬ!!!! [Tutorial: Arduino Port Manipulation](http://tronixstuff.com/2011/10/22/tutorial-arduino-port-manipulation/)
-
 - [Знакомство с Arduino](http://atroshin.ru/ru/content/znakomstvo-s-arduino)
 - [Последовательный порт - TTL и RS232](http://atroshin.ru/ru/content/posledovatelnyy-port-ttl-i-rs232)
 - [Alternatives to Standard Arduino IDE: Which One To Choose?](https://www.intorobotics.com/alternatives-standard-arduino-ide-one-choose/)

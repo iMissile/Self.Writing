@@ -3,11 +3,304 @@
 
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
-- [Сравнение кластера надежности и "обычного" сервера](http://www.team.ru/server/stbl_compare.shtml)
- - [High Availability Network Fundamentals](http://www.ciscopress.com/store/high-availability-network-fundamentals-9781587130175#largeCover) By Chris Oggerino. Стр 22, про расчет надежности
+
+- [Managing and monitoring performance in SDN / NFV](https://www.virtualizationpractice.com/managing-monitoring-performance-sdn-nfv-32088/)
+
+# 16.03.2017
+## R
+- [Adding figure labels (A, B, C, …) in the top left corner of the plotting region](https://logfc.wordpress.com/2017/03/15/adding-figure-labels-a-b-c-in-the-top-left-corner-of-the-plotting-region/)
+- [Why I love R Notebooks](https://www.rstudio.com/rviews/2017/03/15/why-i-love-r-notebooks/)
+- [Improved Python-style Logging in R](http://mazamascience.com/WorkingWithData/?p=1759)
+
+# 15.03.2017
+## RStudio connect демо ссылки
+
+
+# 13.03.2017
+## LaTeX
+- [\bar vs. \overline - when to use what, semantically?](http://tex.stackexchange.com/questions/98028/bar-vs-overline-when-to-use-what-semantically)
+- [What is the “correct” way of embedding text into math mode?](http://tex.stackexchange.com/questions/3415/what-is-the-correct-way-of-embedding-text-into-math-mode). Another option is to use the \text{} command provided by the amsmath package.
+- [“Correct” way to bold/italicize text?](http://tex.stackexchange.com/questions/41681/correct-way-to-bold-italicize-text). 
+It is very simple: DO NOT USE `\bf` IN MODERN LaTeX DOCUMENTS! It is deprecated. Use `\bfseries` instead, which will work properly under the New Font Selection Scheme (NFSS) of LaTeX2e.
+- [e^{…} vs \exp(…) in display mode](http://tex.stackexchange.com/questions/254785/e-vs-exp-in-display-mode)
+- [How to break a long equation? {duplicate}](http://tex.stackexchange.com/questions/8936/how-to-break-a-long-equation)
+- [How do I get normal-sized fractions in my matrices?](http://tex.stackexchange.com/questions/67272/how-do-i-get-normal-sized-fractions-in-my-matrices)
+- [Proper display of fractions](http://tex.stackexchange.com/questions/59747/proper-display-of-fractions). FWIW, the nath package correctly scales the delimiters: More interestingly, it automatically changes the display fractions to inline fractions when you used in inline math mode:
+
+## Shiny
+- [R Shiny v Tableau: Dawn of Graphics](https://www.linkedin.com/pulse/r-shiny-v-tableau-dawn-graphics-anand-gupta)
+- COOL! [4 TRICKS FOR WORKING WITH R, LEAFLET AND SHINY](http://www.r-graph-gallery.com/2017/03/14/4-tricks-for-working-with-r-leaflet-and-shiny/)
+
+
+## R
+- [Cookbook for R. Comparing vectors or factors with NA](http://www.cookbook-r.com/Manipulating_data/Comparing_vectors_or_factors_with_NA/)
+- [PMean: Comparing two vectors with possible missing values](http://blog.pmean.com/comparing-two-vectors/)
+- [Iterate over dplyr code using purrr::map2](http://stackoverflow.com/questions/41498729/iterate-over-dplyr-code-using-purrrmap2). I get an error message that :  `Error: .x (2) and .y (3) are different lengths`
+- [magrittr - Ceci n'est pas un pipe](https://github.com/tidyverse/magrittr). Для исправления ошибки выше см. п. "Re-using the placeholder for attributes":
+`x %>% f(y = nrow(.), z = ncol(.))` is equivalent to `f(x, y = nrow(x), z = ncol(x))`
+The behavior can be overruled by enclosing the right-hand side in braces:
+`x %>% {f(y = nrow(.), z = ncol(.))}` is equivalent to `f(y = nrow(x), z = ncol(x))`
+
+
+
+- dplyr & variables:
+	- [Parametric variable names and dplyr](http://www.win-vector.com/blog/2016/12/parametric-variable-names-and-dplyr/)
+	- [How to use a variable in dplyr::filter?](http://stackoverflow.com/questions/34219912/how-to-use-a-variable-in-dplyrfilter)
+- [Practical Data Science with R errata update: Java SQLScrewdriver replaced by R procedures and article](http://www.win-vector.com/blog/2017/03/practical-data-science-with-r-errata-update-java-sqlscrewdriver-replaced-by-r-procedures-and-article/). So: we no longer recommend using H2DB, Java, and SquirreL SQL to load data. Instead we recommend using R, readr, read.table, and dbWriteTable using either PostgreSQL (for a lot of data) or RSQlite (for in-memory practice). Nina Zumel has a very nice free write-up of the replacement screwdriver concept here.
+- COOL! [Making a Case for `case_when`](https://rud.is/b/2017/03/10/making-a-case-for-case_when/)
+	- [What does "blatantly obvious" mean?](https://www.quora.com/What-does-blatantly-obvious-mean). "To me, it means completely obvious, especially to everybody."
+	- Интересное альтернативное решение к конкретно приведенной задаче редукции:
+```
+library(fuzzyjoin) 
+regexes <- read_csv(
+"regex, type
+Windows,Windows-ish 
+Red Hat|CentOS|Fedora,Fedora-ish 
+Ubuntu|Debian,Debian-ish 
+CoreOS|Amazon,Amazon-ish") 
+data_frame(os = os) %>% 
+replace_na(list(regex = "Unknown")) %>% 
+regex_left_join(regexes, c(os = "regex")) %>% 
+mutate(type = case_when( 
+	!is.na(type) = type, 
+	!is.na(os) = "Unknown", 
+	TRUE = "Other" 
+)) %>% 
+count(type, sort = TRUE) 
+```
+
+# 10.03.2017
+## R
+- [Reading and combining many tidy data files in R](http://serialmentor.com/blog/2016/6/13/reading-and-combining-many-tidy-data-files-in-R), Jun 13, 2016 in science
+- Решаем проблему с переименованием колонки, содержащей знак `#`:
+	- [Column names with spaces or other special characters](https://github.com/hadley/dplyr/issues/2243)
+	- [Dealing with spaces and “weird” characters in column names with dplyr::rename()](http://stackoverflow.com/questions/28858627/dealing-with-spaces-and-weird-characters-in-column-names-with-dplyrrename)
+Solution: To refer to variables that contain non-standard characters or start with a number, wrap the name in back ticks, e.g., `Instruction..Mode!`
+- Reorder variables at ggplot. Use package `forcats`: [см. Change level order](https://blog.rstudio.org/2016/08/31/forcats-0-1-0/)
+- Hash in R
+	- [hashmap: The Faster Hash Map](https://cran.r-project.org/web/packages/hashmap/)
+	- [Hash Table Performance in R: Part I](http://jeffreyhorner.tumblr.com/post/114524915928/hash-table-performance-in-r-part-i)
+	- [Hash Table Performance in R: Part II](http://jeffreyhorner.tumblr.com/post/116325104028/hash-table-performance-in-r-part-ii-in-part-i)
+	- [A Quick Benchmark of Hashtable Implementations in R](https://blog.dominodatalab.com/a-quick-benchmark-of-hashtable-implementations-in-r/) by by Eduardo Ariño de la Rubia on October 19th, 2016
+**Summary**
+Hashtables are an incredibly useful data structure. UPDATE: In R, if you need to store key value pairs, and your keys are always going to be valid R symbols, the built in `new.env(hash=TRUE)` is the clear winner! If you are going to need complex keys, the `ht` package provides somewhat similar performance to `hash`, with the added ability to use complex keys.
+
+
+
+
+# 08.03.2017
+## R
+- Проблемы с инсталляцией отдельных пакетов. Появляется ошибка типа 
+`Warning in install.packages :
+unable to move temporary installation ‘C:\Program Files\R\R-3.3.1\library\file548c25005671\Rcpp’ to ‘C:\Program Files\R\R-3.3.1\library\Rcpp’`. Подробное обсуждение в ветке [After update unable to install dplyr due to problems witk Rcpp-package and BH-package](https://github.com/hadley/dplyr/issues/2002). Интересное решение: **Shut McAfee down and that solved the problem!**
+- check what packages are currently loaded with: `loadedNamespaces()`
+- [hrbrmstr/markdowntemplates. A collection of alternate R markdown templates](https://github.com/hrbrmstr/markdowntemplates):
+	- `devtools::install_github("hrbrmstr/markdowntemplates")`
+
+
+- [Building views with R](http://www.quantide.com/building-views-with-r/)
+
+# 07.03.2017
+## R & Excel
+- [XLConnect : read, write and manipulate Microsoft Excel files from within R](http://www.sthda.com/english/articles/2-r/4-xlconnect-read-write-and-manipulate-microsoft-excel-files-from-within-r/)
+- [Few steps to connect R with Excel: XLConnect!](http://www.milanor.net/blog/steps-connect-r-excel-xlconnect/)
+
+## R
+- Как управлять директориями для установки библиотек?
+	- `.libPath()` -- команда для управления
+	- [Changing R default library path using .libPaths in Rprofile.site fails to work](http://stackoverflow.com/questions/15170399/changing-r-default-library-path-using-libpaths-in-rprofile-site-fails-to-work)
+- Packrat
+	- [Introduction to packrat package: Dependency Management system for R](https://rpubs.com/nishantsbi/221948)
+	- [Creating Reproducible Software Environments with Packrat](http://tagteam.harvard.edu/hub_feeds/1981/feed_items/1288194)
+	- [init() fails - can I ignore a package?](https://groups.google.com/forum/#!topic/packrat-discuss/lnGHDsvjDiY). Можно. Явно указываем `packrat::opts$ignored.packages("package name")`
+	- Чтобы packrat подхватил кастомный пакет, необходимо в `DESCRIPTION` пакета указывать путь к исходным файлам, например, `URL: https://github.com/hannesmuehleisen/clickhouse-r`. При этом в `DESCRIPTION` не должно быть пустых строк, см. [Blank line in DESCRIPTION breaks installation with devtools >= 1.4](https://github.com/hadley/devtools/issues/383). и [Error: contains a blank line](https://github.com/hadley/devtools/issues/394). Связано это с тем, что `devtools` добавляет в локальный `DESCRIPTION` доп. поля в конец, например:
+```
+URL: https://github.com/iMissile/dvtiot
+
+
+GithubRepo: dvtiot
+GithubUsername: iMissile
+GithubRef: master
+GithubSHA1: bd9ec8f68a733f5697651854a913b8f95b0e1fa7
+```
+	
+	- Но даже если при сборке он не выдает теперь ошибки, то при deploy возникает следующее: The package is housed in a private repository that requires authentication to access. For more details on this, see: http://docs.rstudio.com/connect/admin/process-management.html#private-packages
+- [Packrat Limitations and Caveats](https://rstudio.github.io/packrat/limitations.html)
+- [Package management in RStudio Connect](https://support.rstudio.com/hc/en-us/articles/226871467-Package-management-in-RStudio-Connect)
+- [R IN COMMAND LINE – STDIN/STDOUT](https://datafireball.com/2013/10/10/putting-your-r-code-into-pipeline/)
+
+Пытаемся сгрузить пакет с github
+```
+Package: wesanderson
+Source: github
+Version: 0.3.4
+Hash: 71fc0864f4f3e151b640a7ddf0bcea3d
+GithubRepo: wesanderson
+GithubUsername: karthik
+GithubRef: master
+GithubSha1: c80778375c3fbb7e41b245d716fb6ac939249b97
+```
+
+
+# 06.03.2017
+## R
+- COOL! [Why hrbrthemes?](https://cran.r-project.org/web/packages/hrbrthemes/vignettes/why_hrbrthemes.html) by Bob Rudis, 2017-02-25
+	- [hrbrmstr/hrbrthemes](https://github.com/hrbrmstr/hrbrthemes). Opinionated, typographic-centric ggplot2 themes and theme components https://hrbrmstr.github.io/hrbrthemes/
+	- [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed)
+- COOL! [ggalt examples](https://cran.r-project.org/web/packages/ggalt/vignettes/ggalt_examples.html) by Bob Rudis
+- [networkD3: D3 JavaScript Network Graphs from R](http://christophergandrud.github.io/networkD3/)
+- [clickhouse R DBI client](https://github.com/hannesmuehleisen/clickhouse-r)
+- [Tools for using fonts in R graphics](https://github.com/wch/extrafont)
+```r
+# Vector of font family names
+fonts()
+
+# Show entire table
+fonttable()
+```
+- [TIDYQUANT 0.4.0: PERFORMANCEANALYTICS, IMPROVED DOCUMENTATION, GGPLOT2 THEMES AND MORE](http://www.business-science.io/code-tools/2017/03/04/tidyquant-update-0-4-0.html)
+- [Scheduling R scripts and processes on Windows and Unix/Linux](http://www.bnosac.be/index.php/blog/64-scheduling-r-scripts-and-processes-on-windows-and-unix-linux)
+
+- COOL! [Turn a shiny application into a tablet or desktop app](http://www.mango-solutions.com/wp/2017/03/shiny-based-tablet-or-desktop-app/)
+
+## TeX
+- [KATEX](https://khan.github.io/KaTeX/). The fastest math typesetting library for the web.
+
+# 28.02.2017
+## R
+- COOL! [Make your R simulation models 20 times faster](http://www.seascapemodels.org/rstats/2017/02/26/speeding-up-sims.html). R can be frustratingly slow if you use its loops. However, you can speed it up significantly (e.g. 20 times!) using the Rcpp package. That could turn a day long simulation into an hour long simulation.
+- PCAP
+	- [An R package to work with PCAPs](https://github.com/hrbrmstr/crafter)
+	- [pellegre/libcrafter]()https://github.com/pellegre/libcrafter). A high level C++ network packet sniffing and crafting library.
+	- [Visualize pcap file data with R](https://braindump.bun.ch/Network/Visualize_pcap_file_data)
+- [Nozzle R Package](https://confluence.broadinstitute.org/display/GDAC/Nozzle)
+Nozzle is an R package for generation of reports in high-throughput data analysis pipelines. Nozzle reports are implemented in HTML, JavaScript, and Cascading Style Sheets (CSS), but developers do not need any knowledge of these technologies to work with Nozzle. Instead they can use a simple R API to design and implement powerful reports with advanced features such as foldable sections, zoomable figures, sortable tables, and supplementary information. Please cite our Bioinformatics paper if you are using Nozzle in your work.
+
+
+# 26.02.2017
+## R
+- [R for excel Users {site}](https://www.rforexcelusers.com/)
+- [R for Excel Users {article}](http://blog.yhat.com/posts/R-for-excel-users.html) by Gordon Shotwell | February 14, 2017
+- [How to Teach R: Common mistakes](https://www.rstudio.com/rviews/2017/02/22/how-to-teach-r-common-mistakes/)
+
+# 24.02.2017
+## R
+- COOL! [Data frame performance](https://cran.r-project.org/web/packages/dplyr/vignettes/data_frames.html)
+- COOL! [Non-standard-evaluation and standard evaluation in dplyr](http://rmhogervorst.nl/cleancode/blog/2016/06/13/NSE_standard_evaluation_dplyr.html)
+- COOL! [Non-standard evaluation](https://cran.r-project.org/web/packages/dplyr/vignettes/nse.html)
+- [Prophet: How Facebook operationalizes time series forecasting at scale](http://blog.revolutionanalytics.com/2017/02/facebook-prophet.html)
+- [Prophet](https://facebookincubator.github.io/prophet/). Forecasting at scale. Prophet is a forecasting procedure implemented in R and Python. It is fast and provides completely automated forecasts that can be tuned by hand by data scientists and analysts.
+
+
+# 22.02.2017
+## R
+- [Use switch() instead of ifelse() to return a NULL](http://r-addict.com/2017/02/21/switch-ifelse.html)
+- [R Weekly 2017 Issue 8](https://rweekly.org/#get-)
+- [Three R Shiny tricks to make your Shiny app shines (2/3): Semi-collapsible sidebar](https://antoineguillot.wordpress.com/2017/02/21/three-r-shiny-tricks-to-make-your-shiny-app-shines-23-semi-collapsible-sidebar/)
+- [Raccoon | Ch 2.5 – Unbalanced and Nested Anova](http://www.quantide.com/raccoon-ch-2-5-unbalanced-nested-anova/)
+
+
+
+# 17.02.2017
+## R
+- [Rewiring replyr with dplyr. Challenge accepted](http://blog.eighty20.co.za//package%20exploration/2017/02/16/replyr-dplyr/)
+- ggraph. I will soon submit ggraph to CRAN - I swear! But in the meantime I’ve decided to build up anticipation for the great event by publishing a range of blog posts describing the central parts of ggraph: Layouts, Nodes, Edges, and Connections. All of these posts will be included with ggraph as vignettes — potentially in slightly modified form.
+	- [Introduction to ggraph: Layouts](http://www.data-imaginist.com/2017/ggraph-introduction-layouts/)
+	- [Introduction to ggraph: Nodes](http://www.data-imaginist.com/2017/ggraph-introduction-nodes/)
+	- [Introduction to ggraph: Edges](http://www.data-imaginist.com/2017/ggraph-introduction-edges/)
+
+# 14.02.2017
+## R
+- [Creating a unique ID in R](http://stackoverflow.com/questions/13566562/creating-a-unique-id-in-r)
+- [How to assign a unique ID number to each group of identical values in a column {duplicate}](http://stackoverflow.com/questions/24119599/how-to-assign-a-unique-id-number-to-each-group-of-identical-values-in-a-column)
+- [Disable tab completion (i.e. unbind 'Retrieve Completions' from {Tab} key)](https://support.rstudio.com/hc/en-us/community/posts/210476487-Disable-tab-completion-i-e-unbind-Retrieve-Completions-from-Tab-key-)
+
+## Neural Networks
+- COOL! [Mind: How to Build a Neural Network (Part One)](https://stevenmiller888.github.io/mind-how-to-build-a-neural-network/)
+- COOL! [Learning How To Code Neural Networks](https://medium.com/learning-new-stuff/how-to-learn-neural-networks-758b78f2736e)
+- COOL! [How to build a simple neural network in 9 lines of Python code](https://medium.com/technology-invention-and-more/how-to-build-a-simple-neural-network-in-9-lines-of-python-code-cc8f23647ca1]
+- [Implementing a Neural Network from Scratch in Python – An Introduction](http://www.wildml.com/2015/09/implementing-a-neural-network-from-scratch/)
+- COOL! [A Neural Network Playground](http://playground.tensorflow.org)
+- COOL! [Using TensorFlow with R](https://rstudio.github.io/tensorflow/)
+- [Neural Networks using R](https://bicorner.com/2015/05/13/neural-networks-using-r/) by Jeffrey Strickland On May 13, 2015
+- [Using neural nets to recognize handwritten digits](http://neuralnetworksanddeeplearning.com/chap1.html)
+- [A comparison of deep learning packages for R](http://www.rblog.uni-freiburg.de/2017/02/07/deep-learning-in-r/)
+- [R libraries for deep learning](http://stats.stackexchange.com/questions/41771/r-libraries-for-deep-learning)
+
+## DS
+- COOL e-book. [The Nature of Code](http://natureofcode.com/) by Daniel Shiffman
+	- [Chapter 10. Neural Networks](http://natureofcode.com/book/chapter-10-neural-networks/)
+
+
+
+
+# 10.02.2017
+## R
+- [RStudio Blog. RStudio Connect 1.4.2](https://blog.rstudio.org/2017/02/09/rstudio-connect-1-4-2/)
+- COOL! [Diving Into Dynamic Website Content with splashr](https://rud.is/b/2017/02/09/diving-into-dynamic-website-content-with-splashr/)
+- [An R package for controlling docker containers on local and remote hosts](https://github.com/wch/harbor)
+	- [Splash - A javascript rendering service](http://splash.readthedocs.io/en/stable/)
+Splash is a javascript rendering service. It’s a lightweight web browser with an HTTP API, implemented in Python using Twisted and QT. The (twisted) QT reactor is used to make the sever fully asynchronous allowing to take advantage of webkit concurrency via QT main loop.
+- [ModernDive: A free introduction to statistics and data science with R](http://blog.revolutionanalytics.com/2017/02/moderndive.html)
+	- [ModernDive. An Introduction to Statistical and Data Sciences via R](https://ismayc.github.io/moderndiver-book/) by Chester Ismay and Albert Y. Kim
+- dplyr, broom, purr & do
+	- [Comparison between dplyr::do / purrr::map, what advantages? {closed}](http://stackoverflow.com/questions/35505187/comparison-between-dplyrdo-purrrmap-what-advantages)
+	- [**Hadley Wickham
+@ijlyttle btw dplyr::do() is now basically deprecated in favour of the purrr approach**](https://twitter.com/hadleywickham/status/719542847045636096)
+	- [rstudio-conf/2017/List_Columns-Jenny_Bryan/](https://github.com/rstudio/rstudio-conf/tree/master/2017/List_Columns-Jenny_Bryan)
+	- [advice on Usage of dplyr:: do vs purrr: map, tidy::nest, for predictions](http://stackoverflow.com/questions/38621556/advice-on-usage-of-dplyr-do-vs-purrr-map-tidynest-for-predictions)
+	- [broom and dplyr](https://cran.r-project.org/web/packages/broom/vignettes/broom_and_dplyr.html)
+	- [Computing by groups within data.frames with dplyr and broom](http://stat545.com/block023_dplyr-do.html). Meet “do”
+dplyr::do() will compute just about anything and is conceived to use with group_by() to compute within groups. If the thing you compute is an unnamed data.frame, they get row-bound together, with the grouping variables retained. Let’s get the first two rows from each continent in 2007.
+	- [dplyr do: Some Tips for Using and Programming](http://www.milanor.net/blog/dplyr-do-tips-for-using-and-programming/)
+	- [dplyr: How to apply do() on result of group_by?](http://stackoverflow.com/questions/22182442/dplyr-how-to-apply-do-on-result-of-group-by)
+- [Get weekdays in English in R](http://stackoverflow.com/questions/17031002/get-weekdays-in-english-in-r)
+- [Filter with Date data](https://blog.exploratory.io/filter-with-date-function-ce8e84be680#.d4m4p87yc)
+- [Creating factor variables 'weekend' and 'weekday' from date](http://stackoverflow.com/questions/28893193/creating-factor-variables-weekend-and-weekday-from-date)
+- ggplot2
+	- [scale_fill_brewer problem with continuous data](http://docs.ggplot2.org/current/scale_brewer.html). Use `scale_fill_distiller`
+	- [ggplot2: aspect.ratio overpowers coord_equal or coord.fixed](http://stackoverflow.com/questions/31939838/ggplot2-aspect-ratio-overpowers-coord-equal-or-coord-fixed)
+	- [Cartesian coordinates with fixed relationship between x and y scales](http://docs.ggplot2.org/current/coord_fixed.html)
+	- при попытке использовать кастомные темы и сменить шрифт возникает ошибка: `Font family not found in Windows font database`. Решение найдено здесь: [Can't change fonts in ggplot/geom_text](http://stackoverflow.com/questions/14733732/cant-change-fonts-in-ggplot-geom-text). Доп. справочная информация [How to use your favorite fonts in R charts, September 20, 2012](http://blog.revolutionanalytics.com/2012/09/how-to-use-your-favorite-fonts-in-r-charts.html)
+
+## R & dates
+- Очень тормозит работа с POSIXlt!!! На задаче построения heatmap (с парсингом дат) это очень хорошо увидел.
+	- COOL! Подробнейшее внутреннее объяснение. [Why are lubridate functions so slow when compared with as.POSIXct?](http://stackoverflow.com/questions/10645815/why-are-lubridate-functions-so-slow-when-compared-with-as-posixct)
+	- Упоминается пакет `fasttime`. [Faster date formatting in R?](http://stackoverflow.com/questions/17170169/faster-date-formatting-in-r)
+	- [hadley/lubridate. Closed Issue "reasons for unbearably slow force_tz? #16"](https://github.com/hadley/lubridate/issues/161)
+	- [hadley/lubridate. Open Issue "Timezone import slow - possible solutions #225"](https://github.com/hadley/lubridate/issues/225)
+	- [hadley/lubridate. Open Issue "Vectorised force_tz() #438"](https://github.com/hadley/lubridate/issues/438)
+	- Вот оно, объяснение!!! **The time zone is set as an attribute of the entire vector and it is not a property of each element.** [Use dplyr::mutate and lubridate::force_tz based on arguments from data frame columns](http://stackoverflow.com/questions/36598115/use-dplyrmutate-and-lubridateforce-tz-based-on-arguments-from-data-frame-col).
+	- [Parsing a large amount of characters into a POSIXct object](http://www.numbertheory.nl/2015/09/22/parsing-a-large-amount-of-characters-into-a-posixct-object/). lubridate рулит!!!
 
 # 09.02.2017
 ## R
+- [Explore correlations in R with corrr](https://drsimonj.svbtle.com/explore-correlations-in-r-with-corrr)
+- [Purrr package for R is good for performance](http://shawnmehan.com/purrr-package-for-r-is-good-for-performance/)
+- COOL! [Using purrr: one weird trick (data-frames with list columns) to make evaluating models easier](http://ijlyttle.github.io/isugg_purrr/presentation.html#(1)). Ian Lyttle, Schneider Electric
+- [Add new variable to list of data frames with purrr and mutate() from dplyr](http://stackoverflow.com/questions/42028710/add-new-variable-to-list-of-data-frames-with-purrr-and-mutate-from-dplyr)
+- [currentDate / Time in Milliseconds](http://currentmillis.com/)
+Date-Time Calendar 	Milliseconds since Epoch · Julian Date · HTTP format · ISO 8601
+Epochs & standards for reference. Convert date / time formats on the fly. Timestamps in milliseconds and other units.
+- [DenCode. Enjoy Encoding & Decoding!](http://dencode.com/date/iso8601)
+- [ISO 8601. From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/ISO_8601)
+- [Date from Timestamp](http://www.timestampgenerator.com/date-from-timestamp/). Create a readable date and time from a timestamp
+- [Time Zone Converter](http://www.timezoneconverter.com/cgi-bin/zoneinfo?tz=Asia/Seoul)
+- [Convert character and UTC offset to POSIXct in R](http://stackoverflow.com/questions/35302444/convert-character-and-utc-offset-to-posixct-in-r)
+
+## R & heatmap
+- [How to Make a Heatmap – a Quick and Easy Solution](http://flowingdata.com/2010/01/21/how-to-make-a-heatmap-a-quick-and-easy-solution/). With ggplot2
+- [The hourly heatmap with ggplot2](http://johnmackintosh.com/2016-12-01-the-hourly-heatmap/). a quick follow up to my last post. Posted on December 1, 2016
+- [Daily metric tracking with ggplot2](http://johnmackintosh.com/2016-11-27-calendar-heatmaps/). Posted on November 27, 2016
+- [Making Faceted Heatmaps with ggplot2](https://rud.is/projects/facetedheatmaps.html). Bob Rudis • 2016-02-13
+	- [оно же](https://rpubs.com/omicsdata/faceted_heatmap)
+- [RStudio Blog. d3heatmap: Interactive heat maps](https://blog.rstudio.org/2015/06/24/d3heatmap/). June 24, 2015 in Packages | Tags: d3, htmlwidgets
+	- [Interactive heatmaps with D3 including support for row/column highlighting and zooming](http://www.htmlwidgets.org/showcase_d3heatmap.html).
+	- [mtcars-heatmap example](http://rpubs.com/jcheng/mtcars-heatmap)
+- [Charting time series as calendar heat maps in R](http://blog.revolutionanalytics.com/2009/11/charting-time-series-as-calendar-heat-maps-in-r.html). November 03, 2009
+- [ggTimeSeries](https://github.com/Ather-Energy/ggTimeSeries). This R package offers novel time series visualisations. It is based on ggplot2 and offers geoms and pre-packaged functions for easily creating any of the offered charts. Some examples are listed below.
+
+## R & CSS white-space
 - Проблема со сверткой последовательных пробелов (spaces) в один. Это фишка HTML, однако! Ключевое слово -- preserve.
 	- [How to leave space in HTML](http://stackoverflow.com/questions/12144968/how-to-leave-space-in-html). много ссылок.
 	- [Shiny Lesson 2. Build a user-interface](http://disq.us/p/xx4z6l). Thomas • 2 years ago
@@ -54,6 +347,7 @@ The Firebug extension isn't being developed or maintained any longer. We invite 
 - [Neural networks in a nutshell](https://themenwhostareatcodes.wordpress.com/2014/03/02/neural-networks-in-a-nutshell/)
 - COOL! [Deep Learning in R](http://www.rblog.uni-freiburg.de/2017/02/07/deep-learning-in-r/)
 - [Wolfram Language™. Neural Networks](https://www.wolfram.com/language/11/neural-networks/)
+- [Job trends for R and Python. February 09, 2017](http://blog.revolutionanalytics.com/2017/02/job-trends-for-r-and-python.html)
 
 
 ## Shiny
@@ -158,8 +452,6 @@ Halite is an artificial intelligence programming challenge. Players control a bo
 - [How to send several HotKeys](https://forum.uipath.com/t/how-to-send-several-hotkeys/995)
 
 # 01.02.2017
-## Reliability
-- [MTBF — откуда берется «миллион часов MTBF»](https://geektimes.ru/post/122529/)
 
 ## Shiny
 - COOL Presentation.  [Effective Shiny Programming](https://cdn.rawgit.com/jcheng5/user2016-tutorial-shiny/master/slides.html). Joe Cheng <joe@rstudio.com>, #useR2016 — June 27, 2016
@@ -929,7 +1221,6 @@ PLEASE NOTE: Refer to your license terms for Microsoft SQL Server 2016 Enterpris
 - [An extensive tutorial of D3partitionR 0.2](https://antoineguillot.wordpress.com/2016/11/20/an-extensive-tutorial-of-d3partitionr-0-2/)
 - [High Performance CommonMark and Github Markdown Rendering in R](http://ropensci.org/blog/blog/2016/12/02/commonmark)
 - [Be careful evaluating model predictions](http://www.win-vector.com/blog/2016/12/be-careful-evaluating-model-predictions/)
-- [Parametric variable names and dplyr](http://www.win-vector.com/blog/2016/12/parametric-variable-names-and-dplyr/)
 - [plumber — Convert R Code to a Web API](http://trestletech.com/2015/06/rapier-convert-r-code-to-a-web-api/)
 - [When Documents Become Databases – Tabulizer R Wrapper for Tabula PDF Table Extractor](https://blog.ouseful.info/2016/05/02/when-documents-become-databases-tabulizer-r-wrapper-for-tabula-pdf-table-extractor/)
 - [ropenscilabs/tabulizer](https://github.com/ropenscilabs/tabulizer) Bindings for Tabula PDF Table Extractor Library
@@ -1301,14 +1592,6 @@ Recommended Sites
 ## R
 - [R Views: an R Community Blog](https://www.rstudio.com/rviews/)
 
-## Availability
-- [Reliability and availability basics](http://www.eventhelix.com/RealtimeMantra/FaultHandling/reliability_availability_basics.htm)
-- [System Reliability and Availability](http://www.eventhelix.com/RealtimeMantra/FaultHandling/system_reliability_availability.htm)
-- [Failure Rates, MTBFs, and All That](http://www.mathpages.com/home/kmath498/kmath498.htm)
-- [Infinite Parallel Redundancy](http://www.mathpages.com/home/kmath326/kmath326.HTM)
-- [Mean Time Between Failures & Mean Time To Repair](http://world-class-manufacturing.com/KPI/mtbf.html)
-- [MTBF online calculator](http://www.pixelbeat.org/docs/reliability_calculator/)
-
 # 08.11.2016
 ## R
 - [The Lab-R-torian blog](http://labrtorian.com)
@@ -1593,6 +1876,9 @@ You may think that if entities are added into XHTML documents they can be added 
 - [Model assessment. Purrr + dplyr](http://r4ds.had.co.nz/model-assess.html)
 - [How to Manipulate Files in R](http://www.dummies.com/programming/r/how-to-manipulate-files-in-r/). Occasionally, you may want to write a script in R that will traverse a given folder and perform actions on all the data in the files or a subset of files in that folder.
 To get a list of files in a specific folder, use `list.files()` or `dir()`. These two functions do exactly the same thing, but for backward-compatibility reasons, the same function has two names
+	- [Only basers use list.files()](https://twitter.com/hadleywickham/status/758668512600600576).
+Hadley Wickham‏Verified account @hadleywickham
+@abresler @hrbrmstr dir() instead of list.files() SAVES SO MUCH TIME
 - [Working with files and folders in R](http://www.masterdataanalysis.com/r/working-with-files-and-folders-in-r/)
 - [Find duplicated elements with dplyr](http://stackoverflow.com/questions/28244123/find-duplicated-elements-with-dplyr)
 - COOL! [Selecting columns and renaming are so easy with dplyr](https://blog.exploratory.io/selecting-columns-809bdd1ef615)

@@ -93,7 +93,8 @@ $ sudo yum update
 - Пакеты надо ставить из под рута, в помощь очень полезные статьи:
 	- [Using R — Installing Packages](http://mazamascience.com/WorkingWithData/?p=728)
 	- [Using R — Package Installation Problems](http://mazamascience.com/WorkingWithData/?p=1185)
-	- Обновление установленных пакетов делаем из под рута в консоли R с помощью пакета pacman: `p_update(update = TRUE, ask = FALSE, ...)` 
+	- Обновление установленных пакетов делаем из под рута в консоли R с помощью пакета pacman: `p_update(update = TRUE, ask = FALSE, ...)`
+	-  Еще проще сделать обновление R функцией `update.packages()`
 
 ### Проблемы при установке пакетов
 
@@ -554,3 +555,18 @@ cat /var/log/cron | egrep  "file.? changed"
 git config --global push.default matching
  # git config --global push.default simple
 ```
+
+# Настройка RStudio Connect
+## Деинсталляция RStsudio Server (free)
+Информацию черпаем из статьи [Upgrading RStudio Server](https://support.rstudio.com/hc/en-us/articles/216079967-Upgrading-RStudio-Server):
+- Удаляем текущую версию RStudio Server с помощью package manager: `sudo yum remove rstudio-server`.
+Перед этим желательно перестроить старый кеш: `yum makecache fast`
+
+## Обновление R
+Под CentOS делаем следующей командой: `yum update R`. Детали найдены в статье [How do i update R on Cent OS?](http://superuser.com/questions/750440/how-do-i-update-r-on-cent-os)
+
+## Инсталляция RStudio Connect
+- [Страница для загрузки](https://www.rstudio.com/products/connect/download-commercial/) 45-ти дневной демо версии
+- Проверяем созданных пользователей: `cat /etc/passwd`. Детальнее можно поглядеть, например, здесь: [Linux Command: List All Users In The System](https://www.cyberciti.biz/faq/linux-list-users-command/)
+- Запускаем `http://your-connect-server:3939/` и создаем аккаунт! [The first account will be marked as an RStudio Connect administrator.](http://docs.rstudio.com/connect/admin/getting-started.html#installation)
+- Подключаем RStudio IDE для публикации приложений.
