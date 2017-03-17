@@ -6,6 +6,14 @@
 
 - [Managing and monitoring performance in SDN / NFV](https://www.virtualizationpractice.com/managing-monitoring-performance-sdn-nfv-32088/)
 
+# 17.03.2017
+## R
+- [Knitr Chunk options and package options](https://yihui.name/knitr/options/)
+- [R - Markdown avoiding package loading messages](http://stackoverflow.com/questions/13090838/r-markdown-avoiding-package-loading-messages)
+- [How to draw lines outside of plot area in ggplot2?](http://stackoverflow.com/questions/10525957/how-to-draw-lines-outside-of-plot-area-in-ggplot2)
+- [Everything you always wanted to know about using ggplot2 from F# (but were afraid to ask)](http://evelinag.com/blog/2015/12-03-using-ggplot2-from-f/)
+- COOL! ggplot Диагностика графических объектов: `library(gtable) gtable_show_layout(ggplotGrob(gp2))`
+
 # 16.03.2017
 ## R
 - [Adding figure labels (A, B, C, …) in the top left corner of the plotting region](https://logfc.wordpress.com/2017/03/15/adding-figure-labels-a-b-c-in-the-top-left-corner-of-the-plotting-region/)
@@ -26,6 +34,16 @@
 
 # 15.03.2017
 ## RStudio connect демо ссылки
+- [81 registered widgets available to explore](http://gallery.htmlwidgets.org/)
+- [ggplot2 extensions - gallery. 28 registered extensions available to explore](http://www.ggplot2-exts.org/gallery/)
+- [flexdashboard: Easy interactive dashboards for R](http://rmarkdown.rstudio.com/flexdashboard/)
+	- [flexdashboard examples](http://rmarkdown.rstudio.com/flexdashboard/examples.html)
+- [The New Zealand Tourism Dashboard is a one-stop shop for all information about tourism. It brings together a range of tourism datasets produced by MBIE and Statistics New Zealand into one easy-to-use tool. Information is presented using dynamic graphs and data tables.](https://mbienz.shinyapps.io/tourism_dashboard_prod/)
+- [FRISS demo dashboard](https://js-tutorial.shinyapps.io/dashboardApp/)
+- [Customizable charts: Alaska communities, daily precipitation](https://uasnap.shinyapps.io/ak_daily_precipitation/)
+- [Community Charts v4 Lite](https://uasnap.shinyapps.io/cc4liteFinal/)
+- [Shiny gallery](http://shiny.rstudio.com/gallery/)
+
 
 
 # 13.03.2017
@@ -508,7 +526,7 @@ http://www.cio.com/article/2952121/business-process-management/intelligent-autom
 ## R
 - [detach all packages while working in R](http://stackoverflow.com/questions/7505547/detach-all-packages-while-working-in-r)
 - При использовании Shiny NavBar отображается надпись 'tab-pane active'. [R Shiny navbarMenu](http://stackoverflow.com/questions/22429601/r-shiny-navbarmenu)
-- [ggplot2 extensions](https://www.ggplot2-exts.org/)
+- [ggplot2 extensions](http://www.ggplot2-exts.org/)
 
 
 # 27.01.2017

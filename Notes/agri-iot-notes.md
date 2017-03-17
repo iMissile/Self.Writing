@@ -599,7 +599,6 @@ yum -y install texlive-collection-latexextra
 
 или одной строчкой: `yum install texlive texlive-latex texlive-xetex texlive-collection-fontsrecommended texlive-collection-latex texlive-collection-latexrecommended  texlive-xetex-def texlive-collection-xetex`
 `
-
 В документации RStudio Connect указано:
 `texlive-full # very large dependency, but needed to render PDF documents from R Markdown`. Но такого пакета под CentOS не нашлось.
 
@@ -609,11 +608,13 @@ yum -y install texlive-collection-latexextra
 
 - Ставим `yum install texlive-collection-langcyrillic install texlive-cyrillic-doc`
 
-
-
 Ошибки при запуске TeXLive
 - LaTeX Error: File 'framed.sty' not found. Решаем установкой [`yum -y install texlive-framed`](https://github.com/rstudio/rmarkdown/issues/39)
 - LaTeX Error: File 'titling.sty' not found. Решаем установкой `yum -y install texlive-titling`
+
+Русский язык в LaTeX:
+- [Overleaf. Русский язык в LaTeX: XeLaTeX](https://www.overleaf.com/latex/templates/5-dot-2-2-russkii-iazyk-v-latex-xelatex/skfzmvgdgvnk)
+- [XeLaTeX или на порядок улучшим качество шрифтов в окончательном pdf](http://astronu.jinr.ru/wiki/index.php/XeLaTeX_%D0%B8%D0%BB%D0%B8_%D0%BD%D0%B0_%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA_%D1%83%D0%BB%D1%83%D1%87%D1%88%D0%B8%D0%BC_%D0%BA%D0%B0%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE_%D1%88%D1%80%D0%B8%D1%84%D1%82%D0%BE%D0%B2_%D0%B2_%D0%BE%D0%BA%D0%BE%D0%BD%D1%87%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC_pdf)
 - Package fontenc Error: Encoding file 't2aenc.def' not found. Решаем установкой [`yum -y install texlive-cyrillic`](http://tex.stackexchange.com/questions/5079/what-is-wrong-with-my-cyrillic-text)
  и `yum install texlive-collection-langcyrillic`
 - Font T2A/cmr/m/n/12=larm1200 at 12.0pt not loadable: Metric (TFM) file not found. Ответы ищем в статье [Error in TeX Live – Font … not loadable: Metric (TFM) file not found](http://tex.stackexchange.com/questions/75166/error-in-tex-live-font-not-loadable-metric-tfm-file-not-found). Вариант решения -- ставим все font пакеты: `yum -y install texlive-*font*`
@@ -621,11 +622,11 @@ yum -y install texlive-collection-latexextra
 - pdfLaTeX под Windows дает такую ошибку: ` pdfTeX error (font expansion): auto expansion is only possible with scalable fonts.`. Читаем длинную статью 
 [On pdfTeX error (font expansion): auto expansion is only possible with scalable fonts, microtype package](http://tex.stackexchange.com/questions/283960/on-pdftex-error-font-expansion-auto-expansion-is-only-possible-with-scalable).
 Есть подозрение, что виноват [в этом пакет `microtype`](http://tex.stackexchange.com/questions/10706/pdftex-error-font-expansion-auto-expansion-is-only-possible-with-scalable). Если его закомментировать в сгенерированном .tex файле, то компиляция проходит, но шрифт светлый и нет bold.
-
 Надо ручками поставить пакет `cm-super`
 - [How to set font to Arial throughout the entire document?](http://tex.stackexchange.com/questions/23957/how-to-set-font-to-arial-throughout-the-entire-document)
-
-
+- COOL! Классный обзор методов. [Cyrillic in (La)TeX](http://tex.stackexchange.com/questions/816/cyrillic-in-latex)
+РЕШЕНИЕ С Linux Libertine было найдено ЗДЕСЬ: [fontspec error: “font-not-found”](http://tex.stackexchange.com/questions/266101/fontspec-error-font-not-found).
+Ставим `\setmainfont{Linux Libertine O}`, обнаружил с помощью команды `fc-list | grep "Linux Libertine" | grep ".otf"`.
 - [Linux Libertine font](http://www.linuxlibertine.org/index.php?id=1&L=1).
 	- Ставим под винду
 	- Ставим под CentOS командой `yum install linux-liber*`. Фонт найден установленным здесь: `/usr/share/fonts/linux-libertine/LinLibertine_*`
@@ -634,14 +635,13 @@ yum -y install texlive-collection-latexextra
 
 Инсталляция одной строчкой: `yum install texlive-framed texlive-titling texlive-cyrillic texlive-*font*`
 
-- COOL! Классный обзор методов. [Cyrillic in (La)TeX](http://tex.stackexchange.com/questions/816/cyrillic-in-latex)
-РЕШЕНИЕ С Linux Libertine было найдено ЗДЕСЬ: [fontspec error: “font-not-found”](http://tex.stackexchange.com/questions/266101/fontspec-error-font-not-found).
-Ставим `\setmainfont{Linux Libertine O}`, обнаружил с помощью команды `fc-list | grep "Linux Libertine" | grep ".otf"`.
+
+
+### Ставим полноценный TexLive
 
 В конечном итоге все рекомендуют удалить штатный texlive и поставить ручками самому. [TeX Live - Quick install](https://www.tug.org/texlive/quickinstall.html)
 [A different idea: Just uninstall all the TeXlive stuff coming from the repositories and install "the real stuff" instead](https://www.centos.org/forums/viewtopic.php?t=52472): https://www.tug.org/texlive/quickinstall.html
 
-### Ставим полноценный TexLive
 - Сносим пакеты, поставленные из репозитория CentOS: `yum remove texlive*`
 - Чтобы не возникала ошибка Perl (`Can't locate Digest/MD5.pm in @INC...`), перед запуском инсталлятора необходимо доставить perl пакеты командой `yum install perl-Tk perl-Digest-MD5`. Детальнее читаем тут: [Error during installation of TeXLive 2012 in Fedora](t)
 
