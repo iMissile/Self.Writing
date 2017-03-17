@@ -571,14 +571,18 @@ git config --global push.default matching
 - Запускаем `http://your-connect-server:3939/` и создаем аккаунт! [The first account will be marked as an RStudio Connect administrator.](http://docs.rstudio.com/connect/admin/getting-started.html#installation)
 - Настраиваем почтовый адрес Connect. Секция `SenderEmail`, `vi /etc/rstudio-connect/rstudio-connect.gcfg` и перезапускаем
 `sudo systemctl restart rstudio-connect`, `sudo systemctl status rstudio-connect`
-
 - Подключаем RStudio IDE для публикации приложений.
 
 
 ### Под капотом RStudio Connect
+- [RStudio Connect: Admin Guide - RStudio Documentation in pdf](docs.rstudio.com/connect/admin/index.pdf)
 - [5 Server Management](http://docs.rstudio.com/connect/1.4.2/admin/server-management.html). This section describes common administrative tasks for RStudio Connect.
 	- `sudo systemctl restart rstudio-connect`
 - [Where can I find the files created by RStudio Connect?](https://support.rstudio.com/hc/en-us/articles/227009188-Where-can-I-find-the-files-created-by-RStudio-Connect-). В частности, The RStudio Connect server log is located at `/var/log/rstudio-connect.log`. This file is owned by root with permissions 0600. Это же самое указано в документации, [4 Files & Directories](http://docs.rstudio.com/connect/admin/files-directories.html)
+	- [A "live" view of a logfile on Linux](https://www.howtogeek.com/howto/ubuntu/a-live-view-of-a-logfile-on-linux/). Команда `tail -f /path/thefile.log`
+- При попытке отправить отчет по Email (иконка Email Report) выдается ошибка `Error: Internal Server Error [500]`. Статья [How To Fix a 500 Internal Server Error ](https://www.lifewire.com/500-internal-server-error-explained-2622938): *The 500 Internal Server Error is a very general HTTP status code that means something has gone wrong on the website's server, but the server could not be more specific on what the exact problem is*. 
+В конфиге Apache командой `tail -f /var/log/rstudio-connect.access.log` видим такую запись: `[17/Mar/2017:09:55:13 +0300] "POST /__api__/variants/4/sender?email=me HTTP/1.1" 500 0`
+Проблема решилась установкой параметра `Server` в конфигурационном файле RStudio Connect: "The Server.SenderEmail property is the email address from which Connect sends emails. It is important that the sendmail or SMTP configuration RStudio Connect uses be willing and able to send email from this SenderEmail address. Otherwise, Connect will not be able to successfully send email. See Section 2.2.4 for more details about mail sending."
 
 # Инсталляция LaTeX
 - Centos 7 latex install
