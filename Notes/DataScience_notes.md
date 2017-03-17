@@ -12,6 +12,18 @@
 - [Why I love R Notebooks](https://www.rstudio.com/rviews/2017/03/15/why-i-love-r-notebooks/)
 - [Improved Python-style Logging in R](http://mazamascience.com/WorkingWithData/?p=1759)
 
+## R решаем задачку пилота
+- Загрузка excel файла на shinyServer
+	- [“read_excel” in a Shiny app](http://stackoverflow.com/questions/30624201/read-excel-in-a-shiny-app)
+	- [Add option to specify file format to support Shiny fileInput(). #85.  Closed	pofigster opened this issue on 20 Apr 2015 · 5 comments](https://github.com/tidyverse/readxl/issues/85). Решение:
+	jennybc pushed a commit that closed this issue on 4 Feb
+ @jirkalewandowski	Optionally specify format in read_excel, excel_sheets: Closes #85
+НАДО СТАВИТЬ DEV версию readxl: `devtools::install_github("tidyverse/readxl")`
+- [using Source() in Shiny](http://stackoverflow.com/questions/21864611/using-source-in-shiny)
+- Linux:
+	- [FreeType 2.7 — превосходное качество шрифтов Linux](https://habrahabr.ru/post/311462/)
+	- [FreeType is a freely available software library to render fonts.](https://www.freetype.org/index.html)
+
 # 15.03.2017
 ## RStudio connect демо ссылки
 
@@ -3212,9 +3224,10 @@ scale_fill_distiller <- function(..., type = "seq", palette = 1, direction = -1,
 ## Shiny
 - [Dean Attali's Shiny Server](http://daattali.com/shiny/)
 - Scoping in Shiny
-	- [Scoping rules for Shiny apps](http://shiny.rstudio.com/articles/scoping.html)
+	- [Scoping rules for Shiny apps](http://shiny.rstudio.com/articles/scoping.html). Objects defined in global.R are similar to those defined in server.R outside shinyServer(), with one important difference: they are also visible to the code in ui.R. This is because they are loaded into the global environment of the R session; all R code in a Shiny app is run in the global environment or a child of it.
 	- [Scoping (depricated)](http://rstudio.github.io/shiny/tutorial/#scoping)
-	- [Use R scripts and data](http://shiny.rstudio.com/tutorial/lesson5/). См. пункт "Execution" 
+	- [Use R scripts and data](http://shiny.rstudio.com/tutorial/lesson5/). См. пункт "Execution". Здесь как раз красивые картинки.
+	- [Shiny scoping rules - where to load libraries in modular architecture](http://stackoverflow.com/questions/35915574/shiny-scoping-rules-where-to-load-libraries-in-modular-architecture)
 - [Using DT in Shiny](https://rstudio.github.io/DT/shiny.html)
 - [Control the height in fluidRow in R shiny](http://stackoverflow.com/questions/25340847/control-the-height-in-fluidrow-in-r-shiny). HTML +CSS
 

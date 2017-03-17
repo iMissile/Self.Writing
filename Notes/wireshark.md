@@ -6,8 +6,8 @@
 - [Decoding (encrypted) MySQL traffic with Wireshark](http://databaseblog.myname.nl/2014/07/decoding-encrypted-mysql-traffic-with.html)
 
 # Shark
-- [TShark - консольная версия программы Wireshark](https://zyxel.ru/kb/2037/)
-- [Анализ сетевого трафика на сервере с помощью tshark](https://habrahabr.ru/company/selectel/blog/233837/)
+- [TShark - РєРѕРЅСЃРѕР»СЊРЅР°СЏ РІРµСЂСЃРёСЏ РїСЂРѕРіСЂР°РјРјС‹ Wireshark](https://zyxel.ru/kb/2037/)
+- [РђРЅР°Р»РёР· СЃРµС‚РµРІРѕРіРѕ С‚СЂР°С„РёРєР° РЅР° СЃРµСЂРІРµСЂРµ СЃ РїРѕРјРѕС‰СЊСЋ tshark](https://habrahabr.ru/company/selectel/blog/233837/)
 
 - [MonitoringScape](https://bigpanda.io/monitoringscape/) is your guide to the new, exciting world of modern monitoring. Keep in mind that this is a community resource, so your comments and suggestions are very welcome.
 

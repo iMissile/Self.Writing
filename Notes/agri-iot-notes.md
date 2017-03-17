@@ -569,4 +569,94 @@ git config --global push.default matching
 - [Страница для загрузки](https://www.rstudio.com/products/connect/download-commercial/) 45-ти дневной демо версии
 - Проверяем созданных пользователей: `cat /etc/passwd`. Детальнее можно поглядеть, например, здесь: [Linux Command: List All Users In The System](https://www.cyberciti.biz/faq/linux-list-users-command/)
 - Запускаем `http://your-connect-server:3939/` и создаем аккаунт! [The first account will be marked as an RStudio Connect administrator.](http://docs.rstudio.com/connect/admin/getting-started.html#installation)
+- Настраиваем почтовый адрес Connect. Секция `SenderEmail`, `vi /etc/rstudio-connect/rstudio-connect.gcfg` и перезапускаем
+`sudo systemctl restart rstudio-connect`, `sudo systemctl status rstudio-connect`
+
 - Подключаем RStudio IDE для публикации приложений.
+
+
+### Под капотом RStudio Connect
+- [5 Server Management](http://docs.rstudio.com/connect/1.4.2/admin/server-management.html). This section describes common administrative tasks for RStudio Connect.
+	- `sudo systemctl restart rstudio-connect`
+- [Where can I find the files created by RStudio Connect?](https://support.rstudio.com/hc/en-us/articles/227009188-Where-can-I-find-the-files-created-by-RStudio-Connect-). В частности, The RStudio Connect server log is located at `/var/log/rstudio-connect.log`. This file is owned by root with permissions 0600. Это же самое указано в документации, [4 Files & Directories](http://docs.rstudio.com/connect/admin/files-directories.html)
+
+# Инсталляция LaTeX
+- Centos 7 latex install
+```
+yum -y install texlive texlive-latex texlive-xetex
+yum -y install texlive-collection-fontsrecommended
+yum -y install texlive-collection-latex
+yum -y install texlive-collection-latexrecommended
+yum -y install texlive-xetex-def
+yum -y install texlive-collection-xetex
+Only if needed:
+yum -y install texlive-collection-latexextra
+```
+
+или одной строчкой: `yum install texlive texlive-latex texlive-xetex texlive-collection-fontsrecommended texlive-collection-latex texlive-collection-latexrecommended  texlive-xetex-def texlive-collection-xetex`
+`
+
+В документации RStudio Connect указано:
+`texlive-full # very large dependency, but needed to render PDF documents from R Markdown`. Но такого пакета под CentOS не нашлось.
+
+Ищем, где же установлен TexLive manager: `find / -name 'tl*'` А в CentOS его нет
+[CentOS Latex - Install package manually (no tlmgr)](http://tex.stackexchange.com/questions/289404/centos-latex-install-package-manually-no-tlmgr)
+Все делаем через `yum`. Поиск по репозиторию осуществляем с помощью [`yum search cyrillic`](https://www.centos.org/docs/5/html/yum/sn-searching-packages.html)
+
+- Ставим `yum install texlive-collection-langcyrillic install texlive-cyrillic-doc`
+
+
+
+Ошибки при запуске TeXLive
+- LaTeX Error: File 'framed.sty' not found. Решаем установкой [`yum -y install texlive-framed`](https://github.com/rstudio/rmarkdown/issues/39)
+- LaTeX Error: File 'titling.sty' not found. Решаем установкой `yum -y install texlive-titling`
+- Package fontenc Error: Encoding file 't2aenc.def' not found. Решаем установкой [`yum -y install texlive-cyrillic`](http://tex.stackexchange.com/questions/5079/what-is-wrong-with-my-cyrillic-text)
+ и `yum install texlive-collection-langcyrillic`
+- Font T2A/cmr/m/n/12=larm1200 at 12.0pt not loadable: Metric (TFM) file not found. Ответы ищем в статье [Error in TeX Live – Font … not loadable: Metric (TFM) file not found](http://tex.stackexchange.com/questions/75166/error-in-tex-live-font-not-loadable-metric-tfm-file-not-found). Вариант решения -- ставим все font пакеты: `yum -y install texlive-*font*`
+- [Переходим на XeTeX, получаем ошибку `! Corrupted NFSS tables`](http://tex.stackexchange.com/questions/237188/corrupted-nfss-tables)
+- pdfLaTeX под Windows дает такую ошибку: ` pdfTeX error (font expansion): auto expansion is only possible with scalable fonts.`. Читаем длинную статью 
+[On pdfTeX error (font expansion): auto expansion is only possible with scalable fonts, microtype package](http://tex.stackexchange.com/questions/283960/on-pdftex-error-font-expansion-auto-expansion-is-only-possible-with-scalable).
+Есть подозрение, что виноват [в этом пакет `microtype`](http://tex.stackexchange.com/questions/10706/pdftex-error-font-expansion-auto-expansion-is-only-possible-with-scalable). Если его закомментировать в сгенерированном .tex файле, то компиляция проходит, но шрифт светлый и нет bold.
+
+Надо ручками поставить пакет `cm-super`
+- [How to set font to Arial throughout the entire document?](http://tex.stackexchange.com/questions/23957/how-to-set-font-to-arial-throughout-the-entire-document)
+
+
+- [Linux Libertine font](http://www.linuxlibertine.org/index.php?id=1&L=1).
+	- Ставим под винду
+	- Ставим под CentOS командой `yum install linux-liber*`. Фонт найден установленным здесь: `/usr/share/fonts/linux-libertine/LinLibertine_*`
+	- А еще есть пакет LaTeX [`libertine`](https://www.ctan.org/tex-archive/fonts/libertine/)
+	- [Libertine Font problem with XeLaTeX](http://tex.stackexchange.com/questions/105970/font-problem-with-xelatex)
+
+Инсталляция одной строчкой: `yum install texlive-framed texlive-titling texlive-cyrillic texlive-*font*`
+
+- COOL! Классный обзор методов. [Cyrillic in (La)TeX](http://tex.stackexchange.com/questions/816/cyrillic-in-latex)
+РЕШЕНИЕ С Linux Libertine было найдено ЗДЕСЬ: [fontspec error: “font-not-found”](http://tex.stackexchange.com/questions/266101/fontspec-error-font-not-found).
+Ставим `\setmainfont{Linux Libertine O}`, обнаружил с помощью команды `fc-list | grep "Linux Libertine" | grep ".otf"`.
+
+В конечном итоге все рекомендуют удалить штатный texlive и поставить ручками самому. [TeX Live - Quick install](https://www.tug.org/texlive/quickinstall.html)
+[A different idea: Just uninstall all the TeXlive stuff coming from the repositories and install "the real stuff" instead](https://www.centos.org/forums/viewtopic.php?t=52472): https://www.tug.org/texlive/quickinstall.html
+
+### Ставим полноценный TexLive
+- Сносим пакеты, поставленные из репозитория CentOS: `yum remove texlive*`
+- Чтобы не возникала ошибка Perl (`Can't locate Digest/MD5.pm in @INC...`), перед запуском инсталлятора необходимо доставить perl пакеты командой `yum install perl-Tk perl-Digest-MD5`. Детальнее читаем тут: [Error during installation of TeXLive 2012 in Fedora](t)
+
+- Инструкция по сетевой установке [здесь](Installing TeX Live over the Internet).
+Скачиваем [сетевой инсталлятор](http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz)
+	- Скачиваем `wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz`
+	- Распаковываем `tar -xvzf install-tl-unx.tar.gz`
+	- Запускаем исталлятор `./install-tl -gui text`
+Проблема с инсталляцией R в том, что он тащит за собой texlive (dependencies)
+```
+Installing:
+ R                             x86_64                 3.3.2-3.el7             epel                  27 k
+Installing for dependencies:
+ R-core                        x86_64                 3.3.2-3.el7             epel                  51 M
+ R-core-devel                  x86_64                 3.3.2-3.el7             epel                 101 k
+ R-devel   
+```
+- [10 Yum Exclude Examples to Skip Packages for Linux Yum Update (How to Yum Exclude Kernel Updates)](http://www.thegeekstuff.com/2014/11/yum-exclude-examples/)
+LaTeX необходим R для сборки документации, как минимум. Пытаемся поставить без него командой `yum --skip-broken -x 'tex*' install R`
+!!!!!
+- [When removing Texlive, it also removes R. How to stop that?](https://www.centos.org/forums/viewtopic.php?t=57885)
+- [How to remove everything related to TeX Live for fresh install on Ubuntu?](http://tex.stackexchange.com/questions/95483/how-to-remove-everything-related-to-tex-live-for-fresh-install-on-ubuntu)
