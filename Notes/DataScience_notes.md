@@ -6,6 +6,120 @@
 
 - [Managing and monitoring performance in SDN / NFV](https://www.virtualizationpractice.com/managing-monitoring-performance-sdn-nfv-32088/)
 
+# 24.03.2017
+## R
+- [installr: Using R to Install Stuff (Such As: R, 'Rtools', 'RStudio', 'Git', and More!)](https://cran.r-project.org/web/packages/installr/index.html)
+
+# 23.03.2017
+## R
+- COOL! COOL! [Exploratory.io](https://exploratory.io/). With a simple UI experience and the depth of R's analytics power, you can interact and understand ANY data at the speed of your thought. Only tool you need for data transformation, visualization, and advanced analytics.
+	- COOL! [Why Factor is one of the most amazing things in R & forcats helps you realize it](https://blog.exploratory.io/why-factor-is-one-of-the-most-amazing-things-in-r-e967fe27d292)
+	- [Filter with Date data](https://blog.exploratory.io/filter-with-date-function-ce8e84be680)
+	- [Introducing Exploratory Desktop — UI for R](https://blog.exploratory.io/introducing-exploratory-desktop-ui-for-r-895d94ef3b7b)
+- [Example of stringdist_inner_join: Correcting misspellings against a dictionary](https://cran.r-project.org/web/packages/fuzzyjoin/vignettes/stringdist_join.html)
+
+
+# 22.03.2017
+## R -- подготовка к пилоту отчетности
+- [efficiently generate a random sample of times and dates between two dates](http://stackoverflow.com/questions/14720983/efficiently-generate-a-random-sample-of-times-and-dates-between-two-dates)
+- [Column widths in renderDataTable of a shiny app without stretching](http://stackoverflow.com/questions/27569025/column-widths-in-renderdatatable-of-a-shiny-app-without-stretching). I would like to get a DataTable (with all its ranking, search and page features) that does not stretch fully across the page, and results in large amounts of white space in each column...
+- [Controlling table width in Shiny dataTableOutput](http://stackoverflow.com/questions/32149487/controlling-table-width-in-shiny-datatableoutput)
+- [DataTables has a large number of initialization options](https://rstudio.github.io/DT/options.html), which make it very flexible to customize the table. You can write these options in a list in R, and datatable() will automatically convert them to JSON as needed by DataTables.
+- [HTML font-size property](https://www.w3schools.com/cssref/pr_font_font-size.asp)
+- [Shiny R aligning buttons](http://stackoverflow.com/questions/28749693/shiny-r-aligning-buttons)
+- [Right-align elements in Shiny mainPanel](http://stackoverflow.com/questions/25387844/right-align-elements-in-shiny-mainpanel/25390164#25390164)
+- [shiny reactive when a tab panel is selected](https://groups.google.com/forum/#!topic/shiny-discuss/Zp7s7zZjaqs)
+- [ggplot2 axis scales and transformations](http://www.sthda.com/english/wiki/ggplot2-axis-scales-and-transformations)
+- [R: how to clear all warnings](http://stackoverflow.com/questions/5725106/r-how-to-clear-all-warnings)
+    Try `assign("last.warning", NULL, envir = baseenv())`
+- [DownloadHandler function in R package shiny does not produce a csv file for downloading](http://stackoverflow.com/questions/41337580/downloadhandler-function-in-r-package-shiny-does-not-produce-a-csv-file-for-down). 
+Ответ простой: `View your app in a browser, not from RStudio's viewer, if you're using that.`, See [Shiny app: downloadHandler does not produce a file](http://stackoverflow.com/questions/25984138/shiny-app-downloadhandler-does-not-produce-a-file?rq=1)
+- [Get current time including seconds from Sys.Date() in R](http://stackoverflow.com/questions/8538038/get-current-time-including-seconds-from-sys-date-in-r)
+- Shiny text output
+	- [how to insert new line in R shiny string](http://stackoverflow.com/questions/26368192/how-to-insert-new-line-in-r-shiny-string)
+	- [Outputting multiple lines of text with renderText() in R shiny](http://stackoverflow.com/questions/23233497/outputting-multiple-lines-of-text-with-rendertext-in-r-shiny)
+	- [Make bold text in HTML output R shiny](http://stackoverflow.com/questions/33392784/make-bold-text-in-html-output-r-shiny)
+- [ShinyJS github](https://github.com/daattali/shinyjs)
+- [change both legend titles in a ggplot with two legends](http://stackoverflow.com/questions/6910988/change-both-legend-titles-in-a-ggplot-with-two-legends)
+- [Adding a column of means by group to original data](http://stackoverflow.com/questions/7976001/adding-a-column-of-means-by-group-to-original-data). см. __1. with the dplyr package__
+- Ручная группировка линий по категориям. [ggplot2. Aesthetics: group](http://docs.ggplot2.org/current/aes_group_order.html). The group aesthetic maps a different line for each subject
+`h + geom_line(aes(group = Subject))`. А также ['Adding a column of means by group to original data'](http://stackoverflow.com/questions/7976001/adding-a-column-of-means-by-group-to-original-data)
+- COOL! [How do I show the y value on tooltip while hover in ggplot2](http://stackoverflow.com/questions/38917101/how-do-i-show-the-y-value-on-tooltip-while-hover-in-ggplot2)
+	- COOL!!! [Custom interactive CSS/HTML tooltips with ggplot, shiny and R (ggvis like).](https://gitlab.com/snippets/16220)
+
+## R
+- [Moving averages are very helpful for smoothing time series](https://edwinth.github.io/blog/padr-examples/). It is often a better indication of the underlying trend than the raw data. I recently learned about the RcppRoll package, when I was browsing through R for Data Science. This is a nice package by Kevin Ushey, that makes it terribly easy to calculate rolling stats on a vector. Here we want the moving average of the daily count of each of the events.
+- [anytime 0.2.2](http://dirk.eddelbuettel.com/blog/2017/03/21/#anytime_0.2.2). anytime is a very focused package aiming to do just one thing really well: to convert anything in integer, numeric, character, factor, ordered, ... format to either POSIXct or Date objects -- and to do so without requiring a format string. See the anytime page, or the GitHub README.md for a few examples.
+
+## DataViz
+- [5 Reasons why Power BI is taking over Tableau as the best BI Tool](https://www.linkedin.com/pulse/5-reasons-why-power-bi-taking-over-tableau-best-tool-tacoronte). Published on May 17, 2016
+- [Tableau vs. QlikView vs. Microsoft Power BI](https://selecthub.com/business-intelligence/tableau-vs-qlikview-vs-microsoft-power-bi/). January 16, 2017
+- [Compare Tableau to Power BI. 8 Ways Power BI Falls Short](https://www.tableau.com/compare-tableau-power-bi)
+- [Tableau hits Power Bi as 'falling short'; Microsoft fires back](http://www.computerworld.com/article/3115027/data-analytics/tableau-hits-power-bi-as-falling-short-microsoft-fires-back.html)
+
+# 21.03.2017
+## Shiny
+- [Progress Bar Example](http://shiny.rstudio.com/gallery/progress-bar-example.html)
+- [Plot Interaction Advanced](http://shiny.rstudio.com/gallery/plot-interaction-advanced.html)
+- [d3heatmap example]()http://rpubs.com/jcheng/nba1) by Joe Cheng
+- COOL! [Shiny Web Analytics with R](http://analyticsdemystified.com/general/shiny-web-analytics-r)
+
+
+## Common
+"No matter how complex and polished the individual operations are, it is often the quality of the glue that most directly determines the power of the system." — Hal Abelson
+Ссылки:
+- [The tidy tools manifesto](https://mran.microsoft.com/web/packages/tidyverse/vignettes/manifesto.html) by Hadley Wickham
+- [Daniel P. Friedman - Essentials of Programming Languages, 3rd ed. (2008)](https://karczmarczuk.users.greyc.fr/TEACH/Doc/EssProgLan.pdf). Foreword, page X.
+- [Data Science in the Tidyverse](https://www.rstudio.com/resources/videos/data-science-in-the-tidyverse/) by Hadley Wickham
+
+## R
+- [Automatically scale font size (etc.) of ggplot2 inside an Rmarkdown document](http://stackoverflow.com/questions/28835491/automatically-scale-font-size-etc-of-ggplot2-inside-an-rmarkdown-document)
+- [Scale and size of plot in RStudio shiny](http://stackoverflow.com/questions/17838709/scale-and-size-of-plot-in-rstudio-shiny)
+- [Learn about your user with session$clientData](https://shiny.rstudio.com/articles/client-data.html)
+- COOL! [The ggiraph package let R users to make ggplot interactive. The package is an htmlwidget.](https://davidgohel.github.io/ggiraph/articles/an_introduction.html)
+- ggplot2 themes. ggplot кроме background генерит белые поля в за пределами графика при использовании shiny.
+	- [ggplot2. part of the tidyverse](http://ggplot2.tidyverse.org/reference/theme.html). Modify components of a theme
+	- [hrbrmstr/hrbrthemes](https://github.com/hrbrmstr/hrbrthemes). Opinionated, typographic-centric ggplot2 themes and theme components https://hrbrmstr.github.io/hrbrthemes/
+	- [How do I change the background color of a plot made with ggplot2](http://stackoverflow.com/questions/6736378/how-do-i-change-the-background-color-of-a-plot-made-with-ggplot2)
+	- [ggplot2 themes](http://docs.ggplot2.org/dev/vignettes/themes.html)
+	- [The ggthemr package – Theme and colour your ggplot figures](http://www.shanelynn.ie/themes-and-colours-for-r-ggplots-with-ggthemr/)
+	- [How to make graphics with transparent background in R using ggplot2?](http://stackoverflow.com/questions/7455046/how-to-make-graphics-with-transparent-background-in-r-using-ggplot2)
+	- [R Shiny web, transparent backgrounds of plots when using ggplots](https://groups.google.com/forum/#!topic/shiny-discuss/fGUYvPYoiPE)
+Вполне возможно, что это связано не с ggplot, а с grid.arrange:
+	- [Background of grid.arrange](http://stackoverflow.com/questions/34755362/background-of-grid-arrange)
+	- [change the background color of grid.arrange output](http://stackoverflow.com/questions/13691415/change-the-background-color-of-grid-arrange-output)
+Вот оно, РЕШЕНИЕ:
+- [Render images in a Shiny app](https://shiny.rstudio.com/articles/images.html)
+- [renderPlot should have option to control transparency #178. Closed](https://github.com/rstudio/shiny/issues/178)
+**`renderPlot({...}, bg="transparent")`**
+- [R Shiny: Removing ggplot2 background to make it transparent](http://www.anhuiyouxi.com/r-shiny-removing-ggplot2-background-to-make-it-transparent/). То же самое!
+	
+- COOL! [Data validation with the assertr package](http://www.onthelambda.com/2017/03/20/data-validation-with-the-assertr-package/). No matter how new and fancy your ML algorithm is, it’s success is predicated upon a properly sanitized dataset. If you are using bad data, your approach will fail—either flagrantly (best case), or unnoticeably (considerably more probable and considerably more pernicious).
+- [Is it possible to use RevoScaleR package in Power BI?](https://tomaztsql.wordpress.com/2017/03/20/is-it-possible-to-use-revoscaler-package-in-power-bi/)
+
+# 20.03.2017
+## R
+- [Review the RStudio Connect Release Notes](http://docs.rstudio.com/connect/news)
+- [Review the RStudio Connect admin guide](http://docs.rstudio.com/connect/admin/)
+- [RStudio Connect: Admin Guide (PDF)](docs.rstudio.com/connect/admin/index.pdf)
+
+- [Crime Analysis with Shiny & R](http://www.treselle.com/blog/crime-analysis-with-shiny-r/)
+- [How Do You Discover R Packages?](http://juliasilge.com/blog/Package-Search/)
+- [Exploring 2017 Retail Store Closings with R](https://rud.is/b/2017/03/19/exploring-2017-retail-store-closings-with-r/)
+- padr
+	- COOL! [Introducing padr](https://edwinth.github.io/blog/padr-intro/)
+	- COOL! [Preparing Datetime Data for Analysis with padr and dplyr](https://edwinth.github.io/blog/padr-examples/)
+
+- [Safari Web Content Guide. Configuring the Viewport](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html)
+	- [IPad Scroll Issues with Fixed Content](https://weblog.west-wind.com/posts/2015/jun/05/ipad-scroll-issues-with-fixed-content)
+	- [My webpage won't let me scroll?](http://stackoverflow.com/questions/9406693/my-webpage-wont-let-me-scroll)
+	- [Javascript Beautifier](http://www.danstools.com/javascript-beautify/)
+	- [{Solved} Problem with fluid layout and position fixed](https://css-tricks.com/forums/topic/problem-with-fluid-layout-and-position-fixed/)
+	- [Мобильные устройства, position: fixed; и во что это выливается](https://habrahabr.ru/post/146049/)
+	- [Top Five CSS Customizations for R Presentations](https://rstudio-pubs-static.s3.amazonaws.com/27777_55697c3a476640caa0ad2099fe914ae5.html#/) by Andy Lyons, September, 2014. [Source, Customizing R Presentations with CSS](https://github.com/ajlyons/rpres_css)
+	- [Issues with position fixed & scrolling on iOS(edit)](https://remysharp.com/2012/05/24/issues-with-position-fixed-scrolling-on-ios/)
+- [rlang](https://github.com/hadley/rlang). The rlang package provides tools to work with expressions and calls in R. It is a fork of lazyeval that is larger in scope than just non-standard evaluation.
+
 # 17.03.2017
 ## R
 - [Knitr Chunk options and package options](https://yihui.name/knitr/options/)
@@ -13,12 +127,15 @@
 - [How to draw lines outside of plot area in ggplot2?](http://stackoverflow.com/questions/10525957/how-to-draw-lines-outside-of-plot-area-in-ggplot2)
 - [Everything you always wanted to know about using ggplot2 from F# (but were afraid to ask)](http://evelinag.com/blog/2015/12-03-using-ggplot2-from-f/)
 - COOL! ggplot Диагностика графических объектов: `library(gtable) gtable_show_layout(ggplotGrob(gp2))`
+- [Add ggplot to a LaTeX document](http://techxhum.dk/ggplot-latex-via-tikz/)
+- [Data Science Job Report 2017: R Passes SAS, But Python Leaves Them Both Behind](http://r4stats.com/2017/02/28/r-passes-sas/)
 
 # 16.03.2017
 ## R
 - [Adding figure labels (A, B, C, …) in the top left corner of the plotting region](https://logfc.wordpress.com/2017/03/15/adding-figure-labels-a-b-c-in-the-top-left-corner-of-the-plotting-region/)
 - [Why I love R Notebooks](https://www.rstudio.com/rviews/2017/03/15/why-i-love-r-notebooks/)
 - [Improved Python-style Logging in R](http://mazamascience.com/WorkingWithData/?p=1759)
+- [FrissAnalytics/shinyJsTutorials](https://github.com/FrissAnalytics/shinyJsTutorials). tutorials materials on R/Shiny bindings to popular javascript libraries
 
 ## R решаем задачку пилота
 - Загрузка excel файла на shinyServer
@@ -39,10 +156,13 @@
 - [flexdashboard: Easy interactive dashboards for R](http://rmarkdown.rstudio.com/flexdashboard/)
 	- [flexdashboard examples](http://rmarkdown.rstudio.com/flexdashboard/examples.html)
 - [The New Zealand Tourism Dashboard is a one-stop shop for all information about tourism. It brings together a range of tourism datasets produced by MBIE and Statistics New Zealand into one easy-to-use tool. Information is presented using dynamic graphs and data tables.](https://mbienz.shinyapps.io/tourism_dashboard_prod/)
+- [College Scorecard](https://beta.rstudioconnect.com/jcheng/scorecard-app/). A Shiny demo app by RStudio
 - [FRISS demo dashboard](https://js-tutorial.shinyapps.io/dashboardApp/)
 - [Customizable charts: Alaska communities, daily precipitation](https://uasnap.shinyapps.io/ak_daily_precipitation/)
 - [Community Charts v4 Lite](https://uasnap.shinyapps.io/cc4liteFinal/)
 - [Shiny gallery](http://shiny.rstudio.com/gallery/)
+- [RStudio Connect upgrading](http://docs.rstudio.com/connect/admin/server-management.html#upgrading). The new version of RStudio Connect will install on top of an earlier installation. Existing configuration settings are respected. During installation the RStudio Connect service is restarted. Total downtime is less than 10 minutes.
+- [Progress Bar Example](http://shiny.rstudio.com/gallery/progress-bar-example.html)
 
 
 
@@ -60,6 +180,8 @@ It is very simple: DO NOT USE `\bf` IN MODERN LaTeX DOCUMENTS! It is deprecated.
 ## Shiny
 - [R Shiny v Tableau: Dawn of Graphics](https://www.linkedin.com/pulse/r-shiny-v-tableau-dawn-graphics-anand-gupta)
 - COOL! [4 TRICKS FOR WORKING WITH R, LEAFLET AND SHINY](http://www.r-graph-gallery.com/2017/03/14/4-tricks-for-working-with-r-leaflet-and-shiny/)
+- [Tutorial: creating webapps with R using Shiny](http://stcorp.nl/R_course/tutorial_shiny.html) by Paul Hiemstra (S&T)
+]
 
 
 ## R
@@ -285,7 +407,6 @@ dplyr::do() will compute just about anything and is conceived to use with group_
 	- [dplyr do: Some Tips for Using and Programming](http://www.milanor.net/blog/dplyr-do-tips-for-using-and-programming/)
 	- [dplyr: How to apply do() on result of group_by?](http://stackoverflow.com/questions/22182442/dplyr-how-to-apply-do-on-result-of-group-by)
 - [Get weekdays in English in R](http://stackoverflow.com/questions/17031002/get-weekdays-in-english-in-r)
-- [Filter with Date data](https://blog.exploratory.io/filter-with-date-function-ce8e84be680#.d4m4p87yc)
 - [Creating factor variables 'weekend' and 'weekday' from date](http://stackoverflow.com/questions/28893193/creating-factor-variables-weekend-and-weekday-from-date)
 - ggplot2
 	- [scale_fill_brewer problem with continuous data](http://docs.ggplot2.org/current/scale_brewer.html). Use `scale_fill_distiller`
@@ -618,8 +739,8 @@ http://r-pkgs.had.co.nz/package.html
 - [Manage paths when deploying R Shiny?](http://stackoverflow.com/questions/30160334/manage-paths-when-deploying-r-shiny)
 - [r shiny server is running, but the app is not workinпg](http://stackoverflow.com/questions/37022020/r-shiny-server-is-running-but-the-app-is-not-working)
 - [Modularizing Shiny app code](https://shiny.rstudio.com/articles/modules.html)
-- Hieght conroll in Shiny
-	- [Control the height in fluidRow in R shiny](http://stackoverflow.com/questions/25340847/control-the-height-in-fluidrow-in-r-shiny). HTML +CSS
+- Height conrol in Shiny
+	- [Control the height in fluidRow in R shiny](http://stackoverflow.com/questions/25340847/control-the-height-in-fluidrow-in-r-shiny). HTML+CSS. Тут как раз цветные бэкграунды у блоков fluidRow.
 	- [Create a page that fills the window](https://shiny.rstudio.com/reference/shiny/latest/fillPage.html). Note that `fillPage(plotOutput("plot"))` will not cause the plot to fill the page. Like most Shiny output widgets, plotOutput's default height is a fixed number of pixels. You must explicitly set height = "100%" if you want a plot (or htmlwidget, say) to fill its container.
 	- [Plotly & Shiny, reactive height of plots](https://community.plot.ly/t/plotly-shiny-reactive-height-of-plots/1503)
 - [R Shiny: Tooltip in ggplot](http://stackoverflow.com/questions/38992270/r-shiny-tooltip-in-ggplot)
@@ -3247,7 +3368,7 @@ scale_fill_distiller <- function(..., type = "seq", palette = 1, direction = -1,
 	- [Use R scripts and data](http://shiny.rstudio.com/tutorial/lesson5/). См. пункт "Execution". Здесь как раз красивые картинки.
 	- [Shiny scoping rules - where to load libraries in modular architecture](http://stackoverflow.com/questions/35915574/shiny-scoping-rules-where-to-load-libraries-in-modular-architecture)
 - [Using DT in Shiny](https://rstudio.github.io/DT/shiny.html)
-- [Control the height in fluidRow in R shiny](http://stackoverflow.com/questions/25340847/control-the-height-in-fluidrow-in-r-shiny). HTML +CSS
+- [Control the height in fluidRow in R shiny](http://stackoverflow.com/questions/25340847/control-the-height-in-fluidrow-in-r-shiny). HTML+CSS. Тут как раз цветные бэкграунды у блоков fluidRow.
 
 # 26.04.2016
 ## General
