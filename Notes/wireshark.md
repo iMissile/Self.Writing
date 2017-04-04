@@ -16,6 +16,7 @@
 	- [How to use Win10Pcap](http://www.win10pcap.org/howto/). Simply install Win10Pcap on your Windows PC, either before or after your favorited WinPcap-compatible applications (e.g. Wireshark).
 - [libtins - packet crafting and sniffing library](http://libtins.github.io/)
 - [15 Best Free Packet Crafting Tools](http://resources.infosecinstitute.com/15-best-free-packet-crafting-tools/). POSTED IN GENERAL SECURITY, HACKING, PENETRATION TESTING ON JANUARY 4, 2017
+- [Dev Dungeon. Packet Capture, Injection, and Analysis with Gopacket](http://devdungeon.com/content/packet-capture-injection-and-analysis-gopacket)
 
 # APM
 - [AppDynamics vs Dynatrace: Battle of the Enterprise Monitoring Giants](http://blog.takipi.com/appdynamics-vs-dynatrace-battle-of-the-enterprise-monitoring-giants/)

@@ -6,9 +6,60 @@
 
 - [Managing and monitoring performance in SDN / NFV](https://www.virtualizationpractice.com/managing-monitoring-performance-sdn-nfv-32088/)
 
+
+
+# 04.04.2017
+## DS
+- [Why do so many statisticians not want to become a data scientist and why are they not interested in Big Data?](https://www.quora.com/Why-do-so-many-statisticians-not-want-to-become-a-data-scientist-and-why-are-they-not-interested-in-Big-Data)
+- [The Origins of ‘Big Data': An Etymological Detective Story](https://bits.blogs.nytimes.com/2013/02/01/the-origins-of-big-data-an-etymological-detective-story/?_r=1)
+
+## R
+- RStudio Support. [iOS connection error: "http: proxy error: net/http: request canceled"](https://support.rstudio.com/hc/en-us/requests/20514)
+- [R.NET documentation -- user version](http://jmp75.github.io/rdotnet/index.html)
+- [Change path.expand location (Win 7)](http://stackoverflow.com/questions/11004531/change-path-expand-location-win-7)
+	- [setting the home directory in windows R {duplicate}](http://stackoverflow.com/questions/13016907/setting-the-home-directory-in-windows-r)
+
+
+# 03.04.2017
+## Yandex
+- [TABIX](https://tabix.io/)  IMPLEMENTS A GRAPHICAL WEB INTERFACE FOR CLICKHOUSE THERE ARE OPEN SOURCE PROJECT
+	- [smi2/clickhouse-frontend](https://github.com/smi2/clickhouse-frontend) Project rename TABIX, this repo depreciation see https://tabix.io/doc/ https://github.com/smi2/tabix.ui https://tabix.io
+## R
+- [Dealing with unbalanced data in machine learning](https://shiring.github.io/machine_learning/2017/04/02/unbalanced)
+- [R⁶ — Snow Day Facets](https://rud.is/b/2017/04/01/r%e2%81%b4-snow-day-facets/)
+- [All-in on R⁶ : Progress {bars} on first post](https://rud.is/b/2017/03/27/all-in-on-r%e2%81%b4-progress-bars-on-first-post/). 
+Hi Bob, that’s a really nice and flexible way to create a progress bar but I’d like to pick your brain about progress bars. Do you see any obvious advantages of `progress_estimated{dplyr}` over `pbapply`?
+I have been using the pbapply library to create progress bars. In your example it would be. `pbsapply(letters, arduouslylongnchar)`, or `pblapply(letters, arduouslylongnchar)` depending on the desired output format.
+- COOL! [ggedit 0.2.0 is now on CRAN](http://r-posts.com/ggedit-0-2-0-is-now-on-cran/). ggedit is an R package that is used to facilitate ggplot formatting. With ggedit, R users of all experience levels can easily move from creating ggplots to refining aesthetic details, all while maintaining portability for further reproducible research and collaboration.
+- [Using R: Don’t save your workspace](https://martinsbioblogg.wordpress.com/2017/04/02/using-r-dont-save-your-workspace/). When you exit an R session, you’re faced with the question of whether or not to save your workspace. You should almost never answer yes. Saving your workspace creates an image of your current variables and functions, and saves them to a file called ”.RData”. When you re-open R from that working directory, the workspace will be loaded, and all these things will be available to you again. But you don’t want that, so don’t save your workspace
+	- [Working Directories and Workspaces](https://support.rstudio.com/hc/en-us/articles/200711843-Working-Directories-and-Workspaces). `Tools -> Global Options... -> R General`. Ставим Save workspace to .RData on exit -> Never.	
+
+
+# 31.03.2017
+## R
+- [Natural Language Processing on 40 languages with the Ripple Down Rules-based Part-Of-Speech Tagger](http://www.bnosac.be/index.php/blog/65-natural-language-processing-on-40-languages-with-the-ripple-down-rules-based-part-of-speech-tagger).  Comes in RDRPOSTagger which BNOSAC released at https://github.com/bnosac/RDRPOSTagger.. 
+UniversalPOS annotation for languages: Ancient_Greek, Ancient_Greek-PROIEL, Arabic, Basque, Bulgarian, Catalan, Chinese, Croatian, Czech, Czech-CAC, Czech-CLTT, Danish, Dutch, Dutch-LassySmall, English, English-LinES, Estonian, Finnish, Finnish-FTB, French, Galician, German, Gothic, Greek, Hebrew, Hindi, Hungarian, Indonesian, Irish, Italian, Kazakh, Latin, Latin-ITTB, Latin-PROIEL, Latvian, Norwegian, Old_Church_Slavonic, Persian, Polish, Portuguese, Portuguese-BR, Romanian, Russian-SynTagRus, Slovenian, Slovenian-SST, Spanish, Spanish-AnCora, Swedish, Swedish-LinES, Tamil, Turkish.
+- [Manipulating files with non-English names in R](http://stackoverflow.com/questions/24354375/manipulating-files-with-non-english-names-in-r). ,Проблема со считыванием имен файлов.... Есть ощущение, что где-то идет unicode преобразование.
+- [Reading multiple files into R - Best practice {closed}](http://stackoverflow.com/questions/32888757/reading-multiple-files-into-r-best-practice/32888918)
+- [Negative look-ahead assertion in list.files in R](http://stackoverflow.com/questions/30535960/negative-look-ahead-assertion-in-list-files-in-r)
+- [Coordinatized Data: A Fluid Data Specification](http://www.win-vector.com/blog/2017/03/coordinatized-data-a-fluid-data-specification/)
+
+# 29.03.2017
+## R
+- [Econometrics and Free Software Blog](http://www.brodrigues.co/blog)
+	- [Lesser known purrr tricks](http://www.brodrigues.co/blog/2017-03-24-lesser_known_purrr/)
+	- [Lesser known dplyr tricks](http://www.brodrigues.co/blog/2017-02-17-lesser_known_tricks/)
+	- [Merge a list of datasets together](http://www.brodrigues.co/blog/2016-07-30-merge-a-list-of-datasets-together/)
+- COOL! [UK government using R to modernize reporting of official statistics](http://blog.revolutionanalytics.com/2017/03/uk-statistics.html)
+	- [Data at GDS (Government Digital Service). Reproducible Analytical Pipeline](https://gdsdata.blog.gov.uk/2017/03/27/reproducible-analytical-pipeline/)
+
 # 24.03.2017
+## Shiny
+- [Shiny Function reference version 1.0.0](http://shiny.rstudio.com/reference/shiny/latest/)
+- [Forecasting: principles and practice](https://www.otexts.org/book/fpp)
 ## R
 - [installr: Using R to Install Stuff (Such As: R, 'Rtools', 'RStudio', 'Git', and More!)](https://cran.r-project.org/web/packages/installr/index.html)
+
 
 # 23.03.2017
 ## R
@@ -16,6 +67,13 @@
 	- COOL! [Why Factor is one of the most amazing things in R & forcats helps you realize it](https://blog.exploratory.io/why-factor-is-one-of-the-most-amazing-things-in-r-e967fe27d292)
 	- [Filter with Date data](https://blog.exploratory.io/filter-with-date-function-ce8e84be680)
 	- [Introducing Exploratory Desktop — UI for R](https://blog.exploratory.io/introducing-exploratory-desktop-ui-for-r-895d94ef3b7b)
+- Не получалось запустить на ноутбуке. Ошибка и решение описаны здесь: [It doesn’t even start on Windows 10](https://community.exploratory.io/t/it-doesnt-even-start-on-windows-10/268).
+`i finally found the issue : for some obscure reason, important variables had disappeared from my PATH. Cmd.exe was no longer recognized. I fixed this by adding this to the PATH :
+% SystemRoot% \ system32;% SystemRoot%;% SystemRoot% \ System32 \ Wbem;% SYSTEMROOT% \ System32 \ WindowsPowerShell \ v1.0 \`
+
+Мне помогло добавление в локальный PATH следующих записей:
+`set PATH=%USERPROFILE%\.exploratory\R\3.3\Rserve\libs\x64;C:\Program Files\R\R-3.3.3\bin\x64;%SystemRoot%\System32`
+
 - [Example of stringdist_inner_join: Correcting misspellings against a dictionary](https://cran.r-project.org/web/packages/fuzzyjoin/vignettes/stringdist_join.html)
 
 
@@ -56,6 +114,7 @@
 - [Tableau vs. QlikView vs. Microsoft Power BI](https://selecthub.com/business-intelligence/tableau-vs-qlikview-vs-microsoft-power-bi/). January 16, 2017
 - [Compare Tableau to Power BI. 8 Ways Power BI Falls Short](https://www.tableau.com/compare-tableau-power-bi)
 - [Tableau hits Power Bi as 'falling short'; Microsoft fires back](http://www.computerworld.com/article/3115027/data-analytics/tableau-hits-power-bi-as-falling-short-microsoft-fires-back.html)
+- [Self-service BI and analytics tools face evolving set of challenges](http://searchbusinessanalytics.techtarget.com/news/450415724/Self-service-BI-and-analytics-tools-face-evolving-set-of-challenges). "Tableau is good on the graphical perspective, but it didn't cover the needs we had," Hensley said. "If you need data access, that's not the tool you go with."
 
 # 21.03.2017
 ## Shiny
@@ -155,6 +214,8 @@
 - [ggplot2 extensions - gallery. 28 registered extensions available to explore](http://www.ggplot2-exts.org/gallery/)
 - [flexdashboard: Easy interactive dashboards for R](http://rmarkdown.rstudio.com/flexdashboard/)
 	- [flexdashboard examples](http://rmarkdown.rstudio.com/flexdashboard/examples.html)
+- [UK government using R to modernize reporting of official statistics](http://blog.revolutionanalytics.com/2017/03/uk-statistics.html)
+	- [Data at GDS (Government Digital Service). Reproducible Analytical Pipeline](https://gdsdata.blog.gov.uk/2017/03/27/reproducible-analytical-pipeline/)
 - [The New Zealand Tourism Dashboard is a one-stop shop for all information about tourism. It brings together a range of tourism datasets produced by MBIE and Statistics New Zealand into one easy-to-use tool. Information is presented using dynamic graphs and data tables.](https://mbienz.shinyapps.io/tourism_dashboard_prod/)
 - [College Scorecard](https://beta.rstudioconnect.com/jcheng/scorecard-app/). A Shiny demo app by RStudio
 - [FRISS demo dashboard](https://js-tutorial.shinyapps.io/dashboardApp/)

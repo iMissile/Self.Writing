@@ -32,7 +32,7 @@
 - [How do I remove a full directory in Linux?](http://www.computerhope.com/issues/ch000798.htm) `rm -rf mydir`
 - [How do I recursively delete directories with wildcard?](http://unix.stackexchange.com/questions/23576/how-do-i-recursively-delete-directories-with-wildcard)
 	- С натяжкой (см. детали выше) `find . -type d -name "00LOCK*" -delete`. Но не удаляет непустые директории.
-	- `find . -type d -name '00LOCK*' -exec rm -r {} +`
+	- `find . -type d -name '00LOCK*' -exec rm -r {} +` (. -- от текущего пользователя, / --от корня)
 
 
 
@@ -567,11 +567,21 @@ git config --global push.default matching
 
 ## Инсталляция RStudio Connect
 - [Страница для загрузки](https://www.rstudio.com/products/connect/download-commercial/) 45-ти дневной демо версии
+`wget https://s3.amazonaws.com/rstudio-connect/centos6.3/x86_64/rstudio-connect-1.4.4.1-16-x86_64.rpm`
+
 - Проверяем созданных пользователей: `cat /etc/passwd`. Детальнее можно поглядеть, например, здесь: [Linux Command: List All Users In The System](https://www.cyberciti.biz/faq/linux-list-users-command/)
 - Запускаем `http://your-connect-server:3939/` и создаем аккаунт! [The first account will be marked as an RStudio Connect administrator.](http://docs.rstudio.com/connect/admin/getting-started.html#installation)
 - Настраиваем почтовый адрес Connect. Секция `SenderEmail`, `vi /etc/rstudio-connect/rstudio-connect.gcfg` и перезапускаем
 `sudo systemctl restart rstudio-connect`, `sudo systemctl status rstudio-connect`
+- Настраиваем параметры отправки почтовых сообщений в консоли в закладке [Email Settings](http://10.0.0.229:3939/connect/#/admin/settings):
+В частности, настройки для отправки через [Yandex.почта](https://yandex.ru/support/mail-new/mail-clients.html#pop3)
+- [Проверяем статус](https://support.rstudio.com/hc/en-us/articles/232221028-How-do-I-renew-my-RStudio-Connect-license-on-the-server-) демо лицензии:
+```
+$ sudo /opt/rstudio-connect/bin/license-manager status
+$ sudo /opt/rstudio-connect/bin/license-manager status-offline
+```
 - Подключаем RStudio IDE для публикации приложений.
+
 
 
 ### Под капотом RStudio Connect
@@ -583,6 +593,41 @@ git config --global push.default matching
 - При попытке отправить отчет по Email (иконка Email Report) выдается ошибка `Error: Internal Server Error [500]`. Статья [How To Fix a 500 Internal Server Error ](https://www.lifewire.com/500-internal-server-error-explained-2622938): *The 500 Internal Server Error is a very general HTTP status code that means something has gone wrong on the website's server, but the server could not be more specific on what the exact problem is*. 
 В конфиге Apache командой `tail -f /var/log/rstudio-connect.access.log` видим такую запись: `[17/Mar/2017:09:55:13 +0300] "POST /__api__/variants/4/sender?email=me HTTP/1.1" 500 0`
 Проблема решилась установкой параметра `Server` в конфигурационном файле RStudio Connect: "The Server.SenderEmail property is the email address from which Connect sends emails. It is important that the sendmail or SMTP configuration RStudio Connect uses be willing and able to send email from this SenderEmail address. Otherwise, Connect will not be able to successfully send email. See Section 2.2.4 for more details about mail sending."
+
+### Обновление RStudio Connect
+- [5.3 Upgrading](http://docs.rstudio.com/connect/admin/server-management.html#upgrading)
+```The RStudio Connect version number is visible on the lefthand navigation pane. The latest version is available on the download page along with release notes.
+
+To upgrade:
+    Download the latest .rpm or .deb file
+    Run the install command:
+    Ubuntu:
+    sudo gdebi <rstudio-connect-version.deb>
+    Red Hat/CentOS:
+    sudo yum install --nogpgcheck <rstudio-connect-version.rpm>
+
+The new version of RStudio Connect will install on top of an earlier installation. Existing configuration settings are respected. During installation the RStudio Connect service is restarted. Total downtime is less than 10 minutes.```
+
+Через удаление: [14 Purging RStudio Connect](http://docs.rstudio.com/connect/admin/purge.html)
+
+После апдейта и Connect и R смотрим лог файл командой `tail -f /var/log/rstudio-connect.log` и видим ошибку:
+`2017/04/03 13:45:34 Unable to locate an R installation: Unable to parse R version: ''`
+Диагностика этой ошибки предлагается в статье ['Rstudio preview 99.1252 can't find R'](https://support.rstudio.com/hc/en-us/community/posts/211204788-Rstudio-preview-99-1252-can-t-find-R):
+Удаление залоченных директорий: `rm -r mydir`
+
+Can you confirm that R does print some output when attempting to call e.g.
+`/tools/bioinfo/app/R-3.2.1/bin/R --slave --vanilla -e "R.home('home')"`
+It seems like R is successfully being discovered, but RStudio is failing to call R and parse the associated version information.
+
+Решение:
+появилась новая надстройка в `/etc/rstudio-connect/rstudio-connect.gcfg` в секции `[Server]`, отвечающая за используемые версии R.
+Детально см. главу [12 R](http://docs.rstudio.com/connect/admin/r.html#r) в руководстве администратора.
+Добавляем сканирование установленных R и перезапускаем Connect.
+```
+[Server]
+RVersionScanning = false
+```
+
 
 # Инсталляция LaTeX
 - Centos 7 latex install

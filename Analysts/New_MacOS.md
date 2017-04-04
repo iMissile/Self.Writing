@@ -116,6 +116,8 @@ TimeMachineEditor is a software for OS X that lets you change the default one-ho
 
 # iOS
 - [Как продлить время автономной работы iPhone с iOS 9](https://www.iphones.ru/iNotes/481843)
+- ["Null" app can't be deleted](https://discussions.apple.com/thread/6861025?start=0&tstart=0)
+- [Erasing All iPhone Skype Data and Chats Permanently](https://www.imyfone.com/ios-data-erase/permanently-erase-all-skype-tracks-on-iphone/)
 
 # Разное
 - [Top 10 Best VPN](http://www.top10bestvpn.com/). Find the Best VPN Service for You. Check out our top VPN services for total privacy, protection and super-fast connections.
