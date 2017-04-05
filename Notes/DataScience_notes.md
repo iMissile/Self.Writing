@@ -9,6 +9,9 @@
 
 
 # 04.04.2017
+## Wolfram
+- [How to work with Interpolating Function?](http://mathematica.stackexchange.com/questions/46138/how-to-work-with-interpolating-function)
+
 ## DS
 - [Why do so many statisticians not want to become a data scientist and why are they not interested in Big Data?](https://www.quora.com/Why-do-so-many-statisticians-not-want-to-become-a-data-scientist-and-why-are-they-not-interested-in-Big-Data)
 - [The Origins of ‘Big Data': An Etymological Detective Story](https://bits.blogs.nytimes.com/2013/02/01/the-origins-of-big-data-an-etymological-detective-story/?_r=1)
@@ -24,6 +27,7 @@
 ## Yandex
 - [TABIX](https://tabix.io/)  IMPLEMENTS A GRAPHICAL WEB INTERFACE FOR CLICKHOUSE THERE ARE OPEN SOURCE PROJECT
 	- [smi2/clickhouse-frontend](https://github.com/smi2/clickhouse-frontend) Project rename TABIX, this repo depreciation see https://tabix.io/doc/ https://github.com/smi2/tabix.ui https://tabix.io
+
 ## R
 - [Dealing with unbalanced data in machine learning](https://shiring.github.io/machine_learning/2017/04/02/unbalanced)
 - [R⁶ — Snow Day Facets](https://rud.is/b/2017/04/01/r%e2%81%b4-snow-day-facets/)
@@ -234,9 +238,11 @@ UniversalPOS annotation for languages: Ancient_Greek, Ancient_Greek-PROIEL, Arab
 - [“Correct” way to bold/italicize text?](http://tex.stackexchange.com/questions/41681/correct-way-to-bold-italicize-text). 
 It is very simple: DO NOT USE `\bf` IN MODERN LaTeX DOCUMENTS! It is deprecated. Use `\bfseries` instead, which will work properly under the New Font Selection Scheme (NFSS) of LaTeX2e.
 - [e^{…} vs \exp(…) in display mode](http://tex.stackexchange.com/questions/254785/e-vs-exp-in-display-mode)
+- [Limits used as exponents — how to write under the limit symbol without using \displaymath?](http://tex.stackexchange.com/questions/36831/limits-used-as-exponents-how-to-write-under-the-limit-symbol-without-using-d)
 - [How to break a long equation? {duplicate}](http://tex.stackexchange.com/questions/8936/how-to-break-a-long-equation)
 - [How do I get normal-sized fractions in my matrices?](http://tex.stackexchange.com/questions/67272/how-do-i-get-normal-sized-fractions-in-my-matrices)
 - [Proper display of fractions](http://tex.stackexchange.com/questions/59747/proper-display-of-fractions). FWIW, the nath package correctly scales the delimiters: More interestingly, it automatically changes the display fractions to inline fractions when you used in inline math mode:
+- [detexify: draw a symbol, get the LaTeX command](http://detexify.kirelabs.org/classify.html)
 
 ## Shiny
 - [R Shiny v Tableau: Dawn of Graphics](https://www.linkedin.com/pulse/r-shiny-v-tableau-dawn-graphics-anand-gupta)
