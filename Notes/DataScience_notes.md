@@ -6,11 +6,42 @@
 
 - [Managing and monitoring performance in SDN / NFV](https://www.virtualizationpractice.com/managing-monitoring-performance-sdn-nfv-32088/)
 
-
+# 06.04.2017
+## R
+- [Discrete Event Simulation in R (and, Why R Is Different)](https://matloff.wordpress.com/2017/04/05/discrete-event-simulation-in-r-and-why-r-is-different/)
 
 # 04.04.2017
 ## Wolfram
+- [Wolfram Workbench](http://www.wolfram.com/workbench/)
+- Debugging
+	- [Trace](http://reference.wolfram.com/language/ref/Trace.html)
+	- [Mathematica. Debugging with Breakpoints](http://mathematica.stackexchange.com/questions/31066/debugging-with-breakpoints)
+	- Wolfram Workbench. [Mathematica Development User Guide > Tasks > Debugging](https://reference.wolfram.com/workbench/index.jsp?topic=/com.wolfram.eclipse.help/html/gettingstarted/debugging.html). WORKBENCH!
+- [New in Mathematica 9 › Reliability](https://www.wolfram.com/mathematica/new-in-9/reliability/)
+- [List all User-defined Variables & Functions in a Notebook in Mathematica](http://stackoverflow.com/questions/6166027/list-all-user-defined-variables-functions-in-a-notebook-in-mathematica)
+- COOL [How do I clear all user defined symbols?](http://mathematica.stackexchange.com/questions/850/how-do-i-clear-all-user-defined-symbols)
+```
+eraseAll := ClearAll[Evaluate[$Context<>"*"]];
+eraseAll::usage="eraseAll clears all values, definitions, attributes, messages and defaults associated with symbols in the current context"
+
+removeAll := Remove[Evaluate[$Context<>"*"]];
+removeAll::usage="removeAll removes all symbols in the current context"
+```
+- [How to clear all variables except one?](http://mathematica.stackexchange.com/questions/10970/how-to-clear-all-variables-except-one). Только не `Clean`, а `Remove`
 - [How to work with Interpolating Function?](http://mathematica.stackexchange.com/questions/46138/how-to-work-with-interpolating-function)
+- [Making Definitions for Indexed Objects](http://reference.wolfram.com/language/tutorial/MakingDefinitionsForIndexedObjects.html)
+- Просмотр объявленных переменных: `?vars`, `Length[vars]`
+- [Wolfram Blog: Reliability Mathematics in Mathematica](http://blog.wolfram.com/2013/09/30/reliability-mathematics-in-mathematica/)
+	- Help: ref/ReliabilityDistribution
+- [Combinatorial Functions](https://reference.wolfram.com/language/tutorial/CombinatorialFunctions.html)
+- [LogicalExpand](https://reference.wolfram.com/language/ref/LogicalExpand.html?q=LogicalExpand)
+- Символ распределения переменной по опр. функции распределения. Distributed (\[Distributed])(следует распределению): ref/character/Distributed, ref/Distributed. 
+Ввод с клавиатуры таким образом: `Esc dist Esc`.
+- [Hiding body of a module or function in mathematica](http://mathematica.stackexchange.com/questions/64900/hiding-body-of-a-module-or-function-in-mathematica)
+- [How do I turn off Predictive Interface features?](http://support.wolfram.com/kb/12406). Open the Preferences window by navigating in the menu Edit ► Preferences on Windows and Linux, or Mathematica ► Preferences or Wolfram Desktop ► Preferences on Mac. Отключаем бокс "Show Code captions"
+- [Create a ProbabilityDistribution](http://mathematica.stackexchange.com/questions/63763/create-a-probabilitydistribution)
+Из Помощи в Математике (ref/BinomialDistribution):
+RandomVariate can be used to give one or more machine- or arbitrary-precision (the latter via the WorkingPrecision option) pseudorandom variates from a binomial distribution. Distributed[x,BinomialDistribution[n,p]], written more concisely as x\[Distributed]BinomialDistribution[n,p], can be used to assert that a random variable x is distributed according to a binomial distribution. Such an assertion can then be used in functions such as Probability, NProbability, Expectation, and NExpectation.
 
 ## DS
 - [Why do so many statisticians not want to become a data scientist and why are they not interested in Big Data?](https://www.quora.com/Why-do-so-many-statisticians-not-want-to-become-a-data-scientist-and-why-are-they-not-interested-in-Big-Data)
