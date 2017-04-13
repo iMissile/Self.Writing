@@ -1,3 +1,24 @@
+# Dynatrace Video
+- [Dynatrace AI, Fullstack Monitoring Demo at AWS Sydney](https://www.youtube.com/watch?v=CSf89W2iNJQ). Опубликовано: 11 апр. 2017 г.
+- [Why we love Dynatrace AppMon 7](https://www.youtube.com/watch?v=Jgwb_kmCbrY) Опубликовано: 5 апр. 2017 г.
+
+# Packetbeat
+- [Packetbeat - Lightweight Shipper for Network Data](https://www.elastic.co/products/beats/packetbeat)
+Know what’s going on across your applications by tapping into data traveling over the wire. Packetbeat is a lightweight network packet analyzer that sends data to Logstash or Elasticsearch.
+- [Попробуйте Packetbeat](http://bulimov.ru/it/try-packetbeat/). Вчера в блоге Elasticsearch появилась отличная новость - проект Packetbeat, развиваемый до этого энтузиастами, присоединился к Elastic. Я уже довольно давно слежу за этим проектом, и теперь, когда можно не беспокоиться о его будущем, хочу о нем рассказать. Packetbeat это такой инструмент мониторинга, который работает как анализатор сетевых пакетов, парсит различные протоколы (сейчас поддерживаются HTTP, MySQL, Postgresql, Redis, Thrift-RPC), получает нужные данные, и отсылает их либо напрямую в Elasticsearch, либо в Redis, из которого данные будет забирать Logstash и класть их все в тот же Elasticsearch.
+- [M/Monit 3.7.0](https://mmonit.com/)
+Easy, proactive monitoring of Unix systems, network and cloud services. Conduct automatic maintenance and recovery and execute meaningful causal actions in error situations.
+
+# Moloch
+- [Moloch is a large scale, open source, full packet capturing, indexing, and database system.](http://molo.ch/)
+Moloch is not meant to replace Intrusion Detection Systems (IDS). Moloch augments your current security infrastructure by storing and indexing network traffic in standard PCAP format, while also providing fast indexed access. Moloch is built with an intuitive UI/UX which reduces the analysis time of suspected incidents.
+	- 
+
+# Эксперименты с Wireshark
+- [How to filter by IP address in Wireshark?](http://stackoverflow.com/questions/4043406/how-to-filter-by-ip-address-in-wireshark).
+If you only care about that particular machine's traffic, use a capture filter instead, which you can set under Capture -> Options.
+- [Wireshark Sample Captures](https://wiki.wireshark.org/SampleCaptures)
+
 # SQL
 - [How can I decode SQL Server traffic with wireshark?](http://stackoverflow.com/questions/2023589/how-can-i-decode-sql-server-traffic-with-wireshark)
 - [DRDA: Unraveling the DB2 Decodes](http://thenetworkguy.typepad.com/nau/2009/06/drda-unraveling-the-db2-decodes.html)

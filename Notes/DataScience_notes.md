@@ -5,6 +5,63 @@
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
 - [Managing and monitoring performance in SDN / NFV](https://www.virtualizationpractice.com/managing-monitoring-performance-sdn-nfv-32088/)
+# 13.04.2017
+## R, ts & forecast
+- [transform data frame with missing dates into time series](http://stackoverflow.com/questions/39320870/transform-data-frame-with-missing-dates-into-time-series)
+- [un-log a times series while using the package forecast](http://stackoverflow.com/questions/15673962/un-log-a-times-series-while-using-the-package-forecast)
+- [Adding missing dates to dataframe](http://stackoverflow.com/questions/21008166/adding-missing-dates-to-dataframe)
+```
+library(zoo)
+g <- data.frame(dates=seq(min(data$dates),max(data$dates),1))
+na.locf(merge(g,data,by="dates",all.x=TRUE))
+
+or entirely with zoo:
+
+z <- read.zoo(data)
+gz <- zoo(, seq(min(time(z)), max(time(z)), "day"))  # time grid in zoo
+na.locf(merge(z, gz))
+```
+
+## R
+- [R / tidyr::complete - filling missing values dynamically](http://stackoverflow.com/questions/37704185/r-tidyrcomplete-filling-missing-values-dynamically)
+- [Moving averages are very helpful for smoothing time series](https://edwinth.github.io/blog/padr-examples/). It is often a better indication of the underlying trend than the raw data. I recently learned about the RcppRoll package, when I was browsing through R for Data Science. This is a nice package by Kevin Ushey, that makes it terribly easy to calculate rolling stats on a vector. Here we want the moving average of the daily count of each of the events.
+- COOL! [ggfortify package](https://cran.r-project.org/web/packages/ggfortify/index.html). Unified plotting tools for statistics commonly used, such as GLM, time series, PCA families, clustering and survival analysis. The package offers a single plotting interface for these analysis results and plots in a unified style using 'ggplot2'.
+	- [Plotting ts objects](https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_ts.html)
+- COOL! [Predicting tides in R](https://beckmw.wordpress.com/2017/04/12/predicting-tides-in-r/)
+	- [Fourier Analysis of Ocean Tides III With JAVA animation by Bill Casselman](http://www.ams.org/samplings/feature-column/fcarc-tidesiii3). JAVA simulation of Kelvin's Tide Predicting Machine
+- [forecast v7 and ggplot2 graphics](http://robjhyndman.com/hyndsight/forecast7-ggplot2/). There is also a new `geom_forecast()` function which uses `forecast.ts() to obtain forecasts of the time series passed to `autoplot()`.
+```
+autoplot(mdeaths) + geom_forecast(h=36, level=c(50,80,95))
+```
+	- [geom_forecast in the forecast package](http://stackoverflow.com/questions/36664619/geom-forecast-in-the-forecast-package). Question from `hrbrmstr`.
+- [Forecasting with long seasonal periods](http://robjhyndman.com/hyndsight/longseasonality/). The arima() function will allow a seasonal period up to but in practice will usually run out of memory whenever the seasonal period is more than about 200.
+
+# 12.04.2017
+## R
+- COOL! [Data validation with the assertr package](http://ropensci.org/blog/blog/2017/04/11/assertr)
+- COOL! [Data validation with the assertr package](http://www.onthelambda.com/2017/03/20/data-validation-with-the-assertr-package/). No matter how new and fancy your ML algorithm is, it’s success is predicated upon a properly sanitized dataset. If you are using bad data, your approach will fail—either flagrantly (best case), or unnoticeably (considerably more probable and considerably more pernicious).
+- [Fast data loading from files to R](http://blog.appsilondatascience.com/rstats/2017/04/11/fast-data-load.html)
+- [hadley gist. Benchmark different ways of reading a file](https://gist.github.com/hadley/6353939)
+- [Teaching pivot / un-pivot](http://www.win-vector.com/blog/2017/04/teaching-pivot-un-pivot/)
+- [fastqcr: An R Package Facilitating Quality Controls of Sequencing Data for Large Numbers of Samples](fastqcr: An R Package Facilitating Quality Controls of Sequencing Data for Large Numbers of Samples )
+
+# 11.04.2017
+## R
+- [HOW TO INSTALL THE LATEST VERSION OF R STATISTICS ON YOUR RASPBERRY PI](https://dmwiig.net/2016/11/13/how-to-install-the-latest-version-of-r-statistics-on-your-raspberry-pi/)
+- [Test driving Python integration in R, using the ‘reticulate’ package](https://longhowlam.wordpress.com/2017/04/10/test-driving-python-integration-in-r-using-the-reticulate-package/)
+- COOL! [Shiny server series part 1: setting up](https://www.jasperginn.nl/shiny-server-series-pt1/)
+- [Comparing subreddits, with Latent Semantic Analysis in R](http://blog.revolutionanalytics.com/2017/03/comparing-subreddits.html)
+
+- ggplot geom_bar issues:
+	- [Align bars of histogram centered on labels](http://stackoverflow.com/questions/19989235/align-bars-of-histogram-centered-on-labels)
+	- [bar_plot ggplot: conflict between values on bar and x axis label](http://stackoverflow.com/questions/14908492/bar-plot-ggplot-conflict-between-values-on-bar-and-x-axis-label)
+
+# 10.04.2017
+## R
+- [A PYTHON-LIKE WALK() FUNCTION FOR R](https://matloff.wordpress.com/2017/04/08/a-python-like-walk-function-for-r/)
+- [slickR](http://r-posts.com/slickr/). We are happy to bring the slick JavaScript library to R. It is self-described as “the last carousel you’ll ever need”. This carousel is based on putting the elements of the carousel in a div HTML tag. This makes the carousel very versatile in what can be placed inside. Regular objects that are placed in a carousel can be for example: images, plots, tables, gifs, videos, iframes and even htmlwidgets.
+	- [А здесь крутые и подробные демки на R](https://metrumresearchgroup.github.io/slickR/)
+- [Web Scraping and Applied Clustering Global Happiness and Social Progress Index](https://datascienceplus.com/web-scraping-and-applied-clustering-global-happiness-and-social-progress-index/)
 
 # 06.04.2017
 ## R
@@ -13,6 +70,10 @@
 # 04.04.2017
 ## Wolfram
 - [Wolfram Workbench](http://www.wolfram.com/workbench/)
+- [How to know each variable used how much RAM](http://mathematica.stackexchange.com/questions/70182/how-to-know-each-variable-used-how-much-ram)
+```
+Column@Thread@{Names[$Context<>"*"], ByteCount[#] & /@ ToExpression /@ Names[$Context<>"*"]}
+```
 - Debugging
 	- [Trace](http://reference.wolfram.com/language/ref/Trace.html)
 	- [Mathematica. Debugging with Breakpoints](http://mathematica.stackexchange.com/questions/31066/debugging-with-breakpoints)
@@ -28,6 +89,10 @@ removeAll := Remove[Evaluate[$Context<>"*"]];
 removeAll::usage="removeAll removes all symbols in the current context"
 ```
 - [How to clear all variables except one?](http://mathematica.stackexchange.com/questions/10970/how-to-clear-all-variables-except-one). Только не `Clean`, а `Remove`
+- [Sort data after specific ordering (ascending/descending) in multiple columns](http://mathematica.stackexchange.com/questions/2934/sort-data-after-specific-ordering-ascending-descending-in-multiple-columns)
+```
+
+```
 - [How to work with Interpolating Function?](http://mathematica.stackexchange.com/questions/46138/how-to-work-with-interpolating-function)
 - [Making Definitions for Indexed Objects](http://reference.wolfram.com/language/tutorial/MakingDefinitionsForIndexedObjects.html)
 - Просмотр объявленных переменных: `?vars`, `Length[vars]`
@@ -188,7 +253,7 @@ UniversalPOS annotation for languages: Ancient_Greek, Ancient_Greek-PROIEL, Arab
 **`renderPlot({...}, bg="transparent")`**
 - [R Shiny: Removing ggplot2 background to make it transparent](http://www.anhuiyouxi.com/r-shiny-removing-ggplot2-background-to-make-it-transparent/). То же самое!
 	
-- COOL! [Data validation with the assertr package](http://www.onthelambda.com/2017/03/20/data-validation-with-the-assertr-package/). No matter how new and fancy your ML algorithm is, it’s success is predicated upon a properly sanitized dataset. If you are using bad data, your approach will fail—either flagrantly (best case), or unnoticeably (considerably more probable and considerably more pernicious).
+
 - [Is it possible to use RevoScaleR package in Power BI?](https://tomaztsql.wordpress.com/2017/03/20/is-it-possible-to-use-revoscaler-package-in-power-bi/)
 
 # 20.03.2017
