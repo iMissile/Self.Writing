@@ -688,7 +688,7 @@ yum -y install texlive-collection-latexextra
 [A different idea: Just uninstall all the TeXlive stuff coming from the repositories and install "the real stuff" instead](https://www.centos.org/forums/viewtopic.php?t=52472): https://www.tug.org/texlive/quickinstall.html
 
 - Сносим пакеты, поставленные из репозитория CentOS: `yum remove texlive*`
-- Чтобы не возникала ошибка Perl (`Can't locate Digest/MD5.pm in @INC...`), перед запуском инсталлятора необходимо доставить perl пакеты командой `yum install perl-Tk perl-Digest-MD5`. Детальнее читаем тут: [Error during installation of TeXLive 2012 in Fedora](t)
+- Чтобы не возникала ошибка Perl (`Can't locate Digest/MD5.pm in @INC...`), перед запуском инсталлятора необходимо доставить perl пакеты командой `yum install perl-Tk perl-Digest-MD5`. Детальнее читаем тут: [Error during installation of TeXLive 2012 in Fedora](https://tex.stackexchange.com/questions/100309/error-during-installation-of-texlive-2012-in-fedora)
 
 - Инструкция по сетевой установке [здесь](Installing TeX Live over the Internet).
 Скачиваем [сетевой инсталлятор](http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz)

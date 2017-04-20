@@ -1,8 +1,54 @@
 - [Запчасти к мясорубке Zelmer](http://vaprom.ru/shop/c16.zelmer.htm)
 - [УЗНАТЬ КТО ВАМ ЗВОНИТ!](https://www.neberitrubku.ru/). Вам звонят с незнакомого номера и вы думаете не брать трубку? Найдите этот номер и узнайте, кто пытается вам дозвониться.
 
+- [Клуб любителей аудиокниг. РАДИОПОСТАНОВКИ](http://abook-club.ru/radio/#expand_all)
+- [Коллекция «Старое Радио»](http://mds.altervision.ru/trash/radio/)
+На сайте представлена самая полная в сети коллекция аудиокниг «Модель для сборки» и подборка электронной музыки.
+Аудиокниги можно скачать совершенно бесплатно и без регистрации и слушать онлайн!]
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
+
+# 19.04.2017
+## R & databases
+- [dplyr databases vignette](https://cran.r-project.org/web/packages/dplyr/vignettes/databases.html). The easiest way to experiement with databases using dplyr is to use SQLite. This is because everything you need is already included in the R package. You won’t need to install anything, and you won’t need to deal with the hassle of setting up a database server.
+- [Using dplyr and pool to query a database](https://shiny.rstudio.com/articles/pool-dplyr.html), 23 JUN 2016
+- [Database basics - dplyr and DBI](https://shiny.rstudio.com/articles/overview.html#dplyr-package), 23 JUN 2016
+- [Working with databases in R](https://datascienceplus.com/working-with-databases-in-r/)
+- [RSQLServer](https://github.com/imanuelcostigan/RSQLServer). An R package that provides a SQL Server R Database Interface (DBI), based on the cross-platform jTDS JDBC driver.
+- [Accessing MSSQL Server with R (RSQLServer with dplyr)](http://blog.haunschmid.name/accessing-mssql-server-r-rsqlserver-dplyr/)
+- [Connecting to Compose PostgreSQL](https://www.compose.com/articles/connecting-r-and-compose-postgresql/). RPostgreSQL and RPostgres are two packages that will enable you to connect to PostgreSQL. RPostgreSQL is available on CRAN (Comprehensive R Archive Network) where the majority of R packages are archived.
+- [Using PostgreSQL in R: A quick how-to](http://www.win-vector.com/blog/2016/02/using-postgresql-in-r/)
+
+## R Tabulizer
+- [Release 'open' data from their PDF prisons using tabulizer](http://ropensci.org/blog/blog/2017/04/18/tabulizer) by Thomas J. Leeper, April 18, 2017
+- [The new Tesseract package: High Quality OCR in R](https://ropensci.org/blog/blog/2016/11/16/tesseract) by Jeroen Ooms, November 16, 2016 
+- [When Documents Become Databases – Tabulizer R Wrapper for Tabula PDF Table Extractor](https://blog.ouseful.info/2016/05/02/when-documents-become-databases-tabulizer-r-wrapper-for-tabula-pdf-table-extractor/)
+- [ropenscilabs/tabulizer](https://github.com/ropenscilabs/tabulizer) Bindings for Tabula PDF Table Extractor Library
+tabulizer is not yet on CRAN. To install the latest development version you can:
+```
+if(!require("ghit")){
+    install.packages("ghit")
+}
+# on 64-bit Windows
+ghit::install_github(c("ropenscilabs/tabulizerjars", "ropenscilabs/tabulizer"), INSTALL_opts = "--no-multiarch")
+# elsewhere
+ghit::install_github(c("ropenscilabs/tabulizerjars", "ropenscilabs/tabulizer"))
+```
+
+# 17.04.2017
+## R
+- [Impact of omitted variables on estimating causal effects - simulations](http://ellisp.github.io/blog/2017/04/15/propensity-simulations)
+
+## forecast
+- [ETS() function, how to avoid forecast not in line with historical data?](https://stats.stackexchange.com/questions/146098/ets-function-how-to-avoid-forecast-not-in-line-with-historical-data)
+- [howto. Forecasting time series with R](https://www.dataiku.com/learn/guide/code/r/time_series.html)
+- [R: Insert rows for missing dates/times](http://stackoverflow.com/questions/16787038/r-insert-rows-for-missing-dates-times)
+- [Adding missing rows](http://stackoverflow.com/questions/16742725/adding-missing-rows). See vignette("padr") or this blog post for its working.
+!!! Если y от `geom_ribbon` уходит за границы `ylim`, то она в этой точке не отрисовывается.
+
+# 14.04.2017
+## R
+- [Fuzzy string Matching using fuzzywuzzyR and the reticulate package in R](http://mlampros.github.io/mlampros.github.io/2017/04/13/fuzzywuzzyR_package/)
 
 - [Managing and monitoring performance in SDN / NFV](https://www.virtualizationpractice.com/managing-monitoring-performance-sdn-nfv-32088/)
 # 13.04.2017
@@ -91,7 +137,7 @@ removeAll::usage="removeAll removes all symbols in the current context"
 - [How to clear all variables except one?](http://mathematica.stackexchange.com/questions/10970/how-to-clear-all-variables-except-one). Только не `Clean`, а `Remove`
 - [Sort data after specific ordering (ascending/descending) in multiple columns](http://mathematica.stackexchange.com/questions/2934/sort-data-after-specific-ordering-ascending-descending-in-multiple-columns)
 ```
-
+SortBy[data, {#[[1]],-#[[2]],#[[3]]}&]
 ```
 - [How to work with Interpolating Function?](http://mathematica.stackexchange.com/questions/46138/how-to-work-with-interpolating-function)
 - [Making Definitions for Indexed Objects](http://reference.wolfram.com/language/tutorial/MakingDefinitionsForIndexedObjects.html)
@@ -107,6 +153,10 @@ removeAll::usage="removeAll removes all symbols in the current context"
 - [Create a ProbabilityDistribution](http://mathematica.stackexchange.com/questions/63763/create-a-probabilitydistribution)
 Из Помощи в Математике (ref/BinomialDistribution):
 RandomVariate can be used to give one or more machine- or arbitrary-precision (the latter via the WorkingPrecision option) pseudorandom variates from a binomial distribution. Distributed[x,BinomialDistribution[n,p]], written more concisely as x\[Distributed]BinomialDistribution[n,p], can be used to assert that a random variable x is distributed according to a binomial distribution. Such an assertion can then be used in functions such as Probability, NProbability, Expectation, and NExpectation.
+- NDSolve params [Evaluation problems with NDSolve using the fixed step ExplicitEuler-Method](https://mathematica.stackexchange.com/questions/83749/evaluation-problems-with-ndsolve-using-the-fixed-step-expliciteuler-method)
+	First, you're not using a fixed step method. (An Euler scheme may be applied to any step size and to one that varies.) To get a true fixed step method you have to turn off "DiscontinuityProcessing" when you have a discontinuous ODE; otherwise, NDSolve will try to adapt the steps to account for the discontinuity. The "DiscontinuityProcessing" stage resets the step size when a discontinuity is detected.
+- [NDSolve: methods and step size choosing](https://mathematica.stackexchange.com/questions/26072/ndsolve-methods-and-step-size-choosing)
+- [How can I track the execution time of an evaluating Manipulate cell?](https://mathematica.stackexchange.com/questions/30979/how-can-i-track-the-execution-time-of-an-evaluating-manipulate-cell)
 
 ## DS
 - [Why do so many statisticians not want to become a data scientist and why are they not interested in Big Data?](https://www.quora.com/Why-do-so-many-statisticians-not-want-to-become-a-data-scientist-and-why-are-they-not-interested-in-Big-Data)
@@ -362,7 +412,7 @@ The behavior can be overruled by enclosing the right-hand side in braces:
 	- [Parametric variable names and dplyr](http://www.win-vector.com/blog/2016/12/parametric-variable-names-and-dplyr/)
 	- [How to use a variable in dplyr::filter?](http://stackoverflow.com/questions/34219912/how-to-use-a-variable-in-dplyrfilter)
 - [Practical Data Science with R errata update: Java SQLScrewdriver replaced by R procedures and article](http://www.win-vector.com/blog/2017/03/practical-data-science-with-r-errata-update-java-sqlscrewdriver-replaced-by-r-procedures-and-article/). So: we no longer recommend using H2DB, Java, and SquirreL SQL to load data. Instead we recommend using R, readr, read.table, and dbWriteTable using either PostgreSQL (for a lot of data) or RSQlite (for in-memory practice). Nina Zumel has a very nice free write-up of the replacement screwdriver concept here.
-- COOL! [Making a Case for `case_when`](https://rud.is/b/2017/03/10/making-a-case-for-case_when/)
+- COOL! 	
 	- [What does "blatantly obvious" mean?](https://www.quora.com/What-does-blatantly-obvious-mean). "To me, it means completely obvious, especially to everybody."
 	- Интересное альтернативное решение к конкретно приведенной задаче редукции:
 ```
@@ -1536,18 +1586,7 @@ PLEASE NOTE: Refer to your license terms for Microsoft SQL Server 2016 Enterpris
 - [High Performance CommonMark and Github Markdown Rendering in R](http://ropensci.org/blog/blog/2016/12/02/commonmark)
 - [Be careful evaluating model predictions](http://www.win-vector.com/blog/2016/12/be-careful-evaluating-model-predictions/)
 - [plumber — Convert R Code to a Web API](http://trestletech.com/2015/06/rapier-convert-r-code-to-a-web-api/)
-- [When Documents Become Databases – Tabulizer R Wrapper for Tabula PDF Table Extractor](https://blog.ouseful.info/2016/05/02/when-documents-become-databases-tabulizer-r-wrapper-for-tabula-pdf-table-extractor/)
-- [ropenscilabs/tabulizer](https://github.com/ropenscilabs/tabulizer) Bindings for Tabula PDF Table Extractor Library
-tabulizer is not yet on CRAN. To install the latest development version you can:
-```
-if(!require("ghit")){
-    install.packages("ghit")
-}
-# on 64-bit Windows
-ghit::install_github(c("ropenscilabs/tabulizerjars", "ropenscilabs/tabulizer"), INSTALL_opts = "--no-multiarch")
-# elsewhere
-ghit::install_github(c("ropenscilabs/tabulizerjars", "ropenscilabs/tabulizer"))
-```
+
 
 ## Windows
 - [Chocolatey - Software Management Automation](https://chocolatey.org/). The package manager for Windows

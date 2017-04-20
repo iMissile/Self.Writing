@@ -1,3 +1,13 @@
+# DPDK и пожелания известных лиц
+- [EcoNAT](https://www.rdp.ru/products/econat.html) — ориентированный на операторов продукт, способный решить вопрос нехватки адресов IPv4 при сохранении существующей IPv4 инфраструктуры и в перспективе плавной миграции на IPv6.
+- [DPDK](http://dpdk.org/). DPDK is a set of libraries and drivers for fast packet processing.
+It is designed to run on any processors. The first supported CPU was Intel x86 and it is now extended to IBM POWER and ARM.
+It runs mostly in Linux userland. A FreeBSD port is available for a subset of DPDK features.
+- [Что такое Intel DPDK?](https://sdnblog.ru/what-is-intel-dpdk/)
+- [DPDK Packet Capture (PDUMP)](https://www.napatech.com/dpdk-packet-capture-pdump/)
+- [Data Plane Development Kit (DPDK) Packet Capture Framework](https://software.intel.com/en-us/articles/dpdk-packet-capture-framework)
+- [Positioning PF_RING ZC vs DPDK](http://www.ntop.org/pf_ring/positioning-pf_ring-zc-vs-dpdk/). Posted February 16, 2017
+
 # Dynatrace Video
 - [Dynatrace AI, Fullstack Monitoring Demo at AWS Sydney](https://www.youtube.com/watch?v=CSf89W2iNJQ). Опубликовано: 11 апр. 2017 г.
 - [Why we love Dynatrace AppMon 7](https://www.youtube.com/watch?v=Jgwb_kmCbrY) Опубликовано: 5 апр. 2017 г.
