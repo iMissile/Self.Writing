@@ -6,7 +6,29 @@
 На сайте представлена самая полная в сети коллекция аудиокниг «Модель для сборки» и подборка электронной музыки.
 Аудиокниги можно скачать совершенно бесплатно и без регистрации и слушать онлайн!]
 
+- [blackstarburger](http://blackstarburger.ru/)
+
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
+
+# 21.04.2017
+## Web
+- [Difference between proxy server and reverse proxy server](http://stackoverflow.com/questions/224664/difference-between-proxy-server-and-reverse-proxy-server#)
+- COOL! [HOW TO SECURE ELASTICSEARCH AND KIBANA](https://mapr.com/blog/how-secure-elasticsearch-and-kibana/)
+
+# 20.04.2017
+## R
+- [Local Repository]
+	- [Using miniCRAN to create a local CRAN repository](https://cran.r-project.org/web/packages/miniCRAN/vignettes/miniCRAN-introduction.html)
+	- [How to Set Up a Custom CRAN-like Repository](https://rstudio.github.io/packrat/custom-repos.html)
+Andrie de Vries and Alex Chubaty
+July 12, 2016
+
+- [R for Enterprise: Understanding R’s Startup](https://rviews.rstudio.com/2017/04/19/r-for-enterprise-understanding-r-s-startup/)
+- [readxl 1.0.0](https://blog.rstudio.org/2017/04/19/readxl-1-0-0/)
+	- COOL! [readxl: Sheet Geometry](http://readxl.tidyverse.org/articles/sheet-geometry.html)
+	- COOL! [readxl Workflows](http://readxl.tidyverse.org/articles/articles/readxl-workflows.html)
+	- [range](http://readxl.tidyverse.org/articles/sheet-geometry.html). The range argument is the most flexible way to control geometry and is powered by the [cellranger](https://github.com/rsheets/cellranger#readme) package.
+
 
 # 19.04.2017
 ## R & databases

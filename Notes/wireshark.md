@@ -1,3 +1,7 @@
+# Other Tools
+- [The Scrutinizer System](https://www.plixer.com/products/scrutinizer/)
+Scrutinizer™ is at the foundation of the Plixer incident response and behavior analysis architecture. It is available as a physical or virtual appliance. Scrutinizer performs the collection, threat detection, and reporting of all flow technologies on a single platform. It delivers real-time situational awareness into the applications and their historical behaviors on the network.
+
 # DPDK и пожелания известных лиц
 - [EcoNAT](https://www.rdp.ru/products/econat.html) — ориентированный на операторов продукт, способный решить вопрос нехватки адресов IPv4 при сохранении существующей IPv4 инфраструктуры и в перспективе плавной миграции на IPv6.
 - [DPDK](http://dpdk.org/). DPDK is a set of libraries and drivers for fast packet processing.
