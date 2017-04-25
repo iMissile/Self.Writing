@@ -10,10 +10,54 @@
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 25.04.2017
+## R
+- [R 3.4.0 is released – with new speed upgrades and bug-fixes](https://www.r-statistics.com/2017/04/r-3-4-0-is-released-with-new-speed-upgrades-and-bug-fixes/)
+- [Speed up your R code using a just-in-time (JIT) compiler](https://www.r-statistics.com/2012/04/speed-up-your-r-code-using-a-just-in-time-jit-compiler/)
+- [Shiny - Web Framework for R › Warning in body(fun) : argument is not a function](https://groups.google.com/forum/#!topic/shiny-discuss/2kVPa8jDooI).
+This is a problem that occurs only with R 3.4. Now that CRAN has officially released 3.4 as the new stable version, we're addressing it: [https://github.com/rstudio/shiny/issues/1676](https://github.com/rstudio/shiny/issues/1676). Решение: ставим [dev версию shiny](https://github.com/rstudio/shiny).
+[Fix](https://github.com/dmpe/shiny/commit/b5f6333a7cdd57d08fb677e8d23b4b3f8de86684)
+
+## R Markdown
+- [How to include LaTeX package in R Markdown?](https://tex.stackexchange.com/questions/171711/how-to-include-latex-package-in-r-markdown)
+- [Knitr with R Markdown](http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html). Полезный пункт  **Converting R Markdown to html**:
+	- Via RStudio
+	- Via the command line (or GNU make)
+`R -e "rmarkdown::render('knitr_example.Rmd')"`
+- Помощь по командам, ассоциированных с pandoc: `?rmarkdown::pandoc_available`
+- Проблема с кодировкой pdf файла решается заданием параметра `encoding`:  `R -e "rmarkdown::render('ru-tex-pdf-examples.Rmd', encoding = 'UTF-8')"`
+- Как включить в YAML заголовок r код? Решение вполне простое и элегантное: '`r format(Sys.Date(), "%B %d, %Y")`'. Детали смотрим здесь:
+	- [YAML current date in rmarkdown](http://stackoverflow.com/questions/23449319/yaml-current-date-in-rmarkdown)
+	- [Using R markdown and knitr: Possible to get R objects interpreted in YAML](http://stackoverflow.com/questions/25813420/using-r-markdown-and-knitr-possible-to-get-r-objects-interpreted-in-yaml)
+	- [Inline R code in YAML for rmarkdown doesn't run](http://stackoverflow.com/questions/32637340/inline-r-code-in-yaml-for-rmarkdown-doesnt-run)
+- [Interactive Documents: Advanced Topics. Shiny Reactives](http://rmarkdown.rstudio.com/authoring_shiny_advanced.html)
+- [Using Arial in R figures destined for PLOS ONE](http://www.fromthebottomoftheheap.net/2013/09/09/preparing-figures-for-plos-one-with-r/)
+- [liberation-fonts](https://pagure.io/liberation-fonts). The Liberation Fonts are intended to be replacements for the three most commonly used fonts on Microsoft systems: Times New Roman, Arial, and Courier \ New.
+- Проблема со шрифтами при генерации pdf... [Error in grid.Call(L_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : Polygon edge not found](http://stackoverflow.com/questions/10581440/error-in-grid-calll-textbounds-as-graphicsannotxlabel-xx-xy-polygon)
+	- [RMarkdown PDF Documents](http://rmarkdown.rstudio.com/pdf_document_format.html)
+	- COOL!!!! Для PDF решение кроется в строчке `knitr::opts_chunk$set(dev='cairo_pdf') # решили проблему с генерацией русского текста в графиках`. Но тогда мы получаем проблему с отображением графики в html.
+	- Closed Ticket # 111: [Set knitr figure device `dev` by output type?](https://github.com/rstudio/rmarkdown/issues/111). Seconding this. I'd like to be able to set cairo_pdf for PDF output but svg for HTML outputs, like so:
+```
+output:
+  pdf_document:
+    dev: cairo_pdf
+  html_document:
+    dev: svg
+```
+
+
+# 24.04.2017
+## R
+- [Emails from R](https://aghaynes.wordpress.com/2017/04/21/emails-from-r/). There are a few packages for sending email directly from R, but I work in a place where none of these work due to strict network settings. To at least partially circumvent this, here’s some code to produce a PowerShell script to send email(s) via Outlook. The PowerShell script can then be run either by a shell call (again, not possible in my workplace) or by right clicking the file and selecting run with PowerShell.
+
+## R Shiny
+- [includeText, includeHTML, and includeMarkdown Shiny demo](http://shiny.rstudio.com/gallery/including-html-text-and-markdown-files.html)
+
 # 21.04.2017
 ## Web
 - [Difference between proxy server and reverse proxy server](http://stackoverflow.com/questions/224664/difference-between-proxy-server-and-reverse-proxy-server#)
 - COOL! [HOW TO SECURE ELASTICSEARCH AND KIBANA](https://mapr.com/blog/how-secure-elasticsearch-and-kibana/)
+- [OpenResty®. Scalable Web Platform by Extending NGINX with Lua](http://openresty.org/en/download.html)
 
 # 20.04.2017
 ## R
@@ -494,7 +538,7 @@ unable to move temporary installation ‘C:\Program Files\R\R-3.3.1\library\file
 
 ## R
 - Как управлять директориями для установки библиотек?
-	- `.libPath()` -- команда для управления
+	- `.libPaths()` -- команда для управления
 	- [Changing R default library path using .libPaths in Rprofile.site fails to work](http://stackoverflow.com/questions/15170399/changing-r-default-library-path-using-libpaths-in-rprofile-site-fails-to-work)
 - Packrat
 	- [Introduction to packrat package: Dependency Management system for R](https://rpubs.com/nishantsbi/221948)

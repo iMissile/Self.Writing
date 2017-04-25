@@ -20,6 +20,7 @@ It runs mostly in Linux userland. A FreeBSD port is available for a subset of DP
 - [Packetbeat - Lightweight Shipper for Network Data](https://www.elastic.co/products/beats/packetbeat)
 Know what’s going on across your applications by tapping into data traveling over the wire. Packetbeat is a lightweight network packet analyzer that sends data to Logstash or Elasticsearch.
 - [Попробуйте Packetbeat](http://bulimov.ru/it/try-packetbeat/). Вчера в блоге Elasticsearch появилась отличная новость - проект Packetbeat, развиваемый до этого энтузиастами, присоединился к Elastic. Я уже довольно давно слежу за этим проектом, и теперь, когда можно не беспокоиться о его будущем, хочу о нем рассказать. Packetbeat это такой инструмент мониторинга, который работает как анализатор сетевых пакетов, парсит различные протоколы (сейчас поддерживаются HTTP, MySQL, Postgresql, Redis, Thrift-RPC), получает нужные данные, и отсылает их либо напрямую в Elasticsearch, либо в Redis, из которого данные будет забирать Logstash и класть их все в тот же Elasticsearch.
+- [Analyzing Network using Beat](https://medium.com/@rresol/analyzing-network-using-beat-402f7da93f48)	
 - [M/Monit 3.7.0](https://mmonit.com/)
 Easy, proactive monitoring of Unix systems, network and cloud services. Conduct automatic maintenance and recovery and execute meaningful causal actions in error situations.
 
@@ -31,6 +32,8 @@ Moloch is not meant to replace Intrusion Detection Systems (IDS). Moloch augment
 # Эксперименты с Wireshark
 - [How to filter by IP address in Wireshark?](http://stackoverflow.com/questions/4043406/how-to-filter-by-ip-address-in-wireshark).
 If you only care about that particular machine's traffic, use a capture filter instead, which you can set under Capture -> Options.
+`host 192.168.1.101`
+Wireshark will only capture packet sent to or received by 192.168.1.101. This has the benefit of requiring less processing, which lowers the chances of important packets being dropped (missed).
 - [Wireshark Sample Captures](https://wiki.wireshark.org/SampleCaptures)
 
 # SQL
