@@ -196,9 +196,22 @@ Once installed, view the [Administrator’s Guide](http://docs.rstudio.com/shiny
 - `systemctl status shiny-server.service`  
 - `journalctl -xe` for details.
 
+### Обновление Shiny Server
+Читаем [Upgrading Shiny Server](https://support.rstudio.com/hc/en-us/articles/216080017-Upgrading-Shiny-Server)Ж
+If you are upgrading to a later version of Shiny Server Open-source or Pro, you can do so by downloading the newer package and installing it using your package manager:
+```
+sudo gdebi <shiny-server-package.deb>
+```
+or
+```
+sudo yum install --nogpgcheck <shiny-server-package.rpm>
+```
+
+Your configuration and settings will be unchanged from the previous version, and if you are running Shiny Server Pro, your license status will remain untouched as well.
+
 
 ### Управление Shiny Server
-Читаем х"1.4 Stopping and Starting"](http://docs.rstudio.com/shiny-server/#stopping-and-starting)
+Читаем ["1.4 Stopping and Starting"](http://docs.rstudio.com/shiny-server/#stopping-and-starting)
 
 
 ### Настройка Shiny Server для нескольких пользователей

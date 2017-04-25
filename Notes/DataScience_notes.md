@@ -17,6 +17,10 @@
 - [Shiny - Web Framework for R › Warning in body(fun) : argument is not a function](https://groups.google.com/forum/#!topic/shiny-discuss/2kVPa8jDooI).
 This is a problem that occurs only with R 3.4. Now that CRAN has officially released 3.4 as the new stable version, we're addressing it: [https://github.com/rstudio/shiny/issues/1676](https://github.com/rstudio/shiny/issues/1676). Решение: ставим [dev версию shiny](https://github.com/rstudio/shiny).
 [Fix](https://github.com/dmpe/shiny/commit/b5f6333a7cdd57d08fb677e8d23b4b3f8de86684)
+- COOL! [Setup encrypted Rstudio and Shiny dashboard solution in 3 minutes](http://www.56n.dk/setup-encrypted-rstudio-and-shiny-dashboard-solution-in-3-minutes/). I have created a repository (https://github.com/56north/encrypted_dashboard) with code that automatically sets up Rstudio Server and Shiny Server behind and Nginx proxy with SSL certificates. The two servers share apps and packages so you can build cool stuff in Rstudio and deploy it immediately to Shiny. Woow!!! 😀
+Below is the readme from the repo. I do need help fixing some issues, but I am quite certain you guys can help with that. If we collaborate on this then we will all have a pretty awesome way to quickly setup an encrypted and easy to use dashboard environment.
+**Docker + Nginx + Let’s Encrypt + Rstudio + Shiny**
+- [errors 0.0.1]()https://www.enchufa2.es/archives/errors-0-0-1.html). In physics, engineering and other disciplines, a single number, a bare quantity, is useless, meaningless. When you measure something, your results will be within the precision of your equipment, and then you need to propagate those errors up to whatever final indirect measure you are interested in. Finally, you need to express it properly. For instance, the elementary charge.
 
 ## R Markdown
 - [How to include LaTeX package in R Markdown?](https://tex.stackexchange.com/questions/171711/how-to-include-latex-package-in-r-markdown)
