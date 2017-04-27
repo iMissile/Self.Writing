@@ -10,6 +10,23 @@
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 27.04.2017
+## Shiny
+- COOL! [R Shiny: reactiveValues vs reactive](http://stackoverflow.com/questions/39436713/r-shiny-reactivevalues-vs-reactive). The shiny developers designed `reactive()` to be **lazy**, meaning that the expression contained in it will only be executed when it is called by one of its dependents. When one of its reactive dependencies is changed, it clears its cache and notifies its dependents, but it is not itself executed until asked to by one of its dependents. (So if, say, its sole dependent is a `textOutput()` element on a hidden tab, it won't actually be executed if/until that tab is opened.)
+`observe()`, on the other hand, is **eager**;
+
+# 26.04.2017
+## R
+- [Using checkpoint with knitr and RStudio](http://blog.revolutionanalytics.com/2017/04/using-checkpoint-with-knitr-and-rstudio.html). Another useful tool for reproducible data science is the checkpoint package. It helps you manage the ever-changing ecosystem of R packages on CRAN, by making it easy to "lock in" specific versions of R packages. With a single call to the checkpoint function — say checkpoint("2017-04-25"), for April 25, 2017 — you can automatically find all the packages used by your current R project (i.e. the current folder) and install them as they used to be on the specified date.
+- [Hacking maps with ggplot2](https://ikashnitsky.github.io/2017/map-hacking/)
+- [reactivePoll and reactiveFileReader](http://shiny.rstudio.com/gallery/reactive-poll-and-file-reader.html). This app has a log file which is appended to every second.
+- Progress Bar:
+	- [Reporting progress (object-oriented API)](http://shiny.rstudio.com/reference/shiny/latest/Progress.html)
+	- [Tracking progress in R](https://kevinkuang.net/tracking-progress-in-r-ad97998c359f)
+	- [Monitoring progress of a foreach parallel job](http://blog.revolutionanalytics.com/2015/02/monitoring-progress-of-a-foreach-parallel-job.html)
+	- [progress: Terminal Progress Bars](https://cran.r-project.org/web/packages/progress/)
+
+
 # 25.04.2017
 ## R
 - [R 3.4.0 is released – with new speed upgrades and bug-fixes](https://www.r-statistics.com/2017/04/r-3-4-0-is-released-with-new-speed-upgrades-and-bug-fixes/)

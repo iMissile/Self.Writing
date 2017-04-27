@@ -33,7 +33,7 @@
 - [How do I recursively delete directories with wildcard?](http://unix.stackexchange.com/questions/23576/how-do-i-recursively-delete-directories-with-wildcard)
 	- С натяжкой (см. детали выше) `find . -type d -name "00LOCK*" -delete`. Но не удаляет непустые директории.
 	- `find . -type d -name '00LOCK*' -exec rm -r {} +` (. -- от текущего пользователя, / --от корня)
-
+- Посмотреть рзмер папок в директории с глубиной до первых директорий: `du -h --max-depth=1`
 
 
 ## Установка R и RStudio Server
@@ -44,8 +44,8 @@ RStudio Server v0.99 requires RedHat or CentOS version 5.4 (or higher) as well a
 Установка под Linux не совсем прозрачно описана, поэтому читаем отдельные блоги.
 
 - Неплохой гид про борьбу с 'dependency hell': ["Installing RStudio — an advanced GUI for R — on CentOS 6"](https://biolives.wordpress.com/2013/07/09/installing-rstudio-an-advanced-gui-for-r-on-centos-6/). Там находим решение с пакетом Cairo.
-- Пошаговая инструкция. [How Install R / R Studio on CentOS 7](http://linoxide.com/linux-how-to/install-r-rstudio-centos-7/). Важно, что R работает не из под рута.- 
-- [How to install R on CentOS](http://stackoverflow.com/questions/37769985/how-to-install-r-on-centos). The installed version is 3.3.0. I would like to install version 2.X but I don't know how.
+- Пошаговая инструкция. [How Install R / R Studio on CentOS 7](http://linoxide.com/linux-how-to/install-r-rstudio-centos-7/). Важно, что R работает не из под рута.
+- [How to install R on CentOS](http://stackoverflow.com/questions/37769985/how-to-install-r-on-centos). Речь идет об инсталляции староq версии R. The installed version is 3.3.0. I would like to install version 2.X but I don't know how.
 - На заметку: при инсталляции пакетов возникло диагностическое сообщение "Delta RPMs disabled because /usr/bin/applydeltarpm not installed". Надо почитать.
 - Проверяем версию CentOS командой `uname -a`
 - Ставим RStudio Server по [инструкции](https://www.rstudio.com/products/rstudio/download-server/) с RStudio 
@@ -55,11 +55,12 @@ RStudio Server v0.99 requires RedHat or CentOS version 5.4 (or higher) as well a
 	- Еще инструкция: ["How To Install Python 3 and Set Up a Local Programming Environment on CentOS 7"](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-centos-7)
 	- [How to Install Pip on CentOS 7](https://www.liquidweb.com/kb/how-to-install-pip-on-centos-7/)
 ```
-$ sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
-$ sudo yum update
+sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
+sudo yum install R
+sudo yum update
 ```
 	 
-- При установке пакетов по root (для всех) запускаем R от рута `sudo -i R` и прогоняему установку. Для успешного прогона необходимо доставлять системные либы (CentOS specific commands).
+- При установке пакетов под root (для всех) запускаем R от рута `sudo -i R` и прогоняему установку. Для успешного прогона необходимо доставлять системные либы (CentOS specific commands).
 ```
 	sudo yum install libcurl-devel
 	sudo yum install openssl-devel
@@ -72,7 +73,6 @@ $ sudo yum update
 	sudo yum install proj
 	sudo yum install proj-devel
 	sudo yum install mesa-libGL mesa-libGL-devel mesa-libGLU mesa-libGLU-devel
-	sudo yum groupinstall X11
 	sudo yum install gmp-devel
 	sudo yum install mpfr-devel
 	sudo yum install cairo-devel
@@ -81,6 +81,7 @@ $ sudo yum update
 	sudo yum install v8-devel
 	sudo yum install udunits2
 	sudo yum install udunits2-devel
+	sudo yum groupinstall X11
 	sudo yum install xorg-x11-server-Xvfb
 	
 	'# это я бы не ставил, если не потребуется
@@ -88,13 +89,31 @@ $ sudo yum update
 	sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
 	sudo yum update	
 ```
+
+**Загоняем в одну команду** `yum install package1 package2 package3......`, [How to install multiple packages using yum](http://www.linuxquestions.org/questions/linux-newbie-8/how-to-install-multiple-packages-using-yum-850364/):
+```
+yum install libcurl-devel openssl-devel cyrus-sasl-devel libxml2-devel libpng-devel libjpeg-devel python python-devel proj proj-devel mesa-libGL mesa-libGL-devel mesa-libGLU mesa-libGLU-devel gmp-devel mpfr-devel cairo-devel libXt-devel gtk2-devel v8-devel udunits2 udunits2-devel
+```
+и
+```
+	sudo yum groupinstall X11
+	sudo yum groupinstall "Development Tools"
+	sudo yum install xorg-x11-server-Xvfb
+	
+	'# это я бы не ставил, если не потребуется
+	sudo yum -y groupinstall "X Window System" "Desktop" "Fonts" "General Purpose Desktop"
+	sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
+	sudo yum update	
+```
+
+
 - Поиск пакетов по репозиторию: `sudo yum search python | grep dev`
 
 - Пакеты надо ставить из под рута, в помощь очень полезные статьи:
 	- [Using R — Installing Packages](http://mazamascience.com/WorkingWithData/?p=728)
 	- [Using R — Package Installation Problems](http://mazamascience.com/WorkingWithData/?p=1185)
-	- Обновление установленных пакетов делаем из под рута в консоли R с помощью пакета pacman: `p_update(update = TRUE, ask = FALSE, ...)`
-	-  Еще проще сделать обновление R функцией `update.packages()`
+	- Обновление установленных пакетов делаем из под рута в консоли R с помощью пакета pacman: `pacman::p_update(update = TRUE, ask = FALSE)`
+	- Еще проще сделать обновление R функцией `update.packages()`
 
 ### Проблемы при установке пакетов
 
@@ -197,7 +216,7 @@ Once installed, view the [Administrator’s Guide](http://docs.rstudio.com/shiny
 - `journalctl -xe` for details.
 
 ### Обновление Shiny Server
-Читаем [Upgrading Shiny Server](https://support.rstudio.com/hc/en-us/articles/216080017-Upgrading-Shiny-Server)Ж
+Читаем [Upgrading Shiny Server](https://support.rstudio.com/hc/en-us/articles/216080017-Upgrading-Shiny-Server):
 If you are upgrading to a later version of Shiny Server Open-source or Pro, you can do so by downloading the newer package and installing it using your package manager:
 ```
 sudo gdebi <shiny-server-package.deb>
