@@ -10,10 +10,23 @@
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 28.04.2017
+## DS
+- [Python List Comprehensions: Explained Visually](http://treyhunner.com/2015/12/python-list-comprehensions-now-in-color/)
+
 # 27.04.2017
 ## Shiny
 - COOL! [R Shiny: reactiveValues vs reactive](http://stackoverflow.com/questions/39436713/r-shiny-reactivevalues-vs-reactive). The shiny developers designed `reactive()` to be **lazy**, meaning that the expression contained in it will only be executed when it is called by one of its dependents. When one of its reactive dependencies is changed, it clears its cache and notifies its dependents, but it is not itself executed until asked to by one of its dependents. (So if, say, its sole dependent is a `textOutput()` element on a hidden tab, it won't actually be executed if/until that tab is opened.)
 `observe()`, on the other hand, is **eager**;
+- [Learn about your user with session$clientData](https://shiny.rstudio.com/articles/client-data.html). См. пункт "Viewing all available values in clientData"
+- [Modularizing Shiny app code](http://shiny.rstudio.com/articles/modules.html). ADDED 20 OCT 2015 by JOE CHENG
+- [Getting Shiny to update the ui and and run long calculation afterwards](http://stackoverflow.com/questions/34226789/getting-shiny-to-update-the-ui-and-and-run-long-calculation-afterwards)
+- [Asynchronous Shiny exchange for long-running calculations?](https://groups.google.com/forum/#!topic/shiny-discuss/hZJrk7c87yU)
+- [How to integrate multiple shiny apps into one single shiny web application?](http://stackoverflow.com/questions/37960829/how-to-integrate-multiple-shiny-apps-into-one-single-shiny-web-application)
+- [ CSS Almanac » Properties » F » font-size](https://css-tricks.com/almanac/properties/f/font-size/) By Chris Coyier Last Updated On May 20, 2015 
+
+## R
+- [Setting up R to connect to SQL Server](https://support.rstudio.com/hc/en-us/articles/214510788-Setting-up-R-to-connect-to-SQL-Server-)
 
 # 26.04.2017
 ## R
@@ -483,17 +496,14 @@ It is very simple: DO NOT USE `\bf` IN MODERN LaTeX DOCUMENTS! It is deprecated.
 - [Tutorial: creating webapps with R using Shiny](http://stcorp.nl/R_course/tutorial_shiny.html) by Paul Hiemstra (S&T)
 ]
 
-
 ## R
 - [Cookbook for R. Comparing vectors or factors with NA](http://www.cookbook-r.com/Manipulating_data/Comparing_vectors_or_factors_with_NA/)
 - [PMean: Comparing two vectors with possible missing values](http://blog.pmean.com/comparing-two-vectors/)
 - [Iterate over dplyr code using purrr::map2](http://stackoverflow.com/questions/41498729/iterate-over-dplyr-code-using-purrrmap2). I get an error message that :  `Error: .x (2) and .y (3) are different lengths`
-- [magrittr - Ceci n'est pas un pipe](https://github.com/tidyverse/magrittr). Для исправления ошибки выше см. п. "Re-using the placeholder for attributes":
+- COOL! [magrittr - Ceci n'est pas un pipe](https://github.com/tidyverse/magrittr). Для исправления ошибки выше см. п. "Re-using the placeholder for attributes":
 `x %>% f(y = nrow(.), z = ncol(.))` is equivalent to `f(x, y = nrow(x), z = ncol(x))`
 The behavior can be overruled by enclosing the right-hand side in braces:
 `x %>% {f(y = nrow(.), z = ncol(.))}` is equivalent to `f(y = nrow(x), z = ncol(x))`
-
-
 
 - dplyr & variables:
 	- [Parametric variable names and dplyr](http://www.win-vector.com/blog/2016/12/parametric-variable-names-and-dplyr/)

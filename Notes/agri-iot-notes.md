@@ -35,12 +35,7 @@
 	- `find . -type d -name '00LOCK*' -exec rm -r {} +` (. -- от текущего пользователя, / --от корня)
 - Посмотреть рзмер папок в директории с глубиной до первых директорий: `du -h --max-depth=1`
 
-
-## Установка R и RStudio Server
-
-- Prerequisites  
-RStudio Server v0.99 requires RedHat or CentOS version 5.4 (or higher) as well as an installation of R. You can install R for RedHat and CentOS using the instructions on CRAN: https://cran.rstudio.com/bin/linux/redhat/README.
-
+## Установка R
 Установка под Linux не совсем прозрачно описана, поэтому читаем отдельные блоги.
 
 - Неплохой гид про борьбу с 'dependency hell': ["Installing RStudio — an advanced GUI for R — on CentOS 6"](https://biolives.wordpress.com/2013/07/09/installing-rstudio-an-advanced-gui-for-r-on-centos-6/). Там находим решение с пакетом Cairo.
@@ -62,6 +57,7 @@ sudo yum update
 	 
 - При установке пакетов под root (для всех) запускаем R от рута `sudo -i R` и прогоняему установку. Для успешного прогона необходимо доставлять системные либы (CentOS specific commands).
 ```
+	sudo yum install wget
 	sudo yum install libcurl-devel
 	sudo yum install openssl-devel
 	sudo yum install cyrus-sasl-devel
@@ -170,8 +166,25 @@ install.packages("printr_0.0.6.tar.gz", repos = NULL, type="source")
 
 **Может возникнуть ситуация**, когда потребуется доставлять фортран. Детально (в т.ч. и про управление пользователями) можно почитать в этой публикации: ["Install RStudio Server on centOS6.5"](http://blog.supstat.com/2014/05/install-rstudio-server-on-centos6-5/)
 
+
+## Установка RStudio Server
+- Prerequisites  
+RStudio Server v0.99 requires RedHat or CentOS version 5.4 (or higher) as well as an installation of R. You can install R for RedHat and CentOS using the instructions on CRAN: https://cran.rstudio.com/bin/linux/redhat/README.
+
+See the [Getting Started document](https://support.rstudio.com/hc/en-us/articles/200552306-Getting-Started) for information configuring and managing the server.
+
+By default RStudio Server runs on port 8787 and accepts connections from all remote clients. After installation you should therefore be able to navigate a web browser to the following address to access the server:
+`http://<server-ip>:8787`
+
 ### Управление пользователями
 Тут не все прозрачно, пытаемся разобраться по частям.
+
+- Создаем в linux пользователяю [CentOS Guide. 33.2.2. Adding a User](https://www.centos.org/docs/5/html/5.1/Deployment_Guide/s2-users-add.html):
+	- Issue the useradd command to create a locked user account: `useradd <username>`
+	- Unlock the account by issuing the passwd command to assign a password and set password aging guidelines: `passwd <username>`
+
+- [The Complete Guide to “useradd” Command in Linux – 15 Practical Examples](http://www.tecmint.com/add-users-in-linux/)
+
 
 - [RStudio prohibits signing in with a user id below 100. Make sure your user id is above this threshold.](https://support.rstudio.com/hc/en-us/articles/200717203-RStudio-Server-Log-in-and-User-Authentication-Problems). А root имеет id=0.
 - [How can I look up a username by id in linux?](http://unix.stackexchange.com/questions/36580/how-can-i-look-up-a-username-by-id-in-linux). `id -u <user-name>`
@@ -207,7 +220,8 @@ Once installed, view the [Administrator’s Guide](http://docs.rstudio.com/shiny
 
 По умолчанию Shiny Server доступен по порту 3838.
 
-Смапируем наше приложение на location '/iot'. Делается это в конфиге `/etc/shiny-server/shiny-server.conf`. Читаем мануал '2.2.2 Location'  
+Смапируем наше приложение на location '/iot'. 
+Делается это в конфиге `/etc/shiny-server/shiny-server.conf`. Читаем мануал '2.2.2 Location'  
 И рестартуем сервер  
 `sudo systemctl restart shiny-server`
 
@@ -231,14 +245,23 @@ Your configuration and settings will be unchanged from the previous version, and
 
 ### Управление Shiny Server
 Читаем ["1.4 Stopping and Starting"](http://docs.rstudio.com/shiny-server/#stopping-and-starting)
+CentOS:
+```
+sudo systemctl status shiny-server
+sudo systemctl start shiny-server
+sudo systemctl stop shiny-server
+sudo systemctl restart shiny-server
+```
 
 
 ### Настройка Shiny Server для нескольких пользователей
 Читаем мануал + разъяснительную статью ["Shiny Server Quick Start: Run Shiny Server on multiple ports"](https://support.rstudio.com/hc/en-us/articles/219045167-Shiny-Server-Quick-Start-Run-Shiny-Server-on-multiple-ports)
 
-По шагам
+Конфигурационный файл расположен `/etc/shiny-server/shiny-server.conf`
+По шагам:
 1. Включаем в конфиге многопользовательский режим. При этом все пользовательские приложения будут мэпиться на `~/ShinyApps`. 
-2. Делаем линк (мягкая ссылка) разрабатываемого приложения в эту директорию.
+2. Делаем линк (мягкая ссылка) разрабатываемого приложения в эту директорию. Общая форма команды `$ ln -s <SOURCE> <LINK_NAME>`
+	- [Create a symbolic link relative to the current directory](https://unix.stackexchange.com/questions/84175/create-a-symbolic-link-relative-to-the-current-directory)
 3. Меняем конфиг сервера и рестартуем.
 4. Проверяем по путям 
 	- `http://10.0.0.228:3838/` -- общая стартовая страница с приложениями
@@ -298,6 +321,8 @@ Your configuration and settings will be unchanged from the previous version, and
     
     }
 ```
+
+for any user who is a member of the shinyUsers group, publicly host any Shiny application available in the user's ~/ShinyApps directory. For instance, if a user named tina who is a member of the shinyUsers group, has /home/tina as a home directory, and has an application called shinyApp1 in /home/tina/ShinyApps/, that application would be available on this server at the URL http://server.com/tina/shinyApp1. Any other application in /home/tina/ShinyApps/ would also be publically available at a similar URL.
 
 ## Настройка git на GitHub и на клиенте
 - [Репозиторий кода](https://github.com/iMissile/agri-iot-code)
@@ -559,7 +584,7 @@ cd data
 git config user.name "<NAME>"
 git config user.email "<MAIL>@gmail.com"
 ```
-11. Проверяем конфиурации командой `git config -l`  
+11. Проверяем конфигурации командой `git config -l`  
 12. Смотрим настройки удаленного репозитория: `git remote -v`
 13. Меняем настройки удаленного репозитория в соответствии с именами, указанными в  git config (иначе коммит не проходит, поскольку система не знает, какой ключ использовать).
 ```
@@ -741,3 +766,95 @@ LaTeX необходим R для сборки документации, как 
 !!!!!
 - [When removing Texlive, it also removes R. How to stop that?](https://www.centos.org/forums/viewtopic.php?t=57885)
 - [How to remove everything related to TeX Live for fresh install on Ubuntu?](http://tex.stackexchange.com/questions/95483/how-to-remove-everything-related-to-tex-live-for-fresh-install-on-ubuntu)
+
+# Elastic Search
+- На [Docker Hub](https://hub.docker.com/_/elasticsearch/) ES более не доступен.
+This image is officially deprecated in favor of the elasticsearch image provided by elastic.co which is available to pull via `docker.elastic.co/elasticsearch/elasticsearch:[version] like 5.2.1`. This image will receive no further updates after 2017-06-20 (June 20, 2017). Please adjust your usage accordingly.
+
+- [Install Elasticsearch with Docker](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html). Elasticsearch is also available as a Docker image. The image is built with X-Pack.
+
+- Хорошие подрбоные статьи
+	- ['Установка и настройка Elasticsearch в Ubuntu 16.04'](https://www.8host.com/blog/ustanovka-i-nastrojka-elasticsearch-v-ubuntu-16-04/)
+	- [Установка и настройка Elasticsearch в CentOS 7](https://www.8host.com/blog/ustanovka-i-nastrojka-elasticsearch-v-centos-7/)
+- [Установка и настройка Elasticsearch+kibana+logstash+filebeat5](https://denisitpro.wordpress.com/2017/02/05/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-elasticsearchkibanalogstashfilebeat5/comment-page-1/). При написании, я старался сразу делать более безопасную настройку ELK5, а не просто «оно включилось, значит работает»
+
+Берем инструкцию по дефолтной установке с сайта ES: [Install Elasticsearch with RPM](https://www.elastic.co/guide/en/elasticsearch/reference/5.0/rpm.html)
+
+1. Ставим Java OpenJDK: (https://www.8host.com/blog/ustanovka-i-nastrojka-elasticsearch-v-centos-7/)
+	- Для просмотра доступных в репозитории версий используем команду `yum search java-1.`
+	- Устанавливаем OpenJDK: `sudo yum install java-1.8.0-openjdk.x86_64`
+	- Проверяем, что установка JRE прошла успешно: `java -version`
+2. Ставим ключ ES и репозиторий. Так лучше, потому что будет апдейтиться автоматически.
+3. Командой `ps -p 1` выясняем как именно управляются сервисы в nix. В нашем случае этот `systemd`:
+	- Смотрим пункт 'Running Elasticsearch with systemd'
+
+
+## Настройка ES
+И тут выясняется, что на 1 Гб Java запускаться не хочет. В статусе ES это отображается
+```
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 2060255232 bytes for committing reserved memory.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+```
+
+- Урезаем требования ES по объему памяти:
+	- идем в директорию `cd /etc/elasticsearch/`
+	- в файле jvm.options меняем требования по памяти `Xms2g\Xmx2g` на `Xms512m\Xmx512m` соответственно
+
+- Настраиваем фаервол. Разрешаем доступ к порту 22 отовсюду, к 9200 только с рабочего адреса.
+Ставим `ufw`: yum install ufw
+[Далее детали по настройке: 3. Защита Elasticsearch](https://www.8host.com/blog/ustanovka-i-nastrojka-elasticsearch-v-ubuntu-16-04/)
+```
+sudo ufw allow 22
+sudo ufw allow from TRUSTED_IP to any port 9200
+sudo ufw enable
+sudo ufw status
+```
+
+IP=87.238.96.18: `sudo ufw allow from 87.238.96.18 to any port 9200`
+IP=216.92.243.227: (www.elastichq.org)
+sudo ufw allow from 216.92.243.227 to any port 9200
+И открываем доступ к ES извне:
+```
+sudo nano /etc/elasticsearch/elasticsearch.yml
+# Найдите строку network.bind_host, раскомментируйте её и измените её значение на 0.0.0.0:
+. . .
+network.host: 0.0.0.0
+. . .
+sudo systemctl restart elasticsearch
+```
+
+Проверяем: `http://89.223.29.108:9200/?pretty`, `http://89.223.29.108:9200/_nodes?pretty`
+
+Меняем конфигурацию в файле `/etc/elasticsearch/elasticsearch.yml`
+
+- Можно сменить адрес порта
+
+- Мы предполагаем запускаться на одном сервере (я не нашел таких параметров).
+Предположим, что у вас одна нода Elasticsearch; в таком случае лучше настроить один шард и 0 реплик. Таким образом, их значения будут выглядеть так (не забудьте удалить # в начале строки):
+```
+. . .
+index.number_of_shards: 1
+index.number_of_replicas: 0
+. . .
+```
+
+## ES GUI
+- [Elastic HQ](http://www.elastichq.org/). Sleek, intuitive, and powerful ElasticSearch Management and Monitoring.
+У меня папка плагинов ES 5.x (для инсталляции на системе) лежит здесь: `/usr/share/elasticsearch/plugins
+Пытаемся запустить командой `./elasticsearch-plugin install royrusso/elasticsearch-HQ`
+`
+
+## Игры с Elasticsearch
+- [Основы Elasticsearch](https://habrahabr.ru/post/280488/)
