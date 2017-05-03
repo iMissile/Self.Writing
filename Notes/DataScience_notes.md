@@ -10,6 +10,52 @@
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 03.05.2017
+## R
+- [New in the tigris package: simple features support and historic shapefiles](https://walkerke.github.io/2017/05/tigris-v05/). 2 May, 2017 by Kyle Walker
+- COOL! [twidlr: data.frame-based API for model and predict functons](https://drsimonj.svbtle.com/twidlr-data-frame-based-api-for-model-and-predict-functons)
+- [A R named list is not a python dictionary](http://optimallog.blogspot.ru/2017/05/blog-post.html)
+- [Функция `cat`](http://rfunction.com/archives/1866). A copy of the file that was created and saved in the last for loop can be found here.
+Tip. If outputting information to a user that simply updates them on the status of code, consider using a carriage return ("\r") to print from the start of the current line. For example, below is a reasonable alternative to using the `txtProgressBar`. The output repeatedly overwrites itself, which keeps the output compact.
+
+## ELK
+- [Glossary of terms](https://www.elastic.co/guide/en/elasticsearch/reference/current/glossary.html)
+- [Elasticsearch Reference » Query DSL » Full text queries » Query String Query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax)
+- [Elasticsearch in 5 minutes](http://www.elasticsearchtutorial.com/elasticsearch-in-5-minutes.html)
+- [Index vs. Type](https://www.elastic.co/blog/index-vs-type). Статья на замену устаревшей ['What is an Elasticsearch Index?'](https://www.elastic.co/blog/what-is-an-elasticsearch-index). В старой статье подробно рассказано, для примера: 
+```
+An index is like a ‘database’ in a relational database. It has a mapping which defines multiple types.
+An index is a logical namespace which maps to one or more primary shards and can have zero or more replica shards. 
+Searching and querying takes the format of: http://localhost:9200/[index]/[type]/[operation] 
+```
+Однако в новой статье написано **In the past we tried to make elasticsearch easier to understand by building an analogy with relational databases: indices would be like a database, and types like a table in a database. This was a mistake: the way data is stored is so different that any comparisons can hardly make sense, and this ultimately led to an overuse of types in cases where they were more harmful than helpful.**
+- [List All Indices](https://www.elastic.co/guide/en/elasticsearch/reference/current/_list_all_indices.html)
+	- [list all indexes on ElasticSearch server?](http://stackoverflow.com/questions/17426521/list-all-indexes-on-elasticsearch-server)
+	- `http://89.223.29.108:9200/_cat/indices?v`
+	- `http://89.223.29.108:9200/_aliases?pretty=1` -- получаем список индексов и алиасы для них
+	- `http://89.223.29.108:9200/_stats` -- дает статистику с возможностью детализации (см. stackoverflow выше)
+	- `http://89.223.29.108:9200/_cat/shards` -- дает подробную раскладку индексов по шардам.
+- POST vs GET
+	- [When should I use GET or POST method? What's the difference between them?](http://stackoverflow.com/questions/504947/when-should-i-use-get-or-post-method-whats-the-difference-between-them)
+	- [When do you use POST and when do you use GET?](http://stackoverflow.com/questions/46585/when-do-you-use-post-and-when-do-you-use-get)
+	- [What is the difference between POST and GET? {duplicate}](http://stackoverflow.com/questions/3477333/what-is-the-difference-between-post-and-get)
+	- [GET vs. POST](http://www.diffen.com/difference/GET-vs-POST-HTTP-Requests)
+- [Number of records limited to 1000 (R client on ElasticSearch)](http://stackoverflow.com/questions/41141541/number-of-records-limited-to-1000-r-client-on-elasticsearch). **The reason why the number of records is limited to 1000 is due to elasticsearch configuration. This was the answer I got from database maintenance team.**
+
+
+# 02.05.2017
+## R & Elastic
+- [elastic tutorial for v0.6.0](https://ropensci.org/tutorials/elastic_tutorial.html)
+	- [elastic searching](https://cran.r-project.org/web/packages/elastic/vignettes/search.html)
+- [elasticsearchr: a Lightweight Elasticsearch Client for R](https://cran.r-project.org/web/packages/elasticsearchr/vignettes/quick_start.html)
+- [Searching for IP addresses in text with Elasticsearch](http://www.flax.co.uk/blog/2014/06/03/flexible-search-of-structured-numeric-data-with-elasticsearch/)
+- COOL. Ответ от автора пакета `elastic` [Extract data from elasticsearch into R with elastic package, load into a data frame, error due to hits not expanding to the same length](http://stackoverflow.com/questions/40720778/extract-data-from-elasticsearch-into-r-with-elastic-package-load-into-a-data-fr)
+- Как получить список индексов в R:
+	- функция `elastic::cat_indices`: `t <- cat_indices(parse=TRUE)`
+	- делали см. в [cat APIs](https://www.elastic.co/guide/en/elasticsearch/reference/current/cat.html)
+Все функции вызывают [`cat_helper`](https://github.com/ropensci/elastic/blob/3184fbae5ba0c742455a4125b437325e148f413a/R/cat.r): `cat_helper <- function(what='', v=FALSE, i=NULL, f=NULL, h=NULL, help=FALSE, bytes=FALSE, parse=FALSE, ...)`
+
+
 # 28.04.2017
 ## DS
 - [Python List Comprehensions: Explained Visually](http://treyhunner.com/2015/12/python-list-comprehensions-now-in-color/)

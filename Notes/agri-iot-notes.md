@@ -767,7 +767,16 @@ LaTeX необходим R для сборки документации, как 
 - [When removing Texlive, it also removes R. How to stop that?](https://www.centos.org/forums/viewtopic.php?t=57885)
 - [How to remove everything related to TeX Live for fresh install on Ubuntu?](http://tex.stackexchange.com/questions/95483/how-to-remove-everything-related-to-tex-live-for-fresh-install-on-ubuntu)
 
-# Elastic Search
+# Elastic Stack
+
+Не забываем ставить время на машинах!
+Как узнать время и дату через консоль: `date`
+ - Устанавливаем (если не стоит): `yum install -y chrony`
+ - Запускаем chrony и добавляем в автозагрузку: 
+ 	- `systemctl start chronyd`
+ 	- `systemctl enable chronyd`
+
+## Elastic Search
 - На [Docker Hub](https://hub.docker.com/_/elasticsearch/) ES более не доступен.
 This image is officially deprecated in favor of the elasticsearch image provided by elastic.co which is available to pull via `docker.elastic.co/elasticsearch/elasticsearch:[version] like 5.2.1`. This image will receive no further updates after 2017-06-20 (June 20, 2017). Please adjust your usage accordingly.
 
@@ -776,7 +785,9 @@ This image is officially deprecated in favor of the elasticsearch image provided
 - Хорошие подрбоные статьи
 	- ['Установка и настройка Elasticsearch в Ubuntu 16.04'](https://www.8host.com/blog/ustanovka-i-nastrojka-elasticsearch-v-ubuntu-16-04/)
 	- [Установка и настройка Elasticsearch в CentOS 7](https://www.8host.com/blog/ustanovka-i-nastrojka-elasticsearch-v-centos-7/)
-- [Установка и настройка Elasticsearch+kibana+logstash+filebeat5](https://denisitpro.wordpress.com/2017/02/05/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-elasticsearchkibanalogstashfilebeat5/comment-page-1/). При написании, я старался сразу делать более безопасную настройку ELK5, а не просто «оно включилось, значит работает»
+	- [Установка и настройка Elasticsearch+kibana+logstash+filebeat5](https://denisitpro.wordpress.com/2017/02/05/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-elasticsearchkibanalogstashfilebeat5/comment-page-1/). При написании, я старался сразу делать более безопасную настройку ELK5, а не просто «оно включилось, значит работает»
+	- [How To Gather Infrastructure Metrics with Packetbeat and ELK on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-gather-infrastructure-metrics-with-packetbeat-and-elk-on-ubuntu-14-04). Тут весьма подробненько разобрано
+	- [How To Install Elasticsearch, Logstash, and Kibana (ELK Stack) on Ubuntu 14.0](https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elk-stack-on-ubuntu-14-04). Тут красивая картинка про потоки данных. Все линейно!
 
 Берем инструкцию по дефолтной установке с сайта ES: [Install Elasticsearch with RPM](https://www.elastic.co/guide/en/elasticsearch/reference/5.0/rpm.html)
 
@@ -789,7 +800,7 @@ This image is officially deprecated in favor of the elasticsearch image provided
 	- Смотрим пункт 'Running Elasticsearch with systemd'
 
 
-## Настройка ES
+### Настройка ES
 И тут выясняется, что на 1 Гб Java запускаться не хочет. В статусе ES это отображается
 ```
 # There is insufficient memory for the Java Runtime Environment to continue.
@@ -850,11 +861,68 @@ index.number_of_replicas: 0
 . . .
 ```
 
-## ES GUI
+### ES GUI
 - [Elastic HQ](http://www.elastichq.org/). Sleek, intuitive, and powerful ElasticSearch Management and Monitoring.
 У меня папка плагинов ES 5.x (для инсталляции на системе) лежит здесь: `/usr/share/elasticsearch/plugins
 Пытаемся запустить командой `./elasticsearch-plugin install royrusso/elasticsearch-HQ`
 `
 
-## Игры с Elasticsearch
+### Игры с Elasticsearch
 - [Основы Elasticsearch](https://habrahabr.ru/post/280488/)
+
+## Установка и настройка Packetbeat
+- [Download Packetbeat](https://www.elastic.co/downloads/beats/packetbeat). Лучше, если настроим репозиторий
+Packetbeat can also be installed from our package repositories using apt or yum. See [Repositories in the Guide](https://www.elastic.co/guide/en/beats/packetbeat/current/setup-repositories.html).
+Смотрим пошаговую инструкцию в разделе YUM.
+- Погружаемся в настройку [Getting Started With Packetbeat](https://www.elastic.co/guide/en/beats/packetbeat/current/packetbeat-getting-started.html)
+
+### Настройка конфиг файла PB
+Файл расположен тут -- `/etc/packetbeat/packetbeat.yml`
+Смотрим сетевые интерфейсы следюущими командами, см ['How can I find available network interfaces?'](https://unix.stackexchange.com/questions/125400/how-can-i-find-available-network-interfaces):
+```
+ifconfig -a # The simplest method I know to list all of your interfaces is
+ip link show # If you're on a system where that has been made obsolete, you can use
+```
+
+Меняем настройки в секции `General`
+name: PB-Lab
+# tags: ["service-X", "web-tier"]
+tags: ["experimental"]
+output.elasticsearch:
+  # Array of hosts to connect to.
+  hosts: ["89.223.29.108:9200"]
+logging.level: warning
+
+И рестартуем Packetbeat: `sudo systemctl restart packetbeat` (`sudo service packetbeat restart` -- так было в убунте)
+
+Шаблоны парсинга packetbeat лежат в `/etc/packetbeat/packetbeat.template.json`
+
+Теперь на сервере ELK 
+- почистим предыдущие записи
+`curl -XDELETE 'http://localhost:9200/packetbeat-*'`
+- и проверим поступление данных: `http://89.223.29.108:9200/packetbeat-*/_search?pretty`
+
+## Установка и настройка Kibana
+Идем по мануалу с официального сайта, делаем по ветке [Установка через репозиторий](https://www.elastic.co/guide/en/kibana/current/rpm.html)
+Создаем `kibana.repo` на машине с packetbeat.
+Скачиваем, устанавливаем и включаем автоматический запуск.
+`
+sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable kibana.service
+`
+
+### Конфигурируем Kibana
+Настройки лежат в файле `/etc/kibana/kibana.yml`
+
+В сконфигурированной системе можно заменить `server.host`: In the Kibana configuration file, find the line that specifies server.host, and replace the IP address ("0.0.0.0" by default) with "localhost"
+```
+server.host: 10.0.0.232
+server.name: "Kibana-Lab"
+elasticsearch.url: "http://89.223.29.108:9200"
+```
+
+Запускаем: `10.0.0.232:5601`, пытаемся поиграть с фильтрами: [Kibana Queries and Filters](https://www.elastic.co/guide/en/beats/packetbeat/current/kibana-queries-filters.html)
+
+- Непонятная ситуация.
+Строку `10.0.0.232` ищет, строку `source.ip:"10.0.0.178"` ищет, а `source.ip:"10.0.0.232"` -- нет.
+А!!! был еще фильтр, которые я из Available Fields наделал.
