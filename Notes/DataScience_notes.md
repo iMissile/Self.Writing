@@ -8,9 +8,103 @@
 
 - [blackstarburger](http://blackstarburger.ru/)
 
+- [Отображение и скрытие формул](https://support.office.com/ru-ru/article/%D0%9E%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5-%D1%84%D0%BE%D1%80%D0%BC%D1%83%D0%BB-f7f5ab4e-bf24-4efc-8fc9-0c1b77a5356f). Применяется к: Excel 2016 Excel 2013 Excel 2010 Excel 2007
+CTRL + ` (апостроф).
+
+
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 10.05.17
+## R
+- COOL! [Installing Packages without Internet](http://www.mango-solutions.com/wp/2017/05/installing-packages-without-internet/) by Graham Parsons (Mango Solutions)
+- [Machine Learning. Regression Trees and Model Trees (Predicting Wine Quality)](https://datarvalue.blogspot.ru/2017/05/machine-learning-regression-trees-and.html)
+- [Machine Learning Pipelines for R](https://alexioannides.com/2017/05/08/machine-learning-pipelines-for-r/)
+- [Graphical Presentation of Missing Data; VIM Package](https://datascienceplus.com/graphical-presentation-of-missing-data-vim-package/)
+- [Hadley about `unlist()`](http://r4ds.had.co.nz/lists.html): "Base R has `unlist()`, but I recommend avoiding it for the same reason I recommend avoiding `sapply()`: it always succeeds. Even if your data structure accidentally changes, `unlist()` will continue to work silently the wrong type of output. This tends to create problems that are frustrating to debug."
+- [Shiny document closes itself in approximately a minute](https://github.com/rstudio/shiny/issues/1697). Тут говорится про изменение настроек reverse proxy, чтобы такого не было.
+- [How to debug a fatal error?](https://support.rstudio.com/hc/en-us/community/posts/207601737-How-to-debug-a-fatal-error-)
+- Переход на 3.4
+- [R 3.4.0 is released – with new speed upgrades and bug-fixes](https://www.r-statistics.com/2017/04/r-3-4-0-is-released-with-new-speed-upgrades-and-bug-fixes/)
+	- [Speed up your R code using a just-in-time (JIT) compiler](https://www.r-statistics.com/2012/04/speed-up-your-r-code-using-a-just-in-time-jit-compiler/)
+	- [Shiny - Web Framework for R › Warning in body(fun) : argument is not a function](https://groups.google.com/forum/#!topic/shiny-discuss/2kVPa8jDooI).
+This is a problem that occurs only with R 3.4. Now that CRAN has officially released 3.4 as the new stable version, we're addressing it: [https://github.com/rstudio/shiny/issues/1676](https://github.com/rstudio/shiny/issues/1676). Решение: ставим [dev версию shiny](https://github.com/rstudio/shiny).
+[Fix](https://github.com/dmpe/shiny/commit/b5f6333a7cdd57d08fb677e8d23b4b3f8de86684)
+	- [RStudio 0.99 crashes when ggplot is called](https://support.rstudio.com/hc/en-us/community/posts/207645558-RStudio-0-99-crashes-when-ggplot-is-called)
+	- [Error in install.packages : missing value where TRUE/FALSE needed](https://github.com/tidyverse/dplyr/issues/1433). Общий совет -- откатывайтесь пока на 3.3.3 или качайте патченную версию [отсюда](https://cran.r-project.org/bin/windows/base/rtest.html)
+
+
+## R markdown
+- [How to make tables float in Rmarkdown pdf document/Inserting tables causing text to disappear in pdf output](http://stackoverflow.com/questions/41705848/how-to-make-tables-float-in-rmarkdown-pdf-document-inserting-tables-causing-text)
+- [Moving from Beamer to R Markdown](http://rmarkdown.rstudio.com/articles_beamer.html)
+- [Simple manual RMarkdown tables that look good in HTML, PDF and DOCX](http://stackoverflow.com/questions/19997242/simple-manual-rmarkdown-tables-that-look-good-in-html-pdf-and-docx)
+- [A few methods for making tables in rmarkdown](https://rpubs.com/benmarwick/tables-rmarkdown)
+
+
+# 07.05.2017
+## R & presentation
+- COOL! [RemarkJS Slides framework](https://remarkjs.com)
+	- [An R package for creating slideshows with remark.js through R Markdown](https://github.com/yihui/xaringan).
+	- [Liminal. A Theme for Remark by Ole Petter Bang](http://www.jmlilly.net/liminal/talks/template.html#1)
+
+
+## R Learning (готовим курс)
+- [Data wrangling in R](http://jules32.github.io/2016-07-12-Oxford/dplyr_tidyr/) by Julie Lowndes. July 12, 2016
+- [Data Processing with dplyr & tidyr](https://rpubs.com/bradleyboehmke/data_wrangling) by Brad Boehmke. February 13th, 2015
+- [DataVis.ca. Michael Friendly @ York University](www.datavis.ca)
+	- COOL! [An Introduction to R Graphics](http://www.datavis.ca/courses/RGraphics/) by Michael Friendly, SCS Short Course, March, 2017
+- [Introduction to R Graphics with ggplot2](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html)
+- COOL! [An introduction to ggplot2](http://seananderson.ca/ggplot2-FISH554/). February 2015, by Sean C. Anderson
+- COOL! [Data wrangling, exploration, and analysis with R. UBC STAT 545A and 547M](http://stat545.com/)
+
+
+
+# 05.05.2017
+## R
+- [RCpp полезные репозитории Dirk Eddelbuettel {eddelbuettel}](https://github.com/eddelbuettel?tab=repositories)
+- Бесплатный подробный курс [Technical Foundations of Informatics](https://info201-s17.github.io/book/) by Michael Freeman and Joel Ross
+- Пакеты для работы со временем:
+	- Пакет `fasttime`. [Faster date formatting in R?](http://stackoverflow.com/questions/17170169/faster-date-formatting-in-r)
+	- Пакет `anytime`. [anytime: Convert Any Input to Parsed Date or Datetime](http://dirk.eddelbuettel.com/code/anytime.html)
+	- Пакет `parsedate`. [parsedate: Recognize and Parse Dates in Various Formats, Including All ISO 8601 Formats](https://cran.r-project.org/web/packages/parsedate/index.html)
+- [TIMEKIT: TIME SERIES FORECAST APPLICATIONS USING DATA MINING](http://www.business-science.io/code-tools/2017/05/02/timekit-0-2-0.html)
+- [My book (pafdR) is out!](https://msperlin.github.io/2017-05-04-pafdR-is-out/)
+- COOL! [Everyone knows that loops in R are to be avoided but vectorization is not always possible](http://r-posts.com/everyone-knows-that-loops-in-r-are-to-be-avoided-but-vectorization-is-not-always-possible/)
+
+# 04.05.2017
+## R
+- Nested list
+	- COOL! [Flatten a list with complex nested structure](http://stackoverflow.com/questions/28158218/flatten-a-list-with-complex-nested-structure)
+	- COOL [R: reorganize list into dataframe using dplyr](http://stackoverflow.com/questions/29265702/r-reorganize-list-into-dataframe-using-dplyr)
+	- [Convert R list to dataframe with missing/NULL elements](http://stackoverflow.com/questions/15793759/convert-r-list-to-dataframe-with-missing-null-elements)
+	- [Convert Mixed-Length named List to data.frame](http://stackoverflow.com/questions/15753091/convert-mixed-length-named-list-to-data-frame/15753384#15753384). А тут очень элегантно решается через `data.table` (в конце).
+		- [Iterating through lists of lists (of lists of lists of...) with R](http://hydroecology.net/iterating-through-lists-of-lists-of-lists/)
+- Классный ответ Hadley: ['turning a named list into a dataframe using dplyr'](https://gist.github.com/aammd/9ae2f5cce9afd799bafb)
+- [General Purpose Hierarchical Data Structure for R http://gluc.github.io/data.tree](https://github.com/gluc/data.tree)
+- [rlist](https://cran.r-project.org/web/packages/rlist/). A Toolbox for Non-Tabular Data Manipulation
+rlist is a set of tools for working with list objects. Its goal is to make it easier to work with lists by providing a wide range of functions on non-tabular data stored in them.
+This package supports filtering, mapping, grouping, sorting, updating, searching and many other functions. It is pipe-friendly and strongly recommends functional programming style in list operations.
+	- [rlist Tutorial](https://renkun.me/rlist-tutorial/) by Kun Ren
+	- [Weather API](https://renkun.me/rlist-tutorial/Examples/Weather-API.html). OpenWeatherMap provides a set of weather API that is simple, clear and free. Using the API, we get access to not only the current weather data, forecasts, historical data, and so on. The returned data is by default presented in JSON format, which can be easily loaded and processed by rlist functions.]
+
+- COOL! [Introduction to tidyjson](https://cran.r-project.org/web/packages/tidyjson/vignettes/introduction-to-tidyjson.html) by Jeremy Stanley, 2017-04-21. Однако есть проблемка, как собирать данные дочерних объектов, расположенных на одном уровне.
+	- [Simple formatting with tidyjson with R](http://stackoverflow.com/questions/37451668/simple-formatting-with-tidyjson-with-r)
+	- [Tidyjson: is there an 'exit_object()' equivalent?](http://stackoverflow.com/questions/35198991/tidyjson-is-there-an-exit-object-equivalent). There's a note in the documentation:
+"Note that there are often situations where there are multiple arrays or objects of differing types that exist at the same level of the JSON hierarchy. In this case, you need to use enter_object() to enter each of them in separate pipelines to create separate data.frames that can then be joined relationally."
+
+
+
 # 03.05.2017
+## Готовим стенд ELK+R
+- [How to execute an IP Range Query/Filter](http://stackoverflow.com/questions/31520892/how-to-execute-an-ip-range-query-filter)
+- Формирование запросов с полями дат: [Date Math](https://www.elastic.co/guide/en/elasticsearch/reference/5.3/common-options.html#date-math)
+- [IP datatype](https://www.elastic.co/guide/en/elasticsearch/reference/current/ip.html). Но packetbeat гонит `source.ip` и аналогичные как `string`.
+- [Number of records limited to 1000 (R client on ElasticSearch)](http://stackoverflow.com/questions/41141541/number-of-records-limited-to-1000-r-client-on-elasticsearch). **The reason why the number of records is limited to 1000 is due to elasticsearch configuration. This was the answer I got from database maintenance team.**
+- [Query and filter context](https://www.elastic.co/guide/en/elasticsearch/reference/5.3/query-filter-context.html)
+- Решаем проблему с большим количеством результатов >10K:
+	- Пример готового кода есть в документе к пакету `elastic`: см. п. [elastic searching](https://cran.r-project.org/web/packages/elastic/vignettes/search.html)
+	- [Elasticsearch Data Analysis with R](https://discuss.ropensci.org/t/elasticsearch-data-analysis-with-r/345)
+
+
 ## R
 - [New in the tigris package: simple features support and historic shapefiles](https://walkerke.github.io/2017/05/tigris-v05/). 2 May, 2017 by Kyle Walker
 - COOL! [twidlr: data.frame-based API for model and predict functons](https://drsimonj.svbtle.com/twidlr-data-frame-based-api-for-model-and-predict-functons)
@@ -22,6 +116,7 @@ Tip. If outputting information to a user that simply updates them on the status 
 - [Glossary of terms](https://www.elastic.co/guide/en/elasticsearch/reference/current/glossary.html)
 - [Elasticsearch Reference » Query DSL » Full text queries » Query String Query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax)
 - [Elasticsearch in 5 minutes](http://www.elasticsearchtutorial.com/elasticsearch-in-5-minutes.html)
+- [Using Query String Queries in Elasticsearch](https://www.compose.com/articles/using-query-string-queries-in-elasticsearch/)
 - [Index vs. Type](https://www.elastic.co/blog/index-vs-type). Статья на замену устаревшей ['What is an Elasticsearch Index?'](https://www.elastic.co/blog/what-is-an-elasticsearch-index). В старой статье подробно рассказано, для примера: 
 ```
 An index is like a ‘database’ in a relational database. It has a mapping which defines multiple types.
@@ -40,7 +135,6 @@ Searching and querying takes the format of: http://localhost:9200/[index]/[type]
 	- [When do you use POST and when do you use GET?](http://stackoverflow.com/questions/46585/when-do-you-use-post-and-when-do-you-use-get)
 	- [What is the difference between POST and GET? {duplicate}](http://stackoverflow.com/questions/3477333/what-is-the-difference-between-post-and-get)
 	- [GET vs. POST](http://www.diffen.com/difference/GET-vs-POST-HTTP-Requests)
-- [Number of records limited to 1000 (R client on ElasticSearch)](http://stackoverflow.com/questions/41141541/number-of-records-limited-to-1000-r-client-on-elasticsearch). **The reason why the number of records is limited to 1000 is due to elasticsearch configuration. This was the answer I got from database maintenance team.**
 
 
 # 02.05.2017
@@ -88,11 +182,6 @@ Searching and querying takes the format of: http://localhost:9200/[index]/[type]
 
 # 25.04.2017
 ## R
-- [R 3.4.0 is released – with new speed upgrades and bug-fixes](https://www.r-statistics.com/2017/04/r-3-4-0-is-released-with-new-speed-upgrades-and-bug-fixes/)
-- [Speed up your R code using a just-in-time (JIT) compiler](https://www.r-statistics.com/2012/04/speed-up-your-r-code-using-a-just-in-time-jit-compiler/)
-- [Shiny - Web Framework for R › Warning in body(fun) : argument is not a function](https://groups.google.com/forum/#!topic/shiny-discuss/2kVPa8jDooI).
-This is a problem that occurs only with R 3.4. Now that CRAN has officially released 3.4 as the new stable version, we're addressing it: [https://github.com/rstudio/shiny/issues/1676](https://github.com/rstudio/shiny/issues/1676). Решение: ставим [dev версию shiny](https://github.com/rstudio/shiny).
-[Fix](https://github.com/dmpe/shiny/commit/b5f6333a7cdd57d08fb677e8d23b4b3f8de86684)
 - COOL! [Setup encrypted Rstudio and Shiny dashboard solution in 3 minutes](http://www.56n.dk/setup-encrypted-rstudio-and-shiny-dashboard-solution-in-3-minutes/). I have created a repository (https://github.com/56north/encrypted_dashboard) with code that automatically sets up Rstudio Server and Shiny Server behind and Nginx proxy with SSL certificates. The two servers share apps and packages so you can build cool stuff in Rstudio and deploy it immediately to Shiny. Woow!!! 😀
 Below is the readme from the repo. I do need help fixing some issues, but I am quite certain you guys can help with that. If we collaborate on this then we will all have a pretty awesome way to quickly setup an encrypted and easy to use dashboard environment.
 **Docker + Nginx + Let’s Encrypt + Rstudio + Shiny**
@@ -1208,8 +1297,6 @@ I am happy to introduce the padr package, which is now available on CRAN. If you
 - purr:
 	- [2-hour purrr tutorial](http://bit.ly/purrr-rstudioconf)
 	- [purrr tutorial. Lessons and examples](https://jennybc.github.io/purrr-tutorial/)
-- COOL! [RemarkJS Slides framework](https://remarkjs.com)
-- [An R package for creating slideshows with remark.js through R Markdown](https://github.com/yihui/xaringan).
 
 ## [More components of the R ecosystem](http://f.briatte.org/r/more-components-of-the-r-ecosystem)
 This note lists a few of the organizations that are pushing the R language forward, as of early 2017. R is happy language right now.
@@ -1993,6 +2080,7 @@ install.packages("ReporteRs", contriburl=cran_dir_url,
                  type = 'source', INSTALL_opts = "--no-multiarch")
 ```
 если точнее, то можно запустить такой командой: `install.packages("ReporteRs", INSTALL_opts = "--no-multiarch")`
+install.packages("tabulizerjars", INSTALL_opts = "--no-multiarch")
 
 ## R ggplot
 - [ggedit](https://www.r-statistics.com/2016/11/ggedit-interactive-ggplot-aesthetic-and-theme-editor/) – interactive ggplot aesthetic and theme editor.
