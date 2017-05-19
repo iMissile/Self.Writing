@@ -14,6 +14,72 @@ CTRL + ` (апостроф).
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 19.05.2017
+## R
+- padr
+	- COOL! [Introducing padr](https://edwinth.github.io/blog/padr-intro/)
+	- COOL! [Preparing Datetime Data for Analysis with padr and dplyr](https://edwinth.github.io/blog/padr-examples/)
+	- COOL! [Here is the new padr](https://edwinth.github.io/blog/padr-v0-3-0/)
+
+
+# 18.05.2017
+## R
+- [timekit: New Documentation, Function Improvements, Forecasting Vignette](http://www.business-science.io/code-tools/2017/05/17/timekit-0-3-0.html)
+- [Databases using R](https://rviews.rstudio.com/2017/05/17/databases-using-r/)
+- [Phylomoji with ggtree and emojifont](http://guangchuangyu.github.io/2017/05/phylomoji-with-ggtree-and-emojifont/)
+- [Easily add images to a correspondence analysis plot in R](https://www.displayr.com/easily-add-images-to-a-correspondence-analysis-plot-in-r/)
+- [xts Cheat Sheet: Time Series in R](https://www.datacamp.com/community/blog/r-xts-cheat-sheet)
+- [An Introduction to Spatial Data Analysis and Visualization in R](http://blog.revolutionanalytics.com/2017/05/cdrc-spatial-course.html)
+	- Сам крутейший туториал: [An Introduction to Spatial Data Analysis and Visualisation in R. 2016, Guy Lansley and James Cheshire](https://data.cdrc.ac.uk/tutorial/an-introduction-to-spatial-data-analysis-and-visualisation-in-r)
+- COOL. [x + x is not 2x](https://www.enchufa2.es/archives/x-x-is-not-2x.html)
+- [Variable-Width Lines in R](https://www.stat.auckland.ac.nz/~paul/Reports/VWline/vwline-intro/power-curve.html)
+
+
+# 17.05.2017
+## Visio
+- [Keyboard shortcuts Microsoft Visio 2013/ 2016](http://www.x-visual.com/en/p-id-software-plantengineer/keyboard-shortcuts-microsoft-visio-2013/)
+- [Visio 2010, arrow keys (left and right) are not working correctly](https://social.technet.microsoft.com/Forums/office/en-US/ffce85f1-0e0a-4e3f-8ab4-52dba822e9f4/visio-2010-arrow-keys-left-and-right-are-not-working-correctly?forum=visiogeneral)
+- [Help! Stop my arrow keys from moving the opposite direction.](https://answers.microsoft.com/en-us/msoffice/forum/msoffice_powerpoint-mso_other/help-stop-my-arrow-keys-from-moving-the-opposite/9a6d17d3-ddfd-4c0e-a34e-73fecc645183). "As you guessed this is caused by the default laguage being a right to left language."
+- Ответ найден здесь: [How to switch writing direction (LTR/RTL) in Word 2007?](https://superuser.com/questions/509520/how-to-switch-writing-direction-ltr-rtl-in-word-2007)
+
+# 16.05.2016
+## R
+- [Probability and Monte Carlo methods](https://cartesianfaith.com/2013/12/15/probability-and-monte-carlo-methods/)
+- [Pretty scatter plots with ggplot2](https://drsimonj.svbtle.com/pretty-scatter-plots-with-ggplot2)
+
+
+# 12.05.2017
+## DS
+- [Top 10 Skills in Data Science](http://customerthink.com/top-10-skills-in-data-science/)
+- [How to go about interpreting regression cofficients](https://itsalocke.com/interpreting-regression-cofficients/)
+- COOL! [Logistic regressions (in R)](https://itsalocke.com/logistic-regressions-r/)
+	- [Logistic Regressions](http://stephlocke.info/Rtraining/logisticregressions.html#/). Slides by Steph Locke, 2017-04-20. [SRC](https://github.com/stephlocke/Rtraining/blob/master/inst/slidedecks/stats/logisticregressions.Rmd)
+- [Quandl](https://www.quandl.com). What We Do.  Designed for professionals, Quandl delivers financial, economic and alternative data to over 200,000 people worldwide. 
+Quandl offers essential financial and economic data alongside a suite of unique, alpha-generating alternative datasets. With our unrivaled consumption experience, we have cemented a reputation for understanding and delivering what professional quantitative analysts need and want. Quandl’s customers include the world’s top hedge funds, asset managers and investment banks.
+
+## R
+- [Which linear model is best?](https://realdataweb.wordpress.com/2017/05/10/which-linear-model-is-best/). Хороший комментарий внизу: "You should evaluate your model on the test data, not the train data. Adding more predictors will always give a better result on the training set."
+- [TIDYQUANT: NEW TOOLS FOR PERFORMING FINANCIAL ANALYSIS WITHIN THE TIDY ECOSYSTEM](http://www.business-science.io/technical-papers/2017/05/11/tidyquant-new-tools-financial-analysis.html). Статья на Gitbub: ["New Tools for Performing Financial AnalysisWithin the “Tidy” Ecosystem"](https://github.com/business-science/reports/blob/master/new_financial_tools_tidy_ecosystem.pdf)
+- [Visualising uncertainty in time-series using animations](http://www.seascapemodels.org/rstats/2017/05/14/timeseries-uncertainty-gif.html)
+
+# 11.05.2017
+## R. Solving Beeline task
+- [Measuring function execution time in R](http://stackoverflow.com/questions/6262203/measuring-function-execution-time-in-r)
+- [Stopwatch function in R](http://stackoverflow.com/questions/1716012/stopwatch-function-in-r/1716344#1716344)
+- [How to delete columns that contain ONLY NAs?](http://stackoverflow.com/questions/15968494/how-to-delete-columns-that-contain-only-nas). Another option with `Filter`:
+`Filter(function(x) !all(is.na(x)), df)`.
+- COOL! [Remove columns from dataframe where ALL values are NA](http://stackoverflow.com/questions/2643939/remove-columns-from-dataframe-where-all-values-are-na). Приведены benchmark-и
+- COOL! [Remove rows where all variables are NA using dplyr](http://stackoverflow.com/questions/41609912/remove-rows-where-all-variables-are-na-using-dplyr). 
+Benchmarking. @DavidArenburg suggested a number of alternatives. Here's a simple benchmarking of them.
+- [A Guide to the Tidyverse – Tidyr](http://www.fabianheld.com/tidyr/)
+- [Introduction to readr](http://readr.tidyverse.org/articles/readr.html)
+- [Replace character at certain location within string in R](http://stackoverflow.com/questions/36596928/replace-character-at-certain-location-within-string-in-r)
+- [Use forcat::fct_reorder to sort plots within facet_wrap](http://stackoverflow.com/questions/40381987/use-forcatfct-reorder-to-sort-plots-within-facet-wrap)
+- [Ordering categories within ggplot2 facets](https://drsimonj.svbtle.com/ordering-categories-within-ggplot2-facets)
+- [Ordering within facets #1902](https://github.com/tidyverse/ggplot2/issues/1902)
+
+
+
 # 10.05.17
 ## R
 - COOL! [Installing Packages without Internet](http://www.mango-solutions.com/wp/2017/05/installing-packages-without-internet/) by Graham Parsons (Mango Solutions)
@@ -55,6 +121,9 @@ This is a problem that occurs only with R 3.4. Now that CRAN has officially rele
 - [Introduction to R Graphics with ggplot2](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html)
 - COOL! [An introduction to ggplot2](http://seananderson.ca/ggplot2-FISH554/). February 2015, by Sean C. Anderson
 - COOL! [Data wrangling, exploration, and analysis with R. UBC STAT 545A and 547M](http://stat545.com/)
+	- [STAT 545. Be the boss of your factors](http://stat545.com/block029_factors.html)
+- [R exercises](http://www.r-exercises.com)
+
 
 
 
@@ -114,6 +183,7 @@ Tip. If outputting information to a user that simply updates them on the status 
 
 ## ELK
 - [Glossary of terms](https://www.elastic.co/guide/en/elasticsearch/reference/current/glossary.html)
+- [Use SQL to query Elasticsearch](https://github.com/NLPchina/elasticsearch-sql). А также см. видео на сайте elastic: [Elasticsearch for SQL Users](https://www.elastic.co/videos/elasticsearch-for-sql-users), [Elasticsearch SQL](https://www.elastic.co/elasticon/conf/2017/sf/elasticsearch-sql)
 - [Elasticsearch Reference » Query DSL » Full text queries » Query String Query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax)
 - [Elasticsearch in 5 minutes](http://www.elasticsearchtutorial.com/elasticsearch-in-5-minutes.html)
 - [Using Query String Queries in Elasticsearch](https://www.compose.com/articles/using-query-string-queries-in-elasticsearch/)
@@ -351,6 +421,11 @@ autoplot(mdeaths) + geom_forecast(h=36, level=c(50,80,95))
 # 04.04.2017
 ## Wolfram
 - [Wolfram Workbench](http://www.wolfram.com/workbench/)
+- [How to convert a column of a Dataset into a list {closed}](https://mathematica.stackexchange.com/questions/97649/how-to-convert-a-column-of-a-dataset-into-a-list)
+- Forbid Simplification:
+	- [How can I prevent Mathematica from evaluating or “simplifying” an expression?](https://mathematica.stackexchange.com/questions/22431/how-can-i-prevent-mathematica-from-evaluating-or-simplifying-an-expression). As stated `HoldForm` is your friend here. Also see `Defer` if you intend to reuse the output.
+	- [How to prevent Mathematica combining similar terms?](https://mathematica.stackexchange.com/questions/26536/how-to-prevent-mathematica-combining-similar-terms)
+	- [How to NOT simplify fraction](https://mathematica.stackexchange.com/questions/71486/how-to-not-simplify-fraction)
 - [How to know each variable used how much RAM](http://mathematica.stackexchange.com/questions/70182/how-to-know-each-variable-used-how-much-ram)
 ```
 Column@Thread@{Names[$Context<>"*"], ByteCount[#] & /@ ToExpression /@ Names[$Context<>"*"]}
@@ -550,9 +625,6 @@ UniversalPOS annotation for languages: Ancient_Greek, Ancient_Greek-PROIEL, Arab
 - [Crime Analysis with Shiny & R](http://www.treselle.com/blog/crime-analysis-with-shiny-r/)
 - [How Do You Discover R Packages?](http://juliasilge.com/blog/Package-Search/)
 - [Exploring 2017 Retail Store Closings with R](https://rud.is/b/2017/03/19/exploring-2017-retail-store-closings-with-r/)
-- padr
-	- COOL! [Introducing padr](https://edwinth.github.io/blog/padr-intro/)
-	- COOL! [Preparing Datetime Data for Analysis with padr and dplyr](https://edwinth.github.io/blog/padr-examples/)
 
 - [Safari Web Content Guide. Configuring the Viewport](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html)
 	- [IPad Scroll Issues with Fixed Content](https://weblog.west-wind.com/posts/2015/jun/05/ipad-scroll-issues-with-fixed-content)
@@ -2737,8 +2809,8 @@ Our trademarks also include RF(tm), RandomForests(tm), RandomForest(tm) and Rand
 - [the most useful R function of the week: unnest from tidyr](http://bioinfoblog.it/2015/02/the-most-useful-r-command-unnest-from-tidyr/)
 - [Crossprod blog](http://nacnudus.github.io/crossprod/)
 - Queuing theory with R. The simmer package is a relatively new R package for discrete event simulation (DES). It’s an exciting development, because there isn’t a lot of open-source DES software. SimPy seems to be the only serious competitor for teaching DES and queueing theory.
-	- [Simmer vs SimPy: The Bank, Part I](http://nacnudus.github.io/crossprod/simmer-vs-simpy-the-bank-part-i)
-	- [Simmer vs SimPy: The Bank, Part II](http://nacnudus.github.io/crossprod/simmer-vs-simpy-the-bank-part-ii)
+	- [Simmer vs SimPy: The Bank, Part I](https://nacnudus.github.io/crossprod/post/2016-05-11-simmer-bank-1/)
+	- [Simmer vs SimPy: The Bank, Part II](https://nacnudus.github.io/crossprod/post/2016-06-06-simmer-bank-2/)
 	- [Hacking the Data Science Radar with Data Science]
 - [Introduction to R](https://ramnathv.github.io/pycon2014-r/). These are notes for an introductory R workshop I am teaching for Python Programmers.
 - [Will Stanton's Data Science Blog](http://will-stanton.com/)
