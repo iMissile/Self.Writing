@@ -14,6 +14,38 @@ CTRL + ` (апостроф).
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 24.05.2017
+## R 
+- COOL! [Create smooth animations in R with the tweenr package](http://blog.revolutionanalytics.com/2017/05/tweenr.html)
+	- [tweenr](https://github.com/thomasp85/tweenr) is a small package that makes it easy to interpolate your data between different states, specifying the length of each change, the easing of the transition and how many intermediary steps should be generated. tweenr works particularly well with gganimate but can be used for any case where interpolation of data is needed. All functions are vectorized so in any case you'll get better performance than using approx and colorRamp.
+	- COOL! [Recreating the Datasaurus Dozen Using tweenr and ggplot2](https://wjakethompson.github.io/post/datasaurus-dozen/)
+- [NEW YORK R CONFERENCE](http://www.rstats.nyc/)
+- [Open software engineering platform and fun adventure game http://phacility.com/phabricator/](https://github.com/phacility/phabricator)
+	- [Phacility](https://phacility.com/phabricator/). Discuss. Plan. Code. Review. Test. Every application your project needs, all in one tool.
+
+# 23.05.2017
+## R
+- [Can dplyr join on multiple columns or composite key?](https://stackoverflow.com/questions/26611717/can-dplyr-join-on-multiple-columns-or-composite-key). You can pass a named vector of length greater than 1 to the by argument of `left_join()`: `left_join(d1, d2, by = c("x" = "x2", "y" = "y2"))`
+- [Remove duplicated rows using dplyr](https://stackoverflow.com/questions/22959635/remove-duplicated-rows-using-dplyr)
+- [Cheatsheet for dplyr join functions](http://stat545.com/bit001_dplyr-cheatsheet.html)
+- [Yhat Blog: Reducing your R memory footprint by 7000x](http://blog.yhat.com/posts/reducing-your-r-memory-footprint-by-7000x.html) by Greg | December 17, 2014 
+- COOL! [Arranging subplots with ggplot2](https://ikashnitsky.github.io/2017/align-six-maps/). Интересная раскладка графиков. Есть стрелки между графиками.
+- [Connecting R to an Oracle Database](http://geraldbelton.com/connecting-r-to-an-oracle-database/#sthash.MAfKDx0B.dpbs)
+- [Slides, videos, and tweets from the 2017 New York R Conference](http://varianceexplained.org/r/nyr-conference/)
+
+
+# 22.05.2017
+## R
+- [Review of Efficient R Programming](https://rviews.rstudio.com/2017/05/19/efficient_r_programming/)
+- COOL! [A Note on on.exit()](https://yihui.name/en/2017/05/a-note-on-on-exit/)
+- [Text Mining with R: A Tidy Approach]()http://tidytextmining.com/) by Julia Silge and David Robinson, 2017-05-07
+- [New series: R and big data (concentrating on Spark and sparklyr)](http://www.win-vector.com/blog/2017/05/new-series-r-and-big-data-concentrating-on-spark-and-sparklyr/)
+- [Using R: When using do in dplyr, don’t forget the dot](https://martinsbioblogg.wordpress.com/2017/05/21/using-r-when-using-do-in-dplyr-dont-forget-the-dot/)
+- [A Very Palette-able Post](https://rud.is/b/2017/05/21/a-very-pallete-able-post/)
+- [Improving automatic document production with R](https://itsalocke.com/improving-automatic-document-production-with-r/)
+- [Hadley Wickham: Awesome explanation of tidyr::complete() by @jebyrnes](https://twitter.com/hadleywickham/status/695651076033290240): [You Complete Me](http://www.imachordata.com/you-complete-me/)#rstats
+
+
 # 19.05.2017
 ## R
 - padr
@@ -123,7 +155,8 @@ This is a problem that occurs only with R 3.4. Now that CRAN has officially rele
 - COOL! [Data wrangling, exploration, and analysis with R. UBC STAT 545A and 547M](http://stat545.com/)
 	- [STAT 545. Be the boss of your factors](http://stat545.com/block029_factors.html)
 - [R exercises](http://www.r-exercises.com)
-
+- [tidyr tutorial](http://www.jvcasillas.com/tidyr_tutorial/) by Joseph V. Casillas. Updated: 2015-10-02 16:03:10
+- [Data wrangling with dplyr and tidyr](http://benbestphd.com/dplyr-tidyr-tutorial/) by Tyler Clavelle & Dan Ovando. 2016-03-11
 
 
 
@@ -421,6 +454,9 @@ autoplot(mdeaths) + geom_forecast(h=36, level=c(50,80,95))
 # 04.04.2017
 ## Wolfram
 - [Wolfram Workbench](http://www.wolfram.com/workbench/)
+- [How to | Import a Spreadsheet](https://reference.wolfram.com/language/howto/ImportASpreadsheet.html)
+- Filter Lists:
+	- [Removing all values from a list that satisfy a given condition](https://mathematica.stackexchange.com/questions/64995/removing-all-values-from-a-list-that-satisfy-a-given-condition)
 - [How to convert a column of a Dataset into a list {closed}](https://mathematica.stackexchange.com/questions/97649/how-to-convert-a-column-of-a-dataset-into-a-list)
 - Forbid Simplification:
 	- [How can I prevent Mathematica from evaluating or “simplifying” an expression?](https://mathematica.stackexchange.com/questions/22431/how-can-i-prevent-mathematica-from-evaluating-or-simplifying-an-expression). As stated `HoldForm` is your friend here. Also see `Defer` if you intend to reuse the output.
