@@ -14,6 +14,189 @@ CTRL + ` (апостроф).
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 08.06.2017
+## R
+- [Netlify](https://www.netlify.com/). Write frontend code. Push it. We handle the rest. CDN, Continuous deployment, 1 click HTTPS, and all the services you need. From instant prototypes to global enterprises.
+- [Consider Netlify instead of GitHub Pages for Your Static Websites](https://yihui.name/en/2017/06/netlify-instead-of-github-pages/). GitHub Pages is Dead, Long Live Netlify!
+- THE R GRAPH GALLERY. [GET THE BEST FROM GGPLOTLY](http://www.r-graph-gallery.com/2017/06/07/get-the-best-from-ggplotly/). JUNE 7, 2017 | HOLTZ
+- COOL! [Building Dot Density Maps with UK Census Data in R](http://blog.cultureofinsight.com/2017/06/building-dot-density-maps-with-uk-census-data-in-r/)
+
+## Shiny
+- Drilldown
+	- [Creating drill down report in R Shiny](https://stackoverflow.com/questions/43263879/creating-drill-down-report-in-r-shiny)
+	- [Get Selected Row From DataTable in Shiny App](https://stackoverflow.com/questions/28274584/get-selected-row-from-datatable-in-shiny-app)
+	- [Using DT in Shiny. 2.1 Selecting Rows/Columns/Cells](https://rstudio.github.io/DT/shiny.html)
+	- [A Client-side Table](https://yihui.shinyapps.io/DT-rows/)
+	- [Selecting rows of data](https://shiny.rstudio.com/articles/selecting-rows-of-data.html). Added: 13 May 2015
+	- [Generating downloadable reports](https://shiny.rstudio.com/articles/generating-reports.html)
+## Random
+- [CPU-Z] is a freeware that gathers information on some of the main devices of your system : 
+	- Processor name and number, codename, process, package, cache levels.
+	- Mainboard and chipset.
+	- Memory type, size, timings, and module specifications (SPD).
+	- Real time measurement of each core's internal frequency, memory frequency.
+- [Как не разбирая ноутбук узнать все характеристики установленных в него планок оперативной памяти](http://remontcompa.ru/589-kak-ne-razbiraya-noutbuk-uznat-vse-harakteristiki-ustanovlennyh-v-nego-planok-operativnoy-pamyati.html).
+- [Как узнать, сколько оперативной памяти поддерживает ноутбук](http://remontcompa.ru/888-kak-uznat-skolko-operativnoy-pamyati-podderzhivaet-noutbuk.html).
+	**Важное замечание**: Друзья, пожалуйста не забывайте, что если у вас процессор нового поколения Intel Core i3, Intel Core i5, Intel Core i7, (тоже относится к AMD), то контроллер оперативной памяти у вас находится НЕ на северном мосту, а в самом процессоре и модули оперативной памяти управляются процессором, а не материнской платой. Поэтому, максимальный объём оперативной памяти также нужно смотреть в описании вашего процессора или на его официальном сайте.
+- [Данные процессора из Lebovo v580c](http://ark.intel.com/products/72164/Intel-Core-i5-3230M-Processor-3M-Cache-up-to-3_20-GHz-rPGA)
+- [OpenSeadragon](http://openseadragon.github.io/). An open-source, web-based viewer for high-resolution zoomable images, implemented in pure JavaScript, for desktop and mobile.
+
+# 06.06.2017
+## R
+- [There is usually more than one way in R](http://www.win-vector.com/blog/2017/06/there-is-usually-more-than-one-way-in-r/)
+- [R⁶ — Scraping Images To PDFs](https://rud.is/b/2017/06/05/r%E2%81%B6-scraping-images-to-pdfs/)
+- [Apache Parquet](http://parquet.apache.org/) is a columnar storage format available to any project in the Hadoop ecosystem, regardless of the choice of data processing framework, data model or programming language.
+	- [Dremel made simple with Parquet](https://blog.twitter.com/engineering/en_us/a/2013/dremel-made-simple-with-parquet.html)
+	- [Как использовать Parquet и не поскользнуться](https://habrahabr.ru/company/wrike/blog/279797/)
+	- [Производительность Apache Parquet](https://habrahabr.ru/post/282552/)
+	- [Choosing an HDFS data storage format- Avro vs. Parquet and more](https://www.slideshare.net/StampedeCon/choosing-an-hdfs-data-storage-format-avro-vs-parquet-and-more-stampedecon-2015) - StampedeCon 2015 
+- [Distributed SQL Query Engine for Big Data](https://prestodb.io/). Конкурент Apache Drill. Facebook uses Presto for interactive queries against several internal data stores, including their 300PB data warehouse.
+	- [RPresto: DBI Connector to Presto](https://cran.r-project.org/web/packages/RPresto/index.html)
+- [Apache Drill. Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud Storage](https://drill.apache.org/)
+	- [An Introduction to Apache Drill](https://www.rittmanmead.com/blog/2016/08/an-introduction-to-apache-drill/) by Robin Moffatt
+	- [Drill in 10 Minutes](https://drill.apache.org/docs/drill-in-10-minutes/)
+	- [Drilling Into CSVs — Teaser Trailer](https://rud.is/b/2017/05/31/drilling-into-csvs-teaser-trailer/)
+	- [sergeant: An R Boot Camp for Apache Drill](https://rud.is/b/2016/12/20/sergeant-a-r-boot-camp-for-apache-drill/). You can download Drill from https://drill.apache.org/download/ (use "Direct File Download"). I use `/usr/local/drill` as the install directory.
+	- [cran/DrillR](https://github.com/cran/DrillR) This is a read-only mirror of the CRAN R package repository. DrillR — R Driver for Apache Drill
+	- [Tools to Transform and Query Data with the 'Apache Drill' 'REST API' & JDBC Interface, Plus 'dplyr' and 'DBI' Interfaces in R https://hrbrmstr.github.io/sergeant/](https://github.com/hrbrmstr/sergeant)
+
+# 05.06.2017
+## R
+- [Shiny Server on Docker: CentOS 7 Edition](http://www.datascienceriot.com/r/shiny-docker/)
+- ebook ["R Programming with Minecraft"](https://ropenscilabs.github.io/miner_book/index.html)
+- Может пригодиться для обучения. [R Weekly Bulletin Vol – X](https://www.quantinsti.com/blog/r-weekly-bulletin-vol-x/)
+- [Global choropleth maps of military expenditure](http://ellisp.github.io/blog/2017/06/04/military-gdp). Сделали анимацию вращающегося глобуса
+- Попытка человека написать свой пакет для работы с API публичного сайта данных. [Packaging the TheyWorkForYou API](http://conjugateprior.org/2017/06/packaging-the-twfy-api/)
+- [Rstats client for ClickHouse (https://clickhouse.yandex)](https://github.com/hannesmuehleisen/clickhouse-r)
+
+# 01.06.2017
+## Yandex ClickHouse
+- [ClickHouse: очень быстро и очень удобно](https://habrahabr.ru/post/322724/). Весьма подробная статья. Расшифровка доклада Highload++ 2016
+- [ODBC driver for ClickHouse https://clickhouse.yandex](https://github.com/yandex/clickhouse-odbc).
+	- [Релизы под Windows]https://github.com/yandex/clickhouse-odbc/releases)
+- [ClickHouse Документация](https://clickhouse.yandex/docs/ru/)
+
+## R
+- [The steps to start a Shiny app from scratch are:...](http://r-posts.com/shiny-data-presentation-with-an-extra/) `showLogs(appPath = getwd(), appFile = NULL, appName = NULL, account = NULL, entries = 50, streaming = FALSE)`
+- [let there be progress. investigating 'wrapr' for easier dplyr programming](http://johnmackintosh.com/2017-05-31-let-there-be-progress/)
+- [The Run(chart)ing Man. Measurement for improvement in healthcare with R and Qlik](http://johnmackintosh.com/2017-04-06-the-run-chart-ing-man/)
+- [Simple bash script for a fresh install of R and its dependencies in Linux](https://msperlin.github.io/2017-06-01-Instaling-R-in-Linux/)
+- [A tidy model pipeline with twidlr and broom](https://drsimonj.svbtle.com/a-tidy-model-pipeline-with-twidlr-and-broom)
+- [April New Package Picks](https://rviews.rstudio.com/2017/05/30/april-new-package-picks/)
+- [Convert row names into first column](https://stackoverflow.com/questions/29511215/convert-row-names-into-first-column)
+
+
+# CURRENT (07.05.2017)
+## R & presentation
+- [Everything You Need to Know About HTML’s ‘pre’ Element](https://www.sitepoint.com/everything-need-know-html-pre-element/)
+- COOL! [RemarkJS Slides framework](https://remarkjs.com)
+	- [An R package for creating slideshows with remark.js through R Markdown](https://github.com/yihui/xaringan).
+	- [Liminal. A Theme for Remark by Ole Petter Bang](http://www.jmlilly.net/liminal/talks/template.html#1)
+	- [easily create slideshow presentations from markdown with remark.js](http://tech.graze.com/2015/07/31/easily-create-slideshow-presentations-from-markdown-with-remark-js/)
+	- [Markdown Slides online editor](https://codepen.io/jayeshcp/pen/MepBEZ)
+	- [Coloured Terminal Listings in remark](http://joshbode.github.io/remark/ansi.html)
+	- Тут код на черном фоне. Note: code must be in a [GFM](https://help.github.com/categories/writing-on-github/) fenced block with "terminal" as the syntax-type as above.
+	- [markdown-styles. CSS stylesheets / themes for Markdown](http://mixu.net/markdown-styles/)
+	- А еще смотрим файлы `R.css`, которые лежат в пакетах `Rmarkdown`, `xaringan`, 'blogdown'
+- [reveal.js: The HTML Presentation Framework](http://lab.hakim.se/reveal-js/)
+- [RemarkJS. Feature request: image scaling #72](https://github.com/gnab/remark/issues/72). Closed
+- [Use CSS to Center Images and Other HTML Objects](https://www.thoughtco.com/center-images-with-css-3466389)
+- [How to change image size Markdown?](https://stackoverflow.com/questions/14675913/how-to-change-image-size-markdown)
+- [Custom JavaScript visualizations in RMarkdown](http://livefreeordichotomize.com/2017/01/24/custom-javascript-visualizations-in-rmarkdown/)
+
+
+## Разбираем remark.js
+1. Меняем размер шрифта в коде (импортируется из remark)
+```
+.remark-code {
+	font-size:18px
+}
+```
+2. Меняем семейство шрифта (под виндой есть только Book Antiqua), импортируется из `xaringan.css`:
+```
+body { font-family: 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
+```
+- [Droid Serif](https://fonts.google.com/specimen/Droid+Serif) -- увы, нет русских букв.
+- [Palatino Linotype](https://www.linotype.com/57056/palatino-linotype-family.html). Платный, однако, почти $190!
+Для себя я попробовал сделать такую замену:
+```
+body { font-family: 'GE Inspira', 'Roboto', 'Cambria', 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
+```
+Положил в корень, в документе исправил шапку:
+```
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["default", "mediatel.css"]
+```
+3. Пробуем изменить расстояние между строчками:
+- [C21: Specifying line spacing in CSS](https://www.w3.org/TR/WCAG20-TECHS/C21.html): управляется параметром `line-height:200%`
+- [Comments in CSS](https://css-tricks.com/snippets/css/comments-in-css/)
+4. Смотрим настройки колорера в [highlight.js: Syntax highlighting for the Web](https://highlightjs.org/)
+	- [Color themes for highlight.js](http://jmblog.github.io/color-themes-for-highlightjs/)
+	- [How to change the theme and language of syntax highlighting in reveal.js](https://stackoverflow.com/questions/27257931/how-to-change-the-theme-and-language-of-syntax-highlighting-in-reveal-js)
+5. [Debugging CSS](https://benfrain.com/debugging-css/)
+
+## R Learning (готовим курс)
+- [ggplot2 Tutorial. An Introduction to Data Visualisation in R](https://rpubs.com/g_jw/ggplot2_tutorial) by Gert Janssenswillen. (20/02/2017)
+- [Data wrangling in R](http://jules32.github.io/2016-07-12-Oxford/dplyr_tidyr/) by Julie Lowndes. July 12, 2016
+- [Data Processing with dplyr & tidyr](https://rpubs.com/bradleyboehmke/data_wrangling) by Brad Boehmke. February 13th, 2015
+- [DataVis.ca. Michael Friendly @ York University](www.datavis.ca)
+	- COOL! [An Introduction to R Graphics](http://www.datavis.ca/courses/RGraphics/) by Michael Friendly, SCS Short Course, March, 2017
+- [Introduction to R Graphics with ggplot2](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html)
+- COOL! [An introduction to ggplot2](http://seananderson.ca/ggplot2-FISH554/). February 2015, by Sean C. Anderson
+- COOL! [Data wrangling, exploration, and analysis with R. UBC STAT 545A and 547M](http://stat545.com/)
+	- [STAT 545. Be the boss of your factors](http://stat545.com/block029_factors.html)
+- [R exercises](http://www.r-exercises.com)
+- [tidyr tutorial](http://www.jvcasillas.com/tidyr_tutorial/) by Joseph V. Casillas. Updated: 2015-10-02 16:03:10
+- [Data wrangling with dplyr and tidyr](http://benbestphd.com/dplyr-tidyr-tutorial/) by Tyler Clavelle & Dan Ovando. 2016-03-11
+- [Очень хороший набор мануалов](http://tutorials.iq.harvard.edu/R/)
+
+
+# 31.05.2017
+## R
+- [rOpenSci Unconf](http://unconf17.ropensci.org/). May 25 - 26 2017 • Los Angeles • CA
+	- [Projects from the 2017 rOpenSci Unconf](https://github.com/ropenscilabs/runconf17-projects)
+	- [L.A. Unconf-idential : a.k.a. an rOpenSci #runconf17 Retrospective](https://rud.is/b/2017/05/28/l-a-unconf-idential-a-k-a-an-ropensci-runconf17-retrospective/)
+	- COOL! [websocket client for R!](https://github.com/ropenscilabs/webrockets). Webrockets is an #unconf17 project that implements a basic websocket listener in R. The implementation draws heavily on @hrbmstr's wrapper of easywsclient in https://github.com/ropenscilabs/decapitated.
+	- COOL! Классные спарклайны. [skimr. A frictionless, pipeable approach to dealing with summary statistics](https://github.com/ropenscilabs/skimr). The goal of skimr is to provide a frictionless approach to dealing with summary statistics iteratively and interactively as part of a pipeline, and that conforms to the principle of least surprise.
+
+# 29.05.2017
+## R
+- [rtdists 0.7-2: response time distributions now with Rcpp and faster](http://singmann.org/rtdists-0-7-2-response-time-distributions-now-with-rcpp-and-faster/)
+- [RQGIS release 1.0.0](https://jannesm.wordpress.com/2017/05/26/rqgis-release-1-0-0/). May 26, 2017 / jannesm	
+Today we are proud to announce a major release of the RQGIS package providing an interface between R and QGIS. We have completeley rewritten RQGIS by now using reticulate to establish a tunnel to the Python QGIS API.
+- COOL! [5 ways to measure running time of R code](http://www.alexejgossmann.com/benchmarking_r/)
+- [Managing Spark data handles in R](http://www.win-vector.com/blog/2017/05/managing-spark-data-handles-in-r/)
+
+## Traffic
+- [Что такое TLS](https://habrahabr.ru/post/258285/)
+- [Описание протоколов SSL/TLS](https://www.cryptopro.ru/sites/default/files/docs/TLS_description.pdf)
+- [Анализ SSL/TLS трафика в Wireshark](https://habrahabr.ru/company/billing/blog/261301/)
+- [Ключи, шифры, сообщения: как работает TLS](https://tls.dxdt.ru/tls.html)
+- [Первые несколько миллисекунд HTTPS соединения](https://habrahabr.ru/post/191954/)
+
+
+# 25.05.2017
+## R
+- [Regular Expression & Treemaps to Visualize Emergency Department Visits](https://incidental-ideas.org/2017/05/25/regular-expression-treemaps-to-visualize-emergency-department-visits/)
+- [Subplots in maps with ggplot2](https://ikashnitsky.github.io/2017/subplots-in-maps/)
+- [Translating Weird R Errors](http://rforpublichealth.blogspot.ru/2013/01/translating-weird-r-errors.html). Рассматривается и ошибка типа `Error in $<-.data.frame: replacement has 0 rows, data has 2800`
+- How to read very large XML file
+	- Первоисточник: [How to read large (~20 GB) xml file in R?](How to read large (~20 GB) xml file in R?). Объяснение про используемый closures [здесь](https://stackoverflow.com/a/7547433/6835084)
+	- [Storing specific XML node values with R's xmlEventParse](https://stackoverflow.com/questions/7536754/storing-specific-xml-node-values-with-rs-xmleventparse)
+	- [Read large xml into Dataframe r](https://stackoverflow.com/questions/30781968/read-large-xml-into-dataframe-r)
+	- [Reading from a very large XML file in R](https://stackoverflow.com/questions/39269838/reading-from-a-very-large-xml-file-in-r)
+- [Making a Website Using Blogdown, Hugo, and GitHub pages.](https://proquestionasker.github.io/blog/Making_Site/)
+- xaringan & remark.js
+	- [Presentation Ninja](https://github.com/yihui/xaringan)
+	- [Making Websites with R Markdown and blogdown](https://slides.yihui.name/2017-rstudio-webinar-blogdown-Yihui-Xie.html)
+	- [xaringan wiki](https://github.com/yihui/xaringan/wiki)
+	- [remark.js](https://remarkjs.com)
+	- [remark.js wiki](https://github.com/gnab/remark/wiki)
+	- [Gregory Blomquist remark.js presentations with rmarkdown](https://bitbucket.org/snippets/gregblomquist/yoXxz/remarkjs-presentations-with-rmarkdown)
+- [RMarkdown сhunk options and package options](https://yihui.name/knitr/options/)
+
 # 24.05.2017
 ## R 
 - COOL! [Create smooth animations in R with the tweenr package](http://blog.revolutionanalytics.com/2017/05/tweenr.html)
@@ -22,6 +205,10 @@ CTRL + ` (апостроф).
 - [NEW YORK R CONFERENCE](http://www.rstats.nyc/)
 - [Open software engineering platform and fun adventure game http://phacility.com/phabricator/](https://github.com/phacility/phabricator)
 	- [Phacility](https://phacility.com/phabricator/). Discuss. Plan. Code. Review. Test. Every application your project needs, all in one tool.
+- [Hugo :: A fast and modern static website engine](https://gohugo.io/)
+- [Blogdown](https://github.com/rstudio/blogdown). A open-source (GPL-3) R package to generate static websites based on R Markdown and Hugo. You can install the package via: `devtools::install_github('rstudio/blogdown')`
+- [RStudio daily builds](https://www.rstudio.org/download/daily/desktop/windows/)
+
 
 # 23.05.2017
 ## R
@@ -136,27 +323,6 @@ This is a problem that occurs only with R 3.4. Now that CRAN has officially rele
 - [Moving from Beamer to R Markdown](http://rmarkdown.rstudio.com/articles_beamer.html)
 - [Simple manual RMarkdown tables that look good in HTML, PDF and DOCX](http://stackoverflow.com/questions/19997242/simple-manual-rmarkdown-tables-that-look-good-in-html-pdf-and-docx)
 - [A few methods for making tables in rmarkdown](https://rpubs.com/benmarwick/tables-rmarkdown)
-
-
-# 07.05.2017
-## R & presentation
-- COOL! [RemarkJS Slides framework](https://remarkjs.com)
-	- [An R package for creating slideshows with remark.js through R Markdown](https://github.com/yihui/xaringan).
-	- [Liminal. A Theme for Remark by Ole Petter Bang](http://www.jmlilly.net/liminal/talks/template.html#1)
-
-
-## R Learning (готовим курс)
-- [Data wrangling in R](http://jules32.github.io/2016-07-12-Oxford/dplyr_tidyr/) by Julie Lowndes. July 12, 2016
-- [Data Processing with dplyr & tidyr](https://rpubs.com/bradleyboehmke/data_wrangling) by Brad Boehmke. February 13th, 2015
-- [DataVis.ca. Michael Friendly @ York University](www.datavis.ca)
-	- COOL! [An Introduction to R Graphics](http://www.datavis.ca/courses/RGraphics/) by Michael Friendly, SCS Short Course, March, 2017
-- [Introduction to R Graphics with ggplot2](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html)
-- COOL! [An introduction to ggplot2](http://seananderson.ca/ggplot2-FISH554/). February 2015, by Sean C. Anderson
-- COOL! [Data wrangling, exploration, and analysis with R. UBC STAT 545A and 547M](http://stat545.com/)
-	- [STAT 545. Be the boss of your factors](http://stat545.com/block029_factors.html)
-- [R exercises](http://www.r-exercises.com)
-- [tidyr tutorial](http://www.jvcasillas.com/tidyr_tutorial/) by Joseph V. Casillas. Updated: 2015-10-02 16:03:10
-- [Data wrangling with dplyr and tidyr](http://benbestphd.com/dplyr-tidyr-tutorial/) by Tyler Clavelle & Dan Ovando. 2016-03-11
 
 
 
@@ -455,6 +621,7 @@ autoplot(mdeaths) + geom_forecast(h=36, level=c(50,80,95))
 ## Wolfram
 - [Wolfram Workbench](http://www.wolfram.com/workbench/)
 - [How to | Import a Spreadsheet](https://reference.wolfram.com/language/howto/ImportASpreadsheet.html)
+- [How to display a different number of significant digits in each column of TableForm output?](https://mathematica.stackexchange.com/questions/6197/how-to-display-a-different-number-of-significant-digits-in-each-column-of-tablef)
 - Filter Lists:
 	- [Removing all values from a list that satisfy a given condition](https://mathematica.stackexchange.com/questions/64995/removing-all-values-from-a-list-that-satisfy-a-given-condition)
 - [How to convert a column of a Dataset into a list {closed}](https://mathematica.stackexchange.com/questions/97649/how-to-convert-a-column-of-a-dataset-into-a-list)
@@ -1448,6 +1615,7 @@ Go and explore, and happy new year!
 ## R
 - [R exercises](http://r-exercises.com/). Очень неплохой ресурс с заданиями по R.
 - COOL! Классный пакет для Simmer [Discrete-Event Simulator for R](http://fishyoperations.com/2017/01/12/extensions-for-simmer.html). Вообще, на этом сайте очень много записей про симуляцию.
+- [simmer 3.6.2](https://www.enchufa2.es/archives/simmer-3-6-2.html)
 - [Discrete Event Simulation using R: Hospital Capacity Planning.](https://www.codeproject.com/Articles/1111093/Discrete-Event-Simulation-using-R-Hospital-Capacit)
 
 

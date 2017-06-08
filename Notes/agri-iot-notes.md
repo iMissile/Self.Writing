@@ -861,6 +861,10 @@ index.number_of_replicas: 0
 . . .
 ```
 
+### Выгрузка документов из ES
+- [Dump all documents of Elasticsearch](https://stackoverflow.com/questions/19243074/dump-all-documents-of-elasticsearch)
+- [Import and export tools for elasticsearch](https://github.com/taskrabbit/elasticsearch-dump)
+
 ### ES GUI
 - [Elastic HQ](http://www.elastichq.org/). Sleek, intuitive, and powerful ElasticSearch Management and Monitoring.
 У меня папка плагинов ES 5.x (для инсталляции на системе) лежит здесь: `/usr/share/elasticsearch/plugins
@@ -878,13 +882,20 @@ Packetbeat can also be installed from our package repositories using apt or yum.
 
 ### Настройка конфиг файла PB
 Файл расположен тут -- `/etc/packetbeat/packetbeat.yml`
+Пример полных настроек лежит тут: `/etc/packetbeat/packetbeat.full.yml`
 Смотрим сетевые интерфейсы следюущими командами, см ['How can I find available network interfaces?'](https://unix.stackexchange.com/questions/125400/how-can-i-find-available-network-interfaces):
 ```
 ifconfig -a # The simplest method I know to list all of your interfaces is
 ip link show # If you're on a system where that has been made obsolete, you can use
 ```
+- Важно настроить параметры сбора с сетевого интерфейса. См. ['Sniffing options'](https://www.elastic.co/guide/en/beats/packetbeat/current/configuration-interfaces.html)
+!!! Note. When you specify **any** for the device, the interfaces are **not set** to promiscuous mode.
+
+[FAQ: Packetbeat doesn’t see any packets when using mirror ports?](https://www.elastic.co/guide/en/beats/packetbeat/current/faq.html)
+
 
 Меняем настройки в секции `General`
+```
 name: PB-Lab
 # tags: ["service-X", "web-tier"]
 tags: ["experimental"]
@@ -892,10 +903,14 @@ output.elasticsearch:
   # Array of hosts to connect to.
   hosts: ["89.223.29.108:9200"]
 logging.level: warning
-
+```
 И рестартуем Packetbeat: `sudo systemctl restart packetbeat` (`sudo service packetbeat restart` -- так было в убунте)
 
 Шаблоны парсинга packetbeat лежат в `/etc/packetbeat/packetbeat.template.json`
+
+### Тонкая настройка протоколов
+- [Is it possible to see HTTP POST data from requests in Packetbeat?](https://stackoverflow.com/questions/39144057/is-it-possible-to-see-http-post-data-from-requests-in-packetbeat). You must also specify the content types of the requests that you wish to include the body for via the `include_body_for` config setting.
+
 
 Теперь на сервере ELK 
 - почистим предыдущие записи
@@ -926,3 +941,102 @@ elasticsearch.url: "http://89.223.29.108:9200"
 - Непонятная ситуация.
 Строку `10.0.0.232` ищет, строку `source.ip:"10.0.0.178"` ищет, а `source.ip:"10.0.0.232"` -- нет.
 А!!! был еще фильтр, которые я из Available Fields наделал.
+
+# ClickHouse
+
+
+## Инсталляция
+IP: 10.0.0.234
+- Инструкцию по установке берем с официального сайта: [Начало работы](https://clickhouse.yandex/docs/ru/getting_started.html).
+- Обновление пакетов в Ubuntu: `sudo apt-get update`
+- [Ubuntu version history](https://en.wikipedia.org/wiki/Ubuntu_version_history)
+	-  Ubuntu 16.04 LTS (Xenial Xerus)
+	-  Ubuntu 14.04 LTS (Trusty Tahr)
+- Прописали репозиторий: `deb http://repo.yandex.ru/clickhouse/xenial stable main`
+- Смотрим по вопросам FAQ: [FAQ по ClickHouse (на русском)](https://github.com/hatarist/clickhouse-faq/wiki/Russian)
+	- [Как открыть доступ к серверу по сети?](https://github.com/hatarist/clickhouse-faq/wiki/Russian). Добавить/изменить в `clickhouse-server/config.xml` тег `<listen_host>,` например:
+```
+<listen_host>10.55.33.77</listen_host>
+```
+Можно раскомментировать имеющуюся там запись с ::, в таком случае ClickHouse будет доступен по всем IPv4/IPv6-адресам сервера:
+```
+<listen_host>::</listen_host>
+```
+
+- Ставим на Win машину ODBC клиент [yandex/clickhouse-odbc](https://github.com/yandex/clickhouse-odbc/releases)
+- Тестовые данные, упоминаемые в процессе установки [ClickHouse/doc/example_datasets/](https://github.com/yandex/ClickHouse/tree/master/doc/example_datasets)
+- [Яндекс открывает ClickHouse](https://habrahabr.ru/company/yandex/blog/303282/). Тут есть про старт с данными.
+- [ClickHouse/doc/getting_started/getting_started_ru.md](https://github.com/yandex/ClickHouse/blob/master/doc/getting_started/getting_started_ru.md)
+
+- Проверяем под Win настройки ODBC клиентов: [Check the ODBC SQL Server Driver Version (Windows)](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/check-the-odbc-sql-server-driver-version-windows), [Open the ODBC Data Source Administrator](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/open-the-odbc-data-source-administrator). "To open the ODBC Data Source Administrator in Windows 10  On the Start page, type ODBC Data Sources. The ODBC Data Sources Destop App should appear as a choice." **Выбираем 32 или 64 в зависимости от установленного драйвера.
+- Смотрим статью по подключению R через ODBC: [Databases using R](https://rviews.rstudio.com/2017/05/17/databases-using-r/)
+- Пакет `DBI`: [DBI](http://rstats-db.github.io/DBI/)
+- [R with Teradata ODBC](https://downloads.teradata.com/blog/odbcteam/2016/02/r-with-teradata-odbc)
+- [Complete Guide to R for DataDirect ODBC/JDBC](https://www.progress.com/blogs/complete-guide-to-r-for-datadirect-odbc-jdbc)
+- [Connect to ODBC databases (using the DBI interface)](https://github.com/rstats-db/odbc)
+- [clickhouse: DBI database connector for external clickhouse databases](https://rdrr.io/github/hannesmuehleisen/clickhouse-r/man/clickhouse.html)
+	- [Rstats client for ClickHouse (https://clickhouse.yandex)](https://github.com/hannesmuehleisen/clickhouse-r)
+
+
+## Запуск
+
+Используем tabbix.io: (не взлетел) 
+http://10.0.0.234:8123
+
+## Tutorial
+- [ClickHouse Tutorial](https://clickhouse.yandex/tutorial.html)
+
+## Разбираемся с `hannesmuehleisen/clickhouse-r`
+- При штатном запуске выдает ошибку 
+```
+> d <- dbReadTable(con, "mtcars")
+Note: method with signature ‘DBIConnection#character’ chosen for function ‘dbReadTable’,
+ target signature ‘clickhouse_connection#character’.
+ "clickhouse_connection#ANY" would also be valid
+Error in .local(conn, statement, ...) : 
+  Code: 62, e.displayText() = DB::Exception: Syntax error: failed at position 15: "mtcars" FORMAT TabSeparatedWithNames, expected identifier, e.what() = DB::Exception
+```
+Эта ошибка возникает в методе `setMethod("dbSendQuery", "clickhouse_connection", function(conn, statement, use = c("memory", "temp"), ...) {`
+Почему рушится именно здесь и не реагирует на browser внутри dbReadTable не до конца понятно.
+```
+setMethod("dbReadTable", "clickhouse_connection", function(conn, name, ...) {
+  browser()
+	dbGetQuery(conn, paste0("SELECT * FROM ", name))
+})
+```
+- Судя по стеку, сначала вызывается метод dbIsValid, который делает запрос `"select 1"`.
+- Происходит это в `64 stopifnot(dbIsValid(con))` метода `dbConnect()`!
+- Сделав дебаг видим, что `dbReadTable(con, "mtcars")` трансформируется в `"SELECT * FROM \"mtcars\""`
+- Это происходит в строчке `sql_name <- dbQuoteIdentifier(conn, x = name, ...)`. `"mtcars"` превращается в `"\"mtcars\"". Исходник функции ищем на [github](https://github.com/rstats-db/odbc/search?utf8=%E2%9C%93&q=dbQuoteIdentifier&type=). 
+В районе [148 строки](https://github.com/rstats-db/odbc/blob/e061c61da7dcec2fe6bb25592b822224e8caa5bc/R/Connection.R):
+```
+setMethod(
+  "dbQuoteIdentifier", c("OdbcConnection", "character"),
+  function(conn, x, ...) {
+    if (nzchar(conn@quote)) {
+      x <- gsub(conn@quote, paste0(conn@quote, conn@quote), x, fixed = TRUE)
+    }
+    DBI::SQL(paste(conn@quote, encodeString(x), conn@quote, sep = ""))
+  })
+```
+читаем в хелпе про `nzchar()`
+
+- При инициализации dbConnect выдается такое сообщение
+```
+Note: method with signature ‘DBIConnection#character’ chosen for function ‘dbReadTable’,
+ target signature ‘clickhouse_connection#character’.
+ "clickhouse_connection#ANY" would also be valid
+```
+- в DBI::Connect.R есть определение класса:
+```
+setClass(
+  "OdbcConnection",
+  contains = "DBIConnection",
+  slots = list(
+    ptr = "externalptr",
+    quote = "character",
+    info = "ANY"
+  )
+)
+```
+- нашел похожую ошибку: [dbWriteTable does not work for tbl_df](https://github.com/rstats-db/DBI/issues/92)
