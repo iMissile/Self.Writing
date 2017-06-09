@@ -846,6 +846,8 @@ network.host: 0.0.0.0
 sudo systemctl restart elasticsearch
 ```
 
+смотрим статус `systemctl status elasticsearch`
+
 Проверяем: `http://89.223.29.108:9200/?pretty`, `http://89.223.29.108:9200/_nodes?pretty`
 
 Меняем конфигурацию в файле `/etc/elasticsearch/elasticsearch.yml`
@@ -864,6 +866,31 @@ index.number_of_replicas: 0
 ### Выгрузка документов из ES
 - [Dump all documents of Elasticsearch](https://stackoverflow.com/questions/19243074/dump-all-documents-of-elasticsearch)
 - [Import and export tools for elasticsearch](https://github.com/taskrabbit/elasticsearch-dump)
+- [taskrabbit/elasticsearch-dump. Import and export tools for elasticsearch](https://github.com/taskrabbit/elasticsearch-dump)
+	- Ставим командой `yum install elasticdump`, предварительно гасим ES, а то ругается на нехватку памяти.
+При этом при запуске команды из мануала
+```
+elasticdump \
+  --input=http://localhost:9200/packetbeat-2017.05.02 \
+  --output=/tmp/my_index.json \
+  --type=data
+```
+сразу сталкиваемся с ошибкой:
+```
+Sun, 25 Sep 2016 13:07:15 GMT | Error Emitted => {"error":{"root_cause":[{"type":"parsing_exception","reason":"The field [fields] is no longer supported, please use [stored_fields] to retrieve stored fields or _source filtering if the field is not
+```
+На эту тему есть тикет [Support Elasticsearch 5 #259](https://github.com/taskrabbit/elasticsearch-dump/issues/259) в котором есть частное решение.
+```
+elasticdump \
+  --input=http://localhost:9200/packetbeat-2017.05.02 \
+  --output=/tmp/my_index.json \
+  --type=data \
+  --limit=1000 \
+  --searchBody '{"query": { "match_all": {} }, "stored_fields": ["*"], "_source": true }'
+```
+- Чтобы забрать архив. [Архивирование файлов в Linux](https://losst.ru/arhivatsiya-v-linux). Архив != сжатие.
+	- Упаковка файла: `$ tar -cvf archive.tar.gz /path/to/files`
+	- А чтобы распаковать архив tar linux: `$ tar -xvf archive.tar.gz`
 
 ### ES GUI
 - [Elastic HQ](http://www.elastichq.org/). Sleek, intuitive, and powerful ElasticSearch Management and Monitoring.
@@ -936,7 +963,7 @@ server.name: "Kibana-Lab"
 elasticsearch.url: "http://89.223.29.108:9200"
 ```
 
-Запускаем: `10.0.0.232:5601`, пытаемся поиграть с фильтрами: [Kibana Queries and Filters](https://www.elastic.co/guide/en/beats/packetbeat/current/kibana-queries-filters.html)
+Запускаем: `http://10.0.0.232:5601`, пытаемся поиграть с фильтрами: [Kibana Queries and Filters](https://www.elastic.co/guide/en/beats/packetbeat/current/kibana-queries-filters.html)
 
 - Непонятная ситуация.
 Строку `10.0.0.232` ищет, строку `source.ip:"10.0.0.178"` ищет, а `source.ip:"10.0.0.232"` -- нет.

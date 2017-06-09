@@ -14,6 +14,27 @@ CTRL + ` (апостроф).
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 09.06.2017
+## R
+- [R data formats: RData, Rda, Rds etc](https://stackoverflow.com/questions/21370132/r-data-formats-rdata-rda-rds-etc)
+- json & R:
+	- [Getting imported json data into a data frame in R](https://stackoverflow.com/questions/16947643/getting-imported-json-data-into-a-data-frame-in-r)
+	- [How to import JSON into R and convert it to table?](https://stackoverflow.com/questions/20925492/how-to-import-json-into-r-and-convert-it-to-table)
+	- [Using R to download and parse JSON: an example using data from an open data portal](http://zevross.com/blog/2015/02/12/using-r-to-download-and-parse-json-an-example-using-data-from-an-open-data-portal/)
+	- [Working with JSON data in very simple way](https://blog.exploratory.io/working-with-json-data-in-very-simple-way-ad7ebcc0bb89)
+	- [How to read a data frame in jsonlite](https://stackoverflow.com/questions/30162701/how-to-read-a-data-frame-in-jsonlite)
+- Huge JSON: 
+	- [Reading a huge json file in R , issues](https://stackoverflow.com/questions/29688946/reading-a-huge-json-file-in-r-issues)
+	- [High performance JSON streaming in R: Part 1](https://www.opencpu.org/posts/jsonlite-streaming/)
+	- [Streaming Data IO in R](http://jeroen.github.io/mongo-slides/#1)
+	- [Getting started with JSON and jsonlite](https://cran.r-project.org/web/packages/jsonlite/vignettes/json-aaquickstart.html). Тут можно почитать про **simplification**.
+
+
+## Python
+- [How to read large file, line by line in python](https://stackoverflow.com/questions/8009882/how-to-read-large-file-line-by-line-in-python)
+- [How to get line count cheaply in Python?](https://stackoverflow.com/a/1019572/3678718): `num_lines = sum(1 for line in open('myfile.txt'))`
+- [Correct way to write line to file in Python](https://stackoverflow.com/questions/6159900/correct-way-to-write-line-to-file-in-python)
+
 # 08.06.2017
 ## R
 - [Netlify](https://www.netlify.com/). Write frontend code. Push it. We handle the rest. CDN, Continuous deployment, 1 click HTTPS, and all the services you need. From instant prototypes to global enterprises.
@@ -59,6 +80,30 @@ CTRL + ` (апостроф).
 	- [sergeant: An R Boot Camp for Apache Drill](https://rud.is/b/2016/12/20/sergeant-a-r-boot-camp-for-apache-drill/). You can download Drill from https://drill.apache.org/download/ (use "Direct File Download"). I use `/usr/local/drill` as the install directory.
 	- [cran/DrillR](https://github.com/cran/DrillR) This is a read-only mirror of the CRAN R package repository. DrillR — R Driver for Apache Drill
 	- [Tools to Transform and Query Data with the 'Apache Drill' 'REST API' & JDBC Interface, Plus 'dplyr' and 'DBI' Interfaces in R https://hrbrmstr.github.io/sergeant/](https://github.com/hrbrmstr/sergeant)
+
+## нюансы по запуску Drill
+- Не забываем, что под Windows необходимо запускать с параметрами `sqlline.bat -u "jdbc:drill:zk=local"`
+- Попробуем под Windows подключить мой собственный json файл (см [Quering JSON data](https://www.rittmanmead.com/blog/2016/08/an-introduction-to-apache-drill/):
+`select * from dfs.`D:/iwork.GH/R.projects/76 MTS_TV/data/stat.json` limit 5;`
+
+- COOL!!! [HOW TO READ JSON DATA INTO TABLEAU – USING A FREE AND OPEN SOURCE FRAMEWORK (APACHE DRILL ON WINDOWS)](https://datatoffee.com/2015/07/14/how-to-read-json-data-into-tableau-using-a-free-and-open-source-framework-apache-drill-on-windows/)
+- [PowerShell for every system! https://microsoft.com/powershell](https://github.com/powershell/powershell)
+- [Almost wish there was a number 3 near the lambda, don't you think? Portable console emulator for Windows](http://cmder.net/)
+- [ConEmu - эмулятор консольного окна Windows](http://conemu.github.io/ru/)
+- [Drill Web Console, StorageTab](http://localhost:8047/storage)
+- [Drill errors with "JDK Java compiler not available - probably you're running Drill with a JRE and not a JDK"](http://www.openkb.info/2017/05/drill-errors-with-jdk-java-compiler-not.html).  **Root Cause**:
+Starting from Drill 1.10, above WARNING message is promoted to an ERROR message.
+It means Drill must require JDK instead of JRE to run with.
+**Solution**:
+Make sure JDK is installed and Drill is using correct JAVA_HOME pointing to that JDK.
+
+Под Windows необходимо проверить переменную среды: `JAVA_HOME = C:\Program Files\Java\jdk1.8.0_131`
+- [Installing the JDK Software and Setting JAVA_HOME](https://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_javahome_t/)
+- [Installing Apache Drill on Microsoft Windows](http://www.dremio.com/blog/installing-Apache-Drill-on-Microsoft-Windows/) published on 2015-12-08
+- [Installing the ODBC Driver on Windows](https://drill.apache.org/docs/installing-the-driver-on-windows/)
+
+
+
 
 # 05.06.2017
 ## R
@@ -371,6 +416,15 @@ This package supports filtering, mapping, grouping, sorting, updating, searching
 - Решаем проблему с большим количеством результатов >10K:
 	- Пример готового кода есть в документе к пакету `elastic`: см. п. [elastic searching](https://cran.r-project.org/web/packages/elastic/vignettes/search.html)
 	- [Elasticsearch Data Analysis with R](https://discuss.ropensci.org/t/elasticsearch-data-analysis-with-r/345)
+- Как посмотреть все индексы. [List All Indices](https://www.elastic.co/guide/en/elasticsearch/reference/current/_list_all_indices.html). `GET /_cat/indices?v`
+- Как сделать выгрузку из ES (dump)
+	- [Export ElasticSearch database to JSON dumps](http://blog.tamasboros.com/export-elasticsearch-database-to-json-dumps/)
+	- [taskrabbit/elasticsearch-dump. Import and export tools for elasticsearch](https://github.com/taskrabbit/elasticsearch-dump)
+	- [jprante/elasticsearch-knapsack. Knapsack plugin is an import/export tool for Elasticsearch](https://github.com/jprante/elasticsearch-knapsack)
+- [Loading a pcap file](https://discuss.elastic.co/t/loading-a-pcap-file/71524). `./packetbeat.sh -e -v -waitstop 10 -t -I /tmp/pcap/sample2.pcap`
+	- Командой `find / -type f -name packetbeat*` находим местоположение packetbeat: `/usr/bin/packetbeat.sh`
+	- [The Wireshark SampleCaptures](https://wiki.wireshark.org/SampleCaptures)
+	- [Welcome to pcapr, where pcaps come alive](http://www.pcapr.net/home). pcapr, powered by   Mu Dynamics, is a social nOtworking site. There's a lot to learn about networks and protocols from packet captures. Besides, we think packets need as much Web 2.0 love as your spreadsheets. You can learn more about pcapr in our forum or by following our Tweets. You can also read our blogs at Mu Labs.
 
 
 ## R
