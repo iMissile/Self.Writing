@@ -782,7 +782,7 @@ This image is officially deprecated in favor of the elasticsearch image provided
 
 - [Install Elasticsearch with Docker](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html). Elasticsearch is also available as a Docker image. The image is built with X-Pack.
 
-- Хорошие подрбоные статьи
+- Хорошие подробные статьи
 	- ['Установка и настройка Elasticsearch в Ubuntu 16.04'](https://www.8host.com/blog/ustanovka-i-nastrojka-elasticsearch-v-ubuntu-16-04/)
 	- [Установка и настройка Elasticsearch в CentOS 7](https://www.8host.com/blog/ustanovka-i-nastrojka-elasticsearch-v-centos-7/)
 	- [Установка и настройка Elasticsearch+kibana+logstash+filebeat5](https://denisitpro.wordpress.com/2017/02/05/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-elasticsearchkibanalogstashfilebeat5/comment-page-1/). При написании, я старался сразу делать более безопасную настройку ELK5, а не просто «оно включилось, значит работает»
@@ -891,6 +891,7 @@ elasticdump \
 - Чтобы забрать архив. [Архивирование файлов в Linux](https://losst.ru/arhivatsiya-v-linux). Архив != сжатие.
 	- Упаковка файла: `$ tar -cvf archive.tar.gz /path/to/files`
 	- А чтобы распаковать архив tar linux: `$ tar -xvf archive.tar.gz`
+	- посмотреть кусочек файла: [View the Beginning of Text Files with head](https://www.linode.com/docs/tools-reference/tools/view-the-beginning-of-text-files-with-head)
 
 ### ES GUI
 - [Elastic HQ](http://www.elastichq.org/). Sleek, intuitive, and powerful ElasticSearch Management and Monitoring.

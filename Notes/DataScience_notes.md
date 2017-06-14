@@ -14,6 +14,45 @@ CTRL + ` (апостроф).
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 14.06.2017
+## R
+- [Syberia: A development framework for R code in production](http://blog.revolutionanalytics.com/2017/06/syberia.html)
+	- [Syberia is the development framework for R](http://syberia.io/). Make R a production-ready language for deployable machine learning.
+- [Keeping Users Safe While Collecting Data](https://rud.is/b/2017/06/13/keeping-users-safe-while-collecting-data/)
+- [Using purrr with APIs – revamping my code](https://itsalocke.com/using-purrr-with-apis/)
+- [Dplyr 0.5 - New Functions: Part - I](http://nelsonareal.net/blog/2017/03/dplyr_05_part-i.html)
+- [Dplyr 0.5 - New Functions: Part - II](http://nelsonareal.net/blog/2017/04/dplyr_05_part-ii.html)
+	- `summarise_if()` and `mutate_if()` are functions that operate on subset of columns for which the predicate is true.
+
+
+# 13.06.2017
+## R
+- Адаптация dplyr 0.7. [Engaging the tidyverse Clean Slate Protocol](https://rud.is/b/2017/06/10/engaging-the-tidyverse-clean-slate-protocol/)
+- Возникла проблема с write_csv. 1000 записывает в файл как 1e3. Читаем про проблему здесь: [Inconsistent parsing failure "no trailing characters e3" #645](https://github.com/tidyverse/readr/issues/645)
+- [Clustering](https://realdataweb.wordpress.com/2017/06/12/clustering/)
+- [Interfacing with APIs using R: the basics](http://blog.revolutionanalytics.com/2017/06/interfacing-with-apis.html)
+- [The magic trick that highlights interesting results on any table](https://www.displayr.com/the-magic-trick-that-highlights-significant-results-on-any-table/)
+- [thinning a Markov chain, statistically](https://xianblog.wordpress.com/2017/06/13/thinning-a-markov-chain-statistically/)
+
+## CTI
+- [Convert UNIX epoch to Date object in R](https://stackoverflow.com/questions/13456241/convert-unix-epoch-to-date-object-in-r)
+- [set x/y limits in facet_wrap with scales = 'free'](https://stackoverflow.com/questions/28490337/set-x-y-limits-in-facet-wrap-with-scales-free)
+- COOL! [Ordering categories within ggplot2 facets](https://drsimonj.svbtle.com/ordering-categories-within-ggplot2-facets)
+- [Be the boss of your factors](http://stat545.com/block029_factors.html)
+- [Non-standard-evaluation and standard evaluation in dplyr](http://rmhogervorst.nl/cleancode/blog/2016/06/13/NSE_standard_evaluation_dplyr.html)
+- Переименовываем колонки (добавляем префикс)
+	- [dplyr: Renaming variables with rename_](https://stackoverflow.com/questions/41921094/dplyr-renaming-variables-with-rename)
+	- [Copy a column and add a prefix to new column in R with dplyr](https://stackoverflow.com/questions/40929674/copy-a-column-and-add-a-prefix-to-new-column-in-r-with-dplyr)
+	- [Adding prefix or suffix to most data.frame variable names in piped R workflow](https://stackoverflow.com/questions/29948876/adding-prefix-or-suffix-to-most-data-frame-variable-names-in-piped-r-workflow)
+	- [dplyr- renaming sequence of columns with select function](https://stackoverflow.com/questions/31845966/dplyr-renaming-sequence-of-columns-with-select-function/31846038#31846038)
+	- [Column names with spaces or other special characters #2243](https://github.com/tidyverse/dplyr/issues/2243)
+	- [Selecting with dplyr by variable name, some column names are numbers](https://stackoverflow.com/questions/42854958/selecting-with-dplyr-by-variable-name-some-column-names-are-numbers)
+- [Exclude columns by names in mutate_at in dplyr](https://stackoverflow.com/questions/44532888/exclude-columns-by-names-in-mutate-at-in-dplyr)
+	- `mtcars %>% mutate_at(vars(-mpg, -cyl), max)` or 
+	- `mtcars %>% mutate_at(vars(-one_of("mpg", "cyl")), max)`
+
+- [The JSON Formatter](https://jsonformatter.curiousconcept.com/)
+
 # 09.06.2017
 ## R
 - [R data formats: RData, Rda, Rds etc](https://stackoverflow.com/questions/21370132/r-data-formats-rdata-rda-rds-etc)
@@ -75,6 +114,8 @@ CTRL + ` (апостроф).
 	- [RPresto: DBI Connector to Presto](https://cran.r-project.org/web/packages/RPresto/index.html)
 - [Apache Drill. Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud Storage](https://drill.apache.org/)
 	- [An Introduction to Apache Drill](https://www.rittmanmead.com/blog/2016/08/an-introduction-to-apache-drill/) by Robin Moffatt
+	- [SQL Syntax for Apache Drill. Using SQL for the SQL-on-Everything Engine](https://dzone.com/refcardz/sql-syntax-for-apache-drill)
+	- [APACHE DRILL - QUERY FILE SYSTEM, JSON, AND PARQUET](http://www.bogotobogo.com/Drill/Drill_Tutorial_Query_File_System_JSON_Parquet.php)
 	- [Drill in 10 Minutes](https://drill.apache.org/docs/drill-in-10-minutes/)
 	- [Drilling Into CSVs — Teaser Trailer](https://rud.is/b/2017/05/31/drilling-into-csvs-teaser-trailer/)
 	- [sergeant: An R Boot Camp for Apache Drill](https://rud.is/b/2016/12/20/sergeant-a-r-boot-camp-for-apache-drill/). You can download Drill from https://drill.apache.org/download/ (use "Direct File Download"). I use `/usr/local/drill` as the install directory.
@@ -2974,8 +3015,7 @@ Overview
 - Тонкий тюнинг readxl
 	- Настройка параметров импорта: ["Specifying Column Types when Importing xlsx Data to R with Package readxl"](http://stackoverflow.com/questions/31633891/specifying-column-types-when-importing-xlsx-data-to-r-with-package-readxl/31634003)
 `readxl:::xlsx_col_types(path = "a.xlsx", nskip = 116, n = 1)`
-- Как обработать колонки с отсутстующими именами (NA). См. документацию по tibble: repair_names ensures its input has non-missing and unique names (duplicated names get a numeric
-suffix). Valid names are left as is.
+- Как обработать колонки с отсутстующими именами (NA). См. документацию по tibble: repair_names ensures its input has non-missing and unique names (duplicated names get a numeric suffix). Valid names are left as is.
 - [Removing NA in dplyr pipe [duplicate]](http://stackoverflow.com/questions/26665319/removing-na-in-dplyr-pipe)
 - [Removing NA observations with dplyr::filter()](http://stackoverflow.com/questions/28857653/removing-na-observations-with-dplyrfilter)
 na.omit(), complete.cases()
