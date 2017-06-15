@@ -627,9 +627,9 @@ git config --global push.default matching
 `wget https://s3.amazonaws.com/rstudio-connect/centos6.3/x86_64/rstudio-connect-1.4.4.1-16-x86_64.rpm`
 
 - Проверяем созданных пользователей: `cat /etc/passwd`. Детальнее можно поглядеть, например, здесь: [Linux Command: List All Users In The System](https://www.cyberciti.biz/faq/linux-list-users-command/)
-- Запускаем `http://your-connect-server:3939/` и создаем аккаунт! [The first account will be marked as an RStudio Connect administrator.](http://docs.rstudio.com/connect/admin/getting-started.html#installation)
 - Настраиваем почтовый адрес Connect. Секция `SenderEmail`, `vi /etc/rstudio-connect/rstudio-connect.gcfg` и перезапускаем
 `sudo systemctl restart rstudio-connect`, `sudo systemctl status rstudio-connect`
+- Запускаем `http://your-connect-server:3939/` и создаем аккаунт! [The first account will be marked as an RStudio Connect administrator.](http://docs.rstudio.com/connect/admin/getting-started.html#installation)
 - Настраиваем параметры отправки почтовых сообщений в консоли в закладке [Email Settings](http://10.0.0.229:3939/connect/#/admin/settings):
 В частности, настройки для отправки через [Yandex.почта](https://yandex.ru/support/mail-new/mail-clients.html#pop3)
 - [Проверяем статус](https://support.rstudio.com/hc/en-us/articles/232221028-How-do-I-renew-my-RStudio-Connect-license-on-the-server-) демо лицензии:
@@ -639,6 +639,13 @@ $ sudo /opt/rstudio-connect/bin/license-manager status-offline
 ```
 - Подключаем RStudio IDE для публикации приложений.
 
+
+### Проблема с публикацией
+При компиляции выдает ошибку `Error in yaml::yaml.load(string, ...) : 
+  Reader error: control characters are not allowed: #98 at 71`. И падает.
+
+- Есть закрытый тикет на гитхабе: [Unable publish to RStudio Connect : Error in yaml::yaml.load(enc2utf8(string), ...) : Reader error: control characters are not allowed: #81 at 276 #115](https://github.com/rstudio/rsconnect/issues/115)
+Он отсылает к проблеме в `packrat`: [Fall back to UTF-8 encoding on failure to determine format #329](https://github.com/rstudio/packrat/pull/329)
 
 
 ### Под капотом RStudio Connect
@@ -699,7 +706,7 @@ Only if needed:
 yum -y install texlive-collection-latexextra
 ```
 
-или одной строчкой: `yum install texlive texlive-latex texlive-xetex texlive-collection-fontsrecommended texlive-collection-latex texlive-collection-latexrecommended  texlive-xetex-def texlive-collection-xetex`
+или одной строчкой: `sudo yum install texlive texlive-latex texlive-xetex texlive-collection-fontsrecommended texlive-collection-latex texlive-collection-latexrecommended  texlive-xetex-def texlive-collection-xetex`
 `
 В документации RStudio Connect указано:
 `texlive-full # very large dependency, but needed to render PDF documents from R Markdown`. Но такого пакета под CentOS не нашлось.
@@ -708,16 +715,16 @@ yum -y install texlive-collection-latexextra
 [CentOS Latex - Install package manually (no tlmgr)](http://tex.stackexchange.com/questions/289404/centos-latex-install-package-manually-no-tlmgr)
 Все делаем через `yum`. Поиск по репозиторию осуществляем с помощью [`yum search cyrillic`](https://www.centos.org/docs/5/html/yum/sn-searching-packages.html)
 
-- Ставим `yum install texlive-collection-langcyrillic install texlive-cyrillic-doc`
+- Ставим `sudo yum install texlive-cyrillic texlive-collection-langcyrillic install texlive-cyrillic-doc`
 
 Ошибки при запуске TeXLive
-- LaTeX Error: File 'framed.sty' not found. Решаем установкой [`yum -y install texlive-framed`](https://github.com/rstudio/rmarkdown/issues/39)
-- LaTeX Error: File 'titling.sty' not found. Решаем установкой `yum -y install texlive-titling`
+- LaTeX Error: File 'framed.sty' not found. Решаем установкой [`sudo yum -y install texlive-framed`](https://github.com/rstudio/rmarkdown/issues/39)
+- LaTeX Error: File 'titling.sty' not found. Решаем установкой `sudo yum -y install texlive-titling`
 
 Русский язык в LaTeX:
 - [Overleaf. Русский язык в LaTeX: XeLaTeX](https://www.overleaf.com/latex/templates/5-dot-2-2-russkii-iazyk-v-latex-xelatex/skfzmvgdgvnk)
 - [XeLaTeX или на порядок улучшим качество шрифтов в окончательном pdf](http://astronu.jinr.ru/wiki/index.php/XeLaTeX_%D0%B8%D0%BB%D0%B8_%D0%BD%D0%B0_%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA_%D1%83%D0%BB%D1%83%D1%87%D1%88%D0%B8%D0%BC_%D0%BA%D0%B0%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE_%D1%88%D1%80%D0%B8%D1%84%D1%82%D0%BE%D0%B2_%D0%B2_%D0%BE%D0%BA%D0%BE%D0%BD%D1%87%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC_pdf)
-- Package fontenc Error: Encoding file 't2aenc.def' not found. Решаем установкой [`yum -y install texlive-cyrillic`](http://tex.stackexchange.com/questions/5079/what-is-wrong-with-my-cyrillic-text)
+- Package fontenc Error: Encoding file 't2aenc.def' not found. Решаем установкой [`sudo yum -y install texlive-cyrillic`](http://tex.stackexchange.com/questions/5079/what-is-wrong-with-my-cyrillic-text)
  и `yum install texlive-collection-langcyrillic`
 - Font T2A/cmr/m/n/12=larm1200 at 12.0pt not loadable: Metric (TFM) file not found. Ответы ищем в статье [Error in TeX Live – Font … not loadable: Metric (TFM) file not found](http://tex.stackexchange.com/questions/75166/error-in-tex-live-font-not-loadable-metric-tfm-file-not-found). Вариант решения -- ставим все font пакеты: `yum -y install texlive-*font*`
 - [Переходим на XeTeX, получаем ошибку `! Corrupted NFSS tables`](http://tex.stackexchange.com/questions/237188/corrupted-nfss-tables)
@@ -731,7 +738,7 @@ yum -y install texlive-collection-latexextra
 Ставим `\setmainfont{Linux Libertine O}`, обнаружил с помощью команды `fc-list | grep "Linux Libertine" | grep ".otf"`.
 - [Linux Libertine font](http://www.linuxlibertine.org/index.php?id=1&L=1).
 	- Ставим под винду
-	- Ставим под CentOS командой `yum install linux-liber*`. Фонт найден установленным здесь: `/usr/share/fonts/linux-libertine/LinLibertine_*`
+	- Ставим под CentOS командой `sudo yum install linux-liber*`. Фонт найден установленным здесь: `/usr/share/fonts/linux-libertine/LinLibertine_*`
 	- А еще есть пакет LaTeX [`libertine`](https://www.ctan.org/tex-archive/fonts/libertine/)
 	- [Libertine Font problem with XeLaTeX](http://tex.stackexchange.com/questions/105970/font-problem-with-xelatex)
 

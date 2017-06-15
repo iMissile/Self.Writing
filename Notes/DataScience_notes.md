@@ -14,6 +14,31 @@ CTRL + ` (апостроф).
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 15.06.2017
+## R
+- COOL! [Creating nice tables using R Markdown](https://chesterismay.wordpress.com/2015/11/17/nice-tables-using-r-markdown/)
+- [Specify height and width of ggplot graph in Rmarkdown knitr output](https://stackoverflow.com/questions/39634520/specify-height-and-width-of-ggplot-graph-in-rmarkdown-knitr-output). `fig.width`, `fig.height`. Figure sizes are specified in inches and can be included as a global option of the document output format. Default is 7x5
+- Когда пытаюсь опубликовать kable с указанием caption, название постоянной части "Таблица" дает ошибку при компиляции на строне Connect:
+```
+ ! LaTeX Error: Command \CYRT unavailable in encoding EU1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...
+
+l.118 \caption{Longtable}
+```
+Решение указано здесь: [Russian language within figure captions in unicode-aware systems {duplicate}](https://tex.stackexchange.com/questions/110013/russian-language-within-figure-captions-in-unicode-aware-systems). 
+Симптоматика описана также здесь: [Cyrillic word error in Figure Captions](https://tex.stackexchange.com/questions/351510/cyrillic-word-error-in-figure-captions)
+- Детали по правильному применению рецепта: [\renewcommand\tablename{name} does not work](https://tex.stackexchange.com/questions/55090/renewcommand-tablenamename-does-not-work)
+```
+\AtBeginDocument{%
+  \renewcommand\tablename{new}
+}
+```
+
+
+
 # 14.06.2017
 ## R
 - [Syberia: A development framework for R code in production](http://blog.revolutionanalytics.com/2017/06/syberia.html)
