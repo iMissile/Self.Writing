@@ -14,6 +14,49 @@ CTRL + ` (апостроф).
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 04.07.2017
+## R
+- [Analytics Administration for R](https://rviews.rstudio.com/2017/06/21/analytics-administration-for-r/)
+- [MY SET OF PACKAGES FOR (DAILY) DATA ANALYSIS #RSTATS](https://strengejacke.wordpress.com/2017/06/19/my-set-of-packages-for-daily-data-analysis-rstats/)
+- [OpenStreetMap and R](http://osmar.r-forge.r-project.org/)
+- [A new version of the OpenStreetMap package](http://blog.fellstat.com/?cat=15)
+- [Automated testing for shiny apps](https://rstudio.github.io/shinytest/)
+- [Tools for load testing Shiny applications](https://rstudio.github.io/shinyloadtest)
+- [readxl]() Other relevant packages: Here are some other packages with functionality that is complementary to readxl and that also avoid a Java dependency.
+	- *Writing Excel files*: The example files datasets.xlsx and datasets.xls were created with the help of [openxlsx](https://cran.r-project.org/package=openxlsx) (and Excel). openxlsx provides “a high level interface to writing, styling and editing worksheets”.
+	- *Non-tabular data and formatting*: [tidyxl](https://cran.r-project.org/package=tidyxl) is focused on importing awkward and non-tabular data from Excel. It also “exposes cell content, position and formatting in a tidy structure for further manipulation”.
+
+
+# 03.07.2017
+## R
+- COOL! [How I became a crolute i.e. an user of the crul package](http://www.masalmon.eu/2017/06/30/crolute/)
+- COOL! [Tips and tricks for working with images and figures in R Markdown documents](http://www.zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/#bonus-knitr-and-r-markdown-functionality)
+- COOL! [Bar Plots and Modern Alternatives](http://www.sthda.com/english/wiki/bar-plots-and-modern-alternatives)
+- COOL! [dbplyr 1.1.0](https://blog.rstudio.org/2017/06/27/dbplyr-1-1-0/). The `odbc` package provides a DBI compliant backend for any database with an ODBC driver. Compared to the existing RODBC package, odbc is faster (~3x for reading, ~2x for writing), translates date/time data types, and is under active development. RStudio is also planning on providing best-of-breed ODBC drivers for the most important enterprise databases to our Pro customers.
+- COOL! [Using databases with R](https://db.rstudio.com/)
+- COOL! Отладка pipes. [Track changes in data with the lumberjack %>>%](http://www.markvanderloo.eu/yaRb/2017/06/23/track-changes-in-data-with-the-lumberjack/)
+	- [Getting started with lumberjack](https://cran.r-project.org/web/packages/lumberjack/vignettes/intro.html)
+- [HexJSON HTMLWidget for R, Part 1](https://blog.ouseful.info/2017/06/28/hexjson-htmlwidget-for-r-part-1/)
+- [Lesser known dplyr 0.7* tricks](http://www.brodrigues.co/blog/2017-06-19-dplyr-0-70-tutorial/)
+- [Colorcoded map: regional population structures at a glance](https://ikashnitsky.github.io/2017/colorcoded-map/)
+- [Cubic and Smoothing Splines in R](https://datascienceplus.com/cubic-and-smoothing-splines-in-r/)
+- R for MacOS:
+	- [R framework. Universal nightly builds for Mac OS X (10.6+ and 10.9+)](https://r.research.att.com)
+	- [gfortran installer for Mac OS X](https://gcc.gnu.org/wiki/GFortranBinariesMacOS)
+
+## Автономная работа R
+- [R Installation and Administration. 6.6 Setting up a package repository](https://cran.r-project.org/doc/manuals/R-admin.html#Setting-up-a-package-repository)
+- [Using miniCRAN to create a local CRAN repository](https://cran.r-project.org/web/packages/miniCRAN/vignettes/miniCRAN-introduction.html)
+- [RStudio Connect. Package Management. 13.2 Private Repositories](http://docs.rstudio.com/connect/admin/index.pdf#page42)
+
+# 18.06.2017
+## R
+- [Non-Standard Evaluation and Function Composition in R](http://www.win-vector.com/blog/2017/06/non-standard-evaluation-and-function-composition-in-r/)
+- [Using the xlsx package to create an Excel file](http://www.r-exercises.com/2017/06/17/xlsx1/)
+- COOL! [ndjson: Wicked-Fast Streaming 'JSON' ('ndjson') Reader](https://cran.r-project.org/web/packages/ndjson/index.html). 
+Streaming 'JSON' ('ndjson') has one 'JSON' record per-line and many modern 'ndjson' files contain large numbers of records. These constructs may not be columnar in nature, but it's often useful to read in these files and "flatten" the structure out to work in an R data.frame-like context. Functions are provided that make it possible to read in plain 'ndjson' files or compressed ('gz') 'ndjson' files and either validate the format of the records or create "flat" data.table ('tbl_dt') structures from them.
+- [Setting up R to connect to SQL Server](https://support.rstudio.com/hc/en-us/articles/214510788-Setting-up-R-to-connect-to-SQL-Server-)
+
 # 15.06.2017
 ## R
 - COOL! [Creating nice tables using R Markdown](https://chesterismay.wordpress.com/2015/11/17/nice-tables-using-r-markdown/)
@@ -143,6 +186,8 @@ l.118 \caption{Longtable}
 	- [APACHE DRILL - QUERY FILE SYSTEM, JSON, AND PARQUET](http://www.bogotobogo.com/Drill/Drill_Tutorial_Query_File_System_JSON_Parquet.php)
 	- [Drill in 10 Minutes](https://drill.apache.org/docs/drill-in-10-minutes/)
 	- [Drilling Into CSVs — Teaser Trailer](https://rud.is/b/2017/05/31/drilling-into-csvs-teaser-trailer/)
+	- [Analyzing the Yelp Academic Dataset w/Drill & sergeant](https://rud.is/rpubs/yelp.html) by @hrbrmstr, 2017-06-17
+	- [Replicating the Apache Drill ‘Yelp’ Academic Dataset Analysis with sergeant](https://rud.is/b/2017/06/17/replicating-the-apache-drill-yelp-academic-dataset-with-sergeant/)
 	- [sergeant: An R Boot Camp for Apache Drill](https://rud.is/b/2016/12/20/sergeant-a-r-boot-camp-for-apache-drill/). You can download Drill from https://drill.apache.org/download/ (use "Direct File Download"). I use `/usr/local/drill` as the install directory.
 	- [cran/DrillR](https://github.com/cran/DrillR) This is a read-only mirror of the CRAN R package repository. DrillR — R Driver for Apache Drill
 	- [Tools to Transform and Query Data with the 'Apache Drill' 'REST API' & JDBC Interface, Plus 'dplyr' and 'DBI' Interfaces in R https://hrbrmstr.github.io/sergeant/](https://github.com/hrbrmstr/sergeant)
@@ -619,7 +664,8 @@ output:
 
 # 20.04.2017
 ## R
-- [Local Repository]
+- Local Repository:
+	- [Installing packages without the internet](https://www.mango-solutions.com/blog/installing-packages-without-the-internet)
 	- [Using miniCRAN to create a local CRAN repository](https://cran.r-project.org/web/packages/miniCRAN/vignettes/miniCRAN-introduction.html)
 	- [How to Set Up a Custom CRAN-like Repository](https://rstudio.github.io/packrat/custom-repos.html)
 Andrie de Vries and Alex Chubaty

@@ -79,6 +79,7 @@ sudo yum update
 	sudo yum install udunits2-devel
 	sudo yum groupinstall X11
 	sudo yum install xorg-x11-server-Xvfb
+	sudo yum install unixODBC*
 	
 	'# это я бы не ставил, если не потребуется
 	sudo yum -y groupinstall "X Window System" "Desktop" "Fonts" "General Purpose Desktop"
@@ -166,6 +167,7 @@ install.packages("printr_0.0.6.tar.gz", repos = NULL, type="source")
 
 **Может возникнуть ситуация**, когда потребуется доставлять фортран. Детально (в т.ч. и про управление пользователями) можно почитать в этой публикации: ["Install RStudio Server on centOS6.5"](http://blog.supstat.com/2014/05/install-rstudio-server-on-centos6-5/)
 
+- Проблема при установке RODBC: "ODBC headers sql.h and sqlext.h not found". Решается установкой `yum install unixODBC*`
 
 ## Установка RStudio Server
 - Prerequisites  
