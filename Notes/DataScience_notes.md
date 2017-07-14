@@ -14,6 +14,55 @@ CTRL + ` (апостроф).
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 13.07.2017
+## R
+- [Using the iGraph package to Analyse the Enron Corpus](http://r.prevos.net/analyse-enron-corpus/)
+
+# 12.07.2017
+## R
+- [Introducing learnr](https://blog.rstudio.com/2017/07/11/introducing-learnr/) by Garrett Grolemund, 2017-07-11
+- [Fantasy Hockey with rvest and purrr](http://maxhumber.com/2017/01/08/vorp-hockey.html)
+- Связи Parent-Child в R
+	- [r - hierarchical data frame from child/parent relations](https://stackoverflow.com/questions/33069353/r-hierarchical-data-frame-from-child-parent-relations)
+	- [Converting parent-child relationships in FK column into a hierarchical path string](https://stackoverflow.com/questions/40301990/converting-parent-child-relationships-in-fk-column-into-a-hierarchical-path-stri)
+- [Parallel Computing Exercises: Foreach and DoParallel (Part-2)](http://www.r-exercises.com/2017/07/13/parallel-computing-exercises-foreach-and-doparallel-part-2/)
+
+# 11.07.2017
+## R
+- [What is magrittr’s future in the tidyverse?](http://www.win-vector.com/blog/2017/07/what-is-magrittrs-future-in-the-tidyverse/)
+- [Useful dplyr Functions (w/examples)](https://sw23993.wordpress.com/2017/07/10/useful-dplyr-functions-wexamples/)
+- [A tour of the tibble package](https://tjmahr.github.io/tibble-package-tour/)
+- [extract::tidyr]	R Documentation. Extract one column into multiple columns. 
+Description
+Given a regular expression with capturing groups, extract() turns each group into a new column. If the groups don't match, or the input is NA, the output will be NA.
+- [Tidyr: Crucial Step Reshaping Data with R for Easier Analyses](http://www.sthda.com/english/wiki/tidyr-crucial-step-reshaping-data-with-r-for-easier-analyses)
+- Reverse order of data.frame:
+	- [How to reverse the order of a dataframe in R](https://stackoverflow.com/questions/39975317/how-to-reverse-the-order-of-a-dataframe-in-r): `df <- df[seq(dim(df)[1],1),]`
+	- [Change row order in a matrix/dataframe](https://stackoverflow.com/questions/7146435/change-row-order-in-a-matrix-dataframe): `iris %>% arrange(-row_number())`
+- [In case you missed it: June 2017 roundup](http://blog.revolutionanalytics.com/2017/07/in-case-you-missed-it-june-2017-roundup.html)
+- [Mutating columns of a data frame based on a predicate function (dplyr::mutate_if)](https://stackoverflow.com/questions/38252437/mutating-columns-of-a-data-frame-based-on-a-predicate-function-dplyrmutate-if)
+- [dbFetch](http://rstats-db.github.io/DBI/reference/dbFetch.html)
+
+
+# 07.07.2017
+## R
+- COOL! Хорошая оптимизация ggplot2! [Accelerating ggplot2: use a canvas to speed up rendering plots](https://ikashnitsky.github.io/2017/ggplot2-microbenchmark/)
+- [More Companies using R](http://blog.revolutionanalytics.com/2017/07/more-companies-using-r.html)
+- [How perceptions of R have changed](http://blog.revolutionanalytics.com/2017/07/how-perceptions-of-r-have-changed.html)
+- COOL! [Introducing tidygraph](http://www.data-imaginist.com/2017/Introducing-tidygraph/)
+- [useR!2017. 04.07.2017 - 07.07.2017](https://user2017.brussels/)
+- [useR!2017](https://user2017.sched.com/)
+- COOL! [Reliable way to detect if a column in a data.frame is.POSIXct](https://stackoverflow.com/questions/26412947/reliable-way-to-detect-if-a-column-in-a-data-frame-is-posixct)
+- Интересная новая фича `dataTableProxy` в dev версии: [Update data in shiny application without refreshing the whole application](https://stackoverflow.com/questions/35910958/update-data-in-shiny-application-without-refreshing-the-whole-application)
+- COOL! [RStudio::conf Highlights Days 1-2](https://chapmandu2.github.io/post/2017-01-12-rstudio-conference-highlights-1/)
+- [Shiny: Using Action Buttons](https://shiny.rstudio.com/articles/action-buttons.html)
+- Сортировка колонок в DataTables:
+	- [4.1. Sorting](https://rstudio.github.io/DT/options.html)
+	- [order(). Get / set the ordering applied to the table.](https://datatables.net/reference/api/order()). where colIdx_x is the column data index of the column whose data is used to perform the ordering, and orderingDirection_n is the direction of the ordering (desc (descending) or asc (ascending)) - note that these must be lower-case. The column index is zero based - i.e. the first column in the table is index 0, the second index 1 etc.
+	
+
+
+
 # 04.07.2017
 ## R
 - [Analytics Administration for R](https://rviews.rstudio.com/2017/06/21/analytics-administration-for-r/)
@@ -25,12 +74,58 @@ CTRL + ` (апостроф).
 - [readxl]() Other relevant packages: Here are some other packages with functionality that is complementary to readxl and that also avoid a Java dependency.
 	- *Writing Excel files*: The example files datasets.xlsx and datasets.xls were created with the help of [openxlsx](https://cran.r-project.org/package=openxlsx) (and Excel). openxlsx provides “a high level interface to writing, styling and editing worksheets”.
 	- *Non-tabular data and formatting*: [tidyxl](https://cran.r-project.org/package=tidyxl) is focused on importing awkward and non-tabular data from Excel. It also “exposes cell content, position and formatting in a tidy structure for further manipulation”.
+- `mutate_each` устарел. Замену см. `vignette("compatibility")`
+- PostgreSQL
+	- [DBI specification. DBI: R Database Interface](https://cran.r-project.org/web/packages/DBI/vignettes/spec.html)
+	- [How to properly handle timezone when passing POSIXct objects between R and Postgres DBMS?](https://stackoverflow.com/questions/40524225/how-to-properly-handle-timezone-when-passing-posixct-objects-between-r-and-postg)
+	- [can't write timestamps using RPostgres dbWriteTable #104](https://github.com/rstats-db/RPostgres/issues/104)
+	- [Data type for timestamps #53](https://github.com/rstats-db/RPostgres/issues/53)
+	- [handling of timestamps/timezone correctly #1865](https://github.com/tidyverse/dplyr/issues/1865)
+	- [Начало работы с PostgreSQL](http://eax.me/postgresql-install/)
+	- [UTF-8 / Unicode Text Encoding with RPostgreSQL](https://stackoverflow.com/questions/21392786/utf-8-unicode-text-encoding-with-rpostgresql)
+
+# R CTI
+- [Setting MIME type for excel document](https://stackoverflow.com/questions/974079/setting-mime-type-for-excel-document)
+- [File extension and fileInput #1501. {Closed}](https://github.com/rstudio/shiny/issues/1501) -> [fileInput: If possible, retain uploaded file extensions on the server](https://github.com/rstudio/shiny/pull/1706)
+- [“read_excel” in a Shiny app](https://stackoverflow.com/questions/30624201/read-excel-in-a-shiny-app)
+	- `readxl` now exposes `read_xlsx` and `read_xls` for reading extensionkess files. But someone still has to determine which it is, somehow.
+	- мы будем использовать workaround, поскольку надо считывать список закладок. "Hmm...we could set this up to copy the file to a temporary directory and add an extension so it can be imported. Would that work for you?"
+```
+file.copy(inFile$datapath,
+                      paste(inFile$datapath, ".xlsx", sep=""))
+            read_excel(
+                    paste(inFile$datapath, ".xlsx", sep=""), 1)
+```
+- [How to change 'Maximum upload size exceeded' restriction in Shiny and save user file inputs?](https://stackoverflow.com/questions/18037737/how-to-change-maximum-upload-size-exceeded-restriction-in-shiny-and-save-user): *By default, Shiny limits file uploads to 5MB per file. You can modify this limit by using the `shiny.maxRequestSize` option. For example, adding `options(shiny.maxRequestSize=30*1024^2)` to the top of server.R would increase the limit to 30MB*.
+- [AccessMod_shiny. Priority 1 - Maximum upload size exceeded #71](https://github.com/fxi/AccessMod_shiny/issues/71)
+- [detecting Excel files without Excel extension](https://uk.mathworks.com/matlabcentral/answers/76710-detecting-excel-files-without-excel-extension?)
+- [Inserting line breaks into text output in shiny using cat](https://stackoverflow.com/questions/28770704/inserting-line-breaks-into-text-output-in-shiny-using-cat)
+	- [Shiny HTML Tags Glossary](http://shiny.rstudio.com/articles/tag-glossary.html)
+- [how to insert new line in R shiny string](https://stackoverflow.com/questions/26368192/how-to-insert-new-line-in-r-shiny-string)
+- Как проверить в каком окружении запущен R скрипт? [R: determine if a script is running in Windows or Linux](https://stackoverflow.com/questions/2096473/r-determine-if-a-script-is-running-in-windows-or-linux):
+	- `Sys.info()["sysname"]`. Под windows дает "Windows", под CentOS дает "Linux".
+- [DT: An R interface to the DataTables library](https://rstudio.github.io/DT/). 2.4 Custom Column Names
+- !! [Shrink DT::dataTableOutput Size](https://stackoverflow.com/questions/31921238/shrink-dtdatatableoutput-size)
+- [Force rendering of already computed reactive elements](https://stackoverflow.com/questions/33241733/force-rendering-of-already-computed-reactive-elements)
+	- [An example of doing prolonged, iterative computation in Shiny.](https://gist.github.com/trestletech/8608815)
+	- [Lesson 6. Use reactive expressions](https://shiny.rstudio.com/tutorial/lesson6/). Shiny apps wow your users by running fast, instantly fast. But what if your app needs to do a lot of slow computation?
+- `reactivePoll` не работает при длинных вычислениях!!! [Shiny: How to display the progress information from a time-consuming function when it running](https://stackoverflow.com/questions/24541682/shiny-how-to-display-the-progress-information-from-a-time-consuming-function-wh)
+- [How to remove timezone from datatable in Shiny?](https://stackoverflow.com/questions/42299350/how-to-remove-timezone-from-datatable-in-shiny)
+- [DT: Format Columns. Преобразуем вывод времени](https://rstudio.github.io/DT/functions.html)
+- [date format change with DT and shiny](https://stackoverflow.com/questions/38875173/date-format-change-with-dt-and-shiny)
+- [Remove 'search' option but leave 'search columns' option](https://stackoverflow.com/questions/35624413/remove-search-option-but-leave-search-columns-option)
+- [Is there a way to search by column with Shiny's updated DT::renderDataTable and DT::dataTableOutput?](https://stackoverflow.com/questions/30795880/is-there-a-way-to-search-by-column-with-shinys-updated-dtrenderdatatable-and)
+- [DT: DOM positioning](https://datatables.net/examples/basic_init/dom.html)
+- [DT: An R interface to the DataTables library](https://blog.rstudio.org/2015/06/24/dt-an-r-interface-to-the-datatables-library/). Column Filters
+DataTables does not come with column filters by default. It only provides a global search box. We have added filters for individual columns in DT, and you can enable column filters using the argument filter = 'top' or 'bottom' in datatable().
+- [config package for R](https://github.com/rstudio/config)
 
 
 # 03.07.2017
 ## R
-- COOL! [How I became a crolute i.e. an user of the crul package](http://www.masalmon.eu/2017/06/30/crolute/)
 - COOL! [Tips and tricks for working with images and figures in R Markdown documents](http://www.zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/#bonus-knitr-and-r-markdown-functionality)
+- COOL! [Shiny tips & tricks for improving your apps and solving common problems](http://deanattali.com/blog/advanced-shiny-tips/)
+- COOL! [How I became a crolute i.e. an user of the crul package](http://www.masalmon.eu/2017/06/30/crolute/)
 - COOL! [Bar Plots and Modern Alternatives](http://www.sthda.com/english/wiki/bar-plots-and-modern-alternatives)
 - COOL! [dbplyr 1.1.0](https://blog.rstudio.org/2017/06/27/dbplyr-1-1-0/). The `odbc` package provides a DBI compliant backend for any database with an ODBC driver. Compared to the existing RODBC package, odbc is faster (~3x for reading, ~2x for writing), translates date/time data types, and is under active development. RStudio is also planning on providing best-of-breed ODBC drivers for the most important enterprise databases to our Pro customers.
 - COOL! [Using databases with R](https://db.rstudio.com/)
@@ -45,9 +140,45 @@ CTRL + ` (апостроф).
 	- [gfortran installer for Mac OS X](https://gcc.gnu.org/wiki/GFortranBinariesMacOS)
 
 ## Автономная работа R
+- Инструкция от Микрософт. [Create a Local Package Repository Using miniCRAN](https://docs.microsoft.com/en-us/sql/advanced-analytics/r/create-a-local-package-repository-using-minicran)
+- [How to install R packages on an off-line SQL Server 2016 instance](http://blog.revolutionanalytics.com/2016/05/minicran-sql-server.html)
+- R Startup
+	- [R for Enterprise: Understanding R’s Startup](https://rviews.rstudio.com/2017/04/19/r-for-enterprise-understanding-r-s-startup/)
+	- [Rprofile — кастомизируем рабочее окружение](http://aakinshin.net/ru/blog/post/r-rprofile/)
+	- [Efficient R programming. R startup](https://csgillespie.github.io/efficientR/3-3-r-startup.html#r-startup)
+	- [Fun with .Rprofile and customizing R startup](http://www.onthelambda.com/2014/09/17/fun-with-rprofile-and-customizing-r-startup/)
+	- [locate the “.Rprofile” file generating default options](https://stackoverflow.com/questions/13735745/locate-the-rprofile-file-generating-default-options)
+```
+You could run the following to list existing files on your system among those listed on the page:
+
+candidates <- c( Sys.getenv("R_PROFILE"),
+                 file.path(Sys.getenv("R_HOME"), "etc", "Rprofile.site"),
+                 Sys.getenv("R_PROFILE_USER"),
+                 file.path(getwd(), ".Rprofile") )
+```
 - [R Installation and Administration. 6.6 Setting up a package repository](https://cran.r-project.org/doc/manuals/R-admin.html#Setting-up-a-package-repository)
-- [Using miniCRAN to create a local CRAN repository](https://cran.r-project.org/web/packages/miniCRAN/vignettes/miniCRAN-introduction.html)
+- local CRAN-like repository
+	- [Using miniCRAN to create a local CRAN repository](https://cran.r-project.org/web/packages/miniCRAN/vignettes/miniCRAN-introduction.html)
+	- [Using repositories other than CRAN with miniCRAN](https://cran.r-project.org/web/packages/miniCRAN/vignettes/miniCRAN-non-CRAN-repos.html)
+	- [How to Set Up a Custom CRAN-like Repository](https://rstudio.github.io/packrat/custom-repos.html)
+	- Пакет для выбора репозиториев: [setRepositories {utils}](https://stat.ethz.ch/R-manual/R-devel/library/utils/html/setRepositories.html)
 - [RStudio Connect. Package Management. 13.2 Private Repositories](http://docs.rstudio.com/connect/admin/index.pdf#page42)
+	- [Process management in RStudio Connect](https://support.rstudio.com/hc/en-us/articles/226871847-Process-management-in-RStudio-Connect)
+	- [Для последней версии Connect](http://docs.rstudio.com/connect/admin/package-management.html)
+	- [Deploying connect app with private repository](https://support.rstudio.com/hc/en-us/community/posts/115001095768-Deploying-connect-app-with-private-repository)
+	- [Package Management for Offline RStudio Connect Installations](https://support.rstudio.com/hc/en-us/articles/115006298728-Package-Management-for-Offline-RStudio-Connect-Installations)
+	- [R not reading Rprofile.site at startup](https://superuser.com/questions/891127/r-not-reading-rprofile-site-at-startup). Смотрим из консоли командой `R RHOME`
+`/usr/lib64/R/library/base/R/Rprofile` -- system Rprofile
+	- [Problem Installing Packages](https://support.rstudio.com/hc/en-us/articles/200554786-Problem-Installing-Packages)
+
+
+- [How to select a CRAN mirror in R](https://stackoverflow.com/questions/11488174/how-to-select-a-cran-mirror-in-r)
+- [Installing packages without the internet](https://www.mango-solutions.com/blog/installing-packages-without-the-internet)
+- [How to Set Up a Custom CRAN-like Repository](https://rstudio.github.io/packrat/custom-repos.html)
+Andrie de Vries and Alex Chubaty
+July 12, 2016
+- [devtools](https://cran.r-project.org/web/packages/devtools/README.html)
+
 
 # 18.06.2017
 ## R
@@ -664,13 +795,6 @@ output:
 
 # 20.04.2017
 ## R
-- Local Repository:
-	- [Installing packages without the internet](https://www.mango-solutions.com/blog/installing-packages-without-the-internet)
-	- [Using miniCRAN to create a local CRAN repository](https://cran.r-project.org/web/packages/miniCRAN/vignettes/miniCRAN-introduction.html)
-	- [How to Set Up a Custom CRAN-like Repository](https://rstudio.github.io/packrat/custom-repos.html)
-Andrie de Vries and Alex Chubaty
-July 12, 2016
-
 - [R for Enterprise: Understanding R’s Startup](https://rviews.rstudio.com/2017/04/19/r-for-enterprise-understanding-r-s-startup/)
 - [readxl 1.0.0](https://blog.rstudio.org/2017/04/19/readxl-1-0-0/)
 	- COOL! [readxl: Sheet Geometry](http://readxl.tidyverse.org/articles/sheet-geometry.html)
@@ -1850,7 +1974,7 @@ header-includes:
 	- Warning in title(...): неизвестна ширина символа 0xf2	
 	- Warning in grid.Call(L_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : неизвестна ширина символа 0xf0
 	- Warning in grid.Call(L_stringMetric, as.graphicsAnnot(x$label)): неизвестны шрифтовые метрики для символа 0xe
-Нашел очень подробный багтрекер на эту тему в репозитории knitr: [[R Sweave] Cyrillic characters in plots #436](https://github.com/yihui/knitr/issues/436). Также полезно почитать про механику генерации графиков в идеологии knitr в книге "Dynamic Documents with R anf knitr, 2nd edition". Концепции Graphical Device, Encoding, Plot Recording (п. 7.1, 7.2). Рекомендуют использовать cairo_pdf, в т.ч. в книге (п 7.2)ю
+Нашел очень подробный багтрекер на эту тему в репозитории knitr: [[R Sweave] Cyrillic characters in plots #436](https://github.com/yihui/knitr/issues/436). Также полезно почитать про механику генерации графиков в идеологии knitr в книге "Dynamic Documents with R anf knitr, 2nd edition". Концепции Graphical Device, Encoding, Plot Recording (п. 7.1, 7.2). Рекомендуют использовать cairo_pdf, в т.ч. в книге (п 7.2).
 В принципе, решение указывать в chunk опцию `dev="cairo_pdf"` срабатывает.
 - Нюансы с подключением доп пакетов и стилей в R markdown имеют несколько решений. Примеры решений, например, в этой подборке:
 	- [How to include LaTeX package in R Markdown?](http://tex.stackexchange.com/questions/171711/how-to-include-latex-package-in-r-markdown)

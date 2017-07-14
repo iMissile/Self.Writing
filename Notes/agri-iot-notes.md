@@ -13,7 +13,7 @@
 Также смотрим статью ["CentOS 7 настройка сервера"](https://serveradmin.ru/centos-7-nastroyka-servera/). Тут учтены нюансы, связанные с сервисом chrony в 7-ой версии CentOS.
 
 ### Настройка синхронизации времени
-В 7-ой версии CentOS настрйку делаем через утилиту chrony (детали в статьях, указанных выше).
+В 7-ой версии CentOS настройку делаем через утилиту chrony (детали в статьях, указанных выше).
 
  - Устанавливаем (если не стоит): `yum install -y chrony`
  - Запускаем chrony и добавляем в автозагрузку: 
@@ -38,6 +38,7 @@
 ## Установка R
 Установка под Linux не совсем прозрачно описана, поэтому читаем отдельные блоги.
 
+- [Yum, шпаргалка](https://habrahabr.ru/post/301292/)
 - Неплохой гид про борьбу с 'dependency hell': ["Installing RStudio — an advanced GUI for R — on CentOS 6"](https://biolives.wordpress.com/2013/07/09/installing-rstudio-an-advanced-gui-for-r-on-centos-6/). Там находим решение с пакетом Cairo.
 - Пошаговая инструкция. [How Install R / R Studio on CentOS 7](http://linoxide.com/linux-how-to/install-r-rstudio-centos-7/). Важно, что R работает не из под рута.
 - [How to install R on CentOS](http://stackoverflow.com/questions/37769985/how-to-install-r-on-centos). Речь идет об инсталляции староq версии R. The installed version is 3.3.0. I would like to install version 2.X but I don't know how.
@@ -56,7 +57,15 @@ sudo yum update
 ```
 	 
 - При установке пакетов под root (для всех) запускаем R от рута `sudo -i R` и прогоняему установку. Для успешного прогона необходимо доставлять системные либы (CentOS specific commands).
+`groupinstall` ставит серию связанных в группу пакетов. Информацию по этой группе можно посмотреть командой
+`yum groupinfo X11`
+
 ```
+	sudo yum install epel-release chrony tree R
+
+	sudo yum groupinstall X11
+	sudo yum groupinstall "Development Tools"
+
 	sudo yum install wget
 	sudo yum install libcurl-devel
 	sudo yum install openssl-devel
@@ -77,9 +86,19 @@ sudo yum update
 	sudo yum install v8-devel
 	sudo yum install udunits2
 	sudo yum install udunits2-devel
-	sudo yum groupinstall X11
 	sudo yum install xorg-x11-server-Xvfb
 	sudo yum install unixODBC*
+	sudo yum install postgresql-devel
+	sudo yum install gcc-gfortran*
+	sudo yum install texlive*
+	sudo yum install ufw
+	# а это надо для RStudio Connect
+	sudo yum install dejavu-fonts-common dejavu-sans-mono-fonts rrdtool
+	# а это для RStudio Server
+	sudo yum install psmisc
+
+	'# # надо выяснять актуальную версию
+	sudo yum install java-1.8.0-openjdk.x86_64 
 	
 	'# это я бы не ставил, если не потребуется
 	sudo yum -y groupinstall "X Window System" "Desktop" "Fonts" "General Purpose Desktop"
@@ -87,16 +106,18 @@ sudo yum update
 	sudo yum update	
 ```
 
+### Готовая последовательность команд по установке пакетов
 **Загоняем в одну команду** `yum install package1 package2 package3......`, [How to install multiple packages using yum](http://www.linuxquestions.org/questions/linux-newbie-8/how-to-install-multiple-packages-using-yum-850364/):
 ```
-yum install libcurl-devel openssl-devel cyrus-sasl-devel libxml2-devel libpng-devel libjpeg-devel python python-devel proj proj-devel mesa-libGL mesa-libGL-devel mesa-libGLU mesa-libGLU-devel gmp-devel mpfr-devel cairo-devel libXt-devel gtk2-devel v8-devel udunits2 udunits2-devel
+sudo yum install epel-release chrony tree R
+
+sudo yum groupinstall X11
+sudo yum groupinstall "Development Tools"
+
+sudo yum install wget libcurl-devel openssl-devel cyrus-sasl-devel libxml2-devel libpng-devel libjpeg-devel python python-devel proj proj-devel mesa-libGL mesa-libGL-devel mesa-libGLU mesa-libGLU-devel gmp-devel mpfr-devel cairo-devel libXt-devel gtk2-devel v8-devel udunits2 udunits2-devel xorg-x11-server-Xvfb unixODBC* postgresql-devel gcc-gfortran* texlive*, ufw
 ```
 и
 ```
-	sudo yum groupinstall X11
-	sudo yum groupinstall "Development Tools"
-	sudo yum install xorg-x11-server-Xvfb
-	
 	'# это я бы не ставил, если не потребуется
 	sudo yum -y groupinstall "X Window System" "Desktop" "Fonts" "General Purpose Desktop"
 	sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
@@ -165,9 +186,42 @@ install.packages("printr_0.0.6.tar.gz", repos = NULL, type="source")
 Частично почитать ответы по загрузке пакета `udunits2` можно здесь: ["Installing packages with complex dependencies"](https://github.com/PecanProject/pecan/issues/71). После установки библиотек ищем расположение h файлов следующей командой `find . -type f -name udunits2.h` и запускаем инсталляцию с параметрами:
 `install.packages("udunits2", configure.args='--with-udunits2-include=/usr/include/udunits2/')`
 
-**Может возникнуть ситуация**, когда потребуется доставлять фортран. Детально (в т.ч. и про управление пользователями) можно почитать в этой публикации: ["Install RStudio Server on centOS6.5"](http://blog.supstat.com/2014/05/install-rstudio-server-on-centos6-5/)
+**Может возникнуть ситуация**, когда потребуется доставлять фортран. Детально (в т.ч. и про управление пользователями) можно почитать в этой публикации: ["Install RStudio Server on centOS6.5"](http://blog.supstat.com/2014/05/install-rstudio-server-on-centos6-5/): 
+` sudo yum install gcc-gfortran*`
 
 - Проблема при установке RODBC: "ODBC headers sql.h and sqlext.h not found". Решается установкой `yum install unixODBC*`
+
+- Проблема при установке stringi: 
+```
+checking for ICU4C >= 52... no
+*** ICU4C 50.1.2 has been detected
+*** Minimal requirements, i.e., ICU4C >= 52, are not met
+trying URL 'https://raw.githubusercontent.com/gagolews/stringi/master/src/icu55/data/icudt55l.zip'
+```
+Подробно описано в [How to get latest version of ICU instead the default v50.1?](https://www.centos.org/forums/viewtopic.php?t=60684). Там решение не найдено.
+Идем на домашнюю страницу проекта: [ICU-TC Home Page](http://site.icu-project.org/)
+Шаги по установке (оказалось, не работает)
+```
+tar zxvf icu4c-59_1-src.tgz
+cd icu/source
+./configure # сделали makefile убедились, что все ок
+make
+sudo make install
+```
+Рабочий вариант найден здесь:
+- [How to install stringi from local file (ABSOLUTELY no Internet Access)](https://stackoverflow.com/questions/31942322/how-to-install-stringi-from-local-file-absolutely-no-internet-access)
+- [How to install stringi library from archive and install the local icu52l.zip](https://stackoverflow.com/questions/27553452/how-to-install-stringi-library-from-archive-and-install-the-local-icu52l-zip)
+Скачиваем пакет [ICU](https://raw.githubusercontent.com/gagolews/stringi/master/src/icu55/data/icudt55l.zip), требуемый для сборки `stringi` (конкретный адрес будет виден в сообщениях об ошибке при сборке stringi).
+Инсталлируем командой `install.packages("stringi", configure.vars="ICUDT_DIR=/tmp/")`, положив перед этим в `/tmp` файл `icudt55l.zip`
+- Для Connect пробуем следующий ход:
+1. Скачать и положить `icudt55l.zip` (а может из zip тоже).
+2. Исправляем в `/usr/lib64/R/etc/Renviron`:
+```
+# manual ICUDT
+ICUDT_DIR=/opt/icu55/data
+# --------------------
+```
+
 
 ## Установка RStudio Server
 - Prerequisites  
@@ -626,7 +680,7 @@ git config --global push.default matching
 
 ## Инсталляция RStudio Connect
 - [Страница для загрузки](https://www.rstudio.com/products/connect/download-commercial/) 45-ти дневной демо версии
-`wget https://s3.amazonaws.com/rstudio-connect/centos6.3/x86_64/rstudio-connect-1.4.4.1-16-x86_64.rpm`
+`wget https://s3.amazonaws.com/rstudio-connect/centos6.3/x86_64/rstudio-connect-1.5.0-7-x86_64.rpm`
 
 - Проверяем созданных пользователей: `cat /etc/passwd`. Детальнее можно поглядеть, например, здесь: [Linux Command: List All Users In The System](https://www.cyberciti.biz/faq/linux-list-users-command/)
 - Настраиваем почтовый адрес Connect. Секция `SenderEmail`, `vi /etc/rstudio-connect/rstudio-connect.gcfg` и перезапускаем
@@ -639,7 +693,9 @@ git config --global push.default matching
 $ sudo /opt/rstudio-connect/bin/license-manager status
 $ sudo /opt/rstudio-connect/bin/license-manager status-offline
 ```
-- Подключаем RStudio IDE для публикации приложений.
+- Подключаем RStudio IDE для публикации приложений. Приложения по умолчанию публикуются по такому пути: `/var/lib/rstudio-connect/apps/`
+Лог файлы приложений, если таковые создаются, размещаются в соотв. версию публикации, например, `/var/lib/rstudio-connect/apps/9/51/app.log`.
+Поискать можно такой командой: `: sudo find / -name 'app.log'`
 
 
 ### Проблема с публикацией
@@ -659,6 +715,13 @@ $ sudo /opt/rstudio-connect/bin/license-manager status-offline
 - При попытке отправить отчет по Email (иконка Email Report) выдается ошибка `Error: Internal Server Error [500]`. Статья [How To Fix a 500 Internal Server Error ](https://www.lifewire.com/500-internal-server-error-explained-2622938): *The 500 Internal Server Error is a very general HTTP status code that means something has gone wrong on the website's server, but the server could not be more specific on what the exact problem is*. 
 В конфиге Apache командой `tail -f /var/log/rstudio-connect.access.log` видим такую запись: `[17/Mar/2017:09:55:13 +0300] "POST /__api__/variants/4/sender?email=me HTTP/1.1" 500 0`
 Проблема решилась установкой параметра `Server` в конфигурационном файле RStudio Connect: "The Server.SenderEmail property is the email address from which Connect sends emails. It is important that the sendmail or SMTP configuration RStudio Connect uses be willing and able to send email from this SenderEmail address. Otherwise, Connect will not be able to successfully send email. See Section 2.2.4 for more details about mail sending."
+- При запуске без интернета в логах возникает ошибка:
+`rsrv rserver-monitor[114033]: ERROR Error executing RRD command: [cd /var/lib/rstudio-connect/metrics/rrd] (Unexpected error for OK message: OK u:0,00 s:0,02...` 
+RRD в Connect используется для мониторинга своего статуса: [14 Historical Metrics](http://docs.rstudio.com/connect/admin/metrics.html)
+- Есть ощущение, что при публикации создаются манифесты для каждого пакета исходя из конфигурации пакетов, которые есть на машине разработчика.
+В частности, поиск `grep -R www.stats.ox.ac.uk /var/lib/`
+cat /var/lib/rstudio-connect/apps/2/8/manifest.json
+
 
 ### Обновление RStudio Connect
 - [5.3 Upgrading](http://docs.rstudio.com/connect/admin/server-management.html#upgrading)
@@ -1077,3 +1140,78 @@ setClass(
 )
 ```
 - нашел похожую ошибку: [dbWriteTable does not work for tbl_df](https://github.com/rstats-db/DBI/issues/92)
+
+# PostgreSQL
+## Подключение
+развернутый инстанс:
+```
+пользователь sudo -u postgres -i
+psql
+\connect channel_list
+\dt
+\d+ tv_list -- посмотреть определение таблицы
+\q -- выход из отображения select
+\l -- посмотерть кодировки текстовых данных в таблицах
+```
+
+# Установка экосистемы R в оффлайн режиме
+
+Стартовая конфигурация:
+1. Все пакеты CentOS установлены.
+2. RStudio Connect скачан.
+3. miniCRAN размещен в директории `~/miniCRAN`
+4. Запускаем под пользователем root консоль `sudo -i`
+5. Переходим в домашнюю директорию пользователя `cd /home/ruser`
+6. Переносим репозиторий в `/opt`: `mv /home/ruser/miniCRAN /opt/`. Если не получается перезаписать репозиторий, просто его предварительно удаляем командой `sudo rm -r /opt/miniCRAN/`
+7. Скачиваем пакет [ICU](https://raw.githubusercontent.com/gagolews/stringi/master/src/icu55/data/icudt55l.zip), требуемый для сборки `stringi` (конкретный адрес будет виден в сообщениях об ошибке при сборке stringi.
+Инсталлируем командой `install.packages("stringi", configure.vars="ICUDT_DIR=/tmp/")`, положив перед этим в `/tmp` файл `icudt55l.zip`
+- Для Connect пробуем следующий ход:
+1. Скачать и положить `icudt55l.zip` (а может из zip тоже).
+2. Исправляем в `/usr/lib64/R/etc/Renviron`:
+```
+# manual ICUDT
+ICUDT_DIR=/opt/icu55/data
+# --------------------
+
+1. Заходим в R `sudo -i R`, проверяем пути расположения библиотек `.libPaths()`. 
+2. Важное замечание: для сборки документации потребуется Rmarkdown
+3. Запускаем последовательность команд для установки пакетов из локального репозитория:
+pkgs_needed <- c("packrat")
+local_repo  <- "/opt/miniCRAN"
+# OPTIONAL: If you are not running R from the instance library as recommended, you must specify the path
+#   .libPaths()[1] 
+# lib <- .libPaths()[1]
+
+install.packages(pkgs_needed, repos = file.path("file://", normalizePath(local_repo, winslash = "/")), dependencies = TRUE)
+
+install.packages(pkgs_needed,
+		 repos = file.path("file://", normalizePath(local_repo, winslash = "/")),
+		 # repos = file.path(local_repo),
+                 # lib = lib,
+                 # type = "win.binary",
+		 # type = "source",
+                 dependencies = TRUE
+                 )
+installed.packages() 
+3. Изменяем глобальные настройки репозитория, необходимо для работы Connect, который ставится из под рута.
+Где эти настройки живут в *nix -- надо уточнять. Возможно, здесь: `cat /usr/lib64/R/etc/Renviron`
+```
+packrat::repos_add(miniCRAN = "file:///opt/miniCRAN")
+packrat::repos_remove('CRAN')
+# проверим
+getOption("repos")
+```
+В файле `/usr/lib64/R/etc/repositories` прописаны репозитории в которые ходит R.
+Поиск по файлам: `grep -R www.stats.ox.ac.uk /var/lib/`
+4. После этого можно ставить пакеты с помощью штатного `install.packages()`
+```
+# "stringi" надо собирать вручную 
+pkgs_needed <- c("knitr", "rmarkdown", "rsconnect", "packrat",
+                 "tidyverse", "readxl", "magrittr", "hrbrthemes", "Cairo",
+                 "shiny", "shinythemes", "shinyBS", "shinyjs", "config", "DBI", "RODBC", "RPostgreSQL",
+                 "tictoc", "anytime", "fasttime", "futile.logger", "iterators", "foreach", "doParallel")
+install.packages(pkgs_needed)
+```
+5. Создадим админа по умолчанию: http://10.0.0.183:3939 radmin:radmin, внешняя почта
+6. При создании нового аккаунта в IDE указываем адрес сервера с портом.
+7. Посмотрим лог сервера. The RStudio Connect server log is located at `/var/log/rstudio-connect.log`. This file is owned by root with permissions 0600.
