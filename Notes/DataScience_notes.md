@@ -14,9 +14,94 @@ CTRL + ` (апостроф).
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
-# 13.07.2017
+# 24.07.2017
+## R
+- [How to make interactive maps with Census and local data in R](https://randomjohn.github.io/r-maps-with-leaflet/)
+- COOL! [Tidy Time Series Analysis, Part 1](http://www.business-science.io/timeseries-analysis/2017/07/02/tidy-timeseries-analysis.html)
+- COOL! [Tidy Time Series Analysis, Part 2: Rolling Functions](http://www.business-science.io/timeseries-analysis/2017/07/23/tidy-timeseries-analysis-pt-2.html)
+- [sweep: Extending broom for time series forecasting](http://www.business-science.io/code-tools/2017/07/09/sweep-0-1-0.html)
+
+
+# 21.07.2017
+## R
+- COOL! [ggpubr: ‘ggplot2’ Based Publication Ready Plots](http://www.sthda.com/english/rpkgs/ggpubr/)
+- COOL! ggplot Диагностика графических объектов: `library(gtable) gtable_show_layout(ggplotGrob(gp2))`
+- COOL! [Introduction to cowplot](https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html)
+- COOL! [Ligature fonts for R](https://benjaminlmoore.wordpress.com/2017/07/19/ligature-fonts-for-r/)
+	- [Hasklig - a code font with monospaced ligatures](https://github.com/i-tu/Hasklig) (in my opinion a nicer base font) which is more conservative with the ligatures it introduces.
+	- [tonsky/FiraCode. Monospaced font with programming ligatures](https://github.com/tonsky/FiraCode)
+	- [FiraCode RStudio instructions](https://github.com/tonsky/FiraCode/wiki/RStudio-instructions)
+```
+    Close RStudio
+    Open [RStudio dir]/www/index.htm
+    Add following code between <head> and </head>:
+    <style>*{text-rendering: optimizeLegibility;}</style>
+    Restart RStudio
+```
+- [plumber](https://www.rplumber.io/). An R package that converts your existing R code to a web API using a handful of special one-line comments.
+	- [Preparing for the Plumber v0.4.0 Release](https://trestletech.com/2017/07/20/plumber-v0-4-0/)
+- Rcpp
+	- [Surprising result when exploring Rcpp gallery](https://statbandit.wordpress.com/2017/07/21/surprising-result-when-exploring-rcpp-gallery/)
+	- [Quirks about running Rcpp on Windows through RStudio](https://statbandit.wordpress.com/2017/07/20/quirks-about-running-rcpp-on-windows-through-rstudio/)
+- [Quickly Check your id Variables](https://edwinth.github.io/blog/unique_id/)
+- [10 ways to visualize mortgage rates](http://lenkiefer.com/2016/12/08/10-ways-to-visualize-rates)
+- метки к графикам в ggplot
+	- [plotting labels outside of plot in ggplot](https://stackoverflow.com/questions/42681832/plotting-labels-outside-of-plot-in-ggplot): you can use the `sec_axis` as a 1:1 transformation
+	- [ggplot: make annotations outside of the plot area possible #682](https://github.com/tidyverse/ggplot2/issues/682)
+	- [Showing data values on stacked bar chart in ggplot2](https://stackoverflow.com/questions/6644997/showing-data-values-on-stacked-bar-chart-in-ggplot2)
+	- COOL! [How to draw lines outside of plot area in ggplot2?](https://stackoverflow.com/questions/10525957/how-to-draw-lines-outside-of-plot-area-in-ggplot2)
+	- [R and ggplot: Putting x-axis labels outside the panel in ggplot](https://stackoverflow.com/questions/42633156/r-and-ggplot-putting-x-axis-labels-outside-the-panel-in-ggplot)
+
+
+# 20.07.2017
+## R
+- [Get the difference between dates in terms of weeks, months, quarters, and years](https://stackoverflow.com/questions/14454476/get-the-difference-between-dates-in-terms-of-weeks-months-quarters-and-years)
+- [Time difference in years with lubridate?](https://stackoverflow.com/questions/32312925/time-difference-in-years-with-lubridate):
+```
+This is the lubridate approach I would take:
+new_interval(dob, today) / years(1)
+```
+- Clickhouse: [Функции для работы с датами и временем](https://clickhouse.yandex/docs/ru/functions/date_time_functions.html#)
+
+# 18.07.2017
+## R
+- [How to do Optical Character Recognition (OCR) of non-English documents in R using Tesseract?](https://shiring.github.io/text_analysis/2017/07/17/ocr_tesseract)
+- [ReporteRs @ GitHub](https://github.com/davidgohel/ReporteRs)
+- [ReporteRs: Install failure in R 3.4.0 #194](https://github.com/davidgohel/ReporteRs/issues/194)
+- [Officer](https://davidgohel.github.io/officer/) The officer package lets R users manipulate Word (.docx) and PowerPoint (*.pptx) documents. In short, one can add images, tables and text into documents from R. An initial document can be provided, contents, styles and properties of the original document will then be available.
+
+## SQL
+- [How to add a user defined column with a single value to a SQL query](https://stackoverflow.com/questions/17295549/how-to-add-a-user-defined-column-with-a-single-value-to-a-sql-query). You can pass it in the `SELECT`, for example:
+```
+SELECT PRODUCT_ID, ORDER_QUANTITY, 999 AS USER_VALUE
+```
+
+# 17.07.2017
 ## R
 - [Using the iGraph package to Analyse the Enron Corpus](http://r.prevos.net/analyse-enron-corpus/)
+- [dplyr 0.7 Made Simpler](http://www.win-vector.com/blog/2017/07/dplyr-0-7-made-simpler/)
+- [Nathan Stephens and Garrett Grolemund define "Big Data" as: Big Data ~ ≥ 1/3 RAM.](https://github.com/rstudio/Strata2016/blob/master/solutions/02-Big-Data.Rmd)
+- В конце очень хороший пример, как можно распараллелить средствами `future`. [How to compute large object's hash value in R?](https://stackoverflow.com/questions/35377726/how-to-compute-large-objects-hash-value-in-r)
+- Factors:
+	- [forcats. part of the tidyverse](http://forcats.tidyverse.org/)
+	- [tidyverse/forcats. tools for working with categorical variables (factors)](http://forcats.tidyverse.org)
+	- [Be the boss of your factors](http://stat545.com/block029_factors.html)
+- [How can I get the min/max possible numeric?](https://stackoverflow.com/questions/7504463/how-can-i-get-the-min-max-possible-numeric)
+
+## Shiny
+- COOL! [Shiny tips & tricks for improving your apps and solving common problems](http://deanattali.com/blog/advanced-shiny-tips/)
+- COOL! [R powered web applications with Shiny (a tutorial and cheat sheet with 40 example apps)](https://www.zevross.com/blog/2016/04/19/r-powered-web-applications-with-shiny-a-tutorial-and-cheat-sheet-with-40-example-apps/#app20)
+
+- [How to launch a Shiny app](https://shiny.rstudio.com/articles/running.html). `R -e "shiny::runApp('~/shinyapp')"`
+- Dynamic UI
+	- COOL! [Shiny example: dynamic input fields](https://gist.github.com/wch/4211337)
+	- [UI Output](https://shiny.rstudio.com/reference/shiny/latest/renderUI.html)
+	- [updateSelectInput. Change the value of a select input on the client](https://shiny.rstudio.com/reference/shiny/latest/updateSelectInput.html)
+- [bottom align a button in R shiny](https://stackoverflow.com/questions/28960189/bottom-align-a-button-in-r-shiny): `Found an ad-hoc fix with margin-top: 25px in the style tag...`
+- [Shiny - Web Framework for R › Horizontally align widgets](https://groups.google.com/forum/#!topic/shiny-discuss/gj-PDGH0KuM)
+- [Aligning a text vertically in R shiny](https://stackoverflow.com/questions/39550786/aligning-a-text-vertically-in-r-shiny)
+- [Разбираемся с vertical-align](https://web-standards.ru/articles/vertical-align/)
+- [Centering in CSS: A Complete Guide](https://css-tricks.com/centering-css-complete-guide/)
 
 # 12.07.2017
 ## R
@@ -312,6 +397,7 @@ l.118 \caption{Longtable}
 - [Distributed SQL Query Engine for Big Data](https://prestodb.io/). Конкурент Apache Drill. Facebook uses Presto for interactive queries against several internal data stores, including their 300PB data warehouse.
 	- [RPresto: DBI Connector to Presto](https://cran.r-project.org/web/packages/RPresto/index.html)
 - [Apache Drill. Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud Storage](https://drill.apache.org/)
+	- [Ten-HUT! The Apache Drill R interface package — sergeant — is now on CRAN](https://rud.is/b/2017/07/17/ten-hut-the-apache-drill-r-interface-package-sergeant-is-now-on-cran/)
 	- [An Introduction to Apache Drill](https://www.rittmanmead.com/blog/2016/08/an-introduction-to-apache-drill/) by Robin Moffatt
 	- [SQL Syntax for Apache Drill. Using SQL for the SQL-on-Everything Engine](https://dzone.com/refcardz/sql-syntax-for-apache-drill)
 	- [APACHE DRILL - QUERY FILE SYSTEM, JSON, AND PARQUET](http://www.bogotobogo.com/Drill/Drill_Tutorial_Query_File_System_JSON_Parquet.php)
@@ -909,6 +995,8 @@ autoplot(mdeaths) + geom_forecast(h=36, level=c(50,80,95))
 
 # 04.04.2017
 ## Wolfram
+- [Summary of New Features in 11.1](http://reference.wolfram.com/language/guide/SummaryOfNewFeaturesIn111.html)
+- [What is included in Wolfram Extras?](https://mathematica.stackexchange.com/questions/88199/what-is-included-in-wolfram-extras)
 - [Wolfram Workbench](http://www.wolfram.com/workbench/)
 - [How to | Import a Spreadsheet](https://reference.wolfram.com/language/howto/ImportASpreadsheet.html)
 - [How to display a different number of significant digits in each column of TableForm output?](https://mathematica.stackexchange.com/questions/6197/how-to-display-a-different-number-of-significant-digits-in-each-column-of-tablef)
@@ -1950,6 +2038,7 @@ One use of anonymous functions is to create small functions that are not worth n
 - [awesome-r](https://libraries.io/github/uhub/awesome-r). A curated list of awesome R frameworks, libraries and software.
 - [hrbrmisc](https://github.com/hrbrmstr/hrbrmisc). personal R pkg. Вышел на опцию `install_github("hrbrmstr/hrbrmisc")`
 - См. ниже решение проблемы по апдейту ReporteRs. Надо ручкаи указывать `install.packages("ReporteRs", INSTALL_opts = "--no-multiarch")`, чтобы R выбирал правильную x архитектуру.
+- [Error caused by rJava when loading ReporteRs package](https://stackoverflow.com/questions/29384396/error-caused-by-rjava-when-loading-reporters-package)
 
 # 09.01.2017
 
@@ -2647,6 +2736,7 @@ install.packages("ReporteRs", contriburl=cran_dir_url,
 ```
 если точнее, то можно запустить такой командой: `install.packages("ReporteRs", INSTALL_opts = "--no-multiarch")`
 install.packages("tabulizerjars", INSTALL_opts = "--no-multiarch")
+- Акутализируем настройки коннекта с Java командой `sudo R CMD javareconf`. Взято из [Error caused by rJava when loading ReporteRs package](https://stackoverflow.com/questions/29384396/error-caused-by-rjava-when-loading-reporters-package)
 
 ## R ggplot
 - [ggedit](https://www.r-statistics.com/2016/11/ggedit-interactive-ggplot-aesthetic-and-theme-editor/) – interactive ggplot aesthetic and theme editor.

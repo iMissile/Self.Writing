@@ -110,6 +110,7 @@ sudo yum update
 **Загоняем в одну команду** `yum install package1 package2 package3......`, [How to install multiple packages using yum](http://www.linuxquestions.org/questions/linux-newbie-8/how-to-install-multiple-packages-using-yum-850364/):
 ```
 sudo yum install epel-release chrony tree R
+sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
 
 sudo yum groupinstall X11
 sudo yum groupinstall "Development Tools"
@@ -120,7 +121,6 @@ sudo yum install wget libcurl-devel openssl-devel cyrus-sasl-devel libxml2-devel
 ```
 	'# это я бы не ставил, если не потребуется
 	sudo yum -y groupinstall "X Window System" "Desktop" "Fonts" "General Purpose Desktop"
-	sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
 	sudo yum update	
 ```
 
@@ -1215,3 +1215,4 @@ install.packages(pkgs_needed)
 5. Создадим админа по умолчанию: http://10.0.0.183:3939 radmin:radmin, внешняя почта
 6. При создании нового аккаунта в IDE указываем адрес сервера с портом.
 7. Посмотрим лог сервера. The RStudio Connect server log is located at `/var/log/rstudio-connect.log`. This file is owned by root with permissions 0600.
+8. Акутализируем настройки коннекта с Java командой `sudo R CMD javareconf`.
