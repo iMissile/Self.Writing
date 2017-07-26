@@ -14,12 +14,35 @@ CTRL + ` (апостроф).
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 26.07.2016
+## ClickHouse
+- Примеры запросов с группировкой по времени: [пример 1](https://gist.github.com/alexey-milovidov/2dee968eb95df63b271208f89d3697c3); [пример 2](https://gist.github.com/alexey-milovidov/6fd9246ce44b48345bee3a0df3da5ab0)
+
 # 24.07.2017
 ## R
 - [How to make interactive maps with Census and local data in R](https://randomjohn.github.io/r-maps-with-leaflet/)
 - COOL! [Tidy Time Series Analysis, Part 1](http://www.business-science.io/timeseries-analysis/2017/07/02/tidy-timeseries-analysis.html)
 - COOL! [Tidy Time Series Analysis, Part 2: Rolling Functions](http://www.business-science.io/timeseries-analysis/2017/07/23/tidy-timeseries-analysis-pt-2.html)
 - [sweep: Extending broom for time series forecasting](http://www.business-science.io/code-tools/2017/07/09/sweep-0-1-0.html)
+- [Some Ideas for your Internal R Package](https://rviews.rstudio.com/2017/07/19/supporting-corporate-r-user-groups/)
+- [Encoding. Force character vector encoding from “unknown” to “UTF-8” in R](https://stackoverflow.com/questions/23699271/force-character-vector-encoding-from-unknown-to-utf-8-in-r)
+- [Hacking Highcharter: observations per group in boxplots](https://nsaunders.wordpress.com/2017/07/24/hacking-highcharter-observations-per-group-in-boxplots/)
+- ggplot
+	- [geom_bar bars not displaying when specifying ylim](https://stackoverflow.com/questions/10365167/geom-bar-bars-not-displaying-when-specifying-ylim)
+	- [Setting y range with bars](https://groups.google.com/forum/?fromgroups#!topic/ggplot2-dev/JGal_9nRzsg)
+
+## Shiny
+- [tooltip or popover in Shiny datatables for row names?]()https://stackoverflow.com/questions/39970097/tooltip-or-popover-in-shiny-datatables-for-row-names)
+- [Add vertical line in a DT datatable in a shiny app with custom container](https://stackoverflow.com/questions/36692719/add-vertical-line-in-a-dt-datatable-in-a-shiny-app-with-custom-container). [Здесь раскрашенный дубль](http://techqa.info/programming/question/36692719/Add-vertical-line-in-a-DT-datatable-in-a-shiny-app-with-custom-container)
+- Three R Shiny tricks to make your Shiny app shines (3/3):
+	- [(1/3): Add Next and Previous buttons to navigate in a tabBox](http://enhancedatascience.com/2017/02/15/next-previous-button-shiny-app-tabbox/)
+	- [(2/3): Semi-collapsible sidebar](http://enhancedatascience.com/2017/02/21/three-r-shiny-tricks-to-make-your-shiny-app-shines-23-semi-collapsible-sidebar/)
+	- [(3/3): Buttons to delete, edit and compare Datatable rows](http://enhancedatascience.com/2017/03/01/three-r-shiny-tricks-to-make-your-shiny-app-shines-33-buttons-to-delete-edit-and-compare-datatable-rows/)
+- COOL! [The R Shiny packages you need for your web apps!](http://enhancedatascience.com/2017/07/10/the-packages-you-need-for-your-r-shiny-application/)
+- COOL! [mexindian/ShinyTester](https://github.com/mexindian/ShinyTester). An R package to help debug Shiny apps during the process itself.
+- [A pick of the best R packages for interactive plots and visualisations (2/2)](http://enhancedatascience.com/2017/07/06/pick-best-r-packages-interactive-plot-visualisation-22/)
+- [Setting column width in R Shiny DataTable does not work in case of lots of column](https://stackoverflow.com/questions/34850382/setting-column-width-in-r-shiny-datatable-does-not-work-in-case-of-lots-of-colum). As suggested [here](https://stackoverflow.com/questions/38251456/shiny-unable-to-set-column-width-in-shiny-datatables?rq=1), setting `scrollX=T` and keeping `autoWidth=TRUE` in the options should work.
+
 
 
 # 21.07.2017
@@ -131,7 +154,9 @@ Given a regular expression with capturing groups, extract() turns each group int
 
 # 07.07.2017
 ## R
-- COOL! Хорошая оптимизация ggplot2! [Accelerating ggplot2: use a canvas to speed up rendering plots](https://ikashnitsky.github.io/2017/ggplot2-microbenchmark/)
+- Хорошая оптимизация ggplot2? 
+	- Исходная шумиха: [Accelerating ggplot2: use a canvas to speed up rendering plots](https://ikashnitsky.github.io/2017/ggplot2-microbenchmark/)
+	- COOL! Полное опровержение. [Beneath the canvas](http://www.data-imaginist.com/2017/Beneath-the-canvas/)
 - [More Companies using R](http://blog.revolutionanalytics.com/2017/07/more-companies-using-r.html)
 - [How perceptions of R have changed](http://blog.revolutionanalytics.com/2017/07/how-perceptions-of-r-have-changed.html)
 - COOL! [Introducing tidygraph](http://www.data-imaginist.com/2017/Introducing-tidygraph/)
