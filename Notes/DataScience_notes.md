@@ -14,6 +14,23 @@ CTRL + ` (апостроф).
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 27.07.2016
+## RStudio
+- [Scaling and Performance - Tuning Applications in Shiny Server Pro](https://support.rstudio.com/hc/en-us/articles/220546267-Scaling-and-Performance-Tuning-Applications-in-Shiny-Server-Pro). June 14, 2017
+- [Scaling and Performance Tuning in RStudio Connect](https://support.rstudio.com/hc/en-us/articles/231874748-Scaling-and-Performance-Tuning-in-RStudio-Connect). January 07, 2017
+- [Configuration and sizing recommendations](https://support.rstudio.com/hc/en-us/articles/115002344588-Configuration-and-sizing-recommendations). February 02, 2017
+
+## R
+- Joy Plots:
+	- [Introducing Joyplots](http://blog.revolutionanalytics.com/2017/07/joyplots.html)
+	- [Joy Plots](https://eagereyes.org/blog/2017/joy-plots)
+	- COOL! [ggjoy](https://github.com/clauswilke/ggjoy). Geoms to make joyplots using ggplot2, written by Claus O. Wilke
+- [Span Dates and Times without Overhead](https://edwinth.github.io/blog/span_date_time/)
+- [Datatables: Scroll - horizontal](https://datatables.net/examples/basic_init/scroll_x.html)
+- [columnDefs](https://datatables.net/reference/option/columnDefs). Since: DataTables 1.10
+Set column definition initialisation properties.
+- [ropensci/mapr](https://github.com/ropensci/mapr). Map species occurrence data
+
 # 26.07.2016
 ## ClickHouse
 - Примеры запросов с группировкой по времени: [пример 1](https://gist.github.com/alexey-milovidov/2dee968eb95df63b271208f89d3697c3); [пример 2](https://gist.github.com/alexey-milovidov/6fd9246ce44b48345bee3a0df3da5ab0)
@@ -30,8 +47,12 @@ CTRL + ` (апостроф).
 - ggplot
 	- [geom_bar bars not displaying when specifying ylim](https://stackoverflow.com/questions/10365167/geom-bar-bars-not-displaying-when-specifying-ylim)
 	- [Setting y range with bars](https://groups.google.com/forum/?fromgroups#!topic/ggplot2-dev/JGal_9nRzsg)
+- [How to check if each element in a vector is integer or not in R?](https://stackoverflow.com/questions/10113933/how-to-check-if-each-element-in-a-vector-is-integer-or-not-in-r)
+- [FasteR! HigheR! StrongeR! - A Guide to Speeding Up R Code for Busy People](http://www.noamross.net/blog/2013/4/25/faster-talk.html)
 
 ## Shiny
+- COOL! [shinyjqui](https://github.com/Yang-Tang/shinyjqui). The shinyjqui package is an R wrapper for jQuery UI javascript library. It allows user to easily add interactions and animation effects to a shiny app.
+- COOL! [shinyWidgets : Extend widgets available in shiny](https://dreamrs.github.io/shinyWidgets/)
 - [tooltip or popover in Shiny datatables for row names?]()https://stackoverflow.com/questions/39970097/tooltip-or-popover-in-shiny-datatables-for-row-names)
 - [Add vertical line in a DT datatable in a shiny app with custom container](https://stackoverflow.com/questions/36692719/add-vertical-line-in-a-dt-datatable-in-a-shiny-app-with-custom-container). [Здесь раскрашенный дубль](http://techqa.info/programming/question/36692719/Add-vertical-line-in-a-DT-datatable-in-a-shiny-app-with-custom-container)
 - Three R Shiny tricks to make your Shiny app shines (3/3):
@@ -40,8 +61,11 @@ CTRL + ` (апостроф).
 	- [(3/3): Buttons to delete, edit and compare Datatable rows](http://enhancedatascience.com/2017/03/01/three-r-shiny-tricks-to-make-your-shiny-app-shines-33-buttons-to-delete-edit-and-compare-datatable-rows/)
 - COOL! [The R Shiny packages you need for your web apps!](http://enhancedatascience.com/2017/07/10/the-packages-you-need-for-your-r-shiny-application/)
 - COOL! [mexindian/ShinyTester](https://github.com/mexindian/ShinyTester). An R package to help debug Shiny apps during the process itself.
+- [A pick of the best R packages for interactive plot and visualisation (1/2)](http://enhancedatascience.com/2017/04/12/pick-best-r-packages-data-visualization/)
 - [A pick of the best R packages for interactive plots and visualisations (2/2)](http://enhancedatascience.com/2017/07/06/pick-best-r-packages-interactive-plot-visualisation-22/)
-- [Setting column width in R Shiny DataTable does not work in case of lots of column](https://stackoverflow.com/questions/34850382/setting-column-width-in-r-shiny-datatable-does-not-work-in-case-of-lots-of-colum). As suggested [here](https://stackoverflow.com/questions/38251456/shiny-unable-to-set-column-width-in-shiny-datatables?rq=1), setting `scrollX=T` and keeping `autoWidth=TRUE` in the options should work.
+- DT
+	- [Setting column width in R Shiny DataTable does not work in case of lots of column](https://stackoverflow.com/questions/34850382/setting-column-width-in-r-shiny-datatable-does-not-work-in-case-of-lots-of-colum). As suggested [here](https://stackoverflow.com/questions/38251456/shiny-unable-to-set-column-width-in-shiny-datatables?rq=1), setting `scrollX=T` and keeping `autoWidth=TRUE` in the options should work.
+	- [Specifying Column width #29 {Closed}](https://github.com/rstudio/DT/issues/29)
 
 
 

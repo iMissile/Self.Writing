@@ -4,6 +4,7 @@ http://www.worldtimebuddy.com/
 - [Как настраивать Xiaomi smart home - сценарии, часть 1](http://www.ixbt.com/live/kvazis/kak-nastraivat-xiaomi-smart-home-scenarii-chast-1.html)
 - [Как настраивать xiaomi smart home - сценарии, часть 2, управление увлажнителем](http://www.ixbt.com/live/kvazis/kak-nastraivat-xiaomi-smart-home-scenarii-chast-2-upravlenie-uvlazhnitelem.html)
 - [Комплект умного дома Xiaomi Smart Home](https://ru-mi.com/komplekt-umnogo-doma-xiaomi-smart-home)
+- [Умный дом Xiaomi. СМОТРЕТЬ ВСЕМ. Честный обзор Xiaomi mi Home](https://www.youtube.com/watch?v=2O1rxgAMwLM)
 
 # Диаграммы
 - [LucidChart](https://www.lucidchart.com/). DiagramsDone Right. Lucidchart is your diagram maker
