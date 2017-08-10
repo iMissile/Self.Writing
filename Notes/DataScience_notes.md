@@ -19,6 +19,18 @@ CTRL + ` (апостроф).
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 10.08.2017
+## R
+- Конкатенируем строки в датафрейме построчно
+	- [Collapse / concatenate / aggregate a column to a single comma separated string within each group](https://stackoverflow.com/questions/15933958/collapse-concatenate-aggregate-a-column-to-a-single-comma-separated-string-w)
+	- Поэлементное слияние -- либо stri_join(... collapse=NULL), либо str_c() по умолчанию. Последнее надо еще уточнить
+- COOL! Purrr Tutorial. 
+	- [Relationship to base and plyr functions. Why not base?](https://jennybc.github.io/purrr-tutorial/bk01_base-functions.html)
+- [purrrlyr](https://github.com/hadley/purrrlyr) contains some functions that lie at the intersection of purrr and dplyr. They have been removed from purrr in order to make the package lighter and because they have been replaced by other solutions in the tidyverse.
+- **by_row {purrrlyr}**	R Documentation. Apply a function to each row of a data frame
+- COOL! [Applying a function to every row of a table using dplyr?](https://stackoverflow.com/questions/21818181/applying-a-function-to-every-row-of-a-table-using-dplyr)
+- COOL!!! [Outputting multiple lines of text with renderText() in R shiny](https://stackoverflow.com/questions/23233497/outputting-multiple-lines-of-text-with-rendertext-in-r-shiny)
+
 # 09.08.2017
 ## R
 - [Tutorial: Publish an R function as a SQL Server stored procedure with the sqlrutils package](http://blog.revolutionanalytics.com/2017/08/tutorial-sqlrutils.html)
@@ -75,8 +87,9 @@ setNames(c(1,2), c("foo", "bar"))
 - [Interactively change the selectInput choices](https://stackoverflow.com/questions/16173325/interactively-change-the-selectinput-choices)
 - COOL! [R shiny passing reactive to selectInput choices](https://stackoverflow.com/questions/21465411/r-shiny-passing-reactive-to-selectinput-choices)
 - Shiny. [No default select](https://stackoverflow.com/questions/24175997/no-default-select)
-- [Bookmarking Dynamically Added Input Form Fields #1524 {Open}](https://github.com/rstudio/shiny/issues/1524). I don't know if this solves the issue, but the article from Winston at: https://shiny.rstudio.com/articles/advanced-bookmarking.html
+- COOL!!! [Bookmarking Dynamically Added Input Form Fields #1524 {Open}](https://github.com/rstudio/shiny/issues/1524). I don't know if this solves the issue, but the article from Winston at: https://shiny.rstudio.com/articles/advanced-bookmarking.html
 Led me to use the `onBookmark()` and `onRestored()` functions to save some dynamic inputs, then when the page is re-loaded, it sets them after reload. **Now it is working**.
+- [Updating location bar with each input change](http://shiny.rstudio-staging.com/articles/bookmarking-state.html)
 - [R/dplyr: Extracting data frame column value for filtering with %in%](http://www.markhneedham.com/blog/2015/02/22/rdplyr-extracting-data-frame-column-value-for-filtering-with-in/)
 - [Introduction to map(): extract elements](https://jennybc.github.io/purrr-tutorial/ls01_map-name-position-shortcuts.html)
 
