@@ -1,5 +1,6 @@
 - [Запчасти к мясорубке Zelmer](http://vaprom.ru/shop/c16.zelmer.htm)
 - [УЗНАТЬ КТО ВАМ ЗВОНИТ!](https://www.neberitrubku.ru/). Вам звонят с незнакомого номера и вы думаете не брать трубку? Найдите этот номер и узнайте, кто пытается вам дозвониться.
+- [Как поверить диагностическую карту по базе РСА](https://avtobot.net/blog/proverka-diagnosticheskoy-karty-po-baze-eaisto)
 
 - [Клуб любителей аудиокниг. РАДИОПОСТАНОВКИ](http://abook-club.ru/radio/#expand_all)
 - [Коллекция «Старое Радио»](http://mds.altervision.ru/trash/radio/)
@@ -7,6 +8,10 @@
 Аудиокниги можно скачать совершенно бесплатно и без регистрации и слушать онлайн!]
 
 - [blackstarburger](http://blackstarburger.ru/)
+Эдуард Успенский
+http://m.booksee.org/g/%D0%A3%D1%81%D0%BF%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%AD%D0%B4%D1%83%D0%B0%D1%80%D0%B4%20%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%D0%B8%D1%87
+
+[ASCII to Hex ...and other free text conversion tools](http://www.asciitohex.com/)
 
 - [Отображение и скрытие формул](https://support.office.com/ru-ru/article/%D0%9E%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5-%D1%84%D0%BE%D1%80%D0%BC%D1%83%D0%BB-f7f5ab4e-bf24-4efc-8fc9-0c1b77a5356f). Применяется к: Excel 2016 Excel 2013 Excel 2010 Excel 2007
 CTRL + ` (апостроф).
@@ -14,7 +19,124 @@ CTRL + ` (апостроф).
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
-# 27.07.2016
+# 09.08.2017
+## R
+- [Tutorial: Publish an R function as a SQL Server stored procedure with the sqlrutils package](http://blog.revolutionanalytics.com/2017/08/tutorial-sqlrutils.html)
+- [Creating R Stored Procedures in SQL Server 2016 Using sqlrutils](http://www.nielsberglund.com/2017/06/25/creating-r-stored-procedures-in-sql-server-2016-using-sqlrutils/)
+- [A Byte Code Compiler for R](http://homepage.divms.uiowa.edu/~luke/R/compiler/compiler.pdf)
+- [How I became a crolute i.e. an user of the crul package](http://www.masalmon.eu/2017/06/30/crolute/)
+- Formattable
+	- COOL! [Create a nice looking table using R](http://bioinfo.iric.ca/create-a-nice-looking-table-using-r/). Here are also some tricks how to **Export in HTML, JPEG, PNG or PDF files**
+	- [Filtering dataframes with formattable]()https://stackoverflow.com/questions/33457864/filtering-dataframes-with-formattable)
+	- [Two-color color_bar in R formattable](https://stackoverflow.com/questions/41916773/two-color-color-bar-in-r-formattable)
+- Python. [Let Your Data Flow: Streams and Reactive Programming](http://bioinfo.iric.ca/let-your-data-flow-streams-and-reactive-programming/)
+- [mutate_at - using a function with map2](https://stackoverflow.com/questions/44685477/mutate-at-using-a-function-with-map2). 
+This is because mutate_at calls your function separately for each column. It does not pass all the columns at once in the .
+Observe this example
+```
+fx_dump<-function(...) print(list(...))
+mutate_at(df1, vars(contains("Revenue")), funs(fx_dump(.)))
+```
+You'll see that `fx_dump` is called twice, once for each column. You cannot pass multiple parameters at a time to your function using `mutate_at`.
+
+
+# 08.08.2017
+## Win
+- [How to fix Server’s certificate has been revoked in chrome](http://troubleshooter.xyz/wiki/fix-servers-certificate-has-been-revoked-in-chrome/)
+
+## R & Mac
+- [Include cairo R on a Mac](https://stackoverflow.com/questions/38952427/include-cairo-r-on-a-mac). You should download X11 for Mac, which is called XQuartz. It doesn't ship with OS X any more, so you have to download it separately from: https://www.xquartz.org/
+- [Install SmartGit on Mac OSX](http://macappstore.org/smartgit/)
+
+## R
+- [How to specify “does not contain” in dplyr filter in R](https://stackoverflow.com/questions/34444295/how-to-specify-does-not-contain-in-dplyr-filter-in-r)
+- [Opposite of %in%](https://stackoverflow.com/questions/5831794/opposite-of-in)
+- [Implementing Parallel Processing in R](http://r-posts.com/implementing-parallel-processing-in-r/)
+- [Geospatial Queries using Pymongo in R](http://mlampros.github.io/mlampros.github.io/2017/08/07/the_GeoMongo_package/)
+- Tables
+	- [Formattable data frame](https://cran.r-project.org/web/packages/formattable/vignettes/formattable-data-frame.html). Formattable data frames are data frames to be rendered as HTML table with formatter functions applied, which resembles conditional formatting in Microsoft Excel.
+	- [renkun-ken/formattable](https://github.com/renkun-ken/formattable). Formattable Data Structures https://renkun.me/formattable/
+	- [rhandsontable Introduction](https://cran.r-project.org/web/packages/rhandsontable/vignettes/intro_rhandsontable.html). rhandsontable is a htmlwidget based on the handsontable.js library.
+	- [Handsontable Community Edition - a JavaScript/HTML5 Spreadsheet Library for Developers https://handsontable.com](https://github.com/handsontable/handsontable)
+	
+# 07.08.2017
+## R
+- [Creating a named list from two vectors (names, values)](https://stackoverflow.com/questions/17842705/creating-a-named-list-from-two-vectors-names-values): You can use `setNames()`
+```
+setNames(as.list(c(1,2)), c("foo", "bar"))
+```
+(for a list) or
+```
+setNames(c(1,2), c("foo", "bar"))
+```
+(for a vector)
+- COOL. [How to listen for more than one event expression within a Shiny eventReactive handler](https://stackoverflow.com/questions/34731975/how-to-listen-for-more-than-one-event-expression-within-a-shiny-eventreactive-ha)
+- COOL [A few things I learned about shiny (and reactive programming)](https://shinydata.wordpress.com/2015/02/02/a-few-things-i-learned-about-shiny-and-reactive-programming/)
+- [Interactively change the selectInput choices](https://stackoverflow.com/questions/16173325/interactively-change-the-selectinput-choices)
+- COOL! [R shiny passing reactive to selectInput choices](https://stackoverflow.com/questions/21465411/r-shiny-passing-reactive-to-selectinput-choices)
+- Shiny. [No default select](https://stackoverflow.com/questions/24175997/no-default-select)
+- [Bookmarking Dynamically Added Input Form Fields #1524 {Open}](https://github.com/rstudio/shiny/issues/1524). I don't know if this solves the issue, but the article from Winston at: https://shiny.rstudio.com/articles/advanced-bookmarking.html
+Led me to use the `onBookmark()` and `onRestored()` functions to save some dynamic inputs, then when the page is re-loaded, it sets them after reload. **Now it is working**.
+- [R/dplyr: Extracting data frame column value for filtering with %in%](http://www.markhneedham.com/blog/2015/02/22/rdplyr-extracting-data-frame-column-value-for-filtering-with-in/)
+- [Introduction to map(): extract elements](https://jennybc.github.io/purrr-tutorial/ls01_map-name-position-shortcuts.html)
+
+
+# 04.08.2017
+## R
+- [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/solutions). 
+Quickly build Cortana Intelligence Solutions from solution templates, reference architectures and design patterns. Make them your own with the included instructions or with a featured partner.
+- [R⁶ — Reticulating Parquet Files](https://rud.is/b/2017/08/01/r%E2%81%B6-reticulating-parquet-files/)
+- [Reading PCAP Files with Apache Drill and the sergeant R Package](https://rud.is/b/2017/07/27/reading-pcap-files-with-apache-drill-and-the-sergeant-r-package/)
+- [ggplot2 explorer](http://databall.co/shiny/shinyggplot/). I created this website to help all R learners to undestand how to plot beautiful/useful charts using the most popular vizualization package ggplot2. It won't teach you how to write a code, but definitely will show you how ggplot2 geoms look like, and how manipulating their arguments changes visualization. Few scrolls below you can find list of covered geoms and example of what they plot.
+- [R for System Adminstration](http://dirk.eddelbuettel.com/blog/2017/08/03/#r_for_system_administration)
+- [Saving High-Resolution ggplots: How to Preserve Semi-Transparency](http://www.sthda.com/english/wiki/saving-high-resolution-ggplots-how-to-preserve-semi-transparency)
+
+# 02.08.2017
+## R
+- [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
+- [Define aesthetic mappings programatically](http://ggplot2.tidyverse.org/reference/aes_.html)
+	- COOL! [How do I combine aes() and aes_string() options](https://stackoverflow.com/questions/28777626/how-do-i-combine-aes-and-aes-string-options)
+
+## Shiny
+- [Center custom data table container column headers in Shiny](https://stackoverflow.com/questions/38544468/center-custom-data-table-container-column-headers-in-shiny)
+- [Shiny + DT: Single Cell Selection](https://stackoverflow.com/questions/39270365/shiny-dt-single-cell-selection). 
+The problem is in your call to `DT::renderDataTable` in the selection list. You need `selection=list(mode="single", target="cell")`
+`mode` sets single or multiple where you had selection (before your edit)
+- [Hide certain columns in a responsive data table using DT package](https://stackoverflow.com/questions/32409194/hide-certain-columns-in-a-responsive-data-table-using-dt-package)
+- [Using DT in Shiny](http://rstudio.github.io/DT/shiny.html)
+- [DataTable row selection inside shiny module](https://stackoverflow.com/questions/37862569/datatable-row-selection-inside-shiny-module)
+- [Shiny app to explore ggplot2](http://r-posts.com/shiny-app-to-explore-ggplot2/)
+	- [ggplot2 explorer](http://databall.co/shiny/shinyggplot/)
+- [Are tabs with their own sidebars and mainPanels possible in shiny?](https://stackoverflow.com/questions/16225260/are-tabs-with-their-own-sidebars-and-mainpanels-possible-in-shiny)
+- [hide and show tabsetPanel #121 {Closed}](https://github.com/daattali/shinyjs/issues/121): "I think the simple solution here is giving an id to the div , and calling `show()` on that `div`'s ID rather than the `tabsetPanel`'s ID"
+- COOL! [date format change with DT and shiny](https://stackoverflow.com/questions/38875173/date-format-change-with-dt-and-shiny). With the development version of DT (>= 0.2.2) on Github, you can pass additional parameters to the date conversion method, e.g.
+```
+datatable(a) %>%
+  formatDate(1, method = 'toLocaleDateString', params = list('fr-FR'))
+```
+- COOL!!! [Adding and removing UI objects](https://gallery.shinyapps.io/insertUI/)
+- COOL!!!! [Build a dynamic UI that reacts to user input](http://shiny.rstudio-staging.com/articles/dynamic-ui.html)
+
+# 31.07.2017
+## R
+- COOL! [Shiny Gadgets](http://shiny.rstudio-staging.com/articles/gadgets.html). LAST EDITED: 30 MAY 2017 BY: JOE CHENG
+- [Updated overbought/oversold plot function](http://dirk.eddelbuettel.com/blog/2017/07/29/#updated_overbought_oversold_plot)
+- COOL. [Parallelizing Loops]() 2016-12-19. Также см. п `Nesting Calls to foreach`
+- [UNDERSTANDING OVERHEAD ISSUES IN PARALLEL COMPUTATION](https://matloff.wordpress.com/2017/07/29/understanding-overhead-issues-in-parallel-computation/)
+- [pkgdown](https://hadley.github.io/pkgdown/). pkgdown is designed to make it quick and easy to build a website for your package. You can see pkgdown in action at http://hadley.github.io/pkgdown/: this is the output of pkgdown applied to the latest version of pkgdown. Learn more in `vignette("pkgdown")` or `?build_site`.
+- [vtreat](https://winvector.github.io/vtreat/) is an R data.frame processor/conditioner that prepares real-world data for predictive modeling in a statistically sound manner. For more detail please see here: [arXiv:1611.09477](https://arxiv.org/abs/1611.09477) stat.AP. There is also a series of articles recording the evolution of vtreat including some tutorials here.
+- [Scripting for data analysis (with R)](https://martinsbioblogg.wordpress.com/2017/07/30/scripting-for-data-analysis-with-r/). [Course materials](https://github.com/mrtnj/scripting_for_data_analysis)
+- [hadley/pryr](https://github.com/hadley/pryr). Pry open the covers of R. pryr provides tools to pry back the surface of R and dig into the details. It has been developed in conjunction with "Advanced R programming" to make it easier to understand what's going on in R.
+- [ggplot2 - Easy way to mix multiple graphs on the same page](http://www.sthda.com/english/wiki/ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page)
+- [Working with legends](https://cran.r-project.org/web/packages/lemon/vignettes/legends.html) by Stefan McKinnon Edwards sme@iysik.com, 2017-05-22. Показ макета: `gtable_show_names(d2)`
+- R & MSSQL
+	- [Encoding problem with dbWriteTable on Microsoft SQL Server 2012 with R on Windows7 client #56 {Closed}](https://github.com/rstats-db/odbc/issues/56)
+	- [Connecting to MS SQL Server using RODBC](https://gist.github.com/ivyleavedtoadflax/06a62c88a5b2ddd1f2b7acda55ccb186)	
+	- [Setting up R to connect to SQL Server](https://support.rstudio.com/hc/en-us/articles/214510788-Setting-up-R-to-connect-to-SQL-Server-)
+	- [SQL Server RODBC Connection](https://stackoverflow.com/questions/5720508/sql-server-rodbc-connection)
+
+
+# 27.07.2017
 ## RStudio
 - [Scaling and Performance - Tuning Applications in Shiny Server Pro](https://support.rstudio.com/hc/en-us/articles/220546267-Scaling-and-Performance-Tuning-Applications-in-Shiny-Server-Pro). June 14, 2017
 - [Scaling and Performance Tuning in RStudio Connect](https://support.rstudio.com/hc/en-us/articles/231874748-Scaling-and-Performance-Tuning-in-RStudio-Connect). January 07, 2017
@@ -31,7 +153,7 @@ CTRL + ` (апостроф).
 Set column definition initialisation properties.
 - [ropensci/mapr](https://github.com/ropensci/mapr). Map species occurrence data
 
-# 26.07.2016
+# 26.07.2017
 ## ClickHouse
 - Примеры запросов с группировкой по времени: [пример 1](https://gist.github.com/alexey-milovidov/2dee968eb95df63b271208f89d3697c3); [пример 2](https://gist.github.com/alexey-milovidov/6fd9246ce44b48345bee3a0df3da5ab0)
 
@@ -2042,6 +2164,7 @@ Go and explore, and happy new year!
 ## R
 - [R exercises](http://r-exercises.com/). Очень неплохой ресурс с заданиями по R.
 - COOL! Классный пакет для Simmer [Discrete-Event Simulator for R](http://fishyoperations.com/2017/01/12/extensions-for-simmer.html). Вообще, на этом сайте очень много записей про симуляцию.
+- [simmer 3.6.3](https://www.enchufa2.es/archives/simmer-3-6-3.html)
 - [simmer 3.6.2](https://www.enchufa2.es/archives/simmer-3-6-2.html)
 - [Discrete Event Simulation using R: Hospital Capacity Planning.](https://www.codeproject.com/Articles/1111093/Discrete-Event-Simulation-using-R-Hospital-Capacit)
 

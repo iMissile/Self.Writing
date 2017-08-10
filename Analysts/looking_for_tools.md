@@ -21,6 +21,8 @@ http://www.worldtimebuddy.com/
 
 ## Online Editors
 - [Онлайн-генератор таблиц](http://www.tablesgenerator.com/)
+- [JSON Editor Online](http://jsoneditoronline.org/)
+
 Краткая сводка по редакторам позаимствована [отсюда](http://sixrevisions.com/tools/online-markdown-editors) и [отсюда](http://mashable.com/2013/06/24/markdown-tools/) (_78 Tools for Writing and Previewing Markdown_)
 
 1. [StackEdit](https://stackedit.io)

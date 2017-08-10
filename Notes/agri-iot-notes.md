@@ -759,6 +759,7 @@ RVersionScanning = false
 
 
 # Инсталляция LaTeX
+
 - Centos 7 latex install
 ```
 yum -y install texlive texlive-latex texlive-xetex
@@ -782,7 +783,8 @@ yum -y install texlive-collection-latexextra
 
 - Ставим `sudo yum install texlive-cyrillic texlive-collection-langcyrillic install texlive-cyrillic-doc`
 
-Ошибки при запуске TeXLive
+## Ошибки при запуске TeXLive
+- [! LaTeX Error: File `titling.sty' not found. #115](https://github.com/rstudio/bookdown/issues/115)
 - LaTeX Error: File 'framed.sty' not found. Решаем установкой [`sudo yum -y install texlive-framed`](https://github.com/rstudio/rmarkdown/issues/39)
 - LaTeX Error: File 'titling.sty' not found. Решаем установкой `sudo yum -y install texlive-titling`
 
@@ -807,7 +809,7 @@ yum -y install texlive-collection-latexextra
 	- А еще есть пакет LaTeX [`libertine`](https://www.ctan.org/tex-archive/fonts/libertine/)
 	- [Libertine Font problem with XeLaTeX](http://tex.stackexchange.com/questions/105970/font-problem-with-xelatex)
 
-Инсталляция одной строчкой: `yum install texlive-framed texlive-titling texlive-cyrillic texlive-*font*`
+Инсталляция одной строчкой: `sudo yum install texlive-framed texlive-titling texlive-cyrillic texlive-*font* linux-liber*`
 
 
 
