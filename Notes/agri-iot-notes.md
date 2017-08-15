@@ -92,10 +92,14 @@ sudo yum update
 	sudo yum install gcc-gfortran*
 	sudo yum install texlive*
 	sudo yum install ufw
+        sudo yum install dejavu*
+	sudo yum install psmisc
+	sudo yum install rrdtool
 	# а это надо для RStudio Connect
 	sudo yum install dejavu-fonts-common dejavu-sans-mono-fonts rrdtool
 	# а это для RStudio Server
 	sudo yum install psmisc
+	sudo yum install lrzsz
 
 	'# # надо выяснять актуальную версию
 	sudo yum install java-1.8.0-openjdk.x86_64 
@@ -109,13 +113,14 @@ sudo yum update
 ### Готовая последовательность команд по установке пакетов
 **Загоняем в одну команду** `yum install package1 package2 package3......`, [How to install multiple packages using yum](http://www.linuxquestions.org/questions/linux-newbie-8/how-to-install-multiple-packages-using-yum-850364/):
 ```
-sudo yum install epel-release chrony tree R
+sudo yum install epel-release chrony tree
+sudo yum install R
 sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
 
 sudo yum groupinstall X11
 sudo yum groupinstall "Development Tools"
 
-sudo yum install wget libcurl-devel openssl-devel cyrus-sasl-devel libxml2-devel libpng-devel libjpeg-devel python python-devel proj proj-devel mesa-libGL mesa-libGL-devel mesa-libGLU mesa-libGLU-devel gmp-devel mpfr-devel cairo-devel libXt-devel gtk2-devel v8-devel udunits2 udunits2-devel xorg-x11-server-Xvfb unixODBC* postgresql-devel gcc-gfortran* texlive*, ufw
+sudo yum install wget libcurl-devel openssl-devel cyrus-sasl-devel libxml2-devel libpng-devel libjpeg-devel python python-devel proj proj-devel mesa-libGL mesa-libGL-devel mesa-libGLU mesa-libGLU-devel gmp-devel mpfr-devel cairo-devel libXt-devel gtk2-devel v8-devel udunits2 udunits2-devel xorg-x11-server-Xvfb unixODBC* postgresql-devel gcc-gfortran* texlive*, ufw, dejavu*, psmisc, rrdtool, lrzsz
 ```
 и
 ```
@@ -264,17 +269,46 @@ file. If the file doesn’t exist or UID_MIN isn’t defined within it then a de
 You change the minimum user id by specifying the auth-minimum-user-id option. For example:
 /etc/rstudio/rserver.conf
 ```
-## Установка RStudio Shiny Server
+## Установка Shiny Server
+Зависимости:
+```
+===========================================================================================================================================
+ Package                          Архитектура      Версия                    Репозиторий                                             Размер
+===========================================================================================================================================
+Установка:
+ shiny-server                     x86_64           1.5.3.770-1               /shiny-server-commercial-1.5.3.770-rh5-x86_64           288 M
+Установка зависимостей:
+ dejavu-fonts-common              noarch           2.33-6.el7                base                                                     64 k
+ dejavu-sans-mono-fonts           noarch           2.33-6.el7                base                                                    433 k
+ psmisc                           x86_64           22.20-11.el7              base                                                    141 k
+ rrdtool                          x86_64           1.4.8-9.el7               base                                                    440 k
+```
+
+### Open Source edition
 Читаем оригинальную инструкцию по инсталляции ["Installing Shiny Server Open Source"](https://www.rstudio.com/products/shiny/download-server/)
 
+### Pro edition
+Загружаем пакет [отсюда](https://www.rstudio.com/products/shiny/download-commercial/)
+
+После инсталляции и проверки запуска настраиваем доступ в админскую консоль:
+"
+This configuration will also create an administrative dashboard running on port 4151. The admin interface requires that a user authenticate themselves, which is discussed further in the chapter on Authentication & Security. The configuration will attempt to use a flat-file authentication system stored at `/etc/shiny-server/passwd`; an empty database is created for you here during installation. To create a new user named admin in this file to allow you to login to the dashboard, execute the following command
+```
+$ sudo /opt/shiny-server/bin/sspasswd /etc/shiny-server/passwd admin
+and then enter and verify the password you wish to use for this user.
+```
+"
+
+## Проверяем жизнеспособность
 Once installed, view the [Administrator’s Guide](http://docs.rstudio.com/shiny-server/) to learn how to manage and configure Shiny Server. Stay up to date on Shiny Server news and software updates by subscribing above.
 
 - Проверяем, что процесс запущен:  
 `sudo systemctl status shiny-server`
 - Cмотрим log файл:  
-`/var/log/shiny-server.log`
+`cat /var/log/shiny-server.log`
 
 По умолчанию Shiny Server доступен по порту 3838.
+Админ консоль (Pro версия) доступна по порту 4151
 
 Смапируем наше приложение на location '/iot'. 
 Делается это в конфиге `/etc/shiny-server/shiny-server.conf`. Читаем мануал '2.2.2 Location'  
@@ -284,6 +318,36 @@ Once installed, view the [Administrator’s Guide](http://docs.rstudio.com/shiny
 При проблемах функционирования начинаем читать логи:  
 - `systemctl status shiny-server.service`  
 - `journalctl -xe` for details.
+
+Местоположение логов приложений определяется в конфиге:	
+```
+location / {
+  log_dir /var/log/shiny-server/;
+}
+```
+- Краткая статья про логи: [Shiny Server Error Logs](https://support.rstudio.com/hc/en-us/articles/115003717168-Shiny-Server-Error-Logs)
+You can override this behavior using the `preserve_logs` configuration option. If you set `preserve_logs true`; in your configuration file, Shiny Server will never delete the logs from your R processes, regardless of their exit code.
+- [Troubleshooting applications in Shiny Server Pro](https://support.rstudio.com/hc/en-us/articles/220315848-Troubleshooting-applications-in-Shiny-Server-Pro)
+Ответ: `preserve_logs` надо ставить на top level. После запуска видно, что не хватает прав создать файл логгера приложения.
+Надо дать полные права пользователю `shiny` (он в конфиге прописан как `run_as`) на `/srv/shiny-server`
+- [Give user write access to folder {duplicate}](https://askubuntu.com/questions/402980/give-user-write-access-to-folder)
+
+
+- Ошибка при запуске: `/opt/shiny-server/ext/activation/license-manager: error while loading shared libraries: libssl.so.6: cannot open shared object file: No such file or directory`. 
+Поиск библиотеки `find / -name libssl.so` дает следующее: `/usr/lib64/libssl.so`. Ответ -- поставил версию не под тот CentOS.
+
+
+## Настройка репозитория
+См. документацию по установке, п. [1.3.4 Install Shiny](http://docs.rstudio.com/shiny-server/#stopping-and-starting)
+Setup the Server for Secure Package Installation
+You should also specify a secure default CRAN mirror in this same file. You can do that using the following code:
+```
+local({
+  r <- getOption("repos")
+  r["CRAN"] <- "https://cran.rstudio.com/"
+  options(repos=r)
+})
+```
 
 ### Обновление Shiny Server
 Читаем [Upgrading Shiny Server](https://support.rstudio.com/hc/en-us/articles/216080017-Upgrading-Shiny-Server):
@@ -683,6 +747,7 @@ git config --global push.default matching
 `wget https://s3.amazonaws.com/rstudio-connect/centos6.3/x86_64/rstudio-connect-1.5.0-7-x86_64.rpm`
 
 - Проверяем созданных пользователей: `cat /etc/passwd`. Детальнее можно поглядеть, например, здесь: [Linux Command: List All Users In The System](https://www.cyberciti.biz/faq/linux-list-users-command/)
+- Как дать права на запись для конкретного пользователя? `chown/chmod`. [Give user write access to folder {duplicate}](https://askubuntu.com/questions/402980/give-user-write-access-to-folder)
 - Настраиваем почтовый адрес Connect. Секция `SenderEmail`, `vi /etc/rstudio-connect/rstudio-connect.gcfg` и перезапускаем
 `sudo systemctl restart rstudio-connect`, `sudo systemctl status rstudio-connect`
 - Запускаем `http://your-connect-server:3939/` и создаем аккаунт! [The first account will be marked as an RStudio Connect administrator.](http://docs.rstudio.com/connect/admin/getting-started.html#installation)

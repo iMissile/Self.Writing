@@ -16,8 +16,55 @@ http://m.booksee.org/g/%D0%A3%D1%81%D0%BF%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20
 - [Отображение и скрытие формул](https://support.office.com/ru-ru/article/%D0%9E%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D1%81%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5-%D1%84%D0%BE%D1%80%D0%BC%D1%83%D0%BB-f7f5ab4e-bf24-4efc-8fc9-0c1b77a5356f). Применяется к: Excel 2016 Excel 2013 Excel 2010 Excel 2007
 CTRL + ` (апостроф).
 
+- [«У меня в команде нет ни одного дешевого сотрудника. Я сразу покупаю профессионалов»](https://vc.ru/p/wikium)
+Редакторы Growth Hacks пообщались с Сергеем Беланом, основателем сервиса для тренировки мозга Wikium — о команде, способах привлечения трафика, email-маркетинге и удерживании пользователей.
+
+https://www.crowdgames.ru/page/plany-crowd-games
+
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
+
+# 15.08.2017
+## R
+- После апдейта shiny на 1.0.4 возникла следующая ошибка: "Error in divTag$attribs : $ operator is invalid for atomic vectors".
+Поиск в гугле приводит к `Conditional Tab Panels`. Ошибка оказалась в дублировании параметров. Я тут фактически 2 раза определял label
+```
+  navbarPage("TV Stat",
+             # title=HTML('<div><a href="http://devoteam.com/"><img src="./img/devoteam_176px.png" width="80%"></a></div>'),
+             title="Статистика телесмотрения",
+```
+- [Installing older versions of packages](https://support.rstudio.com/hc/en-us/articles/219949047-Installing-older-versions-of-packages)
+
+# 14.08.2017
+## R
+- COOL! [Simplicity matters - 3 updates to the FFTrees universe](https://ndphillips.github.io/blog/simplicity-matters-3-updates-to-the-fftrees-universe/)
+- [reticulate: R Interface to Python](https://cran.r-project.org/web/packages/reticulate/index.html). 
+R interface to Python modules, classes, and functions. When calling into Python R data types are automatically converted to their equivalent Python types. When values are returned from Python to R they are converted back to R types. Compatible with all versions of Python >= 2.7.
+- [R⁶ — Reticulating Parquet Files](https://rud.is/b/2017/08/01/r%E2%81%B6-reticulating-parquet-files/)
+
+# 11.08.2017
+## R
+- [Data Science for Water Utilities Using R](http://r.prevos.net/data-science-for-water-utilities/)
+- COOL! [sjmisc - Data and Variable Transformation Functions](https://github.com/strengejacke/sjmisc). 
+Collection of miscellaneous utility functions, supporting data transformation tasks like recoding, dichotomizing or grouping variables, setting and replacing missing values. The data transformation functions also support labelled data.
+
+The functions of sjmisc are designed to work together seamlessly with other packes from the tidyverse, like dplyr. For instance, you can use the functions from sjmisc both within a pipe-worklflow to manipulate data frames, or to create new variables with `mutate()`. See `vignette("design_philosophy", "sjmisc")` for more details.
+- [suppress comment “joining by…” when running dplyr::left_join](https://stackoverflow.com/questions/29168204/suppress-comment-joining-by-when-running-dplyrleft-join)
+- [Easy way to reduce column width? #38 {Closed}](https://github.com/renkun-ken/formattable/issues/38)
+- [CSS tag `direction`](http://htmlbook.ru/css/direction). direction предназначен для сайтов, в которых имеет значение направление текста. Например, при использовании арабского алфавита чтение происходит справа налево. 
+В частности, `formattable` почему-то поставил в DT значение `rtl`, хотя мы читаем слева направо, да и лучше использовать `inherit`. Смотрим репозиторий и пишем свою функцию на основе color_bar из [репозитория](https://github.com/renkun-ken/formattable/blob/39e1e0109138e1744b1b4d11cbbebb7e88310bbb/R/formatter.R)
+- [How to deal with character(0)](http://max2.ese.u-psud.fr/epc/conservation/Girondot/Publications/Blog_r/Entrees/2014/5/8_How_to_deal_with_character(0).html)
+- Обнаружились ошибки в сортировке в DT:
+	- [wrong sorted by column DataTable](https://stackoverflow.com/questions/43679085/wrong-sorted-by-column-datatable)
+	- [Formattable breaks column sort in DataTable in Shiny](https://stackoverflow.com/questions/45058033/formattable-breaks-column-sort-in-datatable-in-shiny)
+	- [Possible to add sorting and filtering to formattable? #27 {Closed}](https://github.com/renkun-ken/formattable/issues/27)
+	- [Is there a way to get the data from a formattable row in Shiny when I select / click it](https://stackoverflow.com/questions/34205993/is-there-a-way-to-get-the-data-from-a-formattable-row-in-shiny-when-i-select-c).
+The issue was closed by Kun Ren with the comment:
+I guess it's better use DT instead. formattable is currently only designed for static content presentation with formatting applied to columns. It would be some major changes to make it more interactive, and probably would become the same with DT finally, and that's not the goal of this package though.
+!!!!! Беда в том, что formattable при применении color_bar начинает считать колонку как строку, и DT проводит сортировку по строке!!!!!
+
+## Clickhouse
+- [PVSM: Рубрика «clickhouse»](http://www.pvsm.ru/cat/clickhouse)
 
 # 10.08.2017
 ## R
@@ -41,6 +88,7 @@ CTRL + ` (апостроф).
 	- COOL! [Create a nice looking table using R](http://bioinfo.iric.ca/create-a-nice-looking-table-using-r/). Here are also some tricks how to **Export in HTML, JPEG, PNG or PDF files**
 	- [Filtering dataframes with formattable]()https://stackoverflow.com/questions/33457864/filtering-dataframes-with-formattable)
 	- [Two-color color_bar in R formattable](https://stackoverflow.com/questions/41916773/two-color-color-bar-in-r-formattable)
+	- [A year later :), the upcoming v0.2 release of formattable will have an as.datatable function to combine formattable and datatable. Here is a simple example.](https://github.com/rstudio/DT/issues/31)
 - Python. [Let Your Data Flow: Streams and Reactive Programming](http://bioinfo.iric.ca/let-your-data-flow-streams-and-reactive-programming/)
 - [mutate_at - using a function with map2](https://stackoverflow.com/questions/44685477/mutate-at-using-a-function-with-map2). 
 This is because mutate_at calls your function separately for each column. It does not pass all the columns at once in the .
@@ -139,7 +187,7 @@ datatable(a) %>%
 - [pkgdown](https://hadley.github.io/pkgdown/). pkgdown is designed to make it quick and easy to build a website for your package. You can see pkgdown in action at http://hadley.github.io/pkgdown/: this is the output of pkgdown applied to the latest version of pkgdown. Learn more in `vignette("pkgdown")` or `?build_site`.
 - [vtreat](https://winvector.github.io/vtreat/) is an R data.frame processor/conditioner that prepares real-world data for predictive modeling in a statistically sound manner. For more detail please see here: [arXiv:1611.09477](https://arxiv.org/abs/1611.09477) stat.AP. There is also a series of articles recording the evolution of vtreat including some tutorials here.
 - [Scripting for data analysis (with R)](https://martinsbioblogg.wordpress.com/2017/07/30/scripting-for-data-analysis-with-r/). [Course materials](https://github.com/mrtnj/scripting_for_data_analysis)
-- [hadley/pryr](https://github.com/hadley/pryr). Pry open the covers of R. pryr provides tools to pry back the surface of R and dig into the details. It has been developed in conjunction with "Advanced R programming" to make it easier to understand what's going on in R.
+- [hadley/pryr](https://github.com/hadley/pryr). Pryr open the covers of R. pryr provides tools to pry back the surface of R and dig into the details. It has been developed in conjunction with "Advanced R programming" to make it easier to understand what's going on in R.
 - [ggplot2 - Easy way to mix multiple graphs on the same page](http://www.sthda.com/english/wiki/ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page)
 - [Working with legends](https://cran.r-project.org/web/packages/lemon/vignettes/legends.html) by Stefan McKinnon Edwards sme@iysik.com, 2017-05-22. Показ макета: `gtable_show_names(d2)`
 - R & MSSQL
@@ -435,6 +483,7 @@ candidates <- c( Sys.getenv("R_PROFILE"),
 	- [Process management in RStudio Connect](https://support.rstudio.com/hc/en-us/articles/226871847-Process-management-in-RStudio-Connect)
 	- [Для последней версии Connect](http://docs.rstudio.com/connect/admin/package-management.html)
 	- [Deploying connect app with private repository](https://support.rstudio.com/hc/en-us/community/posts/115001095768-Deploying-connect-app-with-private-repository)
+	- [Package management in RStudio Connect](https://support.rstudio.com/hc/en-us/articles/226871467-Package-management-in-RStudio-Connect)
 	- [Package Management for Offline RStudio Connect Installations](https://support.rstudio.com/hc/en-us/articles/115006298728-Package-Management-for-Offline-RStudio-Connect-Installations)
 	- [R not reading Rprofile.site at startup](https://superuser.com/questions/891127/r-not-reading-rprofile-site-at-startup). Смотрим из консоли командой `R RHOME`
 `/usr/lib64/R/library/base/R/Rprofile` -- system Rprofile
@@ -447,6 +496,14 @@ candidates <- c( Sys.getenv("R_PROFILE"),
 Andrie de Vries and Alex Chubaty
 July 12, 2016
 - [devtools](https://cran.r-project.org/web/packages/devtools/README.html)
+Возникают вопросы о том, откуда взять и как записать SHA в DESCRIPTION. Похожий вопрос на SoF: 
+ - [Programmatically set fields in DESCRIPTION file for R package](https://stackoverflow.com/questions/44871619/programmatically-set-fields-in-description-file-for-r-package)
+Что надо делать с пользовательскими пакетами? 
+1. на клиентской машине ставим пакет из репозитория с помощью `devtools::install_github()`.
+2. devtools прописывает в DESCRIPTION установленного пакета SHA, берем его и используем для [переименования исходников пакета](https://support.rstudio.com/hc/en-us/articles/226871467-Package-management-in-RStudio-Connect).
+3. Помещаем этот файл в соотв. ветку в `Server.SourcePackageDir`
+
+
 
 
 # 18.06.2017
