@@ -329,7 +329,8 @@ location / {
 You can override this behavior using the `preserve_logs` configuration option. If you set `preserve_logs true`; in your configuration file, Shiny Server will never delete the logs from your R processes, regardless of their exit code.
 - [Troubleshooting applications in Shiny Server Pro](https://support.rstudio.com/hc/en-us/articles/220315848-Troubleshooting-applications-in-Shiny-Server-Pro)
 Ответ: `preserve_logs` надо ставить на top level. После запуска видно, что не хватает прав создать файл логгера приложения.
-Надо дать полные права пользователю `shiny` (он в конфиге прописан как `run_as`) на `/srv/shiny-server`
+Надо дать полные права пользователю `shiny` (он в конфиге прописан как `run_as`) на `/srv/shiny-server`.
+Можно командой `sudo chown -R shiny /srv/shiny-server`
 - [Give user write access to folder {duplicate}](https://askubuntu.com/questions/402980/give-user-write-access-to-folder)
 
 
