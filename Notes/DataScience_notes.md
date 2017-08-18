@@ -24,6 +24,73 @@ https://www.crowdgames.ru/page/plany-crowd-games
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 17.08.2017
+## R & GIS
+- [OpenStreetMap and R. R package osmar](http://osmar.r-forge.r-project.org/)
+- [A new version of the OpenStreetMap package](http://blog.fellstat.com/?cat=15)
+- [Introducing the nominatim geocoding package](https://rud.is/b/2015/07/29/introducing-the-nominatim-geocoding-package/)
+	- [hrbrmstr/nominatim](https://github.com/hrbrmstr/nominatim) Tools for Working with the 'Nominatim' API in R
+- COOL. [ggspatial: Spatial data framework for ggplot2](https://github.com/paleolimbot/ggspatial)
+- [Converting osm file to shapefile (or data frame) in R](https://gis.stackexchange.com/questions/115911/converting-osm-file-to-shapefile-or-data-frame-in-r)
+- [Combining OpenStreetMap and geometric plotting in R](https://stackoverflow.com/questions/16195103/combining-openstreetmap-and-geometric-plotting-in-r)
+- [Setting up a local copy of the OpenStreetMap database, kept up to date with minutely diffs](http://wiki.openstreetmap.org/wiki/Setting_up_a_local_copy_of_the_OpenStreetMap_database,_kept_up_to_date_with_minutely_diffs)
+- [Nominatim (from the Latin, 'by name') is a tool to search OSM data by name and address and to generate synthetic addresses of OSM points (reverse geocoding). It can be found at nominatim.openstreetmap.org.](http://wiki.openstreetmap.org/wiki/Nominatim)
+- [Geocoding in R](https://cengel.github.io/rspatial/5_Geocoding.nb.html) by claudia a engel. Last updated: February 11, 2017
+
+## R
+- [RStudio 1.1 Preview - Data Connections](https://blog.rstudio.com/2017/08/16/rstudio-preview-connections/)
+	- [RStudio Connections](https://rstudio.github.io/rstudio-extensions/rstudio-connections.html)
+- [Shiny 1.0.4](https://blog.rstudio.com/2017/08/15/shiny-1-0-4/)
+- [Understanding overfitting: an inaccurate meme in supervised learning](http://memosisland.blogspot.ru/2017/08/understanding-overfitting-inaccurate.html)
+- [Visualising Water Consumption using a Geographic Bubble Chart](http://r.prevos.net/geographic-bubble-chart/)
+- COOL. [View entire data frame when wrapped in tbl_df/tibble?](https://stackoverflow.com/questions/23188900/view-entire-data-frame-when-wrapped-in-tbl-df). Answer:
+    You can control the default appearance with options:
+```
+    options(tibble.print_max = n, tibble.print_min = m): if there are more than n rows, print only the first m rows. Use options(tibble.print_max = Inf) to always show all rows.
+    options(tibble.width = Inf) will always print all columns, regardless of the width of the screen.
+```
+а также через параметры print:
+print (with a tibble) also has the n = Inf and width = and n_extra = options to control how many columns are printed, either directly or indirectly
+- [Tibble Data Format in R: Best and Modern Way to Work with Your Data](http://www.sthda.com/english/wiki/tibble-data-format-in-r-best-and-modern-way-to-work-with-your-data)
+- [How do I add a prefix to several variable names using dplyr?](https://stackoverflow.com/questions/33741357/how-do-i-add-a-prefix-to-several-variable-names-using-dplyr). 
+`data %>% setNames(paste0('cars.', names(.)))`
+- [How to rename multiple columns given character vectors of column names and replacement in dplyr 0.6.0?](https://stackoverflow.com/questions/44452108/how-to-rename-multiple-columns-given-character-vectors-of-column-names-and-repla)
+`df %>% rename_at(vars(col.from), ~col.to)`
+- [benchmarkme: Crowd Sourced System Benchmarks](https://cran.r-project.org/web/packages/benchmarkme/index.html)
+Benchmark your CPU and compare against other CPUs. Also provides functions for obtaining system specifications, such as RAM, CPU type, and R versio
+
+
+## Windows
+- COOL! [List all files with certain extensions in Windows folder in a single call](https://stackoverflow.com/questions/17618271/list-all-files-with-certain-extensions-in-windows-folder-in-a-single-call).
+`dir /b *.csv *.xsl *.txt > results.txt`
+	- [Dir](https://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/dir.mspx?mfr=true). Displays a list of a directory's files and subdirectories.
+- Утилиты командной строки для работы с ACL: `takeown.exe` & `icacl.exe`
+Пример использования `icacls` и `takeown` для получения доступа ко всем файлам несистемного диска..
+`takeown /f D: /r /d y`
+`/r` - нужен для обработки всех вложенных папок
+`/d y` - положительно отвечает на стандартный запрос да/нет, который появляется в том случае, если у пользователя нет прав для доступа к подпапкам.
+
+Став владельцем папок, вы получите доступ к их содержимому, но, скорее всего, не сможете осуществлять запись в них. В этом случае можно взять полный контроль над папками таким образом
+
+`icacls D: /grant:r имя:F /t`
+Вместо имя подставьте имя вашей учетной записи или группы, которой вы хотите дать полный контроль над папками.
+`grant:r` - заменяет все текущие права, что имеет смысл в том конкретном случае когда (учетная запись, имевшая права, уже не существует), но далеко не всегда....
+- [Windows 7 и сброс прав доступа и владельца файлов](http://tt.erinome.net/2012/07/265)
+
+# 16.08.2017
+## R
+- [Dirk Eddelbuettel. #9: Compacting your Shared Libraries](http://dirk.eddelbuettel.com/blog/2017/08/14/#009_compact_shared_libraries)
+- COOL [`set_na_where()`: a nonstandard evaluation use case](https://tjmahr.github.io/set-na-where-nonstandard-evaluation-use-case/)
+	- [tjmahr/fillgaze. Helper functions for interpolating missing eyetracking data](https://github.com/tjmahr/fillgaze)
+- [Magick 1.0: 🎩 ✨🐇 Advanced Graphics and Image Processing in R](https://ropensci.org/blog/blog/2017/08/15/magick-10)
+- COOL! [Shiny App Usage Tracking](http://shiny.rstudio-staging.com/articles/usage-metrics.html)
+- [Combine mutate with conditional values](https://stackoverflow.com/questions/22337394/combine-mutate-with-conditional-values)
+- [Conditional mutate #1665 {Closed}](https://github.com/tidyverse/dplyr/issues/1665)
+- COOL! Conditional Mutate. [Equivalent of SQL CASE #631 {Closed}](https://github.com/tidyverse/dplyr/issues/631)
+- [R package to aid cleaning/checking/formatting data using Codebooks/Data Dictionaries #46 {Open}](https://github.com/ropensci/auunconf/issues/46)
+- coalesce {dplyr}	R Documentation. Find first non-missing element
+
+
 # 15.08.2017
 ## R
 - После апдейта shiny на 1.0.4 возникла следующая ошибка: "Error in divTag$attribs : $ operator is invalid for atomic vectors".
@@ -384,8 +451,6 @@ Given a regular expression with capturing groups, extract() turns each group int
 ## R
 - [Analytics Administration for R](https://rviews.rstudio.com/2017/06/21/analytics-administration-for-r/)
 - [MY SET OF PACKAGES FOR (DAILY) DATA ANALYSIS #RSTATS](https://strengejacke.wordpress.com/2017/06/19/my-set-of-packages-for-daily-data-analysis-rstats/)
-- [OpenStreetMap and R](http://osmar.r-forge.r-project.org/)
-- [A new version of the OpenStreetMap package](http://blog.fellstat.com/?cat=15)
 - [Automated testing for shiny apps](https://rstudio.github.io/shinytest/)
 - [Tools for load testing Shiny applications](https://rstudio.github.io/shinyloadtest)
 - [readxl]() Other relevant packages: Here are some other packages with functionality that is complementary to readxl and that also avoid a Java dependency.

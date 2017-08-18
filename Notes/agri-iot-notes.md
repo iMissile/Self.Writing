@@ -331,14 +331,17 @@ You can override this behavior using the `preserve_logs` configuration option. I
 Ответ: `preserve_logs` надо ставить на top level. После запуска видно, что не хватает прав создать файл логгера приложения.
 Надо дать полные права пользователю `shiny` (он в конфиге прописан как `run_as`) на `/srv/shiny-server`.
 Можно командой `sudo chown -R shiny /srv/shiny-server`
+- Кирилл придумал такое решение:
+	1. поменял у `/srv/shiny-server` группу на `shiny` (была root)
+	2. поставил на `/srv/shiny-server` флаг `setguid`, что бы при копировании туда файлов наследовалась группа (https://en.wikipedia.org/wiki/Setuid#setgid_on_directories)
+	3. сделал `chmod g+rwx /srv/shiny-server`
 - [Give user write access to folder {duplicate}](https://askubuntu.com/questions/402980/give-user-write-access-to-folder)
 
 
 - Ошибка при запуске: `/opt/shiny-server/ext/activation/license-manager: error while loading shared libraries: libssl.so.6: cannot open shared object file: No such file or directory`. 
 Поиск библиотеки `find / -name libssl.so` дает следующее: `/usr/lib64/libssl.so`. Ответ -- поставил версию не под тот CentOS.
 
-
-## Настройка репозитория
+## Настройка локального репозитория
 См. документацию по установке, п. [1.3.4 Install Shiny](http://docs.rstudio.com/shiny-server/#stopping-and-starting)
 Setup the Server for Secure Package Installation
 You should also specify a secure default CRAN mirror in this same file. You can do that using the following code:
