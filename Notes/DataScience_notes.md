@@ -1,3 +1,7 @@
+- [The JSON Formatter](https://jsonformatter.curiousconcept.com/)
+- [JSON Editor Online](http://jsoneditoronline.org/)
+
+
 - [Запчасти к мясорубке Zelmer](http://vaprom.ru/shop/c16.zelmer.htm)
 - [УЗНАТЬ КТО ВАМ ЗВОНИТ!](https://www.neberitrubku.ru/). Вам звонят с незнакомого номера и вы думаете не брать трубку? Найдите этот номер и узнайте, кто пытается вам дозвониться.
 - [Как поверить диагностическую карту по базе РСА](https://avtobot.net/blog/proverka-diagnosticheskoy-karty-po-baze-eaisto)
@@ -33,6 +37,9 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [simplyR](http://www.sthda.com/english/wiki/simplyr) is a web space where we’ll be posting practical and easy guides for solving real important problems using R programming language
 - [Advanced dplyr Quiz (author: John Mount)](https://github.com/WinVector/Examples/blob/master/dplyr/dplyrQuiz.md)
 
+## R & GIS (продолжение)
+- [Avoid url encoding in R](https://stackoverflow.com/questions/28805981/avoid-url-encoding-in-r)
+
 # 17.08.2017
 ## R & GIS
 - [Setting up large scale OSM environments for R using Osmosis and PostgreSQL with PostGIS](http://r-spatial.org/2017/07/14/Large_scale_OSM_in_R.html)
@@ -48,7 +55,9 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Nominatim (from the Latin, 'by name') is a tool to search OSM data by name and address and to generate synthetic addresses of OSM points (reverse geocoding). It can be found at nominatim.openstreetmap.org.](http://wiki.openstreetmap.org/wiki/Nominatim)
 - [Plotting OpenStreetMap with ggmap]()https://stackoverflow.com/questions/24661321/plotting-openstreetmap-with-ggmap)
 - [get_map cannot load OpenStreetMap #172](https://github.com/dkahle/ggmap/issues/172)
-- Claudia a Engel
+- Claudia a Engel. [Introduction to Mapping and Spatial Analysis with R](https://cengel.github.io/rspatial/)
+	- [Introduction to Spatial Data Types in R](https://cengel.github.io/rspatial/2_spDataTypes.nb.html) by claudia engel. Last updated: May 15, 2017
+	- [Operations with Spatial Vector Data in R](https://cengel.github.io/rspatial/3_spDataOps.nb.html) by claudia a engel. Last updated: May 22, 2017
 	- [Making maps in R](https://cengel.github.io/rspatial/4_Mapping.nb.html) by claudia a engel. Last updated: May 17, 2017
 	- [Geocoding in R](https://cengel.github.io/rspatial/5_Geocoding.nb.html) by claudia a engel. Last updated: February 11, 2017
 - [tmap in a nutshell](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-nutshell.html)
@@ -183,7 +192,10 @@ I guess it's better use DT instead. formattable is currently only designed for s
 - [Tutorial: Publish an R function as a SQL Server stored procedure with the sqlrutils package](http://blog.revolutionanalytics.com/2017/08/tutorial-sqlrutils.html)
 - [Creating R Stored Procedures in SQL Server 2016 Using sqlrutils](http://www.nielsberglund.com/2017/06/25/creating-r-stored-procedures-in-sql-server-2016-using-sqlrutils/)
 - [A Byte Code Compiler for R](http://homepage.divms.uiowa.edu/~luke/R/compiler/compiler.pdf)
-- [How I became a crolute i.e. an user of the crul package](http://www.masalmon.eu/2017/06/30/crolute/)
+- COOL! [How I became a crolute i.e. an user of the crul package](http://www.masalmon.eu/2017/06/30/crolute/). Maëlle blog.
+A few months ago rOpenSci’s Scott Chamberlain asked me for feedback about a new package of his called crul, an http client like httr, so basically something you use for e.g. writing a package interfacing an API. He told me that a great thing about crul was that it supports asynchronous requests. I felt utterly uncool because I had no idea what this meant although I had already written quite a few API packages (for instance ropenaq, riem and opencage).
+	- [crul: HTTP Client](https://cran.rstudio.com/web/packages/crul/). A simple HTTP client, with tools for making HTTP requests, and mocking HTTP requests. 
+	- [R for cats and cat lovers. An intro to R for new programmers](https://rforcats.net/). This is an introduction to R. I promise this will be fun. Since you have never used a programming language before, or any language for that matter, you won’t be tainted by other programming languages with different ways of doing things. This is good - we can teach you the R way of doing things.
 - Formattable
 	- COOL! [Create a nice looking table using R](http://bioinfo.iric.ca/create-a-nice-looking-table-using-r/). Here are also some tricks how to **Export in HTML, JPEG, PNG or PDF files**
 	- [Filtering dataframes with formattable]()https://stackoverflow.com/questions/33457864/filtering-dataframes-with-formattable)
@@ -478,9 +490,6 @@ Given a regular expression with capturing groups, extract() turns each group int
 - Сортировка колонок в DataTables:
 	- [4.1. Sorting](https://rstudio.github.io/DT/options.html)
 	- [order(). Get / set the ordering applied to the table.](https://datatables.net/reference/api/order()). where colIdx_x is the column data index of the column whose data is used to perform the ordering, and orderingDirection_n is the direction of the ordering (desc (descending) or asc (ascending)) - note that these must be lower-case. The column index is zero based - i.e. the first column in the table is index 0, the second index 1 etc.
-	
-
-
 
 # 04.07.2017
 ## R
@@ -604,8 +613,6 @@ July 12, 2016
 3. Помещаем этот файл в соотв. ветку в `Server.SourcePackageDir`
 
 
-
-
 # 18.06.2017
 ## R
 - [Non-Standard Evaluation and Function Composition in R](http://www.win-vector.com/blog/2017/06/non-standard-evaluation-and-function-composition-in-r/)
@@ -675,8 +682,6 @@ l.118 \caption{Longtable}
 - [Exclude columns by names in mutate_at in dplyr](https://stackoverflow.com/questions/44532888/exclude-columns-by-names-in-mutate-at-in-dplyr)
 	- `mtcars %>% mutate_at(vars(-mpg, -cyl), max)` or 
 	- `mtcars %>% mutate_at(vars(-one_of("mpg", "cyl")), max)`
-
-- [The JSON Formatter](https://jsonformatter.curiousconcept.com/)
 
 # 09.06.2017
 ## R
