@@ -24,8 +24,19 @@ https://www.crowdgames.ru/page/plany-crowd-games
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 21.08.2017
+## R
+- [rOpenSci packages](https://ropensci.org/packages/)
+- [Assertive R Programming with assertr](https://cran.r-project.org/web/packages/assertr/vignettes/assertr.html). [ropensci/assertr](https://github.com/ropensci/assertr)
+- [Crowd sourced benchmarks](https://cran.r-project.org/web/packages/benchmarkme/vignettes/a_introduction.html)
+- COOL! [Starting a Rmarkdown Blog with Blogdown + Hugo + Github](https://talesofr.wordpress.com/2017/08/18/starting-a-rmarkdown-blog-with-bookdown-hugo-github/)
+- [simplyR](http://www.sthda.com/english/wiki/simplyr) is a web space where we’ll be posting practical and easy guides for solving real important problems using R programming language
+- [Advanced dplyr Quiz (author: John Mount)](https://github.com/WinVector/Examples/blob/master/dplyr/dplyrQuiz.md)
+
 # 17.08.2017
 ## R & GIS
+- [Setting up large scale OSM environments for R using Osmosis and PostgreSQL with PostGIS](http://r-spatial.org/2017/07/14/Large_scale_OSM_in_R.html)
+- [ropensci/osmdata](https://github.com/ropensci/osmdata). osmdata is an R package for accessing OpenStreetMap (OSM) data using the Overpass API. The Overpass API (or OSM3S) is a read-only API that serves up custom selected parts of the OSM map data. Map data can be returned either as Simple Features (sf) or Spatial (sp) objects.
 - [OpenStreetMap and R. R package osmar](http://osmar.r-forge.r-project.org/)
 - [A new version of the OpenStreetMap package](http://blog.fellstat.com/?cat=15)
 - [Introducing the nominatim geocoding package](https://rud.is/b/2015/07/29/introducing-the-nominatim-geocoding-package/)
@@ -35,7 +46,29 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Combining OpenStreetMap and geometric plotting in R](https://stackoverflow.com/questions/16195103/combining-openstreetmap-and-geometric-plotting-in-r)
 - [Setting up a local copy of the OpenStreetMap database, kept up to date with minutely diffs](http://wiki.openstreetmap.org/wiki/Setting_up_a_local_copy_of_the_OpenStreetMap_database,_kept_up_to_date_with_minutely_diffs)
 - [Nominatim (from the Latin, 'by name') is a tool to search OSM data by name and address and to generate synthetic addresses of OSM points (reverse geocoding). It can be found at nominatim.openstreetmap.org.](http://wiki.openstreetmap.org/wiki/Nominatim)
-- [Geocoding in R](https://cengel.github.io/rspatial/5_Geocoding.nb.html) by claudia a engel. Last updated: February 11, 2017
+- [Plotting OpenStreetMap with ggmap]()https://stackoverflow.com/questions/24661321/plotting-openstreetmap-with-ggmap)
+- [get_map cannot load OpenStreetMap #172](https://github.com/dkahle/ggmap/issues/172)
+- Claudia a Engel
+	- [Making maps in R](https://cengel.github.io/rspatial/4_Mapping.nb.html) by claudia a engel. Last updated: May 17, 2017
+	- [Geocoding in R](https://cengel.github.io/rspatial/5_Geocoding.nb.html) by claudia a engel. Last updated: February 11, 2017
+- [tmap in a nutshell](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-nutshell.html)
+- [tmap modes: plot and interactive view](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-modes.html)
+- [openstreetmap+ggplot2](http://rstudio-pubs-static.s3.amazonaws.com/12724_b349ccd80fe94f2789794fe61a072d37.html)
+- COOL! [Exploring Minard’s 1812 plot with ggplot2](https://www.andrewheiss.com/blog/2017/08/10/exploring-minards-1812-plot-with-ggplot2/). Thursday, August 10, 2017
+- [osmplotr: Bespoke Images of 'OpenStreetMap' Data](https://cran.r-project.org/web/packages/osmplotr/)
+	- [Basic Maps](https://cran.r-project.org/web/packages/osmplotr/vignettes/basic-maps.html)
+	- [Data Maps](https://cran.r-project.org/web/packages/osmplotr/vignettes/data-maps.html)
+- [The OpenStreetMap Package Opens Up](http://blog.fellstat.com/?p=356). [OpenStreetMap: Access to Open Street Map Raster Images](https://cran.r-project.org/web/packages/OpenStreetMap/index.html)
+- GDAL
+	- [GDAL/OGR Binaries](http://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries). The GDAL project does not produce regular downloadable binaries (executables) for each release. However, a variety of efforts do produce ready to use binaries.
+	- [Building GDAL/OGR](http://trac.osgeo.org/gdal/wiki/BuildHints)
+- [SOLVED: Unable to install PostGIS on Cent OS 7](https://www.centos.org/forums/viewtopic.php?t=59705)
+
+### Geocoding
+- [Batch geocoding in R](https://gis.stackexchange.com/questions/158328/batch-geocoding-in-r)
+- [How to obtain openstreet API key for nominatim (r)?](https://gis.stackexchange.com/questions/214612/how-to-obtain-openstreet-api-key-for-nominatim-r)
+- [Яндекс Геокодер](https://tech.yandex.ru/maps/geocoder/). Геокодер помогает определить координаты объекта по его адресу или, наоборот, установить адрес по координатам. К геокодеру можно обращаться по протоколу HTTPS или с помощью JavaScript API.
+
 
 ## R
 - [RStudio 1.1 Preview - Data Connections](https://blog.rstudio.com/2017/08/16/rstudio-preview-connections/)
@@ -174,6 +207,8 @@ You'll see that `fx_dump` is called twice, once for each column. You cannot pass
 ## R & Mac
 - [Include cairo R on a Mac](https://stackoverflow.com/questions/38952427/include-cairo-r-on-a-mac). You should download X11 for Mac, which is called XQuartz. It doesn't ship with OS X any more, so you have to download it separately from: https://www.xquartz.org/
 - [Install SmartGit on Mac OSX](http://macappstore.org/smartgit/)
+- [Install rgeos on OSX](https://dyerlab.ces.vcu.edu/2015/03/31/install-rgeos-on-osx/)
+- [GDAL 2 On Mac with Homebrew](https://www.karambelkar.info/2016/10/gdal-2-on-mac-with-homebrew/)
 
 ## R
 - [How to specify “does not contain” in dplyr filter in R](https://stackoverflow.com/questions/34444295/how-to-specify-does-not-contain-in-dplyr-filter-in-r)

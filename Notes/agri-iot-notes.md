@@ -100,6 +100,8 @@ sudo yum update
 	# а это для RStudio Server
 	sudo yum install psmisc
 	sudo yum install lrzsz
+	# а это для картографии (увы, gdal встает старый, ветки 1.x)
+	sudo yum install gdal* proj-devel proj-epsg proj-nad protobuf-devel geos-devel
 
 	'# # надо выяснять актуальную версию
 	sudo yum install java-1.8.0-openjdk.x86_64 
@@ -137,14 +139,39 @@ sudo yum install wget libcurl-devel openssl-devel cyrus-sasl-devel libxml2-devel
 	- [Using R — Package Installation Problems](http://mazamascience.com/WorkingWithData/?p=1185)
 	- Обновление установленных пакетов делаем из под рута в консоли R с помощью пакета pacman: `pacman::p_update(update = TRUE, ask = FALSE)`
 	- Еще проще сделать обновление R функцией `update.packages()`
+	- Поглядим что вообще лежит в репозитории `yum repo-pkgs epel list gdal*`
+	- Поглядим, какие пакете установлены в системе: `rpm -qa | grep gdal`
 
 ### Проблемы при установке пакетов
+
+- Картография
+	- При установке пакета `tmap` потащилась вся картография. Надо ставить GDAL. (configure: error: gdal-config not found or not executable). Ответ ищем в [Installing GDAL on CentOS?](https://gis.stackexchange.com/questions/130324/installing-gdal-on-centos). Ошибка *libproj and/or proj_api.h not found in standard search locations*. Это связано с пакетом RGDAL (картография). Ответ находим здесь: [rgdal package installation](http://stackoverflow.com/questions/15248815/rgdal-package-installation).
+	- Установка пакета rgl потребовала еще массу системных пакетов. Детали читаем здесь: ["How to install R “rgl” package under centos 6?"](http://stackoverflow.com/questions/33512641/how-to-install-r-rgl-package-under-centos-6)
+[Ставить надо с EPEL](https://fedoraproject.org/wiki/EPEL/FAQ#howtouse). Решение: ставим все пакеты `sudo yum install gdal*` + сопутствующие `sudo yum install proj-devel proj-epsg proj-nad`
+	- Для вспомогательного пакета `protolite` требуется поставить в ОС пакет `protobuf-devel`.
+	- Для пакета `rgeos` требуется библиотека `libgeos`: [Error installing R package for Linux](https://stackoverflow.com/questions/38924767/error-installing-r-package-for-linux). Попутно выясняем, что в репозитории CentOS эта библиотека переименована. [centos libgeos repository missing](https://stackoverflow.com/questions/42097501/centos-libgeos-repository-missing). В итоге, ставится командой `sudo yum install geos-devel`
+	- Пакет `sf` не компилируется, выходит с ошибкой `configure: error: sf is not compatible with GDAL versions below 2.0.0`. Какая-то проблема между различными компонентами gdal (gdal-config is part of the package libgdal-dev, while gdalinfo is part of gdal-bin.). Несколько изысканий. [trouble installing “sf” due to “gdal”](https://stackoverflow.com/questions/44973639/trouble-installing-sf-due-to-gdal). И [Different output of gdalinfo --version and gdal-config in Xenial](https://gis.stackexchange.com/questions/246615/different-output-of-gdalinfo-version-and-gdal-config-in-xenial). Смотрим установленную версию командой `gdalinfo --version` и `gdal-config --version`. Смотрим на [пакеты gdal](https://apps.fedoraproject.org/packages/gdal): 
+Надо собирать самостоятельно [[gdal-dev] How to install GDAL 2.x on CentOS 7 without being by building from source?](https://lists.osgeo.org/pipermail/gdal-dev/2017-February/046024.html).
+Поглядим что вообще лежит в репозитории `yum repo-pkgs epel list gdal*`
+Для сборки отсылают сюда: [RPM resource gdal](https://www.rpmfind.net/linux/rpm2html/search.php?query=gdal)
+
+Есть альтернативные предложения: [(1) How to install GDAL 2.x on CentOS 7 without building from source?](https://www.tutel.me/c/gis/questions/227929/how+to+install+gdal+2x+on+centos+7+without+being+by+building+from+source). Рекомендуют не полную Anaconda, а miniconda.
+[(2) How to install GDAL 2.x on CentOS 7 without building from source?](https://gis.stackexchange.com/questions/227929/how-to-install-gdal-2-x-on-centos-7-without-building-from-source)
+- Самостоятельная сборка GDAL по шагам:
+	1. Удалить системную библиотеку: `yum remove gdal-1.11.4` и  `yum remove gdal-devel-1.11.4 gdal-doc-1.11.4 gdal-libs-1.11.4`
+	2. Проверить систему `rpm -qa | grep gdal`
+	3. скачать архив и исходниками gdal-а куда-нибудь (у меня в /tmp). (http://download.osgeo.org/gdal/CURRENT/)
+	4. распаковать `tar zxvf ./gdal-2.2. ....tar.gz`
+	5. зайти туда: `cd /tmp/gdal-2.2....`
+	6. сказать: `./configure`
+	7. сказать: `make`
+	8. сказать: `make install` (от root)
+	9. в `/root/.bash_profile` добавить в PATH `:/usr/local/bin`, `source ~/.bash_profile` 
+
 
 - В логах возникала ошибка **Error in readRDS(pfile) : error reading from connection when updating, loading, installing packages**. Возможные варианты решения:
 	- [RStudio Support](https://support.rstudio.com/hc/en-us/community/posts/203864278-Error-in-readRDS-pfile-error-reading-from-connection-when-updating-loading-installing-packages): Fixed by reinstalling ggthemes which had some 0 sized files previously. In general might be fixed by looking for such files. These can be found with
 `find /usr/local/lib64/R/site-library/ /usr/lib64/R/library/ /usr/lib/R/site-library/ ~/.local/lib/ -iname '*rds' -a -size 0`. Указываем 64, поскольку инсталляция у нас 64-х битная.
-- Ошибка *libproj and/or proj_api.h not found in standard search locations*. Это связано с пакетом RGDAL (картография). Ответ находим здесь: [rgdal package installation](http://stackoverflow.com/questions/15248815/rgdal-package-installation).
-- Установка пакета rgl потребовала еще массу системных пакетов. Детали читаем здесь: ["How to install R “rgl” package under centos 6?"](http://stackoverflow.com/questions/33512641/how-to-install-r-rgl-package-under-centos-6)
 - Установка пакета Rmpfr приводит к таким ошибкам: 
 	- *GNU MP not found, or not 4.1.4 or up, see http://gmplib.org*. Решение этой проблемы читаем здесь: ["In R, using Ubuntu, try to install a lib depending on GMP C lib, it won't find GMP, but I have GMP installed"](http://stackoverflow.com/questions/22277440/in-r-using-ubuntu-try-to-install-a-lib-depending-on-gmp-c-lib-it-wont-find-g). И на [сайте GMP](https://gmplib.org/). GMP is a free library for arbitrary precision arithmetic, operating on signed integers, rational numbers, and floating-point numbers. There is no practical limit to the precision except the ones implied by the available memory in the machine GMP runs on. GMP has a rich set of functions, and the functions have a regular interface.
 	- "configure: error: Header file mpfr.h not found; maybe use --with-mpfr-include=INCLUDE_PATH ERROR: configuration failed for package ‘Rmpfr’". Решение читаем здесь: ["R package Rmpfr"](http://stackoverflow.com/questions/31311050/r-package-rmpfr)
