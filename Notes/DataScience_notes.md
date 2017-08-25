@@ -28,8 +28,92 @@ https://www.crowdgames.ru/page/plany-crowd-games
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
-# 21.08.2017
+# 25.08.2017
 ## R
+- [My experience in switching from Windows 10 to Linux Mint 18.2](https://msperlin.github.io/2017-08-24-Switching_to_Linux/)
+- [FedData - Getting assorted geospatial data into R](https://ropensci.org/blog/technotes/2017/08/24/FedData-release)
+- [Practical Guide to Principal Component Methods in R](http://www.sthda.com/english/wiki/practical-guide-to-principal-component-methods-in-r)
+- [LINEAR CONGRUENTIAL GENERATOR IN R](http://www.aaronschlegel.com/series/random-number-generation/)
+	- [LINEAR CONGRUENTIAL GENERATOR IN R](http://www.aaronschlegel.com/linear-congruential-generator-r/)
+- [Aggregating and analyzing data with dplyr](http://www.datacarpentry.org/R-genomics/04-dplyr.html) by Data Carpentry contributors.
+- COOL! Отличныейший курс в картинках. [Week3: Tidying/reshaping tables using tidyr](http://mgimond.github.io/ES218/Week03b.html)
+- COOL! [rhandsontable Introduction](https://cran.r-project.org/web/packages/rhandsontable/vignettes/intro_rhandsontable.html) by Jonathan Owen.
+rhandsontable is a htmlwidget based on the `handsontable.js` library.
+
+# 24.08.2017
+## R
+- COOL! [5 ways to measure running time of R code](http://www.alexejgossmann.com/benchmarking_r/)
+- [Select and rename a selection of variables](http://dplyr.tidyverse.org/reference/select_all.html)
+- COOL! [wilkox/treemapify. ggplot2 geoms for drawing treemaps](https://github.com/wilkox/treemapify)
+- COOL! [Powerful tree graphics with ggplot2](https://joey711.github.io/phyloseq/plot_tree-examples.html)
+- [ggtree](http://www.ggplot2-exts.org/ggtree.html). gtree is designed for visualizing phylogenetic tree and different types of associated annotation data.
+- [Performance Clustermap in R](https://stackoverflow.com/questions/21233477/performance-clustermap-in-r)
+- [Beautiful dendrogram visualizations in R: 5+ must known methods - Unsupervised Machine Learning](http://www.sthda.com/english/wiki/beautiful-dendrogram-visualizations-in-r-5-must-known-methods-unsupervised-machine-learning)
+- [ggnet2: network visualization with ggplot2](https://briatte.github.io/ggnet/)
+
+### tidyr
+- Весьма полезные советы по группировке колонок. [Gather multiple sets of columns {duplicate}](https://stackoverflow.com/questions/25925556/gather-multiple-sets-of-columns)
+- [R spreading multiple columns with tidyr {duplicate}](https://stackoverflow.com/questions/30592094/r-spreading-multiple-columns-with-tidyr)
+- COOL! Use reshape2 & `dcast` or `recast`. [How can I spread repeated measures of multiple variables into wide format?](https://stackoverflow.com/questions/29775461/how-can-i-spread-repeated-measures-of-multiple-variables-into-wide-format)
+	- [An Introduction to reshape2](http://seananderson.ca/2013/10/19/reshape.html)
+- Переименовываем колонки: [tidyr::spread() and dplyr::rename_at() in action](http://www.brodrigues.co/blog/2017-07-27-spread_rename_at/)
+
+
+# 23.08.2017
+## R
+- [UNDERSTANDING GENDER ROLES IN MOVIES WITH TEXT MINING](https://juliasilge.com/blog/women-in-film/)
+- COOL! [Introducing routr - Routing of HTTP and WebSocket in R](http://www.data-imaginist.com/2017/Introducing-routr/)
+- [Onboarding visdat, a tool for preliminary visualisation of whole dataframes](https://ropensci.org/blog/blog/2017/08/22/visdat)
+- COOL! [Caching httr Requests? This means WAR[C]!](https://rud.is/b/2017/08/22/caching-httr-requests-this-means-warc/)
+- COOL! [Some Neat New R Notations](http://www.win-vector.com/blog/2017/08/some-neat-new-r-notations/)
+- COOL! [seplyr](https://winvector.github.io/seplyr/articles/seplyr.html) by John Mount, 2017-08-22
+- Logging function name
+	- [Logging current function name](https://stackoverflow.com/questions/7307987/logging-current-function-name)
+	- [How to get the name of the calling function inside the called routine?](https://stackoverflow.com/questions/15595478/how-to-get-the-name-of-the-calling-function-inside-the-called-routine)
+- Closures:
+	- [Functional programming. Closures](http://adv-r.had.co.nz/Functional-programming.html#closures). 
+“An object is data with functions. A closure is a function with data.” — John D. Cook
+	- [Functional programming. Anonymous functions](http://adv-r.had.co.nz/Functional-programming.html#anonymous-functions). Every function has `formals()`, `body()`, and a parent `environment()`
+	- [Using closures as objects in R](http://www.win-vector.com/blog/2015/03/using-closures-as-objects-in-r/)
+
+
+
+# 22.08.2017
+## R
+- Повтор. [purrr 0.2.0](https://blog.rstudio.com/2016/01/06/purrr-0-2-0/) by Hadley Wickham
+- Повтор. [tidyr 0.4.0. Nested data frames](https://blog.rstudio.com/2016/02/02/tidyr-0-4-0/) by Hadley Wickham
+- [R Left Outer Join with 0 Fill Instead of NA While Preserving Valid NA's in Left Table]()https://stackoverflow.com/questions/35186694/r-left-outer-join-with-0-fill-instead-of-na-while-preserving-valid-nas-in-left/41569043#41569043)
+- DisplayR. [The data science platform without the pain.](https://www.displayr.com/) Simple and powerful. Automation by menu or code. Elegant visualizations. Instant publishing. Collaboration. Reproducibility. Auto-updating. Secure cloud platform. It is all possible now.
+- [How to Create an Online Choice Simulator](https://www.displayr.com/choice-simulator/)
+- [bottom align a button in R shiny](https://stackoverflow.com/questions/28960189/bottom-align-a-button-in-r-shiny)
+
+# 21.08.2017
+## Git
+- [Error while running "git gc"](https://feeding.cloud.geek.nz/posts/error-while-running-git-gc/). If you see errors like these while trying to do garbage collection on a git repository:
+```
+$ git gc
+warning: reflog of 'refs/heads/synced/master' references pruned commits
+warning: reflog of 'refs/heads/annex/direct/master' references pruned commits
+warning: reflog of 'refs/heads/git-annex' references pruned commits
+warning: reflog of 'refs/heads/master' references pruned commits
+warning: reflog of 'HEAD' references pruned commits
+error: Could not read a4909371f8d5a38316e140c11a2d127d554373c7
+fatal: Failed to traverse parents of commit 334b7d05087ed036c1a3979bc09bcbe9e3897226
+error: failed to run repack
+```
+then the [reflog](https://git-scm.com/docs/git-reflog) may be pointing to corrupt entries.
+They can be purged by running this:
+`$ git reflog expire --all --stale-fix`
+- COOL! [Repairing and recovering broken git repositories](https://git.seveas.net/repairing-and-recovering-broken-git-repositories.html)
+	- [Object corruption](https://git.seveas.net/repairing-and-recovering-broken-git-repositories.html). This repository was intentionally broken by modifying some files with a hex editor. `git fsck` detects this and tells you which files have been tampered with. Any corrupt loose objects can simply be removed, but corrupt packfiles probably also contain some recoverable objects, so we try to recover those before removing the file.
+
+## R
+- Повтор. [Use quick formula functions in purrr::map (+ base vs tidtyverse idiom comparisons/examples)](https://rud.is/b/2016/07/26/use-quick-formula-functions-in-purrrmap-base-vs-tidtyverse-idiom-comparisonsexamples/)
+- Применение формул. Навеяно из документации tmaptools.pdf: `sp::coordinates(five_cities_geocode) <- ~lon+lat`
+	- [The R Formula Method: The Good Parts](https://rviews.rstudio.com/2017/02/01/the-r-formula-method-the-good-parts/)
+	- [The R Formula Method: The Bad Parts](https://rviews.rstudio.com/2017/03/01/the-r-formula-method-the-bad-parts/)
+	- [What does the R formula y~1 mean?](https://stackoverflow.com/questions/13366755/what-does-the-r-formula-y1-mean)
+- Трансферинг части агрегатных функций на сторону DB. [Visualizations with R and Databases](https://rviews.rstudio.com/2017/08/16/visualizations-with-r-and-databases/)
 - [rOpenSci packages](https://ropensci.org/packages/)
 - [Assertive R Programming with assertr](https://cran.r-project.org/web/packages/assertr/vignettes/assertr.html). [ropensci/assertr](https://github.com/ropensci/assertr)
 - [Crowd sourced benchmarks](https://cran.r-project.org/web/packages/benchmarkme/vignettes/a_introduction.html)
@@ -38,11 +122,12 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Advanced dplyr Quiz (author: John Mount)](https://github.com/WinVector/Examples/blob/master/dplyr/dplyrQuiz.md)
 
 ## R & GIS (продолжение)
-- [Avoid url encoding in R](https://stackoverflow.com/questions/28805981/avoid-url-encoding-in-r)
+- [Avoid url encoding in R](https://stackoverflow.com/questions/28805981/avoid-url-encoding-in-r)	
 
 # 17.08.2017
 ## R & GIS
 - [Setting up large scale OSM environments for R using Osmosis and PostgreSQL with PostGIS](http://r-spatial.org/2017/07/14/Large_scale_OSM_in_R.html)
+- [Open Street Map: loading, analysing and visualising free maps with R and QGIS](http://rstudio-pubs-static.s3.amazonaws.com/12696_9fd49fb7055c40ff9b3a3ea740e13ab3.html)
 - [ropensci/osmdata](https://github.com/ropensci/osmdata). osmdata is an R package for accessing OpenStreetMap (OSM) data using the Overpass API. The Overpass API (or OSM3S) is a read-only API that serves up custom selected parts of the OSM map data. Map data can be returned either as Simple Features (sf) or Spatial (sp) objects.
 - [OpenStreetMap and R. R package osmar](http://osmar.r-forge.r-project.org/)
 - [A new version of the OpenStreetMap package](http://blog.fellstat.com/?cat=15)
@@ -60,8 +145,10 @@ https://www.crowdgames.ru/page/plany-crowd-games
 	- [Operations with Spatial Vector Data in R](https://cengel.github.io/rspatial/3_spDataOps.nb.html) by claudia a engel. Last updated: May 22, 2017
 	- [Making maps in R](https://cengel.github.io/rspatial/4_Mapping.nb.html) by claudia a engel. Last updated: May 17, 2017
 	- [Geocoding in R](https://cengel.github.io/rspatial/5_Geocoding.nb.html) by claudia a engel. Last updated: February 11, 2017
-- [tmap in a nutshell](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-nutshell.html)
-- [tmap modes: plot and interactive view](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-modes.html)
+- tmap
+	- [tmap in a nutshell](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-nutshell.html)
+	- [tmap modes: plot and interactive view](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-modes.html)
+	- Тут про инсталляцию под линукс написано. [mtennekes/tmap](https://github.com/mtennekes/tmap). R package for thematic maps
 - [openstreetmap+ggplot2](http://rstudio-pubs-static.s3.amazonaws.com/12724_b349ccd80fe94f2789794fe61a072d37.html)
 - COOL! [Exploring Minard’s 1812 plot with ggplot2](https://www.andrewheiss.com/blog/2017/08/10/exploring-minards-1812-plot-with-ggplot2/). Thursday, August 10, 2017
 - [osmplotr: Bespoke Images of 'OpenStreetMap' Data](https://cran.r-project.org/web/packages/osmplotr/)
@@ -77,6 +164,9 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Batch geocoding in R](https://gis.stackexchange.com/questions/158328/batch-geocoding-in-r)
 - [How to obtain openstreet API key for nominatim (r)?](https://gis.stackexchange.com/questions/214612/how-to-obtain-openstreet-api-key-for-nominatim-r)
 - [Яндекс Геокодер](https://tech.yandex.ru/maps/geocoder/). Геокодер помогает определить координаты объекта по его адресу или, наоборот, установить адрес по координатам. К геокодеру можно обращаться по протоколу HTTPS или с помощью JavaScript API.
+	- [yg:GeocoderResponseMetaData](https://tech.yandex.ru/maps/doc/geocoder/desc/reference/GeocoderResponseMetaData-docpage/)
+- [Google Maps API. Краткие сведения о геокодировании](https://developers.google.com/maps/documentation/geocoding/intro?hl=ru)
+- [OSM Геокодер](http://nominatim.openstreetmap.org/search.php?q=%D1%83%D0%BB%D0%B8%D1%86%D0%B0+%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%2C+166+%D0%94%D1%8F%D1%82%D1%8C%D0%BA%D0%BE%D0%B2%D0%BE%2C&polygon_geojson=1&viewbox=)
 
 
 ## R
@@ -163,6 +253,20 @@ The functions of sjmisc are designed to work together seamlessly with other pack
 - [CSS tag `direction`](http://htmlbook.ru/css/direction). direction предназначен для сайтов, в которых имеет значение направление текста. Например, при использовании арабского алфавита чтение происходит справа налево. 
 В частности, `formattable` почему-то поставил в DT значение `rtl`, хотя мы читаем слева направо, да и лучше использовать `inherit`. Смотрим репозиторий и пишем свою функцию на основе color_bar из [репозитория](https://github.com/renkun-ken/formattable/blob/39e1e0109138e1744b1b4d11cbbebb7e88310bbb/R/formatter.R)
 - [How to deal with character(0)](http://max2.ese.u-psud.fr/epc/conservation/Girondot/Publications/Blog_r/Entrees/2014/5/8_How_to_deal_with_character(0).html)
+```
+Let x <- character(0)
+x == character(0) returns logical(0), which is not what we expect.
+
+A solution is to test:
+identical(x, character(0))
+But it does not work if x has attributes.
+
+Then, do:
+attributes(x) <- NULL
+identical(x, character(0))
+or 
+(length(x) == 0) && (typeof(x) == "character")
+```
 - Обнаружились ошибки в сортировке в DT:
 	- [wrong sorted by column DataTable](https://stackoverflow.com/questions/43679085/wrong-sorted-by-column-datatable)
 	- [Formattable breaks column sort in DataTable in Shiny](https://stackoverflow.com/questions/45058033/formattable-breaks-column-sort-in-datatable-in-shiny)
