@@ -364,7 +364,6 @@ You can override this behavior using the `preserve_logs` configuration option. I
 	3. сделал `chmod g+rwx /srv/shiny-server`
 - [Give user write access to folder {duplicate}](https://askubuntu.com/questions/402980/give-user-write-access-to-folder)
 
-
 - Ошибка при запуске: `/opt/shiny-server/ext/activation/license-manager: error while loading shared libraries: libssl.so.6: cannot open shared object file: No such file or directory`. 
 Поиск библиотеки `find / -name libssl.so` дает следующее: `/usr/lib64/libssl.so`. Ответ -- поставил версию не под тот CentOS.
 

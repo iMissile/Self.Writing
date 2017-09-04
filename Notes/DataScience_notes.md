@@ -28,6 +28,150 @@ https://www.crowdgames.ru/page/plany-crowd-games
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 01.09.2017
+## DS
+- [Apache Superset](https://github.com/apache/incubator-superset) (incubating) is a modern, enterprise-ready business intelligence web application. {this project used to be named Caravel, and Panoramix in the past}
+- [Druid is a high-performance, column-oriented, distributed data store](http://druid.io/)
+- [Caravel is an open source data exploration platform designed to be visual, intuitive, and interactive](https://www.linkedin.com/pulse/caravel-open-source-data-exploration-platform-designed-ali-syed)
+- Примеры виджетов:
+	http://gallery.htmlwidgets.org/
+	http://www.ggplot2-exts.org/gallery/
+	http://www.r-graph-gallery.com/portfolio/ggplot2-package/
+	http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html
+- [FlashX is a collection of big data analytics tools.](http://flashx.io/)
+	- [FlashR](https://flashxio.github.io/FlashX-doc/FlashR-user-guide.html) extends the R programming framework for large-scale data analysis, by utilizing the powerful matrix computation in FlashMatrix. It executes R code in parallel automatically and utilizes one or many SSDs (solid-state drives), a type of fast disk that commonly exists in laptops and in the cloud, to scale R to large datasets.
+
+## R
+- Как сделать пометки к колонкам data.frame
+	- [R: Assign variable labels of data frame columns](https://stackoverflow.com/questions/27347548/r-assign-variable-labels-of-data-frame-columns). `Hmisc::upData(data, labels = )` is awesome! Searching for this for hours
+	- [Columns labels? #66 {Closed}](https://github.com/tidyverse/tibble/issues/66). Is this related to `Hmisc::label()` and the "labelled" class?
+- [Hmisc Package {CRAN}](http://biostat.mc.vanderbilt.edu/wiki/Main/Hmisc)
+	- [Hmisc Examples](http://data.vanderbilt.edu/fh/R/Hmisc/examples.nb.html) by FE Harrell
+	- [Using R, Rmarkdown, RStudio, knitr, plotly, and HTML for the Next Generation of Reproducible Statistical Reports](http://data.vanderbilt.edu/fh/talks/nextgenReports.html#1) by Frank Harrell
+- [R in the Data Science Stack at ODSC](http://r-posts.com/r-in-the-data-science-stack-at-odsc/)
+- COOL! Rob J Hyndman: [Finding distinct rows of a tibble](https://robjhyndman.com/hyndsight/distinct/)
+- [Simply Mapping. Easy mapping with Simple Features](http://johnmackintosh.com/2017-08-22-simply-mapping/)
+- [Mapping to a 't'(map). tmap <- Easy & Interactive](http://johnmackintosh.com/2017-09-01-easy-maps-with-tmap/)
+- Создание PowerPoint презентаций средствами R: [Create and Update PowerPoint Reports using R](https://www.displayr.com/create-and-update-powerpoint-reports-using-r)
+	- [Option 1: ReporteRs]
+	- [Option 2: Displayr](http://www.displayr.com/)
+	- [Option 3: Q](https://www.q-researchsoftware.com/)
+- joyplot. [Probably more likely than probable](http://blog.revolutionanalytics.com/2017/08/probably-more-probably-than-probable.html)
+- [3-D animations with R](http://blog.revolutionanalytics.com/2017/08/3-d-animations-with-r.html)
+- COOL! [I made a 3D movie with ggplot2 once - here's how I did it](http://www.data-imaginist.com/2017/I-made-a-3D-movie/). Тут управление толщиной линий и их градиентной закраской.
+
+
+## DT & Shiny
+- COOL! Примеры про background и раскраску. [More Examples on Styling Cells, Rows, and Tables](https://rstudio.github.io/DT/010-style.html)
+- [color backgorund of rows in DataTable Shiny #31 {Closed}](https://github.com/rstudio/DT/issues/31)
+- [background color in data table #115 {Closed}](https://github.com/rstudio/DT/issues/115)
+- [r shiny - DataTableOutput - color specific rows and colomns](https://stackoverflow.com/questions/32103377/r-shiny-datatableoutput-color-specific-rows-and-colomns)
+- [Different background colors in each cell R](https://stackoverflow.com/questions/39203218/different-background-colors-in-each-cell-r)
+```
+library(scales)              
+scales::show_col(DF$color)
+```
+- [Shiny: Merge cells in DT::datatable](https://stackoverflow.com/questions/39484118/shiny-merge-cells-in-dtdatatable). Ответ неутешительный.
+According to @yihue you cannot merge cells in datatables: github.com/rstudio/DT/issues/346
+
+
+
+# 31.08.2017
+## R & Excel
+- Использует `rJava`. [R xlsx package : A quick start guide to manipulate Excel files in R](http://www.sthda.com/english/wiki/r-xlsx-package-a-quick-start-guide-to-manipulate-excel-files-in-r)
+- COOL! Хороший обзор существующих методов. [r2excel: Read, write and format easily Excel files using Rsoftware](http://www.sthda.com/english/wiki/r2excel-read-write-and-format-easily-excel-files-using-r-software)
+- [openxlsx: Read, Write and Edit XLSX Files](https://cran.r-project.org/web/packages/openxlsx/index.html). 
+Simplifies the creation of Excel .xlsx files by providing a high level interface to writing, styling and editing worksheets. Through the use of 'Rcpp', read/write times are comparable to the 'xlsx' and 'XLConnect' packages with the added benefit of removing the dependency on Java.
+- RStudio IDE
+	- [RStudio 1.1 Preview - I Only Work in Black](https://blog.rstudio.com/2017/08/30/rstudio-dark-theme/)
+	- [Shiny Themes](https://rstudio.github.io/shinythemes/). If you’ve created any shiny app in the past, you’re probably used to the default Bootstrap theme
+	- [Introduction to ggthemes](https://cran.r-project.org/web/packages/ggthemes/vignettes/ggthemes.html)
+
+## ggplot tricks
+- dodge & stack bars
+	- [Generate paired stacked bar charts in ggplot (using position_dodge only on some variables)](https://stackoverflow.com/questions/21409850/generate-paired-stacked-bar-charts-in-ggplot-using-position-dodge-only-on-some). *Another solution is to use facets for name and sample as x values.*
+	- [ggplot2 - bar plot with both stack and dodge](https://stackoverflow.com/questions/12715635/ggplot2-bar-plot-with-both-stack-and-dodge)
+	- Интересный набор подходов приведен здесь: [Combine stack and dodge with bar plot in ggplot2](https://stackoverflow.com/questions/43281303/combine-stack-and-dodge-with-bar-plot-in-ggplot2)
+- table in plot
+	- [Adding sub-tables on each panel of a facet ggplot in r](https://stackoverflow.com/questions/25554548/adding-sub-tables-on-each-panel-of-a-facet-ggplot-in-r)
+	- [Arranging multiple grobs on a page](https://cran.r-project.org/web/packages/gridExtra/vignettes/arrangeGrob.html)
+	- [Mixing ggplot2 graphs with other graphical output](https://github.com/hadley/ggplot2/wiki/Mixing-ggplot2-graphs-with-other-graphical-output)
+- heatmap
+	- [How to create a fast and easy heatmap with ggplot2](http://databiomics.com/how-to-create-a-fast-and-easy-heatmap-with-ggplot2/)
+	- [geom_tile in ggplot2](https://plot.ly/ggplot2/geom_tile/)
+	- [Hexagonal heatmap of 2d bin counts](http://ggplot2.tidyverse.org/reference/geom_hex.html)
+	- [R: Heat maps with ggplot2](http://blog.aicry.com/r-heat-maps-with-ggplot2/)
+	- [How to make a simple heatmap in ggplot2](http://sharpsightlabs.com/blog/heatmap-ggplot2-simple/)
+
+# 30.08.2017
+## R
+- [Clean or shorten Column names while importing the data itself](http://costaleconomist.blogspot.ru/2017/08/clean-or-shorten-column-names-while.html). 
+```
+library(janitor); 
+newdataobject <- read.csv("yourcsvfilewithpath.csv", header=T) %>% 
+clean_names()
+```
+- [Next Generation Data Science Platform](https://r-brain.io/en/). Engineered to inspire every data scientist in the world
+- [R move column to last using dplyr](https://stackoverflow.com/questions/43897844/r-move-column-to-last-using-dplyr). 
+	- Ответ 1: `data%>%select(-b,everything())` will move variable b to the end.
+This is because a negative variable in the first position of select elicits a special behavior from select(), which is to insert all the variables. Then it removes b, and then it gets added back with the `everything()` part.
+Explained by Hadley himself: https://github.com/tidyverse/dplyr/issues/2838
+	- Ответ 2: `data %>% select(-one_of('b'), one_of('b'))` или `data %>% select(matches("[^b]"), matches("b"))`
+- [Showing data values on stacked bar chart in ggplot2](https://stackoverflow.com/questions/6644997/showing-data-values-on-stacked-bar-chart-in-ggplot2)
+- [Adding labels to a ggplot2 bar graph](https://chrisalbon.com/r-stats/add-labels-to-bar-graph.html)
+- COOL! [Add summary label in stacked bar chart using ggplot](https://sebastienvigneau.wordpress.com/2014/07/03/add-summary-label-in-stacked-bar-chart-using-ggplot/)
+The script below illustrates how to add one label per stack in a stacked bar chart using ggplot in R. In this case, labels indicate the sum of values represented in each bar stack. The idea is to create as many labels as bars, but assign text to only one label per stack, then plot labels according to stack height.
+- [R Graphics Cookbook - Chapter 3: Bar Graphs](https://rpubs.com/escott8908/RGC_Ch3_Gar_Graphs)
+- Про `mutate_if` из новостей: [dplyr 0.5.0, Hadley Wickham, 2016-06-27](https://blog.rstudio.com/2016/06/27/dplyr-0-5-0/)
+- COOL! [The complete catalog of argument variations of select() in dplyr](http://mockquant.blogspot.ru/2015/07/the-complete-catalog-of-argument.html)
+
+# 29.08.2017
+## R + Shiny
+- [shinyTree: jsTree + shiny](https://trestletech.com/2014/09/shinytree/)
+- [R Shiny + vuejs treeview](https://bl.ocks.org/timelyportfolio/dd692b8ea8d7c45c1bb1a6fef2dbfc3c)
+- [jQuery Sparkline HTML Widget for R](https://github.com/htmlwidgets/sparkline)
+- [Tidy Up and Test XPath Queries on HTML and XML Content in R https://hrbrmstr.github.io/htmltidy/](https://github.com/hrbrmstr/htmltidy)
+- [Shiny Widgets Gallery](https://shiny.rstudio.com/gallery/widget-gallery.html)
+- COOL! Как отобразить ID элементов на html странице. Создаем закладку на панели браузера. В качесте URL пишем следующий скрипт:
+`javascript:$("div[id]").each(function(t){$(this).prepend("<span style='color: red'>"+$(this).attr("id")+"<br/></span>")}),$("input[id]").each(function(t){$(this).before("<span style='color: red'>"+$(this).attr("id")+"<br/></span>")});`. Готово!
+
+## R
+- dplyr & UTF encoding. Встретил проблему с прямым выбором колонок в селекте с именами, указанными в utf. Есть ощущение, что перед select идет конвертирование имен колонок `enc2native`, а у нас в системе Win1251, а файл в формате UTF.
+	- [Cannot find columns with UTF-8 encoded names (in Windows) #866 {Closed}](https://github.com/tidyverse/dplyr/issues/866)
+	- [select() mistakenly converts colnames to UTF-8 #2284 {Closed}](https://github.com/tidyverse/dplyr/issues/2284)
+	- [UTF-8 problems with summarise_each, other dplyr verbs OK #951 {Closed}](https://github.com/tidyverse/dplyr/issues/951)
+	- Размышления на тему. Команда `df0 %>% names %>% Encoding` дает микс из кодировок имен колонок:
+```
+ [1] "UTF-8"   "UTF-8"   "unknown" "unknown" "unknown" "unknown" "unknown" "unknown" "UTF-8"   "UTF-8"   "UTF-8"   "unknown"
+[13] "unknown" "unknown" "unknown" "unknown" "unknown" "UTF-8"   "UTF-8"
+```
+- [rtimicropem: Using an R package as platform for harmonized cleaning of data from RTI MicroPEM air quality sensors](https://ropensci.org/blog/blog/2017/08/29/rtimicropem)
+- [Packages to simplify mapping in R](http://blog.revolutionanalytics.com/2017/08/maps-in-r.html)
+- [rbokeh - R Interface for Bokeh](http://hafen.github.io/rbokeh/)
+
+# 28.08.2017
+## R
+- Задача: итерация по строкам data.frame. 
+	- Крутейший сравнительный анализ доступных методов, включая purrr [Applying a function over rows of a data frame](https://rpubs.com/wch/200398) by Winston Chang. Охвачены методы `nrow`, `apply`, `split_lapply`, `lapply_row`, `lapply_lapply`, `by_row`, `pmap`, `pmap_aslist`, `rowwise`.
+	- [by_row vs rowwise iteration](https://stackoverflow.com/questions/43218761/by-row-vs-rowwise-iteration). Lastly, there is your separate question about `by_row()/rowwise()` First, note that `by_row` has been removed from the development version of `purrr`, and moved to a separate package, `purrrlyr`, where it's deprecated anyway, and it's recommended to "use a combination of: `tidyr::nest()`; `dplyr::mutate()`; `purrr::map()`"
+- [Why R is Hard to Learn](http://r4stats.com/articles/why-r-is-hard-to-learn/) by by Robert A. Muenchen
+
+
+- Пакет для "починки" неполных измерений. [mice: Multivariate Imputation by Chained Equations](https://cran.r-project.org/web/packages/mice/index.html)
+- PowerBI:
+	- [Tips and tricks on using R to query data in Power BI](http://blog.revolutionanalytics.com/2017/08/query-editor-tips.html)
+	- [Power BI Documentation. Using R in Query Editor](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-r-in-query-editor/)
+	- [Tips and Tricks for R scripts in the query editor in Power BI](http://www.thebiccountant.com/2017/08/25/tips-and-tricks-for-r-scripts-in-the-query-editor-in-power-bi/)
+- COOL! Tidyeval
+	- [Why I find tidyeval useful](http://www.brodrigues.co/blog/2017-08-27-why_tidyeval/)
+	- [Tidy evaluation, most common actions](https://edwinth.github.io/blog/dplyr-recipes/)
+	- [Programming with dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/programming.html)
+	- COOL e-book!. [Functional programming and unit testing for data munging with R](https://b-rodrigues.github.io/fput/) by Bruno Rodrigues
+- [wrapr: R Code Sweeteners](http://www.win-vector.com/blog/2017/08/wrapr-r-code-sweeteners/)
+ 	- [Debugging R code using R, RStudio and wrapper functions](https://www.youtube.com/watch?v=-P9UzQuJSH8&feature=youtu.be&list=PLAKBwakacHbQT51nPHex1on3YNCCmggZA)
+- [Unbottling “.msg” Files in R](https://rud.is/b/2017/08/25/unbottling-msg-files-in-r/)
+
+
 # 25.08.2017
 ## R
 - [My experience in switching from Windows 10 to Linux Mint 18.2](https://msperlin.github.io/2017-08-24-Switching_to_Linux/)
@@ -201,10 +345,11 @@ Benchmark your CPU and compare against other CPUs. Also provides functions for o
 `takeown /f D: /r /d y`
 `/r` - нужен для обработки всех вложенных папок
 `/d y` - положительно отвечает на стандартный запрос да/нет, который появляется в том случае, если у пользователя нет прав для доступа к подпапкам.
+`icacls.exe H:\* /reset /T`
 
 Став владельцем папок, вы получите доступ к их содержимому, но, скорее всего, не сможете осуществлять запись в них. В этом случае можно взять полный контроль над папками таким образом
 
-`icacls D: /grant:r имя:F /t`
+`icacls D:\* /grant:r имя:F /t`
 Вместо имя подставьте имя вашей учетной записи или группы, которой вы хотите дать полный контроль над папками.
 `grant:r` - заменяет все текущие права, что имеет смысл в том конкретном случае когда (учетная запись, имевшая права, уже не существует), но далеко не всегда....
 - [Windows 7 и сброс прав доступа и владельца файлов](http://tt.erinome.net/2012/07/265)
@@ -1445,6 +1590,7 @@ autoplot(mdeaths) + geom_forecast(h=36, level=c(50,80,95))
 
 # 04.04.2017
 ## Wolfram
+- [MathType don't support Microsofr Office 2016 for Mac](http://www.dessci.com/en/products/MathType_Mac/works_with.asp#!target=microsoft_office). Note: MathType does not yet work with Office 365/2016 for Mac.
 - [Summary of New Features in 11.1](http://reference.wolfram.com/language/guide/SummaryOfNewFeaturesIn111.html)
 - [What is included in Wolfram Extras?](https://mathematica.stackexchange.com/questions/88199/what-is-included-in-wolfram-extras)
 - [Wolfram Workbench](http://www.wolfram.com/workbench/)
@@ -1930,9 +2076,6 @@ Nozzle is an R package for generation of reports in high-throughput data analysi
 ## DS
 - COOL e-book. [The Nature of Code](http://natureofcode.com/) by Daniel Shiffman
 	- [Chapter 10. Neural Networks](http://natureofcode.com/book/chapter-10-neural-networks/)
-
-
-
 
 # 10.02.2017
 ## R
@@ -4768,7 +4911,7 @@ Showcase Mode!!!
 - [Where to deploy R project in local shiny server {closed}](http://stackoverflow.com/questions/36565085/where-to-deploy-r-project-in-local-shiny-server)
 
 # 13.05.16
-## R
+## R & ggplot
 - [You want to use different fonts in your graphs.](http://www.cookbook-r.com/Graphs/Fonts/)
 - [extrafont package](https://github.com/wch/extrafont). The extrafont package makes it easier to use fonts other than the basic PostScript fonts that R uses. Fonts that are imported into extrafont can be used with PDF or PostScript output files. On Windows, extrafont will also make system fonts available for bitmap output.
 - COOL. [ggrepel: Avoid overlapping of text labels](https://cran.r-project.org/web/packages/ggrepel/vignettes/ggrepel.html)
