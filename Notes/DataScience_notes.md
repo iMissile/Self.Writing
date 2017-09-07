@@ -28,6 +28,68 @@ https://www.crowdgames.ru/page/plany-crowd-games
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# 07.09.2017
+## R
+- [Knime 3.4 connections to Microsoft R, Azure](http://blog.revolutionanalytics.com/2017/09/knime-azure.html)
+- [Data Science for Fraud Detection](https://blog.codecentric.de/en/2017/09/data-science-fraud-detection/)
+- Как в DT покрасить с помощью RColors? Использование 'lightblue1' в formatStyle не прокатывает...
+	- [R Colors Chart](http://www.endmemo.com/program/R/color.php). R has 657 built-in color names. The function `colors()` will show all of them. All these color names can be used in plot parameters like `col=`. The function `col2rgb()` can convert all these colors into RGB numbers.
+	- [Curtis Kephart. All Named Colors in R](http://www.cazaar.com/r_colors)
+
+# 06.09.2017
+# R & Shiny
+- [Build a dynamic UI that reacts to user input](https://shiny.rstudio.com/articles/dynamic-ui.html)
+- [extendShinyjs: Calling your own JavaScript functions from R](https://cran.r-project.org/web/packages/shinyjs/vignettes/shinyjs-extend.html)
+- `updateNavbarPage` [R shiny - observeEvent - make the commands execute in order and in real time](https://stackoverflow.com/questions/32806113/r-shiny-observeevent-make-the-commands-execute-in-order-and-in-real-time)
+- COOL [Shiny: How to adjust the width of the tabsetPanel?](https://stackoverflow.com/questions/19096439/shiny-how-to-adjust-the-width-of-the-tabsetpanel). 
+	- Another way to adjust width (and height): add  `),  style='width: 1000px; height: 1000px' # end of tabsetPanel`
+
+## R & 3D plot
+- [Impressive package for 3D and 4D graph - R software and data visualization](http://www.sthda.com/english/wiki/impressive-package-for-3d-and-4d-graph-r-software-and-data-visualization)
+	- [Amazing interactive 3D scatter plots - R software and data visualization](http://www.sthda.com/english/wiki/amazing-interactive-3d-scatter-plots-r-software-and-data-visualization)
+	- [Scatterplot3d: 3D graphics - R software and data visualization](http://www.sthda.com/english/wiki/scatterplot3d-3d-graphics-r-software-and-data-visualization)
+	- [A complete guide to 3D visualization device system in R - R software and data visualization](http://www.sthda.com/english/wiki/a-complete-guide-to-3d-visualization-device-system-in-r-r-software-and-data-visualization)
+- [rgl Overview](https://cran.r-project.org/web/packages/rgl/vignettes/rgl.html)
+- Решаем задачу сохранения изображения в файл
+	- [Cookbook for R Graphs Output to a file](http://www.cookbook-r.com/Graphs/Output_to_a_file/)
+- [Understanding of persp plot](https://stats.stackexchange.com/questions/44596/understanding-of-persp-plot)
+
+## Wolfram & 3D plot
+- [How to export 3D plot, without losing the specified view of rotation?](https://mathematica.stackexchange.com/questions/45647/how-to-export-3d-plot-without-losing-the-specified-view-of-rotation)
+
+# 05.09.2017
+## R
+- Разбираемся с метками в ggplot
+```
+#' @section `geom_label`:
+#' Currently `geom_label` does not support the `rot` parameter and
+#' is considerably slower than `geom_text`. The `fill` aesthetic
+#' controls the background colour of the label.
+#'
+#' @section Alignment:
+#' You can modify text alignment with the `vjust` and `hjust`
+#' aesthetics. These can either be a number between 0 (right/bottom) and
+#' 1 (top/left) or a character ("left", "middle", "right", "bottom", "center",
+#' "top"). There are two special alignments: "inward" and "outward".
+#' Inward always aligns text towards the center, and outward aligns
+#' it away from the center
+```
+- [ggplot2: How to left-justify text from multi-line facet labels?](https://stackoverflow.com/questions/34749636/ggplot2-how-to-left-justify-text-from-multi-line-facet-labels)
+- [R ggplot transparency - alpha values conditional on other variable](https://stackoverflow.com/questions/24800626/r-ggplot-transparency-alpha-values-conditional-on-other-variable). Another possibility using `scale_alpha_discrete`, where the range argument may be used to set your desired alpha values for each level of 'big'.
+- [Change plot title sizes in a facet_wrap multiplot](https://stackoverflow.com/questions/25409981/change-plot-title-sizes-in-a-facet-wrap-multiplot). In `theme()`, add `strip.text = element_text(size=25)` or whatever size you want.
+
+
+
+
+# 04.09.2017
+## R
+- COOL! [How to reshape data in R: tidyr vs reshape2](http://www.milanor.net/blog/reshape-data-r-tidyr-vs-reshape2/)
+- [R: Combining identical rows into one (preferably using dplyr/tidyr) {duplicate}](https://stackoverflow.com/questions/32465796/r-combining-identical-rows-into-one-preferably-using-dplyr-tidyr)
+- [How to collapse many records into one while removing NA values]()https://stackoverflow.com/questions/28509462/how-to-collapse-many-records-into-one-while-removing-na-values)
+- Как отфильтровать NA только в определенных колонках? `filter_at(vars(est_cost, cost_element), any_vars(is.na(.))) %>%`
+	- Читаем подробно документацию на dplyr: [Filter within a selection of variables](http://dplyr.tidyverse.org/reference/filter_all.html)
+	- [How to filter rows for every column independently using dplyr](https://stackoverflow.com/questions/44233337/how-to-filter-rows-for-every-column-independently-using-dplyr)
+
 # 01.09.2017
 ## DS
 - [Apache Superset](https://github.com/apache/incubator-superset) (incubating) is a modern, enterprise-ready business intelligence web application. {this project used to be named Caravel, and Panoramix in the past}
@@ -65,7 +127,18 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - COOL! Примеры про background и раскраску. [More Examples on Styling Cells, Rows, and Tables](https://rstudio.github.io/DT/010-style.html)
 - [color backgorund of rows in DataTable Shiny #31 {Closed}](https://github.com/rstudio/DT/issues/31)
 - [background color in data table #115 {Closed}](https://github.com/rstudio/DT/issues/115)
+- Почему не срабатывает такая конструкция (цвета взяты из R Colors)?
+```
+formatStyle(
+  "ratio",
+  backgroundColor=styleInterval(
+    c(0, 95, 100), 
+    c("lightskyblue1", "lightpink1", "lightgoldenrod1", "darkseagreen1"))
+```
+Ответ найден!!! Тут используются имена из CSS colors! [CSS Colors. Color Names Supported by All Browsers](https://www.w3schools.com/cssref/css_colors.asp)
 - [r shiny - DataTableOutput - color specific rows and colomns](https://stackoverflow.com/questions/32103377/r-shiny-datatableoutput-color-specific-rows-and-colomns)
+- [Conditional formatStyle in DT]()https://stackoverflow.com/questions/44571152/conditional-formatstyle-in-dt)
+- [Datatable: apply different formatStyle to each column](https://stackoverflow.com/questions/35795010/datatable-apply-different-formatstyle-to-each-column)
 - [Different background colors in each cell R](https://stackoverflow.com/questions/39203218/different-background-colors-in-each-cell-r)
 ```
 library(scales)              
