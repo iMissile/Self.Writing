@@ -264,6 +264,9 @@ See the [Getting Started document](https://support.rstudio.com/hc/en-us/articles
 By default RStudio Server runs on port 8787 and accepts connections from all remote clients. After installation you should therefore be able to navigate a web browser to the following address to access the server:
 `http://<server-ip>:8787`
 
+## Purging RStudio Connect
+Глава 14 в Admin Guide
+
 ### Управление пользователями
 Тут не все прозрачно, пытаемся разобраться по частям.
 
@@ -358,6 +361,7 @@ You can override this behavior using the `preserve_logs` configuration option. I
 Ответ: `preserve_logs` надо ставить на top level. После запуска видно, что не хватает прав создать файл логгера приложения.
 Надо дать полные права пользователю `shiny` (он в конфиге прописан как `run_as`) на `/srv/shiny-server`.
 Можно командой `sudo chown -R shiny /srv/shiny-server`
+- Удаление директории в Linux: [How do I remove a full directory in Linux?](https://www.computerhope.com/issues/ch000798.htm): `rm -rf mydir`
 - Кирилл придумал такое решение:
 	1. поменял у `/srv/shiny-server` группу на `shiny` (была root)
 	2. поставил на `/srv/shiny-server` флаг `setguid`, что бы при копировании туда файлов наследовалась группа (https://en.wikipedia.org/wiki/Setuid#setgid_on_directories)
@@ -936,7 +940,7 @@ LaTeX необходим R для сборки документации, как 
 - [When removing Texlive, it also removes R. How to stop that?](https://www.centos.org/forums/viewtopic.php?t=57885)
 - [How to remove everything related to TeX Live for fresh install on Ubuntu?](http://tex.stackexchange.com/questions/95483/how-to-remove-everything-related-to-tex-live-for-fresh-install-on-ubuntu)
 
-# Elastic Stack
+# Elastic Stack (ELK)
 
 Не забываем ставить время на машинах!
 Как узнать время и дату через консоль: `date`
@@ -944,6 +948,10 @@ LaTeX необходим R для сборки документации, как 
  - Запускаем chrony и добавляем в автозагрузку: 
  	- `systemctl start chronyd`
  	- `systemctl enable chronyd`
+
+## Интересные ресурсы в инете
+- [driskell/log-courier](https://github.com/driskell/log-courier). Log Courier, a lightweight log shipper with Logstash integration.
+- [Сбор и анализ логов демонов в Badoo](https://habrahabr.ru/company/badoo/blog/280606/)
 
 ## Elastic Search
 - На [Docker Hub](https://hub.docker.com/_/elasticsearch/) ES более не доступен.

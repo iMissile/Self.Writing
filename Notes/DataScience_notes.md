@@ -28,6 +28,39 @@ https://www.crowdgames.ru/page/plany-crowd-games
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
+# e-books
+- Bookmate [Изменить данные карты, с которой происходят списания за подписку](https://support.bookmate.com/hc/ru/articles/219428628-%D0%98%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BA%D0%B0%D1%80%D1%82%D1%8B-%D1%81-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D1%8F%D1%82-%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B7%D0%B0-%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%BA%D1%83)
+- COOL e-book!. [Functional programming and unit testing for data munging with R](https://b-rodrigues.github.io/fput/) by Bruno Rodrigues
+- [Processing and Analyzing Financial Data with R](https://sites.google.com/view/pafdR/home)
+
+
+# 11.09.2017
+## R
+- [The writexl package: zero dependency xlsx writer for R](https://ropensci.org/blog/technotes/2017/09/08/writexl-release)
+- COOL! [Infographic-style charts using the R waffle package](https://nsaunders.wordpress.com/2017/09/08/infographic-style-charts-using-the-r-waffle-package/)
+	- [Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS](http://fontawesome.io/)
+- [R Markdown for documents with logos, watermarks, and corporate styles](http://ellisp.github.io/blog/2017/09/09/rmarkdown)
+	- [Demonstration page of R Markdown in combination with corporate theming](http://ellisp.github.io/presentations/rmarkdown-styled-demo.html)
+- [Measurement units in R](https://cran.r-project.org/web/packages/units/vignettes/measurement_units_in_R.html)
+
+# 08.09.2017
+## Apple
+- [About Apple USB Power Adapters](https://www.apple.com/power-adapters/). APPLE 12W USB Power Adapter для iPad MD836ZM/A
+
+## Zabbix
+- [Zabbix Book](http://www.zabbixbook.com/)
+- [Правильное обнаружение проблем с помощью Zabbix](https://habrahabr.ru/company/oleg-bunin/blog/320678/)
+- [Zabbix online demo](https://zabbix.org/zabbix/zabbix.php?action=dashboard.view)
+
+## R
+- COOL! [IT'S TIBBLETIME: TIME-AWARE TIBBLES](http://www.business-science.io/code-tools/2017/09/07/tibbletime-0-0-1.html)
+- [Calculating a fuzzy kmeans membership matrix with R and Rcpp](http://blog.revolutionanalytics.com/2017/08/kmeans-r-rcpp.html)
+- [Mapping in R just got a whole lot easier](https://www.computerworld.com/article/3175623/data-analytics/mapping-in-r-just-got-a-whole-lot-easier.html)
+- [Analysing soil moisture data in NetCDF format with the ncdf4 library](http://r.prevos.net/netcdf-format/)
+	- [Network Common Data Form (NetCDF)](http://www.unidata.ucar.edu/software/netcdf/). NetCDF NetCDF is a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data.
+- [SVG from stats software: the good, the bad and the ugly](https://robertgrantstats.wordpress.com/2017/09/07/svg-from-stats-software-the-good-the-bad-and-the-ugly/)
+
+
 # 07.09.2017
 ## R
 - [Knime 3.4 connections to Microsoft R, Azure](http://blog.revolutionanalytics.com/2017/09/knime-azure.html)
@@ -38,6 +71,10 @@ https://www.crowdgames.ru/page/plany-crowd-games
 
 # 06.09.2017
 # R & Shiny
+- Shiny Testing
+	- [Getting started with shinytest](https://rstudio.github.io/shinytest/articles/shinytest.html)
+	- [shinyloadtest](https://rstudio.github.io/shinyloadtest/). This package extends the shinytest package to enable users to load test deployed Shiny applications. Load testing is executed using parallel phantomJS sessions.
+	- COOL! [mexindian/ShinyTester](https://github.com/mexindian/ShinyTester). An R package to help debug Shiny apps during the process itself.
 - [Build a dynamic UI that reacts to user input](https://shiny.rstudio.com/articles/dynamic-ui.html)
 - [extendShinyjs: Calling your own JavaScript functions from R](https://cran.r-project.org/web/packages/shinyjs/vignettes/shinyjs-extend.html)
 - `updateNavbarPage` [R shiny - observeEvent - make the commands execute in order and in real time](https://stackoverflow.com/questions/32806113/r-shiny-observeevent-make-the-commands-execute-in-order-and-in-real-time)
@@ -236,12 +273,12 @@ The script below illustrates how to add one label per stack in a stacked bar cha
 	- [Power BI Documentation. Using R in Query Editor](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-r-in-query-editor/)
 	- [Tips and Tricks for R scripts in the query editor in Power BI](http://www.thebiccountant.com/2017/08/25/tips-and-tricks-for-r-scripts-in-the-query-editor-in-power-bi/)
 - COOL! Tidyeval
-	- [Why I find tidyeval useful](http://www.brodrigues.co/blog/2017-08-27-why_tidyeval/)
 	- [Tidy evaluation, most common actions](https://edwinth.github.io/blog/dplyr-recipes/)
+	- [Non-standard evaluation, how tidy eval builds on base R](https://edwinth.github.io/blog/nse/)
 	- [Programming with dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/programming.html)
-	- COOL e-book!. [Functional programming and unit testing for data munging with R](https://b-rodrigues.github.io/fput/) by Bruno Rodrigues
-- [wrapr: R Code Sweeteners](http://www.win-vector.com/blog/2017/08/wrapr-r-code-sweeteners/)
- 	- [Debugging R code using R, RStudio and wrapper functions](https://www.youtube.com/watch?v=-P9UzQuJSH8&feature=youtu.be&list=PLAKBwakacHbQT51nPHex1on3YNCCmggZA)
+	- [wrapr: R Code Sweeteners](http://www.win-vector.com/blog/2017/08/wrapr-r-code-sweeteners/)
+	- [Why I find tidyeval useful](http://www.brodrigues.co/blog/2017-08-27-why_tidyeval/)
+- [Debugging R code using R, RStudio and wrapper functions](https://www.youtube.com/watch?v=-P9UzQuJSH8&feature=youtu.be&list=PLAKBwakacHbQT51nPHex1on3YNCCmggZA)
 - [Unbottling “.msg” Files in R](https://rud.is/b/2017/08/25/unbottling-msg-files-in-r/)
 
 
@@ -332,7 +369,6 @@ They can be purged by running this:
 	- [What does the R formula y~1 mean?](https://stackoverflow.com/questions/13366755/what-does-the-r-formula-y1-mean)
 - Трансферинг части агрегатных функций на сторону DB. [Visualizations with R and Databases](https://rviews.rstudio.com/2017/08/16/visualizations-with-r-and-databases/)
 - [rOpenSci packages](https://ropensci.org/packages/)
-- [Assertive R Programming with assertr](https://cran.r-project.org/web/packages/assertr/vignettes/assertr.html). [ropensci/assertr](https://github.com/ropensci/assertr)
 - [Crowd sourced benchmarks](https://cran.r-project.org/web/packages/benchmarkme/vignettes/a_introduction.html)
 - COOL! [Starting a Rmarkdown Blog with Blogdown + Hugo + Github](https://talesofr.wordpress.com/2017/08/18/starting-a-rmarkdown-blog-with-bookdown-hugo-github/)
 - [simplyR](http://www.sthda.com/english/wiki/simplyr) is a web space where we’ll be posting practical and easy guides for solving real important problems using R programming language
@@ -1634,6 +1670,7 @@ autoplot(mdeaths) + geom_forecast(h=36, level=c(50,80,95))
 ## R
 - COOL! [Data validation with the assertr package](http://ropensci.org/blog/blog/2017/04/11/assertr)
 - COOL! [Data validation with the assertr package](http://www.onthelambda.com/2017/03/20/data-validation-with-the-assertr-package/). No matter how new and fancy your ML algorithm is, it’s success is predicated upon a properly sanitized dataset. If you are using bad data, your approach will fail—either flagrantly (best case), or unnoticeably (considerably more probable and considerably more pernicious).
+- [Assertive R Programming with assertr](https://cran.r-project.org/web/packages/assertr/vignettes/assertr.html). [ropensci/assertr](https://github.com/ropensci/assertr)
 - [Fast data loading from files to R](http://blog.appsilondatascience.com/rstats/2017/04/11/fast-data-load.html)
 - [hadley gist. Benchmark different ways of reading a file](https://gist.github.com/hadley/6353939)
 - [Teaching pivot / un-pivot](http://www.win-vector.com/blog/2017/04/teaching-pivot-un-pivot/)
