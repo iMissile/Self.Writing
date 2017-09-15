@@ -31,7 +31,72 @@ https://www.crowdgames.ru/page/plany-crowd-games
 # e-books
 - Bookmate [Изменить данные карты, с которой происходят списания за подписку](https://support.bookmate.com/hc/ru/articles/219428628-%D0%98%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BA%D0%B0%D1%80%D1%82%D1%8B-%D1%81-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D1%8F%D1%82-%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B7%D0%B0-%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%BA%D1%83)
 - COOL e-book!. [Functional programming and unit testing for data munging with R](https://b-rodrigues.github.io/fput/) by Bruno Rodrigues
+- [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas, Alison Presmanes Hill
 - [Processing and Analyzing Financial Data with R](https://sites.google.com/view/pafdR/home)
+- [Data Visualization for Social Science. A practical introduction with R and ggplot2](http://socviz.co/)
+
+# 15.09.2017
+## R
+- [App formats and launching apps](https://shiny.rstudio.com/articles/app-formats.html)
+- [ggpubr: Create Easily Publication Ready Plots](http://www.sthda.com/english/wiki/ggpubr-create-easily-publication-ready-plots)
+	- [Articles - ggpubr: Publication Ready Plots](http://www.sthda.com/english/articles/24-ggpubr-publication-ready-plots/)
+
+# 14.09.2017
+## R
+- COOL! [RStudio v1.1 - The Little Things](https://blog.rstudio.com/2017/09/13/rstudio-v1.1---the-little-things/)
+- [BUILDING RICH ANALYTIC WEB APPS HAS NEVER BEEN EASIER](https://moderndata.plot.ly/dash-shiny-and-plotly-js-master-classes-in-nyc-november-16-17/). We’re entering a golden age of the “analytics developer.” Cutting edge companies like AirBnB, Apple, and S&P are no longer buying off-the-shelf BI software. Instead, they build their own targeted BI platforms that succeed where traditional Big BI falls flat: Agility, collaboration, browser experience, and web-based data visualization. If your company strives to change the world and break ahead of competition, it’s unlikely that canned, off-the-shelf BI software will give you an edge.
+With tools like Shiny (for R) or Dash (for Python), plus a flourishing ecosystem of online data viz, it has never been easier to rapidly deploy rich analytic web apps.
+- [crayon: Colored Terminal Output](https://cran.r-project.org/web/packages/crayon/index.html)
+Colored terminal output on terminals that support 'ANSI' color and highlight codes. It also works in 'Emacs' 'ESS'. 'ANSI' color support is automatically detected. Colors and highlighting can be combined and nested. New styles can also be created easily. This package was inspired by the 'chalk' 'JavaScript' project.
+
+## Python
+- [Introducing Dash](https://medium.com/@plotlygraphs/introducing-dash-5ecf7191b503). Create Reactive Web Apps in pure Python
+- [Dash by Plotly](https://plot.ly/products/dash/). Build beautiful web-based interfaces in Python
+Dash is a Python framework for building analytical web applications. No JavaScript required.
+Built on top of Plotly.js, React, and Flask, Dash ties modern UI elements like dropdowns, sliders, and graphs to your analytical Python code.
+
+## ELK
+- ограничение на размер документов [What is the maximum Elasticsearch document size?](https://stackoverflow.com/questions/28841221/what-is-the-maximum-elasticsearch-document-size)
+- [How to set authentication in kibana](https://stackoverflow.com/questions/30138936/how-to-set-authentication-in-kibana)
+	- [How to use nginx to proxy to a host requiring authentication?](https://serverfault.com/questions/230749/how-to-use-nginx-to-proxy-to-a-host-requiring-authentication/345244#345244)
+- Как реализована аутентификация пользователей при использовании веб интерфейса у ПО Kibana?
+Штатно в Кибане вообще нет аутентификации и авторизации. Но есть несколько возможных путей получения этого функционала, в зависимости от существующих требований по аутентификации:
+	- Купить X-Pack по подписке
+	- Ограничить доступ путем включения в цепочку nginx как прокси
+	- Использовать open-source плагины Search Guard (https://github.com/floragunncom/search-guard) или Readonlyrest (https://github.com/sscarduzio/elasticsearch-readonlyrest-plugin)
+	- Поискать что-нибудь еще …
+- [Каким образом можно организовать загрузку метрик из ELK в Zabbix?]
+	- [Zabbix: Sending Zabbix metrics using a Go client](https://fabianlee.org/2017/05/19/zabbix-sending-zabbix-metrics-using-a-go-client/)
+	- [Zabbix: Zabbix REST API using a Go client](https://fabianlee.org/2017/05/16/zabbix-zabbix-rest-api-using-a-go-client/)
+- [Мониторинг Elasticsearch через боль и страдания](https://habrahabr.ru/company/okmeter/blog/315860/)
+- [Какой способ кэширования запросов в Elasticsearch предпочтительнее при анализе логов и почему?]
+	- [Caching In Elasticsearch](http://opensourceconnections.com/blog/2017/07/10/caching_in_elasticsearch/) by Elizabeth Haubert — July 10, 2017 
+	- [All About Caching](https://www.elastic.co/guide/en/elasticsearch/guide/current/filter-caching.html#filter-caching)
+	- [Finding Exact Values](https://www.elastic.co/guide/en/elasticsearch/guide/current/_finding_exact_values.html#_internal_filter_operation)
+
+
+# 13.09.2017
+## R
+- [How to internationalize your Shiny apps with shiny.i18n?](http://appsilondatascience.com/blog/rstats/2017/09/12/i18n.html)
+- [msgtools](https://cran.r-project.org/web/packages/msgtools/README.html). Tools for Developing Diagnostic Messages
+- COOL! [Restart Shiny Session](https://stackoverflow.com/questions/25062422/restart-shiny-session).
+	- [Restart shiny app from within app (reloading data)](https://stackoverflow.com/questions/42889993/restart-shiny-app-from-within-app-reloading-data)
+	- COOL. shinyjs way. ['Reset inputs' button in shiny app](https://stackoverflow.com/questions/24265980/reset-inputs-button-in-shiny-app)
+
+
+## R & web scrapping\SOAP
+- COOL! [How I became a crolute i.e. an user of the crul package](http://www.masalmon.eu/2017/06/30/crolute/). Maëlle blog.
+A few months ago rOpenSci’s Scott Chamberlain asked me for feedback about a new package of his called crul, an http client like httr, so basically something you use for e.g. writing a package interfacing an API. He told me that a great thing about crul was that it supports asynchronous requests. I felt utterly uncool because I had no idea what this meant although I had already written quite a few API packages (for instance ropenaq, riem and opencage).
+	- [crul: HTTP Client](https://cran.rstudio.com/web/packages/crul/). A simple HTTP client, with tools for making HTTP requests, and mocking HTTP requests. 
+	- [R for cats and cat lovers. An intro to R for new programmers](https://rforcats.net/). This is an introduction to R. I promise this will be fun. Since you have never used a programming language before, or any language for that matter, you won’t be tainted by other programming languages with different ways of doing things. This is good - we can teach you the R way of doing things.
+- COOL! [Introducing routr - Routing of HTTP and WebSocket in R](http://www.data-imaginist.com/2017/Introducing-routr/)
+
+# 12.09.2017
+## R
+- COOL! [Announcing blogdown: Create Websites with R Markdown](https://blog.rstudio.com/2017/09/11/announcing-blogdown/)
+	- [Converting robjhyndman to blogdown](https://support.rbind.io/2017/05/15/converting-robjhyndman-to-blogdown/)
+	- [Karl Broman’s blog](http://kbroman.org/blog/)
+- [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas, Alison Presmanes Hill
 
 
 # 11.09.2017
@@ -114,9 +179,6 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [ggplot2: How to left-justify text from multi-line facet labels?](https://stackoverflow.com/questions/34749636/ggplot2-how-to-left-justify-text-from-multi-line-facet-labels)
 - [R ggplot transparency - alpha values conditional on other variable](https://stackoverflow.com/questions/24800626/r-ggplot-transparency-alpha-values-conditional-on-other-variable). Another possibility using `scale_alpha_discrete`, where the range argument may be used to set your desired alpha values for each level of 'big'.
 - [Change plot title sizes in a facet_wrap multiplot](https://stackoverflow.com/questions/25409981/change-plot-title-sizes-in-a-facet-wrap-multiplot). In `theme()`, add `strip.text = element_text(size=25)` or whatever size you want.
-
-
-
 
 # 04.09.2017
 ## R
@@ -290,7 +352,7 @@ The script below illustrates how to add one label per stack in a stacked bar cha
 - [LINEAR CONGRUENTIAL GENERATOR IN R](http://www.aaronschlegel.com/series/random-number-generation/)
 	- [LINEAR CONGRUENTIAL GENERATOR IN R](http://www.aaronschlegel.com/linear-congruential-generator-r/)
 - [Aggregating and analyzing data with dplyr](http://www.datacarpentry.org/R-genomics/04-dplyr.html) by Data Carpentry contributors.
-- COOL! Отличныейший курс в картинках. [Week3: Tidying/reshaping tables using tidyr](http://mgimond.github.io/ES218/Week03b.html)
+- COOL! Отличнейший курс в картинках. [Week3: Tidying/reshaping tables using tidyr](http://mgimond.github.io/ES218/Week03b.html)
 - COOL! [rhandsontable Introduction](https://cran.r-project.org/web/packages/rhandsontable/vignettes/intro_rhandsontable.html) by Jonathan Owen.
 rhandsontable is a htmlwidget based on the `handsontable.js` library.
 
@@ -316,7 +378,6 @@ rhandsontable is a htmlwidget based on the `handsontable.js` library.
 # 23.08.2017
 ## R
 - [UNDERSTANDING GENDER ROLES IN MOVIES WITH TEXT MINING](https://juliasilge.com/blog/women-in-film/)
-- COOL! [Introducing routr - Routing of HTTP and WebSocket in R](http://www.data-imaginist.com/2017/Introducing-routr/)
 - [Onboarding visdat, a tool for preliminary visualisation of whole dataframes](https://ropensci.org/blog/blog/2017/08/22/visdat)
 - COOL! [Caching httr Requests? This means WAR[C]!](https://rud.is/b/2017/08/22/caching-httr-requests-this-means-warc/)
 - COOL! [Some Neat New R Notations](http://www.win-vector.com/blog/2017/08/some-neat-new-r-notations/)
@@ -550,10 +611,6 @@ I guess it's better use DT instead. formattable is currently only designed for s
 - [Tutorial: Publish an R function as a SQL Server stored procedure with the sqlrutils package](http://blog.revolutionanalytics.com/2017/08/tutorial-sqlrutils.html)
 - [Creating R Stored Procedures in SQL Server 2016 Using sqlrutils](http://www.nielsberglund.com/2017/06/25/creating-r-stored-procedures-in-sql-server-2016-using-sqlrutils/)
 - [A Byte Code Compiler for R](http://homepage.divms.uiowa.edu/~luke/R/compiler/compiler.pdf)
-- COOL! [How I became a crolute i.e. an user of the crul package](http://www.masalmon.eu/2017/06/30/crolute/). Maëlle blog.
-A few months ago rOpenSci’s Scott Chamberlain asked me for feedback about a new package of his called crul, an http client like httr, so basically something you use for e.g. writing a package interfacing an API. He told me that a great thing about crul was that it supports asynchronous requests. I felt utterly uncool because I had no idea what this meant although I had already written quite a few API packages (for instance ropenaq, riem and opencage).
-	- [crul: HTTP Client](https://cran.rstudio.com/web/packages/crul/). A simple HTTP client, with tools for making HTTP requests, and mocking HTTP requests. 
-	- [R for cats and cat lovers. An intro to R for new programmers](https://rforcats.net/). This is an introduction to R. I promise this will be fun. Since you have never used a programming language before, or any language for that matter, you won’t be tainted by other programming languages with different ways of doing things. This is good - we can teach you the R way of doing things.
 - Formattable
 	- COOL! [Create a nice looking table using R](http://bioinfo.iric.ca/create-a-nice-looking-table-using-r/). Here are also some tricks how to **Export in HTML, JPEG, PNG or PDF files**
 	- [Filtering dataframes with formattable]()https://stackoverflow.com/questions/33457864/filtering-dataframes-with-formattable)
@@ -730,6 +787,7 @@ Set column definition initialisation properties.
 - COOL! ggplot Диагностика графических объектов: `library(gtable) gtable_show_layout(ggplotGrob(gp2))`
 - COOL! [Introduction to cowplot](https://cran.r-project.org/web/packages/cowplot/vignettes/introduction.html)
 - COOL! [Ligature fonts for R](https://benjaminlmoore.wordpress.com/2017/07/19/ligature-fonts-for-r/)
+	- [Monospaced Programming Fonts with Ligatures](https://www.hanselman.com/blog/MonospacedProgrammingFontsWithLigatures.aspx)
 	- [Hasklig - a code font with monospaced ligatures](https://github.com/i-tu/Hasklig) (in my opinion a nicer base font) which is more conservative with the ligatures it introduces.
 	- [tonsky/FiraCode. Monospaced font with programming ligatures](https://github.com/tonsky/FiraCode)
 	- [FiraCode RStudio instructions](https://github.com/tonsky/FiraCode/wiki/RStudio-instructions)
@@ -1440,6 +1498,7 @@ This package supports filtering, mapping, grouping, sorting, updating, searching
 
 # 03.05.2017
 ## Готовим стенд ELK+R
+- [ElasticSearch — агрегация данных](https://habrahabr.ru/company/smartprogress/blog/227131/)
 - [How to execute an IP Range Query/Filter](http://stackoverflow.com/questions/31520892/how-to-execute-an-ip-range-query-filter)
 - Формирование запросов с полями дат: [Date Math](https://www.elastic.co/guide/en/elasticsearch/reference/5.3/common-options.html#date-math)
 - [IP datatype](https://www.elastic.co/guide/en/elasticsearch/reference/current/ip.html). Но packetbeat гонит `source.ip` и аналогичные как `string`.

@@ -61,12 +61,12 @@ sudo yum update
 `yum groupinfo X11`
 
 ```
-	sudo yum install epel-release chrony tree R
+	sudo yum install wget epel-release chrony tree
+ 	sudo yum install R
 
 	sudo yum groupinstall X11
 	sudo yum groupinstall "Development Tools"
 
-	sudo yum install wget
 	sudo yum install libcurl-devel
 	sudo yum install openssl-devel
 	sudo yum install cyrus-sasl-devel
@@ -779,6 +779,7 @@ git config --global push.default matching
 ## Инсталляция RStudio Connect
 - [Страница для загрузки](https://www.rstudio.com/products/connect/download-commercial/) 45-ти дневной демо версии
 `wget https://s3.amazonaws.com/rstudio-connect/centos6.3/x86_64/rstudio-connect-1.5.0-7-x86_64.rpm`
+`wget https://s3.amazonaws.com/rstudio-connect/centos6.3/x86_64/rstudio-connect-1.5.4-1-x86_64.rpm`
 
 - Проверяем созданных пользователей: `cat /etc/passwd`. Детальнее можно поглядеть, например, здесь: [Linux Command: List All Users In The System](https://www.cyberciti.biz/faq/linux-list-users-command/)
 - Как дать права на запись для конкретного пользователя? `chown/chmod`. [Give user write access to folder {duplicate}](https://askubuntu.com/questions/402980/give-user-write-access-to-folder)
@@ -792,6 +793,9 @@ git config --global push.default matching
 $ sudo /opt/rstudio-connect/bin/license-manager status
 $ sudo /opt/rstudio-connect/bin/license-manager status-offline
 ```
+с версии 1.5.4 license manager глобально переписан и набор команд расширен. Список команд `sudo /opt/rstudio-connect/bin/license-manager`
+Offline активация проводится по XML запросу на странице [RStudio Trial License Activation Form](http://apps.rstudio.com/trial-activation/)
+
 - Подключаем RStudio IDE для публикации приложений. Приложения по умолчанию публикуются по такому пути: `/var/lib/rstudio-connect/apps/`
 Лог файлы приложений, если таковые создаются, размещаются в соотв. версию публикации, например, `/var/lib/rstudio-connect/apps/9/51/app.log`.
 Поискать можно такой командой: `: sudo find / -name 'app.log'`
