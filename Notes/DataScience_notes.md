@@ -35,11 +35,74 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Processing and Analyzing Financial Data with R](https://sites.google.com/view/pafdR/home)
 - [Data Visualization for Social Science. A practical introduction with R and ggplot2](http://socviz.co/)
 
+# 19.09.2017
+## R
+- COOL [purrr 0.2.3]()https://www.tidyverse.org/articles/2017/08/purrr-0.2.3/)
+	Здесь узнал, что `is_numeric()` and `is_scalar_numeric()` are deprecated because they don’t test for what you might expect at first sight.
+- [Accessing patent data with the patentsview package](https://ropensci.org/blog/blog/2017/09/19/patentsview)
+- Пытаюсь разобраться откуда я взял такую аббревиатуру "`Encoding<-`". Похоже, что из R help: (`Encoding<-`)
+```
+> `Encoding`
+function (x) 
+.Internal(Encoding(x))
+<bytecode: 0x0000000014387df0>
+<environment: namespace:base>
+> `Encoding<-`
+function (x, value) 
+.Internal(setEncoding(x, value))
+<bytecode: 0x0000000014388618>
+<environment: namespace:base>
+```
+- [VictoryCharts](http://formidable.com/open-source/victory/gallery/)
+- Обработка переменных с помощью select_if\mutate_at...
+```
+      79      mutate_at(vars(est_cost), as.numeric) %>%
+      80      mutate_at(vars(est_cost_entry), as.integer) %>%
+      81      # исключим нулевые затраты и промежуточные подытоги
+      82      # filter_at(vars(est_cost, cost_element), any_vars(is.na(.))) %>%
+```
+
+# 18.09.2017
+## Dev
+- [Can comments be used in JSON?](https://stackoverflow.com/questions/244777/can-comments-be-used-in-json)
+
+## Shiny
+- [R shiny Observe running Before loading of UI and this causes NULL parameters](https://stackoverflow.com/questions/22845874/r-shiny-observe-running-before-loading-of-ui-and-this-causes-null-parameters)
+
+
+## R
+- Обучающий курс [Intermediate-level programming with R](https://jdblischak.github.io/r-intermediate-altmetrics/index.html)
+- Assertive programming
+	- [Assertive R Programming with assertr](https://cran.r-project.org/web/packages/assertr/vignettes/assertr.html)
+	- [assertive: Readable Check Functions to Ensure Code Integrity](https://cran.r-project.org/web/packages/assertive/index.html)
+	- [Assertive programming for R analysis pipelines](https://github.com/lorenzwalthert/assertr-1)
+- Как создать именованный вектор из двух колонок data.frame?
+	- [How to convert two columns of dataframe into named vector?](https://stackoverflow.com/questions/37019347/how-to-convert-two-columns-of-dataframe-into-named-vector). The `setNames()` function is made for this purpose. `test <- setNames(c(1, 2), c("A", "B"))`
+	- [Values from multiple dataframe columns into one vector](https://stackoverflow.com/questions/20535999/values-from-multiple-dataframe-columns-into-one-vector). Timing различных решений.
+
+
+
+- COOL [davidgohel/flextable package](https://github.com/davidgohel/flextable). table farming https://davidgohel.github.io/flextable
+- COOL! [Announcing lime - Explaining the predictions of black-box models](http://www.data-imaginist.com/2017/Announcing-lime/)
+- COOL! [7 Alternatives to Word Clouds for Visualizing Long Lists of Data](https://www.displayr.com/alternatives-word-cloud/)
+- COOL! [Why Pie Charts Are Better Than Bar Charts](https://www.displayr.com/why-pie-charts-are-better-than-bar-charts/)
+	- [Save the Pies for Dessert](http://www.perceptualedge.com/articles/visual_business_intelligence/save_the_pies_for_dessert.pdf)
+- ggplot donut chart
+	- [ggplot2 pie chart : Quick start guide - R software and data visualization](http://www.sthda.com/english/wiki/ggplot2-pie-chart-quick-start-guide-r-software-and-data-visualization)
+	- [DONUT CHART in ggplot2](https://aledemogr.wordpress.com/2017/05/15/donut-chart-in-ggplot2/)
+	- [ggplot donut chart percentage labels](https://stackoverflow.com/questions/38683272/ggplot-donut-chart-percentage-labels)
+	- [ggplot2: How to add percentage labels to a donut chart](https://stackoverflow.com/questions/35267115/ggplot2-how-to-add-percentage-labels-to-a-donut-chart)
+	- [ggplot Donut chart](https://stackoverflow.com/questions/13615562/ggplot-donut-chart)
+	- [Polar coordinates](http://ggplot2.tidyverse.org/reference/coord_polar.html)
+- COOL [SQL Server R Services: Working with Data Frames](https://www.red-gate.com/simple-talk/sql/bi/sql-server-r-services-working-data-frames/)
+
 # 15.09.2017
 ## R
 - [App formats and launching apps](https://shiny.rstudio.com/articles/app-formats.html)
 - [ggpubr: Create Easily Publication Ready Plots](http://www.sthda.com/english/wiki/ggpubr-create-easily-publication-ready-plots)
 	- [Articles - ggpubr: Publication Ready Plots](http://www.sthda.com/english/articles/24-ggpubr-publication-ready-plots/)
+- [Keras: The Python Deep Learning library](https://keras.io/)
+- [Keras for R](https://blog.rstudio.com/2017/09/05/keras-for-r/)
 
 # 14.09.2017
 ## R
@@ -5216,7 +5279,7 @@ scale_fill_distiller <- function(..., type = "seq", palette = 1, direction = -1,
 - Scoping in Shiny
 	- [Scoping rules for Shiny apps](http://shiny.rstudio.com/articles/scoping.html). Objects defined in global.R are similar to those defined in server.R outside shinyServer(), with one important difference: they are also visible to the code in ui.R. This is because they are loaded into the global environment of the R session; all R code in a Shiny app is run in the global environment or a child of it.
 	- [Scoping (depricated)](http://rstudio.github.io/shiny/tutorial/#scoping)
-	- [Use R scripts and data](http://shiny.rstudio.com/tutorial/lesson5/). См. пункт "Execution". Здесь как раз красивые картинки.
+	- [Use R scripts and data](http://shiny.rstudio.com/tutorial/written-tutorial/lesson5/). См. пункт "Execution". Здесь как раз красивые картинки.
 	- [Shiny scoping rules - where to load libraries in modular architecture](http://stackoverflow.com/questions/35915574/shiny-scoping-rules-where-to-load-libraries-in-modular-architecture)
 - [Using DT in Shiny](https://rstudio.github.io/DT/shiny.html)
 - [Control the height in fluidRow in R shiny](http://stackoverflow.com/questions/25340847/control-the-height-in-fluidrow-in-r-shiny). HTML+CSS. Тут как раз цветные бэкграунды у блоков fluidRow.
@@ -5684,3 +5747,23 @@ Hosted directly from your GitHub repository. Just edit, push, and your changes a
 
 ## IoT
 - [ThingWorx](http://www.thingworx.com/). Платформа ThingWorx предоставляет полноценную интеллектуальную среду для разработки приложений, которую можно использовать в качестве среды выполнения, и обладает следующими характеристиками.
+
+==================
+Не могли бы Вы ответить на несколько наших вопросов: 
+Тема многранная и по своей сути охватывает несколько предметных областей. Если посмотреть на мировую практику, то в область DataScience можно прийти как и из программирования, так и из математики или дизайна. Важно то, что набор знаний и навыков должен быть весьма широким. Мои ответы хоть и учитывают общемировые трактовки, но в то же время имеют специфику применения в России.
+1. Data Scientist: какими знаниями и навыками должен обладать?
+Основная прикладная задача DataScience сводится к применению различных цифровых показателей и математических методов для получения дополнительных выгод для бизнеса. Делается ли это на больших данных или не очень -- вопрос второй, главное иметь измеряемый положительный результат. Исходя из этого определения вытекает необходимость в хороших коммуникативных навыках (стыковка желаний и возможностей между производственным процессом и бизнесом), умение презентовать результаты, умение работать с любого вида информацией, полученных из практически любых видов источников (база данных, файлы, веб-страницы, API, ...), практическое знание высшей математики и хорошие навыки в программировании. Однако, на мой взгляд, одним из ключевых моментов является умение детально и всесторонне разобраться в предметной области применительно к которой и используются методы DataSciene. Решение 90% задач в области DataScience начинается с постановки задачи в терминах предметной области и заканчивается апробацией результатов "в поле". А для этого как раз будет необходим ранее полученный багаж знаний по физике, химии, математике, биологии, инженерии, географии и многим другим наукам и навыки быстрого обучения новым областям.
+2. Инструментарий Data Scientist?
+ - фундаментальная литература по конкретной предметной области;
+ - гибкие open-source ИТ средства для работы с любым объемом данных и любыми видами источников (R и\или Python, лучше оба);
+ - хорошо знакомые и проверенные средства для хранения данных;
+ - различные средства визуализации (powerpoint, Shiny\Dash, PowerBI, Tableau\Qlik)
+ - github
+3. Каковы требования компании к уровню образования потенциальных сотрудников?
+ - желательно высшее образование (обеспечивает широкий кругозор) естественно-научного направления; опыт участия в исследовательских проектах, включая написание различных отчетов; опыт программирования на указанных выше языках; практические навыки отладки, оптимизации производительности, валидации полученных численных результатов.
+4. Какие требования предъявляться к опыту работы?
+Предпочтения вытекают из ответа п. 3
+5. Есть ли специфические требования, которые обусловлены спецификой деятельности компании? 
+По факту необходимо прекрасно разбираться в предметной области, иначе будет пустое жонглирование цифрами.
+
+Скажите, пожалуйста, получится ли у Вас прислать ответы? Срок - 23 сентября, в крайнем случае - 24 сентября. Будет необходимо фото спикера и его "представление" (Имя_Фамилия, должность в компании) Спасибо! С уважением, Игорь Штомпель
