@@ -61,8 +61,8 @@ sudo yum update
 `yum groupinfo X11`
 
 ```
-	sudo yum install wget epel-release chrony tree
- 	sudo yum install R
+	sudo yum -y install wget epel-release chrony tree
+ 	sudo yum -y install R
 
 	sudo yum groupinstall X11
 	sudo yum groupinstall "Development Tools"
@@ -115,14 +115,16 @@ sudo yum update
 ### Готовая последовательность команд по установке пакетов
 **Загоняем в одну команду** `yum install package1 package2 package3......`, [How to install multiple packages using yum](http://www.linuxquestions.org/questions/linux-newbie-8/how-to-install-multiple-packages-using-yum-850364/):
 ```
-sudo yum install epel-release chrony tree
-sudo yum install R
-sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
+sudo yum -y install epel-release chrony tree
+sudo yum -y install R
+sudo yum -y install -y https://centos7.iuscommunity.org/ius-release.rpm
 
-sudo yum groupinstall X11
-sudo yum groupinstall "Development Tools"
+sudo yum -y groupinstall X11
+sudo yum -y groupinstall "Development Tools"
 
-sudo yum install wget libcurl-devel openssl-devel cyrus-sasl-devel libxml2-devel libpng-devel libjpeg-devel python python-devel proj proj-devel mesa-libGL mesa-libGL-devel mesa-libGLU mesa-libGLU-devel gmp-devel mpfr-devel cairo-devel libXt-devel gtk2-devel v8-devel udunits2 udunits2-devel xorg-x11-server-Xvfb unixODBC* postgresql-devel gcc-gfortran* texlive*, ufw, dejavu*, psmisc, rrdtool, lrzsz
+sudo yum -y install wget libcurl-devel openssl-devel cyrus-sasl-devel libxml2-devel libpng-devel libjpeg-devel python python-devel proj proj-devel mesa-libGL mesa-libGL-devel mesa-libGLU mesa-libGLU-devel gmp-devel mpfr-devel cairo-devel libXt-devel gtk2-devel v8-devel udunits2 udunits2-devel xorg-x11-server-Xvfb unixODBC* postgresql-devel gcc-gfortran* texlive*, ufw, dejavu*, psmisc, rrdtool, lrzsz
+
+sudo yum -y install dejavu-fonts-common dejavu-sans-mono-fonts rrdtool psmisc lrzsz gdal* proj-devel proj-epsg proj-nad protobuf-devel geos-devel
 ```
 и
 ```
@@ -219,7 +221,7 @@ install.packages("printr_0.0.6.tar.gz", repos = NULL, type="source")
 `install.packages("udunits2", configure.args='--with-udunits2-include=/usr/include/udunits2/')`
 
 **Может возникнуть ситуация**, когда потребуется доставлять фортран. Детально (в т.ч. и про управление пользователями) можно почитать в этой публикации: ["Install RStudio Server on centOS6.5"](http://blog.supstat.com/2014/05/install-rstudio-server-on-centos6-5/): 
-` sudo yum install gcc-gfortran*`
+`sudo yum install gcc-gfortran*`
 
 - Проблема при установке RODBC: "ODBC headers sql.h and sqlext.h not found". Решается установкой `yum install unixODBC*`
 
@@ -884,7 +886,7 @@ yum -y install texlive-collection-latexextra
 [CentOS Latex - Install package manually (no tlmgr)](http://tex.stackexchange.com/questions/289404/centos-latex-install-package-manually-no-tlmgr)
 Все делаем через `yum`. Поиск по репозиторию осуществляем с помощью [`yum search cyrillic`](https://www.centos.org/docs/5/html/yum/sn-searching-packages.html)
 
-- Ставим `sudo yum install texlive-cyrillic texlive-collection-langcyrillic install texlive-cyrillic-doc`
+- Ставим `sudo yum -y install texlive-cyrillic texlive-collection-langcyrillic texlive-cyrillic-doc`
 
 ## Ошибки при запуске TeXLive
 - [! LaTeX Error: File `titling.sty' not found. #115](https://github.com/rstudio/bookdown/issues/115)

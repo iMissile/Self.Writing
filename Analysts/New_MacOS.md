@@ -51,6 +51,10 @@ Arq automatically backs up all your Macs and PCs. Your files are stored securely
 - [TimeMachineEditor](http://tclementdev.com/timemachineeditor/)
 TimeMachineEditor is a software for OS X that lets you change the default one-hour backup interval of Time Machine. You can change the interval or create a more sophisticated scheduling (see screenshots below)
 
+## Как сделать ресет для OneDrive
+- COOL! [ONEDRIVE SYNC ISSUES? HOW TO RESET ONEDRIVE FOR MAC THE EASY WAY!](
+https://www.hightechdad.com/2017/02/06/onedrive-sync-issues-how-to-reset-onedrive-for-mac-the-easy-way/). Сохранил в Evernote
+
 
 # Распродажа софта
 - [$2 tuesday](http://twodollartues.com/)

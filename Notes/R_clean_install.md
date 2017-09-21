@@ -1,5 +1,6 @@
+# подключаем репозитории
 yum update
-yum install -y chrony
+yum -y install chrony
 systemctl start chronyd
 systemctl enable chronyd
 systemctl status chronyd
@@ -7,16 +8,22 @@ systemctl status chronyd
 yum -y install epel-release
 uname -a
 
-yum wget install libcurl-devel openssl-devel cyrus-sasl-devel libxml2-devel libpng-devel libjpeg-devel python python-devel proj proj-devel mesa-libGL mesa-libGL-devel mesa-libGLU mesa-libGLU-devel gmp-devel mpfr-devel cairo-devel libXt-devel gtk2-devel v8-devel udunits2 udunits2-devel
+# ставим R
+sudo yum -y install wget epel-release chrony tree
+sudo yum -y install R
 
-yum groupinstall X11
-yum install xorg-x11-server-Xvfb
-yum groupinstall "Development Tools"
-yum update
+# ставим доп либы, необходимые для пакетов R
+sudo yum -y groupinstall X11
+sudo yum -y groupinstall "Development Tools"
 
-yum install R
+sudo yum -y install wget libcurl-devel openssl-devel cyrus-sasl-devel libxml2-devel libpng-devel libjpeg-devel python python-devel proj proj-devel mesa-libGL mesa-libGL-devel mesa-libGLU mesa-libGLU-devel gmp-devel mpfr-devel cairo-devel libXt-devel gtk2-devel v8-devel udunits2 udunits2-devel xorg-x11-server-Xvfb unixODBC* postgresql-devel gcc-gfortran* texlive*, ufw, dejavu*, psmisc, rrdtool, lrzsz
 
+sudo yum -y install dejavu-fonts-common dejavu-sans-mono-fonts rrdtool psmisc lrzsz gdal* proj-devel proj-epsg proj-nad protobuf-devel geos-devel
 
+# ставим все, что касается LaTeX
+sudo yum -y install texlive texlive-latex texlive-xetex texlive-collection-fontsrecommended texlive-collection-latex texlive-collection-latexrecommended  texlive-xetex-def texlive-collection-xetex
+Добавляем поддержку кириллицы
+sudo yum -y install texlive-cyrillic texlive-collection-langcyrillic texlive-cyrillic-doc texlive-framed texlive-titling texlive-*font* linux-liber*
 
 При установке пакетов под root (для всех) запускаем R от рута `sudo -i R` и прогоняему установку
 ================== В консоли R

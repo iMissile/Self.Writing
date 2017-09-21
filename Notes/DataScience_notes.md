@@ -34,6 +34,19 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas, Alison Presmanes Hill
 - [Processing and Analyzing Financial Data with R](https://sites.google.com/view/pafdR/home)
 - [Data Visualization for Social Science. A practical introduction with R and ggplot2](http://socviz.co/)
+- [Sinew: Simple R Package Documentation](https://metrumresearchgroup.github.io/sinew/)
+
+# 20.09.2017
+## R
+- [Talk like a pirate day 2017](http://opiateforthemass.es/articles/pirates/)
+- COOL [Automating roxygen2 package documentation](https://yonicd.github.io/2017-09-18-sinew/). Take the mystery out of CRAN level package maintenance
+- Assert programming
+	- COOL! [Data validation with the assertr package](http://ropensci.org/blog/blog/2017/04/11/assertr)
+	- COOL! [Data validation with the assertr package](http://www.onthelambda.com/2017/03/20/data-validation-with-the-assertr-package/). No matter how new and fancy your ML algorithm is, it’s success is predicated upon a properly sanitized dataset. If you are using bad data, your approach will fail—either flagrantly (best case), or unnoticeably (considerably more probable and considerably more pernicious).
+	- [Assertive R Programming with assertr](https://cran.r-project.org/web/packages/assertr/vignettes/assertr.html). [ropensci/assertr](https://github.com/ropensci/assertr)
+	- [assertable: Verbose Assertions for Tabular Data (Data.frames and Data.tables)](https://cran.r-project.org/web/packages/assertable/index.html)
+Simple, flexible, assertions on data.frame or data.table objects with verbose output for vetting. While other assertion packages apply towards more general use-cases, assertable is tailored towards tabular data. It includes functions to check variable names and values, whether the dataset contains all combinations of a given set of unique identifiers, and whether it is a certain length. In addition, assertable includes utility functions to check the existence of target files and to efficiently import multiple tabular data files into one data.table.
+
 
 # 19.09.2017
 ## R
@@ -1790,9 +1803,6 @@ autoplot(mdeaths) + geom_forecast(h=36, level=c(50,80,95))
 
 # 12.04.2017
 ## R
-- COOL! [Data validation with the assertr package](http://ropensci.org/blog/blog/2017/04/11/assertr)
-- COOL! [Data validation with the assertr package](http://www.onthelambda.com/2017/03/20/data-validation-with-the-assertr-package/). No matter how new and fancy your ML algorithm is, it’s success is predicated upon a properly sanitized dataset. If you are using bad data, your approach will fail—either flagrantly (best case), or unnoticeably (considerably more probable and considerably more pernicious).
-- [Assertive R Programming with assertr](https://cran.r-project.org/web/packages/assertr/vignettes/assertr.html). [ropensci/assertr](https://github.com/ropensci/assertr)
 - [Fast data loading from files to R](http://blog.appsilondatascience.com/rstats/2017/04/11/fast-data-load.html)
 - [hadley gist. Benchmark different ways of reading a file](https://gist.github.com/hadley/6353939)
 - [Teaching pivot / un-pivot](http://www.win-vector.com/blog/2017/04/teaching-pivot-un-pivot/)
