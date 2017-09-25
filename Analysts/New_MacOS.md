@@ -51,9 +51,18 @@ Arq automatically backs up all your Macs and PCs. Your files are stored securely
 - [TimeMachineEditor](http://tclementdev.com/timemachineeditor/)
 TimeMachineEditor is a software for OS X that lets you change the default one-hour backup interval of Time Machine. You can change the interval or create a more sophisticated scheduling (see screenshots below)
 
+## OpenVPN
+- [Tunnelblick	free software for OpenVPN on OS X and macOS](https://tunnelblick.net/)
+	- [Настройка OpenVPN на Mac OS X](http://www.freeproxy.ru/ru/vpn/mac-os-x/openvpn.htm)
+	- [Строим OpenVPN мост под Mac OSX](https://geektimes.ru/post/206322/)
+
 ## Как сделать ресет для OneDrive
 - COOL! [ONEDRIVE SYNC ISSUES? HOW TO RESET ONEDRIVE FOR MAC THE EASY WAY!](
 https://www.hightechdad.com/2017/02/06/onedrive-sync-issues-how-to-reset-onedrive-for-mac-the-easy-way/). Сохранил в Evernote
+- [Onedrive restrictions and limitations when you sync files and folders](https://support.microsoft.com/en-us/help/3125202/restrictions-and-limitations-when-you-sync-files-and-folders)
+- [OneDrive sync issues: MAC OS X](https://answers.microsoft.com/en-us/onedrive/wiki/odwork-odfiles/onedrive-sync-issues-mac-os-x/28942f7f-2ce6-47a5-8d56-f47fc2bffbab?auth=1)
+- OneDrive не работает с файлами с общей длиной имени >255 и содержащими символы [|"?:] или ведущий пробел.
+   сбой в файле `matrix_elem.nb`: `Export[".\\output\\vv_index.mjson", vvtable, "ExpressionJSON"]`
 
 
 # Распродажа софта

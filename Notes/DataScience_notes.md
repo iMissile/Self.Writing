@@ -32,9 +32,80 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - Bookmate [Изменить данные карты, с которой происходят списания за подписку](https://support.bookmate.com/hc/ru/articles/219428628-%D0%98%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BA%D0%B0%D1%80%D1%82%D1%8B-%D1%81-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D1%8F%D1%82-%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B7%D0%B0-%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%BA%D1%83)
 - COOL e-book!. [Functional programming and unit testing for data munging with R](https://b-rodrigues.github.io/fput/) by Bruno Rodrigues
 - [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas, Alison Presmanes Hill
+- [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/) by Yihui Xie
 - [Processing and Analyzing Financial Data with R](https://sites.google.com/view/pafdR/home)
 - [Data Visualization for Social Science. A practical introduction with R and ggplot2](http://socviz.co/)
 - [Sinew: Simple R Package Documentation](https://metrumresearchgroup.github.io/sinew/)
+
+# 25.09.2017
+## R
+- [R vs Python - a One-on-One Comparison](https://shiring.github.io/r_vs_python/2017/01/22/R_vs_Py_post)
+	- [Choosing R or Python for data analysis? An infographic](https://www.datacamp.com/community/tutorials/r-or-python-for-data-analysis)
+	- [A Comprehensive Introduction To Your Genome With the SciPy Stack](https://www.toptal.com/python/comprehensive-introduction-your-genome-scipy)
+- vtreat: A 'data.frame' processor/conditioner that prepares real-world data for predictive modeling in a statistically sound manner. 'vtreat' prepares variables so that data has fewer exceptional cases, making it easier to safely use models in production. Common problems 'vtreat' defends against: 'Inf', 'NA', too many categorical levels, rare categorical levels, and new categorical levels (levels seen during application, but not during training). 'vtreat::prepare' should be used as you would use 'model.matrix'. [Upcoming data preparation and modeling article series](http://www.win-vector.com/blog/2017/09/upcoming-data-preparation-and-modeling-article-series/)
+- RMarkdown & Knitr
+	- [insert portions of a markdown document inside another markdown document using knitr](https://stackoverflow.com/questions/17593912/insert-portions-of-a-markdown-document-inside-another-markdown-document-using-kn). 
+```
+1. that is what the chunk option child is for, e.g. in second.Rmd, you can
+``{r child='first.Rmd'}
+``
+2. that is a little bit trickier, but you can call knit_child() manually, e.g.
+``{r echo=FALSE, results='asis'}
+# knit the first three lines of first.Rmd
+cat(knit_child(text = readLines('first.Rmd')[1:3]), sep = '\n')
+``
+```
+	- [How to combine two RMarkdown (.Rmd) files into a single output?](https://stackoverflow.com/questions/25824795/how-to-combine-two-rmarkdown-rmd-files-into-a-single-output)
+	- [Chunk options and package options](https://yihui.name/knitr/options/#child-documents). 2017-02-03
+- При публикации в PDF файла RMarkdown, содержащего HTML элементы, компиляция ломается с сообщением "HTML output in non-HTML formats by adding this option to the YAML front-matter of your rmarkdown file:
+always_allow_html: yes". Отчасти этот вопрос обсуждается здесь: хrendering to md_document results in error if code generates HTML #516  {Closed}](https://github.com/rstudio/rmarkdown/issues/516)
+
+# 23.09.2017
+## R
+- Изменение переменных окружения на сервере linux
+```
+vi /etc/environment
+R_CONFIG_ACTIVE=media-tel
+source /etc/environment
+echo $R_CONFIG_ACTIVE
+sudo systemctl restart rstudio-connect
+```
+- Управление конфигурационными файлами в пакете `config`: [Configurations](https://github.com/rstudio/config)
+You can specify which configuration is currently active by setting the `R_CONFIG_ACTIVE` environment variable. The `R_CONFIG_ACTIVE` variable is typically set within a site-wide `Renviron` or `Rprofile` (see R Startup for details on these files).
+- В случае с RStudio Connect `R_CONFIG_ACTIVE` задается в файле `find / -type f -name Rprofile`, файл находится здесь: `/usr/lib64/R/library/base/R/Rprofile`
+`find / -type f -name Renviron`, файл найден здесь: `/usr/lib64/R/etc/Renviron`
+- RStudio Connect переопределяет значение `R_CONFIG_ACTIVE`. Место найдено путем поиска по файлам из директории `cd /opt/rstudio-connect/`.
+Запускаем команду `grep -R R_CONFIG_ACTIVE *`
+Ответ находим в мануале RStudio Connect: [12.8 Using the config Package](http://docs.rstudio.com/connect/admin/process-management.html#using-the-config-package)
+```
+The config package makes it easy to manage environment specific configuration values in R code. For example, you might want to use one value for a variable locally, and another value when deployed on RStudio Connect. The package vignette contains more information.
+
+The desired configuration is identified to the config package by the R_CONFIG_ACTIVE environment variable. By default, R processes launched by RStudio Connect set R_CONFIG_ACTIVE to rsconnect. The value can be changed by modifying the Applications.RConfigActive configuration setting. Note that the value of R_CONFIG_ACTIVE is not available during package installation.
+```
+Меняем значение параметра `Applications.RConfigActive` в файле `/etc/rstudio-connect/rstudio-connect.gcfg`:
+```
+[Applications]
+RConfigActive = media-tel
+```
+
+## Microsoft
+- [How do I open OneDrive log (ODL) files?](https://superuser.com/questions/1041334/how-do-i-open-onedrive-log-odl-files). ODL="OneDrive Log". On a whim, I tried to open one in an SQLite database browser, and it recognized it as an encrypted SQLite database.
+
+
+# 22.09.2017
+## R
+- [Don't teach students the hard way first](http://varianceexplained.org/r/teach-hard-way/)
+- [Teach the tidyverse to beginners](http://varianceexplained.org/r/teach-tidyverse/)
+- [Don't teach built-in plotting to beginners (teach ggplot2)](http://varianceexplained.org/r/teach_ggplot2_to_beginners/)
+- [Get your public ip address w/ Rlang](https://github.com/gregce/ipify)
+- [Function for retrieving own ip address from within R?](https://stackoverflow.com/questions/14357219/function-for-retrieving-own-ip-address-from-within-r?noredirect=1&lq=1)
+
+# 21.09.2017
+## R
+- [Enterprise-ready dashboards with Shiny and databases](https://rviews.rstudio.com/2017/09/20/dashboards-with-r-and-databases/)
+- [12 Visualizations to Show a Single Number](https://www.displayr.com/12-visualizations-to-show-a-single-number/)
+- [Improve the Quality of Data Visualizations Using Redundancy](https://www.displayr.com/improve-the-quality-of-data-visualizations-using-redundancy/)
+- [Monte Carlo Simulations & the "SimDesign" Package in R](http://davegiles.blogspot.ru/2017/09/monte-carlo-simulations-simdesign.html)
 
 # 20.09.2017
 ## R
@@ -588,14 +659,14 @@ Benchmark your CPU and compare against other CPUs. Also provides functions for o
 	- [Dir](https://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/dir.mspx?mfr=true). Displays a list of a directory's files and subdirectories.
 - Утилиты командной строки для работы с ACL: `takeown.exe` & `icacl.exe`
 Пример использования `icacls` и `takeown` для получения доступа ко всем файлам несистемного диска..
-`takeown /f D: /r /d y`
+`takeown /f H: /r /d y`
 `/r` - нужен для обработки всех вложенных папок
 `/d y` - положительно отвечает на стандартный запрос да/нет, который появляется в том случае, если у пользователя нет прав для доступа к подпапкам.
 `icacls.exe H:\* /reset /T`
 
 Став владельцем папок, вы получите доступ к их содержимому, но, скорее всего, не сможете осуществлять запись в них. В этом случае можно взять полный контроль над папками таким образом
 
-`icacls D:\* /grant:r имя:F /t`
+`icacls H:\* /grant:r Администратор:F /t`
 Вместо имя подставьте имя вашей учетной записи или группы, которой вы хотите дать полный контроль над папками.
 `grant:r` - заменяет все текущие права, что имеет смысл в том конкретном случае когда (учетная запись, имевшая права, уже не существует), но далеко не всегда....
 - [Windows 7 и сброс прав доступа и владельца файлов](http://tt.erinome.net/2012/07/265)

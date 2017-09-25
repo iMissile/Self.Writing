@@ -25,6 +25,10 @@ sudo yum -y install texlive texlive-latex texlive-xetex texlive-collection-fonts
 Добавляем поддержку кириллицы
 sudo yum -y install texlive-cyrillic texlive-collection-langcyrillic texlive-cyrillic-doc texlive-framed texlive-titling texlive-*font* linux-liber*
 
+# обновляем пакеты в R
+sudo -i R
+update.packages()
+
 При установке пакетов под root (для всех) запускаем R от рута `sudo -i R` и прогоняему установку
 ================== В консоли R
 После установки библиотек ищем расположение h файлов следующей командой `find . -type f -name udunits2.h` и запускаем инсталляцию с параметрами:
@@ -33,11 +37,15 @@ install.packages("udunits2", configure.args='--with-udunits2-include=/usr/includ
 chooseCRANmirror(graphics=FALSE, ind=37)
 pacman::p_load("gWidgetstcltk")
 
+# устанавливаем RStudio Connect
+1. Заходим на страницу загрузки https://www.rstudio.com/products/connect/download-commercial/
+2. Проверяем срок демо лицензии: 
+sudo /opt/rstudio-connect/bin/license-manager status-offline
+
+
 
 ================== Web Доступ
 Shiny Server
-- `http://10.0.0.228:3838/` -- общая стартовая страница с приложениями
-- `http://10.0.0.228:3838/example1/` -- общее приложение по ссылке 
-- `http://ip:3838/users/ruser/iot/` -- частное приложение
+- `http://10.0.0.239:3939/` -- общая стартовая страница с приложениями
 RStudio Server
 - `http://<server-ip>:8787`
