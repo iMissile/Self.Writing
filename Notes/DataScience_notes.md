@@ -61,7 +61,13 @@ https://www.crowdgames.ru/page/plany-crowd-games
 	- [ggplot2: How to add percentage labels to a donut chart](https://stackoverflow.com/questions/35267115/ggplot2-how-to-add-percentage-labels-to-a-donut-chart)
 	- [ggplot Donut chart](https://stackoverflow.com/questions/13615562/ggplot-donut-chart)
 	- [Polar coordinates](http://ggplot2.tidyverse.org/reference/coord_polar.html)
-
+- Разбираемся с NSE в ggplot:
+	- [Using tidyeval method with ggplot in R](https://stackoverflow.com/questions/45109238/using-tidyeval-method-with-ggplot-in-r)
+	- [pass function arguments to both dplyr and ggplot](https://stackoverflow.com/questions/45439813/pass-function-arguments-to-both-dplyr-and-ggplot)
+	- [Tidy evaluation programming and ggplot2](https://stackoverflow.com/questions/44548819/tidy-evaluation-programming-and-ggplot2). Quo list of groupping
+	- [Define aesthetic mappings programatically](http://ggplot2.tidyverse.org/reference/aes_.html)
+	- [dplyr and ggplot in a function: use reorder in aes function](https://stackoverflow.com/questions/35933199/dplyr-and-ggplot-in-a-function-use-reorder-in-aes-function)
+- [Using purrr::map and forcats::fct_reorder to reorder factor levels by each subgroup](https://stackoverflow.com/questions/44423712/using-purrrmap-and-forcatsfct-reorder-to-reorder-factor-levels-by-each-subgr)
 
 # 05.10.2017
 ## R
@@ -199,10 +205,13 @@ With the newest `dplyr` (>0.7.0) you would use `rename(df, !!metric:=value)`
 
 ## Shiny
 - New widgets
+	- [Shiny User Showcase](https://www.rstudio.com/products/shiny/shiny-user-showcase/)
 	- [Regular Expression Searching within Shiny Selectize Objects](https://yonicd.github.io/2017-09-26-regexSelect/)
 	- [Shiny Widgets Gallery](https://shiny.rstudio.com/gallery/widget-gallery.html)
 	- [shinyWidgets : Extend widgets available in shiny](https://dreamrs.github.io/shinyWidgets/) либо можно запустить демо APP у себя: `shinyWidgets::shinyWidgetsGallery()`
 	- [](https://dreamrs-vic.shinyapps.io/shinyWidgets/)
+	- [myTinyShinys](https://mytinyshinys.shinyapps.io/dashboard/)
+A set of ever evolving dashboards and trelliscopes that take advantage of the shiny web application framework for the R environment and the increasing data available on the internet. All applications are interactive and include charts and tables using the latest applicable R packages. Several are in a raw form and only some have code available but, hey, life is short. Click on image to access site
 	- [shinyTime: A Time Input Widget for Shiny](https://cran.r-project.org/web/packages/shinyTime/index.html)
 Provides a time input widget for Shiny. This widget allows intuitive time input in the '[hh]:[mm]:[ss]' or '[hh]:[mm]' (24H) format by using a separate numeric input for each time component. The interface with R uses 'DateTimeClasses' objects. See the project page for more information and examples.
 	- COOL! [shinyjqui](https://github.com/Yang-Tang/shinyjqui). The shinyjqui package is an R wrapper for jQuery UI javascript library. It allows user to easily add interactions and animation effects to a shiny app.
@@ -508,6 +517,7 @@ A few months ago rOpenSci’s Scott Chamberlain asked me for feedback about a ne
 	http://www.ggplot2-exts.org/gallery/
 	http://www.r-graph-gallery.com/portfolio/ggplot2-package/
 	http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html
+	https://www.rstudio.com/products/shiny/shiny-user-showcase/
 - [FlashX is a collection of big data analytics tools.](http://flashx.io/)
 	- [FlashR](https://flashxio.github.io/FlashX-doc/FlashR-user-guide.html) extends the R programming framework for large-scale data analysis, by utilizing the powerful matrix computation in FlashMatrix. It executes R code in parallel automatically and utilizes one or many SSDs (solid-state drives), a type of fast disk that commonly exists in laptops and in the cloud, to scale R to large datasets.
 
