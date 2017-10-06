@@ -1,6 +1,12 @@
 - [The JSON Formatter](https://jsonformatter.curiousconcept.com/)
 - [JSON Editor Online](http://jsoneditoronline.org/)
 
+- [AppSales. Best Android apps on Sale](https://www.app-sales.net)
+- [AppTime. Games & Gadgets](http://app-time.ru/)
+- [Appsylum](http://appsylum.com/). Find Discuss & Support the Apps You Love
+
+https://www.filmpro.ru/materials/57202
+
 
 - [Запчасти к мясорубке Zelmer](http://vaprom.ru/shop/c16.zelmer.htm)
 - [УЗНАТЬ КТО ВАМ ЗВОНИТ!](https://www.neberitrubku.ru/). Вам звонят с незнакомого номера и вы думаете не брать трубку? Найдите этот номер и узнайте, кто пытается вам дозвониться.
@@ -36,6 +42,151 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Processing and Analyzing Financial Data with R](https://sites.google.com/view/pafdR/home)
 - [Data Visualization for Social Science. A practical introduction with R and ggplot2](http://socviz.co/)
 - [Sinew: Simple R Package Documentation](https://metrumresearchgroup.github.io/sinew/)
+
+# 06.10.2017
+## R
+- Pie chart
+	- COOL! [hrbrmstr/waffle, Make waffle (square pie) charts in R](https://github.com/hrbrmstr/waffle)
+	- [R: Pie chart with percentage as labels using ggplot2](https://stackoverflow.com/questions/26392818/r-pie-chart-with-percentage-as-labels-using-ggplot2)
+	- [Adding percentage labels on pie chart in R](https://stackoverflow.com/questions/41338757/adding-percentage-labels-on-pie-chart-in-r)
+	- [How to create a pie chart with percentage labels using ggplot2? {closed}](https://stackoverflow.com/questions/45657990/how-to-create-a-pie-chart-with-percentage-labels-using-ggplot2)
+	- [R Is Not So Hard! A Tutorial, Part 14: Pie Charts](http://www.theanalysisfactor.com/r-tutorial-part-14/)
+	- [R - Pie Charts](https://www.tutorialspoint.com/r/r_pie_charts.htm)
+- COOL! [Why Pie Charts Are Better Than Bar Charts](https://www.displayr.com/why-pie-charts-are-better-than-bar-charts/)
+	- [Save the Pies for Dessert](http://www.perceptualedge.com/articles/visual_business_intelligence/save_the_pies_for_dessert.pdf)
+- ggplot donut chart
+	- [ggplot2 pie chart : Quick start guide - R software and data visualization](http://www.sthda.com/english/wiki/ggplot2-pie-chart-quick-start-guide-r-software-and-data-visualization)
+	- [DONUT CHART in ggplot2](https://aledemogr.wordpress.com/2017/05/15/donut-chart-in-ggplot2/)
+	- [ggplot donut chart percentage labels](https://stackoverflow.com/questions/38683272/ggplot-donut-chart-percentage-labels)
+	- [ggplot2: How to add percentage labels to a donut chart](https://stackoverflow.com/questions/35267115/ggplot2-how-to-add-percentage-labels-to-a-donut-chart)
+	- [ggplot Donut chart](https://stackoverflow.com/questions/13615562/ggplot-donut-chart)
+	- [Polar coordinates](http://ggplot2.tidyverse.org/reference/coord_polar.html)
+
+
+# 05.10.2017
+## R
+- [Handling dates in R](https://skgrange.github.io/date_handling.html) by Stuart Grange, 2016-08-22
+- [Get weekdays in English in R](https://stackoverflow.com/questions/17031002/get-weekdays-in-english-in-r)
+- [Using weekdays with any locale under Windows](https://stackoverflow.com/questions/26603564/using-weekdays-with-any-locale-under-windows)
+- [R lubridate: weekdays in local language](https://stackoverflow.com/questions/43099990/r-lubridate-weekdays-in-local-language)
+- Ура-а! Найден кросс-платформенный вариант `stri_datetime_format(today(), "LLLL", locale="ru")`.
+- [WordR - A New R Package for Rendering Documents in MS Word Format](https://rviews.rstudio.com/2017/10/04/wordr---a-new-r-package-for-rendering-documents-in-ms-word-format/)
+- [Visualize Baseball with sunburstR](http://timelyportfolio.github.io/sunburstR/example_baseball.html) by Kenton Russell, August 26, 2016
+
+
+
+# 04.10.2017
+## R
+- [CRAFTING A POWERPOINT PRESENTATION WITH R](http://lenkiefer.com/2017/09/23/crafting-a-powerpoint-presentation-with-r/)
+- [Erratum tidyr 0.7.0](https://www.tidyverse.org/articles/2017/09/erratum-tidyr-0.7.0/)
+
+## Linux
+- Ставим шрифты в систему Linux. Вызвано проблемой с инсталляцией Roboto Condensed
+	- [How to install many font files quickly and easily?](https://askubuntu.com/questions/191778/how-to-install-many-font-files-quickly-and-easily)
+I found the following answer, found above, very helpful:
+Just create a .fonts folder in your home directory (if it doesn't exist) and unpack/copy them there. It's also a good idea to manually rebuild the font cache, so you can immediately use the fonts everywhere: `fc-cache -f -v`
+
+Пробуем так (навеяно темой [Problems with registering Roboto Condensed on macOS #18](https://github.com/hrbrmstr/hrbrthemes/issues/18):
+1. В R запускаем команду `import_roboto_condensed()` и смотрим местоположение шрифтов.
+2. Копируем шрифты в систему такой командой (исходное место определили на пред. шаге): `sudo cp -r /usr/lib64/R/library/hrbrthemes/fonts/roboto-condensed /usr/share/fonts/truetype/`
+3. В R запускаем команду `extrafont::font_import()`
+- Решение по настройке Cairo. Под линукс, при использовании Cairo для генерации графики, необходимо ему прописать соответствие шрифтов внутренним настройкам:
+	- Смотрим мэппинг командой `CairoFontMatch(fontpattern="Roboto condensed")`
+	- Переопределяем мэтчинг шрифтов:
+```
+	(
+  regular = "Roboto Condensed:style=Regular",
+  bold = "Roboto Condensed:style=Bold",
+  italic = "Roboto Condensed:style=Italic",
+  bolditalic = "Roboto Condensed:style=Bold Italic,BoldItalic",
+  symbol = "Symbol"
+)
+```
+
+
+# 03.10.2017
+## R
+- [Processing Rmarkdown documents with Eclipse and StatET](http://lukemiller.org/index.php/2017/10/processing-rmarkdown-documents-with-eclipse-and-statet/)
+- [Oh How I Have Failed Thee, Jupyter Notebooks…](https://blog.ouseful.info/2017/10/02/oh-how-i-have-failed-thee-jupyter-notebooks/)
+- [Explore your McDonalds Meal with Shiny and D3partitionR](http://enhancedatascience.com/2017/10/02/macdonalds-shiny-d3partitionr/)
+	- [D3partitionR: Overview](http://enhancedatascience.com/2016/10/02/d3partitionr-overview/)
+- [ggplot2 SEM models with tidygraph and ggraph](https://drsimonj.svbtle.com/ggsem-plot-sem-models-with-ggplot2)
+- [A tidy model pipeline with twidlr and broom](https://drsimonj.svbtle.com/a-tidy-model-pipeline-with-twidlr-and-broom)
+- [CET Perceptually Uniform Colour Maps](https://cran.rstudio.com/web/packages/cetcolor/vignettes/cet_color_schemes.html)
+- [Introduction to ‘treemapify’](https://cran.rstudio.com/web/packages/treemapify/vignettes/introduction-to-treemapify.html)
+- [Saving a Shiny-Graphviz plot to a png or pdf file #70 {Closed}](https://github.com/rich-iannone/DiagrammeR/issues/70)
+
+## DS
+- COOL! [Производство оборудования бумагоделательной машины (БДМ/КДМ)](http://xn--90a2at.xn--p1ai/bdmkdm/)
+- [Бумагоделательная машина. Устройство и принцип работы](http://uniq-paper.ru/bumagodelatelnaya-mashina/)
+- [TargetProcess. Visual & flexible software to adopt and scale Agile](https://www.targetprocess.com)
+
+# 02.10.2017
+## R
+- COOL! [Shiny User Showcase](https://www.rstudio.com/products/shiny/shiny-user-showcase/). Тут собраны примеры дашбордов
+## DS
+- [THE SCIENTIFIC METHOD](https://dxschool.org/the-scientific-method/)
+- COOL! [The Data Science Process, Rediscovered](https://www.linkedin.com/pulse/data-science-process-rediscovered-gregory-piatetsky-shapiro/)
+- [Harvard. CS109 Data Science](http://cs109.github.io/2015/)
+
+## R
+- COOL! [Data at GDS. Reproducible Analytical Pipelines](https://gdsdata.blog.gov.uk/2017/03/27/reproducible-analytical-pipeline/
+- COOL!!! [Business Process Analysis in R](https://www.bupar.net/)
+- COOL! [bupaR: Business Process Analysis with R](https://businessinformatics.be/2017/09/29/bupar-business-process-analysis-with-r/)
+	- CRAN [bupaR: Business Process Analytics in R](https://cran.r-project.org/web/packages/bupaR/index.html)
+Functionalities for process analysis in R. This packages implements an S3-class for event log objects, and related handler functions. Imports related packages for subsetting event data, computation of descriptive statistics, handling of Petri Net objects and visualization of process maps. See also packages 'edeaR','processmapR', 'eventdataR' and 'processmonitR'.
+- [Convert hand-drawn equations to LaTeX with the mathpix package](http://blog.revolutionanalytics.com/2017/09/convert-hand-drawn-equations-to-latex-with-the-mathpix-package.html)
+- [R 3.4.2 is released (with several bug fixes and a few performance improvements)](https://www.r-statistics.com/2017/09/r-3-4-2-is-released-with-several-bug-fixes-and-a-few-performance-improvements/)
+- [TIDYTEXT 0.1.4](https://juliasilge.com/blog/tidytext-0-1-4/)
+- [Retrieve & process TV News chyrons with newsflash](https://rud.is/b/2017/10/01/retrieve-process-tv-news-chyrons-with-newsflash/)
+- [Multicollinearity in R](https://datascienceplus.com/multicollinearity-in-r/)
+
+
+# 29.09.2017
+## R
+- [Session object](https://shiny.rstudio.com/reference/shiny/latest/session.html)
+- [Viewing all available values in clientData](https://shiny.rstudio.com/articles/client-data.html)
+- COOL! Shiny Server Pro. [How to create User Privileges](https://shiny.rstudio.com/articles/permissions.html)
+- [How to access session$user in Shiny using Shiny Pro](https://stackoverflow.com/questions/29239568/how-to-access-sessionuser-in-shiny-using-shiny-pro)
+- [access logged in name in R shiny](https://stackoverflow.com/questions/27927155/access-logged-in-name-in-r-shiny)
+- [clientData example for Shiny](https://gist.github.com/wch/5153771)
+
+
+# 28.09.2017
+## DS
+- [Web Scraper](http://webscraper.io/). Web Scraper is a company specializing in data extraction from web pages. We offer 2 great options for our users. Our free Google Chrome Web Scraper Extension, and cloud based Web Scraper.
+- [SelectorGadget: point and click CSS selectors](http://selectorgadget.com/)
+- [How to tell shiny to update value of fileInput](https://groups.google.com/forum/#!topic/shiny-discuss/4HxUBKWHOVs)
+- [CHURN PREDICTION WITH AUTOMATIC ML]()https://mljar.com/blog/churn-prediction-auto-ml/)
+
+
+## R
+- Из соображений безопасности в fileInput невозможно установить значение по дефолту. [Default value for File upload in R Shiny {closed}](https://stackoverflow.com/questions/37270881/default-value-for-file-upload-in-r-shiny)
+- [How to rename a column to a variable name “in a tidyverse way”](https://stackoverflow.com/questions/45472480/how-to-rename-a-column-to-a-variable-name-in-a-tidyverse-way).
+With the newest `dplyr` (>0.7.0) you would use `rename(df, !!metric:=value)`
+- [Econometrics Beat: Dave Giles' Blog](http://davegiles.blogspot.ru/2017/09/how-good-is-that-random-number-generator.html)
+
+# 26.09.2017
+## R
+- [Super excited for R promises](http://appsilondatascience.com/blog/rstats/2017/09/25/shiny-promises.html)
+	- [A promise library for R](https://github.com/rstudio/promises)
+	- COOL! [Async programming in R and Shiny](https://medium.com/@joe.cheng/async-programming-in-r-and-shiny-ebe8c5010790). This document is a work in progress
+- COOL! [For synchronous code, magrittr offers the `%T>%` (pronounced “tee”) operator, which operates like a regular `%>%` except that, after executing its right-hand side, it returns its left-hand side value.]
+- [magrittr - Ceci n'est pas un pipe](https://cran.r-project.org/web/packages/magrittr/README.html)
+- На MacOS возникли сложности с Roboto Condensed: [Problems with registering Roboto Condensed on macOS #18 {Open}](https://github.com/hrbrmstr/hrbrthemes/issues/18)
+- COOL! [A fontconfig-compatible version of the Roboto font family](https://github.com/andreasf/Roboto)
+- [R Shiny: An textInput that only gets invalidated upon losing focus or when enter is pressed shiny::runGist("7150112")](https://gist.github.com/xiaodaigh/7150112)
+
+## Shiny
+- New widgets
+	- [Regular Expression Searching within Shiny Selectize Objects](https://yonicd.github.io/2017-09-26-regexSelect/)
+	- [Shiny Widgets Gallery](https://shiny.rstudio.com/gallery/widget-gallery.html)
+	- [shinyWidgets : Extend widgets available in shiny](https://dreamrs.github.io/shinyWidgets/) либо можно запустить демо APP у себя: `shinyWidgets::shinyWidgetsGallery()`
+	- [](https://dreamrs-vic.shinyapps.io/shinyWidgets/)
+	- [shinyTime: A Time Input Widget for Shiny](https://cran.r-project.org/web/packages/shinyTime/index.html)
+Provides a time input widget for Shiny. This widget allows intuitive time input in the '[hh]:[mm]:[ss]' or '[hh]:[mm]' (24H) format by using a separate numeric input for each time component. The interface with R uses 'DateTimeClasses' objects. See the project page for more information and examples.
+	- COOL! [shinyjqui](https://github.com/Yang-Tang/shinyjqui). The shinyjqui package is an R wrapper for jQuery UI javascript library. It allows user to easily add interactions and animation effects to a shiny app.
+	- [Select vs Selectize](https://shiny.rstudio.com/gallery/selectize-vs-select.html)
 
 # 25.09.2017
 ## R
@@ -169,15 +320,6 @@ function (x, value)
 - COOL [davidgohel/flextable package](https://github.com/davidgohel/flextable). table farming https://davidgohel.github.io/flextable
 - COOL! [Announcing lime - Explaining the predictions of black-box models](http://www.data-imaginist.com/2017/Announcing-lime/)
 - COOL! [7 Alternatives to Word Clouds for Visualizing Long Lists of Data](https://www.displayr.com/alternatives-word-cloud/)
-- COOL! [Why Pie Charts Are Better Than Bar Charts](https://www.displayr.com/why-pie-charts-are-better-than-bar-charts/)
-	- [Save the Pies for Dessert](http://www.perceptualedge.com/articles/visual_business_intelligence/save_the_pies_for_dessert.pdf)
-- ggplot donut chart
-	- [ggplot2 pie chart : Quick start guide - R software and data visualization](http://www.sthda.com/english/wiki/ggplot2-pie-chart-quick-start-guide-r-software-and-data-visualization)
-	- [DONUT CHART in ggplot2](https://aledemogr.wordpress.com/2017/05/15/donut-chart-in-ggplot2/)
-	- [ggplot donut chart percentage labels](https://stackoverflow.com/questions/38683272/ggplot-donut-chart-percentage-labels)
-	- [ggplot2: How to add percentage labels to a donut chart](https://stackoverflow.com/questions/35267115/ggplot2-how-to-add-percentage-labels-to-a-donut-chart)
-	- [ggplot Donut chart](https://stackoverflow.com/questions/13615562/ggplot-donut-chart)
-	- [Polar coordinates](http://ggplot2.tidyverse.org/reference/coord_polar.html)
 - COOL [SQL Server R Services: Working with Data Frames](https://www.red-gate.com/simple-talk/sql/bi/sql-server-r-services-working-data-frames/)
 
 # 15.09.2017
@@ -451,6 +593,7 @@ The script below illustrates how to add one label per stack in a stacked bar cha
 - [jQuery Sparkline HTML Widget for R](https://github.com/htmlwidgets/sparkline)
 - [Tidy Up and Test XPath Queries on HTML and XML Content in R https://hrbrmstr.github.io/htmltidy/](https://github.com/hrbrmstr/htmltidy)
 - [Shiny Widgets Gallery](https://shiny.rstudio.com/gallery/widget-gallery.html)
+	- [shinyWidgets Overview](https://dreamrs-vic.shinyapps.io/shinyWidgets/)
 - COOL! Как отобразить ID элементов на html странице. Создаем закладку на панели браузера. В качесте URL пишем следующий скрипт:
 `javascript:$("div[id]").each(function(t){$(this).prepend("<span style='color: red'>"+$(this).attr("id")+"<br/></span>")}),$("input[id]").each(function(t){$(this).before("<span style='color: red'>"+$(this).attr("id")+"<br/></span>")});`. Готово!
 
@@ -998,7 +1141,6 @@ SELECT PRODUCT_ID, ORDER_QUANTITY, 999 AS USER_VALUE
 ## Shiny
 - COOL! [Shiny tips & tricks for improving your apps and solving common problems](http://deanattali.com/blog/advanced-shiny-tips/)
 - COOL! [R powered web applications with Shiny (a tutorial and cheat sheet with 40 example apps)](https://www.zevross.com/blog/2016/04/19/r-powered-web-applications-with-shiny-a-tutorial-and-cheat-sheet-with-40-example-apps/#app20)
-
 - [How to launch a Shiny app](https://shiny.rstudio.com/articles/running.html). `R -e "shiny::runApp('~/shinyapp')"`
 - Dynamic UI
 	- COOL! [Shiny example: dynamic input fields](https://gist.github.com/wch/4211337)
@@ -1717,8 +1859,7 @@ Searching and querying takes the format of: http://localhost:9200/[index]/[type]
 
 # 27.04.2017
 ## Shiny
-- COOL! [R Shiny: reactiveValues vs reactive](http://stackoverflow.com/questions/39436713/r-shiny-reactivevalues-vs-reactive). The shiny developers designed `reactive()` to be **lazy**, meaning that the expression contained in it will only be executed when it is called by one of its dependents. When one of its reactive dependencies is changed, it clears its cache and notifies its dependents, but it is not itself executed until asked to by one of its dependents. (So if, say, its sole dependent is a `textOutput()` element on a hidden tab, it won't actually be executed if/until that tab is opened.)
-`observe()`, on the other hand, is **eager**;
+- COOL! [R Shiny: reactiveValues vs reactive](http://stackoverflow.com/questions/39436713/r-shiny-reactivevalues-vs-reactive). The shiny developers designed `reactive()` to be **lazy**, meaning that the expression contained in it will only be executed when it is called by one of its dependents. When one of its reactive dependencies is changed, it clears its cache and notifies its dependents, but it is not itself executed until asked to by one of its dependents. (So if, say, its sole dependent is a `textOutput()` element on a hidden tab, it won't actually be executed if/until that tab is opened.) `observe()`, on the other hand, is **eager**;
 - [Learn about your user with session$clientData](https://shiny.rstudio.com/articles/client-data.html). См. пункт "Viewing all available values in clientData"
 - [Modularizing Shiny app code](http://shiny.rstudio.com/articles/modules.html). ADDED 20 OCT 2015 by JOE CHENG
 - [Getting Shiny to update the ui and and run long calculation afterwards](http://stackoverflow.com/questions/34226789/getting-shiny-to-update-the-ui-and-and-run-long-calculation-afterwards)
