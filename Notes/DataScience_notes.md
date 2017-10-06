@@ -70,8 +70,28 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Using weekdays with any locale under Windows](https://stackoverflow.com/questions/26603564/using-weekdays-with-any-locale-under-windows)
 - [R lubridate: weekdays in local language](https://stackoverflow.com/questions/43099990/r-lubridate-weekdays-in-local-language)
 - Ура-а! Найден кросс-платформенный вариант `stri_datetime_format(today(), "LLLL", locale="ru")`.
+```
+даже так:
+> stri_datetime_format(today(), "LLLL", locale="ru@calendar=Persian")
+[1] "Мехр"
+> stri_datetime_format(today(), "LLLL", locale="ru@calendar=Indian")
+[1] "Азвина"
+> stri_datetime_format(today(), "LLLL", locale="ru@calendar=Hebrew")
+[1] "Тишрей"
+> stri_datetime_format(today(), "LLLL", locale="ru@calendar=Islamic")
+[1] "Мухаррам"
+> stri_datetime_format(today(), "LLLL", locale="ru@calendar=Coptic")
+[1] "Тот"
+> stri_datetime_format(today(), "LLLL", locale="ru@calendar=Ethiopic")
+[1] "Мескерем"
+> stri_datetime_format(today(), "dd MMMM yyyy", locale="ru")
+[1] "05 октября 2017"
+> stri_datetime_format(today(), "LLLL d, yyyy", locale="ru")
+[1] "октябрь 5, 2017"
+```
 - [WordR - A New R Package for Rendering Documents in MS Word Format](https://rviews.rstudio.com/2017/10/04/wordr---a-new-r-package-for-rendering-documents-in-ms-word-format/)
 - [Visualize Baseball with sunburstR](http://timelyportfolio.github.io/sunburstR/example_baseball.html) by Kenton Russell, August 26, 2016
+- COOL!!!! [Understanding sunburstR behaviour](https://stackoverflow.com/questions/37520920/understanding-sunburstr-behaviour)
 
 
 
