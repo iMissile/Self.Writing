@@ -43,6 +43,103 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Data Visualization for Social Science. A practical introduction with R and ggplot2](http://socviz.co/)
 - [Sinew: Simple R Package Documentation](https://metrumresearchgroup.github.io/sinew/)
 
+# 13.10.2017
+## R
+- Разбираемся с ggiraph.
+	- к сожалению, размер картинки задается явно в параметрах `ggiraph`. Это параметры `height_svg` & `width_svg`
+Размер задается в дюймах из расчета 72px/in. Объяснение есть здесь: [resize to fit the page as plotOutput #71 {Closed}](https://github.com/davidgohel/ggiraph/issues/71). Hi,
+It can not be done because plotOutput redraw the raster plot each time the window is resized. ggiraph is an htmlwidget and sizing is specific to each htmlwidget.
+Function ggiraph is provided with arguments width_svg and height_svg, these will define the aspect ration. Then you can use argument width (0 < width < 1) that will be use to scale size of the plot in the html page.
+If you want it to be non responsive, use `use_widget_size` to force usage of htmlwidget width and height.
+	- `data_id` должен быть типа `character`
+- [XML parsing made easy: is that podcast getting longer?](https://nsaunders.wordpress.com/2017/10/12/xml-parsing-made-easy-is-that-podcast-getting-longer/)
+- Бывший JoyPlot: [Introduction to ggridges](https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html)
+- [GitHub Streak: Round Four](http://dirk.eddelbuettel.com/blog/2017/10/12/#github_oct2016_oct2017)
+- COOL! [Simplifying ggplot2 code by doing nothing](https://tjmahr.github.io/ggplot2-how-to-do-nothing/)
+- [assertthat: Easy Pre and Post Assertions](https://cran.r-project.org/web/packages/assertthat/index.html)
+assertthat is an extension to `stopifnot()` that makes it easy to declare the pre and post conditions that you code should satisfy, while also producing friendly error messages so that your users know what they've done wrong.
+- [Recent adventures with lazyeval](https://tjmahr.github.io/recent-adventures-with-lazyeval/)
+- [Repeatedly applying a function](https://tjmahr.github.io/repeatedly-calling-a-function/)
+- [A tour of the tibble package](https://tjmahr.github.io/tibble-package-tour/)
+- [Discover and install useful RStudio addins](https://github.com/daattali/addinslist)
+
+
+# 12.10.2017
+## Shiny
+- [shinyBS. Tooltips and Popovers](http://ebailey78.github.io/shinyBS/docs/Tooltips_and_Popovers.html#bsTooltip)
+- [R Shiny Plot Click with geom bar and facets](https://stackoverflow.com/questions/41654801/r-shiny-plot-click-with-geom-bar-and-facets)
+- [Shiny. Interactive plots - advanced](https://shiny.rstudio.com/articles/plot-interaction-advanced.html)
+
+## HTML
+- Как сделать длинную горизонтальную HTML таблицу скроллируемой.
+	- [HTML table with 100% width, with vertical scroll inside tbody](https://stackoverflow.com/questions/17067294/html-table-with-100-width-with-vertical-scroll-inside-tbody)
+```
+thead, tbody { display: block; }
+
+tbody {
+    height: 100px;       /* Just for the demo          */
+    overflow-y: auto;    /* Trigger vertical scroll    */
+    overflow-x: hidden;  /* Hide the horizontal scroll */
+}
+```
+
+## R
+- COOL! [Prophet Quick Start Guide](https://facebook.github.io/prophet/). Prophet is a procedure for forecasting time series data. It is based on an additive model where non-linear trends are fit with yearly and weekly seasonality, plus holidays. It works best with daily periodicity data with at least one year of historical data. Prophet is robust to missing data, shifts in the trend, and large outliers. Prophet is open source software released by Facebook’s Core Data Science team. It is available for download on CRAN and PyPI.
+- [Prophet Paper](https://peerj.com/preprints/3190/)
+- [library() vs require() in R](https://yihui.name/en/2014/07/library-vs-require/)
+- [rintrojs: Wrapper for the 'Intro.js' Library](https://cran.r-project.org/web/packages/rintrojs/index.html)
+A wrapper for the 'Intro.js' library (For more info: <http://www.introjs.com>). This package makes it easy to include step-by-step introductions, and clickable hints in a 'Shiny' application. It supports both static introductions in the UI, and programmatic introductions from the server-side.
+- Как выгнать содержимое tibble в .md формат? `knitr::kable(df)`. А еще можно подгрузить пакет [`printr`](https://yihui.name/printr/)
+- [Binning Outliers in a Histogram](https://edwinth.github.io/blog/outlier-bin/)
+- Интерактивное расширение ggplot
+	- [davidgohel/ggiraph](https://github.com/davidgohel/ggiraph). htmlwidget to make 'ggplot' graphics interactive http://davidgohel.github.io/ggiraph
+	- [package ggiraphExtra](https://cran.r-project.org/web/packages/ggiraphExtra/vignettes/introduction.html). Package ggiraphExtra contains many useful functions for exploratoty plots. These functions are made by both ‘ggplot2’ and ‘ggiraph’ packages. You can make a static ggplot or an interactive ggplot by setting the parameter interactive=TRUE.
+	- [Introduction to package ggiraphExtra](http://rpubs.com/cardiomoon/231820). Full version.
+- Народ активно двигает в сторону R
+	- [The Impressive Growth of R](https://stackoverflow.blog/2017/10/10/impressive-growth-r/)
+	- [Top Package Downloads in the R Ecosystem](http://redmonk.com/rstephens/2017/10/10/r-package-downloads/)
+	- [R's remarkable growth](http://blog.revolutionanalytics.com/2017/10/rs-remarkable-growth.html)
+- [Comparing smooths in factor-smooth interactions | by-variable smooths](http://www.fromthebottomoftheheap.net/2017/10/10/difference-splines-i/)
+
+# 10.10.2017
+## DS
+- [Mango Solutions presents: The Data Science Radar Challenge](https://www.mango-solutions.com/radar/)
+	- [Мои результаты](https://www.mango-solutions.com/radar/?fs=true&r=3.9,5.5,4.3,3.6,3.3,4.8)
+## R
+- [Changes to Internet Connectivity in R on Windows](https://ropensci.org/blog/technotes/2017/10/10/curl-30)
+- [Using closures as objects in R](http://www.win-vector.com/blog/2015/03/using-closures-as-objects-in-r/)
+- [Lists of functions](http://adv-r.had.co.nz/Functional-programming.html#lists-of-functions)
+- [A wrapper around nested ifelse](https://edwinth.github.io/blog/ifelse-wrapper/)
+- [Question: Nested if-else statement in R](https://www.biostars.org/p/213415/)
+- Shiny
+	- COO-O-O-L подборка! [Awesome R Shiny]https://github.com/grabear/awesome-rshiny)
+	- COOL [shinyEvents: Alternative way to build shiny apps based on event handlers](https://github.com/skranz/shinyEvents)
+	- COOL [merlinoa/shinyFeedback](https://github.com/merlinoa/shinyFeedback). R package for displaying user feedback next to Shiny inputs
+	- COOL. [Appsilon/shiny.semantic](https://github.com/Appsilon/shiny.semantic). Shiny support for powerful Semantic UI library.
+	- [Async programming in R and Shiny](https://medium.com/@joe.cheng/async-programming-in-r-and-shiny-ebe8c5010790) by Joe Cheng
+	- [An informal intro to async Shiny](https://medium.com/@joe.cheng/an-informal-intro-to-async-shiny-cbf01c85c4c5) by Joe Cheng
+	- [rstudio/promises](https://github.com/rstudio/promises). A promise library for R.
+- COOL! [cwickham/munsell](https://github.com/cwickham/munsell) colour system for R. 
+	- [На CRAN](https://cran.r-project.org/web/packages/munsell/index.html)
+	- [Доклад на EARL 2017](https://earlconf.com/downloads/london/presentations/EARL2017_-_London_-_Jonathan_Usmar_-_Visualisations_that_dont_break_the_brand.html)
+	- References
+```
+Methods for creating colour scales:
+Peter Kovesi (2015), Good Colour Maps: How to Design Them, arXiv:1509.03700 http://peterkovesi.com/projects/colourmaps/
+Rudis, Ross & Garnier (2016), The viridis color palettes, https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html
+Munsell colour system:
+Rochester Institute of Technology (visited Sep/2017), Munsell Renotation Data, https://www.rit.edu/cos/colorscience/rc_munsell_renotation.php.
+Newhall, Nickerson & Judd (1943), Final report of the O.S.A Subcommittee on the Spacing of the Munsell Colours, Journal of the Optical Society of America. Vol. 33, Issue 7, pp. 385-418
+```
+- [Choice Models for Product Optimization and Pricing](http://r-marketing.r-forge.r-project.org/slides/EARL-London-Sept2017/EARL-ConjointR-20170914.html)
+	
+
+# 09.10.2017
+## R
+- [IT'S TIBBLETIME V0.0.2: TIME-AWARE TIBBLES, NEW FUNCTIONS, WEATHER ANALYSIS AND MORE](http://www.business-science.io/code-tools/2017/10/08/tibbletime-0-0-2.html)
+- [checkmate: Fast and Versatile Argument Checks](https://cran.r-project.org/web/packages/checkmate/index.html). Tests and assertions to perform frequent argument checks. A substantial part of the package was written in C to minimize any worries about execution time overhead.
+- [checkmate: Fast Argument Checks for Defensive R Programming](https://arxiv.org/pdf/1701.04781)
+
 # 06.10.2017
 ## R
 - Pie chart
@@ -67,6 +164,8 @@ https://www.crowdgames.ru/page/plany-crowd-games
 	- [Tidy evaluation programming and ggplot2](https://stackoverflow.com/questions/44548819/tidy-evaluation-programming-and-ggplot2). Quo list of groupping
 	- [Define aesthetic mappings programatically](http://ggplot2.tidyverse.org/reference/aes_.html)
 	- [dplyr and ggplot in a function: use reorder in aes function](https://stackoverflow.com/questions/35933199/dplyr-and-ggplot-in-a-function-use-reorder-in-aes-function)
+	- [R/ggplot2 tip: aes_string](https://nsaunders.wordpress.com/2013/02/26/rggplot2-tip-aes_string/)
+	- COOL! [How do I combine aes() and aes_string() options](https://stackoverflow.com/questions/28777626/how-do-i-combine-aes-and-aes-string-options)
 - [Using purrr::map and forcats::fct_reorder to reorder factor levels by each subgroup](https://stackoverflow.com/questions/44423712/using-purrrmap-and-forcatsfct-reorder-to-reorder-factor-levels-by-each-subgr)
 
 # 05.10.2017
@@ -1036,7 +1135,7 @@ datatable(a) %>%
 - [pkgdown](https://hadley.github.io/pkgdown/). pkgdown is designed to make it quick and easy to build a website for your package. You can see pkgdown in action at http://hadley.github.io/pkgdown/: this is the output of pkgdown applied to the latest version of pkgdown. Learn more in `vignette("pkgdown")` or `?build_site`.
 - [vtreat](https://winvector.github.io/vtreat/) is an R data.frame processor/conditioner that prepares real-world data for predictive modeling in a statistically sound manner. For more detail please see here: [arXiv:1611.09477](https://arxiv.org/abs/1611.09477) stat.AP. There is also a series of articles recording the evolution of vtreat including some tutorials here.
 - [Scripting for data analysis (with R)](https://martinsbioblogg.wordpress.com/2017/07/30/scripting-for-data-analysis-with-r/). [Course materials](https://github.com/mrtnj/scripting_for_data_analysis)
-- [hadley/pryr](https://github.com/hadley/pryr). Pryr open the covers of R. pryr provides tools to pry back the surface of R and dig into the details. It has been developed in conjunction with "Advanced R programming" to make it easier to understand what's going on in R.
+- [hadley/pryr](https://github.com/hadley/pryr). Pryr open the covers of R. pryr provides tools to pry back the surface of R and dig into the details. It has been developed in conjunction with "Advanced R programming" to make it easier to understand what's going on in R. Содержит `object_size()`
 - [ggplot2 - Easy way to mix multiple graphs on the same page](http://www.sthda.com/english/wiki/ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page)
 - [Working with legends](https://cran.r-project.org/web/packages/lemon/vignettes/legends.html) by Stefan McKinnon Edwards sme@iysik.com, 2017-05-22. Показ макета: `gtable_show_names(d2)`
 - R & MSSQL
