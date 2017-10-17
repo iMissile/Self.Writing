@@ -4,6 +4,7 @@
 - [AppSales. Best Android apps on Sale](https://www.app-sales.net)
 - [AppTime. Games & Gadgets](http://app-time.ru/)
 - [Appsylum](http://appsylum.com/). Find Discuss & Support the Apps You Love
+- [ReservoContext: поисковая система для переводов в контексте](http://context.reverso.net)
 
 https://www.filmpro.ru/materials/57202
 
@@ -43,8 +44,42 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Data Visualization for Social Science. A practical introduction with R and ggplot2](http://socviz.co/)
 - [Sinew: Simple R Package Documentation](https://metrumresearchgroup.github.io/sinew/)
 
-# 13.10.2017
+# 17.10.2017
 ## R
+- [Data acquisition in R (1/4)](https://ikashnitsky.github.io/2017/data-acquisition-one/)
+- [colourpicker package v1.0: You can now select semi-transparent colours in R (& more!)](http://deanattali.com/blog/colourpicker-update-alpha/)
+- [Announcing RStudio Professional Drivers](https://blog.rstudio.com/2017/10/16/announcing-rstudio-professional-drivers/)
+- [SALES ANALYTICS: HOW TO USE MACHINE LEARNING TO PREDICT AND OPTIMIZE PRODUCT BACKORDERS](http://www.business-science.io/business/2017/10/16/sales_backorder_prediction.html)
+- [Why Use Docker with R? A DevOps Perspective](https://www.opencpu.org/posts/opencpu-with-docker/)
+- [Webscraping in R](https://rpubs.com/ryanthomas/webscraping-with-rvest) by Ryan Thomas, March 15, 2017
+- [Using 'rvest' to extract links](https://stackoverflow.com/questions/35247033/using-rvest-to-extract-links)
+
+# 16.10.2017
+## R API
+- [](http://code.markedmondson.me/4-ways-schedule-r-scripts-on-google-cloud-platform/)
+- [](http://blog.learningtree.com/creating-web-service-in-r/)
+- [](https://www.rplumber.io/docs/hosting.html#docker-advanced)
+- [](https://earlconf.com/downloads/london/presentations/EARL2017_-_London_-_Tom_Liptrot_-_A_car_sales_machine_learning_API.pdf)
+
+## R
+- COOL! [.rprofile: David Smith](https://ropensci.org/blog/blog/2017/10/13/rprofile-david-smith)
+- [The Bold & Beautiful Character Similarities using Word Embeddings](https://longhowlam.wordpress.com/2017/10/12/the-bold-beautiful-character-similarities-using-word-embeddings/)
+- [Rick and Morty and Tidy Data Principles](http://pacha.hk/2017-10-13_rick_and_morty_tidy_data.html)
+- [Putting the cat in scatterplot](https://www.mango-solutions.com/blog/putting-the-cat-in-scatterplot)
+- COOL! [purrr 0.2.3](https://www.tidyverse.org/articles/2017/08/purrr-0.2.3/)
+- [Bind rows of data frames with some factor columns](https://stackoverflow.com/questions/42278020/bind-rows-of-data-frames-with-some-factor-columns)
+
+# 13.10.2017
+- Перевод термина [Реальный сектор экономики](https://rus.proz.com/kudoz/russian_to_english/economics/2554043-%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%81%D0%B5%D0%BA%D1%82%D0%BE%D1%80_%D1%8D%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B8.html)
+
+## R
+- [Installing package from GitLab with devtools::install_git through a proxy throws 'Installation failed: Error in 'git2r_clone'' error](https://stackoverflow.com/questions/40979332/installing-package-from-gitlab-with-devtoolsinstall-git-through-a-proxy-throws)
+- [Testing R package with GitLab CI (with code coverage)](https://gist.github.com/artemklevtsov/785ed0472c167246e947a75216852e10)
+- [gitlabr: Access to the Gitlab API](https://cran.r-project.org/web/packages/gitlabr/index.html)
+Provides R functions to access the API of the project and repository management web application gitlab. For many common tasks (repository file access, issue assignment and status, commenting) convenience wrappers are provided, and in addition the full API can be used by specifying request locations. Gitlab is open-source software and can be self-hosted or used on gitlab.com.
+- [timevis](https://daattali.com/shiny/timevis-demo/). An R package for creating timeline visualizations by Dean Attali
+- [daheelee/timelineS](https://github.com/daheelee/timelineS). R package 'timelineS'
+- [Building Widgets. one a week because one a month is not enough](http://www.buildingwidgets.com/blog/2015/4/14/week-15-listviewer)
 - Разбираемся с ggiraph.
 	- к сожалению, размер картинки задается явно в параметрах `ggiraph`. Это параметры `height_svg` & `width_svg`
 Размер задается в дюймах из расчета 72px/in. Объяснение есть здесь: [resize to fit the page as plotOutput #71 {Closed}](https://github.com/davidgohel/ggiraph/issues/71). Hi,
@@ -62,7 +97,21 @@ assertthat is an extension to `stopifnot()` that makes it easy to declare the pr
 - [Repeatedly applying a function](https://tjmahr.github.io/repeatedly-calling-a-function/)
 - [A tour of the tibble package](https://tjmahr.github.io/tibble-package-tour/)
 - [Discover and install useful RStudio addins](https://github.com/daattali/addinslist)
-
+- Asterisk
+	- [Asterisk CDR Viewer Mod](http://prog-it.github.io/Asterisk-CDR-Viewer-Mod/). Simple and fast viewer for Asterisk CDRs and Recordings
+	- [Asterisk Call Center Stats](https://asterisk-pbx.ru/wiki/soft/call_center/asternic-call-center-stats)
+	- [Asterisk 13 AMI Events](https://wiki.asterisk.org/wiki/display/AST/Asterisk+13+AMI+Events)
+	- [Asterisk Versions](https://wiki.asterisk.org/wiki/display/AST/Asterisk+Versions)
+- [jimhester/lintr](https://github.com/jimhester/lintr). Static Code Analysis for R.
+	- [Lintr integration with RStudio](https://community.rstudio.com/t/lintr-integration-with-rstudio/1807)
+```
+library(lintr)
+lintr::lint(path_to_script)
+```
+Rstudio should open up a “markers” tab.
+- COOL! [Automatic tools for improving R packages](http://www.masalmon.eu/2017/06/17/automatictools/). Тут и про lintr
+- [Creating new linters. In lintr: A 'Linter' for R Code](https://rdrr.io/cran/lintr/f/vignettes/creating_linters.Rmd)ggers
+- [Hadley Wickham’s R Style Guide](http://r-pkgs.had.co.nz/style.html)
 
 # 12.10.2017
 ## Shiny
@@ -514,6 +563,7 @@ A few months ago rOpenSci’s Scott Chamberlain asked me for feedback about a ne
 	- [Converting robjhyndman to blogdown](https://support.rbind.io/2017/05/15/converting-robjhyndman-to-blogdown/)
 	- [Karl Broman’s blog](http://kbroman.org/blog/)
 - [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas, Alison Presmanes Hill
+- [Up and running with blogdown](https://apreshill.rbind.io/post/up-and-running-with-blogdown/) by ALISON PRESMANES HILL
 
 
 # 11.09.2017
