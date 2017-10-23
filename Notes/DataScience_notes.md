@@ -5,6 +5,13 @@
 - [AppTime. Games & Gadgets](http://app-time.ru/)
 - [Appsylum](http://appsylum.com/). Find Discuss & Support the Apps You Love
 - [ReservoContext: поисковая система для переводов в контексте](http://context.reverso.net)
+# LEGO
+- ["Выбери Кубик". Интернет-магазин деталей ЛЕГО](http://vyberi-kubik.ru/)
+- [KinderMix. Игрушки и конструкторы ЛЕГО](http://kindermix.ru/individual-bricks.html?themes=66). Детальки
+- [http://ebricks.ru/](http://ebricks.ru/)
+- [Детальки](https://www.exoforce.ru/razdely/detali-lego)
+- [Lego projects](https://www.lego-projects.ru/lego-education/lego-education-ev3/168-lego-technic-ev3)
+- [Интернет-магазин спортивной и образовательной робототехники](https://www.angl-bricks.ru/lego-education-16#/kategorii-lego_ev3)
 
 https://www.filmpro.ru/materials/57202
 
@@ -40,9 +47,67 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - COOL e-book!. [Functional programming and unit testing for data munging with R](https://b-rodrigues.github.io/fput/) by Bruno Rodrigues
 - [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas, Alison Presmanes Hill
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/) by Yihui Xie
+- [Efficient R programming](https://bookdown.org/csgillespie/efficientR/)
+- [R Manuals as bookdown](http://colinfay.me/r-manuals/). You’ll find here a list of the R manuals converted to bookdown.
 - [Processing and Analyzing Financial Data with R](https://sites.google.com/view/pafdR/home)
 - [Data Visualization for Social Science. A practical introduction with R and ggplot2](http://socviz.co/)
 - [Sinew: Simple R Package Documentation](https://metrumresearchgroup.github.io/sinew/)
+
+# 23.10.2017
+## R
+- Unit testing
+	- COOL! [usethis](https://github.com/r-lib/usethis). The goal of usethis is to automate many common package and analysis setup tasks.
+	- [An R to make testing](https://github.com/r-lib/testthat)
+	- Здесь описано как тестировать просто функции без пакетов. [Testing your code]http://nicercode.github.io/2014-02-13-UNSW/lessons/45-testing/)
+	- [Writing tests](http://kbroman.org/pkg_primer/pages/tests.html)
+	- [Example of unit testing R code with testthat](https://www.johndcook.com/blog/2013/06/12/example-of-unit-testing-r-code-with-testthat/)
+	- [How to write good tests in R](https://cartesianfaith.com/2016/06/30/how-to-write-good-tests-in-r/)
+- [vdiffr: Visual Regression Testing and Graphical Diffing](https://cran.r-project.org/web/packages/vdiffr/index.html). 
+An extension to the 'testthat' package that makes it easy to add graphical unit tests. It provides a Shiny application to manage the test cases.
+- [A Call to Tweets (& Blog Posts)!](https://rud.is/b/2017/10/22/a-call-to-tweets-blog-posts/)
+- [An Updated History of R](http://blog.revolutionanalytics.com/2017/10/updated-history-of-r.html)
+
+# 20.10.2017
+## Python
+- [Introduction to the Python Interpreter, Part 3: Understanding Bytecode](http://akaptur.com/blog/2013/11/17/introduction-to-the-python-interpreter-3/)
+
+## R
+- R Packages
+Файл DESCRIPTION крайне важен. Обязательно заполнять поля Author, URL!!!
+	- [Developing Packages with RStudio](https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio)
+	- [Making Your First R Package](http://tinyheero.github.io/jekyll/update/2015/07/26/making-your-first-R-package.html)
+	**Never use `library()` or `require()` in a R package!**
+	- [Automating roxygen2 package documentation](https://yonicd.github.io/2017-09-18-sinew/). Take the mystery out of CRAN level package maintenance
+- [Ensemble learning for time series forecasting in R](https://petolau.github.io/Ensemble-of-trees-for-forecasting-time-series/)
+- [Database Queries With R](https://rviews.rstudio.com/2017/10/18/database-queries-with-r/)
+	- [Improving DBI: A Retrospect](https://www.r-consortium.org/blog/2017/05/15/improving-dbi-a-retrospect) By josephrickertMay 15, 2017. R Consortium Project
+- [R Manuals as bookdown](http://blog.revolutionanalytics.com/2017/10/r-manuals-bookdown.html)
+	- [R Manuals as bookdown](http://colinfay.me/r-manuals/)
+
+# 19.10.2017
+## R
+- COOL! [When Are Citi Bikes Faster Than Taxis in New York City?](http://toddwschneider.com/posts/taxi-vs-citi-bike-nyc/)
+- WebScrapping
+	- [Extract data from Private Github Repository with REST API](https://blog.exploratory.io/extract-data-from-private-github-repository-with-rest-api-db804fa43d84)
+	- [Extract Links from Webpage using R](https://stackoverflow.com/questions/3746256/extract-links-from-webpage-using-r)
+	- [Scrape password-protected website in R](https://stackoverflow.com/questions/24723606/scrape-password-protected-website-in-r)
+	- [R - RCurl scrape data from a password-protected site](https://stackoverflow.com/questions/24049701/r-rcurl-scrape-data-from-a-password-protected-site)
+- RSelenium
+	- [ropensci/RSelenium](https://github.com/ropensci/RSelenium)
+	- [RSelenium: R Bindings for 'Selenium WebDriver'](https://cran.r-project.org/web/packages/RSelenium/index.html)
+	- [rselenium tutorial](https://ropensci.org/tutorials/rselenium_tutorial.html)
+	- [RSelenium - Introduction. Orange County R User Group](http://johndharrison.github.io/RSOCRUG/#1)
+	- [RSelenium: A wonderful tool for web scraping](https://fordoxblog.wordpress.com/2016/09/11/rselenium-a-wonderful-tool-for-web-scraping/)
+- [How to scrape a website that requires login with Python](http://kazuar.github.io/scraping-tutorial/). Тут есть кусочек как заполнять формы через Selenium.
+- А тут есть скраппинг через `rvest`: [Scraping password protected forum in r](http://kazuar.github.io/scraping-tutorial/)
+- COOL! [How to drive a Web browser with R (and RSelenium)](https://www.computerworld.com/article/2971265/application-development/how-to-drive-a-web-browser-with-r-and-rselenium.html)
+- COOL! хорошая табличка-документация. [Selenium-WebDriver API Commands and Operations](http://www.seleniumhq.org/docs/03_webdriver.jsp#selenium-webdriver-api-commands-and-operations)
+
+# 18.10.2017
+## R
+- [Bio7 2.6 for Windows and Linux Released](http://bio7.org/?p=2930)
+- [7 INTERACTIVE BIOINFORMATICS PLOTS MADE IN PYTHON AND R](https://moderndata.plot.ly/bioinformatics-plots-made-in-python-and-r/)
+- COOL! [Writing Julia functions in R with examples](https://insightr.wordpress.com/2017/10/18/writing-julia-functions-in-r-with-examples/)
 
 # 17.10.2017
 ## R
@@ -65,6 +130,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - COOL! [.rprofile: David Smith](https://ropensci.org/blog/blog/2017/10/13/rprofile-david-smith)
 - [The Bold & Beautiful Character Similarities using Word Embeddings](https://longhowlam.wordpress.com/2017/10/12/the-bold-beautiful-character-similarities-using-word-embeddings/)
 - [Rick and Morty and Tidy Data Principles](http://pacha.hk/2017-10-13_rick_and_morty_tidy_data.html)
+- [Rick and Morty and Tidy Data Principles (Part 2)](http://pacha.hk/2017-10-22_rick_and_morty_tidy_data_2.html)
 - [Putting the cat in scatterplot](https://www.mango-solutions.com/blog/putting-the-cat-in-scatterplot)
 - COOL! [purrr 0.2.3](https://www.tidyverse.org/articles/2017/08/purrr-0.2.3/)
 - [Bind rows of data frames with some factor columns](https://stackoverflow.com/questions/42278020/bind-rows-of-data-frames-with-some-factor-columns)
@@ -169,7 +235,8 @@ A wrapper for the 'Intro.js' library (For more info: <http://www.introjs.com>). 
 	- [An informal intro to async Shiny](https://medium.com/@joe.cheng/an-informal-intro-to-async-shiny-cbf01c85c4c5) by Joe Cheng
 	- [rstudio/promises](https://github.com/rstudio/promises). A promise library for R.
 - COOL! [cwickham/munsell](https://github.com/cwickham/munsell) colour system for R. 
-	- [На CRAN](https://cran.r-project.org/web/packages/munsell/index.html)
+	- [munsell: Utilities for Using Munsell Colours](https://cran.r-project.org/web/packages/munsell/index.html)
+Provides easy access to, and manipulation of, the Munsell colours. Provides a mapping between Munsell's original notation (e.g. "5R 5/10") and hexadecimal strings suitable for use directly in R graphics. Also provides utilities to explore slices through the Munsell colour tree, to transform Munsell colours and display colour palettes.
 	- [Доклад на EARL 2017](https://earlconf.com/downloads/london/presentations/EARL2017_-_London_-_Jonathan_Usmar_-_Visualisations_that_dont_break_the_brand.html)
 	- References
 ```
@@ -472,6 +539,16 @@ function (x, value)
       80      mutate_at(vars(est_cost_entry), as.integer) %>%
       81      # исключим нулевые затраты и промежуточные подытоги
       82      # filter_at(vars(est_cost, cost_element), any_vars(is.na(.))) %>%
+```
+Убираем колонки, содержащие только NA:
+```
+df2 %>% select_if(function(v){!all(is.na(v))})
+df2 %>% select_if(function(v){any(!is.na(v))})
+```
+- [How to delete columns that contain ONLY NAs?](https://stackoverflow.com/questions/15968494/how-to-delete-columns-that-contain-only-nas/33487315)
+Here is a dplyr solution:
+```
+df %>% select_if(~sum(!is.na(.)) > 0)
 ```
 
 # 18.09.2017
@@ -1491,6 +1568,25 @@ July 12, 2016
 - [devtools](https://cran.r-project.org/web/packages/devtools/README.html)
 Возникают вопросы о том, откуда взять и как записать SHA в DESCRIPTION. Похожий вопрос на SoF: 
  - [Programmatically set fields in DESCRIPTION file for R package](https://stackoverflow.com/questions/44871619/programmatically-set-fields-in-description-file-for-r-package)
+- Как посмотреть commit hash в консоли? [How to retrieve the hash for the current commit in Git?](https://stackoverflow.com/questions/949314/how-to-retrieve-the-hash-for-the-current-commit-in-git)
+```
+
+To get the full SHA:
+$ git rev-parse HEAD
+cbf1b9a1be984a9f61b79a05f23b19f66d533537
+To get the shortened version:
+$ git rev-parse --short HEAD
+cbf1b9a
+```
+Или так
+```
+Commit hash
+git show -s --format=%H
+Abbreviated commit hash
+git show -s --format=%h
+Click here for more git show examples.
+```
+
 Что надо делать с пользовательскими пакетами? 
 1. на клиентской машине ставим пакет из репозитория с помощью `devtools::install_github()`.
 2. devtools прописывает в DESCRIPTION установленного пакета SHA, берем его и используем для [переименования исходников пакета](https://support.rstudio.com/hc/en-us/articles/226871467-Package-management-in-RStudio-Connect).
@@ -4101,9 +4197,11 @@ To check whether each string consists of valid UTF-8 byte sequences, call: `all(
 	- [How to scrape all the hotel reviews from HolidayIQ using Rvest and phantomJS](http://stackoverflow.com/questions/36152621/how-to-scrape-all-the-hotel-reviews-from-holidayiq-using-rvest-and-phantomjs)
 
 ## RSelenium
-1. Качаем Selenium
+1. Качаем Selenium. Берем `selenium-server-standalone-x.x.x` с сайта [Selenium Downloads](http://www.seleniumhq.org/download/)
 1. Качаем RSelenium: `devtools::install_github("ropensci/RSelenium")`
-1. Качаем WebDriver, кладем в PATH (лучше рядом). [ChromeDriver - WebDriver for Chrome](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+1. Качаем WebDriver, кладем в PATH (лучше рядом). 
+	- [ChromeDriver - WebDriver for Chrome](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+	- [Mozilla GeckoDriver](https://github.com/mozilla/geckodriver/releases)
 1. Запускаем `remDr <- remoteDriver(browserName = "chrome")`, описание здесь:[RSelenium: Driving OS/Browsers local and remote](https://cran.r-project.org/web/packages/RSelenium/vignettes/RSelenium-saucelabs.html)
 
 ## Google

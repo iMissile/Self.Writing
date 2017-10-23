@@ -1326,4 +1326,98 @@ install.packages(pkgs_needed)
 5. Создадим админа по умолчанию: http://10.0.0.183:3939 radmin:radmin, внешняя почта
 6. При создании нового аккаунта в IDE указываем адрес сервера с портом.
 7. Посмотрим лог сервера. The RStudio Connect server log is located at `/var/log/rstudio-connect.log`. This file is owned by root with permissions 0600.
-8. Акутализируем настройки коннекта с Java командой `sudo R CMD javareconf`.
+8. Актуализируем настройки коннекта с Java командой `sudo R CMD javareconf`.
+
+# Изменение переменных окружения для скриптов
+- Изменение переменных окружения на сервере linux
+```
+vi /etc/environment
+R_CONFIG_ACTIVE=media-tel
+source /etc/environment
+echo $R_CONFIG_ACTIVE
+sudo systemctl restart rstudio-connect
+```
+- Управление конфигурационными файлами в пакете `config`: [Configurations](https://github.com/rstudio/config)
+You can specify which configuration is currently active by setting the `R_CONFIG_ACTIVE` environment variable. The `R_CONFIG_ACTIVE` variable is typically set within a site-wide `Renviron` or `Rprofile` (see R Startup for details on these files).
+- В случае с RStudio Connect `R_CONFIG_ACTIVE` задается в файле `find / -type f -name Rprofile`, файл находится здесь: `/usr/lib64/R/library/base/R/Rprofile`
+`find / -type f -name Renviron`, файл найден здесь: `/usr/lib64/R/etc/Renviron`
+- RStudio Connect переопределяет значение `R_CONFIG_ACTIVE`. Место найдено путем поиска по файлам из директории `cd /opt/rstudio-connect/`.
+Запускаем команду `grep -R R_CONFIG_ACTIVE *`
+Ответ находим в мануале RStudio Connect: [12.8 Using the config Package](http://docs.rstudio.com/connect/admin/process-management.html#using-the-config-package)
+```
+The config package makes it easy to manage environment specific configuration values in R code. For example, you might want to use one value for a variable locally, and another value when deployed on RStudio Connect. The package vignette contains more information.
+
+The desired configuration is identified to the config package by the R_CONFIG_ACTIVE environment variable. By default, R processes launched by RStudio Connect set R_CONFIG_ACTIVE to rsconnect. The value can be changed by modifying the Applications.RConfigActive configuration setting. Note that the value of R_CONFIG_ACTIVE is not available during package installation.
+```
+Меняем значение параметра `Applications.RConfigActive` в файле `/etc/rstudio-connect/rstudio-connect.gcfg`:
+```
+[Applications]
+RConfigActive = media-tel
+```
+
+## Автономная работа R
+- Инструкция от Микрософт. [Create a Local Package Repository Using miniCRAN](https://docs.microsoft.com/en-us/sql/advanced-analytics/r/create-a-local-package-repository-using-minicran)
+- [How to install R packages on an off-line SQL Server 2016 instance](http://blog.revolutionanalytics.com/2016/05/minicran-sql-server.html)
+- R Startup
+	- [R for Enterprise: Understanding R’s Startup](https://rviews.rstudio.com/2017/04/19/r-for-enterprise-understanding-r-s-startup/)
+	- [Rprofile — кастомизируем рабочее окружение](http://aakinshin.net/ru/blog/post/r-rprofile/)
+	- [Efficient R programming. R startup](https://csgillespie.github.io/efficientR/3-3-r-startup.html#r-startup)
+	- [Fun with .Rprofile and customizing R startup](http://www.onthelambda.com/2014/09/17/fun-with-rprofile-and-customizing-r-startup/)
+	- [locate the “.Rprofile” file generating default options](https://stackoverflow.com/questions/13735745/locate-the-rprofile-file-generating-default-options)
+```
+You could run the following to list existing files on your system among those listed on the page:
+
+candidates <- c( Sys.getenv("R_PROFILE"),
+                 file.path(Sys.getenv("R_HOME"), "etc", "Rprofile.site"),
+                 Sys.getenv("R_PROFILE_USER"),
+                 file.path(getwd(), ".Rprofile") )
+```
+- [R Installation and Administration. 6.6 Setting up a package repository](https://cran.r-project.org/doc/manuals/R-admin.html#Setting-up-a-package-repository)
+- local CRAN-like repository
+	- [Using miniCRAN to create a local CRAN repository](https://cran.r-project.org/web/packages/miniCRAN/vignettes/miniCRAN-introduction.html)
+	- [Using repositories other than CRAN with miniCRAN](https://cran.r-project.org/web/packages/miniCRAN/vignettes/miniCRAN-non-CRAN-repos.html)
+	- [How to Set Up a Custom CRAN-like Repository](https://rstudio.github.io/packrat/custom-repos.html)
+	- Пакет для выбора репозиториев: [setRepositories {utils}](https://stat.ethz.ch/R-manual/R-devel/library/utils/html/setRepositories.html)
+- [RStudio Connect. Package Management. 13.2 Private Repositories](http://docs.rstudio.com/connect/admin/index.pdf#page42)
+	- [Process management in RStudio Connect](https://support.rstudio.com/hc/en-us/articles/226871847-Process-management-in-RStudio-Connect)
+	- [Для последней версии Connect](http://docs.rstudio.com/connect/admin/package-management.html)
+	- [Deploying connect app with private repository](https://support.rstudio.com/hc/en-us/community/posts/115001095768-Deploying-connect-app-with-private-repository)
+	- [Package management in RStudio Connect](https://support.rstudio.com/hc/en-us/articles/226871467-Package-management-in-RStudio-Connect)
+	- [Package Management for Offline RStudio Connect Installations](https://support.rstudio.com/hc/en-us/articles/115006298728-Package-Management-for-Offline-RStudio-Connect-Installations)
+	- [R not reading Rprofile.site at startup](https://superuser.com/questions/891127/r-not-reading-rprofile-site-at-startup). Смотрим из консоли командой `R RHOME`
+`/usr/lib64/R/library/base/R/Rprofile` -- system Rprofile
+	- [Problem Installing Packages](https://support.rstudio.com/hc/en-us/articles/200554786-Problem-Installing-Packages)
+
+
+- [How to select a CRAN mirror in R](https://stackoverflow.com/questions/11488174/how-to-select-a-cran-mirror-in-r)
+- [Installing packages without the internet](https://www.mango-solutions.com/blog/installing-packages-without-the-internet)
+- [How to Set Up a Custom CRAN-like Repository](https://rstudio.github.io/packrat/custom-repos.html)
+Andrie de Vries and Alex Chubaty
+July 12, 2016
+- [devtools](https://cran.r-project.org/web/packages/devtools/README.html)
+Возникают вопросы о том, откуда взять и как записать SHA в DESCRIPTION. Похожий вопрос на SoF: 
+ - [Programmatically set fields in DESCRIPTION file for R package](https://stackoverflow.com/questions/44871619/programmatically-set-fields-in-description-file-for-r-package)
+- Как посмотреть commit hash в консоли? [How to retrieve the hash for the current commit in Git?](https://stackoverflow.com/questions/949314/how-to-retrieve-the-hash-for-the-current-commit-in-git)
+```
+
+To get the full SHA:
+$ git rev-parse HEAD
+cbf1b9a1be984a9f61b79a05f23b19f66d533537
+To get the shortened version:
+$ git rev-parse --short HEAD
+cbf1b9a
+```
+Или так
+```
+Commit hash
+git show -s --format=%H
+Abbreviated commit hash
+git show -s --format=%h
+Click here for more git show examples.
+```
+
+Что надо делать с пользовательскими пакетами? 
+1. на клиентской машине ставим пакет из репозитория с помощью `devtools::install_github()`.
+2. devtools прописывает в DESCRIPTION установленного пакета SHA, берем его и используем для [переименования исходников пакета](https://support.rstudio.com/hc/en-us/articles/226871467-Package-management-in-RStudio-Connect).
+3. Помещаем этот файл в соотв. ветку в `Server.SourcePackageDir`
+
