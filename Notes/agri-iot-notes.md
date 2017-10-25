@@ -357,7 +357,7 @@ location / {
   log_dir /var/log/shiny-server/;
 }
 ```
-- Краткая статья про логи: [Shiny Server Error Logs](https://support.rstudio.com/hc/en-us/articles/115003717168-Shiny-Server-Error-Logs)
+- Как запретить удалять логи приложений. Краткая статья про логи: [Shiny Server Error Logs](https://support.rstudio.com/hc/en-us/articles/115003717168-Shiny-Server-Error-Logs)
 You can override this behavior using the `preserve_logs` configuration option. If you set `preserve_logs true`; in your configuration file, Shiny Server will never delete the logs from your R processes, regardless of their exit code.
 - [Troubleshooting applications in Shiny Server Pro](https://support.rstudio.com/hc/en-us/articles/220315848-Troubleshooting-applications-in-Shiny-Server-Pro)
 Ответ: `preserve_logs` надо ставить на top level. После запуска видно, что не хватает прав создать файл логгера приложения.
@@ -1327,6 +1327,7 @@ install.packages(pkgs_needed)
 6. При создании нового аккаунта в IDE указываем адрес сервера с портом.
 7. Посмотрим лог сервера. The RStudio Connect server log is located at `/var/log/rstudio-connect.log`. This file is owned by root with permissions 0600.
 8. Актуализируем настройки коннекта с Java командой `sudo R CMD javareconf`.
+9. Местоположение и назначение логов Connect описаны в [4 Files & Directories](http://docs.rstudio.com/connect/1.4.0/admin/files-directories.html)
 
 # Изменение переменных окружения для скриптов
 - Изменение переменных окружения на сервере linux
@@ -1419,5 +1420,15 @@ Click here for more git show examples.
 Что надо делать с пользовательскими пакетами? 
 1. на клиентской машине ставим пакет из репозитория с помощью `devtools::install_github()`.
 2. devtools прописывает в DESCRIPTION установленного пакета SHA, берем его и используем для [переименования исходников пакета](https://support.rstudio.com/hc/en-us/articles/226871467-Package-management-in-RStudio-Connect).
-3. Помещаем этот файл в соотв. ветку в `Server.SourcePackageDir`
+3. Помещаем этот файл в соотв. ветку в `Server.SourcePackageDir`. Подробно про этот параметр читаем здесь: [A Configuration Options](http://docs.rstudio.com/connect/admin/appendix-configuration.html). Папку для пакетов необходимо создать, иначе Connect не стартует.
 
+Распаковали пакет
+tar zxvf 42c592db2eaec99492cff6dc22e6b4df37776472.tar.gz 
+Зашли внутрь и пересобрали
+cd /<внутрь>
+tar zcvf ../42c592db2eaec99492cff6dc22e6b4df37776472.tar.gz *
+Посмотрели содержимое
+tar ztvf 42c592db2eaec99492cff6dc22e6b4df37776472.tar.gz
+Удалили содержание (всю директорию)
+rm -rf <dir>
+Работаем с .tar.gz в Windows: [IZArc is the easiest way to Zip, Unzip and Encrypt files for free](http://www.izarc.org/)

@@ -52,9 +52,41 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Processing and Analyzing Financial Data with R](https://sites.google.com/view/pafdR/home)
 - [Data Visualization for Social Science. A practical introduction with R and ggplot2](http://socviz.co/)
 - [Sinew: Simple R Package Documentation](https://metrumresearchgroup.github.io/sinew/)
+- [The R Inferno](http://www.burns-stat.com/pages/Tutor/R_inferno.pdf)
+
+# 25.10.2017
+## R
+- `case_when` inside:
+	- [Lesser known dplyr 0.7* tricks](http://www.brodrigues.co/blog/2017-06-19-dplyr-0-70-tutorial/)
+	- COOL! комментарий Хадли "Just use case_when()". [Does anybody else find the difference between dplyr::case_when and purrr::when a bit confusing?](https://twitter.com/expersso/status/882615805564911616)
+	- [It's `if_else` statements all the way down...](http://www.machinegurning.com/rstats/case_when/)
+- [Extending slackr](https://yonicd.netlify.com/post/slackr/). Posted on October 25, 2017
+- [jsTree htmlwidget](https://yonicd.netlify.com/post/jstree/). Posted on October 24, 2017
+- COOL! [Machine Learning Explained: Kmeans](http://enhancedatascience.com/2017/10/24/machine-learning-explained-kmeans/)
+- COOL! [Create editable Microsoft Office charts from R](http://blog.revolutionanalytics.com/2017/10/office-charts.html)
+
+
+# 24.10.2017
+## R
+- [Split code over multiple lines in an R script](https://stackoverflow.com/questions/6329962/split-code-over-multiple-lines-in-an-r-script)
+- Хорошая публикация-пояснение. [Loading R Packages: library() or require()?](http://geraldbelton.com/loading-r-packages-library-or-require/)
+- [R: use magrittr pipe operator in self written package](https://stackoverflow.com/questions/27947344/r-use-magrittr-pipe-operator-in-self-written-package). Кроме нижеуказанного, есть еще нюансы
+```
+It should have worked correctly if you had magrittr listed in Depends. However, this is not advised. Instead, you leave magrittr in Imports and add the following line to NAMESPACE:
+
+importFrom(magrittr,"%>%")
+I suggest reading Writing R extensions. Your question is covered in paragraphs 1.1.3 and 1.5.1.
+If you're using roxygen2, you could add #' @importFrom magrittr "%>%" to have NAMESPACE populated automatically during roxygenize().
+```
+
+- [Who knew likelihood functions could be so pretty?](https://www.rdatagen.net/post/mle-can-be-pretty/)
+- [The SeaClass R Package](https://rviews.rstudio.com/2017/10/23/the-seaclass-r-package/)
 
 # 23.10.2017
 ## R
+- Как работать с .../dot/ellipses в R?
+	- [How to use R's ellipsis feature when writing your own function?](https://stackoverflow.com/questions/3057341/how-to-use-rs-ellipsis-feature-when-writing-your-own-function)
+
 - Unit testing
 	- COOL! [usethis](https://github.com/r-lib/usethis). The goal of usethis is to automate many common package and analysis setup tasks.
 	- [An R to make testing](https://github.com/r-lib/testthat)
@@ -1527,6 +1559,7 @@ DataTables does not come with column filters by default. It only provides a glob
 	- [gfortran installer for Mac OS X](https://gcc.gnu.org/wiki/GFortranBinariesMacOS)
 
 ## Автономная работа R
+- COOL. 20017 год! [Managing Private R Packages with Packrat and MiniCRAN](http://ellisvalentiner.com/post/2017-09-24-packrat-minicran/)
 - Инструкция от Микрософт. [Create a Local Package Repository Using miniCRAN](https://docs.microsoft.com/en-us/sql/advanced-analytics/r/create-a-local-package-repository-using-minicran)
 - [How to install R packages on an off-line SQL Server 2016 instance](http://blog.revolutionanalytics.com/2016/05/minicran-sql-server.html)
 - R Startup
@@ -1591,6 +1624,18 @@ Click here for more git show examples.
 1. на клиентской машине ставим пакет из репозитория с помощью `devtools::install_github()`.
 2. devtools прописывает в DESCRIPTION установленного пакета SHA, берем его и используем для [переименования исходников пакета](https://support.rstudio.com/hc/en-us/articles/226871467-Package-management-in-RStudio-Connect).
 3. Помещаем этот файл в соотв. ветку в `Server.SourcePackageDir`
+- Ошибка "Unable to retrieve package records for the following packages", описание в [Deploying connect app with private repository](https://support.rstudio.com/hc/en-us/community/posts/115001095768-Deploying-connect-app-with-private-repository)
+```
+
+This specific forum is generally for issues with the open source version of the RStudio IDE. As an RStudio Connect customer, you should be entitled to premium support -- you might try opening a ticket in that venue.
+
+That said, you might need to double check that you've added a Repository: field to the DESCRIPTION file of those packages. The DESCRIPTION files should have an entry of the form:
+
+Repository: <repo>
+replacing <repo> with the name of your repository.
+```
+Обсужение ошибки packrat "Failed to infer source for package ''" в ветке [packrat::init() fails #197 {Open}](https://github.com/rstudio/packrat/issues/197)
+- [Custom package in private repository not publishing #173 {Open}](https://github.com/rstudio/rsconnect/issues/173). Очень подробно разобрано поле `Repository` в DESCRIPTION
 
 
 # 18.06.2017

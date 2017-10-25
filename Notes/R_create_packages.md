@@ -2,11 +2,21 @@
 Начинаем пока с IDE
 - [Developing Packages with RStudio](https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio)
 - [Making Your First R Package](http://tinyheero.github.io/jekyll/update/2015/07/26/making-your-first-R-package.html)
+	- Each time you add new documentation to your R function, you need to run `devtools::document()` again to re-generate the `.Rd` files.
 
 Загрузка с gitlab проводится такой командой:
-`devtools::install_git("http://gitlab.com/ishutov/dvtdspack.git")`
-
-- [Смотрим The Documentation Workflow]()http://r-pkgs.had.co.nz/man.html#roxygen-comments). А еще одноименный параграф в pdf версии книги (стр. 44)ю
+`devtools::install_git("http://gitlab.com/ishutov/dvtdspack.git", credentials=git2r::cred_user_pass("username", "password"))`
+Сверяем хэш локальной версии с тем, что `devtools` вписал в DESCRIPTION:
+```
+To get the full SHA:
+$ git rev-parse HEADCdthztv
+```
+- [Sharing Internal R Packages](https://support.rstudio.com/hc/en-us/articles/115000239587-Sharing-Internal-R-Packages)
+- Packrat. [How to Set Up a Custom CRAN-like Repository](https://rstudio.github.io/packrat/custom-repos.html)
+- COOL! [Managing Private R Packages with Packrat and MiniCRAN](http://ellisvalentiner.com/post/2017-09-24-packrat-minicran/)
+- [Using R with git and packrat](https://stackoverflow.com/questions/36187543/using-r-with-git-and-packrat)
+- `packrat::opts$ignoredpackages("dvtdspack")` не особо помог. `packrat::init() стал собираться, но не более того. C GitHub пошло, с GitLab не работает.
+- [Смотрим The Documentation Workflow](http://r-pkgs.had.co.nz/man.html#roxygen-comments). А еще одноименный параграф в pdf версии книги (стр. 44).
 При первом запуске получили проблемы:
 ```
 > devtools::document()
@@ -35,3 +45,27 @@ lintr::lint(path_to_script)
 ```
 При этом кладем в локальную директорию файл `.lintr` с конфигурацией
 - создаем тест командой `usethis::use_test("my-test")`
+- Некоторые непонятки с вызовом функций внутри пакета. Политика партии разъясняется на странице 89 книги "R Packages".
+```
+It’s common for packages to be listed in Imports in DESCRIPTION, but not in
+NAMESPACE. In fact, this is what I recommend: list the package in DESCRIPTION
+so that it’s installed, then always refer to it explicitly with pkg::fun(). Unless there is
+a strong reason not to, it’s better to be explicit. It’s a little more work to write, but a lot
+easier to read when you come back to the code in the future. The converse is not true.
+Every package mentioned in NAMESPACE must also be present in the Imports or
+Depends fields.
+```
+- [“Documenting Multiple Functions in the Same File”] on page 55 "R Packages" for details.
+
+- Описание полей в файле DESCRIPTION
+	- [1.1.1 The DESCRIPTION file](https://cran.r-project.org/doc/manuals/r-release/R-exts.html)
+	- [1.1.1 The `DESCRIPTION' file](http://www.hep.by/gnu/r-patched/r-exts/R-exts_4.html)
+	- [R packages. Package metadata](http://r-pkgs.had.co.nz/description.html)
+
+- Проблема "Failed to infer source for package 'dvtdspack'; using latest available version on CRAN instead" возникает еще на этапе сборки на локальной машине!. Связано это с `packrat::init()`. Подробный диалог ведется здесь: [Error adding packrat to existing project on MacOSX #314 {Open}](https://github.com/rstudio/packrat/issues/314) и здесь: [ Packrat does not download from a private repository on github #291 {Closed}](https://github.com/rstudio/packrat/issues/291)
+1. Смотрим, что `packrat собирается компоновать: `packrat:::appDependencies()`
+2. Ставим dev версию.
+
+- ошибки с документированием.
+	- При проверке пакета выскакивает ошибка "unexpected section header '\value'". Ответ искал здесь: [R github package w/ devtools: warning unknown macro '\item'](https://stackoverflow.com/questions/39670646/r-github-package-w-devtools-warning-unknown-macro-item). Но суть оказалась в другом.
+Текст, включающий `%LIKE%` в файлей .Rd, который по сути является LaTeX-форматоподобным, символ % является комментарием. Заэкранировал с помощью `\` и все стало ок.
