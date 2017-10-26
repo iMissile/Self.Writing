@@ -54,7 +54,14 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Sinew: Simple R Package Documentation](https://metrumresearchgroup.github.io/sinew/)
 - [The R Inferno](http://www.burns-stat.com/pages/Tutor/R_inferno.pdf)
 
+# 26.10.2017
+## R
+- [September 2017 New Package Picks](https://rviews.rstudio.com/2017/10/25/september-17-top-40-packages/)
+
 # 25.10.2017
+## Shiny
+- [R shiny Observe running Before loading of UI and this causes Null parameters](https://stackoverflow.com/questions/22845874/r-shiny-observe-running-before-loading-of-ui-and-this-causes-null-parameters)
+
 ## R
 - `case_when` inside:
 	- [Lesser known dplyr 0.7* tricks](http://www.brodrigues.co/blog/2017-06-19-dplyr-0-70-tutorial/)
@@ -69,6 +76,8 @@ https://www.crowdgames.ru/page/plany-crowd-games
 # 24.10.2017
 ## R
 - [Split code over multiple lines in an R script](https://stackoverflow.com/questions/6329962/split-code-over-multiple-lines-in-an-r-script)
+
+## R Packages
 - Хорошая публикация-пояснение. [Loading R Packages: library() or require()?](http://geraldbelton.com/loading-r-packages-library-or-require/)
 - [R: use magrittr pipe operator in self written package](https://stackoverflow.com/questions/27947344/r-use-magrittr-pipe-operator-in-self-written-package). Кроме нижеуказанного, есть еще нюансы
 ```
@@ -78,6 +87,12 @@ importFrom(magrittr,"%>%")
 I suggest reading Writing R extensions. Your question is covered in paragraphs 1.1.3 and 1.5.1.
 If you're using roxygen2, you could add #' @importFrom magrittr "%>%" to have NAMESPACE populated automatically during roxygenize().
 ```
+- [Importing two functions with same name using roxygen2](https://stackoverflow.com/questions/18343235/importing-two-functions-with-same-name-using-roxygen2)
+```
+So the correct use of roxygen2's tag @importFrom is: @importFrom package_name function_name. No commas, parenthesis, nothing, just the two names separated by a space (possibly applicable to more than 1 function, in the obvious way).
+```
+
+
 
 - [Who knew likelihood functions could be so pretty?](https://www.rdatagen.net/post/mle-can-be-pretty/)
 - [The SeaClass R Package](https://rviews.rstudio.com/2017/10/23/the-seaclass-r-package/)
@@ -630,7 +645,11 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 Dash is a Python framework for building analytical web applications. No JavaScript required.
 Built on top of Plotly.js, React, and Flask, Dash ties modern UI elements like dropdowns, sliders, and graphs to your analytical Python code.
 
-## ELK
+## ELK + Zabbix
+- [5 Что нового в Zabbix 3.2.0; 5.2 Теги событий для большей гибкости](https://www.zabbix.com/documentation/3.2/ru/manual/introduction/whatsnew320)
+- [9 Теги событий](https://www.zabbix.com/documentation/3.2/ru/manual/config/triggers/event_tags)
+- [Caching In Elasticsearch](http://opensourceconnections.com/blog/2017/07/10/caching_in_elasticsearch/)
+- [Shard request cache vs Node Query Cache](https://discuss.elastic.co/t/shard-request-cache-vs-node-query-cache/91046)
 - ограничение на размер документов [What is the maximum Elasticsearch document size?](https://stackoverflow.com/questions/28841221/what-is-the-maximum-elasticsearch-document-size)
 - [How to set authentication in kibana](https://stackoverflow.com/questions/30138936/how-to-set-authentication-in-kibana)
 	- [How to use nginx to proxy to a host requiring authentication?](https://serverfault.com/questions/230749/how-to-use-nginx-to-proxy-to-a-host-requiring-authentication/345244#345244)

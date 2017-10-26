@@ -1,6 +1,9 @@
 
 Начинаем пока с IDE
 - [Developing Packages with RStudio](https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio)
+- [STAT 545. Write your own R package](http://stat545.com/packages00_index.html)
+- [STAT 545. Write your own R package, Part One](http://stat545.com/packages04_foofactors-package-01.html)
+- [STAT 545. Write your own R package, Part Two](http://stat545.com/packages05_foofactors-package-02.html)
 - [Making Your First R Package](http://tinyheero.github.io/jekyll/update/2015/07/26/making-your-first-R-package.html)
 	- Each time you add new documentation to your R function, you need to run `devtools::document()` again to re-generate the `.Rd` files.
 
