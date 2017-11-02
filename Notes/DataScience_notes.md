@@ -12,6 +12,9 @@
 - [Детальки](https://www.exoforce.ru/razdely/detali-lego)
 - [Lego projects](https://www.lego-projects.ru/lego-education/lego-education-ev3/168-lego-technic-ev3)
 - [Интернет-магазин спортивной и образовательной робототехники](https://www.angl-bricks.ru/lego-education-16#/kategorii-lego_ev3)
+- Ремонт Дисков. 
+	- [ПрофШинСервис](http://www.remontdiskov.ru/adresa-centrov/)
+	- [РЛД](https://remont-diskov.ru/ordjenikidze.html)
 
 https://www.filmpro.ru/materials/57202
 
@@ -48,11 +51,43 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas, Alison Presmanes Hill
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/) by Yihui Xie
 - [Efficient R programming](https://bookdown.org/csgillespie/efficientR/)
+- [Data Science Live Book](https://livebook.datascienceheroes.com/)
 - [R Manuals as bookdown](http://colinfay.me/r-manuals/). You’ll find here a list of the R manuals converted to bookdown.
 - [Processing and Analyzing Financial Data with R](https://sites.google.com/view/pafdR/home)
 - [Data Visualization for Social Science. A practical introduction with R and ggplot2](http://socviz.co/)
 - [Sinew: Simple R Package Documentation](https://metrumresearchgroup.github.io/sinew/)
 - [The R Inferno](http://www.burns-stat.com/pages/Tutor/R_inferno.pdf)
+
+# 02.11.2017
+## R
+- COOL! [An example of how to use the new R promises package](http://appsilondatascience.com/blog/rstats/2017/11/01/r-promises-hands-on.html). The long awaited promises will be released soon!
+- [Promises and Closures in R](https://www.inwt-statistics.com/read-blog/promises-and-closures-in-r.html)
+- [What are the Most Disliked Programming Languages?](https://stackoverflow.blog/2017/10/31/disliked-programming-languages/)
+- [Image Convolution in R using Magick](https://ropensci.org/technotes/2017/11/02/image-convolve/)
+
+# 31.10.2017
+- COOL! Интересный пакет для генерации графиков в SVG формате. [Speeding up gridSVG](https://www.stat.auckland.ac.nz/~paul/Reports/gridSVGspeed/gridsvg-speed.html)
+- [Big Data Transforms](http://www.win-vector.com/blog/2017/10/big-data-transforms/)
+- [Data Science Live Book (open source) ~ new big release! 200-pages](https://blog.datascienceheroes.com/ive-book-opdata-science-len-source-new-big-release-200-pages/)
+- [WORD VECTORS WITH TIDY DATA PRINCIPLES](https://juliasilge.com/blog/tidy-word-vectors/)
+- [Making a Shiny dashboard using ‘highcharter’ – Analyzing Inflation Rates](https://datascienceplus.com/making-a-shiny-dashboard-using-highcharter-analyzing-inflation-rates/)
+- [Recent updates to the Team Data Science Process](http://blog.revolutionanalytics.com/2017/10/recent-updates-to-the-team-data-science-process.html)
+- [computational methods for numerical analysis with R {book review}](https://xianblog.wordpress.com/2017/10/31/computational-methods-for-numerical-analysis-with-r-book-review/)
+- [heatmaply: Interactive Cluster Heat Maps Using 'plotly'](https://cran.r-project.org/web/packages/heatmaply/index.html)
+	- [heatmaply: an R package for creating interactive cluster heatmaps for online publishing](https://www.r-statistics.com/2017/10/heatmaply-an-r-package-for-creating-interactive-cluster-heatmaps-for-online-publishing/)
+
+# 30.10.2017
+## R
+- Попытка присвоить внешней переменной значение внутри pipe:
+	- [Assign intermediate output to temp variable as part of dplyr pipeline](https://stackoverflow.com/questions/40369832/assign-intermediate-output-to-temp-variable-as-part-of-dplyr-pipeline)
+	- [how to feed the result of a pipe chain (magrittr) to an object](https://stackoverflow.com/questions/25975827/how-to-feed-the-result-of-a-pipe-chain-magrittr-to-an-object)
+- [Union of intersecting vectors in a list in R](https://stackoverflow.com/questions/27520310/union-of-intersecting-vectors-in-a-list-in-r)
+
+
+# 29.10.2017
+## R
+- [Not Mustard - Exploring McDonalds Reviews on Yelp with R](https://jasdumas.github.io/2017-10-26-not-mustard-web-app/). Leveraging tidyverse packages httr, stringr & purrr
+- [Moving to Blogdown](https://www.data-imaginist.com/2017/moving-to-blogdown/). Oct 29, 2017
 
 # 26.10.2017
 ## R
