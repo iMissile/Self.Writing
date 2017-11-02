@@ -62,8 +62,10 @@ https://www.crowdgames.ru/page/plany-crowd-games
 ## R
 - COOL! [An example of how to use the new R promises package](http://appsilondatascience.com/blog/rstats/2017/11/01/r-promises-hands-on.html). The long awaited promises will be released soon!
 - [Promises and Closures in R](https://www.inwt-statistics.com/read-blog/promises-and-closures-in-r.html)
+	- [Modeling data with functional programming, Part I](https://cartesianfaith.com/2017/04/14/modeling-data-with-functional-programming-part-i/)
 - [What are the Most Disliked Programming Languages?](https://stackoverflow.blog/2017/10/31/disliked-programming-languages/)
 - [Image Convolution in R using Magick](https://ropensci.org/technotes/2017/11/02/image-convolve/)
+- [Replacing NAs in a column with the values of other column using R](https://stackoverflow.com/questions/46137115/replacing-nas-in-a-column-with-the-values-of-other-column-using-r). `dplyr::coalesce`
 
 # 31.10.2017
 - COOL! Интересный пакет для генерации графиков в SVG формате. [Speeding up gridSVG](https://www.stat.auckland.ac.nz/~paul/Reports/gridSVGspeed/gridsvg-speed.html)
