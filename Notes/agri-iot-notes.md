@@ -1,6 +1,7 @@
 # Настройка машины-сборщика данных
 
 ## Настройка Linux
+- [How to accurately check if package is installed in yum?](https://serverfault.com/questions/558936/how-to-accurately-check-if-package-is-installed-in-yum)
 Для нормального функционирования сервера требуется корректно настроить текущее время и его своевременное обновление с определенной периодичностью. Детали смотрим в статье ["Как установить, изменить время и часовой пояс в CentOS 7"](https://serveradmin.ru/ustanovka-nastroyka-i-sinhronizatsiya-vremeni-v-centos/).  
 
 Важные комментарии к статье: Подскажите, пожалуйста, почему после перезагрузки ОС ntp может не стартовать?

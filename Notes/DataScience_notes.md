@@ -1,9 +1,11 @@
 - [The JSON Formatter](https://jsonformatter.curiousconcept.com/)
 - [JSON Editor Online](http://jsoneditoronline.org/)
+- [Различные онлайн инструменты для проверки и преобразования](https://www.danstools.com/)
 
 - [AppSales. Best Android apps on Sale](https://www.app-sales.net)
 - [AppTime. Games & Gadgets](http://app-time.ru/)
 - [Appsylum](http://appsylum.com/). Find Discuss & Support the Apps You Love
+- [onefactor](https://1f.ai/ru/)
 - [ReservoContext: поисковая система для переводов в контексте](http://context.reverso.net)
 # LEGO
 - ["Выбери Кубик". Интернет-магазин деталей ЛЕГО](http://vyberi-kubik.ru/)
@@ -52,11 +54,162 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/) by Yihui Xie
 - [Efficient R programming](https://bookdown.org/csgillespie/efficientR/)
 - [Data Science Live Book](https://livebook.datascienceheroes.com/)
+- [Mastering Software Development in R](https://bookdown.org/rdpeng/RProgDA/)
 - [R Manuals as bookdown](http://colinfay.me/r-manuals/). You’ll find here a list of the R manuals converted to bookdown.
 - [Processing and Analyzing Financial Data with R](https://sites.google.com/view/pafdR/home)
 - [Data Visualization for Social Science. A practical introduction with R and ggplot2](http://socviz.co/)
 - [Sinew: Simple R Package Documentation](https://metrumresearchgroup.github.io/sinew/)
 - [The R Inferno](http://www.burns-stat.com/pages/Tutor/R_inferno.pdf)
+
+# 09.11.2017
+## Shiny
+```
+Shiny Server provides a wide variety of techniques to keep the data in the web browser synchronized. The preferred technique, and the one most widely used, is the use of WebSockets. However, if WebSockets are not supported -- either by some intermediate network between Shiny Server and your client, or by your client's web browser -- then a fallback protocol will be used. In total, Shiny Server provides nine different methods of connecting to the server in real-time. In order of preference, they are:
+
+    WebSocket
+    XDR Streaming
+    XHR Streaming
+    iframe Eventsource
+    iframe HTML File
+    XDR Pollilng
+    XHR Polling
+    iframe XHR Polling
+    JSONP Polling
+```
+- [Shiny Server: Running with a Proxy](https://support.rstudio.com/hc/en-us/articles/213733868-Running-Shiny-Server-with-a-Proxy)
+- [Is it possible to get the HTTP request header data into a shiny server app?](https://groups.google.com/forum/#!topic/shiny-discuss/zajV1HsstYc) So the NEWS description makes things clearer: 
+```
+Note: When running in a Shiny Server environment, the request will reflect
+  the proxy HTTP request that was made from the Shiny Server process to the R
+  process, not the request that was made from the web browser to Shiny Server.
+```
+So is there any way to get what the request the browser made to shiny server?
+- [URL Rewriting for Beginners](https://www.addedbytes.com/blog/url-rewriting-for-beginners). A beginner's guide to URL rewriting, with plenty of examples.
+- [Introducing Cheatography!](https://www.addedbytes.com/blog/shiny-new-things-introducing-cheatography)
+For a few years now, I've been releasing cheat sheets here, and you've been asking how to make your own. So I created Cheatography, a site where you can build and share your very own cheat sheets, completely free.
+- Tracking Shiny Users
+	- [R shiny server: How to count number of users of my application](https://stackoverflow.com/questions/32706308/r-shiny-server-how-to-count-number-of-users-of-my-application)
+	- [Shiny App Usage Tracking](https://shiny.rstudio.com/articles/usage-metrics.html). LAST UPDATED: 23 JAN 2017
+	- [Add Google Analytics to a Shiny app](http://shiny.rstudio.com/articles/google-analytics.html)
+- [Adding Authentication to Shiny Server in 4 Simple Steps](https://auth0.com/blog/adding-authentication-to-shiny-server/)
+- [shinyapps.io. Authentication and Authorization Model](https://www.rstudio.com/products/shinyapps-io-authentication-authorization/)
+- [How to create a symbolic link in a linux directory? {duplicate}](https://askubuntu.com/questions/843740/how-to-create-a-symbolic-link-in-a-linux-directory). Use `ln`:
+```
+ln -s /var/www/vhosts/ecash_cfe /var/www/vhosts/ecash-staging.com/ecash_root
+-s stands for symbolic link
+/var/www/vhosts/ecash_cfe is the source file
+/var/www/vhosts/ecash-staging.com/ecash_root is the link name
+```
+
+
+
+## R
+- [utf8: Unicode Text Processing] (https://cran.r-project.org/web/packages/utf8/index.html). Processing and printing 'UTF-8' encoded international text (Unicode). Functions to input, validate, normalize, encode, format, and display.
+- [switchr: Installing, Managing, and Switching Between Distinct Sets of Installed Packages](https://cran.r-project.org/web/packages/switchr/index.html)
+Provides an abstraction for managing, installing, and switching between sets of installed R packages. This allows users to maintain multiple package libraries simultaneously, e.g. to maintain strict, package-version-specific reproducibility of many analyses, or work within a development/production release paradigm. Introduces a generalized package installation process which supports multiple repository and non-repository sources and tracks package provenance.
+- [patternplot: Versatile Pie Charts, Bar Charts and Box Plots using Patterns, Colors and Images](https://cran.r-project.org/web/packages/patternplot/index.html)
+Creates aesthetically pleasing and informative pie charts, bar charts and box plots with colors, patterns, and images.
+- [An R web crawler and scraper](https://github.com/salimk/Rcrawler/)
+- [textTinyR: Text Processing for Small or Big Data Files](https://cran.r-project.org/web/packages/textTinyR/index.html)
+- Shiny получает `request` параметры как environment. Как посмотреть и достать содержимое environment? [Environments in R](https://digitheadslabnotebook.blogspot.ru/2011/06/environments-in-r.html)
+	- Посмотреть содержимое environment: `ls(env}`
+- [trestletech/server.R](https://gist.github.com/trestletech/7255596). Show the headers in a Shiny app
+- [Rook: A web server interface for R](https://github.com/jeffreyhorner/Rook)
+- Shiny session object:
+```
+request
+An environment that implements the Rook specification for HTTP requests. This is the request that was used to initiate the websocket connection (as opposed to the request that downloaded the web page for the app).
+```
+- [solrium 1.0: Working with Solr from R](https://ropensci.org/technotes/2017/11/08/solrium-solr-r/). Solr is similar to Elasticsearch (see our Elasticsearch client elastic) - and was around before it.
+- [RQuantLib connects GNU R with QuantLib](http://dirk.eddelbuettel.com/code/rquantlib.html)
+	- [QuantLib. A free/open-source library for quantitative finance](http://quantlib.org/index.shtml)
+- [Formal ways to compare forecasting models: Rolling windows](https://insightr.wordpress.com/2017/11/09/formal-ways-to-compare-forecasting-models-rolling-windows/)
+- R Shiny ClientData:
+	- [Learn about your user with session$clientData](https://shiny.rstudio.com/articles/client-data.html)
+	- [Demo App](https://shiny.rstudio.com/gallery/client-data-and-query-string.html)
+
+# 08.11.2017
+## Development
+- COOL! [What's the difference between git fetch and git pull?](https://www.git-tower.com/learn/git/faq/difference-between-git-fetch-git-pull)
+
+## DS
+- COOL! [Practical Machine Learning with R and Python – Part 5](https://gigadom.wordpress.com/2017/11/07/practical-machine-learning-with-r-and-python-part-5/)
+
+## R
+- [How does covr work anyway?](https://cran.r-project.org/web/packages/covr/vignettes/how_it_works.html)
+- [Metropolis-in-Gibbs Sampling and Runtime Analysis with Profviz](https://stablemarkets.wordpress.com/2017/11/07/metropolis-in-gibbs-sampling-and-runtime-analysis-with-profviz/)
+- [Setting up twitter streamR Service on an Ubuntu server](http://amitkohli.com/setting-up-twitter-streamr-service-on-an-ubuntu-server/)
+- [Automating Summary of Surveys with RMarkdown](https://rviews.rstudio.com/2017/11/07/automating-summary-of-surveys-with-rmarkdown/)
+- [Data acquisition in R (2/4)](https://ikashnitsky.github.io/2017/data-acquisition-two/)
+- Error handling in Shiny:
+	- [Shiny. Sanitizing error messages](https://shiny.rstudio.com/articles/sanitize-errors.html)
+	- [Write error messages for your UI with validate](https://shiny.rstudio.com/articles/validation.html)
+	- [Notifications](https://shiny.rstudio.com/articles/notifications.html)
+- Неожиданно в Shiny возникла ошибка `ERROR: [on_request_read] parse error`, которая не ловится приложением, а выкидывает в консоль IDE.
+Описание похожей проблемы и способа ее решения нашел здесь: [(Shiny) “ERROR: [on_request_read] parse error”](https://stackoverflow.com/questions/39024824/shiny-error-on-request-read-parse-error).
+__Luckily, shinyURL also has an inherent way of ignoring user selected inputs. How? Just simply place a "." at the beginning of the input ID when creating new widgets. Or, in the case of DT table output, place a period at the beginning of your data table output ID, so that all of the inherent DT inputs are ignored.__
+
+Посмотрел на URL, действительно весь `stat_table` (а это много символов!!!) туда передается: `stat_table_cell_clicked=%7B%7D&stat_table_rows_all...`
+
+
+# 07.11.2017
+## R
+- [You beautiful, naïve, sophisticated newborn series](http://www.masalmon.eu/2017/11/05/newborn-serie/)
+- [Setting fire to deployment: Heroku](https://www.data-imaginist.com/2017/setting-fire-to-deployment/)
+- COOL! [Excel vs R: A Brief Introduction to R. With examples using dplyr and ggplot](https://www.jessesadler.com/post/excel-vs-r/)
+- [A history-oriented introduction to R for Excel users](http://blog.revolutionanalytics.com/2017/11/r-excel-history.html)
+- [Using Magick with RMarkdown and Shiny](https://ropensci.org/technotes/2017/11/07/magick-knitr/)
+- [Image Convolution in R using Magick](https://ropensci.org/technotes/2017/11/02/image-convolve/)
+- [Hash Table Performance in R: Part I](http://jeffreyhorner.tumblr.com/post/114524915928/hash-table-performance-in-r-part-i#_=_)
+- [Hash Table Performance in R: Part II](http://jeffreyhorner.tumblr.com/post/116325104028/hash-table-performance-in-r-part-ii-in-part-i#_=_)
+- [Hash Table Performance in R: Part III](http://jeffreyhorner.tumblr.com/post/116690418898/hash-table-performance-in-r-part-iii-in-part#_=_)
+- [nathan-russell/hashmap](https://github.com/nathan-russell/hashmap). Faster hash maps in R
+
+## data.table
+- Hadley Wickham. [My take on dplyr vs data.table](https://twitter.com/hadleywickham/status/553169339751215104):
+	- [data.table vs dplyr: can one do something well the other can't or does poorly?](https://stackoverflow.com/questions/21435339/data-table-vs-dplyr-can-one-do-something-well-the-other-cant-or-does-poorly/27840349#27840349)
+- COOL! [Fast data lookups in R: dplyr vs data.table](http://appsilondatascience.com/blog/rstats/2017/03/02/r-fast-lookup.html)
+- [Rdatatable/data.table](https://github.com/Rdatatable/data.table/wiki). R's data.table package extends data.frame: http://r-datatable.com
+
+
+
+# 06.11.2017
+## R
+- [Intro to TensorFlow in R](https://www.edgarsdatalab.com/2017/10/22/intro-to-tensorflow-in-r/)
+- [Is dplyr Easily Comprehensible?](http://www.win-vector.com/blog/2017/08/is-dplyr-easily-comprehensible/)
+	- [Advanced dplyr Quiz (author: John Mount)](https://github.com/WinVector/Examples/blob/master/dplyr/dplyrQuiz.md)
+
+# 05.11.2017
+## R Debug
+- [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio), September 11, 2017
+- [Debugging methods in R6 objects](https://cran.r-project.org/web/packages/R6/vignettes/Debugging.html)
+- [debugme: Debug R Packages](https://cran.r-project.org/web/packages/debugme/index.html). Specify debug messages as special string constants, and control debugging of packages via environment variables.
+	- [r-lib/debugme](https://github.com/r-lib/debugme). Easy and efficient debugging for R packages
+	- [Debugme](https://github.com/gaborcsardi/debugme). Easy and efficient debugging for R packages. gaborcsardi/debugme
+- [wrapr: Wrap R Functions for Debugging and Parametric Programming](https://cran.r-project.org/web/packages/wrapr/index.html)
+- [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Published: 2013-02-07.
+Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
+- [Debugging, condition handling, and defensive programming](http://adv-r.had.co.nz/Exceptions-Debugging.html)
+- "Mastering Software Development in R". [2.6 Debugging](https://bookdown.org/rdpeng/RProgDA/debugging.html)
+- [ggpmisc 0.2.13. Debugging ggplots](https://cran.r-project.org/web/packages/ggpmisc/vignettes/debug.html)
+- [Using the Bizarro Pipe to Debug magrittr Pipelines in R](http://www.win-vector.com/blog/2017/01/using-the-bizarro-pipe-to-debug-magrittr-pipelines-in-r/)
+- [Debugging R Functions](http://seananderson.ca/2013/08/23/debugging-r.html)
+- [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
+- [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)` Showcase Mode!!!
+- Презентация [Debugging with Shiny](http://rpubs.com/jmcphers/149638)
+- COOL [How-to go parallel in R – basics + tips](http://gforge.se/2015/02/how-to-go-parallel-in-r-basics-tips/). См. п. "Debugging"
+Debugging is especially hard when working in a parallelized environment. You cannot simply call browser/cat/print in order to find out what the issue is.
+	- Never use set.seed(), use clusterSetRNGStream() instead, to set the cluster seed if you want reproducible results
+
+# 03.11.2017
+## R
+- [Explore Predictive Maintenance with flexdashboard](https://blog.codecentric.de/en/2017/11/explore-predictive-maintenance-flexdashboard/)
+	- [Predictive Maintenance Demo](https://shiring.shinyapps.io/demo_dashboard_pred_maint_fast/). Each section contains text that explains the content, data, results and plots. The source code for the dashboard can be seen by clicking on the </> Source Code field in the top right corner (code for preparing data and models is included as well but commented out).
+- [shadow text effect in grid and ggplot2 graphics](https://guangchuangyu.github.io/2017/11/shadow-text-effect-in-grid-and-ggplot2-graphics/)
+- [magrittr 1.5](https://blog.rstudio.com/2014/12/01/magrittr-1-5/) by Hadley Wickham. Про оператор `%$%`.
+- [Taming exam results in pdf with pdftools](https://talesofr.wordpress.com/2017/11/03/taming-exam-results-in-pdf-with-pdftools/)
+- [How to identify risky bank loans using C.50 decision trees](https://r-posts.com/how-to-identify-risky-bank-loans-using-c-50-decision-trees/)
+- [Let X=X in R](http://www.win-vector.com/blog/2017/11/let-xx-in-r/)
 
 # 02.11.2017
 ## R
@@ -64,7 +217,6 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Promises and Closures in R](https://www.inwt-statistics.com/read-blog/promises-and-closures-in-r.html)
 	- [Modeling data with functional programming, Part I](https://cartesianfaith.com/2017/04/14/modeling-data-with-functional-programming-part-i/)
 - [What are the Most Disliked Programming Languages?](https://stackoverflow.blog/2017/10/31/disliked-programming-languages/)
-- [Image Convolution in R using Magick](https://ropensci.org/technotes/2017/11/02/image-convolve/)
 - [Replacing NAs in a column with the values of other column using R](https://stackoverflow.com/questions/46137115/replacing-nas-in-a-column-with-the-values-of-other-column-using-r). `dplyr::coalesce`
 
 # 31.10.2017
@@ -215,6 +367,7 @@ An extension to the 'testthat' package that makes it easy to add graphical unit 
 - [The Bold & Beautiful Character Similarities using Word Embeddings](https://longhowlam.wordpress.com/2017/10/12/the-bold-beautiful-character-similarities-using-word-embeddings/)
 - [Rick and Morty and Tidy Data Principles](http://pacha.hk/2017-10-13_rick_and_morty_tidy_data.html)
 - [Rick and Morty and Tidy Data Principles (Part 2)](http://pacha.hk/2017-10-22_rick_and_morty_tidy_data_2.html)
+- [Rick and Morty and Tidy Data Principles (Part 3)](http://pacha.hk/2017-11-06_rick_and_morty_tidy_data_3.html)
 - [Putting the cat in scatterplot](https://www.mango-solutions.com/blog/putting-the-cat-in-scatterplot)
 - COOL! [purrr 0.2.3](https://www.tidyverse.org/articles/2017/08/purrr-0.2.3/)
 - [Bind rows of data frames with some factor columns](https://stackoverflow.com/questions/42278020/bind-rows-of-data-frames-with-some-factor-columns)
@@ -1481,6 +1634,7 @@ SELECT PRODUCT_ID, ORDER_QUANTITY, 999 AS USER_VALUE
 	- [tidyverse/forcats. tools for working with categorical variables (factors)](http://forcats.tidyverse.org)
 	- [Be the boss of your factors](http://stat545.com/block029_factors.html)
 - [How can I get the min/max possible numeric?](https://stackoverflow.com/questions/7504463/how-can-i-get-the-min-max-possible-numeric)
+- COOL! [Drawing 10 Million Points With ggplot: Clifford Attractors](https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/)
 
 ## Shiny
 - COOL! [Shiny tips & tricks for improving your apps and solving common problems](http://deanattali.com/blog/advanced-shiny-tips/)
@@ -3416,6 +3570,7 @@ Go and explore, and happy new year!
 ## R
 - [R exercises](http://r-exercises.com/). Очень неплохой ресурс с заданиями по R.
 - COOL! Классный пакет для Simmer [Discrete-Event Simulator for R](http://fishyoperations.com/2017/01/12/extensions-for-simmer.html). Вообще, на этом сайте очень много записей про симуляцию.
+- [simmer 3.6.4](https://www.enchufa2.es/archives/simmer-3-6-4.html)
 - [simmer 3.6.3](https://www.enchufa2.es/archives/simmer-3-6-3.html)
 - [simmer 3.6.2](https://www.enchufa2.es/archives/simmer-3-6-2.html)
 - [Discrete Event Simulation using R: Hospital Capacity Planning.](https://www.codeproject.com/Articles/1111093/Discrete-Event-Simulation-using-R-Hospital-Capacit)
