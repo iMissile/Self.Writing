@@ -61,6 +61,31 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Sinew: Simple R Package Documentation](https://metrumresearchgroup.github.io/sinew/)
 - [The R Inferno](http://www.burns-stat.com/pages/Tutor/R_inferno.pdf)
 
+# 10.11.2017
+## R
+- [Quick list of useful R packages](https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages)
+- [10 R packages I wish I knew about earlier](http://blog.yhat.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html) by yhat | February 10, 2013
+- [Moving from R to Python: The Libraries You Need to Know](http://blog.yhat.com/posts/moving-from-r-to-python.html) by Yhat | August 29, 2016
+- [Pandas. Comparison with R / R libraries](http://pandas.pydata.org/pandas-docs/stable/comparison_with_r.html#comparison-with-r-r-libraries)
+- COOL!!! [AWESOME R](https://awesome-r.com/)
+- [Awesome Machine Learning](https://github.com/josephmisiti/awesome-machine-learning)
+- [tidyverse/reprex](https://github.com/tidyverse/reprex). Render bits of R code for sharing, e.g., on GitHub or StackOverflow. http://reprex.tidyverse.org
+- COOL! [Great R packages for data import, wrangling and visualization](https://www.computerworld.com/article/2921176/business-intelligence/great-r-packages-for-data-import-wrangling-visualization.html)
+	- [New Functions in the R Hmisc Package](http://biostat.mc.vanderbilt.edu/wiki/Main/HmiscNew). 
+```
+describe(mydf)
+Cs(so, it, goes)
+```
+	- [data-cleaning/validate](https://github.com/data-cleaning/validate). Professional data validation for the R environment
+	- Оно же: [validate: Data Validation Infrastructure](https://cran.r-project.org/web/packages/validate/index.html)
+	- [sfirke/janitor](https://github.com/sfirke/janitor). simple tools for data cleaning in R
+	- ['Drat' R Archive Template](http://dirk.eddelbuettel.com/code/drat.html)
+	- [Week 15 | listviewer](http://www.buildingwidgets.com/blog/2015/4/14/week-15-listviewer)
+	- [car: Companion to Applied Regression](https://cran.r-project.org/web/packages/car/index.html). Functions and Datasets to Accompany J. Fox and S. Weisberg, An R Companion to Applied Regression, Second Edition, Sage, 2011.
+	- [diffobj - Diffs for R Objects](https://cran.r-project.org/web/packages/diffobj/vignettes/diffobj.html)
+	- [Feather: A Fast On-Disk Format for Data Frames for R and Python, powered by Apache Arrow](https://blog.rstudio.com/2016/03/29/feather/)
+	- COOL! fst package. [Lightning Fast Serialization of Data Frames for R](http://www.fstpackage.org/).
+
 # 09.11.2017
 ## Shiny
 ```
@@ -100,7 +125,8 @@ ln -s /var/www/vhosts/ecash_cfe /var/www/vhosts/ecash-staging.com/ecash_root
 /var/www/vhosts/ecash_cfe is the source file
 /var/www/vhosts/ecash-staging.com/ecash_root is the link name
 ```
-
+- [Авторизация в ShinyDashboard (бесплатно и без СМС)](http://ru-datascience.ru/2017/04/11/avtorizatsiya-v-shinydashboard-besplatno-i-bez-sms/)
+- [Хэширование паролей](http://ru-datascience.ru/2017/04/12/heshirovanie-parolej/)
 
 
 ## R
