@@ -61,6 +61,36 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Sinew: Simple R Package Documentation](https://metrumresearchgroup.github.io/sinew/)
 - [The R Inferno](http://www.burns-stat.com/pages/Tutor/R_inferno.pdf)
 
+# 15.11.2017
+## R
+- [We Can Use Pivot Tables in Shiny!](https://www.linkedin.com/pulse/we-can-use-pivot-tables-shiny-lee-rock/)
+- [Interactive pivot tables with R](https://magesblog.com/post/2015-03-31-pivot-tables-with-r/)
+- COOL! [DT: Child Rows](http://rstudio.github.io/DT/002-rowdetails.html)
+- COOL! [Memory management / cannot allocate vector of size n Mb](https://stackoverflow.com/questions/5171593/memory-management-cannot-allocate-vector-of-size-n-mb)
+- [Assignment Operators In R: ‘=’ Vs. ‘<-‘](https://csgillespie.wordpress.com/2010/11/16/assignment-operators-in-r-vs/)
+- [Use = or <- for assignment?](http://blog.revolutionanalytics.com/2008/12/use-equals-or-arrow-for-assignment.html)
+- [Functional peace of mind](http://www.brodrigues.co/blog/2017-11-14-peace_r/)
+- [Advice to aspiring data scientists: start a blog](http://varianceexplained.org/r/start-blog/)
+
+# 14.11.2017
+## R
+- COOL! [2017 rOpenSci ozunconf :: Reflections and the realtime Package](https://ropensci.org/blog/2017/11/14/realtime/)
+- [SQL Saturday statistics – Web Scraping with R and SQL Server](https://tomaztsql.wordpress.com/2017/11/13/sql-saturday-statistics-web-scraping-with-r-and-sql-server/)
+- [R - ClickHouse driver update](https://github.com/hannesmuehleisen/clickhouse-r)
+- COOL! [eclarke/ggbeeswarm](https://github.com/eclarke/ggbeeswarm). Column scatter / beeswarm-style plots in ggplot2. ("__Here is a comparison between geom_jitter and geom_quasirandom on the iris dataset__")
+- COOL! [hrbrmstr/waffle, Make waffle (square pie) charts in R](https://github.com/hrbrmstr/waffle)
+
+## DS
+- [Falcon SQL Client](https://plot.ly/free-sql-client-download/)
+
+# 13.11.2017
+## R
+- [Easy data validation with the validate package](http://www.markvanderloo.eu/yaRb/2016/03/25/easy-data-validation-with-the-validate-package/)
+- [Measuring & Monitoring Internet Speed with R](https://rud.is/b/2017/11/11/measuring-monitoring-internet-speed-with-r/)
+- [SHINYPROXY 1.0.2](https://www.openanalytics.eu/blog/2017/11/12/shinyproxy-1.0.2/)
+- [Creating integer64 and nanotime vectors in C++](http://gallery.rcpp.org//articles/creating-integer64-and-nanotime-vectors/)
+- [Update on coordinatized or fluid data](http://www.win-vector.com/blog/2017/11/update-on-coordinatized-or-fluid-data/)
+
 # 10.11.2017
 ## R
 - [Quick list of useful R packages](https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages)
@@ -85,6 +115,16 @@ Cs(so, it, goes)
 	- [diffobj - Diffs for R Objects](https://cran.r-project.org/web/packages/diffobj/vignettes/diffobj.html)
 	- [Feather: A Fast On-Disk Format for Data Frames for R and Python, powered by Apache Arrow](https://blog.rstudio.com/2016/03/29/feather/)
 	- COOL! fst package. [Lightning Fast Serialization of Data Frames for R](http://www.fstpackage.org/).
+	- [lambda.r: Modeling Data with Functional Programming](https://cran.r-project.org/web/packages/lambda.r/). A language extension to efficiently write functional programs in R. Syntax extensions include multi-part function definitions, pattern matching, guard statements, built-in (optional) type safety.
+	- [Prophet](https://facebook.github.io/prophet/). Forecasting at scale. Prophet is a forecasting procedure implemented in R and Python. It is fast and provides completely automated forecasts that can be tuned by hand by data scientists and analysts.
+	
+## Shiny
+- [Create URL hyperlink in R Shiny?](https://stackoverflow.com/questions/42047422/create-url-hyperlink-in-r-shiny)
+- [R shiny: How to insert html link in a material_button](https://stackoverflow.com/questions/44065605/r-shiny-how-to-insert-html-link-in-a-material-button)
+- [Login Button in shinydashboard dashboardHeader](https://stackoverflow.com/questions/46231234/login-button-in-shinydashboard-dashboardheader)
+- [JSON Web Tokens](https://jwt.io/) are an open, industry standard RFC 7519 method for representing claims securely between two parties. JWT.IO allows you to decode, verify and generate JWT.
+- [Encoding/Decoding JSON Web Tokens (JWT) in R](https://cran.r-project.org/web/packages/jose/vignettes/jwt.html)
+
 
 # 09.11.2017
 ## Shiny
@@ -125,6 +165,10 @@ ln -s /var/www/vhosts/ecash_cfe /var/www/vhosts/ecash-staging.com/ecash_root
 /var/www/vhosts/ecash_cfe is the source file
 /var/www/vhosts/ecash-staging.com/ecash_root is the link name
 ```
+- Linux
+	- [CHMOD CHEAT SHEET](https://danflood.com/tech-stuff/chmod-cheat-sheet/)
+	- [Linux Chmod Permissions Cheat Sheet](https://isabelcastillo.com/linux-chmod-permissions-cheat-sheet)
+	- [How to access another user's folder from another user account](https://unix.stackexchange.com/questions/346791/how-to-access-another-users-folder-from-another-user-account)
 - [Авторизация в ShinyDashboard (бесплатно и без СМС)](http://ru-datascience.ru/2017/04/11/avtorizatsiya-v-shinydashboard-besplatno-i-bez-sms/)
 - [Хэширование паролей](http://ru-datascience.ru/2017/04/12/heshirovanie-parolej/)
 
@@ -317,7 +361,7 @@ So the correct use of roxygen2's tag @importFrom is: @importFrom package_name fu
 - Как работать с .../dot/ellipses в R?
 	- [How to use R's ellipsis feature when writing your own function?](https://stackoverflow.com/questions/3057341/how-to-use-rs-ellipsis-feature-when-writing-your-own-function)
 
-- Unit testing
+- Unit testing (devtools package helper)
 	- COOL! [usethis](https://github.com/r-lib/usethis). The goal of usethis is to automate many common package and analysis setup tasks.
 	- [An R to make testing](https://github.com/r-lib/testthat)
 	- Здесь описано как тестировать просто функции без пакетов. [Testing your code]http://nicercode.github.io/2014-02-13-UNSW/lessons/45-testing/)

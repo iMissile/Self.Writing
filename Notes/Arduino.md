@@ -229,4 +229,3 @@ The Library is a port of LMIC-1.5 LoRa library to Arduino/Atmega 328 and the ESP
 - E32-TTL-100
 	- [tienfuc/E32-TTL](https://github.com/tienfuc/E32-TTL/blob/master/E32-TTL.ino)
 	- [Topic: Need Wire Diagram/Sample Code for E31-TTL-100 // AX5043 868MHz Transciever](http://forum.arduino.cc/index.php?topic=384828.0)
-

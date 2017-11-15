@@ -13,6 +13,20 @@
 
 Также смотрим статью ["CentOS 7 настройка сервера"](https://serveradmin.ru/centos-7-nastroyka-servera/). Тут учтены нюансы, связанные с сервисом chrony в 7-ой версии CentOS.
 
+### Файервол
+Штатно CentOS 7 идет с новым брэндмауэром -- `firewalld`. По настройке можно поглядеть на 
+- [Настройка firewalld CentOS 7 с примерами команд](https://bozza.ru/art-259.html)
+- [НАСТРОЙКА БРАНДМАУЭРА FIREWALLD В CENTOS 7](https://www.8host.com/blog/nastrojka-brandmauera-firewalld-v-centos-7/)
+```
+firewall-cmd --get-active-zones
+sudo firewall-cmd --set-default-zone=trusted
+sudo firewall-cmd --reload
+firewall-cmd --get-active-zones
+```
+
+
+
+
 ### Настройка синхронизации времени
 В 7-ой версии CentOS настройку делаем через утилиту chrony (детали в статьях, указанных выше).
 
@@ -90,12 +104,14 @@ sudo yum update
 	sudo yum install xorg-x11-server-Xvfb
 	sudo yum install unixODBC*
 	sudo yum install postgresql-devel
+        sudo yum install mariadb-devel mysql-devel
 	sudo yum install gcc-gfortran*
 	sudo yum install texlive*
 	sudo yum install ufw
         sudo yum install dejavu*
 	sudo yum install psmisc
 	sudo yum install rrdtool
+        sudo yum install wireshark
 	# а это надо для RStudio Connect
 	sudo yum install dejavu-fonts-common dejavu-sans-mono-fonts rrdtool
 	# а это для RStudio Server
@@ -123,7 +139,7 @@ sudo yum -y install -y https://centos7.iuscommunity.org/ius-release.rpm
 sudo yum -y groupinstall X11
 sudo yum -y groupinstall "Development Tools"
 
-sudo yum -y install wget libcurl-devel openssl-devel cyrus-sasl-devel libxml2-devel libpng-devel libjpeg-devel python python-devel proj proj-devel mesa-libGL mesa-libGL-devel mesa-libGLU mesa-libGLU-devel gmp-devel mpfr-devel cairo-devel libXt-devel gtk2-devel v8-devel udunits2 udunits2-devel xorg-x11-server-Xvfb unixODBC* postgresql-devel gcc-gfortran* texlive*, ufw, dejavu*, psmisc, rrdtool, lrzsz
+sudo yum -y install wget libcurl-devel openssl-devel cyrus-sasl-devel libxml2-devel libpng-devel libjpeg-devel python python-devel proj proj-devel mesa-libGL mesa-libGL-devel mesa-libGLU mesa-libGLU-devel gmp-devel mpfr-devel cairo-devel libXt-devel gtk2-devel v8-devel udunits2 udunits2-devel xorg-x11-server-Xvfb unixODBC* postgresql-devel mariadb-devel mysql-devel gcc-gfortran* texlive*, ufw, dejavu*, psmisc, rrdtool, wireshark, lrzsz
 
 sudo yum -y install dejavu-fonts-common dejavu-sans-mono-fonts rrdtool psmisc lrzsz gdal* proj-devel proj-epsg proj-nad protobuf-devel geos-devel
 ```
@@ -145,6 +161,8 @@ sudo yum -y install dejavu-fonts-common dejavu-sans-mono-fonts rrdtool psmisc lr
 	- Поглядим что вообще лежит в репозитории `yum repo-pkgs epel list gdal*`
 	- Поглядим, какие пакете установлены в системе: `rpm -qa | grep gdal`
 
+
+- Запуск скрипта из консоли linux: `R < script.R --no-save`. Выводит все на экран, можно поглядеть ошибки
 ### Проблемы при установке пакетов
 
 - Картография
@@ -256,9 +274,11 @@ sudo make install
 ICUDT_DIR=/opt/icu55/data
 # --------------------
 ```
-
+- RMySQL не ставится. Требует системных библиотек, решается командой `sudo yum -y install mariadb-devel mysql-devel`
 
 ## Установка RStudio Server
+[Страница загрузки](https://www.rstudio.com/products/rstudio/download-server/)
+
 - Prerequisites  
 RStudio Server v0.99 requires RedHat or CentOS version 5.4 (or higher) as well as an installation of R. You can install R for RedHat and CentOS using the instructions on CRAN: https://cran.rstudio.com/bin/linux/redhat/README.
 
@@ -1433,3 +1453,23 @@ tar ztvf 42c592db2eaec99492cff6dc22e6b4df37776472.tar.gz
 Удалили содержание (всю директорию)
 rm -rf <dir>
 Работаем с .tar.gz в Windows: [IZArc is the easiest way to Zip, Unzip and Encrypt files for free](http://www.izarc.org/)
+
+
+# ================= Управление правами доступа при мапировании папок, советы от Кирилла ====================
+один из вариантов -
+сделать sudo chmod -R o+rx /home/another_user_you_want_to_access
+
+мой вариант должен работать.
+но если таких случаев будет >1, то можно создать группу и добавить всех пользователей кому нужен доступ к домашним каталогам других в группе в это группу.
+На каталого пользователей дать доступ на rx для группы.
+
+т.к. так
+groupadd statisticians
+usermod -a -G statisticians stat_user1
+usermod -a -G statisticians stat_user2
+
+chown -R :statisticians /srv/shiny-server
+chown -R :statisticians /home/stat_user1
+chown -R :statisticians /home/stat_user2
+теперь пользователи группы могу писать в /srv/shiny-server поскольку и они и /srv/shiny-server в одной группе.
+пользователям надо перелогиниться если они в shell-е сейчас.
