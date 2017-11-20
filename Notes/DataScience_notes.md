@@ -60,6 +60,60 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Data Visualization for Social Science. A practical introduction with R and ggplot2](http://socviz.co/)
 - [Sinew: Simple R Package Documentation](https://metrumresearchgroup.github.io/sinew/)
 - [The R Inferno](http://www.burns-stat.com/pages/Tutor/R_inferno.pdf)
+- [R Internals](https://cran.r-project.org/doc/manuals/r-release/R-ints.html)
+
+
+# 20.11.2017
+## R
+- COOL! [Automating Summary of Surveys with RMarkdown](https://rviews.rstudio.com/2017/11/07/automating-summary-of-surveys-with-rmarkdown/)
+- COOL! Применение пакета printr! [Automatic output format in Rmarkdown](Automatic output format in Rmarkdown)
+- COOL! [pool package on CRAN](https://blog.rstudio.com/2017/11/17/pool-0-1-3/)
+- [Six tips for running a successful unconference](https://ropensci.org/blog/2017/11/17/unconf-sixtips/)
+- [padr version 0.4.0 now on CRAN](https://edwinth.github.io/blog/padr-v04/)
+- [How to combine point and boxplots in timeline charts with ggplot2 facets](https://shirinsplayground.netlify.com/2017/11/combine_point_boxplot_ggplot/)
+- [Statebins Reimagined](https://rud.is/b/2017/11/18/statebins-reimagined/)
+- [RStudio Keyboard Shortcuts for Pipes](http://www.win-vector.com/blog/2017/11/rstudio-keyboard-shortcuts-for-pipes/)
+	- [Ad-ins and keyboard shortcuts for building calculation pipelines in R](https://github.com/WinVector/addinexamplesWV)
+	- [RStudio Addins](https://rstudio.github.io/rstudioaddins/)
+- Win-Vector
+	- [Survive R](http://www.win-vector.com/blog/2009/09/survive-r/)
+	- [R examine objects tutorial](http://www.win-vector.com/blog/2009/11/r-examine-objects-tutorial/)
+	- [Using closures as objects in R](http://www.win-vector.com/blog/2015/03/using-closures-as-objects-in-r/)
+- [Introduction to RE2](https://cran.rstudio.com/web/packages/re2r/vignettes/re2r-intro.html). Provides an interface to Google’s deterministic finite-automaton-based regular expression engine that is very fast at matching large amounts of text
+- [Drawing O3 (Overview Of Outliers) plots](https://cran.rstudio.com/web/packages/OutliersO3/vignettes/O3-vignette.html)
+- [Introduction to ggridges](https://cran.rstudio.com/web/packages/ggridges/vignettes/introduction.html)
+	
+
+# 17.11.2017
+## DS
+- [Excel: Отображение и печать формул](https://support.office.com/ru-ru/article/%D0%9E%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C-%D1%84%D0%BE%D1%80%D0%BC%D1%83%D0%BB-6b59caf3-09d1-4d4e-87c4-43015d69a866). Чтобы отобразить формулы в ячейках, нажмите сочетание клавиш CTRL+` (маленький значок — это значок тупого ударения). Когда формулы отобразятся, распечатайте лист обычным способом. Чтобы вернуться к отображению результатов в ячейках, снова нажмите CTRL+`.
+- COOL! [RFM Analysis For Successful Customer Segmentation](https://www.putler.com/rfm-analysis/)
+- COOL! [Незадача коммивояжера и красный октябрь](https://habrahabr.ru/company/ods/blog/339338/)
+	- [http://snap.stanford.edu/class/cs224w-videos-2017/171031-cs224w-720.mp4]
+## R
+- [New IBM Plex Sans Support in hrbrthemes + Automating Axis Text Justification](https://rud.is/b/2017/11/16/new-ibm-plex-sans-support-in-hrbrthemes-automating-axis-text-justification/)
+- COOL! [GGally - Extension to ‘ggplot2’](http://ggobi.github.io/ggally/). Различные графики для анализа данных. Полезная вещь в части анализа зависимостей -- `ggpairs`
+
+# 16.11.2017
+## R
+- R GC:
+	- Команда `gcinfo(TRUE)` включает трассировку работы gc. "The first line gives a breakdown of the number of garbage collections at various levels (for an explanation see the ‘R Internals’ manual)."
+	- [R Internals](https://cran.r-project.org/doc/manuals/r-release/R-ints.html)
+	- [Memory Available for Data Storage](https://www.math.ucla.edu/~anderson/rw1001/library/base/html/Memory.html)
+	- почти то же самое [Memory Available for Data Storage](https://stat.ethz.ch/R-manual/R-devel/library/base/html/Memory.html)
+	- `memory.profile()`
+- [Speeding up package installation](http://blog.jumpingrivers.com/posts/2017/speed_package_installation/)
+- [Data Wrangling at Scale](http://winvector.github.io/FluidData/DataWranglingAtScale.html)
+- [Using Shiny with Scheduled and Streaming Data](https://rviews.rstudio.com/2017/11/15/shiny-and-scheduled-data-r/)
+- COOL! [ggplot2 explorer](http://databall.co/shiny/shinyggplot/). I created this website to help all R learners to undestand how to plot beautiful/useful charts using the most popular vizualization package ggplot2. It won't teach you how to write a code, but definitely will show you how ggplot2 geoms look like, and how manipulating their arguments changes visualization. Few scrolls below you can find list of covered geoms and example of what they plot.
+	- [Исходники ggplot2 visual explorer](https://github.com/AlienDeg/shinyexplorer)
+- [ryantimpe/rspivot](https://github.com/ryantimpe/rspivot). RStudio addin to view data frames as pivot tables. View data as values, growth rates, and shares.
+
+- По мотивам вопроса в Slack. 
+	- [Produce a list of variable name in a for loop, then assign values to them](https://stats.stackexchange.com/questions/10838/produce-a-list-of-variable-name-in-a-for-loop-then-assign-values-to-them)
+	- [Dynamic Variable naming in r](https://stackoverflow.com/questions/20855818/dynamic-variable-naming-in-r)
+
+
 
 # 15.11.2017
 ## R
@@ -209,7 +263,6 @@ An environment that implements the Rook specification for HTTP requests. This is
 - [How does covr work anyway?](https://cran.r-project.org/web/packages/covr/vignettes/how_it_works.html)
 - [Metropolis-in-Gibbs Sampling and Runtime Analysis with Profviz](https://stablemarkets.wordpress.com/2017/11/07/metropolis-in-gibbs-sampling-and-runtime-analysis-with-profviz/)
 - [Setting up twitter streamR Service on an Ubuntu server](http://amitkohli.com/setting-up-twitter-streamr-service-on-an-ubuntu-server/)
-- [Automating Summary of Surveys with RMarkdown](https://rviews.rstudio.com/2017/11/07/automating-summary-of-surveys-with-rmarkdown/)
 - [Data acquisition in R (2/4)](https://ikashnitsky.github.io/2017/data-acquisition-two/)
 - Error handling in Shiny:
 	- [Shiny. Sanitizing error messages](https://shiny.rstudio.com/articles/sanitize-errors.html)
@@ -248,6 +301,9 @@ __Luckily, shinyURL also has an inherent way of ignoring user selected inputs. H
 - [Intro to TensorFlow in R](https://www.edgarsdatalab.com/2017/10/22/intro-to-tensorflow-in-r/)
 - [Is dplyr Easily Comprehensible?](http://www.win-vector.com/blog/2017/08/is-dplyr-easily-comprehensible/)
 	- [Advanced dplyr Quiz (author: John Mount)](https://github.com/WinVector/Examples/blob/master/dplyr/dplyrQuiz.md)
+## Shiny
+- Плавающий TOC: См. раздел [Floating TOC](http://rmarkdown.rstudio.com/html_document_format.html). А целый сайт с навигацией делается уже из набора Rmd-документов: http://rmarkdown.rstudio.com/rmarkdown_websites.html
+
 
 # 05.11.2017
 ## R Debug

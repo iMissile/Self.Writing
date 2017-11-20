@@ -32,7 +32,7 @@
 - [RAMDisk, или что делать если у вас в компьютере 128 гигабайт оперативной памяти](https://geektimes.ru/company/kingston_technology/blog/277610/)
 - RAMDisks:
 	- [SoftPerfect RAM Disk](http://forum.ru-board.com/topic.cgi?forum=35&topic=47817&start=40#lt)
-	- [DataRAM RAMDisk](http://memory.dataram.com/products-and-services/software/ramdisk)
+	- Остановился на этом. [DataRAM RAMDisk](http://memory.dataram.com/products-and-services/software/ramdisk)
 	- [Primo Ramdisk (VSuite Ramdisk II) - Powerful RAM Disk Emulator for Windows](http://www.romexsoftware.com/en-us/primo-ramdisk/)
 - [Отучиваем Google Chrome убивать ресурс SSD винчестера](https://habrahabr.ru/sandbox/59573/)
 Следующий вариант по-моему скромному мнению, решил все мои проблемы. Я решил использовать RAM Drive — т.е. держать все в оперативной памяти, и только лишь при выключении писать на винчестер. Учитывая что ноутбук у меня либо включен, либо в ждущем режиме, то писаться при выключении будет очень редко. Из понравившихся программ остановил выбор на Qsoft RAMDisk. Ставится как драйвер. В свойствах выбрал размер диска, файловую систему, куда писать при выключении. Под диск выделил 512 МБ (думаю разумный минимум 128 МБ).
