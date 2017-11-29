@@ -8,6 +8,9 @@
 - [onefactor](https://1f.ai/ru/)
 - [ReservoContext: поисковая система для переводов в контексте](http://context.reverso.net)
 # LEGO
+- Цель [сайта Bricker.ru](http://bricker.ru/) - предоставить всю необходимую информацию о LEGO и LEGO-совместимых конструкторах. В Интернете множество обзоров различных наборов LEGO, мы их находим и добавляем сюда, чтобы Вы могли не повторять наших поисков.
+- [Купить реплики Лего](https://www.iqreplica.ru/train-series)
+- [LEGO и LEPIN сравнение конструкторов аналогов и их отличие друг от друга](https://tradewith.asia/a192442-lego-lepin-sravnenie.html)
 - ["Выбери Кубик". Интернет-магазин деталей ЛЕГО](http://vyberi-kubik.ru/)
 - [KinderMix. Игрушки и конструкторы ЛЕГО](http://kindermix.ru/individual-bricks.html?themes=66). Детальки
 - [http://ebricks.ru/](http://ebricks.ru/)
@@ -62,9 +65,152 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [The R Inferno](http://www.burns-stat.com/pages/Tutor/R_inferno.pdf)
 - [R Internals](https://cran.r-project.org/doc/manuals/r-release/R-ints.html)
 
+# 29.11.2017
+## Data Validation
+- [checkmate: Fast and Versatile Argument Checks](https://cran.r-project.org/web/packages/checkmate/index.html). Tests and assertions to perform frequent argument checks. A substantial part of the package was written in C to minimize any worries about execution time overhead.
+- [checkmate: Fast Argument Checks for Defensive R Programming](https://arxiv.org/pdf/1701.04781)
+- [Easy data validation with the validate package](http://www.markvanderloo.eu/yaRb/2016/03/25/easy-data-validation-with-the-validate-package/)
+- [`ruler`: Rule Your Data](). `ruler` offers a set of tools for creating tidy data validation reports using dplyr grammar of data manipulation. It is structured to be flexible and extendable in terms of creating rules and using their output.
+	- [Rule Your Data with Tidy Validation Reports. Design](http://www.questionflow.org/2017/11/28/rule-your-data-with-tidy-validation-reports-design/)
+- [data-cleaning/validate](https://github.com/data-cleaning/validate). Professional data validation for the R environment
+- Оно же: [validate: Data Validation Infrastructure](https://cran.r-project.org/web/packages/validate/index.html)
+- [sfirke/janitor](https://github.com/sfirke/janitor). simple tools for data cleaning in R
+
+
+## R
+- COOL! [A MORE REPRODUCIBLE RESEARCH WITH THE LIFTR PACKAGE FOR R](https://matthewdharris.com/2017/11/27/a-more-reproducible-research-with-the-liftr-package-for-r/)
+	- [A Quick Introduction to liftr](https://liftr.me/articles/liftr-intro.html)
+- COOL!!!! [CUSTOMER ANALYTICS: USING DEEP LEARNING WITH KERAS TO PREDICT CUSTOMER CHURN](http://www.business-science.io/business/2017/11/28/customer_churn_analysis_keras.html)
+	- [R interface to Keras](https://tensorflow.rstudio.com/keras/). Keras is a high-level neural networks API developed with a focus on enabling fast experimentation. Being able to go from idea to result with the least possible delay is key to doing good research
+	- COOL! [Overview of Artificial Neural Networks and its Applications](https://www.xenonstack.com/blog/overview-of-artificial-neural-networks-and-its-applications)
+	- [IBM Watson Telco Customer Churn Data Set](https://www.ibm.com/communities/analytics/watson-analytics-blog/predictive-insights-in-the-telco-customer-churn-data-set/)
+	- As for most business problems, it’s equally important to explain what features drive the model, which is why we’ll use the [`lime` package](https://github.com/thomasp85/lime) for explainability. We cross-checked the LIME results with a Correlation Analysis using the [`corrr` package](https://github.com/drsimonj/corrr). We’re not done yet. In addition, we use three new packages to assist with Machine Learning (ML): 
+		- [`recipes`](https://topepo.github.io/recipes) for preprocessing, 
+		- [`rsample`](https://topepo.github.io/rsample/) for sampling data 
+		- and [`yardstick`](https://github.com/topepo/yardstick) for model metrics. These are relatively new additions to CRAN developed by Max Kuhn at RStudio (creator of the [`caret`](http://topepo.github.io/caret/index.html) package). It seems that R is quickly developing ML tools that rival Python.
+- [How to make Python easier for the R user: revoscalepy](http://blog.revolutionanalytics.com/2017/11/revoscalepy.html)
+- [7 SIMPLE STEPS TO INSTALL TENSORFLOW ON WINDOWS](http://saintlad.com/install-tensorflow-on-windows/)
+- [Building the oomsifyer](http://rmhogervorst.nl/cleancode/blog/2017/11/28/building-the-oomsifier.html)
+- COOL! [Tidy spatial data in R: using dplyr, tidyr, and ggplot2 with sf](http://strimas.com/r/tidy-sf/)
+- Интересно. [renkun-ken/rlist](https://github.com/renkun-ken/rlist). A Toolbox for Non-Tabular Data Manipulation
+- [`listless`: Convert Lists to Tidy Data Frames](https://cran.r-project.org/web/packages/listless/index.html)
+- COOL! [lplyr: 'dplyr' Verbs for Lists and Other Verbs for Data Frames](https://cran.r-project.org/web/packages/lplyr/index.html). Provides 'dplyr' verbs for lists and other useful verbs for manipulation of data frames. In particular, it includes a mutate_which() function that mutates columns for a specific subset of rows defined by a condition, and fuse() which is a more flexible version of 'tidyr' unite() function.
+- [#11: (Much) Faster Package (Re-)Installation via Caching](http://dirk.eddelbuettel.com/blog/2017/11/27/#011_faster_package_installation_one)
+- Интересный пример про графы: [Secret Santa is a graph traversal problem](https://tjmahr.github.io/secret-santa-graph-traversal/)
+- [Vectorized Block ifelse in R](http://www.win-vector.com/blog/2017/11/vectorized-block-ifelse-in-r/)
+
+# 28.11.2017
+## DS
+- [Odds ratio / Отношение шансов](https://ru.wikipedia.org/wiki/%D0%9E%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B5_%D1%88%D0%B0%D0%BD%D1%81%D0%BE%D0%B2)
+Если p - вероятность некоторого исхода в бинарном случае, тогда отношение p / (1 − p) называют перевесом (английское слово odds также имеет близкие по смыслу значения «фора», «гандикап», «преимущество»).
+- [Simple Guide to Logistic Regression in R](https://www.analyticsvidhya.com/blog/2015/11/beginners-guide-on-logistic-regression-in-r/)
+- [Building a Logistic Regression model from scratch](https://www.analyticsvidhya.com/blog/2015/10/basics-logistic-regression/)
+- [30 Questions to test your understanding of Logistic Regression](https://www.analyticsvidhya.com/blog/2017/08/skilltest-logistic-regression/)
+- [Skilltest: Logistic Regression](https://datahack.analyticsvidhya.com/contest/skilltest-logistics-regression/)
+- [«Правда, чистая правда и статистика» или «15 распределений вероятности на все случаи жизни»](https://habrahabr.ru/post/311092/)
+
+## R
+- [String manipulations on full names](http://f.briatte.org/r/string-manipulation-on-full-names)
+
+# 27.11.2017
+## R
+- [Debugging Shiny applications](https://shiny.rstudio.com/articles/debugging.html), LAST UPDATED: 30 MAY 2017
+- [Comparing plotly & ggplotly plot generation times](http://blog.jumpingrivers.com/posts/2017/plotly_vs_ggplotly/)
+- [How to Format Numbers, Dates, and Time Using in D3 HTMLWidgets in R](https://www.displayr.com/how-to-format-numbers-dates-and-time-using-in-d3-htmlwidgets-in-r/)
+- [tidyverse - prefered way to turn a named vector into a data.frame/tibble](https://stackoverflow.com/questions/40036207/tidyverse-prefered-way-to-turn-a-named-vector-into-a-data-frame-tibble)
+- COOL! [Joining Data in R with dplyr](https://rpubs.com/williamsurles/293454) by William Surles, 2017-07-20
+- [TIDY WORD VECTORS, TAKE 2!](https://juliasilge.com/blog/word-vectors-take-two/)
+
+
+## DS in HR
+- Отличный, однако, блог! [Анализ текучести персонала – Методы прогнозирования](https://edwvb.blogspot.ru/2017/07/analiz-tekuchesti-personala-metody-prognozirovaniya.html)
+Это перевод, и очень замечательный перевод ОТЛИЧНОЙ статьи ["Analyzing Employee Turnover - Predictive Methods"](https://www.linkedin.com/pulse/analyzing-employee-turnover-predictive-methods-richard-rosenow-pmp).  Ричард Розенбоу (Richard Rosenow) написал две очень неплохие статьи о текучести персонала, которые перевела Екатерина Малинина, HR business partner в IT-отрасли.]
+- [Анализ текучести персонала – Описательные методы](https://edwvb.blogspot.ru/2017/06/analiz-tekuchesti-personala-opisatelnye-metody.html). Перевод ОТЛИЧНОЙ статьи ["Analyzing Employee Turnover - Descriptive Methods"](https://www.linkedin.com/pulse/analyzing-turnover-descriptive-methods-richard-rosenow-pmp/)
+- Идем по ссылкам с этих статей: 
+- [Employee Attrition: Survival Analysis](https://deedata.wordpress.com/2016/01/12/employee-attrition-survival-analysis/)
+- [Who's Afraid of Logistic Regression?](https://www.linkedin.com/pulse/whos-afraid-logistic-regression-paul-dalen/)
+- [Regression analysis: A quick primer for media on a fundamental form of data crunching](https://journalistsresource.org/tip-sheets/research/regression-analysis-primer-for-journalists)
+- [Logistic Regression for Small Business Decision Makers](https://www.linkedin.com/pulse/logistic-regression-small-business-decision-makers-paul-dalen/)
+- [Машинное обучение для HR-задач. Борис Вольфсон](http://docplayer.ru/41941451-Mashinnoe-obuchenie-dlya-hr-zadach-boris-volfson.html)
+
+## DS
+- [What are OLTP and OLAP. What is the difference between them?](https://stackoverflow.com/questions/21900185/what-are-oltp-and-olap-what-is-the-difference-between-them)
+
+
+# 24.11.2017
+## R
+- [Association rules using FPGrowth in Spark MLlib through SparklyR](https://longhowlam.wordpress.com/2017/11/23/association-rules-using-fpgrowth-in-spark-mllib-through-sparklyr/)
+
+# 23.11.2017
+## R
+- [Forecasting time series with neural networks in R](http://kourentzes.com/forecasting/2017/02/10/forecasting-time-series-with-neural-networks-in-r/)
+- [iheatmapr](https://ropensci.github.io/iheatmapr/index.html) is an R package for building complex, interactive heatmaps using modular building blocks.
+
+## Shiny
+- Решаем задачу включения изображений и unicode символов в selectInput
+	- [How does one use special symbols in a choices list as names?](https://stackoverflow.com/questions/39040018/how-does-one-use-special-symbols-in-a-choices-list-as-names)
+	- [unicode inequalities (u2264 and u2265) not working on windows #961 {Closed}](https://github.com/rstudio/shiny/issues/961)
+	- [Option group for selectizeInput](https://shiny.rstudio.com/gallery/option-groups-for-selectize-input.html)
+	- [Using selectize input](https://shiny.rstudio.com/articles/selectize.html)
+	- [Пример приложения с картинками в selectize](https://shiny.rstudio.com/gallery/selectize-rendering-methods.html)
+	- [R shiny custom icon/image in selectInput](https://stackoverflow.com/questions/30486412/r-shiny-custom-icon-image-in-selectinput)
+	- используем shinyWidgets, либо голый JS. [selectizeInput with image/icon](https://stackoverflow.com/questions/46635054/selectizeinput-with-image-icon). Детали про `I()` можно почитать [здесь](https://shiny.rstudio.com/reference/shiny/latest/renderDataTable.html):
+```
+For the options argument, the character elements that have the class "AsIs" (usually returned from I()) will be evaluated in JavaScript. This is useful when the type of the option value is not supported in JSON, e.g., a JavaScript function, which can be obtained by evaluating a character string. Note this only applies to the root-level elements of the options list, and the I() notation does not work for lower-level elements in the list.
+```	
+	- [Set location of WWW directory · Issue #578 {closed}](https://github.com/rstudio/shiny/issues/578)
+	- Визуальный конструктор тем для ggplot. [bchartoff/ggShinyApp. Shiny app to build custom ggplot themes](https://github.com/bchartoff/ggShinyApp)
+	- [Unicode app does not work on Windows 7 #785 {Closed}](https://github.com/rstudio/shiny/issues/785)
+- [How to remember point shape codes in R](http://www.win-vector.com/blog/2012/04/how-to-remember-point-shape-codes-in-r/). Внизу комментариев более хороший код:
+```
+library('ggplot2')
+ggplot(data=data.frame(x=c(0:25))) + geom_point(size=8, aes(x=x,y=x,shape=x)) +
+  facet_wrap(~ x, scales='free') + xlab('') + ylab('') +
+  scale_shape_identity() +
+  theme(axis.text.x=element_blank(), axis.text.y=element_blank(),
+        axis.ticks=element_blank(), legend.position='none',
+        panel.background=element_blank(),
+        panel.grid.major=element_blank(),
+        panel.border=element_blank())
+```
+- [ggplot2 Quick Reference: shape](http://sape.inf.usi.ch/quick-reference/ggplot2/shape)
+- [Shapes and line types](https://notebook.thrive.to/tutorial/3xKcCYPXAu3DPWndj?view=MidFullScreen)
+
+
+# 22.11.2017
+## R
+- [Function to change Null to NA](https://stackoverflow.com/questions/40379021/function-to-change-null-to-na)
+- [Using column index in dplyr's rename](https://stackoverflow.com/questions/42769650/using-column-index-in-dplyrs-rename)
+- [Using an R ‘template’ package to enhance reproducible research or the ‘R package syndrome’](https://www.r-bloggers.com/using-an-r-template-package-to-enhance-reproducible-research-or-the-r-package-syndrome/)
+	- [Презентация с userR! 2017](https://schd.ws/hosted_files/user2017/04/business_reporting_610.pdf)
+- [ochRe - Australia themed colour palettes](https://ropensci.org/blog/2017/11/21/ochre/)
+- [xray: The R Package to Have X Ray Vision on your Datasets](https://blog.datascienceheroes.com/x-ray-vision-on-your-datasets/)
+- [Scale up your parallel R workloads with containers and doAzureParallel](http://blog.revolutionanalytics.com/2017/11/doazureparallel-containers.html)
+- [Network Analysis and Visualization with R and igraph](http://kateto.net/networks-r-igraph) by Katherine Ognyanova, www.kateto.net. NetSciX 2016 School of Code Workshop, Wroclaw, Poland
+
+# 21.11.2017
+## R
+- [Timing in R](http://blog.jumpingrivers.com/posts/2017/timing-in-r/)
+- [Workshop on Deep Learning with Keras and TensorFlow in R](https://shirinsplayground.netlify.com/2017/11/deep_learning_keras_tensorflow/)
+- Неплохо написано, с кодом: [Predict Customer Churn – Logistic Regression, Decision Tree and Random Forest](https://datascienceplus.com/predict-customer-churn-logistic-regression-decision-tree-and-random-forest/)
+- COOL! [«smooth» package for R. Common ground. Part II. Estimators](http://forecasting.svetunkov.ru/en/2017/11/20/smooth-package-for-r-common-ground-part-ii-estimators/)
+- [DataIku. Collaborative Data Science Platform](https://www.dataiku.com/). Prototype, Deploy, & Run at Scale
+	- [Dataiku 4.1.0: More support for R users!](https://longhowlam.wordpress.com/2017/11/20/dataiku-4-1-0-more-support-for-r-users/)
+- [Apache Superset](https://github.com/apache/incubator-superset) (incubating) is a modern, enterprise-ready business intelligence web application. {this project used to be named Caravel, and Panoramix in the past}
+- [Superset: benefits and limitations of the open source data visualization tool by Airbnb](https://medium.com/@InDataLabs/superset-benefits-and-limitations-of-the-open-source-data-visualization-tool-by-airbnb-8dc8ac81efa9)
 
 # 20.11.2017
+## Git
+- [.2 Ветвление в Git - Основы ветвления и слияния](https://git-scm.com/book/ru/v1/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F)
+- [Добро пожаловать в LearnGitBranching!](https://learngitbranching.js.org/)
+Это приложение создано, чтобы помочь новичкам постичь мощные возможности ветвления и работы с git. Мы надеемся, что вам понравится эта игра и может вы что-то усвоите!
+
+## Shiny
+- [Build a dynamic UI that reacts to user input](https://shiny.rstudio.com/articles/dynamic-ui.html)
+- [Dynamically Generated Shiny UI](https://www.mango-solutions.com/blog/dynamicaly-generated-shiny-ui)
+
 ## R
+- COOL! [littler: R at the Command-Line via 'r'](https://cran.r-project.org/web/packages/littler/index.html)
 - COOL! [Automating Summary of Surveys with RMarkdown](https://rviews.rstudio.com/2017/11/07/automating-summary-of-surveys-with-rmarkdown/)
 - COOL! Применение пакета printr! [Automatic output format in Rmarkdown](Automatic output format in Rmarkdown)
 - COOL! [pool package on CRAN](https://blog.rstudio.com/2017/11/17/pool-0-1-3/)
@@ -82,6 +228,16 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Introduction to RE2](https://cran.rstudio.com/web/packages/re2r/vignettes/re2r-intro.html). Provides an interface to Google’s deterministic finite-automaton-based regular expression engine that is very fast at matching large amounts of text
 - [Drawing O3 (Overview Of Outliers) plots](https://cran.rstudio.com/web/packages/OutliersO3/vignettes/O3-vignette.html)
 - [Introduction to ggridges](https://cran.rstudio.com/web/packages/ggridges/vignettes/introduction.html)
+- [Знакомьтесь: диаграммы Сэнкей / Sankey](http://infographer.ru/sankey-diagrams/)
+	- [Sankey from Scratch using rCharts, d3.js, and igraph](http://timelyportfolio.github.io/rCharts_d3_sankey/example_build_network_sankey.html)
+	- [Network visualization – part 6: D3 and R (networkD3)](http://www.vesnam.com/Rblog/). Хороший пример по применению igraph.
+	- [A BRIEF DIVERSION INTO STATIC ALLUVIAL/SANKEY DIAGRAMS IN R](https://matthewdharris.com/2017/11/11/a-brief-diversion-into-static-alluvial-sankey-diagrams-in-r/)
+	- [Creating Custom Sankey Diagrams Using R](https://www.displayr.com/sankey-diagrams-r/)
+	- [ggalluvial](http://corybrunson.github.io/ggalluvial/). The alluvial plots implemented here can be used to visualize frequency distributions over time or frequency tables involving several categorical variables. The design is derived mostly from the alluvial package, but the ggplot2 framework induced several conspicuous differences:
+	- [ggforce: Visual Guide](https://cran.r-project.org/web/packages/ggforce/vignettes/Visual_Guide.html)
+	- [sample](https://www.rdocumentation.org/packages/networkD3/versions/0.4/topics/sankeyNetwork). sankeyNetwork From networkD3. Create A D3 JavaScript Sankey Diagram
+	- [Quick Round-Up – Visualising Flows Using Network and Sankey Diagrams in Python and R](https://blog.ouseful.info/2017/11/28/quick-round-up-visualising-flows-using-network-and-sankey-diagrams-in-python-and-r/)
+- [R tip: evaluating a text/string as a command](https://impaulchung.wordpress.com/2013/01/09/r-tip-str-command/)
 	
 
 # 17.11.2017
@@ -107,6 +263,10 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Using Shiny with Scheduled and Streaming Data](https://rviews.rstudio.com/2017/11/15/shiny-and-scheduled-data-r/)
 - COOL! [ggplot2 explorer](http://databall.co/shiny/shinyggplot/). I created this website to help all R learners to undestand how to plot beautiful/useful charts using the most popular vizualization package ggplot2. It won't teach you how to write a code, but definitely will show you how ggplot2 geoms look like, and how manipulating their arguments changes visualization. Few scrolls below you can find list of covered geoms and example of what they plot.
 	- [Исходники ggplot2 visual explorer](https://github.com/AlienDeg/shinyexplorer)
+	- Визуальный конструктор тем для ggplot. [bchartoff/ggShinyApp. Shiny app to build custom ggplot themes](https://github.com/bchartoff/ggShinyApp)
+- COOL! [ggedit 0.0.2: a GUI for advanced editing of ggplot2 objects](https://www.r-statistics.com/2017/01/ggedit-0-0-2-a-gui-for-advanced-editing-of-ggplot2-objects/)
+	- [Исходники ggedit2]()
+	- [The ggedit gitbook](https://metrumresearchgroup.github.io/ggedit/)
 - [ryantimpe/rspivot](https://github.com/ryantimpe/rspivot). RStudio addin to view data frames as pivot tables. View data as values, growth rates, and shares.
 
 - По мотивам вопроса в Slack. 
@@ -139,7 +299,6 @@ https://www.crowdgames.ru/page/plany-crowd-games
 
 # 13.11.2017
 ## R
-- [Easy data validation with the validate package](http://www.markvanderloo.eu/yaRb/2016/03/25/easy-data-validation-with-the-validate-package/)
 - [Measuring & Monitoring Internet Speed with R](https://rud.is/b/2017/11/11/measuring-monitoring-internet-speed-with-r/)
 - [SHINYPROXY 1.0.2](https://www.openanalytics.eu/blog/2017/11/12/shinyproxy-1.0.2/)
 - [Creating integer64 and nanotime vectors in C++](http://gallery.rcpp.org//articles/creating-integer64-and-nanotime-vectors/)
@@ -616,8 +775,7 @@ Newhall, Nickerson & Judd (1943), Final report of the O.S.A Subcommittee on the 
 # 09.10.2017
 ## R
 - [IT'S TIBBLETIME V0.0.2: TIME-AWARE TIBBLES, NEW FUNCTIONS, WEATHER ANALYSIS AND MORE](http://www.business-science.io/code-tools/2017/10/08/tibbletime-0-0-2.html)
-- [checkmate: Fast and Versatile Argument Checks](https://cran.r-project.org/web/packages/checkmate/index.html). Tests and assertions to perform frequent argument checks. A substantial part of the package was written in C to minimize any worries about execution time overhead.
-- [checkmate: Fast Argument Checks for Defensive R Programming](https://arxiv.org/pdf/1701.04781)
+
 
 # 06.10.2017
 ## R
@@ -1052,6 +1210,7 @@ A few months ago rOpenSci’s Scott Chamberlain asked me for feedback about a ne
 	- [shinyloadtest](https://rstudio.github.io/shinyloadtest/). This package extends the shinytest package to enable users to load test deployed Shiny applications. Load testing is executed using parallel phantomJS sessions.
 	- COOL! [mexindian/ShinyTester](https://github.com/mexindian/ShinyTester). An R package to help debug Shiny apps during the process itself.
 - [Build a dynamic UI that reacts to user input](https://shiny.rstudio.com/articles/dynamic-ui.html)
+- [Dynamically Generated Shiny UI](https://www.mango-solutions.com/blog/dynamicaly-generated-shiny-ui)
 - [extendShinyjs: Calling your own JavaScript functions from R](https://cran.r-project.org/web/packages/shinyjs/vignettes/shinyjs-extend.html)
 - `updateNavbarPage` [R shiny - observeEvent - make the commands execute in order and in real time](https://stackoverflow.com/questions/32806113/r-shiny-observeevent-make-the-commands-execute-in-order-and-in-real-time)
 - COOL [Shiny: How to adjust the width of the tabsetPanel?](https://stackoverflow.com/questions/19096439/shiny-how-to-adjust-the-width-of-the-tabsetpanel). 
@@ -6648,3 +6807,12 @@ Hosted directly from your GitHub repository. Just edit, push, and your changes a
 По факту необходимо прекрасно разбираться в предметной области, иначе будет пустое жонглирование цифрами.
 
 Скажите, пожалуйста, получится ли у Вас прислать ответы? Срок - 23 сентября, в крайнем случае - 24 сентября. Будет необходимо фото спикера и его "представление" (Имя_Фамилия, должность в компании) Спасибо! С уважением, Игорь Штомпель
+
+
+
+================================
+Почему Кликхаус (кратко).
+1. Для обеспечения работы аналитической подсистемы архитектурно необходим OLAP (On-Line Analytical Processing) бэкенд. Для обеспечения работы АРМ архитектурно необходим OLTP (On-line Transaction Processing) бэкенд. Clickhouse является OLAP системой, MS SQL -- OLTP. Список принципиальных различий между OLAP и OLTP длинный и доступен в различных открытых источниках.
+2. В контексте задачи для построения оперативных аналитических отчетов, срезов, прогнозов и пр. необходимо собирать историческую (инвариантную по времени) информацию со всех распределенных информационных систем, содержащих требуемые в в аналитических процессах исходные данные. Источники данных разнородны и включают в себя как классические RDBMS, так и потоковые данные, лог файлы и различные внешние справочники во всевозможных форматах (json, xml, excel). Процесс сбора подобных данных будет включать этап препроцессинга.
+3. Clickhouse решает одновременно две задачи: хранит и обрабатывает исторические данные, необходимые для аналитической подсистемы, и хранит все технические логи и события для обеспечения задачи устранения неисправностей (траблшутинг). И для той и для другой задачи данные необходимо хранить в исходном виде, без агрегации и редукции. Clickhouse -- колоночно-ориентированная БД со встроенным механизмом шардирования по секционирования по дате. Подобная архитектура БД позволяет эффективно хранить и обрабатывать разреженные таблицы с несколькими сотнями (или даже тысячами) колонок данных в "сыром виде". Это типичный кейс, который встречается в системах, обеспечивающих В частности, трансформация событий AMI в таблицу со всеми возможными параметрами (согласно спецификации) дает таблицу с более чем 600 колонками.
+4. Clickhouse распространяется по модели open-source, бесплатна, российского производства, прошла многолетнюю апробацию на масштабах данных, измеряемых Петабайтами. При этом по производительности Clickhouse кратно превышает ряд известных коммерческих OLAP систем (https://clickhouse.yandex/benchmark.html), не говоря уж о OLTP, которые не архитектурно предназначены для совершенно иных задач.
