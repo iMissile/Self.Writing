@@ -7,6 +7,7 @@
 - [Appsylum](http://appsylum.com/). Find Discuss & Support the Apps You Love
 - [onefactor](https://1f.ai/ru/)
 - [ReservoContext: поисковая система для переводов в контексте](http://context.reverso.net)
+
 # LEGO
 - Цель [сайта Bricker.ru](http://bricker.ru/) - предоставить всю необходимую информацию о LEGO и LEGO-совместимых конструкторах. В Интернете множество обзоров различных наборов LEGO, мы их находим и добавляем сюда, чтобы Вы могли не повторять наших поисков.
 - [Купить реплики Лего](https://www.iqreplica.ru/train-series)
@@ -65,13 +66,136 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [The R Inferno](http://www.burns-stat.com/pages/Tutor/R_inferno.pdf)
 - [R Internals](https://cran.r-project.org/doc/manuals/r-release/R-ints.html)
 
+# Video
+- [Основы анализа данных. ВШЭ](https://www.youtube.com/channel/UCLk-Oih8VlqF-StidijTUnw/videos)
+
+# 06.12.2017
+## R
+- [On the biases in data](http://blog.revolutionanalytics.com/2017/12/on-the-biases-in-data.html)
+- [#R - DEPRECATE FUNCTIONS WITH ROXYGEN2](http://mirai-solutions.ch/news/2017/12/05/roxygen2-deprecate/)
+
+## TensorFlow
+- Инсталляция под Windows: [7 SIMPLE STEPS TO INSTALL TENSORFLOW ON WINDOWS](http://saintlad.com/install-tensorflow-on-windows/)
+	- под 3.6 правильная команда такая (в консоли, запущенной от администратора): `python -m pip install --upgrade tensorflow`
+	- код принципиальной проверки инсталляции:
+```
+import tensorflow as tf
+hello = tf.constant('Hello, TensorFlow!')
+sess = tf.Session()
+print(sess.run(hello))
+a = tf.constant(10)
+b = tf.constant(32)
+print(sess.run(a + b))
+```
+
+# 05.12.2017
+## RStudio
+- Возникала подобная ошибка в проекте при старте RStudio:
+```
+Warning message:
+In file(filename, "r", encoding = encoding) : cannot open file 'packrat/init.R': No such file or directory
+```
+Решение исправить `.Rprofile` нашел здесь: ["Trouble with packrat corrupting R functioning"](https://stackoverflow.com/questions/32339042/trouble-with-packrat-corrupting-r-functioning)
+
+## R
+- [visualizing reassortment history using seqcombo](https://guangchuangyu.github.io/2017/12/visualizing-reassortment-history-using-seqcombo/)
+	- Документация в пакете: ["seqcombo for genetic reassortment"](https://www.bioconductor.org/packages/devel/bioc/vignettes/seqcombo/inst/doc/reassortment.html)
+- [5 ways a SAS Health Check can simplify a transition to R](https://www.mango-solutions.com/blog/5-ways-a-sas-health-check-can-simplify-a-transition-to-r)
+- [Announcing the Plumber v0.4.4 Release](https://trestletech.com/2017/12/04/plumber-v0-4-4/)
+- [How to Show R Inline Code Blocks in R Markdown](https://rviews.rstudio.com/2017/12/04/how-to-show-r-inline-code-blocks-in-r-markdown/)
+- COOL! Part 1. [Visualizing how confounding biases estimates of population-wide (or marginal) average causal effects](https://www.rdatagen.net/post/potential-outcomes-confounding/)
+- COOL! Part 2. [When you use inverse probability weighting for estimation, what are the weights actually doing?](https://www.rdatagen.net/post/inverse-probability-weighting-when-the-outcome-is-binary/)
+
+- COOL! [Explain! Explain! Explain!](http://smarterpoland.pl/index.php/2017/12/explain-explain-explain/). 
+Predictive modeling is fun. With random forest, xgboost, lightgbm and other elastic models… Problems start when someone is asking how predictions are calculated. Well, some black boxes are hard to explain. And this is why we need good explainers.
+	- [Understanding random forests with randomForestExplainer](https://rawgit.com/MI2DataLab/randomForestExplainer/master/inst/doc/randomForestExplainer.html)
+	- [randomForestExplainer](https://mi2datalab.github.io/randomForestExplainer/)
+	- [lantanacamara/lightgbmExplainer](https://github.com/lantanacamara/lightgbmExplainer). An R package that makes lightgbm models fully interpretable (take reference from https://github.com/AppliedDataSciencePartners/xgboostExplainer)
+	- [lime](https://github.com/thomasp85/lime). This is an R port of the Python lime package (https://github.com/marcotcr/lime) developed by the authors of the lime (Local Interpretable Model-agnostic Explanations) approach for black-box model explanations. All credits for the invention of the approach goes to the original developers.
+The purpose of lime is to explain the predictions of black box classifiers. What this means is that for any given prediction and any given classifier it is able to determine a small set of features in the original data that has driven the outcome of the prediction. To learn more about the methodology of lime read the paper and visit the repository of the original implementation.
+- COOL. [NEW R package that makes XGBoost interpretable](https://medium.com/applied-data-science/new-r-package-the-xgboost-explainer-51dd7d1aa211). For the demonstration, I'll use a dataset from Kaggle, to predict employee attrition from a fictional company.
+
+## ML
+- COOL! отличная статья. [Открытый курс машинного обучения. Тема 10. Градиентный бустинг (XGboost). Часть 1](https://habrahabr.ru/company/ods/blog/327250/)
+- [The Lasso Page. L1-constrained fitting for statistics and data mining](http://statweb.stanford.edu/~tibs/lasso.html)
+- [Доклады конференции SmartData](https://smartdataconf.ru/talks/)
+- [An Introduction to XGBoost R package](http://dmlc.ml/rstats/2016/03/10/xgboost.html)
+- [XGBoost. Introduction to Boosted Trees](http://xgboost.readthedocs.io/en/latest/model.html)
+- COOL! [xgboost. Теория и практика](http://biostat-r.blogspot.ru/2016/08/xgboost.html). Тут же задает вопросы "Эдуард Бабушкин 24 мая 2017 г., 11:34"
+- COOL! COOL! COOL! [Gradient Boosting explained {demonstration}](http://arogozhnikov.github.io/2016/06/24/gradient_boosting_explained.html)
+	- [Tinker With a Neural Network Right Here in Your Browser](http://playground.tensorflow.org). Don’t Worry, You Can’t Break It. We Promise.
+- LINKS:
+	- [gradient boosting explained in 3d](http://arogozhnikov.github.io/2016/06/24/gradient_boosting_explained.html)
+	- [neural networks playground](http://playground.tensorflow.org/)
+	- [NEAT playground](http://otoro.net/ml/neat-playground/)
+	- [machine learning playgrounds and visualizations](http://arogozhnikov.github.io/2016/04/28/demonstrations-for-ml-courses.html)
+	- [neural network demonstrations by Andrej Karpathy](http://cs.stanford.edu/people/karpathy/convnetjs/index.html)
+
+# 04.12.2017
+## R
+- [Please inspect your dplyr+database code](http://www.win-vector.com/blog/2017/12/please-inspect-your-dplyrdatabase-code/)
+- [Analysing iOS App Store iTunes Reviews in R](https://datascienceplus.com/analysing-ios-app-store-itunes-reviews-in-r/)
+- [Example data from Shiny reactlog](https://github.com/wch/shiny-reactlog-examples)
+
+## DS in HR
+- Отличный, однако, блог! [Анализ текучести персонала – Методы прогнозирования](https://edwvb.blogspot.ru/2017/07/analiz-tekuchesti-personala-metody-prognozirovaniya.html)
+Это перевод, и очень замечательный перевод ОТЛИЧНОЙ статьи ["Analyzing Employee Turnover - Predictive Methods"](https://www.linkedin.com/pulse/analyzing-employee-turnover-predictive-methods-richard-rosenow-pmp).  Ричард Розенбоу (Richard Rosenow) написал две очень неплохие статьи о текучести персонала, которые перевела Екатерина Малинина, HR business partner в IT-отрасли.]
+- [Прогноз текучести персонала на основе анализа дожития](https://edwvb.blogspot.ru/2017/04/prognoz-tekuchesti-personala-na-osnove-analiza-dozhitiya.html)
+	- [talentanalytics/class_survival_101](https://github.com/talentanalytics/class_survival_101). A brief code example in association with a presentation about Survival Analytics
+	- [Workforce 2017](http://www.predictiveanalyticsworld.com/workforce/2017/agenda.php#day1_145)
+- [Анализ текучести персонала – Описательные методы](https://edwvb.blogspot.ru/2017/06/analiz-tekuchesti-personala-opisatelnye-metody.html). Перевод ОТЛИЧНОЙ статьи ["Analyzing Employee Turnover - Descriptive Methods"](https://www.linkedin.com/pulse/analyzing-turnover-descriptive-methods-richard-rosenow-pmp/)
+- Идем по ссылкам с этих статей:
+	- [Employee Attrition: Exploratory Data Analysis and Predictive Modeling using R – Part 1](https://deedata.wordpress.com/2016/01/11/employee-attrition-exploratory-data-analysis-and-predictive-modeling-using-r-part-1/)
+	- [Employee Attrition: Exploratory Data Analysis and Predictive Modeling using R – Part 2](https://deedata.wordpress.com/2016/01/11/employee-attrition-exploratory-data-analysis-and-predictive-modeling-using-r-part-2/)
+	- [Employee Attrition: Exploratory Data Analysis and Predictive Modeling using R – Part 3](https://deedata.wordpress.com/2016/01/12/employee-attrition-exploratory-data-analysis-and-predictive-modeling-using-r-part-3/)
+	- [Employee Attrition: Survival Analysis](https://deedata.wordpress.com/2016/01/12/employee-attrition-survival-analysis/)
+- [Who's Afraid of Logistic Regression?](https://www.linkedin.com/pulse/whos-afraid-logistic-regression-paul-dalen/)
+- [Regression analysis: A quick primer for media on a fundamental form of data crunching](https://journalistsresource.org/tip-sheets/research/regression-analysis-primer-for-journalists)
+- [Logistic Regression for Small Business Decision Makers](https://www.linkedin.com/pulse/logistic-regression-small-business-decision-makers-paul-dalen/)
+- [Машинное обучение для HR-задач. Борис Вольфсон](http://docplayer.ru/41941451-Mashinnoe-obuchenie-dlya-hr-zadach-boris-volfson.html)
+
+## Survival Analysis
+- [Survival Analysis with R](https://rviews.rstudio.com/2017/09/25/survival-analysis-with-r/)
+- [квантиль. международный эконометрический журнал на русском языке](http://quantile.ru/05/N5.htm)
+	- [Родригес Герман. Модели выживаемости](http://quantile.ru/05/05-GR.pdf)
+- COOL! [ggfortify package](https://cran.r-project.org/web/packages/ggfortify/index.html). Unified plotting tools for statistics commonly used, such as GLM, time series, PCA families, clustering and survival analysis. The package offers a single plotting interface for these analysis results and plots in a unified style using 'ggplot2'.
+- [talentanalytics/class_survival_101](https://github.com/talentanalytics/class_survival_101). A brief code example in association with a presentation about Survival Analytics
+- [Employee Attrition: Survival Analysis](https://deedata.wordpress.com/2016/01/12/employee-attrition-survival-analysis/)
+- [Workshop on Deep Learning with Keras and TensorFlow in R](https://shirinsplayground.netlify.com/2017/11/deep_learning_keras_tensorflow/)
+- Неплохо написано, с кодом: [Predict Customer Churn – Logistic Regression, Decision Tree and Random Forest](https://datascienceplus.com/predict-customer-churn-logistic-regression-decision-tree-and-random-forest/)
+- COOL! [A Comprehensive guide to Parametric Survival Analysis](https://www.analyticsvidhya.com/blog/2015/05/comprehensive-guide-parametric-survival-analysis/)
+- COOL. [NEW R package that makes XGBoost interpretable](https://medium.com/applied-data-science/new-r-package-the-xgboost-explainer-51dd7d1aa211). For the demonstration, I'll use a dataset from Kaggle, to predict employee attrition from a fictional company.
+
+
+# 01.12.2017
+## R
+- [A quick introduction to using color in density plots](http://sharpsightlabs.com/blog/quick-intro-color-density-plot/)
+- [Visualising SSH attacks with R](https://www.enchufa2.es/archives/visualising-ssh-attacks-with-r.html)
+- COOL! [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
+
+# 30.11.2017
+## R
+- [Some new time series packages](https://robjhyndman.com/hyndsight/tspackages/)
+- [An introduction to Monte Carlo Tree Search](http://appsilondatascience.com/blog/rstats/2017/11/29/monte-carlo-tree-search.html)
+- [Win-Vector LLC announces new “big data in R” tools](http://www.win-vector.com/blog/2017/11/win-vector-llc-announces-new-big-data-in-r-tools/)
+- [Using Heatmap Coloring on a Density Plot Using R to Visualize Distributions](https://www.displayr.com/using-heatmap-coloring-density-plot-using-r-visualize-distributions/?utm_medium=Feed&utm_source=Syndication)
+- [Exploratory Data Analysis Using Random Forests](https://cran.r-project.org/web/packages/edarf/vignettes/edarf.html). 
+Добрый. А может кто подсказать пакет для нахождения расстояния (в идеале разные расстояния) для матрицы 20тыс на 10.
+
 # 29.11.2017
+## ML
+- [Методы отбора фич](https://habrahabr.ru/post/264915/)
+- [Пример Feature Engineering в машинном обучении](https://habrahabr.ru/company/mlclass/blog/249759/)
+- [Когортный анализ: 3 кейса](https://habrahabr.ru/company/io/blog/262025/)
+- [Artificial Neural Networks in R](https://rpubs.com/julianhatwell/annr)
+
 ## Data Validation
 - [checkmate: Fast and Versatile Argument Checks](https://cran.r-project.org/web/packages/checkmate/index.html). Tests and assertions to perform frequent argument checks. A substantial part of the package was written in C to minimize any worries about execution time overhead.
 - [checkmate: Fast Argument Checks for Defensive R Programming](https://arxiv.org/pdf/1701.04781)
 - [Easy data validation with the validate package](http://www.markvanderloo.eu/yaRb/2016/03/25/easy-data-validation-with-the-validate-package/)
 - [`ruler`: Rule Your Data](). `ruler` offers a set of tools for creating tidy data validation reports using dplyr grammar of data manipulation. It is structured to be flexible and extendable in terms of creating rules and using their output.
 	- [Rule Your Data with Tidy Validation Reports. Design](http://www.questionflow.org/2017/11/28/rule-your-data-with-tidy-validation-reports-design/)
+- [Usage of ruler package](http://www.questionflow.org/2017/12/05/usage-of-ruler-package/)
 - [data-cleaning/validate](https://github.com/data-cleaning/validate). Professional data validation for the R environment
 - Оно же: [validate: Data Validation Infrastructure](https://cran.r-project.org/web/packages/validate/index.html)
 - [sfirke/janitor](https://github.com/sfirke/janitor). simple tools for data cleaning in R
@@ -80,6 +204,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 ## R
 - COOL! [A MORE REPRODUCIBLE RESEARCH WITH THE LIFTR PACKAGE FOR R](https://matthewdharris.com/2017/11/27/a-more-reproducible-research-with-the-liftr-package-for-r/)
 	- [A Quick Introduction to liftr](https://liftr.me/articles/liftr-intro.html)
+- [7 SIMPLE STEPS TO INSTALL TENSORFLOW ON WINDOWS](http://saintlad.com/install-tensorflow-on-windows/)
 - COOL!!!! [CUSTOMER ANALYTICS: USING DEEP LEARNING WITH KERAS TO PREDICT CUSTOMER CHURN](http://www.business-science.io/business/2017/11/28/customer_churn_analysis_keras.html)
 	- [R interface to Keras](https://tensorflow.rstudio.com/keras/). Keras is a high-level neural networks API developed with a focus on enabling fast experimentation. Being able to go from idea to result with the least possible delay is key to doing good research
 	- COOL! [Overview of Artificial Neural Networks and its Applications](https://www.xenonstack.com/blog/overview-of-artificial-neural-networks-and-its-applications)
@@ -89,7 +214,6 @@ https://www.crowdgames.ru/page/plany-crowd-games
 		- [`rsample`](https://topepo.github.io/rsample/) for sampling data 
 		- and [`yardstick`](https://github.com/topepo/yardstick) for model metrics. These are relatively new additions to CRAN developed by Max Kuhn at RStudio (creator of the [`caret`](http://topepo.github.io/caret/index.html) package). It seems that R is quickly developing ML tools that rival Python.
 - [How to make Python easier for the R user: revoscalepy](http://blog.revolutionanalytics.com/2017/11/revoscalepy.html)
-- [7 SIMPLE STEPS TO INSTALL TENSORFLOW ON WINDOWS](http://saintlad.com/install-tensorflow-on-windows/)
 - [Building the oomsifyer](http://rmhogervorst.nl/cleancode/blog/2017/11/28/building-the-oomsifier.html)
 - COOL! [Tidy spatial data in R: using dplyr, tidyr, and ggplot2 with sf](http://strimas.com/r/tidy-sf/)
 - Интересно. [renkun-ken/rlist](https://github.com/renkun-ken/rlist). A Toolbox for Non-Tabular Data Manipulation
@@ -98,6 +222,9 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [#11: (Much) Faster Package (Re-)Installation via Caching](http://dirk.eddelbuettel.com/blog/2017/11/27/#011_faster_package_installation_one)
 - Интересный пример про графы: [Secret Santa is a graph traversal problem](https://tjmahr.github.io/secret-santa-graph-traversal/)
 - [Vectorized Block ifelse in R](http://www.win-vector.com/blog/2017/11/vectorized-block-ifelse-in-r/)
+- [Rmpfr: R MPFR - Multiple Precision Floating-Point Reliable](https://cran.r-project.org/web/packages/Rmpfr/index.html)
+Arithmetic (via S4 classes and methods) for arbitrary precision floating point numbers, including transcendental ("special") functions. To this end, Rmpfr interfaces to the LGPL'ed MPFR (Multiple Precision Floating-Point Reliable) Library which itself is based on the GMP (GNU Multiple Precision) Library.
+
 
 # 28.11.2017
 ## DS
@@ -121,17 +248,6 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - COOL! [Joining Data in R with dplyr](https://rpubs.com/williamsurles/293454) by William Surles, 2017-07-20
 - [TIDY WORD VECTORS, TAKE 2!](https://juliasilge.com/blog/word-vectors-take-two/)
 
-
-## DS in HR
-- Отличный, однако, блог! [Анализ текучести персонала – Методы прогнозирования](https://edwvb.blogspot.ru/2017/07/analiz-tekuchesti-personala-metody-prognozirovaniya.html)
-Это перевод, и очень замечательный перевод ОТЛИЧНОЙ статьи ["Analyzing Employee Turnover - Predictive Methods"](https://www.linkedin.com/pulse/analyzing-employee-turnover-predictive-methods-richard-rosenow-pmp).  Ричард Розенбоу (Richard Rosenow) написал две очень неплохие статьи о текучести персонала, которые перевела Екатерина Малинина, HR business partner в IT-отрасли.]
-- [Анализ текучести персонала – Описательные методы](https://edwvb.blogspot.ru/2017/06/analiz-tekuchesti-personala-opisatelnye-metody.html). Перевод ОТЛИЧНОЙ статьи ["Analyzing Employee Turnover - Descriptive Methods"](https://www.linkedin.com/pulse/analyzing-turnover-descriptive-methods-richard-rosenow-pmp/)
-- Идем по ссылкам с этих статей: 
-- [Employee Attrition: Survival Analysis](https://deedata.wordpress.com/2016/01/12/employee-attrition-survival-analysis/)
-- [Who's Afraid of Logistic Regression?](https://www.linkedin.com/pulse/whos-afraid-logistic-regression-paul-dalen/)
-- [Regression analysis: A quick primer for media on a fundamental form of data crunching](https://journalistsresource.org/tip-sheets/research/regression-analysis-primer-for-journalists)
-- [Logistic Regression for Small Business Decision Makers](https://www.linkedin.com/pulse/logistic-regression-small-business-decision-makers-paul-dalen/)
-- [Машинное обучение для HR-задач. Борис Вольфсон](http://docplayer.ru/41941451-Mashinnoe-obuchenie-dlya-hr-zadach-boris-volfson.html)
 
 ## DS
 - [What are OLTP and OLAP. What is the difference between them?](https://stackoverflow.com/questions/21900185/what-are-oltp-and-olap-what-is-the-difference-between-them)
@@ -191,8 +307,6 @@ ggplot(data=data.frame(x=c(0:25))) + geom_point(size=8, aes(x=x,y=x,shape=x)) +
 # 21.11.2017
 ## R
 - [Timing in R](http://blog.jumpingrivers.com/posts/2017/timing-in-r/)
-- [Workshop on Deep Learning with Keras and TensorFlow in R](https://shirinsplayground.netlify.com/2017/11/deep_learning_keras_tensorflow/)
-- Неплохо написано, с кодом: [Predict Customer Churn – Logistic Regression, Decision Tree and Random Forest](https://datascienceplus.com/predict-customer-churn-logistic-regression-decision-tree-and-random-forest/)
 - COOL! [«smooth» package for R. Common ground. Part II. Estimators](http://forecasting.svetunkov.ru/en/2017/11/20/smooth-package-for-r-common-ground-part-ii-estimators/)
 - [DataIku. Collaborative Data Science Platform](https://www.dataiku.com/). Prototype, Deploy, & Run at Scale
 	- [Dataiku 4.1.0: More support for R users!](https://longhowlam.wordpress.com/2017/11/20/dataiku-4-1-0-more-support-for-r-users/)
@@ -3133,7 +3247,7 @@ UniversalPOS annotation for languages: Ancient_Greek, Ancient_Greek-PROIEL, Arab
 # 13.03.2017
 ## LaTeX
 - [\bar vs. \overline - when to use what, semantically?](http://tex.stackexchange.com/questions/98028/bar-vs-overline-when-to-use-what-semantically)
-- [What is the “correct” way of embedding text into math mode?](http://tex.stackexchange.com/questions/3415/what-is-the-correct-way-of-embedding-text-into-math-mode). Another option is to use the \text{} command provided by the amsmath package.
+- [What is the “correct” way of embedding text into math mode?](http://tex.stackexchange.com/questions/3415/what-is-the-correct-way-of-embedding-text-into-math-mode). Another option is to use the `\text{}` command provided by the amsmath package.
 - [“Correct” way to bold/italicize text?](http://tex.stackexchange.com/questions/41681/correct-way-to-bold-italicize-text). 
 It is very simple: DO NOT USE `\bf` IN MODERN LaTeX DOCUMENTS! It is deprecated. Use `\bfseries` instead, which will work properly under the New Font Selection Scheme (NFSS) of LaTeX2e.
 - [e^{…} vs \exp(…) in display mode](http://tex.stackexchange.com/questions/254785/e-vs-exp-in-display-mode)
