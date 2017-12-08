@@ -69,6 +69,31 @@ https://www.crowdgames.ru/page/plany-crowd-games
 # Video
 - [Основы анализа данных. ВШЭ](https://www.youtube.com/channel/UCLk-Oih8VlqF-StidijTUnw/videos)
 
+# 08.12.2017
+## R
+- [A central repository of Business Science presentations http://www.business-science.io/](https://github.com/business-science/presentations)
+- [Building a simple Sales Revenue Dashboard with R Shiny & ShinyDashboard](https://datascienceplus.com/building-a-simple-sales-revenue-dashboard-with-r-shiny-shinydashboard/)
+- Новые полезные пакеты для препроцессинга данных (прогнозная аналитика):
+	- [The `recipes` package is an alternative method for creating and preprocessing design matrices that can be used for modeling or visualization](https://topepo.github.io/recipes/articles/Simple_Example.html). Developed by Max Kuhn, Hadley Wickham.
+	- [`rsample` contains a set of functions that can create different types of resamples and corresponding classes for their analysis](https://topepo.github.io/rsample/). Developed by Max Kuhn, Hadley Wickham.
+	- [`corrr` is a package for exploring correlations in R](https://github.com/drsimonj/corrr). It focuses on creating and working with data frames of correlations (instead of matrices) that can be easily explored via corrr functions or by leveraging tools like those in the tidyverse.
+	- [The `caret` Package](http://topepo.github.io/caret/index.html) by Max Kuhn. caret is short for *_C_lassification _A_nd _RE_gression _T_raining*. [Companion website](http://appliedpredictivemodeling.com/) for "Applied Predictive Modeling" book by By Max Kuhn and Kjell Johnson.
+- UseR! 2014. [The OpenCPU System. Towards a universal interface for scientific computing](https://jeroen.github.io/opencpu-slides/#1)
+
+
+## DS
+- [jamovi is a new “3rd generation” statistical spreadsheet](https://www.jamovi.org/)
+
+
+# 07.12.2017
+## R
+- [The British Ecological Society's Guide to Reproducible Science](http://blog.revolutionanalytics.com/2017/12/bes-reproducible-science.html)
+- [How to Avoid the dplyr Dependency Driven Result Corruption](http://www.win-vector.com/blog/2017/12/how-to-avoid-the-dplyr-dependency-driven-result-corruption/)
+- [MangoTheCat/sasMap. Static Code Analysis of SAS scripts](https://github.com/MangoTheCat/sasMap)
+- [solrium: General Purpose R Interface to 'Solr'](https://cran.r-project.org/web/packages/solrium/index.html)
+Provides a set of functions for querying and parsing data from 'Solr' (<http://lucene.apache.org/solr>) 'endpoints' (local and remote), including search, 'faceting', 'highlighting', 'stats', and 'more like this'. In addition, some functionality is included for creating, deleting, and updating documents in a 'Solr' 'database'.
+- Статьи, которые вошли в опубликованную книгу. [Practical Machine Learning with R and Python – Part 2](https://gigadom.wordpress.com/2017/10/13/practical-machine-learning-with-r-and-python-part-2/)
+
 # 06.12.2017
 ## R
 - [On the biases in data](http://blog.revolutionanalytics.com/2017/12/on-the-biases-in-data.html)
@@ -86,6 +111,144 @@ print(sess.run(hello))
 a = tf.constant(10)
 b = tf.constant(32)
 print(sess.run(a + b))
+```
+- [Install Keras and the TensorFlow backend](https://tensorflow.rstudio.com/keras/reference/install_keras.html)
+- [R interface to Keras](https://keras.rstudio.com/)
+- [Установка Keras с TensorFlow в Anaconda](https://www.asozykin.ru/deep_learning/2017/09/07/Keras-Installation-TensorFlow.html)
+- [Keras: The Python Deep Learning library](https://keras.io/)
+- Инсталляция `keras` под R на anaconda проходила так:
+```
+install_keras()
+Creating r-tensorflow conda environment for TensorFlow installation...
+Fetching package metadata .............
+Solving package specifications: .
+
+Package plan for installation in environment C:\Users\Ilya\ANACON~1\envs\r-tensorflow:
+
+The following NEW packages will be INSTALLED:
+
+    certifi:        2017.11.5-py36hb8ac631_0
+    pip:            9.0.1-py36h226ae91_4    
+    python:         3.6.3-h3b118a2_4        
+    setuptools:     36.5.0-py36h65f9e6e_0   
+    vc:             14-h2379b0c_2           
+    vs2015_runtime: 14.0.25123-hd4c4e62_2   
+    wheel:          0.30.0-py36h6c3ec14_1   
+    wincertstore:   0.2-py36h7fe50ca_0      
+
+python-3.6.3-h 100% |###############################| Time: 0:00:20   1.12 MB/s
+certifi-2017.1 100% |###############################| Time: 0:00:00 560.33 kB/s
+wheel-0.30.0-p 100% |###############################| Time: 0:00:00   4.57 MB/s
+pip-9.0.1-py36 100% |###############################| Time: 0:00:02   1.05 MB/s
+#
+# To activate this environment, use:
+# > activate r-tensorflow
+#
+# To deactivate an active environment, use:
+# > deactivate
+#
+# * for power-users using bash, you must source
+#
+
+Fetching package metadata ...............
+Solving package specifications: .
+
+Package plan for installation in environment C:\Users\Ilya\ANACON~1\envs\r-tensorflow:
+
+The following NEW packages will be INSTALLED:
+
+    asn1crypto:      0.22.0-py36_0         conda-forge
+    bleach:          1.5.0-py36_0          conda-forge
+    ca-certificates: 2017.11.5-0           conda-forge
+    cffi:            1.11.2-py36_0         conda-forge
+    chardet:         3.0.4-py36_0          conda-forge
+    cryptography:    2.1.4-py36_0          conda-forge
+    freetype:        2.7-vc14_1            conda-forge [vc14]
+    h5py:            2.7.1-py36_2          conda-forge
+    hdf5:            1.10.1-vc14_1         conda-forge [vc14]
+    html5lib:        0.9999999-py36_0      conda-forge
+    icc_rt:          2017.0.4-h97af966_0              
+    idna:            2.6-py36_1            conda-forge
+    intel-openmp:    2018.0.0-hd92c6cd_8              
+    jpeg:            9b-vc14_2             conda-forge [vc14]
+    keras:           2.0.9-py36_0          conda-forge
+    libgpuarray:     0.7.5-vc14_0          conda-forge [vc14]
+    libpng:          1.6.34-vc14_0         conda-forge [vc14]
+    libtiff:         4.0.7-vc14_1          conda-forge [vc14]
+    mako:            1.0.7-py36_0          conda-forge
+    markdown:        2.6.9-py36_0          conda-forge
+    markupsafe:      1.0-py36_0            conda-forge
+    mkl:             2018.0.1-h2108138_4              
+    numpy:           1.13.3-py36ha320f96_0            
+    olefile:         0.44-py36_0           conda-forge
+    openssl:         1.0.2m-vc14_0         conda-forge [vc14]
+    pillow:          4.3.0-py36_1          conda-forge
+    protobuf:        3.5.0-py36_vc14_0     conda-forge [vc14]
+    pycparser:       2.18-py36_0           conda-forge
+    pygpu:           0.7.5-py36_0          conda-forge
+    pyopenssl:       17.2.0-py36_0         conda-forge
+    pysocks:         1.6.7-py36_0          conda-forge
+    pyyaml:          3.12-py36_1           conda-forge
+    requests:        2.18.4-py36_1         conda-forge
+    scipy:           1.0.0-py36h1260518_0             
+    six:             1.11.0-py36_1         conda-forge
+    tensorboard:     0.4.0rc3-py36_0       conda-forge
+    tensorflow:      1.4.0-py36_0          conda-forge
+    theano:          0.9.0-py36_1          conda-forge
+    urllib3:         1.22-py36_0           conda-forge
+    webencodings:    0.5-py36_0            conda-forge
+    werkzeug:        0.12.2-py_1           conda-forge
+    win_inet_pton:   1.0.1-py36_1          conda-forge
+    yaml:            0.1.7-vc14_0          conda-forge [vc14]
+    zlib:            1.2.11-vc14_0         conda-forge [vc14]
+
+ca-certificate 100% |###############################| Time: 0:00:00 202.74 kB/s
+intel-openmp-2 100% |###############################| Time: 0:00:06 227.75 kB/s
+libgpuarray-0. 100% |###############################| Time: 0:00:08  38.85 kB/s
+mkl-2018.0.1-h 100% |###############################| Time: 0:04:44 571.41 kB/s
+openssl-1.0.2m 100% |###############################| Time: 0:00:22 255.07 kB/s
+yaml-0.1.7-vc1 100% |###############################| Time: 0:00:00 168.33 kB/s
+zlib-1.2.11-vc 100% |###############################| Time: 0:00:00 158.73 kB/s
+hdf5-1.10.1-vc 100% |###############################| Time: 0:02:11 143.21 kB/s
+jpeg-9b-vc14_2 100% |###############################| Time: 0:00:00 399.08 kB/s
+libpng-1.6.34- 100% |###############################| Time: 0:00:01 396.45 kB/s
+asn1crypto-0.2 100% |###############################| Time: 0:00:00 485.86 kB/s
+chardet-3.0.4- 100% |###############################| Time: 0:00:02  74.16 kB/s
+freetype-2.7-v 100% |###############################| Time: 0:00:05  77.93 kB/s
+idna-2.6-py36_ 100% |###############################| Time: 0:00:00 155.66 kB/s
+libtiff-4.0.7- 100% |###############################| Time: 0:00:05 112.44 kB/s
+markdown-2.6.9 100% |###############################| Time: 0:00:01 115.59 kB/s
+markupsafe-1.0 100% |###############################| Time: 0:00:00 203.67 kB/s
+olefile-0.44-p 100% |###############################| Time: 0:00:00 135.30 kB/s
+pycparser-2.18 100% |###############################| Time: 0:00:01 127.36 kB/s
+pyyaml-3.12-py 100% |###############################| Time: 0:00:00 146.62 kB/s
+six-1.11.0-py3 100% |###############################| Time: 0:00:00 164.57 kB/s
+webencodings-0 100% |###############################| Time: 0:00:00   4.79 MB/s
+werkzeug-0.12. 100% |###############################| Time: 0:00:00 270.23 kB/s
+win_inet_pton- 100% |###############################| Time: 0:00:00   5.36 MB/s
+cffi-1.11.2-py 100% |###############################| Time: 0:00:00 235.02 kB/s
+h5py-2.7.1-py3 100% |###############################| Time: 0:00:04 182.99 kB/s
+html5lib-0.999 100% |###############################| Time: 0:00:00 417.44 kB/s
+mako-1.0.7-py3 100% |###############################| Time: 0:00:00 505.66 kB/s
+pillow-4.3.0-p 100% |###############################| Time: 0:00:02 338.24 kB/s
+pysocks-1.6.7- 100% |###############################| Time: 0:00:00 169.80 kB/s
+scipy-1.0.0-py 100% |###############################| Time: 0:00:16 847.69 kB/s
+bleach-1.5.0-p 100% |###############################| Time: 0:00:00 187.79 kB/s
+cryptography-2 100% |###############################| Time: 0:00:11  30.17 kB/s
+protobuf-3.5.0 100% |###############################| Time: 0:01:43 107.67 kB/s
+protobuf-3.5.0 100% |###############################| Time: 0:00:16 660.24 kB/s
+pygpu-0.7.5-py 100% |###############################| Time: 0:00:00 924.99 kB/s
+pyopenssl-17.2 100% |###############################| Time: 0:00:00 162.34 kB/s
+tensorboard-0. 100% |###############################| Time: 0:00:06 280.24 kB/s
+theano-0.9.0-p 100% |###############################| Time: 0:00:03   1.14 MB/s
+keras-2.0.9-py 100% |###############################| Time: 0:00:00 908.53 kB/s
+tensorflow-1.4 100% |###############################| Time: 0:00:26 953.52 kB/s
+urllib3-1.22-p 100% |###############################| Time: 0:00:01 123.42 kB/s
+requests-2.18. 100% |###############################| Time: 0:00:00 225.74 kB/s
+
+Installation complete.
+
+Restarting R session...
 ```
 
 # 05.12.2017
@@ -116,7 +279,10 @@ The purpose of lime is to explain the predictions of black box classifiers. What
 - COOL. [NEW R package that makes XGBoost interpretable](https://medium.com/applied-data-science/new-r-package-the-xgboost-explainer-51dd7d1aa211). For the demonstration, I'll use a dataset from Kaggle, to predict employee attrition from a fictional company.
 
 ## ML
+- Еще отличный курс лекций! [Семинары по машинному обучению, ВМК МГУ](https://github.com/esokolov/ml-course-msu)
+- [Открытый курс машинного обучения. Тема 4. Линейные модели классификации и регрессии](http://www.habrahabr.net/thread/11418)
 - COOL! отличная статья. [Открытый курс машинного обучения. Тема 10. Градиентный бустинг (XGboost). Часть 1](https://habrahabr.ru/company/ods/blog/327250/)
+- [Открытый курс машинного обучения. Тема 5. Композиции: бэггинг, случайный лес](https://habrahabr.ru/company/ods/blog/324402/)
 - [The Lasso Page. L1-constrained fitting for statistics and data mining](http://statweb.stanford.edu/~tibs/lasso.html)
 - [Доклады конференции SmartData](https://smartdataconf.ru/talks/)
 - [An Introduction to XGBoost R package](http://dmlc.ml/rstats/2016/03/10/xgboost.html)
@@ -130,6 +296,12 @@ The purpose of lime is to explain the predictions of black box classifiers. What
 	- [NEAT playground](http://otoro.net/ml/neat-playground/)
 	- [machine learning playgrounds and visualizations](http://arogozhnikov.github.io/2016/04/28/demonstrations-for-ml-courses.html)
 	- [neural network demonstrations by Andrej Karpathy](http://cs.stanford.edu/people/karpathy/convnetjs/index.html)
+- [A Gentle Introduction to XGBoost for Applied Machine Learning](https://machinelearningmastery.com/gentle-introduction-xgboost-applied-machine-learning/)
+- [NEW R package that makes XGBoost interpretable](https://medium.com/applied-data-science/new-r-package-the-xgboost-explainer-51dd7d1aa211)
+- Official [XGBoost R Tutorial](http://xgboost.readthedocs.io/en/latest/R-package/xgboostPresentation.html). Xgboost is short for eXtreme Gradient Boosting package.
+- COOL! COOL! [XGBoost vs Python Sklearn gradient boosted trees](https://stats.stackexchange.com/questions/282459/xgboost-vs-python-sklearn-gradient-boosted-trees). "	
+There is also a performance difference. Xgboost used second derivatives to find the optimal constant in each terminal node. The standard implementation only uses the first derivative."
+- [Deep Learning in R](http://www.rblog.uni-freiburg.de/2017/02/07/deep-learning-in-r/) by OKSANA KUTKINA, STEFAN FEUERRIEGEL, MARCH 7, 2016
 
 # 04.12.2017
 ## R
@@ -138,6 +310,9 @@ The purpose of lime is to explain the predictions of black box classifiers. What
 - [Example data from Shiny reactlog](https://github.com/wch/shiny-reactlog-examples)
 
 ## DS in HR
+- [HR ANALYTICS: USING MACHINE LEARNING TO PREDICT EMPLOYEE TURNOVER](http://www.business-science.io/business/2017/09/18/hr_employee_attrition.html). Written by Matt Dancho on September 18, 2017
+- [DEMO WEEK: TIME SERIES MACHINE LEARNING WITH H2O AND TIMETK](http://www.business-science.io/code-tools/2017/10/28/demo_week_h2o.html)
+- [CUSTOMER ANALYTICS: USING DEEP LEARNING WITH KERAS TO PREDICT CUSTOMER CHURN](http://www.business-science.io/blog/index.html)
 - Отличный, однако, блог! [Анализ текучести персонала – Методы прогнозирования](https://edwvb.blogspot.ru/2017/07/analiz-tekuchesti-personala-metody-prognozirovaniya.html)
 Это перевод, и очень замечательный перевод ОТЛИЧНОЙ статьи ["Analyzing Employee Turnover - Predictive Methods"](https://www.linkedin.com/pulse/analyzing-employee-turnover-predictive-methods-richard-rosenow-pmp).  Ричард Розенбоу (Richard Rosenow) написал две очень неплохие статьи о текучести персонала, которые перевела Екатерина Малинина, HR business partner в IT-отрасли.]
 - [Прогноз текучести персонала на основе анализа дожития](https://edwvb.blogspot.ru/2017/04/prognoz-tekuchesti-personala-na-osnove-analiza-dozhitiya.html)
@@ -870,6 +1045,8 @@ A wrapper for the 'Intro.js' library (For more info: <http://www.introjs.com>). 
 	- [Async programming in R and Shiny](https://medium.com/@joe.cheng/async-programming-in-r-and-shiny-ebe8c5010790) by Joe Cheng
 	- [An informal intro to async Shiny](https://medium.com/@joe.cheng/an-informal-intro-to-async-shiny-cbf01c85c4c5) by Joe Cheng
 	- [rstudio/promises](https://github.com/rstudio/promises). A promise library for R.
+	- [R Shiny run task/script in different process](https://stackoverflow.com/questions/46266338/r-shiny-run-task-script-in-different-process)
+- [ASYNCHRONOUS AND DISTRIBUTED PROGRAMMING IN R WITH THE FUTURE PACKAGE](https://alexioannides.com/2016/11/02/asynchronous-and-distributed-programming-in-r-with-the-future-package/)
 - COOL! [cwickham/munsell](https://github.com/cwickham/munsell) colour system for R. 
 	- [munsell: Utilities for Using Munsell Colours](https://cran.r-project.org/web/packages/munsell/index.html)
 Provides easy access to, and manipulation of, the Munsell colours. Provides a mapping between Munsell's original notation (e.g. "5R 5/10") and hexadecimal strings suitable for use directly in R graphics. Also provides utilities to explore slices through the Munsell colour tree, to transform Munsell colours and display colour palettes.
