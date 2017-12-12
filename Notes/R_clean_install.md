@@ -1,4 +1,5 @@
-# подключаем репозитории
+# Установка R
+## подключаем репозитории
 sudo yum update
 sudo yum -y install chrony
 systemctl start chronyd
@@ -8,11 +9,11 @@ systemctl status chronyd
 sudo yum -y install epel-release
 uname -a
 
-# ставим R
+## ставим R
 sudo yum -y install wget epel-release chrony tree
 sudo yum -y install R
 
-# ставим доп либы, необходимые для пакетов R
+## ставим доп либы, необходимые для пакетов R
 sudo yum -y groupinstall X11
 sudo yum -y groupinstall "Development Tools"
 
@@ -20,12 +21,12 @@ sudo yum -y install wget libcurl-devel openssl-devel cyrus-sasl-devel libxml2-de
 
 sudo yum -y install dejavu-fonts-common dejavu-sans-mono-fonts rrdtool psmisc lrzsz gdal* proj-devel proj-epsg proj-nad protobuf-devel geos-devel
 
-# ставим все, что касается LaTeX
+## ставим все, что касается LaTeX
 sudo yum -y install texlive texlive-latex texlive-xetex texlive-collection-fontsrecommended texlive-collection-latex texlive-collection-latexrecommended  texlive-xetex-def texlive-collection-xetex
 Добавляем поддержку кириллицы
 sudo yum -y install texlive-cyrillic texlive-collection-langcyrillic texlive-cyrillic-doc texlive-framed texlive-titling texlive-*font* linux-liber*
 
-# обновляем пакеты в R
+## обновляем пакеты в R
 sudo -i R
 update.packages(ask=FALSE)
 
@@ -37,21 +38,45 @@ install.packages("udunits2", configure.args='--with-udunits2-include=/usr/includ
 chooseCRANmirror(graphics=FALSE, ind=37)
 pacman::p_load("gWidgetstcltk")
 
-# Установка RStudio Server
+
+# Offfline Инсталляция
+## Создаем репозиторий miniCRAN
+- Используем пакет miniCRAN для инициализации репозитория. 
+Считаем, что локальная директория /opt/miniCRAN уже создана.
+```
+library("miniCRAN")
+tags <- c("tidyverse", "lubridate", "glue", "scales", "forcats", "readxl", "magrittr", "stringi", "stringr", 
+          "futile.logger", "jsonlite", "Cairo", "RColorBrewer", "extrafont", "hrbrthemes", "DBI", "RPostgreSQL", 
+          "config", "shiny", "shinyjqui", "shinythemes", "shinyBS", "shinyjs", "shinyWidgets", "shinycssloaders", 
+          "formattable", "anytime", "tictoc", "digest", "officer", "openxlsx", "assertr", "checkmate")
+pkgList <- pkgDep(tags, suggests=TRUE, enhances=FALSE)
+makeRepo(pkgList, path="d:/temp/miniCRAN", repos="https://cloud.r-project.org/", type=c("source"))
+```
+
+## Установка собственных пакетов с Github
+1. Скачали единым zip файлом https://github.com/iMissile/dvtdspack
+2. Ставим с локального файла: `devtools::install_local(path="C:/Users/Ilya/Downloads/dvtdspack-master.zip")`. Если просто выкачивать zip с гитхаба, то инсталляция не получится, zip файл содержит файлы пакета внутри папки. 
+
+Команда `install.packages("C:/Users/Ilya/Downloads/dvtdspack-master.zip", repos=NULL)` работает криво и просто гонит содержимое zip в библиотеку, без компиляции и без переименования (остается тэг `-master`)
+
+
+# Установка продуктов RStudio
+
+## Установка RStudio Server
 [Страница загрузки](https://www.rstudio.com/products/rstudio/download-server/)
 
-Не забыть завести отдельного пользователя с uid>100 !:
+Не забыть завести отдельного пользователя с uid > 100 !:
 `sudo useradd <username>`
 `sudo passwd <username>`
 
-# Установка RStudio Shiny Server free
+## Установка RStudio Shiny Server free
 [Страница загрузки](https://www.rstudio.com/products/shiny/download-server/)
 Для удобства работы оставим однопользовательский режим работы Shiny Server, делаем мапирование домашних директорий R пользователей на `/srv/shiny-server` командой `ln -s <SOURCE> <LINK_NAME>`:
 `sudo ln -s /home/ruser/R/<app> /srv/shiny-server/<app>`
 
 Запуск скрипта из консоли linux: `R < script.R --no-save`. Выводит все на экран, можно поглядеть ошибки
 
-# Установка RStudio Connect
+## Установка RStudio Connect
 1. Заходим на страницу загрузки https://www.rstudio.com/products/connect/download-commercial/
 2. Проверяем срок демо лицензии: 
 sudo /opt/rstudio-connect/bin/license-manager status-offline

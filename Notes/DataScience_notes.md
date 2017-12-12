@@ -69,6 +69,45 @@ https://www.crowdgames.ru/page/plany-crowd-games
 # Video
 - [Основы анализа данных. ВШЭ](https://www.youtube.com/channel/UCLk-Oih8VlqF-StidijTUnw/videos)
 
+# 12.12.2017
+## R
+- COOL! [The tidyverse style guide](http://style.tidyverse.org/) by Hadley Wickham
+- Gist. [Use miniCRAN for local R package install](https://gist.github.com/leoluyi/f30610351e152019cf5ea68207d9646d)
+- [Edward. A library for probabilistic modeling, inference, and criticism.](http://edwardlib.org/)
+- [The ‘I-Love-IKEA’ – web app, built at the IKEA Hackaton with R and Shiny](https://longhowlam.wordpress.com/2017/12/10/the-i-love-ikea-web-app-build-at-the-ikea-hackaton-with-r-and-shiny/)
+- [When there's a fork in the road, take it. Or, taking a look at marginal structural models](https://www.rdatagen.net/post/when-a-covariate-is-a-confounder-and-a-mediator/)
+- [How to develop good R packages (for open science)](http://www.masalmon.eu/2017/12/11/goodrpackages/)
+- [New IBM Plex Sans Support in hrbrthemes + Automating Axis Text Justification](https://rud.is/b/2017/11/16/new-ibm-plex-sans-support-in-hrbrthemes-automating-axis-text-justification/)
+	- [IBM Plex font](https://ibm.github.io/type/)
+- COOL! [Connecting R to Keras and TensorFlow](https://rviews.rstudio.com/2017/12/11/r-and-tensorflow/)
+- [Lots of Package News](http://appliedpredictivemodeling.com/blog/2017/11/15/some-package-updates)
+- [Linear mixed-effect models in R](https://poissonisfish.wordpress.com/2017/12/11/linear-mixed-effect-models-in-r/)
+- [styler - A non-invasive source code formatter for R](https://lorenzwalthert.github.io/stylerpost/)
+- [Using the tuber package to analyse a YouTube channel](https://insightr.wordpress.com/2017/12/11/using-the-tuber-package-to-analyse-a-youtube-channel/)
+- [Installing a package offline from GitHub](https://stackoverflow.com/questions/33179156/installing-a-package-offline-from-github)
+- Shiny. [Shiny server with user_dirs breaks DT datatables that start with a "." #276 {open}](https://github.com/rstudio/shiny-server/issues/276)
+
+## TensorFlow
+- Пытался запустить TF на примере business-science.io. Возникает ошибка на шаге `fit()`:
+```
+ Error in py_call_impl(callable, dots$args, dots$keywords) : 
+  ValueError: could not convert string to float: 'Yes'
+```
+Многие поля до развертывания содержат Yes/No, после развертывания содержит только поле `Churn`, но оно представлено как фактор...
+Ошибка обнаружилась в комментариях к статье (я так и подозревал 20/21):
+```
+Hey Julian, you're right. If you modify those lines to include select(-Churn) it works as expected!
+
+x_train_tbl <- bake(rec_obj, newdata = train_tbl) %>% select(-Churn)
+x_test_tbl <- bake(rec_obj, newdata = test_tbl) %>% select(-Churn)
+```
+
+# 11.12.2017
+## R
+- [Writing Excel formatted csv using readr::write_excel_csv2](http://appsilondatascience.com/blog/rstats/2017/12/08/readr.html)
+- [Downloading files from a webserver, and failing](http://rmhogervorst.nl/cleancode/blog/2017/12/08/downloading-multiple-files-and-failing.html)
+- [nrow, references and copies](https://statisfaction.wordpress.com/2017/12/10/nrow-references-and-copies/)
+
 # 08.12.2017
 ## R
 - [A central repository of Business Science presentations http://www.business-science.io/](https://github.com/business-science/presentations)
@@ -112,6 +151,7 @@ a = tf.constant(10)
 b = tf.constant(32)
 print(sess.run(a + b))
 ```
+- COOL! [Connecting R to Keras and TensorFlow](https://rviews.rstudio.com/2017/12/11/r-and-tensorflow/)
 - [Install Keras and the TensorFlow backend](https://tensorflow.rstudio.com/keras/reference/install_keras.html)
 - [R interface to Keras](https://keras.rstudio.com/)
 - [Установка Keras с TensorFlow в Anaconda](https://www.asozykin.ru/deep_learning/2017/09/07/Keras-Installation-TensorFlow.html)
@@ -302,6 +342,7 @@ The purpose of lime is to explain the predictions of black box classifiers. What
 - COOL! COOL! [XGBoost vs Python Sklearn gradient boosted trees](https://stats.stackexchange.com/questions/282459/xgboost-vs-python-sklearn-gradient-boosted-trees). "	
 There is also a performance difference. Xgboost used second derivatives to find the optimal constant in each terminal node. The standard implementation only uses the first derivative."
 - [Deep Learning in R](http://www.rblog.uni-freiburg.de/2017/02/07/deep-learning-in-r/) by OKSANA KUTKINA, STEFAN FEUERRIEGEL, MARCH 7, 2016
+- [Finding Logistic Regression Coefficients using Excel’s Solver](http://www.real-statistics.com/logistic-regression/finding-logistic-regression-coefficients-using-excels-solver/)
 
 # 04.12.2017
 ## R
@@ -387,7 +428,7 @@ There is also a performance difference. Xgboost used second derivatives to find 
 	- As for most business problems, it’s equally important to explain what features drive the model, which is why we’ll use the [`lime` package](https://github.com/thomasp85/lime) for explainability. We cross-checked the LIME results with a Correlation Analysis using the [`corrr` package](https://github.com/drsimonj/corrr). We’re not done yet. In addition, we use three new packages to assist with Machine Learning (ML): 
 		- [`recipes`](https://topepo.github.io/recipes) for preprocessing, 
 		- [`rsample`](https://topepo.github.io/rsample/) for sampling data 
-		- and [`yardstick`](https://github.com/topepo/yardstick) for model metrics. These are relatively new additions to CRAN developed by Max Kuhn at RStudio (creator of the [`caret`](http://topepo.github.io/caret/index.html) package). It seems that R is quickly developing ML tools that rival Python.
+		- and [`yardstick`](https://topepo.github.io/yardstick/) for model metrics. These are relatively new additions to CRAN developed by Max Kuhn at RStudio (creator of the [`caret`](http://topepo.github.io/caret/index.html) package). It seems that R is quickly developing ML tools that rival Python.
 - [How to make Python easier for the R user: revoscalepy](http://blog.revolutionanalytics.com/2017/11/revoscalepy.html)
 - [Building the oomsifyer](http://rmhogervorst.nl/cleancode/blog/2017/11/28/building-the-oomsifier.html)
 - COOL! [Tidy spatial data in R: using dplyr, tidyr, and ggplot2 with sf](http://strimas.com/r/tidy-sf/)
@@ -711,7 +752,9 @@ An environment that implements the Rook specification for HTTP requests. This is
 - [How does covr work anyway?](https://cran.r-project.org/web/packages/covr/vignettes/how_it_works.html)
 - [Metropolis-in-Gibbs Sampling and Runtime Analysis with Profviz](https://stablemarkets.wordpress.com/2017/11/07/metropolis-in-gibbs-sampling-and-runtime-analysis-with-profviz/)
 - [Setting up twitter streamR Service on an Ubuntu server](http://amitkohli.com/setting-up-twitter-streamr-service-on-an-ubuntu-server/)
+- [Data acquisition in R (1/4)](https://ikashnitsky.github.io/2017/data-acquisition-one/)
 - [Data acquisition in R (2/4)](https://ikashnitsky.github.io/2017/data-acquisition-two/)
+- [Data acquisition in R (3/4)](https://ikashnitsky.github.io/2017/data-acquisition-three/)
 - Error handling in Shiny:
 	- [Shiny. Sanitizing error messages](https://shiny.rstudio.com/articles/sanitize-errors.html)
 	- [Write error messages for your UI with validate](https://shiny.rstudio.com/articles/validation.html)
@@ -921,7 +964,6 @@ An extension to the 'testthat' package that makes it easy to add graphical unit 
 
 # 17.10.2017
 ## R
-- [Data acquisition in R (1/4)](https://ikashnitsky.github.io/2017/data-acquisition-one/)
 - [colourpicker package v1.0: You can now select semi-transparent colours in R (& more!)](http://deanattali.com/blog/colourpicker-update-alpha/)
 - [Announcing RStudio Professional Drivers](https://blog.rstudio.com/2017/10/16/announcing-rstudio-professional-drivers/)
 - [SALES ANALYTICS: HOW TO USE MACHINE LEARNING TO PREDICT AND OPTIMIZE PRODUCT BACKORDERS](http://www.business-science.io/business/2017/10/16/sales_backorder_prediction.html)
@@ -2348,6 +2390,10 @@ DataTables does not come with column filters by default. It only provides a glob
 - COOL. 20017 год! [Managing Private R Packages with Packrat and MiniCRAN](http://ellisvalentiner.com/post/2017-09-24-packrat-minicran/)
 - Инструкция от Микрософт. [Create a Local Package Repository Using miniCRAN](https://docs.microsoft.com/en-us/sql/advanced-analytics/r/create-a-local-package-repository-using-minicran)
 - [How to install R packages on an off-line SQL Server 2016 instance](http://blog.revolutionanalytics.com/2016/05/minicran-sql-server.html)
+- Работа с зеркалами CRAN:
+	- [How to select a CRAN mirror in R](https://stackoverflow.com/questions/11488174/how-to-select-a-cran-mirror-in-r). 
+`chooseCRANmirror()`
+	- [CRAN Mirrors](https://cran.r-project.org/mirrors.html)
 - R Startup
 	- [R for Enterprise: Understanding R’s Startup](https://rviews.rstudio.com/2017/04/19/r-for-enterprise-understanding-r-s-startup/)
 	- [Rprofile — кастомизируем рабочее окружение](http://aakinshin.net/ru/blog/post/r-rprofile/)
@@ -2364,7 +2410,8 @@ candidates <- c( Sys.getenv("R_PROFILE"),
 ```
 - [R Installation and Administration. 6.6 Setting up a package repository](https://cran.r-project.org/doc/manuals/R-admin.html#Setting-up-a-package-repository)
 - local CRAN-like repository
-	- [Using miniCRAN to create a local CRAN repository](https://cran.r-project.org/web/packages/miniCRAN/vignettes/miniCRAN-introduction.html)
+	- [Using miniCRAN to identify package dependencies](https://cran.r-project.org/web/packages/miniCRAN/vignettes/miniCRAN-dependency-graph.html) by Andrie de Vries, October 22, 2017
+	- [Using miniCRAN to create a local CRAN repository](https://cran.r-project.org/web/packages/miniCRAN/vignettes/miniCRAN-introduction.html) by Andrie de Vries and Alex Chubaty, October 22, 2017
 	- [Using repositories other than CRAN with miniCRAN](https://cran.r-project.org/web/packages/miniCRAN/vignettes/miniCRAN-non-CRAN-repos.html)
 	- [How to Set Up a Custom CRAN-like Repository](https://rstudio.github.io/packrat/custom-repos.html)
 	- Пакет для выбора репозиториев: [setRepositories {utils}](https://stat.ethz.ch/R-manual/R-devel/library/utils/html/setRepositories.html)
@@ -2377,8 +2424,26 @@ candidates <- c( Sys.getenv("R_PROFILE"),
 	- [R not reading Rprofile.site at startup](https://superuser.com/questions/891127/r-not-reading-rprofile-site-at-startup). Смотрим из консоли командой `R RHOME`
 `/usr/lib64/R/library/base/R/Rprofile` -- system Rprofile
 	- [Problem Installing Packages](https://support.rstudio.com/hc/en-us/articles/200554786-Problem-Installing-Packages)
+- 'Telling R about the System Library (Required Step!)' from [Package Management for Offline RStudio Connect Installations](https://support.rstudio.com/hc/en-us/articles/115006298728-Package-Management-for-Offline-RStudio-Connect-Installations)
+```
+To use the local package repository you have to tell R where the repository lives. This declaration is similar to setting R_LIBS_SITE or modifying .libPaths().
 
+To do so, run the R code:
 
+packrat::repos_add(repoName = "file://path/to/directory/repoName/")
+If the server is offline, it is often useful to remove the default CRAN repository:
+
+packrat::repos_remove('CRAN')
+The packrat line of code is a wrapper around R’s options functions:
+
+r <- getOption("repos")
+r["repoName"] <- "file://path/to/directory/repoName/"
+options(repos = r) 
+In short, add the following lines of code to the Rprofile.site:
+
+packrat::repos_add(repoName = "file://path/to/directory/repoName/")
+packrat::repos_remove('CRAN')
+```
 - [How to select a CRAN mirror in R](https://stackoverflow.com/questions/11488174/how-to-select-a-cran-mirror-in-r)
 - [Installing packages without the internet](https://www.mango-solutions.com/blog/installing-packages-without-the-internet)
 - [How to Set Up a Custom CRAN-like Repository](https://rstudio.github.io/packrat/custom-repos.html)

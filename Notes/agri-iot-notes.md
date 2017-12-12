@@ -251,6 +251,8 @@ checking for ICU4C >= 52... no
 *** Minimal requirements, i.e., ICU4C >= 52, are not met
 trying URL 'https://raw.githubusercontent.com/gagolews/stringi/master/src/icu55/data/icudt55l.zip'
 ```
+Читаем файл [INSTALL](https://github.com/gagolews/stringi/blob/0410dbde81bd9329914a6674aea76b2b4d68c25c/INSTALL): 'The stringi package depends on the ICU4C >= 52 library' (a custom subset of ICU4C 55.1 is shipped with the package).
+
 Подробно описано в [How to get latest version of ICU instead the default v50.1?](https://www.centos.org/forums/viewtopic.php?t=60684). Там решение не найдено.
 Идем на домашнюю страницу проекта: [ICU-TC Home Page](http://site.icu-project.org/)
 Шаги по установке (оказалось, не работает)
