@@ -278,7 +278,7 @@ ICUDT_DIR=/opt/icu55/data
 ```
 - RMySQL не ставится. Требует системных библиотек, решается командой `sudo yum -y install mariadb-devel mysql-devel`
 
-- Подключение к MS SQL из-под линкукса требует хитрых шагов по установке драйверов
+- Подключение к MS SQL из-под linux требует доп. шагов по установке драйверов
 
 ["Установка Microsoft ODBC Driver for SQL Server для Linux и macOS"](https://docs.microsoft.com/ru-ru/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server):
 ```

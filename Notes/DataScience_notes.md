@@ -69,6 +69,129 @@ https://www.crowdgames.ru/page/plany-crowd-games
 # Video
 - [Основы анализа данных. ВШЭ](https://www.youtube.com/channel/UCLk-Oih8VlqF-StidijTUnw/videos)
 
+# 09.01.2018
+## R
+- [Using nonstandard evaluation to simulate a register machine](https://tjmahr.github.io/nonstandard-eval-register-machines/)
+- [How to perform Logistic Regression, LDA, & QDA in R](https://datascienceplus.com/how-to-perform-logistic-regression-lda-qda-in-r/)
+- [Discontinuing maintenance of jug](http://fishyoperations.com/2018/01/07/discontinuing-maintenance-jug.html)
+- [prrd 0.0.1: Parallel Running [of] Reverse Depends](http://dirk.eddelbuettel.com/blog/2018/01/07/#prrd_0.0.1)
+- [The Trouble with Tibbles](http://blog.jumpingrivers.com/posts/2018/trouble_with_tibbles/)
+
+
+# 04.01.2018
+## R
+- [Deep Learning from first principles in Python, R and Octave – Part 1](https://gigadom.wordpress.com/2018/01/04/deep-learning-from-basic-principles-in-python-r-and-octave-part-1/)
+- [billboarder](https://cran.rstudio.com/web/packages/billboarder/vignettes/billboarder-intro.html). This package allow you to use billboard.js, a re-usable easy interface JavaScript chart library, based on D3 v4+.
+- [esviz](https://github.com/DJAnderson07/esvis). R Package for effect size visualizations.
+- [missRanger: Fast Imputation of Missing Values](https://cran.r-project.org/web/packages/missRanger/index.html)
+- COOL! [Introduction to Huxtable](https://hughjonesd.github.io/huxtable/huxtable.html)
+- [Divide and parallelize large data problems with Rcpp](http://blog.revolutionanalytics.com/2018/01/parallelize-rcpp.html)
+
+# 02.01.2018
+## R
+- [Five tips to improve your R code](https://drsimonj.svbtle.com/five-simple-tricks-to-improve-your-r-code)
+- [Making R Code Faster: A Case Study](https://robinsones.github.io/Making-R-Code-Faster-A-Case-Study/)
+- [Forecasting time series with neural networks in R](http://kourentzes.com/forecasting/2017/02/10/forecasting-time-series-with-neural-networks-in-r/)
+- [smooth functions in 2017](http://forecasting.svetunkov.ru/en/2018/01/01/smooth-functions-in-2017/)
+- [Interpolating Statistical Tables](https://davegiles.blogspot.ru/2018/01/interpolating-statistical-tables.html)
+- [Helpful Data Science Reads](https://somerealnumbers.wordpress.com/2018/01/03/helpful-data-science-reads/)
+- GETTING DATA [The Mcomp Package](https://datascienceplus.com/the-mcomp-package/)
+- COOL! [Заметки по R: Гетероскедастичность](https://bdemeshev.github.io/r_cycle/cycle_files/12_hetero.html)
+- Отличный блог. Неплохо бы сконтактировать с автором. [R: Анализ и визуализация данных](http://r-analytics.blogspot.ru)
+- COOL! [desctable usage vignette](https://cran.r-project.org/web/packages/desctable/vignettes/desctable.html). Desctable is a comprehensive descriptive and comparative tables generator for R.
+- COOL! Классика! [Vectorization in R: Why?](http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html) by Noam Ross, 16 April 2014
+- [Bayesian and frequentist A/B split testing](https://github.com/dgrtwo/splittestr). Functions for Bayesian and frequentist A/B split testing. The main purpose of this package is to provide functions and support for [this blog post about Bayesian A/B testing](http://varianceexplained.org/r/bayesian-ab-testing/).
+
+## p-value
+- R: Анализ и визуализация данных. [Классические методы статистики: критерий хи-квадрат](http://r-analytics.blogspot.ru/2012/08/blog-post.html)
+
+
+# 28.12.2017
+## ML
+- [Precision-recall curves – what are they and how are they used?](https://acutecaretesting.org/en/articles/precision-recall-curves-what-are-they-and-how-are-they-used)
+- Александр Дьяконов (МГУ):
+	- [AUC ROC (площадь под кривой ошибок)](https://alexanderdyakonov.wordpress.com/2017/07/28/auc-roc-%d0%bf%d0%bb%d0%be%d1%89%d0%b0%d0%b4%d1%8c-%d0%bf%d0%be%d0%b4-%d0%ba%d1%80%d0%b8%d0%b2%d0%be%d0%b9-%d0%be%d1%88%d0%b8%d0%b1%d0%be%d0%ba/)
+
+
+## Еще раз про ROC-AUC, Survival
+- [Логистическая регрессия и ROC-анализ — математический аппарат](https://basegroup.ru/community/articles/logistic)
+- [Метрики в задачах машинного обучения](https://habrahabr.ru/company/ods/blog/328372/)
+- [Оптимизация бизнес-процессов при помощи кривых выживаемости](https://habrahabr.ru/post/235529/)
+- [HR-Инструменты \ Учебник по STATISTICA. ГЛАВА 14 Анализ выживаемости](http://www.hr-portal.ru/statistica/gl14/gl14.php)
+
+- [survminer: Survival Analysis and Visualization](http://www.sthda.com/english/rpkgs/survminer/). Тут же есть cheatsheet
+- [survminer R package: Survival Data Analysis and Visualization](http://www.sthda.com/english/wiki/survminer-r-package-survival-data-analysis-and-visualization)
+- [Survival Analysis with R](https://rviews.rstudio.com/2017/09/25/survival-analysis-with-r/) by Joseph Rickert, 2017-09-25
+
+
+# 27.12.2017
+## R
+- [Building your own blockchain in R](http://bigdata-doctor.com/building-your-own-blockchain-in-r/)
+- [Combined outlier detection with dplyr and ruler](http://www.questionflow.org/2017/12/26/combined-outlier-detection-with-dplyr-and-ruler/)
+- [Tiny Art in Less Than 280 Characters](https://fronkonstin.com/2017/12/23/tiny-art-in-less-than-280-characters/)
+- [Nov 2017: New Package Picks](https://rviews.rstudio.com/2017/12/22/nov-2017-new-package-picks/)
+- [Building formulae](http://www.brodrigues.co/blog/2017-12-27-build_formulae/)
+- [Visualising US Voting Records with shinydashboard](https://www.gokhanciflikli.com/post/adavis/)
+- COOL! [SIX REASONS TO LEARN R FOR BUSINESS](http://www.business-science.io/business/2017/12/27/six-reasons-to-use-R-for-business.html)
+
+
+# 25.12.2017
+## R
+- [A Simple Intro to Q-Learning in R: Floor Plan Navigation](https://qualityandinnovation.com/2017/12/24/a-simple-intro-to-q-learning-in-r-floor-plan-navigation/)
+- [Plotting Deep Learning Model Performance Trajectories](http://www.win-vector.com/blog/2017/12/plotting-deep-learning-model-performance-trajectories/)
+	- [Plot the trajectory of a Keras model fit](https://winvector.github.io/WVPlots/reference/plot_Keras_fit_trajectory.html)
+- COOL! [Let it flow, let it flow, let it flow......](https://johnmackintosh.com/2017-12-21-flow/) Animating dot plots to demonstrate patient flow
+- [Data discretization made easy with funModeling](https://blog.datascienceheroes.com/data-discretization-made-easy-with-funmodeling/)
+- [Building a Hacker News scraper with 8 lines of R code using rvest library](https://datascienceplus.com/building-a-hacker-news-scraper-with-8-lines-of-r-code-using-rvest-library/)
+- [Make your own color palettes with paletti](https://edwinth.github.io/blog/paletti/)
+
+# 21.12.2017
+## R
+- COOL! [R⁶ Series — Random Sampling From Apache Drill Tables With R & sergeant](https://rud.is/b/2017/12/20/r%E2%81%B6-series-random-sampling-from-apache-drill-tables-with-r-sergeant/)
+- [How to Greatly Speed Up Your Spark Queries](http://www.win-vector.com/blog/2017/12/how-to-greatly-speed-up-your-spark-queries/)
+- [USING BLOGDOWN WITH AN EXISTING HUGO SITE](https://itsalocke.com/blog/using-blogdown-with-an-existing-hugo-site/)
+- [How to highlight countries on a map](http://sharpsightlabs.com/blog/highlight-countries-on-map/)
+- skimr:
+	- [skimr for useful and tidy summary statistics](https://ropensci.org/blog/2017/07/11/skimr/)
+	- COOL! Классные спарклайны. [skimr. A frictionless, pipeable approach to dealing with summary statistics](https://github.com/ropenscilabs/skimr). The goal of skimr is to provide a frictionless approach to dealing with summary statistics iteratively and interactively as part of a pipeline, and that conforms to the principle of least surprise.
+
+# 20.12.2017
+## R
+- [ASA Police Data Challenge student visualization contest winners](http://blog.revolutionanalytics.com/2017/12/police-data-challenge.html)
+- COOL! shinyWidgets [Palette Picker](https://dreamrs.github.io/shinyWidgets/articles/palette_picker.html)
+- COOL! [Time Series Forecasting with Recurrent Neural Networks](https://tensorflow.rstudio.com/blog/time-series-forecasting-with-recurrent-neural-networks.html)
+
+# 19.12.2017
+## Stat
+- R: Анализ и визуализация данных. [Классические методы статистики: критерий хи-квадрат](http://r-analytics.blogspot.ru/2012/08/blog-post.html)
+- [Ещё раз про оценку научных данных и, наконец, про p-value](http://jescid.livejournal.com/481888.html)
+- COOL [Scientific method: Statistical errors](http://www.nature.com/news/scientific-method-statistical-errors-1.14700). P values, the 'gold standard' of statistical validity, are not as reliable as many scientists assume.
+
+# 15.12.2017
+## R
+- [How to change the locale of R in RStudio?](https://stackoverflow.com/questions/16347731/how-to-change-the-locale-of-r-in-rstudio). Так работает:
+`"C:\Program Files\R\R-3.4.3\bin\x64\Rscript.exe"  -e "Sys.setenv(LANG='C'); shiny::runApp('app.R')"`
+- [An introduction to seplyr](http://blog.revolutionanalytics.com/2017/12/introduction-to-seplyr.html)
+- [Pipes in R Tutorial For Beginners](https://r-posts.com/pipes-in-r-tutorial-for-beginners/)
+- [Inter-operate with ‘MQTT’ Message Brokers With R (a.k.a. Live! BBC! Subtitles!)](https://rud.is/b/2017/12/14/inter-operate-with-mqtt-message-brokers-with-r-a-k-a-live-bbc-subtitles/)
+- [How to Perform Hierarchical Clustering using R](https://r-posts.com/how-to-perform-hierarchical-clustering-using-r/)
+
+# 14.12.2017
+## R
+- [R in the Windows Subsystem for Linux](http://blog.revolutionanalytics.com/2017/12/r-in-the-windows-subsystem-for-linux.html)
+- [archivist: Boost the reproducibility of your research](http://smarterpoland.pl/index.php/2017/12/boost-the-reproducibility-of-your-research-with-archivist/)
+- [Color palettes derived from the Dutch masters](https://edwinth.github.io/blog/dutch-masters/)
+
+# 13.12.2017
+## Excel
+- [Basic Concepts of Logistic Regression](http://www.real-statistics.com/logistic-regression/basic-concepts-logistic-regression/)
+- [Finding Logistic Regression Coefficients using Excel’s Solver](http://www.real-statistics.com/logistic-regression/finding-logistic-regression-coefficients-using-excels-solver/)
+- [Receiver Operating Characteristic (ROC) Curve](http://www.real-statistics.com/logistic-regression/receiver-operating-characteristic-roc-curve/)
+
+## R
+- COOL! [Explaining Predictions of Machine Learning Models with LIME - Münster Data Science Meetup](https://shirinsplayground.netlify.com/2017/12/lime_sketchnotes/)
+- [A Not So Simple Bar Plot Example Using ggplot2](https://www.inwt-statistics.com/read-blog/a-not-so-simple-bar-plot-example-using-ggplot2-507.html)
+
 # 12.12.2017
 ## R
 - COOL! [The tidyverse style guide](http://style.tidyverse.org/) by Hadley Wickham
@@ -97,7 +220,6 @@ https://www.crowdgames.ru/page/plany-crowd-games
 Ошибка обнаружилась в комментариях к статье (я так и подозревал 20/21):
 ```
 Hey Julian, you're right. If you modify those lines to include select(-Churn) it works as expected!
-
 x_train_tbl <- bake(rec_obj, newdata = train_tbl) %>% select(-Churn)
 x_test_tbl <- bake(rec_obj, newdata = test_tbl) %>% select(-Churn)
 ```
@@ -113,6 +235,8 @@ x_test_tbl <- bake(rec_obj, newdata = test_tbl) %>% select(-Churn)
 - [A central repository of Business Science presentations http://www.business-science.io/](https://github.com/business-science/presentations)
 - [Building a simple Sales Revenue Dashboard with R Shiny & ShinyDashboard](https://datascienceplus.com/building-a-simple-sales-revenue-dashboard-with-r-shiny-shinydashboard/)
 - Новые полезные пакеты для препроцессинга данных (прогнозная аналитика):
+	- [yardstick](https://topepo.github.io/yardstick/) allows you to easily create tidy performance estimates. Using a syntax similar to dplyr’s you can compute common performance metrics, such as precision, and recall (for classification), or numeric metric outcomes for regression, and have them returned in a tidy data frame.
+	- [tidyposterior](https://topepo.github.io/tidyposterior/) is used to conduct Bayesian post hoc analyses of resampling results generated by models. It can be considered an upgraded version of caret::resample. Though it works natively with rsample, it can be used with any data frame of results.
 	- [The `recipes` package is an alternative method for creating and preprocessing design matrices that can be used for modeling or visualization](https://topepo.github.io/recipes/articles/Simple_Example.html). Developed by Max Kuhn, Hadley Wickham.
 	- [`rsample` contains a set of functions that can create different types of resamples and corresponding classes for their analysis](https://topepo.github.io/rsample/). Developed by Max Kuhn, Hadley Wickham.
 	- [`corrr` is a package for exploring correlations in R](https://github.com/drsimonj/corrr). It focuses on creating and working with data frames of correlations (instead of matrices) that can be easily explored via corrr functions or by leveraging tools like those in the tidyverse.
@@ -122,6 +246,7 @@ x_test_tbl <- bake(rec_obj, newdata = test_tbl) %>% select(-Churn)
 
 ## DS
 - [jamovi is a new “3rd generation” statistical spreadsheet](https://www.jamovi.org/)
+- [Конструкция типа $\arg \min F(x)$ "возвращает" значение аргумента, при котором функция $F(x)$ достигает минимума. В Вашем случае имеется функция нескольких аргументов, соответственно под $x$, по-видимому, понимается кортеж (вектор) значений $\vec x=(x_1, x_2,\dots, x_n)$ (при которых функция и т.д.).](http://dxdy.ru/topic37191.html)
 
 
 # 07.12.2017
@@ -319,12 +444,19 @@ The purpose of lime is to explain the predictions of black box classifiers. What
 - COOL. [NEW R package that makes XGBoost interpretable](https://medium.com/applied-data-science/new-r-package-the-xgboost-explainer-51dd7d1aa211). For the demonstration, I'll use a dataset from Kaggle, to predict employee attrition from a fictional company.
 
 ## ML
+- Отличный блог ["АНАЛИЗ МАЛЫХ ДАННЫХ"](https://alexanderdyakonov.wordpress.com). КвазиНаучный блог Александра Дьяконова
+	- [AUC ROC (площадь под кривой ошибок)](https://alexanderdyakonov.wordpress.com/2017/07/28/auc-roc-%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C-%D0%BF%D0%BE%D0%B4-%D0%BA%D1%80%D0%B8%D0%B2%D0%BE%D0%B9-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA/)
 - Еще отличный курс лекций! [Семинары по машинному обучению, ВМК МГУ](https://github.com/esokolov/ml-course-msu)
-- [Открытый курс машинного обучения. Тема 4. Линейные модели классификации и регрессии](http://www.habrahabr.net/thread/11418)
-- COOL! отличная статья. [Открытый курс машинного обучения. Тема 10. Градиентный бустинг (XGboost). Часть 1](https://habrahabr.ru/company/ods/blog/327250/)
-- [Открытый курс машинного обучения. Тема 5. Композиции: бэггинг, случайный лес](https://habrahabr.ru/company/ods/blog/324402/)
+- [Open Data Science. Крупнейшее русскоязычное Data Science сообщество](https://habrahabr.ru/company/ods/)
+	- [Метрики в задачах машинного обучения](https://habrahabr.ru/company/ods/blog/328372/https://habrahabr.ru/company/ods/blog/328372/)
+	- [Открытый курс машинного обучения. Тема 3. Классификация, деревья решений и метод ближайших соседей](https://habrahabr.ru/company/ods/blog/322534/)
+	- [Открытый курс машинного обучения. Тема 4. Линейные модели классификации и регрессии](http://www.habrahabr.net/thread/11418)
+	- [Открытый курс машинного обучения. Тема 5. Композиции: бэггинг, случайный лес](https://habrahabr.ru/company/ods/blog/324402/)
+	- COOL! отличная статья. [Открытый курс машинного обучения. Тема 10. Градиентный бустинг (XGboost). Часть 1](https://habrahabr.ru/company/ods/blog/327250/)
+- [Знакомьтесь, Джини](https://alexanderdyakonov.wordpress.com/2015/12/15/%D0%B7%D0%BD%D0%B0%D0%BA%D0%BE%D0%BC%D1%8C%D1%82%D0%B5%D1%81%D1%8C-%D0%B4%D0%B6%D0%B8%D0%BD%D0%B8/). Многие путаются в коэффициентах Джини, не понимают, что они бывают разные и для разных задач (и названия у них разные — просто в русском переводе, как всегда, многое схлопывается в один термин).
 - [The Lasso Page. L1-constrained fitting for statistics and data mining](http://statweb.stanford.edu/~tibs/lasso.html)
 - [Доклады конференции SmartData](https://smartdataconf.ru/talks/)
+- [Умеют ли коты строить регрессию?](https://habrahabr.ru/post/328760/)
 - [An Introduction to XGBoost R package](http://dmlc.ml/rstats/2016/03/10/xgboost.html)
 - [XGBoost. Introduction to Boosted Trees](http://xgboost.readthedocs.io/en/latest/model.html)
 - COOL! [xgboost. Теория и практика](http://biostat-r.blogspot.ru/2016/08/xgboost.html). Тут же задает вопросы "Эдуард Бабушкин 24 мая 2017 г., 11:34"
@@ -343,6 +475,8 @@ The purpose of lime is to explain the predictions of black box classifiers. What
 There is also a performance difference. Xgboost used second derivatives to find the optimal constant in each terminal node. The standard implementation only uses the first derivative."
 - [Deep Learning in R](http://www.rblog.uni-freiburg.de/2017/02/07/deep-learning-in-r/) by OKSANA KUTKINA, STEFAN FEUERRIEGEL, MARCH 7, 2016
 - [Finding Logistic Regression Coefficients using Excel’s Solver](http://www.real-statistics.com/logistic-regression/finding-logistic-regression-coefficients-using-excels-solver/)
+- COOL! [Machine Learning Cheatsheet](https://ml-cheatsheet.readthedocs.io/en/latest/)
+- [Сравнение различных видов кросс-валидации](http://datareview.info/article/sravnenie-razlichnyih-vidov-kross-validatsii/). Автор оригинальной публикации Макс Кун (Max Kuhn)
 
 # 04.12.2017
 ## R
@@ -365,6 +499,9 @@ There is also a performance difference. Xgboost used second derivatives to find 
 	- [Employee Attrition: Exploratory Data Analysis and Predictive Modeling using R – Part 2](https://deedata.wordpress.com/2016/01/11/employee-attrition-exploratory-data-analysis-and-predictive-modeling-using-r-part-2/)
 	- [Employee Attrition: Exploratory Data Analysis and Predictive Modeling using R – Part 3](https://deedata.wordpress.com/2016/01/12/employee-attrition-exploratory-data-analysis-and-predictive-modeling-using-r-part-3/)
 	- [Employee Attrition: Survival Analysis](https://deedata.wordpress.com/2016/01/12/employee-attrition-survival-analysis/)
+- [Услуга Создание модели прогноза успешности работников](https://edwvb.blogspot.ru/2017/01/usluga-sozdanie-modeli-prognoza-uspeshnosti-rabotnikov.html)
+- [Анализ дожития: как предсказывать увольнения сотрудников и что на это влияет](https://edwvb.blogspot.ru/2017/07/blog-post_12.html)
+
 - [Who's Afraid of Logistic Regression?](https://www.linkedin.com/pulse/whos-afraid-logistic-regression-paul-dalen/)
 - [Regression analysis: A quick primer for media on a fundamental form of data crunching](https://journalistsresource.org/tip-sheets/research/regression-analysis-primer-for-journalists)
 - [Logistic Regression for Small Business Decision Makers](https://www.linkedin.com/pulse/logistic-regression-small-business-decision-makers-paul-dalen/)
@@ -400,6 +537,7 @@ There is also a performance difference. Xgboost used second derivatives to find 
 
 # 29.11.2017
 ## ML
+- [14 Great Articles About Cross-Validation, Model Fitting and Selection](https://www.datasciencecentral.com/profiles/blogs/14-great-articles-about-cross-validation-model-fitting-and-select) Posted by Vincent Granville 
 - [Методы отбора фич](https://habrahabr.ru/post/264915/)
 - [Пример Feature Engineering в машинном обучении](https://habrahabr.ru/company/mlclass/blog/249759/)
 - [Когортный анализ: 3 кейса](https://habrahabr.ru/company/io/blog/262025/)
@@ -2755,6 +2893,7 @@ output:
 	- [L.A. Unconf-idential : a.k.a. an rOpenSci #runconf17 Retrospective](https://rud.is/b/2017/05/28/l-a-unconf-idential-a-k-a-an-ropensci-runconf17-retrospective/)
 	- COOL! [websocket client for R!](https://github.com/ropenscilabs/webrockets). Webrockets is an #unconf17 project that implements a basic websocket listener in R. The implementation draws heavily on @hrbmstr's wrapper of easywsclient in https://github.com/ropenscilabs/decapitated.
 	- COOL! Классные спарклайны. [skimr. A frictionless, pipeable approach to dealing with summary statistics](https://github.com/ropenscilabs/skimr). The goal of skimr is to provide a frictionless approach to dealing with summary statistics iteratively and interactively as part of a pipeline, and that conforms to the principle of least surprise.
+	- [skimr for useful and tidy summary statistics](https://ropensci.org/blog/2017/07/11/skimr/)
 
 # 29.05.2017
 ## R
@@ -4211,6 +4350,7 @@ Go and explore, and happy new year!
 ## R
 - [R exercises](http://r-exercises.com/). Очень неплохой ресурс с заданиями по R.
 - COOL! Классный пакет для Simmer [Discrete-Event Simulator for R](http://fishyoperations.com/2017/01/12/extensions-for-simmer.html). Вообще, на этом сайте очень много записей про симуляцию.
+- [simmer 3.6.5](https://www.enchufa2.es/archives/simmer-3-6-5.html)
 - [simmer 3.6.4](https://www.enchufa2.es/archives/simmer-3-6-4.html)
 - [simmer 3.6.3](https://www.enchufa2.es/archives/simmer-3-6-3.html)
 - [simmer 3.6.2](https://www.enchufa2.es/archives/simmer-3-6-2.html)
@@ -4257,7 +4397,7 @@ One use of anonymous functions is to create small functions that are not worth n
 ## R
 - [awesome-r](https://libraries.io/github/uhub/awesome-r). A curated list of awesome R frameworks, libraries and software.
 - [hrbrmisc](https://github.com/hrbrmstr/hrbrmisc). personal R pkg. Вышел на опцию `install_github("hrbrmstr/hrbrmisc")`
-- См. ниже решение проблемы по апдейту ReporteRs. Надо ручкаи указывать `install.packages("ReporteRs", INSTALL_opts = "--no-multiarch")`, чтобы R выбирал правильную x архитектуру.
+- См. ниже решение проблемы по апдейту ReporteRs. Надо ручками указывать `install.packages("ReporteRs", INSTALL_opts = "--no-multiarch")`, чтобы R выбирал правильную архитектуру.
 - [Error caused by rJava when loading ReporteRs package](https://stackoverflow.com/questions/29384396/error-caused-by-rjava-when-loading-reporters-package)
 
 # 09.01.2017

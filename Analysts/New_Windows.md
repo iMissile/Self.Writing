@@ -1,3 +1,6 @@
+# МТС, раздача интернета
+- [КАК ОБОЙТИ ОГРАНИЧЕНИЕ МТС БЕЗЛИМИТИЩЕ НА ПЛАТНУЮ РАЗДАЧУ ИНТЕРНЕТА. КАК ИЗМЕНИТЬ TTL. +ВИДЕО](http://compblog.ru/kak-obojti-ogranichenie-mts-bezlimitishhe-na-platnuyu-razdachu-interneta-kak-izmenit-ttl.html)
+
 # Ubuntu on Windows10
 - [Everything You Can Do With Windows 10’s New Bash Shell](http://www.howtogeek.com/265900/everything-you-can-do-with-windows-10s-new-bash-shell/)
 - Так не заработало. Ни прямая инсталляция, ни апдейты. [How to Update the Windows Bash Shell to Ubuntu 16.04](http://www.howtogeek.com/278152/how-to-update-the-windows-bash-shell/). 
