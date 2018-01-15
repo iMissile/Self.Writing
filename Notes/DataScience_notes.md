@@ -69,18 +69,103 @@ https://www.crowdgames.ru/page/plany-crowd-games
 # Video
 - [Основы анализа данных. ВШЭ](https://www.youtube.com/channel/UCLk-Oih8VlqF-StidijTUnw/videos)
 
+## Survival Analysis
+- [Survival Analysis with R](https://rviews.rstudio.com/2017/09/25/survival-analysis-with-r/)
+- [квантиль. международный эконометрический журнал на русском языке](http://quantile.ru/05/N5.htm)
+	- [Родригес Герман. Модели выживаемости](http://quantile.ru/05/05-GR.pdf)
+- COOL! [ggfortify package](https://cran.r-project.org/web/packages/ggfortify/index.html). Unified plotting tools for statistics commonly used, such as GLM, time series, PCA families, clustering and survival analysis. The package offers a single plotting interface for these analysis results and plots in a unified style using 'ggplot2'.
+- [talentanalytics/class_survival_101](https://github.com/talentanalytics/class_survival_101). A brief code example in association with a presentation about Survival Analytics
+- [Employee Attrition: Survival Analysis](https://deedata.wordpress.com/2016/01/12/employee-attrition-survival-analysis/)
+- Неплохо написано, с кодом: [Predict Customer Churn – Logistic Regression, Decision Tree and Random Forest](https://datascienceplus.com/predict-customer-churn-logistic-regression-decision-tree-and-random-forest/)
+- COOL! [A Comprehensive guide to Parametric Survival Analysis](https://www.analyticsvidhya.com/blog/2015/05/comprehensive-guide-parametric-survival-analysis/)
+- COOL. [NEW R package that makes XGBoost interpretable](https://medium.com/applied-data-science/new-r-package-the-xgboost-explainer-51dd7d1aa211). For the demonstration, I'll use a dataset from Kaggle, to predict employee attrition from a fictional company.
+- Публикации в различных блогах:
+	- [Survival Curves in Tableau with HR Data](https://www.linkedin.com/pulse/survival-curves-tableau-hr-data-chris-short/)
+	- [Kaplan Meier Survival Test complete solution (without R)](https://community.tableau.com/thread/171437)
+	- [Employee Attrition using Survival Analysis]()https://www.kaggle.com/subhasree/employee-attrition-using-survival-analysis)
+	- [Survival Analysis - Part I](https://www.linkedin.com/pulse/survival-analysis-part-i-subhasree-chatterjee/)
+	- [Estimating User Lifetimes - the right and many wrong ways](http://blog.yhat.com/posts/estimating-user-lifetimes-with-pymc.html)
+- CAC & LTV [customer acquisition costs (CAC) & customer's lifetime value (LTV)]
+	- [You're Calculating CAC Wrong](https://blog.profitwell.com/youre-calculating-cac-wrong)
+	- [Customer Lifetime Value: How to Avoid Common Pitfalls and Build Smarter Metrics](https://www.strong.io/blog/customer-lifetime-value-avoid-common-pitfalls-and-build-smarter-metrics)
+	- [Customer Lifetime Value Part 1: Survival Analysis](https://looker.com/blog/survival-analysis)
+
+## Survival in R
+- [Survival Analysis with R](https://rviews.rstudio.com/2017/09/25/survival-analysis-with-r/) by Joseph Rickert, 2017-09-25
+- [survminer R package: Survival Data Analysis and Visualization](http://www.sthda.com/english/wiki/survminer-r-package-survival-data-analysis-and-visualization)
+- [survminer: Survival Analysis and Visualization](http://www.sthda.com/english/rpkgs/survminer/). Тут же есть cheatsheet
+- [survfit_tidiers: tidy survival curve fits](https://rdrr.io/cran/broom/man/survfit_tidiers.html). In broom: Convert Statistical Analysis Objects into Tidy Data Frames
+- [Survival Analysis with Plotly in Python](https://plot.ly/ipython-notebooks/survival-analysis-r-vs-python/)
+- как посчитать среднее (ожидаемое) время жизни в R?:
+	- [R predict.cox function type expected](https://stackoverflow.com/questions/31142251/r-predict-cox-function-type-expected)
+	- [How to compute the mean survival time](https://stackoverflow.com/questions/43173044/how-to-compute-the-mean-survival-time)
+	- [life expectancy survival package R](https://stackoverflow.com/questions/28633849/life-expectancy-survival-package-r)
+
+## Еще раз про ROC-AUC, Survival
+- [Логистическая регрессия и ROC-анализ — математический аппарат](https://basegroup.ru/community/articles/logistic)
+- [Метрики в задачах машинного обучения](https://habrahabr.ru/company/ods/blog/328372/)
+- [Оптимизация бизнес-процессов при помощи кривых выживаемости](https://habrahabr.ru/post/235529/)
+- [HR-Инструменты \ Учебник по STATISTICA. ГЛАВА 14 Анализ выживаемости](http://www.hr-portal.ru/statistica/gl14/gl14.php)
+
+- [tech survival-analysis](http://blog.applied.ai/tag/survival-analysis/)
+Survival analysis is long-established within actuarial science but infrequently used in general data science projects. We explain more with worked examples.
+	- [Survival Analysis part 3: Kaplan-Meier modelling](http://blog.applied.ai/survival-analysis-part3/)
+	- COOL! Разбирают срок жизни жестких дисков. [Survival Analysis part 4: Cox PH modelling](http://blog.applied.ai/survival-analysis-part-4/)
+
+
+# 15.01.2018
+## R
+- [Services and tools for building intelligent R applications in the cloud](http://blog.revolutionanalytics.com/2018/01/r-cloud-tools.html)
+- [P-VALUES FROM RANDOM EFFECTS LINEAR REGRESSION MODELS](http://www.datasurg.net/2018/01/13/p-values-from-random-effects-linear-regression-models/)
+- Живые Shiny приложения. [Top interactive visualizations of movie scripts](http://smarterpoland.pl/index.php/2018/01/top-interactive-visualizations-of-movie-scripts/)
+
+
+# 12.01.2018
+## DS
+- Лучшая статья по наивному байесу, которую я видел [Суровая реальность. Наивный байесовский классификатор]
+- [6 простых шагов для освоения наивного байесовского алгоритма (с примером кода на Python)](http://datareview.info/article/6-prostyih-shagov-dlya-osvoeniya-naivnogo-bayesovskogo-algoritma-s-primerom-koda-na-python/)
+
+# 11.01.2018
+## Общее
+- СOOL! объяснение "на котиках" [Git снизу вверх](https://habrahabr.ru/company/intel/blog/344962/)
+
+## R
+- Возможно ли средствами R сделать транслитерацию столбца с данными на русском языке на латиницу? Смотрим [блог в LiveJournal](ут, в комментах есть: http://r-statistics.livejournal.com/48247.html). Я предложил так: `stringi::stri_trans_general(c("Здесь фабула объять не может всех эмоций — шепелявый скороход в юбке тащит горячий мёд.", "Друг мой эльф! Яшке б свёз птиц южных чащ!"), "Russian-Latin/BGN")`
+- [Palettes and graphics matching your RStudio editor](https://github.com/fkeck/editheme)
+
+## ML
+- [How to implement neural networks in R](http://blog.revolutionanalytics.com/2018/01/neural-networks-r6.html)
+- COOL! [Building a neural network from scratch in R](http://selbydavid.com/2018/01/09/neural-network/)
+- COOL! Дубль с business-science.io [Deep Learning With Keras To Predict Customer Churn](https://tensorflow.rstudio.com/blog/keras-customer-churn.html)
+- [Сверточная сеть на python. Часть 3. Применение модели](https://habrahabr.ru/company/ods/blog/344888/). Распознавание циферок... подход может использоваться для здоровья ИТ сервисов!
+- COOL! Про LIME [Looking beyond accuracy to improve trust in machine learning](https://blog.codecentric.de/en/2018/01/look-beyond-accuracy-improve-trust-machine-learning/)
+- [TIDYTEXT 0.1.6](https://juliasilge.com/blog/tidytext-0-1-6/) by JULIA SILGE
+- [How to implement Random Forests in R](https://r-posts.com/how-to-implement-random-forests-in-r/)
+- [R Work Areas. Standardize and Automate](https://somerealnumbers.wordpress.com/2018/01/10/r-work-areas-standardize-and-automate/)
+- [Direct forecast X Recursive forecast](https://insightr.wordpress.com/2018/01/10/direct-forecast-x-recursive-forecast/)
+
 # 09.01.2018
 ## R
-- [Using nonstandard evaluation to simulate a register machine](https://tjmahr.github.io/nonstandard-eval-register-machines/)
+- [What's the difference between data science, machine learning, and artificial intelligence?](http://varianceexplained.org/r/ds-ml-ai/)
+- [Semantic Question Matching with Deep Learning](https://engineering.quora.com/Semantic-Question-Matching-with-Deep-Learning)
+- COOL! [Higher Order Functions](https://tjmahr.github.io)
+	- COOL! [Using nonstandard evaluation to simulate a register machine](https://tjmahr.github.io/nonstandard-eval-register-machines/)
+	- [Recode values with character subsetting](https://tjmahr.github.io/recode-values-with-character-subsetting/)
 - [How to perform Logistic Regression, LDA, & QDA in R](https://datascienceplus.com/how-to-perform-logistic-regression-lda-qda-in-r/)
 - [Discontinuing maintenance of jug](http://fishyoperations.com/2018/01/07/discontinuing-maintenance-jug.html)
 - [prrd 0.0.1: Parallel Running [of] Reverse Depends](http://dirk.eddelbuettel.com/blog/2018/01/07/#prrd_0.0.1)
 - [The Trouble with Tibbles](http://blog.jumpingrivers.com/posts/2018/trouble_with_tibbles/)
 
+## DS
+- [Wise.io](https://wise.io/) is a well-resourced, rapidly growing team inside of GE Digital whose charter is to build machine learning powered applications on top of GE’s treasure trove of data assets.
+- Article. ["Siamese recurrent architectures for learning sentence similarity"](https://dl.acm.org/citation.cfm?id=3016291)
+- [Бизнес-требования к проекту «Прогнозирование инфраструктурных сбоев»](https://sk.ru/foundation/events/july2017/gazpromneft/)
+
 
 # 04.01.2018
 ## R
 - [Deep Learning from first principles in Python, R and Octave – Part 1](https://gigadom.wordpress.com/2018/01/04/deep-learning-from-basic-principles-in-python-r-and-octave-part-1/)
+- [Deep Learning from first principles in Python, R and Octave – Part 2](https://gigadom.wordpress.com/2018/01/11/deep-learning-from-first-principles-in-python-r-and-octave-part-2/)
 - [billboarder](https://cran.rstudio.com/web/packages/billboarder/vignettes/billboarder-intro.html). This package allow you to use billboard.js, a re-usable easy interface JavaScript chart library, based on D3 v4+.
 - [esviz](https://github.com/DJAnderson07/esvis). R Package for effect size visualizations.
 - [missRanger: Fast Imputation of Missing Values](https://cran.r-project.org/web/packages/missRanger/index.html)
@@ -111,18 +196,6 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Precision-recall curves – what are they and how are they used?](https://acutecaretesting.org/en/articles/precision-recall-curves-what-are-they-and-how-are-they-used)
 - Александр Дьяконов (МГУ):
 	- [AUC ROC (площадь под кривой ошибок)](https://alexanderdyakonov.wordpress.com/2017/07/28/auc-roc-%d0%bf%d0%bb%d0%be%d1%89%d0%b0%d0%b4%d1%8c-%d0%bf%d0%be%d0%b4-%d0%ba%d1%80%d0%b8%d0%b2%d0%be%d0%b9-%d0%be%d1%88%d0%b8%d0%b1%d0%be%d0%ba/)
-
-
-## Еще раз про ROC-AUC, Survival
-- [Логистическая регрессия и ROC-анализ — математический аппарат](https://basegroup.ru/community/articles/logistic)
-- [Метрики в задачах машинного обучения](https://habrahabr.ru/company/ods/blog/328372/)
-- [Оптимизация бизнес-процессов при помощи кривых выживаемости](https://habrahabr.ru/post/235529/)
-- [HR-Инструменты \ Учебник по STATISTICA. ГЛАВА 14 Анализ выживаемости](http://www.hr-portal.ru/statistica/gl14/gl14.php)
-
-- [survminer: Survival Analysis and Visualization](http://www.sthda.com/english/rpkgs/survminer/). Тут же есть cheatsheet
-- [survminer R package: Survival Data Analysis and Visualization](http://www.sthda.com/english/wiki/survminer-r-package-survival-data-analysis-and-visualization)
-- [Survival Analysis with R](https://rviews.rstudio.com/2017/09/25/survival-analysis-with-r/) by Joseph Rickert, 2017-09-25
-
 
 # 27.12.2017
 ## R
@@ -159,7 +232,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 ## R
 - [ASA Police Data Challenge student visualization contest winners](http://blog.revolutionanalytics.com/2017/12/police-data-challenge.html)
 - COOL! shinyWidgets [Palette Picker](https://dreamrs.github.io/shinyWidgets/articles/palette_picker.html)
-- COOL! [Time Series Forecasting with Recurrent Neural Networks](https://tensorflow.rstudio.com/blog/time-series-forecasting-with-recurrent-neural-networks.html)
+
 
 # 19.12.2017
 ## Stat
@@ -202,7 +275,6 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [How to develop good R packages (for open science)](http://www.masalmon.eu/2017/12/11/goodrpackages/)
 - [New IBM Plex Sans Support in hrbrthemes + Automating Axis Text Justification](https://rud.is/b/2017/11/16/new-ibm-plex-sans-support-in-hrbrthemes-automating-axis-text-justification/)
 	- [IBM Plex font](https://ibm.github.io/type/)
-- COOL! [Connecting R to Keras and TensorFlow](https://rviews.rstudio.com/2017/12/11/r-and-tensorflow/)
 - [Lots of Package News](http://appliedpredictivemodeling.com/blog/2017/11/15/some-package-updates)
 - [Linear mixed-effect models in R](https://poissonisfish.wordpress.com/2017/12/11/linear-mixed-effect-models-in-r/)
 - [styler - A non-invasive source code formatter for R](https://lorenzwalthert.github.io/stylerpost/)
@@ -210,19 +282,6 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Installing a package offline from GitHub](https://stackoverflow.com/questions/33179156/installing-a-package-offline-from-github)
 - Shiny. [Shiny server with user_dirs breaks DT datatables that start with a "." #276 {open}](https://github.com/rstudio/shiny-server/issues/276)
 
-## TensorFlow
-- Пытался запустить TF на примере business-science.io. Возникает ошибка на шаге `fit()`:
-```
- Error in py_call_impl(callable, dots$args, dots$keywords) : 
-  ValueError: could not convert string to float: 'Yes'
-```
-Многие поля до развертывания содержат Yes/No, после развертывания содержит только поле `Churn`, но оно представлено как фактор...
-Ошибка обнаружилась в комментариях к статье (я так и подозревал 20/21):
-```
-Hey Julian, you're right. If you modify those lines to include select(-Churn) it works as expected!
-x_train_tbl <- bake(rec_obj, newdata = train_tbl) %>% select(-Churn)
-x_test_tbl <- bake(rec_obj, newdata = test_tbl) %>% select(-Churn)
-```
 
 # 11.12.2017
 ## R
@@ -264,6 +323,29 @@ Provides a set of functions for querying and parsing data from 'Solr' (<http://l
 - [#R - DEPRECATE FUNCTIONS WITH ROXYGEN2](http://mirai-solutions.ch/news/2017/12/05/roxygen2-deprecate/)
 
 ## TensorFlow
+- COOL! [Connecting R to Keras and TensorFlow](https://rviews.rstudio.com/2017/12/11/r-and-tensorflow/)
+- [Classifying duplicate questions from Quora with Keras](https://tensorflow.rstudio.com/blog/keras-duplicate-questions-quora.html)
+- COOL! [Time Series Forecasting with Recurrent Neural Networks](https://tensorflow.rstudio.com/blog/time-series-forecasting-with-recurrent-neural-networks.html)
+- [Workshop on Deep Learning with Keras and TensorFlow in R](https://shirinsplayground.netlify.com/2017/11/deep_learning_keras_tensorflow/)
+- Пытался запустить TF на примере business-science.io. Возникает ошибка на шаге `fit()`:
+```
+ Error in py_call_impl(callable, dots$args, dots$keywords) : 
+  ValueError: could not convert string to float: 'Yes'
+```
+Многие поля до развертывания содержат Yes/No, после развертывания содержит только поле `Churn`, но оно представлено как фактор...
+Ошибка обнаружилась в комментариях к статье (я так и подозревал 20/21):
+```
+Hey Julian, you're right. If you modify those lines to include select(-Churn) it works as expected!
+x_train_tbl <- bake(rec_obj, newdata = train_tbl) %>% select(-Churn)
+x_test_tbl <- bake(rec_obj, newdata = test_tbl) %>% select(-Churn)
+```
+- [Fitting a TensorFlow Linear Classifier with tfestimators](https://rviews.rstudio.com/2018/01/12/linear-model-in-tensorflow/)
+... Finally, we use the [TensorBoard](https://www.tensorflow.org/get_started/summaries_and_tensorboard) visualization tool to look at the data flow graph and other aspects of the model.
+```
+tensorboard(model$estimator$model_dir, action="start")
+# Started TensorBoard at http://127.0.0.1:5503
+```
+
 - Инсталляция под Windows: [7 SIMPLE STEPS TO INSTALL TENSORFLOW ON WINDOWS](http://saintlad.com/install-tensorflow-on-windows/)
 	- под 3.6 правильная команда такая (в консоли, запущенной от администратора): `python -m pip install --upgrade tensorflow`
 	- код принципиальной проверки инсталляции:
@@ -281,6 +363,7 @@ print(sess.run(a + b))
 - [R interface to Keras](https://keras.rstudio.com/)
 - [Установка Keras с TensorFlow в Anaconda](https://www.asozykin.ru/deep_learning/2017/09/07/Keras-Installation-TensorFlow.html)
 - [Keras: The Python Deep Learning library](https://keras.io/)
+- [Classifying duplicate questions from Quora with Keras](https://tensorflow.rstudio.com/blog/keras-duplicate-questions-quora.html)
 - Инсталляция `keras` под R на anaconda проходила так:
 ```
 install_keras()
@@ -450,7 +533,7 @@ The purpose of lime is to explain the predictions of black box classifiers. What
 - [Open Data Science. Крупнейшее русскоязычное Data Science сообщество](https://habrahabr.ru/company/ods/)
 	- [Метрики в задачах машинного обучения](https://habrahabr.ru/company/ods/blog/328372/https://habrahabr.ru/company/ods/blog/328372/)
 	- [Открытый курс машинного обучения. Тема 3. Классификация, деревья решений и метод ближайших соседей](https://habrahabr.ru/company/ods/blog/322534/)
-	- [Открытый курс машинного обучения. Тема 4. Линейные модели классификации и регрессии](http://www.habrahabr.net/thread/11418)
+	- [Открытый курс машинного обучения. Тема 4. Линейные модели классификации и регрессии](http://www.habrahabr.ru/company/ods/blog/323890/)
 	- [Открытый курс машинного обучения. Тема 5. Композиции: бэггинг, случайный лес](https://habrahabr.ru/company/ods/blog/324402/)
 	- COOL! отличная статья. [Открытый курс машинного обучения. Тема 10. Градиентный бустинг (XGboost). Часть 1](https://habrahabr.ru/company/ods/blog/327250/)
 - [Знакомьтесь, Джини](https://alexanderdyakonov.wordpress.com/2015/12/15/%D0%B7%D0%BD%D0%B0%D0%BA%D0%BE%D0%BC%D1%8C%D1%82%D0%B5%D1%81%D1%8C-%D0%B4%D0%B6%D0%B8%D0%BD%D0%B8/). Многие путаются в коэффициентах Джини, не понимают, что они бывают разные и для разных задач (и названия у них разные — просто в русском переводе, как всегда, многое схлопывается в один термин).
@@ -506,18 +589,6 @@ There is also a performance difference. Xgboost used second derivatives to find 
 - [Regression analysis: A quick primer for media on a fundamental form of data crunching](https://journalistsresource.org/tip-sheets/research/regression-analysis-primer-for-journalists)
 - [Logistic Regression for Small Business Decision Makers](https://www.linkedin.com/pulse/logistic-regression-small-business-decision-makers-paul-dalen/)
 - [Машинное обучение для HR-задач. Борис Вольфсон](http://docplayer.ru/41941451-Mashinnoe-obuchenie-dlya-hr-zadach-boris-volfson.html)
-
-## Survival Analysis
-- [Survival Analysis with R](https://rviews.rstudio.com/2017/09/25/survival-analysis-with-r/)
-- [квантиль. международный эконометрический журнал на русском языке](http://quantile.ru/05/N5.htm)
-	- [Родригес Герман. Модели выживаемости](http://quantile.ru/05/05-GR.pdf)
-- COOL! [ggfortify package](https://cran.r-project.org/web/packages/ggfortify/index.html). Unified plotting tools for statistics commonly used, such as GLM, time series, PCA families, clustering and survival analysis. The package offers a single plotting interface for these analysis results and plots in a unified style using 'ggplot2'.
-- [talentanalytics/class_survival_101](https://github.com/talentanalytics/class_survival_101). A brief code example in association with a presentation about Survival Analytics
-- [Employee Attrition: Survival Analysis](https://deedata.wordpress.com/2016/01/12/employee-attrition-survival-analysis/)
-- [Workshop on Deep Learning with Keras and TensorFlow in R](https://shirinsplayground.netlify.com/2017/11/deep_learning_keras_tensorflow/)
-- Неплохо написано, с кодом: [Predict Customer Churn – Logistic Regression, Decision Tree and Random Forest](https://datascienceplus.com/predict-customer-churn-logistic-regression-decision-tree-and-random-forest/)
-- COOL! [A Comprehensive guide to Parametric Survival Analysis](https://www.analyticsvidhya.com/blog/2015/05/comprehensive-guide-parametric-survival-analysis/)
-- COOL. [NEW R package that makes XGBoost interpretable](https://medium.com/applied-data-science/new-r-package-the-xgboost-explainer-51dd7d1aa211). For the demonstration, I'll use a dataset from Kaggle, to predict employee attrition from a fictional company.
 
 
 # 01.12.2017
@@ -1226,6 +1297,8 @@ A wrapper for the 'Intro.js' library (For more info: <http://www.introjs.com>). 
 	- [An informal intro to async Shiny](https://medium.com/@joe.cheng/an-informal-intro-to-async-shiny-cbf01c85c4c5) by Joe Cheng
 	- [rstudio/promises](https://github.com/rstudio/promises). A promise library for R.
 	- [R Shiny run task/script in different process](https://stackoverflow.com/questions/46266338/r-shiny-run-task-script-in-different-process)
+- [Make asynchronous call in shiny](http://www.blog.zstat.pl/2017/04/24/make-asynchronous-call-in-shiny./), 2017/04/24
+- [Shiny app to demonstrate how to run process on cluster (in parallel)](https://github.com/Tazovsky/shiny-async-demo)
 - [ASYNCHRONOUS AND DISTRIBUTED PROGRAMMING IN R WITH THE FUTURE PACKAGE](https://alexioannides.com/2016/11/02/asynchronous-and-distributed-programming-in-r-with-the-future-package/)
 - COOL! [cwickham/munsell](https://github.com/cwickham/munsell) colour system for R. 
 	- [munsell: Utilities for Using Munsell Colours](https://cran.r-project.org/web/packages/munsell/index.html)
