@@ -91,15 +91,42 @@ https://www.crowdgames.ru/page/plany-crowd-games
 	- [Customer Lifetime Value Part 1: Survival Analysis](https://looker.com/blog/survival-analysis)
 
 ## Survival in R
-- [Survival Analysis with R](https://rviews.rstudio.com/2017/09/25/survival-analysis-with-r/) by Joseph Rickert, 2017-09-25
+- COOL [Survival Analysis with R](https://rviews.rstudio.com/2017/09/25/survival-analysis-with-r/) by Joseph Rickert, 2017-09-25
+- COOL! [A not so short review on survival analysis in R]()http://rpubs.com/alecri/258589)
 - [survminer R package: Survival Data Analysis and Visualization](http://www.sthda.com/english/wiki/survminer-r-package-survival-data-analysis-and-visualization)
 - [survminer: Survival Analysis and Visualization](http://www.sthda.com/english/rpkgs/survminer/). Тут же есть cheatsheet
+- COOL! [Cox Proportional-Hazards Model](http://www.sthda.com/english/wiki/cox-proportional-hazards-model)
+```
+The Cox regression results can be interpreted as follow:
+	1. Statistical significance. The column marked “z” gives the Wald statistic value. It corresponds to the ratio of each regression coefficient to its standard error (z = coef/se(coef)). The wald statistic evaluates, whether the beta (β) coefficient of a given variable is statistically significantly different from 0. From the output above, we can conclude that the variable sex have highly statistically significant coefficients.
+	2. The regression coefficients. The second feature to note in the Cox model results is the the sign of the regression coefficients (coef). A positive sign means that the hazard (risk of death) is higher, and thus the prognosis worse, for subjects with higher values of that variable. The variable sex is encoded as a numeric vector. 1: male, 2: female. The R summary for the Cox model gives the hazard ratio (HR) for the second group relative to the first group, that is, female versus male. The beta coefficient for sex = -0.53 indicates that females have lower risk of death (lower survival rates) than males, in these data.
+	3. Hazard ratios. The exponentiated coefficients (exp(coef) = exp(-0.53) = 0.59), also known as hazard ratios, give the effect size of covariates. For example, being female (sex=2) reduces the hazard by a factor of 0.59, or 41%. Being female is associated with good prognostic.
+	4. Confidence intervals of the hazard ratios. The summary output also gives upper and lower 95% confidence intervals for the hazard ratio (exp(coef)), lower 95% bound = 0.4237, upper 95% bound = 0.816.
+	5. Global statistical significance of the model. Finally, the output gives p-values for three alternative tests for overall significance of the model: The likelihood-ratio test, Wald test, and score logrank statistics. These three methods are asymptotically equivalent. For large enough N, they will give similar results. For small N, they may differ somewhat. The Likelihood ratio test has better behavior for small sample sizes, so it is generally preferred.
+```
 - [survfit_tidiers: tidy survival curve fits](https://rdrr.io/cran/broom/man/survfit_tidiers.html). In broom: Convert Statistical Analysis Objects into Tidy Data Frames
 - [Survival Analysis with Plotly in Python](https://plot.ly/ipython-notebooks/survival-analysis-r-vs-python/)
 - как посчитать среднее (ожидаемое) время жизни в R?:
+	- Ура! с помощью `broom` можно все вытащить:
+```
+cfit <- coxph(Surv(tenure, event) ~ Gender, data=hr_data)
+broom::glance(survfit(cfit))
+```
+	broom defines tidying methods for extracting three kinds of statistics from an object:
+		- `tidy()`: component-level statistics
+		- `augment()`: observation-level statistics
+		- `glance()`: model-level statistics
 	- [R predict.cox function type expected](https://stackoverflow.com/questions/31142251/r-predict-cox-function-type-expected)
 	- [How to compute the mean survival time](https://stackoverflow.com/questions/43173044/how-to-compute-the-mean-survival-time)
 	- [life expectancy survival package R](https://stackoverflow.com/questions/28633849/life-expectancy-survival-package-r)
+- Статья Эдварда. [Анализ дожития: как предсказывать увольнения сотрудников и что на это влияет](https://edwvb.blogspot.ru/2017/07/blog-post_12.html)
+- COOL! [What is the difference between the “coef” and “(exp)coef” output of coxph in R?](https://stats.stackexchange.com/questions/4528/what-is-the-difference-between-the-coef-and-expcoef-output-of-coxph-in-r)
+- Как нарисовать survival plot для результатов coxph? Не совсем тривиально:
+	- [How to plot Cox model with ggsurvplot()? #67 {Closed}](https://github.com/kassambara/survminer/issues/67)
+	- [ggsurvplot and cox model #109 {Closed}](https://github.com/kassambara/survminer/issues/109)
+	- survminer: [The function ggcoxadjustedcurves() is replaced by ggadjustedcurves() {#229}](https://github.com/kassambara/survminer/issues/229).
+	
+
 
 ## Еще раз про ROC-AUC, Survival
 - [Логистическая регрессия и ROC-анализ — математический аппарат](https://basegroup.ru/community/articles/logistic)
@@ -112,6 +139,32 @@ Survival analysis is long-established within actuarial science but infrequently 
 	- [Survival Analysis part 3: Kaplan-Meier modelling](http://blog.applied.ai/survival-analysis-part3/)
 	- COOL! Разбирают срок жизни жестких дисков. [Survival Analysis part 4: Cox PH modelling](http://blog.applied.ai/survival-analysis-part-4/)
 
+# 18.01.2018
+## R
+- COOL! [My favourite R package for: summarising data](https://dabblingwithdata.wordpress.com/2018/01/02/my-favourite-r-package-for-summarising-data/)
+- COOL! [While you wait for that to finish, can I interest you in parallel processing?](http://appliedpredictivemodeling.com/blog/2018/1/17/parallel-processing)
+- [Importance sampling adds an interesting twist to Monte Carlo simulation](https://www.rdatagen.net/post/importance-sampling-adds-a-little-excitement-to-monte-carlo-simulation/)
+- [January meeting: Getting started with spatial data and writing R packages from scratch](http://edinbr.org/edinbr/2018/01/08/january-meeting.html)
+- COOL! [Slides or talk notes from EdinbR meetings](https://github.com/EdinbR/edinbr-talks)
+
+# 17.01.2018
+## R
+- COOL! Практическое разпознование кораблей на изображении с применением сверточных сетей. [A guide to GPU-accelerated ship recognition in satellite imagery using Keras and R (part I)](https://appsilondatascience.com/blog/rstats/2018/01/16/keras.html)
+- COOL! Пошаговое руководство по созданию R API с помощью plumber [How to make your machine learning model available as an API with the plumber package](https://shirinsplayground.netlify.com/2018/01/plumber/)
+- [5 Things I Learned Making a Package to Work with Hydrometric Data in R](https://ropensci.org/blog/2018/01/16/tidyhydat/)
+
+## RPA
+- [Roro](https://github.com/arviedelgado/Roro) is a free open-source Robotic Process Automation software.
+- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
+- [Workfusion](https://www.workfusion.com/). Intelligent Automation. (RPA)
+- [Blue Prism vs Automation Anywhere vs Uipath](http://asha24.com/blog/blue-prism-vs-automation-anywhere-vs-uipath)
+
+
+# 16.01.2018
+## R
+- [Base R can be Fast](http://www.win-vector.com/blog/2018/01/base-r-can-be-fast/)
+- [Natural Language Processing for non-English languages with udpipe](http://www.bnosac.be/index.php/blog/72-natural-language-processing-for-non-english-languages-with-udpipe)
+- [NLP with R and UDPipe](https://bnosac.github.io/udpipe/en/). Tokenization, Parts of Speech Tagging, Lemmatization, Dependency Parsing and NLP flows
 
 # 15.01.2018
 ## R
@@ -189,6 +242,11 @@ Survival analysis is long-established within actuarial science but infrequently 
 
 ## p-value
 - R: Анализ и визуализация данных. [Классические методы статистики: критерий хи-квадрат](http://r-analytics.blogspot.ru/2012/08/blog-post.html)
+- [Альтернатива p-value для проверки статистической гипотезы](https://medium.com/@denisgabaydulin/%D0%B0%D0%BB%D1%8C%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%82%D0%B8%D0%B2%D0%B0-p-value-%D0%B4%D0%BB%D1%8F-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B8-%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9-%D0%B3%D0%B8%D0%BF%D0%BE%D1%82%D0%B5%D0%B7%D1%8B-3235fcf93f1e)
+- [There is still only one test](http://allendowney.blogspot.ru/2016/06/there-is-still-only-one-test.html)
+- [There is only one test!](http://allendowney.blogspot.ru/2011/05/there-is-only-one-test.html)
+- [Remember: p-values Are Not Effect Sizes](http://www.win-vector.com/blog/2017/09/remember-p-values-are-not-effect-sizes/)
+- Неплохое обучающее видео. [Hypothesis testing and p-values](https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample/tests-about-population-mean/v/hypothesis-testing-and-p-values)
 
 
 # 28.12.2017
@@ -296,7 +354,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 - Новые полезные пакеты для препроцессинга данных (прогнозная аналитика):
 	- [yardstick](https://topepo.github.io/yardstick/) allows you to easily create tidy performance estimates. Using a syntax similar to dplyr’s you can compute common performance metrics, such as precision, and recall (for classification), or numeric metric outcomes for regression, and have them returned in a tidy data frame.
 	- [tidyposterior](https://topepo.github.io/tidyposterior/) is used to conduct Bayesian post hoc analyses of resampling results generated by models. It can be considered an upgraded version of caret::resample. Though it works natively with rsample, it can be used with any data frame of results.
-	- [The `recipes` package is an alternative method for creating and preprocessing design matrices that can be used for modeling or visualization](https://topepo.github.io/recipes/articles/Simple_Example.html). Developed by Max Kuhn, Hadley Wickham.
+	- [The `recipes` package is an alternative method for creating and preprocessing design matrices that can be used for modeling or visualization](https://topepo.github.io/recipes/articles/Simple_Example.html). Developed by Max Kuhn, Hadley Wickham. [Basic Recipes](https://topepo.github.io/recipes/articles/Simple_Example.html). This document demonstrates some basic uses of recipes. First, some definitions are required:
 	- [`rsample` contains a set of functions that can create different types of resamples and corresponding classes for their analysis](https://topepo.github.io/rsample/). Developed by Max Kuhn, Hadley Wickham.
 	- [`corrr` is a package for exploring correlations in R](https://github.com/drsimonj/corrr). It focuses on creating and working with data frames of correlations (instead of matrices) that can be easily explored via corrr functions or by leveraging tools like those in the tidyverse.
 	- [The `caret` Package](http://topepo.github.io/caret/index.html) by Max Kuhn. caret is short for *_C_lassification _A_nd _RE_gression _T_raining*. [Companion website](http://appliedpredictivemodeling.com/) for "Applied Predictive Modeling" book by By Max Kuhn and Kjell Johnson.
@@ -4423,6 +4481,7 @@ Go and explore, and happy new year!
 ## R
 - [R exercises](http://r-exercises.com/). Очень неплохой ресурс с заданиями по R.
 - COOL! Классный пакет для Simmer [Discrete-Event Simulator for R](http://fishyoperations.com/2017/01/12/extensions-for-simmer.html). Вообще, на этом сайте очень много записей про симуляцию.
+- [simmer.bricks 0.1.0: new add-on for simmer](https://www.enchufa2.es/archives/simmer-bricks-0-1-0-new-add-on-for-simmer.html)
 - [simmer 3.6.5](https://www.enchufa2.es/archives/simmer-3-6-5.html)
 - [simmer 3.6.4](https://www.enchufa2.es/archives/simmer-3-6-4.html)
 - [simmer 3.6.3](https://www.enchufa2.es/archives/simmer-3-6-3.html)
