@@ -125,8 +125,6 @@ broom::glance(survfit(cfit))
 	- [How to plot Cox model with ggsurvplot()? #67 {Closed}](https://github.com/kassambara/survminer/issues/67)
 	- [ggsurvplot and cox model #109 {Closed}](https://github.com/kassambara/survminer/issues/109)
 	- survminer: [The function ggcoxadjustedcurves() is replaced by ggadjustedcurves() {#229}](https://github.com/kassambara/survminer/issues/229).
-	
-
 
 ## Еще раз про ROC-AUC, Survival
 - [Логистическая регрессия и ROC-анализ — математический аппарат](https://basegroup.ru/community/articles/logistic)
@@ -139,6 +137,30 @@ Survival analysis is long-established within actuarial science but infrequently 
 	- [Survival Analysis part 3: Kaplan-Meier modelling](http://blog.applied.ai/survival-analysis-part3/)
 	- COOL! Разбирают срок жизни жестких дисков. [Survival Analysis part 4: Cox PH modelling](http://blog.applied.ai/survival-analysis-part-4/)
 
+# 24.01.2018
+## R
+- [Tidyverse and data.table, sitting side by side… and then base R walks in](https://www.enchufa2.es/archives/tidyverse-and-data-table-sitting-side-by-side-and-then-base-r-walks-in.html)
+- [Visualize your Strava routes with R](http://blog.revolutionanalytics.com/2018/01/strava-visualization.html)
+- [The progress bar just got a lot cheaper](http://peter.solymos.org/code/2018/01/23/the-progress-bar-just-got-a-lot-cheaper.html)
+
+# DS
+- [Чудесный мир Word Embeddings: какие они бывают и зачем нужны?](https://habrahabr.ru/company/ods/blog/329410/)
+
+
+# 22.01.2018
+- COOL! Дирк перешел в наступление: [#15: Tidyverse and data.table, sitting side by side ... (Part 1)](http://dirk.eddelbuettel.com/blog/2018/01/21/#015_tidyverse_and_datatable_part_1)
+- [fs 1.0.0 is now available on CRAN!](https://www.tidyverse.org/articles/2018/01/fs-1.0.0/) fs provides a cross-platform, uniform interface to file system operations. fs uses libuv under the hood, which gives a rock solid cross-platform interface to the filesystem.
+- COOL! [ggplot2 Time Series Heatmaps: revisited in the tidyverse](https://margintale.blogspot.ru/2018/01/ggplot2-time-series-heatmaps-revisited.html)
+- [Wrapping Access to Web-Services in R-functions](https://flovv.github.io/Accessing_a_web_api/)
+- [Exploring handwritten digit classification: a tidy analysis of the MNIST dataset](http://varianceexplained.org/r/digit-eda/)
+
+
+# 19.01.2018
+## R
+- [Extract a single dplyr tbl_df row as a vector](https://stackoverflow.com/questions/35617785/extract-a-single-dplyr-tbl-df-row-as-a-vector)
+- [Extract a dplyr tbl column as a vector](https://stackoverflow.com/questions/21618423/extract-a-dplyr-tbl-column-as-a-vector)
+- [Using column index in dplyr's rename](https://stackoverflow.com/questions/42769650/using-column-index-in-dplyrs-rename)
+
 # 18.01.2018
 ## R
 - COOL! [My favourite R package for: summarising data](https://dabblingwithdata.wordpress.com/2018/01/02/my-favourite-r-package-for-summarising-data/)
@@ -150,6 +172,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 # 17.01.2018
 ## R
 - COOL! Практическое разпознование кораблей на изображении с применением сверточных сетей. [A guide to GPU-accelerated ship recognition in satellite imagery using Keras and R (part I)](https://appsilondatascience.com/blog/rstats/2018/01/16/keras.html)
+- [A guide to GPU-accelerated ships recognition in satellite imagery using Keras and R (part II)](https://appsilondatascience.com/blog/rstats/2018/01/23/keras.html)
 - COOL! Пошаговое руководство по созданию R API с помощью plumber [How to make your machine learning model available as an API with the plumber package](https://shirinsplayground.netlify.com/2018/01/plumber/)
 - [5 Things I Learned Making a Package to Work with Hydrometric Data in R](https://ropensci.org/blog/2018/01/16/tidyhydat/)
 
@@ -3406,6 +3429,7 @@ ghit::install_github(c("ropenscilabs/tabulizerjars", "ropenscilabs/tabulizer"), 
 # elsewhere
 ghit::install_github(c("ropenscilabs/tabulizerjars", "ropenscilabs/tabulizer"))
 ```
+- Такая же фигня с XLConnect: `install.packages(c("XLConnectJars", "XLConnect"), INSTALL_opts = "--no-multiarch")`
 
 # 17.04.2017
 ## R
