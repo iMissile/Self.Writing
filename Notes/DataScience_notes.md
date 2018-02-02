@@ -131,11 +131,96 @@ broom::glance(survfit(cfit))
 - [Метрики в задачах машинного обучения](https://habrahabr.ru/company/ods/blog/328372/)
 - [Оптимизация бизнес-процессов при помощи кривых выживаемости](https://habrahabr.ru/post/235529/)
 - [HR-Инструменты \ Учебник по STATISTICA. ГЛАВА 14 Анализ выживаемости](http://www.hr-portal.ru/statistica/gl14/gl14.php)
+- [Probabilistic interpretation of AUC](http://www.alexejgossmann.com/auc/)
 
 - [tech survival-analysis](http://blog.applied.ai/tag/survival-analysis/)
 Survival analysis is long-established within actuarial science but infrequently used in general data science projects. We explain more with worked examples.
 	- [Survival Analysis part 3: Kaplan-Meier modelling](http://blog.applied.ai/survival-analysis-part3/)
 	- COOL! Разбирают срок жизни жестких дисков. [Survival Analysis part 4: Cox PH modelling](http://blog.applied.ai/survival-analysis-part-4/)
+
+# 01.02.2018
+## R
+- [An R-focused pipeline toolkit for reproducibility and high-performance computing](https://ropensci.github.io/drake)
+- [Native SSH client in R](https://github.com/ropensci/ssh)
+- [RCurl: General Network (HTTP/FTP/...) Client Interface for R](https://cran.r-project.org/web/packages/RCurl/index.html)
+- Как достать файл по scp, имея пароль? Параметр `password`, который явно в документации не прописан. 
+```
+scp("10.0.0.246", path="/var/log/squid/access.log", binary=FALSE, password="pass", user="root")
+```
+При этом ключик надо делать на клиентской машине, командой `ssh-keygen -t rsa -b 2048`
+- COOL [Scrape a page in R using rvest or RCurl or httr](https://stackoverflow.com/questions/46318348/scrape-a-page-in-r-using-rvest-or-rcurl-or-httr)
+- COOL [Scales, axes and legends](http://www.hafro.is/~einarhj/education/ggplot2/scales.html)
+- COOL [compareGroups: Descriptive Analysis by Groups](https://cran.r-project.org/web/packages/compareGroups/index.html)
+Create data summaries for quality control, extensive reports for exploring data, as well as publication-ready univariate or bivariate tables in several formats (plain text, HTML,LaTeX, PDF, Word or Excel. Create figures to quickly visualise the distribution of your data (boxplots, barplots, normality-plots, etc.). Display statistics (mean, median, frequencies, incidences, etc.). Perform the appropriate tests (t-test, Analysis of variance, Kruskal-Wallis, Fisher, log-rank, ...) depending on the nature of the described variable (normal, non-normal or qualitative). Summarize genetic data (Single Nucleotide Polymorphisms) data displaying Allele Frequencies and performing Hardy-Weinberg Equilibrium tests among other typical statistics and tests for these kind of data.
+
+
+# 31.01.2018
+## R
+- [Using the R Software for Log File Analysis - Usenix](https://www.usenix.org/system/.../1403_11-15_tsoukalos.pdf)
+- [Introduction to webreadr](https://cran.r-project.org/web/packages/webreadr/vignettes/Introduction.html). Reading web access logs
+- [Scraping Wikipedia Tables from Lists for Visualisation](https://www.gokhanciflikli.com/post/scraping-wikipedia/)
+- COOL! [fastrtext](https://pommedeterresautee.github.io/fastrtext/). R wrapper for fastText C++ code from Facebook. fastText is a library for efficient learning of word representations and sentence classification.
+- `readr` questions:
+	- [Load from file delimited by multiple spaces? #605 {Closed}](https://github.com/tidyverse/readr/issues/605)
+
+
+# 30.01.2018
+## R
+- [Display all values in a Shiny selectInput box (1000+)](https://stackoverflow.com/questions/40710947/display-all-values-in-a-shiny-selectinput-box-1000)
+- [Selectize.js options](https://github.com/selectize/selectize.js/blob/master/docs/usage.md)
+- [The “cluster of six”. Unsupervised machine learning](https://thinkr.biz/2018/01/29/cluster-of-six/)
+- [sparklyr 0.7](https://blog.rstudio.com/2018/01/29/sparklyr-0-7/). We are excited to share that sparklyr 0.7 is now available on CRAN!
+- [Moving parts of a country over a map](http://rmhogervorst.nl/cleancode/blog/2018/01/29/moving-parts-of-a-map-in-a-gif.html)
+- [A SMOOTH TRANSITION BETWEEN CHLOROPLETH AND CARTOGRAM](https://www.r-graph-gallery.com/a-smooth-transition-between-chloropleth-and-cartogram/)
+
+# 29.01.2018
+## R
+- [Exploring Embeddings for Categorical Variables with Keras](https://flovv.github.io/Embeddings_with_keras/)
+- [Type I error rates in two-sample t-test by simulation](https://heuristicandrew.blogspot.ru/2018/01/type-i-error-rates-in-two-sample-t-test.html)
+- [Log shiny app visitors and R usage to Google Analytics](http://www.bnosac.be/index.php/blog/73-log-shiny-app-visitors-r-events-and-r-usage-to-google-analytics)
+- [rte-antares-rpackage/manipulateWidget](https://github.com/rte-antares-rpackage/manipulateWidget). Add More Interactivity to htmlWidgets
+- Shiny. Ручная эмуляция выбора из списка. [Chooser demo](https://shiny.rstudio.com/gallery/custom-input-control.html). Demonstrates creating a custom Shiny input binding for a simple JavaScript-enabled "dueling select box" input widget.
+- [R or Python? Python or R? The ongoing debate.](https://tomaztsql.wordpress.com/2018/01/28/r-or-python-python-or-r-the-ongoing-debate/)
+- [Have you ever asked yourself, "how should I approach the classic pre-post analysis?"](https://www.rdatagen.net/post/thinking-about-the-run-of-the-mill-pre-post-analysis/)
+- ebook [Getting started with mdatools for R](http://mdatools.com/mdatools/index.html). This is a user guide for mdatools — R package for preprocessing, exploring and analysis of multivariate data
+
+
+# 26.01.2018
+## R. Импорт из Word, Text mining
+- Bob Rudis. [docxtractr: Extract Data Tables and Comments from Microsoft Word Documents](https://cran.r-project.org/web/packages/docxtractr/)
+	- [Using R To Get Data *Out Of* Word Docs](https://rud.is/b/2015/08/23/using-r-to-get-data-out-of-word-docs/)
+	- [New Pacakge “docxtractr” – Easily Extract Tables From Microsoft Word Docs](https://rud.is/b/2015/08/24/new-pacakge-docxtractr-easily-extract-tables-from-microsoft-word-docs/)
+- [textreadr](https://www.rdocumentation.org/packages/textreadr/versions/0.7.0) is a small collection of convenience tools for reading text documents into R. This is not meant to be an exhaustive collection; for more see the tm package.
+- COOL! [CRAN Task View: Natural Language Processing](https://cran.r-project.org/web/views/NaturalLanguageProcessing.html)
+- [tm: Text Mining Package](https://cran.r-project.org/web/packages/tm/index.html). A framework for text mining applications within R.
+- Очень концептуальные вопросы и отсылки, хоть и 2013 год. [how do I create a corpus of *.docx files with tm?](https://stackoverflow.com/questions/16065952/how-do-i-create-a-corpus-of-docx-files-with-tm)
+- [textreg: n-Gram Text Regression, aka Concise Comparative Summarization](https://cran.r-project.org/web/packages/textreg/index.html)
+- [Text Processing in R](http://www.mjdenny.com/Text_Processing_In_R.html)
+- [Text mining and word cloud fundamentals in R : 5 simple steps you should know](http://www.sthda.com/english/wiki/text-mining-and-word-cloud-fundamentals-in-r-5-simple-steps-you-should-know)
+- [Wordcloud2 introduction](https://cran.r-project.org/web/packages/wordcloud2/vignettes/wordcloud.html). This is an introduction to wordcloud2 package. This package provides an HTML5 interface to wordcloud for data visualization. Timdream’s wordcloud2.js is used in this package.
+- [Change font in Wordcloud package R](https://stackoverflow.com/questions/43460652/change-font-in-wordcloud-package-r)
+- [Демки на wordcloud](http://www.r-graph-gallery.com/102-text-mining-and-wordcloud/)
+- COOL! [Hardwired..for tidy text](https://www.johnmackintosh.com/2018-01-30-hardwired-for-tidy-text/)
+
+# 25.01.2018
+## R
+- [Scraping a website with 5 lines of R code](http://blog.revolutionanalytics.com/2018/01/scraping-with-5-lines-r.html)
+- [Exploring lime on the house prices dataset](http://blog.haunschmid.name/lime-on-regression-model-house-prices/)
+- COOL! [Exploratory Data Analysis & Data Preparation with 'funModeling'](https://blog.datascienceheroes.com/exploratory-data-analysis-data-preparation-with-funmodeling/)
+- [Predicting Fraud with Autoencoders and Keras](https://tensorflow.rstudio.com/blog/keras-fraud-autoencoder.html)
+- [Styling Base R Graphics. Publication quality base R graphics](http://blog.jumpingrivers.com/posts/2018/2018-01-24-base-r-graphics/)
+- COOL! [nodbi: the NoSQL Database Connector](https://ropensci.org/technotes/2018/01/25/nodbi/)
+- [XLCONNECT 0.2-14](http://mirai-solutions.ch/news/2018/01/25/XLConnect-0.2-14/)
+- [Dec 2017: "Top 40" New Package Picks](https://rviews.rstudio.com/2018/01/25/dec-2017-new-package-picks/)
+- Может пригодиться при подготовке курсов. [INWT's guidelines for R code](https://www.inwt-statistics.com/read-blog/inwts-guidelines-for-r-code.html)
+
+
+## Git
+- [Какая разница между 'git pull' и 'git fetch'?](https://ru.stackoverflow.com/questions/641013/%D0%9A%D0%B0%D0%BA%D0%B0%D1%8F-%D1%80%D0%B0%D0%B7%D0%BD%D0%B8%D1%86%D0%B0-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-git-pull-%D0%B8-git-fetch).
+`git pull` — это, по сути, команда `git fetch`, после которой сразу же следует `git merge`.
+
+`git fetch` получает изменения с сервера и сохраняет их в каталог `refs/remotes/`.
+Это никак не влияет на локальные ветки и текущие изменения. А `git merge` уже вливает все эти изменения в локальную копию.
 
 # 24.01.2018
 ## R
@@ -145,6 +230,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 
 # DS
 - [Чудесный мир Word Embeddings: какие они бывают и зачем нужны?](https://habrahabr.ru/company/ods/blog/329410/)
+- [Обзор исследований в области глубокого обучения: обработка естественных языков](https://habrahabr.ru/company/wunderfund/blog/330194/)
 
 
 # 22.01.2018
@@ -164,6 +250,12 @@ Survival analysis is long-established within actuarial science but infrequently 
 # 18.01.2018
 ## R
 - COOL! [My favourite R package for: summarising data](https://dabblingwithdata.wordpress.com/2018/01/02/my-favourite-r-package-for-summarising-data/)
+	- `base::summary`
+	- `Hmisc::describe`
+	- `pastesec::stat.desc`
+	- `psych::describe` & `psych::describeBy`
+	- `skimr::skim`
+	- `summarytools::descr` & `summarytools::dfSummary`
 - COOL! [While you wait for that to finish, can I interest you in parallel processing?](http://appliedpredictivemodeling.com/blog/2018/1/17/parallel-processing)
 - [Importance sampling adds an interesting twist to Monte Carlo simulation](https://www.rdatagen.net/post/importance-sampling-adds-a-little-excitement-to-monte-carlo-simulation/)
 - [January meeting: Getting started with spatial data and writing R packages from scratch](http://edinbr.org/edinbr/2018/01/08/january-meeting.html)
@@ -171,7 +263,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 
 # 17.01.2018
 ## R
-- COOL! Практическое разпознование кораблей на изображении с применением сверточных сетей. [A guide to GPU-accelerated ship recognition in satellite imagery using Keras and R (part I)](https://appsilondatascience.com/blog/rstats/2018/01/16/keras.html)
+- COOL! Практическое разпознавание кораблей на изображении с применением сверточных сетей. [A guide to GPU-accelerated ship recognition in satellite imagery using Keras and R (part I)](https://appsilondatascience.com/blog/rstats/2018/01/16/keras.html)
 - [A guide to GPU-accelerated ships recognition in satellite imagery using Keras and R (part II)](https://appsilondatascience.com/blog/rstats/2018/01/23/keras.html)
 - COOL! Пошаговое руководство по созданию R API с помощью plumber [How to make your machine learning model available as an API with the plumber package](https://shirinsplayground.netlify.com/2018/01/plumber/)
 - [5 Things I Learned Making a Package to Work with Hydrometric Data in R](https://ropensci.org/blog/2018/01/16/tidyhydat/)
@@ -188,6 +280,15 @@ Survival analysis is long-established within actuarial science but infrequently 
 - [Base R can be Fast](http://www.win-vector.com/blog/2018/01/base-r-can-be-fast/)
 - [Natural Language Processing for non-English languages with udpipe](http://www.bnosac.be/index.php/blog/72-natural-language-processing-for-non-english-languages-with-udpipe)
 - [NLP with R and UDPipe](https://bnosac.github.io/udpipe/en/). Tokenization, Parts of Speech Tagging, Lemmatization, Dependency Parsing and NLP flows
+- [Синтаксически размеченный корпус русского языка: информация для пользователей](http://www.ruscorpora.ru/instruction-syntax.html)
+- [Online Udpipe Service](http://lindat.mff.cuni.cz/services/udpipe/)
+- [UDPipe User's Manual](https://ufal.mff.cuni.cz/udpipe/users-manual)
+	- А вот и описание полученного фрейма с разметкой:  [CoNLL-U Format](http://universaldependencies.org/format.html)
+	- [Universal part-of-speech (POS) tags](http://universaldependencies.org/u/pos/index.html)
+	- А тут описывается классификация тега XPOS [Alphabetical list of part-of-speech tags used in the Penn Treebank Project:](http://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html)
+- Baseline results: [CoNLL 2017 Shared Task](http://universaldependencies.org/conll17/baseline.html). Two open-source systems have been run on the development data under comparable conditions to provide baseline results: UDPipe and SyntaxNet.
+- [Главные достижения в области обработки естественного языка в 2017 году](https://habrahabr.ru/company/ods/blog/347524/)
+
 
 # 15.01.2018
 ## R
@@ -242,6 +343,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 ## R
 - [Deep Learning from first principles in Python, R and Octave – Part 1](https://gigadom.wordpress.com/2018/01/04/deep-learning-from-basic-principles-in-python-r-and-octave-part-1/)
 - [Deep Learning from first principles in Python, R and Octave – Part 2](https://gigadom.wordpress.com/2018/01/11/deep-learning-from-first-principles-in-python-r-and-octave-part-2/)
+- [Deep Learning from first principles in Python, R and Octave – Part 3](https://gigadom.wordpress.com/2018/01/30/deep-learning-from-first-principles-in-python-r-and-octave-part-3/)
 - [billboarder](https://cran.rstudio.com/web/packages/billboarder/vignettes/billboarder-intro.html). This package allow you to use billboard.js, a re-usable easy interface JavaScript chart library, based on D3 v4+.
 - [esviz](https://github.com/DJAnderson07/esvis). R Package for effect size visualizations.
 - [missRanger: Fast Imputation of Missing Values](https://cran.r-project.org/web/packages/missRanger/index.html)
@@ -649,6 +751,7 @@ There is also a performance difference. Xgboost used second derivatives to find 
 - [Example data from Shiny reactlog](https://github.com/wch/shiny-reactlog-examples)
 
 ## DS in HR
+- [Applying Survival Analysis to Reduce Employee Turnover: A Practical Case](https://www.analyticsinhr.com/blog/applying-survival-analysis-reduce-employee-turnover-practical-case/)
 - [HR ANALYTICS: USING MACHINE LEARNING TO PREDICT EMPLOYEE TURNOVER](http://www.business-science.io/business/2017/09/18/hr_employee_attrition.html). Written by Matt Dancho on September 18, 2017
 - [DEMO WEEK: TIME SERIES MACHINE LEARNING WITH H2O AND TIMETK](http://www.business-science.io/code-tools/2017/10/28/demo_week_h2o.html)
 - [CUSTOMER ANALYTICS: USING DEEP LEARNING WITH KERAS TO PREDICT CUSTOMER CHURN](http://www.business-science.io/blog/index.html)
