@@ -1,4 +1,4 @@
-- [The JSON Formatter](https://jsonformatter.curiousconcept.com/)
+﻿- [The JSON Formatter](https://jsonformatter.curiousconcept.com/)
 - [JSON Editor Online](http://jsoneditoronline.org/)
 - [Различные онлайн инструменты для проверки и преобразования](https://www.danstools.com/)
 
@@ -138,6 +138,139 @@ Survival analysis is long-established within actuarial science but infrequently 
 	- [Survival Analysis part 3: Kaplan-Meier modelling](http://blog.applied.ai/survival-analysis-part3/)
 	- COOL! Разбирают срок жизни жестких дисков. [Survival Analysis part 4: Cox PH modelling](http://blog.applied.ai/survival-analysis-part-4/)
 
+# 14.02.2018
+## R
+- [jamovi for R: Easy but Controversial](http://r4stats.com/2018/02/13/jamovi-for-r-easy-but-controversial/). jamovi is software that aims to simplify two aspects of using R. It offers a point-and-click graphical user interface (GUI). It also provides functions that combines the capabilities of many others, bringing a more SPSS- or SAS-like method of programming to R.
+- [What does Microsoft do with R?](http://blog.revolutionanalytics.com/2018/02/what-does-microsoft-do-with-r.html)
+- COOL! [shinyalert: Easily create pretty popup messages (modals) in Shiny](https://deanattali.com/blog/shinyalert-package/)
+- [tfestimators - Package: Embeddings for Categorical Variables](https://flovv.github.io/Embeddings_with_tf/)
+- [tidygraph 1.1 – A tidy hope](https://www.data-imaginist.com/2018/tidygraph-1-1-a-tidy-hope/). I am very pleased to tell you that the next version of tidygraph (1.1) is now available on CRAN. This is not a bug-fix release, nor a change-it-all release, but rather a more-of-it-all release, and in this post I’m going to tell you all about it.
+- [«smooth» package for R. Common ground. Part IV. Exogenous variables. Advanced stuff](https://forecasting.svetunkov.ru/en/2018/02/10/smooth-package-for-r-common-ground-part-iv-exogenous-variables-advanced-stuff/)
+
+# 12.02.2018
+## R
+- [Yet Another Blog in Statistical Computing. R Interfaces to Python Keras Package](https://statcompute.wordpress.com/2018/02/11/r-interfaces-to-python-keras-package/)
+- COOL! [Applying a function over rows of a data frame](https://rpubs.com/wch/200398) by Winston Chang. Подробнейший разбор нескольких методов итерации по строкам.
+- COOL! Как подхватывать функцию с произвольным списком переменных: [Advanced R by Hadley Wickham. chap Functions](http://adv-r.had.co.nz/Functions.html). Глава `...`. [capturing unevaluated dots](http://adv-r.had.co.nz/Computing-on-the-language.html#capturing-dots)
+- COOL! [TestThat. Reference version 2.0.0](http://testthat.r-lib.org/reference/index.html)
+- COOL! [rlangpart. Reference version 0.0.0.9019](http://rlang.tidyverse.org/reference/)
+- [R package primer. Writing tests](http://kbroman.org/pkg_primer/pages/tests.html)
+- [Printing custom diagnostic information if `testthat` test fails in `R`](https://stackoverflow.com/questions/26928253/printing-custom-diagnostic-information-if-testthat-test-fails-in-r)
+- [Split uneven length vectors to columns with tidyr](https://community.rstudio.com/t/split-uneven-length-vectors-to-columns-with-tidyr/2704)
+- [A new R trick ... for me at least](https://oddhypothesis.blogspot.ru/2013/08/a-new-r-trick-for-me-at-least.html)
+
+
+
+# 09.02.2018
+## R
+- COOL! [DataExplorer: Fast Data Exploration With Minimum Code](http://blog.revolutionanalytics.com/2018/02/dataexplorer.html)
+	- [Introduction to DataExplorer](https://cran.r-project.org/web/packages/DataExplorer/vignettes/dataexplorer-intro.html)
+- COOL! [Test chunks for R Markdown](https://github.com/ropenscilabs/testrmd)
+- COOL! [Intro to unit testing in R](https://katherinemwood.github.io/post/testthat/)
+- При перемещении тестов в папку`./tests` команда `test_file` рушится следующим образом:
+```
+== Results =====================================================================
+OK:       0
+Failed:   2
+Warnings: 1
+Skipped:  0
+> test_dir("./tests/")
+√ | OK F W S | Context
+Error in x[[method]](...) : attempt to apply non-function
+```
+Убрав `source` из файла, видно, что путь запуска идет от файла автотеста, а не от корня. Надо править относительные ссылки к подгружаемым файлам.
+
+# 08.02.2018
+## R
+- [Data transformation in #tidyverse style: package sjmisc updated #rstats](https://strengejacke.wordpress.com/2018/02/06/data-transformation-in-tidyverse-style-package-sjmisc-updated-rstats/)
+- [In case you missed it: January 2018 roundup](http://blog.revolutionanalytics.com/2018/02/in-case-you-missed-it-january-2018-roundup.html)
+- [The plots thicken. Every story needs a good plot](https://thinkr.biz/2018/02/07/plots-thicken/)
+	- Code. [The plots thicken. Daily Wikipedia page views of ‘Statistical Charts & Diagrams’](https://thinkr.biz/wp-content/uploads/2018/02/app.html)
+- [Continuous integration for your private R projects with CircleCI](https://appsilondatascience.com/blog/rstats/2018/02/07/circleci.html)
+- Hadley Wickham. [Automated checking](http://r-pkgs.had.co.nz/check.html)
+- COOL! [CircleCI](https://circleci.com/). Build faster. Test more. Fail less. Automate the software development process using continuous integration and continuous delivery so you can focus on what matters: building great things, not waiting for great things to build.
+- COOL! [IMSMWU/RClickhouse](https://github.com/IMSMWU/RClickhouse). A 'DBI' Interface to the Yandex Clickhouse Database Providing Basic 'dplyr' Support
+- [httpuv: HTTP and WebSocket Server Library](https://cran.r-project.org/web/packages/httpuv/index.html)
+- [Using future with plumber to set up asynchronous api calls](https://github.com/FvD/futureplumber)
+
+# 07.02.2018
+## R
+- COOL! [Setting up a version controlled shiny-server](http://rmhogervorst.nl/cleancode/blog/2018/02/06/setting-up-a-version-controlled-shiny-server.html)
+- [The prequel to the drake R package](https://ropensci.org/blog/2018/02/06/drake/)
+- [An R-focused pipeline toolkit for reproducibility and high-performance computing](https://ropensci.github.io/drake)
+
+## Python & Excel
+- [Excel VBA Save Workbook: Easily Save Excel Files With These 3 Macro Examples](https://powerspreadsheets.com/vba-save-workbook/)
+- [Программное копирование листа в программе Excel вызывает ошибку времени выполнения 1004](https://support.microsoft.com/ru-ru/help/210684/copying-worksheet-programmatically-causes-run-time-error-1004-in-excel)
+- [Office VBA Reference Excel VBA](https://msdn.microsoft.com/vba/vba-excel)
+	- [Workbooks.Open Method (Excel)](https://msdn.microsoft.com/en-us/vba/excel-vba/articles/workbooks-open-method-excel)
+	- [Worksheet.Activate Method (Excel)](https://msdn.microsoft.com/en-us/vba/excel-vba/articles/worksheet-activate-method-excel)
+	- [Свойство Application.ActiveSheet (Excel)](https://msdn.microsoft.com/ru-ru/vba/excel-vba/articles/application-activesheet-property-excel)
+	- [Метод Workbook.SaveAs (Excel)](https://msdn.microsoft.com/ru-ru/vba/excel-vba/articles/workbook-saveas-method-excel)
+	- [Workbook.BeforeSave Event (Excel)](https://msdn.microsoft.com/en-us/vba/excel-vba/articles/workbook-beforesave-event-excel)
+	- [Метод Workbook.Close (Excel)](https://msdn.microsoft.com/ru-ru/vba/excel-vba/articles/workbook-close-method-excel)
+- [How to enable events so Workbook_BeforeSave gets called](https://stackoverflow.com/questions/26296597/how-to-enable-events-so-workbook-beforesave-gets-called)
+- [ошибка 1004 "Метод select из класса Range завершен неверно"](http://www.excel-vba.ru/forum/index.php?topic=2878.0)
+- Как работать с константами win32 в python:
+	- [error xlPrimary not defined in Python win32com](https://stackoverflow.com/questions/23290216/error-xlprimary-not-defined-in-python-win32com/23306850#23306850)
+	- [How to use win32com.client.constants with MS Word?](https://stackoverflow.com/questions/28264548/how-to-use-win32com-client-constants-with-ms-word)
+	- [Use VBA predefined constants in python win32com package](https://yiruiscool.wordpress.com/2015/03/19/use-vba-predefined-constants-in-python-win32com-package/)
+	- [win32com.client.constants](http://nullege.com/codes/search/win32com.client.constants)
+- COOL! [PYTHON FOR EXCEL. FREE & OPEN SOURCE](https://www.xlwings.org/)
+- [pyxll=python("in excel")](https://www.pyxll.com/)
+- [Creating Advanced Excel Workbooks with Python](http://pbpython.com/advanced-excel-workbooks.html)
+- [Tutorial lesson using pywin32 module to handle excel by python.](https://github.com/sukuba/howto-pywin32-excel)
+- [Python Excel Tutorial: The Definitive Guide](https://www.datacamp.com/community/tutorials/python-excel-tutorial)
+- [How to control Excel with Python](https://kyleellefsen.com/blog/2017_10_28_python_excel/)
+- [vinta/awesome-python](https://github.com/vinta/awesome-python). A curated list of awesome Python frameworks, libraries, software and resources http://awesome-python.com/
+- [ПИТОНТЬЮТОР](http://pythontutor.ru/). УЧИТЕ ПИТОН. Бесплатный курс по программированию с нуля. Работает прямо в браузере.
+
+# 06.02.2018
+## R & regexp
+- COOL! [A Regular Expression Benchmark for R](https://github.com/jonclayden/regex-performance). jonclayden/regex-performance. A benchmark for regular expression libraries in R
+- Предыдущий результат, опубликован в виде html: [Regex Performance](https://rpubs.com/jonclayden/regex-performance)
+- [How do I speed up text searches in R?](https://stackoverflow.com/questions/19458724/how-do-i-speed-up-text-searches-in-r)
+- [regular expressions in base R: 'perl=TRUE' vs. the default (PCRE vs. TRE)](https://stackoverflow.com/questions/47240375/regular-expressions-in-base-r-perl-true-vs-the-default-pcre-vs-tre?rq=1)
+- online отладка регулярных выражений [Regex 101](https://regex101.com/)
+
+## map & ggplot
+- [Mapping in R using the ggplot2 package](http://zevross.com/blog/2014/07/16/mapping-in-r-using-the-ggplot2-package/)
+- [Making Maps with R](http://eriqande.github.io/rep-res-web/lectures/making-maps-with-R.html). Reproducible Research Course by Eric C. Anderson for (NOAA/SWFSC)
+- [Mapping with R. by Andrew Ba Tran NICAR 2017](https://andrewbtran.github.io/NICAR/2017/maps/mapping-census-data.html)
+- [Leaflet. Lines and Shapes](https://rstudio.github.io/leaflet/shapes.html). Leaflet makes it easy to take spatial lines and shapes from R and add them to maps.
+- [Introduction to leaflet.minicharts](https://cran.r-project.org/web/packages/leaflet.minicharts/vignettes/introduction.html)
+- [Making maps in R](https://cengel.github.io/rspatial/4_Mapping.nb.html) by claudia a engel. Last updated: May 17, 2017
+- [Administrative regions map of a country with ggmap and ggplot2](https://stackoverflow.com/questions/17723822/administrative-regions-map-of-a-country-with-ggmap-and-ggplot2)
+- [Map visualizations with external shapefile. Сбербанковский kaggle](https://www.kaggle.com/amclean/map-visualizations-with-external-shapefile?scriptVersionId=1180150)
+- [How to create an intensive map of Russia using QGIS or any other software?](https://gis.stackexchange.com/questions/40921/how-to-create-an-intensive-map-of-russia-using-qgis-or-any-other-software)
+- [Global Administrative Areas. Boundaries without limits](http://www.gadm.org/)
+- [Leaflet offline map without map tiles](https://stackoverflow.com/questions/27472383/leaflet-offline-map-without-map-tiles?rq=1)
+- [Загрузка файлов из GADM вручную](http://www.gadm.org/country)
+- Depricated [A shapefile of the TZ timezones of the world](http://efele.net/maps/tz/world/). Переехало сюда:
+["A tool to extract data from Open Street Map (OSM) to build the boundaries of the world's timezones that includes territorial waters."](https://github.com/evansiroky/timezone-boundary-builder)
+- [Map Shaper](http://mapshaper.org/)
+- Сглаживание полигонов:
+	- [problem with polygon smoothing in R](https://gis.stackexchange.com/questions/117965/problem-with-polygon-smoothing-in-r)
+	- [Smoothing polygons in contour map?](https://gis.stackexchange.com/questions/24827/smoothing-polygons-in-contour-map/24929#24929)
+	- [Create polygon from set of points distributed](https://stackoverflow.com/questions/26087772/create-polygon-from-set-of-points-distributed/26089377#26089377)
+	- [Tools, shapefiles & data to work with an "AlbersUSA" composite projection in R](https://github.com/hrbrmstr/albersusa)
+	- [Simplifying complex polygons/polylines](https://rstudio.github.io/leaflet/shapes.html)
+	- [rmapshaper Basics](https://cran.r-project.org/web/packages/rmapshaper/vignettes/rmapshaper.html)
+- [Технология импорта пространственных данных из OpenStreetMap](https://gisinfo.ru/techno/osm.htm)
+
+# 05.02.2018
+## Tools
+- [GoAccess](https://goaccess.io/) is an open source real-time web log analyzer and interactive viewer that runs in a terminal in *nix systems or through your browser. It provides fast and valuable HTTP statistics for system administrators that require a visual server report on the fly.
+
+## R
+- [Documenting R packages: roxygen2 vs. direct Rd input](https://www.enchufa2.es/archives/documenting-r-packages-roxygen2-vs-direct-rd-input.html)
+- COOL! [Reproducible Research: Write your Clinical Chemistry paper using R Markdown](http://labrtorian.com/2018/02/05/reproducible-research-write-your-clinical-chemistry-paper-using-r/)
+- [Concatenate Embeddings for Categorical Variables with Keras](https://flovv.github.io/Embeddings_with_keras_part2/)
+- [A tidy API for graph manipulation](https://github.com/thomasp85/tidygraph)
+- COOL! [RStudion rconf 2018](https://github.com/rstudio/rstudio-conf/tree/master/2018)
+- [RStudio enters debug mode for every function error - how can I stop it?](https://stackoverflow.com/questions/29018842/rstudio-enters-debug-mode-for-every-function-error-how-can-i-stop-it)
+- [In between a rock and a conditional join](https://www.mango-solutions.com/blog/in-between-a-rock-and-a-conditional-join). Тут как раз про "Fuzzy wuzzy join".
+
 # 01.02.2018
 ## R
 - [An R-focused pipeline toolkit for reproducibility and high-performance computing](https://ropensci.github.io/drake)
@@ -252,7 +385,7 @@ Create data summaries for quality control, extensive reports for exploring data,
 - COOL! [My favourite R package for: summarising data](https://dabblingwithdata.wordpress.com/2018/01/02/my-favourite-r-package-for-summarising-data/)
 	- `base::summary`
 	- `Hmisc::describe`
-	- `pastesec::stat.desc`
+	- `pastecs::stat.desc`
 	- `psych::describe` & `psych::describeBy`
 	- `skimr::skim`
 	- `summarytools::descr` & `summarytools::dfSummary`
@@ -279,6 +412,7 @@ Create data summaries for quality control, extensive reports for exploring data,
 ## R
 - [Base R can be Fast](http://www.win-vector.com/blog/2018/01/base-r-can-be-fast/)
 - [Natural Language Processing for non-English languages with udpipe](http://www.bnosac.be/index.php/blog/72-natural-language-processing-for-non-english-languages-with-udpipe)
+- [A comparison between spaCy and UDPipe for Natural Language Processing for R users](http://www.bnosac.be/index.php/blog/75-a-comparison-between-spacy-and-udpipe-for-natural-language-processing-for-r-users)
 - [NLP with R and UDPipe](https://bnosac.github.io/udpipe/en/). Tokenization, Parts of Speech Tagging, Lemmatization, Dependency Parsing and NLP flows
 - [Синтаксически размеченный корпус русского языка: информация для пользователей](http://www.ruscorpora.ru/instruction-syntax.html)
 - [Online Udpipe Service](http://lindat.mff.cuni.cz/services/udpipe/)
@@ -1473,7 +1607,7 @@ A wrapper for the 'Intro.js' library (For more info: <http://www.introjs.com>). 
 - [A wrapper around nested ifelse](https://edwinth.github.io/blog/ifelse-wrapper/)
 - [Question: Nested if-else statement in R](https://www.biostars.org/p/213415/)
 - Shiny
-	- COO-O-O-L подборка! [Awesome R Shiny]https://github.com/grabear/awesome-rshiny)
+	- COOL! подборка! [Awesome R Shiny]https://github.com/grabear/awesome-rshiny)
 	- COOL [shinyEvents: Alternative way to build shiny apps based on event handlers](https://github.com/skranz/shinyEvents)
 	- COOL [merlinoa/shinyFeedback](https://github.com/merlinoa/shinyFeedback). R package for displaying user feedback next to Shiny inputs
 	- COOL. [Appsilon/shiny.semantic](https://github.com/Appsilon/shiny.semantic). Shiny support for powerful Semantic UI library.
@@ -2104,7 +2238,7 @@ The script below illustrates how to add one label per stack in a stacked bar cha
 - [Tidy Up and Test XPath Queries on HTML and XML Content in R https://hrbrmstr.github.io/htmltidy/](https://github.com/hrbrmstr/htmltidy)
 - [Shiny Widgets Gallery](https://shiny.rstudio.com/gallery/widget-gallery.html)
 	- [shinyWidgets Overview](https://dreamrs-vic.shinyapps.io/shinyWidgets/)
-- COOL! Как отобразить ID элементов на html странице. Создаем закладку на панели браузера. В качесте URL пишем следующий скрипт:
+- COOL! JS ShowID. Как отобразить ID элементов на html странице. Создаем закладку на панели браузера. В качесте URL пишем следующий скрипт:
 `javascript:$("div[id]").each(function(t){$(this).prepend("<span style='color: red'>"+$(this).attr("id")+"<br/></span>")}),$("input[id]").each(function(t){$(this).before("<span style='color: red'>"+$(this).attr("id")+"<br/></span>")});`. Готово!
 
 ## R

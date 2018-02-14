@@ -124,3 +124,22 @@ http://answers.microsoft.com/en-us/windows/forum/windows_10-security/event-id-10
 - [ms-setting:display and ms-personalization-background problem](http://www.windows10forums.com/threads/ms-setting-display-and-ms-personalization-background-problem.1247/)
 Hey Guyz. I found a solution for settings and updates. Download this update [3081424](https://support.microsoft.com/kb/3081424). And download the utility Microsoft Troubleshooter and fix it. Download it from here http://aka.ms/diag_settings
 - [Settings doesn’t launch, or launches the Store instead](http://answers.microsoft.com/en-us/windows/forum/windows_10-other_settings/settings-doesnt-launch-or-launches-the-store/ec439819-7ee4-4b4d-abdd-35d82e04c55f)
+
+## Folder ownership
+- COOL! [List all files with certain extensions in Windows folder in a single call](https://stackoverflow.com/questions/17618271/list-all-files-with-certain-extensions-in-windows-folder-in-a-single-call).
+`dir /b *.csv *.xsl *.txt > results.txt`
+	- [Dir](https://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/dir.mspx?mfr=true). Displays a list of a directory's files and subdirectories.
+- Утилиты командной строки для работы с ACL: `takeown.exe` & `icacl.exe`
+Пример использования `icacls` и `takeown` для получения доступа ко всем файлам несистемного диска..
+`takeown /f H: /r /d y`
+`/r` - нужен для обработки всех вложенных папок
+`/d y` - положительно отвечает на стандартный запрос да/нет, который появляется в том случае, если у пользователя нет прав для доступа к подпапкам.
+`icacls.exe H:\* /reset /T`
+
+Став владельцем папок, вы получите доступ к их содержимому, но, скорее всего, не сможете осуществлять запись в них. В этом случае можно взять полный контроль над папками таким образом
+
+`icacls H:\* /grant:r Администратор:F /t`
+Вместо имя подставьте имя вашей учетной записи или группы, которой вы хотите дать полный контроль над папками.
+`grant:r` - заменяет все текущие права, что имеет смысл в том конкретном случае когда (учетная запись, имевшая права, уже не существует), но далеко не всегда....
+- [Windows 7 и сброс прав доступа и владельца файлов](http://tt.erinome.net/2012/07/265)
+

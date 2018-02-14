@@ -378,7 +378,7 @@ Once installed, view the [Administrator’s Guide](http://docs.rstudio.com/shiny
 
 Смапируем наше приложение на location '/iot'. 
 Делается это в конфиге `/etc/shiny-server/shiny-server.conf`. Читаем мануал '2.2.2 Location'  
-И рестартуем сервер  
+И рестартуем сервер
 `sudo systemctl restart shiny-server`
 
 При проблемах функционирования начинаем читать логи:  
