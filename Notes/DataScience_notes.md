@@ -138,6 +138,54 @@ Survival analysis is long-established within actuarial science but infrequently 
 	- [Survival Analysis part 3: Kaplan-Meier modelling](http://blog.applied.ai/survival-analysis-part3/)
 	- COOL! Разбирают срок жизни жестких дисков. [Survival Analysis part 4: Cox PH modelling](http://blog.applied.ai/survival-analysis-part-4/)
 
+# Tidyeval, NSE, Non-Standard Evaluation
+- [Tidy evaluation, most common actions](https://edwinth.github.io/blog/dplyr-recipes/)
+- [Non-standard evaluation, how tidy eval builds on base R](https://edwinth.github.io/blog/nse/)
+- [Programming with dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/programming.html)
+- [wrapr: R Code Sweeteners](http://www.win-vector.com/blog/2017/08/wrapr-r-code-sweeteners/)
+- [Why I find tidyeval useful](http://www.brodrigues.co/blog/2017-08-27-why_tidyeval/)
+- [Theory free tidyeval](https://www.johnmackintosh.com/2018-02-19-theory-free-tidyeval/). Getting our feet wet with dplyr programming
+- Разбираемся с NSE в ggplot:
+	- [Using tidyeval method with ggplot in R](https://stackoverflow.com/questions/45109238/using-tidyeval-method-with-ggplot-in-r)
+	- [pass function arguments to both dplyr and ggplot](https://stackoverflow.com/questions/45439813/pass-function-arguments-to-both-dplyr-and-ggplot)
+	- [Tidy evaluation programming and ggplot2](https://stackoverflow.com/questions/44548819/tidy-evaluation-programming-and-ggplot2). Quo list of groupping
+	- [Define aesthetic mappings programatically](http://ggplot2.tidyverse.org/reference/aes_.html)
+	- [dplyr and ggplot in a function: use reorder in aes function](https://stackoverflow.com/questions/35933199/dplyr-and-ggplot-in-a-function-use-reorder-in-aes-function)
+	- [R/ggplot2 tip: aes_string](https://nsaunders.wordpress.com/2013/02/26/rggplot2-tip-aes_string/)
+	- COOL! [How do I combine aes() and aes_string() options](https://stackoverflow.com/questions/28777626/how-do-i-combine-aes-and-aes-string-options)
+- dplyr & operator ~ (tilde). NSE = [non-standard evaulation](http://cran.r-project.org/web/packages/dplyr/vignettes/nse.html)
+- [Non-standard evaluation](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
+
+
+
+# 20.02.2018
+## R
+- [DALEX: understand a black box model – conditional responses for a single variable](http://smarterpoland.pl/index.php/2018/02/dalex-conditional-single-variable-response-of-your-black-box-model/)
+- COOL! [imputeTS: Time Series Missing Value Imputation](https://github.com/SteffenMoritz/imputeTS/blob/master/README.md)
+The imputeTS package specializes on (univariate) time series imputation. It offers several different imputation algorithm implementations. Beyond the imputation algorithms the package also provides plotting and printing functions of time series missing data statistics. Additionally three time series datasets for imputation experiments are included.
+
+# 19.02.2018
+## R
+- [DPLYR, (MC)LAPPLY, FOR-LOOP AND SPEED](https://scottishsnow.wordpress.com/2018/02/18/dplyr-lapply-for-loop/)
+- [R Tip: Use qc() For Fast Legible Quoting](http://www.win-vector.com/blog/2018/02/r-tip-use-qc-for-fast-legible-quoting/)
+- [R Tip: Use seq_len() to Avoid The Backwards Sequence Bug](http://www.win-vector.com/blog/2018/02/r-tip-use-seq_len-to-avoid-the-backwards-sequence-bug/)
+- [R markdown blog template](http://lcolladotor.github.io/2018/02/17/r-markdown-blog-template)
+- [Mix ggplot2 graphs with your favorite memes. memery 0.4.2 released.](https://blog.snap.uaf.edu/2018/02/15/mix-ggplot2-graphs-with-your-favorite-memes-memery/)
+- [Packages for Getting Started with Time Series Analysis in R](https://mathewanalytics.com/2018/02/18/packages-for-getting-started-with-time-series-analysis-in-r/)
+
+## Ubuntu
+- [На разделе "boot" осталось всего 0 байт свободного места](https://raboj.su/%D0%B1%D0%BB%D0%BE%D0%B3/ubuntu/53-%D0%BD%D0%B0-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5-boot-%D0%BE%D1%81%D1%82%D0%B0%D0%BB%D0%BE%D1%81%D1%8C-%D0%BC%D0%B0%D0%BB%D0%BE-%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BC%D0%B5%D1%81%D1%82%D0%B0.html). Для нетерпеливых, сразу лечение:
+```
+sudo apt-get autoremove
+```
+
+# 15.02.2018
+## R
+- [fastqcr: Quality Control of Sequencing Data](http://www.sthda.com/english/rpkgs/fastqcr/)
+The FastQC, written by Simon Andrews at the Babraham Institute, is the most widely used sequence quality assessment tool for evaluating the raw reads from high throughput sequencing data.
+- [Easily Make Multi-tabbed .xlsx Files with openxlsx](https://trinkerrstuff.wordpress.com/2018/02/14/easily-make-multi-tabbed-xlsx-files-with-openxlsx/)
+- [Sentiment Analysis of 5 popular romantic comedies](https://appsilondatascience.com/blog/rstats/2018/02/14/valentines.html)
+
 # 14.02.2018
 ## R
 - [jamovi for R: Easy but Controversial](http://r4stats.com/2018/02/13/jamovi-for-r-easy-but-controversial/). jamovi is software that aims to simplify two aspects of using R. It offers a point-and-click graphical user interface (GUI). It also provides functions that combines the capabilities of many others, bringing a more SPSS- or SAS-like method of programming to R.
@@ -2268,12 +2316,6 @@ The script below illustrates how to add one label per stack in a stacked bar cha
 	- [Tips and tricks on using R to query data in Power BI](http://blog.revolutionanalytics.com/2017/08/query-editor-tips.html)
 	- [Power BI Documentation. Using R in Query Editor](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-r-in-query-editor/)
 	- [Tips and Tricks for R scripts in the query editor in Power BI](http://www.thebiccountant.com/2017/08/25/tips-and-tricks-for-r-scripts-in-the-query-editor-in-power-bi/)
-- COOL! Tidyeval
-	- [Tidy evaluation, most common actions](https://edwinth.github.io/blog/dplyr-recipes/)
-	- [Non-standard evaluation, how tidy eval builds on base R](https://edwinth.github.io/blog/nse/)
-	- [Programming with dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/programming.html)
-	- [wrapr: R Code Sweeteners](http://www.win-vector.com/blog/2017/08/wrapr-r-code-sweeteners/)
-	- [Why I find tidyeval useful](http://www.brodrigues.co/blog/2017-08-27-why_tidyeval/)
 - [Debugging R code using R, RStudio and wrapper functions](https://www.youtube.com/watch?v=-P9UzQuJSH8&feature=youtu.be&list=PLAKBwakacHbQT51nPHex1on3YNCCmggZA)
 - [Unbottling “.msg” Files in R](https://rud.is/b/2017/08/25/unbottling-msg-files-in-r/)
 
