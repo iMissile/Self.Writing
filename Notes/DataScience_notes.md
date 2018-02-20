@@ -163,6 +163,11 @@ Survival analysis is long-established within actuarial science but infrequently 
 - [DALEX: understand a black box model – conditional responses for a single variable](http://smarterpoland.pl/index.php/2018/02/dalex-conditional-single-variable-response-of-your-black-box-model/)
 - COOL! [imputeTS: Time Series Missing Value Imputation](https://github.com/SteffenMoritz/imputeTS/blob/master/README.md)
 The imputeTS package specializes on (univariate) time series imputation. It offers several different imputation algorithm implementations. Beyond the imputation algorithms the package also provides plotting and printing functions of time series missing data statistics. Additionally three time series datasets for imputation experiments are included.
+- COOL! [RestRserve](http://dsnotes.com/RestRserve/) is an R web API framework for building high-performance microservices and app backends. The main difference to other frameworks (plumber, jug) is that it is parallel by design (thanks to Rserve).
+YES - it means it will handle all the incomming requests in parallel - each request in a separate fork.
+- [Integrating R with production systems using an HTTP API](http://blog.revolutionanalytics.com/2014/08/using-r-inside-the-enterprise-integration-with-existing-systems.html). August 19, 2014. читаю тут в интернетах какие best practice для деплоя микросервисов с R-бэкэндом. Все такие plumber, opencpu и тд отдыхают. Ниболее production-ready это Rserve + http сервер на ваш вкус.
+- COOL! bit64 package
+
 
 # 19.02.2018
 ## R
