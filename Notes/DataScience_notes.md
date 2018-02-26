@@ -156,6 +156,68 @@ Survival analysis is long-established within actuarial science but infrequently 
 - dplyr & operator ~ (tilde). NSE = [non-standard evaulation](http://cran.r-project.org/web/packages/dplyr/vignettes/nse.html)
 - [Non-standard evaluation](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
 
+# 27.02.2018
+## R
+- COOL! [qdap: Bridging the Gap Between Qualitative Data and Quantitative Analysis](https://cran.r-project.org/web/packages/qdap/index.html). Весьма интересный пакет. Я нашел в сопутствующем пакете [`qdapTools`](http://trinker.github.io/qdapTools/) функцию `list2df`
+- А вот еще более классный ответ Хадли: [turning a named list into a dataframe using dplyr](https://gist.github.com/aammd/9ae2f5cce9afd799bafb)
+```
+list_to_df <- function(listfordf){
+  if(!is.list(named.list)) stop("it should be a list")
+
+  df <- list(list.element = listfordf)
+  class(df) <- c("tbl_df", "data.frame")
+  attr(df, "row.names") <- .set_row_names(length(listfordf))
+
+  if (!is.null(names(listfordf))) {
+    df$name <- names(listfordf)
+  }
+
+  df
+}
+```
+- А в пакете `tibble` для этого есть функция `enframe`
+- [R: removing NULL elements from a list](https://stackoverflow.com/questions/33004238/r-removing-null-elements-from-a-list)
+
+
+# 26.02.2018
+## R
+- [MLE in R](https://statcompute.wordpress.com/2018/02/25/mle-in-r/). When I learned and experimented a new model, I always like to start with its likelihood function in order to gain a better understanding about the statistical nature. That’s why I extensively used the SAS/NLMIXED procedure that gives me more flexibility.
+- [How to set up a sparklyr cluster in 5 minutes](http://blog.revolutionanalytics.com/2018/02/aztk-sparklyr.html). You can get up and running in about 5 minutes using the guide SparklyR on Azure with AZTK, and you don't even have to install anything yourself.
+- [Edinbr: Text Mining with R](https://blog.jumpingrivers.com/posts/2018/tidytext_edinbr_2018/)
+- [Is R base::subset() really that bad?](http://www.win-vector.com/blog/2018/02/is-r-basesubset-really-that-bad/)
+- COOL! [My Early Career Crisis (2014 - 2015), Yihui Xie / 2018-02-16](https://yihui.name/en/2018/02/career-crisis/). A painful transition of a fresh PhD from academia to industry, and from selfish open-source to product-oriented open-source
+- [R's S3 generic-function object-oriented system](https://jasdumas.github.io/2018-02-23-s3-generic-function-oo/)
+- Survival. [An introduction to joint modeling in R](https://talesofr.wordpress.com/2018/02/23/an-introduction-to-joint-modeling-in-r/)
+- COOL! [Analyzing accelerometer data with R](http://blog.revolutionanalytics.com/2018/02/accelerometers.html). Исходник здесь: [Making Magic with Keras and Shiny. An exploration of Shiny’s position in the data science pipeline](http://nickstrayer.me/dataDayTexas/#1)
+- [Whys and Hows of Apply Family of Functions in R. Introduction to Looping system](https://r-posts.com/whys-and-hows-of-apply-family-of-functions-in-r/)
+- [Minimal, Explicit, Python Style Package Loading for R](https://trinkerrstuff.wordpress.com/2018/02/22/minimal-explicit-python-style-package-loading-for-r/)
+- COOL! [Jan 2018: "Top 40" New Package Picks](https://rviews.rstudio.com/2018/02/22/jan-2018-top-40-new-package-picks/)
+- [TSstudio v0.1.1](https://cran.rstudio.com/web/packages/TSstudio/vignettes/TSstudio_Intro.html): Provides a set of interactive visualization tools for time series analysis supporting ts, mts, zoo and xts objects including visualization functions for forecasting model performance (forecasted vs. actual), time series interactive plots (single and multiple series), and seasonality plots.
+	- [Introduction for the TSstudio Package](https://cran.rstudio.com/web/packages/TSstudio/vignettes/TSstudio_Intro.html)
+- COOL! [Combine your hex stickers with magic(k)](http://www.masalmon.eu/2018/02/22/hexcombine/)
+
+
+# 23.02.2018
+## R
+- [R Lists](https://www.datamentor.io/r-programming/list)
+In this article, you will learn to work with lists in R programming. You will learn to create, access, modify and delete list components.
+- [R dyplr: Get index of column by its name](https://stackoverflow.com/questions/35768451/r-dyplr-get-index-of-column-by-its-name/35768651)
+- COOL! [How would I hide the action button until all selections are made?](https://stackoverflow.com/questions/23893756/how-would-i-hide-the-action-button-until-all-selections-are-made)
+
+
+# 21.02.2018
+## R
+- COOL! [callr package](). Call R from R. It is sometimes useful to perform a computation in a separate R process, without affecting the current R process at all. This packages does exactly that.
+- [Blog about something you just learned](https://edwinth.github.io/blog-new-things/)
+- COOL! [webmockr: mock HTTP requests](https://ropensci.org/technotes/2018/02/20/webmockr-intro/)
+- [Deep Learning Image Classification with Keras and Shiny](https://jasdumas.github.io/2018-02-20-deep-learning-img-classifier/)
+- [Speeding up spatial analyses by integrating `sf` and `data.table`: a test case](https://lbusettspatialr.blogspot.ru/2018/02/speeding-up-spatial-analyses-by.html)
+- COOL! [Effortless but Powerful Exception Logging in R: loggit! 1.0.0 Released on CRAN](https://anotherblogaboutr.blogspot.ru/2018/02/effortless-but-powerful-exception_20.html)
+- [MARKDOWN BASED WEB ANALYTICS? RECTANGLE YOUR BLOG](https://itsalocke.com/blog/markdown-based-web-analytics-rectangle-your-blog/)
+
+- [How do I transpose a tibble() in R](https://stackoverflow.com/questions/42790219/how-do-i-transpose-a-tibble-in-r)
+- [How to find out which package version is loaded in R?](https://stackoverflow.com/questions/11103189/how-to-find-out-which-package-version-is-loaded-in-r) `packageVersion("snow")`
+- [R: use magrittr pipe operator in self written package](https://stackoverflow.com/questions/27947344/r-use-magrittr-pipe-operator-in-self-written-package)
 
 
 # 20.02.2018
@@ -172,6 +234,8 @@ YES - it means it will handle all the incomming requests in parallel - each requ
 # 19.02.2018
 ## R
 - [DPLYR, (MC)LAPPLY, FOR-LOOP AND SPEED](https://scottishsnow.wordpress.com/2018/02/18/dplyr-lapply-for-loop/)
+- [R Tip: Force Named Arguments](http://www.win-vector.com/blog/2018/02/r-tip-force-named-arguments/)
+- [R Tip: Use `[[ ]]` Wherever You Can](http://www.win-vector.com/blog/2018/02/r-tip-use-wherever-you-can/)
 - [R Tip: Use qc() For Fast Legible Quoting](http://www.win-vector.com/blog/2018/02/r-tip-use-qc-for-fast-legible-quoting/)
 - [R Tip: Use seq_len() to Avoid The Backwards Sequence Bug](http://www.win-vector.com/blog/2018/02/r-tip-use-seq_len-to-avoid-the-backwards-sequence-bug/)
 - [R markdown blog template](http://lcolladotor.github.io/2018/02/17/r-markdown-blog-template)
@@ -2572,9 +2636,6 @@ The issue was closed by Kun Ren with the comment:
 I guess it's better use DT instead. formattable is currently only designed for static content presentation with formatting applied to columns. It would be some major changes to make it more interactive, and probably would become the same with DT finally, and that's not the goal of this package though.
 !!!!! Беда в том, что formattable при применении color_bar начинает считать колонку как строку, и DT проводит сортировку по строке!!!!!
 
-## Clickhouse
-- [PVSM: Рубрика «clickhouse»](http://www.pvsm.ru/cat/clickhouse)
-
 # 10.08.2017
 ## R
 - Конкатенируем строки в датафрейме построчно
@@ -2723,10 +2784,6 @@ datatable(a) %>%
 - [columnDefs](https://datatables.net/reference/option/columnDefs). Since: DataTables 1.10
 Set column definition initialisation properties.
 - [ropensci/mapr](https://github.com/ropensci/mapr). Map species occurrence data
-
-# 26.07.2017
-## ClickHouse
-- Примеры запросов с группировкой по времени: [пример 1](https://gist.github.com/alexey-milovidov/2dee968eb95df63b271208f89d3697c3); [пример 2](https://gist.github.com/alexey-milovidov/6fd9246ce44b48345bee3a0df3da5ab0)
 
 # 24.07.2017
 ## R
