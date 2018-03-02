@@ -18,6 +18,11 @@ http://telegrammy.net/group/clickhouse_ru/page87.htm
 Ищем файл командами `locate --all "clickhouse-server.log"` или `find / -name "clickhouse-server.log"`.
 Файл найден здесь: `/var/databases/clickhouse-server/log/clickhouse-server.log`
 
-
 ## Подвал
 a BETWEEN b AND c - равнозначно a >= b AND a <= c
+
+
+URL http://10.0.0.238:10080
+Логин: alex, Пароль qaz_wsx_123
+
+

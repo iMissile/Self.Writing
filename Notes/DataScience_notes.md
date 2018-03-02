@@ -156,8 +156,38 @@ Survival analysis is long-established within actuarial science but infrequently 
 - dplyr & operator ~ (tilde). NSE = [non-standard evaulation](http://cran.r-project.org/web/packages/dplyr/vignettes/nse.html)
 - [Non-standard evaluation](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
 
+# 02.03.2018
+## R
+- COOL! [Annotating phylogenetic tree with images using ggtree and ggimage](https://guangchuangyu.github.io/2018/03/annotating-phylogenetic-tree-with-images-using-ggtree-and-ggimage/)
+- COOL! [Craft httr calls cleverly with curlconverter](https://rud.is/b/2016/02/10/craft-httr-calls-cleverly-with-curlconverter/)
+- COOL! [pillar. part of the tidyverse](pillar provides tools for styling columns of data, artfully using colour and unicode characters to guide the eye.)
+- [Using mutate_at() with negated select helpers e.g(not one_of())](https://stackoverflow.com/questions/45875697/using-mutate-at-with-negated-select-helpers-e-gnot-one-of)
+
+
+
+
+
+# 01.03.2018
+## R
+- COOL! [Criminal goings-on in a random forest](https://thinkr.biz/2018/03/01/crime-random-forest/)
+- [Adding logging to a shiny app with loggit](http://rmhogervorst.nl/cleancode/blog/2018/02/28/adding-json-logging-to-shiny-app.html)
+- [#17: Dependencies](http://dirk.eddelbuettel.com/blog/2018/02/28/#017_dependencies). February 28, 2018, By Thinking inside the box
+- COOL!! [Faster way to trim a long character vector in R {closed}](https://stackoverflow.com/questions/39152317/faster-way-to-trim-a-long-character-vector-in-r). !!! **It's just that `strtrim()` is fairly slow.**
+
+
+# 28.02.2018
+## R
+- [Parallel Processing Baseball Data with R and mlbgameday](http://www.datascienceriot.com//r/mlbgameday-basics/)
+- [Effective data analytics in Manufacturing](https://www.mango-solutions.com/blog/effective-data-analytics-in-manufacturing)
+
+## R & SAP
+- [Working with R integration in HANA 2.0 SPS02](https://blogs.sap.com/2017/09/18/working-with-r-integration-in-hana-2.0-sps02/)
+- [R Integration with SAP HANA](https://blogs.sap.com/2016/12/23/r-integration-with-sap-hana/)
+- [SAP NW RFC connector for R](https://github.com/piersharding/RSAP)
+
 # 27.02.2018
 ## R
+- [Installing Package Dependencies without external http(s) requests](http://www.peteredewitt.com/2018/installing-dependencies/)
 - COOL! [qdap: Bridging the Gap Between Qualitative Data and Quantitative Analysis](https://cran.r-project.org/web/packages/qdap/index.html). Весьма интересный пакет. Я нашел в сопутствующем пакете [`qdapTools`](http://trinker.github.io/qdapTools/) функцию `list2df`
 - А вот еще более классный ответ Хадли: [turning a named list into a dataframe using dplyr](https://gist.github.com/aammd/9ae2f5cce9afd799bafb)
 ```
@@ -177,6 +207,8 @@ list_to_df <- function(listfordf){
 ```
 - А в пакете `tibble` для этого есть функция `enframe`
 - [R: removing NULL elements from a list](https://stackoverflow.com/questions/33004238/r-removing-null-elements-from-a-list)
+- [Creating corporate colour palettes for ggplot2](https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2)
+- Shiny async. [Promises with async shiny on shiny server open source](https://community.rstudio.com/t/promises-with-async-shiny-on-shiny-server-open-source/5076). Found an answer on my own! Thankfully it does work on open source! The issue was with ubuntu and the httpuv package, which needs to be updated with a special linux dependency [before installing the async shiny dev package from github](https://github.com/beakerbrowser/beaker/issues/54).
 
 
 # 26.02.2018
@@ -223,6 +255,8 @@ In this article, you will learn to work with lists in R programming. You will le
 # 20.02.2018
 ## R
 - [DALEX: understand a black box model – conditional responses for a single variable](http://smarterpoland.pl/index.php/2018/02/dalex-conditional-single-variable-response-of-your-black-box-model/)
+- [DALEX: how would you explain this prediction?](http://smarterpoland.pl/index.php/2018/02/dalex-which-variables-influence-this-single-prediction/)
+- [ DALEX website](https://pbiecek.github.io/DALEX/)
 - COOL! [imputeTS: Time Series Missing Value Imputation](https://github.com/SteffenMoritz/imputeTS/blob/master/README.md)
 The imputeTS package specializes on (univariate) time series imputation. It offers several different imputation algorithm implementations. Beyond the imputation algorithms the package also provides plotting and printing functions of time series missing data statistics. Additionally three time series datasets for imputation experiments are included.
 - COOL! [RestRserve](http://dsnotes.com/RestRserve/) is an R web API framework for building high-performance microservices and app backends. The main difference to other frameworks (plumber, jug) is that it is parallel by design (thanks to Rserve).
@@ -233,11 +267,13 @@ YES - it means it will handle all the incomming requests in parallel - each requ
 
 # 19.02.2018
 ## R
-- [DPLYR, (MC)LAPPLY, FOR-LOOP AND SPEED](https://scottishsnow.wordpress.com/2018/02/18/dplyr-lapply-for-loop/)
+- [R Tip: Make Arguments Explicit in magrittr/dplyr Pipelines](http://www.win-vector.com/blog/2018/03/r-tip-make-arguments-explicit-in-magrittr-dplyr-pipelines/)
+- [R Tip: Use drop = FALSE with data.frames](http://www.win-vector.com/blog/2018/02/r-tip-use-drop-false-with-data-frames/)
 - [R Tip: Force Named Arguments](http://www.win-vector.com/blog/2018/02/r-tip-force-named-arguments/)
 - [R Tip: Use `[[ ]]` Wherever You Can](http://www.win-vector.com/blog/2018/02/r-tip-use-wherever-you-can/)
 - [R Tip: Use qc() For Fast Legible Quoting](http://www.win-vector.com/blog/2018/02/r-tip-use-qc-for-fast-legible-quoting/)
 - [R Tip: Use seq_len() to Avoid The Backwards Sequence Bug](http://www.win-vector.com/blog/2018/02/r-tip-use-seq_len-to-avoid-the-backwards-sequence-bug/)
+- [DPLYR, (MC)LAPPLY, FOR-LOOP AND SPEED](https://scottishsnow.wordpress.com/2018/02/18/dplyr-lapply-for-loop/)
 - [R markdown blog template](http://lcolladotor.github.io/2018/02/17/r-markdown-blog-template)
 - [Mix ggplot2 graphs with your favorite memes. memery 0.4.2 released.](https://blog.snap.uaf.edu/2018/02/15/mix-ggplot2-graphs-with-your-favorite-memes-memery/)
 - [Packages for Getting Started with Time Series Analysis in R](https://mathewanalytics.com/2018/02/18/packages-for-getting-started-with-time-series-analysis-in-r/)
@@ -346,9 +382,14 @@ Error in x[[method]](...) : attempt to apply non-function
 ## R & regexp
 - COOL! [A Regular Expression Benchmark for R](https://github.com/jonclayden/regex-performance). jonclayden/regex-performance. A benchmark for regular expression libraries in R
 - Предыдущий результат, опубликован в виде html: [Regex Performance](https://rpubs.com/jonclayden/regex-performance)
+- COOL! [re2r Benchmark](https://qinwenfeng.com/re2r_doc/benchmark.html)
 - [How do I speed up text searches in R?](https://stackoverflow.com/questions/19458724/how-do-i-speed-up-text-searches-in-r)
 - [regular expressions in base R: 'perl=TRUE' vs. the default (PCRE vs. TRE)](https://stackoverflow.com/questions/47240375/regular-expressions-in-base-r-perl-true-vs-the-default-pcre-vs-tre?rq=1)
 - online отладка регулярных выражений [Regex 101](https://regex101.com/)
+- [In between a rock and a conditional join](https://www.mango-solutions.com/blog/in-between-a-rock-and-a-conditional-join). Тут как раз про "Fuzzy wuzzy join".
+- COOL! [re2r: RE2 Regular Expression](https://cran.r-project.org/web/packages/re2r/index.html)
+RE2 <https://github.com/google/re2> is a primarily deterministic finite automaton based regular expression engine from Google that is very fast at matching large amounts of text.
+`show_regex("\\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}\\b", width = 670, height = 280)`
 
 ## map & ggplot
 - [Mapping in R using the ggplot2 package](http://zevross.com/blog/2014/07/16/mapping-in-r-using-the-ggplot2-package/)
@@ -595,6 +636,7 @@ Create data summaries for quality control, extensive reports for exploring data,
 - [Deep Learning from first principles in Python, R and Octave – Part 1](https://gigadom.wordpress.com/2018/01/04/deep-learning-from-basic-principles-in-python-r-and-octave-part-1/)
 - [Deep Learning from first principles in Python, R and Octave – Part 2](https://gigadom.wordpress.com/2018/01/11/deep-learning-from-first-principles-in-python-r-and-octave-part-2/)
 - [Deep Learning from first principles in Python, R and Octave – Part 3](https://gigadom.wordpress.com/2018/01/30/deep-learning-from-first-principles-in-python-r-and-octave-part-3/)
+- Deep Learning from first principles in Python, R and Octave – Part 4](https://gigadom.wordpress.com/2018/02/26/deep-learning-from-first-principles-in-python-r-and-octave-part-4/)
 - [billboarder](https://cran.rstudio.com/web/packages/billboarder/vignettes/billboarder-intro.html). This package allow you to use billboard.js, a re-usable easy interface JavaScript chart library, based on D3 v4+.
 - [esviz](https://github.com/DJAnderson07/esvis). R Package for effect size visualizations.
 - [missRanger: Fast Imputation of Missing Values](https://cran.r-project.org/web/packages/missRanger/index.html)
