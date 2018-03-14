@@ -64,7 +64,9 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Data Visualization for Social Science. A practical introduction with R and ggplot2](http://socviz.co/)
 - [Sinew: Simple R Package Documentation](https://metrumresearchgroup.github.io/sinew/)
 - [The R Inferno](http://www.burns-stat.com/pages/Tutor/R_inferno.pdf)
+- [The Tao Of Programming](http://canonical.org/~kragen/tao-of-programming.html)
 - [R Internals](https://cran.r-project.org/doc/manuals/r-release/R-ints.html)
+- [Field Guide to the R Ecosystem](http://fg2re.sellorm.com/)
 
 # Video
 - [Основы анализа данных. ВШЭ](https://www.youtube.com/channel/UCLk-Oih8VlqF-StidijTUnw/videos)
@@ -156,16 +158,102 @@ Survival analysis is long-established within actuarial science but infrequently 
 - dplyr & operator ~ (tilde). NSE = [non-standard evaulation](http://cran.r-project.org/web/packages/dplyr/vignettes/nse.html)
 - [Non-standard evaluation](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
 
+
+# 14.03.2018
+## R
+- COOL! [Alternative Design for Shiny](https://rviews.rstudio.com/2018/03/13/alternative-design-for-shiny/)
+- COOL! [Excel is obsolete. Here are the Top 2 alternatives from R and Python](https://appsilondatascience.com/blog/rstats/2018/03/13/excel-is-obsolete.html)
+- [An Ode to Testing, my first review](https://ropensci.org/blog/2018/03/13/ode-to-testing/)
+- [The RedMonk Programming Language Rankings: January 2018](http://redmonk.com/sogrady/2018/03/07/language-rankings-1-18/)
+- [Effortlessly Read Rectangular Data: R Package `readit` 1.0.0 Released on CRAN](https://anotherblogaboutr.blogspot.ru/2018/03/effortlessly-read-rectangular-data-r.html)
+- COOL! [Material design in Shiny apps](https://ericrayanderson.github.io/shinymaterial/)
+- Decision Trees
+	- [Estimating Decision Tree Models](https://docs.microsoft.com/en-us/machine-learning-server/r/how-to-revoscaler-decision-tree)
+	- [Draw nicer Classification and Regression Trees with the rpart.plot package](http://blog.revolutionanalytics.com/2013/06/plotting-classification-and-regression-trees-with-plotrpart.html)
+	- [Visualizing C5.0 Decision Tree? {closed}](https://stats.stackexchange.com/questions/198134/visualizing-c5-0-decision-tree)
+	- [R Decision Trees – A Tutorial to Tree Based Modeling in R](https://data-flair.training/blogs/r-decision-trees/)
+	- [How to edit the rule sets of decision tree in R](https://gisday.wordpress.com/2014/06/06/how-to-edit-the-rule-sets-of-decision-tree-in-r/)
+- COOL! [ Inconsistent parsing failure "no trailing characters e3" #645 {Closed}](https://github.com/tidyverse/readr/issues/645)
+- [How to fork/parallelize process in `purrr::pmap`](https://stackoverflow.com/questions/47552930/how-to-fork-parallelize-process-in-purrrpmap)
+- [Rstudio addin to help you with your regexes (in progress)](https://github.com/gadenbuie/regexplain)
+- `lubridate::now()` >1.7.0 падает без указание tzone:
+	- [How to change the default time zone in R?](https://stackoverflow.com/questions/6374874/how-to-change-the-default-time-zone-in-r). See `?timezone`. Another way to do it, without changing the whole computer time is using the setenv command like this: `Sys.setenv(TZ='GMT')`. После переезда на гугловые библиотеки необходимо добавлять в код установку переменных (либо делать это в системе): `Sys.setenv(TZ="Europe/Moscow")`
+
+## R по мотивам Сибинтека
+- COOL! [Visualising your hiking trails and photos with My Tracks, R and Leaflet](http://mhermans.net/hiking-gpx-r-leaflet.html)
+- COOL! [Gantt chart using R](https://davetang.org/muse/2017/02/03/gantt-chart-using-r/)
+- [Adding Curved Flight path using R's Leaflet Package](https://stackoverflow.com/questions/34499212/adding-curved-flight-path-using-rs-leaflet-package)
+- [Strava маршутры на leaflet](http://www.wolferonline.de/uploads/llmap.positr.html)
+
+
+
+# 13.03.2018
+## R
+- [Tidy Resampling Redux with Agricultural Economics Data](http://appliedpredictivemodeling.com/blog/2018/3/12/2s3j82ctkrhxugq7hf3myoeeb49k8u)
+- [Exploratory Analysis – When to Choose R, Python, Tableau or a Combination](https://www.stoltzmaniac.com/tool-selection-python-tableau-r/)
+- COOL! [Shiny slider examples with the intrval R package](http://peter.solymos.org/code/2018/03/08/shiny-slider-examples-with-the-intrval-r-package.html)
+
+# 12.03.2018
+## R
+- [An introduction to styler](http://styler.r-lib.org/articles/introducing_styler.html) by Lorenz Walthert, 2018-03-09
+- [styler 1.0.1](https://lorenzwalthert.github.io/stylerpost2/) is now awailable on CRAN. It’s mainly a maintenance release and contains bug fixes and speed improvements.
+- [lime v0.4: The kitten picture edition](https://tensorflow.rstudio.com/blog/lime-v0.4-the-kitten-picture-edition.html)
+- [R: simple for complex tasks, complex for simple tasks](https://ekonometrics.blogspot.ru/2018/03/r-simple-for-complex-tasks-complex-for.html)
+- [Compare outlier detection methods with the OutliersO3 package](http://blog.revolutionanalytics.com/2018/03/outliers.html)
+- useR! 2017 [When is an Outlier an Outlier? The O3 plot](https://channel9.msdn.com/Events/useR-international-R-User-conferences/useR-International-R-User-2017-Conference/When-is-an-Outlier-an-Outlier-The-O3-plot)
+- [Find duplicated elements with dplyr](https://stackoverflow.com/questions/28244123/find-duplicated-elements-with-dplyr)
+- Shiny tweaks
+	- COOL! [SOME TOOLS FOR WRITING SHINY APPS](http://skranz.github.io//r/2018/03/08/Tools_for_Writing_Shiny_Apps.html)
+	- [shinyEvents](https://github.com/skranz/shinyEvents). Use shiny with event handlers instead of reactivity
+	- [Shiny slider examples with the intrval R package](http://peter.solymos.org/code/2018/03/08/shiny-slider-examples-with-the-intrval-r-package.html)
+- [`bind_rows()` warning with columns of unknown classes #2688 {Closed}](https://github.com/tidyverse/dplyr/issues/2688)
+
+
+## R logging
+- [Log all warnings with futile.logger](https://stackoverflow.com/questions/40920616/log-all-warnings-with-futile-logger)
+- futile.logger ticket [Capture warning(), etc. #36 {Open}](https://github.com/zatonovo/futile.logger/issues/36)
+- loggr. [Easy and flexible logging for R](https://github.com/smbache/loggr)
+- [Effortless but Powerful Exception Logging in R: loggit! 1.0.0 Released on CRAN](https://anotherblogaboutr.blogspot.ru/2018/02/effortless-but-powerful-exception_20.html)
+
+## SAS
+- [Хочу все знать. Язык SAS](https://geekbrains.ru/posts/sas_lang)
+- [Step-by-Step Programming with Base SAS® Software](https://support.sas.com/documentation/onlinedoc/91pdf/sasdoc_913/base_step_10071.pdf)
+
+
+# 06.03.2018
+## R
+- COOL! [smoothScatter with ggplot2](https://www.inwt-statistics.com/read-blog/smoothscatter-with-ggplot2-513.html)
+- [R package for controlling Minecraft via API](https://github.com/ropenscilabs/miner)
+- COOL [Nice presentation about NSE and metaprogramming](https://r-oxford.github.io/slides/2018_03.pdf)
+- [Mining CRAN DESCRIPTION Files](https://juliasilge.com/blog/mining-cran-description/) by Julia Silge
+	- [JC and the Vignettes](https://jcarroll.com.au/2018/03/06/jc-and-the-vignettes/)
+- COOL! [Tao of Tidygraph](http://www.questionflow.org/2018/03/06/tao-of-tidygraph/)
+- [Using R in SQL Server Reporting Services (SSRS)](https://tomaztsql.wordpress.com/2018/03/04/using-r-in-sql-server-reporting-services-ssrs/)
+- [Another reason to be careful about what you control for](https://www.rdatagen.net/post/another-reason-to-be-careful-about-what-you-control-for/)
+- COOL! [Implementing DT Reload within Shiny #168 {Closed}](https://github.com/rstudio/DT/issues/168)
+
+
+# 05.03.2018
+## R
+- COOL! [covr](https://github.com/r-lib/covr). Test coverage reports for R
+- COOL! [How to add code coverage (codecov) to your R package?](https://walczak.org/2017/06/how-to-add-code-coverage-codecov-to-your-r-package/)
+
+- COOL! Python. [dplyr-style Data Manipulation with Pipes in Python](https://towardsdatascience.com/dplyr-style-data-manipulation-with-pipes-in-python-380dcb137000)
+- COOL! [Generating codebooks in R](http://sandsynligvis.dk/articles/18/codebook.html). A codebook is a technical document that provides an overview of and information about the variables in a dataset. 
+- [Getting {sparklyr}, {h2o}, {rsparkling} to work together and some fun with bash](http://www.brodrigues.co/blog/2018-03-03-sparklyr_h2o_rsparkling/)
+- [How To Learn R, Part 1: Learn From A Master Data Scientist's Code](http://www.business-science.io/learning-r/2018/03/03/how_to_learn_R_pt1.html)
+- [hrbrpkgs: list Bob Rudis' packages](http://www.masalmon.eu/2018/03/04/hrbrpkgs/)
+- [Exercise dashboard](http://www.nathanchaney.com/2018/03/04/exercise-dashboard/)
+
+# R tidyverse
+- [R: Names and Symbols](https://stat.ethz.ch/R-manual/R-devel/library/base/html/name.html). A ‘name’ (also known as a ‘symbol’) is a way to refer to R objects by name (rather than the value of the object, if any, bound to that name).
+
 # 02.03.2018
 ## R
 - COOL! [Annotating phylogenetic tree with images using ggtree and ggimage](https://guangchuangyu.github.io/2018/03/annotating-phylogenetic-tree-with-images-using-ggtree-and-ggimage/)
 - COOL! [Craft httr calls cleverly with curlconverter](https://rud.is/b/2016/02/10/craft-httr-calls-cleverly-with-curlconverter/)
 - COOL! [pillar. part of the tidyverse](pillar provides tools for styling columns of data, artfully using colour and unicode characters to guide the eye.)
-- [Using mutate_at() with negated select helpers e.g(not one_of())](https://stackoverflow.com/questions/45875697/using-mutate-at-with-negated-select-helpers-e-gnot-one-of)
-
-
-
-
+- [Using mutate_at() with negated select helpers e.g (not `one_of()`)](https://stackoverflow.com/questions/45875697/using-mutate-at-with-negated-select-helpers-e-gnot-one-of)
 
 # 01.03.2018
 ## R
@@ -256,7 +344,7 @@ In this article, you will learn to work with lists in R programming. You will le
 ## R
 - [DALEX: understand a black box model – conditional responses for a single variable](http://smarterpoland.pl/index.php/2018/02/dalex-conditional-single-variable-response-of-your-black-box-model/)
 - [DALEX: how would you explain this prediction?](http://smarterpoland.pl/index.php/2018/02/dalex-which-variables-influence-this-single-prediction/)
-- [ DALEX website](https://pbiecek.github.io/DALEX/)
+- [DALEX website](https://pbiecek.github.io/DALEX/)
 - COOL! [imputeTS: Time Series Missing Value Imputation](https://github.com/SteffenMoritz/imputeTS/blob/master/README.md)
 The imputeTS package specializes on (univariate) time series imputation. It offers several different imputation algorithm implementations. Beyond the imputation algorithms the package also provides plotting and printing functions of time series missing data statistics. Additionally three time series datasets for imputation experiments are included.
 - COOL! [RestRserve](http://dsnotes.com/RestRserve/) is an R web API framework for building high-performance microservices and app backends. The main difference to other frameworks (plumber, jug) is that it is parallel by design (thanks to Rserve).
@@ -267,6 +355,9 @@ YES - it means it will handle all the incomming requests in parallel - each requ
 
 # 19.02.2018
 ## R
+- [Use unique() instead of levels() to find the possible values of a factor in R](https://chemicalstatistician.wordpress.com/2018/03/10/use-unique-instead-of-levels-to-find-the-possible-values-of-a-character-variable-in-r/)
+- [R Tip: Use vector(mode = "list") to Pre-Allocate Lists](http://www.win-vector.com/blog/2018/03/r-tip-use-vectormode-list-to-pre-allocate-lists/)
+- [R Tip: Get Out of the Habit of Calling View() Directly](http://www.win-vector.com/blog/2018/03/r-tip-get-out-of-the-habit-of-calling-view-directly/)
 - [R Tip: Make Arguments Explicit in magrittr/dplyr Pipelines](http://www.win-vector.com/blog/2018/03/r-tip-make-arguments-explicit-in-magrittr-dplyr-pipelines/)
 - [R Tip: Use drop = FALSE with data.frames](http://www.win-vector.com/blog/2018/02/r-tip-use-drop-false-with-data-frames/)
 - [R Tip: Force Named Arguments](http://www.win-vector.com/blog/2018/02/r-tip-force-named-arguments/)
@@ -4888,6 +4979,7 @@ Go and explore, and happy new year!
 ## R
 - [R exercises](http://r-exercises.com/). Очень неплохой ресурс с заданиями по R.
 - COOL! Классный пакет для Simmer [Discrete-Event Simulator for R](http://fishyoperations.com/2017/01/12/extensions-for-simmer.html). Вообще, на этом сайте очень много записей про симуляцию.
+- [simmer 3.7.0](https://www.enchufa2.es/archives/simmer-3-7-0.html)
 - [simmer.bricks 0.1.0: new add-on for simmer](https://www.enchufa2.es/archives/simmer-bricks-0-1-0-new-add-on-for-simmer.html)
 - [simmer 3.6.5](https://www.enchufa2.es/archives/simmer-3-6-5.html)
 - [simmer 3.6.4](https://www.enchufa2.es/archives/simmer-3-6-4.html)
