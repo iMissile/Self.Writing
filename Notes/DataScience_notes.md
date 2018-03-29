@@ -8,6 +8,8 @@
 - [onefactor](https://1f.ai/ru/)
 - [ReservoContext: поисковая система для переводов в контексте](http://context.reverso.net)
 
+[Backblaze Safety Freeze](https://help.backblaze.com/hc/en-us/articles/217666178-Safety-Freeze-Your-Backup-is-Safety-Frozen-)
+
 # LEGO
 - Цель [сайта Bricker.ru](http://bricker.ru/) - предоставить всю необходимую информацию о LEGO и LEGO-совместимых конструкторах. В Интернете множество обзоров различных наборов LEGO, мы их находим и добавляем сюда, чтобы Вы могли не повторять наших поисков.
 - [Купить реплики Лего](https://www.iqreplica.ru/train-series)
@@ -158,6 +160,88 @@ Survival analysis is long-established within actuarial science but infrequently 
 - dplyr & operator ~ (tilde). NSE = [non-standard evaulation](http://cran.r-project.org/web/packages/dplyr/vignettes/nse.html)
 - [Non-standard evaluation](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
 
+# 29.03.2018
+## R
+- COOL! [Quoting version of c() array concatinator](https://winvector.github.io/wrapr/reference/qc.html)
+- COOL! [Test Driven Development in R](https://rpubs.com/pparacch/278724) by Pier Lorenzo Paracchini, 18 mai, 2017
+- [HOW I LEARNED TO STOP WORRYING AND LOVE R CMD CHECK](https://juliasilge.com/blog/how-i-stopped/)
+- knitr:
+	- [R knitr markown: Setting HTML page width](https://stackoverflow.com/questions/28480625/r-knitr-markown-setting-html-page-width)
+	- [Long lines of text output](https://yihui.name/knitr/demo/output/). Normally R respects the option width (set via `options(width = ??)`) when printing text output, e.g. rnorm(100). The default value for width is set to 75
+	- [R console width for output #764 {Closed}](https://github.com/yihui/knitr/issues/764). I have added the new chunk option `R.options`. Thanks!
+	- [# a list of options attributes for RStudio](https://github.com/yihui/knitr/blob/master/R/defaults.R)
+- Полезно [How to suppress warnings globally in an R Script](https://stackoverflow.com/questions/16194212/how-to-suppress-warnings-globally-in-an-r-script)
+
+# 27.03.2018
+## R
+- Формулы в R Markdown. [An Example R Markdown](http://www.statpower.net/Content/310/R%20Stuff/SampleMarkdown.html).
+	- [Equation Examples in R Markdown](http://www.montana.edu/rotella/documents/502/MarkdownEqnExamples.Rmd)
+- [Power analysis for longitudinal multilevel models: powerlmm 0.2.0 is now out on CRAN](http://rpsychologist.com/powerlmm-0-2-0)
+- COOL! Интересный разбор фич ggplot. [ggplot2: How Geoms & Aesthetics ≈ Whipped Cream](https://trinkerrstuff.wordpress.com/2018/03/21/ggplot2-how-geoms-aesthetics-%E2%89%88-whipped-cream/)
+- [Regression Analysis Essentials For Machine Learning](http://www.sthda.com/english/wiki/regression-analysis-essentials-for-machine-learning)
+- [15 TYPES OF REGRESSION YOU SHOULD KNOW](https://www.listendata.com/2018/03/regression-analysis.html)
+- [Machine Learning Modelling in R :: Cheat Sheet](http://www.thertrader.com/2018/03/22/machine-learning-modelling-in-r-cheat-sheet/)
+- [Should I learn sf or sp for spatial R programming?](http://www.seascapemodels.org/rstats/2018/03/23/should-I-learn-sp-or-sf.html)
+- COOL! Очень интересное объяснение математики на примере R. [Exploring the underlying theory of the chi-square test through simulation - part 2](https://www.rdatagen.net/post/a-little-intuition-and-simulation-behind-the-chi-square-test-of-independence-part-2/)
+- [SHINYPROXY 1.1.0 RELEASED!](https://www.openanalytics.eu/blog/2018/03/25/shinyproxy-1.1.0/)
+- [R package for M4 Forecasting Competition](https://robjhyndman.com/hyndsight/m4comp2018/)
+- [reticulate: R interface to Python](https://blog.rstudio.com/2018/03/26/reticulate-r-interface-to-python/)
+- [Guide to tidy git analysis](https://drsimonj.svbtle.com/embarking-on-a-tidy-git-analysis)
+- [remoter: Remote R: Control a Remote R Session from a Local One](https://cran.r-project.org/web/packages/remoter/index.html)
+- [Automate R processes](http://www.bnosac.be/index.php/blog/76-automate-r-processes)
+- plumber: [Cannot POST in UTF-8 under windows #153 {Open}](https://github.com/trestletech/plumber/issues/153)
+- [RUN PYTHON FROM R](https://www.listendata.com/2018/03/run-python-from-r.html)
+- [Generate image captions with the Computer Vision API](http://blog.revolutionanalytics.com/2018/03/computer-vision-api.html)
+- [Discriminant Analysis: Statistics All The Way](https://r-posts.com/discriminant-analysis-statistics-all-the-way/)
+
+## R nub
+- [Using R to ‘drive’ MS Excel -- 3/27/2018](https://ibecav.github.io/RtoExcel/)
+- [Using functions to be more efficient – March 28, 2018](https://ibecav.github.io/Functionalize/)
+
+
+## Microsoft
+- [The olapR library](https://docs.microsoft.com/en-us/machine-learning-server/r-reference/olapr/olapr) provides R functions for importing data from OLAP cubes stored in SQL Server Analysis Services into a data frame. This package is available on premises, on Windows only.
+- [Установка Microsoft ODBC Driver for SQL Server на Linux и macOS](https://docs.microsoft.com/ru-ru/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server)
+- [Драйвер Microsoft ODBC для SQL Server в Windows](https://docs.microsoft.com/ru-ru/sql/connect/odbc/windows/microsoft-odbc-driver-for-sql-server-on-windows)
+- [Run a (R) script as a service {server 2012R2}](https://serverfault.com/questions/867549/run-a-r-script-as-a-service-server-2012r2)
+- [ASStoredProcedures. Analysis Services Stored Procedure Project](https://archive.codeplex.com/?p=asstoredprocedures)
+- [<запрос источника данных> -OPENROWSET](https://docs.microsoft.com/ru-ru/sql/dmx/source-data-query-openrowset)
+- [Отличие DAX и MDX](https://habrahabr.ru/post/341478/)
+
+
+# 21.03.2018
+## R
+- [R and Docker](http://blog.revolutionanalytics.com/2018/03/r-and-docker.html)
+- [The Rocker Project. Docker Containers for the R Environment](https://www.rocker-project.org/)
+- Тащим вебкасты с RStudio. [Tube Ninja](https://www.tubeninja.net/)
+- COOL! [Some shinyjs functions not working in shiny module #50 {Closed}](https://github.com/daattali/shinyjs/issues/50)
+
+# 20.03.2018
+## R
+- [How to create file execute mode permissions in Git on Windows?](https://stackoverflow.com/questions/21691202/how-to-create-file-execute-mode-permissions-in-git-on-windows)
+- [`theme_ipsum_ps`: A precise & pristine ggplot2 theme with opinionated defaults...](https://rdrr.io/github/hrbrmstr/hrbrthemes/man/theme_ipsum_ps.html)
+- [hrbrthemes : Additional Themes and Theme Components for ‘ggplot2’](https://github.com/hrbrmstr/hrbrthemes)
+- [New IBM Plex Sans Support in hrbrthemes + Automating Axis Text Justification](https://rud.is/b/2017/11/16/new-ibm-plex-sans-support-in-hrbrthemes-automating-axis-text-justification/)
+- [The package of IBM’s typeface, IBM Plex.](https://github.com/IBM/plex)
+- [IBM Plex. Font Squirrel](https://www.fontsquirrel.com/fonts/ibm-plex)
+
+# 17.03.2018
+## R
+- [Take Care If Trying the RPostgres Package](http://www.win-vector.com/blog/2018/03/take-care-if-trying-the-rpostgres-package/)
+- Полезный вводный материал. [Getting Started with tidyverse in R](http://www.storybench.org/getting-started-with-tidyverse-in-r/)
+- [Cleaning Big Data: Most Time-Consuming, Least Enjoyable Data Science Task, Survey Says](https://www.forbes.com/sites/gilpress/2016/03/23/data-preparation-most-time-consuming-least-enjoyable-data-science-task-survey-says/#5b01407a6f63)
+- [ClickTail Introduction](https://www.altinity.com/blog/2018/3/12/clicktail-introduction)
+
+
+# 16.03.2018
+## R
+- [Phaedra is an open source platform for data capture and analysis of high-content screening data.](https://www.phaedra.io/)
+- COOL! [Empty R environment becomes large file when saved](https://stackoverflow.com/questions/13912867/empty-r-environment-becomes-large-file-when-saved)
+
+# 15.03.2018
+## R
+- [DataExplorer: Fast Data Exploration With Minimum Code](http://blog.revolutionanalytics.com/2018/02/dataexplorer.html)
+- [Math Notation for R Plot Titles: expression and bquote](https://trinkerrstuff.wordpress.com/2018/03/15/2246/)
 
 # 14.03.2018
 ## R
@@ -356,6 +440,10 @@ YES - it means it will handle all the incomming requests in parallel - each requ
 # 19.02.2018
 ## R
 - [Use unique() instead of levels() to find the possible values of a factor in R](https://chemicalstatistician.wordpress.com/2018/03/10/use-unique-instead-of-levels-to-find-the-possible-values-of-a-character-variable-in-r/)
+- [R Tip: Use Named Vectors to Re-Map Values](http://www.win-vector.com/blog/2018/03/r-tip-use-named-vectors-to-re-map-values/)
+- [R Tip: Use let() to Re-Map Names](http://www.win-vector.com/blog/2018/03/r-tip-use-let-to-re-map-names/)
+- [R Tip: Break up Function Nesting for Legibility](http://www.win-vector.com/blog/2018/03/r-tip-break-up-function-nesting-for-legibility/)
+- [R Tip: Use stringsAsFactors = FALSE](http://www.win-vector.com/blog/2018/03/r-tip-use-stringsasfactors-false/)
 - [R Tip: Use vector(mode = "list") to Pre-Allocate Lists](http://www.win-vector.com/blog/2018/03/r-tip-use-vectormode-list-to-pre-allocate-lists/)
 - [R Tip: Get Out of the Habit of Calling View() Directly](http://www.win-vector.com/blog/2018/03/r-tip-get-out-of-the-habit-of-calling-view-directly/)
 - [R Tip: Make Arguments Explicit in magrittr/dplyr Pipelines](http://www.win-vector.com/blog/2018/03/r-tip-make-arguments-explicit-in-magrittr-dplyr-pipelines/)

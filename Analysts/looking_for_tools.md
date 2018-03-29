@@ -1,5 +1,9 @@
 http://www.worldtimebuddy.com/
 
+# Fences
+- Fences: как вручную переставить нужный билд со стима. [Fences 3.07 {See update in description} **UPDATE**](https://steamcommunity.com/app/607380/discussions/0/1692659769942057262/)
+Набираем `steam://open/console` в Edge
+
 # SmartHome
 - [Как настраивать Xiaomi smart home - сценарии, часть 1](http://www.ixbt.com/live/kvazis/kak-nastraivat-xiaomi-smart-home-scenarii-chast-1.html)
 - [Как настраивать xiaomi smart home - сценарии, часть 2, управление увлажнителем](http://www.ixbt.com/live/kvazis/kak-nastraivat-xiaomi-smart-home-scenarii-chast-2-upravlenie-uvlazhnitelem.html)
