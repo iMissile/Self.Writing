@@ -1,6 +1,8 @@
 ﻿- [The JSON Formatter](https://jsonformatter.curiousconcept.com/)
 - [JSON Editor Online](http://jsoneditoronline.org/)
 - [Различные онлайн инструменты для проверки и преобразования](https://www.danstools.com/)
+- [Телеграмм бот «Telegram Proxy (SOCKS5) Bot»](https://ru.telegram-store.com/catalog/bots/proxy_socks5_bot/)
+https://tmall.aliexpress.com/item/Edifier-W830BT-1/1000005465785.html
 
 - [AppSales. Best Android apps on Sale](https://www.app-sales.net)
 - [AppTime. Games & Gadgets](http://app-time.ru/)
@@ -148,6 +150,10 @@ Survival analysis is long-established within actuarial science but infrequently 
 - [Programming with dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/programming.html)
 - [wrapr: R Code Sweeteners](http://www.win-vector.com/blog/2017/08/wrapr-r-code-sweeteners/)
 - [Why I find tidyeval useful](http://www.brodrigues.co/blog/2017-08-27-why_tidyeval/)
+- [What is tidy eval and why should I care?](https://thisisnic.github.io/2018/03/29/what-is-tidy-eval-and-why-should-i-care/). 
+	- Перепечатка на Mango Solution: [What is tidy eval and why should I care?](https://www.mango-solutions.com/blog/what-is-tidy-eval-and-why-should-i-care)
+	- [Using Tidy Eval with dplyr::filter](https://thisisnic.github.io/2018/03/27/using-tidy-eval-with-dplyr-filter/)
+	- [Exploring Tidy Eval at a Snail's Pace](https://thisisnic.github.io/2018/02/20/exploring-tidy-eval-snails-pace/)
 - [Theory free tidyeval](https://www.johnmackintosh.com/2018-02-19-theory-free-tidyeval/). Getting our feet wet with dplyr programming
 - Разбираемся с NSE в ggplot:
 	- [Using tidyeval method with ggplot in R](https://stackoverflow.com/questions/45109238/using-tidyeval-method-with-ggplot-in-r)
@@ -160,6 +166,206 @@ Survival analysis is long-established within actuarial science but infrequently 
 - dplyr & operator ~ (tilde). NSE = [non-standard evaulation](http://cran.r-project.org/web/packages/dplyr/vignettes/nse.html)
 - [Non-standard evaluation](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
 
+# 25.04.2018
+## R
+- [Using glue_sql()](https://db.rstudio.com/best-practices/run-queries-safely/#using-glue_sql)
+Parameterized queries are generally the safest and most efficient way to pass user defined values in a query, however not every database driver supports them. The function glue_sql(), part of the the glue package, is able to handle the SQL quoting and variable placement.
+- [Командная строка EmEditor](http://www.emeditor.org/en/howto_file_file_commandline.html) (нужна для настройки AstroGrep)
+- hrbrthemes
+	- [library(extrafont)](http://blog.revolutionanalytics.com/2012/09/how-to-use-your-favorite-fonts-in-r-charts.html)
+	- при попытке использовать кастомные темы и сменить шрифт возникает ошибка: `Font family not found in Windows font database`. Решение найдено здесь: [Can't change fonts in ggplot/geom_text](http://stackoverflow.com/questions/14733732/cant-change-fonts-in-ggplot-geom-text). Доп. справочная информация [How to use your favorite fonts in R charts, September 20, 2012](http://blog.revolutionanalytics.com/2012/09/how-to-use-your-favorite-fonts-in-r-charts.html)
+- Проблема с tibbletime. По умолчанию он считает, что индекс в UTC. Однако есть внутренние атрибуты индекса! См. [Create tbl_time objects](https://business-science.github.io/tibbletime/reference/tbl_time.html). The information stored about `tbl_time` objects are the `index_quo` and the `index_time_zone`. These are stored as attributes, with the `index_quo` as a `rlang::quosure()` and the `time_zone` as a string.
+
+# 24.04.2018
+## R
+- COOL! [Semantic dashboard - new open source R Shiny package](https://appsilondatascience.com/blog/rstats/2018/04/23/semanticdashboard.html)
+- COOL! [An Introduction to Greta](https://rviews.rstudio.com/2018/04/23/on-first-meeting-greta/). I had assumed that the tensorflow and reticulate packages would eventually enable R developers to look beyond deep learning applications and exploit the TensorFlow platform to create all manner of production-grade statistical applications. BUT greta lets users write TensorFlow-based Bayesian models directly in R! What could be more charming?
+- [Get the list of installed packages by user in R](https://stackoverflow.com/questions/38481980/get-the-list-of-installed-packages-by-user-in-r)
+```
+ip <- as_tibble(installed.packages()[,c(1,3:4)])
+ip <- ip[is.na(ip$Priority),1:2,drop=FALSE]
+pkgs <- ip$Package
+saveRDS(pkgs, "pkgs.Rds")
+```
+- [Big changes behind the scenes in R 3.5.0](http://blog.revolutionanalytics.com/2018/04/r-350.html)
+ 	- [Preview: ALTREP promises to bring major performance improvements to R](http://blog.revolutionanalytics.com/2017/09/altrep-preview.html). Тут есть ссылки на презентации.
+	- [WHAT'S IN A VECTOR?](https://gmbecker.github.io/jsm2017/jsm2017.html) by GABRIEL BECKER, LUKE TIERNEY, TOMAS KALIBERA
+	- [ALTREP: Alternative Representations for R Objects](https://svn.r-project.org/R/branches/ALTREP/ALTREP.html)
+	- [Big vectors coming to R](http://blog.revolutionanalytics.com/2012/07/big-vectors-coming-to-r.html)
+- hrbrthemes 0.5
+	- [Titillium Web-based font](https://fonts.google.com/specimen/Titillium+Web)
+- COOL Shiny Tweak. [Adding text (or inputs) to the navigation bar in a navbarPage](https://github.com/daattali/advanced-shiny/tree/master/navbar-add-text)
+
+# 23.04.2018
+## R
+- [Packaging Shiny applications: A deep dive](https://www.mango-solutions.com/blog/packaging-shiny-applications-a-deep-dive)
+
+# 20.04.2018
+## DS
+- ODS блог. [Ассоциативные правила, или пиво с подгузниками](https://habrahabr.ru/company/ods/blog/353502/)
+- [Почему расчет перцентилей работает не так как вы ожидаете?](https://habrahabr.ru/post/274303/)
+
+# 18.04.2018
+## R
+- [How to save and load environment objects in R](https://www.techcoil.com/blog/how-to-save-and-load-environment-objects-in-r/).
+`save.image(file='myEnvironment.RData')` & load('myEnvironment.RData')
+- [A better way of saving and loading objects in R](https://www.fromthebottomoftheheap.net/2012/04/01/saving-and-loading-r-objects/)
+- [Convert comma separated numbers in a character string to numeric vector {duplicate}](https://stackoverflow.com/questions/44521042/convert-comma-separated-numbers-in-a-character-string-to-numeric-vector?rq=1)
+- Как схлопнуть все уровни в списках? `flatten` не способен, надо брать `rlang::squash()` --  Flatten or squash a list of lists into a simpler vector
+- [`strrep`: Repeat the Elements of a Character Vector](https://rdrr.io/r/base/strrep.html)
+
+# 17.04.2018
+## R
+- [Maximum Likelihood Estimation For Regression](https://medium.com/quick-code/maximum-likelihood-estimation-for-regression-65f9c99f815d)
+- [loo 2.0 is loose](http://andrewgelman.com/2018/04/16/loo-2-0-loose/). We’re happy to announce the release of v2.0.0 of the loo R package for efficient approximate leave-one-out cross-validation (and more). For anyone unfamiliar with the package, the original motivation for its development is in our paper:
+- GIS. [ORDNANCE SURVEY TERRAIN 50: MERGING IN R](https://scottishsnow.wordpress.com/2018/04/16/ordnance-survey-terrain-50-merging-in-r/):
+```
+library(rgdal)
+library(gdalUtils)
+f = list.files("~/Downloads/temp", pattern=".asc", full.names=T)
+mosaic_rasters(f, paste0(normalizePath("~"), "/GIS/OS/Terrain50.tif"))
+```
+- COOL! [Adding Intel MKL easily via a simple script](http://dirk.eddelbuettel.com/blog/2018/04/15/#018_mkl_for_debian_ubuntu)
+- Join
+	- COOL! [STAT 545. Cheatsheet for dplyr join functions](http://stat545.com/bit001_dplyr-cheatsheet.html) by Jenny Bryan
+	- COOL! [Joining Data in R with dplyr](http://www.rpubs.com/williamsurles/293454) by William Surles, 2017-07-20
+
+- COOL! [How to group by all but one columns?](https://stackoverflow.com/questions/39181208/how-to-group-by-all-but-one-columns): Building on the @eipi10's dplyr 0.7.0 edit, `group_by_at` appears to be the right function for this job. 
+
+# 16.04.2018
+## R
+- [{pmice}, an experimental package for missing data imputation in parallel using {mice} and {furrr}](http://www.brodrigues.co/blog/2018-04-15-announcing_pmice/)
+- [Imputing missing values in parallel using {furrr}](http://www.brodrigues.co/blog/2018-04-14-playing_with_furrr/)
+- COOL [Supercharge your R code with wrapr](http://www.win-vector.com/blog/2018/01/supercharge-your-r-code-with-wrapr/)
+- COOL! lubridate. Как подхватить месяц, написанный словами? [Handling dates in R](https://skgrange.github.io/date_handling.html) by Stuart Grange, 2016-08-22.
+С определенной натяжкой получается конструкцией `stri_datetime_parse("19 декабрь 2015", "dd-LLLL-yyyy", tz="Europe/Moscow", locale="ru_RU")`
+
+# 13.04.2108
+## R
+- [Convert epub to Text for Processing in R](https://rud.is/b/2018/04/12/convert-epub-to-text-for-processing-in-r/)
+- COOL! [PIMP MY RMD: A FEW TIPS FOR R MARKDOWN](https://www.r-graph-gallery.com/pimp-my-rmd-a-few-tips-for-r-markdown/)
+	- Сам документ. [Pimp my RMD: a few tips for R Markdown](https://holtzy.github.io/Pimp-my-rmd/) by Yan Holtz - 11 April 2018
+- [Regular Expressions Every R programmer Should Know](https://blog.jumpingrivers.com/posts/2018/top_regular_expressions_r_stringr/)
+- [future 1.8.0: Preparing for a Shiny Future](https://www.jottr.org/2018/04/12/future-results/)
+- [readtext: Import and Handling for Plain and Formatted Text Files](https://cran.r-project.org/web/packages/readtext/)
+- [R: assign() inside nested functions](https://emilkirkegaard.dk/en/?p=5718). The call that does the trick is the last one, namely the one using `assign()`. Here we modify an object outside the function’s own environment. How do we know which one to modify? Well, we take one step back (`pos = 1`). Alternatively, one could have used `<<-`.
+
+## SQL
+- [10 Easy Steps to a Complete Understanding of SQL](https://blog.jooq.org/2016/03/17/10-easy-steps-to-a-complete-understanding-of-sql/)
+- [Parameterized queries](https://db.rstudio.com/best-practices/run-queries-safely#parameterized-queries)
+- [odbc](https://db.rstudio.com/odbc/). The goal of the odbc package is to provide a DBI-compliant interface to Open Database Connectivity (ODBC) drivers. This allows for an efficient, easy to setup connection to any database with ODBC drivers available, including SQL Server, Oracle, MySQL, PostgreSQL, SQLite and others. The implementation builds on the nanodbc C++ library.
+
+
+
+# 12.04.2018
+## R
+- COOL! [Neglected R Super Functions](http://www.win-vector.com/blog/2018/04/neglected-r-super-functions/)
+- COOL! [Assign multiple new variables on LHS in a single line in R](https://stackoverflow.com/questions/7519790/assign-multiple-new-variables-on-lhs-in-a-single-line-in-r)
+	- [zeallot: Multiple, Unpacking, and Destructuring Assignment](https://cran.r-project.org/web/packages/zeallot/index.html)
+Provides a %<-% operator to perform multiple, unpacking, and destructuring assignment in R. The operator unpacks the right-hand side of an assignment into multiple values and assigns these values to variables on the left-hand side of the assignment.
+	- [Matlab-style multiple assignment in R](https://strugglingthroughproblems.wordpress.com/2010/08/27/matlab-style-multiple-assignment-in%C2%A0r/). Posted on August 27, 2010
+- [Comparison of String Distance Algorithms](https://www.joyofdata.de/blog/comparison-of-string-distance-algorithms/). Posted on 2013/08/21
+- применимо и к selectizeInput [reactive radioButtons with tooltipBS in shiny](https://stackoverflow.com/questions/36132204/reactive-radiobuttons-with-tooltipbs-in-shiny)
+- COOL! [Essential Shiny packages](https://divadnojnarg.github.io/blog/bestofshiny/). October 2017 · 5 minute read
+- [ijlyttle/bsplus](https://github.com/ijlyttle/bsplus). Shiny and R Markdown addons to Bootstrap 3 http://ijlyttle.github.io/bsplus/
+- [RODBC odbcDriverConnect() Connection Error](https://stackoverflow.com/questions/15420999/rodbc-odbcdriverconnect-connection-error)
+
+
+
+# 10.04.2018
+## R
+- [Dissecting R Package “Utility Belts”](https://rud.is/b/2018/04/08/dissecting-r-package-utility-belts/)
+- [ANOMALIZE: TIDY ANOMALY DETECTION](http://www.business-science.io/code-tools/2018/04/08/introducing-anomalize.html)
+- [magrittr and wrapr Pipes in R, an Examination](http://www.win-vector.com/blog/2018/04/magrittr-and-wrapr-pipes-in-r-an-examination/)
+- [Writing better R functions part one -- April 6, 2018](https://ibecav.github.io/betterfunctions/)
+- [P-VALUES, SAMPLE SIZE AND DATA MINING](http://skranz.github.io//r/2018/04/09/Sample_Size_P-Values_and_Data_Mining.html)
+- [How to use dplyr's mutate in R without a vectorized function](https://deanattali.com/blog/mutate-non-vectorized/)
+- [A New Package (hhi) for Quick Calculation of Herfindahl-Hirschman Index scores](https://r-posts.com/a-new-package-hhi-for-calculation-of-herfindahl-hirschman-index-scores/)
+- [How to visualize data with Highcharter: exercises](https://www.r-exercises.com/2018/04/09/how-to-visualize-data-with-highcharter-exercises/)
+- [dplyr. Adding a new SQL backend (перевод)](http://biostat-r.blogspot.ru/2015/08/dplyr-dplyr.html)
+- [A dummy DBI connector that simulates ANSI-SQL compliance](https://dbi.r-dbi.org/reference/ansi). `ANSI()`
+- [dplyr backend for any DBI-compatible database — src_dbi • dbplyr](http://dbplyr.tidyverse.org/reference/src_dbi.html)
+- [Квантиль - что это?](http://www.reshim.su/blog/kvantil/2015-09-09-626)
+
+# 09.04.2018
+## R
+- R & SQL exploits
+	- [Exploits of a Mom](https://xkcd.com/327/)
+	- `dplyr::sql_escape_string(NULL, "s');")`
+
+# 06.04.2018
+## R
+- [Appsilon/shiny.collections](https://github.com/Appsilon/shiny.collections). shiny.collections adds persistent reactive collections that can be effortlessly integrated with components like Shiny inputs, DT::dataTable or rhandsontable. The package makes it easy to build collaborative Shiny applications with persistent data.
+- [My Data Science Tool Box](http://people.fas.harvard.edu/~izahn/posts/my-toolbox/), Ista Zahn 2018-04-03 14:00 Source
+- [UserR! 2017 Brussel](https://user2017.brussels. масса интересных докладов. в т.ч. и по применению shiny для массового коммерческого применения
+	- [Доклады](https://user2017.brussels/schedule)
+	- [Видеозапись](https://channel9.msdn.com/Events/useR-international-R-User-conferences/useR-International-R-User-2017-Conference)
+- [Daff: diff, patch and merge for data.frames](https://cran.r-project.org/web/packages/daff/)
+daff is an R package that can find difference in values between data.frames, store this difference, render it and apply this difference to patch a data.frame. It can also merge two versions of a data.frame having a common parent. It wraps the daff.js library using the V8 package.
+
+## Forecast
+- [Is Prophet Really Better than ARIMA for Forecasting Time Series Data?](https://blog.exploratory.io/is-prophet-better-than-arima-for-forecasting-time-series-fa9ae08a5851)
+- [Imputing missing values using ARIMA model](https://stackoverflow.com/questions/30584423/imputing-missing-values-using-arima-model)
+- [Tutorial on 5 Powerful R Packages used for imputing missing values](https://www.analyticsvidhya.com/blog/2016/03/tutorial-powerful-packages-imputing-missing-values/)
+- [A brief history of time series forecasting competitions](https://robjhyndman.com/hyndsight/forecasting-competitions/)
+
+# 04.04.2018
+## R
+- [5 Most Practically Useful Window (Table) Calculations in R - Exploratory](https://blog.exploratory.io/5-most-practically-useful-window-table-calculations-in-r-7e2c7ca431d9)
+- [Roll apply to return moving average](https://stackoverflow.com/questions/32614554/roll-apply-to-return-moving-average)
+- [kevinushey/RcppRoll](https://github.com/kevinushey/RcppRoll). Fast rolling functions through Rcpp
+- Отвечает Dirk Eddelbuettel. [Number of months between two dates](https://stackoverflow.com/questions/1995933/number-of-months-between-two-dates/1996404)
+- Продолжение: [Get the difference between dates in terms of weeks, months, quarters, and years](https://stackoverflow.com/questions/14454476/get-the-difference-between-dates-in-terms-of-weeks-months-quarters-and-years)
+- [R: Filtering by two columns using “is not equal” operator dplyr/subset](https://stackoverflow.com/questions/47191727/r-filtering-by-two-columns-using-is-not-equal-operator-dplyr-subset)
+- COOL! non standard evaluation [What is tidy eval and why should I care?](https://www.mango-solutions.com/blog/what-is-tidy-eval-and-why-should-i-care)
+
+# 03.04.2018
+## R
+- COOL! Чем занято пространство диска (treemap)? [Compute/Visualize Drive Space Consumption of Your Installed R Packages](https://rud.is/b/2018/04/01/compute-visualize-drive-space-consumption-of-your-installed-r-packages/)
+- [RStudio GPU Workstations in the Cloud with Paperspace](https://tensorflow.rstudio.com/blog/rstudio-gpu-paperspace.html)
+- [oneliner - a new style guide for styler](https://lorenzwalthert.github.io/oneliner/)
+- COOL! [Bump Chart. Track performance over time](https://dominikkoch.github.io/Bump-Chart/)
+- COOL! [Flexible equality comparison for data frames](http://dplyr.tidyverse.org/reference/all_equal.html). You can use `all_equal()` with any data frame, and `dplyr` also provides `tbl_df` methods for `all.equal()`.
+
+# 02.04.2018
+## R
+- tidyeval. Пытаюсь использовать в dplyr значение переменной из внешнего окружения. Понятно, что если такой переменной нет в data.frame, то автоматом уйдем выше. Но, тем не менее:
+	- [Use variable names in functions of dplyr](https://stackoverflow.com/questions/24569154/use-variable-names-in-functions-of-dplyr). In the devel version of dplyr and soon to be released as 0.6.0 (April 2017), we can create the variables as quoted and then unquote (`UQ` or `!!`) for evaluation. Из документации 2018 г. следует: "`UQ()` and `UQS()` were soft-deprecated in rlang 0.2.0 in order to make the syntax of quasiquotation more consistent. The prefix forms are now `!!`() and `!!!`() which is consistent with other R operators (e.g. `+`(a, b) is the prefix form of a + b)."
+
+# 30.03.2018
+## R
+- [LEARN TO R BLOG SERIES - R AND RSTUDIO](https://itsalocke.com/blog/learn-to-r-blog-series---r-and-rstudio/)
+- [Cats are great and so is the forcats R package](https://sw23993.wordpress.com/2018/03/28/cats-are-great-and-so-is-the-forcats-r-package/)
+- COOL! [DT 0.4: Editing Tables, Smart Filtering, and More](https://blog.rstudio.com/2018/03/29/dt-0-4/)
+- [BotRNot: An R app to detect Twitter bots](http://blog.revolutionanalytics.com/2018/03/twitter-bot-or-not.html)
+- COOL! [Feb 2018: "Top 40" New Package Picks](https://rviews.rstudio.com/2018/03/29/feb-2018-top-40-new-package-picks/)
+	- [geozoning: Zoning Methods for Spatial Data](https://cran.r-project.org/web/packages/geozoning/index.html)
+	- [NetLogoR: A Port of 'NetLogo' Functions and Language to R](https://cran.r-project.org/web/packages/NetLogoR/index.html). Easily create agent-based models in R following the 'NetLogo' framework (Wilensky, 1999; <http://ccl.northwestern.edu/netlogo/>).
+	- [riskyr: Rendering Risk Literacy more Transparent](https://cran.r-project.org/web/packages/riskyr/index.html)
+Risk-related information can be expressed in terms of probabilities or frequencies. By providing a toolbox of methods and metrics, we compute, translate, and represent risk-related information in a variety of ways. By offering different, but complementary perspectives on the interplay between key parameters, 'riskyr' renders teaching and training of risk literacy more transparent. [riskyr User Guide](https://cran.r-project.org/web/packages/riskyr/vignettes/A_user_guide.html)
+	- [knitrProgressBar: Provides Progress Bars in 'knitr'](https://cran.r-project.org/web/packages/knitrProgressBar/index.html)
+Provides a progress bar similar to 'dplyr' that can write progress out to a variety of locations, including stdout(), stderr(), or from file(). Useful when using 'knitr' or 'rmarkdown', and you still want to see progress of calculations in the terminal.
+	- [trackr: Semantic Annotation and Discoverability System for R-Based Artifacts](https://cran.r-project.org/web/packages/trackr/index.html)
+Automatically annotates R-based artifacts with relevant descriptive and provenance-related and provides a backend-agnostic storage and discoverability system for organizing, retrieving, and interrogating such artifacts.
+
+## R as cmd script
+- [Startup. Initialization At Start Of An R Session](https://www.rdocumentation.org/packages/base/versions/3.4.3/topics/Startup)
+- [quit. Terminate An R Session](https://www.rdocumentation.org/packages/base/versions/3.4.3/topics/quit)
+- Work with Exceptions
+	- COOL! [How to write trycatch in R](https://stackoverflow.com/questions/12193779/how-to-write-trycatch-in-r)
+	- COOL! [Error Handling in R](http://www.win-vector.com/blog/2012/10/error-handling-in-r/)
+	- [Debugging, condition handling, and defensive programming](http://adv-r.had.co.nz/Exceptions-Debugging.html)
+	- [Careful with tryCatch](http://www.brodrigues.co/blog/2016-06-21-careful-with-trycatch/)
+	- [Error handling in R is odd](https://emilkirkegaard.dk/en/?p=5162)
+- [How do I get the application exit code from a Windows command line?](https://stackoverflow.com/questions/334879/how-do-i-get-the-application-exit-code-from-a-windows-command-line)
+
+## R & Excel
+- [ДАТАЗНАЧ (функция ДАТАЗНАЧ)](https://support.office.com/ru-ru/article/%D0%94%D0%90%D0%A2%D0%90%D0%97%D0%9D%D0%90%D0%A7-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F-%D0%94%D0%90%D0%A2%D0%90%D0%97%D0%9D%D0%90%D0%A7-df8b07d4-7761-4a93-bc33-b7471bbff252)
+- [Date Formats in R](https://www.r-bloggers.com/date-formats-in-r/). If you are importing data from Excel, you may have dates that are in a numeric format. We can still use as.Date to import these, we simply need to know the origin date that Excel starts counting from, and provide that to as.Date.
+For Excel on Windows, the origin date is December 30, 1899 for dates after 1900. (Excel’s designer thought 1900 was a leap year, but it was not.) For Excel on Mac, the origin date is January 1, 1904.
+- [tidyxl: Read Untidy Excel Files](https://github.com/nacnudus/tidyxl).
+Imports non-tabular from Excel files into R. Exposes cell content, position and formatting in a tidy structure for further manipulation. Tokenizes Excel formulas. Supports '.xlsx' and '.xlsm' via the embedded 'RapidXML' C++ library <http://rapidxml.sourceforge.net>. Does not support '.xlsb' or '.xls'.
+
 # 29.03.2018
 ## R
 - COOL! [Quoting version of c() array concatinator](https://winvector.github.io/wrapr/reference/qc.html)
@@ -170,7 +376,9 @@ Survival analysis is long-established within actuarial science but infrequently 
 	- [Long lines of text output](https://yihui.name/knitr/demo/output/). Normally R respects the option width (set via `options(width = ??)`) when printing text output, e.g. rnorm(100). The default value for width is set to 75
 	- [R console width for output #764 {Closed}](https://github.com/yihui/knitr/issues/764). I have added the new chunk option `R.options`. Thanks!
 	- [# a list of options attributes for RStudio](https://github.com/yihui/knitr/blob/master/R/defaults.R)
-- Полезно [How to suppress warnings globally in an R Script](https://stackoverflow.com/questions/16194212/how-to-suppress-warnings-globally-in-an-r-script)
+- Полезно [How to suppress warnings globally in an R Script](https://stackoverflow.com/questions/16194212/how-to-suppress-warnings-globally-in-an-r-script). `suppressWarnings(expr)`
+- [HOW TO PLAY WITH ATTRIBUTES IN R](http://www.dummies.com/programming/r/how-to-play-with-attributes-in-r/)
+
 
 # 27.03.2018
 ## R
@@ -264,7 +472,10 @@ Survival analysis is long-established within actuarial science but infrequently 
 	- [How to change the default time zone in R?](https://stackoverflow.com/questions/6374874/how-to-change-the-default-time-zone-in-r). See `?timezone`. Another way to do it, without changing the whole computer time is using the setenv command like this: `Sys.setenv(TZ='GMT')`. После переезда на гугловые библиотеки необходимо добавлять в код установку переменных (либо делать это в системе): `Sys.setenv(TZ="Europe/Moscow")`
 
 ## R по мотивам Сибинтека
-- COOL! [Visualising your hiking trails and photos with My Tracks, R and Leaflet](http://mhermans.net/hiking-gpx-r-leaflet.html)
+- COOL! GIS [Visualising your hiking trails and photos with My Tracks, R and Leaflet](http://mhermans.net/hiking-gpx-r-leaflet.html)
+- EXIF:
+	- [exifr: EXIF Image Data in R](https://cran.r-project.org/web/packages/exifr/)
+	- [Read and Write 'Exif' Image/Media Tags with R](https://github.com/hrbrmstr/exiv)
 - COOL! [Gantt chart using R](https://davetang.org/muse/2017/02/03/gantt-chart-using-r/)
 - [Adding Curved Flight path using R's Leaflet Package](https://stackoverflow.com/questions/34499212/adding-curved-flight-path-using-rs-leaflet-package)
 - [Strava маршутры на leaflet](http://www.wolferonline.de/uploads/llmap.positr.html)
@@ -344,7 +555,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 - COOL! [Criminal goings-on in a random forest](https://thinkr.biz/2018/03/01/crime-random-forest/)
 - [Adding logging to a shiny app with loggit](http://rmhogervorst.nl/cleancode/blog/2018/02/28/adding-json-logging-to-shiny-app.html)
 - [#17: Dependencies](http://dirk.eddelbuettel.com/blog/2018/02/28/#017_dependencies). February 28, 2018, By Thinking inside the box
-- COOL!! [Faster way to trim a long character vector in R {closed}](https://stackoverflow.com/questions/39152317/faster-way-to-trim-a-long-character-vector-in-r). !!! **It's just that `strtrim()` is fairly slow.**
+- COOL!! [Faster way to trim a long character vector in R {closed}](https://stackoverflow.com/questions/39152317/faster-way-to-trim-a-long-character-vector-in-r). !!! **It's just that `strtrim()` is fairly slow.** Answer: Use `(substr(x, 1, 3))`
 
 
 # 28.02.2018
@@ -440,6 +651,7 @@ YES - it means it will handle all the incomming requests in parallel - each requ
 # 19.02.2018
 ## R
 - [Use unique() instead of levels() to find the possible values of a factor in R](https://chemicalstatistician.wordpress.com/2018/03/10/use-unique-instead-of-levels-to-find-the-possible-values-of-a-character-variable-in-r/)
+- [R Tip: Think in Terms of Values](http://www.win-vector.com/blog/2018/04/r-tip-think-in-terms-of-values/)
 - [R Tip: Use Named Vectors to Re-Map Values](http://www.win-vector.com/blog/2018/03/r-tip-use-named-vectors-to-re-map-values/)
 - [R Tip: Use let() to Re-Map Names](http://www.win-vector.com/blog/2018/03/r-tip-use-let-to-re-map-names/)
 - [R Tip: Break up Function Nesting for Legibility](http://www.win-vector.com/blog/2018/03/r-tip-break-up-function-nesting-for-legibility/)
@@ -1275,8 +1487,9 @@ There is also a performance difference. Xgboost used second derivatives to find 
 - [checkmate: Fast Argument Checks for Defensive R Programming](https://arxiv.org/pdf/1701.04781)
 - [Easy data validation with the validate package](http://www.markvanderloo.eu/yaRb/2016/03/25/easy-data-validation-with-the-validate-package/)
 - [`ruler`: Rule Your Data](). `ruler` offers a set of tools for creating tidy data validation reports using dplyr grammar of data manipulation. It is structured to be flexible and extendable in terms of creating rules and using their output.
+	- [Combined outlier detection with dplyr and ruler](http://www.questionflow.org/2017/12/26/combined-outlier-detection-with-dplyr-and-ruler/)
 	- [Rule Your Data with Tidy Validation Reports. Design](http://www.questionflow.org/2017/11/28/rule-your-data-with-tidy-validation-reports-design/)
-- [Usage of ruler package](http://www.questionflow.org/2017/12/05/usage-of-ruler-package/)
+	- [Usage of ruler package](http://www.questionflow.org/2017/12/05/usage-of-ruler-package/)
 - [data-cleaning/validate](https://github.com/data-cleaning/validate). Professional data validation for the R environment
 - Оно же: [validate: Data Validation Infrastructure](https://cran.r-project.org/web/packages/validate/index.html)
 - [sfirke/janitor](https://github.com/sfirke/janitor). simple tools for data cleaning in R
