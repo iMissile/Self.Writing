@@ -166,6 +166,45 @@ Survival analysis is long-established within actuarial science but infrequently 
 - dplyr & operator ~ (tilde). NSE = [non-standard evaulation](http://cran.r-project.org/web/packages/dplyr/vignettes/nse.html)
 - [Non-standard evaluation](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
 
+# 03.05.2018
+## R
+- [Done “Establishing DBI”!?](https://www.r-dbi.org/blog/dbi-2-final/) The “Establishing DBI” project, funded by the R consortium, started about a year ago. It includes the completion of two new backends, RPostgres and RMariaDB, and a quite a few interface extensions and specifications.
+- Re-exporting the magrittr pipe operator
+	- COOL! отвечают знаменитости. [Magrittr %>% inside a package](https://community.rstudio.com/t/magrittr-inside-a-package/2033/7).
+		- jennybryanRStudio EmployeeOct '17
+The solution from @alistaire basically summarizes how this is handled within tidyverse packages, which often import and re-export the %>% for the user’s convenience. They are less likely to actually use the pipe internally.
+`usethis::use_pipe()` does the necessary mechanics (caveat: usethis isn’t on CRAN yet, but will be). That’s about as close as you’ll get to an “official” solution.
+		- alistaireOct '17
+In practice, `%>%` tends to be re-exported, which can be done in a couple ways, e.g. `dplyr/R/utils.r` 7's concise
+```
+#' @importFrom magrittr %>%
+#' @export
+```
+	- [R: use magrittr pipe operator in self written package](https://stackoverflow.com/questions/27947344/r-use-magrittr-pipe-operator-in-self-written-package/27979637#27979637)
+- [Read Random Rows from A Huge CSV File](https://statcompute.wordpress.com/2018/04/28/read-random-rows-from-a-huge-csv-file/). pure R & python in R solutions.
+- [Using Shiny Dashboards for Financial Analysis](https://r-posts.com/using-shiny-dashboards-for-financial-analysis/)
+- [Extreme Makeover: R Graphics Edition](https://www.stat.auckland.ac.nz/~paul/Reports/deviceloc/deviceloc.html)
+- [How To: LEGO mosaics from photos using R & the tidyverse](http://www.ryantimpe.com/2018/04/23/lego-mosaic1/)
+- [Get your tracks from the Strava API and plot them on Leaflet maps](https://rcrastinate.blogspot.ru/2018/05/get-your-tracks-from-strava-api-and.html)
+- [Simulating animal movements and habitat use](https://allthiswasfield.blogspot.ru/2018/05/simulating-animal-movements-and-habitat.html)
+- [purrr Like a Kitten till the Lake Pipes RoaR](https://www.finex.co/purrr-like-a-kitten-till-the-lake-pipes-roar/)
+- [March 2018: "Top 40" New Package Picks](https://rviews.rstudio.com/2018/04/30/march-2018-top-40-new-package-picks/)
+	- [tsfknn v0.1.0](https://cran.r-project.org/package=tsfknn): Provides a function to forecast time series using nearest neighbors regression. See Martinez et al. (2017) and the vignette for details. [Time Series Forecasting with KNN in R: the tsfknn Package](https://cran.r-project.org/web/packages/tsfknn/vignettes/tsfknn.html)
+
+# 27.04.2018
+## R & certificates
+- [Peer certificate cannot be authenticated with given CA certificates {#44}](https://github.com/jimhester/gmailr/issues/44). Плохое, но грубое решение: `httr::set_config( config( ssl_verifypeer = 0L ) )`
+- [Getting an error "curl: (60) Peer certificate cannot be authenticated with known CA certificates" when trying to curl a site that has a VALID SSL certificate](https://access.redhat.com/solutions/523823)
+- [Getting error in Curl - Peer certificate cannot be authenticated with known CA certificates](https://stackoverflow.com/questions/14682894/getting-error-in-curl-peer-certificate-cannot-be-authenticated-with-known-ca-c)
+- Смотрим сертификаты в Linux: `curl -v https://cran.r-project.org`
+- [R Server: install.packages() certificate error](https://stackoverflow.com/questions/48698532/r-server-install-packages-certificate-error). As an alternative, you can download the package first, and install it. For example with Cairo package :
+```
+curl -kO https://cran.r-project.org/src/contrib/Cairo_1.5-8.tar.gz
+R CMD INSTALL Cairo_1.5-8.tar.gz
+```
+- [Secure Package Downloads for R](https://support.rstudio.com/hc/en-us/articles/206827897-Secure-Package-Downloads-for-R)
+- COOL!! Грубое решение: `install.packages("httr", method="wget", extra="--no-check-certificate")`. Устанавливаем параметры для `download.file`
+
 # 25.04.2018
 ## R
 - [Using glue_sql()](https://db.rstudio.com/best-practices/run-queries-safely/#using-glue_sql)
@@ -1391,6 +1430,7 @@ Predictive modeling is fun. With random forest, xgboost, lightgbm and other elas
 	- [lantanacamara/lightgbmExplainer](https://github.com/lantanacamara/lightgbmExplainer). An R package that makes lightgbm models fully interpretable (take reference from https://github.com/AppliedDataSciencePartners/xgboostExplainer)
 	- [lime](https://github.com/thomasp85/lime). This is an R port of the Python lime package (https://github.com/marcotcr/lime) developed by the authors of the lime (Local Interpretable Model-agnostic Explanations) approach for black-box model explanations. All credits for the invention of the approach goes to the original developers.
 The purpose of lime is to explain the predictions of black box classifiers. What this means is that for any given prediction and any given classifier it is able to determine a small set of features in the original data that has driven the outcome of the prediction. To learn more about the methodology of lime read the paper and visit the repository of the original implementation.
+	- [Interpretable Machine Learning with iml and mlr](https://mlr-org.github.io/interpretable-machine-learning-iml-and-mlr/)
 - COOL. [NEW R package that makes XGBoost interpretable](https://medium.com/applied-data-science/new-r-package-the-xgboost-explainer-51dd7d1aa211). For the demonstration, I'll use a dataset from Kaggle, to predict employee attrition from a fictional company.
 
 ## ML
