@@ -191,6 +191,13 @@ In practice, `%>%` tends to be re-exported, which can be done in a couple ways, 
 - [March 2018: "Top 40" New Package Picks](https://rviews.rstudio.com/2018/04/30/march-2018-top-40-new-package-picks/)
 	- [tsfknn v0.1.0](https://cran.r-project.org/package=tsfknn): Provides a function to forecast time series using nearest neighbors regression. See Martinez et al. (2017) and the vignette for details. [Time Series Forecasting with KNN in R: the tsfknn Package](https://cran.r-project.org/web/packages/tsfknn/vignettes/tsfknn.html)
 
+## Time-Series anomaly Detection & Forecasting
+- [Detecting Correlation Among Multiple Time Series](https://anomaly.io/detect-correlation-time-series/)
+- [Anomaly Detection Using K-Means Clustering](https://anomaly.io/anomaly-detection-clustering/)
+- [Understanding Cross-Correlation, Auto-Correlation, Normalization and Time Shift](https://anomaly.io/understand-auto-cross-correlation-normalized-shift/)
+- [An Introduction to Time Series Forecasting with Prophet Package in Exploratory](https://blog.exploratory.io/an-introduction-to-time-series-forecasting-with-prophet-package-in-exploratory-129ed0c12112)
+- [Time Series Forecasting with KNN in R: the tsfknn Package](https://cran.r-project.org/web/packages/tsfknn/vignettes/tsfknn.html)
+
 # 27.04.2018
 ## R & certificates
 - [Peer certificate cannot be authenticated with given CA certificates {#44}](https://github.com/jimhester/gmailr/issues/44). Плохое, но грубое решение: `httr::set_config( config( ssl_verifypeer = 0L ) )`

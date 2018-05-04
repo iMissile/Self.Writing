@@ -14,7 +14,8 @@ http://telegrammy.net/group/clickhouse_ru/page87.htm
 ## План запросов
 - Вопрос: есть ли способ получить из ClickHouse план исполнения запроса или что-то вроде того?
 Ответ: Что-то похожее на план выполнения запроса есть в логе - смотрите по словам Query pipeline: Там довольно скудная информация, к тому же этот план выводится по части запроса на локальном сервере.
-[Помощь по команде `find/locate`](https://www.gnu.org/software/findutils/)
+[Помощь по команде `find/locate`](https://www.gnu.org/software/findutils/).
+Команда `locate` ищет по кэшу.
 Ищем файл командами `locate --all "clickhouse-server.log"` или `find / -name "clickhouse-server.log"`.
 Файл найден здесь: `/var/databases/clickhouse-server/log/clickhouse-server.log`
 
