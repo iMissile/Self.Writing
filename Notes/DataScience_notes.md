@@ -166,6 +166,34 @@ Survival analysis is long-established within actuarial science but infrequently 
 - dplyr & operator ~ (tilde). NSE = [non-standard evaulation](http://cran.r-project.org/web/packages/dplyr/vignettes/nse.html)
 - [Non-standard evaluation](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
 
+# 07.05.2018
+## R
+- [ggridges: Ridgeline Plots in 'ggplot2'](https://cran.r-project.org/web/packages/ggridges/index.html)
+Ridgeline plots provide a convenient way of visualizing changes in distributions over time or space. This package enables the creation of such plots in 'ggplot2'.
+- [ggformula: Formula Interface to the Grammar of Graphics](https://cran.r-project.org/web/packages/ggformula/). Provides a formula interface to 'ggplot2' graphics.
+- [The Problem – Binning for Length Frequency Histograms](http://derekogle.com/fishR/2016-03-10-Histograms-with-w)
+- [The R Formula Method: The Good Parts](https://rviews.rstudio.com/2017/02/01/the-r-formula-method-the-good-parts/), 2017-02-01 by Max Kuhn
+- [The R Formula Method: The Bad Parts](https://rviews.rstudio.com/2017/03/01/the-r-formula-method-the-bad-parts/), 2017-03-01 by Max Kuhn
+- [Checking (G)LM model assumptions in R](https://biologyforfun.wordpress.com/2014/04/16/checking-glm-model-assumptions-in-r/)
+- [Calculating optimal number of bins in a histogram](https://stats.stackexchange.com/questions/798/calculating-optimal-number-of-bins-in-a-histogram)
+- COOL! [Data Binning and Plotting](http://www.jdatalab.com/data_science_and_data_mining/2017/01/30/data-binning-plot.html)
+- [Remove password protection from Excel sheets using R](https://ryouready.wordpress.com/2018/05/06/remove-password-protection-from-excel-sheets-using-r/)
+- COOL! [Coordinate systems in ggplot2: easily overlooked and rather underrated](https://www.statworx.com/de/blog/coordinate-systems-in-ggplot2-easily-overlooked-and-rather-underrated/)
+
+## Statistics
+- COOL! [Understanding the basis of GLM Regression (Logistic, Gaussian, Gamma, etc)](https://tsmatz.wordpress.com/2017/08/30/glm-regression-logistic-poisson-gaussian-gamma-tutorial-with-r/)
+- [Is there any difference between lm and glm for the gaussian family of glm?](https://stats.stackexchange.com/questions/181113/is-there-any-difference-between-lm-and-glm-for-the-gaussian-family-of-glm)
+- The Analysis Factor. [Generalized Linear Models (GLMs) in R, Part 4: Options, Link Functions, and Interpretation](https://www.theanalysisfactor.com/generalized-linear-models-glm-r-part4/)
+
+# 04.05.2018
+## RStudio
+- [Difference between R MarkDown and R NoteBook](https://stackoverflow.com/questions/43820483/difference-between-r-markdown-and-r-notebook)
+
+## Retail
+- [Price look-up code {PLU}](https://en.wikipedia.org/wiki/Price_look-up_code)
+- [What’s the Difference between a UPC and EAN?](https://www.nationwidebarcode.com/whats-the-difference-between-a-upc-and-ean/)
+- [Retail Numbering Systems](http://www.himatix.com/resources/manage/retail_numbering.html)
+
 # 03.05.2018
 ## R
 - [Done “Establishing DBI”!?](https://www.r-dbi.org/blog/dbi-2-final/) The “Establishing DBI” project, funded by the R consortium, started about a year ago. It includes the completion of two new backends, RPostgres and RMariaDB, and a quite a few interface extensions and specifications.
@@ -5327,6 +5355,7 @@ Go and explore, and happy new year!
 ## R
 - [R exercises](http://r-exercises.com/). Очень неплохой ресурс с заданиями по R.
 - COOL! Классный пакет для Simmer [Discrete-Event Simulator for R](http://fishyoperations.com/2017/01/12/extensions-for-simmer.html). Вообще, на этом сайте очень много записей про симуляцию.
+- [simmer 3.8.0](https://www.enchufa2.es/archives/simmer-3-8-0.html)
 - [simmer 3.7.0](https://www.enchufa2.es/archives/simmer-3-7-0.html)
 - [simmer.bricks 0.1.0: new add-on for simmer](https://www.enchufa2.es/archives/simmer-bricks-0-1-0-new-add-on-for-simmer.html)
 - [simmer 3.6.5](https://www.enchufa2.es/archives/simmer-3-6-5.html)
