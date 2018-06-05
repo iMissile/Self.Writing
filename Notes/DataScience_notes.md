@@ -166,6 +166,156 @@ Survival analysis is long-established within actuarial science but infrequently 
 - dplyr & operator ~ (tilde). NSE = [non-standard evaulation](http://cran.r-project.org/web/packages/dplyr/vignettes/nse.html)
 - [Non-standard evaluation](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
 
+# 04.06.2018
+## R
+- [Even Simpler SQL](https://www.johnmackintosh.com/2018-06-03-even-simpler-sql/)
+- [rqdatatable: rquery Powered by data.table](http://www.win-vector.com/blog/2018/06/rqdatatable-rquery-powered-by-data-table/)
+- [Coloring Sudokus](https://fronkonstin.com/2018/06/01/coloring-sudokus/)
+- [New R package xplain: Providing interactive interpretations and explanations of statistical results](https://topics-in-r.blogspot.com/2018/05/new-r-package-xplain-providing.html)
+- [Deep Catalan roots: playing with stringdist](https://ikashnitsky.github.io/2018/deep-catalan-roots/)
+- COOL! [What's the fastest way to determine the number of rows of a CSV in R?](https://gist.github.com/peterhurford/0d62f49fd43b6cf078168c043412f70a)
+- COOL! [Advanced R. 21 Quasiquotation](https://adv-r.hadley.nz/quasiquotation.html)
+
+# 31.05.2018
+## R
+- [User authentication in R Shiny - sneak peek of shiny.users and shiny.admin packages](https://appsilondatascience.com/blog/rstats/2018/05/30/user-authentication-in-r-shiny.html)
+- [Regulex JavaScript Regular Expression Visualizer](https://jex.im/regulex)
+- [Demystifying life expectancy calculations](http://freerangestats.info/blog/2018/05/31/life-expectancy)
+- [Defining Marketing with the Rvest and Tidytext Packages](https://r.prevos.net/rvest-and-tidytext/)
+
+## R color palettes
+- [Make your own color palettes with paletti](https://edwinth.github.io/blog/paletti/)
+- [Scico and the Colour Conundrum](https://www.data-imaginist.com/2018/scico-and-the-colour-conundrum/)
+- [How to use paletteR to automagically build palettes from pictures](https://datascienceplus.com/how-to-use-paletter-to-automagically-build-palettes-from-pictures/)
+- [A Very Palette-able Post](https://rud.is/b/2017/05/21/a-very-pallete-able-post/)
+- [ochRe - Australia themed colour palettes](https://ropensci.org/blog/2017/11/21/ochre/)
+- [How to build a color palette from any image with R and k-means algo](http://www.milanor.net/blog/build-color-palette-from-image-with-paletter/)
+
+
+## MS
+- Otlook. [сообщение "невозможно выполнить эту операцию так как сообщение было изменено"](https://answers.microsoft.com/ru-ru/msoffice/forum/msoffice_outlook-mso_windows8/%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8/485a84be-c1a1-48d8-874f-81aa178d7a3f)
+
+## Ответ Кате v3. RE: X5 FW: Бизнес-отчетность (дополнения выделены зеленым)
+Касательно темы референс визитов тоже есть важное уточнение.
+Переход от закрытых вендорских продуктов к опенсорс решениям понятие референс визита практически потеряло свою актуальность. 
+ - ПО бесплатно; 
+ - исходники все доступны; 
+ - развивают компоненты «всем миром»; 
+ - множество людей и компаний ведут блоги по задачам,  технологиям и решениям;
+ - регулярно проводят конференции, материалы которых полностью доступны, включая видеозаписи. 
+
+Если говорить о компонентах предлагаемого нами решения R, то весьма занимательно проглядеть материалы европейской конференции EARL, в частности [EARL 2017 London](https://earlconf.com/2017/london/), а также логотипы участников и спонсоров, большое количество грандов принимает [активное участие](https://earlconf.com/2017/downloads/london/EARL-London-2017-Agenda.pdf). 
+
+Очень много кейсов по применению указанного фреймворка для бизнес задач. 
+Например, крайне интересны:
+ - кейс с мониторингом системы городского транспорта Лондона – [«Every Journey Matters Use of R at TfL»](https://earlconf.com/2017/downloads/london/presentations/EARL2017_-_London_-_Ashley_Turner_-_Every_journey_matters.pdf)
+ - кейс с мониторингом канализации Великобритании – [«USING R TO MONITOR SEWER NETWORK PERFORMANCE FOR THE WATER INDUSTRY»](https://earlconf.com/2017/downloads/london/presentations/EARL2017_-_London_-_Joy%20McKenny_-_Using_R_to_monitor_sewer_network_performance.pdf);
+сложно найти более жизненные варианты.
+
+
+# 01.06.2018
+## R
+- COOL! [THREE WAYS OF VISUALIZING A GRAPH ON A MAP](https://datascience.blog.wzb.eu/2018/05/31/three-ways-of-visualizing-a-graph-on-a-map/)
+- [choroplethr](https://github.com/arilamstein/choroplethr) simplifies the creation of choropleths (thematic maps) in R
+	- choroplethr. [New Version of ggplot2](https://arilamstein.com/blog/2018/05/30/new-version-of-ggplot2/)
+	- [A Shiny app to demonstrate the datasets that ship with choroplethr v3.1.0](https://github.com/arilamstein/choroplethr-3-1-0-shiny-app)
+
+# 30.05.2018
+## R
+- [Daily Streamflow Trend Analysis](https://owi.usgs.gov/blog/Quantile-Kendall/)
+- COOL! [A recipe for recipes](https://edwinth.github.io/blog/recipes_blog/)
+- [Native scoring in SQL Server 2017 using R](https://tomaztsql.wordpress.com/2018/05/28/native-scoring-in-sql-server-2017-using-r/)
+- COOL! [TAKE SCREENSHOT OF WEBPAGE USING R](https://www.listendata.com/2018/05/take-screenshot-of-webpage-using-r.html)
+- [SHINYPROXY 1.1.1 RELEASED!](https://www.openanalytics.eu/blog/2018/05/28/shinyproxy-1.1.1/)
+- COOL! [Performance: captureOutput() is Much Faster than capture.output()]https://www.jottr.org/2014/05/26/trick-fast-rm/)
+
+# 28.05.2018
+## R
+- [Interprocess data sharing between R sessions](https://github.com/renkun-ken/sharedata)
+- [RStudio:addins part 3 - View objects, files, functions and more with 1 keypress](https://jozefhajnala.gitlab.io/r/r103-keypress-viewer/)
+
+
+# 25.05.2018
+## R
+- [sample_n_of(): a useful helper function](https://www.tjmahr.com/sample-n-groups/)
+- [panelView: Visualizing Panel Data with Dichotomous Treatments](http://yiqingxu.org/software/panelView/panelView.html)
+- [How Many Factors to Retain in Factor Analysis](https://neuropsychology.github.io/psycho.R//2018/05/24/n_factors.html)
+- [Selective Raster Graphics](https://www.stat.auckland.ac.nz/~paul/Reports/rasterize/rasterize.html)
+- Важные нюансы по `testthat`:
+	- [Setup and teardown](https://www.tidyverse.org/articles/2017/12/testthat-2-0-0/): tests/testthat/setup-xyz.R files are run before the first test file is executed. They are similar to the existing helpers-xyz.R files, but are not run by devtools::load_all(). Similarly, test/teststhat/teardown-xyz.R files are run after all tests are complete; use these to clean up any global changes made by the setup files.
+	- Из документации "• Helper files start with helper and are executed before tests are run and from `devtools::load_all()`"
+- [Merge Multiple spaces to single space; remove trailing/leading spaces
+](https://stackoverflow.com/questions/25707647/merge-multiple-spaces-to-single-space-remove-trailing-leading-spaces). 
+`stringr::str_squish(string)` or `qdap::Trim(qdap::clean(string))
+
+# 24.05.2018
+## ELK & nix
+- [Installing the ELK Stack on Windows](https://logz.io/blog/installing-the-elk-stack-on-windows/)
+- [Памятка пользователям ssh](https://habr.com/post/122445/)
+
+# 23.05.2018
+## R
+- COOL! [A perfect RStudio layout](https://ikashnitsky.github.io/2018/perfect-rstudio-layout/)
+
+# 22.05.2018
+## R & Shiny
+- Смотрим запущенные процессы. Различные команды, например `top` + кнопка `1` или `htop`. [Команда top в Linux](https://vps.ua/wiki/beginners/top-command/)
+- Смотрим запущенные процессы R (из под shiny server): `ps -aux | grep "exec/R --no-save"`
+- [RStudio Shiny Pro Pricing guide](https://shiny-server.chargifypay.com/h/3384909/subscriptions/new). Сервера просто работают в параллель.
+- [RStudio Connect Admin Guide](http://docs.rstudio.com/connect/admin/#). Для расширения требуется Execution Server
+	- [pdf версия](http://docs.rstudio.com/connect/admin/index.pdf)	
+- [Подробно про Connect Execution Server](https://blog.rstudio.com/2017/12/01/rstudio-connect-v1-5-10/)
+- [И еще](https://blog.rstudio.com/2018/04/12/rstudio-connect-1-6-0-a-year-in-the-making/). В Админ гайде это проходит под пунктом [6 High Availability and Load Balancing](http://docs.rstudio.com/connect/admin/high-availability.html)
+- [RStudio Configuration and sizing recommendations](https://support.rstudio.com/hc/en-us/articles/115002344588-Configuration-and-sizing-recommendations)
+
+
+# 21.05.2018
+## R
+- [Pivotal | R](https://pivotalsoftware.github.io/gp-r/) A place for all things Pivotal & R
+- COOL! [Create Code Metrics with cloc](https://rud.is/b/2018/05/19/create-code-metrics-with-cloc/)
+- COOL! [Wrangling Data Table Out Of the FBI 2017 IC3 Crime Report](https://rud.is/b/2018/05/08/wrangling-data-table-out-of-the-fbi-2017-ic3-crime-report/)
+- [Beautiful and Powerful Correlation Tables in R(https://neuropsychology.github.io/psycho.R//2018/05/20/correlation.html)
+- [openrouteservice – geodata!](https://aghaynes.wordpress.com/2018/05/19/openrouteservice-geodata/)
+
+# 18.05.2018
+## R
+- COOL `group_by_at` [dplyr group by colnames described as vector of strings](https://stackoverflow.com/questions/47912107/dplyr-group-by-colnames-described-as-vector-of-strings)
+- COOL [Update Programming with dpyr article to reference group_by_at ? {#3114}](https://github.com/tidyverse/dplyr/issues/3114)
+- [19.6.2 Writing pipeable functions](http://r4ds.had.co.nz/functions.html)
+
+
+# 16.05.2018
+## R
+- COOL! [icon: web icons for rmarkdown](https://ropensci.org/technotes/2018/05/15/icon/)
+- [Workaround for tidyr::spread with duplicate row identifiers](https://www.daeconomist.com/post/2018-05-15-spread/)
+
+# 15.05.2018
+## R
+- COOL! [RStudio:addins part 2 - roxygen documentation formatting made easy](https://jozefhajnala.gitlab.io/r/r102-addin-roxytags/)
+- [Tips for Ellipse Summary Plot](https://tomizonor.wordpress.com/2018/05/13/tips-for-ellipse-summary-plot/)
+- [VISUALIZING GRAPHS WITH OVERLAPPING NODE GROUPS](https://datascience.blog.wzb.eu/2018/05/11/visualizing-graphs-with-overlapping-node-groups/)
+- [Mimicking SQLDF with MonetDBLite](https://statcompute.wordpress.com/2018/05/09/mimicking-sqldf-with-monetdblite/)
+- [sparklyr 0.8](https://blog.rstudio.com/2018/05/14/sparklyr-0-8/)
+- [rquery: Relational Query Generator for Data Manipulation at Scale](https://cran.r-project.org/web/packages/rquery/index.html)
+A 'SQL' query generator based on Edgar F. Codd's relational algebra and experience using 'SQL' and 'dplyr' at big data scale. The design represents an attempt to make 'SQL' more teachable by denoting composition by a sequential pipeline notation instead of nested queries or functions. The implementation delivers reliable high performance data processing on large data systems such as ‘Spark' and databases. Package features include: data processing trees or pipelines as observable objects (able to report both columns produced and columns used), optimized ’SQL' generation as an explicit user visible modeling step, and convenience methods for applying query trees to in-memory 'data.frame's.
+- [ArgumentCheck: Improved Communication to Users with Respect to Problems in Function Arguments](https://cran.r-project.org/web/packages/ArgumentCheck/)
+- COOL! [Programming with R. Creating Functions](https://swcarpentry.github.io/r-novice-inflammation/02-func-R/)
+
+# 10.05.2018
+## R
+- COOL! [Creating new data with max values for each subject](https://webbedfeet.netlify.com/post/creating-new-data-with-max-values-for-each-subject-2/)
+- COOL! [Tidying messy Excel data (tidyxl)](https://webbedfeet.netlify.com/post/tidying-messy-excel-data-tidyxl/)
+	- [unpivotr](https://nacnudus.github.io/unpivotr/index.html). unpivotr deals with non-tabular data, especially from spreadsheets.
+	- [tidyxl](https://nacnudus.github.io/tidyxl/). tidyxl imports non-tabular data from Excel files into R.
+- Как поставить пакеты в R, если есть проблемы с https сертификатами. Выдает ошибку:
+```
+Warning messages:
+1: In download.file(url, destfile = f, quiet = TRUE) :
+ URL 'https://cran.r-project.org/CRAN_mirrors.csv': status was 'Peer certificate cannot be authenticated with given CA certificates'
+2: package ‘httr’ is not available (for R version 3.4.4) 
+```
+решил вопрос путем обхода секьюрности флагами: `install.packages("httr", method="wget", extra="--no-check-certificate")`
+
 # 07.05.2018
 ## R
 - [ggridges: Ridgeline Plots in 'ggplot2'](https://cran.r-project.org/web/packages/ggridges/index.html)
@@ -238,7 +388,10 @@ curl -kO https://cran.r-project.org/src/contrib/Cairo_1.5-8.tar.gz
 R CMD INSTALL Cairo_1.5-8.tar.gz
 ```
 - [Secure Package Downloads for R](https://support.rstudio.com/hc/en-us/articles/206827897-Secure-Package-Downloads-for-R)
-- COOL!! Грубое решение: `install.packages("httr", method="wget", extra="--no-check-certificate")`. Устанавливаем параметры для `download.file`
+- COOL!! Грубое решение: `install.packages("httr", method="wget", extra="--no-check-certificate")`. Устанавливаем параметры для `download.file`. Обновление делаем командой `update.packages(ask=FALSE, method="wget", extra="--no-check-certificate")`
+- В случае проблемы с сертификатами напрямую из RStudio clone проекта также не получается сделать. Надо обходить через командную строку:
+`git -c http.sslVerify=false clone https://gitlab.com/repo.git <dir>` (решение найдено здесь:[SSL certificate rejected trying to access GitHub over HTTPS behind firewall](https://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall)).
+Можно потом в конфиг этого репозитория отключить `git config http.sslVerify false`
 
 # 25.04.2018
 ## R
@@ -720,6 +873,14 @@ The imputeTS package specializes on (univariate) time series imputation. It offe
 YES - it means it will handle all the incomming requests in parallel - each request in a separate fork.
 - [Integrating R with production systems using an HTTP API](http://blog.revolutionanalytics.com/2014/08/using-r-inside-the-enterprise-integration-with-existing-systems.html). August 19, 2014. читаю тут в интернетах какие best practice для деплоя микросервисов с R-бэкэндом. Все такие plumber, opencpu и тд отдыхают. Ниболее production-ready это Rserve + http сервер на ваш вкус.
 - COOL! bit64 package
+- [R package: future: Unified Parallel and Distributed Processing in R for Everyone](https://github.com/HenrikBengtsson/future)
+- [An example of how to use the new R promises package](https://appsilondatascience.com/blog/rstats/2017/11/01/r-promises-hands-on.html)
+- [A Future for R: Slides from useR 2016](https://www.jottr.org/2016/07/02/future-user2016-slides/)
+- Logging in parallel:
+	- [How to log using futile logger from within a parallel method in R?](https://stackoverflow.com/questions/20930112/how-to-log-using-futile-logger-from-within-a-parallel-method-in-r)
+	- [How to log when using foreach (print or futile.logger)](https://stackoverflow.com/questions/38828344/how-to-log-when-using-foreach-print-or-futile-logger)
+	- [Printing from mclapply in R Studio](https://stackoverflow.com/questions/17345837/printing-from-mclapply-in-r-studio)
+	- [For troubleshooting, you can get more details on what's going on under the hood by setting `option(future.debug = TRUE)`.](https://stackoverflow.com/questions/48131779/execution-of-future-package-in-r-results-in-an-endless-waiting-time)
 
 
 # 19.02.2018
@@ -1157,7 +1318,6 @@ Create data summaries for quality control, extensive reports for exploring data,
 - COOL! [Let it flow, let it flow, let it flow......](https://johnmackintosh.com/2017-12-21-flow/) Animating dot plots to demonstrate patient flow
 - [Data discretization made easy with funModeling](https://blog.datascienceheroes.com/data-discretization-made-easy-with-funmodeling/)
 - [Building a Hacker News scraper with 8 lines of R code using rvest library](https://datascienceplus.com/building-a-hacker-news-scraper-with-8-lines-of-r-code-using-rvest-library/)
-- [Make your own color palettes with paletti](https://edwinth.github.io/blog/paletti/)
 
 # 21.12.2017
 ## R

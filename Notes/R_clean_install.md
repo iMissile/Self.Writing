@@ -30,6 +30,15 @@ sudo yum -y install texlive-cyrillic texlive-collection-langcyrillic texlive-cyr
 sudo -i R
 update.packages(ask=FALSE)
 
+- Как поставить пакеты в R, если есть проблемы с https сертификатами. Выдает ошибку:
+```
+Warning messages:
+1: In download.file(url, destfile = f, quiet = TRUE) :
+ URL 'https://cran.r-project.org/CRAN_mirrors.csv': status was 'Peer certificate cannot be authenticated with given CA certificates'
+2: package ‘httr’ is not available (for R version 3.4.4) 
+```
+решил вопрос путем обхода секьюрности флагами: `install.packages("httr", method="wget", extra="--no-check-certificate")`
+
 При установке пакетов под root (для всех) запускаем R от рута `sudo -i R` и прогоняему установку
 ================== В консоли R
 После установки библиотек ищем расположение h файлов следующей командой `find . -type f -name udunits2.h` и запускаем инсталляцию с параметрами:
