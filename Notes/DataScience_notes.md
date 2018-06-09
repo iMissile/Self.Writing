@@ -165,6 +165,67 @@ Survival analysis is long-established within actuarial science but infrequently 
 	- COOL! [How do I combine aes() and aes_string() options](https://stackoverflow.com/questions/28777626/how-do-i-combine-aes-and-aes-string-options)
 - dplyr & operator ~ (tilde). NSE = [non-standard evaulation](http://cran.r-project.org/web/packages/dplyr/vignettes/nse.html)
 - [Non-standard evaluation](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
+- COOL! [Mara's tidyeval resource roundup](https://maraaverick.rbind.io/2017/08/tidyeval-resource-roundup/)
+- [Theory free tidyeval](https://www.johnmackintosh.com/2018-02-19-theory-free-tidyeval/). Getting our feet wet with dplyr programming
+
+# 09.06.2018
+## General
+- [Stackify Retrace](Get More Insights with Integrated Logging & Code Profiling). Get More Insights with Integrated Logging & Code Profiling
+- [Commandline](http://www.commandline.co.uk/). Free open source software. Cmdow/Mtee/Batch Function Library.
+- [zarunbal/LogExpert](https://github.com/zarunbal/LogExpert). Windows tail program and log file analyzer.
+
+## R
+- COOL! [Interactive Linking of Text and Visualizations](http://vti-example.fbeck.com/). [Статья](https://www.vis.wiwi.uni-due.de/uploads/tx_itochairt3/publications/vti_euvis2018.pdf)
+- [Mara Averick Twitter](https://twitter.com/dataandme)
+- [Custom snippets in RStudio: ⚡ faster tweet chunks for all](https://maraaverick.rbind.io/2017/09/custom-snippets-in-rstudio-faster-tweet-chunks-for-all/)
+- [Designing the nteract Data Explorer](https://blog.nteract.io/designing-the-nteract-data-explorer-f4476d53f897)
+- COOL! [Open  Access VIS](http://oavis.steveharoz.com/). A collection of open access visualization research at the VIS 2017 conference. Info about the symbols and open access. To edit the data, see GitHub.
+- COOL! [An introduction to data cleaning with R](https://cran.r-project.org/doc/contrib/de_Jonge+van_der_Loo-Introduction_to_data_cleaning_with_R.pdf)
+- [How to get the name of the calling function inside the called routine?](https://stackoverflow.com/questions/15595478/how-to-get-the-name-of-the-calling-function-inside-the-called-routine)
+For the record, as Hadley has suggested, you can use `sys.call()`. For example:
+```
+funx = function(...) {
+    callingFun = as.list(sys.call(-1))[[1]]
+    calledFun = as.list(sys.call())[[1]]
+    message(paste(callingFun, " is calling ", calledFun, sep=""))
+}
+```
+Важное продолжение: [Converting language type to string in R using infix notation](https://stackoverflow.com/questions/33496319/converting-language-type-to-string-in-r-using-infix-notation)
+```
+typeof(someExpr[[3]])
+[1] "language"
+```
+!!!!! You can use `deparse`:
+```
+someExpr <- substitute(a+2*b)
+result<-deparse(someExpr[[3]])
+result
+[1] "2 * b"
+
+str(result)
+chr "2 * b"
+```
+
+# 06.06.2018
+## R
+- [In R, how to get an object's name after it is sent to a function?](https://stackoverflow.com/questions/10520772/in-r-how-to-get-an-objects-name-after-it-is-sent-to-a-function)
+- [Creating zip file from folders in R](https://stackoverflow.com/questions/23668395/creating-zip-file-from-folders-in-r)
+- COOL! [Database bulk update and inline editing in a Shiny Application](https://www.mango-solutions.com/blog/database-bulk-update-and-inline-editing-in-shiny-application)
+
+## DS
+- [An introduction to machine learning with Keras in R](https://theoreticalecology.wordpress.com/2018/06/06/an-introduction-to-machine-learning-with-keras-in-r/)
+- CLASSIFICATION FROM SCRATCH]
+	- [OVERVIEW 0/8](https://freakonometrics.hypotheses.org/52731)
+	- [LOGISTIC REGRESSION 1/8](https://freakonometrics.hypotheses.org/52747)
+	- [LOGISTIC WITH SPLINES 2/8](https://freakonometrics.hypotheses.org/52771)
+	- [LOGISTIC WITH KERNELS 3/8](https://freakonometrics.hypotheses.org/52815)
+	- [PENALIZED RIDGE LOGISTIC 4/8](https://freakonometrics.hypotheses.org/52773)
+	- [PENALIZED LASSO LOGISTIC 5/8](https://freakonometrics.hypotheses.org/52894)
+	- [NEURAL NETS 6/8](https://freakonometrics.hypotheses.org/52774)
+	- [SVM 7/8](https://freakonometrics.hypotheses.org/52775)
+	- [LINEAR DISCRIMINATION 8/8](https://freakonometrics.hypotheses.org/53021)
+	- [TREES 9/8](https://freakonometrics.hypotheses.org/52776)
+	- [BAGGING AND FORESTS 10/8](https://freakonometrics.hypotheses.org/52777)
 
 # 04.06.2018
 ## R
@@ -219,6 +280,9 @@ Survival analysis is long-established within actuarial science but infrequently 
 - [choroplethr](https://github.com/arilamstein/choroplethr) simplifies the creation of choropleths (thematic maps) in R
 	- choroplethr. [New Version of ggplot2](https://arilamstein.com/blog/2018/05/30/new-version-of-ggplot2/)
 	- [A Shiny app to demonstrate the datasets that ship with choroplethr v3.1.0](https://github.com/arilamstein/choroplethr-3-1-0-shiny-app)
+- COOL! [A comprehensive survey of the types of things in R. 'mode' and 'class' and 'typeof' are insufficient](https://stackoverflow.com/questions/8855589/a-comprehensive-survey-of-the-types-of-things-in-r-mode-and-class-and-type)
+- COOL! [How to repeat a String N times in R?](How to repeat a String N times in R?)
+
 
 # 30.05.2018
 ## R
@@ -431,6 +495,7 @@ saveRDS(pkgs, "pkgs.Rds")
 ## DS
 - ODS блог. [Ассоциативные правила, или пиво с подгузниками](https://habrahabr.ru/company/ods/blog/353502/)
 - [Почему расчет перцентилей работает не так как вы ожидаете?](https://habrahabr.ru/post/274303/)
+- [yahoo/kafka-manager](https://github.com/yahoo/kafka-manager) A tool for managing Apache Kafka.
 
 # 18.04.2018
 ## R
