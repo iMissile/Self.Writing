@@ -168,6 +168,16 @@ Survival analysis is long-established within actuarial science but infrequently 
 - COOL! [Mara's tidyeval resource roundup](https://maraaverick.rbind.io/2017/08/tidyeval-resource-roundup/)
 - [Theory free tidyeval](https://www.johnmackintosh.com/2018-02-19-theory-free-tidyeval/). Getting our feet wet with dplyr programming
 
+# 17.06.2018
+## R & DS
+- COOL! [Statistics for Hackers](http://christopherroach.com/articles/statistics-for-hackers/)
+- COOL! Вторая редакция книги Хадли. [Advanced R](https://adv-r.hadley.nz/evaluation.html)
+- [Build httr Functions Automagically from Manual Browser Requests with the middlechild Package](https://rud.is/b/2018/06/15/build-httr-functions-automagically-from-manual-browser-requests-with-the-middlechild-package/)
+- [Prediction Interval, the wider sister of Confidence Interval](https://datascienceplus.com/prediction-interval-the-wider-sister-of-confidence-interval/)
+- [Version 0.6-11 of NIMBLE released](https://r-nimble.org/version-0-6-11-of-nimble-released)
+- [It's that easy! Image classification with keras in roughly 100 lines of code](https://shirinsplayground.netlify.com/2018/06/keras_fruits/)
+
+
 # 09.06.2018
 ## General
 - [Stackify Retrace](Get More Insights with Integrated Logging & Code Profiling). Get More Insights with Integrated Logging & Code Profiling
