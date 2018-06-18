@@ -168,6 +168,53 @@ Survival analysis is long-established within actuarial science but infrequently 
 - COOL! [Mara's tidyeval resource roundup](https://maraaverick.rbind.io/2017/08/tidyeval-resource-roundup/)
 - [Theory free tidyeval](https://www.johnmackintosh.com/2018-02-19-theory-free-tidyeval/). Getting our feet wet with dplyr programming
 
+# 15.06.2018
+## R
+- ряд полезных функций: `stringi::stri_trim_both`, `stringr::str_squish()`, `rlang::squash_chr()`
+- ["Busy..." / "Done!" / "Error" feedback after pressing a button](https://github.com/daattali/advanced-shiny/tree/master/busy-indicator)
+- Infosec. [toolsmith #133 - Anomaly Detection & Threat Hunting with Anomalize](https://holisticinfosec.blogspot.com/2018/06/toolsmith-133-anomaly-detection-threat.html)
+- [Generate a set of random unique integers from an interval](https://stackoverflow.com/questions/17773080/generate-a-set-of-random-unique-integers-from-an-interval)
+
+# 14.06.2018
+## R
+- [Anomaly Detection for Business Metrics with R](https://analyzecore.com/2018/06/13/anomaly-detection-for-business-metrics-with-r/)
+- [rstudio/DT. async support {#543} Open](https://github.com/rstudio/DT/issues/543)
+- [Mixed Models with Adaptive Gaussian Quadrature](https://iprogn.blogspot.com/2018/06/mixed-models-with-adaptive-gaussian.html)
+- [reticulate – another step towards a multilingual and collaborative way of working](https://blog.eoda.de/2018/06/14/reticulate-another-step-towards-a-multilingual-and-collaborative-way-of-working/)
+
+## DS
+- [Практические аспекты машинного обучения](https://www.osp.ru/os/2016/01/13048648/)
+- [Introduction to Local Interpretable Model-Agnostic Explanations (LIME)](https://www.oreilly.com/learning/introduction-to-local-interpretable-model-agnostic-explanations-lime)
+
+# 13.06.2018
+## Apache Kafka, Tarantool, etc.
+- [Apache Kafka и миллионы сообщений в секунду](https://habr.com/company/tinkoff/blog/342892/)
+	1. Нет потребителей — скорость падает. 
+Если новые сообщения тут же никто не забирает, они сохраняются на диск. А это очень дорогая операция. Поэтому если потребители внезапно отключились или “залагали”, пропускная скорость упадет.
+	2. Чем больше размер сообщения, тем выше пропускная способность
+- [Инструментарий специалиста по большим данным: Apache Kafka](http://datareview.info/article/instrumentariy-spetsialista-po-bolshim-dannyim-apache-kafka/)
+- [Tarantool: как сэкономить миллион долларов на базе данных на высоконагруженном проекте](https://habr.com/company/oleg-bunin/blog/310690/). Материал старый, но подробно объясняет идеологию решения.
+- [Building a Kafka and Spark Streaming pipeline - Part I](https://tlfvincent.github.io//2016/09/25/kafka-spark-pipeline-part-1/)
+
+## R
+- [The Popularity of Point-and-Click GUIs for R](http://r4stats.com/2018/06/12/gui-popularity/)
+	- [Rattle](https://rattle.togaware.com/)
+	- [R commander (Rcmdr)](http://www.rcommander.com/)
+	- [BlueSky](http://www.blueskystatistics.com/). Fully featured Statistics application and development framework built on the open source R project
+- [The ssh Package: Secure Shell (SSH) Client for R](https://ropensci.org/technotes/2018/06/12/ssh-02/)
+- [Merging spatial buffers in R](https://aghaynes.wordpress.com/2018/06/11/merging-spatial-buffers-in-r/)
+- [Anomaly Detection in R](https://r-posts.com/anomaly-detection-in-r/)
+- [MODIStsp v. 1.3.4 is out ! Now allowing interactive definition of processing extent!](https://lbusett.netlify.com/post/modistsp-v-1-3-4-is-out-now-allowing-interactive-definition-of-processing-extent/). MODIStsp is a “R” package devoted to automatizing the creation of time series of raster images derived from MODIS Land Products data. MODIStsp allows to perform several preprocessing steps (e.g., download, mosaicing, reprojection, resize, data extraction) on MODIS data available within a given time period. Users have the ability to select which specific layers of the original MODIS HDF files they want to process. They also can select which additional Quality Indicators should be extracted from the aggregated MODIS Quality Assurance layers and, in the case of Surface Reflectance products, which Spectral Indexes should be computed from the original reflectance bands.
+- [Create outstanding dashboards with the new semantic.dashboard package](https://appsilondatascience.com/blog/rstats/2018/06/11/dashboard-tutorial.html)
+- Весьма наглядно. [Why loops are slow in R](https://privefl.github.io/blog/why-loops-are-slow-in-r/)
+- [Customizing time and date scales in ggplot2](https://www.statworx.com/de/blog/customizing-time-and-date-scales-in-ggplot2/)
+- [Top Tip: Don't keep your data prep in the same project as your Shiny app](https://www.mango-solutions.com/blog/top-tip-don-t-keep-your-data-prep-in-the-same-project-as-your-shiny-app)
+- Clustering
+	- [K-Means Clustering in R Tutorial](https://www.datacamp.com/community/tutorials/k-means-clustering-r)
+	- [Articles - Partitioning Clustering Essentials. K-Means Clustering Essentials](http://www.sthda.com/english/articles/27-partitioning-clustering-essentials/87-k-means-clustering-essentials/)
+	- [Articles - Cluster Analysis in R: Practical Guide. Clustering Example: 4 Steps You Should Know](http://www.sthda.com/english/articles/25-cluster-analysis-in-r-practical-guide/108-clustering-example-4-steps-you-should-know/)
+	- [How to produce a pretty plot of the results of k-means cluster analysis?](https://stats.stackexchange.com/questions/31083/how-to-produce-a-pretty-plot-of-the-results-of-k-means-cluster-analysis)
+
 # 09.06.2018
 ## General
 - [Stackify Retrace](Get More Insights with Integrated Logging & Code Profiling). Get More Insights with Integrated Logging & Code Profiling
@@ -3034,7 +3081,7 @@ According to @yihue you cannot merge cells in datatables: github.com/rstudio/DT/
 
 # 31.08.2017
 ## R & Excel
-- Использует `rJava`. [R xlsx package : A quick start guide to manipulate Excel files in R](http://www.sthda.com/english/wiki/r-xlsx-package-a-quick-start-guide-to-manipulate-excel-files-in-r)
+- Использует `rJava`. [R xlsx package : A quick start guide to manipulate Excel files in R](http://www.sthda.com/english/wiki/r-xlsx-package-a-quick-start-guide-to-manipulate-excel-files-in-r). При проблеме с установкой пакет используем трюк `install.packages("xlsx", INSTALL_opts = "--no-multiarch")`
 - COOL! Хороший обзор существующих методов. [r2excel: Read, write and format easily Excel files using Rsoftware](http://www.sthda.com/english/wiki/r2excel-read-write-and-format-easily-excel-files-using-r-software)
 - [openxlsx: Read, Write and Edit XLSX Files](https://cran.r-project.org/web/packages/openxlsx/index.html). 
 Simplifies the creation of Excel .xlsx files by providing a high level interface to writing, styling and editing worksheets. Through the use of 'Rcpp', read/write times are comparable to the 'xlsx' and 'XLConnect' packages with the added benefit of removing the dependency on Java.
