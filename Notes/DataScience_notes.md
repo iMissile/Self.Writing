@@ -168,6 +168,72 @@ Survival analysis is long-established within actuarial science but infrequently 
 - COOL! [Mara's tidyeval resource roundup](https://maraaverick.rbind.io/2017/08/tidyeval-resource-roundup/)
 - [Theory free tidyeval](https://www.johnmackintosh.com/2018-02-19-theory-free-tidyeval/). Getting our feet wet with dplyr programming
 
+
+# 19.06.2018
+## R
+- [Not only LIME. DALEX package](http://smarterpoland.pl/index.php/2018/06/not-only-lime/)
+- [bounceR 0.1.2: Automated Feature Selection](https://www.statworx.com/de/blog/data-science/bouncer-0-1-2-automated-feature-selection/)
+- [Most Starred R Packages on GitHub](https://stevenmortimer.com/most-starred-r-packages-on-github/). Published June 18, 2018
+- [Prediction Interval, the wider sister of Confidence Interval](https://datascienceplus.com/prediction-interval-the-wider-sister-of-confidence-interval/)
+
+# 18.06.2018
+## DS
+- [Andrej Karpathy](https://medium.com/@karpathy). Director of AI at Tesla. Previously Research Scientist at OpenAI and PhD student at Stanford. I like to train deep neural nets on large datasets.
+- The Asimov Institute. [THE NEURAL NETWORK ZOO](http://www.asimovinstitute.org/neural-network-zoo/)
+- COOL! [10 steps to bootstrap your machine learning project (part 1)](https://blog.metaflow.fr/10-steps-to-bootstrap-your-machine-learning-project-part-1-aa7e1031f5b1)
+Just split your dataset into three groups: the training set, the dev (or cross validation) set and the test set. A classic split is 70%, 15% and 15% of your whole dataset.
+- [10 steps to bootstrap your machine learning project (part 2)](https://blog.metaflow.fr/10-steps-to-bootstrap-your-machine-learning-project-part-2-b6be78444c70)
+- [Bootstrapping in R – Bootstrap Resampling and Examples](https://data-flair.training/blogs/bootstrapping-in-r/)
+
+- [Kaggle: История о том как мы учились предсказывать релевантность поисковых запросов и заняли 3-е место](https://habr.com/post/305026/)
+- [Как победить в соревновании на Kaggle. Советы Data Scientist-a](https://dev.by/lenta/indata-labs/kak-pobedit-v-sorevnovanii-na-kaggle-sovety-data-scientist-a)
+
+## ЕГАИС
+- [Поддельный алкоголь. Как не испортить праздник](https://journal.tinkoff.ru/kutezh/)
+- [ЕГАИС. Информационный портал](http://egais2016.ru/)
+- [Код алкогольной продукции в ЕГАИС. Классификатор видов алкогольной продукции](https://businessman.ru/kod-alkogolnoy-produktsii-v-egais-klassifikator-vidov-alkogolnoy-produktsii.html)
+- [ЕГАИС: код алкогольной продукции из штрихкода акцизной марки](https://infostart.ru/public/456403/)
+- [Приказ № 33н от 12 мая 2010 г. "Об утверждении перечня сведений о маркируемой алкогольной продукции, наносимых на федеральные специальные марки и считываемых с использованием технических средств..."](http://www.fsrar.ru/legalacts/base/orders/prikaz--n-ot--maya--g--ob-utverzhdenii-perechnya-s)
+- [Проверка алкоголя по акцизной марке онлайн через ЕГАИС](http://znaybiz.ru/licenzirovanie/otdelnye-vidy-deatelnosti/akcizy/proverka-alkogolya-po-akciznoj-marke-onlajn-egais.html)
+- [ЕГАИС - узнать информацию о товаре](https://www.forum.mista.ru/topic.php?id=788655)
+- [Base-36 converter](http://extraconversion.com/base-number/base-36)
+Base 36 or hexatridecimal is a positional numeral system using 36 as the radix. The choice of 36 is convenient in that the digits can be represented using the Arabic numerals 0-9 and the Latin letters A-Z. Plural name is base-36.
+```
+А давайте обсудим детали...
+И так, имеем Приказ № 33н от 12 мая 2010 года (http://www.fsrar.ru/legalacts/base/orders/prikaz--n-ot--maya--g--ob-utverzhdenii-perechnya-s)
+в котором сказано что:
+Символы   Сведения
+2   Версия ПС ЕГАИС
+17  специальный идентификатор (тот самый алкокод только в формате base36)
+12  Номер и дата заявки
+6   Номер марки в заявке
+31  Контрольная группа
+
+
+с этим всё понятно. в итоге мы можем получить от 15-и до 19-и знаков (строку) АлкоКода
+теоретически длина добивается нулями спереди до 19 знаков, если тот меньше получился
+но вот лично для меня стало неожиданностью когда я увидел в базе ЕГАИС (через ЛК смотрел)
+именно 15, 17, 18, 19-значные АлкоКоды у продукции (т.е. без добавления нулей спереди)
+мне интересен алгоритм получения такого кода из считанной марки с бутылки.
+вся соль заключается в том что где та граница, где стоит добавлять нули спереди, а где нет.
+```
+
+# 17.06.2018
+## R & DS
+- [Jake VanderPlas](http://vanderplas.com/speaking.html)
+	- COOL! [Statistics for Hackers](http://christopherroach.com/articles/statistics-for-hackers/)
+- [“Resampling: The New Statistics”](http://www.resample.com/intro-text-online/) by Julian L. Simon
+- COOL! Вторая редакция книги Хадли. [Advanced R](https://adv-r.hadley.nz/evaluation.html)
+- [Build httr Functions Automagically from Manual Browser Requests with the middlechild Package](https://rud.is/b/2018/06/15/build-httr-functions-automagically-from-manual-browser-requests-with-the-middlechild-package/)
+- COOL! [mitmproxy is a free and open source interactive HTTPS proxy.](https://mitmproxy.org/)
+	- [ropenscilabs/middlechild. R interface to MITM](https://github.com/ropenscilabs/middlechild)
+	- [How To: Use mitmproxy to read and modify HTTPS traffic](https://blog.heckel.xyz/2013/07/01/how-to-use-mitmproxy-to-read-and-modify-https-traffic-of-your-phone/)
+	- [Debugging Mobile Apps with mitmproxy](https://medium.com/sean3z/debugging-mobile-apps-with-mitmproxy-4596e56b3da2)
+- [Prediction Interval, the wider sister of Confidence Interval](https://datascienceplus.com/prediction-interval-the-wider-sister-of-confidence-interval/)
+- [Version 0.6-11 of NIMBLE released](https://r-nimble.org/version-0-6-11-of-nimble-released)
+- [It's that easy! Image classification with keras in roughly 100 lines of code](https://shirinsplayground.netlify.com/2018/06/keras_fruits/)
+- [The Statistical Bootstrap and Other Resampling Methods](http://www.burns-stat.com/documents/tutorials/the-statistical-bootstrap-and-other-resampling-methods-2/)
+
 # 15.06.2018
 ## R
 - ряд полезных функций: `stringi::stri_trim_both`, `stringr::str_squish()`, `rlang::squash_chr()`
