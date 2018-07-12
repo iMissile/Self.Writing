@@ -168,16 +168,183 @@ Survival analysis is long-established within actuarial science but infrequently 
 - COOL! [Mara's tidyeval resource roundup](https://maraaverick.rbind.io/2017/08/tidyeval-resource-roundup/)
 - [Theory free tidyeval](https://www.johnmackintosh.com/2018-02-19-theory-free-tidyeval/). Getting our feet wet with dplyr programming
 
+# 12.07.2018
+## R
+- [{ggplot2} Welcome viridis !](https://rtask.thinkr.fr/blog/ggplot2-welcome-viridis/)
+- [Our Package template to design a prod-ready Shiny application](https://rtask.thinkr.fr/blog/our-shiny-template-to-design-a-prod-ready-app/)
+- [{How-to} Share content between several R6 instances](https://rtask.thinkr.fr/blog/share-content-between-several-r6-instances/)
+- [Dockerise and deploy your own R Archive Repo](https://rtask.thinkr.fr/blog/dockerise-and-deploy-your-own-r-archive-repo/)
+- liftr. [A Quick Introduction to liftr](https://cran.r-project.org/web/packages/liftr/vignettes/liftr-intro.html)
+- [Handling Strings with R](http://www.gastonsanchez.com/r4strings/) by Gaston Sanchez, 2018-04-19
+- [rocker](http://dirk.eddelbuettel.com/blog/code/rocker/)
+
+
+
+# 11.07.2018
+## R
+- COOL! [drake: A Pipeline Toolkit for Reproducible Computation at Scale](https://cran.r-project.org/web/packages/drake/index.html)
+- COOL! [r2d3: Interface to 'D3' Visualizations](https://cran.r-project.org/web/packages/r2d3/index.html)
+- COOL! [A paging input for R/Shiny applications](https://github.com/wleepang/shiny-pager-ui)
+- [shiny reimagined with bootstrap 4 https://nteetor.github.io/dull](https://github.com/nteetor/dull)
+- COOL! [merlinoa/shinyFeedback](https://github.com/merlinoa/shinyFeedback). R package for displaying user feedback next to Shiny inputs
+- [Advantages of Using R Notebooks For Data Analysis Instead of Jupyter Notebooks](http://minimaxir.com/2017/06/r-notebooks/)
+- [Top 5 Alternatives to Jupyter Notebook](https://analyticsindiamag.com/top-5-alternatives-jupyter-notebook/)
+- [packagefinder: Comfortable Search for R Packages on CRAN](https://cloud.r-project.org/web/packages/packagefinder/index.html)
+- COOL! [Build awesome dashboards with shiny](https://divadnojnarg.github.io/blog/awesomedashboards/)
+- [Gentelella Shiny](http://code.markedmondson.me/gentelellaShiny/). This is an R Shiny HTML Template version of the gentelella bootstrap theme.
+- [Discussion: when is Shiny a good choice vs when is it not the right tool for the job?](https://community.rstudio.com/t/discussion-when-is-shiny-a-good-choice-vs-when-is-it-not-the-right-tool-for-the-job/707)
+- COOL [Comparison with R / R libraries](https://pandas.pydata.org/pandas-docs/stable/comparison_with_r.html)
+- [ficonsulting/RInno](https://github.com/ficonsulting/RInno). How to install local shiny apps
+
+## DS
+- [Regex was taking 5 days to run. So I built a tool that did it in 15 minutes.](https://medium.freecodecamp.org/regex-was-taking-5-days-flashtext-does-it-in-15-minutes-55f04411025f)
+- [Back-Propagation is very simple. Who made it Complicated ?](https://medium.com/@14prakash/back-propagation-is-very-simple-who-made-it-complicated-97b794c97e5c)
+- COOL! [RethinkDB. The open-source database for the realtime web](https://www.rethinkdb.com/)
+- COOL! [22 Free and Open Source Data Visualization Tools to Grow Your Business](https://blog.capterra.com/free-and-open-source-data-visualization-tools/)
+- Отличное русскоязычное сообщество: [Big Data Russia](https://vk.com/big_data_russia)
+- [Stack Overflow: Kotlin, R and TypeScript among least disliked programming languages](https://jaxenter.com/kotlin-among-least-disliked-languages-138544.html)
+- [Язык программирования R для статистических вычислений](https://vk.com/rstatistics)
+
+
+# 09.07.2018
+## R
+- [Speed up your R Work](http://www.win-vector.com/blog/2018/07/speed-up-your-r-work/)
+- [Dealing with heteroskedasticity; regression with robust standard errors using R](http://www.brodrigues.co/blog/2018-07-08-rob_stderr/)
+- [Connecting R to PostgreSQL on Linux](https://www.nielsenmark.us/2018/07/07/connecting-r-to-postgresql-on-linux/)
+- [New package 'packagefinder' - Search for packages from the R console](https://topics-in-r.blogspot.com/2018/07/new-package-packagefinder.html)
+- [CONVEX REGRESSION MODEL](https://freakonometrics.hypotheses.org/53384)
+- COOL! [LIFE (EXPECTANCY), ANIMATED](https://nowosad.github.io/post/life-expectancy-animated/)
+- [Survey your audience and visualise the results with R and Google forms](http://www.seascapemodels.org/rstats/2018/07/05/survey-your-audience.html)
+- [New rWind release on CRAN! (v1.0.2)](https://allthiswasfield.blogspot.com/2018/07/new-rwind-v102-release-on-cran.html)
+- COOL! [infer R Package](http://infer.netlify.com/). The objective of this package is to perform statistical inference using an expressive statistical grammar that coheres with the tidyverse design framework.
+- [CRISP-DM – a Standard Methodology to Ensure a Good Outcome](https://www.datasciencecentral.com/profiles/blogs/crisp-dm-a-standard-methodology-to-ensure-a-good-outcome)
+
+
+# 02.07.2018
+## R
+- COOL! [Forecast double seasonal time series with multiple linear regression in R](https://petolau.github.io/Forecast-double-seasonal-time-series-with-multiple-linear-regression-in-R/)
+- COOL! [Doing magic and analyzing seasonal time series with GAM (Generalized Additive Model) in R](https://petolau.github.io/Analyzing-double-seasonal-time-series-with-GAM-in-R/)
+- [modelDown: a website generator for your predictive models](http://smarterpoland.pl/index.php/2018/06/modeldown-a-website-generator-for-your-predictive-models/)
+- COOL! [Global Migration, animated with R](http://blog.revolutionanalytics.com/2018/06/global-migration-animated-with-r.html)
+- [Pushing Ordinary Least Squares to the limit with Xy()](https://www.statworx.com/de/blog/pushing-ordinary-least-squares-to-the-limit-with-xy/)
+- [A Comparative Review of the Rattle GUI for R](http://r4stats.com/2018/07/02/a-comparative-review-of-the-rattle-gui-for-r/)
+- COOL! [Factfulness: Building Gapminder Income Mountains](http://staff.math.su.se/hoehle/blog/2018/07/02/factfulness.html)
+- [Handling Outliers with R](https://madstatbr.wordpress.com/2018/07/02/handling-outliers-with-r/)
+
+
+# 27.06.2018
+## R, визуальный анализ датасетов
+- [Caret package e-book](http://topepo.github.io/caret/index.html). The caret package (short for _C_lassification _A_nd _RE_gression _T_raining) is a set of functions that attempt to streamline the process for creating predictive models.
+- COOL! [A primer on visual overview of data frame](https://towardsdatascience.com/visual-overview-of-the-data-frame-4c6186a69697)
+- [GGpairs, correlation values are not aligned](https://stackoverflow.com/questions/40540363/ggpairs-correlation-values-are-not-aligned)
+- COOL! [My favourite R package for: summarising data](https://dabblingwithdata.wordpress.com/2018/01/02/my-favourite-r-package-for-summarising-data/)
+	- `base::summary`
+	- `Hmisc::describe`
+	- `pastecs::stat.desc`
+	- `psych::describe` & `psych::describeBy`
+	- `skimr::skim`
+	- `summarytools::descr` & `summarytools::dfSummary`
+
+## R
+- [Running Python inside the RStudio Server IDE](https://www.mango-solutions.com/blog/running-python-inside-the-rstudio-server-ide)
+- [Re-referencing factor levels to estimate standard errors when there is interaction turns out to be a really simple solution](https://www.rdatagen.net/post/re-referencing-to-estimate-effects-when-there-is-interaction/)
+- COOL! [Package roomba](https://ropensci.org/blog/2018/06/26/roomba/). A package for tidying nested lists
+- [New R package flatxml: working with XML files as R dataframes](https://topics-in-r.blogspot.com/2018/06/new-r-package-flatxml-working-with-xml.html)
+- COOL! [package later. Schedule R Code to Be Executed Periodically in the Current R Session](https://yihui.name/en/2017/10/later-recursion/)
+- [Shiny 1.1.0: Scaling Shiny with async](https://blog.rstudio.com/2018/06/26/shiny-1-1-0/)
+ -[Combinations and permutations in R](https://davetang.org/muse/2013/09/09/combinations-and-permutations-in-r/)
+
+# 26.06.2018
+## DS
+- COOL! Весьма воодушевляющий пост (Andrej Karpathy, Director of AI at Tesla) [Software 2.0](https://medium.com/@karpathy/software-2-0-a64152b37c35)
+- [Using H2O Powered Machine Learning Algorithms in R & Exploratory](https://blog.exploratory.io/using-h2o-powered-machine-learning-algorithms-in-r-exploratory-9c514fddca8d)
+- COOL! [Spark ML to H2O Migration for Machine Learning in iyzico](https://iyzico.engineering/spark-ml-to-h2o-migration-for-machine-learning-in-iyzico-dcba86b8eab2)
+- [Understanding and Implementing CycleGAN in TensorFlow](https://hardikbansal.github.io/CycleGANBlog/)
+- Datacamp. [New Course: Marketing Analytics in R](https://www.datacamp.com/community/blog/marketing-analytics-r)
+
+## Кухня
+- http://chernovic.ru/, https://cookbooks.ru/
+
+# 25.06.2018
+## R
+- [Switching to blogdown, Netlify and Travis](https://lorenzwalthert.netlify.com/posts/getting-up-and-running-with-blogdown-netlify-and-travis/)
+- [Idle thoughts lead to R internals: how to count function arguments](https://nsaunders.wordpress.com/2018/06/22/idle-thoughts-lead-to-r-internals-how-to-count-function-arguments/)
+- [Creating Slopegraphs with R](https://datascienceplus.com/creating-slopegraphs-with-r/)
+- [A guide to working with character data in R](http://blog.revolutionanalytics.com/2018/06/handling-strings-with-r.html)
+- [future.apply - Parallelize Any Base R Apply Function](https://www.jottr.org/2018/06/23/future.apply_1.0.0/)
+- [A forecast ensemble benchmark](https://robjhyndman.com/hyndsight/benchmark-combination/)
+- [Forecasting my weight with R](http://www.brodrigues.co/blog/2018-06-24-fun_ts/)
+- [Extracting a Reference Grid of your Data for Machine Learning Models Visualization](https://neuropsychology.github.io/psycho.R//2018/06/25/refdata.html)
+- [Tidy forecasting in R](https://robjhyndman.com/seminars/isf-fable/). 19 June 2018. Presentation at the International Symposium on Forecasting, Boulder USA.
+- [r-lib/keyring](https://github.com/r-lib/keyring). Access the system credential store from R
+
+## Data Imputation
+- [Tutorial on 5 Powerful R Packages used for imputing missing values](https://www.analyticsvidhya.com/blog/2016/03/tutorial-powerful-packages-imputing-missing-values/)
+	- MICE
+	- Amelia
+	- missForest
+	- Hmisc
+	- mi
+	- imputeTS
+- [Imputation methods for time series data](https://stats.stackexchange.com/questions/261271/imputation-methods-for-time-series-data)
+- [CRAN Task View: Time Series Analysis](https://cran.r-project.org/web/views/TimeSeries.html). Maintainer: Rob J Hyndman
+
+# 20.06.2018
+## DS
+- COOL! [Gradient Boosting from scratch](https://medium.com/mlreview/gradient-boosting-from-scratch-1e317ae4587d)
+- COOL! [Understanding LSTM and its diagrams](https://medium.com/mlreview/understanding-lstm-and-its-diagrams-37e2f46f1714). LSTM = "Long Short Term Memory"
+- COOL! [What is the difference between Bagging and Boosting?](https://quantdare.com/what-is-the-difference-between-bagging-and-boosting/)
+- COOL! [What is the difference between test set and validation set?](https://stats.stackexchange.com/questions/19048/what-is-the-difference-between-test-set-and-validation-set)
+- [About Train, Validation and Test Sets in Machine Learning](https://towardsdatascience.com/train-validation-and-test-sets-72cb40cba9e7)
+- [How to split data into training/testing sets using sample function](https://stackoverflow.com/questions/17200114/how-to-split-data-into-training-testing-sets-using-sample-function)
+- COOL! Очень хорошие комментарии про применение различных методов "в бою". [АНАЛИЗ МАЛЫХ ДАННЫХ, КвазиНаучный блог Александра Дьяконова. Python: категориальные признаки](https://alexanderdyakonov.wordpress.com/2016/08/03/python-%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BA%D0%B8/)
+- [10 типов регрессии – какой выбрать?](http://datareview.info/article/10-tipov-regressii-kakoy-vyibrat/)
+- [Предсказываем будущее с помощью библиотеки Facebook Prophet](https://habr.com/company/ods/blog/323730/)
+- [Нестандартная кластеризация, часть 3: приёмы и метрики для кластеризации временных рядов](https://habr.com/post/334220/)
+- [Анализ временных рядов с помощью python](https://habr.com/post/207160/)
+- COOL! [How to choose Last-layer activation and loss function](https://www.dlology.com/blog/how-to-choose-last-layer-activation-and-loss-function/)
+- COOL! [The Keras Functional API: Five simple examples](http://www.puzzlr.org/the-keras-functional-api-five-simple-examples/)
+- [How to Use the Keras Functional API for Deep Learning](https://machinelearningmastery.com/keras-functional-api-deep-learning/)
+
+- [Predicting the price of wine with the Keras Functional API and TensorFlow](https://medium.com/tensorflow/predicting-the-price-of-wine-with-the-keras-functional-api-and-tensorflow-a95d1c2c1b03)
 
 # 19.06.2018
 ## R
 - [Not only LIME. DALEX package](http://smarterpoland.pl/index.php/2018/06/not-only-lime/)
 - [bounceR 0.1.2: Automated Feature Selection](https://www.statworx.com/de/blog/data-science/bouncer-0-1-2-automated-feature-selection/)
 - [Most Starred R Packages on GitHub](https://stevenmortimer.com/most-starred-r-packages-on-github/). Published June 18, 2018
+	- [r2d3: Interface to 'D3' Visualizations](https://cran.r-project.org/web/packages/r2d3/index.html)
+	- [goodpractice: Advice on R Package Building](https://cran.r-project.org/web/packages/goodpractice/index.html)
+	- [workflowr: A Framework for Reproducible and Collaborative Data Science](https://cran.r-project.org/web/packages/workflowr/)
+	- [furrr: Apply Mapping Functions in Parallel using Futures](https://cran.r-project.org/web/packages/furrr/index.html)
+	- [scico: Colour Palettes Based on the Scientific Colour-Maps](https://cran.r-project.org/web/packages/scico/index.html)
+	- [xtensor: Headers for the 'xtensor' Library](https://cran.r-project.org/web/packages/xtensor/index.html)
+	- [rtika: R Interface to 'Apache Tika'](https://cran.r-project.org/web/packages/rtika/index.html)
+	- [mindr: Convert Files Between Markdown or Rmarkdown Files and Mindmaps](https://cran.r-project.org/web/packages/mindr/index.html)
+	- [rngtools: Utility Functions for Working with Random Number Generators](https://cran.r-project.org/web/packages/rngtools/index.html)
+	- [gsubfn: Utilities for Strings and Function Arguments](https://cran.r-project.org/web/packages/gsubfn/index.html)
+	- [munsell: Utilities for Using Munsell Colours](https://github.com/cwickham/munsell/)
+- [smooth: Forecasting Using State Space Models](https://cran.r-project.org/web/packages/smooth/index.html)
 - [Prediction Interval, the wider sister of Confidence Interval](https://datascienceplus.com/prediction-interval-the-wider-sister-of-confidence-interval/)
+- [Removing attributes of columns in data.frames on multilevel lists in R](https://stackoverflow.com/questions/28873323/removing-attributes-of-columns-in-data-frames-on-multilevel-lists-in-r)
+
+## Time-series
+- [ts function in R {closed}](https://stats.stackexchange.com/questions/259979/ts-function-in-r)
+- [Time Series Analysis in R Part 1: The Time Series Object](https://datascienceplus.com/time-series-analysis-in-r-part-1-the-time-series-object/)
+- [Time Series Analysis in R Part 2: Time Series Transformations](https://datascienceplus.com/time-series-analysis-in-r-part-2-time-series-transformations/)
+- [Time Series Analysis in R Part 3: Getting Data from Quandl](https://datascienceplus.com/time-series-analysis-in-r-part-3-getting-data-from-quandl/)
+- [Manipulating Time Series Data in R with xts & zoo](https://rpubs.com/mohammadshadan/288218)
+- [Is it possible to merge two time series in one?](https://stackoverflow.com/questions/23944092/is-it-possible-to-merge-two-time-series-in-one)
+- [could not convert index to appropriate type while attempting to plot weekly ts object in dygraphs](https://stackoverflow.com/questions/29261855/could-not-convert-index-to-appropriate-type-while-attempting-to-plot-weekly-ts-o)
+```
+> head(index(dfts))
+[1] 2012.346 2012.365 2012.385 2012.404 2012.423 2012.442
+The index is numeric, while xts requires some type of date object, so you'll need to convert it.
+```
 
 # 18.06.2018
 ## DS
+- АНАЛИЗ МАЛЫХ ДАННЫХ КвазиНаучный блог Александра Дьяконова. [Cтекинг (Stacking) и блендинг (Blending)](https://alexanderdyakonov.wordpress.com/2017/03/10/c%D1%82%D0%B5%D0%BA%D0%B8%D0%BD%D0%B3-stacking-%D0%B8-%D0%B1%D0%BB%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3-blending/)
 - [Andrej Karpathy](https://medium.com/@karpathy). Director of AI at Tesla. Previously Research Scientist at OpenAI and PhD student at Stanford. I like to train deep neural nets on large datasets.
 - The Asimov Institute. [THE NEURAL NETWORK ZOO](http://www.asimovinstitute.org/neural-network-zoo/)
 - COOL! [10 steps to bootstrap your machine learning project (part 1)](https://blog.metaflow.fr/10-steps-to-bootstrap-your-machine-learning-project-part-1-aa7e1031f5b1)
@@ -261,6 +428,13 @@ Base 36 or hexatridecimal is a positional numeral system using 36 as the radix. 
 - [Инструментарий специалиста по большим данным: Apache Kafka](http://datareview.info/article/instrumentariy-spetsialista-po-bolshim-dannyim-apache-kafka/)
 - [Tarantool: как сэкономить миллион долларов на базе данных на высоконагруженном проекте](https://habr.com/company/oleg-bunin/blog/310690/). Материал старый, но подробно объясняет идеологию решения.
 - [Building a Kafka and Spark Streaming pipeline - Part I](https://tlfvincent.github.io//2016/09/25/kafka-spark-pipeline-part-1/)
+- [Для чего нужен Apache Ignite / GridGain, на примере .NET & C#](https://habr.com/company/gridgain/blog/325830/). Что это такое и зачем?
+Самый простой и ёмкий ответ — это база данных. В основе которой — хранилище "ключ-значение"; грубо говоря, ConcurrentDictionary, в котором данные расположены на нескольких машинах.
+- Раньше объясняли подробно. [Второе рождение гридов](https://www.osp.ru/os/2013/08/13037859/)
+- [On Apache Ignite, Apache Spark and MySQL. Interview with Nikita Ivanov](http://www.odbms.org/blog/2017/06/on-apache-ignite-apache-spark-and-mysql-interview-with-nikita-ivanov/). Nikita Ivanov, CTO of GridGain
+- Очень хорошее объяснение. [Apache® Ignite™ and Apache® Spark™: Complementary In-Memory Computing Solutions](https://insidebigdata.com/2016/06/20/apache-ignite-and-apache-spark-complementary-in-memory-computing-solutions/)
+- [Недопонимание CAP-теоремы](https://habr.com/post/136305/).
+- [К чему относится Ignite исходя из CAP теоремы, к CP или CA?](https://habr.com/company/gridgain/blog/325830/). Ответ -- CP
 
 ## R
 - [The Popularity of Point-and-Click GUIs for R](http://r4stats.com/2018/06/12/gui-popularity/)
@@ -1344,13 +1518,6 @@ Create data summaries for quality control, extensive reports for exploring data,
 
 # 18.01.2018
 ## R
-- COOL! [My favourite R package for: summarising data](https://dabblingwithdata.wordpress.com/2018/01/02/my-favourite-r-package-for-summarising-data/)
-	- `base::summary`
-	- `Hmisc::describe`
-	- `pastecs::stat.desc`
-	- `psych::describe` & `psych::describeBy`
-	- `skimr::skim`
-	- `summarytools::descr` & `summarytools::dfSummary`
 - COOL! [While you wait for that to finish, can I interest you in parallel processing?](http://appliedpredictivemodeling.com/blog/2018/1/17/parallel-processing)
 - [Importance sampling adds an interesting twist to Monte Carlo simulation](https://www.rdatagen.net/post/importance-sampling-adds-a-little-excitement-to-monte-carlo-simulation/)
 - [January meeting: Getting started with spatial data and writing R packages from scratch](http://edinbr.org/edinbr/2018/01/08/january-meeting.html)
@@ -2832,6 +2999,7 @@ RConfigActive = media-tel
 
 ## Microsoft
 - [How do I open OneDrive log (ODL) files?](https://superuser.com/questions/1041334/how-do-i-open-onedrive-log-odl-files). ODL="OneDrive Log". On a whim, I tried to open one in an SQLite database browser, and it recognized it as an encrypted SQLite database.
+- [Location of Camera Roll has been changed in onedrive](https://answers.microsoft.com/en-us/onedrive/forum/odwork-odfiles-sdwin10/location-of-camera-roll-has-been-changed-in/b895c700-d06b-49d1-817c-33e873c867a6)
 
 
 # 22.09.2017
