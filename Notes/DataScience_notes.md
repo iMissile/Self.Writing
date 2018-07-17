@@ -168,6 +168,20 @@ Survival analysis is long-established within actuarial science but infrequently 
 - COOL! [Mara's tidyeval resource roundup](https://maraaverick.rbind.io/2017/08/tidyeval-resource-roundup/)
 - [Theory free tidyeval](https://www.johnmackintosh.com/2018-02-19-theory-free-tidyeval/). Getting our feet wet with dplyr programming
 
+# 17.07.2018
+## R
+- [Smoothing Time Series Data](https://www.displayr.com/smoothing-time-series-data/)
+- [Customizing styler - the quick way](https://lorenzwalthert.netlify.com/posts/customizing-styler-the-quick-way/)
+- COOL! [Create a reactive trigger](https://github.com/daattali/advanced-shiny/tree/master/reactive-trigger)
+
+# 16.07.2018
+## R
+- COOL! [From Data to Viz](https://www.data-to-viz.com/) leads you to the most appropriate graph for your data. It links to the code to build it and lists common caveats you should avoid.
+- [Stan®](http://mc-stan.org/) is a state-of-the-art platform for statistical modeling and high-performance statistical computation. Thousands of users rely on Stan for statistical modeling, data analysis, and prediction in the social, biological, and physical sciences, engineering, and business.
+- [Using Machine Learning for Causal Inference](https://www.statworx.com/de/blog/using-machine-learning-for-causal-inference/)
+- [Seasonal decomposition of short time series](https://robjhyndman.com/hyndsight/tslm-decomposition/)
+- COOL! [Why I rarely use apply](https://privefl.github.io/blog/why-i-rarely-use-apply/)
+
 # 12.07.2018
 ## R
 - [{ggplot2} Welcome viridis !](https://rtask.thinkr.fr/blog/ggplot2-welcome-viridis/)
@@ -177,7 +191,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 - liftr. [A Quick Introduction to liftr](https://cran.r-project.org/web/packages/liftr/vignettes/liftr-intro.html)
 - [Handling Strings with R](http://www.gastonsanchez.com/r4strings/) by Gaston Sanchez, 2018-04-19
 - [rocker](http://dirk.eddelbuettel.com/blog/code/rocker/)
-
+- COOL! [dockerfiler is now on CRAN](https://colinfay.me/dockerfiler-cran/)
 
 
 # 11.07.2018
@@ -195,6 +209,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 - [Discussion: when is Shiny a good choice vs when is it not the right tool for the job?](https://community.rstudio.com/t/discussion-when-is-shiny-a-good-choice-vs-when-is-it-not-the-right-tool-for-the-job/707)
 - COOL [Comparison with R / R libraries](https://pandas.pydata.org/pandas-docs/stable/comparison_with_r.html)
 - [ficonsulting/RInno](https://github.com/ficonsulting/RInno). How to install local shiny apps
+- [Coloured output in the R console](https://aghaynes.wordpress.com/2018/07/12/coloured-output-in-the-r-console/)
 
 ## DS
 - [Regex was taking 5 days to run. So I built a tool that did it in 15 minutes.](https://medium.freecodecamp.org/regex-was-taking-5-days-flashtext-does-it-in-15-minutes-55f04411025f)
@@ -204,6 +219,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 - Отличное русскоязычное сообщество: [Big Data Russia](https://vk.com/big_data_russia)
 - [Stack Overflow: Kotlin, R and TypeScript among least disliked programming languages](https://jaxenter.com/kotlin-among-least-disliked-languages-138544.html)
 - [Язык программирования R для статистических вычислений](https://vk.com/rstatistics)
+- [RAW Graphs](https://rawgraphs.io/). The missing link between spreadsheets and data visualization.
 
 
 # 09.07.2018
@@ -881,6 +897,7 @@ Provides a %<-% operator to perform multiple, unpacking, and destructuring assig
 	- [Видеозапись](https://channel9.msdn.com/Events/useR-international-R-User-conferences/useR-International-R-User-2017-Conference)
 - [Daff: diff, patch and merge for data.frames](https://cran.r-project.org/web/packages/daff/)
 daff is an R package that can find difference in values between data.frames, store this difference, render it and apply this difference to patch a data.frame. It can also merge two versions of a data.frame having a common parent. It wraps the daff.js library using the V8 package.
+- [compareDF](https://cran.r-project.org/web/packages/compareDF/index.html): Do a Git Style Diff of the Rows Between Two Dataframes with Similar Structure
 
 ## Forecast
 - [Is Prophet Really Better than ARIMA for Forecasting Time Series Data?](https://blog.exploratory.io/is-prophet-better-than-arima-for-forecasting-time-series-fa9ae08a5851)
