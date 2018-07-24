@@ -1,5 +1,5 @@
 # Windows
-[boot2docker](http://boot2docker.io/) for Windows устарел, заменен [docker machine]
+[boot2docker](http://boot2docker.io/) for Windows устарел, заменен [docker machine](https://docs.docker.com/machine/overview/)
 
 # Lab
 hostname: ilya-lab
@@ -19,7 +19,7 @@ login/password: root/ilya-lab
 
 После установки docker выполняем базовые шаги:
 - Забираем image с хаба: `docker pull r-base`
-- Смотрим, какие у нас есть локальные images: `docker images r-base`
+- Смотрим, какие у нас есть локальные images: `docker images <r-base>`
 
 - r-base можно прямо запустить из контейнера командой `docker run --rm -ti r-base`. Детали по запуску контейнера можно прочитать [здесь](https://hub.docker.com/r/_/r-base/)
 - запускаем контейнер tidyverse: 
@@ -27,15 +27,23 @@ login/password: root/ilya-lab
 	- Детали по запуску смотрим здесь: [Using the RStudio image](https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image)
 	- Запуск rstudio контейнер как демон (взял из презентации 15 года, слайд 29: `docker run -d -p 8787:8787 rocker/r-studio`. А также с wiki выше. (по умолчанию: username: rstudio\password: rstudio)
 - посмотрим запущенные процессы: `docker ps`
+- удалим dangling images (с тегом none) командой `docker image prune`. Взял [отсюда](https://stackoverflow.com/questions/33913020/docker-remove-none-tag-images)
+- удаляем отдельный образ: `docker image rm my_r`
 
 ## Делаем свой docker
 - Создаем Dockerfile
-- В директории запускаем `docker build -rm -t my_r .` -t <tag> 
+- В директории запускаем `docker build --rm true -t my_r .` -t <tag> 
     - When you build your images add “–rm” this should help with removing any intermediate and none images. ‘’‘docker build --rm ‘’’
     - Полезный ответ на вопрос [`How to remove <none> images after building`](https://forums.docker.com/t/how-to-remove-none-images-after-building/7050): 
 `docker images -f "dangling=true" -q` -- получаем список ID контенеров с пустым тэгом. Полная команда такова (детали читаем на странице):
 `docker rmi $(docker images --filter "dangling=true" -q --no-trunc) 2>/dev/null`
 либо так: `docker images -q -f dangling=true | xargs --no-run-if-empty docker rmi`, взято [отсюда](https://gist.github.com/ngpestelos/4fc2e31e19f86b9cf10b)
+- [VOLUME секция](https://docs.docker.com/v17.09/engine/reference/builder/#volume)
+- не забываем, что в ...
+
+## Запускаем Shiny App
+- докер, собранный в варианте локального shiny app, для использования его в shinyproxy запускаем командой: `docker run --rm -p 3838:3838 -ti squid_r`
+- запуск командной строки в собранном докере (нюансы [здесь](https://gist.github.com/mitchwongho/11266726)): `docker run -it <image> /bin/bash`
 
 ## Полезные утилиты
 - [littler: R at the Command-Line via 'r'](https://cran.r-project.org/web/packages/littler/index.html)

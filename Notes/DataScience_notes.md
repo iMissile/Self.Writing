@@ -168,6 +168,50 @@ Survival analysis is long-established within actuarial science but infrequently 
 - COOL! [Mara's tidyeval resource roundup](https://maraaverick.rbind.io/2017/08/tidyeval-resource-roundup/)
 - [Theory free tidyeval](https://www.johnmackintosh.com/2018-02-19-theory-free-tidyeval/). Getting our feet wet with dplyr programming
 
+# 23.07.2018
+## ML
+- COOL e-book! [Interpretable Machine Learning. A Guide for Making Black Box Models Explainable.](https://christophm.github.io/interpretable-ml-book/)
+- COOL! [What is the role of the activation function in a neural network? How does this function in a human neural network system?](https://www.quora.com/What-is-the-role-of-the-activation-function-in-a-neural-network-How-does-this-function-in-a-human-neural-network-system)
+- [Activation Function](https://quickkt.com/tutorials/artificial-intelligence/deep-learning/activation-function/)
+
+## R
+- [Real-time data visualization using R and data extracting from SQL Server](https://tomaztsql.wordpress.com/2018/07/23/real-time-data-visualization-using-r-and-data-extracting-from-sql-server/)
+- [RStudio:addins part 4 - Unit testing coverage investigation and improvement, made easy](https://jozefhajnala.gitlab.io/r/r104-unit-testing-coverage/)
+- COOL! [R.devices - Into the Void](https://www.jottr.org/2018/07/21/suppressgraphics/)
+- [A new ‘boto3’ Amazon Athena client wrapper with dplyr async query support](https://rud.is/b/2018/07/20/a-new-boto3-amazon-athena-client-wrapper-with-dplyr-async-query-support/)
+- [Benchmarking Feature Selection Algorithms with Xy()](https://www.statworx.com/de/blog/benchmarking-feature-selection-algorithms-with-xy/)
+
+# 20.07.2018
+## R
+- [Using leaflet, just because](https://nsaunders.wordpress.com/2018/07/17/using-leaflet-just-because/)
+- [DEPLOYING R MODELS IN SQL SERVER](https://www.mango-solutions.com/blog/deploying-r-models-in-sql-server)
+- [Machine Learning Results in R: one plot to rule them all!](https://datascienceplus.com/machine-learning-results-one-plot-to-rule-them-all/)
+- [Call Centre Workforce Planning Using Erlang C in R language](https://lucidmanager.org/call-centre-workforce-planning-erlang-c-in-r/)
+- BlackBox
+	- COOL! [Explaining Black-Box Machine Learning Models - Code Part 1: tabular data + caret + iml](https://shirinsplayground.netlify.com/2018/07/explaining_ml_models_code_caret_iml/)
+	- [Explaining Keras image classification models with lime](https://shirinsplayground.netlify.com/2018/06/keras_fruits_lime/)
+- COOL! [ggthemes 4.0.0](https://jrnold.github.io/ggthemes/). Some extra geoms, scales, and themes for ggplot, including:
+
+
+## Shiny
+- [R-Shiny webserver on a local server](https://stackoverflow.com/questions/25858196/r-shiny-webserver-on-a-local-server)
+- COOL! Shiny. If the log file is not preserved add the following line to the top of you `shiny-server.conf` file in `/etc/shiny-server/`: preserve_logs true`;. Once the log files are preserved, you should be able to identify the error causing the application to exit.
+
+# 19.07.2018
+## R & Docker
+- [How to Dockerize an R Shiny App — Part 1](https://towardsdatascience.com/how-to-dockerize-an-r-shiny-app-part-1-d4267659312a)
+- [How do I Dockerize an R Shiny app on my local machine using Shiny server?](https://stackoverflow.com/questions/49736393/how-do-i-dockerize-an-r-shiny-app-on-my-local-machine-using-shiny-server)
+- [Use Docker to distribute and run Shiny apps](https://wabi-wiki.scilifelab.se/display/KB/Use+Docker+to+distribute+and+run+Shiny+apps)
+- COOL! [Best practices for writing Dockerfiles](https://docs.docker.com/v17.09/engine/userguide/eng-image/dockerfile_best-practices/)
+- COOL! [cole-brokamp/rize](https://github.com/cole-brokamp/rize) dockerize R shiny apps
+- [QuantumObject/docker-shiny](https://github.com/QuantumObject/docker-shiny). Dockerfile to be use to build image for docker container with Shiny https://shiny.quantumobject.org/
+- Docker error!!! [/var/lib/docker/tmp/docker-builderXXXXXXX/... no such file or directory {#1922}](https://github.com/docker/for-mac/issues/1922#issuecomment-355364451)
+	- [.dockerignore file](https://docs.docker.com/engine/reference/builder/#dockerignore-file)
+	- [Docker build ignoring .dockerignore](https://forums.docker.com/t/docker-build-ignoring-dockerignore/11991)
+- [Shiny Server on Docker: CentOS 7 Edition](https://www.datascienceriot.com/r/shiny-docker/)
+        - COOL! [A Dockerfile to initialize Shiny-Server and RStudio Server on CentOS7](https://github.com/keberwein/docker_shiny-server_centos7)
+
+
 # 17.07.2018
 ## R
 - [Smoothing Time Series Data](https://www.displayr.com/smoothing-time-series-data/)
@@ -326,7 +370,8 @@ Survival analysis is long-established within actuarial science but infrequently 
 
 # 19.06.2018
 ## R
-- [Not only LIME. DALEX package](http://smarterpoland.pl/index.php/2018/06/not-only-lime/)
+- !! [Not only LIME. DALEX package](http://smarterpoland.pl/index.php/2018/06/not-only-lime/)
+- !! [iml: interpretable machine learning](https://github.com/christophM/iml)
 - [bounceR 0.1.2: Automated Feature Selection](https://www.statworx.com/de/blog/data-science/bouncer-0-1-2-automated-feature-selection/)
 - [Most Starred R Packages on GitHub](https://stevenmortimer.com/most-starred-r-packages-on-github/). Published June 18, 2018
 	- [r2d3: Interface to 'D3' Visualizations](https://cran.r-project.org/web/packages/r2d3/index.html)
@@ -1243,6 +1288,7 @@ YES - it means it will handle all the incomming requests in parallel - each requ
 - [Integrating R with production systems using an HTTP API](http://blog.revolutionanalytics.com/2014/08/using-r-inside-the-enterprise-integration-with-existing-systems.html). August 19, 2014. читаю тут в интернетах какие best practice для деплоя микросервисов с R-бэкэндом. Все такие plumber, opencpu и тд отдыхают. Ниболее production-ready это Rserve + http сервер на ваш вкус.
 - COOL! bit64 package
 - [R package: future: Unified Parallel and Distributed Processing in R for Everyone](https://github.com/HenrikBengtsson/future)
+- COOL! [A guide to parallelism in R](https://privefl.github.io/blog/a-guide-to-parallelism-in-r/)
 - [An example of how to use the new R promises package](https://appsilondatascience.com/blog/rstats/2017/11/01/r-promises-hands-on.html)
 - [A Future for R: Slides from useR 2016](https://www.jottr.org/2016/07/02/future-user2016-slides/)
 - Logging in parallel:
@@ -5878,6 +5924,7 @@ Go and explore, and happy new year!
 ## R
 - [R exercises](http://r-exercises.com/). Очень неплохой ресурс с заданиями по R.
 - COOL! Классный пакет для Simmer [Discrete-Event Simulator for R](http://fishyoperations.com/2017/01/12/extensions-for-simmer.html). Вообще, на этом сайте очень много записей про симуляцию.
+- [simmer 4.0.0](https://www.enchufa2.es/archives/simmer-4-0-0.html)
 - [simmer 3.8.0](https://www.enchufa2.es/archives/simmer-3-8-0.html)
 - [simmer 3.7.0](https://www.enchufa2.es/archives/simmer-3-7-0.html)
 - [simmer.bricks 0.1.0: new add-on for simmer](https://www.enchufa2.es/archives/simmer-bricks-0-1-0-new-add-on-for-simmer.html)
@@ -6813,7 +6860,7 @@ Debugging is especially hard when working in a parallelized environment. You can
 	- Never use set.seed(), use clusterSetRNGStream() instead, to set the cluster seed if you want reproducible results
 - [When does foreach call .combine?](http://stackoverflow.com/questions/18704115/when-does-foreach-call-combine)
 - [foreach as List Comprehensions](ftp://cran.r-project.org/pub/R/web/packages/foreach/vignettes/foreach.pdf). см документ "Using The foreach Package"
-If you're familiar with the Python programming language, it may have occurred to you that the foreach package provides something that is not too dierent from Python's list comprehensions. In fact, the foreach package also includes a function called when which can prevent some of the evaluations from happening, very much like the \if" clause in Python's list comprehensions.
+If you're familiar with the Python programming language, it may have occurred to you that the foreach package provides something that is not too different from Python's list comprehensions. In fact, the foreach package also includes a function called when which can prevent some of the evaluations from happening, very much like the \if" clause in Python's list comprehensions.
 - [“un-register” a doParallel cluster](http://stackoverflow.com/questions/25097729/un-register-a-doparallel-cluster)
 - [How can I print when using %dopar%](http://stackoverflow.com/questions/10903787/how-can-i-print-when-using-dopar)
 - [How to log when using foreach (print or futile.logger)](http://stackoverflow.com/questions/38828344/how-to-log-when-using-foreach-print-or-futile-logger)
