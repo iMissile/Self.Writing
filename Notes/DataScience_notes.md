@@ -150,6 +150,9 @@ Survival analysis is long-established within actuarial science but infrequently 
 - [Programming with dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/programming.html)
 - [wrapr: R Code Sweeteners](http://www.win-vector.com/blog/2017/08/wrapr-r-code-sweeteners/)
 - [Why I find tidyeval useful](http://www.brodrigues.co/blog/2017-08-27-why_tidyeval/)
+- [The Roots of Quotation](https://milesmcbain.xyz/the-roots-of-quotation/) by Miles McBain | 26 Jul 2018
+- [Solving the Challenge of Tidyeval](https://milesmcbain.xyz/solving-the-challenge-of-tidyeval/) by Miles McBain | 23 May 2018
+- [About lazy evaluation](https://colinfay.me/lazyeval/). Прекрасная полновесная статья.
 - [What is tidy eval and why should I care?](https://thisisnic.github.io/2018/03/29/what-is-tidy-eval-and-why-should-i-care/). 
 	- Перепечатка на Mango Solution: [What is tidy eval and why should I care?](https://www.mango-solutions.com/blog/what-is-tidy-eval-and-why-should-i-care)
 	- [Using Tidy Eval with dplyr::filter](https://thisisnic.github.io/2018/03/27/using-tidy-eval-with-dplyr-filter/)
@@ -167,6 +170,27 @@ Survival analysis is long-established within actuarial science but infrequently 
 - [Non-standard evaluation](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
 - COOL! [Mara's tidyeval resource roundup](https://maraaverick.rbind.io/2017/08/tidyeval-resource-roundup/)
 - [Theory free tidyeval](https://www.johnmackintosh.com/2018-02-19-theory-free-tidyeval/). Getting our feet wet with dplyr programming
+
+# 01.08.2018
+## R
+- [Stages in the Evolution of S](http://ect.bell-labs.com/sl/S/history.html). Here is a summary of how S has evolved over its long history.
+- COOL! [Teaching R to New Users - From tapply to the Tidyverse](https://simplystatistics.org/2018/07/12/use-r-keynote-2018/)
+- [No worries! Afterthoughts from UseR 2018](http://smarterpoland.pl/index.php/2018/07/no-worries-afterthoughts-from-user-2018/)
+- [Long Running Tasks With Shiny: Challenges and Solutions](http://blog.fellstat.com/?p=407)
+- [New R package 'debugr' - use automatic debug messages to improve your code](https://topics-in-r.blogspot.com/2018/07/new-r-package-debugr-using-intelligent.html)
+- [Highlighting with ggplot2: The Old School and New School Way](https://www.littlemissdata.com/blog/highlight)
+- [Tidy evaluation in ggplot2](https://www.tidyverse.org/articles/2018/07/ggplot2-tidy-evaluation/)
+- [EARL CONFERENCE 2018 – THE BEST YET!](https://www.mango-solutions.com/blog/earl-conference-2018-the-best-yet)
+- [Singularity as a software distribution / deployment tool](https://mlampros.github.io/mlampros.github.io/2018/07/26/singularity_containers/)
+- [How to use Covariates to Improve your MaxDiff Model](https://www.displayr.com/how-to-use-covariates-to-improve-your-maxdiff-model/?utm_medium=Feed&utm_source=Syndication)
+- COOL! [But can ravens forecast? Why forecast sales?](https://thinkr.biz/2018/07/29/sales-forecast/)
+- [Source code chapter added to “Evidence-based software engineering using R”](http://shape-of-code.coding-guidelines.com/2018/07/31/source-code-chapter-added-to-evidence-based-software-engineering-using-r/)
+- COOL! [A package for dimensionality reduction of large data](https://ropensci.org/blog/2018/08/01/umapr/)
+- COOL! [Understanding Titanic Dataset with H2O’s AutoML, DALEX, and lares library](https://datascienceplus.com/understanding-titanic-dataset-with-h2os-automl-dalex-and-lares-library/)
+
+# 24.07.2018
+## R
+- COOL! сравнение прогнозов с реальными ценами. [Playing with Prophet on financial time series (again)](https://quantdare.com/playing-with-prophet-again/)
 
 # 23.07.2018
 ## ML
@@ -195,7 +219,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 
 ## Shiny
 - [R-Shiny webserver on a local server](https://stackoverflow.com/questions/25858196/r-shiny-webserver-on-a-local-server)
-- COOL! Shiny. If the log file is not preserved add the following line to the top of you `shiny-server.conf` file in `/etc/shiny-server/`: preserve_logs true`;. Once the log files are preserved, you should be able to identify the error causing the application to exit.
+- COOL! Shiny. If the log file is not preserved add the following line to the top of you `shiny-server.conf` file in `/etc/shiny-server/`: preserve_logs true`;. Once the log files are preserved, you should be able to identify the error causing the application to exit. Взял [отсюда](https://community.rstudio.com/t/shiny-webserver-deployment-in-windows-operating-system/9349)
 
 # 19.07.2018
 ## R & Docker
@@ -321,6 +345,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 - COOL! [Spark ML to H2O Migration for Machine Learning in iyzico](https://iyzico.engineering/spark-ml-to-h2o-migration-for-machine-learning-in-iyzico-dcba86b8eab2)
 - [Understanding and Implementing CycleGAN in TensorFlow](https://hardikbansal.github.io/CycleGANBlog/)
 - Datacamp. [New Course: Marketing Analytics in R](https://www.datacamp.com/community/blog/marketing-analytics-r)
+- [Using LSTMs to forecast time-series](https://towardsdatascience.com/using-lstms-to-forecast-time-series-4ab688386b1f)
 
 ## Кухня
 - http://chernovic.ru/, https://cookbooks.ru/
@@ -391,6 +416,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 
 ## Time-series
 - [ts function in R {closed}](https://stats.stackexchange.com/questions/259979/ts-function-in-r)
+- [Saving ts objects as csv files](https://robjhyndman.com/hyndsight/ts2csv/). Occasionally R might not be the tool you want to use (hard to believe, but apparently that happens). Then you may need to export some data from R via a csv file. When the data is stored as a ts object, the time index can easily get lost. So I wrote a little function to make this easier, using the tsibble package to do most of the work in looking after the time index.
 - [Time Series Analysis in R Part 1: The Time Series Object](https://datascienceplus.com/time-series-analysis-in-r-part-1-the-time-series-object/)
 - [Time Series Analysis in R Part 2: Time Series Transformations](https://datascienceplus.com/time-series-analysis-in-r-part-2-time-series-transformations/)
 - [Time Series Analysis in R Part 3: Getting Data from Quandl](https://datascienceplus.com/time-series-analysis-in-r-part-3-getting-data-from-quandl/)
