@@ -150,8 +150,9 @@ Survival analysis is long-established within actuarial science but infrequently 
 - [Programming with dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/programming.html)
 - [wrapr: R Code Sweeteners](http://www.win-vector.com/blog/2017/08/wrapr-r-code-sweeteners/)
 - [Why I find tidyeval useful](http://www.brodrigues.co/blog/2017-08-27-why_tidyeval/)
-- [The Roots of Quotation](https://milesmcbain.xyz/the-roots-of-quotation/) by Miles McBain | 26 Jul 2018
-- [Solving the Challenge of Tidyeval](https://milesmcbain.xyz/solving-the-challenge-of-tidyeval/) by Miles McBain | 23 May 2018
+- COOL! [MilesMcBain/friendlyeval](https://github.com/MilesMcBain/friendlyeval). A friendly interface to tidyeval/rlang that will excuse itself when you're done.
+	- [Solving the Challenge of Tidyeval](https://milesmcbain.xyz/solving-the-challenge-of-tidyeval/) by Miles McBain | 23 May 2018
+	- [The Roots of Quotation](https://milesmcbain.xyz/the-roots-of-quotation/) by Miles McBain | 26 Jul 2018
 - [About lazy evaluation](https://colinfay.me/lazyeval/). Прекрасная полновесная статья.
 - [What is tidy eval and why should I care?](https://thisisnic.github.io/2018/03/29/what-is-tidy-eval-and-why-should-i-care/). 
 	- Перепечатка на Mango Solution: [What is tidy eval and why should I care?](https://www.mango-solutions.com/blog/what-is-tidy-eval-and-why-should-i-care)
@@ -169,7 +170,73 @@ Survival analysis is long-established within actuarial science but infrequently 
 - dplyr & operator ~ (tilde). NSE = [non-standard evaulation](http://cran.r-project.org/web/packages/dplyr/vignettes/nse.html)
 - [Non-standard evaluation](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
 - COOL! [Mara's tidyeval resource roundup](https://maraaverick.rbind.io/2017/08/tidyeval-resource-roundup/)
-- [Theory free tidyeval](https://www.johnmackintosh.com/2018-02-19-theory-free-tidyeval/). Getting our feet wet with dplyr programming
+
+
+# data.table
+- [Homepage Rdatatable/data.table](https://github.com/Rdatatable/data.table/wiki)
+- [data.table vs dplyr: can one do something well the other can't or does poorly?](https://stackoverflow.com/questions/21435339/data-table-vs-dplyr-can-one-do-something-well-the-other-cant-or-does-poorly)
+- [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)
+- [Understanding exactly when a data.table is a reference to (vs a copy of) another data.table](https://stackoverflow.com/questions/10225098/understanding-exactly-when-a-data-table-is-a-reference-to-vs-a-copy-of-another)
+- [Apply function to dataframe in chunks](https://community.rstudio.com/t/apply-function-to-dataframe-in-chunks/9067)
+- [fread() of file from archive](https://stackoverflow.com/questions/33341010/fread-of-file-from-archive)
+- [Using `fread` to import csv file from an archive into `R` without extracting to disk](https://stackoverflow.com/questions/35644556/using-fread-to-import-csv-file-from-an-archive-into-r-without-extracting-to)
+You can use such a kind of statements with fread.
+`x = fread('unzip -q test/allRequests.csv.zip')`
+Or with gunzip
+`x = fread('gunzip -cq test/allRequests.csv.gz')`
+- [Rename multiple dataframe columns, referenced by current names]|(https://stackoverflow.com/questions/9283171/rename-multiple-dataframe-columns-referenced-by-current-names). The `data.table` package has a `setnames()` function which changes column names by reference without copying the whole dataset.
+- [duplicated: Determine Duplicate Rows](https://rdrr.io/rforge/data.table/man/duplicated.html) In data.table: Extension of data.frame
+- [Two of my favorite data.table features](https://www.r-bloggers.com/two-of-my-favorite-data-table-features/). [Исходник](https://brandonlebeau.org/2014/01/06/two-of-my-favorite-data.table-features/):
+	- Add aggregated variables to the raw data file
+	- Removing duplicate observations
+- [Solve common R problems efficiently with data.table](https://jangorecki.github.io/blog/2015-12-11/Solve-common-R-problems-efficiently-with-data.table.html). Written on 2015-12-11
+- [R data.table change R names](https://stackoverflow.com/questions/18760287/r-data-table-change-r-names)
+
+# DS
+- COOL! [Машинное обучение для людей. Разбираемся простыми словами](https://vas3k.ru/blog/machine_learning/)
+
+# 13.08.2018
+## R
+- COOL! [Replacing selected values as NA #76 {Closed}](https://github.com/njtierney/naniar/issues/76)
+- [tjmahr/fillgaze](https://github.com/tjmahr/fillgaze). Helper functions for interpolating missing eyetracking data
+- COOL! [set_na_where(): a nonstandard evaluation use case](https://www.tjmahr.com/set-na-where-nonstandard-evaluation-use-case/). Bottling up magic spells
+- [In dplyr, what are the intrinsic differences between setdiff and anti_join?](https://stackoverflow.com/questions/46854072/in-dplyr-what-are-the-intrinsic-differences-between-setdiff-and-anti-join)
+- COOL! [dplyrpart of the tidyverse: Flexible equality comparison for data frames](https://dplyr.tidyverse.org/reference/all_equal.html). `all_equal` function
+- COOL! [can dplyr package be used for conditional mutating?](https://stackoverflow.com/questions/24459752/can-dplyr-package-be-used-for-conditional-mutating). Масса ответов и бенчмарков.
+- COOL! [Create Awesome HTML Table with knitr::kable and kableExtra](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) by Hao Zhu 2018-05-21
+- COOL! [A few methods for making tables in rmarkdown](https://rpubs.com/benmarwick/tables-rmarkdown)
+
+## Unsupervised learning
+- COOL! [Unsupervised Learning in R](https://rpubs.com/williamsurles/310847) by William Surles, 2017-09-21
+- [Articles - Partitioning Clustering Essentials](http://www.sthda.com/english/articles/27-partitioning-clustering-essentials/)
+	- [Articles - Cluster Analysis in R: Practical Guide](http://www.sthda.com/english/articles/25-cluster-analysis-in-r-practical-guide/111-types-of-clustering-methods-overview-and-quick-start-r-code/). Types of Clustering Methods: Overview and Quick Start R Code
+- [Beautiful dendrogram visualizations in R: 5+ must known methods - Unsupervised Machine Learning](http://www.sthda.com/english/wiki/beautiful-dendrogram-visualizations-in-r-5-must-known-methods-unsupervised-machine-learning)
+- [Hierarchical cluster analysis on famous data sets - enhanced with the dendextend package](https://cran.r-project.org/web/packages/dendextend/vignettes/Cluster_Analysis.html)
+- [Cluster Analysis in R](http://girke.bioinformatics.ucr.edu/GEN242/pages/mydoc/Rclustering.html) by First/last name (first.last@ucr.edu), Last update: 11 May, 2018
+- [matloff/parcoordtutorial](https://github.com/matloff/parcoordtutorial). Tutorial on the parallel coordinates visualization method. Examples, interpretation, data, links and more.
+- [cdparcoord: Categorical and Discrete Parallel Coordinates](https://cran.r-project.org/web/packages/cdparcoord/vignettes/cdparcoord.html)
+- [PARALLEL COORDINATE PLOTS FOR DISCRETE AND CATEGORICAL DATA IN R — A COMPARISON](https://datascience.blog.wzb.eu/2016/09/27/parallel-coordinate-plots-for-discrete-and-categorical-data-in-r-a-comparison/)
+- [An easy explanation for the parallel coordinates plot](https://stats.stackexchange.com/questions/2846/an-easy-explanation-for-the-parallel-coordinates-plot)
+- [Parallel Coordinate Plots](https://homepage.divms.uiowa.edu/~luke/classes/STAT4580/parcor.html)
+
+# 07.08.2018
+## Excel
+- [Отличие *.xlsx и *.xlsb - Планета Excel](https://www.planetaexcel.ru/forum/?PAGE_NAME=read&FID=1&TID=49986)
+- [Importing a big xlsx file into R?](https://stackoverflow.com/questions/19147884/importing-a-big-xlsx-file-into-r)
+
+## R
+- Проблемка!! R.3.5 readr не может найти русский файлик под виндой. Похожая проблема: [`read_csv` can't recognize chinese file path on R 3.5.0 #834](https://github.com/tidyverse/readr/issues/834). Проблема с новым поведением `base::normalizePath()`
+	- [CP1251 char set in file name #476](https://github.com/tidyverse/readxl/issues/476)
+	- [convert path to the native locale before passing to boost::interprocess::file_mapping() #838](https://github.com/tidyverse/readr/pull/838)
+	- [read_*() mangles file paths by converting them to UTF-8 and fails to read the resulting paths #868](https://github.com/tidyverse/readr/issues/868)
+- COOL! [Why use purrr::map instead of lapply?](https://stackoverflow.com/questions/45101045/why-use-purrrmap-instead-of-lapply)
+- [Mapping the stock market using self-organizing maps](https://databasedinvesting.blogspot.com/2018/08/mapping-stock-market-using-self.html)
+- COOL! [MilesMcBain/friendlyeval](https://github.com/MilesMcBain/friendlyeval). A friendly interface to tidyeval/rlang that will excuse itself when you're done.
+	- [Solving the Challenge of Tidyeval](https://milesmcbain.xyz/solving-the-challenge-of-tidyeval/) by Miles McBain | 23 May 2018
+	- [The Roots of Quotation](https://milesmcbain.xyz/the-roots-of-quotation/) by Miles McBain | 26 Jul 2018
+- [jennybc/code-smells-and-feels](https://github.com/jennybc/code-smells-and-feels#readme). Talk on code smells and feels and how to change that via refactoring https://rstd.io/code-smells
+- [skimr for useful and tidy summary statistics](https://ropensci.org/blog/2017/07/11/skimr/)
+
 
 # 01.08.2018
 ## R
@@ -1135,6 +1202,7 @@ Imports non-tabular from Excel files into R. Exposes cell content, position and 
 - COOL! [ Inconsistent parsing failure "no trailing characters e3" #645 {Closed}](https://github.com/tidyverse/readr/issues/645)
 - [How to fork/parallelize process in `purrr::pmap`](https://stackoverflow.com/questions/47552930/how-to-fork-parallelize-process-in-purrrpmap)
 - [Rstudio addin to help you with your regexes (in progress)](https://github.com/gadenbuie/regexplain)
+- [RStudio:addins part 5 - Profile your code on keypress in the background, with no dependencies.](https://jozefhajnala.gitlab.io/r/r105-async-profiler/)
 - `lubridate::now()` >1.7.0 падает без указание tzone:
 	- [How to change the default time zone in R?](https://stackoverflow.com/questions/6374874/how-to-change-the-default-time-zone-in-r). See `?timezone`. Another way to do it, without changing the whole computer time is using the setenv command like this: `Sys.setenv(TZ='GMT')`. После переезда на гугловые библиотеки необходимо добавлять в код установку переменных (либо делать это в системе): `Sys.setenv(TZ="Europe/Moscow")`
 
