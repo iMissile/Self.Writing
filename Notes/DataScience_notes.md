@@ -71,6 +71,8 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [The Tao Of Programming](http://canonical.org/~kragen/tao-of-programming.html)
 - [R Internals](https://cran.r-project.org/doc/manuals/r-release/R-ints.html)
 - [Field Guide to the R Ecosystem](http://fg2re.sellorm.com/)
+- [Feature Engineering and Selection: A Practical Approach for Predictive Models](http://www.feat.engineering/) by Max Kuhn and Kjell Johnson
+
 
 # Video
 - [Основы анализа данных. ВШЭ](https://www.youtube.com/channel/UCLk-Oih8VlqF-StidijTUnw/videos)
@@ -191,9 +193,64 @@ Or with gunzip
 	- Removing duplicate observations
 - [Solve common R problems efficiently with data.table](https://jangorecki.github.io/blog/2015-12-11/Solve-common-R-problems-efficiently-with-data.table.html). Written on 2015-12-11
 - [R data.table change R names](https://stackoverflow.com/questions/18760287/r-data-table-change-r-names)
+- Нюансы с кодировками. [robust encoding in fread (like 'fread("iconv -f ISO-8859-1 -t UTF-8 mytextfile.txt")')](https://github.com/Rdatatable/data.table/issues/1748). Ставим Latin1
+`fread(path, encoding="Latin-1")`
 
 # DS
 - COOL! [Машинное обучение для людей. Разбираемся простыми словами](https://vas3k.ru/blog/machine_learning/)
+- [SmartGit non-commercial](https://www.syntevo.com/blog/?p=3669)
+
+## Amazon EC2
+- [What is an ECU? CPU Benchmarking in the Cloud](http://blog.cloudharmony.com/2010/05/what-is-ecu-cpu-benchmarking-in-cloud.html)
+- [Making Sense of AWS EC2 Instance Types Pricing: ECU Vs. vCPU](https://www.botmetric.com/blog/aws-ec2-instance-type-pricing-ecu-vs-vcpu/)
+- [Запуск виртуальной машины Linux с помощью Amazon EC2](https://aws.amazon.com/ru/getting-started/tutorials/launch-a-virtual-machine/)
+
+
+# 21.08.2018
+## R
+- [Why build a recommender system?](https://www.mango-solutions.com/blog/introduction-to-recommender-systems)
+- [BooST series I: Advantage in Smooth Functions](https://insightr.wordpress.com/2018/08/20/boost-series-i-advantage-in-smooth-functions/)
+- [Missing deprecation warning when setting row names on tibble](https://community.rstudio.com/t/missing-deprecation-warning-when-setting-row-names-on-tibble/2004)
+- `get_os` для опредления MacOS:
+```
+get_os <- function() {
+  if (.Platform$OS.type == "windows") { 
+    "win"
+  } else if (Sys.info()["sysname"] == "Darwin") {
+    "mac" 
+  } else if (.Platform$OS.type == "unix") { 
+    "unix"
+  } else {
+    stop("Unknown OS")
+  }
+}
+```
+- [MS Access export table as .CSV file](https://answers.microsoft.com/en-us/msoffice/forum/msoffice_access-mso_other-msoversion_other/ms-access-export-table-as-csv-file/2df3f848-1560-4eeb-ba69-ee0be8f4b9db)
+- Нашлись грабли с логическими операциями для множественных колонок. [Logical “and” for multiple logical vectors](https://stackoverflow.com/questions/40145025/logical-and-for-multiple-logical-vectors)
+
+
+## knitr
+- [knitr in a knutshell. Knitr with R Markdown](http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html)
+- [Nice tables when knitting to Word](https://community.rstudio.com/t/nice-tables-when-knitting-to-word/3840/4)
+- [kableExtra and Word](https://haozhu233.github.io/kableExtra/kableExtra_and_word.html) by Hao Zhu, 2018-01-09
+- COOL! [How to format kable table when knit from .rmd to Word (with bookdown)](https://stackoverflow.com/questions/47704329/how-to-format-kable-table-when-knit-from-rmd-to-word-with-bookdown)
+	- The huxtable package is available. It includes similar table customization tools as kableExtra. huxtable is designed to output to LaTeX/PDF and HTML (similar to kableExtra). However, huxtable also includes a as_flextable function to convert a huxtable object to a flextable object, which can be output to Word (as noted by David above). After a lot of searching, it seems to me like huxtable is the only available package that can easily output to all of Word, HTML, and PDF with a single package.
+	- This was not possible but since pandoc V2 is out, you can do it with package flextable (>= 0.4.0)(and pandoc V2). Below the code you should add into a code chunk
+- COOL! [Create Awesome HTML Table with knitr::kable and kableExtra](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) by Hao Zhu 2018-05-21
+- COOL! [Huxtable](https://hughjonesd.github.io/huxtable/) is an R package to create LaTeX and HTML tables, with a friendly, modern interface. Features include control over text styling, number format, background color, borders, padding and alignment. Cells can span multiple rows and/or columns. Tables can be manipulated with standard R subsetting or dplyr functions.
+- COOL! [The flextable package](https://davidgohel.github.io/flextable/) provides a framework for easily create tables for reporting. Tables can be embedded within: R Markdown documents, Microsoft Word or PowerPoint documents
+- COOL! [A few methods for making tables in rmarkdown](https://rpubs.com/benmarwick/tables-rmarkdown)
+- [Recommendations for Using summarytools With Rmarkdown](https://cran.r-project.org/web/packages/summarytools/vignettes/Recommendations-rmarkdown.html)
+
+# 20.08.2018
+## R
+- [R:case4base - code profiling with base R](https://jozefhajnala.gitlab.io/r/r004-profiling/)
+- [How to Create Sankey Diagrams From Tables (Data Frames) Using R](https://www.displayr.com/how-to-create-sankey-diagrams-from-tables-using-r)
+- [An R package to create NEWS.md files](https://www.statworx.com/de/blog/an-r-package-to-create-news-md-files/)
+- [Statistics Sunday: Using Text Analysis to Become a Better Writer](http://www.deeplytrivial.com/2018/08/statistics-sunday-using-text-analysis.html)
+- [MANY REPORTS FROM 1 RMARKDOWN FILE](https://scottishsnow.wordpress.com/2018/08/17/many-reports-from-1-rmarkdown-file/)
+- [Updates to the sergeant (Apache Drill connector) Package & a look at Apache Drill 1.14.0 release](https://rud.is/b/2018/08/16/updates-to-the-sergeant-apache-drill-connector-package-apache-drill-1-14-0-release/)
+
 
 # 13.08.2018
 ## R
@@ -203,8 +260,7 @@ Or with gunzip
 - [In dplyr, what are the intrinsic differences between setdiff and anti_join?](https://stackoverflow.com/questions/46854072/in-dplyr-what-are-the-intrinsic-differences-between-setdiff-and-anti-join)
 - COOL! [dplyrpart of the tidyverse: Flexible equality comparison for data frames](https://dplyr.tidyverse.org/reference/all_equal.html). `all_equal` function
 - COOL! [can dplyr package be used for conditional mutating?](https://stackoverflow.com/questions/24459752/can-dplyr-package-be-used-for-conditional-mutating). Масса ответов и бенчмарков.
-- COOL! [Create Awesome HTML Table with knitr::kable and kableExtra](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) by Hao Zhu 2018-05-21
-- COOL! [A few methods for making tables in rmarkdown](https://rpubs.com/benmarwick/tables-rmarkdown)
+- COOL! [Text clustering with Levenshtein distances](https://stackoverflow.com/questions/21511801/text-clustering-with-levenshtein-distances)
 
 ## Unsupervised learning
 - COOL! [Unsupervised Learning in R](https://rpubs.com/williamsurles/310847) by William Surles, 2017-09-21
