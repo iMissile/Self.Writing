@@ -199,6 +199,9 @@ Or with gunzip
 # DS
 - COOL! [Машинное обучение для людей. Разбираемся простыми словами](https://vas3k.ru/blog/machine_learning/)
 - [SmartGit non-commercial](https://www.syntevo.com/blog/?p=3669)
+- [Web Scraper](https://www.webscraper.io/)
+Web Scraper is a company specializing in data extraction from web pages. We offer 2 great options for our users. Our free Google Chrome Web Scraper Extension, and cloud based Web Scraper.
+- COOL! [The Chartmaker Directory](http://chartmaker.visualisingdata.com/)
 
 ## Amazon EC2
 - [What is an ECU? CPU Benchmarking in the Cloud](http://blog.cloudharmony.com/2010/05/what-is-ecu-cpu-benchmarking-in-cloud.html)
@@ -241,6 +244,153 @@ get_os <- function() {
 - COOL! [The flextable package](https://davidgohel.github.io/flextable/) provides a framework for easily create tables for reporting. Tables can be embedded within: R Markdown documents, Microsoft Word or PowerPoint documents
 - COOL! [A few methods for making tables in rmarkdown](https://rpubs.com/benmarwick/tables-rmarkdown)
 - [Recommendations for Using summarytools With Rmarkdown](https://cran.r-project.org/web/packages/summarytools/vignettes/Recommendations-rmarkdown.html)
+- Comments in R Markdown
+	- [Comments in bookdown](https://community.rstudio.com/t/comments-in-bookdown/6808)
+	- [How do I comment out text in an RMD file?](https://stackoverflow.com/questions/17046518/how-do-i-comment-out-text-in-an-rmd-file)
+- COOL! [Tips and tricks for working with images and figures in R Markdown documents](http://www.zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/)
+- COOL! Применение пакета printr! [Automatic output format in Rmarkdown](Automatic output format in Rmarkdown)
+- Плавающий TOC: См. раздел [Floating TOC](http://rmarkdown.rstudio.com/html_document_format.html). А целый сайт с навигацией делается уже из набора Rmd-документов: http://rmarkdown.rstudio.com/rmarkdown_websites.html
+- RMarkdown & Knitr
+	- [insert portions of a markdown document inside another markdown document using knitr](https://stackoverflow.com/questions/17593912/insert-portions-of-a-markdown-document-inside-another-markdown-document-using-kn). 
+```
+1. that is what the chunk option child is for, e.g. in second.Rmd, you can
+``{r child='first.Rmd'}
+``
+2. that is a little bit trickier, but you can call knit_child() manually, e.g.
+``{r echo=FALSE, results='asis'}
+# knit the first three lines of first.Rmd
+cat(knit_child(text = readLines('first.Rmd')[1:3]), sep = '\n')
+``
+```
+	- [How to combine two RMarkdown (.Rmd) files into a single output?](https://stackoverflow.com/questions/25824795/how-to-combine-two-rmarkdown-rmd-files-into-a-single-output)
+	- [Chunk options and package options](https://yihui.name/knitr/options/#child-documents). 2017-02-03
+- При публикации в PDF файла RMarkdown, содержащего HTML элементы, компиляция ломается с сообщением "HTML output in non-HTML formats by adding this option to the YAML front-matter of your rmarkdown file:
+always_allow_html: yes". Отчасти этот вопрос обсуждается здесь: хrendering to md_document results in error if code generates HTML #516  {Closed}](https://github.com/rstudio/rmarkdown/issues/516)
+- [R Markdown for documents with logos, watermarks, and corporate styles](http://ellisp.github.io/blog/2017/09/09/rmarkdown)
+	- [Demonstration page of R Markdown in combination with corporate theming](http://ellisp.github.io/presentations/rmarkdown-styled-demo.html)
+- COOL! [Creating nice tables using R Markdown](https://chesterismay.wordpress.com/2015/11/17/nice-tables-using-r-markdown/)
+- [Specify height and width of ggplot graph in Rmarkdown knitr output](https://stackoverflow.com/questions/39634520/specify-height-and-width-of-ggplot-graph-in-rmarkdown-knitr-output). `fig.width`, `fig.height`. Figure sizes are specified in inches and can be included as a global option of the document output format. Default is 7x5
+- Когда пытаюсь опубликовать kable с указанием caption, название постоянной части "Таблица" дает ошибку при компиляции на строне Connect:
+```
+ ! LaTeX Error: Command \CYRT unavailable in encoding EU1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...
+
+l.118 \caption{Longtable}
+```
+Решение указано здесь: [Russian language within figure captions in unicode-aware systems {duplicate}](https://tex.stackexchange.com/questions/110013/russian-language-within-figure-captions-in-unicode-aware-systems). 
+Симптоматика описана также здесь: [Cyrillic word error in Figure Captions](https://tex.stackexchange.com/questions/351510/cyrillic-word-error-in-figure-captions)
+- Детали по правильному применению рецепта: [\renewcommand\tablename{name} does not work](https://tex.stackexchange.com/questions/55090/renewcommand-tablenamename-does-not-work)
+```
+\AtBeginDocument{%
+  \renewcommand\tablename{new}
+}
+```
+- [RMarkdown сhunk options and package options](https://yihui.name/knitr/options/)
+- [How to make tables float in Rmarkdown pdf document/Inserting tables causing text to disappear in pdf output](http://stackoverflow.com/questions/41705848/how-to-make-tables-float-in-rmarkdown-pdf-document-inserting-tables-causing-text)
+- [Moving from Beamer to R Markdown](http://rmarkdown.rstudio.com/articles_beamer.html)
+- [Simple manual RMarkdown tables that look good in HTML, PDF and DOCX](http://stackoverflow.com/questions/19997242/simple-manual-rmarkdown-tables-that-look-good-in-html-pdf-and-docx)
+- [A few methods for making tables in rmarkdown](https://rpubs.com/benmarwick/tables-rmarkdown)
+- [How to include LaTeX package in R Markdown?](https://tex.stackexchange.com/questions/171711/how-to-include-latex-package-in-r-markdown)
+- [Knitr with R Markdown](http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html). Полезный пункт  **Converting R Markdown to html**:
+	- Via RStudio
+	- Via the command line (or GNU make)
+`R -e "rmarkdown::render('knitr_example.Rmd')"`
+- Помощь по командам, ассоциированных с pandoc: `?rmarkdown::pandoc_available`
+- Проблема с кодировкой pdf файла решается заданием параметра `encoding`:  `R -e "rmarkdown::render('ru-tex-pdf-examples.Rmd', encoding = 'UTF-8')"`
+- Как включить в YAML заголовок r код? Решение вполне простое и элегантное: '`r format(Sys.Date(), "%B %d, %Y")`'. Детали смотрим здесь:
+	- [YAML current date in rmarkdown](http://stackoverflow.com/questions/23449319/yaml-current-date-in-rmarkdown)
+	- [Using R markdown and knitr: Possible to get R objects interpreted in YAML](http://stackoverflow.com/questions/25813420/using-r-markdown-and-knitr-possible-to-get-r-objects-interpreted-in-yaml)
+	- [Inline R code in YAML for rmarkdown doesn't run](http://stackoverflow.com/questions/32637340/inline-r-code-in-yaml-for-rmarkdown-doesnt-run)
+- [Interactive Documents: Advanced Topics. Shiny Reactives](http://rmarkdown.rstudio.com/authoring_shiny_advanced.html)
+- [Using Arial in R figures destined for PLOS ONE](http://www.fromthebottomoftheheap.net/2013/09/09/preparing-figures-for-plos-one-with-r/)
+- [liberation-fonts](https://pagure.io/liberation-fonts). The Liberation Fonts are intended to be replacements for the three most commonly used fonts on Microsoft systems: Times New Roman, Arial, and Courier \ New.
+- Проблема со шрифтами при генерации pdf... [Error in grid.Call(L_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : Polygon edge not found](http://stackoverflow.com/questions/10581440/error-in-grid-calll-textbounds-as-graphicsannotxlabel-xx-xy-polygon)
+	- [RMarkdown PDF Documents](http://rmarkdown.rstudio.com/pdf_document_format.html)
+	- COOL!!!! Для PDF решение кроется в строчке `knitr::opts_chunk$set(dev='cairo_pdf') # решили проблему с генерацией русского текста в графиках`. Но тогда мы получаем проблему с отображением графики в html.
+	- Closed Ticket # 111: [Set knitr figure device `dev` by output type?](https://github.com/rstudio/rmarkdown/issues/111). Seconding this. I'd like to be able to set cairo_pdf for PDF output but svg for HTML outputs, like so:
+```
+output:
+  pdf_document:
+    dev: cairo_pdf
+  html_document:
+    dev: svg
+```
+- [Automatically scale font size (etc.) of ggplot2 inside an Rmarkdown document](http://stackoverflow.com/questions/28835491/automatically-scale-font-size-etc-of-ggplot2-inside-an-rmarkdown-document)
+- COOL presentation. [Advanced R Markdown. Behind the Knit Button](https://slides.yihui.name/2017-rstudio-conf-rmarkdown-Yihui-Xie.html#1) by Yihui Xie, RStudio
+
+## knitr. Запускаем Rmd -> PDF
+Смотрим ссылки ниже. Важный концепт, который держим в голове -- возможность генерации отчетов из .R файлов (не .Rmd) посредством `spin`. `rmarkdown::render()` автоматически выбирает spin\knit в зависимости от расширения файла.
+- При компиляции в PDF возникает ошибка `! Package inputenc Error: Unicode char Рѕ (U+43E)`. Ищем ответы здесь: [Package inputenc Error: Unicode char \u8 in RStudio](http://stackoverflow.com/questions/32794157/package-inputenc-error-unicode-char-u8-in-rstudio)
+- Компиляция .tex ломается на команде '\href{}' при `inputenc=utf8` и `fontencoding=T2A`
+- [Knit PDF and la-tex (russian text)](http://qa.piterdata.ninja/p/1742/). Тут много полезного про управление опциями в заголовке самого документа.
+- Попытка включить T2A шрифты (видимо, так) приводит к такой ошибке: `pdfTeX error (font expansion): auto expansion is only possible with scalable fonts. \AtBegShi@Output ...ipout \box \AtBeginShipoutBox`
+- Как обычно, мучаемся с русскими шрифтами в LaTeX в PDF. [Установка PSCyr для Latex](http://blog.harrix.org/article/444)
+- Русские буквы, используем XeLaTeX:
+```
+    latex_engine: xelatex
+header-includes:
+ \usepackage[T2A]{fontenc}
+ \usepackage[utf8]{inputenc}
+ \usepackage[russian]{babel}
+ \usepackage{fontspec}
+ \setmainfont{Cambria}
+```
+- Проблема с отображением русских букв на графиках. Ошибки подобного рода:
+	- Warning in title(...): неизвестна ширина символа 0xf2	
+	- Warning in grid.Call(L_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : неизвестна ширина символа 0xf0
+	- Warning in grid.Call(L_stringMetric, as.graphicsAnnot(x$label)): неизвестны шрифтовые метрики для символа 0xe
+Нашел очень подробный багтрекер на эту тему в репозитории knitr: [[R Sweave] Cyrillic characters in plots #436](https://github.com/yihui/knitr/issues/436). Также полезно почитать про механику генерации графиков в идеологии knitr в книге "Dynamic Documents with R anf knitr, 2nd edition". Концепции Graphical Device, Encoding, Plot Recording (п. 7.1, 7.2). Рекомендуют использовать cairo_pdf, в т.ч. в книге (п 7.2).
+В принципе, решение указывать в chunk опцию `dev="cairo_pdf"` срабатывает.
+- Нюансы с подключением доп пакетов и стилей в R markdown имеют несколько решений. Примеры решений, например, в этой подборке:
+	- [How to include LaTeX package in R Markdown?](http://tex.stackexchange.com/questions/171711/how-to-include-latex-package-in-r-markdown)
+	- [R markdown: PDF Documents. Overview](http://rmarkdown.rstudio.com/pdf_document_format.html)
+- Много полезных примеров в [Knitr with R Markdown by Karl Broman](http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html)
+- Читаем подробненько про схему работы knitr также в [Introduction to knitr by Michael Sachs](https://sachsmc.github.io/knit-git-markr-guide/knitr/knit.html)
+- [MarkdownReports. An R function library to generate (scientific) reports easily](http://markdownreports.github.io/). MarkdownReports is a set of R functions that allows you to generate precise figures easily, and create clean reports about what you just discovered with your analysis script.
+- [Programmatically creating Markdown tables in R with KnitR](http://stackoverflow.com/questions/15488350/programmatically-creating-markdown-tables-in-r-with-knitr)
+- Весьма нетривиальный вопрос, а как же сделать комментарии в R markdown. В ответе [Comments in Markdown](http://stackoverflow.com/questions/4823468/comments-in-markdown) рассмотрена масса различных варианты для markdown в целом.
+- [How do I insert a comment in Markdown?](https://www.quora.com/How-do-I-insert-a-comment-in-Markdown)
+- Размышления про различные директории. [Working with knitr using subdirectories](http://stackoverflow.com/questions/24585254/working-with-knitr-using-subdirectories)
+- Dean Attali. 
+	- [Knitr's best hidden gem: spin](http://deanattali.com/2015/03/24/knitrs-best-hidden-gem-spin/). Stop knitting & start spinning - spin can help you write reports much faster and avoid repeating yourself
+	- [ezknitr: R package to avoid the typical working directory pain when using knitr](http://deanattali.com/blog/ezknitr-package/)
+- [Compiling Reports from R Scripts](http://rmarkdown.rstudio.com/articles_report_from_r_script.html)
+- [dynamically-generate-rmarkdown-chunks-to-display-datatable](https://gist.github.com/ReportMort/e54ec050d97d79996189)
+- [Rmarkdown and DT: result do not render](http://stackoverflow.com/questions/33343241/rmarkdown-and-dt-result-do-not-render)
+- [Is it possible to have sortable(Interactive) table in rMarkdown?](http://stackoverflow.com/questions/27120002/is-it-possible-to-have-sortableinteractive-table-in-rmarkdown)
+- [Howto include js dependencies of DT datatable in Rmarkdown using knitr and pandoc](http://stackoverflow.com/questions/28303827/howto-include-js-dependencies-of-dt-datatable-in-rmarkdown-using-knitr-and-pando)
+- [Programmatically creating Markdown tables in R with KnitR](http://stackoverflow.com/questions/15488350/programmatically-creating-markdown-tables-in-r-with-knitr)
+- [An Introduction to The printr Package](http://yihui.name/printr/)
+- [My table looks better than yours](https://www.stat.ubc.ca/~jenny/STAT545A/topic10_tablesCSS.html)
+- [pander: An R Pandoc Writer](http://rapporter.github.io/pander/)
+- [R Code Chunks](http://rmarkdown.rstudio.com/authoring_rcodechunks.html)
+- COOL! [Render reports directly from R scripts](http://brooksandrew.github.io/simpleblog/articles/render-reports-directly-from-R-scripts/)
+	- [A collection of css themes for Markdown http://jasonm23.github.io/markdown-css-themes/](https://github.com/jasonm23/markdown-css-themes)
+	- [Markdown css themes Preview](http://jasonm23.github.io/markdown-css-themes/)
+
+
+
+# 30.08.2018
+## R
+- COOL! [Five steps for missing data with Finalfit](http://www.datasurg.net/2018/08/29/five-steps-for-missing-data-with-finalfit/)
+- [finalfit: Quickly Create Elegant Regression Results Tables and Plots when Modelling](https://cran.r-project.org/web/packages/finalfit/index.html)
+- COOL! [naniar](http://naniar.njtierney.com/). naniar provides principled, tidy ways to summarise, visualise, and manipulate missing data with minimal deviations from the workflows in ggplot2 and tidy data.
+- [Transfer data from R to Python with PyRserve and Bio7](https://bio7.org/transfer-data-from-r-to-python-with-pyrserve-and-bio7/)
+- [Fitting removal models with the detect R package](http://peter.solymos.org/code/2018/08/30/fitting-removal-models-with-the-detect-r-package.html)
+- [How to self-publish a book: Customizing Bookdown](https://blog.datascienceheroes.com/how-to-self-publish-a-book-customizing-bookdown/)
+
+# 27.08.2018
+## R
+- COOL! [Select first and last row from grouped data](https://stackoverflow.com/questions/31528981/select-first-and-last-row-from-grouped-data)
+- [MOVING BEYOND PATTERN-BASED ANALYSIS: ADDITIONAL APPLICATIONS OF GEOPAT 2](https://nowosad.github.io/post/geopat-2-extend/)
+- [Simplifying World Tile Grid Creation with geom_wtg()](https://rud.is/b/2018/08/27/simplifying-world-tile-grid-creation-with-geom_wtg/)
+- [littler 0.3.4: More updated examples](http://dirk.eddelbuettel.com/blog/2018/08/24/#littler-0.3.4)
+- [MPT trees published in BRM](https://eeecon.uibk.ac.at/~zeileis/news/mpttree/)
+- COOL! [Statistics Sunday: Visualizing Regression](http://www.deeplytrivial.com/2018/08/statistics-sunday-visualizing-regression.html). Now the fun part: let's plot our regression tree.
+- COOL! [The power of stepped-wedge designs](https://www.rdatagen.net/post/alternatives-to-stepped-wedge-designs/)
 
 # 20.08.2018
 ## R
@@ -2413,7 +2563,6 @@ ggplot(data=data.frame(x=c(0:25))) + geom_point(size=8, aes(x=x,y=x,shape=x)) +
 ## R
 - COOL! [littler: R at the Command-Line via 'r'](https://cran.r-project.org/web/packages/littler/index.html)
 - COOL! [Automating Summary of Surveys with RMarkdown](https://rviews.rstudio.com/2017/11/07/automating-summary-of-surveys-with-rmarkdown/)
-- COOL! Применение пакета printr! [Automatic output format in Rmarkdown](Automatic output format in Rmarkdown)
 - COOL! [pool package on CRAN](https://blog.rstudio.com/2017/11/17/pool-0-1-3/)
 - [Six tips for running a successful unconference](https://ropensci.org/blog/2017/11/17/unconf-sixtips/)
 - [padr version 0.4.0 now on CRAN](https://edwinth.github.io/blog/padr-v04/)
@@ -2663,9 +2812,6 @@ __Luckily, shinyURL also has an inherent way of ignoring user selected inputs. H
 - [Intro to TensorFlow in R](https://www.edgarsdatalab.com/2017/10/22/intro-to-tensorflow-in-r/)
 - [Is dplyr Easily Comprehensible?](http://www.win-vector.com/blog/2017/08/is-dplyr-easily-comprehensible/)
 	- [Advanced dplyr Quiz (author: John Mount)](https://github.com/WinVector/Examples/blob/master/dplyr/dplyrQuiz.md)
-## Shiny
-- Плавающий TOC: См. раздел [Floating TOC](http://rmarkdown.rstudio.com/html_document_format.html). А целый сайт с навигацией делается уже из набора Rmd-документов: http://rmarkdown.rstudio.com/rmarkdown_websites.html
-
 
 # 05.11.2017
 ## R Debug
@@ -3165,22 +3311,6 @@ Provides a time input widget for Shiny. This widget allows intuitive time input 
 	- [Choosing R or Python for data analysis? An infographic](https://www.datacamp.com/community/tutorials/r-or-python-for-data-analysis)
 	- [A Comprehensive Introduction To Your Genome With the SciPy Stack](https://www.toptal.com/python/comprehensive-introduction-your-genome-scipy)
 - vtreat: A 'data.frame' processor/conditioner that prepares real-world data for predictive modeling in a statistically sound manner. 'vtreat' prepares variables so that data has fewer exceptional cases, making it easier to safely use models in production. Common problems 'vtreat' defends against: 'Inf', 'NA', too many categorical levels, rare categorical levels, and new categorical levels (levels seen during application, but not during training). 'vtreat::prepare' should be used as you would use 'model.matrix'. [Upcoming data preparation and modeling article series](http://www.win-vector.com/blog/2017/09/upcoming-data-preparation-and-modeling-article-series/)
-- RMarkdown & Knitr
-	- [insert portions of a markdown document inside another markdown document using knitr](https://stackoverflow.com/questions/17593912/insert-portions-of-a-markdown-document-inside-another-markdown-document-using-kn). 
-```
-1. that is what the chunk option child is for, e.g. in second.Rmd, you can
-``{r child='first.Rmd'}
-``
-2. that is a little bit trickier, but you can call knit_child() manually, e.g.
-``{r echo=FALSE, results='asis'}
-# knit the first three lines of first.Rmd
-cat(knit_child(text = readLines('first.Rmd')[1:3]), sep = '\n')
-``
-```
-	- [How to combine two RMarkdown (.Rmd) files into a single output?](https://stackoverflow.com/questions/25824795/how-to-combine-two-rmarkdown-rmd-files-into-a-single-output)
-	- [Chunk options and package options](https://yihui.name/knitr/options/#child-documents). 2017-02-03
-- При публикации в PDF файла RMarkdown, содержащего HTML элементы, компиляция ломается с сообщением "HTML output in non-HTML formats by adding this option to the YAML front-matter of your rmarkdown file:
-always_allow_html: yes". Отчасти этот вопрос обсуждается здесь: хrendering to md_document results in error if code generates HTML #516  {Closed}](https://github.com/rstudio/rmarkdown/issues/516)
 
 # 23.09.2017
 ## R
@@ -3380,8 +3510,6 @@ A few months ago rOpenSci’s Scott Chamberlain asked me for feedback about a ne
 - [The writexl package: zero dependency xlsx writer for R](https://ropensci.org/blog/technotes/2017/09/08/writexl-release)
 - COOL! [Infographic-style charts using the R waffle package](https://nsaunders.wordpress.com/2017/09/08/infographic-style-charts-using-the-r-waffle-package/)
 	- [Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS](http://fontawesome.io/)
-- [R Markdown for documents with logos, watermarks, and corporate styles](http://ellisp.github.io/blog/2017/09/09/rmarkdown)
-	- [Demonstration page of R Markdown in combination with corporate theming](http://ellisp.github.io/presentations/rmarkdown-styled-demo.html)
 - [Measurement units in R](https://cran.r-project.org/web/packages/units/vignettes/measurement_units_in_R.html)
 
 # 08.09.2017
@@ -4360,27 +4488,6 @@ Streaming 'JSON' ('ndjson') has one 'JSON' record per-line and many modern 'ndjs
 
 # 15.06.2017
 ## R
-- COOL! [Creating nice tables using R Markdown](https://chesterismay.wordpress.com/2015/11/17/nice-tables-using-r-markdown/)
-- [Specify height and width of ggplot graph in Rmarkdown knitr output](https://stackoverflow.com/questions/39634520/specify-height-and-width-of-ggplot-graph-in-rmarkdown-knitr-output). `fig.width`, `fig.height`. Figure sizes are specified in inches and can be included as a global option of the document output format. Default is 7x5
-- Когда пытаюсь опубликовать kable с указанием caption, название постоянной части "Таблица" дает ошибку при компиляции на строне Connect:
-```
- ! LaTeX Error: Command \CYRT unavailable in encoding EU1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...
-
-l.118 \caption{Longtable}
-```
-Решение указано здесь: [Russian language within figure captions in unicode-aware systems {duplicate}](https://tex.stackexchange.com/questions/110013/russian-language-within-figure-captions-in-unicode-aware-systems). 
-Симптоматика описана также здесь: [Cyrillic word error in Figure Captions](https://tex.stackexchange.com/questions/351510/cyrillic-word-error-in-figure-captions)
-- Детали по правильному применению рецепта: [\renewcommand\tablename{name} does not work](https://tex.stackexchange.com/questions/55090/renewcommand-tablenamename-does-not-work)
-```
-\AtBeginDocument{%
-  \renewcommand\tablename{new}
-}
-```
-
 
 
 # 14.06.2017
@@ -4652,7 +4759,6 @@ Today we are proud to announce a major release of the RQGIS package providing an
 	- [remark.js](https://remarkjs.com)
 	- [remark.js wiki](https://github.com/gnab/remark/wiki)
 	- [Gregory Blomquist remark.js presentations with rmarkdown](https://bitbucket.org/snippets/gregblomquist/yoXxz/remarkjs-presentations-with-rmarkdown)
-- [RMarkdown сhunk options and package options](https://yihui.name/knitr/options/)
 
 # 24.05.2017
 ## R 
@@ -4773,14 +4879,6 @@ This is a problem that occurs only with R 3.4. Now that CRAN has officially rele
 [Fix](https://github.com/dmpe/shiny/commit/b5f6333a7cdd57d08fb677e8d23b4b3f8de86684)
 	- [RStudio 0.99 crashes when ggplot is called](https://support.rstudio.com/hc/en-us/community/posts/207645558-RStudio-0-99-crashes-when-ggplot-is-called)
 	- [Error in install.packages : missing value where TRUE/FALSE needed](https://github.com/tidyverse/dplyr/issues/1433). Общий совет -- откатывайтесь пока на 3.3.3 или качайте патченную версию [отсюда](https://cran.r-project.org/bin/windows/base/rtest.html)
-
-
-## R markdown
-- [How to make tables float in Rmarkdown pdf document/Inserting tables causing text to disappear in pdf output](http://stackoverflow.com/questions/41705848/how-to-make-tables-float-in-rmarkdown-pdf-document-inserting-tables-causing-text)
-- [Moving from Beamer to R Markdown](http://rmarkdown.rstudio.com/articles_beamer.html)
-- [Simple manual RMarkdown tables that look good in HTML, PDF and DOCX](http://stackoverflow.com/questions/19997242/simple-manual-rmarkdown-tables-that-look-good-in-html-pdf-and-docx)
-- [A few methods for making tables in rmarkdown](https://rpubs.com/benmarwick/tables-rmarkdown)
-
 
 
 # 05.05.2017
@@ -4921,34 +5019,6 @@ Searching and querying takes the format of: http://localhost:9200/[index]/[type]
 Below is the readme from the repo. I do need help fixing some issues, but I am quite certain you guys can help with that. If we collaborate on this then we will all have a pretty awesome way to quickly setup an encrypted and easy to use dashboard environment.
 **Docker + Nginx + Let’s Encrypt + Rstudio + Shiny**
 - [errors 0.0.1]()https://www.enchufa2.es/archives/errors-0-0-1.html). In physics, engineering and other disciplines, a single number, a bare quantity, is useless, meaningless. When you measure something, your results will be within the precision of your equipment, and then you need to propagate those errors up to whatever final indirect measure you are interested in. Finally, you need to express it properly. For instance, the elementary charge.
-
-## R Markdown
-- [How to include LaTeX package in R Markdown?](https://tex.stackexchange.com/questions/171711/how-to-include-latex-package-in-r-markdown)
-- [Knitr with R Markdown](http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html). Полезный пункт  **Converting R Markdown to html**:
-	- Via RStudio
-	- Via the command line (or GNU make)
-`R -e "rmarkdown::render('knitr_example.Rmd')"`
-- Помощь по командам, ассоциированных с pandoc: `?rmarkdown::pandoc_available`
-- Проблема с кодировкой pdf файла решается заданием параметра `encoding`:  `R -e "rmarkdown::render('ru-tex-pdf-examples.Rmd', encoding = 'UTF-8')"`
-- Как включить в YAML заголовок r код? Решение вполне простое и элегантное: '`r format(Sys.Date(), "%B %d, %Y")`'. Детали смотрим здесь:
-	- [YAML current date in rmarkdown](http://stackoverflow.com/questions/23449319/yaml-current-date-in-rmarkdown)
-	- [Using R markdown and knitr: Possible to get R objects interpreted in YAML](http://stackoverflow.com/questions/25813420/using-r-markdown-and-knitr-possible-to-get-r-objects-interpreted-in-yaml)
-	- [Inline R code in YAML for rmarkdown doesn't run](http://stackoverflow.com/questions/32637340/inline-r-code-in-yaml-for-rmarkdown-doesnt-run)
-- [Interactive Documents: Advanced Topics. Shiny Reactives](http://rmarkdown.rstudio.com/authoring_shiny_advanced.html)
-- [Using Arial in R figures destined for PLOS ONE](http://www.fromthebottomoftheheap.net/2013/09/09/preparing-figures-for-plos-one-with-r/)
-- [liberation-fonts](https://pagure.io/liberation-fonts). The Liberation Fonts are intended to be replacements for the three most commonly used fonts on Microsoft systems: Times New Roman, Arial, and Courier \ New.
-- Проблема со шрифтами при генерации pdf... [Error in grid.Call(L_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : Polygon edge not found](http://stackoverflow.com/questions/10581440/error-in-grid-calll-textbounds-as-graphicsannotxlabel-xx-xy-polygon)
-	- [RMarkdown PDF Documents](http://rmarkdown.rstudio.com/pdf_document_format.html)
-	- COOL!!!! Для PDF решение кроется в строчке `knitr::opts_chunk$set(dev='cairo_pdf') # решили проблему с генерацией русского текста в графиках`. Но тогда мы получаем проблему с отображением графики в html.
-	- Closed Ticket # 111: [Set knitr figure device `dev` by output type?](https://github.com/rstudio/rmarkdown/issues/111). Seconding this. I'd like to be able to set cairo_pdf for PDF output but svg for HTML outputs, like so:
-```
-output:
-  pdf_document:
-    dev: cairo_pdf
-  html_document:
-    dev: svg
-```
-
 
 # 24.04.2017
 ## R
@@ -5257,7 +5327,6 @@ UniversalPOS annotation for languages: Ancient_Greek, Ancient_Greek-PROIEL, Arab
 - [Data Science in the Tidyverse](https://www.rstudio.com/resources/videos/data-science-in-the-tidyverse/) by Hadley Wickham
 
 ## R
-- [Automatically scale font size (etc.) of ggplot2 inside an Rmarkdown document](http://stackoverflow.com/questions/28835491/automatically-scale-font-size-etc-of-ggplot2-inside-an-rmarkdown-document)
 - [Scale and size of plot in RStudio shiny](http://stackoverflow.com/questions/17838709/scale-and-size-of-plot-in-rstudio-shiny)
 - [Learn about your user with session$clientData](https://shiny.rstudio.com/articles/client-data.html)
 - COOL! [The ggiraph package let R users to make ggplot interactive. The package is an htmlwidget.](https://davidgohel.github.io/ggiraph/articles/an_introduction.html)
@@ -5997,7 +6066,7 @@ I am happy to introduce the padr package, which is now available on CRAN. If you
 - [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
 - [Debugme](https://github.com/gaborcsardi/debugme). Easy and efficient debugging for R packages. gaborcsardi/debugme
 - COOL! Классный сайт с примерами визуализации. [Welcome to Kristoffer Magnusson's blog about R, STATISTICS, PSYCHOLOGY, OPEN SCIENCE, DATA VISUALIZATION](http://rpsychologist.com/parsing-data-from-a-text-file-and-plotting-where-people-live-using-ggplot2-and-openstreetmaps/)
-- COOL presentation. [Advanced R Markdown. Behind the Knit Button](https://slides.yihui.name/2017-rstudio-conf-rmarkdown-Yihui-Xie.html#1) by Yihui Xie, RStudio
+
 
 ## Developing R Packages
 - [R package primer a minimal tutorial](http://kbroman.org/pkg_primer/)
@@ -6130,43 +6199,6 @@ One use of anonymous functions is to create small functions that are not worth n
 
 # 09.01.2017
 
-## knitr. Запускаем Rmd -> PDF
-Смотрим ссылки ниже. Важный концепт, который держим в голове -- возможность генерации отчетов из .R файлов (не .Rmd) посредством `spin`. `rmarkdown::render()` автоматически выбирает spin\knit в зависимости от расширения файла.
-- При компиляции в PDF возникает ошибка `! Package inputenc Error: Unicode char Рѕ (U+43E)`. Ищем ответы здесь: [Package inputenc Error: Unicode char \u8 in RStudio](http://stackoverflow.com/questions/32794157/package-inputenc-error-unicode-char-u8-in-rstudio)
-- Компиляция .tex ломается на команде '\href{}' при `inputenc=utf8` и `fontencoding=T2A`
-- [Knit PDF and la-tex (russian text)](http://qa.piterdata.ninja/p/1742/). Тут много полезного про управление опциями в заголовке самого документа.
-- Попытка включить T2A шрифты (видимо, так) приводит к такой ошибке: `pdfTeX error (font expansion): auto expansion is only possible with scalable fonts. \AtBegShi@Output ...ipout \box \AtBeginShipoutBox`
-- Как обычно, мучаемся с русскими шрифтами в LaTeX в PDF. [Установка PSCyr для Latex](http://blog.harrix.org/article/444)
-- Русские буквы, используем XeLaTeX:
-```
-    latex_engine: xelatex
-header-includes:
- \usepackage[T2A]{fontenc}
- \usepackage[utf8]{inputenc}
- \usepackage[russian]{babel}
- \usepackage{fontspec}
- \setmainfont{Cambria}
-```
-- Проблема с отображением русских букв на графиках. Ошибки подобного рода:
-	- Warning in title(...): неизвестна ширина символа 0xf2	
-	- Warning in grid.Call(L_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : неизвестна ширина символа 0xf0
-	- Warning in grid.Call(L_stringMetric, as.graphicsAnnot(x$label)): неизвестны шрифтовые метрики для символа 0xe
-Нашел очень подробный багтрекер на эту тему в репозитории knitr: [[R Sweave] Cyrillic characters in plots #436](https://github.com/yihui/knitr/issues/436). Также полезно почитать про механику генерации графиков в идеологии knitr в книге "Dynamic Documents with R anf knitr, 2nd edition". Концепции Graphical Device, Encoding, Plot Recording (п. 7.1, 7.2). Рекомендуют использовать cairo_pdf, в т.ч. в книге (п 7.2).
-В принципе, решение указывать в chunk опцию `dev="cairo_pdf"` срабатывает.
-- Нюансы с подключением доп пакетов и стилей в R markdown имеют несколько решений. Примеры решений, например, в этой подборке:
-	- [How to include LaTeX package in R Markdown?](http://tex.stackexchange.com/questions/171711/how-to-include-latex-package-in-r-markdown)
-	- [R markdown: PDF Documents. Overview](http://rmarkdown.rstudio.com/pdf_document_format.html)
-- Много полезных примеров в [Knitr with R Markdown by Karl Broman](http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html)
-- Читаем подробненько про схему работы knitr также в [Introduction to knitr by Michael Sachs](https://sachsmc.github.io/knit-git-markr-guide/knitr/knit.html)
-- [MarkdownReports. An R function library to generate (scientific) reports easily](http://markdownreports.github.io/). MarkdownReports is a set of R functions that allows you to generate precise figures easily, and create clean reports about what you just discovered with your analysis script.
-- [Programmatically creating Markdown tables in R with KnitR](http://stackoverflow.com/questions/15488350/programmatically-creating-markdown-tables-in-r-with-knitr)
-- Весьма нетривиальный вопрос, а как же сделать комментарии в R markdown. В ответе [Comments in Markdown](http://stackoverflow.com/questions/4823468/comments-in-markdown) рассмотрена масса различных варианты для markdown в целом.
-- [How do I insert a comment in Markdown?](https://www.quora.com/How-do-I-insert-a-comment-in-Markdown)
-- Размышления про различные директории. [Working with knitr using subdirectories](http://stackoverflow.com/questions/24585254/working-with-knitr-using-subdirectories)
-- Dean Attali. 
-	- [Knitr's best hidden gem: spin](http://deanattali.com/2015/03/24/knitrs-best-hidden-gem-spin/). Stop knitting & start spinning - spin can help you write reports much faster and avoid repeating yourself
-	- [ezknitr: R package to avoid the typical working directory pain when using knitr](http://deanattali.com/blog/ezknitr-package/)
-- [Compiling Reports from R Scripts](http://rmarkdown.rstudio.com/articles_report_from_r_script.html)
 
 ## Reports
 - [Markdown to PDF](http://www.markdowntopdf.com/). Just select a file that contains some markup and we'll convert it to a pdf in a snap.
@@ -6595,19 +6627,12 @@ PLEASE NOTE: Refer to your license terms for Microsoft SQL Server 2016 Enterpris
 ## R
 - [elasticsearchr: a Lightweight Elasticsearch Client for R](https://alexioannides.com/2016/11/28/elasticsearchr-a-lightweight-elasticsearch-client-for-r/)
 - [Introduction to Sub-Processes in R](https://cran.r-project.org/web/packages/subprocess/vignettes/intro.html)
-- [dynamically-generate-rmarkdown-chunks-to-display-datatable](https://gist.github.com/ReportMort/e54ec050d97d79996189)
+
 
 # 29.11.2016
 ## Math
 - COOL! [Visualizing fits, inference, implications of (G)LMMs](http://www.ashander.info/posts/2015/04/D-RUG-mixed-effects-viz/)
 - COOL! [An overview of gradient descent optimization algorithms](http://sebastianruder.com/optimizing-gradient-descent/index.html)
-
-## R Markdown
-- [Rmarkdown and DT: result do not render](http://stackoverflow.com/questions/33343241/rmarkdown-and-dt-result-do-not-render)
-- [Is it possible to have sortable(Interactive) table in rMarkdown?](http://stackoverflow.com/questions/27120002/is-it-possible-to-have-sortableinteractive-table-in-rmarkdown)
-- [Howto include js dependencies of DT datatable in Rmarkdown using knitr and pandoc](http://stackoverflow.com/questions/28303827/howto-include-js-dependencies-of-dt-datatable-in-rmarkdown-using-knitr-and-pando)
-- [Programmatically creating Markdown tables in R with KnitR](http://stackoverflow.com/questions/15488350/programmatically-creating-markdown-tables-in-r-with-knitr)
-- [An Introduction to The printr Package](http://yihui.name/printr/)
 
 # 28.11.2016
 ## IP adressing
@@ -6775,14 +6800,6 @@ df %>%
 - [Introducing the Team Data Science Process from Microsoft](https://blogs.technet.microsoft.com/machinelearning/2016/10/11/introducing-the-team-data-science-process-from-microsoft/)
 - [Probability Distributions Library for JavaScript](http://statisticsblog.com/probability-distributions/)
 - COOL! [Why you need version control](http://ellisp.github.io/blog/2016/09/16/version-control)
-
-## R Markdown & Notebooks
-- [My table looks better than yours](https://www.stat.ubc.ca/~jenny/STAT545A/topic10_tablesCSS.html)
-- [pander: An R Pandoc Writer](http://rapporter.github.io/pander/)
-- [R Code Chunks](http://rmarkdown.rstudio.com/authoring_rcodechunks.html)
-- COOL! [Render reports directly from R scripts](http://brooksandrew.github.io/simpleblog/articles/render-reports-directly-from-R-scripts/)
-	- [A collection of css themes for Markdown http://jasonm23.github.io/markdown-css-themes/](https://github.com/jasonm23/markdown-css-themes)
-	- [Markdown css themes Preview](http://jasonm23.github.io/markdown-css-themes/)
 
 ## R
 - [Introducing R-hub, the R package builder service](http://blog.revolutionanalytics.com/2016/10/r-hub-public-beta.html)
