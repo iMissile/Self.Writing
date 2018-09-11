@@ -42,6 +42,7 @@ To run trimforce type the following command into the terminal window : `sudo tri
 - [10 tiny features I love about OS X El Capitan](http://www.imore.com/10-tiny-features-i-love-os-x-el-capitan).
 - [27 secret features in Mac OS X El Capitan](http://www.macworld.co.uk/feature/mac-software/27-secret-features-in-mac-os-x-el-capitan-3626097/)
 - [6 Great Apps To Measure You Mac’s Performance](http://www.chriswrites.com/6-great-apps-to-measure-you-macs-performance/)
+- [60 горячих клавиш для продуктивной работы в Safari](https://lifehacker.ru/50-poleznyx-goryachix-klavish-dlya-produktivnoj-raboty-v-safari/)
 
 
 # Backups
@@ -55,6 +56,10 @@ TimeMachineEditor is a software for OS X that lets you change the default one-ho
 - [Tunnelblick	free software for OpenVPN on OS X and macOS](https://tunnelblick.net/)
 	- [Настройка OpenVPN на Mac OS X](http://www.freeproxy.ru/ru/vpn/mac-os-x/openvpn.htm)
 	- [Строим OpenVPN мост под Mac OSX](https://geektimes.ru/post/206322/)
+
+## Интересные утилиты
+- [iTerm2](https://www.iterm2.com/downloads.html) -- удобная бесплатная замена для штатного терминала.
+- [Cyberduck](https://cyberduck.io) is a libre server and cloud storage browser for Mac and Windows with support for FTP, SFTP, WebDAV, Amazon S3, OpenStack Swift, Backblaze B2, Microsoft Azure & OneDrive, Google Drive and Dropbox.
 
 ## Как сделать ресет для OneDrive
 - COOL! [ONEDRIVE SYNC ISSUES? HOW TO RESET ONEDRIVE FOR MAC THE EASY WAY!](
