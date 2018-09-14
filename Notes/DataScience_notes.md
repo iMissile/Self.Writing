@@ -66,13 +66,15 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [R Manuals as bookdown](http://colinfay.me/r-manuals/). You’ll find here a list of the R manuals converted to bookdown.
 - [Processing and Analyzing Financial Data with R](https://sites.google.com/view/pafdR/home)
 - [Data Visualization for Social Science. A practical introduction with R and ggplot2](http://socviz.co/)
+- [Data Science Live Book](https://livebook.datascienceheroes.com/) by Pablo Casas, July 2018
 - [Sinew: Simple R Package Documentation](https://metrumresearchgroup.github.io/sinew/)
 - [The R Inferno](http://www.burns-stat.com/pages/Tutor/R_inferno.pdf)
 - [The Tao Of Programming](http://canonical.org/~kragen/tao-of-programming.html)
 - [R Internals](https://cran.r-project.org/doc/manuals/r-release/R-ints.html)
 - [Field Guide to the R Ecosystem](http://fg2re.sellorm.com/)
 - [Feature Engineering and Selection: A Practical Approach for Predictive Models](http://www.feat.engineering/) by Max Kuhn and Kjell Johnson
-
+- [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/bookdown.pdf)
+- [Hands-on Deep Reinforcement Learning, published by Packt](https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On)
 
 # Video
 - [Основы анализа данных. ВШЭ](https://www.youtube.com/channel/UCLk-Oih8VlqF-StidijTUnw/videos)
@@ -207,29 +209,6 @@ Web Scraper is a company specializing in data extraction from web pages. We offe
 - [What is an ECU? CPU Benchmarking in the Cloud](http://blog.cloudharmony.com/2010/05/what-is-ecu-cpu-benchmarking-in-cloud.html)
 - [Making Sense of AWS EC2 Instance Types Pricing: ECU Vs. vCPU](https://www.botmetric.com/blog/aws-ec2-instance-type-pricing-ecu-vs-vcpu/)
 - [Запуск виртуальной машины Linux с помощью Amazon EC2](https://aws.amazon.com/ru/getting-started/tutorials/launch-a-virtual-machine/)
-
-
-# 21.08.2018
-## R
-- [Why build a recommender system?](https://www.mango-solutions.com/blog/introduction-to-recommender-systems)
-- [BooST series I: Advantage in Smooth Functions](https://insightr.wordpress.com/2018/08/20/boost-series-i-advantage-in-smooth-functions/)
-- [Missing deprecation warning when setting row names on tibble](https://community.rstudio.com/t/missing-deprecation-warning-when-setting-row-names-on-tibble/2004)
-- `get_os` для опредления MacOS:
-```
-get_os <- function() {
-  if (.Platform$OS.type == "windows") { 
-    "win"
-  } else if (Sys.info()["sysname"] == "Darwin") {
-    "mac" 
-  } else if (.Platform$OS.type == "unix") { 
-    "unix"
-  } else {
-    stop("Unknown OS")
-  }
-}
-```
-- [MS Access export table as .CSV file](https://answers.microsoft.com/en-us/msoffice/forum/msoffice_access-mso_other-msoversion_other/ms-access-export-table-as-csv-file/2df3f848-1560-4eeb-ba69-ee0be8f4b9db)
-- Нашлись грабли с логическими операциями для множественных колонок. [Logical “and” for multiple logical vectors](https://stackoverflow.com/questions/40145025/logical-and-for-multiple-logical-vectors)
 
 
 ## knitr
@@ -370,6 +349,206 @@ header-includes:
 - COOL! [Render reports directly from R scripts](http://brooksandrew.github.io/simpleblog/articles/render-reports-directly-from-R-scripts/)
 	- [A collection of css themes for Markdown http://jasonm23.github.io/markdown-css-themes/](https://github.com/jasonm23/markdown-css-themes)
 	- [Markdown css themes Preview](http://jasonm23.github.io/markdown-css-themes/)
+- [Two html tables with different formats](https://community.rstudio.com/t/two-html-tables-with-different-formats/5144)
+- [Create Awesome LaTeX Table with knitr::kable and kableExtra](https://haozhu233.github.io/kableExtra/awesome_table_in_pdf.pdf)
+- [Using knitr and pandoc to create reproducible scientific reports](http://galahad.well.ox.ac.uk/repro/)
+- [The write2 function](https://cran.r-project.org/web/packages/arsenal/vignettes/write2.html)
+- COOL! [In `knitr` how can I test for if the output will be PDF or word?](https://stackoverflow.com/questions/35144130/in-knitr-how-can-i-test-for-if-the-output-will-be-pdf-or-word)
+- [Prerendered Shiny Documents](https://rmarkdown.rstudio.com/authoring_shiny_prerendered.html). Overview
+- [How to print RMarkdown code chunk execution times? {duplicate}](https://stackoverflow.com/questions/43434239/how-to-print-rmarkdown-code-chunk-execution-times)
+
+# 13.09.2018
+## R
+- [If not Notebooks, then what? Look to Literate Programming](http://blog.revolutionanalytics.com/2018/09/notebooks-literate-programming.html). Author and research engineer Joel Grus kicked off an important conversation about Jupyter Notebooks in his [recent presentation at JupyterCon](https://docs.google.com/presentation/d/1n2RlMdmv1p25Xy5thJUhkKGvjtV-dkAIsUXP-AL4ffI/edit#slide=id.g362da58057_0_1)
+- [The First Notebook War](https://yihui.name/en/2018/09/notebook-war/). So Joel Grus doesn't like Jupyter notebooks. Here are some of my thoughts on notebooks, IDE, and R Markdown. Yihui Xie / 2018-09-10
+- COOL! [future 1.9.0 - Output from The Future](https://www.jottr.org/2018/07/23/output-from-the-future/)
+- COOL! [Comparison of breakDown, lime and shapleyR](https://rawgit.com/pbiecek/DALEX_docs/master/vignettes/Comparison_between_breakdown%2C_lime%2C_shapley.html) by Aleksandra Grudziąż, 15 czerwca 2018
+In the vignette below we will see how methods implemented in three R packages focuses on variables in selected model. For our model we consider breakDown, lime and shapleyr.
+- Отличные пакеты:
+	- [SHINRA](https://shinra-dev.github.io/) is a collection of packages, or meta-package, for R. The primary purpose for the packages is to help programmers access, measure, visualize, and understand hardware resources. В частности, пакет [shinra-dev/memuse](https://github.com/shinra-dev/memuse)
+	- [bench](https://github.com/r-lib/bench) -- "убийца" microbenchmark. High Precision Timing of R Expressions http://bench.r-lib.org/
+	- [carbonate](https://yonicd.github.io/carbonate/). “carbon.js is the easiest way to create beautiful images of your source code.”
+This package uses an R6 api to interact with carbon.js and create directly from the console carbon images.
+- [MonetDBLite](https://github.com/hannesmuehleisen/MonetDBLite)
+MonetDBLite is an embedded analytical SQL database that runs a variety of environments and does not require the installation of any external software. MonetDBLite is derived from free and open-source MonetDB, a product of the Centrum Wiskunde & Informatica.
+- [Installing older versions of packages](https://support.rstudio.com/hc/en-us/articles/219949047-Installing-older-versions-of-packages)
+- [maptools: Tools for Reading and Handling Spatial Objects](https://cran.r-project.org/web/packages/maptools/index.html)
+- [capitalone/dataCompareR](https://github.com/capitalone/dataCompareR) dataCompareR is an R package that allows users to compare two datasets and view a report on the similarities and differences.
+- COOL! tsibble ecosystem:
+	- COOL! [The tsibble package](https://pkg.earo.me/tsibble/articles/intro-tsibble.html) extends the tidyverse to temporal-context data. Built on top of the tibble, a tsibble (or tbl_ts) is a data-centric format, following the tidy data principle (Wickham 2014).
+	- [hts](http://pkg.earo.me/hts/). The R package hts presents functions to create, plot and forecast hierarchical and grouped time series.
+	- COOL! [sugrrants](https://pkg.earo.me/sugrrants/).  The goal of sugrrants is to provide supporting graphs with R for analysing time series data. It aims to fit into the tidyverse and grammar of graphics framework for handling temporal data.
+	- COOL! [tidyverts/fasster](https://github.com/tidyverts/fasster). Forecasting with Additive Switching of Seasonality, Trend and Exogenous Regressors. Очень хорошая [презентация](https://www.mitchelloharawild.com/user2018/#1)
+	- The R package [fable](https://github.com/tidyverts/fable) provides methods and tools for displaying and analysing univariate time series forecasts including exponential smoothing via state space models and automatic ARIMA modelling. Data, model and forecast objects are all stored in a tidy format.
+
+## Git
+- [How can I undo the last commit?](https://www.git-tower.com/learn/git/faq/undo-last-commit). Ответ: `$ git reset --soft HEAD~1`
+- [On undoing, fixing, or removing commits in git](https://sethrobertson.github.io/GitFixUm/fixup.html)
+
+# 12.09.2018
+## Gitlab
+- [GitLab and SSH keys](https://docs.gitlab.com/ee/ssh/)
+- [How to create your SSH Keys](https://docs.gitlab.com/ee/gitlab-basics/create-your-ssh-keys.html)
+- [Gitlab : How To Switch Remote Repository URL From Ssh To Http](https://www.linuxhelp.com/questions/gitlab-how-to-switch-remote-repository-url-from-ssh-to-http/)
+first verify the existing remote url status using `git remote -v`... then refer below example to modify URL ssh to http
+```
+git remote set-url origin http://git@mp.trainee.co/trainee/user1.git
+```
+- [How do I tell Git for Windows where to find my private RSA key?](https://serverfault.com/questions/194567/how-do-i-tell-git-for-windows-where-to-find-my-private-rsa-key)
+
+## DS
+- COOL! [Towards Data Science. Sharing concepts, ideas, and codes]()https://towardsdatascience.com/)
+	- [Understanding Feature Engineering (Part 1) — Continuous Numeric Data](https://towardsdatascience.com/understanding-feature-engineering-part-1-continuous-numeric-data-da4e47099a7b)
+	- [Understanding Feature Engineering (Part 2) — Categorical Data](https://towardsdatascience.com/understanding-feature-engineering-part-2-categorical-data-f54324193e63)
+	- [Understanding Feature Engineering (Part 3) — Traditional Methods for Text Data](https://towardsdatascience.com/understanding-feature-engineering-part-3-traditional-methods-for-text-data-f6f7d70acd41)
+	- [Automated Feature Engineering in Python](https://towardsdatascience.com/automated-feature-engineering-in-python-99baf11cc219). How to automatically create machine learning features
+- [Feature Lab](https://www.featurelabs.com/product/). Automated Feature Engineering for the Enterprise
+Feature Labs accelerates the error prone, time intensive, and costly process of intelligently transforming raw data for machine learning algorithms
+- [A Hands-On Guide to Automated Feature Engineering using Featuretools in Python](https://www.analyticsvidhya.com/blog/2018/08/guide-automated-feature-engineering-featuretools-python/)
+- [Featuretools](https://www.featuretools.com/). An open source python framework for automated feature engineering
+- [Automated Text Feature Engineering using textfeatures in R](https://datascienceplus.com/automated-text-feature-engineering-using-textfeatures-in-r/)
+- [Automated Feature Selection using bounceR](https://www.statworx.com/de/blog/data-science/automated-feature-selection-using-bouncer/)
+	- [STATWORX/bounceR. Automated Feature Selection](https://github.com/STATWORX/bounceR)
+
+
+
+# 11.09.2018
+## R
+- [Difference in preprocessing using recipes and caret's preProcess](https://stackoverflow.com/questions/50339298/difference-in-preprocessing-using-recipes-and-carets-preprocess)
+- COOL! Обсуждение [Future of caret?](https://community.rstudio.com/t/future-of-caret/612)
+- COOL [greta. simple and scalable statistical modelling in R](https://goldingn.github.io/greta/)
+- [Lattice or GGplot2. 2018](https://community.rstudio.com/t/lattice-or-ggplot2/6240). Ссылки на отличные ресурсы:
+People definitely still use both packages.
+	- You can visually see some of the differences in Tufte in R:
+http://motioninsocial.com/tufte/
+	- Here's another post: Plotting in R: Intro to base, lattice and ggplot2 by Joseph V. Casillas
+http://www.jvcasillas.com/base_lattice_ggplot/
+	- And another side-by-side comparison from STAT545, below:
+https://www.stat.ubc.ca/~jenny/STAT545A/block18_gapminderGgplot2VsLattice.html
+
+
+
+# 10.09.2018
+## R
+- COOL! [Diagnosing RStudio Startup Issues](https://datawookie.netlify.com/blog/2018/09/diagnosing-rstudio-startup-issues/). !! If you have problems running RStudio, give `--run-diagnostics` a try.
+- [Playing Map() and Reduce() in R – Subsetting](https://statcompute.wordpress.com/2018/09/08/playing-map-and-reduce-in-r-subsetting/)
+- [Driving Drill Dynamically with Docker and Updating Storage Configurations On-the-fly with sergeant](https://rud.is/b/2018/09/09/driving-drill-dynamically-with-docker-and-updating-storage-configurations-on-the-fly-with-sergeant/)
+- [WVU Log Viewer](www.wvulogviewer.org/). WVU Well log viewer is a web enabled application to quickly visualize and interpret well log data. User can upload a LAS file and visualize logs in different ...
+- Проблемка с read_csv, выявленная на экспериментах с нефтянкой: [Print column specification whenever there is guessing? #522 {Open}](https://github.com/tidyverse/readr/issues/522)/ Наблюдаются проблемы с разбором целевой колонки 'Нефть, т'. Там числа, завернутые в строки, 
+# а десятичным разделителем выступает запятая, а не точка
+- Как поставить файл с гитхаба из локального архива? 
+	- Вроде прошло `install.packages("C:/Users/Ilya/Downloads/multidplyr-master.zip", repos=NULL)`, с обязательным указанием `repos`/
+	- Прошло `devtools::install_local("C:/Users/Ilya/Downloads/multidplyr-master/")`. Читаем здесь: [Install R packages from github downloading master.zip](https://stackoverflow.com/questions/17366772/install-r-packages-from-github-downloading-master-zip)
+- [An introduction to multidplyr](https://github.com/hadley/multidplyr/blob/master/vignettes/multidplyr.md) by Hadley Wickham
+`multidplyr` is a new backend for `dplyr`. You continue to use the dplyr verbs that you're familiar with, but instead of the computation happening on one core it's spread across multiple cores. You effectively create a local cluster on your computer, and then multidplyr takes care of telling each node what to do.
+
+
+# 07.09.2018
+## R
+- COOL! [From Data to Viz](https://www.data-to-viz.com/). From Data to Viz leads you to the most appropriate graph for your data. It links to the code to build it and lists common caveats you should avoid.
+- [Diffusion/Wiener Model Analysis with brms – Part III: Hypothesis Tests of Parameter Estimates](http://singmann.org/wiener-model-analysis-with-brms-part-iii/)
+- [Is there an R function for finding the index of an element in a vector?](https://stackoverflow.com/questions/5577727/is-there-an-r-function-for-finding-the-index-of-an-element-in-a-vector)
+
+## ML
+- [h2o.varimp_plot: Plot Variable Importances](https://rdrr.io/cran/h2o/man/h2o.varimp_plot.html)
+- [h2o.varimp: Retrieve the variable importance](https://rdrr.io/cran/h2o/man/h2o.varimp.html)
+- [Метрики в задачах машинного обучения](https://habr.com/company/ods/blog/328372/)
+- [Understanding ROC curves](http://www.navan.name/roc/)
+- [Задачки про AUC (ROC)](https://alexanderdyakonov.wordpress.com/2015/10/09/%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%BA%D0%B8-%D0%BF%D1%80%D0%BE-auc-roc/)
+- [Логистическая функция ошибки](https://alexanderdyakonov.wordpress.com/2018/03/12/%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F-%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B8/#more-6139)
+
+# 06.09.2018
+## R
+- [In praise of Commonmark: wrangle (R)Markdown files without regex](https://ropensci.org/technotes/2018/09/05/commonmark/)
+- [Get Started with R (For Free) in IBM Watson Studio](https://www.littlemissdata.com/blog/watsonstudio)
+
+# 05.09.2018
+## R
+- [Regular-Expression-in-R](https://github.com/ritagior/Regular-Expression-in-R), resentation for SatRday Amsterdam 01/09/2018
+- [Optimization Methods for Tuning Predictive Models](https://github.com/topepo/Optimization-Methods-for-Tuning-Predictive-Models/blob/master/Kuhn_NLP_Tune.pdf), CRUG 2016, Max Kuhn Pfizer R&D
+- [dplyr::mutate_if fails when column names contain spaces](https://stackoverflow.com/questions/44781389/dplyrmutate-if-fails-when-column-names-contain-spaces?rq=1)
+- [Using group_by with mutate_if by column name](https://stackoverflow.com/questions/46607352/using-group-by-with-mutate-if-by-column-name)
+- Как проверить, что тип принадлежит Date:
+	- [Is there a way to check if a column is a Date in R?](https://stackoverflow.com/questions/18178451/is-there-a-way-to-check-if-a-column-is-a-date-in-r). Один из ответов: `lubridate::is.Date(x)`
+	- [DescTools::IsDate](https://www.rdocumentation.org/packages/DescTools/versions/0.99.19/topics/IsDate). Check If An Object Is Of Type Date
+
+## ML
+- Missing Data Imputation. 
+Mice just provide a way to overcome issues with NAs. Some of the models do not accept NAs. So you have 3 approaches - (1) Leave the data as is and go for a model which can handle missing data (XGBoost, RF etc.) (2) Drop the NAs. This might lead to a significant loss of signal detection as you are letting go of some data portion (3) Opt for a data imputation methodology. Mice is one such library which would do it for you very easily. It allows for imputation using a variety of rules ranging from 'meanvalue' imputation to deriving relationship between variables to predict 'missing' value of target variable using a variety of models.
+- [Impute Housing Data](https://www.kaggle.com/captcalculator/imputing-missing-data-with-the-mice-package-in-r)
+- [Methods for Multiple Imputing Analysis with R](https://www.andrew.cmu.edu/user/aurorat/MIA_r.html) by Aurora Tsai, Carnegie Mellon University, December 22, 2017
+- [A Solution to Missing Data: Imputation Using R](https://www.kdnuggets.com/2017/09/missing-data-imputation-using-r.html)
+- [Uncertainty in random forest imputations from R missForest package](https://stats.stackexchange.com/questions/178699/uncertainty-in-random-forest-imputations-from-r-missforest-package)
+- [How to use the data after missing values imputation (using mice)?](https://stats.stackexchange.com/questions/274176/how-to-use-the-data-after-missing-values-imputation-using-mice)
+- [Dealing with Missing Data using R](https://medium.com/coinmonks/dealing-with-missing-data-using-r-3ae428da2d17)
+
+
+- COOL! [Feature Selection in R with the Boruta R Package](https://www.datacamp.com/community/tutorials/feature-selection-R-boruta)
+	- `install.packages(c("Boruta", "missForest", "Amelia"))`
+- COOL! [Amelia II: A Program for Missing Data](https://gking.harvard.edu/amelia)
+- [Tutorial on 5 Powerful R Packages used for imputing missing values](https://www.analyticsvidhya.com/blog/2016/03/tutorial-powerful-packages-imputing-missing-values/)
+- A nominal variable is another name for a categorical variable. См. [Nominal Variable: Definition and Examples](http://www.statisticshowto.com/nominal-variable/)
+- [How to perform feature selection (i.e. pick important variables) using Boruta Package in R ?](https://www.analyticsvidhya.com/blog/2016/03/select-important-variables-boruta-package/)
+- [FEATURE SELECTION TECHNIQUES WITH R](http://dataaspirant.com/2018/01/15/feature-selection-techniques-r/)
+- [The caret Package. Chapter 18. Feature Selection Overview](https://topepo.github.io/caret/feature-selection-overview.html)
+
+# 04.09.2018
+## R
+- Random forrest
+	- [Titanic: Getting Started With R - Part 5: Random Forests](http://trevorstephens.com/kaggle-titanic-tutorial/r-part-5-random-forests/)
+	- [How to implement Random Forests in R](https://r-posts.com/how-to-implement-random-forests-in-r/)
+- [Заметки по R: Случайный лес (random forest)](https://bdemeshev.github.io/r_cycle/cycle_files/22_forest.html). Да и вообще, сам сайт ["Заметки по R"](http://bdemeshev.github.io/r_cycle/) неплох.
+- COOL! [Internationalization of shiny apps has never been easier!](https://appsilondatascience.com/internationalization-of-shiny-apps-i18n/)
+- [Playing Map() and Reduce() in R – By-Group Calculation](https://statcompute.wordpress.com/2018/09/03/playing-map-and-reduce-in-r-by-group-calculation/)
+- Video [Creating and Preprocessing a Design Matrix with Recipes](https://www.rstudio.com/resources/webinars/creating-and-preprocessing-a-design-matrix-with-recipes/)
+- COOL! [Tutorial on the R Apply Family](https://www.datacamp.com/community/tutorials/r-tutorial-apply-family)
+- COOL! [For loop functionals: friends of lapply()](http://adv-r.had.co.nz/Functionals.html)
+
+# 03.09.2018
+## R
+- [Spectrograms in R – a gallery](https://walczak.org/2018/09/spectrograms-in-r-a-gallery/)
+- COOL! rollRegress v0.1.0: Implements methods for fast-rolling and expanding linear regression models. The methods use rank-one updates and downdates of the upper triangular matrix from a QR decomposition. See Dongarra et al.(1979). The [vignette](https://rviews.rstudio.com/2018/08/27/july-2018-top-40-new-packages/) provides some details.
+- [ceterisParibus: Ceteris Paribus Profiles](https://cran.r-project.org/web/packages/ceterisParibus/index.html). 
+Ceteris Paribus Profiles (What-If Plots) are designed to present model responses around selected points in a feature space. For example around a single prediction for an interesting observation. Plots are designed to work in a model-agnostic fashion, they are working for any predictive Machine Learning model and allow for model comparisons. Ceteris Paribus Plots supplement the Break Down Plots from 'breakDown' package.
+- [makeParallel: Transform Serial R Code into Parallel R Code](https://cran.r-project.org/web/packages/makeParallel/)
+- [R move column to last using dplyr](https://stackoverflow.com/questions/43897844/r-move-column-to-last-using-dplyr): `data%>%select(-b,everything())`, [Explained by Hadley himself](https://github.com/tidyverse/dplyr/issues/2838)
+- COOL! [datapasta](https://github.com/MilesMcBain/datapasta) is about reducing resistance associated with copying and pasting data to and from R. It is a response to the realisation that I often found myself using intermediate programs like Sublime to munge text into suitable formats. Addins and functions in datapasta support a wide variety of input and output situations, so it (probably) "just works". Hopefully tools in this package will remove such intermediate steps and associated frustrations from our data slinging workflows.
+- COOL! Презентация с Rconf 2018. [Make Shiny Fast …by doing as little work as possible](https://tailrecursion.com/slides/fast-shiny/#/cran-explorer) by Alan Dipert (@alandipert), February 2, 2018
+- COOL! [Introduction to profvis](https://rstudio-pubs-static.s3.amazonaws.com/275741_41a9db67c79f4bcb9bf0933b7f268c5a.html) by Winston Chang, 2017-05-12
+- [How can I profile a full R flexdashboard app to see what might be taking the most time/memory?](https://stackoverflow.com/questions/49677598/how-can-i-profile-a-full-r-flexdashboard-app-to-see-what-might-be-taking-the-mos): `profvis::profvis(rmarkdown::run("flexdashboard.Rmd"))`
+- [install sqlite3 dev and other packages in centos](https://stackoverflow.com/questions/42669368/install-sqlite3-dev-and-other-packages-in-centos)
+```
+$ yum list | grep sqlite
+libsqlite3x-devel.x86_6
+```
+- [Rstudio SQLite](http://db.rstudio.com/databases/sqlite/)
+- [Querying SQLite Databases From R](http://tiffanytimbers.com/querying-sqlite-databases-from-r/)
+- DALEX. [Use case: Regression. Apartment prices in Warsaw](https://pbiecek.github.io/DALEX_docs/2-2-useCaseApartmetns.html)
+- [Model Interpretability with DALEX](http://uc-r.github.io/dalex)
+
+# 31.08.2018
+## Visualization
+- COOL! [RAW Graphs](https://rawgraphs.io/). The missing link between spreadsheets and data visualization.
+- [Falcon plotly. Can this App connect clickhouse database ? #431 {Open}](https://github.com/plotly/falcon/issues/431)
+- [Test-driving Apache Superset](https://www.smartcat.io/blog/2018/test-driving-apache-superset/)
+- [Superset: benefits and limitations of the open source data visualization tool by Airbnb](https://medium.com/@InDataLabs/superset-benefits-and-limitations-of-the-open-source-data-visualization-tool-by-airbnb-8dc8ac81efa9)
+	- Исходник: [Superset: benefits and limitations of the open source data visualization tool by Airbnb](https://indatalabs.com/blog/data-strategy/open-source-data-visualization-tool-superset)
+- [Почему я не использую реляционные СУБД](https://dou.ua/lenta/columns/dont-use-rdbms/)
+- [Сравнение Pentaho Enterprise & Community](http://www.aplanadc.ru/partners/pentaho/pentahoeevsce.html)
+- GeoMaps
+	- [MapShaper](http://mapshaper.org/)
+- [GeoJSON](http://geojson.io/)
+
+## R
+- COOL! [Making Graphs Look Easy with ggplot2 and Tidy Evaluation](https://crunch.io/dev/blog/autoplot-with-tidyeval/)
+- COOL! [An Example Usage of ggplot_add()](https://yutani.rbind.io/post/2017-11-07-ggplot-add/)
+- [Build your first web app dashboard using Shiny and R](https://medium.freecodecamp.org/build-your-first-web-app-dashboard-using-shiny-and-r-ec433c9f3f6c)
+- [Building a simple Sales Revenue Dashboard with R Shiny & ShinyDashboard](https://datascienceplus.com/building-a-simple-sales-revenue-dashboard-with-r-shiny-shinydashboard/)
+- [Designing Gadget UI](https://shiny.rstudio.com/articles/gadget-ui.html)
+- [Shiny Chart Builder - Explore your database with a point-and-click interface](https://blog.datascienceheroes.com/shiny-chart-builder-explore-your-database-with-a-point-and-click-interface/)
+- [daattali/advanced-shiny](https://github.com/daattali/advanced-shiny). Shiny tips & tricks for improving your apps and solving common problems https://deanattali.com/blog/advanced-…
+- COOL! [Discover and install useful RStudio addins](https://github.com/daattali/addinslist)
+
 
 
 
@@ -381,6 +560,11 @@ header-includes:
 - [Transfer data from R to Python with PyRserve and Bio7](https://bio7.org/transfer-data-from-r-to-python-with-pyrserve-and-bio7/)
 - [Fitting removal models with the detect R package](http://peter.solymos.org/code/2018/08/30/fitting-removal-models-with-the-detect-r-package.html)
 - [How to self-publish a book: Customizing Bookdown](https://blog.datascienceheroes.com/how-to-self-publish-a-book-customizing-bookdown/)
+- [shinyFeedback 0.1.0 on CRAN](https://www.tychobra.com/posts/2018_08_21_shinfeedback_release/?platform=hootsuite) by Andy Merlino, 2018/08/21
+
+## NES
+- [NES Graphics – Part 1](http://www.dustmop.io/blog/2015/04/28/nes-graphics-part-1/)
+- [Проект wideNES — выходим на границы экрана NES](https://habr.com/post/421555/). [Оригинал на английском](http://prilik.com/blog/wideNES)
 
 # 27.08.2018
 ## R
@@ -391,6 +575,29 @@ header-includes:
 - [MPT trees published in BRM](https://eeecon.uibk.ac.at/~zeileis/news/mpttree/)
 - COOL! [Statistics Sunday: Visualizing Regression](http://www.deeplytrivial.com/2018/08/statistics-sunday-visualizing-regression.html). Now the fun part: let's plot our regression tree.
 - COOL! [The power of stepped-wedge designs](https://www.rdatagen.net/post/alternatives-to-stepped-wedge-designs/)
+
+# 21.08.2018
+## R
+- [Why build a recommender system?](https://www.mango-solutions.com/blog/introduction-to-recommender-systems)
+- [BooST series I: Advantage in Smooth Functions](https://insightr.wordpress.com/2018/08/20/boost-series-i-advantage-in-smooth-functions/)
+- [Missing deprecation warning when setting row names on tibble](https://community.rstudio.com/t/missing-deprecation-warning-when-setting-row-names-on-tibble/2004)
+- `get_os` для опредления MacOS:
+```
+get_os <- function() {
+  if (.Platform$OS.type == "windows") { 
+    "win"
+  } else if (Sys.info()["sysname"] == "Darwin") {
+    "mac" 
+  } else if (.Platform$OS.type == "unix") { 
+    "unix"
+  } else {
+    stop("Unknown OS")
+  }
+}
+```
+- [MS Access export table as .CSV file](https://answers.microsoft.com/en-us/msoffice/forum/msoffice_access-mso_other-msoversion_other/ms-access-export-table-as-csv-file/2df3f848-1560-4eeb-ba69-ee0be8f4b9db)
+- Нашлись грабли с логическими операциями для множественных колонок. [Logical “and” for multiple logical vectors](https://stackoverflow.com/questions/40145025/logical-and-for-multiple-logical-vectors)
+
 
 # 20.08.2018
 ## R
@@ -404,7 +611,11 @@ header-includes:
 
 # 13.08.2018
 ## R
-- COOL! [Replacing selected values as NA #76 {Closed}](https://github.com/njtierney/naniar/issues/76)
+- Как добавить NA к факторам. `base::addNA()` или `forcats::fct_explicit_na(f, na_level = "(Missing)")` [Make missing values explicit](https://forcats.tidyverse.org/reference/fct_explicit_na.html). This gives missing value an explicit factor level, ensuring that they appear in summaries and on plots.
+
+
+ 
+- COOL! Операция `naniar::replace_to_na`, обратная `tidyr::replace_na`: [Replacing selected values as NA #76 {Closed}](https://github.com/njtierney/naniar/issues/76)
 - [tjmahr/fillgaze](https://github.com/tjmahr/fillgaze). Helper functions for interpolating missing eyetracking data
 - COOL! [set_na_where(): a nonstandard evaluation use case](https://www.tjmahr.com/set-na-where-nonstandard-evaluation-use-case/). Bottling up magic spells
 - [In dplyr, what are the intrinsic differences between setdiff and anti_join?](https://stackoverflow.com/questions/46854072/in-dplyr-what-are-the-intrinsic-differences-between-setdiff-and-anti-join)
@@ -557,11 +768,10 @@ header-includes:
 - [Back-Propagation is very simple. Who made it Complicated ?](https://medium.com/@14prakash/back-propagation-is-very-simple-who-made-it-complicated-97b794c97e5c)
 - COOL! [RethinkDB. The open-source database for the realtime web](https://www.rethinkdb.com/)
 - COOL! [22 Free and Open Source Data Visualization Tools to Grow Your Business](https://blog.capterra.com/free-and-open-source-data-visualization-tools/)
+	- COOL! [RAW Graphs](https://rawgraphs.io/). The missing link between spreadsheets and data visualization.
 - Отличное русскоязычное сообщество: [Big Data Russia](https://vk.com/big_data_russia)
 - [Stack Overflow: Kotlin, R and TypeScript among least disliked programming languages](https://jaxenter.com/kotlin-among-least-disliked-languages-138544.html)
 - [Язык программирования R для статистических вычислений](https://vk.com/rstatistics)
-- [RAW Graphs](https://rawgraphs.io/). The missing link between spreadsheets and data visualization.
-
 
 # 09.07.2018
 ## R
@@ -1018,6 +1228,7 @@ A 'SQL' query generator based on Edgar F. Codd's relational algebra and experien
 - COOL! [Tidying messy Excel data (tidyxl)](https://webbedfeet.netlify.com/post/tidying-messy-excel-data-tidyxl/)
 	- [unpivotr](https://nacnudus.github.io/unpivotr/index.html). unpivotr deals with non-tabular data, especially from spreadsheets.
 	- [tidyxl](https://nacnudus.github.io/tidyxl/). tidyxl imports non-tabular data from Excel files into R.
+- [Going from a human readable Excel file to a machine-readable csv with {tidyxl}](http://www.brodrigues.co/blog/2018-09-11-human_to_machine/)
 - Как поставить пакеты в R, если есть проблемы с https сертификатами. Выдает ошибку:
 ```
 Warning messages:
@@ -1933,7 +2144,7 @@ Create data summaries for quality control, extensive reports for exploring data,
 - СOOL! объяснение "на котиках" [Git снизу вверх](https://habrahabr.ru/company/intel/blog/344962/)
 
 ## R
-- Возможно ли средствами R сделать транслитерацию столбца с данными на русском языке на латиницу? Смотрим [блог в LiveJournal](ут, в комментах есть: http://r-statistics.livejournal.com/48247.html). Я предложил так: `stringi::stri_trans_general(c("Здесь фабула объять не может всех эмоций — шепелявый скороход в юбке тащит горячий мёд.", "Друг мой эльф! Яшке б свёз птиц южных чащ!"), "Russian-Latin/BGN")`
+- Возможно ли средствами R сделать транслитерацию столбца с данными на русском языке на латиницу? Смотрим [блог в LiveJournal](тут, в комментах есть: http://r-statistics.livejournal.com/48247.html). Я предложил так: `stringi::stri_trans_general(c("Здесь фабула объять не может всех эмоций — шепелявый скороход в юбке тащит горячий мёд.", "Друг мой эльф! Яшке б свёз птиц южных чащ!"), "Russian-Latin/BGN")`
 - [Palettes and graphics matching your RStudio editor](https://github.com/fkeck/editheme)
 
 ## ML

@@ -30,6 +30,10 @@
 Кроме того, “ShowKeyPlus” умеет извлекать product key из реестра незагруженной ОС. Кликните для этого “Retrieve key from backup” и укажите путь к источнику – файлу Software, который находится в каталоге Буква_раздела\Windows\system32\config.
 - [How To Get Windows 10 For Free If You’re Running Windows Vista or XP](http://bgr.com/2015/06/20/windows-10-free-upgrade-xp-vista/)
 
+# Перевод Win 32 на Win 64
+Это возможно!
+- [How to upgrade from a 32-bit to 64-bit version of Windows 10](https://www.windowscentral.com/how-upgrade-32-bit-64-bit-version-windows-10)
+
 # Переход на SSD
 - [Программа SSD Ready](https://www.ssdready.com/ssdready-ru/). Узнайте как долго у вас будет работать SSD диск
 - [RAMDisk, или что делать если у вас в компьютере 128 гигабайт оперативной памяти](https://geektimes.ru/company/kingston_technology/blog/277610/)
