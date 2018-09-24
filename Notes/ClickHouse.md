@@ -2,6 +2,7 @@
 - [PVSM: Рубрика «clickhouse»](http://www.pvsm.ru/cat/clickhouse)
 - Примеры запросов с группировкой по времени: [пример 1](https://gist.github.com/alexey-milovidov/2dee968eb95df63b271208f89d3697c3); [пример 2](https://gist.github.com/alexey-milovidov/6fd9246ce44b48345bee3a0df3da5ab0)
 - [ClickHouse: New Open Source Columnar Database](https://www.percona.com/blog/2017/02/13/clickhouse-new-opensource-columnar-database/)
+- [ClickHouse monitoring with Zabbix](https://www.altinity.com/blog/2018/9/3/clickhouse-monitoring-zabbix)
 
 ## Канал в телеграме
 http://telegrammy.net/group/clickhouse_ru/page87.htm

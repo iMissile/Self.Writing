@@ -357,6 +357,122 @@ header-includes:
 - [Prerendered Shiny Documents](https://rmarkdown.rstudio.com/authoring_shiny_prerendered.html). Overview
 - [How to print RMarkdown code chunk execution times? {duplicate}](https://stackoverflow.com/questions/43434239/how-to-print-rmarkdown-code-chunk-execution-times)
 
+
+# 24.09.2018
+## R
+- [A Performance Benchmark of Different AutoML Frameworks](https://www.statworx.com/de/blog/a-performance-benchmark-of-different-automl-frameworks/)
+- [Shiny application in production with ShinyProxy, Docker and Debian](https://rtask.thinkr.fr/blog/shiny-application-in-production-with-shinyproxy-docker-and-debian/)
+- [Where am I?](https://www.johnmackintosh.com/2018-09-23-Where-am-I/). Notes on the here package
+- [Union Multiple Data.Frames with Different Column Names](https://statcompute.wordpress.com/2018/09/22/union-multiple-data-frames-with-different-column-names/)
+- [By-Group Summary with SparkR – Follow-up for A Reader Comment](https://statcompute.wordpress.com/2018/09/23/by-group-summary-with-sparkr-follow-up-for-a-reader-comment/)
+- [Simple Steps to Create Treemap in R](https://r-posts.com/simple-steps-to-create-treemap-in-r/)
+ -[Timing Column Indexing in R](http://www.win-vector.com/blog/2018/09/timing-column-indexing-in-r/)
+- [yihui/servr. servr: A Simple HTTP Server to Serve Static Files or Dynamic Documents](https://cran.r-project.org/web/packages/servr/index.html)
+- COOL! [Heatmaps in R] by Jeff Oliver, 12 July, 2018. A worked example of making heatmaps in R with the ggplot package, as well as some data wrangling to easily format the data needed for the plot.
+- [Time Based Heatmaps in R](https://www.littlemissdata.com/blog/heatmaps). R на IBM Watson
+- [heatmap-esque plot for mouse clicking data](https://stackoverflow.com/questions/22442478/heatmap-esque-plot-for-mouse-clicking-data)
+- [edzer/hexbin. Hexagonal binning routines and plotting methods](https://github.com/edzer/hexbin)
+- [Be Awesome in ggplot2: A Practical Guide to be Highly Effective - R software and data visualization](http://www.sthda.com/english/wiki/be-awesome-in-ggplot2-a-practical-guide-to-be-highly-effective-r-software-and-data-visualization)
+- [RShiny mouse-click does not work with facet_grid #1539 {Closed}](https://github.com/tidyverse/ggplot2/issues/1539)
+- [shiny - Click on a map](http://playshiny.com/2016/10/17/shiny-click-on-a-map/)
+
+# 21.09.2018
+## R Profiling
+- [Profiling in R](http://ipub.com/r-profiling/). R has a built in performance and memory profiling facility: Rprof. Type  ?Rprof into your console to learn more. The way the profiler works is as follows:
+    		* you start the profiler by calling Rprof, providing a filename where the profiling data should be stored
+    		* you call the R functions that you want to analyse
+    		* you call Rprof(NULL) to stop the profiler
+    		* you analyse the file created by Rprof, typically using  summaryRprof
+- [Profiling with RStudio and profvis](https://blog.rstudio.org/2016/05/23/profiling-with-rstudio-and-profvis/). RStudio Blog
+- COOL! Презентация с Rconf 2018. [Make Shiny Fast …by doing as little work as possible](https://tailrecursion.com/slides/fast-shiny/#/cran-explorer) by Alan Dipert (@alandipert), February 2, 2018
+- COOL! [Introduction to profvis](https://rstudio-pubs-static.s3.amazonaws.com/275741_41a9db67c79f4bcb9bf0933b7f268c5a.html) by Winston Chang, 2017-05-12
+- [How can I profile a full R flexdashboard app to see what might be taking the most time/memory?](https://stackoverflow.com/questions/49677598/how-can-i-profile-a-full-r-flexdashboard-app-to-see-what-might-be-taking-the-mos): `profvis::profvis(rmarkdown::run("flexdashboard.Rmd"))`
+- [Shiny (R) Web App Performance - Profiling](https://lukesingham.com/shiny-r-performance-profiling/).
+```
+# Load library
+library(profvis)
+
+# Run profiler on shiny app with optional arg to save output
+profvis({ runApp('Projects/path_of_app') }  
+        , prof_output = '/path_to_save_output')
+```
+
+## R Streaming
+- [Streaming in R](https://plot.ly/r/streaming/)
+- [Plotly's Real-Time Streaming API](https://github.com/plotly/Streaming-Demos)
+- [htmlwidgets for R - gallery](http://gallery.htmlwidgets.org/)
+- [Introduction to the streamgraph htmlwidgtet R Package](https://hrbrmstr.github.io/streamgraph/) streamgraph is an htmlwidget JavaScript/D3 chart library.
+- [THE R GRAPH GALLERY. STREAMGRAPH](https://www.r-graph-gallery.com/streamgraph/) A Stream graph is really close from a stacked area chart. It displays the evolution of a numerical value (Y axis) in function of another numerical value (X axis).
+- [From Data to Viz](https://www.data-to-viz.com/). From Data to Viz leads you to the most appropriate graph for your data. It links to the code to build it and lists common caveats you should avoid.
+- [JohnCoene/echarts. echarts for R - htmlwidget http://echarts4r.john-coene.com](https://github.com/JohnCoene/echarts)
+- [ECHARTS](https://ecomfe.github.io/echarts-doc/public/en/index.html)
+- COOL! [Interactive plots in Shiny](https://rviews.rstudio.com/2018/09/20/shiny-r2d3/). With r2d3 there is more work, but the gains in customization and interactivity make it by far the best choice, in my opinion.
+
+## R
+- [Make your R code faster: part 1](https://phdstatsphys.wordpress.com/2017/12/20/make-your-r-code-runs-faster/)
+- [Make your R code faster: part 2](https://phdstatsphys.wordpress.com/2018/01/09/make-your-r-code-faster-part-2/)
+
+## Elastic
+- [Machine Learning for Nginx Logs - Identifying Operational Issues with Your Website](https://www.elastic.co/blog/machine-learning-for-nginx-logs)
+	
+
+# 19.09.2018
+## Twitter
+- [Apps of a Feather… Stick Together](http://apps-of-a-feather.com/)
+- [The best Twitter client for Windows 2018: schedule and manage your tweets](https://www.techradar.com/news/the-best-twitter-client)
+
+## Resilio
+- [If Your Device Is Stolen](https://help.resilio.com/hc/en-us/articles/204644049-If-your-device-is-stolen)
+If one of your devices used for sharing data via Sync has been stolen, the thief's chances to gain access to the contents of the shared folders depend on your operating system security. If the drive on the stolen device was encrypted, there’s nothing to worry about: no one will access your data unless they have a decryption key. If the drive wasn’t encrypted, the thief can potentially run Sync on the stolen device and, consequently, view, modify or remove data on other linked devices. If that is the case, the following steps should be considered:
+- Back up the data in the folders added to Sync.
+- Remove the synced data from the storage folder.
+- Uninstall Sync. While uninstalling on Windows select ‘Remove settings’.
+- Re-generate your identity and link your devices anew. For the guide on how to create an identity and link devices, click here
+- Re-add the folders.
+The above steps will remove the previous instance of Sync and break the connection with the stolen device. If you have a PRO version, you should activate your license again (click here to see how). The owner of the license is the peer who activated it most recently, therefore re-adding the license to Sync will override the previous activation. If the thief runs Sync on the stolen device and goes online, that instance of Sync will automatically be reverted to the FREE version.
+
+
+## R
+- [«smooth» package for R. Intermittent state-space model. Part I. Introducing the model](https://forecasting.svetunkov.ru/en/2018/09/18/smooth-package-for-r-intermittent-state-space-model-part-i-introducing-the-model/)
+- [caching plots in R/Shiny](https://stackoverflow.com/questions/24192570/caching-plots-in-r-shiny)
+- [rstudio/shinyloadtest. Tools for load testing Shiny applications - WIP!](https://github.com/rstudio/shinyloadtest)
+- [rstudio/shiny. Caching ETA #2132 {Closed}](https://github.com/rstudio/shiny/issues/2132)
+- [Official release of shiny.router and its new features](https://appsilon.com/shiny-router-package/)
+
+# 17.09.2018
+## R
+- [Welcome to DARTISTICS!](http://www.dartistics.com/index.html). Digital Analytics: R and staTISTICS
+This site is intended to be a resource for digital analysts who are interested in learning or expanding their knowledge of R and statistics. That’s from whence the semi-silly name came from:
+	- [Fast R code](http://www.dartistics.com/fast-r-code.html)
+- COOL! [readxl Workflows](https://readxl.tidyverse.org/articles/articles/readxl-workflows.html)
+- [Why are concurrent writes not allowed on an SQLite database?](https://softwareengineering.stackexchange.com/questions/340550/why-are-concurrent-writes-not-allowed-on-an-sqlite-database)
+- [Multiple simultaneous threads using SQLite in R {closed}](https://stackoverflow.com/questions/34026884/multiple-simultaneous-threads-using-sqlite-in-r)
+- [Four different ways to handle SQLite concurrency](https://medium.com/@gwendal.roue/four-different-ways-to-handle-sqlite-concurrency-db3bcc74d00e)
+- COOL! [Data visualisation pitfalls: how to avoid barbarplots ?](https://rtask.thinkr.fr/blog/data-visualisation-pitfalls-how-to-avoid-barbarplots/)
+- Неплохой анализ! [Why Vectorize?](https://statcompute.wordpress.com/2018/09/16/why-vectorize/)
+- [Break Down: model explanations with interactions and DALEX in the BayArea](http://smarterpoland.pl/index.php/2018/09/break-down-model-explanations-with-interactions-and-dalex-in-the-bayarea/)
+- COOL! [Create anatograms using ggplot2](https://github.com/jespermaag/gganatogram)
+- новые поступления от ropensci:
+	- [ropensci/charlatan](https://github.com/ropensci/charlatan). Create fake data in R
+	- [jqr -- R interface to jq, a JSON processor http://stedolan.github.io/jq/](https://github.com/ropensci/jqr). jqr makes it easy to process large amounts of json without having to convert from json to R, or without using regular expressions. This means that the eventual loading into R can be quicker.
+- ML. [cattonum](https://github.com/bfgray3/cattonum). cattonum (cat to num) provides different ways to encode categorical features as numerics.
+- [Synchronization for R with the flock Package](http://www.quintuitive.com/2014/11/20/synchronization-for-r-with-the-flock-package/)
+
+## LaTeX
+- [Поддержка \No убрана из babel](https://www.linux.org.ru/forum/general/9583562). 
+Вообще да, можно вставить `\newcommand{\No}{\textnumero}` в преамбулу документа и все будет работать.
+- [The Russian Language in the babel system , Igor A. Kotelnikov](http://ctan.math.illinois.edu/languages/babel/contrib/russian/russianb.pdf).  ... Since earlier versions babel did not support XeLATEX (at least for some languages including Russian), the polyglossia package was generally recommended in the past for use with XeLATEX as a replacement for babel. Nowadays, babel can be used with any engines, including LATEX, PDFLATEX, LuaLATEX, and XeLATEX. Nevertheless some troubles may occur with some languages which have no promptly updated .ldf files.
+- [Polyglossia vs Babel](https://tex.stackexchange.com/questions/88481/polyglossia-vs-babel)
+- [Polyglossia: An Alternative to Babel for XeLEATEX and LuaLATEX](http://mirrors.ibiblio.org/CTAN/macros/xetex/latex/polyglossia/polyglossia.pdf)
+- [How to Write Multilingual Text with Different Scripts in LaTeX](https://www.overleaf.com/latex/examples/how-to-write-multilingual-text-with-different-scripts-in-latex/wfdxqhcyyjxz#.W6D44mj7SUk)
+- [Polyglossia ignores my custom hyphenation](https://tex.stackexchange.com/questions/229915/polyglossia-ignores-my-custom-hyphenation)
+- [Changing language back and forth with polyglossia](https://tex.stackexchange.com/questions/186156/changing-language-back-and-forth-with-polyglossia)
+- [ShareLaTeX XeLaTeX user guide](https://ru.sharelatex.com/learn/latex/XeLaTeX)
+- [Overleaf: What OTF/TTF fonts are supported via fontspec?](https://www.overleaf.com/help/193-what-otf-slash-ttf-fonts-are-supported-via-fontspec#.W6EG_Gj7SUk)
+- [Overleaf: Gallery — Fonts](https://www.overleaf.com/gallery/tagged/fonts#.W6EG-mj7SUk)
+- [Overleaf: I have a custom font I'd like to load to my document. How can I do this?](https://www.overleaf.com/help/73-i-have-a-custom-font-id-like-to-load-to-my-document-how-can-i-do-this#.W6EHzGj7SUk)
+
+
 # 13.09.2018
 ## R
 - [If not Notebooks, then what? Look to Literate Programming](http://blog.revolutionanalytics.com/2018/09/notebooks-literate-programming.html). Author and research engineer Joel Grus kicked off an important conversation about Jupyter Notebooks in his [recent presentation at JupyterCon](https://docs.google.com/presentation/d/1n2RlMdmv1p25Xy5thJUhkKGvjtV-dkAIsUXP-AL4ffI/edit#slide=id.g362da58057_0_1)
@@ -384,6 +500,8 @@ MonetDBLite is an embedded analytical SQL database that runs a variety of enviro
 ## Git
 - [How can I undo the last commit?](https://www.git-tower.com/learn/git/faq/undo-last-commit). Ответ: `$ git reset --soft HEAD~1`
 - [On undoing, fixing, or removing commits in git](https://sethrobertson.github.io/GitFixUm/fixup.html)
+- [dnGrep](http://dngrep.github.io/) allows you to search across files with easy-to-read results. Search through text files, Word documents, PDFs, and archives using text, regular expression, XPath, and phonetic queries. dnGrep includes search-and-replace, whole-file preview, right-click search in File Explorer, and much more.
+- [Free alternative(s) to PowerGREP](https://stackoverflow.com/questions/1086198/free-alternatives-to-powergrep/7858518)
 
 # 12.09.2018
 ## Gitlab
@@ -513,9 +631,6 @@ Ceteris Paribus Profiles (What-If Plots) are designed to present model responses
 - [makeParallel: Transform Serial R Code into Parallel R Code](https://cran.r-project.org/web/packages/makeParallel/)
 - [R move column to last using dplyr](https://stackoverflow.com/questions/43897844/r-move-column-to-last-using-dplyr): `data%>%select(-b,everything())`, [Explained by Hadley himself](https://github.com/tidyverse/dplyr/issues/2838)
 - COOL! [datapasta](https://github.com/MilesMcBain/datapasta) is about reducing resistance associated with copying and pasting data to and from R. It is a response to the realisation that I often found myself using intermediate programs like Sublime to munge text into suitable formats. Addins and functions in datapasta support a wide variety of input and output situations, so it (probably) "just works". Hopefully tools in this package will remove such intermediate steps and associated frustrations from our data slinging workflows.
-- COOL! Презентация с Rconf 2018. [Make Shiny Fast …by doing as little work as possible](https://tailrecursion.com/slides/fast-shiny/#/cran-explorer) by Alan Dipert (@alandipert), February 2, 2018
-- COOL! [Introduction to profvis](https://rstudio-pubs-static.s3.amazonaws.com/275741_41a9db67c79f4bcb9bf0933b7f268c5a.html) by Winston Chang, 2017-05-12
-- [How can I profile a full R flexdashboard app to see what might be taking the most time/memory?](https://stackoverflow.com/questions/49677598/how-can-i-profile-a-full-r-flexdashboard-app-to-see-what-might-be-taking-the-mos): `profvis::profvis(rmarkdown::run("flexdashboard.Rmd"))`
 - [install sqlite3 dev and other packages in centos](https://stackoverflow.com/questions/42669368/install-sqlite3-dev-and-other-packages-in-centos)
 ```
 $ yum list | grep sqlite
@@ -3406,20 +3521,21 @@ Newhall, Nickerson & Judd (1943), Final report of the O.S.A Subcommittee on the 
 - [Erratum tidyr 0.7.0](https://www.tidyverse.org/articles/2017/09/erratum-tidyr-0.7.0/)
 
 ## Linux
+- COOL! How to use your favorite fonts in R charts](http://blog.revolutionanalytics.com/2012/09/how-to-use-your-favorite-fonts-in-r-charts.html)
 - Ставим шрифты в систему Linux. Вызвано проблемой с инсталляцией Roboto Condensed
 	- [How to install many font files quickly and easily?](https://askubuntu.com/questions/191778/how-to-install-many-font-files-quickly-and-easily)
 I found the following answer, found above, very helpful:
 Just create a .fonts folder in your home directory (if it doesn't exist) and unpack/copy them there. It's also a good idea to manually rebuild the font cache, so you can immediately use the fonts everywhere: `fc-cache -f -v`
 
 Пробуем так (навеяно темой [Problems with registering Roboto Condensed on macOS #18](https://github.com/hrbrmstr/hrbrthemes/issues/18):
-1. В R запускаем команду `import_roboto_condensed()` и смотрим местоположение шрифтов.
+1. В R запускаем команду `hrbrthemes::import_roboto_condensed()` и смотрим местоположение шрифтов.
 2. Копируем шрифты в систему такой командой (исходное место определили на пред. шаге): `sudo cp -r /usr/lib64/R/library/hrbrthemes/fonts/roboto-condensed /usr/share/fonts/truetype/`
 3. В R запускаем команду `extrafont::font_import()`
 - Решение по настройке Cairo. Под линукс, при использовании Cairo для генерации графики, необходимо ему прописать соответствие шрифтов внутренним настройкам:
-	- Смотрим мэппинг командой `CairoFontMatch(fontpattern="Roboto condensed")`
+	- Смотрим мэппинг командой `Cairo::CairoFontMatch(fontpattern="Roboto Condensed")`
 	- Переопределяем мэтчинг шрифтов:
 ```
-	(
+Cairo::CairoFonts(
   regular = "Roboto Condensed:style=Regular",
   bold = "Roboto Condensed:style=Bold",
   italic = "Roboto Condensed:style=Italic",
@@ -3427,7 +3543,32 @@ Just create a .fonts folder in your home directory (if it doesn't exist) and unp
   symbol = "Symbol"
 )
 ```
-
+В Linux имеем проблему с множественной регистрацией шрифтов. Roboto Condensed мапирутся на Medium. обнаружено:
+```
+More than one version of regular/bold/italic found for Roboto Condensed. Skipping setup for this font.
+Roboto Condensed Medium already registered with pdfFonts().
+> pdfFonts()
+```
+ extrafont::loadfonts()
+- Детально описана проблема, почему Medium садится как основной. [Configuring Roboto font in Linux](https://nileshgr.com/2013/02/24/configuring-roboto-font-in-linux)
+- Видимо, теперь это и для Linux тоже проблема: [Problems with registering Roboto Condensed on macOS #18 {open}](https://github.com/hrbrmstr/hrbrthemes/issues/18)
+- [extrafont fonts not recognized #26 {Open}](https://github.com/wch/extrafont/issues/26):
+Probably the best solution is to edit the font table so that the FamilyName entry for the Black version is "Roboto Black" instead of "Roboto". Or you could delete those entries. The font table file should be in the directory returned by `system.file("fontmap", "fonttable.csv", package="extrafontdb")`.
+- [Tools for using fonts in R graphics](https://github.com/wch/extrafont)
+```
+d <- read.csv(extrafont:::fonttable_file(), stringsAsFactors = FALSE)
+# d[grepl("Light", d$FontName),]$FamilyName <- font_rc_light
+d <- dplyr::filter(d, !stringi::stri_detect_fixed(FontName, "Medium"))
+write.csv(d, extrafont:::fonttable_file(), row.names = FALSE)
+extrafont::loadfonts()
+- COOL! [Working with R, Cairo graphics, custom fonts, and ggplot](https://www.andrewheiss.com/blog/2017/09/27/working-with-r-cairo-graphics-custom-fonts-and-ggplot/)
+```
+- [extra fonts in pdffonts in R](https://stackoverflow.com/questions/50431809/extra-fonts-in-pdffonts-in-r)
+- [extrafont Readme.rd](https://github.com/wch/extrafont/blob/master/README.md). Resetting the font database
+To reset the extrafont database, reinstall the extrafontdb package:
+```
+install.packages("extrafontdb")
+```
 
 # 03.10.2017
 ## R
@@ -6966,7 +7107,6 @@ channel <- odbcConnect("ProjectnameAcc")
 Table1Dat <- sqlFetch(channel, "Table1")
 ```
 
-
 ## R. Solving the Task
 - [Filtering row which contains a certain string using dplyr](http://stackoverflow.com/questions/22850026/filtering-row-which-contains-a-certain-string-using-dplyr)
 `str_detect`
@@ -8459,13 +8599,6 @@ structure(list(Date = as.Date(character()), File = character(), User = character
 ```
 - [Understanding data.table](http://r-norberg.blogspot.ru/2016/06/understanding-datatable-rolling-joins.html) by Rolling Joins
 
-- R Profiling
-	- [Profiling in R](http://ipub.com/r-profiling/). R has a built in performance and memory profiling facility: Rprof. Type  ?Rprof into your console to learn more. The way the profiler works is as follows:
-    		* you start the profiler by calling Rprof, providing a filename where the profiling data should be stored
-    		* you call the R functions that you want to analyse
-    		* you call Rprof(NULL) to stop the profiler
-    		* you analyse the file created by Rprof, typically using  summaryRprof
-	- [Profiling with RStudio and profvis](https://blog.rstudio.org/2016/05/23/profiling-with-rstudio-and-profvis/). RStudio Blog
 
 # 03.06.2016
 ## R & Wolfram
