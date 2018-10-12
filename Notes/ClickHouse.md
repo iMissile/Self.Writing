@@ -98,3 +98,22 @@ ORDER BY
 ```
 
 # Запрос для просмотра активных запросов
+
+# Запрос для просмотра пространства имен БД и таблиц
+См. [источник](https://clickhouse.yandex/docs/ru/operations/system_tables/)
+`select distinct(database) from system.columns`
+либо
+`select * from system.tables`
+
+# Дамп таблиц
+- [Dump/Import data from clickhouse](https://groups.google.com/forum/#!topic/clickhouse/Dx0CsFGbk7c)
+1. Dump of data:
+`clickhouse-client --query="SELECT * FROM table FORMAT Native" > table.native`
+Native is the most efficient format. 
+CSV, TabSeparated, JSONEachRow are more portable: you may import/export data to another DBMS.
+2. Dump of metadata:
+`clickhouse-client --query="SHOW CREATE TABLE table" --format=TabSeparatedRaw > table.sql`
+3. Restore of metadata:
+`clickhouse-client < table.sql`
+4. Restore of data:
+`clickhouse-client --query="INSERT INTO table FORMAT Native" < table.native`

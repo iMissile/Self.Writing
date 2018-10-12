@@ -10,6 +10,14 @@ http://www.worldtimebuddy.com/
 - [Комплект умного дома Xiaomi Smart Home](https://ru-mi.com/komplekt-umnogo-doma-xiaomi-smart-home)
 - [Умный дом Xiaomi. СМОТРЕТЬ ВСЕМ. Честный обзор Xiaomi mi Home](https://www.youtube.com/watch?v=2O1rxgAMwLM)
 
+## Как сделать из смартфона видеонаблюдение
+- [Практикум: Как сделать видеонаблюдение (видеосигналиацию) из смартфона?](http://www.mforum.ru/phones/tests/116202.htm), 25.12.2015
+- [ТЕСТ. Мобильные приложения. Как превратить смартфон в CCTV-камеру](http://www.secuteck.ru/articles2/test/test-mobilnye-prilozheniya-kak-prevratit-smartfon-v-cctv-kameru/). Тестирование проведено и предоставлено компанией DSSL
+- [Как сделать камеру наблюдения из смартфона](https://ichip.ru/kak-sdelat-kameru-nablyudeniya-iz-smartfona.html)
+- [7 лучших программ для видеонаблюдения](https://lifehacker.ru/webcamera-watching/)
+- [Как превратить старый смартфон в IP-камеру для видеонаблюдения](https://lifehacker.ru/smartfon-ip-kamery-dlya-videonablyudeniya/)
+- [Breathe new life into your ‘obsolete’ smartphone, use it as a smart home gadget](https://www.digitaltrends.com/mobile/repurpose-old-smartphone-apps-accessories-smart-home/)
+
 # Диаграммы
 - [LucidChart](https://www.lucidchart.com/). DiagramsDone Right. Lucidchart is your diagram maker
 

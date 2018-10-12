@@ -55,8 +55,10 @@ https://www.crowdgames.ru/page/plany-crowd-games
 
 - [Подробнее про теорему Котельникова и дискретизацию сигналов](https://blog.amartynov.ru/%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/)
 
-# e-books
 - Bookmate [Изменить данные карты, с которой происходят списания за подписку](https://support.bookmate.com/hc/ru/articles/219428628-%D0%98%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BA%D0%B0%D1%80%D1%82%D1%8B-%D1%81-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D1%8F%D1%82-%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B7%D0%B0-%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%BA%D1%83)
+
+
+# e-books
 - COOL e-book!. [Functional programming and unit testing for data munging with R](https://b-rodrigues.github.io/fput/) by Bruno Rodrigues
 - [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas, Alison Presmanes Hill
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/) by Yihui Xie
@@ -75,6 +77,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Feature Engineering and Selection: A Practical Approach for Predictive Models](http://www.feat.engineering/) by Max Kuhn and Kjell Johnson
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/bookdown.pdf)
 - [Hands-on Deep Reinforcement Learning, published by Packt](https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On)
+- COOL! [Getting Started in R. An eight-page pdf guide for "Getting Started in R".](https://github.com/eddelbuettel/gsir-te)
 
 # Video
 - [Основы анализа данных. ВШЭ](https://www.youtube.com/channel/UCLk-Oih8VlqF-StidijTUnw/videos)
@@ -197,6 +200,9 @@ Or with gunzip
 - [R data.table change R names](https://stackoverflow.com/questions/18760287/r-data-table-change-r-names)
 - Нюансы с кодировками. [robust encoding in fread (like 'fread("iconv -f ISO-8859-1 -t UTF-8 mytextfile.txt")')](https://github.com/Rdatatable/data.table/issues/1748). Ставим Latin1
 `fread(path, encoding="Latin-1")`
+- [Extracting unique rows from a data table in R {duplicate}](https://stackoverflow.com/questions/7562284/extracting-unique-rows-from-a-data-table-in-r)
+- [Filtering out duplicated/non-unique rows in data.table](https://stackoverflow.com/questions/11792527/filtering-out-duplicated-non-unique-rows-in-data-table)
+- [How do I exclude columns from a data.table?](https://stackoverflow.com/questions/37210489/how-do-i-exclude-columns-from-a-data-table?rq=1)
 
 # DS
 - COOL! [Машинное обучение для людей. Разбираемся простыми словами](https://vas3k.ru/blog/machine_learning/)
@@ -358,6 +364,171 @@ header-includes:
 - [How to print RMarkdown code chunk execution times? {duplicate}](https://stackoverflow.com/questions/43434239/how-to-print-rmarkdown-code-chunk-execution-times)
 
 
+# 12.10.2018
+## R
+- COOL! [The R Infrastructure. How we build stuff](https://jeroen.github.io/uros2018/#1) by Jeroen Ooms, 2018/09/14
+- [Optimize your R Code using Memoization](https://www.inwt-statistics.com/read-blog/optimize-your-r-code-using-memoization.html)
+- [Some R Guides: tidyverse and data.table Versions](http://www.win-vector.com/blog/2018/10/some-r-guides-tidyverse-and-data-table-versions/)
+- COOL! [Getting Started in R. An eight-page pdf guide for "Getting Started in R".](https://github.com/eddelbuettel/gsir-te)
+1. По предварительным изысканиям `data.table` [поддерживает](https://jangorecki.gitlab.io/data.table/library/data.table/html/setops.html) `bit64::integer64`
+2. Поддержка int64 в RClickhouse под вопросом.
+    - [RClickhouse. Integer64 support #31 {Open}](https://github.com/IMSMWU/RClickhouse/issues/31)
+    - Ведутся активности [64 bit integer support for reading and writing #35 {Open}](https://github.com/IMSMWU/RClickhouse/pull/35)
+Но в первой ссылке RClickhouse есть хорошая проверка следующего утверждения: numeric can keep precise values up to 2**53
+- [Libraries from third-party developers for working with ClickHouse](https://clickhouse-m.readthedocs.io/ru/latest/en/interfaces/third-party_client_libraries/)
+
+## UPS
+- [Настройка UPS Powercom BNT-600AP usb NUT на Debian](http://sonboga.ru/article/nastroika-ups-powercom-bnt-600ap-usb-nut-na-debian)
+- [powercom - UPS driver for serial Powercom/Trust/Advice UPS equipment](https://networkupstools.org/docs/man/powercom.html)
+- [Мониторинг APC UPS \ установка и настройка в Linux](http://netlly.ru/monitoring-apc-ups/)
+
+# 11.10.2018
+## R
+- [Extending DT child rows example](http://www.reigo.eu/2018/04/extending-dt-child-row-example/)
+
+# 10.10.2018
+## R
+- [Partially additive (generalized) linear model trees](https://eeecon.uibk.ac.at/~zeileis/news/palmtree/)
+
+# 08.10.2018
+## R
+- [Introduction to DataExplorer](https://cran.r-project.org/web/packages/DataExplorer/vignettes/dataexplorer-intro.html)
+- [DataExplorer: Fast Data Exploration With Minimum Code](http://blog.revolutionanalytics.com/2018/02/dataexplorer.html)
+- MergeTree
+	- [SSTable and Log Structured Storage: LevelDB](https://www.igvita.com/2012/02/06/sstable-and-log-structured-storage-leveldb/)
+	- [The Log-Structured Merge-Tree (LSM Tree)](https://blog.acolyer.org/2014/11/26/the-log-structured-merge-tree-lsm-tree/)
+	- [How does the log-structured merge-tree work?](https://www.quora.com/How-does-the-log-structured-merge-tree-work)
+- [The “Gold Standard” for Data Science Project Management](https://towardsdatascience.com/the-gold-standard-of-data-science-project-management-13d68c9e85d6)
+- COOL! [Project-oriented workflow](https://www.tidyverse.org/articles/2017/12/workflow-vs-script/). В частности, пункт "Use projects and the `here` package".
+- COOL! [here. part of the tidyverse](https://here.r-lib.org/)
+- COOL! [rprojroot. part of the tidyverse](https://rprojroot.r-lib.org/)
+
+
+
+# 05.10.2018
+## R
+- COOL! [docxtractr](https://github.com/hrbrmstr/docxtractr). Extract Data Tables and Comments from ‘Microsoft’ ‘Word’ Documents
+	- [Using R To Get Data *Out Of* Word Docs](https://rud.is/b/2015/08/23/using-r-to-get-data-out-of-word-docs/)
+- radrachart in R
+	- [radarchart: Radar Chart from 'Chart.js'](https://cran.r-project.org/web/packages/radarchart/index.html)
+	- [radarchart: Drawing radar chart (a.k.a. spider plot)](https://rdrr.io/cran/fmsb/man/radarchart.html). In fmsb: Functions for Medical Statistics Book with some Demographic Data
+	- [The R Graph Gallery's Top 5 Most Visited Graph Themes](https://www.datacamp.com/community/tutorials/top-5-r-graphics)
+	- [Generate radar charts with ggplot2](https://stackoverflow.com/questions/50353923/generate-radar-charts-with-ggplot2)
+	- [SPIDER OR RADAR CHART](https://www.r-graph-gallery.com/spider-or-radar-chart/)
+ 
+## CH\DS
+- [Dump/Import data from clickhouse](https://groups.google.com/forum/#!topic/clickhouse/Dx0CsFGbk7c)
+- [Machine Learning for Visualization](https://medium.com/@enjalot/machine-learning-for-visualization-927a9dff1cab). Let’s Explore the Cutest Big Dataset
+
+
+# 04.10.2018
+## R
+- COOL! [A Tale of Two Shiny Apps: Google Auth & ShinyProxy](https://rtask.thinkr.fr/blog/a-tale-of-two-shiny-apps-google-auth-shinyproxy/)
+- [Apps / Unicode character inspector](https://apps.timwhitlock.info/unicode/inspect)
+- COOL! Очень полезные способы работы с RStudio . [JhR blog](https://jozefhajnala.gitlab.io/r/)
+
+# 02.10.2018
+# R
+- COOL! [bs4Dash](https://divadnojnarg.github.io/bs4Dash/index.html). Bootstrap 4 shinydashboard using AdminLTE3
+- Ошибка с памятью, что замучала c валидатором МСП: [pandoc document conversion failed with error 127](https://stackoverflow.com/questions/34687030/pandoc-document-conversion-failed-with-error-127)
+- [8 Useful Commands to Monitor Swap Space Usage in Linux](https://www.tecmint.com/commands-to-monitor-swap-space-usage-in-linux/)
+	- [Glances – An Advanced Real Time System Monitoring Tool for Linux](https://www.tecmint.com/glances-an-advanced-real-time-system-monitoring-tool-for-linux/)
+- [Useful R functions you might not know](https://www.computerworld.com/article/3184778/data-analytics/6-useful-r-functions-you-might-not-know.html) by Sharon Machlis, Executive Editor, Data & Analytics, Computerworld | MAY 4, 2018 11:08 AM PT
+
+
+# 01.10.2018
+## R
+- [4 ways to be more productive, using RStudio's terminal](https://jozefhajnala.gitlab.io/r/r905-rstudio-terminal/)
+- [XKCD "Curve Fitting", in R](http://blog.revolutionanalytics.com/2018/09/curve-fitting.html)
+	- [Code and graphs for the xkcd2048 comic](https://gitlab.com/b-rowlingson/xkcd2048)
+- [Visualize your Portfolio’s Performance and Generate a Nice Report with R](https://datascienceplus.com/visualize-your-portfolios-performance-and-generate-a-nice-report-with-r/)
+- [Discover and install useful RStudio addins](https://github.com/daattali/addinslist)
+- COOL! [esquisse](https://github.com/dreamRs/esquisse)
+The purpose of this add-in is to let you explore your data quickly to extract the information they hold. You can only create simple plots, you won't be able to use custom scales and all the power of ggplot2. This is just the start!
+- COOL! [ggplot2 explorer](http://databall.co/shiny/shinyggplot/). I created this website to help all R learners to undestand how to plot beautiful/useful charts using the most popular vizualization package ggplot2. It won't teach you how to write a code, but definitely will show you how ggplot2 geoms look like, and how manipulating their arguments changes visualization. Few scrolls below you can find list of covered geoms and example of what they plot.
+	- [Исходники ggplot2 visual explorer](https://github.com/AlienDeg/shinyexplorer)
+- COOL! [A new RStudio addin to facilitate inserting tables in Rmarkdown documents](https://lbusett.netlify.com/post/a-new-rstudio-addin-to-facilitate-inserting-tables-in-rmarkdown-documents/)
+- COOL! [Radiant – Business analytics using R and Shiny](https://radiant-rstats.github.io/docs/)
+- COOL! [ryantimpe/rspivot](https://github.com/ryantimpe/rspivot). RStudio addin to view data frames as pivot tables. View data as values, growth rates, and shares.
+	- [Introduction to rspivot](https://ryantimpe.github.io/rspivot/articles/rspivot.html) by Ryan Timpe, 2018-01-25
+- [multi-computer makePSOCKcluster on Windows: Building a step-by-step guide](https://stackoverflow.com/questions/32571996/multi-computer-makepsockcluster-on-windows-building-a-step-by-step-guide)
+- [Does ifelse really calculate both of its vectors every time? Is it slow?](https://stackoverflow.com/questions/16275149/does-ifelse-really-calculate-both-of-its-vectors-every-time-is-it-slow)
+
+
+# 28.09.2018
+## R
+- [August 2018: Top 40 New Packages](https://rviews.rstudio.com/2018/09/26/august-2018-top-40-new-packages/). Очень интересные подборки свежих пакетов, особенно в части time-series
+
+
+# 27.09.2018
+## DS
+- [The Perl for MS Windows, free of charge!](http://strawberryperl.com/). Strawberry Perl is a perl environment for MS Windows containing all you need to run and develop perl applications. It is designed to be as close as possible to perl environment on UNIX systems.
+
+## R
+- shinyloadtest
+- shinyloadtest. Ошибки, которые встретил сразу
+- 
+```
+> df0 <- shinyloadtest::load_runs("16 workers" = "./shinyloadtest/run_16", verbose = TRUE)
+16 workers [===========================================================] 20/20 eta: 0s
+Error in FUN(X[[i]], ...) : 
+  only defined on a data frame with all numeric variables
+```
+- 
+```
+> shinyloadtest::shinyloadtest_report(df, "run.html")
+run - Saving HTML [=================================================>] 126/127 eta: 0spandoc.exe: Cannot decode byte '\x92': Data.Text.Internal.Encoding.decodeUtf8: Invalid UTF-8 stream
+```
+	- Завал происходит в строке `df_filtered <- filter_df(df_run)`. Почему-то весь датафрейм зануляется
+
+- R debug (опять)
+	- [How To Use The Debug Package](https://www.rdocumentation.org/packages/debug/versions/1.3.1/topics/debug-package)
+	- [How to debug (placing break point,etc) an installed R package in RStudio?](https://stackoverflow.com/questions/22000969/how-to-debug-placing-break-point-etc-an-installed-r-package-in-rstudio)
+	- [How do I create an object in the Global environment from a function](https://stat.ethz.ch/pipermail/r-help/2006-December/122284.html).
+`assign("b", value, envir=globalenv())`
+- [Shinycannon IllegalStateException #21 {Closed}](https://github.com/rstudio/shinyloadtest/issues/21)
+
+# 26.09.2018
+## R
+- COOL! [Label line ends in time series with ggplot2](https://drsimonj.svbtle.com/label-line-ends-in-time-series-with-ggplot2)
+- COOL! [Create stylish tables in R using formattable](https://www.littlemissdata.com/blog/prettytables)
+- [Klipfolio](https://www.klipfolio.com/). The top rated dashboard on Earth.
+
+## Excel
+- [не удаётся разорвать связи в Excel](https://www.planetaexcel.ru/forum/index.php?PAGE_NAME=read&FID=8&TID=33341)
+- [ Excel не разрывает связь с внешней книгой ](http://www.excelworld.ru/forum/2-12911-1). решение через распаковку
+```
+на листе Catalog 
+в ячейках: 
+C48:C49,E49,E52,C52,C54:C55,E54:E55,E58,C58,E74,C74,C66,E66 
+
+выставлена проверка данных, которая и держит связь. 
+очищаем условие проверки, сохраняем, перезагружаем книгу, связь пропала. 
+
+как быстро найдено: 
+1. открываем копию книгу винраром 
+2. находим и удаляем папку "externalLinks" 
+3. закрываем архиватор 
+4. открываем файл в Excel 
+5. Excel ругается, но потом восстанавливает данные, выдавая следующее: 
+Удаленное свойство: Проверка данных из части /xl/worksheets/sheet7.xml 
+```
+
+
+# 25.09.2018
+## R
+- COOL! [Tuning a data preprocessing pipeline with recipes and modelgrid](http://smaakage85.netlify.com/2018/09/24/tuning-a-data-preprocessing-pipeline-with-recipes-and-modelgrid/)
+- [modelgrid: A Framework for Creating, Managing and Training Multiple Caret Models](https://cran.r-project.org/web/packages/modelgrid/index.html)
+A minimalistic but flexible framework that facilitates the creation, management and training of multiple 'caret' models. A model grid consists of two components: (1) a set of settings that is shared by all models by default, and (2) specifications that apply only to the individual models. When the model grid is trained, model and training specifications are first consolidated from the shared and the model specific settings into complete 'caret' model configurations. These models are then trained with the 'train' function from the 'caret' package.
+- COOL! [Tol Color Schemes](https://owi.usgs.gov/blog/tolcolors/)
+	- COOL! [Colour Schemes](https://personal.sron.nl/~pault/data/colourschemes.pdf), Prepared by: Paul Tol
+	- [THE PAUL TOL 21-COLOR SALUTE](https://tradeblotter.wordpress.com/2013/02/28/the-paul-tol-21-color-salute/)
+- COOL! [What Are We Plotting, What Are We Animating](https://www.data-imaginist.com/2018/what-are-we-plotting-what-are-we-animating/), Sep 24, 2018. ANIMATION GGANIMATE
+- Для быстрый конвертации R `data.frame` в JSON: https://github.com/SymbolixAU/jsonify
+- COOL! [mschart](https://ardata-fr.github.io/mschart/). The mschart package provides a framework for easily create charts for ‘Microsoft PowerPoint’ documents. It has to be used with package officer that will produce the charts in new or existing PowerPoint or Word documents.
+- COOL! [Crosstalk is an add-on to the htmlwidgets package](https://rstudio.github.io/crosstalk/)
+
+
 # 24.09.2018
 ## R
 - [A Performance Benchmark of Different AutoML Frameworks](https://www.statworx.com/de/blog/a-performance-benchmark-of-different-automl-frameworks/)
@@ -375,6 +546,10 @@ header-includes:
 - [Be Awesome in ggplot2: A Practical Guide to be Highly Effective - R software and data visualization](http://www.sthda.com/english/wiki/be-awesome-in-ggplot2-a-practical-guide-to-be-highly-effective-r-software-and-data-visualization)
 - [RShiny mouse-click does not work with facet_grid #1539 {Closed}](https://github.com/tidyverse/ggplot2/issues/1539)
 - [shiny - Click on a map](http://playshiny.com/2016/10/17/shiny-click-on-a-map/)
+- [Applications of R presented at EARL London 2018](https://www.r-bloggers.com/applications-of-r-presented-at-earl-london-2018/amp/)
+- Надо уточнить, что подразумевалось под фразой: ["Rescaling Update
+In preparing the data for the above plot all the variables were rescaled so that they were between 0 and 1.
+Jim rightly pointed out in the comments (and I did not initally get it) that the heatmap-function uses a different scaling method and therefore the plots are not identical. Below is an updated version of the heatmap which looks much more similar to the original."](https://learnr.wordpress.com/2010/01/26/ggplot2-quick-heatmap-plotting/)
 
 # 21.09.2018
 ## R Profiling
@@ -631,6 +806,11 @@ Ceteris Paribus Profiles (What-If Plots) are designed to present model responses
 - [makeParallel: Transform Serial R Code into Parallel R Code](https://cran.r-project.org/web/packages/makeParallel/)
 - [R move column to last using dplyr](https://stackoverflow.com/questions/43897844/r-move-column-to-last-using-dplyr): `data%>%select(-b,everything())`, [Explained by Hadley himself](https://github.com/tidyverse/dplyr/issues/2838)
 - COOL! [datapasta](https://github.com/MilesMcBain/datapasta) is about reducing resistance associated with copying and pasting data to and from R. It is a response to the realisation that I often found myself using intermediate programs like Sublime to munge text into suitable formats. Addins and functions in datapasta support a wide variety of input and output situations, so it (probably) "just works". Hopefully tools in this package will remove such intermediate steps and associated frustrations from our data slinging workflows.
+	- [Datapasta review by Andrew Ba Tran, 1/28/2017](https://andrewbtran.github.io/r-journalism-case-studies/week2-hamilton-data/datapasta.html)
+	- [Functions with R and rvest: A Laymen’s Guide](https://towardsdatascience.com/functions-with-r-and-rvest-a-laymens-guide-acda42325a77)
+	- [Does datapasta work with RStudio Server? #73 {Open}](https://github.com/MilesMcBain/datapasta/issues/73). Yeah this problem arises since RStudio server is trying to access the
+clipboard of the remote machine, not your local terminal where the data
+resides.
 - [install sqlite3 dev and other packages in centos](https://stackoverflow.com/questions/42669368/install-sqlite3-dev-and-other-packages-in-centos)
 ```
 $ yum list | grep sqlite
@@ -3349,6 +3529,7 @@ It can not be done because plotOutput redraw the raster plot each time the windo
 Function ggiraph is provided with arguments width_svg and height_svg, these will define the aspect ration. Then you can use argument width (0 < width < 1) that will be use to scale size of the plot in the html page.
 If you want it to be non responsive, use `use_widget_size` to force usage of htmlwidget width and height.
 	- `data_id` должен быть типа `character`
+	- [Foreign characters in tooltip #96 {Closed}](https://github.com/davidgohel/ggiraph/issues/96). Решение: Maybe it will help, it works fine with `stringi` by converting name to UTF-8 and escaping unicode in tooltip: `stringi::stri_escape_unicode`. 
 - [XML parsing made easy: is that podcast getting longer?](https://nsaunders.wordpress.com/2017/10/12/xml-parsing-made-easy-is-that-podcast-getting-longer/)
 - Бывший JoyPlot: [Introduction to ggridges](https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html)
 - [GitHub Streak: Round Four](http://dirk.eddelbuettel.com/blog/2017/10/12/#github_oct2016_oct2017)
@@ -4875,6 +5056,13 @@ Streaming 'JSON' ('ndjson') has one 'JSON' record per-line and many modern 'ndjs
 	- [dplyr- renaming sequence of columns with select function](https://stackoverflow.com/questions/31845966/dplyr-renaming-sequence-of-columns-with-select-function/31846038#31846038)
 	- [Column names with spaces or other special characters #2243](https://github.com/tidyverse/dplyr/issues/2243)
 	- [Selecting with dplyr by variable name, some column names are numbers](https://stackoverflow.com/questions/42854958/selecting-with-dplyr-by-variable-name-some-column-names-are-numbers)
+	- [Select multiple columns with `dplyr::select()` with numbers as names](https://stackoverflow.com/questions/38093584/select-multiple-columns-with-dplyrselect-with-numbers-as-names/38093676)
+	- [dplyr: select columns by position in NSE](https://stackoverflow.com/questions/42493381/dplyr-select-columns-by-position-in-nse). Another solution with dplyr :
+```
+DF %>%
+  select(!!c(1, 28:31))
+```
+cf : https://www.rdocumentation.org/packages/dplyr/versions/0.7.6/topics/select
 - [Exclude columns by names in mutate_at in dplyr](https://stackoverflow.com/questions/44532888/exclude-columns-by-names-in-mutate-at-in-dplyr)
 	- `mtcars %>% mutate_at(vars(-mpg, -cyl), max)` or 
 	- `mtcars %>% mutate_at(vars(-one_of("mpg", "cyl")), max)`
@@ -6495,6 +6683,7 @@ Go and explore, and happy new year!
 ## R
 - [R exercises](http://r-exercises.com/). Очень неплохой ресурс с заданиями по R.
 - COOL! Классный пакет для Simmer [Discrete-Event Simulator for R](http://fishyoperations.com/2017/01/12/extensions-for-simmer.html). Вообще, на этом сайте очень много записей про симуляцию.
+- [simmer 4.0.1](https://www.enchufa2.es/archives/simmer-4-0-1.html)
 - [simmer 4.0.0](https://www.enchufa2.es/archives/simmer-4-0-0.html)
 - [simmer 3.8.0](https://www.enchufa2.es/archives/simmer-3-8-0.html)
 - [simmer 3.7.0](https://www.enchufa2.es/archives/simmer-3-7-0.html)
@@ -6667,7 +6856,7 @@ Our concrete advice is: when building a supervised model (regression or classifi
 ### Gantt Charts
 - COOL! [Gantt charts with R](http://stackoverflow.com/questions/3550341/gantt-charts-with-r). Подборка различных методик.
 - COOL! [Revisiting Gantt Charts](http://mescal.imag.fr/membres/arnaud.legrand/blog/2013/03/20/revisiting-gantt-charts.php)
-- [Gantt charts in R](http://lazappi.id.au/gantt-charts-in-r/). Using DiagrammeR/mermaid
+- [Gantt charts in R](http://lazappi.id.au/2016/06/gantt-charts-in-r/). Using DiagrammeR/mermaid
 - [Gantt Chart in R](https://rpubs.com/mramos/ganttchart). Using plotrix
 - [PlotPrjNetworks](https://cran.r-project.org/web/packages/PlotPrjNetworks/index.html): Useful Networking Tools for Project Management
 - [Plotting “time of day” data using ggplot2](https://nsaunders.wordpress.com/2010/04/14/plotting-time-of-day-data-using-ggplot2/)
