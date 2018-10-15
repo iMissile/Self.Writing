@@ -203,6 +203,8 @@ Or with gunzip
 - [Extracting unique rows from a data table in R {duplicate}](https://stackoverflow.com/questions/7562284/extracting-unique-rows-from-a-data-table-in-r)
 - [Filtering out duplicated/non-unique rows in data.table](https://stackoverflow.com/questions/11792527/filtering-out-duplicated-non-unique-rows-in-data-table)
 - [How do I exclude columns from a data.table?](https://stackoverflow.com/questions/37210489/how-do-i-exclude-columns-from-a-data-table?rq=1)
+- COOL! [Benchmarking the six most used manipulations for data.tables in R](https://opremicsolutions.de/index.php/benchmarking-the-six-most-used-manipulations-for-data-tables-in-r/). Comparing formulations of the data.table package with base R and dplyr formulations
+- [How to import a directory of csvs at once with base R and data.table. Can you guess which way is the fastest?](https://jozefhajnala.gitlab.io/r/r005-import-csvs/)
 
 # DS
 - COOL! [Машинное обучение для людей. Разбираемся простыми словами](https://vas3k.ru/blog/machine_learning/)
@@ -362,6 +364,21 @@ header-includes:
 - COOL! [In `knitr` how can I test for if the output will be PDF or word?](https://stackoverflow.com/questions/35144130/in-knitr-how-can-i-test-for-if-the-output-will-be-pdf-or-word)
 - [Prerendered Shiny Documents](https://rmarkdown.rstudio.com/authoring_shiny_prerendered.html). Overview
 - [How to print RMarkdown code chunk execution times? {duplicate}](https://stackoverflow.com/questions/43434239/how-to-print-rmarkdown-code-chunk-execution-times)
+
+
+# 15.10.2018
+## R
+- [Running R scripts within in-database SQL Server Machine Learning](https://tomaztsql.wordpress.com/2018/10/14/running-r-scripts-within-in-database-sql-server-machine-learning/)
+- Красиво. [VISUAL ART WITH PI USING GGPLOT2 & CIRCLIZE](https://chichacha.netlify.com/2018/10/13/visual-art-with-pi-using-ggplot2-circlize/)
+	- Упоминается пакет [`circlize`]
+- Форматирование таблиц в R:
+	- [Total of a column in DT dataTables in shiny](https://stackoverflow.com/questions/49135787/total-of-a-column-in-dt-datatables-in-shiny)
+	- [Huxtable is an R package to create styled tables in multiple output formats, with a friendly, modern interface.](https://hughjonesd.github.io/huxtable/)
+	- [The flextable package provides a framework for easily create tables for reporting.](https://davidgohel.github.io/flextable/)
+	- [Create Awesome HTML Table with knitr::kable and kableExtra](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html)
+	- [Create stylish tables in R using formattable](https://www.littlemissdata.com/blog/prettytables)
+- data.table. Учат мужика правильно открывать тикеты:
+	- [fread from v.1.11.0+ no longer reads the .csv correctly, which was read perfectly in v.1.10.4-3 {#2857} Open](https://github.com/Rdatatable/data.table/issues/2857)
 
 
 # 12.10.2018
