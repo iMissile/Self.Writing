@@ -59,10 +59,11 @@ https://www.crowdgames.ru/page/plany-crowd-games
 
 
 # e-books
-- COOL e-book!. [Functional programming and unit testing for data munging with R](https://b-rodrigues.github.io/fput/) by Bruno Rodrigues
+- [Functional programming and unit testing for data munging with R](https://b-rodrigues.github.io/fput/) by Bruno Rodrigues
 - [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas, Alison Presmanes Hill
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/) by Yihui Xie
 - [Efficient R programming](https://bookdown.org/csgillespie/efficientR/)
+- [Efficient R programming](https://csgillespie.github.io/efficientR/), Colin Gillespie, Robin Lovelace, 2017-04-10
 - [Data Science Live Book](https://livebook.datascienceheroes.com/)
 - [Mastering Software Development in R](https://bookdown.org/rdpeng/RProgDA/)
 - [R Manuals as bookdown](http://colinfay.me/r-manuals/). You’ll find here a list of the R manuals converted to bookdown.
@@ -177,12 +178,14 @@ Survival analysis is long-established within actuarial science but infrequently 
 - dplyr & operator ~ (tilde). NSE = [non-standard evaulation](http://cran.r-project.org/web/packages/dplyr/vignettes/nse.html)
 - [Non-standard evaluation](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
 - COOL! [Mara's tidyeval resource roundup](https://maraaverick.rbind.io/2017/08/tidyeval-resource-roundup/)
+- [Quasiquotation in R via bquote()](http://www.win-vector.com/blog/2018/10/quasiquotation-in-r-via-bquote/)
 
 
 # data.table
 - [Homepage Rdatatable/data.table](https://github.com/Rdatatable/data.table/wiki)
 - [data.table vs dplyr: can one do something well the other can't or does poorly?](https://stackoverflow.com/questions/21435339/data-table-vs-dplyr-can-one-do-something-well-the-other-cant-or-does-poorly)
 - [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)
+- [Solve common R problems efficiently with data.table](https://jangorecki.github.io/blog/2015-12-11/Solve-common-R-problems-efficiently-with-data.table.html)
 - [Understanding exactly when a data.table is a reference to (vs a copy of) another data.table](https://stackoverflow.com/questions/10225098/understanding-exactly-when-a-data-table-is-a-reference-to-vs-a-copy-of-another)
 - [Apply function to dataframe in chunks](https://community.rstudio.com/t/apply-function-to-dataframe-in-chunks/9067)
 - [fread() of file from archive](https://stackoverflow.com/questions/33341010/fread-of-file-from-archive)
@@ -361,10 +364,87 @@ header-includes:
 - [Create Awesome LaTeX Table with knitr::kable and kableExtra](https://haozhu233.github.io/kableExtra/awesome_table_in_pdf.pdf)
 - [Using knitr and pandoc to create reproducible scientific reports](http://galahad.well.ox.ac.uk/repro/)
 - [The write2 function](https://cran.r-project.org/web/packages/arsenal/vignettes/write2.html)
-- COOL! [In `knitr` how can I test for if the output will be PDF or word?](https://stackoverflow.com/questions/35144130/in-knitr-how-can-i-test-for-if-the-output-will-be-pdf-or-word)
+- COOL! Положил в Evernote. [In `knitr` how can I test for if the output will be PDF or word?](https://stackoverflow.com/questions/35144130/in-knitr-how-can-i-test-for-if-the-output-will-be-pdf-or-word)
+- COOL! [Error with RMarkdown: 'is_latex_output' is not an exported object from 'namespace:knitr' #1272 {Closed}](https://github.com/rstudio/rmarkdown/issues/1272)
 - [Prerendered Shiny Documents](https://rmarkdown.rstudio.com/authoring_shiny_prerendered.html). Overview
-- [How to print RMarkdown code chunk execution times? {duplicate}](https://stackoverflow.com/questions/43434239/how-to-print-rmarkdown-code-chunk-execution-times)
+- Chunks timing
+	- [How to print RMarkdown code chunk execution times? {duplicate}](https://stackoverflow.com/questions/43434239/how-to-print-rmarkdown-code-chunk-execution-times)
+	- [Timing for chunks?](https://stackoverflow.com/questions/24595280/timing-for-chunks)
+	- [Hook to time knitr chunks](https://stackoverflow.com/questions/30530008/hook-to-time-knitr-chunks)
 
+# 22.10.2018
+## R
+- Проблемы с русским языком на графиках в RMarkdown. `In grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  : invalid input 'Дата' in 'utf8towcs'`
+- [emojifont. use with RMarkdown #17 {Closed}](https://github.com/GuangchuangYu/emojifont/issues/17)
+
+# 19.10.2018
+## R
+- [R Database Securing Credentials](https://db.rstudio.com/best-practices/managing-credentials/)
+- COOL! [R PACKAGES SEARCH AND STATISTICS](https://www.rpackages.io/)
+- COOL! [Determining Optimal Number Of Clusters In Your Data](https://kkulma.github.io/2017-04-24-determining-optimal-number-of-clusters-in-your-data/)
+- [zumbov2/colorfindr](https://github.com/zumbov2/colorfindr). Extracts colors from various image types and plots treemaps and 3D scatterplots of color compositions.
+- [Loops and Pizzas. An Introduction to Loops in R](https://msperlin.github.io/2018-10-19-R-and-loops/) by Marcelo S. Perlin
+- [SOLVING THE CHINESE POSTMAN PROBLEM](https://freakonometrics.hypotheses.org/53694)
+- [A Lazy Function](http://cillianmacaodh.blogspot.com/2018/10/a-lazy-function.html) by CillianMacAodh (Cillian McHugh)
+- [automl package: part 1/2 why and how](https://r-posts.com/automl-package-part-1-2-why-and-how/)
+
+## DS. Рекомендательные системы
+- COOL! [10 уроков рекомендательной системы Quora](https://habr.com/company/retailrocket/blog/341346/) 
+- COOL! [Building a Movie Recommendation System](https://rpubs.com/jeknov/movieRec) by Jekaterina Novikova, PhD, June, 2016
+- COOL! [mhahsler/recommenderlab](https://github.com/mhahsler/recommenderlab). recommenderlab - Lab for Developing and Testing Recommender Algorithms - R package
+- COOL! [recosystem: Recommender System Using Parallel Matrix Factorization](https://cran.r-project.org/web/packages/recosystem/vignettes/introduction.html) by Yixuan Qiu, 2017-09-01
+- [The 4 Recommendation Engines That Can Predict Your Movie Tastes](https://medium.com/@james_aka_yale/the-4-recommendation-engines-that-can-predict-your-movie-tastes-bbec857b8223)
+- [Recommender Systems 101 – a step by step practical example in R](http://bigdata-doctor.com/recommender-systems-101-practical-example-in-r/)
+- [Recommender Systems in Python: Beginner Tutorial](https://www.datacamp.com/community/tutorials/recommender-systems-python)
+- [Comprehensive Guide to build a Recommendation Engine from scratch (in Python)](https://www.analyticsvidhya.com/blog/2018/06/comprehensive-guide-recommendation-engine-python/)
+- [Prototyping a Recommendation System](https://towardsdatascience.com/prototyping-a-recommendation-system-8e4dd4a50675). Hello World in R, Java, Scala, and SQL
+
+
+
+# 18.10.2018
+## R
+- [hclust() in R on large datasets](https://stackoverflow.com/questions/40989003/hclust-in-r-on-large-datasets)
+- COOL! [fastcluster: Fast Hierarchical Clustering Routines for R and 'Python'](https://cran.r-project.org/web/packages/fastcluster/)
+This is a two-in-one package which provides interfaces to both R and 'Python'. It implements fast hierarchical, agglomerative clustering routines. Part of the functionality is designed as drop-in replacement for existing routines: linkage() in the 'SciPy' package 'scipy.cluster.hierarchy', hclust() in R's 'stats' package, and the 'flashClust' package. It provides the same functionality with the benefit of a much faster implementation. Moreover, there are memory-saving routines for clustering of vector data, which go beyond what the existing packages provide. For information on how to install the 'Python' files, see the file INSTALL in the source distribution. Based on the present package, Christoph Dalitz also wrote a pure 'C++' interface to 'fastcluster': <http://informatik.hsnr.de/~dalitz/data/hclust>.
+
+## parallel R
+- COOL! [A guide to parallelism in R](https://privefl.github.io/blog/a-guide-to-parallelism-in-r/) Written on September 5, 2017 by Florian Privé, R(cpp) enthusiast
+- [Parallel process in chunks giving no performance benefits](https://stackoverflow.com/questions/45479105/parallel-process-in-chunks-giving-no-performance-benefits)
+- [Parallel computing with R](http://pablobarbera.com/POIR613/code/06-parallel-computing.html) by Pablo Barbera, September 12, 2017
+- [Using foreach and iterators for manual parallel execution](https://docs.microsoft.com/en-us/machine-learning-server/r/how-to-revoscaler-distributed-computing-foreach)
+- [data.table and parallel computing](https://stackoverflow.com/questions/14759905/data-table-and-parallel-computing)
+- COOL e-book [Efficient R programming](https://csgillespie.github.io/efficientR/), Colin Gillespie, Robin Lovelace, 2017-04-10
+- [Parallelization with data.table](https://stackoverflow.com/questions/50049780/parallelization-with-data-table)
+
+
+
+# 17.10.2018
+## R
+- [iotools: I/O Tools for Streaming](https://cran.r-project.org/web/packages/iotools/). Basic I/O tools for streaming and data parsing.
+- [pubchunks: extract parts of scholarly XML articles](https://ropensci.org/technotes/2018/10/16/pubchunks/)
+- Отличные лекции. [Lesson 5. Convert R Markdown to PDF or HTML](https://www.earthdatascience.org/courses/earth-analytics/document-your-science/knit-rmarkdown-document-to-pdf/)
+- [Running rmarkdown from the command line without the need for X11 capability #1100 {Closed}](https://github.com/rstudio/rmarkdown/issues/1100)
+- [Compiling Reports from R Scripts](https://rmarkdown.rstudio.com/articles_report_from_r_script.html)
+- [Render reports directly from R scripts](http://brooksandrew.github.io/simpleblog/articles/render-reports-directly-from-R-scripts/)
+- COOL! Macro Substitution in R](https://github.com/WinVector/wrapr/blob/master/extras/MacrosInR.md) by John Mount 2018-09-14
+- [Even more images as x-axis labels](https://jcarroll.com.au/2018/10/16/even-more-images-as-x-axis-labels/)
+- [Modifying Excel Files using openxlsx](https://webbedfeet.netlify.com/post/modifying-excel-files-using-openxlsx/)
+- [Exploring college major and income: a live data analysis in R](http://varianceexplained.org/r/tidy-tuesday-college-major/)
+- [I would like do a zip compression with password in R](https://stackoverflow.com/questions/40112701/i-would-like-do-a-zip-compression-with-password-in-r)
+- COOL! Профилировка Rmarkdown!
+```
+# НУЖНО ЗАПУСКАТЬ В ЧИСТОЙ СЕССИИ
+# profvis::profvis({rmarkdown::render("validation_proc.Rmd", "html_document", encoding = 'UTF-8')}, interval = 0.1, prof_output = "manual.rprof")
+```
+
+## Ищем тормоза при генерации репорта для МСП
+Одним из самых тормозных элементов оказалась функция `lower_tri` в функции `stringdist::stringdistmatrix`. [Ссылка на определение функции](https://github.com/markvanderloo/stringdist/blob/03cec8adad87d572cd2671789c4fe9e6910dedfa/pkg/R/stringdist.R#L331).
+Эта фукция использует [RCpp код]: [`SEXP R_lower_tri(`](https://github.com/markvanderloo/stringdist/blob/03cec8adad87d572cd2671789c4fe9e6910dedfa/pkg/src/Rstringdist.c#L235)
+ 
+
+## Git
+- Как сделать клон бранча в git:
+`git clone --branch phase_2 https://gitlab.com/TV-stat/mts-tv-stat.reports.git mts-tv-stat.reports.ph2`
 
 # 15.10.2018
 ## R
@@ -379,6 +459,8 @@ header-includes:
 	- [Create stylish tables in R using formattable](https://www.littlemissdata.com/blog/prettytables)
 - data.table. Учат мужика правильно открывать тикеты:
 	- [fread from v.1.11.0+ no longer reads the .csv correctly, which was read perfectly in v.1.10.4-3 {#2857} Open](https://github.com/Rdatatable/data.table/issues/2857)
+- В т.ч. и для data.table [Changing column names of a data frame](https://stackoverflow.com/questions/6081439/changing-column-names-of-a-data-frame/34202613#34202613)
+- [Is possible to use fwrite from `data.table` with gzfile?](https://stackoverflow.com/questions/42788401/is-possible-to-use-fwrite-from-data-table-with-gzfile)
 
 
 # 12.10.2018
@@ -663,6 +745,43 @@ This site is intended to be a resource for digital analysts who are interested i
 - [Overleaf: What OTF/TTF fonts are supported via fontspec?](https://www.overleaf.com/help/193-what-otf-slash-ttf-fonts-are-supported-via-fontspec#.W6EG_Gj7SUk)
 - [Overleaf: Gallery — Fonts](https://www.overleaf.com/gallery/tagged/fonts#.W6EG-mj7SUk)
 - [Overleaf: I have a custom font I'd like to load to my document. How can I do this?](https://www.overleaf.com/help/73-i-have-a-custom-font-id-like-to-load-to-my-document-how-can-i-do-this#.W6EHzGj7SUk)
+- В Overleaf Возникли проблемы со шрифтом _PT Sans_:
+```
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! fontspec error: "font-not-found"
+! 
+! The font "PT Sans" cannot be found.
+! 
+! See the fontspec documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.18 \setmainfont{PT Sans}
+```
+	- [TTF fonts are supported via fontspec?](https://www.overleaf.com/learn/latex/Questions/What_OTF/TTF_fonts_are_supported_via_fontspec%3F)
+	- [ptsans – PT Sans font and LATEX support](https://ctan.org/pkg/ptsans)
+	- [Support package for PT Sans](http://mirror.hmc.edu/ctan/obsolete/fonts/ptsans/doc/fonts/ptsans/ptsans.pdf)
+	- [\fontspec all the fonts!](https://www.overleaf.com/articles/slash-fontspec-all-the-fonts/qnsxyhrgjsgs)
+	- [I have a custom font I'd like to load to my document How can I do this?](https://www.overleaf.com/learn/latex/Questions/I_have_a_custom_font_I%27d_like_to_load_to_my_document._How_can_I_do_this%3F)
+```
+Using a custom font
+Add the .ttf or .otf file to your project, by clicking on “Add files” on the top of your file list, and then selecting “Upload from > computer”. Browse to your .ttf/.otf files and upload them.
+Use the following syntax instead for the \setxxxfont commands:
+\setmainfont{[CrimsonText-Regular.ttf]}
+or
+
+\setmainfont{CrimsonText}[ 
+Extension = .ttf,
+UprightFont = *-Regular,
+...]
+You can also declare a new font family to use it in arbitrary situations:
+
+\newfontfamily{\crimson}{CrimsonText}
+[Extension = .ttf, UprightFont = *-Regular, ...]
+{\crimson This text uses the CrimsonText font}
+```
 
 
 # 13.09.2018
