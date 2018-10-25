@@ -208,6 +208,7 @@ Or with gunzip
 - [How do I exclude columns from a data.table?](https://stackoverflow.com/questions/37210489/how-do-i-exclude-columns-from-a-data-table?rq=1)
 - COOL! [Benchmarking the six most used manipulations for data.tables in R](https://opremicsolutions.de/index.php/benchmarking-the-six-most-used-manipulations-for-data-tables-in-r/). Comparing formulations of the data.table package with base R and dplyr formulations
 - [How to import a directory of csvs at once with base R and data.table. Can you guess which way is the fastest?](https://jozefhajnala.gitlab.io/r/r005-import-csvs/)
+- [Convenience features of fread](https://github.com/Rdatatable/data.table/wiki/Convenience-features-of-fread)
 
 # DS
 - COOL! [Машинное обучение для людей. Разбираемся простыми словами](https://vas3k.ru/blog/machine_learning/)
@@ -372,6 +373,72 @@ header-includes:
 	- [Timing for chunks?](https://stackoverflow.com/questions/24595280/timing-for-chunks)
 	- [Hook to time knitr chunks](https://stackoverflow.com/questions/30530008/hook-to-time-knitr-chunks)
 
+# 25.10.2018
+## R
+- COOL! [benchplot {ggplot2}](https://ggplot2.tidyverse.org/reference/benchplot.html). Benchmark plot creation time. Broken down into construct, build, render and draw times.
+- [Create a Glossary in R Markdown](https://liao961120.github.io/2018/10/24/glossary-maker.html)
+- [“Demystifying Data Science” remote notes](http://research.libd.org/rstatsclub/2018/10/24/demystifying-data-science-remote-notes/)
+- [RcppTOML 0.1.4: Now with TOML v0.5.0](http://dirk.eddelbuettel.com/blog/2018/10/23/#rcpptoml_0.1.4)
+- [toml-lang/toml](https://github.com/toml-lang/toml). Tom's Obvious, Minimal Language
+- [YAML Ain’t Markup Language (YAML™) Version 1.2]()http://yaml.org/spec/1.2/spec.html). 3rd Edition, Patched at 2009-10-01
+- R & CRUD:
+	- [DT 0.4: Editing Tables, Smart Filtering, and More](https://blog.rstudio.com/2018/03/29/dt-0-4/) by Yihui Xie, 2018-03-29
+	- [Make it possible to edit values in table #480 {Merged}](https://github.com/rstudio/DT/pull/480) yihui merged 3 commits into master from feature/editor on 18 Jan
+	- [barbara: Here’s a CRUD app I built in Shiny 295, using SQLite.](https://github.com/bborgesr/wsds2017/tree/master/app)
+	- [rhandsontable](https://jrowen.github.io/rhandsontable/). Introduction. rhandsontable is a htmlwidget based on the handsontable.js library. 
+	- [Building CRUD with Shiny](https://community.rstudio.com/t/building-crud-with-shiny/2881/8)
+	
+
+
+# 24.10.2018
+## Math. p-value
+- [Three common misuses of P values](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5042133/)
+- [What the P values really tell us](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5665734/)
+- [Understanding p-value](https://stats.stackexchange.com/questions/44769/understanding-p-value)
+- COOL! [What is the meaning of p values and t values in statistical tests?](https://stats.stackexchange.com/questions/31/what-is-the-meaning-of-p-values-and-t-values-in-statistical-tests)
+
+## Math. SD vs SE
+- [Standard deviations and standard errors](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1255808/)
+- [Standard deviation vs standard error of sample mean](https://stats.stackexchange.com/questions/205338/standard-deviation-vs-standard-error-of-sample-mean). 
+Standard error refers to the standard deviation of the sampling distribution of a statistic.
+- [Converting standard error to standard deviation?](https://stats.stackexchange.com/questions/15505/converting-standard-error-to-standard-deviation)
+- [Standard Deviation vs Standard Error](https://math.stackexchange.com/questions/193045/standard-deviation-vs-standard-error)
+- [Difference between standard error and standard deviation](https://stats.stackexchange.com/questions/32318/difference-between-standard-error-and-standard-deviation).
+```
+Here is a more practical (and not mathematical) answer:
+
+The SD (standard deviation) quantifies scatter — how much the values vary from one another.
+The SEM (standard error of the mean) quantifies how precisely you know the true mean of the population. It takes into account both the value of the SD and the sample size.
+Both SD and SEM are in the same units -- the units of the data.
+The SEM, by definition, is always smaller than the SD.
+The SEM gets smaller as your samples get larger. This makes sense, because the mean of a large sample is likely to be closer to the true population mean than is the mean of a small sample. With a huge sample, you'll know the value of the mean with a lot of precision even if the data are very scattered.
+The SD does not change predictably as you acquire more data. The SD you compute from a sample is the best possible estimate of the SD of the overall population. As you collect more data, you'll assess the SD of the population with more precision. But you can't predict whether the SD from a larger sample will be bigger or smaller than the SD from a small sample. (This is a simplification, not quite true. See comments below.)
+Note that standard errors can be computed for almost any parameter you compute from data, not just the mean. The phrase "the standard error" is a bit ambiguous. The points above refer only to the standard error of the mean.
+```
+
+## R
+- [Is plumber multithreading or single threading ? #170 {Closed}](https://github.com/trestletech/plumber/issues/170)
+	- [Rplumber docs. Chapter 7 Hosting](https://www.rplumber.io/docs/hosting.html)
+
+## R & web scrapping\SOAP
+- COOL! [How I became a crolute i.e. an user of the crul package](http://www.masalmon.eu/2017/06/30/crolute/). Maëlle blog. (curl/httr)
+A few months ago rOpenSci’s Scott Chamberlain asked me for feedback about a new package of his called crul, an http client like httr, so basically something you use for e.g. writing a package interfacing an API. He told me that a great thing about crul was that it supports asynchronous requests. I felt utterly uncool because I had no idea what this meant although I had already written quite a few API packages (for instance ropenaq, riem and opencage).
+	- [crul: HTTP Client](https://cran.rstudio.com/web/packages/crul/). A simple HTTP client, with tools for making HTTP requests, and mocking HTTP requests. (curl/httr)
+	- [R for cats and cat lovers. An intro to R for new programmers](https://rforcats.net/). This is an introduction to R. I promise this will be fun. Since you have never used a programming language before, or any language for that matter, you won’t be tainted by other programming languages with different ways of doing things. This is good - we can teach you the R way of doing things.
+- COOL! [Introducing routr - Routing of HTTP and WebSocket in R](http://www.data-imaginist.com/2017/Introducing-routr/)
+
+
+
+# 23.10.2018
+## R
+- COOL! [Back To The DT Package After Two Years. Why I disappeared for so long...](https://yihui.name/en/2018/01/back-to-dt/) by Yihui Xie, 2018-01-19
+- COOL! [Knitr options. Chunk options and package options](https://yihui.name/knitr/options/)
+- COOL! [One Little Thing: the knitr Chunk Option include=FALSE](https://yihui.name/en/2017/11/knitr-include-false/) by Yihui Xie, 2017-11-22
+- Вопрос Генриха:
+	- [which sampling function in R help to provide required schema of sampling?](https://stackoverflow.com/questions/52662055/which-sampling-function-in-r-help-to-provide-required-schema-of-sampling)
+	- [AlgDesign: Algorithmic Experimental Design](https://cran.r-project.org/web/packages/AlgDesign/index.html). Algorithmic experimental designs. Calculates exact and approximate theory experimental designs for D,A, and I criteria. Very large designs may be created. Experimental designs may be blocked or blocked designs created from a candidate list, using several criteria. The blocking can be done when whole and within plot factors interact.
+	- []()
+
 # 22.10.2018
 ## R
 - Проблемы с русским языком на графиках в RMarkdown. `In grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y,  : invalid input 'Дата' in 'utf8towcs'`
@@ -389,15 +456,22 @@ header-includes:
 - [automl package: part 1/2 why and how](https://r-posts.com/automl-package-part-1-2-why-and-how/)
 
 ## DS. Рекомендательные системы
-- COOL! [10 уроков рекомендательной системы Quora](https://habr.com/company/retailrocket/blog/341346/) 
+- COOL! [10 уроков рекомендательной системы Quora](https://habr.com/company/retailrocket/blog/341346/)
+- COOL! [Netflix and Chill: Building a Recommendation System in Excel](https://towardsdatascience.com/netflix-and-chill-building-a-recommendation-system-in-excel-c69b33c914f4). Learn the Machine Learning “Magic” behind the Binge
 - COOL! [Building a Movie Recommendation System](https://rpubs.com/jeknov/movieRec) by Jekaterina Novikova, PhD, June, 2016
 - COOL! [mhahsler/recommenderlab](https://github.com/mhahsler/recommenderlab). recommenderlab - Lab for Developing and Testing Recommender Algorithms - R package
 - COOL! [recosystem: Recommender System Using Parallel Matrix Factorization](https://cran.r-project.org/web/packages/recosystem/vignettes/introduction.html) by Yixuan Qiu, 2017-09-01
 - [The 4 Recommendation Engines That Can Predict Your Movie Tastes](https://medium.com/@james_aka_yale/the-4-recommendation-engines-that-can-predict-your-movie-tastes-bbec857b8223)
+- [Как работают рекомендательные системы. Лекция в Яндексе](https://habr.com/company/yandex/blog/241455/)
+- COOL! [Рекомендательные системы](https://vas3k.ru/blog/355/)
 - [Recommender Systems 101 – a step by step practical example in R](http://bigdata-doctor.com/recommender-systems-101-practical-example-in-r/)
 - [Recommender Systems in Python: Beginner Tutorial](https://www.datacamp.com/community/tutorials/recommender-systems-python)
 - [Comprehensive Guide to build a Recommendation Engine from scratch (in Python)](https://www.analyticsvidhya.com/blog/2018/06/comprehensive-guide-recommendation-engine-python/)
 - [Prototyping a Recommendation System](https://towardsdatascience.com/prototyping-a-recommendation-system-8e4dd4a50675). Hello World in R, Java, Scala, and SQL
+- [Recommender Systems in Keras](https://nipunbatra.github.io/blog/2017/recommend-keras.html).
+	- А вообще, в его [блоге](https://nipunbatra.github.io/blog/index.html) полно записей про матричную факторизацию.
+- Netflix. [Goodbye Stars, Hello Thumbs](https://media.netflix.com/en/company-blog/goodbye-stars-hello-thumbs)
+- [Understanding ROC curves](http://www.navan.name/roc/)
 
 
 
@@ -4157,13 +4231,6 @@ Built on top of Plotly.js, React, and Flask, Dash ties modern UI elements like d
 	- [Restart shiny app from within app (reloading data)](https://stackoverflow.com/questions/42889993/restart-shiny-app-from-within-app-reloading-data)
 	- COOL. shinyjs way. ['Reset inputs' button in shiny app](https://stackoverflow.com/questions/24265980/reset-inputs-button-in-shiny-app)
 
-
-## R & web scrapping\SOAP
-- COOL! [How I became a crolute i.e. an user of the crul package](http://www.masalmon.eu/2017/06/30/crolute/). Maëlle blog.
-A few months ago rOpenSci’s Scott Chamberlain asked me for feedback about a new package of his called crul, an http client like httr, so basically something you use for e.g. writing a package interfacing an API. He told me that a great thing about crul was that it supports asynchronous requests. I felt utterly uncool because I had no idea what this meant although I had already written quite a few API packages (for instance ropenaq, riem and opencage).
-	- [crul: HTTP Client](https://cran.rstudio.com/web/packages/crul/). A simple HTTP client, with tools for making HTTP requests, and mocking HTTP requests. 
-	- [R for cats and cat lovers. An intro to R for new programmers](https://rforcats.net/). This is an introduction to R. I promise this will be fun. Since you have never used a programming language before, or any language for that matter, you won’t be tainted by other programming languages with different ways of doing things. This is good - we can teach you the R way of doing things.
-- COOL! [Introducing routr - Routing of HTTP and WebSocket in R](http://www.data-imaginist.com/2017/Introducing-routr/)
 
 # 12.09.2017
 ## R
