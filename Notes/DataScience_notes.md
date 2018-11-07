@@ -59,6 +59,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 
 
 # e-books
+- [Классификация, регрессия и другие алгоритмы Data Mining с использованием R](https://ranalytics.github.io/data-mining/index.html) by Шитиков В. К., Мастицкий С. Э., 2017-04-07
 - [Functional programming and unit testing for data munging with R](https://b-rodrigues.github.io/fput/) by Bruno Rodrigues
 - [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas, Alison Presmanes Hill
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/) by Yihui Xie
@@ -209,6 +210,7 @@ Or with gunzip
 - COOL! [Benchmarking the six most used manipulations for data.tables in R](https://opremicsolutions.de/index.php/benchmarking-the-six-most-used-manipulations-for-data-tables-in-r/). Comparing formulations of the data.table package with base R and dplyr formulations
 - [How to import a directory of csvs at once with base R and data.table. Can you guess which way is the fastest?](https://jozefhajnala.gitlab.io/r/r005-import-csvs/)
 - [Convenience features of fread](https://github.com/Rdatatable/data.table/wiki/Convenience-features-of-fread)
+- [Sort rows in data.table in decreasing order on string key `order(-x,v)` gives error on data.table 1.9.4 or earlier](https://stackoverflow.com/questions/12353820/sort-rows-in-data-table-in-decreasing-order-on-string-key-order-x-v-gives-er)
 
 # DS
 - COOL! [Машинное обучение для людей. Разбираемся простыми словами](https://vas3k.ru/blog/machine_learning/)
@@ -373,6 +375,80 @@ header-includes:
 	- [Timing for chunks?](https://stackoverflow.com/questions/24595280/timing-for-chunks)
 	- [Hook to time knitr chunks](https://stackoverflow.com/questions/30530008/hook-to-time-knitr-chunks)
 
+# Visualization
+Когда спрашивают про визуализацию:
+https://ggplot2.tidyverse.org/index.html
+http://www.ggplot2-exts.org/gallery/
+http://gallery.htmlwidgets.org/
+https://www.r-graph-gallery.com/
+https://www.data-to-viz.com/
+https://rawgraphs.io/
+https://plot.ly/products/cloud/
+
+
+# 07.11.2018
+## R
+- COOL! [readtext: Import and Handling for Plain and Formatted Text Files](https://cran.r-project.org/web/packages/readtext/index.html)
+Functions for importing and handling text files and formatted text files with additional meta-data, such including '.csv', '.tab', '.json', '.xml', '.html', '.pdf', '.doc', '.docx', '.xls', '.xlsx', and others.
+
+# 06.11.2018
+## R
+- [Visualize the Business Value of your Predictive Models with `modelplotr`](https://modelplot.github.io/modelplotr.html) by Jurriaan Nagelkerke Pieter Marcus | 03 Nov 2018
+- [R tip: Make Your Results Clear with sigr](http://www.win-vector.com/blog/2018/11/r-tip-make-your-results-clear-with-sigr/)
+- [coalesce with wrapr](http://www.win-vector.com/blog/2018/11/coalesce-with-wrapr/)
+- [NEW R CHEATSHEET: DATA SCIENCE WORKFLOW WITH R](https://www.business-science.io/learning-r/2018/11/04/data-science-r-cheatsheet.html)
+- [Coding Gradient boosted machines in 100 lines of code](https://www.statworx.com/de/blog/coding-gradient-boosted-machines-in-100-lines-of-code/)
+- COOL! Explore Your Dataset in R](https://www.littlemissdata.com/blog/simple-eda)
+- [EARL HOUSTON: INTERVIEW WITH HADLEY WICKHAM](https://www.mango-solutions.com/blog/earl-houston-interview-with-hadley-wickham)
+- [Interactive plots - advanced](https://shiny.rstudio.com/articles/plot-interaction-advanced.html), LAST UPDATED: 30 MAY 2017
+
+## Sentiment Analysis
+- [Twitter sentiment analysis with Machine Learning in R using doc2vec approach (part 1)](https://analyzecore.com/2017/02/08/twitter-sentiment-analysis-doc2vec/) by Sergey Bryl', Data Scientist @ MacPaw Inc
+- [A gentle introduction to Doc2Vec](https://medium.com/scaleabout/a-gentle-introduction-to-doc2vec-db3e8c0cce5e)
+
+# 03.11.2018
+## R
+- [What R version do you really need for a package?](https://www.jumpingrivers.com/blog/what-r-version-do-you-really-need-for-a-package/)
+- [Master R shiny: One trick to build maintainable and scalable event chains](https://www.statworx.com/de/blog/master-r-shiny-one-trick-to-build-maintainable-and-scalable-event-chains/)
+- [Summarize data.table by group](https://stackoverflow.com/questions/36526141/summarize-data-table-by-group)
+- [Normalize by Group](https://stackoverflow.com/questions/43680246/normalize-by-group)
+
+# 31.10.2018
+## R
+- [R : CREATE SAMPLE / DUMMY DATA](https://www.listendata.com/2016/02/r-create-dummy-data.html)
+- COOL! [trinker/wakefield](https://github.com/trinker/wakefield). Generate random data sets
+- [How do I create a vector of random dates between two time points in R?](https://stackoverflow.com/questions/45381759/how-do-i-create-a-vector-of-random-dates-between-two-time-points-in-r)
+- [R: Sample a vector with replacement multiple times](https://stackoverflow.com/questions/10264025/r-sample-a-vector-with-replacement-multiple-times)
+- [Using the RcppArmadillo-based Implementation of R's sample()](http://gallery.rcpp.org/articles/using-the-Rcpp-based-sample-implementation/)
+
+
+# 26.10.2018
+## Git
+- Где хранятся конфигурации репозиториев в SmartGit? Смотрим здесь: 'C:\Users\<user>\AppData\Roaming\syntevo\SmartGit\18.1\repositories.xml'
+- [Not possibly to explicitly disable Auto DevOps on a project?](https://gitlab.com/gitlab-org/gitlab-ce/issues/51760)
+- [Enabling/disabling Auto DevOps](https://docs.gitlab.com/ee/topics/autodevops/)
+- [How can I switch to another branch in git?](https://stackoverflow.com/questions/47630950/how-can-i-switch-to-another-branch-in-git)
+- [How do you clone a Git repository into a specific folder?](https://stackoverflow.com/questions/651038/how-do-you-clone-a-git-repository-into-a-specific-folder). `git clone git@github.com:whatever folder-name`
+- COOL! Полная команда клонирования репозитория на удаленной машине: `git clone -c http.sslverify=false -b "dev" https://gitlab.com/ishutov/beluga-distr.git beluga-distr-dev`
+
+
+## R
+- COOL! 2014.09 New feature - [Overlapping range joins for Genomics by Arun Srinivasan](2014.09 New feature - Overlapping range joins for Genomics by Arun Srinivasan, history and benchmarks by Matt Dowle and four hour workshop, EARL Conference London [agenda] [ TO DO - link to video ]), history and benchmarks by Matt Dowle and four hour workshop, EARL Conference London
+- COOL! [Overlap joins in R: a speed comparison with packages sqldf and data.table](https://www.zevross.com/blog/2015/07/09/overlap-joins-in-r-a-speed-comparison-with-packages-sqldf-and-data-table-3/)
+- COOL! [Extracting Specific Lines from a Large (Compressed) Text File](https://statr.me/2018/05/extracting-lines-from-a-large-file/)
+- [Getting started Stamen maps with ggmap](https://statisticaloddsandends.wordpress.com/2018/10/25/getting-started-stamen-maps-with-ggmap/)
+- [How to perform merges (joins) on two or more data frames with base R, tidyverse and data.table](https://jozefhajnala.gitlab.io/r/r006-merge/)
+
+
+## DS
+- COOL! [Welcome to the 2018 edition of fast.ai's 7 week course, Practical Deep Learning For Coders, Part 1, taught by Jeremy Howard (Kaggle's #1 competitor 2 years running, and founder of Enlitic).](http://course.fast.ai/index.html)
+- Yaml\Toml
+	- [JSON VS XML VS TOML VS CSON VS YAML](https://www.zionandzion.com/json-vs-xml-vs-toml-vs-cson-vs-yaml/)
+	- Интересные публикации и сравнения в папке docs. [crdoconnor/strictyaml](https://github.com/crdoconnor/strictyaml). Type-safe YAML parser and validator. https://hitchdev.com/strictyaml/
+	- [Tree — убийца JSON, XML, YAML и иже с ними](https://habr.com/post/248147/)
+	- [Meet TOML. TOML vs YAML](https://medium.com/journey-to-rust/meet-toml-ba5c830d64f1)
+	- [TOML v0.5.0. Tom's Obvious, Minimal Language.](https://github.com/toml-lang/toml/blob/master/versions/en/toml-v0.5.0.md). By Tom Preston-Werner.
+
 # 25.10.2018
 ## R
 - COOL! [benchplot {ggplot2}](https://ggplot2.tidyverse.org/reference/benchplot.html). Benchmark plot creation time. Broken down into construct, build, render and draw times.
@@ -387,7 +463,8 @@ header-includes:
 	- [barbara: Here’s a CRUD app I built in Shiny 295, using SQLite.](https://github.com/bborgesr/wsds2017/tree/master/app)
 	- [rhandsontable](https://jrowen.github.io/rhandsontable/). Introduction. rhandsontable is a htmlwidget based on the handsontable.js library. 
 	- [Building CRUD with Shiny](https://community.rstudio.com/t/building-crud-with-shiny/2881/8)
-	
+- COOL! [Streamulus](http://iritkatriel.github.io/streamulus/). A C++ Embedded Language for Event Stream Processing
+	- [RcppStreams](http://dirk.eddelbuettel.com/code/rcpp.streams.html)
 
 
 # 24.10.2018
@@ -458,9 +535,26 @@ A few months ago rOpenSci’s Scott Chamberlain asked me for feedback about a ne
 ## DS. Рекомендательные системы
 - COOL! [10 уроков рекомендательной системы Quora](https://habr.com/company/retailrocket/blog/341346/)
 - COOL! [Netflix and Chill: Building a Recommendation System in Excel](https://towardsdatascience.com/netflix-and-chill-building-a-recommendation-system-in-excel-c69b33c914f4). Learn the Machine Learning “Magic” behind the Binge
+- Как это все было. [Netflix Update: Try This at Home](), https://sifter.org/~simon/journal/20061211.htmlMonday, December 11, 2006
 - COOL! [Building a Movie Recommendation System](https://rpubs.com/jeknov/movieRec) by Jekaterina Novikova, PhD, June, 2016
+- [Building a Recommendation System in TensorFlow: Overview](https://cloud.google.com/solutions/machine-learning/recommendation-system-tensorflow-overview)
+- [ALS Implicit Collaborative Filtering](https://medium.com/radon-dev/als-implicit-collaborative-filtering-5ed653ba39fe)
+Вот вопрос: 
+Implicit vs explicit data
+Explicit data is data where we have some sort of rating. Like the 1 to 5 ratings from the MovieLens or Netflix dataset. Here we know how much a user likes or dislikes an item which is great, but this data is hard to come by. Your users might not spend the time to rate items or your app might not work well with a rating approach in the first place.
+
+Implicit data (the type of data we’re using here) is data we gather from the users behaviour, with no ratings or specific actions needed. It could be what items a user purchased, how many times they played a song or watched a movie, how long they’ve spent reading a specific article etc. The upside is that we have a lot more of this data, the downside is that it’s more noisy and not always apparent what it means.
+
+For example, with star ratings we know that a 1 means the user did not like that item and a 5 that they really loved it. With song plays it might be that the user played a song and hated it, or loved it, or somewhere in-between. If they did not play a song it might be since they don’t like it or that they would love it if they just knew about.
 - COOL! [mhahsler/recommenderlab](https://github.com/mhahsler/recommenderlab). recommenderlab - Lab for Developing and Testing Recommender Algorithms - R package
+- [List of Recommender Systems](https://github.com/grahamjenson/list_of_recommender_systems)
+- COOL! [Recommender Systems Comparison](https://rpubs.com/tarashnot/recommender_comparison) by Taras Hnot, 06.08.2016
 - COOL! [recosystem: Recommender System Using Parallel Matrix Factorization](https://cran.r-project.org/web/packages/recosystem/vignettes/introduction.html) by Yixuan Qiu, 2017-09-01
+	- [Recosystem. Matrix Factorization with Gradient Descend](https://rstudio-pubs-static.s3.amazonaws.com/288275_c115bc2ebc794d89a71b5654905beddc.html) by Ann Liu-Ferrara, June 29, 2017
+	- Yixuan's Blog [recosystem: Recommender System Using Parallel Matrix Factorization](https://statr.me/2016/07/recommender-system-using-parallel-matrix-factorization/), July 15, 2016 in Programming, R, Statistics. A Quick View of Recommender System
+	- COOL! [Fast matrix factorization in R](https://www.smartcat.io/blog/2017/fast-matrix-factorization-in-r/)
+	- COOL! [Improved R implementation of collaborative filtering](https://www.smartcat.io/blog/2017/improved-r-implementation-of-collaborative-filtering/)
+	- [smartcat-labs/collaboratory](https://github.com/smartcat-labs/collaboratory). Laboratory for collaborative filtering
 - [The 4 Recommendation Engines That Can Predict Your Movie Tastes](https://medium.com/@james_aka_yale/the-4-recommendation-engines-that-can-predict-your-movie-tastes-bbec857b8223)
 - [Как работают рекомендательные системы. Лекция в Яндексе](https://habr.com/company/yandex/blog/241455/)
 - COOL! [Рекомендательные системы](https://vas3k.ru/blog/355/)
@@ -470,8 +564,16 @@ A few months ago rOpenSci’s Scott Chamberlain asked me for feedback about a ne
 - [Prototyping a Recommendation System](https://towardsdatascience.com/prototyping-a-recommendation-system-8e4dd4a50675). Hello World in R, Java, Scala, and SQL
 - [Recommender Systems in Keras](https://nipunbatra.github.io/blog/2017/recommend-keras.html).
 	- А вообще, в его [блоге](https://nipunbatra.github.io/blog/index.html) полно записей про матричную факторизацию.
+- [Deep Learning for Recommendation with Keras and TensorRec](https://hackernoon.com/deep-learning-for-recommendation-with-keras-and-tensorrec-2b8935c795d0)
+- COOL! [Prototyping a Recommender System for Binary Implicit Feedback Data With R and Keras](https://nanx.me/blog/post/recsys-binary-implicit-feedback-r-keras/)
 - Netflix. [Goodbye Stars, Hello Thumbs](https://media.netflix.com/en/company-blog/goodbye-stars-hello-thumbs)
 - [Understanding ROC curves](http://www.navan.name/roc/)
+- [List of Recommender Systems](https://github.com/grahamjenson/list_of_recommender_systems)
+
+## Datasets
+- [Retail Sector Datasets and Competitions on Kaggle](https://blogs.msdn.microsoft.com/shishirs/2017/02/07/retail-sector-datasets-and-competitions-on-kaggle/)
+- [Online Retail Data Set](https://archive.ics.uci.edu/ml/datasets/online+retail)
+- [BigML datasets](https://bigml.com/gallery/datasets/consumer_and_retail)
 
 
 
@@ -1817,8 +1919,9 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 - [Secure Package Downloads for R](https://support.rstudio.com/hc/en-us/articles/206827897-Secure-Package-Downloads-for-R)
 - COOL!! Грубое решение: `install.packages("httr", method="wget", extra="--no-check-certificate")`. Устанавливаем параметры для `download.file`. Обновление делаем командой `update.packages(ask=FALSE, method="wget", extra="--no-check-certificate")`
 - В случае проблемы с сертификатами напрямую из RStudio clone проекта также не получается сделать. Надо обходить через командную строку:
-`git -c http.sslVerify=false clone https://gitlab.com/repo.git <dir>` (решение найдено здесь:[SSL certificate rejected trying to access GitHub over HTTPS behind firewall](https://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall)).
+`git -c http.sslVerify=false clone https://gitlab.com/repo.git <dir>` (решение найдено здесь:[SSL certificate rejected trying to access GitHub over HTTPS behind firewall](https://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall) или здесь:[github: server certificate verification failed](https://stackoverflow.com/questions/35821245/github-server-certificate-verification-failed/35824116)) .
 Можно потом в конфиг этого репозитория отключить `git config http.sslVerify false`
+
 
 # 25.04.2018
 ## R
