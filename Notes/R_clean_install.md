@@ -1,4 +1,4 @@
-# Установка R
+# Установка R на CentOS 7.x
 ## подключаем репозитории
 sudo yum update
 sudo yum -y install chrony
@@ -97,5 +97,173 @@ Shiny Server
 RStudio Server
 - `http://<server-ip>:8787`
 
-#        ====== Инсталляция под UBUNTU ========
-apt-get install libssl-dev curl  python-dev rrdtool fonts-dejavu fonts-dejavu-core fonts-dejavu-extra ttf-dejavu ttf-dejavu-core ttf-dejavu-extra texlive-fonts-extra postgresql-server-dev-9.3 libv8-dev unixODBC-dev texlive libxml2-dev libjpeg-dev libpng-dev lrzsz libudunits2-dev mesa-common-dev libglu1-mesa-dev libgl1-mesa-dev
+
+# Установка R на Ubuntu 18.x LTS ====== Инсталляция под UBUNTU ========
+
+- [apt-get(8) - Linux man page](https://linux.die.net/man/8/apt-get)
+- [Debian. Разъясните про --no-install-recommends.](https://www.linux.org.ru/forum/desktop/11909791)
+- [25 Useful Basic Commands of APT-GET and APT-CACHE for Package Management](https://www.tecmint.com/useful-basic-commands-of-apt-get-and-apt-cache-for-package-management/)
+- [UBUNTU packages](https://packages.ubuntu.com/)
+```
+sudo apt-get update -q && \
+sudo apt-get -y --no-install-recommends install \
+chrony \
+wget \
+tree \
+libcurl4-openssl-dev \
+libsasl2-dev \
+libxml2-dev \
+libpng-dev \
+libjpeg-dev \
+python \
+python-dev \
+libegl1-mesa \
+libegl1-mesa-dev \
+libglu1-mesa \
+libglu1-mesa-dev \
+libgmp-dev \
+libmpfr-dev \
+libcairo2-dev \
+libxt-dev \
+gtk2-engines \
+libv8-dev \
+libudunits2-0 \
+unixODBC* \
+postgresql \
+libmariadb-dev \
+libmysqlclient-dev \
+gfortran-6 \
+texlive* \
+ufw \
+dejavu* \
+rrdtool \
+psmisc \
+lrzsz \
+gdal* \
+libproj-dev \
+r-cran-rprotobuf \
+libprotobuf-dev \
+libgeos-dev
+```
+
+```
+sudo apt-get -y --no-install-recommends install \
+mesa-common-dev \
+libudunits2-dev \
+libssl-dev \
+curl \
+fonts-dejavu \
+fonts-dejavu-core \
+fonts-dejavu-extra \
+ttf-dejavu \
+ttf-dejavu-core \
+ttf-dejavu-extra \
+postgresql-server-dev-10
+```
+Ставим вместе с рекомендованными пакетами
+```
+sudo apt-get -y install \
+gcc \
+g++ \
+lzma \
+lzma-dev \
+liblzma-dev \
+lbzip2 \
+libbz2-dev \
+libblas-dev \
+liblapack-dev \
+gfortran
+
+```
+   # r-cran-littler
+
+- [library missing cannot find -lbz2 in arch](https://stackoverflow.com/questions/49841635/library-missing-cannot-find-lbz2-in-arch)
+`/usr/bin/ld: cannot find -lbz2`
+Ставим `sudo apt-get install libbz2-dev`
+- [Question: cannot find -llapack + -lblas for package install](https://support.bioconductor.org/p/67326/)
+`sudo apt-get install libblas-dev liblapack-dev`
+
+
+# x11-xserver-utils
+
+
+## Ставим R под Ubuntu
+- [How To Install R on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-r-on-ubuntu-18-04)
+```
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
+sudo apt update
+sudo apt install r-base
+```
+
+Ставим пакет [`littler`](http://dirk.eddelbuettel.com/code/littler.html)
+И включаем его в путь:
+- либо в текущей сессии `export PATH=$PATH:/usr/lib/R/site-library/littler/examples`
+- либо добавить в настройки bash путем редактирования ресурсного файла: `vi .bashrc`
+И передавать потом окружение через параметры команды sudo:
+`sudo --preserve-env=PATH -i`
+
+### Ставим R пакеты
+- [GNU Operating System. Findutils](https://www.gnu.org/software/findutils/)
+- Для `jqr` надо ставить либы...
+``
+Configuration failed because libjq was not found.
+On Ubuntu 14.04 or 16.04 you can use the PPA:
+  sudo add-apt-repository -y ppa:opencpu/jq
+  sudo apt-get update
+  sudo apt-get install libjq-dev
+On other sytems try installing:
+ * deb: libjq-dev (Debian, Ubuntu 16.10 and up).
+ * rpm: jq-devel (Fedora, EPEL)
+ * csw: libjq_dev (Solaris)
+ * brew: jq (OSX)
+```
+
+sudo install2.r --error --deps TRUE \
+curl
+
+sudo /usr/lib/R/site-library/littler/examples/install2.r --error --deps TRUE \
+tidyverse \
+Cairo \
+gdtools \
+git2r \
+shiny \
+shinyjs \
+DT \
+shinyjqui \
+shinythemes \
+shinyBS \
+shinyWidgets \
+shinycssloaders \
+futile.logger \
+extrafont \
+hrbrthemes \
+anytime \
+tictoc \
+re2r \
+officer \
+openxlsx \
+assertr \
+checkmate \
+promises \
+future \
+magrittr \
+readxl \
+lubridate \
+tictoc \
+checkmate \
+openxlsx \
+hrbrthemes \
+stringi
+
+
+sudo /usr/lib/R/site-library/littler/examples/install2.r --error --deps TRUE \
+data.table \
+jsonlite \
+jqr \
+readtext \
+iterators \
+foreach \
+doParallel
+
+`sudo apt-get install  `

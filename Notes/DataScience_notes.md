@@ -211,6 +211,10 @@ Or with gunzip
 - [How to import a directory of csvs at once with base R and data.table. Can you guess which way is the fastest?](https://jozefhajnala.gitlab.io/r/r005-import-csvs/)
 - [Convenience features of fread](https://github.com/Rdatatable/data.table/wiki/Convenience-features-of-fread)
 - [Sort rows in data.table in decreasing order on string key `order(-x,v)` gives error on data.table 1.9.4 or earlier](https://stackoverflow.com/questions/12353820/sort-rows-in-data-table-in-decreasing-order-on-string-key-order-x-v-gives-er)
+- COOL! [Fastest way to replace NAs in a large data.table](https://stackoverflow.com/questions/7235657/fastest-way-to-replace-nas-in-a-large-data-table)
+- [Use data.table set() to convert all columns from integer to numeric](https://stackoverflow.com/questions/29790204/use-data-table-set-to-convert-all-columns-from-integer-to-numeric)
+- [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)
+- [data.table objects aren't updated in Rstudio environment panel](https://stackoverflow.com/questions/35921206/data-table-objects-arent-updated-in-rstudio-environment-panel)
 
 # DS
 - COOL! [Машинное обучение для людей. Разбираемся простыми словами](https://vas3k.ru/blog/machine_learning/)
@@ -282,6 +286,7 @@ l.118 \caption{Longtable}
 }
 ```
 - [RMarkdown сhunk options and package options](https://yihui.name/knitr/options/)
+- COOL! [One Little Thing: the knitr Chunk Option include=FALSE](https://yihui.name/en/2017/11/knitr-include-false/) by Yihui Xie, 2017-11-22
 - [How to make tables float in Rmarkdown pdf document/Inserting tables causing text to disappear in pdf output](http://stackoverflow.com/questions/41705848/how-to-make-tables-float-in-rmarkdown-pdf-document-inserting-tables-causing-text)
 - [Moving from Beamer to R Markdown](http://rmarkdown.rstudio.com/articles_beamer.html)
 - [Simple manual RMarkdown tables that look good in HTML, PDF and DOCX](http://stackoverflow.com/questions/19997242/simple-manual-rmarkdown-tables-that-look-good-in-html-pdf-and-docx)
@@ -313,6 +318,8 @@ output:
 ```
 - [Automatically scale font size (etc.) of ggplot2 inside an Rmarkdown document](http://stackoverflow.com/questions/28835491/automatically-scale-font-size-etc-of-ggplot2-inside-an-rmarkdown-document)
 - COOL presentation. [Advanced R Markdown. Behind the Knit Button](https://slides.yihui.name/2017-rstudio-conf-rmarkdown-Yihui-Xie.html#1) by Yihui Xie, RStudio
+- [Error creating notebook: non-numeric argument to binary operator; RStudio](https://stackoverflow.com/questions/45024350/error-creating-notebook-non-numeric-argument-to-binary-operator-rstudio).
+Мне помогло вытирание кэша в `... \jira-nlp\.Rproj.user\shared\notebooks\160C43F1-jira_analysis`
 
 ## knitr. Запускаем Rmd -> PDF
 Смотрим ссылки ниже. Важный концепт, который держим в голове -- возможность генерации отчетов из .R файлов (не .Rmd) посредством `spin`. `rmarkdown::render()` автоматически выбирает spin\knit в зависимости от расширения файла.
@@ -385,11 +392,148 @@ https://www.data-to-viz.com/
 https://rawgraphs.io/
 https://plot.ly/products/cloud/
 
+# 19.11.2018
+- [The tidy caret interface in R](https://poissonisfish.wordpress.com/2018/11/16/the-all-new-caret-interface-in-r/)
+- [Make Beautiful Tables with the Formattable Package](https://www.displayr.com/formattable/)
+- COOL! [Convert Data Frame to Dictionary List in R](https://statcompute.wordpress.com/2018/11/16/convert-data-frame-to-dictionary-list-in-r/)
+- [zero counts in dplyr](https://kieranhealy.org/blog/archives/2018/11/19/zero-counts-in-dplyr/)
+- [RStudio 1.2 Preview: The Little Things](https://blog.rstudio.com/2018/11/19/rstudio-1-2-preview-the-little-things/) by Jonathan McPherson, 2018-11-19
+
+# 16.11.2018
+- [ggplot geom_bar with stat = “sum”](https://stackoverflow.com/questions/47818188/ggplot-geom-bar-with-stat-sum)
+- [stat_sum and stat_identity give weird results](https://stackoverflow.com/questions/27965291/stat-sum-and-stat-identity-give-weird-results/27965637#27965637)
+
+# 15.11.2018
+## R
+- [Shiny 1.2.0: Plot caching](https://blog.rstudio.com/2018/11/13/shiny-1-2-0/) by Joe Cheng, 2018-11-13
+- OPEN SOURCE AUTOMATION. Automating everyday tasks with open source code. [THOSE “OTHER” APPLY FUNCTIONS…](http://theautomatic.net/2018/11/13/those-other-apply-functions/)
+- [Windows Clipboard Access with R](http://r-bar.net/r-clipboard-data-copy-paste/)
+- COOL! [Searching for the optimal hyper-parameters of an ARIMA model in parallel: the tidy gridsearch approach](https://www.brodrigues.co/blog/2018-11-15-tidy_gridsearch/)
+- [Writing Data From R to Excel Files (xls|xlsx)](http://www.sthda.com/english/wiki/writing-data-from-r-to-excel-files-xls-xlsx)
+- [Opposite of %in%](https://stackoverflow.com/questions/5831794/opposite-of-in)
+
+# 13.11.2018
+## R
+- [gsubfn: Utilities for Strings and Function Arguments](https://cran.r-project.org/web/packages/gsubfn/index.html)
+- COOL!! [Faster way to trim a long character vector in R {closed}](https://stackoverflow.com/questions/39152317/faster-way-to-trim-a-long-character-vector-in-r). !!! **It's just that `strtrim()` is fairly slow.** Answer: Use `(substr(x, 1, 3))`
+- ряд полезных функций: `stringi::stri_trim_both`, `stringr::str_squish()`, `rlang::squash_chr()`
+- [Recode values with character subsetting](https://tjmahr.github.io/recode-values-with-character-subsetting/)
+- Разбивка на диапазоны. Ключевое слово -- "ДИСКРЕТИЗАЦИЯ". См. область из машинного обучения. 
+	- `discretize {arules}`, см. [Convert a Continuous Variable into a Categorical Variable](http://www.inside-r.org/packages/cran/arules/docs/discretize)
+	- [Convert continuous numeric values to discrete categories defined by intervals](https://stackoverflow.com/questions/13559076/convert-continuous-numeric-values-to-discrete-categories-defined-by-intervals)
+	- [Categorize continuous variable with dplyr {duplicate}](https://stackoverflow.com/questions/40380112/categorize-continuous-variable-with-dplyr)
+	- [discretization in R with `arules` package](https://stackoverflow.com/questions/32100476/discretization-in-r-with-arules-package)
+
+- как создать "тепловые" карты с надписями:
+	- [Hello, Dorling! (Creating Dorling Cartograms from R Spatial Objects + Introducing Prism Skeleton)](https://rud.is/b/2018/06/03/hello-dorling-creating-dorling-cartograms-from-r-spatial-objects-introducing-prism-skeleton/)
+	- [Wrangling Data Table Out Of the FBI 2017 IC3 Crime Report](https://rud.is/b/2018/05/08/wrangling-data-table-out-of-the-fbi-2017-ic3-crime-report/)
+	- [Compute/Visualize Drive Space Consumption of Your Installed R Packages](https://rud.is/b/2018/04/01/compute-visualize-drive-space-consumption-of-your-installed-r-packages/)
+	- [Statebins Reimagined](https://rud.is/b/2017/11/18/statebins-reimagined/)
+	- COOL! [ggraph: An Implementation of Grammar of Graphics for Graphs and Networks](https://cran.r-project.org/web/packages/ggraph/index.html)
+	- [A Very Palette-able Post](https://rud.is/b/2017/05/21/a-very-pallete-able-post/)
+	- [Making Faceted Heatmaps with ggplot2](https://rud.is/b/2016/02/14/making-faceted-heatmaps-with-ggplot2/)
+	
+
+
+# 12.11.2018
+## Linux
+- [GZip every file separately](https://stackoverflow.com/questions/1792078/gzip-every-file-separately)
+- [Script to create individual zip files for each .txt file it finds and move them after](https://stackoverflow.com/questions/12321167/script-to-create-individual-zip-files-for-each-txt-file-it-finds-and-move-them)
+- `parallel gzip ::: *`
+GNU Parallel is a fantastic tool that should be used far more in this world where CPUs are only getting more cores rather than more speed. There are loads of examples that we would all do well to take 10 minutes to read
+[GNU Parallel Tutorial](https://www.gnu.org/software/parallel/parallel_tutorial.html)
+- [Example Uses Of The Linux "gzip" Command](https://www.lifewire.com/example-uses-of-the-linux-gzip-command-4078675)
+- [Linux zip command](https://www.computerhope.com/unix/zip.htm)
+- [How to zip multiple files into separate archives?](https://superuser.com/questions/430388/how-to-zip-multiple-files-into-separate-archives)
+```
+find . -name '*.txt.*' -print -exec zip '{}'.zip '{}' \; -exec mv '{}'.zip '{}' \;
+```
+Find the .txt files
+The first -exec zips the files
+The second -exec renames the zipped files to the original names
+- [Linux 101 Hacks. Hack 45. Advanced compression using zip command](https://linux.101hacks.com/archive-compression/advanced-compression-using-zip-command/)
+- [How to Use zip Command in Linux](https://tecadmin.net/how-to-use-zip-command-line-linux/)
+- [How To: Disk Full? - Check Your Trash](https://ubuntuforums.org/showthread.php?t=898573). Гуляем командами по директориям
+```
+df -Th | sort
+du -sh * | sort -n
+```
+
+
+# 09.11.2018
+## R
+- COOL! [Speeding Up JSON Parsing in R](https://elucidatablog.wordpress.com/2016/07/13/speeding-up-json-parsing-in-r/). Combining JSON parser: Saving milliseconds of the response time
+Even after this what we had was not fast enough. Parsing JSON in R was now the rate-determining step. The two popular packages in R to handle JSON objects are ‘rjson’ and ‘jsonlite’.
+- [High performance JSON streaming in R: Part 1](https://www.opencpu.org/posts/jsonlite-streaming/)
+- [JSON serialization now even faster and prettier](https://www.opencpu.org/posts/jsonlite-release-0-9-16/)
+- [jqr -- R interface to jq, a JSON processor http://stedolan.github.io/jq/](https://github.com/ropensci/jqr). jqr makes it easy to process large amounts of json without having to convert from json to R, or without using regular expressions. This means that the eventual loading into R can be quicker.
+- [Hyperpolyglot. JSON Tools: Jq](http://hyperpolyglot.org/json)
+- [jq Conditional output](https://stackoverflow.com/questions/19573517/jq-conditional-output)
+- [Bash that JSON (with jq)](http://blog.librato.com/posts/jq-json)
+- [jq: Filtering missing keys](https://markhneedham.com/blog/2015/11/14/jq-filtering-missing-keys/)
+- [Return empty string instead of "null" with "jq --raw-output" ? #354 {Closed}](https://github.com/stedolan/jq/issues/354)
+- [Reshaping JSON with jq](https://programminghistorian.org/en/lessons/json-and-jq) by Matthew Lincoln
+
+## parallel
+- COOL! Как правильно сделать? [R foreach with .combine=rbindlist](https://stackoverflow.com/questions/17411223/r-foreach-with-combine-rbindlist)
+- Проблема с NULL значениями при слиянии списков с помощью rbindlist: ["Is there a more efficient way to replace NULL with NA in a list?"](https://stackoverflow.com/questions/22870198/is-there-a-more-efficient-way-to-replace-null-with-na-in-a-list/22870450)
+	- [rbinding a list of data frame R with NULL](https://stackoverflow.com/questions/48793099/rbinding-a-list-of-data-frame-r-with-null)
+	- [rbindlist should deal with NULL values #1871 {Open}](https://github.com/Rdatatable/data.table/issues/1871)
+- [foreach: Keep names](https://stackoverflow.com/questions/27276269/foreach-keep-names)
+- COOL! [A Foreach Parallel Adaptor using Futures](https://cran.r-project.org/web/packages/doFuture/vignettes/doFuture.html). Introduction
+- COOL! [R - parallel computing in 5 minutes (with foreach and doParallel)](http://blog.aicry.com/r-parallel-computing-in-5-minutes/index.html)
+- COOL! [GNU Parallel Tutorial](https://www.gnu.org/software/parallel/parallel_tutorial.html): `sudo yum install parallel`
+
+
+
+# 08.11.2018
+## R JIT
+- "Efficient R programming". [7.4 The byte compiler](https://csgillespie.github.io/efficientR/7-4-the-byte-compiler.html)
+- [The new R compiler package in R 2.13.0: Some first experiments](http://dirk.eddelbuettel.com/blog/2011/04/12/)
+- [How to make best use of the byte compiler in R](https://blog.revolutionanalytics.com/2017/08/take-advantage-compiler.html)
 
 # 07.11.2018
 ## R
 - COOL! [readtext: Import and Handling for Plain and Formatted Text Files](https://cran.r-project.org/web/packages/readtext/index.html)
 Functions for importing and handling text files and formatted text files with additional meta-data, such including '.csv', '.tab', '.json', '.xml', '.html', '.pdf', '.doc', '.docx', '.xls', '.xlsx', and others.
+- [Source and List: Organizing R Shiny Apps](http://r-bar.net/organize-r-shiny-list-source/)
+- COOL! ['How do neural nets learn?' A step by step explanation using the H2O Deep Learning algorithm](https://shirinsplayground.netlify.com/2018/11/neural_nets_explained/)
+- [Using httr to Detect HTTP(s) Redirects](https://petermeissner.de/blog/2018/11/07/using-httr-to-detect-redirects/)
+- COOL! [httpbin.org. A simple HTTP Request & Response Service.](https://httpbin.org/)
+- [ndjson Newline Delimited JSON](http://ndjson.org/)
+
+## GCC
+- При инсталляции пакета `ndjson` под CentOS получил ошибку "C++14 standard requested but CXX14 is not defined". 
+PostPosted: Tue Jun 19, 2018 5:30 pm    Post subject:	Reply with quote  
+Are you able to compile your example with g++? I can't seem to replicate your issue on machines that have a more recent version of libstdc++ 
+From this page [https://gcc.gnu.org/projects/cxx-status.html#cxx14](https://gcc.gnu.org/projects/cxx-status.html#cxx14) it looks like 4.8.5 doesn't fully support C++14
+```
+$ lsb_release -id 
+Distributor ID:   CentOS 
+Description:   CentOS Linux release 7.5.1804 (Core) 
+$ which g++ 
+/usr/bin/g++ 
+$ g++ --version 
+g++ (GCC) 4.8.5 20150623 (Red Hat 4.8.5-28) 
+```
+
+## yum
+- Как поставить в CentOS пакет меньшей версии? Ответ: Командой `sudo yum downgrade <rpm>`
+
+## R. Document similarity
+- COOL! [Documents similarity](http://text2vec.org/similarity.html) by Dmitriy Selivanov, 2017-08-08
+- [Document Similarity with R](http://fredgibbs.net/tutorials/document-similarity-with-r.html)
+- COOL! [quanteda: Quantitative Analysis of Textual Data](https://quanteda.io/)
+- COOL! Text2vec [Blog](http://dsnotes.com/tags/text2vec/):
+	- COOL! [Analyzing texts with text2vec package](https://dsnotes.com/post/text2vec/)
+- [tokenizers: Fast, Consistent Tokenization of Natural Language Text](https://cran.r-project.org/web/packages/tokenizers/index.html)
+Convert natural language text into tokens. Includes tokenizers for shingled n-grams, skip n-grams, words, word stems, sentences, paragraphs, characters, shingled characters, lines, tweets, Penn Treebank, regular expressions, as well as functions for counting characters, words, and sentences, and a function for splitting longer texts into separate documents, each with the same number of words. The tokenizers have a consistent interface, and the package is built on the 'stringi' and 'Rcpp' packages for fast yet correct tokenization in 'UTF-8'.
+- [Demystifying Text Analytics part 3 — Finding Similar Documents with Cosine Similarity in R](https://blog.exploratory.io/demystifying-text-analytics-finding-similar-documents-with-cosine-similarity-e7b9e5b8e515)
+- [Pairwise comparisons for document similarity](https://cran.r-project.org/web/packages/textreuse/vignettes/textreuse-pairwise.html)
+- [textrank: Summarize Text by Ranking Sentences and Finding Keywords](https://cran.r-project.org/web/packages/textrank/index.html)
+- [udpipe: Tokenization, Parts of Speech Tagging, Lemmatization and Dependency Parsing with the 'UDPipe' 'NLP' Toolkit](https://cran.r-project.org/web/packages/udpipe/index.html)
+- [topicmodels: Topic Models](https://cran.r-project.org/web/packages/topicmodels/index.html)
+Provides an interface to the C code for Latent Dirichlet Allocation (LDA) models and Correlated Topics Models (CTM) by David M. Blei and co-authors and the C++ code for fitting LDA models using Gibbs sampling by Xuan-Hieu Phan and co-authors
 
 # 06.11.2018
 ## R
@@ -905,6 +1049,7 @@ This site is intended to be a resource for digital analysts who are interested i
 - новые поступления от ropensci:
 	- [ropensci/charlatan](https://github.com/ropensci/charlatan). Create fake data in R
 	- [jqr -- R interface to jq, a JSON processor http://stedolan.github.io/jq/](https://github.com/ropensci/jqr). jqr makes it easy to process large amounts of json without having to convert from json to R, or without using regular expressions. This means that the eventual loading into R can be quicker.
+- [Hyperpolyglot. JSON Tools: Jq](http://hyperpolyglot.org/json)
 - ML. [cattonum](https://github.com/bfgray3/cattonum). cattonum (cat to num) provides different ways to encode categorical features as numerics.
 - [Synchronization for R with the flock Package](http://www.quintuitive.com/2014/11/20/synchronization-for-r-with-the-flock-package/)
 

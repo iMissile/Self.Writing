@@ -289,6 +289,14 @@ sudo yum remove unixODBC-utf16 unixODBC-utf16-devel #to avoid conflicts
 sudo ACCEPT_EULA=Y yum install msodbcsql
 ```
 
+- Подключение пакета `pdftools` (требуется для пакета `readtext`).
+При попытке установить пакет возникает ошибка `Configuration failed because poppler-cpp was not found. Try installing:`
+Ставим пакет командой
+`sudo yum install poppler-cpp-devel`
+
+- Подключение пакета `jqr`
+`sudo yum install jq-devel`
+
 ## Установка RStudio Server
 [Страница загрузки](https://www.rstudio.com/products/rstudio/download-server/)
 
