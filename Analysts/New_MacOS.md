@@ -60,6 +60,11 @@ TimeMachineEditor is a software for OS X that lets you change the default one-ho
 ## Интересные утилиты
 - [iTerm2](https://www.iterm2.com/downloads.html) -- удобная бесплатная замена для штатного терминала.
 - [Cyberduck](https://cyberduck.io) is a libre server and cloud storage browser for Mac and Windows with support for FTP, SFTP, WebDAV, Amazon S3, OpenStack Swift, Backblaze B2, Microsoft Azure & OneDrive, Google Drive and Dropbox.
+- [MacPass](https://macpassapp.org/). A free, open-source, KeePass-compatible password manager for macOS.
+- [Strongbox](https://strongboxsafe.com/). A Password Manager for Apple devices. Password Safe & KeePass compatible
+- [SyncPass](https://itunes.apple.com/app/id533858341)
+- 1password
+	- [download 1password6](https://discussions.agilebits.com/discussion/91012/download-1password6)
 
 ## Как сделать ресет для OneDrive
 - COOL! [ONEDRIVE SYNC ISSUES? HOW TO RESET ONEDRIVE FOR MAC THE EASY WAY!](

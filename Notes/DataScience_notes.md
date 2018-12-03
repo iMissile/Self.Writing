@@ -9,6 +9,11 @@ https://tmall.aliexpress.com/item/Edifier-W830BT-1/1000005465785.html
 - [Appsylum](http://appsylum.com/). Find Discuss & Support the Apps You Love
 - [onefactor](https://1f.ai/ru/)
 - [ReservoContext: поисковая система для переводов в контексте](http://context.reverso.net)
+- Slack tools
+	- [Slack Deletron](https://www.slackdeletron.com/). Delete and manage files from your Slack Workspace!
+	- [How To Delete all Slack Files to Manage Disk Space](https://www.techjunkie.com/delete-all-slack-files/)
+
+
 
 [Backblaze Safety Freeze](https://help.backblaze.com/hc/en-us/articles/217666178-Safety-Freeze-Your-Backup-is-Safety-Frozen-)
 
@@ -80,6 +85,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/bookdown.pdf)
 - [Hands-on Deep Reinforcement Learning, published by Packt](https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On)
 - COOL! [Getting Started in R. An eight-page pdf guide for "Getting Started in R".](https://github.com/eddelbuettel/gsir-te)
+- [Statistical Inference via Data Science in R](https://moderndive.netlify.com/)
 
 # Video
 - [Основы анализа данных. ВШЭ](https://www.youtube.com/channel/UCLk-Oih8VlqF-StidijTUnw/videos)
@@ -392,6 +398,83 @@ https://www.data-to-viz.com/
 https://rawgraphs.io/
 https://plot.ly/products/cloud/
 
+# 30.11.2018
+## R courses
+- Отличный курс по R. [UC Business Analytics R Programming Guide](http://uc-r.github.io/tibbles)
+- [Tibbles](https://cran.r-project.org/web/packages/tibble/vignettes/tibble.html). There are three key differences between tibbles and data frames: printing, subsetting, and recycling rules.
+- [Lecture 14: ggmap and lubridate packages. 95-868: Exploring and Visualizing Data](https://www.andrew.cmu.edu/user/davidch/95868/Lec14.pdf)
+- COOL! [STAT 545. Cheatsheet for dplyr join functions](http://stat545.com/bit001_dplyr-cheatsheet.html) by Jenny Bryan
+- [Tidyverse for Beginners](https://slides.com/djnavarro/tidyverse-for-beginners#/)
+- [Slides for teaching the tidyverse way to total beginners](https://community.rstudio.com/t/slides-for-teaching-the-tidyverse-way-to-total-beginners/3157)
+
+## Text mining
+- [textrank: Summarize Text by Ranking Sentences and Finding Keywords](https://cran.r-project.org/web/packages/textrank/index.html)
+- COOL! [Изучаем синтаксические парсеры для русского языка](https://habr.com/company/sberbank/blog/418701/). Блог компании Сбербанк, Искусственный интеллект, Машинное обучение
+
+# 29.11.2018
+## R
+- [Collection of most color palettes in a single R package](https://www.hvitfeldt.me/r/paletteer/)
+- [The background to useR! 2018](http://dicook.org/2018/10/10/content/post/2018-10-10-user2018/)
+- [Find the best locations for facilities using maxcovr](https://github.com/njtierney/user-2018-maxcovr-talk). A talk presented by Nick Tierney, presented at UseR!2018
+- [fasster](https://mitchelloharawild.com/user2018/). Forecasting multiple seasonality with state switching
+- R FAQ. [7.31 Why doesn’t R think these numbers are equal?](https://cran.r-project.org/doc/FAQ/R-FAQ.html#Why-doesn_0027t-R-think-these-numbers-are-equal_003f)
+- Statistical Inference: A Tidy Approach. The infer R package
+	- Slides available at [http://bit.ly/infer-useR](http://bit.ly/infer-useR)
+	- Package webpage at [https://infer.netlify.com](https://infer.netlify.com)
+
+# 28.11.2018
+## R
+- COOL! [Postman](https://www.getpostman.com/). Developers use Postman to build modern software for the API-first world.
+- [tsibble 0.6.0](https://cran.rstudio.com/web/packages/tsibble/news/news.html)
+- [Slack and Plumber, Part Two](https://rviews.rstudio.com/2018/11/27/slack-and-plumber-part-two/)
+- COOL! [Using clustering to find points in an image](https://privefl.github.io/blog/using-clustering-to-find-points-in-an-image/)
+- [styler 1.1.0](https://lorenzwalthert.netlify.com/posts/styler-v1.1/)
+- r `sub()` vs `gsub()`:
+	- [Difference between sub and gsub in R](http://www.datasciencemadesimple.com/sub-gsub-function-in-r/)
+	- [sub, gsub](http://rfunction.com/archives/2354)
+	- [Difference between sub and gsub in R](https://gist.github.com/soujanno/8464a2130e71737b56f7a543a373adf2)
+- [flatxml package](http://www.zuckarelli.de/flatxml/index.html)
+- The [xml2 package](http://xml2.r-lib.org/) is a binding to libxml2, making it easy to work with HTML and XML from R. The API is somewhat inspired by jQuery.
+	- [Parse and process XML (and HTML) with xml2](https://blog.rstudio.com/2015/04/21/xml2/) by Hadley Wickham, 2015-04-21
+- [Using xml schema and xslt in R](https://ropensci.org/blog/2017/01/10/xslt-release/)
+- [This R Data Import Tutorial Is Everything You Need](https://www.datacamp.com/community/tutorials/r-data-import-tutorial)
+- [Project-oriented workflow](https://www.tidyverse.org/articles/2017/12/workflow-vs-script/). What’s wrong with setwd()?
+
+# 27.11.2018
+## R
+- А вот возможные корни проблемы с R notebook: [Output missing from notebook HTML, but not regular HTML](https://github.com/rstudio/rmarkdown/issues/1002). Слишком сложные зависимости.
+- Оказалось все гораздо проще. Процесс инициализации пакетов включает всякие ненужные операции при выводе на экран. Надо их гасить опциями и все получается Ок!
+```{r load packages, message=FALSE, warning=FALSE, include=FALSE}
+```
+- [BTYDplus: Probabilistic Models for Assessing and Predicting your Customer Base](https://cran.r-project.org/web/packages/BTYDplus/)
+- [A Chrome Remote Interface written in R](https://github.com/RLesur/crrri)
+
+# 26.11.2018
+## R
+- [RStudio Cheatsheets Source](https://github.com/rstudio/cheatsheets)
+- [Interactive directory input in Shiny app (R)](https://stackoverflow.com/questions/39196743/interactive-directory-input-in-shiny-app-r)
+- [An shiny input widget for selecting directories](https://github.com/wleepang/shiny-directory-input)
+- [thomasp85/shinyFiles](https://github.com/thomasp85/shinyFiles). shinyFiles: A Server-Side File System Viewer for Shiny
+Provides functionality for client-side navigation of the server side file system in shiny apps. In case the app is running locally this gives the user direct access to the file system without the need to "download" files to a temporary location. Both file and folder selection as well as file saving is available.
+- [OneR – fascinating insights through simple rules](http://blog.ephorie.de/oner-fascinating-insights-through-simple-rules)
+
+
+# 23.11.2018
+## R
+- [Creating List with Iterator](https://statcompute.wordpress.com/2018/11/22/creating-list-with-iterator/)	
+
+
+# 22.11.2018
+## DS & R
+- COOL! [Dealing with failed projects](https://edwinth.github.io/blog/failed-projects/)
+- COOL! [So your data science project isn’t working](https://medium.com/@skyetetra/so-your-data-science-project-isnt-working-7bf57e3f12f1)
+- COOL! [Slides from my talks about Demystifying Big Data and Deep Learning (and how to get started)](https://shirinsplayground.netlify.com/2018/11/slides_demystifying_dl/)
+- COOL! [circlize: circular visualization in R](https://github.com/jokergoo/circlize)
+- [ACHINE LEARNING. IN CONVERSATION WITH JELENA ILIC, SENIOR DATA SCIENTIST AT MANGO SOLUTIONS](https://www.mango-solutions.com/blog/machine-learning-in-conversation-with-jelena-ilic-senior-data-scientist-at-mango-solutions)
+- [OpenCPU 2.1 Release: Scalable R Services](https://www.opencpu.org/posts/opencpu-201/), November 22, 2018
+- [R > PYTHON: A CONCRETE EXAMPLE](https://matloff.wordpress.com/2018/11/20/r-python-a-concrete-example/)
+- [Make your R code nicer with roperators](https://www.happylittlescripts.com/2018/09/make-your-r-code-nicer-with-roperators.html)
+
 # 19.11.2018
 - [The tidy caret interface in R](https://poissonisfish.wordpress.com/2018/11/16/the-all-new-caret-interface-in-r/)
 - [Make Beautiful Tables with the Formattable Package](https://www.displayr.com/formattable/)
@@ -532,8 +615,24 @@ Convert natural language text into tokens. Includes tokenizers for shingled n-gr
 - [Pairwise comparisons for document similarity](https://cran.r-project.org/web/packages/textreuse/vignettes/textreuse-pairwise.html)
 - [textrank: Summarize Text by Ranking Sentences and Finding Keywords](https://cran.r-project.org/web/packages/textrank/index.html)
 - [udpipe: Tokenization, Parts of Speech Tagging, Lemmatization and Dependency Parsing with the 'UDPipe' 'NLP' Toolkit](https://cran.r-project.org/web/packages/udpipe/index.html)
+- [Using String Distance {stringdist} To Handle Large Text Factors, Cluster Them Into Supersets](https://amunategui.github.io/stringdist/)
+
+## LDA (Latent Dirichlet Allocation)
+- COOL! [A gentle introduction to topic modeling using R](https://eight2late.wordpress.com/2015/09/29/a-gentle-introduction-to-topic-modeling-using-r/)
+- [Введение для новичков: что такое Латентное размещение Дирихле (LDA)?](https://mebius.io/analysis/intro-to-LDA). Популярно о сложном — об известнейшем методе машинного обучения под названием «Латентное размещение Дирихле».
+- [Bayesian and frequentist reasoning in plain English](http://stats.stackexchange.com/questions/22/bayesian-and-frequentist-reasoning-in-plain-english)
+- Блестящий цикла материалов про LDA:
+	- [Вероятностные модели: от наивного Байеса к LDA, часть 1](https://habrahabr.ru/company/surfingbird/blog/228249/)
+	- [Вероятностные модели: LDA, часть 2](https://habrahabr.ru/company/surfingbird/blog/230103/)
+- [Find out more about Themescape](http://ip-science.thomsonreuters.com/winningmove/secure/TI_Themescape_QT.html)
+- [Консалтинговая контора по DataScience](https://projectbotticelli.com/). Взял с конференции Микрософт:[Putting Science into the Business of Data Science](https://channel9.msdn.com/Events/Machine-Learning-and-Data-Sciences-Conference/Data-Science-Summit-2016/MSDSS05), Date: September 26, 2016, Speakers: Rafal Lukawiecki
 - [topicmodels: Topic Models](https://cran.r-project.org/web/packages/topicmodels/index.html)
 Provides an interface to the C code for Latent Dirichlet Allocation (LDA) models and Correlated Topics Models (CTM) by David M. Blei and co-authors and the C++ code for fitting LDA models using Gibbs sampling by Xuan-Hieu Phan and co-authors
+
+Новинки
+- [Your Easy Guide to Latent Dirichlet Allocation](https://medium.com/@lettier/how-does-lda-work-ill-explain-using-emoji-108abf40fa7d)
+- [Spark ML -- Latent Dirichlet Allocation](https://spark.rstudio.com/reference/ml_lda/)
+- [Topic modeling with LDA: MLlib meets GraphX](https://databricks.com/blog/2015/03/25/topic-modeling-with-lda-mllib-meets-graphx.html)
 
 # 06.11.2018
 ## R
@@ -726,6 +825,7 @@ For example, with star ratings we know that a 1 means the user did not like that
 - [hclust() in R on large datasets](https://stackoverflow.com/questions/40989003/hclust-in-r-on-large-datasets)
 - COOL! [fastcluster: Fast Hierarchical Clustering Routines for R and 'Python'](https://cran.r-project.org/web/packages/fastcluster/)
 This is a two-in-one package which provides interfaces to both R and 'Python'. It implements fast hierarchical, agglomerative clustering routines. Part of the functionality is designed as drop-in replacement for existing routines: linkage() in the 'SciPy' package 'scipy.cluster.hierarchy', hclust() in R's 'stats' package, and the 'flashClust' package. It provides the same functionality with the benefit of a much faster implementation. Moreover, there are memory-saving routines for clustering of vector data, which go beyond what the existing packages provide. For information on how to install the 'Python' files, see the file INSTALL in the source distribution. Based on the present package, Christoph Dalitz also wrote a pure 'C++' interface to 'fastcluster': <http://informatik.hsnr.de/~dalitz/data/hclust>.
+- [Cluster Analysis with R](https://rstudio-pubs-static.s3.amazonaws.com/33876_1d7794d9a86647ca90c4f182df93f0e8.html)
 
 ## parallel R
 - COOL! [A guide to parallelism in R](https://privefl.github.io/blog/a-guide-to-parallelism-in-r/) Written on September 5, 2017 by Florian Privé, R(cpp) enthusiast
@@ -7435,6 +7535,7 @@ You can provide information about your app that Shiny showcase will use by creat
 - COOL! [(A Very) Experimental Threading in R](https://random-remarks.net/2016/12/11/a-very-experimental-threading-in-r/)
 - [THREADING IN R?](https://matloff.wordpress.com/2016/12/11/threading-in-r/)
 - [pqR - a pretty quick version of R](http://www.pqr-project.org/)
+	- [New version of pqR, with major speed improvements](https://radfordneal.wordpress.com/2018/11/25/new-version-of-pqr-with-major-speed-improvements/), 2018-11-25 at 5:45 pm. I’ve released pqR-2018-11-18, a new version of my variant implementation of R
 - [Chaos, bifurcation diagrams and Lyapunov exponents with R (2)](http://a-blog-from-sydney.blogspot.ru/2016/12/chaos-bifurcation-diagrams-and-lyapunov.html)
 - [Using PostgreSQL in R: A quick how-to](http://www.win-vector.com/blog/2016/02/using-postgresql-in-r/)
 - [The Case For Using -> In R](http://www.win-vector.com/blog/2016/12/the-case-for-using-in-r/)

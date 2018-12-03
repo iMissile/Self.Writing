@@ -78,6 +78,8 @@ makeRepo(pkgList, path="d:/temp/miniCRAN", repos="https://cloud.r-project.org/",
 `sudo useradd <username>`
 `sudo passwd <username>`
 
+!!! Важно, на Ubuntu есть специфика
+
 ## Установка RStudio Shiny Server free
 [Страница загрузки](https://www.rstudio.com/products/shiny/download-server/)
 Для удобства работы оставим однопользовательский режим работы Shiny Server, делаем мапирование домашних директорий R пользователей на `/srv/shiny-server` командой `ln -s <SOURCE> <LINK_NAME>`:
@@ -183,6 +185,19 @@ gfortran
 - [Question: cannot find -llapack + -lblas for package install](https://support.bioconductor.org/p/67326/)
 `sudo apt-get install libblas-dev liblapack-dev`
 
+Пакеты, нужные для RStudio Server. В принципе, он их сам может затащить при инсталляции.
+```
+sudo apt-get install \
+lib32gcc1 \
+lib32stdc++6 \
+libc6-i386 \
+libclang-6.0-dev \
+libclang-common-6.0-dev \
+libclang-dev \
+libclang1-6.0 \
+libobjc-7-dev \
+libobjc4
+```
 
 # x11-xserver-utils
 
@@ -195,6 +210,7 @@ sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic
 sudo apt update
 sudo apt install r-base
 ```
+
 
 Ставим пакет [`littler`](http://dirk.eddelbuettel.com/code/littler.html)
 И включаем его в путь:
@@ -219,9 +235,12 @@ On other sytems try installing:
  * brew: jq (OSX)
 ```
 
-sudo install2.r --error --deps TRUE \
+```
+sudo /usr/lib/R/site-library/littler/examples/install2.r --error --deps TRUE \
 curl
+```
 
+```
 sudo /usr/lib/R/site-library/littler/examples/install2.r --error --deps TRUE \
 tidyverse \
 Cairo \
@@ -255,8 +274,9 @@ checkmate \
 openxlsx \
 hrbrthemes \
 stringi
+```
 
-
+```
 sudo /usr/lib/R/site-library/littler/examples/install2.r --error --deps TRUE \
 data.table \
 jsonlite \
@@ -265,5 +285,26 @@ readtext \
 iterators \
 foreach \
 doParallel
+```
 
-`sudo apt-get install  `
+### Готовим окружение для RStudio
+Не забыть завести отдельного пользователя с uid > 100 !:
+`sudo useradd <username>`
+`sudo passwd <username>`
+
+Надо создать пользователя `ruser` с домашней директорией. В убунте есть специфика, читаем суть здесь:
+- [Why is the home directory not created when I create a new user?](https://unix.stackexchange.com/questions/182180/why-is-the-home-directory-not-created-when-i-create-a-new-user)
+- [Create the home directory while creating a user {duplicate}](https://askubuntu.com/questions/393463/create-the-home-directory-while-creating-a-user)
+
+```
+useradd -m USERNAME
+```
+You have to use -m, otherwise no home directory will be created. If you want to specify the path of the home directory, use -d and specify the path:
+```
+useradd -m -d /PATH/TO/FOLDER USERNAME
+```
+
+Ну а если уж пользователь был создан, то читаем здесь:
+- [Add a Home directory for already created user when no direct root login available](https://serverfault.com/questions/576354/add-a-home-directory-for-already-created-user-when-no-direct-root-login-availabl)
+Либо просто удалить пользователя командой: `sudo userdel ruser`
+
