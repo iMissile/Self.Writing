@@ -1,3 +1,6 @@
+# Бесплатные лицензии
+- [COMSS1](https://www.comss.ru/list.php?c=club)
+
 # МТС, раздача интернета
 - [КАК ОБОЙТИ ОГРАНИЧЕНИЕ МТС БЕЗЛИМИТИЩЕ НА ПЛАТНУЮ РАЗДАЧУ ИНТЕРНЕТА. КАК ИЗМЕНИТЬ TTL. +ВИДЕО](http://compblog.ru/kak-obojti-ogranichenie-mts-bezlimitishhe-na-platnuyu-razdachu-interneta-kak-izmenit-ttl.html)
 
@@ -53,6 +56,7 @@
 Была скачана утилита Link Shell Extension, при помощи которой я фактически на месте папки User Data создал «ярлык», ссылку которая вела на мой рам-диск. Т.е. на диске ничего не лежало, заходя в папку User Data мы сразу же перенаправлялись на рам-диск. Причем в чем плюс такого решения — ни система, ни Хром никакого подвоха не видели.
 Хром стал работать еще быстрее чем он был на SSD. Очень быстро. Я теперь наверное даже всем порекомендую хотя-бы кеш хрома вынести на небольшой рам-диск. Лично для меня загадка почему инженеры не придают внимания проблеме того что хром очень много и часто пишет. Надежность информации это хорошо, но не ценой же убийства винчестера!
 - [Оптимизация настроек Windows 10 для работы SSD диска](http://windowsten.ru/optimizaciya-nastroek-windows-10-dlya-raboty-ssd-diska/)
+	- `fsutil behavior query DisableDeleteNotify` . Должно быть поставлено в 0 (TRIM)
 - [SSD-твикинг: мифы и реальность](http://www.thg.ru/storage/ssd_tweaks/onepage.html). Тут есть про настройку схем энергопитания.
 - [Новые технологии. Обзор Samsung 850 Pro 31.08.2014](http://allssd.ru/obzor-samsung-850-pro/)
 - [SSD Mini Tweaker](http://spb-chas.ucoz.ru/). Программа для изменения настроек и параметров системы под твердотельный накопитель. Цель программы - это снизить обращение системы к SSD для более продолжительной его работы. Распространяется бесплатно и предназначена для тех, у кого система установлена на SSD-диске.
@@ -72,6 +76,28 @@ http://it-like.ru/kak-perenesti-windows-7-na-ssd-disk/
 - [Технология Over-Provisioning в SSD](http://www.nix.ru/computer_hardware_news/hardware_news_viewer.html?id=178629)
 
 
+# Локализация bad sector у АВ
+- [Bad Block Copy for Windows](http://alter.org.ua/en/soft/win/bb_recover/)
+- [DMDE - DM Disk Editor and Data Recovery Software](https://dmde.com/)
+- [Finding out which file is affected by a bad sector](https://www.disktuna.com/finding-out-which-file-is-affected-by-a-bad-sector/).
+The [Microsoft support tool NFI.exe](https://support.microsoft.com/en-us/help/253066/oem-support-tools-phase-3-service-release-2-availability) can be used to convert a LBA sector address to a file path. This way you can determine which files need to be restored from backup after sector reallocation.
+- `NFI.exe` потерял следы, есть альтернатива:
+	- [findLBAf](ftp://www.terabyteunlimited.com/findlbaf.zip)  от TerabyteUnlimited
+- [Бесплатная лицензия Hard Disk Sentinel Standard Edition](https://www.comss.ru/page.php?id=4446)
+```
+Для получения бесплатной лицензии Hard Disk Sentinel выполните следующие действия:
+
+1. Скачайте и установите программу по ссылке ниже. Программа устанавливается уже активированной.
+Поддерживаемые ОС Windows: Windows 95, 98, 98SE, ME, NT4, 2000, XP, 2003, 2008, Vista, Windows 7, Windows Home Server, Windows 2012, Windows 8, Windows 8.1, Windows 10 версий 32-bit и 64-bit (где применимо)
+
+Примечание: Чтобы включить русский язык, выберите его при установке или перейдите в меню Configuration -> Preferences и в выпадающем меню Language выберите Russian. Затем нажмите ОК.
+Условия предложения
+•Это пожизненная лицензия только для версии 5.20.
+•Нет бесплатных обновлений до будущих версий. При обновлении вы потеряете активацию.
+•Нет бесплатной технической поддержки.
+•Только для некоммерческого использования
+```
+- [Ошибка 0xC0000225, 0xC00000E, Missing Winload.efi после копирования или миграции ОС](https://kb.paragon-software.com/ru/article/423)
 
 # Проблемы Lenovo с видеодрайвером
 1. Удалить Nvidia Update & UpdatusUser (через netplwiz)

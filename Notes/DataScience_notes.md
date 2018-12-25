@@ -68,6 +68,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Functional programming and unit testing for data munging with R](https://b-rodrigues.github.io/fput/) by Bruno Rodrigues
 - [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas, Alison Presmanes Hill
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/) by Yihui Xie
+- [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/) by Yihui Xie, J. J. Allaire, Garrett Grolemund
 - [Efficient R programming](https://bookdown.org/csgillespie/efficientR/)
 - [Efficient R programming](https://csgillespie.github.io/efficientR/), Colin Gillespie, Robin Lovelace, 2017-04-10
 - [Data Science Live Book](https://livebook.datascienceheroes.com/)
@@ -86,6 +87,9 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Hands-on Deep Reinforcement Learning, published by Packt](https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On)
 - COOL! [Getting Started in R. An eight-page pdf guide for "Getting Started in R".](https://github.com/eddelbuettel/gsir-te)
 - [Statistical Inference via Data Science in R](https://moderndive.netlify.com/)
+- [The tidyverse style guide](https://style.tidyverse.org/) by Hadley Wickham
+- [Modern R with the tidyverse](https://b-rodrigues.github.io/modern_R/) by Bruno Rodrigues, 2018-12-16
+- [Geocomputation with R](https://geocompr.robinlovelace.net/) by Robin Lovelace, Jakub Nowosad, Jannes Muenchow, 2018-12-22
 
 # Video
 - [Основы анализа данных. ВШЭ](https://www.youtube.com/channel/UCLk-Oih8VlqF-StidijTUnw/videos)
@@ -398,14 +402,194 @@ https://www.data-to-viz.com/
 https://rawgraphs.io/
 https://plot.ly/products/cloud/
 
+
+# 25.12.2018
+## R
+- "Advancer R" 2-nd ed. [10 Function factories](https://adv-r.hadley.nz/function-operators.html)
+
+# 24.12.2018
+## R & DS
+- COOL! [CUSTOM JAVASCRIPT, CSS AND HTML IN SHINY](https://www.listendata.com/2018/12/javascript-shiny-r.html)
+- [SHINYPROXY CHRISTMAS RELEASE](https://www.openanalytics.eu/blog/2018/12/23/shinyproxy-2.1.0/)
+- [Spinning Pins](https://fronkonstin.com/2018/12/19/spinning-pins/)
+- COOL! [Spelling 2.0: Improved Markdown and RStudio Support](https://ropensci.org/technotes/2018/12/20/spelling-20/)
+- [How to Scrape Data from a JavaScript Website with R](https://velaco.github.io/how-to-scrape-data-from-javascript-websites-with-R/)
+- COOL! [Headless 'Chrome' Orchestration in R](https://github.com/hrbrmstr/decapitated)
+- COOL! [5 amazing free tools that can help with publishing R results and blogging](https://jozefhajnala.gitlab.io/r/r907-christmas-praise/)
+- Весьма прикольно! [BUBBLE PACKED CHART WITH R USING PACKCIRCLES PACKAGE](https://chichacha.netlify.com/2018/12/22/bubble-packed-chart-with-r-using-packcircles-package/)
+- [November 2018: “Top 40” New Packages](https://rviews.rstudio.com/2018/12/21/november-2018-top-40-new-packages/)
+	- COOL! [lobstr: Visualize R Data Structures with Trees](https://cran.r-project.org/web/packages/lobstr/index.html)
+A set of tools for inspecting and understanding R data structures inspired by str(). Includes ast() for visualizing abstract syntax trees, ref() for showing shared references, cst() for showing call stack trees, and obj_size() for computing object sizes.
+	- COOL! [dabestr: Data Analysis using Bootstrap-Coupled Estimation](https://cran.r-project.org/web/packages/dabestr/index.html). Offers an alternative to significance testing using bootstrap methods and estimation plots. See Ho et al (2018). There is a vignette on [Bootstrap Confidence Intervals](https://cran.r-project.org/web/packages/dabestr/vignettes/bootstrap-confidence-intervals.html), another on [Statistical Visualizations](https://cran.r-project.org/web/packages/dabestr/vignettes/robust-statistical-visualization.html), and a third on creating [Estimation Plots](https://cran.r-project.org/web/packages/dabestr/vignettes/using-dabestr.html).
+	- COOL! [Robust and Beautiful Statistical Visualization](https://cran.r-project.org/web/packages/dabestr/vignettes/robust-statistical-visualization.html)
+	- COOL! [Introduction to vtree 0.1.4](https://cran.r-project.org/web/packages/vtree/vignettes/vtree.html) by Nick Barrowmanvtree. 
+v0.1.4: Provides a function for drawing drawing variable trees plots that display information about hierarchical subsets of a data frame defined by values of categorical variables. The vignette offers an introduction.
+- [Using the tidyverse for more than data manipulation: estimating pi with Monte Carlo methods](https://www.brodrigues.co/blog/2018-12-21-tidyverse_pi/)
+- COOL! [t-КРИТЕРИЙ СТЬЮДЕНТА - МЕТОД ОЦЕНКИ ЗНАЧИМОСТИ РАЗЛИЧИЙ СРЕДНИХ ВЕЛИЧИН](http://medstatistic.ru/theory/t_cryteria.html)
+- COOL! [Reintroducing tsibble: data tools that melt the clock](https://blog.earo.me/2018/12/20/reintro-tsibble/)
+- [GEOCOMPUTATION WITH R - THE AFTERWORD](https://nowosad.github.io/post/geocomputation-with-r-the-afterword/)
+
+# 21.12.2018
+## A/B Testing
+- A/B testing -- частный случай метода [Randomized controlled trial](https://en.wikipedia.org/wiki/Randomized_controlled_trial)
+- [A/B тест — это просто](https://habr.com/post/233911/)
+Интересная статья. Но есть замечание. Т-критерий Стюдента требует нормальное распределение. Вы предлагаете биномиальное (конверсия). Нормальная аппроксимация справедлива когда pn>5 и n(1-p)>5. [Binomial_proportion_confidence_interval](en.wikipedia.org/wiki/Binomial_proportion_confidence_interval)
+Т.е. если на сайте 1% конверсии, то выборка должна быть на 500 кликов минимум. Если мы изучаем клики по банеру c CTR 0.1%, то показов должно быть 5к минимум. Так что не совсем верно: «Этот тест хорошо зарекомендовал себя для небольших объемов данных».
+P.S. Не совсем понятно что такое «Стандартное отклонение». Это «среднеквадратичное отклонение» или «стандартная ошибка»?
+- [The Complete Guide to A/B Testing: Expert Tips from Google, HubSpot and More](https://www.shopify.com/blog/the-complete-guide-to-ab-testing)
+- [Tips for A/B Testing with R](https://www.inwt-statistics.com/read-blog/ab-testing.html)
+- COOL! [A/B Testing Example](https://rpubs.com/JanpuHou/280223)
+- [A/B testing in Python or R](https://stats.stackexchange.com/questions/12739/a-b-testing-in-python-or-r)
+- [Data science you need to know! A/B testing](https://towardsdatascience.com/data-science-you-need-to-know-a-b-testing-f2f12aff619a)
+- [randomizeR: Randomization for Clinical Trials](https://cran.r-project.org/web/packages/randomizeR/)
+This tool enables the user to choose a randomization procedure based on sound scientific criteria. It comprises the generation of randomization sequences as well the assessment of randomization procedures based on carefully selected criteria. Furthermore, 'randomizeR' provides a function for the comparison of randomization procedures.
+- COOL! [Bayesian and frequentist A/B split testing](https://github.com/dgrtwo/splittestr). Functions for Bayesian and frequentist A/B split testing. The main purpose of this package is to provide functions and support for [this blog post about Bayesian A/B testing](http://varianceexplained.org/r/bayesian-ab-testing/).
+- [The Errors of A/B Testing: Your Conclusions Can Make Things Worse](https://grasshopper.com/blog/the-errors-of-ab-testing-your-conclusions-can-make-things-worse/)
+- [A/B Testing Tech Note: determining sample size](https://signalvnoise.com/posts/3004-ab-testing-tech-note-determining-sample-size)
+
+
+
+## data.table
+- [Convert a data frame to a data.table without copy](https://stackoverflow.com/questions/20345022/convert-a-data-frame-to-a-data-table-without-copy)
+- COOL! С кучей полезных бенчмарков [Getting the top values by group](https://stackoverflow.com/questions/27766054/getting-the-top-values-by-group)
+
+## R
+- COOL! [How to rename a variable in R without copying the object?](https://stackoverflow.com/questions/22951811/how-to-rename-a-variable-in-r-without-copying-the-object)
+- COOL! Guru99. [apply(), sapply(), tapply() in R with Examples](https://www.guru99.com/r-apply-sapply-tapply.html)
+
+# 20.12.2018
+## DS
+- COOL! Sphinx. [Open Source Search Server](http://sphinxsearch.com/)
+- Sphinx. [Система полнотекстового поиска](https://habr.com/hub/sphinx/)
+- COOL! [Presentations from H2O meetups & conferences by the H2O.ai team https://www.meetup.com/pro/h2oai](https://github.com/h2oai/h2o-meetups)
+
+# 17.12.2018
+## R
+- COOL! Request for comments on planned features for futile.logger 1.5](https://cartesianfaith.com/2018/12/15/request-for-comments-on-planned-features-for-futile-logger-1-5/)
+- COOL! [Alternative approaches to scaling Shiny with RStudio Shiny Server, ShinyProxy or custom architecture](https://appsilon.com/alternatives-to-scaling-shiny/)
+- [2018-13 Rendering HTML Content in R Graphics](https://stattech.wordpress.fos.auckland.ac.nz/2018/12/17/2018-13-rendering-html-content-in-r-graphics/)
+	- Статья ['Rendering HTML Content in R Graphics'](https://www.stat.auckland.ac.nz/~paul/Reports/HTML/layoutengine/layoutengine.html) by Paul Murrell, http://orcid.org/0000-0002-3224-8858]
+- [Six Sigma DMAIC Series in R – Part4](https://datascienceplus.com/six-sigma-dmaic-series-in-r-part4/)
+- COOL! [linl 0.0.3: Micro release](http://dirk.eddelbuettel.com/blog/2018/12/15/#linl_0.0.3). Our linl package for writing LaTeX letter with (R)markdown had a fairly minor release today, following up on the previous release well over a year ago. 
+
+# 12.12.2018
+## R & DS
+- COOL! [NUMPY AXES EXPLAINED](https://www.sharpsightlabs.com/blog/numpy-axes-explained/)
+- [The tidyverse style guide](https://style.tidyverse.org/) by Hadley Wickham
+	- [oneliner - a new style guide for styler](https://lorenzwalthert.netlify.com/posts/oneliner/)
+	- [strcode - structure your code better](https://lorenzwalthert.netlify.com/posts/strcode1/)
+	- [styler - A non-invasive source code formatter for R](https://lorenzwalthert.netlify.com/posts/stylerpost/)
+- COOL! [tidyselect: Select from a Set of Strings](https://cran.r-project.org/web/packages/tidyselect/index.html). A backend for the selecting functions of the 'tidyverse'. It makes it easy to implement select-like functions in your own packages in a way that is consistent with other 'tidyverse' interfaces for selection.
+	- [dev версия](https://github.com/tidyverse/tidyselect)
+
+## Web Scrapping
+- COOL! [Rvest Navigation and Authentication](https://github.com/rstudio/webinars/blob/master/32-Web-Scraping/navigation-and-authentication.md)
+
+# 07.12.2018
+## H2O
+- запускаем из командной строки с доступом извне: `java -jar h2o.jar -ip 10.0.0.238`
+- COOL! [H2O GBM Tuning Tutorial for R](https://www.h2o.ai/blog/h2o-gbm-tuning-tutorial-for-r/)
+- [Save and load all h2o cross-validation models in R](https://stackoverflow.com/questions/47696590/save-and-load-all-h2o-cross-validation-models-in-r)
+- [An example of saving and loading H2O model in R](https://gist.github.com/woobe/a75ee98fe5cbbe3f9bd47e1acd9b007b)
+
+## DS
+- [What are some good error metrics for multi-class classification when you have many objects to classify?](https://www.quora.com/What-are-some-good-error-metrics-for-multi-class-classification-when-you-have-many-objects-to-classify)
+- [Good performance metrics for multiclass classification problem besides accuracy?](https://datascience.stackexchange.com/questions/31315/good-performance-metrics-for-multiclass-classification-problem-besides-accuracy)
+- [Multi-class Performance Measures](http://notesbyanerd.com/2014/12/17/multi-class-performance-measures/)
+- [Can anybody tell about Multi-class Classification performance measures list?](https://www.researchgate.net/post/Can_anybody_tell_about_Multi-class_Classification_performance_measures_list)
+- [How do you calculate precision and recall for multiclass classification using confusion matrix?](https://stats.stackexchange.com/questions/51296/how-do-you-calculate-precision-and-recall-for-multiclass-classification-using-co)
+```
+from sklearn.metrics import confusion_matrix
+import numpy as np
+
+labels = ...
+predictions = ...
+
+cm = confusion_matrix(labels, predictions)
+recall = np.diag(cm) / np.sum(cm, axis = 1)
+precision = np.diag(cm) / np.sum(cm, axis = 0)
+```
+- COOL [What is π?](https://www.quora.com/What-is-math-pi-math/answer/Alon-Amit?ch=10&share=23b7ed43&srid=BGtK)
+
+# 05.12.2018
+## R
+- [Single-node data aggregation benchmark](https://h2oai.github.io/db-benchmark/)
+- [ggQC | ggplot Quality Control Charts – New Release](http://r-bar.net/ggqc-ggplot-quality-control-charts/)
+- COOL - COOL! [Starspace for NLP #nlproc](http://www.bnosac.be/index.php/blog/84-starspace-for-nlp-nlproc)
+- [Making a Profit with Henry Wan in Arkham Horror: The Card Game](https://ntguardian.wordpress.com/2018/12/03/making-profit-henry-wan-arkham-horror/)
+
+## Python
+- [nbviewer. A simple way to share Jupyter Notebooks](http://nbviewer.jupyter.org/)
+- [A simple way to view ipython notebook](https://stackoverflow.com/questions/48481290/a-simple-way-to-view-ipython-notebook)
+- [Jupyter Notebook Online in the Cloud, with NumPy, SciPy, matplotlib...](https://paiza.cloud/en/jupyter-notebook-online)
+- [Google Collaboratory](https://colab.research.google.com/notebooks/welcome.ipynb). Welcome to Colaboratory! Colaboratory is a free Jupyter notebook environment that requires no setup and runs entirely in the cloud. See our FAQ for more info.
+
+
+# 03.12.2018
+## R
+- [Install and Load Multiple R Packages](https://www.listendata.com/2018/12/install-load-multiple-r-packages.html)
+- [Simulating dinosaur populations, with R](https://blog.revolutionanalytics.com/2018/11/jurassic-park.html)
+- [Using R: the best thing I’ve changed about my code in years](https://onunicornsandgenes.blog/2018/12/01/using-r-the-best-thing-ive-changed-about-my-code-in-years/)
+- [NYC buses: C5.0 classification with R; more than 20 minute delay?](https://datascienceplus.com/nyc-buses-c5-0-classification-with-r-more-than-20-minute-delay/)
+- [What hyper-parameters are, and what to do with them; an illustration with ridge regression](https://www.brodrigues.co/blog/2018-12-02-hyper-parameters/)
+- [Day 02 – little helper na_omitlist](https://www.statworx.com/de/blog/day-02-little-helper-na_omitlist/)
+- COOL! [Why R for data science – and not Python?](http://blog.ephorie.de/why-r-for-data-science-and-not-python)
+- COOL! [In Python, when should I use a function instead of a method?](https://stackoverflow.com/questions/8108688/in-python-when-should-i-use-a-function-instead-of-a-method)
+- [Installing topicmodels - "fatal error: 'gsl/gsl_rng.h'"](http://tinyheero.github.io/2016/02/20/install-r-topicmodels.html). Также, под Ubuntu проблема возникает [Cannot find gsl header files when compiling {duplicate}](https://askubuntu.com/questions/914592/cannot-find-gsl-header-files-when-compiling). Решение:
+	- CentOS: `sudo yum install gsl-devel`
+	- Ubuntu: `sudo apt-get install libgsl-dev`
+- R Deep Learning Cookbook. [Setting up a bidirectional RNN model](https://www.packtpub.com/mapt/book/big_data_and_business_intelligence/9781787121089/6/ch06lvl1sec69/setting-up-a-bidirectional-rnn-model)
+- [How to Visualize Your Recurrent Neural Network with Attention in Keras. A technical discussion and tutorial](https://medium.com/datalogue/attention-in-keras-1892773a4f22)
+- [Report on Text Classification using CNN, RNN & HAN](https://medium.com/jatana/report-on-text-classification-using-cnn-rnn-han-f0e887214d5f)
+- [Add row in each group using dplyr and add_row()](https://stackoverflow.com/questions/43403282/add-row-in-each-group-using-dplyr-and-add-row)
+- [How to remove more than 2 consecutive NA's in a column?](https://stackoverflow.com/questions/42668059/how-to-remove-more-than-2-consecutive-nas-in-a-column)
+- [Remove/collapse consecutive duplicate values in sequence](https://stackoverflow.com/questions/27482712/remove-collapse-consecutive-duplicate-values-in-sequence)
+
+## Text mining & R
+- [Text Message Classification](https://datascienceplus.com/text-message-classification/)
+- [Deep Learning for Text Classification with Keras](https://blogs.rstudio.com/tensorflow/posts/2017-12-07-text-classification-with-keras/)
+- [Text classification](https://fasttext.cc/docs/en/supervised-tutorial.html). Library for efficient text classification and representation learning
+- [Text Classification is Your New Secret Weapon. Natural Language Processing is Fun! Part 2](https://medium.com/@ageitgey/text-classification-is-your-new-secret-weapon-7ca4fad15788)
+- COOL! [A Comprehensive Guide to Understand and Implement Text Classification in Python](https://www.analyticsvidhya.com/blog/2018/04/a-comprehensive-guide-to-understand-and-implement-text-classification-in-python/)
+- [Multiclass text classification using R](https://stackoverflow.com/questions/48617076/multiclass-text-classification-using-r)
+- COOL! Step-by-step [Multiclass classification for text data](https://rpubs.com/shanmukha_karthik/346007) и тут же вопрос о неработоспособности метода :): [Multiclass classification of text in R](https://stackoverflow.com/questions/48075256/multiclass-classification-of-text-in-r)
+- [What are the best packages for multiclass classification in R?](https://www.quora.com/What-are-the-best-packages-for-multiclass-classification-in-R)
+- [Collection of SVM Packages](https://github.com/pukkinming/Collection-of-SVM-Packages)
+- [liquidSVM: A Fast and Versatile SVM Package](http://www.isa.uni-stuttgart.de/software/)
+- [Multiclass classification using scikit-learn](https://www.geeksforgeeks.org/multiclass-classification-using-scikit-learn/)
+- COOL! [Чудесный мир Word Embeddings: какие они бывают и зачем нужны?](https://habr.com/company/ods/blog/329410/)
+- COOL! [Применение сверточных нейронных сетей для задач NLP](https://habr.com/company/ods/blog/353060/)
+- COOL! [Text Classification Using LSTM and visualize Word Embeddings: Part-1](https://medium.com/@sabber/classifying-yelp-review-comments-using-lstm-and-word-embeddings-part-1-eb2275e4066b)
+- COOL! [Немного про word2vec: полезная теория](http://nlpx.net/archives/179)
+- COOL! [Tensorflow. Vector Representations of Words](https://www.tensorflow.org/tutorials/representation/word2vec)
+- [H2O.ai gist. word2vec, transform sentences to vectors by averaging the word-vectors](https://github.com/h2oai/h2o-3/blob/master/h2o-r/demos/rdemo.word2vec.craigslistjobtitles.R)
+- [Guide To Multi-Class Multi-Label Classification With Neural Networks In Python](https://www.depends-on-the-definition.com/guide-to-multi-label-classification-with-neural-networks/)
+- [Poor multiclass classification using Caret in R {closed}](https://stats.stackexchange.com/questions/310889/poor-multiclass-classification-using-caret-in-r)
+- [Multi-Class Classification Using XGBOOST](https://rpubs.com/zxs107020/368478)
+- [Compare multiple classification models with caret](https://www.kaggle.com/tobikaggle/compare-multiple-classification-models-with-caret).
+	- [7.0.51 Two Class Only](http://topepo.github.io/caret/Two_Class_Only.html)
+- [package caret. 6 Available Models](https://topepo.github.io/caret/available-models.html). The models below are available in train. The code behind these protocols can be obtained using the function getModelInfo or by going to the github repository.
+- [Weight Lifting Exercise - Multiclass Classification based on Random Forest](https://rstudio-pubs-static.s3.amazonaws.com/245066_f7b5962e8ab84594829b84f06ced39b6.html)
+- [Multinomial Logistic Regression Essentials in R](http://www.sthda.com/english/articles/36-classification-methods-essentials/147-multinomial-logistic-regression-essentials-in-r/). The multinomial logistic regression is an extension of the logistic regression (Chapter @ref(logistic-regression)) for multiclass classification tasks. It is used when the outcome involves more than two classes.
+- `tokenizers` & `stopwords` packages.
+
+## DS
+- COOL! [OpenRefine (formerly Google Refine)](http://openrefine.org/) is a powerful tool for working with messy data: cleaning it; transforming it from one format into another; and extending it with web services and external data.
+- CH COOL! [Altinity Stable ClickHouse 18.14.15 Release Notice](https://www.altinity.com/blog/altinity-stable-clickhouse-181415-release)
+- [Algorithms. What’s the process for implementing new algorithms in H2O?](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/faq/algorithms.html)
+
 # 30.11.2018
-## R courses
+## R courses & learning
 - Отличный курс по R. [UC Business Analytics R Programming Guide](http://uc-r.github.io/tibbles)
 - [Tibbles](https://cran.r-project.org/web/packages/tibble/vignettes/tibble.html). There are three key differences between tibbles and data frames: printing, subsetting, and recycling rules.
 - [Lecture 14: ggmap and lubridate packages. 95-868: Exploring and Visualizing Data](https://www.andrew.cmu.edu/user/davidch/95868/Lec14.pdf)
 - COOL! [STAT 545. Cheatsheet for dplyr join functions](http://stat545.com/bit001_dplyr-cheatsheet.html) by Jenny Bryan
+- COOL! purrr tutorial  by Jenny Bryan. [Introduction to map(): extract elements](https://jennybc.github.io/purrr-tutorial/ls01_map-name-position-shortcuts.html)
 - [Tidyverse for Beginners](https://slides.com/djnavarro/tidyverse-for-beginners#/)
 - [Slides for teaching the tidyverse way to total beginners](https://community.rstudio.com/t/slides-for-teaching-the-tidyverse-way-to-total-beginners/3157)
+- [teaching and learning materials for data visualization](https://kieranhealy.org/blog/archives/2018/12/12/teaching-and-learning-materials-for-data-visualization/)
+- COOL! Ozan Jaquette, @ozanjaquette
+Thinking about making switch to R? Here is a link to (10 week) R course I developed with amazing TA Patricia Martin https://ozanj.github.io/rclass/resources/ …. includes lectures, code, datasets, and problem sets .  Based on https://r4ds.had.co.nz/  textbook by @StatGarrett and @hadleywickham
 
 ## Text mining
 - [textrank: Summarize Text by Ranking Sentences and Finding Keywords](https://cran.r-project.org/web/packages/textrank/index.html)
@@ -715,7 +899,25 @@ Provides an interface to the C code for Latent Dirichlet Allocation (LDA) models
 - [Three common misuses of P values](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5042133/)
 - [What the P values really tell us](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5665734/)
 - [Understanding p-value](https://stats.stackexchange.com/questions/44769/understanding-p-value)
-- COOL! [What is the meaning of p values and t values in statistical tests?](https://stats.stackexchange.com/questions/31/what-is-the-meaning-of-p-values-and-t-values-in-statistical-tests)
+- COOL! [What is the meaning of p values and t values in statistical tests?](https://stats.stackexchange.com/questions/31/what-is-the-meaning-of-p-values-and-t-values-in-statistical-tests)- - [Альтернатива p-value для проверки статистической гипотезы](https://medium.com/@denisgabaydulin/%D0%B0%D0%BB%D1%8C%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%82%D0%B8%D0%B2%D0%B0-p-value-%D0%B4%D0%BB%D1%8F-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B8-%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9-%D0%B3%D0%B8%D0%BF%D0%BE%D1%82%D0%B5%D0%B7%D1%8B-3235fcf93f1e)
+- [There is still only one test](http://allendowney.blogspot.ru/2016/06/there-is-still-only-one-test.html)
+- [There is only one test!](http://allendowney.blogspot.ru/2011/05/there-is-only-one-test.html)
+- [Remember: p-values Are Not Effect Sizes](http://www.win-vector.com/blog/2017/09/remember-p-values-are-not-effect-sizes/)
+- Неплохое обучающее видео. [Hypothesis testing and p-values](https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample/tests-about-population-mean/v/hypothesis-testing-and-p-values)
+- [P-VALUES, SAMPLE SIZE AND DATA MINING](http://skranz.github.io//r/2018/04/09/Sample_Size_P-Values_and_Data_Mining.html)
+- [P-VALUES FROM RANDOM EFFECTS LINEAR REGRESSION MODELS](http://www.datasurg.net/2018/01/13/p-values-from-random-effects-linear-regression-models/)
+- COOL! R: Анализ и визуализация данных. [Классические методы статистики: критерий хи-квадрат](http://r-analytics.blogspot.ru/2012/08/blog-post.html)
+- COOL! R: Анализ и визуализация данных. [Протокол разведочного анализа данных: проверка на нормальность распределения](https://r-analytics.blogspot.com/2012/06/blog-post_14.html)
+- [Ещё раз про оценку научных данных и, наконец, про p-value](http://jescid.livejournal.com/481888.html)
+- COOL [Scientific method: Statistical errors](http://www.nature.com/news/scientific-method-statistical-errors-1.14700). P values, the 'gold standard' of statistical validity, are not as reliable as many scientists assume.
+- COOL! Statistics for Hackers
+	- [Jake Vanderplas - Statistics for Hackers - PyCon 2016](https://www.youtube.com/watch?v=Iq9DzN6mvYA&t=4s)
+	- [Statistics for Hackers](http://christopherroach.com/articles/statistics-for-hackers/)
+	- [Jake VanderPlas](http://vanderplas.com/)
+	- [“Resampling: The New Statistics”](http://onlinebooks.library.upenn.edu/webbin/book/lookupid?key=olbp28567) by Julian L. Simon, Second Edition published October 1997
+	- [Probabilistic Programming & Bayesian Methods for Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/)
+	- [Statistical Thinking for Data Science SciPy2015](https://youtu.be/TGGGDpb04Yc)
+
 
 ## Math. SD vs SE
 - [Standard deviations and standard errors](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1255808/)
@@ -776,6 +978,13 @@ A few months ago rOpenSci’s Scott Chamberlain asked me for feedback about a ne
 - [automl package: part 1/2 why and how](https://r-posts.com/automl-package-part-1-2-why-and-how/)
 
 ## DS. Рекомендательные системы
+- COOL! Дмитрий Селиванов
+	- [Matrix factorization for recommender systems](http://dsnotes.com/post/2017-05-28-matrix-factorization-for-recommender-systems/)
+	- [Matrix factorization for recommender systems (part 2)](http://dsnotes.com/post/2017-06-28-matrix-factorization-for-recommender-systems-part-2/)
+	- [dselivanov/rsparse](https://github.com/dselivanov/rsparse). Fast and accurate machine learning on sparse matrices - matrix factorizations, regression, classification, top-N recommendations. https://www.slideshare.net/DmitriySel…
+- [How do I speed up matrix factorization by sampling users (without losing precision)?](https://www.quora.com/How-do-I-speed-up-matrix-factorization-by-sampling-users-without-losing-precision)
+- Блог Avito. [Многорукие бандиты в рекомендациях](https://habr.com/company/avito/blog/417571/)
+- [Байесовские многорукие бандиты против A/B тестов](https://habr.com/company/ods/blog/325416/)
 - COOL! [10 уроков рекомендательной системы Quora](https://habr.com/company/retailrocket/blog/341346/)
 - COOL! [Netflix and Chill: Building a Recommendation System in Excel](https://towardsdatascience.com/netflix-and-chill-building-a-recommendation-system-in-excel-c69b33c914f4). Learn the Machine Learning “Magic” behind the Binge
 - Как это все было. [Netflix Update: Try This at Home](), https://sifter.org/~simon/journal/20061211.htmlMonday, December 11, 2006
@@ -812,6 +1021,11 @@ For example, with star ratings we know that a 1 means the user did not like that
 - Netflix. [Goodbye Stars, Hello Thumbs](https://media.netflix.com/en/company-blog/goodbye-stars-hello-thumbs)
 - [Understanding ROC curves](http://www.navan.name/roc/)
 - [List of Recommender Systems](https://github.com/grahamjenson/list_of_recommender_systems)
+- H2O meetup. [Recommender Systems, Basics and Different Use Cases](https://github.com/h2oai/h2o-meetups/tree/master/2016_11_16_ODSC_Recommenders_H2O)
+
+## Recommendation video lectures
+- [Lecture 55 — Latent Factor Recommender System | Stanford University](https://www.youtube.com/watch?v=E8aMcwmqsTg)
+- [How does Netflix recommend movies? Matrix Factorization](https://www.youtube.com/watch?v=ZspR5PZemcs)
 
 ## Datasets
 - [Retail Sector Datasets and Competitions on Kaggle](https://blogs.msdn.microsoft.com/shishirs/2017/02/07/retail-sector-datasets-and-competitions-on-kaggle/)
@@ -1989,7 +2203,7 @@ chr "2 * b"
 - [choroplethr](https://github.com/arilamstein/choroplethr) simplifies the creation of choropleths (thematic maps) in R
 	- choroplethr. [New Version of ggplot2](https://arilamstein.com/blog/2018/05/30/new-version-of-ggplot2/)
 	- [A Shiny app to demonstrate the datasets that ship with choroplethr v3.1.0](https://github.com/arilamstein/choroplethr-3-1-0-shiny-app)
-- COOL! [A comprehensive survey of the types of things in R. 'mode' and 'class' and 'typeof' are insufficient](https://stackoverflow.com/questions/8855589/a-comprehensive-survey-of-the-types-of-things-in-r-mode-and-class-and-type)
+- COOL! COOL! [A comprehensive survey of the types of things in R. 'mode' and 'class' and 'typeof' are insufficient](https://stackoverflow.com/questions/8855589/a-comprehensive-survey-of-the-types-of-things-in-r-mode-and-class-and-type)
 - COOL! [How to repeat a String N times in R?](How to repeat a String N times in R?)
 
 
@@ -2281,7 +2495,6 @@ Provides a %<-% operator to perform multiple, unpacking, and destructuring assig
 - [ANOMALIZE: TIDY ANOMALY DETECTION](http://www.business-science.io/code-tools/2018/04/08/introducing-anomalize.html)
 - [magrittr and wrapr Pipes in R, an Examination](http://www.win-vector.com/blog/2018/04/magrittr-and-wrapr-pipes-in-r-an-examination/)
 - [Writing better R functions part one -- April 6, 2018](https://ibecav.github.io/betterfunctions/)
-- [P-VALUES, SAMPLE SIZE AND DATA MINING](http://skranz.github.io//r/2018/04/09/Sample_Size_P-Values_and_Data_Mining.html)
 - [How to use dplyr's mutate in R without a vectorized function](https://deanattali.com/blog/mutate-non-vectorized/)
 - [A New Package (hhi) for Quick Calculation of Herfindahl-Hirschman Index scores](https://r-posts.com/a-new-package-hhi-for-calculation-of-herfindahl-hirschman-index-scores/)
 - [How to visualize data with Highcharter: exercises](https://www.r-exercises.com/2018/04/09/how-to-visualize-data-with-highcharter-exercises/)
@@ -2983,7 +3196,6 @@ Create data summaries for quality control, extensive reports for exploring data,
 # 15.01.2018
 ## R
 - [Services and tools for building intelligent R applications in the cloud](http://blog.revolutionanalytics.com/2018/01/r-cloud-tools.html)
-- [P-VALUES FROM RANDOM EFFECTS LINEAR REGRESSION MODELS](http://www.datasurg.net/2018/01/13/p-values-from-random-effects-linear-regression-models/)
 - Живые Shiny приложения. [Top interactive visualizations of movie scripts](http://smarterpoland.pl/index.php/2018/01/top-interactive-visualizations-of-movie-scripts/)
 
 
@@ -3054,15 +3266,6 @@ Create data summaries for quality control, extensive reports for exploring data,
 - Отличный блог. Неплохо бы сконтактировать с автором. [R: Анализ и визуализация данных](http://r-analytics.blogspot.ru)
 - COOL! [desctable usage vignette](https://cran.r-project.org/web/packages/desctable/vignettes/desctable.html). Desctable is a comprehensive descriptive and comparative tables generator for R.
 - COOL! Классика! [Vectorization in R: Why?](http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html) by Noam Ross, 16 April 2014
-- [Bayesian and frequentist A/B split testing](https://github.com/dgrtwo/splittestr). Functions for Bayesian and frequentist A/B split testing. The main purpose of this package is to provide functions and support for [this blog post about Bayesian A/B testing](http://varianceexplained.org/r/bayesian-ab-testing/).
-
-## p-value
-- R: Анализ и визуализация данных. [Классические методы статистики: критерий хи-квадрат](http://r-analytics.blogspot.ru/2012/08/blog-post.html)
-- [Альтернатива p-value для проверки статистической гипотезы](https://medium.com/@denisgabaydulin/%D0%B0%D0%BB%D1%8C%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%82%D0%B8%D0%B2%D0%B0-p-value-%D0%B4%D0%BB%D1%8F-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B8-%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9-%D0%B3%D0%B8%D0%BF%D0%BE%D1%82%D0%B5%D0%B7%D1%8B-3235fcf93f1e)
-- [There is still only one test](http://allendowney.blogspot.ru/2016/06/there-is-still-only-one-test.html)
-- [There is only one test!](http://allendowney.blogspot.ru/2011/05/there-is-only-one-test.html)
-- [Remember: p-values Are Not Effect Sizes](http://www.win-vector.com/blog/2017/09/remember-p-values-are-not-effect-sizes/)
-- Неплохое обучающее видео. [Hypothesis testing and p-values](https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample/tests-about-population-mean/v/hypothesis-testing-and-p-values)
 
 
 # 28.12.2017
@@ -3106,12 +3309,6 @@ Create data summaries for quality control, extensive reports for exploring data,
 - [ASA Police Data Challenge student visualization contest winners](http://blog.revolutionanalytics.com/2017/12/police-data-challenge.html)
 - COOL! shinyWidgets [Palette Picker](https://dreamrs.github.io/shinyWidgets/articles/palette_picker.html)
 
-
-# 19.12.2017
-## Stat
-- R: Анализ и визуализация данных. [Классические методы статистики: критерий хи-квадрат](http://r-analytics.blogspot.ru/2012/08/blog-post.html)
-- [Ещё раз про оценку научных данных и, наконец, про p-value](http://jescid.livejournal.com/481888.html)
-- COOL [Scientific method: Statistical errors](http://www.nature.com/news/scientific-method-statistical-errors-1.14700). P values, the 'gold standard' of statistical validity, are not as reliable as many scientists assume.
 
 # 15.12.2017
 ## R

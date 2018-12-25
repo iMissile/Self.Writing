@@ -297,6 +297,10 @@ sudo ACCEPT_EULA=Y yum install msodbcsql
 - Подключение пакета `jqr`
 `sudo yum install jq-devel`
 
+- Подключение пакета `topicmodels`
+Под CentOS получаем такую ошибочку:
+Installing topicmodels - "fatal error: 'gsl/gsl_rng.h'"
+
 ## Установка RStudio Server
 [Страница загрузки](https://www.rstudio.com/products/rstudio/download-server/)
 
