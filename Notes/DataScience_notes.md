@@ -599,6 +599,10 @@ Thinking about making switch to R? Here is a link to (10 week) R course I develo
 MRC-CSC/Shared-bioinformatics-training
 требуемые файлы данных здесь: https://github.com/bioinformatics-core-shared-training/r-intermediate
 - COOL! [Code and slides for RStudio webinars https://resources.rstudio.com/webinars](https://github.com/rstudio/webinars)
+- COOL! [Happy R Users Purrr by Charlotte Wickham](https://github.com/cwickham/purrr-tutorial)
+- [reprex rstudio webinar](https://github.com/tidyverse/reprex/tree/master/slides/2018-09_reprex-rstudio-webinar)
+- [Get out of Excel free](https://github.com/rsheets/jailbreakr)
+- Похоже, что по материалам datacamp сделан неплохой справочник [ugo_r_doc](https://ugoproto.github.io/ugo_r_doc/Data_Analysis_in_R,_the_data.table_Way/#mixing-it-together-lapply-sd-sdcols-and-n)
 
 
 ## Text mining
