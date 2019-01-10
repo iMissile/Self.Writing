@@ -590,6 +590,16 @@ precision = np.diag(cm) / np.sum(cm, axis = 0)
 - [teaching and learning materials for data visualization](https://kieranhealy.org/blog/archives/2018/12/12/teaching-and-learning-materials-for-data-visualization/)
 - COOL! Ozan Jaquette, @ozanjaquette
 Thinking about making switch to R? Here is a link to (10 week) R course I developed with amazing TA Patricia Martin https://ozanj.github.io/rclass/resources/ …. includes lectures, code, datasets, and problem sets .  Based on https://r4ds.had.co.nz/  textbook by @StatGarrett and @hadleywickham
+- [R Workshop Series. A Computational Social Scientist Toolkit](https://wesslen.github.io/fall2017-rworkshops/index.html) by Ryan Wesslen
+    - Свежайшая презентация!! [RStudio & tidyverse](https://rpubs.com/ryanwesslen/rviz-tutorial-tidy) by Ryan Wesslen, July 18, 2018
+    - [tidyverse](https://rpubs.com/ryanwesslen/tidyverse) by Ryan Wesslen, September 27, 2017
+- Хадли советует использовать курс Гаррета [rstudio/master-the-tidyverse](https://github.com/rstudio/master-the-tidyverse/tree/master/pdfs). Course contents for Master the Tidyverse. Contribute to rstudio/master-the-tidyverse development by creating an account on GitHub.
+- COOL! отличная презентация по ggplot!!! Рассказывать надо будет именно по ней. [A Gentle Guide to the Grammar of Graphics with ggplot2](https://github.com/gadenbuie/gentle-ggplot2). The slides are available here: https://gadenbuie.github.io/gentle-ggplot2
+- COOL! Текст, а не презентация, но много деталей и оригинальных картинок. [Introduction to ggplot2](https://rawgit.com/bioinformatics-core-shared-training/r-intermediate/master/ggplot2.html) by Thomas Carroll
+MRC-CSC/Shared-bioinformatics-training
+требуемые файлы данных здесь: https://github.com/bioinformatics-core-shared-training/r-intermediate
+- COOL! [Code and slides for RStudio webinars https://resources.rstudio.com/webinars](https://github.com/rstudio/webinars)
+
 
 ## Text mining
 - [textrank: Summarize Text by Ranking Sentences and Finding Keywords](https://cran.r-project.org/web/packages/textrank/index.html)
