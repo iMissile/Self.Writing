@@ -603,6 +603,15 @@ MRC-CSC/Shared-bioinformatics-training
 - [reprex rstudio webinar](https://github.com/tidyverse/reprex/tree/master/slides/2018-09_reprex-rstudio-webinar)
 - [Get out of Excel free](https://github.com/rsheets/jailbreakr)
 - Похоже, что по материалам datacamp сделан неплохой справочник [ugo_r_doc](https://ugoproto.github.io/ugo_r_doc/Data_Analysis_in_R,_the_data.table_Way/#mixing-it-together-lapply-sd-sdcols-and-n)
+- Работа со строками
+	- похоже, что сделан по мотивам datacamp курса Шарлотты [String Manipulation in R with stringr](https://rpubs.com/iPhuoc/stringr_manipulation) by
+Khac Phuoc Le
+	- [Text Processing Presentation](https://robchavez.github.io/datascience_gallery/html_only/text_processing.html) by Stephanie Gluck & Pooya Razavi
+	- [Strung Out On String Ops – A Brief Comparison of stringi and stringr](https://rud.is/b/2017/02/06/strung-out-on-string-ops-a-brief-comparison-of-stringi-and-stringr/)
+	- [Regular Expressions Every R programmer Should Know](https://blog.jumpingrivers.com/posts/2018/top_regular_expressions_r_stringr/)
+	- [Handling Strings with R](http://www.gastonsanchez.com/r4strings/) by Gaston Sanchez, 2018-04-19
+	- [Handling and Processing Strings in R](http://gastonsanchez.com/Handling_and_Processing_Strings_in_R.pdf), Gaston Sanchez
+	- [Marek Gagolewski, stringi Package for R](http://www.gagolewski.com/software/stringi/)
 
 
 ## Text mining
