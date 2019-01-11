@@ -402,6 +402,12 @@ https://www.data-to-viz.com/
 https://rawgraphs.io/
 https://plot.ly/products/cloud/
 
+# 11.01.2019
+## R
+- COOL! Весьма детально разобрано. [How to dplyr rename a column, by column index?](https://stackoverflow.com/questions/42769650/how-to-dplyr-rename-a-column-by-column-index)
+- [R: dplyr - Rename column name by position instead of name](https://stackoverflow.com/questions/29586219/r-dplyr-rename-column-name-by-position-instead-of-name/46223401)
+- [Conditional replacement of column name in tibble using dplyr](https://stackoverflow.com/questions/43578723/conditional-replacement-of-column-name-in-tibble-using-dplyr)
+
 
 # 25.12.2018
 ## R
