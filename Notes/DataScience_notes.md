@@ -391,6 +391,7 @@ header-includes:
 	- [How to print RMarkdown code chunk execution times? {duplicate}](https://stackoverflow.com/questions/43434239/how-to-print-rmarkdown-code-chunk-execution-times)
 	- [Timing for chunks?](https://stackoverflow.com/questions/24595280/timing-for-chunks)
 	- [Hook to time knitr chunks](https://stackoverflow.com/questions/30530008/hook-to-time-knitr-chunks)
+- [2.6 R code chunks and inline R code](https://bookdown.org/yihui/rmarkdown/r-code.html)
 
 # Visualization
 Когда спрашивают про визуализацию:
@@ -407,6 +408,7 @@ https://plot.ly/products/cloud/
 - COOL! Весьма детально разобрано. [How to dplyr rename a column, by column index?](https://stackoverflow.com/questions/42769650/how-to-dplyr-rename-a-column-by-column-index)
 - [R: dplyr - Rename column name by position instead of name](https://stackoverflow.com/questions/29586219/r-dplyr-rename-column-name-by-position-instead-of-name/46223401)
 - [Conditional replacement of column name in tibble using dplyr](https://stackoverflow.com/questions/43578723/conditional-replacement-of-column-name-in-tibble-using-dplyr)
+- COOL![ro" with RStudio Server Open Source](https://jstaf.github.io/2018/06/20/rstudio-server-semi-pro.html)
 
 
 # 25.12.2018
