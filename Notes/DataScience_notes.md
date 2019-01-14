@@ -87,9 +87,14 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Hands-on Deep Reinforcement Learning, published by Packt](https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On)
 - COOL! [Getting Started in R. An eight-page pdf guide for "Getting Started in R".](https://github.com/eddelbuettel/gsir-te)
 - [Statistical Inference via Data Science in R](https://moderndive.netlify.com/)
-- [The tidyverse style guide](https://style.tidyverse.org/) by Hadley Wickham
 - [Modern R with the tidyverse](https://b-rodrigues.github.io/modern_R/) by Bruno Rodrigues, 2018-12-16
 - [Geocomputation with R](https://geocompr.robinlovelace.net/) by Robin Lovelace, Jakub Nowosad, Jannes Muenchow, 2018-12-22
+- Style Guides
+	- [The tidyverse style guide](https://style.tidyverse.org/) by Hadley Wickham
+	- [R Style Guide](http://jef.works/R-style-guide/). Best practices for readable, sharable, and verifiable R code. [Исходники](https://github.com/JEFworks/R-style-guide)
+	- MS: [One Page R Data Science. Coding with Style](https://essentials.togaware.com/StyleO.pdf) by Graham.Williams@togaware.com, Visit https://essentials.togaware.com/onepagers for more Essentials.
+
+
 
 # Video
 - [Основы анализа данных. ВШЭ](https://www.youtube.com/channel/UCLk-Oih8VlqF-StidijTUnw/videos)
@@ -403,6 +408,23 @@ https://rawgraphs.io/
 https://plot.ly/products/cloud/
 
 
+# 09.01.2019
+## R
+- COOL! [Tables with htmlTable and some alternatives](https://cran.r-project.org/web/packages/htmlTable/vignettes/tables.html)
+- [Project-oriented workflow](https://irudnyts.github.io//project-oriented-workflow/)
+- [Maintenance Updates of Future Backends and doFuture](https://www.jottr.org/2019/01/07/maintenance-updates-of-future-backends-and-dofuture/)
+- [RTest: pretty testing of R packages](https://medium.com/@zappingseb/rtest-pretty-testing-of-r-packages-50f50b135650). The specflow and cucumber.io for R. Enabling non-coders to interpret test reports for R-packages, moreover allowing non-coders to create test cases. A step towards simple r package validation.
+- [vdiffr 0.3.0](https://www.tidyverse.org/articles/2019/01/vdiffr-0-3-0/). We’re thrilled to announce that vdiffr 0.3.0 is now on CRAN! vdiffr is a testthat extension that makes it easy to add visual unit tests for R plots
+- [THE ESSENTIALS OF DATA SCIENCE. Knolwedge Discovery Using R and Python](https://essentials.togaware.com/onepagers/)
+
+
+
+# 01.01.2019
+## R
+- COOL! [Seeing the wood for the trees](https://thinkr.biz/2019/01/01/wood-trees/)
+- [Exploring 2018 R-bloggers & R Weekly Posts with Feedly & the 'seymour' package](https://rud.is/b/2018/12/31/exploring-2018-r-bloggers-r-weekly-posts-with-feedly-the-seymour-package/)
+- COOL! [Introducing RcppDynProg](http://www.win-vector.com/blog/2018/12/introducing-rcppdynprog/)
+
 # 25.12.2018
 ## R
 - "Advancer R" 2-nd ed. [10 Function factories](https://adv-r.hadley.nz/function-operators.html)
@@ -590,6 +612,19 @@ precision = np.diag(cm) / np.sum(cm, axis = 0)
 - [teaching and learning materials for data visualization](https://kieranhealy.org/blog/archives/2018/12/12/teaching-and-learning-materials-for-data-visualization/)
 - COOL! Ozan Jaquette, @ozanjaquette
 Thinking about making switch to R? Here is a link to (10 week) R course I developed with amazing TA Patricia Martin https://ozanj.github.io/rclass/resources/ …. includes lectures, code, datasets, and problem sets .  Based on https://r4ds.had.co.nz/  textbook by @StatGarrett and @hadleywickham
+
+## R presentations & learning
+- [Visualisation with ggplot2](https://privefl.github.io/R-presentation/ggplot2.html#1)
+- [R you ready to ggplot?](http://tonyfujs.github.io/ggplot2/)
+	- [R you ready to ggplot2?](http://tonyfujs.github.io/ggplot_post/02_gg_basic) (Presentation) Basic Plots. October 15, 2014. Tony Fujs
+- [R Graphics: Introduction to ggplot2](https://stats.idre.ucla.edu/stat/data/intro_ggplot2/ggplot2_intro_slidy.html#(1))
+	- [Introduction to ggplot2 seminar](https://stats.idre.ucla.edu/r/seminars/ggplot2_intro/)
+- [Lecture 4: R Graphics with ggplot2](http://www.statsoft.org/wp-content/uploads/2017/09/Lecture4_ggplot2.html#/). HKU STAT3622 Data Visualization by Dr. Aijun Zhang, 18 September 2017
+- [R graphics with ggplot2 workshop notes](https://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html)
+- [The Complete ggplot2 Tutorial - Part1 | Introduction To ggplot2 (Full R code)](http://r-statistics.co/Complete-Ggplot2-Tutorial-Part1-With-R-Code.html)
+- [Lecture 3: Graphics in R. 95-868: Exploring and Visualizing Data](https://www.andrew.cmu.edu/user/davidch/95868/Lec3.pdf)
+- [Lecture 9: An introduction to ggplot2](https://seananderson.ca/courses/12-ggplot2/ggplot2_notes.pdf) by Sean C. Anderson, November 21, 2012
+- COOL! [Why xaringan / remark.js for HTML5 Presentations?](https://yihui.name/en/2017/08/why-xaringan-remark-js/)
 
 ## Text mining
 - [textrank: Summarize Text by Ranking Sentences and Finding Keywords](https://cran.r-project.org/web/packages/textrank/index.html)
@@ -978,6 +1013,8 @@ A few months ago rOpenSci’s Scott Chamberlain asked me for feedback about a ne
 - [automl package: part 1/2 why and how](https://r-posts.com/automl-package-part-1-2-why-and-how/)
 
 ## DS. Рекомендательные системы
+- [Sergey Nikolenko](https://logic.pdmi.ras.ru/~sergey/talks.html)
+- [Demonstrations related to Matrix Decompositions (Wolfram Demonstrations Project)](http://demonstrations.wolfram.com/search.html?query=symbols%3ACholeskyDecomposition+OR+Eigensystem+OR+HermiteDecomposition+OR+HessenbergDecomposition+OR+JordanDecomposition+OR+LatticeReduce+OR+LUDecomposition+OR+QRDecomposition+OR+SchurDecomposition+OR+SingularValueDecomposition)
 - COOL! Дмитрий Селиванов
 	- [Matrix factorization for recommender systems](http://dsnotes.com/post/2017-05-28-matrix-factorization-for-recommender-systems/)
 	- [Matrix factorization for recommender systems (part 2)](http://dsnotes.com/post/2017-06-28-matrix-factorization-for-recommender-systems-part-2/)
@@ -1304,6 +1341,9 @@ library(profvis)
 profvis({ runApp('Projects/path_of_app') }  
         , prof_output = '/path_to_save_output')
 ```
+- Профилировка rmarkdown
+   # НУЖНО ЗАПУСКАТЬ В ЧИСТОЙ СЕССИИ
+   # profvis::profvis({rmarkdown::render("validation_proc.Rmd", "html_document", encoding = 'UTF-8')}, interval = 0.1, prof_output = "manual.rprof")
 
 ## R Streaming
 - [Streaming in R](https://plot.ly/r/streaming/)
@@ -4844,6 +4884,38 @@ Built on top of Plotly.js, React, and Flask, Dash ties modern UI elements like d
 
 ## Wolfram & 3D plot
 - [How to export 3D plot, without losing the specified view of rotation?](https://mathematica.stackexchange.com/questions/45647/how-to-export-3d-plot-without-losing-the-specified-view-of-rotation)
+- [The most simple Manipulate freezes the notebook on v10.1](https://mathematica.stackexchange.com/questions/89064/the-most-simple-manipulate-freezes-the-notebook-on-v10-1)
+- [Разрешение распространенных проблем путем возврата системы Mathematica к начальной конфигурации](http://support.wolfram.com/kb/12464)
+- [Mathematica 10.0.x freezes in Initializing kernels](https://mathematica.stackexchange.com/questions/92931/mathematica-10-0-x-freezes-in-initializing-kernels)
+- [Document Center Search is not working in Mathematica 11.3?](https://mathematica.stackexchange.com/questions/183563/document-center-search-is-not-working-in-mathematica-11-3)
+- Solution from [Mathematica frozen -- possibly a bad update](https://community.wolfram.com/groups/-/m/t/1093145):
+```
+Wolfram Technical Support has verified that the following steps address the problem in most cases, they are expanded versions of Ilian's previous comment:
+
+Windows:
+
+Close any open Mathematica applications (front-ends).
+
+Open the Windows Task Manager by pressing the keys CTRL+SHIFT+ESC.
+
+In the Task Manager window, check for any instances of “Wolfram Kernel” or “Wolfram Mathematica”.
+
+Close them all by selecting them one by one and clicking on “End Task” button.
+
+Start the Mathematica Kernel, using the following steps:
+
+http://support.wolfram.com/kb/12414
+
+Evaluate the following in the Mathematica Kernel:
+
+PacletSiteUpdate /@ PacletSites[] 
+PacletUpdate["EntityFramework"]
+Close the Mathematica Kernel.
+
+Start the Mathematica application (front-end).
+
+Verify that Mathematica works as expected again by evaluating 2+2.
+```
 
 # 05.09.2017
 ## R
