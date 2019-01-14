@@ -48,7 +48,11 @@ firewall-cmd --get-active-zones
 - [How do I recursively delete directories with wildcard?](http://unix.stackexchange.com/questions/23576/how-do-i-recursively-delete-directories-with-wildcard)
 	- С натяжкой (см. детали выше) `find . -type d -name "00LOCK*" -delete`. Но не удаляет непустые директории.
 	- `find . -type d -name '00LOCK*' -exec rm -r {} +` (. -- от текущего пользователя, / --от корня)
-- Посмотреть рзмер папок в директории с глубиной до первых директорий: `du -h --max-depth=1`
+- [How To Find Largest Top 10 Files and Directories On Linux / UNIX / BSD](https://www.cyberciti.biz/faq/how-do-i-find-the-largest-filesdirectories-on-a-linuxunixbsd-filesystem/)
+- [How can I sort du -h output by size](https://serverfault.com/questions/62411/how-can-i-sort-du-h-output-by-size): Например, `du -hs * | sort -h`
+- Посмотреть размер дискового пространства: `df -h`
+- Посмотреть размер папок (disk space) в директории с глубиной до первых директорий: `du -h --max-depth=1`
+- [NCurses Disk Usage](https://dev.yorhel.nl/ncdu). Ncdu is a disk usage analyzer with an ncurses interface. 
 
 ## Установка R
 Установка под Linux не совсем прозрачно описана, поэтому читаем отдельные блоги.
