@@ -408,6 +408,28 @@ https://www.data-to-viz.com/
 https://rawgraphs.io/
 https://plot.ly/products/cloud/
 
+# 14.01.2019
+## Tools
+- [The Silver Searcher](https://geoff.greer.fm/ag/)
+The Silver Searcher is a tool for searching code. It started off as a clone of Ack, but their feature sets have since diverged slightly. In typical usage, Ag is 5-10x faster than Ack. See the GitHub page for more info.
+
+## R
+- COOL! [Parallelize a For-Loop by Rewriting it as an Lapply Call](https://www.jottr.org/2019/01/11/parallelize-a-for-loop-by-rewriting-it-as-an-lapply-call/). A commonly asked question in the R community is:
+__How can I parallelize the following for-loop?__
+- [Tools for Inter-Process Communication](https://cran.r-project.org/web/packages/ipc/vignettes/shinymp.html)
+- Logging
+	- COOL! [logger: A Lightweight, Modern and Flexible Logging Utility](https://cran.r-project.org/web/packages/logger/index.html). Inspired by the the 'futile.logger' R package and 'logging' Python module, this utility provides a flexible and extensible way of formatting and delivering log messages with low overhead.
+	- [A futile try/catch.](https://cartesianfaith.com/2013/05/29/futile-logger-1-3-3-rc-available/) It is now possible to capture non-futile warnings and errors by wrapping a block in ftry, which is essentially a wrapper around tryCatch.
+	- [futile.logger is a logging utility for R.](https://github.com/zatonovo/futile.logger) Originally built based on log4j, the latest version introduces a new API that is more consistent with R idioms. In practice this means an interface that works equally well in the shell for interactive use and also in scripts for system use.
+	- [How to log using futile logger from within a parallel method in R?](http://stackoverflow.com/questions/20930112/how-to-log-using-futile-logger-from-within-a-parallel-method-in-r)
+	- [logR -- Extended logging solution](https://github.com/jangorecki/logR).
+	- [Is there any standard logging package for R?](http://stackoverflow.com/questions/1928332/is-there-any-standard-logging-package-for-r)
+
+## Clustering
+- [UC Business Analytics R Programming Guide](https://uc-r.github.io/hc_clustering)
+- [Factoextra R Package: Easy Multivariate Data Analyses and Elegant Visualization](http://www.sthda.com/english/wiki/factoextra-r-package-easy-multivariate-data-analyses-and-elegant-visualization)
+- COOL! [StatQuest: K-means clustering](https://statquest.org/2017/07/05/statquest-k-means-clustering/)
+
 # 11.01.2019
 ## R
 - COOL! Весьма детально разобрано. [How to dplyr rename a column, by column index?](https://stackoverflow.com/questions/42769650/how-to-dplyr-rename-a-column-by-column-index)
@@ -5996,9 +6018,6 @@ cf : https://www.rdocumentation.org/packages/dplyr/versions/0.7.6/topics/select
 `select * from dfs.`D:/iwork.GH/R.projects/76 MTS_TV/data/stat.json` limit 5;`
 
 - COOL!!! [HOW TO READ JSON DATA INTO TABLEAU – USING A FREE AND OPEN SOURCE FRAMEWORK (APACHE DRILL ON WINDOWS)](https://datatoffee.com/2015/07/14/how-to-read-json-data-into-tableau-using-a-free-and-open-source-framework-apache-drill-on-windows/)
-- [PowerShell for every system! https://microsoft.com/powershell](https://github.com/powershell/powershell)
-- [Almost wish there was a number 3 near the lambda, don't you think? Portable console emulator for Windows](http://cmder.net/)
-- [ConEmu - эмулятор консольного окна Windows](http://conemu.github.io/ru/)
 - [Drill Web Console, StorageTab](http://localhost:8047/storage)
 - [Drill errors with "JDK Java compiler not available - probably you're running Drill with a JRE and not a JDK"](http://www.openkb.info/2017/05/drill-errors-with-jdk-java-compiler-not.html).  **Root Cause**:
 Starting from Drill 1.10, above WARNING message is promoted to an ERROR message.
@@ -7468,6 +7487,11 @@ I am happy to introduce the padr package, which is now available on CRAN. If you
 ## *nix
 - [ConEmu-Maximus5](http://conemu.github.io/) is a Windows console emulator with tabs, which presents multiple consoles and simple GUI applications as one customizable GUI window with various features.
 - [Замена Putty — ищем удобный SSH клиент с вкладками](http://yvision.kz/post/676001)
+- [PowerShell for every system! https://microsoft.com/powershell](https://github.com/powershell/powershell)
+- [Almost wish there was a number 3 near the lambda, don't you think? Portable console emulator for Windows](http://cmder.net/)
+- [ConEmu - эмулятор консольного окна Windows](http://conemu.github.io/ru/)
+	- Установка стартовой директории для кастомной закладки: `cmd.exe /k "%ConEmuBaseDir%\CmdInit.cmd"  -new_console:d:D:\H2O_ML\h2o-3.22.0.2`
+
 
 ## R
 - [Using R — Installing Packages](http://mazamascience.com/WorkingWithData/?p=728)
