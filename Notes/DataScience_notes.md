@@ -408,6 +408,45 @@ https://www.data-to-viz.com/
 https://rawgraphs.io/
 https://plot.ly/products/cloud/
 
+## R color palettes
+- COOL! [colorspace: New Tools for Colors and Palettes](http://colorspace.r-forge.r-project.org/reference/index.html)
+- [A Very Palette-able Post](https://rud.is/b/2017/05/21/a-very-pallete-able-post/)
+- [ochRe - Australia themed colour palettes](https://ropensci.org/blog/2017/11/21/ochre/)
+- [Make your own color palettes with paletti](https://edwinth.github.io/blog/paletti/)
+- COOL! [Tol Color Schemes](https://owi.usgs.gov/blog/tolcolors/)
+	- COOL! [Colour Schemes](https://personal.sron.nl/~pault/data/colourschemes.pdf), Prepared by: Paul Tol
+	- [THE PAUL TOL 21-COLOR SALUTE](https://tradeblotter.wordpress.com/2013/02/28/the-paul-tol-21-color-salute/)
+- [Scico and the Colour Conundrum](https://www.data-imaginist.com/2018/scico-and-the-colour-conundrum/)
+- [How to use paletteR to automagically build palettes from pictures](https://datascienceplus.com/how-to-use-paletter-to-automagically-build-palettes-from-pictures/)
+- [How to build a color palette from any image with R and k-means algo](http://www.milanor.net/blog/build-color-palette-from-image-with-paletter/)
+- [Coloring Sudokus](https://fronkonstin.com/2018/06/01/coloring-sudokus/)
+- [zumbov2/colorfindr](https://github.com/zumbov2/colorfindr). Extracts colors from various image types and plots treemaps and 3D scatterplots of color compositions.
+- [A quick introduction to using color in density plots](http://sharpsightlabs.com/blog/quick-intro-color-density-plot/)
+- [CET Perceptually Uniform Colour Maps](https://cran.rstudio.com/web/packages/cetcolor/vignettes/cet_color_schemes.html)
+- [crayon: Colored Terminal Output](https://cran.r-project.org/web/packages/crayon/index.html)
+Colored terminal output on terminals that support 'ANSI' color and highlight codes. It also works in 'Emacs' 'ESS'. 'ANSI' color support is automatically detected. Colors and highlighting can be combined and nested. New styles can also be created easily. This package was inspired by the 'chalk' 'JavaScript' project.
+- Как в DT покрасить с помощью RColors? Использование 'lightblue1' в formatStyle не прокатывает...
+	- [R Colors Chart](http://www.endmemo.com/program/R/color.php). R has 657 built-in color names. The function `colors()` will show all of them. All these color names can be used in plot parameters like `col=`. The function `col2rgb()` can convert all these colors into RGB numbers.
+	- [Curtis Kephart. All Named Colors in R](http://www.cazaar.com/r_colors)
+
+
+
+
+# 15.01.2019
+## R
+- COOL [Generating Synthetic Data Sets with ‘synthpop’ in R](http://gradientdescending.com/generating-synthetic-data-sets-with-synthpop-in-r/)
+- [Showing a difference in means between two groups](https://onunicornsandgenes.blog/2019/01/13/showing-a-difference-in-means-between-two-groups/)
+- [Travis CI for R — Advanced guide](https://towardsdatascience.com/travis-ci-for-r-advanced-guide-719cb2d9e0e5)
+Continuous integration for building an R project in Travis CI including code coverage, pkgdown documentation, osx and multiple R-Versions
+- COOL! [colorspace: New Tools for Colors and Palettes](https://eeecon.uibk.ac.at/~zeileis/news/colorspace/)
+A major update (version 1.4.0) of the R package colorspace has been released to CRAN, enhancing many of the package's capabilities, e.g., more refined palettes, named palettes, ggplot2 color scales, visualizations for assessing palettes, shiny and Tcl/Tk apps, color vision deficiency emulation, and much more.
+- [R Coding Style Guide](https://irudnyts.github.io//r-coding-style-guide/) by Iegor Rudnytskyi, PhD student in Actuarial Science at HEC Lausanne
+- [charlatan: Make Fake Data](https://cran.r-project.org/web/packages/charlatan/)
+Make fake data, supporting addresses, person names, dates, times, colors, coordinates, currencies, digital object identifiers ('DOIs'), jobs, phone numbers, 'DNA' sequences, doubles and integers from distributions and within a range.
+- [ggeffects 0.8.0 now on CRAN: marginal effects for regression models](https://strengejacke.wordpress.com/2019/01/14/ggeffects-0-8-0-now-on-cran-marginal-effects-for-regression-models-rstats/)
+- [The splashr package {srht|GL|GH}](https://rud.is/b/2019/01/14/splashr-0-6-0-now-uses-the-cran-nascent-stevedore-package-for-docker-orchestration/) — an alternative to Selenium for javascript-enabled/browser-emulated web scraping — is now at version 0.6.0 (still in dev-mode but on its way to CRAN in the next 14 days).
+
+
 # 14.01.2019
 ## Tools
 - [The Silver Searcher](https://geoff.greer.fm/ag/)
@@ -483,6 +522,8 @@ v0.1.4: Provides a function for drawing drawing variable trees plots that displa
 
 # 21.12.2018
 ## A/B Testing
+- COOL! [dabestr: Data Analysis using Bootstrap-Coupled Estimation](https://cran.r-project.org/web/packages/dabestr/index.html). Offers an alternative to significance testing using bootstrap methods and estimation plots. See Ho et al (2018). There is a vignette on [Bootstrap Confidence Intervals](https://cran.r-project.org/web/packages/dabestr/vignettes/bootstrap-confidence-intervals.html), another on [Statistical Visualizations](https://cran.r-project.org/web/packages/dabestr/vignettes/robust-statistical-visualization.html), and a third on creating [Estimation Plots](https://cran.r-project.org/web/packages/dabestr/vignettes/using-dabestr.html).
+	- COOL! [Robust and Beautiful Statistical Visualization](https://cran.r-project.org/web/packages/dabestr/vignettes/robust-statistical-visualization.html)
 - A/B testing -- частный случай метода [Randomized controlled trial](https://en.wikipedia.org/wiki/Randomized_controlled_trial)
 - [A/B тест — это просто](https://habr.com/post/233911/)
 Интересная статья. Но есть замечание. Т-критерий Стюдента требует нормальное распределение. Вы предлагаете биномиальное (конверсия). Нормальная аппроксимация справедлива когда pn>5 и n(1-p)>5. [Binomial_proportion_confidence_interval](en.wikipedia.org/wiki/Binomial_proportion_confidence_interval)
@@ -2260,14 +2301,6 @@ chr "2 * b"
 - [Demystifying life expectancy calculations](http://freerangestats.info/blog/2018/05/31/life-expectancy)
 - [Defining Marketing with the Rvest and Tidytext Packages](https://r.prevos.net/rvest-and-tidytext/)
 
-## R color palettes
-- [Make your own color palettes with paletti](https://edwinth.github.io/blog/paletti/)
-- [Scico and the Colour Conundrum](https://www.data-imaginist.com/2018/scico-and-the-colour-conundrum/)
-- [How to use paletteR to automagically build palettes from pictures](https://datascienceplus.com/how-to-use-paletter-to-automagically-build-palettes-from-pictures/)
-- [A Very Palette-able Post](https://rud.is/b/2017/05/21/a-very-pallete-able-post/)
-- [ochRe - Australia themed colour palettes](https://ropensci.org/blog/2017/11/21/ochre/)
-- [How to build a color palette from any image with R and k-means algo](http://www.milanor.net/blog/build-color-palette-from-image-with-paletter/)
-
 
 ## MS
 - Otlook. [сообщение "невозможно выполнить эту операцию так как сообщение было изменено"](https://answers.microsoft.com/ru-ru/msoffice/forum/msoffice_outlook-mso_windows8/%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8/485a84be-c1a1-48d8-874f-81aa178d7a3f)
@@ -2971,6 +3004,7 @@ YES - it means it will handle all the incomming requests in parallel - each requ
 # 19.02.2018
 ## R
 - [Use unique() instead of levels() to find the possible values of a factor in R](https://chemicalstatistician.wordpress.com/2018/03/10/use-unique-instead-of-levels-to-find-the-possible-values-of-a-character-variable-in-r/)
+- [R tip: Make Your Results Clear with sigr](http://www.win-vector.com/blog/2018/11/r-tip-make-your-results-clear-with-sigr/)
 - [R Tip: Think in Terms of Values](http://www.win-vector.com/blog/2018/04/r-tip-think-in-terms-of-values/)
 - [R Tip: Use Named Vectors to Re-Map Values](http://www.win-vector.com/blog/2018/03/r-tip-use-named-vectors-to-re-map-values/)
 - [R Tip: Use let() to Re-Map Names](http://www.win-vector.com/blog/2018/03/r-tip-use-let-to-re-map-names/)
@@ -2984,6 +3018,8 @@ YES - it means it will handle all the incomming requests in parallel - each requ
 - [R Tip: Use `[[ ]]` Wherever You Can](http://www.win-vector.com/blog/2018/02/r-tip-use-wherever-you-can/)
 - [R Tip: Use qc() For Fast Legible Quoting](http://www.win-vector.com/blog/2018/02/r-tip-use-qc-for-fast-legible-quoting/)
 - [R Tip: Use seq_len() to Avoid The Backwards Sequence Bug](http://www.win-vector.com/blog/2018/02/r-tip-use-seq_len-to-avoid-the-backwards-sequence-bug/)
+- [R Tip: Use Inline Operators For Legibility](http://www.win-vector.com/blog/2019/01/r-tip-use-inline-operators-for-legibility/)
+- [R Tip: Use seqi() For Indexes](http://www.win-vector.com/blog/2019/01/r-tip-use-seqi-for-indexes/)
 - [DPLYR, (MC)LAPPLY, FOR-LOOP AND SPEED](https://scottishsnow.wordpress.com/2018/02/18/dplyr-lapply-for-loop/)
 - [R markdown blog template](http://lcolladotor.github.io/2018/02/17/r-markdown-blog-template)
 - [Mix ggplot2 graphs with your favorite memes. memery 0.4.2 released.](https://blog.snap.uaf.edu/2018/02/15/mix-ggplot2-graphs-with-your-favorite-memes-memery/)
