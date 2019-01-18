@@ -430,6 +430,15 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 	- [Curtis Kephart. All Named Colors in R](http://www.cazaar.com/r_colors)
 
 
+# 16.01.2019
+## R
+- package `future`:
+	- COOL! [Delayed Future(Slides from eRum 2018)](https://www.jottr.org/2018/06/18/future-erum2018-slides/)
+	- [A Future for R: A Comprehensive Overview](https://cloud.r-project.org/web/packages/future/vignettes/future-1-overview.html)
+	- [Use foreach with HPC schedulers thanks to the future package](https://blog.revolutionanalytics.com/2019/01/future-package.html)
+- [Scaling H2O analytics with AWS and p(f)urrr (Part 1)](https://www.daeconomist.com/post/2018-12011-aws-parti/)
+- [Scaling H2O analytics with AWS and p(f)urrr (Part 2)](https://www.daeconomist.com/post/2019-01-15-partii/)
+- [Feature Selection using Genetic Algorithms in R](https://blog.datascienceheroes.com/feature-selection-using-genetic-algorithms-in-r/)
 
 
 # 15.01.2019
@@ -1551,6 +1560,14 @@ You can also declare a new font family to use it in arbitrary situations:
 [Extension = .ttf, UprightFont = *-Regular, ...]
 {\crimson This text uses the CrimsonText font}
 ```
+- Редакторы картинок для LaTeX:
+	- [Detexify](http://detexify.kirelabs.org/classify.html)
+	- [LaTeXDraw](http://latexdraw.sourceforge.net/) is a graphical drawing editor for LaTeX. LaTeXDraw can be used to 1) generate PSTricks code; 2) directly create PDF or PS pictures. LaTeXDraw is developed in Java and thus runs on top of Linux, Windows, and Mac OS X. You need Java 8 to launch LaTeXDraw.
+	- [Math](https://www.mathcha.io/) Online Mathematics Editor, a fast way to write and share mathematics
+	- [GeoGebra Math Apps](https://www.geogebra.org/)
+Get our free online math tools for graphing, geometry, 3D, and more!
+	- [TikzEdt](http://www.tikzedt.org/) is a combined WYSIWYG/text editor designed for editing Tikz code.
+	- [Yichuan Shen's tikzcd-editor](http://tikzcd.yichuanshen.de/)
 
 
 # 13.09.2018

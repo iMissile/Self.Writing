@@ -10,7 +10,7 @@ sudo yum -y install epel-release
 uname -a
 
 ## ставим R
-sudo yum -y install wget epel-release chrony tree
+sudo yum -y install wget epel-release chrony tree ncdu
 sudo yum -y install R
 
 ## ставим доп либы, необходимые для пакетов R

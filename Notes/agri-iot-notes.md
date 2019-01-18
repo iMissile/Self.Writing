@@ -80,7 +80,7 @@ sudo yum update
 `yum groupinfo X11`
 
 ```
-	sudo yum -y install wget epel-release chrony tree
+	sudo yum -y install wget epel-release chrony tree ncdu
  	sudo yum -y install R
 
 	sudo yum groupinstall X11
