@@ -10,7 +10,7 @@ sudo yum -y install epel-release
 uname -a
 
 ## ставим R
-sudo yum -y install wget epel-release chrony tree ncdu
+sudo yum -y install wget epel-release chrony tree ncdu glances
 sudo yum -y install R
 
 ## ставим доп либы, необходимые для пакетов R
@@ -20,6 +20,9 @@ sudo yum -y groupinstall "Development Tools"
 sudo yum -y install wget libcurl-devel openssl-devel cyrus-sasl-devel libxml2-devel libpng-devel libjpeg-devel python python-devel proj proj-devel mesa-libGL mesa-libGL-devel mesa-libGLU mesa-libGLU-devel gmp-devel mpfr-devel cairo-devel libXt-devel gtk2-devel v8-devel udunits2 udunits2-devel xorg-x11-server-Xvfb unixODBC* postgresql-devel mariadb-devel mysql-devel gcc-gfortran* texlive*, ufw, dejavu*, psmisc, rrdtool, wireshark, lrzsz
 
 sudo yum -y install dejavu-fonts-common dejavu-sans-mono-fonts rrdtool psmisc lrzsz gdal* proj-devel proj-epsg proj-nad protobuf-devel geos-devel
+
+Установку пакетов будем делать из командной строки, поэтому сразу накатим хелпер
+sudo yum -y install R-littler R-littler-examples
 
 ## ставим все, что касается LaTeX
 sudo yum -y install texlive texlive-latex texlive-xetex texlive-collection-fontsrecommended texlive-collection-latex texlive-collection-latexrecommended  texlive-xetex-def texlive-collection-xetex
@@ -72,7 +75,8 @@ makeRepo(pkgList, path="d:/temp/miniCRAN", repos="https://cloud.r-project.org/",
 # Установка продуктов RStudio
 
 ## Установка RStudio Server
-[Страница загрузки](https://www.rstudio.com/products/rstudio/download-server/)
+- [Страница инсталляции стабильной версии](https://www.rstudio.com/products/rstudio/download-server/)
+- [Preview релизы](https://www.rstudio.com/products/rstudio/download/preview/)
 
 Не забыть завести отдельного пользователя с uid > 100 !:
 `sudo useradd <username>`

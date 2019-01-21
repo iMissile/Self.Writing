@@ -64,6 +64,11 @@ https://www.crowdgames.ru/page/plany-crowd-games
 
 
 # e-books
+- [R for Data Science](https://r4ds.had.co.nz) by Garrett Grolemund, Hadley Wickham
+- [R for Data Science: Exercise Solutions](https://jrnold.github.io/r4ds-exercise-solutions/) by Jeffrey B. Arnold
+- [Hands-On Programming with R](https://rstudio-education.github.io/hopr/) by Garrett Grolemund
+- [Advanced R](https://adv-r.hadley.nz/) by Hadley Wickham
+- [Handling Strings with R](http://www.gastonsanchez.com/r4strings/) by Gaston Sanchez
 - [Классификация, регрессия и другие алгоритмы Data Mining с использованием R](https://ranalytics.github.io/data-mining/index.html) by Шитиков В. К., Мастицкий С. Э., 2017-04-07
 - [Functional programming and unit testing for data munging with R](https://b-rodrigues.github.io/fput/) by Bruno Rodrigues
 - [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas, Alison Presmanes Hill
@@ -93,6 +98,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 	- [The tidyverse style guide](https://style.tidyverse.org/) by Hadley Wickham
 	- [R Style Guide](http://jef.works/R-style-guide/). Best practices for readable, sharable, and verifiable R code. [Исходники](https://github.com/JEFworks/R-style-guide)
 	- MS: [One Page R Data Science. Coding with Style](https://essentials.togaware.com/StyleO.pdf) by Graham.Williams@togaware.com, Visit https://essentials.togaware.com/onepagers for more Essentials.
+- [An Introduction to Statistical and Data Sciences via R](https://moderndive.com/) by Chester Ismay and Albert Y. Kim, July 21, 2018
 
 
 
@@ -230,6 +236,8 @@ Or with gunzip
 - [Use data.table set() to convert all columns from integer to numeric](https://stackoverflow.com/questions/29790204/use-data-table-set-to-convert-all-columns-from-integer-to-numeric)
 - [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)
 - [data.table objects aren't updated in Rstudio environment panel](https://stackoverflow.com/questions/35921206/data-table-objects-arent-updated-in-rstudio-environment-panel)
+- COOL! [Как посчитать ТОП N по группам](https://stackoverflow.com/questions/27766054/getting-the-top-values-by-group). см также https://stackoverflow.com/questions/20345022/convert-a-data-frame-to-a-data-table-without-copy
+ 
 
 # DS
 - COOL! [Машинное обучение для людей. Разбираемся простыми словами](https://vas3k.ru/blog/machine_learning/)
@@ -429,6 +437,12 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 	- [R Colors Chart](http://www.endmemo.com/program/R/color.php). R has 657 built-in color names. The function `colors()` will show all of them. All these color names can be used in plot parameters like `col=`. The function `col2rgb()` can convert all these colors into RGB numbers.
 	- [Curtis Kephart. All Named Colors in R](http://www.cazaar.com/r_colors)
 
+
+# 18.01.2019
+## R
+- COOL! Решаем проблемы с позиционированием репозитория. [How to select a CRAN mirror in R](https://stackoverflow.com/questions/11488174/how-to-select-a-cran-mirror-in-r)
+`R -e 'chooseCRANmirror(graphics=FALSE, ind=87);library(rbundler);bundle()'`
+And with the hindsight of several years later we now a proper CDN that is guaranteed to be network-close to everybody, and we use https now so make this https://cloud.r-project.org as the URL. – Dirk Eddelbuettel Oct 7 '18 at 22:51
 
 # 16.01.2019
 ## R
@@ -683,9 +697,16 @@ precision = np.diag(cm) / np.sum(cm, axis = 0)
 # 30.11.2018
 ## R courses & learning
 - Отличный курс по R. [UC Business Analytics R Programming Guide](http://uc-r.github.io/tibbles)
+- COOL! [Hands-on with dplyr](https://github.com/dgrapov/TeachingDemos/blob/master/Demos/dplyr/hands_on_with_dplyr.md) by Dmitry Grapov
 - [Tibbles](https://cran.r-project.org/web/packages/tibble/vignettes/tibble.html). There are three key differences between tibbles and data frames: printing, subsetting, and recycling rules.
 - [Lecture 14: ggmap and lubridate packages. 95-868: Exploring and Visualizing Data](https://www.andrew.cmu.edu/user/davidch/95868/Lec14.pdf)
 - COOL! [STAT 545. Cheatsheet for dplyr join functions](http://stat545.com/bit001_dplyr-cheatsheet.html) by Jenny Bryan
+- [STAT 385: Statistics Programming Methods](http://stat385.thecoatlessprofessor.com/)
+Statisticians must be savvy in programming methods useful to the wide variety of analysis that they will be expected to perform. This course provides the foundation for writing and packaging statistical algorithms through the creation of functions and object oriented programming. Fundamental programming techniques and considerations will be emphasized. Students will also create dynamic reports that encapsulate their implemented algorithms. Students must have access to a computer on which they can install software. Prerequisite: STAT 200 or STAT 212.
+- Материалы и упражнения. [Index of /courses/RC0818](https://journalismcourses.org/courses/RC0818/)
+- [Learn the tidyverse](https://www.tidyverse.org/learn/)
+- [Data Manipulation in R by Steph Locke](https://itsalocke.com/). Covers data manipulation in a tidyverse way. [ebook](https://itsalocke.com/files/DataManipulationinR.pdf)
+- Старый материал [stat405](http://stat405.had.co.nz/). Introduction to data analysis. Fall 2012. Rice University. Hadley Wickham. hadley@rice.edu
 - COOL! purrr tutorial  by Jenny Bryan. [Introduction to map(): extract elements](https://jennybc.github.io/purrr-tutorial/ls01_map-name-position-shortcuts.html)
 - [Tidyverse for Beginners](https://slides.com/djnavarro/tidyverse-for-beginners#/)
 - [Slides for teaching the tidyverse way to total beginners](https://community.rstudio.com/t/slides-for-teaching-the-tidyverse-way-to-total-beginners/3157)
@@ -702,6 +723,7 @@ MRC-CSC/Shared-bioinformatics-training
 требуемые файлы данных здесь: https://github.com/bioinformatics-core-shared-training/r-intermediate
 - COOL! [Code and slides for RStudio webinars https://resources.rstudio.com/webinars](https://github.com/rstudio/webinars)
 - COOL! [Happy R Users Purrr by Charlotte Wickham](https://github.com/cwickham/purrr-tutorial)
+	- [Purrr workshop materials](https://github.com/cwickham/purrr-tutorial)
 - [reprex rstudio webinar](https://github.com/tidyverse/reprex/tree/master/slides/2018-09_reprex-rstudio-webinar)
 - [Get out of Excel free](https://github.com/rsheets/jailbreakr)
 - Похоже, что по материалам datacamp сделан неплохой справочник [ugo_r_doc](https://ugoproto.github.io/ugo_r_doc/Data_Analysis_in_R,_the_data.table_Way/#mixing-it-together-lapply-sd-sdcols-and-n)
@@ -715,6 +737,15 @@ Khac Phuoc Le
 	- [Handling and Processing Strings in R](http://gastonsanchez.com/Handling_and_Processing_Strings_in_R.pdf), Gaston Sanchez
 	- [Marek Gagolewski, stringi Package for R](http://www.gagolewski.com/software/stringi/)
 
+## R exercises & Learning
+- [Exercism](https://exercism.io/). Code practice and mentorship for everyone. 
+Level up your programming skills with 2,652 exercises across 48 languages, and insightful discussion with our dedicated team of welcoming mentors. Exercism is 100% free forever.
+- [R for Data Science: Exercise Solutions](https://jrnold.github.io/r4ds-exercise-solutions/) by Jeffrey B. Arnold, January 17, 2019
+- [R exercises](https://www.r-exercises.com/start-here-to-learn-r/). Start here to learn R!
+- [R programming Exercises, Practice, Solution](https://www.w3resource.com/r-programming-exercises/)
+- [Introduction to R workshop notes](https://tutorials.iq.harvard.edu/R/Rintro/Rintro.html)
+- data:
+	- [hadley/babynames](https://github.com/hadley/babynames). An R package containing US baby names from the SSA
 
 ## R presentations & learning
 - [Visualisation with ggplot2](https://privefl.github.io/R-presentation/ggplot2.html#1)

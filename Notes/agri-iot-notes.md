@@ -52,7 +52,15 @@ firewall-cmd --get-active-zones
 - [How can I sort du -h output by size](https://serverfault.com/questions/62411/how-can-i-sort-du-h-output-by-size): Например, `du -hs * | sort -h`
 - Посмотреть размер дискового пространства: `df -h`
 - Посмотреть размер папок (disk space) в директории с глубиной до первых директорий: `du -h --max-depth=1`
-- [NCurses Disk Usage](https://dev.yorhel.nl/ncdu). Ncdu is a disk usage analyzer with an ncurses interface. 
+- [NCurses Disk Usage](https://dev.yorhel.nl/ncdu). Ncdu is a disk usage analyzer with an ncurses interface.
+- [Помощь по команде `find/locate`](https://www.gnu.org/software/findutils/). Команда `locate` ищет по кэшу.
+Ищем файл командами `locate --all "clickhouse-server.log"` или `find / -name "clickhouse-server.log"`.
+
+- [How to Install mlocate (locate and updatedb Commands) on CentOS 7](https://www.liquidweb.com/kb/how-to-install-mlocate-locate-and-updatedb-commands-on-centos-7/)
+```
+sudo yum -y install mlocate
+updatedb
+```
 
 ## Установка R
 Установка под Linux не совсем прозрачно описана, поэтому читаем отдельные блоги.
@@ -74,13 +82,20 @@ sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
 sudo yum install R
 sudo yum update
 ```
-	 
+- Как поставить `littler` из [репозитория EPEL](https://centos.pkgs.org/7/epel-x86_64/R-littler-0.3.5-1.el7.x86_64.rpm.html):
+`sudo yum -y install R-littler R-littler-examples`
+Для запуска `littler` требуется пакет `docopt` для разбора параметров командной строки.
+Поставим его также из командной строки ["Run R script from command line"](https://stackoverflow.com/questions/18306362/run-r-script-from-command-line)
+`sudo R -e 'install.packages("docopt", repos = "https://cloud.r-project.org")'` # install to location that requires root. 
+
+Смотрим, куда сконфигурированы библиотеки R: `.libPaths()`
+
 - При установке пакетов под root (для всех) запускаем R от рута `sudo -i R` и прогоняему установку. Для успешного прогона необходимо доставлять системные либы (CentOS specific commands).
 `groupinstall` ставит серию связанных в группу пакетов. Информацию по этой группе можно посмотреть командой
 `yum groupinfo X11`
 
 ```
-	sudo yum -y install wget epel-release chrony tree ncdu
+	sudo yum -y install wget epel-release chrony tree ncdu glances
  	sudo yum -y install R
 
 	sudo yum groupinstall X11
