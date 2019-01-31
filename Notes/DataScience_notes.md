@@ -91,7 +91,8 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/bookdown.pdf)
 - [Hands-on Deep Reinforcement Learning, published by Packt](https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On)
 - COOL! [Getting Started in R. An eight-page pdf guide for "Getting Started in R".](https://github.com/eddelbuettel/gsir-te)
-- [Statistical Inference via Data Science in R](https://moderndive.netlify.com/)
+- ModernDive. [An Introduction to Statistical and Data Sciences via R](https://moderndive.com/)
+- ModernDive dev version. [Statistical Inference via Data Science in R](https://moderndive.netlify.com/)
 - [Modern R with the tidyverse](https://b-rodrigues.github.io/modern_R/) by Bruno Rodrigues, 2018-12-16
 - [Geocomputation with R](https://geocompr.robinlovelace.net/) by Robin Lovelace, Jakub Nowosad, Jannes Muenchow, 2018-12-22
 - Style Guides
@@ -99,8 +100,11 @@ https://www.crowdgames.ru/page/plany-crowd-games
 	- [R Style Guide](http://jef.works/R-style-guide/). Best practices for readable, sharable, and verifiable R code. [Исходники](https://github.com/JEFworks/R-style-guide)
 	- MS: [One Page R Data Science. Coding with Style](https://essentials.togaware.com/StyleO.pdf) by Graham.Williams@togaware.com, Visit https://essentials.togaware.com/onepagers for more Essentials.
 - [An Introduction to Statistical and Data Sciences via R](https://moderndive.com/) by Chester Ismay and Albert Y. Kim, July 21, 2018
+- [edav.info/](https://edav.info/index.html). This resource is specifically tailored to the GR5702 Exploratory Data Analysis and Visualization course offered at Columbia University. However, anyone interested in working with data in R will benefit from perusing these pages. Happy coding!
+- [Text Mining with R. A Tidy Approach](https://www.tidytextmining.com/) by Julia Silge and David Robinson, 2018-12-21
 
-
+# VPN
+- [ExpressVPN](https://www.expressvpn.com/ru/order)
 
 # Video
 - [Основы анализа данных. ВШЭ](https://www.youtube.com/channel/UCLk-Oih8VlqF-StidijTUnw/videos)
@@ -168,6 +172,7 @@ broom::glance(survfit(cfit))
 - [Оптимизация бизнес-процессов при помощи кривых выживаемости](https://habrahabr.ru/post/235529/)
 - [HR-Инструменты \ Учебник по STATISTICA. ГЛАВА 14 Анализ выживаемости](http://www.hr-portal.ru/statistica/gl14/gl14.php)
 - [Probabilistic interpretation of AUC](http://www.alexejgossmann.com/auc/)
+- [ROC Curves by Joseph Rickert](https://rviews.rstudio.com/2019/01/17/roc-curves/)
 
 - [tech survival-analysis](http://blog.applied.ai/tag/survival-analysis/)
 Survival analysis is long-established within actuarial science but infrequently used in general data science projects. We explain more with worked examples.
@@ -237,6 +242,8 @@ Or with gunzip
 - [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)
 - [data.table objects aren't updated in Rstudio environment panel](https://stackoverflow.com/questions/35921206/data-table-objects-arent-updated-in-rstudio-environment-panel)
 - COOL! [Как посчитать ТОП N по группам](https://stackoverflow.com/questions/27766054/getting-the-top-values-by-group). см также https://stackoverflow.com/questions/20345022/convert-a-data-frame-to-a-data-table-without-copy
+- [Data table fread with zip file in other directory with spaces in the name](https://stackoverflow.com/questions/50872108/data-table-fread-with-zip-file-in-other-directory-with-spaces-in-the-name)
+- [Convenience features of fread](https://github.com/Rdatatable/data.table/wiki/Convenience-features-of-fread)
  
 
 # DS
@@ -416,6 +423,20 @@ https://www.data-to-viz.com/
 https://rawgraphs.io/
 https://plot.ly/products/cloud/
 
+## Анимация
+- COOL! [gganimate](https://gganimate.com/). gganimate extends the grammar of graphics as implemented by ggplot2 to include the description of animation. It does this by providing a range of new grammar classes that can be added to the plot object in order to customise how it should change with time.
+        - [thomasp85/gganimate](https://github.com/thomasp85/gganimate). A Grammar of Animated Graphics https://gganimate.com
+- COOL! [What Are We Plotting, What Are We Animating](https://www.data-imaginist.com/2018/what-are-we-plotting-what-are-we-animating/), Sep 24, 2018. ANIMATION GGANIMATE
+- COOL! [Create smooth animations in R with the tweenr package](http://blog.revolutionanalytics.com/2017/05/tweenr.html)
+	- [tweenr](https://github.com/thomasp85/tweenr) is a small package that makes it easy to interpolate your data between different states, specifying the length of each change, the easing of the transition and how many intermediary steps should be generated. tweenr works particularly well with gganimate but can be used for any case where interpolation of data is needed. All functions are vectorized so in any case you'll get better performance than using approx and colorRamp.
+	- COOL! [Recreating the Datasaurus Dozen Using tweenr and ggplot2](https://wjakethompson.github.io/post/datasaurus-dozen/). [Новая ссылка "The Datasaurus Dozen"](https://github.com/thomasp85/gganimate/wiki/The-Datasaurus-Dozen)- COOL! [LIFE (EXPECTANCY), ANIMATED](https://nowosad.github.io/post/life-expectancy-animated/)
+- COOL! [Global Migration, animated with R](http://blog.revolutionanalytics.com/2018/06/global-migration-animated-with-r.html)
+	- Исходный блог: [Animated Directional Chord Diagrams](https://guyabel.com/post/animated-directional-chord-diagrams/)
+- COOL! [Let it flow, let it flow, let it flow......](https://johnmackintosh.com/2017-12-21-flow/) Animating dot plots to demonstrate patient flow
+- [3-D animations with R](http://blog.revolutionanalytics.com/2017/08/3-d-animations-with-r.html)
+- COOL! [I made a 3D movie with ggplot2 once - here's how I did it](http://www.data-imaginist.com/2017/I-made-a-3D-movie/). Тут управление толщиной линий и их градиентной закраской.
+
+
 ## R color palettes
 - COOL! [colorspace: New Tools for Colors and Palettes](http://colorspace.r-forge.r-project.org/reference/index.html)
 - [A Very Palette-able Post](https://rud.is/b/2017/05/21/a-very-pallete-able-post/)
@@ -436,6 +457,155 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 - Как в DT покрасить с помощью RColors? Использование 'lightblue1' в formatStyle не прокатывает...
 	- [R Colors Chart](http://www.endmemo.com/program/R/color.php). R has 657 built-in color names. The function `colors()` will show all of them. All these color names can be used in plot parameters like `col=`. The function `col2rgb()` can convert all these colors into RGB numbers.
 	- [Curtis Kephart. All Named Colors in R](http://www.cazaar.com/r_colors)
+- [EXTRACTING COLOURS FROM YOUR IMAGES WITH IMAGE QUANTIZATION](https://chichacha.netlify.com/2019/01/19/extracting-colours-from-your-images-with-image-quantization/)
+- [Collection of most color palettes in a single R package](https://www.hvitfeldt.me/r/paletteer/)
+
+# 31.01.2019
+## R
+- [sfirke/janitor](https://github.com/sfirke/janitor). simple tools for data cleaning in R
+- COOL! [R Regex Tester Shiny App](https://adamspannbauer.github.io/2018/01/16/r-regex-tester-shiny-app/)
+	- Исходники: [AdamSpannbauer/r_regex_tester_app](https://github.com/AdamSpannbauer/r_regex_tester_app). Shiny Application to test regular expressions in R https://spannbaueradam.shinyapps.io/r…
+- [Handling and Processing Strings in R](http://www.gastonsanchez.com/visually-enforced/resources/how-to/2013/09/22/Handling-and-Processing-Strings-in-R/). Здесь хороший список функций в `stringr`
+- [Introduction to mapmate](https://leonawicz.github.io/mapmate/articles/mapmate.html)
+
+# 30.01.2019
+- [StatQuest with Josh Starmer](https://www.youtube.com/user/joshstarmer/videos)
+- zarunbal/LogExpert [Releases](https://github.com/zarunbal/LogExpert/releases)
+- COOL! [Because it's Friday: A timeline of the elements](https://blog.revolutionanalytics.com/2019/01/because-its-friday-a-timeline-of-the-elements.html). Ссылка на исходную страницу ["Royal Society of Chemistry - Periodic table"](http://www.rsc.org/periodic-table/history)
+
+
+## R
+- COOL! [R Debugging - Cannot see which line generates warning message (Shiny)](https://stackoverflow.com/questions/29132110/r-debugging-cannot-see-which-line-generates-warning-message-shiny).
+You can tell R to treat warnings as errors with `options(warn=2)`. ...
+First turn on displaying warnings using the command `options(warn=1)` Then, you could run it by clicking on the "Source" or "Source with Echo" button (see image below). You can see the error/warning messages when any line with errors/warnings is executed.
+
+# 28.01.2019
+## R learning
+- COOL! [data-lessons](https://github.com/data-lessons). В частности, курс по web scrapping:
+	- [Introduction to web scraping](https://librarycarpentry.github.io/lc-webscraping/)
+	- [Selecting content on a web page with XPath](https://librarycarpentry.org/lc-webscraping/02-xpath/index.html)
+	- [Selecting content on a web page with CSS selectors](https://data-lessons.github.io/library-webscraping-DEPRECATED/02-csssel/)
+- [Web scraping using rvest, httr and Rselenium](https://github.com/yusuzech/r-web-scraping-cheat-sheet)
+- [Web Scraping in R: rvest Tutorial](https://www.datacamp.com/community/tutorials/r-web-scraping-rvest)
+- [A web scraper tutorial using R packages httr and  rvest](https://lmavila.github.io/markdown_files/PeruCurrencyScraper.html)
+- [Webscraping in R](https://rpubs.com/ryanthomas/webscraping-with-rvest)
+- [XPath wildcards on node name](https://stackoverflow.com/questions/4203119/xpath-wildcards-on-node-name)
+- [XPath: using regex in contains function](https://stackoverflow.com/questions/21405267/xpath-using-regex-in-contains-function)
+- [Selecting all attributes except some via XPath](https://stackoverflow.com/questions/24089782/selecting-all-attributes-except-some-via-xpath)
+- [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.asp)
+- COOL! [Analytics for industRy](https://garthtarr.github.io/meatR/index.html)
+- COOL! [R resources (free courses, books, tutorials, & cheat sheets)](https://paulvanderlaken.com/2017/08/10/r-resources-cheatsheets-tutorials-books/)
+- Очень интересные подборки. [R Weekly 2018-16 Questions, Readings, Inferences](https://rweekly.org/2018-16.html). В частности, [klrfome](https://github.com/mrecos/klrfome) - Kernel Logistic Regression on Focal Mean Embeddings, for solving the distribution regresion problem.
+- [STAT545. Regular Expression in R](https://stat545.com/block022_regular-expression.html) by Gloria Li and Jenny Bryan, October 19, 2014
+
+### For loops
+- [High Performance Loops in R](https://uoftcoders.github.io/studyGroup/lessons/r/loops/HighPerformanceLoops.html)
+- [Programming with R. Loops in R](https://swcarpentry.github.io/r-novice-inflammation/15-supp-loops-in-depth/)
+- [A Tutorial on Loops in R - Usage and Alternatives](https://www.datacamp.com/community/tutorials/tutorial-on-loops-in-r)
+
+### Dates & Times
+- Danielle Navarro. [Day 6: Lubridate](https://djnavarro.net/post/2018-05-02-lubridate/)
+- UC Business Analytics R Programming Guide. [Dealing with Dates](http://uc-r.github.io/dates/)
+
+# 25.01.2019
+## DS
+- Логнормальное распределение
+	- [Log-normal distribution](https://en.wikipedia.org/wiki/Log-normal_distribution#Arithmetic_moments)
+	- COOL! [Making sense of the rlnorm() function in R](https://msalganik.wordpress.com/2017/01/21/making-sense-of-the-rlnorm-function-in-r/)
+	- Проблема с правильной передачей параметров: [Plot log-normal distribution in R {closed}](https://stats.stackexchange.com/questions/68394/plot-log-normal-distribution-in-r)
+- COOL! [Fitting distributions with R](https://magesblog.com/post/2011-12-01-fitting-distributions-with-r/)
+	- [How do I decide which distribution might be a good starting point?](https://magesblog.com/post/2011-12-01-fitting-distributions-with-r/)
+- [R: how to find the quantile](https://stackoverflow.com/questions/26232304/r-how-to-find-the-quantile)
+- [Finding Quartiles in R](https://stats.stackexchange.com/questions/134229/finding-quartiles-in-r). The quantile function in R implements nine different ways to compute quantiles! To see which of them, if any, correspond to this method, let's start by implementing it. From the description we can write an algorithm, first mathematically and then in R
+- [How to check if my data fits log normal distribution?](https://stats.stackexchange.com/questions/77752/how-to-check-if-my-data-fits-log-normal-distribution)
+- [4.2.4 Gamma Distribution](https://www.probabilitycourse.com/chapter4/4_2_4_Gamma_distribution.php)
+
+### R
+- Nonlinear fit
+	- [Custom nonlinear function in `R.gnm`](https://stackoverflow.com/questions/36087868/custom-nonlinear-function-in-r-gnm)
+	- [First steps with Non-Linear Regression in R](https://datascienceplus.com/first-steps-with-non-linear-regression-in-r/)
+	- [Second step with non-linear regression: adding predictors](https://datascienceplus.com/second-step-with-non-linear-regression-adding-predictors/)
+	- [Nonlinear Regression in R](https://medium.com/wwblog/nonlinear-regression-in-r-f64d126f5fe7)
+- COOL! [A practical Guide to Mixed Models inR](https://ase.tufts.edu/gsc/gradresources/guidetomixedmodelsinr/mixed%20model%20guide.html). I created this guide so that students can learn about important statistical concepts while remaining firmly grounded in the programming required to use statistical tests on real data. I want this to be a guide students can keep open in one window while running R in another window, because it is directly relevant to their work.
+- COOL! [Generalised Linear Models in R](https://magesblog.com/post/2015-08-04-generalised-linear-models-in-r/). Здесь подробно рассматривается и логнормальная регрессия.
+- Практические примеры с использованием fitdistrplus. [Fitting Distributions](http://www.di.fc.ul.pt/~jpn/r/distributions/fitting.html) by João Neto, October 2015
+- [Fitting a lognormal distribution to truncated data in R](https://stackoverflow.com/questions/16947799/fitting-a-lognormal-distribution-to-truncated-data-in-r)
+- [ggplot2. A quantile-quantile plot](https://ggplot2.tidyverse.org/reference/geom_qq.html)
+- [How to interpret a QQ plot](https://stats.stackexchange.com/questions/101274/how-to-interpret-a-qq-plot)
+- [Does this Q-Q plot indicates leptokurtic or platykurtic distribution?](https://stats.stackexchange.com/questions/262453/does-this-q-q-plot-indicates-leptokurtic-or-platykurtic-distribution/354076#354076)
+- [Understanding Q-Q Plots](https://data.library.virginia.edu/understanding-q-q-plots/)
+
+## R formula
+- COOL! [StatQuest: Quantile-Quantile (QQ) Plots, Clearly Explained!!!](https://statquest.org/2017/11/13/statquest-quantile-quantile-qq-plots-clearly-explained/)
+- COOL! [Formulas in R Tutorial](https://www.datacamp.com/community/tutorials/r-formula-tutorial)
+- [The R Formula Method: The Good Parts](https://rviews.rstudio.com/2017/02/01/the-r-formula-method-the-good-parts/) by Max Kuhn
+- [The R Formula Method: The Bad Parts](https://rviews.rstudio.com/2017/03/01/the-r-formula-method-the-bad-parts/) by Max Kuhn
+- [Advanced R. 20.3.4 Under the hood](https://adv-r.hadley.nz/evaluation.html#quosure-impl)
+Quosures were inspired by R’s formulas, because formulas capture an expression and an environment
+- [Formula: Extended Model Formulas](https://cran.r-project.org/web/packages/Formula/index.html)
+- [Expressing design formula in R](http://genomicsclass.github.io/book/pages/expressing_design_formula.html)
+- [Condition ( | ) in R formula](https://stackoverflow.com/questions/42417963/condition-in-r-formula)
+- [How to write a linear model formula with 100 variables in R](https://stats.stackexchange.com/questions/29477/how-to-write-a-linear-model-formula-with-100-variables-in-r)
+- [anova test fails on lme fits created with pasted formula](https://stackoverflow.com/questions/7666807/anova-test-fails-on-lme-fits-created-with-pasted-formula/7668846#7668846)
+- [Use of ~ (tilde) in R programming Language](https://stackoverflow.com/questions/14976331/use-of-tilde-in-r-programming-language)
+	- [The 'formulas' section of the lazyeval vignette gives a good introduction to what a formula is](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
+- [formula From stats v3.5.2](https://www.rdocumentation.org/packages/stats/versions/3.5.2/topics/formula) Model Formulae
+
+
+# 24.01.2019
+## R
+- [Make updateSelectizeInput() work with labels again {#2248}](https://github.com/rstudio/shiny/pull/2248)
+- [r-lib/later](https://github.com/r-lib/later). Schedule an R function or formula to run after a specified period of time.
+- Конструктор после апдейта `rlang`стал валиться на `assertr::has_all_names` в строке `given_names <- rlang::env_names(parent$.top_env)`. Возникает вопрос, как посмотреть содержимое окружения. Есть подозрение, что байндинг `.top_env` создается в `rlang` и его как-то сломали.
+	- [How to Display or Print Contents of Environment in R](https://stackoverflow.com/questions/50207263/how-to-display-or-print-contents-of-environment-in-r)
+	- [rlang/R/lifecycle-retired.R](https://github.com/r-lib/rlang/blob/e8a0157b7c6c341bb9cae35e663b43ff4fa0d5c6/R/lifecycle-retired.R)
+	- [How to access .data environment from code evaluated by eval_tidy]https://stackoverflow.com/questions/49122254/how-to-access-data-environment-from-code-evaluated-by-eval-tidy)
+	- [.data pronoun using the data mask environment ancestry](https://github.com/r-lib/rlang/issues/629)
+	- [as_overscope. From rlang v0.1 by Lionel Henry](https://www.rdocumentation.org/packages/rlang/versions/0.1/topics/as_overscope). Create A Dynamic Scope For Tidy Evaluation
+- Появился баг в DT Shiny [DataTables warning: table id= - Ajax error please see http://datatables.net/tn/7](https://community.rstudio.com/t/datatables-warning-table-id-ajax-error-please-see-http-datatables-net-tn-7/12193/3)
+- [Почему отменили будущее?](https://www.youtube.com/watch?v=xoUXGgO0Lj4)
+
+# GIT
+- COOL! [git stash – это то, что я искал](http://stepansuvorov.com/blog/2012/11/git-stash-%D1%8D%D1%82%D0%BE-%D1%82%D0%BE-%D1%87%D1%82%D0%BE-%D1%8F-%D0%B8%D1%81%D0%BA%D0%B0%D0%BB/)
+```
+git stash
+git pull
+git stash apply
+```
+- COOL! [How to clone a specific branch in git](https://coderwall.com/p/y7hf6w/how-to-clone-a-specific-branch-in-git)
+- COOL! [Clone only one branch {duplicate}](https://stackoverflow.com/questions/4811434/clone-only-one-branch/14930421#14930421)
+```
+git clone learned --single-branch option to limit cloning to a single branch (surprise!); tags that do not point into the history of the branch are not fetched.
+Git actually allows you to clone only one branch, for example:
+git clone -b mybranch --single-branch git://sub.domain.com/repo.git
+```
+- [Clone at Git Repo to a Different Directory](https://til.hashrocket.com/posts/z0f393xq0s-clone-at-git-repo-to-a-different-directory)
+
+Итого, вытаскиваем ветку 'huawei' командой
+`git clone -b huawei https://gitlab.com/TV-stat/mts-tv-stat.reports.git ./mts-tv-stat.reports.hw`
+
+# 23.01.2018
+## R
+- [Spatial lag model trees](https://eeecon.uibk.ac.at/~zeileis/news/lagsarlmtree/).
+Economic growth models are recursively partitioned to assess heterogeneity in growth and convergence across EU regions while adjusting for spatial dependencies. Accompanied by R package lagsarlmtree, combining partykit::mob and spdep::lagsarlm.
+- COOL! [Docker Images for R: r-base versus r-apt](https://datawookie.netlify.com/blog/2019/01/docker-images-for-r-r-base-versus-r-apt/)
+- [Climate change: Modeling 140+ years of temperature data with tsibble and fable](https://rethinking.rbind.io/2019/01/21/140-years/)
+- [hrbrthemes 0.6.0 on CRAN + Other In-Development Package News](https://rud.is/b/2019/01/21/hrbrthemes-0-6-0-on-cran-other-in-development-package-news/)
+- [THE SHINY MODULE DESIGN PATTERN](https://drdoane.com/the-shiny-module-design-pattern/)
+- COOL! [Advanced R Markdown Workshop](http://arm.rbind.io/)
+ 	- COOL! [Advanced R Markdown. Day 2: Customization and Extensions](https://bit.ly/arm-xie) by Yihui Xie and Hao Zhu, 2019/01/16 @ rstudio::conf, Austin, TX. Example code is available at http://bit.ly/arm-exm.
+- [Correlated longitudinal data with varying time intervals](https://www.rdatagen.net/post/correlated-longitudinal-data-with-varying-time-intervals/)
+- [Tibbles, checking examples, & character encodings](https://www.fromthebottomoftheheap.net/2019/01/22/using-tibbles-and-example-checking/)
+- [Make Teaching R Quasi-Quotation Easier](http://www.win-vector.com/blog/2019/01/make-teaching-r-quasi-quotation-easier/)
+- [forecast 8.5](https://robjhyndman.com/hyndsight/forecast85/)
+- [Factor Analysis in R with Psych Package: Measuring Consumer Involvement](https://lucidmanager.org/measuring-consumer-involvement/)
+- COOL! [A biased comparsion of JSON packages in R](https://rstudio-pubs-static.s3.amazonaws.com/31702_9c22e3d1a0c44968a4a1f9656f1800ab.html). Some simple examples to compare behavior and performance of JSON packages in R.
+- [humanReadable: Print Byte Size in Human Readable Format](https://rdrr.io/cran/gdata/man/humanReadable.html). 
+In gdata: Various R Programming Tools for Data Manipulation
+
+## Web-scrapping
+- COOL! [Using httr to Detect HTTP(s) Redirects](https://petermeissner.de/blog/2018/11/07/using-httr-to-detect-redirects/). November 7, 2018
+- [Getting started with httr. httr quickstart guide](https://cran.r-project.org/web/packages/httr/vignettes/quickstart.html)
 
 
 # 18.01.2019
@@ -489,6 +659,7 @@ __How can I parallelize the following for-loop?__
 
 ## Clustering
 - [UC Business Analytics R Programming Guide](https://uc-r.github.io/hc_clustering)
+- [K-means Cluster Analysis](https://uc-r.github.io/kmeans_clustering)
 - [Factoextra R Package: Easy Multivariate Data Analyses and Elegant Visualization](http://www.sthda.com/english/wiki/factoextra-r-package-easy-multivariate-data-analyses-and-elegant-visualization)
 - COOL! [StatQuest: K-means clustering](https://statquest.org/2017/07/05/statquest-k-means-clustering/)
 
@@ -530,6 +701,8 @@ __How can I parallelize the following for-loop?__
 - [How to Scrape Data from a JavaScript Website with R](https://velaco.github.io/how-to-scrape-data-from-javascript-websites-with-R/)
 - COOL! [Headless 'Chrome' Orchestration in R](https://github.com/hrbrmstr/decapitated)
 - COOL! [5 amazing free tools that can help with publishing R results and blogging](https://jozefhajnala.gitlab.io/r/r907-christmas-praise/)
+- COOL! [Create R Markdown reports and presentations even better with these 3 practical tips](https://jozefhajnala.gitlab.io/r/r909-rmarkdown-tips/)
+- COOL! [Here's why 2019 is a great year to start with R: A story of 10 year old R code then and now](https://jozefhajnala.gitlab.io/r/r908-10-year-old-code/)
 - Весьма прикольно! [BUBBLE PACKED CHART WITH R USING PACKCIRCLES PACKAGE](https://chichacha.netlify.com/2018/12/22/bubble-packed-chart-with-r-using-packcircles-package/)
 - [November 2018: “Top 40” New Packages](https://rviews.rstudio.com/2018/12/21/november-2018-top-40-new-packages/)
 	- COOL! [lobstr: Visualize R Data Structures with Trees](https://cran.r-project.org/web/packages/lobstr/index.html)
@@ -545,6 +718,8 @@ v0.1.4: Provides a function for drawing drawing variable trees plots that displa
 
 # 21.12.2018
 ## A/B Testing
+- [Understanding Bayesian A/B testing (using baseball statistics)](http://varianceexplained.org/r/bayesian_ab_baseball/)
+- [Bayesian A/B Testing Made Easy](https://www.r-exercises.com/2017/08/21/bayesian_ab_testing_made_easy/)
 - COOL! [dabestr: Data Analysis using Bootstrap-Coupled Estimation](https://cran.r-project.org/web/packages/dabestr/index.html). Offers an alternative to significance testing using bootstrap methods and estimation plots. See Ho et al (2018). There is a vignette on [Bootstrap Confidence Intervals](https://cran.r-project.org/web/packages/dabestr/vignettes/bootstrap-confidence-intervals.html), another on [Statistical Visualizations](https://cran.r-project.org/web/packages/dabestr/vignettes/robust-statistical-visualization.html), and a third on creating [Estimation Plots](https://cran.r-project.org/web/packages/dabestr/vignettes/using-dabestr.html).
 	- COOL! [Robust and Beautiful Statistical Visualization](https://cran.r-project.org/web/packages/dabestr/vignettes/robust-statistical-visualization.html)
 - A/B testing -- частный случай метода [Randomized controlled trial](https://en.wikipedia.org/wiki/Randomized_controlled_trial)
@@ -560,8 +735,16 @@ P.S. Не совсем понятно что такое «Стандартное
 - [randomizeR: Randomization for Clinical Trials](https://cran.r-project.org/web/packages/randomizeR/)
 This tool enables the user to choose a randomization procedure based on sound scientific criteria. It comprises the generation of randomization sequences as well the assessment of randomization procedures based on carefully selected criteria. Furthermore, 'randomizeR' provides a function for the comparison of randomization procedures.
 - COOL! [Bayesian and frequentist A/B split testing](https://github.com/dgrtwo/splittestr). Functions for Bayesian and frequentist A/B split testing. The main purpose of this package is to provide functions and support for [this blog post about Bayesian A/B testing](http://varianceexplained.org/r/bayesian-ab-testing/).
+	- [How Not To Run an A/B Test](http://www.evanmiller.org/how-not-to-run-an-ab-test.html)
+	- [A/B Testing Rigorously (without losing your job)](http://elem.com/~btilly/ab-testing-multiple-looks/part1-rigorous.html)
 - [The Errors of A/B Testing: Your Conclusions Can Make Things Worse](https://grasshopper.com/blog/the-errors-of-ab-testing-your-conclusions-can-make-things-worse/)
 - [A/B Testing Tech Note: determining sample size](https://signalvnoise.com/posts/3004-ab-testing-tech-note-determining-sample-size)
+- COOL! [bayesAB](https://frankportman.github.io/bayesAB/). Fast Bayesian Methods for AB Testing
+- COOL! [Quick Significance Calculations for A/B Tests in R](http://www.win-vector.com/blog/2018/10/quick-significance-calculations-for-a-b-tests-in-r/)
+- [20-80% Faster A/B Tests? Is it real?](http://blog.analytics-toolkit.com/2018/20-80-percent-faster-a-b-tests-real/)
+- EARL2017. [Fast and Efficient A/B Testing Analysis with Shiny and SQL](https://earlconf.com/2017/downloads/boston/presentations/EARL2017_-_Boston_-_Charlie_Thompson_-_%20Fast_and_efficient_A:B_testing_analysis.pdf)
+- COOL! [Statistical Inference: A Tidy Approach](https://ismayc.github.io/talks/ness-infer/slide_deck.html#1)
+- COOL! [An Introduction to Statistical and Data Sciences via R](https://moderndive.com/)
 
 
 
@@ -728,14 +911,15 @@ MRC-CSC/Shared-bioinformatics-training
 - [Get out of Excel free](https://github.com/rsheets/jailbreakr)
 - Похоже, что по материалам datacamp сделан неплохой справочник [ugo_r_doc](https://ugoproto.github.io/ugo_r_doc/Data_Analysis_in_R,_the_data.table_Way/#mixing-it-together-lapply-sd-sdcols-and-n)
 - Работа со строками
-	- похоже, что сделан по мотивам datacamp курса Шарлотты [String Manipulation in R with stringr](https://rpubs.com/iPhuoc/stringr_manipulation) by
-Khac Phuoc Le
+	- похоже, что сделан по мотивам datacamp курса Шарлотты [String Manipulation in R with stringr](https://rpubs.com/iPhuoc/stringr_manipulation) by Khac Phuoc Le
 	- [Text Processing Presentation](https://robchavez.github.io/datascience_gallery/html_only/text_processing.html) by Stephanie Gluck & Pooya Razavi
 	- [Strung Out On String Ops – A Brief Comparison of stringi and stringr](https://rud.is/b/2017/02/06/strung-out-on-string-ops-a-brief-comparison-of-stringi-and-stringr/)
 	- [Regular Expressions Every R programmer Should Know](https://blog.jumpingrivers.com/posts/2018/top_regular_expressions_r_stringr/)
 	- [Handling Strings with R](http://www.gastonsanchez.com/r4strings/) by Gaston Sanchez, 2018-04-19
 	- [Handling and Processing Strings in R](http://gastonsanchez.com/Handling_and_Processing_Strings_in_R.pdf), Gaston Sanchez
 	- [Marek Gagolewski, stringi Package for R](http://www.gagolewski.com/software/stringi/)
+- [saghirb/R-datatable-Intro](https://github.com/saghirb/R-datatable-Intro). Workshop Materials: Introduction to R concepts and the data.table package - a tinyverse approach
+- [PH525x series - Biomedical Data Science](http://genomicsclass.github.io/book/)
 
 ## R exercises & Learning
 - [Exercism](https://exercism.io/). Code practice and mentorship for everyone. 
@@ -1106,6 +1290,7 @@ The SEM gets smaller as your samples get larger. This makes sense, because the m
 The SD does not change predictably as you acquire more data. The SD you compute from a sample is the best possible estimate of the SD of the overall population. As you collect more data, you'll assess the SD of the population with more precision. But you can't predict whether the SD from a larger sample will be bigger or smaller than the SD from a small sample. (This is a simplification, not quite true. See comments below.)
 Note that standard errors can be computed for almost any parameter you compute from data, not just the mean. The phrase "the standard error" is a bit ambiguous. The points above refer only to the standard error of the mean.
 ```
+- Наглядный пример с собачками [Standard Deviation and Variance](https://www.mathsisfun.com/data/standard-deviation.html)
 
 ## R
 - [Is plumber multithreading or single threading ? #170 {Closed}](https://github.com/trestletech/plumber/issues/170)
@@ -1427,7 +1612,6 @@ A minimalistic but flexible framework that facilitates the creation, management 
 - COOL! [Tol Color Schemes](https://owi.usgs.gov/blog/tolcolors/)
 	- COOL! [Colour Schemes](https://personal.sron.nl/~pault/data/colourschemes.pdf), Prepared by: Paul Tol
 	- [THE PAUL TOL 21-COLOR SALUTE](https://tradeblotter.wordpress.com/2013/02/28/the-paul-tol-21-color-salute/)
-- COOL! [What Are We Plotting, What Are We Animating](https://www.data-imaginist.com/2018/what-are-we-plotting-what-are-we-animating/), Sep 24, 2018. ANIMATION GGANIMATE
 - Для быстрый конвертации R `data.frame` в JSON: https://github.com/SymbolixAU/jsonify
 - COOL! [mschart](https://ardata-fr.github.io/mschart/). The mschart package provides a framework for easily create charts for ‘Microsoft PowerPoint’ documents. It has to be used with package officer that will produce the charts in new or existing PowerPoint or Word documents.
 - COOL! [Crosstalk is an add-on to the htmlwidgets package](https://rstudio.github.io/crosstalk/)
@@ -2028,7 +2212,6 @@ get_os <- function() {
 - [Connecting R to PostgreSQL on Linux](https://www.nielsenmark.us/2018/07/07/connecting-r-to-postgresql-on-linux/)
 - [New package 'packagefinder' - Search for packages from the R console](https://topics-in-r.blogspot.com/2018/07/new-package-packagefinder.html)
 - [CONVEX REGRESSION MODEL](https://freakonometrics.hypotheses.org/53384)
-- COOL! [LIFE (EXPECTANCY), ANIMATED](https://nowosad.github.io/post/life-expectancy-animated/)
 - [Survey your audience and visualise the results with R and Google forms](http://www.seascapemodels.org/rstats/2018/07/05/survey-your-audience.html)
 - [New rWind release on CRAN! (v1.0.2)](https://allthiswasfield.blogspot.com/2018/07/new-rwind-v102-release-on-cran.html)
 - COOL! [infer R Package](http://infer.netlify.com/). The objective of this package is to perform statistical inference using an expressive statistical grammar that coheres with the tidyverse design framework.
@@ -2040,7 +2223,6 @@ get_os <- function() {
 - COOL! [Forecast double seasonal time series with multiple linear regression in R](https://petolau.github.io/Forecast-double-seasonal-time-series-with-multiple-linear-regression-in-R/)
 - COOL! [Doing magic and analyzing seasonal time series with GAM (Generalized Additive Model) in R](https://petolau.github.io/Analyzing-double-seasonal-time-series-with-GAM-in-R/)
 - [modelDown: a website generator for your predictive models](http://smarterpoland.pl/index.php/2018/06/modeldown-a-website-generator-for-your-predictive-models/)
-- COOL! [Global Migration, animated with R](http://blog.revolutionanalytics.com/2018/06/global-migration-animated-with-r.html)
 - [Pushing Ordinary Least Squares to the limit with Xy()](https://www.statworx.com/de/blog/pushing-ordinary-least-squares-to-the-limit-with-xy/)
 - [A Comparative Review of the Rattle GUI for R](http://r4stats.com/2018/07/02/a-comparative-review-of-the-rattle-gui-for-r/)
 - COOL! [Factfulness: Building Gapminder Income Mountains](http://staff.math.su.se/hoehle/blog/2018/07/02/factfulness.html)
@@ -3467,7 +3649,6 @@ Create data summaries for quality control, extensive reports for exploring data,
 - [A Simple Intro to Q-Learning in R: Floor Plan Navigation](https://qualityandinnovation.com/2017/12/24/a-simple-intro-to-q-learning-in-r-floor-plan-navigation/)
 - [Plotting Deep Learning Model Performance Trajectories](http://www.win-vector.com/blog/2017/12/plotting-deep-learning-model-performance-trajectories/)
 	- [Plot the trajectory of a Keras model fit](https://winvector.github.io/WVPlots/reference/plot_Keras_fit_trajectory.html)
-- COOL! [Let it flow, let it flow, let it flow......](https://johnmackintosh.com/2017-12-21-flow/) Animating dot plots to demonstrate patient flow
 - [Data discretization made easy with funModeling](https://blog.datascienceheroes.com/data-discretization-made-easy-with-funmodeling/)
 - [Building a Hacker News scraper with 8 lines of R code using rvest library](https://datascienceplus.com/building-a-hacker-news-scraper-with-8-lines-of-r-code-using-rvest-library/)
 
@@ -5114,8 +5295,6 @@ Verify that Mathematica works as expected again by evaluating 2+2.
 	- [Option 2: Displayr](http://www.displayr.com/)
 	- [Option 3: Q](https://www.q-researchsoftware.com/)
 - joyplot. [Probably more likely than probable](http://blog.revolutionanalytics.com/2017/08/probably-more-probably-than-probable.html)
-- [3-D animations with R](http://blog.revolutionanalytics.com/2017/08/3-d-animations-with-r.html)
-- COOL! [I made a 3D movie with ggplot2 once - here's how I did it](http://www.data-imaginist.com/2017/I-made-a-3D-movie/). Тут управление толщиной линий и их градиентной закраской.
 
 
 ## DT & Shiny
@@ -6256,9 +6435,6 @@ Today we are proud to announce a major release of the RQGIS package providing an
 
 # 24.05.2017
 ## R 
-- COOL! [Create smooth animations in R with the tweenr package](http://blog.revolutionanalytics.com/2017/05/tweenr.html)
-	- [tweenr](https://github.com/thomasp85/tweenr) is a small package that makes it easy to interpolate your data between different states, specifying the length of each change, the easing of the transition and how many intermediary steps should be generated. tweenr works particularly well with gganimate but can be used for any case where interpolation of data is needed. All functions are vectorized so in any case you'll get better performance than using approx and colorRamp.
-	- COOL! [Recreating the Datasaurus Dozen Using tweenr and ggplot2](https://wjakethompson.github.io/post/datasaurus-dozen/)
 - [NEW YORK R CONFERENCE](http://www.rstats.nyc/)
 - [Open software engineering platform and fun adventure game http://phacility.com/phabricator/](https://github.com/phacility/phabricator)
 	- [Phacility](https://phacility.com/phabricator/). Discuss. Plan. Code. Review. Test. Every application your project needs, all in one tool.
@@ -7642,6 +7818,7 @@ Go and explore, and happy new year!
 ## R
 - [R exercises](http://r-exercises.com/). Очень неплохой ресурс с заданиями по R.
 - COOL! Классный пакет для Simmer [Discrete-Event Simulator for R](http://fishyoperations.com/2017/01/12/extensions-for-simmer.html). Вообще, на этом сайте очень много записей про симуляцию.
+- [simmer 4.2.1](https://www.enchufa2.es/archives/simmer-4-2-1.html)
 - [simmer 4.0.1](https://www.enchufa2.es/archives/simmer-4-0-1.html)
 - [simmer 4.0.0](https://www.enchufa2.es/archives/simmer-4-0-0.html)
 - [simmer 3.8.0](https://www.enchufa2.es/archives/simmer-3-8-0.html)
@@ -9346,10 +9523,9 @@ I finish enhancements of the dual axes time series plotting function in R so it 
 	- [ggplot2 extensions - gallery](http://www.ggplot2-exts.org/)
 	- [ggpolypath](https://github.com/mdsumner/ggpolypath). A ggplot2 geom for polygons with holes, called 'geom_polypath'.
 - [Plotting background data for groups with ggplot2](https://drsimonj.svbtle.com/plotting-background-data-for-groups-with-ggplot2)
-- [Improving R animated GIFs with tweenr](http://lenkiefer.com/2016/05/29/improving-R-animated-gifs-with-tweenr)
+- [Improving R animated GIFs with tweenr](http://lenkiefer.com/2016/05/29/improving-r-animated-gifs-with-tweenr/)
 - [Efficient R programming. E-book](https://csgillespie.github.io/efficientR/)
 - [Bookdown: Authoring Books with R Markdown. E-book](https://bookdown.org/yihui/bookdown/). Yihui Xie, 2016-07-19
-
 - [JSM 2016 session on Reproducibility in Statistics and Data Science](http://citizen-statistician.org/2016/08/03/jsm-2016-session-on-reproducibility-in-statistics-and-data-science/)
 	- [Links to slides from JSM 2016](https://github.com/kbroman/JSM2016slides). Links to slides to talks at the 2016 Joint Statistical Meetings in Chicago, Illinois. Pull requests welcome! Or add an issue, or tweet @kwbroman or email Karl Broman.
 - [Comparison of Statistical Packages](https://r-economics.com/2016/04/02/comparison-of-statistical-packages/)
