@@ -158,7 +158,7 @@ sudo yum -y install -y https://centos7.iuscommunity.org/ius-release.rpm
 sudo yum -y groupinstall X11
 sudo yum -y groupinstall "Development Tools"
 
-sudo yum -y install wget libcurl-devel openssl-devel cyrus-sasl-devel libxml2-devel libpng-devel libjpeg-devel python python-devel proj proj-devel mesa-libGL mesa-libGL-devel mesa-libGLU mesa-libGLU-devel gmp-devel mpfr-devel cairo-devel libXt-devel gtk2-devel v8-devel udunits2 udunits2-devel xorg-x11-server-Xvfb unixODBC* postgresql-devel mariadb-devel mysql-devel gcc-gfortran* texlive*, ufw, dejavu*, psmisc, rrdtool, wireshark, lrzsz
+sudo yum -y install wget libcurl-devel openssl-devel cyrus-sasl-devel libxml2-devel libpng-devel libjpeg-devel python python-devel proj proj-devel mesa-libGL mesa-libGL-devel mesa-libGLU mesa-libGLU-devel gmp-devel mpfr-devel cairo-devel libXt-devel gtk2-devel v8-devel udunits2 udunits2-devel xorg-x11-server-Xvfb unixODBC* postgresql-devel mariadb-devel mysql-devel gcc-gfortran* texlive*, ufw, dejavu*, psmisc, rrdtool, wireshark, lrzsz, ImageMagick-c++-devel
 
 sudo yum -y install dejavu-fonts-common dejavu-sans-mono-fonts rrdtool psmisc lrzsz gdal* proj-devel proj-epsg proj-nad protobuf-devel geos-devel
 ```
@@ -319,6 +319,40 @@ sudo ACCEPT_EULA=Y yum install msodbcsql
 - Подключение пакета `topicmodels`
 Под CentOS получаем такую ошибочку:
 Installing topicmodels - "fatal error: 'gsl/gsl_rng.h'"
+
+- Подключение новой версии пакета `flextable`
+При попытке поставить ломается при загрузке требуемой зависимости -- пакета `magick`.
+```
+Configuration failed because Magick++ was not found. Try installing:
+ - deb: 'libmagick++-dev' (Debian, Ubuntu)
+ - rpm: 'ImageMagick-c++-devel' (Fedora, CentOS, RHEL)
+ - csw: 'imagemagick_dev' (Solaris)
+On MacOS it is recommended to use install ImageMagick-6 from homebrew
+with extra support for fontconfig and rsvg rendering:
+   brew reinstall imagemagick@6 --with-fontconfig --with-librsvg
+For older Ubuntu versions Trusty (14.04) and Xenial (16.04) use our PPA:
+   sudo add-apt-repository -y ppa:opencpu/imagemagick
+   sudo apt-get update
+   sudo apt-get install -y libmagick++-dev
+```
+
+`sudo yum install ImageMagick-c++-devel`
+
+Все равно не работает.
+Добавляем Remi Repository: https://rpms.remirepo.net/
+`wget -c repo.rpm`
+`rpm -ihv remi-release-7.rpm`
+`sudo yum update`
+`yum info ImageMagick`
+
+и ничего не помогает.... 
+нашел тикет с подрбным описанием кейса: [Trying to install magick on centOS 6.9 in R 3.5.1 - error loading shared lib #166 {Closed}](https://github.com/ropensci/magick/issues/166)
+```r
+install.packages("BiocMaanger")
+BiocManager::install("magick")
+```
+
+
 
 ## Установка RStudio Server
 [Страница загрузки](https://www.rstudio.com/products/rstudio/download-server/)
@@ -1517,3 +1551,14 @@ chown -R :statisticians /home/stat_user1
 chown -R :statisticians /home/stat_user2
 теперь пользователи группы могу писать в /srv/shiny-server поскольку и они и /srv/shiny-server в одной группе.
 пользователям надо перелогиниться если они в shell-е сейчас.
+
+
+# копирование директорий между машинами
+1. на src запаковываем директорию командой `tar zcvf msp-analysis.tgz ./msp-analysis (edited)`
+2. Отключаем вручную кривые репозитории: `sudo vi /etc/apt/sources.list.d/opencpu-ubuntu-jq-bionic.list`
+3. На src открываем внешний dst: `scp msp-analysis.tar.gz ruser@10.0.1.238:/tmp/`
+4. На dst удаляем старую директорию: `rm -fr msp-analysis`
+5. После копирования переходим на новую машину: `ssh ruser@10.0.1.238`
+6. Идем в директорию проектов: `cd R`
+7. Перетаскиваем архив: `mv /tmp/msp-analysis.tar.gz ./`
+8. Распаковываем: `tar zxvf ./msp-analysis.tar.gz`

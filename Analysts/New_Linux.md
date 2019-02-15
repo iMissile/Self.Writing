@@ -23,3 +23,4 @@ find . -name '*.txt.*' -print -exec zip '{}'.zip '{}' \; -exec mv '{}'.zip '{}' 
 Find the .txt files
 The first -exec zips the files
 The second -exec renames the zipped files to the original names
+

@@ -178,8 +178,10 @@ lbzip2 \
 libbz2-dev \
 libblas-dev \
 liblapack-dev \
-gfortran
-
+gfortran \
+libmagick++-dev \
+ncdu \
+glances
 ```
    # r-cran-littler
 
@@ -226,7 +228,7 @@ sudo apt install r-base
 ### Ставим R пакеты
 - [GNU Operating System. Findutils](https://www.gnu.org/software/findutils/)
 - Для `jqr` надо ставить либы...
-``
+```
 Configuration failed because libjq was not found.
 On Ubuntu 14.04 or 16.04 you can use the PPA:
   sudo add-apt-repository -y ppa:opencpu/jq
@@ -237,6 +239,14 @@ On other sytems try installing:
  * rpm: jq-devel (Fedora, EPEL)
  * csw: libjq_dev (Solaris)
  * brew: jq (OSX)
+```
+
+- для `flextable`\`magick` надо ставить либы
+```
+Configuration failed because Magick++ was not found. Try installing:
+ - deb: 'libmagick++-dev' (Debian, Ubuntu)
+ - rpm: 'ImageMagick-c++-devel' (Fedora, CentOS, RHEL)
+ - csw: 'imagemagick_dev' (Solaris)
 ```
 
 ```

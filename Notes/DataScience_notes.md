@@ -209,6 +209,11 @@ Survival analysis is long-established within actuarial science but infrequently 
 
 
 # data.table
+## data.table
+- Hadley Wickham. [My take on dplyr vs data.table](https://twitter.com/hadleywickham/status/553169339751215104):
+	- [data.table vs dplyr: can one do something well the other can't or does poorly?](https://stackoverflow.com/questions/21435339/data-table-vs-dplyr-can-one-do-something-well-the-other-cant-or-does-poorly/27840349#27840349)
+- COOL! [Fast data lookups in R: dplyr vs data.table](http://appsilondatascience.com/blog/rstats/2017/03/02/r-fast-lookup.html)
+
 - [Homepage Rdatatable/data.table](https://github.com/Rdatatable/data.table/wiki)
 - [data.table vs dplyr: can one do something well the other can't or does poorly?](https://stackoverflow.com/questions/21435339/data-table-vs-dplyr-can-one-do-something-well-the-other-cant-or-does-poorly)
 - [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)
@@ -244,6 +249,8 @@ Or with gunzip
 - COOL! [Как посчитать ТОП N по группам](https://stackoverflow.com/questions/27766054/getting-the-top-values-by-group). см также https://stackoverflow.com/questions/20345022/convert-a-data-frame-to-a-data-table-without-copy
 - [Data table fread with zip file in other directory with spaces in the name](https://stackoverflow.com/questions/50872108/data-table-fread-with-zip-file-in-other-directory-with-spaces-in-the-name)
 - [Convenience features of fread](https://github.com/Rdatatable/data.table/wiki/Convenience-features-of-fread)
+- COOL! Дирк перешел в наступление: [#15: Tidyverse and data.table, sitting side by side ... (Part 1)](http://dirk.eddelbuettel.com/blog/2018/01/21/#015_tidyverse_and_datatable_part_1)
+
  
 
 # DS
@@ -435,6 +442,9 @@ https://plot.ly/products/cloud/
 - COOL! [Let it flow, let it flow, let it flow......](https://johnmackintosh.com/2017-12-21-flow/) Animating dot plots to demonstrate patient flow
 - [3-D animations with R](http://blog.revolutionanalytics.com/2017/08/3-d-animations-with-r.html)
 - COOL! [I made a 3D movie with ggplot2 once - here's how I did it](http://www.data-imaginist.com/2017/I-made-a-3D-movie/). Тут управление толщиной линий и их градиентной закраской.
+- [Animating Data Transformations](https://omnianalytics.io/2018/08/30/animating-the-data-transformation-process-with-gganimate/)
+- [Animating Data Transformations: Part II](https://omnianalytics.io/2019/01/09/animating-data-transformations-part-ii/)
+- [Animating Data Transformations III – separate()](https://omnianalytics.io/blog/)
 
 
 ## R color palettes
@@ -460,13 +470,140 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 - [EXTRACTING COLOURS FROM YOUR IMAGES WITH IMAGE QUANTIZATION](https://chichacha.netlify.com/2019/01/19/extracting-colours-from-your-images-with-image-quantization/)
 - [Collection of most color palettes in a single R package](https://www.hvitfeldt.me/r/paletteer/)
 
+# 14.02.2109
+## R
+- [Generate a set of random unique integers from an interval](https://stackoverflow.com/questions/17773080/generate-a-set-of-random-unique-integers-from-an-interval)
+- [Calculating the Inner Quartile Range in R](https://lagunita.stanford.edu/courses/course-v1:Medicine+IPE21CC+ongoing/wiki/HRP258/example-r-classwork-solutions-using-r/calculating-inner-quartile-range-r/)
+- [Split data into N equal groups](https://stats.stackexchange.com/questions/149250/split-data-into-n-equal-groups)
+	- А вот и специальный пакетик: [m-Py/minDiff](https://github.com/m-Py/minDiff). An R-package to create fair groups having minimal differences
+- [Box Plot Diagram to Identify Outliers](https://www.whatissixsigma.net/box-plot-diagram-to-identify-outliers/)
+
+# 13.02.2019
+## R
+- Разбираемся с падением pandoc:
+	- [Error creating notebook: pandoc document conversion failed with error 11 #3661 {Closed}](https://github.com/rstudio/rstudio/issues/3661)
+	- [Error creating notebook: pandoc document conversion failed with error 11 #4072 {Closed}](https://github.com/rstudio/rstudio/issues/4072):
+```
+---
+title: "HTML Document"
+output: 
+  html_document: 
+    self_contained: TRUE
+    keep_md: TRUE
+    df_print: paged
+---
+```
+- Проблема с пакетом bootstrap (возникает при несколько больших датасетах):
+	- [Error in bca.ci(boot.out, conf, index[1L], L = L, t = t.o, t0 = t0.o, : estimated adjustment 'a' is NA](https://stat.ethz.ch/pipermail/r-help/2011-February/268983.html)
+	- Детальный ответ найден здесь: ["Why is the error “estimated adjustment 'a' is NA” generated from R boot package when calculating confidence intervals using the bca method?"](https://stats.stackexchange.com/questions/37918/why-is-the-error-estimated-adjustment-a-is-na-generated-from-r-boot-package) и заключается в увеличении количества выборок.
+	- [What is the minimum number of bootstraps to be done using bca non-parametric method](https://stackoverflow.com/questions/11816251/what-is-the-minimum-number-of-bootstraps-to-be-done-using-bca-non-parametric-met). Комментарий на проверку: "I noticed that anything less than the sample size throws the error when running boot with bca – Max Gordon Jul 1 '13 at 6:12"
+
+AEWH0000224706RU3
+
+# 12.02.2019
+## Estimation Statistics
+- [Estimation statistics](https://en.wikipedia.org/wiki/Estimation_statistics) is a data analysis framework that uses a combination of effect sizes, confidence intervals, precision planning, and meta-analysis to plan experiments, analyze data and interpret results.
+- [Effect Size FAQs](https://effectsizefaq.com/)
+- [ESTIMATION STATISTICS BETA ANALYZE YOUR DATA WITH EFFECT SIZES](http://www.estimationstats.com/#/)
+- [Introduction to the New Statistics](https://thenewstatistics.com/itns/)
+- [ACCLAB/dabestr](https://github.com/ACCLAB/dabestr). Data Analysis with Bootstrap Estimation in R
+- [In R & dabestr, how do I get grouped differences correctly?](https://stackoverflow.com/questions/53716149/in-r-dabestr-how-do-i-get-grouped-differences-correctly)
+- COOL! R: Анализ и визуализация данных. 
+	- [Протокол разведочного анализа данных: проверка на нормальность распределения](https://r-analytics.blogspot.com/2012/06/blog-post_14.html)
+	- [Классические методы статистики: критерий хи-квадрат](http://r-analytics.blogspot.ru/2012/08/blog-post.html)
+	- [Интервальное оценивание параметров распределения](https://r-analytics.blogspot.com/2018/04/blog-post_28.html)
+	- [Эмпирические функции распределения и их сравнение](https://r-analytics.blogspot.com/2018/04/blog-post.html)
+- Nature: [The fickle P value generates irreproducible results](https://www.nature.com/articles/nmeth.3288)
+- [ModernDrive. 8 Sampling](https://moderndive.com/8-sampling.html)
+- [Tidy bootstrapping](https://github.com/tidyverse/dplyr/issues/269)
+- [Bootstrap simulation for model prediction](https://cran.rstudio.com/web/packages/finalfit/vignettes/bootstrap.html)
+- [Using bootstrap under H0 to perform a test for the difference of two means: replacement within the groups or within the pooled sample](https://stats.stackexchange.com/questions/136661/using-bootstrap-under-h0-to-perform-a-test-for-the-difference-of-two-means-repl)
+- [Bootstrap vs. permutation hypotheis testing](https://stats.stackexchange.com/questions/20217/bootstrap-vs-permutation-hypotheis-testing)
+- [Bootstrap in R](https://www.datacamp.com/community/tutorials/bootstrap-r). In this tutorial, you will learn how to use the boot package to obtain different types of bootstrapped confidence intervals.
+
+## Classic testing
+- [UC Business Analytics R Programming Guide. t-test: Comparing Group Means](https://uc-r.github.io/t_test)
+- [Using t-tests in R](https://statistics.berkeley.edu/computing/r-t-tests). Originally for Statistics 133, by Phil Spector
+- [Hypothesis testing and bootstrapping](http://astrostatistics.psu.edu/su07/R/testboot.html)
+
+## R
+- [cdata Control Table Keys](http://www.win-vector.com/blog/2019/02/cdata-control-table-keys/)
+- [Direct Optimization of Hyper-Parameter](https://statcompute.wordpress.com/2019/02/10/direct-optimization-of-hyper-parameter/)
+- COOL! [How did Axios rectangle Trump's PDF schedule? A try with R](https://masalmon.eu/2019/02/11/trump-schedule/)
+- [stringfix : adding transcoder shiny app](https://guillaumepressiat.github.io//blog/2019/02/transcoder)
+- [Quick Hit: Speeding Up a Slow/Mundane Task with a Little Rcpp](https://rud.is/b/2019/02/09/quick-hit-speeding-up-a-slow-mundane-task-with-a-little-rcpp/)
+- COOL! [Benchmarking cast in R from long data frame to wide matrix](https://r-posts.com/benchmarking-cast-in-r-from-long-data-frame-to-wide-matrix/)
+- [Deploying an R Shiny App With Docker](https://telethonkids.wordpress.com/2019/02/08/deploying-an-r-shiny-app-with-docker/)
+- Correlation is not causation
+	- COOL! ["Correlation is not causation". So what is?](https://iyarlin.github.io/2019/02/08/correlation-is-not-causation-so-what-is/)
+	- [Casual Inference in Statistics](http://bayes.cs.ucla.edu/PRIMER/)
+	- [causal-inference/miscellaneous files/The Seven Pillars of Causal Reasoning with Reflections on Machine Learning Pearl 2018.](https://github.com/IyarLin/causal-inference/blob/master/miscellaneous%20files/The%20Seven%20Pillars%20of%20Causal%20Reasoning%20with%20Reflections%20on%20Machine%20Learning%20Pearl%202018.pdf)
+- BBC Visual ggplot
+	- COOL! [BBC Visual and Data Journalism cookbook for R graphics](https://bbc.github.io/rcookbook/)
+	- [How the BBC Visual and Data Journalism team works with graphics in R](https://medium.com/bbc-visual-and-data-journalism/how-the-bbc-visual-and-data-journalism-team-works-with-graphics-in-r-ed0b35693535)
+	- [bbc/bbplot](https://github.com/bbc/bbplot). R package that helps create and export ggplot2 charts in the style used by the BBC News data team
+- [Are you leaking h2o? Call plumber!](https://longhowlam.wordpress.com/2019/02/07/are-you-leaking-h2o-call-plumber/)
+- [An absolute beginner’s guide to creating data frames for a Stack Overflow [r] question](https://nsaunders.wordpress.com/2019/02/07/an-absolute-beginners-guide-to-creating-data-frames-for-a-stack-overflow-r-question/)
+- [Mapping multiple trends with confidence](http://r.iresmi.net/2019/02/06/mapping-multiple-trends-with-confidence/). A tutorial to compute trends by groups and plot/map the results
+
+# 11.02.2009
+## R
+- COOL! [Queryverse. Julia Packages for Data Science](https://www.queryverse.org/)
+- COOL! [R: count the number of unique characters in that string](https://stackoverflow.com/questions/34872838/r-count-the-number-of-unique-characters-in-that-string)
+
+# 06.02.2009
+## R
+- COOL! [An overview of the NLP ecosystem in R (#nlproc #textasdata)](http://www.bnosac.be/index.php/blog/87-an-overview-of-the-nlp-ecosystem-in-r-nlproc-textasdata).
+- COOL! [rladies/meetup-presentations_budapest]. R-Ladies Budapest - This is the collection of code, presentations and additional materials created by the Budapest R-Ladies community https://www.meetup.com/R-Ladies-Budap…]
+
+## Defensive programming
+- [The Art of Defensive Programming](https://medium.com/web-engineering-vox/the-art-of-defensive-programming-6789a9743ed4)
+
+## Bootstrap for A/B
+- [Using bootstrap under H0 to perform a test for the difference of two means: replacement within the groups or within the pooled sample](https://stats.stackexchange.com/questions/136661/using-bootstrap-under-h0-to-perform-a-test-for-the-difference-of-two-means-repl)
+- [bootstrap: Bootstrapping a Lavaan Model](https://rdrr.io/cran/lavaan/man/bootstrap.html)
+- [Summary and Analysis of Extension Program Evaluation in R](http://rcompanion.org/handbook/E_04.html)
+- [UC Business Analytics R Programming Guide. Resampling Methods](https://uc-r.github.io/resampling_methods)
+- [RESAMPLING TECHNIQUES IN R: BOOTSTRAPPING AND PERMUTATION TESTING](https://uoftcoders.github.io/studyGroup/lessons/r/resampling/lesson/)
+
+# 05.02.2019
+## R
+- [Send UDP Probes (with payloads) and Receive/Process Responses in R](https://rud.is/b/2019/02/03/send-udp-probes-with-payloads-and-receive-process-responses-in-r/)
+- [Function Objects and Pipelines in R](http://www.win-vector.com/blog/2019/02/function-objects-and-pipelines-in-r/)
+- [A little trick for debugging Shiny](https://rtask.thinkr.fr/blog/a-little-trick-for-debugging-shiny/)
+- [Retail Data Visualization with R and Shiny](https://nycdatascience.com/blog/r/retail-data-visualization-with-r-and-shiny/)
+
+# 04.02.2019
+## R
+- COOL! [Tutorial: Sequential Pattern Mining in R for Business Recommendations](https://blog.revolutionanalytics.com/2019/02/sequential-pattern-mining-in-r.html)
+- [Quantile regression in R](https://statisticaloddsandends.wordpress.com/2019/02/01/quantile-regression-in-r/)
+- [How GPL makes me leave R for Python :-(](https://r-posts.com/how-gpl-makes-me-leave-r-for-python/)
+- COOL! [Using custom scales with the ‚scales‘ package](https://rcrastinate.rbind.io/post/using-custom-scales-with-the-scales-package/)
+- [Book review: Beyond Spreadsheets with R](https://shirinsplayground.netlify.com/2019/01/review_beyond_spreadsheets_with_r/)
+
+# 01.02.2019
+## R
+- COOL! [10 Tips for Choosing the Optimal Number of Clusters](https://towardsdatascience.com/10-tips-for-choosing-the-optimal-number-of-clusters-277e93d72d92)
+- [Correlation analysis of cyclically adjusted valuation measures and subsequent returns](https://databasedinvesting.blogspot.com/2019/01/correlation-analysis-of-cyclically.html)
+- [Hash Me If You Can](http://blog.ephorie.de/hash-me-if-you-can)
+- COOL! [benchmarkme: new version](https://www.jumpingrivers.com/blog/benchmarkme-new-version/)
+	- [benchmarkme: Crowd Sourced System Benchmarks](https://cran.r-project.org/web/packages/benchmarkme/index.html)
+Benchmark your CPU and compare against other CPUs. Also provides functions for obtaining system specifications, such as RAM, CPU type, and R version.
+- [Web Scraping Google Sheets with RSelenium](https://towardsdatascience.com/web-scraping-google-sheets-with-rselenium-9001eda399b0)
+- COOL! [Watch if R is running from Shiny](https://colinfay.me/watch-r-shiny/)
+- COOL! [December 2108: “Top 40” New CRAN Packages](https://rviews.rstudio.com/2019/01/30/december-2108-top-40-new-cran-packages/)
+- COOL! Создание презентаций средствами R `officer`. [Crafting a PowerPoint Presentation with R](http://lenkiefer.com/2017/09/23/crafting-a-powerpoint-presentation-with-r/)
+- COOL! [PURRRty PowerPoint with R](http://lenkiefer.com/2017/09/27/use-purrr/)
+
+
+
 # 31.01.2019
 ## R
 - [sfirke/janitor](https://github.com/sfirke/janitor). simple tools for data cleaning in R
 - COOL! [R Regex Tester Shiny App](https://adamspannbauer.github.io/2018/01/16/r-regex-tester-shiny-app/)
 	- Исходники: [AdamSpannbauer/r_regex_tester_app](https://github.com/AdamSpannbauer/r_regex_tester_app). Shiny Application to test regular expressions in R https://spannbaueradam.shinyapps.io/r…
 - [Handling and Processing Strings in R](http://www.gastonsanchez.com/visually-enforced/resources/how-to/2013/09/22/Handling-and-Processing-Strings-in-R/). Здесь хороший список функций в `stringr`
-- [Introduction to mapmate](https://leonawicz.github.io/mapmate/articles/mapmate.html)
+- [Introduction to mapmate](https://leonawicz.github.io/mapmate/articles/mapmate.html). The mapmate package is used for map- and globe-based data animation pre-production.
 
 # 30.01.2019
 - [StatQuest with Josh Starmer](https://www.youtube.com/user/joshstarmer/videos)
@@ -497,6 +634,8 @@ First turn on displaying warnings using the command `options(warn=1)` Then, you 
 - COOL! [R resources (free courses, books, tutorials, & cheat sheets)](https://paulvanderlaken.com/2017/08/10/r-resources-cheatsheets-tutorials-books/)
 - Очень интересные подборки. [R Weekly 2018-16 Questions, Readings, Inferences](https://rweekly.org/2018-16.html). В частности, [klrfome](https://github.com/mrecos/klrfome) - Kernel Logistic Regression on Focal Mean Embeddings, for solving the distribution regresion problem.
 - [STAT545. Regular Expression in R](https://stat545.com/block022_regular-expression.html) by Gloria Li and Jenny Bryan, October 19, 2014
+- bnosac - open analytical helpers. Educate R. Interested in R training? Download our R training brochure in PDF [here](http://www.bnosac.be/index.php/training)
+- [Manipulating strings with the {stringr} package](https://www.brodrigues.co/blog/2019-02-10-stringr_package/)
 
 ### For loops
 - [High Performance Loops in R](https://uoftcoders.github.io/studyGroup/lessons/r/loops/HighPerformanceLoops.html)
@@ -658,10 +797,19 @@ __How can I parallelize the following for-loop?__
 	- [Is there any standard logging package for R?](http://stackoverflow.com/questions/1928332/is-there-any-standard-logging-package-for-r)
 
 ## Clustering
-- [UC Business Analytics R Programming Guide](https://uc-r.github.io/hc_clustering)
-- [K-means Cluster Analysis](https://uc-r.github.io/kmeans_clustering)
+- [UC Business Analytics]
+	- COOL! [K-means Cluster Analysis](https://uc-r.github.io/kmeans_clustering)
+	- [UC Business Analytics R Programming Guide](https://uc-r.github.io/hc_clustering)
 - [Factoextra R Package: Easy Multivariate Data Analyses and Elegant Visualization](http://www.sthda.com/english/wiki/factoextra-r-package-easy-multivariate-data-analyses-and-elegant-visualization)
 - COOL! [StatQuest: K-means clustering](https://statquest.org/2017/07/05/statquest-k-means-clustering/)
+- Разбираемся, почему gap статистика проваливается иногда:
+	- [The optimal number of cluster by Gap Statistics](https://stats.stackexchange.com/questions/172641/the-optimal-number-of-cluster-by-gap-statistics). !! I do not trust the Gap statistic, or any of these heuristics. In particularly not if the plots are as smooth as these. Really visualizing your data is worth all the effort. In particular, also visualize the "best" result. Does it look good to you, or anomalous? Instead of trusting on some debated statistic like the Gap statistic, it is much better to trust a good visualization.
+	- COOL! [Why does gap statistic for k-means suggest one cluster, even though there are obviously two of them?](https://stats.stackexchange.com/questions/140711/why-does-gap-statistic-for-k-means-suggest-one-cluster-even-though-there-are-ob)
+	- [Standardize data columns in R](https://stackoverflow.com/questions/15215457/standardize-data-columns-in-r)
+	- [Using the standardize package](https://cran.r-project.org/web/packages/standardize/vignettes/using-standardize.html)
+	- [If k-means clustering is a form of Gaussian mixture modeling, can it be used when the data are not normal?](https://stats.stackexchange.com/questions/69424/if-k-means-clustering-is-a-form-of-gaussian-mixture-modeling-can-it-be-used-whe)
+	- [Optimal “k” when there’s no cluster? Pham vs Gap Part I](https://haroldpimentel.wordpress.com/2014/12/29/optimal-k-when-theres-no-cluster-gap-vs-pham-part-i/)
+
 
 # 11.01.2019
 ## R
@@ -723,6 +871,9 @@ v0.1.4: Provides a function for drawing drawing variable trees plots that displa
 - COOL! [dabestr: Data Analysis using Bootstrap-Coupled Estimation](https://cran.r-project.org/web/packages/dabestr/index.html). Offers an alternative to significance testing using bootstrap methods and estimation plots. See Ho et al (2018). There is a vignette on [Bootstrap Confidence Intervals](https://cran.r-project.org/web/packages/dabestr/vignettes/bootstrap-confidence-intervals.html), another on [Statistical Visualizations](https://cran.r-project.org/web/packages/dabestr/vignettes/robust-statistical-visualization.html), and a third on creating [Estimation Plots](https://cran.r-project.org/web/packages/dabestr/vignettes/using-dabestr.html).
 	- COOL! [Robust and Beautiful Statistical Visualization](https://cran.r-project.org/web/packages/dabestr/vignettes/robust-statistical-visualization.html)
 - A/B testing -- частный случай метода [Randomized controlled trial](https://en.wikipedia.org/wiki/Randomized_controlled_trial)
+- [Формирование гипотез, запуск A/B-теста и анализ его результатов](https://vc.ru/flood/28728-formirovanie-gipotez-zapusk-a-b-testa-i-analiz-ego-rezultatov)
+- [Как не надо анализировать A/B тесты. Проблема подглядывания](https://gopractice.ru/how-not-to-analyze-abtests/)
+- [Ухудшающие A/B тесты – cамый недооцененный инструмент менеджера продукта](https://gopractice.ru/ab-test/)
 - [A/B тест — это просто](https://habr.com/post/233911/)
 Интересная статья. Но есть замечание. Т-критерий Стюдента требует нормальное распределение. Вы предлагаете биномиальное (конверсия). Нормальная аппроксимация справедлива когда pn>5 и n(1-p)>5. [Binomial_proportion_confidence_interval](en.wikipedia.org/wiki/Binomial_proportion_confidence_interval)
 Т.е. если на сайте 1% конверсии, то выборка должна быть на 500 кликов минимум. Если мы изучаем клики по банеру c CTR 0.1%, то показов должно быть 5к минимум. Так что не совсем верно: «Этот тест хорошо зарекомендовал себя для небольших объемов данных».
@@ -734,9 +885,12 @@ P.S. Не совсем понятно что такое «Стандартное
 - [Data science you need to know! A/B testing](https://towardsdatascience.com/data-science-you-need-to-know-a-b-testing-f2f12aff619a)
 - [randomizeR: Randomization for Clinical Trials](https://cran.r-project.org/web/packages/randomizeR/)
 This tool enables the user to choose a randomization procedure based on sound scientific criteria. It comprises the generation of randomization sequences as well the assessment of randomization procedures based on carefully selected criteria. Furthermore, 'randomizeR' provides a function for the comparison of randomization procedures.
+- COOL! [Bayesian vs Frequentist A/B Testing – What’s the Difference?](https://conversionxl.com/blog/bayesian-frequentist-ab-testing/)
 - COOL! [Bayesian and frequentist A/B split testing](https://github.com/dgrtwo/splittestr). Functions for Bayesian and frequentist A/B split testing. The main purpose of this package is to provide functions and support for [this blog post about Bayesian A/B testing](http://varianceexplained.org/r/bayesian-ab-testing/).
-	- [How Not To Run an A/B Test](http://www.evanmiller.org/how-not-to-run-an-ab-test.html)
 	- [A/B Testing Rigorously (without losing your job)](http://elem.com/~btilly/ab-testing-multiple-looks/part1-rigorous.html)
+- COOL! [EvanMiller.org](https://www.evanmiller.org)
+	- [How Not To Run an A/B Test](http://www.evanmiller.org/how-not-to-run-an-ab-test.html)
+	- [Simple Sequential A/B Testing](https://www.evanmiller.org/sequential-ab-testing.html)
 - [The Errors of A/B Testing: Your Conclusions Can Make Things Worse](https://grasshopper.com/blog/the-errors-of-ab-testing-your-conclusions-can-make-things-worse/)
 - [A/B Testing Tech Note: determining sample size](https://signalvnoise.com/posts/3004-ab-testing-tech-note-determining-sample-size)
 - COOL! [bayesAB](https://frankportman.github.io/bayesAB/). Fast Bayesian Methods for AB Testing
@@ -3502,7 +3656,6 @@ Create data summaries for quality control, extensive reports for exploring data,
 
 
 # 22.01.2018
-- COOL! Дирк перешел в наступление: [#15: Tidyverse and data.table, sitting side by side ... (Part 1)](http://dirk.eddelbuettel.com/blog/2018/01/21/#015_tidyverse_and_datatable_part_1)
 - [fs 1.0.0 is now available on CRAN!](https://www.tidyverse.org/articles/2018/01/fs-1.0.0/) fs provides a cross-platform, uniform interface to file system operations. fs uses libuv under the hood, which gives a rock solid cross-platform interface to the filesystem.
 - COOL! [ggplot2 Time Series Heatmaps: revisited in the tidyverse](https://margintale.blogspot.ru/2018/01/ggplot2-time-series-heatmaps-revisited.html)
 - [Wrapping Access to Web-Services in R-functions](https://flovv.github.io/Accessing_a_web_api/)
@@ -4047,14 +4200,15 @@ There is also a performance difference. Xgboost used second derivatives to find 
 ## Data Validation
 - [checkmate: Fast and Versatile Argument Checks](https://cran.r-project.org/web/packages/checkmate/index.html). Tests and assertions to perform frequent argument checks. A substantial part of the package was written in C to minimize any worries about execution time overhead.
 - [checkmate: Fast Argument Checks for Defensive R Programming](https://arxiv.org/pdf/1701.04781)
-- [Easy data validation with the validate package](http://www.markvanderloo.eu/yaRb/2016/03/25/easy-data-validation-with-the-validate-package/)
-- [`ruler`: Rule Your Data](). `ruler` offers a set of tools for creating tidy data validation reports using dplyr grammar of data manipulation. It is structured to be flexible and extendable in terms of creating rules and using their output.
+- [`ruler`: Rule Your Data](https://cran.r-project.org/web/packages/ruler/index.html). `ruler` offers a set of tools for creating tidy data validation reports using dplyr grammar of data manipulation. It is structured to be flexible and extendable in terms of creating rules and using their output.
 	- [Combined outlier detection with dplyr and ruler](http://www.questionflow.org/2017/12/26/combined-outlier-detection-with-dplyr-and-ruler/)
 	- [Rule Your Data with Tidy Validation Reports. Design](http://www.questionflow.org/2017/11/28/rule-your-data-with-tidy-validation-reports-design/)
 	- [Usage of ruler package](http://www.questionflow.org/2017/12/05/usage-of-ruler-package/)
 - [data-cleaning/validate](https://github.com/data-cleaning/validate). Professional data validation for the R environment
-- Оно же: [validate: Data Validation Infrastructure](https://cran.r-project.org/web/packages/validate/index.html)
+	- [Easy data validation with the validate package](http://www.markvanderloo.eu/yaRb/2016/03/25/easy-data-validation-with-the-validate-package/)
+	- Оно же: [validate: Data Validation Infrastructure](https://cran.r-project.org/web/packages/validate/index.html)
 - [sfirke/janitor](https://github.com/sfirke/janitor). simple tools for data cleaning in R
+	- Оно же: [janitor: Simple Tools for Examining and Cleaning Dirty Data](https://cran.r-project.org/web/packages/janitor/index.html). The main janitor functions can: perfectly format data.frame column names; provide quick counts of variable combinations (i.e., frequency tables and crosstabs); and isolate duplicate records. Other janitor functions nicely format the tabulation results.
 
 
 ## R
@@ -4417,13 +4571,6 @@ __Luckily, shinyURL also has an inherent way of ignoring user selected inputs. H
 - [Hash Table Performance in R: Part II](http://jeffreyhorner.tumblr.com/post/116325104028/hash-table-performance-in-r-part-ii-in-part-i#_=_)
 - [Hash Table Performance in R: Part III](http://jeffreyhorner.tumblr.com/post/116690418898/hash-table-performance-in-r-part-iii-in-part#_=_)
 - [nathan-russell/hashmap](https://github.com/nathan-russell/hashmap). Faster hash maps in R
-
-## data.table
-- Hadley Wickham. [My take on dplyr vs data.table](https://twitter.com/hadleywickham/status/553169339751215104):
-	- [data.table vs dplyr: can one do something well the other can't or does poorly?](https://stackoverflow.com/questions/21435339/data-table-vs-dplyr-can-one-do-something-well-the-other-cant-or-does-poorly/27840349#27840349)
-- COOL! [Fast data lookups in R: dplyr vs data.table](http://appsilondatascience.com/blog/rstats/2017/03/02/r-fast-lookup.html)
-- [Rdatatable/data.table](https://github.com/Rdatatable/data.table/wiki). R's data.table package extends data.frame: http://r-datatable.com
-
 
 
 # 06.11.2017
