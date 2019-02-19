@@ -64,11 +64,14 @@ https://www.crowdgames.ru/page/plany-crowd-games
 
 
 # e-books
+- [Books related to R](https://www.r-project.org/doc/bib/R-books.html)
+
 - [R for Data Science](https://r4ds.had.co.nz) by Garrett Grolemund, Hadley Wickham
 - [R for Data Science: Exercise Solutions](https://jrnold.github.io/r4ds-exercise-solutions/) by Jeffrey B. Arnold
 - [Hands-On Programming with R](https://rstudio-education.github.io/hopr/) by Garrett Grolemund
 - [Advanced R](https://adv-r.hadley.nz/) by Hadley Wickham
 - [Handling Strings with R](http://www.gastonsanchez.com/r4strings/) by Gaston Sanchez
+- [R packages](http://r-pkgs.had.co.nz/)
 - [Классификация, регрессия и другие алгоритмы Data Mining с использованием R](https://ranalytics.github.io/data-mining/index.html) by Шитиков В. К., Мастицкий С. Э., 2017-04-07
 - [Functional programming and unit testing for data munging with R](https://b-rodrigues.github.io/fput/) by Bruno Rodrigues
 - [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas, Alison Presmanes Hill
@@ -76,8 +79,8 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/) by Yihui Xie, J. J. Allaire, Garrett Grolemund
 - [Efficient R programming](https://bookdown.org/csgillespie/efficientR/)
 - [Efficient R programming](https://csgillespie.github.io/efficientR/), Colin Gillespie, Robin Lovelace, 2017-04-10
-- [Data Science Live Book](https://livebook.datascienceheroes.com/)
-- [Mastering Software Development in R](https://bookdown.org/rdpeng/RProgDA/)
+- [Data Science Live Book](https://livebook.datascienceheroes.com/) by Pablo Casas
+- [Mastering Software Development in R](https://bookdown.org/rdpeng/RProgDA/) by Roger D. Peng, Sean Kross, and Brooke Anderson
 - [R Manuals as bookdown](http://colinfay.me/r-manuals/). You’ll find here a list of the R manuals converted to bookdown.
 - [Processing and Analyzing Financial Data with R](https://sites.google.com/view/pafdR/home)
 - [Data Visualization for Social Science. A practical introduction with R and ggplot2](http://socviz.co/)
@@ -101,7 +104,10 @@ https://www.crowdgames.ru/page/plany-crowd-games
 	- MS: [One Page R Data Science. Coding with Style](https://essentials.togaware.com/StyleO.pdf) by Graham.Williams@togaware.com, Visit https://essentials.togaware.com/onepagers for more Essentials.
 - [An Introduction to Statistical and Data Sciences via R](https://moderndive.com/) by Chester Ismay and Albert Y. Kim, July 21, 2018
 - [edav.info/](https://edav.info/index.html). This resource is specifically tailored to the GR5702 Exploratory Data Analysis and Visualization course offered at Columbia University. However, anyone interested in working with data in R will benefit from perusing these pages. Happy coding!
-- [Text Mining with R. A Tidy Approach](https://www.tidytextmining.com/) by Julia Silge and David Robinson, 2018-12-21
+- [Text Mining with R. A Tidy Approach](https://www.tidytextmining.com/) by Julia Silge and David Robinson
+- [HTTP mocking and testing in R](https://ropensci.github.io/http-testing-book/)
+- [The caret Package](http://topepo.github.io/caret/)
+
 
 # VPN
 - [ExpressVPN](https://www.expressvpn.com/ru/order)
@@ -209,7 +215,6 @@ Survival analysis is long-established within actuarial science but infrequently 
 
 
 # data.table
-## data.table
 - Hadley Wickham. [My take on dplyr vs data.table](https://twitter.com/hadleywickham/status/553169339751215104):
 	- [data.table vs dplyr: can one do something well the other can't or does poorly?](https://stackoverflow.com/questions/21435339/data-table-vs-dplyr-can-one-do-something-well-the-other-cant-or-does-poorly/27840349#27840349)
 - COOL! [Fast data lookups in R: dplyr vs data.table](http://appsilondatascience.com/blog/rstats/2017/03/02/r-fast-lookup.html)
@@ -250,6 +255,16 @@ Or with gunzip
 - [Data table fread with zip file in other directory with spaces in the name](https://stackoverflow.com/questions/50872108/data-table-fread-with-zip-file-in-other-directory-with-spaces-in-the-name)
 - [Convenience features of fread](https://github.com/Rdatatable/data.table/wiki/Convenience-features-of-fread)
 - COOL! Дирк перешел в наступление: [#15: Tidyverse and data.table, sitting side by side ... (Part 1)](http://dirk.eddelbuettel.com/blog/2018/01/21/#015_tidyverse_and_datatable_part_1)
+- [.EACHI in data.table?](https://stackoverflow.com/questions/27004002/eachi-in-data-table).
+	- Продолжение [How to count occurrences combinations in data.table in R](https://stackoverflow.com/questions/25869543/how-to-count-occurrences-combinations-in-data-table-in-r/25872206#25872206)
+- data.table joins:
+	- [nacnudus/data.table-joins.R](https://gist.github.com/nacnudus/ef3b22b79164bbf9c0ebafbf558f22a0) How to do joins with data.table
+	- [How to join (merge) data frames (inner, outer, left, right)?](https://jangorecki.github.io/blog/2015-12-11/Solve-common-R-problems-efficiently-with-data.table.html)
+	- [R Tutorial: Data.Table](https://www.dezyre.com/data-science-in-r-programming-tutorial/r-data-table-tutorial)
+	- [R – Data.Table Rolling Joins](https://gormanalysis.com/r-data-table-rolling-joins/)
+	- COOL! [Understanding data.table Rolling Joins](https://r-norberg.blogspot.com/2016/06/understanding-datatable-rolling-joins.html)
+- "Last Observation Carried Forward" = LOCF. "Next Observation Carried Backward" = NOCB.
+- [query_if: One-to-one interface for data.table '[' method](https://rdrr.io/cran/maditr/man/query_if.html) In maditr: Pipe-Style Interface for 'data.table'
 
  
 
@@ -470,7 +485,38 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 - [EXTRACTING COLOURS FROM YOUR IMAGES WITH IMAGE QUANTIZATION](https://chichacha.netlify.com/2019/01/19/extracting-colours-from-your-images-with-image-quantization/)
 - [Collection of most color palettes in a single R package](https://www.hvitfeldt.me/r/paletteer/)
 
-# 14.02.2109
+# 19.02.2019
+## R
+- COOL! [Database-like ops benchmark](https://h2oai.github.io/db-benchmark/)
+- [Совмещение R и Python: зачем, когда и как?](https://habr.com/ru/company/ods/blog/348260/)
+- Совмещение R и Python. Зачем, когда и как (2017). Ирина Голощапова
+[Руководитель направления "Макроэкономический анализ", X5 Retail Group](http://irinagoloshchapova.github.io/Progs/D2D_DevPRO2017_R_Py/#1)
+- [How many bootstraps can I perform on a sample of N elements?](https://www.researchgate.net/post/How_many_bootstraps_can_I_do_from_a_sample_of_N_elements)
+- COOL! [View entire data frame when wrapped in tbl_df?](https://stackoverflow.com/questions/23188900/view-entire-data-frame-when-wrapped-in-tbl-df). Возможные способы решения:
+```
+print(tbl_df(df), n=40)
+options(tibble.print_max = n, tibble.print_min = m): if there are more than n rows, print only the first m rows. Use options(tibble.print_max = Inf) to always show all rows.
+options(tibble.width = Inf) will always print all columns, regardless of the width of the screen.
+
+options(dplyr.print_max = 1e9)
+```
+- COOL! [datafsm: Estimating Finite State Machine Models from Data](https://cran.r-project.org/web/packages/datafsm/)
+Automatic generation of finite state machine models of dynamic decision-making that both have strong predictive power and are interpretable in human terms. We use an efficient model representation and a genetic algorithm-based estimation process to generate simple deterministic approximations that explain most of the structure of complex stochastic processes. We have applied the software to empirical data, and demonstrated it's ability to recover known data-generating processes by simulating data with agent-based models and correctly deriving the underlying decision models for multiple agent models and degrees of stochasticity.
+
+## R TidyEval
+- Возник вопрос: как из сконструированной строки получить выражение и выполнить его?
+	- [Non-standard evaluation, how tidy eval builds on base R](https://edwinth.github.io/blog/nse/)
+	- [Advanced R, 2-nd ed. 18 Expressions](https://adv-r.hadley.nz/expressions.html)
+	- [Advanced R. Expressions](http://adv-r.had.co.nz/Expressions.html)
+	- [rlang. Quotation](https://rlang.r-lib.org/reference/quotation.html)
+
+# 18.02.2019
+## R
+- [Take 4+: Presentations on ‘Elements of Neural Networks and Deep Learning’ – Parts 1-8](https://gigadom.in/2019/02/16/take-4-presentations-on-elements-of-neural-networks-and-deep-learning-parts-1-8/)
+- COOL! [Query Generation in R](http://www.win-vector.com/blog/2019/02/query-generation-in-r/)
+- [ryantimpe/LEGOMosaics](https://github.com/ryantimpe/LEGOMosaics). LEGO Mosaics from images using R and #tidyverse
+
+# 14.02.2019
 ## R
 - [Generate a set of random unique integers from an interval](https://stackoverflow.com/questions/17773080/generate-a-set-of-random-unique-integers-from-an-interval)
 - [Calculating the Inner Quartile Range in R](https://lagunita.stanford.edu/courses/course-v1:Medicine+IPE21CC+ongoing/wiki/HRP258/example-r-classwork-solutions-using-r/calculating-inner-quartile-range-r/)
@@ -624,7 +670,7 @@ First turn on displaying warnings using the command `options(warn=1)` Then, you 
 	- [Selecting content on a web page with CSS selectors](https://data-lessons.github.io/library-webscraping-DEPRECATED/02-csssel/)
 - [Web scraping using rvest, httr and Rselenium](https://github.com/yusuzech/r-web-scraping-cheat-sheet)
 - [Web Scraping in R: rvest Tutorial](https://www.datacamp.com/community/tutorials/r-web-scraping-rvest)
-- [A web scraper tutorial using R packages httr and  rvest](https://lmavila.github.io/markdown_files/PeruCurrencyScraper.html)
+- [A web scraper tutorial using R packages httr and rvest](https://lmavila.github.io/markdown_files/PeruCurrencyScraper.html)
 - [Webscraping in R](https://rpubs.com/ryanthomas/webscraping-with-rvest)
 - [XPath wildcards on node name](https://stackoverflow.com/questions/4203119/xpath-wildcards-on-node-name)
 - [XPath: using regex in contains function](https://stackoverflow.com/questions/21405267/xpath-using-regex-in-contains-function)
@@ -1063,7 +1109,7 @@ MRC-CSC/Shared-bioinformatics-training
 	- [Purrr workshop materials](https://github.com/cwickham/purrr-tutorial)
 - [reprex rstudio webinar](https://github.com/tidyverse/reprex/tree/master/slides/2018-09_reprex-rstudio-webinar)
 - [Get out of Excel free](https://github.com/rsheets/jailbreakr)
-- Похоже, что по материалам datacamp сделан неплохой справочник [ugo_r_doc](https://ugoproto.github.io/ugo_r_doc/Data_Analysis_in_R,_the_data.table_Way/#mixing-it-together-lapply-sd-sdcols-and-n)
+- Похоже, что по материалам DataCamp сделан неплохой справочник [ugo_r_doc](https://ugoproto.github.io/ugo_r_doc/Data_Analysis_in_R,_the_data.table_Way/#mixing-it-together-lapply-sd-sdcols-and-n)
 - Работа со строками
 	- похоже, что сделан по мотивам datacamp курса Шарлотты [String Manipulation in R with stringr](https://rpubs.com/iPhuoc/stringr_manipulation) by Khac Phuoc Le
 	- [Text Processing Presentation](https://robchavez.github.io/datascience_gallery/html_only/text_processing.html) by Stephanie Gluck & Pooya Razavi
