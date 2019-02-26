@@ -186,6 +186,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 	- COOL! Разбирают срок жизни жестких дисков. [Survival Analysis part 4: Cox PH modelling](http://blog.applied.ai/survival-analysis-part-4/)
 
 # Tidyeval, NSE, Non-Standard Evaluation
+- [Tidy evaluation](https://tidyeval.tidyverse.org/) by Lionel Henry, Hadley Wickham
 - [Tidy evaluation, most common actions](https://edwinth.github.io/blog/dplyr-recipes/)
 - [Non-standard evaluation, how tidy eval builds on base R](https://edwinth.github.io/blog/nse/)
 - [Programming with dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/programming.html)
@@ -212,6 +213,9 @@ Survival analysis is long-established within actuarial science but infrequently 
 - [Non-standard evaluation](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
 - COOL! [Mara's tidyeval resource roundup](https://maraaverick.rbind.io/2017/08/tidyeval-resource-roundup/)
 - [Quasiquotation in R via bquote()](http://www.win-vector.com/blog/2018/10/quasiquotation-in-r-via-bquote/)
+- [WHAT IS TIDY EVAL AND WHY SHOULD I CARE?](https://www.mango-solutions.com/blog/what-is-tidy-eval-and-why-should-i-care). [Original post](https://thisisnic.github.io/2018/03/29/what-is-tidy-eval-and-why-should-i-care/)
+	- [Exploring Tidy Eval at a Snail's Pace](https://thisisnic.github.io/2018/02/20/exploring-tidy-eval-snails-pace/)
+	- [Using Tidy Eval with dplyr::filter](https://thisisnic.github.io/2018/03/27/using-tidy-eval-with-dplyr-filter/)
 
 
 # data.table
@@ -485,6 +489,82 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 - [EXTRACTING COLOURS FROM YOUR IMAGES WITH IMAGE QUANTIZATION](https://chichacha.netlify.com/2019/01/19/extracting-colours-from-your-images-with-image-quantization/)
 - [Collection of most color palettes in a single R package](https://www.hvitfeldt.me/r/paletteer/)
 
+# 22.02.2019
+## R
+- COOL! [WRS2: A Collection of Robust Statistical Methods](https://cran.r-project.org/web/packages/WRS2/index.html)
+A collection of robust statistical methods based on Wilcox' WRS functions. It implements robust t-tests (independent and dependent samples), robust ANOVA (including between-within subject designs), quantile ANOVA, robust correlation, robust mediation, and nonparametric ANCOVA models based on robust location measures.
+- [Playing With Pipe Notations](http://www.win-vector.com/blog/2019/02/naming-pipes/)
+- [A Few New R Books](https://rviews.rstudio.com/2019/02/20/a-few-new-books/), 2019-02-20 by Greg Wilson
+- [I Just Wanted The Data : Turning Tableau & Tidyverse Tears Into Smiles with Base R (An Encoding Detective Story)](https://rud.is/b/2019/02/20/i-just-wanted-the-data-turning-tableau-tidyverse-tears-into-smiles-with-base-r-an-encoding-detective-story/)
+- [Getting Started With rquery](http://www.win-vector.com/blog/2019/02/getting-started-with-rquery/)
+- [Setting Up Raspberry Pi Temperature/Humidity Sensors for Data Analysis in R](https://roh.engineering/post/setting-up-raspberry-pi-temperature-humidity-sensors-for-data-analysis-in-r/)
+- COOL! [Encryptr package: easily encrypt and decrypt columns of sensitive data](https://www.datasurg.net/2019/02/21/encryptr-package-easily-encrypt-and-decrypt-columns-of-sensitive-data/)
+
+## Statistics
+- [Introduction to the New Statistics. The online community and blog for ITNS](https://thenewstatistics.com/itns/esci/)
+
+# 25.02.2019
+## R
+- Можно ли посадить Shiny приложение на локальные шрифты?
+	- [RC font not rendering in shiny #19 {Open}](https://github.com/hrbrmstr/hrbrthemes/issues/19)
+	- COOL! [Webfonts in ggplot2](https://jackolney.github.io/blog/post/2016-08-15-ggplot2-font/), AUGUST 15, 2016. R GGPLOT2 TRUETYPE WEBFONTS SHOWTEXT]
+	- COOL! [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts). A Hassle-Free Way to Self-Host Google Fonts
+- [forcats::fct_match](https://jcarroll.com.au/2019/02/22/forcatsfct_match/)
+- [R Journal Volume 10/2, December 2018](https://journal.r-project.org/archive/2018-2/)
+- [Gartner’s 2019 Take on Data Science Software](http://r4stats.com/2019/02/25/gartner-2019-take-on-data-science-software/)
+- COOL! [THE SECRET LIVES OF R OBJECTS. Should We Care About R Object Internals?](https://www.brodieg.com/2019/02/18/an-unofficial-reference-for-internal-inspect/)
+
+
+# 21.02.2019
+## R
+- [bergant/datamodelr](https://github.com/bergant/datamodelr). Data model diagrams in R
+- [BurntSushi/erd](https://github.com/BurntSushi/erd). Translates a plain text description of a relational database schema to a graphical entity-relationship diagram.
+- `na.omit()` оказался не таким уж простым. Есть еще глобальная опция `na.actions`, определяющая поведение различных вычислительных функций. `lm()` like many other high level functions has an `na.action` option that indicates what to do when the data contain `NA`s. The default is set by the `na.action` setting of options (initially `na.omit`). См. командой `getOption("na.action")`. [HOW DOES R HANDLE MISSING VALUES? | R FAQ](https://stats.idre.ucla.edu/r/faq/how-does-r-handle-missing-values/)
+
+# 20.02.2019
+## R
+- [To understand recursion you have to understand recursion…](http://blog.ephorie.de/to-understand-recursion-you-have-to-understand-recursion)
+- COOL! [Animate intermediate results of your algorithm](https://smorbieu.gitlab.io/animate-intermediate-results-of-your-algorithm/). Анимация работы алгоритма `kmeans`
+- [Installing R using Powershell](https://tomaztsql.wordpress.com/2019/02/18/installing-r-using-powershell/)
+- [Developing R Packages with usethis and GitLab CI: Part I](https://blog.methodsconsultants.com/posts/developing-r-packages-using-gitlab-ci-part-i/)
+- [Developing R Packages with usethis and GitLab CI: Part II](https://blog.methodsconsultants.com/posts/developing-r-packages-with-usethis-and-gitlab-ci-part-ii/)
+- [Developing R Packages with usethis and GitLab CI: Part III](https://blog.methodsconsultants.com/posts/developing-r-packages-with-usethis-and-gitlab-ci-part-iii/)
+- [Verbose data.table and uncovering hidden cedta's data table awareness decisions](https://jozefhajnala.gitlab.io/r/r911-datatable-cedta/)
+- COOL! [remotes](https://remotes.r-lib.org/). Install R Packages from GitHub, BitBucket, or other local or remote repositories
+- R Functions: ["Calling functions. When calling a function you can specify arguments by position, by complete name, or by partial name. Arguments are matched first by exact name (perfect matching), then by prefix matching, and finally by position."](http://adv-r.had.co.nz/Functions.html#function-arguments)
+Также: [6.8.2 Prefix form](https://adv-r.hadley.nz/functions.html#prefix-form)
+```
+The prefix form is the most common form in R code, and indeed in the majority of programming languages. Prefix calls in R are a little special because you can specify arguments in three ways:
+
+By position, like help(mean).
+Using partial matching, like help(top = mean).
+By name, like help(topic = mean).
+As illustrated by the following chunk, arguments are matched by exact name, then with unique prefixes, and finally by position.
+```
+- [tidyverts/feasts](https://github.com/tidyverts/feasts). Feature Extraction And Statistics for Time Series
+
+## R для Альки
+- [CRAN Task View: Numerical Mathematics](https://cran.r-project.org/web/views/NumericalMathematics.html)
+- Работа с числами:
+	- разложение на множители = factorization
+	- корни многочлена = polynomial roots
+	- [numbers: Number-Theoretic Functions](https://cran.r-project.org/web/packages/numbers/)
+Provides number-theoretic functions for factorization, prime numbers, twin primes, primitive roots, modular logarithm and inverses, extended GCD, Farey series and continuous fractions. Includes Legendre and Jacobi symbols, some divisor functions, Euler's Phi function, etc.
+	- [factorization](https://www.rdocumentation.org/packages/gmp/versions/0.5-13.2/topics/factorization) From gmp v0.5-13.2. Factorize A Number. Give all primes numbers to factor the number
+	- [FINDING MULTIPLE ROOTS OF UNIVARIATE FUNCTIONS IN R](https://joftius.wordpress.com/2015/10/19/finding-multiple-roots-of-univariate-functions-in-r/)
+	- [polynom](https://cran.r-project.org/web/packages/polynom/): A Collection of Functions to Implement a Class for Univariate Polynomial Manipulations
+	- [rootSolve: Nonlinear Root Finding, Equilibrium and Steady-State Analysis of Ordinary Differential Equations](https://cran.r-project.org/web/packages/rootSolve/)
+- Symbolic computation
+	- [symengine/symengine](https://github.com/symengine/symengine) SymEngine is a fast symbolic manipulation library, written in C++ http://sympy.org
+	- [Marlin-Na/symengine.R](https://github.com/marlin-na/symengine.R). A R interface to the symbolic manipulation library SymEngine.
+	- [Ryacas: R Interface to the Yacas Computer Algebra System](https://cran.r-project.org/web/packages/Ryacas/index.html). An interface to the yacas computer algebra system.
+	- [Using Complex Numbers in R](http://www.johnmyleswhite.com/notebook/2009/12/18/using-complex-numbers-in-r/) by By John Myles White on 12.18.2009
+
+
+
+## DS
+- COOL! Отличный ноутбук по теорверу: [Probability Theory (For Scientists and Engineers)](https://betanalpha.github.io/assets/case_studies/probability_theory.html) by Michael Betancourt, October 2018
+
 # 19.02.2019
 ## R
 - COOL! [Database-like ops benchmark](https://h2oai.github.io/db-benchmark/)
@@ -494,11 +574,19 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 - [How many bootstraps can I perform on a sample of N elements?](https://www.researchgate.net/post/How_many_bootstraps_can_I_do_from_a_sample_of_N_elements)
 - COOL! [View entire data frame when wrapped in tbl_df?](https://stackoverflow.com/questions/23188900/view-entire-data-frame-when-wrapped-in-tbl-df). Возможные способы решения:
 ```
-print(tbl_df(df), n=40)
+print(tbl_df(df), n = 40)
 options(tibble.print_max = n, tibble.print_min = m): if there are more than n rows, print only the first m rows. Use options(tibble.print_max = Inf) to always show all rows.
 options(tibble.width = Inf) will always print all columns, regardless of the width of the screen.
 
 options(dplyr.print_max = 1e9)
+```
+- [R markdown df_print options](https://stackoverflow.com/questions/40893742/r-markdown-df-print-options)
+```{r chunk1, rows.print=15}
+knitr::opts_chunk$set(echo = TRUE, rows.print=25)
+cars #15 rows printed
+```
+```{r chunk2}
+cars #25 rows printed
 ```
 - COOL! [datafsm: Estimating Finite State Machine Models from Data](https://cran.r-project.org/web/packages/datafsm/)
 Automatic generation of finite state machine models of dynamic decision-making that both have strong predictive power and are interpretable in human terms. We use an efficient model representation and a genetic algorithm-based estimation process to generate simple deterministic approximations that explain most of the structure of complex stochastic processes. We have applied the software to empirical data, and demonstrated it's ability to recover known data-generating processes by simulating data with agent-based models and correctly deriving the underlying decision models for multiple agent models and degrees of stochasticity.
@@ -1464,7 +1552,7 @@ Provides an interface to the C code for Latent Dirichlet Allocation (LDA) models
 - [Ещё раз про оценку научных данных и, наконец, про p-value](http://jescid.livejournal.com/481888.html)
 - COOL [Scientific method: Statistical errors](http://www.nature.com/news/scientific-method-statistical-errors-1.14700). P values, the 'gold standard' of statistical validity, are not as reliable as many scientists assume.
 - COOL! Statistics for Hackers
-	- [Jake Vanderplas - Statistics for Hackers - PyCon 2016](https://www.youtube.com/watch?v=Iq9DzN6mvYA&t=4s)
+	- [Jake Vanderplas - Statistics for Hackers - PyCon 2016](https://www.youtube.com/watch?v=Iq9DzN6mvYA&t=4s). [Презентация "Statistics for Hackers"](https://speakerdeck.com/jakevdp/statistics-for-hackers)
 	- [Statistics for Hackers](http://christopherroach.com/articles/statistics-for-hackers/)
 	- [Jake VanderPlas](http://vanderplas.com/)
 	- [“Resampling: The New Statistics”](http://onlinebooks.library.upenn.edu/webbin/book/lookupid?key=olbp28567) by Julian L. Simon, Second Edition published October 1997
@@ -1926,6 +2014,7 @@ This site is intended to be a resource for digital analysts who are interested i
 - [Synchronization for R with the flock Package](http://www.quintuitive.com/2014/11/20/synchronization-for-r-with-the-flock-package/)
 
 ## LaTeX
+- COOL! [Differences between LuaTeX, ConTeXt and XeTeX](https://tex.stackexchange.com/questions/36/differences-between-luatex-context-and-xetex)
 - [Поддержка \No убрана из babel](https://www.linux.org.ru/forum/general/9583562). 
 Вообще да, можно вставить `\newcommand{\No}{\textnumero}` в преамбулу документа и все будет работать.
 - [The Russian Language in the babel system , Igor A. Kotelnikov](http://ctan.math.illinois.edu/languages/babel/contrib/russian/russianb.pdf).  ... Since earlier versions babel did not support XeLATEX (at least for some languages including Russian), the polyglossia package was generally recommended in the past for use with XeLATEX as a replacement for babel. Nowadays, babel can be used with any engines, including LATEX, PDFLATEX, LuaLATEX, and XeLATEX. Nevertheless some troubles may occur with some languages which have no promptly updated .ldf files.

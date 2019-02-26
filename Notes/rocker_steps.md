@@ -119,3 +119,78 @@ WORKDIR /srv/shiny
 
 CMD ["Rscript", "-e", "shiny::runApp('/srv/shiny')"]
 ```
+
+# Запуск ShinyProxy
+
+Основаня инструкций по SP: https://www.shinyproxy.io/getting-started/	
+## Предварительная подготовка на CentOS
+- Посмотрели на статус существующего docker: `sudo service docker status`
+- Прописали его как сервис
+[Start a docker container on CentOS at boot time as a linux service](https://esalagea.wordpress.com/2016/01/21/start-a-docker-container-on-centos-at-boot-time-as-a-linux-service/)
+- Читаем статью [Using systemd to control the Docker daemon](https://success.docker.com/article/using-systemd-to-control-the-docker-daemon)
+- Создали руками директорию `/etc/systemd/system/docker.service.d/` и в ней файл `/etc/systemd/system/docker.service.d/override.conf`
+Файл пришлось руками подправлять, чтобы можно было подключаться к докеру без указания порта
+```
+[Service]
+ExecStart=
+ExecStart=/usr/bin/dockerd -D -H tcp://127.0.0.1:2375 -H unix:///var/run/docker.sock
+```
+
+- Чистим docker от прошлых образов: [Docker: Remove all images and containers](https://techoverflow.net/2013/10/22/docker-remove-all-images-and-containers/)
+```
+#!/bin/bash
+# Delete all containers
+docker rm $(docker ps -a -q)
+# Delete all images
+docker rmi $(docker images -q)
+```
+При запуске возникла ошибка:
+```
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+```
+## Как понять, какие порты заняты какими процессами
+- [3 Ways to Find Out Which Process Listening on a Particular Port](https://www.tecmint.com/find-out-which-process-listening-on-a-particular-port/)
+- [Linux Find Out Which Process Is Listening Upon a Port](https://www.cyberciti.biz/faq/what-process-has-open-linux-port/)
+```
+netstat -tulpn
+```
+
+
+- Имя и пароль по умолчанию берем с репозитория shinyproxy: [openanalytics/shinyproxy](https://github.com/openanalytics/shinyproxy). ShinyProxy - Open Source Enterprise Deployment for Shiny https://www.shinyproxy.io
+Running the application
+java -jar shinyproxy-2.0.3.jar 
+Navigate to http://localhost:8080 to access the application. If the default configuration is used, authentication will be done against the LDAP server at ldap.forumsys.com; to log in one can use the user name "tesla" and password "password".
+
+
+## Запуск на чистой Ubuntu 18.x
+- Проверяем наличие java 8 командой `java -version`
+Если нет, ставим командой `sudo apt install openjdk-8-jre-headless`
+
+- Проверяем наличие docker командой `sudo service docker status`
+Если нет, ставим по инструкции [Get Docker CE for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
+После установки проверяем работоспособность докера с помощью тестового образа: `sudo docker run hello-world`.
+И опять проверяем статус сервиса командой `sudo service docker status`
+
+- Добавляем кастомный порт. 
+Создаем руками директорию `/etc/systemd/system/docker.service.d/` и в ней файл `/etc/systemd/system/docker.service.d/override.conf`
+Файл пришлось руками подправлять, чтобы можно было подключаться к докеру без указания порта
+```
+[Service]
+ExecStart=
+ExecStart=/usr/bin/dockerd -D -H tcp://127.0.0.1:2375 -H unix:///var/run/docker.sock
+```
+- Загружаем .jar и запускаем ShinyProxy ручном режиме.
+[Страничка загрузки](https://www.shinyproxy.io/downloads/). Скачиваем в домашнюю директорию и запускаем.
+
+- Загружаем demo docker для ShinyProxy
+Добавляем image командой `sudo docker pull openanalytics/shinyproxy-demo`
+
+# Запускаем констуктор в контейнере
+1. Исходники живут за пределом контейнера. Создали ~/R/ на машине с shinyproxy
+2. Стянули ветку huawei командой `git clone -b huawei --single-branch https://gitlab.com/TV-stat/mts-tv-stat.reports.git`

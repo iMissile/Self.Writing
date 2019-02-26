@@ -44,6 +44,11 @@ http://www.worldtimebuddy.com/
 1. [Writebox](https://write-box.appspot.com)
 
 ## Offline Editors
+### 2019
+- [What are the best Markdown editors for Windows?](https://www.slant.co/topics/1852/~best-markdown-editors-for-windows)
+- [Typora](https://typora.io/)
+
+### До 2019
 1. [SmartDown](aflava.com)
 1. [Brackets](http://brackets.io/) by Adobe. A modern, open source text editor that understands web design
 	1. [10 Awesome Brackets Extensions You Really Need](http://beebom.com/2015/03/brackets-extensions-you-really-need)
