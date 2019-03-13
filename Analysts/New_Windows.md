@@ -161,6 +161,9 @@ http://answers.microsoft.com/en-us/windows/forum/windows_10-security/event-id-10
 	- ConEmu
 	- PowerShell ISE
 - [Windows Command Line Tools For Developers. Tabbed Console starts here](https://blogs.msdn.microsoft.com/commandline/2018/04/13/tabbed-console-starts-here/)
+- [Direct Folders — экономим клики при работе с файлами в Windows](https://lifehacker.ru/direct-folders-ekonomim-kliki-pri-rabote-s-fajlami-v-windows/)
+- [Listary](https://www.listary.com/) is a revolutionary search utility for Windows that makes finding your files and launching applications blazing fast, for casual and power users alike!
+- [Clover 3](http://en.ejie.me/). Wings for your Windows Explorer! Clover is an extension of the Windows Explorer, to add multi-tab functionality similar to Google Chrome browser. After install Clover, you will be able to open multiple folders within the same window, and you can also add folder bookmarks.
 
 ## Tips
 - [Как создать локальную учетную запись в Windows 10](http://windowstips.ru/notes/18570)

@@ -226,6 +226,42 @@ sudo apt install r-base
 `sudo --preserve-env=PATH -i`
 
 ### Ставим R пакеты
+- Возникла проблемка в RStudio Server, выдаевт в ноутбук ошибку "" . 
+Должно лечиться установкой библиотеки libpango (для генерации png)
+`sudo apt-get install libpango1.0-dev`. 
+	- Детали [здесь](https://support.rstudio.com/hc/en-us/community/posts/200642948-RStudio-Server-unable-to-open-connection-to-X11-display).
+	- Еще есть похожая статья [Shiny-server on ubuntu 16 error: "unable to open connection to X11 display ''](https://community.rstudio.com/t/shiny-server-on-ubuntu-16-error-unable-to-open-connection-to-x11-display/11722). Can you execute `capabilities()` in the version of R that you are using on the server, and share the output? I am curious if you have the system dependencies required to support generating PNG graphics.
+Это все не очень помогло, поэтому поставил подсистему X11 командой `sudo apt install xorg`. Детали в обсуждении [Installing X11 on Ubuntu 18.04](https://askubuntu.com/questions/1071996/installing-x11-on-ubuntu-18-04/1072003)
+И опять не помогло, читаем дальше [R unable to start device PNG - capabilities() has TRUE for PNG?](https://stackoverflow.com/questions/24999983/r-unable-to-start-device-png-capabilities-has-true-for-png). Рекомендуют ставить `xvfb` (Virtual Framebuffer 'fake' X server):
+`sudo apt-get install xvfb`
+	- Еще одно решение: [How to run R scripts on servers without X11](https://stackoverflow.com/questions/13067751/how-to-run-r-scripts-on-servers-without-x11)
+	- [How to run R on a server without X11, and avoid broken dependencies](https://stackoverflow.com/questions/1710853/how-to-run-r-on-a-server-without-x11-and-avoid-broken-dependencies)
+Все равно не работает, получаем ошибку в summarytools::dfSummary
+```
+> v_df %>% select(reg_date) %>%
++     summarytools::dfSummary(dfSummary.graph.col = FALSE)
+Data Frame Summary  
+v_df  
+Dimensions: 1227713 x 1  
+Duplicates: 1226961  
+
+------------------------------------------------------------------------------------------------------------
+No   Variable    Stats / Values      Freqs (% of Valid)    Graph                        Valid      Missing  
+---- ----------- ------------------- --------------------- ---------------------------- ---------- ---------
+1    reg_date    min : 2016-09-10    752 distinct values             :                  1227713    0        
+     [Date]      med : 2017-11-02                                    :                  (100%)     (0%)     
+                 max : 2018-10-01                                  : :                                      
+                 range : 2y 0m 21d                               . : : . . : :                              
+                                                               . : : : : : : :                              
+------------------------------------------------------------------------------------------------------------
+Warning message:
+In png(png_loc <- tempfile(fileext = ".png"), width = 150 * graph.magnif,  :
+  unable to open connection to X11 display ''
+```
+Пробуем по советам из [Shiny-server on ubuntu 16 error: "unable to open connection to X11 display ''](https://stackoverflow.com/questions/51576691/shiny-server-on-ubuntu-16-error-unable-to-open-connection-to-x11-display) поставить
+`sudo apt-get install -y qpdf libx11-dev libpng-dev libjpeg62`
+
+
 - [GNU Operating System. Findutils](https://www.gnu.org/software/findutils/)
 - Для `jqr` надо ставить либы...
 ```

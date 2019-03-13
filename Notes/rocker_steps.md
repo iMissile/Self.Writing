@@ -22,6 +22,7 @@ login/password: root/ilya-lab
 - Смотрим, какие у нас есть локальные images: `docker images <r-base>`
 
 - r-base можно прямо запустить из контейнера командой `docker run --rm -ti r-base`. Детали по запуску контейнера можно прочитать [здесь](https://hub.docker.com/r/_/r-base/)
+- Заходим внутрь контейнера: [Run bash or any command in a Docker container](https://medium.com/the-code-review/run-bash-or-any-command-in-a-docker-container-9a1e7f0ec204): `docker exec -i -t container_name /bin/bash`. В нашем случае `docker run -i -t r-base /bin/bash`
 - запускаем контейнер tidyverse: 
 	- [rocker/tidyverse](https://hub.docker.com/r/rocker/tidyverse/). Version-stable build of R, rstudio, and R packages
 	- Детали по запуску смотрим здесь: [Using the RStudio image](https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image)
@@ -40,6 +41,10 @@ login/password: root/ilya-lab
 либо так: `docker images -q -f dangling=true | xargs --no-run-if-empty docker rmi`, взято [отсюда](https://gist.github.com/ngpestelos/4fc2e31e19f86b9cf10b)
 - [VOLUME секция](https://docs.docker.com/v17.09/engine/reference/builder/#volume)
 - не забываем, что в ...
+
+## Мапируем директори контейнера на хостовые
+- [How To Share Data Between the Docker Container and the Host](https://www.digitalocean.com/community/tutorials/how-to-share-data-between-the-docker-container-and-the-host)
+- [Use volumes](https://docs.docker.com/storage/volumes/)
 
 ## Запускаем Shiny App
 - докер, собранный в варианте локального shiny app, для использования его в shinyproxy запускаем командой: `docker run --rm -p 3838:3838 -ti squid_r`
@@ -193,4 +198,109 @@ ExecStart=/usr/bin/dockerd -D -H tcp://127.0.0.1:2375 -H unix:///var/run/docker.
 
 # Запускаем констуктор в контейнере
 1. Исходники живут за пределом контейнера. Создали ~/R/ на машине с shinyproxy
-2. Стянули ветку huawei командой `git clone -b huawei --single-branch https://gitlab.com/TV-stat/mts-tv-stat.reports.git`
+2. Стянули внутри R ветку huawei командой `git clone -b huawei --single-branch https://gitlab.com/TV-stat/mts-tv-stat.reports.git`
+3. Собираем образ R-Shiny на базе которого будет работать приложение. [Документация по docker](https://docs.docker.com/)
+4. Проверяем, что R из контейнеров запускается:
+  - базовый: `sudo docker run --rm -ti r-base`
+  - собранный: `sudo docker run --rm -ti r-shiny`
+5. Зайдем внутрь собранного докера приложения и проверим наличие директорий (Запускаем из под рута! shinyproxy запускает контейнеры от него): `sudo docker run --rm -v ~/R/mts-tv-stat.reports:/root/R -ti mts-r /bin/bash`
+6. Определим переменную R_CONFIG_ACTIVE в файле `.Renvir` в директории проекта
+7. Вручную из контейнера прогоняем генерацию динамических словарей: 
+```
+cd ~/R/constructor/
+Rscript dict_updater.R
+```
+
+## Подключаем Shinуproxy к нашему LDAP
+- [What are CN, OU, DC in an LDAP search?](https://stackoverflow.com/questions/18756688/what-are-cn-ou-dc-in-an-ldap-search)
+- Пытаемся затянуть пользователей MS AD:
+	- [Shiny Proxy - Active Directory auth problem](https://support.openanalytics.eu/t/shiny-proxy-active-directory-auth-problem/499)
+	- [My Microsoft Active Directory LDAP Experience](https://support.openanalytics.eu/t/my-microsoft-active-directory-ldap-experience/488)
+	- Нюансы по поиску по имени: [Integration with MS Active Directory](https://support.openanalytics.eu/t/integration-with-ms-active-directory/41)
+- [Microsoft Active Directory Topology Diagrammer](https://www.microsoft.com/en-us/download/details.aspx?id=13380)
+
+С определенными огрехами удалось подключить:
+1. Создал в AD `OU = Groups`.
+2. Создал две локальные секьюрные группы и перенес их в эту папку
+3. Настроил доступаы к различным приложениям в соотв. со следующей конфигурацией `application.yml` (Почему авторизация идет по Alex, ума не приложу, эксперименты показывают, что может использоваться частичное совпадение при поиске по полю Name, а не account).
+Отчасти соображения иожно найти здесь: [Authenticating against Active Directory without bind authentication support #7 {Closed}](https://github.com/openanalytics/shinyproxy/issues/7)
+```
+Indeed, ShinyProxy uses `BindAuthenticator` rather than `PasswordComparisonAuthenticator` for LDAP auth. That being said, I think your use case (users are defined on many locations in the tree) is supported. The relevant settings are `user-dn-pattern` and `user-search-filter`.
+
+* `user-dn-pattern`: is used to bind with a DN directly. No search is involved, so the manager account is not used here. However, since only one pattern is defined, this will not work for users that are in different OUs in the tree.
+* `user-search-filter`: is used to search for DNs, and then bind with them. To perform the search, the manager account is used. This should support your use case.
+
+Note that if you specify both settings, the DN pattern is tried first, and then the search.```
+
+Мой `application.yml`:
+```
+proxy:
+  title: Open Analytics Shiny Proxy
+  logo-url: http://www.openanalytics.eu/sites/www.openanalytics.eu/themes/oa/logo.png
+  landing-page: /
+  heartbeat-rate: 10000
+  heartbeat-timeout: 60000
+  port: 8080
+  authentication: ldap
+  admin-groups: Shiny_MT
+  # Example: 'simple' authentication configuration
+  users:
+  - name: jack
+    password: password
+    groups: scientists
+  - name: jeff
+    password: password
+    groups: mathematicians
+  # Example: 'ldap' authentication configuration
+  #ldap:
+  #  url: ldap://ldap.forumsys.com:389/dc=example,dc=com
+  #  user-dn-pattern: uid={0}
+  #  group-search-base:
+  #  group-search-filter: (uniqueMember={0})
+  #  manager-dn: cn=read-only-admin,dc=example,dc=com
+  #  manager-password: password
+  ldap:
+     url: ldap://10.0.0.228:389/dc=ad,dc=domain,dc=ru
+     # group-search-base: ou=MTSUsers
+     group-search-base: ou=Groups
+     group-search-filter: (member={0})
+     use-search-base:
+     # user-search-filter: (sAMAccountName={0})
+     user-search-filter: (sAMAccountName={0})
+     # user-dn-pattern: uid={0},cn=MTSUsers
+     manager-dn: cn=Alex,cn=Users,dc=ad,dc=domain,dc=ru
+     manager-password: qaz_wsx_123
+  # Docker configuration
+  docker:
+    cert-path: /home/none
+    url: http://localhost:2375
+    port-range-start: 20000
+  specs:
+  - id: 01_constructor
+    display-name: Multi-user constructor
+    description: Application which demonstrates the basics of a Shiny app
+    container-cmd: ["R", "-e", "shiny::runApp('/root/R/constructor')"]
+    container-volumes: ["/root/R/mts-tv-stat.reports:/root/R"]
+    container-env:
+        R_CONFIG_ACTIVE: docker-lab-ext
+    container-image: mts-r
+    access-groups: [scientists, mathematicians]
+  - id: 06_constructor
+    container-cmd: ["R", "-e", "shiny::runApp('/root/R/constructor')"]
+    container-volumes: ["/root/R/mts-tv-stat.reports:/root/R"]
+    container-env:
+        R_CONFIG_ACTIVE: docker-lab-ext
+    container-image: mts-r
+    access-groups: scientists
+  - id: ldap_constructor
+    container-cmd: ["R", "-e", "shiny::runApp('/root/R/constructor')"]
+    container-volumes: ["/root/R/mts-tv-stat.reports:/root/R"]
+    container-env:
+        R_CONFIG_ACTIVE: docker-lab-ext
+    container-image: mts-r
+    access-groups: Shiny_DVT
+
+logging:
+  file:
+    shinyproxy.log
+```

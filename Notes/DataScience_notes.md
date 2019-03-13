@@ -269,6 +269,9 @@ Or with gunzip
 	- COOL! [Understanding data.table Rolling Joins](https://r-norberg.blogspot.com/2016/06/understanding-datatable-rolling-joins.html)
 - "Last Observation Carried Forward" = LOCF. "Next Observation Carried Backward" = NOCB.
 - [query_if: One-to-one interface for data.table '[' method](https://rdrr.io/cran/maditr/man/query_if.html) In maditr: Pipe-Style Interface for 'data.table'
+- [JOINing data in R using data.table](https://rstudio-pubs-static.s3.amazonaws.com/52230_5ae0d25125b544caab32f75f0360e775.html).  Ronald Stalder, 23-12-2014
+- С различными бенчмарками! [omitting NA values with data.table](omitting NA values with data.table)
+- COOL! [What is the purpose of setting a key in data.table?](https://stackoverflow.com/questions/20039335/what-is-the-purpose-of-setting-a-key-in-data-table)
 
  
 
@@ -489,7 +492,88 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 - [EXTRACTING COLOURS FROM YOUR IMAGES WITH IMAGE QUANTIZATION](https://chichacha.netlify.com/2019/01/19/extracting-colours-from-your-images-with-image-quantization/)
 - [Collection of most color palettes in a single R package](https://www.hvitfeldt.me/r/paletteer/)
 
-# 22.02.2019
+# 13.03.2019
+## R
+- COOL! [Compare data.table pipes and magrittr pipes](https://www.gl-li.com/2017/07/25/compare-data.table-pipes-and-magrittr-pipes/)
+- [How to build a pipeline from data.table to magrittr and back to data.table](https://stackoverflow.com/questions/28920623/how-to-build-a-pipeline-from-data-table-to-magrittr-and-back-to-data-table)
+- Learning. [DATA MANIPULATION IN R. HOMEDATA MANIPULATION IN RIDENTIFY AND REMOVE DUPLICATE DATA IN R](https://www.datanovia.com/en/lessons/identify-and-remove-duplicate-data-in-r/)
+
+# 12.03.2109
+## R
+- [reciproceed : recipe, proceed, reciprocally](https://guillaumepressiat.github.io//blog/2019/03/reciproceed)
+- [Statistics Sunday: Scatterplots and Correlations with ggpairs](http://www.deeplytrivial.com/2019/03/statistics-sunday-scatterplots-and.html)
+- Shuffle. [shuffle. From permute v0.9-4](https://www.rdocumentation.org/packages/permute/versions/0.9-4/topics/shuffle) by Gavin Simpson. Unrestricted and restricted permutation designs for time series, line transects, spatial grids and blocking factors.
+- [How to randomize a vector](https://stackoverflow.com/questions/13765972/how-to-randomize-a-vector)
+
+# 11.03.2019
+## R
+- [Wrangling Content Security Policies in R](https://rud.is/b/2019/03/10/wrangling-content-security-policies-in-r/)
+- [RInside](http://dirk.eddelbuettel.com/code/rinside.html). The RInside package provides C++ classes that make it easier to embed R in C++ code -- on either Linux, OS X or Windows. Embedding R is described first and foremost in the 'Writing R Extensions' manual in the core R sources.
+	- [RInside 0.2.15](http://dirk.eddelbuettel.com/blog/2019/03/06/#rinside_0.2.15)
+- COOL! [skimr: how to remove histogram?](https://stackoverflow.com/questions/51340323/skimr-how-to-remove-histogram).
+- [Usage of configr](https://cran.r-project.org/web/packages/configr/vignettes/configr.html)
+- [How can I instruct yum to install a specific version of package X?](https://unix.stackexchange.com/questions/151689/how-can-i-instruct-yum-to-install-a-specific-version-of-package-x)
+
+# 07.03.2019
+## DS
+- [Python vs R. Choosing the Best Tool for AI, ML & Data Science](https://medium.com/datadriveninvestor/python-vs-r-choosing-the-best-tool-for-ai-ml-data-science-7e0c2295e243)
+
+# 06.03.2019
+## R
+- `tsibble` -- пожелание разрабам от Генриха [new function for cut time series #96 {Open}](https://github.com/tidyverts/tsibble/issues/96)
+- [Graph analysis using the tidyverse](https://rviews.rstudio.com/2019/03/06/intro-to-graph-analysis/).  2019-03-06 by Edgar Ruiz
+- COOL! [Head’s Up! Roll Your Own HTTP Headers Investigations with the ‘hdrs’ Package](https://rud.is/b/2019/03/05/heads-up-roll-your-own-http-headers-investigations-with-the-hdrs-package/)
+- [HOW TO BECOME A MANGO](https://www.mango-solutions.com/blog/how-to-become-a-mango)
+- Интересно. [dqrng v0.1.0: breaking changes](https://blog.daqana.com/en/dqrng-v0-1-0-breaking-changes-2/)
+	- [dqrng: Fast Pseudo Random Number Generators](https://cran.r-project.org/web/packages/dqrng/index.html)
+- [shapper is on CRAN, it’s an R wrapper over SHAP explainer for black-box models](http://smarterpoland.pl/index.php/2019/03/shapper-is-on-cran-its-an-r-wrapper-over-shap-explainer-for-black-box-models/)
+- [Three R Shiny tricks to make your Shiny app shines (1/3)](http://enhancedatascience.com/2017/02/15/next-previous-button-shiny-app-tabbox/)
+
+# 05.03.2019
+## R
+- COOL! [Intro to unit testing in R](https://katherinemwood.github.io/post/testthat/)
+- [Building Big Shiny Apps — A Workflow (1/2)](https://rtask.thinkr.fr/blog/building-big-shiny-apps-a-workflow-1/)
+- [Building Big Shiny Apps — A Workflow (2/2)](https://rtask.thinkr.fr/blog/building-big-shiny-apps-a-workflow-2/)
+- [ThinkR-open/golem](https://github.com/ThinkR-open/golem). A Framework for Building Robust Shiny Apps https://rtask.thinkr.fr
+- COOL! [Log all warnings with futile.logger](https://stackoverflow.com/questions/40920616/log-all-warnings-with-futile-logger)
+- [What's the recommended way to unit test private functions? #41 {Closed}](https://github.com/r-lib/R6/issues/41)
+
+# 04.03.2019
+## R
+- [Classification of historical newspapers content: a tutorial combining R, bash and Vowpal Wabbit](https://www.brodrigues.co/blog/2019-03-03-historical_vowpal/)
+- [Using the R Package Profvis on a Linear Model](https://detroitdatalab.com/2019/03/02/using-the-r-package-profvis-on-a-linear-model/)
+- [Efficient MCMC with Caching](https://stablemarkets.wordpress.com/2019/03/02/efficient-mcmc-with-caching/)
+- COOL! [Creating blazing fast pivot tables from R with data.table - now with subtotals using grouping sets](https://jozefhajnala.gitlab.io/r/r912-datatable-grouping-sets/)
+- [rquery Substitution](http://www.win-vector.com/blog/2019/03/rquery-substitution/)
+- [THE DELTA METHOD AND ITS IMPLEMENTATION IN R](https://sciprincess.wordpress.com/2019/03/01/the-delta-method-and-its-implementation-in-r/)
+- [An architecture for real-time scoring with R](https://blog.revolutionanalytics.com/2019/03/real-time-scoring-with-r.html)
+- [Real-time scoring of R machine learning models](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/ai/realtime-scoring-r?WT.mc_id=Revolutions-blog-davidsmi)
+- [The bootstrap. The Swiss army knife of any data scientist. Applications of the bootstrap techniques in R](https://medium.com/data-science-journal/the-bootstrap-the-swiss-army-knife-of-any-data-scientist-acd6e592be13)
+- [SQL Equivalents in R](https://medium.com/predict/sql-equivalents-in-r-d1a4dfc27ab4)
+- [Знакомство с Neural ODE](https://habr.com/ru/company/ods/blog/442002/)
+
+# 01.03.2019
+## R
+- [Robust Regressions: Dealing with Outliers in R](https://datascienceplus.com/robust-regressions-dealing-with-outliers-in-r/)
+- Learning Machines [Customers who bought…](http://blog.ephorie.de/customers-who-bought)
+- COOL! [Using Rstudio Jobs for training many models in parallel](https://edwinth.github.io/blog/parallel-jobs/)
+- [If You Were an R Function, What Function Would You Be?”](http://www.win-vector.com/blog/2019/02/if-you-were-an-r-function-what-function-would-you-be/)
+
+# 28.02.2019
+## R
+- Проблемы с X11 и новой версией `summarytools`.
+	- Ставим предыдущую версию для проверки: `devtools::install_version("summarytools", version = "0.9.1", repos = "http://cran.us.r-project.org")`
+- Andrew Heiss: [Working with R, Cairo graphics, custom fonts, and ggplot](https://www.andrewheiss.com/blog/2017/09/27/working-with-r-cairo-graphics-custom-fonts-and-ggplot/)
+В версии R 3.5.2 не помогает под Ubuntu
+```
+You're right about still needing png() to work - I resolved my issue by setting ~/.Rprofile for "root" (Jupyterhub process user) as follows:
+
+## Set default 'type' for png() calls - useful when X11 device is not available!
+## NOTE: Needs 'cairo' capability
+options(bitmapType='cairo')
+```
+
+# 27.02.2019
 ## R
 - COOL! [WRS2: A Collection of Robust Statistical Methods](https://cran.r-project.org/web/packages/WRS2/index.html)
 A collection of robust statistical methods based on Wilcox' WRS functions. It implements robust t-tests (independent and dependent samples), robust ANOVA (including between-within subject designs), quantile ANOVA, robust correlation, robust mediation, and nonparametric ANCOVA models based on robust location measures.
@@ -2859,7 +2943,7 @@ chr "2 * b"
 - [Native scoring in SQL Server 2017 using R](https://tomaztsql.wordpress.com/2018/05/28/native-scoring-in-sql-server-2017-using-r/)
 - COOL! [TAKE SCREENSHOT OF WEBPAGE USING R](https://www.listendata.com/2018/05/take-screenshot-of-webpage-using-r.html)
 - [SHINYPROXY 1.1.1 RELEASED!](https://www.openanalytics.eu/blog/2018/05/28/shinyproxy-1.1.1/)
-- COOL! [Performance: captureOutput() is Much Faster than capture.output()]https://www.jottr.org/2014/05/26/trick-fast-rm/)
+- COOL! [Performance: captureOutput() is Much Faster than capture.output()](https://www.jottr.org/2014/05/26/captureoutput/)
 
 # 28.05.2018
 ## R
@@ -3023,7 +3107,7 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 - [Secure Package Downloads for R](https://support.rstudio.com/hc/en-us/articles/206827897-Secure-Package-Downloads-for-R)
 - COOL!! Грубое решение: `install.packages("httr", method="wget", extra="--no-check-certificate")`. Устанавливаем параметры для `download.file`. Обновление делаем командой `update.packages(ask=FALSE, method="wget", extra="--no-check-certificate")`
 - В случае проблемы с сертификатами напрямую из RStudio clone проекта также не получается сделать. Надо обходить через командную строку:
-`git -c http.sslVerify=false clone https://gitlab.com/repo.git <dir>` (решение найдено здесь:[SSL certificate rejected trying to access GitHub over HTTPS behind firewall](https://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall) или здесь:[github: server certificate verification failed](https://stackoverflow.com/questions/35821245/github-server-certificate-verification-failed/35824116)) .
+`git -c http.sslVerify=false clone https://gitlab.com/repo.git <dir>` (решение найдено здесь:[SSL certificate rejected trying to access GitHub over HTTPS behind firewall](https://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall) или здесь:[github: server certificate verification failed](https://stackoverflow.com/questions/35821245/github-server-certificate-verification-failed/35824116)).
 Можно потом в конфиг этого репозитория отключить `git config http.sslVerify false`
 
 
