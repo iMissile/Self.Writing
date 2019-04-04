@@ -24,3 +24,27 @@ Find the .txt files
 The first -exec zips the files
 The second -exec renames the zipped files to the original names
 
+
+
+- Чтобы забрать архив. [Архивирование файлов в Linux](https://losst.ru/arhivatsiya-v-linux). Архив != сжатие.
+	- Упаковка файла: `$ tar -cvf archive.tar.gz /path/to/files`
+	- А чтобы распаковать архив tar linux: `$ tar -xvf archive.tar.gz`
+	- посмотреть кусочек файла: [View the Beginning of Text Files with head](https://www.linode.com/docs/tools-reference/tools/view-the-beginning-of-text-files-with-head)
+Для сжатия надо + использовать флаг `z`?
+
+[Zip]\[unzip](https://www.computerhope.com/unix/unzip.htm)
+
+# Windows + Linux
+- [Windows for a Linux guy](https://dev.to/azure/windows-for-a-linux-guy-390p)
+
+# Ubuntu, управление пакетами
+- [How to install/repair texlive-doc on Ubuntu?](https://tex.stackexchange.com/questions/470019/how-to-install-repair-texlive-doc-on-ubuntu)
+- [How to install packages without documentation?](https://askubuntu.com/questions/221241/how-to-install-packages-without-documentation)
+- [Remove documentation to save hard drive space](https://askubuntu.com/questions/129566/remove-documentation-to-save-hard-drive-space)
+And removing them:
+```
+apt-get remove --purge \
+  texlive-fonts-recommended-doc texlive-latex-base-doc texlive-latex-extra-doc \
+  texlive-latex-recommended-doc texlive-pictures-doc texlive-pstricks-doc
+```
+- [Check Debian/Ubuntu Linux package version using apt-get/aptitude command](https://www.cyberciti.biz/faq/debian-ubuntu-linux-apt-get-aptitude-show-package-version-command/)

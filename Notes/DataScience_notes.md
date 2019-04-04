@@ -77,6 +77,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas, Alison Presmanes Hill
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/) by Yihui Xie
 - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/) by Yihui Xie, J. J. Allaire, Garrett Grolemund
+- [R Internals. R Core Team](https://colinfay.me/r-internals/)
 - [Efficient R programming](https://bookdown.org/csgillespie/efficientR/)
 - [Efficient R programming](https://csgillespie.github.io/efficientR/), Colin Gillespie, Robin Lovelace, 2017-04-10
 - [Data Science Live Book](https://livebook.datascienceheroes.com/) by Pablo Casas
@@ -272,7 +273,28 @@ Or with gunzip
 - [JOINing data in R using data.table](https://rstudio-pubs-static.s3.amazonaws.com/52230_5ae0d25125b544caab32f75f0360e775.html).  Ronald Stalder, 23-12-2014
 - С различными бенчмарками! [omitting NA values with data.table](omitting NA values with data.table)
 - COOL! [What is the purpose of setting a key in data.table?](https://stackoverflow.com/questions/20039335/what-is-the-purpose-of-setting-a-key-in-data-table)
-
+- [Access `by` variable from within `j` in data.table](https://stackoverflow.com/questions/21733151/access-by-variable-from-within-j-in-data-table)
+- RIP Tutorial. [Using .SD and .SDcols](https://riptutorial.com/data-table/example/13084/using--sd-and--sdcols)
+- Подменяем значения в определенных строках:
+	- [How to change the last value in each group by reference, in data.table](https://stackoverflow.com/questions/21819253/how-to-change-the-last-value-in-each-group-by-reference-in-data-table)
+- [Count number of records and generate row number within each group in a data.table](https://stackoverflow.com/questions/19869145/count-number-of-records-and-generate-row-number-within-each-group-in-a-data-tabl?rq=1).
+`DT[ , `:=`( COUNT = .N , IDX = 1:.N ) , by = VAL ]`. Better `seq_len(.N)` instead `1:.N`
+- Нюансы по слиянию таблиц. Получил в `inner_join` ошибку и стал разбираться
+```
+Error in vecseq(f__, len__, if (allow.cartesian || notjoin || !anyDuplicated(f__,  : 
+  Join results in 1595 rows; more than 1014 = nrow(x)+nrow(i). Check for duplicate key values in i each of which join to the same group in x over and over again. If that's ok, try by=.EACHI to run j for each group to avoid the large allocation. If you are sure you wish to proceed, rerun with allow.cartesian=TRUE. Otherwise, please search for this error message in the FAQ, Wiki, Stack Overflow and data.table issue tracker for advice.
+```
+	- [data.table: cartesian join and nomatch](https://stackoverflow.com/questions/48583006/data-table-cartesian-join-and-nomatch)
+	- [Merge two data.tables](https://jangorecki.gitlab.io/data.cube/library/data.table/html/merge.html)
+	- gist. [How to do joins with data.table](https://gist.github.com/nacnudus/ef3b22b79164bbf9c0ebafbf558f22a0)
+	- [data.table cartesian join warning on legitimate join](https://stackoverflow.com/questions/27587287/data-table-cartesian-join-warning-on-legitimate-join):
+```
+Usually this was not intended and the join needs to be changed. The word 'cartesian' is used loosely in this context. The traditional cartesian join is (deliberately) difficult to achieve in data.table: where every row in i joins to every row in x (a nrow(x) * nrow(i) row result). 'cartesian' is just meant in a 'large multiplicative' sense.
+```
+- А как сделать сэмплы по группам? Не все так просто
+	- [Sample random rows within each group in a data.table](https://stackoverflow.com/questions/16289182/sample-random-rows-within-each-group-in-a-data-table)
+	- [from data table, randomly select one row per group](https://stackoverflow.com/questions/33887083/from-data-table-randomly-select-one-row-per-group)
+- [Subset data frame based on number of rows per group](https://stackoverflow.com/questions/20204257/subset-data-frame-based-on-number-of-rows-per-group)
  
 
 # DS
@@ -459,6 +481,7 @@ https://plot.ly/products/cloud/
 - COOL! [Create smooth animations in R with the tweenr package](http://blog.revolutionanalytics.com/2017/05/tweenr.html)
 	- [tweenr](https://github.com/thomasp85/tweenr) is a small package that makes it easy to interpolate your data between different states, specifying the length of each change, the easing of the transition and how many intermediary steps should be generated. tweenr works particularly well with gganimate but can be used for any case where interpolation of data is needed. All functions are vectorized so in any case you'll get better performance than using approx and colorRamp.
 	- COOL! [Recreating the Datasaurus Dozen Using tweenr and ggplot2](https://wjakethompson.github.io/post/datasaurus-dozen/). [Новая ссылка "The Datasaurus Dozen"](https://github.com/thomasp85/gganimate/wiki/The-Datasaurus-Dozen)- COOL! [LIFE (EXPECTANCY), ANIMATED](https://nowosad.github.io/post/life-expectancy-animated/)
+	- [Data Fun - Inspired by Datasaurus](http://www.econometricsbysimulation.com/2019/03/data-fun.html). Friday, March 22, 2019
 - COOL! [Global Migration, animated with R](http://blog.revolutionanalytics.com/2018/06/global-migration-animated-with-r.html)
 	- Исходный блог: [Animated Directional Chord Diagrams](https://guyabel.com/post/animated-directional-chord-diagrams/)
 - COOL! [Let it flow, let it flow, let it flow......](https://johnmackintosh.com/2017-12-21-flow/) Animating dot plots to demonstrate patient flow
@@ -491,6 +514,173 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 	- [Curtis Kephart. All Named Colors in R](http://www.cazaar.com/r_colors)
 - [EXTRACTING COLOURS FROM YOUR IMAGES WITH IMAGE QUANTIZATION](https://chichacha.netlify.com/2019/01/19/extracting-colours-from-your-images-with-image-quantization/)
 - [Collection of most color palettes in a single R package](https://www.hvitfeldt.me/r/paletteer/)
+
+
+# 04.04.2019
+## R
+- [Select multiple elements from a list](https://stackoverflow.com/questions/12119019/select-multiple-elements-from-a-list). `mylist[c(5,7,9)]` should do it.
+
+# 03.04.2019
+## R
+- COOL! [yihui/highr](https://github.com/yihui/highr). Syntax Highlighting for R Source Code https://cran.rstudio.com/package=highr
+- COOL! [Standard Evaluation Versus Non-Standard Evaluation in R](http://www.win-vector.com/blog/2019/04/standard-evaluation-versus-non-standard-evaluation-in-r/)
+- [DATA: A CULTURAL TRANSFORMATION AND NOT A QUICK FIX](https://www.mango-solutions.com/blog/data-a-cultural-transformation-and-not-a-quick-fix)
+- [Musings on missing data](https://www.rdatagen.net/post/musings-on-missing-data/)
+
+# 01.04.2019
+## R
+- [Visualising Model Response with easyalluvial](https://www.datisticsblog.com/page/visualising-model-response-with-easyalluvial/)
+- [Thu, 28 Mar 2019. drat 0.1.5: New release](http://dirk.eddelbuettel.com/blog/2019/03/28/#drat_0.1.5)
+- COOL! [Securing a dockerized plumber API with SSL and Basic Authentication](https://qunis.de/how-to-make-a-dockerized-plumber-api-secure-with-ssl-and-basic-authentication/)
+- COOL! [So you want to deploy multiple containers running different R models?](https://qunis.de/so-you-want-to-deploy-multiple-containers-running-different-r-models/)
+- [Should you start your R blog now? 6 reasons I found in my first year of R blogging](https://jozefhajnala.gitlab.io/r/r914-one-year-r-blogging/)
+- [Tips for R to Python and Vice-Versa seamlessly](https://costaleconomist.blogspot.com/2019/03/tips-for-r-to-python-and-vice-versa.html)
+- [mapedit 0.5.0 and Leaflet.pm](https://www.r-spatial.org//r/2019/03/31/mapedit_leafpm.html)
+- [Quantile Function for a Vector of Dates](https://stackoverflow.com/questions/49405531/quantile-function-for-a-vector-of-dates)
+
+## R debug
+- [r-lib/debugme](https://github.com/r-lib/debugme). Easy and efficient debugging for R packages
+- [How do I track down where a R package function fails? {duplicate}](https://stackoverflow.com/questions/5034821/how-do-i-track-down-where-a-r-package-function-fails)
+
+# R Internals
+- [1.1.1 SEXPTYPEs](https://cran.r-project.org/doc/manuals/r-release/R-ints.html#SEXPTYPEs)
+- COOL! [R Internals. R Core Team](https://colinfay.me/r-internals/)
+	- [Chapter 1 R Internal Structures](https://colinfay.me/r-internals/r-internal-structures.html)
+- [gc {base}](https://stat.ethz.ch/R-manual/R-devel/library/base/html/gc.html). Тут читаем про `Ncells`, `Vcells`
+- Advanced R by Hadley Wickham. [Memory](http://adv-r.had.co.nz/memory.html)
+
+
+
+# 30.03.2019
+## R
+- COOL! [Interactive Plotting with Manipulate](https://support.rstudio.com/hc/en-us/articles/200551906-Interactive-Plotting-with-Manipulate)
+- [A curated list of great puzzles](https://github.com/sharkdp/great-puzzles)
+- Nice R Code. [Repeating things: looping and the apply family](https://nicercode.github.io/guides/repeating-things/)
+- [Way to chage the background color of code chunk in an R notebook](https://community.rstudio.com/t/way-to-chage-the-background-color-of-code-chunk-in-an-r-notebook/1920/7)
+	- [Feature request: turn of chunk background (make same as non-chunk) #2837 {Closed}](https://github.com/rstudio/rstudio/issues/2837)
+
+## RMarkdown
+- [What is the best way to automatically knit an RMarkdown file and send the html output via e-mail at a given time of the day?](https://www.reddit.com/r/rstats/comments/7rpm5y/what_is_the_best_way_to_automatically_knit_an/)
+
+
+# 28.03.2019
+## R
+- [Bio7 3.0 Released](https://bio7.org/bio7-3-0-released/)
+- COOL! [Using R in the pharmaceutical industry](https://paoloeusebi.blog/2019/03/27/using-r-in-the-pharmaceutical-industry/)
+- [The Rise of R-should SAS programmers get up to speed?](https://www.cytel.com/blog/the-rise-of-r-pharma)
+- [Super Dark IDE Theme, R-Studio, Inverted Color](https://r-bar.net/super-dark-ide-theme-inverted-color/)
+- [(x=scan())%in%(2*4^(n=0:x)-2^n-1)](https://xianblog.wordpress.com/2019/03/28/xscanin24n0x-2n-1/)
+- [Open and merge multiple shapefiles or more precisely union many spatial tables in R in a tidy way](http://r.iresmi.net/2019/03/27/open-and-merge-multiple-shapefiles/)
+- COOL! [Quickly create Codeplans of your (labelled) Data #rstats](https://strengejacke.wordpress.com/2019/03/27/quickly-create-codeplans-of-your-labelled-data-rstats/)
+- Перестановки
+	-[Generating all distinct permutations of a list in R](https://stackoverflow.com/questions/11095992/generating-all-distinct-permutations-of-a-list-in-r)
+
+# 27.03.2019
+## R
+- COOL! [WHAT IT THE INTERPRETATION OF THE DIAGONAL FOR A ROC CURVE](https://freakonometrics.hypotheses.org/58031)
+- [(Markov chain) Monte Carlo doesn’t “explore the posterior”](https://statmodeling.stat.columbia.edu/2019/03/25/mcmc-does-not-explore-posterior/)
+- COOL! С подробной анимацией [R Studio Shortcuts and Tips](https://appsilon.com/r-studio-shortcuts-and-tips/)
+- [February 2019: “Top 40” New CRAN Packages](https://rviews.rstudio.com/2019/03/26/february-2019-top-40-new-cran-packages/) by Joseph Rickert
+
+
+
+
+# 26.03.2019
+## R
+- [Using R and H2O to identify product anomalies during the manufacturing process.](https://laranikalranalytics.blogspot.com/2019/03/using-r-and-h2o-to-identify-product.html)
+- [How to Avoid Publishing Credentials in Your Code](https://rviews.rstudio.com/2019/03/21/how-to-avoid-publishing-credentials-in-your-code/)
+- [Play with the cyphr package](https://sgsong.blogspot.com/2019/03/play-with-cyphr-package.html)
+The cyphr package seems to provide a good choice for small research group that shares sensitive data over internet (e.g., DropBox). I did some simple experiment myself and made sure it can actually serve my purpose.
+- [Use RStudio Server in a Virtual Environment with Docker in Minutes!](https://telethonkids.wordpress.com/2019/03/26/use-rstudio-server-in-a-virtual-environment-with-docker-in-minutes/)
+- [Inverse Statistics – and how to create Gain-Loss Asymmetry plots in R](http://blog.ephorie.de/inverse-statistics-and-how-to-create-gain-loss-asymmetry-plots-in-r)
+- COOL! [Critical Thinking in Data Science](https://www.datacamp.com/community/blog/critical-thinking-in-data-science). Debbie Berebichez speaks with Hugo about what type of critical thinking skills are necessary in data science.
+- [Operator Notation for Data Transforms](http://www.win-vector.com/blog/2019/03/operator-notation-for-data-transforms/)
+- [SHINYPROXY 2.2.0](https://www.openanalytics.eu/blog/2019/03/24/shinyproxy-2.2.0/)
+- [BRODIE GASLAM. An #rstats Blog, Mostly](https://www.brodieg.com/)
+	- COOL! [THE SECRET LIVES OF R OBJECTS](https://www.brodieg.com/2019/02/18/an-unofficial-reference-for-internal-inspect/)
+	- COOL! [A STRATEGY FOR FASTER GROUP STATISTICS](https://www.brodieg.com/2019/02/24/a-strategy-for-faster-group-statisitics/)
+	- COOL! [ADVENTURES IN R AND COMPILED CODE](https://www.brodieg.com/2018/04/06/adventures-in-r-and-compiled-code/)
+	- [APR 18 2014. DATA.TABLE VS. DPLYR IN SPLIT APPLY COMBINE STYLE ANALYSIS](https://www.brodieg.com/2014/04/18/datatable-vs-dplyr-in-split-apply-comgine/)
+
+
+# 24.03.2009
+## Linux
+- [How to tell gzip to keep original file?](https://unix.stackexchange.com/questions/46786/how-to-tell-gzip-to-keep-original-file)
+- [Example Uses of the Linux gzip Command](https://www.lifewire.com/example-uses-of-the-linux-gzip-command-4078675)
+- [Сжатие и архивация файлов с помощью Gzip, Zip и Tar](http://www.rhd.ru/docs/manuals/enterprise/RHEL-AS-2.1-Manual/getting-started-guide/s1-zip-tar.html)
+
+## R
+- Permutations
+	- [Generating all distinct permutations of a list in R](https://stackoverflow.com/questions/11095992/generating-all-distinct-permutations-of-a-list-in-r)
+	- [sample {base}. Random Samples and Permutations](https://stat.ethz.ch/R-manual/R-devel/library/base/html/sample.html)
+	- [resample_permutation: Create a resampled permutation of a data frame](https://rdrr.io/github/tidyverse/modelr/man/resample_permutation.html). In tidyverse/modelr: Modelling Functions that Work with the Pipe
+	- [How to shuffle rows in a data frame in R?](https://discuss.analyticsvidhya.com/t/how-to-shuffle-rows-in-a-data-frame-in-r/2202)
+
+
+# 22.03.2019
+## R
+- [szilard/benchm-databases](https://github.com/szilard/benchm-databases). A minimal benchmark of various tools (statistical software, databases etc.) for working with tabular data of moderately large sizes (interactive data analysis).
+- [bigreadr: Read Large Text Files](https://cran.r-project.org/web/packages/bigreadr/). Read large text files by splitting them in smaller files.
+- [r-hub/sysreqsdb](https://github.com/r-hub/sysreqsdb). SystemRequirements mappings for R packages
+
+# 21.03.2019
+## R
+- Joel Spolsky Excel bug:
+	- Проблема с високосным годом: [My First BillG Review](https://www.joelonsoftware.com/2006/06/16/my-first-billg-review/)
+	- [Explaining the Excel Bug](https://www.joelonsoftware.com/2007/09/26/explaining-the-excel-bug/)
+- [How to see data from .RData file?](https://stackoverflow.com/questions/7270544/how-to-see-data-from-rdata-file/7275974)
+- [dplyr – Update Rows with Earlier/Previous Row Values](https://dzone.com/articles/dplyr-update-rows-with-earlierprevious-row-values)
+- COOL! Хороший анализ перформанса различных подходов. [Performance of fill() after group_by() #520 {Closed}](https://github.com/tidyverse/tidyr/issues/520)
+- COOL! [A Curated list of R uses in entreprise](https://github.com/ThinkR-open/companies-using-r)
+- [Introduction to renv](https://rstudio.github.io/renv/articles/introduction.html) by Kevin Ushey, 2019-03-20
+The renv package is a new effort to bring project-local R dependency management to your projects. The goal is for renv to be a robust, stable replacement for the Packrat package, with fewer surprises and better default behaviors.
+
+# 20.03.2019
+## R
+- [tidyr: Pivoting](https://tidyr.tidyverse.org/dev/articles/pivot.html)
+- COOL! [R and labelled data: Using quasiquotation to add variable and value labels #rstats](https://strengejacke.wordpress.com/2019/03/19/r-and-labelled-data-using-quasiquotation-to-add-variable-and-value-labels-rstats/)
+- [A gentle introduction to SHAP values in R](https://blog.datascienceheroes.com/how-to-interpret-shap-values-in-r/). A recent technique to interpret black-box models has stood out among others: SHAP (SHapley Additive exPlanations) developed by Scott M. Lundberg.
+- [The reticulate package solves the hardest problem in data science: people](https://rviews.rstudio.com/2019/03/18/the-reticulate-package-solves-the-hardest-problem-in-data-science-people/)
+- [Are R ecosystems the future?](https://r-house.netlify.com/2019/03/18/are-r-ecosystems-the-future/)
+- [Generate list of all possible combinations of elements of vector](https://stackoverflow.com/questions/18705153/generate-list-of-all-possible-combinations-of-elements-of-vector)
+- [combn {utils}](https://stat.ethz.ch/R-manual/R-devel/library/utils/html/combn.html). Generate All Combinations of n Elements, Taken m at a Time
+
+
+# 18.03.2019
+## R
+- [Handling & Sharing PCAPs Like a Boss with PacketTotal](https://rud.is/b/2019/03/17/handling-sharing-pcaps-like-a-boss-with-packettotal/)
+- [wrapr::let()](http://www.win-vector.com/blog/2019/03/wraprlet/)
+- COOL! [How to create professional reports from R scripts, with custom styles.](https://jozefhajnala.gitlab.io/r/r913-spin-with-style/)
+- [littler 0.3.7: Small tweaks](http://dirk.eddelbuettel.com/blog/2019/03/15/#littler-0.3.7)
+- COOL! [Adding Custom Fonts to ggplot in R](http://gradientdescending.com/adding-custom-fonts-to-ggplot-in-r/)
+- COOL! [How I implemented googleSignIn in R (shiny) and lived](http://biolitika.si/how-i-implemented-googlesignin-in-r-shiny-and-lived.html)
+- COOL! [R and Python: Using reticulate to get the best of both worlds](https://www.statworx.com/de/blog/r-and-python-using-reticulate-to-get-the-best-of-both-worlds/)
+- String replication [How to repeat a String N times in R?](https://stackoverflow.com/questions/22359127/how-to-repeat-a-string-n-times-in-r):
+	- `strrep("my_string",2)`
+	- `stri_dup(letters[1:3], 4)`
+
+# 15.03.2019
+## R
+- Проблемы со скрытием колонок в `rhandsometable` (вопрос от Кости), видимо, концептуальная:
+	- [Hiding columns in render #249 {Closed}](https://github.com/jrowen/rhandsontable/issues/249). Unfortunately, this is a handsontable pro feature, so we won't be able to implement it. If it becomes part of the Community version, the following should work.
+	- [](http://agfdhyk.blogspot.com/2018/12/hiding-columns-in-rhandsontable-using.html)
+	- [is there a way to hide a column in rhandsontable when passing a dataframe](https://stackoverflow.com/questions/39515678/is-there-a-way-to-hide-a-column-in-rhandsontable-when-passing-a-dataframe)
+- Работа с библиографией. [Zotero hacks: unlimited synced storage and its smooth use with rmarkdown](https://ikashnitsky.github.io/2019/zotero/)
+- [Visually explore Probability Distributions with vistributions](https://blog.rsquaredacademy.com/introducting-vistributions/)
+
+# 14.03.2019
+## R
+- COOL! Серьезная дискуссия. [Rscript: Determine path of the executing script](https://stackoverflow.com/questions/1815606/rscript-determine-path-of-the-executing-script)
+- COOL! [Unit Tests in R](http://www.win-vector.com/blog/2019/03/unit-tests-in-r/)
+- COOL! [SPEED TEST: SAPPLY VS. VECTORIZATION](http://theautomatic.net/2019/03/13/speed-test-sapply-vs-vectorization/)
+- [Tinyverse](http://www.tinyverse.org/). Lightweight is the right weight. Dependencies matter. Every dependency you add to your project is an invitation to break your project.
+- [tinytest](https://github.com/markvanderloo/tinytest). A minimal, no-dependency package for unit testing
+- [unitizer: Interactive R Unit Tests](https://cran.r-project.org/web/packages/unitizer/index.html)
+Simplifies regression tests by comparing objects produced by test code with earlier versions of those same objects. If objects are unchanged the tests pass, otherwise execution stops with error details. If in interactive mode, tests can be reviewed through the provided interactive environment.
+- Поиск дубликатов в data.frame:
+	- [Removing duplicated rows data frame in R {closed}](https://stats.stackexchange.com/questions/6759/removing-duplicated-rows-data-frame-in-r)
+	- [Another solution is to use janitor package: mtcars %>% get_dupes(wt)](https://stackoverflow.com/questions/28244123/find-duplicated-elements-with-dplyr)
+	- [find *all* duplicated records in data.table (not all-but-one)](https://stackoverflow.com/questions/19392332/find-all-duplicated-records-in-data-table-not-all-but-one)
 
 # 13.03.2019
 ## R
@@ -572,6 +762,12 @@ You're right about still needing png() to work - I resolved my issue by setting 
 ## NOTE: Needs 'cairo' capability
 options(bitmapType='cairo')
 ```
+Ситуация может быть отчасти решена (!!!) способом из [X11 is not available in R](https://stackoverflow.com/questions/36819334/x11-is-not-available-in-r):
+```
+apt-get install xvfb xauth xfonts-base
+Xvfb :0 -ac -screen 0 1960x2000x24 &
+Sys.setenv("DISPLAY"=":0")
+```
 
 # 27.02.2019
 ## R
@@ -597,6 +793,7 @@ A collection of robust statistical methods based on Wilcox' WRS functions. It im
 - [R Journal Volume 10/2, December 2018](https://journal.r-project.org/archive/2018-2/)
 - [Gartner’s 2019 Take on Data Science Software](http://r4stats.com/2019/02/25/gartner-2019-take-on-data-science-software/)
 - COOL! [THE SECRET LIVES OF R OBJECTS. Should We Care About R Object Internals?](https://www.brodieg.com/2019/02/18/an-unofficial-reference-for-internal-inspect/)
+	- [1.1.1 SEXPTYPEs](https://cran.r-project.org/doc/manuals/r-release/R-ints.html#SEXPTYPEs)
 
 
 # 21.02.2019
@@ -5767,7 +5964,9 @@ The script below illustrates how to add one label per stack in a stacked bar cha
 ## R
 - Задача: итерация по строкам data.frame. 
 	- Крутейший сравнительный анализ доступных методов, включая purrr [Applying a function over rows of a data frame](https://rpubs.com/wch/200398) by Winston Chang. Охвачены методы `nrow`, `apply`, `split_lapply`, `lapply_row`, `lapply_lapply`, `by_row`, `pmap`, `pmap_aslist`, `rowwise`.
+	- [Исходник](https://gist.github.com/wch/0e564def155d976c04dd28a876dc04b4)
 	- [by_row vs rowwise iteration](https://stackoverflow.com/questions/43218761/by-row-vs-rowwise-iteration). Lastly, there is your separate question about `by_row()/rowwise()` First, note that `by_row` has been removed from the development version of `purrr`, and moved to a separate package, `purrrlyr`, where it's deprecated anyway, and it's recommended to "use a combination of: `tidyr::nest()`; `dplyr::mutate()`; `purrr::map()`"
+	- COOL! [Row-oriented workflows in R with the tidyverse by Jenny Brian](https://github.com/jennybc/row-oriented-workflows#readme)
 - [Why R is Hard to Learn](http://r4stats.com/articles/why-r-is-hard-to-learn/) by by Robert A. Muenchen
 
 
@@ -10161,6 +10360,7 @@ with_config(use_proxy(...), install_github(...))
 - [Introduction to data.tree](http://cran.r-project.org/web/packages/data.tree/vignettes/data.tree.html)
 - [ipub. bridging finance and IT](http://ipub.com): 
 	- [Solving Tic-Tac-Toe with R data.tree](http://ipub.com/tic-tac-toe/)
+	- [A simple mathematical puzzle (with R solution based on data.tree)](http://www.rpubs.com/artichaud1/184676) by Karim Lahrichi, May 28th, 2016
 	- [Reference semantics in R](http://ipub.com/reference-semantics/)
 - [MRAN checkpoint. Reproducibility: Using Fixed CRAN Repository Snapshots](https://mran.revolutionanalytics.com/documents/rro/reproducibility/)
 - [Images as x-axis labels (updated)](http://jcarroll.com.au/2016/06/03/images-as-x-axis-labels-updated/)

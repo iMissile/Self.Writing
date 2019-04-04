@@ -43,6 +43,23 @@ firewall-cmd --get-active-zones
 ### Перезагрузка
 `reboot now`
 
+### Устранение проблем со старым компилятором gcc
+Чем дальше, тем меньше пакетов готовы собираться под gcc\g++ 4.8.5 (2015 год).
+Обкатали такой хардкорный вариант.
+1. Ставим альтернативные репозитории (взято из [how to install gcc 4.9.2 on RHEL 7.4](https://stackoverflow.com/questions/47175706/how-to-install-gcc-4-9-2-on-rhel-7-4)
+2. Напрямую последовательность установки альтернатив не работает, переименовываем файлы gcc\g++ руками, после этого назначаем альтернативные линки.
+По правильному там должна была быть двухуровневая система линков.
+Итого, правильная последовательность команд такова:
+```
+yum install centos-release-scl-rh
+yum install devtoolset-3-gcc devtoolset-3-gcc-c++
+mv /usr/bin/g++ /usr/bin/g++.old
+mv /usr/bin/gcc /usr/bin/gcc.old
+update-alternatives --install /usr/bin/gcc-4.9 gcc-4.9 /opt/rh/devtoolset-3/root/usr/bin/gcc 10
+update-alternatives --install /usr/bin/g++-4.9 g++-4.9 /opt/rh/devtoolset-3/root/usr/bin/g++ 10
+```
+
+
 ### Операции с файлами
 - [How do I remove a full directory in Linux?](http://www.computerhope.com/issues/ch000798.htm) `rm -rf mydir`
 - [How do I recursively delete directories with wildcard?](http://unix.stackexchange.com/questions/23576/how-do-i-recursively-delete-directories-with-wildcard)

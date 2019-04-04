@@ -165,6 +165,8 @@ http://answers.microsoft.com/en-us/windows/forum/windows_10-security/event-id-10
 - [Listary](https://www.listary.com/) is a revolutionary search utility for Windows that makes finding your files and launching applications blazing fast, for casual and power users alike!
 - [Clover 3](http://en.ejie.me/). Wings for your Windows Explorer! Clover is an extension of the Windows Explorer, to add multi-tab functionality similar to Google Chrome browser. After install Clover, you will be able to open multiple folders within the same window, and you can also add folder bookmarks.
 
+- [6 Best Free Video Metadata Editor Software For Windows](https://listoffreeware.com/free-video-metadata-editor-software-windows/)
+
 ## Tips
 - [Как создать локальную учетную запись в Windows 10](http://windowstips.ru/notes/18570)
 - [4 Ways To Boot Into Safe Mode In Windows 10](http://www.digitalcitizen.life/4-ways-boot-safe-mode-windows-10)
