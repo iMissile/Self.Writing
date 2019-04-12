@@ -463,6 +463,9 @@ header-includes:
 	- [Timing for chunks?](https://stackoverflow.com/questions/24595280/timing-for-chunks)
 	- [Hook to time knitr chunks](https://stackoverflow.com/questions/30530008/hook-to-time-knitr-chunks)
 - [2.6 R code chunks and inline R code](https://bookdown.org/yihui/rmarkdown/r-code.html)
+- [Troubleshooting: Printing UTF-8 (Russian) in R-markdown, knitr](https://bookdown.org/gorodnichy/utf8-markdown-problem/utf8-markdown-problem.html)
+- [Escaping % symbol when passed as a string from R chunk to knitr](https://tex.stackexchange.com/questions/430376/escaping-symbol-when-passed-as-a-string-from-r-chunk-to-knitr)
+- [How to escape a pipe char in a code statement in a markdown table?](https://stackoverflow.com/questions/17319940/how-to-escape-a-pipe-char-in-a-code-statement-in-a-markdown-table)
 
 # Visualization
 Когда спрашивают про визуализацию:
@@ -515,10 +518,64 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 - [EXTRACTING COLOURS FROM YOUR IMAGES WITH IMAGE QUANTIZATION](https://chichacha.netlify.com/2019/01/19/extracting-colours-from-your-images-with-image-quantization/)
 - [Collection of most color palettes in a single R package](https://www.hvitfeldt.me/r/paletteer/)
 
+# 12.04.2019
+## R
+- COOL! [Shiny Reactlog](https://rstudio.github.io/reactlog/articles/reactlog.html) by Carson Sievert, Joe Cheng, and Barret Schloerke
+- COOL! [jbryer/DTedit](https://github.com/jbryer/DTedit). Editable DataTables for shiny apps
+
+
+# 11.04.2019
+## R
+- [Ten random useful things in R that you might not know about](https://towardsdatascience.com/ten-random-useful-things-in-r-that-you-might-not-know-about-54b2044a3868). R is full of useful stuff. Here are a few things that I use a lot which others may not know about.
+
+# 10.04.2019
+## Excel
+- [Технические характеристики и ограничения Microsoft Excel](https://support.office.com/ru-ru/article/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8-%D0%B8-%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-microsoft-excel-1672b34d-7043-467e-8e27-269d656771c3)
+- [Мужчина провел "самый тупой" эксперимент с Excel](https://rg.ru/2017/01/12/muzhchina-provel-samyj-tupoj-eksperiment-s-excel.html)
+
+# 09.04.2019
+## R
+- [How to Filter in R: A Detailed Introduction to the dplyr Filter Function](https://michaeltoth.me/how-to-filter-in-r-a-detailed-introduction-to-the-dplyr-filter-function.html)
+- COOL! Надо внимательно почитать. [Analyse Site Structure and Internal Linking Structure with igraph](https://lucidmanager.org/analyse-site-structure/)
+- COOL! Хороший анализ производительности методов сэмплирования. [Fast sampling support in dqrng](https://blog.daqana.com/en/fast-sampling-support-in-dqrng/)
+- [Learning and Teaching R | Get to the Plot](https://r-bar.net/learning-teaching-r-programming-plot/)
+
+# 08.04.2019
+## R
+- [r-lib/crayon](https://github.com/r-lib/crayon). R package for colored terminal output
+- COOL! [Winners of the 1st Shiny Contest](https://blog.rstudio.com/2019/04/05/first-shiny-contest-winners/)
+- [Many ways to do the same thing: linear regression](https://statisticaloddsandends.wordpress.com/2019/04/08/many-ways-to-do-the-same-thing-linear-regression/)
+- [Coke vs. Pepsi? data.table vs. tidy? Examining Consumption Preferences for Data Scientists](https://r-posts.com/coke-vs-pepsi-data-table-vs-tidy-examining-consumption-preferences-for-data-scientists/)
+- COOL! [Martingale strategies don’t work, but we knew that – Simulation analysis in R](http://gradientdescending.com/martingale-strategies-dont-work-but-we-knew-that-simulation-analysis-in-r/)
+- [What are the Popular R Packages?](http://www.win-vector.com/blog/2019/04/what-are-the-popular-r-packages/)
+
+## Slides
+- [yihui/xaringan. Export Slides to PDF](https://github.com/yihui/xaringan/wiki/Export-Slides-to-PDF). Yihui Xie edited this page on 7 Mar
+- [pat-s/xaringan-metropolis](https://github.com/pat-s/xaringan-metropolis). Metropolis theme of R package xaringan
+- [Chapter 7 xaringan Presentations](https://bookdown.org/yihui/rmarkdown/xaringan.html)
+- [Xaringan CSS Theme Generator](https://pkg.garrickadenbuie.com/xaringanthemer/articles/xaringanthemer.html)
+- [A "don't include slide" flag? #96 {closed}](https://github.com/yihui/xaringan/issues/96)
+- [print to pdf might not handle fonts #148 {Closed}](https://github.com/yihui/xaringan/issues/148)
+- [GitLab Pages for Ninjas. How to build and deploy pdf xaringan presentations](https://rlesur.gitlab.io/xaringan-gitlab-pages/)
+- [Changing fonts](https://github.com/yihui/xaringan/wiki/Changing-fonts)
+- [pagedown: Creating Beautiful PDFs with R Markdown + CSS + Your Web Browser](https://slides.yihui.name/2019-rstudio-conf-pagedown.html#1) by Yihui Xie and Romain Lesur, 2019/01/18 @ rstudio::conf, Austin, TX
+
+
+# 05.04.2019
+## R
+- [How to build Animated Bar Plots using R](https://datascienceplus.com/how-to-build-animated-bar-plots-using-r/)
+- [How to share R visualizations in Microsoft PowerPoint, 2019-04-04](https://rviews.rstudio.com/2019/04/04/sharing-r-visualizations-in-powerpoint/)
+- [DON’T FORGET THE “UTILS” PACKAGE IN R](http://theautomatic.net/2019/04/03/dont-forget-the-utils-package-in-r/)
+- replace NULL in lists:
+	- [Is there a more efficient way to replace NULL with NA in a list?](https://stackoverflow.com/questions/22870198/is-there-a-more-efficient-way-to-replace-null-with-na-in-a-list)
+	- [Change NULL to NA in list without transformation](https://stackoverflow.com/questions/44729617/change-null-to-na-in-list-without-transformation/44729718)
 
 # 04.04.2019
 ## R
 - [Select multiple elements from a list](https://stackoverflow.com/questions/12119019/select-multiple-elements-from-a-list). `mylist[c(5,7,9)]` should do it.
+- [Removing html tags from a string in R](https://stackoverflow.com/questions/17227294/removing-html-tags-from-a-string-in-r)
+- [textclean: Text Cleaning Tools](https://cran.r-project.org/web/packages/textclean/index.html)
+- [textshape: Tools for Reshaping Text](https://cran.r-project.org/web/packages/textshape/index.html). Tools that can be used to reshape and restructure text data.
 
 # 03.04.2019
 ## R
@@ -5966,7 +6023,7 @@ The script below illustrates how to add one label per stack in a stacked bar cha
 	- Крутейший сравнительный анализ доступных методов, включая purrr [Applying a function over rows of a data frame](https://rpubs.com/wch/200398) by Winston Chang. Охвачены методы `nrow`, `apply`, `split_lapply`, `lapply_row`, `lapply_lapply`, `by_row`, `pmap`, `pmap_aslist`, `rowwise`.
 	- [Исходник](https://gist.github.com/wch/0e564def155d976c04dd28a876dc04b4)
 	- [by_row vs rowwise iteration](https://stackoverflow.com/questions/43218761/by-row-vs-rowwise-iteration). Lastly, there is your separate question about `by_row()/rowwise()` First, note that `by_row` has been removed from the development version of `purrr`, and moved to a separate package, `purrrlyr`, where it's deprecated anyway, and it's recommended to "use a combination of: `tidyr::nest()`; `dplyr::mutate()`; `purrr::map()`"
-	- COOL! [Row-oriented workflows in R with the tidyverse by Jenny Brian](https://github.com/jennybc/row-oriented-workflows#readme)
+	- COOL! [Row-oriented workflows in R with the tidyverse](https://github.com/jennybc/row-oriented-workflows#readme) by Jenny Brian
 - [Why R is Hard to Learn](http://r4stats.com/articles/why-r-is-hard-to-learn/) by by Robert A. Muenchen
 
 
