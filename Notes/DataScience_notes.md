@@ -1,4 +1,4 @@
-﻿- [The JSON Formatter](https://jsonformatter.curiousconcept.com/)
+- [The JSON Formatter](https://jsonformatter.curiousconcept.com/)
 - [JSON Editor Online](http://jsoneditoronline.org/)
 - [Различные онлайн инструменты для проверки и преобразования](https://www.danstools.com/)
 - [Телеграмм бот «Telegram Proxy (SOCKS5) Bot»](https://ru.telegram-store.com/catalog/bots/proxy_socks5_bot/)
@@ -518,6 +518,31 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 - [EXTRACTING COLOURS FROM YOUR IMAGES WITH IMAGE QUANTIZATION](https://chichacha.netlify.com/2019/01/19/extracting-colours-from-your-images-with-image-quantization/)
 - [Collection of most color palettes in a single R package](https://www.hvitfeldt.me/r/paletteer/)
 
+# 15.04.2019
+## R
+```
+Some people, when confronted with a problem, think “I know, I’ll use regular expressions.” Now they have two problems. – Jamie Zawinski
+
+Some programmers, when confronted with a problem, think “I know, I’ll use floating point arithmetic.” Now they have 1.999999999997 problems. – @tomscott
+
+Some people, when confronted with a problem, think “I know, I’ll use multithreading”. Nothhw tpe yawrve o oblems. – @d6
+
+Some people, when confronted with a problem, think “I know, I’ll use versioning.” Now they have 2.1.0 problems. – @JaesCoyle
+
+Some people, when faced with a problem, think, “I know, I’ll use binary.” Now they have 10 problems. – @nedbat
+```
+
+- [Big Data-1: Move into the big league:Graduate from Python to Pyspark](https://gigadom.in/2018/10/08/big-data-1-move-into-the-big-leaguegraduate-from-python-to-pyspark/)
+- [Big Data-2: Move into the big league:Graduate from R to SparkR](https://gigadom.in/2018/10/09/big-data-2-move-into-the-big-leaguegraduate-from-r-to-sparkr/)
+- [Big Data: On RDDs, Dataframes,Hive QL with Pyspark and SparkR-Part 3](https://gigadom.in/2019/04/12/big-data-on-rdds-dataframeshive-ql-with-pyspark-and-sparkr-part-3/)
+- [Practical Introduction to Web Scraping in R](https://blog.rsquaredacademy.com/web-scraping/)
+	- [Explore..Discover..Learn](https://apps.rsquaredacademy.com)
+- COOL! [Lost In [SQL] Translation: Charting d[b]plyr Mapped SQL Function Support Across All Backends](https://rud.is/b/2019/04/10/lost-in-sql-translation-charting-dbplyr-mapped-sql-function-support-across-all-backends/)
+- [MailR SMTP Setup (Gmail, Outlook, Yahoo) | STARTTLS](https://r-bar.net/mailr-smtp-webmail-starttls-tls-ssl/)
+- - [Batch Processing of Monotonic Binning](https://statcompute.wordpress.com/2019/04/13/batch-processing-of-monotonic-binning/)
+- [Piping is Method Chaining](http://www.win-vector.com/blog/2019/04/piping-is-method-chaining/)
+- COOL! [pi: predict/infer. A Tour of Timezones (& Troubles) in R](https://blog.methodsconsultants.com/posts/timezone-troubles-in-r/)
+- COOL! [How to easily automate R analysis, modeling and development work using CI/CD, with working examples](https://jozefhajnala.gitlab.io/r/r106-r-package-gitlab-ci/)
 # 12.04.2019
 ## R
 - COOL! [Shiny Reactlog](https://rstudio.github.io/reactlog/articles/reactlog.html) by Carson Sievert, Joe Cheng, and Barret Schloerke
