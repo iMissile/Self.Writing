@@ -543,6 +543,7 @@ Some people, when faced with a problem, think, “I know, I’ll use binary.” 
 - [Piping is Method Chaining](http://www.win-vector.com/blog/2019/04/piping-is-method-chaining/)
 - COOL! [pi: predict/infer. A Tour of Timezones (& Troubles) in R](https://blog.methodsconsultants.com/posts/timezone-troubles-in-r/)
 - COOL! [How to easily automate R analysis, modeling and development work using CI/CD, with working examples](https://jozefhajnala.gitlab.io/r/r106-r-package-gitlab-ci/)
+- [R as GIS for ecologists](https://geekcologist.wordpress.com/2019/04/13/r-as-gis-for-ecologists/)
 # 12.04.2019
 ## R
 - COOL! [Shiny Reactlog](https://rstudio.github.io/reactlog/articles/reactlog.html) by Carson Sievert, Joe Cheng, and Barret Schloerke
