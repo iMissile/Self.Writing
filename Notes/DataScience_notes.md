@@ -518,6 +518,13 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 - [EXTRACTING COLOURS FROM YOUR IMAGES WITH IMAGE QUANTIZATION](https://chichacha.netlify.com/2019/01/19/extracting-colours-from-your-images-with-image-quantization/)
 - [Collection of most color palettes in a single R package](https://www.hvitfeldt.me/r/paletteer/)
 
+# 16.04.2019
+## R
+- Defensive programming
+  - [{attempt} 0.3.0 is now on CRAN](https://colinfay.me/attempt-0-3-0/)
+- [Understanding Bayesian Inference with a simple example in R!](https://allthiswasfield.blogspot.com/2019/04/understanding-bayesian-inference-with.html)
+- [Make R stats easy!](https://github.com/easystats)
+
 # 15.04.2019
 ## R
 ```
@@ -547,6 +554,8 @@ Some people, when faced with a problem, think, “I know, I’ll use binary.” 
 
 ## Git
 - MAC. [Can't push to GitHub? (error: git-lfs died of signal 11)](https://stackoverflow.com/questions/48665515/cant-push-to-github-error-git-lfs-died-of-signal-11)
+
+- [Indie Prize Showcase Awards](http://www.indieprize.org/london2019/index.html)
 # 12.04.2019
 ## R
 - COOL! [Shiny Reactlog](https://rstudio.github.io/reactlog/articles/reactlog.html) by Carson Sievert, Joe Cheng, and Barret Schloerke
