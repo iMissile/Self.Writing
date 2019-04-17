@@ -108,6 +108,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Text Mining with R. A Tidy Approach](https://www.tidytextmining.com/) by Julia Silge and David Robinson
 - [HTTP mocking and testing in R](https://ropensci.github.io/http-testing-book/)
 - [The caret Package](http://topepo.github.io/caret/)
+- [This is the work-in-progress repo for the book Mastering Shiny by Joe Cheng](https://github.com/jcheng5/shiny-book)
 
 
 # VPN
@@ -605,6 +606,7 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 	- [Chapter 1 R Internal Structures](https://colinfay.me/r-internals/r-internal-structures.html)
 - [gc {base}](https://stat.ethz.ch/R-manual/R-devel/library/base/html/gc.html). Тут читаем про `Ncells`, `Vcells`
 - Advanced R by Hadley Wickham. [Memory](http://adv-r.had.co.nz/memory.html)
+- COOL! [THE SECRET LIVES OF R OBJECTS](https://www.brodieg.com/2019/02/18/an-unofficial-reference-for-internal-inspect/)
 
 
 
