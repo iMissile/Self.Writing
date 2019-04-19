@@ -519,6 +519,18 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 - [EXTRACTING COLOURS FROM YOUR IMAGES WITH IMAGE QUANTIZATION](https://chichacha.netlify.com/2019/01/19/extracting-colours-from-your-images-with-image-quantization/)
 - [Collection of most color palettes in a single R package](https://www.hvitfeldt.me/r/paletteer/)
 
+# 17.04.2019
+## R
+- [Generating all distinct permutations of a list in R](https://stackoverflow.com/questions/11095992/generating-all-distinct-permutations-of-a-list-in-r)
+- COOL! [R: Permutations and combinations with/without replacement and for distinct/non-distinct items/multiset](https://stackoverflow.com/questions/22569176/r-permutations-and-combinations-with-without-replacement-and-for-distinct-non-d/47983855#47983855)
+- COOL! [arrangements: Fast Generators and Iterators for Permutations, Combinations and Partitions](https://cran.r-project.org/web/packages/arrangements/index.html)
+Fast generators and iterators for permutations, combinations and partitions. The iterators allow users to generate arrangements in a memory efficient manner and the generated arrangements are in lexicographical (dictionary) order. Permutations and combinations can be drawn with/without replacement and support multisets. It has been demonstrated that 'arrangements' outperforms most of the existing packages of similar kind. Some benchmarks could be found at <https://randy3k.github.io/arrangements/articles/benchmark.html>.
+- [base::colSums. Form Row and Column Sums and Means](https://stat.ethz.ch/R-manual/R-devel/library/base/html/colSums.html)
+- [How to convert a huge list-of-vector to a matrix more efficiently?](https://stackoverflow.com/questions/13224553/how-to-convert-a-huge-list-of-vector-to-a-matrix-more-efficiently)
+- [How to turn a vector into a matrix in R?](https://stackoverflow.com/questions/14614946/how-to-turn-a-vector-into-a-matrix-in-r)
+- [How to reshape data in R? Quick Reference](https://www.sixhat.net/how-to-reshape-data-in-r.html)
+
+
 # 16.04.2019
 ## R
 - Defensive programming

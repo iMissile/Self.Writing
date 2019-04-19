@@ -138,8 +138,9 @@ SP1 можно получить через web: [Service Pack and Update Center]
 Как показывает практика, проблема с установкой заключается в наличии некорректного профиля Nvidia под названием UpdatusUser.
 - [What is “UpdatusUser” Folder and How to Remove it from Windows Explorer?](http://www.askvg.com/tip-what-is-updatususer-folder-and-how-to-remove-it-from-windows-explorer/)
 
-
 - [Microsoft тайком загружает файлы Windows 10 пользователям Windows 7 и 8. Как с этим бороться](http://lifehacker.ru/2015/09/11/how-to-block-windows-10-upgrade-downloads/)
+
+- [How to install or uninstall Windows Store Apps in Windows 10](https://www.thewindowsclub.com/uninstall-windows-10-apps)
 
 ## Проблемы с реестром
 - [Event ID 10016 - The application-specific permission settings do not grant Local Activation permission for the COM Server application with CLSID](http://answers.microsoft.com/en-us/windows/forum/windows_8-performance/event-id-10016-the-application-specific-permission/9ff8796f-c352-4da2-9322-5fdf8a11c81e?auth=1) и [здесь](http://blog.ronnypot.nl/?p=843)
@@ -166,6 +167,12 @@ http://answers.microsoft.com/en-us/windows/forum/windows_10-security/event-id-10
 - [Clover 3](http://en.ejie.me/). Wings for your Windows Explorer! Clover is an extension of the Windows Explorer, to add multi-tab functionality similar to Google Chrome browser. After install Clover, you will be able to open multiple folders within the same window, and you can also add folder bookmarks.
 
 - [6 Best Free Video Metadata Editor Software For Windows](https://listoffreeware.com/free-video-metadata-editor-software-windows/)
+
+- [GUIformat: FAT32 format](http://www.ridgecrop.demon.co.uk/index.htm?guiformat.htm) I finally got round to doing a Windows GUI version of fat32format.
+- [Hard disk information from command prompt](https://social.technet.microsoft.com/Forums/windowsserver/en-US/a2f8e48e-38fc-4bc6-9e0e-e7cedea83d66/hard-disk-information-from-command-prompt?forum=winservergen)
+```
+Using fsutil volume diskfree c:   or  dir command we can get info on one particular drive, but how to get this on all drives in the system using a single command?
+```
 
 ## Tips
 - [Как создать локальную учетную запись в Windows 10](http://windowstips.ru/notes/18570)
