@@ -519,6 +519,53 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 - [EXTRACTING COLOURS FROM YOUR IMAGES WITH IMAGE QUANTIZATION](https://chichacha.netlify.com/2019/01/19/extracting-colours-from-your-images-with-image-quantization/)
 - [Collection of most color palettes in a single R package](https://www.hvitfeldt.me/r/paletteer/)
 
+# 23.04.2019
+## R
+- [Comparing Point-and-Click Front Ends for R](http://r4stats.com/2019/04/22/comparing-r-guis/)
+- [Using R/exams for Written Exams in Finance Classes](http://www.r-exams.org/general/tamiu_finance/)
+- xml:
+	- [Improving performance of appending rows to a data.table](https://stackoverflow.com/questions/30977355/improving-performance-of-appending-rows-to-a-data-table)
+	- [Parsing an XML SAX way in R](https://stackoverflow.com/questions/31004615/parsing-an-xml-sax-way-in-r)
+
+# 22.04.2019
+## R
+- [Before you take my DataCamp course please consider this info](https://shirinsplayground.netlify.com/2019/04/consider_data_camp/)
+- COOL! [Styling DataTables](http://www.stencilled.me/post/2019-04-20-stylingdt/)
+- [Metadata : from PostgreSQL comments to R labels](http://r.iresmi.net/2019/04/18/metadata-from-postgresql-comments-to-r-labels/)
+- Проблемка в nginx, приводящая к проблемам в web-srapping: [HTTP/2: libcurl (and nghttp2) do not retry requests who receive a REFUSED_STREAM without an END_STREAM #804 {Closed}](https://github.com/curl/curl/issues/804)
+- [http_condition From httr v1.4.0](https://www.rdocumentation.org/packages/httr/versions/1.4.0/topics/http_condition) by Hadley Wickham. Generate A Classed Http Condition.
+- [How to refresh or retry a specific web page using httr GET command?](https://stackoverflow.com/questions/37367918/how-to-refresh-or-retry-a-specific-web-page-using-httr-get-command)
+- [Shiny tests for database transactions](https://community.rstudio.com/t/shiny-tests-for-database-transactions/2211)
+- ebook. [A gRadual intRoduction to Shiny](https://laderast.github.io/gradual_shiny/)
+- [Progress bar with estimated time](https://dplyr.tidyverse.org/reference/progress_estimated.html)
+
+## jq
+- [Using jq how can I replace the name of a key with something else](https://stackoverflow.com/questions/43522133/using-jq-how-can-i-replace-the-name-of-a-key-with-something-else)
+- [Rename a key in an object #1167 {Closed}](https://github.com/stedolan/jq/issues/1167)
+- [Reshaping JSON with jq](https://programminghistorian.org/en/lessons/json-and-jq)
+- [jqplay](https://jqplay.org/)
+- [Flatten array objects with parent values? #646 {Closed}](https://github.com/stedolan/jq/issues/646)
+- [Hyperpolyglot. JSON Tools: JQ](http://hyperpolyglot.org/json)
+- [Change a nested field name #670 {Closed}](https://github.com/stedolan/jq/issues/670)
+- [JQ Cookbook](https://github.com/stedolan/jq/wiki/Cookbook)
+- [JQ FAQ](https://github.com/stedolan/jq/wiki/FAQ)
+```
+𝑸: How can I rename the keys of an object programmatically?
+A: One way to rename the keys of an object is to use with_entries, e.g.
+with_entries( if .key | contains("-") then .key |= sub("-";".") else . end)
+To rename keys recursively, see the Q defining translate_keys(f) below.
+```
+- [jq recipes](https://remysharp.com/drafts/jq-recipes)
+- [How to find and replace multiple field values using jq?](https://unix.stackexchange.com/questions/476536/how-to-find-and-replace-multiple-field-values-using-jq)
+- [Modifying JSON on the command line. Using jq to change a value](http://engineering.monsanto.com/2015/05/22/jq-change-json/)
+- COOL! [Replace an attribute or key in JSON using jq or sed](https://stackoverflow.com/questions/42969020/replace-an-attribute-or-key-in-json-using-jq-or-sed)
+- COOL! Сравнительный анализ. [Flatten a JSON document using jq](https://stackoverflow.com/questions/24698188/flatten-a-json-document-using-jq)
+- [While unnesting an object in jq, how can I avoid restating labels at each stage in the pipeline?](https://stackoverflow.com/questions/54210566/while-unnesting-an-object-in-jq-how-can-i-avoid-restating-labels-at-each-stage). another way is to use `reduce` and `setpath`
+- [tomnomnom/gron](https://github.com/tomnomnom/gron) Make JSON greppable!
+- [Flatten nested JSON using jq](https://stackoverflow.com/questions/37540717/flatten-nested-json-using-jq)
+- В картинкахю [Using jq with nested objects](http://kamicut.cc/2014/11/19/using-jq-nested-objects.html)
+    
+
 # 17.04.2019
 ## R
 - [Generating all distinct permutations of a list in R](https://stackoverflow.com/questions/11095992/generating-all-distinct-permutations-of-a-list-in-r)
