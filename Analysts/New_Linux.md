@@ -48,3 +48,6 @@ apt-get remove --purge \
   texlive-latex-recommended-doc texlive-pictures-doc texlive-pstricks-doc
 ```
 - [Check Debian/Ubuntu Linux package version using apt-get/aptitude command](https://www.cyberciti.biz/faq/debian-ubuntu-linux-apt-get-aptitude-show-package-version-command/)
+
+## Изменение владельца папке (рекурсивное)
+`chown shiny:shiny /ext -R`
