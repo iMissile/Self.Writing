@@ -166,6 +166,12 @@ ttf-dejavu-core \
 ttf-dejavu-extra \
 postgresql-server-dev-10
 ```
+Возня с `Roboto Condensed`
+```
+sudo apt-get -y --no-install-recommends install \
+fonts-roboto
+```
+
 Ставим вместе с рекомендованными пакетами
 ```
 sudo apt-get -y install \

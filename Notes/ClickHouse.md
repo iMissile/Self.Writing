@@ -117,3 +117,22 @@ CSV, TabSeparated, JSONEachRow are more portable: you may import/export data to 
 `clickhouse-client < table.sql`
 4. Restore of data:
 `clickhouse-client --query="INSERT INTO table FORMAT Native" < table.native`
+
+
+# Сценарий работы с базой логов X5 (выгрузки прошлого года)
+- Смотрим список существующих БД командой `select distinct(database) from system.columns`
+- Переключаем базу с дефолтной командой: `use X5`
+- Посмотрим размеры таблиц таким [запросом](https://gist.github.com/sanchezzzhak/511fd140e8809857f8f1d84ddb937015):
+```
+SELECT table,
+    formatReadableSize(sum(bytes)) as size,
+    min(min_date) as min_date,
+    max(max_date) as max_date
+    FROM system.parts
+    WHERE active
+GROUP BY table
+```
+- Посмотрим структуру полей таблицы с логами командой: `desc x5logs_piter_2018`
+- Посмотрим содержание отдельной записи командой: `select * from x5logs_piter_2018 limit 1 format Vertical`
+- Посмотрим сэмплы сообщений от подсистемы лояльности командой: `select * from x5logs_piter_2018 where subsys == 'PlLoyaltyCardManagement' and like(more, '%PROCESS TRANSACTION %') limit 10`
+

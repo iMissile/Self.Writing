@@ -97,14 +97,15 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/bookdown.pdf)
 - [Hands-on Deep Reinforcement Learning, published by Packt](https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On)
 - COOL! [Getting Started in R. An eight-page pdf guide for "Getting Started in R".](https://github.com/eddelbuettel/gsir-te)
-- ModernDive. [An Introduction to Statistical and Data Sciences via R](https://moderndive.com/)
-- ModernDive dev version. [Statistical Inference via Data Science in R](https://moderndive.netlify.com/)
 - [Modern R with the tidyverse](https://b-rodrigues.github.io/modern_R/) by Bruno Rodrigues, 2018-12-16
 - [Geocomputation with R](https://geocompr.robinlovelace.net/) by Robin Lovelace, Jakub Nowosad, Jannes Muenchow, 2018-12-22
 - Style Guides
 	- [The tidyverse style guide](https://style.tidyverse.org/) by Hadley Wickham
 	- [R Style Guide](http://jef.works/R-style-guide/). Best practices for readable, sharable, and verifiable R code. [Исходники](https://github.com/JEFworks/R-style-guide)
 	- MS: [One Page R Data Science. Coding with Style](https://essentials.togaware.com/StyleO.pdf) by Graham.Williams@togaware.com, Visit https://essentials.togaware.com/onepagers for more Essentials.
+	- [Google's R Style Guide](https://google.github.io/styleguide/Rguide.xml)
+- ModernDive. [An Introduction to Statistical and Data Sciences via R](https://moderndive.com/)
+- ModernDive dev version. [Statistical Inference via Data Science in R](https://moderndive.netlify.com/)
 - [An Introduction to Statistical and Data Sciences via R](https://moderndive.com/) by Chester Ismay and Albert Y. Kim, July 21, 2018
 - [edav.info/](https://edav.info/index.html). This resource is specifically tailored to the GR5702 Exploratory Data Analysis and Visualization course offered at Columbia University. However, anyone interested in working with data in R will benefit from perusing these pages. Happy coding!
 - [Text Mining with R. A Tidy Approach](https://www.tidytextmining.com/) by Julia Silge and David Robinson
@@ -112,6 +113,9 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [The caret Package](http://topepo.github.io/caret/)
 - [This is the work-in-progress repo for the book Mastering Shiny by Joe Cheng](https://github.com/jcheng5/shiny-book)
 
+
+## R general
+- COOL! COOL! [A comprehensive survey of the types of things in R. 'mode' and 'class' and 'typeof' are insufficient](https://stackoverflow.com/questions/8855589/a-comprehensive-survey-of-the-types-of-things-in-r-mode-and-class-and-type)
 
 # VPN
 - [ExpressVPN](https://www.expressvpn.com/ru/order)
@@ -298,6 +302,9 @@ Usually this was not intended and the join needs to be changed. The word 'cartes
 	- [Sample random rows within each group in a data.table](https://stackoverflow.com/questions/16289182/sample-random-rows-within-each-group-in-a-data-table)
 	- [from data table, randomly select one row per group](https://stackoverflow.com/questions/33887083/from-data-table-randomly-select-one-row-per-group)
 - [Subset data frame based on number of rows per group](https://stackoverflow.com/questions/20204257/subset-data-frame-based-on-number-of-rows-per-group)
+- Проблемки с кавычками внутри строк в delimited файле:
+	- [fread: quotes in quoted string fields #1299 {Closed}](https://github.com/Rdatatable/data.table/issues/1299)
+	- [fread should un-escape escaped quotes in fields #1109 {Open}](https://github.com/Rdatatable/data.table/issues/1109)
  
 
 # DS
@@ -469,6 +476,7 @@ header-includes:
 - [Troubleshooting: Printing UTF-8 (Russian) in R-markdown, knitr](https://bookdown.org/gorodnichy/utf8-markdown-problem/utf8-markdown-problem.html)
 - [Escaping % symbol when passed as a string from R chunk to knitr](https://tex.stackexchange.com/questions/430376/escaping-symbol-when-passed-as-a-string-from-r-chunk-to-knitr)
 - [How to escape a pipe char in a code statement in a markdown table?](https://stackoverflow.com/questions/17319940/how-to-escape-a-pipe-char-in-a-code-statement-in-a-markdown-table)
+- [how to render DT::datatables in a pdf using rmarkdown?](https://stackoverflow.com/questions/44543858/how-to-render-dtdatatables-in-a-pdf-using-rmarkdown)
 
 # Visualization
 Когда спрашивают про визуализацию:
@@ -496,6 +504,7 @@ https://plot.ly/products/cloud/
 - [Animating Data Transformations](https://omnianalytics.io/2018/08/30/animating-the-data-transformation-process-with-gganimate/)
 - [Animating Data Transformations: Part II](https://omnianalytics.io/2019/01/09/animating-data-transformations-part-ii/)
 - [Animating Data Transformations III – separate()](https://omnianalytics.io/blog/)
+- COOL! [Under Pi : gganimate test around quadrature of the circle](https://guillaumepressiat.github.io//blog/2019/05/under-pi)
 
 
 ## R color palettes
@@ -521,6 +530,132 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 - [EXTRACTING COLOURS FROM YOUR IMAGES WITH IMAGE QUANTIZATION](https://chichacha.netlify.com/2019/01/19/extracting-colours-from-your-images-with-image-quantization/)
 - [Collection of most color palettes in a single R package](https://www.hvitfeldt.me/r/paletteer/)
 
+# 15.05.2019
+## R
+- COOL! [Introducing trelliscopejs](https://ryanhafen.com/blog/trelliscopejs/)
+- COOL! [Trelliscope](https://hafen.github.io/trelliscopejs/#trelliscope)
+Trelliscope is a visualization approach based on the idea of “small multiples” or “Trellis Display”, where data are split into groups and a plot is made for each group, with the resulting plots arranged in a grid. 
+- [Assign multiple objects to .GlobalEnv from within a function](https://stackoverflow.com/questions/9726705/assign-multiple-objects-to-globalenv-from-within-a-function). Функция `list2env`.
+- [Assign a value to a name in an environment](https://stat.ethz.ch/R-manual/R-devel/library/base/html/assign.html)
+- [Change R default library path using .libPaths in Rprofile.site fails to work](https://stackoverflow.com/questions/15170399/change-r-default-library-path-using-libpaths-in-rprofile-site-fails-to-work)
+```
+I found what I think is a solution here (thank you Carl Schwarz at SFU) for adding a personal library that is permanently (you don't have to define it each session) recognized whether using R or Rstudio, and Rstudio treats it as the default on my Mac machine. I hadn't seen it laid out this explicitly on SO, so I summarized the steps they provided, for Windows and then for Mac.
+For a Windows 7 OS:
+Create a directory on the drive where you want to have your personal library, e.g. C:\User\Rlibs (or another that you have permissions to)
+Search for/go to "Edit environment variable for your account" in the Windows search bar to edit control panel settings
+Click "New..." in the middle of the "Environmental Variables" window
+In the "New User Variable" window, type R_LIBS for the "Variable name", and the path to the personal library directory you created, e.g. C:\User\Rlibs
+Click OK and you should see the Variable/Value pair in the User variables window
+Click OK again
+Now when you start R (or Rstudio) and type the command .libPaths() you should see the personal library you created as well as the R system library.
+For Mac:
+In your "Home" or "username" directory create a folder called Rlibs
+Launch the Terminal application
+Type: echo "R_LIBS=~/Rlibs"> .Renvrion Make sure case matches.
+Type ls -a to see the full list of files in the directory, which should now include .Renvrion
+Verify that the .Renviron file has been set properly: more .Renviron
+Launch R/Rstudio and type .libPaths() and you should see the new path to your personal library.
+```
+- [Changing Default packages instalation directory in R studio](https://support.rstudio.com/hc/en-us/community/posts/200698036-Changing-Default-packages-instalation-directory-in-R-studio). `How to edit R_LIBS_USER to change where your package library resides`
+
+# 14.05.2019
+## CH
+- [clickhouse get tables size](https://gist.github.com/sanchezzzhak/511fd140e8809857f8f1d84ddb937015)
+- [Logs for Shiny apps](https://github.com/dreamRs/shinylogs)
+- COOL! [Using R and H2O Isolation Forest to identify product anomalies during the manufacturing process.](https://laranikalranalytics.blogspot.com/2019/05/using-r-and-h2o-isolation-forest-to.html)
+- [Faster Way to Slice Dataframe by Row](https://statcompute.wordpress.com/2019/05/12/faster-way-to-slice-dataframe-by-row/)
+
+# 13.05.2019
+## R
+- [The Secret of Landusia: A Text Adventure in the R Language](https://lucidmanager.org/text-adventure/)
+- [Introduction to statistics with origami (and R examples)](https://r-posts.com/introduction-to-statistics-with-origami-and-r-examples/)
+- [Easily explore your data using the summarytools package](https://www.radmuzom.com/2019/05/11/easily-explore-your-data-using-the-summarytools-package/)
+- [Big Data-4: Webserver log analysis with RDDs, Pyspark, SparkR and SparklyR](https://gigadom.in/2019/05/11/big-data-4-webserver-log-analysis-with-rdds-pyspark-sparkr-and-sparklyr/)
+- [What is “Tidy Data”?](http://www.win-vector.com/blog/2019/05/what-is-tidy-data/)
+- [winedApp: Wine Recommendation and Data Analysis Web App](https://nycdatascience.com/blog/student-works/winedapp-wine-recommendation-and-data-analysis-web-app/)
+
+# 10.05.2019
+## R
+- [10 Steps to Better Graphs in R](https://michaeltoth.me/10-steps-to-better-graphs-in-r.html)
+- [CONVERTING INDIVIDUAL BINARY VECTORS TO A VALUE BASED ON COLUMN NAMES](https://drdoane.com/converting-individual-binary-vectors-to-a-value-based-on-column-names/)
+- [Granular Weighted Binning by Generalized Boosted Model](https://statcompute.wordpress.com/2019/05/07/granular-weighted-binning-by-generalized-boosted-model/)
+- [(Bootstraping) Follow-Up Contrasts for Within-Subject ANOVAs](https://mattansb.blogspot.com/2019/05/bootstraping-follow-up-contrasts-for.html)
+
+
+http://film-like.com/movie/23311-chernilnoe-serdtse
+http://film-like.com/movie/39267-pokahontas
+http://film-like.com/movie/18609-temnie-nachala-zolotoy-kompas
+http://film-like.com/movie/9890-temniy-kristall
+http://film-like.com/movie/25847-malish
+http://film-like.com/movie/13635-zakoldovannaya-ella
+http://film-like.com/movie/31203-matilda
+http://film-like.com/movie/66302-missis-chudo-v-manhettene
+http://film-like.com/movie/75454-chto-esli
+
+Paul Romero Rob King Heroes of Might and Magic III Soundtrack torrent
+
+# 08.05.2019
+## R
+- vroom:
+	- [Not working in Windows (indefinitely hangs)? #98 {Closed}](https://github.com/r-lib/vroom/issues/98). `...That is really interesting, specifying progress = FALSE solved the issue for me as well...`
+
+
+# 07.05.2019
+## R
+- [Install Google Fonts on Ubuntu gist](https://gist.github.com/lightonphiri/5811226a1fba0b3df3be73ff2d5b351c)
+- [R markdown df_print options](https://stackoverflow.com/questions/40893742/r-markdown-df-print-options)
+- [Using Modules in R](https://www.inwt-statistics.com/read-blog/using-modules-in-r.html)
+- COOL! Добавить в пример анализ производительности. [Fast ways in R to get the first row of a data frame grouped by an identifier {closed}](https://stats.stackexchange.com/questions/7884/fast-ways-in-r-to-get-the-first-row-of-a-data-frame-grouped-by-an-identifier)
+
+## Байесовский подход
+- [АНАЛИЗ МАЛЫХ ДАННЫХ. Байесовский подход](https://dyakonov.org/2018/07/30/%D0%B1%D0%B0%D0%B9%D0%B5%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4/)
+- [Путь воина. Естественная частота против байесовского подхода](http://baguzin.ru/wp/estestvennaya-chastota-protiv-bajesov/)
+- [Введение в Байесовские методы](https://habr.com/ru/post/170545/)
+
+# 06.05.2019
+## R
+- [10 полезных фич R, о которых вы могли не знать](https://habr.com/ru/company/skillbox/blog/449508/). Автор оригинала: Keith McNulty
+- [How to generate custom visuals in Power BI using R](https://towardsdatascience.com/custom-html-visuals-in-power-bi-using-r-2b0494894ff). Easily create interactive R powered HTML visuals in Power BI
+- [SHINY VS. DASH: A SIDE-BY-SIDE COMPARISON](https://www.rkingdc.com/blog/2019/3/6/shiny-vs-dash-a-side-by-side-comparison)
+- [ZOOMING IN ON MAPS WITH SF AND GGPLOT2](https://datascience.blog.wzb.eu/2019/04/30/zooming-in-on-maps-with-sf-and-ggplot2/)
+- [Detailed Guide to the Bar Chart in R with ggplot](https://michaeltoth.me/detailed-guide-to-the-bar-chart-in-r-with-ggplot.html)
+- Прикольно. [Process Mining (Part 3/3): More analysis and visualizations](https://notast.netlify.com/post/process-mining-part-3-3-more-analysis-and-visualizations/)
+- COOL! [Bayesian models in R](https://poissonisfish.wordpress.com/2019/05/01/bayesian-models-in-r/)
+- COOL! [rTRNG ON CRAN NOW!](https://mirai-solutions.ch/news/2019/05/04/rTRNG-on-CRAN/)
+	- COOL! [Tina's Random Number Generator Library](https://www.numbercrunch.de/trng/)
+- COOL! [Benchmark of popular graph/network packages](https://www.timlrx.com/2019/05/05/benchmark-of-popular-graph-network-packages/)
+```
+The benchmark was carried out using a Google Compute n1-standard-16 instance (16vCPU Haswell 2.3GHz, 60 GB memory). I compare 5 different packages:
+ - graph-tool
+ - igraph
+ - networkit
+ - networkx
+ - snap
+```
+
+- [Replacing character(0) with NA](https://stackoverflow.com/questions/50800345/replacing-character0-with-na/50800683)
+- COOL! [dplyr: Convert values to NA](https://dplyr.tidyverse.org/reference/na_if.html)
+
+## R Lib & Updates
+- Как управлять директориями для установки библиотек?
+	- [`.libPaths()`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/libPaths.html) -- команда для управления
+	- Интересный вопрос и объяснение. [Why is .libPaths() different in RStudio vs. R?](https://support.rstudio.com/hc/en-us/articles/115014830827-Why-is-libPaths-different-in-RStudio-vs-R-)
+	- [Changing R default library path using .libPaths in Rprofile.site fails to work](http://stackoverflow.com/questions/15170399/changing-r-default-library-path-using-libpaths-in-rprofile-site-fails-to-work)
+	- [Changing R default library path using .libPaths in Rprofile.site fails to work](http://stackoverflow.com/questions/15170399/changing-r-default-library-path-using-libpaths-in-rprofile-site-fails-to-work)
+Месторасположение файла `C:\Program Files\R\R-3.3.0\etc\Rprofile.site`. В ProgramFiles записать не может, поэтому RStudio гонит сюда:
+`Installing package into ‘C:/Users/<User>/Documents/R/win-library/3.3’`
+
+**Резюме**: после апдейта R переименовываем директорию `C:/Users/Ilya/Documents/R/win-library/3.x` в `3.y`
+
+
+# 30.04.2019
+## R
+- COOL! [Interact with PostGIS from R](https://rtask.thinkr.fr/blog/interact-with-postgis-from-r-with-dbi-and-sf/)
+- [Compute R2s and other performance indices for all your models!](https://easystats.github.io/blog/posts/performance_presentation/)
+- COOL! Навеяло темой whisker из поста "@We are R-Ladies". [Templated output in R](https://webbedfeet.netlify.com/post/templated-output-in-r/)
+- [A Few Old Books](https://rviews.rstudio.com/2019/04/25/a-few-old-books/), 2019-04-25 by Greg Wilson
+- COOL! [Join, split, and compress PDF files with pdftools](https://ropensci.org/technotes/2019/04/24/pdftools-22/)
+
 
 # 29.04.2019
 ## R
@@ -529,6 +664,12 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 - [March 2019: "Top 40" New CRAN Packages](https://rviews.rstudio.com/2019/04/26/march-2019-top-40-new-cran-packages/)  2019-04-26 by Joseph Rickert
 - COOL! [Shiny v1.3.2](https://blog.rstudio.com/2019/04/26/shiny-1-3-2/)
 - [Checking reverse dependencies: the tiny way](http://www.markvanderloo.eu/yaRb/2019/04/26/checking-reverse-dependencies-the-tiny-way/)
+- COOL! [Setting up continuous multi-platform R package building, checking and testing with R-Hub, Docker and GitLab CI/CD for free, with a working example](https://jozef.io/r107-multiplatform-gitlabci-rhub/)
+- COOL! [Quick Hit: Scraping javascript-“enabled” Sites with {htmlunit}](https://rud.is/b/2019/04/27/quick-hit-scraping-javascript-enabled-sites-with-htmlunit/)
+- Надо бы отдельно почитать. [11,264 Regressions in One Tidy Plot](https://joachim-gassen.github.io/2019/04/11264-regressions-in-one-tidy-plot/)
+- Интересный практический кейс. [Teaching Factory Physics Flow Benchmarking with R and Many-Objective Visuals](https://www.pedronl.com/post/teaching-factory-physics-flow-benchmarking-r-many-objective-visuals/)
+- [The Mrs. White probability puzzle](http://nc233.com/2019/04/the-mrs-white-probability-puzzle/)
+- COOL! [RStudio’s multiple cursors rule!](https://embracingtherandom.com/r/rstudio/rstudio-multiple-cursors-rule/)
 
 
 # 25.04.2019
@@ -598,9 +739,21 @@ To rename keys recursively, see the Q defining translate_keys(f) below.
 - COOL! [Replace an attribute or key in JSON using jq or sed](https://stackoverflow.com/questions/42969020/replace-an-attribute-or-key-in-json-using-jq-or-sed)
 - COOL! Сравнительный анализ. [Flatten a JSON document using jq](https://stackoverflow.com/questions/24698188/flatten-a-json-document-using-jq)
 - [While unnesting an object in jq, how can I avoid restating labels at each stage in the pipeline?](https://stackoverflow.com/questions/54210566/while-unnesting-an-object-in-jq-how-can-i-avoid-restating-labels-at-each-stage). another way is to use `reduce` and `setpath`
+- Показывают как можно заменить `leaf_path` на `path(scalar)` [how to get parent objects keys in nested object in jq?](https://stackoverflow.com/questions/49448001/how-to-get-parent-objects-keys-in-nested-object-in-jq)
+- [`paths(scalars)` bug? #1163 {Open}](https://github.com/stedolan/jq/issues/1163)
 - [tomnomnom/gron](https://github.com/tomnomnom/gron) Make JSON greppable!
 - [Flatten nested JSON using jq](https://stackoverflow.com/questions/37540717/flatten-nested-json-using-jq)
-- В картинкахю [Using jq with nested objects](http://kamicut.cc/2014/11/19/using-jq-nested-objects.html)
+- В картинках. [Using jq with nested objects](http://kamicut.cc/2014/11/19/using-jq-nested-objects.html)
+- [jq: Filtering missing keys](https://markhneedham.com/blog/2015/11/14/jq-filtering-missing-keys/)
+- [jq: error - Cannot iterate over null (null)](https://markhneedham.com/blog/2015/10/09/jq-error-cannot-iterate-over-null-null/)
+- [Docker Error - “jq: error: Cannot iterate over null”](https://stackoverflow.com/questions/28213232/docker-error-jq-error-cannot-iterate-over-null)
+- [How to test for the presense/absence of a field (even if null)? #74 {Closed}](https://github.com/stedolan/jq/issues/74)
+- [Return empty string instead of "null" with "jq --raw-output" ? #354 {Closed}](https://github.com/stedolan/jq/issues/354)
+- [join two json files based on common key with jq utility or alternative way from command line](https://stackoverflow.com/questions/39830426/join-two-json-files-based-on-common-key-with-jq-utility-or-alternative-way-from)
+- [How to merge two JSON objects in R by keeping the JSON structure?](https://stackoverflow.com/questions/43376058/how-to-merge-two-json-objects-in-r-by-keeping-the-json-structure)
+- [Combining pages of JSON data with jsonlite](https://cran.r-project.org/web/packages/jsonlite/vignettes/json-paging.html)
+- Разбираемся с вложенными JSON [Can jq handle nested JSON data?](https://stackoverflow.com/questions/37020712/can-jq-handle-nested-json-data)
+- [Working with JSON in bash using `jq`](https://medium.com/cameron-nokes/working-with-json-in-bash-using-jq-13d76d307c4). jq is a powerful tool that lets you read, filter, and write JSON in bash
     
 
 # 17.04.2019

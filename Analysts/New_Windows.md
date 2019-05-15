@@ -43,6 +43,7 @@
 - [How to upgrade from a 32-bit to 64-bit version of Windows 10](https://www.windowscentral.com/how-upgrade-32-bit-64-bit-version-windows-10)
 
 # Переход на SSD
+- [Samsung SSD 850 EVO 250GB – Problems And Their Solutions](http://webfrst.com/samsung-ssd-850-evo-250gb-problems-solutions/)
 - [Программа SSD Ready](https://www.ssdready.com/ssdready-ru/). Узнайте как долго у вас будет работать SSD диск
 - [RAMDisk, или что делать если у вас в компьютере 128 гигабайт оперативной памяти](https://geektimes.ru/company/kingston_technology/blog/277610/)
 - RAMDisks:
