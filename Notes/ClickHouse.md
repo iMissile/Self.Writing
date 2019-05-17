@@ -119,6 +119,12 @@ CSV, TabSeparated, JSONEachRow are more portable: you may import/export data to 
 `clickhouse-client --query="INSERT INTO table FORMAT Native" < table.native`
 
 
+# Переименовывание колонок
+- [Change column name in a table in Clickhouse](https://stackoverflow.com/questions/47349878/change-column-name-in-a-table-in-clickhouse)
+- [Запрос `ALTER`](https://clickhouse.yandex/docs/ru/query_language/alter/)
+- [ALTER TABLE ADD COLUMN и RENAME не работает для таблиц с Engine=Dictionary. #2069 {Open}](https://github.com/yandex/ClickHouse/issues/2069)
+
+
 # Сценарий работы с базой логов X5 (выгрузки прошлого года)
 - Смотрим список существующих БД командой `select distinct(database) from system.columns`
 - Переключаем базу с дефолтной командой: `use X5`

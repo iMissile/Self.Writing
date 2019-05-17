@@ -1,5 +1,6 @@
 - [The JSON Formatter](https://jsonformatter.curiousconcept.com/)
 - [JSON Editor Online](http://jsoneditoronline.org/)
+- [XML Formatter](https://jsonformatter.org/xml-formatter)
 - [Различные онлайн инструменты для проверки и преобразования](https://www.danstools.com/)
 - [Телеграмм бот «Telegram Proxy (SOCKS5) Bot»](https://ru.telegram-store.com/catalog/bots/proxy_socks5_bot/)
 https://tmall.aliexpress.com/item/Edifier-W830BT-1/1000005465785.html
@@ -530,8 +531,36 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 - [EXTRACTING COLOURS FROM YOUR IMAGES WITH IMAGE QUANTIZATION](https://chichacha.netlify.com/2019/01/19/extracting-colours-from-your-images-with-image-quantization/)
 - [Collection of most color palettes in a single R package](https://www.hvitfeldt.me/r/paletteer/)
 
+# 17.05.2019
+## R
+- [Personalized treatment effects with model4you](https://eeecon.uibk.ac.at/~zeileis/news/model4you/)
+- [rOpenSci Dev Guide 0.2.0: Updates Inside and Out](https://ropensci.org/blog/2019/05/16/dev-guide-update/)
+- Learning. [FOUR WAYS TO REVERSE A STRING IN R](http://theautomatic.net/2019/05/17/four-ways-to-reverse-a-string-in-r/)
+- COOL! Parallel & DB.
+```
+Database connections can never travel across process boundaries no matter what.
+
+You can't share database connections between different workers in any of the general purpose R parallel programming packages because the workers are separate processes. However, you can create one connection per worker, and have the workers use that for each task that they execute.
+```
+	- [Database connection pooling for R parallel process {duplicate}](https://stackoverflow.com/questions/24622317/database-connection-pooling-for-r-parallel-process)
+	- COOL! [foreach %dopar% + RPostgreSQL](https://stackoverflow.com/questions/3902796/foreach-dopar-rpostgresql/24634121#24634121)
+	- [Parallel processing and querying SQL with dplyr or pool: MySQL server has gone away](https://stackoverflow.com/questions/45421879/parallel-processing-and-querying-sql-with-dplyr-or-pool-mysql-server-has-gone-a)
+	- [“foreach” loop : Using all cores in R (especially if we are sending sql queries inside foreach loop)](https://stackoverflow.com/questions/6407219/foreach-loop-using-all-cores-in-r-especially-if-we-are-sending-sql-queries/8505748#8505748)
+- [Using the pool package (basics)](https://shiny.rstudio.com/articles/pool-basics.html)
+- [A guide to parallelism in R](https://privefl.github.io/blog/a-guide-to-parallelism-in-r/)
+- It's more efficient to create the database connection once per worker, rather than once per task. [foreach %dopar% + RPostgreSQL](https://stackoverflow.com/questions/3902796/foreach-dopar-rpostgresql/24634121#24634121)
+
+
+
+# 16.05.2019
+## R
+- [A tour of the tibble package](https://www.tjmahr.com/tibble-package-tour/)
+- [Warning to use enframe() without specifying package/having it available in dplyr #578 {Closed}](https://github.com/tidyverse/tibble/issues/578)
+- COOL! [Timing Working With a Row or a Column from a data.frame](http://www.win-vector.com/blog/2019/05/timing-working-with-a-row-or-a-column-from-a-data-frame/)
+
 # 15.05.2019
 ## R
+- COOL! [Upgrading to R 3.6.0 on a Mac – May 14, 2019](https://ibecav.github.io/update_libraries/)
 - COOL! [Introducing trelliscopejs](https://ryanhafen.com/blog/trelliscopejs/)
 - COOL! [Trelliscope](https://hafen.github.io/trelliscopejs/#trelliscope)
 Trelliscope is a visualization approach based on the idea of “small multiples” or “Trellis Display”, where data are split into groups and a plot is made for each group, with the resulting plots arranged in a grid. 
@@ -562,8 +591,13 @@ Launch R/Rstudio and type .libPaths() and you should see the new path to your pe
 ## CH
 - [clickhouse get tables size](https://gist.github.com/sanchezzzhak/511fd140e8809857f8f1d84ddb937015)
 - [Logs for Shiny apps](https://github.com/dreamRs/shinylogs)
+- [Using R and H2O to identify product anomalies during the manufacturing process](http://laranikalranalytics.blogspot.com/2019/05/using-r-and-h2o-isolation-forest-to.html)
 - COOL! [Using R and H2O Isolation Forest to identify product anomalies during the manufacturing process.](https://laranikalranalytics.blogspot.com/2019/05/using-r-and-h2o-isolation-forest-to.html)
+- [Production Line Stations Maintenance Prediction - Process Flow](https://laranikalranalytics.blogspot.com/2019/05/production-line-stations-maintenance.html)
 - [Faster Way to Slice Dataframe by Row](https://statcompute.wordpress.com/2019/05/12/faster-way-to-slice-dataframe-by-row/)
+- [A Magical Mystery Tour of the LowCardinality Data Type](https://www.altinity.com/blog/2019/3/27/low-cardinality)
+- [Truncate table в Clickhouse](https://ruhighload.com/truncate+table+%D0%B2+clickhouse)
+
 
 # 13.05.2019
 ## R
@@ -577,6 +611,7 @@ Launch R/Rstudio and type .libPaths() and you should see the new path to your pe
 # 10.05.2019
 ## R
 - [10 Steps to Better Graphs in R](https://michaeltoth.me/10-steps-to-better-graphs-in-r.html)
+- [A Detailed Guide to ggplot colors](https://michaeltoth.me/a-detailed-guide-to-ggplot-colors.html)
 - [CONVERTING INDIVIDUAL BINARY VECTORS TO A VALUE BASED ON COLUMN NAMES](https://drdoane.com/converting-individual-binary-vectors-to-a-value-based-on-column-names/)
 - [Granular Weighted Binning by Generalized Boosted Model](https://statcompute.wordpress.com/2019/05/07/granular-weighted-binning-by-generalized-boosted-model/)
 - [(Bootstraping) Follow-Up Contrasts for Within-Subject ANOVAs](https://mattansb.blogspot.com/2019/05/bootstraping-follow-up-contrasts-for.html)
@@ -593,6 +628,8 @@ http://film-like.com/movie/66302-missis-chudo-v-manhettene
 http://film-like.com/movie/75454-chto-esli
 
 Paul Romero Rob King Heroes of Might and Magic III Soundtrack torrent
+https://www.youtube.com/watch?v=SkuPY3sweZQ&list=RDSkuPY3sweZQ&start_radio=1
+https://www.youtube.com/watch?v=3V3HeRnRNH8
 
 # 08.05.2019
 ## R
@@ -864,6 +901,7 @@ Some people, when faced with a problem, think, “I know, I’ll use binary.” 
 - [Select multiple elements from a list](https://stackoverflow.com/questions/12119019/select-multiple-elements-from-a-list). `mylist[c(5,7,9)]` should do it.
 - [Removing html tags from a string in R](https://stackoverflow.com/questions/17227294/removing-html-tags-from-a-string-in-r)
 - [textclean: Text Cleaning Tools](https://cran.r-project.org/web/packages/textclean/index.html)
+	- `remotes::install_github("trinker/textclean")` & `utils::packageVersion('textclean')`
 - [textshape: Tools for Reshaping Text](https://cran.r-project.org/web/packages/textshape/index.html). Tools that can be used to reshape and restructure text data.
 
 # 03.04.2019
