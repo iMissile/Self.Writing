@@ -306,6 +306,8 @@ Usually this was not intended and the join needs to be changed. The word 'cartes
 - Проблемки с кавычками внутри строк в delimited файле:
 	- [fread: quotes in quoted string fields #1299 {Closed}](https://github.com/Rdatatable/data.table/issues/1299)
 	- [fread should un-escape escaped quotes in fields #1109 {Open}](https://github.com/Rdatatable/data.table/issues/1109)
+- [Split text string in a data.table columns](https://stackoverflow.com/questions/18154556/split-text-string-in-a-data-table-columns). Update: From version 1.9.6 (on CRAN as of Sep'15), we can use the function tstrsplit() to get the results directly (and in a much more efficient manner):
+	- [tstrsplit. Strsplit And Transpose The Resulting List Efficiently](https://www.rdocumentation.org/packages/data.table/versions/1.12.2/topics/tstrsplit)
  
 
 # DS
@@ -450,7 +452,6 @@ header-includes:
 	- [Knitr's best hidden gem: spin](http://deanattali.com/2015/03/24/knitrs-best-hidden-gem-spin/). Stop knitting & start spinning - spin can help you write reports much faster and avoid repeating yourself
 	- [ezknitr: R package to avoid the typical working directory pain when using knitr](http://deanattali.com/blog/ezknitr-package/)
 - [Compiling Reports from R Scripts](http://rmarkdown.rstudio.com/articles_report_from_r_script.html)
-- [dynamically-generate-rmarkdown-chunks-to-display-datatable](https://gist.github.com/ReportMort/e54ec050d97d79996189)
 - [Rmarkdown and DT: result do not render](http://stackoverflow.com/questions/33343241/rmarkdown-and-dt-result-do-not-render)
 - [Is it possible to have sortable(Interactive) table in rMarkdown?](http://stackoverflow.com/questions/27120002/is-it-possible-to-have-sortableinteractive-table-in-rmarkdown)
 - [Howto include js dependencies of DT datatable in Rmarkdown using knitr and pandoc](http://stackoverflow.com/questions/28303827/howto-include-js-dependencies-of-dt-datatable-in-rmarkdown-using-knitr-and-pando)
@@ -478,6 +479,14 @@ header-includes:
 - [Escaping % symbol when passed as a string from R chunk to knitr](https://tex.stackexchange.com/questions/430376/escaping-symbol-when-passed-as-a-string-from-r-chunk-to-knitr)
 - [How to escape a pipe char in a code statement in a markdown table?](https://stackoverflow.com/questions/17319940/how-to-escape-a-pipe-char-in-a-code-statement-in-a-markdown-table)
 - [how to render DT::datatables in a pdf using rmarkdown?](https://stackoverflow.com/questions/44543858/how-to-render-dtdatatables-in-a-pdf-using-rmarkdown)
+- Dynamic chunk sizes:
+	- Проблема: 
+@BrandonBertelsen I understand that, but knitr has to open the graphical device (with an appropriate size) before evaluating the chunk, so you have to evaluate the code in a previous chunk in order to use the objects in a latter chunk. – Yihui Xie Mar 12 '13 at 16:09
+	- COOL! [How to Change fig.width and fig.height Dynamically Within an R Markdown Chunk](http://michaeljw.com/blog/post/subchunkify/)
+	- [Dynamic height and width for knitr plots](https://stackoverflow.com/questions/15365829/dynamic-height-and-width-for-knitr-plots)
+	- [dynamically-generate-rmarkdown-chunks-to-display-datatable](https://gist.github.com/StevenMMortimer/e54ec050d97d79996189)
+	- [Figure size in R Notebook document](https://support.rstudio.com/hc/en-us/community/posts/213106048-Figure-size-in-R-Notebook-document)
+- [Creating Dynamic Documents with RMarkdown and Knitr](http://rpubs.com/ivim/Rmd-v1)
 
 # Visualization
 Когда спрашивают про визуализацию:
@@ -530,6 +539,72 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 	- [Curtis Kephart. All Named Colors in R](http://www.cazaar.com/r_colors)
 - [EXTRACTING COLOURS FROM YOUR IMAGES WITH IMAGE QUANTIZATION](https://chichacha.netlify.com/2019/01/19/extracting-colours-from-your-images-with-image-quantization/)
 - [Collection of most color palettes in a single R package](https://www.hvitfeldt.me/r/paletteer/)
+
+# 22.05.2019
+## Testing
+- [Nightwatch.js](https://nightwatchjs.org/) Browser automated testing, the easy way.
+
+## R Markdown
+- [Automated data report storytelling in R](https://datascienceplus.com/automated-data-report-storytelling-in-r/)
+- COOL! отличная подборка способов подачи информации: [AUTOMATED DATA REPORTS WITH R](https://www.cultureofinsight.com/blog/2018/10/22/2018-08-20-automated-data-reports-with-r/)
+	- [Сгенерированный отчет](https://paulc91.github.io/gapminder_reports/)
+	- [Сам скрипт](https://github.com/PaulC91/gapminder_reports/blob/master/report.Rmd)
+- COOL! Презентация [Branding and Automating Your Work with R Markdown](http://rpubs.com/jzadra/rconf2018)
+- [Scheduling R Markdown Reports via Email](http://www.analyticsforfun.com/2016/01/scheduling-r-markdown-reports-via-email.html)
+
+## R
+- COOL! [ggforce](https://ggforce.data-imaginist.com/index.html) is a package aimed at providing missing functionality to ggplot2 through the extension system introduced with ggplot2 v2.0.0. Broadly speaking ggplot2 has been aimed primarily at explorative data visualization in order to investigate the data at hand, and less at providing utilities for composing custom plots a la D3.js. ggforce is mainly an attempt to address these “shortcoming” (design choices might be a better description). The goal is to provide a repository of geoms, stats, etc. that are as well documented and implemented as the official ones found in ggplot2.
+	- [The ggforce Awakens (again)](https://www.data-imaginist.com/2019/the-ggforce-awakens-again/) Mar 7, 2019
+	- Очень хороший [пример аннотирования](https://gist.github.com/Ryo-N7/67ca1c364c342a82c4098918082ca445), взял из [твита](https://twitter.com/R_by_Ryo/status/1129773418184925184?s=20)
+
+- [Nightwatch.js](https://nightwatchjs.org/). Browser automated testing, the easy way.
+
+
+# 21.05.2019
+## R
+- COOL! [Exploring Nginx workers load arbitration](https://lin-techdet.blogspot.com/2019/05/exploring-nginx-workers-load-arbitration.html)
+- COOL! [panelr](https://panelr.jacob-long.com/)
+This is an R package designed to aid in the analysis of panel data, designs in which the same group of respondents/entities are contacted/measured multiple times. panelr provides some useful infrastructure, like a panel_data object class, as well as automating some emerging methods for analyses of these data.
+- COOL! [alastairrushworth/inspectdf](https://github.com/alastairrushworth/inspectdf). Tools for Exploring and Comparing Data Frames
+	- COOL! [Part 2: Simple EDA in R with inspectdf](https://www.littlemissdata.com/blog/inspectdf)
+	- [An example of the use of the inspectdf package](https://github.com/2622NSW/inspectdf)
+- COOL! [The Evolution of a ggplot (Ep. 1)](https://cedricscherer.netlify.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/). Posted by Cédric on Friday, May 17, 2019
+- [A new package for panel data analysis in R](https://www.jacob-long.com/post/panelr-intro/)
+- [From base R](https://stringr.tidyverse.org/articles/from-base.html) by Sara Stoudt
+- [digest](http://dirk.eddelbuettel.com/blog/2019/05/20/#digest_0.6.19) creates hash digests of arbitrary R objects (using the md5, sha-1, sha-256, sha-512, crc32, xxhash32, xxhash64, murmur32, and  spookyhash algorithms) permitting easy comparison of R language objects.
+- R notebook preview
+	- [3.2.1.4 Chunk output](https://bookdown.org/yihui/rmarkdown/notebook.html)
+Ordinary R Markdown documents are “knitted”, but notebooks are “previewed”. While the notebook preview looks similar to a rendered R Markdown document, the notebook preview does not execute any of your R code chunks. It simply shows you a rendered copy of the Markdown output of your document along with the most recent chunk output. This preview is generated automatically whenever you save the notebook (whether you are viewing it in RStudio or not); see the section beneath on the *.nb.html file for details.
+- Visualization. [Hue Color Comparisons](https://uwdata.github.io/color-naming-in-different-languages/vis/stacked-spectrum.html). These visualizations compare how languages name the hue colors (the brightest, most saturated colors)
+
+## R Pivot tables
+- COOL! [Introducing pivottabler](https://cran.r-project.org/web/packages/pivottabler/vignettes/v01-introduction.html)
+- [Create Awesome HTML Table with knitr::kable and kableExtra](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html)
+- [Scroll long pivot table (package rpivottable and knitr)](https://stackoverflow.com/questions/39820466/scroll-long-pivot-table-package-rpivottable-and-knitr)
+- [Tutorial on Pivot Tables and other Excel things you can also do in R - Witch Trials data](https://kimnewzealand.github.io/2018/07/19/excel-r-tutorial/)
+
+## R Markdown
+- COOL! [Create R Markdown reports and presentations even better with these 3 practical tips](https://jozef.io/r909-rmarkdown-tips/)
+- [R Markdown Theme Gallery](http://www.datadreaming.org/post/r-markdown-theme-gallery/)
+- [Adding custom CSS tags to an RMarkdown html document](https://stackoverflow.com/questions/29291633/adding-custom-css-tags-to-an-rmarkdown-html-document)
+
+# 20.05.2019
+## R
+- [What is QuantLib?](http://dirk.eddelbuettel.com/code/rquantlib.html)
+QuantLib, to quote in turn from its website, is aiming to provide a comprehensive software framework for quantitative finance. QuantLib is a free/open source library for modeling, trading, and risk management in real-life. QuantLib is written in C++ with a clean object model, and is then exported to different languages such as Python, Ruby, Guile, MzScheme, Java, Perl, … via SWIG. .
+	- [RQuantLib 0.4.9: Another small updates](http://dirk.eddelbuettel.com/code/rquantlib.html)
+- [For posterity: install {xml2} on GNU/Linux distros](https://www.brodrigues.co/blog/2019-05-18-xml2/)
+- Очень интересная функция `str_view`Ж 
+```
+ # Construct pattern of DOG in boundaries
+whole_dog_pattern <- whole_word("DOG")
+ # View matches to word "DOG"
+str_view(catcidents, pattern = whole_dog_pattern, match = TRUE)
+```
+- Обрезаем строку для вывода: [`str_trunc`: Truncate a character string.](https://stringr.tidyverse.org/reference/str_trunc.html)
+- COOL! [htmltidy](https://hrbrmstr.github.io/htmltidy/) — Tidy Up and Test XPath Queries on HTML and XML Content
+- [flatxml: Tools for Working with XML Files as R Dataframes](https://cran.r-project.org/web/packages/flatxml/index.html)
+
 
 # 17.05.2019
 ## R
@@ -3196,6 +3271,8 @@ get_os <- function() {
 	- `psych::describe` & `psych::describeBy`
 	- `skimr::skim`
 	- `summarytools::descr` & `summarytools::dfSummary`
+	- я нашел еще inspectdf & DataExplorer
+- COOL! [alastairrushworth/inspectdf](https://github.com/alastairrushworth/inspectdf). Tools for Exploring and Comparing Data Frames
 
 ## R
 - [Running Python inside the RStudio Server IDE](https://www.mango-solutions.com/blog/running-python-inside-the-rstudio-server-ide)
