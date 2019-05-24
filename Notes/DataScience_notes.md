@@ -79,6 +79,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas, Alison Presmanes Hill
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/) by Yihui Xie
 - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/) by Yihui Xie, J. J. Allaire, Garrett Grolemund
+- [Distill for R Markdown](https://rstudio.github.io/distill/). Scientific and technical writing, native to the web
 - [R Internals. R Core Team](https://colinfay.me/r-internals/)
 - [Efficient R programming](https://bookdown.org/csgillespie/efficientR/)
 - [Efficient R programming](https://csgillespie.github.io/efficientR/), Colin Gillespie, Robin Lovelace, 2017-04-10
@@ -113,6 +114,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [HTTP mocking and testing in R](https://ropensci.github.io/http-testing-book/)
 - [The caret Package](http://topepo.github.io/caret/)
 - [This is the work-in-progress repo for the book Mastering Shiny by Joe Cheng](https://github.com/jcheng5/shiny-book)
+- [The Complete ggplot2 Tutorial - Part1 | Introduction To ggplot2 (Full R code)](http://r-statistics.co/Complete-Ggplot2-Tutorial-Part1-With-R-Code.html)
 
 
 ## R general
@@ -539,6 +541,98 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 	- [Curtis Kephart. All Named Colors in R](http://www.cazaar.com/r_colors)
 - [EXTRACTING COLOURS FROM YOUR IMAGES WITH IMAGE QUANTIZATION](https://chichacha.netlify.com/2019/01/19/extracting-colours-from-your-images-with-image-quantization/)
 - [Collection of most color palettes in a single R package](https://www.hvitfeldt.me/r/paletteer/)
+- BBC Visual ggplot
+	- COOL! [BBC Visual and Data Journalism cookbook for R graphics](https://bbc.github.io/rcookbook/)
+	- [How the BBC Visual and Data Journalism team works with graphics in R](https://medium.com/bbc-visual-and-data-journalism/how-the-bbc-visual-and-data-journalism-team-works-with-graphics-in-r-ed0b35693535)
+	- [bbc/bbplot](https://github.com/bbc/bbplot). R package that helps create and export ggplot2 charts in the style used by the BBC News data team
+
+# 24.05.2019
+## R
+- [Create a CLI for R with npm](https://colinfay.me/create-r-cli-npm/)
+- [Easy quick PCA analysis in R](https://intobioinformatics.wordpress.com/2019/05/22/easy-quick-pca-analysis-in-r/)
+- COOL! [Comparing Frequentist, Bayesian and Simulation methods and conclusions](https://ibecav.netlify.com/post/comparing-frequentist-bayesian-and-simulation-methods-and-conclusions/)
+- [How can I view the computed varialbles computed by ggplot2 geom_boxplot?](https://stackoverflow.com/questions/39820118/how-can-i-view-the-computed-varialbles-computed-by-ggplot2-geom-boxplot)
+- COOL! Как достать информацию из построенного графика ggplot? `ggplot_build(gp)$data -> m`, там вся структура по слоям.
+	- [Get Quantile values from geom_boxplot()](https://stackoverflow.com/questions/34977882/get-quantile-values-from-geom-boxplot)
+	- [Extracting details](https://campus.datacamp.com/courses/data-visualization-with-ggplot2-part-3/ggplot2-internals?ex=13)
+- [How to add number of observations to a ggplot2 boxplot](https://medium.com/@gscheithauer/how-to-add-number-of-observations-to-a-ggplot2-boxplot-b22710f7ef80)
+- [How do I turn the numeric output of boxplot (with plot=FALSE) into something usable?](https://stackoverflow.com/questions/8844845/how-do-i-turn-the-numeric-output-of-boxplot-with-plot-false-into-something-usa)
+
+- COOL [Aligning labels with ggrepel](https://stackoverflow.com/questions/47492191/aligning-labels-with-ggrepel)
+- COOL! [Label line ends in time series with ggplot2](https://drsimonj.svbtle.com/label-line-ends-in-time-series-with-ggplot2). @drsimonj here with a quick share on making great use of the secondary y axis with ggplot2 – super helpful if you’re plotting groups of time series!
+- [Floating bar chart with trend line on secondary axis](https://stackoverflow.com/questions/45981366/floating-bar-chart-with-trend-line-on-secondary-axis)
+- [Label on the side of box plot in R - ggplot](https://stackoverflow.com/questions/50372943/label-on-the-side-of-box-plot-in-r-ggplot)
+- [The Complete ggplot2 Tutorial - Part1 | Introduction To ggplot2 (Full R code)](http://r-statistics.co/Complete-Ggplot2-Tutorial-Part1-With-R-Code.html)
+- [Generate Color Palettes](https://rpkgs.datanovia.com/ggpubr/reference/get_palette.html)
+Generate a palette of k colors from ggsci palettes, RColorbrewer palettes and custom color palettes. Useful to extend RColorBrewer and ggsci to support more colors.
+- [TOP R COLOR PALETTES TO KNOW FOR GREAT DATA VISUALIZATION](https://www.datanovia.com/en/blog/top-r-color-palettes-to-know-for-great-data-visualization/)
+- COOL! [How to create a color palette in R with more than 15 colors with ggplot2 #19 {Closed}](https://github.com/duttashi/visualizer/issues/19)
+- [#40 RCOLORBREWER : GET A LONGER PALETTE](https://www.r-graph-gallery.com/40-rcolorbrewer-get-a-longer-palette/)
+- [THE PAUL TOL 21-COLOR SALUTE](https://tradeblotter.wordpress.com/2013/02/28/the-paul-tol-21-color-salute/)
+- COOL! [Polychrome: Qualitative Palettes with Many Colors](https://cran.rstudio.com/web/packages/Polychrome/index.html). Tools for creating, viewing, and assessing qualitative palettes with many (20-30 or more) colors.
+- [colortools: Tools for colors in a Hue-Saturation-Value (HSV) color model](https://cran.r-project.org/web/packages/colortools/index.html). R package with handy functions to help users select and play with color schemes in an HSV color model
+- [Creating plots in R using ggplot2 - part 10: boxplots](http://t-redactyl.io/blog/2016/04/creating-plots-in-r-using-ggplot2-part-10-boxplots.html)
+- [HOW TO CREATE BEAUTIFUL COLOR PALETTES IN R](https://www.datanovia.com/en/blog/how-to-create-beautiful-color-palettes-in-r/)
+- [5 Steps on How to Generate a Color Function in R](https://quantdev.ssri.psu.edu/tutorials/generating-custom-color-palette-function-r)
+- COOL! [Creating corporate colour palettes for ggplot2](https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2)
+
+# 23.05.2019
+## R Markdown
+- COOL [Distill for R Markdown. Tables](https://rstudio.github.io/distill/tables.html)
+- [Replace column names in kable/R markdown](https://stackoverflow.com/questions/51432502/replace-column-names-in-kable-r-markdown). I am not sure where you got the advice to replace rownames, but it seems excessively complex. It is much easier just to use the built-in col.names argument within kable. This solution works for both HTML and LaTeX outputs:
+```
+df <- data.frame(A=c(1,2),B=c(4,2),C=c(3,4),D=c(8,7))
+knitr::kable(df, 
+             col.names = c("Space in name",
+                           "(Special Characters)",
+                           "$\\delta{m}_1$",
+                           "Space in name"))
+```
+- COOL! [Easily generate information-rich, publication-quality tables from R https://gt.rstudio.com](https://github.com/rstudio/gt)
+- [Shiny DT datatable to Rmarkdown](https://stackoverflow.com/questions/45844673/shiny-dt-datatable-to-rmarkdown)
+- [RMarkdown. Multi-output text colour](https://dr-harper.github.io/rmarkdown-cookbook/changing-font-colour.html).
+- [Per-chunk override of global df_print specification: default, kable, tibble, or paged #1403 {Open}](https://github.com/rstudio/rmarkdown/issues/1403). Hi, I would like to override the global df_print = c("default", "kable", "tibble", "paged") specification on a per-chunk basis.   Answer is:
+```
+We already have some means to override the default printing of table data. Let me know if the following R Markdown example is helpful:
+```
+---
+title: "DF Printing" 
+output:
+  html_document:
+    df_print: paged
+---
+```
+paged print
+```{r echo=TRUE, paged.print=TRUE}
+ggplot2::diamonds
+```
+
+default output
+```{r echo=TRUE, paged.print=FALSE}
+ggplot2::diamonds
+```
+
+kable output
+```{r echo=TRUE}
+knitr::kable(ggplot2::diamonds[1:10, ])
+```
+
+
+## R
+- COOL! [raivokolde/pheatmap](https://github.com/raivokolde/pheatmap). Pretty heatmaps
+- COOL! [smouksassi/ggquickeda](https://github.com/smouksassi/ggquickeda). ggplot and summary statistics quick exploration of data
+- [moodymudskipper/cutr](https://github.com/moodymudskipper/cutr). Enhanced cut And Useful Related Functions
+- [How to Calculate Percentile for Each Group in R and Exploratory](https://blog.exploratory.io/how-to-calculate-percentile-for-each-group-in-r-and-exploratory-4e6021f7fe10)
+- [GGPLOT LEGEND TITLE, POSITION AND LABELS](https://www.datanovia.com/en/blog/ggplot-legend-title-position-and-labels/)
+- STAT 545: [Regular Expression in R](https://stat545.com/block022_regular-expression.html) by Gloria Li and Jenny Bryan
+- [Import text file as single character string](https://stackoverflow.com/questions/9068397/import-text-file-as-single-character-string). 
+`string <- readChar("foo.txt", nchars=1e6)`
+
+
+## DS & ML
+- [Top 15 Evaluation Metrics for Classification Models](https://www.machinelearningplus.com/machine-learning/evaluation-metrics-classification-models-r/)
+- [daff](http://paulfitz.github.io/daff/). Ever wanted to compare tables as easily as you compare code? daff (think “data diff”) is for you.
+- [Vega-Lite](https://vega.github.io/vega-lite/) is a high-level grammar of interactive graphics. It provides a concise JSON syntax for rapidly generating visualizations to support analysis. Vega-Lite specifications can be compiled to Vega specifications.
 
 # 22.05.2019
 ## Testing
@@ -556,8 +650,7 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 - COOL! [ggforce](https://ggforce.data-imaginist.com/index.html) is a package aimed at providing missing functionality to ggplot2 through the extension system introduced with ggplot2 v2.0.0. Broadly speaking ggplot2 has been aimed primarily at explorative data visualization in order to investigate the data at hand, and less at providing utilities for composing custom plots a la D3.js. ggforce is mainly an attempt to address these “shortcoming” (design choices might be a better description). The goal is to provide a repository of geoms, stats, etc. that are as well documented and implemented as the official ones found in ggplot2.
 	- [The ggforce Awakens (again)](https://www.data-imaginist.com/2019/the-ggforce-awakens-again/) Mar 7, 2019
 	- Очень хороший [пример аннотирования](https://gist.github.com/Ryo-N7/67ca1c364c342a82c4098918082ca445), взял из [твита](https://twitter.com/R_by_Ryo/status/1129773418184925184?s=20)
-
-- [Nightwatch.js](https://nightwatchjs.org/). Browser automated testing, the easy way.
+- Интересный пакет. [recorder: Validate Predictors in New Data](http://smaakage85.netlify.com/2019/05/21/recorder-validate-new-data-for-predictions/)
 
 
 # 21.05.2019
@@ -565,13 +658,17 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 - COOL! [Exploring Nginx workers load arbitration](https://lin-techdet.blogspot.com/2019/05/exploring-nginx-workers-load-arbitration.html)
 - COOL! [panelr](https://panelr.jacob-long.com/)
 This is an R package designed to aid in the analysis of panel data, designs in which the same group of respondents/entities are contacted/measured multiple times. panelr provides some useful infrastructure, like a panel_data object class, as well as automating some emerging methods for analyses of these data.
+- [Comparing `panelr` and `plm`](https://www.jacob-long.com/post/comparing-panelr-and-plm/)
+- COOL [Panel data econometrics in R: the plm package](https://cran.r-project.org/web/packages/plm/vignettes/plmPackage.html)
 - COOL! [alastairrushworth/inspectdf](https://github.com/alastairrushworth/inspectdf). Tools for Exploring and Comparing Data Frames
-	- COOL! [Part 2: Simple EDA in R with inspectdf](https://www.littlemissdata.com/blog/inspectdf)
+	- COOL Часть 1. [Explore Your Dataset in R](https://www.littlemissdata.com/blog/simple-eda)
+	- COOL [Part 2: Simple EDA in R with inspectdf](https://www.littlemissdata.com/blog/inspectdf)
 	- [An example of the use of the inspectdf package](https://github.com/2622NSW/inspectdf)
 - COOL! [The Evolution of a ggplot (Ep. 1)](https://cedricscherer.netlify.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/). Posted by Cédric on Friday, May 17, 2019
 - [A new package for panel data analysis in R](https://www.jacob-long.com/post/panelr-intro/)
 - [From base R](https://stringr.tidyverse.org/articles/from-base.html) by Sara Stoudt
 - [digest](http://dirk.eddelbuettel.com/blog/2019/05/20/#digest_0.6.19) creates hash digests of arbitrary R objects (using the md5, sha-1, sha-256, sha-512, crc32, xxhash32, xxhash64, murmur32, and  spookyhash algorithms) permitting easy comparison of R language objects.
+	- COOL! [Timing hash functions with the bench package](https://www.jumpingrivers.com/blog/digest-timings-bench-package/)
 - R notebook preview
 	- [3.2.1.4 Chunk output](https://bookdown.org/yihui/rmarkdown/notebook.html)
 Ordinary R Markdown documents are “knitted”, but notebooks are “previewed”. While the notebook preview looks similar to a rendered R Markdown document, the notebook preview does not execute any of your R code chunks. It simply shows you a rendered copy of the Markdown output of your document along with the most recent chunk output. This preview is generated automatically whenever you save the notebook (whether you are viewing it in RStudio or not); see the section beneath on the *.nb.html file for details.
@@ -1146,6 +1243,17 @@ Simplifies regression tests by comparing objects produced by test code with earl
 ## R
 - COOL! [Compare data.table pipes and magrittr pipes](https://www.gl-li.com/2017/07/25/compare-data.table-pipes-and-magrittr-pipes/)
 - [How to build a pipeline from data.table to magrittr and back to data.table](https://stackoverflow.com/questions/28920623/how-to-build-a-pipeline-from-data-table-to-magrittr-and-back-to-data-table)
+- [gdemin/maditr](https://github.com/gdemin/maditr). Pipe-Style Interface for 'data.table'
+- [Using data.table with magrittr pipes: best of both worlds](https://martinctc.github.io/blog/using-data.table-with-magrittr-pipes-best-of-both-worlds/)
+```
+# Use data.table syntax
+flights_tb %>%
+  .[, carrier_flight := paste0(carrier,"_",flight)] %>%
+  .[,.(dep_delay = mean(dep_delay, na.rm = TRUE),
+       arr_delay = mean(arr_delay, na.rm = TRUE)), by = carrier_flight] %>%
+  dplyr::as_tibble() # Convert this back to a tibble (tidyverse) object
+```
+- [Using the microbenchmark package to compare the execution time of R expressions](https://www.gettinggeneticsdone.com/2015/01/microbenchmark-package-r-compare-runtime-r-expressions.html)
 - Learning. [DATA MANIPULATION IN R. HOMEDATA MANIPULATION IN RIDENTIFY AND REMOVE DUPLICATE DATA IN R](https://www.datanovia.com/en/lessons/identify-and-remove-duplicate-data-in-r/)
 
 # 12.03.2109
@@ -2561,6 +2669,7 @@ This is a two-in-one package which provides interfaces to both R and 'Python'. I
 	- [Code and graphs for the xkcd2048 comic](https://gitlab.com/b-rowlingson/xkcd2048)
 - [Visualize your Portfolio’s Performance and Generate a Nice Report with R](https://datascienceplus.com/visualize-your-portfolios-performance-and-generate-a-nice-report-with-r/)
 - [Discover and install useful RStudio addins](https://github.com/daattali/addinslist)
+- COOL! [smouksassi/ggquickeda](https://github.com/smouksassi/ggquickeda). ggplot and summary statistics quick exploration of data
 - COOL! [esquisse](https://github.com/dreamRs/esquisse)
 The purpose of this add-in is to let you explore your data quickly to extract the information they hold. You can only create simple plots, you won't be able to use custom scales and all the power of ggplot2. This is just the start!
 - COOL! [ggplot2 explorer](http://databall.co/shiny/shinyggplot/). I created this website to help all R learners to undestand how to plot beautiful/useful charts using the most popular vizualization package ggplot2. It won't teach you how to write a code, but definitely will show you how ggplot2 geoms look like, and how manipulating their arguments changes visualization. Few scrolls below you can find list of covered geoms and example of what they plot.

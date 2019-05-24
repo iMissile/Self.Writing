@@ -14,6 +14,9 @@
 	- `sudo -S apt-get dist-upgrade`
 	- `sudo -S apt-get autoremove`
 
+# Скачивание произвольного образа Windows
+- [](https://tb.rg-adguard.net/public.php)
+
 # Настройка приложений Windows 10
 - [Как включить всем привычный Просмотр Фотографий в Windows 10](http://g-ek.com/prosmotr-fotografij-v-windows-10)
 - [iPhone или iPad не синхронизируется с компьютером?](http://appleinsider.ru/iphone/iphone-ili-ipad-ne-sinxroniziruetsya-s-kompyuterom-est-reshenie.html) Есть решение. Если вы столкнулись с подобной проблемой, может помочь сброс папки Lockdown на Mac или Windows
@@ -202,3 +205,8 @@ Hey Guyz. I found a solution for settings and updates. Download this update [308
 `grant:r` - заменяет все текущие права, что имеет смысл в том конкретном случае когда (учетная запись, имевшая права, уже не существует), но далеко не всегда....
 - [Windows 7 и сброс прав доступа и владельца файлов](http://tt.erinome.net/2012/07/265)
 
+
+## Настройка VPN и браузеров
+- [How to disable images in firefox](https://support.mozilla.org/en-US/questions/981640)
+- [How to turn off images in Firefox](https://www.ghacks.net/2015/03/24/how-to-turn-off-images-in-firefox/)
+- [Image Block add-on](https://addons.mozilla.org/en-US/firefox/addon/image-block/)
