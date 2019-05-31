@@ -98,6 +98,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Feature Engineering and Selection: A Practical Approach for Predictive Models](http://www.feat.engineering/) by Max Kuhn and Kjell Johnson
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/bookdown.pdf)
 - [Hands-on Deep Reinforcement Learning, published by Packt](https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On)
+- [Hands-on Machine Learning with R](https://bradleyboehmke.github.io/HOML/) by Brad Boehmke & Brandon Greenwell, 2019-05-25
 - COOL! [Getting Started in R. An eight-page pdf guide for "Getting Started in R".](https://github.com/eddelbuettel/gsir-te)
 - [Modern R with the tidyverse](https://b-rodrigues.github.io/modern_R/) by Bruno Rodrigues, 2018-12-16
 - [Geocomputation with R](https://geocompr.robinlovelace.net/) by Robin Lovelace, Jakub Nowosad, Jannes Muenchow, 2018-12-22
@@ -115,6 +116,9 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [The caret Package](http://topepo.github.io/caret/)
 - [This is the work-in-progress repo for the book Mastering Shiny by Joe Cheng](https://github.com/jcheng5/shiny-book)
 - [The Complete ggplot2 Tutorial - Part1 | Introduction To ggplot2 (Full R code)](http://r-statistics.co/Complete-Ggplot2-Tutorial-Part1-With-R-Code.html)
+- [The Tidynomicon. A Brief Introduction to R for Python Programmers](https://gvwilson.github.io/tidynomicon/)
+- [Mining of Massive Datasets](http://www.mmds.org/)
+- [Circular Visualization in R](https://jokergoo.github.io/circlize_book/book/) by Zuguang Gu. This is the documentation of the [circlize](https://cran.r-project.org/package=circlize) package. Examples in the book are generated under version 0.4.7.
 
 
 ## R general
@@ -517,6 +521,9 @@ https://plot.ly/products/cloud/
 - [Animating Data Transformations: Part II](https://omnianalytics.io/2019/01/09/animating-data-transformations-part-ii/)
 - [Animating Data Transformations III – separate()](https://omnianalytics.io/blog/)
 - COOL! [Under Pi : gganimate test around quadrature of the circle](https://guillaumepressiat.github.io//blog/2019/05/under-pi)
+- [CREATE ANIMATION IN R : LEARN BY EXAMPLES](https://www.listendata.com/2019/05/create-animation-in-r-learn-with.html)
+- [Using R and H2O Isolation Forest to predict car battery failures.](https://laranikalranalytics.blogspot.com/2019/05/predicting-car-battery-failure-with-r.html)
+- [Sun, 26 May 2019: nanotime 0.2.4](http://dirk.eddelbuettel.com/blog/2019/05/26/#nanotime_0.2.4)
 
 
 ## R color palettes
@@ -545,6 +552,104 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 	- COOL! [BBC Visual and Data Journalism cookbook for R graphics](https://bbc.github.io/rcookbook/)
 	- [How the BBC Visual and Data Journalism team works with graphics in R](https://medium.com/bbc-visual-and-data-journalism/how-the-bbc-visual-and-data-journalism-team-works-with-graphics-in-r-ed0b35693535)
 	- [bbc/bbplot](https://github.com/bbc/bbplot). R package that helps create and export ggplot2 charts in the style used by the BBC News data team
+
+# R useful plugins
+- COOL! [smouksassi/ggquickeda](https://github.com/smouksassi/ggquickeda). ggplot and summary statistics quick exploration of data
+- COOL! [esquisse](https://github.com/dreamRs/esquisse)
+The purpose of this add-in is to let you explore your data quickly to extract the information they hold. You can only create simple plots, you won't be able to use custom scales and all the power of ggplot2. This is just the start!
+- COOL! [ggplot2 explorer](http://databall.co/shiny/shinyggplot/). I created this website to help all R learners to undestand how to plot beautiful/useful charts using the most popular vizualization package ggplot2. It won't teach you how to write a code, but definitely will show you how ggplot2 geoms look like, and how manipulating their arguments changes visualization. Few scrolls below you can find list of covered geoms and example of what they plot.
+	- [Исходники ggplot2 visual explorer](https://github.com/AlienDeg/shinyexplorer)
+- COOL! [blogdown Insert Image addin](http://lcolladotor.github.io/2018/03/07/blogdown-insert-image-addin/#.XOvoMYgzaUl)
+- COOL! [A new RStudio addin to facilitate inserting tables in Rmarkdown documents](https://lbusett.netlify.com/post/a-new-rstudio-addin-to-facilitate-inserting-tables-in-rmarkdown-documents/)
+- COOL! [Radiant – Business analytics using R and Shiny](https://radiant-rstats.github.io/docs/)
+- COOL! [ryantimpe/rspivot](https://github.com/ryantimpe/rspivot). RStudio addin to view data frames as pivot tables. View data as values, growth rates, and shares.
+	- [Introduction to rspivot](https://ryantimpe.github.io/rspivot/articles/rspivot.html) by Ryan Timpe, 2018-01-25
+- [jbryer/DTedit](https://github.com/jbryer/DTedit). Editable DataTables for shiny apps
+- COOL! [Trelliscope](https://hafen.github.io/trelliscopejs/#trelliscope)
+Trelliscope is a visualization approach based on the idea of “small multiples” or “Trellis Display”, where data are split into groups and a plot is made for each group, with the resulting plots arranged in a grid.
+	- COOL! [Introducing trelliscopejs](https://ryanhafen.com/blog/trelliscopejs/)
+
+
+## Local Sensitivity & min-hash. Работа с текстом
+- [Mining of Massive Datasets](http://www.mmds.org/)
+- [Locality-sensitive hashing (LSH[1]) — вероятностный метод понижения размерности многомерных данных.](https://ru.wikipedia.org/wiki/Locality-sensitive_hashing)
+- [Jaccard index](https://en.m.wikipedia.org/wiki/Jaccard_index)
+- [Locality Sensitive Hashing in R](https://github.com/dselivanov/LSHR)
+LSHR - fast and memory efficient package for near-neighbor search in high-dimensional data. Two LSH schemes implemented at the moment:
+ 	- Minhashing for jaccard similarity
+	- Sketching (or random projections) for cosine similarity. Most of ideas are based on brilliant Mining of Massive Datasets book.
+- [Building a Recommendation Engine with Locality-Sensitive Hashing (LSH) in Python](https://www.learndatasci.com/tutorials/building-recommendation-engine-locality-sensitive-hashing-lsh-python/)
+- [Locality Sensitive Hashing](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134). An effective way of reducing the dimensionality of your data
+- [Locality sensitive hashing — LSH explained](https://medium.com/engineering-brainly/locality-sensitive-hashing-explained-304eb39291e4)
+- SO:
+	- [Efficient string similarity grouping](https://stackoverflow.com/questions/48058104/efficient-string-similarity-grouping)
+	- [Text clustering with Levenshtein distances](https://stackoverflow.com/questions/21511801/text-clustering-with-levenshtein-distances)
+	- [Find matching groups of strings in R](https://stackoverflow.com/questions/48993829/find-matching-groups-of-strings-in-r)
+	- [r stringdist or levenshtein.distance to replace strings](https://stackoverflow.com/questions/33284322/r-stringdist-or-levenshtein-distance-to-replace-strings)
+- `textreuse`: [Minhash and locality-sensitive hashing](https://cran.r-project.org/web/packages/textreuse/vignettes/textreuse-minhash.html)
+- [Joyce C Ho](https://joyceho.github.io/). Assistant Professor, Emory University.
+	- [CS 584 - Big Data Analytics](https://joyceho.github.io/course/cs584_s16/)
+Course Description
+The course covers scalable machine learning and data mining algorithms for large/complex data. Topics include large-scale optimization techniques, hashing, recommendation systems, and tensor factorization. This will be structured as a seminar course with emphasis on public data sets such as Kaggle competitions, MovieLens, and various healthcare datasets. There will be introductory lectures that set the context and provide reviews of relevant material.
+
+
+# 31.05.2019
+## R
+- COOL! Learning. [GAM IN R by NOAM ROSS](https://noamross.github.io/gams-in-r-course/). A Free, Interactive Course using mgcv
+- [Circular Visualization in R](https://jokergoo.github.io/circlize_book/book/) by Zuguang Gu. This is the documentation of the [circlize](https://cran.r-project.org/package=circlize) package. Examples in the book are generated under version 0.4.7.
+- COOL! визуализация вложенных структур. [Chapter 12. Nested zooming](https://jokergoo.github.io/circlize_book/book/nested-zooming.html)
+- [DENDROGRAM](https://www.r-graph-gallery.com/dendrogram/) A dendrogram or tree diagram allows to illustrate the hierarchical organisation of several entities. For example, we often use it to make family trees. It is constituted of a root node, which give birth to several nodes that end by giving leaf nodes (the
+
+# 29.05.2019
+## R
+- [emayili: Sending Email from R](https://datawookie.netlify.com/blog/2019/05/emayili-sending-email-from-r/). 2019-05-27  R Andrew B. Collier
+- Отличный учебный материал.[Demystifying Regular Expressions in R](https://blog.rsquaredacademy.com/regular-expression-in-r/). Beginners guide to regular expressions in R
+- [The 'see' package: beautiful figures for easystats](https://easystats.github.io/blog/posts/see_presentation/)
+	- [easystats/see](https://github.com/easystats/see). Visualisation toolbox for beautiful and publication-ready figures https://easystats.github.io/see/
+- [startup - run R startup files once per hour, day, week, ...](https://www.jottr.org/2019/05/26/startup-sometimes/)
+- Bob Rudis. [docxtractr: Extract Data Tables and Comments from 'Microsoft' 'Word' Documents](https://cran.r-project.org/web/packages/docxtractr/index.html)
+'Microsoft Word' 'docx' files provide an 'XML' structure that is fairly straightforward to navigate, especially when it applies to 'Word' tables and comments. Tools are provided to determine table count/structure, comment count and also to extract/clean tables and comments from 'Microsoft Word' 'docx' documents. There is also nascent support for '.doc' files.
+
+# 28.05.2019
+## DS
+- COOL! [Calculus 1 — A Must Know Concept For Every Professional](https://medium.com/fintechexplained/calculus-1-a-must-know-concept-for-every-professional-debd9c14f476)
+- [What is the difference between Python 2.7 and Python 3.7?](https://www.quora.com/What-is-the-difference-between-Python-2-7-and-Python-3-7)
+
+## R
+- [Using String Distance {stringdist} To Handle Large Text Factors, Cluster Them Into Supersets
+Practical walkthroughs on machine learning, data exploration and finding insight.](https://amunategui.github.io/stringdist/)
+- [Creating a Plot Window of a Particular Size](https://stackoverflow.com/questions/2129952/creating-a-plot-window-of-a-particular-size)
+- [rotating dendogram x axis label in R](https://stackoverflow.com/questions/42200229/rotating-dendogram-x-axis-label-in-r)
+- [Beautiful dendrogram visualizations in R: 5+ must known methods - Unsupervised Machine Learning](http://www.sthda.com/english/wiki/beautiful-dendrogram-visualizations-in-r-5-must-known-methods-unsupervised-machine-learning)
+- [ggdendro: Create Dendrograms and Tree Diagrams Using 'ggplot2'](https://cran.r-project.org/web/packages/ggdendro/index.html)
+This is a set of tools for dendrograms and tree plots using 'ggplot2'. The 'ggplot2' philosophy is to clearly separate data from the presentation. Unfortunately the plot method for dendrograms plots directly to a plot device without exposing the data. The 'ggdendro' package resolves this by making available functions that extract the dendrogram plot data. The package provides implementations for tree, rpart, as well as diana and agnes cluster diagrams.
+- COOL! [Adding tables to posts](https://blogdown-demo.rbind.io/2018/01/31/adding-tables-to-posts/)
+
+
+# 27.05.2019
+## R
+- COOL! [How to interactively examine any R code - 4 ways to not just read the code, but delve into it step-by-step](https://jozef.io/r916-exploring-r-code-interactively/)
+- [Ariel Muldoon blog](https://aosmith.rbind.io/). Там много чего есть про использование ggplot.
+	- COOL [The small multiples plot: how to combine ggplot2 plots with one shared axis](https://aosmith.rbind.io/2019/05/13/small-multiples-plot/)
+	- [Embedding subplots in ggplot2 graphics](https://aosmith.rbind.io/2019/04/22/embedding-subplots/)
+- [The teachR's::cheat sheet](https://adisarid.github.io/post/2019-03-12-the_teachr_cheat_sheet/)
+- [interactions](https://interactions.jacob-long.com/)
+This package consists of a number of tools that pertain to the analysis and exploration of statistical interactions in the context of regression. Some of these features, especially those that pertain to visualization, are not exactly impossible to do oneself but are tedious and error-prone when done “by hand.” Most things in interactions were once part of the jtools package and have been spun off to this package for clarity and simplicity.
+- Katya Ognyanova. [Static and dynamic network visualization with R](https://kateto.net/network-visualization)
+- [redoc - Reversible Reproducible Documents](https://noamross.github.io/redoc/)
+redoc is a package to enable a two-way R Markdown-Microsoft Word workflow. It generates Word documents that can be de-rendered back into R Markdown, retaining edits on the Word document, including tracked changes.
+- COOL. Презентация [Nine Months of #tidytuesday](https://shiny.john-coene.com/scrollytell/). Each  node is a twitter user, and each  is one tweet or more.
+	- [Official repo for the #tidytuesday project](https://github.com/rfordatascience/tidytuesday). A weekly social data project in R.
+	- [TidyTuesday - A weekly social data project in R](https://thomasmock.netlify.com/post/tidytuesday-a-weekly-social-data-project-in-r/)
+- COOL [drsimonj/corrr](https://github.com/drsimonj/corrr). R package for exploring correlations
+- [projmgr](https://emilyriederer.github.io/projmgr/index.html)
+projmgr aims to better integrate project management into your workflow and free up time for more exciting tasks like R coding and data analysis. Since many R users and programmers use GitHub as a home for their analysis, the goal of projmgr is to streamline project management with these same tools.
+- [metR](https://eliocamp.github.io/metR/)
+metR packages several functions and utilities that make R better for handling meteorological data in the tidy data paradigm. It started mostly sa a packaging of assorted wrapers and tricks that I wrote for my day to day work as a researcher in atmospheric sciences. Since then, it has grown organically and for my own needs and feedback from users.
+- COOL! [daranzolin/d3rain](https://github.com/daranzolin/d3rain). An htmlwidget bringing D3 drip to R 💦 ✨ 📊
+- [dirkschumacher/encryptedRmd](https://github.com/dirkschumacher/encryptedRmd). 🔑 Password protected markdown html reports in R
+- [ESTIMATES ON TRAINING VS. VALIDATION SAMPLES](https://freakonometrics.hypotheses.org/58157)
+
 
 # 24.05.2019
 ## R
@@ -575,6 +680,8 @@ Generate a palette of k colors from ggsci palettes, RColorbrewer palettes and cu
 - [HOW TO CREATE BEAUTIFUL COLOR PALETTES IN R](https://www.datanovia.com/en/blog/how-to-create-beautiful-color-palettes-in-r/)
 - [5 Steps on How to Generate a Color Function in R](https://quantdev.ssri.psu.edu/tutorials/generating-custom-color-palette-function-r)
 - COOL! [Creating corporate colour palettes for ggplot2](https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2)
+- COOL! [Multiple color (and fill) scales with ggplot2](https://eliocamp.github.io/codigo-r/2018/09/multiple-color-and-fill-scales-with-ggplot2/)
+	- [eliocamp/ggnewscale](https://github.com/eliocamp/ggnewscale). Multiple Fill and Color Scales in `ggplot2`
 
 # 23.05.2019
 ## R Markdown
@@ -874,6 +981,7 @@ The benchmark was carried out using a Google Compute n1-standard-16 instance (16
 - COOL! [Shiny v1.3.2](https://blog.rstudio.com/2019/04/26/shiny-1-3-2/)
 - [Checking reverse dependencies: the tiny way](http://www.markvanderloo.eu/yaRb/2019/04/26/checking-reverse-dependencies-the-tiny-way/)
 - COOL! [Setting up continuous multi-platform R package building, checking and testing with R-Hub, Docker and GitLab CI/CD for free, with a working example](https://jozef.io/r107-multiplatform-gitlabci-rhub/)
+- COOL! [How to interactively examine any R code - 4 ways to not just read the code, but delve into it step-by-step](https://jozef.io/r916-exploring-r-code-interactively/)
 - COOL! [Quick Hit: Scraping javascript-“enabled” Sites with {htmlunit}](https://rud.is/b/2019/04/27/quick-hit-scraping-javascript-enabled-sites-with-htmlunit/)
 - Надо бы отдельно почитать. [11,264 Regressions in One Tidy Plot](https://joachim-gassen.github.io/2019/04/11264-regressions-in-one-tidy-plot/)
 - Интересный практический кейс. [Teaching Factory Physics Flow Benchmarking with R and Many-Objective Visuals](https://www.pedronl.com/post/teaching-factory-physics-flow-benchmarking-r-many-objective-visuals/)

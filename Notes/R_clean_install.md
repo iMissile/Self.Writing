@@ -232,7 +232,7 @@ sudo apt install r-base
 `sudo --preserve-env=PATH -i`
 
 ### Ставим R пакеты
-- Возникла проблемка в RStudio Server, выдаевт в ноутбук ошибку "" . 
+- Возникла проблемка в RStudio Server, выдает в ноутбук ошибку "" . 
 Должно лечиться установкой библиотеки libpango (для генерации png)
 `sudo apt-get install libpango1.0-dev`. 
 	- Детали [здесь](https://support.rstudio.com/hc/en-us/community/posts/200642948-RStudio-Server-unable-to-open-connection-to-X11-display).

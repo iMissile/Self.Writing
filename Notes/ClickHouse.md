@@ -99,6 +99,25 @@ ORDER BY
 
 # Запрос для просмотра активных запросов
 
+```
+SELECT
+    query_id,
+    user,
+    os_user,
+    client_name,
+    elapsed,
+    is_cancelled,
+    read_rows,
+    read_bytes,
+    total_rows_approx,
+    written_rows,
+    written_bytes,
+    memory_usage,
+    peak_memory_usage
+FROM system.processes
+FORMAT Vertical
+```
+
 # Запрос для просмотра пространства имен БД и таблиц
 См. [источник](https://clickhouse.yandex/docs/ru/operations/system_tables/)
 `select distinct(database) from system.columns`
