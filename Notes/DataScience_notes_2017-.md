@@ -557,6 +557,7 @@ ggplot(data=data.frame(x=c(0:25))) + geom_point(size=8, aes(x=x,y=x,shape=x)) +
 - COOL! [pool package on CRAN](https://blog.rstudio.com/2017/11/17/pool-0-1-3/)
 - [Six tips for running a successful unconference](https://ropensci.org/blog/2017/11/17/unconf-sixtips/)
 - [padr version 0.4.0 now on CRAN](https://edwinth.github.io/blog/padr-v04/)
+- [padr is updated to 0.5.0](https://edwinth.github.io/blog/padr-v-0-5-0/)
 - [How to combine point and boxplots in timeline charts with ggplot2 facets](https://shirinsplayground.netlify.com/2017/11/combine_point_boxplot_ggplot/)
 - [Statebins Reimagined](https://rud.is/b/2017/11/18/statebins-reimagined/)
 - [RStudio Keyboard Shortcuts for Pipes](http://www.win-vector.com/blog/2017/11/rstudio-keyboard-shortcuts-for-pipes/)
@@ -1777,6 +1778,7 @@ The script below illustrates how to add one label per stack in a stacked bar cha
 	- [Tips and tricks on using R to query data in Power BI](http://blog.revolutionanalytics.com/2017/08/query-editor-tips.html)
 	- [Power BI Documentation. Using R in Query Editor](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-r-in-query-editor/)
 	- [Tips and Tricks for R scripts in the query editor in Power BI](http://www.thebiccountant.com/2017/08/25/tips-and-tricks-for-r-scripts-in-the-query-editor-in-power-bi/)
+	- [R with Power BI: Import, Transform, Visualize and Share](http://blog.revolutionanalytics.com/2016/08/powerbi-and-r.html)
 - [Debugging R code using R, RStudio and wrapper functions](https://www.youtube.com/watch?v=-P9UzQuJSH8&feature=youtu.be&list=PLAKBwakacHbQT51nPHex1on3YNCCmggZA)
 - [Unbottling “.msg” Files in R](https://rud.is/b/2017/08/25/unbottling-msg-files-in-r/)
 

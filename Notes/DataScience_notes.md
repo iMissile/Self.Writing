@@ -592,6 +592,94 @@ LSHR - fast and memory efficient package for near-neighbor search in high-dimens
 Course Description
 The course covers scalable machine learning and data mining algorithms for large/complex data. Topics include large-scale optimization techniques, hashing, recommendation systems, and tensor factorization. This will be structured as a seminar course with emphasis on public data sets such as Kaggle competitions, MovieLens, and various healthcare datasets. There will be introductory lectures that set the context and provide reviews of relevant material.
 
+# 13.06.2019
+## R
+- [Overview of the CRAN checks API](https://blog.r-hub.io/2019/06/10/cran-checks-api/)
+- 'pi: predict/infer' [Introduction to Interactive Graphics in R with plotly](https://blog.methodsconsultants.com/posts/introduction-to-interactive-graphics-in-r-with-plotly/)
+- [reticulate, virtualenv, and Python in Linux](https://rviews.rstudio.com/2019/06/10/reticulate-virtualenv-and-python-in-linux/) by Roland Stevenson
+- COOL! [rTRNG: ADVANCED PARALLEL RNG IN R](https://mirai-solutions.ch/news/2019/06/10/rTRNG-avanced-parallel-RNG-R/)
+- COOL! [Shiny apps need more info! – our new shiny.info package](https://appsilon.com/more-info-for-shiny-apps/)
+
+# 11.06.2019
+## R
+- COOL! [drake: A Pipeline Toolkit for Reproducible Computation at Scale](https://cran.r-project.org/web/packages/drake/index.html)
+	- [The drake R Package User Manual](https://ropenscilabs.github.io/drake-manual/) by Will Landau, Kirill Müller, Alex Axthelm, Jasper Clarkberg, Lorenz Walthert
+	- []
+- COOL! Regex Performance etc. [What R function to use for regex capture groups?](https://stackoverflow.com/questions/43968519/what-r-function-to-use-for-regex-capture-groups)
+
+# 10.06.2019
+## DS
+- [Reader Challenge: Have Some Fun with Apple’s WWDC 2019 Keynote Subtitles & Show Your Work](https://www.r-bloggers.com/reader-challenge-have-some-fun-with-apples-wwdc-2019-keynote-subtitles-show-your-work/)
+
+## R
+- [maximum accepted value for fig.width knitr option](https://stackoverflow.com/questions/46649891/maximum-accepted-value-for-fig-width-knitr-option)
+- [R Markdown - variable output name](https://stackoverflow.com/questions/28500096/r-markdown-variable-output-name)
+- COOL [VISUALIZATION + DESIGN. BREWER PALETTES](http://mkweb.bcgsc.ca/brewer/)
+- Factors:
+	- [Cookbook for R. Renaming levels of a factor](http://www.cookbook-r.com/Manipulating_data/Renaming_levels_of_a_factor/)
+	- [Be the boss of your factors](https://stat545.com/block029_factors.html)
+	- [Categorical Variables](https://draganapavlovich.com/2018/09/07/categorical-variables/)
+	- [Creating a named list from two vectors (names, values)](https://stackoverflow.com/questions/17842705/creating-a-named-list-from-two-vectors-names-values)
+
+# 07.06.2019
+## R
+- [Coding Random Forests in 100 lines of code*](https://www.statworx.com/de/blog/coding-random-forests-in-100-lines-of-code/)
+- [Introducing the new rOpenSci docs server](https://ropensci.org/technotes/2019/06/07/ropensci-docs/)
+- [Handling Variable Time Series Efficiently in ClickHouse](https://www.altinity.com/blog/2019/5/23/handling-variable-time-series-efficiently-in-clickhouse)
+
+# 06.06.2019
+## R
+- [Email Automation for Google Trends](Email Automation for Google Trends)
+- [Linear algebra in R](https://datascienceplus.com/linear-algebra-in-r/)
+- [Visualizations for Algorithmic Trading in R](https://datascienceplus.com/visualizations-for-algorithmic-trading-in-r/)
+
+## CH
+- [Работа с JOIN в Clickhouse](https://ruhighload.com/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0+%D1%81+join+%D0%B2+clickhouse)
+
+# 05.06.2019
+## DS
+```
+ - Big data: Create huge datasets. Insights will be obvious!
+ - Data science: Play with data. Visualize it. Insights will be obvious!
+ - Machine learning: Feed data into cool algorithms. Insights will be obvious!
+ - Statistics: The insights will never obvious.
+```
+- COOL! COOL! [Using AWK and R to parse 25tb](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/)
+
+## R
+- COOL! [Add row to dataframe](https://stackoverflow.com/questions/28467068/add-row-to-dataframe)
+- tibble. [Add rows to a data frame](https://tibble.tidyverse.org/reference/add_row.html)
+- COOL! Performance benchmarks. [Append an object to a list in R in amortized constant time, O(1)?](Append an object to a list in R in amortized constant time, O(1)?)
+
+
+# 04.06.2019
+## R
+- [Learning R: Permutations and Combinations with base R](http://blog.ephorie.de/learning-r-permutations-and-combinations-with-base-r)
+- [Using cosine similarity to find matching documents: a tutorial using Seneca's letters to his friend Lucilius](https://www.brodrigues.co/blog/2019-06-04-cosine_sim/)
+- [Become a Bayesian master with bayestestR (0.2)](https://easystats.github.io/blog/posts/bayestestr_v2/)
+- [Pareto Models for Top Incomes](https://github.com/freakonometrics/TopIncomes/) by Arthur Charpentier & Emmanuel Flachaire
+
+## YAML
+- [In YAML, how do I break a string over multiple lines?](https://stackoverflow.com/questions/3790454/in-yaml-how-do-i-break-a-string-over-multiple-lines). ! There are 5 6 NINE (or 63*, depending how you count) different ways to write multi-line strings in YAML.
+- [YAML Multiline](https://yaml-multiline.info/). Find the right syntax for your YAML multiline strings
+
+
+# 03.06.2019
+## R
+- [Interactive charts with chartbookR](https://kilianreber.netlify.com/post/interactive-charts-with-chartbookr/). Creating impressive interactive charts with chartbookR
+- [RODBC helper function](http://hutsons-hacks.info/rodbc-helper-function)
+- COOL! [Making a Command Line HTML Rendering Script for “The Art of the Command Line” (in R)](https://rud.is/b/2019/05/31/making-a-command-line-html-rendering-script-for-the-art-of-the-command-line-in-r/)
+- COOL! [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)
+- COOL! [envnames: Track User-Defined Environment Names](https://cran.r-project.org/web/packages/envnames/index.html)
+	- COOL! [Getting an environment's name in R: the envnames package](http://www.milanor.net/blog/envnames-package/)
+- [HERE IS YOUR DATA](https://drdoane.com/here-is-your-data/)
+- [Running cross_validate from cvms in parallel](http://ludvigolsen.dk/running-cross_validate-from-cvms-in-parallel/?lang=en)
+- [Trawling Through iOS Backups For Treasure (a.k.a. How to fish for target files in iOS backups) with R](https://rud.is/b/2019/06/02/trawling-through-ios-backups-for-treasure-a-k-a-how-to-fish-for-target-files-in-ios-backups-with-r/)
+- COOL! [Shiny Database App (CRUD)](http://ipub.com/shiny-crud-app/)
+- [How to start a new package with testing in R](https://trinostics.blogspot.com/2019/05/how-to-start-new-package-with-testing.html)
+- [taskscheduleR: Schedule R Scripts and Processes with the Windows Task Scheduler](https://cran.r-project.org/web/packages/taskscheduleR/index.html)
+Schedule R scripts/processes with the Windows task scheduler. This allows R users to automate R processes on specific time points from R itself.
+
 
 # 31.05.2019
 ## R
@@ -4610,6 +4698,7 @@ Error in x[[method]](...) : attempt to apply non-function
 - Предыдущий результат, опубликован в виде html: [Regex Performance](https://rpubs.com/jonclayden/regex-performance)
 - COOL! [re2r Benchmark](https://qinwenfeng.com/re2r_doc/benchmark.html)
 - [How do I speed up text searches in R?](https://stackoverflow.com/questions/19458724/how-do-i-speed-up-text-searches-in-r)
+- [jonclayden/ore. An R interface to the Onigmo regular expression library](https://github.com/jonclayden/ore)
 - [regular expressions in base R: 'perl=TRUE' vs. the default (PCRE vs. TRE)](https://stackoverflow.com/questions/47240375/regular-expressions-in-base-r-perl-true-vs-the-default-pcre-vs-tre?rq=1)
 - online отладка регулярных выражений [Regex 101](https://regex101.com/)
 - [In between a rock and a conditional join](https://www.mango-solutions.com/blog/in-between-a-rock-and-a-conditional-join). Тут как раз про "Fuzzy wuzzy join".

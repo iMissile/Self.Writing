@@ -210,3 +210,10 @@ Hey Guyz. I found a solution for settings and updates. Download this update [308
 - [How to disable images in firefox](https://support.mozilla.org/en-US/questions/981640)
 - [How to turn off images in Firefox](https://www.ghacks.net/2015/03/24/how-to-turn-off-images-in-firefox/)
 - [Image Block add-on](https://addons.mozilla.org/en-US/firefox/addon/image-block/)
+
+## Password Manager
+- [Достаём мастер-пароль из заблокированного менеджера паролей 1Password 4](https://habr.com/ru/post/441166/)
+- [Bitwarden](https://bitwarden.com/). Solve your password management problems. The easiest and safest way for individuals, teams, and business organizations to store, share, and sync sensitive data.
+- [Password Managers: Under the Hood of Secrets Management](https://www.securityevaluators.com/casestudies/password-manager-hacking/). February 19, 2019
+- [Альтернативы LastPass. Сравнительная оценка шести парольных менеджеров](https://habr.com/ru/post/434314/)
+- [You were not born to remember passwords](https://www.enpass.io/)
