@@ -314,7 +314,16 @@ Usually this was not intended and the join needs to be changed. The word 'cartes
 	- [fread should un-escape escaped quotes in fields #1109 {Open}](https://github.com/Rdatatable/data.table/issues/1109)
 - [Split text string in a data.table columns](https://stackoverflow.com/questions/18154556/split-text-string-in-a-data-table-columns). Update: From version 1.9.6 (on CRAN as of Sep'15), we can use the function tstrsplit() to get the results directly (and in a much more efficient manner):
 	- [tstrsplit. Strsplit And Transpose The Resulting List Efficiently](https://www.rdocumentation.org/packages/data.table/versions/1.12.2/topics/tstrsplit)
- 
+- [data.table: transforming subset of columns with a function, row by row](https://stackoverflow.com/questions/36841942/data-table-transforming-subset-of-columns-with-a-function-row-by-row)
+- [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)
+- [Use equivalent of purrr:::map to iterate through data.table](https://stackoverflow.com/questions/47917614/use-equivalent-of-purrrmap-to-iterate-through-data-table)
+- data.table joins
+	- COOL! [How to do joins with data.table](https://gist.github.com/nacnudus/ef3b22b79164bbf9c0ebafbf558f22a0)
+	- [Left join using data.table](https://stackoverflow.com/questions/34598139/left-join-using-data-table)
+	- [JOINing data in R using data.table](https://rstudio-pubs-static.s3.amazonaws.com/52230_5ae0d25125b544caab32f75f0360e775.html) by Ronald Stalder
+	- Тут иллюстрированный пример. [What does < stand for in data.table joins with on=](https://stackoverflow.com/questions/52793037/what-does-stand-for-in-data-table-joins-with-on)
+	- COOL! [Notes on data.table in R](http://jeffmax.io/notes-on-datatable-in-r.html)
+- [How to extract the first n rows per group?](https://stackoverflow.com/questions/16325641/how-to-extract-the-first-n-rows-per-group)
 
 # DS
 - COOL! [Машинное обучение для людей. Разбираемся простыми словами](https://vas3k.ru/blog/machine_learning/)
@@ -592,6 +601,13 @@ LSHR - fast and memory efficient package for near-neighbor search in high-dimens
 Course Description
 The course covers scalable machine learning and data mining algorithms for large/complex data. Topics include large-scale optimization techniques, hashing, recommendation systems, and tensor factorization. This will be structured as a seminar course with emphasis on public data sets such as Kaggle competitions, MovieLens, and various healthcare datasets. There will be introductory lectures that set the context and provide reviews of relevant material.
 
+# 14.06.2019
+## R
+- COOL! [R vs. Python for Data Science](https://github.com/matloff/R-vs.-Python-for-Data-Science) by Norm Matloff, Prof. of Computer Science, UC Davis; my bio
+- [#rstats adventures in the land of @rstudio shiny (apps)](http://www.christopherlortie.info/adventures-in-the-land-of-rstudio-shiny-apps/)
+- Интересно почитать и разобраться. [Periodogram with R](https://www.getyourdataon.com/2019/06/blog-post.html)
+The power spectral density (PSD) is a function that describes the distribution of power over the frequency components composing our data set. If we knew the process that generated the data, we could just calculate the PSD; we would not have to estimate it. Unfortunately, in practice we won't have access to the random process, only the samples (data) produced by the process. So, we can't get the true PSD, we can only get an estimate of the true PSD. In our example below, we made the data, so we know what the true PSD should look like.
+
 # 13.06.2019
 ## R
 - [Overview of the CRAN checks API](https://blog.r-hub.io/2019/06/10/cran-checks-api/)
@@ -599,6 +615,7 @@ The course covers scalable machine learning and data mining algorithms for large
 - [reticulate, virtualenv, and Python in Linux](https://rviews.rstudio.com/2019/06/10/reticulate-virtualenv-and-python-in-linux/) by Roland Stevenson
 - COOL! [rTRNG: ADVANCED PARALLEL RNG IN R](https://mirai-solutions.ch/news/2019/06/10/rTRNG-avanced-parallel-RNG-R/)
 - COOL! [Shiny apps need more info! – our new shiny.info package](https://appsilon.com/more-info-for-shiny-apps/)
+- [Purrr - tips and tricks](https://www.hvitfeldt.me/blog/purrr-tips-and-tricks/)
 
 # 11.06.2019
 ## R
@@ -1290,9 +1307,68 @@ Some people, when faced with a problem, think, “I know, I’ll use binary.” 
 - [mapedit 0.5.0 and Leaflet.pm](https://www.r-spatial.org//r/2019/03/31/mapedit_leafpm.html)
 - [Quantile Function for a Vector of Dates](https://stackoverflow.com/questions/49405531/quantile-function-for-a-vector-of-dates)
 
+## Debug Shiny
+- [A little trick for debugging Shiny](https://rtask.thinkr.fr/blog/a-little-trick-for-debugging-shiny/)
+- [Debugging Shiny applications](https://shiny.rstudio.com/articles/debugging.html), LAST UPDATED: 30 MAY 2017
+- Статья [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html)
+- Презентация [Debugging with Shiny](http://rpubs.com/jmcphers/149638)
+- [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)`
+Showcase Mode!!!
+- [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)` Showcase Mode!!!
+- [showcase display mode for published app in shinyapps.io](http://stackoverflow.com/questions/26291523/showcase-display-mode-for-published-app-in-shinyapps-io)
+You can provide information about your app that Shiny showcase will use by creating a DESCRIPTION file.
+- [Effectively debugging Shiny apps](http://stackoverflow.com/questions/31920286/effectively-debugging-shiny-apps)
+- [Display element ids for debugging Shiny apps](http://blog.mckuhn.de/2016/04/display-element-ids-for-debugging-shiny.html)
+
+
 ## R debug
+- COOL! [How to interactively examine any R code - 4 ways to not just read the code, but delve into it step-by-step](https://jozef.io/r916-exploring-r-code-interactively/)
 - [r-lib/debugme](https://github.com/r-lib/debugme). Easy and efficient debugging for R packages
 - [How do I track down where a R package function fails? {duplicate}](https://stackoverflow.com/questions/5034821/how-do-i-track-down-where-a-r-package-function-fails)
+- [New R package 'debugr' - use automatic debug messages to improve your code](https://topics-in-r.blogspot.com/2018/07/new-r-package-debugr-using-intelligent.html)
+- R debug (опять)
+	- [How To Use The Debug Package](https://www.rdocumentation.org/packages/debug/versions/1.3.1/topics/debug-package)
+	- [How to debug (placing break point,etc) an installed R package in RStudio?](https://stackoverflow.com/questions/22000969/how-to-debug-placing-break-point-etc-an-installed-r-package-in-rstudio)
+	- [How do I create an object in the Global environment from a function](https://stat.ethz.ch/pipermail/r-help/2006-December/122284.html).
+`assign("b", value, envir=globalenv())`
+- COOL! [R Debugging - Cannot see which line generates warning message (Shiny)](https://stackoverflow.com/questions/29132110/r-debugging-cannot-see-which-line-generates-warning-message-shiny).
+You can tell R to treat warnings as errors with `options(warn=2)`. ...
+First turn on displaying warnings using the command `options(warn=1)` Then, you could run it by clicking on the "Source" or "Source with Echo" button (see image below). You can see the error/warning messages when any line with errors/warnings is executed.
+- [RStudio enters debug mode for every function error - how can I stop it?](https://stackoverflow.com/questions/29018842/rstudio-enters-debug-mode-for-every-function-error-how-can-i-stop-it)
+- [Debugging R code using R, RStudio and wrapper functions](https://www.youtube.com/watch?v=-P9UzQuJSH8&feature=youtu.be&list=PLAKBwakacHbQT51nPHex1on3YNCCmggZA)
+- [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
+- [How to debug a fatal error?](https://support.rstudio.com/hc/en-us/community/posts/207601737-How-to-debug-a-fatal-error-)
+- [ggpmisc 0.2.13. Debugging ggplots](https://cran.r-project.org/web/packages/ggpmisc/vignettes/debug.html)
+- [Using the Bizarro Pipe to Debug magrittr Pipelines in R](http://www.win-vector.com/blog/2017/01/using-the-bizarro-pipe-to-debug-magrittr-pipelines-in-r/)
+- [Debugging R Functions](http://seananderson.ca/2013/08/23/debugging-r.html)
+- [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
+- [Debugme](https://github.com/gaborcsardi/debugme). Easy and efficient debugging for R packages. gaborcsardi/debugme
+
+
+## R Debug
+- [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio), September 11, 2017
+- [Debugging methods in R6 objects](https://cran.r-project.org/web/packages/R6/vignettes/Debugging.html)
+- [debugme: Debug R Packages](https://cran.r-project.org/web/packages/debugme/index.html). Specify debug messages as special string constants, and control debugging of packages via environment variables.
+	- [r-lib/debugme](https://github.com/r-lib/debugme). Easy and efficient debugging for R packages
+	- [Debugme](https://github.com/gaborcsardi/debugme). Easy and efficient debugging for R packages. gaborcsardi/debugme
+- [wrapr: Wrap R Functions for Debugging and Parametric Programming](https://cran.r-project.org/web/packages/wrapr/index.html)
+- [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Published: 2013-02-07.
+Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
+- [Debugging, condition handling, and defensive programming](http://adv-r.had.co.nz/Exceptions-Debugging.html)
+- "Mastering Software Development in R". [2.6 Debugging](https://bookdown.org/rdpeng/RProgDA/debugging.html)
+- [ggpmisc 0.2.13. Debugging ggplots](https://cran.r-project.org/web/packages/ggpmisc/vignettes/debug.html)
+- [Using the Bizarro Pipe to Debug magrittr Pipelines in R](http://www.win-vector.com/blog/2017/01/using-the-bizarro-pipe-to-debug-magrittr-pipelines-in-r/)
+- [Debugging R Functions](http://seananderson.ca/2013/08/23/debugging-r.html)
+- [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
+- [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)` Showcase Mode!!!
+- Презентация [Debugging with Shiny](http://rpubs.com/jmcphers/149638)
+- COOL [How-to go parallel in R – basics + tips](http://gforge.se/2015/02/how-to-go-parallel-in-r-basics-tips/). См. п. "Debugging"
+Debugging is especially hard when working in a parallelized environment. You cannot simply call browser/cat/print in order to find out what the issue is.
+	- Never use set.seed(), use clusterSetRNGStream() instead, to set the cluster seed if you want reproducible results
+
+
+
+
 
 # R Internals
 - [1.1.1 SEXPTYPEs](https://cran.r-project.org/doc/manuals/r-release/R-ints.html#SEXPTYPEs)
@@ -1749,7 +1825,6 @@ AEWH0000224706RU3
 ## R
 - [Send UDP Probes (with payloads) and Receive/Process Responses in R](https://rud.is/b/2019/02/03/send-udp-probes-with-payloads-and-receive-process-responses-in-r/)
 - [Function Objects and Pipelines in R](http://www.win-vector.com/blog/2019/02/function-objects-and-pipelines-in-r/)
-- [A little trick for debugging Shiny](https://rtask.thinkr.fr/blog/a-little-trick-for-debugging-shiny/)
 - [Retail Data Visualization with R and Shiny](https://nycdatascience.com/blog/r/retail-data-visualization-with-r-and-shiny/)
 
 # 04.02.2019
@@ -1791,9 +1866,6 @@ Benchmark your CPU and compare against other CPUs. Also provides functions for o
 
 
 ## R
-- COOL! [R Debugging - Cannot see which line generates warning message (Shiny)](https://stackoverflow.com/questions/29132110/r-debugging-cannot-see-which-line-generates-warning-message-shiny).
-You can tell R to treat warnings as errors with `options(warn=2)`. ...
-First turn on displaying warnings using the command `options(warn=1)` Then, you could run it by clicking on the "Source" or "Source with Echo" button (see image below). You can see the error/warning messages when any line with errors/warnings is executed.
 
 # 28.01.2019
 ## R learning
@@ -2904,11 +2976,6 @@ run - Saving HTML [=================================================>] 126/127 e
 ```
 	- Завал происходит в строке `df_filtered <- filter_df(df_run)`. Почему-то весь датафрейм зануляется
 
-- R debug (опять)
-	- [How To Use The Debug Package](https://www.rdocumentation.org/packages/debug/versions/1.3.1/topics/debug-package)
-	- [How to debug (placing break point,etc) an installed R package in RStudio?](https://stackoverflow.com/questions/22000969/how-to-debug-placing-break-point-etc-an-installed-r-package-in-rstudio)
-	- [How do I create an object in the Global environment from a function](https://stat.ethz.ch/pipermail/r-help/2006-December/122284.html).
-`assign("b", value, envir=globalenv())`
 - [Shinycannon IllegalStateException #21 {Closed}](https://github.com/rstudio/shinyloadtest/issues/21)
 
 # 26.09.2018
@@ -3428,7 +3495,6 @@ get_os <- function() {
 - COOL! [Teaching R to New Users - From tapply to the Tidyverse](https://simplystatistics.org/2018/07/12/use-r-keynote-2018/)
 - [No worries! Afterthoughts from UseR 2018](http://smarterpoland.pl/index.php/2018/07/no-worries-afterthoughts-from-user-2018/)
 - [Long Running Tasks With Shiny: Challenges and Solutions](http://blog.fellstat.com/?p=407)
-- [New R package 'debugr' - use automatic debug messages to improve your code](https://topics-in-r.blogspot.com/2018/07/new-r-package-debugr-using-intelligent.html)
 - [Highlighting with ggplot2: The Old School and New School Way](https://www.littlemissdata.com/blog/highlight)
 - [Tidy evaluation in ggplot2](https://www.tidyverse.org/articles/2018/07/ggplot2-tidy-evaluation/)
 - [EARL CONFERENCE 2018 – THE BEST YET!](https://www.mango-solutions.com/blog/earl-conference-2018-the-best-yet)
@@ -4741,7 +4807,6 @@ RE2 <https://github.com/google/re2> is a primarily deterministic finite automato
 - [Concatenate Embeddings for Categorical Variables with Keras](https://flovv.github.io/Embeddings_with_keras_part2/)
 - [A tidy API for graph manipulation](https://github.com/thomasp85/tidygraph)
 - COOL! [RStudion rconf 2018](https://github.com/rstudio/rstudio-conf/tree/master/2018)
-- [RStudio enters debug mode for every function error - how can I stop it?](https://stackoverflow.com/questions/29018842/rstudio-enters-debug-mode-for-every-function-error-how-can-i-stop-it)
 - [In between a rock and a conditional join](https://www.mango-solutions.com/blog/in-between-a-rock-and-a-conditional-join). Тут как раз про "Fuzzy wuzzy join".
 
 # 01.02.2018

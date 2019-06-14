@@ -469,7 +469,6 @@ Arithmetic (via S4 classes and methods) for arbitrary precision floating point n
 
 # 27.11.2017
 ## R
-- [Debugging Shiny applications](https://shiny.rstudio.com/articles/debugging.html), LAST UPDATED: 30 MAY 2017
 - [Comparing plotly & ggplotly plot generation times](http://blog.jumpingrivers.com/posts/2017/plotly_vs_ggplotly/)
 - [How to Format Numbers, Dates, and Time Using in D3 HTMLWidgets in R](https://www.displayr.com/how-to-format-numbers-dates-and-time-using-in-d3-htmlwidgets-in-r/)
 - [tidyverse - prefered way to turn a named vector into a data.frame/tibble](https://stackoverflow.com/questions/40036207/tidyverse-prefered-way-to-turn-a-named-vector-into-a-data-frame-tibble)
@@ -798,27 +797,6 @@ __Luckily, shinyURL also has an inherent way of ignoring user selected inputs. H
 - [Is dplyr Easily Comprehensible?](http://www.win-vector.com/blog/2017/08/is-dplyr-easily-comprehensible/)
 	- [Advanced dplyr Quiz (author: John Mount)](https://github.com/WinVector/Examples/blob/master/dplyr/dplyrQuiz.md)
 
-# 05.11.2017
-## R Debug
-- [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio), September 11, 2017
-- [Debugging methods in R6 objects](https://cran.r-project.org/web/packages/R6/vignettes/Debugging.html)
-- [debugme: Debug R Packages](https://cran.r-project.org/web/packages/debugme/index.html). Specify debug messages as special string constants, and control debugging of packages via environment variables.
-	- [r-lib/debugme](https://github.com/r-lib/debugme). Easy and efficient debugging for R packages
-	- [Debugme](https://github.com/gaborcsardi/debugme). Easy and efficient debugging for R packages. gaborcsardi/debugme
-- [wrapr: Wrap R Functions for Debugging and Parametric Programming](https://cran.r-project.org/web/packages/wrapr/index.html)
-- [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Published: 2013-02-07.
-Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
-- [Debugging, condition handling, and defensive programming](http://adv-r.had.co.nz/Exceptions-Debugging.html)
-- "Mastering Software Development in R". [2.6 Debugging](https://bookdown.org/rdpeng/RProgDA/debugging.html)
-- [ggpmisc 0.2.13. Debugging ggplots](https://cran.r-project.org/web/packages/ggpmisc/vignettes/debug.html)
-- [Using the Bizarro Pipe to Debug magrittr Pipelines in R](http://www.win-vector.com/blog/2017/01/using-the-bizarro-pipe-to-debug-magrittr-pipelines-in-r/)
-- [Debugging R Functions](http://seananderson.ca/2013/08/23/debugging-r.html)
-- [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
-- [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)` Showcase Mode!!!
-- Презентация [Debugging with Shiny](http://rpubs.com/jmcphers/149638)
-- COOL [How-to go parallel in R – basics + tips](http://gforge.se/2015/02/how-to-go-parallel-in-r-basics-tips/). См. п. "Debugging"
-Debugging is especially hard when working in a parallelized environment. You cannot simply call browser/cat/print in order to find out what the issue is.
-	- Never use set.seed(), use clusterSetRNGStream() instead, to set the cluster seed if you want reproducible results
 
 # 03.11.2017
 ## R
@@ -1779,7 +1757,6 @@ The script below illustrates how to add one label per stack in a stacked bar cha
 	- [Power BI Documentation. Using R in Query Editor](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-r-in-query-editor/)
 	- [Tips and Tricks for R scripts in the query editor in Power BI](http://www.thebiccountant.com/2017/08/25/tips-and-tricks-for-r-scripts-in-the-query-editor-in-power-bi/)
 	- [R with Power BI: Import, Transform, Visualize and Share](http://blog.revolutionanalytics.com/2016/08/powerbi-and-r.html)
-- [Debugging R code using R, RStudio and wrapper functions](https://www.youtube.com/watch?v=-P9UzQuJSH8&feature=youtu.be&list=PLAKBwakacHbQT51nPHex1on3YNCCmggZA)
 - [Unbottling “.msg” Files in R](https://rud.is/b/2017/08/25/unbottling-msg-files-in-r/)
 
 
@@ -2119,7 +2096,6 @@ Quickly build Cortana Intelligence Solutions from solution templates, reference 
 
 # 02.08.2017
 ## R
-- [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
 - [Define aesthetic mappings programatically](http://ggplot2.tidyverse.org/reference/aes_.html)
 	- COOL! [How do I combine aes() and aes_string() options](https://stackoverflow.com/questions/28777626/how-do-i-combine-aes-and-aes-string-options)
 
@@ -2909,7 +2885,6 @@ Benchmarking. @DavidArenburg suggested a number of alternatives. Here's a simple
 - [Graphical Presentation of Missing Data; VIM Package](https://datascienceplus.com/graphical-presentation-of-missing-data-vim-package/)
 - [Hadley about `unlist()`](http://r4ds.had.co.nz/lists.html): "Base R has `unlist()`, but I recommend avoiding it for the same reason I recommend avoiding `sapply()`: it always succeeds. Even if your data structure accidentally changes, `unlist()` will continue to work silently the wrong type of output. This tends to create problems that are frustrating to debug."
 - [Shiny document closes itself in approximately a minute](https://github.com/rstudio/shiny/issues/1697). Тут говорится про изменение настроек reverse proxy, чтобы такого не было.
-- [How to debug a fatal error?](https://support.rstudio.com/hc/en-us/community/posts/207601737-How-to-debug-a-fatal-error-)
 - Переход на 3.4
 - [R 3.4.0 is released – with new speed upgrades and bug-fixes](https://www.r-statistics.com/2017/04/r-3-4-0-is-released-with-new-speed-upgrades-and-bug-fixes/)
 	- [Speed up your R code using a just-in-time (JIT) compiler](https://www.r-statistics.com/2012/04/speed-up-your-r-code-using-a-just-in-time-jit-compiler/)
@@ -3809,7 +3784,6 @@ The Firebug extension isn't being developed or maintained any longer. We invite 
 	- [igraph get edge from - to value](http://stackoverflow.com/questions/21243965/igraph-get-edge-from-to-value)
 	- [How to get id vertex from name vertex in R and Igraph?](http://stackoverflow.com/questions/10124168/how-to-get-id-vertex-from-name-vertex-in-r-and-igraph)
 - [igraph R Traps](http://igraph.wikidot.com/r-traps)
-- [ggpmisc 0.2.13. Debugging ggplots](https://cran.r-project.org/web/packages/ggpmisc/vignettes/debug.html)
 - igraph manual !!!
 It is often desirable to follow vertices along a number of graph operations, and vertex ids don’t allow this because of the renumbering. The solution is to assign attributes to the vertices. These are kept by all operations, if possible. See more about attributes in the next section.
 - [R igraph manual pages](http://igraph.org/r/doc/). Use this if you are using igraph from R
@@ -3903,7 +3877,6 @@ There is a catch, though it won't come into play in your example.
 	- observe(), on the other hand, is eager; the expression that it contains will be executed right away whenever one of its reactive dependencies is changed -- even if it's value is not needed by any of its dependents (and in fact even if has no dependents). Such eagerness is desirable when you're calling observe() for its side-effects, but it can be wasteful when you're only using it to pass on the return value of its contents to other reactive expressions or endpoints down the line.
 
 ## R
-- [Using the Bizarro Pipe to Debug magrittr Pipelines in R](http://www.win-vector.com/blog/2017/01/using-the-bizarro-pipe-to-debug-magrittr-pipelines-in-r/)
 - [The magrittr monad](http://www.win-vector.com/blog/2016/08/the-magrittr-monad/)
 - [Upgrading to macOS Sierra (nee OSX) for R users](http://www.win-vector.com/blog/2017/01/upgrading-to-macos-sierra-nee-osx-for-r-users/)
 
@@ -4101,9 +4074,6 @@ df %>%
 ## R
 - COOL! [Introducing padr](https://edwinth.github.io/blog/padr-intro/)
 I am happy to introduce the padr package, which is now available on CRAN. If you frequently work with data containing a timestamp, especially automatically created data, you might find this package helpful. It solves two problems that you can be confronted with when preparing datetime data for analysis. First, data is often recorded on too low a level for your analysis. For instance the timestamp records the moment up to the second, where you want to do the analysis on an hourly level. Second, when no events toke place there are typically no data records. This is sensible from a storage perspective, but often unhelpful for analyzing the data. When calculating a moving average for example, you want missing observations to have the value 0. You don’t want them to be lacking from your set.
-- [Debugging R Functions](http://seananderson.ca/2013/08/23/debugging-r.html)
-- [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
-- [Debugme](https://github.com/gaborcsardi/debugme). Easy and efficient debugging for R packages. gaborcsardi/debugme
 - COOL! Классный сайт с примерами визуализации. [Welcome to Kristoffer Magnusson's blog about R, STATISTICS, PSYCHOLOGY, OPEN SCIENCE, DATA VISUALIZATION](http://rpsychologist.com/parsing-data-from-a-text-file-and-plotting-where-people-live-using-ggplot2-and-openstreetmaps/)
 
 
@@ -4343,8 +4313,6 @@ Our concrete advice is: when building a supervised model (regression or classifi
 
 # 21.12.2016
 ## R
-- Статья [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html)
-- Презентация [Debugging with Shiny](http://rpubs.com/jmcphers/149638)
 - [Shiny tips & tricks for improving your apps and solving common problems](http://deanattali.com/blog/advanced-shiny-tips/)
 - [Using R packages and education to scale Data Science at Airbnb](https://medium.com/airbnb-engineering/using-r-packages-and-education-to-scale-data-science-at-airbnb-906faa58e12d)
 - [ggplot2 tech themes, scales, and geoms https://twitter.com/ricardobion](https://github.com/ricardo-bion/ggtech)
@@ -4417,13 +4385,8 @@ You can use mouse events to read mouse coordinates, select or deselect points, a
 - [Shiny Interactive plots articles](http://shiny.rstudio.com/articles/#interactive-plots)
 - [Shiny + GGplot - mouse click coordinates](http://stackoverflow.com/questions/30781379/shiny-ggplot-mouse-click-coordinates)
 	- [Global options for Shiny](https://shiny.rstudio.com/reference/shiny/latest/shiny-options.html)
-- [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)` Showcase Mode!!!
-- [showcase display mode for published app in shinyapps.io](http://stackoverflow.com/questions/26291523/showcase-display-mode-for-published-app-in-shinyapps-io)
-You can provide information about your app that Shiny showcase will use by creating a DESCRIPTION file.
 - [Scoping rules for Shiny apps](https://shiny.rstudio.com/articles/scoping.html)
 - [Shiny Display modes](http://shiny.rstudio.com/articles/display-modes.html)
-- [Effectively debugging Shiny apps](http://stackoverflow.com/questions/31920286/effectively-debugging-shiny-apps)
-- [Display element ids for debugging Shiny apps](http://blog.mckuhn.de/2016/04/display-element-ids-for-debugging-shiny.html)
 
 ## R
 - При использовании 'geom_nodelabel_repel'(`ggnetwork`) возникает следующая ошибка: "Ignoring unknown parameters: segment.color"
@@ -6450,8 +6413,6 @@ I get Error: `Invalid input: time_trans works with objects of class POSIXct only
 	- [Is there any standard logging package for R?](http://stackoverflow.com/questions/1928332/is-there-any-standard-logging-package-for-r)
 
 ## Shiny
-- [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)`
-Showcase Mode!!!
 - [How can I save the result of str() as a string in R?](http://stackoverflow.com/questions/30964224/how-can-i-save-the-result-of-str-as-a-string-in-r). `capture.output` will create a character vector (one element for each line printed to the console). If you want it in one string, you could concatenate it with paste(foo, collapse="\n").
 - [Shiny: What is the option setting to display in the console the messages between server and ui](http://stackoverflow.com/questions/23002712/shiny-what-is-the-option-setting-to-display-in-the-console-the-messages-between). `options(shiny.trace = TRUE)`
 - [Write error messages for your UI with validate](http://shiny.rstudio.com/articles/validation.html)
