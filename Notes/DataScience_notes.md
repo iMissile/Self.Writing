@@ -324,6 +324,7 @@ Usually this was not intended and the join needs to be changed. The word 'cartes
 	- Тут иллюстрированный пример. [What does < stand for in data.table joins with on=](https://stackoverflow.com/questions/52793037/what-does-stand-for-in-data-table-joins-with-on)
 	- COOL! [Notes on data.table in R](http://jeffmax.io/notes-on-datatable-in-r.html)
 - [How to extract the first n rows per group?](https://stackoverflow.com/questions/16325641/how-to-extract-the-first-n-rows-per-group)
+- COOL! Варианты с бенчмарками. [How to apply same function to every specified column in a data.table](https://stackoverflow.com/questions/16846380/how-to-apply-same-function-to-every-specified-column-in-a-data-table)
 
 # DS
 - COOL! [Машинное обучение для людей. Разбираемся простыми словами](https://vas3k.ru/blog/machine_learning/)
@@ -607,6 +608,9 @@ The course covers scalable machine learning and data mining algorithms for large
 - [#rstats adventures in the land of @rstudio shiny (apps)](http://www.christopherlortie.info/adventures-in-the-land-of-rstudio-shiny-apps/)
 - Интересно почитать и разобраться. [Periodogram with R](https://www.getyourdataon.com/2019/06/blog-post.html)
 The power spectral density (PSD) is a function that describes the distribution of power over the frequency components composing our data set. If we knew the process that generated the data, we could just calculate the PSD; we would not have to estimate it. Unfortunately, in practice we won't have access to the random process, only the samples (data) produced by the process. So, we can't get the true PSD, we can only get an estimate of the true PSD. In our example below, we made the data, so we know what the true PSD should look like.
+- COOL1 [lemon: Freshing Up your 'ggplot2' Plots](https://cran.rstudio.com/web/packages/lemon/)
+Functions for working with legends and axis lines of 'ggplot2', facets that repeat axis lines on all panels, and some 'knitr' extensions.
+- [colorBrewer interactive tool](https://www.computerworld.com/article/3184778/6-useful-r-functions-you-might-not-know.html). First, install tmaptools with install.packages("tmaptools"), then load tmaptools with library("tmaptools") and run palette_explorer() (or, don't load tmaptools and run tmaptools::palette_explorer() ). You'll see all available palettes as in the image above, as well as sliders to adjust options like number of colors. There's also info about basic syntax for using a color scheme below each group of palettes.
 
 # 13.06.2019
 ## R
