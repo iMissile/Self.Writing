@@ -217,3 +217,12 @@ Hey Guyz. I found a solution for settings and updates. Download this update [308
 - [Password Managers: Under the Hood of Secrets Management](https://www.securityevaluators.com/casestudies/password-manager-hacking/). February 19, 2019
 - [Альтернативы LastPass. Сравнительная оценка шести парольных менеджеров](https://habr.com/ru/post/434314/)
 - [You were not born to remember passwords](https://www.enpass.io/)
+
+## VPN
+Замена CiscoAnyConnect
+http://macappstore.org/openconnect/
+http://www.infradead.org/openconnect/download.html
+https://openconnect.github.io/openconnect-gui/ (edited) 
+
+## Photoshop
+- COOL! [20 Free Spray Paint Photoshop Brushes with Splatters & Drips](https://blog.spoongraphics.co.uk/freebies/20-free-spray-paint-photoshop-brushes-with-splatters-drips)

@@ -325,6 +325,26 @@ Usually this was not intended and the join needs to be changed. The word 'cartes
 	- COOL! [Notes on data.table in R](http://jeffmax.io/notes-on-datatable-in-r.html)
 - [How to extract the first n rows per group?](https://stackoverflow.com/questions/16325641/how-to-extract-the-first-n-rows-per-group)
 - COOL! Варианты с бенчмарками. [How to apply same function to every specified column in a data.table](https://stackoverflow.com/questions/16846380/how-to-apply-same-function-to-every-specified-column-in-a-data-table)
+- [diff on data.table column](https://stackoverflow.com/questions/37141277/diff-on-data-table-column). We could use `shift()`:
+```
+dt[,diff := value - shift(value), by = variable]
+```
+- [efficiently locf by groups in a single R data.table](https://stackoverflow.com/questions/37060211/efficiently-locf-by-groups-in-a-single-r-data-table/37068596)
+- С бенчмарками [Remove rows conditionally from a data.table in R](https://stackoverflow.com/questions/22655060/remove-rows-conditionally-from-a-data-table-in-r)
+	- [Efficiently remove rows #2890 {Closed}](https://github.com/Rdatatable/data.table/issues/2890)
+- Целый квест. [Filtering out duplicated/non-unique rows in data.table](https://stackoverflow.com/questions/11792527/filtering-out-duplicated-non-unique-rows-in-data-table)
+```
+Maybe a new unique(...,use.key=FALSE) argument would help; now filed as FR#2483. – Matt Dowle Jan 18 '13 at 0:23 
+Hi @MatthewDowle. Yes, that would be a nice convenience. I think your comment in the FR is also correct--if the key is unique then use.key=FALSE could be ignored. – dnlbrky Jan 18 '13 at 14:12
+1
+data.table 1.9.6 (and not doubt earlier versions) has option by= which can be used to override the key. Setting by=NULL "uses all columns and acts like the analogous data.frame methods." – JWilliman Dec 1 '15 at 23:20
+```
+	- [Unique doesn't use keys as default anymore](https://stackoverflow.com/questions/42564617/unique-doesnt-use-keys-as-default-anymore)
+- [Create new column in data.table by group](https://stackoverflow.com/questions/12620923/create-new-column-in-data-table-by-group)
+- [create a new column in a data.table from group by multiple columns](https://stackoverflow.com/questions/46134936/create-a-new-column-in-a-data-table-from-group-by-multiple-columns/46135033)
+- performance различных способов сортировки [How to order data within subgroups in data.table R](https://stackoverflow.com/questions/28683712/how-to-order-data-within-subgroups-in-data-table-r)
+- [data.table v.1.11.0+ no longer freads data file that was fread by v.1.10.4-3](https://github.com/Rdatatable/data.table/issues/2857)
+- [fread from v.1.11.0+ no longer reads the .csv correctly, which was read perfectly in v.1.10.4-3 #2857 {Open}](https://github.com/Rdatatable/data.table/issues/2857)
 
 # DS
 - COOL! [Машинное обучение для людей. Разбираемся простыми словами](https://vas3k.ru/blog/machine_learning/)
@@ -562,6 +582,14 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 	- COOL! [BBC Visual and Data Journalism cookbook for R graphics](https://bbc.github.io/rcookbook/)
 	- [How the BBC Visual and Data Journalism team works with graphics in R](https://medium.com/bbc-visual-and-data-journalism/how-the-bbc-visual-and-data-journalism-team-works-with-graphics-in-r-ed0b35693535)
 	- [bbc/bbplot](https://github.com/bbc/bbplot). R package that helps create and export ggplot2 charts in the style used by the BBC News data team
+- [HOW TO CREATE BEAUTIFUL COLOR PALETTES IN R](https://www.datanovia.com/en/blog/how-to-create-beautiful-color-palettes-in-r/)
+- [5 Steps on How to Generate a Color Function in R](https://quantdev.ssri.psu.edu/tutorials/generating-custom-color-palette-function-r)
+- COOL! [Creating corporate colour palettes for ggplot2](https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2)
+- COOL! [Multiple color (and fill) scales with ggplot2](https://eliocamp.github.io/codigo-r/2018/09/multiple-color-and-fill-scales-with-ggplot2/)
+	- [eliocamp/ggnewscale](https://github.com/eliocamp/ggnewscale). Multiple Fill and Color Scales in `ggplot2`
+- COOL! [Polychrome: Qualitative Palettes with Many Colors](https://cran.rstudio.com/web/packages/Polychrome/index.html). Tools for creating, viewing, and assessing qualitative palettes with many (20-30 or more) colors.
+- [colortools: Tools for colors in a Hue-Saturation-Value (HSV) color model](https://cran.r-project.org/web/packages/colortools/index.html). R package with handy functions to help users select and play with color schemes in an HSV color model
+
 
 # R useful plugins
 - COOL! [smouksassi/ggquickeda](https://github.com/smouksassi/ggquickeda). ggplot and summary statistics quick exploration of data
@@ -601,6 +629,134 @@ LSHR - fast and memory efficient package for near-neighbor search in high-dimens
 	- [CS 584 - Big Data Analytics](https://joyceho.github.io/course/cs584_s16/)
 Course Description
 The course covers scalable machine learning and data mining algorithms for large/complex data. Topics include large-scale optimization techniques, hashing, recommendation systems, and tensor factorization. This will be structured as a seminar course with emphasis on public data sets such as Kaggle competitions, MovieLens, and various healthcare datasets. There will be introductory lectures that set the context and provide reviews of relevant material.
+
+# 27.05.2019
+## R
+- [New Resource for Learning Choroplethr](https://arilamstein.com/blog/2019/06/25/new-resource-for-learning-choroplethr/)
+- COOL! [Quick Hit: Above the Fold; Hard wrapping text at ‘n’ characters](https://rud.is/b/2019/06/26/quick-hit-above-the-fold-hard-wrapping-text-at-n-characters/)
+- [data.table is Much Better Than You Have Been Told](http://www.win-vector.com/blog/2019/06/data-table-is-much-better-than-you-have-been-told/)
+- [JULIA SILGE. A BEGINNER'S GUIDE TO TRAVIS-CI FOR R](https://juliasilge.com/blog/beginners-guide-to-travis/)
+- COOL! ragg:
+	- [ragg](https://ragg.r-lib.org/)
+This package provides graphic devices for R based on the AGG library developed by the late Maxim Shemanarev. AGG provides both higher performance and higher quality than the standard raster devices provided by grDevices.
+	- [Ragg Performance](https://rpubs.com/jeroenooms/ragg)
+
+# 26.06.2019
+## R
+- [HOW TO HIDE A PASSWORD IN R WITH THE KEYRING PACKAGE](http://theautomatic.net/2019/06/25/how-to-hide-a-password-in-r-with-the-keyring-package/)
+- [R Plumber API in a Docker container? Of course, but security matters…()
+- [Causation doesn’t imply Correlation either](http://blog.ephorie.de/causation-doesnt-imply-correlation-either)
+- [Create Easy to Follow Technical Tutorials](https://www.littlemissdata.com/blog/technical-tutorials)
+- [BUILD THOUSANDS OF AUTOMATED DEMAND FORECASTS IN 15 MINUTES USING AUTOCATBOOSTCARMA IN R](https://www.remixinstitute.com/blog/automated-demand-forecasts-using-autocatboostcarma-in-r/)
+- [binb 0.0.4: Several nice improvements](http://dirk.eddelbuettel.com/blog/2019/06/23/#binb_0.0.4)
+The fourth release of the binb package just arrived on CRAN. binb regroups four rather nice themes for writing LaTeX Beamer presentations much more easily in in (R)Markdown. As a teaser, a quick demo combining all four themes follows; documentation and examples are in the package.
+- Интересная реализация визуализации [Stacked Waterfall Graphs in R](https://www.stomperusa.com/2019/06/22/stacked-waterfall-graphs-in-r/)
+- [Rmarkdown presentation](https://lsru.github.io/tv_course/lecture03_rmarkdown.html#1) by A. Ginolhac, E. Koncina, R. Krause
+
+# 24.06.2019
+## R, large files & parallel processing
+- [Parallel computing in R](https://psu-psychology.github.io/r-bootcamp-2018/talks/parallel_r.html) by Michael Hallquist
+- [Quick Intro to Parallel Computing in R](https://nceas.github.io/oss-lessons/parallel-computing-in-r/parallel-computing-in-r.html)
+- [How-to go parallel in R – basics + tips](http://gforge.se/2015/02/how-to-go-parallel-in-r-basics-tips/)
+- [Fast data loading from files to R](https://appsilon.com/fast-data-loading-from-files-to-r/)
+- [Working with files on disk. Taking the advantage of multicore machines](https://cran.r-project.org/web/packages/text2vec/vignettes/files-multicore.html)
+- [Handling large data sets in R](https://rpubs.com/msundar/large_data_analysis)
+- [Using AWK and R to parse 25tb](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/)
+- [FastR](https://m-clark.github.io/docs/fastr.html) by Michael Clark
+- [Purrr - tips and tricks](https://www.hvitfeldt.me/blog/purrr-tips-and-tricks/) by Emil Hvitfeldt
+- [How data.table's fread can save you a lot of time and memory, and take input from shell commands](https://jozef.io/r917-fread-comparisons/)
+- [Fast text file reading into R using Rcpp functions](https://figshare.com/articles/Fast_text_file_reading_into_R_using_Rcpp_functions/3407032)
+- [Turbocharging 'readr'](https://enpiar.com/2018/04/25/turbocharging-readr/)
+- [How to use fread() as readLines() without auto column detection?](https://stackoverflow.com/questions/32920031/how-to-use-fread-as-readlines-without-auto-column-detection)
+
+- [Linux Increase The Maximum Number Of Open Files / File Descriptors (FD)](https://www.cyberciti.biz/faq/linux-increase-the-maximum-number-of-open-files/)
+
+
+## Parallel R
+- [Efficient Looping with R](http://ethen8181.github.io/Business-Analytics/R/efficient_looping/efficient_looping.html)
+- COOL! [Outer loop variable in nested R foreach loop](https://stackoverflow.com/questions/9674530/outer-loop-variable-in-nested-r-foreach-loop)
+```
+ ## (1) EITHER merge two 'foreach' objects using '%:%' ...
+ ## (2) ... OR Nest two 'foreach' objects using a pair of '%do%' operators ...
+ ## (3) ... BUT DON'T use a hybrid of the approaches.
+```
+- [Converting nested for-loop to parallel in R](https://stackoverflow.com/questions/38568645/converting-nested-for-loop-to-parallel-in-r)
+- [How can I parallelize a double for loop in R?](https://stackoverflow.com/questions/30927693/how-can-i-parallelize-a-double-for-loop-in-r)
+- [Using fread with foreach and doParallel in R](https://stackoverflow.com/questions/30857353/using-fread-with-foreach-and-doparallel-in-r)
+- [R and C++. Debugging with Valgrind](http://kevinushey.github.io/blog/2015/04/05/debugging-with-valgrind/)
+```
+*** caught segfault ***
+address 0x18, cause 'memory not mapped'
+```
+- А еще такая ошибка встретилась при запуске параллельного кода
+[Understanding “corrupted size vs. prev_size” glibc error](https://stackoverflow.com/questions/49628615/understanding-corrupted-size-vs-prev-size-glibc-error)
+First of all - A practical cause to "corrupted size vs. prev_size" is quite simple - memory chunk control structure fields in the adjacent following chunk are being overwritten due to out-of-bounds access by the code.
+- Subprocesses:
+	- [processx 3.2.0](https://www.tidyverse.org/articles/2018/09/processx-3.2.0/)
+	- [processx](https://processx.r-lib.org/index.html). Execute and Control System Processes. Tools to run system processes in the background, read their standard output and error and kill them.
+	- [subprocess: Manage Sub-Processes in R](https://cran.r-project.org/web/packages/subprocess/). Create and handle multiple sub-processes in R, exchange data over standard input and output streams, control their life cycle.
+- [Why does gc() not free memory?](https://stackoverflow.com/questions/14580233/why-does-gc-not-free-memory)
+- [future: Unified Parallel and Distributed Processing in R for Everyone](https://cran.r-project.org/web/packages/future/index.html)
+- [future.callr: A Future API for Parallel Processing using 'callr'](https://cran.r-project.org/web/packages/future.callr/index.html)
+Implementation of the Future API on top of the 'callr' package. This allows you to process futures, as defined by the 'future' package, in parallel out of the box, on your local (Linux, macOS, Windows, ...) machine. Contrary to backends relying on the 'parallel' package (e.g. 'future::multisession'), the 'callr' backend provided here can run more than 125 parallel R processes.
+- [future.batchtools: A Future API for Parallel and Distributed Processing using 'batchtools'](https://cran.r-project.org/web/packages/future.batchtools/index.html)
+- COOL! [doFuture: A Universal Foreach Adaptor Ready to be Used by 1,000+ Packages](https://www.jottr.org/2017/03/18/dofuture/)
+
+
+
+# 21.06.2019
+## R
+- Speaker Deck. Presentations.
+	- [Speaker Deck. Hadley Wickham](https://speakerdeck.com/hadley)
+	- [Speaker Deck. Jennifer (Jenny) Bryan](https://speakerdeck.com/jennybc)
+- [NAMER, AUTOMATIC LABELLING OF R MARKDOWN CHUNKS](https://itsalocke.com/blog/namer-automatic-labelling-of-r-markdown-chunks/)
+- [lockedata/namer](https://github.com/lockedata/namer). R package 📦 for labelling chunks of RMarkdown files! 💥 https://itsalocke.com/namer
+- [Forecasting tools in development](http://reichlab.io//2019/06/17/forecast-tools.html)
+	- [FluSight Network](http://flusightnetwork.io/)
+- Benchmarking различных способов чтения файлов
+	- hadley/.gitignore [Benchmark different ways of reading a file](https://gist.github.com/hadley/6353939)
+	- [Faster File Reading in R](http://rstudio-pubs-static.s3.amazonaws.com/7942_7282a40236564cb8b64072c8d839ab87.html)
+- Benchmarking различных способов объединения строк
+	- [String collection speed tests](https://rpubs.com/wch/13698). wch/writetest.Rmd [String collection speed tests](https://gist.github.com/wch/9233873)
+	- Тут даже есть C++ код. [Fast concatenation of data.table columns into one string column](https://stackoverflow.com/questions/48233309/fast-concatenation-of-data-table-columns-into-one-string-column)
+	- [msummersgill/fastConcat](https://github.com/msummersgill/fastConcat). Fast concatenation of (integer) data.table columns.
+- Benchmarking по преобразованию матрицы в списки:
+	- [How to convert a matrix to a list of column-vectors in R?](https://stackoverflow.com/questions/6819804/how-to-convert-a-matrix-to-a-list-of-column-vectors-in-r)
+- Benchmarking по разбиению колонки на несколько [Split multiple columns into multiple columns using r](https://stackoverflow.com/questions/48688747/split-multiple-columns-into-multiple-columns-using-r)
+- [cowplot – Streamlined plot theme and plot annotations for ggplot2](https://github.com/wilkelab/cowplot)
+- [Changing Glyph in legend in ggplot2](https://www.hvitfeldt.me/blog/changing-glyph-in-ggplot2/)
+
+
+- data.table
+	- [split column in data.table to multiple rows {duplicate}](https://stackoverflow.com/questions/34712949/split-column-in-data-table-to-multiple-rows)
+	- [mrdwab/splitstackshape](https://github.com/mrdwab/splitstackshape) R functions to split concatenated data, conveniently stack columns of data.frames, and conveniently reshape data.frames.
+
+
+# 20.06.2019
+## R
+- COOL! [Optimising your R code – a guided example](https://www.statworx.com/de/blog/optimising-your-r-code-a-guided-example/)
+- [Computation time of loops — for, *apply, map](https://r-posts.com/computation-time-of-loops-for-apply-map/)
+- [A Gentle Introduction to tidymodels](https://rviews.rstudio.com/2019/06/19/a-gentle-intro-to-tidymodels/) by by Edgar Ruiz
+- COOL! package `drake` [Machine learning workflow management in R](https://wlandau.github.io/learndrake/index.html#1)
+- COOL! wlandau/learndrake. An R package that teaches drake [Machine learning workflow management with drake](https://github.com/wlandau/learndrake)
+- [ropensci/drake](https://ropensci.github.io/drake) An R-focused pipeline toolkit for reproducibility and high-performance computing
+- [William Michael Landau](https://wlandau.github.io/)
+- [The drake R Package User Manual](https://ropenscilabs.github.io/drake-manual/)
+- [mlr + drake: Reproducible machine-learning workflow management](https://mlr-org.com/docs/mlr-example-for-drake/)
+- COOL! [Deep Learning With Keras To Predict Customer Churn](https://blogs.rstudio.com/tensorflow/posts/2018-01-11-keras-customer-churn/)
+- Столкнулся вот с проблемой "scheduled core X encountered error in user code, all values of the job will be affected" тоже. [mclapply can't handle many samples; switch order it's applied in gene_summary? #80 {Closed}](https://github.com/pachterlab/sleuth/issues/80)
+- [mclapply {parallel}	R Documentation](https://stat.ethz.ch/R-manual/R-devel/library/parallel/html/mclapply.html). Parallel Versions of lapply and mapply using Forking
+
+# 18.06.2019
+## R
+- [R / RStudio Painfully Slow](https://stackoverflow.com/questions/55271646/r-rstudio-painfully-slow)
+
+# 17.06.2019
+## R
+- [Fun with R and the Noops](https://blog.revolutionanalytics.com/2019/06/noops-and-r.html)
+	- [Meet the Noops!](https://noopschallenge.com/) Welcome, challenger. Twenty mysterious machines await.
+- COOL! [Introducing the {ethercalc} package](https://rud.is/b/2019/06/15/introducing-the-ethercalc-package/)
+- [modelDown is now on CRAN!](http://smarterpoland.pl/index.php/2019/06/modeldown-is-now-on-cran/)
 
 # 14.06.2019
 ## R
@@ -786,11 +942,6 @@ Generate a palette of k colors from ggsci palettes, RColorbrewer palettes and cu
 - COOL! [Polychrome: Qualitative Palettes with Many Colors](https://cran.rstudio.com/web/packages/Polychrome/index.html). Tools for creating, viewing, and assessing qualitative palettes with many (20-30 or more) colors.
 - [colortools: Tools for colors in a Hue-Saturation-Value (HSV) color model](https://cran.r-project.org/web/packages/colortools/index.html). R package with handy functions to help users select and play with color schemes in an HSV color model
 - [Creating plots in R using ggplot2 - part 10: boxplots](http://t-redactyl.io/blog/2016/04/creating-plots-in-r-using-ggplot2-part-10-boxplots.html)
-- [HOW TO CREATE BEAUTIFUL COLOR PALETTES IN R](https://www.datanovia.com/en/blog/how-to-create-beautiful-color-palettes-in-r/)
-- [5 Steps on How to Generate a Color Function in R](https://quantdev.ssri.psu.edu/tutorials/generating-custom-color-palette-function-r)
-- COOL! [Creating corporate colour palettes for ggplot2](https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2)
-- COOL! [Multiple color (and fill) scales with ggplot2](https://eliocamp.github.io/codigo-r/2018/09/multiple-color-and-fill-scales-with-ggplot2/)
-	- [eliocamp/ggnewscale](https://github.com/eliocamp/ggnewscale). Multiple Fill and Color Scales in `ggplot2`
 
 # 23.05.2019
 ## R Markdown
@@ -949,6 +1100,32 @@ You can't share database connections between different workers in any of the gen
 # 15.05.2019
 ## R
 - COOL! [Upgrading to R 3.6.0 on a Mac – May 14, 2019](https://ibecav.github.io/update_libraries/)
+```
+require(tidyverse)
+allmypackages <- as.data.frame(installed.packages())
+allmypackages <- allmypackages %>%
+  filter(Priority != "base" | is.na(Priority)) %>%
+  select(-c(Enhances:MD5sum, LinkingTo:Suggests)) %>%
+  droplevels()
+str(allmypackages)
+
+package_source <- function(pkg){
+  x <- as.character(packageDescription(pkg)$Repository)
+  if (length(x)==0) {
+    y <- as.character(packageDescription(pkg)$GithubRepo)
+    z <- as.character(packageDescription(pkg)$GithubUsername)
+    if (length(y)==0) {
+      return("Other")
+    } else {
+      return(str_c("GitHub repo = ", z, "/", y))
+    }
+  } else {
+    return(x)
+  }
+}
+# show the first 60 as an example
+head(sapply(allmypackages$Package, package_source), 60)
+```
 - COOL! [Introducing trelliscopejs](https://ryanhafen.com/blog/trelliscopejs/)
 - COOL! [Trelliscope](https://hafen.github.io/trelliscopejs/#trelliscope)
 Trelliscope is a visualization approach based on the idea of “small multiples” or “Trellis Display”, where data are split into groups and a plot is made for each group, with the resulting plots arranged in a grid. 
@@ -4449,7 +4626,7 @@ Imports non-tabular from Excel files into R. Exposes cell content, position and 
 - [How to fork/parallelize process in `purrr::pmap`](https://stackoverflow.com/questions/47552930/how-to-fork-parallelize-process-in-purrrpmap)
 - [Rstudio addin to help you with your regexes (in progress)](https://github.com/gadenbuie/regexplain)
 - [RStudio:addins part 5 - Profile your code on keypress in the background, with no dependencies.](https://jozefhajnala.gitlab.io/r/r105-async-profiler/)
-- `lubridate::now()` >1.7.0 падает без указание tzone:
+- `lubridate::now()` > 1.7.0 падает без указание tzone:
 	- [How to change the default time zone in R?](https://stackoverflow.com/questions/6374874/how-to-change-the-default-time-zone-in-r). See `?timezone`. Another way to do it, without changing the whole computer time is using the setenv command like this: `Sys.setenv(TZ='GMT')`. После переезда на гугловые библиотеки необходимо добавлять в код установку переменных (либо делать это в системе): `Sys.setenv(TZ="Europe/Moscow")`
 
 ## R по мотивам Сибинтека

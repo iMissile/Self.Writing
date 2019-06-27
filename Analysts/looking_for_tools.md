@@ -333,3 +333,107 @@ Variance empowers engineers, designers, journalists, scientists, and analysts to
 - [What is Hadoop?](http://escience.washington.edu/get-help-now/what-hadoop)
 - [What lies at the core of Hadoop?](http://blog.enablecloud.com/2012/06/what-lies-at-core-of-hadoop.html)
 - С чего начался Google. [The Anatomy of a Large-Scale Hypertextual Web Search Engine](http://infolab.stanford.edu/pub/papers/google.pdf). Sergey Brin and Lawrence Page
+
+
+
+
+----------------------------------------------------------
+# Набор активно используемых инструментов
+1Password
+Araxis Merge
+AstroGrep
+Atom
+Brackets
+dnGREP
+Falcon SQL Client
+Far
+Fences
+Hard Disk Sentinel
+IZArc
+Kiwi for Gmail
+Listary
+LogExpert
+MarkPad
+mTail
+Passware Kit Forensic
+Plex Media Server
+Postman
+PowerShell
+presentation
+procexp64
+Resilio Sync
+Similarity
+Start10
+TigoTago
+ViceVersa PRO
+WhereIsIt
+Wing IDE
+WinSCP
+Wolfram Mathematica
+XmlPad
+XnView
+Zentimo
+ABBYY FineReader
+Advanced PDF Password Recovery
+AOMEI Partition Assistant
+Archivarius 3000
+Arq
+Brackets
+Bulk Rename Utility
+Cisco AnyConnect Secure Mobility Client
+Codec Tweak Tool
+CPUID CPU-Z
+Dropbox
+Duplicate Cleaner Pro
+EmEditor
+Everything
+EXIF ReName
+Foxit PDF Editor
+Hard Disk Sentinel
+HDD Regenerator
+Inkscape 0.91
+Instant Eyedropper
+JetBrains PyCharm
+KeepVid Pro
+Kid3
+LameXP
+MediaInfo
+Melloware PlacesBar Editor
+MobileBalance
+Paragon HFS+ for Windows
+Password Agent
+PowerGREP
+RAMDisk Configuration Utility
+Recuva
+Rename-It!
+Search Everything.lnk
+Similarity
+Snagit
+SoftorinoYoutubeConverter2
+SyncToy
+Tag&Rename
+TreeSize (Administrator)
+TripMode
+UltraISO
+ViceVersa PRO
+VidCoder
+WALTR2
+WebSite-Watcher
+WhereIsIt
+WinDjView
+Windows Hotkey Explorer
+Wireshark
+XmlPad
+Xshell
+Windscribe
+XnView
+MEGAsync
+AstroGrep
+PuTTY
+ConEmu
+OpenConnect GUI
+OpenVPN GUI
+Bitwarden
+WinSCP
+Typora
+AOMEI Backupper
