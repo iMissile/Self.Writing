@@ -162,3 +162,9 @@ https://www.hightechdad.com/2017/02/06/onedrive-sync-issues-how-to-reset-onedriv
 - [Как скопировать (перенести) фото с iPhone на компьютер (Инструкция)](http://macnoob.ru/ifaq/kak-skopirovat-perenesti-foto-s-iphone-na-kompyuter/)
 - [iFunBox](http://www.i-funbox.com/). The File and App Management Tool for iPhone, iPad & iPod Touch. It's available on Windows and Mac OSX, ... and It's Free !
 
+# Midnight commander
+https://mdex-nn.ru/page/midnight-commander-na-macos.html
+https://midnight-commander.org/wiki/Binaries
+https://appstudio.org/articles/66933.html
+http://louise.hu/poet/midnight-commander-for-mac-os-x/
+

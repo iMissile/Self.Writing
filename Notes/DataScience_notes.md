@@ -630,7 +630,17 @@ LSHR - fast and memory efficient package for near-neighbor search in high-dimens
 Course Description
 The course covers scalable machine learning and data mining algorithms for large/complex data. Topics include large-scale optimization techniques, hashing, recommendation systems, and tensor factorization. This will be structured as a seminar course with emphasis on public data sets such as Kaggle competitions, MovieLens, and various healthcare datasets. There will be introductory lectures that set the context and provide reviews of relevant material.
 
-# 27.05.2019
+# 28.06.2019
+- some packages:
+	- [Rfast: A Collection of Efficient and Extremely Fast R Functions](https://cran.r-project.org/web/packages/Rfast/index.html)
+A collection of fast (utility) functions for data analysis. Column- and row- wise means, medians, variances, minimums, maximums, many t, F and G-square tests, many regressions (normal, logistic, Poisson), are some of the many fast functions. Reference: Tsagris M, Papadakis M. (2018). Taking R to its limits: 70+ tips. PeerJ Preprints 6:e26605v1 <doi:10.7287/peerj.preprints.26605v1>.
+	- [Polkas/miceFast](https://github.com/Polkas/miceFast) R environment - fast imputations
+	- [missRanger: Fast Imputation of Missing Values by Chained Random Forests](https://rdrr.io/cran/missRanger/man/missRanger.html)
+	- [imputeTS: Time Series Missing Value Imputation](http://steffenmoritz.github.io/imputeTS/)
+- [Compile Hadley’s Advanced R to a PDF](http://brettklamer.com/diversions/statistical/compile-hadleys-advanced-r-programming-to-a-pdf/)
+
+
+# 27.06.2019
 ## R
 - [New Resource for Learning Choroplethr](https://arilamstein.com/blog/2019/06/25/new-resource-for-learning-choroplethr/)
 - COOL! [Quick Hit: Above the Fold; Hard wrapping text at ‘n’ characters](https://rud.is/b/2019/06/26/quick-hit-above-the-fold-hard-wrapping-text-at-n-characters/)
