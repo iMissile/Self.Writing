@@ -205,6 +205,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 - [Tidy evaluation, most common actions](https://edwinth.github.io/blog/dplyr-recipes/)
 - [Non-standard evaluation, how tidy eval builds on base R](https://edwinth.github.io/blog/nse/)
 - [Programming with dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/programming.html)
+- [Programming with dplyr](https://dplyr.tidyverse.org/articles/programming.html)
 - [wrapr: R Code Sweeteners](http://www.win-vector.com/blog/2017/08/wrapr-r-code-sweeteners/)
 - [Why I find tidyeval useful](http://www.brodrigues.co/blog/2017-08-27-why_tidyeval/)
 - COOL! [MilesMcBain/friendlyeval](https://github.com/MilesMcBain/friendlyeval). A friendly interface to tidyeval/rlang that will excuse itself when you're done.
@@ -231,6 +232,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 - [WHAT IS TIDY EVAL AND WHY SHOULD I CARE?](https://www.mango-solutions.com/blog/what-is-tidy-eval-and-why-should-i-care). [Original post](https://thisisnic.github.io/2018/03/29/what-is-tidy-eval-and-why-should-i-care/)
 	- [Exploring Tidy Eval at a Snail's Pace](https://thisisnic.github.io/2018/02/20/exploring-tidy-eval-snails-pace/)
 	- [Using Tidy Eval with dplyr::filter](https://thisisnic.github.io/2018/03/27/using-tidy-eval-with-dplyr-filter/)
+
 
 
 # data.table
@@ -630,6 +632,127 @@ LSHR - fast and memory efficient package for near-neighbor search in high-dimens
 Course Description
 The course covers scalable machine learning and data mining algorithms for large/complex data. Topics include large-scale optimization techniques, hashing, recommendation systems, and tensor factorization. This will be structured as a seminar course with emphasis on public data sets such as Kaggle competitions, MovieLens, and various healthcare datasets. There will be introductory lectures that set the context and provide reviews of relevant material.
 
+# 10.07.2019
+## R
+- Не до конца понял, надо почитать. [Monotonic Binning Driven by Decision Tree](https://statcompute.wordpress.com/2019/07/08/monotonic-binning-driven-by-decision-tree/)
+- [How to use `recipes` package from `tidymodels` for one hot encoding 🛠](https://blog.datascienceheroes.com/how-to-use-recipes-package-for-one-hot-encoding/)
+- [CLEAN, CONSISTENT COLUMN NAMES](https://drdoane.com/clean-consistent-column-names/)
+- [More on those stepped-wedge design assumptions: varying intra-cluster correlations over time](https://www.rdatagen.net/post/varying-intra-cluster-correlations-over-time/)
+- [The R console is in my native language, how can I set R to English?](https://stackoverflow.com/questions/12760491/the-r-console-is-in-my-native-language-how-can-i-set-r-to-english/30826542). First, go to the etc folder under R program files folder. Then locate Rconsole file. Find the line language =, change it to language = en if you want to run R in English.
+- ggplot
+	- COOL! [hrbrmstr/ggalt](https://github.com/hrbrmstr/ggalt). 🌎 Extra Coordinate Systems, Geoms, Statistical Transformations & Scales for 'ggplot2' https://cran.r-project.org/web/packag…
+	- Dev версия сильно опережает CRAN. [ggalt](https://yonicd.github.io/ggalt/index.html)
+A compendium of ‘geoms’, ‘coords’, ‘stats’, scales and fonts for ‘ggplot2’, including splines, 1d and 2d densities, univariate average shifted histograms, a new map coordinate system based on the ‘PROJ.4’-library and the ‘StateFace’ open source font ‘ProPublica’.
+	- [Transforming the breaks to match a scale](http://freerangestats.info/blog/2015/09/07/transforming-breaks-in-a-scale)
+	- [Increase number of axis ticks](https://stackoverflow.com/questions/11335836/increase-number-of-axis-ticks)
+	- [ggplot2 change axis limits for each individual facet panel](https://stackoverflow.com/questions/51735481/ggplot2-change-axis-limits-for-each-individual-facet-panel). This is a long-standing feature request (see, e.g., 2009, 2011, 2016) which is tackled by a separate package `facetscales`.
+	- [facetscales](https://github.com/zeehio/facetscales)
+The goal of facetscales is to let you use facet_grid with different scales per plot. This is useful for instance to display in different facets magnitudes with different units.
+	- [ggrepel examples](https://cran.r-project.org/web/packages/ggrepel/vignettes/ggrepel.html) by Kamil Slowikowski, 2019-05-06
+- [Add row in each group using dplyr and add_row()](https://stackoverflow.com/questions/43403282/add-row-in-each-group-using-dplyr-and-add-row)
+- `geom-smooth`: [Understanding the confidence band from a polynomial regression](https://stats.stackexchange.com/questions/82603/understanding-the-confidence-band-from-a-polynomial-regression)
+- [Center bars of histogram using ggplot2](https://stackoverflow.com/questions/34180300/center-bars-of-histogram-using-ggplot2)
+
+## Learning
+- COOL! [СРЕДНЕЕ vs МЕДИАНА](https://m-learn.ru/mean-median/)
+- [«Средние» значения — ваш враг. Как не попасться на удочку усреднения](https://rb.ru/story/srednenko/)
+
+
+# 09.07.2019
+## R
+- [pkginfo: Tools for Retrieving R Package Information](https://blog.rsquaredacademy.com/introducing-pkginfo/)
+An experimental R package for retrieving R pacakge informatiom.
+- COOL! [Why I love `data.table`](https://eliocamp.github.io/codigo-r/en/2019/07/why-i-love-data-table/)
+- [Automatic differentiation in pqR](https://radfordneal.wordpress.com/2019/07/06/automatic-differentiation-in-pqr/)
+- [Link Functions versus Data Transforms](http://www.win-vector.com/blog/2019/07/link-functions-versus-data-transforms/)
+- COOL! [Programming with dplyr](https://dplyr.tidyverse.org/articles/programming.html)
+- [9 Useful R Data Visualization Packages for Any Discipline](https://mode.com/blog/r-data-visualization-packages)
+- [You Can Design a Good Chart with R. But do R users invest in design?](https://medium.com/data-visualization-society/you-can-design-a-good-chart-with-r-5d00ed7dd18e)
+- COOL! [https://drsimonj.svbtle.com/ordering-categories-within-ggplot2-facets](https://drsimonj.svbtle.com/ordering-categories-within-ggplot2-facets)
+
+# 08.07.2019
+## R
+- [logspline: Routines for Logspline Density Estimation](https://cran.rstudio.org/web/packages/logspline/index.html)
+Contains routines for logspline density estimation. The function oldlogspline() uses the same algorithm as the logspline package version 1.0.x; i.e. the Kooperberg and Stone (1992) algorithm (with an improved interface). The recommended routine logspline() uses an algorithm from Stone et al (1997) <doi:10.1214/aos/1031594728>.
+- [gglogspline](https://git.rud.is/hrbrmstr/gglogspline)
+A ‘ggplot2’ Extension for Visualizing Density, Distribution, Hazard, or Survival Functions using the ‘logspline’ Package
+- [Quick hit: Some ggplot2 Stat for {logspline}](https://rud.is/b/2019/06/18/quick-hit-some-ggplot2-stat/)
+- [hrbrmstr/ggalt](https://github.com/hrbrmstr/ggalt/)
+Extra Coordinate Systems, Geoms, Statistical Transformations & Scales for 'ggplot2' 
+- [Wicked Fast, Accurate Quantiles Using ‘t-Digests’ in R with the {tdigest} Package](https://rud.is/b/2019/04/03/wicked-fast-accurate-quantiles-using-t-digests-in-r-with-the-tdigest-package/)
+- [hrbrmstr/tdigest](https://github.com/hrbrmstr/tdigest)
+Wicked Fast, Accurate Quantiles Using 't-Digests'
+- [ggthemes](https://jrnold.github.io/ggthemes/)
+- [ggthemes. ALL YOUR FIGURE ARE BELONG TO US](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/)
+- [ggplot2: place text at right location](https://www.gl-li.com/2017/08/18/place-text-at-right-location/)
+- [Label line ends in time series with ggplot2](https://drsimonj.svbtle.com/label-line-ends-in-time-series-with-ggplot2)
+- [FeatureHashing: Creates a Model Matrix via Feature Hashing with a Formula Interface](https://cran.r-project.org/web/packages/FeatureHashing/index.html)
+Feature hashing, also called as the hashing trick, is a method to transform features of a instance to a vector. Thus, it is a method to transform a real dataset to a matrix. Without looking up the indices in an associative array, it applies a hash function to the features and uses their hash values as indices directly. 
+
+- [Very Fast string fuzzy matching in R](https://stackoverflow.com/questions/56072126/very-fast-string-fuzzy-matching-in-r)
+- [Fuzzy string Matching using fuzzywuzzyR and the reticulate package in R](https://mlampros.github.io/2017/04/13/fuzzywuzzyR_package/)
+- [IN BETWEEN A ROCK AND A CONDITIONAL JOIN](https://www.mango-solutions.com/blog/in-between-a-rock-and-a-conditional-join)
+- [fuzzywuzzyR: Fuzzy String Matching](https://cran.r-project.org/web/packages/fuzzywuzzyR/index.html)
+Fuzzy string matching implementation of the 'fuzzywuzzy' <https://github.com/seatgeek/fuzzywuzzy> 'python' package. It uses the Levenshtein Distance <https://en.wikipedia.org/wiki/Levenshtein_distance> to calculate the differences between sequences.
+ `ggalt::coord_proj("+proj=wintri", ylim = range(nsidc_iceout$latitude, na.rm = TRUE)) +`
+- [dselivanov/RestRserve](https://github.com/dselivanov/RestRserve) [work-in-progress] RestRserve is a R web API framework for building high-performance microservices and app backends http://restrserve.org/
+- summarytools
+	- [Feature package - summarytools](https://cpryan.github.io/blog/2019/SummaryTools/)
+	- [Introduction to summarytools](https://cran.r-project.org/web/packages/summarytools/vignettes/Introduction.html)
+
+## DS
+- [Google launches Drive File Stream to replace the Google Drive desktop app for G Suite users](https://techcrunch.com/2017/09/07/google-launches-drive-file-stream-to-replace-the-google-drive-desktop-app-for-g-suite-users/)
+
+
+# 05.07.2019
+## R
+- COOL! [TidyverseSkeptic](https://github.com/matloff/TidyverseSkeptic).
+An opinionated view of the Tidyverse "dialect" of the R language, and its promotion by RStudio.
+Norm Matloff, Prof. of Computer Science, UC Davis (former Prof. of Statistics at UCD)
+- [The Tidyverse Curse](http://r4stats.com/2017/03/23/the-tidyverse-curse/)
+- [groupdata2 version 1.1.0 released on CRAN](http://ludvigolsen.dk/groupdata2-version-1-1-0-released-on-cran/?lang=en)
+- [Communication between modules and its whims](https://rtask.thinkr.fr/blog/communication-between-modules-and-its-whims/). As part of the development of a Shiny application for production using {golem}, we recommend, among other things, working with Shiny-modules. The communication of data between the different modules can be complex. At ThinkR we use a strategy: the stratégie du petit r. We explain everything in this article.
+- [{golem} is an opiniated framework for building production-grade shiny applications.](https://thinkr-open.github.io/golem/)
+- COOL! [compareWith: EASY DIFF AND MERGE IN RSTUDIO](https://mirai-solutions.ch/news/2019/07/04/compareWith/. We are happy to announce the R package compareWith, providing user-friendly RStudio addins that simplify diff and merge tasks.)
+- COOL! [R's Lists and its Detestable Dearth of Data-Structures](https://www.refsmmat.com/posts/2016-09-12-r-lists.html)
+
+
+# 04.07.2019
+## R
+- COOL! [fabricatr: Imagine your data before you collect it](https://declaredesign.org/r/fabricatr/)
+- [Is there an R function to escape a string for regex characters](https://stackoverflow.com/questions/14836754/is-there-an-r-function-to-escape-a-string-for-regex-characters)
+- [sub() and gsub() function in R](http://www.datasciencemadesimple.com/sub-gsub-function-in-r/)
+
+
+# 02.07.2019
+## R
+- COOL! Time-Series Clustering
+	- [dtwclust: Time Series Clustering Along with Optimizations for the Dynamic Time Warping Distance](https://cran.r-project.org/web/packages/dtwclust/)
+Time series clustering along with optimized techniques related to the Dynamic Time Warping distance and its corresponding lower bounds. Implementations of partitional, hierarchical, fuzzy, k-Shape and TADPole clustering are available. Functionality can be easily extended with custom distance measures and centroid definitions. Implementations of DTW barycenter averaging, a distance based on global alignment kernels, and the soft-DTW distance and centroid routines are also provided. All included distance functions have custom loops optimized for the calculation of cross-distance matrices, including parallelization support. Several cluster validity indices are included.
+	- [asardaes/dtwclust](https://github.com/asardaes/dtwclust). R Package for Time Series Clustering Along with Optimizations for DTW https://cran.r-project.org/package=dt…
+	- [Stock Clustering with Time Series Clustering in R](https://medium.com/@panda061325/stock-clustering-with-time-series-clustering-in-r-63fe1fabe1b6)
+	- [How to get the result of dtwclust](https://stackoverflow.com/questions/42197984/how-to-get-the-result-of-dtwclust)
+	- [dtw: Dynamic Time Warping Algorithms](https://cran.r-project.org/web/packages/dtw/index.html)
+A comprehensive implementation of dynamic time warping (DTW) algorithms in R. DTW computes the optimal (least cumulative distance) alignment between points of two time series. Common DTW variants covered include local (slope) and global (window) constraints, subsequence matches, arbitrary distance definitions, normalizations, minimum variance matching, and so on. Provides cumulative distances, alignments, specialized plot styles, etc.
+	- [Dynamic Time Warping (DTW) as a mean to cluster time series](https://rpubs.com/esobolewska/dtw-time-series)
+	- [Welcome to Dynamic Time Warp project!](http://dtw.r-forge.r-project.org/)
+Comprehensive implementation of Dynamic Time Warping algorithms in R. Supports arbitrary local (eg symmetric, asymmetric, slope-limited) and global (windowing) constraints, fast native code, several plot styles, and more.
+- COOL! [REORDERING AND FACETTING FOR GGPLOT2](https://juliasilge.com/blog/reorder-within/).
+	- [David Robinson's Personal R Package](https://github.com/dgrtwo/drlib)
+	- [`reorder_within`](https://github.com/dgrtwo/drlib/blob/master/R/reorder_within.R)
+	- [Ordering Categories within ggplot2 Facets](https://trinkerrstuff.wordpress.com/2016/12/23/ordering-categories-within-ggplot2-facets/)
+- [VLOOKUP in R with Schwartau Beehive Data](https://jmarriott.com/posts/vlookup-in-r/)
+
+# 01.07.2019
+## R
+- [rlang 0.4.0](https://www.tidyverse.org/articles/2019/06/rlang-0-4-0/)
+- [Curly-Curly, the successor of Bang-Bang](https://www.brodrigues.co/blog/2019-06-20-tidy_eval_saga/)
+- COOL![Make Refreshing Segmented Column Charts with {ggchicklet}](https://rud.is/b/2019/06/30/make-refreshing-segmented-column-charts-with-ggchicklet/)
+- [Parallel R: Socket or Fork](https://statcompute.wordpress.com/2019/06/30/parallel-r-socket-or-fork/)
+- [Vignette: Write & Read Multiple Excel files with purrr](https://martinctc.github.io/blog/vignette-write-and-read-multiple-excel-files-with-purrr/)
+- [Text Parsing and Text Analysis of a Periodic Report (with R)](https://tonyelhabr.rbind.io/post/text-parsing-analysis-periodic-report/)
+- COOL! [My Favorite data.table Feature](http://www.win-vector.com/blog/2019/06/my-favorite-data-table-feature/)
+
 # 28.06.2019
 - some packages:
 	- [Rfast: A Collection of Efficient and Extremely Fast R Functions](https://cran.r-project.org/web/packages/Rfast/index.html)
@@ -638,7 +761,12 @@ A collection of fast (utility) functions for data analysis. Column- and row- wis
 	- [missRanger: Fast Imputation of Missing Values by Chained Random Forests](https://rdrr.io/cran/missRanger/man/missRanger.html)
 	- [imputeTS: Time Series Missing Value Imputation](http://steffenmoritz.github.io/imputeTS/)
 - [Compile Hadley’s Advanced R to a PDF](http://brettklamer.com/diversions/statistical/compile-hadleys-advanced-r-programming-to-a-pdf/)
+- [How do I access the data frame that has been passed to ggplot()?](https://stackoverflow.com/questions/45088454/how-do-i-access-the-data-frame-that-has-been-passed-to-ggplot)
+- [How to Turn Your ggplot2 Visualization into an Interactive Tweet](https://datatitian.com/how-to-turn-your-ggplot2-visualization-into-an-interactive-tweet/)
 
+## R Markdown
+- [Allow to change the resolution of plots globally (or change the default to 96dpi) #1832 {Open}](https://github.com/rstudio/shiny/issues/1832)
+- Тут есть workaround. [Poor resolution in knitr using Rmd](https://stackoverflow.com/questions/18884778/poor-resolution-in-knitr-using-rmd)
 
 # 27.06.2019
 ## R
@@ -993,7 +1121,10 @@ kable output
 ```{r echo=TRUE}
 knitr::kable(ggplot2::diamonds[1:10, ])
 ```
-
+- [Setting document title in Rmarkdown from parameters](https://stackoverflow.com/questions/31861569/setting-document-title-in-rmarkdown-from-parameters)
+- [R Markdown. Parameters](https://rmarkdown.rstudio.com/lesson-6.html)
+R Markdown documents can include one or more parameters whose values can be set when you render the report. For example, the file below, available here ⧉, uses a data parameter that determines which data set to plot.
+- [Using parameters in Rmarkdown](https://nsaunders.wordpress.com/2019/03/04/using-parameters-in-rmarkdown/)
 
 ## R
 - COOL! [raivokolde/pheatmap](https://github.com/raivokolde/pheatmap). Pretty heatmaps

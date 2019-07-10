@@ -226,3 +226,7 @@ https://openconnect.github.io/openconnect-gui/ (edited)
 
 ## Photoshop
 - COOL! [20 Free Spray Paint Photoshop Brushes with Splatters & Drips](https://blog.spoongraphics.co.uk/freebies/20-free-spray-paint-photoshop-brushes-with-splatters-drips)
+
+## Steam
+- [How to move Single or Multiple Steam Games to another Drive or Folder](https://www.thewindowsclub.com/move-steam-games-another-drive-folder)
+- [How to Move a Steam Game to Another Drive, The Easy Way](https://www.howtogeek.com/269515/how-to-move-a-steam-game-to-another-drive-without-re-downloading-it/)
