@@ -177,6 +177,7 @@ http://answers.microsoft.com/en-us/windows/forum/windows_10-security/event-id-10
 ```
 Using fsutil volume diskfree c:   or  dir command we can get info on one particular drive, but how to get this on all drives in the system using a single command?
 ```
+- [DriveLetterView v1.46](https://www.nirsoft.net/utils/drive_letter_view.html)
 
 ## Tips
 - [Как создать локальную учетную запись в Windows 10](http://windowstips.ru/notes/18570)
@@ -185,6 +186,20 @@ Using fsutil volume diskfree c:   or  dir command we can get info on one particu
 - [ms-setting:display and ms-personalization-background problem](http://www.windows10forums.com/threads/ms-setting-display-and-ms-personalization-background-problem.1247/)
 Hey Guyz. I found a solution for settings and updates. Download this update [3081424](https://support.microsoft.com/kb/3081424). And download the utility Microsoft Troubleshooter and fix it. Download it from here http://aka.ms/diag_settings
 - [Settings doesn’t launch, or launches the Store instead](http://answers.microsoft.com/en-us/windows/forum/windows_10-other_settings/settings-doesnt-launch-or-launches-the-store/ec439819-7ee4-4b4d-abdd-35d82e04c55f)
+
+## Удаления мэпинга сетевой папки
+- [How to delete mapped network drives on Windows 10 {QUICK GUIDE}](https://windowsreport.com/delete-mapped-network-drive/). Type: `net use drive letter/delete`
+ (for example, if you have a drive mapping using letter G, type net use G:/delete)
+- [unmap a drive letter from a folder in Windows 10](https://answers.microsoft.com/en-us/windows/forum/all/unmap-a-drive-letter-from-a-folder-in-windows-10/efa0b5c6-7d15-4451-aa27-4432b822600a)
+- Resolved: [Unable to Open/Disconnect a Mapped Drive in Windows 10](https://answers.microsoft.com/en-us/windows/forum/windows_10-files/unable-to-opendisconnect-a-mapped-drive-in-windows/0289115c-0998-45ee-aacb-728d1bd31c01?auth=1):
+```
+
+To resolve this issue, please follow the steps on how to disconnect a Mapped drive below:
+
+Right click on Start button > select Command Prompt (Admin).
+Type " mountvol /r "
+Reboot your computer.
+```
 
 ## Folder ownership
 - COOL! [List all files with certain extensions in Windows folder in a single call](https://stackoverflow.com/questions/17618271/list-all-files-with-certain-extensions-in-windows-folder-in-a-single-call).
@@ -230,3 +245,17 @@ https://openconnect.github.io/openconnect-gui/ (edited)
 ## Steam
 - [How to move Single or Multiple Steam Games to another Drive or Folder](https://www.thewindowsclub.com/move-steam-games-another-drive-folder)
 - [How to Move a Steam Game to Another Drive, The Easy Way](https://www.howtogeek.com/269515/how-to-move-a-steam-game-to-another-drive-without-re-downloading-it/)
+- [Как вернуть деньги за игры, купленные в Steam](http://kanobu.ru/articles/kak-vernut-dengi-za-igryi-kuplennyie-v-steam-369053/)
+- [Backup, Restore, Move Steam games with Steam Library Manager](https://www.thewindowsclub.com/steam-library-manager)
+- Вручную в explorer. [Moving a Library](https://www.cloudwards.net/how-to-move-steam-games/)
+```
+Step 1: Create a Steam library folder following the instructions above, then close the Steam client.
+Step 2: Browse to the Steam installation folder to be moved. Once there, delete all files and folders except for “Steamapps” and “userdata.”
+Step 3: Cut and paste the Steam folder into the new path you created. For instance, it could be called E:\SteamLibrary
+Step 4: Reopen Steam and log in, then point Steam to your new directory and verify game files if necessary. If you encounter issues, try uninstalling and reinstalling Steam. The Steam support page can also be helpful.
+```
+- [Steam Console](https://steamcommunity.com/sharedfiles/filedetails/?id=873543244). Добавить к ярлыку `-console`
+
+
+
+

@@ -161,3 +161,5 @@ GROUP BY table
 - Посмотрим содержание отдельной записи командой: `select * from x5logs_piter_2018 limit 1 format Vertical`
 - Посмотрим сэмплы сообщений от подсистемы лояльности командой: `select * from x5logs_piter_2018 where subsys == 'PlLoyaltyCardManagement' and like(more, '%PROCESS TRANSACTION %') limit 10`
 
+# Очистка таблицы
+- [Truncate table в Clickhouse](https://ruhighload.com/truncate+table+%D0%B2+clickhouse)

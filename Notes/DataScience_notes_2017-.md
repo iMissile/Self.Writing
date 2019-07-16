@@ -6186,9 +6186,6 @@ class(n$a)
 - [Learn data-visualization](http://www.informationisbeautiful.net/about/). I’m David McCandless, a London-based author, writer and designer. I’ve written for The Guardian, Wired and others. I’m into anything strange and interesting. 
 These days I’m an independent data journalist and information designer. A passion of mine is visualizing information – facts, data, ideas, subjects, issues, statistics, questions – all with the minimum of words.
 
-## Steam
-- [Как вернуть деньги за игры, купленные в Steam](http://kanobu.ru/articles/kak-vernut-dengi-za-igryi-kuplennyie-v-steam-369053/)
-
 # 09.06.2016
 ## R
 - ['names' attribute \[9\] must be the same length as the vector \[1\]](http://stackoverflow.com/questions/14153092/meaning-of-ddply-error-names-attribute-9-must-be-the-same-length-as-the-vec)

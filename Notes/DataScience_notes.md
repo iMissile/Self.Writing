@@ -64,6 +64,34 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - Bookmate [Изменить данные карты, с которой происходят списания за подписку](https://support.bookmate.com/hc/ru/articles/219428628-%D0%98%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BA%D0%B0%D1%80%D1%82%D1%8B-%D1%81-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D1%8F%D1%82-%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B7%D0%B0-%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%BA%D1%83)
 
 
+# GIT
+- COOL! [git stash – это то, что я искал](http://stepansuvorov.com/blog/2012/11/git-stash-%D1%8D%D1%82%D0%BE-%D1%82%D0%BE-%D1%87%D1%82%D0%BE-%D1%8F-%D0%B8%D1%81%D0%BA%D0%B0%D0%BB/)
+```
+git stash
+git pull
+git stash apply
+```
+- COOL! [How to clone a specific branch in git](https://coderwall.com/p/y7hf6w/how-to-clone-a-specific-branch-in-git)
+- COOL! [Clone only one branch {duplicate}](https://stackoverflow.com/questions/4811434/clone-only-one-branch/14930421#14930421)
+```
+git clone learned --single-branch option to limit cloning to a single branch (surprise!); tags that do not point into the history of the branch are not fetched.
+Git actually allows you to clone only one branch, for example:
+git clone -b mybranch --single-branch git://sub.domain.com/repo.git
+```
+- [Clone at Git Repo to a Different Directory](https://til.hashrocket.com/posts/z0f393xq0s-clone-at-git-repo-to-a-different-directory)
+
+Итого, вытаскиваем ветку 'huawei' командой
+`git clone -b huawei https://gitlab.com/TV-stat/mts-tv-stat.reports.git ./mts-tv-stat.reports.hw`
+- [7.12 Инструменты Git - Создание пакетов](https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2)
+
+
+# R general
+- COOL! [Upgrading to R 3.6.0 on a Mac – May 14, 2019](https://ibecav.github.io/update_libraries/).
+- Launch R/Rstudio and type .libPaths() and you should see the new path to your personal library.
+- После переноса используем `update.packages(checkBuilt=TRUE, ask=FALSE), чтобы перестроить пакеты под новую версию.
+- COOL! COOL! [A comprehensive survey of the types of things in R. 'mode' and 'class' and 'typeof' are insufficient](https://stackoverflow.com/questions/8855589/a-comprehensive-survey-of-the-types-of-things-in-r-mode-and-class-and-type)
+
+
 # e-books
 - [Books related to R](https://www.r-project.org/doc/bib/R-books.html)
 
@@ -119,10 +147,8 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [The Tidynomicon. A Brief Introduction to R for Python Programmers](https://gvwilson.github.io/tidynomicon/)
 - [Mining of Massive Datasets](http://www.mmds.org/)
 - [Circular Visualization in R](https://jokergoo.github.io/circlize_book/book/) by Zuguang Gu. This is the documentation of the [circlize](https://cran.r-project.org/package=circlize) package. Examples in the book are generated under version 0.4.7.
+- [GAM IN R by NOAM ROSS](https://noamross.github.io/gams-in-r-course/). A Free, Interactive Course using mgcv
 
-
-## R general
-- COOL! COOL! [A comprehensive survey of the types of things in R. 'mode' and 'class' and 'typeof' are insufficient](https://stackoverflow.com/questions/8855589/a-comprehensive-survey-of-the-types-of-things-in-r-mode-and-class-and-type)
 
 # VPN
 - [ExpressVPN](https://www.expressvpn.com/ru/order)
@@ -535,6 +561,7 @@ https://www.r-graph-gallery.com/
 https://www.data-to-viz.com/
 https://rawgraphs.io/
 https://plot.ly/products/cloud/
+- [What Are Data Visualization Style Guidelines?](https://medium.com/data-visualization-society/style-guidelines-92ebe166addc)
 
 ## Анимация
 - COOL! [gganimate](https://gganimate.com/). gganimate extends the grammar of graphics as implemented by ggplot2 to include the description of animation. It does this by providing a range of new grammar classes that can be added to the plot object in order to customise how it should change with time.
@@ -632,6 +659,63 @@ LSHR - fast and memory efficient package for near-neighbor search in high-dimens
 Course Description
 The course covers scalable machine learning and data mining algorithms for large/complex data. Topics include large-scale optimization techniques, hashing, recommendation systems, and tensor factorization. This will be structured as a seminar course with emphasis on public data sets such as Kaggle competitions, MovieLens, and various healthcare datasets. There will be introductory lectures that set the context and provide reviews of relevant material.
 
+
+# 15.07.2019
+## DS
+- [{#823 new Bug / Defect} openvpn-gui 2.4 need administrative privilege at first connection only](https://community.openvpn.net/openvpn/ticket/823)
+
+## R
+- COOL! [Dramatically speed up your R purrr functions with the furrr package](http://www.zevross.com/blog/2019/02/12/dramatically-speed-up-your-r-purrr-functions-with-the-furrr-package/)
+- [The power of three: purrr-poseful iteration in R with map, pmap and imap](http://www.zevross.com/blog/2019/06/11/the-power-of-three-purrr-poseful-iteration-in-r-with-map-pmap-and-imap/)
+- [SIMULATING DATA IN R: EXAMPLES IN WRITING MODULAR CODE](https://www.markhw.com/blog/modular-sims)
+- [Extracting the complete decimal part of the number in R](https://stackoverflow.com/questions/54017905/extracting-the-complete-decimal-part-of-the-number-in-r). There are multiple ways to solve and extract the decimal part some are: lets store the result in dec
+```
+dec <- my_num - floor(my_num)
+dec <- my_num%%1
+dec <- my_num - as.integer(my_num)
+dec <- my_num - trunc(my_num)
+```
+
+
+# 14.07.2019
+## R
+- [Numerical integration over an infinite interval in Rcpp (part 1)](https://stubner.me/2019/07/numerical-integration-in-rcpp/)
+- [Numerical integration over an infinite interval in Rcpp (part 2)](https://stubner.me/2019/07/numerical-integration-in-rcpp-part-2/)
+- [Quick Hit: {waffle} 1.0 Font Awesome 5 Pictograms and More](https://rud.is/b/2019/07/12/quick-hit-waffle-1-0-font-awesome-5-pictograms-and-more/)
+- [useR! 2019 Slides on Futures](https://www.jottr.org/2019/07/12/future-user2019-slides/)
+- COOL! [progressr: A Unifying API for Progress Updates](https://github.com/HenrikBengtsson/progressr)
+- [r-lib/progress](https://github.com/r-lib/progress#readme) Progress bar in your R terminal
+
+# 12.07.2019
+## R
+- [Bang Bang – How to program with dplyr](https://www.statworx.com/de/blog/bang-bang-how-to-program-with-dplyr/)
+- COOL! [My 2 cents on the "R vs Python" squabble](https://iyarlin.github.io/2019/07/11/my_2_cents_on_the_r_vs_python_squabble/)
+
+
+# 11.07.2019
+## UseR! 2019
+- [R for better science in less time](https://jules32.github.io/useR-2019-keynote/#1) by Julia Stewart Lowndes, PhD. [repo](https://github.com/jules32/useR-2019-keynote)
+- [Teaching data science with puzzles](https://github.com/isteves/ds-puzzles)
+- [Forecast Combination in R – slides](https://eranraviv.com/forecast-combination-r-slides/)
+- [Back from useR! 2019](https://colinfay.me/back-from-toulouse/)
+
+## R
+- Прекрасный компактный пример. [Data Binning and Plotting](http://www.jdatalab.com/data_science_and_data_mining/2017/01/30/data-binning-plot.html)
+- [Handling Overplotting with Large Datasets](http://www.jdatalab.com/data_science_and_data_mining/2017/01/26/overplotting-r.html)
+
+- [propro](https://gertjanssenswillen.github.io/propro/). This document introduces propro, an R-package for constructing probabilistic process models using Bayesian inference and MCMC.
+- [xiaodaigh/disk.frame](https://github.com/xiaodaigh/disk.frame). Fast disk-based parallelized data manipulation framework for larger-than-RAM data
+- [tidyr:Pivoting](https://tidyr.tidyverse.org/dev/articles/pivot.html)
+- [Tableau - Creating a Waffle Chart](http://jjohn987.rbind.io/post/tableau-creating-a-waffle-chart/)
+- COOL! [elbersb/tidylog](https://github.com/elbersb/tidylog). Tidylog provides feedback about basic dplyr operations. It provides simple wrapper functions for the most common functions, such as filter, mutate, select, and group_by.
+- [Introduction to rbin
+- [rsquaredacademy/rbin](https://github.com/rsquaredacademy/rbin). Tools for binning data https://rbin.rsquaredacademy.com]
+- COOL! [dlookr: Tools for Data Diagnosis, Exploration, Transformation](https://cran.r-project.org/web/packages/dlookr/index.html)
+A collection of tools that support data diagnosis, exploration, and transformation. Data diagnostics provides information and visualization of missing values and outliers and unique and negative values to help you understand the distribution and quality of your data. Data exploration provides information and visualization of the descriptive statistics of univariate variables, normality tests and outliers, correlation of two variables, and relationship between target variable and predictor. Data transformation supports binning for categorizing continuous variables, imputates missing values and outliers, resolving skewness. And it creates automated reports that support these three tasks.
+
+
+
+
 # 10.07.2019
 ## R
 - Не до конца понял, надо почитать. [Monotonic Binning Driven by Decision Tree](https://statcompute.wordpress.com/2019/07/08/monotonic-binning-driven-by-decision-tree/)
@@ -639,24 +723,37 @@ The course covers scalable machine learning and data mining algorithms for large
 - [CLEAN, CONSISTENT COLUMN NAMES](https://drdoane.com/clean-consistent-column-names/)
 - [More on those stepped-wedge design assumptions: varying intra-cluster correlations over time](https://www.rdatagen.net/post/varying-intra-cluster-correlations-over-time/)
 - [The R console is in my native language, how can I set R to English?](https://stackoverflow.com/questions/12760491/the-r-console-is-in-my-native-language-how-can-i-set-r-to-english/30826542). First, go to the etc folder under R program files folder. Then locate Rconsole file. Find the line language =, change it to language = en if you want to run R in English.
-- ggplot
-	- COOL! [hrbrmstr/ggalt](https://github.com/hrbrmstr/ggalt). 🌎 Extra Coordinate Systems, Geoms, Statistical Transformations & Scales for 'ggplot2' https://cran.r-project.org/web/packag…
+
+## ggplot
+- COOL! [hrbrmstr/ggalt](https://github.com/hrbrmstr/ggalt). 🌎 Extra Coordinate Systems, Geoms, Statistical Transformations & Scales for 'ggplot2' https://cran.r-project.org/web/packag…
 	- Dev версия сильно опережает CRAN. [ggalt](https://yonicd.github.io/ggalt/index.html)
 A compendium of ‘geoms’, ‘coords’, ‘stats’, scales and fonts for ‘ggplot2’, including splines, 1d and 2d densities, univariate average shifted histograms, a new map coordinate system based on the ‘PROJ.4’-library and the ‘StateFace’ open source font ‘ProPublica’.
-	- [Transforming the breaks to match a scale](http://freerangestats.info/blog/2015/09/07/transforming-breaks-in-a-scale)
-	- [Increase number of axis ticks](https://stackoverflow.com/questions/11335836/increase-number-of-axis-ticks)
-	- [ggplot2 change axis limits for each individual facet panel](https://stackoverflow.com/questions/51735481/ggplot2-change-axis-limits-for-each-individual-facet-panel). This is a long-standing feature request (see, e.g., 2009, 2011, 2016) which is tackled by a separate package `facetscales`.
+- [Transforming the breaks to match a scale](http://freerangestats.info/blog/2015/09/07/transforming-breaks-in-a-scale)
+- [Increase number of axis ticks](https://stackoverflow.com/questions/11335836/increase-number-of-axis-ticks)
+- [ggplot2 change axis limits for each individual facet panel](https://stackoverflow.com/questions/51735481/ggplot2-change-axis-limits-for-each-individual-facet-panel). This is a long-standing feature request (see, e.g., 2009, 2011, 2016) which is tackled by a separate package `facetscales`.
 	- [facetscales](https://github.com/zeehio/facetscales)
 The goal of facetscales is to let you use facet_grid with different scales per plot. This is useful for instance to display in different facets magnitudes with different units.
-	- [ggrepel examples](https://cran.r-project.org/web/packages/ggrepel/vignettes/ggrepel.html) by Kamil Slowikowski, 2019-05-06
+- [ggrepel examples](https://cran.r-project.org/web/packages/ggrepel/vignettes/ggrepel.html) by Kamil Slowikowski, 2019-05-06
 - [Add row in each group using dplyr and add_row()](https://stackoverflow.com/questions/43403282/add-row-in-each-group-using-dplyr-and-add-row)
 - `geom-smooth`: [Understanding the confidence band from a polynomial regression](https://stats.stackexchange.com/questions/82603/understanding-the-confidence-band-from-a-polynomial-regression)
 - [Center bars of histogram using ggplot2](https://stackoverflow.com/questions/34180300/center-bars-of-histogram-using-ggplot2)
+- [ggplot: Calculated aesthetics](https://ggplot2.tidyverse.org/reference/stat.html)
+- [R ggplot2: stat_count() must not be used with a y aesthetic error in Bar graph](https://stackoverflow.com/questions/39679057/r-ggplot2-stat-count-must-not-be-used-with-a-y-aesthetic-error-in-bar-graph)
+- [Data Binning and Plotting](http://www.jdatalab.com/data_science_and_data_mining/2017/01/30/data-binning-plot.html)
+- [thomasp85/patchwork](https://github.com/thomasp85/patchwork). The Composer of ggplots
+- [Easy multi-panel plots in R using facet_wrap() and facet_grid() from ggplot2](http://www.zevross.com/blog/2019/04/02/easy-multi-panel-plots-in-r-using-facet_wrap-and-facet_grid-from-ggplot2/). One of the most powerful aspects of the R plotting package ggplot2 is the ease with which you can create multi-panel plots. With a single function you can split a single plot into many related plots using `facet_wrap()` or `facet_grid()`.
+- COOL! [UNDERSTANDING GGPLOT: AN EXAMPLE](http://jdobr.es/blog/data-vis-with-ggplot/)
+- COOL! [How to Set ggplot Facets Coords Individually](http://www.zachburchill.ml/ggplot_facets/)
+- [Be Awesome in ggplot2: A Practical Guide to be Highly Effective - R software and data visualization](http://www.sthda.com/english/wiki/be-awesome-in-ggplot2-a-practical-guide-to-be-highly-effective-r-software-and-data-visualization)
+- [12 Extensions to ggplot2 for More Powerful R Visualizations](https://mode.com/blog/r-ggplot-extension-packages)
+- [Introduction to ggridges](https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html)
+- [Setting individual axis limits with facet_wrap and scales = “free” in ggplot2](https://stackoverflow.com/questions/18046051/setting-individual-axis-limits-with-facet-wrap-and-scales-free-in-ggplot2)
+- [facetscales](https://github.com/zeehio/facetscales)
+The goal of facetscales is to let you use facet_grid with different scales per plot. This is useful for instance to display in different facets magnitudes with different units.
 
 ## Learning
 - COOL! [СРЕДНЕЕ vs МЕДИАНА](https://m-learn.ru/mean-median/)
 - [«Средние» значения — ваш враг. Как не попасться на удочку усреднения](https://rb.ru/story/srednenko/)
-
 
 # 09.07.2019
 ## R
@@ -1759,6 +1856,29 @@ The cyphr package seems to provide a good choice for small research group that s
 - [How to tell gzip to keep original file?](https://unix.stackexchange.com/questions/46786/how-to-tell-gzip-to-keep-original-file)
 - [Example Uses of the Linux gzip Command](https://www.lifewire.com/example-uses-of-the-linux-gzip-command-4078675)
 - [Сжатие и архивация файлов с помощью Gzip, Zip и Tar](http://www.rhd.ru/docs/manuals/enterprise/RHEL-AS-2.1-Manual/getting-started-guide/s1-zip-tar.html)
+- [GZip every file separately](https://stackoverflow.com/questions/1792078/gzip-every-file-separately)
+- [Check validity of gz file](https://unix.stackexchange.com/questions/359303/check-validity-of-gz-file). `gzip -v -t file.gz`
+- [Script to create individual zip files for each .txt file it finds and move them after](https://stackoverflow.com/questions/12321167/script-to-create-individual-zip-files-for-each-txt-file-it-finds-and-move-them)
+- `parallel gzip ::: *`
+GNU Parallel is a fantastic tool that should be used far more in this world where CPUs are only getting more cores rather than more speed. There are loads of examples that we would all do well to take 10 minutes to read
+[GNU Parallel Tutorial](https://www.gnu.org/software/parallel/parallel_tutorial.html)
+- [Example Uses Of The Linux "gzip" Command](https://www.lifewire.com/example-uses-of-the-linux-gzip-command-4078675)
+- [Linux zip command](https://www.computerhope.com/unix/zip.htm)
+- [How to zip multiple files into separate archives?](https://superuser.com/questions/430388/how-to-zip-multiple-files-into-separate-archives)
+```
+find . -name '*.txt.*' -print -exec zip '{}'.zip '{}' \; -exec mv '{}'.zip '{}' \;
+```
+Find the .txt files
+The first -exec zips the files
+The second -exec renames the zipped files to the original names
+- [Linux 101 Hacks. Hack 45. Advanced compression using zip command](https://linux.101hacks.com/archive-compression/advanced-compression-using-zip-command/)
+- [How to Use zip Command in Linux](https://tecadmin.net/how-to-use-zip-command-line-linux/)
+- [How To: Disk Full? - Check Your Trash](https://ubuntuforums.org/showthread.php?t=898573). Гуляем командами по директориям
+```
+df -Th | sort
+du -sh * | sort -n
+```
+
 
 ## R
 - Permutations
@@ -2277,24 +2397,6 @@ Quosures were inspired by R’s formulas, because formulas capture an expression
 - Появился баг в DT Shiny [DataTables warning: table id= - Ajax error please see http://datatables.net/tn/7](https://community.rstudio.com/t/datatables-warning-table-id-ajax-error-please-see-http-datatables-net-tn-7/12193/3)
 - [Почему отменили будущее?](https://www.youtube.com/watch?v=xoUXGgO0Lj4)
 
-# GIT
-- COOL! [git stash – это то, что я искал](http://stepansuvorov.com/blog/2012/11/git-stash-%D1%8D%D1%82%D0%BE-%D1%82%D0%BE-%D1%87%D1%82%D0%BE-%D1%8F-%D0%B8%D1%81%D0%BA%D0%B0%D0%BB/)
-```
-git stash
-git pull
-git stash apply
-```
-- COOL! [How to clone a specific branch in git](https://coderwall.com/p/y7hf6w/how-to-clone-a-specific-branch-in-git)
-- COOL! [Clone only one branch {duplicate}](https://stackoverflow.com/questions/4811434/clone-only-one-branch/14930421#14930421)
-```
-git clone learned --single-branch option to limit cloning to a single branch (surprise!); tags that do not point into the history of the branch are not fetched.
-Git actually allows you to clone only one branch, for example:
-git clone -b mybranch --single-branch git://sub.domain.com/repo.git
-```
-- [Clone at Git Repo to a Different Directory](https://til.hashrocket.com/posts/z0f393xq0s-clone-at-git-repo-to-a-different-directory)
-
-Итого, вытаскиваем ветку 'huawei' командой
-`git clone -b huawei https://gitlab.com/TV-stat/mts-tv-stat.reports.git ./mts-tv-stat.reports.hw`
 
 # 23.01.2018
 ## R
@@ -2780,31 +2882,6 @@ Provides functionality for client-side navigation of the server side file system
 	- [A Very Palette-able Post](https://rud.is/b/2017/05/21/a-very-pallete-able-post/)
 	- [Making Faceted Heatmaps with ggplot2](https://rud.is/b/2016/02/14/making-faceted-heatmaps-with-ggplot2/)
 	
-
-
-# 12.11.2018
-## Linux
-- [GZip every file separately](https://stackoverflow.com/questions/1792078/gzip-every-file-separately)
-- [Script to create individual zip files for each .txt file it finds and move them after](https://stackoverflow.com/questions/12321167/script-to-create-individual-zip-files-for-each-txt-file-it-finds-and-move-them)
-- `parallel gzip ::: *`
-GNU Parallel is a fantastic tool that should be used far more in this world where CPUs are only getting more cores rather than more speed. There are loads of examples that we would all do well to take 10 minutes to read
-[GNU Parallel Tutorial](https://www.gnu.org/software/parallel/parallel_tutorial.html)
-- [Example Uses Of The Linux "gzip" Command](https://www.lifewire.com/example-uses-of-the-linux-gzip-command-4078675)
-- [Linux zip command](https://www.computerhope.com/unix/zip.htm)
-- [How to zip multiple files into separate archives?](https://superuser.com/questions/430388/how-to-zip-multiple-files-into-separate-archives)
-```
-find . -name '*.txt.*' -print -exec zip '{}'.zip '{}' \; -exec mv '{}'.zip '{}' \;
-```
-Find the .txt files
-The first -exec zips the files
-The second -exec renames the zipped files to the original names
-- [Linux 101 Hacks. Hack 45. Advanced compression using zip command](https://linux.101hacks.com/archive-compression/advanced-compression-using-zip-command/)
-- [How to Use zip Command in Linux](https://tecadmin.net/how-to-use-zip-command-line-linux/)
-- [How To: Disk Full? - Check Your Trash](https://ubuntuforums.org/showthread.php?t=898573). Гуляем командами по директориям
-```
-df -Th | sort
-du -sh * | sort -n
-```
 
 
 # 09.11.2018
