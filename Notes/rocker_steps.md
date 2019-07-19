@@ -304,3 +304,7 @@ logging:
   file:
     shinyproxy.log
 ```
+
+
+# запуск контейнера на продуктивной машине
+sudo docker run -d --restart always -p 8787:8787 -v /home/support/scripts/:/home/ruser/R -e USER=ruser -e PASSWORD=qaz_wsx_123 -e ROOT="TRUE" r-apps

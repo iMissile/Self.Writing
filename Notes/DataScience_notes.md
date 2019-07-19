@@ -148,6 +148,7 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - [Mining of Massive Datasets](http://www.mmds.org/)
 - [Circular Visualization in R](https://jokergoo.github.io/circlize_book/book/) by Zuguang Gu. This is the documentation of the [circlize](https://cran.r-project.org/package=circlize) package. Examples in the book are generated under version 0.4.7.
 - [GAM IN R by NOAM ROSS](https://noamross.github.io/gams-in-r-course/). A Free, Interactive Course using mgcv
+- [Supplement to Shiny in Production](https://kellobri.github.io/shiny-prod-book/)
 
 
 # VPN
@@ -660,6 +661,32 @@ Course Description
 The course covers scalable machine learning and data mining algorithms for large/complex data. Topics include large-scale optimization techniques, hashing, recommendation systems, and tensor factorization. This will be structured as a seminar course with emphasis on public data sets such as Kaggle competitions, MovieLens, and various healthcare datasets. There will be introductory lectures that set the context and provide reviews of relevant material.
 
 
+# 19.07.2019
+## R
+- [excelR](https://swechhya.github.io/excelR/)
+An R interface to jExcel library to create web-based interactive tables and spreadsheets compatible with Excel or any other spreadsheet software.
+- [EtherCalc](https://ethercalc.net/)
+EtherCalc is a web spreadsheet. Your data is saved on the web, and people can edit the same document at the same time. Everybody's changes are instantly reflected on all screens. Work together on inventories, survey forms, list management, brainstorming sessions and more!
+- [Introducing the {ethercalc} package](https://rud.is/b/2019/06/15/introducing-the-ethercalc-package/)
+- [To Err Is Human; To Ignore, Divine](https://enpiar.com/2019/07/17/to-err-is-human-to-ignore-divine/)
+- [MATCH.ARG. A WEIRD FUNCTION THAT CAN HELP YOU WRITE BETTER FUNCTIONS](https://enpiar.com/2019/07/17/to-err-is-human-to-ignore-divine/)
+- [A/B Testing with Machine Learning - A Step-by-Step Tutorial](https://www.business-science.io/business/2019/03/11/ab-testing-machine-learning.html)
+
+# 18.07.2019
+## R
+- COOL! [hadley/emo](https://github.com/hadley/emo). Easily insert emoji into R and RMarkdown
+- [Shiny Modules](https://www.inwt-statistics.com/read-blog/shiny-modules.html)
+- [shinymeta — a revolution for reproducibility](https://towardsdatascience.com/shinymeta-a-revolution-for-reproducibility-bfda6b329f68)
+Joe Cheng presented shinymeta enabling reproducibility in shiny at useR in July 2019. This is a simple application using shinymeta. You will see how reactivity and reproducibility do not exclude each other. I am really thankful for Joe Cheng realizing the shinymeta project.
+- [Aggregating spatial data with the grainchanger package](https://ropensci.org/blog/2019/07/16/grainchanger/)
+
+## DS
+- [SVMs in One Picture](https://www.datasciencecentral.com/profiles/blogs/svm-in-one-picture)
+- [33 Statistical Concepts Explained in Simple English - Part 14](https://www.datasciencecentral.com/profiles/blogs/29-statistical-concepts-explained-in-simple-english-part-14)
+- [Cross Validation in One Picture](https://www.datasciencecentral.com/profiles/blogs/cross-validation-in-one-picture)
+- COOL! [The Difference Between Managing Large and Small Data Science Teams](https://www.datasciencecentral.com/profiles/blogs/the-difference-between-managing-large-and-small-data-science-team)
+- [Three applications of Euler’s theorem](https://www.johndcook.com/blog/2018/09/23/eulers-theorem/)
+
 # 15.07.2019
 ## DS
 - [{#823 new Bug / Defect} openvpn-gui 2.4 need administrative privilege at first connection only](https://community.openvpn.net/openvpn/ticket/823)
@@ -698,6 +725,11 @@ dec <- my_num - trunc(my_num)
 - [Teaching data science with puzzles](https://github.com/isteves/ds-puzzles)
 - [Forecast Combination in R – slides](https://eranraviv.com/forecast-combination-r-slides/)
 - [Back from useR! 2019](https://colinfay.me/back-from-toulouse/)
+- [Twitter influencers for #useR2019](https://johnguerra.co/viz/influentials/story/?hashtag=useR2019)
+A visual story on how to find the most interesting people to follow for a Twitter topic
+- [Headless Chrome. Automation with R crrri package](https://cderv.gitlab.io/user2019-crrri/#1)
+- [Why Javascript?](https://www.biostat.wisc.edu/~kbroman/presentations/JSM2019/) by Karl Broman
+
 
 ## R
 - Прекрасный компактный пример. [Data Binning and Plotting](http://www.jdatalab.com/data_science_and_data_mining/2017/01/30/data-binning-plot.html)
@@ -3695,7 +3727,7 @@ https://www.stat.ubc.ca/~jenny/STAT545A/block18_gapminderGgplot2VsLattice.html
 
 # 05.09.2018
 ## R
-- [Regular-Expression-in-R](https://github.com/ritagior/Regular-Expression-in-R), resentation for SatRday Amsterdam 01/09/2018
+- [Regular-Expression-in-R](https://github.com/ritagior/Regular-Expression-in-R), presentation for SatRday Amsterdam 01/09/2018
 - [Optimization Methods for Tuning Predictive Models](https://github.com/topepo/Optimization-Methods-for-Tuning-Predictive-Models/blob/master/Kuhn_NLP_Tune.pdf), CRUG 2016, Max Kuhn Pfizer R&D
 - [dplyr::mutate_if fails when column names contain spaces](https://stackoverflow.com/questions/44781389/dplyrmutate-if-fails-when-column-names-contain-spaces?rq=1)
 - [Using group_by with mutate_if by column name](https://stackoverflow.com/questions/46607352/using-group-by-with-mutate-if-by-column-name)
