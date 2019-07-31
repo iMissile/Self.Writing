@@ -149,6 +149,7 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - [Circular Visualization in R](https://jokergoo.github.io/circlize_book/book/) by Zuguang Gu. This is the documentation of the [circlize](https://cran.r-project.org/package=circlize) package. Examples in the book are generated under version 0.4.7.
 - [GAM IN R by NOAM ROSS](https://noamross.github.io/gams-in-r-course/). A Free, Interactive Course using mgcv
 - [Supplement to Shiny in Production](https://kellobri.github.io/shiny-prod-book/)
+- [What They Forgot to Teach You About R](https://whattheyforgot.org/) by Jennifer Bryan, Jim Hester
 
 
 # VPN
@@ -374,6 +375,26 @@ data.table 1.9.6 (and not doubt earlier versions) has option by= which can be us
 - performance различных способов сортировки [How to order data within subgroups in data.table R](https://stackoverflow.com/questions/28683712/how-to-order-data-within-subgroups-in-data-table-r)
 - [data.table v.1.11.0+ no longer freads data file that was fread by v.1.10.4-3](https://github.com/Rdatatable/data.table/issues/2857)
 - [fread from v.1.11.0+ no longer reads the .csv correctly, which was read perfectly in v.1.10.4-3 #2857 {Open}](https://github.com/Rdatatable/data.table/issues/2857)
+- [How to create a lag variable within each group?](https://stackoverflow.com/questions/26291988/how-to-create-a-lag-variable-within-each-group)
+From `data.table` versions >= v1.9.5, we can use `shift` with type as `lag` or `lead`. By default, the type is `lag`.
+- [shift: Fast lead/lag for vectors and lists](https://rdrr.io/cran/data.table/man/shift.html)
+- [Is my way of duplicating rows in data.table efficient?](https://stackoverflow.com/questions/8009900/is-my-way-of-duplicating-rows-in-data-table-efficient)
+- [Introduction to `data.table` by Haema Nilakanta & Kim Ky](http://rpubs.com/kykimeng/intro-to-data-table)
+- [How to select the first and last row within a grouping variable in a data frame?](https://stackoverflow.com/questions/8203818/how-to-select-the-first-and-last-row-within-a-grouping-variable-in-a-data-frame/8212756)
+- [Select first and last row from grouped data](https://stackoverflow.com/questions/31528981/select-first-and-last-row-from-grouped-data/31529043)
+- [Why is rbindlist “better” than rbind?](https://stackoverflow.com/questions/15673550/why-is-rbindlist-better-than-rbind)
+- COOL! [Left join using data.table](https://stackoverflow.com/questions/34598139/left-join-using-data-table)
+- [Remove rows with NA from data.table in R {duplicate}](https://stackoverflow.com/questions/28878005/remove-rows-with-na-from-data-table-in-r)
+- [Remove rows with all or some NAs (missing values) in data.frame](https://stackoverflow.com/questions/4862178/remove-rows-with-all-or-some-nas-missing-values-in-data-frame)
+Краткая сводка по применению функций к группировке в `data.table`
+	- [R data.table filtering on group size](https://stackoverflow.com/questions/34427383/r-data-table-filtering-on-group-size)
+	- [add a 'having' parameter to `[.data.table` #788 {Open}](https://github.com/Rdatatable/data.table/issues/788)
+	- [Further optimisation of `.SD` in `j` #735 {Open}](https://github.com/Rdatatable/data.table/issues/735)
+	- [When should I use the `:=` operator in `data.table`?](https://stackoverflow.com/questions/7029944/when-should-i-use-the-operator-in-data-table)
+	- [Advanced tips and tricks with `data.table`](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/) BY ANDREW BROOKS
+
+
+
 
 # DS
 - COOL! [Машинное обучение для людей. Разбираемся простыми словами](https://vas3k.ru/blog/machine_learning/)
@@ -660,6 +681,137 @@ LSHR - fast and memory efficient package for near-neighbor search in high-dimens
 Course Description
 The course covers scalable machine learning and data mining algorithms for large/complex data. Topics include large-scale optimization techniques, hashing, recommendation systems, and tensor factorization. This will be structured as a seminar course with emphasis on public data sets such as Kaggle competitions, MovieLens, and various healthcare datasets. There will be introductory lectures that set the context and provide reviews of relevant material.
 
+# 31.07.2019
+## R
+- [PowerPoint Report Generation with Shiny](https://www.tychobra.com/posts/2019_07_29_ppt_report_generation/) by Richard Hill and Andy Merlino
+- [Multilevel Models in R](https://datascienceplus.com/multilevel-models-in-r/)
+- [DASH HAS GONE FULL R](https://moderndata.plot.ly/dash-has-gone-full-r/)
+- [Network model trees](https://eeecon.uibk.ac.at/~zeileis/news/networktree/)
+- [reactable](https://glin.github.io/reactable/index.html). R interface to the React Table library, made with reactR.
+- [Visualization of large datasets with tabplot](https://cran.r-project.org/web/packages/tabplot/vignettes/tabplot-vignette.html)
+
+Installation
+
+# 30.07.2019
+## knitr
+- [Markdown comments syntax: Comments that won’t appear in generated output](https://alvinalexander.com/technology/markdown-comments-syntax-not-in-generated-output)
+- [I didn't mean() to ignore the median()](https://ibecav.netlify.com/post/i-didn-t-mean-to-ignore-the-median/)
+- COOL! [Using Linear Regression for Predictive Modeling in R](https://www.dataquest.io/blog/statistical-learning-for-predictive-modeling-r/)
+- COOL! [How to plot fitted lines with ggplot2](https://aosmith.rbind.io/2018/11/16/plot-fitted-lines/)
+- [Introduction to data.table](http://rpubs.com/kykimeng/intro-to-data-table)
+
+
+# 29.07.2019
+## DS
+- [What's the Best Statistical Software? A Comparison of R, Python, SAS, SPSS and STATA](https://www.inwt-statistics.com/read-blog/comparison-of-r-python-sas-spss-and-stata.html)
+
+## R
+- [Using environment variables and parametrized builds for automating R applications with Jenkins](https://jozef.io/r918-jenkins-pipelines/)
+- [Program Evaluation: Interrupted Time Series in R](https://datascienceplus.com/program-evaluation-interrupted-time-series-in-r/)
+- [Unsupervised Machine Learning in R: K-Means](https://jointhedatathread.com/2019/07/28/unsupervised-machine-learning-in-r-k-means/)
+
+# 25.07.2019
+## R debug
+- [r-lib/debugme](https://github.com/r-lib/debugme). Easy and efficient debugging for R packages
+- [debug-package](https://www.rdocumentation.org/packages/debug/versions/1.3.1/topics/debug-package) by Mark Bravington
+- [How to debug (placing break point,etc) an installed R package in RStudio?](https://stackoverflow.com/questions/22000969/how-to-debug-placing-break-point-etc-an-installed-r-package-in-rstudio)
+- Profvis. But see [this FAQ]() if you want package code to show up in the code panel.)
+- [Introduction to profvis](https://rstudio-pubs-static.s3.amazonaws.com/123888_184f1274483e4970b0a366a8573cfa9f.html) by Winston Chang, 2016-05-05
+- COOL!!! [How do I get code from an R package to show in the code panel?](https://rstudio-pubs-static.s3.amazonaws.com/123888_184f1274483e4970b0a366a8573cfa9f.html#how-do-i-get-code-from-an-r-package-to-show-in-the-code-panel)
+In typical use, only code written by the user is shown in the code panel. (This is code for which source references are available.) Yellow blocks in the flame graph have corresponding lines of code in the code panel, and when moused over, the line of code will be highlighted. White blocks in the flame graph don’t have corresponding lines in the code panel. In most cases, the calls represented by the white blocks are to functions that are in base R and other packages.
+
+Profvis can also show code that’s inside an R package. To do this, source refs for the package code must be available. There are two general ways to do this: you can install the package with source refs, or you can use devtools::load_all() to load a package from sources on disk.
+E.g. `install.packages("ggplot2", type="source", INSTALL_opts="--with-keep.source")`
+`devtools::install_github("gertjanssenswillen/bupaR", args="--with-keep.source")`
+
+- [Left Code Panel Doesn't Show Up #28 {Closed}](https://github.com/rstudio/profvis/issues/28). Ah, you'll need to enable the option keep.source in order for R to record the source code when running from Rscript. For example, this should work:
+```
+Rscript -e "options(keep.source=TRUE); p <- profvis::profvis({ profvis::pause(0.2) }); htmlwidgets::saveWidget(p, 'test.html')"
+```
+- [R:case4base - code profiling with base R](https://jozef.io/r004-profiling/)
+
+
+
+## R
+- [useR!2019 Quizz: Test your knowledge of base R and ThinkR](https://rtask.thinkr.fr/blog/user2019-quizz-test-your-knowledge-of-base-r-and-thinkr/)
+- COOL! [Customer Segmentation using RFM Analysis](https://blog.rsquaredacademy.com/customer-segmentation-using-rfm-analysis/). Learn to use RFM analysis for customer segmentation. RFM = "Recency, Frequency & Monetary"
+- ["Real life" DAG simulation using the simMixedDAG package](https://iyarlin.github.io/2019/07/23/mixed_dag_simulation_using_simmixeddag_package/)
+- [ymlthis: write YAML for R Markdown, bookdown, blogdown, and more](https://github.com/r-lib/ymlthis)
+- Udpipe
+	- [dependency parsing with udpipe](http://www.bnosac.be/index.php/blog/93-dependency-parsing-with-udpipe)
+	- [update of udpipe](http://www.bnosac.be/index.php/blog/92-update-of-udpipe)
+- [June 2019 "Top 40" R Packages](https://rviews.rstudio.com/2019/07/24/june-2019-top-40-r-packages/)
+	- [cppRouting v1.1](https://cran.r-project.org/package=cppRouting): Provides functions to calculate distances, shortest paths and isochrones on weighted graphs using several variants of Dijkstra algorithm. Algorithms include unidirectional Dijkstra Dijkstra (1959), bidirectional Dijkstra Goldberg et al. (2005), A* search Hart et al. (1968), and new bidirectional A* Pijls & Post (2009). See the vignette and website for how to use the package.
+	- Как раз очень интересно для прогнозирования времени вычислений. [GuessCompx v1.0.3](https://cran.r-project.org/package=GuessCompx): Provides functions to test multiple increasing random samples of a data set, and tries to fit various complexity functions o(n), o(n2), o(log(n)), etc. to make an empirical guess about the time and memory complexities of an algorithm or a function.
+	- [promotionImpact v0.1.2](https://rviews.rstudio.com/2019/07/24/june-2019-top-40-r-packages/): Provides functions to analyze and measure the promotion effectiveness on a given target variable (e.g., daily sales). Effects of these variables controlled for trend/periodicity/structural change using prophet Taylor and Letham (2017).
+	- [modelDown v1.0.1](https://cran.r-project.org/package=modelDown): Implements a website generator with HTML summaries for predictive models. This package uses DALEX explainers to describe global model behavior.
+	- [bvartools v0.0.1](https://cran.r-project.org/package=bvartools): Implements some common functions used for Bayesian inference for mulitvariate time series models. There is an Introduction and vignettes on Bayesian Structural Vector Autoregression, Bayesian Error Correlation, and Stochastic Search Variable Selection.
+	- [tsibbledata](https://cran.r-project.org/web/packages/tsibbledata/readme/README.html). This package provides examples of tsibble datasets which can be used within the tidyverts family of packages.
+- [skanaar/nomnoml](https://github.com/skanaar/nomnoml). The sassy UML diagram renderer with [nomnoml](http://www.nomnoml.com/)
+- COOL! [condvis2: Conditional Visualization for Statistical Models](https://cran.r-project.org/web/packages/condvis2/index.html)
+Constructs a shiny app function with interactive displays for conditional visualization of models, data and density functions. An extended version of package 'condvis'. Mark O'Connell, Catherine B. Hurley, Katarina Domijan (2017) <doi:10.18637/jss.v081.i05>.
+
+# 24.07.2019
+## R
+- [Using tidy data with Bayesian models](https://mjskay.github.io/tidybayes/articles/tidybayes.html)
+- COOL! [I am amazed by how great some student projects can turn out. The ggparty package is already better than what I had envisioned: a user friendly, flexible, and beautiful way to visualize trees.](https://github.com/martin-borkovec/ggparty)
+- [How to easily automate R analysis, modeling and development work using CI/CD, with working examples](https://jozef.io/r106-r-package-gitlab-ci/)
+- [What are 'user' and 'system' times measuring in R system.time(exp) output?](https://stackoverflow.com/questions/5688949/what-are-user-and-system-times-measuring-in-r-system-timeexp-output)
+- COOL! [How to rename a variable in R without copying the object?](https://stackoverflow.com/questions/22951811/how-to-rename-a-variable-in-r-without-copying-the-object). R is smart enough not to make a copy if the variable is the same, so just go ahead, reassign and `rm()` the original.
+
+## Math, regression
+- [Interpretation of R's lm() output](https://stats.stackexchange.com/questions/5135/interpretation-of-rs-lm-output)
+- [Explaining the lm() Summary in R](http://www.learnbymarketing.com/tutorials/explaining-the-lm-summary-in-r/)
+- [Adding a regression line on a ggplot](https://stackoverflow.com/questions/15633714/adding-a-regression-line-on-a-ggplot)
+- [How to plot fitted lines with ggplot2](https://aosmith.rbind.io/2018/11/16/plot-fitted-lines/)
+- [Non-linear model examples using brms and nlme](https://rpubs.com/aforren1/orange-nonlinear)
+- [Fitting exponential decay with negative y values](https://stats.stackexchange.com/questions/318971/fitting-exponential-decay-with-negative-y-values)
+- [How do I interpret the summary of a linear model in R?](https://www.quora.com/How-do-I-interpret-the-summary-of-a-linear-model-in-R)
+- COOL! [Using Linear Regression for Predictive Modeling in R](https://www.dataquest.io/blog/statistical-learning-for-predictive-modeling-r/)
+- [What Are T Values and P Values in Statistics?](https://blog.minitab.com/blog/statistics-and-quality-data-analysis/what-are-t-values-and-p-values-in-statistics)
+
+
+## DS
+- [Create Professional Science Figures in Minutes.](https://biorender.com/)
+Browse thousands of pre-made icons and templates from more than 30 fields of life sciences.
+- [MostlyAdequate/mostly-adequate-guide-ru](https://github.com/MostlyAdequate/mostly-adequate-guide-ru) Mostly adequate guide to FP (in javascript, translated to russian)
+- [Google’s Eigenvector… or how a Random Surfer finds the most relevant Webpages](http://blog.ephorie.de/googles-eigenvector-or-how-a-random-surfer-finds-the-most-relevant-webpages)
+- [DbVisualizer vs DataGrip vs TablePlus - a quick review](https://tableplus.io/blog/2018/11/dbvisualizer-vs-datagrip-vs-tableplus.html)
+- [DataGrip 2018.2.2: ClickHouse Support and Bugfixes](https://blog.jetbrains.com/datagrip/2018/08/15/datagrip-2018-2-2-clickhouse-support-and-bugfixes/)
+
+
+# 23.07.2019
+## R
+- [eddelbuettel/rpushbullet](https://github.com/eddelbuettel/rpushbullet). R interface to the awesome Pushbullet service
+- [jbryer/likert](https://github.com/jbryer/likert). Package to analyze likert based items.
+- Конвертация строк. [Convert case of a string](https://stringr.tidyverse.org/reference/case.html). `str_to_title`, `stri_trans_totitle` 
+- [ceramic](https://hypertidy.github.io/ceramic/). The goal of ceramic is to obtain web map tiles. Use a spatial object to define the region of interest.
+- [Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2](https://cran.r-project.org/web/packages/ggsci/vignettes/ggsci.html)
+- [Faster Gridding In R](http://tkelly.org/2019/07/faster-gridding-in-r/)
+- [BEAUTIFULSOUP VS. RVEST](http://theautomatic.net/2019/07/23/beautifulsoup-vs-rvest/)
+- [Process Mining in 10 minutes with R](https://medium.com/@gscheithauer/process-mining-in-10-minutes-with-r-1ab28ed74e81)
+- [Data-driven flowcharts in R using DiagrammeR](https://mikeyharper.uk/flowcharts-in-r-using-diagrammer/)
+- COOL! [processanimateR](https://fmannhardt.github.io/processanimateR/). Flexible token replay animation for process maps created by bupaR using SVG animations.
+- [Creating a flowchart using R](https://davetang.org/muse/2017/03/31/creating-flowchart-using-r/)
+- [Graph flow chart of transition from states](https://stackoverflow.com/questions/16112162/graph-flow-chart-of-transition-from-states)
+- [Diagrams in Rmarkdown Documents. A short Introduction to The DiagrammeR Package](https://rstudio-pubs-static.s3.amazonaws.com/194240_c9bc85a7f24b41a2b1f42724c525a109.html#1)
+Vincent Stoliaroff - Berlin R User Group
+- [R AnalyticsFlow](https://r.analyticflow.com/en/). Designed for data analysis. Great for everyone.
+- [Understanding distributions with fitdistrplus package in R](http://joem.dbsdataprojects.com/2016/04/12/understanding-distributions-with-fitdistrplus-package-in-r/)
+- [Exponential Model Fitting](https://rpubs.com/mengxu/exponential-model)
+
+
+# 22.07.2019
+## R
+- [Statistical matching, or when one single data source is not enough](https://www.brodrigues.co/blog/2019-07-19-statmatch/)
+- [What NOT to do when building a shiny app (lessons learned the hard way)](https://adisarid.github.io/post/2019-07-03-shiny_app_lessons/)
+- COOL! [Time series forecast cross-validation](http://freerangestats.info/blog/2019/07/20/time-series-cv)
+- [Watch keynote presentations from the useR!2019 conference](https://blog.revolutionanalytics.com/2019/07/user2019-keynotes.html)
+- [IMPRESSIONS FROM useR! 2019](https://mirai-solutions.ch/news/2019/07/20/useR2019/)
+- [Adding Syntax Highlight](https://notast.netlify.com/post/adding-syntax-highlight/)
+
+## DS
+- [Семь раз отмерь, один раз внедри BI инструмент](https://habr.com/ru/company/ods/blog/460807/)
 
 # 19.07.2019
 ## R
@@ -671,6 +823,10 @@ EtherCalc is a web spreadsheet. Your data is saved on the web, and people can ed
 - [To Err Is Human; To Ignore, Divine](https://enpiar.com/2019/07/17/to-err-is-human-to-ignore-divine/)
 - [MATCH.ARG. A WEIRD FUNCTION THAT CAN HELP YOU WRITE BETTER FUNCTIONS](https://enpiar.com/2019/07/17/to-err-is-human-to-ignore-divine/)
 - [A/B Testing with Machine Learning - A Step-by-Step Tutorial](https://www.business-science.io/business/2019/03/11/ab-testing-machine-learning.html)
+
+## ggmap
+- [Geocoding with ggmap and the Google API](https://lucidmanager.org/geocoding-with-ggmap/)
+- COOL! [USING GGMAP AFTER JULY 2018](https://www.visibledata.co.uk/blog/2018/12/05/2018-12-05-using-ggmap-after-july-2018/)
 
 # 18.07.2019
 ## R
