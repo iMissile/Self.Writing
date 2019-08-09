@@ -348,6 +348,10 @@ Usually this was not intended and the join needs to be changed. The word 'cartes
 - [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)
 - [Use equivalent of purrr:::map to iterate through data.table](https://stackoverflow.com/questions/47917614/use-equivalent-of-purrrmap-to-iterate-through-data-table)
 - data.table joins
+	- COOL! [Left join using data.table](https://stackoverflow.com/questions/34598139/left-join-using-data-table). If you want to add the b values of B to A, then it's best to join A with B and update A by reference as follows:
+```
+A[B, on = 'a', bb := i.b]
+```
 	- COOL! [How to do joins with data.table](https://gist.github.com/nacnudus/ef3b22b79164bbf9c0ebafbf558f22a0)
 	- [Left join using data.table](https://stackoverflow.com/questions/34598139/left-join-using-data-table)
 	- [JOINing data in R using data.table](https://rstudio-pubs-static.s3.amazonaws.com/52230_5ae0d25125b544caab32f75f0360e775.html) by Ronald Stalder
@@ -383,7 +387,6 @@ From `data.table` versions >= v1.9.5, we can use `shift` with type as `lag` or `
 - [How to select the first and last row within a grouping variable in a data frame?](https://stackoverflow.com/questions/8203818/how-to-select-the-first-and-last-row-within-a-grouping-variable-in-a-data-frame/8212756)
 - [Select first and last row from grouped data](https://stackoverflow.com/questions/31528981/select-first-and-last-row-from-grouped-data/31529043)
 - [Why is rbindlist “better” than rbind?](https://stackoverflow.com/questions/15673550/why-is-rbindlist-better-than-rbind)
-- COOL! [Left join using data.table](https://stackoverflow.com/questions/34598139/left-join-using-data-table)
 - [Remove rows with NA from data.table in R {duplicate}](https://stackoverflow.com/questions/28878005/remove-rows-with-na-from-data-table-in-r)
 - [Remove rows with all or some NAs (missing values) in data.frame](https://stackoverflow.com/questions/4862178/remove-rows-with-all-or-some-nas-missing-values-in-data-frame)
 Краткая сводка по применению функций к группировке в `data.table`
@@ -680,6 +683,119 @@ LSHR - fast and memory efficient package for near-neighbor search in high-dimens
 	- [CS 584 - Big Data Analytics](https://joyceho.github.io/course/cs584_s16/)
 Course Description
 The course covers scalable machine learning and data mining algorithms for large/complex data. Topics include large-scale optimization techniques, hashing, recommendation systems, and tensor factorization. This will be structured as a seminar course with emphasis on public data sets such as Kaggle competitions, MovieLens, and various healthcare datasets. There will be introductory lectures that set the context and provide reviews of relevant material.
+
+# 09.08.2019
+## R
+- COOL! [tikzDevice v0.12.3](https://stubner.me/2019/08/tikzdevice-v0-12-3/)
+- [Speeding up Bayesian sampling with map_rect](https://www.briancallander.com/posts/map_rect/speeding_up_bayesian_sampling_with_map_rect.html)
+
+# 08.08.2019
+## knitr
+- [R Markdown for documents with logos, watermarks, and corporate styles](http://freerangestats.info/blog/2017/09/09/rmarkdown)
+
+# 07.08.2019
+## data.table
+- COOL! [How to efficiently calculate multiple quantiles of column z when grouping by columns (x, y)](https://stackoverflow.com/questions/47702018/how-to-efficiently-calculate-multiple-quantiles-of-column-z-when-grouping-by-col)
+
+# 06.08.2019
+## R
+- [Bayes models for estimation in stepped-wedge trials with non-trivial ICC patterns](https://www.rdatagen.net/post/bayes-model-to-estimate-stepped-wedge-trial-with-non-trivial-icc-structure/)
+- [How to keep ggplot font size constant when varying figure width](https://tex.stackexchange.com/questions/145745/how-to-keep-ggplot-font-size-constant-when-varying-figure-width)
+
+# 05.08.2019
+## R
+- [Interactive Visualization in R with apexcharter](https://www.programmingwithr.com/interactive-visualization-in-r-with-apexcharter/)
+- [gadenbuie/synamyn](https://github.com/gadenbuie/synamyn). Synonyms! An RStudio addin interface for ropenscilabs/syn
+- [carbonate](https://github.com/yonicd/carbonate). “carbon.js is the easiest way to create beautiful images of your source code.” 
+This package uses an R6 api to interact with carbon.js and create directly from the console carbon images.
+	- [CARBON](https://carbon.now.sh). Create and share beautiful images of your source code. Start typing or drop a file into the text area to get started.
+- [parsnip](https://www.tidyverse.org/articles/2018/11/parsnip-0-0-1/).
+The parsnip package is designed to solve a specific problem related to model fitting in R, the interface. Many functions have different interfaces and arguments names and parsnip standardizes the interface for fitting models as well as the return values. When using parsnip, you don’t have to remember each interface and its unique set of argument names to easily move between R packages.
+- [What is the difference between gc() and rm()](https://stackoverflow.com/questions/8813753/what-is-the-difference-between-gc-and-rm)
+- [How to clear the R environment](https://community.rstudio.com/t/how-to-clear-the-r-environment/14303)
+
+## R profiling
+Next, let's see [where `f_dowle` is spending its time](https://stackoverflow.com/questions/7235657/fastest-way-to-replace-nas-in-a-large-data-table).
+```
+Rprof()
+f_dowle(dt1)
+Rprof(NULL)
+summaryRprof()
+$by.self
+```
+- COOL! [Fast data lookups in R: dplyr vs data.table](https://appsilon.com/fast-data-lookups-in-r-dplyr-vs-data-table/)
+
+## data.table
+- [R data.table memory efficient rbindlist](https://stackoverflow.com/questions/47163028/r-data-table-memory-efficient-rbindlist)
+- [Speed comparison of rbind, bind_rows, and  rbindlist](https://rstudio-pubs-static.s3.amazonaws.com/406521_7fc7b6c1dc374e9b8860e15a699d8bb0.html)
+- COOL! [rbindlist data.tables with different number of columns](https://stackoverflow.com/questions/19584039/rbindlist-data-tables-with-different-number-of-columns)
+This feature is now implemented in commit 1266 of v1.9.3. From NEWS:
+- [data.table and parallel computing](https://stackoverflow.com/questions/14759905/data-table-and-parallel-computing)
+- [Material of Introduction to large data management using R!](https://rstudio-pubs-static.s3.amazonaws.com/106515_13ffe11bf5f745cb9bf59cd35307795a.html)
+- [Efficient reshaping using data.tables](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-reshape.html)
+- [chmatch: Faster match of character vectors](https://rdrr.io/rforge/data.table/man/chmatch.html)
+- [Fastest way to replace NAs in a large data.table](https://stackoverflow.com/questions/7235657/fastest-way-to-replace-nas-in-a-large-data-table)
+```
+f_dowle3 = function(DT) {
+  for (j in seq_len(ncol(DT)))
+    set(DT,which(is.na(DT[[j]])),j,0)
+}
+```
+
+## R и 64 бит
+- [In R is it better to use integer64, numeric, or character for large integer id numbers?](https://stackoverflow.com/questions/35171760/in-r-is-it-better-to-use-integer64-numeric-or-character-for-large-integer-id-n)
+- [R in a 64 bit world](http://www.win-vector.com/blog/2015/06/r-in-a-64-bit-world/)
+- [Double-precision floating-point format](https://en.wikipedia.org/wiki/Double-precision_floating-point_format)
+- [Урок №33. Типы данных с плавающей точкой](https://ravesli.com/urok-33-tip-dannyh-s-plavayushhej-tochkoj-floating-point/)
+Диапазон и точность типов данных с плавающей точкой, согласно стандарту IEEE 754:
+
+Размер	Диапазон	Точность
+4 байта	от ±1.18 x 10^-38 до ±3.4 x 10^38	6-9 значащих цифр (в основном 7)
+8 байт	от ±2.23 x 10^-308 до ±1.80 x 10^308	15-18 значащих цифр (в основном 16)
+80 бит (12 байт)	от ±3.36 x 10^-4932 до ±1.18 x 10^4932	18-21 значащих цифр
+16 байт	от ±3.36 x 10^-4932 до ±1.18 x 10^4932	33-36 значащих цифр
+- unixtimestamp: 1565352587 sec -- 10 знаков
+
+# 02.08.2019
+## Stat
+- Путь воина
+	- [Построение доверительного интервала для математического ожидания генеральной совокупности](http://baguzin.ru/wp/postroenie-doveritelnogo-intervala/)
+	- [Определение объема выборки](http://baguzin.ru/wp/opredelenie-obema-vyborki/)
+	- [Методы выборки](http://baguzin.ru/wp/metody-vyborki/)
+- [Полезные статьи → Как правильно рассчитать объем выборки?](https://blog.anketolog.ru/2015/12/vyborka/)
+- [Как определить размер выборки?](https://habr.com/ru/post/339798/)
+- [Классические методы статистики: t-критерий Стьюдента](https://r-analytics.blogspot.com/2012/03/t.html)
+- [Shapiro-Wilk Test for Normality in R](https://jointhedatathread.com/2019/08/08/shapiro-wilk-test-for-normality-in-r/)
+
+## R
+- [rayshader](https://www.rayshader.com/) is an open source package for producing 2D and 3D data visualizations in R. rayshader uses elevation data in a base R matrix and a combination of raytracing, spherical texture mapping, overlays, and ambient occlusion to generate beautiful topographic 2D and 3D maps. In addition to maps, rayshader also allows the user to translate ggplot2 objects into beautiful 3D data visualizations.
+- [Statistical Rethinking](https://xcelab.net/rm/statistical-rethinking/). A Bayesian Course with Examples in R and Stan (& PyMC3 & brms & Julia too)
+- [Just Quickly: How to show verbatim inline R code](https://www.njtierney.com/post/2019/07/10/jq-verbatim-inline-r/)
+- [The Unreasonable Effectiveness of Metaphor](https://argumatronic.com/posts/2018-09-02-effective-metaphor.html)
+- [Quantitative Developmental Systems Methodology Core](https://quantdev.ssri.psu.edu/tutorials/intro-basic-exploratory-factor-analysis). Home Tutorials Intro - Basic Exploratory Factor Analysis. Intro - Basic Exploratory Factor Analysis
+- [Deep Feature Synthesis: How Automated Feature Engineering Works](https://blog.featurelabs.com/deep-feature-synthesis/)
+- [pak](https://pak.r-lib.org/). A Fresh Approach to R Package Installation
+- [mlr3](https://mlr3.mlr-org.com/). Efficient, object-oriented programming on the building blocks of machine learning. Successor of mlr.
+- [hardhat](https://tidymodels.github.io/hardhat/). hardhat is a developer focused package designed to ease the creation of new modeling packages, while simultaneously promoting good R modeling package standards as laid out by the set of opinionated Conventions for R Modeling Packages.
+- [Announcing pdqr](http://www.questionflow.org/2019/08/01/announcing-pdqr/) Announcing ‘pdqr’: package for working with custom distribution functions.
+- [Arguments of stats::density()](http://www.questionflow.org/2019/08/06/arguments-of-stats-density/)
+- [dime: Deep Interactive Model Explanations](http://smarterpoland.pl/index.php/2019/08/dime-deep-interactive-model-explanations/)
+- [dime: Deep Interactive Model Explanation](https://modeloriented.github.io/dime/). Automate Explaining Machine Learning Predictive Models
+- [DrWhy.AI - the collection of tools for Visual Exploration, Explanation and Debugging of Predictive Models](https://github.com/ModelOriented/DrWhy/blob/master/README.md)
+- [MobileTrigger Setup: Run R Scripts, Models, Reports with Mobile Device](https://r-bar.net/mobiletrigger-setup-run-r-scripts-mobile-device/)
+- [R Markdown Reports On Demand with MobileTrigger](https://r-bar.net/r-markdown-reports-on-demand-mobiletrigger/)
+
+
+# 01.08.2019
+## DS
+- [What are the most common mistakes junior Python developers should avoid?](https://www.quora.com/What-are-the-most-common-mistakes-junior-Python-developers-should-avoid)
+
+## R
+- tidy eval
+	- [Tidy evaluation in ggplot2](https://www.tidyverse.org/articles/2018/07/ggplot2-tidy-evaluation/)
+	- COOL! [Tidy Eval Meets ggplot2. The Bang Bang Plots](https://www.onceupondata.com/2018/07/06/ggplot-tidyeval/)
+	- [How to use dplyr's enquo and quo_name in a function with tidyr and ggplot2](https://stackoverflow.com/questions/43405843/how-to-use-dplyrs-enquo-and-quo-name-in-a-function-with-tidyr-and-ggplot2)
+- [How to suppress the code but have the plots displayed in R markdown?](https://stackoverflow.com/questions/46414779/how-to-suppress-the-code-but-have-the-plots-displayed-in-r-markdown)
 
 # 31.07.2019
 ## R

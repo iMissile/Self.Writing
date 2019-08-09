@@ -4157,6 +4157,7 @@ Go and explore, and happy new year!
 ## R
 - [R exercises](http://r-exercises.com/). Очень неплохой ресурс с заданиями по R.
 - COOL! Классный пакет для Simmer [Discrete-Event Simulator for R](http://fishyoperations.com/2017/01/12/extensions-for-simmer.html). Вообще, на этом сайте очень много записей про симуляцию.
+- [simmer 4.3.0 + JSS publication](https://www.enchufa2.es/archives/simmer-4-3-0-jss-publication.html)
 - [simmer 4.2.1](https://www.enchufa2.es/archives/simmer-4-2-1.html)
 - [simmer 4.0.1](https://www.enchufa2.es/archives/simmer-4-0-1.html)
 - [simmer 4.0.0](https://www.enchufa2.es/archives/simmer-4-0-0.html)

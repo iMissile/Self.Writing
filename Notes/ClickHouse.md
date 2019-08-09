@@ -13,6 +13,9 @@ http://telegrammy.net/group/clickhouse_ru/page87.htm
 ## Репозиторий митапов
 - [Presentations, meetups and talks for ClickHouse](https://github.com/yandex/clickhouse-presentations.git)
 
+## Установка Clickhouse на Windows
+- [ClickHouse на Windows 10 & Jupyter Notebook для анализа данных Logs API](https://websitelytics.top/blog/clickhouse-deployment/)
+
 ## План запросов
 - Вопрос: есть ли способ получить из ClickHouse план исполнения запроса или что-то вроде того?
 Ответ: Что-то похожее на план выполнения запроса есть в логе - смотрите по словам Query pipeline: Там довольно скудная информация, к тому же этот план выводится по части запроса на локальном сервере.
