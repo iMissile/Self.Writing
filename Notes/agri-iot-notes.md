@@ -1189,6 +1189,7 @@ elasticdump \
 ```
 - Чтобы забрать архив. [Архивирование файлов в Linux](https://losst.ru/arhivatsiya-v-linux). Архив != сжатие.
 	- Упаковка файла: `$ tar -cvf archive.tar.gz /path/to/files`
+        - Упаковка директории: `$ tar -czvf dir.tar.gz folder`
 	- А чтобы распаковать архив tar linux: `$ tar -xvf archive.tar.gz`
 	- посмотреть кусочек файла: [View the Beginning of Text Files with head](https://www.linode.com/docs/tools-reference/tools/view-the-beginning-of-text-files-with-head)
 

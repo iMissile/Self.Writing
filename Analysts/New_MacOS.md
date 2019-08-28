@@ -43,6 +43,7 @@ To run trimforce type the following command into the terminal window : `sudo tri
 - [27 secret features in Mac OS X El Capitan](http://www.macworld.co.uk/feature/mac-software/27-secret-features-in-mac-os-x-el-capitan-3626097/)
 - [6 Great Apps To Measure You Mac’s Performance](http://www.chriswrites.com/6-great-apps-to-measure-you-macs-performance/)
 - [60 горячих клавиш для продуктивной работы в Safari](https://lifehacker.ru/50-poleznyx-goryachix-klavish-dlya-produktivnoj-raboty-v-safari/)
+- [Open a Mac app from an unidentified developer](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac)
 
 
 # Backups
@@ -56,6 +57,12 @@ TimeMachineEditor is a software for OS X that lets you change the default one-ho
 - [Tunnelblick	free software for OpenVPN on OS X and macOS](https://tunnelblick.net/)
 	- [Настройка OpenVPN на Mac OS X](http://www.freeproxy.ru/ru/vpn/mac-os-x/openvpn.htm)
 	- [Строим OpenVPN мост под Mac OSX](https://geektimes.ru/post/206322/)
+
+## OpenConnect
+Замена CiscoAnyConnect
+http://macappstore.org/openconnect/
+http://www.infradead.org/openconnect/download.html
+https://openconnect.github.io/openconnect-gui/ (edited) 
 
 ## Интересные утилиты
 - [iTerm2](https://www.iterm2.com/downloads.html) -- удобная бесплатная замена для штатного терминала.

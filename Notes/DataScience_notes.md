@@ -361,7 +361,7 @@ A[B, on = 'a', bb := i.b]
 - COOL! Варианты с бенчмарками. [How to apply same function to every specified column in a data.table](https://stackoverflow.com/questions/16846380/how-to-apply-same-function-to-every-specified-column-in-a-data-table)
 - [diff on data.table column](https://stackoverflow.com/questions/37141277/diff-on-data-table-column). We could use `shift()`:
 ```
-dt[,diff := value - shift(value), by = variable]
+dt[, diff := value - shift(value), by = variable]
 ```
 - [efficiently locf by groups in a single R data.table](https://stackoverflow.com/questions/37060211/efficiently-locf-by-groups-in-a-single-r-data-table/37068596)
 - С бенчмарками [Remove rows conditionally from a data.table in R](https://stackoverflow.com/questions/22655060/remove-rows-conditionally-from-a-data-table-in-r)
@@ -377,7 +377,6 @@ data.table 1.9.6 (and not doubt earlier versions) has option by= which can be us
 - [Create new column in data.table by group](https://stackoverflow.com/questions/12620923/create-new-column-in-data-table-by-group)
 - [create a new column in a data.table from group by multiple columns](https://stackoverflow.com/questions/46134936/create-a-new-column-in-a-data-table-from-group-by-multiple-columns/46135033)
 - performance различных способов сортировки [How to order data within subgroups in data.table R](https://stackoverflow.com/questions/28683712/how-to-order-data-within-subgroups-in-data-table-r)
-- [data.table v.1.11.0+ no longer freads data file that was fread by v.1.10.4-3](https://github.com/Rdatatable/data.table/issues/2857)
 - [fread from v.1.11.0+ no longer reads the .csv correctly, which was read perfectly in v.1.10.4-3 #2857 {Open}](https://github.com/Rdatatable/data.table/issues/2857)
 - [How to create a lag variable within each group?](https://stackoverflow.com/questions/26291988/how-to-create-a-lag-variable-within-each-group)
 From `data.table` versions >= v1.9.5, we can use `shift` with type as `lag` or `lead`. By default, the type is `lag`.
@@ -395,8 +394,21 @@ From `data.table` versions >= v1.9.5, we can use `shift` with type as `lag` or `
 	- [Further optimisation of `.SD` in `j` #735 {Open}](https://github.com/Rdatatable/data.table/issues/735)
 	- [When should I use the `:=` operator in `data.table`?](https://stackoverflow.com/questions/7029944/when-should-i-use-the-operator-in-data-table)
 	- [Advanced tips and tricks with `data.table`](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/) BY ANDREW BROOKS
-
-
+data.table
+- COOL! [How to efficiently calculate multiple quantiles of column z when grouping by columns (x, y)](https://stackoverflow.com/questions/47702018/how-to-efficiently-calculate-multiple-quantiles-of-column-z-when-grouping-by-col)
+```
+system.time(
+  result2b <- dt[, {
+      the_quantiles = quantile(z, c(0.5, 0.75, 0.9))
+      list(
+        firstval = first(z), 
+        q1 = the_quantiles[1], 
+        q2 = the_quantiles[2],
+        q3 = the_quantiles[3]
+      )
+    }, keyby=list(x, y)]
+)
+```
 
 
 # DS
@@ -684,6 +696,97 @@ LSHR - fast and memory efficient package for near-neighbor search in high-dimens
 Course Description
 The course covers scalable machine learning and data mining algorithms for large/complex data. Topics include large-scale optimization techniques, hashing, recommendation systems, and tensor factorization. This will be structured as a seminar course with emphasis on public data sets such as Kaggle competitions, MovieLens, and various healthcare datasets. There will be introductory lectures that set the context and provide reviews of relevant material.
 
+# 28.08.2019
+## R
+- Для просмотра для каждого типа паттерна приводим `N` сэмплов исходных записей в логе.
+```{r сэмплированный вывод цепочек событий по типам транзакций}
+# смотрим отдельные транзакции для выборки уникальных паттернов
+# as.data.table(transact_tbl) %>%
+#   .[, .SD[sample(.N, min(10, .N))], by = bp_pattern]
+
+temp_tbl <- transact_tbl %>%
+  group_by(bp_pattern, bp_tag) %>%
+  dplyr::sample_n(min(5, n()))
+```
+- решаем проблемы со шрифтами в R в windows
+	- [Error in grid.Call(L_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : Polygon edge not found](https://stackoverflow.com/questions/10581440/error-in-grid-calll-textbounds-as-graphicsannotxlabel-xx-xy-polygon)
+	- [Ggplot2: Fonts and cross-platform reproducibility](https://community.rstudio.com/t/ggplot2-fonts-and-cross-platform-reproducibility/3565)
+```
+loadfonts(dev="win")
+windowsFonts()
+```
+- [Introducing data_algebra](http://www.win-vector.com/blog/2019/08/introducing-data_algebra/)
+- [Polished - Modern Authentication for Shiny](https://www.tychobra.com/posts/2019_08_27_announcing_polished/) by Andy Merlino and Peter Myers
+- COOL! [Maximum likelihood estimation from scratch](https://alemorales.info/post/mle-nonlinear/)
+
+## ggplot
+- [Force R to stop plotting abbreviated axis labels - e.g. 1e+00 in ggplot2](https://stackoverflow.com/questions/14563989/force-r-to-stop-plotting-abbreviated-axis-labels-e-g-1e00-in-ggplot2). Интересное возможное решение
+```
+ # Did you try something like :
+options(scipen=10000)
+ # before plotting ?
+```
+- [Forcing a 1e3 instead of 1000 format in ggplot R](https://stackoverflow.com/questions/18600115/forcing-a-1e3-instead-of-1000-format-in-ggplot-r/18600721#18600721)
+`scales::math_format`
+- [Axes (ggplot2)](http://www.cookbook-r.com/Graphs/Axes_(ggplot2)/)
+- [ggplot2 Tutor](https://rpubs.com/KamleshJha/ggplot)
+
+
+# 27.08.2019
+## R
+- [rcdd: Computational Geometry](https://cran.r-project.org/web/packages/rcdd/index.html)
+R interface to (some of) cddlib (<http://www.ifor.math.ethz.ch/~fukuda/cdd_home/cdd.html>). Converts back and forth between two representations of a convex polytope: as solution of a set of linear equalities and inequalities and as convex hull of set of points and rays. Also does linear programming and redundant generator elimination (for example, convex hull in n dimensions). All functions can use exact infinite-precision rational arithmetic.
+- [gmp: Multiple Precision Arithmetic](https://cran.r-project.org/web/packages/gmp/index.html)
+Multiple Precision Arithmetic (big integers and rationals, prime number tests, matrix computation), "arithmetic without limitations" using the C library GMP (GNU Multiple Precision Arithmetic).
+- [Generate a sequence of characters from 'A'-'Z'](https://stackoverflow.com/questions/4370033/generate-a-sequence-of-characters-from-a-z)
+- [Digit sum function in R](https://stackoverflow.com/questions/18675285/digit-sum-function-in-r)
+
+## data.table
+- [Use of lapply .SD in data.table R](https://stackoverflow.com/questions/32276887/use-of-lapply-sd-in-data-table-r)
+
+# 26.08.2019
+## R
+- [tinytest: Lightweight and Feature Complete Unit Testing Framework](https://cran.r-project.org/web/packages/tinytest/index.html)
+- [Lightweight is the right weight](http://www.tinyverse.org/)
+- [lumberjack: Track Changes in Data](https://cran.r-project.org/web/packages/lumberjack/index.html)
+A framework that allows for easy logging of changes in data. Main features: start tracking changes by adding a single line of code to an existing script. Track changes in multiple datasets, using multiple loggers. Add custom-built loggers or use loggers offered by other packages.
+- [validate: Data Validation Infrastructure](https://cran.r-project.org/web/packages/validate/index.html)
+Declare data validation rules and data quality indicators; confront data with them and analyze or visualize the results. The package supports rules that are per-field, in-record, cross-record or cross-dataset. Rules can be automatically analyzed for rule type and connectivity. See also Van der Loo and De Jonge (2018) <doi:10.1002/9781118897126>, chapter 6.
+- [Visualizing the relationship between multiple variables](https://statisticaloddsandends.wordpress.com/2019/08/24/visualizing-the-relationship-between-multiple-variables/)
+- [Changing the variable inside an R formula](https://statisticaloddsandends.wordpress.com/2019/08/24/changing-the-variable-inside-an-r-formula/)
+- e-book. [Open Forensic Science in R](https://sctyner.github.io/OpenForSciR/)
+- [Introducing Open Forensic Science in R](https://ropensci.org/blog/2019/08/20/forensic-science/)
+- COOL! [Kurt Hornik: S3 Method Lookup](http://developer.r-project.org/Blog/public/2019/08/19/s3-method-lookup/index.html)
+- [jennybc/pkg-dev-tutorial](https://github.com/jennybc/pkg-dev-tutorial). GitHub is home to over 40 million developers working together to host and review code, manage projects, and build software together. Package Development tutorial for useR! 2019 Toulouse https://rstd.io/pkg-dev
+- [Improvements to RSwitch in v1.3.0](https://rud.is/b/2019/08/23/improvements-to-rswitch-in-v1-3-0/)
+- [Quick Hit: A new 64-bit Swift 5 RSwitch App](https://rud.is/b/2019/08/22/quick-hit-a-new-64-bit-swift-5-rswitch-app/)
+
+## Wolfram
+- [How to make use of Associations?](https://mathematica.stackexchange.com/questions/52393/how-to-make-use-of-associations)
+- [Create a Dataset object, Association or SparesArray from a matrix {closed}](https://mathematica.stackexchange.com/questions/114081/create-a-dataset-object-association-or-sparesarray-from-a-matrix)
+- [Does anybody know the meaning of the operator & /@?](https://community.wolfram.com/groups/-/m/t/132905?sortMsg=Flat)
+- [Convert association to Matrix / List](https://mathematica.stackexchange.com/questions/176895/convert-association-to-matrix-list)
+- [Changing Values in an Association using Map](https://mathematica.stackexchange.com/questions/55494/changing-values-in-an-association-using-map?rq=1)
+- [How can I add a column into a existing Dataset?](https://mathematica.stackexchange.com/questions/51472/how-can-i-add-a-column-into-a-existing-dataset/51473#51473)
+- [Pattern Matching with Associations](https://www.wolfram.com/language/11/core-language/pattern-matching-with-associations.html)
+- [An Elementary Introduction to the Wolfram Language. 45. Datasets](https://www.wolfram.com/language/elementary-introduction/2nd-ed/45-datasets.html)
+- [Select Elements in a Dataset](https://reference.wolfram.com/language/workflow/SelectElementsInADataset.html)
+- [Assigning new value in association](https://mathematica.stackexchange.com/questions/72747/assigning-new-value-in-association)
+- [«Игра престолов»: строим инфографику об убийствах, сексе, путешествиях по Вестеросу и многое другое](https://habr.com/ru/company/wolfram/blog/451640/)
+
+# 25.08.2019
+## R
+- [Fun with progress bars: Fish, daggers and the Star Wars trench run](http://gradientdescending.com/fun-with-progress-bars-fish-daggers-and-the-star-wars-trench-run/)
+- [Converting lines in an svg image to csv](http://shape-of-code.coding-guidelines.com/2019/08/16/converting-lines-in-an-svg-image-to-csv/)
+- [How to Use CSS to Style Your R Shiny Projects](https://appsilon.com/howto-css-and-shiny/)
+- [simstudy updated to version 0.1.14: implementing Markov chains](https://www.rdatagen.net/post/simstudy-1-14-update/)
+- [Using the lpSolve package in R to optimise an electricity system](https://manipulativegerbil.blogspot.com/2019/08/using-lpsolve-package-in-r-to-optimise.html)
+- [Comparison of digital image metadata editors](https://en.wikipedia.org/wiki/Comparison_of_digital_image_metadata_editors)
+- [paleolimbot/exifr](https://github.com/paleolimbot/exifr). Read EXIF data in R using ExifToo
+- [A Shiny App for JS Mediation](https://www.cillianmchugh.com/rblog/js-mediation/)
+- [R for Mac OS X Developer’s Page](http://mac.r-project.org)
+This is the new home for experimental binaries and documentation related to R for Mac OS X. To learn more about the R software or download released versions, please visit www.r-project.org. 
+
 # 09.08.2019
 ## R
 - COOL! [tikzDevice v0.12.3](https://stubner.me/2019/08/tikzdevice-v0-12-3/)
@@ -743,6 +846,7 @@ f_dowle3 = function(DT) {
 ```
 
 ## R и 64 бит
+- [REALLY LARGE NUMBERS IN R](http://theautomatic.net/2019/08/16/really-large-numbers-in-r/). This post will discuss ways of handling huge numbers in R using the gmp package.
 - [In R is it better to use integer64, numeric, or character for large integer id numbers?](https://stackoverflow.com/questions/35171760/in-r-is-it-better-to-use-integer64-numeric-or-character-for-large-integer-id-n)
 - [R in a 64 bit world](http://www.win-vector.com/blog/2015/06/r-in-a-64-bit-world/)
 - [Double-precision floating-point format](https://en.wikipedia.org/wiki/Double-precision_floating-point_format)
@@ -755,6 +859,8 @@ f_dowle3 = function(DT) {
 80 бит (12 байт)	от ±3.36 x 10^-4932 до ±1.18 x 10^4932	18-21 значащих цифр
 16 байт	от ±3.36 x 10^-4932 до ±1.18 x 10^4932	33-36 значащих цифр
 - unixtimestamp: 1565352587 sec -- 10 знаков
+- [Controlling number of decimal digits in print output in R](https://stackoverflow.com/questions/2287616/controlling-number-of-decimal-digits-in-print-output-in-r)
+
 
 # 02.08.2019
 ## Stat
@@ -1320,7 +1426,6 @@ Functions for working with legends and axis lines of 'ggplot2', facets that repe
 ## R
 - COOL! [drake: A Pipeline Toolkit for Reproducible Computation at Scale](https://cran.r-project.org/web/packages/drake/index.html)
 	- [The drake R Package User Manual](https://ropenscilabs.github.io/drake-manual/) by Will Landau, Kirill Müller, Alex Axthelm, Jasper Clarkberg, Lorenz Walthert
-	- []
 - COOL! Regex Performance etc. [What R function to use for regex capture groups?](https://stackoverflow.com/questions/43968519/what-r-function-to-use-for-regex-capture-groups)
 
 # 10.06.2019
@@ -3010,7 +3115,7 @@ precision = np.diag(cm) / np.sum(cm, axis = 0)
 - CH COOL! [Altinity Stable ClickHouse 18.14.15 Release Notice](https://www.altinity.com/blog/altinity-stable-clickhouse-181415-release)
 - [Algorithms. What’s the process for implementing new algorithms in H2O?](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/faq/algorithms.html)
 
-# 30.11.2018
+# 30.11.2018 Learning
 ## R courses & learning
 - Отличный курс по R. [UC Business Analytics R Programming Guide](http://uc-r.github.io/tibbles)
 - COOL! [Hands-on with dplyr](https://github.com/dgrapov/TeachingDemos/blob/master/Demos/dplyr/hands_on_with_dplyr.md) by Dmitry Grapov
@@ -3024,6 +3129,7 @@ Statisticians must be savvy in programming methods useful to the wide variety of
 - [Data Manipulation in R by Steph Locke](https://itsalocke.com/). Covers data manipulation in a tidyverse way. [ebook](https://itsalocke.com/files/DataManipulationinR.pdf)
 - Старый материал [stat405](http://stat405.had.co.nz/). Introduction to data analysis. Fall 2012. Rice University. Hadley Wickham. hadley@rice.edu
 - COOL! purrr tutorial  by Jenny Bryan. [Introduction to map(): extract elements](https://jennybc.github.io/purrr-tutorial/ls01_map-name-position-shortcuts.html)
+- COOL! [Rebecca Barter. Learn to purrr](http://www.rebeccabarter.com/blog/2019-08-19_purrr/)
 - [Tidyverse for Beginners](https://slides.com/djnavarro/tidyverse-for-beginners#/)
 - [Slides for teaching the tidyverse way to total beginners](https://community.rstudio.com/t/slides-for-teaching-the-tidyverse-way-to-total-beginners/3157)
 - [teaching and learning materials for data visualization](https://kieranhealy.org/blog/archives/2018/12/12/teaching-and-learning-materials-for-data-visualization/)
@@ -4852,6 +4958,14 @@ Parameterized queries are generally the safest and most efficient way to pass us
 - hrbrthemes
 	- [library(extrafont)](http://blog.revolutionanalytics.com/2012/09/how-to-use-your-favorite-fonts-in-r-charts.html)
 	- при попытке использовать кастомные темы и сменить шрифт возникает ошибка: `Font family not found in Windows font database`. Решение найдено здесь: [Can't change fonts in ggplot/geom_text](http://stackoverflow.com/questions/14733732/cant-change-fonts-in-ggplot-geom-text). Доп. справочная информация [How to use your favorite fonts in R charts, September 20, 2012](http://blog.revolutionanalytics.com/2012/09/how-to-use-your-favorite-fonts-in-r-charts.html)
+```
+library(extrafont)
+font_import()
+loadfonts()
+fonts()
+# or more detailed
+fonttable()
+```
 - Проблема с tibbletime. По умолчанию он считает, что индекс в UTC. Однако есть внутренние атрибуты индекса! См. [Create tbl_time objects](https://business-science.github.io/tibbletime/reference/tbl_time.html). The information stored about `tbl_time` objects are the `index_quo` and the `index_time_zone`. These are stored as attributes, with the `index_quo` as a `rlang::quosure()` and the `time_zone` as a string.
 
 # 24.04.2018

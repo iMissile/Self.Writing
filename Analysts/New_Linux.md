@@ -28,7 +28,7 @@ The second -exec renames the zipped files to the original names
 
 - Чтобы забрать архив. [Архивирование файлов в Linux](https://losst.ru/arhivatsiya-v-linux). Архив != сжатие.
 	- Упаковка файла: `$ tar -cvf archive.tar.gz /path/to/files`
-	- А чтобы распаковать архив tar linux: `$ tar -xvf archive.tar.gz`
+	- А чтобы распаковать архив tar linux: `$ tar -xvf archive.tar.gz`. [Recursive tar compression?](https://askubuntu.com/questions/834717/recursive-tar-compression/834720)
 	- посмотреть кусочек файла: [View the Beginning of Text Files with head](https://www.linode.com/docs/tools-reference/tools/view-the-beginning-of-text-files-with-head)
 Для сжатия надо + использовать флаг `z`?
 
