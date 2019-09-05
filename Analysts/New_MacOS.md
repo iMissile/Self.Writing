@@ -81,6 +81,8 @@ https://www.hightechdad.com/2017/02/06/onedrive-sync-issues-how-to-reset-onedriv
 - OneDrive не работает с файлами с общей длиной имени >255 и содержащими символы [|"?:] или ведущий пробел.
    сбой в файле `matrix_elem.nb`: `Export[".\\output\\vv_index.mjson", vvtable, "ExpressionJSON"]`
 
+## iCloud
+- [Ошибка подключения Mac к ICloud. Как я решил проблему](https://ddr5.ru/oshibka-podklyucheniya-mac-k-icloud/)
 
 # Распродажа софта
 - [$2 tuesday](http://twodollartues.com/)

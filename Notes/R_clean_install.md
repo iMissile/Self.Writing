@@ -231,6 +231,20 @@ sudo apt install r-base
 И передавать потом окружение через параметры команды sudo:
 `sudo --preserve-env=PATH -i`
 
+### Как сделать downgrade пакета в Ubuntu
+- [How to downgrade a package via apt-get?](https://askubuntu.com/questions/138284/how-to-downgrade-a-package-via-apt-get)
+In my opinion, you should first uninstall or purge the package, like:
+```
+sudo apt-get remove <package>
+or
+sudo apt-get purge <package>
+```
+- Актуально для Rstudio Server. [How to downgrade the .deb package to older version](https://unix.stackexchange.com/questions/426263/how-to-downgrade-the-deb-package-to-older-version)
+- [How to purge software installed by gdebi?](https://ubuntuforums.org/showthread.php?t=2366442). You can purge packages you installed with gdebi.
+(You can purge any package you installed, regardless of installation method)
+`sudo apt-get purge rstudio-server`
+
+
 ### Ставим R пакеты
 - Возникла проблемка в RStudio Server, выдает в ноутбук ошибку "" . 
 Должно лечиться установкой библиотеки libpango (для генерации png)

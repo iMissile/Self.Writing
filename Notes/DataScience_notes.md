@@ -624,6 +624,8 @@ https://plot.ly/products/cloud/
 
 ## R color palettes
 - COOL! [colorspace: New Tools for Colors and Palettes](http://colorspace.r-forge.r-project.org/reference/index.html)
+- COOL! [The hclwizard](http://hclwizard.org/) provides tools for manipulating and assessing colors and palettes based on the underlying colorspace software (available in R and Python). It leverages the HCL color space: a color model that is based on human color perception and thus makes it easy to choose good color palettes by varying three color properties: Hue (= type of color, dominant wavelength) - Chroma (= colorfulness) - Luminance (= brightness). As shown in the color swatches below each property can be varied while keeping the other two properties fixed.
+- COOL! [Polychrome: Qualitative Palettes with Many Colors](https://cran.rstudio.com/web/packages/Polychrome/index.html). Tools for creating, viewing, and assessing qualitative palettes with many (20-30 or more) colors.
 - [A Very Palette-able Post](https://rud.is/b/2017/05/21/a-very-pallete-able-post/)
 - [ochRe - Australia themed colour palettes](https://ropensci.org/blog/2017/11/21/ochre/)
 - [Make your own color palettes with paletti](https://edwinth.github.io/blog/paletti/)
@@ -653,8 +655,10 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 - COOL! [Creating corporate colour palettes for ggplot2](https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2)
 - COOL! [Multiple color (and fill) scales with ggplot2](https://eliocamp.github.io/codigo-r/2018/09/multiple-color-and-fill-scales-with-ggplot2/)
 	- [eliocamp/ggnewscale](https://github.com/eliocamp/ggnewscale). Multiple Fill and Color Scales in `ggplot2`
-- COOL! [Polychrome: Qualitative Palettes with Many Colors](https://cran.rstudio.com/web/packages/Polychrome/index.html). Tools for creating, viewing, and assessing qualitative palettes with many (20-30 or more) colors.
 - [colortools: Tools for colors in a Hue-Saturation-Value (HSV) color model](https://cran.r-project.org/web/packages/colortools/index.html). R package with handy functions to help users select and play with color schemes in an HSV color model
+- [colorspace @ useR! 2019](https://eeecon.uibk.ac.at/~zeileis/news/user2019/)
+	- COOL! [At the end of the rainbow](https://eeecon.uibk.ac.at/~zeileis/news/endrainbow/)
+Fully saturated RGB rainbow colors are still widely used in scientific visualizations despite their widely-recognized disadvantages. A recent wild-caught example is presented, showing its limitations along with a better HCL-based alternative palette.
 
 
 # R useful plugins
@@ -695,6 +699,86 @@ LSHR - fast and memory efficient package for near-neighbor search in high-dimens
 	- [CS 584 - Big Data Analytics](https://joyceho.github.io/course/cs584_s16/)
 Course Description
 The course covers scalable machine learning and data mining algorithms for large/complex data. Topics include large-scale optimization techniques, hashing, recommendation systems, and tensor factorization. This will be structured as a seminar course with emphasis on public data sets such as Kaggle competitions, MovieLens, and various healthcare datasets. There will be introductory lectures that set the context and provide reviews of relevant material.
+
+# 05.09.2019
+## R
+- [AN RSTUDIO ADDIN FOR NETWORK ANALYSIS AND VISUALIZATION](http://blog.schochastics.net/post/an-rstudio-addin-for-network-analysis-and-visualization/)
+- + plugin к IDE RStudio [schochastics/graphlayouts](https://github.com/schochastics/graphlayouts) new layout algorithms for network visualizations in R
+- [Graph Drawing by Stress Majorization](https://link.springer.com/chapter/10.1007%2F978-3-540-31843-9_25)
+- [NEW RSTUDIO ADDINS FOR NETWORK ANALYSIS](http://blog.schochastics.net/post/new-rstudio-addins-for-network-analysis/)
+	- [snahelper](https://cran.r-project.org/web/packages/snahelper/index.html)
+- [Meet T3 - Tychobra Time Tracker](https://www.tychobra.com/posts/2019-09-04_meet_t3/)
+- [GAME THEORY IN R WITH THE NEW GTREE PACKAGE](http://skranz.github.io//r/2019/09/04/gtree.html)
+- [Easy data access: The advantages of a unique database connection with ODBC and DBI](https://www.eoda.de/en/wissen/blog/einfacher-datenzugang-die-vorteile-der-einmaligen-datenbankverbindung-mit-odbc-und-dbi)
+- [Create an Icon Map in R with ggmap and ggimage](https://www.littlemissdata.com/blog/iconmap)
+- [Advanced Data Reshaping in Python and R](http://www.win-vector.com/blog/2019/09/advanced-data-reshaping-in-python-and-r/)
+
+# 04.09.2019
+## R
+- [GETTING A DOI FOR YOUR CODE](https://scottishsnow.wordpress.com/2019/09/03/doi-for-your-code/)
+- COOL [Analyzing a binary outcome arising out of within-cluster, pair-matched randomization](https://www.rdatagen.net/post/analyzing-a-binary-outcome-in-a-study-with-within-cluster-pair-matched-randomization/)
+- COOL! [Forget about Excel, Use these R Shiny Packages Instead](https://appsilon.com/forget-about-excel-use-r-shiny-packages-instead/)
+- COOL! [1 giraffe, 2 giraffe, GO!](https://www.data-imaginist.com/2019/1-giraffe-2-giraffe-go/)
+- COOL! [Read the R source!](https://blog.r-hub.io/2019/05/14/read-the-source/). Ever heard the phrase “Read the source, Luke”? It’s a play on “Use the force, Luke” from Star Wars, with no definite source 😉, maybe a blog post by Jeff Atwood; and it underlines how important and useful it can be to read the source code of a tool instead of just its docs.
+- [loadtest: an R Package for Load Testing](https://medium.com/tmobile-tech/loadtest-an-r-package-for-load-testing-23efeeb370a5)
+	- [tmobile/loadtest](https://github.com/tmobile/loadtest). An R package that automates performance testing of ML models and summarizes the results in a dashboard w/ rad visualizations. This package is to make load testing of APIs, such as those created with the R package plumber, easy to do. It uses Apache JMeter on the backend--a modern platform for load testing. The loadtest package is open source and maintained by the AI @ T-Mobile team.
+
+# 03.09.2019
+## R & memory
+- [Advanced R. Memory](http://adv-r.had.co.nz/memory.html). Оно же во второй редакции книги [2. Names and values](https://adv-r.hadley.nz/names-values.html)
+- [R Internals by R Core Team](https://colinfay.me/r-internals/), в частности [Chapter 1 - R Internal Structures](https://colinfay.me/r-internals/r-internal-structures.html)
+- [R internals. 1.1 SEXPs](https://cran.r-project.org/doc/manuals/R-ints.html#SEXPs)
+- [R internals. 12.1 Long vectors](https://cran.r-project.org/doc/manuals/R-ints.html#Long-vectors)
+
+# 02.09.2019
+## Math
+- COOL [Estimating variance: should I use n or n - 1? The answer is not what you think](https://alemorales.info/post/variance-estimators/)
+
+## R
+- [Gaston Sanchez](https://www.gastonsanchez.com/)
+I'm a statistician, data scientist, and lecturer in the Department of Statistics, at UC Berkeley.
+- [ggplot2. the R Graph Gallery](http://r-graph-gallery.com/ggplot2-package.html)
+- Интересная статья с обширной визуализацией результатов [Studying Politics on and with Wikipedia](https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/studying-politics-wikipedia/)
+- [r-lib/fastmap](https://github.com/r-lib/fastmap). Fast map implementation for R https://r-lib.github.io/fastmap/
+- [Generating Random Strings](https://stackoverflow.com/questions/42734547/generating-random-strings)
+- [Forcing R output to be scientific notation with at most two decimals](https://stackoverflow.com/questions/39623636/forcing-r-output-to-be-scientific-notation-with-at-most-two-decimals):
+```
+numb <- c(0.05, 0.05671, 0.000000027)
+formatC(numb, format = "e", digits = 2)
+scales::scientific(numb, digits = 3)
+```
+
+- [printing with scientific notation #381 {Closed}](https://github.com/tidyverse/tibble/issues/381)
+- [how to disable scientific notation in a tibble?](https://community.rstudio.com/t/how-to-disable-scientific-notation-in-a-tibble/24444)
+- [r-lib/pillar](https://github.com/r-lib/pillar). Format columns with colour https://pillar.r-lib.org
+- [pillar.options: Coloured Formatting for Columns
+- [How to disable scientific notation?](https://stackoverflow.com/questions/5352099/how-to-disable-scientific-notation)
+- [option to disable new print method color scheme #346 {Closed}](https://github.com/tidyverse/tibble/issues/346)
+
+# 30.08.2019
+## R
+- [R, Docker and Checkpoint: A Route to Reproducibility](https://datawookie.netlify.com/blog/2019/08/r-docker-and-checkpoint-a-route-to-reproducibility/)
+- COOL! [pi: predict/infer. Errors and Debugging in RStudio](https://blog.methodsconsultants.com/posts/errors-and-debugging-in-rstudio/)
+- time-series:
+	- [Tidy time series data using tsibbles](https://robjhyndman.com/hyndsight/tsibbles/)
+	- [Time series graphics using feasts](https://robjhyndman.com/hyndsight/feasts/)
+	- [Introducing feasts](https://www.mitchelloharawild.com/blog/feasts/)
+
+# 29.08.2019
+## R
+- [R Tensorflow Multiple Linear Regression](https://blog.alpha-analysis.com/2019/08/r-tensorflow-multiple-linear-regression.html)
+- [THE R FACTOR](https://www.mango-solutions.com/blog/the-r-factor)
+- Hadley Wickham [What’s next for the popular programming language R?](https://qz.com/1661487/hadley-wickham-on-the-future-of-r-python-and-the-tidyverse/)
+
+## knitr
+- [Figures captions and labels in knitr](https://stackoverflow.com/questions/31926623/figures-captions-and-labels-in-knitr)
+```
+    fig_caption: yes
+fig.cap="\\label{fig:figs}plotting example"
+```
+- [Figure Caption in R markdown](https://community.rstudio.com/t/figure-caption-in-r-markdown/6951)
+- [Plot size and resolution with R markdown, knitr, pandoc, beamer](https://stackoverflow.com/questions/17963962/plot-size-and-resolution-with-r-markdown-knitr-pandoc-beamer)
+- [STAT545: Writing figures to file](http://stat545.com/block017_write-figure-to-file.html)
 
 # 28.08.2019
 ## R
@@ -743,6 +827,11 @@ Multiple Precision Arithmetic (big integers and rationals, prime number tests, m
 
 ## data.table
 - [Use of lapply .SD in data.table R](https://stackoverflow.com/questions/32276887/use-of-lapply-sd-in-data-table-r)
+- [data.table. Using .SD and .SDcols](https://riptutorial.com/data-table/example/13084/using--sd-and--sdcols)
+- [Extract a column from a data.table as a vector, by position](https://stackoverflow.com/questions/20043313/extract-a-column-from-a-data-table-as-a-vector-by-position)
+- [Why do DT[ , 5] and DT[2, 5] return a 1-column data.table rather than vectors like data.frame?](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-faq.html#j-num)
+- [R: How to get a single element in data.table](https://stackoverflow.com/questions/21872262/r-how-to-get-a-single-element-in-data-table)
+- [setNames vs. setnames in R (+ Examples) | stats & data.table Package](https://statisticsglobe.com/setnames-r-function-example)
 
 # 26.08.2019
 ## R
@@ -1043,7 +1132,7 @@ An R interface to jExcel library to create web-based interactive tables and spre
 EtherCalc is a web spreadsheet. Your data is saved on the web, and people can edit the same document at the same time. Everybody's changes are instantly reflected on all screens. Work together on inventories, survey forms, list management, brainstorming sessions and more!
 - [Introducing the {ethercalc} package](https://rud.is/b/2019/06/15/introducing-the-ethercalc-package/)
 - [To Err Is Human; To Ignore, Divine](https://enpiar.com/2019/07/17/to-err-is-human-to-ignore-divine/)
-- [MATCH.ARG. A WEIRD FUNCTION THAT CAN HELP YOU WRITE BETTER FUNCTIONS](https://enpiar.com/2019/07/17/to-err-is-human-to-ignore-divine/)
+- COOL! [MATCH.ARG. A WEIRD FUNCTION THAT CAN HELP YOU WRITE BETTER FUNCTIONS](https://alistaire.rbind.io/blog/match.arg/)
 - [A/B Testing with Machine Learning - A Step-by-Step Tutorial](https://www.business-science.io/business/2019/03/11/ab-testing-machine-learning.html)
 
 ## ggmap
