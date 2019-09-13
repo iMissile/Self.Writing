@@ -659,6 +659,7 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 - [colorspace @ useR! 2019](https://eeecon.uibk.ac.at/~zeileis/news/user2019/)
 	- COOL! [At the end of the rainbow](https://eeecon.uibk.ac.at/~zeileis/news/endrainbow/)
 Fully saturated RGB rainbow colors are still widely used in scientific visualizations despite their widely-recognized disadvantages. A recent wild-caught example is presented, showing its limitations along with a better HCL-based alternative palette.
+- JUST [R]AMBLING. [BUILT-IN COLOUR NAMES IN R](https://chichacha.netlify.com/2019/09/08/mysterious-colour-names-in-r/)
 
 
 # R useful plugins
@@ -680,6 +681,7 @@ Trelliscope is a visualization approach based on the idea of “small multiples�
 
 ## Local Sensitivity & min-hash. Работа с текстом
 - [Mining of Massive Datasets](http://www.mmds.org/)
+- [Locality Sensitive Hashing in R](https://github.com/dselivanov/LSHR)
 - [Locality-sensitive hashing (LSH[1]) — вероятностный метод понижения размерности многомерных данных.](https://ru.wikipedia.org/wiki/Locality-sensitive_hashing)
 - [Jaccard index](https://en.m.wikipedia.org/wiki/Jaccard_index)
 - [Locality Sensitive Hashing in R](https://github.com/dselivanov/LSHR)
@@ -699,6 +701,90 @@ LSHR - fast and memory efficient package for near-neighbor search in high-dimens
 	- [CS 584 - Big Data Analytics](https://joyceho.github.io/course/cs584_s16/)
 Course Description
 The course covers scalable machine learning and data mining algorithms for large/complex data. Topics include large-scale optimization techniques, hashing, recommendation systems, and tensor factorization. This will be structured as a seminar course with emphasis on public data sets such as Kaggle competitions, MovieLens, and various healthcare datasets. There will be introductory lectures that set the context and provide reviews of relevant material.
+- [LSH Algorithm and Implementation (E2LSH)](https://www.mit.edu/~andoni/LSH/)
+- [LSH.9 Locality-sensitive hashing: how it works](https://www.youtube.com/watch?v=Arni-zkqMBA)
+- COOL! [Locality Sensitive Hashing](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134). An effective way of reducing the dimensionality of your data
+
+
+# 13.09.2019
+## R
+- [Applying gradient descent – primer / refresher](http://gradientdescending.com/applying-gradient-descent-primer-refresher/)
+- [Use more of your data with matrix factorisation](http://gradientdescending.com/use-more-of-your-data-with-matrix-factorisation/)
+- COOL! [Survival analysis with strata, clusters, frailties and competing risks in in Finalfit](https://www.datasurg.net/2019/09/12/survival-analysis-with-strata-clusters-frailties-and-competing-risks-in-in-finalfit/)
+- [metathis](http://pkg.garrickadenbuie.com/metathis/index.html). Why metathis?. The goal of metathis is to help you add HTML <meta> tags to your R Markdown and Shiny apps.
+
+## Поиск похожих изображений
+- [pHash](https://www.phash.org/docs/design.html). The open source perceptual hash library
+- [How-to automatically identify similar images using pHash](https://cloudinary.com/blog/how_to_automatically_identify_similar_images_using_phash)
+
+
+# 12.09.2019
+## R
+- COOL! [How to develop an interactive, dynamic help system for your app with introJS](http://shiny.rstudio.com/articles/js-introjs.html)
+- [carlganz/rintrojs](https://github.com/carlganz/rintrojs). Wrapper for the Intro.js library https://carlganz.github.io/rintrojs/
+- [Multi Process Task Queue in 100 Lines of R Code](https://www.tidyverse.org/articles/2019/09/callr-task-q/)
+- [ellipsis](https://ellipsis.r-lib.org/). Adding ... to a function is a powerful technique because it allows you to accept any number of additional arguments. Unfortunately it comes with a big downside: any misspelled or extraneous arguments will be silently ignored. This package provides tools for making ... safer:
+- COOL! [Reaction time distributions: an interactive overview](http://lindeloev.net/shiny/rt/)
+
+
+# 11.09.2019
+## Python
+- [PyBites](https://pybit.es/)
+
+## R
+- [R COMES TO OIL + GAS](https://moderndata.plot.ly/r-comes-to-oil-gas/)
+- [Listing R Package Dependencies Without Installing Packages](https://stackoverflow.com/questions/14645363/listing-r-package-dependencies-without-installing-packages)
+```
+pack <- available.packages()
+pack["ggplot2","Depends"]
+```
+```
+packrat:::recursivePackageDependencies("ggplot2",lib.loc = .libPaths()[1])
+```
+- [Determine minimum R version for all package dependencies](https://stackoverflow.com/questions/38686427/determine-minimum-r-version-for-all-package-dependencies/38687310?noredirect=1#comment64767951_38687310)
+- [Identify R Package Dependencies Using miniCRAN](https://marlonribunal.com/identify-package-dependencies-using-minicran/)
+```
+library("miniCRAN")
+pkg <- "ggplot2"
+pkgDep(pkg)
+```
+- [RZabbix](https://github.com/MarcinKosinski/RZabbix). RZabbix is an R module for working with the Zabbix API.
+
+# 10.09.2019
+## R
+- COOL! [Best Practice: Development of Robust Shiny Dashboards as R Packages](https://www.inwt-statistics.com/read-blog/best-practice-development-of-robust-shiny-dashboards-as-r-packages.html)
+- [parameters: a powerful and lightweight alternative to broom to describe your models' coefficients](https://easystats.github.io/blog/posts/parameters_presentation/)
+- [huge: High-Dimensional Undirected Graph Estimation](https://cran.r-project.org/web/packages/huge/index.html)
+- COOL! [Package Building: How `DESCRIPTION`, `NAMESPACE`, `roxygen`, and `devtools::document` work together](https://laderast.github.io/2019/02/12/package-building-description-namespace/)
+- [mapsapi: 'sf'-Compatible Interface to 'Google Maps' APIs](https://cran.r-project.org/web/packages/mapsapi/index.html)
+Interface to the 'Google Maps' APIs: (1) routing directions based on the 'Directions' API, returned as 'sf' objects, either as single feature per alternative route, or a single feature per segment per alternative route; (2) travel distance or time matrices based on the 'Distance Matrix' API; (3) geocoded locations based on the 'Geocode' API, returned as 'sf' objects, either points or bounds.
+- [Function of a Day. `strsplit`](http://rfunction.com/archives/1499)
+- [Convert a row of a data frame to vector](https://stackoverflow.com/questions/14484728/convert-a-row-of-a-data-frame-to-vector/14484812)
+
+## Greenplum
+- [R: Connect to Greenplum Database](https://stackoverflow.com/questions/46005915/r-connect-to-greenplum-database)
+- [PivotalR: A Package for Machine Learning on Big Data](https://cran.r-project.org/web/packages/PivotalR/vignettes/pivotalr.pdf)
+
+# 09.09.2019
+## R
+- [skimr for useful and tidy summary statistics](https://ropensci.org/blog/2017/07/11/skimr/)
+- COOL! [skimr: how to remove histogram?](https://stackoverflow.com/questions/51340323/skimr-how-to-remove-histogram).
+- [skimr. Specify your own statistics and classes](https://github.com/ropensci/skimr)
+Users can specify their own statistics using a list combined with the skim_with() function. This can support any named class found in your data.
+- [An updated version of The Hitchhiker's Guide to Ggplot2](https://pacha.hk/blog/2019/09/08/an-updated-version-of-the-hitchhikers-guide-to-ggplot2/)
+	- [The Hitchhiker's Guide to Ggplot2](https://leanpub.com/hitchhikers_ggplot2)
+- [First World Problems: Very long RMarkdown documents](https://martinctc.github.io/blog/first-world-problems-very-long-rmarkdown-documents/)
+- COOL! [Calendar Heatmaps in ggplot](https://ryanplant.netlify.com/post/calendar-heatmaps-in-ggplot/)
+
+
+# 06.09.2019
+## R
+- [CSS Enhances R Shiny; SASS Enhances CSS](http://enhancedatascience.com/2019/09/05/css-enhances-r-shiny-sass-enhances-css/)
+- [Including Optional Functionality from Other Packages in Your Code](https://nathaneastwood.github.io/2019/09/05/including-optional-functionality-from-other-packages-in-your-code/)
+- Ошибка с новым `pander`:
+	- [Possible bug in table.alignment.default: "Wrong number of parameters passed: justify" #269 {Closed}](https://github.com/Rapporter/pander/issues/269)
+	- [Rendering tables with pandoc.table](https://rapporter.github.io/pander/pandoc_table.html)
+
 
 # 05.09.2019
 ## R
@@ -712,6 +798,15 @@ The course covers scalable machine learning and data mining algorithms for large
 - [Easy data access: The advantages of a unique database connection with ODBC and DBI](https://www.eoda.de/en/wissen/blog/einfacher-datenzugang-die-vorteile-der-einmaligen-datenbankverbindung-mit-odbc-und-dbi)
 - [Create an Icon Map in R with ggmap and ggimage](https://www.littlemissdata.com/blog/iconmap)
 - [Advanced Data Reshaping in Python and R](http://www.win-vector.com/blog/2019/09/advanced-data-reshaping-in-python-and-r/)
+
+## R слияние по строкам
+- [How to merge multiple data frames using base R](https://www.musgraveanalytics.com/blog/2018/2/12/how-to-merge-multiple-data-frames-using-base-r)
+- [Fast data lookups in R: dplyr vs data.table](https://appsilon.com/fast-data-lookups-in-r-dplyr-vs-data-table/)
+- [Joining by a character column is slow, compared to joining by a factor column. #1386
+ {Closed}](https://github.com/tidyverse/dplyr/issues/1386). Тут, кстати, идет обсуждение про сравнение строк путем сравнения ссылок на эти строки!
+- [How to perform merges (joins) on two or more data frames with base R, tidyverse and data.table](https://jozefhajnala.gitlab.io/r/r006-merge/)
+- [r-lib/fastmap](https://r-lib.github.io/fastmap/). Fast map implementation for R https://r-lib.github.io/fastmap/
+
 
 # 04.09.2019
 ## R
@@ -835,7 +930,8 @@ Multiple Precision Arithmetic (big integers and rationals, prime number tests, m
 
 # 26.08.2019
 ## R
-- [tinytest: Lightweight and Feature Complete Unit Testing Framework](https://cran.r-project.org/web/packages/tinytest/index.html)
+- COOL! [tinytest: Lightweight and Feature Complete Unit Testing Framework](https://cran.r-project.org/web/packages/tinytest/index.html)
+	- [eddelbuettel/ttdo](https://github.com/eddelbuettel/ttdo). Extend tinytest with diffobj
 - [Lightweight is the right weight](http://www.tinyverse.org/)
 - [lumberjack: Track Changes in Data](https://cran.r-project.org/web/packages/lumberjack/index.html)
 A framework that allows for easy logging of changes in data. Main features: start tracking changes by adding a single line of code to an existing script. Track changes in multiple datasets, using multiple loggers. Add custom-built loggers or use loggers offered by other packages.
@@ -933,6 +1029,7 @@ f_dowle3 = function(DT) {
     set(DT,which(is.na(DT[[j]])),j,0)
 }
 ```
+- [na.omit.data.table: Remove rows with missing values on columns specified](https://rdrr.io/cran/data.table/man/na.omit.data.table.html)
 
 ## R и 64 бит
 - [REALLY LARGE NUMBERS IN R](http://theautomatic.net/2019/08/16/really-large-numbers-in-r/). This post will discuss ways of handling huge numbers in R using the gmp package.
@@ -1137,7 +1234,19 @@ EtherCalc is a web spreadsheet. Your data is saved on the web, and people can ed
 
 ## ggmap
 - [Geocoding with ggmap and the Google API](https://lucidmanager.org/geocoding-with-ggmap/)
-- COOL! [USING GGMAP AFTER JULY 2018](https://www.visibledata.co.uk/blog/2018/12/05/2018-12-05-using-ggmap-after-july-2018/)
+- COOL! Google Maps [USING GGMAP AFTER JULY 2018](https://www.visibledata.co.uk/blog/2018/12/05/2018-12-05-using-ggmap-after-july-2018/)
+- [get_map not passing the API key (HTTP status was '403 Forbidden')](https://stackoverflow.com/questions/52565472/get-map-not-passing-the-api-key-http-status-was-403-forbidden/52617929#52617929)
+```
+APIs you need: Maps Static and Geocoding
+```
+- [OpenStreetMap: Access to Open Street Map Raster Images](https://cran.r-project.org/web/packages/OpenStreetMap/index.html)
+Accesses high resolution raster maps using the OpenStreetMap protocol. Dozens of road, satellite, and topographic map servers are directly supported, including Apple, Mapnik, Bing, and stamen. Additionally raster maps may be constructed using custom tile servers. Maps can be plotted using either base graphics, or ggplot2. This package is not affiliated with the OpenStreetMap.org mapping project.
+- COOL!!!! [Alternative solution for using ggmap with geocoding, but without the Google API](https://stackoverflow.com/questions/52704695/is-ggmap-broken-basic-qmap-produces-arguments-imply-differing-number-of-rows/52710855#52710855):
+```
+library(ggmap)
+library(tmaptools)
+ggmap(get_stamenmap(rbind(as.numeric(paste(geocode_OSM("Vienna")$bbox))), zoom = 11))
+```
 
 # 18.07.2019
 ## R
@@ -4141,7 +4250,6 @@ Feature Labs accelerates the error prone, time intensive, and costly process of 
 	- [STATWORX/bounceR. Automated Feature Selection](https://github.com/STATWORX/bounceR)
 
 
-
 # 11.09.2018
 ## R
 - [Difference in preprocessing using recipes and caret's preProcess](https://stackoverflow.com/questions/50339298/difference-in-preprocessing-using-recipes-and-carets-preprocess)
@@ -4157,15 +4265,13 @@ http://www.jvcasillas.com/base_lattice_ggplot/
 https://www.stat.ubc.ca/~jenny/STAT545A/block18_gapminderGgplot2VsLattice.html
 
 
-
 # 10.09.2018
 ## R
 - COOL! [Diagnosing RStudio Startup Issues](https://datawookie.netlify.com/blog/2018/09/diagnosing-rstudio-startup-issues/). !! If you have problems running RStudio, give `--run-diagnostics` a try.
 - [Playing Map() and Reduce() in R – Subsetting](https://statcompute.wordpress.com/2018/09/08/playing-map-and-reduce-in-r-subsetting/)
 - [Driving Drill Dynamically with Docker and Updating Storage Configurations On-the-fly with sergeant](https://rud.is/b/2018/09/09/driving-drill-dynamically-with-docker-and-updating-storage-configurations-on-the-fly-with-sergeant/)
 - [WVU Log Viewer](www.wvulogviewer.org/). WVU Well log viewer is a web enabled application to quickly visualize and interpret well log data. User can upload a LAS file and visualize logs in different ...
-- Проблемка с read_csv, выявленная на экспериментах с нефтянкой: [Print column specification whenever there is guessing? #522 {Open}](https://github.com/tidyverse/readr/issues/522)/ Наблюдаются проблемы с разбором целевой колонки 'Нефть, т'. Там числа, завернутые в строки, 
-# а десятичным разделителем выступает запятая, а не точка
+- Проблемка с read_csv, выявленная на экспериментах с нефтянкой: [Print column specification whenever there is guessing? #522 {Open}](https://github.com/tidyverse/readr/issues/522)/ Наблюдаются проблемы с разбором целевой колонки 'Нефть, т'. Там числа, завернутые в строки, а десятичным разделителем выступает запятая, а не точка
 - Как поставить файл с гитхаба из локального архива? 
 	- Вроде прошло `install.packages("C:/Users/Ilya/Downloads/multidplyr-master.zip", repos=NULL)`, с обязательным указанием `repos`/
 	- Прошло `devtools::install_local("C:/Users/Ilya/Downloads/multidplyr-master/")`. Читаем здесь: [Install R packages from github downloading master.zip](https://stackoverflow.com/questions/17366772/install-r-packages-from-github-downloading-master-zip)
