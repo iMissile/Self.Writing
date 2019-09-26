@@ -127,7 +127,7 @@ CMD ["Rscript", "-e", "shiny::runApp('/srv/shiny')"]
 
 # Запуск ShinyProxy
 
-Основаня инструкций по SP: https://www.shinyproxy.io/getting-started/	
+Основная инструкций по SP: https://www.shinyproxy.io/getting-started/	
 ## Предварительная подготовка на CentOS
 - Посмотрели на статус существующего docker: `sudo service docker status`
 - Прописали его как сервис
@@ -223,7 +223,7 @@ Rscript dict_updater.R
 1. Создал в AD `OU = Groups`.
 2. Создал две локальные секьюрные группы и перенес их в эту папку
 3. Настроил доступаы к различным приложениям в соотв. со следующей конфигурацией `application.yml` (Почему авторизация идет по Alex, ума не приложу, эксперименты показывают, что может использоваться частичное совпадение при поиске по полю Name, а не account).
-Отчасти соображения иожно найти здесь: [Authenticating against Active Directory without bind authentication support #7 {Closed}](https://github.com/openanalytics/shinyproxy/issues/7)
+Отчасти соображения можно найти здесь: [Authenticating against Active Directory without bind authentication support #7 {Closed}](https://github.com/openanalytics/shinyproxy/issues/7)
 ```
 Indeed, ShinyProxy uses `BindAuthenticator` rather than `PasswordComparisonAuthenticator` for LDAP auth. That being said, I think your use case (users are defined on many locations in the tree) is supported. The relevant settings are `user-dn-pattern` and `user-search-filter`.
 

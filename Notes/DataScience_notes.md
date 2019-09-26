@@ -82,7 +82,8 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 
 Итого, вытаскиваем ветку 'huawei' командой
 `git clone -b huawei https://gitlab.com/TV-stat/mts-tv-stat.reports.git ./mts-tv-stat.reports.hw`
-- [7.12 Инструменты Git - Создание пакетов](https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2)
+- [7.12 Инструменты Git - Создание пакетов](https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2). В этих случаях вам может помочь команда `git bundle`.
+
 
 
 # R general
@@ -150,6 +151,10 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - [GAM IN R by NOAM ROSS](https://noamross.github.io/gams-in-r-course/). A Free, Interactive Course using mgcv
 - [Supplement to Shiny in Production](https://kellobri.github.io/shiny-prod-book/)
 - [What They Forgot to Teach You About R](https://whattheyforgot.org/) by Jennifer Bryan, Jim Hester
+- COOL! [Data Science at the Command Line](https://www.datascienceatthecommandline.com/) by Jeroen Janssens, August 16, 2019
+- [Mike McQuaid. Git In Practice](https://mikemcquaid.com/gitinpractice/)
+	- [MikeMcQuaid/GitInPractice](https://github.com/MikeMcQuaid/GitInPractice). An opinionated intermediate/advanced Git book http://www.manning.com/mcquaid/?a_aid…
+
 
 
 # VPN
@@ -660,6 +665,7 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 	- COOL! [At the end of the rainbow](https://eeecon.uibk.ac.at/~zeileis/news/endrainbow/)
 Fully saturated RGB rainbow colors are still widely used in scientific visualizations despite their widely-recognized disadvantages. A recent wild-caught example is presented, showing its limitations along with a better HCL-based alternative palette.
 - JUST [R]AMBLING. [BUILT-IN COLOUR NAMES IN R](https://chichacha.netlify.com/2019/09/08/mysterious-colour-names-in-r/)
+- [thomasp85/scico](https://github.com/thomasp85/scico). Palettes for R based on the Scientific Colour-Maps
 
 
 # R useful plugins
@@ -705,6 +711,179 @@ The course covers scalable machine learning and data mining algorithms for large
 - [LSH.9 Locality-sensitive hashing: how it works](https://www.youtube.com/watch?v=Arni-zkqMBA)
 - COOL! [Locality Sensitive Hashing](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134). An effective way of reducing the dimensionality of your data
 
+# 26.09.2019
+## R
+- COOL! [ggpage](https://emilhvitfeldt.github.io/ggpage/). ggpage is a package to create pagestyled visualizations of text based data. It uses ggplot2 and final returns are ggplot2 objects
+- [Vis Example of using `tidyr::hoist()`](https://gist.github.com/batpigandme/048c6eecd04d4d1f32d7b97e5a8b437b).
+- [Jim Hester blog. Software Engineer. RStudio](https://www.jimhester.com/). I am a Software Engineer at RStudio, where I work on Hadley Wickham’s team developing open source R packages for the tidyverse and r-lib projects. I use my knowledge of R, C++ and other languages to build useful, correct, and performant R packages.
+- [edwindj/daff](https://github.com/edwindj/daff). Diff, patch and merge for data.frames, see http://paulfitz.github.io/daff/
+- [lumberjack: Track Changes in Data](https://cran.r-project.org/web/packages/lumberjack/index.html)
+A framework that allows for easy logging of changes in data. Main features: start tracking changes by adding a single line of code to an existing script. Track changes in multiple datasets, using multiple loggers. Add custom-built loggers or use loggers offered by other packages.
+
+# 25.09.2019
+## RStudio
+- [How to prevent core dump when Rstudio crashes](https://support.rstudio.com/hc/en-us/community/posts/115008241947-How-to-prevent-core-dump-when-Rstudio-crashes).
+There's no RStudio option; this is something you change in Linux. More here: https://linux-audit.com/understand-and-configure-core-dumps-work-on-linux/
+- COOL! [Understand and configure core dumps on Linux](https://linux-audit.com/understand-and-configure-core-dumps-work-on-linux/)
+
+## R
+- [Preparing Data for Supervised Classification](http://www.win-vector.com/blog/2019/09/preparing-data-for-supervised-classification/)
+	- COOL! [Using vtreat with Classification Problems](https://github.com/WinVector/vtreat/blob/master/Examples/Classification/Classification.md)
+- [Practical Data Science with R, 2-nd ed.](http://www.win-vector.com/blog/practical-data-science-with-r/)
+- COOL! [Mastering R presentations](https://codingclubuc3m.rbind.io/post/2019-09-24/)
+- [PDF Scraping in R with tabulizer](https://www.business-science.io/code-tools/2019/09/23/tabulizer-pdf-scraping.html)
+- [Handling Missing Values in R using tidyr](https://www.programmingwithr.com/handling-missing-values-in-r-using-tidyr/)
+- Доклад. [CARTOGRAPHY WITH R AND QGIS, WHICH TO CHOOSE?](https://scottishsnow.wordpress.com/2019/09/23/cartography-with-r-and-qgis/)
+- [INTRODUCING DASH BIO FOR R](https://moderndata.plot.ly/introducing-dash-bio-for-r/)
+- COOL! [Super Solutions for Shiny Architecture 1 of 5: Using Session Data](https://appsilon.com/super-solutions-for-shiny-architecture-1-of-5-using-session-data)
+- [Communication between modules](https://shiny.rstudio.com/articles/communicate-bet-modules.html). LAST UPDATED: 09 NOV 2018
+- [Modularizing Shiny app code](https://shiny.rstudio.com/articles/modules.html). LAST UPDATED: 28 JUN 2017
+- GEO:
+	- [World. Full of data.](http://data.esosedi.org/). "OSMe - is a module for Yandex, Google or other JS Maps for showing countries and regions of the world. Based on osme and Yandex.Maps. Information is from OpenStreetMap, Wikipedia, GeoNames and some other sources. Created for and used by project esosedi.org.
+	- [esosedi/osme-geometry](https://github.com/esosedi/osme-geometry). OSME-GEOMETRY
+The source for shapes for all the countries and states.
+- COOL! [How to format a number as percentage in R?](https://stackoverflow.com/questions/7145826/how-to-format-a-number-as-percentage-in-r)
+```
+lilip <- function() formattable::percent(x,2)
+krlmlr <- function() scales::percent(x)
+andrie1 <- function() paste0(round(x,4) * 100, '%')
+
+microbenchmark(times=100L,lilip(), krlmlr(), andrie1())
+Unit: microseconds
+      expr        min          lq        mean      median          uq        max neval
+   lilip()    194.562    373.7335    772.5663    889.7045    950.4035   1611.537   100
+  krlmlr() 226270.845 237985.6560 260194.9269 251581.0235 280704.2320 373022.180   100
+ andrie1()  87916.021  90437.4820  92791.8923  92636.8420  94448.7040 102543.252   100
+```
+- [Capitalize the first letter of both words in a two word string](https://stackoverflow.com/questions/6364783/capitalize-the-first-letter-of-both-words-in-a-two-word-string)
+- [`purrr::invoke` Invoke functions retired](https://purrr.tidyverse.org/reference/invoke.html).
+ 
+
+
+# 24.09.2019
+## R
+- COOL! Learning [gadenbuie/tidyexplain](https://github.com/gadenbuie/tidyexplain). Animations of tidyverse verbs using R, the tidyverse, and gganimate
+ 	- [tidyexplain. Tidy Animated Verbs](https://www.garrickadenbuie.com/project/tidyexplain/)
+- COOL! Lerning [data-cleaning/EESW2019_tutorial](https://github.com/data-cleaning/EESW2019_tutorial). Materials for the short course at the European Establishment Statistics Workshop 2019
+```
+install.packages(c(
+        "validate"
+      , "errorlocate"
+      , "simputation"
+      , "rspa"
+      , "daff"
+      , "jsonlite"
+      , "XML"
+      , "readr"
+      , "stringr"
+      , "lumberjack")
+  , dependencies=TRUE)
+```
+- COOL! [wilkelab/ungeviz](https://github.com/wilkelab/ungeviz). Tools for visualizing uncertainty with ggplot2
+- COOL! [Practical ggplot2](https://wilkelab.org/practicalgg/)
+
+## DS
+- [Dr. Noam Ross, A New Website](https://www.noamross.net/2019/08/09/a-new-website/). My [CV](https://www.noamross.net/vitae/) is generated from data on [ORCiD](https://orcid.org/) using the [rorcid](https://github.com/ropensci/rorcid) package.
+
+# 23.09.2019
+## R
+- COOL! [Accelerate your plots with ggforce](https://rviews.rstudio.com/2019/09/19/intro-to-ggforce/)
+- [d3po: R package for easy interactive D3 visualization with Shiny](https://pacha.hk/blog/2019/09/22/d3po-r-package-for-easy-interactive-d3-visualization-with-shiny/)
+- [OTS beta dashboard](https://shiny.tradestatistics.io/dashboard/?_inputs_&go=0&p=%22all%22&r=%22usa%22&y=%5B2014%2C2018%5D)
+- [Remove Element from List in R (7 Example Codes) | How to Delete a List Component](https://statisticsglobe.com/remove-element-from-list-in-r)
+
+## R in command-line
+- COOL! Серия публикаций. [Learn to Write Command Line Utilities in R](https://blog.sellorm.com/2017/12/18/learn-to-write-command-line-utilities-in-r/)
+- COOL! [DOCOPT. Command-line interface description language](http://docopt.org/)
+- COOL! 9 лет пополняются ответы. [Determine path of the executing script](https://stackoverflow.com/questions/1815606/determine-path-of-the-executing-script)
+
+
+
+# 20.09.2019
+## R
+- Подробная программа. [RStudio Conference 2019 Notes @Austin](http://rpubs.com/zhangou888/rstd_conf2019)
+- [Welcome to STAT545](https://stat545.com/index.html)
+- [STRUCTURING R PROJECTS](https://www.chrisvoncsefalvay.com/2018/08/09/structuring-r-projects/)
+- [A meaningful file structure for R projects](https://www.inwt-statistics.com/read-blog/a-meaningful-file-structure-for-r-projects.html)
+- [R replacing NaN with 0 using dplyr {duplicate}](https://stackoverflow.com/questions/56806184/r-replacing-nan-with-0-using-dplyr)
+
+## MS
+- Task Manager @ RDS. Сочетание клавиш CTRL+ALT+DEL всегда применяется к рабочему столу локального компьютера. Чтобы сочетание клавиш `CTRL+ALT+DEL` действовало на удаленном компьютере, требуется нажать сочетание клавиш `CTRL+ALT+END`
+
+# 19.09.2019
+## R
+- COOL! [Feature-based time series analysis](https://robjhyndman.com/hyndsight/fbtsa/)
+- [Retrieving google drive item shares and permissions (in R)](https://adisarid.github.io/post/2019-09-17-google_drive_dir_structure_permissions/)
+- COOL! От Генриха. [Easyalluvial 0.2.1 released](https://www.datisticsblog.com/2019/09/easyalluvial-0-2-1-released/)
+easyalluvial allows you to build exploratory alluvial plots (sankey diagrams) with a single line of code while automatically binning numerical variables. This releas 0.2.1 ensures tidyr 1.0.0 compatibility and fixes a bug around categorical variables for model response plots
+- [Windows user space issues with installing R packages](https://www.r-bloggers.com/windows-user-space-issues-with-installing-r-packages/)
+
+
+## Testing
+- [testthat 2.1.0](https://www.tidyverse.org/articles/2019/04/testthat-2-1-0/)
+- [testthat 2.0.0](https://www.tidyverse.org/articles/2017/12/testthat-2-0-0/)
+```
+Test files
+For package code, tests should live in tests/testthat.
+There are four classes of .R files that have special behaviour:
+• Test files start with test and are executed in alphabetical order.
+• Helper files start with helper and are executed before tests are run and from devtools::load_all().
+• Setup files start with setup and are executed before tests, but not during devtools::load_all().
+• Teardown files start with teardown and are executed after the tests are run.
+```
+- Из документации. 
+- [Intro to unit testing in R](https://katherinemwood.github.io/post/testthat/)
+- [Example of unit testing R code with testthat](https://www.johndcook.com/blog/2013/06/12/example-of-unit-testing-r-code-with-testthat/)
+- [Example of unit testing R code with testthat](https://dzone.com/articles/example-unit-testing-r-code)
+- [Practical Go: Real world advice for writing maintainable Go programs](https://dave.cheney.net/practical-go/presentations/gophercon-singapore-2019.html)
+
+# 18.09.2019
+## R
+- `tsibble`. Интересный концепт по оконным функциям. [Deprecate window functions in favour of {slide} #143 {Open}](https://github.com/tidyverts/tsibble/issues/143). I'd be happy to deprecate window functions in favour of slurrr::slide(). I've had a quick look, and seems that `slurrr::slide()` replace `slide()`, `tile()`, `stretch()` all together by using different parameters?
+You'll probably have future_slide() in mind too? living in slurrr or furrr?
+Looks like https://github.com/r-lib/funs also plans to implement this set of functions. But Hadley said no plan in the near future. Does it mean slurrr will not be replaced by funs?
+- [R infrastructure - Repositories](https://github.com/r-lib)
+- [slide](https://davisvaughan.github.io/slide/)
+slide provides a family of general purpose “sliding window” functions. The API is purposefully very similar to purrr, with functions such as slide(), slide_dbl(), slide2() and pslide(). The goal of these functions is usually to compute rolling averages, cumulative sums, rolling regressions, or other “window” based computations.
+- [Tidy causal DAGs with ggdag 0.2.0](https://malco.io/2019/09/17/tidy-causal-dags-with-ggdag-0-2-0/)
+- [Switching Between Tidyverse and Pandas for Tabular Data Wrangling: Tidying Data](https://blog.zenggyu.com/en/post/2019-01-02/switching-between-tidyverse-and-pandas-for-tabular-data-wrangling-tidying-data/)
+- Тут анимация столбчатых диаграмм. [Visualizing Temperatures in Berlin with Bar Chart Races](https://cedricscherer.netlify.com/2019/09/17/bar-chart-race-temperatures-berlin/)
+- COOL! Замена штатному `cut`. [santoku - a visual introduction](https://rpubs.com/dash2/santoku) by David Hugh-Jones
+- [santoku](https://hughjonesd.github.io/santoku/) is a versatile cutting tool for R. It provides chop(), a replacement for `base::cut()`.
+- [A Graphical Introduction to tidyr's `pivot_*()`](https://speakerdeck.com/yutannihilation/a-graphical-introduction-to-tidyrs-pivot-star)
+
+
+# 17.09.2019
+## R
+- COOL! Learning. Новый tidyr. [Pivoting data from columns to rows (and back!) in the tidyverse](http://www.storybench.org/pivoting-data-from-columns-to-rows-and-back-in-the-tidyverse/)
+- [patrickshox/Mojave-Dark-RStudio-Theme](https://github.com/patrickshox/Mojave-Dark-RStudio-Theme). A Dark RStudio Theme inspired by Apple's dark aestheticcc.
+- ggplot
+	- [log-scale Breaks Are Not Always Useful #100 {Closed}](https://github.com/r-lib/scales/issues/100)
+	- [No legend with trans = log10 for certain fill/color values #2295 {Closed}]
+- CELONIS: [PADAS: Process Aware Data Suite](https://www.win.tue.nl/~egonzale/projects/padas/)
+- [Automatic differentiation in pqR](https://radfordneal.wordpress.com/2019/07/06/automatic-differentiation-in-pqr/#more-2588)
+- COOL! [Using ggplot2 for functional time series](https://robjhyndman.com/hyndsight/ftsviz/)
+
+
+## ML
+- COOL! [End-to-End Machine Learning](https://end-to-end-machine-learning.teachable.com/courses/)
+	- COOL! [How Backpropagation Works](https://www.youtube.com/watch?v=6BMwisTZFr4&feature=youtu.be)
+
+
+# 16.09.2019
+## R
+- [Prepping data for #rstats #tidyverse and a priori planning](http://www.christopherlortie.info/prepping-data-for-rstats-tidyverse-and-a-priori-planning/), August 14, 2019 by lortie
+- [Tell Me a Story: How to Generate Textual Explanations for Predictive Models](http://smarterpoland.pl/index.php/2019/09/tell-me-a-story-how-to-generate-textual-explanations-for-predictive-models/)
+- [Initializing an empty list](https://thewoodpeckr.wordpress.com/2019/09/13/initializing-an-empty-list/)
+```
+desired_length <- 10 # or whatever length you want
+empty_list <- vector(mode = "list", length = desired_length)
+```
+- [Regex Problem? Here's an R package that will write Regex for you](https://www.programmingwithr.com/regex-problem-here-s-an-r-package-that-will-write-regex-for-you/)
+- [ttdo 0.0.3: New package](http://dirk.eddelbuettel.com/blog/2019/09/13/#ttdo_0.0.3)
+- COOL! [reactable](https://glin.github.io/reactable/). R interface to the React Table library, made with reactR.
+- COOL! [Making Magic with Keras and Shiny](http://nickstrayer.me/dataDayTexas/#1)
+An exploration of Shiny’s position in the data science pipeline
 
 # 13.09.2019
 ## R
@@ -1266,6 +1445,20 @@ Joe Cheng presented shinymeta enabling reproducibility in shiny at useR in July 
 # 15.07.2019
 ## DS
 - [{#823 new Bug / Defect} openvpn-gui 2.4 need administrative privilege at first connection only](https://community.openvpn.net/openvpn/ticket/823)
+```
+open_tun
+TAP-WIN32 device [Ethernet] opened: \\.\Global\{93D4B60C-EFCC-421C-9675-70A8ADF3F0A3}.tap
+NETSH: C:\WINDOWS\system32\netsh.exe interface ip set address Ethernet dhcp
+ERROR: netsh command failed: returned error code 1
+NETSH: C:\WINDOWS\system32\netsh.exe interface ip set address Ethernet dhcp
+ERROR: netsh command failed: returned error code 1
+NETSH: C:\WINDOWS\system32\netsh.exe interface ip set address Ethernet dhcp
+ERROR: netsh command failed: returned error code 1
+NETSH: C:\WINDOWS\system32\netsh.exe interface ip set address Ethernet dhcp
+ERROR: netsh command failed: returned error code 1
+NETSH: command failed
+Exiting due to fatal error
+```
 
 ## R
 - COOL! [Dramatically speed up your R purrr functions with the furrr package](http://www.zevross.com/blog/2019/02/12/dramatically-speed-up-your-r-purrr-functions-with-the-furrr-package/)
@@ -1681,7 +1874,24 @@ Functions for working with legends and axis lines of 'ggplot2', facets that repe
 ## YAML
 - [In YAML, how do I break a string over multiple lines?](https://stackoverflow.com/questions/3790454/in-yaml-how-do-i-break-a-string-over-multiple-lines). ! There are 5 6 NINE (or 63*, depending how you count) different ways to write multi-line strings in YAML.
 - [YAML Multiline](https://yaml-multiline.info/). Find the right syntax for your YAML multiline strings
-
+- Yaml\Toml
+	- [JSON VS XML VS TOML VS CSON VS YAML](https://www.zionandzion.com/json-vs-xml-vs-toml-vs-cson-vs-yaml/)
+	- Интересные публикации и сравнения в папке docs. [crdoconnor/strictyaml](https://github.com/crdoconnor/strictyaml). Type-safe YAML parser and validator. https://hitchdev.com/strictyaml/
+	- [Tree — убийца JSON, XML, YAML и иже с ними](https://habr.com/post/248147/)
+	- [Meet TOML. TOML vs YAML](https://medium.com/journey-to-rust/meet-toml-ba5c830d64f1)
+	- [TOML v0.5.0. Tom's Obvious, Minimal Language.](https://github.com/toml-lang/toml/blob/master/versions/en/toml-v0.5.0.md). By Tom Preston-Werner.
+- [RcppTOML 0.1.4: Now with TOML v0.5.0](http://dirk.eddelbuettel.com/blog/2018/10/23/#rcpptoml_0.1.4)
+- [toml-lang/toml](https://github.com/toml-lang/toml). Tom's Obvious, Minimal Language
+- [YAML Ain’t Markup Language (YAML™) Version 1.2]()http://yaml.org/spec/1.2/spec.html). 3rd Edition, Patched at 2009-10-01
+- [YAML - Comments](https://www.tutorialspoint.com/yaml/yaml_comments.htm).
+```
+YAML supports single line comments. Its structure is explained below with the help of an example −
+# this is single line comment.
+YAML does not support multi line comments. If you want to provide comments for multiple lines, you can do so as shown in the example below −
+# this
+# is a multiple
+# line comment
+```
 
 # 03.06.2019
 ## R
@@ -1855,6 +2065,7 @@ R Markdown documents can include one or more parameters whose values can be set 
 - COOL! отличная подборка способов подачи информации: [AUTOMATED DATA REPORTS WITH R](https://www.cultureofinsight.com/blog/2018/10/22/2018-08-20-automated-data-reports-with-r/)
 	- [Сгенерированный отчет](https://paulc91.github.io/gapminder_reports/)
 	- [Сам скрипт](https://github.com/PaulC91/gapminder_reports/blob/master/report.Rmd)
+	- Репозиторий [cultureofinsight/gapminder_reports](https://github.com/cultureofinsight/gapminder_reports). repo for automated continental reports on gapminder data with rmarkdown https://www.cultureofinsight.com/blog…
 - COOL! Презентация [Branding and Automating Your Work with R Markdown](http://rpubs.com/jzadra/rconf2018)
 - [Scheduling R Markdown Reports via Email](http://www.analyticsforfun.com/2016/01/scheduling-r-markdown-reports-via-email.html)
 
@@ -3634,21 +3845,13 @@ Provides an interface to the C code for Latent Dirichlet Allocation (LDA) models
 
 ## DS
 - COOL! [Welcome to the 2018 edition of fast.ai's 7 week course, Practical Deep Learning For Coders, Part 1, taught by Jeremy Howard (Kaggle's #1 competitor 2 years running, and founder of Enlitic).](http://course.fast.ai/index.html)
-- Yaml\Toml
-	- [JSON VS XML VS TOML VS CSON VS YAML](https://www.zionandzion.com/json-vs-xml-vs-toml-vs-cson-vs-yaml/)
-	- Интересные публикации и сравнения в папке docs. [crdoconnor/strictyaml](https://github.com/crdoconnor/strictyaml). Type-safe YAML parser and validator. https://hitchdev.com/strictyaml/
-	- [Tree — убийца JSON, XML, YAML и иже с ними](https://habr.com/post/248147/)
-	- [Meet TOML. TOML vs YAML](https://medium.com/journey-to-rust/meet-toml-ba5c830d64f1)
-	- [TOML v0.5.0. Tom's Obvious, Minimal Language.](https://github.com/toml-lang/toml/blob/master/versions/en/toml-v0.5.0.md). By Tom Preston-Werner.
+
 
 # 25.10.2018
 ## R
 - COOL! [benchplot {ggplot2}](https://ggplot2.tidyverse.org/reference/benchplot.html). Benchmark plot creation time. Broken down into construct, build, render and draw times.
 - [Create a Glossary in R Markdown](https://liao961120.github.io/2018/10/24/glossary-maker.html)
 - [“Demystifying Data Science” remote notes](http://research.libd.org/rstatsclub/2018/10/24/demystifying-data-science-remote-notes/)
-- [RcppTOML 0.1.4: Now with TOML v0.5.0](http://dirk.eddelbuettel.com/blog/2018/10/23/#rcpptoml_0.1.4)
-- [toml-lang/toml](https://github.com/toml-lang/toml). Tom's Obvious, Minimal Language
-- [YAML Ain’t Markup Language (YAML™) Version 1.2]()http://yaml.org/spec/1.2/spec.html). 3rd Edition, Patched at 2009-10-01
 - R & CRUD:
 	- [DT 0.4: Editing Tables, Smart Filtering, and More](https://blog.rstudio.com/2018/03/29/dt-0-4/) by Yihui Xie, 2018-03-29
 	- [Make it possible to edit values in table #480 {Merged}](https://github.com/rstudio/DT/pull/480) yihui merged 3 commits into master from feature/editor on 18 Jan
