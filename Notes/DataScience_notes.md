@@ -711,6 +711,155 @@ The course covers scalable machine learning and data mining algorithms for large
 - [LSH.9 Locality-sensitive hashing: how it works](https://www.youtube.com/watch?v=Arni-zkqMBA)
 - COOL! [Locality Sensitive Hashing](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134). An effective way of reducing the dimensionality of your data
 
+# 10.10.2019
+## R
+- [rBokeh – Tipps and Tricks with JavaScript and beyond!](https://www.statworx.com/de/blog/rbokeh-tipps-and-tricks-with-javascript-and-beyond/)
+- [JohnCoene/marker](https://github.com/JohnCoene/marker) Dynamically Highlight Text in Shiny
+
+## Oracle
+- [TRUNC ФУНКЦИЯ (ДЛЯ ДАТ)](https://oracleplsql.ru/trunc-function-for-date.html)
+- [Oracle TRUNC](https://www.oracletutorial.com/oracle-date-functions/oracle-trunc/)
+- [Different CURRENT_TIMESTAMP and SYSDATE in oracle](https://stackoverflow.com/questions/17922106/different-current-timestamp-and-sysdate-in-oracle)
+- [Datetime Datatypes and Time Zone Support](https://docs.oracle.com/cd/B19306_01/server.102/b14225/ch4datetime.htm)
+- [Datetime and Interval Arithmetic](https://docs.oracle.com/cd/B19306_01/server.102/b14225/ch4datetime.htm). Each DATE value contains a time component. The result of many date operations includes a fraction. This fraction means a portion of one day. For example, 1.5 days is 36 hours. These fractions are also returned by Oracle built-in SQL functions for common operations on DATE data. For example, the built-in MONTHS_BETWEEN SQL function returns the number of months between two dates. The fractional portion of the result represents that portion of a 31-day month.
+- [Comments Within SQL Statements](https://docs.oracle.com/cd/B12037_01/server.101/b10759/sql_elements006.htm)
+
+
+# 09.10.2019
+## R
+- [RStan: инструкция по применению](https://bdemeshev.github.io/em301/r_stan_installation/r_stan_installation.html) by Андрей Горюшев.
+- [Заметки по R: Введение в STAN](https://bdemeshev.github.io/r_cycle/cycle_files/33_stan_intro.html)
+- [Super Solutions for Shiny Architecture 3/5: Softcoding Constants in the App](https://appsilon.com/super-solutions-for-shiny-architecture-3-5-softcoding-constants-in-the-app/)
+- [PART II: DEPLOYING A DASH APPLICATION TO OPERATIONALIZE MACHINE LEARNING MODELS](https://moderndata.plot.ly/part-ii-deploying-a-dash-application-to-operationalize-machine-learning-models/)
+
+## Deploy
+- [The best automated deployment tool is… the one that fits your needs](https://dev.to/geshan/the-best-automated-deployment-tool-is-the-one-that-fits-your-needs-3o8)
+- [CRAN Task View: Model Deployment with R](https://cran.r-project.org/web/views/ModelDeployment.html)
+- [Singularity as a software distribution / deployment tool](https://mlampros.github.io/mlampros.github.io/2018/07/26/singularity_containers/)
+- [Singularity provides a single universal on-ramp from developers’ workstations to local resources, the cloud, and all the way to edge.](https://sylabs.io/singularity/)
+
+# 08.10.2019
+## R
+- COOL! [Model Explanation with BMuCaret Shiny Application using the IML and DALEX Packages](https://datascienceplus.com/model-explanation-with-bmucaret-shiny-application-using-the-iml-and-dalex-packages/)
+- [unglue](https://cran.r-project.org/web/packages/unglue/vignettes/unglue.html)
+The package unglue features functions such as unglue(), unglue_data() and unglue_unnest() which provide in many cases a more readable alternative to base regex functions. Simple cases indeed don’t require regex knowledge at all.
+- COOL! Векторный экспорт графики из R. [export: Streamlined Export of Graphs and Data Tables](https://cran.r-project.org/web/packages/export/index.html). Easily export 'R' graphs and statistical output to 'Microsoft Office' / 'LibreOffice', 'Latex' and 'HTML' Documents, using sensible defaults that result in publication-quality output with simple, straightforward commands. 
+
+# 07.10.2019
+## R
+- [Split-apply-combine for Maximum Likelihood Estimation of a linear model](https://www.brodrigues.co/blog/2019-10-05-parallel_maxlik/)
+- [Expanding binomial counts to binary 0/1 with purrr::pmap()](https://aosmith.rbind.io/2019/10/04/expanding-binomial-to-binary/)
+- COOL! [Using R: When weird errors occur in packages that used to work, check that you’re not feeding them a tibble](https://onunicornsandgenes.blog/2019/10/06/using-r-when-weird-errors-occur-in-packages-that-used-to-work-check-that-youre-not-feeding-them-a-tibble/)
+- [New vtreat Documentation (Starting with Multinomial Classification)](http://www.win-vector.com/blog/2019/10/new-vtreat-documentation-starting-with-multinomial-classification/)
+- COOL! [Alternative approaches to scaling Shiny with RStudio Shiny Server, ShinyProxy or custom architecture.](https://appsilon.com/alternatives-to-scaling-shiny/)
+- COOL! [ROracle is an Open Source R Package available on CRAN](https://www.oracle.com/database/technologies/appdev/roracle.html)
+- permutations
+	- [permutations: The Symmetric Group: Permutations of a Finite Set](https://cran.r-project.org/web/packages/permutations/). Manipulates invertible functions from a finite set to itself. Can transform from word form to cycle form and back.
+	- [permute: Functions for Generating Restricted Permutations of Data](https://cran.r-project.org/web/packages/permute/). A set of restricted permutation designs for freely exchangeable, line transects (time series), and spatial grid designs plus permutation of blocks (groups of samples) is provided. 'permute' also allows split-plot designs, in which the whole-plots or split-plots or both can be freely-exchangeable or one of the restricted designs. The 'permute' package is modelled after the permutation schemes of 'Canoco 3.1' (and later) by Cajo ter Braak.
+	- [Combinations and permutations in R](https://davetang.org/muse/2013/09/09/combinations-and-permutations-in-r/)
+	- [Generating all distinct permutations of a list in R](https://stackoverflow.com/questions/11095992/generating-all-distinct-permutations-of-a-list-in-r)
+
+## R & Oracle
+- [Can we connect R and RStudio to our Oracle Database?](https://support.rstudio.com/hc/en-us/articles/217800798-Can-we-connect-R-and-RStudio-to-our-Oracle-Database-)
+- [Установка Oracle Instant Client в Debian / Ubuntu](https://debianworld.ru/articles/ustanovka-oracle-instant-client-v-debian-ubuntu/)
+
+
+# 04.10.2019
+## R
+- ouR data generation. [There's always at least two ways to do the same thing: an example generating 3-level hierarchical data using simstudy](https://www.rdatagen.net/post/in-simstudy-as-in-r-there-s-always-at-least-two-ways-to-do-the-same-thing/)
+Posted on October 3, 2019
+- [RSTUDIO ADDIN: REPLACE IN FILES](http://skranz.github.io//r/2019/10/03/ReplaceInFiles.html). [git](https://github.com/skranz/ReplaceInFiles)
+- [Парсинг 0.5Tb xml за несколько часов. Поиск организаций в открытых данных реестра субъектов МСП ФНС](https://habr.com/ru/post/358654/)
+
+## Linux
+- [В ЧЕМ РАЗНИЦА МЕЖДУ GUNZIP И UNZIP?](http://fliplinux.com/gunzip-unzip.html)
+
+# 03.10.2019
+## R
+- [dials 0.0.3](https://www.tidyverse.org/articles/2019/10/dials-0-0-3/)
+- [lintr v2.0.0](https://www.jimhester.com/post/lintr-2-0-0/)
+- [DelayedArray](https://bioconductor.org/packages/release/bioc/html/DelayedArray.html). A unified framework for working transparently with on-disk and in-memory array-like datasets
+
+# 01.10.2019
+## R
+- [gghalves](https://cran.r-project.org/web/packages/gghalves/readme/README.html) makes it easy to compose your own half-half plots via ggplot2. Think displaying a boxplot next to jittered points, or violin plots side by side with dotplots.
+- [The 'see' package: beautiful figures for easystats](https://easystats.github.io/blog/posts/see_presentation.knit/)
+- [easystats posts](https://easystats.github.io/blog/posts/)
+- [easystats](https://github.com/easystats). Make R stats easy! https://easystats.github.io/blog/
+- [Data transformation with dplyr::](https://github.com/courtiol/Rguides). 
+I have created this alternative cheat sheet (or guide) for those who already know a little about dplyr. The point of this cheat is to help you figuring out quickly which verb, suffix and arguments to use -- in the context of data transformation applied to a single table of class tibble or data.frame.
+- COOL! Learning [daranzolin/ViewPipeSteps](https://github.com/daranzolin/ViewPipeSteps). Create tabs of `View()` output for each chained pipe
+- pi: predict/infer. [Understanding Bootstrap Confidence Interval Output from the R boot Package](https://blog.methodsconsultants.com/posts/understanding-bootstrap-confidence-interval-output-from-the-r-boot-package/)
+- [Timezone unknown in Rstudio](https://stackoverflow.com/questions/46657826/timezone-unknown-in-rstudio)
+- [RStudio Server not inheriting TZ environment varibale?](https://support.rstudio.com/hc/en-us/community/posts/115007820087-RStudio-Server-not-inheriting-TZ-environment-varibale-)
+- [Docker Container time & timezone (will not reflect changes)](https://serverfault.com/questions/683605/docker-container-time-timezone-will-not-reflect-changes/683651#683651)
+
+## python
+- COOL! [Cheat Sheets for AI, Neural Networks, Machine Learning, Deep Learning & Big Data](https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463). The Most Complete List of Best AI Cheat Sheets
+
+# 30.09.2019
+- [AutoDesk SKETCHBOOK GOES FREE!](https://sketchbook.com/)
+- [КОТ ДУРОВА или ИСТОРИЯ О ТОМ, КАК ПАВЕЛ ДУРОВ ТРЕБУЕТ ОТ МЕНЯ 100 000 000 В СУДЕ](https://medium.com/@anton.rozenberg/friendship-betrayal-claims-3f395bcc95fa)
+
+## R
+- [Tidy forecasting in R](https://robjhyndman.com/hyndsight/fable/)
+- [100% Stacked Chicklets](https://rud.is/b/2019/09/27/100-stacked-chicklets/)
+
+## SAP PI
+- [SAP Process Integration — основы. Часть 1: историческая.](http://sap.pitroff.ru/sap-netweaver/sap-process-integration-osnovyi-chast-1-istoricheskaya/)
+- COOL! [SAP PI/PO Tutorial: Process Integration & Orchestration](https://www.guru99.com/sap-pi-process-integration-tutorial.html)
+- [Python and SAP: Part 1 - Connecting to SAP](http://www.alexbaker.me/code/python-and-sap-part-1-connecting-to-sap)
+- [PyRFC - The Python RFC Connector](https://sap.github.io/PyRFC/)
+The pyrfc Python package provides Python bindings for SAP NetWeaver RFC Library, for a comfortable way of calling ABAP modules from Python and Python modules from ABAP, via SAP Remote Function Call (RFC) protocol.
+- [Quick and easy install of PyRFC on Windows](https://blogs.sap.com/2014/08/01/quick-and-easy-install-of-pyrfc-on-windows/)
+- [SAP PI for Beginners](https://blogs.sap.com/2013/05/21/sap-pi-for-beginners/)
+- [Реализация в SAP PI выгрузки в нестандартных форматах](https://sapland.ru/kb/articles/stats/realizatsiya-v-sap-pi-vigruzki-v-nestandartnih-phormatah.html)
+- [Analytics with SAP and R](https://blogs.sap.com/2012/06/13/analytics-with-sap-and-r/)
+- [onfigure the SAP HANA R Integration with SAP HANA, express edition](https://developers.sap.com/tutorials/mlb-hxe-setup-r.html)
+- [SAP NetWeaver Process Integration](https://en.wikipedia.org/wiki/SAP_NetWeaver_Process_Integration)
+- [Using the SAP PI Directory API from Python](https://blogs.sap.com/2010/12/16/using-the-sap-pi-directory-api-from-python/)
+- [SAP и Python интеграция или как забрать данные из SAP проще](https://habr.com/ru/post/422681/)
+- [Как объединить бэки двух ритейлеров на SAP за 12 часов](https://habr.com/ru/company/mvideo/blog/454918/)
+
+## Linux
+- [Linux Shell Tip: Remove Files With Names That Contains Spaces, And Special Characters Such As -, —](https://www.linux.com/tutorials/linux-shell-tip-remove-files-names-contains-spaces-and-special-characters-such/)
+```
+Tip #5: Remove file by an inode number
+The -i option to ls displays the index number (inode) of each file:
+ls -li
+Use find command as follows to delete the file if the file has inode number 4063242:
+$ find . -inum 4063242 -delete
+OR
+$ find . -inum 4063242 -exec rm -i {} \;
+```
+- [How to delete file with this name on linux: -]???????q {duplicate}](https://superuser.com/questions/229851/how-to-delete-file-with-this-name-on-linux-q)
+`find -maxdepth 1 -inum 47983773 -exec rm -i '{}' \;`
+- [remove file with special characters](https://stackoverflow.com/questions/52438836/remove-file-with-special-characters)
+- COOL! [Delete corrupted folder](https://askubuntu.com/questions/182410/delete-corrupted-folder)
+```
+When a file / dir has special characters and won't delete, you can try to remove it using it's inode number more information on inodes in ext3.
+To do so,
+open a terminal window.
+Change directory cd to the location of the files or directories with the "special characters".
+Run
+ls -lbdRi *
+1312883 drwxrwxr-x 2 me me 4096 Aug 31 11:49 special-character`
+Note the "inode" number (Here 1312883)
+Then run a find and remove on that "inode"
+ find . -inum 1312883 -exec rm -rf {} \;
+ find: ``./special-character': No such file or directory
+and then to make sure that is has gone.
+ ls -lbdRi *
+ ls: cannot access *: No such file or directory
+```
+- [How to: Linux / UNIX Delete or Remove Files With Inode Number](https://www.cyberciti.biz/tips/delete-remove-files-with-inode-number.html)
+
+# 27.09.2019
+## R
+- [Multiple imputation support in Finalfit](https://www.datasurg.net/2019/09/25/multiple-imputation-support-in-finalfit/)
+- [August 2019: "Top 40" R packages](https://rviews.rstudio.com/2019/09/26/august-2019-top-40-r-packages/), 2019-09-26 by Joseph Rickert
+- [101 Data Science Interview Questions, Answers, and Key Concepts](https://blog.datasciencedojo.com/data-science-interview-questions/)
+
 # 26.09.2019
 ## R
 - COOL! [ggpage](https://emilhvitfeldt.github.io/ggpage/). ggpage is a package to create pagestyled visualizations of text based data. It uses ggplot2 and final returns are ggplot2 objects
@@ -963,6 +1112,9 @@ Users can specify their own statistics using a list combined with the skim_with(
 - Ошибка с новым `pander`:
 	- [Possible bug in table.alignment.default: "Wrong number of parameters passed: justify" #269 {Closed}](https://github.com/Rapporter/pander/issues/269)
 	- [Rendering tables with pandoc.table](https://rapporter.github.io/pander/pandoc_table.html)
+- А это кейс как раз про `dfSummary`, открытый мной. [Error in pandoc.table.return(...) : Wrong number of parameters (1 instead of *7*) passed: justify #85 {Closed} iMissile](https://github.com/dcomtois/summarytools/issues/85)
+	- 'Thanks for your feedback. I'll investigate further at some point, but for now the best advice I can give is to load the package using library(summarytools) instead of using summarytools::dfSummary().'
+	- 'Fixed (will be available in next release, install from github in the meantime)'
 
 
 # 05.09.2019
