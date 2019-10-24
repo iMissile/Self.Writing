@@ -134,6 +134,7 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - Style Guides
 	- [The tidyverse style guide](https://style.tidyverse.org/) by Hadley Wickham
 	- [R Style Guide](http://jef.works/R-style-guide/). Best practices for readable, sharable, and verifiable R code. [Исходники](https://github.com/JEFworks/R-style-guide)
+	- [THE ESSENTIALS OF DATA SCIENCE. Knolwedge Discovery Using R and Python](https://essentials.togaware.com/onepagers/)
 	- MS: [One Page R Data Science. Coding with Style](https://essentials.togaware.com/StyleO.pdf) by Graham.Williams@togaware.com, Visit https://essentials.togaware.com/onepagers for more Essentials.
 	- [Google's R Style Guide](https://google.github.io/styleguide/Rguide.xml)
 - ModernDive. [An Introduction to Statistical and Data Sciences via R](https://moderndive.com/)
@@ -154,6 +155,8 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - COOL! [Data Science at the Command Line](https://www.datascienceatthecommandline.com/) by Jeroen Janssens, August 16, 2019
 - [Mike McQuaid. Git In Practice](https://mikemcquaid.com/gitinpractice/)
 	- [MikeMcQuaid/GitInPractice](https://github.com/MikeMcQuaid/GitInPractice). An opinionated intermediate/advanced Git book http://www.manning.com/mcquaid/?a_aid…
+- [Offensive Programming Book](https://neonira.github.io/offensiveProgrammingBook/)
+- [R Programming for Data Science](https://bookdown.org/rdpeng/rprogdatascience/)
 
 
 
@@ -711,6 +714,107 @@ The course covers scalable machine learning and data mining algorithms for large
 - [LSH.9 Locality-sensitive hashing: how it works](https://www.youtube.com/watch?v=Arni-zkqMBA)
 - COOL! [Locality Sensitive Hashing](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134). An effective way of reducing the dimensionality of your data
 
+# 24.10.2019
+## R
+- [Understanding Blockchain Technology by building one in R](https://blog.ephorie.de/understanding-blockchain-technology-by-building-one-in-r)
+- [Super Solutions for Shiny Architecture #5 of 5: Automated Tests](https://appsilon.com/super-solutions-for-shiny-architecture-5-automated-tests/)
+- [linl 0.0.4: Now with footer](linl 0.0.4: Now with footer)
+
+# 23.10.2019
+## Java
+- [ojdkbuild/ojdkbuild](https://github.com/ojdkbuild/ojdkbuild). Community builds using source code from OpenJDK project
+
+# 22.10.2019
+## R
+- [Avoiding embarrassment by testing data assumptions with expectdata](https://dgarmat.github.io/Testing-Data-Assumptions-With-Expectdata/)
+- [UC Business Analytics R Programming Guide. Managing Tibbles](http://uc-r.github.io/tibbles)
+
+# 21.10.2019
+## R
+- COOL! Learning. [I have a project. Why not just use relative paths?](https://malco.io/2018/11/05/why-should-i-use-the-here-package-when-i-m-already-using-projects/)
+- [daqana/dqshiny](https://github.com/daqana/dqshiny). Enhance Shiny Apps with Customizable Modules
+- [Exporting editable plots from R to Powerpoint: making ggplot2 purrr with officer](https://www.brodrigues.co/blog/2018-10-05-ggplot2_purrr_officer/)
+- [Create an editable graph from R software](http://www.sthda.com/english/wiki/create-an-editable-graph-from-r-software)
+- [Create editable Microsoft Office charts from R](https://blog.revolutionanalytics.com/2017/10/office-charts.html)
+- Learning. [HOW TO SAVE A GGPLOT](https://www.datanovia.com/en/blog/how-to-save-a-ggplot/)
+- DataExplorer Error!!! [File d3.min.js not found in resource path Error: pandoc document conversion failed with error 99 #116 {Open}](https://github.com/boxuancui/DataExplorer/issues/116)
+
+
+# 18.10.2019
+## R
+- [Automatic DAG learning - part 1](https://iyarlin.github.io/2019/10/17/automatic_dag_learning_part_1/)
+- [Map coloring: the color scale styles available in the tmap package](https://geocompr.github.io/post/2019/tmap-color-scales/)
+- [rBokeh – Don't be stopped by missing arguments!](https://www.statworx.com/de/blog/rbokeh-dont-be-stopped-by-missing-arguments/)
+- [Productionizing Shiny and Plumber with Pins](https://rviews.rstudio.com/2019/10/17/deploying-data-with-pins/)
+
+# 17.10.2019
+## R
+- COOL! Learning. [Simplifying lists with purrr](https://cfss.uchicago.edu/notes/simplify-nested-lists/)
+- [Recursively simplifying lists using `modify_depth` #601 {Closed}](https://github.com/tidyverse/purrr/issues/601)
+- [nbarrowman/vtree](https://github.com/nbarrowman/vtree). An R package for calculating and drawing variable trees
+= [rstudio-education/stat545](https://github.com/rstudio-education/stat545). A 📖 on data wrangling, exploration, & analysis with R - created by Jenny Bryan, made with bookdown https://stat545.com
+- [Relative paths to dir above root? #29 {Closed}](https://github.com/yihui/xaringan/issues/29)
+- [Introduction to tree diagram with R and ggraph](https://www.r-graph-gallery.com/334-basic-dendrogram-with-ggraph.html)
+- [How to rename elements inside a list of lists in the an efficient manner in R?](https://stackoverflow.com/questions/50663249/how-to-rename-elements-inside-a-list-of-lists-in-the-an-efficient-manner-in-r/50663356)
+- [Set names of a newly created nested list with purrr](https://stackoverflow.com/questions/54186219/set-names-of-a-newly-created-nested-list-with-purrr)
+- COOL! [list.tree](https://www.rdocumentation.org/packages/Hmisc/versions/4.2-0/topics/list.tree). This is a function to pretty-print the structure of any data object (usually a list). It is similar to the R function str.
+- [How do i get R data.tree print to show a value for each level?](https://stackoverflow.com/questions/43124438/how-do-i-get-r-data-tree-print-to-show-a-value-for-each-level)
+
+
+# 16.10.2019
+## R Markdown & slides
+- [Advanced R Markdown Workshop](http://arm.rbind.io/)
+- [Materials for the rstudio::conf 2019 Advanced R Markdown workshop https://arm.rbind.io](https://github.com/rstudio-education/arm-workshop-rsc2019/)
+	- [Meet xaringan (Sharingan). Making slides in R Markdown](https://arm.rbind.io/slides/xaringan.html#1) Alison Hill | rstudio::conf | 2019-01-16
+	- [Advanced R Markdown. Day 2: Customization and Extensions](https://slides.yihui.name/2019-rstudio-conf-rmarkdown-workshop.html#1) Yihui Xie and Hao Zhu, 2019/01/16 @ rstudio::conf, Austin, TX
+	- [Extending R Markdown](http://arm.rbind.io/slides/extend.html#1), Hao Zhu, 2019-01-16
+- [Tips to Reduce the Complexity of Slide Making with Xaringan](https://yongfu.name/2019/04/29/xaringan_tips.html)
+- [xaringanthemer](https://pkg.garrickadenbuie.com/xaringanthemer/index.html). Give your xaringan slides some style with xaringanthemer within your slides.Rmd file without (much) CSS.
+- Ссылки на презентации. [Yihui's Twitter Feeds](https://t.yihui.name/post/2019/01/23/). I'm not a ninja, but sharing my favorite #xaringan tricks we talked about in the Advanced R Markdown workshop at #rstudioconf.
+- [Super Solutions for Shiny Apps #4 of 5: Using R6 Classes](https://appsilon.com/super-solutions-for-shiny-apps-using-r6-classes/)
+- [Automatic data types checking in predictive models](https://blog.datascienceheroes.com/automatic-data-types-checking-in-predictive-models/)
+- [Possibility to knit / render a .Rmd file that has errors in code chunks? {#149}](https://github.com/rstudio/rmarkdown/issues/149)
+I am not sure if the defaults were changed, but you can set the chunk option error = TRUE to enable this behavior. So just add this code chunk at the start of your Rmd file and it should knit even with errors. Make sure to set cache = F, so that the effect persists across sessions.
+
+```{r setup, cache = F}
+knitr::opts_chunk$set(error = TRUE)
+```
+- [RMarkdown tips and tricks. Text Formatting](https://www.amelia.mn/sds291/RMarkdownTips.html)
+- [Include errors in R markdown package vignette](https://stackoverflow.com/questions/39187085/include-errors-in-r-markdown-package-vignette)
+
+
+## PDF
+- [Compress PDF files online](https://www.sodapdf.com/compress-pdf/)
+
+
+
+# 15.10.2019
+## R
+- [Making a background color gradient in ggplot2](https://aosmith.rbind.io/2019/10/14/background-color_gradient/)
+- [Learn How to Dockerize a ShinyApp in 7 Steps](https://www.bjoern-hartmann.de/post/learn-how-to-dockerize-a-shinyapp-in-7-steps/). Jun 18, 2018
+
+# Apache routes
+- [Hawtio](https://hawt.io/). A modular web console for managing your Java stuff.
+- [Граф маршрутов для Apache Camel](https://habr.com/ru/post/435594/)
+- [Apache Camel](https://camel.apache.org/) is an open source integration framework that empowers you to quickly and easily integrate various systems consuming or producing data.
+
+# 14.10.2019
+## R
+- [shinyglide](https://juba.github.io/shinyglide/index.html) is an R package which provides carousel-like or assistant-like components to shiny applications, thanks to the Glide JavaScript library.
+- [Discover Offensive Programming](https://neonira.github.io/zop1)
+- [REPLACE NA IN ALL COLUMNS WITH DPLYR (#RSTATS)](https://rickpackblog.wordpress.com/2017/11/20/replace-na-in-all-columns-with-dplyr-rstats/)
+
+# 11.10.2019
+## Git
+- [Convert Mercurial project to Git - from bitbucket to gitlab](https://www.tikalk.com/posts/2017/06/12/convert-mercurial-project-to-git/)
+- [Convert Mercurial project to Git {duplicate}](https://stackoverflow.com/questions/16037787/convert-mercurial-project-to-git)
+
+## R
+- Learning. Интересные примеры. [Data Visualization with ggplot2 (Part 1) - Chapter 4 and 5](https://rpubs.com/williamsurles/294957)
+- Условное форматирование меток в ggplot. [How to put ggplot2 ticks labels between dollars?](http://stackoverflow.com/questions/20326946/how-to-put-ggplot2-ticks-labels-between-dollars)
+- [Cluster multiple time series using K-means](https://www.brodrigues.co/blog/2019-10-12-cluster_ts/)
+- [#FunDataFriday - gTrendsR](https://www.littlemissdata.com/fdf/gtrendsr)
+
 # 10.10.2019
 ## R
 - [rBokeh – Tipps and Tricks with JavaScript and beyond!](https://www.statworx.com/de/blog/rbokeh-tipps-and-tricks-with-javascript-and-beyond/)
@@ -743,7 +847,7 @@ The course covers scalable machine learning and data mining algorithms for large
 - COOL! [Model Explanation with BMuCaret Shiny Application using the IML and DALEX Packages](https://datascienceplus.com/model-explanation-with-bmucaret-shiny-application-using-the-iml-and-dalex-packages/)
 - [unglue](https://cran.r-project.org/web/packages/unglue/vignettes/unglue.html)
 The package unglue features functions such as unglue(), unglue_data() and unglue_unnest() which provide in many cases a more readable alternative to base regex functions. Simple cases indeed don’t require regex knowledge at all.
-- COOL! Векторный экспорт графики из R. [export: Streamlined Export of Graphs and Data Tables](https://cran.r-project.org/web/packages/export/index.html). Easily export 'R' graphs and statistical output to 'Microsoft Office' / 'LibreOffice', 'Latex' and 'HTML' Documents, using sensible defaults that result in publication-quality output with simple, straightforward commands. 
+- COOL! Векторный экспорт графики из R. [export: Streamlined Export of Graphs and Data Tables](https://cran.r-project.org/web/packages/export/index.html). Easily export 'R' graphs and statistical output to 'Microsoft Office' / 'LibreOffice', 'Latex' and 'HTML' Documents, using sensible defaults that result in publication-quality output with simple, straightforward commands.
 
 # 07.10.2019
 ## R
@@ -752,7 +856,6 @@ The package unglue features functions such as unglue(), unglue_data() and unglue
 - COOL! [Using R: When weird errors occur in packages that used to work, check that you’re not feeding them a tibble](https://onunicornsandgenes.blog/2019/10/06/using-r-when-weird-errors-occur-in-packages-that-used-to-work-check-that-youre-not-feeding-them-a-tibble/)
 - [New vtreat Documentation (Starting with Multinomial Classification)](http://www.win-vector.com/blog/2019/10/new-vtreat-documentation-starting-with-multinomial-classification/)
 - COOL! [Alternative approaches to scaling Shiny with RStudio Shiny Server, ShinyProxy or custom architecture.](https://appsilon.com/alternatives-to-scaling-shiny/)
-- COOL! [ROracle is an Open Source R Package available on CRAN](https://www.oracle.com/database/technologies/appdev/roracle.html)
 - permutations
 	- [permutations: The Symmetric Group: Permutations of a Finite Set](https://cran.r-project.org/web/packages/permutations/). Manipulates invertible functions from a finite set to itself. Can transform from word form to cycle form and back.
 	- [permute: Functions for Generating Restricted Permutations of Data](https://cran.r-project.org/web/packages/permute/). A set of restricted permutation designs for freely exchangeable, line transects (time series), and spatial grid designs plus permutation of blocks (groups of samples) is provided. 'permute' also allows split-plot designs, in which the whole-plots or split-plots or both can be freely-exchangeable or one of the restricted designs. The 'permute' package is modelled after the permutation schemes of 'Canoco 3.1' (and later) by Cajo ter Braak.
@@ -760,6 +863,7 @@ The package unglue features functions such as unglue(), unglue_data() and unglue
 	- [Generating all distinct permutations of a list in R](https://stackoverflow.com/questions/11095992/generating-all-distinct-permutations-of-a-list-in-r)
 
 ## R & Oracle
+- COOL! [ROracle is an Open Source R Package available on CRAN](https://www.oracle.com/database/technologies/appdev/roracle.html)
 - [Can we connect R and RStudio to our Oracle Database?](https://support.rstudio.com/hc/en-us/articles/217800798-Can-we-connect-R-and-RStudio-to-our-Oracle-Database-)
 - [Установка Oracle Instant Client в Debian / Ubuntu](https://debianworld.ru/articles/ustanovka-oracle-instant-client-v-debian-ubuntu/)
 
@@ -773,6 +877,7 @@ Posted on October 3, 2019
 
 ## Linux
 - [В ЧЕМ РАЗНИЦА МЕЖДУ GUNZIP И UNZIP?](http://fliplinux.com/gunzip-unzip.html)
+- [Permissions cannot be restored for a tar](https://superuser.com/questions/1219214/permissions-cannot-be-restored-for-a-tar)
 
 # 03.10.2019
 ## R
@@ -1468,6 +1573,7 @@ E.g. `install.packages("ggplot2", type="source", INSTALL_opts="--with-keep.sourc
 Rscript -e "options(keep.source=TRUE); p <- profvis::profvis({ profvis::pause(0.2) }); htmlwidgets::saveWidget(p, 'test.html')"
 ```
 - [R:case4base - code profiling with base R](https://jozef.io/r004-profiling/)
+- COOL! Learning [daranzolin/ViewPipeSteps](https://github.com/daranzolin/ViewPipeSteps). Create tabs of `View()` output for each chained pipe
 
 
 
@@ -3471,7 +3577,6 @@ __How can I parallelize the following for-loop?__
 - [Maintenance Updates of Future Backends and doFuture](https://www.jottr.org/2019/01/07/maintenance-updates-of-future-backends-and-dofuture/)
 - [RTest: pretty testing of R packages](https://medium.com/@zappingseb/rtest-pretty-testing-of-r-packages-50f50b135650). The specflow and cucumber.io for R. Enabling non-coders to interpret test reports for R-packages, moreover allowing non-coders to create test cases. A step towards simple r package validation.
 - [vdiffr 0.3.0](https://www.tidyverse.org/articles/2019/01/vdiffr-0-3-0/). We’re thrilled to announce that vdiffr 0.3.0 is now on CRAN! vdiffr is a testthat extension that makes it easy to add visual unit tests for R plots
-- [THE ESSENTIALS OF DATA SCIENCE. Knolwedge Discovery Using R and Python](https://essentials.togaware.com/onepagers/)
 
 
 
@@ -4487,66 +4592,6 @@ This site is intended to be a resource for digital analysts who are interested i
 - [Hyperpolyglot. JSON Tools: Jq](http://hyperpolyglot.org/json)
 - ML. [cattonum](https://github.com/bfgray3/cattonum). cattonum (cat to num) provides different ways to encode categorical features as numerics.
 - [Synchronization for R with the flock Package](http://www.quintuitive.com/2014/11/20/synchronization-for-r-with-the-flock-package/)
-
-## LaTeX
-- COOL! [Differences between LuaTeX, ConTeXt and XeTeX](https://tex.stackexchange.com/questions/36/differences-between-luatex-context-and-xetex)
-- [Поддержка \No убрана из babel](https://www.linux.org.ru/forum/general/9583562). 
-Вообще да, можно вставить `\newcommand{\No}{\textnumero}` в преамбулу документа и все будет работать.
-- [The Russian Language in the babel system , Igor A. Kotelnikov](http://ctan.math.illinois.edu/languages/babel/contrib/russian/russianb.pdf).  ... Since earlier versions babel did not support XeLATEX (at least for some languages including Russian), the polyglossia package was generally recommended in the past for use with XeLATEX as a replacement for babel. Nowadays, babel can be used with any engines, including LATEX, PDFLATEX, LuaLATEX, and XeLATEX. Nevertheless some troubles may occur with some languages which have no promptly updated .ldf files.
-- [Polyglossia vs Babel](https://tex.stackexchange.com/questions/88481/polyglossia-vs-babel)
-- [Polyglossia: An Alternative to Babel for XeLEATEX and LuaLATEX](http://mirrors.ibiblio.org/CTAN/macros/xetex/latex/polyglossia/polyglossia.pdf)
-- [How to Write Multilingual Text with Different Scripts in LaTeX](https://www.overleaf.com/latex/examples/how-to-write-multilingual-text-with-different-scripts-in-latex/wfdxqhcyyjxz#.W6D44mj7SUk)
-- [Polyglossia ignores my custom hyphenation](https://tex.stackexchange.com/questions/229915/polyglossia-ignores-my-custom-hyphenation)
-- [Changing language back and forth with polyglossia](https://tex.stackexchange.com/questions/186156/changing-language-back-and-forth-with-polyglossia)
-- [ShareLaTeX XeLaTeX user guide](https://ru.sharelatex.com/learn/latex/XeLaTeX)
-- [Overleaf: What OTF/TTF fonts are supported via fontspec?](https://www.overleaf.com/help/193-what-otf-slash-ttf-fonts-are-supported-via-fontspec#.W6EG_Gj7SUk)
-- [Overleaf: Gallery — Fonts](https://www.overleaf.com/gallery/tagged/fonts#.W6EG-mj7SUk)
-- [Overleaf: I have a custom font I'd like to load to my document. How can I do this?](https://www.overleaf.com/help/73-i-have-a-custom-font-id-like-to-load-to-my-document-how-can-i-do-this#.W6EHzGj7SUk)
-- В Overleaf Возникли проблемы со шрифтом _PT Sans_:
-```
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! fontspec error: "font-not-found"
-! 
-! The font "PT Sans" cannot be found.
-! 
-! See the fontspec documentation for further information.
-! 
-! For immediate help type H <return>.
-!...............................................  
-                                                  
-l.18 \setmainfont{PT Sans}
-```
-	- [TTF fonts are supported via fontspec?](https://www.overleaf.com/learn/latex/Questions/What_OTF/TTF_fonts_are_supported_via_fontspec%3F)
-	- [ptsans – PT Sans font and LATEX support](https://ctan.org/pkg/ptsans)
-	- [Support package for PT Sans](http://mirror.hmc.edu/ctan/obsolete/fonts/ptsans/doc/fonts/ptsans/ptsans.pdf)
-	- [\fontspec all the fonts!](https://www.overleaf.com/articles/slash-fontspec-all-the-fonts/qnsxyhrgjsgs)
-	- [I have a custom font I'd like to load to my document How can I do this?](https://www.overleaf.com/learn/latex/Questions/I_have_a_custom_font_I%27d_like_to_load_to_my_document._How_can_I_do_this%3F)
-```
-Using a custom font
-Add the .ttf or .otf file to your project, by clicking on “Add files” on the top of your file list, and then selecting “Upload from > computer”. Browse to your .ttf/.otf files and upload them.
-Use the following syntax instead for the \setxxxfont commands:
-\setmainfont{[CrimsonText-Regular.ttf]}
-or
-
-\setmainfont{CrimsonText}[ 
-Extension = .ttf,
-UprightFont = *-Regular,
-...]
-You can also declare a new font family to use it in arbitrary situations:
-
-\newfontfamily{\crimson}{CrimsonText}
-[Extension = .ttf, UprightFont = *-Regular, ...]
-{\crimson This text uses the CrimsonText font}
-```
-- Редакторы картинок для LaTeX:
-	- [Detexify](http://detexify.kirelabs.org/classify.html)
-	- [LaTeXDraw](http://latexdraw.sourceforge.net/) is a graphical drawing editor for LaTeX. LaTeXDraw can be used to 1) generate PSTricks code; 2) directly create PDF or PS pictures. LaTeXDraw is developed in Java and thus runs on top of Linux, Windows, and Mac OS X. You need Java 8 to launch LaTeXDraw.
-	- [Math](https://www.mathcha.io/) Online Mathematics Editor, a fast way to write and share mathematics
-	- [GeoGebra Math Apps](https://www.geogebra.org/)
-Get our free online math tools for graphing, geometry, 3D, and more!
-	- [TikzEdt](http://www.tikzedt.org/) is a combined WYSIWYG/text editor designed for editing Tikz code.
-	- [Yichuan Shen's tikzcd-editor](http://tikzcd.yichuanshen.de/)
 
 
 # 13.09.2018
