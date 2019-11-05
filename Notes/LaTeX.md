@@ -8,6 +8,7 @@
 - [How to Write Multilingual Text with Different Scripts in LaTeX](https://www.overleaf.com/latex/examples/how-to-write-multilingual-text-with-different-scripts-in-latex/wfdxqhcyyjxz#.W6D44mj7SUk)
 - [Polyglossia ignores my custom hyphenation](https://tex.stackexchange.com/questions/229915/polyglossia-ignores-my-custom-hyphenation)
 - [Changing language back and forth with polyglossia](https://tex.stackexchange.com/questions/186156/changing-language-back-and-forth-with-polyglossia)
+- Артефакты babel. 'miktex "\bbl@beforestart"'.
 - [ShareLaTeX XeLaTeX user guide](https://ru.sharelatex.com/learn/latex/XeLaTeX)
 - [Overleaf: What OTF/TTF fonts are supported via fontspec?](https://www.overleaf.com/help/193-what-otf-slash-ttf-fonts-are-supported-via-fontspec#.W6EG_Gj7SUk)
 - [Overleaf: Gallery — Fonts](https://www.overleaf.com/gallery/tagged/fonts#.W6EG-mj7SUk)
@@ -118,6 +119,7 @@ Get our free online math tools for graphing, geometry, 3D, and more!
 \graphicspath{{../images/}{./images/}}
 
 ```
+- [Адаптация шаблона отчета о НИР в XeTeX](http://dkhramov.dp.ua/Comp.NIRReportXeTeX#.XbijF5ozaUk)
 
 ## Попытка скомпилировать старые проекты в MikTeX 2019 года
 - ошибка `Package hyperref Warning: Option `pagecolor' is not available anymore.`. Это касалось настройки вида гиперссылок для pdf
@@ -129,3 +131,12 @@ New documents should use the regular `caption' package v3.x instead.`
 - `l.15 \hypersetup
                 {bookmarksnumbered=true}
 ? `
+
+## Проблемы MikTeX
+- При сборке под win возникла ошибка.
+```
+! Undefined control sequence.
+\grffile@org@Ginclude@graphics ... \set@curr@file
+                                                  {#1}\edef \uq@curr@file {\...
+```
+[Undefined control sequence in \graphics after the latest MikTeX update {#380}](https://github.com/MiKTeX/miktex/issues/380)

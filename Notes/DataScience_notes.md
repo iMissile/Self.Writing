@@ -653,7 +653,7 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 	- [R Colors Chart](http://www.endmemo.com/program/R/color.php). R has 657 built-in color names. The function `colors()` will show all of them. All these color names can be used in plot parameters like `col=`. The function `col2rgb()` can convert all these colors into RGB numbers.
 	- [Curtis Kephart. All Named Colors in R](http://www.cazaar.com/r_colors)
 - [EXTRACTING COLOURS FROM YOUR IMAGES WITH IMAGE QUANTIZATION](https://chichacha.netlify.com/2019/01/19/extracting-colours-from-your-images-with-image-quantization/)
-- [Collection of most color palettes in a single R package](https://www.hvitfeldt.me/r/paletteer/)
+- [Collection of most color palettes in a single R package](https://emilhvitfeldt.github.io/paletteer/index.html)
 - BBC Visual ggplot
 	- COOL! [BBC Visual and Data Journalism cookbook for R graphics](https://bbc.github.io/rcookbook/)
 	- [How the BBC Visual and Data Journalism team works with graphics in R](https://medium.com/bbc-visual-and-data-journalism/how-the-bbc-visual-and-data-journalism-team-works-with-graphics-in-r-ed0b35693535)
@@ -714,11 +714,137 @@ The course covers scalable machine learning and data mining algorithms for large
 - [LSH.9 Locality-sensitive hashing: how it works](https://www.youtube.com/watch?v=Arni-zkqMBA)
 - COOL! [Locality Sensitive Hashing](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134). An effective way of reducing the dimensionality of your data
 
+# 03.11.2019
+## R
+- Learning. [Rstudio addin to help you with your regexes (in progress)](https://github.com/gadenbuie/regexplain)
+	- [RegExplain](https://www.garrickadenbuie.com/project/regexplain/) is an RStudio addin slash utility belt for regular expressions. Interactively build your regexp, check the output of common string matching functions, consult the interactive help pages, or use the included resources to learn regular expressions. And more.
+- [jsonify: Convert Between 'R' Objects and Javascript Object Notation (JSON)](https://cran.r-project.org/web/packages/jsonify/index.html)
+Conversions between 'R' objects and Javascript Object Notation (JSON) using the 'rapidjsonr' library <https://CRAN.R-project.org/package=rapidjsonr>.
+- [How to set size for local image using knitr for markdown?](https://stackoverflow.com/questions/15625990/how-to-set-size-for-local-image-using-knitr-for-markdown)
+- [knitr: setting 'out.height' does suddenly not keep aspect ratio](https://stackoverflow.com/questions/50511402/knitr-setting-out-height-does-suddenly-not-keep-aspect-ratio)
+- Learning [String Manipulation in R with stringr](https://rpubs.com/iPhuoc/stringr_manipulation) by Khac Phuoc Le, 1/6/2018
+
+# 01.11.2019
+## R
+- [(Re)introducing skimr v2 - A year in the life of an open source R project](https://ropensci.org/blog/2019/10/29/skimrv2/)
+- Learning. [Happy Git and GitHub for the useR](https://happygitwithr.com/) Jenny Bryan, the STAT 545 TAs, Jim Hester
+- FAST read lines from file:
+	- [How to use fread() as readLines() without auto column detection?](https://stackoverflow.com/questions/32920031/how-to-use-fread-as-readlines-without-auto-column-detection)
+	- [hadley/.gitignore](https://gist.github.com/hadley/6353939). Benchmark different ways of reading a file
+	- [Faster File Reading in R](http://rstudio-pubs-static.s3.amazonaws.com/7942_7282a40236564cb8b64072c8d839ab87.html)
+- COOL! [R and C++. String Encoding and R](https://kevinushey.github.io/blog/2018/02/21/string-encoding-and-r/)
+- [converting ascii number to strings in R](https://stackoverflow.com/questions/23123314/converting-ascii-number-to-strings-in-r)
+
+# 31.10.2019
+## R
+- COOL! [A duck. Giving a look at DuckDB since MonetDBLite was removed from CRAN](https://guillaumepressiat.github.io//blog/2019/10/duckdb)
+- [recharts: An R Interface to ECharts](https://recharts.yihui.name/)
+- [recharts: An R Interface to Baidu ECharts 2](https://madlogos.github.io/recharts/#-en)
+- COOL! [A Future for callr](https://cran.r-project.org/web/packages/future.callr/vignettes/future.callr.html)
+- [HenrikBengtsson/future.callr](https://github.com/HenrikBengtsson/future.callr) 🚀 R package future.callr: A Future API for Parallel Processing using 'callr'
+- [HenrikBengtsson/doFuture](https://github.com/HenrikBengtsson/doFuture) 🚀 R package: doFuture - A Universal Foreach Parallel Adaptor using the Future API of the 'future' Package
+- dplyr select by number. Переименовываем колонки (добавляем префикс)
+	- [dplyr: Renaming variables with rename_](https://stackoverflow.com/questions/41921094/dplyr-renaming-variables-with-rename)
+	- [Copy a column and add a prefix to new column in R with dplyr](https://stackoverflow.com/questions/40929674/copy-a-column-and-add-a-prefix-to-new-column-in-r-with-dplyr)
+	- [Adding prefix or suffix to most data.frame variable names in piped R workflow](https://stackoverflow.com/questions/29948876/adding-prefix-or-suffix-to-most-data-frame-variable-names-in-piped-r-workflow)
+	- [dplyr- renaming sequence of columns with select function](https://stackoverflow.com/questions/31845966/dplyr-renaming-sequence-of-columns-with-select-function/31846038#31846038)
+	- [Column names with spaces or other special characters #2243](https://github.com/tidyverse/dplyr/issues/2243)
+	- [Selecting with dplyr by variable name, some column names are numbers](https://stackoverflow.com/questions/42854958/selecting-with-dplyr-by-variable-name-some-column-names-are-numbers)
+	- [Select multiple columns with `dplyr::select()` with numbers as names](https://stackoverflow.com/questions/38093584/select-multiple-columns-with-dplyrselect-with-numbers-as-names/38093676)
+	- [dplyr: select columns by position in NSE](https://stackoverflow.com/questions/42493381/dplyr-select-columns-by-position-in-nse). Another solution with dplyr :
+```
+DF %>%
+  select(!!c(1, 28:31))
+```
+cf : https://www.rdocumentation.org/packages/dplyr/versions/0.7.6/topics/select
+- [Exclude columns by names in mutate_at in dplyr](https://stackoverflow.com/questions/44532888/exclude-columns-by-names-in-mutate-at-in-dplyr)
+	- `mtcars %>% mutate_at(vars(-mpg, -cyl), max)` or 
+	- `mtcars %>% mutate_at(vars(-one_of("mpg", "cyl")), max)`
+
+# 29.10.2019
+## R
+- [Reconstructing images using PCA](https://kieranhealy.org/blog/archives/2019/10/27/reconstructing-images-using-pca/)
+- COOL! [A Comprehensive Introduction to Command Line for R Users](https://blog.rsquaredacademy.com/command-line-basics-for-r-users/)
+
+# 28.10.2019
+## R
+- data.table, разбиение на колонки (CREP). Если на выходе NULL, то получаем такую ошибку
+```
+Error in `[.data.table`(dt, event_id == "1001", `:=`(c("ProtocolID", "ProtocolVer",  : 
+  Supplied 12 columns to be assigned an empty list (which may be an empty data.table or data.frame since they are lists too). To delete multiple columns use NULL instead. To add multiple empty list columns, use list(list()).
+```
+ - [data.table and error handling using try statement](https://stackoverflow.com/questions/21084624/data-table-and-error-handling-using-try-statement)
+- [Compare two data.frames to find the rows in data.frame 1 that are not present in data.frame 2](https://stackoverflow.com/questions/3171426/compare-two-data-frames-to-find-the-rows-in-data-frame-1-that-are-not-present-in)
+```
+diffobj::
+```
+- [Comparing Dataframes In R Using Comparedf](https://alexsanjoseph.github.io/r/2018/10/03/comparing-dataframes-in-r-using-comparedf)
+NOTE: This is a repost of an article that was first published in 2016
+- [How to delete specific rows and columns from a matrix in a smarter way?](https://stackoverflow.com/questions/12919984/how-to-delete-specific-rows-and-columns-from-a-matrix-in-a-smarter-way/12919994)# 29.10.2019
+- [Advanced tips and tricks with data.table. Assign a column with := named with a character object](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/#create-multiple-columns-with--in-one-statement)
+
+# 25.10.2019
+## Generic
+- Собственный dropbox. [Nextcloud](https://nextcloud.com/). The self-hosted productivity platform that keeps you in control
+
+## R
+- COOL! [How to find the package name in R for a specific function?](https://stackoverflow.com/questions/32397193/how-to-find-the-package-name-in-r-for-a-specific-function)
+```
+require("sos")
+findFn("stri_c")
+```
+- [Search all 18,428 CRAN, Bioconductor and GitHub packages.](https://www.rdocumentation.org/)
+- [Search for anything R related](https://rdrr.io/r/). Find an R package by name, find package documentation, find R documentation, find R functions, search R source code...
+- Про prophet от Генриха:
+```
+Серия русскоязычных статей про Prophet:
+Введение
+https://r-analytics.blogspot.com/2019/08/prophet.html
+Параметры моделей
+https://r-analytics.blogspot.com/2019/09/prophet.html
+Эффекты "праздников"
+https://r-analytics.blogspot.com/2019/09/prophet_13.html
+Сезонные компоненты
+https://r-analytics.blogspot.com/2019/09/prophet-seasonality.html
+Добавление предикторов
+https://r-analytics.blogspot.com/2019/10/prophet-predictors.html
+Выбираем оптимальную модель
+https://r-analytics.blogspot.com/2019/10/prophet-shf.html
+```
+
 # 24.10.2019
 ## R
 - [Understanding Blockchain Technology by building one in R](https://blog.ephorie.de/understanding-blockchain-technology-by-building-one-in-r)
 - [Super Solutions for Shiny Architecture #5 of 5: Automated Tests](https://appsilon.com/super-solutions-for-shiny-architecture-5-automated-tests/)
 - [linl 0.0.4: Now with footer](linl 0.0.4: Now with footer)
+- Интересный блог. [EMIL HVITFELDT](https://www.hvitfeldt.me/blog/). I love to develop and make things in R. Working on visualization styles, modeling techniques and general workflow problems.
+- [readthat](https://github.com/mkearney/readthat). Quickly read text/source from local files and web pages.
+	- [These benchmarks are not very representative #1 {Open}](https://github.com/mkearney/readthat/issues/1)
+```
+bench::press(
+  n = c(1, 10, 100, 1000),
+  {
+    writeLines(rep(read(urls[1]), n), x <- tempfile())
+    bench::mark(
+      readr = readr::read_file(x),
+      readthat = read(x),
+      readChar = readChar(x, file.size(x), useBytes = TRUE)
+    )
+  }
+)
+```
+
+## MS ODBC
+- [Установка Microsoft ODBC Driver for SQL Server на Linux и macOS](https://docs.microsoft.com/ru-ru/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-ver15)
+- [Installing the Microsoft ODBC Driver for SQL Server on Debian Linux with Saltstack](https://www.meinekleinefarm.net/installing-the-microsoft-odbc-driver-for-sql-server-on-debian-linux-with-saltstack/)
+- [репозитории](https://packages.microsoft.com/repos/), 
+https://packages.microsoft.com/repos/microsoft-debian-stretch-prod/dists/stretch/
+
+По цепочке добрались до Packages.gz, там ищем msodbc...
+
+`sudo apt install ./mmm`
+- [SQL Server – How to Get Column Names From a Specific Table?](https://blog.sqlauthority.com/2017/06/29/sql-server-get-column-names-specific-table/)
+- [SQL Server INFORMATION_SCHEMA Views | See if a Table Exists](https://chartio.com/learn/databases/using-information-schema-views-to-check-to-see-if-table-exists-in-sql-server/)
 
 # 23.10.2019
 ## Java
@@ -2934,6 +3060,7 @@ The cyphr package seems to provide a good choice for small research group that s
 - [Сжатие и архивация файлов с помощью Gzip, Zip и Tar](http://www.rhd.ru/docs/manuals/enterprise/RHEL-AS-2.1-Manual/getting-started-guide/s1-zip-tar.html)
 - [GZip every file separately](https://stackoverflow.com/questions/1792078/gzip-every-file-separately)
 - [Check validity of gz file](https://unix.stackexchange.com/questions/359303/check-validity-of-gz-file). `gzip -v -t file.gz`
+- [How do I gunzip all files recursively in a target directory?](https://askubuntu.com/questions/620571/how-do-i-gunzip-all-files-recursively-in-a-target-directory)
 - [Script to create individual zip files for each .txt file it finds and move them after](https://stackoverflow.com/questions/12321167/script-to-create-individual-zip-files-for-each-txt-file-it-finds-and-move-them)
 - `parallel gzip ::: *`
 GNU Parallel is a fantastic tool that should be used far more in this world where CPUs are only getting more cores rather than more speed. There are loads of examples that we would all do well to take 10 minutes to read
@@ -5856,6 +5983,7 @@ Imports non-tabular from Excel files into R. Exposes cell content, position and 
 - COOL! [ Inconsistent parsing failure "no trailing characters e3" #645 {Closed}](https://github.com/tidyverse/readr/issues/645)
 - [How to fork/parallelize process in `purrr::pmap`](https://stackoverflow.com/questions/47552930/how-to-fork-parallelize-process-in-purrrpmap)
 - [Rstudio addin to help you with your regexes (in progress)](https://github.com/gadenbuie/regexplain)
+	- [RegExplain](https://www.garrickadenbuie.com/project/regexplain/) is an RStudio addin slash utility belt for regular expressions. Interactively build your regexp, check the output of common string matching functions, consult the interactive help pages, or use the included resources to learn regular expressions. And more.
 - [RStudio:addins part 5 - Profile your code on keypress in the background, with no dependencies.](https://jozefhajnala.gitlab.io/r/r105-async-profiler/)
 - `lubridate::now()` > 1.7.0 падает без указание tzone:
 	- [How to change the default time zone in R?](https://stackoverflow.com/questions/6374874/how-to-change-the-default-time-zone-in-r). See `?timezone`. Another way to do it, without changing the whole computer time is using the setenv command like this: `Sys.setenv(TZ='GMT')`. После переезда на гугловые библиотеки необходимо добавлять в код установку переменных (либо делать это в системе): `Sys.setenv(TZ="Europe/Moscow")`
