@@ -113,6 +113,7 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - [Efficient R programming](https://bookdown.org/csgillespie/efficientR/)
 - [Efficient R programming](https://csgillespie.github.io/efficientR/), Colin Gillespie, Robin Lovelace, 2017-04-10
 - [R Graphics Cookbook, 2nd edition](https://r-graphics.org/)
+- [R Cookbook, 2nd Edition](https://rc2e.com/), by James (JD) Long, Paul Teetor
 - [Data Science Live Book](https://livebook.datascienceheroes.com/) by Pablo Casas
 - [Mastering Software Development in R](https://bookdown.org/rdpeng/RProgDA/) by Roger D. Peng, Sean Kross, and Brooke Anderson
 - [R Manuals as bookdown](http://colinfay.me/r-manuals/). You’ll find here a list of the R manuals converted to bookdown.
@@ -268,7 +269,16 @@ Survival analysis is long-established within actuarial science but infrequently 
 - [WHAT IS TIDY EVAL AND WHY SHOULD I CARE?](https://www.mango-solutions.com/blog/what-is-tidy-eval-and-why-should-i-care). [Original post](https://thisisnic.github.io/2018/03/29/what-is-tidy-eval-and-why-should-i-care/)
 	- [Exploring Tidy Eval at a Snail's Pace](https://thisisnic.github.io/2018/02/20/exploring-tidy-eval-snails-pace/)
 	- [Using Tidy Eval with dplyr::filter](https://thisisnic.github.io/2018/03/27/using-tidy-eval-with-dplyr-filter/)
-
+- Возник вопрос: как из сконструированной строки получить выражение и выполнить его?
+	- [Non-standard evaluation, how tidy eval builds on base R](https://edwinth.github.io/blog/nse/)
+	- [Advanced R, 2-nd ed. 18 Expressions](https://adv-r.hadley.nz/expressions.html)
+	- [Advanced R. Expressions](http://adv-r.had.co.nz/Expressions.html)
+	- [rlang. Quotation](https://rlang.r-lib.org/reference/quotation.html)
+- tidy eval
+	- [Tidy evaluation in ggplot2](https://www.tidyverse.org/articles/2018/07/ggplot2-tidy-evaluation/)
+	- COOL! [Tidy Eval Meets ggplot2. The Bang Bang Plots](https://www.onceupondata.com/2018/07/06/ggplot-tidyeval/)
+	- [How to use dplyr's enquo and quo_name in a function with tidyr and ggplot2](https://stackoverflow.com/questions/43405843/how-to-use-dplyrs-enquo-and-quo-name-in-a-function-with-tidyr-and-ggplot2)
+- Learning. [Tidyverse evolutions: curly-curly operator and pivoting (feat. tidytuesday data & leaflet visuals)](https://heads0rtai1s.github.io/2019/11/07/tidy-curly-pivot-leaflet/)
 
 
 # data.table
@@ -713,6 +723,50 @@ The course covers scalable machine learning and data mining algorithms for large
 - [LSH Algorithm and Implementation (E2LSH)](https://www.mit.edu/~andoni/LSH/)
 - [LSH.9 Locality-sensitive hashing: how it works](https://www.youtube.com/watch?v=Arni-zkqMBA)
 - COOL! [Locality Sensitive Hashing](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134). An effective way of reducing the dimensionality of your data
+
+# 12.11.2019
+## R
+- [nextcloudr](https://gitlab.com/gwmngilfen/nextcloudr) Rstats library to interact with Nextcloud over the WebDAV API
+- Print tibbles
+	- R4DS. [10 Tibbles](https://r4ds.had.co.nz/tibbles.html)
+```
+nycflights13::flights %>% 
+  print(n = 10, width = Inf)
+```
+	- [Printing tibbles](https://tibble.tidyverse.org/reference/formatting.html)
+	- [Display / print all rows of a tibble (tbl_df)](https://stackoverflow.com/questions/23188900/display-print-all-rows-of-a-tibble-tbl-df)
+
+# 11.11.2019
+## R
+- [Using Spark from R for performance with arbitrary code - Part 4 - Using the lower-level invoke API to manipulate Spark's Java objects from R](https://jozef.io/r204-spark-r-invoke-scala/)
+- [future 1.15.0 - Lazy Futures are Now Launched if Queried](https://www.jottr.org/2019/11/09/resolved-launches-lazy-futures/)
+- COOL! [JohnCoene/grapher](https://github.com/JohnCoene/grapher). ✍️ Interactive graphs https://grapher.network
+- COOL! [How to change facet labels?](https://stackoverflow.com/questions/3472980/how-to-change-facet-labels)
+- [Construct labelling specification](https://ggplot2.tidyverse.org/reference/labeller.html)
+- [htmlwidgets for R. Widget sizing](htmlwidgets.org/develop_sizing.html)
+- [Different ways to set figure size in RMarkdown](https://sebastiansauer.github.io/figure_sizing_knitr/)
+
+# 07.11.2019
+## R
+- [Multiple data imputation and explainability](https://www.brodrigues.co/blog/2019-11-02-mice_exp/)
+- [DATA SCIENTIST OR DATA ENGINEER – WHAT’S THE DIFFERENCE?](https://www.mango-solutions.com/blog/data-scientist-or-data-engineer-whats-the-difference)
+- [A First Look at Confidence Distributions](https://rviews.rstudio.com/2019/11/05/a-first-look-at-confidence-distributions/) by by Joseph Rickert
+- [renv: Project Environments for R](https://blog.rstudio.com/2019/11/06/renv-project-environments-for-r/)
+- Получаем помощь по функциям (в т.ч. ищем их)
+	- ввести в консоль: `??stri_c`
+ 	- установить пакет `"sos"` и ввести в консоль `sos::findFn("stri_c")`
+ 	- перейти на сайт https://www.rdocumentation.org/ и ввести название функции
+	- перейти на сайт https://rdrr.io/ и ввести название функции
+- Как преобразовать и пофиксить кодировку строк в R. `stri_enc_toutf8(validate = TRUE)`
+
+## docker
+- [mounting local home directory in Rstudio docker?](https://stackoverflow.com/questions/28843013/mounting-local-home-directory-in-rstudio-docker)
+- [Mount local volume accessible to R/RStudio in docker (tidyverse)](https://stackoverflow.com/questions/48432299/mount-local-volume-accessible-to-r-rstudio-in-docker-tidyverse)
+
+
+## Process mining
+- Learning [Inductive miner](https://www.futurelearn.com/courses/process-mining/0/steps/15642)
+
 
 # 03.11.2019
 ## R
@@ -1645,10 +1699,6 @@ f_dowle3 = function(DT) {
 - [What are the most common mistakes junior Python developers should avoid?](https://www.quora.com/What-are-the-most-common-mistakes-junior-Python-developers-should-avoid)
 
 ## R
-- tidy eval
-	- [Tidy evaluation in ggplot2](https://www.tidyverse.org/articles/2018/07/ggplot2-tidy-evaluation/)
-	- COOL! [Tidy Eval Meets ggplot2. The Bang Bang Plots](https://www.onceupondata.com/2018/07/06/ggplot-tidyeval/)
-	- [How to use dplyr's enquo and quo_name in a function with tidyr and ggplot2](https://stackoverflow.com/questions/43405843/how-to-use-dplyrs-enquo-and-quo-name-in-a-function-with-tidyr-and-ggplot2)
 - [How to suppress the code but have the plots displayed in R markdown?](https://stackoverflow.com/questions/46414779/how-to-suppress-the-code-but-have-the-plots-displayed-in-r-markdown)
 
 # 31.07.2019
@@ -3357,12 +3407,6 @@ cars #25 rows printed
 - COOL! [datafsm: Estimating Finite State Machine Models from Data](https://cran.r-project.org/web/packages/datafsm/)
 Automatic generation of finite state machine models of dynamic decision-making that both have strong predictive power and are interpretable in human terms. We use an efficient model representation and a genetic algorithm-based estimation process to generate simple deterministic approximations that explain most of the structure of complex stochastic processes. We have applied the software to empirical data, and demonstrated it's ability to recover known data-generating processes by simulating data with agent-based models and correctly deriving the underlying decision models for multiple agent models and degrees of stochasticity.
 
-## R TidyEval
-- Возник вопрос: как из сконструированной строки получить выражение и выполнить его?
-	- [Non-standard evaluation, how tidy eval builds on base R](https://edwinth.github.io/blog/nse/)
-	- [Advanced R, 2-nd ed. 18 Expressions](https://adv-r.hadley.nz/expressions.html)
-	- [Advanced R. Expressions](http://adv-r.had.co.nz/Expressions.html)
-	- [rlang. Quotation](https://rlang.r-lib.org/reference/quotation.html)
 
 # 18.02.2019
 ## R
@@ -4088,7 +4132,7 @@ Provides functionality for client-side navigation of the server side file system
 
 
 # 09.11.2018
-## R
+## R & JSON with jqr
 - COOL! [Speeding Up JSON Parsing in R](https://elucidatablog.wordpress.com/2016/07/13/speeding-up-json-parsing-in-r/). Combining JSON parser: Saving milliseconds of the response time
 Even after this what we had was not fast enough. Parsing JSON in R was now the rate-determining step. The two popular packages in R to handle JSON objects are ‘rjson’ and ‘jsonlite’.
 - [High performance JSON streaming in R: Part 1](https://www.opencpu.org/posts/jsonlite-streaming/)
@@ -4100,6 +4144,7 @@ Even after this what we had was not fast enough. Parsing JSON in R was now the r
 - [jq: Filtering missing keys](https://markhneedham.com/blog/2015/11/14/jq-filtering-missing-keys/)
 - [Return empty string instead of "null" with "jq --raw-output" ? #354 {Closed}](https://github.com/stedolan/jq/issues/354)
 - [Reshaping JSON with jq](https://programminghistorian.org/en/lessons/json-and-jq) by Matthew Lincoln
+- [Data Rectangling with jq](https://www.carlboettiger.info/2017/12/11/data-rectangling-with-jq/)
 
 ## parallel
 - COOL! Как правильно сделать? [R foreach with .combine=rbindlist](https://stackoverflow.com/questions/17411223/r-foreach-with-combine-rbindlist)
