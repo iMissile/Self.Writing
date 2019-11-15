@@ -724,6 +724,20 @@ The course covers scalable machine learning and data mining algorithms for large
 - [LSH.9 Locality-sensitive hashing: how it works](https://www.youtube.com/watch?v=Arni-zkqMBA)
 - COOL! [Locality Sensitive Hashing](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134). An effective way of reducing the dimensionality of your data
 
+# 15.11.2019
+## R
+- [The Colour of Everything](https://www.data-imaginist.com/2019/the-colour-of-everything/). farver announcement package
+- [farver](https://farver.data-imaginist.com/index.html)
+The goal of farver is to provide very fast, vectorised functions for conversion of colours between different colour spaces, colour comparisons (distance between colours), encoding/decoding, and channel manipulation in colour strings. To this end it provides an interface to a modified version of the ColorSpace C++ library developed by Berendea Nicolae.
+- [ymlthis: write YAML for R Markdown, bookdown, blogdown, and more](https://ymlthis.r-lib.org/index.html)
+- [clauswilke/ggtextures](https://github.com/clauswilke/ggtextures). Drawing textured rectangles and bars with ggplot
+- [reading in data](https://kieranhealy.org/blog/archives/2019/11/09/reading-in-data/)
+- [Tidyverse evolutions: curly-curly operator and pivoting (feat. tidytuesday data & leaflet visuals)](https://heads0rtai1s.github.io/2019/11/07/tidy-curly-pivot-leaflet/)
+- [rstudio-education/remaster-the-tidyverse](https://github.com/rstudio-education/remaster-the-tidyverse). This is a planning repository where I develop Tidyverse-related workshops.
+- [How to Find Consecutive Repeats in R](https://masterr.org/r/how-to-find-consecutive-repeats-in-r/)
+- [Using GitHub HTTPS Credentials in WSL 2](https://blog.anaisbetts.org/using-github-credentials-in-wsl2/)
+- [Variational convnets with tfprobability](https://blogs.rstudio.com/tensorflow/posts/2019-11-13-variational-convnet/)
+
 # 12.11.2019
 ## R
 - [nextcloudr](https://gitlab.com/gwmngilfen/nextcloudr) Rstats library to interact with Nextcloud over the WebDAV API
@@ -766,6 +780,10 @@ nycflights13::flights %>%
 
 ## Process mining
 - Learning [Inductive miner](https://www.futurelearn.com/courses/process-mining/0/steps/15642)
+- [An Introduction to the XES Standard](https://fluxicon.com/blog/2010/09/intro-to-xes/) by Christian, 21 Sep '10
+- [IEEE 1849-2016 XES Standard](http://www.xes-standard.org/)
+- [Process Mining in Practice](http://processminingbook.com/)
+Prof. Wil van der Aalst
 
 
 # 03.11.2019
