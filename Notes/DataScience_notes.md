@@ -724,6 +724,15 @@ The course covers scalable machine learning and data mining algorithms for large
 - [LSH.9 Locality-sensitive hashing: how it works](https://www.youtube.com/watch?v=Arni-zkqMBA)
 - COOL! [Locality Sensitive Hashing](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134). An effective way of reducing the dimensionality of your data
 
+# 18.11.2019
+## R
+- [Using R and H2O Isolation Forest For Data Quality](https://laranikalranalytics.blogspot.com/2019/11/using-r-and-h2o-isolation-forest-for.html)
+- [Teach R to see by Borrowing a Brain](https://blog.ephorie.de/teach-r-to-see-by-borrowing-a-brain)
+- [dplyr and Oracle database with odbc on windows](https://guillaumepressiat.github.io//blog/2019/11/oraclyr)
+- [When Cross-Validation is More Powerful than Regularization](http://www.win-vector.com/blog/2019/11/when-cross-validation-is-more-powerful-than-regularization/)
+- [Quicker knitr kables in RStudio notebook](https://rpahl.github.io/r-some-blog/quicker-knitr-kables-in-rstudio-notebook/)
+
+
 # 15.11.2019
 ## R
 - [The Colour of Everything](https://www.data-imaginist.com/2019/the-colour-of-everything/). farver announcement package
@@ -737,6 +746,10 @@ The goal of farver is to provide very fast, vectorised functions for conversion 
 - [How to Find Consecutive Repeats in R](https://masterr.org/r/how-to-find-consecutive-repeats-in-r/)
 - [Using GitHub HTTPS Credentials in WSL 2](https://blog.anaisbetts.org/using-github-credentials-in-wsl2/)
 - [Variational convnets with tfprobability](https://blogs.rstudio.com/tensorflow/posts/2019-11-13-variational-convnet/)
+- [Regex with non-capturing group using stringr in R](https://stackoverflow.com/questions/36237627/regex-with-non-capturing-group-using-stringr-in-r)
+
+## ggplot
+- [Align axis label on the right with ggplot2](https://stackoverflow.com/questions/37488075/align-axis-label-on-the-right-with-ggplot2)
 
 # 12.11.2019
 ## R
@@ -1690,7 +1703,7 @@ f_dowle3 = function(DT) {
 	- [Методы выборки](http://baguzin.ru/wp/metody-vyborki/)
 - [Полезные статьи → Как правильно рассчитать объем выборки?](https://blog.anketolog.ru/2015/12/vyborka/)
 - [Как определить размер выборки?](https://habr.com/ru/post/339798/)
-- [Классические методы статистики: t-критерий Стьюдента](https://r-analytics.blogspot.com/2012/03/t.html)
+- [Классические методы статистики: t-критерий Стьюдента](https://r-analytics.blogspot.com/2012/03/t.html). t.test, Student
 - [Shapiro-Wilk Test for Normality in R](https://jointhedatathread.com/2019/08/08/shapiro-wilk-test-for-normality-in-r/)
 
 ## R
@@ -3167,6 +3180,8 @@ du -sh * | sort -n
 
 # 21.03.2019
 ## R
+- [Differences between the 1900 and the 1904 date system in Excel](https://docs.microsoft.com/en-us/office/troubleshoot/excel/1900-and-1904-date-system)
+- [Microsoft Excel Date Systems for Windows and Mac](https://excelsemipro.com/2010/06/microsoft-excel-date-systems-for-windows-and-mac/)
 - Joel Spolsky Excel bug:
 	- Проблема с високосным годом: [My First BillG Review](https://www.joelonsoftware.com/2006/06/16/my-first-billg-review/)
 	- [Explaining the Excel Bug](https://www.joelonsoftware.com/2007/09/26/explaining-the-excel-bug/)
@@ -3425,6 +3440,65 @@ cars #25 rows printed
 - COOL! [datafsm: Estimating Finite State Machine Models from Data](https://cran.r-project.org/web/packages/datafsm/)
 Automatic generation of finite state machine models of dynamic decision-making that both have strong predictive power and are interpretable in human terms. We use an efficient model representation and a genetic algorithm-based estimation process to generate simple deterministic approximations that explain most of the structure of complex stochastic processes. We have applied the software to empirical data, and demonstrated it's ability to recover known data-generating processes by simulating data with agent-based models and correctly deriving the underlying decision models for multiple agent models and degrees of stochasticity.
 
+# 19.02.2019
+## R prophet
+- от Генриха:
+Серия русскоязычных статей про Prophet:
+Введение
+https://r-analytics.blogspot.com/2019/08/prophet.html
+Параметры моделей
+https://r-analytics.blogspot.com/2019/09/prophet.html
+Эффекты "праздников"
+https://r-analytics.blogspot.com/2019/09/prophet_13.html
+Сезонные компоненты
+https://r-analytics.blogspot.com/2019/09/prophet-seasonality.html
+Добавление предикторов
+https://r-analytics.blogspot.com/2019/10/prophet-predictors.html
+Выбираем оптимальную модель
+https://r-analytics.blogspot.com/2019/10/prophet-shf.html
+
+Завершение сезона сериала про Prophet от Сергея Мастицкого:
+Емкость системы
+https://r-analytics.blogspot.com/2019/10/prophet-capacity.html
+В предыдущих сериях:
+Введение
+https://r-analytics.blogspot.com/2019/08/prophet.html
+Параметры моделей
+https://r-analytics.blogspot.com/2019/09/prophet.html
+Эффекты "праздников"
+https://r-analytics.blogspot.com/2019/09/prophet_13.html
+Сезонные компоненты
+https://r-analytics.blogspot.com/2019/09/prophet-seasonality.html
+Добавление предикторов
+https://r-analytics.blogspot.com/2019/10/prophet-predictors.html
+Выбираем оптимальную модель
+https://r-analytics.blogspot.com/2019/10/prophet-shf.html
+
+- COOL! [Обнаружение аномалий во временных рядах (на примере цен на отели)](https://r-analytics.blogspot.com/2019/11/anomalize.html)
+- [R resources (free courses, books, tutorials, & cheat sheets)](https://paulvanderlaken.com/2017/08/10/r-resources-cheatsheets-tutorials-books/)
+
+## R
+- [pi: predict/infer. Data Pivoting with tidyr](https://blog.methodsconsultants.com/posts/data-pivoting-with-tidyr/)
+- [pi: predict/infer. Understanding Bootstrap Confidence Interval Output from the R boot Package](https://blog.methodsconsultants.com/posts/understanding-bootstrap-confidence-interval-output-from-the-r-boot-package/)
+- [pi: predict/infer. Methods Consultants](https://blog.methodsconsultants.com/tags/rstats/)
+- [luisDVA/unheadr]. Handle Data With Embedded Subheaders
+- [This is what happens when you encode data as cell formatting in Excel](https://luisdva.github.io/rstats/excel-trivia/)
+- [Formatted spreadsheets in R](https://luisdva.github.io/rstats/annotate-mf/)
+- [Prevent R spawned process from exiting on error](https://stackoverflow.com/questions/58896231/prevent-r-spawned-process-from-exiting-on-error)
+- [Modeling Particulate Counts as a Poisson Process in R](https://rileyking.netlify.com/post/modeling-particulate-counts-as-a-poisson-process-in-r/)
+- [WinVector/Examples](https://github.com/WinVector/Examples/tree/master/dplyr).
+- Learning. [WinVector dplyr Quiz](https://github.com/WinVector/Examples/blob/master/dplyr/dplyrQuiz.Rmd)
+
+## Math
+- [Log Normal Distribution](http://mathworld.wolfram.com/LogNormalDistribution.html)
+- [Learn more about Lognormal Distribution](https://www.sciencedirect.com/topics/engineering/lognormal-distribution)
+- [Основы статистики для веб-аналитика: 15 типов распределения вероятностей](https://spark.ru/startup/kinetica/blog/13462/osnovi-statistiki-dlya-veb-analitika-15-tipov-raspredeleniya-veroyatnostej)
+- [Common Probability Distributions: The Data Scientist’s Crib Sheet](https://medium.com/@srowen/common-probability-distributions-347e6b945ce4)
+Reprinted from https://blog.cloudera.com/blog/2015/12/common-probability-distributions-the-data-scientists-crib-sheet/
+- COOL! [Univariate Distribution Relationships](http://www.math.wm.edu/~leemis/chart/UDR/UDR.html)
+- [CFA - Логнормальное распределение вероятностей](https://fin-accounting.ru/cfa/l1/quantitative/cfa-lognormal-probability-distribution)
+- [Breaking Down Apdex](https://dzone.com/articles/breaking-down-apdex)
+
 
 # 18.02.2019
 ## R
@@ -3470,10 +3544,19 @@ AEWH0000224706RU3
 - [Introduction to the New Statistics](https://thenewstatistics.com/itns/)
 - [ACCLAB/dabestr](https://github.com/ACCLAB/dabestr). Data Analysis with Bootstrap Estimation in R
 - [In R & dabestr, how do I get grouped differences correctly?](https://stackoverflow.com/questions/53716149/in-r-dabestr-how-do-i-get-grouped-differences-correctly)
+	- при неравных выборках получаем такое сообщение: 'Some components of ... were not used: ..1'. можем руками уравнять, а можем ничего и не трогать.
+	- Также бывает ошибка
+```
+Error in bca.ci(boot.out, conf, index[1L], L = L, t = t.o, t0 = t0.o, : estimated adjustment 'a' is NA
+```
+I noticed that anything less than the sample size throws the error when running boot with bca – Max Gordon Jul 1 '13 at 6:12
+Точный ответ здесь: ["Why is the error “estimated adjustment 'a' is NA” generated from R boot package when calculating confidence intervals using the bca method?"](https://stats.stackexchange.com/questions/37918/why-is-the-error-estimated-adjustment-a-is-na-generated-from-r-boot-package)
+For other who suffer the problem: According to stat.ethz.ch/pipermail/r-help/2011-February/269006.html the number of repetitions must be larger than the number of data rows. I was mildly suprsed that so many repetitions are necessary... – BurninLeo Oct 11 '15 at 8:56 
+
 - COOL! R: Анализ и визуализация данных. 
 	- [Протокол разведочного анализа данных: проверка на нормальность распределения](https://r-analytics.blogspot.com/2012/06/blog-post_14.html)
 	- [Классические методы статистики: критерий хи-квадрат](http://r-analytics.blogspot.ru/2012/08/blog-post.html)
-	- [Интервальное оценивание параметров распределения](https://r-analytics.blogspot.com/2018/04/blog-post_28.html)
+	- [Интервальное оценивание параметров распределения](https://r-analytics.blogspot.com/2018/04	/blog-post_28.html)
 	- [Эмпирические функции распределения и их сравнение](https://r-analytics.blogspot.com/2018/04/blog-post.html)
 - Nature: [The fickle P value generates irreproducible results](https://www.nature.com/articles/nmeth.3288)
 - [ModernDrive. 8 Sampling](https://moderndive.com/8-sampling.html)
@@ -3623,7 +3706,7 @@ Benchmark your CPU and compare against other CPUs. Also provides functions for o
 	- [First steps with Non-Linear Regression in R](https://datascienceplus.com/first-steps-with-non-linear-regression-in-r/)
 	- [Second step with non-linear regression: adding predictors](https://datascienceplus.com/second-step-with-non-linear-regression-adding-predictors/)
 	- [Nonlinear Regression in R](https://medium.com/wwblog/nonlinear-regression-in-r-f64d126f5fe7)
-- COOL! [A practical Guide to Mixed Models inR](https://ase.tufts.edu/gsc/gradresources/guidetomixedmodelsinr/mixed%20model%20guide.html). I created this guide so that students can learn about important statistical concepts while remaining firmly grounded in the programming required to use statistical tests on real data. I want this to be a guide students can keep open in one window while running R in another window, because it is directly relevant to their work.
+- COOL! [A practical Guide to Mixed Models in R](https://ase.tufts.edu/gsc/gradresources/guidetomixedmodelsinr/mixed%20model%20guide.html). I created this guide so that students can learn about important statistical concepts while remaining firmly grounded in the programming required to use statistical tests on real data. I want this to be a guide students can keep open in one window while running R in another window, because it is directly relevant to their work.
 - COOL! [Generalised Linear Models in R](https://magesblog.com/post/2015-08-04-generalised-linear-models-in-r/). Здесь подробно рассматривается и логнормальная регрессия.
 - Практические примеры с использованием fitdistrplus. [Fitting Distributions](http://www.di.fc.ul.pt/~jpn/r/distributions/fitting.html) by João Neto, October 2015
 - [Fitting a lognormal distribution to truncated data in R](https://stackoverflow.com/questions/16947799/fitting-a-lognormal-distribution-to-truncated-data-in-r)
