@@ -18,6 +18,10 @@ https://tmall.aliexpress.com/item/Edifier-W830BT-1/1000005465785.html
 
 [Backblaze Safety Freeze](https://help.backblaze.com/hc/en-us/articles/217666178-Safety-Freeze-Your-Backup-is-Safety-Frozen-)
 
+# Android: Netrunner
+- [REVIEW: ANDROID: NETRUNNER – TERMINAL DIRECTIVE](https://www.shutupandsitdown.com/review-android-netrunner-terminal-directive/)
+- [Call of Cthulhu LCG. Frogged dice review](https://boardgameby.wordpress.com/2012/02/19/call-of-cthulhu-lcg/)
+
 # LEGO
 - Цель [сайта Bricker.ru](http://bricker.ru/) - предоставить всю необходимую информацию о LEGO и LEGO-совместимых конструкторах. В Интернете множество обзоров различных наборов LEGO, мы их находим и добавляем сюда, чтобы Вы могли не повторять наших поисков.
 - [Купить реплики Лего](https://www.iqreplica.ru/train-series)
@@ -533,6 +537,7 @@ output:
 - COOL presentation. [Advanced R Markdown. Behind the Knit Button](https://slides.yihui.name/2017-rstudio-conf-rmarkdown-Yihui-Xie.html#1) by Yihui Xie, RStudio
 - [Error creating notebook: non-numeric argument to binary operator; RStudio](https://stackoverflow.com/questions/45024350/error-creating-notebook-non-numeric-argument-to-binary-operator-rstudio).
 Мне помогло вытирание кэша в `... \jira-nlp\.Rproj.user\shared\notebooks\160C43F1-jira_analysis`
+- Очень много полезных способов по включению таблиц и картинок в Rmd. [Insert picture/table in R Markdown](https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown)
 
 ## knitr. Запускаем Rmd -> PDF
 Смотрим ссылки ниже. Важный концепт, который держим в голове -- возможность генерации отчетов из .R файлов (не .Rmd) посредством `spin`. `rmarkdown::render()` автоматически выбирает spin\knit в зависимости от расширения файла.
@@ -723,6 +728,13 @@ The course covers scalable machine learning and data mining algorithms for large
 - [LSH Algorithm and Implementation (E2LSH)](https://www.mit.edu/~andoni/LSH/)
 - [LSH.9 Locality-sensitive hashing: how it works](https://www.youtube.com/watch?v=Arni-zkqMBA)
 - COOL! [Locality Sensitive Hashing](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134). An effective way of reducing the dimensionality of your data
+
+# 20.11.2019
+## R
+- [Debugging in R: How to Easily and Efficiently Conquer Errors in Your Code](https://www.inwt-statistics.com/read-blog/debugging-in-r.html)
+- [Insert picture/table in R Markdown](https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown)
+- Интересные сслыки на ML пакеты по прогнозированию временных рядов. [October 2019: "Top 40" New R Packages](https://rviews.rstudio.com/2019/11/18/october-2019-top-40-new-r-packages/) by Joseph Rickert
+
 
 # 18.11.2019
 ## R
