@@ -162,6 +162,7 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 	- [MikeMcQuaid/GitInPractice](https://github.com/MikeMcQuaid/GitInPractice). An opinionated intermediate/advanced Git book http://www.manning.com/mcquaid/?a_aid…
 - [Offensive Programming Book](https://neonira.github.io/offensiveProgrammingBook/)
 - [R Programming for Data Science](https://bookdown.org/rdpeng/rprogdatascience/)
+- [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/)
 
 
 
@@ -729,12 +730,87 @@ The course covers scalable machine learning and data mining algorithms for large
 - [LSH.9 Locality-sensitive hashing: how it works](https://www.youtube.com/watch?v=Arni-zkqMBA)
 - COOL! [Locality Sensitive Hashing](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134). An effective way of reducing the dimensionality of your data
 
+
+# 25.11.2019
+## R
+- [tidync](https://ropensci.github.io/tidync/index.html). The goal of tidync is to ease exploring the contents of a NetCDF source and to simplify the process of data extraction.
+- [A data cube tbl](https://dplyr.tidyverse.org/reference/tbl_cube.html). 
+A cube tbl stores data in a compact array format where dimension names are not needlessly repeated. They are particularly appropriate for experimental data where all combinations of factors are tried (e.g. complete factorial designs), or for storing the result of aggregations. Compared to data frames, they will occupy much less memory when variables are crossed, not nested.
+- [data.table's `cube` function](https://pavolini.net/2019/07/19/data-table-s-cube-function/)
+- [Bayesian Power Analysis with `data.table`, `tidyverse`, and `brms`](https://tysonbarrett.com//jekyll/update/2019/07/21/BayesianSims/)
+- COOL! Learning [Fast and Readable 'If Else' in R](https://tysonbarrett.com/jekyll/update/2019/10/16/filter_mutate_keep/)
+This shows that the new `data.table::fifelse()` is incredibly quick while the filter-mutate-keep approach is also very fast. In most data situations, it is unlikely to matter much. Even with 1,000,000 rows and 5 variables, all only differed by a bit.
+- COOL! Learning [malcolmbarrett/designing.ggplots](https://github.com/malcolmbarrett/designing.ggplots). Install Workshop Materials for Designing ggplots
+- [setTimeLimit](https://www.rdocumentation.org/packages/base/versions/3.6.1/topics/setTimeLimit). Set CPU And/Or Elapsed Time Limits
+Functions to set CPU and/or elapsed time limits for top-level computations or the current session.
+- [How does setTimeLimit work in R?](https://stackoverflow.com/questions/7903497/how-does-settimelimit-work-in-r)
+- [Merge dataframes on timestamps and time intervals using data.table in R](https://codereview.stackexchange.com/questions/224705/merge-dataframes-on-timestamps-and-time-intervals-using-data-table-in-r)
+- [R – Data.Table Rolling Joins](https://www.gormanalysis.com/blog/r-data-table-rolling-joins/). July 26, 2014. R tutorial
+
+
+# 22.11.2019
+## R. Modelling
+- COOL! Ответ Хадли. [Extract Slopes by group, Broom? Dplyr?](https://community.rstudio.com/t/extract-slopes-by-group-broom-dplyr/2751)
+```
+library(tidyverse) #for purrr, tidyr and dplyr
+library(broom)
+
+Orange %>% 
+  split(.$Tree) %>% 
+  map(~lm(age ~ 1 + circumference, data = .x)) %>% 
+  map_df(tidy) %>%
+  filter(term == 'circumference')
+```
+- [broom: a package for tidying statistical models into data frames](http://varianceexplained.org/r/broom-intro/)
+
+## R
+- [ggplot: How to create a discrete color palette that fits the data automatically?](https://stackoverflow.com/questions/13995296/ggplot-how-to-create-a-discrete-color-palette-that-fits-the-data-automatically)
+- [For datasets with many columns, skimr v2 does not behave as documented {#376}](https://github.com/ropensci/skimr/issues/376)
+- [QUICK GUIDE: INTERPRETING SIMPLE LINEAR MODEL OUTPUT IN R](https://feliperego.github.io/blog/2015/10/23/Interpreting-Model-Output-In-R)
+- [Interpret R Linear/Multiple Regression output (lm output point by point), also with Python](https://medium.com/@vineetjaiswal/interpret-r-linear-multiple-regression-output-lm-output-point-by-point-also-with-python-8e53b2ee2a40)
+- COOL! [Using Linear Regression for Predictive Modeling in R](https://www.dataquest.io/blog/statistical-learning-for-predictive-modeling-r/)
+- [Fitting & Interpreting Linear Models in R](http://blog.yhat.com/posts/r-lm-summary.html) by yhat | May 18, 2013
+- COOL! [How do I interpret the summary of a linear model in R?](https://www.quora.com/How-do-I-interpret-the-summary-of-a-linear-model-in-R)
+```
+In general, to interpret a (linear) model involves the following steps.
+
+1. Assess the assumptions of the model. In a linear model, we’d like to check whether there severe violations of linearity, normality, and homoskedasticity. In addition, we may want to check whether the predictors are not too severely intercorrelated (look at multicollinearity-measures such as tolerances, VIFs, or condition indices), and whether there are influential cases or outliers that unduly distort the model (look at standardized residuals, Cook’s distances, etc.)
+2. Assess the fit and significance of the model as a whole. In a linear model, we’d inspect the amount of variance explained, that is the R2 or the adjusted R2, and the ANOVA-test on the model’s significance.
+3. Assess the direction, magnitude, and significance of the individual predictors that comprise the model. In a linear model, we’d interpret the direction and magnitude of the predictors directly via the b-coefficients, that is: “a one unit increase on X1 predicts an increase of b1 on Y”, etc. Note that in non-linear models such as models that contain quadratic terms or interaction effects, the interpretation of effects is trickier. Finally, for any term, it’s significance can be interpreted via p-values reported in the output.
+```
+
+# xaringan
+- [xaringan Tip: Add A Logo to All of Your Slides](https://www.garrickadenbuie.com/blog/xaringan-tip-logo-all-slides/). Here’s a quick tip to help solve a common xaringan problem: adding a logo to all of your slides.
+- [Highlight lines without breaking the code in Xaringan](https://www.garrickadenbuie.com/blog/highlight-lines-without-breaking-the-code-in-xaringan/)
+- [Animate Xaringan Slide Transitions](https://www.garrickadenbuie.com/blog/animate-xaringan-slide-transitions/)
+- [Decouple Code and Output in xaringan slides](https://www.garrickadenbuie.com/blog/decouple-code-and-output-in-xaringan-slides/)
+- [Tips to Reduce the Complexity of Slide Making with Xaringan](https://yongfu.name/2019/04/29/xaringan_tips.html)
+- xaringan & remark.js
+	- [Presentation Ninja](https://github.com/yihui/xaringan)
+	- [xaringan wiki](https://github.com/yihui/xaringan/wiki)
+- [Can I center and middle a figure in html xaringan R](https://stackoverflow.com/questions/53510905/can-i-center-and-middle-a-figure-in-html-xaringan-r)
+
+
+
+# 21.11.2019
+## data.table
+- 2019.11 [Database-like ops benchmark](https://h2oai.github.io/db-benchmark/)
+- andrew brooks. [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)
+- COOL! Learning. [A data.table and dplyr tour](https://atrebas.github.io/post/2019-03-03-datatable-dplyr/) Written by Atrebas on March 3, 2019
+- [data.table pkgdown](https://rdatatable.gitlab.io/data.table/) provides a high-performance version of base R’s data.frame with syntax and feature enhancements for ease of use, convenience and programming speed.
+- [Using .SD for Data Analysis](https://rdatatable.gitlab.io/data.table/articles/datatable-sd-usage.html). 2019-11-20
+- [Text Mining: Very Fast Word Lookup in a Large Dictionary in R with data.table and matrixStats](https://ourednik.info/maps/2019/07/09/text-mining-very-fast-word-lookup-in-a-large-dictionary-in-r-with-data-table-and-matrixstats/)
+- [Start using data.table - 9th July 2019](https://github.com/moj-analytical-services/coffee-and-coding-public/tree/master/2019-07-09%20Start%20using%20datatable)
+- [Left join using data.table](https://stackoverflow.com/questions/34598139/left-join-using-data-table)
+
+## R
+- [No Visible Binding for Global Variable](https://nathaneastwood.github.io/2019/08/18/no-visible-binding-for-global-variable/), 2019-08-18
+
 # 20.11.2019
 ## R
 - [Debugging in R: How to Easily and Efficiently Conquer Errors in Your Code](https://www.inwt-statistics.com/read-blog/debugging-in-r.html)
 - [Insert picture/table in R Markdown](https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown)
 - Интересные сслыки на ML пакеты по прогнозированию временных рядов. [October 2019: "Top 40" New R Packages](https://rviews.rstudio.com/2019/11/18/october-2019-top-40-new-r-packages/) by Joseph Rickert
-
 
 # 18.11.2019
 ## R
