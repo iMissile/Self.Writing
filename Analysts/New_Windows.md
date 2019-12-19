@@ -196,6 +196,7 @@ Using fsutil volume diskfree c:   or  dir command we can get info on one particu
 - [DriveLetterView v1.46](https://www.nirsoft.net/utils/drive_letter_view.html)
 
 ## Tips
+- [Бесплатно продлеваем Kiwi for Gmail](https://dailysoftwaredeal.com/seller/giveaway-kiwi-for-gmail-windows-mac-1-year-license/). Тут идет покупка, если из приложения не доступно пока. https://www.kiwiforgmail.com/. Code: KiwiForFree
 - [Как создать локальную учетную запись в Windows 10](http://windowstips.ru/notes/18570)
 - [4 Ways To Boot Into Safe Mode In Windows 10](http://www.digitalcitizen.life/4-ways-boot-safe-mode-windows-10)
 

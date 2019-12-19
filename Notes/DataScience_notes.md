@@ -163,6 +163,7 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - [Offensive Programming Book](https://neonira.github.io/offensiveProgrammingBook/)
 - [R Programming for Data Science](https://bookdown.org/rdpeng/rprogdatascience/)
 - [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/)
+- [14 Essential Books to Improve Your Tableau and Visualization Skills](https://www.thedataschool.co.uk/pablo-saenz/14-essential-books-to-improve-your-tableau-and-visualization-skills/)
 
 
 
@@ -284,6 +285,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 	- COOL! [Tidy Eval Meets ggplot2. The Bang Bang Plots](https://www.onceupondata.com/2018/07/06/ggplot-tidyeval/)
 	- [How to use dplyr's enquo and quo_name in a function with tidyr and ggplot2](https://stackoverflow.com/questions/43405843/how-to-use-dplyrs-enquo-and-quo-name-in-a-function-with-tidyr-and-ggplot2)
 - Learning. [Tidyverse evolutions: curly-curly operator and pivoting (feat. tidytuesday data & leaflet visuals)](https://heads0rtai1s.github.io/2019/11/07/tidy-curly-pivot-leaflet/)
+- COOL! Learning. [Practical Tidy Evaluation](https://jessecambon.github.io/2019/12/08/practical-tidy-evaluation.html), Dec 8, 2019 • Jesse Cambon
 
 
 # data.table
@@ -730,6 +732,135 @@ The course covers scalable machine learning and data mining algorithms for large
 - [LSH.9 Locality-sensitive hashing: how it works](https://www.youtube.com/watch?v=Arni-zkqMBA)
 - COOL! [Locality Sensitive Hashing](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134). An effective way of reducing the dimensionality of your data
 
+
+# 18.12.2019
+## R
+- COOL! [Difference between `paste`, `str_c`, `str_join`, `stri_join`, `stri_c`, `stri_paste`?](https://stackoverflow.com/questions/53118271/difference-between-paste-str-c-str-join-stri-join-stri-c-stri-pa)
+- COOL! [R vs. Python: What's the best language for Data Science?](https://blog.rstudio.com/2019/12/17/r-vs-python-what-s-the-best-for-language-for-data-science/)
+
+# 17.12.2019
+## R
+- [R Code Optimizer](http://rpubs.com/IACCancu/462493)
+- COOL! [rco - The R Code Optimizer](https://jcrodriguez1989.github.io/rco/). Make your R code run faster! rco analyzes your code and applies different optimization strategies that return an R code that runs faster.
+- COOL! [Debugging in R: How to Easily and Efficiently Conquer Errors in Your Code](https://www.inwt-statistics.com/read-blog/debugging-in-r.html)
+- [noamross/nyhackr-docker-talk](https://github.com/noamross/nyhackr-docker-talk). Slides, Code, and Links to Resources from "Docker for the User," delivered at nyhackr 2018-07-11 https://nyhackr.org/
+- COOL! [topepo/aml-london-2019](https://github.com/topepo/aml-london-2019). Course materials for Applied Machine Learning course in 2019 in London
+- [Left-Hand Side (LHS) and Right-Hand Side (RHS) entities meaning in Git and (Git-Python)](https://stackoverflow.com/questions/57204583/left-hand-side-lhs-and-right-hand-side-rhs-entities-meaning-in-git-and-git)
+
+
+## Spark
+- COOL! [Weakness of the Apache Spark ML library](https://medium.com/@zaleslaw/weakness-of-the-apache-spark-ml-library-41e674103591)
+
+# 16.12.2019
+## R
+- COOL! [validate 0.9.3 is on CRAN](http://www.markvanderloo.eu/yaRb/2019/12/16/validate-0-9-3-is-on-cran/)
+- [A LARGE REPOSITORY OF NETWORKDATA](http://blog.schochastics.net/post/a-large-repository-of-networkdata/)
+- COOL! [How H2O propels data scientists ahead of itself: enhancing Driverless AI models with advanced options, recipes and visualizations](https://novyden.blogspot.com/2019/12/how-h2o-propels-data-scientists-ahead.html)
+- [R 3.6.2 is out, and a preview of R 4.0.0](https://blog.revolutionanalytics.com/2019/12/preview-of-r-400.html)
+- [Confidence and prediction intervals explained... (with a Shiny app!)](https://adisarid.github.io/post/2019-12-13-confidence_prediction_intervals_explained/)
+- [A Collection of Benchmarks in R](https://www.statworx.com/de/blog/a-collection-of-benchmarks-in-r/)
+
+# 13.12.2019
+## R
+- [data.table and parallel computing](https://stackoverflow.com/questions/14759905/data-table-and-parallel-computing)
+- [PARALLELIZING LINEAR REGRESSION OR USING MULTIPLE SOURCES](https://freakonometrics.hypotheses.org/53283)
+- [future.apply - Parallelize Any Base R Apply Function](https://www.jottr.org/2018/06/23/future.apply_1.0.0/)
+- Есть большие нюансы по применению lm вместе в laaply. [Using lapply and the lm function together in R](https://stackoverflow.com/questions/44735052/using-lapply-and-the-lm-function-together-in-r).
+	- [lapply lm r. Advanced R, Second Edition](https://books.google.ru/books?id=5PycDwAAQBAJ&pg=PA222&lpg=PA222&dq=lapply+lm+r&source=bl&ots=2khHY3DPMG&sig=ACfU3U1a2JZPxRAJaG9kCEdjqDYin_UNyQ&hl=ru&sa=X&ved=2ahUKEwibjqSV8bLmAhVhhosKHYbiDq0Q6AEwBHoECAkQAQ#v=onepage&q=lapply%20lm%20r&f=false)
+- ebook ["Applied Econometrics with R"](https://books.google.ru/books?id=86rWI7WzFScC&pg=PA70&lpg=PA70&dq=lapply+lm+r&source=bl&ots=BU_1C4Mt_h&sig=ACfU3U06VOmc8Y0qZdxvCbAAA6zEQkSyrQ&hl=ru&sa=X&ved=2ahUKEwibjqSV8bLmAhVhhosKHYbiDq0Q6AEwBXoECAoQAQ#v=onepage&q=lapply%20lm%20r&f=false)
+- [geom_label_repel() above geom_line()](https://stackoverflow.com/questions/43628889/geom-label-repel-above-geom-line)
+
+## R.future
+- [Henrik Bengtsson](https://www.jottr.org/) MSc CS | PhD Math Stat | Associate Professor | R Foundation | R Consortium
+	- [future 1.9.0 - Output from The Future](https://www.jottr.org/2018/07/23/output-from-the-future/)
+	- [Parallelize a For-Loop by Rewriting it as an Lapply Call](https://www.jottr.org/2019/01/11/parallelize-a-for-loop-by-rewriting-it-as-an-lapply-call/)
+	- [future 1.15.0 - Lazy Futures are Now Launched if Queried](https://www.jottr.org/2019/11/09/resolved-launches-lazy-futures/)
+	- [future.apply - Parallelize Any Base R Apply Function](https://www.jottr.org/2018/06/23/future.apply_1.0.0/)
+
+
+# 12.12.2019
+## R
+- COOL! [HTTP testing in R: overview of tools and new features](https://ropensci.org/technotes/2019/12/11/http-testing/). Record and replay requests with `vcr`
+- [Shiny splash screen using modules and shinyjs](https://www.radmuzom.com/2019/12/11/shiny-splash-screen-using-modules-and-shinyjs/)
+- [Key R Operators](https://www.jumpingrivers.com/blog/r-overview-operators/)
+- COOL! [tidymodels](https://stateofther.github.io/finistR2019/s-tidymodels.html) by Pierre Gestraud, 2019-10-15
+
+# 11.12.2019
+## R
+- [Running different versions of R in the RStudio IDE is, on occasion, required to load older packages.](https://www.bsetmet.com/index.php/2019/05/26/gist-rstudio-vsersions-ubuntu/)
+- COOL! [a journey from basic prototype to production-ready Shiny dashboard](https://appsilon.com/journey-from-basic-prototype-to-production-ready-shiny-dashboard/)
+- [Why I don’t use the Tidyverse](https://blog.ephorie.de/why-i-dont-use-the-tidyverse)
+- [Why R for Data Science – and not Python?](https://blog.ephorie.de/why-r-for-data-science-and-not-python)
+- [A Shiny Intro Survey to an Open Science Course](https://joachim-gassen.github.io/2019/10/a-shiny-intro-survey-to-an-open-science-course/)
+
+
+# 09.12.2019
+## R
+- [Counting Arguments in the Tidyverse](https://www.jumpingrivers.com/blog/counting-arguments-in-the-tidyverse/)
+- [parcats 0.0.1 released](https://www.datisticsblog.com/2019/12/parcats-0-0-1-released/). parcats was released on CRAN. It is an htmlwidget providing bindings to the plotly.js parcats trace, which is not supported by the plotly R package. Also adds marginal histograms for numerical variables.
+- [R Shiny for beginners: annotated starter code](https://heads0rtai1s.github.io/2019/12/05/shiny-starter-code/)
+- COOL! [Emails from R: Blastula 0.3](https://blog.rstudio.com/2019/12/05/emails-from-r-blastula-0-3/). We’re pleased to announce blastula, a package for creating beautiful custom emails in R. At RStudio, we love interactive dashboards, but some situations call for a different communication mechanism.
+
+## DS
+- [Wrangler](http://vis.stanford.edu/wrangler/) is an interactive tool for data cleaning and transformation.
+Spend less time formatting and more time analyzing your data.
+UPDATE: The Stanford/Berkeley Wrangler research project is complete, and the software is no longer actively supported. Instead, we have started a commercial venture, Trifacta. For the most recent version of the tool, see the free Trifacta Wrangler.
+
+## Docker
+- [How does Docker use ports 2375 and 4243?](https://stackoverflow.com/questions/43399998/how-does-docker-use-ports-2375-and-4243)
+- [Шпаргалки по безопасности: Docker](https://habr.com/ru/company/acribia/blog/448704/)
+
+
+# 05.12.2019
+## R
+- [Static and Dynamic Book Exercises with R
+Exercises from the book Analyzing Financial and Economic Data with R](https://www.msperlin.com/blog/post/2019-12-02-dynamic-exercises-afedr/)
+- COOL! [parcats 0.0.1 released](https://www.datisticsblog.com/2019/12/parcats-0-0-1-released/)
+
+# 03.12.2019
+## Queueing theory
+- [Лекция 30. Моделирование систем массового обслуживания](http://stratum.ac.ru/education/textbooks/modelir/lection30.html)
+
+## R
+- COOL! [An example of `base::split()` for looping through groups](https://aosmith.rbind.io/2019/11/27/split-example/)
+- COOL! [Patch it up and send it out](https://www.data-imaginist.com/2019/patch-it-up-and-send-it-out/)
+- [Improve General Regression Neural Network by Monotonic Binning](https://statcompute.wordpress.com/2019/12/01/improve-general-regression-neural-network-by-monotonic-binning/)
+- COOL! [Static and Dynamic Book Exercises with R](https://www.msperlin.com/blog/post/2019-12-02-dynamic-exercises-afedr/)
+
+# 02.12.2019
+- [Как подключить к Dropbox больше трёх устройств. Бесплатно.](https://blog.themarfa.name/kak-podkliuchit-k-dropbox-bolshie-triekh-ustroistv-biesplatno/)
+
+## GIT
+- COOL! [VERSION CONTROL WITH RSTUDIO AND GITHUB](https://aberdeenstudygroup.github.io/studyGroup/lessons/SG-T1-GitHubVersionControl/VersionControl/)
+
+## ML
+- COOL! [UC Business Analytics R Programming Guide. Regression Trees](http://uc-r.github.io/regression_trees)
+- [Grid search in the tidyverse](https://drsimonj.svbtle.com/grid-search-in-the-tidyverse)
+- [A Gentle Introduction to tidymodels](https://rviews.rstudio.com/2019/06/19/a-gentle-intro-to-tidymodels/).  2019-06-19 by Edgar Ruiz
+- [@tidymodels](https://github.com/tidymodels). tidymodels
+- [print decision tree in text nicely / with custom control {r}](https://stackoverflow.com/questions/50823561/print-decision-tree-in-text-nicely-with-custom-control-r)
+partykit prints it neater:
+```
+library(partykit)
+as.party(fit)
+```
+- [Decision Tree in R with Example](https://www.guru99.com/r-decision-trees.html)
+
+
+## R
+- [data-cleaning/useR2019_tutorial](https://github.com/data-cleaning/useR2019_tutorial). Tutorial for useR2019
+- BRODIE GASLAM. An #rstats Blog, Mostly. [A STRATEGY FOR FASTER GROUP STATISTICS](https://www.brodieg.com/2019/02/24/a-strategy-for-faster-group-statisitics/) .Group Statistics in R
+- Python. [dostoevsky](https://pypi.org/project/dostoevsky/). Sentiment analysis library for russian language
+- [Learning Data Science: Sentiment Analysis with Naive Bayes](https://blog.ephorie.de/learning-data-science-sentiment-analysis-with-naive-bayes)
+- [2019-02 SVG In, SVG Out](https://stattech.wordpress.fos.auckland.ac.nz/2019/11/25/2019-02-svg-in-svg-out/)
+- [Introducing sortable to add drag-and-drop to your shiny apps](https://rviews.rstudio.com/2019/11/26/using-sortable-for-drag-and-drop-in-shiny-apps/)
+- [How to easily make a ROC curve in R](https://intobioinformatics.wordpress.com/2019/11/26/how-to-easily-make-a-roc-curve-in-r/)
+- [Cannot find function Split_by in R in purrr package](https://stackoverflow.com/questions/46610800/cannot-find-function-split-by-in-r-in-purrr-package)
+- [R Exploratory Analysis with ggpairs](http://timothykylethomas.me/ggpairs.html) by Kyle Thomas
+- COOL! [R Tips: How to force the Y Axis breaks in ggplot2 to be integers from Stack Overflow: How to display only integer values on an axis using ggplot2](http://rolandtanglao.com/2018/04/30/p1-how-to-force-y-axis-breaks-to-be-integers-in-ggplot2/)
+
+## time-series
+- [Reintroducing tsibble: data tools that melt the clock](https://blog.earo.me/2018/12/20/reintro-tsibble/)
 
 # 25.11.2019
 ## R
@@ -1308,6 +1439,7 @@ Unit: microseconds
   krlmlr() 226270.845 237985.6560 260194.9269 251581.0235 280704.2320 373022.180   100
  andrie1()  87916.021  90437.4820  92791.8923  92636.8420  94448.7040 102543.252   100
 ```
+- [Format number in R with both comma thousands separator and specified decimals](https://stackoverflow.com/questions/29465941/format-number-in-r-with-both-comma-thousands-separator-and-specified-decimals)
 - [Capitalize the first letter of both words in a two word string](https://stackoverflow.com/questions/6364783/capitalize-the-first-letter-of-both-words-in-a-two-word-string)
 - [`purrr::invoke` Invoke functions retired](https://purrr.tidyverse.org/reference/invoke.html).
  
@@ -1771,6 +1903,7 @@ f_dowle3 = function(DT) {
 - [In R is it better to use integer64, numeric, or character for large integer id numbers?](https://stackoverflow.com/questions/35171760/in-r-is-it-better-to-use-integer64-numeric-or-character-for-large-integer-id-n)
 - [R in a 64 bit world](http://www.win-vector.com/blog/2015/06/r-in-a-64-bit-world/)
 - [Double-precision floating-point format](https://en.wikipedia.org/wiki/Double-precision_floating-point_format)
+- Калькулятор для преобразования чисел с плавающей точкойю [Tools & Thoughts. IEEE-754 Floating Point Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
 - [Урок №33. Типы данных с плавающей точкой](https://ravesli.com/urok-33-tip-dannyh-s-plavayushhej-tochkoj-floating-point/)
 Диапазон и точность типов данных с плавающей точкой, согласно стандарту IEEE 754:
 
@@ -1781,6 +1914,7 @@ f_dowle3 = function(DT) {
 16 байт	от ±3.36 x 10^-4932 до ±1.18 x 10^4932	33-36 значащих цифр
 - unixtimestamp: 1565352587 sec -- 10 знаков
 - [Controlling number of decimal digits in print output in R](https://stackoverflow.com/questions/2287616/controlling-number-of-decimal-digits-in-print-output-in-r)
+- [IEEE Standard 754 Floating Point Numbers](https://tutorialspoint.dev/computer-science/computer-organization-and-architecture/ieee-standard-754-floating-point-numbers)
 
 
 # 02.08.2019
@@ -4009,6 +4143,8 @@ This tool enables the user to choose a randomization procedure based on sound sc
 - EARL2017. [Fast and Efficient A/B Testing Analysis with Shiny and SQL](https://earlconf.com/2017/downloads/boston/presentations/EARL2017_-_Boston_-_Charlie_Thompson_-_%20Fast_and_efficient_A:B_testing_analysis.pdf)
 - COOL! [Statistical Inference: A Tidy Approach](https://ismayc.github.io/talks/ness-infer/slide_deck.html#1)
 - COOL! [An Introduction to Statistical and Data Sciences via R](https://moderndive.com/)
+- [A/B Testguide calculator](https://abtestguide.com/calc/)
+- COOL! [A/B Testing with Machine Learning - A Step-by-Step Tutorial](https://www.business-science.io/business/2019/03/11/ab-testing-machine-learning.html)
 
 
 
@@ -4074,6 +4210,12 @@ precision = np.diag(cm) / np.sum(cm, axis = 0)
 ```
 - COOL [What is π?](https://www.quora.com/What-is-math-pi-math/answer/Alon-Amit?ch=10&share=23b7ed43&srid=BGtK)
 
+## Python
+- [nbviewer. A simple way to share Jupyter Notebooks](http://nbviewer.jupyter.org/)
+- [A simple way to view ipython notebook](https://stackoverflow.com/questions/48481290/a-simple-way-to-view-ipython-notebook)
+- [Jupyter Notebook Online in the Cloud, with NumPy, SciPy, matplotlib...](https://paiza.cloud/en/jupyter-notebook-online)
+- [Google Collaboratory](https://colab.research.google.com/notebooks/welcome.ipynb). Welcome to Colaboratory! Colaboratory is a free Jupyter notebook environment that requires no setup and runs entirely in the cloud. See our FAQ for more info.
+
 # 05.12.2018
 ## R
 - [Single-node data aggregation benchmark](https://h2oai.github.io/db-benchmark/)
@@ -4081,12 +4223,11 @@ precision = np.diag(cm) / np.sum(cm, axis = 0)
 - COOL - COOL! [Starspace for NLP #nlproc](http://www.bnosac.be/index.php/blog/84-starspace-for-nlp-nlproc)
 - [Making a Profit with Henry Wan in Arkham Horror: The Card Game](https://ntguardian.wordpress.com/2018/12/03/making-profit-henry-wan-arkham-horror/)
 
-## Python
-- [nbviewer. A simple way to share Jupyter Notebooks](http://nbviewer.jupyter.org/)
-- [A simple way to view ipython notebook](https://stackoverflow.com/questions/48481290/a-simple-way-to-view-ipython-notebook)
-- [Jupyter Notebook Online in the Cloud, with NumPy, SciPy, matplotlib...](https://paiza.cloud/en/jupyter-notebook-online)
-- [Google Collaboratory](https://colab.research.google.com/notebooks/welcome.ipynb). Welcome to Colaboratory! Colaboratory is a free Jupyter notebook environment that requires no setup and runs entirely in the cloud. See our FAQ for more info.
+## ggplot
+- [ggplot2::facet_grid(); facet-specific features](https://rstudio-pubs-static.s3.amazonaws.com/389583_b0df56e5c0954dd6b6762c9f51c7c0b6.html)
 
+## stat
+- [«Правда, чистая правда и статистика» или «15 распределений вероятности на все случаи жизни»](https://habr.com/ru/post/311092/)
 
 # 03.12.2018
 ## R
