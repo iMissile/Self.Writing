@@ -732,6 +732,10 @@ The course covers scalable machine learning and data mining algorithms for large
 - [LSH.9 Locality-sensitive hashing: how it works](https://www.youtube.com/watch?v=Arni-zkqMBA)
 - COOL! [Locality Sensitive Hashing](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134). An effective way of reducing the dimensionality of your data
 
+# 26.11.2019
+## R
+- COOL! [Optimising your R code – a guided example](https://www.statworx.com/at/blog/optimising-your-r-code-a-guided-example/)
+- Learning. [Dates and Times in R Without Losing Your Sanity](https://www.gormanalysis.com/blog/dates-and-times-in-r-without-losing-your-sanity/), April 27, 2018. R tutorial
 
 # 18.12.2019
 ## R
