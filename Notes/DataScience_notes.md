@@ -732,10 +732,60 @@ The course covers scalable machine learning and data mining algorithms for large
 - [LSH.9 Locality-sensitive hashing: how it works](https://www.youtube.com/watch?v=Arni-zkqMBA)
 - COOL! [Locality Sensitive Hashing](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134). An effective way of reducing the dimensionality of your data
 
-# 26.11.2019
+# 27.12.2019
 ## R
-- COOL! [Optimising your R code – a guided example](https://www.statworx.com/at/blog/optimising-your-r-code-a-guided-example/)
-- Learning. [Dates and Times in R Without Losing Your Sanity](https://www.gormanalysis.com/blog/dates-and-times-in-r-without-losing-your-sanity/), April 27, 2018. R tutorial
+- [Data Visualization in R vs. Python](https://www.inwt-statistics.com/read-blog/data-visualization-R-versus-python.html)
+- [Vignette: Downloadable tables in RMarkdown with the DT package](https://martinctc.github.io/blog/vignette-downloadable-tables-in-rmarkdown-with-the-dt-package/)
+
+# 25.12.2019
+## R
+- Взято с Datacamp. [Unicode Character Search](http://www.fileformat.info/info/unicode/char/search.htm)
+- Взято с Datacamp. [Unicode 12.1 Character Code Charts](http://www.unicode.org/charts/)
+- [Plotting rpart trees with the rpart.plot package](http://www.milbo.org/doc/prp.pdf)
+- [Exercise 2: Introduction to phylogenies in R](http://www.phytools.org/Cordoba2017/ex/2/Intro-to-phylogenies.html). This tutorial gives a basic introduction to phylogenies in the R language and statistical computing environment.
+- [Shift geom_bar right (not center-aligned)](https://stackoverflow.com/questions/38752968/shift-geom-bar-right-not-center-aligned)
+
+# 24.12.2019
+## R
+- [data.table: Rolling functions](https://rdatatable.gitlab.io/data.table/reference/froll.html). Fast rolling functions to calculate aggregates on sliding window. Function name and arguments are experimental.
+- [dplyr: Window functions](https://dplyr.tidyverse.org/articles/window-functions.html)ю A window function is a variation on an aggregation function. Where an aggregation function, like sum() and mean(), takes n inputs and return a single value, a window function returns n values. 
+- COOL! [proffer: Profile R Code and Visualize with 'Pprof'](https://r-prof.github.io/proffer/)
+Like similar profiling tools, the 'proffer' package automatically detects sources of slowness in R code.
+- [Confusion between factor levels and factor labels](https://stackoverflow.com/questions/5869539/confusion-between-factor-levels-and-factor-labels)
+
+# 23.12.2019
+## R
+- Очень много интересных пакетов. [November 2019: "Top 40" New R Packages](https://rviews.rstudio.com/2019/12/20/november-2019-top-40-new-r-packages/) 2019-12-20 by Joseph Rickert
+- R & H2O
+	- [Using R and H2O Isolation Forest For Data Quality](https://laranikalranalytics.blogspot.com/2019/12/using-r-and-h2o-isolation-forest.html)
+	- [Using R and H2O to identify product anomalies during the manufacturing process.](https://laranikalranalytics.blogspot.com/2019/03/using-r-and-h2o-to-identify-product.html)
+	- [Using R and H2O Isolation Forest anomaly detection for data quality, further analysis.](https://laranikalranalytics.blogspot.com/2019/12/using-r-and-h2o-isolation-forest.html)
+- [4 great free tools that can make your R work more efficient, reproducible and robust](https://jozef.io/r920-christmas-praise-2019/)
+- [Why to try Practical Data Science with R, 2nd Edition](http://www.win-vector.com/blog/2019/12/why-to-try-practical-data-science-with-r-2nd-edition/)
+- [Analysing large data on your laptop with a database and R](http://freerangestats.info/blog/2019/12/22/nyc-taxis-sql)
+- [mlr receives Open Source Machine Learning Project Award](https://mlr-org.com/docs/mlr-wins-open-source-machine-learning-software-award/)
+- [The Hitchhiker's Guide to Ggplot2 + The Hitchhiker's Guide to Plotnine](https://pacha.hk/blog/2019/12/21/the-hitchhikers-guide-to-ggplot2---the-hitchhikers-guide-to-plotnine/)
+- ['dockr': easy containerization for R](http://smaakage85.netlify.com/2019/12/21/dockr-easy-containerization-for-r/)
+- [reticulate 1.14](https://blog.rstudio.com/2019/12/20/reticulate-1-14/)
+- [Base Graphics – The “Drunk Uncle”  of R ?](https://rollingyours.wordpress.com/2019/12/19/base-graphics-the-drunk-uncle-of-r/)
+- COOL! Масса тепловых карт. [ropenscilabs/smoky](https://github.com/ropenscilabs/smoky) Is it smoky right now?
+This repo was created at rOpenSci #ozunconf19 at University of Sydney Dec 11-13 2019. The contributors to this project were Jen Richmond, John Ormerod, Disha Patil, Lara Easdale, Emily Kothe, Dani Navarro, Dale Machette, Kat Terris, and Lizzie Reid.
+	- [It's actually kinda cool](https://isithotrightnow.com/)
+
+# 22.12.2019
+## R. 2019 Package Calendar
+- [Day 1: Datalegray](https://www.hvitfeldt.me/pkgcal2019/1/)
+- [Day 20: rayrender](https://www.hvitfeldt.me/pkgcal2019/20/)
+- [Day 21: devout](https://www.hvitfeldt.me/pkgcal2019/21/)
+- [Day 22: highcharter](https://www.hvitfeldt.me/pkgcal2019/22/)
+
+# 20.12.2019
+## R
+- [trimmer: Trim an Object](https://cran.r-project.org/web/packages/trimmer/index.html). A lightweight toolkit to reduce the size of a list object.
+	- [smaakage85/trimmer](https://github.com/smaakage85/trimmer) toolkit to trim R objects
+- [dockr: Creation of Lightweight Docker Images for Your Packages](https://cran.r-project.org/web/packages/dockr/index.html)
+	- [smaakage85/dockr](https://github.com/smaakage85/dockr). create lightweight docker image for an R package
+	
 
 # 18.12.2019
 ## R
@@ -865,6 +915,11 @@ as.party(fit)
 
 ## time-series
 - [Reintroducing tsibble: data tools that melt the clock](https://blog.earo.me/2018/12/20/reintro-tsibble/)
+
+# 26.11.2019
+## R
+- COOL! [Optimising your R code – a guided example](https://www.statworx.com/at/blog/optimising-your-r-code-a-guided-example/)
+- Learning. [Dates and Times in R Without Losing Your Sanity](https://www.gormanalysis.com/blog/dates-and-times-in-r-without-losing-your-sanity/), April 27, 2018. R tutorial
 
 # 25.11.2019
 ## R
