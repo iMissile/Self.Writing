@@ -732,6 +732,208 @@ The course covers scalable machine learning and data mining algorithms for large
 - [LSH.9 Locality-sensitive hashing: how it works](https://www.youtube.com/watch?v=Arni-zkqMBA)
 - COOL! [Locality Sensitive Hashing](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134). An effective way of reducing the dimensionality of your data
 
+
+# 05.02.2020
+## R
+- Shiny. COOL! [Alternative approaches to scaling Shiny with RStudio Connect, ShinyProxy or custom architecture.](https://appsilon.com/alternatives-to-scaling-shiny/)
+- [reactR](https://react-r.github.io/reactR/). reactR provides a set of convenience functions for using React in R with htmlwidget constructor templates and local JavaScript dependencies. The React ecosystem is rich with components that can enhance R web and Shiny apps. scaffoldReactWidget() helps build htmlwidgets to integrate these React components as R htmlwidgets. scaffoldReactShinyInput() does the same for Shiny inputs. The local dependency functions are modeled after the html_dependency_* functions from RStudio’s rmarkdown package.
+- GR & googledrive:
+	- Проблема с кодировкой в googledrive. [Explicitly declare UTF-8 encoding {#114}(https://github.com/r-lib/gargle/pull/114)
+	- [Unable to authorize from Rstudio Server #79 {Closed}](https://github.com/tidyverse/googledrive/issues/79)
+- COOL! [{dm} is an R package that provides tools for working with multiple related tables, stored as data frames or in a relational database.](https://krlmlr.github.io/dm/)
+- COL! [traversc/qs](https://github.com/traversc/qs). Quick serialization of R objects
+- В директории `notebook` образуются большие файлы `*.rdf` при работе с большими данными (может ошибка вывода в консоль?). Уж не про это ли? [A tidyverse lover’s intro to RDF](https://cran.r-project.org/web/packages/rdflib/vignettes/rdf_intro.html). Или про это [rdflib: Tools to Manipulate and Query Semantic Data
+The Resource Description Framework, or 'RDF' is a widely used data representation model that forms the cornerstone of the Semantic Web.](https://cran.r-project.org/web/packages/rdflib/index.html) 
+- [Installing older versions of packages](https://support.rstudio.com/hc/en-us/articles/219949047-Installing-older-versions-of-packages)
+
+## unix
+- [Running any command returns “Cannot allocate memory” on Ubuntu Server](https://askubuntu.com/questions/845233/running-any-command-returns-cannot-allocate-memory-on-ubuntu-server)
+To get out of this condition without rebooting, you can trigger the OOM killer manually as follows:
+```
+echo 1 > /proc/sys/kernel/sysrq
+echo f > /proc/sysrq-trigger
+echo 0 > /proc/sys/kernel/sysrq
+```
+
+# 04.02.2020
+## R & xml
+- [Faster XML conversion to Data Frames](https://hopstat.wordpress.com/2014/01/14/faster-xml-conversion-to-data-frames/)
+- [R Fast XML Parsing](https://stackoverflow.com/questions/22888949/r-fast-xml-parsing)
+- [Parsing Metadata with R - A Package Story](https://ropensci.org/blog/2018/10/09/jstor/)
+- [rOpenSci: The jstor package](https://docs.ropensci.org/jstor/)
+- [ropensci/xslt](https://github.com/ropensci/xslt). Extension of xml2 package for xsl transformations https://docs.ropensci.org/xslt
+
+## R
+- COOL! [How to set a variable in .Renviron](https://community.rstudio.com/t/how-to-set-a-variable-in-renviron/5029)
+`usethis :package`: has a useful helper function to modify .Renviron :
+```
+usethis::edit_r_environ() will open your user .Renviron which is in your home
+usethis::edit_r_environ("project") will open the one in your project
+```
+- COOL! [R for Enterprise: Understanding R’s Startup](https://rviews.rstudio.com/2017/04/19/r-for-enterprise-understanding-r-s-startup/), 2017-04-19, by by Sean Lopp
+- [How to create .Renviron file?](https://stackoverflow.com/questions/40788645/how-to-create-renviron-file)
+
+## Tools
+- [Mouse Jiggler](https://mouse-jiggler.ru.uptodown.com/windows) Симулируйте движения указателя мыши
+
+# 03.02.2020
+## Oracle
+- [How do I limit the number of rows returned by an Oracle query after ordering?](https://stackoverflow.com/questions/470542/how-do-i-limit-the-number-of-rows-returned-by-an-oracle-query-after-ordering)
+
+## data.table
+- COOL! andrew brooks. [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/#fast-looping-with-set)
+- COOL! [data.table in R – The Complete Beginners Guide](https://www.machinelearningplus.com/data-manipulation/datatable-in-r-complete-guide/), by Selva Prabhakaran | Posted on November 13, 2019
+- [Delete rows by reference {#635} Open](https://github.com/Rdatatable/data.table/issues/635)
+- list-columns
+	- [Tyson S. Barrett - List-columns in data.table. Nesting and unnesting data tables and vectors](https://osf.io/f6pxw/download)
+	- [TysonStanley/tidyfast](https://github.com/TysonStanley/tidyfast). Fast and efficient alternatives to tidyr functions built on data.table https://tysonbarrett.com/tidyfast/
+	- [(Much) faster unnesting with data.table](https://www.johannesbgruber.eu/post/a-faster-unnest/)
+	- [How to ungroup list columns in data.table?](https://stackoverflow.com/questions/34692260/how-to-ungroup-list-columns-in-data-table)
+	- [Unnest a list column directly into several columns](https://stackoverflow.com/questions/49689927/unnest-a-list-column-directly-into-several-columns)
+- [papaja: Reproducible APA manuscripts with R Markdown](https://crsh.github.io/papaja_man/)
+- [ggbeeswarm: Categorical Scatter (Violin Point) Plots](https://cran.r-project.org/web/packages/ggbeeswarm/)
+Provides two methods of plotting categorical scatter plots such that the arrangement of points within a category reflects the density of data at that region, and avoids over-plotting.
+- [performance: Assessment of Regression Models Performance](https://cran.r-project.org/web/packages/performance/index.html)
+Utilities for computing measures to assess model quality, which are not directly provided by R's 'base' or 'stats' packages. These include e.g. measures like r-squared, intraclass correlation coefficient (Nakagawa, Johnson & Schielzeth (2017) <doi:10.1098/rsif.2017.0213>), root mean squared error or functions to check models for overdispersion, singularity or zero-inflation and more. Functions apply to a large variety of regression models, including generalized linear models, mixed effects models and Bayesian models.
+
+## R
+- COOL! [emilyriederer/Rtistic](https://github.com/emilyriederer/Rtistic). A hackathon-in-a-box / "cookbook" to help build an R package with custom RMarkdown themes and ggplot2 themes & palettes. This looks like a package but it is not intended to be installed as-is. It is a wireframe to be used by an individual or group to create their *own* package!
+- [Get and Set List Elements with magrittr](https://nathaneastwood.github.io/2020/02/01/get-and-set-list-elements-with-magrittr/)
+- [Primitive Functions List](https://nathaneastwood.github.io/2020/02/01/primitive-functions-list/)
+- [A guide to encoding categorical features using R](https://www.radmuzom.com/2020/02/02/a-guide-to-encoding-categorical-features-using-r/)
+- COOL! [Adding time to time in R](https://stackoverflow.com/questions/50866366/adding-time-to-time-in-r)
+
+# 31.01.2020
+## RStudioConf
+- [Welcome to the Wonderful World of TEACUPS, GIRAFFES, & STATISTICS](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html).
+A delightful series of modules to learn statistics and R coding for students, scientists, and stats-enthusiasts.
+- [rstudio::conf 2020 Slides on Futures](https://www.jottr.org/2020/02/01/future-rstudioconf2020-slides/)
+- [The flipbookr package](https://github.com/EvaMaeRey/flipbookr)
+“Flipbooks” are tools that present side-by-side, aligned, incremental code-output evolution via automated code parsing and reconstruction. Like traditional flipbooks, they let the reader watch a scene evolve at their own pace.
+- COOL! [rstudio::conf 2020](https://github.com/rstudio-conf-2020). Workshops at rstudio::conf 2020
+- [On The Glamour of Graphics](https://www.williamrchase.com/slides/assets/player/KeynoteDHTMLPlayer.html)
+- [RStudio::conf 2020 San Francisco Recap](https://appsilon.com/rstudioconf-2020-san-francisco-recap/)
+- [Modern Geospatial Data Analysis with R](http://files.zevross.com/workshops/spatial/slides/html/0-deck-list.html). A workshop by Zev Ross, ZevRoss Spatial Analysis, delivered at the RStudio conference 2020
+
+## R
+- [Do my data follow a normal distribution ? A note on the most widely used distribution and how to test for normality in R](https://www.statsandr.com/blog/do-my-data-follow-a-normal-distribution-a-note-on-the-most-widely-used-distribution-and-how-to-test-for-normality-in-r/)
+- [Some everyday data tasks: a few hints with R (revisited)](https://www.statforbiology.com/2020/stat_r_shapingdata2/)
+
+## Git
+- [How can I delete a commit in Git?](https://www.git-tower.com/learn/git/faq/delete-commits)
+- [17. Удаление коммитов из ветки](https://githowto.com/ru/removing_commits_from_a_branch)
+- COOL! [Remove files from Git commit](https://stackoverflow.com/questions/12481639/remove-files-from-git-commit)
+
+# 30.01.2020
+## R
+- COOL! [Survival Analysis - Fitting Weibull Models for Improving Device Reliability in R](https://rileyking.netlify.com/post/bayesian-modeling-of-censored-and-uncensored-fatigue-data-in-r/)
+- [Data re-Shaping in R and in Python](http://www.win-vector.com/blog/2020/01/data-re-shaping-in-r-and-in-python/)
+- [R as a tool for Systems Administration](https://www.jumpingrivers.com/blog/r-as-a-tool-for-systems-administration/)
+- COOL! [Shiny CRUD](https://www.tychobra.com/posts/2020-01-29-shiny-crud-traditional/) by Andy Merlino, 2020/01/29
+
+# 28.01.2020
+## R
+- [How to create a timeline of your CV in R](https://www.statsandr.com/blog/how-to-create-a-timeline-of-your-cv-in-r/)
+- [R Shiny Application Split Into Multiple Files](https://finderding.com/r-shiny-application-split-into-multiple-files)
+
+# 27.01.2020
+## R
+- [Programming with data.table](https://johnmackintosh.com/2020-01-27-flexible-datatable-functions/). getting started multiple bare variable names in data.table functions
+- COOL! [Using tryCatch for robust R scripts](https://rsangole.netlify.com/post/try-catch/), December 20, 2018
+- [R on Windows: character encoding hell](https://stackoverflow.com/questions/18789330/r-on-windows-character-encoding-hell)
+
+
+# 24.01.2020
+## DS
+- [Top 10 Most Valuable Data Science Skills in 2020](https://blog.journeyofanalytics.com/top-10-datascience-skills-in-2020/)
+- [How to Cut your S3 Cost in Half by Using the S3 Infrequent Access Storage Class](https://www.concurrencylabs.com/blog/save-money-using-s3-infrequent-access/)
+- [Change S3 Bucket Storage class to S3 Infrequent Access](https://stackoverflow.com/questions/46111372/change-s3-bucket-storage-class-to-s3-infrequent-access)
+- [How to create an S3 Bucket and AWS Access Key ID and Secret Access Key for accessing it.](https://medium.com/@shamnad.p.s/how-to-create-an-s3-bucket-and-aws-access-key-id-and-secret-access-key-for-accessing-it-5653b6e54337)
+- [HOW TO GET ACCESS KEY ID AND SECRET ACCESS KEY OF AMAZON S3 ACCOUNT?](https://supsystic.com/documentation/id-secret-access-key-amazon-s3/)
+
+## Math
+- [GeoGebra](https://www.geogebra.org/geometry)
+## R
+- [RStudio Projects and Working Directories: A Beginner's Guide](https://martinctc.github.io/blog/rstudio-projects-and-working-directories-a-beginner's-guide/)
+- COOL! [aws.signature: Amazon Web Services Request Signatures](https://cran.r-project.org/web/packages/aws.signature/index.html)
+Generates version 2 and version 4 request signatures for Amazon Web Services ('AWS') <https://aws.amazon.com/> Application Programming Interfaces ('APIs') and provides a mechanism for retrieving credentials from environment variables, 'AWS' credentials files, and 'EC2' instance metadata. For use on 'EC2' instances, users will need to install the suggested package 'aws.ec2metadata' <https://cran.r-project.org/package=aws.ec2metadata>.
+
+# 21.01.2020
+## R
+- [unpack Your Values in R](http://www.win-vector.com/blog/2020/01/unpack-your-values-in-r/)
+- COOL! [A brief account (via simulation) of the ROC (and its AUC)](https://www.rdatagen.net/post/a-simple-explanation-of-what-the-roc-and-auc-represent/)
+- [Graph Theory 101 with corruption cases in Spain](https://codingclubuc3m.rbind.io/post/2020-01-21/)
+
+# 20.01.2020
+## R
+- [JetBrains Mono. A typeface for developers_](https://www.jetbrains.com/lp/mono/)
+- [Customising your Rprofile](https://www.jumpingrivers.com/blog/customising-your-rprofile/)
+- COOL! [How To Say No To Useless Data Science Projects And Start Working On What You Want](https://www.r-bloggers.com/how-to-say-no-to-useless-data-science-projects-and-start-working-on-what-you-want/)
+	- Исходник. [HOW TO SAY NO TO USELESS DATA SCIENCE PROJECTS AND START WORKING ON WHAT YOU WANT](https://www.remixinstitute.com/blog/how-to-say-no-to-projects/)
+
+## data.table
+- [Finding Overlaps between interval sets / Efficient Overlap Joins](https://stackoverflow.com/questions/25815032/finding-overlaps-between-interval-sets-efficient-overlap-joins)
+- [Introduction to data.table](http://rpubs.com/kykimeng/intro-to-data-table) by Haema Nilakanta & Kim Ky
+
+# 15.01.2020
+## R
+- COOL! [ggrough is an R package that converts your ggplot2 plots to rough/sketchy charts, using the excellent javascript roughjs library.](https://xvrdm.github.io/ggrough/)
+- [yixuan/showtext](https://github.com/yixuan/showtext). Using Fonts More Easily in R Graphs 
+- [showtext: Using Fonts More Easily in R Graphs](https://cran.rstudio.com/web/packages/showtext/vignettes/introduction.html)
+- [rfoaas 2.1.0: New upstream so new access point!](http://dirk.eddelbuettel.com/blog/2020/01/09/#rfoaas_2.1.0)
+	- [FOAAS (Fuck Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fuck off.](https://www.foaas.com/)
+- COOL! [BUILDING COLOR PALETTE PROOFS OF CONCEPT WITH PURRR AND GGPLOT2](https://data-chronicler.netlify.com/2020/01/08/2019-12-30-building-color-palette-proof-of-concepts-with-purrr-and-ggplot2/)
+- COOL! [Custom Templated as and wrap Functions within Rcpp](https://gallery.rcpp.org/articles/custom-templated-wrap-and-as-for-seamingless-interfaces/)
+- [an elegant sampler](https://xianblog.wordpress.com/2020/01/15/an-elegant-sampler/)
+- COOL! [pointblank: Validation of Local and Remote Data Tables](https://cran.r-project.org/web/packages/pointblank/index.html)
+Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'PostgreSQL' and 'MySQL'). Validation pipelines can be made using easily-readable, consecutive validation steps. Upon execution of the validation plan, several reporting options are available. User-defined thresholds for failure rates allow for the determination of appropriate reporting actions.
+	- [pointbank](https://rich-iannone.github.io/pointblank/index.html) With the pointblank package, it’s really easy to validate your data with workflows attuned to your data quality needs. The pointblank philosophy: a set of validation step functions should work seamlessly with data in local data tables and with data in databases.
+	- [pointblank v0.3](https://randr.rocks/post/pointblank-0-3/)
+
+
+# 14.01.2020
+## R
+- COOL! [HOW TO IMPORT PYTHON CLASSES INTO R](http://theautomatic.net/2020/01/14/how-to-import-python-classes-into-r/)
+- COOL! [Sudoku game with R](https://tomaztsql.wordpress.com/2020/01/13/sudoku-game-with-r/)
+- [Keycode converter](https://keycode.info/)
+
+# 13.01.2020
+## R
+- [How to reverse engineer a heat map into its underlying values](https://r-posts.com/how-to-reverse-engineer-a-heat-map-into-its-underlying-values/)
+
+# 09.01.2020
+## BPM
+- [Как подготовить данные для SAP Process Mining by Celonis](https://habr.com/ru/company/sap/blog/462565/)
+- [Патент X5](https://www1.fips.ru/registers-doc-view/fips_servlet?DB=RUPAT&DocNumber=2709282&TypeFile=html)
+
+# 04.01.2020
+## R
+- [Writing Frictionless R Package Wrappers — Building A Basic R Package](https://rud.is/b/2020/01/03/writing-frictionless-r-package-wrappers-building-a-basic-r-package/)
+- [The birthday paradox puzzle: tidy simulation in R](http://varianceexplained.org/r/birthday-problem/)
+- Efficient R programming. [3.3 R startup](https://csgillespie.github.io/efficientR/3-3-r-startup.html#r-startup)
+- COOL! e-book [Efficient R programming](https://csgillespie.github.io/efficientR/index.html#building-the-book) by Colin Gillespie, Robin Lovelace, 2017-04-10
+
+
+# 30.12.2019
+## DS
+- Статья Генриха [EDA под другим углом](https://habr.com/ru/post/480532/)
+	- Мне в своё время сильно помог вот такой инструмент — D3.js Parcoords + DataTables
+После доработки под свои нужды — позволял за секунды визуально находить очень не явные корреляции в датасетах до 100к (дальше начинало тормозить) записей. [Exoplanets II](https://bl.ocks.org/syntagmatic/482706e0638c67836d94b20f0cb37122)
+- [Reliability chapter of ‘evidence-based software engineering’ updated](http://shape-of-code.coding-guidelines.com/2019/12/29/reliability-chapter-of-evidence-based-software-engineering-updated/)
+- [MAPPLY AND MAP IN R](http://theautomatic.net/2019/12/30/mapply-and-map-in-r/)
+- [correlationfunnel](https://business-science.github.io/correlationfunnel/) by Business Science
+The goal of correlationfunnel is to speed up Exploratory Data Analysis (EDA). Here’s how to use it.
+- COOL! [Data exploration with alluvial plots - An introduction to easyalluvial](https://www.datisticsblog.com/2018/10/intro_easyalluvial/)
+- COOL! [Visualising Model Response with easyalluvial](https://www.datisticsblog.com/2019/04/visualising-model-response-with-easyalluvial/)
+- [Find Insights with Ranked Cross-Correlations](https://datascienceplus.com/find-insights-with-ranked-cross-correlations/)
+- COOL! [erblast/easyalluvial](https://github.com/erblast/easyalluvial) create alluvial plots with a single line of code
+- [parcats](https://erblast.github.io/parcats/index.html).
+Create ‘plotly.js’ Parallel Categories Diagrams Using this Htmlwidget and ‘easyalluvial’
+Complex graphical representations of data are best explored using interactive elements. ‘parcats’ adds interactive graphing capabilities to the ‘easyalluvial’ package. The ‘plotly.js’ parallel categories diagrams offer a good framework for creating interactive flow graphs that allow manual drag and drop sorting of dimensions and categories, highlighting single flows and displaying mouse over information. The ‘plotly.js’ dependency is quite heavy and therefore is outsourced into a separate package.
+- [easyalluvial: Generate Alluvial Plots with a Single Line of Code](https://cran.r-project.org/web/packages/easyalluvial/index.html)
+Alluvial plots are similar to sankey diagrams and visualise categorical data over multiple dimensions as flows. (Rosvall M, Bergstrom CT (2010) Mapping Change in Large Networks. PLoS ONE 5(1): e8694. <doi:10.1371/journal.pone.0008694> Their graphical grammar however is a bit more complex then that of a regular x/y plots. The 'ggalluvial' package made a great job of translating that grammar into 'ggplot2' syntax and gives you many options to tweak the appearance of an alluvial plot, however there still remains a multi-layered complexity that makes it difficult to use 'ggalluvial' for explorative data analysis. 'easyalluvial' provides a simple interface to this package that allows you to produce a decent alluvial plot from any dataframe in either long or wide format from a single line of code while also handling continuous data. It is meant to allow a quick visualisation of entire dataframes with a focus on different colouring options that can make alluvial plots a great tool for data exploration.
+
+
 # 27.12.2019
 ## R
 - [Data Visualization in R vs. Python](https://www.inwt-statistics.com/read-blog/data-visualization-R-versus-python.html)
@@ -748,7 +950,7 @@ The course covers scalable machine learning and data mining algorithms for large
 # 24.12.2019
 ## R
 - [data.table: Rolling functions](https://rdatatable.gitlab.io/data.table/reference/froll.html). Fast rolling functions to calculate aggregates on sliding window. Function name and arguments are experimental.
-- [dplyr: Window functions](https://dplyr.tidyverse.org/articles/window-functions.html)ю A window function is a variation on an aggregation function. Where an aggregation function, like sum() and mean(), takes n inputs and return a single value, a window function returns n values. 
+- [dplyr: Window functions](https://dplyr.tidyverse.org/articles/window-functions.html). A window function is a variation on an aggregation function. Where an aggregation function, like sum() and mean(), takes n inputs and return a single value, a window function returns n values. 
 - COOL! [proffer: Profile R Code and Visualize with 'Pprof'](https://r-prof.github.io/proffer/)
 Like similar profiling tools, the 'proffer' package automatically detects sources of slowness in R code.
 - [Confusion between factor levels and factor labels](https://stackoverflow.com/questions/5869539/confusion-between-factor-levels-and-factor-labels)
@@ -819,7 +1021,7 @@ This repo was created at rOpenSci #ozunconf19 at University of Sydney Dec 11-13 
 - [data.table and parallel computing](https://stackoverflow.com/questions/14759905/data-table-and-parallel-computing)
 - [PARALLELIZING LINEAR REGRESSION OR USING MULTIPLE SOURCES](https://freakonometrics.hypotheses.org/53283)
 - [future.apply - Parallelize Any Base R Apply Function](https://www.jottr.org/2018/06/23/future.apply_1.0.0/)
-- Есть большие нюансы по применению lm вместе в laaply. [Using lapply and the lm function together in R](https://stackoverflow.com/questions/44735052/using-lapply-and-the-lm-function-together-in-r).
+- Есть большие нюансы по применению lm вместе в lapply. [Using lapply and the lm function together in R](https://stackoverflow.com/questions/44735052/using-lapply-and-the-lm-function-together-in-r).
 	- [lapply lm r. Advanced R, Second Edition](https://books.google.ru/books?id=5PycDwAAQBAJ&pg=PA222&lpg=PA222&dq=lapply+lm+r&source=bl&ots=2khHY3DPMG&sig=ACfU3U1a2JZPxRAJaG9kCEdjqDYin_UNyQ&hl=ru&sa=X&ved=2ahUKEwibjqSV8bLmAhVhhosKHYbiDq0Q6AEwBHoECAkQAQ#v=onepage&q=lapply%20lm%20r&f=false)
 - ebook ["Applied Econometrics with R"](https://books.google.ru/books?id=86rWI7WzFScC&pg=PA70&lpg=PA70&dq=lapply+lm+r&source=bl&ots=BU_1C4Mt_h&sig=ACfU3U06VOmc8Y0qZdxvCbAAA6zEQkSyrQ&hl=ru&sa=X&ved=2ahUKEwibjqSV8bLmAhVhhosKHYbiDq0Q6AEwBXoECAoQAQ#v=onepage&q=lapply%20lm%20r&f=false)
 - [geom_label_repel() above geom_line()](https://stackoverflow.com/questions/43628889/geom-label-repel-above-geom-line)
