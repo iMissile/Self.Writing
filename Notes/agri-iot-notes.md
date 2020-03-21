@@ -369,6 +369,8 @@ install.packages("BiocMaanger")
 BiocManager::install("magick")
 ```
 
+- Попытка установить `littler` приводит к ошибке `cannot find –lpcre2-8`
+Чинится командой `sudo apt-get install libpcre2-dev`
 
 
 ## Установка RStudio Server

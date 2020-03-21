@@ -1,9 +1,19 @@
 - [The JSON Formatter](https://jsonformatter.curiousconcept.com/)
 - [JSON Editor Online](http://jsoneditoronline.org/)
 - [XML Formatter](https://jsonformatter.org/xml-formatter)
+- SQL
+	- [SQL Formatter](https://codebeautify.org/sqlformatter)
+	- [Online SQL formatter](https://sql-formatter.online/options/formatting)
+	- [Poor Man's T-SQL Formatter](https://poorsql.com/)
 - [Различные онлайн инструменты для проверки и преобразования](https://www.danstools.com/)
 - [Телеграмм бот «Telegram Proxy (SOCKS5) Bot»](https://ru.telegram-store.com/catalog/bots/proxy_socks5_bot/)
 https://tmall.aliexpress.com/item/Edifier-W830BT-1/1000005465785.html
+- [\x and \u Code Decoder](https://khalil-shreateh.com/khalil.shtml/social_applications/web-applications/x-and-u-code-decoder.html)
+- [Unicode Coding](https://www.dcode.fr/unicode-coding)
+- [Универсальный декодер - конвертер кириллицы](http://2cyr.com/decode/?lang=ru)
+
+- [grammarly](https://www.grammarly.com/). Great Writing. Simplified. Compose clear, mistake-free writing that makes the right impression with Grammarly’s writing assistant.
+- [Notion. All-in-one workspace.](https://www.notion.so/)
 
 - [AppSales. Best Android apps on Sale](https://www.app-sales.net)
 - [AppTime. Games & Gadgets](http://app-time.ru/)
@@ -118,6 +128,7 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - [Efficient R programming](https://csgillespie.github.io/efficientR/), Colin Gillespie, Robin Lovelace, 2017-04-10
 - [R Graphics Cookbook, 2nd edition](https://r-graphics.org/)
 - [R Cookbook, 2nd Edition](https://rc2e.com/), by James (JD) Long, Paul Teetor
+- [JavaScript for Data Science](https://js4ds.org/) by Maya Gans, Toby Hodges, and Greg Wilson. Version 4.0 / January 2020
 - [Data Science Live Book](https://livebook.datascienceheroes.com/) by Pablo Casas
 - [Mastering Software Development in R](https://bookdown.org/rdpeng/RProgDA/) by Roger D. Peng, Sean Kross, and Brooke Anderson
 - [R Manuals as bookdown](http://colinfay.me/r-manuals/). You’ll find here a list of the R manuals converted to bookdown.
@@ -128,6 +139,7 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - [The R Inferno](http://www.burns-stat.com/pages/Tutor/R_inferno.pdf)
 - [The Tao Of Programming](http://canonical.org/~kragen/tao-of-programming.html)
 - [R Internals](https://cran.r-project.org/doc/manuals/r-release/R-ints.html)
+- [Mastering Spark with R](https://therinspark.com/)
 - [Field Guide to the R Ecosystem](http://fg2re.sellorm.com/)
 - [Feature Engineering and Selection: A Practical Approach for Predictive Models](http://www.feat.engineering/) by Max Kuhn and Kjell Johnson
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/bookdown.pdf)
@@ -434,6 +446,8 @@ system.time(
     }, keyby=list(x, y)]
 )
 ```
+- [An alternative to mutate_if in data.table](https://stackoverflow.com/questions/56995839/an-alternative-to-mutate-if-in-data-table/56996168)
+- [.EACHI in data.table?](https://stackoverflow.com/questions/27004002/eachi-in-data-table/27004566#27004566)
 
 
 # DS
@@ -644,8 +658,7 @@ https://plot.ly/products/cloud/
 - [Animating Data Transformations III – separate()](https://omnianalytics.io/blog/)
 - COOL! [Under Pi : gganimate test around quadrature of the circle](https://guillaumepressiat.github.io//blog/2019/05/under-pi)
 - [CREATE ANIMATION IN R : LEARN BY EXAMPLES](https://www.listendata.com/2019/05/create-animation-in-r-learn-with.html)
-- [Using R and H2O Isolation Forest to predict car battery failures.](https://laranikalranalytics.blogspot.com/2019/05/predicting-car-battery-failure-with-r.html)
-- [Sun, 26 May 2019: nanotime 0.2.4](http://dirk.eddelbuettel.com/blog/2019/05/26/#nanotime_0.2.4)
+- COOL! [Animated Plots using ggplot and gganimate](https://www.statworx.com/de/blog/animated-plots-using-ggplot-and-gganimate/). Очень много интересных переходов разобрано.
 
 
 ## R color palettes
@@ -731,7 +744,397 @@ The course covers scalable machine learning and data mining algorithms for large
 - [LSH Algorithm and Implementation (E2LSH)](https://www.mit.edu/~andoni/LSH/)
 - [LSH.9 Locality-sensitive hashing: how it works](https://www.youtube.com/watch?v=Arni-zkqMBA)
 - COOL! [Locality Sensitive Hashing](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134). An effective way of reducing the dimensionality of your data
+- COOL! [Hierarchical generalized additive models in ecology: an introduction with mgcv](https://peerj.com/articles/6876/)
+- Интересно поглядеть. [unDocUMeantIt/koRpus](https://github.com/undocumeantit/korpus). An R Package for Text Analysis
+- [Поиск похожих документов с MinHash + LHS](https://habr.com/ru/post/250673/)
 
+
+# 21.03.2020
+## R
+- COOL! [gtsummary](http://www.danieldsjoberg.com/gtsummary/)
+The {gtsummary} package provides an elegant and flexible way to create publication-ready analytical and summary tables using the R programming language. The {gtsummary} package summarizes data sets, regression models, and more, using sensible defaults with highly customizable capabilities.
+
+
+# 20.03.2020
+## data.table
+- COOL! [How do I exclude columns from a data.table?](https://stackoverflow.com/questions/37210489/how-do-i-exclude-columns-from-a-data-table?rq=1)
+- [R – Data.Table Rolling Joins](https://www.gormanalysis.com/blog/r-data-table-rolling-joins/)
+- COOL! Тут есть про rolling join тоже. [Introduction to data.table](https://rpubs.com/kykimeng/intro-to-data-table) by Haema Nilakanta & Kim Ky
+
+## R
+- COOL! [Shiny: Performance tuning with future & promises - Part 1](https://www.eoda.de/en/wissen/blog/shiny-performance-tuning-mit-future-promises-die-theorie)
+- [Extended floating point precision in R with Rmpfr](https://statisticaloddsandends.wordpress.com/2020/03/19/extended-floating-point-precision-in-r-with-rmpfr/)
+- COOL! [Extended floating point precision in R and C](https://www.johndcook.com/blog/2020/03/18/gnu-mpfrr-wrapper/)
+
+## DS
+- COOL! [Rewriting the heart of our sync engine](https://dropbox.tech/infrastructure/rewriting-the-heart-of-our-sync-engine)
+
+# 18.03.2020
+## R
+- COOL! [Tomas Kalibera, Luke Tierney: Socket Connections Update](https://developer.r-project.org/Blog/public/2020/03/17/socket-connections-update/). Starting up a PSOCK cluster is not fast. In R 3.6 on just a few years old laptop with 8 logical cores, running Windows, it takes about 1.7s to start a cluster with 8 nodes:
+- COOL! [A Gentle Introduction to the Comparison Between Null Hypothesis Testing and Bayesian Analysis: Reanalysis of Two Randomized Controlled Trials](https://www.jmir.org/2018/10/e10873)
+- [LASSO REGRESSION USING TIDYMODELS AND #TIDYTUESDAY DATA FOR THE OFFICE](https://juliasilge.com/blog/lasso-the-office/)
+
+## Python
+- [Основы Pandas №3 // Важные методы форматирования данных](https://pythonru.com/uroki/osnovy-pandas-3-vazhnye-metody-formatirovanija-dannyh)
+- [Аналитикам: большая шпаргалка по Pandas](https://smysl.io/blog/pandas/)
+- [Введение в pandas: анализ данных на Python](https://khashtamov.com/ru/pandas-introduction/)
+
+
+# 16.03.2020
+## R
+- COOL! [Nest, not as one-column tibbles, but as vectors](https://community.rstudio.com/t/nest-not-as-one-column-tibbles-but-as-vectors/31536)
+- [Levenshtein type algorithm with numeric vectors](https://stackoverflow.com/questions/23674038/levenshtein-type-algorithm-with-numeric-vectors)
+- [distances: Tools for Distance Metrics](https://cran.r-project.org/web/packages/distances/). Provides tools for constructing, manipulating and using distance metrics.
+- [Distance Measures](https://cran.r-project.org/web/packages/philentropy/vignettes/Distances.html). The distance() function implemented in philentropy is able to compute 46 different distances/similarities between probability density functions (see ?philentropy::distance for details).
+- [jaccard: Test Similarity Between Binary Data using Jaccard/Tanimoto Coefficients](https://cran.r-project.org/web/packages/jaccard/index.html)
+Calculate statistical significance of Jaccard/Tanimoto similarity coefficients for binary data.
+- [R String match for address using stringdist, stringdistmatrix](https://stackoverflow.com/questions/42486172/r-string-match-for-address-using-stringdist-stringdistmatrix)
+- [Calculate Jaccard similarity between each words in 2 vectors](https://stackoverflow.com/questions/40803790/calculate-jaccard-similarity-between-each-words-in-2-vectors)
+- [Jaccard Index Calculation In R](https://jootse84.github.io/notes/jaccard-index-calculation-in-R)
+
+
+# 14.03.2020
+## R
+- COOL! [R: convert XML data to data frame](https://stackoverflow.com/questions/33446888/r-convert-xml-data-to-data-frame/33447328)
+- [A Simple Guide to S3 Methods](https://njtierney.github.io/r/missing%20data/rbloggers/2016/11/06/simple-s3-methods/)
+- [Kurt Hornik: S3 Method Lookup](https://developer.r-project.org/Blog/public/2019/08/19/s3-method-lookup/)
+- Clustering
+	- [Population genetics and genomics in R. Clustering plots](https://grunwaldlab.github.io/Population_Genetics_in_R/clustering_plot.html)
+	- [Cluster Analysis with R. Clustering wines](https://rstudio-pubs-static.s3.amazonaws.com/33876_1d7794d9a86647ca90c4f182df93f0e8.html)
+	- COOL! [Beautiful dendrogram visualizations in R: 5+ must known methods - Unsupervised Machine Learning](http://www.sthda.com/english/wiki/beautiful-dendrogram-visualizations-in-r-5-must-known-methods-unsupervised-machine-learning)
+	- Visually Enforced. a blog by Gaston Sanchez. [7+ ways to plot dendrograms in R](https://www.gastonsanchez.com/visually-enforced/how-to/2012/10/03/Dendrograms/)
+- [Vectorising like a (semi)pro](https://www.data-imaginist.com/2020/vectorizing-like-a-semi-pro/)
+
+## Shiny
+- COOL! Одно из приложений-победителей 2019 Shiny Contest. [An App to Visualize and Share My Dogs' Medical History](https://shiny.rstudio.com/gallery/dog-medical-history.html)
+
+## Predictive maintenance
+- [Machine learning for predictive maintenance: where to start?](https://medium.com/bigdatarepublic/machine-learning-for-predictive-maintenance-where-to-start-5f3b7586acfb)
+- [Azure AI Gallery. Predictive Maintenance Modelling Guide R Notebook](https://gallery.azure.ai/Notebook/Predictive-Maintenance-Modelling-Guide-R-Notebook-1)
+- [How to Implement Machine Learning For Predictive Maintenance](https://towardsdatascience.com/how-to-implement-machine-learning-for-predictive-maintenance-4633cdbe4860)
+- [A Predictive Maintenance Solution in R. H2O](http://doc.5analytics.com/1.5/tutorials.html?A_Predictive_Maintenance_Solution_in_R)
+- [PdM: A predictive maintenance modeling tool implemented as R-package and web-application](https://www.researchgate.net/publication/338098505_PdM_A_predictive_maintenance_modeling_tool_implemented_as_R-package_and_web-application)
+- [Using Survival Analysis for Predictive Maintenance](https://docs.microsoft.com/en-us/archive/msdn-magazine/2019/may/machine-learning-using-survival-analysis-for-predictive-maintenance)
+- [Predictive Maintenance: detect Faults from Sensors with CNN](https://towardsdatascience.com/predictive-maintenance-detect-faults-from-sensors-with-cnn-6c6172613371)
+- [Машинное обучение на максимальной скорости: система Predictive Maintenance за четыре месяца](https://habr.com/ru/company/dataart/blog/453888/)
+
+
+## Data privacy
+- [An Introduction to Differential Privacy](https://www.infoq.com/articles/differential-privacy-intro/)
+- [Normal and Laplace Distributions in Differential Privacy - DZone Big Data](https://dzone.com/articles/normal-and-laplace-distributions-in-differential-p)
+- [Laplace or Gaussian noise and differential privacy](https://www.johndcook.com/blog/2017/09/20/adding-laplace-or-gaussian-noise-to-database/)
+- [R - rbinom; what does the probability of success define if there is N number of observation?](https://stackoverflow.com/questions/31643165/r-rbinom-what-does-the-probability-of-success-define-if-there-is-n-number-of)
+- [](https://s3.amazonaws.com/assets.datacamp.com/production/course_6412/slides/chapter4.pdf)
+- [A 5-Step Guide on incorporating Differential Privacy into your Deep Learning models](https://towardsdatascience.com/a-5-step-guide-on-incorporating-differential-privacy-into-your-deep-learning-models-7861c6c822c4)
+
+# 12.03.2020
+## R
+- Неплохая статья. [PREPROCESSING AND RESAMPLING USING #TIDYTUESDAY COLLEGE DATA](https://juliasilge.com/blog/tuition-resampling/)
+- Пример [сайта](https://shelkariuki.netlify.com/#about), сделанного на `blogdown`. Неплохо.
+- [roxygen2 7.1.0](https://www.tidyverse.org/blog/2020/03/roxygen2-7-1-0/)
+
+# 11.03.2020
+## R
+- [Comparing Machine Learning Algorithms for Predicting Clothing Classes: Part 3](https://rviews.rstudio.com/2020/03/10/comparing-machine-learning-algorithms-for-predicting-clothing-classes-part-3/), 2020-03-10 by Florianne Verkroost
+- [Want to Build an AI Model for Your Business? Read this.](https://appsilon.com/want-to-build-an-ai-model-for-your-business-read-this/)
+
+## ROracle
+- [Кириллица в клиенте Oracle Database](https://gee12.space/kirillica-v-subd-oracle/)
+- [Использование русского языка и символов кириллицы в базах данных Oracle](http://i-fast.ru/node/367)
+- Вот как заработало: (кириллица на linux) (из скрипта в начале надо было удалить символ `;`. Обнаружено путм просмотра фактически отправляемого запроса из SQL Developer
+```{r eval=TRUE}
+# тестовое подключение к JDA Oracle
+
+# Sys.setenv("NLS_LANG"="RUSSIAN_RUSSIA.CL8MSWIN1251")
+# Sys.setenv("LANG"="RUSSIAN_RUSSIA.CL8MSWIN1251")
+Sys.setenv("NLS_LANG"="RUSSIAN_RUSSIA.UTF8")
+Sys.setenv("LANG"="RUSSIAN_RUSSIA.UTF8")
+Sys.getenv("NLS_LANG")
+
+# see example at http://www.oralytics.com/2015/05/loading-json-data-into-oracle-using.html
+host <- "JDA_FR_TNS.XX.ru" # full name!
+port <- 1521
+username <- "ROUSER"
+password <- "@pass"
+service <- "JDAFR_PRIMARY"
+drv <- dbDriver("Oracle")
+# "USER/pass@//JDA_FR_TNS:1521/JDAFR_PRIMARY"
+
+# https://www.connectionstrings.com/oracle/
+# Data Source=username/password@//myserver:1521/my.service.com;
+
+connect_string <- paste(
+"(DESCRIPTION=",
+"(ADDRESS=(PROTOCOL=tcp)(HOST=", host, ")(PORT=", port, "))",
+"(CONNECT_DATA=(SERVICE_NAME=", service, ")))", sep = "")
+
+connect_string <- glue("{username}/{password}@//JDA_FR_TNS:1521/JDAFR_PRIMARY;")
+connect_string <- glue("{username}/{password}@//{host}:1521/JDAFR_PRIMARY")
+# рабочий вариант
+connect_string <- glue("{host}:1521/{service}")
+
+# When unicode_as_utf8 is set to FALSE, NCHAR, NVARCHAR and NCLOB data is fetched
+# using the character set specified by the NLS_LANG setting. By default, unicode_as_utf8 is set to TRUE.
+
+conn <- dbConnect(dbDriver("Oracle", unicode_as_utf8 = TRUE), username = "ROUSER", password = "HpDKvFJ", dbname = connect_string)
+dbGetInfo(drv)
+
+sql_req <- read_file(here::here("sql", "script-test.sql"), 
+                     locale = locale("ru", encoding = "UTF-8", tz = "Europe/Moscow"))
+
+# sql_req <- read_file(here::here("sql", "oracle_test.sql"), 
+#                      locale = locale("ru", encoding = "UTF-8", tz = "Europe/Moscow"))
+
+dbSendQuery(conn, sql_req)
+# dbSendQuery(conn, stringi::stri_encode(sql_req, to = "windows-1251"))
+# stop()
+
+# flog.info(paste("SQL query:", sql_req))
+tic("Загрузка из Oracle JDA")
+# [ORA-00911 ERROR MESSAGE](https://www.tekstream.com/resource-center/ora-00911-invalid-character/) 
+# [ROracle is not handling Unicode](https://stackoverflow.com/questions/28723003/roracle-is-not-handling-unicode/28723835)
+# [Encoding in ROracle](https://stackoverflow.com/questions/50366322/encoding-in-roracle)
+# [How do I limit the number of rows returned by an Oracle query after ordering?](https://stackoverflow.com/questions/470542/how-do-i-limit-the-number-of-rows-returned-by-an-oracle-query-after-ordering)
+# [](https://www.databaseadm.com/article/13987871/ROracle+encoding+issue+in+the+query)
+raw_df <- # dbGetQuery(conn, stri_encode(sql_req, to = "UTF-8")) %>%
+  dbGetQuery(conn, sql_req) %>%
+  # dbSendQuery(conn, sql_req) %>%
+  # mutate_if(is.character, `Encoding<-`, "UTF-8") %>%
+  as_tibble() # %>%
+flog.info(capture.output(toc()))
+
+DBI::dbDisconnect(conn)
+```
+
+## Git
+- [Reducing the repository size using Git](https://docs.gitlab.com/ee/user/project/repository/reducing_the_repo_size_using_git.html)
+	- COOL! [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/)
+Removes large or troublesome blobs like git-filter-branch does, but faster. And written in Scala
+- [Как удалить файлы из истории Git-а, или git filter-branch и переписывание истории](https://det-random.livejournal.com/43291.html)
+
+# 06.03.2020
+## R
+- COOL! [Auto Encoders for Anomaly Detection in Predictive Maintenance](https://iamnagdev.wordpress.com/2020/03/05/auto-encoders-for-anomaly-detection-in-predictive-maintenance/)
+- COOL! [The 9 concepts and formulas in probability that every data scientist should know](https://www.statsandr.com/blog/the-9-concepts-and-formulas-in-probability-that-every-data-scientist-should-know/)
+- COOL! [ggplot2 3.3.0](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/)
+- COOL! [ipaddress](https://davidchall.github.io/ipaddress/). This package provides classes for working with IP addresses, inspired by the Python ipaddress module.
+- [Multiple inheritance for R6 classes](https://stackoverflow.com/questions/35414576/multiple-inheritance-for-r6-classes)
+- ROracle
+	- [Connect R to Oracle database/server (ROracle, RODBC…)](https://stackoverflow.com/questions/35288695/connect-r-to-oracle-database-server-roracle-rodbc)
+	- [Can we connect R and RStudio to our Oracle Database?](https://support.rstudio.com/hc/en-us/articles/217800798-Can-we-connect-R-and-RStudio-to-our-Oracle-Database-)
+	- [R to Oracle Database Connectivity: Use ROracle for both Performance and Scalability](https://blogs.oracle.com/r/r-to-oracle-database-connectivity%3a-use-roracle-for-both-performance-and-scalability)
+	- [Connect to Oracle database using ROracle with tnsnames.ora on Mac OS 10.10](https://stackoverflow.com/questions/31909695/connect-to-oracle-database-using-roracle-with-tnsnames-ora-on-mac-os-10-10)
+	- [Connect to Oracle from Linux or Mac with ODBC](https://help.interfaceware.com/v6/connect-to-oracle-from-linux-mac-with-odbc)
+	- [Oracle connection strings](https://www.connectionstrings.com/oracle/)
+	- [ROracle connect and pull utf8 characters](https://stackoverflow.com/questions/43188883/roracle-connect-and-pull-utf8-characters)
+
+## DS
+- [20 short tutorials all data scientists should read (and practice)](https://www.datasciencecentral.com/profiles/blogs/17-short-tutorials-all-data-scientists-should-read-and-practice)
+- [CLUI: Building a Graphical Command Line](https://blog.repl.it/clui)
+- [Angular Platforms in depth. Part 3. Rendering Angular applications in Terminal](https://medium.com/angular-in-depth/angular-platforms-in-depth-part-3-rendering-angular-applications-in-terminal-117e4da9c0cc)
+
+# 05.03.2020
+## R
+- [Dirk Eddelbuettel Blog](http://dirk.eddelbuettel.com/blog/code/r4/)
+- [Quick #rstats Tip: Use `Ncpus` when installing packages](https://twitter.com/jozefhajnala/status/1235281079092867073?s=20)
+```
+install.packages() has an Ncpus argument determining how many parallel processes to use
+This can e.g. speed up installation of {{tidyverse}} from ~11min to ~4.6min
+Also works with remotes & devtools install_ functions
+```
+- [Genomic analysis of COVID-19 spread. Situation report.](https://nextstrain.org/narratives/ncov/sit-rep/2020-03-04)
+- COOL! Совет от Jenny. [andrie/gcalendr](https://github.com/andrie/gcalendr). R package to read events from google calendar https://andrie.github.io/gcalendr/
+- COOL! [Bayes’ theorem in three panels](https://www.tjmahr.com/bayes-theorem-in-three-panels/)
+- Повтор. [blogR on Svbtle](https://drsimonj.svbtle.com/)
+	- [Label line ends in time series with ggplot2](https://drsimonj.svbtle.com/label-line-ends-in-time-series-with-ggplot2)
+- Делаем вторую ось для дискрета
+	- [Duplicating (and modifying) discrete axis in ggplot2](https://stackoverflow.com/questions/48964760/duplicating-discrete-x-axis-for-ggplot)
+	- [Duplicating discrete x-axis for ggplot {duplicate}](https://stackoverflow.com/questions/45361904/duplicating-and-modifying-discrete-axis-in-ggplot2)
+- data.table
+	- [JOINing data in R using data.table](https://rstudio-pubs-static.s3.amazonaws.com/52230_5ae0d25125b544caab32f75f0360e775.html)
+	- [How to perform merges (joins) on two or more data frames with base R, tidyverse and data.table](https://jozef.io/r006-merge/)
+
+
+# 04.03.2020
+## R
+- COOL! [Patchwork R package goes nerd viral](https://www.littlemissdata.com/blog/patchwork)
+- COOL! [easystats. Make R stats easy!](https://easystats.github.io/blog/)
+	- [The p-direction: A Bayesian equivalent of the p-value?](https://easystats.github.io/blog/posts/bayestestr_pd/)
+- COOL! [`grid.show.layout {grid}`](https://stat.ethz.ch/R-manual/R-devel/library/grid/html/grid.show.layout.html). This function uses Grid graphics to draw a diagram of a Grid layout.
+- Как обычно, интересная инфографика. [Make WSJ-esque Über Tuesday Democrat Delegate Cartograms in R with {catchpole}](https://rud.is/b/2020/03/02/make-wsj-esque-uber-tuesday-democrat-delegate-cartograms-in-r-with-catchpole/)
+- COOL slides! [Zen and the Art of R Package development](https://zenartofrpkgs.netlify.com/#1) by Malcolm Barrett, @malco_barrett. Slides: bit.ly/zenrpkgs
+- COOL slides! [> dplyr, or a dance with data. 🔗 djnavarro.link/robust-tools](https://djnavarro.github.io/robust-tools/dancing/#1)
+- [`dplyr::group_split()` - i know this one! `dplyr::group_map()` - new to me!](https://github.com/sharlagelfand/twofunctionsmostdays/tree/master/2020/03/02)
+- COOL! [clickhouse-local](https://clickhouse.tech/docs/en/operations/utils/clickhouse-local/)
+The clickhouse-local program enables you to perform fast processing on local files, without having to deploy and configure the ClickHouse server.
+- [clickhouse-local: The power of ClickHouse SQL in a single command](https://www.altinity.com/blog/2019/6/11/clickhouse-local-the-power-of-clickhouse-sql-in-a-single-command). First of all, you need to have 'clickhouse-local' installed. It is distributed as a part of 'clickhouse-client' package, so if you have 'clickhouse-client' in your system it means you already have 'clickhouse-local'. Otherwise, you need to install the 'clickhouse-client' package. Please follow the official installation instructions to do that. It is a single binary with minimum dependencies.
+- [3.2.3.1 Generating R Notebooks with custom output](https://bookdown.org/yihui/rmarkdown/notebook.html)
+```
+Let’s try to render this document with a custom output source, so that we can inject custom output for the single chunk within the document. The output source function will accept:
+code: The code within the current chunk.
+context: An environment containing active chunk options and other chunk information.
+...: Optional arguments reserved for future expansion.
+```
+
+
+## ebooks
+- [ctgk/PRML](https://github.com/ctgk/PRML). PRML algorithms implemented in Python
+
+# 03.03.2020
+## Regexp
+- [Why Using the Greedy .* in Regular Expressions Is Almost Never What You Actually Want](https://mariusschulz.com/blog/why-using-the-greedy-in-regular-expressions-is-almost-never-what-you-actually-want)
+- [Performance of Greedy vs. Lazy Regex Quantifiers](http://blog.stevenlevithan.com/archives/greedy-lazy-performance)
+- [Жадные и ленивые квантификаторы](https://learn.javascript.ru/regexp-greedy-and-lazy)
+- [Greedy and lazy quantifiers](https://javascript.info/regexp-greedy-and-lazy)
+- [Regex was taking 5 days to run. So I built a tool that did it in 15 minutes](https://www.freecodecamp.org/news/regex-was-taking-5-days-flashtext-does-it-in-15-minutes-55f04411025f/)
+- [Five invaluable techniques to improve regex performance](https://www.loggly.com/blog/five-invaluable-techniques-to-improve-regex-performance/)
+- [ore: An R Interface to the Onigmo Regular Expression Library](https://cran.r-project.org/web/packages/ore/index.html)
+Provides an alternative to R's built-in functionality for handling regular expressions, based on the Onigmo library. Offers first-class compiled regex objects, partial matching and function-based substitutions, amongst other features.
+- [Regex Performance](https://rpubs.com/jonclayden/regex-performance)
+- [R pkg download stats](https://ipub.com/dev-corner/apps/r-package-downloads/)
+
+## R
+- [How to rename a variable in R without copying the object?](https://stackoverflow.com/questions/22951811/how-to-rename-a-variable-in-r-without-copying-the-object)
+
+
+# 27.02.2020
+## R
+- COOL! [Allow sql-code-chunk-results to be collected and stored in an R object {#1236}](https://github.com/rstudio/rmarkdown/issues/1236). [Детали по использованию](https://bookdown.org/yihui/rmarkdown/language-engines.html#sql)
+- [3 RECOMMENDED BOOKS ON LEARNING R](http://theautomatic.net/2020/02/25/3-recommended-books-on-learning-r/)
+- [Including Function Factories in an R Package: Using Collate](https://nathaneastwood.github.io/2020/02/25/including-function-factories-in-an-r-package-using-collate/)
+- [Testing REST APIs with Newman](https://www.statworx.com/de/blog/testing-rest-apis-with-newman/)
+- COOL! [Tidy Tuesday](https://www.tidytuesday.com/). A weekly podcast and community activity brought to you by the R4DS Online Learning Community
+	- [rfordatascience/tidytuesday](https://github.com/rfordatascience/tidytuesday). Official repo for the #tidytuesday project
+- [Using group_by Instead of Splits](http://rmflight.github.io/post/using-group-by-instead-of-splitting/)
+- [R for Excel Users: Pivot Tables, VLOOKUPs in R](https://www.business-science.io/finance/2020/02/26/r-for-excel-users.html)
+- COOL! [Introduction to ggquickeda](https://cran.r-project.org/web/packages/ggquickeda/vignettes/ggquickeda.html). This package/R Shiny app is a handy interface to ggplot2/table1.
+- [R Tutorial](https://www.cyclismo.org/tutorial/R/index.html). Kelly Black, Department of Mathematics, 321a Boyd Graduate Studies
+- COOL! [Displaying time series with R](https://codingclubuc3m.rbind.io/post/2020-03-03/)
+
+
+# 26.02.2020
+## R
+- COOL! [draw your own plot layout](https://gist.github.com/baptiste/311177e0175f3e9b87caaac9bc41b7ec)
+- COOL! [gghighlight 0.2.0](https://yutani.rbind.io/post/gghighlight-0-2-0/). gghighlight 0.2.0 is on CRAN a while ago. This post briefly introduces the three new features. For basic usages, please refer to “Introduction to gghighlight”.
+- COOL! [RStudio addins, or how to make your coding life easier](https://www.statsandr.com/blog/rstudio-addins-or-how-to-make-your-coding-life-easier/)
+- COOL! [Interactive Webapps with Shiny](https://flor14.github.io/rladies_shiny_meetup_2020/rladies_shiny_2020#1). Florencia D’Andrea (🐦cantoflor_87). Meetup R-Ladies Rcia-Ctes + R en el NEA
+21/02/2020
+- COOL! [10 Tips To Souping Up Rmarkdown](https://ryanpeek.github.io/2020-02-20-10-tips-to-souping-up-rmarkdown/)
+- [minio/simdjson-go](https://github.com/minio/simdjson-go). Golang port of simdjson: parsing gigabytes of JSON per second
+
+## DS
+- COOL! [Introducing fastpages](https://fastpages.fast.ai/fastpages/jupyter/2020/02/21/introducing-fastpages.html). An easy to use blogging platform with extra features for Jupyter Notebooks.
+- COOL! [Redash helps you make sense of your data](https://redash.io/)
+Connect and query your data sources, build dashboards to visualize data and share them with your company.
+
+## Linux
+- COOL! [Bash scripting cheatsheet](https://devhints.io/bash)
+- [10 Must Have O’Reilly Linux and Unix Books](https://www.adminschoice.com/10-must-have-oreilly-books-for-system-administrators)
+- разбираем скрипт Тимофея
+```
+tmp=tmp; 
+if [ ! -d $tmp ] ; then mkdir $tmp; fi; 
+for arch in `find . -name \*.tar.gz` ; do 
+    dir=`echo $arch |sed 's|.*/\(.*\)\.tar\.gz|\1|'`; 
+    mkdir $dir; 
+    tar -C $tmp -xvf $arch; 
+    for f in `find $tmp -name \*.log` ; do
+        ofile="${f%.*}.zip"
+        zip -m $ofile $f;
+        mv $ofile $dir; 
+    done; 
+done
+```
+
+`for f in find $tmp -name \*.log` ; do prefix=${f%.*}; zip -m "$prefix.zip" $f; done;`
+Запускаем командой `bash -x _repack.sh`, чтобы увидеть диагностику ошибок
+- [echo an environment variable in bash](https://askubuntu.com/questions/1088883/echo-an-environment-variable-in-bash)
+- [How to check if one file is empty and another one is not in one condition using bash](https://stackoverflow.com/questions/8288700/how-to-check-if-one-file-is-empty-and-another-one-is-not-in-one-condition-using)
+- [Is double square brackets [[ ]] preferable over single square brackets [ ] in Bash?](https://stackoverflow.com/questions/669452/is-double-square-brackets-preferable-over-single-square-brackets-in-ba)
+- [What is the difference between the Bash operators [[ vs [ vs ( vs ((?](https://unix.stackexchange.com/questions/306111/what-is-the-difference-between-the-bash-operators-vs-vs-vs)
+
+# 25.02.2020
+## R
+- [January 2020: "Top 40" New R Packages](https://rviews.rstudio.com/2020/02/24/january-2020-top-40-new-r-packages/) by Joseph Rickert
+
+# 20.02.2020
+## R
+- [gaborcsardi/prompt](https://github.com/gaborcsardi/prompt). Dynamic R prompt
+- COOL! [CRANberries](http://dirk.eddelbuettel.com/cranberries/index.html). [CRANberriesFeed](https://twitter.com/CRANberriesFeed)
+- COOL! [Rainette](https://juba.github.io/rainette/). Rainette is an R package which implements a variant of the Reinert textual clustering method. This method is available in other software such as Iramuteq (free software) or Alceste (commercial, closed source).
+Note : This package is still in development, available only for testing.
+- COOL! [CRAN Task View: Time Series Analysis](https://cran.r-project.org/web/views/TimeSeries.html)
+- COOL! [Understanding the Time-Series Widget](https://carto.com/help/tutorials/understanding-the-time-series-widget/)
+CARTO Builder Time-Series widgets display and filter data over time.
+- COOL! [Introducing tsviz, interactive time series visualization in R Studio](https://towardsdatascience.com/introducing-tsviz-interactive-time-series-visualization-in-r-studio-a96cde507a14)
+Why and how we developed an R Studio add-in
+	- [xtreamsrl/tsviz](https://github.com/xtreamsrl/tsviz). An RStudio addin to provide easy and interactive time series visualization
+
+
+# 19.02.2020
+## RStudio Resources 
+- для публикации они используют сервис Wistia. [RStudio conf 2020](https://resources.rstudio.com/rstudio-conf-2020)
+	- [5 Ways to Download Wistia Videos Easily](https://www.tricksntech.com/download-wistia-videos/)
+	- [3 Surprisingly Awesome Ways To Download Wistia Videos](https://www.cisdem.com/resource/download-wistia-videos.html)
+	- [How To Download Wistia Videos Without Any Tool](https://www.yeahhub.com/download-wistia-videos-without-tool/)
+## R
+- COOL! [Efficient Data Management in R](https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/efficient-data-r/)
+- [7.12 Инструменты Git - Создание пакетов (Git bundle)](https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2)
+- [RStudio 1.3 Preview: Configuration and Settings](https://blog.rstudio.com/2020/02/18/rstudio-1-3-preview-configuration/)
+
+# 18.02.2020
+## R
+- [What `R` you? (R dataframe vs python dataframe)](https://notast.netlify.com/post/what-r-you-r-dataframe-vs-python-dataframe/)
+
+# 17.02.2020
+## R
+- [Using R and H2O Isolation Forest to predict car battery failures.](https://laranikalranalytics.blogspot.com/2019/05/predicting-car-battery-failure-with-r.html)
+- [Sun, 26 May 2019: nanotime 0.2.4](http://dirk.eddelbuettel.com/blog/2019/05/26/#nanotime_0.2.4)
+- [new release of offensive programming packages](https://neonira.github.io/zop4)
+
+# 14.02.2020
+## R
+- COOL! [RcppSimdJson 0.0.1 now on CRAN!](http://dirk.eddelbuettel.com/blog/2020/02/13/#rcppsimdjson_0.0.1)
+- COOL! [RcppSimdJSON](http://dirk.eddelbuettel.com/code/rcpp.simdjson.html). Rcpp Bindings for the simdjson Header Library
+- COOL! [nstrayer/cv](https://github.com/nstrayer/cv). My CV built using RMarkdown and the pagedown package. http://nickstrayer.me/cv/
+- [Introducing the {ggblur} package](https://coolbutuseless.github.io/2020/02/11/introducing-the-ggblur-package/) 2020-02-11
+- COOL! [gadenbuie/rsthemes](https://github.com/gadenbuie/rsthemes) Full RStudio IDE and Syntax Themes https://github.com/gadenbuie/rsthemes…
+- [The newest version of R package Factoshiny (2.2) is now on CRAN!](https://francoishusson.wordpress.com/2020/02/12/factoshiny-an-updated-version-on-cran/)
+It gives a graphical user interface that allows you to implement exploratory multivariate analyses such as PCA, correspondence analysis, multiple factor analysis or clustering.
+
+# 11.02.2020
+## R
+- COOL! [ColinFay/odds](https://github.com/ColinFay/odds). On Disk Data Storage for Cross-Session Access in R
+- Tidyverse. [slider 0.1.0](https://www.tidyverse.org/blog/2020/02/slider-0-1-0/)
+- Learning. COOL! [Why should I use the here package when I'm already using projects?](https://malco.io/2018/11/05/why-should-i-use-the-here-package-when-i-m-already-using-projects/)
+- COOL! [Three ways to calculate distances in R](http://www.seascapemodels.org/rstats/2020/02/08/calculating-distances-in-R.html)
+- COOL! [RStudio Connect custom emails with blastula 0.3.1](https://solutions.rstudio.com/2019/12/30/rstudio-connect-custom-emails-with-blastula/)
+- [film flowers](http://sxywu.com/filmflowers/). top summer blockbusters reimagined as flowers (shirley wu)
+
+# 10.02.2020
+## iPhone
+- [Зашифрованные резервные копии на iPhone, iPad или iPod touch](https://support.apple.com/ru-ru/HT205220#help)
+- [Поиск резервных копий iPhone, iPad и iPod touch](https://support.apple.com/ru-ru/HT204215)
+
+## Process mining
+- [Apromore](https://apromore.org/) is a collaborative business process analytics platform supporting the full spectrum of process mining functionality. These features are complemented by an authoring environment for business process models, underpinned by an enterprise process repository.
+
+## R
+- нюансы `future`. В частности, изменение в 1.4.8 (2020-02-04). [CONSISTENCY: %dopar% with doSEQ should evaluate expression in `local()` environment #3](https://github.com/RevolutionAnalytics/foreach/issues/3)
+- Интересно. [Formula Interface for ggplot2](https://cran.r-project.org/web/packages/ggformula/vignettes/ggformula.html)
+- Отображение функций в ggplot
+	- [Compute function for each x value](https://ggplot2.tidyverse.org/reference/stat_function.html)
+	- [Draw function without data in ggplot2](https://kohske.wordpress.com/2010/12/25/draw-function-without-data-in-ggplot2/)
+- [raster: Geographic Data Analysis and Modeling](https://cran.r-project.org/web/packages/raster/index.html)
+Reading, writing, manipulating, analyzing and modeling of gridded spatial data. The package implements basic and high-level functions. Processing of very large files is supported. There is a also support for vector data operations such as intersections. See the manual and tutorials on <https://rspatial.org/> to get started.
+- [trelliscopejs](https://hafen.github.io/trelliscopejs/). Trelliscope is a scalable, flexible, interactive approach to visualizing data.
+- [rich-iannone/DiagrammeR](https://github.com/rich-iannone/DiagrammeR). Graph and network visualization using tabular data in R. http://visualizers.co/diagrammer/
+
+# 07.02.2020
+## R
+- [Shiny: Load testing and horizontal scaling](https://www.eoda.de/en/wissen/blog/shiny-load-testing-und-horizontale-skalierung)
+- [Prying “.R” Script Files Away from Xcode (et al) on macOS](https://rud.is/b/2020/02/06/prying-r-script-files-away-from-xcode-et-al-on-macos/)
 
 # 05.02.2020
 ## R
@@ -740,6 +1143,15 @@ The course covers scalable machine learning and data mining algorithms for large
 - GR & googledrive:
 	- Проблема с кодировкой в googledrive. [Explicitly declare UTF-8 encoding {#114}(https://github.com/r-lib/gargle/pull/114)
 	- [Unable to authorize from Rstudio Server #79 {Closed}](https://github.com/tidyverse/googledrive/issues/79)
+	- COOL! Интересное решение по обходу авторизации в RStudio Server нашел (но не проверил) в [твиттере](https://twitter.com/BenjaminWolfe/status/1227035163839913984?s=20).
+```
+@BenjaminWolfe
+Getting {googledrive} authenticated on #AWS:
+1. run the demo code locally + authenticate by browser
+2. that creates a folder called ~/.R/gargle/gargle-oath
+3. copy it to the same location in #AWS using @cyberduckapp or whatever.
+4. @rstudio server'll find your credentials there!
+```
 - COOL! [{dm} is an R package that provides tools for working with multiple related tables, stored as data frames or in a relational database.](https://krlmlr.github.io/dm/)
 - COL! [traversc/qs](https://github.com/traversc/qs). Quick serialization of R objects
 - В директории `notebook` образуются большие файлы `*.rdf` при работе с большими данными (может ошибка вывода в консоль?). Уж не про это ли? [A tidyverse lover’s intro to RDF](https://cran.r-project.org/web/packages/rdflib/vignettes/rdf_intro.html). Или про это [rdflib: Tools to Manipulate and Query Semantic Data
@@ -762,6 +1174,7 @@ echo 0 > /proc/sys/kernel/sysrq
 - [Parsing Metadata with R - A Package Story](https://ropensci.org/blog/2018/10/09/jstor/)
 - [rOpenSci: The jstor package](https://docs.ropensci.org/jstor/)
 - [ropensci/xslt](https://github.com/ropensci/xslt). Extension of xml2 package for xsl transformations https://docs.ropensci.org/xslt
+- XML-парсер Parabix, использующий SIMD-команды современных процессоров для быстрого парсинга XML, теперь доступен в исходниках под лицензией Open Software License 3.0. [icXML: Accelerating a Commercial XML Parser Using SIMD and Multicore Technologies](https://www.balisage.net/Proceedings/vol10/print/Cameron01/BalisageVol10-Cameron01.html)
 
 ## R
 - COOL! [How to set a variable in .Renviron](https://community.rstudio.com/t/how-to-set-a-variable-in-renviron/5029)
@@ -769,6 +1182,9 @@ echo 0 > /proc/sys/kernel/sysrq
 ```
 usethis::edit_r_environ() will open your user .Renviron which is in your home
 usethis::edit_r_environ("project") will open the one in your project
+
+The .Renviron file in your case would only read:
+NOAA_KEY=your-noaa-token
 ```
 - COOL! [R for Enterprise: Understanding R’s Startup](https://rviews.rstudio.com/2017/04/19/r-for-enterprise-understanding-r-s-startup/), 2017-04-19, by by Sean Lopp
 - [How to create .Renviron file?](https://stackoverflow.com/questions/40788645/how-to-create-renviron-file)
@@ -790,11 +1206,8 @@ usethis::edit_r_environ("project") will open the one in your project
 	- [(Much) faster unnesting with data.table](https://www.johannesbgruber.eu/post/a-faster-unnest/)
 	- [How to ungroup list columns in data.table?](https://stackoverflow.com/questions/34692260/how-to-ungroup-list-columns-in-data-table)
 	- [Unnest a list column directly into several columns](https://stackoverflow.com/questions/49689927/unnest-a-list-column-directly-into-several-columns)
-- [papaja: Reproducible APA manuscripts with R Markdown](https://crsh.github.io/papaja_man/)
-- [ggbeeswarm: Categorical Scatter (Violin Point) Plots](https://cran.r-project.org/web/packages/ggbeeswarm/)
-Provides two methods of plotting categorical scatter plots such that the arrangement of points within a category reflects the density of data at that region, and avoids over-plotting.
-- [performance: Assessment of Regression Models Performance](https://cran.r-project.org/web/packages/performance/index.html)
-Utilities for computing measures to assess model quality, which are not directly provided by R's 'base' or 'stats' packages. These include e.g. measures like r-squared, intraclass correlation coefficient (Nakagawa, Johnson & Schielzeth (2017) <doi:10.1098/rsif.2017.0213>), root mean squared error or functions to check models for overdispersion, singularity or zero-inflation and more. Functions apply to a large variety of regression models, including generalized linear models, mixed effects models and Bayesian models.
+- [What is the equivalent of mutate_at (dplyr) in data.table?](https://stackoverflow.com/questions/57386580/what-is-the-equivalent-of-mutate-at-dplyr-in-data-table)
+- Сообщение "Coercing 'list' RHS to 'character' to match the type of the target column." [How to change type of target column when doing := by group in a data.table in R?](https://stackoverflow.com/questions/29643820/how-to-change-type-of-target-column-when-doing-by-group-in-a-data-table-in-r)
 
 ## R
 - COOL! [emilyriederer/Rtistic](https://github.com/emilyriederer/Rtistic). A hackathon-in-a-box / "cookbook" to help build an R package with custom RMarkdown themes and ggplot2 themes & palettes. This looks like a package but it is not intended to be installed as-is. It is a wireframe to be used by an individual or group to create their *own* package!
@@ -802,6 +1215,12 @@ Utilities for computing measures to assess model quality, which are not directly
 - [Primitive Functions List](https://nathaneastwood.github.io/2020/02/01/primitive-functions-list/)
 - [A guide to encoding categorical features using R](https://www.radmuzom.com/2020/02/02/a-guide-to-encoding-categorical-features-using-r/)
 - COOL! [Adding time to time in R](https://stackoverflow.com/questions/50866366/adding-time-to-time-in-r)
+- [papaja: Reproducible APA manuscripts with R Markdown](https://crsh.github.io/papaja_man/)
+- [ggbeeswarm: Categorical Scatter (Violin Point) Plots](https://cran.r-project.org/web/packages/ggbeeswarm/)
+Provides two methods of plotting categorical scatter plots such that the arrangement of points within a category reflects the density of data at that region, and avoids over-plotting.
+- [performance: Assessment of Regression Models Performance](https://cran.r-project.org/web/packages/performance/index.html)
+Utilities for computing measures to assess model quality, which are not directly provided by R's 'base' or 'stats' packages. These include e.g. measures like r-squared, intraclass correlation coefficient (Nakagawa, Johnson & Schielzeth (2017) <doi:10.1098/rsif.2017.0213>), root mean squared error or functions to check models for overdispersion, singularity or zero-inflation and more. Functions apply to a large variety of regression models, including generalized linear models, mixed effects models and Bayesian models.
+
 
 # 31.01.2020
 ## RStudioConf
@@ -823,6 +1242,7 @@ A delightful series of modules to learn statistics and R coding for students, sc
 - [How can I delete a commit in Git?](https://www.git-tower.com/learn/git/faq/delete-commits)
 - [17. Удаление коммитов из ветки](https://githowto.com/ru/removing_commits_from_a_branch)
 - COOL! [Remove files from Git commit](https://stackoverflow.com/questions/12481639/remove-files-from-git-commit)
+- COOL [Take GitHub to the command line](https://cli.github.com/)
 
 # 30.01.2020
 ## R
@@ -850,6 +1270,7 @@ A delightful series of modules to learn statistics and R coding for students, sc
 - [Change S3 Bucket Storage class to S3 Infrequent Access](https://stackoverflow.com/questions/46111372/change-s3-bucket-storage-class-to-s3-infrequent-access)
 - [How to create an S3 Bucket and AWS Access Key ID and Secret Access Key for accessing it.](https://medium.com/@shamnad.p.s/how-to-create-an-s3-bucket-and-aws-access-key-id-and-secret-access-key-for-accessing-it-5653b6e54337)
 - [HOW TO GET ACCESS KEY ID AND SECRET ACCESS KEY OF AMAZON S3 ACCOUNT?](https://supsystic.com/documentation/id-secret-access-key-amazon-s3/)
+- COOL! [HiPlot: High-dimensional interactive plots made easy](https://ai.facebook.com/blog/hiplot-high-dimensional-interactive-plots-made-easy)
 
 ## Math
 - [GeoGebra](https://www.geogebra.org/geometry)
@@ -867,7 +1288,7 @@ Generates version 2 and version 4 request signatures for Amazon Web Services ('A
 # 20.01.2020
 ## R
 - [JetBrains Mono. A typeface for developers_](https://www.jetbrains.com/lp/mono/)
-- [Customising your Rprofile](https://www.jumpingrivers.com/blog/customising-your-rprofile/)
+- COOL! [Customising your Rprofile](https://www.jumpingrivers.com/blog/customising-your-rprofile/)
 - COOL! [How To Say No To Useless Data Science Projects And Start Working On What You Want](https://www.r-bloggers.com/how-to-say-no-to-useless-data-science-projects-and-start-working-on-what-you-want/)
 	- Исходник. [HOW TO SAY NO TO USELESS DATA SCIENCE PROJECTS AND START WORKING ON WHAT YOU WANT](https://www.remixinstitute.com/blog/how-to-say-no-to-projects/)
 
@@ -1117,6 +1538,7 @@ as.party(fit)
 
 ## time-series
 - [Reintroducing tsibble: data tools that melt the clock](https://blog.earo.me/2018/12/20/reintro-tsibble/)
+- COOL! [A New Tidy Data Structure to Support Exploration and Modeling of Temporal Data](https://www.tandfonline.com/doi/full/10.1080/10618600.2019.1695624) by Earo Wang, Dianne Cook & Rob J. Hyndman
 
 # 26.11.2019
 ## R
@@ -1933,7 +2355,7 @@ Users can specify their own statistics using a list combined with the skim_with(
 - [Joining by a character column is slow, compared to joining by a factor column. #1386
  {Closed}](https://github.com/tidyverse/dplyr/issues/1386). Тут, кстати, идет обсуждение про сравнение строк путем сравнения ссылок на эти строки!
 - [How to perform merges (joins) on two or more data frames with base R, tidyverse and data.table](https://jozefhajnala.gitlab.io/r/r006-merge/)
-- [r-lib/fastmap](https://r-lib.github.io/fastmap/). Fast map implementation for R https://r-lib.github.io/fastmap/
+- COOL! [r-lib/fastmap](https://r-lib.github.io/fastmap/). Fast map implementation for R https://r-lib.github.io/fastmap/
 
 
 # 04.09.2019
@@ -1962,7 +2384,7 @@ Users can specify their own statistics using a list combined with the skim_with(
 I'm a statistician, data scientist, and lecturer in the Department of Statistics, at UC Berkeley.
 - [ggplot2. the R Graph Gallery](http://r-graph-gallery.com/ggplot2-package.html)
 - Интересная статья с обширной визуализацией результатов [Studying Politics on and with Wikipedia](https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/studying-politics-wikipedia/)
-- [r-lib/fastmap](https://github.com/r-lib/fastmap). Fast map implementation for R https://r-lib.github.io/fastmap/
+- COOL! [r-lib/fastmap](https://github.com/r-lib/fastmap). Fast map implementation for R https://r-lib.github.io/fastmap/
 - [Generating Random Strings](https://stackoverflow.com/questions/42734547/generating-random-strings)
 - [Forcing R output to be scientific notation with at most two decimals](https://stackoverflow.com/questions/39623636/forcing-r-output-to-be-scientific-notation-with-at-most-two-decimals):
 ```
@@ -2538,6 +2960,7 @@ Feature hashing, also called as the hashing trick, is a method to transform feat
 - [Very Fast string fuzzy matching in R](https://stackoverflow.com/questions/56072126/very-fast-string-fuzzy-matching-in-r)
 - [Fuzzy string Matching using fuzzywuzzyR and the reticulate package in R](https://mlampros.github.io/2017/04/13/fuzzywuzzyR_package/)
 - [IN BETWEEN A ROCK AND A CONDITIONAL JOIN](https://www.mango-solutions.com/blog/in-between-a-rock-and-a-conditional-join)
+- [Fuzzy Match and replace strings in dataframe using custom dictionnary](https://stackoverflow.com/questions/54380062/fuzzy-match-and-replace-strings-in-dataframe-using-custom-dictionnary)
 - [fuzzywuzzyR: Fuzzy String Matching](https://cran.r-project.org/web/packages/fuzzywuzzyR/index.html)
 Fuzzy string matching implementation of the 'fuzzywuzzy' <https://github.com/seatgeek/fuzzywuzzy> 'python' package. It uses the Levenshtein Distance <https://en.wikipedia.org/wiki/Levenshtein_distance> to calculate the differences between sequences.
  `ggalt::coord_proj("+proj=wintri", ylim = range(nsidc_iceout$latitude, na.rm = TRUE)) +`
@@ -3247,7 +3670,6 @@ The benchmark was carried out using a Google Compute n1-standard-16 instance (16
 	- [`.libPaths()`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/libPaths.html) -- команда для управления
 	- Интересный вопрос и объяснение. [Why is .libPaths() different in RStudio vs. R?](https://support.rstudio.com/hc/en-us/articles/115014830827-Why-is-libPaths-different-in-RStudio-vs-R-)
 	- [Changing R default library path using .libPaths in Rprofile.site fails to work](http://stackoverflow.com/questions/15170399/changing-r-default-library-path-using-libpaths-in-rprofile-site-fails-to-work)
-	- [Changing R default library path using .libPaths in Rprofile.site fails to work](http://stackoverflow.com/questions/15170399/changing-r-default-library-path-using-libpaths-in-rprofile-site-fails-to-work)
 Месторасположение файла `C:\Program Files\R\R-3.3.0\etc\Rprofile.site`. В ProgramFiles записать не может, поэтому RStudio гонит сюда:
 `Installing package into ‘C:/Users/<User>/Documents/R/win-library/3.3’`
 
@@ -3617,8 +4039,10 @@ The cyphr package seems to provide a good choice for small research group that s
 	- [APR 18 2014. DATA.TABLE VS. DPLYR IN SPLIT APPLY COMBINE STYLE ANALYSIS](https://www.brodieg.com/2014/04/18/datatable-vs-dplyr-in-split-apply-comgine/)
 
 
-# 24.03.2009
+# 24.03.2019
 ## Linux
+- [How to ignore certain filenames using “find”?](https://superuser.com/questions/397307/how-to-ignore-certain-filenames-using-find)
+- [Zip all files in directory?](https://unix.stackexchange.com/questions/57013/zip-all-files-in-directory)
 - [How to tell gzip to keep original file?](https://unix.stackexchange.com/questions/46786/how-to-tell-gzip-to-keep-original-file)
 - [Example Uses of the Linux gzip Command](https://www.lifewire.com/example-uses-of-the-linux-gzip-command-4078675)
 - [Сжатие и архивация файлов с помощью Gzip, Zip и Tar](http://www.rhd.ru/docs/manuals/enterprise/RHEL-AS-2.1-Manual/getting-started-guide/s1-zip-tar.html)
@@ -3638,6 +4062,9 @@ find . -name '*.txt.*' -print -exec zip '{}'.zip '{}' \; -exec mv '{}'.zip '{}' 
 Find the .txt files
 The first -exec zips the files
 The second -exec renames the zipped files to the original names
+- [Bash get filename from given path on Linux or Unix](https://www.cyberciti.biz/faq/bash-get-filename-from-given-path-on-linux-or-unix/)
+- [Create zip file and ignore directory structure](https://stackoverflow.com/questions/9710141/create-zip-file-and-ignore-directory-structure)
+- [How to zip files with same name but different extension?](https://unix.stackexchange.com/questions/417163/how-to-zip-files-with-same-name-but-different-extension)
 - [Linux 101 Hacks. Hack 45. Advanced compression using zip command](https://linux.101hacks.com/archive-compression/advanced-compression-using-zip-command/)
 - [How to Use zip Command in Linux](https://tecadmin.net/how-to-use-zip-command-line-linux/)
 - [How To: Disk Full? - Check Your Trash](https://ubuntuforums.org/showthread.php?t=898573). Гуляем командами по директориям

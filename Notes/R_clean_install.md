@@ -186,6 +186,7 @@ libblas-dev \
 liblapack-dev \
 gfortran \
 libmagick++-dev \
+libpcre2-dev \
 ncdu \
 glances
 ```
@@ -250,7 +251,7 @@ sudo apt-get purge <package>
 Должно лечиться установкой библиотеки libpango (для генерации png)
 `sudo apt-get install libpango1.0-dev`. 
 	- Детали [здесь](https://support.rstudio.com/hc/en-us/community/posts/200642948-RStudio-Server-unable-to-open-connection-to-X11-display).
-	- Еще есть похожая статья [Shiny-server on ubuntu 16 error: "unable to open connection to X11 display ''](https://community.rstudio.com/t/shiny-server-on-ubuntu-16-error-unable-to-open-connection-to-x11-display/11722). Can you execute `capabilities()` in the version of R that you are using on the server, and share the output? I am curious if you have the system dependencies required to support generating PNG graphics.
+	- Еще есть похожая статья [Shiny-server on ubuntu 16 error: "unable to open connection to X11 display "](https://community.rstudio.com/t/shiny-server-on-ubuntu-16-error-unable-to-open-connection-to-x11-display/11722). Can you execute `capabilities()` in the version of R that you are using on the server, and share the output? I am curious if you have the system dependencies required to support generating PNG graphics.
 Это все не очень помогло, поэтому поставил подсистему X11 командой `sudo apt install xorg`. Детали в обсуждении [Installing X11 on Ubuntu 18.04](https://askubuntu.com/questions/1071996/installing-x11-on-ubuntu-18-04/1072003)
 И опять не помогло, читаем дальше [R unable to start device PNG - capabilities() has TRUE for PNG?](https://stackoverflow.com/questions/24999983/r-unable-to-start-device-png-capabilities-has-true-for-png). Рекомендуют ставить `xvfb` (Virtual Framebuffer 'fake' X server):
 `sudo apt-get install xvfb`

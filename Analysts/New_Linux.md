@@ -23,7 +23,9 @@ find . -name '*.txt.*' -print -exec zip '{}'.zip '{}' \; -exec mv '{}'.zip '{}' 
 Find the .txt files
 The first -exec zips the files
 The second -exec renames the zipped files to the original names
-
+- COOL! [How to Remove (Delete) Directory in Linux](https://linuxize.com/post/remove-directory-linux/)
+`$ find . -type d -name '*_cache' -exec rm -r {} +`
+`$ find /dir -type d -empty -delete`
 
 
 - Чтобы забрать архив. [Архивирование файлов в Linux](https://losst.ru/arhivatsiya-v-linux). Архив != сжатие.

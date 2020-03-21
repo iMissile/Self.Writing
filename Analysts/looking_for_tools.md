@@ -116,6 +116,7 @@ From release 1.3, code folding will be integrated into Brackets (although withou
 Sandboxing is required for all apps available on the Mac and iOS app store, in order to grant users a high level of data security. Sandboxed apps are only permitted access to files explicitly provided by the user - for example Markdown text files. When working with different Markdown applications, sandboxing can cause inconveniences for the user.
 
 ## Collaboration Tools
+- [Groups.io](https://groups.io/). Email Groups. Supercharged. A modern platform for online communities. Powerful management tools. Mobile ready. Free and paid plans. No ads, no tracking.
 - [Typewrite](https://typewrite.io/). A simple, real-time collaborative writing environment.
 - [DBook](https://www.dbook.org/). Structured and collaborative writing for large documents
 - [Substance](http://substance.io/composer/). Do-It-Yourself Publishing for everyone. Whether you're a journalist or an ambitious hobbyist writer, Substance Composer is the tool to create and share professional web-first publications.
