@@ -10,6 +10,7 @@
 https://tmall.aliexpress.com/item/Edifier-W830BT-1/1000005465785.html
 - [\x and \u Code Decoder](https://khalil-shreateh.com/khalil.shtml/social_applications/web-applications/x-and-u-code-decoder.html)
 - [Unicode Coding](https://www.dcode.fr/unicode-coding)
+- [Unicode Converter - Decimal, text, URL, and unicode converter](https://www.branah.com/unicode-converter)
 - [Универсальный декодер - конвертер кириллицы](http://2cyr.com/decode/?lang=ru)
 
 - [grammarly](https://www.grammarly.com/). Great Writing. Simplified. Compose clear, mistake-free writing that makes the right impression with Grammarly’s writing assistant.
@@ -109,7 +110,6 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 
 # e-books
 - [Books related to R](https://www.r-project.org/doc/bib/R-books.html)
-
 - [R for Data Science](https://r4ds.had.co.nz) by Garrett Grolemund, Hadley Wickham
 - [R for Data Science: Exercise Solutions](https://jrnold.github.io/r4ds-exercise-solutions/) by Jeffrey B. Arnold
 - [Hands-On Programming with R](https://rstudio-education.github.io/hopr/) by Garrett Grolemund
@@ -133,6 +133,7 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - [Mastering Software Development in R](https://bookdown.org/rdpeng/RProgDA/) by Roger D. Peng, Sean Kross, and Brooke Anderson
 - [R Manuals as bookdown](http://colinfay.me/r-manuals/). You’ll find here a list of the R manuals converted to bookdown.
 - [Processing and Analyzing Financial Data with R](https://sites.google.com/view/pafdR/home)
+- [Introduction to R - tidyverse](https://bookdown.org/ansellbr/WEHI_tidyR_course_book/)
 - [Data Visualization for Social Science. A practical introduction with R and ggplot2](http://socviz.co/)
 - [Data Science Live Book](https://livebook.datascienceheroes.com/) by Pablo Casas, July 2018
 - [Sinew: Simple R Package Documentation](https://metrumresearchgroup.github.io/sinew/)
@@ -147,6 +148,7 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - [Hands-on Machine Learning with R](https://bradleyboehmke.github.io/HOML/) by Brad Boehmke & Brandon Greenwell, 2019-05-25
 - COOL! [Getting Started in R. An eight-page pdf guide for "Getting Started in R".](https://github.com/eddelbuettel/gsir-te)
 - [Modern R with the tidyverse](https://b-rodrigues.github.io/modern_R/) by Bruno Rodrigues, 2018-12-16
+- [Анализ временных рядов с помощью R](https://ranalytics.github.io/tsa-with-r/) by Мастицкий С. Э., 2020-04-12
 - [Geocomputation with R](https://geocompr.robinlovelace.net/) by Robin Lovelace, Jakub Nowosad, Jannes Muenchow, 2018-12-22
 - Style Guides
 	- [The tidyverse style guide](https://style.tidyverse.org/) by Hadley Wickham
@@ -176,6 +178,7 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - [R Programming for Data Science](https://bookdown.org/rdpeng/rprogdatascience/)
 - [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/)
 - [14 Essential Books to Improve Your Tableau and Visualization Skills](https://www.thedataschool.co.uk/pablo-saenz/14-essential-books-to-improve-your-tableau-and-visualization-skills/)
+- [A Very Short Course on Time Series Analysis](https://bookdown.org/rdpeng/timeseriesbook/) by Roger D. Peng
 
 
 
@@ -749,6 +752,238 @@ The course covers scalable machine learning and data mining algorithms for large
 - [Поиск похожих документов с MinHash + LHS](https://habr.com/ru/post/250673/)
 
 
+# 04.05.2020
+## R
+- [Spectral Analysis in R - the periodogram](https://stats.stackexchange.com/questions/315682/spectral-analysis-in-r-the-periodogram)
+
+# 30.04.2020
+## R, подборки из твиттера
+- Автор плагина Esquesse. [grand R. dreamRs: Conseil, Expertise et Formation en data science. Spécialisé en R](https://www.dreamrs.fr/)
+- [dreamRs/colorscale](https://github.com/dreamRs/colorscale). Create a color scale from a single color
+- COOL! [statsExpressions: Expressions with statistical details](https://github.com/IndrajeetPatil/statsExpressions/blob/master/README.md)
+	- [ggstatsplot: ggplot2 Based Plots with Statistical Details](https://indrajeetpatil.github.io/ggstatsplot/)
+	- [statsExpressions: Expressions with statistical details](https://indrajeetpatil.github.io/statsExpressions/)
+- [gratia](https://gavinsimpson.github.io/gratia/index.html)
+Graceful ‘ggplot’-based graphics and utility functions for working with generalized additive models (GAMs) fitted using the ‘mgcv’ package. Provides a reimplementation of the plot() method for GAMs that ‘mgcv’ provides, as well as ‘tidyverse’ compatible representations of estimated smooths.
+- [ggplot2::position_dodge2() - i know this one!](https://github.com/sharlagelfand/twofunctionsmostdays/tree/master/2020/04/16)
+- [kableExtra::column_spec() - i know this one!](https://github.com/sharlagelfand/twofunctionsmostdays/tree/master/2020/04/21)
+- [ewenme/ghibli](https://github.com/ewenme/ghibli). Studio Ghibli colour palettes https://ewenme.github.io/ghibli
+- Thomas Lin Pedersen ggplot2 workshop. 
+	- [ggplot2 workshop part 1](https://www.youtube.com/watch?v=h29g21z0a68&feature=youtu.be). 
+	- [ggplot2 workshop part 2](https://www.youtube.com/watch?v=0m4yywqNPVY&feature=youtu.be)
+- [Causal Inference cheat sheet for data scientists](http://nc233.com/2020/04/causal-inference-cheat-sheet-for-data-scientists/)
+- COOL! [thematic](https://rstudio.github.io/thematic/). Unified and automatic theming of ggplot2, lattice, and base R graphics.
+- [fortunes: R Fortunes](https://cran.r-project.org/web/packages/fortunes/index.html) A collection of fortunes from the R community.
+- COOL! [Grid sytem for shiny apps or rmarkdown document, mainly to create htmlwidgets matrix. R interface for grillade from KNACSS.](https://dreamrs.github.io/grillade/)
+
+## R dev (надо читать внимательно)
+- COOL! [Workflow automation tools for package developers](https://blog.r-hub.io/2020/04/29/maintenance/)
+- COOL! [{fledge}](https://krlmlr.github.io/fledge/) has been designed to streamline the process of versioning R packages on Git, with the functionality to automatically update NEWS.md and DESCRIPTION with relevant information from recent commit messages.
+- [Useful git pre-commit hooks for R related projects](https://lorenzwalthert.github.io/precommit/)
+Pre-commit hooks are tests that run each time you attempt to commit. If the tests pass, the commit will be made, otherwise not. A very basic test is to check if the code is parsable, making sure you have not forgotten a comma, brace or quote.
+
+
+​## web
+- COOL! [HTML Nuggets: Little bits that you may have forgotten, never learned, never realised, or ignored!](https://dev.to/robole/html-nuggets-little-bits-that-you-may-have-forgotten-never-learned-never-realised-or-ignored-5d2e#optimize-lazy-loading-of-images-and-iframes-with-raw-loading-endraw-attribute)
+
+# 26.04.2020
+## R
+- COOL! [Vertical intervals: lines, crossbars & errorbars](https://ggplot2.tidyverse.org/reference/geom_linerange.html)
+
+# 22.04.2020
+## R
+- COOL! [Automating R package checks across platforms with GitHub Actions and Docker in a portable way](https://jozef.io/r922-github-actions-r-packages/)
+- [How to make Powepoint Slides PPT using RStudio in 2020](https://www.programmingwithr.com/how-to-make-powepoint-slides-ppt-using-rstudio-in-2020/)
+- [prrd 0.0.3: More improvements](http://dirk.eddelbuettel.com/blog/2020/04/19/#prrd_0.0.3). The idea of prrd is simple, and described in some more detail on its webpage and its GitHub repo. Reverse dependency checks are an important part of package development and is easily done in a (serial) loop.
+- COOL! [No excuse not to be a Bayesian anymore](https://www.brodrigues.co/blog/2020-04-20-no_excuse/)
+- COOL! [A case against pipes in R and what to do instead](http://www.seascapemodels.org/rstats/2020/04/21/a-case-against-pipes.html)
+- COOL! [Automatic Code Cleaning in R with Rclean](https://ropensci.org/blog/2020/04/21/rclean/)
+- COOL! [How to showcase CSS+JS+HTML snippets with Hugo?](https://masalmon.eu/2020/04/21/css-snippet/)
+- [The Case for tidymodels](https://rviews.rstudio.com/2020/04/21/the-case-for-tidymodels/), 2020-04-21 by Joseph Rickert
+- [HOW TO CHECK IF GROCERIES ARE IN STOCK AND AUTOMATICALLY BUY THEM WITH R](http://theautomatic.net/2020/04/21/make-your-amazon-purchases-with-r/)
+- [Easy ggplot2 Theme customization with {ggeasy}](https://www.programmingwithr.com/easy-ggplot2-theme-customization-with-ggeasy/)
+- [Recreating a Shiny App with Flask](https://www.jumpingrivers.com/blog/r-shiny-python-flask/)
+
+
+# 18.04.2020
+## R
+- COOL! [annotater](https://luisdva.github.io/rstats/annotater/). The annotater package comes with a few addins for RStudio so we can easily add these comments to our code. This package follows the approach in styler for automatically adapting code to a formatting style.
+```
+# install.packages("remotes")
+remotes::install_github("luisdva/annotater")
+```
+
+
+# 17.04.2020
+## R
+- COOL! [Tests for Pairwise Mean Differences in R](https://timmastny.rbind.io/blog/tests-pairwise-categorical-mean-emmeans-contrast/)
+- COOL! [Dataviz and the 20th Anniversary of R, an Interview With Hadley Wickham](https://medium.com/nightingale/dataviz-and-the-20th-anniversary-of-r-an-interview-with-hadley-wickham-ea245078fc8a)
+Catching up with the creator of ggplot and tidyr about community, Tidyverse, and what’s in store for R over the next 20 years
+- [The Seven Key Things You Need To Know About dplyr 1.0.0](https://towardsdatascience.com/what-you-need-to-know-about-the-new-dplyr-1-0-0-7eaaaf6d78ac)
+- COOL! [dreamRs/colorscale](https://github.com/dreamRs/colorscale). Create a color scale from a single color
+- COOL! [IndrajeetPatil/statsExpressions](https://github.com/IndrajeetPatil/statsExpressions/blob/master/README.md). statsExpressions: Expressions with statistical details
+- Встраиваем данные в RMarkdown. `r xfun::embed_file('1.zip')`
+
+
+# 15.04.2020
+## R
+- Интересный пакет. [stringfish](https://github.com/traversc/stringfish/) is a fast framework for performing string and sequence operations. At a basic level, it uses the alt-rep system to speed up the comptuation of common string operations.
+- [eddelbuettel/rquantlib](https://github.com/eddelbuettel/rquantlib). R interface to the QuantLib library
+- Пример [andrewheiss/pie_(ch)art.md](https://gist.github.com/andrewheiss/937c18766d4ab6acdbda329aad4f35d8)
+- COOL! [The sass R package provides bindings to LibSass, a fast Sass compiler written in C++. Sass is a mature and stable CSS extension language that makes styling modern websites less complex and more composible](https://rstudio.github.io/sass/)
+- COOL! [flair](https://kbodwin.github.io/flair/index.html)
+The goal of flair is to is to provide tools for formatting R code in knitted R Markdown files.
+- COOL! [thomasp85/shinyFiles]. A shiny extension for server side file access
+
+
+# 14.04.2020
+## R
+- [Live data extraction with Cron and R](https://medium.com/analytics-vidhya/live-data-extraction-with-cron-and-r-f29324bf153e). Learn how to schedule robust data extraction with Cron and Docker containers.
+- COOL! [#25: Test, test, test, … those R 4.0.0 binaries with Ubuntu 20.04 and Rocker](http://dirk.eddelbuettel.com/blog/2020/04/12/#025_rocker_r_4_0_0_testing_Ubuntu_20_04)
+Welcome to the 25nd post in the randomly recurring R recitations series, or R4 for short.
+
+# 10.04.2020
+## R
+- COOL! Tibble 3.0. Надо разбираться со значительными изменениями
+	- [Invariants for subsetting and subassignment](https://tibble.tidyverse.org/articles/invariants.html)
+	- [Awesome VectoRs](https://github.com/krlmlr/awesome-vctrs#readme).
+A curated list of amazingly awesome R vector classes, and the packages that provide them.
+
+# 08.04.2020
+## R
+- COOL! [Appsilon’s shiny.info Development and Testing Shiny Package Released on CRAN](https://appsilon.com/appsilons-shiny-info-development-and-testing-shiny-package-released-on-cran/)
+- COOL! [Curated Regular Expression Resources](https://paulvanderlaken.com/2020/04/07/curated-regular-expression-resources/)
+- COOL! [Great Looking Tables: gt (v0.2)](https://blog.rstudio.com/2020/04/08/great-looking-tables-gt-0-2/)
+
+# 02.04.2020
+## R
+- [Source code from Rmd file within another Rmd](https://stackoverflow.com/questions/41962434/source-code-from-rmd-file-within-another-rmd)
+- [rstudio/rmarkdown. Clean temp files on exit #820 {Merged}](https://github.com/rstudio/rmarkdown/pull/820)
+- [12.2 Exit knitting early](https://bookdown.org/yihui/rmarkdown-cookbook/knit-exit.html)
+
+## RMarkdown
+- [knit. Chapter 15 Parameterized reports](https://bookdown.org/yihui/rmarkdown/parameterized-reports.html)
+
+# 31.03.2020
+## DS
+- [Индекс NPS — формула дружбы c клиентами](https://livetex.ru/blog/2018/01/indeks-nps-formula-druzhbyi-s-klientami/)
+- [Gary gtritchie. GitMemory](https://www.gitmemory.com/gtritchie). Old-time computer geek who still hasn't figured out what to be when he grows up. Possibly an older computer geek?
+
+## R
+- [foreach 1.5.0 now available on CRAN](https://blog.revolutionanalytics.com/2020/03/foreach-150-released.html)
+
+# 30.03.2020
+## R
+- [In R XML Package, what is the difference between xmlParse and xmlTreeParse?](https://stackoverflow.com/questions/20684507/in-r-xml-package-what-is-the-difference-between-xmlparse-and-xmltreeparse)
+- [How to efficiently detect parsing errors with xml2? #200 {Closed}](https://github.com/r-lib/xml2/issues/200)
+- Проблема со сборкой knit html
+	- [Error when compiling pdf using knitr in rstudio](https://www.javaear.com/question/16826153.html)
+	- [](https://community.rstudio.com/t/during-startup-warning-message-setting-lc-ctype-failed-on-windows/21451/2)
+- COOL! Генерация HTML руками внутри RMarkdown. Володя здорово придумал. Фокус в  том, что html создается через промежуточный .md. Для генерации HTML удобно использовать пакет `htmltools`:
+```
+> htmltools::a(href = "yandex.ru", "Яндекс") %>% htmltools::doRenderTags()
+<a href="yandex.ru">Яндекс</a>
+```
+Детали в Skype чате `Beluga R analytics`
+
+---
+title: "Тест разметки"
+author: "Панфилов Владимир"
+date: "07 10 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(glue)
+
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Тест вывода разметки
+
+```{r results="asis"}
+sections <- list(
+  list(
+    title = "Яндекс",
+    url = "https://yandex.ru/"
+  ),
+  list(
+    title = "Google",
+    url = "https://www.google.com/"
+  )
+)
+
+sections %>%
+  purrr::map_chr(~{
+    glue("* [{.x$title}]({.x$url})")
+  }) %>%
+  glue_collapse(sep = "\n\n")
+```
+s
+
+# 28.03.2020
+## DS
+- [D3 Graph Theory - Interactive Graph Theory Tutorials](https://d3gt.com/index.html)
+
+# 27.03.2020
+## R
+- [February 2020: "Top 40" New R Packages](https://rviews.rstudio.com/2020/03/26/february-2020-top-40-new-r-packages/), 2020-03-26 by Joseph Rickert
+	- [delayed v0.3.0](https://cran.r-project.org/web/packages/delayed/index.html): Implements mechanisms to parallelize dependent tasks in a manner that optimizes the computational resources. Functions produce “delayed computations” which may be parallelized using futures. See the vignette for details.
+	- [tergmLite v2.1.7](https://cran.r-project.org/web/packages/tergmLite/index.html): Provides functions to efficiently simulate dynamic networks estimated with the framework for temporal exponential random graph models implemented in the tergm package.
+	- [SeqDetect v1.0.7](https://cran.r-project.org/web/packages/SeqDetect/index.html): Implements the automaton model found in Krleža, Vrdoljak & Brčić (2019) to detect and process sequences. See the vignette for examples and theory.
+
+## Git
+- [How to update your Git credentials on Windows](https://cmatskas.com/how-to-update-your-git-credentials-on-windows/)
+`Control Panel -> Credential Manager -> Generic Credentials`,
+`Панель управления -> Все элементы панели управления -> Диспетчер учетных данных` 
+- [Доступ к диспетчеру учетных данных](https://support.microsoft.com/ru-ru/help/4026814/windows-accessing-credential-manager)
+- [7.14 Git Tools - Credential Storage](https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage)
+
+# 26.03.2020
+## R
+- [baRcodeR now on rOpenSci + online barcode PDF generation](https://www.yihanwu.ca/post/barcoder-0-1-5-now-released-online-barcode-pdf-generation/)
+- [New package RcppDate 0.0.1 now on CRAN!](http://dirk.eddelbuettel.com/blog/2020/03/24/#rcppdate_0.0.1)
+- COOL! [Faster R package installation](https://www.jumpingrivers.com/blog/faster-r-package-installation-rstudio/). March 23, 2020 by Colin Gillespie
+`install.packages("tidyverse", Ncpus = 6)`
+- [REPLACE NA IN ALL COLUMNS WITH DPLYR (#RSTATS)](https://rickpackblog.wordpress.com/2017/11/20/replace-na-in-all-columns-with-dplyr-rstats/)
+
+# 25.03.2020
+## blogdown
+- [Мой сайт на Netlify](https://app.netlify.com/sites/upbeat-fermi-2897d4/deploys)
+- [Как сделать редирект: подробный обзор для гуманитариев](https://texterra.ru/blog/kak-sdelat-redirekt-podrobnyy-obzor-dlya-gumanitariev.html)
+- [Как вручную выполнить переадресацию и маскировку домена или субдомена](https://ru.godaddy.com/help/kak-vruchnuyu-vypolnit-pereadresaciyu-i-maskirovku-domena-ili-subdomena-422)
+- [How to build a website with Blogdown in R](https://www.storybench.org/how-to-build-a-website-with-blogdown-in-r/)
+- [R Blogdown Setup in GitHub (2)](https://aurora-mareviv.github.io/talesofr/2018/02/r-blogdown-setup-in-github-2/)
+- [Setting up our blog with RStudio and blogdown I: Creating the blog](http://estebanmoro.org/post/2019-02-02-setting-up-your-blog-with-rstudio-and-blogdown-i-creating-the-blog/)
+- [Day 1: Getting started with blogdown](https://djnavarro.net/post/starting-blogdown/) by by Danielle Navarro, 27 Apr 2018
+- [Kiera theme](https://themes.gohugo.io/theme/hugo-kiera/)
+```
+install.packages("blogdown")
+blogdown::update_hugo()
+library(blogdown)
+blogdown::hugo_version()
+blogdown::new_site(theme = "funkydan2/hugo-kiera")
+blogdown::build_site()
+blogdown:::serve_site()
+servr::daemon_stop(1)
+```
+- COOL! [Using themes with blogdown: Lesson learned](https://portfolio.peter-baumgartner.net/2018/07/19/blogdown-using-themes/). См. "Problem solving strategies" и сслыки внизу статьи.
+- [Change your {blogdown} fonts](https://www.rostrum.blog/2018/11/29/fontface-lithium/). На [самом гугле](https://google-webfonts-helper.herokuapp.com/fonts/roboto?subsets=cyrillic,latin) смотрим на шрифты и читаем как настроить css.
+- [Кирилличские шрифты Google](https://fonts.google.com/?subset=cyrillic)
+
+# 23.03.2020
+## R
+- [MODELING PANDEMICS (1)](https://freakonometrics.hypotheses.org/60482)
+- [MODELING PANDEMICS (2)](https://freakonometrics.hypotheses.org/60543)
+- [MODELING PANDEMICS (3)](https://freakonometrics.hypotheses.org/60514)
+- COOL! [Deploying RMarkdown Online](https://jessecambon.github.io/2020/03/22/deploying-rmarkdown-online.html)
+- [QuantLib](https://www.quantlib.org/download.shtml). A free/open-source library for quantitative finance
+- COOL! [brodieG/diffobj](https://github.com/brodieG/diffobj). Compare R Objects with a Diff
+
+## python
+- [ftfy: fixes text for you](https://ftfy.readthedocs.io/en/latest/). ftfy fixes Unicode that’s broken in various ways.
+
 # 21.03.2020
 ## R
 - COOL! [gtsummary](http://www.danieldsjoberg.com/gtsummary/)
@@ -763,8 +998,10 @@ The {gtsummary} package provides an elegant and flexible way to create publicati
 
 ## R
 - COOL! [Shiny: Performance tuning with future & promises - Part 1](https://www.eoda.de/en/wissen/blog/shiny-performance-tuning-mit-future-promises-die-theorie)
-- [Extended floating point precision in R with Rmpfr](https://statisticaloddsandends.wordpress.com/2020/03/19/extended-floating-point-precision-in-r-with-rmpfr/)
+- COOL! [Extended floating point precision in R with Rmpfr](https://statisticaloddsandends.wordpress.com/2020/03/19/extended-floating-point-precision-in-r-with-rmpfr/)
 - COOL! [Extended floating point precision in R and C](https://www.johndcook.com/blog/2020/03/18/gnu-mpfrr-wrapper/)
+- [Get value from mpfr generated list](https://stackoverflow.com/questions/11498371/get-value-from-mpfr-generated-list). Я нашел решение -- смотреть в сторону `formatMpfr()`
+- [Collapse list of mpfr objects into single mpfr vector](https://stackoverflow.com/questions/20665553/collapse-list-of-mpfr-objects-into-single-mpfr-vector)
 
 ## DS
 - COOL! [Rewriting the heart of our sync engine](https://dropbox.tech/infrastructure/rewriting-the-heart-of-our-sync-engine)
@@ -838,6 +1075,12 @@ Calculate statistical significance of Jaccard/Tanimoto similarity coefficients f
 ## R
 - [Comparing Machine Learning Algorithms for Predicting Clothing Classes: Part 3](https://rviews.rstudio.com/2020/03/10/comparing-machine-learning-algorithms-for-predicting-clothing-classes-part-3/), 2020-03-10 by Florianne Verkroost
 - [Want to Build an AI Model for Your Business? Read this.](https://appsilon.com/want-to-build-an-ai-model-for-your-business-read-this/)
+
+## Oracle
+- [Show the structure of the table in SQL](https://stackoverflow.com/questions/7356338/show-the-structure-of-the-table-in-sql)
+- [How do I get column datatype in Oracle with PL-SQL with low privileges?](https://stackoverflow.com/questions/2339053/how-do-i-get-column-datatype-in-oracle-with-pl-sql-with-low-privileges)
+- [Get data type of field in select statement in ORACLE](https://stackoverflow.com/questions/22962114/get-data-type-of-field-in-select-statement-in-oracle/22962307)
+- [Oracle row count of table by count(*) vs NUM_ROWS from DBA_TABLES](https://stackoverflow.com/questions/14125731/oracle-row-count-of-table-by-count-vs-num-rows-from-dba-tables)
 
 ## ROracle
 - [Кириллица в клиенте Oracle Database](https://gee12.space/kirillica-v-subd-oracle/)
@@ -1053,6 +1296,10 @@ done
 - [How to check if one file is empty and another one is not in one condition using bash](https://stackoverflow.com/questions/8288700/how-to-check-if-one-file-is-empty-and-another-one-is-not-in-one-condition-using)
 - [Is double square brackets [[ ]] preferable over single square brackets [ ] in Bash?](https://stackoverflow.com/questions/669452/is-double-square-brackets-preferable-over-single-square-brackets-in-ba)
 - [What is the difference between the Bash operators [[ vs [ vs ( vs ((?](https://unix.stackexchange.com/questions/306111/what-is-the-difference-between-the-bash-operators-vs-vs-vs)
+- [How to zip the standard output of a process?](https://serverfault.com/questions/366388/how-to-zip-the-standard-output-of-a-process)
+- [What does “{} \;” mean in the find command?](https://askubuntu.com/questions/339015/what-does-mean-in-the-find-command)
+- [How to use regex with find command?](https://stackoverflow.com/questions/6844785/how-to-use-regex-with-find-command)
+- [Linux Find Command Tutorial](https://linuxhint.com/linux-find-command-tutorial/)
 
 # 25.02.2020
 ## R
@@ -2602,6 +2849,7 @@ f_dowle3 = function(DT) {
 
 # 02.08.2019
 ## Stat
+- [Центральная предельная теорема](https://www.mathelp.spb.ru/book2/tv13.htm) имеет несколько формулировок, мы не будем их здесь полностью приводить и доказывать. Для нас важно знать только то, что в большинстве случаев среднее арифметическое выборки, взятой из генеральной совокупности (напомним, что это среднее арифметическое - тоже случайная величина), ложится на нормальное распределение гораздо лучше, чем исходная генеральная совокупность. Другими словами, если мы возьмем несколько выборок из генеральной совокупности, то средние арифметические величины этих выборок будут представлять собой новую случайную величину с практически нормальным распределением. Именно эта теорема и позволит нам проверять так называемые статистические гипотезы, т.е. делать заключение о наличии тенденции к изменению показателей деятельности, которые сами по себе, являясь случайными величинами, имеют право на некоторый разброс.
 - Путь воина
 	- [Построение доверительного интервала для математического ожидания генеральной совокупности](http://baguzin.ru/wp/postroenie-doveritelnogo-intervala/)
 	- [Определение объема выборки](http://baguzin.ru/wp/opredelenie-obema-vyborki/)
@@ -2609,7 +2857,13 @@ f_dowle3 = function(DT) {
 - [Полезные статьи → Как правильно рассчитать объем выборки?](https://blog.anketolog.ru/2015/12/vyborka/)
 - [Как определить размер выборки?](https://habr.com/ru/post/339798/)
 - [Классические методы статистики: t-критерий Стьюдента](https://r-analytics.blogspot.com/2012/03/t.html). t.test, Student
+- [Интервальное оценивание параметров распределения](https://r-analytics.blogspot.com/2018/04/blog-post_28.html)
 - [Shapiro-Wilk Test for Normality in R](https://jointhedatathread.com/2019/08/08/shapiro-wilk-test-for-normality-in-r/)
+
+- [Доверительные интервалы в R](https://rpubs.com/AllaT/conf-ints)
+- [T confidence interval for a mean](https://cran.r-project.org/web/packages/distributions3/vignettes/one-sample-t-confidence-interval.html)
+- [9. Calculating Confidence Intervals](https://www.cyclismo.org/tutorial/R/confidence.html)
+- [Как вычислить доверительный интервал](https://ru.wikihow.com/%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D1%8C-%D0%B4%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B2%D0%B0%D0%BB)
 
 ## R
 - [rayshader](https://www.rayshader.com/) is an open source package for producing 2D and 3D data visualizations in R. rayshader uses elevation data in a base R matrix and a combination of raytracing, spherical texture mapping, overlays, and ambient occlusion to generate beautiful topographic 2D and 3D maps. In addition to maps, rayshader also allows the user to translate ggplot2 objects into beautiful 3D data visualizations.
@@ -3747,13 +4001,16 @@ The benchmark was carried out using a Google Compute n1-standard-16 instance (16
 - [Progress bar with estimated time](https://dplyr.tidyverse.org/reference/progress_estimated.html)
 
 ## jq
+- [jq Language Description](https://github.com/stedolan/jq/wiki/jq-Language-Description)
+- [jqplay](https://jqplay.org/)
+
 - [Using jq how can I replace the name of a key with something else](https://stackoverflow.com/questions/43522133/using-jq-how-can-i-replace-the-name-of-a-key-with-something-else)
 - [Rename a key in an object #1167 {Closed}](https://github.com/stedolan/jq/issues/1167)
 - [Reshaping JSON with jq](https://programminghistorian.org/en/lessons/json-and-jq)
-- [jqplay](https://jqplay.org/)
 - [Flatten array objects with parent values? #646 {Closed}](https://github.com/stedolan/jq/issues/646)
 - [Hyperpolyglot. JSON Tools: JQ](http://hyperpolyglot.org/json)
 - [Change a nested field name #670 {Closed}](https://github.com/stedolan/jq/issues/670)
+- [Remove blank strings from array with jq?](https://stackoverflow.com/questions/44288635/remove-blank-strings-from-array-with-jq/44289083)
 - [JQ Cookbook](https://github.com/stedolan/jq/wiki/Cookbook)
 - [JQ FAQ](https://github.com/stedolan/jq/wiki/FAQ)
 ```

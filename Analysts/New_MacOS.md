@@ -150,6 +150,13 @@ https://www.hightechdad.com/2017/02/06/onedrive-sync-issues-how-to-reset-onedriv
 - [Как продлить время автономной работы iPhone с iOS 9](https://www.iphones.ru/iNotes/481843)
 - ["Null" app can't be deleted](https://discussions.apple.com/thread/6861025?start=0&tstart=0)
 - [Erasing All iPhone Skype Data and Chats Permanently](https://www.imyfone.com/ios-data-erase/permanently-erase-all-skype-tracks-on-iphone/)
+- [iPhone Backup Extractor](https://reincubate.com/ru/iphone-backup-extractor/)
+Восстановление и передача потерянных сообщений iPhone, фотографий, календарей, контактов, заметок, местоположений и данных из резервных копий iPhone и iCloud.
+
+## iPhone backup & restore
+- [Зашифрованные резервные копии на iPhone, iPad или iPod touch](https://support.apple.com/ru-ru/HT205220)
+- [Как восстановить потерянный резервный пароль iPhone - 5 способов](https://reincubate.com/ru/support/how-to/iphone-backup-password-encrypted/)
+- [Ты забыл пароль резервной копии iPhone. Как отключить](https://www.iphones.ru/iNotes/694246)
 
 # Разное
 - [Top 10 Best VPN](http://www.top10bestvpn.com/). Find the Best VPN Service for You. Check out our top VPN services for total privacy, protection and super-fast connections.

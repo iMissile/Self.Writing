@@ -1,3 +1,6 @@
+# Package manager
+- COOL! [Chocolatery. The Package Manager for Windows](https://chocolatey.org/). Modern Software Automation
+
 # Бесплатные лицензии
 - [COMSS1](https://www.comss.ru/list.php?c=club)
 
@@ -174,6 +177,10 @@ SP1 можно получить через web: [Service Pack and Update Center]
 http://answers.microsoft.com/en-us/windows/forum/windows_10-security/event-id-10016-runtime-broker/18c291c6-f2a1-4f3c-b4ad-2b7ff59fd9f9?auth=1
 Закрыть
 
+## Проблемы с Wi-Fi
+- [Пропадает интернет (Wi-Fi) в Windows 10 после выхода из спящего режима](https://help-wifi.com/reshenie-problem-i-oshibok/propadaet-internet-wi-fi-v-windows-10-posle-vyxoda-iz-spyashhego-rezhima/).
+Это происходит потому, что для экономии, система отключает Wi-Fi адаптер. А после включения, он уже не может нормально работать, поэтому и пропадает интернет. Эта проблема очень часто возникает только при работе от батареи.Все что нужно сделать, это запретить "десятке" отключать беспроводной сетевой адаптер.
+
 ## Tools
 - [7 best tabbed command line tools for Windows 10](https://windowsreport.com/tabbed-command-line-windows-10/)
 	- Console2
@@ -245,9 +252,16 @@ Reboot your computer.
 - [How to turn off images in Firefox](https://www.ghacks.net/2015/03/24/how-to-turn-off-images-in-firefox/)
 - [Image Block add-on](https://addons.mozilla.org/en-US/firefox/addon/image-block/)
 
+## RDP
+- [Как нажать Ctrl+Alt+Del работая удаленно через RDP ?](https://sysadmin.ru/articles/kak-nazhat-ctrlaltdel-rabotaya-udalenno-cherez-rdp). На помощь нам придет другая комбинация клавиш. Чтобы добиться аналогичного эффекта на удаленном компьютере, нужно нажать комбинацию клавиш `Control+Alt+End` (сокр. `Ctrl+Alt+End`).
+
 ## Password Manager
 - [Достаём мастер-пароль из заблокированного менеджера паролей 1Password 4](https://habr.com/ru/post/441166/)
 - [Bitwarden](https://bitwarden.com/). Solve your password management problems. The easiest and safest way for individuals, teams, and business organizations to store, share, and sync sensitive data.
+	- [Family vs Premium?](https://www.reddit.com/r/Bitwarden/comments/7o7vjs/family_vs_premium/)
+	- [What are organizations?](https://help.bitwarden.com/article/what-is-an-organization/)
+- [Backing Up My Bitwarden Database](https://blog.patshead.com/2019/09/backing-up-my-bitwarden-database.html)
+- [Offline management of (writeable) vault items](https://community.bitwarden.com/t/offline-management-of-writeable-vault-items/107)
 - [Password Managers: Under the Hood of Secrets Management](https://www.securityevaluators.com/casestudies/password-manager-hacking/). February 19, 2019
 - [Альтернативы LastPass. Сравнительная оценка шести парольных менеджеров](https://habr.com/ru/post/434314/)
 - [You were not born to remember passwords](https://www.enpass.io/)
@@ -425,7 +439,8 @@ Step 4: Reopen Steam and log in, then point Steam to your new directory and veri
 - [Xshell 5]()
 - [Xshell 6]()
 
-
+## Video
+- [19 команд ffmpeg для любых нужд](https://habr.com/ru/post/171213/)
 
 
 
