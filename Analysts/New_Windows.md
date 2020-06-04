@@ -191,6 +191,7 @@ http://answers.microsoft.com/en-us/windows/forum/windows_10-security/event-id-10
 	- ConEmu
 	- PowerShell ISE
 - [Windows Command Line Tools For Developers. Tabbed Console starts here](https://blogs.msdn.microsoft.com/commandline/2018/04/13/tabbed-console-starts-here/)
+- COOL! [Windows Terminal 1.0](https://devblogs.microsoft.com/commandline/windows-terminal-1-0/)
 - [Direct Folders — экономим клики при работе с файлами в Windows](https://lifehacker.ru/direct-folders-ekonomim-kliki-pri-rabote-s-fajlami-v-windows/)
 - [Listary](https://www.listary.com/) is a revolutionary search utility for Windows that makes finding your files and launching applications blazing fast, for casual and power users alike!
 - [Clover 3](http://en.ejie.me/). Wings for your Windows Explorer! Clover is an extension of the Windows Explorer, to add multi-tab functionality similar to Google Chrome browser. After install Clover, you will be able to open multiple folders within the same window, and you can also add folder bookmarks.
@@ -252,6 +253,9 @@ Reboot your computer.
 - [How to turn off images in Firefox](https://www.ghacks.net/2015/03/24/how-to-turn-off-images-in-firefox/)
 - [Image Block add-on](https://addons.mozilla.org/en-US/firefox/addon/image-block/)
 
+## Проблемы с сетевым подключением
+- [Неопознанная сеть без доступа к Интернету - причины и решение](https://ocomp.info/neopoznannaya-set-bez-interneta.html)
+
 ## RDP
 - [Как нажать Ctrl+Alt+Del работая удаленно через RDP ?](https://sysadmin.ru/articles/kak-nazhat-ctrlaltdel-rabotaya-udalenno-cherez-rdp). На помощь нам придет другая комбинация клавиш. Чтобы добиться аналогичного эффекта на удаленном компьютере, нужно нажать комбинацию клавиш `Control+Alt+End` (сокр. `Ctrl+Alt+End`).
 
@@ -271,6 +275,11 @@ Reboot your computer.
 http://macappstore.org/openconnect/
 http://www.infradead.org/openconnect/download.html
 https://openconnect.github.io/openconnect-gui/ (edited) 
+
+## Web camera
+- [3 Ways to Fix Camera App Not Working in Windows 10](https://www.top-password.com/blog/fix-camera-app-not-working-in-windows-10/)
+- [Как исправить ошибку веб-камеры в Windows 10](https://siniy-ekran.ru/poleznoe/kak-ispravit-oshibku-veb-kamery-v-windows-10/)
+!!! Посмотрел по фото на ваш ноутбук: там на клавише Esc случайно не значок перечеркнутой камеры? Если он, то попробуйте либо просто клавишу Esc, либо Fn+эту_клавишу.
 
 ## Photoshop
 - COOL! [20 Free Spray Paint Photoshop Brushes with Splatters & Drips](https://blog.spoongraphics.co.uk/freebies/20-free-spray-paint-photoshop-brushes-with-splatters-drips)

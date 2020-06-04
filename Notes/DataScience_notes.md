@@ -123,6 +123,7 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/) by Yihui Xie
 - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/) by Yihui Xie, J. J. Allaire, Garrett Grolemund
 - [Distill for R Markdown](https://rstudio.github.io/distill/). Scientific and technical writing, native to the web
+- [Mastering Shiny](https://mastering-shiny.org/) by Hadley Wickham
 - [R Internals. R Core Team](https://colinfay.me/r-internals/)
 - [Efficient R programming](https://bookdown.org/csgillespie/efficientR/)
 - [Efficient R programming](https://csgillespie.github.io/efficientR/), Colin Gillespie, Robin Lovelace, 2017-04-10
@@ -142,7 +143,9 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - [R Internals](https://cran.r-project.org/doc/manuals/r-release/R-ints.html)
 - [Mastering Spark with R](https://therinspark.com/)
 - [Field Guide to the R Ecosystem](http://fg2re.sellorm.com/)
-- [Feature Engineering and Selection: A Practical Approach for Predictive Models](http://www.feat.engineering/) by Max Kuhn and Kjell Johnson
+- New site. [Feature Engineering and Selection: A Practical Approach for Predictive Models](https://bookdown.org/max/FES/) by Max Kuhn and Kjell Johnson
+	- Max Kuhn @topepos. All of the analysis R code for our Feature Engineering and Selection book is now [on GitHub at](https://github.com/topepo/FES)
+	- OLD. [Feature Engineering and Selection: A Practical Approach for Predictive Models](http://www.feat.engineering/) by Max Kuhn and Kjell Johnson
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/bookdown.pdf)
 - [Hands-on Deep Reinforcement Learning, published by Packt](https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On)
 - [Hands-on Machine Learning with R](https://bradleyboehmke.github.io/HOML/) by Brad Boehmke & Brandon Greenwell, 2019-05-25
@@ -157,7 +160,7 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 	- MS: [One Page R Data Science. Coding with Style](https://essentials.togaware.com/StyleO.pdf) by Graham.Williams@togaware.com, Visit https://essentials.togaware.com/onepagers for more Essentials.
 	- [Google's R Style Guide](https://google.github.io/styleguide/Rguide.xml)
 - ModernDive. [An Introduction to Statistical and Data Sciences via R](https://moderndive.com/)
-- ModernDive dev version. [Statistical Inference via Data Science in R](https://moderndive.netlify.com/)
+- ModernDive dev version. [Statistical Inference via Data Science in R](https://bookdown.org/cteplovs/moderndive_book/)
 - [An Introduction to Statistical and Data Sciences via R](https://moderndive.com/) by Chester Ismay and Albert Y. Kim, July 21, 2018
 - [edav.info/](https://edav.info/index.html). This resource is specifically tailored to the GR5702 Exploratory Data Analysis and Visualization course offered at Columbia University. However, anyone interested in working with data in R will benefit from perusing these pages. Happy coding!
 - [Text Mining with R. A Tidy Approach](https://www.tidytextmining.com/) by Julia Silge and David Robinson
@@ -169,6 +172,7 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - [Mining of Massive Datasets](http://www.mmds.org/)
 - [Circular Visualization in R](https://jokergoo.github.io/circlize_book/book/) by Zuguang Gu. This is the documentation of the [circlize](https://cran.r-project.org/package=circlize) package. Examples in the book are generated under version 0.4.7.
 - [GAM IN R by NOAM ROSS](https://noamross.github.io/gams-in-r-course/). A Free, Interactive Course using mgcv
+	- [A practical guide and power analysis for GLMMs: detecting among treatment variation in random effects](https://peerj.com/articles/1226/)
 - [Supplement to Shiny in Production](https://kellobri.github.io/shiny-prod-book/)
 - [What They Forgot to Teach You About R](https://whattheyforgot.org/) by Jennifer Bryan, Jim Hester
 - COOL! [Data Science at the Command Line](https://www.datascienceatthecommandline.com/) by Jeroen Janssens, August 16, 2019
@@ -179,6 +183,8 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/)
 - [14 Essential Books to Improve Your Tableau and Visualization Skills](https://www.thedataschool.co.uk/pablo-saenz/14-essential-books-to-improve-your-tableau-and-visualization-skills/)
 - [A Very Short Course on Time Series Analysis](https://bookdown.org/rdpeng/timeseriesbook/) by Roger D. Peng
+- [Using Spark from R for performance with arbitrary code](https://sparkfromr.com/) by Jozef Hajnala, 2020-02-20
+- COOL! [My Data Science Notes](https://bookdown.org/mpfoley1973/data-sci/) by Michael Foley, 2020-03-31
 
 
 
@@ -301,6 +307,42 @@ Survival analysis is long-established within actuarial science but infrequently 
 	- [How to use dplyr's enquo and quo_name in a function with tidyr and ggplot2](https://stackoverflow.com/questions/43405843/how-to-use-dplyrs-enquo-and-quo-name-in-a-function-with-tidyr-and-ggplot2)
 - Learning. [Tidyverse evolutions: curly-curly operator and pivoting (feat. tidytuesday data & leaflet visuals)](https://heads0rtai1s.github.io/2019/11/07/tidy-curly-pivot-leaflet/)
 - COOL! Learning. [Practical Tidy Evaluation](https://jessecambon.github.io/2019/12/08/practical-tidy-evaluation.html), Dec 8, 2019 • Jesse Cambon
+
+# dplyr tricks
+- dplyr select by number/position. Переименовываем колонки (добавляем префикс)
+	- [dplyr: Renaming variables with rename_](https://stackoverflow.com/questions/41921094/dplyr-renaming-variables-with-rename)
+	- [Copy a column and add a prefix to new column in R with dplyr](https://stackoverflow.com/questions/40929674/copy-a-column-and-add-a-prefix-to-new-column-in-r-with-dplyr)
+	- [Adding prefix or suffix to most data.frame variable names in piped R workflow](https://stackoverflow.com/questions/29948876/adding-prefix-or-suffix-to-most-data-frame-variable-names-in-piped-r-workflow)
+	- [dplyr- renaming sequence of columns with select function](https://stackoverflow.com/questions/31845966/dplyr-renaming-sequence-of-columns-with-select-function/31846038#31846038)
+	- [Column names with spaces or other special characters #2243](https://github.com/tidyverse/dplyr/issues/2243)
+	- [Selecting with dplyr by variable name, some column names are numbers](https://stackoverflow.com/questions/42854958/selecting-with-dplyr-by-variable-name-some-column-names-are-numbers)
+	- [Select multiple columns with `dplyr::select()` with numbers as names](https://stackoverflow.com/questions/38093584/select-multiple-columns-with-dplyrselect-with-numbers-as-names/38093676)
+	- [dplyr: select columns by position in NSE](https://stackoverflow.com/questions/42493381/dplyr-select-columns-by-position-in-nse). Another solution with dplyr :
+```
+DF %>%
+  select(!!c(1, 28:31))
+```
+	- COOL! Весьма детально разобрано. [How to dplyr rename a column, by column index?](https://stackoverflow.com/questions/42769650/how-to-dplyr-rename-a-column-by-column-index)
+	- [R: dplyr - Rename column name by position instead of name](https://stackoverflow.com/questions/29586219/r-dplyr-rename-column-name-by-position-instead-of-name/46223401)
+- [Conditional replacement of column name in tibble using dplyr](https://stackoverflow.com/questions/43578723/conditional-replacement-of-column-name-in-tibble-using-dplyr)
+cf : https://www.rdocumentation.org/packages/dplyr/versions/0.7.6/topics/select
+- [Exclude columns by names in mutate_at in dplyr](https://stackoverflow.com/questions/44532888/exclude-columns-by-names-in-mutate-at-in-dplyr)
+	- `mtcars %>% mutate_at(vars(-mpg, -cyl), max)` or 
+	- `mtcars %>% mutate_at(vars(-one_of("mpg", "cyl")), max)`
+- Существенный апдейт в dplyr 1.0 в выборе колонок, которых не существует в данных
+	- COOL! [dplyr 1.0.0: select, rename, relocate](https://www.tidyverse.org/blog/2020/03/dplyr-1-0-0-select-rename-relocate/)
+	- [dplyr::select() with some variables that may not exist in the data frame?](https://stackoverflow.com/questions/51529294/dplyrselect-with-some-variables-that-may-not-exist-in-the-data-frame)
+	- [Select helpers](https://tidyselect.r-lib.org/reference/select_helpers.html). `any_of()`: Same as `all_of()`, except that no error is thrown for names 
+that don't exist.
+	- [tidyr 1.1.0](https://www.tidyverse.org/blog/2020/05/tidyr-1.1.0/)
+- Сортировка строк с указанием индексов колонок
+	- [Arranging rows in custom order using dplyr](https://stackoverflow.com/questions/46129322/arranging-rows-in-custom-order-using-dplyr)
+```
+df %>%
+     arrange_at(2:3, desc) %>%
+     arrange(match(Reg, c("C", "A", "B")))
+```
+
 
 
 # data.table
@@ -451,7 +493,13 @@ system.time(
 ```
 - [An alternative to mutate_if in data.table](https://stackoverflow.com/questions/56995839/an-alternative-to-mutate-if-in-data-table/56996168)
 - [.EACHI in data.table?](https://stackoverflow.com/questions/27004002/eachi-in-data-table/27004566#27004566)
-
+- [How to apply same function to every specified column in a data.table](https://stackoverflow.com/questions/16846380/how-to-apply-same-function-to-every-specified-column-in-a-data-table)
+- [How to exclude one column from data.table OR convert to data.table to MTS](https://stackoverflow.com/questions/12046079/how-to-exclude-one-column-from-data-table-or-convert-to-data-table-to-mts)
+- [How do I exclude columns from a data.table?](https://stackoverflow.com/questions/37210489/how-do-i-exclude-columns-from-a-data-table)
+Also, in case you would not wish to change the data.table, but merely return the columns except some columns, you can do:
+```
+dt[,.SD, .SDcols = !c('b', 'c')]
+```
 
 # DS
 - COOL! [Машинное обучение для людей. Разбираемся простыми словами](https://vas3k.ru/blog/machine_learning/)
@@ -751,10 +799,317 @@ The course covers scalable machine learning and data mining algorithms for large
 - Интересно поглядеть. [unDocUMeantIt/koRpus](https://github.com/undocumeantit/korpus). An R Package for Text Analysis
 - [Поиск похожих документов с MinHash + LHS](https://habr.com/ru/post/250673/)
 
+# 03.06.2020
+## R
+- [A List of ggplot2 extensions](https://exts.ggplot2.tidyverse.org/)
+This site tracks and lists ggplot2 extensions developed by R users in the community.
+The aim is to make it easy for R users to find developed extensions.
+- COOL! [Effectively Deploying and Scaling Shiny Apps with ShinyProxy, Traefik and Docker Swarm](https://www.databentobox.com/2020/05/31/shinyproxy-with-docker-swarm/)
+- COOL! [Deploying R Shiny apps using ShinyProxy on Windows 10](https://www.databentobox.com/2019/11/05/deploy-r-app-with-shinyproxy/)
+- [Using plyr::mapvalues with dplyr](https://stackoverflow.com/questions/28013652/using-plyrmapvalues-with-dplyr)
+- [plyr mapvalues function ported into dplyr #4310 {Closed}](https://github.com/tidyverse/dplyr/issues/4310)
+
+## SQL
+- [8 способов объединения (JOIN) таблиц в SQL. Часть 2](http://datareview.info/article/8-sposobov-obedineniya-join-tablic-v-sql-chast-2/)
+- [Introduction to SQL LEFT JOIN clause](https://www.sqltutorial.org/sql-left-join/)
+
+# 02.06.2020
+## R
+- [{sergeant} 0.9.0 Is On Its Way to CRAN Mirrors!](https://rud.is/b/2020/06/01/sergeant-0-9-0-is-on-its-way-to-cran-mirrors/)
+- [dplyr 1.0.0 available now!](https://www.tidyverse.org/blog/2020/06/dplyr-1-0-0/)
+- COOL! [The book: Everything curl](https://curl.haxx.se/docs/)
+	- [Command line options](https://ec.haxx.se/cmdline/cmdline-options)
+
+# 01.06.2020
+## R
+- COOL! [Adding new columns to a data.table by-reference within a function not always working](https://stackoverflow.com/questions/28078640/adding-new-columns-to-a-data-table-by-reference-within-a-function-not-always-wor)
+Q: Is this a pointer issue ala this issue, like serializing a data.table destroys the over-allocated pointers?
+A: Yes loading from disk sets the external pointer to NULL. We will have to over-allocate again.
+Q: Is there a simple way to restore them?
+A: Yes. You can test for `truelength()` of the `data.table`, and if it's 0, then use `setDT()` or `alloc.col()` on it.
+
+## data.table
+Навеяно темой антиджойнов
+- [Getting started with data.table](https://riptutorial.com/data-table)
+- Подробное объяснение синтаксиса `[`. [data.table Details](https://rdatatable.gitlab.io/data.table/reference/data.table.html).
+The way to read this out loud is: "Take DT, subset rows by i, then compute j grouped by by. Here are some basic usage examples expanding on this definition. See the vignette (and examples) for working examples.
+- Jan Gorecki blog [Solve common R problems efficiently with data.table](https://jangorecki.github.io/blog/2015-12-11/Solve-common-R-problems-efficiently-with-data.table.html)
+```
+# right outer join keyed data.tables
+dt1[dt2]
+# right outer join unkeyed data.tables - use `on` argument
+dt1[dt2, on = "CustomerId"]
+# left outer join - swap dt1 with dt2
+dt2[dt1, on = "CustomerId"]
+# inner join - use `nomatch` argument
+dt1[dt2, nomatch=0L, on = "CustomerId"]
+# anti join - use `!` operator
+dt1[!dt2, on = "CustomerId"]
+# inner join
+merge(dt1, dt2, by = "CustomerId")
+# full outer join
+merge(dt1, dt2, by = "CustomerId", all = TRUE)
+# see ?merge.data.table arguments for other cases
+```
+
+## DS
+- [Лекарей сжигать нельзя беречь сейчас](https://habr.com/ru/company/ods/blog/500206/) Блог компании Open Data Science.
+TLDR: кому перестановки делают больнее — меряем свёрткой графов.
+
+## Статистика
+- [Bootstrapping in R](http://sanaitics.com/UploadedFiles/html_files/3820Bootstrapping_in_R.html)
+- [Confidence Intervals for Medians](https://rcompanion.org/handbook/E_04.html)
+- [3.14.1 Wilcoxon rank sum test](https://bookdown.org/danieljcarter/r4steph/non-parametric-tests.html)
+- COOL! [Mann-Whitney test is not just a test of medians: differences in spread can be important](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1120984/)
+- [Классические методы статистики: критерий Уилкоксона](https://r-analytics.blogspot.com/2012/05/blog-post_20.html)
+- [Критерий Уилкоксона-Манна-Уитни](http://www.machinelearning.ru/wiki/index.php?title=%D0%9A%D1%80%D0%B8%D1%82%D0%B5%D1%80%D0%B8%D0%B9_%D0%A3%D0%B8%D0%BB%D0%BA%D0%BE%D0%BA%D1%81%D0%BE%D0%BD%D0%B0-%D0%9C%D0%B0%D0%BD%D0%BD%D0%B0-%D0%A3%D0%B8%D1%82%D0%BD%D0%B8). U-критерий можно применять для проверки гипотезы сдвига в качестве альтернативной H_{1}:\; F(x)=G(x+r), где r — некоторая константа, отличная от нуля. При этой альтернативе U-критерий является состоятельным. Его целесообразно применять, если одним и тем же прибором проводятся две серии измерений двух значений некоторой физической величины. При этом функция распределения G(x) описывает погрешности измерения одного значения, а G(x+r) — другого. Однако во многих приложениях (в частности, эконометрических) нет особых оснований предполагать, что распределение второй выборки лишь сдвигается, но не меняется каким-либо иным образом.
+- [Непараметрические методы сравнения двух выборок и их применение в R](https://samoedd.com/soft/r-nonparametric-tests)
+- [Критерий Манна-Уитни](http://matstats.ru/mann.html)
+- [FAQ: WHY IS THE MANN-WHITNEY SIGNIFICANT WHEN THE MEDIANS ARE EQUAL?](https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-why-is-the-mann-whitney-significant-when-the-medians-are-equal/)
+- [Mann Whitney U Test (Wilcoxon Rank Sum Test)](http://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_nonparametric/BS704_Nonparametric4.html)
+- Здесь картинки, используемые в презентации. [The Mann-Whitney test doesn't really compare medians](https://www.graphpad.com/guides/prism/7/statistics/stat_nonparametric_tests_dont_compa.htm). You'll sometimes read that the Mann-Whitney test compares the medians of two groups. But this is not exactly true, as this example demonstrates...
+If you make an additional assumption -- that the distributions of the two populations have the same shape, even if they are shifted (have different medians) -- then the Mann-Whiteny test can be considered a test of medians. If you accept the assumption of identically shaped distributions, then a small P value from a Mann-Whitney test leads you to conclude that the difference between medians is statistically significant. But Michael J. Campbell pointed out, "However, if the groups have the same distribution, then a shift in location will move medians and means by the same amount and so the difference in medians is the same as the difference in means. Thus the Mann-Whitney test is also a test for the difference in means."
+- COOL! [Interpreting results: Mann-Whitney test](https://www.graphpad.com/guides/prism/7/statistics/how_the_mann-whitney_test_works.htm). 
+The Mann-Whitney test, also called the Wilcoxon rank sum test, is a nonparametric test that compares two unpaired groups.
+The Mann-Whitney test compares the distributions of ranks in two groups. If you assume that both populations have distributions with the same shape (which doesn't have to be Gaussian), it can be viewed as a comparison of two medians. Note that if you don't make this assumption, the Mann-Whitney test does not compare medians.
+- [Are large data sets inappropriate for hypothesis testing?](https://stats.stackexchange.com/questions/2516/are-large-data-sets-inappropriate-for-hypothesis-testing)
+- [Problem with Mann-Whitney U-test for large samples {duplicate}](https://stats.stackexchange.com/questions/261031/problem-with-mann-whitney-u-test-for-large-samples)
+
+
+# 31.05.2020
+## R
+- [r-project SSL/TLS Certificate Status](https://rud.is/r-project-cert-status/)
+- [Mimic Excel's Conditional Formatting in R](https://trinostics.blogspot.com/2020/05/mimic-excels-conditional-formatting-in-r.html)
+- [Don’t Feel Guilty About Selecting Variables](https://github.com/WinVector/vtreat/blob/master/extras/VariablePruning/Variable_Selection.md), John Mount 2020-05-30
+- [pins 0.4: Versioning](http://pins.rstudio.com/blog/posts/pins-0-4-0/)
+- [Don’t Feel Guilty About Selecting Variables](http://www.win-vector.com/blog/2020/05/dont-feel-guilty-about-selecting-variables/)
+- [Using differential privacy to reuse training data](http://www.win-vector.com/blog/2015/10/using-differential-privacy-to-reuse-training-data/)
+
+# 29.05.2020
+## R
+- COOL! [waldo](https://waldo.r-lib.org/)
+The goal of waldo is to find and concisely describe the difference between a pair of R objects, with the primary goal of making it easier to figure out what’s gone wrong in your unit tests.
+- COOL! [Superior svg graphics rendering in R, and why it matters](https://ropensci.org/technotes/2020/05/28/rsvg2/)
+- COOL! [How to Safely Remove a Dynamic Shiny Module](https://appsilon.com/how-to-safely-remove-a-dynamic-shiny-module/)
+- COOL! [Shiny: Add/Removing Modules Dynamically](https://roh.engineering/post/shiny-add-removing-modules-dynamically/)
+- Интересно. [lrberge/dreamerr. Error Handling Made Easy, in R](https://github.com/lrberge/dreamerr)
+- [textplot: Text Plots](https://cran.r-project.org/web/packages/textplot/index.html). Visualise complex relations in texts.
+- Learning. COOL! [Exploratory Data Analysis in R](https://mgimond.github.io/ES218/index.html). В частности про `tidyr` и `pivot_wider`:
+	- [Tidying/reshaping tables using tidyr](https://mgimond.github.io/ES218/Week03b.html)
+- [ALISON HILL. How I Teach R Markdown](https://alison.rbind.io/post/2020-05-28-how-i-teach-r-markdown/)
+
+# 27.05.2020
+- COOL! [My Favorite dplyr 1.0.0 Features](https://www.tychobra.com/posts/2020-05-27-new-dplyr-features/) by Nick Merlino, 2020/05/27
+- [RStudio 1.3 Released](https://blog.rstudio.com/2020/05/27/rstudio-1-3-release/), Jonathan McPherson, 2020-05-27
+- [dtplyr speed benchmarks](https://iyarlin.github.io/2020/05/26/dtplyr_benchmarks/), 2020/05/26
+- COOL! [caracas: Computer Algebra in R via SymPy](https://mikl.dk/post/2020-caracas_v101/)
+
+# 26.05.2020
+## R
+- [Watch if R is running from Shiny](https://colinfay.me/watch-r-shiny/)
+- COOL! [Installation of R 4.0 on Ubuntu 20.04 LTS and tips for spatial packages](https://rtask.thinkr.fr/installation-of-r-4-0-on-ubuntu-20-04-lts-and-tips-for-spatial-packages/)
+- [timetrackR](https://timetrackr.shinyapps.io/timetrackr/) is a tool to analyze how you are spending your time. The idea is that you track how you are spending your time in toggl, then export the data from toggl into timetrackR for insights about where your time is going. All code is available on [GitHub](https://github.com/jalavery/timetrackR).
+
+# 25.05.2020
+## RStudio
+- [How to remove a project name from the Rstudio Projects menu @RStudio IDE?](https://community.rstudio.com/t/how-to-remove-a-project-name-from-the-rstudio-projects-menu/6820)
+If you're on Windows you can find the projects MRU in `C:\Users\<your user>\AppData\Local\RStudio-Desktop\monitored\lists\project_mru`.
+If you're on *nix your milage may vary, but on my Ubuntu 16.04LTS you can find the MRU in `~/.rstudio/monitored/lists/project_mru`. This is for a local rstudio server installation, but I suspect that a rstudio desktop installation will put the MRU in the same location.
+The project_mru file is just a text file that you can edit manually. You don't even have to restart RStudio to see the changes
+На нашем сервере - `nano /home/ruser/.rstudio/monitored/lists/project_mru`
+- [Increase number Recent Files @RStudio IDE](https://community.rstudio.com/t/increase-number-recent-files/25880). Увы, пока больше 15 нельзя.
+
+## R
+- [Modern Rule-Based Models](https://rviews.rstudio.com/2020/05/21/modern-rule-based-models/) by Max Kuhn
+- [rules 0.0.1](https://www.tidyverse.org/blog/2020/05/rules-0-0-1/). We are happy to announce the release of the rules package on CRAN. rules is another “parsnip-adjacent” package that enables a specific class of models within the tidymodels infrastructure.
+- [holub008/xrf](https://github.com/holub008/xrf) eXtreme RuleFit (sparse linear models on XGBoost ensembles)
+- [The Mockup Blog](https://themockup.blog/)
+	- COOL! [gt - a (G)rammar of (T)ables](https://themockup.blog/posts/2020-05-16-gt-a-grammer-of-tables/). Not to be confused with a Game of Thrones
+	- COOL! [reactable - An Interactive Tables Guide](https://themockup.blog/posts/2020-05-13-reactable-tables-the-rest-of-the-owl/)
+- COOL! [How to write trycatch in R](https://stackoverflow.com/questions/12193779/how-to-write-trycatch-in-r)
+- COOL! [ColinFay/attempt](https://github.com/ColinFay/attempt). Tools for defensive programming in R
+
+## LaTeX
+- COOL! [LATEX.css](https://latex.now.sh/) by Vincent Dörig, May 2020
+This almost class-less CSS library turns your HTML document into a website that looks like a LATEX document.
+
+# 23.05.2020
+## OS
+- COOL! [Windows Terminal 1.0](https://devblogs.microsoft.com/commandline/windows-terminal-1-0/)
+	- [Releases](https://github.com/microsoft/terminal/releases). Запуск -- wt.exe из Старт.
+	- [What is Windows Terminal?](https://docs.microsoft.com/en-us/windows/terminal/)	
+	- [How to Customize the New Windows Terminal App](https://www.howtogeek.com/426346/how-to-customize-the-new-windows-terminal-app/)
+- [Microsoft: we were wrong about open source](https://www.theverge.com/2020/5/18/21262103/microsoft-open-source-linux-history-wrong-statement)
+	- [Microsoft will ship a full Linux kernel in Windows 10](https://www.theverge.com/2019/5/6/18534687/microsoft-windows-10-linux-kernel-feature)
+
+## R
+- COOL! Rmd статья. [ModernDive: Statistical Inference via Data Science](https://rpubs.com/rudeboybert/Boston-useR). Albert Y. Kim, Wed May 23rd, 2018
+- Отличная статья для обычного аналтикиа + подборка скриптов про работу с контейнерами. [Programming inside a container](https://lemire.me/blog/2020/05/22/programming-inside-a-container/)
+- [Textrecipes series: TF-IDF](https://www.hvitfeldt.me/blog/textrecipes-series-tfidf/) by Emil Hvitfeldt. Blog
+- [Tune XGBoost with tidymodels and #TidyTuesday beach volleyball](https://juliasilge.com/blog/xgboost-tune-volleyball/) by Julia Silge
+- COOL! [Visualizing Webpage Changes Over Time With TMVis](https://ws-dl.blogspot.com/2020/05/2020-05-21-visualizing-webpage-changes.html) By Abigail Mabe - May 21, 2020
+
+# 22.05.2020
+## R
+- COOL! [datadrivencv](http://nickstrayer.me/datadrivencv/)
+The goal of datadrivencv is to ease the burden of maintaining a CV by separating the content from the output by treating entries as data.
+	- [Ветка в твиттере](https://twitter.com/NicholasStrayer/status/1263180089879076865)
+- [between vs inrange in data.table](https://stackoverflow.com/questions/42633033/between-vs-inrange-in-data-table)
+- [How I Learned to Stop Worrying and Love R CMD Check](https://juliasilge.com/blog/how-i-stopped/)
+- [r-lib/rcmdcheck](https://github.com/r-lib/rcmdcheck). Run R CMD check from R and collect the results
+- [Advanced R Markdown Workshop](https://arm.rbind.io/). This is the website for a two-day hands-on workshop based on the book “R Markdown: The Definitive Guide.”
+- COOL! [A Crazy Little Thing Called {purrr} - Part 4: mappers](https://colinfay.me/purrr-mappers/)
+- [r-lib/vdiffr](https://github.com/r-lib/vdiffr). Visual regression testing and graphical diffing with testthat
+	- [vdiffr 0.3.0](https://www.tidyverse.org/blog/2019/01/vdiffr-0-3-0/)
+
+## DS
+- COOL! [Seven Techniques for Data Dimensionality Reduction](https://www.datasciencecentral.com/profiles/blogs/seven-techniques-for-data-dimensionality-reduction)
+- BigData Russia. [LeNet-5 in Kotlin with TensorFlow](https://medium.com/@zaleslaw/lenet-5-in-kotlin-with-tensorflow-b84a8ce7b6a7) by Alexey Zinoviev
+- COOL! [The Visualized Twitter Profile, Mara Averick (@dataandme)](https://thevisualized.com/twitter/timeline/dataandme;focused=1179381025975259136)
+- COOL! Хорошее краткое описание того, что требуется знать и чем придется заниматься. [Data Science for analytical minds | Introduction](https://www.datasciencecentral.com/profiles/blogs/data-science-for-analytical-minds-introduction)
+- COOL! [WhiteNoise: An Open Source Library to Protect Data with Differential Privacy](https://medium.com/microsoftazure/whitenoise-an-open-source-library-to-protect-data-with-differential-privacy-fed740e29a49) by David Smith
+- COOL! [Data Visualization Course](https://datavizm20.classes.andrewheiss.com/syllabus/) by Dr. Andrew Heiss. PMAP 8921: Data Visualization with R, May 2020
+	- [Session 1. Truth, beauty, and data](https://datavizm20.classes.andrewheiss.com/slides/01-slides.html#1)
+	- [Session 2. Graphic Design](https://datavizm20.classes.andrewheiss.com/slides/02-slides.html#1)
+	- [Session 3. Mapping Data to Graphics](https://datavizm20.classes.andrewheiss.com/slides/03-slides.html#1)
+	- [Session 4. Amounts and Proportions](https://datavizm20.classes.andrewheiss.com/slides/04-slides.html#1)
+	- [Session 5. Themes](https://datavizm20.classes.andrewheiss.com/slides/05-slides.html#1)
+	- [Session 6. Uncertainty](https://datavizm20.classes.andrewheiss.com/slides/06-slides.html#1)
+	- [Session 7. Uncertainty](https://datavizm20.classes.andrewheiss.com/slides/07-slides.html#1)
+	- [Session 8. Comparisons](https://datavizm20.classes.andrewheiss.com/slides/08-slides.html#1)
+	- [Session 9. Annotations](https://datavizm20.classes.andrewheiss.com/slides/09-slides.html#1)
+	- [Session 10. Interactivity](https://datavizm20.classes.andrewheiss.com/slides/10-slides.html#1)
+	- [Session 11. Time](https://datavizm20.classes.andrewheiss.com/slides/11-slides.html#1)
+	- [Session 12. Space](https://datavizm20.classes.andrewheiss.com/slides/12-slides.html#1)
+	- [Session 13. Text](https://datavizm20.classes.andrewheiss.com/slides/13-slides.html#1)
+	- [Session 14. Enhancing graphics](https://datavizm20.classes.andrewheiss.com/slides/14-slides.html#1)
+	- [Session 15. Truth, beauty, and data revisited](https://datavizm20.classes.andrewheiss.com/slides/15-slides.html#1)
+
+# 21.05.2020
+## R
+- COOL! [RinteRface](https://github.com/RinteRface)ю A collection of outstanding APIs for R Shiny
+- COOL! [RinteRface](https://rinterface.com/). HTML templates for . RinteRface aims at bringing the most famous open source HTML templates to R
+- [Mining R 4.0.0 Changelog for Nuggets of Gold: #1 stopifnot()](https://rud.is/b/2020/05/19/mining-r-4-0-0-changelog-for-nuggets-of-gold-1-stopifnot/)
+
+# 20.05.2020
+## R
+- Max Kuhn @topepos. All of the analysis R code for our Feature Engineering and Selection book is now [on GitHub at](https://github.com/topepo/FES)
+- COOL! [ggparty](https://github.com/martin-borkovec/ggparty) ggplot2 visualizations for the partykit package.
+- [ggparty: Graphic Partying](https://cran.r-project.org/web/packages/ggparty/vignettes/ggparty-graphic-partying.html) ggparty aims to extend ggplot2 functionality to the partykit package. It provides the necessary tools to create clearly structured and highly customizable visualizations for tree-objects of the class 'party'.
+
+# 17.05.2020
+## Rconf 2020
+- COOL! [Links to slides from rstudio::conf 2020](https://github.com/EmilHvitfeldt/RStudioConf2020Slides/blob/master/README.md)
+- rstudio/rstudio-conf. [rstudio-conf/2020/](https://github.com/rstudio/rstudio-conf/tree/master/2020)
+- [Taking visualizations to the next level with the scales package](https://www.danaseidel.com/rstudioconf2020#1) by Dana Seidel (@dpseidel)
+- [Practical Plumber Patterns: An opinionated approach to writing APIs in R with Plumber](https://github.com/blairj09-talks/ppp)
+- [renv Project Environments to R](https://github.com/kevinushey/2020-rstudio-conf)
+
+## CH
+- COOL! [ClickHouse для продвинутых пользователей в вопросах и ответах]()https://habr.com/ru/company/avito/blog/500678/ По умолчанию ответы Алексея Миловидова, если не написано иное.
+- [Clickhouse sampling on MergeTree engine](https://3manuek.com/blog/2017-07/clickhouse-sampling-on-mergetree-engine./)
+- [Replacement for row_number() in clickhouse](https://stackoverflow.com/questions/53757415/replacement-for-row-number-in-clickhouse)
+- [Движок AggregatingMergeTree](https://clickhouse.tech/docs/ru/engines/table-engines/mergetree-family/aggregatingmergetree/)
+- [ClickHouse Materialized Views Illuminated, Part 2](https://www.altinity.com/blog/clickhouse-materialized-views-illuminated-part-2)
+- [ClickHouse Continues to Crush Time Series](https://www.altinity.com/blog/clickhouse-continues-to-crush-time-series)
+- [Handling Real-Time Updates in ClickHouse](https://www.altinity.com/blog/2020/4/14/handling-real-time-updates-in-clickhouse)
+
+
+# 16.05.2020
+## DS
+- COOL! [Факторный анализ для чайников](https://habr.com/ru/post/224495/)
+- [Энтропия и деревья принятия решений](https://habr.com/ru/post/171759/)
+- [A Simple Explanation of Information Gain and Entropy](https://victorzhou.com/blog/information-gain/)
+What Information Gain and Information Entropy are and how they're used to train Decision Trees.
+
+## R
+- COOL! [Altair: Declarative Visualization in Python](https://altair-viz.github.io/)
+	- [vegawidget](https://vegawidget.github.io/vegawidget/index.html)
+The goal of vegawidget is to render Vega-Lite and Vega specifications as htmlwidgets, and to provide you a means to communicate with a Vega chart using JavaScript or Shiny.
+	- [ggvega](https://vegawidget.github.io/ggvega/)
+The goal of ggvega is to translate a ggplot2 object to a Vega-Lite specification.
+	- [vlbuildr](https://vegawidget.github.io/vlbuildr/index.html)
+The goal of vlbuildr is to provide an R api for building up vega-lite specs.
+- [erocoar/gghalves](https://github.com/erocoar/gghalves). Easy half-half geoms in ggplot2 https://erocoar.github.io/gghalves/
+- COOL! [Speed up your R scripts. A cool optimized way to load, write and store big data frames with FST package!](https://typethepipe.com/vizs-and-tips/speed-up-load-write-files-fst-package-r/)
+- COOL! [My Data Science Notes](https://bookdown.org/mpfoley1973/data-sci/) by Michael Foley, 2020-03-31
+
+# 15.05.2020
+## R
+- COOL! [Intro to {polite} Web Scraping of Soccer Data with R!](https://ryo-n7.github.io/2020-05-14-webscrape-soccer-data-with-R/)
+- [Интересный кейс с дебагом от Хадли](). To demonstrate the basic debugging approach, I’ll show you a little problem I encountered when writing Section 10.1.2. I’ll first show you the basic context, then you’ll see a problem I resolved without interactive debugging tools, a problem that required interactive debugging, and discover a final suprise.
+- COOL! [The prettyunits package](https://github.com/r-lib/prettyunits) formats quantities in human readable form. Currently time units and information (i.e. bytes) are supported.
+- COOL! [r-lib/later](https://github.com/r-lib/later). Schedule an R function or formula to run after a specified period of time.
+
+# 14.05.2020
+## R
+- [lgr](https://s-fleck.github.io/lgr/) is a logging package for R built on the back of R6 classes. It is designed to be flexible, performant and extensible. The package vignette contains a comprehensive description of the features of lgr (some of them unique among R logging packages) along with many code examples.
+- [logger](https://daroczig.github.io/logger/)
+A lightweight, modern and flexibly logging utility for R – heavily inspired by the futile.logger R package and logging Python module.
+- [jangorecki/logR](https://github.com/jangorecki/logR). Extended logging solution for R http://jangorecki.gitlab.io/logR
+- Working with zipped csvs? vroom not working because one of those files is borked? 
+Iterate through them bad larrys with this little combo of purr and vroom
+```
+purrr::map(
+    fs::dir_ls(), 
+    purrr::possibly(
+        vroom::vroom,
+        otherwise = tibble::tibble())) 
+```
+- [progressr: A Inclusive, Unifying API for Progress Updates](https://github.com/HenrikBengtsson/progressr)
+The progressr package provides a minimal API for reporting progress updates in R. The design is to separate the representation of progress updates from how they are presented. What type of progress to signal is controlled by the developer. How these progress updates are rendered is controlled by the end user. For instance, some users may prefer visual feedback such as a horizontal progress bar in the terminal, whereas others may prefer auditory feedback.
+- [How to Make Animated Histograms in R, with ggplot and gganimate](https://flowingdata.com/2020/05/13/animated-histograms-ggplot-gganimate/)
+- Интересный проект. [nathaneastwood/poorman](https://github.com/nathaneastwood/poorman/). A copy of dplyr verbs using only base R https://nathaneastwood.github.io/tags…
+
+## DS
+- Интересная статья про рассаживания в ресторанах. [The Risks - Know Them - Avoid Them](https://www.erinbromage.com/post/the-risks-know-them-avoid-them)
+
+# 12.05.2020
+## R
+- [R vs. Python for Machine Learning](http://danielhnyk.cz/r-vs-python-2/). And Holy Wars continues...
+- write your own `str()`.
+Miles McBain: Have you tried t(head(df))? I use it all the time. Also a console-ranger.
+Noam Ross: I use as.yaml for lists sometimes
+- [ggtext: Improved text rendering support for ggplot2](https://wilkelab.org/ggtext/)
+This package provides rich-text (basic HTML and Markdown) support for ggplot2. Rich text can be used in plot annotations (plot titles, subtitles, captions, axis labels, legends, etc.) and to visualize textual data, as one would normally do with geom_text().
+- [Choosing the Correct Statistical Test](https://www.datasciencecentral.com/profiles/blogs/choosing-the-correct-statistical-test)
+- [The ggplot2 extension gallery now lives at https://exts.ggplot2.tidyverse.org](https://exts.ggplot2.tidyverse.org). Please update your bookmarks. The old link is no longer safe to visit.
+- COOL! [progressr: A Inclusive, Unifying API for Progress Updates](https://github.com/HenrikBengtsson/progressr)
+
+## DS
+- COOL! [Performance Matters. Hardware Store Elimination](https://travisdowns.github.io/blog/2020/05/13/intel-zero-opt.html) May 13, 2020
+When writing simple memory benchmarks I have always taken the position the value written to memory didn’t matter. Recently, while running a straightforward benchmark1 probing the interaction between AVX-512 stores and read for ownership I ran into a weird performance deviation. This is that story.
+- COOL! [Complete guide to Association Rules (1/2)](https://towardsdatascience.com/association-rules-2-aa9a77241654). Algorithms that help you shop faster and smarter
+- [How does postgresql.service know which postgresql instances to start?](https://unix.stackexchange.com/questions/436802/how-does-postgresql-service-know-which-postgresql-instances-to-start)
+- [Коды валют рубля 810 и 643. В чём подвох? Решение суда и конечная точка в догадках.](https://zen.yandex.ru/media/mamin_sibiryak/kody-valiut-rublia-810-i-643-v-chem-podvoh-reshenie-suda-i-konechnaia-tochka-v-dogadkah-5bd1ac85d2fd5900aa002952)
+- [Helping Scientists Explore Single-Cell Datasets with High-Quality Visualizations](https://chanzuckerberg.com/science/programs-resources/single-cell-biology/cellxgene/)
+- COOL! 
+ This is a periodic reminder for macOS folks using Homebrew to:
+ - `$ brew update && brew upgrade && brew cleanup`
+at your earliest convenience.
+(+ the same for casks if you use them)
+
+# 06.05.2020
+## R
+- [Speed comparison of rbind, bind_rows, and rbindlist](https://rstudio-pubs-static.s3.amazonaws.com/406521_7fc7b6c1dc374e9b8860e15a699d8bb0.html)
+- [Efficient accumulation in R](http://www.win-vector.com/blog/2015/07/efficient-accumulation-in-r/)
+- [TileDB. The Storage Engine for Data Science](https://tiledb.com/developer/)
+- [pixel-me. Convert your photo into pixelart.](https://pixel-me.tokyo/en/)
+
+## DS
+- [Энтропия и деревья принятия решений](https://habr.com/ru/post/171759/)
+- [S3M — формат музыкальных файлов, использовавшийся трекером Scream Tracker 3 — один из трёх наиболее распространенных форматов трекерной музыки.](https://ru.wikipedia.org/wiki/S3M)
+- [Catch that goblin!! by Skaven of Future Crew](https://www.youtube.com/watch?v=2wTpu1u0LQ4)
+- [Freedom to work from anywhere.	
+Enjoy the freedom to live and work where you thrive with easy video meetings from Whereby](https://whereby.com/)
+
 
 # 04.05.2020
 ## R
 - [Spectral Analysis in R - the periodogram](https://stats.stackexchange.com/questions/315682/spectral-analysis-in-r-the-periodogram)
+- [Tutorial for kdensity](https://cran.r-project.org/web/packages/kdensity/vignettes/tutorial.html).
+kdensity is called using a syntax similar to stats::density, but with some additional arguments. A call to kdensity returns a density function (with class kdensity), which can used as ordinary R-function
+- COOL! [Arguments of stats::density()](https://www.r-bloggers.com/arguments-of-statsdensity/). Исходник [Arguments of stats::density()](http://www.questionflow.org/2019/08/06/arguments-of-stats-density/) 2019-08-06
 
 # 30.04.2020
 ## R, подборки из твиттера
@@ -765,8 +1120,10 @@ The course covers scalable machine learning and data mining algorithms for large
 	- [statsExpressions: Expressions with statistical details](https://indrajeetpatil.github.io/statsExpressions/)
 - [gratia](https://gavinsimpson.github.io/gratia/index.html)
 Graceful ‘ggplot’-based graphics and utility functions for working with generalized additive models (GAMs) fitted using the ‘mgcv’ package. Provides a reimplementation of the plot() method for GAMs that ‘mgcv’ provides, as well as ‘tidyverse’ compatible representations of estimated smooths.
-- [ggplot2::position_dodge2() - i know this one!](https://github.com/sharlagelfand/twofunctionsmostdays/tree/master/2020/04/16)
-- [kableExtra::column_spec() - i know this one!](https://github.com/sharlagelfand/twofunctionsmostdays/tree/master/2020/04/21)
+- COOL! [sharlagelfand/twofunctionsmostdays](https://github.com/sharlagelfand/twofunctionsmostdays). Sharing two #rstats functions, most days.
+ 	- [ggplot2::position_dodge2() - i know this one!](https://github.com/sharlagelfand/twofunctionsmostdays/tree/master/2020/04/16)
+	- [kableExtra::column_spec() - i know this one!](https://github.com/sharlagelfand/twofunctionsmostdays/tree/master/2020/04/21)
+	- [gt::tab_style() - i know this one!](https://github.com/sharlagelfand/twofunctionsmostdays/tree/master/2020/05/13)
 - [ewenme/ghibli](https://github.com/ewenme/ghibli). Studio Ghibli colour palettes https://ewenme.github.io/ghibli
 - Thomas Lin Pedersen ggplot2 workshop. 
 	- [ggplot2 workshop part 1](https://www.youtube.com/watch?v=h29g21z0a68&feature=youtu.be). 
@@ -925,6 +1282,7 @@ s
 # 28.03.2020
 ## DS
 - [D3 Graph Theory - Interactive Graph Theory Tutorials](https://d3gt.com/index.html)
+- [Инфиксные, префиксные и постфиксные выражения](http://aliev.me/runestone/BasicDS/InfixPrefixandPostfixExpressions.html)
 
 # 27.03.2020
 ## R
@@ -971,6 +1329,7 @@ servr::daemon_stop(1)
 - COOL! [Using themes with blogdown: Lesson learned](https://portfolio.peter-baumgartner.net/2018/07/19/blogdown-using-themes/). См. "Problem solving strategies" и сслыки внизу статьи.
 - [Change your {blogdown} fonts](https://www.rostrum.blog/2018/11/29/fontface-lithium/). На [самом гугле](https://google-webfonts-helper.herokuapp.com/fonts/roboto?subsets=cyrillic,latin) смотрим на шрифты и читаем как настроить css.
 - [Кирилличские шрифты Google](https://fonts.google.com/?subset=cyrillic)
+- [Changing your Blogdown Workflow](https://drmowinckels.io/blog/changing-you-blogdown-workflow/)
 
 # 23.03.2020
 ## R
@@ -1325,6 +1684,8 @@ Why and how we developed an R Studio add-in
 	- [5 Ways to Download Wistia Videos Easily](https://www.tricksntech.com/download-wistia-videos/)
 	- [3 Surprisingly Awesome Ways To Download Wistia Videos](https://www.cisdem.com/resource/download-wistia-videos.html)
 	- [How To Download Wistia Videos Without Any Tool](https://www.yeahhub.com/download-wistia-videos-without-tool/)
+- [FetchFile](https://en.fetchfile.net/download-from-wistia/) - Download video from Wistia
+
 ## R
 - COOL! [Efficient Data Management in R](https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/efficient-data-r/)
 - [7.12 Инструменты Git - Создание пакетов (Git bundle)](https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2)
@@ -1977,23 +2338,6 @@ Conversions between 'R' objects and Javascript Object Notation (JSON) using the 
 - COOL! [A Future for callr](https://cran.r-project.org/web/packages/future.callr/vignettes/future.callr.html)
 - [HenrikBengtsson/future.callr](https://github.com/HenrikBengtsson/future.callr) 🚀 R package future.callr: A Future API for Parallel Processing using 'callr'
 - [HenrikBengtsson/doFuture](https://github.com/HenrikBengtsson/doFuture) 🚀 R package: doFuture - A Universal Foreach Parallel Adaptor using the Future API of the 'future' Package
-- dplyr select by number. Переименовываем колонки (добавляем префикс)
-	- [dplyr: Renaming variables with rename_](https://stackoverflow.com/questions/41921094/dplyr-renaming-variables-with-rename)
-	- [Copy a column and add a prefix to new column in R with dplyr](https://stackoverflow.com/questions/40929674/copy-a-column-and-add-a-prefix-to-new-column-in-r-with-dplyr)
-	- [Adding prefix or suffix to most data.frame variable names in piped R workflow](https://stackoverflow.com/questions/29948876/adding-prefix-or-suffix-to-most-data-frame-variable-names-in-piped-r-workflow)
-	- [dplyr- renaming sequence of columns with select function](https://stackoverflow.com/questions/31845966/dplyr-renaming-sequence-of-columns-with-select-function/31846038#31846038)
-	- [Column names with spaces or other special characters #2243](https://github.com/tidyverse/dplyr/issues/2243)
-	- [Selecting with dplyr by variable name, some column names are numbers](https://stackoverflow.com/questions/42854958/selecting-with-dplyr-by-variable-name-some-column-names-are-numbers)
-	- [Select multiple columns with `dplyr::select()` with numbers as names](https://stackoverflow.com/questions/38093584/select-multiple-columns-with-dplyrselect-with-numbers-as-names/38093676)
-	- [dplyr: select columns by position in NSE](https://stackoverflow.com/questions/42493381/dplyr-select-columns-by-position-in-nse). Another solution with dplyr :
-```
-DF %>%
-  select(!!c(1, 28:31))
-```
-cf : https://www.rdocumentation.org/packages/dplyr/versions/0.7.6/topics/select
-- [Exclude columns by names in mutate_at in dplyr](https://stackoverflow.com/questions/44532888/exclude-columns-by-names-in-mutate-at-in-dplyr)
-	- `mtcars %>% mutate_at(vars(-mpg, -cyl), max)` or 
-	- `mtcars %>% mutate_at(vars(-one_of("mpg", "cyl")), max)`
 
 # 29.10.2019
 ## R
@@ -5003,10 +5347,7 @@ __How can I parallelize the following for-loop?__
 
 # 11.01.2019
 ## R
-- COOL! Весьма детально разобрано. [How to dplyr rename a column, by column index?](https://stackoverflow.com/questions/42769650/how-to-dplyr-rename-a-column-by-column-index)
-- [R: dplyr - Rename column name by position instead of name](https://stackoverflow.com/questions/29586219/r-dplyr-rename-column-name-by-position-instead-of-name/46223401)
-- [Conditional replacement of column name in tibble using dplyr](https://stackoverflow.com/questions/43578723/conditional-replacement-of-column-name-in-tibble-using-dplyr)
-- COOL![ro" with RStudio Server Open Source](https://jstaf.github.io/2018/06/20/rstudio-server-semi-pro.html)
+- COOL![Going "Pro" with RStudio Server Open Source](https://jstaf.github.io/2018/06/20/rstudio-server-semi-pro.html)
 
 
 # 09.01.2019
@@ -7666,7 +8007,7 @@ RE2 <https://github.com/google/re2> is a primarily deterministic finite automato
 - COOL! [Reproducible Research: Write your Clinical Chemistry paper using R Markdown](http://labrtorian.com/2018/02/05/reproducible-research-write-your-clinical-chemistry-paper-using-r/)
 - [Concatenate Embeddings for Categorical Variables with Keras](https://flovv.github.io/Embeddings_with_keras_part2/)
 - [A tidy API for graph manipulation](https://github.com/thomasp85/tidygraph)
-- COOL! [RStudion rconf 2018](https://github.com/rstudio/rstudio-conf/tree/master/2018)
+- COOL! [RStudio rconf 2018](https://github.com/rstudio/rstudio-conf/tree/master/2018)
 - [In between a rock and a conditional join](https://www.mango-solutions.com/blog/in-between-a-rock-and-a-conditional-join). Тут как раз про "Fuzzy wuzzy join".
 
 # 01.02.2018
