@@ -122,6 +122,7 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/) by Yihui Xie, Amber Thomas, Alison Presmanes Hill
 - [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/) by Yihui Xie
 - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/) by Yihui Xie, J. J. Allaire, Garrett Grolemund
+- [R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/) by Yihui Xie and Christophe Dervieux, 2020-06-15
 - [Distill for R Markdown](https://rstudio.github.io/distill/). Scientific and technical writing, native to the web
 - [Mastering Shiny](https://mastering-shiny.org/) by Hadley Wickham
 - [R Internals. R Core Team](https://colinfay.me/r-internals/)
@@ -185,6 +186,9 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - [A Very Short Course on Time Series Analysis](https://bookdown.org/rdpeng/timeseriesbook/) by Roger D. Peng
 - [Using Spark from R for performance with arbitrary code](https://sparkfromr.com/) by Jozef Hajnala, 2020-02-20
 - COOL! [My Data Science Notes](https://bookdown.org/mpfoley1973/data-sci/) by Michael Foley, 2020-03-31
+- [Outstanding User Interfaces with Shiny](https://divadnojnarg.github.io/outstanding-shiny-ui/) by David Granjon
+- [R for Statistics in EPH](https://bookdown.org/danieljcarter/r4steph/)
+- [Agile Data Science with R](https://edwinth.github.io/ADSwR/) by Edwin Thoen
 
 
 
@@ -313,7 +317,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 	- [dplyr: Renaming variables with rename_](https://stackoverflow.com/questions/41921094/dplyr-renaming-variables-with-rename)
 	- [Copy a column and add a prefix to new column in R with dplyr](https://stackoverflow.com/questions/40929674/copy-a-column-and-add-a-prefix-to-new-column-in-r-with-dplyr)
 	- [Adding prefix or suffix to most data.frame variable names in piped R workflow](https://stackoverflow.com/questions/29948876/adding-prefix-or-suffix-to-most-data-frame-variable-names-in-piped-r-workflow)
-	- [dplyr- renaming sequence of columns with select function](https://stackoverflow.com/questions/31845966/dplyr-renaming-sequence-of-columns-with-select-function/31846038#31846038)
+	- [dplyr - renaming sequence of columns with select function](https://stackoverflow.com/questions/31845966/dplyr-renaming-sequence-of-columns-with-select-function/31846038#31846038)
 	- [Column names with spaces or other special characters #2243](https://github.com/tidyverse/dplyr/issues/2243)
 	- [Selecting with dplyr by variable name, some column names are numbers](https://stackoverflow.com/questions/42854958/selecting-with-dplyr-by-variable-name-some-column-names-are-numbers)
 	- [Select multiple columns with `dplyr::select()` with numbers as names](https://stackoverflow.com/questions/38093584/select-multiple-columns-with-dplyrselect-with-numbers-as-names/38093676)
@@ -606,6 +610,12 @@ output:
 - [Error creating notebook: non-numeric argument to binary operator; RStudio](https://stackoverflow.com/questions/45024350/error-creating-notebook-non-numeric-argument-to-binary-operator-rstudio).
 Мне помогло вытирание кэша в `... \jira-nlp\.Rproj.user\shared\notebooks\160C43F1-jira_analysis`
 - Очень много полезных способов по включению таблиц и картинок в Rmd. [Insert picture/table in R Markdown](https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown)
+- Темы для R Markdown
+	- RSTUDIO::CONF 2020. [Styling Shiny apps with Sass and Bootstrap 4](https://rstudio.com/resources/rstudioconf-2020/styling-shiny-apps-with-sass-and-bootstrap-4/) Joe Cheng | January 30, 2020
+	- [bootstraplib](https://rstudio.github.io/bootstraplib/) Tools for styling shiny and rmarkdown from R via Bootstrap (3 or 4) Sass.
+	- [One R Markdown Document, Fourteen Demos](https://rstudio.com/resources/rstudioconf-2020/one-r-markdown-document-fourteen-demos/) Yihui Xie
+	- [Fast Rmarkdown Theming with thematic and bootstraplib](https://www.tillac-data.com/2020-fast-rmd-theming-with-thematic-and-bootstraplib/) Publish date: 2020-06-05
+Theming in Rmarkdown can be hard. You first made some custom CSS or use a provided theme but your figures didn’t change and you have to style your ggplot2 theme. And after it you change your mind (or your boss do) and you need to move this color shade to lighter one. So you change your theme, but forgot to change it in all your CSS and something is going wrong. Same goes for fonts
 
 ## knitr. Запускаем Rmd -> PDF
 Смотрим ссылки ниже. Важный концепт, который держим в голове -- возможность генерации отчетов из .R файлов (не .Rmd) посредством `spin`. `rmarkdown::render()` автоматически выбирает spin\knit в зависимости от расширения файла.
@@ -799,6 +809,186 @@ The course covers scalable machine learning and data mining algorithms for large
 - Интересно поглядеть. [unDocUMeantIt/koRpus](https://github.com/undocumeantit/korpus). An R Package for Text Analysis
 - [Поиск похожих документов с MinHash + LHS](https://habr.com/ru/post/250673/)
 
+# Upgrading R
+- [Upgrading to R 3.6.0 on a Mac – May 14, 2019](https://ibecav.github.io/update_libraries/)
+```
+require(tidyverse)
+allmypackages <- as.data.frame(installed.packages())
+allmypackages <- allmypackages %>%
+  filter(Priority != "base" | is.na(Priority)) %>%
+  select(-c(Enhances:MD5sum, LinkingTo:Suggests)) %>%
+  droplevels()
+str(allmypackages)
+
+package_source <- function(pkg){
+  x <- as.character(packageDescription(pkg)$Repository)
+  if (length(x)==0) {
+    y <- as.character(packageDescription(pkg)$GithubRepo)
+    z <- as.character(packageDescription(pkg)$GithubUsername)
+    if (length(y)==0) {
+      return("Other")
+    } else {
+      return(str_c("GitHub repo = ", z, "/", y))
+    }
+  } else {
+    return(x)
+  }
+}
+# show the first 60 as an example
+head(sapply(allmypackages$Package, package_source), 60)
+```
+- При миграции 3.6.1 -> 4.0.2 остались за бортом
+```
+         Package    Version NeedsCompilation                                whereat
+1      annotater      0.1.1               no        GitHub repo = luisdva/annotater
+2      dvtdspack      0.1.4             <NA>       GitHub repo = imissile/dvtdspack
+3      fablelite 0.0.0.9000             <NA>      GitHub repo = tidyverts/fablelite
+4        fasster 0.1.0.9000             <NA>        GitHub repo = tidyverts/fasster
+5   friendlyeval      0.1.0             <NA> GitHub repo = milesmcbain/friendlyeval
+6          ggalt      0.6.2               no           GitHub repo = hrbrmstr/ggalt
+7     multidplyr 0.0.0.9000             <NA>                                  Other
+8     nextcloudr      0.2.0               no                                  Other
+9           pack      0.1-1             <NA>                                  Other
+10    regexplain      0.2.2               no     GitHub repo = gadenbuie/regexplain
+11       rspivot 0.1.1.9003               no        GitHub repo = ryantimpe/rspivot
+12   streamgraph      0.8.1             <NA>     GitHub repo = hrbrmstr/streamgraph
+13     textclean      0.9.4               no        GitHub repo = trinker/textclean
+14 ViewPipeSteps      0.1.0               no GitHub repo = daranzolin/ViewPipeSteps
+```
+- [Get the list of installed packages by user in R](https://stackoverflow.com/questions/38481980/get-the-list-of-installed-packages-by-user-in-r)
+```
+ip <- as_tibble(installed.packages()[,c(1,3:4)])
+ip <- ip[is.na(ip$Priority),1:2,drop=FALSE]
+pkgs <- ip$Package
+saveRDS(pkgs, "pkgs.Rds")
+```
+- [Quick #rstats Tip: Use `Ncpus` when installing packages](https://twitter.com/jozefhajnala/status/1235281079092867073?s=20)
+```
+install.packages() has an Ncpus argument determining how many parallel processes to use
+This can e.g. speed up installation of {{tidyverse}} from ~11min to ~4.6min
+Also works with remotes & devtools install_ functions
+options(Ncpus = parallel::detectCores())
+```
+
+
+# 19.06.2020
+## R
+- Форматирование чисел в R. 
+	- `base::format(c(6.0, 13.1), digits = 2, nsmall = 1)`
+	- `scales::label_number(trim = FALSE)(c(6.0, 13.1, -4.4839))`
+- `ggplot::geom_curve`. Красиво делают стрелочки для надписей на графике. [eRum 2020. Tips from an R Journalist](http://www.machlis.com/eRum2020/#17)
+- [The streamgraph pacakge](http://hrbrmstr.github.io/streamgraph/) is an htmlwidget that is based on the D3.js JavaScript library.
+“Streamgraphs are a generalization of stacked area graphs where the baseline is free. By shifting the baseline, it is possible to minimize the change in slope (or wiggle) in individual series, thereby making it easier to perceive the thickness of any given layer across the data. Byron & Wattenberg describe several streamgraph algorithms in ‘Stacked Graphs—Geometry & Aesthetics3’”4
+
+
+# 18.06.2020
+## R
+- [RMarkdown. What defines the setup chunk?](https://community.rstudio.com/t/what-defines-the-setup-chunk/27595)
+"There is one chunk name that imbues special behaviour: setup . When you’re in a notebook mode, the chunk named setup will be run automatically once, before any other code is run."
+RStudio tip:
+If you have a code block named 'setup' like 
+```{r setup} 
+foo()
+``` 
+then every time you restart RStudio and execute any code in the middle of your markdown document, this block will be automatically run once before, i.e. you libraries will be loaded first.
+	- R4DS.[27.4.1 Chunk name](https://r4ds.had.co.nz/r-markdown.html#chunk-name)
+	- R Markdown: The Definitive Guide. [3.2.1 Using Notebooks](https://bookdown.org/yihui/rmarkdown/notebook.html#using-notebooks)
+- COOL! [Generate Dynamic R Markdown Blocks](https://stackoverflow.com/questions/21729415/generate-dynamic-r-markdown-blocks)
+- [Changing fonts in ggplot2](https://stackoverflow.com/questions/34522732/changing-fonts-in-ggplot2)
+- [Can't change fonts in ggplot/geom_text](https://stackoverflow.com/questions/14733732/cant-change-fonts-in-ggplot-geom-text)
+You must import the system fonts using the command:
+`font_import(paths = NULL, recursive = TRUE, prompt = TRUE,pattern = NULL)`. If you have a lot of fonts, this solution will take a long time. Use pattern="Times" or something to reduce the number of fonts loaded
+- COOL! [nx10/httpgd](https://github.com/nx10/httpgd). Asynchronous http server graphics device for R.
+- COOL! [Intro to Flexdashboard - with Penguins!](https://samtoet.cool/posts/intro-to-flexdashboard-with-penguins/)
+
+# 17.06.2020
+## R
+- [Logging in R: Why, When, and How](https://mathewanalytics.com/logging-in-r-why-when-and-how/) By Abraham Mathew / June 16, 2020 / data.table, R
+- COOL! [TIL — To create custom html blocks in {rmarkdown}, you can use the shortcut syntax](https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html#block-syntax)
+```
+::: {.class #id}
+Text
+::: 
+```
+Goodbye <div class =""> 
+- COOL! [MayaGans/shinyBody](https://github.com/MayaGans/shinyBody). An SVG clickable body that can be colored using data and returns the clicked on body part
+- COOL! [brshallo/tidyverse-gifs](https://github.com/brshallo/tidyverse-gifs). Code for using `flair`, `xaringan`, `pagedown`, and `magick` to build gif of steps in a series of piped operations. Example pulled from "Many Models" chapter of "R for Data Science"
+- COOL! [{mdthemes} is on CRAN: markdown powered themes for {ggplot2}](https://thomasadventure.blog/posts/mdthemes-is-on-cran-markdown-powered-themes-for-ggplot2/)
+- [Calculating change from baseline in R](https://thomasadventure.blog/posts/calculating-change-from-baseline-in-r/)
+- [How does the pipe operator actually work?](https://thomasadventure.blog/posts/how-does-the-pipe-operator-actually-work/)
+- [How can I make R maintain utf8 encodings?](https://stackoverflow.com/questions/58606489/how-can-i-make-r-maintain-utf8-encodings)
+- [Allow hms object in breaks argument to scale_*_date {closed}](https://github.com/tidyverse/ggplot2/issues/2894)
+
+## DS
+- [Actionable Insights: The Missing Link Between Data And Business Value](https://www.forbes.com/sites/brentdykes/2016/04/26/actionable-insights-the-missing-link-between-data-and-business-value/#e5b533c51e57)
+- [COVOID](https://cbdrh.github.io/covoidance/). The COVID-19 Open-source Infection Dynamics project
+- [Using GitHub Actions for MLOps & Data Science](https://github.blog/2020-06-17-using-github-actions-for-mlops-data-science/)
+
+## eRum 2020
+- [EdwinTh/ADSwR](https://github.com/EdwinTh/ADSwR). "Agile Machine Learning with R - A workflow" is an opinionated take on how to do a data science project in R https://edwinth.github.io/ADSwR/
+- [akgold/erum-big-shiny](https://github.com/akgold/erum-big-shiny). Materials for my E-Rum 2020 presentation on Design Patterns for Big Shiny Apps
+
+# 16.06.2020
+## R
+- [Blog. RSquare Academy](https://blog.rsquaredacademy.com/)
+	- COOL! [RFM Analysis in R](https://blog.rsquaredacademy.com/2019/02/12/introducing-rfm/)
+	- [Customer Segmentation using RFM Analysis](https://blog.rsquaredacademy.com/2019/07/22/customer-segmentation-using-rfm-analysis/)
+- COOL! [Exploring echarts4r](https://rpubs.com/paul_simmering/echarts) by Paul Simmering, 7 February 2020
+- [Create stylish tables in R using formattable](https://www.littlemissdata.com/blog/prettytables)
+- [converting Date into POSIXct when time zone is not UTC #108 {Closed}](https://github.com/r-lib/vctrs/issues/108)
+
+# 15.06.2020
+## R
+- [Practical Recommendations. The Rest Of The Owl. How to build a recommender system](https://karlhigley.github.io/)
+
+# 11.06.2020
+## R
+- COOL! [Shiny 1.1.0: Scaling Shiny with async](https://blog.rstudio.com/2018/06/26/shiny-1-1-0/) by Joe Cheng, 2018-06-26
+- COOL! [What’s a “successful” Shiny Application?](https://rtask.thinkr.fr/whats-a-successful-shiny-application/)
+- Интересно и компактно. [Structured data classification from scratch](https://keras.io/examples/structured_data/structured_data_classification_from_scratch/)
+- [Introducing 'dotnet' knitr engine for C# & F# chunks in R Markdown](https://mpopov.com/blog/2020/06/10/introducing-dotnet-knitr-engine/)
+- COOL! [Estimating sample size for precision: precisely 0.1.0](https://malco.io/2020/05/26/estimating-sample-size-for-precision-precisely-0-1-0/). I’m pleased to announce that precisely 0.1.0 is now on CRAN! precisely is a study planning tool to calculate sample size based on precision rather than power. Power calculations focus on whether or not an estimate will be statistically significant; calculations of precision are based on the same principles as power calculation but turn the focus to the width of the confidence interval. precisely currently supports sample size calculations for risk differences, rate differences, risk ratios, rate ratios, and odds ratios.
+	- [Planning Study Size Based on Precision Rather Than Power](https://journals.lww.com/epidem/Abstract/2018/09000/Planning_Study_Size_Based_on_Precision_Rather_Than.1.aspx) by Rothman, Kenneth J.; Greenland, Sander
+
+# 10.06.2020
+## R
+- [15 Tips on Making Better Use of R Markdown](https://slides.yihui.org/2019-dahshu-rmarkdown#1) Yihui Xie, RStudio
+- [ggplot2 3.3.0](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/)
+- COOL! [A Summer of RStudio and ggplot2](https://education.rstudio.com/blog/2019/10/a-summer-of-rstudio-and-ggplot2/) by Dewey Dunnington
+- [embed 0.1.0](https://www.tidyverse.org/blog/2020/06/embed-0-1-0/)
+- [pluralize: Pluralize and 'Singularize' Any (English) Word](https://cran.r-project.org/web/packages/pluralize/index.html)
+Tools are provided to create plural, singular and regular forms of English words along with tools to augment the built-in rules to fit specialized needs. Core functionality is based on a JavaScript library, <https://github.com/blakeembrey/pluralize>.
+- [Автор канала Алексей Селезнёв, руководитель отдела аналитики в Netpeak, автор пакетов для языка R: ryandexdirect, rfacebookstat и других.
+В канале публикуются статьи, доклады, новости и прочие материалы по языку R.](https://t.me/R4marketing)
+- COOL! [moodymudskipper/once](https://github.com/moodymudskipper/once). A Collection of Single Use Function Operators
+- [antonmedv/fx](https://github.com/antonmedv/fx). Command-line tool and terminal JSON viewer 🔥
+
+# 09.06.2020
+## R
+- COOL! [The Evolution of a ggplot (Ep. 1)](https://cedricscherer.netlify.app/2019/05/17/the-evolution-of-a-ggplot-ep.-1/) Posted by Cédric on Friday, May 17, 2019
+- COOL! [Scrollytelling with GSAP ScrollTrigger](https://www.williamrchase.com/post/scrollytelling-with-gsap-scrolltrigger/)
+- COOL! [allisonhorst/penguins](https://github.com/allisonhorst/penguins). A great intro dataset for data exploration & visualization (alternative to iris).
+- COOL! [Improved Clipping in the R Graphics Engine](https://www.stat.auckland.ac.nz/~paul/Reports/GraphicsEngine/r-clipping/r-clipping.html)
+- [Building a search page over large documente dataset based in elasticsearch](https://rafaelmenmell.netlify.app/2020/06/08/building-a-search-page-over-large-documente-dataset-based-in-elasticsearch/)
+- Хороший обучающий пример. [Expressing size in bananas a dive into {vctrs}](https://blog.rmhogervorst.nl/blog/2020/06/08/expressing-size-in-bananas-a-dive-into-vctrs/)
+- COOL! [Extrapolating with B splines and GAMs](https://fromthebottomoftheheap.net/2020/06/03/extrapolating-with-gams/)
+- COOL! [(JUST RELEASED) timetk 2.0.0: Visualize Time Series Data in 1-Line of Code](https://www.business-science.io/code-tools/2020/06/05/timetk-vesion-2-announcement.html)
+- [A slice tour for finding hollowness in high-dimensional data](https://amstat.tandfonline.com/doi/abs/10.1080/10618600.2020.1777140)
+- [R dyplr: Get index of column by its name](https://stackoverflow.com/questions/35768451/r-dyplr-get-index-of-column-by-its-name/35768651)
+
+## Stats and R
+- [Stats and R](https://www.statsandr.com/blog/)
+	- COOL! Stats and R. [Wilcoxon test in R: how to compare 2 groups under the non-normality assumption](https://www.statsandr.com/blog/wilcoxon-test-in-r-how-to-compare-2-groups-under-the-non-normality-assumption/)
+	- COOL! Stats and R. [Student's t-test in R and by hand: how to compare two groups under different scenarios](https://www.statsandr.com/blog/student-s-t-test-in-r-and-by-hand-how-to-compare-two-groups-under-different-scenarios/)
+
+
+
+# 04.06.2020
+## R
+Global String pool
+	- [Object size for characters in R - How does R global string pool work?](https://stackoverflow.com/questions/29701721/object-size-for-characters-in-r-how-does-r-global-string-pool-work/49040402)
+	- [Memory usage and R's global string pool](https://community.rstudio.com/t/memory-usage-and-rs-global-string-pool/4762)
+
 # 03.06.2020
 ## R
 - [A List of ggplot2 extensions](https://exts.ggplot2.tidyverse.org/)
@@ -808,6 +998,7 @@ The aim is to make it easy for R users to find developed extensions.
 - COOL! [Deploying R Shiny apps using ShinyProxy on Windows 10](https://www.databentobox.com/2019/11/05/deploy-r-app-with-shinyproxy/)
 - [Using plyr::mapvalues with dplyr](https://stackoverflow.com/questions/28013652/using-plyrmapvalues-with-dplyr)
 - [plyr mapvalues function ported into dplyr #4310 {Closed}](https://github.com/tidyverse/dplyr/issues/4310)
+- [Отключение проверки SSL сертификатов](https://stackoverflow.com/questions/46331066/quantmod-ssl-unable-to-get-local-issuer-certificate-in-r). @chiliast_humble А это пробовал: `httr::set_config(config(ssl_verifypeer = FALSE))`
 
 ## SQL
 - [8 способов объединения (JOIN) таблиц в SQL. Часть 2](http://datareview.info/article/8-sposobov-obedineniya-join-tablic-v-sql-chast-2/)
@@ -828,8 +1019,13 @@ A: Yes loading from disk sets the external pointer to NULL. We will have to over
 Q: Is there a simple way to restore them?
 A: Yes. You can test for `truelength()` of the `data.table`, and if it's 0, then use `setDT()` or `alloc.col()` on it.
 
+## CH
+- [Работа с JOIN в Clickhouse](https://ruhighload.com/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0+%D1%81+join+%D0%B2+clickhouse)
+
 ## data.table
 Навеяно темой антиджойнов
+- COOL! [Why does X\[Y\] join of data.tables not allow a full outer join, or a left join?](https://stackoverflow.com/questions/12773822/why-does-xy-join-of-data-tables-not-allow-a-full-outer-join-or-a-left-join)
+- [How does one do a full join using data.table?](https://stackoverflow.com/questions/15170741/how-does-one-do-a-full-join-using-data-table)
 - [Getting started with data.table](https://riptutorial.com/data-table)
 - Подробное объяснение синтаксиса `[`. [data.table Details](https://rdatatable.gitlab.io/data.table/reference/data.table.html).
 The way to read this out loud is: "Take DT, subset rows by i, then compute j grouped by by. Here are some basic usage examples expanding on this definition. See the vignette (and examples) for working examples.
@@ -853,12 +1049,15 @@ merge(dt1, dt2, by = "CustomerId", all = TRUE)
 ```
 
 ## DS
+- COOL! [Distill.pub](https://distill.pub/about/) Machine Learning Research Should Be Clear, Dynamic and Vivid. Distill Is Here to Help.
 - [Лекарей сжигать нельзя беречь сейчас](https://habr.com/ru/company/ods/blog/500206/) Блог компании Open Data Science.
 TLDR: кому перестановки делают больнее — меряем свёрткой графов.
+- [Безопасное определение размера образца для A / B-тестирования](https://qastack.ru/stats/38730/safely-determining-sample-size-for-a-b-testing)
+Я - инженер-программист, желающий создать инструмент A / B-тестирования . У меня нет основательной статистики, но за последние несколько дней я немного читал.
+- COOL! [Моделирование гидродинамики: Lattice Boltzmann Method](https://habr.com/ru/post/190552/)
 
 ## Статистика
-- [Bootstrapping in R](http://sanaitics.com/UploadedFiles/html_files/3820Bootstrapping_in_R.html)
-- [Confidence Intervals for Medians](https://rcompanion.org/handbook/E_04.html)
+- [Statistics with R. 1.7 - Confidence intervals and bootstrapping](https://arc.lib.montana.edu/book/statistics-with-r-textbook/item/49#Statistics%20with%20R++1)
 - [3.14.1 Wilcoxon rank sum test](https://bookdown.org/danieljcarter/r4steph/non-parametric-tests.html)
 - COOL! [Mann-Whitney test is not just a test of medians: differences in spread can be important](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1120984/)
 - [Классические методы статистики: критерий Уилкоксона](https://r-analytics.blogspot.com/2012/05/blog-post_20.html)
@@ -874,6 +1073,52 @@ The Mann-Whitney test, also called the Wilcoxon rank sum test, is a nonparametri
 The Mann-Whitney test compares the distributions of ranks in two groups. If you assume that both populations have distributions with the same shape (which doesn't have to be Gaussian), it can be viewed as a comparison of two medians. Note that if you don't make this assumption, the Mann-Whitney test does not compare medians.
 - [Are large data sets inappropriate for hypothesis testing?](https://stats.stackexchange.com/questions/2516/are-large-data-sets-inappropriate-for-hypothesis-testing)
 - [Problem with Mann-Whitney U-test for large samples {duplicate}](https://stats.stackexchange.com/questions/261031/problem-with-mann-whitney-u-test-for-large-samples)
+- [Исследуем утверждение центральной предельной теоремы с помощью экспоненциального распределения](https://habr.com/ru/post/471198/). В статье описывается исследование, проведенное с целью проверки утверждения центральной предельной теоремы о том, что сумма N независимых и одинаково распределенных случайных величин, отобранных практически из любого распределения, имеет распределение, близкое к нормальному.
+- [Центральная предельная теорема](https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0)
+
+## CI for median
+- COOL! Тут с правильным кодом. [Bootstrap hypothesis test for median of differences](https://stats.stackexchange.com/questions/458775/bootstrap-hypothesis-test-for-median-of-differences)
+- [Statistical Inference for a Linear Function of Medians: Confidence Intervals, Hypothesis Testing, and Sample Size Requirements](https://pubmed.ncbi.nlm.nih.gov/12243307/)
+- COOL! [Confidence interval for median](https://stats.stackexchange.com/questions/21103/confidence-interval-for-median). I have to find a 95% C.I. on the median and other percentiles. I don't know how to approach this. I mainly use R as a programming tool.
+Another approach is based on quantiles of the binomial distribution.
+e.g.:
+```
+> x=faithful$waiting
+> sort(x)[qbinom(c(.025,.975), length(x), 0.5)]
+```
+- COOL! [Confidence intervals for median](https://stats.stackexchange.com/questions/122001/confidence-intervals-for-median)
+- [Confidence interval for a median and other quantiles](https://www-users.york.ac.uk/~mb55/intro/cicent.htm).
+In Section 4.5 we estimated medians and other quantiles directly from the frequency distribution. We can estimate confidence intervals for these using the Binomial distribution. This is a large sample method. The 95% confidence interval for the q quantile can be found by an application of the Binomial distribution (Section 6.4, Section 6.6) (see Conover 1980). The number of observations less than the q quantile will be an observation from a Binomial distribution with parameters n and q, and hence has mean nq and standard deviation root(nq(1-q)).
+- [Confidence Intervals for Percentiles and Medians](http://www.milefoot.com/math/stat/ci-medians.htm)
+- [Calculating significance of difference between 2 groups using bootstrap](https://stats.stackexchange.com/questions/420807/calculating-significance-of-difference-between-2-groups-using-bootstrap)
+- [Bootstrapping in R](http://sanaitics.com/UploadedFiles/html_files/3820Bootstrapping_in_R.html)
+- [Confidence Intervals for Medians](https://rcompanion.org/handbook/E_04.html)
+- [Binomial {stats}](http://finzi.psych.upenn.edu/R/library/stats/html/Binomial.html)
+- [ДИ медианы](https://rpubs.com/aa989190f363e46d/c-i-median) by mz, 2017-04-24 11:02:31
+- [David Olive’s median confidence interval](http://exploringdatablog.blogspot.com/2012/04/david-olives-median-confidence-interval.html)
+	- [David J. Olive. A Simple Confidence Interval for the Median](https://www.researchgate.net/publication/242203424_A_Simple_Confidence_Interval_for_the_Median)
+- [Interpreting results: Median and its CI](https://www.graphpad.com/guides/prism/7/statistics/stat_median_and_its_confidence_inte.htm)
+```
+The median is the 50th percentile. Half the values are greater than (or equal to ) the median and half are smaller.
+The confidence interval of the median is computed by a standard method explained well in Zar (pages 548-549), based on the binomial distribution.
+Four notes:
+•The confidence interval of the median is not symmetrical around the median.
+•You do not need to assume that the population distribution is symmetrical in order to interpret the confidence interval.
+•The confidence interval begins and ends with values in the data set. No interpolation.
+•Even if you ask for 95% confidence level, the actual confidence level will usually be different (especially with small samples) and Prism reports this.
+```
+	- J.H. Zar, Biostatistical Analysis, Fifth edition 2010, PEARSON, ISBN 10: 0-13-100846-3. "24.9 CONFIDENCE INTERVAL FOR A POPULATION MEDIAN (pages 548-549)
+	- J.H. Zar, Biostatistical Analysis, Fifth edition 2014, PEARSON, ISBN 10: 1-292-02404-6. "9 CONFIDENCE INTERVAL FOR A POPULATION MEDIAN (pages 584-585)
+- [Robert M  Price Jr. Professor and Chair, Mathematics and Statistics](https://www.etsu.edu/cas/math/facultystaff/pricejr.php)
+- Тут большая переписка по сути. [Is it possible to test for significance between medians of two groups?](https://www.researchgate.net/post/Is_it_possible_to_test_for_significance_between_medians_of_two_groups)
+Yes, Bootstrapping method is an ideal way to do this. Basically for each median, you can re-sample your sample with replacement for a large number of times (e.g. 1000 times with a sample n=100). In doing so, you will get a normal distribution of the median you have and have a standard error. Thus, you will be able to get 95% CI. Finally, you can check if the two 95% CIs overlap. If they do, it implies the two median are not statistically significant.
+	- [GLM in R](http://data.princeton.edu/R/glms.html)
+- Почему перекрытие CI 95 двух распределений ни о чем не говорит.
+	- COOL! [Why Overlapping Confidence Intervals mean Nothing about Statistical Significance](https://towardsdatascience.com/why-overlapping-confidence-intervals-mean-nothing-about-statistical-significance-48360559900a)
+	- [Using Confidence Intervals to Compare Means](https://statisticsbyjim.com/hypothesis-testing/confidence-intervals-compare-means/)
+	- [A correct interpretation of two overlapping confidence intervals instances?](https://www.researchgate.net/post/A_correct_interpretation_of_two_overlapping_confidence_intervals_instances2)
+- Хороший подбор ошибочных мнений и литературы. [Interpreting Confidence Intervals](http://econometricsense.blogspot.com/2017/03/interpreting-confidence-intervals.html)
+- [Bonett-Price confidence intervals for medians and their contrasts](http://fmwww.bc.edu/repec/bocode/b/bpmedian.html)
 
 
 # 31.05.2020
@@ -892,7 +1137,7 @@ The goal of waldo is to find and concisely describe the difference between a pai
 - COOL! [Superior svg graphics rendering in R, and why it matters](https://ropensci.org/technotes/2020/05/28/rsvg2/)
 - COOL! [How to Safely Remove a Dynamic Shiny Module](https://appsilon.com/how-to-safely-remove-a-dynamic-shiny-module/)
 - COOL! [Shiny: Add/Removing Modules Dynamically](https://roh.engineering/post/shiny-add-removing-modules-dynamically/)
-- Интересно. [lrberge/dreamerr. Error Handling Made Easy, in R](https://github.com/lrberge/dreamerr)
+- COOL! [lrberge/dreamerr. Error Handling Made Easy, in R](https://github.com/lrberge/dreamerr). validation/assertion.
 - [textplot: Text Plots](https://cran.r-project.org/web/packages/textplot/index.html). Visualise complex relations in texts.
 - Learning. COOL! [Exploratory Data Analysis in R](https://mgimond.github.io/ES218/index.html). В частности про `tidyr` и `pivot_wider`:
 	- [Tidying/reshaping tables using tidyr](https://mgimond.github.io/ES218/Week03b.html)
@@ -923,6 +1168,7 @@ The project_mru file is just a text file that you can edit manually. You don't e
 - [Modern Rule-Based Models](https://rviews.rstudio.com/2020/05/21/modern-rule-based-models/) by Max Kuhn
 - [rules 0.0.1](https://www.tidyverse.org/blog/2020/05/rules-0-0-1/). We are happy to announce the release of the rules package on CRAN. rules is another “parsnip-adjacent” package that enables a specific class of models within the tidymodels infrastructure.
 - [holub008/xrf](https://github.com/holub008/xrf) eXtreme RuleFit (sparse linear models on XGBoost ensembles)
+- [Customizing tables is fun (seriously) with gt](https://www.allisonhorst.com/post/2020-03-02-gt-tables-examples/)
 - [The Mockup Blog](https://themockup.blog/)
 	- COOL! [gt - a (G)rammar of (T)ables](https://themockup.blog/posts/2020-05-16-gt-a-grammer-of-tables/). Not to be confused with a Game of Thrones
 	- COOL! [reactable - An Interactive Tables Guide](https://themockup.blog/posts/2020-05-13-reactable-tables-the-rest-of-the-owl/)
@@ -1004,6 +1250,7 @@ The goal of datadrivencv is to ease the burden of maintaining a CV by separating
 - [Taking visualizations to the next level with the scales package](https://www.danaseidel.com/rstudioconf2020#1) by Dana Seidel (@dpseidel)
 - [Practical Plumber Patterns: An opinionated approach to writing APIs in R with Plumber](https://github.com/blairj09-talks/ppp)
 - [renv Project Environments to R](https://github.com/kevinushey/2020-rstudio-conf)
+- [How to win an AI Hackathon. Without using AI](https://www.jumpingrivers.com/t/2019-budbi/#1)
 
 ## CH
 - COOL! [ClickHouse для продвинутых пользователей в вопросах и ответах]()https://habr.com/ru/company/avito/blog/500678/ По умолчанию ответы Алексея Миловидова, если не написано иное.
@@ -1539,12 +1786,6 @@ Removes large or troublesome blobs like git-filter-branch does, but faster. And 
 # 05.03.2020
 ## R
 - [Dirk Eddelbuettel Blog](http://dirk.eddelbuettel.com/blog/code/r4/)
-- [Quick #rstats Tip: Use `Ncpus` when installing packages](https://twitter.com/jozefhajnala/status/1235281079092867073?s=20)
-```
-install.packages() has an Ncpus argument determining how many parallel processes to use
-This can e.g. speed up installation of {{tidyverse}} from ~11min to ~4.6min
-Also works with remotes & devtools install_ functions
-```
 - [Genomic analysis of COVID-19 spread. Situation report.](https://nextstrain.org/narratives/ncov/sit-rep/2020-03-04)
 - COOL! Совет от Jenny. [andrie/gcalendr](https://github.com/andrie/gcalendr). R package to read events from google calendar https://andrie.github.io/gcalendr/
 - COOL! [Bayes’ theorem in three panels](https://www.tjmahr.com/bayes-theorem-in-three-panels/)
@@ -1786,7 +2027,7 @@ echo 0 > /proc/sys/kernel/sysrq
 
 ## R
 - COOL! [How to set a variable in .Renviron](https://community.rstudio.com/t/how-to-set-a-variable-in-renviron/5029)
-`usethis :package`: has a useful helper function to modify .Renviron :
+`usethis` package: has a useful helper function to modify .Renviron :
 ```
 usethis::edit_r_environ() will open your user .Renviron which is in your home
 usethis::edit_r_environ("project") will open the one in your project
@@ -2289,7 +2530,7 @@ nycflights13::flights %>%
 - [DATA SCIENTIST OR DATA ENGINEER – WHAT’S THE DIFFERENCE?](https://www.mango-solutions.com/blog/data-scientist-or-data-engineer-whats-the-difference)
 - [A First Look at Confidence Distributions](https://rviews.rstudio.com/2019/11/05/a-first-look-at-confidence-distributions/) by by Joseph Rickert
 - [renv: Project Environments for R](https://blog.rstudio.com/2019/11/06/renv-project-environments-for-r/)
-- Получаем помощь по функциям (в т.ч. ищем их)
+- Получаем помощь (help) по функциям (в т.ч. ищем их)
 	- ввести в консоль: `??stri_c`
  	- установить пакет `"sos"` и ввести в консоль `sos::findFn("stri_c")`
  	- перейти на сайт https://www.rdocumentation.org/ и ввести название функции
@@ -3177,7 +3418,7 @@ f_dowle3 = function(DT) {
 - [In R is it better to use integer64, numeric, or character for large integer id numbers?](https://stackoverflow.com/questions/35171760/in-r-is-it-better-to-use-integer64-numeric-or-character-for-large-integer-id-n)
 - [R in a 64 bit world](http://www.win-vector.com/blog/2015/06/r-in-a-64-bit-world/)
 - [Double-precision floating-point format](https://en.wikipedia.org/wiki/Double-precision_floating-point_format)
-- Калькулятор для преобразования чисел с плавающей точкойю [Tools & Thoughts. IEEE-754 Floating Point Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
+- Калькулятор для преобразования чисел с плавающей точкой. [Tools & Thoughts. IEEE-754 Floating Point Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
 - [Урок №33. Типы данных с плавающей точкой](https://ravesli.com/urok-33-tip-dannyh-s-plavayushhej-tochkoj-floating-point/)
 Диапазон и точность типов данных с плавающей точкой, согласно стандарту IEEE 754:
 
@@ -3189,6 +3430,7 @@ f_dowle3 = function(DT) {
 - unixtimestamp: 1565352587 sec -- 10 знаков
 - [Controlling number of decimal digits in print output in R](https://stackoverflow.com/questions/2287616/controlling-number-of-decimal-digits-in-print-output-in-r)
 - [IEEE Standard 754 Floating Point Numbers](https://tutorialspoint.dev/computer-science/computer-organization-and-architecture/ieee-standard-754-floating-point-numbers)
+- [IEEE 754 - стандарт двоичной арифметики с плавающей точкой](https://www.softelectro.ru/ieee754.html)
 
 
 # 02.08.2019
@@ -4124,32 +4366,6 @@ You can't share database connections between different workers in any of the gen
 
 # 15.05.2019
 ## R
-- COOL! [Upgrading to R 3.6.0 on a Mac – May 14, 2019](https://ibecav.github.io/update_libraries/)
-```
-require(tidyverse)
-allmypackages <- as.data.frame(installed.packages())
-allmypackages <- allmypackages %>%
-  filter(Priority != "base" | is.na(Priority)) %>%
-  select(-c(Enhances:MD5sum, LinkingTo:Suggests)) %>%
-  droplevels()
-str(allmypackages)
-
-package_source <- function(pkg){
-  x <- as.character(packageDescription(pkg)$Repository)
-  if (length(x)==0) {
-    y <- as.character(packageDescription(pkg)$GithubRepo)
-    z <- as.character(packageDescription(pkg)$GithubUsername)
-    if (length(y)==0) {
-      return("Other")
-    } else {
-      return(str_c("GitHub repo = ", z, "/", y))
-    }
-  } else {
-    return(x)
-  }
-}
-# show the first 60 as an example
-head(sapply(allmypackages$Package, package_source), 60)
 ```
 - COOL! [Introducing trelliscopejs](https://ryanhafen.com/blog/trelliscopejs/)
 - COOL! [Trelliscope](https://hafen.github.io/trelliscopejs/#trelliscope)
@@ -7355,13 +7571,6 @@ fonttable()
 ## R
 - COOL! [Semantic dashboard - new open source R Shiny package](https://appsilondatascience.com/blog/rstats/2018/04/23/semanticdashboard.html)
 - COOL! [An Introduction to Greta](https://rviews.rstudio.com/2018/04/23/on-first-meeting-greta/). I had assumed that the tensorflow and reticulate packages would eventually enable R developers to look beyond deep learning applications and exploit the TensorFlow platform to create all manner of production-grade statistical applications. BUT greta lets users write TensorFlow-based Bayesian models directly in R! What could be more charming?
-- [Get the list of installed packages by user in R](https://stackoverflow.com/questions/38481980/get-the-list-of-installed-packages-by-user-in-r)
-```
-ip <- as_tibble(installed.packages()[,c(1,3:4)])
-ip <- ip[is.na(ip$Priority),1:2,drop=FALSE]
-pkgs <- ip$Package
-saveRDS(pkgs, "pkgs.Rds")
-```
 - [Big changes behind the scenes in R 3.5.0](http://blog.revolutionanalytics.com/2018/04/r-350.html)
  	- [Preview: ALTREP promises to bring major performance improvements to R](http://blog.revolutionanalytics.com/2017/09/altrep-preview.html). Тут есть ссылки на презентации.
 	- [WHAT'S IN A VECTOR?](https://gmbecker.github.io/jsm2017/jsm2017.html) by GABRIEL BECKER, LUKE TIERNEY, TOMAS KALIBERA

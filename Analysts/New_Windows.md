@@ -192,6 +192,7 @@ http://answers.microsoft.com/en-us/windows/forum/windows_10-security/event-id-10
 	- PowerShell ISE
 - [Windows Command Line Tools For Developers. Tabbed Console starts here](https://blogs.msdn.microsoft.com/commandline/2018/04/13/tabbed-console-starts-here/)
 - COOL! [Windows Terminal 1.0](https://devblogs.microsoft.com/commandline/windows-terminal-1-0/)
+- [MSIX Tutorial: A comprehensive 24-chapter guide](https://www.advancedinstaller.com/msix-introduction.html)
 - [Direct Folders — экономим клики при работе с файлами в Windows](https://lifehacker.ru/direct-folders-ekonomim-kliki-pri-rabote-s-fajlami-v-windows/)
 - [Listary](https://www.listary.com/) is a revolutionary search utility for Windows that makes finding your files and launching applications blazing fast, for casual and power users alike!
 - [Clover 3](http://en.ejie.me/). Wings for your Windows Explorer! Clover is an extension of the Windows Explorer, to add multi-tab functionality similar to Google Chrome browser. After install Clover, you will be able to open multiple folders within the same window, and you can also add folder bookmarks.
@@ -274,7 +275,8 @@ Reboot your computer.
 Замена CiscoAnyConnect
 http://macappstore.org/openconnect/
 http://www.infradead.org/openconnect/download.html
-https://openconnect.github.io/openconnect-gui/ (edited) 
+https://openconnect.github.io/openconnect-gui/ (edited)
+https://chocolatey.org/packages/openconnect-gui
 
 ## Web camera
 - [3 Ways to Fix Camera App Not Working in Windows 10](https://www.top-password.com/blog/fix-camera-app-not-working-in-windows-10/)
