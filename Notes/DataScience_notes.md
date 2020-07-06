@@ -189,6 +189,8 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - [Outstanding User Interfaces with Shiny](https://divadnojnarg.github.io/outstanding-shiny-ui/) by David Granjon
 - [R for Statistics in EPH](https://bookdown.org/danieljcarter/r4steph/)
 - [Agile Data Science with R](https://edwinth.github.io/ADSwR/) by Edwin Thoen
+- [Statistical rethinking with brms, ggplot2, and the tidyverse: Second edition](https://bookdown.org/content/4857/)
+- Learning. [rstudio4edu. A Handbook for Teaching and Learning with R and RStudio](https://rstudio4edu.github.io/rstudio4edu-book/	)
 
 
 
@@ -870,6 +872,124 @@ Also works with remotes & devtools install_ functions
 options(Ncpus = parallel::detectCores())
 ```
 
+# 07.07.2020
+## R
+- [Tidyverse Tips. How to create crosstabulations](https://www.tidyverse.tips/post/how-to-create-crosstabulations/)
+- Slides. [Visualizing covariance, variance, standard deviation, correlation](https://evamaerey.github.io/statistics/covariance_correlation.html#1)
+- [tidylog](https://github.com/elbersb/tidylog). The goal of tidylog is to provide feedback about dplyr and tidyr operations. It provides simple wrapper functions for almost all dplyr and tidyr functions, such as filter, mutate, select, full_join, and group_by.
+
+## Rconf 2019
+- [Links to slides from rstudio::conf 2019](https://github.com/kbroman/RStudioConf2019Slides)
+- ["Applied Machine Learning" at Rstudio::conf 2019 (January 15 & 16, Austin, Texas)](https://github.com/topepo/rstudio-conf-2019)
+
+# 05.07.2020
+- COOL! Вместе с кодом. [The tale of two charts combined](http://jkunst.com/blog/posts/2020-06-15-when-2-charts-are-more-than-1/). streamgraph on the top of a stacked column chart.
+- COOL! [Alluvial Diagrams with ggforce](https://www.datalorax.com/post/alluvial-plots-with-ggforce/)
+- COOL! [Using darklyplot](http://lenkiefer.com/2020/07/03/using-darklyplot/) A guide to using the darklyplot package
+- [Introducing Modeltime: Tidy Time Series Forecasting using Tidymodels](https://www.business-science.io/code-tools/2020/06/29/introducing-modeltime.html)
+- [openintro:](http://openintrostat.github.io/openintro/) Data Sets and Supplemental Functions from OpenIntro Textbooks and Labs
+- [Comparing Dataframes In R Using Comparedf](https://alexsanjoseph.github.io/r/2018/10/03/comparing-dataframes-in-r-using-comparedf)\
+- [mctest: Multicollinearity Diagnostic Measures](https://cran.r-project.org/web/packages/mctest/index.html)
+Package computes popular and widely used multicollinearity diagnostic measures <doi:10.17576/jsm-2019-4809-26> and <doi:10.32614/RJ-2016-062> . Package also indicates which regressors may be the reason of collinearity among regressors.
+- [mctest: An R Package for Detection of Collinearity among Regressors](https://journal.r-project.org/archive/2016/RJ-2016-062/RJ-2016-062.pdf)
+- [Check for multicollinearity of model terms](https://easystats.github.io/performance/reference/check_collinearity.html)
+
+# 02.07.2020
+## R
+- [The tidyverse for Machine Learning](https://brunaw.com/slides/rladies-helsinki/talk.html#1)
+- COOL! [Learn to style HTML using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)
+- [Install/Load dataui](https://timelyportfolio.github.io/dataui/articles/dataui_replicate_examples.html)
+dataui is currently in pre-alpha state with a potentially unstable API. For now dataui will only live on Github, but CRAN is the ultimate goal.
+- [HOW TO BUILD A TUFTE-STYLE WEATHER GRAPH IN R USING GGPLOT2](https://johndjohnson.info/post/how-to-build-a-tufte-style-weather-graph-in-r-using-ggplot2/)
+- [davidsjoberg/ggstream](https://github.com/davidsjoberg/ggstream). A package to make streamplots
+- [R Bootcamp](https://r-bootcamp.netlify.app/)
+- [“It’s Data, Not Reality”: On Situated Data with Jill Walker Rettberg](https://medium.com/nightingale/its-data-not-reality-on-situated-data-with-jill-walker-rettberg-d27c71b0b451)
+
+## DS
+- [Бустинг, AdaBoost](https://neerc.ifmo.ru/wiki/index.php?title=%D0%91%D1%83%D1%81%D1%82%D0%B8%D0%BD%D0%B3,_AdaBoost)
+- [Градиентый бустинг — просто о сложном](https://neurohive.io/ru/osnovy-data-science/gradientyj-busting/)
+- [Ансамблевые методы: бэггинг, бустинг и стекинг](https://neurohive.io/ru/osnovy-data-science/ansamblevye-metody-begging-busting-i-steking/)
+
+# 30.06.2020
+## R
+- [volcano3D](https://katrionagoldmann.github.io/volcano3D/index.html)
+The volcano3D package enables exploration of probes differentially expressed between three groups. Its main purpose is for the visualisation of differentially expressed genes in a three-dimensional volcano plot. These plots can be converted to interactive visualisations using plotly.
+- [Building Shiny apps - an interactive tutorial](https://deanattali.com/blog/building-shiny-apps-tutorial/)
+- COOL! [ggfittext](https://wilkox.org/ggfittext/). ggfittext provides a ggplot2 geom for fitting text into boxes.
+- COOL! [Introduction to summarytools](https://cran.r-project.org/web/packages/summarytools/vignettes/Introduction.html) by Dominic Comtois, 2020-03-02
+
+## Oracle
+- [Understanding the ORA_ROWSCN behavior in Oracle](https://stackoverflow.com/questions/9520995/understanding-the-ora-rowscn-behavior-in-oracle)
+- [ORA_ROWSCN Pseudocolumn](https://docs.oracle.com/cd/B19306_01/server.102/b14200/pseudocolumns007.htm)
+
+# 29.06.2020
+## R
+- COOL! [great - simple and scalable statistical modelling in R](https://greta-stats.org/)
+- [New version of my ggplot2 theme reference sheet using mtcars!](https://twitter.com/_isabellamb/status/1269815940629184514?s=20)
+[PDF/PNG](https://isabella-b.com/blog/ggplot2-theme-elements-reference/)
+- [ggplot2 Theme Elements Demonstration](https://henrywang.nl/ggplot2-theme-elements-demonstration/)
+- [Intro to Hugo: The Masterchef of Layouts](https://timmastny.rbind.io/blog/intro-hugo-blogdown-chef/) 2020/06/24
+- [covdata](https://kjhealy.github.io/covdata/) is a data package for R that collects and bundles datasets related to the COVID-19
+- [How to Write Production-Ready R Code: Tools and Patterns](https://appsilon.com/how-to-write-production-ready-r-code/)
+- [The mr_uplift package in R: A Practitioners Guide to Trade-Offs in Uplift Models](https://scweiss.blogspot.com/2020/06/the-mruplift-package-in-r-practitioners.html)
+
+## tools
+- [glogg - the fast, smart log explorer](http://glogg.bonnefon.org/). [Github](https://github.com/nickbnf/glogg)
+- [Apache Flink in 10 Minutes](https://www.datasciencecentral.com/profiles/blogs/apache-flink-in-10-minutes)
+
+## network graphs
+- pajek format
+	- [Springer](https://link.springer.com/referenceworkentry/10.1007%2F978-1-4614-6170-8_310)
+	- Wolfram. [Pajek (.net)—Wolfram Language Documentation](https://reference.wolfram.com/language/ref/format/Pajek.html)
+	- [Network data file formats](https://link.springer.com/referenceworkentry/10.1007%2F978-1-4614-6170-8_298)
+https://gephi.org/users/supported-graph-formats/pajek-net-format/
+https://igraph.org/r/doc/cohesive_blocks.html
+- [An Introduction to the XES Standard](https://fluxicon.com/blog/2010/09/intro-to-xes/) by Christian, 21 Sep '10
+- [IEEE 1849-2016 XES Standard](http://www.xes-standard.org/)
+
+# 26.06.2020
+## R
+- [bpmn - BPMN diagrams in R](https://bergant.github.io/bpmn/)
+- [Composing ggplot geoms](https://twitter.com/grant_mcdermott/status/1275134627871481856?s=20) A shortcut I like to use is calling multiple geoms in an lapply() call, since this automatically generates a list. Works well for investigating plotting variations, e.g.
+```
+ggplot(diamonds, aes(carat)) +
+  lapply(c(50,200), function(b) geom_histogram(bins=b, alpha=0.3))
+```
+- [RcppSimdJson 0.0.6: New Upstream, New Features!](http://dirk.eddelbuettel.com/blog/2020/06/25/#rcppsimdjson_0.0.6)
+- [Hello hordes!](https://colinfay.me/hello-hordes/). Introducing hordes, a module that makes R available from NodeJS.
+- COOL! [hordes cookbook](https://colinfay.me/hordes/) by Colin Fay
+	- [Chapter 5 Building a Web App](https://colinfay.me/hordes/building-a-web-app.html#using-a-websocket)
+- [Does your Data Science Team Deliver Durable Value?](https://blog.rstudio.com/2020/06/24/delivering-durable-value/)
+
+# 25.06.2020
+## R
+- [flexdashboard for Prototyping and Profit](https://github.com/klmedeiros/rladies-nyc-june2020-flexdashboard)
+- [Interactively perform a spatial interpolation with the GUInterp Shiny interface](https://luigi.ranghetti.info/post/guinterp/)
+- COOL! [argparser: Command-Line Argument Parser](https://cran.r-project.org/web/packages/argparser/index.html)
+Cross-platform command-line argument parser written purely in R with no external dependencies. It is useful with the Rscript front-end and facilitates turning an R script into an executable script.
+- COOL! [Deep attractors: Where deep learning meets chaos](https://blogs.rstudio.com/ai/posts/2020-06-24-deep-attractors/)
+- COOL! [Why R? Webinar - Neural Networks for Modelling Molecular Interactions with Tensorflow](http://r-addict.com/2020/06/23/Keras.html)
+
+# 23.06.2020
+## R
+- COOL! [giocomai/ganttrify](https://github.com/giocomai/ganttrify). Create beautiful Gantt charts with ggplot2 https://apps.europeandatajournalism.e…
+- COOL! [UPGRADE YOUR WORKFLOW WITH DRAKE](https://mdneuzerling.com/post/upgrade-your-workflow-with-drake/)
+- COOL! [Using SQL in RStudio](https://irene.rbind.io/post/using-sql-in-rstudio/)
+- [goodpress (or badpress?)](https://maelle.github.io/goodpress/index.html). Write to WordPress, from R Markdown, with a modern stack.
+- COOL! [New font in town — Goldman Sans (https://design.gs.com/d/story/goldman-sans/…)](https://twitter.com/hrbrmstr/status/1275753397552140289?s=20) — has some nice characteristics. It's now in dev-version of  #rstats {hrbrthemes}
+- Why R? Webinar 010 - Julia Silge - Understanding Word Embeddings. [Video](https://www.youtube.com/watch?v=ke03DGvT8uU&feature=youtu.be). [Slides](https://juliasilge.github.io/why-r-webinar/#1)
+
+## DS
+- COOL! [JerryLead/SparkInternals]. Spark Internals
+- COOL! [Introducing Koalas 1.0](https://databricks.com/blog/2020/06/24/introducing-koalas-1-0.html)
+- COOL! [7 Interesting JavaScript Features in ES2020 That You Should Know](https://kriss.io/7-interesting-javascript-features-in-es2020-that-you-should-know/)
+- COOL! [simdjson : Parsing gigabytes of JSON per second](https://github.com/simdjson/simdjson)
+- [AT&T Archives: Seeing the Digital Future (1961)](https://www.youtube.com/watch?v=avHo0-qU8xo)
+
+## Process Mining
+- [Process Mining Books](https://www.tf-pm.org/resources/books)
+- [fuzzymineR](https://github.com/nirmalpatel/fuzzymineR). R Package to do Fuzzy Process Mining
+- [ProM Tips — Which Mining Algorithm Should You Use?](https://fluxicon.com/blog/2010/10/prom-tips-mining-algorithm/) Anne18 Oct ‘10
 
 # 19.06.2020
 ## R
@@ -1107,8 +1227,8 @@ Four notes:
 •The confidence interval begins and ends with values in the data set. No interpolation.
 •Even if you ask for 95% confidence level, the actual confidence level will usually be different (especially with small samples) and Prism reports this.
 ```
-	- J.H. Zar, Biostatistical Analysis, Fifth edition 2010, PEARSON, ISBN 10: 0-13-100846-3. "24.9 CONFIDENCE INTERVAL FOR A POPULATION MEDIAN (pages 548-549)
-	- J.H. Zar, Biostatistical Analysis, Fifth edition 2014, PEARSON, ISBN 10: 1-292-02404-6. "9 CONFIDENCE INTERVAL FOR A POPULATION MEDIAN (pages 584-585)
+	- J.H. Zar, Biostatistical Analysis, Fifth edition 2010, PEARSON, ISBN 10: 0-13-100846-3. "24.9 CONFIDENCE INTERVAL FOR A POPULATION MEDIAN" (pages 548-549)
+	- J.H. Zar, Biostatistical Analysis, Fifth edition 2014, PEARSON, ISBN 10: 1-292-02404-6. "9 CONFIDENCE INTERVAL FOR A POPULATION MEDIAN" (pages 584-585)
 - [Robert M  Price Jr. Professor and Chair, Mathematics and Statistics](https://www.etsu.edu/cas/math/facultystaff/pricejr.php)
 - Тут большая переписка по сути. [Is it possible to test for significance between medians of two groups?](https://www.researchgate.net/post/Is_it_possible_to_test_for_significance_between_medians_of_two_groups)
 Yes, Bootstrapping method is an ideal way to do this. Basically for each median, you can re-sample your sample with replacement for a large number of times (e.g. 1000 times with a sample n=100). In doing so, you will get a normal distribution of the median you have and have a standard error. Thus, you will be able to get 95% CI. Finally, you can check if the two 95% CIs overlap. If they do, it implies the two median are not statistically significant.
@@ -1169,6 +1289,7 @@ The project_mru file is just a text file that you can edit manually. You don't e
 - [rules 0.0.1](https://www.tidyverse.org/blog/2020/05/rules-0-0-1/). We are happy to announce the release of the rules package on CRAN. rules is another “parsnip-adjacent” package that enables a specific class of models within the tidymodels infrastructure.
 - [holub008/xrf](https://github.com/holub008/xrf) eXtreme RuleFit (sparse linear models on XGBoost ensembles)
 - [Customizing tables is fun (seriously) with gt](https://www.allisonhorst.com/post/2020-03-02-gt-tables-examples/)
+- COOL! [How to Make Beautiful Tables in R](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/)
 - [The Mockup Blog](https://themockup.blog/)
 	- COOL! [gt - a (G)rammar of (T)ables](https://themockup.blog/posts/2020-05-16-gt-a-grammer-of-tables/). Not to be confused with a Game of Thrones
 	- COOL! [reactable - An Interactive Tables Guide](https://themockup.blog/posts/2020-05-13-reactable-tables-the-rest-of-the-owl/)

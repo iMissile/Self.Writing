@@ -106,6 +106,11 @@ The [Microsoft support tool NFI.exe](https://support.microsoft.com/en-us/help/25
 ```
 - [Ошибка 0xC0000225, 0xC00000E, Missing Winload.efi после копирования или миграции ОС](https://kb.paragon-software.com/ru/article/423)
 
+# WebDAV
+- [Как в Windows подключить облачное хранилище в качестве сетевого диска по протоколу WebDav](https://remontcompa.ru/windows/funkcional-windows/1832-kak-v-windows-podklyuchit-oblachnoe-hranilische-v-kachestve-setevogo-diska-po-protokolu-webdav.html)
+- [OneDrive — подключение по протоколу WebDav](https://vellisa.ru/onedrive-webdav)
+- [OneDrive WebDAV](https://webdav.io/webdav/webdav-integrations/onedrive-webdav/)
+
 # Проблемы Lenovo с видеодрайвером
 1. Удалить Nvidia Update & UpdatusUser (через netplwiz)
 2. Удалить Norton и прочую фигню
