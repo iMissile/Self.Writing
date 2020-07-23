@@ -872,6 +872,29 @@ Also works with remotes & devtools install_ functions
 options(Ncpus = parallel::detectCores())
 ```
 
+# 23.07.2020
+## R, куммулятивно
+- [The 7 Log Management Tools You Need To Know](https://blog.overops.com/the-7-log-management-tools-you-need-to-know/)
+- [r-lib/carrier](https://github.com/r-lib/carrier). Create standalone functions for remote execution.
+- [rweekly.org](https://rweekly.org/). Learn R, R tutorials, R resources, blog posts and the latest updates about the statistical programming R language.
+- [](https://dirk.eddelbuettel.com/papers/useR2020_rcpp_tutorial.pdf)
+- [Winners of the 2nd Annual Shiny Contest](https://blog.rstudio.com/2020/07/13/winners-of-the-2nd-shiny-contest/
+- [Deploying R Models with MLflow and Docker](https://mdneuzerling.com/post/deploying-r-models-with-mlflow-and-docker/). MLflow is a platform for the “machine learning cycle”.
+- [Data Science Workflows](https://mdneuzerling.com/post/data-science-workflows/). I’m obsessed with how to structure a data science project.
+- [Mobile Ready shiny Apps with Standalone Capabilities](https://rinterface.github.io/shinyMobile/). Develop outstanding shiny apps for iOS, Android, desktop as well as beautiful shiny gadgets. 
+- Slides. [Exploring {ggpattern}](https://evamaerey.github.io/flipbooks/ggpattern/ggpattern#1)
+- [MLflow - A platform for the machine learning lifecycle](https://mlflow.org/). An open source platform for the end-to-end machine learning lifecycle
+- [mlflow/mlflow](https://github.com/mlflow/mlflow). Open source platform for the machine learning lifecycle - mlflow/mlflow
+- [Manipulate individual rows — rows](https://dplyr.tidyverse.org/reference/rows.html). These functions provide a framework for modifying rows in a table using a second table of data.
+- [Do anything — do](https://dplyr.tidyverse.org/reference/do.html). do() is superseded as of dplyr 1.0.0, because its syntax never really felt like it belong with the rest of dplyr.
+- [forestmodel](https://cran.r-project.org/web/packages/forestmodel/readme/README.html). This is an R package to generate forest plots of the coefficients of models produced by lm, glm, survival::coxph, etc.
+- [Metaflow: фреймворк для управления data science проектами от Netflix](https://metaflow.org/)
+- [gkaramanis/tidytuesday](https://github.com/gkaramanis/tidytuesday/tree/master/2020-week29). Code and plots for submissions to the #tidytuesday challenge - gkaramanis/tidytuesday
+- [See how to use the reactable R package to make an interactive table with rows that expand when clicked])https://www.infoworld.com/article/3543297/how-to-create-tables-in-r-with-expandable-rows.html)
+- [5 Obscure Python Libraries Every Data Scientist Should Know](https://towardsdatascience.com/5-obscure-python-libraries-every-data-scientist-should-know-3651bf5d3be3)
+
+
+
 # 07.07.2020
 ## R
 - [Tidyverse Tips. How to create crosstabulations](https://www.tidyverse.tips/post/how-to-create-crosstabulations/)
