@@ -98,7 +98,21 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 Итого, вытаскиваем ветку 'huawei' командой
 `git clone -b huawei https://gitlab.com/TV-stat/mts-tv-stat.reports.git ./mts-tv-stat.reports.hw`
 - [7.12 Инструменты Git - Создание пакетов](https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2). В этих случаях вам может помочь команда `git bundle`.
-
+- [Reducing the repository size using Git](https://docs.gitlab.com/ee/user/project/repository/reducing_the_repo_size_using_git.html)
+	- COOL! [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/)
+Removes large or troublesome blobs like git-filter-branch does, but faster. And written in Scala
+- [Как удалить файлы из истории Git-а, или git filter-branch и переписывание истории](https://det-random.livejournal.com/43291.html)
+- [BFG Repo-Cleaner by rtyley](https://rtyley.github.io/bfg-repo-cleaner/)
+A simpler, faster alternative to git-filter-branch for deleting big files and removing passwords from Git history.
+- [How can I delete a commit in Git?](https://www.git-tower.com/learn/git/faq/delete-commits)
+- [17. Удаление коммитов из ветки](https://githowto.com/ru/removing_commits_from_a_branch)
+- COOL! [Remove files from Git commit](https://stackoverflow.com/questions/12481639/remove-files-from-git-commit)
+- COOL [Take GitHub to the command line](https://cli.github.com/)
+- [How to update your Git credentials on Windows](https://cmatskas.com/how-to-update-your-git-credentials-on-windows/)
+`Control Panel -> Credential Manager -> Generic Credentials`,
+`Панель управления -> Все элементы панели управления -> Диспетчер учетных данных` 
+- [Доступ к диспетчеру учетных данных](https://support.microsoft.com/ru-ru/help/4026814/windows-accessing-credential-manager)
+- [7.14 Git Tools - Credential Storage](https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage)
 
 
 # R general
@@ -190,7 +204,9 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 - [R for Statistics in EPH](https://bookdown.org/danieljcarter/r4steph/)
 - [Agile Data Science with R](https://edwinth.github.io/ADSwR/) by Edwin Thoen
 - [Statistical rethinking with brms, ggplot2, and the tidyverse: Second edition](https://bookdown.org/content/4857/)
-- Learning. [rstudio4edu. A Handbook for Teaching and Learning with R and RStudio](https://rstudio4edu.github.io/rstudio4edu-book/	)
+- Learning. [rstudio4edu. A Handbook for Teaching and Learning with R and RStudio](https://rstudio4edu.github.io/rstudio4edu-book/)
+- [Supplement to Shiny in Production](https://kellobri.github.io/shiny-prod-book/)
+- [Interpretable Machine Learning. A Guide for Making Black Box Models Explainable.](https://christophm.github.io/interpretable-ml-book/) by Christoph Molnar
 
 
 
@@ -512,7 +528,7 @@ dt[,.SD, .SDcols = !c('b', 'c')]
 - [SmartGit non-commercial](https://www.syntevo.com/blog/?p=3669)
 - [Web Scraper](https://www.webscraper.io/)
 Web Scraper is a company specializing in data extraction from web pages. We offer 2 great options for our users. Our free Google Chrome Web Scraper Extension, and cloud based Web Scraper.
-- COOL! [The Chartmaker Directory](http://chartmaker.visualisingdata.com/)
+- COOL! [Companies, Officials and NGO Using R](https://github.com/ThinkR-open/companies-using-r)
 
 ## Amazon EC2
 - [What is an ECU? CPU Benchmarking in the Cloud](http://blog.cloudharmony.com/2010/05/what-is-ecu-cpu-benchmarking-in-cloud.html)
@@ -702,6 +718,8 @@ https://www.data-to-viz.com/
 https://rawgraphs.io/
 https://plot.ly/products/cloud/
 - [What Are Data Visualization Style Guidelines?](https://medium.com/data-visualization-society/style-guidelines-92ebe166addc)
+- COOL! [The Chartmaker Directory](http://chartmaker.visualisingdata.com/)
+
 
 ## Анимация
 - COOL! [gganimate](https://gganimate.com/). gganimate extends the grammar of graphics as implemented by ggplot2 to include the description of animation. It does this by providing a range of new grammar classes that can be added to the plot object in order to customise how it should change with time.
@@ -871,12 +889,80 @@ This can e.g. speed up installation of {{tidyverse}} from ~11min to ~4.6min
 Also works with remotes & devtools install_ functions
 options(Ncpus = parallel::detectCores())
 ```
+# 14.07.2020
+## R
+- COOL! [Comparing Variable Importance Functions (For Modeling)](https://tonyelhabr.rbind.io/post/variable-importance-compare/)
+- ML
+	- [5.10 SHAP (SHapley Additive exPlanations)](https://christophm.github.io/interpretable-ml-book/shap.html)
+	- [5.5 Permutation Feature Importance](https://christophm.github.io/interpretable-ml-book/feature-importance.html)
+- COOL! [Automated Build and Publication of Slides with R Markdown, Reveal.js, DeckTape, and LibreOffice](https://sadams.io/post/rmarkdown-to-slides/)
+- [konabee/tidy_coffee](https://github.com/konabee/tidy_coffee/blob/master/tidy1.r)
+- COOL! [@coolbutuseless](https://coolbutuseless.github.io/)
+
+
+# 12.07.2020
+## R
+- COOL! [drat: Drat R Archive Template](https://dirk.eddelbuettel.com/code/drat.html)
+- [future and future.apply - Some Recent Improvements](https://www.jottr.org/2020/07/11/future-future.apply-recent-improvements/)
+- COOL! [sketcher: An R package for photo to sketch effects](https://htsuda.net/sketcher/)
+- COOL! [Distill for R Markdown](https://rstudio.github.io/distill/). Scientific and technical writing, native to the web
+- [ColinFay/golemshinydash](https://github.com/ColinFay/golemshinydash)
+- [Sharing on Short Notice](https://education.rstudio.com/blog/2020/04/sharing-on-short-notice/)
+
+
+## UseR! 2020
+- [Computational Reproducibility: from theory to practice](https://annakrystalli.me/talks/user2020.html#1)
+- [Sharing on Short Notice](https://rstudio-education.github.io/sharing-short-notice/#1) - Alison Hill
+
+# 09.07.2020
+
+## DS graph
+- COOL! [Cytoscape.js](https://js.cytoscape.org/). Graph theory (network) library for visualisation and analysis
+- [Cytoscape](https://cytoscape.org/). Network Data Integration, Analysis, and Visualization in a Box
+- [Graph visualization library in JavaScript](https://stackoverflow.com/questions/7034/graph-visualization-library-in-javascript)
+
+
+## R
+- [R Package Integration with Modern Reusable C++ Code Using Rcpp](https://rviews.rstudio.com/2020/07/08/r-package-integration-with-modern-reusable-c-code-using-rcpp/)
+- [A better way to manage your Github personal access tokens](https://ropensci.org/technotes/2020/07/07/github-pat/)
+- [Expand broom::tidy() output for categorical parameter estimates](https://guyabel.com/post/tidycat/)
+- COOL! [Reproducible Data Workflows With Drake](https://www.garrickadenbuie.com/talk/drake-intro-biodataclub/) by Garrick Aden-Buie
+- COOL! [Automating exploratory plots with ggplot2 and purrr](https://aosmith.rbind.io/2018/08/20/automating-exploratory-plots/)
+- COOL! Learning. [romainfrancois/seven31](https://github.com/romainfrancois/seven31). This branch is even with ThinkR-open:master.
+	- [Rounding to Decimal Digits in Binary](https://cran.r-project.org/web/packages/round/vignettes/Rounding.html)
+	- [twitt](https://twitter.com/romain_francois/status/1281113818874220544?s=20)
+```
+is probably the most famous FAQ, so it deserves its own 📦 to help you 🕵️ the confusion of
+
+0.3 + 0.6 == 0.9
+#> [1] FALSE
+sqrt(2)^2 == 2
+#> [1] FALSE
+```
+
+## UseR! 2020
+- [Your Slides are So Extra! Extra-Special Presentations with xaringanExtra](https://slides.garrickadenbuie.com/extra-special-xaringan/#1) by Garrick Aden-Buie
+
+## LaTeX
+- [SIAM bibliography style for BibLaTeX](https://tex.stackexchange.com/questions/330345/siam-bibliography-style-for-biblatex)
+- COOL! [Guidelines for customizing biblatex styles](https://tex.stackexchange.com/questions/12806/guidelines-for-customizing-biblatex-styles)
+
+# 08.07.2020
+## R
+- COOL! [ggfree: ggplot2-style plots with just base R graphics](https://github.com/ArtPoon/ggfree)
+- [readODS](https://github.com/chainsawriot/readODS). The only goal of readODS is to enable R to read and write OpenDocument Spreadsheet (ODS) files.
+- COOL! [RcppSimdJSON: Rcpp Bindings for the simdjson Header Library](https://github.com/eddelbuettel/rcppsimdjson)
+- COOL! [Announcing Public Package Manager and v1.1.6](https://blog.rstudio.com/2020/07/01/announcing-public-package-manager/)
+	- [Much faster R package installations on Linux](https://twitter.com/jozefhajnala/status/1280567004366352384?s=20)
+- [readxlsb](https://cran.r-project.org/web/packages/readxlsb/): Read 'Excel' Binary (.xlsb) Workbooks
+Import data from 'Excel' binary (.xlsb) workbooks into R.
 
 # 07.07.2020
 ## R
 - [Tidyverse Tips. How to create crosstabulations](https://www.tidyverse.tips/post/how-to-create-crosstabulations/)
 - Slides. [Visualizing covariance, variance, standard deviation, correlation](https://evamaerey.github.io/statistics/covariance_correlation.html#1)
 - [tidylog](https://github.com/elbersb/tidylog). The goal of tidylog is to provide feedback about dplyr and tidyr operations. It provides simple wrapper functions for almost all dplyr and tidyr functions, such as filter, mutate, select, full_join, and group_by.
+- COOL! [valueBoxes and Sparklines](http://jkunst.com/blog/posts/2020-06-26-valuebox-and-sparklines/)
 
 ## Rconf 2019
 - [Links to slides from rstudio::conf 2019](https://github.com/kbroman/RStudioConf2019Slides)
@@ -956,6 +1042,7 @@ ggplot(diamonds, aes(carat)) +
   lapply(c(50,200), function(b) geom_histogram(bins=b, alpha=0.3))
 ```
 - [RcppSimdJson 0.0.6: New Upstream, New Features!](http://dirk.eddelbuettel.com/blog/2020/06/25/#rcppsimdjson_0.0.6)
+	- AMAZING! [Speed comparison](https://github.com/eddelbuettel/rcppsimdjson/issues/28#issuecomment-655148500)
 - [Hello hordes!](https://colinfay.me/hello-hordes/). Introducing hordes, a module that makes R available from NodeJS.
 - COOL! [hordes cookbook](https://colinfay.me/hordes/) by Colin Fay
 	- [Chapter 5 Building a Web App](https://colinfay.me/hordes/building-a-web-app.html#using-a-websocket)
@@ -990,6 +1077,7 @@ Cross-platform command-line argument parser written purely in R with no external
 - [Process Mining Books](https://www.tf-pm.org/resources/books)
 - [fuzzymineR](https://github.com/nirmalpatel/fuzzymineR). R Package to do Fuzzy Process Mining
 - [ProM Tips — Which Mining Algorithm Should You Use?](https://fluxicon.com/blog/2010/10/prom-tips-mining-algorithm/) Anne18 Oct ‘10
+- [Повышение эффективности бизнес-процессов Process Mining](https://www.ramax.ru/directions/povyshenie-effektivnosti-biznes-protsessov/process-mining/)
 
 # 19.06.2020
 ## R
@@ -1659,13 +1747,6 @@ s
 	- [tergmLite v2.1.7](https://cran.r-project.org/web/packages/tergmLite/index.html): Provides functions to efficiently simulate dynamic networks estimated with the framework for temporal exponential random graph models implemented in the tergm package.
 	- [SeqDetect v1.0.7](https://cran.r-project.org/web/packages/SeqDetect/index.html): Implements the automaton model found in Krleža, Vrdoljak & Brčić (2019) to detect and process sequences. See the vignette for examples and theory.
 
-## Git
-- [How to update your Git credentials on Windows](https://cmatskas.com/how-to-update-your-git-credentials-on-windows/)
-`Control Panel -> Credential Manager -> Generic Credentials`,
-`Панель управления -> Все элементы панели управления -> Диспетчер учетных данных` 
-- [Доступ к диспетчеру учетных данных](https://support.microsoft.com/ru-ru/help/4026814/windows-accessing-credential-manager)
-- [7.14 Git Tools - Credential Storage](https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage)
-
 # 26.03.2020
 ## R
 - [baRcodeR now on rOpenSci + online barcode PDF generation](https://www.yihanwu.ca/post/barcoder-0-1-5-now-released-online-barcode-pdf-generation/)
@@ -1876,12 +1957,6 @@ flog.info(capture.output(toc()))
 
 DBI::dbDisconnect(conn)
 ```
-
-## Git
-- [Reducing the repository size using Git](https://docs.gitlab.com/ee/user/project/repository/reducing_the_repo_size_using_git.html)
-	- COOL! [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/)
-Removes large or troublesome blobs like git-filter-branch does, but faster. And written in Scala
-- [Как удалить файлы из истории Git-а, или git filter-branch и переписывание истории](https://det-random.livejournal.com/43291.html)
 
 # 06.03.2020
 ## R
@@ -2207,12 +2282,6 @@ A delightful series of modules to learn statistics and R coding for students, sc
 ## R
 - [Do my data follow a normal distribution ? A note on the most widely used distribution and how to test for normality in R](https://www.statsandr.com/blog/do-my-data-follow-a-normal-distribution-a-note-on-the-most-widely-used-distribution-and-how-to-test-for-normality-in-r/)
 - [Some everyday data tasks: a few hints with R (revisited)](https://www.statforbiology.com/2020/stat_r_shapingdata2/)
-
-## Git
-- [How can I delete a commit in Git?](https://www.git-tower.com/learn/git/faq/delete-commits)
-- [17. Удаление коммитов из ветки](https://githowto.com/ru/removing_commits_from_a_branch)
-- COOL! [Remove files from Git commit](https://stackoverflow.com/questions/12481639/remove-files-from-git-commit)
-- COOL [Take GitHub to the command line](https://cli.github.com/)
 
 # 30.01.2020
 ## R
