@@ -957,6 +957,63 @@ sqrt(2)^2 == 2
 - [readxlsb](https://cran.r-project.org/web/packages/readxlsb/): Read 'Excel' Binary (.xlsb) Workbooks
 Import data from 'Excel' binary (.xlsb) workbooks into R.
 
+# 23.07.2020
+## R, куммулятивно
+- [The 7 Log Management Tools You Need To Know](https://blog.overops.com/the-7-log-management-tools-you-need-to-know/)
+- [r-lib/carrier](https://github.com/r-lib/carrier). Create standalone functions for remote execution.
+- [rweekly.org](https://rweekly.org/). Learn R, R tutorials, R resources, blog posts and the latest updates about the statistical programming R language.
+- [](https://dirk.eddelbuettel.com/papers/useR2020_rcpp_tutorial.pdf)
+- [Winners of the 2nd Annual Shiny Contest](https://blog.rstudio.com/2020/07/13/winners-of-the-2nd-shiny-contest/
+- [Deploying R Models with MLflow and Docker](https://mdneuzerling.com/post/deploying-r-models-with-mlflow-and-docker/). MLflow is a platform for the “machine learning cycle”.
+- [Data Science Workflows](https://mdneuzerling.com/post/data-science-workflows/). I’m obsessed with how to structure a data science project.
+- [Mobile Ready shiny Apps with Standalone Capabilities](https://rinterface.github.io/shinyMobile/). Develop outstanding shiny apps for iOS, Android, desktop as well as beautiful shiny gadgets. 
+- Slides. [Exploring {ggpattern}](https://evamaerey.github.io/flipbooks/ggpattern/ggpattern#1)
+- [MLflow - A platform for the machine learning lifecycle](https://mlflow.org/). An open source platform for the end-to-end machine learning lifecycle
+- [mlflow/mlflow](https://github.com/mlflow/mlflow). Open source platform for the machine learning lifecycle - mlflow/mlflow
+- [Manipulate individual rows — rows](https://dplyr.tidyverse.org/reference/rows.html). These functions provide a framework for modifying rows in a table using a second table of data.
+- [Do anything — do](https://dplyr.tidyverse.org/reference/do.html). do() is superseded as of dplyr 1.0.0, because its syntax never really felt like it belong with the rest of dplyr.
+- [forestmodel](https://cran.r-project.org/web/packages/forestmodel/readme/README.html). This is an R package to generate forest plots of the coefficients of models produced by lm, glm, survival::coxph, etc.
+- [Metaflow: фреймворк для управления data science проектами от Netflix](https://metaflow.org/)
+- [gkaramanis/tidytuesday](https://github.com/gkaramanis/tidytuesday/tree/master/2020-week29). Code and plots for submissions to the #tidytuesday challenge - gkaramanis/tidytuesday
+- [See how to use the reactable R package to make an interactive table with rows that expand when clicked])https://www.infoworld.com/article/3543297/how-to-create-tables-in-r-with-expandable-rows.html)
+- [5 Obscure Python Libraries Every Data Scientist Should Know](https://towardsdatascience.com/5-obscure-python-libraries-every-data-scientist-should-know-3651bf5d3be3)
+- [wleepang/DesktopDeployR](https://github.com/wleepang/DesktopDeployR). A framework for deploying self-contained R-based applications to the desktop - wleepang/DesktopDeployR
+- [r4ds/bookclub-Advanced_R](https://github.com/r4ds/bookclub-Advanced_R)
+- [Adds tags to facets — tag_facets](https://eliocamp.github.io/tagger/reference/tag_facets.html)
+- [tint: tint is not tufte](https://dirk.eddelbuettel.com/code/tint.html)
+- [Create a Mini Version of CRAN Containing Only Selected Packages](http://andrie.github.io/miniCRAN/). Makes it possible to create an internally consistent repository consisting of selected packages from CRAN-like repositorie
+- [Риски использования свободного ПО для государственных органов](https://samexpert.ru/porokhovaia-bochka-ili-riski-ispolzovaniia-svobodnogho-po-dlia-ghosudarstviennykh-orghanov-v-2-0/)
+- [Teaching the Tidyverse in 2020 - Part 3: Data Wrangling and tidying](https://education.rstudio.com/blog/2020/07/teaching-the-tidyverse-in-2020-part-3-data-wrangling-and-tidying/). This is the third blog post in the “Teaching the Tidyverse in 2020” series.
+- [nnetsauce version 0.5.0, randomized neural networks on GPU](https://thierrymoudiki.github.io//blog/2020/07/17/python/r/quasirandomizednn/nnetsauce-new-version)
+- [Data Science’s Most Misunderstood Hero](https://towardsdatascience.com/data-sciences-most-misunderstood-hero-2705da366f40). Why treating analytics like a second-class citizen will hurt you
+- [broom 0.7.0](https://www.tidyverse.org/blog/2020/07/broom-0-7-0/). The newest release of broom features many new tidier methods, bug fixes, and improvements to internal consistency.
+- [Downloading files faster by tweaking headers](https://lemire.me/blog/2020/07/17/downloading-files-faster-by-tweaking-headers/). I was given a puzzle recently. Someone was parsing JSON files downloaded from the network from a bioinformati
+- [Seeing Theory](https://seeing-theory.brown.edu/index.html#firstPage). A visual introduction to probability and statistics.
+- [What They Forgot to Teach You About R](https://rstats.wtf/index.html). The stuff you need to know about R, besides statistical analysis.
+- Slides. [Making Websites in R](https://anthro-data-science.github.io/making-websites-using-R/MakingWebsitesR.html#1)
+- [Easily Send HTML Email Messages](https://rich-iannone.github.io/blastula/). Compose and send out responsive HTML email messages that render perfectly across a range of email clients and device size
+- [Avoid Dashboard Fatigue](https://rstudio.com/resources/webinars/avoid-dashboard-fatigue/)
+- [Importing data from multiple files simulateously in R - Gonzalo García-Castro](https://gongcastro.github.io/2020/07/05/importing-data-from-multiple-files-simulateously-in-r/)
+- [How I make the "Making of" videos](https://karaman.is/blog/2020/07/making-of/). I came across the idea when I saw Cédric’s gif in his tutorial The Evolution of a ggplot (Ep. 1).   
+
+- [List-columns in data.table: Reducing the cognitive & computational burden of complex data](https://rstudio.com/resources/rstudioconf-2020/list-columns-in-data-table-reducing-the-cognitive-computational-burden-of-complex-data/)
+- [BinaryEdge Cheatsheet - app.binaryedge.io](https://github.com/balgan/binaryedge-cheatsheet). A list of queries and actions that I repeat over and over again
+- [Detexify](http://detexify.kirelabs.org/classify.html). Anyone who works with LaTeX knows how time-consuming it can be to find a symbol in symbols-a4.pdf that you just can't memorize. Detexify is an attempt to simplify this search.
+- [Interoperability: Getting the Most Out of Your Analytic Investments](https://blog.rstudio.com/2020/07/15/interoperability-maximize-analytic-investments/)
+- [Tuning random forest hyperparameters with #TidyTuesday trees data](https://juliasilge.com/blog/sf-trees-random-tuning/)
+- [{{mustache}} for R](https://github.com/edwindj/whisker)
+- [Beautiful Jekyll v4: Huge updates to one of the most popular GitHub Pages themes](https://deanattali.com/blog/beautifuljekyll4/)
+- COOL! [Episode 10: The Importance of User Experience with John Coene](https://shinydevseries.com/post/episode-10-coene/)
+- [excalidraw](https://excalidraw.com/). I've been playing around with @excalidraw to do the mock-up of the UI for one of the {shiny} app I'm working on, and I really love it. It really helps organising thoughts, and I really love how user-friendly it is.
+- COOL! [4 Tips to Make Your Shiny Dashboard Faster](https://blog.rstudio.com/2020/07/21/4-tips-to-make-your-shiny-dashboard-faster/). Krystian Igras, Appsilon Data Science
+- COOL! [An Interactive Visualization of Every Line in Hamilton](https://pudding.cool/2017/03/hamilton/index.html)
+- [kyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings). A list of useful payloads and bypass for Web Application Security and Pentest/CTF
+- COOL! [Video: Debugging JavaScript You Wrote in R](https://www.garrickadenbuie.com/blog/video-debug-js-from-r/) by Garrick Aden‑Buie. Monday, 20 July 2020
+- COOL! [simplecolors](https://rjake.github.io/simplecolors/). simplecolors is designed to generate hex codes using uniformly named colors.
+- COOL! [linne](https://linne.john-coene.com/). linne makes basic CSS easier for R users. It is intended as a stepping stone to actually writing CSS and Sass.
+
+
+
 # 07.07.2020
 ## R
 - [Tidyverse Tips. How to create crosstabulations](https://www.tidyverse.tips/post/how-to-create-crosstabulations/)
