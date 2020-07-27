@@ -43,7 +43,7 @@ https://tmall.aliexpress.com/item/Edifier-W830BT-1/1000005465785.html
 - [Детальки](https://www.exoforce.ru/razdely/detali-lego)
 - [Lego projects](https://www.lego-projects.ru/lego-education/lego-education-ev3/168-lego-technic-ev3)
 - [Интернет-магазин спортивной и образовательной робототехники](https://www.angl-bricks.ru/lego-education-16#/kategorii-lego_ev3)
-- Ремонт Дисков. 
+- Ремонт Дисков.
 	- [ПрофШинСервис](http://www.remontdiskov.ru/adresa-centrov/)
 	- [РЛД](https://remont-diskov.ru/ordjenikidze.html)
 
@@ -110,7 +110,7 @@ A simpler, faster alternative to git-filter-branch for deleting big files and re
 - COOL [Take GitHub to the command line](https://cli.github.com/)
 - [How to update your Git credentials on Windows](https://cmatskas.com/how-to-update-your-git-credentials-on-windows/)
 `Control Panel -> Credential Manager -> Generic Credentials`,
-`Панель управления -> Все элементы панели управления -> Диспетчер учетных данных` 
+`Панель управления -> Все элементы панели управления -> Диспетчер учетных данных`
 - [Доступ к диспетчеру учетных данных](https://support.microsoft.com/ru-ru/help/4026814/windows-accessing-credential-manager)
 - [7.14 Git Tools - Credential Storage](https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage)
 
@@ -207,7 +207,8 @@ A simpler, faster alternative to git-filter-branch for deleting big files and re
 - Learning. [rstudio4edu. A Handbook for Teaching and Learning with R and RStudio](https://rstudio4edu.github.io/rstudio4edu-book/)
 - [Supplement to Shiny in Production](https://kellobri.github.io/shiny-prod-book/)
 - [Interpretable Machine Learning. A Guide for Making Black Box Models Explainable.](https://christophm.github.io/interpretable-ml-book/) by Christoph Molnar
-
+- [What They Forgot to Teach You About R](https://rstats.wtf/index.html). The stuff you need to know about R, besides statistical analysis.
+- COOL! [Rapid R Data Viz Book](https://billster45.github.io/rapid_r_data_vis_book/) by Bill Cockerill. [$8.1 What is Process Mining?](https://billster45.github.io/rapid_r_data_vis_book/process-mining.html#what-is-process-mining)
 
 
 # VPN
@@ -298,7 +299,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 	- [Solving the Challenge of Tidyeval](https://milesmcbain.xyz/solving-the-challenge-of-tidyeval/) by Miles McBain | 23 May 2018
 	- [The Roots of Quotation](https://milesmcbain.xyz/the-roots-of-quotation/) by Miles McBain | 26 Jul 2018
 - [About lazy evaluation](https://colinfay.me/lazyeval/). Прекрасная полновесная статья.
-- [What is tidy eval and why should I care?](https://thisisnic.github.io/2018/03/29/what-is-tidy-eval-and-why-should-i-care/). 
+- [What is tidy eval and why should I care?](https://thisisnic.github.io/2018/03/29/what-is-tidy-eval-and-why-should-i-care/).
 	- Перепечатка на Mango Solution: [What is tidy eval and why should I care?](https://www.mango-solutions.com/blog/what-is-tidy-eval-and-why-should-i-care)
 	- [Using Tidy Eval with dplyr::filter](https://thisisnic.github.io/2018/03/27/using-tidy-eval-with-dplyr-filter/)
 	- [Exploring Tidy Eval at a Snail's Pace](https://thisisnic.github.io/2018/02/20/exploring-tidy-eval-snails-pace/)
@@ -349,12 +350,12 @@ DF %>%
 - [Conditional replacement of column name in tibble using dplyr](https://stackoverflow.com/questions/43578723/conditional-replacement-of-column-name-in-tibble-using-dplyr)
 cf : https://www.rdocumentation.org/packages/dplyr/versions/0.7.6/topics/select
 - [Exclude columns by names in mutate_at in dplyr](https://stackoverflow.com/questions/44532888/exclude-columns-by-names-in-mutate-at-in-dplyr)
-	- `mtcars %>% mutate_at(vars(-mpg, -cyl), max)` or 
+	- `mtcars %>% mutate_at(vars(-mpg, -cyl), max)` or
 	- `mtcars %>% mutate_at(vars(-one_of("mpg", "cyl")), max)`
 - Существенный апдейт в dplyr 1.0 в выборе колонок, которых не существует в данных
 	- COOL! [dplyr 1.0.0: select, rename, relocate](https://www.tidyverse.org/blog/2020/03/dplyr-1-0-0-select-rename-relocate/)
 	- [dplyr::select() with some variables that may not exist in the data frame?](https://stackoverflow.com/questions/51529294/dplyrselect-with-some-variables-that-may-not-exist-in-the-data-frame)
-	- [Select helpers](https://tidyselect.r-lib.org/reference/select_helpers.html). `any_of()`: Same as `all_of()`, except that no error is thrown for names 
+	- [Select helpers](https://tidyselect.r-lib.org/reference/select_helpers.html). `any_of()`: Same as `all_of()`, except that no error is thrown for names
 that don't exist.
 	- [tidyr 1.1.0](https://www.tidyverse.org/blog/2020/05/tidyr-1.1.0/)
 - Сортировка строк с указанием индексов колонок
@@ -429,7 +430,7 @@ Or with gunzip
 `DT[ , `:=`( COUNT = .N , IDX = 1:.N ) , by = VAL ]`. Better `seq_len(.N)` instead `1:.N`
 - Нюансы по слиянию таблиц. Получил в `inner_join` ошибку и стал разбираться
 ```
-Error in vecseq(f__, len__, if (allow.cartesian || notjoin || !anyDuplicated(f__,  : 
+Error in vecseq(f__, len__, if (allow.cartesian || notjoin || !anyDuplicated(f__,  :
   Join results in 1595 rows; more than 1014 = nrow(x)+nrow(i). Check for duplicate key values in i each of which join to the same group in x over and over again. If that's ok, try by=.EACHI to run j for each group to avoid the large allocation. If you are sure you wish to proceed, rerun with allow.cartesian=TRUE. Otherwise, please search for this error message in the FAQ, Wiki, Stack Overflow and data.table issue tracker for advice.
 ```
 	- [data.table: cartesian join and nomatch](https://stackoverflow.com/questions/48583006/data-table-cartesian-join-and-nomatch)
@@ -472,7 +473,7 @@ dt[, diff := value - shift(value), by = variable]
 	- [Efficiently remove rows #2890 {Closed}](https://github.com/Rdatatable/data.table/issues/2890)
 - Целый квест. [Filtering out duplicated/non-unique rows in data.table](https://stackoverflow.com/questions/11792527/filtering-out-duplicated-non-unique-rows-in-data-table)
 ```
-Maybe a new unique(...,use.key=FALSE) argument would help; now filed as FR#2483. – Matt Dowle Jan 18 '13 at 0:23 
+Maybe a new unique(...,use.key=FALSE) argument would help; now filed as FR#2483. – Matt Dowle Jan 18 '13 at 0:23
 Hi @MatthewDowle. Yes, that would be a nice convenience. I think your comment in the FR is also correct--if the key is unique then use.key=FALSE could be ignored. – dnlbrky Jan 18 '13 at 14:12
 1
 data.table 1.9.6 (and not doubt earlier versions) has option by= which can be used to override the key. Setting by=NULL "uses all columns and acts like the analogous data.frame methods." – JWilliman Dec 1 '15 at 23:20
@@ -505,8 +506,8 @@ system.time(
   result2b <- dt[, {
       the_quantiles = quantile(z, c(0.5, 0.75, 0.9))
       list(
-        firstval = first(z), 
-        q1 = the_quantiles[1], 
+        firstval = first(z),
+        q1 = the_quantiles[1],
         q2 = the_quantiles[2],
         q3 = the_quantiles[3]
       )
@@ -555,7 +556,7 @@ Web Scraper is a company specializing in data extraction from web pages. We offe
 - COOL! Применение пакета printr! [Automatic output format in Rmarkdown](Automatic output format in Rmarkdown)
 - Плавающий TOC: См. раздел [Floating TOC](http://rmarkdown.rstudio.com/html_document_format.html). А целый сайт с навигацией делается уже из набора Rmd-документов: http://rmarkdown.rstudio.com/rmarkdown_websites.html
 - RMarkdown & Knitr
-	- [insert portions of a markdown document inside another markdown document using knitr](https://stackoverflow.com/questions/17593912/insert-portions-of-a-markdown-document-inside-another-markdown-document-using-kn). 
+	- [insert portions of a markdown document inside another markdown document using knitr](https://stackoverflow.com/questions/17593912/insert-portions-of-a-markdown-document-inside-another-markdown-document-using-kn).
 ```
 1. that is what the chunk option child is for, e.g. in second.Rmd, you can
 ``{r child='first.Rmd'}
@@ -584,7 +585,7 @@ Type  H <return>  for immediate help.
 
 l.118 \caption{Longtable}
 ```
-Решение указано здесь: [Russian language within figure captions in unicode-aware systems {duplicate}](https://tex.stackexchange.com/questions/110013/russian-language-within-figure-captions-in-unicode-aware-systems). 
+Решение указано здесь: [Russian language within figure captions in unicode-aware systems {duplicate}](https://tex.stackexchange.com/questions/110013/russian-language-within-figure-captions-in-unicode-aware-systems).
 Симптоматика описана также здесь: [Cyrillic word error in Figure Captions](https://tex.stackexchange.com/questions/351510/cyrillic-word-error-in-figure-captions)
 - Детали по правильному применению рецепта: [\renewcommand\tablename{name} does not work](https://tex.stackexchange.com/questions/55090/renewcommand-tablenamename-does-not-work)
 ```
@@ -634,6 +635,7 @@ output:
 	- [One R Markdown Document, Fourteen Demos](https://rstudio.com/resources/rstudioconf-2020/one-r-markdown-document-fourteen-demos/) Yihui Xie
 	- [Fast Rmarkdown Theming with thematic and bootstraplib](https://www.tillac-data.com/2020-fast-rmd-theming-with-thematic-and-bootstraplib/) Publish date: 2020-06-05
 Theming in Rmarkdown can be hard. You first made some custom CSS or use a provided theme but your figures didn’t change and you have to style your ggplot2 theme. And after it you change your mind (or your boss do) and you need to move this color shade to lighter one. So you change your theme, but forgot to change it in all your CSS and something is going wrong. Same goes for fonts
+- COOL! [RMarkdown Driven Development: the Technical Appendix](https://emilyriederer.netlify.app/post/rmddd-tech-appendix/)
 
 ## knitr. Запускаем Rmd -> PDF
 Смотрим ссылки ниже. Важный концепт, который держим в голове -- возможность генерации отчетов из .R файлов (не .Rmd) посредством `spin`. `rmarkdown::render()` автоматически выбирает spin\knit в зависимости от расширения файла.
@@ -653,7 +655,7 @@ header-includes:
  \setmainfont{Cambria}
 ```
 - Проблема с отображением русских букв на графиках. Ошибки подобного рода:
-	- Warning in title(...): неизвестна ширина символа 0xf2	
+	- Warning in title(...): неизвестна ширина символа 0xf2
 	- Warning in grid.Call(L_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : неизвестна ширина символа 0xf0
 	- Warning in grid.Call(L_stringMetric, as.graphicsAnnot(x$label)): неизвестны шрифтовые метрики для символа 0xe
 Нашел очень подробный багтрекер на эту тему в репозитории knitr: [[R Sweave] Cyrillic characters in plots #436](https://github.com/yihui/knitr/issues/436). Также полезно почитать про механику генерации графиков в идеологии knitr в книге "Dynamic Documents with R anf knitr, 2nd edition". Концепции Graphical Device, Encoding, Plot Recording (п. 7.1, 7.2). Рекомендуют использовать cairo_pdf, в т.ч. в книге (п 7.2).
@@ -668,7 +670,7 @@ header-includes:
 - Весьма нетривиальный вопрос, а как же сделать комментарии в R markdown. В ответе [Comments in Markdown](http://stackoverflow.com/questions/4823468/comments-in-markdown) рассмотрена масса различных варианты для markdown в целом.
 - [How do I insert a comment in Markdown?](https://www.quora.com/How-do-I-insert-a-comment-in-Markdown)
 - Размышления про различные директории. [Working with knitr using subdirectories](http://stackoverflow.com/questions/24585254/working-with-knitr-using-subdirectories)
-- Dean Attali. 
+- Dean Attali.
 	- [Knitr's best hidden gem: spin](http://deanattali.com/2015/03/24/knitrs-best-hidden-gem-spin/). Stop knitting & start spinning - spin can help you write reports much faster and avoid repeating yourself
 	- [ezknitr: R package to avoid the typical working directory pain when using knitr](http://deanattali.com/blog/ezknitr-package/)
 - [Compiling Reports from R Scripts](http://rmarkdown.rstudio.com/articles_report_from_r_script.html)
@@ -700,7 +702,7 @@ header-includes:
 - [How to escape a pipe char in a code statement in a markdown table?](https://stackoverflow.com/questions/17319940/how-to-escape-a-pipe-char-in-a-code-statement-in-a-markdown-table)
 - [how to render DT::datatables in a pdf using rmarkdown?](https://stackoverflow.com/questions/44543858/how-to-render-dtdatatables-in-a-pdf-using-rmarkdown)
 - Dynamic chunk sizes:
-	- Проблема: 
+	- Проблема:
 @BrandonBertelsen I understand that, but knitr has to open the graphical device (with an appropriate size) before evaluating the chunk, so you have to evaluate the code in a previous chunk in order to use the objects in a latter chunk. – Yihui Xie Mar 12 '13 at 16:09
 	- COOL! [How to Change fig.width and fig.height Dynamically Within an R Markdown Chunk](http://michaeljw.com/blog/post/subchunkify/)
 	- [Dynamic height and width for knitr plots](https://stackoverflow.com/questions/15365829/dynamic-height-and-width-for-knitr-plots)
@@ -889,6 +891,144 @@ This can e.g. speed up installation of {{tidyverse}} from ~11min to ~4.6min
 Also works with remotes & devtools install_ functions
 options(Ncpus = parallel::detectCores())
 ```
+
+# Data Validation
+- COOL! [validate 0.9.3 is on CRAN](http://www.markvanderloo.eu/yaRb/2019/12/16/validate-0-9-3-is-on-cran/)
+- [validate: Data Validation Infrastructure](https://cran.r-project.org/web/packages/validate/index.html)
+Declare data validation rules and data quality indicators; confront data with them and analyze or visualize the results. The package supports rules that are per-field, in-record, cross-record or cross-dataset. Rules can be automatically analyzed for rule type and connectivity. See also Van der Loo and De Jonge (2018) <doi:10.1002/9781118897126>, chapter 6.
+- COOL! [pointblank: Validation of Local and Remote Data Tables](https://cran.r-project.org/web/packages/pointblank/index.html)
+Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'PostgreSQL' and 'MySQL'). Validation pipelines can be made using easily-readable, consecutive validation steps. Upon execution of the validation plan, several reporting options are available. User-defined thresholds for failure rates allow for the determination of appropriate reporting actions.
+	- [pointbank](https://rich-iannone.github.io/pointblank/index.html) With the pointblank package, it’s really easy to validate your data with workflows attuned to your data quality needs. The pointblank philosophy: a set of validation step functions should work seamlessly with data in local data tables and with data in databases.
+	- [pointblank v0.3](https://randr.rocks/post/pointblank-0-3/)
+- COOL! [Appsilon/data.validator](https://github.com/Appsilon/data.validator). validate your data and create nice reports straight from R
+- [brodieG/vetr](https://github.com/brodieG/vetr) Trust, but Verify
+
+# 27.07.2020
+## R
+- COOL! [MilesMcBain/gistfo](https://github.com/MilesMcBain/gistfo). Turn your RStudio untitled tabs into gists. You monsters.
+- [The new way to forecast in R.](https://www.business-science.io/code-tools/2020/06/29/introducing-modeltime.html)
+- COOL! Эссе [Programming Sucks](http://www.stilldrinking.org/programming-sucks)
+- COOL! [whatthefuck.is   ·   a closure](https://whatthefuck.is/closure)
+- [Запускаем Python Dash под ShinyProxy](https://support.openanalytics.eu/t/what-is-the-best-way-of-delivering-static-assets-to-the-client-for-custom-apps/363)
+- [.#rstats trick of the day: Creating a waterfall chart with total geom_text() label ending up in the right spot all depends on an ifelse() statement.](https://twitter.com/tanyacash21/status/1287575380895899653)
+- [TIL - you can one-off adjust #tidyverse tibble printing in #RStats !]
+```
+tibble(mtcars) %>%
+  print(n = 4, width = 60)
+```
+- Prints 4 rows & 60 characters
+AND you can get tibble-like printing for dataframes!
+```
+dplyr::trunc_mat(mtcars) (pic 2)
+```
+- [Working with zipped csvs? vroom not working because one of those files is borked?](https://twitter.com/JosiahParry/status/1260559968337563648?s=20) 
+Iterate through them bad larrys with this little combo of purr and vroom
+```
+purrr::map(
+    fs::dir_ls(), 
+    purrr::possibly(
+        vroom::vroom,
+        otherwise = tibble::tibble())) 
+```
+- [ggplot2 aesthetic cheatsheet](https://tinyurl.com/y3y8wyap)
+- [Use prismatic with after_scale() for finer control of colors in ggplot2](https://www.hvitfeldt.me/blog/use-prismatic-with-after_scale-for-finer-control-of-colors-in-ggplot2/)
+- [Tests for Pairwise Mean Differences in R](https://timmastny.rbind.io/blog/tests-pairwise-categorical-mean-emmeans-contrast/)
+- COOL! [R package emmeans: Estimated marginal means](https://github.com/rvlenth/emmeans)
+- [The Seven Key Things You Need To Know About dplyr 1.0.0](https://towardsdatascience.com/what-you-need-to-know-about-the-new-dplyr-1-0-0-7eaaaf6d78ac
+- [highcharter](https://jkunst.com/highcharter/)
+- [Data cleaning and exploration with data.table](https://www.meganstodel.com/posts/using-data-table/)
+- [Gini Index under Fat-Tails](https://david-salazar.github.io/2020/06/26/gini-index-under-fat-tails/)
+- [If you're using *only* RMarkdown Упаковка from the "downverse", you're missing out!]
+Also, see:
+`bookdown`: Writing books
+`pagedown`: Official docs
+`blogdown`: Blogging
+`xaringan`: Presentations
+`postedown`: Posters
+`pkgdown`: Website
+`vitae`: CV
+- [CausalImpact](https://google.github.io/CausalImpact/CausalImpact.html)
+- [Full RStudio IDE and Syntax Themes](https://github.com/gadenbuie/rsthemes)
+- [Large interactive graphs. grapher.network](https://github.com/JohnCoene/grapher)
+
+# 26.07.2020
+## R
+- [trackR - A simple video tracking software for R](https://swarm-lab.github.io/trackR/)
+- [data.table NEWS](https://cran.rstudio.com/web/packages/data.table/news/news.html) or [here](https://github.com/Rdatatable/data.table/blob/master/NEWS.md)
+- Warning в MacOS при сборке data.table. [ld: warning: text-based stub file are out of sync. Falling back to library file for linking](https://stackoverflow.com/questions/51314888/ld-warning-text-based-stub-file-are-out-of-sync-falling-back-to-library-file/55344565)
+- [Introducing {dittodb}](https://jonkeane.com/blog/introducing_dittodb/)
+- [dittodb](https://dittodb.jonkeane.com/)
+- [httptest: A Test Environment for HTTP Requests in R](https://enpiar.com/r/httptest/
+- [rOpenSci: The webmockr package](https://docs.ropensci.org/webmockr/)
+- COOL! [Five Tidyverse 1.x Tricks You May Not Know About](https://drkeithmcnulty.com/2020/07/16/five-tidyverse-tricks-you-may-not-know-about/)
+- [Make A Shortcut for Anything in RStudio with shrtcts - Garrick Aden‑Buie](https://www.garrickadenbuie.com/blog/shrtcts/)
+- [Skewness | Definition and its Importance in Data Science](https://fahimahmad.netlify.app/posts/skewness-denifination-and-its-importance-in-data-science/)
+- COOL! [Chapter 8 Process Mining | Rapid R Data Viz Book](https://billster45.github.io/rapid_r_data_vis_book/process-mining.html#what-is-process-mining)
+- COOL! [ISO 8601 and Nanosecond Precision Across Languages](https://nbsoftsolutions.com/blog/iso-8601-and-nanosecond-precision-across-languages)
+- COOL! [ggplot tweaks](https://twitter.com/yutannihilat_en/status/1287402204987396096) or [doc](https://ggplot2.tidyverse.org/reference/scale_colour_continuous.html). Did you know the latest version of ggplot2 allows you to set the default colour/fill scale functions via global options? Since the version was a minor update, there was no release blog post, so you might not notice this big news...
+
+# 23.07.2020
+## R, куммулятивно
+- COOL! [Seeing Theory](https://seeing-theory.brown.edu/index.html#firstPage). A visual introduction to probability and statistics.
+- [Manipulate individual rows — rows](https://dplyr.tidyverse.org/reference/rows.html). These functions provide a framework for modifying rows in a table using a second table of data.
+- [Do anything — do](https://dplyr.tidyverse.org/reference/do.html). do() is superseded as of dplyr 1.0.0, because its syntax never really felt like it belong with the rest of dplyr.
+- [rweekly.org](https://rweekly.org/). Learn R, R tutorials, R resources, blog posts and the latest updates about the statistical programming R language.
+- [Winners of the 2nd Annual Shiny Contest](https://blog.rstudio.com/2020/07/13/winners-of-the-2nd-shiny-contest/
+- [Deploying R Models with MLflow and Docker](https://mdneuzerling.com/post/deploying-r-models-with-mlflow-and-docker/). MLflow is a platform for the “machine learning cycle”.
+- [Data Science Workflows](https://mdneuzerling.com/post/data-science-workflows/). I’m obsessed with how to structure a data science project.
+- [MACHINE LEARNING PIPELINES WITH TIDYMODELS AND TARGETS](https://mdneuzerling.com/post/machine-learning-pipelines-with-tidymodels-and-targets/)
+- [Mobile Ready shiny Apps with Standalone Capabilities](https://rinterface.github.io/shinyMobile/). Develop outstanding shiny apps for iOS, Android, desktop as well as beautiful shiny gadgets.
+- [MLflow - A platform for the machine learning lifecycle](https://mlflow.org/). An open source platform for the end-to-end machine learning lifecycle
+- [mlflow/mlflow](https://github.com/mlflow/mlflow). Open source platform for the machine learning lifecycle - mlflow/mlflow
+- [Metaflow: фреймворк для управления data science проектами от Netflix](https://metaflow.org/)
+- [gkaramanis/tidytuesday](https://github.com/gkaramanis/tidytuesday/tree/master/2020-week29). Code and plots for submissions to the #tidytuesday challenge - gkaramanis/tidytuesday
+- [See how to use the reactable R package to make an interactive table with rows that expand when clicked](https://www.infoworld.com/article/3543297/how-to-create-tables-in-r-with-expandable-rows.html)
+- [5 Obscure Python Libraries Every Data Scientist Should Know](https://towardsdatascience.com/5-obscure-python-libraries-every-data-scientist-should-know-3651bf5d3be3)
+- [r4ds/bookclub-Advanced_R](https://github.com/r4ds/bookclub-Advanced_R)
+- [Риски использования свободного ПО для государственных органов](https://samexpert.ru/porokhovaia-bochka-ili-riski-ispolzovaniia-svobodnogho-po-dlia-ghosudarstviennykh-orghanov-v-2-0/)
+- [Teaching the Tidyverse in 2020 - Part 3: Data Wrangling and tidying](https://education.rstudio.com/blog/2020/07/teaching-the-tidyverse-in-2020-part-3-data-wrangling-and-tidying/). This is the third blog post in the “Teaching the Tidyverse in 2020” series.
+- [Data Science’s Most Misunderstood Hero](https://towardsdatascience.com/data-sciences-most-misunderstood-hero-2705da366f40). Why treating analytics like a second-class citizen will hurt you
+- [broom 0.7.0](https://www.tidyverse.org/blog/2020/07/broom-0-7-0/). The newest release of broom features many new tidier methods, bug fixes, and improvements to internal consistency.
+- [Downloading files faster by tweaking headers](https://lemire.me/blog/2020/07/17/downloading-files-faster-by-tweaking-headers/). I was given a puzzle recently. Someone was parsing JSON files downloaded from the network from a bioinformati
+- [Importing data from multiple files simulateously in R - Gonzalo García-Castro](https://gongcastro.github.io/2020/07/05/importing-data-from-multiple-files-simulateously-in-r/)
+- [How I make the "Making of" videos](https://karaman.is/blog/2020/07/making-of/). I came across the idea when I saw Cédric’s gif in his tutorial The Evolution of a ggplot (Ep. 1).
+
+- [BinaryEdge Cheatsheet - app.binaryedge.io](https://github.com/balgan/binaryedge-cheatsheet). A list of queries and actions that I repeat over and over again
+- [Interoperability: Getting the Most Out of Your Analytic Investments](https://blog.rstudio.com/2020/07/15/interoperability-maximize-analytic-investments/)
+- [Tuning random forest hyperparameters with #TidyTuesday trees data](https://juliasilge.com/blog/sf-trees-random-tuning/)
+- [Beautiful Jekyll v4: Huge updates to one of the most popular GitHub Pages themes](https://deanattali.com/blog/beautifuljekyll4/)
+- COOL! [Episode 10: The Importance of User Experience with John Coene](https://shinydevseries.com/post/episode-10-coene/)
+- [excalidraw](https://excalidraw.com/). I've been playing around with @excalidraw to do the mock-up of the UI for one of the {shiny} app I'm working on, and I really love it. It really helps organising thoughts, and I really love how user-friendly it is.
+- COOL! [4 Tips to Make Your Shiny Dashboard Faster](https://blog.rstudio.com/2020/07/21/4-tips-to-make-your-shiny-dashboard-faster/). Krystian Igras, Appsilon Data Science
+- COOL! [An Interactive Visualization of Every Line in Hamilton](https://pudding.cool/2017/03/hamilton/index.html)
+- [kyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings). A list of useful payloads and bypass for Web Application Security and Pentest/CTF
+- COOL! [Video: Debugging JavaScript You Wrote in R](https://www.garrickadenbuie.com/blog/video-debug-js-from-r/) by Garrick Aden‑Buie. Monday, 20 July 2020
+
+- [Avoid Dashboard Fatigue](https://rstudio.com/resources/webinars/avoid-dashboard-fatigue/)
+	- Репозиторий с кодом и презентацией. [rstudio/beyond-dashboard-fatigue](https://github.com/rstudio/beyond-dashboard-fatigue)
+- [Seamless R and C++ Integration with Rcpp. Dirk Eddelbuettel](https://dirk.eddelbuettel.com/papers/useR2020_rcpp_tutorial.pdf)
+- Slides. [Making Websites in R](https://anthro-data-science.github.io/making-websites-using-R/MakingWebsitesR.html#1)
+- Slides. [Exploring {ggpattern}](https://evamaerey.github.io/flipbooks/ggpattern/ggpattern#1)
+- [List-columns in data.table: Reducing the cognitive & computational burden of complex data](https://rstudio.com/resources/rstudioconf-2020/list-columns-in-data-table-reducing-the-cognitive-computational-burden-of-complex-data/)
+
+## R packages
+- COOL! [mikefc. coolbutuseless](https://github.com/coolbutuseless/)
+- [{{mustache}} for R](https://github.com/edwindj/whisker)
+- COOL! [simplecolors](https://rjake.github.io/simplecolors/). simplecolors is designed to generate hex codes using uniformly named colors.
+- COOL! [linne](https://linne.john-coene.com/). linne makes basic CSS easier for R users. It is intended as a stepping stone to actually writing CSS and Sass.
+- [nnetsauce version 0.5.0, randomized neural networks on GPU](https://thierrymoudiki.github.io//blog/2020/07/17/python/r/quasirandomizednn/nnetsauce-new-version)
+- [forestmodel](https://cran.r-project.org/web/packages/forestmodel/readme/README.html). This is an R package to generate forest plots of the coefficients of models produced by lm, glm, survival::coxph, etc.
+- [wleepang/DesktopDeployR](https://github.com/wleepang/DesktopDeployR). A framework for deploying self-contained R-based applications to the desktop - wleepang/DesktopDeployR
+- [Adds tags to facets — tag_facets](https://eliocamp.github.io/tagger/reference/tag_facets.html)
+- [tint: tint is not tufte](https://dirk.eddelbuettel.com/code/tint.html)
+- [Create a Mini Version of CRAN Containing Only Selected Packages](http://andrie.github.io/miniCRAN/). Makes it possible to create an internally consistent repository consisting of selected packages from CRAN-like repositories
+- [Easily Send HTML Email Messages](https://rich-iannone.github.io/blastula/). Compose and send out responsive HTML email messages that render perfectly across a range of email clients and device size
+- [r-lib/carrier](https://github.com/r-lib/carrier). Create standalone functions for remote execution.
+
+
+## LaTeX
+- [Detexify](http://detexify.kirelabs.org/classify.html). Anyone who works with LaTeX knows how time-consuming it can be to find a symbol in symbols-a4.pdf that you just can't memorize. Detexify is an attempt to simplify this search.
+
 # 14.07.2020
 ## R
 - COOL! [Comparing Variable Importance Functions (For Modeling)](https://tonyelhabr.rbind.io/post/variable-importance-compare/)
@@ -913,6 +1053,7 @@ options(Ncpus = parallel::detectCores())
 ## UseR! 2020
 - [Computational Reproducibility: from theory to practice](https://annakrystalli.me/talks/user2020.html#1)
 - [Sharing on Short Notice](https://rstudio-education.github.io/sharing-short-notice/#1) - Alison Hill
+- [Your Slides are So Extra! Extra-Special Presentations with xaringanExtra](https://slides.garrickadenbuie.com/extra-special-xaringan/#1) by Garrick Aden-Buie
 
 # 09.07.2020
 
@@ -940,9 +1081,6 @@ sqrt(2)^2 == 2
 #> [1] FALSE
 ```
 
-## UseR! 2020
-- [Your Slides are So Extra! Extra-Special Presentations with xaringanExtra](https://slides.garrickadenbuie.com/extra-special-xaringan/#1) by Garrick Aden-Buie
-
 ## LaTeX
 - [SIAM bibliography style for BibLaTeX](https://tex.stackexchange.com/questions/330345/siam-bibliography-style-for-biblatex)
 - COOL! [Guidelines for customizing biblatex styles](https://tex.stackexchange.com/questions/12806/guidelines-for-customizing-biblatex-styles)
@@ -956,63 +1094,6 @@ sqrt(2)^2 == 2
 	- [Much faster R package installations on Linux](https://twitter.com/jozefhajnala/status/1280567004366352384?s=20)
 - [readxlsb](https://cran.r-project.org/web/packages/readxlsb/): Read 'Excel' Binary (.xlsb) Workbooks
 Import data from 'Excel' binary (.xlsb) workbooks into R.
-
-# 23.07.2020
-## R, куммулятивно
-- [The 7 Log Management Tools You Need To Know](https://blog.overops.com/the-7-log-management-tools-you-need-to-know/)
-- [r-lib/carrier](https://github.com/r-lib/carrier). Create standalone functions for remote execution.
-- [rweekly.org](https://rweekly.org/). Learn R, R tutorials, R resources, blog posts and the latest updates about the statistical programming R language.
-- [](https://dirk.eddelbuettel.com/papers/useR2020_rcpp_tutorial.pdf)
-- [Winners of the 2nd Annual Shiny Contest](https://blog.rstudio.com/2020/07/13/winners-of-the-2nd-shiny-contest/
-- [Deploying R Models with MLflow and Docker](https://mdneuzerling.com/post/deploying-r-models-with-mlflow-and-docker/). MLflow is a platform for the “machine learning cycle”.
-- [Data Science Workflows](https://mdneuzerling.com/post/data-science-workflows/). I’m obsessed with how to structure a data science project.
-- [Mobile Ready shiny Apps with Standalone Capabilities](https://rinterface.github.io/shinyMobile/). Develop outstanding shiny apps for iOS, Android, desktop as well as beautiful shiny gadgets. 
-- Slides. [Exploring {ggpattern}](https://evamaerey.github.io/flipbooks/ggpattern/ggpattern#1)
-- [MLflow - A platform for the machine learning lifecycle](https://mlflow.org/). An open source platform for the end-to-end machine learning lifecycle
-- [mlflow/mlflow](https://github.com/mlflow/mlflow). Open source platform for the machine learning lifecycle - mlflow/mlflow
-- [Manipulate individual rows — rows](https://dplyr.tidyverse.org/reference/rows.html). These functions provide a framework for modifying rows in a table using a second table of data.
-- [Do anything — do](https://dplyr.tidyverse.org/reference/do.html). do() is superseded as of dplyr 1.0.0, because its syntax never really felt like it belong with the rest of dplyr.
-- [forestmodel](https://cran.r-project.org/web/packages/forestmodel/readme/README.html). This is an R package to generate forest plots of the coefficients of models produced by lm, glm, survival::coxph, etc.
-- [Metaflow: фреймворк для управления data science проектами от Netflix](https://metaflow.org/)
-- [gkaramanis/tidytuesday](https://github.com/gkaramanis/tidytuesday/tree/master/2020-week29). Code and plots for submissions to the #tidytuesday challenge - gkaramanis/tidytuesday
-- [See how to use the reactable R package to make an interactive table with rows that expand when clicked])https://www.infoworld.com/article/3543297/how-to-create-tables-in-r-with-expandable-rows.html)
-- [5 Obscure Python Libraries Every Data Scientist Should Know](https://towardsdatascience.com/5-obscure-python-libraries-every-data-scientist-should-know-3651bf5d3be3)
-- [wleepang/DesktopDeployR](https://github.com/wleepang/DesktopDeployR). A framework for deploying self-contained R-based applications to the desktop - wleepang/DesktopDeployR
-- [r4ds/bookclub-Advanced_R](https://github.com/r4ds/bookclub-Advanced_R)
-- [Adds tags to facets — tag_facets](https://eliocamp.github.io/tagger/reference/tag_facets.html)
-- [tint: tint is not tufte](https://dirk.eddelbuettel.com/code/tint.html)
-- [Create a Mini Version of CRAN Containing Only Selected Packages](http://andrie.github.io/miniCRAN/). Makes it possible to create an internally consistent repository consisting of selected packages from CRAN-like repositorie
-- [Риски использования свободного ПО для государственных органов](https://samexpert.ru/porokhovaia-bochka-ili-riski-ispolzovaniia-svobodnogho-po-dlia-ghosudarstviennykh-orghanov-v-2-0/)
-- [Teaching the Tidyverse in 2020 - Part 3: Data Wrangling and tidying](https://education.rstudio.com/blog/2020/07/teaching-the-tidyverse-in-2020-part-3-data-wrangling-and-tidying/). This is the third blog post in the “Teaching the Tidyverse in 2020” series.
-- [nnetsauce version 0.5.0, randomized neural networks on GPU](https://thierrymoudiki.github.io//blog/2020/07/17/python/r/quasirandomizednn/nnetsauce-new-version)
-- [Data Science’s Most Misunderstood Hero](https://towardsdatascience.com/data-sciences-most-misunderstood-hero-2705da366f40). Why treating analytics like a second-class citizen will hurt you
-- [broom 0.7.0](https://www.tidyverse.org/blog/2020/07/broom-0-7-0/). The newest release of broom features many new tidier methods, bug fixes, and improvements to internal consistency.
-- [Downloading files faster by tweaking headers](https://lemire.me/blog/2020/07/17/downloading-files-faster-by-tweaking-headers/). I was given a puzzle recently. Someone was parsing JSON files downloaded from the network from a bioinformati
-- [Seeing Theory](https://seeing-theory.brown.edu/index.html#firstPage). A visual introduction to probability and statistics.
-- [What They Forgot to Teach You About R](https://rstats.wtf/index.html). The stuff you need to know about R, besides statistical analysis.
-- Slides. [Making Websites in R](https://anthro-data-science.github.io/making-websites-using-R/MakingWebsitesR.html#1)
-- [Easily Send HTML Email Messages](https://rich-iannone.github.io/blastula/). Compose and send out responsive HTML email messages that render perfectly across a range of email clients and device size
-- [Avoid Dashboard Fatigue](https://rstudio.com/resources/webinars/avoid-dashboard-fatigue/)
-- [Importing data from multiple files simulateously in R - Gonzalo García-Castro](https://gongcastro.github.io/2020/07/05/importing-data-from-multiple-files-simulateously-in-r/)
-- [How I make the "Making of" videos](https://karaman.is/blog/2020/07/making-of/). I came across the idea when I saw Cédric’s gif in his tutorial The Evolution of a ggplot (Ep. 1).   
-
-- [List-columns in data.table: Reducing the cognitive & computational burden of complex data](https://rstudio.com/resources/rstudioconf-2020/list-columns-in-data-table-reducing-the-cognitive-computational-burden-of-complex-data/)
-- [BinaryEdge Cheatsheet - app.binaryedge.io](https://github.com/balgan/binaryedge-cheatsheet). A list of queries and actions that I repeat over and over again
-- [Detexify](http://detexify.kirelabs.org/classify.html). Anyone who works with LaTeX knows how time-consuming it can be to find a symbol in symbols-a4.pdf that you just can't memorize. Detexify is an attempt to simplify this search.
-- [Interoperability: Getting the Most Out of Your Analytic Investments](https://blog.rstudio.com/2020/07/15/interoperability-maximize-analytic-investments/)
-- [Tuning random forest hyperparameters with #TidyTuesday trees data](https://juliasilge.com/blog/sf-trees-random-tuning/)
-- [{{mustache}} for R](https://github.com/edwindj/whisker)
-- [Beautiful Jekyll v4: Huge updates to one of the most popular GitHub Pages themes](https://deanattali.com/blog/beautifuljekyll4/)
-- COOL! [Episode 10: The Importance of User Experience with John Coene](https://shinydevseries.com/post/episode-10-coene/)
-- [excalidraw](https://excalidraw.com/). I've been playing around with @excalidraw to do the mock-up of the UI for one of the {shiny} app I'm working on, and I really love it. It really helps organising thoughts, and I really love how user-friendly it is.
-- COOL! [4 Tips to Make Your Shiny Dashboard Faster](https://blog.rstudio.com/2020/07/21/4-tips-to-make-your-shiny-dashboard-faster/). Krystian Igras, Appsilon Data Science
-- COOL! [An Interactive Visualization of Every Line in Hamilton](https://pudding.cool/2017/03/hamilton/index.html)
-- [kyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings). A list of useful payloads and bypass for Web Application Security and Pentest/CTF
-- COOL! [Video: Debugging JavaScript You Wrote in R](https://www.garrickadenbuie.com/blog/video-debug-js-from-r/) by Garrick Aden‑Buie. Monday, 20 July 2020
-- COOL! [simplecolors](https://rjake.github.io/simplecolors/). simplecolors is designed to generate hex codes using uniformly named colors.
-- COOL! [linne](https://linne.john-coene.com/). linne makes basic CSS easier for R users. It is intended as a stepping stone to actually writing CSS and Sass.
-
-
 
 # 07.07.2020
 ## R
@@ -1138,7 +1219,7 @@ Cross-platform command-line argument parser written purely in R with no external
 
 # 19.06.2020
 ## R
-- Форматирование чисел в R. 
+- Форматирование чисел в R.
 	- `base::format(c(6.0, 13.1), digits = 2, nsmall = 1)`
 	- `scales::label_number(trim = FALSE)(c(6.0, 13.1, -4.4839))`
 - `ggplot::geom_curve`. Красиво делают стрелочки для надписей на графике. [eRum 2020. Tips from an R Journalist](http://www.machlis.com/eRum2020/#17)
@@ -1151,10 +1232,10 @@ Cross-platform command-line argument parser written purely in R with no external
 - [RMarkdown. What defines the setup chunk?](https://community.rstudio.com/t/what-defines-the-setup-chunk/27595)
 "There is one chunk name that imbues special behaviour: setup . When you’re in a notebook mode, the chunk named setup will be run automatically once, before any other code is run."
 RStudio tip:
-If you have a code block named 'setup' like 
-```{r setup} 
+If you have a code block named 'setup' like
+```{r setup}
 foo()
-``` 
+```
 then every time you restart RStudio and execute any code in the middle of your markdown document, this block will be automatically run once before, i.e. you libraries will be loaded first.
 	- R4DS.[27.4.1 Chunk name](https://r4ds.had.co.nz/r-markdown.html#chunk-name)
 	- R Markdown: The Definitive Guide. [3.2.1 Using Notebooks](https://bookdown.org/yihui/rmarkdown/notebook.html#using-notebooks)
@@ -1173,9 +1254,9 @@ You must import the system fonts using the command:
 ```
 ::: {.class #id}
 Text
-::: 
+:::
 ```
-Goodbye <div class =""> 
+Goodbye <div class ="">
 - COOL! [MayaGans/shinyBody](https://github.com/MayaGans/shinyBody). An SVG clickable body that can be colored using data and returns the clicked on body part
 - COOL! [brshallo/tidyverse-gifs](https://github.com/brshallo/tidyverse-gifs). Code for using `flair`, `xaringan`, `pagedown`, and `magick` to build gif of steps in a series of piped operations. Example pulled from "Many Models" chapter of "R for Data Science"
 - COOL! [{mdthemes} is on CRAN: markdown powered themes for {ggplot2}](https://thomasadventure.blog/posts/mdthemes-is-on-cran-markdown-powered-themes-for-ggplot2/)
@@ -1333,7 +1414,7 @@ TLDR: кому перестановки делают больнее — меря
 - [Mann Whitney U Test (Wilcoxon Rank Sum Test)](http://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_nonparametric/BS704_Nonparametric4.html)
 - Здесь картинки, используемые в презентации. [The Mann-Whitney test doesn't really compare medians](https://www.graphpad.com/guides/prism/7/statistics/stat_nonparametric_tests_dont_compa.htm). You'll sometimes read that the Mann-Whitney test compares the medians of two groups. But this is not exactly true, as this example demonstrates...
 If you make an additional assumption -- that the distributions of the two populations have the same shape, even if they are shifted (have different medians) -- then the Mann-Whiteny test can be considered a test of medians. If you accept the assumption of identically shaped distributions, then a small P value from a Mann-Whitney test leads you to conclude that the difference between medians is statistically significant. But Michael J. Campbell pointed out, "However, if the groups have the same distribution, then a shift in location will move medians and means by the same amount and so the difference in medians is the same as the difference in means. Thus the Mann-Whitney test is also a test for the difference in means."
-- COOL! [Interpreting results: Mann-Whitney test](https://www.graphpad.com/guides/prism/7/statistics/how_the_mann-whitney_test_works.htm). 
+- COOL! [Interpreting results: Mann-Whitney test](https://www.graphpad.com/guides/prism/7/statistics/how_the_mann-whitney_test_works.htm).
 The Mann-Whitney test, also called the Wilcoxon rank sum test, is a nonparametric test that compares two unpaired groups.
 The Mann-Whitney test compares the distributions of ranks in two groups. If you assume that both populations have distributions with the same shape (which doesn't have to be Gaussian), it can be viewed as a comparison of two medians. Note that if you don't make this assumption, the Mann-Whitney test does not compare medians.
 - [Are large data sets inappropriate for hypothesis testing?](https://stats.stackexchange.com/questions/2516/are-large-data-sets-inappropriate-for-hypothesis-testing)
@@ -1449,7 +1530,7 @@ This almost class-less CSS library turns your HTML document into a website that 
 ## OS
 - COOL! [Windows Terminal 1.0](https://devblogs.microsoft.com/commandline/windows-terminal-1-0/)
 	- [Releases](https://github.com/microsoft/terminal/releases). Запуск -- wt.exe из Старт.
-	- [What is Windows Terminal?](https://docs.microsoft.com/en-us/windows/terminal/)	
+	- [What is Windows Terminal?](https://docs.microsoft.com/en-us/windows/terminal/)
 	- [How to Customize the New Windows Terminal App](https://www.howtogeek.com/426346/how-to-customize-the-new-windows-terminal-app/)
 - [Microsoft: we were wrong about open source](https://www.theverge.com/2020/5/18/21262103/microsoft-open-source-linux-history-wrong-statement)
 	- [Microsoft will ship a full Linux kernel in Windows 10](https://www.theverge.com/2019/5/6/18534687/microsoft-windows-10-linux-kernel-feature)
@@ -1560,14 +1641,14 @@ The goal of vlbuildr is to provide an R api for building up vega-lite specs.
 - [logger](https://daroczig.github.io/logger/)
 A lightweight, modern and flexibly logging utility for R – heavily inspired by the futile.logger R package and logging Python module.
 - [jangorecki/logR](https://github.com/jangorecki/logR). Extended logging solution for R http://jangorecki.gitlab.io/logR
-- Working with zipped csvs? vroom not working because one of those files is borked? 
+- Working with zipped csvs? vroom not working because one of those files is borked?
 Iterate through them bad larrys with this little combo of purr and vroom
 ```
 purrr::map(
-    fs::dir_ls(), 
+    fs::dir_ls(),
     purrr::possibly(
         vroom::vroom,
-        otherwise = tibble::tibble())) 
+        otherwise = tibble::tibble()))
 ```
 - [progressr: A Inclusive, Unifying API for Progress Updates](https://github.com/HenrikBengtsson/progressr)
 The progressr package provides a minimal API for reporting progress updates in R. The design is to separate the representation of progress updates from how they are presented. What type of progress to signal is controlled by the developer. How these progress updates are rendered is controlled by the end user. For instance, some users may prefer visual feedback such as a horizontal progress bar in the terminal, whereas others may prefer auditory feedback.
@@ -1596,7 +1677,7 @@ When writing simple memory benchmarks I have always taken the position the value
 - [How does postgresql.service know which postgresql instances to start?](https://unix.stackexchange.com/questions/436802/how-does-postgresql-service-know-which-postgresql-instances-to-start)
 - [Коды валют рубля 810 и 643. В чём подвох? Решение суда и конечная точка в догадках.](https://zen.yandex.ru/media/mamin_sibiryak/kody-valiut-rublia-810-i-643-v-chem-podvoh-reshenie-suda-i-konechnaia-tochka-v-dogadkah-5bd1ac85d2fd5900aa002952)
 - [Helping Scientists Explore Single-Cell Datasets with High-Quality Visualizations](https://chanzuckerberg.com/science/programs-resources/single-cell-biology/cellxgene/)
-- COOL! 
+- COOL!
  This is a periodic reminder for macOS folks using Homebrew to:
  - `$ brew update && brew upgrade && brew cleanup`
 at your earliest convenience.
@@ -1613,7 +1694,7 @@ at your earliest convenience.
 - [Энтропия и деревья принятия решений](https://habr.com/ru/post/171759/)
 - [S3M — формат музыкальных файлов, использовавшийся трекером Scream Tracker 3 — один из трёх наиболее распространенных форматов трекерной музыки.](https://ru.wikipedia.org/wiki/S3M)
 - [Catch that goblin!! by Skaven of Future Crew](https://www.youtube.com/watch?v=2wTpu1u0LQ4)
-- [Freedom to work from anywhere.	
+- [Freedom to work from anywhere.
 Enjoy the freedom to live and work where you thrive with easy video meetings from Whereby](https://whereby.com/)
 
 
@@ -1638,8 +1719,8 @@ Graceful ‘ggplot’-based graphics and utility functions for working with gene
 	- [kableExtra::column_spec() - i know this one!](https://github.com/sharlagelfand/twofunctionsmostdays/tree/master/2020/04/21)
 	- [gt::tab_style() - i know this one!](https://github.com/sharlagelfand/twofunctionsmostdays/tree/master/2020/05/13)
 - [ewenme/ghibli](https://github.com/ewenme/ghibli). Studio Ghibli colour palettes https://ewenme.github.io/ghibli
-- Thomas Lin Pedersen ggplot2 workshop. 
-	- [ggplot2 workshop part 1](https://www.youtube.com/watch?v=h29g21z0a68&feature=youtu.be). 
+- Thomas Lin Pedersen ggplot2 workshop.
+	- [ggplot2 workshop part 1](https://www.youtube.com/watch?v=h29g21z0a68&feature=youtu.be).
 	- [ggplot2 workshop part 2](https://www.youtube.com/watch?v=0m4yywqNPVY&feature=youtu.be)
 - [Causal Inference cheat sheet for data scientists](http://nc233.com/2020/04/causal-inference-cheat-sheet-for-data-scientists/)
 - COOL! [thematic](https://rstudio.github.io/thematic/). Unified and automatic theming of ggplot2, lattice, and base R graphics.
@@ -1988,10 +2069,10 @@ connect_string <- glue("{host}:1521/{service}")
 conn <- dbConnect(dbDriver("Oracle", unicode_as_utf8 = TRUE), username = "ROUSER", password = "HpDKvFJ", dbname = connect_string)
 dbGetInfo(drv)
 
-sql_req <- read_file(here::here("sql", "script-test.sql"), 
+sql_req <- read_file(here::here("sql", "script-test.sql"),
                      locale = locale("ru", encoding = "UTF-8", tz = "Europe/Moscow"))
 
-# sql_req <- read_file(here::here("sql", "oracle_test.sql"), 
+# sql_req <- read_file(here::here("sql", "oracle_test.sql"),
 #                      locale = locale("ru", encoding = "UTF-8", tz = "Europe/Moscow"))
 
 dbSendQuery(conn, sql_req)
@@ -2000,7 +2081,7 @@ dbSendQuery(conn, sql_req)
 
 # flog.info(paste("SQL query:", sql_req))
 tic("Загрузка из Oracle JDA")
-# [ORA-00911 ERROR MESSAGE](https://www.tekstream.com/resource-center/ora-00911-invalid-character/) 
+# [ORA-00911 ERROR MESSAGE](https://www.tekstream.com/resource-center/ora-00911-invalid-character/)
 # [ROracle is not handling Unicode](https://stackoverflow.com/questions/28723003/roracle-is-not-handling-unicode/28723835)
 # [Encoding in ROracle](https://stackoverflow.com/questions/50366322/encoding-in-roracle)
 # [How do I limit the number of rows returned by an Oracle query after ordering?](https://stackoverflow.com/questions/470542/how-do-i-limit-the-number-of-rows-returned-by-an-oracle-query-after-ordering)
@@ -2129,17 +2210,17 @@ Connect and query your data sources, build dashboards to visualize data and shar
 - [10 Must Have O’Reilly Linux and Unix Books](https://www.adminschoice.com/10-must-have-oreilly-books-for-system-administrators)
 - разбираем скрипт Тимофея
 ```
-tmp=tmp; 
-if [ ! -d $tmp ] ; then mkdir $tmp; fi; 
-for arch in `find . -name \*.tar.gz` ; do 
-    dir=`echo $arch |sed 's|.*/\(.*\)\.tar\.gz|\1|'`; 
-    mkdir $dir; 
-    tar -C $tmp -xvf $arch; 
+tmp=tmp;
+if [ ! -d $tmp ] ; then mkdir $tmp; fi;
+for arch in `find . -name \*.tar.gz` ; do
+    dir=`echo $arch |sed 's|.*/\(.*\)\.tar\.gz|\1|'`;
+    mkdir $dir;
+    tar -C $tmp -xvf $arch;
     for f in `find $tmp -name \*.log` ; do
         ofile="${f%.*}.zip"
         zip -m $ofile $f;
-        mv $ofile $dir; 
-    done; 
+        mv $ofile $dir;
+    done;
 done
 ```
 
@@ -2173,7 +2254,7 @@ Why and how we developed an R Studio add-in
 
 
 # 19.02.2020
-## RStudio Resources 
+## RStudio Resources
 - для публикации они используют сервис Wistia. [RStudio conf 2020](https://resources.rstudio.com/rstudio-conf-2020)
 	- [5 Ways to Download Wistia Videos Easily](https://www.tricksntech.com/download-wistia-videos/)
 	- [3 Surprisingly Awesome Ways To Download Wistia Videos](https://www.cisdem.com/resource/download-wistia-videos.html)
@@ -2257,7 +2338,7 @@ Getting {googledrive} authenticated on #AWS:
 - COOL! [{dm} is an R package that provides tools for working with multiple related tables, stored as data frames or in a relational database.](https://krlmlr.github.io/dm/)
 - COL! [traversc/qs](https://github.com/traversc/qs). Quick serialization of R objects
 - В директории `notebook` образуются большие файлы `*.rdf` при работе с большими данными (может ошибка вывода в консоль?). Уж не про это ли? [A tidyverse lover’s intro to RDF](https://cran.r-project.org/web/packages/rdflib/vignettes/rdf_intro.html). Или про это [rdflib: Tools to Manipulate and Query Semantic Data
-The Resource Description Framework, or 'RDF' is a widely used data representation model that forms the cornerstone of the Semantic Web.](https://cran.r-project.org/web/packages/rdflib/index.html) 
+The Resource Description Framework, or 'RDF' is a widely used data representation model that forms the cornerstone of the Semantic Web.](https://cran.r-project.org/web/packages/rdflib/index.html)
 - [Installing older versions of packages](https://support.rstudio.com/hc/en-us/articles/219949047-Installing-older-versions-of-packages)
 
 ## unix
@@ -2395,18 +2476,13 @@ Generates version 2 and version 4 request signatures for Amazon Web Services ('A
 # 15.01.2020
 ## R
 - COOL! [ggrough is an R package that converts your ggplot2 plots to rough/sketchy charts, using the excellent javascript roughjs library.](https://xvrdm.github.io/ggrough/)
-- [yixuan/showtext](https://github.com/yixuan/showtext). Using Fonts More Easily in R Graphs 
+- [yixuan/showtext](https://github.com/yixuan/showtext). Using Fonts More Easily in R Graphs
 - [showtext: Using Fonts More Easily in R Graphs](https://cran.rstudio.com/web/packages/showtext/vignettes/introduction.html)
 - [rfoaas 2.1.0: New upstream so new access point!](http://dirk.eddelbuettel.com/blog/2020/01/09/#rfoaas_2.1.0)
 	- [FOAAS (Fuck Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fuck off.](https://www.foaas.com/)
 - COOL! [BUILDING COLOR PALETTE PROOFS OF CONCEPT WITH PURRR AND GGPLOT2](https://data-chronicler.netlify.com/2020/01/08/2019-12-30-building-color-palette-proof-of-concepts-with-purrr-and-ggplot2/)
 - COOL! [Custom Templated as and wrap Functions within Rcpp](https://gallery.rcpp.org/articles/custom-templated-wrap-and-as-for-seamingless-interfaces/)
 - [an elegant sampler](https://xianblog.wordpress.com/2020/01/15/an-elegant-sampler/)
-- COOL! [pointblank: Validation of Local and Remote Data Tables](https://cran.r-project.org/web/packages/pointblank/index.html)
-Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'PostgreSQL' and 'MySQL'). Validation pipelines can be made using easily-readable, consecutive validation steps. Upon execution of the validation plan, several reporting options are available. User-defined thresholds for failure rates allow for the determination of appropriate reporting actions.
-	- [pointbank](https://rich-iannone.github.io/pointblank/index.html) With the pointblank package, it’s really easy to validate your data with workflows attuned to your data quality needs. The pointblank philosophy: a set of validation step functions should work seamlessly with data in local data tables and with data in databases.
-	- [pointblank v0.3](https://randr.rocks/post/pointblank-0-3/)
-
 
 # 14.01.2020
 ## R
@@ -2467,7 +2543,7 @@ Alluvial plots are similar to sankey diagrams and visualise categorical data ove
 # 24.12.2019
 ## R
 - [data.table: Rolling functions](https://rdatatable.gitlab.io/data.table/reference/froll.html). Fast rolling functions to calculate aggregates on sliding window. Function name and arguments are experimental.
-- [dplyr: Window functions](https://dplyr.tidyverse.org/articles/window-functions.html). A window function is a variation on an aggregation function. Where an aggregation function, like sum() and mean(), takes n inputs and return a single value, a window function returns n values. 
+- [dplyr: Window functions](https://dplyr.tidyverse.org/articles/window-functions.html). A window function is a variation on an aggregation function. Where an aggregation function, like sum() and mean(), takes n inputs and return a single value, a window function returns n values.
 - COOL! [proffer: Profile R Code and Visualize with 'Pprof'](https://r-prof.github.io/proffer/)
 Like similar profiling tools, the 'proffer' package automatically detects sources of slowness in R code.
 - [Confusion between factor levels and factor labels](https://stackoverflow.com/questions/5869539/confusion-between-factor-levels-and-factor-labels)
@@ -2504,7 +2580,7 @@ This repo was created at rOpenSci #ozunconf19 at University of Sydney Dec 11-13 
 	- [smaakage85/trimmer](https://github.com/smaakage85/trimmer) toolkit to trim R objects
 - [dockr: Creation of Lightweight Docker Images for Your Packages](https://cran.r-project.org/web/packages/dockr/index.html)
 	- [smaakage85/dockr](https://github.com/smaakage85/dockr). create lightweight docker image for an R package
-	
+
 
 # 18.12.2019
 ## R
@@ -2526,7 +2602,6 @@ This repo was created at rOpenSci #ozunconf19 at University of Sydney Dec 11-13 
 
 # 16.12.2019
 ## R
-- COOL! [validate 0.9.3 is on CRAN](http://www.markvanderloo.eu/yaRb/2019/12/16/validate-0-9-3-is-on-cran/)
 - [A LARGE REPOSITORY OF NETWORKDATA](http://blog.schochastics.net/post/a-large-repository-of-networkdata/)
 - COOL! [How H2O propels data scientists ahead of itself: enhancing Driverless AI models with advanced options, recipes and visualizations](https://novyden.blogspot.com/2019/12/how-h2o-propels-data-scientists-ahead.html)
 - [R 3.6.2 is out, and a preview of R 4.0.0](https://blog.revolutionanalytics.com/2019/12/preview-of-r-400.html)
@@ -2644,7 +2719,7 @@ as.party(fit)
 # 25.11.2019
 ## R
 - [tidync](https://ropensci.github.io/tidync/index.html). The goal of tidync is to ease exploring the contents of a NetCDF source and to simplify the process of data extraction.
-- [A data cube tbl](https://dplyr.tidyverse.org/reference/tbl_cube.html). 
+- [A data cube tbl](https://dplyr.tidyverse.org/reference/tbl_cube.html).
 A cube tbl stores data in a compact array format where dimension names are not needlessly repeated. They are particularly appropriate for experimental data where all combinations of factors are tried (e.g. complete factorial designs), or for storing the result of aggregations. Compared to data frames, they will occupy much less memory when variables are crossed, not nested.
 - [data.table's `cube` function](https://pavolini.net/2019/07/19/data-table-s-cube-function/)
 - [Bayesian Power Analysis with `data.table`, `tidyverse`, and `brms`](https://tysonbarrett.com//jekyll/update/2019/07/21/BayesianSims/)
@@ -2665,9 +2740,9 @@ Functions to set CPU and/or elapsed time limits for top-level computations or th
 library(tidyverse) #for purrr, tidyr and dplyr
 library(broom)
 
-Orange %>% 
-  split(.$Tree) %>% 
-  map(~lm(age ~ 1 + circumference, data = .x)) %>% 
+Orange %>%
+  split(.$Tree) %>%
+  map(~lm(age ~ 1 + circumference, data = .x)) %>%
   map_df(tidy) %>%
   filter(term == 'circumference')
 ```
@@ -2755,7 +2830,7 @@ The goal of farver is to provide very fast, vectorised functions for conversion 
 - Print tibbles
 	- R4DS. [10 Tibbles](https://r4ds.had.co.nz/tibbles.html)
 ```
-nycflights13::flights %>% 
+nycflights13::flights %>%
   print(n = 10, width = Inf)
 ```
 	- [Printing tibbles](https://tibble.tidyverse.org/reference/formatting.html)
@@ -2836,7 +2911,7 @@ Conversions between 'R' objects and Javascript Object Notation (JSON) using the 
 ## R
 - data.table, разбиение на колонки (CREP). Если на выходе NULL, то получаем такую ошибку
 ```
-Error in `[.data.table`(dt, event_id == "1001", `:=`(c("ProtocolID", "ProtocolVer",  : 
+Error in `[.data.table`(dt, event_id == "1001", `:=`(c("ProtocolID", "ProtocolVer",  :
   Supplied 12 columns to be assigned an empty list (which may be an empty data.table or data.frame since they are lists too). To delete multiple columns use NULL instead. To add multiple empty list columns, use list(list()).
 ```
  - [data.table and error handling using try statement](https://stackoverflow.com/questions/21084624/data-table-and-error-handling-using-try-statement)
@@ -2903,7 +2978,7 @@ bench::press(
 ## MS ODBC
 - [Установка Microsoft ODBC Driver for SQL Server на Linux и macOS](https://docs.microsoft.com/ru-ru/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-ver15)
 - [Installing the Microsoft ODBC Driver for SQL Server on Debian Linux with Saltstack](https://www.meinekleinefarm.net/installing-the-microsoft-odbc-driver-for-sql-server-on-debian-linux-with-saltstack/)
-- [репозитории](https://packages.microsoft.com/repos/), 
+- [репозитории](https://packages.microsoft.com/repos/),
 https://packages.microsoft.com/repos/microsoft-debian-stretch-prod/dists/stretch/
 
 По цепочке добрались до Packages.gz, там ищем msodbc...
@@ -3083,7 +3158,7 @@ Posted on October 3, 2019
 - [The 'see' package: beautiful figures for easystats](https://easystats.github.io/blog/posts/see_presentation.knit/)
 - [easystats posts](https://easystats.github.io/blog/posts/)
 - [easystats](https://github.com/easystats). Make R stats easy! https://easystats.github.io/blog/
-- [Data transformation with dplyr::](https://github.com/courtiol/Rguides). 
+- [Data transformation with dplyr::](https://github.com/courtiol/Rguides).
 I have created this alternative cheat sheet (or guide) for those who already know a little about dplyr. The point of this cheat is to help you figuring out quickly which verb, suffix and arguments to use -- in the context of data transformation applied to a single table of class tibble or data.frame.
 - COOL! Learning [daranzolin/ViewPipeSteps](https://github.com/daranzolin/ViewPipeSteps). Create tabs of `View()` output for each chained pipe
 - pi: predict/infer. [Understanding Bootstrap Confidence Interval Output from the R boot Package](https://blog.methodsconsultants.com/posts/understanding-bootstrap-confidence-interval-output-from-the-r-boot-package/)
@@ -3204,7 +3279,7 @@ Unit: microseconds
 - [Format number in R with both comma thousands separator and specified decimals](https://stackoverflow.com/questions/29465941/format-number-in-r-with-both-comma-thousands-separator-and-specified-decimals)
 - [Capitalize the first letter of both words in a two word string](https://stackoverflow.com/questions/6364783/capitalize-the-first-letter-of-both-words-in-a-two-word-string)
 - [`purrr::invoke` Invoke functions retired](https://purrr.tidyverse.org/reference/invoke.html).
- 
+
 
 
 # 24.09.2019
@@ -3278,7 +3353,7 @@ There are four classes of .R files that have special behaviour:
 • Setup files start with setup and are executed before tests, but not during devtools::load_all().
 • Teardown files start with teardown and are executed after the tests are run.
 ```
-- Из документации. 
+- Из документации.
 - [Intro to unit testing in R](https://katherinemwood.github.io/post/testthat/)
 - [Example of unit testing R code with testthat](https://www.johndcook.com/blog/2013/06/12/example-of-unit-testing-r-code-with-testthat/)
 - [Example of unit testing R code with testthat](https://dzone.com/articles/example-unit-testing-r-code)
@@ -3564,8 +3639,6 @@ Multiple Precision Arithmetic (big integers and rationals, prime number tests, m
 - [Lightweight is the right weight](http://www.tinyverse.org/)
 - [lumberjack: Track Changes in Data](https://cran.r-project.org/web/packages/lumberjack/index.html)
 A framework that allows for easy logging of changes in data. Main features: start tracking changes by adding a single line of code to an existing script. Track changes in multiple datasets, using multiple loggers. Add custom-built loggers or use loggers offered by other packages.
-- [validate: Data Validation Infrastructure](https://cran.r-project.org/web/packages/validate/index.html)
-Declare data validation rules and data quality indicators; confront data with them and analyze or visualize the results. The package supports rules that are per-field, in-record, cross-record or cross-dataset. Rules can be automatically analyzed for rule type and connectivity. See also Van der Loo and De Jonge (2018) <doi:10.1002/9781118897126>, chapter 6.
 - [Visualizing the relationship between multiple variables](https://statisticaloddsandends.wordpress.com/2019/08/24/visualizing-the-relationship-between-multiple-variables/)
 - [Changing the variable inside an R formula](https://statisticaloddsandends.wordpress.com/2019/08/24/changing-the-variable-inside-an-r-formula/)
 - e-book. [Open Forensic Science in R](https://sctyner.github.io/OpenForSciR/)
@@ -3599,7 +3672,7 @@ Declare data validation rules and data quality indicators; confront data with th
 - [paleolimbot/exifr](https://github.com/paleolimbot/exifr). Read EXIF data in R using ExifToo
 - [A Shiny App for JS Mediation](https://www.cillianmchugh.com/rblog/js-mediation/)
 - [R for Mac OS X Developer’s Page](http://mac.r-project.org)
-This is the new home for experimental binaries and documentation related to R for Mac OS X. To learn more about the R software or download released versions, please visit www.r-project.org. 
+This is the new home for experimental binaries and documentation related to R for Mac OS X. To learn more about the R software or download released versions, please visit www.r-project.org.
 
 # 09.08.2019
 ## R
@@ -3623,7 +3696,7 @@ This is the new home for experimental binaries and documentation related to R fo
 ## R
 - [Interactive Visualization in R with apexcharter](https://www.programmingwithr.com/interactive-visualization-in-r-with-apexcharter/)
 - [gadenbuie/synamyn](https://github.com/gadenbuie/synamyn). Synonyms! An RStudio addin interface for ropenscilabs/syn
-- [carbonate](https://github.com/yonicd/carbonate). “carbon.js is the easiest way to create beautiful images of your source code.” 
+- [carbonate](https://github.com/yonicd/carbonate). “carbon.js is the easiest way to create beautiful images of your source code.”
 This package uses an R6 api to interact with carbon.js and create directly from the console carbon images.
 	- [CARBON](https://carbon.now.sh). Create and share beautiful images of your source code. Start typing or drop a file into the text area to get started.
 - [parsnip](https://www.tidyverse.org/articles/2018/11/parsnip-0-0-1/).
@@ -3828,7 +3901,7 @@ Browse thousands of pre-made icons and templates from more than 30 fields of lif
 ## R
 - [eddelbuettel/rpushbullet](https://github.com/eddelbuettel/rpushbullet). R interface to the awesome Pushbullet service
 - [jbryer/likert](https://github.com/jbryer/likert). Package to analyze likert based items.
-- Конвертация строк. [Convert case of a string](https://stringr.tidyverse.org/reference/case.html). `str_to_title`, `stri_trans_totitle` 
+- Конвертация строк. [Convert case of a string](https://stringr.tidyverse.org/reference/case.html). `str_to_title`, `stri_trans_totitle`
 - [ceramic](https://hypertidy.github.io/ceramic/). The goal of ceramic is to obtain web map tiles. Use a spatial object to define the region of interest.
 - [Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2](https://cran.r-project.org/web/packages/ggsci/vignettes/ggsci.html)
 - [Faster Gridding In R](http://tkelly.org/2019/07/faster-gridding-in-r/)
@@ -4033,7 +4106,7 @@ Contains routines for logspline density estimation. The function oldlogspline() 
 A ‘ggplot2’ Extension for Visualizing Density, Distribution, Hazard, or Survival Functions using the ‘logspline’ Package
 - [Quick hit: Some ggplot2 Stat for {logspline}](https://rud.is/b/2019/06/18/quick-hit-some-ggplot2-stat/)
 - [hrbrmstr/ggalt](https://github.com/hrbrmstr/ggalt/)
-Extra Coordinate Systems, Geoms, Statistical Transformations & Scales for 'ggplot2' 
+Extra Coordinate Systems, Geoms, Statistical Transformations & Scales for 'ggplot2'
 - [Wicked Fast, Accurate Quantiles Using ‘t-Digests’ in R with the {tdigest} Package](https://rud.is/b/2019/04/03/wicked-fast-accurate-quantiles-using-t-digests-in-r-with-the-tdigest-package/)
 - [hrbrmstr/tdigest](https://github.com/hrbrmstr/tdigest)
 Wicked Fast, Accurate Quantiles Using 't-Digests'
@@ -4042,7 +4115,7 @@ Wicked Fast, Accurate Quantiles Using 't-Digests'
 - [ggplot2: place text at right location](https://www.gl-li.com/2017/08/18/place-text-at-right-location/)
 - [Label line ends in time series with ggplot2](https://drsimonj.svbtle.com/label-line-ends-in-time-series-with-ggplot2)
 - [FeatureHashing: Creates a Model Matrix via Feature Hashing with a Formula Interface](https://cran.r-project.org/web/packages/FeatureHashing/index.html)
-Feature hashing, also called as the hashing trick, is a method to transform features of a instance to a vector. Thus, it is a method to transform a real dataset to a matrix. Without looking up the indices in an associative array, it applies a hash function to the features and uses their hash values as indices directly. 
+Feature hashing, also called as the hashing trick, is a method to transform features of a instance to a vector. Thus, it is a method to transform a real dataset to a matrix. Without looking up the indices in an associative array, it applies a hash function to the features and uses their hash values as indices directly.
 
 - [Very Fast string fuzzy matching in R](https://stackoverflow.com/questions/56072126/very-fast-string-fuzzy-matching-in-r)
 - [Fuzzy string Matching using fuzzywuzzyR and the reticulate package in R](https://mlampros.github.io/2017/04/13/fuzzywuzzyR_package/)
@@ -4459,7 +4532,7 @@ Generate a palette of k colors from ggsci palettes, RColorbrewer palettes and cu
 - [Replace column names in kable/R markdown](https://stackoverflow.com/questions/51432502/replace-column-names-in-kable-r-markdown). I am not sure where you got the advice to replace rownames, but it seems excessively complex. It is much easier just to use the built-in col.names argument within kable. This solution works for both HTML and LaTeX outputs:
 ```
 df <- data.frame(A=c(1,2),B=c(4,2),C=c(3,4),D=c(8,7))
-knitr::kable(df, 
+knitr::kable(df,
              col.names = c("Space in name",
                            "(Special Characters)",
                            "$\\delta{m}_1$",
@@ -4473,7 +4546,7 @@ knitr::kable(df,
 We already have some means to override the default printing of table data. Let me know if the following R Markdown example is helpful:
 ```
 ---
-title: "DF Printing" 
+title: "DF Printing"
 output:
   html_document:
     df_print: paged
@@ -4505,7 +4578,7 @@ R Markdown documents can include one or more parameters whose values can be set 
 - [How to Calculate Percentile for Each Group in R and Exploratory](https://blog.exploratory.io/how-to-calculate-percentile-for-each-group-in-r-and-exploratory-4e6021f7fe10)
 - [GGPLOT LEGEND TITLE, POSITION AND LABELS](https://www.datanovia.com/en/blog/ggplot-legend-title-position-and-labels/)
 - STAT 545: [Regular Expression in R](https://stat545.com/block022_regular-expression.html) by Gloria Li and Jenny Bryan
-- [Import text file as single character string](https://stackoverflow.com/questions/9068397/import-text-file-as-single-character-string). 
+- [Import text file as single character string](https://stackoverflow.com/questions/9068397/import-text-file-as-single-character-string).
 `string <- readChar("foo.txt", nchars=1e6)`
 
 
@@ -4572,7 +4645,7 @@ Ordinary R Markdown documents are “knitted”, but notebooks are “previewed�
 QuantLib, to quote in turn from its website, is aiming to provide a comprehensive software framework for quantitative finance. QuantLib is a free/open source library for modeling, trading, and risk management in real-life. QuantLib is written in C++ with a clean object model, and is then exported to different languages such as Python, Ruby, Guile, MzScheme, Java, Perl, … via SWIG. .
 	- [RQuantLib 0.4.9: Another small updates](http://dirk.eddelbuettel.com/code/rquantlib.html)
 - [For posterity: install {xml2} on GNU/Linux distros](https://www.brodrigues.co/blog/2019-05-18-xml2/)
-- Очень интересная функция `str_view`Ж 
+- Очень интересная функция `str_view`Ж
 ```
  # Construct pattern of DOG in boundaries
 whole_dog_pattern <- whole_word("DOG")
@@ -4616,7 +4689,7 @@ You can't share database connections between different workers in any of the gen
 ```
 - COOL! [Introducing trelliscopejs](https://ryanhafen.com/blog/trelliscopejs/)
 - COOL! [Trelliscope](https://hafen.github.io/trelliscopejs/#trelliscope)
-Trelliscope is a visualization approach based on the idea of “small multiples” or “Trellis Display”, where data are split into groups and a plot is made for each group, with the resulting plots arranged in a grid. 
+Trelliscope is a visualization approach based on the idea of “small multiples” or “Trellis Display”, where data are split into groups and a plot is made for each group, with the resulting plots arranged in a grid.
 - [Assign multiple objects to .GlobalEnv from within a function](https://stackoverflow.com/questions/9726705/assign-multiple-objects-to-globalenv-from-within-a-function). Функция `list2env`.
 - [Assign a value to a name in an environment](https://stat.ethz.ch/R-manual/R-devel/library/base/html/assign.html)
 - [Change R default library path using .libPaths in Rprofile.site fails to work](https://stackoverflow.com/questions/15170399/change-r-default-library-path-using-libpaths-in-rprofile-site-fails-to-work)
@@ -4847,7 +4920,7 @@ To rename keys recursively, see the Q defining translate_keys(f) below.
 - [Combining pages of JSON data with jsonlite](https://cran.r-project.org/web/packages/jsonlite/vignettes/json-paging.html)
 - Разбираемся с вложенными JSON [Can jq handle nested JSON data?](https://stackoverflow.com/questions/37020712/can-jq-handle-nested-json-data)
 - [Working with JSON in bash using `jq`](https://medium.com/cameron-nokes/working-with-json-in-bash-using-jq-13d76d307c4). jq is a powerful tool that lets you read, filter, and write JSON in bash
-    
+
 
 # 17.04.2019
 ## R
@@ -5496,8 +5569,8 @@ Reprinted from https://blog.cloudera.com/blog/2015/12/common-probability-distrib
 ```
 ---
 title: "HTML Document"
-output: 
-  html_document: 
+output:
+  html_document:
     self_contained: TRUE
     keep_md: TRUE
     df_print: paged
@@ -5525,9 +5598,9 @@ Error in bca.ci(boot.out, conf, index[1L], L = L, t = t.o, t0 = t0.o, : estimate
 ```
 I noticed that anything less than the sample size throws the error when running boot with bca – Max Gordon Jul 1 '13 at 6:12
 Точный ответ здесь: ["Why is the error “estimated adjustment 'a' is NA” generated from R boot package when calculating confidence intervals using the bca method?"](https://stats.stackexchange.com/questions/37918/why-is-the-error-estimated-adjustment-a-is-na-generated-from-r-boot-package)
-For other who suffer the problem: According to stat.ethz.ch/pipermail/r-help/2011-February/269006.html the number of repetitions must be larger than the number of data rows. I was mildly suprsed that so many repetitions are necessary... – BurninLeo Oct 11 '15 at 8:56 
+For other who suffer the problem: According to stat.ethz.ch/pipermail/r-help/2011-February/269006.html the number of repetitions must be larger than the number of data rows. I was mildly suprsed that so many repetitions are necessary... – BurninLeo Oct 11 '15 at 8:56
 
-- COOL! R: Анализ и визуализация данных. 
+- COOL! R: Анализ и визуализация данных.
 	- [Протокол разведочного анализа данных: проверка на нормальность распределения](https://r-analytics.blogspot.com/2012/06/blog-post_14.html)
 	- [Классические методы статистики: критерий хи-квадрат](http://r-analytics.blogspot.ru/2012/08/blog-post.html)
 	- [Интервальное оценивание параметров распределения](https://r-analytics.blogspot.com/2018/04	/blog-post_28.html)
@@ -5736,7 +5809,7 @@ Economic growth models are recursively partitioned to assess heterogeneity in gr
 - [forecast 8.5](https://robjhyndman.com/hyndsight/forecast85/)
 - [Factor Analysis in R with Psych Package: Measuring Consumer Involvement](https://lucidmanager.org/measuring-consumer-involvement/)
 - COOL! [A biased comparsion of JSON packages in R](https://rstudio-pubs-static.s3.amazonaws.com/31702_9c22e3d1a0c44968a4a1f9656f1800ab.html). Some simple examples to compare behavior and performance of JSON packages in R.
-- [humanReadable: Print Byte Size in Human Readable Format](https://rdrr.io/cran/gdata/man/humanReadable.html). 
+- [humanReadable: Print Byte Size in Human Readable Format](https://rdrr.io/cran/gdata/man/humanReadable.html).
 In gdata: Various R Programming Tools for Data Manipulation
 
 ## Web-scrapping
@@ -5850,7 +5923,7 @@ __How can I parallelize the following for-loop?__
 A set of tools for inspecting and understanding R data structures inspired by str(). Includes ast() for visualizing abstract syntax trees, ref() for showing shared references, cst() for showing call stack trees, and obj_size() for computing object sizes.
 	- COOL! [dabestr: Data Analysis using Bootstrap-Coupled Estimation](https://cran.r-project.org/web/packages/dabestr/index.html). Offers an alternative to significance testing using bootstrap methods and estimation plots. See Ho et al (2018). There is a vignette on [Bootstrap Confidence Intervals](https://cran.r-project.org/web/packages/dabestr/vignettes/bootstrap-confidence-intervals.html), another on [Statistical Visualizations](https://cran.r-project.org/web/packages/dabestr/vignettes/robust-statistical-visualization.html), and a third on creating [Estimation Plots](https://cran.r-project.org/web/packages/dabestr/vignettes/using-dabestr.html).
 	- COOL! [Robust and Beautiful Statistical Visualization](https://cran.r-project.org/web/packages/dabestr/vignettes/robust-statistical-visualization.html)
-	- COOL! [Introduction to vtree 0.1.4](https://cran.r-project.org/web/packages/vtree/vignettes/vtree.html) by Nick Barrowmanvtree. 
+	- COOL! [Introduction to vtree 0.1.4](https://cran.r-project.org/web/packages/vtree/vignettes/vtree.html) by Nick Barrowmanvtree.
 v0.1.4: Provides a function for drawing drawing variable trees plots that display information about hierarchical subsets of a data frame defined by values of categorical variables. The vignette offers an introduction.
 - [Using the tidyverse for more than data manipulation: estimating pi with Monte Carlo methods](https://www.brodrigues.co/blog/2018-12-21-tidyverse_pi/)
 - COOL! [t-КРИТЕРИЙ СТЬЮДЕНТА - МЕТОД ОЦЕНКИ ЗНАЧИМОСТИ РАЗЛИЧИЙ СРЕДНИХ ВЕЛИЧИН](http://medstatistic.ru/theory/t_cryteria.html)
@@ -5918,7 +5991,7 @@ This tool enables the user to choose a randomization procedure based on sound sc
 - [2018-13 Rendering HTML Content in R Graphics](https://stattech.wordpress.fos.auckland.ac.nz/2018/12/17/2018-13-rendering-html-content-in-r-graphics/)
 	- Статья ['Rendering HTML Content in R Graphics'](https://www.stat.auckland.ac.nz/~paul/Reports/HTML/layoutengine/layoutengine.html) by Paul Murrell, http://orcid.org/0000-0002-3224-8858]
 - [Six Sigma DMAIC Series in R – Part4](https://datascienceplus.com/six-sigma-dmaic-series-in-r-part4/)
-- COOL! [linl 0.0.3: Micro release](http://dirk.eddelbuettel.com/blog/2018/12/15/#linl_0.0.3). Our linl package for writing LaTeX letter with (R)markdown had a fairly minor release today, following up on the previous release well over a year ago. 
+- COOL! [linl 0.0.3: Micro release](http://dirk.eddelbuettel.com/blog/2018/12/15/#linl_0.0.3). Our linl package for writing LaTeX letter with (R)markdown had a fairly minor release today, following up on the previous release well over a year ago.
 
 # 12.12.2018
 ## R & DS
@@ -6077,7 +6150,7 @@ MRC-CSC/Shared-bioinformatics-training
 - [PH525x series - Biomedical Data Science](http://genomicsclass.github.io/book/)
 
 ## R exercises & Learning
-- [Exercism](https://exercism.io/). Code practice and mentorship for everyone. 
+- [Exercism](https://exercism.io/). Code practice and mentorship for everyone.
 Level up your programming skills with 2,652 exercises across 48 languages, and insightful discussion with our dedicated team of welcoming mentors. Exercism is 100% free forever.
 - [R for Data Science: Exercise Solutions](https://jrnold.github.io/r4ds-exercise-solutions/) by Jeffrey B. Arnold, January 17, 2019
 - [R exercises](https://www.r-exercises.com/start-here-to-learn-r/). Start here to learn R!
@@ -6153,7 +6226,7 @@ Provides functionality for client-side navigation of the server side file system
 
 # 23.11.2018
 ## R
-- [Creating List with Iterator](https://statcompute.wordpress.com/2018/11/22/creating-list-with-iterator/)	
+- [Creating List with Iterator](https://statcompute.wordpress.com/2018/11/22/creating-list-with-iterator/)
 
 
 # 22.11.2018
@@ -6193,7 +6266,7 @@ Provides functionality for client-side navigation of the server side file system
 - COOL!! [Faster way to trim a long character vector in R {closed}](https://stackoverflow.com/questions/39152317/faster-way-to-trim-a-long-character-vector-in-r). !!! **It's just that `strtrim()` is fairly slow.** Answer: Use `(substr(x, 1, 3))`
 - ряд полезных функций: `stringi::stri_trim_both`, `stringr::str_squish()`, `rlang::squash_chr()`
 - [Recode values with character subsetting](https://tjmahr.github.io/recode-values-with-character-subsetting/)
-- Разбивка на диапазоны. Ключевое слово -- "ДИСКРЕТИЗАЦИЯ". См. область из машинного обучения. 
+- Разбивка на диапазоны. Ключевое слово -- "ДИСКРЕТИЗАЦИЯ". См. область из машинного обучения.
 	- `discretize {arules}`, см. [Convert a Continuous Variable into a Categorical Variable](http://www.inside-r.org/packages/cran/arules/docs/discretize)
 	- [Convert continuous numeric values to discrete categories defined by intervals](https://stackoverflow.com/questions/13559076/convert-continuous-numeric-values-to-discrete-categories-defined-by-intervals)
 	- [Categorize continuous variable with dplyr {duplicate}](https://stackoverflow.com/questions/40380112/categorize-continuous-variable-with-dplyr)
@@ -6207,7 +6280,7 @@ Provides functionality for client-side navigation of the server side file system
 	- COOL! [ggraph: An Implementation of Grammar of Graphics for Graphs and Networks](https://cran.r-project.org/web/packages/ggraph/index.html)
 	- [A Very Palette-able Post](https://rud.is/b/2017/05/21/a-very-pallete-able-post/)
 	- [Making Faceted Heatmaps with ggplot2](https://rud.is/b/2016/02/14/making-faceted-heatmaps-with-ggplot2/)
-	
+
 
 
 # 09.11.2018
@@ -6254,18 +6327,18 @@ Functions for importing and handling text files and formatted text files with ad
 - [ndjson Newline Delimited JSON](http://ndjson.org/)
 
 ## GCC
-- При инсталляции пакета `ndjson` под CentOS получил ошибку "C++14 standard requested but CXX14 is not defined". 
-PostPosted: Tue Jun 19, 2018 5:30 pm    Post subject:	Reply with quote  
-Are you able to compile your example with g++? I can't seem to replicate your issue on machines that have a more recent version of libstdc++ 
+- При инсталляции пакета `ndjson` под CentOS получил ошибку "C++14 standard requested but CXX14 is not defined".
+PostPosted: Tue Jun 19, 2018 5:30 pm    Post subject:	Reply with quote
+Are you able to compile your example with g++? I can't seem to replicate your issue on machines that have a more recent version of libstdc++
 From this page [https://gcc.gnu.org/projects/cxx-status.html#cxx14](https://gcc.gnu.org/projects/cxx-status.html#cxx14) it looks like 4.8.5 doesn't fully support C++14
 ```
-$ lsb_release -id 
-Distributor ID:   CentOS 
-Description:   CentOS Linux release 7.5.1804 (Core) 
-$ which g++ 
-/usr/bin/g++ 
-$ g++ --version 
-g++ (GCC) 4.8.5 20150623 (Red Hat 4.8.5-28) 
+$ lsb_release -id
+Distributor ID:   CentOS
+Description:   CentOS Linux release 7.5.1804 (Core)
+$ which g++
+/usr/bin/g++
+$ g++ --version
+g++ (GCC) 4.8.5 20150623 (Red Hat 4.8.5-28)
 ```
 
 ## yum
@@ -6364,7 +6437,7 @@ Provides an interface to the C code for Latent Dirichlet Allocation (LDA) models
 	- [DT 0.4: Editing Tables, Smart Filtering, and More](https://blog.rstudio.com/2018/03/29/dt-0-4/) by Yihui Xie, 2018-03-29
 	- [Make it possible to edit values in table #480 {Merged}](https://github.com/rstudio/DT/pull/480) yihui merged 3 commits into master from feature/editor on 18 Jan
 	- [barbara: Here’s a CRUD app I built in Shiny 295, using SQLite.](https://github.com/bborgesr/wsds2017/tree/master/app)
-	- [rhandsontable](https://jrowen.github.io/rhandsontable/). Introduction. rhandsontable is a htmlwidget based on the handsontable.js library. 
+	- [rhandsontable](https://jrowen.github.io/rhandsontable/). Introduction. rhandsontable is a htmlwidget based on the handsontable.js library.
 	- [Building CRUD with Shiny](https://community.rstudio.com/t/building-crud-with-shiny/2881/8)
 - COOL! [Streamulus](http://iritkatriel.github.io/streamulus/). A C++ Embedded Language for Event Stream Processing
 	- [RcppStreams](http://dirk.eddelbuettel.com/code/rcpp.streams.html)
@@ -6397,7 +6470,7 @@ Provides an interface to the C code for Latent Dirichlet Allocation (LDA) models
 
 ## Math. SD vs SE
 - [Standard deviations and standard errors](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1255808/)
-- [Standard deviation vs standard error of sample mean](https://stats.stackexchange.com/questions/205338/standard-deviation-vs-standard-error-of-sample-mean). 
+- [Standard deviation vs standard error of sample mean](https://stats.stackexchange.com/questions/205338/standard-deviation-vs-standard-error-of-sample-mean).
 Standard error refers to the standard deviation of the sampling distribution of a statistic.
 - [Converting standard error to standard deviation?](https://stats.stackexchange.com/questions/15505/converting-standard-error-to-standard-deviation)
 - [Standard Deviation vs Standard Error](https://math.stackexchange.com/questions/193045/standard-deviation-vs-standard-error)
@@ -6470,7 +6543,7 @@ A few months ago rOpenSci’s Scott Chamberlain asked me for feedback about a ne
 - COOL! [Building a Movie Recommendation System](https://rpubs.com/jeknov/movieRec) by Jekaterina Novikova, PhD, June, 2016
 - [Building a Recommendation System in TensorFlow: Overview](https://cloud.google.com/solutions/machine-learning/recommendation-system-tensorflow-overview)
 - [ALS Implicit Collaborative Filtering](https://medium.com/radon-dev/als-implicit-collaborative-filtering-5ed653ba39fe)
-Вот вопрос: 
+Вот вопрос:
 Implicit vs explicit data
 Explicit data is data where we have some sort of rating. Like the 1 to 5 ratings from the MovieLens or Netflix dataset. Here we know how much a user likes or dislikes an item which is great, but this data is hard to come by. Your users might not spend the time to rate items or your app might not work well with a rating approach in the first place.
 
@@ -6553,7 +6626,7 @@ This is a two-in-one package which provides interfaces to both R and 'Python'. I
 ## Ищем тормоза при генерации репорта для МСП
 Одним из самых тормозных элементов оказалась функция `lower_tri` в функции `stringdist::stringdistmatrix`. [Ссылка на определение функции](https://github.com/markvanderloo/stringdist/blob/03cec8adad87d572cd2671789c4fe9e6910dedfa/pkg/R/stringdist.R#L331).
 Эта фукция использует [RCpp код]: [`SEXP R_lower_tri(`](https://github.com/markvanderloo/stringdist/blob/03cec8adad87d572cd2671789c4fe9e6910dedfa/pkg/src/Rstringdist.c#L235)
- 
+
 
 ## Git
 - Как сделать клон бранча в git:
@@ -6627,7 +6700,7 @@ This is a two-in-one package which provides interfaces to both R and 'Python'. I
 	- [The R Graph Gallery's Top 5 Most Visited Graph Themes](https://www.datacamp.com/community/tutorials/top-5-r-graphics)
 	- [Generate radar charts with ggplot2](https://stackoverflow.com/questions/50353923/generate-radar-charts-with-ggplot2)
 	- [SPIDER OR RADAR CHART](https://www.r-graph-gallery.com/spider-or-radar-chart/)
- 
+
 ## CH\DS
 - [Dump/Import data from clickhouse](https://groups.google.com/forum/#!topic/clickhouse/Dx0CsFGbk7c)
 - [Machine Learning for Visualization](https://medium.com/@enjalot/machine-learning-for-visualization-927a9dff1cab). Let’s Explore the Cutest Big Dataset
@@ -6680,14 +6753,14 @@ The purpose of this add-in is to let you explore your data quickly to extract th
 ## R
 - shinyloadtest
 - shinyloadtest. Ошибки, которые встретил сразу
-- 
+-
 ```
 > df0 <- shinyloadtest::load_runs("16 workers" = "./shinyloadtest/run_16", verbose = TRUE)
 16 workers [===========================================================] 20/20 eta: 0s
-Error in FUN(X[[i]], ...) : 
+Error in FUN(X[[i]], ...) :
   only defined on a data frame with all numeric variables
 ```
-- 
+-
 ```
 > shinyloadtest::shinyloadtest_report(df, "run.html")
 run - Saving HTML [=================================================>] 126/127 eta: 0spandoc.exe: Cannot decode byte '\x92': Data.Text.Internal.Encoding.decodeUtf8: Invalid UTF-8 stream
@@ -6706,20 +6779,20 @@ run - Saving HTML [=================================================>] 126/127 e
 - [не удаётся разорвать связи в Excel](https://www.planetaexcel.ru/forum/index.php?PAGE_NAME=read&FID=8&TID=33341)
 - [ Excel не разрывает связь с внешней книгой ](http://www.excelworld.ru/forum/2-12911-1). решение через распаковку
 ```
-на листе Catalog 
-в ячейках: 
-C48:C49,E49,E52,C52,C54:C55,E54:E55,E58,C58,E74,C74,C66,E66 
+на листе Catalog
+в ячейках:
+C48:C49,E49,E52,C52,C54:C55,E54:E55,E58,C58,E74,C74,C66,E66
 
-выставлена проверка данных, которая и держит связь. 
-очищаем условие проверки, сохраняем, перезагружаем книгу, связь пропала. 
+выставлена проверка данных, которая и держит связь.
+очищаем условие проверки, сохраняем, перезагружаем книгу, связь пропала.
 
-как быстро найдено: 
-1. открываем копию книгу винраром 
-2. находим и удаляем папку "externalLinks" 
-3. закрываем архиватор 
-4. открываем файл в Excel 
-5. Excel ругается, но потом восстанавливает данные, выдавая следующее: 
-Удаленное свойство: Проверка данных из части /xl/worksheets/sheet7.xml 
+как быстро найдено:
+1. открываем копию книгу винраром
+2. находим и удаляем папку "externalLinks"
+3. закрываем архиватор
+4. открываем файл в Excel
+5. Excel ругается, но потом восстанавливает данные, выдавая следующее:
+Удаленное свойство: Проверка данных из части /xl/worksheets/sheet7.xml
 ```
 
 
@@ -6775,7 +6848,7 @@ Jim rightly pointed out in the comments (and I did not initally get it) that the
 library(profvis)
 
 # Run profiler on shiny app with optional arg to save output
-profvis({ runApp('Projects/path_of_app') }  
+profvis({ runApp('Projects/path_of_app') }
         , prof_output = '/path_to_save_output')
 ```
 - Профилировка rmarkdown
@@ -6799,7 +6872,7 @@ profvis({ runApp('Projects/path_of_app') }
 
 ## Elastic
 - [Machine Learning for Nginx Logs - Identifying Operational Issues with Your Website](https://www.elastic.co/blog/machine-learning-for-nginx-logs)
-	
+
 
 # 19.09.2018
 ## Twitter
@@ -6923,7 +6996,7 @@ https://www.stat.ubc.ca/~jenny/STAT545A/block18_gapminderGgplot2VsLattice.html
 - [Driving Drill Dynamically with Docker and Updating Storage Configurations On-the-fly with sergeant](https://rud.is/b/2018/09/09/driving-drill-dynamically-with-docker-and-updating-storage-configurations-on-the-fly-with-sergeant/)
 - [WVU Log Viewer](www.wvulogviewer.org/). WVU Well log viewer is a web enabled application to quickly visualize and interpret well log data. User can upload a LAS file and visualize logs in different ...
 - Проблемка с read_csv, выявленная на экспериментах с нефтянкой: [Print column specification whenever there is guessing? #522 {Open}](https://github.com/tidyverse/readr/issues/522)/ Наблюдаются проблемы с разбором целевой колонки 'Нефть, т'. Там числа, завернутые в строки, а десятичным разделителем выступает запятая, а не точка
-- Как поставить файл с гитхаба из локального архива? 
+- Как поставить файл с гитхаба из локального архива?
 	- Вроде прошло `install.packages("C:/Users/Ilya/Downloads/multidplyr-master.zip", repos=NULL)`, с обязательным указанием `repos`/
 	- Прошло `devtools::install_local("C:/Users/Ilya/Downloads/multidplyr-master/")`. Читаем здесь: [Install R packages from github downloading master.zip](https://stackoverflow.com/questions/17366772/install-r-packages-from-github-downloading-master-zip)
 - [An introduction to multidplyr](https://github.com/hadley/multidplyr/blob/master/vignettes/multidplyr.md) by Hadley Wickham
@@ -6960,7 +7033,7 @@ https://www.stat.ubc.ca/~jenny/STAT545A/block18_gapminderGgplot2VsLattice.html
 	- [DescTools::IsDate](https://www.rdocumentation.org/packages/DescTools/versions/0.99.19/topics/IsDate). Check If An Object Is Of Type Date
 
 ## ML
-- Missing Data Imputation. 
+- Missing Data Imputation.
 Mice just provide a way to overcome issues with NAs. Some of the models do not accept NAs. So you have 3 approaches - (1) Leave the data as is and go for a model which can handle missing data (XGBoost, RF etc.) (2) Drop the NAs. This might lead to a significant loss of signal detection as you are letting go of some data portion (3) Opt for a data imputation methodology. Mice is one such library which would do it for you very easily. It allows for imputation using a variety of rules ranging from 'meanvalue' imputation to deriving relationship between variables to predict 'missing' value of target variable using a variety of models.
 - [Impute Housing Data](https://www.kaggle.com/captcalculator/imputing-missing-data-with-the-mice-package-in-r)
 - [Methods for Multiple Imputing Analysis with R](https://www.andrew.cmu.edu/user/aurorat/MIA_r.html) by Aurora Tsai, Carnegie Mellon University, December 22, 2017
@@ -6995,7 +7068,7 @@ Mice just provide a way to overcome issues with NAs. Some of the models do not a
 ## R
 - [Spectrograms in R – a gallery](https://walczak.org/2018/09/spectrograms-in-r-a-gallery/)
 - COOL! rollRegress v0.1.0: Implements methods for fast-rolling and expanding linear regression models. The methods use rank-one updates and downdates of the upper triangular matrix from a QR decomposition. See Dongarra et al.(1979). The [vignette](https://rviews.rstudio.com/2018/08/27/july-2018-top-40-new-packages/) provides some details.
-- [ceterisParibus: Ceteris Paribus Profiles](https://cran.r-project.org/web/packages/ceterisParibus/index.html). 
+- [ceterisParibus: Ceteris Paribus Profiles](https://cran.r-project.org/web/packages/ceterisParibus/index.html).
 Ceteris Paribus Profiles (What-If Plots) are designed to present model responses around selected points in a feature space. For example around a single prediction for an interesting observation. Plots are designed to work in a model-agnostic fashion, they are working for any predictive Machine Learning model and allow for model comparisons. Ceteris Paribus Plots supplement the Break Down Plots from 'breakDown' package.
 - [makeParallel: Transform Serial R Code into Parallel R Code](https://cran.r-project.org/web/packages/makeParallel/)
 - [R move column to last using dplyr](https://stackoverflow.com/questions/43897844/r-move-column-to-last-using-dplyr): `data%>%select(-b,everything())`, [Explained by Hadley himself](https://github.com/tidyverse/dplyr/issues/2838)
@@ -7073,11 +7146,11 @@ libsqlite3x-devel.x86_6
 - `get_os` для опредления MacOS:
 ```
 get_os <- function() {
-  if (.Platform$OS.type == "windows") { 
+  if (.Platform$OS.type == "windows") {
     "win"
   } else if (Sys.info()["sysname"] == "Darwin") {
-    "mac" 
-  } else if (.Platform$OS.type == "unix") { 
+    "mac"
+  } else if (.Platform$OS.type == "unix") {
     "unix"
   } else {
     stop("Unknown OS")
@@ -7103,7 +7176,7 @@ get_os <- function() {
 - Как добавить NA к факторам. `base::addNA()` или `forcats::fct_explicit_na(f, na_level = "(Missing)")` [Make missing values explicit](https://forcats.tidyverse.org/reference/fct_explicit_na.html). This gives missing value an explicit factor level, ensuring that they appear in summaries and on plots.
 
 
- 
+
 - COOL! Операция `naniar::replace_to_na`, обратная `tidyr::replace_na`: [Replacing selected values as NA #76 {Closed}](https://github.com/njtierney/naniar/issues/76)
 - [tjmahr/fillgaze](https://github.com/tjmahr/fillgaze). Helper functions for interpolating missing eyetracking data
 - COOL! [set_na_where(): a nonstandard evaluation use case](https://www.tjmahr.com/set-na-where-nonstandard-evaluation-use-case/). Bottling up magic spells
@@ -7480,7 +7553,7 @@ Base 36 or hexatridecimal is a positional numeral system using 36 as the radix. 
 # 13.06.2018
 ## Apache Kafka, Tarantool, etc.
 - [Apache Kafka и миллионы сообщений в секунду](https://habr.com/company/tinkoff/blog/342892/)
-	1. Нет потребителей — скорость падает. 
+	1. Нет потребителей — скорость падает.
 Если новые сообщения тут же никто не забирает, они сохраняются на диск. А это очень дорогая операция. Поэтому если потребители внезапно отключились или “залагали”, пропускная скорость упадет.
 	2. Чем больше размер сообщения, тем выше пропускная способность
 - [Инструментарий специалиста по большим данным: Apache Kafka](http://datareview.info/article/instrumentariy-spetsialista-po-bolshim-dannyim-apache-kafka/)
@@ -7595,16 +7668,16 @@ chr "2 * b"
 
 ## Ответ Кате v3. RE: X5 FW: Бизнес-отчетность (дополнения выделены зеленым)
 Касательно темы референс визитов тоже есть важное уточнение.
-Переход от закрытых вендорских продуктов к опенсорс решениям понятие референс визита практически потеряло свою актуальность. 
- - ПО бесплатно; 
- - исходники все доступны; 
- - развивают компоненты «всем миром»; 
+Переход от закрытых вендорских продуктов к опенсорс решениям понятие референс визита практически потеряло свою актуальность.
+ - ПО бесплатно;
+ - исходники все доступны;
+ - развивают компоненты «всем миром»;
  - множество людей и компаний ведут блоги по задачам,  технологиям и решениям;
- - регулярно проводят конференции, материалы которых полностью доступны, включая видеозаписи. 
+ - регулярно проводят конференции, материалы которых полностью доступны, включая видеозаписи.
 
-Если говорить о компонентах предлагаемого нами решения R, то весьма занимательно проглядеть материалы европейской конференции EARL, в частности [EARL 2017 London](https://earlconf.com/2017/london/), а также логотипы участников и спонсоров, большое количество грандов принимает [активное участие](https://earlconf.com/2017/downloads/london/EARL-London-2017-Agenda.pdf). 
+Если говорить о компонентах предлагаемого нами решения R, то весьма занимательно проглядеть материалы европейской конференции EARL, в частности [EARL 2017 London](https://earlconf.com/2017/london/), а также логотипы участников и спонсоров, большое количество грандов принимает [активное участие](https://earlconf.com/2017/downloads/london/EARL-London-2017-Agenda.pdf).
 
-Очень много кейсов по применению указанного фреймворка для бизнес задач. 
+Очень много кейсов по применению указанного фреймворка для бизнес задач.
 Например, крайне интересны:
  - кейс с мониторингом системы городского транспорта Лондона – [«Every Journey Matters Use of R at TfL»](https://earlconf.com/2017/downloads/london/presentations/EARL2017_-_London_-_Ashley_Turner_-_Every_journey_matters.pdf)
  - кейс с мониторингом канализации Великобритании – [«USING R TO MONITOR SEWER NETWORK PERFORMANCE FOR THE WATER INDUSTRY»](https://earlconf.com/2017/downloads/london/presentations/EARL2017_-_London_-_Joy%20McKenny_-_Using_R_to_monitor_sewer_network_performance.pdf);
@@ -7646,7 +7719,7 @@ chr "2 * b"
 	- [Setup and teardown](https://www.tidyverse.org/articles/2017/12/testthat-2-0-0/): tests/testthat/setup-xyz.R files are run before the first test file is executed. They are similar to the existing helpers-xyz.R files, but are not run by devtools::load_all(). Similarly, test/teststhat/teardown-xyz.R files are run after all tests are complete; use these to clean up any global changes made by the setup files.
 	- Из документации "• Helper files start with helper and are executed before tests are run and from `devtools::load_all()`"
 - [Merge Multiple spaces to single space; remove trailing/leading spaces
-](https://stackoverflow.com/questions/25707647/merge-multiple-spaces-to-single-space-remove-trailing-leading-spaces). 
+](https://stackoverflow.com/questions/25707647/merge-multiple-spaces-to-single-space-remove-trailing-leading-spaces).
 `stringr::str_squish(string)` or `qdap::Trim(qdap::clean(string))
 
 # 24.05.2018
@@ -7664,7 +7737,7 @@ chr "2 * b"
 - Смотрим запущенные процессы R (из под shiny server): `ps -aux | grep "exec/R --no-save"`
 - [RStudio Shiny Pro Pricing guide](https://shiny-server.chargifypay.com/h/3384909/subscriptions/new). Сервера просто работают в параллель.
 - [RStudio Connect Admin Guide](http://docs.rstudio.com/connect/admin/#). Для расширения требуется Execution Server
-	- [pdf версия](http://docs.rstudio.com/connect/admin/index.pdf)	
+	- [pdf версия](http://docs.rstudio.com/connect/admin/index.pdf)
 - [Подробно про Connect Execution Server](https://blog.rstudio.com/2017/12/01/rstudio-connect-v1-5-10/)
 - [И еще](https://blog.rstudio.com/2018/04/12/rstudio-connect-1-6-0-a-year-in-the-making/). В Админ гайде это проходит под пунктом [6 High Availability and Load Balancing](http://docs.rstudio.com/connect/admin/high-availability.html)
 - [RStudio Configuration and sizing recommendations](https://support.rstudio.com/hc/en-us/articles/115002344588-Configuration-and-sizing-recommendations)
@@ -7714,7 +7787,7 @@ A 'SQL' query generator based on Edgar F. Codd's relational algebra and experien
 Warning messages:
 1: In download.file(url, destfile = f, quiet = TRUE) :
  URL 'https://cran.r-project.org/CRAN_mirrors.csv': status was 'Peer certificate cannot be authenticated with given CA certificates'
-2: package ‘httr’ is not available (for R version 3.4.4) 
+2: package ‘httr’ is not available (for R version 3.4.4)
 ```
 решил вопрос путем обхода секьюрности флагами: `install.packages("httr", method="wget", extra="--no-check-certificate")`
 
@@ -7862,7 +7935,7 @@ mosaic_rasters(f, paste0(normalizePath("~"), "/GIS/OS/Terrain50.tif"))
 	- COOL! [STAT 545. Cheatsheet for dplyr join functions](http://stat545.com/bit001_dplyr-cheatsheet.html) by Jenny Bryan
 	- COOL! [Joining Data in R with dplyr](http://www.rpubs.com/williamsurles/293454) by William Surles, 2017-07-20
 
-- COOL! [How to group by all but one columns?](https://stackoverflow.com/questions/39181208/how-to-group-by-all-but-one-columns): Building on the @eipi10's dplyr 0.7.0 edit, `group_by_at` appears to be the right function for this job. 
+- COOL! [How to group by all but one columns?](https://stackoverflow.com/questions/39181208/how-to-group-by-all-but-one-columns): Building on the @eipi10's dplyr 0.7.0 edit, `group_by_at` appears to be the right function for this job.
 
 # 16.04.2018
 ## R
@@ -8168,7 +8241,7 @@ Imports non-tabular from Excel files into R. Exposes cell content, position and 
 - COOL! [How to add code coverage (codecov) to your R package?](https://walczak.org/2017/06/how-to-add-code-coverage-codecov-to-your-r-package/)
 
 - COOL! Python. [dplyr-style Data Manipulation with Pipes in Python](https://towardsdatascience.com/dplyr-style-data-manipulation-with-pipes-in-python-380dcb137000)
-- COOL! [Generating codebooks in R](http://sandsynligvis.dk/articles/18/codebook.html). A codebook is a technical document that provides an overview of and information about the variables in a dataset. 
+- COOL! [Generating codebooks in R](http://sandsynligvis.dk/articles/18/codebook.html). A codebook is a technical document that provides an overview of and information about the variables in a dataset.
 - [Getting {sparklyr}, {h2o}, {rsparkling} to work together and some fun with bash](http://www.brodrigues.co/blog/2018-03-03-sparklyr_h2o_rsparkling/)
 - [How To Learn R, Part 1: Learn From A Master Data Scientist's Code](http://www.business-science.io/learning-r/2018/03/03/how_to_learn_R_pt1.html)
 - [hrbrpkgs: list Bob Rudis' packages](http://www.masalmon.eu/2018/03/04/hrbrpkgs/)
@@ -8471,7 +8544,7 @@ RE2 <https://github.com/google/re2> is a primarily deterministic finite automato
 - [An R-focused pipeline toolkit for reproducibility and high-performance computing](https://ropensci.github.io/drake)
 - [Native SSH client in R](https://github.com/ropensci/ssh)
 - [RCurl: General Network (HTTP/FTP/...) Client Interface for R](https://cran.r-project.org/web/packages/RCurl/index.html)
-- Как достать файл по scp, имея пароль? Параметр `password`, который явно в документации не прописан. 
+- Как достать файл по scp, имея пароль? Параметр `password`, который явно в документации не прописан.
 ```
 scp("10.0.0.246", path="/var/log/squid/access.log", binary=FALSE, password="pass", user="root")
 ```
