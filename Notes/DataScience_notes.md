@@ -709,6 +709,8 @@ header-includes:
 	- [dynamically-generate-rmarkdown-chunks-to-display-datatable](https://gist.github.com/StevenMMortimer/e54ec050d97d79996189)
 	- [Figure size in R Notebook document](https://support.rstudio.com/hc/en-us/community/posts/213106048-Figure-size-in-R-Notebook-document)
 - [Creating Dynamic Documents with RMarkdown and Knitr](http://rpubs.com/ivim/Rmd-v1)
+- COOL! [Demo: {crosstalk} materials for a talk at EARL London 2018](https://github.com/matt-dray/earl18-crosstalk)
+- [Crosstalk](https://rstudio.github.io/crosstalk/). Crosstalk is an add-on to the htmlwidgets package. It extends htmlwidgets with a set of classes, functions, and conventions for implementing cross-widget interactions (currently, linked brushing and filtering).
 
 # Visualization
 Когда спрашивают про визуализацию:
@@ -903,11 +905,39 @@ Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'P
 - COOL! [Appsilon/data.validator](https://github.com/Appsilon/data.validator). validate your data and create nice reports straight from R
 - [brodieG/vetr](https://github.com/brodieG/vetr) Trust, but Verify
 
-# 27.07.2020
+# ggplot
+- COOL! Slides. [Designing ggplots. making clear figures that communicate](https://designing-ggplots.netlify.app/#1)
+
+
+# 28.07.2020
 ## R
+- [binaryLogic: Binary Logic](https://cran.r-project.org/web/packages/binaryLogic/)
+Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
+- [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
+- [How to Use Google Fonts in LaTeX?](https://latexdraw.com/how-to-use-google-fonts-in-latex/)
+- [Presentation-Ready Summary Tables with gtsummary](https://education.rstudio.com/blog/2020/07/gtsummary/)
+- COOL! [How I share knowledge around R Markdown](https://themockup.blog/posts/2020-07-25-meta-rmarkdown/). A meta collection of some R Markdown strategies.
+- COOL! [DAGitty — draw and analyze causal diagrams](http://www.dagitty.net/)
+DAGitty is a browser-based environment for creating, editing, and analyzing causal diagrams (also known as directed acyclic graphs or causal Bayesian networks).
+- [BioC 2020: Where Software and Biology Connect](https://bioc2020.bioconductor.org/workshops)
+- [Minify Your SVGs](https://victorzhou.com/blog/minify-svgs/). How I optimize SVGs for this blog and why you probably should, too.
+- [Apache Arrow 1.0.0 Release](https://arrow.apache.org/blog/2020/07/24/1.0.0-release/)
+- [Using the Arrow C++ Library in R](https://arrow.apache.org/docs/r/articles/arrow.html)
+
+# 27.07.2020
+## DS
+- [Rappid jointjs](https://www.jointjs.com/). Create Flowchart, BPMN and many other unique diagramming editors with ease.
+- COOL! Эссе [Programming Sucks](http://www.stilldrinking.org/programming-sucks)
+- [RMarkdown CSS Selector Tips](https://emilyriederer.netlify.app/post/rmarkdown-css-tips/)
+
+## R
+- [DAQAPO - Data Quality Assessment for Process-oriented Data](https://nielsmartin.github.io/daqapo/)
+	- [Introduction to DaQAPO](https://cran.rstudio.com/web/packages/daqapo/vignettes/Introduction-to-DaQAPO.html). Process mining techniques generate valuable insights in business processes using automatically generated process execution data.
+- COOL! [R package emmeans: Estimated marginal means](https://github.com/rvlenth/emmeans)
+- [The Seven Key Things You Need To Know About dplyr 1.0.0](https://towardsdatascience.com/what-you-need-to-know-about-the-new-dplyr-1-0-0-7eaaaf6d78ac)
 - COOL! [MilesMcBain/gistfo](https://github.com/MilesMcBain/gistfo). Turn your RStudio untitled tabs into gists. You monsters.
 - [The new way to forecast in R.](https://www.business-science.io/code-tools/2020/06/29/introducing-modeltime.html)
-- COOL! Эссе [Programming Sucks](http://www.stilldrinking.org/programming-sucks)
+- [A beginner's guide to Shiny modules](https://emilyriederer.netlify.app/post/shiny-modules/)
 - COOL! [whatthefuck.is   ·   a closure](https://whatthefuck.is/closure)
 - [Запускаем Python Dash под ShinyProxy](https://support.openanalytics.eu/t/what-is-the-best-way-of-delivering-static-assets-to-the-client-for-custom-apps/363)
 - [.#rstats trick of the day: Creating a waterfall chart with total geom_text() label ending up in the right spot all depends on an ifelse() statement.](https://twitter.com/tanyacash21/status/1287575380895899653)
@@ -933,8 +963,7 @@ purrr::map(
 - [ggplot2 aesthetic cheatsheet](https://tinyurl.com/y3y8wyap)
 - [Use prismatic with after_scale() for finer control of colors in ggplot2](https://www.hvitfeldt.me/blog/use-prismatic-with-after_scale-for-finer-control-of-colors-in-ggplot2/)
 - [Tests for Pairwise Mean Differences in R](https://timmastny.rbind.io/blog/tests-pairwise-categorical-mean-emmeans-contrast/)
-- COOL! [R package emmeans: Estimated marginal means](https://github.com/rvlenth/emmeans)
-- [The Seven Key Things You Need To Know About dplyr 1.0.0](https://towardsdatascience.com/what-you-need-to-know-about-the-new-dplyr-1-0-0-7eaaaf6d78ac
+- COOL! [Five Tidyverse 1.x Tricks You May Not Know About](https://drkeithmcnulty.com/2020/07/16/five-tidyverse-tricks-you-may-not-know-about/)
 - [highcharter](https://jkunst.com/highcharter/)
 - [Data cleaning and exploration with data.table](https://www.meganstodel.com/posts/using-data-table/)
 - [Gini Index under Fat-Tails](https://david-salazar.github.io/2020/06/26/gini-index-under-fat-tails/)
@@ -960,7 +989,6 @@ Also, see:
 - [dittodb](https://dittodb.jonkeane.com/)
 - [httptest: A Test Environment for HTTP Requests in R](https://enpiar.com/r/httptest/
 - [rOpenSci: The webmockr package](https://docs.ropensci.org/webmockr/)
-- COOL! [Five Tidyverse 1.x Tricks You May Not Know About](https://drkeithmcnulty.com/2020/07/16/five-tidyverse-tricks-you-may-not-know-about/)
 - [Make A Shortcut for Anything in RStudio with shrtcts - Garrick Aden‑Buie](https://www.garrickadenbuie.com/blog/shrtcts/)
 - [Skewness | Definition and its Importance in Data Science](https://fahimahmad.netlify.app/posts/skewness-denifination-and-its-importance-in-data-science/)
 - COOL! [Chapter 8 Process Mining | Rapid R Data Viz Book](https://billster45.github.io/rapid_r_data_vis_book/process-mining.html#what-is-process-mining)
@@ -1070,7 +1098,7 @@ Also, see:
 - COOL! [Reproducible Data Workflows With Drake](https://www.garrickadenbuie.com/talk/drake-intro-biodataclub/) by Garrick Aden-Buie
 - COOL! [Automating exploratory plots with ggplot2 and purrr](https://aosmith.rbind.io/2018/08/20/automating-exploratory-plots/)
 - COOL! Learning. [romainfrancois/seven31](https://github.com/romainfrancois/seven31). This branch is even with ThinkR-open:master.
-	- [Rounding to Decimal Digits in Binary](https://cran.r-project.org/web/packages/round/vignettes/Rounding.html)
+	- COOL! [Rounding to Decimal Digits in Binary](https://cran.r-project.org/web/packages/round/vignettes/Rounding.html)
 	- [twitt](https://twitter.com/romain_francois/status/1281113818874220544?s=20)
 ```
 is probably the most famous FAQ, so it deserves its own 📦 to help you 🕵️ the confusion of

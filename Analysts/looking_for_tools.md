@@ -77,7 +77,7 @@ From release 1.3, code folding will be integrated into Brackets (although withou
 	- [Markdown Preview](https://github.com/gruehle/MarkdownPreview). Installation: Select File > Extension Manager... (or click the "brick" icon in the toolbar), Search for "Markdown Preview", Click the Install button
 
 
-# JSON\XML
+## JSON\XML
 - [JSON Editor Online](http://www.jsoneditoronline.org/)
 - [JSONmate](http://jsonmate.com/)
 - The [JSON Formatter](https://jsonformatter.curiousconcept.com/) was created to help with debugging. As JSON data is often output without line breaks to save space, it is extremely difficult to actually read and make sense of it. This little tool hoped to solve the problem by formatting the JSON data so that it is easy to read and debug by human beings.
@@ -86,6 +86,8 @@ From release 1.3, code folding will be integrated into Brackets (although withou
 - [JSON Viewer](http://jsonviewer.stack.hu/)
 - [XMLpad](http://wmhelp.com/) is a professional editor for XML docs processing which allows presenting the data in tabular style.
 
+## Editors
+- [What is the best alternative to EmEditor?](https://www.slant.co/options/21336/alternatives/~emeditor-alternatives)
 
 
 ## Blogging Platforms
@@ -226,7 +228,7 @@ Sandboxing is required for all apps available on the Mac and iOS app store, in o
 
 
 
-#Monitoring
+# Monitoring
 
 ## Интересные производители
 - [NetBrain](http://www.netbraintech.com/) Map-Driven Network Automation
@@ -237,8 +239,10 @@ Sandboxing is required for all apps available on the Mac and iOS app store, in o
 ## Open-source
 - [Network WeatherMap](http://network-weathermap.com/)
 - [SpiceWorks Network Mapping](http://www.spiceworks.com/free-network-mapping-software/) (Free)
+- [The 7 Log Management Tools You Need To Know](https://blog.overops.com/the-7-log-management-tools-you-need-to-know/)
 
-#Development
+
+# Development
 - [Docker](https://www.docker.com/whatisdocker) allows you to package an application with all of its dependencies into a standardized unit for software development.
 - [DevExtreme Web](http://js.devexpress.com/WebDevelopment/) Create highly responsive web apps for touch-enabled devices and traditional desktops.
 - [JUMLY](http://jumly.tmtk.net/) is a JavaScript library for UML diagram rendering engine
