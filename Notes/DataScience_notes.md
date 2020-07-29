@@ -636,6 +636,21 @@ output:
 	- [Fast Rmarkdown Theming with thematic and bootstraplib](https://www.tillac-data.com/2020-fast-rmd-theming-with-thematic-and-bootstraplib/) Publish date: 2020-06-05
 Theming in Rmarkdown can be hard. You first made some custom CSS or use a provided theme but your figures didn’t change and you have to style your ggplot2 theme. And after it you change your mind (or your boss do) and you need to move this color shade to lighter one. So you change your theme, but forgot to change it in all your CSS and something is going wrong. Same goes for fonts
 - COOL! [RMarkdown Driven Development: the Technical Appendix](https://emilyriederer.netlify.app/post/rmddd-tech-appendix/)
+- Dynamic chunk sizes:
+	- Проблема:
+@BrandonBertelsen I understand that, but knitr has to open the graphical device (with an appropriate size) before evaluating the chunk, so you have to evaluate the code in a previous chunk in order to use the objects in a latter chunk. – Yihui Xie Mar 12 '13 at 16:09
+	- COOL! [How to Change fig.width and fig.height Dynamically Within an R Markdown Chunk](http://michaeljw.com/blog/post/subchunkify/)
+	- [Dynamic height and width for knitr plots](https://stackoverflow.com/questions/15365829/dynamic-height-and-width-for-knitr-plots)
+	- [dynamically-generate-rmarkdown-chunks-to-display-datatable](https://gist.github.com/StevenMMortimer/e54ec050d97d79996189)
+	- [Figure size in R Notebook document](https://support.rstudio.com/hc/en-us/community/posts/213106048-Figure-size-in-R-Notebook-document)
+- [Creating Dynamic Documents with RMarkdown and Knitr](http://rpubs.com/ivim/Rmd-v1)
+- COOL! [Demo: {crosstalk} materials for a talk at EARL London 2018](https://github.com/matt-dray/earl18-crosstalk)
+- [Crosstalk](https://rstudio.github.io/crosstalk/). Crosstalk is an add-on to the htmlwidgets package. It extends htmlwidgets with a set of classes, functions, and conventions for implementing cross-widget interactions (currently, linked brushing and filtering).
+- COOL! [How I share knowledge around R Markdown](https://themockup.blog/posts/2020-07-25-meta-rmarkdown/). A meta collection of some R Markdown strategies.
+- COOL! [How I Teach R Markdown](https://alison.rbind.io/post/2020-05-28-how-i-teach-r-markdown/) by Alison Hill
+- [Distill for R Markdown](https://rstudio.github.io/distill/). Scientific and technical writing, native to the web
+- [Different ways to set figure size in RMarkdown](https://sebastiansauer.github.io/figure_sizing_knitr/)
+
 
 ## knitr. Запускаем Rmd -> PDF
 Смотрим ссылки ниже. Важный концепт, который держим в голове -- возможность генерации отчетов из .R файлов (не .Rmd) посредством `spin`. `rmarkdown::render()` автоматически выбирает spin\knit в зависимости от расширения файла.
@@ -701,16 +716,7 @@ header-includes:
 - [Escaping % symbol when passed as a string from R chunk to knitr](https://tex.stackexchange.com/questions/430376/escaping-symbol-when-passed-as-a-string-from-r-chunk-to-knitr)
 - [How to escape a pipe char in a code statement in a markdown table?](https://stackoverflow.com/questions/17319940/how-to-escape-a-pipe-char-in-a-code-statement-in-a-markdown-table)
 - [how to render DT::datatables in a pdf using rmarkdown?](https://stackoverflow.com/questions/44543858/how-to-render-dtdatatables-in-a-pdf-using-rmarkdown)
-- Dynamic chunk sizes:
-	- Проблема:
-@BrandonBertelsen I understand that, but knitr has to open the graphical device (with an appropriate size) before evaluating the chunk, so you have to evaluate the code in a previous chunk in order to use the objects in a latter chunk. – Yihui Xie Mar 12 '13 at 16:09
-	- COOL! [How to Change fig.width and fig.height Dynamically Within an R Markdown Chunk](http://michaeljw.com/blog/post/subchunkify/)
-	- [Dynamic height and width for knitr plots](https://stackoverflow.com/questions/15365829/dynamic-height-and-width-for-knitr-plots)
-	- [dynamically-generate-rmarkdown-chunks-to-display-datatable](https://gist.github.com/StevenMMortimer/e54ec050d97d79996189)
-	- [Figure size in R Notebook document](https://support.rstudio.com/hc/en-us/community/posts/213106048-Figure-size-in-R-Notebook-document)
-- [Creating Dynamic Documents with RMarkdown and Knitr](http://rpubs.com/ivim/Rmd-v1)
-- COOL! [Demo: {crosstalk} materials for a talk at EARL London 2018](https://github.com/matt-dray/earl18-crosstalk)
-- [Crosstalk](https://rstudio.github.io/crosstalk/). Crosstalk is an add-on to the htmlwidgets package. It extends htmlwidgets with a set of classes, functions, and conventions for implementing cross-widget interactions (currently, linked brushing and filtering).
+
 
 # Visualization
 Когда спрашивают про визуализацию:
@@ -905,9 +911,6 @@ Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'P
 - COOL! [Appsilon/data.validator](https://github.com/Appsilon/data.validator). validate your data and create nice reports straight from R
 - [brodieG/vetr](https://github.com/brodieG/vetr) Trust, but Verify
 
-# ggplot
-- COOL! Slides. [Designing ggplots. making clear figures that communicate](https://designing-ggplots.netlify.app/#1)
-
 
 # 28.07.2020
 ## R
@@ -916,7 +919,6 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 - [How to Use Google Fonts in LaTeX?](https://latexdraw.com/how-to-use-google-fonts-in-latex/)
 - [Presentation-Ready Summary Tables with gtsummary](https://education.rstudio.com/blog/2020/07/gtsummary/)
-- COOL! [How I share knowledge around R Markdown](https://themockup.blog/posts/2020-07-25-meta-rmarkdown/). A meta collection of some R Markdown strategies.
 - COOL! [DAGitty — draw and analyze causal diagrams](http://www.dagitty.net/)
 DAGitty is a browser-based environment for creating, editing, and analyzing causal diagrams (also known as directed acyclic graphs or causal Bayesian networks).
 - [BioC 2020: Where Software and Biology Connect](https://bioc2020.bioconductor.org/workshops)
@@ -960,8 +962,6 @@ purrr::map(
         vroom::vroom,
         otherwise = tibble::tibble())) 
 ```
-- [ggplot2 aesthetic cheatsheet](https://tinyurl.com/y3y8wyap)
-- [Use prismatic with after_scale() for finer control of colors in ggplot2](https://www.hvitfeldt.me/blog/use-prismatic-with-after_scale-for-finer-control-of-colors-in-ggplot2/)
 - [Tests for Pairwise Mean Differences in R](https://timmastny.rbind.io/blog/tests-pairwise-categorical-mean-emmeans-contrast/)
 - COOL! [Five Tidyverse 1.x Tricks You May Not Know About](https://drkeithmcnulty.com/2020/07/16/five-tidyverse-tricks-you-may-not-know-about/)
 - [highcharter](https://jkunst.com/highcharter/)
@@ -993,7 +993,6 @@ Also, see:
 - [Skewness | Definition and its Importance in Data Science](https://fahimahmad.netlify.app/posts/skewness-denifination-and-its-importance-in-data-science/)
 - COOL! [Chapter 8 Process Mining | Rapid R Data Viz Book](https://billster45.github.io/rapid_r_data_vis_book/process-mining.html#what-is-process-mining)
 - COOL! [ISO 8601 and Nanosecond Precision Across Languages](https://nbsoftsolutions.com/blog/iso-8601-and-nanosecond-precision-across-languages)
-- COOL! [ggplot tweaks](https://twitter.com/yutannihilat_en/status/1287402204987396096) or [doc](https://ggplot2.tidyverse.org/reference/scale_colour_continuous.html). Did you know the latest version of ggplot2 allows you to set the default colour/fill scale functions via global options? Since the version was a minor update, there was no release blog post, so you might not notice this big news...
 
 # 23.07.2020
 ## R, куммулятивно
@@ -1019,7 +1018,6 @@ Also, see:
 - [broom 0.7.0](https://www.tidyverse.org/blog/2020/07/broom-0-7-0/). The newest release of broom features many new tidier methods, bug fixes, and improvements to internal consistency.
 - [Downloading files faster by tweaking headers](https://lemire.me/blog/2020/07/17/downloading-files-faster-by-tweaking-headers/). I was given a puzzle recently. Someone was parsing JSON files downloaded from the network from a bioinformati
 - [Importing data from multiple files simulateously in R - Gonzalo García-Castro](https://gongcastro.github.io/2020/07/05/importing-data-from-multiple-files-simulateously-in-r/)
-- [How I make the "Making of" videos](https://karaman.is/blog/2020/07/making-of/). I came across the idea when I saw Cédric’s gif in his tutorial The Evolution of a ggplot (Ep. 1).
 
 - [BinaryEdge Cheatsheet - app.binaryedge.io](https://github.com/balgan/binaryedge-cheatsheet). A list of queries and actions that I repeat over and over again
 - [Interoperability: Getting the Most Out of Your Analytic Investments](https://blog.rstudio.com/2020/07/15/interoperability-maximize-analytic-investments/)
@@ -1115,7 +1113,6 @@ sqrt(2)^2 == 2
 
 # 08.07.2020
 ## R
-- COOL! [ggfree: ggplot2-style plots with just base R graphics](https://github.com/ArtPoon/ggfree)
 - [readODS](https://github.com/chainsawriot/readODS). The only goal of readODS is to enable R to read and write OpenDocument Spreadsheet (ODS) files.
 - COOL! [RcppSimdJSON: Rcpp Bindings for the simdjson Header Library](https://github.com/eddelbuettel/rcppsimdjson)
 - COOL! [Announcing Public Package Manager and v1.1.6](https://blog.rstudio.com/2020/07/01/announcing-public-package-manager/)
@@ -1152,7 +1149,6 @@ Package computes popular and widely used multicollinearity diagnostic measures <
 - COOL! [Learn to style HTML using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)
 - [Install/Load dataui](https://timelyportfolio.github.io/dataui/articles/dataui_replicate_examples.html)
 dataui is currently in pre-alpha state with a potentially unstable API. For now dataui will only live on Github, but CRAN is the ultimate goal.
-- [HOW TO BUILD A TUFTE-STYLE WEATHER GRAPH IN R USING GGPLOT2](https://johndjohnson.info/post/how-to-build-a-tufte-style-weather-graph-in-r-using-ggplot2/)
 - [davidsjoberg/ggstream](https://github.com/davidsjoberg/ggstream). A package to make streamplots
 - [R Bootcamp](https://r-bootcamp.netlify.app/)
 - [“It’s Data, Not Reality”: On Situated Data with Jill Walker Rettberg](https://medium.com/nightingale/its-data-not-reality-on-situated-data-with-jill-walker-rettberg-d27c71b0b451)
@@ -1167,7 +1163,6 @@ dataui is currently in pre-alpha state with a potentially unstable API. For now 
 - [volcano3D](https://katrionagoldmann.github.io/volcano3D/index.html)
 The volcano3D package enables exploration of probes differentially expressed between three groups. Its main purpose is for the visualisation of differentially expressed genes in a three-dimensional volcano plot. These plots can be converted to interactive visualisations using plotly.
 - [Building Shiny apps - an interactive tutorial](https://deanattali.com/blog/building-shiny-apps-tutorial/)
-- COOL! [ggfittext](https://wilkox.org/ggfittext/). ggfittext provides a ggplot2 geom for fitting text into boxes.
 - COOL! [Introduction to summarytools](https://cran.r-project.org/web/packages/summarytools/vignettes/Introduction.html) by Dominic Comtois, 2020-03-02
 
 ## Oracle
@@ -1177,9 +1172,6 @@ The volcano3D package enables exploration of probes differentially expressed bet
 # 29.06.2020
 ## R
 - COOL! [great - simple and scalable statistical modelling in R](https://greta-stats.org/)
-- [New version of my ggplot2 theme reference sheet using mtcars!](https://twitter.com/_isabellamb/status/1269815940629184514?s=20)
-[PDF/PNG](https://isabella-b.com/blog/ggplot2-theme-elements-reference/)
-- [ggplot2 Theme Elements Demonstration](https://henrywang.nl/ggplot2-theme-elements-demonstration/)
 - [Intro to Hugo: The Masterchef of Layouts](https://timmastny.rbind.io/blog/intro-hugo-blogdown-chef/) 2020/06/24
 - [covdata](https://kjhealy.github.io/covdata/) is a data package for R that collects and bundles datasets related to the COVID-19
 - [How to Write Production-Ready R Code: Tools and Patterns](https://appsilon.com/how-to-write-production-ready-r-code/)
@@ -1202,11 +1194,6 @@ https://igraph.org/r/doc/cohesive_blocks.html
 # 26.06.2020
 ## R
 - [bpmn - BPMN diagrams in R](https://bergant.github.io/bpmn/)
-- [Composing ggplot geoms](https://twitter.com/grant_mcdermott/status/1275134627871481856?s=20) A shortcut I like to use is calling multiple geoms in an lapply() call, since this automatically generates a list. Works well for investigating plotting variations, e.g.
-```
-ggplot(diamonds, aes(carat)) +
-  lapply(c(50,200), function(b) geom_histogram(bins=b, alpha=0.3))
-```
 - [RcppSimdJson 0.0.6: New Upstream, New Features!](http://dirk.eddelbuettel.com/blog/2020/06/25/#rcppsimdjson_0.0.6)
 	- AMAZING! [Speed comparison](https://github.com/eddelbuettel/rcppsimdjson/issues/28#issuecomment-655148500)
 - [Hello hordes!](https://colinfay.me/hello-hordes/). Introducing hordes, a module that makes R available from NodeJS.
@@ -1225,7 +1212,6 @@ Cross-platform command-line argument parser written purely in R with no external
 
 # 23.06.2020
 ## R
-- COOL! [giocomai/ganttrify](https://github.com/giocomai/ganttrify). Create beautiful Gantt charts with ggplot2 https://apps.europeandatajournalism.e…
 - COOL! [UPGRADE YOUR WORKFLOW WITH DRAKE](https://mdneuzerling.com/post/upgrade-your-workflow-with-drake/)
 - COOL! [Using SQL in RStudio](https://irene.rbind.io/post/using-sql-in-rstudio/)
 - [goodpress (or badpress?)](https://maelle.github.io/goodpress/index.html). Write to WordPress, from R Markdown, with a modern stack.
@@ -1250,13 +1236,12 @@ Cross-platform command-line argument parser written purely in R with no external
 - Форматирование чисел в R.
 	- `base::format(c(6.0, 13.1), digits = 2, nsmall = 1)`
 	- `scales::label_number(trim = FALSE)(c(6.0, 13.1, -4.4839))`
-- `ggplot::geom_curve`. Красиво делают стрелочки для надписей на графике. [eRum 2020. Tips from an R Journalist](http://www.machlis.com/eRum2020/#17)
 - [The streamgraph pacakge](http://hrbrmstr.github.io/streamgraph/) is an htmlwidget that is based on the D3.js JavaScript library.
 “Streamgraphs are a generalization of stacked area graphs where the baseline is free. By shifting the baseline, it is possible to minimize the change in slope (or wiggle) in individual series, thereby making it easier to perceive the thickness of any given layer across the data. Byron & Wattenberg describe several streamgraph algorithms in ‘Stacked Graphs—Geometry & Aesthetics3’”4
 
 
 # 18.06.2020
-## R
+## R Markdown
 - [RMarkdown. What defines the setup chunk?](https://community.rstudio.com/t/what-defines-the-setup-chunk/27595)
 "There is one chunk name that imbues special behaviour: setup . When you’re in a notebook mode, the chunk named setup will be run automatically once, before any other code is run."
 RStudio tip:
@@ -1268,16 +1253,6 @@ then every time you restart RStudio and execute any code in the middle of your m
 	- R4DS.[27.4.1 Chunk name](https://r4ds.had.co.nz/r-markdown.html#chunk-name)
 	- R Markdown: The Definitive Guide. [3.2.1 Using Notebooks](https://bookdown.org/yihui/rmarkdown/notebook.html#using-notebooks)
 - COOL! [Generate Dynamic R Markdown Blocks](https://stackoverflow.com/questions/21729415/generate-dynamic-r-markdown-blocks)
-- [Changing fonts in ggplot2](https://stackoverflow.com/questions/34522732/changing-fonts-in-ggplot2)
-- [Can't change fonts in ggplot/geom_text](https://stackoverflow.com/questions/14733732/cant-change-fonts-in-ggplot-geom-text)
-You must import the system fonts using the command:
-`font_import(paths = NULL, recursive = TRUE, prompt = TRUE,pattern = NULL)`. If you have a lot of fonts, this solution will take a long time. Use pattern="Times" or something to reduce the number of fonts loaded
-- COOL! [nx10/httpgd](https://github.com/nx10/httpgd). Asynchronous http server graphics device for R.
-- COOL! [Intro to Flexdashboard - with Penguins!](https://samtoet.cool/posts/intro-to-flexdashboard-with-penguins/)
-
-# 17.06.2020
-## R
-- [Logging in R: Why, When, and How](https://mathewanalytics.com/logging-in-r-why-when-and-how/) By Abraham Mathew / June 16, 2020 / data.table, R
 - COOL! [TIL — To create custom html blocks in {rmarkdown}, you can use the shortcut syntax](https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html#block-syntax)
 ```
 ::: {.class #id}
@@ -1285,13 +1260,18 @@ Text
 :::
 ```
 Goodbye <div class ="">
+- COOL! [Intro to Flexdashboard - with Penguins!](https://samtoet.cool/posts/intro-to-flexdashboard-with-penguins/)
+- COOL! [{mdthemes} is on CRAN: markdown powered themes for {ggplot2}](https://thomasadventure.blog/posts/mdthemes-is-on-cran-markdown-powered-themes-for-ggplot2/)
+
+# 17.06.2020
+## R
+- [Logging in R: Why, When, and How](https://mathewanalytics.com/logging-in-r-why-when-and-how/) By Abraham Mathew / June 16, 2020 / data.table, R
+- COOL! [nx10/httpgd](https://github.com/nx10/httpgd). Asynchronous http server graphics device for R.
 - COOL! [MayaGans/shinyBody](https://github.com/MayaGans/shinyBody). An SVG clickable body that can be colored using data and returns the clicked on body part
 - COOL! [brshallo/tidyverse-gifs](https://github.com/brshallo/tidyverse-gifs). Code for using `flair`, `xaringan`, `pagedown`, and `magick` to build gif of steps in a series of piped operations. Example pulled from "Many Models" chapter of "R for Data Science"
-- COOL! [{mdthemes} is on CRAN: markdown powered themes for {ggplot2}](https://thomasadventure.blog/posts/mdthemes-is-on-cran-markdown-powered-themes-for-ggplot2/)
 - [Calculating change from baseline in R](https://thomasadventure.blog/posts/calculating-change-from-baseline-in-r/)
 - [How does the pipe operator actually work?](https://thomasadventure.blog/posts/how-does-the-pipe-operator-actually-work/)
 - [How can I make R maintain utf8 encodings?](https://stackoverflow.com/questions/58606489/how-can-i-make-r-maintain-utf8-encodings)
-- [Allow hms object in breaks argument to scale_*_date {closed}](https://github.com/tidyverse/ggplot2/issues/2894)
 
 ## DS
 - [Actionable Insights: The Missing Link Between Data And Business Value](https://www.forbes.com/sites/brentdykes/2016/04/26/actionable-insights-the-missing-link-between-data-and-business-value/#e5b533c51e57)
@@ -1327,8 +1307,6 @@ Goodbye <div class ="">
 # 10.06.2020
 ## R
 - [15 Tips on Making Better Use of R Markdown](https://slides.yihui.org/2019-dahshu-rmarkdown#1) Yihui Xie, RStudio
-- [ggplot2 3.3.0](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/)
-- COOL! [A Summer of RStudio and ggplot2](https://education.rstudio.com/blog/2019/10/a-summer-of-rstudio-and-ggplot2/) by Dewey Dunnington
 - [embed 0.1.0](https://www.tidyverse.org/blog/2020/06/embed-0-1-0/)
 - [pluralize: Pluralize and 'Singularize' Any (English) Word](https://cran.r-project.org/web/packages/pluralize/index.html)
 Tools are provided to create plural, singular and regular forms of English words along with tools to augment the built-in rules to fit specialized needs. Core functionality is based on a JavaScript library, <https://github.com/blakeembrey/pluralize>.
@@ -1339,7 +1317,6 @@ Tools are provided to create plural, singular and regular forms of English words
 
 # 09.06.2020
 ## R
-- COOL! [The Evolution of a ggplot (Ep. 1)](https://cedricscherer.netlify.app/2019/05/17/the-evolution-of-a-ggplot-ep.-1/) Posted by Cédric on Friday, May 17, 2019
 - COOL! [Scrollytelling with GSAP ScrollTrigger](https://www.williamrchase.com/post/scrollytelling-with-gsap-scrolltrigger/)
 - COOL! [allisonhorst/penguins](https://github.com/allisonhorst/penguins). A great intro dataset for data exploration & visualization (alternative to iris).
 - COOL! [Improved Clipping in the R Graphics Engine](https://www.stat.auckland.ac.nz/~paul/Reports/GraphicsEngine/r-clipping/r-clipping.html)
@@ -1365,9 +1342,6 @@ Global String pool
 
 # 03.06.2020
 ## R
-- [A List of ggplot2 extensions](https://exts.ggplot2.tidyverse.org/)
-This site tracks and lists ggplot2 extensions developed by R users in the community.
-The aim is to make it easy for R users to find developed extensions.
 - COOL! [Effectively Deploying and Scaling Shiny Apps with ShinyProxy, Traefik and Docker Swarm](https://www.databentobox.com/2020/05/31/shinyproxy-with-docker-swarm/)
 - COOL! [Deploying R Shiny apps using ShinyProxy on Windows 10](https://www.databentobox.com/2019/11/05/deploy-r-app-with-shinyproxy/)
 - [Using plyr::mapvalues with dplyr](https://stackoverflow.com/questions/28013652/using-plyrmapvalues-with-dplyr)
@@ -1615,8 +1589,6 @@ The goal of datadrivencv is to ease the burden of maintaining a CV by separating
 # 20.05.2020
 ## R
 - Max Kuhn @topepos. All of the analysis R code for our Feature Engineering and Selection book is now [on GitHub at](https://github.com/topepo/FES)
-- COOL! [ggparty](https://github.com/martin-borkovec/ggparty) ggplot2 visualizations for the partykit package.
-- [ggparty: Graphic Partying](https://cran.r-project.org/web/packages/ggparty/vignettes/ggparty-graphic-partying.html) ggparty aims to extend ggplot2 functionality to the partykit package. It provides the necessary tools to create clearly structured and highly customizable visualizations for tree-objects of the class 'party'.
 
 # 17.05.2020
 ## Rconf 2020
@@ -1645,14 +1617,6 @@ The goal of datadrivencv is to ease the burden of maintaining a CV by separating
 What Information Gain and Information Entropy are and how they're used to train Decision Trees.
 
 ## R
-- COOL! [Altair: Declarative Visualization in Python](https://altair-viz.github.io/)
-	- [vegawidget](https://vegawidget.github.io/vegawidget/index.html)
-The goal of vegawidget is to render Vega-Lite and Vega specifications as htmlwidgets, and to provide you a means to communicate with a Vega chart using JavaScript or Shiny.
-	- [ggvega](https://vegawidget.github.io/ggvega/)
-The goal of ggvega is to translate a ggplot2 object to a Vega-Lite specification.
-	- [vlbuildr](https://vegawidget.github.io/vlbuildr/index.html)
-The goal of vlbuildr is to provide an R api for building up vega-lite specs.
-- [erocoar/gghalves](https://github.com/erocoar/gghalves). Easy half-half geoms in ggplot2 https://erocoar.github.io/gghalves/
 - COOL! [Speed up your R scripts. A cool optimized way to load, write and store big data frames with FST package!](https://typethepipe.com/vizs-and-tips/speed-up-load-write-files-fst-package-r/)
 - COOL! [My Data Science Notes](https://bookdown.org/mpfoley1973/data-sci/) by Michael Foley, 2020-03-31
 
@@ -1680,7 +1644,6 @@ purrr::map(
 ```
 - [progressr: A Inclusive, Unifying API for Progress Updates](https://github.com/HenrikBengtsson/progressr)
 The progressr package provides a minimal API for reporting progress updates in R. The design is to separate the representation of progress updates from how they are presented. What type of progress to signal is controlled by the developer. How these progress updates are rendered is controlled by the end user. For instance, some users may prefer visual feedback such as a horizontal progress bar in the terminal, whereas others may prefer auditory feedback.
-- [How to Make Animated Histograms in R, with ggplot and gganimate](https://flowingdata.com/2020/05/13/animated-histograms-ggplot-gganimate/)
 - Интересный проект. [nathaneastwood/poorman](https://github.com/nathaneastwood/poorman/). A copy of dplyr verbs using only base R https://nathaneastwood.github.io/tags…
 
 ## DS
@@ -1692,10 +1655,7 @@ The progressr package provides a minimal API for reporting progress updates in R
 - write your own `str()`.
 Miles McBain: Have you tried t(head(df))? I use it all the time. Also a console-ranger.
 Noam Ross: I use as.yaml for lists sometimes
-- [ggtext: Improved text rendering support for ggplot2](https://wilkelab.org/ggtext/)
-This package provides rich-text (basic HTML and Markdown) support for ggplot2. Rich text can be used in plot annotations (plot titles, subtitles, captions, axis labels, legends, etc.) and to visualize textual data, as one would normally do with geom_text().
 - [Choosing the Correct Statistical Test](https://www.datasciencecentral.com/profiles/blogs/choosing-the-correct-statistical-test)
-- [The ggplot2 extension gallery now lives at https://exts.ggplot2.tidyverse.org](https://exts.ggplot2.tidyverse.org). Please update your bookmarks. The old link is no longer safe to visit.
 - COOL! [progressr: A Inclusive, Unifying API for Progress Updates](https://github.com/HenrikBengtsson/progressr)
 
 ## DS
@@ -1747,11 +1707,7 @@ Graceful ‘ggplot’-based graphics and utility functions for working with gene
 	- [kableExtra::column_spec() - i know this one!](https://github.com/sharlagelfand/twofunctionsmostdays/tree/master/2020/04/21)
 	- [gt::tab_style() - i know this one!](https://github.com/sharlagelfand/twofunctionsmostdays/tree/master/2020/05/13)
 - [ewenme/ghibli](https://github.com/ewenme/ghibli). Studio Ghibli colour palettes https://ewenme.github.io/ghibli
-- Thomas Lin Pedersen ggplot2 workshop.
-	- [ggplot2 workshop part 1](https://www.youtube.com/watch?v=h29g21z0a68&feature=youtu.be).
-	- [ggplot2 workshop part 2](https://www.youtube.com/watch?v=0m4yywqNPVY&feature=youtu.be)
 - [Causal Inference cheat sheet for data scientists](http://nc233.com/2020/04/causal-inference-cheat-sheet-for-data-scientists/)
-- COOL! [thematic](https://rstudio.github.io/thematic/). Unified and automatic theming of ggplot2, lattice, and base R graphics.
 - [fortunes: R Fortunes](https://cran.r-project.org/web/packages/fortunes/index.html) A collection of fortunes from the R community.
 - COOL! [Grid sytem for shiny apps or rmarkdown document, mainly to create htmlwidgets matrix. R interface for grillade from KNACSS.](https://dreamrs.github.io/grillade/)
 
@@ -1765,10 +1721,6 @@ Pre-commit hooks are tests that run each time you attempt to commit. If the test
 ​## web
 - COOL! [HTML Nuggets: Little bits that you may have forgotten, never learned, never realised, or ignored!](https://dev.to/robole/html-nuggets-little-bits-that-you-may-have-forgotten-never-learned-never-realised-or-ignored-5d2e#optimize-lazy-loading-of-images-and-iframes-with-raw-loading-endraw-attribute)
 
-# 26.04.2020
-## R
-- COOL! [Vertical intervals: lines, crossbars & errorbars](https://ggplot2.tidyverse.org/reference/geom_linerange.html)
-
 # 22.04.2020
 ## R
 - COOL! [Automating R package checks across platforms with GitHub Actions and Docker in a portable way](https://jozef.io/r922-github-actions-r-packages/)
@@ -1780,7 +1732,6 @@ Pre-commit hooks are tests that run each time you attempt to commit. If the test
 - COOL! [How to showcase CSS+JS+HTML snippets with Hugo?](https://masalmon.eu/2020/04/21/css-snippet/)
 - [The Case for tidymodels](https://rviews.rstudio.com/2020/04/21/the-case-for-tidymodels/), 2020-04-21 by Joseph Rickert
 - [HOW TO CHECK IF GROCERIES ARE IN STOCK AND AUTOMATICALLY BUY THEM WITH R](http://theautomatic.net/2020/04/21/make-your-amazon-purchases-with-r/)
-- [Easy ggplot2 Theme customization with {ggeasy}](https://www.programmingwithr.com/easy-ggplot2-theme-customization-with-ggeasy/)
 - [Recreating a Shiny App with Flask](https://www.jumpingrivers.com/blog/r-shiny-python-flask/)
 
 
@@ -2128,7 +2079,6 @@ DBI::dbDisconnect(conn)
 ## R
 - COOL! [Auto Encoders for Anomaly Detection in Predictive Maintenance](https://iamnagdev.wordpress.com/2020/03/05/auto-encoders-for-anomaly-detection-in-predictive-maintenance/)
 - COOL! [The 9 concepts and formulas in probability that every data scientist should know](https://www.statsandr.com/blog/the-9-concepts-and-formulas-in-probability-that-every-data-scientist-should-know/)
-- COOL! [ggplot2 3.3.0](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/)
 - COOL! [ipaddress](https://davidchall.github.io/ipaddress/). This package provides classes for working with IP addresses, inspired by the Python ipaddress module.
 - [Multiple inheritance for R6 classes](https://stackoverflow.com/questions/35414576/multiple-inheritance-for-r6-classes)
 - ROracle
@@ -2151,15 +2101,9 @@ DBI::dbDisconnect(conn)
 - [Genomic analysis of COVID-19 spread. Situation report.](https://nextstrain.org/narratives/ncov/sit-rep/2020-03-04)
 - COOL! Совет от Jenny. [andrie/gcalendr](https://github.com/andrie/gcalendr). R package to read events from google calendar https://andrie.github.io/gcalendr/
 - COOL! [Bayes’ theorem in three panels](https://www.tjmahr.com/bayes-theorem-in-three-panels/)
-- Повтор. [blogR on Svbtle](https://drsimonj.svbtle.com/)
-	- [Label line ends in time series with ggplot2](https://drsimonj.svbtle.com/label-line-ends-in-time-series-with-ggplot2)
-- Делаем вторую ось для дискрета
-	- [Duplicating (and modifying) discrete axis in ggplot2](https://stackoverflow.com/questions/48964760/duplicating-discrete-x-axis-for-ggplot)
-	- [Duplicating discrete x-axis for ggplot {duplicate}](https://stackoverflow.com/questions/45361904/duplicating-and-modifying-discrete-axis-in-ggplot2)
 - data.table
 	- [JOINing data in R using data.table](https://rstudio-pubs-static.s3.amazonaws.com/52230_5ae0d25125b544caab32f75f0360e775.html)
 	- [How to perform merges (joins) on two or more data frames with base R, tidyverse and data.table](https://jozef.io/r006-merge/)
-
 
 # 04.03.2020
 ## R
@@ -2333,13 +2277,8 @@ It gives a graphical user interface that allows you to implement exploratory mul
 
 ## R
 - нюансы `future`. В частности, изменение в 1.4.8 (2020-02-04). [CONSISTENCY: %dopar% with doSEQ should evaluate expression in `local()` environment #3](https://github.com/RevolutionAnalytics/foreach/issues/3)
-- Интересно. [Formula Interface for ggplot2](https://cran.r-project.org/web/packages/ggformula/vignettes/ggformula.html)
-- Отображение функций в ggplot
-	- [Compute function for each x value](https://ggplot2.tidyverse.org/reference/stat_function.html)
-	- [Draw function without data in ggplot2](https://kohske.wordpress.com/2010/12/25/draw-function-without-data-in-ggplot2/)
 - [raster: Geographic Data Analysis and Modeling](https://cran.r-project.org/web/packages/raster/index.html)
 Reading, writing, manipulating, analyzing and modeling of gridded spatial data. The package implements basic and high-level functions. Processing of very large files is supported. There is a also support for vector data operations such as intersections. See the manual and tutorials on <https://rspatial.org/> to get started.
-- [trelliscopejs](https://hafen.github.io/trelliscopejs/). Trelliscope is a scalable, flexible, interactive approach to visualizing data.
 - [rich-iannone/DiagrammeR](https://github.com/rich-iannone/DiagrammeR). Graph and network visualization using tabular data in R. http://visualizers.co/diagrammer/
 
 # 07.02.2020
@@ -2503,12 +2442,9 @@ Generates version 2 and version 4 request signatures for Amazon Web Services ('A
 
 # 15.01.2020
 ## R
-- COOL! [ggrough is an R package that converts your ggplot2 plots to rough/sketchy charts, using the excellent javascript roughjs library.](https://xvrdm.github.io/ggrough/)
-- [yixuan/showtext](https://github.com/yixuan/showtext). Using Fonts More Easily in R Graphs
 - [showtext: Using Fonts More Easily in R Graphs](https://cran.rstudio.com/web/packages/showtext/vignettes/introduction.html)
 - [rfoaas 2.1.0: New upstream so new access point!](http://dirk.eddelbuettel.com/blog/2020/01/09/#rfoaas_2.1.0)
 	- [FOAAS (Fuck Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fuck off.](https://www.foaas.com/)
-- COOL! [BUILDING COLOR PALETTE PROOFS OF CONCEPT WITH PURRR AND GGPLOT2](https://data-chronicler.netlify.com/2020/01/08/2019-12-30-building-color-palette-proof-of-concepts-with-purrr-and-ggplot2/)
 - COOL! [Custom Templated as and wrap Functions within Rcpp](https://gallery.rcpp.org/articles/custom-templated-wrap-and-as-for-seamingless-interfaces/)
 - [an elegant sampler](https://xianblog.wordpress.com/2020/01/15/an-elegant-sampler/)
 
@@ -2544,15 +2480,7 @@ Generates version 2 and version 4 request signatures for Amazon Web Services ('A
 - [MAPPLY AND MAP IN R](http://theautomatic.net/2019/12/30/mapply-and-map-in-r/)
 - [correlationfunnel](https://business-science.github.io/correlationfunnel/) by Business Science
 The goal of correlationfunnel is to speed up Exploratory Data Analysis (EDA). Here’s how to use it.
-- COOL! [Data exploration with alluvial plots - An introduction to easyalluvial](https://www.datisticsblog.com/2018/10/intro_easyalluvial/)
-- COOL! [Visualising Model Response with easyalluvial](https://www.datisticsblog.com/2019/04/visualising-model-response-with-easyalluvial/)
 - [Find Insights with Ranked Cross-Correlations](https://datascienceplus.com/find-insights-with-ranked-cross-correlations/)
-- COOL! [erblast/easyalluvial](https://github.com/erblast/easyalluvial) create alluvial plots with a single line of code
-- [parcats](https://erblast.github.io/parcats/index.html).
-Create ‘plotly.js’ Parallel Categories Diagrams Using this Htmlwidget and ‘easyalluvial’
-Complex graphical representations of data are best explored using interactive elements. ‘parcats’ adds interactive graphing capabilities to the ‘easyalluvial’ package. The ‘plotly.js’ parallel categories diagrams offer a good framework for creating interactive flow graphs that allow manual drag and drop sorting of dimensions and categories, highlighting single flows and displaying mouse over information. The ‘plotly.js’ dependency is quite heavy and therefore is outsourced into a separate package.
-- [easyalluvial: Generate Alluvial Plots with a Single Line of Code](https://cran.r-project.org/web/packages/easyalluvial/index.html)
-Alluvial plots are similar to sankey diagrams and visualise categorical data over multiple dimensions as flows. (Rosvall M, Bergstrom CT (2010) Mapping Change in Large Networks. PLoS ONE 5(1): e8694. <doi:10.1371/journal.pone.0008694> Their graphical grammar however is a bit more complex then that of a regular x/y plots. The 'ggalluvial' package made a great job of translating that grammar into 'ggplot2' syntax and gives you many options to tweak the appearance of an alluvial plot, however there still remains a multi-layered complexity that makes it difficult to use 'ggalluvial' for explorative data analysis. 'easyalluvial' provides a simple interface to this package that allows you to produce a decent alluvial plot from any dataframe in either long or wide format from a single line of code while also handling continuous data. It is meant to allow a quick visualisation of entire dataframes with a focus on different colouring options that can make alluvial plots a great tool for data exploration.
 
 
 # 27.12.2019
@@ -2587,7 +2515,6 @@ Like similar profiling tools, the 'proffer' package automatically detects source
 - [Why to try Practical Data Science with R, 2nd Edition](http://www.win-vector.com/blog/2019/12/why-to-try-practical-data-science-with-r-2nd-edition/)
 - [Analysing large data on your laptop with a database and R](http://freerangestats.info/blog/2019/12/22/nyc-taxis-sql)
 - [mlr receives Open Source Machine Learning Project Award](https://mlr-org.com/docs/mlr-wins-open-source-machine-learning-software-award/)
-- [The Hitchhiker's Guide to Ggplot2 + The Hitchhiker's Guide to Plotnine](https://pacha.hk/blog/2019/12/21/the-hitchhikers-guide-to-ggplot2---the-hitchhikers-guide-to-plotnine/)
 - ['dockr': easy containerization for R](http://smaakage85.netlify.com/2019/12/21/dockr-easy-containerization-for-r/)
 - [reticulate 1.14](https://blog.rstudio.com/2019/12/20/reticulate-1-14/)
 - [Base Graphics – The “Drunk Uncle”  of R ?](https://rollingyours.wordpress.com/2019/12/19/base-graphics-the-drunk-uncle-of-r/)
@@ -2733,7 +2660,7 @@ as.party(fit)
 - [How to easily make a ROC curve in R](https://intobioinformatics.wordpress.com/2019/11/26/how-to-easily-make-a-roc-curve-in-r/)
 - [Cannot find function Split_by in R in purrr package](https://stackoverflow.com/questions/46610800/cannot-find-function-split-by-in-r-in-purrr-package)
 - [R Exploratory Analysis with ggpairs](http://timothykylethomas.me/ggpairs.html) by Kyle Thomas
-- COOL! [R Tips: How to force the Y Axis breaks in ggplot2 to be integers from Stack Overflow: How to display only integer values on an axis using ggplot2](http://rolandtanglao.com/2018/04/30/p1-how-to-force-y-axis-breaks-to-be-integers-in-ggplot2/)
+
 
 ## time-series
 - [Reintroducing tsibble: data tools that melt the clock](https://blog.earo.me/2018/12/20/reintro-tsibble/)
@@ -2753,7 +2680,6 @@ A cube tbl stores data in a compact array format where dimension names are not n
 - [Bayesian Power Analysis with `data.table`, `tidyverse`, and `brms`](https://tysonbarrett.com//jekyll/update/2019/07/21/BayesianSims/)
 - COOL! Learning [Fast and Readable 'If Else' in R](https://tysonbarrett.com/jekyll/update/2019/10/16/filter_mutate_keep/)
 This shows that the new `data.table::fifelse()` is incredibly quick while the filter-mutate-keep approach is also very fast. In most data situations, it is unlikely to matter much. Even with 1,000,000 rows and 5 variables, all only differed by a bit.
-- COOL! Learning [malcolmbarrett/designing.ggplots](https://github.com/malcolmbarrett/designing.ggplots). Install Workshop Materials for Designing ggplots
 - [setTimeLimit](https://www.rdocumentation.org/packages/base/versions/3.6.1/topics/setTimeLimit). Set CPU And/Or Elapsed Time Limits
 Functions to set CPU and/or elapsed time limits for top-level computations or the current session.
 - [How does setTimeLimit work in R?](https://stackoverflow.com/questions/7903497/how-does-settimelimit-work-in-r)
@@ -2777,7 +2703,6 @@ Orange %>%
 - [broom: a package for tidying statistical models into data frames](http://varianceexplained.org/r/broom-intro/)
 
 ## R
-- [ggplot: How to create a discrete color palette that fits the data automatically?](https://stackoverflow.com/questions/13995296/ggplot-how-to-create-a-discrete-color-palette-that-fits-the-data-automatically)
 - [For datasets with many columns, skimr v2 does not behave as documented {#376}](https://github.com/ropensci/skimr/issues/376)
 - [QUICK GUIDE: INTERPRETING SIMPLE LINEAR MODEL OUTPUT IN R](https://feliperego.github.io/blog/2015/10/23/Interpreting-Model-Output-In-R)
 - [Interpret R Linear/Multiple Regression output (lm output point by point), also with Python](https://medium.com/@vineetjaiswal/interpret-r-linear-multiple-regression-output-lm-output-point-by-point-also-with-python-8e53b2ee2a40)
@@ -2840,7 +2765,6 @@ In general, to interpret a (linear) model involves the following steps.
 - [farver](https://farver.data-imaginist.com/index.html)
 The goal of farver is to provide very fast, vectorised functions for conversion of colours between different colour spaces, colour comparisons (distance between colours), encoding/decoding, and channel manipulation in colour strings. To this end it provides an interface to a modified version of the ColorSpace C++ library developed by Berendea Nicolae.
 - [ymlthis: write YAML for R Markdown, bookdown, blogdown, and more](https://ymlthis.r-lib.org/index.html)
-- [clauswilke/ggtextures](https://github.com/clauswilke/ggtextures). Drawing textured rectangles and bars with ggplot
 - [reading in data](https://kieranhealy.org/blog/archives/2019/11/09/reading-in-data/)
 - [Tidyverse evolutions: curly-curly operator and pivoting (feat. tidytuesday data & leaflet visuals)](https://heads0rtai1s.github.io/2019/11/07/tidy-curly-pivot-leaflet/)
 - [rstudio-education/remaster-the-tidyverse](https://github.com/rstudio-education/remaster-the-tidyverse). This is a planning repository where I develop Tidyverse-related workshops.
@@ -2848,9 +2772,6 @@ The goal of farver is to provide very fast, vectorised functions for conversion 
 - [Using GitHub HTTPS Credentials in WSL 2](https://blog.anaisbetts.org/using-github-credentials-in-wsl2/)
 - [Variational convnets with tfprobability](https://blogs.rstudio.com/tensorflow/posts/2019-11-13-variational-convnet/)
 - [Regex with non-capturing group using stringr in R](https://stackoverflow.com/questions/36237627/regex-with-non-capturing-group-using-stringr-in-r)
-
-## ggplot
-- [Align axis label on the right with ggplot2](https://stackoverflow.com/questions/37488075/align-axis-label-on-the-right-with-ggplot2)
 
 # 12.11.2019
 ## R
@@ -2868,11 +2789,7 @@ nycflights13::flights %>%
 ## R
 - [Using Spark from R for performance with arbitrary code - Part 4 - Using the lower-level invoke API to manipulate Spark's Java objects from R](https://jozef.io/r204-spark-r-invoke-scala/)
 - [future 1.15.0 - Lazy Futures are Now Launched if Queried](https://www.jottr.org/2019/11/09/resolved-launches-lazy-futures/)
-- COOL! [JohnCoene/grapher](https://github.com/JohnCoene/grapher). ✍️ Interactive graphs https://grapher.network
-- COOL! [How to change facet labels?](https://stackoverflow.com/questions/3472980/how-to-change-facet-labels)
-- [Construct labelling specification](https://ggplot2.tidyverse.org/reference/labeller.html)
 - [htmlwidgets for R. Widget sizing](htmlwidgets.org/develop_sizing.html)
-- [Different ways to set figure size in RMarkdown](https://sebastiansauer.github.io/figure_sizing_knitr/)
 
 # 07.11.2019
 ## R
@@ -3031,7 +2948,6 @@ https://packages.microsoft.com/repos/microsoft-debian-stretch-prod/dists/stretch
 - [Exporting editable plots from R to Powerpoint: making ggplot2 purrr with officer](https://www.brodrigues.co/blog/2018-10-05-ggplot2_purrr_officer/)
 - [Create an editable graph from R software](http://www.sthda.com/english/wiki/create-an-editable-graph-from-r-software)
 - [Create editable Microsoft Office charts from R](https://blog.revolutionanalytics.com/2017/10/office-charts.html)
-- Learning. [HOW TO SAVE A GGPLOT](https://www.datanovia.com/en/blog/how-to-save-a-ggplot/)
 - DataExplorer Error!!! [File d3.min.js not found in resource path Error: pandoc document conversion failed with error 99 #116 {Open}](https://github.com/boxuancui/DataExplorer/issues/116)
 
 
@@ -3085,7 +3001,6 @@ knitr::opts_chunk$set(error = TRUE)
 
 # 15.10.2019
 ## R
-- [Making a background color gradient in ggplot2](https://aosmith.rbind.io/2019/10/14/background-color_gradient/)
 - [Learn How to Dockerize a ShinyApp in 7 Steps](https://www.bjoern-hartmann.de/post/learn-how-to-dockerize-a-shinyapp-in-7-steps/). Jun 18, 2018
 
 # Apache routes
@@ -3105,8 +3020,6 @@ knitr::opts_chunk$set(error = TRUE)
 - [Convert Mercurial project to Git {duplicate}](https://stackoverflow.com/questions/16037787/convert-mercurial-project-to-git)
 
 ## R
-- Learning. Интересные примеры. [Data Visualization with ggplot2 (Part 1) - Chapter 4 and 5](https://rpubs.com/williamsurles/294957)
-- Условное форматирование меток в ggplot. [How to put ggplot2 ticks labels between dollars?](http://stackoverflow.com/questions/20326946/how-to-put-ggplot2-ticks-labels-between-dollars)
 - [Cluster multiple time series using K-means](https://www.brodrigues.co/blog/2019-10-12-cluster_ts/)
 - [#FunDataFriday - gTrendsR](https://www.littlemissdata.com/fdf/gtrendsr)
 
@@ -3182,7 +3095,6 @@ Posted on October 3, 2019
 
 # 01.10.2019
 ## R
-- [gghalves](https://cran.r-project.org/web/packages/gghalves/readme/README.html) makes it easy to compose your own half-half plots via ggplot2. Think displaying a boxplot next to jittered points, or violin plots side by side with dotplots.
 - [The 'see' package: beautiful figures for easystats](https://easystats.github.io/blog/posts/see_presentation.knit/)
 - [easystats posts](https://easystats.github.io/blog/posts/)
 - [easystats](https://github.com/easystats). Make R stats easy! https://easystats.github.io/blog/
@@ -3262,7 +3174,6 @@ and then to make sure that is has gone.
 
 # 26.09.2019
 ## R
-- COOL! [ggpage](https://emilhvitfeldt.github.io/ggpage/). ggpage is a package to create pagestyled visualizations of text based data. It uses ggplot2 and final returns are ggplot2 objects
 - [Vis Example of using `tidyr::hoist()`](https://gist.github.com/batpigandme/048c6eecd04d4d1f32d7b97e5a8b437b).
 - [Jim Hester blog. Software Engineer. RStudio](https://www.jimhester.com/). I am a Software Engineer at RStudio, where I work on Hadley Wickham’s team developing open source R packages for the tidyverse and r-lib projects. I use my knowledge of R, C++ and other languages to build useful, correct, and performant R packages.
 - [edwindj/daff](https://github.com/edwindj/daff). Diff, patch and merge for data.frames, see http://paulfitz.github.io/daff/
@@ -3329,8 +3240,7 @@ install.packages(c(
       , "lumberjack")
   , dependencies=TRUE)
 ```
-- COOL! [wilkelab/ungeviz](https://github.com/wilkelab/ungeviz). Tools for visualizing uncertainty with ggplot2
-- COOL! [Practical ggplot2](https://wilkelab.org/practicalgg/)
+
 
 ## DS
 - [Dr. Noam Ross, A New Website](https://www.noamross.net/2019/08/09/a-new-website/). My [CV](https://www.noamross.net/vitae/) is generated from data on [ORCiD](https://orcid.org/) using the [rorcid](https://github.com/ropensci/rorcid) package.
@@ -3407,12 +3317,9 @@ slide provides a family of general purpose “sliding window” functions. The A
 ## R
 - COOL! Learning. Новый tidyr. [Pivoting data from columns to rows (and back!) in the tidyverse](http://www.storybench.org/pivoting-data-from-columns-to-rows-and-back-in-the-tidyverse/)
 - [patrickshox/Mojave-Dark-RStudio-Theme](https://github.com/patrickshox/Mojave-Dark-RStudio-Theme). A Dark RStudio Theme inspired by Apple's dark aestheticcc.
-- ggplot
-	- [log-scale Breaks Are Not Always Useful #100 {Closed}](https://github.com/r-lib/scales/issues/100)
-	- [No legend with trans = log10 for certain fill/color values #2295 {Closed}]
 - CELONIS: [PADAS: Process Aware Data Suite](https://www.win.tue.nl/~egonzale/projects/padas/)
 - [Automatic differentiation in pqR](https://radfordneal.wordpress.com/2019/07/06/automatic-differentiation-in-pqr/#more-2588)
-- COOL! [Using ggplot2 for functional time series](https://robjhyndman.com/hyndsight/ftsviz/)
+
 
 
 ## ML
@@ -3500,10 +3407,8 @@ Interface to the 'Google Maps' APIs: (1) routing directions based on the 'Direct
 - COOL! [skimr: how to remove histogram?](https://stackoverflow.com/questions/51340323/skimr-how-to-remove-histogram).
 - [skimr. Specify your own statistics and classes](https://github.com/ropensci/skimr)
 Users can specify their own statistics using a list combined with the skim_with() function. This can support any named class found in your data.
-- [An updated version of The Hitchhiker's Guide to Ggplot2](https://pacha.hk/blog/2019/09/08/an-updated-version-of-the-hitchhikers-guide-to-ggplot2/)
-	- [The Hitchhiker's Guide to Ggplot2](https://leanpub.com/hitchhikers_ggplot2)
 - [First World Problems: Very long RMarkdown documents](https://martinctc.github.io/blog/first-world-problems-very-long-rmarkdown-documents/)
-- COOL! [Calendar Heatmaps in ggplot](https://ryanplant.netlify.com/post/calendar-heatmaps-in-ggplot/)
+
 
 
 # 06.09.2019
@@ -3564,7 +3469,6 @@ Users can specify their own statistics using a list combined with the skim_with(
 ## R
 - [Gaston Sanchez](https://www.gastonsanchez.com/)
 I'm a statistician, data scientist, and lecturer in the Department of Statistics, at UC Berkeley.
-- [ggplot2. the R Graph Gallery](http://r-graph-gallery.com/ggplot2-package.html)
 - Интересная статья с обширной визуализацией результатов [Studying Politics on and with Wikipedia](https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/studying-politics-wikipedia/)
 - COOL! [r-lib/fastmap](https://github.com/r-lib/fastmap). Fast map implementation for R https://r-lib.github.io/fastmap/
 - [Generating Random Strings](https://stackoverflow.com/questions/42734547/generating-random-strings)
@@ -3619,29 +3523,10 @@ temp_tbl <- transact_tbl %>%
   group_by(bp_pattern, bp_tag) %>%
   dplyr::sample_n(min(5, n()))
 ```
-- решаем проблемы со шрифтами в R в windows
-	- [Error in grid.Call(L_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : Polygon edge not found](https://stackoverflow.com/questions/10581440/error-in-grid-calll-textbounds-as-graphicsannotxlabel-xx-xy-polygon)
-	- [Ggplot2: Fonts and cross-platform reproducibility](https://community.rstudio.com/t/ggplot2-fonts-and-cross-platform-reproducibility/3565)
-```
-loadfonts(dev="win")
-windowsFonts()
-```
+
 - [Introducing data_algebra](http://www.win-vector.com/blog/2019/08/introducing-data_algebra/)
 - [Polished - Modern Authentication for Shiny](https://www.tychobra.com/posts/2019_08_27_announcing_polished/) by Andy Merlino and Peter Myers
 - COOL! [Maximum likelihood estimation from scratch](https://alemorales.info/post/mle-nonlinear/)
-
-## ggplot
-- [Force R to stop plotting abbreviated axis labels - e.g. 1e+00 in ggplot2](https://stackoverflow.com/questions/14563989/force-r-to-stop-plotting-abbreviated-axis-labels-e-g-1e00-in-ggplot2). Интересное возможное решение
-```
- # Did you try something like :
-options(scipen=10000)
- # before plotting ?
-```
-- [Forcing a 1e3 instead of 1000 format in ggplot R](https://stackoverflow.com/questions/18600115/forcing-a-1e3-instead-of-1000-format-in-ggplot-r/18600721#18600721)
-`scales::math_format`
-- [Axes (ggplot2)](http://www.cookbook-r.com/Graphs/Axes_(ggplot2)/)
-- [ggplot2 Tutor](https://rpubs.com/KamleshJha/ggplot)
-
 
 # 27.08.2019
 ## R
@@ -3718,7 +3603,7 @@ This is the new home for experimental binaries and documentation related to R fo
 # 06.08.2019
 ## R
 - [Bayes models for estimation in stepped-wedge trials with non-trivial ICC patterns](https://www.rdatagen.net/post/bayes-model-to-estimate-stepped-wedge-trial-with-non-trivial-icc-structure/)
-- [How to keep ggplot font size constant when varying figure width](https://tex.stackexchange.com/questions/145745/how-to-keep-ggplot-font-size-constant-when-varying-figure-width)
+
 
 # 05.08.2019
 ## R
@@ -3841,7 +3726,6 @@ Installation
 - [Markdown comments syntax: Comments that won’t appear in generated output](https://alvinalexander.com/technology/markdown-comments-syntax-not-in-generated-output)
 - [I didn't mean() to ignore the median()](https://ibecav.netlify.com/post/i-didn-t-mean-to-ignore-the-median/)
 - COOL! [Using Linear Regression for Predictive Modeling in R](https://www.dataquest.io/blog/statistical-learning-for-predictive-modeling-r/)
-- COOL! [How to plot fitted lines with ggplot2](https://aosmith.rbind.io/2018/11/16/plot-fitted-lines/)
 - [Introduction to data.table](http://rpubs.com/kykimeng/intro-to-data-table)
 
 
@@ -3931,7 +3815,6 @@ Browse thousands of pre-made icons and templates from more than 30 fields of lif
 - [jbryer/likert](https://github.com/jbryer/likert). Package to analyze likert based items.
 - Конвертация строк. [Convert case of a string](https://stringr.tidyverse.org/reference/case.html). `str_to_title`, `stri_trans_totitle`
 - [ceramic](https://hypertidy.github.io/ceramic/). The goal of ceramic is to obtain web map tiles. Use a spatial object to define the region of interest.
-- [Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2](https://cran.r-project.org/web/packages/ggsci/vignettes/ggsci.html)
 - [Faster Gridding In R](http://tkelly.org/2019/07/faster-gridding-in-r/)
 - [BEAUTIFULSOUP VS. RVEST](http://theautomatic.net/2019/07/23/beautifulsoup-vs-rvest/)
 - [Process Mining in 10 minutes with R](https://medium.com/@gscheithauer/process-mining-in-10-minutes-with-r-1ab28ed74e81)
@@ -4083,33 +3966,6 @@ A collection of tools that support data diagnosis, exploration, and transformati
 - [More on those stepped-wedge design assumptions: varying intra-cluster correlations over time](https://www.rdatagen.net/post/varying-intra-cluster-correlations-over-time/)
 - [The R console is in my native language, how can I set R to English?](https://stackoverflow.com/questions/12760491/the-r-console-is-in-my-native-language-how-can-i-set-r-to-english/30826542). First, go to the etc folder under R program files folder. Then locate Rconsole file. Find the line language =, change it to language = en if you want to run R in English.
 
-## ggplot
-- COOL! [hrbrmstr/ggalt](https://github.com/hrbrmstr/ggalt). 🌎 Extra Coordinate Systems, Geoms, Statistical Transformations & Scales for 'ggplot2' https://cran.r-project.org/web/packag…
-	- Dev версия сильно опережает CRAN. [ggalt](https://yonicd.github.io/ggalt/index.html)
-A compendium of ‘geoms’, ‘coords’, ‘stats’, scales and fonts for ‘ggplot2’, including splines, 1d and 2d densities, univariate average shifted histograms, a new map coordinate system based on the ‘PROJ.4’-library and the ‘StateFace’ open source font ‘ProPublica’.
-- [Transforming the breaks to match a scale](http://freerangestats.info/blog/2015/09/07/transforming-breaks-in-a-scale)
-- [Increase number of axis ticks](https://stackoverflow.com/questions/11335836/increase-number-of-axis-ticks)
-- [ggplot2 change axis limits for each individual facet panel](https://stackoverflow.com/questions/51735481/ggplot2-change-axis-limits-for-each-individual-facet-panel). This is a long-standing feature request (see, e.g., 2009, 2011, 2016) which is tackled by a separate package `facetscales`.
-	- [facetscales](https://github.com/zeehio/facetscales)
-The goal of facetscales is to let you use facet_grid with different scales per plot. This is useful for instance to display in different facets magnitudes with different units.
-- [ggrepel examples](https://cran.r-project.org/web/packages/ggrepel/vignettes/ggrepel.html) by Kamil Slowikowski, 2019-05-06
-- [Add row in each group using dplyr and add_row()](https://stackoverflow.com/questions/43403282/add-row-in-each-group-using-dplyr-and-add-row)
-- `geom-smooth`: [Understanding the confidence band from a polynomial regression](https://stats.stackexchange.com/questions/82603/understanding-the-confidence-band-from-a-polynomial-regression)
-- [Center bars of histogram using ggplot2](https://stackoverflow.com/questions/34180300/center-bars-of-histogram-using-ggplot2)
-- [ggplot: Calculated aesthetics](https://ggplot2.tidyverse.org/reference/stat.html)
-- [R ggplot2: stat_count() must not be used with a y aesthetic error in Bar graph](https://stackoverflow.com/questions/39679057/r-ggplot2-stat-count-must-not-be-used-with-a-y-aesthetic-error-in-bar-graph)
-- [Data Binning and Plotting](http://www.jdatalab.com/data_science_and_data_mining/2017/01/30/data-binning-plot.html)
-- [thomasp85/patchwork](https://github.com/thomasp85/patchwork). The Composer of ggplots
-- [Easy multi-panel plots in R using facet_wrap() and facet_grid() from ggplot2](http://www.zevross.com/blog/2019/04/02/easy-multi-panel-plots-in-r-using-facet_wrap-and-facet_grid-from-ggplot2/). One of the most powerful aspects of the R plotting package ggplot2 is the ease with which you can create multi-panel plots. With a single function you can split a single plot into many related plots using `facet_wrap()` or `facet_grid()`.
-- COOL! [UNDERSTANDING GGPLOT: AN EXAMPLE](http://jdobr.es/blog/data-vis-with-ggplot/)
-- COOL! [How to Set ggplot Facets Coords Individually](http://www.zachburchill.ml/ggplot_facets/)
-- [Be Awesome in ggplot2: A Practical Guide to be Highly Effective - R software and data visualization](http://www.sthda.com/english/wiki/be-awesome-in-ggplot2-a-practical-guide-to-be-highly-effective-r-software-and-data-visualization)
-- [12 Extensions to ggplot2 for More Powerful R Visualizations](https://mode.com/blog/r-ggplot-extension-packages)
-- [Introduction to ggridges](https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html)
-- [Setting individual axis limits with facet_wrap and scales = “free” in ggplot2](https://stackoverflow.com/questions/18046051/setting-individual-axis-limits-with-facet-wrap-and-scales-free-in-ggplot2)
-- [facetscales](https://github.com/zeehio/facetscales)
-The goal of facetscales is to let you use facet_grid with different scales per plot. This is useful for instance to display in different facets magnitudes with different units.
-
 ## Learning
 - COOL! [СРЕДНЕЕ vs МЕДИАНА](https://m-learn.ru/mean-median/)
 - [«Средние» значения — ваш враг. Как не попасться на удочку усреднения](https://rb.ru/story/srednenko/)
@@ -4123,25 +3979,13 @@ An experimental R package for retrieving R pacakge informatiom.
 - [Link Functions versus Data Transforms](http://www.win-vector.com/blog/2019/07/link-functions-versus-data-transforms/)
 - COOL! [Programming with dplyr](https://dplyr.tidyverse.org/articles/programming.html)
 - [9 Useful R Data Visualization Packages for Any Discipline](https://mode.com/blog/r-data-visualization-packages)
-- [You Can Design a Good Chart with R. But do R users invest in design?](https://medium.com/data-visualization-society/you-can-design-a-good-chart-with-r-5d00ed7dd18e)
-- COOL! [https://drsimonj.svbtle.com/ordering-categories-within-ggplot2-facets](https://drsimonj.svbtle.com/ordering-categories-within-ggplot2-facets)
+
 
 # 08.07.2019
 ## R
-- [logspline: Routines for Logspline Density Estimation](https://cran.rstudio.org/web/packages/logspline/index.html)
-Contains routines for logspline density estimation. The function oldlogspline() uses the same algorithm as the logspline package version 1.0.x; i.e. the Kooperberg and Stone (1992) algorithm (with an improved interface). The recommended routine logspline() uses an algorithm from Stone et al (1997) <doi:10.1214/aos/1031594728>.
-- [gglogspline](https://git.rud.is/hrbrmstr/gglogspline)
-A ‘ggplot2’ Extension for Visualizing Density, Distribution, Hazard, or Survival Functions using the ‘logspline’ Package
-- [Quick hit: Some ggplot2 Stat for {logspline}](https://rud.is/b/2019/06/18/quick-hit-some-ggplot2-stat/)
-- [hrbrmstr/ggalt](https://github.com/hrbrmstr/ggalt/)
-Extra Coordinate Systems, Geoms, Statistical Transformations & Scales for 'ggplot2'
 - [Wicked Fast, Accurate Quantiles Using ‘t-Digests’ in R with the {tdigest} Package](https://rud.is/b/2019/04/03/wicked-fast-accurate-quantiles-using-t-digests-in-r-with-the-tdigest-package/)
 - [hrbrmstr/tdigest](https://github.com/hrbrmstr/tdigest)
 Wicked Fast, Accurate Quantiles Using 't-Digests'
-- [ggthemes](https://jrnold.github.io/ggthemes/)
-- [ggthemes. ALL YOUR FIGURE ARE BELONG TO US](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/)
-- [ggplot2: place text at right location](https://www.gl-li.com/2017/08/18/place-text-at-right-location/)
-- [Label line ends in time series with ggplot2](https://drsimonj.svbtle.com/label-line-ends-in-time-series-with-ggplot2)
 - [FeatureHashing: Creates a Model Matrix via Feature Hashing with a Formula Interface](https://cran.r-project.org/web/packages/FeatureHashing/index.html)
 Feature hashing, also called as the hashing trick, is a method to transform features of a instance to a vector. Thus, it is a method to transform a real dataset to a matrix. Without looking up the indices in an associative array, it applies a hash function to the features and uses their hash values as indices directly.
 
@@ -4194,10 +4038,6 @@ A comprehensive implementation of dynamic time warping (DTW) algorithms in R. DT
 	- [Dynamic Time Warping (DTW) as a mean to cluster time series](https://rpubs.com/esobolewska/dtw-time-series)
 	- [Welcome to Dynamic Time Warp project!](http://dtw.r-forge.r-project.org/)
 Comprehensive implementation of Dynamic Time Warping algorithms in R. Supports arbitrary local (eg symmetric, asymmetric, slope-limited) and global (windowing) constraints, fast native code, several plot styles, and more.
-- COOL! [REORDERING AND FACETTING FOR GGPLOT2](https://juliasilge.com/blog/reorder-within/).
-	- [David Robinson's Personal R Package](https://github.com/dgrtwo/drlib)
-	- [`reorder_within`](https://github.com/dgrtwo/drlib/blob/master/R/reorder_within.R)
-	- [Ordering Categories within ggplot2 Facets](https://trinkerrstuff.wordpress.com/2016/12/23/ordering-categories-within-ggplot2-facets/)
 - [VLOOKUP in R with Schwartau Beehive Data](https://jmarriott.com/posts/vlookup-in-r/)
 
 # 01.07.2019
@@ -4218,8 +4058,7 @@ A collection of fast (utility) functions for data analysis. Column- and row- wis
 	- [missRanger: Fast Imputation of Missing Values by Chained Random Forests](https://rdrr.io/cran/missRanger/man/missRanger.html)
 	- [imputeTS: Time Series Missing Value Imputation](http://steffenmoritz.github.io/imputeTS/)
 - [Compile Hadley’s Advanced R to a PDF](http://brettklamer.com/diversions/statistical/compile-hadleys-advanced-r-programming-to-a-pdf/)
-- [How do I access the data frame that has been passed to ggplot()?](https://stackoverflow.com/questions/45088454/how-do-i-access-the-data-frame-that-has-been-passed-to-ggplot)
-- [How to Turn Your ggplot2 Visualization into an Interactive Tweet](https://datatitian.com/how-to-turn-your-ggplot2-visualization-into-an-interactive-tweet/)
+
 
 ## R Markdown
 - [Allow to change the resolution of plots globally (or change the default to 96dpi) #1832 {Open}](https://github.com/rstudio/shiny/issues/1832)
@@ -4318,8 +4157,7 @@ Implementation of the Future API on top of the 'callr' package. This allows you 
 - Benchmarking по преобразованию матрицы в списки:
 	- [How to convert a matrix to a list of column-vectors in R?](https://stackoverflow.com/questions/6819804/how-to-convert-a-matrix-to-a-list-of-column-vectors-in-r)
 - Benchmarking по разбиению колонки на несколько [Split multiple columns into multiple columns using r](https://stackoverflow.com/questions/48688747/split-multiple-columns-into-multiple-columns-using-r)
-- [cowplot – Streamlined plot theme and plot annotations for ggplot2](https://github.com/wilkelab/cowplot)
-- [Changing Glyph in legend in ggplot2](https://www.hvitfeldt.me/blog/changing-glyph-in-ggplot2/)
+
 
 
 - data.table
@@ -4359,9 +4197,7 @@ Implementation of the Future API on top of the 'callr' package. This allows you 
 - [#rstats adventures in the land of @rstudio shiny (apps)](http://www.christopherlortie.info/adventures-in-the-land-of-rstudio-shiny-apps/)
 - Интересно почитать и разобраться. [Periodogram with R](https://www.getyourdataon.com/2019/06/blog-post.html)
 The power spectral density (PSD) is a function that describes the distribution of power over the frequency components composing our data set. If we knew the process that generated the data, we could just calculate the PSD; we would not have to estimate it. Unfortunately, in practice we won't have access to the random process, only the samples (data) produced by the process. So, we can't get the true PSD, we can only get an estimate of the true PSD. In our example below, we made the data, so we know what the true PSD should look like.
-- COOL1 [lemon: Freshing Up your 'ggplot2' Plots](https://cran.rstudio.com/web/packages/lemon/)
-Functions for working with legends and axis lines of 'ggplot2', facets that repeat axis lines on all panels, and some 'knitr' extensions.
-- [colorBrewer interactive tool](https://www.computerworld.com/article/3184778/6-useful-r-functions-you-might-not-know.html). First, install tmaptools with install.packages("tmaptools"), then load tmaptools with library("tmaptools") and run palette_explorer() (or, don't load tmaptools and run tmaptools::palette_explorer() ). You'll see all available palettes as in the image above, as well as sliders to adjust options like number of colors. There's also info about basic syntax for using a color scheme below each group of palettes.
+
 
 # 13.06.2019
 ## R
@@ -4497,17 +4333,12 @@ Practical walkthroughs on machine learning, data exploration and finding insight
 - [Creating a Plot Window of a Particular Size](https://stackoverflow.com/questions/2129952/creating-a-plot-window-of-a-particular-size)
 - [rotating dendogram x axis label in R](https://stackoverflow.com/questions/42200229/rotating-dendogram-x-axis-label-in-r)
 - [Beautiful dendrogram visualizations in R: 5+ must known methods - Unsupervised Machine Learning](http://www.sthda.com/english/wiki/beautiful-dendrogram-visualizations-in-r-5-must-known-methods-unsupervised-machine-learning)
-- [ggdendro: Create Dendrograms and Tree Diagrams Using 'ggplot2'](https://cran.r-project.org/web/packages/ggdendro/index.html)
-This is a set of tools for dendrograms and tree plots using 'ggplot2'. The 'ggplot2' philosophy is to clearly separate data from the presentation. Unfortunately the plot method for dendrograms plots directly to a plot device without exposing the data. The 'ggdendro' package resolves this by making available functions that extract the dendrogram plot data. The package provides implementations for tree, rpart, as well as diana and agnes cluster diagrams.
 - COOL! [Adding tables to posts](https://blogdown-demo.rbind.io/2018/01/31/adding-tables-to-posts/)
 
 
 # 27.05.2019
 ## R
 - COOL! [How to interactively examine any R code - 4 ways to not just read the code, but delve into it step-by-step](https://jozef.io/r916-exploring-r-code-interactively/)
-- [Ariel Muldoon blog](https://aosmith.rbind.io/). Там много чего есть про использование ggplot.
-	- COOL [The small multiples plot: how to combine ggplot2 plots with one shared axis](https://aosmith.rbind.io/2019/05/13/small-multiples-plot/)
-	- [Embedding subplots in ggplot2 graphics](https://aosmith.rbind.io/2019/04/22/embedding-subplots/)
 - [The teachR's::cheat sheet](https://adisarid.github.io/post/2019-03-12-the_teachr_cheat_sheet/)
 - [interactions](https://interactions.jacob-long.com/)
 This package consists of a number of tools that pertain to the analysis and exploration of statistical interactions in the context of regression. Some of these features, especially those that pertain to visualization, are not exactly impossible to do oneself but are tedious and error-prone when done “by hand.” Most things in interactions were once part of the jtools package and have been spun off to this package for clarity and simplicity.
@@ -4532,27 +4363,6 @@ metR packages several functions and utilities that make R better for handling me
 - [Create a CLI for R with npm](https://colinfay.me/create-r-cli-npm/)
 - [Easy quick PCA analysis in R](https://intobioinformatics.wordpress.com/2019/05/22/easy-quick-pca-analysis-in-r/)
 - COOL! [Comparing Frequentist, Bayesian and Simulation methods and conclusions](https://ibecav.netlify.com/post/comparing-frequentist-bayesian-and-simulation-methods-and-conclusions/)
-- [How can I view the computed varialbles computed by ggplot2 geom_boxplot?](https://stackoverflow.com/questions/39820118/how-can-i-view-the-computed-varialbles-computed-by-ggplot2-geom-boxplot)
-- COOL! Как достать информацию из построенного графика ggplot? `ggplot_build(gp)$data -> m`, там вся структура по слоям.
-	- [Get Quantile values from geom_boxplot()](https://stackoverflow.com/questions/34977882/get-quantile-values-from-geom-boxplot)
-	- [Extracting details](https://campus.datacamp.com/courses/data-visualization-with-ggplot2-part-3/ggplot2-internals?ex=13)
-- [How to add number of observations to a ggplot2 boxplot](https://medium.com/@gscheithauer/how-to-add-number-of-observations-to-a-ggplot2-boxplot-b22710f7ef80)
-- [How do I turn the numeric output of boxplot (with plot=FALSE) into something usable?](https://stackoverflow.com/questions/8844845/how-do-i-turn-the-numeric-output-of-boxplot-with-plot-false-into-something-usa)
-
-- COOL [Aligning labels with ggrepel](https://stackoverflow.com/questions/47492191/aligning-labels-with-ggrepel)
-- COOL! [Label line ends in time series with ggplot2](https://drsimonj.svbtle.com/label-line-ends-in-time-series-with-ggplot2). @drsimonj here with a quick share on making great use of the secondary y axis with ggplot2 – super helpful if you’re plotting groups of time series!
-- [Floating bar chart with trend line on secondary axis](https://stackoverflow.com/questions/45981366/floating-bar-chart-with-trend-line-on-secondary-axis)
-- [Label on the side of box plot in R - ggplot](https://stackoverflow.com/questions/50372943/label-on-the-side-of-box-plot-in-r-ggplot)
-- [The Complete ggplot2 Tutorial - Part1 | Introduction To ggplot2 (Full R code)](http://r-statistics.co/Complete-Ggplot2-Tutorial-Part1-With-R-Code.html)
-- [Generate Color Palettes](https://rpkgs.datanovia.com/ggpubr/reference/get_palette.html)
-Generate a palette of k colors from ggsci palettes, RColorbrewer palettes and custom color palettes. Useful to extend RColorBrewer and ggsci to support more colors.
-- [TOP R COLOR PALETTES TO KNOW FOR GREAT DATA VISUALIZATION](https://www.datanovia.com/en/blog/top-r-color-palettes-to-know-for-great-data-visualization/)
-- COOL! [How to create a color palette in R with more than 15 colors with ggplot2 #19 {Closed}](https://github.com/duttashi/visualizer/issues/19)
-- [#40 RCOLORBREWER : GET A LONGER PALETTE](https://www.r-graph-gallery.com/40-rcolorbrewer-get-a-longer-palette/)
-- [THE PAUL TOL 21-COLOR SALUTE](https://tradeblotter.wordpress.com/2013/02/28/the-paul-tol-21-color-salute/)
-- COOL! [Polychrome: Qualitative Palettes with Many Colors](https://cran.rstudio.com/web/packages/Polychrome/index.html). Tools for creating, viewing, and assessing qualitative palettes with many (20-30 or more) colors.
-- [colortools: Tools for colors in a Hue-Saturation-Value (HSV) color model](https://cran.r-project.org/web/packages/colortools/index.html). R package with handy functions to help users select and play with color schemes in an HSV color model
-- [Creating plots in R using ggplot2 - part 10: boxplots](http://t-redactyl.io/blog/2016/04/creating-plots-in-r-using-ggplot2-part-10-boxplots.html)
 
 # 23.05.2019
 ## R Markdown
@@ -4600,11 +4410,9 @@ R Markdown documents can include one or more parameters whose values can be set 
 - [Using parameters in Rmarkdown](https://nsaunders.wordpress.com/2019/03/04/using-parameters-in-rmarkdown/)
 
 ## R
-- COOL! [raivokolde/pheatmap](https://github.com/raivokolde/pheatmap). Pretty heatmaps
 - COOL! [smouksassi/ggquickeda](https://github.com/smouksassi/ggquickeda). ggplot and summary statistics quick exploration of data
 - [moodymudskipper/cutr](https://github.com/moodymudskipper/cutr). Enhanced cut And Useful Related Functions
 - [How to Calculate Percentile for Each Group in R and Exploratory](https://blog.exploratory.io/how-to-calculate-percentile-for-each-group-in-r-and-exploratory-4e6021f7fe10)
-- [GGPLOT LEGEND TITLE, POSITION AND LABELS](https://www.datanovia.com/en/blog/ggplot-legend-title-position-and-labels/)
 - STAT 545: [Regular Expression in R](https://stat545.com/block022_regular-expression.html) by Gloria Li and Jenny Bryan
 - [Import text file as single character string](https://stackoverflow.com/questions/9068397/import-text-file-as-single-character-string).
 `string <- readChar("foo.txt", nchars=1e6)`
@@ -4629,11 +4437,7 @@ R Markdown documents can include one or more parameters whose values can be set 
 - [Scheduling R Markdown Reports via Email](http://www.analyticsforfun.com/2016/01/scheduling-r-markdown-reports-via-email.html)
 
 ## R
-- COOL! [ggforce](https://ggforce.data-imaginist.com/index.html) is a package aimed at providing missing functionality to ggplot2 through the extension system introduced with ggplot2 v2.0.0. Broadly speaking ggplot2 has been aimed primarily at explorative data visualization in order to investigate the data at hand, and less at providing utilities for composing custom plots a la D3.js. ggforce is mainly an attempt to address these “shortcoming” (design choices might be a better description). The goal is to provide a repository of geoms, stats, etc. that are as well documented and implemented as the official ones found in ggplot2.
-	- [The ggforce Awakens (again)](https://www.data-imaginist.com/2019/the-ggforce-awakens-again/) Mar 7, 2019
-	- Очень хороший [пример аннотирования](https://gist.github.com/Ryo-N7/67ca1c364c342a82c4098918082ca445), взял из [твита](https://twitter.com/R_by_Ryo/status/1129773418184925184?s=20)
 - Интересный пакет. [recorder: Validate Predictors in New Data](http://smaakage85.netlify.com/2019/05/21/recorder-validate-new-data-for-predictions/)
-
 
 # 21.05.2019
 ## R
@@ -4646,7 +4450,6 @@ This is an R package designed to aid in the analysis of panel data, designs in w
 	- COOL Часть 1. [Explore Your Dataset in R](https://www.littlemissdata.com/blog/simple-eda)
 	- COOL [Part 2: Simple EDA in R with inspectdf](https://www.littlemissdata.com/blog/inspectdf)
 	- [An example of the use of the inspectdf package](https://github.com/2622NSW/inspectdf)
-- COOL! [The Evolution of a ggplot (Ep. 1)](https://cedricscherer.netlify.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/). Posted by Cédric on Friday, May 17, 2019
 - [A new package for panel data analysis in R](https://www.jacob-long.com/post/panelr-intro/)
 - [From base R](https://stringr.tidyverse.org/articles/from-base.html) by Sara Stoudt
 - [digest](http://dirk.eddelbuettel.com/blog/2019/05/20/#digest_0.6.19) creates hash digests of arbitrary R objects (using the md5, sha-1, sha-256, sha-512, crc32, xxhash32, xxhash64, murmur32, and  spookyhash algorithms) permitting easy comparison of R language objects.
@@ -4764,8 +4567,6 @@ Launch R/Rstudio and type .libPaths() and you should see the new path to your pe
 
 # 10.05.2019
 ## R
-- [10 Steps to Better Graphs in R](https://michaeltoth.me/10-steps-to-better-graphs-in-r.html)
-- [A Detailed Guide to ggplot colors](https://michaeltoth.me/a-detailed-guide-to-ggplot-colors.html)
 - [CONVERTING INDIVIDUAL BINARY VECTORS TO A VALUE BASED ON COLUMN NAMES](https://drdoane.com/converting-individual-binary-vectors-to-a-value-based-on-column-names/)
 - [Granular Weighted Binning by Generalized Boosted Model](https://statcompute.wordpress.com/2019/05/07/granular-weighted-binning-by-generalized-boosted-model/)
 - [(Bootstraping) Follow-Up Contrasts for Within-Subject ANOVAs](https://mattansb.blogspot.com/2019/05/bootstraping-follow-up-contrasts-for.html)
@@ -4808,21 +4609,11 @@ https://www.youtube.com/watch?v=3V3HeRnRNH8
 - [10 полезных фич R, о которых вы могли не знать](https://habr.com/ru/company/skillbox/blog/449508/). Автор оригинала: Keith McNulty
 - [How to generate custom visuals in Power BI using R](https://towardsdatascience.com/custom-html-visuals-in-power-bi-using-r-2b0494894ff). Easily create interactive R powered HTML visuals in Power BI
 - [SHINY VS. DASH: A SIDE-BY-SIDE COMPARISON](https://www.rkingdc.com/blog/2019/3/6/shiny-vs-dash-a-side-by-side-comparison)
-- [ZOOMING IN ON MAPS WITH SF AND GGPLOT2](https://datascience.blog.wzb.eu/2019/04/30/zooming-in-on-maps-with-sf-and-ggplot2/)
-- [Detailed Guide to the Bar Chart in R with ggplot](https://michaeltoth.me/detailed-guide-to-the-bar-chart-in-r-with-ggplot.html)
 - Прикольно. [Process Mining (Part 3/3): More analysis and visualizations](https://notast.netlify.com/post/process-mining-part-3-3-more-analysis-and-visualizations/)
 - COOL! [Bayesian models in R](https://poissonisfish.wordpress.com/2019/05/01/bayesian-models-in-r/)
 - COOL! [rTRNG ON CRAN NOW!](https://mirai-solutions.ch/news/2019/05/04/rTRNG-on-CRAN/)
 	- COOL! [Tina's Random Number Generator Library](https://www.numbercrunch.de/trng/)
-- COOL! [Benchmark of popular graph/network packages](https://www.timlrx.com/2019/05/05/benchmark-of-popular-graph-network-packages/)
-```
-The benchmark was carried out using a Google Compute n1-standard-16 instance (16vCPU Haswell 2.3GHz, 60 GB memory). I compare 5 different packages:
- - graph-tool
- - igraph
- - networkit
- - networkx
- - snap
-```
+
 
 - [Replacing character(0) with NA](https://stackoverflow.com/questions/50800345/replacing-character0-with-na/50800683)
 - COOL! [dplyr: Convert values to NA](https://dplyr.tidyverse.org/reference/na_if.html)
@@ -4867,7 +4658,6 @@ The benchmark was carried out using a Google Compute n1-standard-16 instance (16
 ## R
 - COOL! [How to easily generate a perfectly normal distribution](https://easystats.github.io/blog/posts/bayestestr_rnorm_perfect/).
 - [Google’s Eigenvector… or how a Random Surfer finds the most relevant Webpages](http://blog.ephorie.de/googles-eigenvector-or-how-a-random-surfer-finds-the-most-relevant-webpages)
-- [A Detailed Guide to the ggplot Scatter Plot in R](https://michaeltoth.me/a-detailed-guide-to-the-ggplot-scatter-plot-in-r.html)
 
 ## JS
 -[mxGraph 4.0.0](https://jgraph.github.io/mxgraph/). mxGraph is a JavaScript diagramming library that enables interactive graph and charting applications to be quickly created that run natively in any major browser that is supported by its vendor. mxGraph - An open source JavaScript diagramming component, started in 2005, that works on all major browsers, including touch devices.
@@ -5110,7 +4900,6 @@ First turn on displaying warnings using the command `options(warn=1)` Then, you 
 - [Debugging R code using R, RStudio and wrapper functions](https://www.youtube.com/watch?v=-P9UzQuJSH8&feature=youtu.be&list=PLAKBwakacHbQT51nPHex1on3YNCCmggZA)
 - [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
 - [How to debug a fatal error?](https://support.rstudio.com/hc/en-us/community/posts/207601737-How-to-debug-a-fatal-error-)
-- [ggpmisc 0.2.13. Debugging ggplots](https://cran.r-project.org/web/packages/ggpmisc/vignettes/debug.html)
 - [Using the Bizarro Pipe to Debug magrittr Pipelines in R](http://www.win-vector.com/blog/2017/01/using-the-bizarro-pipe-to-debug-magrittr-pipelines-in-r/)
 - [Debugging R Functions](http://seananderson.ca/2013/08/23/debugging-r.html)
 - [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
@@ -5284,7 +5073,6 @@ The renv package is a new effort to bring project-local R dependency management 
 - [wrapr::let()](http://www.win-vector.com/blog/2019/03/wraprlet/)
 - COOL! [How to create professional reports from R scripts, with custom styles.](https://jozefhajnala.gitlab.io/r/r913-spin-with-style/)
 - [littler 0.3.7: Small tweaks](http://dirk.eddelbuettel.com/blog/2019/03/15/#littler-0.3.7)
-- COOL! [Adding Custom Fonts to ggplot in R](http://gradientdescending.com/adding-custom-fonts-to-ggplot-in-r/)
 - COOL! [How I implemented googleSignIn in R (shiny) and lived](http://biolitika.si/how-i-implemented-googlesignin-in-r-shiny-and-lived.html)
 - COOL! [R and Python: Using reticulate to get the best of both worlds](https://www.statworx.com/de/blog/r-and-python-using-reticulate-to-get-the-best-of-both-worlds/)
 - String replication [How to repeat a String N times in R?](https://stackoverflow.com/questions/22359127/how-to-repeat-a-string-n-times-in-r):
@@ -5658,12 +5446,8 @@ For other who suffer the problem: According to stat.ethz.ch/pipermail/r-help/201
 	- COOL! ["Correlation is not causation". So what is?](https://iyarlin.github.io/2019/02/08/correlation-is-not-causation-so-what-is/)
 	- [Casual Inference in Statistics](http://bayes.cs.ucla.edu/PRIMER/)
 	- [causal-inference/miscellaneous files/The Seven Pillars of Causal Reasoning with Reflections on Machine Learning Pearl 2018.](https://github.com/IyarLin/causal-inference/blob/master/miscellaneous%20files/The%20Seven%20Pillars%20of%20Causal%20Reasoning%20with%20Reflections%20on%20Machine%20Learning%20Pearl%202018.pdf)
-- BBC Visual ggplot
-	- COOL! [BBC Visual and Data Journalism cookbook for R graphics](https://bbc.github.io/rcookbook/)
-	- [How the BBC Visual and Data Journalism team works with graphics in R](https://medium.com/bbc-visual-and-data-journalism/how-the-bbc-visual-and-data-journalism-team-works-with-graphics-in-r-ed0b35693535)
-	- [bbc/bbplot](https://github.com/bbc/bbplot). R package that helps create and export ggplot2 charts in the style used by the BBC News data team
 - [Are you leaking h2o? Call plumber!](https://longhowlam.wordpress.com/2019/02/07/are-you-leaking-h2o-call-plumber/)
-- [An absolute beginner’s guide to creating data frames for a Stack Overflow [r] question](https://nsaunders.wordpress.com/2019/02/07/an-absolute-beginners-guide-to-creating-data-frames-for-a-stack-overflow-r-question/)
+- [An absolute beginner’s guide to creating data frames for a Stack Overflow R question](https://nsaunders.wordpress.com/2019/02/07/an-absolute-beginners-guide-to-creating-data-frames-for-a-stack-overflow-r-question/)
 - [Mapping multiple trends with confidence](http://r.iresmi.net/2019/02/06/mapping-multiple-trends-with-confidence/). A tutorial to compute trends by groups and plot/map the results
 
 # 11.02.2009
@@ -5868,12 +5652,6 @@ And with the hindsight of several years later we now a proper CDN that is guaran
 - [Showing a difference in means between two groups](https://onunicornsandgenes.blog/2019/01/13/showing-a-difference-in-means-between-two-groups/)
 - [Travis CI for R — Advanced guide](https://towardsdatascience.com/travis-ci-for-r-advanced-guide-719cb2d9e0e5)
 Continuous integration for building an R project in Travis CI including code coverage, pkgdown documentation, osx and multiple R-Versions
-- COOL! [colorspace: New Tools for Colors and Palettes](https://eeecon.uibk.ac.at/~zeileis/news/colorspace/)
-A major update (version 1.4.0) of the R package colorspace has been released to CRAN, enhancing many of the package's capabilities, e.g., more refined palettes, named palettes, ggplot2 color scales, visualizations for assessing palettes, shiny and Tcl/Tk apps, color vision deficiency emulation, and much more.
-- [R Coding Style Guide](https://irudnyts.github.io//r-coding-style-guide/) by Iegor Rudnytskyi, PhD student in Actuarial Science at HEC Lausanne
-- [charlatan: Make Fake Data](https://cran.r-project.org/web/packages/charlatan/)
-Make fake data, supporting addresses, person names, dates, times, colors, coordinates, currencies, digital object identifiers ('DOIs'), jobs, phone numbers, 'DNA' sequences, doubles and integers from distributions and within a range.
-- [ggeffects 0.8.0 now on CRAN: marginal effects for regression models](https://strengejacke.wordpress.com/2019/01/14/ggeffects-0-8-0-now-on-cran-marginal-effects-for-regression-models-rstats/)
 - [The splashr package {srht|GL|GH}](https://rud.is/b/2019/01/14/splashr-0-6-0-now-uses-the-cran-nascent-stevedore-package-for-docker-orchestration/) — an alternative to Selenium for javascript-enabled/browser-emulated web scraping — is now at version 0.6.0 (still in dev-mode but on its way to CRAN in the next 14 days).
 
 
