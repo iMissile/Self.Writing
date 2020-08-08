@@ -716,6 +716,7 @@ header-includes:
 - [Escaping % symbol when passed as a string from R chunk to knitr](https://tex.stackexchange.com/questions/430376/escaping-symbol-when-passed-as-a-string-from-r-chunk-to-knitr)
 - [How to escape a pipe char in a code statement in a markdown table?](https://stackoverflow.com/questions/17319940/how-to-escape-a-pipe-char-in-a-code-statement-in-a-markdown-table)
 - [how to render DT::datatables in a pdf using rmarkdown?](https://stackoverflow.com/questions/44543858/how-to-render-dtdatatables-in-a-pdf-using-rmarkdown)
+- [How to merge and print multiple code chunks in RMarkdown?](https://stackoverflow.com/questions/52952797/how-to-merge-and-print-multiple-code-chunks-in-rmarkdown)
 
 
 # Visualization
@@ -912,6 +913,134 @@ Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'P
 - [brodieG/vetr](https://github.com/brodieG/vetr) Trust, but Verify
 
 
+# 08.08.2020
+## R
+- [Efficient Data Management in R](https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/efficient-data-r/)
+- [High Performance Python, 2nd Edition](https://www.oreilly.com/library/view/high-performance-python/9781492055013/)
+- [rOpenSci Packages: Development, Maintenance, and Peer Review](https://devguide.ropensci.org/)
+- [Welcome to Metaflow for R](https://docs.metaflow.org/v/r/). Build and manage real-life data science projects with ease.
+- [Useful YAML options for generating HTML reports in R](https://scienceloft.com/technical/useful-yaml-options-for-generating-html-reports-in-r/)
+
+# 07.08.2020
+## R
+- COOL! [Visual R Markdown](https://rstudio.github.io/visual-markdown-editing/#/)
+RStudio v1.4 includes a new visual markdown editing mode. Highlights of visual mode include.
+- [R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
+Yihui Xie, Christophe Dervieux, Emily Riederer
+- [New Features in the R Graphics Engine](https://developer.r-project.org/Blog/public/2020/07/15/new-features-in-the-r-graphics-engine/index.html). Paul Murrell
+- [flow](https://github.com/moodymudskipper/flow)
+Visualize as flow diagrams the logic of functions, expressions or scripts and ease debugging.
+- COOL! [Cron Helper](https://cron.help/). Crontab syntax for us humans. Every 5 minutes
+- [rstudio/rticles](https://github.com/rstudio/rticles). LaTeX Journal Article Templates for R Markdown
+
+## multilayer network
+- [What is the most efficient library to work with Multilayer networks in Python or R? {closed}](https://stackoverflow.com/questions/47338678/what-is-the-most-efficient-library-to-work-with-multilayer-networks-in-python-or)
+- [multinet: Analysis and Mining of Multilayer Social Networks](https://cran.r-project.org/web/packages/multinet/)
+- [multigraph: Plot and Manipulate Multigraphs](https://cran.r-project.org/web/packages/multigraph/index.html)
+- [multiplex: Algebraic Tools for the Analysis of Multiple Social Networks](https://cran.r-project.org/web/packages/multiplex/index.html)
+- [MUXviz. The Multilayer Analysis And Visualization Platform](http://muxviz.net/index.php)
+- [mully: An R Package to Create, Modify and Visualize Multilayered Graphs](https://www.mdpi.com/2073-4425/9/11/519/pdf)
+- [frankkramer-lab/mully](https://github.com/frankkramer-lab/mully). R package to create, modify and visualize graphs with multiple layers.
+
+
+# 06.08.20
+## R
+- [Python or R packages for multilayer network?](https://www.researchgate.net/post/Python_or_R_packages_for_multilayer_network)
+- [Issamfalih/MUNA](https://github.com/Issamfalih/MUNA/)
+- [multinet: Analysis and Mining of Multilayer Social Networks](https://cran.r-project.org/web/packages/multinet/)
+Functions for the creation/generation and analysis of multilayer social networks.
+
+# 05.08.20
+## R
+- COOL! [R Markdown CmdStan Engine](https://mc-stan.org/cmdstanr/articles/r-markdown.html). Mikhail Popov
+- [OSF: A Project Management Service Built for Research](https://ropensci.org/blog/2020/08/04/osf/)
+	- [OSF is a free, open platform to support your research and enable collaboration.](https://www.osf.io/)
+- COOL! [Integrating R and Telegram](https://blog.datascienceheroes.com/get-notify-when-an-r-script-finishes-on-telegram/)
+- COOL! Debug pipe
+	- [What's currently the recommended way to debug pipe chains?](https://community.rstudio.com/t/whats-currently-the-recommended-way-to-debug-pipe-chains/14724/3)
+	- [Fix leaky pipes in R](https://www.rostrum.blog/2019/04/07/fix-leaky-pipes/)
+	- [debug_pipe: Debugging function for magrittr pipelines.](https://rdrr.io/cran/magrittr/man/debug_pipe.html)
+- COOL! [Fast concatenation of data.table columns into one string column](https://stackoverflow.com/questions/48233309/fast-concatenation-of-data-table-columns-into-one-string-column)
+- [wch/writetest.Rmd](https://gist.github.com/wch/9233873). String collection speed tests
+
+## DS
+- COOL! [Data Science Meets Devops: MLOps with Jupyter, Git, & Kubernetes](https://blog.kubeflow.org/mlops/)
+- [Finding the New Age, for Your Age](https://flowingdata.com/2020/08/04/finding-the-new-age-for-your-age/)
+- COOL! [loadtest](https://github.com/alexfernandez/loadtest). Runs a load test on the selected HTTP or WebSockets URL. The API allows for easy integration in your own tests.
+	- [loadtest-plotter](https://github.com/ahsan/loadtest-plotter). Visualize results of npm's loadtest module.
+
+## MS SQL
+- [Error "Invalid descriptor index" when collecting a table with a blob column in the middle #309](https://github.com/r-dbi/odbc/issues/309)
+- [Handling SQL Server ODBC Connector Error: [Microsoft][ODBC Driver 13 for SQL Server]Invalid Descriptor Index #256](https://github.com/r-dbi/odbc/issues/256)
+- [Database Connection Error: '07009:[Microsoft][ODBC SQL Server Driver]Invalid Descriptor Index' when running a Crystal report](https://forums.ivanti.com/s/article/Database-Connection-Error-07009-Microsoft-ODBC-SQL-Server-Driver-Invalid-Descriptor-Index-when-running-a-Crystal-report)
+- COOL! работает. [Querying SQL Server Data from R Using RODBC](https://blog.learningtree.com/querying-sql-server-data-from-r-using-rodbc/)
+
+# 04.08.20
+## R
+- [Why didn't anyone tell me that #RMarkdown has a dot engine?](https://twitter.com/FrederikAust/status/1288579934940798977?s=20)
+- [A blocks-based interface for tidy data manipulation and analysis.](https://github.com/tidyblocks/tidyblocks)
+- [data.table vs. dplyr und dtplyr: Benchmarks](https://statistik-dresden.de/archives/16275)
+- [Ten Guidelines for Better Tables](https://threadreaderapp.com/thread/1290323581881266177.html)
+- COOL! [R.cache: Fast and Light-Weight Caching (Memoization) of Objects and Results to Speed Up Computations](https://cran.r-project.org/web/packages/R.cache/index.html)
+- COOL! [startup: Friendly R Startup Configuration](https://github.com/HenrikBengtsson/startup)
+
+## data.table
+- [data.table: Using .SD and .SDcols](https://riptutorial.com/data-table/example/13084/using--sd-and--sdcols)
+- [How to pass all columns except one as argument to setkey()?](https://stackoverflow.com/questions/29368785/how-to-pass-all-columns-except-one-as-argument-to-setkey)
+- [data.table - group by all except one column](https://stackoverflow.com/questions/32440399/data-table-group-by-all-except-one-column)
+
+# 01.08.2020
+## R
+- "Apache Arrow Flight: A New Gold Standard for Data Transport"
+Slides:  https://slideshare.net/wesm/apache-arrow-a-new-gold-standard-for-data-transport
+Jupyter notebook: https://github.com/wesm/vldb-2019-apache-arrow-workshop/blob/90d1d79de6388d2bdbf1be134bd71acda006e5cf/Demo2-Flight.ipynb
+- [Apache Arrow: Read DataFrame With Zero Memory](https://towardsdatascience.com/apache-arrow-read-dataframe-with-zero-memory-69634092b1a)
+- [A little test since they just had a 1.0 release!](https://twitter.com/thomas_mock/status/1288108195030810625?s=20)
+A filtered summary from 328 MILLION observations in about... 100 ms!
+- [Larger-than-RAM Disk-Based Data Manipulation Framework • disk.frame](https://diskframe.com/)
+
+- [Flight connection map with R](https://www.gis-blog.com/flight-connection-map-with-r/)
+- FYI - All materials here : http://bioc2020.bioconductor.org
+- https://www.datasciencecentral.com/profiles/blogs/r-and-python-cheatsheets
+- [12 Algorithms Every Data Scientist Should Know.](https://twitter.com/patri_vaquero_/status/1287492378874519552)
+
+# 31.07.2020
+## R
+- COOL! [R programming in the Windows Subsystem for Linux](https://blog.jdblischak.com/posts/wsl-r/)
+A comprehensive guide to setup an R development environment for Ubuntu running in the Windows Subsystem for Linux (WSL)
+- COOL! [Using closures as objects in R](https://win-vector.com/2015/03/27/using-closures-as-objects-in-r/)
+- [State-of-the-art NLP models from R](https://blogs.rstudio.com/ai/posts/2020-07-30-state-of-the-art-nlp-models-from-r/)
+- [Speaking of, if you want your cos(x) functions to stop aliasing (flickering) on the screen, you need to filter them.](https://iquilezles.org/www/articles/bandlimiting/bandlimiting.htm), https://twitter.com/iquilezles/status/1288958725328220160?s=20
+- COOL! [tidygeocoder: Geocoding Made Easy](https://jessecambon.github.io/tidygeocoder/)
+- https://redocly.github.io/redoc/#section/Cross-Origin-Resource-Sharing
+- [redoc - Reversible Reproducible Documents](https://noamross.github.io/redoc/index.html)
+- [Mystery of The French Thousands Separator](https://haacked.com/archive/2020/05/17/french-thousand-separator-mystery/)
+- [Generating codebooks in R](https://sandsynligvis.dk/2018/03/03/generating-codebooks-in-r/)
+- [Multi Armed Bandit – Is it better than A/B testing?](https://justrthings.com/2017/05/30/multi-armed-bandit-is-it-better-than-ab-testing/)
+- COOL! [Save a flextable as an image](https://www.ardata.fr/en/post/2019/05/23/save-flextable-image/)
+- [flextable 0.4.0 is out](https://www.ardata.fr/en/post/2018/01/11/flextable-0-4-0-is-out/)
+- [swirl: Learn R, in R](https://cran.r-project.org/web/packages/swirl/index.html). Use the R console as an interactive learning environment. Users receive immediate feedback as they are guided through self-paced lessons in data science and R programming.
+	- [Why swirl? Learn R, in R.](https://joncalder.co.za/2017-01-09-why-swirl/)
+
+
+# 30.07.2020
+## R
+- [Pretending to have a SQL database with RStudio](https://medium.com/@skyetetra/pretending-to-have-a-sql-database-with-rstudio-e80d9a1338b1)
+- COOL! [Parallelized sampling using exponential variates](https://blogs.rstudio.com/ai/posts/2020-07-29-parallelized-sampling/)
+- https://paleolimbot.github.io/geos/
+- [Everything not Tested Will Eventually Fail](https://speakerdeck.com/colinfay/everything-not-tested-will-eventually-fail)
+- COOL! [23 RStudio Tips, Tricks, and Shortcuts](https://www.dataquest.io/blog/rstudio-tips-tricks-shortcuts/)
+- [The History of R (updated for 2020)](https://blog.revolutionanalytics.com/2020/07/the-history-of-r-updated-for-2020.html)
+- [HOW TO CREATE POWERPOINT REPORTS WITH R](http://theautomatic.net/2020/07/28/how-to-create-powerpoint-reports-with-r/)
+- [indrag49/QGameTheory](https://github.com/indrag49/QGameTheory). General purpose toolbox for simulating quantum versions of game theoretic models.
+- COOL! [R markdown data chunk](https://cran.r-project.org/web/packages/knitrdata/vignettes/data_language_engine_vignette.html). Building standalone Rmarkdown documents using the data language engine
+- [modeltime](https://business-science.github.io/modeltime/). The time series forecasting package for the tidymodels ecosystem.
+- COOL! [comparing two data frames: one #rstats, many ways!](https://sharla.party/post/comparing-two-dfs/)
+
+## python
+- [Compare two DataFrames and output their differences side-by-side](https://stackoverflow.com/questions/17095101/compare-two-dataframes-and-output-their-differences-side-by-side)
+
+
 # 28.07.2020
 ## R
 - [binaryLogic: Binary Logic](https://cran.r-project.org/web/packages/binaryLogic/)
@@ -930,7 +1059,11 @@ DAGitty is a browser-based environment for creating, editing, and analyzing caus
 ## DS
 - [Rappid jointjs](https://www.jointjs.com/). Create Flowchart, BPMN and many other unique diagramming editors with ease.
 - COOL! Эссе [Programming Sucks](http://www.stilldrinking.org/programming-sucks)
+- COOL! [Quick, Draw!](https://quickdraw.withgoogle.com/). Can a neural network learn to recognize doodling?
+Help teach it by adding your drawings to the world’s largest doodling data set, shared publicly to help with machine learning research.
 - [RMarkdown CSS Selector Tips](https://emilyriederer.netlify.app/post/rmarkdown-css-tips/)
+- [Build multi-agent simulations in minutes](https://hash.ai/). HASH is a free online platform for assembling models of the world.]
+- [Using telnet to Test Open Ports](https://www.acronis.com/en-us/articles/telnet/)
 
 ## R
 - [DAQAPO - Data Quality Assessment for Process-oriented Data](https://nielsmartin.github.io/daqapo/)
@@ -1521,6 +1654,7 @@ The project_mru file is just a text file that you can edit manually. You don't e
 - [The Mockup Blog](https://themockup.blog/)
 	- COOL! [gt - a (G)rammar of (T)ables](https://themockup.blog/posts/2020-05-16-gt-a-grammer-of-tables/). Not to be confused with a Game of Thrones
 	- COOL! [reactable - An Interactive Tables Guide](https://themockup.blog/posts/2020-05-13-reactable-tables-the-rest-of-the-owl/)
+	- COOL! [Building a blog with distill](https://themockup.blog/posts/2020-08-01-building-a-blog-with-distill/). I love simplicity.
 - COOL! [How to write trycatch in R](https://stackoverflow.com/questions/12193779/how-to-write-trycatch-in-r)
 - COOL! [ColinFay/attempt](https://github.com/ColinFay/attempt). Tools for defensive programming in R
 

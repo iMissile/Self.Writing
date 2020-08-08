@@ -222,6 +222,10 @@ A major update (version 1.4.0) of the R package colorspace has been released to 
 - [charlatan: Make Fake Data](https://cran.r-project.org/web/packages/charlatan/)
 Make fake data, supporting addresses, person names, dates, times, colors, coordinates, currencies, digital object identifiers ('DOIs'), jobs, phone numbers, 'DNA' sequences, doubles and integers from distributions and within a range.
 - [ggeffects 0.8.0 now on CRAN: marginal effects for regression models](https://strengejacke.wordpress.com/2019/01/14/ggeffects-0-8-0-now-on-cran-marginal-effects-for-regression-models-rstats/)
+- [ggdist: Visualizations of distributions and uncertainty](https://mjskay.github.io/ggdist/)
+- [Changing the look of your ggplot2 objects](https://www.meganstodel.com/posts/ggplot2-hawks-2/)
+- COOL! [Multi-level labels with ggplot2](https://dmitrijskass.netlify.app/2019/06/30/multi-level-labels-with-ggplot2/)
+
 
 
 
