@@ -225,6 +225,11 @@ Make fake data, supporting addresses, person names, dates, times, colors, coordi
 - [ggdist: Visualizations of distributions and uncertainty](https://mjskay.github.io/ggdist/)
 - [Changing the look of your ggplot2 objects](https://www.meganstodel.com/posts/ggplot2-hawks-2/)
 - COOL! [Multi-level labels with ggplot2](https://dmitrijskass.netlify.app/2019/06/30/multi-level-labels-with-ggplot2/)
+- [Quick example using guide_axis() with corrr()](https://github.com/brshallo/guide_axis-example)
+- [ggnewscale](https://eliocamp.github.io/ggnewscale/)
+- [a ggplot2 grammar guide](https://evamaerey.github.io/ggplot2_grammar_guide/a	bout) by Gina Reynolds
+- COOL! [tidyexplain. Tidy Animated Verbs](https://www.garrickadenbuie.com/project/tidyexplain/)
+- [ggdist](https://mjskay.github.io/ggdist/) Visualizations of Distributions and Uncertainty
 
 
 

@@ -184,3 +184,9 @@ https://midnight-commander.org/wiki/Binaries
 https://appstudio.org/articles/66933.html
 http://louise.hu/poet/midnight-commander-for-mac-os-x/
 
+# Аналоги Origin
+- [SciDAVis](http://scidavis.sourceforge.net/index.html) is a free application for Scientific Data Analysis and Visualization.
+- [QtiPlot](https://www.qtiplot.com/) - Data Analysis and Scientific Visualisation
+
+
+

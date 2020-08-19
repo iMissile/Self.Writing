@@ -209,6 +209,9 @@ A simpler, faster alternative to git-filter-branch for deleting big files and re
 - [Interpretable Machine Learning. A Guide for Making Black Box Models Explainable.](https://christophm.github.io/interpretable-ml-book/) by Christoph Molnar
 - [What They Forgot to Teach You About R](https://rstats.wtf/index.html). The stuff you need to know about R, besides statistical analysis.
 - COOL! [Rapid R Data Viz Book](https://billster45.github.io/rapid_r_data_vis_book/) by Bill Cockerill. [$8.1 What is Process Mining?](https://billster45.github.io/rapid_r_data_vis_book/process-mining.html#what-is-process-mining)
+- [Modern R with the tidyverse](https://b-rodrigues.github.io/modern_R/) by Bruno Rodrigues, 2020-06-22
+- ebook. [Fundamentals of Data Visualization](https://serialmentor.com/dataviz/) by Claus O. Wilke
+- ebook. [Data Visualization. A practical introduction](https://socviz.co/) by Kieran Healy
 
 
 # VPN
@@ -537,8 +540,10 @@ Web Scraper is a company specializing in data extraction from web pages. We offe
 - [Запуск виртуальной машины Linux с помощью Amazon EC2](https://aws.amazon.com/ru/getting-started/tutorials/launch-a-virtual-machine/)
 
 
-## knitr
-- [knitr in a knutshell. Knitr with R Markdown](http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html)
+## RMarkdown & knitr
+- COOL! [R Markdown CmdStan Engine](https://mc-stan.org/cmdstanr/articles/r-markdown.html). Mikhail Popov
+- COOL! [Useful YAML options for generating HTML reports in R](https://scienceloft.com/technical/useful-yaml-options-for-generating-html-reports-in-r/)
+	- [knitr in a knutshell. Knitr with R Markdown](http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html)
 - [Nice tables when knitting to Word](https://community.rstudio.com/t/nice-tables-when-knitting-to-word/3840/4)
 - [kableExtra and Word](https://haozhu233.github.io/kableExtra/kableExtra_and_word.html) by Hao Zhu, 2018-01-09
 - COOL! [How to format kable table when knit from .rmd to Word (with bookdown)](https://stackoverflow.com/questions/47704329/how-to-format-kable-table-when-knit-from-rmd-to-word-with-bookdown)
@@ -717,6 +722,10 @@ header-includes:
 - [How to escape a pipe char in a code statement in a markdown table?](https://stackoverflow.com/questions/17319940/how-to-escape-a-pipe-char-in-a-code-statement-in-a-markdown-table)
 - [how to render DT::datatables in a pdf using rmarkdown?](https://stackoverflow.com/questions/44543858/how-to-render-dtdatatables-in-a-pdf-using-rmarkdown)
 - [How to merge and print multiple code chunks in RMarkdown?](https://stackoverflow.com/questions/52952797/how-to-merge-and-print-multiple-code-chunks-in-rmarkdown)
+- [Bonus knitr and R markdown functionality. Add multiple images at a time](http://www.zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/#bonus-knitr-and-r-markdown-functionality)
+- [widgetframe and knitr](https://cran.r-project.org/web/packages/widgetframe/vignettes/widgetframe_and_knitr.html)
+- [Add an image to a table-like output in R](https://stackoverflow.com/questions/25106481/add-an-image-to-a-table-like-output-in-r)
+- [How to set size for local image using knitr for markdown?](https://stackoverflow.com/questions/15625990/how-to-set-size-for-local-image-using-knitr-for-markdown)
 
 
 # Visualization
@@ -912,14 +921,84 @@ Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'P
 - COOL! [Appsilon/data.validator](https://github.com/Appsilon/data.validator). validate your data and create nice reports straight from R
 - [brodieG/vetr](https://github.com/brodieG/vetr) Trust, but Verify
 
+# 19.08.2020
+## Куммулятивный апдейт
+- [The Principles of Chaos Engineering](https://dzone.com/articles/the-principles-of-chaos-engineering)
+- [Vim Cheatsheet](https://darkshadow.io/2020/06/21/vim-cheatsheet.html)
+- [HOW TO CREATE AN API FOR YOUR R CODE](http://theautomatic.net/2020/08/17/how-to-create-an-api-for-your-r-code/)
+- [If you missed my webinar on upcoming testthat 3.0.0 features, you can now watch at https://rstudio.com/resources/webinars/testthat-3/ #rstats](https://twitter.com/hadleywickham/status/1295778102367465472)
+- reactable & crosstalk. [2019 NFL Team Stats & Ratings](https://kcuilla.netlify.app/post/2019-nfl-team-ratings/)
+- [cpp11](https://cpp11.r-lib.org/) is a header-only R package that helps R package developers handle R objects with C++ code.
+- [a ggplot2 grammar guide](https://evamaerey.github.io/ggplot2_grammar_guide/about) by Gina Reynolds
+- COOL! [tidyexplain. Tidy Animated Verbs](https://www.garrickadenbuie.com/project/tidyexplain/)
+- COOL! [stplanr](https://docs.ropensci.org/stplanr/index.html) is a package for sustainable transport planning with R.
+- [ggdist](https://mjskay.github.io/ggdist/) Visualizations of Distributions and Uncertainty
+- [Do you know any R packages that downloads data Два треугольника, обращенные вершинами вниз (connects to API), but also checks if the data was not downloaded previously? I am looking for some good practices on this. #rstats](https://twitter.com/jakub_nowosad/status/1295030990121979908)
+    - [rOpenSci Labs: datastorr](https://docs.ropensci.org/datastorr/)
+    - [Bowerbird](https://docs.ropensci.org/bowerbird/articles/bowerbird.html) by Ben Raymond, Michael Sumner
+    - [Persistent config and data for R packages](https://blog.r-hub.io/2020/03/12/user-preferences/#not-so-temporary-files3)
+- [The C4 model for visualising software architecture. Context, Containers, Components and Code](https://c4model.com/)
+	- [Draw.io template/diagram containing C4 Model shapes. Drawio](https://github.com/kaminzo/c4-draw.io)
+	- [Structurizr](https://structurizr.com/) is a collection of tooling to create software architecture diagrams and documentation based upon the C4 model.
+- [Understanding Docker in sketchnotes (4 Part Series)]
+    - [Part 1 – Retrieve & Pull images](https://dev.to/aurelievache/understanding-docker-part-1-retrieve-pull-images-3ccn)
+    - [Part 2 – Tools: Dive](https://dev.to/aurelievache/understanding-docker-part-2-tools-dive-2m7a)
+    - [Part 3 – Run a container](https://dev.to/aurelievache/understanding-docker-part-3-run-a-container-44gp)
+    - [Part 4 – Docker images](https://dev.to/aurelievache/understanding-docker-part-4-docker-images-3eo1)
+- [SciDAVis](http://scidavis.sourceforge.net/index.html) is a free application for Scientific Data Analysis and Visualization.
+- [QtiPlot](https://www.qtiplot.com/) - Data Analysis and Scientific Visualisation
+
+# 13.08.2020
+## R
+- [utf8: Unicode Text Processing](https://cran.csiro.au/web/packages/utf8/)
+Process and print 'UTF-8' encoded international text (Unicode). Input, validate, normalize, encode, format, and display.
+- [Table of Images: HTML Template for Rmarkdown](https://miningthedetails.com/blog/r/ImageTableRmarkdown/)
+- [.yaml error message](https://community.rstudio.com/t/yaml-error-message/6366)
+- COOL! [Great Looking Tables: gt (v0.2)](https://blog.rstudio.com/2020/04/08/great-looking-tables-gt-0-2/) by Richard Iannone
+- [How can I create the correct path to create images in a gt table](https://stackoverflow.com/questions/61853488/how-can-i-create-the-correct-path-to-create-images-in-a-gt-table)
+- В DiagrammeR используется шрифт Helvetica. С ним проблемы в Windows: [Alternative Typefaces to Helvetica
+What to do when you want a font like Helvetica, but not Helvetica](https://www.lifewire.com/what-fonts-look-like-helvetica-1077403)
+- Вставляем картинку в reactable: [Embed images](https://glin.github.io/reactable/articles/cookbook/cookbook.html#embed-images-1)
+
+# 12.08.2020
+## R
+- [EmilHvitfeldt/useR2020-text-modeling-tutorial](https://github.com/EmilHvitfeldt/useR2020-text-modeling-tutorial)
+- [Редактор векторной графики Akira](http://akiraux.org/)
+- COOL! [BRODIE GASLAM. ON QUOSURES Quosures?](https://www.brodieg.com/2020/08/11/quosures/)
+- [Convert series of overlapping lines into a route network](https://docs.ropensci.org/stplanr/reference/overline.html)
+- [System Libraries in Rtools40](https://github.com/r-windows/docs/blob/master/rtools40.md#system-libraries-and-pacman)
+- [Automatic Code Cleaning in R with Rclean](https://ropensci.org/blog/2020/04/21/rclean/)
+- [{shinydisconnect}: Show a nice message when a Shiny app disconnects or errors](https://deanattali.com/blog/shinydisconnect-package/)
+- [RcppSimdJson 0.1.1: More Features](http://dirk.eddelbuettel.com/blog/2020/08/11/#rcppsimdjson_0.1.1)
+- [How to include DiagrammeR/mermaid flowchart in a Rmarkdown file](https://stackoverflow.com/questions/40803017/how-to-include-diagrammer-mermaid-flowchart-in-a-rmarkdown-file)
+
+# 10.08.2020
+## R
+- COOL! [CrosstableAssistant](https://github.com/DanChaltiel/crosstableAssistant) is an RShiny application, designed as an RStudio addin, which makes the use of crosstable much easier by providing a graphical interface for all its parameters.
+- [Crosstable](https://danchaltiel.github.io/crosstable/) is a package centered on a single function, crosstable, which easily computes descriptive statistics on datasets.
+- dreamRs:
+	- [flexpivot](https://dreamrs.github.io/flexpivot/). {flextable} extension to create ready-to-use frequency tables in shiny and rmarkdown, and easily exportable to Word, PowerPoint and Excel.
+	- [billboarder](https://github.com/dreamRs/billboarder). R Htmlwidget for billboard.js
+	- [esquisse](https://dreamrs.github.io/esquisse/). The purpose of this add-in is to let you explore your data quickly to extract the information they hold. You can only create simple plots, you won’t be able to use custom scales and all the power of ggplot2. This is just the start!
+- COOL! [a ggplot2 grammar guide](https://evamaerey.github.io/ggplot2_grammar_guide/about)
+- COOL! CHRIS ALBON [Notes On Using Data Science & Machine Learning To Fight For Something That Matters](https://chrisalbon.com/)
+I am the Director of Machine Learning at the Wikimedia Foundation. I have spent over a decade applying statistical learning, artificial intelligence, and software engineering to political, social, and humanitarian efforts.
+- [Creating R Packages with devtools](https://keithmcnulty.github.io/r_package_training/index.html#1) by Keith McNulty and Jiena McLellan
+- [Performance tip: constructing many non-trivial objects is slow](https://lemire.me/blog/2020/08/08/performance-tip-constructing-many-non-trivial-objects-is-slow/)
+- [Check for heteroskedasticity in OLS with lmtest package in R](https://rforpoliticalscience.com/2020/08/02/check-for-heteroskedasticity-in-ols-with-lmtest-package-in-r/)
+- [Why I don't use R Markdown's ref.label](https://rpahl.github.io/r-some-blog/why-i-don't-use-r-markdown's-ref.label/)
+
+## Shell
+- [tldr pages. Simplified and community-driven man pages](https://tldr.sh/)
+- [explainshell.com](https://explainshell.com/explain?cmd=sudo+tar+-xvzf+myfile.tgz)
 
 # 08.08.2020
 ## R
 - [Efficient Data Management in R](https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/efficient-data-r/)
 - [High Performance Python, 2nd Edition](https://www.oreilly.com/library/view/high-performance-python/9781492055013/)
-- [rOpenSci Packages: Development, Maintenance, and Peer Review](https://devguide.ropensci.org/)
-- [Welcome to Metaflow for R](https://docs.metaflow.org/v/r/). Build and manage real-life data science projects with ease.
-- [Useful YAML options for generating HTML reports in R](https://scienceloft.com/technical/useful-yaml-options-for-generating-html-reports-in-r/)
+- COOL! [rOpenSci Packages: Development, Maintenance, and Peer Review](https://devguide.ropensci.org/)
+- COOL! [Welcome to Metaflow for R](https://docs.metaflow.org/v/r/). Build and manage real-life data science projects with ease.
+- [The threejs package: three.js widgets for R](http://bwlewis.github.io/rthreejs/)
 
 # 07.08.2020
 ## R
@@ -952,7 +1031,6 @@ Functions for the creation/generation and analysis of multilayer social networks
 
 # 05.08.20
 ## R
-- COOL! [R Markdown CmdStan Engine](https://mc-stan.org/cmdstanr/articles/r-markdown.html). Mikhail Popov
 - [OSF: A Project Management Service Built for Research](https://ropensci.org/blog/2020/08/04/osf/)
 	- [OSF is a free, open platform to support your research and enable collaboration.](https://www.osf.io/)
 - COOL! [Integrating R and Telegram](https://blog.datascienceheroes.com/get-notify-when-an-r-script-finishes-on-telegram/)
@@ -1263,6 +1341,9 @@ Import data from 'Excel' binary (.xlsb) workbooks into R.
 ## Rconf 2019
 - [Links to slides from rstudio::conf 2019](https://github.com/kbroman/RStudioConf2019Slides)
 - ["Applied Machine Learning" at Rstudio::conf 2019 (January 15 & 16, Austin, Texas)](https://github.com/topepo/rstudio-conf-2019)
+
+## Rconf 2017
+- [Конспект докладов](https://tazinho.github.io/rstudio_conf_notes.html)
 
 # 05.07.2020
 - COOL! Вместе с кодом. [The tale of two charts combined](http://jkunst.com/blog/posts/2020-06-15-when-2-charts-are-more-than-1/). streamgraph on the top of a stacked column chart.
@@ -5125,6 +5206,7 @@ The cyphr package seems to provide a good choice for small research group that s
 	- COOL! [A STRATEGY FOR FASTER GROUP STATISTICS](https://www.brodieg.com/2019/02/24/a-strategy-for-faster-group-statisitics/)
 	- COOL! [ADVENTURES IN R AND COMPILED CODE](https://www.brodieg.com/2018/04/06/adventures-in-r-and-compiled-code/)
 	- [APR 18 2014. DATA.TABLE VS. DPLYR IN SPLIT APPLY COMBINE STYLE ANALYSIS](https://www.brodieg.com/2014/04/18/datatable-vs-dplyr-in-split-apply-comgine/)
+	- [ON QUOSURES](https://www.brodieg.com/2020/08/11/quosures/)
 
 
 # 24.03.2019
