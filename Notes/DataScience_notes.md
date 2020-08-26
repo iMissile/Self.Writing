@@ -212,6 +212,7 @@ A simpler, faster alternative to git-filter-branch for deleting big files and re
 - [Modern R with the tidyverse](https://b-rodrigues.github.io/modern_R/) by Bruno Rodrigues, 2020-06-22
 - ebook. [Fundamentals of Data Visualization](https://serialmentor.com/dataviz/) by Claus O. Wilke
 - ebook. [Data Visualization. A practical introduction](https://socviz.co/) by Kieran Healy
+- ebook. [Pack YouR Code](https://www.gastonsanchez.com/packyourcode/) by Gaston Sanchez
 
 
 # VPN
@@ -541,6 +542,8 @@ Web Scraper is a company specializing in data extraction from web pages. We offe
 
 
 ## RMarkdown & knitr
+- COOL! [Meta RMarkdown - Taxonomy and Use cases](https://themockup.blog/posts/2020-07-25-meta-rmarkdown/)
+	- "Higher, further, faster with Marvelous R Markdown - @thomas_mock" [Slides](bit.ly/marvelRMD)
 - COOL! [R Markdown CmdStan Engine](https://mc-stan.org/cmdstanr/articles/r-markdown.html). Mikhail Popov
 - COOL! [Useful YAML options for generating HTML reports in R](https://scienceloft.com/technical/useful-yaml-options-for-generating-html-reports-in-r/)
 	- [knitr in a knutshell. Knitr with R Markdown](http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html)
@@ -726,6 +729,7 @@ header-includes:
 - [widgetframe and knitr](https://cran.r-project.org/web/packages/widgetframe/vignettes/widgetframe_and_knitr.html)
 - [Add an image to a table-like output in R](https://stackoverflow.com/questions/25106481/add-an-image-to-a-table-like-output-in-r)
 - [How to set size for local image using knitr for markdown?](https://stackoverflow.com/questions/15625990/how-to-set-size-for-local-image-using-knitr-for-markdown)
+- [Allow sql-code-chunk-results to be collected and stored in an R object #1236 {Closed}](https://github.com/rstudio/rmarkdown/issues/1236)
 
 
 # Visualization
@@ -921,19 +925,100 @@ Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'P
 - COOL! [Appsilon/data.validator](https://github.com/Appsilon/data.validator). validate your data and create nice reports straight from R
 - [brodieG/vetr](https://github.com/brodieG/vetr) Trust, but Verify
 
+
+# 25.08.2020
+## R
+- Для пакета `fst` управление количеством используемых ядер идет либо через опции, либо отдельной командой:
+`fst::threads_fst(nr_of_threads = parallel::detectCores())`
+- COOL! [JavaScript for the R package developer](https://blog.r-hub.io/2020/08/25/js-r/)
+- COOL! [Persistent config and data for R packages](https://blog.r-hub.io/2020/03/12/user-preferences/#not-so-temporary-files3)
+- [Spreadsheet workflows in R](https://education.rstudio.com/blog/2020/08/spreadsheets-using-r/)
+- COOL! [OAuth 2.0, but Hold the Jargon Please](https://thenewstack.io/oauth-2-0-but-hold-the-jargon-please/)
+- Slides. [INSTALLING R AND CRAN BINARIES ON UBUNTU](https://dirk.eddelbuettel.com/papers/t4_007_ubuntu_binaries.pdf). COMPOUNDING MANY SMALL CHANGES FOR LARGER EFFECTS
+- https://clauswilke.com/sinab/#installation
+
+
+# 23.08.2020
+## R
+- Slides [How to name files](https://speakerdeck.com/jennybc/how-to-name-files) by Jennifer (Jenny) Bryan
+- Slides [Easy Flipbook Recipes with {flipbookr} and {xaringan}](https://evamaerey.github.io/flipbooks/flipbook_recipes#1)
+- [SKETCHY, HAND-DRAWN-LIKE NETWORKS IN R](http://blog.schochastics.net/post/sketchy-hand-drawn-like-networks-in-r/)
+    - http://roughnet.schochastics.net/
+- article [Neighborhood beautification: Graph layout through message passing](https://ccl.northwestern.edu/2018/galan2018.pdf)
+    - [Playground](https://anvaka.github.io/nb/?k1=0.99&k2=0.3&k3=0&k4=0.2&edgeLength=2&graphName=Grid10)
+- [tinieR](https://jmablog.github.io/tinieR/). Shrink image filesizes with the TinyPNG API.
+- [What Is a Data Frame? (In Python, R, and SQL)](https://www.oilshell.org/blog/2018/11/30.html)
+- [50 times faster data loading for Pandas: no problem](https://blog.esciencecenter.nl/irregular-data-in-pandas-using-c-88ce311cb9ef). Loading irregular data into Pandas using C++
+
+## git
+- [Remove credentials from Git @ Windows](https://stackoverflow.com/questions/15381198/remove-credentials-from-git)
+For Windows 10, go to below path,
+`Control Panel\User Accounts\Credential Manager`
+There will be 2 tabs at this location,
+`Web credentials and 2. Windows credentials.`
+Click on Windows credentials tab and here you can see your stored github credentials, under "Generic credentials" heading.
+You can remove those from here and try and re-clone - it will ask for username/password now as we have just removed the stored credential from the Windows 10 systems
+- [How to update your Git credentials on Windows](https://cmatskas.com/how-to-update-your-git-credentials-on-windows/)
+В русской Windows это называется "Диспетчер Учетных Данных"
+
+# 21.08.2020
+## R
+- Чтобы сохранить `vtree` картику в файл, приходится работать через `options`. Выяснил через `traceback`.
+`options("vtree_folder" = "./output/")`
+
+## Wolfram
+- [Most Efficient Way to Calculate the Product of All Items in a List?](https://mathematica.stackexchange.com/questions/1352/most-efficient-way-to-calculate-the-product-of-all-items-in-a-list). `Apply[Times, list]`
+
+## python
+- [Comparison with R / R libraries](https://pandas.pydata.org/docs/getting_started/comparison/comparison_with_r.html)
+- [Какой язык выбрать для работы с данными — R или Python? Оба! Мигрируем с pandas на tidyverse и data.table и обратно](https://habr.com/ru/post/475210/)
+- [How to store a dataframe using Pandas](https://stackoverflow.com/questions/17098654/how-to-store-a-dataframe-using-pandas)
+- [R + Python = Rython](https://eranraviv.com/r-python-rython/)
+- [MANY MODELS WORKFLOWS IN PYTHON: PART I](https://www.alexpghayes.com/blog/many-models-workflows-in-python-part-i/)
+
+
+## pandas @ python
+- [Apache Arrow and the "10 Things I Hate About pandas"](https://wesmckinney.com/blog/apache-arrow-pandas-internals/)
+- Slides. [Pandas Under The Hood. Peeking behind the scenes of a high performance data analysis library](http://www.jeffreytratner.com/slides/pandas-under-the-hood-pydata-seattle-2015.pdf) by July 25, 2015 | Jeff Tratner (@jtratner)
+- [What is BlockManager and why does it exist?](https://github.com/pydata/pandas-design/blob/a0f1d32094f5030cc06ec09c8582b5a7b7798065/source/internal-architecture.rst#what-is-blockmanager-and-why-does-it-exist)
+- [The one pandas internal I teach all my new colleagues: the BlockManager](https://uwekorn.com/2020/05/24/the-one-pandas-internal.html)
+- [A Roadmap for Rich Scientific Data Structures in Python](https://wesmckinney.com/blog/a-roadmap-for-rich-scientific-data-structures-in-python/)
+- [Block manager rewrite](https://pandas.pydata.org/docs/development/roadmap.html#block-manager-rewrite)
+- [Wes McKinney. About](https://wesmckinney.com/pages/about.html)
+
+
+# 20.08.2020
+## R & DS Подборка
+- https://youtu.be/7YBcqMMWPS4
+- https://print-and-play.asmodee.fun/7-wonders-duel/
+- [I'm preparing for a new CRAN release for kableExtra with some interesting new features.](https://twitter.com/haozhu233/status/1296424882247471104)
+- [#rstats ggpplot2 mapping:](https://twitter.com/MilesMcBain/status/1296228963954483200). Toolkit for this:
+  * https://github.com/anthonynorth/snapbox
+  * https://github.com/paleolimbot/ggspatial
+  * https://github.com/milesmcbain/inlegend
+- [present](https://present.readthedocs.io/en/latest/) — A terminal-based presentation tool with colors and effects
+- [Best OS for R users](https://www.jimhester.com/post/2020-08-20-best-os-for-r/)
+- [MLOPS with R: An end-to-end process for building machine learning applications](https://github.com/revodavid/mlops-r-gha)
+- [Why Package & Environment Management is Critical for Serious Data Science](https://blog.rstudio.com/2020/08/20/why-package-environment-management-is-critical-for-serious-data-science/)
+- [Want to iterate faster? Choose boring solutions](https://about.gitlab.com/blog/2020/08/18/boring-solutions-faster-iteration/)
+- [Testing R scripts/code outside of package development](https://community.rstudio.com/t/testing-r-scripts-code-outside-of-package-development/10086/3)
+- [Exploratory Data Analysis](https://cran.r-project.org/web/packages/dlookr/vignettes/EDA.html) by Choonghyun Ryu
+- [Writing R packages to replace .R scripts?](https://softwareengineering.stackexchange.com/questions/305374/writing-r-packages-to-replace-r-scripts)
+- [Analyses as Packages](http://rmflight.github.io/posts/2014/07/analyses_as_packages.html)
+- https://www.minit.io/hubfs/Documents/Release%20v3/Minit-Install_Guide-Business-3.0.pdf
+
+
 # 19.08.2020
 ## Куммулятивный апдейт
+- [TeamViewer: обнаружено коммерческое использование. Как убрать ограничение.](https://dicom.spb.ru/articles/useful/teamviewer-how-to-remove-the-restriction/) 30 Июля 2018
 - [The Principles of Chaos Engineering](https://dzone.com/articles/the-principles-of-chaos-engineering)
 - [Vim Cheatsheet](https://darkshadow.io/2020/06/21/vim-cheatsheet.html)
 - [HOW TO CREATE AN API FOR YOUR R CODE](http://theautomatic.net/2020/08/17/how-to-create-an-api-for-your-r-code/)
 - [If you missed my webinar on upcoming testthat 3.0.0 features, you can now watch at https://rstudio.com/resources/webinars/testthat-3/ #rstats](https://twitter.com/hadleywickham/status/1295778102367465472)
 - reactable & crosstalk. [2019 NFL Team Stats & Ratings](https://kcuilla.netlify.app/post/2019-nfl-team-ratings/)
 - [cpp11](https://cpp11.r-lib.org/) is a header-only R package that helps R package developers handle R objects with C++ code.
-- [a ggplot2 grammar guide](https://evamaerey.github.io/ggplot2_grammar_guide/about) by Gina Reynolds
-- COOL! [tidyexplain. Tidy Animated Verbs](https://www.garrickadenbuie.com/project/tidyexplain/)
 - COOL! [stplanr](https://docs.ropensci.org/stplanr/index.html) is a package for sustainable transport planning with R.
-- [ggdist](https://mjskay.github.io/ggdist/) Visualizations of Distributions and Uncertainty
-- [Do you know any R packages that downloads data Два треугольника, обращенные вершинами вниз (connects to API), but also checks if the data was not downloaded previously? I am looking for some good practices on this. #rstats](https://twitter.com/jakub_nowosad/status/1295030990121979908)
+- [Do you know any R packages that downloads data, but also checks if the data was not downloaded previously? I am looking for some good practices on this. #rstats](https://twitter.com/jakub_nowosad/status/1295030990121979908)
     - [rOpenSci Labs: datastorr](https://docs.ropensci.org/datastorr/)
     - [Bowerbird](https://docs.ropensci.org/bowerbird/articles/bowerbird.html) by Ben Raymond, Michael Sumner
     - [Persistent config and data for R packages](https://blog.r-hub.io/2020/03/12/user-preferences/#not-so-temporary-files3)
@@ -1046,6 +1131,7 @@ Functions for the creation/generation and analysis of multilayer social networks
 - [Finding the New Age, for Your Age](https://flowingdata.com/2020/08/04/finding-the-new-age-for-your-age/)
 - COOL! [loadtest](https://github.com/alexfernandez/loadtest). Runs a load test on the selected HTTP or WebSockets URL. The API allows for easy integration in your own tests.
 	- [loadtest-plotter](https://github.com/ahsan/loadtest-plotter). Visualize results of npm's loadtest module.
+- [#12 - Алексей Зиновьев - Машинное обучение изнутри Спарка и Игнайта](https://soundcloud.com/javaswag/12-aleksey-zinovev-mashinnoe-obuchenie-iznutri-sparka-i-ignayta)
 
 ## MS SQL
 - [Error "Invalid descriptor index" when collecting a table with a blob column in the middle #309](https://github.com/r-dbi/odbc/issues/309)
@@ -5242,6 +5328,7 @@ The second -exec renames the zipped files to the original names
 df -Th | sort
 du -sh * | sort -n
 ```
+- [How to split a gzip file to several small ones on Linux?](https://www.systutorials.com/how-to-split-a-gzip-file-to-several-small-ones-on-linux/)
 
 
 ## R

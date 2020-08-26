@@ -230,7 +230,8 @@ Make fake data, supporting addresses, person names, dates, times, colors, coordi
 - [a ggplot2 grammar guide](https://evamaerey.github.io/ggplot2_grammar_guide/a	bout) by Gina Reynolds
 - COOL! [tidyexplain. Tidy Animated Verbs](https://www.garrickadenbuie.com/project/tidyexplain/)
 - [ggdist](https://mjskay.github.io/ggdist/) Visualizations of Distributions and Uncertainty
-
+- COOL! [A bar chart 5 ways in ggplot2](https://themockup.blog/posts/2020-08-05-a-bar-chart-5-ways/)
+- [ggplot2 3.3.0](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/)
 
 
 
