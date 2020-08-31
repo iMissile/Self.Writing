@@ -232,6 +232,12 @@ Make fake data, supporting addresses, person names, dates, times, colors, coordi
 - [ggdist](https://mjskay.github.io/ggdist/) Visualizations of Distributions and Uncertainty
 - COOL! [A bar chart 5 ways in ggplot2](https://themockup.blog/posts/2020-08-05-a-bar-chart-5-ways/)
 - [ggplot2 3.3.0](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/)
+- COOL! Попытка нарисовать контуры в полярных координатах привела к массе вопросов. Частичные ответы про интерполяцию по сетке: [Contour levels corresponding to variable levels in ggplot2](https://stackoverrun.com/ru/q/9812655)
+```
+   # теперь готовим матрицу для градиентной заливки
+   # берем идеи отсюда: http://stackoverflow.com/questions/24410292/how-to-improve-interp-with-akima
+   # и отсюда: http://www.kevjohnson.org/making-maps-in-r-part-2/
+```
 
 
 

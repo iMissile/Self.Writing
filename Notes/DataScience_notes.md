@@ -302,6 +302,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 - COOL! [MilesMcBain/friendlyeval](https://github.com/MilesMcBain/friendlyeval). A friendly interface to tidyeval/rlang that will excuse itself when you're done.
 	- [Solving the Challenge of Tidyeval](https://milesmcbain.xyz/solving-the-challenge-of-tidyeval/) by Miles McBain | 23 May 2018
 	- [The Roots of Quotation](https://milesmcbain.xyz/the-roots-of-quotation/) by Miles McBain | 26 Jul 2018
+- COOL! [BRODIE GASLAM. ON QUOSURES Quosures?](https://www.brodieg.com/2020/08/11/quosures/)
 - [About lazy evaluation](https://colinfay.me/lazyeval/). Прекрасная полновесная статья.
 - [What is tidy eval and why should I care?](https://thisisnic.github.io/2018/03/29/what-is-tidy-eval-and-why-should-i-care/).
 	- Перепечатка на Mango Solution: [What is tidy eval and why should I care?](https://www.mango-solutions.com/blog/what-is-tidy-eval-and-why-should-i-care)
@@ -926,6 +927,37 @@ Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'P
 - [brodieG/vetr](https://github.com/brodieG/vetr) Trust, but Verify
 
 
+# 31.08.2020
+## DS
+- COOL! [Docker best practices with Node.js](https://dev.to/nodepractices/docker-best-practices-with-node-js-4ln4)
+
+# 29.08.2020
+## R
+- COOL! [emilyriederer/Rtistic](https://github.com/emilyriederer/rtistic). A hackathon-in-a-box / "cookbook" to help build an R package with custom RMarkdown themes and ggplot2 themes & palettes. This looks like a package but it is not intended to be installed as-is. It is a wireframe to be used by an individual or group to create their *own* package!
+- Slides, Part 1. [Build your own universe. Scale high-quality research data provisioning with R packages](https://build-your-own-universe.netlify.app/#1)
+- Slides, Part 2. [Scaling provisioning by scaling people](https://build-your-own-universe.netlify.app/part-two.html#1)
+- COOL! [Data Science in the tidyverse, a two-day workshop @ rstudio:conf(2018)](https://github.com/cwickham/data-science-in-tidyverse)
+
+# 28.08.2020
+## R
+- COOL! Короткий интенсивный курс. [Tidymodels, Virtually. An Introduction to Machine Learning with Tidymodels](https://tmv.netlify.app/site/) by Dr. Alison Presmanes Hill
+- [Really enjoying the panelset feature from @grrrck's {xaringanExtra} and color-coding/highlighting from 
+@KellyBodwiz's {flair}. They can be quite powerful when combined! #rstats](https://twitter.com/_bcullen/status/1298825077719351298)
+- [johncassil/stringr.plus](https://github.com/johncassil/stringr.plus)
+- [Julia Evans. Blogs I like](https://jvns.ca/blogroll/)
+Here are some of my favourite tech blogs. For each one I’ve linked to a specific blog post that I particularly liked.
+- [Complex Numbers in R, Part I](http://www.oranlooney.com/post/complex-r/)
+
+# 27.08.2020
+## R
+- [magrittr 2.0 is coming soon](https://www.tidyverse.org/blog/2020/08/magrittr-2-0/)
+- [shiny.worker: Speed Up R Shiny Apps by Offloading Heavy Calculations](https://appsilon.com/shiny-worker-package/)
+- COOL! [Toniiiio/imageclipr](https://github.com/Toniiiio/imageclipr). RStudio Addin: Copy Image from Clipboard into RMarkdown .Rmd file
+- [A Million Lines of Bad Code](http://varianceexplained.org/programming/bad-code/)
+- [equatiomatic: Transform Models into LaTeX Equations](https://datalorax.github.io/equatiomatic/)
+- [Panelset in xaringan](https://pkg.garrickadenbuie.com/xaringanExtra/#/panelset?id=use-in-r-markdown)
+
+
 # 25.08.2020
 ## R
 - Для пакета `fst` управление количеством используемых ядер идет либо через опции, либо отдельной командой:
@@ -938,7 +970,7 @@ Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'P
 - https://clauswilke.com/sinab/#installation
 
 
-# 23.08.2020
+ 23.08.2020
 ## R
 - Slides [How to name files](https://speakerdeck.com/jennybc/how-to-name-files) by Jennifer (Jenny) Bryan
 - Slides [Easy Flipbook Recipes with {flipbookr} and {xaringan}](https://evamaerey.github.io/flipbooks/flipbook_recipes#1)
