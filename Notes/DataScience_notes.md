@@ -213,6 +213,7 @@ A simpler, faster alternative to git-filter-branch for deleting big files and re
 - ebook. [Fundamentals of Data Visualization](https://serialmentor.com/dataviz/) by Claus O. Wilke
 - ebook. [Data Visualization. A practical introduction](https://socviz.co/) by Kieran Healy
 - ebook. [Pack YouR Code](https://www.gastonsanchez.com/packyourcode/) by Gaston Sanchez
+- [BigBookofR](https://github.com/oscarbaruffa/BigBookofR) or [Big Book of R](https://www.bigbookofr.com/). The biggest collection of R books (and maybe later some other resources too)
 
 
 # VPN
@@ -806,6 +807,7 @@ Colored terminal output on terminals that support 'ANSI' color and highlight cod
 Fully saturated RGB rainbow colors are still widely used in scientific visualizations despite their widely-recognized disadvantages. A recent wild-caught example is presented, showing its limitations along with a better HCL-based alternative palette.
 - JUST [R]AMBLING. [BUILT-IN COLOUR NAMES IN R](https://chichacha.netlify.com/2019/09/08/mysterious-colour-names-in-r/)
 - [thomasp85/scico](https://github.com/thomasp85/scico). Palettes for R based on the Scientific Colour-Maps
+- [The super fast color schemes generator!](https://coolors.co/). Create the perfect palette or get inspired by thousands of beautiful color schemes.
 
 
 # R useful plugins
@@ -926,6 +928,92 @@ Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'P
 - COOL! [Appsilon/data.validator](https://github.com/Appsilon/data.validator). validate your data and create nice reports straight from R
 - [brodieG/vetr](https://github.com/brodieG/vetr) Trust, but Verify
 
+
+# 09.09.2020
+## LaTeX
+- [Overleaf Keyboard Shortcuts](https://www.overleaf.com/latex/templates/overleaf-keyboard-shortcuts/qykqfvmxdnjf)
+
+## R
+- COOL! [trinker/numform](https://github.com/trinker/numform). tools to assist in the formatting of numbers and plots for publication
+- [Embedding flexdashboard in pkgdown site](https://ramikrispin.github.io/2020/09/embedding-flexdashboard-in-pkgdown-site/)
+- COOL! [From Power Calculations to P-Values: A/B Testing at Stack Overflow](https://juliasilge.com/blog/ab-testing/)
+- COOL! [10+ Guidelines for Better Tables in R](https://themockup.blog/posts/2020-09-04-10-table-rules-in-r/). Make tables people ACTUALLY want to read.
+- COOL! [dplyr 1.0.0: working across columns](https://www.tidyverse.org/blog/2020/04/dplyr-1-0-0-colwise/)
+- [Interesting new features appearing in #rstats r-devel.](https://twitter.com/BrodieGaslam/status/1303413550950612992?s=20)  We can now inspect doubles directly in R (note this was _just_ added).
+Examples from `example(packBits)`
+- Slides. [The R Inferno](https://rinfernotes.netlify.app/#1). Content bySlides by Maya Gans
+- [Introduction to Stan in R](https://blog.methodsconsultants.com/posts/introduction-to-stan-in-r/). Stan is a programming language for specifying statistical models. It is most used as a MCMC sampler for Bayesian analyses. Markov chain Monte Carlo (MCMC) is a sampling method that allows you to estimate a probability distribution without knowing all of the distribution’s mathematical properties.
+- [Quick example of interactive {reactable} table w/ dual dynamic palettes in #rstats](https://gist.github.com/jthomasmock/e97ddd78f108bed5b3b95679b99c0a37)
+- reactable. [Show data from other columns](https://glin.github.io/reactable/articles/cookbook/cookbook.html#show-data-from-other-columns-1)
+- Learning [Introducing RStudio and R Markdown](ppng.fun/introduce-r). Gettin’ giffy wit it.
+
+## python
+- [What’s new in each version of seaborn](https://seaborn.pydata.org/whatsnew.html). [Announcing the release of seaborn 0.11](https://medium.com/@michaelwaskom/announcing-the-release-of-seaborn-0-11-3df0341af042)
+
+# 08.09.2020
+## R
+- Slides [That Feeling of Workflowing](https://github.com/MilesMcBain/nycr_meetup_talk)
+- [R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
+- [Column Names as Contracts](https://emilyriederer.netlify.app/post/column-name-contracts/)
+- [Quick example of interactive {reactable} table w/ dual dynamic palettes in #rstat](https://twitter.com/thomas_mock/status/1303005420982693889?s=20)
+- COOL! [Understanding Entanglement With SVD](https://www.math3ma.com/blog/understanding-entanglement-with-svd)
+- [Sever](https://sever.john-coene.com/sever/). Sever will let you customise the Shiny disconnected screen.
+- [Easiest flowcharts eveR?](http://gforge.se/2020/08/easy-flowchart/)
+- COOL! [I was today years old when I discovered that `Ctrl+Alt+K` finds and selects all instances of the word under the cursor on the page in the @rstudio IDE.](https://twitter.com/_TanHo/status/1303304208695930880?s=20) (This is undocumented in the shortcuts page, for some reason!) #rstats 
+
+# 07.09.2020
+## R
+- ['darkmode.js' for 'Shiny'](https://github.com/ColinFay/darkmode)
+- [{treeheatr}](https://trang1618.github.io/treeheatr/). an R package for interpretable decision tree visualizations
+- [Heatmap-integrated Decision Tree Visualizations](https://github.com/trang1618/treeheatr)
+- [Join tables based on events occurring in sequence in a funnel](https://github.com/robinsones/funneljoin)
+- [RStudio Addins to Simplify Markdown Writing](https://github.com/ThinkR-open/remedy)
+- [Looking at the bits of a Unicode (UTF-8) text file](https://www.johndcook.com/blog/2020/09/06/unicode-file-bits/)
+- [Feather Icons for Shiny](https://github.com/ColinFay/feathericons)
+- COOL! [Advanced Plots with str_glue()](https://www.exploringdata.org/post/advanced-plots-in-r-with-str_glue/)
+- [R: wrap text function: inserting \n automatically after every 16 characters](https://stackoverflow.com/questions/41642143/r-wrap-text-function-inserting-n-automatically-after-every-16-characters)
+- [Wrap strings into nicely formatted paragraphs](https://stringr.tidyverse.org/reference/str_wrap.html)
+
+# 04.09.2020
+## DS
+- [RUINED BY DESIGN](https://www.ruinedby.design/). A design ethics and activism book by Mike Monteiro
+- COOL! [Introducing Danfo.js, a Pandas-like Library in JavaScript](https://blog.tensorflow.org/2020/08/introducing-danfo-js-pandas-like-library-in-javascript.html)
+- [Как работать с метками времени (timestamp) в PostgreSQL?](https://habr.com/ru/post/273177/)
+
+## R
+- COOL! [Data tables in R](https://rpubs.com/raysunau/datatable_viz_in_R) by Ray Sun, 10/06/2020
+- [dataui and reactable](https://timelyportfolio.github.io/dataui/articles/dataui_reactable.html)
+- [Is there a way to embed a ggplot image dynamically by row (like a sparkline) using the gt package?](https://stackoverflow.com/questions/61741440/is-there-a-way-to-embed-a-ggplot-image-dynamically-by-row-like-a-sparkline-usi)
+- Устанавливаем домашнюю директорию в место расположения скрипта:
+```
+# делаем привязку рабочей директории ----------------
+start_path <- normalizePath(getwd())
+script_path <- rprojroot::thisfile() %>%
+  fs::path_real() %>%
+  fs::path_dir()
+
+checkmate::qassert(script_path, "S1[1,)")
+# жестко сажаем рабочую директорию в локацию запускаемого скрипта
+setwd(script_path)
+```
+- [Deploying flexdashboard on Github Pages](https://ramikrispin.github.io/2020/09/deploying-flexdashboard-on-github-pages/)
+- [The super fast color schemes generator!](https://coolors.co/) Create the perfect palette or get inspired by thousands of beautiful color schemes.
+
+# 03.09.2020
+## R
+- [K-means clustering with tidy data principles](https://www.tidymodels.org/learn/statistics/k-means/)
+- [Sentinels can be faster](https://lemire.me/blog/2020/09/03/sentinels-can-be-faster/)
+- [How to interpret a p-value histogram](http://varianceexplained.org/statistics/interpreting-pvalue-histogram/#disqus_thread)
+- [Recover is the apex R debugging method](https://milesmcbain.micro.blog/2020/09/03/recover-is-the.html). `options(error = recover)`
+- COOL! [jsonptr: Using Wuffs’ Memory-Safe, Zero-Allocation JSON Decoder](https://nigeltao.github.io/blog/2020/jsonptr.html)
+- Slides [Column-wise operations with dplyr: Old and New](https://columnwise-operations-dplyr.netlify.app/#1)
+- COOL! Исправляем кодировки строк. [`stri_trans_nfc {stringi}`]. Perform or Check For Unicode Normalization
+
+# 02.09.2020
+## R
+- COOL! [All materials for our "Antarctic Tour of the Tidyverse" are now available!](https://twitter.com/spcanelon/status/1300875114511302657?s=20). Slides: [An Antarctic Tour of the Tidyverse. R-Ladies Chicago](https://spcanelon.github.io/2020-rladies-chi-tidyverse/#1)
+- COOL! [An introduction to weather forecasting with deep learning](https://blogs.rstudio.com/ai/posts/2020-09-01-weather-prediction/)
+- COOL! [Sharing Your xaringan Slides](https://www.garrickadenbuie.com/blog/sharing-xaringan-slides/) by Garrick Aden-Buie, Tuesday, 1 September 2020
 
 # 31.08.2020
 ## DS
@@ -1409,6 +1497,7 @@ Also, see:
 - [Computational Reproducibility: from theory to practice](https://annakrystalli.me/talks/user2020.html#1)
 - [Sharing on Short Notice](https://rstudio-education.github.io/sharing-short-notice/#1) - Alison Hill
 - [Your Slides are So Extra! Extra-Special Presentations with xaringanExtra](https://slides.garrickadenbuie.com/extra-special-xaringan/#1) by Garrick Aden-Buie
+- [Course material for useR! 2020 Rspatial tutorial](https://github.com/statnmap/user2020_rspatial_tutorial) by S. Rochette, D. Scott, J. Nowosad
 
 # 09.07.2020
 
@@ -1854,6 +1943,7 @@ The project_mru file is just a text file that you can edit manually. You don't e
 	- COOL! [gt - a (G)rammar of (T)ables](https://themockup.blog/posts/2020-05-16-gt-a-grammer-of-tables/). Not to be confused with a Game of Thrones
 	- COOL! [reactable - An Interactive Tables Guide](https://themockup.blog/posts/2020-05-13-reactable-tables-the-rest-of-the-owl/)
 	- COOL! [Building a blog with distill](https://themockup.blog/posts/2020-08-01-building-a-blog-with-distill/). I love simplicity.
+	- COOL! [10+ Guidelines for Better Tables in R](https://themockup.blog/posts/2020-09-04-10-table-rules-in-r/). Make tables people ACTUALLY want to read.
 - COOL! [How to write trycatch in R](https://stackoverflow.com/questions/12193779/how-to-write-trycatch-in-r)
 - COOL! [ColinFay/attempt](https://github.com/ColinFay/attempt). Tools for defensive programming in R
 

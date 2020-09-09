@@ -1,3 +1,6 @@
+# Установка Windows с диска
+- COOL! Лучшее решение. [Rufus](https://rufus.ie/ru_RU.html). Простое создание загрузочных USB-дисков
+
 # Package manager
 - COOL! [Chocolatery. The Package Manager for Windows](https://chocolatey.org/). Modern Software Automation
 

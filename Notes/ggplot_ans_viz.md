@@ -238,7 +238,7 @@ Make fake data, supporting addresses, person names, dates, times, colors, coordi
    # берем идеи отсюда: http://stackoverflow.com/questions/24410292/how-to-improve-interp-with-akima
    # и отсюда: http://www.kevjohnson.org/making-maps-in-r-part-2/
 ```
-
+- [Remove 'a' from legend when using aesthetics and geom_text](https://stackoverflow.com/questions/18337653/remove-a-from-legend-when-using-aesthetics-and-geom-text)
 
 
 
