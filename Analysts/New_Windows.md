@@ -23,6 +23,11 @@
 # Скачивание произвольного образа Windows
 - [](https://tb.rg-adguard.net/public.php)
 
+# Переключение между мониторами в Windows 10
+- [Переключение между мониторами в Windows 10](https://realadmin.ru/admining/pereklyuchenie-mezhdu-monitorami.html).
+Быстро переключиться между основным и дополнительным монитором позволяют горячие клавиши Win + P. В Windows 10 эта комбинация вызывает меню «Проецировать», где можно выбрать режим отображения экранов.
+- [Перемещение окон между мониторами](https://realadmin.ru/admining/pereklyuchenie-mezhdu-monitorami.html). Перемещение программ и окон на другой монитор может осуществляться обычным перетаскиванием мыши, но есть и более удобный способ. В Windows 10 для этого существуют горячие клавиши: Win + Shift + стрелка вправо/влево. Например, если одновременно нажать Win + Shift и левую стрелку, то окно с активной программой перенесется на левый дисплей.
+
 # Настройка приложений Windows 10
 - [Как включить всем привычный Просмотр Фотографий в Windows 10](http://g-ek.com/prosmotr-fotografij-v-windows-10)
 - [iPhone или iPad не синхронизируется с компьютером?](http://appleinsider.ru/iphone/iphone-ili-ipad-ne-sinxroniziruetsya-s-kompyuterom-est-reshenie.html) Есть решение. Если вы столкнулись с подобной проблемой, может помочь сброс папки Lockdown на Mac или Windows

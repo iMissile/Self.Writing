@@ -929,6 +929,15 @@ Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'P
 - [brodieG/vetr](https://github.com/brodieG/vetr) Trust, but Verify
 
 
+# 10.09.2020
+## R
+- COOL! [How GPL makes me leave R for Python :-(](https://r-posts.com/how-gpl-makes-me-leave-r-for-python/)
+- [Persistent config and data for R packages](https://blog.r-hub.io/2020/03/12/user-preferences/#not-so-temporary-files3)
+- [annotater](https://luisdva.github.io/rstats/annotater/)
+- [Ten quick tips for teaching with participatory live coding](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008090)
+- [RStudio addin for wrapping RMarkdown paragraphs](https://github.com/tjmahr/WrapRmd)
+- [Debunking R and Python Myths: Answering Your Questions](https://blog.rstudio.com/2020/09/10/dispelling-r-and-python-myths-qanda/)
+
 # 09.09.2020
 ## LaTeX
 - [Overleaf Keyboard Shortcuts](https://www.overleaf.com/latex/templates/overleaf-keyboard-shortcuts/qykqfvmxdnjf)
