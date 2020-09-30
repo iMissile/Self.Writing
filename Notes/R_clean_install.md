@@ -212,6 +212,12 @@ libobjc-7-dev \
 libobjc4
 ```
 
+Пакет, нужный для plumber 1.x
+```
+sudo apt-get install \
+libsodium-dev
+```
+
 # x11-xserver-utils
 
 

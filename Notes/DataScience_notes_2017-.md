@@ -1798,9 +1798,6 @@ rhandsontable is a htmlwidget based on the `handsontable.js` library.
 - COOL! [Caching httr Requests? This means WAR[C]!](https://rud.is/b/2017/08/22/caching-httr-requests-this-means-warc/)
 - COOL! [Some Neat New R Notations](http://www.win-vector.com/blog/2017/08/some-neat-new-r-notations/)
 - COOL! [seplyr](https://winvector.github.io/seplyr/articles/seplyr.html) by John Mount, 2017-08-22
-- Logging function name
-	- [Logging current function name](https://stackoverflow.com/questions/7307987/logging-current-function-name)
-	- [How to get the name of the calling function inside the called routine?](https://stackoverflow.com/questions/15595478/how-to-get-the-name-of-the-calling-function-inside-the-called-routine)
 - Closures:
 	- [Functional programming. Closures](http://adv-r.had.co.nz/Functional-programming.html#closures). 
 “An object is data with functions. A closure is a function with data.” — John D. Cook
@@ -3398,7 +3395,6 @@ UniversalPOS annotation for languages: Ancient_Greek, Ancient_Greek-PROIEL, Arab
 ## R
 - [Adding figure labels (A, B, C, …) in the top left corner of the plotting region](https://logfc.wordpress.com/2017/03/15/adding-figure-labels-a-b-c-in-the-top-left-corner-of-the-plotting-region/)
 - [Why I love R Notebooks](https://www.rstudio.com/rviews/2017/03/15/why-i-love-r-notebooks/)
-- [Improved Python-style Logging in R](http://mazamascience.com/WorkingWithData/?p=1759)
 - [FrissAnalytics/shinyJsTutorials](https://github.com/FrissAnalytics/shinyJsTutorials). tutorials materials on R/Shiny bindings to popular javascript libraries
 
 ## R решаем задачку пилота
@@ -4030,8 +4026,6 @@ If you want all functions in the package, including the ones accessible via :::,
 ## R
 - [How to run R scripts from the command line](https://support.rstudio.com/hc/en-us/articles/218012917-How-to-run-R-scripts-from-the-command-line)
 - [How to suppress warning messages when loading a library?](http://stackoverflow.com/questions/18931006/how-to-suppress-warning-messages-when-loading-a-library)
-- [Python style logging in R](http://mazamascience.com/WorkingWithData/?p=1727)
-- [Better logging in R (aka futile.logger 1.3.0 released)](https://cartesianfaith.com/2013/03/10/better-logging-in-r-aka-futile-logger-1-3-0-released/)
 
 # 23.01.2017
 ## Bash
@@ -6404,12 +6398,6 @@ I get Error: `Invalid input: time_trans works with objects of class POSIXct only
 ## R
 - [Check for installed packages before running install.packages()](http://stackoverflow.com/questions/9341635/check-for-installed-packages-before-running-install-packages)
 - [Elegant way to check for missing packages and install them?](http://stackoverflow.com/questions/4090169/elegant-way-to-check-for-missing-packages-and-install-them)
-- Logging
-	- [A futile try/catch.](https://cartesianfaith.com/2013/05/29/futile-logger-1-3-3-rc-available/) It is now possible to capture non-futile warnings and errors by wrapping a block in ftry, which is essentially a wrapper around tryCatch.
-	- [futile.logger is a logging utility for R.](https://github.com/zatonovo/futile.logger) Originally built based on log4j, the latest version introduces a new API that is more consistent with R idioms. In practice this means an interface that works equally well in the shell for interactive use and also in scripts for system use.
-	- [How to log using futile logger from within a parallel method in R?](http://stackoverflow.com/questions/20930112/how-to-log-using-futile-logger-from-within-a-parallel-method-in-r)
-	- [logR -- Extended logging solution](https://github.com/jangorecki/logR).
-	- [Is there any standard logging package for R?](http://stackoverflow.com/questions/1928332/is-there-any-standard-logging-package-for-r)
 
 ## Shiny
 - [How can I save the result of str() as a string in R?](http://stackoverflow.com/questions/30964224/how-can-i-save-the-result-of-str-as-a-string-in-r). `capture.output` will create a character vector (one element for each line printed to the console). If you want it in one string, you could concatenate it with paste(foo, collapse="\n").

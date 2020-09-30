@@ -214,6 +214,8 @@ A simpler, faster alternative to git-filter-branch for deleting big files and re
 - ebook. [Data Visualization. A practical introduction](https://socviz.co/) by Kieran Healy
 - ebook. [Pack YouR Code](https://www.gastonsanchez.com/packyourcode/) by Gaston Sanchez
 - [BigBookofR](https://github.com/oscarbaruffa/BigBookofR) or [Big Book of R](https://www.bigbookofr.com/). The biggest collection of R books (and maybe later some other resources too)
+- ebook. [Tidy Modeling with R[(https://www.tmwr.org/) by MAX KUHN AND JULIA SILGE
+- [Principles of Econometrics with R](https://bookdown.org/ccolonescu/RPoE4/panel-data-models.html)
 
 
 # VPN
@@ -529,6 +531,7 @@ Also, in case you would not wish to change the data.table, but merely return the
 ```
 dt[,.SD, .SDcols = !c('b', 'c')]
 ```
+- LOCF/NOCB. LOCF = "Last Observation Carried Forward". NOCB = "Next Observation Carried Backward".
 
 # DS
 - COOL! [Машинное обучение для людей. Разбираемся простыми словами](https://vas3k.ru/blog/machine_learning/)
@@ -656,6 +659,7 @@ Theming in Rmarkdown can be hard. You first made some custom CSS or use a provid
 - [Creating Dynamic Documents with RMarkdown and Knitr](http://rpubs.com/ivim/Rmd-v1)
 - COOL! [Demo: {crosstalk} materials for a talk at EARL London 2018](https://github.com/matt-dray/earl18-crosstalk)
 - [Crosstalk](https://rstudio.github.io/crosstalk/). Crosstalk is an add-on to the htmlwidgets package. It extends htmlwidgets with a set of classes, functions, and conventions for implementing cross-widget interactions (currently, linked brushing and filtering).
+- [crosstalk Tutorial](https://emilyriederer.github.io/demo-crosstalk/tutorial/tutorial-rmd.html). This tutorial will help you learn to use the crosstalk package to link different htmlwidgets. After completing this tutorial, you will be able to build an application like the one below, which visualizes the number of rides at a sample of Chicago train stations in 2019 versus 2020.
 - COOL! [How I share knowledge around R Markdown](https://themockup.blog/posts/2020-07-25-meta-rmarkdown/). A meta collection of some R Markdown strategies.
 - COOL! [How I Teach R Markdown](https://alison.rbind.io/post/2020-05-28-how-i-teach-r-markdown/) by Alison Hill
 - [Distill for R Markdown](https://rstudio.github.io/distill/). Scientific and technical writing, native to the web
@@ -808,6 +812,9 @@ Fully saturated RGB rainbow colors are still widely used in scientific visualiza
 - JUST [R]AMBLING. [BUILT-IN COLOUR NAMES IN R](https://chichacha.netlify.com/2019/09/08/mysterious-colour-names-in-r/)
 - [thomasp85/scico](https://github.com/thomasp85/scico). Palettes for R based on the Scientific Colour-Maps
 - [The super fast color schemes generator!](https://coolors.co/). Create the perfect palette or get inspired by thousands of beautiful color schemes.
+- [tomasokal/rtist](https://github.com/tomasokal/rtist). Color palettes from famous artists and paintings.
+- COOL! [tmaptools::palette_explorer() is kind of fun #rstats](https://twitter.com/sharon000/status/1310757369798955008?s=20). `tmaptools::palette_explorer()`
+
 
 
 # R useful plugins
@@ -928,6 +935,198 @@ Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'P
 - COOL! [Appsilon/data.validator](https://github.com/Appsilon/data.validator). validate your data and create nice reports straight from R
 - [brodieG/vetr](https://github.com/brodieG/vetr) Trust, but Verify
 
+
+# Logging
+- COOL! [logger: A Lightweight, Modern and Flexible Logging Utility](https://cran.r-project.org/web/packages/logger/index.html). Inspired by the the 'futile.logger' R package and 'logging' Python module, this utility provides a flexible and extensible way of formatting and delivering log messages with low overhead.
+- [How to log using futile logger from within a parallel method in R?](http://stackoverflow.com/questions/20930112/how-to-log-using-futile-logger-from-within-a-parallel-method-in-r)
+- [logR -- Extended logging solution](https://github.com/jangorecki/logR).
+- [Is there any standard logging package for R?](http://stackoverflow.com/questions/1928332/is-there-any-standard-logging-package-for-r)
+- [ParallelLogger](https://ohdsi.github.io/ParallelLogger/articles/Logging.html). Logging using ParallelLogger
+- [Logging Warning Messages and Errors from R](https://doc-archives.microstrategy.com/producthelp/10.11/RIntegrationPack/WebHelp/Lang_1033/Content/Logging_warning_messages.htm)
+- [Where does the output of Rscript go? stdin, stdout, stderr](https://blog.rmhogervorst.nl/blog/2020/04/14/where-does-the-output-of-rscript-go/)
+- [Logging in R: Why, When, and How](https://mathewanalytics.com/logging-in-r-why-when-and-how/) By Abraham Mathew / June 16, 2020 / data.table, R
+- [Stackify Retrace](Get More Insights with Integrated Logging & Code Profiling). Get More Insights with Integrated Logging & Code Profiling
+- [Log all warnings with futile.logger](https://stackoverflow.com/questions/40920616/log-all-warnings-with-futile-logger)
+- futile.logger ticket [Capture warning(), etc. #36 {Open}](https://github.com/zatonovo/futile.logger/issues/36)
+- loggr. [Easy and flexible logging for R](https://github.com/smbache/loggr)
+- [Effortless but Powerful Exception Logging in R: loggit! 1.0.0 Released on CRAN](https://anotherblogaboutr.blogspot.ru/2018/02/effortless-but-powerful-exception_20.html)
+- [Adding logging to a shiny app with loggit](http://rmhogervorst.nl/cleancode/blog/2018/02/28/adding-json-logging-to-shiny-app.html)
+- COOL! [Effortless but Powerful Exception Logging in R: loggit! 1.0.0 Released on CRAN](https://anotherblogaboutr.blogspot.ru/2018/02/effortless-but-powerful-exception_20.html)
+- Logging in parallel:
+	- [How to log using futile logger from within a parallel method in R?](https://stackoverflow.com/questions/20930112/how-to-log-using-futile-logger-from-within-a-parallel-method-in-r)
+	- [How to log when using foreach (print or futile.logger)](https://stackoverflow.com/questions/38828344/how-to-log-when-using-foreach-print-or-futile-logger)
+	- [Printing from mclapply in R Studio](https://stackoverflow.com/questions/17345837/printing-from-mclapply-in-r-studio)
+	- [For troubleshooting, you can get more details on what's going on under the hood by setting `option(future.debug = TRUE)`.](https://stackoverflow.com/questions/48131779/execution-of-future-package-in-r-results-in-an-endless-waiting-time)
+- [lgr](https://s-fleck.github.io/lgr/) is a logging package for R built on the back of R6 classes. It is designed to be flexible, performant and extensible. The package vignette contains a comprehensive description of the features of lgr (some of them unique among R logging packages) along with many code examples.
+- [logger](https://daroczig.github.io/logger/)
+A lightweight, modern and flexibly logging utility for R – heavily inspired by the futile.logger R package and logging Python module.
+- [jangorecki/logR](https://github.com/jangorecki/logR). Extended logging solution for R http://jangorecki.gitlab.io/logR
+- Logging function name
+	- [Logging current function name](https://stackoverflow.com/questions/7307987/logging-current-function-name)
+	- [How to get the name of the calling function inside the called routine?](https://stackoverflow.com/questions/15595478/how-to-get-the-name-of-the-calling-function-inside-the-called-routine)
+- [Python style logging in R](http://mazamascience.com/WorkingWithData/?p=1727)
+- [Better logging in R (aka futile.logger 1.3.0 released)](https://cartesianfaith.com/2013/03/10/better-logging-in-r-aka-futile-logger-1-3-0-released/)
+- Logging
+	- [A futile try/catch.](https://cartesianfaith.com/2013/05/29/futile-logger-1-3-3-rc-available/) It is now possible to capture non-futile warnings and errors by wrapping a block in ftry, which is essentially a wrapper around tryCatch.
+	- [futile.logger is a logging utility for R.](https://github.com/zatonovo/futile.logger) Originally built based on log4j, the latest version introduces a new API that is more consistent with R idioms. In practice this means an interface that works equally well in the shell for interactive use and also in scripts for system use.
+	- [How to log using futile logger from within a parallel method in R?](http://stackoverflow.com/questions/20930112/how-to-log-using-futile-logger-from-within-a-parallel-method-in-r)
+	- [logR -- Extended logging solution](https://github.com/jangorecki/logR).
+	- [Is there any standard logging package for R?](http://stackoverflow.com/questions/1928332/is-there-any-standard-logging-package-for-r)
+- [Improved Python-style Logging in R](http://mazamascience.com/WorkingWithData/?p=1759)
+- [Log all warnings with futile.logger](https://stackoverflow.com/questions/40920616/log-all-warnings-with-futile-logger)
+- [aryoda/tryCatchLog](https://github.com/aryoda/tryCatchLog)
+- COOL! [Introduction into conditions in standard R](https://cran.r-project.org/web/packages/tryCatchLog/vignettes/tryCatchLog-intro.html)
+- [Beyond Exception Handling: Conditions and Restarts](http://adv-r.had.co.nz/beyond-exception-handling.html)
+- [Establish handlers on the stack](https://rlang.r-lib.org/reference/with_handlers.html)
+
+
+# 30.09.2020
+## R
+- [Exciting updates to my top 4 Shiny packages](https://deanattali.com/blog/4shinyupdates/)
+- [exactextractr](https://isciences.gitlab.io/exactextractr/) is an R package that quickly and accurately summarizes raster values over polygonal areas, commonly referred to as zonal statistics. 
+- [Exploratory data analysis with categorical data](https://www.cesargamboasanabria.com/en/post/2019-06-23-exploraci%C3%B3n-de-datos-categ%C3%B3ricos-con-el-paquete-inspectdf/). The inspecdf package as a tool for descriptive analysis
+
+# 28.09.2020
+## R
+- [JSON pretty printer & viewer in R](https://github.com/hrbrmstr/jsonview)
+- [listviewer: 'htmlwidget' for Interactive Views of R Lists](https://cran.r-project.org/web/packages/listviewer/index.html)
+- [usemodels 0.0.1](https://www.tidyverse.org/blog/2020/09/usemodels-0-0-1/)
+- [How to deliver learnr tutorials in a package](https://education.rstudio.com/blog/2020/09/delivering-learnr-tutorials-in-a-package/)
+- COOL! [R’s dplyr and data.table 2x faster than Julia’s DataFrames.jl + libraries](https://discourse.julialang.org/t/rs-dplyr-and-data-table-2x-faster-than-julias-dataframes-jl-libraries/47465)
+
+## Process mining
+- [ProM Tips — Which Mining Algorithm Should You Use? ](https://fluxicon.com/blog/2010/10/prom-tips-mining-algorithm/#:~:text=The%20Fuzzy%20miner%20is%20one,activities%20and%20highly%20unstructured%20behavior.)
+
+## MT-X5
+- [Докеры R](). Репозиторий x5-docker
+- Как сделать реплику в несколько репозиториев? `git remote add X5` (ссылка)
+- Обновил стенд МФСМ на http://10.0.1.238:8081/
+- список демонстрационных стендов и описание к ним (в будущем) будут жить [здесь](https://wiki.media-tel.ru/pages/viewpage.action?pageId=62717975)
+- Стенд rzd-clickhouse актуализирован до рабочего состояния. http://10.0.1.238:3838/rzd-clickhouse/
+- [Внутренний git Заказчика](https://wiki.media-tel.ru/pages/viewpage.action?pageId=57802756)
+- [git. Adding a remote](https://docs.github.com/en/free-pro-team@latest/github/using-git/adding-a-remote)
+
+
+# 25.09.2020
+## R
+- COOL! [Concept maps for all things data science](https://github.com/rstudio/concept-maps/)
+- [Using Drake for ETL - Building A Shiny Real Estate App](https://www.business-science.io/business/2020/09/24/using-drake-etl.html)
+- [image.textlinedetector: Segment Images in Text Lines and Words](https://cran.r-project.org/web/packages/image.textlinedetector/index.html)
+- [workflowr: organized + reproducible + shareable data science in R](https://jdblischak.github.io/workflowr/)
+- [Anonymize the labels and text in a ggplot2](https://github.com/EmilHvitfeldt/gganonymize)
+- Встраиваем Excel в Rmarkdown отчет: `r xfun::embed_file(path = here::here("output_excel", glue('{as.character(report_date)}_Отчет по пополнению ТСХ-ТСК (Приложение).xlsx')), name = glue('{as.character(report_date)}_Отчет по пополнению ТСХ-ТСК (Приложение).xlsx'), text = "Excel")`.
+
+# 24.09.2020
+## R
+- [How to set up MULTIPLE GitHub Pages websites with custom domains](https://deanattali.com/blog/multiple-github-pages-domains/)
+- COOL! [Exporting editable ggplot graphics to PowerPoint with officer and purrr](https://www.pipinghotdata.com/posts/2020-09-22-exporting-editable-ggplot-graphics-to-powerpoint-with-officer-and-purrr/)
+- [future 1.19.1 - Making Sure Proper Random Numbers are Produced in Parallel Processing](https://www.jottr.org/2020/09/22/push-for-statical-sound-rng/)
+- [The latest version of echarts4r comes with “boxes,” these are similar to flexdashboard valuebox](https://echarts4r.john-coene.com/articles/boxes.html). They work very much like any other echarts4r charts within shiny.
+- [Handle class imbalance in #TidyTuesday climbing expedition data with tidymodels](https://juliasilge.com/blog/himalayan-climbing/)
+- [Impute missing data and handle class imbalance](https://youtu.be/9f6t5vaNyEM)
+- [flow](https://moodymudskipper.github.io/flow/index.html). Visualize as flow diagrams the logic of functions, expressions or scripts and ease debugging.
+- Slides. [xaringanExtra. Extra Special xaringan Presentations](https://pkg.garrickadenbuie.com/xaringanExtra/#/). A playground of extensions for xaringan
+- [What distinguishes dplyr::pull from purrr::pluck and magrittr::extract2?](https://stackoverflow.com/questions/54113879/what-distinguishes-dplyrpull-from-purrrpluck-and-magrittrextract2)
+
+## Git
+- [Clone at Git Repo to a Different Directory](https://til.hashrocket.com/posts/z0f393xq0s-clone-at-git-repo-to-a-different-directory)
+`$ git clone https://github.com/cool_user/codez.git ~/codez-v2`
+
+# 23.09.2020
+## R
+- [Visualizing Real World Data Timelines in R](https://www.themillerlab.io/post/timelines_in_r/)
+- [Creating a Timeline graphic using R and ggplot2](https://benalexkeen.com/creating-a-timeline-graphic-using-r-and-ggplot2/)
+- [vistime - Pretty Timelines](https://cran.r-project.org/web/packages/vistime/vignettes/vistime-vignette.html)
+
+# 22.09.2020
+## R
+- data.table. [License change from GPL to MPL {#2456}](https://github.com/Rdatatable/data.table/pull/2456)
+- [Detect When the Random Number Generator Was Used](https://www.jottr.org/2020/09/21/detect-when-the-random-number-generator-was-used/)
+- [Mean rolling correlation of XLF constituents](https://blog.fosstrading.com/2020/09/xlf-rolling-mean-correlation.html)
+- shinydashboardPlus. [What changes in v2.0.0](https://rinterface.github.io/shinydashboardPlus/articles/shinydashboardPlus.html#what-changes-in-v2-0-0)
+- [A Calendar in Your R Console](https://www.garrickadenbuie.com/blog/r-console-calendar/). Monday, 21 September 2020
+`system("cal")`
+- [How to Explore Data: {DataExplorer} Package](https://www.exploringdata.org/post/how-to-explore-data-dataexplorer-package/), September 16, 2020
+- [pi: predict/infer. Introduction to Stan in R](https://blog.methodsconsultants.com/posts/introduction-to-stan-in-r/)
+- [Structural equation model trees with partykit and lavaan](https://eeecon.uibk.ac.at/~zeileis/news/lavaantree/)
+
+
+# 21.09.2020
+## R
+- [The DuckDB R API ](https://duckdb.org/docs/api/r)
+- [Multi-Armed Bandit With Thompson Sampling](https://predictivehacks.com/multi-armed-bandit-with-thompson-sampling/)
+- Slides. [Working Smarter, Not Harder. Reproducible Analytics + Visualization with R](https://mrworthington.github.io/ctp_skillshare/slides/r_skillshare.html#1)
+
+# 18.09.2020
+## R
+- [Introduction to Generalized Additive Models with R and mgcv](https://github.com/gavinsimpson/intro-gam-webinar-2020). July 30th, 2020
+- Проблема с повторным запуском `flexdashboard` + `shiny`:
+	- [Values in valuebox not showing up after running the app for the second time #279 {Open}](https://github.com/rstudio/flexdashboard/issues/279)
+	- [Reactive plots disappear after browser window refresh #164 {Open}](https://github.com/rstudio/flexdashboard/issues/164)
+	- Вот такая причина оказалась: 
+```
+I've found out what is causing the problem. In my original flexdashborad, when I added runtime: shiny, the text was indented at the same level of the output block. So when I reloaded the flexdashboard - even in RStudio viewer - the rendered outputs would stop working.
+
+When I removed the indentation from runtime:shiny, things got back to normal. So for anyone having this issue, check your indentation on the YAML at the top of the document.
+```
+- [How to check existence of an input argument for R functions](https://stackoverflow.com/questions/9877271/how-to-check-existence-of-an-input-argument-for-r-functions)
+
+
+
+# 16.09.2020
+## R
+- [Data Cleaning IS Analysis, Not Grunt Work](https://counting.substack.com/p/data-cleaning-is-analysis-not-grunt)
+- [FIRST IMPRESSIONS OF JULIA FROM AN R USER](https://mdneuzerling.com/post/first-impressions-of-julia-from-an-r-user/)
+- [gadenbuie/shrtcts](https://github.com/gadenbuie/shrtcts). Make Anything an RStudio Shortcut
+- [100 Time Series Data Mining Questions (with answers!) - Part 1](https://franzbischoff.rbind.io/posts/100-time-series-part-1/)
+- [100 Time Series Data Mining Questions - Part 2](https://franzbischoff.rbind.io/posts/100-time-series-part-2/)
+- [100 Time Series Data Mining Questions - Part 3](https://franzbischoff.rbind.io/posts/100-time-series-part-3/)
+- [R list of lists to data.frame](https://stackoverflow.com/questions/29674661/r-list-of-lists-to-data-frame)
+- [How to 'unlist' a column in a data.table](https://stackoverflow.com/questions/44336733/how-to-unlist-a-column-in-a-data-table)
+
+## DS
+- [How to extract json from json in clickhouse?](https://stackoverflow.com/questions/58819341/how-to-extract-json-from-json-in-clickhouse)
+- COOL! [Array programming with NumPy](https://www.nature.com/articles/s41586-020-2649-2)
+
+# 15.09.2020
+## R
+- FOSS Trading. Algorithmic Trading With Free Open Source Software. [xts_0.12.1 on CRAN](https://blog.fosstrading.com/2020/09/xts-0-12-1-on-cran.html)
+- [rstudio/swagger](https://github.com/rstudio/swagger). Swagger is a collection of HTML, Javascript, and CSS assets that dynamically generate beautiful documentation from a Swagger-compliant API.
+- [plumber 1.0.0. New features. Plumber router](https://www.rplumber.io/news/)
+- [JBGruber/rwhatsapp](https://github.com/JBGruber/rwhatsapp). An R package for working with WhatsApp data
+- [reactlog 1.1.0 2020-09-12](https://rstudio.github.io/reactlog/news/#reactlog-1-1-0-2020-09-12)
+- [Preloader for flexdashboard](https://community.rstudio.com/t/preloader-for-flexdashboard/17985)
+- COOL! Slides. [Building Dashboardswith Shiny and RMarkdown](https://goo.gl/SFrnpy). [Slides на печать](hackmd.io/p/S1511oQAx#/) [Repo](github.com/leoluyi/ptt_give_dashboard)
+- [How do you do block comments in YAML?](https://stackoverflow.com/questions/2276572/how-do-you-do-block-comments-in-yaml)
+- [flexdashboard: Adjust the chart size here as per plot size?](https://community.rstudio.com/t/adjust-the-chart-size-here-as-per-plot-size/41054)
+
+
+# 14.09.2020
+## R
+- [Just learned an amazing #rstats trick: You can embed #learnr apps using `knitr::include_app()` for live coding demos *inside* #xaringan slides!](https://twitter.com/_bcullen/status/1305273775630426112?s=20)
+- [Debugging R in VSCode](https://renkun.me/2020/09/13/debugging-r-in-vscode/)
+- [Combining a table with multiple scatterplots @ {reactable}](https://rquer.netlify.app/interactive_chart/table_plot)
+- [start to {explore}](https://rolkra.github.io/start-to-explore/). What if exploring data in R is just one line of code?
+- [Official repo for the #tidytuesday project](https://github.com/rfordatascience/tidytuesday)
+- [Your Writing, or For Your Swift Email Responses?](https://catapult.co/stories/do-you-want-to-be-known-for-your-writing-or-for-your-swift-email-responses)
+- COOL! Learning. [DAGs with dagitty.net](https://evalf20.classes.andrewheiss.com/example/dags/)
+The easiest way to quickly build DAGs and find adjustment sets and testable implications is to use dagitty.net.
+- [Fake Data with R](https://rviews.rstudio.com/2020/09/09/fake-data-with-r/) by Joseph Rickert, 2020-09-09
+- [Objects that feel mutable in R](https://blog.r-hub.io/2020/01/22/mutable-api/)
+- [What are Replacement Functions in R?](https://stackoverflow.com/questions/11563154/what-are-replacement-functions-in-r)
+- [Advanced R. 2.5 Modify-in-place](https://adv-r.hadley.nz/names-values.html#modify-in-place)
+- [R6: Encapsulated object-oriented programming for R](https://r6.r-lib.org/)
+- [Advanced R. 6.8.4 Replacement functions](https://adv-r.hadley.nz/functions.html#replacement-functions)
+- [Debugging: Signals and Subprocesses](https://blog.r-hub.io/2020/02/20/processx-blocked-sigchld/)
+- [dgrtwo/widyr](https://github.com/dgrtwo/widyr). Widen, process, and re-tidy a dataset
+- COOL! [PCA tidyverse style](https://clauswilke.com/blog/2020/09/07/pca-tidyverse-style/)
+- COOL! [Tidyverse dashboard](https://github.com/tidyverse/tidyversedashboard). flexdashboard + crosstalk
+- [crosstalk: Dynamic filtering for R Markdown](https://emilyriederer.netlify.app/post/crosstalk/)
+	- COOL! [crosstalk Tutorial](https://emilyriederer.shinyapps.io/tutorial-crosstalk-cta/), [публикация](https://emilyriederer.github.io/demo-crosstalk/tutorial/tutorial-rmd.html)
+- [Ten Up-To-Date Ways to do Common Data Tasks in R](https://towardsdatascience.com/ten-up-to-date-ways-to-do-common-data-tasks-in-r-4f15e56c92d)
+- [Introducing ggpattern - pattern fills for ggplot](https://coolbutuseless.github.io/2020/04/01/introducing-ggpattern-pattern-fills-for-ggplot/). ggpattern provides custom ggplot2 geoms which support filled areas with geometric and image-based patterns.
+- Работа с метками. feat. labelled, snakecase, stringr & gtsummary
+- COOL! [R Colors in CSS for R Markdown HTML Documents](https://www.garrickadenbuie.com/blog/r-colors-css/). 14 September 2020
 
 # 10.09.2020
 ## R
@@ -1695,7 +1894,6 @@ Goodbye <div class ="">
 
 # 17.06.2020
 ## R
-- [Logging in R: Why, When, and How](https://mathewanalytics.com/logging-in-r-why-when-and-how/) By Abraham Mathew / June 16, 2020 / data.table, R
 - COOL! [nx10/httpgd](https://github.com/nx10/httpgd). Asynchronous http server graphics device for R.
 - COOL! [MayaGans/shinyBody](https://github.com/MayaGans/shinyBody). An SVG clickable body that can be colored using data and returns the clicked on body part
 - COOL! [brshallo/tidyverse-gifs](https://github.com/brshallo/tidyverse-gifs). Code for using `flair`, `xaringan`, `pagedown`, and `magick` to build gif of steps in a series of piped operations. Example pulled from "Many Models" chapter of "R for Data Science"
@@ -2059,14 +2257,11 @@ What Information Gain and Information Entropy are and how they're used to train 
 - COOL! [The prettyunits package](https://github.com/r-lib/prettyunits) formats quantities in human readable form. Currently time units and information (i.e. bytes) are supported.
 - COOL! [r-lib/later](https://github.com/r-lib/later). Schedule an R function or formula to run after a specified period of time.
 
+
 # 14.05.2020
 ## R
-- [lgr](https://s-fleck.github.io/lgr/) is a logging package for R built on the back of R6 classes. It is designed to be flexible, performant and extensible. The package vignette contains a comprehensive description of the features of lgr (some of them unique among R logging packages) along with many code examples.
-- [logger](https://daroczig.github.io/logger/)
-A lightweight, modern and flexibly logging utility for R – heavily inspired by the futile.logger R package and logging Python module.
-- [jangorecki/logR](https://github.com/jangorecki/logR). Extended logging solution for R http://jangorecki.gitlab.io/logR
 - Working with zipped csvs? vroom not working because one of those files is borked?
-Iterate through them bad larrys with this little combo of purr and vroom
+Iterate through them bad larrys with this little combo of purrr and vroom
 ```
 purrr::map(
     fs::dir_ls(),
@@ -6098,13 +6293,6 @@ The Silver Searcher is a tool for searching code. It started off as a clone of A
 - COOL! [Parallelize a For-Loop by Rewriting it as an Lapply Call](https://www.jottr.org/2019/01/11/parallelize-a-for-loop-by-rewriting-it-as-an-lapply-call/). A commonly asked question in the R community is:
 __How can I parallelize the following for-loop?__
 - [Tools for Inter-Process Communication](https://cran.r-project.org/web/packages/ipc/vignettes/shinymp.html)
-- Logging
-	- COOL! [logger: A Lightweight, Modern and Flexible Logging Utility](https://cran.r-project.org/web/packages/logger/index.html). Inspired by the the 'futile.logger' R package and 'logging' Python module, this utility provides a flexible and extensible way of formatting and delivering log messages with low overhead.
-	- [A futile try/catch.](https://cartesianfaith.com/2013/05/29/futile-logger-1-3-3-rc-available/) It is now possible to capture non-futile warnings and errors by wrapping a block in ftry, which is essentially a wrapper around tryCatch.
-	- [futile.logger is a logging utility for R.](https://github.com/zatonovo/futile.logger) Originally built based on log4j, the latest version introduces a new API that is more consistent with R idioms. In practice this means an interface that works equally well in the shell for interactive use and also in scripts for system use.
-	- [How to log using futile logger from within a parallel method in R?](http://stackoverflow.com/questions/20930112/how-to-log-using-futile-logger-from-within-a-parallel-method-in-r)
-	- [logR -- Extended logging solution](https://github.com/jangorecki/logR).
-	- [Is there any standard logging package for R?](http://stackoverflow.com/questions/1928332/is-there-any-standard-logging-package-for-r)
 
 ## Clustering
 - [UC Business Analytics]
@@ -7828,7 +8016,6 @@ Base 36 or hexatridecimal is a positional numeral system using 36 as the radix. 
 
 # 09.06.2018
 ## General
-- [Stackify Retrace](Get More Insights with Integrated Logging & Code Profiling). Get More Insights with Integrated Logging & Code Profiling
 - [Commandline](http://www.commandline.co.uk/). Free open source software. Cmdow/Mtee/Batch Function Library.
 - [zarunbal/LogExpert](https://github.com/zarunbal/LogExpert). Windows tail program and log file analyzer.
 
@@ -8451,12 +8638,6 @@ Imports non-tabular from Excel files into R. Exposes cell content, position and 
 - [`bind_rows()` warning with columns of unknown classes #2688 {Closed}](https://github.com/tidyverse/dplyr/issues/2688)
 
 
-## R logging
-- [Log all warnings with futile.logger](https://stackoverflow.com/questions/40920616/log-all-warnings-with-futile-logger)
-- futile.logger ticket [Capture warning(), etc. #36 {Open}](https://github.com/zatonovo/futile.logger/issues/36)
-- loggr. [Easy and flexible logging for R](https://github.com/smbache/loggr)
-- [Effortless but Powerful Exception Logging in R: loggit! 1.0.0 Released on CRAN](https://anotherblogaboutr.blogspot.ru/2018/02/effortless-but-powerful-exception_20.html)
-
 ## SAS
 - [Хочу все знать. Язык SAS](https://geekbrains.ru/posts/sas_lang)
 - [Step-by-Step Programming with Base SAS® Software](https://support.sas.com/documentation/onlinedoc/91pdf/sasdoc_913/base_step_10071.pdf)
@@ -8500,7 +8681,6 @@ Imports non-tabular from Excel files into R. Exposes cell content, position and 
 # 01.03.2018
 ## R
 - COOL! [Criminal goings-on in a random forest](https://thinkr.biz/2018/03/01/crime-random-forest/)
-- [Adding logging to a shiny app with loggit](http://rmhogervorst.nl/cleancode/blog/2018/02/28/adding-json-logging-to-shiny-app.html)
 - [#17: Dependencies](http://dirk.eddelbuettel.com/blog/2018/02/28/#017_dependencies). February 28, 2018, By Thinking inside the box
 - COOL!! [Faster way to trim a long character vector in R {closed}](https://stackoverflow.com/questions/39152317/faster-way-to-trim-a-long-character-vector-in-r). !!! **It's just that `strtrim()` is fairly slow.** Answer: Use `(substr(x, 1, 3))`
 
@@ -8574,7 +8754,6 @@ In this article, you will learn to work with lists in R programming. You will le
 - COOL! [webmockr: mock HTTP requests](https://ropensci.org/technotes/2018/02/20/webmockr-intro/)
 - [Deep Learning Image Classification with Keras and Shiny](https://jasdumas.github.io/2018-02-20-deep-learning-img-classifier/)
 - [Speeding up spatial analyses by integrating `sf` and `data.table`: a test case](https://lbusettspatialr.blogspot.ru/2018/02/speeding-up-spatial-analyses-by.html)
-- COOL! [Effortless but Powerful Exception Logging in R: loggit! 1.0.0 Released on CRAN](https://anotherblogaboutr.blogspot.ru/2018/02/effortless-but-powerful-exception_20.html)
 - [MARKDOWN BASED WEB ANALYTICS? RECTANGLE YOUR BLOG](https://itsalocke.com/blog/markdown-based-web-analytics-rectangle-your-blog/)
 
 - [How do I transpose a tibble() in R](https://stackoverflow.com/questions/42790219/how-do-i-transpose-a-tibble-in-r)
@@ -8597,12 +8776,6 @@ YES - it means it will handle all the incomming requests in parallel - each requ
 - COOL! [A guide to parallelism in R](https://privefl.github.io/blog/a-guide-to-parallelism-in-r/)
 - [An example of how to use the new R promises package](https://appsilondatascience.com/blog/rstats/2017/11/01/r-promises-hands-on.html)
 - [A Future for R: Slides from useR 2016](https://www.jottr.org/2016/07/02/future-user2016-slides/)
-- Logging in parallel:
-	- [How to log using futile logger from within a parallel method in R?](https://stackoverflow.com/questions/20930112/how-to-log-using-futile-logger-from-within-a-parallel-method-in-r)
-	- [How to log when using foreach (print or futile.logger)](https://stackoverflow.com/questions/38828344/how-to-log-when-using-foreach-print-or-futile-logger)
-	- [Printing from mclapply in R Studio](https://stackoverflow.com/questions/17345837/printing-from-mclapply-in-r-studio)
-	- [For troubleshooting, you can get more details on what's going on under the hood by setting `option(future.debug = TRUE)`.](https://stackoverflow.com/questions/48131779/execution-of-future-package-in-r-results-in-an-endless-waiting-time)
-
 
 # 19.02.2018
 ## R

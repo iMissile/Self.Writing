@@ -240,7 +240,7 @@ Make fake data, supporting addresses, person names, dates, times, colors, coordi
 ```
 - [Remove 'a' from legend when using aesthetics and geom_text](https://stackoverflow.com/questions/18337653/remove-a-from-legend-when-using-aesthetics-and-geom-text)
 - [Dynamically use range of pretty breaks to set limits in ggplot](https://stackoverflow.com/questions/53753970/dynamically-use-range-of-pretty-breaks-to-set-limits-in-ggplot)
-
+- [ggplotly geoms](https://beta.rstudioconnect.com/jjallaire/htmlwidgets-ggplotly-geoms/htmlwidgets-ggplotly-geoms.html)
 
 
 # other
