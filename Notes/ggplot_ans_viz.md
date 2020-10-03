@@ -241,6 +241,11 @@ Make fake data, supporting addresses, person names, dates, times, colors, coordi
 - [Remove 'a' from legend when using aesthetics and geom_text](https://stackoverflow.com/questions/18337653/remove-a-from-legend-when-using-aesthetics-and-geom-text)
 - [Dynamically use range of pretty breaks to set limits in ggplot](https://stackoverflow.com/questions/53753970/dynamically-use-range-of-pretty-breaks-to-set-limits-in-ggplot)
 - [ggplotly geoms](https://beta.rstudioconnect.com/jjallaire/htmlwidgets-ggplotly-geoms/htmlwidgets-ggplotly-geoms.html)
+- COOL! [ggplot2: Mastering the basics](http://www.rebeccabarter.com/blog/2017-11-17-ggplot2_tutorial/)
+- [ggridges: Ridgeline Plots in 'ggplot2'](https://cran.r-project.org/web/packages/ggridges/index.html)
+Ridgeline plots provide a convenient way of visualizing changes in distributions over time or space. This package enables the creation of such plots in 'ggplot2'.
+- [ggformula: Formula Interface to the Grammar of Graphics](https://cran.r-project.org/web/packages/ggformula/). Provides a formula interface to 'ggplot2' graphics.
+- [The Problem – Binning for Length Frequency Histograms](http://derekogle.com/fishR/2016-03-10-Histograms-with-w)
 
 
 # other

@@ -12,6 +12,10 @@ https://tmall.aliexpress.com/item/Edifier-W830BT-1/1000005465785.html
 - [Unicode Coding](https://www.dcode.fr/unicode-coding)
 - [Unicode Converter - Decimal, text, URL, and unicode converter](https://www.branah.com/unicode-converter)
 - [Универсальный декодер - конвертер кириллицы](http://2cyr.com/decode/?lang=ru)
+- [Декодер](http://www.online-decoder.com/ru)
+- [Online UTF8 tools](https://onlineutf8tools.com/) is a collection of useful browser-based utilities for working with UTF8 encoding.
+	- [utf8 to hexadecimal converter world's simplest utf8 tool](https://onlineutf8tools.com/convert-utf8-to-hexadecimal)
+	- [hexadecimal to utf8 converter world's simplest utf8 tool](https://onlineutf8tools.com/convert-hexadecimal-to-utf8)
 
 - [grammarly](https://www.grammarly.com/). Great Writing. Simplified. Compose clear, mistake-free writing that makes the right impression with Grammarly’s writing assistant.
 - [Notion. All-in-one workspace.](https://www.notion.so/)
@@ -979,12 +983,49 @@ A lightweight, modern and flexibly logging utility for R – heavily inspired by
 - [Beyond Exception Handling: Conditions and Restarts](http://adv-r.had.co.nz/beyond-exception-handling.html)
 - [Establish handlers on the stack](https://rlang.r-lib.org/reference/with_handlers.html)
 
+# 03.10.2020
+## Unicode @ R
+- [UTF-8 Support on Windows](https://developer.r-project.org/Blog/public/2020/05/02/utf-8-support-on-windows/) by Tomas Kalibera
+- [String Encoding and R](https://kevinushey.github.io/blog/2018/02/21/string-encoding-and-r/)
+- [What Every Programmer Absolutely, Positively Needs To Know About Encodings And Character Sets To Work With Text](https://kunststube.net/encoding/)
+- [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
+
+# 02.10.2020
+## R
+- COOL! [rsthemes](https://www.garrickadenbuie.com/project/rsthemes/)
+- [Pointblank](https://rich-iannone.github.io/pointblank/). With the pointblank package it’s really easy to methodically validate your data whether in the form of data frames or as database tables.
+- [withr](https://cran.r-project.org/web/packages/withr/vignettes/changing-and-restoring-state.html)
+- [In defense of XML](https://blog.frankel.ch/defense-xml/)
+- [Testing the Correlation between Time Series Variables](https://www.datasciencecentral.com/profiles/blogs/testing-the-correlation-between-time-series-variables)
+- [Why the Concept of “Citizen Data Scientist” Terrifies Me](https://www.datasciencecentral.com/profiles/blogs/why-the-concept-of-citizen-data-scientist-terrifies-me)
+- [Using Windows PowerShell Modules in PowerShell 7](https://petri.com/using-windows-powershell-modules-in-powershell-7)
+- [R-CoderDotCom/calendR](https://github.com/R-CoderDotCom/calendR). Ready to print calendars with ggplot2
+
+# 01.10.2020
+## dplyr NSE
+- [Bang Bang – How to program with dplyr](https://www.statworx.com/de/blog/bang-bang-how-to-program-with-dplyr/)
+- [How to refer to variable instead of column with dplyr](https://stackoverflow.com/questions/47659517/how-to-refer-to-variable-instead-of-column-with-dplyr)
+- [How to use variable shadowed by column in dplyr mutate {duplicate}](https://stackoverflow.com/questions/57875470/how-to-use-variable-shadowed-by-column-in-dplyr-mutate)
+- [filter does not use variables in global environment when variable names is the same as a column name (#3139)](https://github.com/tidyverse/dplyr/issues/3139)
+- [When programming with dplyr, what is the correct way to avoid undefined global variables?](https://community.rstudio.com/t/when-programming-with-dplyr-what-is-the-correct-way-to-avoid-undefined-global-variables/55946)
+- [Eval vs ! ! (bang bang) in functions using dplyr](https://community.rstudio.com/t/eval-vs-bang-bang-in-functions-using-dplyr/3977)
+- [Programming with dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/programming.html)
+- [Tidy evaluation in ggplot2](https://www.tidyverse.org/blog/2018/07/ggplot2-tidy-evaluation/)
 
 # 30.09.2020
 ## R
 - [Exciting updates to my top 4 Shiny packages](https://deanattali.com/blog/4shinyupdates/)
 - [exactextractr](https://isciences.gitlab.io/exactextractr/) is an R package that quickly and accurately summarizes raster values over polygonal areas, commonly referred to as zonal statistics. 
 - [Exploratory data analysis with categorical data](https://www.cesargamboasanabria.com/en/post/2019-06-23-exploraci%C3%B3n-de-datos-categ%C3%B3ricos-con-el-paquete-inspectdf/). The inspecdf package as a tool for descriptive analysis
+- [Exploring Histograms, an essay by Aran Lunzer and Amelia McNamara](https://tinlizzie.org/histograms/)
+- COOL! [collapse](https://sebkrantz.github.io/collapse/) is a C/C++ based package for data transformation and statistical computing in R. It’s aims are:
+	- To facilitate complex data transformation, exploration and computing tasks in R.
+	- To help make R code fast, flexible, parsimonious and programmer friendly.
+
+## data.table & NSE
+- COOL! [Corner Cases With Non-Standard Evaluation in data.table](https://gist.github.com/brodieG/046e7cdd2acf42d95909)
+- [How to use non-standard evaluation NSE to evaluate arguments on data.table?](https://stackoverflow.com/questions/57122960/how-to-use-non-standard-evaluation-nse-to-evaluate-arguments-on-data-table)
+- [NSE Functions with oshka](https://cran.r-project.org/web/packages/oshka/vignettes/nse-fun.html)
 
 # 28.09.2020
 ## R
@@ -8220,10 +8261,6 @@ Warning messages:
 
 # 07.05.2018
 ## R
-- [ggridges: Ridgeline Plots in 'ggplot2'](https://cran.r-project.org/web/packages/ggridges/index.html)
-Ridgeline plots provide a convenient way of visualizing changes in distributions over time or space. This package enables the creation of such plots in 'ggplot2'.
-- [ggformula: Formula Interface to the Grammar of Graphics](https://cran.r-project.org/web/packages/ggformula/). Provides a formula interface to 'ggplot2' graphics.
-- [The Problem – Binning for Length Frequency Histograms](http://derekogle.com/fishR/2016-03-10-Histograms-with-w)
 - [The R Formula Method: The Good Parts](https://rviews.rstudio.com/2017/02/01/the-r-formula-method-the-good-parts/), 2017-02-01 by Max Kuhn
 - [The R Formula Method: The Bad Parts](https://rviews.rstudio.com/2017/03/01/the-r-formula-method-the-bad-parts/), 2017-03-01 by Max Kuhn
 - [Checking (G)LM model assumptions in R](https://biologyforfun.wordpress.com/2014/04/16/checking-glm-model-assumptions-in-r/)
