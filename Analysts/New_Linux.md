@@ -37,11 +37,14 @@ The second -exec renames the zipped files to the original names
 Для сжатия надо + использовать флаг `z`?
 [Zip]\[unzip](https://www.computerhope.com/unix/unzip.htm)
 - [12 Useful “df” Commands to Check Disk Space in Linux](https://www.tecmint.com/how-to-check-disk-space-in-linux/)
+- [How do I delete all but 10 newest files in Linux?](https://superuser.com/questions/268344/how-do-i-delete-all-but-10-newest-files-in-linux/268345)
+
+## копирование директорий
 - [Rsync (Remote Sync): 10 Practical Examples of Rsync Command in Linux](https://www.tecmint.com/rsync-local-remote-file-synchronization-commands/)
 `rsync -avzP 'root@10.0.0.224:/home/data/mt_admin/files/1002\ External-share/6\ x5/2\ POS/gk_202005/' /ext/logs_202005/`
 - [How To Resume Partially Transferred Files Over SSH Using Rsync](https://www.ostechnix.com/how-to-resume-partially-downloaded-or-transferred-files-using-rsync/)
 - [Copying files using rsync from remote server to local machine](https://stackoverflow.com/questions/9090817/copying-files-using-rsync-from-remote-server-to-local-machine)
-- [How do I delete all but 10 newest files in Linux?](https://superuser.com/questions/268344/how-do-i-delete-all-but-10-newest-files-in-linux/268345)
+- Используем команду `cp` для ручного управления процессом копирования. [`cp -irv ./<source>/*.* ../<destination>`](https://explainshell.com/explain?cmd=cp+-irv)
 
 ## права доступа
 - [How can I check the permissions of a specific group?](https://askubuntu.com/questions/162417/how-can-i-check-the-permissions-of-a-specific-group)

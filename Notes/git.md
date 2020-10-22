@@ -40,3 +40,61 @@ git pull x5scm master
 
 git push origin master
 Commit-ы на этом этапе уже не нужны.
+
+# Перенос репозитория из одного гитлаба в другой
+- Процедура примерно такая. Экспорт и последующий импорт.
+	- [Project import/export](https://docs.gitlab.com/ee/user/project/settings/import_export.html)
+	- [Migrating projects to a GitLab instance](https://docs.gitlab.com/ee/user/project/import/)
+1. Экспорт. Project’s homepage. Click Settings in the sidebar. -> General/Export
+2. Projects/Gitlab Import
+
+# Q&A
+- [GitLab Docs](https://docs.gitlab.com/ee/README.html)
+- Как сделать реплику в несколько репозиториев? `git remote add X5` (ссылка)
+- [git. Adding a remote](https://docs.github.com/en/free-pro-team@latest/github/using-git/adding-a-remote)
+- COOL! [git stash – это то, что я искал](http://stepansuvorov.com/blog/2012/11/git-stash-%D1%8D%D1%82%D0%BE-%D1%82%D0%BE-%D1%87%D1%82%D0%BE-%D1%8F-%D0%B8%D1%81%D0%BA%D0%B0%D0%BB/)
+```
+git stash
+git pull
+git stash apply
+```
+- COOL! [How to clone a specific branch in git](https://coderwall.com/p/y7hf6w/how-to-clone-a-specific-branch-in-git)
+- COOL! [Clone only one branch {duplicate}](https://stackoverflow.com/questions/4811434/clone-only-one-branch/14930421#14930421)
+```
+git clone learned --single-branch option to limit cloning to a single branch (surprise!); tags that do not point into the history of the branch are not fetched.
+Git actually allows you to clone only one branch, for example:
+git clone -b mybranch --single-branch git://sub.domain.com/repo.git
+```
+- [Clone at Git Repo to a Different Directory](https://til.hashrocket.com/posts/z0f393xq0s-clone-at-git-repo-to-a-different-directory)
+
+Итого, вытаскиваем ветку 'huawei' командой
+`git clone -b huawei https://gitlab.com/TV-stat/mts-tv-stat.reports.git ./mts-tv-stat.reports.hw`
+- [7.12 Инструменты Git - Создание пакетов](https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2). В этих случаях вам может помочь команда `git bundle`.
+- [Reducing the repository size using Git](https://docs.gitlab.com/ee/user/project/repository/reducing_the_repo_size_using_git.html)
+	- COOL! [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/)
+Removes large or troublesome blobs like git-filter-branch does, but faster. And written in Scala
+- [Как удалить файлы из истории Git-а, или git filter-branch и переписывание истории](https://det-random.livejournal.com/43291.html)
+- [BFG Repo-Cleaner by rtyley](https://rtyley.github.io/bfg-repo-cleaner/)
+A simpler, faster alternative to git-filter-branch for deleting big files and removing passwords from Git history.
+- [How can I delete a commit in Git?](https://www.git-tower.com/learn/git/faq/delete-commits)
+- [17. Удаление коммитов из ветки](https://githowto.com/ru/removing_commits_from_a_branch)
+- COOL! [Remove files from Git commit](https://stackoverflow.com/questions/12481639/remove-files-from-git-commit)
+- COOL [Take GitHub to the command line](https://cli.github.com/)
+- [How to update your Git credentials on Windows](https://cmatskas.com/how-to-update-your-git-credentials-on-windows/)
+`Control Panel -> Credential Manager -> Generic Credentials`,
+`Панель управления -> Все элементы панели управления -> Диспетчер учетных данных`
+- [Доступ к диспетчеру учетных данных](https://support.microsoft.com/ru-ru/help/4026814/windows-accessing-credential-manager)
+- [7.14 Git Tools - Credential Storage](https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage)
+
+## Git
+- [Clone at Git Repo to a Different Directory](https://til.hashrocket.com/posts/z0f393xq0s-clone-at-git-repo-to-a-different-directory)
+`$ git clone https://github.com/cool_user/codez.git ~/codez-v2`
+- Как сделать клон бранча в git:
+`git clone --branch phase_2 https://gitlab.com/TV-stat/mts-tv-stat.reports.git mts-tv-stat.reports.ph2`
+- Где хранятся конфигурации репозиториев в SmartGit? Смотрим здесь: 'C:\Users\<user>\AppData\Roaming\syntevo\SmartGit\18.1\repositories.xml'
+- [Not possibly to explicitly disable Auto DevOps on a project?](https://gitlab.com/gitlab-org/gitlab-ce/issues/51760)
+- [Enabling/disabling Auto DevOps](https://docs.gitlab.com/ee/topics/autodevops/)
+- [How can I switch to another branch in git?](https://stackoverflow.com/questions/47630950/how-can-i-switch-to-another-branch-in-git)
+- [How do you clone a Git repository into a specific folder?](https://stackoverflow.com/questions/651038/how-do-you-clone-a-git-repository-into-a-specific-folder). `git clone git@github.com:whatever folder-name`
+- COOL! Полная команда клонирования репозитория на удаленной машине: `git clone -c http.sslverify=false -b "dev" https://gitlab.com/ishutov/beluga-distr.git beluga-distr-dev`
+

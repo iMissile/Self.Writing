@@ -194,6 +194,11 @@ http://answers.microsoft.com/en-us/windows/forum/windows_10-security/event-id-10
 - [Пропадает интернет (Wi-Fi) в Windows 10 после выхода из спящего режима](https://help-wifi.com/reshenie-problem-i-oshibok/propadaet-internet-wi-fi-v-windows-10-posle-vyxoda-iz-spyashhego-rezhima/).
 Это происходит потому, что для экономии, система отключает Wi-Fi адаптер. А после включения, он уже не может нормально работать, поэтому и пропадает интернет. Эта проблема очень часто возникает только при работе от батареи.Все что нужно сделать, это запретить "десятке" отключать беспроводной сетевой адаптер.
 
+## Outlook
+- [Папки в Outlook отображаются на английском языке](https://www.dmosk.ru/polezno.php?review=outlook-en). 
+`C:\Program Files\Microsoft Office\root\Office16\outlook.exe /resetfoldernames` переименовают папки на русский (под русской локалью) и теперь их надо синхронизировать по IMAP с русскими папками на сервере.
+- [Переименование папок почты в Outlook 2016](https://answers.microsoft.com/ru-ru/msoffice/forum/msoffice_outlook-mso_win10-mso_365hp/%D0%BF%D0%B5%D1%80%D0%B5%D0%B8%D0%BC%D0%B5%D0%BD/09bb0f12-8dda-4a5c-bd3d-657efde45595)
+
 ## Tools
 - [7 best tabbed command line tools for Windows 10](https://windowsreport.com/tabbed-command-line-windows-10/)
 	- Console2

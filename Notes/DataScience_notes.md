@@ -83,41 +83,6 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - Bookmate [Изменить данные карты, с которой происходят списания за подписку](https://support.bookmate.com/hc/ru/articles/219428628-%D0%98%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BA%D0%B0%D1%80%D1%82%D1%8B-%D1%81-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D1%8F%D1%82-%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B7%D0%B0-%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%BA%D1%83)
 
 
-# GIT
-- COOL! [git stash – это то, что я искал](http://stepansuvorov.com/blog/2012/11/git-stash-%D1%8D%D1%82%D0%BE-%D1%82%D0%BE-%D1%87%D1%82%D0%BE-%D1%8F-%D0%B8%D1%81%D0%BA%D0%B0%D0%BB/)
-```
-git stash
-git pull
-git stash apply
-```
-- COOL! [How to clone a specific branch in git](https://coderwall.com/p/y7hf6w/how-to-clone-a-specific-branch-in-git)
-- COOL! [Clone only one branch {duplicate}](https://stackoverflow.com/questions/4811434/clone-only-one-branch/14930421#14930421)
-```
-git clone learned --single-branch option to limit cloning to a single branch (surprise!); tags that do not point into the history of the branch are not fetched.
-Git actually allows you to clone only one branch, for example:
-git clone -b mybranch --single-branch git://sub.domain.com/repo.git
-```
-- [Clone at Git Repo to a Different Directory](https://til.hashrocket.com/posts/z0f393xq0s-clone-at-git-repo-to-a-different-directory)
-
-Итого, вытаскиваем ветку 'huawei' командой
-`git clone -b huawei https://gitlab.com/TV-stat/mts-tv-stat.reports.git ./mts-tv-stat.reports.hw`
-- [7.12 Инструменты Git - Создание пакетов](https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2). В этих случаях вам может помочь команда `git bundle`.
-- [Reducing the repository size using Git](https://docs.gitlab.com/ee/user/project/repository/reducing_the_repo_size_using_git.html)
-	- COOL! [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/)
-Removes large or troublesome blobs like git-filter-branch does, but faster. And written in Scala
-- [Как удалить файлы из истории Git-а, или git filter-branch и переписывание истории](https://det-random.livejournal.com/43291.html)
-- [BFG Repo-Cleaner by rtyley](https://rtyley.github.io/bfg-repo-cleaner/)
-A simpler, faster alternative to git-filter-branch for deleting big files and removing passwords from Git history.
-- [How can I delete a commit in Git?](https://www.git-tower.com/learn/git/faq/delete-commits)
-- [17. Удаление коммитов из ветки](https://githowto.com/ru/removing_commits_from_a_branch)
-- COOL! [Remove files from Git commit](https://stackoverflow.com/questions/12481639/remove-files-from-git-commit)
-- COOL [Take GitHub to the command line](https://cli.github.com/)
-- [How to update your Git credentials on Windows](https://cmatskas.com/how-to-update-your-git-credentials-on-windows/)
-`Control Panel -> Credential Manager -> Generic Credentials`,
-`Панель управления -> Все элементы панели управления -> Диспетчер учетных данных`
-- [Доступ к диспетчеру учетных данных](https://support.microsoft.com/ru-ru/help/4026814/windows-accessing-credential-manager)
-- [7.14 Git Tools - Credential Storage](https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage)
-
 
 # R general
 - COOL! [Upgrading to R 3.6.0 on a Mac – May 14, 2019](https://ibecav.github.io/update_libraries/).
@@ -220,6 +185,8 @@ A simpler, faster alternative to git-filter-branch for deleting big files and re
 - [BigBookofR](https://github.com/oscarbaruffa/BigBookofR) or [Big Book of R](https://www.bigbookofr.com/). The biggest collection of R books (and maybe later some other resources too)
 - ebook. [Tidy Modeling with R[(https://www.tmwr.org/) by MAX KUHN AND JULIA SILGE
 - [Principles of Econometrics with R](https://bookdown.org/ccolonescu/RPoE4/panel-data-models.html)
+- [Interactive web-based data visualization with R, plotly, and shiny](https://plotly-r.com/)
+- [Outstanding User Interfaces with Shiny](https://divadnojnarg.github.io/outstanding-shiny-ui/) by David Granjon
 
 
 # VPN
@@ -536,6 +503,9 @@ Also, in case you would not wish to change the data.table, but merely return the
 dt[,.SD, .SDcols = !c('b', 'c')]
 ```
 - LOCF/NOCB. LOCF = "Last Observation Carried Forward". NOCB = "Next Observation Carried Backward".
+- COOL! [A data.table and dplyr tour](https://atrebas.github.io/post/2019-03-03-datatable-dplyr/) Written by Atrebas on March 3, 2019
+- [R : DATA.TABLE TUTORIAL (WITH 50 EXAMPLES)](https://www.listendata.com/2016/10/r-data-table.html)
+
 
 # DS
 - COOL! [Машинное обучение для людей. Разбираемся простыми словами](https://vas3k.ru/blog/machine_learning/)
@@ -818,6 +788,7 @@ Fully saturated RGB rainbow colors are still widely used in scientific visualiza
 - [The super fast color schemes generator!](https://coolors.co/). Create the perfect palette or get inspired by thousands of beautiful color schemes.
 - [tomasokal/rtist](https://github.com/tomasokal/rtist). Color palettes from famous artists and paintings.
 - COOL! [tmaptools::palette_explorer() is kind of fun #rstats](https://twitter.com/sharon000/status/1310757369798955008?s=20). `tmaptools::palette_explorer()`
+- [palette2vec](https://emilhvitfeldt.github.io/palette2vec/). The goal of palette2vec is to help you explore color palettes more easily in R
 
 
 
@@ -983,12 +954,182 @@ A lightweight, modern and flexibly logging utility for R – heavily inspired by
 - [Beyond Exception Handling: Conditions and Restarts](http://adv-r.had.co.nz/beyond-exception-handling.html)
 - [Establish handlers on the stack](https://rlang.r-lib.org/reference/with_handlers.html)
 
+# 21.10.2020
+## R
+- COOL! [Scientific paper about everything related to containers and R](https://github.com/nuest/rockerverse-paper)
+- [Keyboard Shortcuts for 'shiny'](https://github.com/r4fun/keys)
+- [Ridiculously fast unicode (UTF-8) validation](https://lemire.me/blog/2020/10/20/ridiculously-fast-unicode-utf-8-validation/)
+- COOL! [euclid](https://r-euclid.com/). The purpose of euclid is to provide a new unified foundation for computational geometry in R.
+- RStudio Addins
+	- [RStudio Addins](https://rstudio.github.io/rstudioaddins/)
+	- [Discover and install useful RStudio addins](https://cran.r-project.org/web/packages/addinslist/readme/README.html)
+Аддоны, установленные у меня:
+```
+blogdown\rstudio\addins.dcf
+bookdown\rstudio\addins.dcf
+clipr\rstudio\addins.dcf
+colourpicker\rstudio\addins.dcf
+covr\rstudio\addins.dcf
+crosstableAssistant\rstudio\addins.dcf
+datapasta\rstudio\addins.dcf
+devtools\rstudio\addins.dcf
+esquisse\rstudio\addins.dcf
+flow\rstudio\addins.dcf
+ggedit\rstudio\addins.dcf
+ggExtra\rstudio\addins.dcf
+knitrdata\rstudio\addins.dcf
+lintr\rstudio\addins.dcf
+listviewer\rstudio\addins.dcf
+packagefinder\rstudio\addins.dcf
+pins\rstudio\addins.dcf
+questionr\rstudio\addins.dcf
+Rdpack\RStudio\addins.dcf
+reprex\rstudio\addins.dcf
+rhandsontable\rstudio\addins.dcf
+styler\rstudio\addins.dcf
+taskscheduleR\rstudio\addins.dcf
+testit\rstudio\addins.dcf
+tfruns\rstudio\addins.dcf
+tsviz\rstudio\addins.dcf
+usethis\templates\addins.dcf
+xaringan\rstudio\addins.dcf
+ymlthis\rstudio\addins.dcf
+```
+
+## R decision tree
+- [Decision Tree in R with Example](https://www.guru99.com/r-decision-trees.html)
+- [Decision Trees in R using rpart](https://www.gormanalysis.com/blog/decision-trees-in-r-using-rpart/)
+- [export rpart rules to a data frame and link rules to train data](https://stackoverflow.com/questions/48489647/export-rpart-rules-to-a-data-frame-and-link-rules-to-train-data)
+- COOL! [Plotting rpart trees with the rpart.plot package](http://www.milbo.org/rpart-plot/prp.pdf)
+- [`library(rattle)` # Fancy tree plot](https://rattle.togaware.com/)
+- [Draw nicer Classification and Regression Trees with the rpart.plot package](https://blog.revolutionanalytics.com/2013/06/plotting-classification-and-regression-trees-with-plotrpart.html)
+```
+tree.2 <- rpart(form, data)			# A more reasonable tree
+prp(tree.2)                                     # A fast plot
+fancyRpartPlot(tree.2)				# A fancy plot from rattle
+```
+
+# 19.10.2020
+## R
+- [Tuning text models](https://www.tidymodels.org/learn/work/tune-text/)
+- [Chapter 14 The reactive graph](https://mastering-shiny.org/reactive-graph.html)
+- [All of the python 3.9 standard library](https://gist.github.com/jph00/d5981f649a83a754946964cf22322cb2)
+- [Comparison of Decision Boundaries of Classification Learners](https://mlr3gallery.mlr-org.com/posts/2020-08-14-comparison-of-decision-boundaries/)
+- [bootstraplib](https://rstudio.github.io/bootstraplib/)
+- COOL! [Styling Shiny & R Markdown with {bootstraplib} & {thematic}](https://talks.cpsievert.me/20201014/#1). Carson Sievert, Software Engineer @ RStudio. Slides: https://bit.ly/r-pharma2020
+- [studio/thematic](https://github.com/rstudio/thematic/). Theme ggplot2, lattice, and base graphics based on a few simple settings.
+- [](https://2vu07.csb.app/)
+- [EmilHvitfeldt/github-issue-table](https://github.com/EmilHvitfeldt/github-issue-table). Combining {reactable}, {flexdashboard} and {gh} lets me look at a table of all the repositories I care about
+- COOL! reactable пример с картинками и сплайнами [Combining a table with multiple scatterplots Rubén F. Bustillo](https://rquer.netlify.app/interactive_chart/table_plot)
+- COOL! [Mixed Models with R](https://m-clark.github.io/mixed-models-with-R/). Getting started with random effects
+- [Avoid Scientific notation in cut function in R](https://stackoverflow.com/questions/29004620/avoid-scientific-notation-in-cut-function-in-r)
+- Пример кода `cut.R`. [r-source/src/library/base/R/cut.R](https://github.com/SurajGupta/r-source/blob/master/src/library/base/R/cut.R)
+- [Force R not to use exponential notation (e.g. e+10)?](https://stackoverflow.com/questions/9397664/force-r-not-to-use-exponential-notation-e-g-e10)
+
+# 14.10.2020
+## R
+- COOL! [Streamlit vs. Dash vs. Shiny vs. Voila vs. Flask vs. Jupyter](https://www.datarevenue.com/en-blog/data-dashboarding-streamlit-vs-dash-vs-shiny-vs-voila). Comparing data dashboarding tools and frameworks
+- COOL! [Streamlit](https://www.streamlit.io/). The fastest way to build data apps Streamlit’s open-source app framework is the easiest way for data scientists and machine learning engineers to create beautiful, performant apps in only a few hours!  All in pure Python. All for free.
+- [Rhumba: a faster R distribution](https://medium.com/@mari_meir/rhumba-a-faster-r-distribution-d619fb93043a). Leveraging Mamba and conda-forge for R-package management
+- [JohnCoene/charter](https://github.com/JohnCoene/charter). Chart.js for R
+- [STACKS - TIDY MODEL STACKING](https://stacks.tidymodels.org/)
+
+# 16.10.2020
+## R
+- COOL! [Securing and Monitoring ShinyProxy Deployment of R Shiny Apps](https://www.databentobox.com/2020/05/03/secure-shinyproxy/)
+A tutorial for using ShinyProxy together with Nginx, Certbot, AWS Cognito, InfluxDB, Telegraf and Grafana
+- [S4 vectors. Foundation of vector-like and list-like containers in Bioconductor](https://bioconductor.org/packages/release/bioc/html/S4Vectors.html)
+- [waldo](https://www.tidyverse.org/blog/2020/10/waldo/)
+- [GitHub and Visual Studio Code](https://vscode.github.com/)
+- [Visual Studio Code Docs](https://code.visualstudio.com/docs)
+
+# 13.10.2020
+## R
+- Масса нововведений, включая progress bar. [furrr 0.2.0](https://cran.rstudio.com/web/packages/furrr/news/news.html)
+- аналог unnest в `data.table`:
+```
+# https://stackoverflow.com/questions/44336733/how-to-unlist-a-column-in-a-data-table
+.[, .(close_basket_uid = unlist(close_basket_uid)), by = setdiff(names(.), 'close_basket_uid')] %>%
+```
+- COOL! [Shiny Developer Series](https://shinydevseries.com/) The goals of the Shiny Developer Series are to showcase the innovative applications and packages in the ever-growing Shiny ecosystem, as well as the brilliant developers behind them!
+- COOL! [R & stats illustrations by @allison_horst](https://github.com/allisonhorst/stats-illustrations)
+- COOL! [Twitter influencers for #useR2019](https://johnguerra.co/viz/influentials/story/?hashtag=useR2019)
+A visual story on how to find the most interesting people to follow for a Twitter topic
+
+# 12.10.2020
+# R
+- [Unleash Shiny. R/Pharma - Advanced Shiny Workshop](https://rinterface.com/shiny/talks/RPharma2020/?panelset1=r-code2#1)
+	- [Unleash-Shiny. R/Pharma workshop (4hours)](https://github.com/RinteRface/Unleash-Shiny)
+	- [Outstanding User Interfaces with Shiny](https://divadnojnarg.github.io/outstanding-shiny-ui/) by David Granjon
+- [ambiorix](https://ambiorix.john-coene.com/#/). Web framework for R inspired by express.js.
+- ebook [Introduction to Modern Statistics](https://openintro-ims.netlify.app/)
+- [Introducing RStudio and R Markdown](https://www.pipinghotdata.com/posts/2020-09-07-introducing-the-rstudio-ide-and-r-markdown/)
+- [flair](https://r-for-educators.github.io/flair/index.html). The goal of flair is to is to provide tools for formatting R code in knitted R Markdown files.
+- [glow](https://cran.r-project.org/web/packages/glow/vignettes/vignette.html). A package for making glow-y plots
+The glow package is a framework for creating plots with glowing points as an alternative way of plotting large point clouds.
+- [stm](https://www.structuraltopicmodel.com/). An R Package for the Structural Topic Model
+    - [The game is afoot! Topic modeling of Sherlock Holmes stories](https://juliasilge.com/blog/sherlock-holmes-stm/)
+    - [Training, evaluating, and interpreting topic models](https://juliasilge.com/blog/evaluating-stm/)
+
+# 09.10.2020
+## R
+- Slides. [palette2vec](https://palette2vec-whyr2020.netlify.app/#1). A new way to explore color palettes by Emil Hvitfeldt
+- COOL! Slides. [Unleash Shiny. R/Pharma - Advanced Shiny Workshop](https://rinterface.com/shiny/talks/RPharma2020/?panelset1=r-code2#1)
+
+## DS
+- [Имитационная модель логистического центра](https://habr.com/ru/post/254067/)
+- COOL! Очень хорошая и красивая публикация. [Теория Массового Обслуживания](https://less.works/ru/less/principles/queueing_theory). Удовольствие от инжиниринга - это найти прямую линию на графике логарифма в квадрате.
+- [ЛЕКЦИИ. ТЕОРИЯ МАССОВОГО ОБСЛУЖИВАНИЯ](http://window.edu.ru/resource/124/47124/files/sssu068.pdf). ЮЖНО-РОССИЙСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ЭКОНОМИКИ И СЕРВИСА
+
+# 07.10.2020
+## R
+- [R package: parallelly - Enhancing the 'parallel' Package](https://github.com/HenrikBengtsson/parallelly)
+
+# 06.10.2020
+## R
+- COOL! [A New Tidy Data Structure to Support Exploration and Modeling of Temporal Data](https://www.tandfonline.com/doi/full/10.1080/10618600.2019.1695624) by Earo Wang, Dianne Cook & Rob J. Hyndman
+- Slides [Presenting like a kunoichi kunoichi with ⚔️aringan](https://slides.earo.me/rladiesakl20/#1) by Earo Wang
+- [Filter two tables with crosstalk](https://stackoverflow.com/questions/48581598/filter-two-tables-with-crosstalk)
+
+# 05.10.2020
+## R
+- [downloadthis](https://fmmattioni.github.io/downloadthis/) The goal of downloadthis is to implement download buttons in HTML output from RMarkdown without the need for runtime:shiny.
+- COOL! [Demystifying stat_ layers in {ggplot2}](https://yjunechoe.github.io/posts/2020-09-26-demystifying-stat-layers-ggplot2/)
+- [Companies Using R • A Curated list of R uses in enterprise](https://github.com/ThinkR-open/companies-using-r)
+- [strboul/supreme](https://strboul.github.io/supreme/). Modeling tool helping users better structure 'Shiny applications' developed with 'Shiny' modules
+- [Grammar of Graphics for Linear Model Diagnostic Plots](https://github.com/graysonwhite/gglm)
+- [Distill. Creating a Website](https://rstudio.github.io/distill/website.html). Share a set of Distill articles as a website
+- [Sharing on Short Notice](rstd.io/sharing). HOW TO GET YOUR TEACHING MATERIALS ONLINE WITH R MARKDOWN
+Alison Hill · Desirée De Leon
+- [Adding column if it does not exist](https://stackoverflow.com/questions/45857787/adding-column-if-it-does-not-exist)
+- [Create an empty data.frame](https://stackoverflow.com/questions/10689055/create-an-empty-data-frame)
+- [Consensus clustering in R](https://intobioinformatics.wordpress.com/2020/02/04/consensus-clustering-in-r/)
+- [ConsensusClusterPlus (Tutorial)](https://bioconductor.org/packages/release/bioc/vignettes/ConsensusClusterPlus/inst/doc/ConsensusClusterPlus.pdf)
+- [AtherEnergy/ggTimeSeries](https://github.com/AtherEnergy/ggTimeSeries). Time series visualisation
+
+## MMA
+- [The Future of Multi-Agent Systems Research](https://medium.com/@kwhighnam/the-future-of-multi-agent-systems-research-5aef163f1d69)
+- [01 Introduction to SpaDES](https://cran.r-project.org/web/packages/SpaDES.core/vignettes/i-introduction.html)
+
 # 03.10.2020
+## R
+- Хорошая публикация с примерами. [Exploring echarts4r](https://rpubs.com/paul_simmering/echarts)
+- [#htmlwidgets](https://github.com/topics/htmlwidgets?l=r&o=desc&s=stars). Here are 68 public repositories matching this topic...
+
 ## Unicode @ R
 - [UTF-8 Support on Windows](https://developer.r-project.org/Blog/public/2020/05/02/utf-8-support-on-windows/) by Tomas Kalibera
 - [String Encoding and R](https://kevinushey.github.io/blog/2018/02/21/string-encoding-and-r/)
 - [What Every Programmer Absolutely, Positively Needs To Know About Encodings And Character Sets To Work With Text](https://kunststube.net/encoding/)
 - [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
+- CH, R, UTF-8, Windows
+	- в rlang 0.4 функцию `rlang::set_chr_encoding` убрали: https://rlang.r-lib.org/news/index.html
+	# mutate_if(is.character, `Encoding<-`, "UTF-8")
+	- https://stackoverflow.com/questions/58606489/how-can-i-make-r-maintain-utf8-encodings
+	- В CH появился новый параметр, управляющей необходимостью перекодировки ответа в UTF
+ https://github.com/IMSMWU/RClickhouse/blob/e86b6660f57f5b94f2861398f0bcbc8680796b2a/R/ClickhouseResult.R
+```
+conn <- DBI::dbConnect(RClickhouse::clickhouse(), host="10.0.0.219", db = "X5_BM", toUTF = FALSE)
+```
 
 # 02.10.2020
 ## R
@@ -1039,13 +1180,11 @@ A lightweight, modern and flexibly logging utility for R – heavily inspired by
 - [ProM Tips — Which Mining Algorithm Should You Use? ](https://fluxicon.com/blog/2010/10/prom-tips-mining-algorithm/#:~:text=The%20Fuzzy%20miner%20is%20one,activities%20and%20highly%20unstructured%20behavior.)
 
 ## MT-X5
-- [Докеры R](). Репозиторий x5-docker
-- Как сделать реплику в несколько репозиториев? `git remote add X5` (ссылка)
+- [Докеры R](https://gitlab.com/X5-logs/x5-docker). Репозиторий x5-docker
 - Обновил стенд МФСМ на http://10.0.1.238:8081/
-- список демонстрационных стендов и описание к ним (в будущем) будут жить [здесь](https://wiki.media-tel.ru/pages/viewpage.action?pageId=62717975)
-- Стенд rzd-clickhouse актуализирован до рабочего состояния. http://10.0.1.238:3838/rzd-clickhouse/
+	- список демонстрационных стендов и описание к ним (в будущем) будут жить [здесь](https://wiki.media-tel.ru/pages/viewpage.action?pageId=62717975)
+	- Стенд rzd-clickhouse актуализирован до рабочего состояния. http://10.0.1.238:3838/rzd-clickhouse/
 - [Внутренний git Заказчика](https://wiki.media-tel.ru/pages/viewpage.action?pageId=57802756)
-- [git. Adding a remote](https://docs.github.com/en/free-pro-team@latest/github/using-git/adding-a-remote)
 
 
 # 25.09.2020
@@ -1068,10 +1207,6 @@ A lightweight, modern and flexibly logging utility for R – heavily inspired by
 - [flow](https://moodymudskipper.github.io/flow/index.html). Visualize as flow diagrams the logic of functions, expressions or scripts and ease debugging.
 - Slides. [xaringanExtra. Extra Special xaringan Presentations](https://pkg.garrickadenbuie.com/xaringanExtra/#/). A playground of extensions for xaringan
 - [What distinguishes dplyr::pull from purrr::pluck and magrittr::extract2?](https://stackoverflow.com/questions/54113879/what-distinguishes-dplyrpull-from-purrrpluck-and-magrittrextract2)
-
-## Git
-- [Clone at Git Repo to a Different Directory](https://til.hashrocket.com/posts/z0f393xq0s-clone-at-git-repo-to-a-different-directory)
-`$ git clone https://github.com/cool_user/codez.git ~/codez-v2`
 
 # 23.09.2020
 ## R
@@ -1164,6 +1299,7 @@ The easiest way to quickly build DAGs and find adjustment sets and testable impl
 - COOL! [Tidyverse dashboard](https://github.com/tidyverse/tidyversedashboard). flexdashboard + crosstalk
 - [crosstalk: Dynamic filtering for R Markdown](https://emilyriederer.netlify.app/post/crosstalk/)
 	- COOL! [crosstalk Tutorial](https://emilyriederer.shinyapps.io/tutorial-crosstalk-cta/), [публикация](https://emilyriederer.github.io/demo-crosstalk/tutorial/tutorial-rmd.html)
+- COOL! [earowang/tsibbletalk](https://github.com/earowang/tsibbletalk). Crosstalk between tsibble objects
 - [Ten Up-To-Date Ways to do Common Data Tasks in R](https://towardsdatascience.com/ten-up-to-date-ways-to-do-common-data-tasks-in-r-4f15e56c92d)
 - [Introducing ggpattern - pattern fills for ggplot](https://coolbutuseless.github.io/2020/04/01/introducing-ggpattern-pattern-fills-for-ggplot/). ggpattern provides custom ggplot2 geoms which support filled areas with geometric and image-based patterns.
 - Работа с метками. feat. labelled, snakecase, stringr & gtsummary
@@ -1332,7 +1468,7 @@ You can remove those from here and try and re-clone - it will ask for username/p
 
 # 21.08.2020
 ## R
-- Чтобы сохранить `vtree` картику в файл, приходится работать через `options`. Выяснил через `traceback`.
+- Чтобы сохранить `vtree` картинку в файл, приходится работать через `options`. Выяснил через `traceback`.
 `options("vtree_folder" = "./output/")`
 
 ## Wolfram
@@ -1434,7 +1570,6 @@ What to do when you want a font like Helvetica, but not Helvetica](https://www.l
 	- [flexpivot](https://dreamrs.github.io/flexpivot/). {flextable} extension to create ready-to-use frequency tables in shiny and rmarkdown, and easily exportable to Word, PowerPoint and Excel.
 	- [billboarder](https://github.com/dreamRs/billboarder). R Htmlwidget for billboard.js
 	- [esquisse](https://dreamrs.github.io/esquisse/). The purpose of this add-in is to let you explore your data quickly to extract the information they hold. You can only create simple plots, you won’t be able to use custom scales and all the power of ggplot2. This is just the start!
-- COOL! [a ggplot2 grammar guide](https://evamaerey.github.io/ggplot2_grammar_guide/about)
 - COOL! CHRIS ALBON [Notes On Using Data Science & Machine Learning To Fight For Something That Matters](https://chrisalbon.com/)
 I am the Director of Machine Learning at the Wikimedia Foundation. I have spent over a decade applying statistical learning, artificial intelligence, and software engineering to political, social, and humanitarian efforts.
 - [Creating R Packages with devtools](https://keithmcnulty.github.io/r_package_training/index.html#1) by Keith McNulty and Jiena McLellan
@@ -5673,6 +5808,7 @@ The cyphr package seems to provide a good choice for small research group that s
 - [Check validity of gz file](https://unix.stackexchange.com/questions/359303/check-validity-of-gz-file). `gzip -v -t file.gz`
 - [How do I gunzip all files recursively in a target directory?](https://askubuntu.com/questions/620571/how-do-i-gunzip-all-files-recursively-in-a-target-directory)
 - [Script to create individual zip files for each .txt file it finds and move them after](https://stackoverflow.com/questions/12321167/script-to-create-individual-zip-files-for-each-txt-file-it-finds-and-move-them)
+- [Test integrity of ZIP file?](https://unix.stackexchange.com/questions/197127/test-integrity-of-zip-file). `unzip -t file`
 - `parallel gzip ::: *`
 GNU Parallel is a fantastic tool that should be used far more in this world where CPUs are only getting more cores rather than more speed. There are loads of examples that we would all do well to take 10 minutes to read
 [GNU Parallel Tutorial](https://www.gnu.org/software/parallel/parallel_tutorial.html)
@@ -6875,16 +7011,6 @@ Provides an interface to the C code for Latent Dirichlet Allocation (LDA) models
 - [Using the RcppArmadillo-based Implementation of R's sample()](http://gallery.rcpp.org/articles/using-the-Rcpp-based-sample-implementation/)
 
 
-# 26.10.2018
-## Git
-- Где хранятся конфигурации репозиториев в SmartGit? Смотрим здесь: 'C:\Users\<user>\AppData\Roaming\syntevo\SmartGit\18.1\repositories.xml'
-- [Not possibly to explicitly disable Auto DevOps on a project?](https://gitlab.com/gitlab-org/gitlab-ce/issues/51760)
-- [Enabling/disabling Auto DevOps](https://docs.gitlab.com/ee/topics/autodevops/)
-- [How can I switch to another branch in git?](https://stackoverflow.com/questions/47630950/how-can-i-switch-to-another-branch-in-git)
-- [How do you clone a Git repository into a specific folder?](https://stackoverflow.com/questions/651038/how-do-you-clone-a-git-repository-into-a-specific-folder). `git clone git@github.com:whatever folder-name`
-- COOL! Полная команда клонирования репозитория на удаленной машине: `git clone -c http.sslverify=false -b "dev" https://gitlab.com/ishutov/beluga-distr.git beluga-distr-dev`
-
-
 ## R
 - COOL! 2014.09 New feature - [Overlapping range joins for Genomics by Arun Srinivasan](2014.09 New feature - Overlapping range joins for Genomics by Arun Srinivasan, history and benchmarks by Matt Dowle and four hour workshop, EARL Conference London [agenda] [ TO DO - link to video ]), history and benchmarks by Matt Dowle and four hour workshop, EARL Conference London
 - COOL! [Overlap joins in R: a speed comparison with packages sqldf and data.table](https://www.zevross.com/blog/2015/07/09/overlap-joins-in-r-a-speed-comparison-with-packages-sqldf-and-data-table-3/)
@@ -7097,9 +7223,6 @@ This is a two-in-one package which provides interfaces to both R and 'Python'. I
 Эта фукция использует [RCpp код]: [`SEXP R_lower_tri(`](https://github.com/markvanderloo/stringdist/blob/03cec8adad87d572cd2671789c4fe9e6910dedfa/pkg/src/Rstringdist.c#L235)
 
 
-## Git
-- Как сделать клон бранча в git:
-`git clone --branch phase_2 https://gitlab.com/TV-stat/mts-tv-stat.reports.git mts-tv-stat.reports.ph2`
 
 # 15.10.2018
 ## R

@@ -218,6 +218,15 @@ sudo apt-get install \
 libsodium-dev
 ```
 
+Пакет, нужный для ragg 4.x
+```
+Configuration failed to find the harfbuzz freetype2 fribidi library. Try installing:
+ * deb: libharfbuzz-dev libfribidi-dev (Debian, Ubuntu, etc)
+ * rpm: harfbuzz-devel fribidi-devel (Fedora, EPEL)
+ * csw: libharfbuzz_dev libfribidi_dev (Solaris)
+ * brew: harfbuzz fribidi (OSX)
+```
+
 # x11-xserver-utils
 
 

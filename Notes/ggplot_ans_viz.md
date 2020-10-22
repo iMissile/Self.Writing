@@ -257,6 +257,7 @@ The goal of ggvega is to translate a ggplot2 object to a Vega-Lite specification
 	- [vlbuildr](https://vegawidget.github.io/vlbuildr/index.html)
 The goal of vlbuildr is to provide an R api for building up vega-lite specs.
 - [trelliscopejs](https://hafen.github.io/trelliscopejs/). Trelliscope is a scalable, flexible, interactive approach to visualizing data.
+- COOL! [a ggplot2 grammar guide](https://evamaerey.github.io/ggplot2_grammar_guide/about)
 
 
 
