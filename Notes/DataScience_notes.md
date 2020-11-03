@@ -635,9 +635,11 @@ Theming in Rmarkdown can be hard. You first made some custom CSS or use a provid
 - [Crosstalk](https://rstudio.github.io/crosstalk/). Crosstalk is an add-on to the htmlwidgets package. It extends htmlwidgets with a set of classes, functions, and conventions for implementing cross-widget interactions (currently, linked brushing and filtering).
 - [crosstalk Tutorial](https://emilyriederer.github.io/demo-crosstalk/tutorial/tutorial-rmd.html). This tutorial will help you learn to use the crosstalk package to link different htmlwidgets. After completing this tutorial, you will be able to build an application like the one below, which visualizes the number of rides at a sample of Chicago train stations in 2019 versus 2020.
 - COOL! [How I share knowledge around R Markdown](https://themockup.blog/posts/2020-07-25-meta-rmarkdown/). A meta collection of some R Markdown strategies.
+- COOL! Slides. [Making Websites in R Markdown](http://arm.rbind.io/slides/blogdown.html#1). Alison Hill | rstudio::conf | 2019-01-15
 - COOL! [How I Teach R Markdown](https://alison.rbind.io/post/2020-05-28-how-i-teach-r-markdown/) by Alison Hill
 - [Distill for R Markdown](https://rstudio.github.io/distill/). Scientific and technical writing, native to the web
 - [Different ways to set figure size in RMarkdown](https://sebastiansauer.github.io/figure_sizing_knitr/)
+
 
 
 ## knitr. Запускаем Rmd -> PDF
@@ -954,6 +956,109 @@ A lightweight, modern and flexibly logging utility for R – heavily inspired by
 - [Beyond Exception Handling: Conditions and Restarts](http://adv-r.had.co.nz/beyond-exception-handling.html)
 - [Establish handlers on the stack](https://rlang.r-lib.org/reference/with_handlers.html)
 
+
+# 03.11.2020
+## R
+- COOL! А неплохо бы комментарии проверить. [`missing()` is 1.5 to 4 times faster than `is.null()`](https://twitter.com/antoine_fabri/status/1323342112390336513?s=20)
+- COOL! [`sfheaders`](https://dcooley.github.io/sfheaders/index.html). Yep. In a few of my other libraries I’ve made use of sf objects, but without importing the sf library itself. This is by design because sf is quite a ‘heavy’ library.
+- [`dials`](https://dials.tidymodels.org/reference/mtry.html). Number of randomly sampled predictors
+- e-book. [John Coene. JavaScript for R](https://javascript-for-r.com/). Enhance your data science products with JavaScript
+- [Why RStudio Supports Python for Data Science](https://blog.rstudio.com/2020/10/30/why-rstudio-supports-python/)
+- COOL! [rdboyes/forestable](https://github.com/rdboyes/forestable). An R package for making forest plots with additional information
+
+# 02.11.2020
+## DS
+- [Our counterintuitive fix for Android path normalization](https://dropbox.tech/mobile/our-counterintuitive-fix-for-android-path-normalization)
+- из мануала as.Date
+```
+## Excel is said to use 1900-01-01 as day 1 (Windows default) or
+## 1904-01-01 as day 0 (Mac default), but this is complicated by Excel
+## incorrectly treating 1900 as a leap year.
+## So for dates (post-1901) from Windows Excel
+as.Date(35981, origin = "1899-12-30") # 1998-07-05
+## and Mac Excel
+as.Date(34519, origin = "1904-01-01") # 1998-07-05
+## (these values come from http://support.microsoft.com/kb/214330)
+```
+- [How to Blur an Image in PowerPoint](https://www.howtogeek.com/437476/how-to-blur-an-image-in-powerpoint/)
+
+## R
+- COOL! [`rlang::arg_match`](https://rlang.r-lib.org/reference/arg_match.html). Match an argument to a character vector
+- [How to Automate PDF Reporting with R](https://www.business-science.io/code-tools/2020/10/21/automate-pdf-with-r.html)
+- [PowerBI vs. R Shiny: Two Popular Excel Alternatives Compared](https://appsilon.com/powerbi-vs-r-shiny/)
+- [Excel date to Unix timestamp](https://stackoverflow.com/questions/1703505/excel-date-to-unix-timestamp)
+- [excel date time conversion to POSXIct](https://stackoverflow.com/questions/55732968/excel-date-time-conversion-to-posxict)
+```
+as.POSIXct(43306.29*3600*24 , origin="1899-12-30")
+#"2018-07-25 02:57:36 EDT"
+as.POSIXct(43306.29*3600*24 , origin="1899-12-30", tz="UTC")
+#"2018-07-25 06:57:36 UTC"
+```
+
+
+# 30.10.2020
+## MS SQL
+- [Difference between datetime and timestamp in sqlserver? {duplicate}](https://stackoverflow.com/questions/7105093/difference-between-datetime-and-timestamp-in-sqlserver)
+- COOL! [Get Epoch Time in SQL Server](https://jonlabelle.com/snippets/view/sql/get-epoch-time-in-sql-server)
+Convert SQL Server DateTime to milliseconds Since 1970 (UNIX Epoch Time).
+- [DATEDIFF (Transact-SQL)](https://docs.microsoft.com/ru-ru/sql/t-sql/functions/datediff-transact-sql?view=sql-server-ver15)
+- [Конструкция WITH в T-SQL или обобщенное табличное выражение (ОТВ)](https://info-comp.ru/obucheniest/495-the-with-in-t-sql-or-common-table-expression.html)
+
+# 29.10.2020
+## R
+- [LOAD, SAVE, AND .RDA FILES](https://thepracticalr.wordpress.com/2017/04/27/load-save-and-rda-files/). A couple weeks ago I stumbled across a feature in R that I had never heard of before. The functions `save()`, `load()`, and the R file type `.rda`.
+
+# 28.10.2020
+## R
+- [PRISMAstatement: Plot Flow Charts According to the "PRISMA" Statement](https://cran.r-project.org/web/packages/PRISMAstatement/index.html)
+- COOL! [A Gentle Introduction to Tidy Model Stacking](https://blog.simonpcouch.com/blog/gentle-intro-stacks/)
+- COOL! Slides. [Data Visualization in R. ggplot2 and the grammar of graphics](https://master-r-epi.netlify.app/03-ggplot_basics/ggplot_basics.html#1), 2020-08-22
+- COOL! [ggplot2 3.3.0](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/). Rewrite of axis code; New bin scale; Bi-directional geoms and stats; More control over aesthetic evaluation; More extensible theming; Better contour calculations; Grab bag
+- [Windows/UTF-8 Build of R and CRAN Packages](https://developer.r-project.org/Blog/public/2020/07/30/windows/utf-8-build-of-r-and-cran-packages/) by Tomas Kalibera. First published: 2020/07/30
+- dplyr 1.0 questions:
+	- [How to replace retired `all_vars()` and `any_vars()` using across?](https://community.rstudio.com/t/how-to-replace-retired-all-vars-and-any-vars-using-across/53102)
+	- [In dplyr 1.0.0, what is the right way to write a logical disjunction?](https://stackoverflow.com/questions/62704059/in-dplyr-1-0-0-what-is-the-right-way-to-write-a-logical-disjunction)
+- [How to create the matrix from data frame?](https://stackoverflow.com/questions/41266610/how-to-create-the-matrix-from-data-frame)
+
+# 27.10.2020
+## R testthat
+- [Why are tests/testthat/helper- files discouraged in testthat](https://community.rstudio.com/t/why-are-tests-testthat-helper-files-discouraged-in-testthat/85253)
+- [R testthat unit test data and helper function conventions](https://stackoverflow.com/questions/35941729/r-testthat-unit-test-data-and-helper-function-conventions)
+- [testthat 2.0.0](https://www.tidyverse.org/blog/2017/12/testthat-2-0-0/)
+- [Self-cleaning test fixtures](https://www.tidyverse.org/blog/2020/04/self-cleaning-test-fixtures/)
+- [Test fixtures](https://testthat.r-lib.org/articles/test-fixtures.html)
+
+## R
+- RcpppSimdJson
+	- [Change in behavoir of query argument of fparse between version 0.1.1 and 0.1.2 #51 {Closed}](https://github.com/eddelbuettel/rcppsimdjson/issues/51)
+	- [Parsing error @ Windows & RcppSimdJson 0.1.2 #56 {Closed}](https://github.com/eddelbuettel/rcppsimdjson/issues/56)
+- [Standardize data columns in R](https://stackoverflow.com/questions/15215457/standardize-data-columns-in-r). Повторно натыкаемся на ответ [The collapse package provides the fastest scale function - implemented in C++ using Welfords Online Algorithm](https://stackoverflow.com/a/63695982/6835084)
+- [Using the bestNormalize Package](https://cran.r-project.org/web/packages/bestNormalize/vignettes/bestNormalize.html) by Ryan A Peterson
+- COOL! [Feature Scaling for Machine Learning: Understanding the Difference Between Normalization vs. Standardization](https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/)
+
+# 26.10.2020
+## R
+- COOL! Slides. [Intro to tidymodels with nflfastR](https://cmsac-tidymodels.netlify.app/#1) by Tom Mock: @thomas_mock. 2020-10-24
+- Хороший пример таблички gt: [tidytuesday/2020/week_43_beer_awards.Rmd](https://github.com/kaustavSen/tidytuesday/blob/master/2020/week_43_beer_awards.Rmd)
+- [betweenthepipes](https://github.com/meghall06/betweenthepipes) is an R package that currently holds two tutorials, created with learnr. There are also two sample data sets that are useful for learning to work with hockey data.
+- [Installing older versions of packages](https://support.rstudio.com/hc/en-us/articles/219949047-Installing-older-versions-of-packages)
+
+## Win
+- COOL! [RAMMap v1.60](https://docs.microsoft.com/en-us/sysinternals/downloads/rammap) 10/15/2020, By Mark Russinovich
+
+# 23.10.2020
+## Process Mining
+- [nirmalpatel/fuzzymineR](https://github.com/nirmalpatel/fuzzymineR). Fuzzy Process Mining in R
+- [fnc11/FuzzyMiner](https://github.com/fnc11/FuzzyMiner). Repository for Fuzzy Miner Web application.
+
+## Survival in R
+- COOL! [Survival analysis with strata, clusters, frailties and competing risks in in Finalfit](https://www.datasurg.net/2019/09/12/survival-analysis-with-strata-clusters-frailties-and-competing-risks-in-in-finalfit/)
+- [EP03: Survival Analysis in R Companion](http://www.drizopoulos.com/courses/emc/ep03_%20survival%20analysis%20in%20r%20companion) by Dimitris Rizopoulos. October 11, 2020
+
+## R
+- COOL! [datamods](https://github.com/dreamRs/datamods). Shiny modules to import data into an application or addin.
+- [Apache Arrow 2.0.0 Release](https://arrow.apache.org/blog/2020/10/22/2.0.0-release/)
+
 # 21.10.2020
 ## R
 - COOL! [Scientific paper about everything related to containers and R](https://github.com/nuest/rockerverse-paper)
@@ -999,6 +1104,7 @@ ymlthis\rstudio\addins.dcf
 ## R decision tree
 - [Decision Tree in R with Example](https://www.guru99.com/r-decision-trees.html)
 - [Decision Trees in R using rpart](https://www.gormanalysis.com/blog/decision-trees-in-r-using-rpart/)
+- COOL! [Magic Behind Constructing A Decision Tree](https://www.gormanalysis.com/blog/magic-behind-constructing-a-decision-tree/)
 - [export rpart rules to a data frame and link rules to train data](https://stackoverflow.com/questions/48489647/export-rpart-rules-to-a-data-frame-and-link-rules-to-train-data)
 - COOL! [Plotting rpart trees with the rpart.plot package](http://www.milbo.org/rpart-plot/prp.pdf)
 - [`library(rattle)` # Fancy tree plot](https://rattle.togaware.com/)
@@ -1008,6 +1114,22 @@ tree.2 <- rpart(form, data)			# A more reasonable tree
 prp(tree.2)                                     # A fast plot
 fancyRpartPlot(tree.2)				# A fancy plot from rattle
 ```
+- [Interpretation of Rpart for Decision Trees](https://stats.stackexchange.com/questions/316718/interpretation-of-rpart-for-decision-trees)
+- COOL! [Decision Tree Rpart() Summary Interpretation](https://community.rstudio.com/t/decision-tree-rpart-summary-interpretation/9996)
+- [Chapter 9 Decision Trees](https://bradleyboehmke.github.io/HOML/DT.html)
+- [Classification and Regression Tree (CART)](https://homepages.uc.edu/~lis6/Teaching/ML19Spring/Lab/lab8_tree.html)
+- [Decision Trees in R](http://www.learnbymarketing.com/tutorials/rpart-decision-trees-in-r/)
+```
+print(rpart_model) Produces a simple summary of your model at each split. Shows…
+Split criteria
+# rows in this node
+# Misclassified
+Predicted Class
+% of rows in predicted class for this node.
+```
+- [Энтропия? Это просто!](https://habr.com/ru/post/374681/)
+- [Деревья принятия решений](https://studme.org/139987/informatika/derevya_prinyatiya_resheniy). Использование энтропии в деревьях принятия решений
+
 
 # 19.10.2020
 ## R
@@ -1130,6 +1252,21 @@ Alison Hill · Desirée De Leon
 ```
 conn <- DBI::dbConnect(RClickhouse::clickhouse(), host="10.0.0.219", db = "X5_BM", toUTF = FALSE)
 ```
+- [Looking at the bits of a Unicode (UTF-8) text file](https://www.johndcook.com/blog/2020/09/06/unicode-file-bits/)
+- [Может ли допустимая строка Unicode содержать FFFF? Разве Java/CharacterIterator сломано?](https://coderoad.ru/3482683/%D0%9C%D0%BE%D0%B6%D0%B5%D1%82-%D0%BB%D0%B8-%D0%B4%D0%BE%D0%BF%D1%83%D1%81%D1%82%D0%B8%D0%BC%D0%B0%D1%8F-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B0-Unicode-%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C-FFFF-%D0%A0%D0%B0%D0%B7%D0%B2%D0%B5-Java-CharacterIterator)
+- [The Unicode Standard, Version 5.2--electronic edition](http://www.unicode.org/versions/Unicode5.2.0/ch16.pdf#G19635). 16.7 Noncharacters
+Applications are free to use any of these noncharacter code points internally but should
+never attempt to exchange them. If a noncharacter is received in open interchange, an
+application is not required to interpret it in any way. It is good practice, however, to recognize it as a noncharacter and to take appropriate action, such as replacing it with U+FFFD
+replacement character, to indicate the problem in the text. It is not recommended to
+simply delete noncharacter code points from such text, because of the potential security
+issues caused by deleting uninterpreted characters. (See conformance clause C7 in
+Section 3.2, Conformance Requirements, and Unicode Technical Report #36, “Unicode
+Security Considerations.”)
+Noncharacters: U+FFFE, U+FFFF, and Others
+Оно же в [The Unicode Standard, Version 13.0--electronic edition](https://www.unicode.org/versions/Unicode13.0.0/ch23.pdf)
+- [r - Remove Unicode replacement character from a string](https://stackoverflow.com/questions/42626243/r-remove-unicode-replacement-character-from-a-string)
+
 
 # 02.10.2020
 ## R
@@ -1353,7 +1490,6 @@ Examples from `example(packBits)`
 - [Heatmap-integrated Decision Tree Visualizations](https://github.com/trang1618/treeheatr)
 - [Join tables based on events occurring in sequence in a funnel](https://github.com/robinsones/funneljoin)
 - [RStudio Addins to Simplify Markdown Writing](https://github.com/ThinkR-open/remedy)
-- [Looking at the bits of a Unicode (UTF-8) text file](https://www.johndcook.com/blog/2020/09/06/unicode-file-bits/)
 - [Feather Icons for Shiny](https://github.com/ColinFay/feathericons)
 - COOL! [Advanced Plots with str_glue()](https://www.exploringdata.org/post/advanced-plots-in-r-with-str_glue/)
 - [R: wrap text function: inserting \n automatically after every 16 characters](https://stackoverflow.com/questions/41642143/r-wrap-text-function-inserting-n-automatically-after-every-16-characters)
@@ -4149,7 +4285,6 @@ An exploration of Shiny’s position in the data science pipeline
 ## R
 - [Applying gradient descent – primer / refresher](http://gradientdescending.com/applying-gradient-descent-primer-refresher/)
 - [Use more of your data with matrix factorisation](http://gradientdescending.com/use-more-of-your-data-with-matrix-factorisation/)
-- COOL! [Survival analysis with strata, clusters, frailties and competing risks in in Finalfit](https://www.datasurg.net/2019/09/12/survival-analysis-with-strata-clusters-frailties-and-competing-risks-in-in-finalfit/)
 - [metathis](http://pkg.garrickadenbuie.com/metathis/index.html). Why metathis?. The goal of metathis is to help you add HTML <meta> tags to your R Markdown and Shiny apps.
 
 ## Поиск похожих изображений
@@ -6317,8 +6452,9 @@ Benchmark your CPU and compare against other CPUs. Also provides functions for o
 # 30.01.2019
 - [StatQuest with Josh Starmer](https://www.youtube.com/user/joshstarmer/videos)
 - zarunbal/LogExpert [Releases](https://github.com/zarunbal/LogExpert/releases)
+- Ставим LogExpert через Chocolatey. [LogExpert 1.8.7](https://chocolatey.org/packages/logexpert)
+	- Regex columnizer [apache log] `([^ ]+) \[([^\]]+)\] (.*)`
 - COOL! [Because it's Friday: A timeline of the elements](https://blog.revolutionanalytics.com/2019/01/because-its-friday-a-timeline-of-the-elements.html). Ссылка на исходную страницу ["Royal Society of Chemistry - Periodic table"](http://www.rsc.org/periodic-table/history)
-
 
 ## R
 
