@@ -983,9 +983,10 @@ as.Date(34519, origin = "1904-01-01") # 1998-07-05
 - [How to Blur an Image in PowerPoint](https://www.howtogeek.com/437476/how-to-blur-an-image-in-powerpoint/)
 
 ## R
-- COOL! [`rlang::arg_match`](https://rlang.r-lib.org/reference/arg_match.html). Match an argument to a character vector
-- [How to Automate PDF Reporting with R](https://www.business-science.io/code-tools/2020/10/21/automate-pdf-with-r.html)
 - [PowerBI vs. R Shiny: Two Popular Excel Alternatives Compared](https://appsilon.com/powerbi-vs-r-shiny/)
+- [Tableau vs. R Shiny: Which Excel Alternative Is Right For You?](https://appsilon.com/tableau-vs-r-shiny/)
+ - COOL! [`rlang::arg_match`](https://rlang.r-lib.org/reference/arg_match.html). Match an argument to a character vector
+- [How to Automate PDF Reporting with R](https://www.business-science.io/code-tools/2020/10/21/automate-pdf-with-r.html)
 - [Excel date to Unix timestamp](https://stackoverflow.com/questions/1703505/excel-date-to-unix-timestamp)
 - [excel date time conversion to POSXIct](https://stackoverflow.com/questions/55732968/excel-date-time-conversion-to-posxict)
 ```
@@ -1001,8 +1002,10 @@ as.POSIXct(43306.29*3600*24 , origin="1899-12-30", tz="UTC")
 - [Difference between datetime and timestamp in sqlserver? {duplicate}](https://stackoverflow.com/questions/7105093/difference-between-datetime-and-timestamp-in-sqlserver)
 - COOL! [Get Epoch Time in SQL Server](https://jonlabelle.com/snippets/view/sql/get-epoch-time-in-sql-server)
 Convert SQL Server DateTime to milliseconds Since 1970 (UNIX Epoch Time).
+- [Add and Subtract Dates using DATEADD in SQL Server](https://www.mssqltips.com/sqlservertip/2509/add-and-subtract-dates-using-dateadd-in-sql-server/)
 - [DATEDIFF (Transact-SQL)](https://docs.microsoft.com/ru-ru/sql/t-sql/functions/datediff-transact-sql?view=sql-server-ver15)
 - [Конструкция WITH в T-SQL или обобщенное табличное выражение (ОТВ)](https://info-comp.ru/obucheniest/495-the-with-in-t-sql-or-common-table-expression.html)
+- [Семь смертных грехов программиста на T-SQL](https://habr.com/ru/post/149235/)
 
 # 29.10.2020
 ## R

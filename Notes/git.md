@@ -97,4 +97,13 @@ A simpler, faster alternative to git-filter-branch for deleting big files and re
 - [How can I switch to another branch in git?](https://stackoverflow.com/questions/47630950/how-can-i-switch-to-another-branch-in-git)
 - [How do you clone a Git repository into a specific folder?](https://stackoverflow.com/questions/651038/how-do-you-clone-a-git-repository-into-a-specific-folder). `git clone git@github.com:whatever folder-name`
 - COOL! ѕолна€ команда клонировани€ репозитори€ на удаленной машине: `git clone -c http.sslverify=false -b "dev" https://gitlab.com/ishutov/beluga-distr.git beluga-distr-dev`
+- »зменение ссылки на внешний репозиторий: `git remote set-url x5scm https://scm.x5.ru/bms-analytics/x5-bms-diagnostics2.git`
+¬ итоге должно получитьс€:
+```
+git remote -v
+origin  https://gitlab.com/X5-logs/x5-bms-diagnostics2.git (fetch)
+origin  https://gitlab.com/X5-logs/x5-bms-diagnostics2.git (push)
+x5scm   https://scm.x5.ru/bms-analytics/x5-bms-diagnostics2.git (fetch)
+x5scm   https://scm.x5.ru/bms-analytics/x5-bms-diagnostics2.git (push)
+```
 
