@@ -956,6 +956,83 @@ A lightweight, modern and flexibly logging utility for R – heavily inspired by
 - [Beyond Exception Handling: Conditions and Restarts](http://adv-r.had.co.nz/beyond-exception-handling.html)
 - [Establish handlers on the stack](https://rlang.r-lib.org/reference/with_handlers.html)
 
+## R и 64 бит
+- [REALLY LARGE NUMBERS IN R](http://theautomatic.net/2019/08/16/really-large-numbers-in-r/). This post will discuss ways of handling huge numbers in R using the gmp package.
+- [In R is it better to use integer64, numeric, or character for large integer id numbers?](https://stackoverflow.com/questions/35171760/in-r-is-it-better-to-use-integer64-numeric-or-character-for-large-integer-id-n)
+- [R in a 64 bit world](http://www.win-vector.com/blog/2015/06/r-in-a-64-bit-world/)
+- [Double-precision floating-point format](https://en.wikipedia.org/wiki/Double-precision_floating-point_format)
+- Калькулятор для преобразования чисел с плавающей точкой. [Tools & Thoughts. IEEE-754 Floating Point Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
+- [Урок №33. Типы данных с плавающей точкой](https://ravesli.com/urok-33-tip-dannyh-s-plavayushhej-tochkoj-floating-point/)
+Диапазон и точность типов данных с плавающей точкой, согласно стандарту IEEE 754:
+
+Размер	Диапазон	Точность
+4 байта	от ±1.18 x 10^-38 до ±3.4 x 10^38	6-9 значащих цифр (в основном 7)
+8 байт	от ±2.23 x 10^-308 до ±1.80 x 10^308	15-18 значащих цифр (в основном 16)
+80 бит (12 байт)	от ±3.36 x 10^-4932 до ±1.18 x 10^4932	18-21 значащих цифр
+16 байт	от ±3.36 x 10^-4932 до ±1.18 x 10^4932	33-36 значащих цифр
+- unixtimestamp: 1565352587 sec -- 10 знаков
+- [Controlling number of decimal digits in print output in R](https://stackoverflow.com/questions/2287616/controlling-number-of-decimal-digits-in-print-output-in-r)
+- [IEEE Standard 754 Floating Point Numbers](https://tutorialspoint.dev/computer-science/computer-organization-and-architecture/ieee-standard-754-floating-point-numbers)
+- [IEEE 754 - стандарт двоичной арифметики с плавающей точкой](https://www.softelectro.ru/ieee754.html)
+- COOL! Learning. [romainfrancois/seven31](https://github.com/romainfrancois/seven31). This branch is even with ThinkR-open:master.
+	- COOL! [Rounding to Decimal Digits in Binary](https://cran.r-project.org/web/packages/round/vignettes/Rounding.html)
+	- [twitt](https://twitter.com/romain_francois/status/1281113818874220544?s=20)
+```
+is probably the most famous FAQ, so it deserves its own 📦 to help you 🕵️ the confusion of
+
+0.3 + 0.6 == 0.9
+#> [1] FALSE
+sqrt(2)^2 == 2
+#> [1] FALSE
+```
+- [binaryLogic: Binary Logic](https://cran.r-project.org/web/packages/binaryLogic/)
+Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
+- [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
+
+
+
+# 16.11.2020
+## R
+- [{shinyscreenshot}: Finally, an easy way to take screenshots in Shiny apps!](https://deanattali.com/blog/shinyscreenshot-release/)
+- COOL! [tidyCpp Motivation](https://cloud.r-project.org/web/packages/tidyCpp/vignettes/motivation.html)
+- [Welcome to the aweek package!](https://www.repidemicsconsortium.org/aweek/)
+This package will convert dates to US CDC epiweeks, isoweeks, and all others in between with minimal overhead.
+- COOL! [Here is a toy example](https://twitter.com/rdataberlin/status/1328426179674693633) illustrating how to build a formatted #rstats {gt} table which combines simple statistics, ggplots, and slopes from the fit of multiple linear (mixed) models. All in 35 lines of easy code, thanks to row and columns groupings enabled by #tidyverse tibbles
+- ebook. [Performance Analysis and Tuning on Modern CPUs](https://book.easyperf.net/perf_book)
+- [реализация точечной функции `. ()` в пакете data.table](https://issue.life/questions/52312977)
+
+
+# 13.11.2020
+## R
+- [Programatically Generating PDF Reports with the Tidyverse](https://blog.simonpcouch.com/blog/pdfs-from-data/)
+- [Data Organization in Spreadsheets](https://doi.org/10.1080/00031305.2017.1375989) by Karl W. Broman &Kara H. Woo
+- [Benchmarking theorem provers for programming tasks: yices vs. z3](https://lemire.me/blog/2020/11/08/benchmarking-theorem-provers-for-programming-tasks-yices-vs-z3/)
+
+
+# 11.11.2020
+## R
+- [dbplyr 2.0.0](https://www.tidyverse.org/blog/2020/11/dbplyr-2-0-0/)
+- [Embedding custom HTML in gt tables](https://themockup.blog/posts/2020-10-31-embedding-custom-features-in-gt-tables/)
+
+## Other
+- [Аудио через Bluetooth: максимально подробно о профилях, кодеках и устройствах](https://habr.com/ru/post/427997/)
+- [Bluetooth кодеки SBC, aptX и LDAC — чем они отличаются и как работают](https://headphone-review.ru/?p=12824)
+- [Запрет контента на МТС](https://mtshelper.ru/zapret-kontenta-na-mts/)
+- [Услуга МТС «Ограничение информационно-развлекательных сервисов»: как подключить, как работает, сколько стоит](https://media.mts.ru/internet/186483/#top)
+- [На что влияет услуга «Запрет контента» от МТС, как ее подключить и как она работает](https://media.mts.ru/internet/176038/#top)
+- [Если у вас уже активны по номеру платные контентные подписки, и вы желаете их деактивировать](https://chechnya.topnomer.ru/blog/zapret-kontenta-na-mts.html), то используйте специальный портал *“Мой контент”*, или команду *152*2#p. Здесь можно не только посмотреть активированные на вашем телефоне сервисы, но и буквально в пару кликов отписаться от всех.
+- [Мой контент. Личный кабинет МТС](http://moicontent.mts.ru/)
+
+# 06.11.2020
+## R & Process Mining
+- [Logs generation for process mining on a workflow model](https://stackoverflow.com/questions/42666155/logs-generation-for-process-mining-on-a-workflow-model)
+- [Generate event log for Petri net or BPMN model](https://www.win.tue.nl/promforum/discussion/1329/generate-event-log-for-petri-net-or-bpmn-model)
+- [Straightforward Petri Net-based Event Log Generation in ProM](http://processmining.be/loggenerator/)
+
+## R
+- COOL! [RfastOfficial/Rfast](https://github.com/RfastOfficial/Rfast). A collection of Rfast functions for data analysis. Note 1: The vast majority of the functions accept matrices only, not data.frames. Note 2: Do not have matrices or vectors with have missing data (i.e NAs). We do no check about them and C++ internally transforms them into zeros (0), so you may get wrong results. Note 3: In general, make sure you give the correct input, in order to get the correct output. We do no checks and this is one of the many reasons we are fast.
+- COOL! [Fast sampling support in dqrng](https://blog.daqana.com/en/fast-sampling-support-in-dqrng/)
+- [Random Number Generator](https://www.daqana.org/dqrng/)
 
 # 03.11.2020
 ## R
@@ -1850,9 +1927,6 @@ A comprehensive guide to setup an R development environment for Ubuntu running i
 
 # 28.07.2020
 ## R
-- [binaryLogic: Binary Logic](https://cran.r-project.org/web/packages/binaryLogic/)
-Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
-- [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 - [How to Use Google Fonts in LaTeX?](https://latexdraw.com/how-to-use-google-fonts-in-latex/)
 - [Presentation-Ready Summary Tables with gtsummary](https://education.rstudio.com/blog/2020/07/gtsummary/)
 - COOL! [DAGitty — draw and analyze causal diagrams](http://www.dagitty.net/)
@@ -2036,17 +2110,6 @@ Also, see:
 - [Expand broom::tidy() output for categorical parameter estimates](https://guyabel.com/post/tidycat/)
 - COOL! [Reproducible Data Workflows With Drake](https://www.garrickadenbuie.com/talk/drake-intro-biodataclub/) by Garrick Aden-Buie
 - COOL! [Automating exploratory plots with ggplot2 and purrr](https://aosmith.rbind.io/2018/08/20/automating-exploratory-plots/)
-- COOL! Learning. [romainfrancois/seven31](https://github.com/romainfrancois/seven31). This branch is even with ThinkR-open:master.
-	- COOL! [Rounding to Decimal Digits in Binary](https://cran.r-project.org/web/packages/round/vignettes/Rounding.html)
-	- [twitt](https://twitter.com/romain_francois/status/1281113818874220544?s=20)
-```
-is probably the most famous FAQ, so it deserves its own 📦 to help you 🕵️ the confusion of
-
-0.3 + 0.6 == 0.9
-#> [1] FALSE
-sqrt(2)^2 == 2
-#> [1] FALSE
-```
 
 ## LaTeX
 - [SIAM bibliography style for BibLaTeX](https://tex.stackexchange.com/questions/330345/siam-bibliography-style-for-biblatex)
@@ -4586,26 +4649,6 @@ f_dowle3 = function(DT) {
 }
 ```
 - [na.omit.data.table: Remove rows with missing values on columns specified](https://rdrr.io/cran/data.table/man/na.omit.data.table.html)
-
-## R и 64 бит
-- [REALLY LARGE NUMBERS IN R](http://theautomatic.net/2019/08/16/really-large-numbers-in-r/). This post will discuss ways of handling huge numbers in R using the gmp package.
-- [In R is it better to use integer64, numeric, or character for large integer id numbers?](https://stackoverflow.com/questions/35171760/in-r-is-it-better-to-use-integer64-numeric-or-character-for-large-integer-id-n)
-- [R in a 64 bit world](http://www.win-vector.com/blog/2015/06/r-in-a-64-bit-world/)
-- [Double-precision floating-point format](https://en.wikipedia.org/wiki/Double-precision_floating-point_format)
-- Калькулятор для преобразования чисел с плавающей точкой. [Tools & Thoughts. IEEE-754 Floating Point Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
-- [Урок №33. Типы данных с плавающей точкой](https://ravesli.com/urok-33-tip-dannyh-s-plavayushhej-tochkoj-floating-point/)
-Диапазон и точность типов данных с плавающей точкой, согласно стандарту IEEE 754:
-
-Размер	Диапазон	Точность
-4 байта	от ±1.18 x 10^-38 до ±3.4 x 10^38	6-9 значащих цифр (в основном 7)
-8 байт	от ±2.23 x 10^-308 до ±1.80 x 10^308	15-18 значащих цифр (в основном 16)
-80 бит (12 байт)	от ±3.36 x 10^-4932 до ±1.18 x 10^4932	18-21 значащих цифр
-16 байт	от ±3.36 x 10^-4932 до ±1.18 x 10^4932	33-36 значащих цифр
-- unixtimestamp: 1565352587 sec -- 10 знаков
-- [Controlling number of decimal digits in print output in R](https://stackoverflow.com/questions/2287616/controlling-number-of-decimal-digits-in-print-output-in-r)
-- [IEEE Standard 754 Floating Point Numbers](https://tutorialspoint.dev/computer-science/computer-organization-and-architecture/ieee-standard-754-floating-point-numbers)
-- [IEEE 754 - стандарт двоичной арифметики с плавающей точкой](https://www.softelectro.ru/ieee754.html)
-
 
 # 02.08.2019
 ## Stat

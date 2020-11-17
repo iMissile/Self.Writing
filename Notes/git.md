@@ -106,4 +106,5 @@ origin  https://gitlab.com/X5-logs/x5-bms-diagnostics2.git (push)
 x5scm   https://scm.x5.ru/bms-analytics/x5-bms-diagnostics2.git (fetch)
 x5scm   https://scm.x5.ru/bms-analytics/x5-bms-diagnostics2.git (push)
 ```
+- [How To Switch Branch on Git](https://devconnected.com/how-to-switch-branch-on-git/)
 
