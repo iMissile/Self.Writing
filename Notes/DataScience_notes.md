@@ -251,6 +251,9 @@ broom::glance(survfit(cfit))
 	- [How to plot Cox model with ggsurvplot()? #67 {Closed}](https://github.com/kassambara/survminer/issues/67)
 	- [ggsurvplot and cox model #109 {Closed}](https://github.com/kassambara/survminer/issues/109)
 	- survminer: [The function ggcoxadjustedcurves() is replaced by ggadjustedcurves() {#229}](https://github.com/kassambara/survminer/issues/229).
+- coxph strata. [coxph: Fit Proportional Hazards Regression Model](https://rdrr.io/cran/survival/man/coxph.html)
+- [Kleinbaum: Stratified Cox regression](http://rstudio-pubs-static.s3.amazonaws.com/5096_0880aaaf0df94f3b8533a1c024738246.html)
+- [Survival Analysis in R For Beginners](https://www.datacamp.com/community/tutorials/survival-analysis-R)
 
 ## Еще раз про ROC-AUC, Survival
 - [Логистическая регрессия и ROC-анализ — математический аппарат](https://basegroup.ru/community/articles/logistic)
@@ -375,7 +378,6 @@ Or with gunzip
 `fread(path, encoding="Latin-1")`
 - [Extracting unique rows from a data table in R {duplicate}](https://stackoverflow.com/questions/7562284/extracting-unique-rows-from-a-data-table-in-r)
 - [Filtering out duplicated/non-unique rows in data.table](https://stackoverflow.com/questions/11792527/filtering-out-duplicated-non-unique-rows-in-data-table)
-- [How do I exclude columns from a data.table?](https://stackoverflow.com/questions/37210489/how-do-i-exclude-columns-from-a-data-table?rq=1)
 - COOL! [Benchmarking the six most used manipulations for data.tables in R](https://opremicsolutions.de/index.php/benchmarking-the-six-most-used-manipulations-for-data-tables-in-r/). Comparing formulations of the data.table package with base R and dplyr formulations
 - [How to import a directory of csvs at once with base R and data.table. Can you guess which way is the fastest?](https://jozefhajnala.gitlab.io/r/r005-import-csvs/)
 - [Convenience features of fread](https://github.com/Rdatatable/data.table/wiki/Convenience-features-of-fread)
@@ -447,7 +449,7 @@ A[B, on = 'a', bb := i.b]
 ```
 dt[, diff := value - shift(value), by = variable]
 ```
-- [efficiently locf by groups in a single R data.table](https://stackoverflow.com/questions/37060211/efficiently-locf-by-groups-in-a-single-r-data-table/37068596)
+- [Efficiently locf by groups in a single R data.table](https://stackoverflow.com/questions/37060211/efficiently-locf-by-groups-in-a-single-r-data-table/37068596)
 - С бенчмарками [Remove rows conditionally from a data.table in R](https://stackoverflow.com/questions/22655060/remove-rows-conditionally-from-a-data-table-in-r)
 	- [Efficiently remove rows #2890 {Closed}](https://github.com/Rdatatable/data.table/issues/2890)
 - Целый квест. [Filtering out duplicated/non-unique rows in data.table](https://stackoverflow.com/questions/11792527/filtering-out-duplicated-non-unique-rows-in-data-table)
@@ -468,7 +470,8 @@ From `data.table` versions >= v1.9.5, we can use `shift` with type as `lag` or `
 - [Is my way of duplicating rows in data.table efficient?](https://stackoverflow.com/questions/8009900/is-my-way-of-duplicating-rows-in-data-table-efficient)
 - [Introduction to `data.table` by Haema Nilakanta & Kim Ky](http://rpubs.com/kykimeng/intro-to-data-table)
 - [How to select the first and last row within a grouping variable in a data frame?](https://stackoverflow.com/questions/8203818/how-to-select-the-first-and-last-row-within-a-grouping-variable-in-a-data-frame/8212756)
-- [Select first and last row from grouped data](https://stackoverflow.com/questions/31528981/select-first-and-last-row-from-grouped-data/31529043)
+- COOL! [Select first and last row from grouped data](https://stackoverflow.com/questions/31528981/select-first-and-last-row-from-grouped-data/31529043)
+`df[ df[order(id, stopSequence), .I[c(1L,.N)], by=id]$V1 ]`
 - [Why is rbindlist “better” than rbind?](https://stackoverflow.com/questions/15673550/why-is-rbindlist-better-than-rbind)
 - [Remove rows with NA from data.table in R {duplicate}](https://stackoverflow.com/questions/28878005/remove-rows-with-na-from-data-table-in-r)
 - [Remove rows with all or some NAs (missing values) in data.frame](https://stackoverflow.com/questions/4862178/remove-rows-with-all-or-some-nas-missing-values-in-data-frame)
@@ -505,6 +508,14 @@ dt[,.SD, .SDcols = !c('b', 'c')]
 - LOCF/NOCB. LOCF = "Last Observation Carried Forward". NOCB = "Next Observation Carried Backward".
 - COOL! [A data.table and dplyr tour](https://atrebas.github.io/post/2019-03-03-datatable-dplyr/) Written by Atrebas on March 3, 2019
 - [R : DATA.TABLE TUTORIAL (WITH 50 EXAMPLES)](https://www.listendata.com/2016/10/r-data-table.html)
+- [What's the fastest way to subset a data.table?](https://stackoverflow.com/questions/23755839/whats-the-fastest-way-to-subset-a-data-table)
+- COOL! [Using .I to return row numbers with data.table package](https://stackoverflow.com/questions/22408306/using-i-to-return-row-numbers-with-data-table-package)
+- [data.table in r : subset using column index](https://stackoverflow.com/questions/41112658/data-table-in-r-subset-using-column-index). 
+We can get the row index with `.I` and use that to subset the `DT`
+```
+DT[DT[, .I[.SD==2], .SDcols = 1]]
+```
+- [Fill in missing values (nacof/nocb) in character column by group](https://stackoverflow.com/questions/61522683/fill-in-missing-values-nacof-nocb-in-character-column-by-group)
 
 
 # DS
@@ -990,6 +1001,28 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
 
+
+# 20.11.2020
+## R
+- A reason why [I like tibbles](https://twitter.com/antoine_fabri/status/1329610896289755138) is that building a base data frame starting from a list or a data frame column is horrible, and resulting objects print horrible. See attached.
+- COOL! [Persistent data storage in Shiny apps](https://deanattali.com/blog/shiny-persistent-data-storage/)
+- [An Example ALTREP package which implements vectors as windows/views on other vectors without duplication.](https://github.com/ALTREP-examples/vectorwindow)
+- Подключение к Clickhouse с клиента на другой машине
+clickhouse-client -h 192.168.93.35 --user devoteam_jobs --ask-password --query="SELECT * FROM TS5_METRICS.GK_LOGS_DATASET_202004 FORMAT Native" | xz -z -c -7 --threads=10 | split -b 200M - "gk_logs_dataset_202004.part-"
+- Clickhouse
+```
+SELECT arrayStringConcat(extractGroups('test123.345', '(\\d+)[.,](\\d+)'), '.')
+
+┌─arrayStringConcat(extractGroups('test123.345', '(\\d+)[.,](\\d+)'), '.')─┐
+│ 123.345                                                                  │
+└──────────────────────────────────────────────────────────────────────────┘
+```
+
+# 18.11.2020
+## R
+- COOL! [magrittr 2.0.1](https://cran.rstudio.com/web/packages/magrittr/news/news.html)
+- [Python and R - Part 2: Visualizing Data with Plotnine](https://www.business-science.io/code-tools/2020/11/16/python-and-r-visualizing-data.html)
+- [fulltext: Behind the Scenes](https://ropensci.org/technotes/2020/11/17/fulltext-story/)
 
 # 16.11.2020
 ## R
