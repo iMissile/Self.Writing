@@ -516,6 +516,7 @@ We can get the row index with `.I` and use that to subset the `DT`
 DT[DT[, .I[.SD==2], .SDcols = 1]]
 ```
 - [Fill in missing values (nacof/nocb) in character column by group](https://stackoverflow.com/questions/61522683/fill-in-missing-values-nacof-nocb-in-character-column-by-group)
+- [R: data table group by column name vector](https://stackoverflow.com/questions/45410338/r-data-table-group-by-column-name-vector)
 
 
 # DS
@@ -967,6 +968,85 @@ A lightweight, modern and flexibly logging utility for R – heavily inspired by
 - [Beyond Exception Handling: Conditions and Restarts](http://adv-r.had.co.nz/beyond-exception-handling.html)
 - [Establish handlers on the stack](https://rlang.r-lib.org/reference/with_handlers.html)
 
+## Статистика
+- [Statistics with R. 1.7 - Confidence intervals and bootstrapping](https://arc.lib.montana.edu/book/statistics-with-r-textbook/item/49#Statistics%20with%20R++1)
+- [3.14.1 Wilcoxon rank sum test](https://bookdown.org/danieljcarter/r4steph/non-parametric-tests.html)
+- COOL! [Mann-Whitney test is not just a test of medians: differences in spread can be important](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1120984/)
+- [Классические методы статистики: критерий Уилкоксона](https://r-analytics.blogspot.com/2012/05/blog-post_20.html)
+- [Критерий Уилкоксона-Манна-Уитни](http://www.machinelearning.ru/wiki/index.php?title=%D0%9A%D1%80%D0%B8%D1%82%D0%B5%D1%80%D0%B8%D0%B9_%D0%A3%D0%B8%D0%BB%D0%BA%D0%BE%D0%BA%D1%81%D0%BE%D0%BD%D0%B0-%D0%9C%D0%B0%D0%BD%D0%BD%D0%B0-%D0%A3%D0%B8%D1%82%D0%BD%D0%B8). U-критерий можно применять для проверки гипотезы сдвига в качестве альтернативной H_{1}:\; F(x)=G(x+r), где r — некоторая константа, отличная от нуля. При этой альтернативе U-критерий является состоятельным. Его целесообразно применять, если одним и тем же прибором проводятся две серии измерений двух значений некоторой физической величины. При этом функция распределения G(x) описывает погрешности измерения одного значения, а G(x+r) — другого. Однако во многих приложениях (в частности, эконометрических) нет особых оснований предполагать, что распределение второй выборки лишь сдвигается, но не меняется каким-либо иным образом.
+- [Непараметрические методы сравнения двух выборок и их применение в R](https://samoedd.com/soft/r-nonparametric-tests)
+- [Критерий Манна-Уитни](http://matstats.ru/mann.html)
+- [FAQ: WHY IS THE MANN-WHITNEY SIGNIFICANT WHEN THE MEDIANS ARE EQUAL?](https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-why-is-the-mann-whitney-significant-when-the-medians-are-equal/)
+- [Mann Whitney U Test (Wilcoxon Rank Sum Test)](http://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_nonparametric/BS704_Nonparametric4.html)
+- Здесь картинки, используемые в презентации. [The Mann-Whitney test doesn't really compare medians](https://www.graphpad.com/guides/prism/7/statistics/stat_nonparametric_tests_dont_compa.htm). You'll sometimes read that the Mann-Whitney test compares the medians of two groups. But this is not exactly true, as this example demonstrates...
+If you make an additional assumption -- that the distributions of the two populations have the same shape, even if they are shifted (have different medians) -- then the Mann-Whiteny test can be considered a test of medians. If you accept the assumption of identically shaped distributions, then a small P value from a Mann-Whitney test leads you to conclude that the difference between medians is statistically significant. But Michael J. Campbell pointed out, "However, if the groups have the same distribution, then a shift in location will move medians and means by the same amount and so the difference in medians is the same as the difference in means. Thus the Mann-Whitney test is also a test for the difference in means."
+- COOL! [Interpreting results: Mann-Whitney test](https://www.graphpad.com/guides/prism/7/statistics/how_the_mann-whitney_test_works.htm).
+The Mann-Whitney test, also called the Wilcoxon rank sum test, is a nonparametric test that compares two unpaired groups.
+The Mann-Whitney test compares the distributions of ranks in two groups. If you assume that both populations have distributions with the same shape (which doesn't have to be Gaussian), it can be viewed as a comparison of two medians. Note that if you don't make this assumption, the Mann-Whitney test does not compare medians.
+- [Are large data sets inappropriate for hypothesis testing?](https://stats.stackexchange.com/questions/2516/are-large-data-sets-inappropriate-for-hypothesis-testing)
+- [Problem with Mann-Whitney U-test for large samples {duplicate}](https://stats.stackexchange.com/questions/261031/problem-with-mann-whitney-u-test-for-large-samples)
+- [Исследуем утверждение центральной предельной теоремы с помощью экспоненциального распределения](https://habr.com/ru/post/471198/). В статье описывается исследование, проведенное с целью проверки утверждения центральной предельной теоремы о том, что сумма N независимых и одинаково распределенных случайных величин, отобранных практически из любого распределения, имеет распределение, близкое к нормальному.
+- [Центральная предельная теорема](https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0)
+- [Bootstrap Confidence Interval with R Programming](https://www.geeksforgeeks.org/bootstrap-confidence-interval-with-r-programming/)
+
+## CI for median
+- COOL! Тут с правильным кодом. [Bootstrap hypothesis test for median of differences](https://stats.stackexchange.com/questions/458775/bootstrap-hypothesis-test-for-median-of-differences)
+- [Statistical Inference for a Linear Function of Medians: Confidence Intervals, Hypothesis Testing, and Sample Size Requirements](https://pubmed.ncbi.nlm.nih.gov/12243307/)
+- COOL! [Confidence interval for median](https://stats.stackexchange.com/questions/21103/confidence-interval-for-median). I have to find a 95% C.I. on the median and other percentiles. I don't know how to approach this. I mainly use R as a programming tool.
+Another approach is based on quantiles of the binomial distribution.
+e.g.:
+```
+> x=faithful$waiting
+> sort(x)[qbinom(c(.025,.975), length(x), 0.5)]
+```
+- COOL! [Confidence intervals for median](https://stats.stackexchange.com/questions/122001/confidence-intervals-for-median)
+- [Confidence interval for a median and other quantiles](https://www-users.york.ac.uk/~mb55/intro/cicent.htm).
+In Section 4.5 we estimated medians and other quantiles directly from the frequency distribution. We can estimate confidence intervals for these using the Binomial distribution. This is a large sample method. The 95% confidence interval for the q quantile can be found by an application of the Binomial distribution (Section 6.4, Section 6.6) (see Conover 1980). The number of observations less than the q quantile will be an observation from a Binomial distribution with parameters n and q, and hence has mean nq and standard deviation root(nq(1-q)).
+- [Confidence Intervals for Percentiles and Medians](http://www.milefoot.com/math/stat/ci-medians.htm)
+- [Calculating significance of difference between 2 groups using bootstrap](https://stats.stackexchange.com/questions/420807/calculating-significance-of-difference-between-2-groups-using-bootstrap)
+- [Bootstrapping in R](http://sanaitics.com/UploadedFiles/html_files/3820Bootstrapping_in_R.html)
+- [Confidence Intervals for Medians](https://rcompanion.org/handbook/E_04.html)
+- [Binomial {stats}](http://finzi.psych.upenn.edu/R/library/stats/html/Binomial.html)
+- [ДИ медианы](https://rpubs.com/aa989190f363e46d/c-i-median) by mz, 2017-04-24 11:02:31
+- [David Olive’s median confidence interval](http://exploringdatablog.blogspot.com/2012/04/david-olives-median-confidence-interval.html)
+	- [David J. Olive. A Simple Confidence Interval for the Median](https://www.researchgate.net/publication/242203424_A_Simple_Confidence_Interval_for_the_Median)
+- [Interpreting results: Median and its CI](https://www.graphpad.com/guides/prism/7/statistics/stat_median_and_its_confidence_inte.htm)
+```
+The median is the 50th percentile. Half the values are greater than (or equal to ) the median and half are smaller.
+The confidence interval of the median is computed by a standard method explained well in Zar (pages 548-549), based on the binomial distribution.
+Four notes:
+•The confidence interval of the median is not symmetrical around the median.
+•You do not need to assume that the population distribution is symmetrical in order to interpret the confidence interval.
+•The confidence interval begins and ends with values in the data set. No interpolation.
+•Even if you ask for 95% confidence level, the actual confidence level will usually be different (especially with small samples) and Prism reports this.
+```
+	- J.H. Zar, Biostatistical Analysis, Fifth edition 2010, PEARSON, ISBN 10: 0-13-100846-3. "24.9 CONFIDENCE INTERVAL FOR A POPULATION MEDIAN" (pages 548-549)
+	- J.H. Zar, Biostatistical Analysis, Fifth edition 2014, PEARSON, ISBN 10: 1-292-02404-6. "9 CONFIDENCE INTERVAL FOR A POPULATION MEDIAN" (pages 584-585)
+- [Robert M  Price Jr. Professor and Chair, Mathematics and Statistics](https://www.etsu.edu/cas/math/facultystaff/pricejr.php)
+- Тут большая переписка по сути. [Is it possible to test for significance between medians of two groups?](https://www.researchgate.net/post/Is_it_possible_to_test_for_significance_between_medians_of_two_groups)
+Yes, Bootstrapping method is an ideal way to do this. Basically for each median, you can re-sample your sample with replacement for a large number of times (e.g. 1000 times with a sample n=100). In doing so, you will get a normal distribution of the median you have and have a standard error. Thus, you will be able to get 95% CI. Finally, you can check if the two 95% CIs overlap. If they do, it implies the two median are not statistically significant.
+	- [GLM in R](http://data.princeton.edu/R/glms.html)
+- Почему перекрытие CI 95 двух распределений ни о чем не говорит.
+	- COOL! [Why Overlapping Confidence Intervals mean Nothing about Statistical Significance](https://towardsdatascience.com/why-overlapping-confidence-intervals-mean-nothing-about-statistical-significance-48360559900a)
+	- [Using Confidence Intervals to Compare Means](https://statisticsbyjim.com/hypothesis-testing/confidence-intervals-compare-means/)
+	- [A correct interpretation of two overlapping confidence intervals instances?](https://www.researchgate.net/post/A_correct_interpretation_of_two_overlapping_confidence_intervals_instances2)
+- Хороший подбор ошибочных мнений и литературы. [Interpreting Confidence Intervals](http://econometricsense.blogspot.com/2017/03/interpreting-confidence-intervals.html)
+- [Bonett-Price confidence intervals for medians and their contrasts](http://fmwww.bc.edu/repec/bocode/b/bpmedian.html)
+- COOL! [Understanding Bootstrap Confidence Interval Output from the R boot Package](https://blog.methodsconsultants.com/posts/understanding-bootstrap-confidence-interval-output-from-the-r-boot-package/)
+
+## Stats and R
+- COOL! [Stats and R](https://www.statsandr.com/blog/)
+	- Stats and R. [Wilcoxon test in R: how to compare 2 groups under the non-normality assumption](https://www.statsandr.com/blog/wilcoxon-test-in-r-how-to-compare-2-groups-under-the-non-normality-assumption/)
+	- Stats and R. [Student's t-test in R and by hand: how to compare two groups under different scenarios](https://www.statsandr.com/blog/student-s-t-test-in-r-and-by-hand-how-to-compare-two-groups-under-different-scenarios/)
+	- [The 9 concepts and formulas in probability that every data scientist should know](https://www.statsandr.com/blog/the-9-concepts-and-formulas-in-probability-that-every-data-scientist-should-know/)
+	- [RStudio addins, or how to make your coding life easier](https://www.statsandr.com/blog/rstudio-addins-or-how-to-make-your-coding-life-easier/)
+	- [Do my data follow a normal distribution ? A note on the most widely used distribution and how to test for normality in R](https://www.statsandr.com/blog/do-my-data-follow-a-normal-distribution-a-note-on-the-most-widely-used-distribution-and-how-to-test-for-normality-in-r/)
+	- [How to create a timeline of your CV in R](https://www.statsandr.com/blog/how-to-create-a-timeline-of-your-cv-in-r/)
+
+
+
+
+
 ## R и 64 бит
 - [REALLY LARGE NUMBERS IN R](http://theautomatic.net/2019/08/16/really-large-numbers-in-r/). This post will discuss ways of handling huge numbers in R using the gmp package.
 - [In R is it better to use integer64, numeric, or character for large integer id numbers?](https://stackoverflow.com/questions/35171760/in-r-is-it-better-to-use-integer64-numeric-or-character-for-large-integer-id-n)
@@ -1002,6 +1082,128 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 
 
 
+# 07.12.2020
+## R
+- [Shiny App Accessibility, Part 1: Only You Can Prevent Link Rot](https://cyberhelp.sesync.org/blog/shiny-in-pubs.html)
+- [Shiny App Accessibility, Part 2: Accessible Design](https://cyberhelp.sesync.org/blog/shiny-accessibility.html)
+- [ExPanDaR: Explore Your Data Interactively](https://joachim-gassen.github.io/ExPanDaR/)
+- Пакеты:
+    - santoku
+    - waldo
+    - rpart
+    - rpart.plot
+    - rpart.utils
+    - tidymodels
+    - aweek
+    - knitrdata
+- [How do I make a matrix from a list of vectors in R?](https://stackoverflow.com/questions/1329940/how-do-i-make-a-matrix-from-a-list-of-vectors-in-r)
+- [Matrix Construction](http://www.r-tutor.com/r-introduction/matrix/matrix-construction)
+- [R Matrix](https://www.datamentor.io/r-programming/matrix/)
+- [create a matrix of samples in R](https://stackoverflow.com/questions/26301589/create-a-matrix-of-samples-in-r)
+- COOL! [Create the sample matrix from the population by using sample & replicate function](https://community.rstudio.com/t/create-the-sample-matrix-from-the-population-by-using-sample-replicate-function/14908). `permutations(sample_popu, k = 2, layout = "column")`
+- COOL! [A Walk Through a Slice of Combinatorics in R*](https://stackoverflow.com/questions/22569176/how-to-generate-permutations-or-combinations-of-object-in-r/47983855#47983855)
+- [Sort columns of a dataframe by column name](https://stackoverflow.com/questions/7334644/sort-columns-of-a-dataframe-by-column-name)
+
+- [data.table::setcolorder. Fast column reordering of a data.table by reference](http://search.r-project.org/library/data.table/html/setcolorder.html)
+
+## bookdown
+- [How can I use the new bs4() theme in bookdown?](https://stackoverflow.com/questions/64778429/how-can-i-use-the-new-bs4-theme-in-bookdown)
+```
+remotes::install_github("rstudio/bslib")
+install.packages("downlit")
+remotes::install_github("rstudio/bookdown")
+``` 
+&
+Change the `_output.yaml` to the following:
+```
+bookdown::bs4_book:
+  theme:
+    primary: "#637238"
+```
+- [How to Start a Bookdown Book](http://seankross.com/2016/11/17/How-to-Start-a-Bookdown-Book.html)
+- Хороший старт. [About bookdown and bookdown.org](https://bookdown.org/home/about/)
+- [Single-source publishing for R users](https://masalmon.eu/2020/11/06/single-source-publishing-r/)
+	- [bs4_book minimal example](https://maelle.github.io/bspagedjs/index.html)
+	- [Playing with bookdown::bs4_book() and pagedjs-cli to get both HTML and PDF book out of the same Rmd products.](https://github.com/maelle/bspagedjs)
+
+- [4.5 Internationalization](https://bookdown.org/yihui/bookdown/internationalization.html)
+- [Bookdown' bibliography multiple languages](https://stackoverflow.com/questions/50866392/bookown-bibliography-multiple-languages)
+- [12.2 Bookdown Project structure](https://bookdown.org/yihui/rmarkdown/bookdown-project.html)
+- [Bookdown generates an index file with a name based on chapter title instead of “index.html” when knitted](https://community.rstudio.com/t/bookdown-generates-an-index-file-with-a-name-based-on-chapter-title-instead-of-index-html-when-knitted/42052)
+- COOL! Борис Демешев. "Учебник по языку R для начинающих" [R manual. Book in russian using bookdown](https://github.com/bdemeshev/r_manual_book)
+- [Set locale to system default UTF-8](https://stackoverflow.com/questions/20577764/set-locale-to-system-default-utf-8)
+
+
+## DS
+- [A bridge to meta-rationality vs. civilizational collapse](https://meaningness.com/metablog/stem-fluidity-bridge)
+
+# 04.12.2020
+## R
+- [FastR by Michael Clark](https://m-clark.github.io/docs/fastr.html)
+This document provides ways to speed up your code before parallelization on your own machine or cluster.
+- [A closer look at replicate() and purrr::map() for simulations](https://aosmith.rbind.io/2018/06/05/a-closer-look-at-replicate-and-purrr/)
+
+# 03.12.2020
+## R
+- Slides. [Looking at Stop Words: Why You Shouldn’t Blindly Trust Model Defaults](https://slcrug-stopwords.netlify.app/#1). SLC RUG December 2020 by Emil Hvitfeldt
+- [Tune random forests for #TidyTuesday IKEA prices](https://juliasilge.com/blog/ikea-prices/)
+- [hadley/strict](https://github.com/hadley/strict). Make R a little bit stricter
+- COOL! [A ggplot2 Tutorial for Beautiful Plotting in R](https://cedricscherer.netlify.app/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/). Posted by Cédric on Monday, August 5, 2019 
+Last update: 2020-12-02
+- COOL! [What to consider when considering data vis rules](https://lisacharlotterost.de/datavisrules)
+	- [Slides from the talks I gave in the past](https://github.com/lisacharlotterost/talk-slides)
+- [How to add leading zeros?](https://stackoverflow.com/questions/5812493/how-to-add-leading-zeros)
+- [Pad with leading zeros to common width {duplicate}](https://stackoverflow.com/questions/14409084/pad-with-leading-zeros-to-common-width/14409265)
+```
+## Print results:
+print(res)
+Unit: milliseconds
+        expr       min        lq    median        uq      max
+1 FORMATC(x) 623.53785 629.69005 638.78667 671.22769 679.8790
+2 SPRINTF(x)  34.35783  34.81807  35.04618  35.53696  37.1622
+3 STR_PAD(x) 116.54969 118.41944 118.97363 120.05729 163.9664
+```
+- [numform: Tools to Format Numbers for Publication](https://cran.r-project.org/web/packages/numform/)
+
+
+
+# 30.11.2020
+## R
+- [Miller](https://github.com/johnkerl/miller) is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON
+## LaTeX
+- COOL! [TikZiT](https://tikzit.github.io/)
+TikZiT is a super simple GUI editor for graphs and string diagrams. Its native file format is a subset of PGF/TikZ, which means TikZiT files can be included directly in papers typeset using LaTeX. 
+
+# 27.11.2020
+## Random Forest
+- [UC Business Analytics R Programming Guide. Random Forests](https://uc-r.github.io/random_forests)
+
+# 25.11.2020
+## R
+- Slides [Academic Publications with R Markdown](https://danovando.github.io/publications-with-rmarkdown/presentations/pubs-with-rmarkdown#1)
+- [R: Find the Length of Every Elements in a List](http://www.sthda.com/english/articles/17-tips-tricks/70-r-find-the-length-of-every-elements-in-a-list/)
+- [lengths {base}](https://stat.ethz.ch/R-manual/R-devel/library/base/html/lengths.html)
+
+## data.table
+- И опять! COOL! [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/#fast-looping-with-set)
+- [Using variable in data.table group by clause](https://stackoverflow.com/questions/31600666/using-variable-in-data-table-group-by-clause)
+- [Summarise data.table when “by” grouping variables stored as vector of strings {duplicate}](https://stackoverflow.com/questions/62601509/summarise-data-table-when-by-grouping-variables-stored-as-vector-of-strings). !! Instead of `.(`, here we can use `c(`
+- [Use a character vector in the `by` argument](https://stackoverflow.com/questions/48442422/use-a-character-vector-in-the-by-argument).
+
+# 24.11.2020
+## R
+- [Workflow: projects](https://r4ds.had.co.nz/workflow-projects.html)
+- COOL! [Applying PCA to fictional character personalities](https://www.alexcookson.com/post/2020-11-19-applying-pca-to-fictional-character-personalities/)
+- [magrittr 2.0 is here!](https://www.tidyverse.org/blog/2020/11/magrittr-2-0-is-here/)
+- COOL! [Gradient-based Optimization. A short introduction to optimization in Deep Learning](https://drive.google.com/file/d/1e_9W8q9PL20iqOR-pfK89eILc_VtYaw1/view)
+
+## R discretization
+- Опять проблема. Ключевые слова: `santoku`, `arules::discretize`, `cut`
+- [Avoid Scientific notation in cut function in R](https://stackoverflow.com/questions/29004620/avoid-scientific-notation-in-cut-function-in-r)
+- Пример кода `cut.R`. [r-source/src/library/base/R/cut.R](https://github.com/SurajGupta/r-source/blob/master/src/library/base/R/cut.R)
+- [Force R not to use exponential notation (e.g. e+10)?](https://stackoverflow.com/questions/9397664/force-r-not-to-use-exponential-notation-e-g-e10)
+
+
 # 20.11.2020
 ## R
 - A reason why [I like tibbles](https://twitter.com/antoine_fabri/status/1329610896289755138) is that building a base data frame starting from a list or a data frame column is horrible, and resulting objects print horrible. See attached.
@@ -1032,6 +1234,8 @@ SELECT arrayStringConcat(extractGroups('test123.345', '(\\d+)[.,](\\d+)'), '.')
 This package will convert dates to US CDC epiweeks, isoweeks, and all others in between with minimal overhead.
 - COOL! [Here is a toy example](https://twitter.com/rdataberlin/status/1328426179674693633) illustrating how to build a formatted #rstats {gt} table which combines simple statistics, ggplots, and slopes from the fit of multiple linear (mixed) models. All in 35 lines of easy code, thanks to row and columns groupings enabled by #tidyverse tibbles
 - ebook. [Performance Analysis and Tuning on Modern CPUs](https://book.easyperf.net/perf_book)
+	- [Writing a free book from the start](https://easyperf.net/blog/2020/11/22/Writing-A-Free-Book-From-The-Start)
+	- COOL! [Optimization manuals](https://www.agner.org/optimize/)
 - [реализация точечной функции `. ()` в пакете data.table](https://issue.life/questions/52312977)
 
 
@@ -1167,6 +1371,11 @@ Convert SQL Server DateTime to milliseconds Since 1970 (UNIX Epoch Time).
 ## Survival in R
 - COOL! [Survival analysis with strata, clusters, frailties and competing risks in in Finalfit](https://www.datasurg.net/2019/09/12/survival-analysis-with-strata-clusters-frailties-and-competing-risks-in-in-finalfit/)
 - [EP03: Survival Analysis in R Companion](http://www.drizopoulos.com/courses/emc/ep03_%20survival%20analysis%20in%20r%20companion) by Dimitris Rizopoulos. October 11, 2020
+- [forestmodel: Forest Plots from Regression Models](https://cran.r-project.org/web/packages/forestmodel/index.html)
+Produces forest plots using 'ggplot2' from models produced by functions such as stats::lm(), stats::glm() and survival::coxph().
+- COOL! [Kleinbaum: Stratified Cox regression](http://rstudio-pubs-static.s3.amazonaws.com/5096_0880aaaf0df94f3b8533a1c024738246.html)
+- COOL! [survminer 0.3.0](http://www.sthda.com/english/wiki/survminer-0-3-0)
+- COOL! Emily C. Zabor. [Survival Analysis in R](https://www.emilyzabor.com/tutorials/survival_analysis_in_r_tutorial.html)
 
 ## R
 - COOL! [datamods](https://github.com/dreamRs/datamods). Shiny modules to import data into an application or addin.
@@ -1221,6 +1430,7 @@ ymlthis\rstudio\addins.dcf
 - [export rpart rules to a data frame and link rules to train data](https://stackoverflow.com/questions/48489647/export-rpart-rules-to-a-data-frame-and-link-rules-to-train-data)
 - COOL! [Plotting rpart trees with the rpart.plot package](http://www.milbo.org/rpart-plot/prp.pdf)
 - [`library(rattle)` # Fancy tree plot](https://rattle.togaware.com/)
+- [Decision Tree Rpart() Summary : variable importance, improve, agree, adj and AUC](https://community.rstudio.com/t/decision-tree-rpart-summary-variable-importance-improve-agree-adj-and-auc/24153)
 - [Draw nicer Classification and Regression Trees with the rpart.plot package](https://blog.revolutionanalytics.com/2013/06/plotting-classification-and-regression-trees-with-plotrpart.html)
 ```
 tree.2 <- rpart(form, data)			# A more reasonable tree
@@ -1257,9 +1467,6 @@ Predicted Class
 - [EmilHvitfeldt/github-issue-table](https://github.com/EmilHvitfeldt/github-issue-table). Combining {reactable}, {flexdashboard} and {gh} lets me look at a table of all the repositories I care about
 - COOL! reactable пример с картинками и сплайнами [Combining a table with multiple scatterplots Rubén F. Bustillo](https://rquer.netlify.app/interactive_chart/table_plot)
 - COOL! [Mixed Models with R](https://m-clark.github.io/mixed-models-with-R/). Getting started with random effects
-- [Avoid Scientific notation in cut function in R](https://stackoverflow.com/questions/29004620/avoid-scientific-notation-in-cut-function-in-r)
-- Пример кода `cut.R`. [r-source/src/library/base/R/cut.R](https://github.com/SurajGupta/r-source/blob/master/src/library/base/R/cut.R)
-- [Force R not to use exponential notation (e.g. e+10)?](https://stackoverflow.com/questions/9397664/force-r-not-to-use-exponential-notation-e-g-e10)
 
 # 14.10.2020
 ## R
@@ -2442,70 +2649,6 @@ TLDR: кому перестановки делают больнее — меря
 - [Безопасное определение размера образца для A / B-тестирования](https://qastack.ru/stats/38730/safely-determining-sample-size-for-a-b-testing)
 Я - инженер-программист, желающий создать инструмент A / B-тестирования . У меня нет основательной статистики, но за последние несколько дней я немного читал.
 - COOL! [Моделирование гидродинамики: Lattice Boltzmann Method](https://habr.com/ru/post/190552/)
-
-## Статистика
-- [Statistics with R. 1.7 - Confidence intervals and bootstrapping](https://arc.lib.montana.edu/book/statistics-with-r-textbook/item/49#Statistics%20with%20R++1)
-- [3.14.1 Wilcoxon rank sum test](https://bookdown.org/danieljcarter/r4steph/non-parametric-tests.html)
-- COOL! [Mann-Whitney test is not just a test of medians: differences in spread can be important](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1120984/)
-- [Классические методы статистики: критерий Уилкоксона](https://r-analytics.blogspot.com/2012/05/blog-post_20.html)
-- [Критерий Уилкоксона-Манна-Уитни](http://www.machinelearning.ru/wiki/index.php?title=%D0%9A%D1%80%D0%B8%D1%82%D0%B5%D1%80%D0%B8%D0%B9_%D0%A3%D0%B8%D0%BB%D0%BA%D0%BE%D0%BA%D1%81%D0%BE%D0%BD%D0%B0-%D0%9C%D0%B0%D0%BD%D0%BD%D0%B0-%D0%A3%D0%B8%D1%82%D0%BD%D0%B8). U-критерий можно применять для проверки гипотезы сдвига в качестве альтернативной H_{1}:\; F(x)=G(x+r), где r — некоторая константа, отличная от нуля. При этой альтернативе U-критерий является состоятельным. Его целесообразно применять, если одним и тем же прибором проводятся две серии измерений двух значений некоторой физической величины. При этом функция распределения G(x) описывает погрешности измерения одного значения, а G(x+r) — другого. Однако во многих приложениях (в частности, эконометрических) нет особых оснований предполагать, что распределение второй выборки лишь сдвигается, но не меняется каким-либо иным образом.
-- [Непараметрические методы сравнения двух выборок и их применение в R](https://samoedd.com/soft/r-nonparametric-tests)
-- [Критерий Манна-Уитни](http://matstats.ru/mann.html)
-- [FAQ: WHY IS THE MANN-WHITNEY SIGNIFICANT WHEN THE MEDIANS ARE EQUAL?](https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-why-is-the-mann-whitney-significant-when-the-medians-are-equal/)
-- [Mann Whitney U Test (Wilcoxon Rank Sum Test)](http://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_nonparametric/BS704_Nonparametric4.html)
-- Здесь картинки, используемые в презентации. [The Mann-Whitney test doesn't really compare medians](https://www.graphpad.com/guides/prism/7/statistics/stat_nonparametric_tests_dont_compa.htm). You'll sometimes read that the Mann-Whitney test compares the medians of two groups. But this is not exactly true, as this example demonstrates...
-If you make an additional assumption -- that the distributions of the two populations have the same shape, even if they are shifted (have different medians) -- then the Mann-Whiteny test can be considered a test of medians. If you accept the assumption of identically shaped distributions, then a small P value from a Mann-Whitney test leads you to conclude that the difference between medians is statistically significant. But Michael J. Campbell pointed out, "However, if the groups have the same distribution, then a shift in location will move medians and means by the same amount and so the difference in medians is the same as the difference in means. Thus the Mann-Whitney test is also a test for the difference in means."
-- COOL! [Interpreting results: Mann-Whitney test](https://www.graphpad.com/guides/prism/7/statistics/how_the_mann-whitney_test_works.htm).
-The Mann-Whitney test, also called the Wilcoxon rank sum test, is a nonparametric test that compares two unpaired groups.
-The Mann-Whitney test compares the distributions of ranks in two groups. If you assume that both populations have distributions with the same shape (which doesn't have to be Gaussian), it can be viewed as a comparison of two medians. Note that if you don't make this assumption, the Mann-Whitney test does not compare medians.
-- [Are large data sets inappropriate for hypothesis testing?](https://stats.stackexchange.com/questions/2516/are-large-data-sets-inappropriate-for-hypothesis-testing)
-- [Problem with Mann-Whitney U-test for large samples {duplicate}](https://stats.stackexchange.com/questions/261031/problem-with-mann-whitney-u-test-for-large-samples)
-- [Исследуем утверждение центральной предельной теоремы с помощью экспоненциального распределения](https://habr.com/ru/post/471198/). В статье описывается исследование, проведенное с целью проверки утверждения центральной предельной теоремы о том, что сумма N независимых и одинаково распределенных случайных величин, отобранных практически из любого распределения, имеет распределение, близкое к нормальному.
-- [Центральная предельная теорема](https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0)
-
-## CI for median
-- COOL! Тут с правильным кодом. [Bootstrap hypothesis test for median of differences](https://stats.stackexchange.com/questions/458775/bootstrap-hypothesis-test-for-median-of-differences)
-- [Statistical Inference for a Linear Function of Medians: Confidence Intervals, Hypothesis Testing, and Sample Size Requirements](https://pubmed.ncbi.nlm.nih.gov/12243307/)
-- COOL! [Confidence interval for median](https://stats.stackexchange.com/questions/21103/confidence-interval-for-median). I have to find a 95% C.I. on the median and other percentiles. I don't know how to approach this. I mainly use R as a programming tool.
-Another approach is based on quantiles of the binomial distribution.
-e.g.:
-```
-> x=faithful$waiting
-> sort(x)[qbinom(c(.025,.975), length(x), 0.5)]
-```
-- COOL! [Confidence intervals for median](https://stats.stackexchange.com/questions/122001/confidence-intervals-for-median)
-- [Confidence interval for a median and other quantiles](https://www-users.york.ac.uk/~mb55/intro/cicent.htm).
-In Section 4.5 we estimated medians and other quantiles directly from the frequency distribution. We can estimate confidence intervals for these using the Binomial distribution. This is a large sample method. The 95% confidence interval for the q quantile can be found by an application of the Binomial distribution (Section 6.4, Section 6.6) (see Conover 1980). The number of observations less than the q quantile will be an observation from a Binomial distribution with parameters n and q, and hence has mean nq and standard deviation root(nq(1-q)).
-- [Confidence Intervals for Percentiles and Medians](http://www.milefoot.com/math/stat/ci-medians.htm)
-- [Calculating significance of difference between 2 groups using bootstrap](https://stats.stackexchange.com/questions/420807/calculating-significance-of-difference-between-2-groups-using-bootstrap)
-- [Bootstrapping in R](http://sanaitics.com/UploadedFiles/html_files/3820Bootstrapping_in_R.html)
-- [Confidence Intervals for Medians](https://rcompanion.org/handbook/E_04.html)
-- [Binomial {stats}](http://finzi.psych.upenn.edu/R/library/stats/html/Binomial.html)
-- [ДИ медианы](https://rpubs.com/aa989190f363e46d/c-i-median) by mz, 2017-04-24 11:02:31
-- [David Olive’s median confidence interval](http://exploringdatablog.blogspot.com/2012/04/david-olives-median-confidence-interval.html)
-	- [David J. Olive. A Simple Confidence Interval for the Median](https://www.researchgate.net/publication/242203424_A_Simple_Confidence_Interval_for_the_Median)
-- [Interpreting results: Median and its CI](https://www.graphpad.com/guides/prism/7/statistics/stat_median_and_its_confidence_inte.htm)
-```
-The median is the 50th percentile. Half the values are greater than (or equal to ) the median and half are smaller.
-The confidence interval of the median is computed by a standard method explained well in Zar (pages 548-549), based on the binomial distribution.
-Four notes:
-•The confidence interval of the median is not symmetrical around the median.
-•You do not need to assume that the population distribution is symmetrical in order to interpret the confidence interval.
-•The confidence interval begins and ends with values in the data set. No interpolation.
-•Even if you ask for 95% confidence level, the actual confidence level will usually be different (especially with small samples) and Prism reports this.
-```
-	- J.H. Zar, Biostatistical Analysis, Fifth edition 2010, PEARSON, ISBN 10: 0-13-100846-3. "24.9 CONFIDENCE INTERVAL FOR A POPULATION MEDIAN" (pages 548-549)
-	- J.H. Zar, Biostatistical Analysis, Fifth edition 2014, PEARSON, ISBN 10: 1-292-02404-6. "9 CONFIDENCE INTERVAL FOR A POPULATION MEDIAN" (pages 584-585)
-- [Robert M  Price Jr. Professor and Chair, Mathematics and Statistics](https://www.etsu.edu/cas/math/facultystaff/pricejr.php)
-- Тут большая переписка по сути. [Is it possible to test for significance between medians of two groups?](https://www.researchgate.net/post/Is_it_possible_to_test_for_significance_between_medians_of_two_groups)
-Yes, Bootstrapping method is an ideal way to do this. Basically for each median, you can re-sample your sample with replacement for a large number of times (e.g. 1000 times with a sample n=100). In doing so, you will get a normal distribution of the median you have and have a standard error. Thus, you will be able to get 95% CI. Finally, you can check if the two 95% CIs overlap. If they do, it implies the two median are not statistically significant.
-	- [GLM in R](http://data.princeton.edu/R/glms.html)
-- Почему перекрытие CI 95 двух распределений ни о чем не говорит.
-	- COOL! [Why Overlapping Confidence Intervals mean Nothing about Statistical Significance](https://towardsdatascience.com/why-overlapping-confidence-intervals-mean-nothing-about-statistical-significance-48360559900a)
-	- [Using Confidence Intervals to Compare Means](https://statisticsbyjim.com/hypothesis-testing/confidence-intervals-compare-means/)
-	- [A correct interpretation of two overlapping confidence intervals instances?](https://www.researchgate.net/post/A_correct_interpretation_of_two_overlapping_confidence_intervals_instances2)
-- Хороший подбор ошибочных мнений и литературы. [Interpreting Confidence Intervals](http://econometricsense.blogspot.com/2017/03/interpreting-confidence-intervals.html)
-- [Bonett-Price confidence intervals for medians and their contrasts](http://fmwww.bc.edu/repec/bocode/b/bpmedian.html)
 
 
 # 31.05.2020

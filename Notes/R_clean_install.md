@@ -394,3 +394,61 @@ useradd -m -d /PATH/TO/FOLDER USERNAME
 - [Add a Home directory for already created user when no direct root login available](https://serverfault.com/questions/576354/add-a-home-directory-for-already-created-user-when-no-direct-root-login-availabl)
 Либо просто удалить пользователя командой: `sudo userdel ruser`
 
+## Апгрейдим R под Ubuntu
+- [How to Check your Ubuntu Version](https://linuxize.com/post/how-to-check-your-ubuntu-version/). `lsb_release -a`
+- Проблемы при апдейте
+- [Apt unmet dependencies while installing R on Ubuntu 16.04](https://askubuntu.com/questions/1125448/apt-unmet-dependencies-while-installing-r-on-ubuntu-16-04)
+- [Troubles with the installation of R on Ubuntu 18.04](https://unix.stackexchange.com/questions/558380/troubles-with-the-installation-of-r-on-ubuntu-18-04). Тут оказалось рабочее решение:
+The issue was the old dependencies. I ran this command to fix the issue
+`sudo apt-get -u dist-upgrade`
+- [Ubuntu – Unmet dependencies when trying to install r-base](https://itectec.com/ubuntu/ubuntu-unmet-dependencies-when-trying-to-install-r-base/)
+```
+sudo apt install --fix-broken
+sudo apt-get update
+sudo apt-get upgrade
+```
+
+Надо разбираться с проблемами зависимостей.... Спускаться вниз
+- [How to upgrade from Ubuntu 18.04 LTS to 20.04 LTS today](https://ubuntu.com/blog/how-to-upgrade-from-ubuntu-18-04-lts-to-20-04-lts-today)
+`sudo do-release-upgrade -d`
+- [Trouble installing RStudio Server on Ubuntu--can't find R, but it's there](https://community.rstudio.com/t/trouble-installing-rstudio-server-on-ubuntu-cant-find-r-but-its-there/10212)
+`sudo rstudio-server verify-installation`
+- [RStudio (OpenSource) Initialization error](https://community.rstudio.com/t/rstudio-opensource-initialization-error/45405)
+- [rstudio initialization error unable to connect to service](https://community.rstudio.com/t/rstudio-initialization-error-unable-to-connect-to-service/85099)
+To reset RStudio's state in version 1.3 and later:
+
+The .rstudio , .config , and .local directories, as well as the .RData and .Rhistory files, are located in each user's default working directory (typically their home directory). This means that you would also have to delete `~/.config/rstudio/` and `~/.local/share/rstudio/` for that particular user.
+И вот это РЕАЛЬНО сработало!
+
+
+- [How to update R 3.x to the new R 4.x in Linux Ubuntu](https://medium.com/@hpgomide/how-to-update-your-r-3-x-to-the-r-4-x-in-your-linux-ubuntu-46e2209409c3)
+First, you need to check the file ‘/etc/apt/sources.list’, and look for the line. ‘deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/’
+If you don’t have this line, you can run the following in a terminal session to use the R CRAN version:
+$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+$ sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
+Now install R by typing:
+$ sudo apt install r-base
+After that, check the R version.
+$ R --version
+Updating R 3.x packages to the new R 4.0.
+As R 4.0 introduced several changes to base functions, programmers had to rewrite their packages. In order to update your already installed, just type the following in the R console:
+update.packages(ask = FALSE, checkBuilt = TRUE)
+This will probably will take a few minutes.
+If you’re lazy like me, you’re ready to go. However, If want to update all your packages at once, stay with me.
+Update all packages
+In the R console, create an object with all installed packages in the previous version. You have to point to your installation. Mine was:
+‘/home/henriquegomide/R/x86_64-pc-linux-gnu-library/3.6/’
+old_packages <- installed.packages(lib.loc = "/home/henriquegomide/R/x86_64-pc-linux-gnu-library/3.6/
+")
+head(old_packages[, 1])
+After that, compare the packages you had in 3.6 to your new 4.0 installation:
+new_packages <- installed.packages()
+missing_packages <- as.data.frame(old_packages[
+!old_packages[, "Package"] %in% new_packages[, "Package"],
+])
+Then:
+install.packages(missing_packages$Package)
+This will probably take several minutes to run.
+References
+https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/
+https://www.r-bloggers.com/get-all-your-packages-back-on-r-4-0-0/

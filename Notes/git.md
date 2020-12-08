@@ -108,4 +108,15 @@ x5scm   https://scm.x5.ru/bms-analytics/x5-bms-diagnostics2.git (push)
 ```
 - [How To Switch Branch on Git](https://devconnected.com/how-to-switch-branch-on-git/)
 - [A3.8 Appendix C: Команды Git - Внесение исправлений](https://git-scm.com/book/ru/v2/Appendix-C%3A-%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9)
+- [remote: fatal: pack exceeds maximum allowed size after migrate #3758](https://github.com/git-lfs/git-lfs/issues/3758)
+`git rev-list --reverse master | ruby -ne 'i ||= 0; i += 1; puts $_ if i % 2000 == 0' | xargs -I{} git push origin +{}:refs/heads/master`
+	- COOL! [git push up to a certain commit](https://pradeeppant.com/2019/05/06/git-push-up-to-a-certain-commit/)
+	- COOL! [https://miteshshah.github.io/linux/git/how-to-push-single-commit-with-git/](https://miteshshah.github.io/linux/git/how-to-push-single-commit-with-git/)
+```
+[mitesh@Matrix ~]$ git log --pretty=oneline
+de7e2a469a28d4d74fd4597369cebabd0832636a Test commit for new post
+f61b48cb8b1877721e2596a6aa65648a68bb605e new post
+```
+Команда `git rev-list --reverse master` дает список коммитов в прямом хронологическом порядке, от начала до текущего момента
+Дальше помещаем коммит за коммитом: `git push x5scm 10955ac50fb90220c03d077d2cb4e79d01a3bea0:refs/heads/master`. Важная добавка -- в конце после :
 

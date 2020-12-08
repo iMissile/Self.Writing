@@ -44,7 +44,9 @@ The second -exec renames the zipped files to the original names
 `rsync -avzP 'root@10.0.0.224:/home/data/mt_admin/files/1002\ External-share/6\ x5/2\ POS/gk_202005/' /ext/logs_202005/`
 - [How To Resume Partially Transferred Files Over SSH Using Rsync](https://www.ostechnix.com/how-to-resume-partially-downloaded-or-transferred-files-using-rsync/)
 - [Copying files using rsync from remote server to local machine](https://stackoverflow.com/questions/9090817/copying-files-using-rsync-from-remote-server-to-local-machine)
-- Используем команду `cp` для ручного управления процессом копирования. [`cp -irv ./<source>/*.* ../<destination>`](https://explainshell.com/explain?cmd=cp+-irv)
+cp- Используем команду `cp` для ручного управления процессом копирования. [`cp -irv ./<source>/* ./<destination>`](https://explainshell.com/explain?cmd=cp+-irv)
+- COOL! [Recursively copy files from one directory to another](https://askubuntu.com/questions/802238/recursively-copy-files-from-one-directory-to-another). Тут подробно разбирается, почему не получится напрямик cp испоользовать.
+	- [`find /media/MyBook/Music -type f -iname '*.mp3' -exec  cp -at /media/HDD/Music {} +`](https://explainshell.com/explain?cmd=find+%2Fmedia%2FMyBook%2FMusic+-type+f+-iname+%27*.mp3%27+-exec+cp+-at+%2Fmedia%2FHDD%2FMusic+%7B%7D+%2B)
 
 ## права доступа
 - [How can I check the permissions of a specific group?](https://askubuntu.com/questions/162417/how-can-i-check-the-permissions-of-a-specific-group)
