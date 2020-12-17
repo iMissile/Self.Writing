@@ -254,6 +254,9 @@ broom::glance(survfit(cfit))
 - coxph strata. [coxph: Fit Proportional Hazards Regression Model](https://rdrr.io/cran/survival/man/coxph.html)
 - [Kleinbaum: Stratified Cox regression](http://rstudio-pubs-static.s3.amazonaws.com/5096_0880aaaf0df94f3b8533a1c024738246.html)
 - [Survival Analysis in R For Beginners](https://www.datacamp.com/community/tutorials/survival-analysis-R)
+- COOL! Лекция. [R for Survival Analysis. Mortality and survival in Game of Thrones](https://carpentries-incubator.github.io/r-survival-analysis/aio/index.html)
+- [R Markdown for Medicine](https://rmd4medicine.netlify.app/)
+- [Survival Analysis with R](https://rviews.rstudio.com/2017/09/25/survival-analysis-with-r/) by Joseph Rickert, 2017-09-25
 
 ## Еще раз про ROC-AUC, Survival
 - [Логистическая регрессия и ROC-анализ — математический аппарат](https://basegroup.ru/community/articles/logistic)
@@ -923,6 +926,8 @@ Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'P
 	- [pointblank v0.3](https://randr.rocks/post/pointblank-0-3/)
 - COOL! [Appsilon/data.validator](https://github.com/Appsilon/data.validator). validate your data and create nice reports straight from R
 - [brodieG/vetr](https://github.com/brodieG/vetr) Trust, but Verify
+- [validate 1.0.1: new features and a cookbook](http://www.markvanderloo.eu/yaRb/2020/12/08/validate-1-0-1-new-features-and-a-cookbook/)
+- ebook [The Data Validation Cookbook](https://data-cleaning.github.io/validate/) by Mark P.J. van der Loo, 2020-12-08
 
 
 # Logging
@@ -1081,6 +1086,31 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
 
+# 16.12.2020
+## R
+- [nomnoml](https://rstudio.github.io/nomnoml/) provides an R interface to nomnoml, a tool for drawing sassy UML diagrams based on syntax with customizable styling
+- [Underrated Tidyverse Functions](https://hugo-portfolio-example.netlify.app/projects/tidyverse_functions/)
+- [RcppAnnoy 0.0.18: Tweaks](http://dirk.eddelbuettel.com/blog/2020/12/15/#rcppannoy_0.0.18)
+	- COOL! [spotify/annoy](https://github.com/spotify/annoy). Approximate Nearest Neighbors in C++/Python optimized for memory usage and loading/saving to disk
+- [Extracting JSON data from websites and public APIs with R](https://themockup.blog/posts/2020-12-13-extracting-json-from-websites-and-public-apis-with-r/)
+
+# 09.12.2020
+## R
+- COOL! [Dynamic Wrapping and Recursion with Rcpp](https://gallery.rcpp.org/articles/rcpp-wrap-and-recurse/)
+- [Behind the scenes of CRAN](https://www.h2o.ai/blog/behind-the-scenes-of-cran/)
+- `R CMD CHECK`. [19 Automated checking](https://r-pkgs.org/r-cmd-check.html)
+- [Linting scripts in R](https://www.kaggle.com/rtatman/linting-scripts-in-r)
+- [lintr](https://russ-hyde.rbind.io/post/lintr/)
+- [R Coding Style Best Practices](https://www.datanovia.com/en/blog/r-coding-style-best-practices/)
+- Code diagnostics in RStudio IDE
+	- [Code Diagnostics](https://support.rstudio.com/hc/en-us/articles/205753617-Code-Diagnostics) by Kevin Ushey
+	- [Possible solutions for "no symbol named 'x' in scope"](https://community.rstudio.com/t/possible-solutions-for-no-symbol-named-x-in-scope/36120)
+	- [RStudio - no symbol named 'X' in scope](https://stackoverflow.com/questions/44835528/rstudio-no-symbol-named-x-in-scope)
+- COOL! [bslib (formerly known as bootstraplib)](https://rstudio.github.io/bslib/)
+
+## NLP
+- [Top2Vec learns jointly embedded topic, document and word vectors.](https://github.com/ddangelov/Top2Vec)
+
 
 # 07.12.2020
 ## R
@@ -1136,6 +1166,9 @@ bookdown::bs4_book:
 
 ## DS
 - [A bridge to meta-rationality vs. civilizational collapse](https://meaningness.com/metablog/stem-fluidity-bridge)
+- [Что такое распределение Пуассона?](https://medium.com/nuances-of-programming/%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%83%D0%B0%D1%81%D1%81%D0%BE%D0%BD%D0%B0-ea2468183519)
+- [Система кассовой аналитики для экспертов — глубокая настройка и практика ритейлеров.](https://www.crystals.ru/articles/sistema-kassovoy-analitiki-dlya-ekspertov-glubokaya-nastroyka-i-praktika-riteylerov)
+- [distill sites](https://pkgs.rstudio.com/distill/articles/examples.html)
 
 # 04.12.2020
 ## R
@@ -3052,6 +3085,7 @@ s
 - COOL! [Faster R package installation](https://www.jumpingrivers.com/blog/faster-r-package-installation-rstudio/). March 23, 2020 by Colin Gillespie
 `install.packages("tidyverse", Ncpus = 6)`
 - [REPLACE NA IN ALL COLUMNS WITH DPLYR (#RSTATS)](https://rickpackblog.wordpress.com/2017/11/20/replace-na-in-all-columns-with-dplyr-rstats/)
+`df2 %>% replace(., is.na(.), "")`
 
 # 25.03.2020
 ## blogdown
