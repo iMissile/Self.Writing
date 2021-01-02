@@ -166,3 +166,7 @@ GROUP BY table
 
 # Очистка таблицы
 - [Truncate table в Clickhouse](https://ruhighload.com/truncate+table+%D0%B2+clickhouse)
+
+# Nullable
+- (Nullable(typename))[https://clickhouse.tech/docs/en/sql-reference/data-types/nullable/]. Note
+Using Nullable almost always negatively affects performance, keep this in mind when designing your databases.

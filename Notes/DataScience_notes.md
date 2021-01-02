@@ -187,6 +187,8 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Principles of Econometrics with R](https://bookdown.org/ccolonescu/RPoE4/panel-data-models.html)
 - [Interactive web-based data visualization with R, plotly, and shiny](https://plotly-r.com/)
 - [Outstanding User Interfaces with Shiny](https://divadnojnarg.github.io/outstanding-shiny-ui/) by David Granjon
+- Шитиков В. К., Мастицкий С. Э. [Классификация, регрессия и другие алгоритмы Data Mining с использованием R](https://ranalytics.github.io/data-mining/index.html)
+
 
 
 # VPN
@@ -360,7 +362,7 @@ df %>%
 
 - [Homepage Rdatatable/data.table](https://github.com/Rdatatable/data.table/wiki)
 - [data.table vs dplyr: can one do something well the other can't or does poorly?](https://stackoverflow.com/questions/21435339/data-table-vs-dplyr-can-one-do-something-well-the-other-cant-or-does-poorly)
-- [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)
+- COOL! [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)
 - [Solve common R problems efficiently with data.table](https://jangorecki.github.io/blog/2015-12-11/Solve-common-R-problems-efficiently-with-data.table.html)
 - [Understanding exactly when a data.table is a reference to (vs a copy of) another data.table](https://stackoverflow.com/questions/10225098/understanding-exactly-when-a-data-table-is-a-reference-to-vs-a-copy-of-another)
 - [Apply function to dataframe in chunks](https://community.rstudio.com/t/apply-function-to-dataframe-in-chunks/9067)
@@ -1086,6 +1088,74 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
 
+# 28.12.2020
+## DS
+- [How to write good documentation](https://victoria.dev/blog/how-to-write-good-documentation/). The secret to never forgetting how your project works, in three steps.
+- [How to write a superb literature review](https://www.nature.com/articles/d41586-020-03422-x)
+- [My Science and Technology review for 2020](https://lemire.me/blog/2020/12/27/my-science-and-technology-review-for-2020/)
+- COOL! Кто интересуется применением ML к коду, лучший способ начать - это вот этот обзор 2017, все еще не потерявший актуальность: [A Survey of Machine Learning for Big Code and Naturalness](https://arxiv.org/pdf/1709.06182.pdf)
+
+# R
+- ebook [rOpenSci Packages: Development, Maintenance, and Peer Review](https://devguide.ropensci.org/)
+
+# 24.12.2020
+## R
+- [EnvStats: Package for Environmental Statistics, Including US EPA Guidance](https://cran.r-project.org/web/packages/EnvStats/index.html)
+	- [Statistical Consulting & R Programming](https://www.probstatinfo.com/). Ebook: EnvStats An R Package for Environmental Statistics
+	- [EnvStats — Package for Environmental Statistics, Including US EPA Guidance. Homepage: http://www.probstatinfo.com](https://github.com/alexkowa/EnvStats)
+	- [eqgamma {EnvStats}](http://finzi.psych.upenn.edu/R/library/EnvStats/html/eqgamma.html). Estimate quantiles of a gamma distribution, and optionally construct a confidence interval for a quantile.
+	- [eqweibull {EnvStats}](http://finzi.psych.upenn.edu/R/library/EnvStats/html/eqweibull.html). Estimate Quantiles of a Weibull Distribution
+- [Advent of Code 2020](https://github.com/Shelmith-Kariuki/adventofcode2020)
+
+## Занимаемся аппроксимацией и моделированием
+- [How to convert fitdistrplus::fitdist summary into tidy format?](https://stackoverflow.com/questions/51434417/how-to-convert-fitdistrplusfitdist-summary-into-tidy-format)
+- COOL! [Survival Analysis - Fitting Weibull Models for Improving Device Reliability in R](https://rileyking.netlify.app/post/bayesian-modeling-of-censored-and-uncensored-fatigue-data-in-r/)
+- [Use fitdist parameters in variables](https://stats.stackexchange.com/questions/23539/use-fitdist-parameters-in-variables)
+- [Machine Learning with R: A Complete Guide to Linear Regression](https://appsilon.com/r-linear-regression/)
+
+# 23.12.2020
+## R
+- COOL! [R interface to fastai](https://henry090.github.io/fastai/)
+- COOL! [mixComp: Estimation of the Order of Mixture Distributions](https://cran.r-project.org/web/packages/mixComp/)
+- [Fiery](https://fiery.data-imaginist.com/) is a flexible and lightweight framework for building web servers in R. It is relatively unopinionated about how you chose to build your server logic and supports many use cases, from serving static files to being used as a base for a model-view-controller based setup. Developed by Thomas Lin Pedersen.
+- COOL! [Material for "Drawing Anything with ggplot2" workshop](https://github.com/thomasp85/ggplot2_workshop). Developed by Thomas Lin Pedersen.
+- [How to create color-coded calendars in R](https://www.infoworld.com/article/3331605/how-to-create-color-coded-calendars-in-r.html)
+
+## Survival
+- [reconstructKM](https://cran.r-project.org/web/packages/reconstructKM/index.html): Reconstruct Individual-Level Data from Published KM Plots]
+
+## linux
+- [The Definitive Guide to Bash Command Line History](https://catonmat.net/the-definitive-guide-to-bash-command-line-history)
+
+## python
+- [Top 10 Python libraries of 2020](https://tryolabs.com/blog/2020/12/21/top-10-python-libraries-of-2020/)
+- [joerick/pyinstrument](https://github.com/joerick/pyinstrument). Call stack profiler for Python. Shows you why your code is slow!
+- [NumPy Illustrated: The Visual Guide to NumPy](https://medium.com/better-programming/numpy-illustrated-the-visual-guide-to-numpy-3b1d4976de1d). Brush up your NumPy or learn it from scratch
+
+# 18.12.2020
+## R
+- [tinytest 1.2.4 is on CRAN](https://www.markvanderloo.eu/yaRb/2020/12/17/tinytest-1-2-4-is-on-cran/)
+- [datacleanr](https://the-hull.github.io/datacleanr/) is a flexible and efficient tool for interactive data cleaning, and is inherently interoperable, as it seamlessly integrates into reproducible data analyses pipelines in R.
+- [Docker for Data Science: An Important Skill for 2021 {Video}](https://www.business-science.io/business/2020/12/03/docker-for-data-science-rep.html)
+- [A playground of enhancements and extensions for xaringan slides](https://github.com/gadenbuie/xaringanExtra)
+- [An R package to create data libraries and data dictionaries.](https://github.com/dbosak01/libr)
+- [trestletech/shinyStore](https://github.com/trestletech/shinystore). R package that adds HTML5 Local Storage support to Shiny
+
+
+## Math
+- [Бета-распределение: интуиция, примеры, вывод](https://medium.com/nuances-of-programming/%D0%B1%D0%B5%D1%82%D0%B0-%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D1%83%D0%B8%D1%86%D0%B8%D1%8F-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-4662b929305e)
+- COOL! [«Правда, чистая правда и статистика» или «15 распределений вероятности на все случаи жизни»](https://habr.com/ru/post/311092/)
+
+# 17.12.2020
+## R
+- [ggplot2 Theme Elements Demonstration](https://henrywang.nl/ggplot2-theme-elements-demonstration/)
+- [ggplot2 Theme Elements Reference Sheet](https://isabella-b.com/blog/ggplot2-theme-elements-reference/)
+- COOL! [Sharing Your Work with xaringan](https://spcanelon.github.io/xaringan-basics-and-beyond/). An Introduction to xaringan for Presentations: The Basics and Beyond
+	- [Sharing Your Work with xaringan. Day 1](https://spcanelon.github.io/xaringan-basics-and-beyond/slides/day-01-basics.html)
+	- [Sharing Your Work with xaringan. Day 2](https://spcanelon.github.io/xaringan-basics-and-beyond/slides/day-02-beyond.html)
+- [Using the tidyverse with Databases - Part I](https://sciencificity-blog.netlify.app/posts/2020-12-12-using-the-tidyverse-with-databases/)
+- [A Shiny app and module to monitor runtime progress. {#248}](https://github.com/wlandau/targets/pull/248)
+
 # 16.12.2020
 ## R
 - [nomnoml](https://rstudio.github.io/nomnoml/) provides an R interface to nomnoml, a tool for drawing sassy UML diagrams based on syntax with customizable styling
@@ -1169,6 +1239,8 @@ bookdown::bs4_book:
 - [Что такое распределение Пуассона?](https://medium.com/nuances-of-programming/%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%83%D0%B0%D1%81%D1%81%D0%BE%D0%BD%D0%B0-ea2468183519)
 - [Система кассовой аналитики для экспертов — глубокая настройка и практика ритейлеров.](https://www.crystals.ru/articles/sistema-kassovoy-analitiki-dlya-ekspertov-glubokaya-nastroyka-i-praktika-riteylerov)
 - [distill sites](https://pkgs.rstudio.com/distill/articles/examples.html)
+- [Powerlevel10k](https://github.com/romkatv/powerlevel10k) is a theme for Zsh. It emphasizes speed, flexibility and out-of-the-box experience.
+
 
 # 04.12.2020
 ## R
@@ -1210,6 +1282,21 @@ TikZiT is a super simple GUI editor for graphs and string diagrams. Its native f
 # 27.11.2020
 ## Random Forest
 - [UC Business Analytics R Programming Guide. Random Forests](https://uc-r.github.io/random_forests)
+- [Random forest computing time in R](https://stats.stackexchange.com/questions/37370/random-forest-computing-time-in-r)
+- [RandomForest: Classification](https://rpubs.com/mdwybron/487157)
+- [A COMPLETE GUIDE TO RANDOM FOREST IN R](https://www.listendata.com/2014/11/random-forest-with-r.html)
+- Slides. [Introduction to Random Forests in R](https://brunaw.com/slides/rladies-dublin/RF/intro-to-rf.html#1). R-Ladies Dublin Meetup
+- [Implementing Balanced Random Forest (BRF) in R using RandomForests](https://stats.stackexchange.com/questions/171380/implementing-balanced-random-forest-brf-in-r-using-randomforests)
+- [tidypredict - ranger() model](https://tidypredict.netlify.app/articles/ranger/)
+- [WHEN SPEED MATTERS: GOING FROM RANDOMFOREST TO RANGER](https://www.roelpeters.be/when-speed-matters-going-from-randomforest-to-ranger/)
+- [On ranger respect.unordered.factors](https://win-vector.com/2016/05/30/on-ranger-respect-unordered-factors/)
+- [What is out of bag error in Random Forests?](https://stackoverflow.com/questions/18541923/what-is-out-of-bag-error-in-random-forests). Out-of-bag estimate for the generalization error is the error rate of the out-of-bag classifier on the training set (compare it with known yi's).
+Why is it important?
+"The study of error estimates for bagged classifiers in Breiman [1996b], gives empirical evidence to show that the out-of-bag estimate is as accurate as using a test set of the same size as the training set. Therefore, using the out-of-bag error estimate removes the need for a set aside test set.1"
+- [Random Forests. Leo Breiman and Adele Cutler](https://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm)
+- COOL! [Out-of-Bag (OOB) Score in the Random Forest Algorithm](https://www.analyticsvidhya.com/blog/2020/12/out-of-bag-oob-score-in-the-random-forest-algorithm/)
+
+
 
 # 25.11.2020
 ## R
@@ -1824,6 +1911,7 @@ Examples from `example(packBits)`
 
 ## python
 - [What’s new in each version of seaborn](https://seaborn.pydata.org/whatsnew.html). [Announcing the release of seaborn 0.11](https://medium.com/@michaelwaskom/announcing-the-release-of-seaborn-0-11-3df0341af042)
+- COOL! [NumPy Illustrated: The Visual Guide to NumPy](https://medium.com/better-programming/numpy-illustrated-the-visual-guide-to-numpy-3b1d4976de1d). Brush up your NumPy or learn it from scratch
 
 # 08.09.2020
 ## R
@@ -2610,6 +2698,7 @@ Tools are provided to create plural, singular and regular forms of English words
 - [Stats and R](https://www.statsandr.com/blog/)
 	- COOL! Stats and R. [Wilcoxon test in R: how to compare 2 groups under the non-normality assumption](https://www.statsandr.com/blog/wilcoxon-test-in-r-how-to-compare-2-groups-under-the-non-normality-assumption/)
 	- COOL! Stats and R. [Student's t-test in R and by hand: how to compare two groups under different scenarios](https://www.statsandr.com/blog/student-s-t-test-in-r-and-by-hand-how-to-compare-two-groups-under-different-scenarios/)
+	- COOL! Stats and R. [Correlation coefficient and correlation test in R](https://statsandr.com/blog/correlation-coefficient-and-correlation-test-in-r/)
 
 
 
@@ -3176,12 +3265,45 @@ Calculate statistical significance of Jaccard/Tanimoto similarity coefficients f
 - COOL! [R: convert XML data to data frame](https://stackoverflow.com/questions/33446888/r-convert-xml-data-to-data-frame/33447328)
 - [A Simple Guide to S3 Methods](https://njtierney.github.io/r/missing%20data/rbloggers/2016/11/06/simple-s3-methods/)
 - [Kurt Hornik: S3 Method Lookup](https://developer.r-project.org/Blog/public/2019/08/19/s3-method-lookup/)
-- Clustering
-	- [Population genetics and genomics in R. Clustering plots](https://grunwaldlab.github.io/Population_Genetics_in_R/clustering_plot.html)
-	- [Cluster Analysis with R. Clustering wines](https://rstudio-pubs-static.s3.amazonaws.com/33876_1d7794d9a86647ca90c4f182df93f0e8.html)
-	- COOL! [Beautiful dendrogram visualizations in R: 5+ must known methods - Unsupervised Machine Learning](http://www.sthda.com/english/wiki/beautiful-dendrogram-visualizations-in-r-5-must-known-methods-unsupervised-machine-learning)
-	- Visually Enforced. a blog by Gaston Sanchez. [7+ ways to plot dendrograms in R](https://www.gastonsanchez.com/visually-enforced/how-to/2012/10/03/Dendrograms/)
 - [Vectorising like a (semi)pro](https://www.data-imaginist.com/2020/vectorizing-like-a-semi-pro/)
+
+
+## Clustering
+- [Population genetics and genomics in R. Clustering plots](https://grunwaldlab.github.io/Population_Genetics_in_R/clustering_plot.html)
+- [Cluster Analysis with R. Clustering wines](https://rstudio-pubs-static.s3.amazonaws.com/33876_1d7794d9a86647ca90c4f182df93f0e8.html)
+- COOL! [Beautiful dendrogram visualizations in R: 5+ must known methods - Unsupervised Machine Learning](http://www.sthda.com/english/wiki/beautiful-dendrogram-visualizations-in-r-5-must-known-methods-unsupervised-machine-learning)
+- Visually Enforced. a blog by Gaston Sanchez. [7+ ways to plot dendrograms in R](https://www.gastonsanchez.com/visually-enforced/how-to/2012/10/03/Dendrograms/)
+- [methods for clustering categorical data](https://community.rstudio.com/t/methods-for-clustering-categorical-data/35230). One hot encoding.
+	- klaR for kmode
+	- cba for rock
+	- Hierarchical clustering (agglomerative or divisive) with a categorical data distance: gower.
+- [Hierarchical Clustering on Categorical Data in R](https://towardsdatascience.com/hierarchical-clustering-on-categorical-data-in-r-a27e578f2995)
+- [philentropy](https://cran.r-project.org/web/packages/philentropy/): Similarity and Distance Quantification Between Probability Functions
+- [gower: Gower's Distance](https://cran.r-project.org/web/packages/gower/index.html)
+Compute Gower's distance (or similarity) coefficient between records. Compute the top-n matches between records. Core algorithms are executed in parallel on systems supporting OpenMP.
+- [Gower’s dissimilarity measure for mixed numeric/categorical data](https://rstudio-pubs-static.s3.amazonaws.com/423873_adfdb38bce8d47579f6dc916dd67ae75.html)
+- [J.C. Gower. A General Coefficient of Similarity and Some of Its Properties, 1971](https://www.jstor.org/stable/2528823?seq=1)
+http://members.cbio.mines-paristech.fr/~jvert/svn/bibli/local/Gower1971general.pdf
+- COOL! [K-Means clustering for mixed numeric and categorical data](https://datascience.stackexchange.com/questions/22/k-means-clustering-for-mixed-numeric-and-categorical-data)
+- [kohonen: Supervised and Unsupervised Self-Organising Maps](https://cran.r-project.org/web/packages/kohonen/)
+- [Self Organizing Maps and the Kohonen Package in R](https://clarkdatalabs.github.io/soms/) by Daniel Tanner
+	- [Introduction to Self Organizing Maps in R - the Kohonen Package and NBA Player Statistics](https://clarkdatalabs.github.io/soms/SOM_NBA) Dan Tanner 25 June, 2017
+- [Unsupervised Learning - Clustering Fuzzy C Means](https://rpubs.com/rahulSaha/Fuzzy-CMeansClustering)
+- [fclust: Fuzzy Clustering](https://cran.r-project.org/web/packages/fclust/)
+Algorithms for fuzzy clustering, cluster validity indices and plots for cluster validity and visualizing fuzzy clustering results.
+- [cba: Clustering for Business Analytics](https://cran.r-project.org/web/packages/cba/)
+Implements clustering techniques such as Proximus and Rock, utility functions for efficient computation of cross distances and data manipulation.
+- [K-means Clustering in R with Example](https://www.guru99.com/r-k-means-clustering.html)
+- One-hot encoding
+	- [One-hot encoding in R: three simple methods](https://datatricks.co.uk/one-hot-encoding-in-r-three-simple-methods) By Data Tricks
+	- [How to one hot encode several categorical variables in R](https://stackoverflow.com/questions/48649443/how-to-one-hot-encode-several-categorical-variables-in-r). Here's a simple solution to one-hot-encode your category using no packages.
+`model.matrix(~0+category)`
+	- [multicollinearity for one-hot encoding](https://stackoverflow.com/questions/42224430/multicollinearity-for-one-hot-encoding)
+	- [Feature importance with dummy variables](https://stats.stackexchange.com/questions/314567/feature-importance-with-dummy-variables)
+- COOL! Очень хорошо изложена методика подготовки и оценки данных при ML.[UC Business Analytics R Programming Guide. Preparing for Regression Problems](http://uc-r.github.io/regression_preparation)
+
+
+
 
 ## Shiny
 - COOL! Одно из приложений-победителей 2019 Shiny Contest. [An App to Visualize and Share My Dogs' Medical History](https://shiny.rstudio.com/gallery/dog-medical-history.html)
