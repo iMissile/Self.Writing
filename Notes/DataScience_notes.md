@@ -1088,6 +1088,35 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
 
+# 14.01.2021
+## DS
+- COOL! [Introducing Unfolded Studio - The Platform for Geospatial Analytics](https://www.unfolded.ai/blog/2021-01-12-introducing-studio/)
+
+## R
+- [TabNet](https://mlverse.github.io/tabnet/articles/interpretation.html) claims to be an interpretable model because the underlying neural network architecture uses feature selection masks that can help identify which features were used at each step.
+- Slides. [You're Already Ready: Zen and the Art of R Package Development](https://malco.io/talk/you-re-already-ready-zen-and-the-art-of-r-package-development/)
+
+# 12.01.2021
+## R
+- [Enlarge ggplot2 legend](https://stackoverflow.com/questions/37286297/enlarge-ggplot2-legend)
+- [How to specify legend width in ggplot](https://community.rstudio.com/t/how-to-specify-legend-width-in-ggplot/23060/2)
+- [Extract a single dplyr tbl_df row as a vector](https://stackoverflow.com/questions/35617785/extract-a-single-dplyr-tbl-df-row-as-a-vector)
+- [help changing a mutate_at() code to across() code](https://community.rstudio.com/t/help-changing-a-mutate-at-code-to-across-code/71119)
+- [Using the tidyverse with Databases - Part III](https://sciencificity-blog.netlify.app/posts/2020-12-31-using-tidyverse-with-dbs-partiii/)
+- [Jfrog CRAN. CRAN Repositories](https://www.jfrog.com/confluence/display/JFROG/CRAN+Repositories#CRANRepositories-DeployingCRANPackages)
+- COOL! детальный анализ производительности join решений в data.table. [How to apply same function to every specified column in a data.table](https://stackoverflow.com/questions/16846380/how-to-apply-same-function-to-every-specified-column-in-a-data-table). 
+`cols2 <- c("reg_date", "delreq_date"); .[ , (cols2) := lapply(.SD, anytime::anydate), .SDcols = cols2]`
+	- use `mget`. [Replace specific values based on another dataframe](https://stackoverflow.com/a/37994369/2204410). `DF1[DF2, on = .(date, id), names(DF2)[3:4] := mget(paste0("i.", names(DF2)[3:4]))]`
+
+
+# 06.01.2021
+## Visualization
+- COOL! [How to learn D3.js with no coding experience](https://www.heshameissa.com/blog/learn-d3)
+
+# 02.01.21
+## Git
+- [Token authentication requirements for Git operations](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/)
+
 # 28.12.2020
 ## DS
 - [How to write good documentation](https://victoria.dev/blog/how-to-write-good-documentation/). The secret to never forgetting how your project works, in three steps.
@@ -1097,6 +1126,8 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 
 # R
 - ebook [rOpenSci Packages: Development, Maintenance, and Peer Review](https://devguide.ropensci.org/)
+- [non-equi merge in data.table and epidemiology](https://scitilab.com/post_data/non_equi_joins/2020_11_17_non_equi_merge/)
+- Здесь про join в data.table: [Enhanced data.frame](https://rdatatable.gitlab.io/data.table/reference/data.table.html)
 
 # 24.12.2020
 ## R
@@ -1963,7 +1994,6 @@ setwd(script_path)
 
 # 03.09.2020
 ## R
-- [K-means clustering with tidy data principles](https://www.tidymodels.org/learn/statistics/k-means/)
 - [Sentinels can be faster](https://lemire.me/blog/2020/09/03/sentinels-can-be-faster/)
 - [How to interpret a p-value histogram](http://varianceexplained.org/statistics/interpreting-pvalue-histogram/#disqus_thread)
 - [Recover is the apex R debugging method](https://milesmcbain.micro.blog/2020/09/03/recover-is-the.html). `options(error = recover)`
@@ -3250,14 +3280,15 @@ The {gtsummary} package provides an elegant and flexible way to create publicati
 # 16.03.2020
 ## R
 - COOL! [Nest, not as one-column tibbles, but as vectors](https://community.rstudio.com/t/nest-not-as-one-column-tibbles-but-as-vectors/31536)
-- [Levenshtein type algorithm with numeric vectors](https://stackoverflow.com/questions/23674038/levenshtein-type-algorithm-with-numeric-vectors)
-- [distances: Tools for Distance Metrics](https://cran.r-project.org/web/packages/distances/). Provides tools for constructing, manipulating and using distance metrics.
-- [Distance Measures](https://cran.r-project.org/web/packages/philentropy/vignettes/Distances.html). The distance() function implemented in philentropy is able to compute 46 different distances/similarities between probability density functions (see ?philentropy::distance for details).
-- [jaccard: Test Similarity Between Binary Data using Jaccard/Tanimoto Coefficients](https://cran.r-project.org/web/packages/jaccard/index.html)
-Calculate statistical significance of Jaccard/Tanimoto similarity coefficients for binary data.
-- [R String match for address using stringdist, stringdistmatrix](https://stackoverflow.com/questions/42486172/r-string-match-for-address-using-stringdist-stringdistmatrix)
-- [Calculate Jaccard similarity between each words in 2 vectors](https://stackoverflow.com/questions/40803790/calculate-jaccard-similarity-between-each-words-in-2-vectors)
-- [Jaccard Index Calculation In R](https://jootse84.github.io/notes/jaccard-index-calculation-in-R)
+- Distannce
+	- [Levenshtein type algorithm with numeric vectors](https://stackoverflow.com/questions/23674038/levenshtein-type-algorithm-with-numeric-vectors)
+	- [distances: Tools for Distance Metrics](https://cran.r-project.org/web/packages/distances/). Provides tools for constructing, manipulating and using distance metrics.
+	- [Distance Measures](https://cran.r-project.org/web/packages/philentropy/vignettes/Distances.html). The distance() function implemented in philentropy is able to compute 46 different distances/similarities between probability density functions (see ?philentropy::distance for details).
+	- [jaccard: Test Similarity Between Binary Data using Jaccard/Tanimoto Coefficients](https://cran.r-project.org/web/packages/jaccard/index.html)
+	Calculate statistical significance of Jaccard/Tanimoto similarity coefficients for binary data.
+	- [R String match for address using stringdist, stringdistmatrix](https://stackoverflow.com/questions/42486172/r-string-match-for-address-using-stringdist-stringdistmatrix)
+	- [Calculate Jaccard similarity between each words in 2 vectors](https://stackoverflow.com/questions/40803790/calculate-jaccard-similarity-between-each-words-in-2-vectors)
+	- [Jaccard Index Calculation In R](https://jootse84.github.io/notes/jaccard-index-calculation-in-R)
 
 
 # 14.03.2020
@@ -3303,7 +3334,22 @@ Implements clustering techniques such as Proximus and Rock, utility functions fo
 - COOL! Очень хорошо изложена методика подготовки и оценки данных при ML.[UC Business Analytics R Programming Guide. Preparing for Regression Problems](http://uc-r.github.io/regression_preparation)
 
 
-
+## Clustering 2
+- [UC Business Analytics]
+	- COOL! [K-means Cluster Analysis](https://uc-r.github.io/kmeans_clustering)
+	- [UC Business Analytics R Programming Guide](https://uc-r.github.io/hc_clustering)
+- [Factoextra R Package: Easy Multivariate Data Analyses and Elegant Visualization](http://www.sthda.com/english/wiki/factoextra-r-package-easy-multivariate-data-analyses-and-elegant-visualization)
+- COOL! [StatQuest: K-means clustering](https://statquest.org/2017/07/05/statquest-k-means-clustering/)
+- Разбираемся, почему gap статистика проваливается иногда:
+	- [The optimal number of cluster by Gap Statistics](https://stats.stackexchange.com/questions/172641/the-optimal-number-of-cluster-by-gap-statistics). !! I do not trust the Gap statistic, or any of these heuristics. In particularly not if the plots are as smooth as these. Really visualizing your data is worth all the effort. In particular, also visualize the "best" result. Does it look good to you, or anomalous? Instead of trusting on some debated statistic like the Gap statistic, it is much better to trust a good visualization.
+	- COOL! [Why does gap statistic for k-means suggest one cluster, even though there are obviously two of them?](https://stats.stackexchange.com/questions/140711/why-does-gap-statistic-for-k-means-suggest-one-cluster-even-though-there-are-ob)
+	- [Standardize data columns in R](https://stackoverflow.com/questions/15215457/standardize-data-columns-in-r)
+	- [Using the standardize package](https://cran.r-project.org/web/packages/standardize/vignettes/using-standardize.html)
+	- [If k-means clustering is a form of Gaussian mixture modeling, can it be used when the data are not normal?](https://stats.stackexchange.com/questions/69424/if-k-means-clustering-is-a-form-of-gaussian-mixture-modeling-can-it-be-used-whe)
+	- [Optimal “k” when there’s no cluster? Pham vs Gap Part I](https://haroldpimentel.wordpress.com/2014/12/29/optimal-k-when-theres-no-cluster-gap-vs-pham-part-i/)
+- [Unsupervised Learning in R](https://rpubs.com/williamsurles/310847) by William Surles, 2017-09-21
+- При попытке использовать `cluster::clusGap` возникает сообщение. [Question: K-means With Many Clusters: Quick-TRANSfer steps exceeded](https://www.biostars.org/p/348719/)
+- [K-means clustering with tidy data principles](https://www.tidymodels.org/learn/statistics/k-means/)
 
 ## Shiny
 - COOL! Одно из приложений-победителей 2019 Shiny Contest. [An App to Visualize and Share My Dogs' Medical History](https://shiny.rstudio.com/gallery/dog-medical-history.html)
@@ -6984,20 +7030,6 @@ The Silver Searcher is a tool for searching code. It started off as a clone of A
 - COOL! [Parallelize a For-Loop by Rewriting it as an Lapply Call](https://www.jottr.org/2019/01/11/parallelize-a-for-loop-by-rewriting-it-as-an-lapply-call/). A commonly asked question in the R community is:
 __How can I parallelize the following for-loop?__
 - [Tools for Inter-Process Communication](https://cran.r-project.org/web/packages/ipc/vignettes/shinymp.html)
-
-## Clustering
-- [UC Business Analytics]
-	- COOL! [K-means Cluster Analysis](https://uc-r.github.io/kmeans_clustering)
-	- [UC Business Analytics R Programming Guide](https://uc-r.github.io/hc_clustering)
-- [Factoextra R Package: Easy Multivariate Data Analyses and Elegant Visualization](http://www.sthda.com/english/wiki/factoextra-r-package-easy-multivariate-data-analyses-and-elegant-visualization)
-- COOL! [StatQuest: K-means clustering](https://statquest.org/2017/07/05/statquest-k-means-clustering/)
-- Разбираемся, почему gap статистика проваливается иногда:
-	- [The optimal number of cluster by Gap Statistics](https://stats.stackexchange.com/questions/172641/the-optimal-number-of-cluster-by-gap-statistics). !! I do not trust the Gap statistic, or any of these heuristics. In particularly not if the plots are as smooth as these. Really visualizing your data is worth all the effort. In particular, also visualize the "best" result. Does it look good to you, or anomalous? Instead of trusting on some debated statistic like the Gap statistic, it is much better to trust a good visualization.
-	- COOL! [Why does gap statistic for k-means suggest one cluster, even though there are obviously two of them?](https://stats.stackexchange.com/questions/140711/why-does-gap-statistic-for-k-means-suggest-one-cluster-even-though-there-are-ob)
-	- [Standardize data columns in R](https://stackoverflow.com/questions/15215457/standardize-data-columns-in-r)
-	- [Using the standardize package](https://cran.r-project.org/web/packages/standardize/vignettes/using-standardize.html)
-	- [If k-means clustering is a form of Gaussian mixture modeling, can it be used when the data are not normal?](https://stats.stackexchange.com/questions/69424/if-k-means-clustering-is-a-form-of-gaussian-mixture-modeling-can-it-be-used-whe)
-	- [Optimal “k” when there’s no cluster? Pham vs Gap Part I](https://haroldpimentel.wordpress.com/2014/12/29/optimal-k-when-theres-no-cluster-gap-vs-pham-part-i/)
 
 
 # 11.01.2019
