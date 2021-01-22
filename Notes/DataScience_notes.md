@@ -1088,9 +1088,30 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
 
+# 22.01.2021
+## R
+- [Introduction to Spatial Data Types in R](https://cengel.github.io/rspatial/2_spDataTypes.nb.html), Last updated: May 15, 2017. Тут еще были слоты S4
+Пакеты `sp` и `sf`
+
+# 21.01.2021
+## R markdown
+- [How to add a collapsible section in markdown](https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab)
+- [RMarkdown collapsible panel](https://stackoverflow.com/questions/52576626/rmarkdown-collapsible-panel)
+
+# 20.01.2021
+## R
+- [2021-01-19: Summary of "Latent Feature Vulnerability Rankings of CVSS Vectors"](https://ws-dl.blogspot.com/2021/01/2021-01-19-summary-of-latent-feature.html)
+- COOL! [Introducing shiny.semantic::grid() – Build Your Shiny Dashboard Layout in Seconds](https://appsilon.com/shiny-semantic-grid/)
+- COOL! [prettydocCreating Pretty Documents From R Markdown](https://prettydoc.statr.me/)
+
+
 # 14.01.2021
 ## DS
 - COOL! [Introducing Unfolded Studio - The Platform for Geospatial Analytics](https://www.unfolded.ai/blog/2021-01-12-introducing-studio/)
+- COOL! [H2O.ai. Responsive Layouts and Inline Components](https://h2oai.github.io/wave/blog/release-0.11.0/)
+Today, we're excited to announce H2O Wave v0.11.0, with support for responsive layouts, inline form components, new cards for organizing content, and lots more.
+- COOL! [Parable of the Polygons - a playable post on the shape of society](https://ncase.me/polygons/)
+- [SSO на микросервисной архитектуре. Используем Keycloak. Часть №1](https://habr.com/ru/company/X5RetailGroup/blog/486778/)
 
 ## R
 - [TabNet](https://mlverse.github.io/tabnet/articles/interpretation.html) claims to be an interpretable model because the underlying neural network architecture uses feature selection masks that can help identify which features were used at each step.
