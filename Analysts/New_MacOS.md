@@ -72,6 +72,8 @@ https://openconnect.github.io/openconnect-gui/ (edited)
 - [SyncPass](https://itunes.apple.com/app/id533858341)
 - 1password
 	- [download 1password6](https://discussions.agilebits.com/discussion/91012/download-1password6)
+- [Полезные сочетания клавиш macOS, о которых я не знал](https://appleinsider.ru/mac-os-x/poleznye-sochetaniya-klavish-macos-o-kotoryx-ya-ne-znal.html)
+
 
 ## Как сделать ресет для OneDrive
 - COOL! [ONEDRIVE SYNC ISSUES? HOW TO RESET ONEDRIVE FOR MAC THE EASY WAY!](

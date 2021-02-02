@@ -2880,7 +2880,6 @@ Benchmarking. @DavidArenburg suggested a number of alternatives. Here's a simple
 - [Machine Learning. Regression Trees and Model Trees (Predicting Wine Quality)](https://datarvalue.blogspot.ru/2017/05/machine-learning-regression-trees-and.html)
 - [Machine Learning Pipelines for R](https://alexioannides.com/2017/05/08/machine-learning-pipelines-for-r/)
 - [Graphical Presentation of Missing Data; VIM Package](https://datascienceplus.com/graphical-presentation-of-missing-data-vim-package/)
-- [Hadley about `unlist()`](http://r4ds.had.co.nz/lists.html): "Base R has `unlist()`, but I recommend avoiding it for the same reason I recommend avoiding `sapply()`: it always succeeds. Even if your data structure accidentally changes, `unlist()` will continue to work silently the wrong type of output. This tends to create problems that are frustrating to debug."
 - [Shiny document closes itself in approximately a minute](https://github.com/rstudio/shiny/issues/1697). Тут говорится про изменение настроек reverse proxy, чтобы такого не было.
 - Переход на 3.4
 - [R 3.4.0 is released – with new speed upgrades and bug-fixes](https://www.r-statistics.com/2017/04/r-3-4-0-is-released-with-new-speed-upgrades-and-bug-fixes/)

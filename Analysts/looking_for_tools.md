@@ -1,5 +1,7 @@
 http://www.worldtimebuddy.com/
 
+- [Delta Chat](https://delta.chat/ru/) как Telegram или Whatsapp, но без отслеживания и централизованного управления. Delta Chat не нужен номер вашего телефона. Ознакомьтесь с нашим положение о конфиденциальности.
+
 # Fences
 - Fences: как вручную переставить нужный билд со стима. [Fences 3.07 {See update in description} **UPDATE**](https://steamcommunity.com/app/607380/discussions/0/1692659769942057262/)
 Набираем `steam://open/console` в Edge

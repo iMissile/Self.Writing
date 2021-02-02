@@ -86,8 +86,8 @@ https://www.crowdgames.ru/page/plany-crowd-games
 
 # R general
 - COOL! [Upgrading to R 3.6.0 on a Mac – May 14, 2019](https://ibecav.github.io/update_libraries/).
-- Launch R/Rstudio and type .libPaths() and you should see the new path to your personal library.
-- После переноса используем `update.packages(checkBuilt=TRUE, ask=FALSE), чтобы перестроить пакеты под новую версию.
+- Launch R/Rstudio and type `.libPaths()` and you should see the new path to your personal library.
+- После переноса используем `update.packages(checkBuilt=TRUE, ask=FALSE)`, чтобы перестроить пакеты под новую версию.
 - COOL! COOL! [A comprehensive survey of the types of things in R. 'mode' and 'class' and 'typeof' are insufficient](https://stackoverflow.com/questions/8855589/a-comprehensive-survey-of-the-types-of-things-in-r-mode-and-class-and-type)
 
 
@@ -188,6 +188,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Interactive web-based data visualization with R, plotly, and shiny](https://plotly-r.com/)
 - [Outstanding User Interfaces with Shiny](https://divadnojnarg.github.io/outstanding-shiny-ui/) by David Granjon
 - Шитиков В. К., Мастицкий С. Э. [Классификация, регрессия и другие алгоритмы Data Mining с использованием R](https://ranalytics.github.io/data-mining/index.html)
+- ebook. [officeverse by David Gohel](https://ardata-fr.github.io/officeverse/index.html). This book deals with reporting from R with the packages {officer}, {officedown}, {flextable}, {rvg} and {mschart}.
 
 
 
@@ -656,6 +657,7 @@ Theming in Rmarkdown can be hard. You first made some custom CSS or use a provid
 - COOL! [How I Teach R Markdown](https://alison.rbind.io/post/2020-05-28-how-i-teach-r-markdown/) by Alison Hill
 - [Distill for R Markdown](https://rstudio.github.io/distill/). Scientific and technical writing, native to the web
 - [Different ways to set figure size in RMarkdown](https://sebastiansauer.github.io/figure_sizing_knitr/)
+- COOL! [pagedown: Create Paged HTML Documents for Printing from R Markdown](https://pagedown.rbind.io/). A Less Traveled Road to PDF and Printing
 
 
 
@@ -975,6 +977,110 @@ A lightweight, modern and flexibly logging utility for R – heavily inspired by
 - [Beyond Exception Handling: Conditions and Restarts](http://adv-r.had.co.nz/beyond-exception-handling.html)
 - [Establish handlers on the stack](https://rlang.r-lib.org/reference/with_handlers.html)
 
+## Debuggging
+- [Recover is the apex R debugging method](https://milesmcbain.micro.blog/2020/09/03/recover-is-the.html). `options(error = recover)`
+- COOL! Сборная публикация [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
+- [flow](https://moodymudskipper.github.io/flow/index.html). Visualize as flow diagrams the logic of functions, expressions or scripts and ease debugging.
+- [For troubleshooting, you can get more details on what's going on under the hood by setting `option(future.debug = TRUE)`.](https://stackoverflow.com/questions/48131779/execution-of-future-package-in-r-results-in-an-endless-waiting-time)
+- [Debugging R in VSCode](https://renkun.me/2020/09/13/debugging-r-in-vscode/)
+- [Debugging: Signals and Subprocesses](https://blog.r-hub.io/2020/02/20/processx-blocked-sigchld/)
+- COOL! Debug pipe
+	- [What's currently the recommended way to debug pipe chains?](https://community.rstudio.com/t/whats-currently-the-recommended-way-to-debug-pipe-chains/14724/3)
+	- [Fix leaky pipes in R](https://www.rostrum.blog/2019/04/07/fix-leaky-pipes/)
+	- [debug_pipe: Debugging function for magrittr pipelines.](https://rdrr.io/cran/magrittr/man/debug_pipe.html)
+- COOL! [Video: Debugging JavaScript You Wrote in R](https://www.garrickadenbuie.com/blog/video-debug-js-from-r/) by Garrick Aden‑Buie. Monday, 20 July 2020
+- COOL! [Debugging in R: How to Easily and Efficiently Conquer Errors in Your Code](https://www.inwt-statistics.com/read-blog/debugging-in-r.html)
+- COOL! [pi: predict/infer. Errors and Debugging in RStudio](https://blog.methodsconsultants.com/posts/errors-and-debugging-in-rstudio/)
+## R debug
+- [r-lib/debugme](https://github.com/r-lib/debugme). Easy and efficient debugging for R packages
+- [debug-package](https://www.rdocumentation.org/packages/debug/versions/1.3.1/topics/debug-package) by Mark Bravington
+- [How to debug (placing break point,etc) an installed R package in RStudio?](https://stackoverflow.com/questions/22000969/how-to-debug-placing-break-point-etc-an-installed-r-package-in-rstudio)
+- Profvis. But see [this FAQ]() if you want package code to show up in the code panel.)
+- [Introduction to profvis](https://rstudio-pubs-static.s3.amazonaws.com/123888_184f1274483e4970b0a366a8573cfa9f.html) by Winston Chang, 2016-05-05
+- COOL!!! [How do I get code from an R package to show in the code panel?](https://rstudio-pubs-static.s3.amazonaws.com/123888_184f1274483e4970b0a366a8573cfa9f.html#how-do-i-get-code-from-an-r-package-to-show-in-the-code-panel)
+In typical use, only code written by the user is shown in the code panel. (This is code for which source references are available.) Yellow blocks in the flame graph have corresponding lines of code in the code panel, and when moused over, the line of code will be highlighted. White blocks in the flame graph don’t have corresponding lines in the code panel. In most cases, the calls represented by the white blocks are to functions that are in base R and other packages.
+
+Profvis can also show code that’s inside an R package. To do this, source refs for the package code must be available. There are two general ways to do this: you can install the package with source refs, or you can use devtools::load_all() to load a package from sources on disk.
+E.g. `install.packages("ggplot2", type="source", INSTALL_opts="--with-keep.source")`
+`devtools::install_github("gertjanssenswillen/bupaR", args="--with-keep.source")`
+
+- [Left Code Panel Doesn't Show Up #28 {Closed}](https://github.com/rstudio/profvis/issues/28). Ah, you'll need to enable the option keep.source in order for R to record the source code when running from Rscript. For example, this should work:
+```
+Rscript -e "options(keep.source=TRUE); p <- profvis::profvis({ profvis::pause(0.2) }); htmlwidgets::saveWidget(p, 'test.html')"
+```
+- [R:case4base - code profiling with base R](https://jozef.io/r004-profiling/)
+- COOL! Learning [daranzolin/ViewPipeSteps](https://github.com/daranzolin/ViewPipeSteps). Create tabs of `View()` output for each chained pipe
+- COOL! [How to interactively examine any R code - 4 ways to not just read the code, but delve into it step-by-step](https://jozef.io/r916-exploring-r-code-interactively/)
+- [r-lib/debugme](https://github.com/r-lib/debugme). Easy and efficient debugging for R packages
+- [How do I track down where a R package function fails? {duplicate}](https://stackoverflow.com/questions/5034821/how-do-i-track-down-where-a-r-package-function-fails)
+- [New R package 'debugr' - use automatic debug messages to improve your code](https://topics-in-r.blogspot.com/2018/07/new-r-package-debugr-using-intelligent.html)
+- R debug (опять)
+	- [How To Use The Debug Package](https://www.rdocumentation.org/packages/debug/versions/1.3.1/topics/debug-package)
+	- [How to debug (placing break point,etc) an installed R package in RStudio?](https://stackoverflow.com/questions/22000969/how-to-debug-placing-break-point-etc-an-installed-r-package-in-rstudio)
+	- [How do I create an object in the Global environment from a function](https://stat.ethz.ch/pipermail/r-help/2006-December/122284.html).
+`assign("b", value, envir=globalenv())`
+- COOL! [R Debugging - Cannot see which line generates warning message (Shiny)](https://stackoverflow.com/questions/29132110/r-debugging-cannot-see-which-line-generates-warning-message-shiny).
+You can tell R to treat warnings as errors with `options(warn=2)`. ...
+First turn on displaying warnings using the command `options(warn=1)` Then, you could run it by clicking on the "Source" or "Source with Echo" button (see image below). You can see the error/warning messages when any line with errors/warnings is executed.
+- [RStudio enters debug mode for every function error - how can I stop it?](https://stackoverflow.com/questions/29018842/rstudio-enters-debug-mode-for-every-function-error-how-can-i-stop-it)
+- [Debugging R code using R, RStudio and wrapper functions](https://www.youtube.com/watch?v=-P9UzQuJSH8&feature=youtu.be&list=PLAKBwakacHbQT51nPHex1on3YNCCmggZA)
+- [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
+- [How to debug a fatal error?](https://support.rstudio.com/hc/en-us/community/posts/207601737-How-to-debug-a-fatal-error-)
+- [Using the Bizarro Pipe to Debug magrittr Pipelines in R](http://www.win-vector.com/blog/2017/01/using-the-bizarro-pipe-to-debug-magrittr-pipelines-in-r/)
+- [Debugging R Functions](http://seananderson.ca/2013/08/23/debugging-r.html)
+- [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
+- [Debugme](https://github.com/gaborcsardi/debugme). Easy and efficient debugging for R packages. gaborcsardi/debugme
+- [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio), September 11, 2017
+- [Debugging methods in R6 objects](https://cran.r-project.org/web/packages/R6/vignettes/Debugging.html)
+- [debugme: Debug R Packages](https://cran.r-project.org/web/packages/debugme/index.html). Specify debug messages as special string constants, and control debugging of packages via environment variables.
+	- [r-lib/debugme](https://github.com/r-lib/debugme). Easy and efficient debugging for R packages
+	- [Debugme](https://github.com/gaborcsardi/debugme). Easy and efficient debugging for R packages. gaborcsardi/debugme
+- [wrapr: Wrap R Functions for Debugging and Parametric Programming](https://cran.r-project.org/web/packages/wrapr/index.html)
+- [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Published: 2013-02-07.
+Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
+- [Debugging, condition handling, and defensive programming](http://adv-r.had.co.nz/Exceptions-Debugging.html)
+- "Mastering Software Development in R". [2.6 Debugging](https://bookdown.org/rdpeng/RProgDA/debugging.html)
+- [ggpmisc 0.2.13. Debugging ggplots](https://cran.r-project.org/web/packages/ggpmisc/vignettes/debug.html)
+- [Using the Bizarro Pipe to Debug magrittr Pipelines in R](http://www.win-vector.com/blog/2017/01/using-the-bizarro-pipe-to-debug-magrittr-pipelines-in-r/)
+- [Debugging R Functions](http://seananderson.ca/2013/08/23/debugging-r.html)
+- [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
+- [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)` Showcase Mode!!!
+- Презентация [Debugging with Shiny](http://rpubs.com/jmcphers/149638)
+- COOL [How-to go parallel in R – basics + tips](http://gforge.se/2015/02/how-to-go-parallel-in-r-basics-tips/). См. п. "Debugging"
+Debugging is especially hard when working in a parallelized environment. You cannot simply call browser/cat/print in order to find out what the issue is.
+	- Never use set.seed(), use clusterSetRNGStream() instead, to set the cluster seed if you want reproducible results
+
+## Debug Shiny
+- [A little trick for debugging Shiny](https://rtask.thinkr.fr/blog/a-little-trick-for-debugging-shiny/)
+- [Debugging Shiny applications](https://shiny.rstudio.com/articles/debugging.html), LAST UPDATED: 30 MAY 2017
+- Статья [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html)
+- Презентация [Debugging with Shiny](http://rpubs.com/jmcphers/149638)
+- [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)`
+Showcase Mode!!!
+- [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)` Showcase Mode!!!
+- [showcase display mode for published app in shinyapps.io](http://stackoverflow.com/questions/26291523/showcase-display-mode-for-published-app-in-shinyapps-io)
+You can provide information about your app that Shiny showcase will use by creating a DESCRIPTION file.
+- [Effectively debugging Shiny apps](http://stackoverflow.com/questions/31920286/effectively-debugging-shiny-apps)
+- [Display element ids for debugging Shiny apps](http://blog.mckuhn.de/2016/04/display-element-ids-for-debugging-shiny.html)
+- [Интересный кейс с дебагом от Хадли](https://mastering-shiny.org/action-workflow.html?q=workf#case-study). To demonstrate the basic debugging approach, I’ll show you a little problem I encountered when writing Section 10.1.2. I’ll first show you the basic context, then you’ll see a problem I resolved without interactive debugging tools, a problem that required interactive debugging, and discover a final suprise.
+- COOL! [mitmproxy is a free and open source interactive HTTPS proxy.](https://mitmproxy.org/)
+	- [ropenscilabs/middlechild. R interface to MITM](https://github.com/ropenscilabs/middlechild)
+	- [How To: Use mitmproxy to read and modify HTTPS traffic](https://blog.heckel.xyz/2013/07/01/how-to-use-mitmproxy-to-read-and-modify-https-traffic-of-your-phone/)
+	- [Debugging Mobile Apps with mitmproxy](https://medium.com/sean3z/debugging-mobile-apps-with-mitmproxy-4596e56b3da2)
+
+
+## R as cmd script
+- [Startup. Initialization At Start Of An R Session](https://www.rdocumentation.org/packages/base/versions/3.4.3/topics/Startup)
+- [quit. Terminate An R Session](https://www.rdocumentation.org/packages/base/versions/3.4.3/topics/quit)
+- Work with Exceptions
+	- COOL! [How to write trycatch in R](https://stackoverflow.com/questions/12193779/how-to-write-trycatch-in-r)
+	- COOL! [Error Handling in R](http://www.win-vector.com/blog/2012/10/error-handling-in-r/)
+	- [Debugging, condition handling, and defensive programming](http://adv-r.had.co.nz/Exceptions-Debugging.html)
+	- [Careful with tryCatch](http://www.brodrigues.co/blog/2016-06-21-careful-with-trycatch/)
+	- [Error handling in R is odd](https://emilkirkegaard.dk/en/?p=5162)
+- [How do I get the application exit code from a Windows command line?](https://stackoverflow.com/questions/334879/how-do-i-get-the-application-exit-code-from-a-windows-command-line)
+
+
 ## Статистика
 - [Statistics with R. 1.7 - Confidence intervals and bootstrapping](https://arc.lib.montana.edu/book/statistics-with-r-textbook/item/49#Statistics%20with%20R++1)
 - [3.14.1 Wilcoxon rank sum test](https://bookdown.org/danieljcarter/r4steph/non-parametric-tests.html)
@@ -1051,9 +1157,6 @@ Yes, Bootstrapping method is an ideal way to do this. Basically for each median,
 	- [How to create a timeline of your CV in R](https://www.statsandr.com/blog/how-to-create-a-timeline-of-your-cv-in-r/)
 
 
-
-
-
 ## R и 64 бит
 - [REALLY LARGE NUMBERS IN R](http://theautomatic.net/2019/08/16/really-large-numbers-in-r/). This post will discuss ways of handling huge numbers in R using the gmp package.
 - [In R is it better to use integer64, numeric, or character for large integer id numbers?](https://stackoverflow.com/questions/35171760/in-r-is-it-better-to-use-integer64-numeric-or-character-for-large-integer-id-n)
@@ -1087,22 +1190,116 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 02.02.2021
+## R
+- COOL! Learning. Анимация join-ов. [All You Need To Know About Merging (Joining) Datasets in R](https://thomasadventure.blog/posts/r-merging-datasets/)
+- COOL! [Data Binning and Plotting in R](https://www.jdatalab.com/data_science_and_data_mining/2017/01/30/data-binning-plot.html)
+- [pander: An R Pandoc Writer](http://rapporter.github.io/pander/). The main aim of the pander R package is to provide a minimal and easy tool for rendering R objects into Pandoc's markdown.
+- [Printing xaringan slides with chromote](https://www.garrickadenbuie.com/blog/print-xaringan-chromote/)
+- COOL! Graph. [Benchmark of popular graph/network packages v2](https://www.timlrx.com/blog/benchmark-of-popular-graph-network-packages-v2)
+
+## data.table
+- фильтрация в I по динамической переменной
+	- [How to select rows in data.table with dynamically determined column name and cut off limits?](https://stackoverflow.com/questions/33312777/how-to-select-rows-in-data-table-with-dynamically-determined-column-name-and-cut/33312823)
+`dt[eval(parse(text=name)) < limit]` OR `dt[eval(as.name(name))< limit]` OR `dt[eval(as.symbol(name))< limit]`
+	- [Select rows in data table using a variable {duplicate}](https://stackoverflow.com/questions/39005117/select-rows-in-data-table-using-a-variable)
+	- [Filter data table by dynamic column name](https://stackoverflow.com/questions/29564002/filter-data-table-by-dynamic-column-name)
+
+
+
+# 29.01.2021
+## R
+- [Pagedown. Paginate the HTML Output of R Markdown with CSS for Print](https://github.com/rstudio/pagedown)
+- [Announcing pagedreport](https://rfortherestofus.com/2021/01/announcing-pagedreport/)
+- [Printing xaringan slides with chromote](https://www.garrickadenbuie.com/blog/print-xaringan-chromote/)
+- [Pandoc Filters in Bookdown](https://jmablog.com/post/pandoc-filters/)
+- [An implementation of the Language Server Protocol for R](https://github.com/REditorSupport/languageserver)
+- [How to create scheduled tasks with PowerShell on Windows 10](https://www.windowscentral.com/how-create-scheduled-tasks-powershell-windows-10)
+- COOL! [Causal design patterns for data analysts](https://emilyriederer.netlify.app/post/causal-design-patterns/)
+- COOL! [How to Draw Flowcharts in LaTeX using TikZ?](https://latexdraw.com/draw-flowcharts-latex-tutorial/)
+- [Hadley about `unlist()`](http://r4ds.had.co.nz/lists.html): "Base R has `unlist()`, but I recommend avoiding it for the same reason I recommend avoiding `sapply()`: it always succeeds. Even if your data structure accidentally changes, `unlist()` will continue to work silently the wrong type of output. This tends to create problems that are frustrating to debug."
+
+# 27.01.2021
+## R
+- COOL! [My fav feature from the new version of {shiny}: `reactiveConsole(TRUE)`, which allows using reactive objects and observers straight in the console](https://twitter.com/_ColinFay/status/1354182862510174208?s=20)
+- [tidytrees](https://github.com/bakaburg1/tidytrees): a package for a tidy representation of decision trees.
+- COOL! [USING METAFLOW TO MAKE MODEL TUNING LESS PAINFUL](https://mdneuzerling.com/post/using-metaflow-to-make-model-tuning-less-painful/)
+- [ggdist: Visualizations of distributions and uncertainty](https://mjskay.github.io/ggdist/)
+
+# 24.01.2021
+## R
+- COOL! [Announcing pagedreport](https://rfortherestofus.com/2021/01/announcing-pagedreport/)
+- Learning. [Transform List into Dataframe with tidyr and purrr](https://henrywang.nl/transform-list-into-dataframe-with-tidyr-and-purrr/)
+- COOL! [Latex Equations From Model Objects the Equatiomatic Package](https://ianadamsresearch.com/post/2021-01-18-latex-equations-from-model-objects-the-equatiomatic-package/)
+- Запускаем `proffer` под Windows. Кроме установки доп. компонент по инструкции, нужно еще прописать кучу доп. переменных. Graphviz я просто вписал в переменные системы.
+If the Go folder is missing but the Go binary is non-missing, you may need to
+  configure the GOPATH environment variable. See
+  <https://github.com/golang/go/wiki/GOPATH>.
+- [How to fill down values in R data frame](http://datacornering.com/how-to-fill-down-values-in-r-data-frame/)
+- [Programmatic interface to the two European Centre for Medium-Range Weather Forecasts API services.](https://github.com/bluegreen-labs/ecmwfr#use-copernicus-climate-data-store-cds)
+- [Dramatically speed up your R purrr functions with the furrr package](http://zevross.com/blog/2019/02/12/dramatically-speed-up-your-r-purrr-functions-with-the-furrr-package/)
+
+## R functions
+- [3.4.4 Subset assignment](https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Subset-assignment)
+```
+Assignment to subsets of a structure is a special case of a general mechanism for complex assignment:
+
+x[3:5] <- 13:15
+The result of this command is as if the following had been executed
+
+`*tmp*` <- x
+x <- "[<-"(`*tmp*`, 3:5, value=13:15)
+rm(`*tmp*`)
+```
+- COOL! [Operator “[<-” in RStudio and R](https://stackoverflow.com/questions/15559387/operator-in-rstudio-and-r). Тут подробно разбирается модель поведения именно в RStudio
+
+
+## data.table
+- [R data.table symbols and operators you should know](https://www.infoworld.com/article/3530348/r-datatable-symbols-and-operators-you-should-know.html)
+Then this code will not work: 
+
+dt1 <- mydt[, mycols]
+Instead, you need to put .. (that’s two dots) in front of the vector object name:
+
+dt1 <- mydt[, ..mycols]
+Why two dots? That seemed kind of random to me until I read the explanation. Think of it like the two dots in a Unix command-line terminal that move you up one directory. Here, you’re moving up one namespace, from the environment inside data.table brackets up to the global environment. (That really does help me remember it!)
+- [data.table double dot.](https://cran.r-project.org/web/packages/data.table/data.table.pdf)
+When j is a character vector of column names, a numeric vector of column positions to select or of the form startcol:endcol, and the value returned is always
+a data.table. with=FALSE is not necessary anymore to select columns dynamically. Note that x[,cols] is equivalent to x[,..cols] and to x[,cols,with=FALSE]
+and to x[,.SD,.SDcols=cols].
+- [Why does “..” work to pass column names in a character vector variable?](https://stackoverflow.com/questions/45380628/why-does-work-to-pass-column-names-in-a-character-vector-variable)
+- [Select subset of columns in data.table R {duplicate}](https://stackoverflow.com/questions/28094645/select-subset-of-columns-in-data-table-r/28094726#28094726)
+- [How to expand an ellipsis (…) argument without evaluating it in R](https://stackoverflow.com/questions/13353847/how-to-expand-an-ellipsis-argument-without-evaluating-it-in-r)
 
 # 22.01.2021
 ## R
 - [Introduction to Spatial Data Types in R](https://cengel.github.io/rspatial/2_spDataTypes.nb.html), Last updated: May 15, 2017. Тут еще были слоты S4
 Пакеты `sp` и `sf`
+- [rstudio-conf/2021/](https://github.com/rstudio/rstudio-conf/tree/master/2021)
+- [jorvlan/raincloudplots. The easy way to create raincloud plots](https://github.com/jorvlan/raincloudplots)
+
+## CH
+- [List of Aggregate Functions](https://clickhouse.tech/docs/en/sql-reference/aggregate-functions/reference/)
+- [HARNESSING THE POWER OF CLICKHOUSE ARRAYS – PART 1](https://altinity.com/blog/harnessing-the-power-of-clickhouse-arrays-part-1)
+- [HARNESSING THE POWER OF CLICKHOUSE ARRAYS – PART 2](https://altinity.com/blog/harnessing-the-power-of-clickhouse-arrays-part-2)
+- [HARNESSING THE POWER OF CLICKHOUSE ARRAYS – PART 3](https://altinity.com/blog/harnessing-the-power-of-clickhouse-arrays-part-3)
+
+## DS
+- [Windows Terminal Preview 1.6 Release](https://devblogs.microsoft.com/commandline/windows-terminal-preview-1-6-release/?WT.mc_id=modinfra-0000-thmaure)
+- [treeshap — explain tree-based models with SHAP values](https://medium.com/responsibleml/treeshap-explain-tree-based-models-with-shap-values-2900f95f426)
+
 
 # 21.01.2021
 ## R markdown
 - [How to add a collapsible section in markdown](https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab)
 - [RMarkdown collapsible panel](https://stackoverflow.com/questions/52576626/rmarkdown-collapsible-panel)
+- [HTML Special Features: KU CRMDA Markdown](https://cran.r-project.org/web/packages/stationery/vignettes/HTML_special_features.html#colored-callouts). This guide describes several key features/functionalities of R Markdown for producing colorful and vivid HTML documents.
+- COOL! [Introducing shiny.semantic::grid() – Build Your Shiny Dashboard Layout in Seconds](https://appsilon.com/shiny-semantic-grid/)
+- COOL! [prettydocCreating Pretty Documents From R Markdown](https://prettydoc.statr.me/)
 
 # 20.01.2021
 ## R
 - [2021-01-19: Summary of "Latent Feature Vulnerability Rankings of CVSS Vectors"](https://ws-dl.blogspot.com/2021/01/2021-01-19-summary-of-latent-feature.html)
-- COOL! [Introducing shiny.semantic::grid() – Build Your Shiny Dashboard Layout in Seconds](https://appsilon.com/shiny-semantic-grid/)
-- COOL! [prettydocCreating Pretty Documents From R Markdown](https://prettydoc.statr.me/)
 
 
 # 14.01.2021
@@ -1112,6 +1309,8 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 Today, we're excited to announce H2O Wave v0.11.0, with support for responsive layouts, inline form components, new cards for organizing content, and lots more.
 - COOL! [Parable of the Polygons - a playable post on the shape of society](https://ncase.me/polygons/)
 - [SSO на микросервисной архитектуре. Используем Keycloak. Часть №1](https://habr.com/ru/company/X5RetailGroup/blog/486778/)
+- [Google's Engineering Practices documentation. Code Review Developer Guide](https://google.github.io/eng-practices/review/)
+- [Exploratory Data Analysis: what’s the point?](https://thedatasciencekernel.com/2021/01/24/exploratory-data-analysis-whats-the-point/)
 
 ## R
 - [TabNet](https://mlverse.github.io/tabnet/articles/interpretation.html) claims to be an interpretable model because the underlying neural network architecture uses feature selection masks that can help identify which features were used at each step.
@@ -1190,6 +1389,8 @@ Today, we're excited to announce H2O Wave v0.11.0, with support for responsive l
 - [datacleanr](https://the-hull.github.io/datacleanr/) is a flexible and efficient tool for interactive data cleaning, and is inherently interoperable, as it seamlessly integrates into reproducible data analyses pipelines in R.
 - [Docker for Data Science: An Important Skill for 2021 {Video}](https://www.business-science.io/business/2020/12/03/docker-for-data-science-rep.html)
 - [A playground of enhancements and extensions for xaringan slides](https://github.com/gadenbuie/xaringanExtra)
+- COOL! [Printing xaringan slides with chromote](https://www.garrickadenbuie.com/blog/print-xaringan-chromote/). Use `pagedown::chrome_print()`. This is similar to the first option, but uses a headless version of Chrome to do the printing behind the scenes.
+	- [Chromote: Headless Chrome Remote Interface](https://github.com/rstudio/chromote)
 - [An R package to create data libraries and data dictionaries.](https://github.com/dbosak01/libr)
 - [trestletech/shinyStore](https://github.com/trestletech/shinystore). R package that adds HTML5 Local Storage support to Shiny
 
@@ -1833,7 +2034,6 @@ Noncharacters: U+FFFE, U+FFFF, and Others
 - [The latest version of echarts4r comes with “boxes,” these are similar to flexdashboard valuebox](https://echarts4r.john-coene.com/articles/boxes.html). They work very much like any other echarts4r charts within shiny.
 - [Handle class imbalance in #TidyTuesday climbing expedition data with tidymodels](https://juliasilge.com/blog/himalayan-climbing/)
 - [Impute missing data and handle class imbalance](https://youtu.be/9f6t5vaNyEM)
-- [flow](https://moodymudskipper.github.io/flow/index.html). Visualize as flow diagrams the logic of functions, expressions or scripts and ease debugging.
 - Slides. [xaringanExtra. Extra Special xaringan Presentations](https://pkg.garrickadenbuie.com/xaringanExtra/#/). A playground of extensions for xaringan
 - [What distinguishes dplyr::pull from purrr::pluck and magrittr::extract2?](https://stackoverflow.com/questions/54113879/what-distinguishes-dplyrpull-from-purrrpluck-and-magrittrextract2)
 
@@ -1909,7 +2109,6 @@ When I removed the indentation from runtime:shiny, things got back to normal. So
 # 14.09.2020
 ## R
 - [Just learned an amazing #rstats trick: You can embed #learnr apps using `knitr::include_app()` for live coding demos *inside* #xaringan slides!](https://twitter.com/_bcullen/status/1305273775630426112?s=20)
-- [Debugging R in VSCode](https://renkun.me/2020/09/13/debugging-r-in-vscode/)
 - [Combining a table with multiple scatterplots @ {reactable}](https://rquer.netlify.app/interactive_chart/table_plot)
 - [start to {explore}](https://rolkra.github.io/start-to-explore/). What if exploring data in R is just one line of code?
 - [Official repo for the #tidytuesday project](https://github.com/rfordatascience/tidytuesday)
@@ -1922,7 +2121,6 @@ The easiest way to quickly build DAGs and find adjustment sets and testable impl
 - [Advanced R. 2.5 Modify-in-place](https://adv-r.hadley.nz/names-values.html#modify-in-place)
 - [R6: Encapsulated object-oriented programming for R](https://r6.r-lib.org/)
 - [Advanced R. 6.8.4 Replacement functions](https://adv-r.hadley.nz/functions.html#replacement-functions)
-- [Debugging: Signals and Subprocesses](https://blog.r-hub.io/2020/02/20/processx-blocked-sigchld/)
 - [dgrtwo/widyr](https://github.com/dgrtwo/widyr). Widen, process, and re-tidy a dataset
 - COOL! [PCA tidyverse style](https://clauswilke.com/blog/2020/09/07/pca-tidyverse-style/)
 - COOL! [Tidyverse dashboard](https://github.com/tidyverse/tidyversedashboard). flexdashboard + crosstalk
@@ -2017,7 +2215,6 @@ setwd(script_path)
 ## R
 - [Sentinels can be faster](https://lemire.me/blog/2020/09/03/sentinels-can-be-faster/)
 - [How to interpret a p-value histogram](http://varianceexplained.org/statistics/interpreting-pvalue-histogram/#disqus_thread)
-- [Recover is the apex R debugging method](https://milesmcbain.micro.blog/2020/09/03/recover-is-the.html). `options(error = recover)`
 - COOL! [jsonptr: Using Wuffs’ Memory-Safe, Zero-Allocation JSON Decoder](https://nigeltao.github.io/blog/2020/jsonptr.html)
 - Slides [Column-wise operations with dplyr: Old and New](https://columnwise-operations-dplyr.netlify.app/#1)
 - COOL! Исправляем кодировки строк. [`stri_trans_nfc {stringi}`]. Perform or Check For Unicode Normalization
@@ -2224,8 +2421,6 @@ RStudio v1.4 includes a new visual markdown editing mode. Highlights of visual m
 - [R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
 Yihui Xie, Christophe Dervieux, Emily Riederer
 - [New Features in the R Graphics Engine](https://developer.r-project.org/Blog/public/2020/07/15/new-features-in-the-r-graphics-engine/index.html). Paul Murrell
-- [flow](https://github.com/moodymudskipper/flow)
-Visualize as flow diagrams the logic of functions, expressions or scripts and ease debugging.
 - COOL! [Cron Helper](https://cron.help/). Crontab syntax for us humans. Every 5 minutes
 - [rstudio/rticles](https://github.com/rstudio/rticles). LaTeX Journal Article Templates for R Markdown
 
@@ -2251,10 +2446,6 @@ Functions for the creation/generation and analysis of multilayer social networks
 - [OSF: A Project Management Service Built for Research](https://ropensci.org/blog/2020/08/04/osf/)
 	- [OSF is a free, open platform to support your research and enable collaboration.](https://www.osf.io/)
 - COOL! [Integrating R and Telegram](https://blog.datascienceheroes.com/get-notify-when-an-r-script-finishes-on-telegram/)
-- COOL! Debug pipe
-	- [What's currently the recommended way to debug pipe chains?](https://community.rstudio.com/t/whats-currently-the-recommended-way-to-debug-pipe-chains/14724/3)
-	- [Fix leaky pipes in R](https://www.rostrum.blog/2019/04/07/fix-leaky-pipes/)
-	- [debug_pipe: Debugging function for magrittr pipelines.](https://rdrr.io/cran/magrittr/man/debug_pipe.html)
 - COOL! [Fast concatenation of data.table columns into one string column](https://stackoverflow.com/questions/48233309/fast-concatenation-of-data-table-columns-into-one-string-column)
 - [wch/writetest.Rmd](https://gist.github.com/wch/9233873). String collection speed tests
 
@@ -2454,8 +2645,6 @@ Also, see:
 - COOL! [4 Tips to Make Your Shiny Dashboard Faster](https://blog.rstudio.com/2020/07/21/4-tips-to-make-your-shiny-dashboard-faster/). Krystian Igras, Appsilon Data Science
 - COOL! [An Interactive Visualization of Every Line in Hamilton](https://pudding.cool/2017/03/hamilton/index.html)
 - [kyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings). A list of useful payloads and bypass for Web Application Security and Pentest/CTF
-- COOL! [Video: Debugging JavaScript You Wrote in R](https://www.garrickadenbuie.com/blog/video-debug-js-from-r/) by Garrick Aden‑Buie. Monday, 20 July 2020
-
 - [Avoid Dashboard Fatigue](https://rstudio.com/resources/webinars/avoid-dashboard-fatigue/)
 	- Репозиторий с кодом и презентацией. [rstudio/beyond-dashboard-fatigue](https://github.com/rstudio/beyond-dashboard-fatigue)
 - [Seamless R and C++ Integration with Rcpp. Dirk Eddelbuettel](https://dirk.eddelbuettel.com/papers/useR2020_rcpp_tutorial.pdf)
@@ -2542,6 +2731,9 @@ Import data from 'Excel' binary (.xlsb) workbooks into R.
 - Slides. [Visualizing covariance, variance, standard deviation, correlation](https://evamaerey.github.io/statistics/covariance_correlation.html#1)
 - [tidylog](https://github.com/elbersb/tidylog). The goal of tidylog is to provide feedback about dplyr and tidyr operations. It provides simple wrapper functions for almost all dplyr and tidyr functions, such as filter, mutate, select, full_join, and group_by.
 - COOL! [valueBoxes and Sparklines](http://jkunst.com/blog/posts/2020-06-26-valuebox-and-sparklines/)
+
+## Rconf 2021
+- [Search RStudio Conference #rstudioglobal Tweets](http://apps.machlis.com/shiny/rstudioglobal/)
 
 ## Rconf 2019
 - [Links to slides from rstudio::conf 2019](https://github.com/kbroman/RStudioConf2019Slides)
@@ -2980,7 +3172,6 @@ What Information Gain and Information Entropy are and how they're used to train 
 # 15.05.2020
 ## R
 - COOL! [Intro to {polite} Web Scraping of Soccer Data with R!](https://ryo-n7.github.io/2020-05-14-webscrape-soccer-data-with-R/)
-- [Интересный кейс с дебагом от Хадли](). To demonstrate the basic debugging approach, I’ll show you a little problem I encountered when writing Section 10.1.2. I’ll first show you the basic context, then you’ll see a problem I resolved without interactive debugging tools, a problem that required interactive debugging, and discover a final suprise.
 - COOL! [The prettyunits package](https://github.com/r-lib/prettyunits) formats quantities in human readable form. Currently time units and information (i.e. bytes) are supported.
 - COOL! [r-lib/later](https://github.com/r-lib/later). Schedule an R function or formula to run after a specified period of time.
 
@@ -3950,7 +4141,6 @@ This repo was created at rOpenSci #ozunconf19 at University of Sydney Dec 11-13 
 ## R
 - [R Code Optimizer](http://rpubs.com/IACCancu/462493)
 - COOL! [rco - The R Code Optimizer](https://jcrodriguez1989.github.io/rco/). Make your R code run faster! rco analyzes your code and applies different optimization strategies that return an R code that runs faster.
-- COOL! [Debugging in R: How to Easily and Efficiently Conquer Errors in Your Code](https://www.inwt-statistics.com/read-blog/debugging-in-r.html)
 - [noamross/nyhackr-docker-talk](https://github.com/noamross/nyhackr-docker-talk). Slides, Code, and Links to Resources from "Docker for the User," delivered at nyhackr 2018-07-11 https://nyhackr.org/
 - COOL! [topepo/aml-london-2019](https://github.com/topepo/aml-london-2019). Course materials for Applied Machine Learning course in 2019 in London
 - [Left-Hand Side (LHS) and Right-Hand Side (RHS) entities meaning in Git and (Git-Python)](https://stackoverflow.com/questions/57204583/left-hand-side-lhs-and-right-hand-side-rhs-entities-meaning-in-git-and-git)
@@ -4150,7 +4340,6 @@ In general, to interpret a (linear) model involves the following steps.
 
 # 20.11.2019
 ## R
-- [Debugging in R: How to Easily and Efficiently Conquer Errors in Your Code](https://www.inwt-statistics.com/read-blog/debugging-in-r.html)
 - [Insert picture/table in R Markdown](https://stackoverflow.com/questions/25166624/insert-picture-table-in-r-markdown)
 - Интересные сслыки на ML пакеты по прогнозированию временных рядов. [October 2019: "Top 40" New R Packages](https://rviews.rstudio.com/2019/11/18/october-2019-top-40-new-r-packages/) by Joseph Rickert
 
@@ -4892,7 +5081,6 @@ scales::scientific(numb, digits = 3)
 # 30.08.2019
 ## R
 - [R, Docker and Checkpoint: A Route to Reproducibility](https://datawookie.netlify.com/blog/2019/08/r-docker-and-checkpoint-a-route-to-reproducibility/)
-- COOL! [pi: predict/infer. Errors and Debugging in RStudio](https://blog.methodsconsultants.com/posts/errors-and-debugging-in-rstudio/)
 - time-series:
 	- [Tidy time series data using tsibbles](https://robjhyndman.com/hyndsight/tsibbles/)
 	- [Time series graphics using feasts](https://robjhyndman.com/hyndsight/feasts/)
@@ -5122,28 +5310,6 @@ Installation
 - [Unsupervised Machine Learning in R: K-Means](https://jointhedatathread.com/2019/07/28/unsupervised-machine-learning-in-r-k-means/)
 
 # 25.07.2019
-## R debug
-- [r-lib/debugme](https://github.com/r-lib/debugme). Easy and efficient debugging for R packages
-- [debug-package](https://www.rdocumentation.org/packages/debug/versions/1.3.1/topics/debug-package) by Mark Bravington
-- [How to debug (placing break point,etc) an installed R package in RStudio?](https://stackoverflow.com/questions/22000969/how-to-debug-placing-break-point-etc-an-installed-r-package-in-rstudio)
-- Profvis. But see [this FAQ]() if you want package code to show up in the code panel.)
-- [Introduction to profvis](https://rstudio-pubs-static.s3.amazonaws.com/123888_184f1274483e4970b0a366a8573cfa9f.html) by Winston Chang, 2016-05-05
-- COOL!!! [How do I get code from an R package to show in the code panel?](https://rstudio-pubs-static.s3.amazonaws.com/123888_184f1274483e4970b0a366a8573cfa9f.html#how-do-i-get-code-from-an-r-package-to-show-in-the-code-panel)
-In typical use, only code written by the user is shown in the code panel. (This is code for which source references are available.) Yellow blocks in the flame graph have corresponding lines of code in the code panel, and when moused over, the line of code will be highlighted. White blocks in the flame graph don’t have corresponding lines in the code panel. In most cases, the calls represented by the white blocks are to functions that are in base R and other packages.
-
-Profvis can also show code that’s inside an R package. To do this, source refs for the package code must be available. There are two general ways to do this: you can install the package with source refs, or you can use devtools::load_all() to load a package from sources on disk.
-E.g. `install.packages("ggplot2", type="source", INSTALL_opts="--with-keep.source")`
-`devtools::install_github("gertjanssenswillen/bupaR", args="--with-keep.source")`
-
-- [Left Code Panel Doesn't Show Up #28 {Closed}](https://github.com/rstudio/profvis/issues/28). Ah, you'll need to enable the option keep.source in order for R to record the source code when running from Rscript. For example, this should work:
-```
-Rscript -e "options(keep.source=TRUE); p <- profvis::profvis({ profvis::pause(0.2) }); htmlwidgets::saveWidget(p, 'test.html')"
-```
-- [R:case4base - code profiling with base R](https://jozef.io/r004-profiling/)
-- COOL! Learning [daranzolin/ViewPipeSteps](https://github.com/daranzolin/ViewPipeSteps). Create tabs of `View()` output for each chained pipe
-
-
-
 ## R
 - [useR!2019 Quizz: Test your knowledge of base R and ThinkR](https://rtask.thinkr.fr/blog/user2019-quizz-test-your-knowledge-of-base-r-and-thinkr/)
 - COOL! [Customer Segmentation using RFM Analysis](https://blog.rsquaredacademy.com/customer-segmentation-using-rfm-analysis/). Learn to use RFM analysis for customer segmentation. RFM = "Recency, Frequency & Monetary"
@@ -6252,68 +6418,6 @@ Some people, when faced with a problem, think, “I know, I’ll use binary.” 
 - [mapedit 0.5.0 and Leaflet.pm](https://www.r-spatial.org//r/2019/03/31/mapedit_leafpm.html)
 - [Quantile Function for a Vector of Dates](https://stackoverflow.com/questions/49405531/quantile-function-for-a-vector-of-dates)
 
-## Debug Shiny
-- [A little trick for debugging Shiny](https://rtask.thinkr.fr/blog/a-little-trick-for-debugging-shiny/)
-- [Debugging Shiny applications](https://shiny.rstudio.com/articles/debugging.html), LAST UPDATED: 30 MAY 2017
-- Статья [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html)
-- Презентация [Debugging with Shiny](http://rpubs.com/jmcphers/149638)
-- [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)`
-Showcase Mode!!!
-- [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)` Showcase Mode!!!
-- [showcase display mode for published app in shinyapps.io](http://stackoverflow.com/questions/26291523/showcase-display-mode-for-published-app-in-shinyapps-io)
-You can provide information about your app that Shiny showcase will use by creating a DESCRIPTION file.
-- [Effectively debugging Shiny apps](http://stackoverflow.com/questions/31920286/effectively-debugging-shiny-apps)
-- [Display element ids for debugging Shiny apps](http://blog.mckuhn.de/2016/04/display-element-ids-for-debugging-shiny.html)
-
-
-## R debug
-- COOL! [How to interactively examine any R code - 4 ways to not just read the code, but delve into it step-by-step](https://jozef.io/r916-exploring-r-code-interactively/)
-- [r-lib/debugme](https://github.com/r-lib/debugme). Easy and efficient debugging for R packages
-- [How do I track down where a R package function fails? {duplicate}](https://stackoverflow.com/questions/5034821/how-do-i-track-down-where-a-r-package-function-fails)
-- [New R package 'debugr' - use automatic debug messages to improve your code](https://topics-in-r.blogspot.com/2018/07/new-r-package-debugr-using-intelligent.html)
-- R debug (опять)
-	- [How To Use The Debug Package](https://www.rdocumentation.org/packages/debug/versions/1.3.1/topics/debug-package)
-	- [How to debug (placing break point,etc) an installed R package in RStudio?](https://stackoverflow.com/questions/22000969/how-to-debug-placing-break-point-etc-an-installed-r-package-in-rstudio)
-	- [How do I create an object in the Global environment from a function](https://stat.ethz.ch/pipermail/r-help/2006-December/122284.html).
-`assign("b", value, envir=globalenv())`
-- COOL! [R Debugging - Cannot see which line generates warning message (Shiny)](https://stackoverflow.com/questions/29132110/r-debugging-cannot-see-which-line-generates-warning-message-shiny).
-You can tell R to treat warnings as errors with `options(warn=2)`. ...
-First turn on displaying warnings using the command `options(warn=1)` Then, you could run it by clicking on the "Source" or "Source with Echo" button (see image below). You can see the error/warning messages when any line with errors/warnings is executed.
-- [RStudio enters debug mode for every function error - how can I stop it?](https://stackoverflow.com/questions/29018842/rstudio-enters-debug-mode-for-every-function-error-how-can-i-stop-it)
-- [Debugging R code using R, RStudio and wrapper functions](https://www.youtube.com/watch?v=-P9UzQuJSH8&feature=youtu.be&list=PLAKBwakacHbQT51nPHex1on3YNCCmggZA)
-- [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
-- [How to debug a fatal error?](https://support.rstudio.com/hc/en-us/community/posts/207601737-How-to-debug-a-fatal-error-)
-- [Using the Bizarro Pipe to Debug magrittr Pipelines in R](http://www.win-vector.com/blog/2017/01/using-the-bizarro-pipe-to-debug-magrittr-pipelines-in-r/)
-- [Debugging R Functions](http://seananderson.ca/2013/08/23/debugging-r.html)
-- [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
-- [Debugme](https://github.com/gaborcsardi/debugme). Easy and efficient debugging for R packages. gaborcsardi/debugme
-
-
-## R Debug
-- [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio), September 11, 2017
-- [Debugging methods in R6 objects](https://cran.r-project.org/web/packages/R6/vignettes/Debugging.html)
-- [debugme: Debug R Packages](https://cran.r-project.org/web/packages/debugme/index.html). Specify debug messages as special string constants, and control debugging of packages via environment variables.
-	- [r-lib/debugme](https://github.com/r-lib/debugme). Easy and efficient debugging for R packages
-	- [Debugme](https://github.com/gaborcsardi/debugme). Easy and efficient debugging for R packages. gaborcsardi/debugme
-- [wrapr: Wrap R Functions for Debugging and Parametric Programming](https://cran.r-project.org/web/packages/wrapr/index.html)
-- [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Published: 2013-02-07.
-Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
-- [Debugging, condition handling, and defensive programming](http://adv-r.had.co.nz/Exceptions-Debugging.html)
-- "Mastering Software Development in R". [2.6 Debugging](https://bookdown.org/rdpeng/RProgDA/debugging.html)
-- [ggpmisc 0.2.13. Debugging ggplots](https://cran.r-project.org/web/packages/ggpmisc/vignettes/debug.html)
-- [Using the Bizarro Pipe to Debug magrittr Pipelines in R](http://www.win-vector.com/blog/2017/01/using-the-bizarro-pipe-to-debug-magrittr-pipelines-in-r/)
-- [Debugging R Functions](http://seananderson.ca/2013/08/23/debugging-r.html)
-- [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
-- [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)` Showcase Mode!!!
-- Презентация [Debugging with Shiny](http://rpubs.com/jmcphers/149638)
-- COOL [How-to go parallel in R – basics + tips](http://gforge.se/2015/02/how-to-go-parallel-in-r-basics-tips/). См. п. "Debugging"
-Debugging is especially hard when working in a parallelized environment. You cannot simply call browser/cat/print in order to find out what the issue is.
-	- Never use set.seed(), use clusterSetRNGStream() instead, to set the cluster seed if you want reproducible results
-
-
-
-
-
 # R Internals
 - [1.1.1 SEXPTYPEs](https://cran.r-project.org/doc/manuals/r-release/R-ints.html#SEXPTYPEs)
 - COOL! [R Internals. R Core Team](https://colinfay.me/r-internals/)
@@ -6321,7 +6425,6 @@ Debugging is especially hard when working in a parallelized environment. You can
 - [gc {base}](https://stat.ethz.ch/R-manual/R-devel/library/base/html/gc.html). Тут читаем про `Ncells`, `Vcells`
 - Advanced R by Hadley Wickham. [Memory](http://adv-r.had.co.nz/memory.html)
 - COOL! [THE SECRET LIVES OF R OBJECTS](https://www.brodieg.com/2019/02/18/an-unofficial-reference-for-internal-inspect/)
-
 
 
 # 30.03.2019
@@ -9206,17 +9309,6 @@ Risk-related information can be expressed in terms of probabilities or frequenci
 Provides a progress bar similar to 'dplyr' that can write progress out to a variety of locations, including stdout(), stderr(), or from file(). Useful when using 'knitr' or 'rmarkdown', and you still want to see progress of calculations in the terminal.
 	- [trackr: Semantic Annotation and Discoverability System for R-Based Artifacts](https://cran.r-project.org/web/packages/trackr/index.html)
 Automatically annotates R-based artifacts with relevant descriptive and provenance-related and provides a backend-agnostic storage and discoverability system for organizing, retrieving, and interrogating such artifacts.
-
-## R as cmd script
-- [Startup. Initialization At Start Of An R Session](https://www.rdocumentation.org/packages/base/versions/3.4.3/topics/Startup)
-- [quit. Terminate An R Session](https://www.rdocumentation.org/packages/base/versions/3.4.3/topics/quit)
-- Work with Exceptions
-	- COOL! [How to write trycatch in R](https://stackoverflow.com/questions/12193779/how-to-write-trycatch-in-r)
-	- COOL! [Error Handling in R](http://www.win-vector.com/blog/2012/10/error-handling-in-r/)
-	- [Debugging, condition handling, and defensive programming](http://adv-r.had.co.nz/Exceptions-Debugging.html)
-	- [Careful with tryCatch](http://www.brodrigues.co/blog/2016-06-21-careful-with-trycatch/)
-	- [Error handling in R is odd](https://emilkirkegaard.dk/en/?p=5162)
-- [How do I get the application exit code from a Windows command line?](https://stackoverflow.com/questions/334879/how-do-i-get-the-application-exit-code-from-a-windows-command-line)
 
 ## R & Excel
 - [ДАТАЗНАЧ (функция ДАТАЗНАЧ)](https://support.office.com/ru-ru/article/%D0%94%D0%90%D0%A2%D0%90%D0%97%D0%9D%D0%90%D0%A7-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F-%D0%94%D0%90%D0%A2%D0%90%D0%97%D0%9D%D0%90%D0%A7-df8b07d4-7761-4a93-bc33-b7471bbff252)
