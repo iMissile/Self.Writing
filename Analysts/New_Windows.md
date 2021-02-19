@@ -223,6 +223,15 @@ http://answers.microsoft.com/en-us/windows/forum/windows_10-security/event-id-10
 Using fsutil volume diskfree c:   or  dir command we can get info on one particular drive, but how to get this on all drives in the system using a single command?
 ```
 - [DriveLetterView v1.46](https://www.nirsoft.net/utils/drive_letter_view.html)
+- [Перенос настроек Far Manager с другого компьютера](https://qastack.ru/superuser/169763/migrating-far-manager-settings-from-another-machine) или [здесь](https://poweruser.guru/questions/169763/%D0%BF%D0%B5%D1%80%D0%B5%D0%BD%D0%BE%D1%81-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BA-far-manager-%D1%81-%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B3%D0%BE-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%B0)
+Для Far Manager ver. 3,0:
+Настройки экспорта:
+Far.exe /export settings.cfg
+Настройки импорта:
+Far.exe /import settings.cfg
+
+Элементы «F2 User Menu» не были экспортированы.
+Меню F2 здесь:"%APPDATA%\Far Manager\Profile\FarMenu.ini"
 
 ## Tips
 - [Бесплатно продлеваем Kiwi for Gmail](https://dailysoftwaredeal.com/seller/giveaway-kiwi-for-gmail-windows-mac-1-year-license/). Тут идет покупка, если из приложения не доступно пока. https://www.kiwiforgmail.com/. Code: KiwiForFree
@@ -471,5 +480,49 @@ Step 4: Reopen Steam and log in, then point Steam to your new directory and veri
 ## Video
 - [19 команд ffmpeg для любых нужд](https://habr.com/ru/post/171213/)
 
+- [Windows: Как изменить язык при входе в систему?]
+Бывает, что необходимо изменить язык ввода при вводе пароля/логина. По-умолчанию язык ввода пароля задается в соответствии с выбранной локализацией операционной системы Windows. Можно изменить это двумя способа. Дедовским через реестр и если у Вас виндоус старше седьмой версии - через менюшку управления языками.
+
+Способ первый:
+Заходим меню: "Панель управления" -> "Часы, языки и регион" -> "Смена раскладки клавиатуры и других способов ввода". После чего переходим на вкладку "Дополнительно" и ставим галочку "Копировать параметры" (Помните, что у вас по умолчанию в самой Windows) должен стоять нужная раскладка).
+Перезагружаемся и все.
+
+Способ второй:
+Для этого нужно перейти в реестр Windows (запускаем через сочетание клавиш Windows + R, там прописываем regedit и жмём Enter).
+Заходим в раздел
+
+HKEY_USERS\.Default\Keyboard Layout\Preload
+Там два ключа, 1 и 2.
+В ключе 1 надо задать значение 409 (англ) в ключе 2 значение 419 (рус).
+Т.е. просто поменять местами, т.к. для русской локализации они заданы наоборот.
+
+## Руководство по установке подсистемы Windows для Linux в Windows 10
+- [Возможны два варианта установки подсистемы Windows для Linux (WSL)](https://docs.microsoft.com/ru-ru/windows/wsl/install-win10)
+
+# Настройка рабочего Windows10 с нуля
+- Отключаем в ярлыках Рабочего стола тени шрифта (описано выше).
+- Ставим английский язык по умолчанию и при входе в систему (описано выше).
+- Устанавливаем Ubuntu под Windows [WSL 1](https://docs.microsoft.com/ru-ru/windows/wsl/install-win10)
+- Ставим Package Manager [Chocolatey](https://chocolatey.org/)
+- Устанавливаем FiraCode для RStudio.
+- Ставим [OpenVPN Community edition](https://openvpn.net/community-downloads/)
+- Ставим SSH клиент [Bitvise SSH Client/xShell]
+- Ставим SnagIt, блокируем его в файерволе (wf.msc) или касперском. [Best practices for configuring Защитник Windows firewall](https://docs.microsoft.com/ru-ru/windows/security/threat-protection/windows-firewall/best-practices-configuring).
+Переносим базы SangIt
+	- [Snagit (Windows): Move Unsaved Captures to a Different Computer](https://support.techsmith.com/hc/en-us/articles/203731768-Snagit-Windows-Move-Unsaved-Captures-to-a-Different-Computer)
+	- [Snagit (Windows): Manually Restore a Datastore](https://support.techsmith.com/hc/en-us/articles/203732148-Snagit-Windows-Manually-Restore-a-Datastore)
+- Мигрируем конфигурацию Anydesk. [Backup & Restore Settings and ID](https://support.anydesk.com/AnyDesk_ID_and_Alias)
+[Export saved connections (on Mac) is it possible?](https://www.reddit.com/r/AnyDesk/comments/jwlboc/export_saved_connections_on_mac_is_it_possible/). If you have a business licence then you can export them as csv files otherwise no you can't.
+Но список последних подключений можно найти в конф файле: [`C:\Users\'UserName'\AppData\Roaming\AnyDesk\user.conf`](https://gist.github.com/oropesa/a058c813ffb25ee696104d660cca6e5a)
+```
+(In both Windows)
+1. Go to C:\Users\{USER}\AppData\Roaming\AnyDesk
+2. Copy & Paste 'thumbnails'
+3. Open 'user.conf'
+4. Replace the line 'ad.roster.items='
+5. Done.
+```
+- Ставим EmEditor, отключаем в Касперском доступ в инет.
+- Ставим SmartGit, переносим настройки из `%appdata%\syntevo\SmartGit\<version>\`. Читаем [How to import old settings/repositories](https://stackoverflow.com/questions/45837545/how-to-import-old-settings-repositories)
 
 

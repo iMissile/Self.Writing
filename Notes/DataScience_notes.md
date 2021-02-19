@@ -57,6 +57,8 @@ https://www.filmpro.ru/materials/57202
 - [Запчасти к мясорубке Zelmer](http://vaprom.ru/shop/c16.zelmer.htm)
 - [УЗНАТЬ КТО ВАМ ЗВОНИТ!](https://www.neberitrubku.ru/). Вам звонят с незнакомого номера и вы думаете не брать трубку? Найдите этот номер и узнайте, кто пытается вам дозвониться.
 - [Как поверить диагностическую карту по базе РСА](https://avtobot.net/blog/proverka-diagnosticheskoy-karty-po-baze-eaisto)
+- [Диагностическая карта. Удаленно](http://xn----7sbabaofkycxc7ao1bicpj5gui.xn--p1ai/)
+- [ЕАИСТО. Единая автоматизированная информационная система](https://eaisto.info/)
 
 - [Клуб любителей аудиокниг. РАДИОПОСТАНОВКИ](http://abook-club.ru/radio/#expand_all)
 - [Коллекция «Старое Радио»](http://mds.altervision.ru/trash/radio/)
@@ -82,7 +84,13 @@ https://www.crowdgames.ru/page/plany-crowd-games
 
 - Bookmate [Изменить данные карты, с которой происходят списания за подписку](https://support.bookmate.com/hc/ru/articles/219428628-%D0%98%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BA%D0%B0%D1%80%D1%82%D1%8B-%D1%81-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D1%8F%D1%82-%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B7%D0%B0-%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%BA%D1%83)
 
-
+# RStudio fonts
+- COOL! [Ligature fonts for R](https://benjaminlmoore.wordpress.com/2017/07/19/ligature-fonts-for-r/)
+	- [Monospaced Programming Fonts with Ligatures](https://www.hanselman.com/blog/MonospacedProgrammingFontsWithLigatures.aspx)
+	- [Hasklig - a code font with monospaced ligatures](https://github.com/i-tu/Hasklig) (in my opinion a nicer base font) which is more conservative with the ligatures it introduces.
+	- [tonsky/FiraCode. Monospaced font with programming ligatures](https://github.com/tonsky/FiraCode)
+	- [FiraCode RStudio instructions](https://github.com/tonsky/FiraCode/wiki/RStudio-instructions)
+- [JetBrains Mono. A typeface for developers_](https://www.jetbrains.com/lp/mono/)
 
 # R general
 - COOL! [Upgrading to R 3.6.0 on a Mac – May 14, 2019](https://ibecav.github.io/update_libraries/).
@@ -189,6 +197,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Outstanding User Interfaces with Shiny](https://divadnojnarg.github.io/outstanding-shiny-ui/) by David Granjon
 - Шитиков В. К., Мастицкий С. Э. [Классификация, регрессия и другие алгоритмы Data Mining с использованием R](https://ranalytics.github.io/data-mining/index.html)
 - ebook. [officeverse by David Gohel](https://ardata-fr.github.io/officeverse/index.html). This book deals with reporting from R with the packages {officer}, {officedown}, {flextable}, {rvg} and {mschart}.
+- [Outstanding User Interfaces with Shiny](https://unleash-shiny.rinterface.com/index.html)
 
 
 
@@ -523,6 +532,9 @@ DT[DT[, .I[.SD==2], .SDcols = 1]]
 ```
 - [Fill in missing values (nacof/nocb) in character column by group](https://stackoverflow.com/questions/61522683/fill-in-missing-values-nacof-nocb-in-character-column-by-group)
 - [R: data table group by column name vector](https://stackoverflow.com/questions/45410338/r-data-table-group-by-column-name-vector)
+- COOL! [How to change the last value in each group by reference, in data.table](https://stackoverflow.com/questions/21819253/how-to-change-the-last-value-in-each-group-by-reference-in-data-table)
+- [row number with by in data.table](https://stackoverflow.com/questions/49032276/row-number-with-by-in-data-table)
+
 
 
 # DS
@@ -886,6 +898,7 @@ package_source <- function(pkg){
 }
 # show the first 60 as an example
 head(sapply(allmypackages$Package, package_source), 60)
+write.csv(allmypackages, "mypackagelist_2021_02.csv")
 ```
 - При миграции 3.6.1 -> 4.0.2 остались за бортом
 ```
@@ -1190,6 +1203,131 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 19.02.2021
+## R
+- [Custom themes in Shiny & R Markdown with {bslib} & {thematic}](http://bit.ly/rstudio-global-theming)
+- [RMarkdown. 2.4 Output formats](https://bookdown.org/yihui/rmarkdown/output-formats.html)
+- [Installing older versions of packages](https://support.rstudio.com/hc/en-us/articles/219949047-Installing-older-versions-of-packages)
+	- `devtools::install_version("ggplot2", version = "0.9.1", repos = "http://cran.us.r-project.org")`
+- COOL! [Shiny modules to import data into an application or addin](https://github.com/dreamRs/datamods)
+- COOL! [Visualizing How a Kernel Draws a Smooth Line](https://www.walker-harrison.com/posts/2021-02-13-visualizing-how-a-kernel-draws-a-smooth-line/)
+- COOL! [A complete guide to scales](https://ggplot2tor.com/scales/)
+There are numerous scales in ggplot2. Too many to memorize. This app makes it easy for you to find the right scales and arguments for your variable types and aesthetics.
+
+# 18.02.2021
+## R
+- [Interpreting Cohen's d Effect Size. An Interactive Visualization](https://rpsychologist.com/cohend/)
+- [Patchwork. Moving beyond the grid](https://patchwork.data-imaginist.com/articles/guides/layout.html#moving-beyond-the-grid). [Sample](https://twitter.com/erdirstats/status/1361362149742948352?s=20)
+- [box. Write Reusable, Composable and Modular R Code](https://klmr.me/box/)
+- Miles McBain. My main weapons in R:
+	1. error = recover
+	2. debugonce(otherpkg:::internal_fn)
+	3. assignInNameSpace() - for duck punching
+`utils::getFromNamespace`. Utility functions to access and replace the non-exported functions in a namespace, for use in developing packages with namespaces.
+
+## DS
+- COOL! [What, exactly, is dbt?](https://blog.getdbt.com/what--exactly--is-dbt-/). dbt (data build tool) enables data analysts and engineers to transform data in their warehouses.
+
+## ETL
+- [The 9 Best ETL Packages For R Programming](https://blog.panoply.io/best-tools-for-r-programming)
+- [Case studies of using R as ETL tool for data warehousing?](https://community.rstudio.com/t/case-studies-of-using-r-as-etl-tool-for-data-warehousing/74610)
+- [Using etl](https://cran.r-project.org/web/packages/etl/vignettes/using_etl.html). etl is an R package to facilitate Extract - Transform - Load (ETL) operations for medium data.
+- [R tidyverse vs Alteryx Designer – Part 1](https://www.perception.ie/r-tidyverse-vs-alteryx-designer-part-1/)
+
+## Data Governance
+- COOL! [Data Talks 2020](https://datatalks.rt.ru/)
+- [ПРИЛОЖЕНИЕ LINEAGE-DEPENDENCY ANALYZER: ВИЗУАЛИЗИРУЕМ СТРУКТУРУ РЕШЕНИЯ QLIKVIEW](http://blog.atkcg.ru/prilozhenie-lineage-dependency-analyzer-vizualiziruem-strukturu-resheniya-qlikview/)
+
+
+# 15.02.2021
+## R
+- COOL! [Adding Labels to a {ggplot2} Bar Chart](https://thomasadventure.blog/posts/labels-ggplot2-bar-chart/)
+- [DESCRIBING CATEGORICAL RASTERS WITH SPATIAL SIGNATURES](https://nowosad.github.io/post/motif-bp2/)
+- [Machine Learning with R: A Complete Guide to Decision Trees](https://appsilon.com/r-decision-treees/)
+- COOL! [Modern Text Features in R](https://www.tidyverse.org/blog/2021/02/modern-text-features/)
+- COOL! [reactablefmtr](https://github.com/kcuilla/reactablefmtr). An R package to simplify formatting and customization of tables made with {reactable}
+- datamods. [Shiny modules to import data into an application or addin](https://github.com/dreamRs/datamods) Shiny modules to import and manipulate data into an application or addin.
+- [Convert PowerPoint Slides to xaringan (remark.js)](https://github.com/datalorax/slidex). This package is a work-in-progress, but is aimed at making the process of converting Microsoft PowerPoint slides to beautiful HTML xaringan slides as seamless as possible, maintaining tables, figures, links, and bulleted lists
+
+
+# 12.02.2021
+## R
+- [torch, tidymodels, and high-energy physics](https://blogs.rstudio.com/ai/posts/2021-02-11-tabnet/)
+- COOL! [You might know the #rstats trick of using + NULL to a {ggplot2} chart to allow commenting out of lines... but did you also know you can use identity() for the same thing in pipe chains?](https://twitter.com/charliejhadley/status/1359190308123205633?s=20)
+- COOL ! [how do I end a dplyr pipe with NULL? to allow easy comment/uncomment](https://stackoverflow.com/questions/52595918/how-do-i-end-a-dplyr-pipe-with-null-to-allow-easy-comment-uncomment)
+Other possibilities from comments that all appear to work without the `I()` side effect:
+`identity()` or `force()` or `print()` or `{.}` or `return()`
+- COOL! [My favorite RStudio tips and tricks](http://datacornering.com/my-favorite-rstudio-tips-and-tricks/)
+- [New to me: control left-click over an R variable name in RStudio and up pops up the data view for that object.](https://twitter.com/sharon000/status/1359969568664485888?s=20)
+
+- [omsvg](https://rich-iannone.github.io/omsvg/). Scalable vector graphics, SVGs, are fantastic. The omsvg package lets you make SVGs using the R programming language, and, it tries to make the whole process a little less difficult. We can create SVG elements, transform them programmatically, apply filters, and even animate them.
+- [How to place the text inside donut chart (echarts)](https://stackoverflow.com/questions/62482485/how-to-place-the-text-inside-donut-chart-echarts)
+
+# 09.02.2021
+## R
+- [R SDK for interacting with Microsoft 365 APIs](https://github.com/azure/microsoft365r)
+- [gluedown](https://kiernann.com/gluedown/). The goal of gluedown is to ease the transition from R’s powerful vectors to formatted markdown text.
+- [A easy way to read all columns as character #148 {Closed}](https://github.com/tidyverse/readr/issues/148). 
+You can now do `col_types = cols(.default = "c")`
+- [Add column specification as in `readr` #198](https://github.com/tidyverse/readxl/issues/198)
+- [Error when using trelliscope in shiny app #18](https://github.com/hafen/trelliscopejs/issues/18).
+	- Solution 1. I tried to use trelliscopejs in shiny context but unfortunately the library was crashed. It displayed a blank frame with this text: Couldn't load config: `http://127.0.0.1:4499/appfiles/config.jsonp?__loadTrscopeConfig__6aa8b26a=jsonp_z4meir93mfzis31`
+	- Solution 2. I managed to get this to work by including self_contained = TRUE in my trelliscope call
+Ex. `facet_trelliscope(~column, self_contained = TRUE)`
+
+
+- COOL! [Navigate a GitHub repo as if you're in VS Code.] You can even open multiple tabs add and use "markdown preview mode"
+Just append "1s" to "github" in the URL. Example: https://github1s.com/daattali/shinyjs
+- [Github Codespaces](https://github.com/features/codespaces). Your instant dev environment
+
+
+# 08.02.2021
+## R
+- [Pivoting tidily](https://fromthebottomoftheheap.net/2019/10/25/pivoting-tidily/)
+- [Animations of tidyverse verbs using R, the tidyverse, and gganimate](https://www.garrickadenbuie.com/project/tidyexplain/)
+- [Lists are my secret weapon for reporting stats with knitr](https://www.tjmahr.com/lists-knitr-secret-weapon/)
+Tidying and splitting model summaries for inline reporting
+- [DECK.GL](https://deck.gl/) WebGL-powered visualization framework for large-scale datasets
+- [RcppFastFloat 0.0.1: New Package, Already on CRAN](http://dirk.eddelbuettel.com/blog/2021/02/05/#rcppfastfloat_0.0.1)
+- [Historic Tale Construction Kit](https://htck.github.io/bayeux/?fbclid#!/)
+- [Python’s Pandas vs. R’s dplyr – Which Is The Best Data Analysis Library](https://appsilon.com/pandas-vs-dplyr/)
+- [The lapply() family](https://michaelbarrowman.co.uk/post/the-lapply-family/)
+
+https://www.autonews.ru/news/601bbb219a7947fffeeaff02
+https://www.drom.ru/info/misc/81364.html
+- [http://vio.uchim.info/Vio_135/cd_site/articles/pangina.pdf]
+- [Token authentication requirements for Git operations](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/)
+	- [Gitlab. Chapter 10 Cache credentials for HTTPS](https://happygitwithr.com/credential-caching.html#credential-caching)
+
+
+# 05.02.2021
+- [numform: Tools to Format Numbers for Publication](https://cran.r-project.org/web/packages/numform/index.html). [Исходники](https://github.com/trinker/numform)
+- [Keep leading zeros in r](https://www.xspdf.com/resolution/52200722.html)
+
+# 04.02.2021
+## R
+- [motifr](https://marioangst.github.io/motifr/). This package provides tools to analyse multi-level networks in terms of motifs.
+- COOL! ML [rstudio::global tips, tricks, and more](https://www.javierorraca.com/posts/2021-01-24-rstudio-global/)
+- [Should you learn Python or R in 2021?](https://www.business-science.io/code-tools/2021/01/28/python-or-r)
+- [REMOTE PAIR PROGRAMMING IN R USING VISUAL STUDIO CODE AND LIVE SHARE](https://ivelasq.rbind.io/blog/vscode-live-share/)
+- По мотивам рефакторига кода Гипросвязи. Аналоги `tidyr::separate_rows`:
+	- [Splitting a single column into multiple observation using R](https://stackoverflow.com/questions/33113263/splitting-a-single-column-into-multiple-observation-using-r)
+	- [split column in data.table to multiple rows {duplicate}](https://stackoverflow.com/questions/34712949/split-column-in-data-table-to-multiple-rows)
+	- Прекрасный анализ различных подходов, проведение бенчмарка. [Split comma-separated strings in a column into separate rows](https://stackoverflow.com/questions/13773770/split-comma-separated-strings-in-a-column-into-separate-rows)
+
+
+# 03.02.2021
+## R
+- [How to write your own ggplot2 functions in R](https://www.infoworld.com/article/3410295/how-to-write-your-own-ggplot2-functions-in-r.html)
+- [How to deal with OAuth2.0 in R packages?](https://blog.r-hub.io/2021/01/25/oauth-2.0/)
+- [Best practices of orchestrating Python and R code in ML projects](https://dvc.org/blog/best-practices-of-orchestrating-python-and-r-code-in-ml-projects)
+- [Your first R package in 1 hour](https://www.pipinghotdata.com/posts/2020-10-25-your-first-r-package-in-1-hour/). Tools that make R package development easy
+- [Here’s a whole course on DAG-based causal inference/econometrics with R](https://evalsp21.classes.andrewheiss.com/example/)
+- [r-lib/vdiffr](https://github.com/r-lib/vdiffr). Visual regression testing and graphical diffing with testthat
+- [Tidy.js](https://pbeshai.github.io/tidy/). Tidy up your data with JavaScript
+- COOL! [moodymudskipper/boom](https://github.com/moodymudskipper/boom)
+- ebook. [Tidyverse Skills for Data Science in R](https://leanpub.com/tidyverseskillsdatascience)
+
 # 02.02.2021
 ## R
 - COOL! Learning. Анимация join-ов. [All You Need To Know About Merging (Joining) Datasets in R](https://thomasadventure.blog/posts/r-merging-datasets/)
@@ -1283,10 +1421,15 @@ and to x[,.SD,.SDcols=cols].
 - [HARNESSING THE POWER OF CLICKHOUSE ARRAYS – PART 1](https://altinity.com/blog/harnessing-the-power-of-clickhouse-arrays-part-1)
 - [HARNESSING THE POWER OF CLICKHOUSE ARRAYS – PART 2](https://altinity.com/blog/harnessing-the-power-of-clickhouse-arrays-part-2)
 - [HARNESSING THE POWER OF CLICKHOUSE ARRAYS – PART 3](https://altinity.com/blog/harnessing-the-power-of-clickhouse-arrays-part-3)
+- [EventNative – простой инструмент для записи потока событий в ClickHouse](https://habr.com/ru/company/jitsu/blog/538326/)
+- [Introducing EventNative — an easy way to put your event stream into ClickHouse | Altinity Blog](https://altinity.com/blog/introducing-eventnative-an-easy-way-to-put-your-event-stream-into-clickhouse)
+- [jitsucom/eventnative](https://github.com/jitsucom/eventnative). EventNative is an open-source data collection framework - jitsucom/eventnative
+
 
 ## DS
 - [Windows Terminal Preview 1.6 Release](https://devblogs.microsoft.com/commandline/windows-terminal-preview-1-6-release/?WT.mc_id=modinfra-0000-thmaure)
 - [treeshap — explain tree-based models with SHAP values](https://medium.com/responsibleml/treeshap-explain-tree-based-models-with-shap-values-2900f95f426)
+- [A beautiful Design System for Bootstrap 4](https://demos.creative-tim.com/argon-design-system-react). It's Free and Open Source.
 
 
 # 21.01.2021
@@ -1295,7 +1438,7 @@ and to x[,.SD,.SDcols=cols].
 - [RMarkdown collapsible panel](https://stackoverflow.com/questions/52576626/rmarkdown-collapsible-panel)
 - [HTML Special Features: KU CRMDA Markdown](https://cran.r-project.org/web/packages/stationery/vignettes/HTML_special_features.html#colored-callouts). This guide describes several key features/functionalities of R Markdown for producing colorful and vivid HTML documents.
 - COOL! [Introducing shiny.semantic::grid() – Build Your Shiny Dashboard Layout in Seconds](https://appsilon.com/shiny-semantic-grid/)
-- COOL! [prettydocCreating Pretty Documents From R Markdown](https://prettydoc.statr.me/)
+- COOL! [prettydoc. Creating Pretty Documents From R Markdown](https://prettydoc.statr.me/)
 
 # 20.01.2021
 ## R
@@ -1336,6 +1479,11 @@ Today, we're excited to announce H2O Wave v0.11.0, with support for responsive l
 # 02.01.21
 ## Git
 - [Token authentication requirements for Git operations](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/)
+- [Git folder relocation - Part one](https://i-logs.com/blog/how-to-move-folders-between-git-repositories/)
+- [SmartGit. How to import old settings/repositories](https://stackoverflow.com/questions/45837545/how-to-import-old-settings-repositories)
+I would say the best way I can find for now is to Go to Help > About SmartGit > Information > Settings Path then click the folder icon to get to the suitable folder. You'll most likely want to highest version number folder based. Then the settings seem to be in yml files.
+SmartGit saves all its settings under %appdata%\syntevo\SmartGit\<version>\. Copy it from your old PC to your new PC. You are interested in .xml files only.
+Not all. Some are in <user folder>\.gitconfig file.
 
 # 28.12.2020
 ## DS
@@ -2035,6 +2183,7 @@ Noncharacters: U+FFFE, U+FFFF, and Others
 - [Handle class imbalance in #TidyTuesday climbing expedition data with tidymodels](https://juliasilge.com/blog/himalayan-climbing/)
 - [Impute missing data and handle class imbalance](https://youtu.be/9f6t5vaNyEM)
 - Slides. [xaringanExtra. Extra Special xaringan Presentations](https://pkg.garrickadenbuie.com/xaringanExtra/#/). A playground of extensions for xaringan
+- [xaringancolor announcement](https://www.hvitfeldt.me/blog/xaringancolor-announcement/)
 - [What distinguishes dplyr::pull from purrr::pluck and magrittr::extract2?](https://stackoverflow.com/questions/54113879/what-distinguishes-dplyrpull-from-purrrpluck-and-magrittrextract2)
 
 # 23.09.2020
@@ -3464,8 +3613,10 @@ The {gtsummary} package provides an elegant and flexible way to create publicati
 # 20.03.2020
 ## data.table
 - COOL! [How do I exclude columns from a data.table?](https://stackoverflow.com/questions/37210489/how-do-i-exclude-columns-from-a-data-table?rq=1)
-- [R – Data.Table Rolling Joins](https://www.gormanalysis.com/blog/r-data-table-rolling-joins/)
+- COOL! [R – Data.Table Rolling Joins](https://www.gormanalysis.com/blog/r-data-table-rolling-joins/)
 - COOL! Тут есть про rolling join тоже. [Introduction to data.table](https://rpubs.com/kykimeng/intro-to-data-table) by Haema Nilakanta & Kim Ky
+	- Slides [Introduction to data.table](https://kykimeng.com/slides/rnorth_data_table.html#1)
+- [Joining verbs for data.table](https://cran.r-project.org/web/packages/table.express/vignettes/joins.html)
 
 ## R
 - COOL! [Shiny: Performance tuning with future & promises - Part 1](https://www.eoda.de/en/wissen/blog/shiny-performance-tuning-mit-future-promises-die-theorie)
