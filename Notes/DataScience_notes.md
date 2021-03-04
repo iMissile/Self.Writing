@@ -369,7 +369,6 @@ df %>%
 - Hadley Wickham. [My take on dplyr vs data.table](https://twitter.com/hadleywickham/status/553169339751215104):
 	- [data.table vs dplyr: can one do something well the other can't or does poorly?](https://stackoverflow.com/questions/21435339/data-table-vs-dplyr-can-one-do-something-well-the-other-cant-or-does-poorly/27840349#27840349)
 - COOL! [Fast data lookups in R: dplyr vs data.table](http://appsilondatascience.com/blog/rstats/2017/03/02/r-fast-lookup.html)
-
 - [Homepage Rdatatable/data.table](https://github.com/Rdatatable/data.table/wiki)
 - [data.table vs dplyr: can one do something well the other can't or does poorly?](https://stackoverflow.com/questions/21435339/data-table-vs-dplyr-can-one-do-something-well-the-other-cant-or-does-poorly)
 - COOL! [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)
@@ -393,10 +392,10 @@ Or with gunzip
 `fread(path, encoding="Latin-1")`
 - [Extracting unique rows from a data table in R {duplicate}](https://stackoverflow.com/questions/7562284/extracting-unique-rows-from-a-data-table-in-r)
 - [Filtering out duplicated/non-unique rows in data.table](https://stackoverflow.com/questions/11792527/filtering-out-duplicated-non-unique-rows-in-data-table)
-- COOL! [Benchmarking the six most used manipulations for data.tables in R](https://opremicsolutions.de/index.php/benchmarking-the-six-most-used-manipulations-for-data-tables-in-r/). Comparing formulations of the data.table package with base R and dplyr formulations
+- COOL! [Benchmarking the six most used manipulations for data.tables in R](https://opremic.com/benchmarking-the-six-most-used-manipulations-for-data-tables-in-r/). Comparing formulations of the data.table package with base R and dplyr formulations
 - [How to import a directory of csvs at once with base R and data.table. Can you guess which way is the fastest?](https://jozefhajnala.gitlab.io/r/r005-import-csvs/)
 - [Convenience features of fread](https://github.com/Rdatatable/data.table/wiki/Convenience-features-of-fread)
-- [Sort rows in data.table in decreasing order on string key `order(-x,v)` gives error on data.table 1.9.4 or earlier](https://stackoverflow.com/questions/12353820/sort-rows-in-data-table-in-decreasing-order-on-string-key-order-x-v-gives-er)
+- [Sort rows in data.table in decreasing order on string key `order(-x, v)` gives error on data.table 1.9.4 or earlier](https://stackoverflow.com/questions/12353820/sort-rows-in-data-table-in-decreasing-order-on-string-key-order-x-v-gives-er)
 - COOL! [Fastest way to replace NAs in a large data.table](https://stackoverflow.com/questions/7235657/fastest-way-to-replace-nas-in-a-large-data-table)
 - [Use data.table set() to convert all columns from integer to numeric](https://stackoverflow.com/questions/29790204/use-data-table-set-to-convert-all-columns-from-integer-to-numeric)
 - [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)
@@ -413,10 +412,14 @@ Or with gunzip
 	- [R Tutorial: Data.Table](https://www.dezyre.com/data-science-in-r-programming-tutorial/r-data-table-tutorial)
 	- [R – Data.Table Rolling Joins](https://gormanalysis.com/r-data-table-rolling-joins/)
 	- COOL! [Understanding data.table Rolling Joins](https://r-norberg.blogspot.com/2016/06/understanding-datatable-rolling-joins.html)
-- "Last Observation Carried Forward" = LOCF. "Next Observation Carried Backward" = NOCB.
+	- COOL! [The unequalled joy of non-equi joins](https://selbydavid.com/2021/02/13/joins/)
+- data lookup
+	- [Joins vs case whens - speed and memory tradeoffs](https://themockup.blog/posts/2021-02-13-joins-vs-casewhen-speed-and-memory-tradeoffs/)
+	- COOL! [Fast data lookups in R: dplyr vs data.table](http://appsilondatascience.com/blog/rstats/2017/03/02/r-fast-lookup.html)
+	- [fastmap](https://r-lib.github.io/fastmap/index.html) solves this problem by storing the keys as C++ std::string objects, and so it does not use the R symbol table at all.
 - [query_if: One-to-one interface for data.table '[' method](https://rdrr.io/cran/maditr/man/query_if.html) In maditr: Pipe-Style Interface for 'data.table'
 - [JOINing data in R using data.table](https://rstudio-pubs-static.s3.amazonaws.com/52230_5ae0d25125b544caab32f75f0360e775.html).  Ronald Stalder, 23-12-2014
-- С различными бенчмарками! [omitting NA values with data.table](omitting NA values with data.table)
+- С различными бенчмарками! [omitting NA values with data.table](https://stackoverflow.com/questions/29928167/omitting-na-values-with-data-table)
 - COOL! [What is the purpose of setting a key in data.table?](https://stackoverflow.com/questions/20039335/what-is-the-purpose-of-setting-a-key-in-data-table)
 - [Access `by` variable from within `j` in data.table](https://stackoverflow.com/questions/21733151/access-by-variable-from-within-j-in-data-table)
 - RIP Tutorial. [Using .SD and .SDcols](https://riptutorial.com/data-table/example/13084/using--sd-and--sdcols)
@@ -438,12 +441,15 @@ Usually this was not intended and the join needs to be changed. The word 'cartes
 ```
 - А как сделать сэмплы по группам? Не все так просто
 	- [Sample random rows within each group in a data.table](https://stackoverflow.com/questions/16289182/sample-random-rows-within-each-group-in-a-data-table)
-	- [from data table, randomly select one row per group](https://stackoverflow.com/questions/33887083/from-data-table-randomly-select-one-row-per-group)
+	- [from data table, randomly select one row per group](https://stackoverflow.com/questions/33887083/from-data-table-randomly-select-one-row-per-group). 
+Fast solution: `dt[dt[ , .I[sample(.N,1)] , by = z]$V1]`
 - [Subset data frame based on number of rows per group](https://stackoverflow.com/questions/20204257/subset-data-frame-based-on-number-of-rows-per-group)
+`dt[, if (.N < 3) .SD, by = name]` or `dt[dt[, .I[.N < 3], name]$V1]`
 - Проблемки с кавычками внутри строк в delimited файле:
 	- [fread: quotes in quoted string fields #1299 {Closed}](https://github.com/Rdatatable/data.table/issues/1299)
 	- [fread should un-escape escaped quotes in fields #1109 {Open}](https://github.com/Rdatatable/data.table/issues/1109)
 - [Split text string in a data.table columns](https://stackoverflow.com/questions/18154556/split-text-string-in-a-data-table-columns). Update: From version 1.9.6 (on CRAN as of Sep'15), we can use the function tstrsplit() to get the results directly (and in a much more efficient manner):
+`dt[, c("PX", "PY") := tstrsplit(PREFIX, "_", fixed=TRUE)]`
 	- [tstrsplit. Strsplit And Transpose The Resulting List Efficiently](https://www.rdocumentation.org/packages/data.table/versions/1.12.2/topics/tstrsplit)
 - [data.table: transforming subset of columns with a function, row by row](https://stackoverflow.com/questions/36841942/data-table-transforming-subset-of-columns-with-a-function-row-by-row)
 - [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)
@@ -459,42 +465,53 @@ A[B, on = 'a', bb := i.b]
 	- Тут иллюстрированный пример. [What does < stand for in data.table joins with on=](https://stackoverflow.com/questions/52793037/what-does-stand-for-in-data-table-joins-with-on)
 	- COOL! [Notes on data.table in R](http://jeffmax.io/notes-on-datatable-in-r.html)
 - [How to extract the first n rows per group?](https://stackoverflow.com/questions/16325641/how-to-extract-the-first-n-rows-per-group)
+`DT[, .SD[1:2], by=date]` or `DT[DT[, .I[1:2], by = date]$V1]`
 - COOL! Варианты с бенчмарками. [How to apply same function to every specified column in a data.table](https://stackoverflow.com/questions/16846380/how-to-apply-same-function-to-every-specified-column-in-a-data-table)
 - [diff on data.table column](https://stackoverflow.com/questions/37141277/diff-on-data-table-column). We could use `shift()`:
 ```
 dt[, diff := value - shift(value), by = variable]
 ```
+- LOCF/NOCB. LOCF = "Last Observation Carried Forward". NOCB = "Next Observation Carried Backward".
+- "Last Observation Carried Forward" = LOCF. "Next Observation Carried Backward" = NOCB.
 - [Efficiently locf by groups in a single R data.table](https://stackoverflow.com/questions/37060211/efficiently-locf-by-groups-in-a-single-r-data-table/37068596)
 - С бенчмарками [Remove rows conditionally from a data.table in R](https://stackoverflow.com/questions/22655060/remove-rows-conditionally-from-a-data-table-in-r)
 	- [Efficiently remove rows #2890 {Closed}](https://github.com/Rdatatable/data.table/issues/2890)
 - Целый квест. [Filtering out duplicated/non-unique rows in data.table](https://stackoverflow.com/questions/11792527/filtering-out-duplicated-non-unique-rows-in-data-table)
 ```
-Maybe a new unique(...,use.key=FALSE) argument would help; now filed as FR#2483. – Matt Dowle Jan 18 '13 at 0:23
+Maybe a new unique(..., use.key=FALSE) argument would help; now filed as FR#2483. – Matt Dowle Jan 18 '13 at 0:23
 Hi @MatthewDowle. Yes, that would be a nice convenience. I think your comment in the FR is also correct--if the key is unique then use.key=FALSE could be ignored. – dnlbrky Jan 18 '13 at 14:12
 1
 data.table 1.9.6 (and not doubt earlier versions) has option by= which can be used to override the key. Setting by=NULL "uses all columns and acts like the analogous data.frame methods." – JWilliman Dec 1 '15 at 23:20
 ```
 	- [Unique doesn't use keys as default anymore](https://stackoverflow.com/questions/42564617/unique-doesnt-use-keys-as-default-anymore)
 - [Create new column in data.table by group](https://stackoverflow.com/questions/12620923/create-new-column-in-data-table-by-group)
-- [create a new column in a data.table from group by multiple columns](https://stackoverflow.com/questions/46134936/create-a-new-column-in-a-data-table-from-group-by-multiple-columns/46135033)
+- [Create a new column in a data.table from group by multiple columns](https://stackoverflow.com/questions/46134936/create-a-new-column-in-a-data-table-from-group-by-multiple-columns/46135033)
 - performance различных способов сортировки [How to order data within subgroups in data.table R](https://stackoverflow.com/questions/28683712/how-to-order-data-within-subgroups-in-data-table-r)
 - [fread from v.1.11.0+ no longer reads the .csv correctly, which was read perfectly in v.1.10.4-3 #2857 {Open}](https://github.com/Rdatatable/data.table/issues/2857)
 - [How to create a lag variable within each group?](https://stackoverflow.com/questions/26291988/how-to-create-a-lag-variable-within-each-group)
 From `data.table` versions >= v1.9.5, we can use `shift` with type as `lag` or `lead`. By default, the type is `lag`.
 - [shift: Fast lead/lag for vectors and lists](https://rdrr.io/cran/data.table/man/shift.html)
 - [Is my way of duplicating rows in data.table efficient?](https://stackoverflow.com/questions/8009900/is-my-way-of-duplicating-rows-in-data-table-efficient)
-- [Introduction to `data.table` by Haema Nilakanta & Kim Ky](http://rpubs.com/kykimeng/intro-to-data-table)
+- COOL! Slides.[Introduction to `data.table` by Haema Nilakanta & Kim Ky](http://rpubs.com/kykimeng/intro-to-data-table)
 - [How to select the first and last row within a grouping variable in a data frame?](https://stackoverflow.com/questions/8203818/how-to-select-the-first-and-last-row-within-a-grouping-variable-in-a-data-frame/8212756)
+A fast and short data.table solution: `tmp[, .SD[c(1,.N)], by=id]`
 - COOL! [Select first and last row from grouped data](https://stackoverflow.com/questions/31528981/select-first-and-last-row-from-grouped-data/31529043)
 `df[ df[order(id, stopSequence), .I[c(1L,.N)], by=id]$V1 ]`
-- [Why is rbindlist “better” than rbind?](https://stackoverflow.com/questions/15673550/why-is-rbindlist-better-than-rbind)
+- [Why is `rbindlist` “better” than `rbind`?](https://stackoverflow.com/questions/15673550/why-is-rbindlist-better-than-rbind)
 - [Remove rows with NA from data.table in R {duplicate}](https://stackoverflow.com/questions/28878005/remove-rows-with-na-from-data-table-in-r)
-- [Remove rows with all or some NAs (missing values) in data.frame](https://stackoverflow.com/questions/4862178/remove-rows-with-all-or-some-nas-missing-values-in-data-frame)
+- Performance benchmark. [Remove rows with all or some NAs (missing values) in data.frame](https://stackoverflow.com/questions/4862178/remove-rows-with-all-or-some-nas-missing-values-in-data-frame).
+If performance is a priority, use `data.table` and `na.omit()` with optional param `cols=`.
 Краткая сводка по применению функций к группировке в `data.table`
 	- [R data.table filtering on group size](https://stackoverflow.com/questions/34427383/r-data-table-filtering-on-group-size)
 	- [add a 'having' parameter to `[.data.table` #788 {Open}](https://github.com/Rdatatable/data.table/issues/788)
 	- [Further optimisation of `.SD` in `j` #735 {Open}](https://github.com/Rdatatable/data.table/issues/735)
 	- [When should I use the `:=` operator in `data.table`?](https://stackoverflow.com/questions/7029944/when-should-i-use-the-operator-in-data-table)
+```
+DT["a", done := TRUE]   # binary search for group 'a' and set a flag
+DT[, newcol := 42]      # add a new column by reference (no copy of existing data)
+DT[, col := NULL]       # remove a column by reference
+DT[, newcol := sum(v), by = group]  # like a fast transform() by group
+```
 	- [Advanced tips and tricks with `data.table`](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/) BY ANDREW BROOKS
 data.table
 - COOL! [How to efficiently calculate multiple quantiles of column z when grouping by columns (x, y)](https://stackoverflow.com/questions/47702018/how-to-efficiently-calculate-multiple-quantiles-of-column-z-when-grouping-by-col)
@@ -513,18 +530,17 @@ system.time(
 ```
 - [An alternative to mutate_if in data.table](https://stackoverflow.com/questions/56995839/an-alternative-to-mutate-if-in-data-table/56996168)
 - [.EACHI in data.table?](https://stackoverflow.com/questions/27004002/eachi-in-data-table/27004566#27004566)
-- [How to apply same function to every specified column in a data.table](https://stackoverflow.com/questions/16846380/how-to-apply-same-function-to-every-specified-column-in-a-data-table)
+- [How to apply same function to every specified column in a data.table](https://stackoverflow.com/questions/16846380/how-t	o-apply-same-function-to-every-specified-column-in-a-data-table)
 - [How to exclude one column from data.table OR convert to data.table to MTS](https://stackoverflow.com/questions/12046079/how-to-exclude-one-column-from-data-table-or-convert-to-data-table-to-mts)
 - [How do I exclude columns from a data.table?](https://stackoverflow.com/questions/37210489/how-do-i-exclude-columns-from-a-data-table)
 Also, in case you would not wish to change the data.table, but merely return the columns except some columns, you can do:
 ```
-dt[,.SD, .SDcols = !c('b', 'c')]
+dt[, .SD, .SDcols = !c('b', 'c')]
 ```
-- LOCF/NOCB. LOCF = "Last Observation Carried Forward". NOCB = "Next Observation Carried Backward".
 - COOL! [A data.table and dplyr tour](https://atrebas.github.io/post/2019-03-03-datatable-dplyr/) Written by Atrebas on March 3, 2019
 - [R : DATA.TABLE TUTORIAL (WITH 50 EXAMPLES)](https://www.listendata.com/2016/10/r-data-table.html)
-- [What's the fastest way to subset a data.table?](https://stackoverflow.com/questions/23755839/whats-the-fastest-way-to-subset-a-data-table)
 - COOL! [Using .I to return row numbers with data.table package](https://stackoverflow.com/questions/22408306/using-i-to-return-row-numbers-with-data-table-package)
+- [What's the fastest way to subset a data.table?](https://stackoverflow.com/questions/23755839/whats-the-fastest-way-to-subset-a-data-table)
 - [data.table in r : subset using column index](https://stackoverflow.com/questions/41112658/data-table-in-r-subset-using-column-index). 
 We can get the row index with `.I` and use that to subset the `DT`
 ```
@@ -532,6 +548,7 @@ DT[DT[, .I[.SD==2], .SDcols = 1]]
 ```
 - [Fill in missing values (nacof/nocb) in character column by group](https://stackoverflow.com/questions/61522683/fill-in-missing-values-nacof-nocb-in-character-column-by-group)
 - [R: data table group by column name vector](https://stackoverflow.com/questions/45410338/r-data-table-group-by-column-name-vector)
+You were almost there: `dt[,.(Count = .N, Avg = mean(get(metric))), mget(nodes)]` 
 - COOL! [How to change the last value in each group by reference, in data.table](https://stackoverflow.com/questions/21819253/how-to-change-the-last-value-in-each-group-by-reference-in-data-table)
 - [row number with by in data.table](https://stackoverflow.com/questions/49032276/row-number-with-by-in-data-table)
 
@@ -1203,6 +1220,64 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 04.03.2021
+## R
+- Slides [Customization of web pages with CSS](https://dataviz-2021.netlify.app/slides/w9p2.html#1) by Daniel Anderson, Week 9, Class 2
+- [#gosling](https://gosling.js.org/) is a declarative grammar for interactive (epi)genomics #dataviz on the web. Check out https://gosling.js.org to play or keep reading.
+- COOL! [Understanding p-values Through Simulations](https://rpsychologist.com/pvalue/). An Interactive Visualization. Created by Kristoffer Magnusson
+- COOL! Отличный [онлайн визуальный редактор - модификатор dplyr пайпов](https://nshrest.shinyapps.io/datawhats/)
+- COOL! [A minimal benchmark of various tools (statistical software, databases etc.) for working with tabular data of moderately large sizes (interactive data analysis).](https://github.com/szilard/benchm-databases)
+- COOL! [Benchmarks : Grouping](https://github.com/Rdatatable/data.table/wiki/Benchmarks-:-Grouping). Тут детальные прояснения как готовить тест на производительность
+
+
+## knitr
+- [Part 1: Specifying the correct figure dimension in {knitr}.](https://www.jumpingrivers.com/blog/knitr-rmarkdown-image-size/)
+- [Part 2: What image format should you use for graphics.](https://www.jumpingrivers.com/blog/knitr-image-png-jpeg-svg-rmarkdown/)
+- [Part 3: Including external graphics in your document.](https://www.jumpingrivers.com/blog/knitr-include-graphics-external/)
+- Part 4: Optimal {knitr} settings.
+
+# 02.03.2021
+## R
+- [RPushbullet](https://dirk.eddelbuettel.com/code/rpushbullet.html) is an R client for the wonderful Pushbullet messaging / notification system.
+- [rayimage](https://www.rayimage.dev/) is an open source R package for image manipulation and simulated camera effects. rayfocus uses convolution-based techniques to generate simulated camera bokeh, depth of field, and other camera effects, using an image and an optional depth map. It includes functions to perform 2D convolutions, add image overlays, generate camera vignette effects, and add titles to images.
+- [The Shiny AWS Book](https://business-science.github.io/shiny-production-with-aws-book/) Business Science, 2020-06-09
+
+
+# 01.03.2021
+## R
+- COOL! [Grammar of graphics for interactive visualisation using G2.js](https://github.com/devOpifex/g2r)
+- [An Antarctic Tour of the Tidyverse](https://silvia.rbind.io/talk/2020-08-31-tour-of-the-tidyverse/). An introductory tidyverse tutorial created and presented for R-Ladies Chicago
+- COOL! [What is wrong with extrapolation?](https://stats.stackexchange.com/questions/219579/what-is-wrong-with-extrapolation)
+- COOL! [Un-render a reprex](https://reprex.tidyverse.org/reference/un-reprex.html)
+- COOL! tl;dr: a gajillion dollar online game takes 4X as long to start because it parses a 10MB JSON file in a bad way. [How I cut GTA Online loading times by 70%](https://nee.lv/2021/02/28/How-I-cut-GTA-Online-loading-times-by-70/)
+
+
+# 24.02.2021
+## R
+- [Split Vector into Chunks in R (2 Examples)](https://statisticsglobe.com/split-vector-into-chunks-in-r)
+- COOL! Детальный benchmark различных методов генерации и подсчета перестановок. [A Walk Through a Slice of Combinatorics in R?](https://stackoverflow.com/questions/22569176/how-to-generate-permutations-or-combinations-of-object-in-r/)
+
+## Learning
+- COOL! [Course SDS 375/395 Data Visualization in R](https://wilkelab.org/SDS375/syllabus.html). Instructor: Claus O. Wilke
+- COOL! [An Introduction to Hierarchical Modeling](http://mfviz.com/hierarchical-models/)
+This visual explanation introduces the statistical concept of Hierarchical Modeling, also known as Mixed Effects Modeling or by these other terms. This is an approach for modeling nested data. Keep reading to learn how to translate an understanding of your data into a hierarchical model specification
+
+
+# 20.02.2021
+## R
+- COOL! [Joins vs case whens - speed and memory tradeoffs](https://themockup.blog/posts/2021-02-13-joins-vs-casewhen-speed-and-memory-tradeoffs/)
+- COOL! [Getting Into the Rhythm of Chart Typography with {ragg} and {hrbragg} (a.k.a. It’s {ragg}-time}](https://rud.is/b/2021/02/19/getting-into-the-rhythm-of-chart-typography-with-ragg-and-hrbragg-a-k-a-its-ragg-time/)
+- [Awesome R Shiny Resources & Extensions](https://paulvanderlaken.com/2021/02/16/awesome-r-shiny-resources-extensions/)
+- COOL! [User Guide: 1 Debugging ggplots](https://cran.r-project.org/web/packages/gginnards/vignettes/user-guide-1.html)
+- Slides [aRt + ggplot: exploring radial visualizations](https://ijeamakaanyene.github.io/aRt_ggplot/index.html#1)
+- [tastypie](https://paolodalena.github.io/tastypie/). Pie chart in R.
+- COOL! [FAQ for RStudio Public Package Manager](https://support.rstudio.com/hc/en-us/articles/360046703913-FAQ-for-Public-RStudio-Package-Manager)
+- COOL! [Mathematics in R Markdown](https://rpruim.github.io/s341/S19/from-class/MathinRmd.html)
+- [gcalendr](https://andrie.github.io/gcalendr/). This package enables you to read events from google calendar.
+
+## data.table
+- [How does one do a full join using data.table?](https://stackoverflow.com/questions/15170741/how-does-one-do-a-full-join-using-data-table)
+
 # 19.02.2021
 ## R
 - [Custom themes in Shiny & R Markdown with {bslib} & {thematic}](http://bit.ly/rstudio-global-theming)
@@ -1227,6 +1302,15 @@ There are numerous scales in ggplot2. Too many to memorize. This app makes it ea
 
 ## DS
 - COOL! [What, exactly, is dbt?](https://blog.getdbt.com/what--exactly--is-dbt-/). dbt (data build tool) enables data analysts and engineers to transform data in their warehouses.
+- [До свидания, Google Fonts. Последний аргумент](https://habr.com/ru/company/vdsina/blog/533208/)
+- [Как решить проблему нечеткого размытого шрифта в новых версиях Google Chrome](https://webtous.ru/poleznye-sovety/kak-reshit-problemu-nechetkogo-razmytogo-shrifta-v-novyx-versiyax-google-chrome.html)
+- [Breaking Down Apdex](https://blog.newrelic.com/engineering/breaking-down-apdex/) 12 SEPTEMBER 2013
+- COOL! [Понимание джойнов сломано. Это точно не пересечение кругов, честно](https://habr.com/ru/post/448072/)
+- COOL! [R & stats illustrations by @allison_horst](https://github.com/allisonhorst/stats-illustrations)
+- [The FEniCS computing platform](https://fenicsproject.org/)
+FEniCS is a popular open-source (LGPLv3) computing platform for solving partial differential equations (PDEs).
+- [Copybara](https://github.com/google/copybara): A tool for transforming and moving code between repositories.
+- COOL! [VSCode Customization: Supercharge Your IDE](https://dev.to/iashin/vscode-customization-supercharge-your-ide-43fn)
 
 ## ETL
 - [The 9 Best ETL Packages For R Programming](https://blog.panoply.io/best-tools-for-r-programming)
@@ -1495,6 +1579,7 @@ Not all. Some are in <user folder>\.gitconfig file.
 # R
 - ebook [rOpenSci Packages: Development, Maintenance, and Peer Review](https://devguide.ropensci.org/)
 - [non-equi merge in data.table and epidemiology](https://scitilab.com/post_data/non_equi_joins/2020_11_17_non_equi_merge/)
+- COOL! [The unequalled joy of non-equi joins](https://selbydavid.com/2021/02/13/joins/)
 - Здесь про join в data.table: [Enhanced data.frame](https://rdatatable.gitlab.io/data.table/reference/data.table.html)
 
 # 24.12.2020
@@ -1551,7 +1636,7 @@ Not all. Some are in <user folder>\.gitconfig file.
 ## R
 - [ggplot2 Theme Elements Demonstration](https://henrywang.nl/ggplot2-theme-elements-demonstration/)
 - [ggplot2 Theme Elements Reference Sheet](https://isabella-b.com/blog/ggplot2-theme-elements-reference/)
-- COOL! [Sharing Your Work with xaringan](https://spcanelon.github.io/xaringan-basics-and-beyond/). An Introduction to xaringan for Presentations: The Basics and Beyond
+- COOL! Learning [Sharing Your Work with xaringan](https://spcanelon.github.io/xaringan-basics-and-beyond/). An Introduction to xaringan for Presentations: The Basics and Beyond
 	- [Sharing Your Work with xaringan. Day 1](https://spcanelon.github.io/xaringan-basics-and-beyond/slides/day-01-basics.html)
 	- [Sharing Your Work with xaringan. Day 2](https://spcanelon.github.io/xaringan-basics-and-beyond/slides/day-02-beyond.html)
 - [Using the tidyverse with Databases - Part I](https://sciencificity-blog.netlify.app/posts/2020-12-12-using-the-tidyverse-with-databases/)
@@ -1867,9 +1952,13 @@ Convert SQL Server DateTime to milliseconds Since 1970 (UNIX Epoch Time).
 - [Test fixtures](https://testthat.r-lib.org/articles/test-fixtures.html)
 
 ## R
-- RcpppSimdJson
+- RcppSimdJson
 	- [Change in behavoir of query argument of fparse between version 0.1.1 and 0.1.2 #51 {Closed}](https://github.com/eddelbuettel/rcppsimdjson/issues/51)
 	- [Parsing error @ Windows & RcppSimdJson 0.1.2 #56 {Closed}](https://github.com/eddelbuettel/rcppsimdjson/issues/56)
+	- [RcppSimdJson 0.1.4 on CRAN: New Improvements](http://dirk.eddelbuettel.com/blog/2021/02/12#rcppsimdjson_0.1.4). Fri, 12 Feb 2021
+- RcppFastFloat
+	- [RcppFastFloat 0.0.2: New Function](http://dirk.eddelbuettel.com/blog/2021/02/13#rcppfastfloat_0.0.2)
+	- COOL![fast_float](https://github.com/fastfloat/fast_float). Fast and exact implementation of the C++ from_chars functions for float and double types: 4x faster than strtod
 - [Standardize data columns in R](https://stackoverflow.com/questions/15215457/standardize-data-columns-in-r). Повторно натыкаемся на ответ [The collapse package provides the fastest scale function - implemented in C++ using Welfords Online Algorithm](https://stackoverflow.com/a/63695982/6835084)
 - [Using the bestNormalize Package](https://cran.r-project.org/web/packages/bestNormalize/vignettes/bestNormalize.html) by Ryan A Peterson
 - COOL! [Feature Scaling for Machine Learning: Understanding the Difference Between Normalization vs. Standardization](https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/)
@@ -3621,12 +3710,16 @@ The {gtsummary} package provides an elegant and flexible way to create publicati
 ## R
 - COOL! [Shiny: Performance tuning with future & promises - Part 1](https://www.eoda.de/en/wissen/blog/shiny-performance-tuning-mit-future-promises-die-theorie)
 - COOL! [Extended floating point precision in R with Rmpfr](https://statisticaloddsandends.wordpress.com/2020/03/19/extended-floating-point-precision-in-r-with-rmpfr/)
+- COOL! [gmp: Multiple Precision Arithmetic](https://cran.r-project.org/web/packages/gmp/)
+Multiple Precision Arithmetic (big integers and rationals, prime number tests, matrix computation), "arithmetic without limitations" using the C library GMP (GNU Multiple Precision Arithmetic).
 - COOL! [Extended floating point precision in R and C](https://www.johndcook.com/blog/2020/03/18/gnu-mpfrr-wrapper/)
 - [Get value from mpfr generated list](https://stackoverflow.com/questions/11498371/get-value-from-mpfr-generated-list). Я нашел решение -- смотреть в сторону `formatMpfr()`
 - [Collapse list of mpfr objects into single mpfr vector](https://stackoverflow.com/questions/20665553/collapse-list-of-mpfr-objects-into-single-mpfr-vector)
+- BigZ. [Compute N random permutations of a vector of 36 elements](https://stackoverflow.com/questions/54784566/compute-n-random-permutations-of-a-vector-of-36-elements)
 
 ## DS
 - COOL! [Rewriting the heart of our sync engine](https://dropbox.tech/infrastructure/rewriting-the-heart-of-our-sync-engine)
+- COOL! [Playwright](https://playwright.dev/) enables reliable end-to-end testing for modern web apps. Альтернатива Nightwatch.
 
 # 18.03.2020
 ## R
@@ -5956,7 +6049,7 @@ The power spectral density (PSD) is a function that describes the distribution o
 ## R
 - COOL! [Add row to dataframe](https://stackoverflow.com/questions/28467068/add-row-to-dataframe)
 - tibble. [Add rows to a data frame](https://tibble.tidyverse.org/reference/add_row.html)
-- COOL! Performance benchmarks. [Append an object to a list in R in amortized constant time, O(1)?](Append an object to a list in R in amortized constant time, O(1)?)
+- COOL! Performance benchmarks. [Append an object to a list in R in amortized constant time, O(1)?](https://stackoverflow.com/questions/2436688/append-an-object-to-a-list-in-r-in-amortized-constant-time-o1)
 
 
 # 04.06.2019
@@ -6443,7 +6536,7 @@ To rename keys recursively, see the Q defining translate_keys(f) below.
 # 17.04.2019
 ## R
 - [Generating all distinct permutations of a list in R](https://stackoverflow.com/questions/11095992/generating-all-distinct-permutations-of-a-list-in-r)
-- COOL! [R: Permutations and combinations with/without replacement and for distinct/non-distinct items/multiset](https://stackoverflow.com/questions/22569176/r-permutations-and-combinations-with-without-replacement-and-for-distinct-non-d/47983855#47983855)
+- COOL! Полноценный разбор методов и пакетов, проведение бенчмарков. [R: Permutations and combinations with/without replacement and for distinct/non-distinct items/multiset](https://stackoverflow.com/questions/22569176/r-permutations-and-combinations-with-without-replacement-and-for-distinct-non-d/47983855#47983855)
 - COOL! [arrangements: Fast Generators and Iterators for Permutations, Combinations and Partitions](https://cran.r-project.org/web/packages/arrangements/index.html)
 Fast generators and iterators for permutations, combinations and partitions. The iterators allow users to generate arrangements in a memory efficient manner and the generated arrangements are in lexicographical (dictionary) order. Permutations and combinations can be drawn with/without replacement and support multisets. It has been demonstrated that 'arrangements' outperforms most of the existing packages of similar kind. Some benchmarks could be found at <https://randy3k.github.io/arrangements/articles/benchmark.html>.
 - [base::colSums. Form Row and Column Sums and Means](https://stat.ethz.ch/R-manual/R-devel/library/base/html/colSums.html)
