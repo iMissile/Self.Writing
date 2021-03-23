@@ -198,6 +198,9 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - Шитиков В. К., Мастицкий С. Э. [Классификация, регрессия и другие алгоритмы Data Mining с использованием R](https://ranalytics.github.io/data-mining/index.html)
 - ebook. [officeverse by David Gohel](https://ardata-fr.github.io/officeverse/index.html). This book deals with reporting from R with the packages {officer}, {officedown}, {flextable}, {rvg} and {mschart}.
 - [Outstanding User Interfaces with Shiny](https://unleash-shiny.rinterface.com/index.html)
+- gt Cookbook:
+	- [Basic Usage](https://themockup.blog/static/gt-cookbook.html)
+	- [Advanced Usage](https://themockup.blog/static/gt-cookbook-advanced.html)
 
 
 
@@ -687,8 +690,12 @@ Theming in Rmarkdown can be hard. You first made some custom CSS or use a provid
 - [Distill for R Markdown](https://rstudio.github.io/distill/). Scientific and technical writing, native to the web
 - [Different ways to set figure size in RMarkdown](https://sebastiansauer.github.io/figure_sizing_knitr/)
 - COOL! [pagedown: Create Paged HTML Documents for Printing from R Markdown](https://pagedown.rbind.io/). A Less Traveled Road to PDF and Printing
-
-
+## knitr
+- Jumping Rivers blog
+	- [Part 1: Specifying the correct figure dimension in {knitr}](https://www.jumpingrivers.com/blog/knitr-rmarkdown-image-size/)
+	- [Part 2: What image format should you use for graphics](https://www.jumpingrivers.com/blog/knitr-image-png-jpeg-svg-rmarkdown/)
+	- [Part 3: Including external graphics in your document](https://www.jumpingrivers.com/blog/knitr-include-graphics-external/)
+	- [Part 4: Default knitr options and hooks](https://www.jumpingrivers.com/blog/knitr-default-options-settings-hooks/)
 
 ## knitr. Запускаем Rmd -> PDF
 Смотрим ссылки ниже. Важный концепт, который держим в голове -- возможность генерации отчетов из .R файлов (не .Rmd) посредством `spin`. `rmarkdown::render()` автоматически выбирает spin\knit в зависимости от расширения файла.
@@ -1021,6 +1028,7 @@ A lightweight, modern and flexibly logging utility for R – heavily inspired by
 - COOL! [Video: Debugging JavaScript You Wrote in R](https://www.garrickadenbuie.com/blog/video-debug-js-from-r/) by Garrick Aden‑Buie. Monday, 20 July 2020
 - COOL! [Debugging in R: How to Easily and Efficiently Conquer Errors in Your Code](https://www.inwt-statistics.com/read-blog/debugging-in-r.html)
 - COOL! [pi: predict/infer. Errors and Debugging in RStudio](https://blog.methodsconsultants.com/posts/errors-and-debugging-in-rstudio/)
+
 ## R debug
 - [r-lib/debugme](https://github.com/r-lib/debugme). Easy and efficient debugging for R packages
 - [debug-package](https://www.rdocumentation.org/packages/debug/versions/1.3.1/topics/debug-package) by Mark Bravington
@@ -1220,6 +1228,110 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+
+
+# 21.03.2021
+## Shiny
+- https://rstudio-education.github.io/advanced-shiny-sib/03-react-prog/slides/03-react-prog.pdf
+- COOL! [Reactive object bindings in a non-shiny context](https://stackoverflow.com/questions/25900626/reactive-object-bindings-in-a-non-shiny-context)
+- [imager: an R package for image processing](http://dahtah.github.io/imager/)
+
+## knitr
+- COOL! [xaringan first-letter](https://www.hvitfeldt.me/blog/xaringan-first-letter/)
+
+## python
+- [How to Speed Up Pandas with Modin](https://medium.com/distributed-computing-with-ray/how-to-speed-up-pandas-with-modin-84aa6a87bcdb)
+
+# 18.03.2021
+## R
+- [SQLite — не игрушка](https://habr.com/ru/post/547448/)
+- [UNDERSTANDING ROLLING CALCULATIONS IN R](https://itsalocke.com/blog/understanding-rolling-calculations-in-r/)
+- COOL! [ggstatsplot: ggplot2 Based Plots with Statistical Details](https://indrajeetpatil.github.io/ggstatsplot/index.html)
+- COOL! Learning [Materials for the "Advanced Shiny" course at Swiss Institute of Bioinformatics](https://github.com/rstudio-education/advanced-shiny-sib)
+- Slides. COOL! [Slides. Danielle Navarro](https://slides.djnavarro.net/)
+
+## RuleFit, Business Rules
+- [frbs: Fuzzy Rule-Based Systems for Classification and Regression in R](https://cran.r-project.org/web/packages/frbs/vignettes/lala2015frbs.pdf)
+- [Modern Rule-Based Models](https://rviews.rstudio.com/2020/05/21/modern-rule-based-models/),  2020-05-21 by Max Kuhn
+- [Interpretable Machine Learning. 4.6 RuleFit](https://christophm.github.io/interpretable-ml-book/rulefit.html)
+- [Adaptive Rules Model : Statistical Learning for Rule-Based Systems](https://pastel.archives-ouvertes.fr/tel-01622934/document)
+- [pre: an R package for deriving prediction rule ensembles](https://github.com/marjoleinF/pre)
+- [Finding communities based on propagating labels](https://igraph.org/r/doc/cluster_label_prop.html)
+- [The nitty-gritty of the Label Propagation Algorithm](https://irene.rbind.io/post/lpa/)
+- [A Tutorial Introduction to Belief Propagation](https://www.ski.org/sites/default/files/publications/bptutorial.pdf)
+
+# 17.03.2021
+## R
+- COOL! Отличная статья и визуализация. [See how age and illnesses change the risk of dying from covid-19](https://www.economist.com/graphic-detail/covid-pandemic-mortality-risk-estimator)
+- [daiR](https://dair.info/) is an R package for Google Document AI, a powerful server-based OCR processor. The package provides a wrapper for the Document AI API and comes with additional tools for output file parsing and text reconstruction.
+- COOL! [Making Dull* Dashboards in R (* Without Shiny)](https://www.thetidytrekker.com/post/dull-dashboards)
+
+# 15.03.2021
+## R
+- [modeltime.h2o](https://business-science.github.io/modeltime.h2o/)
+- [shredder](https://yonicd.github.io/shredder/index.html). The goal of shredder is to create an API that incites exploration and iteration of rstan simulation objects.
+- [HOW TO {MAGICK}ALLY VISUALIZE HISTORICAL GOOGLE MAPS TRAFFIC DATA](https://e.olamijuwon.com/how-to-magickally-visualize-historical-google-maps-traffic-data/)
+
+# 12.03.2021
+## R
+- Slides [Why R? Webinar 037. Tabular reporting with the flextable package](https://ardata-fr.github.io/flextable-whyr/#1)
+- Slides [Project structure](https://slides.djnavarro.net/project-structure/#1) by Danielle Navarro
+- COOL! [BI and Open Source Data Science: Strengths and Challenges](https://blog.rstudio.com/2021/03/11/bi-and-ds2-strengths-challenges/)
+
+## DS
+- COOL! [Database-like ops benchmark](https://h2oai.github.io/db-benchmark/)
+- [Why are tar.xz files 15x smaller when using Python's tar library compared to macOS tar?](https://superuser.com/questions/1633073/why-are-tar-xz-files-15x-smaller-when-using-pythons-tar-library-compared-to-mac)
+- [janisdd/vscode-edit-csv](https://github.com/janisdd/vscode-edit-csv). vs code extension to edit csv files with an excel like table ui
+- COOL! [ezrosent/frawk](https://github.com/ezrosent/frawk) an efficient awk-like language
+- COOL! [Как включить перевод в Google Sheets и еще 6 лайфхаков в Google Docs](https://ain.ua/2019/04/06/lajfxaki-v-google-docs/)
+- [Google Docs. Перевод документов и выбор языка ввода](https://support.google.com/docs/answer/187189)
+
+# 11.03.2020
+## R
+- COOL! [Cheat Sheets](https://rviews.rstudio.com/2021/03/10/rstudio-open-source-resorurces/) by Joseph Rickert
+- [MilesMcBain/breakerofchains](https://github.com/MilesMcBain/breakerofchains). Break your chain at the cursor line. Run the first bit. See the output. Be free.
+- [fontawesome](https://rstudio.github.io/fontawesome/). The fontawesome R package makes it very easy to insert Font Awesome icons into R Markdown documents and Shiny apps (or, anywhere else you need to put them).
+- [{drawer}](https://github.com/lz100/drawer) is an interactive image editing tool that can be added as part of the HTML in Shiny, R markdown or any type of HTML document.
+
+# 10.03.2021
+## R
+- [Optimisation of a Cox proportional hazard model using Optimx()](https://www.joshua-entrop.com/post/optim_cox/)
+- [Automatic DAG learning - part 1](https://iyarlin.github.io/2019/10/17/automatic_dag_learning_part_1/)
+- [Automatic DAG learning - part 2](https://iyarlin.github.io/2020/01/21/automatic_dag_learning_part_2/)
+- [After the creation of ADAM: smooth v3.1.0](https://forecasting.svetunkov.ru/en/2021/02/28/after-the-creation-of-adam-smooth-v3-1-0/)
+- COOL! [Using iconv via the R exported header](https://gallery.rcpp.org//articles/iconv-via-r-header/) by Dirk Eddelbuettel
+- [{emayili:0.4.6} Attachments with UTF-8 Filenames & Setting Sender](https://datawookie.dev/blog/2021/03/emayili-attachments-with-utf-8-filenames-setting-sender/)
+- [Seasonal Adjustment of Multiple Series](https://usefulr.wordpress.com/2021/03/09/seasonal-adjustment-of-multiple-series/)
+- [A function to speed up and simplify writing to SQL Server databases in R](https://hutsons-hacks.info/a-function-to-speed-up-and-simplify-writing-to-sql-server-databases-in-r)
+
+# 09.03.2021
+## R
+- [PDF resizer](https://pdfresizer.com/crop/901c3525c3bc.pdf)
+- [TileDB](https://tiledb.com/). The Universal Data Engine
+- [TileDB-R](https://github.com/TileDB-Inc/TileDB-R). R interface to the TileDB storage manager
+- COOL! [Dirk Eddelbuettel](https://dirk.eddelbuettel.com/)
+
+# 05.03.2021
+## R
+- Motif. [CLUSTERING SIMILAR SPATIAL PATTERNS](https://nowosad.github.io/post/motif-bp5/)
+- [2021 R Conferences](https://rviews.rstudio.com/2021/03/03/2021-r-conferences/)
+- [Data.Table – everything you need to know to get you started in R](https://hutsons-hacks.info/data-table-everything-you-need-to-know-to-get-you-started-in-r)
+- [Thinks Another: Using Spectrograms to Identify Stage Wiggliness?](https://blog.ouseful.info/2021/03/02/thinks-another-using-spectrograms-to-identify-stage-wiggliness/)
+- [Time Series Forecasting with XGBoost and Feature Importance](https://datageeek.com/2021/03/02/time-series-forecasting-with-xgboost-and-feature-importance/)
+- COOL! [Using ggfx for good](http://lenkiefer.com/2021/03/05/using-ggfx-for-good/). A possible good use for the new ggfx package
+
+## DSP with R
+- [signal: Signal Processing](https://cran.r-project.org/web/packages/signal/index.html)
+A set of signal processing functions originally written for 'Matlab' and 'Octave'. Includes filter generation utilities, filtering functions, resampling routines, and visualization of filter models. It also includes interpolation functions.
+- ebook. [R Programming for Data Sciences](https://www.jeffdoser.com/files/for875/_book/index.html) by Andrew O. Finley, Jeffrey W. Doser, Vince Melfi. This book serves as an introduction to programming in R and the use of associated open source tools. We address practical issues in documenting workflow, data management, and scientific computing.
+	- [Chapter 14 Digital Signal Processing](https://www.jeffdoser.com/files/for875/_book/digital-signal-processing.html)
+- COOL! [A gentle introduction: R in Digital Signal Processing](https://rpubs.com/eR_ic/dspr)
+- [tuneR: Analysis of Music and Speech](https://cran.r-project.org/web/packages/tuneR/index.html)
+Analyze music and speech, extract features like MFCCs, handle wave files and their representation in various ways, read mp3, read midi, perform steps of a transcription, ... Also contains functions ported from the 'rastamat' 'Matlab' package.
+- COOL! [seewave](http://rug.mnhn.fr/seewave/) ~ an R package dedicated to sound analysis and synthesis ~
+- [fftw: Fast FFT and DCT Based on the FFTW Library](https://cran.r-project.org/web/packages/fftw/index.html)
+Provides a simple and efficient wrapper around the fastest Fourier transform in the west (FFTW) library <http://www.fftw.org/>.
+
 # 04.03.2021
 ## R
 - Slides [Customization of web pages with CSS](https://dataviz-2021.netlify.app/slides/w9p2.html#1) by Daniel Anderson, Week 9, Class 2
@@ -1228,13 +1340,10 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! Отличный [онлайн визуальный редактор - модификатор dplyr пайпов](https://nshrest.shinyapps.io/datawhats/)
 - COOL! [A minimal benchmark of various tools (statistical software, databases etc.) for working with tabular data of moderately large sizes (interactive data analysis).](https://github.com/szilard/benchm-databases)
 - COOL! [Benchmarks : Grouping](https://github.com/Rdatatable/data.table/wiki/Benchmarks-:-Grouping). Тут детальные прояснения как готовить тест на производительность
+- [Bootstrap confidence intervals for #TidyTuesday Super Bowl commercials](https://juliasilge.com/blog/superbowl-conf-int/)
+- COOL! [Advanced future and promises usage](https://rstudio.github.io/promises/articles/future_promise.html)
+- COOL! [Dynamic R prompt](https://github.com/gaborcsardi/prompt#readme)
 
-
-## knitr
-- [Part 1: Specifying the correct figure dimension in {knitr}.](https://www.jumpingrivers.com/blog/knitr-rmarkdown-image-size/)
-- [Part 2: What image format should you use for graphics.](https://www.jumpingrivers.com/blog/knitr-image-png-jpeg-svg-rmarkdown/)
-- [Part 3: Including external graphics in your document.](https://www.jumpingrivers.com/blog/knitr-include-graphics-external/)
-- Part 4: Optimal {knitr} settings.
 
 # 02.03.2021
 ## R
@@ -1362,6 +1471,7 @@ Ex. `facet_trelliscope(~column, self_contained = TRUE)`
 
 - COOL! [Navigate a GitHub repo as if you're in VS Code.] You can even open multiple tabs add and use "markdown preview mode"
 Just append "1s" to "github" in the URL. Example: https://github1s.com/daattali/shinyjs
+- [conwnet/github1s](https://github.com/conwnet/github1s). One second to read GitHub code with VS Code.
 - [Github Codespaces](https://github.com/features/codespaces). Your instant dev environment
 
 
