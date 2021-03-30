@@ -1229,6 +1229,37 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
 
+# 29.03.2021
+## R
+- COOL! Learning [Seeing Theory. A visual introduction to probability and statistics.](https://seeing-theory.brown.edu/#firstPage)
+- Анимация. [tweenr](https://github.com/thomasp85/tweenr) is a package for interpolating data, mainly for animations. It provides a range of functions that take data of different forms and calculate intermediary values
+
+## xaringan
+- [A playground of enhancements and extensions for xaringan slides](https://github.com/gadenbuie/xaringanExtra)
+- COOL! [Printing xaringan slides with chromote](https://www.garrickadenbuie.com/blog/print-xaringan-chromote/). Use `pagedown::chrome_print()`. This is similar to the first option, but uses a headless version of Chrome to do the printing behind the scenes.
+	- [Chromote: Headless Chrome Remote Interface](https://github.com/rstudio/chromote)
+- [Printing xaringan slides with chromote](https://www.garrickadenbuie.com/blog/print-xaringan-chromote/)
+- COOL! [xaringan first-letter](https://www.hvitfeldt.me/blog/xaringan-first-letter/)
+- [Applying design guidelines to slides with {xaringanthemer}](https://www.katiejolly.io/blog/2021-03-16/designing-slides)
+- [Convert PowerPoint Slides to xaringan (remark.js)](https://github.com/datalorax/slidex). This package is a work-in-progress, but is aimed at making the process of converting Microsoft PowerPoint slides to beautiful HTML xaringan slides as seamless as possible, maintaining tables, figures, links, and bulleted lists
+
+# 24.03.2021
+## R
+- COOL! ALISON HILL. [Unbreak your blogdown site](https://alison.rbind.io/post/2020-12-27-blogdown-checks/)
+- [typed](https://moodymudskipper.github.io/typed/) implements a type system for R, it has 3 main features:
+- от Генриха. Как обернуть дату в SQL
+```
+# согласно: https://github.com/tidyverse/glue/issues/69
+# пробую обернуть даты в  DBI::SQL и хвала всем (и прежде всего jimhester!)
+sqlMdxOpenquery <- processSqlTemplate(
+  dbPool = dbPool,
+  filename = "mdxSaleinSlice.sql", # должен лежать в рабочей директории
+  beginDate = DBI::SQL(format(beginDate,format='%d.%m.%Y')),
+```
+## Appache Arrow
+- [enpiar. A Blog](https://enpiar.com/)
+- [Speeding Up Data Access With Apache Arrow](enpiar.com/talks/nyr-2020/) by Wes McKinney @wesmckinn
+- [Measuring and Monitoring Arrow's Performance: Some Updated R Benchmarks](https://ursalabs.org/blog/2021-r-benchmarks-part-1/)
 
 # 21.03.2021
 ## Shiny
@@ -1236,8 +1267,6 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! [Reactive object bindings in a non-shiny context](https://stackoverflow.com/questions/25900626/reactive-object-bindings-in-a-non-shiny-context)
 - [imager: an R package for image processing](http://dahtah.github.io/imager/)
 
-## knitr
-- COOL! [xaringan first-letter](https://www.hvitfeldt.me/blog/xaringan-first-letter/)
 
 ## python
 - [How to Speed Up Pandas with Modin](https://medium.com/distributed-computing-with-ray/how-to-speed-up-pandas-with-modin-84aa6a87bcdb)
@@ -1285,6 +1314,10 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! [ezrosent/frawk](https://github.com/ezrosent/frawk) an efficient awk-like language
 - COOL! [Как включить перевод в Google Sheets и еще 6 лайфхаков в Google Docs](https://ain.ua/2019/04/06/lajfxaki-v-google-docs/)
 - [Google Docs. Перевод документов и выбор языка ввода](https://support.google.com/docs/answer/187189)
+- COOL! [sharla gelfand](https://sharla.online/)
+- [Counting cycles and instructions on the Apple M1 processor](https://lemire.me/blog/2021/03/24/counting-cycles-and-instructions-on-the-apple-m1-processor/)
+- [Thomas Lin Pedersen. Generative Art](https://www.hicetnunc.xyz/tz/tz2Pkj2xWJovKKCsABjnr3NbyMVJTMBkpTvb). 
+I use code as a creative medium, explore dynamics, and investigate how it might be captured in static pieces.
 
 # 11.03.2020
 ## R
@@ -1440,7 +1473,6 @@ FEniCS is a popular open-source (LGPLv3) computing platform for solving partial 
 - COOL! [Modern Text Features in R](https://www.tidyverse.org/blog/2021/02/modern-text-features/)
 - COOL! [reactablefmtr](https://github.com/kcuilla/reactablefmtr). An R package to simplify formatting and customization of tables made with {reactable}
 - datamods. [Shiny modules to import data into an application or addin](https://github.com/dreamRs/datamods) Shiny modules to import and manipulate data into an application or addin.
-- [Convert PowerPoint Slides to xaringan (remark.js)](https://github.com/datalorax/slidex). This package is a work-in-progress, but is aimed at making the process of converting Microsoft PowerPoint slides to beautiful HTML xaringan slides as seamless as possible, maintaining tables, figures, links, and bulleted lists
 
 
 # 12.02.2021
@@ -1527,7 +1559,6 @@ https://www.drom.ru/info/misc/81364.html
 - COOL! Learning. Анимация join-ов. [All You Need To Know About Merging (Joining) Datasets in R](https://thomasadventure.blog/posts/r-merging-datasets/)
 - COOL! [Data Binning and Plotting in R](https://www.jdatalab.com/data_science_and_data_mining/2017/01/30/data-binning-plot.html)
 - [pander: An R Pandoc Writer](http://rapporter.github.io/pander/). The main aim of the pander R package is to provide a minimal and easy tool for rendering R objects into Pandoc's markdown.
-- [Printing xaringan slides with chromote](https://www.garrickadenbuie.com/blog/print-xaringan-chromote/)
 - COOL! Graph. [Benchmark of popular graph/network packages v2](https://www.timlrx.com/blog/benchmark-of-popular-graph-network-packages-v2)
 
 ## data.table
@@ -1731,9 +1762,6 @@ Not all. Some are in <user folder>\.gitconfig file.
 - [tinytest 1.2.4 is on CRAN](https://www.markvanderloo.eu/yaRb/2020/12/17/tinytest-1-2-4-is-on-cran/)
 - [datacleanr](https://the-hull.github.io/datacleanr/) is a flexible and efficient tool for interactive data cleaning, and is inherently interoperable, as it seamlessly integrates into reproducible data analyses pipelines in R.
 - [Docker for Data Science: An Important Skill for 2021 {Video}](https://www.business-science.io/business/2020/12/03/docker-for-data-science-rep.html)
-- [A playground of enhancements and extensions for xaringan slides](https://github.com/gadenbuie/xaringanExtra)
-- COOL! [Printing xaringan slides with chromote](https://www.garrickadenbuie.com/blog/print-xaringan-chromote/). Use `pagedown::chrome_print()`. This is similar to the first option, but uses a headless version of Chrome to do the printing behind the scenes.
-	- [Chromote: Headless Chrome Remote Interface](https://github.com/rstudio/chromote)
 - [An R package to create data libraries and data dictionaries.](https://github.com/dbosak01/libr)
 - [trestletech/shinyStore](https://github.com/trestletech/shinystore). R package that adds HTML5 Local Storage support to Shiny
 
