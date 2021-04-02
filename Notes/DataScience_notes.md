@@ -1233,6 +1233,8 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 ## R
 - [Welcome!](https://sdimakis.github.io/dvfp/)
 This website was designed as a final project for a course in data visualization at the University of Oregon (EDLD652). This website and the visualizations were created in R, using the distill package for blog websites and the ggplot2 package for plotting.
+- COOL! [Futureverse](https://www.futureverse.org/)
+A Unifying Parallelization Framework in R for Everyone
 
 # 29.03.2021
 ## R
