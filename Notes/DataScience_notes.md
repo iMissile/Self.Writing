@@ -1229,6 +1229,11 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
 
+# 02.04.2021
+## R
+- [Welcome!](https://sdimakis.github.io/dvfp/)
+This website was designed as a final project for a course in data visualization at the University of Oregon (EDLD652). This website and the visualizations were created in R, using the distill package for blog websites and the ggplot2 package for plotting.
+
 # 29.03.2021
 ## R
 - COOL! Learning [Seeing Theory. A visual introduction to probability and statistics.](https://seeing-theory.brown.edu/#firstPage)
