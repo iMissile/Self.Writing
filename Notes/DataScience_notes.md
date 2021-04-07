@@ -1228,6 +1228,26 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 01.04.2021
+## R
+- [Creating a Timeline graphic using R and ggplot2](https://benalexkeen.com/creating-a-timeline-graphic-using-r-and-ggplot2/)
+- COOL! [ggdag](https://ggdag.malco.io/): An R Package for visualizing and analyzing causal directed acyclic graphs
+- COOL! [rdboyes/forester](https://github.com/rdboyes/forester). An R package for creating publication-ready forest plots.
+- Slides [Exploring Exploratory Data Analysis](https://alastairrushworth.github.io/exploring_eda/EDA.html#1) by Alastair Rushworth
+- [clock](https://clock.r-lib.org/index.html). clock is an R package for working with date-times.
+	- [Comprehensive Date-Time Handling for R](https://www.tidyverse.org/blog/2021/03/clock-0-1-0/)
+
+## DS
+- [C++ Best Practices](https://leanpub.com/cppbestpractices/c/retweetme) by Jason Turner. 45ish Simple Rules with Specific Action Items for Better C++
+
+
+# 31.03.2021
+## R
+- [Alison Hill blog](https://alison.rbind.io/). Data Scientist & Professional Educator @ RStudio
+- [Say Goodbye to "Good Taste"](https://www.data-imaginist.com/2021/say-goodbye-to-good-taste/). package announcement ggfx visualization
+- [FLEXTABLE GALLERY](https://ardata-fr.github.io/flextable-gallery/gallery/). Start using the Gallery to discover {flextable} solutions and learn from others. This site lists examples developed by R users in the community.
+- [Slides and hands-on codes for my talk "ggplot Wizardry: My Favorite Tricks and Secrets for Beautiful Plots in R"](https://github.com/z3tt/outlierconf2021) at the 1st OutlierConf, February 4–7 2021.
+- [R Data Science Digest: April 2021](https://thedatasciencekernel.com/2021/03/31/r-data-science-digest-april-2021/)
 
 # 02.04.2021
 ## R
@@ -1240,6 +1260,13 @@ A Unifying Parallelization Framework in R for Everyone
 ## R
 - COOL! Learning [Seeing Theory. A visual introduction to probability and statistics.](https://seeing-theory.brown.edu/#firstPage)
 - Анимация. [tweenr](https://github.com/thomasp85/tweenr) is a package for interpolating data, mainly for animations. It provides a range of functions that take data of different forms and calculate intermediary values
+- [Raise to power in R](https://stackoverflow.com/questions/30043949/raise-to-power-in-r)
+
+## Mac
+- Чиним R локаль в MacOS. `system("defaults write org.R-project.R force.LANG en_US.UTF-8")`
+	- [How to fix 'tar: Failed to set default locale' error?](https://stackoverflow.com/questions/3907719/how-to-fix-tar-failed-to-set-default-locale-error)
+https://superuser.com/questions/655273/r-locale-setting-problems-on-mac-os-x
+
 
 ## xaringan
 - [A playground of enhancements and extensions for xaringan slides](https://github.com/gadenbuie/xaringanExtra)
@@ -1277,6 +1304,9 @@ sqlMdxOpenquery <- processSqlTemplate(
 
 ## python
 - [How to Speed Up Pandas with Modin](https://medium.com/distributed-computing-with-ray/how-to-speed-up-pandas-with-modin-84aa6a87bcdb)
+- [MyST - Markedly Structured Text](https://myst-parser.readthedocs.io/en/latest/). A fully-functional markdown flavor and parser for Sphinx. MyST allows you to write Sphinx documentation entirely in markdown.
+- [MyST cheat sheet](https://jupyterbook.org/reference/cheatsheet.html)
+
 
 # 18.03.2021
 ## R

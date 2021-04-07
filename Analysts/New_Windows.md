@@ -326,6 +326,11 @@ Step 3: Cut and paste the Steam folder into the new path you created. For instan
 Step 4: Reopen Steam and log in, then point Steam to your new directory and verify game files if necessary. If you encounter issues, try uninstalling and reinstalling Steam. The Steam support page can also be helpful.
 ```
 - [Steam Console](https://steamcommunity.com/sharedfiles/filedetails/?id=873543244). Добавить к ярлыку `-console`
+- Как создать ярлыки по установленным Steam играм
+	- В библиотеке Steam выбрать игры и в меню на правом клике выбрать "Создать ярлыки"
+	- [Steam Shortcut Generator - Automatically generate shortcuts for all installed Steam games!](https://www.reddit.com/r/Steam/comments/g26g0g/steam_shortcut_generator_automatically_generate/). Python [source](https://github.com/JeeZeh/steam-shortcut-generator)
+	- [How do I add start menu items to a Steam game after the installation?](https://gaming.stackexchange.com/questions/52485/how-do-i-add-start-menu-items-to-a-steam-game-after-the-installation)
+	- [bernstein82/SteamShortcutCreator.ps1](https://gist.github.com/bernstein82/f0e14a3d38ed1c3ba36b)
 
 # Нужные утилиты
 - [1Password]()
@@ -522,7 +527,8 @@ HKEY_USERS\.Default\Keyboard Layout\Preload
 4. Replace the line 'ad.roster.items='
 5. Done.
 ```
-- Ставим EmEditor, отключаем в Касперском доступ в инет.
+- Ставим EmEditor, отключаем в Касперском доступ в инет. Не забываем поставить проверку русского языка [Spellcheck](https://www.emeditor.com/text-editor-features/more-features/spellcheck/). На момент установки словари жили [здесь](https://extensions.openoffice.org/en/project/slovari-dlya-russkogo-yazyka-dictionaries-russian). After download a dictionary, change the file extension from .oxt to .zip, extract the Zip file, and then copy *.dic and *.aff files into the Dictionaries sub folder of the EmEditor install folder (usually C:\Program Files\EmEditor\Dictionaries).
 - Ставим SmartGit, переносим настройки из `%appdata%\syntevo\SmartGit\<version>\`. Читаем [How to import old settings/repositories](https://stackoverflow.com/questions/45837545/how-to-import-old-settings-repositories)
-
+- Настраиваем Касперского для разрешения доступа Edge в инет. [Cannot open websites in Google Chrome and Edge Chromium when working with Kaspersky Security 10 for Windows Server](https://support.kaspersky.com/15392)
+- После установки Касперского в режиме администратора отключаем штатный брандмауэр Windows `netsh advfirewall set allprofiles state off`
 
