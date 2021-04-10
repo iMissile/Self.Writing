@@ -1228,6 +1228,18 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 08.04.2021
+## R
+- [Select the top N values by group](https://stackoverflow.com/questions/14800161/select-the-top-n-values-by-group)
+- [Vector extension in R](https://rstudio-pubs-static.s3.amazonaws.com/241947_ccf00c894f6d4869b86a319c5f1cf0cc.html) by Tim D. Smith
+- [textreuse](https://lincolnmullen.com/software/textreuse/). This R package provides a set of functions for measuring similarity among documents and detecting passages which have been reused.
+
+## PMO
+- [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance)
+- [Smith–Waterman algorithm](https://en.wikipedia.org/wiki/Smith%E2%80%93Waterman_algorithm). The Smith–Waterman algorithm performs local sequence alignment; that is, for determining similar regions between two strings of nucleic acid sequences or protein sequences.
+- [text.alignment: Text Alignment with Smith-Waterman](https://cran.r-project.org/web/packages/text.alignment/index.html)
+Find similarities between texts using the Smith-Waterman algorithm.
+
 # 01.04.2021
 ## R
 - [Creating a Timeline graphic using R and ggplot2](https://benalexkeen.com/creating-a-timeline-graphic-using-r-and-ggplot2/)
