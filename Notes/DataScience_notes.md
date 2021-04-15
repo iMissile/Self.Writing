@@ -1228,6 +1228,24 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 15.04.2021
+## Excel
+- [What does the @ symbol do in Excel? It keeps showing up as =, why is this happening?](https://www.quora.com/What-does-the-symbol-do-in-Excel-It-keeps-showing-up-as-why-is-this-happening)
+- [What does the [@[bar foo]] operator do in Excel, in particular the at sign?](https://superuser.com/questions/501691/what-does-the-bar-foo-operator-do-in-excel-in-particular-the-at-sign#:~:text=The%20%40%20is%20new%20notation%20in,table%20heading%20contains%20a%20space.)
+- [Excel 365 - Functions preceded by "@" in formulas](https://answers.microsoft.com/en-us/msoffice/forum/msoffice_excel-mso_win10-mso_365hp/excel-365-functions-preceded-by-in-formulas/4c0cc0f1-ed2b-4d37-83ff-a1aca3b3fac2)
+- [Using structured references with Excel tables](https://support.microsoft.com/en-us/office/using-structured-references-with-excel-tables-f5ed2452-2337-4f71-bed3-c8ae6d2b276e?ui=en-us&rs=en-us&ad=us)
+
+# 13.04.2021
+## R
+- COOL! [sql-in-rmarkdown](https://sciencificity-blog.netlify.app/posts/2021-03-27-sql-in-rmarkdown/). We’re going to mix {sql} and {r} code chunks in a .Rmd file to leverage our knowledge in both languages.
+- COOL! [Self-cleaning test fixtures](https://www.tidyverse.org/blog/2020/04/self-cleaning-test-fixtures/)
+- [Check ‘Developer Tools’ First To Avoid Heavy-ish Dependencies](https://rud.is/b/2021/04/12/check-developer-tools-first-to-avoid-heavy-ish-dependencies/)
+- [Modeling and Monitoring Epidemic Phenomena](https://surveillance.r-forge.r-project.org/pkgdown/index.html)
+- [Using Github Actions & drat to Deploy R Packages](https://chemospec.org/2021/04/11/p19/)
+- [Using RSelenium to scrape a paginated HTML table](https://guillaumepressiat.github.io/blog/2021/04/RSelenium-paginated-tables)
+- [LSTM Network in R](https://finnstats.com/index.php/2021/04/11/lstm-network-in-r/)
+
+
 # 08.04.2021
 ## R
 - [Select the top N values by group](https://stackoverflow.com/questions/14800161/select-the-top-n-values-by-group)
