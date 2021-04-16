@@ -260,6 +260,7 @@ broom::glance(survfit(cfit))
 	- [R predict.cox function type expected](https://stackoverflow.com/questions/31142251/r-predict-cox-function-type-expected)
 	- [How to compute the mean survival time](https://stackoverflow.com/questions/43173044/how-to-compute-the-mean-survival-time)
 	- [life expectancy survival package R](https://stackoverflow.com/questions/28633849/life-expectancy-survival-package-r)
+- [Lifelines. Introduction to survival analysis](https://lifelines.readthedocs.io/en/latest/Survival%20Analysis%20intro.html)
 - Статья Эдварда. [Анализ дожития: как предсказывать увольнения сотрудников и что на это влияет](https://edwvb.blogspot.ru/2017/07/blog-post_12.html)
 - COOL! [What is the difference between the “coef” and “(exp)coef” output of coxph in R?](https://stats.stackexchange.com/questions/4528/what-is-the-difference-between-the-coef-and-expcoef-output-of-coxph-in-r)
 - Как нарисовать survival plot для результатов coxph? Не совсем тривиально:
@@ -1227,6 +1228,15 @@ sqrt(2)^2 == 2
 - [binaryLogic: Binary Logic](https://cran.r-project.org/web/packages/binaryLogic/)
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
+
+# 16.04.2010
+## Survival analysis
+- [Calculating life time expectancy](https://stats.stackexchange.com/questions/186497/calculating-life-time-expectancy)
+- [An equivalent result is well known in survival analysis: the expected lifetime is](https://stats.stackexchange.com/questions/18438/does-a-univariate-random-variables-mean-always-equal-the-integral-of-its-quanti/18449#18449)
+- [Анализ дожития: как предсказывать увольнения сотрудников и что на это влияет](https://edwvb.blogspot.com/2017/07/blog-post_12.html)
+
+## DS
+- [Unusual applications of regular expressions?](https://cs.stackexchange.com/questions/125296/unusual-applications-of-regular-expressions)
 
 # 15.04.2021
 ## Excel
