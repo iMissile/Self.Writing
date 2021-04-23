@@ -1229,6 +1229,20 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 23.04.2021
+## DS
+- [An Alternative to the Correlation Coefficient That Works For Numeric and Categorical Variables](https://rviews.rstudio.com/2021/04/15/an-alternative-to-the-correlation-coefficient-that-works-for-numeric-and-categorical-variables/) by Rama Ramakrishnan, 2021-04-15
+
+## R
+- COOL! [Workflowsets in Time Series](https://karbartolome-blog.netlify.app/posts/workflowsets-timeseries/)
+- Визуализация цветовой палитры.
+```
+library(scales)
+pal <- rgb(ddf$r, ddf$g, ddf$b)
+pal <- ggthemes::tableau_color_pal("Tableau 20")(20)
+scales::show_col(pal)
+```
+
 # 16.04.2010
 ## Survival analysis
 - [Calculating life time expectancy](https://stats.stackexchange.com/questions/186497/calculating-life-time-expectancy)
