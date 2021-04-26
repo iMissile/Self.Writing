@@ -1244,13 +1244,45 @@ scales::show_col(pal)
 ```
 
 # 16.04.2010
+=======
+
+# 22.04.2021
+## R
+- COOL! [Tutorial notes for useR! 2019 on Visualising High-Dimensional Data](https://github.com/dicook/useR2019_highd_vis)
+
+# 20.04.2021
+## R
+- COOL! [Matrix In R - Adding Rows And Columns To A Matrix In R](https://www.c-sharpcorner.com/article/matrix-in-r-adding-rows47columns-and-accessing-elements-by-name-in-matrix-i/)
+- [UNDERSTANDING ROLLING CALCULATIONS IN R](https://itsalocke.com/blog/understanding-rolling-calculations-in-r/)
+- COOL! Learning. [SDS 375: Data Visualization in R](https://github.com/wilkelab/SDS375) This repository holds the source materials used to create the class site available at: https://wilkelab.org/SDS375
+	- Slides. [Redundant coding, text annotations](https://wilkelab.org/SDS375/slides/redundant-coding.html#1) by Claus O. Wilke
+- [On the Link Between Optimization and Polynomials, Part 4](http://fa.bianp.net/blog/2021/no-momentum/)
+
+
+# 16.04.2021
+
 ## Survival analysis
 - [Calculating life time expectancy](https://stats.stackexchange.com/questions/186497/calculating-life-time-expectancy)
 - [An equivalent result is well known in survival analysis: the expected lifetime is](https://stats.stackexchange.com/questions/18438/does-a-univariate-random-variables-mean-always-equal-the-integral-of-its-quanti/18449#18449)
 - [Анализ дожития: как предсказывать увольнения сотрудников и что на это влияет](https://edwvb.blogspot.com/2017/07/blog-post_12.html)
+- [КЛИНИЧЕСКИЕ ИССЛЕДОВАНИЯ. Показатели выживаемости. Часть 1.](https://biopharmblog.wordpress.com/2018/01/09/%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D0%B8-%D0%B2%D1%8B%D0%B6%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%D0%BE%D1%81%D1%82%D0%B8-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1/)
+- [Germán Rodríguez. Generalized Linear Models. Princeton University](https://data.princeton.edu/wws509/notes/). The lecture notes are offered in two formats: HTML and PDF. 
+- COOL! Ну наконец-то расписали расчет среднего времени жизни. [Expected value as integral of survival function](https://math.stackexchange.com/questions/642021/expected-value-as-integral-of-survival-function)
 
 ## DS
 - [Unusual applications of regular expressions?](https://cs.stackexchange.com/questions/125296/unusual-applications-of-regular-expressions)
+- [convert pdf to jpg](https://pdftojpg.me/). The best PDF to JPG converter online, allows to convert PDF to high quality JPEG in exact DPI( 6 to 2400 ) or dimensions. PDFtoJPG.me is absolutely free, no need to register or download any software.
+
+## R
+- [R package for flexible correlation matrices based on ggplot2](https://github.com/r-link/corrmorant)
+- [A Framework for Dimensionality Reduction in R](https://github.com/gdkrmr/dimRed)
+- [preferably is an accessible template for pkgdown documentation websites](https://preferably.amirmasoudabdol.name/index.html)
+- COOL! Dplyr rowwise. 
+	- [Using filter() with across() to keep all rows of a data frame that include a missing value for any variable](https://community.rstudio.com/t/using-filter-with-across-to-keep-all-rows-of-a-data-frame-that-include-a-missing-value-for-any-variable/68442)
+	- [Column-wise operations](https://dplyr.tidyverse.org/articles/colwise.html)
+	- [Apply a function (or functions) across multiple columns](https://dplyr.tidyverse.org/reference/across.html)
+- [modelsummary](https://vincentarelbundock.github.io/modelsummary/) creates tables and plots to summarize statistical models and data in R.
+- [Using Kubernetes and the Future Package to Easily Parallelize R in the Cloud](https://www.jottr.org/2021/04/08/future-and-kubernetes/)
 
 # 15.04.2021
 ## Excel

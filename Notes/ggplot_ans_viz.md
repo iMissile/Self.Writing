@@ -246,6 +246,10 @@ Make fake data, supporting addresses, person names, dates, times, colors, coordi
 Ridgeline plots provide a convenient way of visualizing changes in distributions over time or space. This package enables the creation of such plots in 'ggplot2'.
 - [ggformula: Formula Interface to the Grammar of Graphics](https://cran.r-project.org/web/packages/ggformula/). Provides a formula interface to 'ggplot2' graphics.
 - [The Problem – Binning for Length Frequency Histograms](http://derekogle.com/fishR/2016-03-10-Histograms-with-w)
+- [jitter geom_line()](https://stackoverflow.com/questions/10866047/jitter-geom-line). `geom_line(position = position_jitter(w = 0.02, h = 0))` or
+If you just want to prevent two lines from overlapping exactly, there is now a better way: `position_dodge()`, which "adjusts position by dodging overlaps to the side". This is nicer than adding jitter to any line, even when it's not needed.
+- [Jitter lines in ggplot - code works without "position =" argument](https://community.rstudio.com/t/jitter-lines-in-ggplot-code-works-without-position-argument/56049)
+- COOL! [How to Add Labels Directly in ggplot2? Hint: Use Secondary Axis Trick](https://datavizpyr.com/direct-labeling-with-secondary-axis-trick-ggplot2-r/)
 
 
 # other
