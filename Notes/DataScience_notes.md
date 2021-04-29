@@ -212,6 +212,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 
 ## Survival Analysis
 - [Survival Analysis with R](https://rviews.rstudio.com/2017/09/25/survival-analysis-with-r/)
+- [Survival Analysis in R](https://www.emilyzabor.com/tutorials/survival_analysis_in_r_tutorial.html). This tutorial provides an introduction to survival analysis, and to conducting a survival analysis in R.
 - [квантиль. международный эконометрический журнал на русском языке](http://quantile.ru/05/N5.htm)
 	- [Родригес Герман. Модели выживаемости](http://quantile.ru/05/05-GR.pdf)
 - COOL! [ggfortify package](https://cran.r-project.org/web/packages/ggfortify/index.html). Unified plotting tools for statistics commonly used, such as GLM, time series, PCA families, clustering and survival analysis. The package offers a single plotting interface for these analysis results and plots in a unified style using 'ggplot2'.
@@ -847,6 +848,8 @@ Fully saturated RGB rainbow colors are still widely used in scientific visualiza
 - [tomasokal/rtist](https://github.com/tomasokal/rtist). Color palettes from famous artists and paintings.
 - COOL! [tmaptools::palette_explorer() is kind of fun #rstats](https://twitter.com/sharon000/status/1310757369798955008?s=20). `tmaptools::palette_explorer()`
 - [palette2vec](https://emilhvitfeldt.github.io/palette2vec/). The goal of palette2vec is to help you explore color palettes more easily in R
+- [Make the most of R colors and palettes](https://www.infoworld.com/article/3615230/make-the-most-of-r-colors-and-palettes.html) By Sharon Machlis.
+How to find, display, and use 600 built-in R colors and 2000 palettes and create your own palettes and palette functions. Plus a bonus R Shiny app to display paletteer package palettes.
 
 
 
@@ -1229,9 +1232,29 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+
+# 28.04.2021
+## DS
+- ISO 8601. История
+Первая редакция стандарта ISO 8601 была опубликована в 1988 году и объединила и заменила собой целый ряд более старых стандартов ISO, касавшихся представления даты и времени: ISO 2014, 2015, 2711, 3307 и 4031. В 2000 году стандарт был заменён второй редакцией и, позднее, в 2004 году, - третьей редакцией ISO 8601:2004 англ., опубликованной 3 декабря 2004 года. В 2019 вышла новая редакция формата ISO 8601-1:2019 и ISO 8601-2:2019, заменившая ISO 8601:2004.
+
+## knitr
+- [How to merge code and output in chunks results ? #131 {Closed}](https://github.com/yihui/rmarkdown-cookbook/issues/131)
+`knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, results='hold')`
+
+# 27.04.2021
+## R
+- Устанавливаем rgdal на ubuntu. Столкнулся при попытке поставить `ggpattern`.
+	 - [Error: gdal-config not found while installing R dependent packages whereas gdal is installed](https://stackoverflow.com/questions/12141422/error-gdal-config-not-found-while-installing-r-dependent-packages-whereas-gdal)
+	 `sudo apt-get install gdal-bin proj-bin libgdal-dev libproj-dev`
+	 - [How to install the rgdal R package](https://gist.github.com/dncgst/111b74066eaea87c92cdc5211949cd1e)
+
+
+
 # 23.04.2021
 ## DS
 - [An Alternative to the Correlation Coefficient That Works For Numeric and Categorical Variables](https://rviews.rstudio.com/2021/04/15/an-alternative-to-the-correlation-coefficient-that-works-for-numeric-and-categorical-variables/) by Rama Ramakrishnan, 2021-04-15
+- COOL! [PCAtools: everything Principal Components Analysis](https://github.com/kevinblighe/PCAtools)
 
 ## R
 - COOL! [Workflowsets in Time Series](https://karbartolome-blog.netlify.app/posts/workflowsets-timeseries/)
@@ -1242,9 +1265,38 @@ pal <- rgb(ddf$r, ddf$g, ddf$b)
 pal <- ggthemes::tableau_color_pal("Tableau 20")(20)
 scales::show_col(pal)
 ```
+- [Use DataExplorer for EDA (Exploratory Data Analysis)](https://www.business-science.io/code-tools/2021/03/02/use-dataexplorer-for-EDA.html)
+- [dataReporter](https://github.com/ekstroem/dataReporter), ранее [dataMaid](https://github.com/ekstroem/dataMaid)
+`dataReporter` is an R package for documenting and creating reports on data cleanliness.
+- [`renv::restore()` always fails in windows](https://stackoverflow.com/questions/67228070/renvrestore-always-fails-in-windows)
+```
+Update renv to last version (currently, 0.13.2)
+Run Sys.setenv(RENV_DOWNLOAD_METHOD = "wininet")
+Run renv::restore()
+```
 
-# 16.04.2010
-=======
+## data.table
+- [data.table := assignments when variable has same name as a column](https://stackoverflow.com/questions/32738499/data-table-assignments-when-variable-has-same-name-as-a-column)
+- [datatable (:=) column name is the same as global environment value {duplicate}](https://stackoverflow.com/questions/48256904/datatable-column-name-is-the-same-as-global-environment-value)
+- [data.table - subsetting based on variable whose name is a column, too](https://stackoverflow.com/questions/40641629/data-table-subsetting-based-on-variable-whose-name-is-a-column-too/40641717)
+- Тут с бенчмарками. [Keyed lookup on data.table without 'with'](https://stackoverflow.com/questions/15102068/keyed-lookup-on-data-table-without-with)
+- [Subsetting data.table using variables with same name as column](https://stackoverflow.com/questions/21658893/subsetting-data-table-using-variables-with-same-name-as-column)
+
+- [R data.table symbols and operators you should know](https://www.infoworld.com/article/3530348/r-datatable-symbols-and-operators-you-should-know.html)
+Then this code will not work: 
+
+dt1 <- mydt[, mycols]
+Instead, you need to put .. (that’s two dots) in front of the vector object name:
+
+dt1 <- mydt[, ..mycols]
+Why two dots? That seemed kind of random to me until I read the explanation. Think of it like the two dots in a Unix command-line terminal that move you up one directory. Here, you’re moving up one namespace, from the environment inside data.table brackets up to the global environment. (That really does help me remember it!)
+- [data.table double dot.](https://cran.r-project.org/web/packages/data.table/data.table.pdf)
+When j is a character vector of column names, a numeric vector of column positions to select or of the form startcol:endcol, and the value returned is always
+a data.table. with=FALSE is not necessary anymore to select columns dynamically. Note that x[,cols] is equivalent to x[,..cols] and to x[,cols,with=FALSE]
+and to x[,.SD,.SDcols=cols].
+- [Why does “..” work to pass column names in a character vector variable?](https://stackoverflow.com/questions/45380628/why-does-work-to-pass-column-names-in-a-character-vector-variable)
+- [Select subset of columns in data.table R {duplicate}](https://stackoverflow.com/questions/28094645/select-subset-of-columns-in-data-table-r/28094726#28094726)
+- [How to expand an ellipsis (…) argument without evaluating it in R](https://stackoverflow.com/questions/13353847/how-to-expand-an-ellipsis-argument-without-evaluating-it-in-r)
 
 # 22.04.2021
 ## R
@@ -1260,7 +1312,6 @@ scales::show_col(pal)
 
 
 # 16.04.2021
-
 ## Survival analysis
 - [Calculating life time expectancy](https://stats.stackexchange.com/questions/186497/calculating-life-time-expectancy)
 - [An equivalent result is well known in survival analysis: the expected lifetime is](https://stats.stackexchange.com/questions/18438/does-a-univariate-random-variables-mean-always-equal-the-integral-of-its-quanti/18449#18449)
@@ -1739,23 +1790,6 @@ rm(`*tmp*`)
 ```
 - COOL! [Operator “[<-” in RStudio and R](https://stackoverflow.com/questions/15559387/operator-in-rstudio-and-r). Тут подробно разбирается модель поведения именно в RStudio
 
-
-## data.table
-- [R data.table symbols and operators you should know](https://www.infoworld.com/article/3530348/r-datatable-symbols-and-operators-you-should-know.html)
-Then this code will not work: 
-
-dt1 <- mydt[, mycols]
-Instead, you need to put .. (that’s two dots) in front of the vector object name:
-
-dt1 <- mydt[, ..mycols]
-Why two dots? That seemed kind of random to me until I read the explanation. Think of it like the two dots in a Unix command-line terminal that move you up one directory. Here, you’re moving up one namespace, from the environment inside data.table brackets up to the global environment. (That really does help me remember it!)
-- [data.table double dot.](https://cran.r-project.org/web/packages/data.table/data.table.pdf)
-When j is a character vector of column names, a numeric vector of column positions to select or of the form startcol:endcol, and the value returned is always
-a data.table. with=FALSE is not necessary anymore to select columns dynamically. Note that x[,cols] is equivalent to x[,..cols] and to x[,cols,with=FALSE]
-and to x[,.SD,.SDcols=cols].
-- [Why does “..” work to pass column names in a character vector variable?](https://stackoverflow.com/questions/45380628/why-does-work-to-pass-column-names-in-a-character-vector-variable)
-- [Select subset of columns in data.table R {duplicate}](https://stackoverflow.com/questions/28094645/select-subset-of-columns-in-data-table-r/28094726#28094726)
-- [How to expand an ellipsis (…) argument without evaluating it in R](https://stackoverflow.com/questions/13353847/how-to-expand-an-ellipsis-argument-without-evaluating-it-in-r)
 
 # 22.01.2021
 ## R

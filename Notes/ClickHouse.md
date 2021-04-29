@@ -170,3 +170,7 @@ GROUP BY table
 # Nullable
 - (Nullable(typename))[https://clickhouse.tech/docs/en/sql-reference/data-types/nullable/]. Note
 Using Nullable almost always negatively affects performance, keep this in mind when designing your databases.
+
+# Варианты многокластерного развертывания
+- [Масштабирование ClickHouse, управление миграциями и отправка запросов из PHP в кластер](https://habr.com/ru/company/smi2/blog/317682/)
+- [Что не так с ClickHouse: 10 главных недостатков](https://www.bigdataschool.ru/blog/clickhouse-limitations.html)
