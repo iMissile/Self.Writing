@@ -1242,6 +1242,13 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [How to merge code and output in chunks results ? #131 {Closed}](https://github.com/yihui/rmarkdown-cookbook/issues/131)
 `knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, results='hold')`
 
+## R
+- [How to Work with List Columns](https://www.rstudio.com/resources/webinars/how-to-work-with-list-columns/)
+- [job: free your RStudio console](https://github.com/lindeloev/job)
+Use job::job() to run chunks of R code in an RStudio job instead of the console. 
+- COOL! Slides. [DAGs](https://raw.githack.com/edrubin/EC607S21/master/notes-lecture/07-dags/07-dags.html#1) EC 607, Set 07 by Edward Rubin, Spring 2021
+	- [EC 607, Spring 2021](https://github.com/edrubin/EC607S21). Welcome to Economics 607: Econometrics III (Spring 2021) at the University of Oregon (taught by Dr. Ed Rubin).
+
 # 27.04.2021
 ## R
 - Устанавливаем rgdal на ubuntu. Столкнулся при попытке поставить `ggpattern`.
