@@ -123,6 +123,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [R Cookbook, 2nd Edition](https://rc2e.com/), by James (JD) Long, Paul Teetor
 - [JavaScript for Data Science](https://js4ds.org/) by Maya Gans, Toby Hodges, and Greg Wilson. Version 4.0 / January 2020
 - [Data Science Live Book](https://livebook.datascienceheroes.com/) by Pablo Casas
+- [RMarkdown for Scientists](https://rmd4sci.njtierney.com/) by Nicholas Tierney, 2020-09-09
 - [Mastering Software Development in R](https://bookdown.org/rdpeng/RProgDA/) by Roger D. Peng, Sean Kross, and Brooke Anderson
 - [R Manuals as bookdown](http://colinfay.me/r-manuals/). You’ll find here a list of the R manuals converted to bookdown.
 - [Processing and Analyzing Financial Data with R](https://sites.google.com/view/pafdR/home)
@@ -201,7 +202,11 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - gt Cookbook:
 	- [Basic Usage](https://themockup.blog/static/gt-cookbook.html)
 	- [Advanced Usage](https://themockup.blog/static/gt-cookbook-advanced.html)
+- [Explanatory Model Analysis](https://ema.drwhy.ai/). Explore, Explain, and Examine Predictive Models. With examples in R and Python.
 
+# Articles
+- [Using AWK and R to parse 25tb](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/)
+- COOL! tl;dr: a gajillion dollar online game takes 4X as long to start because it parses a 10MB JSON file in a bad way. [How I cut GTA Online loading times by 70%](https://nee.lv/2021/02/28/How-I-cut-GTA-Online-loading-times-by-70/)
 
 
 # VPN
@@ -1232,11 +1237,57 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 09.05.2021
+## R
+- COOL! Learning [Data Visualization by Andrew Heiss](datavizs21.classes.andrewheiss.com). Communicate science and statistics with beautiful graphics made with R and ggplot2
+Finished the summer 2021 version of my dataviz class! 70 videos (≈23 hours!) + a literal ton of annotated ggplot code and examples + in-browser learnr modules that let you make plots without opening R, all open access and CC-licensed! https://datavizs21.classes.andrewheiss.com
+- COOL! [How to write trycatch in R](https://stackoverflow.com/questions/12193779/how-to-write-trycatch-in-r)
+
+## Web Scrapping
+- [Chromote: Headless Chrome Remote Interface](https://github.com/rstudio/chromote)
+
+## R packages
+- [Magrittr %>% inside a package](https://community.rstudio.com/t/magrittr-inside-a-package/2033/11)
+Have you tried adding
+`importFrom(magrittr,"%>%")`
+to NAMESPACE, or does that not beget the solution you're looking for?
+- [R: use magrittr pipe operator in self written package](https://stackoverflow.com/questions/27947344/r-use-magrittr-pipe-operator-in-self-written-package). There's now an easier way to support the pipe in your packages. The wonderful package usethis has the function `use_pipe()`. You run that function once and it handles everything. This is how the `use_pipe()` function is described in the usethis documentation:
+- [Use of inline HTML is not currently supported #1115 {Closed}](https://github.com/r-lib/roxygen2/issues/1115)
+- [R package workshop](https://combine-australia.github.io/r-pkg-dev/)
+
+# 03.05.2021
+## R
+- COOL! [Writing unit tests in R](https://r-critique.com/writing-unit-tests-in-r)
+- COOL! [Automated testing with 'testthat' in practice](https://codingclubuc3m.rbind.io/post/2019-11-26/)
+- [Introducing Observable Plot](https://observablehq.com/@observablehq/introducing-observable-plot)
+	- [Observable Plot](https://observablehq.com/@observablehq/plot) is a free, open-source JavaScript library to help you quickly visualize tabular data. It has a concise and (hopefully) memorable API to foster fluency — and plenty of examples to learn from and copy-paste.
+	- [Пакет cbr](https://github.com/bdemeshev/cbr) предназначен для скачивания временных рядов с сайта Центробанка России cbr.ru.
+- [sriharitn/foretell][(https://github.com/sriharitn/foretell). Project Customer Retention based on Fader and Hardie et. al. Probability Mixture Models. [Статья](https://faculty.wharton.upenn.edu/wp-content/uploads/2012/04/Fader_hardie_jim_07.pdf)
+- [Rolling Origin](https://cran.microsoft.com/web/packages/greybox/vignettes/ro.html)
+
+## R reverse dependencies
+- [reverse dependencies check](https://arstechnica.com/civis/viewtopic.php?f=20&t=1464153). Backstory: Through a series of unfortunate events, I've become the maintainer for the foreach R package. This is around 10-15 years old, and has become a fundamental part of the R ecosystem: about 680 other packages directly depend on it.
+- [Database of CRAN R packages](https://github.com/r-hub/crandb)
+- COOL! [CRANberries](https://dirk.eddelbuettel.com/cranberries/)
+- [prrd: Parallel Running [of] Reverse Depends](https://dirk.eddelbuettel.com/code/prrd.html)
+- [pkgsearch](https://r-hub.github.io/pkgsearch/) Search and Query CRAN R Packages
+- [revdep {devtools}](http://finzi.psych.upenn.edu/R/library/devtools/html/revdep.html). Tools to check and notify maintainers of all CRAN and Bioconductor packages that depend on the specified package. Интересно, какой процент пакетов R используют R6? `devtools::revdep("R6")`
+- [yihui/crandalf](https://github.com/yihui/crandalf). Check all reverse dependencies of your R package with Github Actions
 
 # 28.04.2021
 ## DS
+- storytelling
+	- [Why James Richardson from Gartner is Right About the End of Self-Serve Analytics](https://narrativescience.com/resource/blog/end-of-self-serve-analytics/)
+	- [Gartner predicts data storytelling will dominate BI by 2025](https://searchbusinessanalytics.techtarget.com/feature/Gartner-predicts-data-storytelling-will-dominate-BI-by-2025)
+	- [Data and analytics trends that will loom large in 2021 and beyond](https://hyperight.com/data-and-analytics-trends-that-will-loom-large-in-2021-and-beyond/)
 - ISO 8601. История
 Первая редакция стандарта ISO 8601 была опубликована в 1988 году и объединила и заменила собой целый ряд более старых стандартов ISO, касавшихся представления даты и времени: ISO 2014, 2015, 2711, 3307 и 4031. В 2000 году стандарт был заменён второй редакцией и, позднее, в 2004 году, - третьей редакцией ISO 8601:2004 англ., опубликованной 3 декабря 2004 года. В 2019 вышла новая редакция формата ISO 8601-1:2019 и ISO 8601-2:2019, заменившая ISO 8601:2004.
+- [Have questions about your data? Metabase has answers.](https://www.metabase.com/)
+Meet the easy, open source way for everyone in your company to ask questions and learn from data.
+- [Falcon](https://plotly.com/chart-studio-help/database-connectors/personal-login/) is a free, open-source SQL editor with inline data visualization.
+- Alation](https://www.alation.com/). The Industry’s Leading Data Catalog
+An AI-driven platform for data search & discovery, data governance, data stewardship, analytics, and digital transformation.
+- [Polished Hosting - A New Way to Deploy Shiny Apps](https://www.tychobra.com/posts/2021-05-04-polished-hosting/)
 
 ## knitr
 - [How to merge code and output in chunks results ? #131 {Closed}](https://github.com/yihui/rmarkdown-cookbook/issues/131)
@@ -2840,6 +2891,7 @@ You can remove those from here and try and re-clone - it will ask for username/p
 - [Most Efficient Way to Calculate the Product of All Items in a List?](https://mathematica.stackexchange.com/questions/1352/most-efficient-way-to-calculate-the-product-of-all-items-in-a-list). `Apply[Times, list]`
 
 ## python
+- COOL! [This repository enumerates all the reasons why R is better than python for DS](https://github.com/IyarLin/R-advantages-over-python)
 - [Comparison with R / R libraries](https://pandas.pydata.org/docs/getting_started/comparison/comparison_with_r.html)
 - [Какой язык выбрать для работы с данными — R или Python? Оба! Мигрируем с pandas на tidyverse и data.table и обратно](https://habr.com/ru/post/475210/)
 - [How to store a dataframe using Pandas](https://stackoverflow.com/questions/17098654/how-to-store-a-dataframe-using-pandas)

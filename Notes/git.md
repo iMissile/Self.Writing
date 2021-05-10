@@ -86,7 +86,7 @@ A simpler, faster alternative to git-filter-branch for deleting big files and re
 - [Доступ к диспетчеру учетных данных](https://support.microsoft.com/ru-ru/help/4026814/windows-accessing-credential-manager)
 - [7.14 Git Tools - Credential Storage](https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage)
 
-## Git
+# Git
 - [Clone at Git Repo to a Different Directory](https://til.hashrocket.com/posts/z0f393xq0s-clone-at-git-repo-to-a-different-directory)
 `$ git clone https://github.com/cool_user/codez.git ~/codez-v2`
 - Как сделать клон бранча в git:
@@ -120,3 +120,23 @@ f61b48cb8b1877721e2596a6aa65648a68bb605e new post
 Команда `git rev-list --reverse master` дает список коммитов в прямом хронологическом порядке, от начала до текущего момента
 Дальше помещаем коммит за коммитом: `git push x5scm 10955ac50fb90220c03d077d2cb4e79d01a3bea0:refs/heads/master`. Важная добавка -- в конце после :
 
+# GitHub authentication
+- [Git push results in “Authentication Failed”](https://stackoverflow.com/questions/17659206/git-push-results-in-authentication-failed). Снимаем галочки при инсталляции, чистим Windows Credential Manager
+
+## Настрока `.gitignore`
+- [gitignore - Specifies intentionally untracked files to ignore](https://git-scm.com/docs/gitignore)
+- [gitignore.io](https://www.gitignore.io). Create useful .gitignore files for your project
+
+*.log
+*.bundle
+*.html
+*.Rds
+*.RDS
+*.rds
+*.xlsx
+
+data/*
+!data/.gitkeep
+
+output/*
+!output/.gitkeep

@@ -4981,14 +4981,17 @@ To check whether each string consists of valid UTF-8 byte sequences, call: `all(
 	- [Web-Scraping JavaScript rendered Sites](https://flovv.github.io/Scrape-JS-Sites/)
 	- [Scrape webpage with phantomjs and rvest](http://stackoverflow.com/questions/35446515/scrape-webpage-with-phantomjs-and-rvest)
 	- [How to scrape all the hotel reviews from HolidayIQ using Rvest and phantomJS](http://stackoverflow.com/questions/36152621/how-to-scrape-all-the-hotel-reviews-from-holidayiq-using-rvest-and-phantomjs)
+- [Headless Browsing](https://cran.r-project.org/web/packages/RSelenium/vignettes/headless.html)
+
 
 ## RSelenium
-1. Качаем Selenium. Берем `selenium-server-standalone-x.x.x` с сайта [Selenium Downloads](http://www.seleniumhq.org/download/)
+1. Качаем Selenium. Берем `selenium-server-standalone-x.x.x` с сайта [Selenium Downloads](https://www.selenium.dev/downloads/)
 1. Качаем RSelenium: `devtools::install_github("ropensci/RSelenium")`
-1. Качаем WebDriver, кладем в PATH (лучше рядом). 
+1. Качаем WebDriver под установленные версии браузеров, кладем в PATH (проще и лучше рядом с сервером, поскольку драйвера зависят от версий браузеров).
 	- [ChromeDriver - WebDriver for Chrome](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 	- [Mozilla GeckoDriver](https://github.com/mozilla/geckodriver/releases)
-1. Запускаем `remDr <- remoteDriver(browserName = "chrome")`, описание здесь:[RSelenium: Driving OS/Browsers local and remote](https://cran.r-project.org/web/packages/RSelenium/vignettes/RSelenium-saucelabs.html)
+1. Запускаем Selenuim Server из cmd командой `java -jar selenium-server-standalone-3.141.59.jar `
+1. Запускаем `remDr <- remoteDriver(browserName = "chrome")`, описание здесь:[RSelenium: Driving OS/Browsers local and remote](https://cran.r-project.org/web/packages/RSelenium/vignettes/RSelenium-saucelabs.html). Если оказалась неправильная версия драйвера, убиваем процессы драйверов.
 
 ## Google
 - [Как обезопасить аккаунт, который был взломан в прошлом?](https://productforums.google.com/forum/?utm_medium=email&utm_source=footer#!topic/gmail-ru/XK2-BLWfWKs)
