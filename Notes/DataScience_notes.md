@@ -1237,11 +1237,42 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 13.05.2021
+## R
+- COOL! [R's lmer cheat sheet](https://stats.stackexchange.com/questions/13166/rs-lmer-cheat-sheet). Объяснение синтаксиса моделей типа `V1 ~ (1|V2) + V3 + (0+V3|V2)`
+
+## Math
+- COOL! [Logistic regression 1: from odds to probability](https://yury-zablotski.netlify.app/post/from-odds-to-probability/)
+
+# 11.05.2021
+## R
+- Надо подумать, не уверен. [Обратная матрица в R](https://coderoad.ru/11995832/%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%B0%D1%8F-%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0-%D0%B2-R)
+- COOL! [Create and combine tables with a ggplot2/patchwork syntax](https://github.com/ianmoran11/mmtable2)
+- COOL! [gdemin/excel.link](https://github.com/gdemin/excel.link) Convenient Data Exchange between R and Microsoft Excel
+- COOL! [Custom and dynamic styles using bslib](https://shiny.rstudio.com/app-stories/weather-lookup-bslib.html)
+- [help changing a mutate_at() code to across() code](https://community.rstudio.com/t/help-changing-a-mutate-at-code-to-across-code/71119)
+What if you change this:
+`pubdata %>% mutate(across(c(pubdata, "Race","Sex")), factor)`
+to this:
+`pubdata %>% mutate(across(c("Race","Sex"), factor))`
+- [textplot](https://github.com/bnosac/textplot)
+This repository contains an R package which provides functionalities to easily visualise complex relations in texts. This is done by providing functionalities for displaying text co-occurrence networks, text correlation networks, dependency relationships as well as text clustering.
+- [waiterv](https://waiter.john-coene.com/#/). Loading Screens for Shiny
+- COOL! [Dockerizing Shiny Applications](https://hosting.analythium.io/dockerizing-shiny-applications/)
+
+## Go
+- [A curated list of awesome Go frameworks, libraries and software](https://github.com/avelino/awesome-go). awesome-go.com
+
 # 09.05.2021
 ## R
 - COOL! Learning [Data Visualization by Andrew Heiss](datavizs21.classes.andrewheiss.com). Communicate science and statistics with beautiful graphics made with R and ggplot2
 Finished the summer 2021 version of my dataviz class! 70 videos (≈23 hours!) + a literal ton of annotated ggplot code and examples + in-browser learnr modules that let you make plots without opening R, all open access and CC-licensed! https://datavizs21.classes.andrewheiss.com
 - COOL! [How to write trycatch in R](https://stackoverflow.com/questions/12193779/how-to-write-trycatch-in-r)
+- COOL! [gitdown](https://rtask.thinkr.fr/download-gitlab-or-github-issues-and-make-a-summary-report-of-your-commits/) "Document each modification of your software by turning your #git commits into a gitbook"
+- [Wrap plots into a patchwork](https://patchwork.data-imaginist.com/reference/wrap_plots.html)
+- [\uxxxx sequences inside backticks](https://stackoverflow.com/questions/61521916/uxxxx-sequences-inside-backticks)
+- COOL! [Spreadsheet Munging Strategies](https://nacnudus.github.io/spreadsheet-munging-strategies/) by Duncan Garmonsway
+This is a work-in-progress book about getting data out of spreadsheets, no matter how peculiar.
 
 ## Web Scrapping
 - [Chromote: Headless Chrome Remote Interface](https://github.com/rstudio/chromote)
@@ -1288,6 +1319,7 @@ Meet the easy, open source way for everyone in your company to ask questions and
 - Alation](https://www.alation.com/). The Industry’s Leading Data Catalog
 An AI-driven platform for data search & discovery, data governance, data stewardship, analytics, and digital transformation.
 - [Polished Hosting - A New Way to Deploy Shiny Apps](https://www.tychobra.com/posts/2021-05-04-polished-hosting/)
+- [GML In-Depth: three forms of self-supervised learning](https://graphml.substack.com/p/self-supervised-learning)
 
 ## knitr
 - [How to merge code and output in chunks results ? #131 {Closed}](https://github.com/yihui/rmarkdown-cookbook/issues/131)
@@ -5509,6 +5541,7 @@ slide provides a family of general purpose “sliding window” functions. The A
 - COOL! Learning. Новый tidyr. [Pivoting data from columns to rows (and back!) in the tidyverse](http://www.storybench.org/pivoting-data-from-columns-to-rows-and-back-in-the-tidyverse/)
 - [patrickshox/Mojave-Dark-RStudio-Theme](https://github.com/patrickshox/Mojave-Dark-RStudio-Theme). A Dark RStudio Theme inspired by Apple's dark aestheticcc.
 - CELONIS: [PADAS: Process Aware Data Suite](https://www.win.tue.nl/~egonzale/projects/padas/)
+- Celonis. [Best practice of integration with on-premise custom systems](https://community.celonis.com/t/best-practice-of-integration-with-on-premise-custom-systems/2003/3). Весьма интересный диалог.
 - [Automatic differentiation in pqR](https://radfordneal.wordpress.com/2019/07/06/automatic-differentiation-in-pqr/#more-2588)
 
 
