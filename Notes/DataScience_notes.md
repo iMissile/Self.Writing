@@ -1240,6 +1240,10 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 # 13.05.2021
 ## R
 - COOL! [R's lmer cheat sheet](https://stats.stackexchange.com/questions/13166/rs-lmer-cheat-sheet). Объяснение синтаксиса моделей типа `V1 ~ (1|V2) + V3 + (0+V3|V2)`
+- Вспоминаем base R. [HOW CAN I RESHAPE MY DATA IN R? | R FAQ](https://stats.idre.ucla.edu/r/faq/how-can-i-reshape-my-data-in-r/)
+- COOL! [R Markdown. What defines the setup chunk?](https://community.rstudio.com/t/what-defines-the-setup-chunk/27595). "There is one chunk name that imbues special behaviour: setup . When you’re in a notebook mode, the chunk named setup will be run automatically once, before any other code is run."
+	- [Automatic execution of setup chunk in Rmd](https://community.rstudio.com/t/automatic-execution-of-setup-chunk-in-rmd/71483). Что делать, если блок setup не запускается сам. 
+So notebook mode means that you have your IDE/Rmd preferences set up to show output inline. Там еще пунктик есть про setup chunk!!
 
 ## Math
 - COOL! [Logistic regression 1: from odds to probability](https://yury-zablotski.netlify.app/post/from-odds-to-probability/)
