@@ -561,7 +561,9 @@ DT[DT[, .I[.SD==2], .SDcols = 1]]
 You were almost there: `dt[,.(Count = .N, Avg = mean(get(metric))), mget(nodes)]` 
 - COOL! [How to change the last value in each group by reference, in data.table](https://stackoverflow.com/questions/21819253/how-to-change-the-last-value-in-each-group-by-reference-in-data-table)
 - [row number with by in data.table](https://stackoverflow.com/questions/49032276/row-number-with-by-in-data-table)
-
+- COOL! [.SDcols=function shorthand #3950 {Closed}](https://github.com/Rdatatable/data.table/issues/3950). `data.table v1.13.0 (24 Jul 2020)`. .SDcols=is.numeric now works; i.e., SDcols= accepts a function which is used to select the columns of .SD
+- [.SDcols accepts a function to filter on values #3991 {Merged}](https://github.com/Rdatatable/data.table/pull/3991)
+- [Making .SD your best friend](https://rpubs.com/josemz/SDbf)
 
 
 # DS
@@ -697,6 +699,12 @@ Theming in Rmarkdown can be hard. You first made some custom CSS or use a provid
 - [Distill for R Markdown](https://rstudio.github.io/distill/). Scientific and technical writing, native to the web
 - [Different ways to set figure size in RMarkdown](https://sebastiansauer.github.io/figure_sizing_knitr/)
 - COOL! [pagedown: Create Paged HTML Documents for Printing from R Markdown](https://pagedown.rbind.io/). A Less Traveled Road to PDF and Printing
+- COOL! [Access to chunk label #73 {Closed}](https://github.com/yihui/knitr/issues/73). Now you can use `knitr::opts_current$get("label")` to get the label for the current chunk. Any other options are also accessible via this object `opts_current`.
+- Комментируем часть текста в rmarkdown: [4.17 Comment out text](https://bookdown.org/yihui/rmarkdown-cookbook/comments.html). [Comment out some chunks/part of Rmd file](https://stackoverflow.com/questions/46148097/comment-out-some-chunks-part-of-rmd-file)
+- Compiling Rscript with knit
+	- [3.3 Render an R script to a report](https://bookdown.org/yihui/rmarkdown-cookbook/spin.html)
+	- [3.4 Convert R Markdown to R script](https://bookdown.org/yihui/rmarkdown-cookbook/purl.html)
+
 ## knitr
 - Jumping Rivers blog
 	- [Part 1: Specifying the correct figure dimension in {knitr}](https://www.jumpingrivers.com/blog/knitr-rmarkdown-image-size/)
@@ -1237,6 +1245,39 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 20.05.2021
+## R
+- COOL! [Code Folding and Sections](https://support.rstudio.com/hc/en-us/articles/200484568-Code-Folding-and-Sections)
+- Любопытно. [livecode](https://github.com/rundel/livecode) is an R package that enables you to broadcast a local R (or any other text) document over the web and provide live updates as it is edited.
+
+## Math
+- [How to analyze visual analog (slider) scale data?](https://mvuorre.github.io/posts/2019-02-18-analyze-analog-scale-ratings-with-zero-one-inflated-beta-models/). PSYCHOLOGY STATISTICS TUTORIAL R BRMS
+- Поиск максимальных совпадающих цепочек в строках. [LCSn: Find longest common substring from 'n' strings.](https://rdrr.io/cran/PTXQC/man/LCSn.html). В `stringdist` есть метод `lcs`
+
+## DS
+- [Латентное размещение Дирихле (LDA)](https://lambda-it.ru/post/tematicheskoe-modelirovanie-v-deistvii-lda)
+- [Запускаем LDA в реальном мире. Подробное руководство](https://habr.com/ru/post/417167/)
+- [Алгоритмы в биоинформатике](http://bioinformaticsinstitute.ru/courses/bioalgo/2010/fall)
+- [Институт биоинформатики](https://bioinf.me/). Некоммерческая организация, занимается подготовкой высококвалифицированных специалистов в области биоинформатики и популяризацией биоинформатики в России.
+- [Па́вел Арка́дьевич Пе́взнер](https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D0%B2%D0%B7%D0%BD%D0%B5%D1%80,_%D0%9F%D0%B0%D0%B2%D0%B5%D0%BB_%D0%90%D1%80%D0%BA%D0%B0%D0%B4%D1%8C%D0%B5%D0%B2%D0%B8%D1%87) — советский и американский биоинформатик, специалист в области вычислительной биологии, системной биологии, кандидат физико-математических наук, профессор Калифорнийского университета в Сан-Диего.
+- Домашняя страница. [Pavel Pevzner](https://bioalgorithms.ucsd.edu/) is the Ronald R. Taylor Chair and Distinguished Professor of Computer Science and Engineering at University of California
+- [Книги по биоинформатике](https://www.bioinformaticsalgorithms.org/). Book "Bioinformatics Algorithms: an Active Learning Approach."
+- [Алгоритмы в биоинформатике, онлайн-курс](https://habr.com/ru/company/stepic/blog/196870/)
+
+# 17.05.2021
+## R
+- COOL! Slides [Dataviz with R](https://www.sophie-e-hill.com/slides/2021-chips-seminar/#/section)
+- [DataEditR](https://dillonhammill.github.io/DataEditR/)
+- COOL! [git2rdata](https://ropensci.github.io/git2rdata/). The git2rdata package is an R package for writing and reading dataframes as plain text files. A metadata file stores important information.
+- COOL! [gglabeller](https://github.com/AliciaSchep/gglabeller). Shiny gadget for labeling points on ggplot
+- [htmltools](https://rstudio.github.io/htmltools/index.html). Tools for creating, manipulating, and writing HTML from R.
+
+## Google BigQuery
+- [bigrquery](https://bigrquery.r-dbi.org/). The bigrquery package makes it easy to work with data stored in Google BigQuery 
+- [Use R with BigQuery](https://cloud.google.com/ai-platform/notebooks/docs/use-r-bigquery)
+- [Pricing](https://cloud.google.com/bigquery/pricing)
+- [Estimating storage and query costs](https://cloud.google.com/bigquery/docs/estimate-costs)
+
 # 13.05.2021
 ## R
 - COOL! [R's lmer cheat sheet](https://stats.stackexchange.com/questions/13166/rs-lmer-cheat-sheet). Объяснение синтаксиса моделей типа `V1 ~ (1|V2) + V3 + (0+V3|V2)`
@@ -1247,6 +1288,7 @@ So notebook mode means that you have your IDE/Rmd preferences set up to show out
 
 ## Math
 - COOL! [Logistic regression 1: from odds to probability](https://yury-zablotski.netlify.app/post/from-odds-to-probability/)
+
 
 # 11.05.2021
 ## R
@@ -1324,6 +1366,8 @@ Meet the easy, open source way for everyone in your company to ask questions and
 An AI-driven platform for data search & discovery, data governance, data stewardship, analytics, and digital transformation.
 - [Polished Hosting - A New Way to Deploy Shiny Apps](https://www.tychobra.com/posts/2021-05-04-polished-hosting/)
 - [GML In-Depth: three forms of self-supervised learning](https://graphml.substack.com/p/self-supervised-learning)
+- [Наводим порядок в мыслях: структурируем идеи c помощью принципа МЕСЕ](https://why.esprezo.ru/mece-principle). Фирменный способ консалтинговой империи McKinsey находить все возможные решения любой проблемы.
+- [MECE (Mutually Exclusive Collectively Exhaustive)](https://www.caseinterview.com/mece/)
 
 ## knitr
 - [How to merge code and output in chunks results ? #131 {Closed}](https://github.com/yihui/rmarkdown-cookbook/issues/131)
@@ -5196,7 +5240,9 @@ https://packages.microsoft.com/repos/microsoft-debian-stretch-prod/dists/stretch
 - [How to rename elements inside a list of lists in the an efficient manner in R?](https://stackoverflow.com/questions/50663249/how-to-rename-elements-inside-a-list-of-lists-in-the-an-efficient-manner-in-r/50663356)
 - [Set names of a newly created nested list with purrr](https://stackoverflow.com/questions/54186219/set-names-of-a-newly-created-nested-list-with-purrr)
 - COOL! [list.tree](https://www.rdocumentation.org/packages/Hmisc/versions/4.2-0/topics/list.tree). This is a function to pretty-print the structure of any data object (usually a list). It is similar to the R function str.
-- [How do i get R data.tree print to show a value for each level?](https://stackoverflow.com/questions/43124438/how-do-i-get-r-data-tree-print-to-show-a-value-for-each-level)
+- [How do I get R data.tree print to show a value for each level?](https://stackoverflow.com/questions/43124438/how-do-i-get-r-data-tree-print-to-show-a-value-for-each-level)
+- [Find direct hierarchical parents of a leaf node in data.tree package in R](https://stackoverflow.com/questions/50487931/find-direct-hierarchical-parents-of-a-leaf-node-in-data-tree-package-in-r)
+
 
 
 # 16.10.2019
