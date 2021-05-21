@@ -1245,10 +1245,69 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 21.05.2021
+## graph
+- [Plotting a igraph network with DiagrammeR](https://stackoverflow.com/questions/44746975/plotting-a-igraph-network-with-diagrammer)
+- [Network Analysis with R - DataCamp Course](https://rpubs.com/erikaaldisa/networkanalysis)
+- [An igraph hack](https://jevansbio.wordpress.com/2019/05/07/an-igraph-hack/)
+
 # 20.05.2021
 ## R
 - COOL! [Code Folding and Sections](https://support.rstudio.com/hc/en-us/articles/200484568-Code-Folding-and-Sections)
 - Любопытно. [livecode](https://github.com/rundel/livecode) is an R package that enables you to broadcast a local R (or any other text) document over the web and provide live updates as it is edited.
+- Slides. [Will Chase](https://www.williamrchase.com/slides). В частности, [rstudio::conf (2020): The Glamour of Graphics](https://www.williamrchase.com/slides/assets/player/KeynoteDHTMLPlayer.html#0)
+- [ggside: Side Grammar Graphics](https://cran.r-project.org/web/packages/ggside/index.html)
+The grammar of graphics as shown in 'ggplot2' has provided an expressive API for users to build plots.
+- [Introduction to ggpattern Package in R (6 Examples) | ggplot2 Plots with Textures](https://statisticsglobe.com/ggpattern-r-package)
+- [Visualizing and Annotating Phylogenetic Trees with R+ggtree](https://4va.github.io/biodatasci/r-ggtree.html)
+- [Install package from local source]()
+
+## R VScode
+- Analytics Vidhya. [A fresh start for R in VSCode](https://medium.com/analytics-vidhya/a-fresh-start-for-r-in-vscode-ec61ed108cf6). Setting up Visual Studio Code for R development
+- [How to integrate Python and R in Visual Studio Code](https://towardsdatascience.com/how-to-integrate-python-and-r-in-visual-studio-code-496a47c90422)
+- [Writing R in VSCode: A Fresh Start](https://renkun.me/2019/12/11/writing-r-in-vscode-a-fresh-start/)
+	- [VSCode](https://code.visualstudio.com/Download): Visual Studio Code
+	- [languageserver](): An implementation of the Language Server Protocol for R. `install.packages("languageserver")`
+	- [VSCode R Extension](https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r): An implementation of the Language Server Protocol for R by Yuki Ueda
+	- [R LSP Client for VSCode](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r-lsp): R LSP Client for Visual Studio Code
+	- [Python](https://www.python.org/downloads/)
+	- [Radian](https://github.com/randy3k/radian): A 21st century R console.
+	- [ManuelHentschel/vscDebugger](https://github.com/ManuelHentschel/vscDebugger/) R Debugger Protocol. Ставим из zip файла 
+	`install.packages(path_to_source, repos = NULL, type="source")`
+	- In Windows, please go to VSCode settings, and set up the following entries:
+```
+{
+  "r.bracketedPaste": true,
+  "r.rterm.windows": "C:\\Users\\<USER>\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\radian.exe",
+  "r.rpath.windows": "C:\\Program Files\\R\\R-4.0.5\\bin\\R.exe",
+  "r.lsp.debug": true,
+  "r.lsp.diagnostics": true,
+  "r.rterm.option": [
+        "--no-save",
+        "--no-restore",
+        "--r-binary=C:\\Program Files\\R\\R-4.0.5\\bin\\R.exe"
+    ],
+}
+```
+Finally, you need to change your VSCode settings to enable R within the editor. For that press Ctrl + Shift + P and type in “Preferences: Open Settings (JSON)” and press Enter. This will open the settings.json of your editor. Add the following code to the JSON file, adjust the respective path to your setup and save the file.
+[Settings File Locations](https://vscode.readthedocs.io/en/latest/getstarted/settings/)
+Depending on your platform, the user settings file is located here:
+
+Windows %APPDATA%\Code\User\settings.json
+Mac $HOME/Library/Application Support/Code/User/settings.json
+Linux $HOME/.config/Code/User/settings.json
+The workspace setting file is located under the .vscode folder in your project.
+
+Под виндой не находит R, ищем решение дальше
+- [Setting Up Visual Studio code to work with R - “win32 can't use R”](https://stackoverflow.com/questions/65823681/setting-up-visual-studio-code-to-work-with-r-win32-cant-use-r)
+
+```Extensions > R
+In the settings for "R", scroll down to R > Rpath: Windows
+```
+- Настраиваем контроль длины строки кода (lintr), кладем в корневую директорию проекта. [Here](https://renkun.me/2019/12/11/writing-r-in-vscode-a-fresh-start/). 
+You may take a look at https://github.com/jimhester/lintr#project-configuration Briefly, you could create a `~/.lintr` file with the following content:
+`linters: with_defaults(line_length_linter(120))`
+Remember to leave a new line at the bottom of the file.
 
 ## Math
 - [How to analyze visual analog (slider) scale data?](https://mvuorre.github.io/posts/2019-02-18-analyze-analog-scale-ratings-with-zero-one-inflated-beta-models/). PSYCHOLOGY STATISTICS TUTORIAL R BRMS
@@ -1263,6 +1322,12 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - Домашняя страница. [Pavel Pevzner](https://bioalgorithms.ucsd.edu/) is the Ronald R. Taylor Chair and Distinguished Professor of Computer Science and Engineering at University of California
 - [Книги по биоинформатике](https://www.bioinformaticsalgorithms.org/). Book "Bioinformatics Algorithms: an Active Learning Approach."
 - [Алгоритмы в биоинформатике, онлайн-курс](https://habr.com/ru/company/stepic/blog/196870/)
+
+## Language parser
+- COOL! [ANTLR (ANother Tool for Language Recognition)](https://www.antlr.org/) is a powerful parser generator for reading, processing, executing, or translating structured text or binary files. It's widely used to build languages, tools, and frameworks. From a grammar, ANTLR generates a parser that can build and walk parse trees.
+	- [Grammars written for ANTLR v4](https://github.com/antlr/grammars-v4). This repository is a collection of Antlr4 grammars.
+- [Теория и практика парсинга исходников с помощью ANTLR и Roslyn](https://habr.com/ru/company/pt/blog/210772/)
+- [RICH LANGUAGE PARSER FOR R IN INFOVEAVE](https://infoveave.com/rich-language-parser/)
 
 # 17.05.2021
 ## R

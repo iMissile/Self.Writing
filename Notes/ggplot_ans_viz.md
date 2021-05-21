@@ -250,6 +250,7 @@ Ridgeline plots provide a convenient way of visualizing changes in distributions
 If you just want to prevent two lines from overlapping exactly, there is now a better way: `position_dodge()`, which "adjusts position by dodging overlaps to the side". This is nicer than adding jitter to any line, even when it's not needed.
 - [Jitter lines in ggplot - code works without "position =" argument](https://community.rstudio.com/t/jitter-lines-in-ggplot-code-works-without-position-argument/56049)
 - COOL! [How to Add Labels Directly in ggplot2? Hint: Use Secondary Axis Trick](https://datavizpyr.com/direct-labeling-with-secondary-axis-trick-ggplot2-r/)
+- [ggside: Plot Linear Regression using Marginal Distributions (ggplot2 extension)](https://www.business-science.io/code-tools/2021/05/18/marginal_distributions.html)
 
 
 # other
