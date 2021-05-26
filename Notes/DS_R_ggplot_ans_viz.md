@@ -270,6 +270,7 @@ The goal of ggvega is to translate a ggplot2 object to a Vega-Lite specification
 The goal of vlbuildr is to provide an R api for building up vega-lite specs.
 - [trelliscopejs](https://hafen.github.io/trelliscopejs/). Trelliscope is a scalable, flexible, interactive approach to visualizing data.
 - COOL! [a ggplot2 grammar guide](https://evamaerey.github.io/ggplot2_grammar_guide/about)
+- COOL! Для того, чтобы `render_graph` в `DiagrammeR` работал и сохранял граф в файл, необходимо доставлять руками библиотеки `DiagrammeRSVG` и `V8`. Они отсутствуют в явных зависимостях.
 
 
 

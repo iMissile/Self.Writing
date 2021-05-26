@@ -1060,6 +1060,8 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [HedgeDoc](https://hedgedoc.org/). The best platform to write and share markdown.
 HedgeDoc (formerly known as CodiMD) is an open-source collaborative markdown editor. With HedgeDoc you can easily collaborate on notes, graphs and even presentations in real-time. All you need to do is to share your note-link to your co-workers, and they’re ready to go.
 - [Modern Text Features in R](https://www.tidyverse.org/blog/2021/02/modern-text-features/). `ragg`, `systemfont`, `textshaping`
+- COOL! [Everything You Always Wanted to Know About ANOVA*](https://shouldbewriting.netlify.app/posts/2021-05-25-everything-about-anova/)
+(*But Were Afraid to Ask)
 
 # 24.05.2020
 ## R
@@ -6587,7 +6589,7 @@ https://www.youtube.com/watch?v=3V3HeRnRNH8
 - [Google’s Eigenvector… or how a Random Surfer finds the most relevant Webpages](http://blog.ephorie.de/googles-eigenvector-or-how-a-random-surfer-finds-the-most-relevant-webpages)
 
 ## JS
--[mxGraph 4.0.0](https://jgraph.github.io/mxgraph/). mxGraph is a JavaScript diagramming library that enables interactive graph and charting applications to be quickly created that run natively in any major browser that is supported by its vendor. mxGraph - An open source JavaScript diagramming component, started in 2005, that works on all major browsers, including touch devices.
+- [mxGraph 4.0.0](https://jgraph.github.io/mxgraph/). mxGraph is a JavaScript diagramming library that enables interactive graph and charting applications to be quickly created that run natively in any major browser that is supported by its vendor. mxGraph - An open source JavaScript diagramming component, started in 2005, that works on all major browsers, including touch devices.
 - [draw.io] - A web based diagramming application built on mxGraph, that integrates with Google Drive , OneDrive and Dropbox. draw.io is also a plugin for Atlassian's Confluence and JIRA.
 
 
