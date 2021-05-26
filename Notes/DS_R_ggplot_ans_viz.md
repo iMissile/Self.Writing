@@ -251,7 +251,14 @@ If you just want to prevent two lines from overlapping exactly, there is now a b
 - [Jitter lines in ggplot - code works without "position =" argument](https://community.rstudio.com/t/jitter-lines-in-ggplot-code-works-without-position-argument/56049)
 - COOL! [How to Add Labels Directly in ggplot2? Hint: Use Secondary Axis Trick](https://datavizpyr.com/direct-labeling-with-secondary-axis-trick-ggplot2-r/)
 - [ggside: Plot Linear Regression using Marginal Distributions (ggplot2 extension)](https://www.business-science.io/code-tools/2021/05/18/marginal_distributions.html)
-
+- Боремся с легендами. 
+	- COOL! [Controlling legend appearance in ggplot2 with override.aes](https://aosmith.rbind.io/2020/07/09/ggplot2-override-aes/)
+	- [Remove extra legends in ggplot2](https://stackoverflow.com/questions/11714951/remove-extra-legends-in-ggplot2). `geom_point(aes(colour=group, alpha = .8), show.legend = F)`
+	- [How to specify legend width in ggplot](https://community.rstudio.com/t/how-to-specify-legend-width-in-ggplot/23060). `theme(legend.key.width = unit(4, "cm"))`
+- COOL! [The Evolution of a ggplot (Ep. 1)](https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/#polish) Posted by Cédric on Friday, May 17, 2019 
+- [ggformula](http://www.mosaic-web.org/ggformula/index.html). ggformula introduces a family of graphics functions, `gf_point()`, `gf_density()`, and so on, bring the formula interface to `ggplot()`.
+- [Aesthetic specifications](https://ggplot2.tidyverse.org/articles/ggplot2-specs.html). Здесь также про то, как работать с кастомными шрифтами.
+- [Cookbook for R GraphsFonts](http://www.cookbook-r.com/Graphs/Fonts/)
 
 # other
 - COOL! [Altair: Declarative Visualization in Python](https://altair-viz.github.io/)

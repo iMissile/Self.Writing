@@ -140,3 +140,8 @@ New documents should use the regular `caption' package v3.x instead.`
                                                   {#1}\edef \uq@curr@file {\...
 ```
 [Undefined control sequence in \graphics after the latest MikTeX update {#380}](https://github.com/MiKTeX/miktex/issues/380)
+
+## Библиография
+- [sort biblatex bibliography by appearance of cites in the document {duplicate}](https://tex.stackexchange.com/questions/116088/sort-biblatex-bibliography-by-appearance-of-cites-in-the-document)
+- [Biblatex citation order](https://tex.stackexchange.com/questions/51434/biblatex-citation-order)
+- [How do I cite range of references? {duplicate}](https://tex.stackexchange.com/questions/103792/how-do-i-cite-range-of-references?noredirect=1&lq=1). The tags you used suggest that you use `biblatex`. In this case you could use one of the styles anding on `-comp`.
