@@ -1055,7 +1055,22 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
-# 25.05.2020
+# 27.05.2021
+## DS
+- [Чем отличаются ссылки от указателей в С++](https://ru.stackoverflow.com/questions/349/%D0%A7%D0%B5%D0%BC-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B0%D1%8E%D1%82%D1%81%D1%8F-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8-%D0%BE%D1%82-%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9-%D0%B2-%D0%A1)
+- COOL! [What are the differences between a pointer variable and a reference variable in C++?](https://stackoverflow.com/questions/57483/what-are-the-differences-between-a-pointer-variable-and-a-reference-variable-in). Все разложено по полочкам.
+- [Указатели и ссылки {дубликат}](https://ru.stackoverflow.com/questions/3424/%d0%a3%d0%ba%d0%b0%d0%b7%d0%b0%d1%82%d0%b5%d0%bb%d0%b8-%d0%b8-%d1%81%d1%81%d1%8b%d0%bb%d0%ba%d0%b8?noredirect=1&lq=1). Тут тоже весьма доходчиво.
+
+## R
+- COOL! [Making R Markdown work better for you](https://alison.rbind.io/talk/2021-rmd-params/)
+
+## knitr
+- [When using RMarkdown, is there a way to insert images (png), knit and generate and html file that I can email and still show the images?](https://stackoverflow.com/questions/62902381/when-using-rmarkdown-is-there-a-way-to-insert-images-png-knit-and-generate-a)
+- [Why should I use the here package when I'm already using projects?](https://malco.io/2018/11/05/why-should-i-use-the-here-package-when-i-m-already-using-projects/)
+- [Include Images](https://poldham.github.io/minute_website/images.html)
+- [Problems with embedding images in distill blog posts](https://community.rstudio.com/t/problems-with-embedding-images-in-distill-blog-posts/92136)
+
+# 25.05.2021
 ## R
 - [HedgeDoc](https://hedgedoc.org/). The best platform to write and share markdown.
 HedgeDoc (formerly known as CodiMD) is an open-source collaborative markdown editor. With HedgeDoc you can easily collaborate on notes, graphs and even presentations in real-time. All you need to do is to share your note-link to your co-workers, and they’re ready to go.
@@ -1063,7 +1078,7 @@ HedgeDoc (formerly known as CodiMD) is an open-source collaborative markdown edi
 - COOL! [Everything You Always Wanted to Know About ANOVA*](https://shouldbewriting.netlify.app/posts/2021-05-25-everything-about-anova/)
 (*But Were Afraid to Ask)
 
-# 24.05.2020
+# 24.05.2021
 ## R
 - [USING METAFLOW TO MAKE MODEL TUNING LESS PAINFUL](https://mdneuzerling.com/post/using-metaflow-to-make-model-tuning-less-painful/)
 - [tidystats](https://www.tidystats.io/) is a software solution designed to help researchers report the output of statistical analyses. It consists of an R package whose main function is to gather the statistics from statistical analyses and an Office add-in to reproducibly report statistics in Microsoft Word.
