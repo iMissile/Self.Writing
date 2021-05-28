@@ -259,6 +259,8 @@ If you just want to prevent two lines from overlapping exactly, there is now a b
 - [ggformula](http://www.mosaic-web.org/ggformula/index.html). ggformula introduces a family of graphics functions, `gf_point()`, `gf_density()`, and so on, bring the formula interface to `ggplot()`.
 - [Aesthetic specifications](https://ggplot2.tidyverse.org/articles/ggplot2-specs.html). Здесь также про то, как работать с кастомными шрифтами.
 - [Cookbook for R GraphsFonts](http://www.cookbook-r.com/Graphs/Fonts/)
+- [10 Tips to Customize Text Color, Font, Size in ggplot2 with `element_text()`](https://cmdlinetips.com/2021/05/tips-to-customize-text-color-font-size-in-ggplot2-with-element_text/)
+- [12 Extensions to ggplot2 for More Powerful R Visualizations](https://mode.com/blog/r-ggplot-extension-packages/)
 
 # other
 - COOL! [Altair: Declarative Visualization in Python](https://altair-viz.github.io/)

@@ -203,6 +203,8 @@ https://www.crowdgames.ru/page/plany-crowd-games
 	- [Basic Usage](https://themockup.blog/static/gt-cookbook.html)
 	- [Advanced Usage](https://themockup.blog/static/gt-cookbook-advanced.html)
 - [Explanatory Model Analysis](https://ema.drwhy.ai/). Explore, Explain, and Examine Predictive Models. With examples in R and Python.
+- [Efficient R programming](https://csgillespie.github.io/efficientR/) by Colin Gillespie, Robin Lovelace
+- COOL! [Understanding the data (error) generating processes for data validation](https://emilyriederer.netlify.app/post/data-error-gen/)
 
 # Articles
 - [Using AWK and R to parse 25tb](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/)
@@ -1060,15 +1062,34 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [Чем отличаются ссылки от указателей в С++](https://ru.stackoverflow.com/questions/349/%D0%A7%D0%B5%D0%BC-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B0%D1%8E%D1%82%D1%81%D1%8F-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8-%D0%BE%D1%82-%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9-%D0%B2-%D0%A1)
 - COOL! [What are the differences between a pointer variable and a reference variable in C++?](https://stackoverflow.com/questions/57483/what-are-the-differences-between-a-pointer-variable-and-a-reference-variable-in). Все разложено по полочкам.
 - [Указатели и ссылки {дубликат}](https://ru.stackoverflow.com/questions/3424/%d0%a3%d0%ba%d0%b0%d0%b7%d0%b0%d1%82%d0%b5%d0%bb%d0%b8-%d0%b8-%d1%81%d1%81%d1%8b%d0%bb%d0%ba%d0%b8?noredirect=1&lq=1). Тут тоже весьма доходчиво.
+- [Introducing TensorFlow Decision Forests](https://blog.tensorflow.org/2021/05/introducing-tensorflow-decision-forests.html)
+- [Prefect](https://www.prefect.io/) is the new standard in dataflow automation , trusted to build, run, and monitor millions of data workflows and pipelines.
+- [Combining tree-boosting with Gaussian process and mixed effects models](https://github.com/fabsig/GPBoost)
 
 ## R
 - COOL! [Making R Markdown work better for you](https://alison.rbind.io/talk/2021-rmd-params/)
+- [CUSTOM SYNTAX HIGHLIGHTING FOR {DISTILL} PART 1: MODIFYING THE DEFAULT THEME](https://ellakaye.rbind.io/posts/2021-05-25-custom-syntax-highlighting-for-distill-part-1-modifying-the-default-theme/)
+- [CUSTOM SYNTAX HIGHLIGHTING FOR {DISTILL} PART 2: CREATING THE PALETTE](https://ellakaye.rbind.io/posts/2021-05-26-custom-syntax-highlighting-for-distill-part-2-creating-the-palette/)
+- COOL! [Understanding the data (error) generating processes for data validation](https://emilyriederer.netlify.app/post/data-error-gen/)
+- [phyloseq](https://joey711.github.io/phyloseq/): An R Package for Reproducible Interactive Analysis and Graphics of Microbiome Census Data
+- Why `base::subset` is bad?
+	- [Is R `base::subset()` really that bad?](https://win-vector.com/2018/02/23/is-r-basesubset-really-that-bad/)
+	- [Why is `[` better than `subset`?](https://stackoverflow.com/questions/9860090/why-is-better-than-subset). 
+	- [Non-standard evaluation](http://adv-r.had.co.nz/Computing-on-the-language.html). Читаем тут ссылку про проблемы `subset` в п. [Calling from another function]
+	- [TidyverseSkeptic](https://github.com/matloff/TidyverseSkeptic)
+
+## R NSE
+Разбираемся с интересной задачей
+- [Non-standard evaluation](http://adv-r.had.co.nz/Computing-on-the-language.html)
+- [Using a vector of logical expressions to subset dataframe in R](https://stackoverflow.com/questions/50892123/using-a-vector-of-logical-expressions-to-subset-dataframe-in-r/50892185)
+
 
 ## knitr
 - [When using RMarkdown, is there a way to insert images (png), knit and generate and html file that I can email and still show the images?](https://stackoverflow.com/questions/62902381/when-using-rmarkdown-is-there-a-way-to-insert-images-png-knit-and-generate-a)
 - [Why should I use the here package when I'm already using projects?](https://malco.io/2018/11/05/why-should-i-use-the-here-package-when-i-m-already-using-projects/)
 - [Include Images](https://poldham.github.io/minute_website/images.html)
 - [Problems with embedding images in distill blog posts](https://community.rstudio.com/t/problems-with-embedding-images-in-distill-blog-posts/92136)
+- [Sometimes you may prefer a certain graphical device to render plots (e.g. PNG), but the journal or stakeholders might request different formats. Кshows how easy it is to produce plots for multiple devices at once using #rmarkdown docs! [Chunk options](https://yihui.org/knitr/options/#plots)
 
 # 25.05.2021
 ## R
@@ -4208,6 +4229,7 @@ context: An environment containing active chunk options and other chunk informat
 Provides an alternative to R's built-in functionality for handling regular expressions, based on the Onigmo library. Offers first-class compiled regex objects, partial matching and function-based substitutions, amongst other features.
 - [Regex Performance](https://rpubs.com/jonclayden/regex-performance)
 - [R pkg download stats](https://ipub.com/dev-corner/apps/r-package-downloads/)
+- [RegExr](https://regexr.com/5tsnd) is an online tool to learn, build, & test Regular Expressions (RegEx / RegExp).
 
 ## R
 - [How to rename a variable in R without copying the object?](https://stackoverflow.com/questions/22951811/how-to-rename-a-variable-in-r-without-copying-the-object)
