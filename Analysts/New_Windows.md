@@ -534,4 +534,5 @@ HKEY_USERS\.Default\Keyboard Layout\Preload
 - Ставим SmartGit, переносим настройки из `%appdata%\syntevo\SmartGit\<version>\`. Читаем [How to import old settings/repositories](https://stackoverflow.com/questions/45837545/how-to-import-old-settings-repositories)
 - Настраиваем Касперского для разрешения доступа Edge в инет. [Cannot open websites in Google Chrome and Edge Chromium when working with Kaspersky Security 10 for Windows Server](https://support.kaspersky.com/15392)
 - После установки Касперского в режиме администратора отключаем штатный брандмауэр Windows `netsh advfirewall set allprofiles state off`
+- В Google Chrome включаем режим чтения. Делается это через экспериментальные настройки. `chrome://flags/#enable-reader-mode`
 

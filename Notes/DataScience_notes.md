@@ -205,6 +205,10 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Explanatory Model Analysis](https://ema.drwhy.ai/). Explore, Explain, and Examine Predictive Models. With examples in R and Python.
 - [Efficient R programming](https://csgillespie.github.io/efficientR/) by Colin Gillespie, Robin Lovelace
 - COOL! [Understanding the data (error) generating processes for data validation](https://emilyriederer.netlify.app/post/data-error-gen/)
+- [Big Book of R has over 200 books!](https://oscarbaruffa.com/bigbook200/). 	R PROGRAMMING
+Way back in August 2020, I launched Big Book of R, a collection of free (and some paid) R programming books organised by categories like Geospatial, Statistics, Packages and many more.
+- [awesome_R_Githubers](https://github.com/amrrs/awesome_R_Githubers)
+This is a list of R developers and advocates on Github. This is to help new comers create a following list.
 
 # Articles
 - [Using AWK and R to parse 25tb](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/)
@@ -1057,6 +1061,17 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 31.05.2021
+## R
+- [Mi Band 5 vs. Mi Band 5: Convergent Validity of Step Count Measurements with R](https://methodmatters.github.io/convergent-validity-mi-band/)
+- [An introduction to multidplyr](https://multidplyr.tidyverse.org/articles/multidplyr.html). 	multidplyr is a backend for dplyr that spreads work across multiple processes. Like all dplyr backends, it allows you to use the dplyr verbs that you’re already familiar with, but alters the underlying computational model to transparently support multi-process parallelism.
+- [RStudio. Spelling Dictionaries](https://support.rstudio.com/hc/en-us/articles/200551916-Spelling-Dictionaries)
+Под Win10: `%AppData%\RStudio\dictionaries\languages-system`
+- COOL! [R data.table and Apple M1](https://rpubs.com/Kibalnikov/776164)
+
+## python
+- [twitter #plotnine](https://twitter.com/hashtag/plotnine?src=hashtag_click)
+
 # 27.05.2021
 ## DS
 - [Чем отличаются ссылки от указателей в С++](https://ru.stackoverflow.com/questions/349/%D0%A7%D0%B5%D0%BC-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B0%D1%8E%D1%82%D1%81%D1%8F-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8-%D0%BE%D1%82-%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9-%D0%B2-%D0%A1)
@@ -1065,6 +1080,18 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [Introducing TensorFlow Decision Forests](https://blog.tensorflow.org/2021/05/introducing-tensorflow-decision-forests.html)
 - [Prefect](https://www.prefect.io/) is the new standard in dataflow automation , trusted to build, run, and monitor millions of data workflows and pipelines.
 - [Combining tree-boosting with Gaussian process and mixed effects models](https://github.com/fabsig/GPBoost)
+- [Конвертация презентации, созданной в `impress.js` в PDF](https://github.com/impress/impress.js/issues/99): I am using https://github.com/melix/deck2pdf with the command deck2pdf --profile=impressjs input.html output.pdf to convert my presentations into PDF.
+	- [astefanutti/decktape](https://github.com/astefanutti/decktape). PDF exporter for HTML presentations
+	- [GitHub Actions, reveal.js, and Automating the PDF Conversion](https://4comprehension.com/github-actions-reveal-js-and-automating-pdf-conversion/)
+	- [melix/deck2pdf](https://github.com/melix/deck2pdf). Converts various HTML5 slide decks to PDF
+	- [Exporting HTML Presentations to PDF](https://datawookie.dev/blog/2017/10/exporting-html-presentations-to-pdf/)
+	- [How to convert R reveal.js presentation to pdf?](https://stackoverflow.com/questions/40778333/how-to-convert-r-reveal-js-presentation-to-pdf). Любопытно: Open your HTML file in the browser and add ?print-pdf to the URL, e. g. `http://index.html?print-pdf`
+	
+С трудом попытался запустить DeckTape для конвертации презентации. Все равно получилась кривизна. Но запускал так:
+	- в директории `/home/shiny/` сделал директорию `arch`.
+	- скопировал туда все слайды
+	- поставил docker с репозитория
+	- запустил командой "sudo docker run --rm -t -v `pwd`:/slides -v ~:/home/user astefanutti/decktape arch/mt-ds-architecture.html slides.pdf"
 
 ## R
 - COOL! [Making R Markdown work better for you](https://alison.rbind.io/talk/2021-rmd-params/)
@@ -9276,6 +9303,7 @@ result
 str(result)
 chr "2 * b"
 ```
+По умолчанию длина выдаваемой `deparse` строки ограничена 60-ю символами, но это правится в параметрах.
 
 # 06.06.2018
 ## R
