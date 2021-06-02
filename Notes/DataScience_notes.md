@@ -209,6 +209,8 @@ https://www.crowdgames.ru/page/plany-crowd-games
 Way back in August 2020, I launched Big Book of R, a collection of free (and some paid) R programming books organised by categories like Geospatial, Statistics, Packages and many more.
 - [awesome_R_Githubers](https://github.com/amrrs/awesome_R_Githubers)
 This is a list of R developers and advocates on Github. This is to help new comers create a following list.
+- [Beyond Multiple Linear Regression. Applied Generalized Linear Models and Multilevel Models in R](https://bookdown.org/roback/bookdown-BeyondMLR/) by Paul Roback and Julie Legler
+- [Graph Representation Learning Book](https://www.cs.mcgill.ca/~wlh/grl_book/) by William L. Hamilton, McGill University
 
 # Articles
 - [Using AWK and R to parse 25tb](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/)
@@ -1061,6 +1063,13 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 02.06.2021
+## Dev
+- COOL! [GNU BRE/ERE cheatsheet and differences between grep, sed and awk](https://learnbyexample.github.io/gnu-bre-ere-cheatsheet/)
+
+## R
+- COOL! [Poorman's automated translation with R and Google Sheets using {googlesheets4}](https://www.brodrigues.co/blog/2020-12-05-poorman_translate/)
+
 # 31.05.2021
 ## R
 - [Mi Band 5 vs. Mi Band 5: Convergent Validity of Step Count Measurements with R](https://methodmatters.github.io/convergent-validity-mi-band/)
@@ -1068,12 +1077,14 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [RStudio. Spelling Dictionaries](https://support.rstudio.com/hc/en-us/articles/200551916-Spelling-Dictionaries)
 Под Win10: `%AppData%\RStudio\dictionaries\languages-system`
 - COOL! [R data.table and Apple M1](https://rpubs.com/Kibalnikov/776164)
+- [Welcome to xaringan gallery](https://xaringan.gallery/), a growing collection of examples and custom themes.
 
 ## python
 - [twitter #plotnine](https://twitter.com/hashtag/plotnine?src=hashtag_click)
 
 # 27.05.2021
 ## DS
+- [Introducing WebContainers: Run Node.js natively in your browser](https://blog.stackblitz.com/posts/introducing-webcontainers/)
 - [Чем отличаются ссылки от указателей в С++](https://ru.stackoverflow.com/questions/349/%D0%A7%D0%B5%D0%BC-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B0%D1%8E%D1%82%D1%81%D1%8F-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8-%D0%BE%D1%82-%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9-%D0%B2-%D0%A1)
 - COOL! [What are the differences between a pointer variable and a reference variable in C++?](https://stackoverflow.com/questions/57483/what-are-the-differences-between-a-pointer-variable-and-a-reference-variable-in). Все разложено по полочкам.
 - [Указатели и ссылки {дубликат}](https://ru.stackoverflow.com/questions/3424/%d0%a3%d0%ba%d0%b0%d0%b7%d0%b0%d1%82%d0%b5%d0%bb%d0%b8-%d0%b8-%d1%81%d1%81%d1%8b%d0%bb%d0%ba%d0%b8?noredirect=1&lq=1). Тут тоже весьма доходчиво.
@@ -1378,6 +1389,7 @@ Run renv::restore()
 - [UNDERSTANDING ROLLING CALCULATIONS IN R](https://itsalocke.com/blog/understanding-rolling-calculations-in-r/)
 - COOL! Learning. [SDS 375: Data Visualization in R](https://github.com/wilkelab/SDS375) This repository holds the source materials used to create the class site available at: https://wilkelab.org/SDS375
 	- Slides. [Redundant coding, text annotations](https://wilkelab.org/SDS375/slides/redundant-coding.html#1) by Claus O. Wilke
+- COOL! Learning. [CS224W: Machine Learning with Graphs. Stanford / Winter 2021](http://web.stanford.edu/class/cs224w/)
 - [On the Link Between Optimization and Polynomials, Part 4](http://fa.bianp.net/blog/2021/no-momentum/)
 
 

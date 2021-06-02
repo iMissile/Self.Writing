@@ -262,6 +262,33 @@ If you just want to prevent two lines from overlapping exactly, there is now a b
 - [10 Tips to Customize Text Color, Font, Size in ggplot2 with `element_text()`](https://cmdlinetips.com/2021/05/tips-to-customize-text-color-font-size-in-ggplot2-with-element_text/)
 - [12 Extensions to ggplot2 for More Powerful R Visualizations](https://mode.com/blog/r-ggplot-extension-packages/)
 
+## facet
+- [Useful labeller functions](https://ggplot2.tidyverse.org/reference/labellers.html). Labeller functions are in charge of formatting the strip labels of facet grids and wraps. 
+- Создание собственных меток в facet (идея):
+```
+    # посмотрим на распределение остатков по времени
+    dfplot <- p2_df %>%
+      ggplot(aes(timestamp, value)) +
+      geom_point(shape = 21, size = 1.5, alpha = 0.2) +
+      geom_smooth() +
+      # отобразим дату перевода на БАХУС
+      geom_vline(aes(xintercept = bswitch_date), colour = "red", lwd = 1.5) +
+      scale_x_date( 
+        date_breaks = "1 week",
+        limits = base::range(p2_df$timestamp, na.rm = TRUE)
+        ) +
+      scale_y_log10(labels = scales::trans_format("log10", scales::math_format(10^.x))) +
+      theme_ipsum_rc() +
+      # раскладка по заводу SAP (номер магазина)
+      facet_wrap(~store_id, ncol = 2, scales = "free", labeller = labeller(store_id = storeLabeller)) +
+      guides(colour = FALSE) +
+      # Трюк 'ось X': включаем ось x у всех графиков
+      theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
+      xlab("Дата") +
+      ylab("Отрицательный остаток") +
+      ggtitle(label = "Динамика совокупных остатков")
+```
+
 # other
 - COOL! [Altair: Declarative Visualization in Python](https://altair-viz.github.io/)
 	- [vegawidget](https://vegawidget.github.io/vegawidget/index.html)

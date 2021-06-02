@@ -59,6 +59,7 @@ Error in vecseq(f__, len__, if (allow.cartesian || notjoin || !anyDuplicated(f__
 ```
 Usually this was not intended and the join needs to be changed. The word 'cartesian' is used loosely in this context. The traditional cartesian join is (deliberately) difficult to achieve in data.table: where every row in i joins to every row in x (a nrow(x) * nrow(i) row result). 'cartesian' is just meant in a 'large multiplicative' sense.
 ```
+- [Find complement of a data frame (anti - join)](https://stackoverflow.com/questions/28702960/find-complement-of-a-data-frame-anti-join). Масса различных вариантов.
 - А как сделать сэмплы по группам? Не все так просто
 	- [Sample random rows within each group in a data.table](https://stackoverflow.com/questions/16289182/sample-random-rows-within-each-group-in-a-data-table)
 	- [from data table, randomly select one row per group](https://stackoverflow.com/questions/33887083/from-data-table-randomly-select-one-row-per-group). 
