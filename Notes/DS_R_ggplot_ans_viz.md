@@ -266,6 +266,11 @@ If you just want to prevent two lines from overlapping exactly, there is now a b
 - [Useful labeller functions](https://ggplot2.tidyverse.org/reference/labellers.html). Labeller functions are in charge of formatting the strip labels of facet grids and wraps. 
 - Создание собственных меток в facet (идея):
 ```
+# формируем кастомный генератор меток для фасета
+storeLabeller <- function(string) {
+  paste0("SAP ID = ", string)
+}
+
     # посмотрим на распределение остатков по времени
     dfplot <- p2_df %>%
       ggplot(aes(timestamp, value)) +

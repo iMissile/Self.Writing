@@ -1069,6 +1069,14 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 
 ## R
 - COOL! [Poorman's automated translation with R and Google Sheets using {googlesheets4}](https://www.brodrigues.co/blog/2020-12-05-poorman_translate/)
+- [Как обойти блокировку API запрещенных сервисов с помощью скриптов R](https://netpeak.net/ru/blog/kak-ispol-zovat-proksi-v-skriptakh-r-obkhodim-blokirovku-api-yandeksa-mail-ru-i-vkontakte/)
+- COOL! [How to Make Beautiful Tables in R](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/)
+- R formulae
+    - [formula {stats}](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/formula.html). The generic function formula and its specific methods provide a way of extracting formulae which have been included in other objects.
+    - [Asterisk (*) vs. colon (:) in R formulas {closed}](https://stackoverflow.com/questions/40567421/asterisk-vs-colon-in-r-formulas)
+    - COOL! [Formulae in R - ANOVA and other models, mixed and fixed](https://conjugateprior.org/2013/01/formulae-in-r-anova/)
+    - [The R Formula Method: The Good Parts](https://rviews.rstudio.com/2017/02/01/the-r-formula-method-the-good-parts/). 2017-02-01 by Max Kuhn
+    - [The R Formula Method: The Bad Parts](https://rviews.rstudio.com/2017/03/01/the-r-formula-method-the-bad-parts/).  2017-03-01 by Max Kuhn
 
 # 31.05.2021
 ## R
@@ -1165,6 +1173,7 @@ The grammar of graphics as shown in 'ggplot2' has provided an expressive API for
 ## R VScode
 - Analytics Vidhya. [A fresh start for R in VSCode](https://medium.com/analytics-vidhya/a-fresh-start-for-r-in-vscode-ec61ed108cf6). Setting up Visual Studio Code for R development
 - [How to integrate Python and R in Visual Studio Code](https://towardsdatascience.com/how-to-integrate-python-and-r-in-visual-studio-code-496a47c90422)
+- COOL! [R in 2021 with VSCode](https://datamares.netlify.app/en/post/r-vscode/)
 - [Writing R in VSCode: A Fresh Start](https://renkun.me/2019/12/11/writing-r-in-vscode-a-fresh-start/)
 	- [VSCode](https://code.visualstudio.com/Download): Visual Studio Code
 	- [languageserver](): An implementation of the Language Server Protocol for R. `install.packages("languageserver")`
