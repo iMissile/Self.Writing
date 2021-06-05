@@ -1063,6 +1063,10 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 05.06.2021
+## R
+- COOL! [Hugo for fussy people](https://jnolis.com/blog/hugo_for_fussy_people/). How to make a Hugo theme that looks exactly like you want it to
+
 # 02.06.2021
 ## Dev
 - COOL! [GNU BRE/ERE cheatsheet and differences between grep, sed and awk](https://learnbyexample.github.io/gnu-bre-ere-cheatsheet/)
