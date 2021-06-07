@@ -1066,6 +1066,14 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 # 05.06.2021
 ## R
 - COOL! [Hugo for fussy people](https://jnolis.com/blog/hugo_for_fussy_people/). How to make a Hugo theme that looks exactly like you want it to
+- COOL! [Visualizing Distributions with Raincloud Plots with ggplot2](https://www.cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-with-ggplot2/). Posted by Cédric on Sunday, June 6, 2021
+- Отличная статья по математике и визуальному пояснению. [Confidence and prediction intervals](https://kevinwang09.github.io/post/2021-05-30-confidence-and-prediction-intervals/). How can we (statisticians) better explain the differences between a confidence interval (CI) and a prediction interval (PI)?
+- [The ‘lucid’ package](https://kwstat.github.io/lucid/) provides a simple function to improve the format of floating-point numbers for humans. The ‘lucid()’ function is primarily a formatting function similar to ‘round’ and ‘signif’, but output is always character.
+- [4.14 Create an animation from multiple R plots](https://bookdown.org/yihui/rmarkdown-cookbook/animation.html)
+- [tidybayes](http://mjskay.github.io/tidybayes/) is an R package that aims to make it easy to integrate popular Bayesian modeling methods into a tidy data + ggplot workflow.]
+- [wordcountaddin](https://github.com/benmarwick/wordcountaddin). This R package is an RStudio addin to count words and characters in text in an R markdown document. It also has a function to compute readability statistics so you can get an indication of how easy or difficult your document is to read.
+- COOL! Stats and R. [RStudio addins, or how to make your coding life easier](https://statsandr.com/blog/rstudio-addins-or-how-to-make-your-coding-life-easier/)
+- [Creating RStudio addin to modify selection](https://www.hvitfeldt.me/blog/creating-rstudio-addin-to-modify-selection/)
 
 # 02.06.2021
 ## Dev

@@ -293,6 +293,10 @@ storeLabeller <- function(string) {
       ylab("Отрицательный остаток") +
       ggtitle(label = "Динамика совокупных остатков")
 ```
+- COOL! Как эффективно применить `ggfx` [Better data communication with {ggplot2}, part 2](https://giulia-ruggeri.medium.com/better-data-communication-with-ggplot2-part-2-615a5180ccb)
+- COOL! [gghighlight 0.3.2](https://yutani.rbind.io/post/2021-06-07-gghighlight-032/)
+- [ggsunburst](https://github.com/didacs/ggsunburst). ggsunburst offers a set of tools to plot adjacency diagrams using ggplot2.
+- [grafify](https://grafify-vignettes.netlify.app/) An R package for easy graphs, ANOVAs and post-hoc comparisons
 
 # other
 - COOL! [Altair: Declarative Visualization in Python](https://altair-viz.github.io/)
