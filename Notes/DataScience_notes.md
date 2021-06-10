@@ -1063,6 +1063,30 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 09.06.2021
+## R
+- COOL! [Displaying tables as grid graphics](https://cran.r-project.org/web/packages/gridExtra/vignettes/tableGrob.html)
+- [About {golem} 0.3.1](https://golemverse.org/post/golem-0.3.1-release-on-cran/)
+- [sknifedatar](https://rafzamb.github.io/sknifedatar/). Serves primarily as an extension to the modeltime ecosystem. In addition to some functionalities of spatial data and visualization.
+- [What is parent frame of R](https://stackoverflow.com/questions/28641395/what-is-parent-frame-of-r)
+- COOL! [rlang. Invoke a function with a list of arguments](https://rlang.r-lib.org/reference/invoke.html)
+- [do.call: Execute a Function Call](https://rdrr.io/r/base/do.call.html)
+- Доп. идеи как в базовом R управлять списком передаваемых параметров. [A new R trick ... for me at least](https://oddhypothesis.blogspot.com/2013/08/a-new-r-trick-for-me-at-least.html)
+```
+f = function(x, ...) {
+  args = list(...) # unpack, contains a='foo'
+  args$a = bar     # change argument "a"
+
+  y = do.call(g, c(x, args)) # repack arguments for call to g()
+  return(y)
+}
+```
+- COOL! [Self-contained xaringan Slides. A Four-year Old Feature Request](https://yihui.org/en/2021/06/self-contained-xaringan/) Yihui Xie / 2021-06-01
+
+## Google
+- [Можно ли получить нумерацию заголовков в Документах Google?](https://qastack.ru/webapps/23861/can-i-get-header-numbering-in-google-docs)
+- COOL! Дополнение. [Heading Numbers for Google Docs](https://lorut.no/add-ons/heading-numbers-for-google-docs/). Я  нашел его в виде add-on "Markdown Tools"
+
 # 05.06.2021
 ## R
 - COOL! [Hugo for fussy people](https://jnolis.com/blog/hugo_for_fussy_people/). How to make a Hugo theme that looks exactly like you want it to

@@ -383,6 +383,7 @@ The way to read this out loud is: "Take DT, subset rows by i, then compute j gro
 - [Left join using data.table](https://stackoverflow.com/questions/34598139/left-join-using-data-table)
 - COOL! 2014.09 New feature - [Overlapping range joins for Genomics by Arun Srinivasan](2014.09 New feature - Overlapping range joins for Genomics by Arun Srinivasan, history and benchmarks by Matt Dowle and four hour workshop, EARL Conference London [agenda] [ TO DO - link to video ]), history and benchmarks by Matt Dowle and four hour workshop, EARL Conference London
 - COOL! [Overlap joins in R: a speed comparison with packages sqldf and data.table](https://www.zevross.com/blog/2015/07/09/overlap-joins-in-r-a-speed-comparison-with-packages-sqldf-and-data-table-3/)
+- [Joins and conditional matching with data.table](https://aglhurley.rbind.io/2019/02/10/joins-with-data-table/)
 
 ## data.table lookup
 - [Joins vs case whens - speed and memory tradeoffs](https://themockup.blog/posts/2021-02-13-joins-vs-casewhen-speed-and-memory-tradeoffs/)
