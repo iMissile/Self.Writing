@@ -76,3 +76,13 @@ apt-get remove --purge \
 
 ## Изменение прав на запуск
 - [How to make a file (e.g. a .sh script) executable, so it can be run from a terminal](https://askubuntu.com/questions/229589/how-to-make-a-file-e-g-a-sh-script-executable-so-it-can-be-run-from-a-termi) `chmod +x filename.sh`
+
+
+# разбиваем pdf на части
+Используем утилиту `pdftk` и инструкцию [HowTo: Split PDF File – Linux Command Line](https://www.shellhacks.com/split-pdf-file-linux-command-line/)
+- [Как установить pdftk в Ubuntu 18.04 Bionic?](https://ubuntugeeks.com/questions/267120/how-can-i-install-pdftk-in-ubuntu-18-04-bionic)
+- [](https://linuxhint.com/install_pdftk_ubuntu/). Method 3 (recommended) Install the PDFtk snap
+```
+sudo apt-get install snap
+sudo snap install pdftk
+```

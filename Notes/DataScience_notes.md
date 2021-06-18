@@ -522,6 +522,7 @@ Theming in Rmarkdown can be hard. You first made some custom CSS or use a provid
 - Compiling Rscript with knit
 	- [3.3 Render an R script to a report](https://bookdown.org/yihui/rmarkdown-cookbook/spin.html)
 	- [3.4 Convert R Markdown to R script](https://bookdown.org/yihui/rmarkdown-cookbook/purl.html)
+- [Shiny Inception: JavaScript in Rendered Markdown](https://datawookie.dev/blog/2021/06/shiny-inception-javascript-in-rendered-markdown/)
 
 ## knitr
 - Jumping Rivers blog
@@ -1063,6 +1064,44 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 18.06.2021
+## R
+- COOL! [YAML Multiline](https://yaml-multiline.info/). Find the right syntax for your YAML multiline strings
+- ebook [Ready for R](https://ready4r.netlify.app/mailing/)
+- [Principal Component Analysis (PCA)](https://bayesbaes.github.io/2021/01/28/PCA-tutorial.html)
+- [Анализ сетей (графов) в среде R – Дуглас Люк](https://www.litres.ru/duglas-luk/analiz-setey-grafov-v-srede-r-43643075/)
+- [A legible monospace font... the very typeface you’ve been trained to recognize since childhood](dtinth.github.io/comic-mono-font/)
+- [RPubs - Разные способы нормализации данных и оценка их успешности](https://rpubs.com/lapotok/data_normalization)
+- [export_names() function #1866](https://github.com/h2oai/datatable/issues/1866)
+- [export_names= should return exported variables instead of injecting into global namespace #2184](https://github.com/h2oai/datatable/issues/2184)
+- [Как обработать датафрейм с миллиардами записей за считанные секунды?]https://habr.com/ru/company/ruvds/blog/505624/)
+- [{rsthemes}](https://www.garrickadenbuie.com/project/rsthemes/)
+- COOL! [xaringanBuilder](https://jhelvy.github.io/xaringanBuilder/). Build xaringan slides to multiple output formats
+
+## DS
+- Любопытно. [Heap Illuminate](https://heap.io/product/heap-illuminate)
+With Heap Illuminate, teams gain the benefit of a complete and trusted behavioral dataset with integrated and automated data science. As you perform queries, Heap analyzes digital user behavior in the background, evaluating conversion paths of every visitor to identify the most important points of friction. Heap proactively surfaces hidden opportunities for fast, clear improvement.
+
+# 14.06.2021
+## R
+- [Ten Awesome Recent Developments in R](https://towardsdatascience.com/ten-awesome-recent-developments-in-r-6bfad46299a0). If you haven’t been keeping on top of things recently, here are ten things you should know about
+- [GitHub Actions for the R language](https://github.com/r-lib/actions)
+- [Spatiotemporal Arrays: Raster and Vector Datacubes](https://github.com/r-spatial/stars)
+- [shinyvalidate](https://rstudio.github.io/shinyvalidate/) adds input validation capabilities to Shiny
+- COOL! Benchmarks. [How to convert a matrix to a list of column-vectors in R?](https://stackoverflow.com/questions/6819804/how-to-convert-a-matrix-to-a-list-of-column-vectors-in-r)
+- COOL! [Don't save/load user workspace between sessions](https://usethis.r-lib.org/reference/use_blank_slate.html). `use_blank_slate(scope = c("user", "project"))`
+- Slides [Filling your bag of workflow tricks](https://mpaulacaldas.github.io/r-ladies-workflow/#1)
+- [Randomly insert NAs into dataframe proportionaly](https://stackoverflow.com/questions/27454265/randomly-insert-nas-into-dataframe-proportionaly)
+- [Generating Random Dates in R](https://stackoverflow.com/questions/21502332/generating-random-dates)
+
+## Rmarkdown
+- COOL! [RStudio addin for wrapping RMarkdown paragraphs](https://github.com/tjmahr/WrapRmd). You highlight the text, and hit `Ctrl/Cmd + Shift + /` to wrap the text and get.
+- [ThinkR-open/remedy](https://github.com/ThinkR-open/remedy). RStudio Addins to Simplify Markdown Writing
+
+
+## TileDB
+- [A night on the tiles](https://resources.symbolix.com.au/2021/05/28/tiledb-and-r/)
+
 # 09.06.2021
 ## R
 - COOL! [Displaying tables as grid graphics](https://cran.r-project.org/web/packages/gridExtra/vignettes/tableGrob.html)
@@ -1128,6 +1167,8 @@ f = function(x, ...) {
 
 # 27.05.2021
 ## DS
+- [PDFsam Basic](https://pdfsam.org/). PDFsam Basic is our free and open source desktop application to split, merge, extract pages, rotate and mix PDF files
+- [Чудесный мир Word Embeddings: какие они бывают и зачем нужны?](https://habr.com/ru/company/ods/blog/329410/)
 - [Introducing WebContainers: Run Node.js natively in your browser](https://blog.stackblitz.com/posts/introducing-webcontainers/)
 - [Чем отличаются ссылки от указателей в С++](https://ru.stackoverflow.com/questions/349/%D0%A7%D0%B5%D0%BC-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B0%D1%8E%D1%82%D1%81%D1%8F-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8-%D0%BE%D1%82-%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9-%D0%B2-%D0%A1)
 - COOL! [What are the differences between a pointer variable and a reference variable in C++?](https://stackoverflow.com/questions/57483/what-are-the-differences-between-a-pointer-variable-and-a-reference-variable-in). Все разложено по полочкам.
@@ -1257,6 +1298,7 @@ Remember to leave a new line at the bottom of the file.
 ## Math
 - [How to analyze visual analog (slider) scale data?](https://mvuorre.github.io/posts/2019-02-18-analyze-analog-scale-ratings-with-zero-one-inflated-beta-models/). PSYCHOLOGY STATISTICS TUTORIAL R BRMS
 - Поиск максимальных совпадающих цепочек в строках. [LCSn: Find longest common substring from 'n' strings.](https://rdrr.io/cran/PTXQC/man/LCSn.html). В `stringdist` есть метод `lcs`
+- COOL! [Common statistical tests are linear models (or: how to teach stats)](https://lindeloev.github.io/tests-as-linear/)
 
 ## DS
 - [Латентное размещение Дирихле (LDA)](https://lambda-it.ru/post/tematicheskoe-modelirovanie-v-deistvii-lda)
@@ -1935,6 +1977,7 @@ rm(`*tmp*`)
 - [HTML Special Features: KU CRMDA Markdown](https://cran.r-project.org/web/packages/stationery/vignettes/HTML_special_features.html#colored-callouts). This guide describes several key features/functionalities of R Markdown for producing colorful and vivid HTML documents.
 - COOL! [Introducing shiny.semantic::grid() – Build Your Shiny Dashboard Layout in Seconds](https://appsilon.com/shiny-semantic-grid/)
 - COOL! [prettydoc. Creating Pretty Documents From R Markdown](https://prettydoc.statr.me/)
+- COOL! [Example R Markdown output with panelset](https://pkg.garrickadenbuie.com/xaringanExtra/#/panelset?id=use-in-r-markdown)
 
 # 20.01.2021
 ## R

@@ -1,4 +1,5 @@
 - [Jeep Wrangler Rubicon RC, Designer Sheepo](https://rebrickable.com/mocs/MOC-5140/Sheepo/jeep-wrangler-rubicon-rc/#buy_parts)
-- [����� �� ����������� LEGO Technic 42054 CLAAS XERION 5000 TRAC VC](https://www.onlinetrade.ru/catalogue/konstruktori_lego-c105/lego/fullreviews/konstruktor_lego_technic_42054_claas_xerion_5000_trac_vc_42054_lego-566050-r31223.html)
+- [Обзор на Конструктор LEGO Technic 42054 CLAAS XERION 5000 TRAC VC](https://www.onlinetrade.ru/catalogue/konstruktori_lego-c105/lego/fullreviews/konstruktor_lego_technic_42054_claas_xerion_5000_trac_vc_42054_lego-566050-r31223.html)
 - [{MOD} 42054 Motorized Claas Xerion 5000 Trac VC](http://www.eurobricks.com/forum/index.php?/forums/topic/138277-mod-42054-motorized-claas-xerion-5000-trac-vc/)
-- [LEGO Technic 42054 CLAAS XERION 5000 TRAC VC � �������](https://discount.ulmart.ru/goods/4162963?sort=7)
+- [LEGO Technic 42054 CLAAS XERION 5000 TRAC VC с уценкой](https://discount.ulmart.ru/goods/4162963?sort=7)
+- [Дистанционное управление поездов LEGO City – Как подключить, настроить и начать играть?](https://www.youtube.com/watch?v=NJ9lWDC2YME)
