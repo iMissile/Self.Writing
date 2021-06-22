@@ -162,8 +162,11 @@ dt[, .SD, .SDcols = !c('b', 'c')]
 - COOL! [A data.table and dplyr tour](https://atrebas.github.io/post/2019-03-03-datatable-dplyr/) Written by Atrebas on March 3, 2019
 - [R : DATA.TABLE TUTORIAL (WITH 50 EXAMPLES)](https://www.listendata.com/2016/10/r-data-table.html)
 - COOL! [Using .I to return row numbers with data.table package](https://stackoverflow.com/questions/22408306/using-i-to-return-row-numbers-with-data-table-package)
-- [What's the fastest way to subset a data.table?](https://stackoverflow.com/questions/23755839/whats-the-fastest-way-to-subset-a-data-table)
-- [data.table in r : subset using column index](https://stackoverflow.com/questions/41112658/data-table-in-r-subset-using-column-index). 
+- data.table subsetting
+	- [What's the fastest way to subset a data.table?](https://stackoverflow.com/questions/23755839/whats-the-fastest-way-to-subset-a-data-table)
+	- [Use variable in i of data.table subset](https://stackoverflow.com/questions/25663877/use-variable-in-i-of-data-table-subset)
+	- [data.table in r: subset using column index](https://stackoverflow.com/questions/41112658/data-table-in-r-subset-using-column-index).
+	- [Subsetting data.table using variables with same name as column](https://stackoverflow.com/questions/21658893/subsetting-data-table-using-variables-with-same-name-as-column?noredirect=1&lq=1)
 We can get the row index with `.I` and use that to subset the `DT`
 ```
 DT[DT[, .I[.SD==2], .SDcols = 1]]

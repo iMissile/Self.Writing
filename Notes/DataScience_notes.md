@@ -1064,6 +1064,21 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+
+
+# 22.06.2021
+## R
+- COOL! Blog [Elements of Evolutionary Anthropology](https://elevanth.org/blog/)
+	- [Regression, Fire, and Dangerous Things (1/3)](https://elevanth.org/blog/2021/06/15/regression-fire-and-dangerous-things-1-3/)
+	- [Regression, Fire, and Dangerous Things (2/3)](https://elevanth.org/blog/2021/06/21/regression-fire-and-dangerous-things-2-3/)	
+- Slides. [A Little JS Goes a Long Way](https://alittlejs.netlify.app/#1) by Maya Gans. [repo](https://github.com/MayaGans/alittlejs)
+
+## Julia
+- [Is Julia Really Fast?](https://medium.com/codex/is-julia-really-fast-12cd7caef96b) An overview of what you can and cannot expect from Julia performance. A guide to the fence sitters pondering whether to use Julia for high performance computing.
+	- [ACCU 2020 SCHEDULE](https://accu.org/conf-previous/2021/schedule/)
+- [Julia for VSCode](https://www.julia-vscode.org/)
+
+
 # 18.06.2021
 ## R
 - COOL! [YAML Multiline](https://yaml-multiline.info/). Find the right syntax for your YAML multiline strings
