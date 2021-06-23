@@ -343,6 +343,7 @@ flights_tb %>%
 - [R Tutorial: Data.Table](https://www.dezyre.com/data-science-in-r-programming-tutorial/r-data-table-tutorial)
 - [R – Data.Table Rolling Joins](https://gormanalysis.com/r-data-table-rolling-joins/)
 - COOL! [Understanding data.table Rolling Joins](https://r-norberg.blogspot.com/2016/06/understanding-datatable-rolling-joins.html)
+- [non-equi merge in data.table and epidemiology](https://scitilab.com/post_data/non_equi_joins/2020_11_17_non_equi_merge/)
 - COOL! [The unequalled joy of non-equi joins](https://selbydavid.com/2021/02/13/joins/)
 - [How does one do a full join using data.table?](https://stackoverflow.com/questions/15170741/how-does-one-do-a-full-join-using-data-table)
 - [.EACHI in data.table?](https://stackoverflow.com/questions/27004002/eachi-in-data-table).
@@ -350,8 +351,6 @@ flights_tb %>%
 - COOL! детальный анализ производительности join решений в data.table. [How to apply same function to every specified column in a data.table](https://stackoverflow.com/questions/16846380/how-to-apply-same-function-to-every-specified-column-in-a-data-table). 
 ```cols2 <- c("reg_date", "delreq_date"); .[ , (cols2) := lapply(.SD, anytime::anydate), .SDcols = cols2]```
 	- use `mget`. [Replace specific values based on another dataframe](https://stackoverflow.com/a/37994369/2204410). `DF1[DF2, on = .(date, id), names(DF2)[3:4] := mget(paste0("i.", names(DF2)[3:4]))]`
-- [non-equi merge in data.table and epidemiology](https://scitilab.com/post_data/non_equi_joins/2020_11_17_non_equi_merge/)
-- COOL! [The unequalled joy of non-equi joins](https://selbydavid.com/2021/02/13/joins/)
 - Здесь про join в data.table: [Enhanced data.frame](https://rdatatable.gitlab.io/data.table/reference/data.table.html)
 Навеяно темой антиджойнов
 - COOL! [Why does X\[Y\] join of data.tables not allow a full outer join, or a left join?](https://stackoverflow.com/questions/12773822/why-does-xy-join-of-data-tables-not-allow-a-full-outer-join-or-a-left-join)
@@ -383,10 +382,11 @@ The way to read this out loud is: "Take DT, subset rows by i, then compute j gro
 - [Joining verbs for data.table](https://cran.r-project.org/web/packages/table.express/vignettes/joins.html)
 - [JOINing data in R using data.table](https://rstudio-pubs-static.s3.amazonaws.com/52230_5ae0d25125b544caab32f75f0360e775.html)
 - [How to perform merges (joins) on two or more data frames with base R, tidyverse and data.table](https://jozef.io/r006-merge/)
-- [Finding Overlaps between interval sets / Efficient Overlap Joins](https://stackoverflow.com/questions/25815032/finding-overlaps-between-interval-sets-efficient-overlap-joins)
 - [Left join using data.table](https://stackoverflow.com/questions/34598139/left-join-using-data-table)
+- [Finding Overlaps between interval sets / Efficient Overlap Joins](https://stackoverflow.com/questions/25815032/finding-overlaps-between-interval-sets-efficient-overlap-joins)
 - COOL! 2014.09 New feature - [Overlapping range joins for Genomics by Arun Srinivasan](2014.09 New feature - Overlapping range joins for Genomics by Arun Srinivasan, history and benchmarks by Matt Dowle and four hour workshop, EARL Conference London [agenda] [ TO DO - link to video ]), history and benchmarks by Matt Dowle and four hour workshop, EARL Conference London
 - COOL! [Overlap joins in R: a speed comparison with packages sqldf and data.table](https://www.zevross.com/blog/2015/07/09/overlap-joins-in-r-a-speed-comparison-with-packages-sqldf-and-data-table-3/)
+- [IN BETWEEN A ROCK AND A CONDITIONAL JOIN](https://www.mango-solutions.com/in-between-a-rock-and-a-conditional-join/)
 - [Joins and conditional matching with data.table](https://aglhurley.rbind.io/2019/02/10/joins-with-data-table/)
 
 ## data.table lookup

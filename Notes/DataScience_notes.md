@@ -1066,12 +1066,44 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 
 
 
+# 23.06.2021
+## R
+- COOL! Debug. [DEBUGGING MEMORY ERRORS WITH VALGRIND AND GDB](https://reside-ic.github.io/blog/debugging-memory-errors-with-valgrind-and-gdb/)
+- [shinyglide](https://juba.github.io/shinyglide/) is an R package which provides carousel-like or assistant-like components to shiny applications, thanks to the Glide JavaScript library.
+- [Exploring Other {ggplot2} geoms](https://ivelasq.rbind.io/blog/other-geoms/)
+- [Introduction to ggpiestats](https://indrajeetpatil.github.io/ggstatsplot/articles/web_only/ggpiestats.html). The function ggpiestats can be used for quick data exploration and/or to prepare publication-ready pie charts to summarize the statistical relationship(s) among one or more categorical variables.
+- [How to create your personal CRAN-like repository on R-universe](https://ropensci.org/blog/2021/06/22/setup-runiverse/)
+- COOL! [`job`: free your RStudio console](https://lindeloev.github.io/job/)
+- [Shiny Apps with Docker Compose, Part 1: Development](https://hosting.analythium.io/shiny-apps-with-docker-compose-part-1-development/)
+- [Shiny Apps with Docker Compose, Part 2: Production](https://hosting.analythium.io/shiny-apps-with-docker-compose-part-2-production/)
+
+## RMarkdown
+- [One Little Thing: The Docco Style with `knitr::rocco()`](https://yihui.org/en/2021/06/knitr-rocco/) A two-column HTML layout to show prose and code side by side
+
+## Алгоримт Дейкстры
+- [Нахождение кратчайших путей от заданной вершины до всех остальных вершин алгоритмом Дейкстры](https://e-maxx.ru/algo/dijkstra). С доказательством и кодом.
+
 # 22.06.2021
 ## R
 - COOL! Blog [Elements of Evolutionary Anthropology](https://elevanth.org/blog/)
 	- [Regression, Fire, and Dangerous Things (1/3)](https://elevanth.org/blog/2021/06/15/regression-fire-and-dangerous-things-1-3/)
-	- [Regression, Fire, and Dangerous Things (2/3)](https://elevanth.org/blog/2021/06/21/regression-fire-and-dangerous-things-2-3/)	
+	- [Regression, Fire, and Dangerous Things (2/3)](https://elevanth.org/blog/2021/06/21/regression-fire-and-dangerous-things-2-3/)
 - Slides. [A Little JS Goes a Long Way](https://alittlejs.netlify.app/#1) by Maya Gans. [repo](https://github.com/MayaGans/alittlejs)
+- Привет) @semenoffalex, не знаю, актуально еще или нет, но кажется, я разобрался, как всегда получать нормальную кирилицу от RMySQL.
+Надо не только прописать `dbSendQuery(conn, "SET NAMES cp1251")`. Это позволит считывать из БД данные которые в существующую таблицу записаны кириллицей. Но если столбец создан select-запросом и обозван кириллицей, или в его ячейках есть кириллица, то все равно будут возвращаться крякозябры.
+Чтобы этого не было надо создать функцию:
+```
+set_utf8 <- function(x) {
+  # Declare UTF-8 encoding on all character columns:
+  chr <- sapply(x, is.character)
+  x[, chr] <- lapply(x[, chr, drop = FALSE], `Encoding<-`, "UTF-8")
+  # Same on column names:
+  Encoding(names(x)) <- "UTF-8"
+  x
+}
+```
+И потом каждый раз оборачивать в нее запрос к БД:
+`from_base <- set_utf8(dbGetQuery(conn, query))`
 
 ## Julia
 - [Is Julia Really Fast?](https://medium.com/codex/is-julia-really-fast-12cd7caef96b) An overview of what you can and cannot expect from Julia performance. A guide to the fence sitters pondering whether to use Julia for high performance computing.
