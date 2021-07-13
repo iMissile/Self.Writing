@@ -3,6 +3,7 @@
 - [Поддержка \No убрана из babel](https://www.linux.org.ru/forum/general/9583562). 
 Вообще да, можно вставить `\newcommand{\No}{\textnumero}` в преамбулу документа и все будет работать.
 - [The Russian Language in the babel system , Igor A. Kotelnikov](http://ctan.math.illinois.edu/languages/babel/contrib/russian/russianb.pdf).  ... Since earlier versions babel did not support XeLATEX (at least for some languages including Russian), the polyglossia package was generally recommended in the past for use with XeLATEX as a replacement for babel. Nowadays, babel can be used with any engines, including LATEX, PDFLATEX, LuaLATEX, and XeLATEX. Nevertheless some troubles may occur with some languages which have no promptly updated .ldf files.
+- [LaTeX/polyglossia](https://ru.wikibooks.org/wiki/LaTeX/polyglossia)
 - [Polyglossia vs Babel](https://tex.stackexchange.com/questions/88481/polyglossia-vs-babel)
 - [Polyglossia: An Alternative to Babel for XeLEATEX and LuaLATEX](http://mirrors.ibiblio.org/CTAN/macros/xetex/latex/polyglossia/polyglossia.pdf)
 - [How to Write Multilingual Text with Different Scripts in LaTeX](https://www.overleaf.com/latex/examples/how-to-write-multilingual-text-with-different-scripts-in-latex/wfdxqhcyyjxz#.W6D44mj7SUk)
@@ -10,6 +11,7 @@
 - [Changing language back and forth with polyglossia](https://tex.stackexchange.com/questions/186156/changing-language-back-and-forth-with-polyglossia)
 - Артефакты babel. 'miktex "\bbl@beforestart"'.
 - [ShareLaTeX XeLaTeX user guide](https://ru.sharelatex.com/learn/latex/XeLaTeX)
+- [Multilingual typesetting on Overleaf using polyglossia and fontspec](https://ru.overleaf.com/learn/latex/Multilingual_typesetting_on_Overleaf_using_polyglossia_and_fontspec)
 - [Overleaf: What OTF/TTF fonts are supported via fontspec?](https://www.overleaf.com/help/193-what-otf-slash-ttf-fonts-are-supported-via-fontspec#.W6EG_Gj7SUk)
 - [Overleaf: Gallery — Fonts](https://www.overleaf.com/gallery/tagged/fonts#.W6EG-mj7SUk)
 - [Overleaf: I have a custom font I'd like to load to my document. How can I do this?](https://www.overleaf.com/help/73-i-have-a-custom-font-id-like-to-load-to-my-document-how-can-i-do-this#.W6EHzGj7SUk)
@@ -145,3 +147,6 @@ New documents should use the regular `caption' package v3.x instead.`
 - [sort biblatex bibliography by appearance of cites in the document {duplicate}](https://tex.stackexchange.com/questions/116088/sort-biblatex-bibliography-by-appearance-of-cites-in-the-document)
 - [Biblatex citation order](https://tex.stackexchange.com/questions/51434/biblatex-citation-order)
 - [How do I cite range of references? {duplicate}](https://tex.stackexchange.com/questions/103792/how-do-i-cite-range-of-references?noredirect=1&lq=1). The tags you used suggest that you use `biblatex`. In this case you could use one of the styles anding on `-comp`.
+
+## Управление с проектами
+- [Management in a large project](https://ru.overleaf.com/learn/latex/Management_in_a_large_project)

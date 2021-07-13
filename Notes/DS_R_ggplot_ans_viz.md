@@ -259,14 +259,17 @@ If you just want to prevent two lines from overlapping exactly, there is now a b
 - [ggformula](http://www.mosaic-web.org/ggformula/index.html). ggformula introduces a family of graphics functions, `gf_point()`, `gf_density()`, and so on, bring the formula interface to `ggplot()`.
 - [Aesthetic specifications](https://ggplot2.tidyverse.org/articles/ggplot2-specs.html). Здесь также про то, как работать с кастомными шрифтами.
 - [Cookbook for R GraphsFonts](http://www.cookbook-r.com/Graphs/Fonts/)
-- [10 Tips to Customize Text Color, Font, Size in ggplot2 with `element_text()`](https://cmdlinetips.com/2021/05/tips-to-customize-text-color-font-size-in-ggplot2-with-element_text/)
 - [12 Extensions to ggplot2 for More Powerful R Visualizations](https://mode.com/blog/r-ggplot-extension-packages/)
+- [10 Tips to Customize Text Color, Font, Size in ggplot2 with `element_text()`](https://cmdlinetips.com/2021/05/tips-to-customize-text-color-font-size-in-ggplot2-with-element_text/)
 - [15 Tips to Customize lines in ggplot2 with element_line()](https://cmdlinetips.com/2021/05/tips-to-customize-lines-in-ggplot2-with-element_line/)
 - [8 tips to use element_blank() in ggplot2 theme](https://cmdlinetips.com/2021/06/ggplot2-theme-element_blank-tips/)
 - COOL! Как эффективно применить `ggfx` [Better data communication with {ggplot2}, part 2](https://giulia-ruggeri.medium.com/better-data-communication-with-ggplot2-part-2-615a5180ccb)
 - COOL! [gghighlight 0.3.2](https://yutani.rbind.io/post/2021-06-07-gghighlight-032/)
 - [ggsunburst](https://github.com/didacs/ggsunburst). ggsunburst offers a set of tools to plot adjacency diagrams using ggplot2.
 - [grafify](https://grafify-vignettes.netlify.app/) An R package for easy graphs, ANOVAs and post-hoc comparisons
+- [Streetmaps](https://ggplot2tutor.com/tutorials/streetmaps). Create a streetmap of your favorite city with ggplot2 and powerpoint
+- [Off-label uses in ggplot2](https://www.tidyverse.org/blog/2021/06/off-label-uses-in-ggplot2/)
+- [Scatterplot with automatic text repel](http://www.r-graph-gallery.com/web-scatterplot-and-ggrepel.html)
 
 ## facet
 - [Useful labeller functions](https://ggplot2.tidyverse.org/reference/labellers.html). Labeller functions are in charge of formatting the strip labels of facet grids and wraps. 
@@ -299,7 +302,7 @@ storeLabeller <- function(string) {
       ylab("Отрицательный остаток") +
       ggtitle(label = "Динамика совокупных остатков")
 ```
-
+- [Overlaying facetted histograms with normal curve using ggplot2](https://data-se.netlify.app/2021/06/23/overlaying-facetted-histograms-with-normal-curve-using-ggplot2/)
 
 # other
 - COOL! [Altair: Declarative Visualization in Python](https://altair-viz.github.io/)

@@ -169,6 +169,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Supplement to Shiny in Production](https://kellobri.github.io/shiny-prod-book/)
 - [What They Forgot to Teach You About R](https://whattheyforgot.org/) by Jennifer Bryan, Jim Hester
 - COOL! [Data Science at the Command Line](https://www.datascienceatthecommandline.com/) by Jeroen Janssens, August 16, 2019
+- [Data Science at the Command Line, 2e](https://www.datascienceatthecommandline.com/2e/) by Jeroen Janssens
 - [Mike McQuaid. Git In Practice](https://mikemcquaid.com/gitinpractice/)
 	- [MikeMcQuaid/GitInPractice](https://github.com/MikeMcQuaid/GitInPractice). An opinionated intermediate/advanced Git book http://www.manning.com/mcquaid/?a_aid…
 - [Offensive Programming Book](https://neonira.github.io/offensiveProgrammingBook/)
@@ -211,6 +212,10 @@ Way back in August 2020, I launched Big Book of R, a collection of free (and som
 This is a list of R developers and advocates on Github. This is to help new comers create a following list.
 - [Beyond Multiple Linear Regression. Applied Generalized Linear Models and Multilevel Models in R](https://bookdown.org/roback/bookdown-BeyondMLR/) by Paul Roback and Julie Legler
 - [Graph Representation Learning Book](https://www.cs.mcgill.ca/~wlh/grl_book/) by William L. Hamilton, McGill University
+- [Bayes Rules! An Introduction to Bayesian Modeling with R](https://www.bayesrulesbook.com/)
+- [Introduction to Modern Statistics](https://openintro-ims.netlify.app/)
+- [Modern Data Science with R, 2nd edition](https://mdsr-book.github.io/mdsr2e/) by Benjamin S. Baumer, Daniel T. Kaplan, and Nicholas J. Horton
+
 
 # Articles
 - [Using AWK and R to parse 25tb](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/)
@@ -1064,7 +1069,81 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 08.07.2021
+## UseR 2021!
+- [Slides for my regular talk on the "R Developer's Guide" at the '1A - Community and Outreach 1' session of the useR! 2021 Conference.](https://github.com/SaranjeetKaur/useR2021_Slides_Regular_Talk)
+- [Professional, Polished, Presentable](https://presentable-user2021.netlify.app/). MAKING GREAT SLIDES WITH XARINGAN
+- [The Grammar of Experimental Design](http://emitanaka.org/slides-useR2021/#1)
 
+# 05.07.2021
+## R
+- [Working with a sparse matrix in R](https://slowkow.com/notes/sparse-matrix/)
+- [readr 2.0 planned improvments](https://github.com/tidyverse/readr/blob/master/NEWS.md)
+- COOL! [Tools for Working with JavaScript in R](https://github.com/jeroen/js)
+- [How to Scrape Data from a JavaScript Website with R](https://velaco.github.io/how-to-scrape-data-from-javascript-websites-with-R/)
+- [Draw me a project](https://masalmon.eu/2021/06/30/r-projects/)
+- [Tex math rendering in R](https://docs.ropensci.org/katex/reference/katex.html)
+- [How to find common elements from multiple vectors?](https://stackoverflow.com/questions/3695677/how-to-find-common-elements-from-multiple-vectors)
+- COOL! [Efficient Ways to Find the Intersection of Lists](https://www.baeldung.com/cs/list-intersection)
+- [RVenn: An R package for set operations on multiple sets](https://cran.r-project.org/web/packages/RVenn/vignettes/vignette.html)
+
+
+# 30.06.2021
+## Hive
+- [Apache Hive ODBC Driver](https://www.cdata.com/drivers/hive/odbc/). Read, Write, and Update Hive through ODBC Easily connect live Apache Hive data with BI, ETL, Reporting, & Custom Apps.
+- [Hive ODBC Connector 2.5.12 for Cloudera Enterprise](https://www.cloudera.com/downloads/connectors/hive/odbc/2-5-12.html)
+Easily Build BI Applications with Open Source, Interactive SQL
+- [Microsoft Hive ODBC Driver](https://www.microsoft.com/en-us/download/details.aspx?id=40886)
+- [Query Apache Hive from R using JDBC](https://gist.github.com/ianmcook/0754938648d2030b58bdfe7ce5e9a31f)
+- [New Drivers](http://www.unixodbc.org/drivers.html) EMail here to have a driver ported/tested or to request an update to this list.
+- [Протокол сетевой аутентификации Kerberos 5](https://www.ixbt.com/comm/kerberos5.shtml)
+- [Kerberos (protocol)](https://en.wikipedia.org/wiki/Kerberos_(protocol))
+- COOL! [Using Kerberos authentication for database connection](https://inbo.github.io/tutorials/installation/user/user_install_kerberos/)
+- [Read & Write from Hive](https://saagie.zendesk.com/hc/en-us/articles/360007749680-Read-Write-from-Hive)
+
+## R
+- COOL! [How R Searches and Finds Stuff](https://blog.obeautifulcode.com/R/How-R-Searches-And-Finds-Stuff/) March 29, 2012 by Suraj Gupta
+
+
+# 28.06.2021
+## SQL
+- [SQL Style Guide](https://about.gitlab.com/handbook/business-technology/data-team/platform/sql-style-guide/)
+- [Mazur's SQL Style Guide](https://github.com/mattm/sql-style-guide)
+
+## R
+- [Convert Markdown to HTML](https://markdowntohtml.com/)
+- COOL! [{shinytitle}: Change the Browser Tab Title of your Shiny App](https://ashbaldry.github.io/2021-06-17-shinytitle-0-1-0-release/)
+- [trackdown - R package for improving collaborative writing](https://ekothe.github.io/trackdown/)
+- COOL! [★ wizard zines ★ programming zines by Julia Evans (@b0rk)](https://wizardzines.com/)
+- [Efficient simulations in R](https://grantmcdermott.com/efficient-simulations-in-r/)
+- [gratia](https://gavinsimpson.github.io/gratia/). Graceful ‘ggplot’-based graphics and utility functions for working with generalized additive models (GAMs) fitted using the ‘mgcv’ package.
+- COOL! [Rainette](https://juba.github.io/rainette/index.html) is an R package which implements a variant of the Reinert textual clustering method
+- [Shiny and Rmarkdown Image Galleries](https://mrjoh3.github.io/p/shiny-image-gallery-examples/)
+- [HANDLING HETEROSCEDASTICITY: A SHORT, PRACTICAL INTRODUCTION TO ROBUST ESTIMATORS](https://www.orbisantanalytics.com/heteroscedasticity)
+
+# 25.06.2021
+## R
+- COOL! [Winners of the 3rd annual Shiny Contest](https://blog.rstudio.com/2021/06/24/winners-of-the-3rd-annual-shiny-contest/) by Mine Çetinkaya-Rundel, 2021-06-24
+- [jtools](https://cran.r-project.org/web/packages/jtools/vignettes/summ.html). Tools for summarizing and visualizing regression models
+- [Python in RStudio with Reticulate](https://alhdzsz.netlify.app/post/getting-started/)
+- COOL! [Rendering PowerPoint Presentations with the RStudio IDE](https://support.rstudio.com/hc/en-us/articles/360004672913-Rendering-PowerPoint-Presentations-with-RStudio)
+- [R client for Apache Kafka](https://github.com/uptake/fRanz)
+- Q: Русский текст из MySQL выдает в R как `??????`. Как решается эта проблема?
+  A: Надо не только прописать `dbSendQuery(conn, "SET NAMES cp1251")`. Это позволит считывать из БД данные которые в существующую таблицу записаны кириллицей. Но если столбец создан select-запросом и обозван кириллицей, или в его ячейках есть кириллица, то все равно будут возвращаться крякозябры.
+
+Чтобы этого не было надо создать функцию:
+```
+set_utf8 <- function(x) {
+  # Declare UTF-8 encoding on all character columns:
+  chr <- sapply(x, is.character)
+  x[, chr] <- lapply(x[, chr, drop = FALSE], `Encoding<-`, "UTF-8")
+  # Same on column names:
+  Encoding(names(x)) <- "UTF-8"
+  x
+}
+```
+
+И потом каждый раз оборачивать в нее запрос к БД: `from_base <- set_utf8(dbGetQuery(conn, query))`
 
 # 23.06.2021
 ## R
@@ -1076,9 +1155,11 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! [`job`: free your RStudio console](https://lindeloev.github.io/job/)
 - [Shiny Apps with Docker Compose, Part 1: Development](https://hosting.analythium.io/shiny-apps-with-docker-compose-part-1-development/)
 - [Shiny Apps with Docker Compose, Part 2: Production](https://hosting.analythium.io/shiny-apps-with-docker-compose-part-2-production/)
+- [txtq: A Small Message Queue for Parallel Processes](https://cran.r-project.org/web/packages/txtq/index.html)
 
 ## RMarkdown
 - [One Little Thing: The Docco Style with `knitr::rocco()`](https://yihui.org/en/2021/06/knitr-rocco/) A two-column HTML layout to show prose and code side by side
+- Learning. [Deploying xaringan Slides: A Ten-Step GitHub Pages Workflow](https://silvia.rbind.io/blog/deploying-xaringan-slides/)
 
 ## Алгоримт Дейкстры
 - [Нахождение кратчайших путей от заданной вершины до всех остальных вершин алгоритмом Дейкстры](https://e-maxx.ru/algo/dijkstra). С доказательством и кодом.
@@ -1105,11 +1186,6 @@ set_utf8 <- function(x) {
 И потом каждый раз оборачивать в нее запрос к БД:
 `from_base <- set_utf8(dbGetQuery(conn, query))`
 
-## Julia
-- [Is Julia Really Fast?](https://medium.com/codex/is-julia-really-fast-12cd7caef96b) An overview of what you can and cannot expect from Julia performance. A guide to the fence sitters pondering whether to use Julia for high performance computing.
-	- [ACCU 2020 SCHEDULE](https://accu.org/conf-previous/2021/schedule/)
-- [Julia for VSCode](https://www.julia-vscode.org/)
-
 
 # 18.06.2021
 ## R
@@ -1128,6 +1204,7 @@ set_utf8 <- function(x) {
 ## DS
 - Любопытно. [Heap Illuminate](https://heap.io/product/heap-illuminate)
 With Heap Illuminate, teams gain the benefit of a complete and trusted behavioral dataset with integrated and automated data science. As you perform queries, Heap analyzes digital user behavior in the background, evaluating conversion paths of every visitor to identify the most important points of friction. Heap proactively surfaces hidden opportunities for fast, clear improvement.
+- COOL! [The data team: a short story](https://erikbern.com/2021/07/07/the-data-team-a-short-story.html)
 
 # 14.06.2021
 ## R
@@ -1633,6 +1710,7 @@ https://superuser.com/questions/655273/r-locale-setting-problems-on-mac-os-x
 # 24.03.2021
 ## R
 - COOL! ALISON HILL. [Unbreak your blogdown site](https://alison.rbind.io/post/2020-12-27-blogdown-checks/)
+- [Customizing a {distill} website](https://tidytales.ca/posts/2021-06-19_distill/)
 - [typed](https://moodymudskipper.github.io/typed/) implements a type system for R, it has 3 main features:
 - от Генриха. Как обернуть дату в SQL
 ```
@@ -2594,7 +2672,6 @@ A visual story on how to find the most interesting people to follow for a Twitte
 	- [Unleash-Shiny. R/Pharma workshop (4hours)](https://github.com/RinteRface/Unleash-Shiny)
 	- [Outstanding User Interfaces with Shiny](https://divadnojnarg.github.io/outstanding-shiny-ui/) by David Granjon
 - [ambiorix](https://ambiorix.john-coene.com/#/). Web framework for R inspired by express.js.
-- ebook [Introduction to Modern Statistics](https://openintro-ims.netlify.app/)
 - [Introducing RStudio and R Markdown](https://www.pipinghotdata.com/posts/2020-09-07-introducing-the-rstudio-ide-and-r-markdown/)
 - [flair](https://r-for-educators.github.io/flair/index.html). The goal of flair is to is to provide tools for formatting R code in knitted R Markdown files.
 - [glow](https://cran.r-project.org/web/packages/glow/vignettes/vignette.html). A package for making glow-y plots

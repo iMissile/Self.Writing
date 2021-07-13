@@ -87,6 +87,7 @@ A simpler, faster alternative to git-filter-branch for deleting big files and re
 - [7.14 Git Tools - Credential Storage](https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage)
 
 # Git
+- [Git cheat sheet, extended edition](https://jan-krueger.net/git-cheat-sheet-extended-edition)
 - [Clone at Git Repo to a Different Directory](https://til.hashrocket.com/posts/z0f393xq0s-clone-at-git-repo-to-a-different-directory)
 `$ git clone https://github.com/cool_user/codez.git ~/codez-v2`
 - Как сделать клон бранча в git:
@@ -140,3 +141,85 @@ data/*
 
 output/*
 !output/.gitkeep
+
+# Миграция с Mercurial (Bitbucket кинул)
+Рабочая процедура, конвертировал локальный репозиторий и поместил в `https://github.com/iMissile/bb-import/`
+1. Ставим TortoseHG 5.0.2. Включаем в контекстном меню плагины `hg-git` и `convert`.
+2. Копируем текущий Mercurial репозиторий в резервную папку.
+3. Прогоняем в ней ниже приведенный питоновский скрипт для подготовки матчинга имен файлов в разных кодировках.
+`hg manifest --all | C:\Rtools\mingw_64\opt\bin\python.exe rename.py > rename.txt`
+4. Создаем локально bare репозиторий git (в какой-нибудь папке)
+`git init --bare bare_repo`
+5. В директории с Mercurail репозиторием навешиваем бранч `hg` на репозиторий и делаем коммит в bare git репозиторий
+`hg bookmarks hg`
+`hg push path\to\bare_repo`
+6. Делаем обычный клон non-bare репозитория, ключевой момент -- вытягиваем бранч hg, чтобы не получить ошибку 'remote HEAD refers to nonexisting ref, unable to checkout'
+`git clone -b hg git_bare_repo git_regular_repo`, например, `git clone -b hg D:\tmp\0\bare_repo D:\tmp\0\bb_import`
+7. Создаем чистый репозиторий в GitHub
+8. Переносим remote в локальном репозитории на github: 
+`git remote set-url origin https://github.com/iMissile/bb-import.git`
+9. Загоняем все в облако
+`git push -u --all`
+10. Переименуем в облаке бранч hg в master, пользуемся подсказками github для перенастройки локального репозитория тоже:
+```
+git branch -m hg master
+git fetch origin
+git branch -u origin/master master
+git remote set-head origin -a
+```
+11. ВСЁ, победа! Файлы на русском языке, комментарии тоже.
+
+- [Free Mercurial Hosting With Helix TeamHub](https://www.perforce.com/hth/mercurial-hosting)
+	- [Migrating existing Mercurial (HG) repositories to Helix TeamHub](https://www.perforce.com/manuals/teamhub-user/Content/HTH-User/mercurial.html)
+	- [Code Repository Software. Mercurial. Git. SVN. Maven. Ivy. Docker. And more.](https://www.perforce.com/products/helix-teamhub)
+- [Converting Mercurial Repositories to Git on Windows](https://helgeklein.com/blog/converting-mercurial-repositories-to-git-on-windows/)
+- [Converting Mercurial folder to a Git repository](https://stackoverflow.com/questions/10710250/converting-mercurial-folder-to-a-git-repository/31827990#31827990)
+- [the Hg-Git mercurial plugin](https://hg-git.github.io/)
+- [About GitHub Importer](https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/about-github-importer)
+If you have source code in Subversion, Mercurial, Team Foundation Version Control (TFVC), or another Git repository, you can move it to GitHub using GitHub Importer.
+- [Переход с Mercurial на GIT в Atlassian Bitbucket с сохранением файлов в кириллице](https://habr.com/ru/post/483454/). В комментариях:
+Получилось сконвертировать из Mercurial в Git репозиторий, содержащий русскоязычные имена файлов, и созданный на TortoiseHg 3.5.2 под Windows.
+
+Конвертация удалась на версии TortoiseHg 5.0.2 (на многих других версиях, как более старых, так и более новых, конвертация оказывалась невозможна, где то расширение hg-git не работает, где то ещё что то). Эта версия под винду включает в себя расширение hg-git, никаких других расширений устанавливать не было необходимости.
+`hg manifest --all | C:\Rtools\mingw_64\opt\bin\python.exe rename.py > rename.txt`
+
+```
+#!/usr/bin/python
+# -*- coding: cp1251 -*-
+
+import sys
+for path in sys.stdin:
+    old = path[:-1] # strip newline
+    new = old.decode("cp1251").encode("utf-8")
+    print 'rename "%s" "%s"' % (old, new)
+```
+- `hg convert --filemap rename.txt D:\tmp\0\iwork.HG.clone D:\tmp\0\hg_temp`. Только convert надо включать в extension HG или TortoisehHG
+- `hg push D:\tmp\0\bare_repo`
+- `git clone D:\tmp\0\bare_repo -b hg D:\tmp\0\bb_import` # клонируем конкретную ветку
+- меняем внешний репозиторий на облачный гит
+- делаем пуш всех веток: `git push -u --all`
+получаем ошибку "remote HEAD refers to nonexisting ref, unable to checkout". [warning: remote HEAD refers to nonexistent ref, unable to checkout](https://stackoverflow.com/questions/11893678/warning-remote-head-refers-to-nonexistent-ref-unable-to-checkout)
+Смотрим с помощью `git branch -a`. Видим букмарк `hg`
+[Изыскания](https://stackoverflow.com/questions/10710250/converting-mercurial-folder-to-a-git-repository/31827990#31827990)
+The hg bookmark is necessary to prevent problems as otherwise hg-git pushes to the currently checked out branch confusing Git. This will create a branch named hg in the Git repository. To get the changes in master use the following commands (only necessary in the first run, later just use git merge or rebase):
+Делаем в клоне репозитория
+```
+$ cd git-repo
+$ git checkout -b hg
+```
+
+- [Mercurial convert with --filemap fails with any dummy rename](https://stackoverflow.com/questions/57430015/mercurial-convert-with-filemap-fails-with-any-dummy-rename)
+
+- [How to Convert a Mercurial Repository to Git on Windows](https://markheath.net/post/how-to-convert-mercurial-repository-to)
+ 	- Step 1 – Clone hg-git
+ 	- Step 2 - Add hg-git as an extension
+	- Step 3 – Create a bare git repo to convert into
+		`git init --bare git_repo`
+	- Step 4 – Push to Git from Mercurial
+		`hg bookmarks hg`
+		`hg push path\to\git_repo`
+	- Step 5 – Get a non-bare git repository
+		`git clone git_bare_repo git_regular_repo`
+- **Решение**
+	- Был hg репозиторий на локальной машине, запушил его на Helix TeamHub
+	- GitHub Importer -- импортируем с Helix на GH
