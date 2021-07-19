@@ -1069,6 +1069,31 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 14.07.2021
+## DS
+- [Грандиозное тестирование батареек](https://ammo1.livejournal.com/573394.html)
+- [Как прогнозировать спрос и автоматизировать закупки с помощью machine learning: кейс Ozon](https://habr.com/ru/company/ozontech/blog/431950/)
+- [SageMath](https://www.sagemath.org/) is a free open-source mathematics software system licensed under the GPL. It builds on top of many existing open-source packages: NumPy, SciPy, matplotlib, Sympy, Maxima, GAP, FLINT, R and many more. Access their combined power through a common, Python-based language or directly via interfaces or wrappers.
+Mission: Creating a viable free open source alternative to Magma, Maple, Mathematica and Matlab.
+
+## Process Mining
+- [SPQR-дерево](https://ru.wikipedia.org/wiki/SPQR-%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE)
+- [Algorithm for generating a tree decomposition](https://stackoverflow.com/questions/23737690/algorithm-for-generating-a-tree-decomposition)
+- [igraph. Graph analysis](https://igraph.org/python/doc/tutorial/analysis.html). См. graph decomopistion
+- [Source and examples for identification of k-components in graphs](https://github.com/sinkovit/k-components). Код на R
+- [How can I find spqr tree using sage?](https://stackoverflow.com/questions/66975050/how-can-i-find-spqr-tree-using-sage)
+- [sage.graphs.connectivity.spqr_tree(G, algorithm='Hopcroft_Tarjan', solver=None, verbose=0)](https://doc.sagemath.org/html/en/reference/graphs/sage/graphs/connectivity.html#sage.graphs.connectivity.spqr_tree)
+Return an SPQR-tree representing the triconnected components of the graph.
+- [SPQR TREE - DATA STRUCTURES](https://www.wisdomjobs.com/e-university/data-structures-tutorial-290/spqr-tree-7267.html)
+- [SPQR Tree slides](https://slideplayer.com/slide/15954108/)
+- [LightGraphsFlows.jl: flow algorithms for LightGraphs](https://juliagraphs.org/LightGraphsFlows.jl/latest/)
+- [Spanning tree](https://en.wikipedia.org/wiki/Spanning_tree)
+
+## R
+- [rmonad](https://github.com/arendsee/rmonad)
+Chain monadic sequences into stateful, branching pipelines. As nodes in the pipeline are run, they are merged into a graph of all past operations. The resulting structure can be computed on to access not only the final results, but also node documentation, intermediate data, performance stats, and any raised messages, warnings or errors. rmonad intercepts all exceptions, which allows for pure error handling.
+- [Teaching and Learning Bayesian Statistics with {bayesrules}](bit.ly/dogucu-talks)
+
 # 08.07.2021
 ## UseR 2021!
 - [Slides for my regular talk on the "R Developer's Guide" at the '1A - Community and Outreach 1' session of the useR! 2021 Conference.](https://github.com/SaranjeetKaur/useR2021_Slides_Regular_Talk)

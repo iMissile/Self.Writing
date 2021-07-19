@@ -108,6 +108,8 @@ x5scm   https://scm.x5.ru/bms-analytics/x5-bms-diagnostics2.git (fetch)
 x5scm   https://scm.x5.ru/bms-analytics/x5-bms-diagnostics2.git (push)
 ```
 - [How To Switch Branch on Git](https://devconnected.com/how-to-switch-branch-on-git/)
+- [Git: Pull All Branches](https://careerkarma.com/blog/git-pull-all-branches/)
+`git fetch --all`, `git pull --all`
 - [A3.8 Appendix C: Команды Git - Внесение исправлений](https://git-scm.com/book/ru/v2/Appendix-C%3A-%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9)
 - [remote: fatal: pack exceeds maximum allowed size after migrate #3758](https://github.com/git-lfs/git-lfs/issues/3758)
 `git rev-list --reverse master | ruby -ne 'i ||= 0; i += 1; puts $_ if i % 2000 == 0' | xargs -I{} git push origin +{}:refs/heads/master`
@@ -120,6 +122,25 @@ f61b48cb8b1877721e2596a6aa65648a68bb605e new post
 ```
 Команда `git rev-list --reverse master` дает список коммитов в прямом хронологическом порядке, от начала до текущего момента
 Дальше помещаем коммит за коммитом: `git push x5scm 10955ac50fb90220c03d077d2cb4e79d01a3bea0:refs/heads/master`. Важная добавка -- в конце после :
+```
+library(tidyverse)
+library(processx)
+library(stringi)
+
+
+# m <- processx::run("git", args = c("log", "--pretty=oneline"))
+# получаем список коммитов от даты создания и до текущего момента
+sha <- processx::run("git", args = c("rev-list", "--reverse", "master"))
+
+unlist(stri_split_lines(sha$stdout, omit_empty = TRUE)) %>%
+  # walk(~{print(.x)})
+  walk(~{
+    processx::run("git", args = c("push", "x5scm", paste0(.x, ":refs/heads/master")),
+                  # если коммиты идут поверх, пропускаем ошибки
+                  error_on_status = FALSE, echo_cmd = TRUE, echo = TRUE)
+      # print()
+  })
+```
 
 # GitHub authentication
 - [Git push results in “Authentication Failed”](https://stackoverflow.com/questions/17659206/git-push-results-in-authentication-failed). Снимаем галочки при инсталляции, чистим Windows Credential Manager
