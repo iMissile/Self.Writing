@@ -122,6 +122,13 @@ Get our free online math tools for graphing, geometry, 3D, and more!
 
 ```
 - [Адаптация шаблона отчета о НИР в XeTeX](http://dkhramov.dp.ua/Comp.NIRReportXeTeX#.XbijF5ozaUk)
+- [LaTeX: Numero sign ('№') {duplicate}](https://tex.stackexchange.com/questions/40564/latex-numero-sign). `\textnumero`
+- [What's the best way to write e-mail addresses?](https://tex.stackexchange.com/questions/268/whats-the-best-way-to-write-e-mail-addresses).
+There are a number of things that you can try:
+(with the hyperref package):
+`\url{email address}`
+or more simply (for monospace font):
+`\texttt{email address}`
 
 ## Попытка скомпилировать старые проекты в MikTeX 2019 года
 - ошибка `Package hyperref Warning: Option `pagecolor' is not available anymore.`. Это касалось настройки вида гиперссылок для pdf
