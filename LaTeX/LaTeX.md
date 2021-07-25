@@ -129,6 +129,7 @@ There are a number of things that you can try:
 `\url{email address}`
 or more simply (for monospace font):
 `\texttt{email address}`
+- [\newpage,\clearpage and \cleardoublepage not working](https://tex.stackexchange.com/questions/65698/newpage-clearpage-and-cleardoublepage-not-working/65699). It happens because TeX thinks the page is empty, so `\newpage` is ignored. Use ``\null\newpage instead
 
 ## Попытка скомпилировать старые проекты в MikTeX 2019 года
 - ошибка `Package hyperref Warning: Option `pagecolor' is not available anymore.`. Это касалось настройки вида гиперссылок для pdf

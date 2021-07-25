@@ -215,6 +215,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Bayes Rules! An Introduction to Bayesian Modeling with R](https://www.bayesrulesbook.com/)
 - [Introduction to Modern Statistics](https://openintro-ims.netlify.app/)
 - [Modern Data Science with R, 2nd edition](https://mdsr-book.github.io/mdsr2e/) by Benjamin S. Baumer, Daniel T. Kaplan, and Nicholas J. Horton
+- [Reproducible Medical Research with R](https://bookdown.org/pdr_higgins/rmrwr/) by Peter D.R. Higgins, MD, PhD, MSc
 
 
 # Articles
@@ -1069,12 +1070,33 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+
+
+
+# 23.07.2021
+## R
+- [Code for 'The Art of Statistics'](https://github.com/dspiegel29/ArtofStatistics)
+- [{ghee}](https://www.jdtrat.com/blog/ghee/) is a user-friendly wrapper for the {gh} package that provides client access to Github’s REST API for common tasks such as creating issues and inviting collaborators.
+- COOL! Book. [The Effect. An Introduction to Research Design and Causality](https://www.routledge.com/The-Effect-An-Introduction-to-Research-Design-and-Causality/Huntington-Klein/p/book/9781032125787)
+- [ddplot](https://feddelegrand7.github.io/ddplot/) is a package that allows you to create D3 based SVG graphics using a simple R API.
+- [Chapter 13 Sample Size Calculations with {pwr}](https://bookdown.org/pdr_higgins/rmrwr/sample-size-calculations-with-pwr.html)
+
+# 22.07.2021
+## R & ML & time-series
+- COOL! [LightGBM in R](https://www.kaggle.com/andrewmvd/lightgbm-in-r)
+- [Multi-step Time Series Forecasting with ARIMA, LightGBM, and Prophet](https://towardsdatascience.com/multi-step-time-series-forecasting-with-arima-lightgbm-and-prophet-cc9e3f95dfb0)
+Modeling with Python on different types of time series to compare the model algorithms
+- [Modeltime Ecosystem Roadmap: New Algorithms & Models #5](https://github.com/business-science/modeltime/issues/5)
+
+
 # 14.07.2021
 ## DS
+- [Feather V2 with Compression Support in Apache Arrow 0.17.0](https://ursalabs.org/blog/2020-feather-v2/)
 - [Грандиозное тестирование батареек](https://ammo1.livejournal.com/573394.html)
 - [Как прогнозировать спрос и автоматизировать закупки с помощью machine learning: кейс Ozon](https://habr.com/ru/company/ozontech/blog/431950/)
 - [SageMath](https://www.sagemath.org/) is a free open-source mathematics software system licensed under the GPL. It builds on top of many existing open-source packages: NumPy, SciPy, matplotlib, Sympy, Maxima, GAP, FLINT, R and many more. Access their combined power through a common, Python-based language or directly via interfaces or wrappers.
 Mission: Creating a viable free open source alternative to Magma, Maple, Mathematica and Matlab.
+- COOL! [Regex Legends: The People Behind the Magic](https://blog.stevenlevithan.com/archives/regex-legends)
 
 ## Process Mining
 - [SPQR-дерево](https://ru.wikipedia.org/wiki/SPQR-%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE)
@@ -1099,6 +1121,9 @@ Chain monadic sequences into stateful, branching pipelines. As nodes in the pipe
 - [Slides for my regular talk on the "R Developer's Guide" at the '1A - Community and Outreach 1' session of the useR! 2021 Conference.](https://github.com/SaranjeetKaur/useR2021_Slides_Regular_Talk)
 - [Professional, Polished, Presentable](https://presentable-user2021.netlify.app/). MAKING GREAT SLIDES WITH XARINGAN
 - [The Grammar of Experimental Design](http://emitanaka.org/slides-useR2021/#1)
+- [Slides for useR 2021 conference - pARI package](https://github.com/angeella/useR_2021)
+- [Solving Big Data Problems With Apache Arrow](https://enpiar.com/talks/user-2021/)
+- [unit testing for shiny reactivity](https://github.com/yonicd/reactor/tree/slides). yonicd.github.io/reactor
 
 # 05.07.2021
 ## R
@@ -1313,6 +1338,7 @@ f = function(x, ...) {
 
 ## python
 - [twitter #plotnine](https://twitter.com/hashtag/plotnine?src=hashtag_click)
+- [mapply](https://mapply.readthedocs.io/_/downloads/en/0.1.2/pdf/)
 
 # 27.05.2021
 ## DS

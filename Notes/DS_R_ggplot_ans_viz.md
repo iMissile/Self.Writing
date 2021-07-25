@@ -270,6 +270,7 @@ If you just want to prevent two lines from overlapping exactly, there is now a b
 - [Streetmaps](https://ggplot2tutor.com/tutorials/streetmaps). Create a streetmap of your favorite city with ggplot2 and powerpoint
 - [Off-label uses in ggplot2](https://www.tidyverse.org/blog/2021/06/off-label-uses-in-ggplot2/)
 - [Scatterplot with automatic text repel](http://www.r-graph-gallery.com/web-scatterplot-and-ggrepel.html)
+- [The ggh4x package is a ggplot2 extension package](https://teunbrand.github.io/ggh4x/index.html). It provides some utility functions that don’t entirely fit within the ‘grammar of graphics’ concept —they can be a bit hacky— but can nonetheless be useful in tweaking your ggplots. 
 
 ## facet
 - [Useful labeller functions](https://ggplot2.tidyverse.org/reference/labellers.html). Labeller functions are in charge of formatting the strip labels of facet grids and wraps. 
