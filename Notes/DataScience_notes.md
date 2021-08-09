@@ -1424,6 +1424,7 @@ The grammar of graphics as shown in 'ggplot2' has provided an expressive API for
 
 ## R VScode
 - Analytics Vidhya. [A fresh start for R in VSCode](https://medium.com/analytics-vidhya/a-fresh-start-for-r-in-vscode-ec61ed108cf6). Setting up Visual Studio Code for R development
+- [VScode: Changing the Display Language](https://code.visualstudio.com/docs/getstarted/locales). Press Ctrl+Shift+P to bring up the Command Palette then start typing "display" to filter and display the Configure Display Language command.
 - [How to integrate Python and R in Visual Studio Code](https://towardsdatascience.com/how-to-integrate-python-and-r-in-visual-studio-code-496a47c90422)
 - COOL! [R in 2021 with VSCode](https://datamares.netlify.app/en/post/r-vscode/)
 - [Writing R in VSCode: A Fresh Start](https://renkun.me/2019/12/11/writing-r-in-vscode-a-fresh-start/)
