@@ -77,6 +77,7 @@ Fast solution: `dt[dt[ , .I[sample(.N,1)] , by = z]$V1]`
 - [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)
 - [Use equivalent of purrr:::map to iterate through data.table](https://stackoverflow.com/questions/47917614/use-equivalent-of-purrrmap-to-iterate-through-data-table)
 - data.table joins
+	- COOL! [Merging all column by reference in a data.table](https://stackoverflow.com/questions/45043600/merging-all-column-by-reference-in-a-data-table)
 	- COOL! [Left join using data.table](https://stackoverflow.com/questions/34598139/left-join-using-data-table). If you want to add the b values of B to A, then it's best to join A with B and update A by reference as follows:
 ```
 A[B, on = 'a', bb := i.b]
@@ -224,17 +225,6 @@ and to x[,.SD,.SDcols=cols].
 	- [Splitting a single column into multiple observation using R](https://stackoverflow.com/questions/33113263/splitting-a-single-column-into-multiple-observation-using-r)
 	- [split column in data.table to multiple rows {duplicate}](https://stackoverflow.com/questions/34712949/split-column-in-data-table-to-multiple-rows)
 	- Прекрасный анализ различных подходов, проведение бенчмарка. [Split comma-separated strings in a column into separate rows](https://stackoverflow.com/questions/13773770/split-comma-separated-strings-in-a-column-into-separate-rows)
-- фильтрация в I по динамической переменной
-	- [How to select rows in data.table with dynamically determined column name and cut off limits?](https://stackoverflow.com/questions/33312777/how-to-select-rows-in-data-table-with-dynamically-determined-column-name-and-cut/33312823)
-```
-dt[eval(parse(text=name)) < limit]
-# OR 
-dt[eval(as.name(name))< limit] 
-# OR 
-dt[eval(as.symbol(name))< limit]
-```
-	- [Select rows in data table using a variable {duplicate}](https://stackoverflow.com/questions/39005117/select-rows-in-data-table-using-a-variable)
-	- [Filter data table by dynamic column name](https://stackoverflow.com/questions/29564002/filter-data-table-by-dynamic-column-name)
 - [data.table::setcolorder. Fast column reordering of a data.table by reference](http://search.r-project.org/library/data.table/html/setcolorder.html)
 - И опять! COOL! [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/#fast-looping-with-set)
 - [Using variable in data.table group by clause](https://stackoverflow.com/questions/31600666/using-variable-in-data-table-group-by-clause)
@@ -333,6 +323,8 @@ flights_tb %>%
 - COOL! С кучей полезных бенчмарков [Getting the top values by group](https://stackoverflow.com/questions/27766054/getting-the-top-values-by-group)
 - [saghirb/R-datatable-Intro](https://github.com/saghirb/R-datatable-Intro). Workshop Materials: Introduction to R concepts and the data.table package - a tinyverse approach
 - [Summarize data.table by group](https://stackoverflow.com/questions/36526141/summarize-data-table-by-group)
+- COOL! [When should I use setDT() instead of data.table() to create a data.table?](https://stackoverflow.com/questions/41917887/when-should-i-use-setdt-instead-of-data-table-to-create-a-data-table)
+- [R - slow performance in creating lots of data.table objects](https://stackoverflow.com/questions/28203809/r-slow-performance-in-creating-lots-of-data-table-objects)
 
 
 
@@ -399,5 +391,16 @@ The way to read this out loud is: "Take DT, subset rows by i, then compute j gro
 ## data.table & NSE
 - COOL! [Corner Cases With Non-Standard Evaluation in data.table](https://gist.github.com/brodieG/046e7cdd2acf42d95909)
 - [How to use non-standard evaluation NSE to evaluate arguments on data.table?](https://stackoverflow.com/questions/57122960/how-to-use-non-standard-evaluation-nse-to-evaluate-arguments-on-data-table)
+- фильтрация в I по динамической переменной
+	- [How to select rows in data.table with dynamically determined column name and cut off limits?](https://stackoverflow.com/questions/33312777/how-to-select-rows-in-data-table-with-dynamically-determined-column-name-and-cut/33312823)
+```
+dt[eval(parse(text=name)) < limit]
+# OR 
+dt[eval(as.name(name))< limit] 
+# OR 
+dt[eval(as.symbol(name))< limit]
+```
+	- [Select rows in data table using a variable {duplicate}](https://stackoverflow.com/questions/39005117/select-rows-in-data-table-using-a-variable)
+	- [Filter data table by dynamic column name](https://stackoverflow.com/questions/29564002/filter-data-table-by-dynamic-column-name)
 - [NSE Functions with oshka](https://cran.r-project.org/web/packages/oshka/vignettes/nse-fun.html)
 

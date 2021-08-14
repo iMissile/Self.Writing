@@ -221,6 +221,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 # Articles
 - [Using AWK and R to parse 25tb](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/)
 - COOL! tl;dr: a gajillion dollar online game takes 4X as long to start because it parses a 10MB JSON file in a bad way. [How I cut GTA Online loading times by 70%](https://nee.lv/2021/02/28/How-I-cut-GTA-Online-loading-times-by-70/)
+- [Filter data before reading with awk and R. Using awk & R to map Fishing Effort](https://luisdva.github.io/rstats/r-awk/)
 
 
 # VPN
@@ -691,7 +692,7 @@ How to find, display, and use 600 built-in R colors and 2000 palettes and create
 
 
 
-# R useful plugins
+# RStudio useful plugins/addins
 - COOL! [smouksassi/ggquickeda](https://github.com/smouksassi/ggquickeda). ggplot and summary statistics quick exploration of data
 - COOL! [esquisse](https://github.com/dreamRs/esquisse)
 The purpose of this add-in is to let you explore your data quickly to extract the information they hold. You can only create simple plots, you won't be able to use custom scales and all the power of ggplot2. This is just the start!
@@ -706,6 +707,9 @@ The purpose of this add-in is to let you explore your data quickly to extract th
 - COOL! [Trelliscope](https://hafen.github.io/trelliscopejs/#trelliscope)
 Trelliscope is a visualization approach based on the idea of “small multiples” or “Trellis Display”, where data are split into groups and a plot is made for each group, with the resulting plots arranged in a grid.
 	- COOL! [Introducing trelliscopejs](https://ryanhafen.com/blog/trelliscopejs/)
+- COOL! [RStudio addin for wrapping RMarkdown paragraphs](https://github.com/tjmahr/WrapRmd). You highlight the text, and hit `Ctrl/Cmd + Shift + /` to wrap the text and get.
+- [ThinkR-open/remedy](https://github.com/ThinkR-open/remedy). RStudio Addins to Simplify Markdown Writing
+	
 
 
 ## Local Sensitivity & min-hash. Работа с текстом
@@ -1036,6 +1040,51 @@ Yes, Bootstrapping method is an ideal way to do this. Basically for each median,
 	- [Do my data follow a normal distribution ? A note on the most widely used distribution and how to test for normality in R](https://www.statsandr.com/blog/do-my-data-follow-a-normal-distribution-a-note-on-the-most-widely-used-distribution-and-how-to-test-for-normality-in-r/)
 	- [How to create a timeline of your CV in R](https://www.statsandr.com/blog/how-to-create-a-timeline-of-your-cv-in-r/)
 
+## jq
+- [jq Language Description](https://github.com/stedolan/jq/wiki/jq-Language-Description)
+- [jqplay](https://jqplay.org/)
+- [jqterm](https://jqterm.com/). An alternative interactive jq web terminal with autocomplete
+
+- [JQ Cookbook](https://github.com/stedolan/jq/wiki/Cookbook)
+- [JQ FAQ](https://github.com/stedolan/jq/wiki/FAQ)
+```
+𝑸: How can I rename the keys of an object programmatically?
+A: One way to rename the keys of an object is to use with_entries, e.g.
+with_entries( if .key | contains("-") then .key |= sub("-";".") else . end)
+To rename keys recursively, see the Q defining translate_keys(f) below.
+```
+- [jq recipes](https://remysharp.com/drafts/jq-recipes)
+- [JQ cheatsheet](https://cameronnokes.com/blog/jq-cheatsheet/) A cheatsheet of common jq commands
+
+- [Using jq how can I replace the name of a key with something else](https://stackoverflow.com/questions/43522133/using-jq-how-can-i-replace-the-name-of-a-key-with-something-else)
+- [Rename a key in an object #1167 {Closed}](https://github.com/stedolan/jq/issues/1167)
+- [Reshaping JSON with jq](https://programminghistorian.org/en/lessons/json-and-jq)
+- [Flatten array objects with parent values? #646 {Closed}](https://github.com/stedolan/jq/issues/646)
+- [Hyperpolyglot. JSON Tools: JQ](http://hyperpolyglot.org/json)
+- [Change a nested field name #670 {Closed}](https://github.com/stedolan/jq/issues/670)
+- [Remove blank strings from array with jq?](https://stackoverflow.com/questions/44288635/remove-blank-strings-from-array-with-jq/44289083)
+- [How to find and replace multiple field values using jq?](https://unix.stackexchange.com/questions/476536/how-to-find-and-replace-multiple-field-values-using-jq)
+- [Modifying JSON on the command line. Using jq to change a value](http://engineering.monsanto.com/2015/05/22/jq-change-json/)
+- COOL! [Replace an attribute or key in JSON using jq or sed](https://stackoverflow.com/questions/42969020/replace-an-attribute-or-key-in-json-using-jq-or-sed)
+- COOL! Сравнительный анализ. [Flatten a JSON document using jq](https://stackoverflow.com/questions/24698188/flatten-a-json-document-using-jq)
+- [While unnesting an object in jq, how can I avoid restating labels at each stage in the pipeline?](https://stackoverflow.com/questions/54210566/while-unnesting-an-object-in-jq-how-can-i-avoid-restating-labels-at-each-stage). another way is to use `reduce` and `setpath`
+- Показывают как можно заменить `leaf_path` на `path(scalar)` [how to get parent objects keys in nested object in jq?](https://stackoverflow.com/questions/49448001/how-to-get-parent-objects-keys-in-nested-object-in-jq)
+- [`paths(scalars)` bug? #1163 {Open}](https://github.com/stedolan/jq/issues/1163)
+- [tomnomnom/gron](https://github.com/tomnomnom/gron) Make JSON greppable!
+- [Flatten nested JSON using jq](https://stackoverflow.com/questions/37540717/flatten-nested-json-using-jq)
+- В картинках. [Using jq with nested objects](http://kamicut.cc/2014/11/19/using-jq-nested-objects.html)
+- [jq: Filtering missing keys](https://markhneedham.com/blog/2015/11/14/jq-filtering-missing-keys/)
+- [jq: error - Cannot iterate over null (null)](https://markhneedham.com/blog/2015/10/09/jq-error-cannot-iterate-over-null-null/)
+- [Docker Error - “jq: error: Cannot iterate over null”](https://stackoverflow.com/questions/28213232/docker-error-jq-error-cannot-iterate-over-null)
+- [How to test for the presense/absence of a field (even if null)? #74 {Closed}](https://github.com/stedolan/jq/issues/74)
+- [Return empty string instead of "null" with "jq --raw-output" ? #354 {Closed}](https://github.com/stedolan/jq/issues/354)
+- [join two json files based on common key with jq utility or alternative way from command line](https://stackoverflow.com/questions/39830426/join-two-json-files-based-on-common-key-with-jq-utility-or-alternative-way-from)
+- [How to merge two JSON objects in R by keeping the JSON structure?](https://stackoverflow.com/questions/43376058/how-to-merge-two-json-objects-in-r-by-keeping-the-json-structure)
+- [Combining pages of JSON data with jsonlite](https://cran.r-project.org/web/packages/jsonlite/vignettes/json-paging.html)
+- Разбираемся с вложенными JSON [Can jq handle nested JSON data?](https://stackoverflow.com/questions/37020712/can-jq-handle-nested-json-data)
+- [Working with JSON in bash using `jq`](https://medium.com/cameron-nokes/working-with-json-in-bash-using-jq-13d76d307c4). jq is a powerful tool that lets you read, filter, and write JSON in bash
+- [Flatten nested JSON using jq](https://stackoverflow.com/questions/37540717/flatten-nested-json-using-jq)
+- [In Jq how to expand a json array of tuples into multiple elements](https://stackoverflow.com/questions/46725770/in-jq-how-to-expand-a-json-array-of-tuples-into-multiple-elements)
 
 ## R и 64 бит
 - [REALLY LARGE NUMBERS IN R](http://theautomatic.net/2019/08/16/really-large-numbers-in-r/). This post will discuss ways of handling huge numbers in R using the gmp package.
@@ -1070,8 +1119,28 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 13.08.2021
+## R
+- [Pdftools 2.0: powerful pdf text extraction tools](https://ropensci.org/blog/2018/12/14/pdftools-20/)
+	- [pdf2complextable](https://github.com/lizlaw/pdf2complextable). Script to extract a complex table (here containing multiple lines per cell) from a pdf
+- [when browser() don’t cut it](https://www.atorusresearch.com/when-browser-dont-cut-it/)
+- [An Introduction to Statistical Learning, 2nd ed.](https://www.statlearning.com/)
+	- COOL! [ISLR tidymodels Labs](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html)
+- [5 ways how to format output in R console](https://datacornering.com/5-ways-how-to-format-output-in-r-console/)
+- [Lessons learned while refactoring {ggstatsplot}](https://indrajeetpatil.github.io/Refactoring-ggstatsplot/refactoring-ggstatsplot#1)
+- [fastverse](https://sebkrantz.github.io/fastverse/) The fastverse is a suite of complementary high-performance packages for statistical computing and data manipulation in R.
+- COOL! Article. [How to avoid machine learning pitfalls: a guide for academic researchers](https://arxiv.org/pdf/2108.02497.pdf) by Michael A. Lones
+- [pkgverse](https://pkgverse.mikewk.com/). Create your own universe of packages à la tidyverse.
 
-
+# 11.08.2021
+## R
+- COOL! [How to unload a package without restarting R](https://stackoverflow.com/questions/6979917/how-to-unload-a-package-without-restarting-r)
+`R.utils::detachPackage("package")` or `detach("package:vegan",  unload=TRUE)` or `unloadNamespace("sqldf")` or `detach(package:PackageName)`
+I would like to add an alternative solution. This solution does not directly answer your question on unloading a package but, IMHO, provides a cleaner alternative to achieve your desired goal, which I understand, is broadly concerned with avoiding name conflicts and trying different functions, as stated:
+Solution
+Function with_package offered via the withr package offers the possibility to:
+attache a package to the search path, executes the code, then removes the package from the search path. The package namespace is not unloaded, however.
+- COOL! [Web Scraping Reference: Cheat Sheet for Web Scraping using R](https://github.com/yusuzech/r-web-scraping-cheat-sheet/blob/master/README.md)
 
 # 23.07.2021
 ## R
@@ -1111,6 +1180,7 @@ Return an SPQR-tree representing the triconnected components of the graph.
 - [LightGraphsFlows.jl: flow algorithms for LightGraphs](https://juliagraphs.org/LightGraphsFlows.jl/latest/)
 - [Spanning tree](https://en.wikipedia.org/wiki/Spanning_tree)
 
+
 ## R
 - [rmonad](https://github.com/arendsee/rmonad)
 Chain monadic sequences into stateful, branching pipelines. As nodes in the pipeline are run, they are merged into a graph of all past operations. The resulting structure can be computed on to access not only the final results, but also node documentation, intermediate data, performance stats, and any raised messages, warnings or errors. rmonad intercepts all exceptions, which allows for pure error handling.
@@ -1124,10 +1194,15 @@ Chain monadic sequences into stateful, branching pipelines. As nodes in the pipe
 - [Slides for useR 2021 conference - pARI package](https://github.com/angeella/useR_2021)
 - [Solving Big Data Problems With Apache Arrow](https://enpiar.com/talks/user-2021/)
 - [unit testing for shiny reactivity](https://github.com/yonicd/reactor/tree/slides). yonicd.github.io/reactor
+- [How to build a package following the 'Rmd First' method?](https://statnmap.github.io/user2021.rmdd/stagiaire_complet.html#1) Sébastien Rochette, Emily Riederer
 
 # 05.07.2021
-## R
+## R Sparse Matrix
 - [Working with a sparse matrix in R](https://slowkow.com/notes/sparse-matrix/)
+- [converting a dgCMatrix to data frame](https://stackoverflow.com/questions/53486135/converting-a-dgcmatrix-to-data-frame)
+- [RcppArmadillo: Sparse Matrix Support](https://cran.r-project.org/web/packages/RcppArmadillo/vignettes/RcppArmadillo-sparseMatrix.pdf)
+
+## R
 - [readr 2.0 planned improvments](https://github.com/tidyverse/readr/blob/master/NEWS.md)
 - COOL! [Tools for Working with JavaScript in R](https://github.com/jeroen/js)
 - [How to Scrape Data from a JavaScript Website with R](https://velaco.github.io/how-to-scrape-data-from-javascript-websites-with-R/)
@@ -1267,11 +1342,6 @@ With Heap Illuminate, teams gain the benefit of a complete and trusted behaviora
 - Slides [Filling your bag of workflow tricks](https://mpaulacaldas.github.io/r-ladies-workflow/#1)
 - [Randomly insert NAs into dataframe proportionaly](https://stackoverflow.com/questions/27454265/randomly-insert-nas-into-dataframe-proportionaly)
 - [Generating Random Dates in R](https://stackoverflow.com/questions/21502332/generating-random-dates)
-
-## Rmarkdown
-- COOL! [RStudio addin for wrapping RMarkdown paragraphs](https://github.com/tjmahr/WrapRmd). You highlight the text, and hit `Ctrl/Cmd + Shift + /` to wrap the text and get.
-- [ThinkR-open/remedy](https://github.com/ThinkR-open/remedy). RStudio Addins to Simplify Markdown Writing
-
 
 ## TileDB
 - [A night on the tiles](https://resources.symbolix.com.au/2021/05/28/tiledb-and-r/)
@@ -6965,47 +7035,6 @@ https://www.youtube.com/watch?v=3V3HeRnRNH8
 - [Shiny tests for database transactions](https://community.rstudio.com/t/shiny-tests-for-database-transactions/2211)
 - ebook. [A gRadual intRoduction to Shiny](https://laderast.github.io/gradual_shiny/)
 - [Progress bar with estimated time](https://dplyr.tidyverse.org/reference/progress_estimated.html)
-
-## jq
-- [jq Language Description](https://github.com/stedolan/jq/wiki/jq-Language-Description)
-- [jqplay](https://jqplay.org/)
-
-- [Using jq how can I replace the name of a key with something else](https://stackoverflow.com/questions/43522133/using-jq-how-can-i-replace-the-name-of-a-key-with-something-else)
-- [Rename a key in an object #1167 {Closed}](https://github.com/stedolan/jq/issues/1167)
-- [Reshaping JSON with jq](https://programminghistorian.org/en/lessons/json-and-jq)
-- [Flatten array objects with parent values? #646 {Closed}](https://github.com/stedolan/jq/issues/646)
-- [Hyperpolyglot. JSON Tools: JQ](http://hyperpolyglot.org/json)
-- [Change a nested field name #670 {Closed}](https://github.com/stedolan/jq/issues/670)
-- [Remove blank strings from array with jq?](https://stackoverflow.com/questions/44288635/remove-blank-strings-from-array-with-jq/44289083)
-- [JQ Cookbook](https://github.com/stedolan/jq/wiki/Cookbook)
-- [JQ FAQ](https://github.com/stedolan/jq/wiki/FAQ)
-```
-𝑸: How can I rename the keys of an object programmatically?
-A: One way to rename the keys of an object is to use with_entries, e.g.
-with_entries( if .key | contains("-") then .key |= sub("-";".") else . end)
-To rename keys recursively, see the Q defining translate_keys(f) below.
-```
-- [jq recipes](https://remysharp.com/drafts/jq-recipes)
-- [How to find and replace multiple field values using jq?](https://unix.stackexchange.com/questions/476536/how-to-find-and-replace-multiple-field-values-using-jq)
-- [Modifying JSON on the command line. Using jq to change a value](http://engineering.monsanto.com/2015/05/22/jq-change-json/)
-- COOL! [Replace an attribute or key in JSON using jq or sed](https://stackoverflow.com/questions/42969020/replace-an-attribute-or-key-in-json-using-jq-or-sed)
-- COOL! Сравнительный анализ. [Flatten a JSON document using jq](https://stackoverflow.com/questions/24698188/flatten-a-json-document-using-jq)
-- [While unnesting an object in jq, how can I avoid restating labels at each stage in the pipeline?](https://stackoverflow.com/questions/54210566/while-unnesting-an-object-in-jq-how-can-i-avoid-restating-labels-at-each-stage). another way is to use `reduce` and `setpath`
-- Показывают как можно заменить `leaf_path` на `path(scalar)` [how to get parent objects keys in nested object in jq?](https://stackoverflow.com/questions/49448001/how-to-get-parent-objects-keys-in-nested-object-in-jq)
-- [`paths(scalars)` bug? #1163 {Open}](https://github.com/stedolan/jq/issues/1163)
-- [tomnomnom/gron](https://github.com/tomnomnom/gron) Make JSON greppable!
-- [Flatten nested JSON using jq](https://stackoverflow.com/questions/37540717/flatten-nested-json-using-jq)
-- В картинках. [Using jq with nested objects](http://kamicut.cc/2014/11/19/using-jq-nested-objects.html)
-- [jq: Filtering missing keys](https://markhneedham.com/blog/2015/11/14/jq-filtering-missing-keys/)
-- [jq: error - Cannot iterate over null (null)](https://markhneedham.com/blog/2015/10/09/jq-error-cannot-iterate-over-null-null/)
-- [Docker Error - “jq: error: Cannot iterate over null”](https://stackoverflow.com/questions/28213232/docker-error-jq-error-cannot-iterate-over-null)
-- [How to test for the presense/absence of a field (even if null)? #74 {Closed}](https://github.com/stedolan/jq/issues/74)
-- [Return empty string instead of "null" with "jq --raw-output" ? #354 {Closed}](https://github.com/stedolan/jq/issues/354)
-- [join two json files based on common key with jq utility or alternative way from command line](https://stackoverflow.com/questions/39830426/join-two-json-files-based-on-common-key-with-jq-utility-or-alternative-way-from)
-- [How to merge two JSON objects in R by keeping the JSON structure?](https://stackoverflow.com/questions/43376058/how-to-merge-two-json-objects-in-r-by-keeping-the-json-structure)
-- [Combining pages of JSON data with jsonlite](https://cran.r-project.org/web/packages/jsonlite/vignettes/json-paging.html)
-- Разбираемся с вложенными JSON [Can jq handle nested JSON data?](https://stackoverflow.com/questions/37020712/can-jq-handle-nested-json-data)
-- [Working with JSON in bash using `jq`](https://medium.com/cameron-nokes/working-with-json-in-bash-using-jq-13d76d307c4). jq is a powerful tool that lets you read, filter, and write JSON in bash
 
 
 # 17.04.2019

@@ -17,9 +17,14 @@
 - [Number one JuliaLang beginner tip: Do not delay the active learning](https://juliaifrank.com/active-learning-in-programming/)
 - [Simple multi-layer perceptron](https://fluxml.ai/tutorials/2021/01/26/mlp.html)
 
+# 13.08.2021
+## Julia
+- [Benchmarking push! in DataFrames.jl](https://bkamins.github.io/julialang/2021/06/25/push.html)
+
 # 19.07.2021
 ## Julia
 - COOL! [JuliaCall: Integrating R and Julia](https://hwborchers.github.io/)
 - [FIRST IMPRESSIONS OF JULIA FROM AN R USER](https://mdneuzerling.com/post/first-impressions-of-julia-from-an-r-user/)
 - [Pluto's built-in package management](https://github.com/fonsp/Pluto.jl/wiki/%F0%9F%8E%81-Package-management)
+
 
