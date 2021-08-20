@@ -244,3 +244,8 @@ $ git checkout -b hg
 - **Решение**
 	- Был hg репозиторий на локальной машине, запушил его на Helix TeamHub
 	- GitHub Importer -- импортируем с Helix на GH
+
+
+## перевод на personal_token
+- [SmartGit, unable to push, “remote: HTTP Basic: Access denied”](https://stackoverflow.com/questions/60272933/smartgit-unable-to-push-remote-http-basic-access-denied)
+- [Accessing Credential Manager](https://support.microsoft.com/en-us/windows/accessing-credential-manager-1b5c916a-6a16-889f-8581-fc16e8165ac0)
