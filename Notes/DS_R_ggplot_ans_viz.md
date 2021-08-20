@@ -272,6 +272,7 @@ If you just want to prevent two lines from overlapping exactly, there is now a b
 - [Point labels perpendicular to a curve in ggplot2](https://wjschne.github.io/posts/point-labels-perpendicular-to-a-curve-in-ggplot2/) by W. Joel Schneider
 - [Scatterplot with automatic text repel](http://www.r-graph-gallery.com/web-scatterplot-and-ggrepel.html)
 - [The ggh4x package is a ggplot2 extension package](https://teunbrand.github.io/ggh4x/index.html). It provides some utility functions that don’t entirely fit within the ‘grammar of graphics’ concept —they can be a bit hacky— but can nonetheless be useful in tweaking your ggplots. 
+- [ggfittext](https://wilkox.org/ggfittext/index.html) provides some ggplot2 geoms for fitting text into boxes.
 
 ## facet
 - [Useful labeller functions](https://ggplot2.tidyverse.org/reference/labellers.html). Labeller functions are in charge of formatting the strip labels of facet grids and wraps. 
@@ -318,6 +319,11 @@ The goal of vlbuildr is to provide an R api for building up vega-lite specs.
 - COOL! [a ggplot2 grammar guide](https://evamaerey.github.io/ggplot2_grammar_guide/about)
 - COOL! Для того, чтобы `render_graph` в `DiagrammeR` работал и сохранял граф в файл, необходимо доставлять руками библиотеки `DiagrammeRSVG` и `V8`. Они отсутствуют в явных зависимостях.
 
+
+# font
+- COOL! [Taking Control of Plot Scaling](https://www.tidyverse.org/blog/2020/08/taking-control-of-plot-scaling/)
+- [Modern Text Features in R](https://www.tidyverse.org/blog/2021/02/modern-text-features/)
+- COOL! [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/)
 
 
 

@@ -6,6 +6,7 @@
 	- [Online SQL formatter](https://sql-formatter.online/options/formatting)
 	- [Poor Man's T-SQL Formatter](https://poorsql.com/)
 - [Различные онлайн инструменты для проверки и преобразования](https://www.danstools.com/)
+- [PDFsam Basic](https://pdfsam.org/). PDFsam Basic is our free and open source desktop application to split, merge, extract pages, rotate and mix PDF files
 - [Телеграмм бот «Telegram Proxy (SOCKS5) Bot»](https://ru.telegram-store.com/catalog/bots/proxy_socks5_bot/)
 https://tmall.aliexpress.com/item/Edifier-W830BT-1/1000005465785.html
 - [\x and \u Code Decoder](https://khalil-shreateh.com/khalil.shtml/social_applications/web-applications/x-and-u-code-decoder.html)
@@ -689,6 +690,7 @@ Fully saturated RGB rainbow colors are still widely used in scientific visualiza
 - [palette2vec](https://emilhvitfeldt.github.io/palette2vec/). The goal of palette2vec is to help you explore color palettes more easily in R
 - [Make the most of R colors and palettes](https://www.infoworld.com/article/3615230/make-the-most-of-r-colors-and-palettes.html) By Sharon Machlis.
 How to find, display, and use 600 built-in R colors and 2000 palettes and create your own palettes and palette functions. Plus a bonus R Shiny app to display paletteer package palettes.
+- [Palette Picker](https://emilhvitfeldt.github.io/r-color-palettes/discrete.html)
 
 
 
@@ -1091,6 +1093,7 @@ To rename keys recursively, see the Q defining translate_keys(f) below.
 - [In R is it better to use integer64, numeric, or character for large integer id numbers?](https://stackoverflow.com/questions/35171760/in-r-is-it-better-to-use-integer64-numeric-or-character-for-large-integer-id-n)
 - [R in a 64 bit world](http://www.win-vector.com/blog/2015/06/r-in-a-64-bit-world/)
 - [Double-precision floating-point format](https://en.wikipedia.org/wiki/Double-precision_floating-point_format)
+- [Decimal separator. Current standards](https://en.wikipedia.org/wiki/Decimal_separator)
 - Калькулятор для преобразования чисел с плавающей точкой. [Tools & Thoughts. IEEE-754 Floating Point Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
 - [Урок №33. Типы данных с плавающей точкой](https://ravesli.com/urok-33-tip-dannyh-s-plavayushhej-tochkoj-floating-point/)
 Диапазон и точность типов данных с плавающей точкой, согласно стандарту IEEE 754:
@@ -1118,6 +1121,37 @@ sqrt(2)^2 == 2
 - [binaryLogic: Binary Logic](https://cran.r-project.org/web/packages/binaryLogic/)
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
+
+
+
+# 17.08.2021
+## DS
+- [Solving for regression parameters in closed-form vs gradient descent](https://stats.stackexchange.com/questions/23128/solving-for-regression-parameters-in-closed-form-vs-gradient-descent)
+- [Secrets of “printf”](https://www.cypress.com/file/54441/download) by Professor Don Colton
+- [Which is the current decimal separator?](https://unix.stackexchange.com/questions/541342/which-is-the-current-decimal-separator)
+- [A data templating language for app and tool developers](https://jsonnet.org/)
+
+## python JupyterConf
+- [data/jupytercon-2018/videos/](https://github.com/pyvideo/data/tree/master/jupytercon-2018/videos)
+- [I Don't Like Notebooks](https://docs.google.com/presentation/d/1n2RlMdmv1p25Xy5thJUhkKGvjtV-dkAIsUXP-AL4ffI/edit#slide=id.g362da58057_0_1) by Joel Grus (@joelgrus) #JupyterCon 2018
+
+## R
+- [Welcome to Quarto](https://quarto.org/). A scientific and technical publishing system built on Pandoc
+- [Visualizing Time Series](https://business-science.github.io/timetk/articles/TK04_Plotting_Time_Series.html) by Matt Dancho
+- Slides [More efficient SEM via R?](https://ewancarr.github.io/semantics-mplusautomation/)
+- [matlib](http://friendly.github.io/matlib/) Matrix Functions for Teaching and Learning Linear Algebra and Multivariate Statistics,
+- [trackdown](https://claudiozandonella.github.io/trackdown/). The trackdown package offers a simple solution for collaborative writing and editing of R Markdown (or Sweave) documents. Using trackdown, the local .Rmd (or .Rnw) file can be uploaded as a plain-text file to Google Drive.
+- COOL! [Error Notifications when Running Scheduled Jobs](https://ashbaldry.github.io/2021-08-09-rscript-error-notification/)
+- [Announcing bookdown v0.23](https://blog.rstudio.com/2021/08/18/announcing-bookdown-v0.23/) by Alison Hill, Christophe Dervieux, Yihui Xie
+- [R data.table change R names](https://stackoverflow.com/questions/18760287/r-data-table-change-r-names)
+
+## R format output
+- [In R print decimal comma instead of decimal point](https://stackoverflow.com/questions/29299404/in-r-print-decimal-comma-instead-of-decimal-point)
+- [Formatting Decimal places in R](https://stackoverflow.com/questions/3443687/formatting-decimal-places-in-r)
+- [locales: Query or Set Aspects of the Locale](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/locales). Setting "LC_NUMERIC" to any value other than "C" may cause R to function anomalously, so gives a warning. Setting it temporarily on a Unix-alike to produce graphical or text output may work well enough, but `options(OutDec)` is often preferable.
+- [How to set ',' as decimal separator with R](https://stackoverflow.com/questions/16384836/how-to-set-as-decimal-separator-with-r)
+- [Change decimal character in sprintf()](https://stackoverflow.com/questions/23586741/change-decimal-character-in-sprintf)
+
 
 # 13.08.2021
 ## R
@@ -1179,7 +1213,20 @@ Return an SPQR-tree representing the triconnected components of the graph.
 - [SPQR Tree slides](https://slideplayer.com/slide/15954108/)
 - [LightGraphsFlows.jl: flow algorithms for LightGraphs](https://juliagraphs.org/LightGraphsFlows.jl/latest/)
 - [Spanning tree](https://en.wikipedia.org/wiki/Spanning_tree)
+- [igraph Chapter 22. Maximum flows, minimum cuts and related measures](https://igraph.org/c/doc/igraph-Flows.html)
+- COOL! [10 Graph Algorithms Visually Explained](https://towardsdatascience.com/10-graph-algorithms-visually-explained-e57faa1336f3)
+A quick introduction to 10 basic graph algorithms with examples and visualisations
+- COOL! [What algorithm decides if a connected graph is 3-connected?](https://www.quora.com/What-algorithm-decides-if-a-connected-graph-is-3-connected). Тут алгоритм на пальцах расписан.
+В частности, https://gitlab.com/sagemath/dev/tracmirror/-/blob/master/src/sage/graphs/connectivity.pyx
+- [Google Summer of Code 2018. A Linear Time Implementation of SPQR-Trees](https://saiharsh.github.io/gsoc-spqrtree.html). Тут алгоритм на пальцах расписан. И это все ушло в SageMath!!!
+- [Tarjan's strongly connected components algorithm](https://en.wikipedia.org/wiki/Tarjan's_strongly_connected_components_algorithm). Тут алгоритм на пальцах расписан.
+- [Biconnected component](https://en.wikipedia.org/wiki/Biconnected_component#Algorithms). The classic sequential algorithm for computing biconnected components in a connected undirected graph is due to John Hopcroft and Robert Tarjan (1973).[1] It runs in linear time, and is based on depth-first search. This algorithm is also outlined as Problem 22-2 of Introduction to Algorithms (both 2nd and 3rd editions).
+- [Free-Algorithm-Books/book/Introduction to Algorithms - Third Edition.pdf](https://github.com/RbkGh/Free-Algorithm-Books/blob/master/book/Introduction%20to%20Algorithms%20-%20Third%20Edition.pdf)
+- [Handbook of Graph Drawing and Visualization](https://cs.brown.edu/people/rtamassi/gdhandbook/) Roberto  Tamassia, Editor CRC Press, June 24, 2013
 
+## Wolfram
+- [What is the simplest way to plot a decomposition tree in Mathematica?](https://stackoverflow.com/questions/5647268/what-is-the-simplest-way-to-plot-a-decomposition-tree-in-mathematica)
+- [The inverse of moving from a map to a network topology](https://community.wolfram.com/groups/-/m/t/1358396?sortMsg=Flat)
 
 ## R
 - [rmonad](https://github.com/arendsee/rmonad)
@@ -1412,7 +1459,6 @@ f = function(x, ...) {
 
 # 27.05.2021
 ## DS
-- [PDFsam Basic](https://pdfsam.org/). PDFsam Basic is our free and open source desktop application to split, merge, extract pages, rotate and mix PDF files
 - [Чудесный мир Word Embeddings: какие они бывают и зачем нужны?](https://habr.com/ru/company/ods/blog/329410/)
 - [Introducing WebContainers: Run Node.js natively in your browser](https://blog.stackblitz.com/posts/introducing-webcontainers/)
 - [Чем отличаются ссылки от указателей в С++](https://ru.stackoverflow.com/questions/349/%D0%A7%D0%B5%D0%BC-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B0%D1%8E%D1%82%D1%81%D1%8F-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8-%D0%BE%D1%82-%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9-%D0%B2-%D0%A1)
@@ -1857,6 +1903,7 @@ sqlMdxOpenquery <- processSqlTemplate(
 
 ## python
 - [How to Speed Up Pandas with Modin](https://medium.com/distributed-computing-with-ray/how-to-speed-up-pandas-with-modin-84aa6a87bcdb)
+- [Pandas Cheat Sheet — Python for Data Science](https://www.dataquest.io/blog/pandas-cheat-sheet/)
 - [MyST - Markedly Structured Text](https://myst-parser.readthedocs.io/en/latest/). A fully-functional markdown flavor and parser for Sphinx. MyST allows you to write Sphinx documentation entirely in markdown.
 - [MyST cheat sheet](https://jupyterbook.org/reference/cheatsheet.html)
 
@@ -2100,7 +2147,6 @@ Just append "1s" to "github" in the URL. Example: https://github1s.com/daattali/
 - [Lists are my secret weapon for reporting stats with knitr](https://www.tjmahr.com/lists-knitr-secret-weapon/)
 Tidying and splitting model summaries for inline reporting
 - [DECK.GL](https://deck.gl/) WebGL-powered visualization framework for large-scale datasets
-- [RcppFastFloat 0.0.1: New Package, Already on CRAN](http://dirk.eddelbuettel.com/blog/2021/02/05/#rcppfastfloat_0.0.1)
 - [Historic Tale Construction Kit](https://htck.github.io/bayeux/?fbclid#!/)
 - [Python’s Pandas vs. R’s dplyr – Which Is The Best Data Analysis Library](https://appsilon.com/pandas-vs-dplyr/)
 - [The lapply() family](https://michaelbarrowman.co.uk/post/the-lapply-family/)
@@ -2642,8 +2688,9 @@ Convert SQL Server DateTime to milliseconds Since 1970 (UNIX Epoch Time).
 	- [Parsing error @ Windows & RcppSimdJson 0.1.2 #56 {Closed}](https://github.com/eddelbuettel/rcppsimdjson/issues/56)
 	- [RcppSimdJson 0.1.4 on CRAN: New Improvements](http://dirk.eddelbuettel.com/blog/2021/02/12#rcppsimdjson_0.1.4). Fri, 12 Feb 2021
 - RcppFastFloat
+	- [RcppFastFloat 0.0.1: New Package, Already on CRAN](http://dirk.eddelbuettel.com/blog/2021/02/05/#rcppfastfloat_0.0.1)
 	- [RcppFastFloat 0.0.2: New Function](http://dirk.eddelbuettel.com/blog/2021/02/13#rcppfastfloat_0.0.2)
-	- COOL![fast_float](https://github.com/fastfloat/fast_float). Fast and exact implementation of the C++ from_chars functions for float and double types: 4x faster than strtod
+	- COOL![fast_float](https://github.com/fastfloat/fast_float). Fast and exact implementation of the C++ from_chars functions for float and double types: 4x faster than `strtod`. The C++ standard stipulate that from_chars has to be locale-independent. In particular, the decimal separator has to be the period (.). However, some users still want to use the fast_float library with in a locale-dependent manner.
 - [Standardize data columns in R](https://stackoverflow.com/questions/15215457/standardize-data-columns-in-r). Повторно натыкаемся на ответ [The collapse package provides the fastest scale function - implemented in C++ using Welfords Online Algorithm](https://stackoverflow.com/a/63695982/6835084)
 - [Using the bestNormalize Package](https://cran.r-project.org/web/packages/bestNormalize/vignettes/bestNormalize.html) by Ryan A Peterson
 - COOL! [Feature Scaling for Machine Learning: Understanding the Difference Between Normalization vs. Standardization](https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/)
