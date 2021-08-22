@@ -92,6 +92,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 	- [tonsky/FiraCode. Monospaced font with programming ligatures](https://github.com/tonsky/FiraCode)
 	- [FiraCode RStudio instructions](https://github.com/tonsky/FiraCode/wiki/RStudio-instructions)
 - [JetBrains Mono. A typeface for developers_](https://www.jetbrains.com/lp/mono/)
+- [JetBrains Mono — a new typeface made for developers](https://blog.jetbrains.com/blog/2020/01/15/jetbrains-mono-a-new-font-made-for-developers/)
 
 # R general
 - COOL! [Upgrading to R 3.6.0 on a Mac – May 14, 2019](https://ibecav.github.io/update_libraries/).
@@ -1130,6 +1131,9 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [Secrets of “printf”](https://www.cypress.com/file/54441/download) by Professor Don Colton
 - [Which is the current decimal separator?](https://unix.stackexchange.com/questions/541342/which-is-the-current-decimal-separator)
 - [A data templating language for app and tool developers](https://jsonnet.org/)
+- [RStudio EDE git](https://github.com/rstudio/rstudio)
+- [Tidy.js](https://pbeshai.github.io/tidy/) Tidy up your data with JavaScript
+- [The big-load anti-pattern](https://lemire.me/blog/2021/08/21/the-big-load-anti-pattern/)
 
 ## python JupyterConf
 - [data/jupytercon-2018/videos/](https://github.com/pyvideo/data/tree/master/jupytercon-2018/videos)

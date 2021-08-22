@@ -53,6 +53,7 @@ This package provides rich-text (basic HTML and Markdown) support for ggplot2. R
 - [Easy ggplot2 Theme customization with {ggeasy}](https://www.programmingwithr.com/easy-ggplot2-theme-customization-with-ggeasy/)
 - Повтор. [blogR on Svbtle](https://drsimonj.svbtle.com/)
 	- [Label line ends in time series with ggplot2](https://drsimonj.svbtle.com/label-line-ends-in-time-series-with-ggplot2)
+	- COOL! [Visualising Residuals](https://drsimonj.svbtle.com/visualising-residuals)
 - Делаем вторую ось для дискрета
 	- [Duplicating (and modifying) discrete axis in ggplot2](https://stackoverflow.com/questions/48964760/duplicating-discrete-x-axis-for-ggplot)
 	- [Duplicating discrete x-axis for ggplot {duplicate}](https://stackoverflow.com/questions/45361904/duplicating-and-modifying-discrete-axis-in-ggplot2)
@@ -273,6 +274,7 @@ If you just want to prevent two lines from overlapping exactly, there is now a b
 - [Scatterplot with automatic text repel](http://www.r-graph-gallery.com/web-scatterplot-and-ggrepel.html)
 - [The ggh4x package is a ggplot2 extension package](https://teunbrand.github.io/ggh4x/index.html). It provides some utility functions that don’t entirely fit within the ‘grammar of graphics’ concept —they can be a bit hacky— but can nonetheless be useful in tweaking your ggplots. 
 - [ggfittext](https://wilkox.org/ggfittext/index.html) provides some ggplot2 geoms for fitting text into boxes.
+- Slides. [Best practices for programming with ggplot2](https://fishandwhistle.net/slides/rstudioconf2020/#1)
 
 ## facet
 - [Useful labeller functions](https://ggplot2.tidyverse.org/reference/labellers.html). Labeller functions are in charge of formatting the strip labels of facet grids and wraps. 
