@@ -1089,6 +1089,11 @@ To rename keys recursively, see the Q defining translate_keys(f) below.
 - [Flatten nested JSON using jq](https://stackoverflow.com/questions/37540717/flatten-nested-json-using-jq)
 - [In Jq how to expand a json array of tuples into multiple elements](https://stackoverflow.com/questions/46725770/in-jq-how-to-expand-a-json-array-of-tuples-into-multiple-elements)
 
+## Timezone
+- [Timezone unknown in Rstudio](https://stackoverflow.com/questions/46657826/timezone-unknown-in-rstudio)
+- [RStudio Server not inheriting TZ environment varibale?](https://support.rstudio.com/hc/en-us/community/posts/115007820087-RStudio-Server-not-inheriting-TZ-environment-varibale-)
+- [Docker Container time & timezone (will not reflect changes)](https://serverfault.com/questions/683605/docker-container-time-timezone-will-not-reflect-changes/683651#683651)
+
 ## R и 64 бит
 - [REALLY LARGE NUMBERS IN R](http://theautomatic.net/2019/08/16/really-large-numbers-in-r/). This post will discuss ways of handling huge numbers in R using the gmp package.
 - [In R is it better to use integer64, numeric, or character for large integer id numbers?](https://stackoverflow.com/questions/35171760/in-r-is-it-better-to-use-integer64-numeric-or-character-for-large-integer-id-n)
@@ -1124,6 +1129,12 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
 
+# 23.08.2021
+## R
+- COOL! [datamods](https://dreamrs.github.io/datamods/index.html). Shiny modules to import and manipulate data into an application or addin.
+- [Practical Advice for R in Production, Part 1: Why?](https://www.rstudio.com/resources/webinars/practical-advice-for-r-in-production-1-why/)
+- [ianmcook/queryparser](https://github.com/ianmcook/queryparser). Translate SQL queries into R expressions
+
 
 # 17.08.2021
 ## DS
@@ -1134,6 +1145,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [RStudio EDE git](https://github.com/rstudio/rstudio)
 - [Tidy.js](https://pbeshai.github.io/tidy/) Tidy up your data with JavaScript
 - [The big-load anti-pattern](https://lemire.me/blog/2021/08/21/the-big-load-anti-pattern/)
+- COOL! [Don’t MAWK AWK – the fastest and most elegant big data munging language!](https://brenocon.com/blog/2009/09/dont-mawk-awk-the-fastest-and-most-elegant-big-data-munging-language/)
 
 ## python JupyterConf
 - [data/jupytercon-2018/videos/](https://github.com/pyvideo/data/tree/master/jupytercon-2018/videos)
@@ -1583,13 +1595,16 @@ The workspace setting file is located under the .vscode folder in your project.
 Под виндой не находит R, ищем решение дальше
 - [Setting Up Visual Studio code to work with R - “win32 can't use R”](https://stackoverflow.com/questions/65823681/setting-up-visual-studio-code-to-work-with-r-win32-cant-use-r)
 
-```Extensions > R
+```
+Extensions > R
 In the settings for "R", scroll down to R > Rpath: Windows
 ```
 - Настраиваем контроль длины строки кода (lintr), кладем в корневую директорию проекта. [Here](https://renkun.me/2019/12/11/writing-r-in-vscode-a-fresh-start/). 
 You may take a look at https://github.com/jimhester/lintr#project-configuration Briefly, you could create a `~/.lintr` file with the following content:
 `linters: with_defaults(line_length_linter(120))`
 Remember to leave a new line at the bottom of the file.
+- [REditorSupport/vscode-R](https://github.com/REditorSupport/vscode-R/releases/tag/v2.2.0)
+
 
 ## Math
 - [How to analyze visual analog (slider) scale data?](https://mvuorre.github.io/posts/2019-02-18-analyze-analog-scale-ratings-with-zero-one-inflated-beta-models/). PSYCHOLOGY STATISTICS TUTORIAL R BRMS
@@ -5576,9 +5591,6 @@ Posted on October 3, 2019
 I have created this alternative cheat sheet (or guide) for those who already know a little about dplyr. The point of this cheat is to help you figuring out quickly which verb, suffix and arguments to use -- in the context of data transformation applied to a single table of class tibble or data.frame.
 - COOL! Learning [daranzolin/ViewPipeSteps](https://github.com/daranzolin/ViewPipeSteps). Create tabs of `View()` output for each chained pipe
 - pi: predict/infer. [Understanding Bootstrap Confidence Interval Output from the R boot Package](https://blog.methodsconsultants.com/posts/understanding-bootstrap-confidence-interval-output-from-the-r-boot-package/)
-- [Timezone unknown in Rstudio](https://stackoverflow.com/questions/46657826/timezone-unknown-in-rstudio)
-- [RStudio Server not inheriting TZ environment varibale?](https://support.rstudio.com/hc/en-us/community/posts/115007820087-RStudio-Server-not-inheriting-TZ-environment-varibale-)
-- [Docker Container time & timezone (will not reflect changes)](https://serverfault.com/questions/683605/docker-container-time-timezone-will-not-reflect-changes/683651#683651)
 
 ## python
 - COOL! [Cheat Sheets for AI, Neural Networks, Machine Learning, Deep Learning & Big Data](https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463). The Most Complete List of Best AI Cheat Sheets
