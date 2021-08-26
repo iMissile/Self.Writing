@@ -936,6 +936,11 @@ Debugger for R functions, with code display, graceful error recovery, line-numbe
 - COOL [How-to go parallel in R – basics + tips](http://gforge.se/2015/02/how-to-go-parallel-in-r-basics-tips/). См. п. "Debugging"
 Debugging is especially hard when working in a parallelized environment. You cannot simply call browser/cat/print in order to find out what the issue is.
 	- Never use set.seed(), use clusterSetRNGStream() instead, to set the cluster seed if you want reproducible results
+- Miles McBain. My main weapons in R:
+	1. error = recover
+	2. debugonce(otherpkg:::internal_fn)
+	3. assignInNameSpace() - for duck punching
+`utils::getFromNamespace`. Utility functions to access and replace the non-exported functions in a namespace, for use in developing packages with namespaces.
 
 ## Debug Shiny
 - [A little trick for debugging Shiny](https://rtask.thinkr.fr/blog/a-little-trick-for-debugging-shiny/)
@@ -1134,7 +1139,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! [datamods](https://dreamrs.github.io/datamods/index.html). Shiny modules to import and manipulate data into an application or addin.
 - [Practical Advice for R in Production, Part 1: Why?](https://www.rstudio.com/resources/webinars/practical-advice-for-r-in-production-1-why/)
 - [ianmcook/queryparser](https://github.com/ianmcook/queryparser). Translate SQL queries into R expressions
-
+- COOL! [R advantages over python](https://github.com/IyarLin/R-advantages-over-python#cases-where-python-is-better-than-r)
 
 # 17.08.2021
 ## DS
@@ -1146,6 +1151,10 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [Tidy.js](https://pbeshai.github.io/tidy/) Tidy up your data with JavaScript
 - [The big-load anti-pattern](https://lemire.me/blog/2021/08/21/the-big-load-anti-pattern/)
 - COOL! [Don’t MAWK AWK – the fastest and most elegant big data munging language!](https://brenocon.com/blog/2009/09/dont-mawk-awk-the-fastest-and-most-elegant-big-data-munging-language/)
+- COOL! e-book. [Causal Inference for The Brave and True](https://matheusfacure.github.io/python-causality-handbook/landing-page.html)
+	- COOL! [When Prediction Fails](https://matheusfacure.github.io/python-causality-handbook/When-Prediction-Fails.html) When all you have is a Hammer…
+- [Evidence](https://www.evidence.dev/). Business Intelligence for Modern Data Teams
+Beautiful reports synced to your data with just SQL and markdown
 
 ## python JupyterConf
 - [data/jupytercon-2018/videos/](https://github.com/pyvideo/data/tree/master/jupytercon-2018/videos)
@@ -1552,58 +1561,7 @@ HedgeDoc (formerly known as CodiMD) is an open-source collaborative markdown edi
 The grammar of graphics as shown in 'ggplot2' has provided an expressive API for users to build plots.
 - [Introduction to ggpattern Package in R (6 Examples) | ggplot2 Plots with Textures](https://statisticsglobe.com/ggpattern-r-package)
 - [Visualizing and Annotating Phylogenetic Trees with R+ggtree](https://4va.github.io/biodatasci/r-ggtree.html)
-- [Install package from local source]()
-
-## R VScode
-- Analytics Vidhya. [A fresh start for R in VSCode](https://medium.com/analytics-vidhya/a-fresh-start-for-r-in-vscode-ec61ed108cf6). Setting up Visual Studio Code for R development
-- [VScode: Changing the Display Language](https://code.visualstudio.com/docs/getstarted/locales). Press Ctrl+Shift+P to bring up the Command Palette then start typing "display" to filter and display the Configure Display Language command.
-- [How to integrate Python and R in Visual Studio Code](https://towardsdatascience.com/how-to-integrate-python-and-r-in-visual-studio-code-496a47c90422)
-- COOL! [R in 2021 with VSCode](https://datamares.netlify.app/en/post/r-vscode/)
-- [Writing R in VSCode: A Fresh Start](https://renkun.me/2019/12/11/writing-r-in-vscode-a-fresh-start/)
-	- [VSCode](https://code.visualstudio.com/Download): Visual Studio Code
-	- [languageserver](): An implementation of the Language Server Protocol for R. `install.packages("languageserver")`
-	- [VSCode R Extension](https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r): An implementation of the Language Server Protocol for R by Yuki Ueda
-	- [R LSP Client for VSCode](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r-lsp): R LSP Client for Visual Studio Code
-	- [Python](https://www.python.org/downloads/)
-	- [Radian](https://github.com/randy3k/radian): A 21st century R console.
-	- [ManuelHentschel/vscDebugger](https://github.com/ManuelHentschel/vscDebugger/) R Debugger Protocol. Ставим из zip файла 
-	`install.packages(path_to_source, repos = NULL, type="source")`
-	- In Windows, please go to VSCode settings, and set up the following entries:
-```
-{
-  "r.bracketedPaste": true,
-  "r.rterm.windows": "C:\\Users\\<USER>\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\radian.exe",
-  "r.rpath.windows": "C:\\Program Files\\R\\R-4.0.5\\bin\\R.exe",
-  "r.lsp.debug": true,
-  "r.lsp.diagnostics": true,
-  "r.rterm.option": [
-        "--no-save",
-        "--no-restore",
-        "--r-binary=C:\\Program Files\\R\\R-4.0.5\\bin\\R.exe"
-    ],
-}
-```
-Finally, you need to change your VSCode settings to enable R within the editor. For that press Ctrl + Shift + P and type in “Preferences: Open Settings (JSON)” and press Enter. This will open the settings.json of your editor. Add the following code to the JSON file, adjust the respective path to your setup and save the file.
-[Settings File Locations](https://vscode.readthedocs.io/en/latest/getstarted/settings/)
-Depending on your platform, the user settings file is located here:
-
-Windows %APPDATA%\Code\User\settings.json
-Mac $HOME/Library/Application Support/Code/User/settings.json
-Linux $HOME/.config/Code/User/settings.json
-The workspace setting file is located under the .vscode folder in your project.
-
-Под виндой не находит R, ищем решение дальше
-- [Setting Up Visual Studio code to work with R - “win32 can't use R”](https://stackoverflow.com/questions/65823681/setting-up-visual-studio-code-to-work-with-r-win32-cant-use-r)
-
-```
-Extensions > R
-In the settings for "R", scroll down to R > Rpath: Windows
-```
-- Настраиваем контроль длины строки кода (lintr), кладем в корневую директорию проекта. [Here](https://renkun.me/2019/12/11/writing-r-in-vscode-a-fresh-start/). 
-You may take a look at https://github.com/jimhester/lintr#project-configuration Briefly, you could create a `~/.lintr` file with the following content:
-`linters: with_defaults(line_length_linter(120))`
-Remember to leave a new line at the bottom of the file.
-- [REditorSupport/vscode-R](https://github.com/REditorSupport/vscode-R/releases/tag/v2.2.0)
+- [Install package from local source](https://riptutorial.com/r/example/5556/install-package-from-local-source)
 
 
 ## Math
@@ -1920,13 +1878,6 @@ sqlMdxOpenquery <- processSqlTemplate(
 - [imager: an R package for image processing](http://dahtah.github.io/imager/)
 
 
-## python
-- [How to Speed Up Pandas with Modin](https://medium.com/distributed-computing-with-ray/how-to-speed-up-pandas-with-modin-84aa6a87bcdb)
-- [Pandas Cheat Sheet — Python for Data Science](https://www.dataquest.io/blog/pandas-cheat-sheet/)
-- [MyST - Markedly Structured Text](https://myst-parser.readthedocs.io/en/latest/). A fully-functional markdown flavor and parser for Sphinx. MyST allows you to write Sphinx documentation entirely in markdown.
-- [MyST cheat sheet](https://jupyterbook.org/reference/cheatsheet.html)
-
-
 # 18.03.2021
 ## R
 - [SQLite — не игрушка](https://habr.com/ru/post/547448/)
@@ -1966,7 +1917,6 @@ sqlMdxOpenquery <- processSqlTemplate(
 ## DS
 - COOL! [Database-like ops benchmark](https://h2oai.github.io/db-benchmark/)
 - [Why are tar.xz files 15x smaller when using Python's tar library compared to macOS tar?](https://superuser.com/questions/1633073/why-are-tar-xz-files-15x-smaller-when-using-pythons-tar-library-compared-to-mac)
-- [janisdd/vscode-edit-csv](https://github.com/janisdd/vscode-edit-csv). vs code extension to edit csv files with an excel like table ui
 - COOL! [ezrosent/frawk](https://github.com/ezrosent/frawk) an efficient awk-like language
 - COOL! [Как включить перевод в Google Sheets и еще 6 лайфхаков в Google Docs](https://ain.ua/2019/04/06/lajfxaki-v-google-docs/)
 - [Google Docs. Перевод документов и выбор языка ввода](https://support.google.com/docs/answer/187189)
@@ -2088,11 +2038,7 @@ There are numerous scales in ggplot2. Too many to memorize. This app makes it ea
 - [Interpreting Cohen's d Effect Size. An Interactive Visualization](https://rpsychologist.com/cohend/)
 - [Patchwork. Moving beyond the grid](https://patchwork.data-imaginist.com/articles/guides/layout.html#moving-beyond-the-grid). [Sample](https://twitter.com/erdirstats/status/1361362149742948352?s=20)
 - [box. Write Reusable, Composable and Modular R Code](https://klmr.me/box/)
-- Miles McBain. My main weapons in R:
-	1. error = recover
-	2. debugonce(otherpkg:::internal_fn)
-	3. assignInNameSpace() - for duck punching
-`utils::getFromNamespace`. Utility functions to access and replace the non-exported functions in a namespace, for use in developing packages with namespaces.
+
 
 ## DS
 - COOL! [What, exactly, is dbt?](https://blog.getdbt.com/what--exactly--is-dbt-/). dbt (data build tool) enables data analysts and engineers to transform data in their warehouses.
@@ -2104,7 +2050,6 @@ There are numerous scales in ggplot2. Too many to memorize. This app makes it ea
 - [The FEniCS computing platform](https://fenicsproject.org/)
 FEniCS is a popular open-source (LGPLv3) computing platform for solving partial differential equations (PDEs).
 - [Copybara](https://github.com/google/copybara): A tool for transforming and moving code between repositories.
-- COOL! [VSCode Customization: Supercharge Your IDE](https://dev.to/iashin/vscode-customization-supercharge-your-ide-43fn)
 
 ## ETL
 - [The 9 Best ETL Packages For R Programming](https://blog.panoply.io/best-tools-for-r-programming)

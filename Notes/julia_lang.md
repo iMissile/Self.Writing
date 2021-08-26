@@ -5,7 +5,6 @@
 - [Juno IDE](http://docs.junolab.org/latest/man/installation/#Installation-Instructions)
 - [Atom Editor](https://atom.io/)
 - [Julia can not start inside Atom](https://discourse.julialang.org/t/julia-can-not-start-inside-atom/18923)
-- [Julia for VSCode](https://www.julia-vscode.org/)
 
 ## Julia
 - [Is Julia Really Fast?](https://medium.com/codex/is-julia-really-fast-12cd7caef96b) An overview of what you can and cannot expect from Julia performance. A guide to the fence sitters pondering whether to use Julia for high performance computing.
