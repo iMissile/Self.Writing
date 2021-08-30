@@ -16,6 +16,16 @@
 - [Number one JuliaLang beginner tip: Do not delay the active learning](https://juliaifrank.com/active-learning-in-programming/)
 - [Simple multi-layer perceptron](https://fluxml.ai/tutorials/2021/01/26/mlp.html)
 
+# 30.08.2021
+- [How to upgrade Julia to a new release?](https://newbedev.com/how-to-upgrade-julia-to-a-new-release)
+```
+julia> using Pkg # Pkg.init() if needed
+copy REQUIRE file from package directory of the old version to the new one (in this example from .julia/v0.5 to .julia/v0.6) overwriting the existing file
+julia> Pkg.resolve() # or Pkg.update()
+```
+- [Pkg](https://docs.julialang.org/en/v1/stdlib/Pkg/) is Julia's builtin package manager, and handles operations such as installing, updating and removing packages.
+- [Welcome to the documentation for Pkg, Julia's package manager.](https://pkgdocs.julialang.org/v1/)
+
 # 13.08.2021
 ## Julia
 - [Benchmarking push! in DataFrames.jl](https://bkamins.github.io/julialang/2021/06/25/push.html)

@@ -275,6 +275,7 @@ If you just want to prevent two lines from overlapping exactly, there is now a b
 - [The ggh4x package is a ggplot2 extension package](https://teunbrand.github.io/ggh4x/index.html). It provides some utility functions that don’t entirely fit within the ‘grammar of graphics’ concept —they can be a bit hacky— but can nonetheless be useful in tweaking your ggplots. 
 - [ggfittext](https://wilkox.org/ggfittext/index.html) provides some ggplot2 geoms for fitting text into boxes.
 - Slides. [Best practices for programming with ggplot2](https://fishandwhistle.net/slides/rstudioconf2020/#1)
+- COOL! [Reorder legend to match order of plot elements in ggplot2](https://www.nsgrantham.com/reorder-legend-ggplot2)
 
 ## facet
 - [Useful labeller functions](https://ggplot2.tidyverse.org/reference/labellers.html). Labeller functions are in charge of formatting the strip labels of facet grids and wraps. 

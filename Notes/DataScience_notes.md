@@ -238,6 +238,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [квантиль. международный эконометрический журнал на русском языке](http://quantile.ru/05/N5.htm)
 	- [Родригес Герман. Модели выживаемости](http://quantile.ru/05/05-GR.pdf)
 - COOL! [ggfortify package](https://cran.r-project.org/web/packages/ggfortify/index.html). Unified plotting tools for statistics commonly used, such as GLM, time series, PCA families, clustering and survival analysis. The package offers a single plotting interface for these analysis results and plots in a unified style using 'ggplot2'.
+- [Survival Analysis](https://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/BS704_Survival/BS704_Survival_print.html)
 - [talentanalytics/class_survival_101](https://github.com/talentanalytics/class_survival_101). A brief code example in association with a presentation about Survival Analytics
 - [Employee Attrition: Survival Analysis](https://deedata.wordpress.com/2016/01/12/employee-attrition-survival-analysis/)
 - Неплохо написано, с кодом: [Predict Customer Churn – Logistic Regression, Decision Tree and Random Forest](https://datascienceplus.com/predict-customer-churn-logistic-regression-decision-tree-and-random-forest/)
@@ -1133,6 +1134,18 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 30.08.2021
+## R
+- [R: a combined usage of split, lapply and do.call](https://kiandlee.blogspot.com/2021/08/r-combined-usage-of-split-lapply-and.html)
+- [A look into ANOVA. The long way.](https://hydroblog.netlify.app/blog/anova/anova/2021-08-17/)
+- [Scripts from Tidy Tuesday fun](https://github.com/HudsonJamie/tidy_tuesday)
+- Pointblank! [A lightweight data validation ecosystem with R, GitHub, and Slack](https://emilyriederer.netlify.app/post/data-valid-lightweight/)
+
+## PowerBI
+- COOL! [Deneb](https://deneb-viz.github.io/) is a custom visual for Microsoft Power BI, which allows developers to use the declarative JSON syntax of the Vega or Vega-Lite languages to create their own data visualizations.
+- [Create Bespoke Chart Designs without Programming](https://charticulator.com/)
+- [MS Market](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals)
+
 
 # 23.08.2021
 ## R
@@ -1227,6 +1240,15 @@ Mission: Creating a viable free open source alternative to Magma, Maple, Mathema
 - COOL! [Regex Legends: The People Behind the Magic](https://blog.stevenlevithan.com/archives/regex-legends)
 
 ## Process Mining
+
+## RPST
+- [Dominator (graph theory)](https://en.wikipedia.org/wiki/Dominator_(graph_theory))
+- [Dominator Tree of a Directed Graph](https://tanujkhattar.wordpress.com/2016/01/11/dominator-tree-of-a-directed-graph/)
+- [igraph dominator_tree](https://igraph.org/r/doc/dominator_tree.html)
+- [Using Dominator Tree in igraph package R](https://stackoverflow.com/questions/38230847/using-dominator-tree-in-igraph-package-r)
+- [Find the Dominators for every vertex in a given DAG (Directed Acyclic Graph)](https://www.geeksforgeeks.org/find-the-dominators-for-every-vertex-in-a-given-dag-directed-acyclic-graph/)
+
+## SPQR
 - [SPQR-дерево](https://ru.wikipedia.org/wiki/SPQR-%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE)
 - [Algorithm for generating a tree decomposition](https://stackoverflow.com/questions/23737690/algorithm-for-generating-a-tree-decomposition)
 - [igraph. Graph analysis](https://igraph.org/python/doc/tutorial/analysis.html). См. graph decomopistion
