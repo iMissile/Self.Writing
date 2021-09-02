@@ -533,6 +533,7 @@ Theming in Rmarkdown can be hard. You first made some custom CSS or use a provid
 	- [3.3 Render an R script to a report](https://bookdown.org/yihui/rmarkdown-cookbook/spin.html)
 	- [3.4 Convert R Markdown to R script](https://bookdown.org/yihui/rmarkdown-cookbook/purl.html)
 - [Shiny Inception: JavaScript in Rendered Markdown](https://datawookie.dev/blog/2021/06/shiny-inception-javascript-in-rendered-markdown/)
+- COOL! [Displaying verbatim code chunks in RMarkdown and Xaringan presentations](https://themockup.blog/posts/2021-08-27-displaying-verbatim-code-chunks-in-xaringan-presentations/)
 
 ## knitr
 - Jumping Rivers blog
@@ -1134,12 +1135,19 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 31.08.2021
+## Process mining
+- [msa](https://bioconductor.org/packages/msa) An R Package for Multiple Sequence Alignment]
+
+
 # 30.08.2021
 ## R
 - [R: a combined usage of split, lapply and do.call](https://kiandlee.blogspot.com/2021/08/r-combined-usage-of-split-lapply-and.html)
 - [A look into ANOVA. The long way.](https://hydroblog.netlify.app/blog/anova/anova/2021-08-17/)
 - [Scripts from Tidy Tuesday fun](https://github.com/HudsonJamie/tidy_tuesday)
-- Pointblank! [A lightweight data validation ecosystem with R, GitHub, and Slack](https://emilyriederer.netlify.app/post/data-valid-lightweight/)
+- COOL! Pointblank! [A lightweight data validation ecosystem with R, GitHub, and Slack](https://emilyriederer.netlify.app/post/data-valid-lightweight/)
+- [R vs. Python for Data Science](https://github.com/matloff/R-vs.-Python-for-Data-Science) by Norm Matloff, Prof. of Computer Science, UC Davis
+
 
 ## PowerBI
 - COOL! [Deneb](https://deneb-viz.github.io/) is a custom visual for Microsoft Power BI, which allows developers to use the declarative JSON syntax of the Vega or Vega-Lite languages to create their own data visualizations.
@@ -1230,20 +1238,26 @@ Modeling with Python on different types of time series to compare the model algo
 - [Modeltime Ecosystem Roadmap: New Algorithms & Models #5](https://github.com/business-science/modeltime/issues/5)
 
 
+
 # 14.07.2021
+## Regular expression (regexp)
+- COOL! [Regex Legends: The People Behind the Magic](https://blog.stevenlevithan.com/archives/regex-legends)
+
 ## DS
 - [Feather V2 with Compression Support in Apache Arrow 0.17.0](https://ursalabs.org/blog/2020-feather-v2/)
 - [Грандиозное тестирование батареек](https://ammo1.livejournal.com/573394.html)
 - [Как прогнозировать спрос и автоматизировать закупки с помощью machine learning: кейс Ozon](https://habr.com/ru/company/ozontech/blog/431950/)
 - [SageMath](https://www.sagemath.org/) is a free open-source mathematics software system licensed under the GPL. It builds on top of many existing open-source packages: NumPy, SciPy, matplotlib, Sympy, Maxima, GAP, FLINT, R and many more. Access their combined power through a common, Python-based language or directly via interfaces or wrappers.
 Mission: Creating a viable free open source alternative to Magma, Maple, Mathematica and Matlab.
-- COOL! [Regex Legends: The People Behind the Magic](https://blog.stevenlevithan.com/archives/regex-legends)
+
 
 ## Process Mining
 
 ## RPST
 - [Dominator (graph theory)](https://en.wikipedia.org/wiki/Dominator_(graph_theory))
 - [Dominator Tree of a Directed Graph](https://tanujkhattar.wordpress.com/2016/01/11/dominator-tree-of-a-directed-graph/)
+- [DSU - Disjoint Set Union](https://www.hackerearth.com/practice/notes/abhinav92003/disjoint-set-union/)
+- [Disjoint Set Union](https://cp-algorithms.com/data_structures/disjoint_set_union.html)
 - [igraph dominator_tree](https://igraph.org/r/doc/dominator_tree.html)
 - [Using Dominator Tree in igraph package R](https://stackoverflow.com/questions/38230847/using-dominator-tree-in-igraph-package-r)
 - [Find the Dominators for every vertex in a given DAG (Directed Acyclic Graph)](https://www.geeksforgeeks.org/find-the-dominators-for-every-vertex-in-a-given-dag-directed-acyclic-graph/)
@@ -1362,7 +1376,7 @@ set_utf8 <- function(x) {
 }
 ```
 
-И потом каждый раз оборачивать в нее запрос к БД: `from_base <- set_utf8(dbGetQuery(conn, query))`
+И потом каждый раз оборачивать в нее запрос к БД: ```from_base <- set_utf8(dbGetQuery(conn, query))```
 
 # 23.06.2021
 ## R
@@ -1439,6 +1453,7 @@ With Heap Illuminate, teams gain the benefit of a complete and trusted behaviora
 
 ## TileDB
 - [A night on the tiles](https://resources.symbolix.com.au/2021/05/28/tiledb-and-r/)
+- [Comparing SQLite, DuckDB and Arrow with UN Trade Data](https://pacha.dev/blog/2021/08/27/comparing-sqlite-duckdb-and-arrow-with-un-trade-data/)
 
 # 09.06.2021
 ## R
