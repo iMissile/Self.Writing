@@ -1135,10 +1135,24 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
+# 03.09.2021
+## R
+- R for Finance. [RQuantLib connects GNU R with QuantLib](https://dirk.eddelbuettel.com/code/rquantlib.html)
+- [QuantLib](https://www.quantlib.org/). A free/open-source library for quantitative finance
+- [Bootstrap resampling and tidy regression models](https://www.tidymodels.org/learn/statistics/bootstrap/)
+- COOL! [Network Visualizations in R using ggraph and graphlayouts](http://mr.schochastics.net/netVizR.html)
+- [Tidy Geospatial Networks in R](https://github.com/luukvdmeer/sfnetworks). 
+
+## Google Sites
+- Копируем сайты. [Download HTTrack Website Copier 3.49-2](http://www.httrack.com/page/2/)
+- [Бэкап Google Sites средствами Google](https://takeout.google.com/?pli=1)
+
+## DS
+- [Build Your own Deep Learning Framework - A Hands-on Introduction to Automatic Differentiation - Part 2](https://mostafa-samir.github.io/auto-diff-pt2/)
+
 # 31.08.2021
 ## Process mining
 - [msa](https://bioconductor.org/packages/msa) An R Package for Multiple Sequence Alignment]
-
 
 # 30.08.2021
 ## R
@@ -4468,7 +4482,7 @@ Implements clustering techniques such as Proximus and Rock, utility functions fo
 	- [UC Business Analytics R Programming Guide](https://uc-r.github.io/hc_clustering)
 - [Factoextra R Package: Easy Multivariate Data Analyses and Elegant Visualization](http://www.sthda.com/english/wiki/factoextra-r-package-easy-multivariate-data-analyses-and-elegant-visualization)
 - COOL! [StatQuest: K-means clustering](https://statquest.org/2017/07/05/statquest-k-means-clustering/)
-- Разбираемся, почему gap статистика проваливается иногда:
+- COOL! Разбираемся, почему gap статистика проваливается иногда (gap/elbow):
 	- [The optimal number of cluster by Gap Statistics](https://stats.stackexchange.com/questions/172641/the-optimal-number-of-cluster-by-gap-statistics). !! I do not trust the Gap statistic, or any of these heuristics. In particularly not if the plots are as smooth as these. Really visualizing your data is worth all the effort. In particular, also visualize the "best" result. Does it look good to you, or anomalous? Instead of trusting on some debated statistic like the Gap statistic, it is much better to trust a good visualization.
 	- COOL! [Why does gap statistic for k-means suggest one cluster, even though there are obviously two of them?](https://stats.stackexchange.com/questions/140711/why-does-gap-statistic-for-k-means-suggest-one-cluster-even-though-there-are-ob)
 	- [Standardize data columns in R](https://stackoverflow.com/questions/15215457/standardize-data-columns-in-r)
@@ -4478,6 +4492,7 @@ Implements clustering techniques such as Proximus and Rock, utility functions fo
 - [Unsupervised Learning in R](https://rpubs.com/williamsurles/310847) by William Surles, 2017-09-21
 - При попытке использовать `cluster::clusGap` возникает сообщение. [Question: K-means With Many Clusters: Quick-TRANSfer steps exceeded](https://www.biostars.org/p/348719/)
 - [K-means clustering with tidy data principles](https://www.tidymodels.org/learn/statistics/k-means/)
+- COOL! [Determining Optimal Number Of Clusters In Your Data](https://kkulma.github.io/2017-04-24-determining-optimal-number-of-clusters-in-your-data/)
 
 ## Shiny
 - COOL! Одно из приложений-победителей 2019 Shiny Contest. [An App to Visualize and Share My Dogs' Medical History](https://shiny.rstudio.com/gallery/dog-medical-history.html)

@@ -596,7 +596,6 @@ A few months ago rOpenSci’s Scott Chamberlain asked me for feedback about a ne
 ## R
 - [R Database Securing Credentials](https://db.rstudio.com/best-practices/managing-credentials/)
 - COOL! [R PACKAGES SEARCH AND STATISTICS](https://www.rpackages.io/)
-- COOL! [Determining Optimal Number Of Clusters In Your Data](https://kkulma.github.io/2017-04-24-determining-optimal-number-of-clusters-in-your-data/)
 - [zumbov2/colorfindr](https://github.com/zumbov2/colorfindr). Extracts colors from various image types and plots treemaps and 3D scatterplots of color compositions.
 - [Loops and Pizzas. An Introduction to Loops in R](https://msperlin.github.io/2018-10-19-R-and-loops/) by Marcelo S. Perlin
 - [SOLVING THE CHINESE POSTMAN PROBLEM](https://freakonometrics.hypotheses.org/53694)
