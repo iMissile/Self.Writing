@@ -1743,11 +1743,6 @@ The script below illustrates how to add one label per stack in a stacked bar cha
 
 # 28.08.2017
 ## R
-- Задача: итерация по строкам data.frame. 
-	- Крутейший сравнительный анализ доступных методов, включая purrr [Applying a function over rows of a data frame](https://rpubs.com/wch/200398) by Winston Chang. Охвачены методы `nrow`, `apply`, `split_lapply`, `lapply_row`, `lapply_lapply`, `by_row`, `pmap`, `pmap_aslist`, `rowwise`.
-	- [Исходник](https://gist.github.com/wch/0e564def155d976c04dd28a876dc04b4)
-	- [by_row vs rowwise iteration](https://stackoverflow.com/questions/43218761/by-row-vs-rowwise-iteration). Lastly, there is your separate question about `by_row()/rowwise()` First, note that `by_row` has been removed from the development version of `purrr`, and moved to a separate package, `purrrlyr`, where it's deprecated anyway, and it's recommended to "use a combination of: `tidyr::nest()`; `dplyr::mutate()`; `purrr::map()`"
-	- COOL! [Row-oriented workflows in R with the tidyverse](https://github.com/jennybc/row-oriented-workflows#readme) by Jenny Brian
 - [Why R is Hard to Learn](http://r4stats.com/articles/why-r-is-hard-to-learn/) by by Robert A. Muenchen
 
 

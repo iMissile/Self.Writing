@@ -503,6 +503,15 @@ HKEY_USERS\.Default\Keyboard Layout\Preload
 
 ## Руководство по установке подсистемы Windows для Linux в Windows 10
 - [Возможны два варианта установки подсистемы Windows для Linux (WSL)](https://docs.microsoft.com/ru-ru/windows/wsl/install-win10)
+- [Upgrading from WSL1 to WSL2](https://dev.to/adityakanekar/upgrading-from-wsl1-to-wsl2-1fl9)
+- Сравнительная таблица [How to Update from WSL to WSL 2 in Windows 10](https://www.tenforums.com/tutorials/164301-how-update-wsl-wsl-2-windows-10-a.html)
+- [Enable the Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package)
+- WSL2, информация от Микрософт. 
+    - Для получения сведений о ключевых различиях с WSL 2 перейдите на страницу https://aka.ms/wsl2
+    - WSL 2 требуется обновление компонента ядра. Дополнительные сведения см. на странице https://aka.ms/wsl2kernel
+Please make sure that virtualization is enabled inside of your computer's BIOS. The instructions on how to do this will vary from computer to computer, and will most likely be under CPU related options.
+- [Install Windows Subsystem for Linux 2 in Windows 10](https://winaero.com/install-windows-subsystem-for-linux-2-in-windows-10/)
+- [Automatically Configuring WSL](https://devblogs.microsoft.com/commandline/automatically-configuring-wsl/)
 
 # Настройка рабочего Windows10 с нуля
 - Отключаем в ярлыках Рабочего стола тени шрифта (описано выше).

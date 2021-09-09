@@ -534,6 +534,7 @@ Theming in Rmarkdown can be hard. You first made some custom CSS or use a provid
 	- [3.4 Convert R Markdown to R script](https://bookdown.org/yihui/rmarkdown-cookbook/purl.html)
 - [Shiny Inception: JavaScript in Rendered Markdown](https://datawookie.dev/blog/2021/06/shiny-inception-javascript-in-rendered-markdown/)
 - COOL! [Displaying verbatim code chunks in RMarkdown and Xaringan presentations](https://themockup.blog/posts/2021-08-27-displaying-verbatim-code-chunks-in-xaringan-presentations/)
+- [Automatic execution of setup chunk in Rmd](https://community.rstudio.com/t/automatic-execution-of-setup-chunk-in-rmd/71483)
 
 ## knitr
 - Jumping Rivers blog
@@ -1142,6 +1143,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [Bootstrap resampling and tidy regression models](https://www.tidymodels.org/learn/statistics/bootstrap/)
 - COOL! [Network Visualizations in R using ggraph and graphlayouts](http://mr.schochastics.net/netVizR.html)
 - [Tidy Geospatial Networks in R](https://github.com/luukvdmeer/sfnetworks). 
+- Любопытно. [Speeding up parentheses (and lots more) in R](https://radfordneal.wordpress.com/2010/08/19/speeding-up-parentheses-and-lots-more-in-r/)
 
 ## Google Sites
 - Копируем сайты. [Download HTTrack Website Copier 3.49-2](http://www.httrack.com/page/2/)
@@ -1149,6 +1151,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 
 ## DS
 - [Build Your own Deep Learning Framework - A Hands-on Introduction to Automatic Differentiation - Part 2](https://mostafa-samir.github.io/auto-diff-pt2/)
+- COOL! [Data-Science-Cheatsheet/Data_Science_Cheatsheet.pdf](https://github.com/aaronwangy/Data-Science-Cheatsheet/blob/main/Data_Science_Cheatsheet.pdf)
 
 # 31.08.2021
 ## Process mining
@@ -1275,6 +1278,8 @@ Mission: Creating a viable free open source alternative to Magma, Maple, Mathema
 - [igraph dominator_tree](https://igraph.org/r/doc/dominator_tree.html)
 - [Using Dominator Tree in igraph package R](https://stackoverflow.com/questions/38230847/using-dominator-tree-in-igraph-package-r)
 - [Find the Dominators for every vertex in a given DAG (Directed Acyclic Graph)](https://www.geeksforgeeks.org/find-the-dominators-for-every-vertex-in-a-given-dag-directed-acyclic-graph/)
+- [Алгоритм Тарьяна — алгоритм поиска компонент сильной связности в орграфе, работающий за линейное время.](https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%A2%D0%B0%D1%80%D1%8C%D1%8F%D0%BD%D0%B0)
+- [Gephi](https://gephi.org/) is the leading visualization and exploration software for all kinds of graphs and networks. Gephi is open-source and free.
 
 ## SPQR
 - [SPQR-дерево](https://ru.wikipedia.org/wiki/SPQR-%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE)
@@ -1489,9 +1494,15 @@ f = function(x, ...) {
 ```
 - COOL! [Self-contained xaringan Slides. A Four-year Old Feature Request](https://yihui.org/en/2021/06/self-contained-xaringan/) Yihui Xie / 2021-06-01
 
-## Google
+## Google Docs
 - [Можно ли получить нумерацию заголовков в Документах Google?](https://qastack.ru/webapps/23861/can-i-get-header-numbering-in-google-docs)
 - COOL! Дополнение. [Heading Numbers for Google Docs](https://lorut.no/add-ons/heading-numbers-for-google-docs/). Я  нашел его в виде add-on "Markdown Tools"
+- [Google Tools. Use add-ons, Apps Script & AppSheet](https://support.google.com/docs/answer/2942256?hl=en&co=GENIE.Platform%3DDesktop&oco=0#zippy=%2Cinstall-add-ons%2Cinstall-an-add-on)
+- Отображаем непечатные символы. Дополнение [Show](https://gsuite.google.com/marketplace/search/Show). Displays non-printable characters within a Google Docs document.
+To enable an app for a document press option with your add-ons (near Help), then press customize add-ons, then in new window pres on this app options (three vertical dots) and press use in a current document. After a moment reload page with document, and now there are options for "Show" in menu with add-ons (like Show all). My interface is in Russian, so I cannot see exact names from English version.
+When you change document, you should again press "Show all" to show changes of non-printable characters.
+- [Lucidchart]
+- [Руководство по Google Docs](https://mwi.me/blog/rukovodstvo-po-google-docs/)
 
 # 05.06.2021
 ## R
@@ -1817,12 +1828,20 @@ Run renv::restore()
 - [R package for flexible correlation matrices based on ggplot2](https://github.com/r-link/corrmorant)
 - [A Framework for Dimensionality Reduction in R](https://github.com/gdkrmr/dimRed)
 - [preferably is an accessible template for pkgdown documentation websites](https://preferably.amirmasoudabdol.name/index.html)
-- COOL! Dplyr rowwise. 
-	- [Using filter() with across() to keep all rows of a data frame that include a missing value for any variable](https://community.rstudio.com/t/using-filter-with-across-to-keep-all-rows-of-a-data-frame-that-include-a-missing-value-for-any-variable/68442)
-	- [Column-wise operations](https://dplyr.tidyverse.org/articles/colwise.html)
-	- [Apply a function (or functions) across multiple columns](https://dplyr.tidyverse.org/reference/across.html)
 - [modelsummary](https://vincentarelbundock.github.io/modelsummary/) creates tables and plots to summarize statistical models and data in R.
 - [Using Kubernetes and the Future Package to Easily Parallelize R in the Cloud](https://www.jottr.org/2021/04/08/future-and-kubernetes/)
+
+## R: итерация по строкам data.frame. 
+- Крутейший сравнительный анализ доступных методов, включая purrr [Applying a function over rows of a data frame](https://rpubs.com/wch/200398) by Winston Chang. Охвачены методы `nrow`, `apply`, `split_lapply`, `lapply_row`, `lapply_lapply`, `by_row`, `pmap`, `pmap_aslist`, `rowwise`.
+- [Исходник](https://gist.github.com/wch/0e564def155d976c04dd28a876dc04b4)
+- [by_row vs rowwise iteration](https://stackoverflow.com/questions/43218761/by-row-vs-rowwise-iteration). Lastly, there is your separate question about `by_row()/rowwise()` First, note that `by_row` has been removed from the development version of `purrr`, and moved to a separate package, `purrrlyr`, where it's deprecated anyway, and it's recommended to "use a combination of: `tidyr::nest()`; `dplyr::mutate()`; `purrr::map()`"
+- COOL! [Row-oriented workflows in R with the tidyverse](https://github.com/jennybc/row-oriented-workflows#readme) by Jenny Brian
+- COOL! Dplyr rowwise. 
+	- [Using filter() with across() to keep all rows of a data frame that include a missing value for any variable](https://community.rstudio.com/t/using-filter-with-across-to-keep-all-rows-of-a-data-frame-that-include-a-missing-value-for-any-variable/68442)
+	- [dplyr 1.0.0: working within rows](https://www.tidyverse.org/blog/2020/04/dplyr-1-0-0-rowwise/)
+	- [Row-wise operations](https://dplyr.tidyverse.org/articles/rowwise.html)
+	- [Column-wise operations](https://dplyr.tidyverse.org/articles/colwise.html)
+	- [Apply a function (or functions) across multiple columns](https://dplyr.tidyverse.org/reference/across.html)
 
 # 15.04.2021
 ## Excel
