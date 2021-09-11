@@ -57,6 +57,19 @@
 	- COOL! [Tikz-dimline label position (Dimension lines)](https://tex.stackexchange.com/questions/468143/tikz-dimline-label-position-dimension-lines)
 	- [tikz-dimline – Technical dimension lines using PGF/TikZ](https://www.ctan.org/tex-archive/graphics/pgf/contrib/tikz-dimline?lang=en)
 	- Тут краткий рецепт, включая `shift`. [How to set a code block using \tikzset](https://tex.stackexchange.com/questions/295856/how-to-set-a-code-block-using-tikzset)
+- [Adjust position of node label](https://tex.stackexchange.com/questions/153391/adjust-position-of-node-label)
+- [Learn How to Draw a Cylinder Shape in TikZ](https://latexdraw.com/cylinder-shape-in-tikz/)
+- [Draw 3D Cylinder](https://www.latex4technics.com/?note=32AE)
+
+## tikz angle label
+- [Angles examples](https://texample.net/tikz/examples/feature/angles/). `\usetikzlibrary{angles}`
+- Проблемка с ployglossia и надписями tikz. парсер рвет. [Polyglossia setotherlanguage conflicts with tikz library quotes](https://tex.stackexchange.com/questions/522815/polyglossia-setotherlanguage-conflicts-with-tikz-library-quotes).
+Solution: According to what I find adding `\usetikzlibrary{babel}` fixes it
+
+- COOL! [Move label of an angle in Tikz](https://tex.stackexchange.com/questions/502638/move-label-of-an-angle-in-tikz)
+- [draw two tangent cones in tikz](https://tex.stackexchange.com/questions/576204/draw-two-tangent-cones-in-tikz)
+- [TikZ: normal and tangent vectors added to ellipse 2](https://tex.stackexchange.com/questions/120706/tikz-normal-and-tangent-vectors-added-to-ellipse-2?rq=1)
+- [How can I fix 'Missing \endcsname inserted' this error when using Tikz for Overleaf?](https://stackoverflow.com/questions/61544871/how-can-i-fix-this-error-when-using-tikz-for-overleaf)
 
 # Анимация презентаций в аспекте фокусировки внимания слушателей
 - [Пример анимированного выделения части текста](http://www.texample.net/tikz/examples/beamer-arrows/) на TeXample.net

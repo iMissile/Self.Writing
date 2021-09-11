@@ -542,6 +542,12 @@ Theming in Rmarkdown can be hard. You first made some custom CSS or use a provid
 	- [Part 2: What image format should you use for graphics](https://www.jumpingrivers.com/blog/knitr-image-png-jpeg-svg-rmarkdown/)
 	- [Part 3: Including external graphics in your document](https://www.jumpingrivers.com/blog/knitr-include-graphics-external/)
 	- [Part 4: Default knitr options and hooks](https://www.jumpingrivers.com/blog/knitr-default-options-settings-hooks/)
+- [How to merge code and output in chunks results ? #131 {Closed}](https://github.com/yihui/rmarkdown-cookbook/issues/131)
+`knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, results='hold')`
+- COOL! [How to request an early exit when knitting an Rmd document?](https://stackoverflow.com/questions/33705662/how-to-request-an-early-exit-when-knitting-an-rmd-document).
+`knitr::knit_exit()` for figuring out where the deeply broken thing is by bisecting your Rmd
+
+
 
 ## knitr. Запускаем Rmd -> PDF
 Смотрим ссылки ниже. Важный концепт, который держим в голове -- возможность генерации отчетов из .R файлов (не .Rmd) посредством `spin`. `rmarkdown::render()` автоматически выбирает spin\knit в зависимости от расширения файла.
@@ -1753,9 +1759,6 @@ An AI-driven platform for data search & discovery, data governance, data steward
 - [Наводим порядок в мыслях: структурируем идеи c помощью принципа МЕСЕ](https://why.esprezo.ru/mece-principle). Фирменный способ консалтинговой империи McKinsey находить все возможные решения любой проблемы.
 - [MECE (Mutually Exclusive Collectively Exhaustive)](https://www.caseinterview.com/mece/)
 
-## knitr
-- [How to merge code and output in chunks results ? #131 {Closed}](https://github.com/yihui/rmarkdown-cookbook/issues/131)
-`knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, results='hold')`
 
 ## R
 - [How to Work with List Columns](https://www.rstudio.com/resources/webinars/how-to-work-with-list-columns/)
