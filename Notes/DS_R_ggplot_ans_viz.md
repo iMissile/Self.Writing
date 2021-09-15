@@ -309,6 +309,14 @@ storeLabeller <- function(string) {
       ggtitle(label = "Динамика совокупных остатков")
 ```
 - [Overlaying facetted histograms with normal curve using ggplot2](https://data-se.netlify.app/2021/06/23/overlaying-facetted-histograms-with-normal-curve-using-ggplot2/)
+- [Circular barplot with R and ggplot2](https://www.r-graph-gallery.com/web-circular-barplot-with-R-and-ggplot2.html)
+- COOL! [3 alternatives to a discrete color scale legend in ggplot2](https://www.nsgrantham.com/legend-alternatives-ggplot2)
+
+# extensions
+- [eulerr](https://jolars.github.io/eulerr/index.html) generates area-proportional Euler diagrams that display set relationships (intersections, unions, and disjoints) with circles or ellipses
+- [ggantrify](https://github.com/giocomai/ganttrify) Create beautiful Gantt charts with ggplot2
+- COOL! [gtExtras](https://jthomasmock.github.io/gtExtras/index.html). The goal of gtExtras is to provide some additional helper functions to assist in creating beautiful tables with gt.
+
 
 # other
 - COOL! [Altair: Declarative Visualization in Python](https://altair-viz.github.io/)

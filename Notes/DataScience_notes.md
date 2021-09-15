@@ -218,6 +218,9 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Introduction to Modern Statistics](https://openintro-ims.netlify.app/)
 - [Modern Data Science with R, 2nd edition](https://mdsr-book.github.io/mdsr2e/) by Benjamin S. Baumer, Daniel T. Kaplan, and Nicholas J. Horton
 - [Reproducible Medical Research with R](https://bookdown.org/pdr_higgins/rmrwr/) by Peter D.R. Higgins, MD, PhD, MSc
+- [Julia Data Science](https://juliadatascience.io/)
+- [Data Integration, Manipulation and Visualization of Phylogenetic Trees](https://yulab-smu.top/treedata-book/)
+- [Modern Statistics for Modern Biology](http://web.stanford.edu/class/bios221/book/) by Susan Holmes, Wolfgang Huber
 
 
 # Articles
@@ -1141,6 +1144,27 @@ sqrt(2)^2 == 2
 - [binaryLogic: Binary Logic](https://cran.r-project.org/web/packages/binaryLogic/)
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
+
+
+# 13.09.2021
+## R
+- [Tools for Refactoring Code](https://github.com/moodymudskipper/refactor)
+
+## graph
+- COOL! [Invert edges in a directed graph (transpose graph) in igraph (R packages)](https://stackoverflow.com/questions/63826748/invert-edges-in-a-directed-graph-transpose-graph-in-igraph-r-packages). see [Transpose graph](https://en.wikipedia.org/wiki/Transpose_graph)
+- [Optimize the runtime: change the weight of edges in an igraph takes long time. Is there a way to optimize it?](https://stackoverflow.com/questions/62976848/optimize-the-runtime-change-the-weight-of-edges-in-an-igraph-takes-long-time-i/63016581#63016581)
+- COOL! [Horizontal tree diagram with igraph or ggnet2](https://stackoverflow.com/questions/48362636/horizontal-tree-diagram-with-igraph-or-ggnet2)
+- Попытка преобразовать в `DiagrammeR` ломается из за неустановленного параметра `::ends(.... names = FALSE)`
+```
+from = as.integer(igraph::ends(igraph, igraph::E(igraph))[, 1])
+```
+- [Creating a tree graph in igraph](https://stackoverflow.com/questions/32882436/creating-a-tree-graph-in-igraph)
+- COOL! e-book [Modern Statistics for Modern Biology](http://web.stanford.edu/class/bios221/book/Chap-Graphs.html) by Susan Holmes, Wolfgang Huber
+- [ggtree: tree visualization and annotation](https://bioconductor.org/packages/devel/bioc/vignettes/ggtree/inst/doc/ggtree.html)
+
+## DS
+- [Почему Kafka такая быстрая](https://slurm.io/tpost/l12ed28mu1-pochemu-kafka-takaya-bistraya)
+
 
 # 03.09.2021
 ## R
@@ -2216,7 +2240,6 @@ Unit: milliseconds
 - [motifr](https://marioangst.github.io/motifr/). This package provides tools to analyse multi-level networks in terms of motifs.
 - COOL! ML [rstudio::global tips, tricks, and more](https://www.javierorraca.com/posts/2021-01-24-rstudio-global/)
 - [Should you learn Python or R in 2021?](https://www.business-science.io/code-tools/2021/01/28/python-or-r)
-- [REMOTE PAIR PROGRAMMING IN R USING VISUAL STUDIO CODE AND LIVE SHARE](https://ivelasq.rbind.io/blog/vscode-live-share/)
 - По мотивам рефакторига кода Гипросвязи. Аналоги `tidyr::separate_rows`:
 	- [Splitting a single column into multiple observation using R](https://stackoverflow.com/questions/33113263/splitting-a-single-column-into-multiple-observation-using-r)
 	- [split column in data.table to multiple rows {duplicate}](https://stackoverflow.com/questions/34712949/split-column-in-data-table-to-multiple-rows)
@@ -2861,8 +2884,7 @@ Predicted Class
 A tutorial for using ShinyProxy together with Nginx, Certbot, AWS Cognito, InfluxDB, Telegraf and Grafana
 - [S4 vectors. Foundation of vector-like and list-like containers in Bioconductor](https://bioconductor.org/packages/release/bioc/html/S4Vectors.html)
 - [waldo](https://www.tidyverse.org/blog/2020/10/waldo/)
-- [GitHub and Visual Studio Code](https://vscode.github.com/)
-- [Visual Studio Code Docs](https://code.visualstudio.com/docs)
+
 
 # 13.10.2020
 ## R

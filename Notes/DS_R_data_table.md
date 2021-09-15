@@ -60,6 +60,11 @@ Error in vecseq(f__, len__, if (allow.cartesian || notjoin || !anyDuplicated(f__
 ```
 Usually this was not intended and the join needs to be changed. The word 'cartesian' is used loosely in this context. The traditional cartesian join is (deliberately) difficult to achieve in data.table: where every row in i joins to every row in x (a nrow(x) * nrow(i) row result). 'cartesian' is just meant in a 'large multiplicative' sense.
 ```
+- [Using 'on' style join with two different column names {#2383}](https://github.com/Rdatatable/data.table/issues/2383).
+Sorry, you've misunderstood the documentation. Maybe the wording needs to be cleaned up.
+The names of the vector passed to on must be column names in x, and the values must be columns in i: `d1[d2, on = c(A = "W")]`
+You can also do `d1[d2, on = "A==W"]`
+
 - [Find complement of a data frame (anti - join)](https://stackoverflow.com/questions/28702960/find-complement-of-a-data-frame-anti-join). Масса различных вариантов.
 - А как сделать сэмплы по группам? Не все так просто
 	- [Sample random rows within each group in a data.table](https://stackoverflow.com/questions/16289182/sample-random-rows-within-each-group-in-a-data-table)

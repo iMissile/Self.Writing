@@ -10,6 +10,7 @@
 
 ## Julia VScode
 - [Julia for VSCode](https://www.julia-vscode.org/)
+- [Using GDB & VSCode to debug Julia code on Windows](https://vchuravy.dev/notes/2021/09/vscode-gdb/)
 
 ## Python VScode
 - [Getting Started with Python in VS Code](https://code.visualstudio.com/docs/python/python-tutorial)
@@ -66,3 +67,9 @@ Remember to leave a new line at the bottom of the file.
 - [REditorSupport/vscode-R](https://github.com/REditorSupport/vscode-R/releases/tag/v2.2.0)
 - [Debugging R in VSCode](https://renkun.me/2020/09/13/debugging-r-in-vscode/)
 
+- [GitHub and Visual Studio Code](https://vscode.github.com/)
+- [Visual Studio Code Docs](https://code.visualstudio.com/docs)
+- [REMOTE PAIR PROGRAMMING IN R USING VISUAL STUDIO CODE AND LIVE SHARE](https://ivelasq.rbind.io/blog/vscode-live-share/)
+
+## 13.09.2021
+- Получил такое сообщение при запуске VScode: "The R language server extension has been integrated into vscode-R. You need to disable or uninstall REditorSupport.r-lsp and reload window to use the new version.". Видимо, надо отключить [https://github.com/REditorSupport/vscode-r-lsp](R LSP Client for Visual Studio Code)
