@@ -1149,6 +1149,8 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 # 13.09.2021
 ## R
 - [Tools for Refactoring Code](https://github.com/moodymudskipper/refactor)
+- [rdrop2 - Dropbox interface from R](https://github.com/karthik/rdrop2)
+- [ranger](https://github.com/imbs-hl/ranger). A Fast Implementation of Random Forests
 
 ## graph
 - COOL! [Invert edges in a directed graph (transpose graph) in igraph (R packages)](https://stackoverflow.com/questions/63826748/invert-edges-in-a-directed-graph-transpose-graph-in-igraph-r-packages). see [Transpose graph](https://en.wikipedia.org/wiki/Transpose_graph)
@@ -1164,6 +1166,9 @@ from = as.integer(igraph::ends(igraph, igraph::E(igraph))[, 1])
 
 ## DS
 - [Почему Kafka такая быстрая](https://slurm.io/tpost/l12ed28mu1-pochemu-kafka-takaya-bistraya)
+- COOL! [Effect size is significantly more important than statistical significance.](http://www.argmin.net/2021/09/13/effect-size/)
+- COOL! [Intro to evolutionary algorithms with R for beginners (from scratch) {PART 1}](https://www.rforecology.com/post/intro-to-evolutionary-algorithms-with-r-for-beginners-from-scratch-part-1/)
+Using evolution to fit a basic linear model
 
 
 # 03.09.2021
