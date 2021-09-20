@@ -71,5 +71,24 @@ Remember to leave a new line at the bottom of the file.
 - [Visual Studio Code Docs](https://code.visualstudio.com/docs)
 - [REMOTE PAIR PROGRAMMING IN R USING VISUAL STUDIO CODE AND LIVE SHARE](https://ivelasq.rbind.io/blog/vscode-live-share/)
 
+## 20.09.2021
+- Проблема с юникодными строками в Windows. Возможно, надо задавать явно параметр `encoding` в `source` в `setting.json`
+```
+// R path for Linux
+"r.rterm.linux": "/mnt/Storage/home/xx/miniconda3/envs/tools/bin/radian“,
+
+// R command line options (i.e: --vanilla)
+"r.rterm.option": [--no-save --no-restore],
+
+// An optional encoding to pass to R when executing the file, i.e. 'source(FILE, encoding=ENCODING)'
+"r.source.encoding": "UTF-8",
+```
+Для поиска по настройкам жмем `Ctrl+Shift+P`.
+
 ## 13.09.2021
 - Получил такое сообщение при запуске VScode: "The R language server extension has been integrated into vscode-R. You need to disable or uninstall REditorSupport.r-lsp and reload window to use the new version.". Видимо, надо отключить [https://github.com/REditorSupport/vscode-r-lsp](R LSP Client for Visual Studio Code)
+
+# JetBrains DataSpell
+- Настройка окружения для R. [Setup your environment](https://www.jetbrains.com/help/dataspell/setup-r-environment.html).
+Сначала надо поставить плагин для R. [Manage plugins](https://www.jetbrains.com/help/dataspell/managing-plugins.html)
+- [R plugin support](https://www.jetbrains.com/help/dataspell/r-plugin-support.html)

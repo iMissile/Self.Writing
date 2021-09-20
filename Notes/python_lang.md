@@ -12,6 +12,10 @@
 # IDE
 - [Spyder](https://www.spyder-ide.org/) is a free and open source scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts.
 
+# 20.09.2021
+## python
+- [A Python sandbox for decision making in dynamics](https://github.com/zykls/whynot)
+
 # 30.08.2021
 ## python
 - [A fancy and practical functional tools](https://github.com/suor/funcy)

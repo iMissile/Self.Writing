@@ -558,3 +558,7 @@ Now the marks are invisible on normal work, but visible on selection only.
 - В Google Chrome включаем режим чтения. Делается это через экспериментальные настройки. `chrome://flags/#enable-reader-mode`
 - Отключаем встроенный Windows Defender. Связано это с подобными фокусами: [Штатный антивирус в Windows 10 стал помечать клиент uTorrent как вредоносное ПО, автоматически удалять его и препятствовать его повторной установке.](https://www.cnews.ru/news/top/2021-06-16_microsoft_voznenavidela_samyj) 
 
+
+## Поиск дубликатов изображений в Windows
+- [Find visually similar images for a given image file (on Windows)](https://softwarerecs.stackexchange.com/questions/17046/find-visually-similar-images-for-a-given-image-file-on-windows)
+- [Top 5 Best Duplicate Photo Cleaners For Windows 10](https://yourstory.com/mystory/top-5-duplicate-photo-cleaners-for-windows-10/amp)

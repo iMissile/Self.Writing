@@ -1146,6 +1146,17 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
 
 
+# 20.09.2021
+## R
+- COOL! [clipboard for xaringan](https://pkg.garrickadenbuie.com/xaringanExtra/clipboard/#1)
+- COOL! [Making Shiny apps faster with caching](https://resources.rstudio.com/resources/rstudioglobal-2021/making-shiny-apps-faster-with-caching/) by Winston Chang
+- COOL! [Shiny CRUD](https://www.tychobra.com/posts/2020-01-29-shiny-crud-traditional/)
+- [Building CRUD with Shiny](https://community.rstudio.com/t/building-crud-with-shiny/2881)
+
+## exif
+- [How do I retain metadata on pictures when exporting?](https://discussions.apple.com/thread/252812655). Похоже, что iCloud теряет метаинформацию.
+- [How to edit iCloud Photos Wrong EXIF metadata?](https://www.fireebok.com/resource/how-to-edit-icloud-photos-wrong-exif-metadata.html). Apple uses its own database to manage all photo metadata information, which may be different from the exif data of the original photo. In this article, we'll use the [Photo Exifer](https://www.fireebok.com/product/photoexifer.dmg) to change the camera data and gps metadata tags in Mac Finder or Photo Library.
+
 # 13.09.2021
 ## R
 - [Tools for Refactoring Code](https://github.com/moodymudskipper/refactor)
