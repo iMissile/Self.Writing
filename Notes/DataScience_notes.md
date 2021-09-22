@@ -221,6 +221,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Julia Data Science](https://juliadatascience.io/)
 - [Data Integration, Manipulation and Visualization of Phylogenetic Trees](https://yulab-smu.top/treedata-book/)
 - [Modern Statistics for Modern Biology](http://web.stanford.edu/class/bios221/book/) by Susan Holmes, Wolfgang Huber
+- [The Data Science Design Manual](https://www.data-manual.com/) by Steven Skiena
 
 
 # Articles
@@ -1157,6 +1158,10 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [How do I retain metadata on pictures when exporting?](https://discussions.apple.com/thread/252812655). Похоже, что iCloud теряет метаинформацию.
 - [How to edit iCloud Photos Wrong EXIF metadata?](https://www.fireebok.com/resource/how-to-edit-icloud-photos-wrong-exif-metadata.html). Apple uses its own database to manage all photo metadata information, which may be different from the exif data of the original photo. In this article, we'll use the [Photo Exifer](https://www.fireebok.com/product/photoexifer.dmg) to change the camera data and gps metadata tags in Mac Finder or Photo Library.
 
+## DS
+- [Introducing ClickHouse, Inc.](https://clickhouse.com/blog/en/2021/clickhouse-inc/)
+- COOL! [Deep attractors: Where deep learning meets chaos](https://blogs.rstudio.com/ai/posts/2020-06-24-deep-attractors/)
+
 # 13.09.2021
 ## R
 - [Tools for Refactoring Code](https://github.com/moodymudskipper/refactor)
@@ -1174,6 +1179,8 @@ from = as.integer(igraph::ends(igraph, igraph::E(igraph))[, 1])
 - [Creating a tree graph in igraph](https://stackoverflow.com/questions/32882436/creating-a-tree-graph-in-igraph)
 - COOL! e-book [Modern Statistics for Modern Biology](http://web.stanford.edu/class/bios221/book/Chap-Graphs.html) by Susan Holmes, Wolfgang Huber
 - [ggtree: tree visualization and annotation](https://bioconductor.org/packages/devel/bioc/vignettes/ggtree/inst/doc/ggtree.html)
+- [igraph: How to get vertex ids back from graph](https://stackoverflow.com/questions/20209303/how-to-get-vertex-ids-back-from-graph). Ответ автора [Gabor Csardi]()
+- [Find all paths between two vertices (nodes)](https://stackoverflow.com/questions/7931504/find-all-paths-between-two-vertices-nodes)
 
 ## DS
 - [Почему Kafka такая быстрая](https://slurm.io/tpost/l12ed28mu1-pochemu-kafka-takaya-bistraya)
