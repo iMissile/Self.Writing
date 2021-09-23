@@ -1144,7 +1144,26 @@ sqrt(2)^2 == 2
 ```
 - [binaryLogic: Binary Logic](https://cran.r-project.org/web/packages/binaryLogic/)
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
+
+
+# 23.09.2021
+## R scrapping
+- [R: Download image using rvest](https://stackoverflow.com/questions/36202414/r-download-image-using-rvest)
+- [Access and download images from urls (which are values of a variable)](https://community.rstudio.com/t/access-and-download-images-from-urls-which-are-values-of-a-variable/66534)
+- [The magick package: Advanced Image-Processing in R](https://cran.r-project.org/web/packages/magick/vignettes/intro.html)
+- Склейка изображения из тайлов: [ImageMagick v6 Examples --  Montage, Arrays of Images](https://legacy.imagemagick.org/Usage/montage/)
+- [How to filter out NULL elements of tibble's list column](https://stackoverflow.com/questions/57336319/how-to-filter-out-null-elements-of-tibbles-list-column)
+- COOL! Нашел решение по сборке разрозненных объектов-изображений в один объект. [Is it possible to combine images in a directory?](https://community.rstudio.com/t/is-it-possible-to-combine-images-in-a-directory/49602)
+I lifted the domain of `c()` from taking `...` to accept a list (i.e. `lift_dl()`). This vectorized the list of images and now you can append them.
 - [How to convert integer number into binary vector?](https://stackoverflow.com/questions/12088080/how-to-convert-integer-number-into-binary-vector)
+```
+df %>%
+ rowwise() %>%
+ filter(!is.null(var2))
+```
+or You can try filtering on `lengths(df$var2) > 0` or `The function drop_na() from tidyr will also work for NULL`
+
+
 
 
 # 20.09.2021
@@ -1181,6 +1200,15 @@ from = as.integer(igraph::ends(igraph, igraph::E(igraph))[, 1])
 - [ggtree: tree visualization and annotation](https://bioconductor.org/packages/devel/bioc/vignettes/ggtree/inst/doc/ggtree.html)
 - [igraph: How to get vertex ids back from graph](https://stackoverflow.com/questions/20209303/how-to-get-vertex-ids-back-from-graph). Ответ автора [Gabor Csardi]()
 - [Find all paths between two vertices (nodes)](https://stackoverflow.com/questions/7931504/find-all-paths-between-two-vertices-nodes)
+- [Retrieve list of path name from igraph all_simple_paths](https://stackoverflow.com/questions/44005265/retrieve-list-of-path-name-from-igraph-all-simple-paths)
+- [RMinimumSpanningTree](https://hub.safe.com/publishers/safe-software-knowledge-base/transformers/rminimumspanningtree). Using R and the R Package igraph, this transformer calculates the minimum distance between vertices using the Minimum Spanning Tree algorithm. Using the weights of edges it creates a spanning tree whose sum of edge weights is as small as possible without cycling back over an edge.
+- COOL! [Python igraph: get all possible paths in a directed graph](https://stackoverflow.com/questions/29314795/python-igraph-get-all-possible-paths-in-a-directed-graph). My main goal is to get all nodes in these paths, so that I can then get a subgraph of these nodes.
+```
+s=set(graph.subcomponent(source, mode="out"))
+t=set(graph.subcomponent(target, mode="in"))
+s.intersection(t)
+```
+	- [In- or out- component of a vertex](https://igraph.org/r/doc/subcomponent.html)
 
 ## DS
 - [Почему Kafka такая быстрая](https://slurm.io/tpost/l12ed28mu1-pochemu-kafka-takaya-bistraya)
