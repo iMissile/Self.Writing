@@ -179,7 +179,7 @@ DT[DT[, .I[.SD==2], .SDcols = 1]]
 ```
 - [Fill in missing values (nacof/nocb) in character column by group](https://stackoverflow.com/questions/61522683/fill-in-missing-values-nacof-nocb-in-character-column-by-group)
 - [R: data table group by column name vector](https://stackoverflow.com/questions/45410338/r-data-table-group-by-column-name-vector)
-You were almost there: `dt[,.(Count = .N, Avg = mean(get(metric))), mget(nodes)]` 
+You were almost there: `dt[, .(Count = .N, Avg = mean(get(metric))), mget(nodes)]` 
 - COOL! [How to change the last value in each group by reference, in data.table](https://stackoverflow.com/questions/21819253/how-to-change-the-last-value-in-each-group-by-reference-in-data-table)
 - [row number with by in data.table](https://stackoverflow.com/questions/49032276/row-number-with-by-in-data-table)
 - COOL! [.SDcols=function shorthand #3950 {Closed}](https://github.com/Rdatatable/data.table/issues/3950). `data.table v1.13.0 (24 Jul 2020)`. .SDcols=is.numeric now works; i.e., SDcols= accepts a function which is used to select the columns of .SD

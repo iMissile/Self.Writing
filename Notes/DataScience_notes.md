@@ -1164,14 +1164,14 @@ df %>%
 or You can try filtering on `lengths(df$var2) > 0` or `The function drop_na() from tidyr will also work for NULL`
 
 
-
-
 # 20.09.2021
 ## R
 - COOL! [clipboard for xaringan](https://pkg.garrickadenbuie.com/xaringanExtra/clipboard/#1)
 - COOL! [Making Shiny apps faster with caching](https://resources.rstudio.com/resources/rstudioglobal-2021/making-shiny-apps-faster-with-caching/) by Winston Chang
 - COOL! [Shiny CRUD](https://www.tychobra.com/posts/2020-01-29-shiny-crud-traditional/)
 - [Building CRUD with Shiny](https://community.rstudio.com/t/building-crud-with-shiny/2881)
+- [piggyback](https://docs.ropensci.org/piggyback/). This package provides a simple work-around by allowing larger (up to 2 GB per file) data files to piggyback on a repository as assets attached to individual GitHub releases.
+- [markvanderloo/hashr](https://github.com/markvanderloo/hashr). Quicly compute hash values for R objects
 
 ## exif
 - [How do I retain metadata on pictures when exporting?](https://discussions.apple.com/thread/252812655). Похоже, что iCloud теряет метаинформацию.
@@ -2274,7 +2274,7 @@ https://www.drom.ru/info/misc/81364.html
 - [numform: Tools to Format Numbers for Publication](https://cran.r-project.org/web/packages/numform/index.html). [Исходники](https://github.com/trinker/numform)
 - [numform: Tools to Format Numbers for Publication](https://cran.r-project.org/web/packages/numform/)
 - [Keep leading zeros in r](https://www.xspdf.com/resolution/52200722.html)
-- [How to add leading zeros?](https://stackoverflow.com/questions/5812493/how-to-add-leading-zeros)
+- COOL! [How to add leading zeros?](https://stackoverflow.com/questions/5812493/how-to-add-leading-zeros)
 - [Pad with leading zeros to common width {duplicate}](https://stackoverflow.com/questions/14409084/pad-with-leading-zeros-to-common-width/14409265)
 ```
 ## Print results:

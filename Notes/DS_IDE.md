@@ -70,6 +70,7 @@ Remember to leave a new line at the bottom of the file.
 - [GitHub and Visual Studio Code](https://vscode.github.com/)
 - [Visual Studio Code Docs](https://code.visualstudio.com/docs)
 - [REMOTE PAIR PROGRAMMING IN R USING VISUAL STUDIO CODE AND LIVE SHARE](https://ivelasq.rbind.io/blog/vscode-live-share/)
+- [REditorSupport/vscode-R v2.3.0](https://github.com/REditorSupport/vscode-R/releases/tag/v2.3.0)
 
 ## 20.09.2021
 - Проблема с юникодными строками в Windows. Возможно, надо задавать явно параметр `encoding` в `source` в `setting.json`
