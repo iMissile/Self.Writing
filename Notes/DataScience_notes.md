@@ -1145,6 +1145,8 @@ sqrt(2)^2 == 2
 - [binaryLogic: Binary Logic](https://cran.r-project.org/web/packages/binaryLogic/)
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 
+# 27.09.2021
+## DS
 
 # 23.09.2021
 ## R scrapping
@@ -1180,6 +1182,8 @@ or You can try filtering on `lengths(df$var2) > 0` or `The function drop_na() fr
 ## DS
 - [Introducing ClickHouse, Inc.](https://clickhouse.com/blog/en/2021/clickhouse-inc/)
 - COOL! [Deep attractors: Where deep learning meets chaos](https://blogs.rstudio.com/ai/posts/2020-06-24-deep-attractors/)
+- COOL! [Welcome to Quarto](https://quarto.org). A scientific and technical publishing system built on Pandoc (RStudio)
+- [Разложение числа на простые множители (факторизация). Делители числа](https://brestprog.by/topics/factorization/)
 
 # 13.09.2021
 ## R
@@ -1488,6 +1492,7 @@ set_utf8 <- function(x) {
 - COOL! [`job`: free your RStudio console](https://lindeloev.github.io/job/)
 - [Shiny Apps with Docker Compose, Part 1: Development](https://hosting.analythium.io/shiny-apps-with-docker-compose-part-1-development/)
 - [Shiny Apps with Docker Compose, Part 2: Production](https://hosting.analythium.io/shiny-apps-with-docker-compose-part-2-production/)
+- COOL! [An Introduction to Docker for R Users](https://colinfay.me/docker-r-reproducibility/)
 - [txtq: A Small Message Queue for Parallel Processes](https://cran.r-project.org/web/packages/txtq/index.html)
 
 ## RMarkdown

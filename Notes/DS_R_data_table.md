@@ -386,6 +386,7 @@ The way to read this out loud is: "Take DT, subset rows by i, then compute j gro
 - COOL! [Overlap joins in R: a speed comparison with packages sqldf and data.table](https://www.zevross.com/blog/2015/07/09/overlap-joins-in-r-a-speed-comparison-with-packages-sqldf-and-data-table-3/)
 - [IN BETWEEN A ROCK AND A CONDITIONAL JOIN](https://www.mango-solutions.com/in-between-a-rock-and-a-conditional-join/)
 - [Joins and conditional matching with data.table](https://aglhurley.rbind.io/2019/02/10/joins-with-data-table/)
+- [R Data Table - join but filter with update](https://stackoverflow.com/questions/46588340/r-data-table-join-but-filter-with-update)
 
 ## data.table lookup
 - [Joins vs case whens - speed and memory tradeoffs](https://themockup.blog/posts/2021-02-13-joins-vs-casewhen-speed-and-memory-tradeoffs/)
