@@ -1145,8 +1145,19 @@ sqrt(2)^2 == 2
 - [binaryLogic: Binary Logic](https://cran.r-project.org/web/packages/binaryLogic/)
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 
-# 27.09.2021
-## DS
+
+# 29.09.2021
+## R email
+- Пакеты для формирования и отправки почтовых сообщений:
+	- mailR
+	- gmailr
+	- blastula
+	- blatr
+	- mail
+	- sendmailR
+	- emayili
+статья: https://datawookie.dev/blog/2019/05/emayili-sending-email-from-r/
+- [Q-Q Plots. От чайника до профессионала за один гайд](https://habr.com/ru/post/578754/)
 
 # 23.09.2021
 ## R scrapping
@@ -1213,6 +1224,10 @@ t=set(graph.subcomponent(target, mode="in"))
 s.intersection(t)
 ```
 	- [In- or out- component of a vertex](https://igraph.org/r/doc/subcomponent.html)
+- [Connectivity (graph theory)](https://en.wikipedia.org/wiki/Connectivity_(graph_theory)). A directed graph is called weakly connected if replacing all of its directed edges with undirected edges produces a connected (undirected) graph. It is unilaterally connected or unilateral (also called semiconnected) if it contains a directed path from u to v or a directed path from v to u for every pair of vertices u, v.[2] It is strongly connected, or simply strong, if it contains a directed path from u to v and a directed path from v to u for every pair of vertices u, v.
+- [What are strongly and weakly connected components?](https://www.quora.com/What-are-strongly-and-weakly-connected-components)
+- [Weak, Regular, and Strong connectivity in directed graphs](https://math.stackexchange.com/questions/1614641/weak-regular-and-strong-connectivity-in-directed-graphs)
+- [igraph::components. Calculate the maximal (weakly or strongly) connected components of a graph](https://igraph.org/r/doc/components.html)
 
 ## DS
 - [Почему Kafka такая быстрая](https://slurm.io/tpost/l12ed28mu1-pochemu-kafka-takaya-bistraya)
@@ -2480,6 +2495,7 @@ Not all. Some are in <user folder>\.gitconfig file.
 
 ## linux
 - [The Definitive Guide to Bash Command Line History](https://catonmat.net/the-definitive-guide-to-bash-command-line-history)
+- [How to make 'sudo' grab the password from a file?](https://askubuntu.com/questions/322638/how-to-make-sudo-grab-the-password-from-a-file)
 
 ## python
 - [Top 10 Python libraries of 2020](https://tryolabs.com/blog/2020/12/21/top-10-python-libraries-of-2020/)
