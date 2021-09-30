@@ -1147,7 +1147,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 
 
 # 29.09.2021
-## R email
+## R
 - Пакеты для формирования и отправки почтовых сообщений:
 	- mailR
 	- gmailr
@@ -1158,6 +1158,12 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 	- emayili
 статья: https://datawookie.dev/blog/2019/05/emayili-sending-email-from-r/
 - [Q-Q Plots. От чайника до профессионала за один гайд](https://habr.com/ru/post/578754/)
+- [Choice-based conjoint surveys in R with formr](https://www.jhelvy.com/posts/2021-09-18-choice-based-conjoint-surveys-in-r-with-formr/)
+- COOL! [PCA with tidyverse](https://bjnnowak.netlify.app/2021/09/15/r-pca-with-tidyverse/)
+- COOL! [Releasing r2pptx on CRAN](https://mattle24.github.io/mattle24_blog/public/releasing-r2pptx-on-cran/). r2pptx is a wrapper around officer
+- [A Shiny App that Produce Forest Plots to Visualize Covariate Effects](https://github.com/smouksassi/coveffectsplot)
+- COOL! [Creating a Website](https://rstudio.github.io/distill/website.html). Share a set of Distill articles as a website
+
 
 # 23.09.2021
 ## R scrapping
