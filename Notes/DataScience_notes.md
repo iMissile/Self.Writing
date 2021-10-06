@@ -222,6 +222,8 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Data Integration, Manipulation and Visualization of Phylogenetic Trees](https://yulab-smu.top/treedata-book/)
 - [Modern Statistics for Modern Biology](http://web.stanford.edu/class/bios221/book/) by Susan Holmes, Wolfgang Huber
 - [The Data Science Design Manual](https://www.data-manual.com/) by Steven Skiena
+- [R in Action](https://livebook.manning.com/book/r-in-action-second-edition/)
+	- [Source code for Kabacoff, R. R in Action (3rd edition). Manning: Boca Raton, FL.](https://github.com/Rkabacoff/RiA3)
 
 
 # Articles
@@ -1145,6 +1147,22 @@ sqrt(2)^2 == 2
 - [binaryLogic: Binary Logic](https://cran.r-project.org/web/packages/binaryLogic/)
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 
+# 05.20.2021
+## R
+- [Find R Package Dependencies in a Project](https://rstudio.github.io/renv/reference/dependencies.html). An R data.frame of discovered dependencies, mapping inferred package names to the files in which they were discovered.
+- `assign("last.warning", NULL, envir = baseenv()) сломался`. As of R version 4.1.0, this now throws the error `Error in assign("last.warning", NULL, envir = baseenv()): cannot add binding of 'last.warning' to the base environment.`. См. [R: how to clear all warnings](). This is `assign("last.warning", envir = baseenv())` is really not recommended even though it's been the accepted answer here.
+- [bindenv: Binding and Environment Locking, Active Bindings](https://rdrr.io/r/base/bindenv.html). These functions represent an interface for adjustments to environments and bindings within environments. They allow for locking environments as well as individual bindings, and for linking a variable to a function.
+- COOL! Интересное Shiny приложение [ ShinyItemAnalysis Test and item analysis](https://shiny.cs.cas.cz/ShinyItemAnalysis/). См меню `Reports`
+- Интерактивный дашборд без Shiny [COVID-19 in the Greater Region](https://raw.githack.com/b-rodrigues/shinyless_dashboard/master/dashboard.html)
+- [coin: Conditional Inference Procedures in a Permutation Test Framework](http://coin.r-forge.r-project.org/)
+- [Understanding the Parquet file format](https://www.jumpingrivers.com/blog/parquet-file-format-big-data-r/)
+
+## Math
+- COOL! [Confidence interval for Chi-square test](https://www.statalist.org/forums/forum/general-stata-discussion/general/1540353-confidence-interval-for-chi-square-test). "Thrisa:
+as -chi2- distribution differ from the Gaussian, the normal based 95% CI bounds can be seriously misleading when the observed parameters are so small. That said, I think that the substantive message is that the lack of evidence of a difference in observed and expected events between the two categorical variables is confirmed."
+- [Chi-square test P-value from resampled method vs scipy.stats.chi2_contigency](https://stackoverflow.com/questions/64600459/chi-square-test-p-value-from-resampled-method-vs-scipy-stats-chi2-contigency)
+- [UBC Biology 501 R workshops. R tips pages Bootstrap resampling methods](https://www.zoology.ubc.ca/~bio501/R/workshops/resampling.html)
+- [R in Action. Chapter 12. Resampling statistics and bootstrapping](https://livebook.manning.com/book/r-in-action-second-edition/chapter-12/)
 
 # 29.09.2021
 ## R
@@ -1234,6 +1252,7 @@ s.intersection(t)
 - [What are strongly and weakly connected components?](https://www.quora.com/What-are-strongly-and-weakly-connected-components)
 - [Weak, Regular, and Strong connectivity in directed graphs](https://math.stackexchange.com/questions/1614641/weak-regular-and-strong-connectivity-in-directed-graphs)
 - [igraph::components. Calculate the maximal (weakly or strongly) connected components of a graph](https://igraph.org/r/doc/components.html)
+- [Introducing tidygraph](https://www.data-imaginist.com/2017/introducing-tidygraph/) Jul 7, 2017
 
 ## DS
 - [Почему Kafka такая быстрая](https://slurm.io/tpost/l12ed28mu1-pochemu-kafka-takaya-bistraya)

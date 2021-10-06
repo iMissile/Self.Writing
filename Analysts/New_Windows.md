@@ -539,6 +539,10 @@ Please make sure that virtualization is enabled inside of your computer's BIOS. 
 - Ставим EmEditor, отключаем в Касперском доступ в инет. 
 	- Ставим проверку русского языка [Spellcheck](https://www.emeditor.com/text-editor-features/more-features/spellcheck/). На момент установки словари жили [здесь](https://extensions.openoffice.org/en/project/slovari-dlya-russkogo-yazyka-dictionaries-russian). After download a dictionary, change the file extension from .oxt to .zip, extract the Zip file, and then copy *.dic and *.aff files into the Dictionaries sub folder of the EmEditor install folder (usually C:\Program Files\EmEditor\Dictionaries).
 	- Ставим для *.R подсветку синтаксиса [EmEditor Syntax ](https://www.emeditor.com/wpfb_file_category/syntax-files/), а именно, [R syntax file](https://www.emeditor.com/files/r-esy/). Инструкция по установке [How can I install an EmEditor syntax file?](http://www.emeditor.org/en/faq_setup_setup_syntax.html).
+	- Включаем отображение номеров строк. [EmEditor How to: To Display Line Numbers and or the Ruler](http://www.emeditor.org/en/howto_customize_usage_ruler.html) To Display Line Numbers and or the Ruler
+1.Click Properties for Current Configuration (if you want to change only the current configuration) or Properties for All Configuration (if you want to change all configurations) to display the General tab.
+
+2.Click Show Line Numbers to display line numbers, or click Show Ruler to display the ruler.
 	- Включаем отображение специсимволов: [Show Marks (Space Tabs EOL) in Selection only](https://www.emeditor.com/forums/topic/show-marks-space-tabs-eol-in-selection-only/)
 I just realized that we can do that already at our own:
 
