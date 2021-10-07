@@ -12,6 +12,26 @@
 # IDE
 - [Spyder](https://www.spyder-ide.org/) is a free and open source scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts.
 
+# 07.10.2021
+## python
+- [COOL!] Inside a Jupyter notebook:
+BAD:
+```
+!pip install somelib  # may install in the wrong environment!
+or
+!conda install somelib  # same problem
+```
+GOOD:
+```
+import sys
+!{sys.executable} -m pip install somelib
+or
+!conda install --yes --prefix {sys.prefix} somelib
+```
+- [How to determine a Python variable's type?](https://stackoverflow.com/questions/402504/how-to-determine-a-python-variables-type). Use the `type()` builtin function
+- [How to use enumerate inside a list comprehension in Python](https://www.kite.com/python/answers/how-to-use-enumerate-inside-a-list-comprehension-in-python)
+- [Python enumerate(): Simplify Looping With Counters](https://realpython.com/python-enumerate/)
+
 # 27.09.2021
 ## python
 - COOL! [All Algorithms implemented in Python the-algorithms.com](https://github.com/TheAlgorithms/Python)

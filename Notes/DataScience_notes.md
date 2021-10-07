@@ -1147,7 +1147,20 @@ sqrt(2)^2 == 2
 - [binaryLogic: Binary Logic](https://cran.r-project.org/web/packages/binaryLogic/)
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 
-# 05.20.2021
+
+# 07.10.2021
+## R
+- COOL! [Reserved Words in R](https://stat.ethz.ch/R-manual/R-devel/library/base/html/Reserved.html). The reserved words in R's parser are
+```
+if else repeat while function for in next break
+TRUE FALSE NULL Inf NaN NA NA_integer_ NA_real_ NA_complex_ NA_character_
+... and ..1, ..2 etc, which are used to refer to arguments passed down from a calling function, see ....
+```
+- [brms](https://paul-buerkner.github.io/brms/). Bayesian regression models using Stan
+The brms package provides an interface to fit Bayesian generalized (non-)linear multivariate multilevel models using Stan.
+- COOL! [Using data.table with OpenMP support @ Mac](https://firas.io/post/data.table_openmp/) Posted on 2021, Apr 26 by Firas Sadiyah
+
+# 05.10.2021
 ## R
 - [Find R Package Dependencies in a Project](https://rstudio.github.io/renv/reference/dependencies.html). An R data.frame of discovered dependencies, mapping inferred package names to the files in which they were discovered.
 - `assign("last.warning", NULL, envir = baseenv()) сломался`. As of R version 4.1.0, this now throws the error `Error in assign("last.warning", NULL, envir = baseenv()): cannot add binding of 'last.warning' to the base environment.`. См. [R: how to clear all warnings](). This is `assign("last.warning", envir = baseenv())` is really not recommended even though it's been the accepted answer here.
