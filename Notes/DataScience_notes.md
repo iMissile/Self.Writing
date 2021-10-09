@@ -1159,6 +1159,11 @@ TRUE FALSE NULL Inf NaN NA NA_integer_ NA_real_ NA_complex_ NA_character_
 - [brms](https://paul-buerkner.github.io/brms/). Bayesian regression models using Stan
 The brms package provides an interface to fit Bayesian generalized (non-)linear multivariate multilevel models using Stan.
 - COOL! [Using data.table with OpenMP support @ Mac](https://firas.io/post/data.table_openmp/) Posted on 2021, Apr 26 by Firas Sadiyah
+- [Using Background Jobs in the RStudio IDE](https://solutions.rstudio.com/r/jobs/)
+```
+jb <- rstudioapi::jobRunScript("run_plumber.R")
+rstudioapi::launcherControlJob(jb, operation = "stop")
+```
 
 # 05.10.2021
 ## R
