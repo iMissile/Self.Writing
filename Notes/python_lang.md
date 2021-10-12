@@ -12,6 +12,11 @@
 # IDE
 - [Spyder](https://www.spyder-ide.org/) is a free and open source scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts.
 
+# 11.10.2021
+## python
+- [Why you can’t switch to Python 3.10 just yet](https://pythonspeed.com/articles/switch-python-3.10/) by Itamar Turner-Trauring. Last updated 05 Oct 2021
+- [MkDocs. Project documentation with Markdown.](https://www.mkdocs.org/)
+
 # 07.10.2021
 ## python
 - [COOL!] Inside a Jupyter notebook:
@@ -33,6 +38,7 @@ or
 - [Python enumerate(): Simplify Looping With Counters](https://realpython.com/python-enumerate/)
 - [Convert a Pandas DataFrame to a dictionary](https://stackoverflow.com/questions/26716616/convert-a-pandas-dataframe-to-a-dictionary)
 - [Python 3's f-Strings: An Improved String Formatting Syntax (Guide)](https://realpython.com/python-f-strings/)
+- [Словари (dict) и работа с ними. Методы словарей](https://pythonworld.ru/tipy-dannyx-v-python/slovari-dict-funkcii-i-metody-slovarej.html)
 
 # 27.09.2021
 ## python

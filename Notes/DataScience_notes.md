@@ -1114,6 +1114,48 @@ To rename keys recursively, see the Q defining translate_keys(f) below.
 - [RStudio Server not inheriting TZ environment varibale?](https://support.rstudio.com/hc/en-us/community/posts/115007820087-RStudio-Server-not-inheriting-TZ-environment-varibale-)
 - [Docker Container time & timezone (will not reflect changes)](https://serverfault.com/questions/683605/docker-container-time-timezone-will-not-reflect-changes/683651#683651)
 
+## Testing
+- COOL! [Writing unit tests in R](https://r-critique.com/writing-unit-tests-in-r)
+- COOL! [Automated testing with 'testthat' in practice](https://codingclubuc3m.rbind.io/post/2019-11-26/)
+- [Unit testing without testthat](https://stackoverflow.com/questions/63827740/unit-testing-without-testthat)
+- [testthat 3.1.0](https://www.tidyverse.org/blog/2021/10/testthat-3-1/)
+- [r-lib/vdiffr](https://github.com/r-lib/vdiffr). Visual regression testing and graphical diffing with testthat
+	- [vdiffr 0.3.0](https://www.tidyverse.org/blog/2019/01/vdiffr-0-3-0/)
+- [Testing R scripts/code outside of package development](https://community.rstudio.com/t/testing-r-scripts-code-outside-of-package-development/10086/3)
+- [Shiny: Load testing and horizontal scaling](https://www.eoda.de/en/wissen/blog/shiny-load-testing-und-horizontale-skalierung)
+- COOL! [HTTP testing in R: overview of tools and new features](https://ropensci.org/technotes/2019/12/11/http-testing/). Record and replay requests with `vcr`
+- [Avoiding embarrassment by testing data assumptions with expectdata](https://dgarmat.github.io/Testing-Data-Assumptions-With-Expectdata/)
+- [testthat 2.1.0](https://www.tidyverse.org/articles/2019/04/testthat-2-1-0/)
+- [testthat 2.0.0](https://www.tidyverse.org/articles/2017/12/testthat-2-0-0/)
+```
+Test files
+For package code, tests should live in tests/testthat.
+There are four classes of .R files that have special behaviour:
+• Test files start with test and are executed in alphabetical order.
+• Helper files start with helper and are executed before tests are run and from devtools::load_all().
+• Setup files start with setup and are executed before tests, but not during devtools::load_all().
+• Teardown files start with teardown and are executed after the tests are run.
+```
+- Из документации.
+- [Intro to unit testing in R](https://katherinemwood.github.io/post/testthat/)
+- [Example of unit testing R code with testthat](https://www.johndcook.com/blog/2013/06/12/example-of-unit-testing-r-code-with-testthat/)
+- [Example of unit testing R code with testthat](https://dzone.com/articles/example-unit-testing-r-code)
+- [Practical Go: Real world advice for writing maintainable Go programs](https://dave.cheney.net/practical-go/presentations/gophercon-singapore-2019.html)
+- [loadtest: an R Package for Load Testing](https://medium.com/tmobile-tech/loadtest-an-r-package-for-load-testing-23efeeb370a5)
+	- [tmobile/loadtest](https://github.com/tmobile/loadtest). An R package that automates performance testing of ML models and summarizes the results in a dashboard w/ rad visualizations. This package is to make load testing of APIs, such as those created with the R package plumber, easy to do. It uses Apache JMeter on the backend--a modern platform for load testing. The loadtest package is open source and maintained by the AI @ T-Mobile team.
+	- COOL! [tinytest: Lightweight and Feature Complete Unit Testing Framework](https://cran.r-project.org/web/packages/tinytest/index.html)
+	- [eddelbuettel/ttdo](https://github.com/eddelbuettel/ttdo). Extend tinytest with diffobj
+- [How to start a new package with testing in R](https://trinostics.blogspot.com/2019/05/how-to-start-new-package-with-testing.html)
+- [Nightwatch.js](https://nightwatchjs.org/) Browser automated testing, the easy way.
+- [tinytest](https://github.com/markvanderloo/tinytest). A minimal, no-dependency package for unit testing
+- [unitizer: Interactive R Unit Tests](https://cran.r-project.org/web/packages/unitizer/index.html)
+Simplifies regression tests by comparing objects produced by test code with earlier versions of those same objects. If objects are unchanged the tests pass, otherwise execution stops with error details. If in interactive mode, tests can be reviewed through the provided interactive environment.
+- COOL! [Intro to unit testing in R](https://katherinemwood.github.io/post/testthat/)
+- [RTest: pretty testing of R packages](https://medium.com/@zappingseb/rtest-pretty-testing-of-r-packages-50f50b135650). The specflow and cucumber.io for R. Enabling non-coders to interpret test reports for R-packages, moreover allowing non-coders to create test cases. A step towards simple r package validation.
+- [vdiffr 0.3.0](https://www.tidyverse.org/articles/2019/01/vdiffr-0-3-0/). We’re thrilled to announce that vdiffr 0.3.0 is now on CRAN! vdiffr is a testthat extension that makes it easy to add visual unit tests for R plots
+
+
+
 ## R и 64 бит
 - [REALLY LARGE NUMBERS IN R](http://theautomatic.net/2019/08/16/really-large-numbers-in-r/). This post will discuss ways of handling huge numbers in R using the gmp package.
 - [In R is it better to use integer64, numeric, or character for large integer id numbers?](https://stackoverflow.com/questions/35171760/in-r-is-it-better-to-use-integer64-numeric-or-character-for-large-integer-id-n)
@@ -1147,9 +1189,18 @@ sqrt(2)^2 == 2
 - [binaryLogic: Binary Logic](https://cran.r-project.org/web/packages/binaryLogic/)
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 
+# 11.10.2021
+## DS
+- COOL! [COUNT BAYESIE. The Logit-Normal: A ubiquitous but strange distribution!](https://www.countbayesie.com/blog/2021/9/30/the-logit-normal-a-ubitiqutious-but-strange-distribution)
+- Альтернатива Chi2:
+	- [What is Correspondence Analysis?](https://www.tibco.com/reference-center/what-is-correspondence-analysis)
+	- [Correspondence analysis](https://en.m.wikipedia.org/wiki/Correspondence_analysis)
 
 # 07.10.2021
 ## R
+- COOL! [CHANGES IN R 4.0.0. SIGNIFICANT USER-VISIBLE CHANGES]
+There is a new syntax for specifying raw character constants similar to the one used in C++: r"(...)" with ... any character sequence not containing the sequence )". This makes it easier to write strings that contain backslashes or both single and double quotes. For more details see ?Quotes.
+- COOL! [Strings in R 4.x vs 3.x (and earlier)](https://mpopov.com/blog/2020/05/22/strings-in-r-4.x/)
 - COOL! [Reserved Words in R](https://stat.ethz.ch/R-manual/R-devel/library/base/html/Reserved.html). The reserved words in R's parser are
 ```
 if else repeat while function for in next break
@@ -1164,6 +1215,7 @@ The brms package provides an interface to fit Bayesian generalized (non-)linear 
 jb <- rstudioapi::jobRunScript("run_plumber.R")
 rstudioapi::launcherControlJob(jb, operation = "stop")
 ```
+- COOL! [bcputility](https://bcputility.roh.engineering/) is a wrapper for the command line utility program from SQL Server that does bulk imports/exports. 
 
 # 05.10.2021
 ## R
@@ -1862,8 +1914,6 @@ to NAMESPACE, or does that not beget the solution you're looking for?
 
 # 03.05.2021
 ## R
-- COOL! [Writing unit tests in R](https://r-critique.com/writing-unit-tests-in-r)
-- COOL! [Automated testing with 'testthat' in practice](https://codingclubuc3m.rbind.io/post/2019-11-26/)
 - [Introducing Observable Plot](https://observablehq.com/@observablehq/introducing-observable-plot)
 	- [Observable Plot](https://observablehq.com/@observablehq/plot) is a free, open-source JavaScript library to help you quickly visualize tabular data. It has a concise and (hopefully) memorable API to foster fluency — and plenty of examples to learn from and copy-paste.
 	- [Пакет cbr](https://github.com/bdemeshev/cbr) предназначен для скачивания временных рядов с сайта Центробанка России cbr.ru.
@@ -2367,7 +2417,6 @@ Unit: milliseconds
 - [Best practices of orchestrating Python and R code in ML projects](https://dvc.org/blog/best-practices-of-orchestrating-python-and-r-code-in-ml-projects)
 - [Your first R package in 1 hour](https://www.pipinghotdata.com/posts/2020-10-25-your-first-r-package-in-1-hour/). Tools that make R package development easy
 - [Here’s a whole course on DAG-based causal inference/econometrics with R](https://evalsp21.classes.andrewheiss.com/example/)
-- [r-lib/vdiffr](https://github.com/r-lib/vdiffr). Visual regression testing and graphical diffing with testthat
 - [Tidy.js](https://pbeshai.github.io/tidy/). Tidy up your data with JavaScript
 - COOL! [moodymudskipper/boom](https://github.com/moodymudskipper/boom)
 - ebook. [Tidyverse Skills for Data Science in R](https://leanpub.com/tidyverseskillsdatascience)
@@ -3464,7 +3513,6 @@ You can remove those from here and try and re-clone - it will ask for username/p
 - [MLOPS with R: An end-to-end process for building machine learning applications](https://github.com/revodavid/mlops-r-gha)
 - [Why Package & Environment Management is Critical for Serious Data Science](https://blog.rstudio.com/2020/08/20/why-package-environment-management-is-critical-for-serious-data-science/)
 - [Want to iterate faster? Choose boring solutions](https://about.gitlab.com/blog/2020/08/18/boring-solutions-faster-iteration/)
-- [Testing R scripts/code outside of package development](https://community.rstudio.com/t/testing-r-scripts-code-outside-of-package-development/10086/3)
 - [Exploratory Data Analysis](https://cran.r-project.org/web/packages/dlookr/vignettes/EDA.html) by Choonghyun Ryu
 - [Writing R packages to replace .R scripts?](https://softwareengineering.stackexchange.com/questions/305374/writing-r-packages-to-replace-r-scripts)
 - [Analyses as Packages](http://rmflight.github.io/posts/2014/07/analyses_as_packages.html)
@@ -4192,8 +4240,6 @@ The goal of datadrivencv is to ease the burden of maintaining a CV by separating
 - [r-lib/rcmdcheck](https://github.com/r-lib/rcmdcheck). Run R CMD check from R and collect the results
 - [Advanced R Markdown Workshop](https://arm.rbind.io/). This is the website for a two-day hands-on workshop based on the book “R Markdown: The Definitive Guide.”
 - COOL! [A Crazy Little Thing Called {purrr} - Part 4: mappers](https://colinfay.me/purrr-mappers/)
-- [r-lib/vdiffr](https://github.com/r-lib/vdiffr). Visual regression testing and graphical diffing with testthat
-	- [vdiffr 0.3.0](https://www.tidyverse.org/blog/2019/01/vdiffr-0-3-0/)
 
 ## DS
 - COOL! [Seven Techniques for Data Dimensionality Reduction](https://www.datasciencecentral.com/profiles/blogs/seven-techniques-for-data-dimensionality-reduction)
@@ -4966,7 +5012,6 @@ Reading, writing, manipulating, analyzing and modeling of gridded spatial data. 
 
 # 07.02.2020
 ## R
-- [Shiny: Load testing and horizontal scaling](https://www.eoda.de/en/wissen/blog/shiny-load-testing-und-horizontale-skalierung)
 - [Prying “.R” Script Files Away from Xcode (et al) on macOS](https://rud.is/b/2020/02/06/prying-r-script-files-away-from-xcode-et-al-on-macos/)
 
 # 05.02.2020
@@ -5246,7 +5291,6 @@ This repo was created at rOpenSci #ozunconf19 at University of Sydney Dec 11-13 
 
 # 12.12.2019
 ## R
-- COOL! [HTTP testing in R: overview of tools and new features](https://ropensci.org/technotes/2019/12/11/http-testing/). Record and replay requests with `vcr`
 - [Shiny splash screen using modules and shinyjs](https://www.radmuzom.com/2019/12/11/shiny-splash-screen-using-modules-and-shinyjs/)
 - [Key R Operators](https://www.jumpingrivers.com/blog/r-overview-operators/)
 - COOL! [tidymodels](https://stateofther.github.io/finistR2019/s-tidymodels.html) by Pierre Gestraud, 2019-10-15
@@ -5581,7 +5625,6 @@ https://packages.microsoft.com/repos/microsoft-debian-stretch-prod/dists/stretch
 
 # 22.10.2019
 ## R
-- [Avoiding embarrassment by testing data assumptions with expectdata](https://dgarmat.github.io/Testing-Data-Assumptions-With-Expectdata/)
 - [UC Business Analytics R Programming Guide. Managing Tibbles](http://uc-r.github.io/tibbles)
 
 # 21.10.2019
@@ -5921,23 +5964,6 @@ easyalluvial allows you to build exploratory alluvial plots (sankey diagrams) wi
 - [Windows user space issues with installing R packages](https://www.r-bloggers.com/windows-user-space-issues-with-installing-r-packages/)
 
 
-## Testing
-- [testthat 2.1.0](https://www.tidyverse.org/articles/2019/04/testthat-2-1-0/)
-- [testthat 2.0.0](https://www.tidyverse.org/articles/2017/12/testthat-2-0-0/)
-```
-Test files
-For package code, tests should live in tests/testthat.
-There are four classes of .R files that have special behaviour:
-• Test files start with test and are executed in alphabetical order.
-• Helper files start with helper and are executed before tests are run and from devtools::load_all().
-• Setup files start with setup and are executed before tests, but not during devtools::load_all().
-• Teardown files start with teardown and are executed after the tests are run.
-```
-- Из документации.
-- [Intro to unit testing in R](https://katherinemwood.github.io/post/testthat/)
-- [Example of unit testing R code with testthat](https://www.johndcook.com/blog/2013/06/12/example-of-unit-testing-r-code-with-testthat/)
-- [Example of unit testing R code with testthat](https://dzone.com/articles/example-unit-testing-r-code)
-- [Practical Go: Real world advice for writing maintainable Go programs](https://dave.cheney.net/practical-go/presentations/gophercon-singapore-2019.html)
 
 # 18.09.2019
 ## R
@@ -6094,8 +6120,6 @@ Users can specify their own statistics using a list combined with the skim_with(
 - COOL! [Forget about Excel, Use these R Shiny Packages Instead](https://appsilon.com/forget-about-excel-use-r-shiny-packages-instead/)
 - COOL! [1 giraffe, 2 giraffe, GO!](https://www.data-imaginist.com/2019/1-giraffe-2-giraffe-go/)
 - COOL! [Read the R source!](https://blog.r-hub.io/2019/05/14/read-the-source/). Ever heard the phrase “Read the source, Luke”? It’s a play on “Use the force, Luke” from Star Wars, with no definite source 😉, maybe a blog post by Jeff Atwood; and it underlines how important and useful it can be to read the source code of a tool instead of just its docs.
-- [loadtest: an R Package for Load Testing](https://medium.com/tmobile-tech/loadtest-an-r-package-for-load-testing-23efeeb370a5)
-	- [tmobile/loadtest](https://github.com/tmobile/loadtest). An R package that automates performance testing of ML models and summarizes the results in a dashboard w/ rad visualizations. This package is to make load testing of APIs, such as those created with the R package plumber, easy to do. It uses Apache JMeter on the backend--a modern platform for load testing. The loadtest package is open source and maintained by the AI @ T-Mobile team.
 
 # 03.09.2019
 ## R & memory
@@ -6180,8 +6204,6 @@ Multiple Precision Arithmetic (big integers and rationals, prime number tests, m
 
 # 26.08.2019
 ## R
-- COOL! [tinytest: Lightweight and Feature Complete Unit Testing Framework](https://cran.r-project.org/web/packages/tinytest/index.html)
-	- [eddelbuettel/ttdo](https://github.com/eddelbuettel/ttdo). Extend tinytest with diffobj
 - [Lightweight is the right weight](http://www.tinyverse.org/)
 - [lumberjack: Track Changes in Data](https://cran.r-project.org/web/packages/lumberjack/index.html)
 A framework that allows for easy logging of changes in data. Main features: start tracking changes by adding a single line of code to an existing script. Track changes in multiple datasets, using multiple loggers. Add custom-built loggers or use loggers offered by other packages.
@@ -6858,7 +6880,6 @@ YAML does not support multi line comments. If you want to provide comments for m
 - [Running cross_validate from cvms in parallel](http://ludvigolsen.dk/running-cross_validate-from-cvms-in-parallel/?lang=en)
 - [Trawling Through iOS Backups For Treasure (a.k.a. How to fish for target files in iOS backups) with R](https://rud.is/b/2019/06/02/trawling-through-ios-backups-for-treasure-a-k-a-how-to-fish-for-target-files-in-ios-backups-with-r/)
 - COOL! [Shiny Database App (CRUD)](http://ipub.com/shiny-crud-app/)
-- [How to start a new package with testing in R](https://trinostics.blogspot.com/2019/05/how-to-start-new-package-with-testing.html)
 - [taskscheduleR: Schedule R Scripts and Processes with the Windows Task Scheduler](https://cran.r-project.org/web/packages/taskscheduleR/index.html)
 Schedule R scripts/processes with the Windows task scheduler. This allows R users to automate R processes on specific time points from R itself.
 
@@ -6982,9 +7003,6 @@ R Markdown documents can include one or more parameters whose values can be set 
 - [Vega-Lite](https://vega.github.io/vega-lite/) is a high-level grammar of interactive graphics. It provides a concise JSON syntax for rapidly generating visualizations to support analysis. Vega-Lite specifications can be compiled to Vega specifications.
 
 # 22.05.2019
-## Testing
-- [Nightwatch.js](https://nightwatchjs.org/) Browser automated testing, the easy way.
-
 ## R Markdown
 - [Automated data report storytelling in R](https://datascienceplus.com/automated-data-report-storytelling-in-r/)
 - COOL! отличная подборка способов подачи информации: [AUTOMATED DATA REPORTS WITH R](https://www.cultureofinsight.com/blog/2018/10/22/2018-08-20-automated-data-reports-with-r/)
@@ -7550,9 +7568,6 @@ The renv package is a new effort to bring project-local R dependency management 
 - COOL! [Unit Tests in R](http://www.win-vector.com/blog/2019/03/unit-tests-in-r/)
 - COOL! [SPEED TEST: SAPPLY VS. VECTORIZATION](http://theautomatic.net/2019/03/13/speed-test-sapply-vs-vectorization/)
 - [Tinyverse](http://www.tinyverse.org/). Lightweight is the right weight. Dependencies matter. Every dependency you add to your project is an invitation to break your project.
-- [tinytest](https://github.com/markvanderloo/tinytest). A minimal, no-dependency package for unit testing
-- [unitizer: Interactive R Unit Tests](https://cran.r-project.org/web/packages/unitizer/index.html)
-Simplifies regression tests by comparing objects produced by test code with earlier versions of those same objects. If objects are unchanged the tests pass, otherwise execution stops with error details. If in interactive mode, tests can be reviewed through the provided interactive environment.
 - Поиск дубликатов в data.frame:
 	- [Removing duplicated rows data frame in R {closed}](https://stats.stackexchange.com/questions/6759/removing-duplicated-rows-data-frame-in-r)
 	- [Another solution is to use janitor package: mtcars %>% get_dupes(wt)](https://stackoverflow.com/questions/28244123/find-duplicated-elements-with-dplyr)
@@ -7596,7 +7611,6 @@ Simplifies regression tests by comparing objects produced by test code with earl
 
 # 05.03.2019
 ## R
-- COOL! [Intro to unit testing in R](https://katherinemwood.github.io/post/testthat/)
 - [Building Big Shiny Apps — A Workflow (1/2)](https://rtask.thinkr.fr/blog/building-big-shiny-apps-a-workflow-1/)
 - [Building Big Shiny Apps — A Workflow (2/2)](https://rtask.thinkr.fr/blog/building-big-shiny-apps-a-workflow-2/)
 - [ThinkR-open/golem](https://github.com/ThinkR-open/golem). A Framework for Building Robust Shiny Apps https://rtask.thinkr.fr
@@ -8119,10 +8133,6 @@ __How can I parallelize the following for-loop?__
 - COOL! [Tables with htmlTable and some alternatives](https://cran.r-project.org/web/packages/htmlTable/vignettes/tables.html)
 - [Project-oriented workflow](https://irudnyts.github.io//project-oriented-workflow/)
 - [Maintenance Updates of Future Backends and doFuture](https://www.jottr.org/2019/01/07/maintenance-updates-of-future-backends-and-dofuture/)
-- [RTest: pretty testing of R packages](https://medium.com/@zappingseb/rtest-pretty-testing-of-r-packages-50f50b135650). The specflow and cucumber.io for R. Enabling non-coders to interpret test reports for R-packages, moreover allowing non-coders to create test cases. A step towards simple r package validation.
-- [vdiffr 0.3.0](https://www.tidyverse.org/articles/2019/01/vdiffr-0-3-0/). We’re thrilled to announce that vdiffr 0.3.0 is now on CRAN! vdiffr is a testthat extension that makes it easy to add visual unit tests for R plots
-
-
 
 # 01.01.2019
 ## R
