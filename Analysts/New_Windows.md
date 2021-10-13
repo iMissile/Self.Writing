@@ -3,6 +3,10 @@
 
 # Package manager
 - COOL! [Chocolatery. The Package Manager for Windows](https://chocolatey.org/). Modern Software Automation
+- [How to upgrade Chocolatey on Windows](https://www.opentechguides.com/how-to/article/windows/212/chocolatey-upgrade.html)
+`c:\> choco upgrade chocolatey`
+- [List All Installed Packages with Chocolatey](https://mangolassi.it/topic/18334/list-all-installed-packages-with-chocolateyhttps://mangolassi.it/topic/18334/list-all-installed-packages-with-chocolatey)
+`choco list --local-only`. Там же примеры команд на апгрейд.
 
 # Бесплатные лицензии
 - [COMSS1](https://www.comss.ru/list.php?c=club)

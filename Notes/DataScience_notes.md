@@ -1189,12 +1189,26 @@ sqrt(2)^2 == 2
 - [binaryLogic: Binary Logic](https://cran.r-project.org/web/packages/binaryLogic/)
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 
+# 13.10.2021
+## R
+- [tidytransit](http://tidytransit.r-transit.org/). Use tidytransit to map transit stops and routes, calculate travel times and transit frequencies, and validate transit feeds. tidytransit reads the General Transit Feed Specification into tidyverse and simple features data frames.
+- [Your first D3 visualisation with {r2d3} and Scooby-Doo](https://www.jumpingrivers.com/blog/r-d3-intro-r2d3/)
+
+## Shiny
+- Shiny Contest
+	- [Winners of the 1st Shiny Contest](https://blog.rstudio.com/2019/04/05/first-shiny-contest-winners/), 2019-04-05
+	- [Winners of the 2nd Annual Shiny Contest](https://blog.rstudio.com/2020/07/13/winners-of-the-2nd-shiny-contest/), 2020-07-13
+	- [Winners of the 3rd annual Shiny Contest](https://blog.rstudio.com/2021/06/24/winners-of-the-3rd-annual-shiny-contest/), 2021-06-24
+	
+	
 # 11.10.2021
 ## DS
 - COOL! [COUNT BAYESIE. The Logit-Normal: A ubiquitous but strange distribution!](https://www.countbayesie.com/blog/2021/9/30/the-logit-normal-a-ubitiqutious-but-strange-distribution)
 - Альтернатива Chi2:
 	- [What is Correspondence Analysis?](https://www.tibco.com/reference-center/what-is-correspondence-analysis)
 	- [Correspondence analysis](https://en.m.wikipedia.org/wiki/Correspondence_analysis)
+- Slides! Julia M. Rohrer's Quick Files. [Less Casual Causal Inference_Workshop.pdf](https://osf.io/47m2v)
+]
 
 # 07.10.2021
 ## R
@@ -1323,6 +1337,7 @@ s.intersection(t)
 - [Weak, Regular, and Strong connectivity in directed graphs](https://math.stackexchange.com/questions/1614641/weak-regular-and-strong-connectivity-in-directed-graphs)
 - [igraph::components. Calculate the maximal (weakly or strongly) connected components of a graph](https://igraph.org/r/doc/components.html)
 - [Introducing tidygraph](https://www.data-imaginist.com/2017/introducing-tidygraph/) Jul 7, 2017
+- [An igraph hack](https://jevansbio.wordpress.com/2019/05/07/an-igraph-hack/)
 
 ## DS
 - [Почему Kafka такая быстрая](https://slurm.io/tpost/l12ed28mu1-pochemu-kafka-takaya-bistraya)
