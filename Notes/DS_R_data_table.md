@@ -387,6 +387,8 @@ The way to read this out loud is: "Take DT, subset rows by i, then compute j gro
 - [IN BETWEEN A ROCK AND A CONDITIONAL JOIN](https://www.mango-solutions.com/in-between-a-rock-and-a-conditional-join/)
 - [Joins and conditional matching with data.table](https://aglhurley.rbind.io/2019/02/10/joins-with-data-table/)
 - [R Data Table - join but filter with update](https://stackoverflow.com/questions/46588340/r-data-table-join-but-filter-with-update)
+- [How to exclude one column from data.table OR convert to data.table to MTS](https://stackoverflow.com/questions/12046079/how-to-exclude-one-column-from-data-table-or-convert-to-data-table-to-mts). `dt[,-1,with=FALSE]`
+
 
 ## data.table lookup
 - [Joins vs case whens - speed and memory tradeoffs](https://themockup.blog/posts/2021-02-13-joins-vs-casewhen-speed-and-memory-tradeoffs/)
