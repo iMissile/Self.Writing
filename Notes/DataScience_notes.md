@@ -1194,6 +1194,15 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! [Code folding in bookdown](https://stackoverflow.com/questions/45360998/code-folding-in-bookdown)
 - [Feature request: Support for code folding buttons #764 {Open}](https://github.com/rstudio/bookdown/issues/764)
 - там пример по сворачиванию кода [bblodfon/rtemps](https://github.com/bblodfon/rtemps) Rmarkdown + Bookdown templates for Reproducible Data Analyses
+- [Introducing rpp](https://blog.q-lang.org/posts/2021-10-13-release/). Launching the rpp Project
+- [RVowpalWabbit 0.0.16: One More CRAN Request](http://dirk.eddelbuettel.com/blog/2021/10/18/)
+
+## R
+- [icons](https://pkg.mitchelloharawild.com/icons/). The icons package for R makes adding web icons to reports, presentations and apps easy.
+- COOL! [rdboyes/forester](https://github.com/rdboyes/forester). An R package for creating publication-ready forest plots.
+- [ECharts 5 for R](https://github.com/JohnCoene/echarts4r)
+- [Fuzzy sets for qualitative comparative analysis (QCA) using R](https://jmsallan.netlify.app/blog/fuzzy-sets-for-qualitative-comparative-analysis-qca-using-r/)
+- [stephenturner/qqman](https://github.com/stephenturner/qqman). An R package for creating Q-Q and manhattan plots from GWAS results
 
 # 13.10.2021
 ## R
@@ -1216,6 +1225,16 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - Slides! Julia M. Rohrer's Quick Files. [Less Casual Causal Inference_Workshop.pdf](https://osf.io/47m2v)
 - [Я сделал StackOverflow из IT-чатов Telegram](https://vc.ru/tribuna/281922-ya-sdelal-stackoverflow-iz-it-chatov-telegram)
  -[Введение в понятие энтропии и ее многоликость](https://habr.com/ru/post/305794/)
+ - COOL! [Vowpal Wabbit](https://vowpalwabbit.org/). Vowpal Wabbit provides a fast, flexible, online, and active learning solution that empowers you to solve complex interactive machine learning problems.
+ - [Deploy and share your R code in seconds — not weeks](https://towardsdatascience.com/qbits-workspace-a-new-online-editor-to-share-and-deploy-r-code-48c46f3394c2).
+QBits Workspace: A new serverless data science editor built for seamless deployment and collaboration
+- [QBits Workspace](https://www.quantargo.com/qbits) Deliver Data Science Results in Seconds
+Instant deployment, sharing and API access for your data science projects.
+
+## monitoring
+- Что именно нужно мониторить и чем отличаются подходы USE / RED / LTES
+	- [USE, RED and real world PgBouncer monitoring](https://medium.com/thron-tech/how-we-implemented-red-and-use-metrics-for-monitoring-9a7db29382af)
+	- [How we implemented RED and USE metrics for monitoring](https://medium.com/thron-tech/how-we-implemented-red-and-use-metrics-for-monitoring-9a7db29382af)
 
 # 07.10.2021
 ## R
@@ -1927,15 +1946,6 @@ This is a work-in-progress book about getting data out of spreadsheets, no matte
 ## Web Scrapping
 - [Chromote: Headless Chrome Remote Interface](https://github.com/rstudio/chromote)
 
-## R packages
-- [Magrittr %>% inside a package](https://community.rstudio.com/t/magrittr-inside-a-package/2033/11)
-Have you tried adding
-`importFrom(magrittr,"%>%")`
-to NAMESPACE, or does that not beget the solution you're looking for?
-- [R: use magrittr pipe operator in self written package](https://stackoverflow.com/questions/27947344/r-use-magrittr-pipe-operator-in-self-written-package). There's now an easier way to support the pipe in your packages. The wonderful package usethis has the function `use_pipe()`. You run that function once and it handles everything. This is how the `use_pipe()` function is described in the usethis documentation:
-- [Use of inline HTML is not currently supported #1115 {Closed}](https://github.com/r-lib/roxygen2/issues/1115)
-- [R package workshop](https://combine-australia.github.io/r-pkg-dev/)
-
 # 03.05.2021
 ## R
 - [Introducing Observable Plot](https://observablehq.com/@observablehq/introducing-observable-plot)
@@ -2548,7 +2558,6 @@ Today, we're excited to announce H2O Wave v0.11.0, with support for responsive l
 
 ## R
 - [TabNet](https://mlverse.github.io/tabnet/articles/interpretation.html) claims to be an interpretable model because the underlying neural network architecture uses feature selection masks that can help identify which features were used at each step.
-- Slides. [You're Already Ready: Zen and the Art of R Package Development](https://malco.io/talk/you-re-already-ready-zen-and-the-art-of-r-package-development/)
 
 # 12.01.2021
 ## R
@@ -7719,11 +7728,7 @@ A collection of robust statistical methods based on Wilcox' WRS functions. It im
 - [To understand recursion you have to understand recursion…](http://blog.ephorie.de/to-understand-recursion-you-have-to-understand-recursion)
 - COOL! [Animate intermediate results of your algorithm](https://smorbieu.gitlab.io/animate-intermediate-results-of-your-algorithm/). Анимация работы алгоритма `kmeans`
 - [Installing R using Powershell](https://tomaztsql.wordpress.com/2019/02/18/installing-r-using-powershell/)
-- [Developing R Packages with usethis and GitLab CI: Part I](https://blog.methodsconsultants.com/posts/developing-r-packages-using-gitlab-ci-part-i/)
-- [Developing R Packages with usethis and GitLab CI: Part II](https://blog.methodsconsultants.com/posts/developing-r-packages-with-usethis-and-gitlab-ci-part-ii/)
-- [Developing R Packages with usethis and GitLab CI: Part III](https://blog.methodsconsultants.com/posts/developing-r-packages-with-usethis-and-gitlab-ci-part-iii/)
-- COOL! [remotes](https://remotes.r-lib.org/). Install R Packages from GitHub, BitBucket, or other local or remote repositories
-- R Functions: ["Calling functions. When calling a function you can specify arguments by position, by complete name, or by partial name. Arguments are matched first by exact name (perfect matching), then by prefix matching, and finally by position."](http://adv-r.had.co.nz/Functions.html#function-arguments)
+- COOL! R Functions: ["Calling functions. When calling a function you can specify arguments by position, by complete name, or by partial name. Arguments are matched first by exact name (perfect matching), then by prefix matching, and finally by position."](http://adv-r.had.co.nz/Functions.html#function-arguments)
 Также: [6.8.2 Prefix form](https://adv-r.hadley.nz/functions.html#prefix-form)
 ```
 The prefix form is the most common form in R code, and indeed in the majority of programming languages. Prefix calls in R are a little special because you can specify arguments in three ways:

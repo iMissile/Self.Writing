@@ -86,6 +86,9 @@ Remember to leave a new line at the bottom of the file.
 ```
 Для поиска по настройкам жмем `Ctrl+Shift+P`.
 
+## 19.10.2021
+- [How not to be lost with VSCode when coming from RStudio?](https://statnmap.com/2021-10-09-how-not-to-be-lost-with-vscode-when-coming-from-rstudio/)
+
 ## 13.09.2021
 - Получил такое сообщение при запуске VScode: "The R language server extension has been integrated into vscode-R. You need to disable or uninstall REditorSupport.r-lsp and reload window to use the new version.". Видимо, надо отключить [https://github.com/REditorSupport/vscode-r-lsp](R LSP Client for Visual Studio Code)
 

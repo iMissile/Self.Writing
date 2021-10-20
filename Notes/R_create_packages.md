@@ -71,4 +71,45 @@ Depends fields.
 
 - ошибки с документированием.
 	- При проверке пакета выскакивает ошибка "unexpected section header '\value'". Ответ искал здесь: [R github package w/ devtools: warning unknown macro '\item'](https://stackoverflow.com/questions/39670646/r-github-package-w-devtools-warning-unknown-macro-item). Но суть оказалась в другом.
-Текст, включающий `%LIKE%` в файлей .Rd, который по сути является LaTeX-форматоподобным, символ % является комментарием. Заэкранировал с помощью `\` и все стало ок.
+Текст, включающий `%LIKE%` в файле .Rd, который по сути является LaTeX-форматоподобным, символ % является комментарием. Заэкранировал с помощью `\` и все стало ок.
+
+- [How to Install R Packages from GitLab](https://blog.hasanbul.li/2018/07/09/how-to-install-r-packages-from-gitlab/)
+- [Use of inline HTML is not currently supported #1115 {Closed}](https://github.com/r-lib/roxygen2/issues/1115)
+- [R package workshop](https://combine-australia.github.io/r-pkg-dev/)
+
+
+# Как избежать использования :: внутри пакетов
+13.6.1 R functions
+If you are using just a few functions from another package, my recommendation is to note the package name in the Imports: field of the DESCRIPTION file and call the function(s) explicitly using ::, e.g., pkg::fun().
+
+If you are using functions repeatedly, you can avoid :: by importing the function with @importFrom pkg fun. This also has a small performance benefit, because :: adds approximately 5 µs to function evaluation time. Operators can also be imported in a similar manner, e.g., `@importFrom magrittr %>%`.
+
+## function reexport
+- [Magrittr %>% inside a package](https://community.rstudio.com/t/magrittr-inside-a-package/2033/11)
+Have you tried adding `importFrom(magrittr,"%>%")` to NAMESPACE, or does that not beget the solution you're looking for?
+Так делать не стоит, NAMESPACE генерируется roxygen. Лучше добавлять `@importFrom magrittr %>%`, см. https://stackoverflow.com/questions/27947344/r-use-magrittr-pipe-operator-in-self-written-package
+but there could still be gotchas I'm missing. I think much safer would be to just define the same operator for the package
+```
+`%>%` <- magrittr::`%>%`
+```
+- [How to import more than 1 function via "@importFrom" in an ".R" file in R?](https://stackoverflow.com/questions/37138294/how-to-import-more-than-1-function-via-importfrom-in-an-r-file-in-r)
+- [Introduction to roxygen2](https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html)
+- [Roxygen2 NAMESPACE tags](https://roxygen2.r-lib.org/articles/namespace.html)
+- COOL! [R: use magrittr pipe operator in self written package](https://stackoverflow.com/questions/27947344/r-use-magrittr-pipe-operator-in-self-written-package). There's now an easier way to support the pipe in your packages. The wonderful package usethis has the function `use_pipe()`. You run that function once and it handles everything. This is how the `use_pipe()` function is described in the usethis documentation.
+- [Re-export all objects from a package](https://community.rstudio.com/t/re-export-all-objects-from-a-package/4295)
+- [14 Package evolution - changing stuff in your package](https://devguide.ropensci.org/evolution.html)
+- [The NAMESPACE Workflow](https://r-pkgs.org/namespace.html#namespace-workflow) Generating the namespace with roxygen2 is just like generating function documentation with roxygen2. You use roxygen2 blocks (starting with #') and tags (starting with @). The workflow is the same:
+	- Add roxygen comments to your .R files.
+	- Run devtools::document() (or press Ctrl/Cmd + Shift + D in RStudio) to convert roxygen comments to .Rd files.
+	- Look at NAMESPACE and run tests to check that the specification is correct.
+	- Rinse and repeat until the correct functions are exported.
+
+# UseThis
+- [usethis](https://usethis.r-lib.org/index.html) is a workflow package: it automates repetitive tasks that arise during project setup and development, both for R packages and non-package projects.
+- Slides. [You're Already Ready: Zen and the Art of R Package Development](https://malco.io/talk/you-re-already-ready-zen-and-the-art-of-r-package-development/)
+
+
+- [Using the usethis Package and GitLab CI for Package Development in R: Part I](https://blog.methodsconsultants.com/posts/developing-r-packages-using-gitlab-ci-part-i/)
+- [Using the usethis Package and GitLab CI for Package Development in R: Part II](https://blog.methodsconsultants.com/posts/developing-r-packages-with-usethis-and-gitlab-ci-part-ii/)
+- [Using the usethis Package and GitLab CI for Package Development in R: Part III](https://blog.methodsconsultants.com/posts/developing-r-packages-with-usethis-and-gitlab-ci-part-iii/)
+- COOL! [remotes](https://remotes.r-lib.org/). Install R Packages from GitHub, BitBucket, or other local or remote repositories
