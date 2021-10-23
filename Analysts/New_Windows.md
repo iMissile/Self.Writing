@@ -5,7 +5,7 @@
 - COOL! [Chocolatery. The Package Manager for Windows](https://chocolatey.org/). Modern Software Automation
 - [How to upgrade Chocolatey on Windows](https://www.opentechguides.com/how-to/article/windows/212/chocolatey-upgrade.html)
 `c:\> choco upgrade chocolatey`
-- [List All Installed Packages with Chocolatey](https://mangolassi.it/topic/18334/list-all-installed-packages-with-chocolateyhttps://mangolassi.it/topic/18334/list-all-installed-packages-with-chocolatey)
+- [List All Installed Packages with Chocolatey](https://mangolassi.it/topic/18334/list-all-installed-packages-with-chocolatey)
 `choco list --local-only`. Там же примеры команд на апгрейд.
 
 # Бесплатные лицензии
@@ -523,6 +523,11 @@ Please make sure that virtualization is enabled inside of your computer's BIOS. 
 - Устанавливаем Ubuntu под Windows [WSL 1](https://docs.microsoft.com/ru-ru/windows/wsl/install-win10)
 - Ставим Package Manager [Chocolatey](https://chocolatey.org/)
 - Устанавливаем FiraCode для RStudio.
+- Устанавливаем [Windows Terminal]() и для него шрифт `Cascadia Code`.
+	- [Update code font from Consolas to Cascadia Code with ligature](https://weblogs.asp.net/dixin/update-code-font-from-consolas-to-cascadia-code-with-ligature)
+	- [microsoft/cascadia-code](https://github.com/microsoft/cascadia-code)
+	- [Install with chocolatey](https://community.chocolatey.org/packages/cascadiacode). `choco install cascadiacode`
+	- [Cascadia Mono Font 2108.26](https://community.chocolatey.org/packages/cascadiamono). `choco install cascadiamono`
 - Ставим [OpenVPN Community edition](https://openvpn.net/community-downloads/)
 - Ставим SSH клиент [Bitvise SSH Client/xShell]
 - Ставим SnagIt, блокируем его в файерволе (wf.msc) или касперском. [Best practices for configuring Защитник Windows firewall](https://docs.microsoft.com/ru-ru/windows/security/threat-protection/windows-firewall/best-practices-configuring).
@@ -564,7 +569,7 @@ Now the marks are invisible on normal work, but visible on selection only.
 - Настраиваем Касперского для разрешения доступа Edge в инет. [Cannot open websites in Google Chrome and Edge Chromium when working with Kaspersky Security 10 for Windows Server](https://support.kaspersky.com/15392)
 - После установки Касперского в режиме администратора отключаем штатный брандмауэр Windows `netsh advfirewall set allprofiles state off`
 - В Google Chrome включаем режим чтения. Делается это через экспериментальные настройки. `chrome://flags/#enable-reader-mode`
-- Отключаем встроенный Windows Defender. Связано это с подобными фокусами: [Штатный антивирус в Windows 10 стал помечать клиент uTorrent как вредоносное ПО, автоматически удалять его и препятствовать его повторной установке.](https://www.cnews.ru/news/top/2021-06-16_microsoft_voznenavidela_samyj) 
+- Отключаем встроенный Windows Defender. Связано это с подобными фокусами: [Штатный антивирус в Windows 10 стал помечать клиент uTorrent как вредоносное ПО, автоматически удалять его и препятствовать его повторной установке.](https://www.cnews.ru/news/top/2021-06-16_microsoft_voznenavidela_samyj)
 
 
 ## Поиск дубликатов изображений в Windows

@@ -7,6 +7,9 @@
 - [Making Your First R Package](http://tinyheero.github.io/jekyll/update/2015/07/26/making-your-first-R-package.html)
 	- Each time you add new documentation to your R function, you need to run `devtools::document()` again to re-generate the `.Rd` files.
 
+- Slides! [Package Building with devtools and usethis](colorado.rstudio.com/rsc/pkg-building). Tom Mock & Josiah Parry, 2021-10-21
+github.com/jthomasmock/pkg-building
+ 
 Загрузка с gitlab проводится такой командой:
 `devtools::install_git("http://gitlab.com/ishutov/dvtdspack.git", credentials=git2r::cred_user_pass("username", "password"))`
 Сверяем хэш локальной версии с тем, что `devtools` вписал в DESCRIPTION:

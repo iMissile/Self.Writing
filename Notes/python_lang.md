@@ -12,6 +12,35 @@
 # IDE
 - [Spyder](https://www.spyder-ide.org/) is a free and open source scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts.
 
+# 21.10.2021
+## python
+- [Here’s How to Build a Pivot Table using Pandas in Python](https://www.analyticsvidhya.com/blog/2020/03/pivot-table-pandas-python/)
+- [timeit — Измерение времени выполнения небольших фрагментов кода](https://digitology.tech/docs/python_3/library/timeit.html)
+- [timeit — Measure execution time of small code snippets](https://docs.python.org/3/library/timeit.html)
+- [Python 101: An Intro to Benchmarking your code](https://www.blog.pythonlibrary.org/2016/05/24/python-101-an-intro-to-benchmarking-your-code/)
+И вот он, трындец по скорости:
+```
+timeit.timeit("[{'a': i, 'b': 2 * i} for i in range(10000)]", number = 1000)
+4.28375910000068s
+```
+Аналог на base R дает на порядок меньше
+```
+bench::mark(
+  m = lapply(1:1000, function(x){1:10000 %>% data.frame(a = ., b = 2 * .); NULL}),
+  iterations = 1
+)
+# A tibble: 1 x 13
+  expression      min   median `itr/sec` mem_alloc 
+  <bch:expr> <bch:tm> <bch:tm>     <dbl> <bch:byt> 
+1 m             407ms    407ms      2.46     115MB 
+```
+
+- [Как получить список методов в классе Python?](https://coderoad.ru/1911281/%D0%9A%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%BE%D0%B2-%D0%B2-%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B5-Python). Вариантов масса, один из простых:
+Допустим, вы хотите знать все методы, связанные с классом `list` Просто Введите следующее
+```
+print (dir(list))
+```
+
 # 19.10.2021
 ## python
 - [What the f*ck Python!](https://github.com/satwikkansal/wtfpython). Exploring and understanding Python through surprising snippets

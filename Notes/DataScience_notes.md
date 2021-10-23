@@ -1194,8 +1194,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! [Code folding in bookdown](https://stackoverflow.com/questions/45360998/code-folding-in-bookdown)
 - [Feature request: Support for code folding buttons #764 {Open}](https://github.com/rstudio/bookdown/issues/764)
 - там пример по сворачиванию кода [bblodfon/rtemps](https://github.com/bblodfon/rtemps) Rmarkdown + Bookdown templates for Reproducible Data Analyses
-- [Introducing rpp](https://blog.q-lang.org/posts/2021-10-13-release/). Launching the rpp Project
-- [RVowpalWabbit 0.0.16: One More CRAN Request](http://dirk.eddelbuettel.com/blog/2021/10/18/)
+- [webexercises](https://psyteachr.github.io/webexercises/). The goal of webexercises is to enable instructors to easily create interactive web pages that students can use in self-guided learning. 
 
 ## R
 - [icons](https://pkg.mitchelloharawild.com/icons/). The icons package for R makes adding web icons to reports, presentations and apps easy.
@@ -1203,6 +1202,8 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [ECharts 5 for R](https://github.com/JohnCoene/echarts4r)
 - [Fuzzy sets for qualitative comparative analysis (QCA) using R](https://jmsallan.netlify.app/blog/fuzzy-sets-for-qualitative-comparative-analysis-qca-using-r/)
 - [stephenturner/qqman](https://github.com/stephenturner/qqman). An R package for creating Q-Q and manhattan plots from GWAS results
+- [Introducing rpp](https://blog.q-lang.org/posts/2021-10-13-release/). Launching the rpp Project
+- [RVowpalWabbit 0.0.16: One More CRAN Request](http://dirk.eddelbuettel.com/blog/2021/10/18/)
 
 # 13.10.2021
 ## R
@@ -1215,6 +1216,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 	- [Winners of the 1st Shiny Contest](https://blog.rstudio.com/2019/04/05/first-shiny-contest-winners/), 2019-04-05
 	- [Winners of the 2nd Annual Shiny Contest](https://blog.rstudio.com/2020/07/13/winners-of-the-2nd-shiny-contest/), 2020-07-13
 	- [Winners of the 3rd annual Shiny Contest](https://blog.rstudio.com/2021/06/24/winners-of-the-3rd-annual-shiny-contest/), 2021-06-24
+- COOL! [A beginner's guide to Shiny modules](https://rviews.rstudio.com/2021/10/20/a-beginner-s-guide-to-shiny-modules/),  2021-10-20 by Emily Riederer
 	
 # 11.10.2021
 ## DS
