@@ -245,6 +245,7 @@ Far.exe /import settings.cfg
 - [ms-setting:display and ms-personalization-background problem](http://www.windows10forums.com/threads/ms-setting-display-and-ms-personalization-background-problem.1247/)
 Hey Guyz. I found a solution for settings and updates. Download this update [3081424](https://support.microsoft.com/kb/3081424). And download the utility Microsoft Troubleshooter and fix it. Download it from here http://aka.ms/diag_settings
 - [Settings doesn’t launch, or launches the Store instead](http://answers.microsoft.com/en-us/windows/forum/windows_10-other_settings/settings-doesnt-launch-or-launches-the-store/ec439819-7ee4-4b4d-abdd-35d82e04c55f)
+- [How do I find out which programs have registered global hotkeys in Windows 10?](https://superuser.com/questions/1091942/how-do-i-find-out-which-programs-have-registered-global-hotkeys-in-windows-10)
 
 ## Удаления мэпинга сетевой папки
 - [How to delete mapped network drives on Windows 10 {QUICK GUIDE}](https://windowsreport.com/delete-mapped-network-drive/). Type: `net use drive letter/delete`
@@ -570,6 +571,7 @@ Now the marks are invisible on normal work, but visible on selection only.
 - После установки Касперского в режиме администратора отключаем штатный брандмауэр Windows `netsh advfirewall set allprofiles state off`
 - В Google Chrome включаем режим чтения. Делается это через экспериментальные настройки. `chrome://flags/#enable-reader-mode`
 - Отключаем встроенный Windows Defender. Связано это с подобными фокусами: [Штатный антивирус в Windows 10 стал помечать клиент uTorrent как вредоносное ПО, автоматически удалять его и препятствовать его повторной установке.](https://www.cnews.ru/news/top/2021-06-16_microsoft_voznenavidela_samyj)
+- [Keyboard shortcuts in Windows](https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec)
 
 
 ## Поиск дубликатов изображений в Windows

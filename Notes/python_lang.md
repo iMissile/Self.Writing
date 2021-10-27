@@ -9,8 +9,32 @@
 	- [What is BlockManager and why does it exist?](https://github.com/pydata/pandas-design/blob/a0f1d32094f5030cc06ec09c8582b5a7b7798065/source/internal-architecture.rst#what-is-blockmanager-and-why-does-it-exist)
 	- [Block manager rewrite](https://pandas.pydata.org/docs/development/roadmap.html#block-manager-rewrite)
 
-# IDE
+# IDE & Installation
 - [Spyder](https://www.spyder-ide.org/) is a free and open source scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts.
+- [Using Python with the RStudio IDE](https://support.rstudio.com/hc/en-us/articles/1500007929061-Using-Python-with-the-RStudio-IDE)
+- [How do I install pip on macOS or OS X?](https://stackoverflow.com/questions/17271319/how-do-i-install-pip-on-macos-or-os-x)
+- [How to upgrade all Python packages with pip](https://stackoverflow.com/questions/2720014/how-to-upgrade-all-python-packages-with-pip)
+	 - Не работает так: The shortest and easiest on Windows.
+`pip freeze > requirements.txt && pip install --upgrade -r requirements.txt && rm requirements.txt`
+	- Еще решение (работает, запускаем под WT и бед не знаем). [And for python 3... pip3 install]
+```
+Use AWK update packages:
+pip install -U $(pip freeze | awk -F'[=]' '{print $1}')
+
+Windows PowerShell update
+foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
+```
+
+# 26.10.2021
+## python
+- [The nature of pandas DataFrame](https://stackoverflow.com/questions/27374774/the-nature-of-pandas-dataframe)
+
+# 25.10.2021
+## python
+- [gslides: Creating charts in Google slides](https://michael-gracie.github.io/gslides/index.html)
+- COOL! [Understanding all of Python, through its builtins](https://sadh.life/post/builtins/#index)
+- COOL! [9 первоклассных функций Pandas Python для работы с данными](https://nuancesprog.ru/p/14300/)
+- [PySimpleGUI: The Simple Way to Create a GUI With Python](https://realpython.com/pysimplegui-python/)
 
 # 21.10.2021
 ## python

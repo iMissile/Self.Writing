@@ -1188,6 +1188,19 @@ sqrt(2)^2 == 2
 ```
 - [binaryLogic: Binary Logic](https://cran.r-project.org/web/packages/binaryLogic/)
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
+- COOL! Здесь есть Rcpp код. [Double precision (64-bit) representation of numeric value in R (sign, exponent, significand)](https://stackoverflow.com/questions/50217954/double-precision-64-bit-representation-of-numeric-value-in-r-sign-exponent)
+- [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
+
+# 25.10.2021
+## DS
+- [052. Alleviating Bloatware, First Attempt]()
+“Microsoft’s Office 97 contains 4,500 commands for features both useful and arcane.” in “Microsoft May Face Backlash Against ‘Bloatware’”—WSJ, 11/18/96
+- COOL! [An Illustrated Tour of Wav2vec 2.0](https://jonathanbgn.com/2021/09/30/illustrated-wav2vec-2.html)
+
+## R
+- [(R) Riding tables with {gt} and {gtExtras}](https://bjnnowak.netlify.app/2021/10/04/r-beautiful-tables-with-gt-and-gtextras/) by Benjamin Nowak | 04 Oct 2021
+- COOL! [The metafor Package](https://www.metafor-project.org/doku.php/plots:forest_plot) A Meta-Analysis Package for R
+- [How to leave the R browser() mode in the console window?](https://stackoverflow.com/questions/13052522/how-to-leave-the-r-browser-mode-in-the-console-window)
 
 # 15.10.2021
 ## bookdown
@@ -1199,6 +1212,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 ## R
 - [icons](https://pkg.mitchelloharawild.com/icons/). The icons package for R makes adding web icons to reports, presentations and apps easy.
 - COOL! [rdboyes/forester](https://github.com/rdboyes/forester). An R package for creating publication-ready forest plots.
+- [NikNakk/forestmodel](https://github.com/NikNakk/forestmodel/). лажовый пакет
 - [ECharts 5 for R](https://github.com/JohnCoene/echarts4r)
 - [Fuzzy sets for qualitative comparative analysis (QCA) using R](https://jmsallan.netlify.app/blog/fuzzy-sets-for-qualitative-comparative-analysis-qca-using-r/)
 - [stephenturner/qqman](https://github.com/stephenturner/qqman). An R package for creating Q-Q and manhattan plots from GWAS results
