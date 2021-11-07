@@ -116,3 +116,22 @@ but there could still be gotchas I'm missing. I think much safer would be to jus
 - [Using the usethis Package and GitLab CI for Package Development in R: Part II](https://blog.methodsconsultants.com/posts/developing-r-packages-with-usethis-and-gitlab-ci-part-ii/)
 - [Using the usethis Package and GitLab CI for Package Development in R: Part III](https://blog.methodsconsultants.com/posts/developing-r-packages-with-usethis-and-gitlab-ci-part-iii/)
 - COOL! [remotes](https://remotes.r-lib.org/). Install R Packages from GitHub, BitBucket, or other local or remote repositories
+
+# Статическая проверка кода
+- [R PACKAGES: HOW TO SOLVE THE CHECK NOTE "NO VISIBLE BINDING FOR GLOBAL VARIABLE"](https://caoyang.tech/post/r-packages-how-to-solve-the-check-note-no-visible-binding-for-global-variable/), 2019/09/08
+While our package employ a function using Non Standard Evaluation (NSE), such as data.table and many tidyverse packages, R CMD check will generate NOTEs in the form “no visible binding for global variable xxx”. There are two ways to solve this problem
+
+First, add utils::globalVariables(c("xxx")) to your code, perhaps in R/globals.R. I recommand add it to the R file which caused the NOTE. Apprantly, utils packaage should be added to the Imports filed of DESCRIPTION file.
+
+Second, as mentioned in the vignette of dplyr:
+
+< If this function is in a package, using .data also prevents R CMD check from giving a NOTE about undefined global variables (provided that you’ve also imported rlang::.data with @importFrom rlang .data)
+
+```
+mutate_y <- function(df) {
+  mutate(df, y = .data$a + .data$x)
+}
+```
+- [Trouble using Lintr in R](https://stackoverflow.com/questions/33221019/trouble-using-lintr-in-r)
+- [Importing data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-importing.html)
+- [When using data.table in a package, R CMD check NOTEs: no visible global function definition for '.'](https://stackoverflow.com/questions/43662416/when-using-data-table-in-a-package-r-cmd-check-notes-no-visible-global-functio)

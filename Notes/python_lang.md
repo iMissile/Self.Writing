@@ -25,6 +25,17 @@ Windows PowerShell update
 foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
 
+
+# 31.10.2021
+## R
+- [Beautiful decision tree visualizations with dtreeviz](https://towardsdatascience.com/beautiful-decision-tree-visualizations-with-dtreeviz-af1a66c1c180)
+
+# 29.10.2021
+## python
+- [The Basics of Indexing and Slicing Python Lists](https://towardsdatascience.com/the-basics-of-indexing-and-slicing-python-lists-2d12c90a94cf). A guide for beginners, by a beginner.
+Indexing, Slicing, Stepping.
+В частности, Negative step values reverse the direction in which the slicer iterates through the original list: `my_list[::-1]`
+
 # 26.10.2021
 ## python
 - [The nature of pandas DataFrame](https://stackoverflow.com/questions/27374774/the-nature-of-pandas-dataframe)

@@ -1191,6 +1191,22 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! Здесь есть Rcpp код. [Double precision (64-bit) representation of numeric value in R (sign, exponent, significand)](https://stackoverflow.com/questions/50217954/double-precision-64-bit-representation-of-numeric-value-in-r-sign-exponent)
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
+# 02.11.2021
+## R
+- COOL! [Firebase](https://firebase.john-coene.com/) Authenticate Shiny users with Google Firebase.
+- Пересел я с linux на window10, но мне так не хватает linux утилиты `notify-send`. Оказывается для винды есть аналог. Теперь можно отправлять из R уведомления
+```
+# Отправка всплывающих уведомлений из R для Windows10
+# Консольная утилита - качаем тут http://vaskovsky.net/notify-send/
+
+# Информационное уведомление
+system('notify-send -i info "Работа скрипта" "Завершено 100%"')
+# Уведомление об ошибке
+system('notify-send -i error "Работа скрипта" "Обнаружена ошибка"')
+# Важное уведомление
+system('notify-send -i important "Работа скрипта" "Ахтунг!"')
+```
+
 # 25.10.2021
 ## DS
 - [052. Alleviating Bloatware, First Attempt]()
@@ -1382,6 +1398,7 @@ s.intersection(t)
 - [An igraph hack](https://jevansbio.wordpress.com/2019/05/07/an-igraph-hack/)
 - [How to control the igraph plot layout with Fixed Positions?](https://stackoverflow.com/questions/5364264/how-to-control-the-igraph-plot-layout-with-fixed-positions)
 - [Horizontal tree diagram with igraph or ggnet2](https://stackoverflow.com/questions/48362636/horizontal-tree-diagram-with-igraph-or-ggnet2)
+- [How to compare two graphs to Identify number of same/different edges between two graph using igraph R package](https://stackoverflow.com/questions/63726493/how-to-compare-two-graphs-to-identify-number-of-same-different-edges-between-two)
 
 ## DS
 - [Почему Kafka такая быстрая](https://slurm.io/tpost/l12ed28mu1-pochemu-kafka-takaya-bistraya)
@@ -3144,7 +3161,7 @@ The glow package is a framework for creating plots with glowing points as an alt
 # 05.10.2020
 ## R
 - [downloadthis](https://fmmattioni.github.io/downloadthis/) The goal of downloadthis is to implement download buttons in HTML output from RMarkdown without the need for runtime:shiny.
-- COOL! [Demystifying stat_ layers in {ggplot2}](https://yjunechoe.github.io/posts/2020-09-26-demystifying-stat-layers-ggplot2/)
+- COOL! [Demystifying stat_ layers in {ggplot2}](https://yjunechoe.github.io/posts/2020-09-26-demystifying-stat-layers-ggplot2/) geom_stat 
 - [Companies Using R • A Curated list of R uses in enterprise](https://github.com/ThinkR-open/companies-using-r)
 - [strboul/supreme](https://strboul.github.io/supreme/). Modeling tool helping users better structure 'Shiny applications' developed with 'Shiny' modules
 - [Grammar of Graphics for Linear Model Diagnostic Plots](https://github.com/graysonwhite/gglm)
