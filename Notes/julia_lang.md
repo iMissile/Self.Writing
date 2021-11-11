@@ -17,15 +17,23 @@
 - [Simple multi-layer perceptron](https://fluxml.ai/tutorials/2021/01/26/mlp.html)
 
 
+# 09.11.2021
+## Graph
+- [JuliaGraphs - Graph analysis in Julia](https://juliagraphs.org/)
+
 # 06.11.2021
 - [The JuliaConnectoR. A Functionally Oriented Interface for Integrating Julia in R](https://arxiv.org/ftp/arxiv/papers/2005/2005.06334.pdf)
+- [stefan-m-lenz/JuliaConnectoR](https://github.com/stefan-m-lenz/JuliaConnectoR). A functionally oriented interface for calling Julia from R
+- [Julia beginner's corner: mastering comparison operators](https://bkamins.github.io/julialang/2021/10/08/comparisons.html). Oct 8, 2021
+- [Tutorial on precompilation](https://julialang.org/blog/2021/01/precompile_tutorial/). 5 January 2021 | Tim Holy
+- Performance Tips. [Be aware of when Julia avoids specializing](https://docs.julialang.org/en/v1/manual/performance-tips/#Be-aware-of-when-Julia-avoids-specializing)
 
 # 31.10.2021
-Íàøåë â òåëåãðàì êàíàëå ìàññó ññûëîê
-What should I read in order to / ×òî ìíå ïî÷èòàòü, ÷òîáû:
+ÐÐ°ÑˆÐµÐ» Ð² Ñ‚ÐµÐ»ÐµÐ³Ñ€Ð°Ð¼ ÐºÐ°Ð½Ð°Ð»Ðµ Ð¼Ð°ÑÑÑƒ ÑÑÑ‹Ð»Ð¾Ðº
+What should I read in order to / Ð§Ñ‚Ð¾ Ð¼Ð½Ðµ Ð¿Ð¾Ñ‡Ð¸Ñ‚Ð°Ñ‚ÑŒ, Ñ‡Ñ‚Ð¾Ð±Ñ‹:
 
 
-1. Understand basics of Julia / Ïîíÿòü îñíîâû ÿçûêà Julia ?
+1. Understand basics of Julia / ÐŸÐ¾Ð½ÑÑ‚ÑŒ Ð¾ÑÐ½Ð¾Ð²Ñ‹ ÑÐ·Ñ‹ÐºÐ° Julia ?
 	1.1 ThinkJulia: https://benlauwens.github.io/ThinkJulia.jl/latest/book.html
 	1.2 QuantEcon parts: https://julia.quantecon.org/
 	1.3 Zero2Hero Julia: https://www.youtube.com/watch?v=Fi7Pf2NveH0
@@ -33,36 +41,36 @@ What should I read in order to / ×òî ìíå ïî÷èòàòü, ÷òîáû:
 	1.5 From zero to Julia: https://techytok.com/from-zero-to-julia/
 	1.6 Jane Herriman intro to Julia: https://www.youtube.com/watch?v=8h8rQyEpiZA
 	1.7  Introduction to Computational Thinking with Julia, with applications to modelling the COVID-19 pandemic: https://github.com/mitmath/6S083
-2. Understand Julia more deeply / Ëó÷øå ïîíÿòü íåêîòîðûå òîíêèå àñïåêòû Julia?
+2. Understand Julia more deeply / Ð›ÑƒÑ‡ÑˆÐµ Ð¿Ð¾Ð½ÑÑ‚ÑŒ Ð½ÐµÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ Ñ‚Ð¾Ð½ÐºÐ¸Ðµ Ð°ÑÐ¿ÐµÐºÑ‚Ñ‹ Julia?
 	2.1 Chris Rachauckas tutorial: https://ucidatascienceinitiative.github.io/IntroToJulia/
 	2.2 Tom Kwong. Hands-on Design Patterns and Best Practices with Julia. 
 	2.3 Malcolm Sherrington. Mastering Julia.
 	2.4 Julia workshop 2019 (Finland): https://github.com/crstnbr/JuliaOulu20
 	2.5 D.P.Sanders workshop: https://github.com/dpsanders/hands_on_julia
 	2.6 Metaprogramming workshop: https://youtu.be/SeqAQHKLNj4
-3. Learn some applications to specific branches of mathematics / Óçíàòü áîëüøå î
-ïðèëîæåíèÿõ ê íåêîòîðûì îáëàñòÿì ìàòåìàòèêè?
-	3.1 Linear algebra / Ëèíåéíàÿ àëãåáðà:
+3. Learn some applications to specific branches of mathematics / Ð£Ð·Ð½Ð°Ñ‚ÑŒ Ð±Ð¾Ð»ÑŒÑˆÐµ Ð¾
+Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸ÑÑ… Ðº Ð½ÐµÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¼ Ð¾Ð±Ð»Ð°ÑÑ‚ÑÐ¼ Ð¼Ð°Ñ‚ÐµÐ¼Ð°Ñ‚Ð¸ÐºÐ¸?
+	3.1 Linear algebra / Ð›Ð¸Ð½ÐµÐ¹Ð½Ð°Ñ Ð°Ð»Ð³ÐµÐ±Ñ€Ð°:
 		3.1.1 Introduction to applied linear algebra: vectors, matrices and least squares http://vmls-book.stanford.edu/
 		3.1.2 Folkmar Bornemann: Numerical Linear Algebra. A Concise Introduction  with MATLAB and Julia
 		3.1.3 MODERN APPLICATIONS OF NUMERICAL LINEAR ALGEBRA METHODS: https://github.com/ivanslapnicar/GIAN-Applied-NLA-Course
-	3.2 Differential equations, dynamical systems / Äèôóðû è äèíàìè÷. ñèñòåìû:
+	3.2 Differential equations, dynamical systems / Ð”Ð¸Ñ„ÑƒÑ€Ñ‹ Ð¸ Ð´Ð¸Ð½Ð°Ð¼Ð¸Ñ‡. ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹:
 		3.2.1 DynamicalSystems.jl tutorial: https://www.youtube.com/watch?v=13hqE_1a158
 		3.2.2 DifferentialEquations tutorial: https://www.youtube.com/watch?v=13hqE_1a158
 		3.2.3 Partial Differential Equations tutorial: https://www.youtube.com/watch?v=13hqE_1a158
-	3.3 Optimization / Îïòèìèçàöèÿ:
+	3.3 Optimization / ÐžÐ¿Ñ‚Ð¸Ð¼Ð¸Ð·Ð°Ñ†Ð¸Ñ:
 		3.3.1 Kochenderfer, Wheeler : Algorithms for Optimization
 		3.3.2 Kwong: Julia Programming for Operations Research, 2nd Edition
-	3.4 Data science / Íàóêà î äàííûõ:
+	3.4 Data science / ÐÐ°ÑƒÐºÐ° Ð¾ Ð´Ð°Ð½Ð½Ñ‹Ñ…:
 		3.4.1 Data science workshop: https://youtu.be/SLE0vz85Rqo
 		3.4.2 Queryverse workshop: https://www.youtube.com/watch?v=OFPNph-WxLM
-	3.5 Statistics, bayesian, etc / Ñòàòèñòèêà, áàéåñîâñêèé ïîäõîä è äð.:
+	3.5 Statistics, bayesian, etc / Ð¡Ñ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ°, Ð±Ð°Ð¹ÐµÑÐ¾Ð²ÑÐºÐ¸Ð¹ Ð¿Ð¾Ð´Ñ…Ð¾Ð´ Ð¸ Ð´Ñ€.:
 		3.5.1 Statistics with julia: https://github.com/h-Klok/StatsWithJuliaBook
 		3.5.2 Turing language tutorials: https://turing.ml/dev/tutorials/
 		3.5.3 Statistical rethinking in Julia: https://github.com/StatisticalRethinkingJulia/StatisticalRethinking.jl
-	3.6 Calculus, symbolic computations, ... / Àíàëèç, ñèìâîëüíûå âû÷èñëåíèÿ:
+	3.6 Calculus, symbolic computations, ... / ÐÐ½Ð°Ð»Ð¸Ð·, ÑÐ¸Ð¼Ð²Ð¾Ð»ÑŒÐ½Ñ‹Ðµ Ð²Ñ‹Ñ‡Ð¸ÑÐ»ÐµÐ½Ð¸Ñ:
 		3.6.1 Calculus with julia : http://calculuswithjulia.github.io/
-4. Ecosystem, packages, etc / Ýêîñèñòåìà, ïàêåòû è èíîå:
+4. Ecosystem, packages, etc / Ð­ÐºÐ¾ÑÐ¸ÑÑ‚ÐµÐ¼Ð°, Ð¿Ð°ÐºÐµÑ‚Ñ‹ Ð¸ Ð¸Ð½Ð¾Ðµ:
 	4.1 How to write a package (Rackauckas) https://youtu.be/QVmU29rCjaA
 	4.2 How to install https://youtu.be/oyx8M1yoboY
 
@@ -85,5 +93,4 @@ julia> Pkg.resolve() # or Pkg.update()
 - COOL! [JuliaCall: Integrating R and Julia](https://hwborchers.github.io/)
 - [FIRST IMPRESSIONS OF JULIA FROM AN R USER](https://mdneuzerling.com/post/first-impressions-of-julia-from-an-r-user/)
 - [Pluto's built-in package management](https://github.com/fonsp/Pluto.jl/wiki/%F0%9F%8E%81-Package-management)
-
 

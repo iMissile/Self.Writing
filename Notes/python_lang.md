@@ -24,6 +24,8 @@ pip install -U $(pip freeze | awk -F'[=]' '{print $1}')
 Windows PowerShell update
 foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
+# 10.11.2021
+- [A high-level app and dashboarding solution for Python](https://panel.holoviz.org/)
 
 
 # 31.10.2021

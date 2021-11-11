@@ -193,6 +193,7 @@ Generate a palette of k colors from ggsci palettes, RColorbrewer palettes and cu
 - COOL! [How to create a color palette in R with more than 15 colors with ggplot2 #19 {Closed}](https://github.com/duttashi/visualizer/issues/19)
 - [#40 RCOLORBREWER : GET A LONGER PALETTE](https://www.r-graph-gallery.com/40-rcolorbrewer-get-a-longer-palette/)
 - [THE PAUL TOL 21-COLOR SALUTE](https://tradeblotter.wordpress.com/2013/02/28/the-paul-tol-21-color-salute/)
+- COOL! [Some thoughts about colors: Color spaces](https://clauswilke.com/art/post/colors-color-spaces). Art by Claus O. Wilke
 - COOL! [Polychrome: Qualitative Palettes with Many Colors](https://cran.rstudio.com/web/packages/Polychrome/index.html). Tools for creating, viewing, and assessing qualitative palettes with many (20-30 or more) colors.
 - [colortools: Tools for colors in a Hue-Saturation-Value (HSV) color model](https://cran.r-project.org/web/packages/colortools/index.html). R package with handy functions to help users select and play with color schemes in an HSV color model
 - [Creating plots in R using ggplot2 - part 10: boxplots](http://t-redactyl.io/blog/2016/04/creating-plots-in-r-using-ggplot2-part-10-boxplots.html)
@@ -277,6 +278,8 @@ If you just want to prevent two lines from overlapping exactly, there is now a b
 - [ggfittext](https://wilkox.org/ggfittext/index.html) provides some ggplot2 geoms for fitting text into boxes.
 - Slides. [Best practices for programming with ggplot2](https://fishandwhistle.net/slides/rstudioconf2020/#1)
 - COOL! [Reorder legend to match order of plot elements in ggplot2](https://www.nsgrantham.com/reorder-legend-ggplot2)
+- [`patchwork::inset_element`](https://patchwork.data-imaginist.com/reference/inset_element.html) Create an inset to be added on top of the previous plot
+- [davidsjoberg/ggbump](https://github.com/davidsjoberg/ggbump). A geom for ggplot to create bump plots
 
 ## facet
 - [Useful labeller functions](https://ggplot2.tidyverse.org/reference/labellers.html). Labeller functions are in charge of formatting the strip labels of facet grids and wraps. 

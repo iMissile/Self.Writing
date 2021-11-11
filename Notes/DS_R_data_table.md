@@ -79,7 +79,7 @@ Fast solution: `dt[dt[ , .I[sample(.N,1)] , by = z]$V1]`
 `dt[, c("PX", "PY") := tstrsplit(PREFIX, "_", fixed=TRUE)]`
 	- [tstrsplit. Strsplit And Transpose The Resulting List Efficiently](https://www.rdocumentation.org/packages/data.table/versions/1.12.2/topics/tstrsplit)
 - [data.table: transforming subset of columns with a function, row by row](https://stackoverflow.com/questions/36841942/data-table-transforming-subset-of-columns-with-a-function-row-by-row)
-- [Row operations in data.table using `by = .I`](https://stackoverflow.com/questions/37667335/row-operations-in-data-table-using-by-i/37668187)
+- [Row operations in data.table using `by = .I`](https://stackoverflow.com/questions/37667335/row-operations-in-data-table-using-by-i/37668187). Тут различные варианты и разбор таймингов. Без создания колонки -- `by = seq_len(NROW(dt))`. I tend to prefer `NROW`, because it also generalizes to vectors.
 - [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)
 - [Use equivalent of purrr:::map to iterate through data.table](https://stackoverflow.com/questions/47917614/use-equivalent-of-purrrmap-to-iterate-through-data-table)
 - data.table joins
@@ -176,7 +176,7 @@ dt[, .SD, .SDcols = !c('b', 'c')]
 	- [Subsetting data.table using variables with same name as column](https://stackoverflow.com/questions/21658893/subsetting-data-table-using-variables-with-same-name-as-column?noredirect=1&lq=1)
 We can get the row index with `.I` and use that to subset the `DT`
 ```
-DT[DT[, .I[.SD==2], .SDcols = 1]]
+DT[DT[, .I[.SD == 2], .SDcols = 1]]
 ```
 - [Fill in missing values (nacof/nocb) in character column by group](https://stackoverflow.com/questions/61522683/fill-in-missing-values-nacof-nocb-in-character-column-by-group)
 - [R: data table group by column name vector](https://stackoverflow.com/questions/45410338/r-data-table-group-by-column-name-vector)

@@ -303,6 +303,7 @@ broom::glance(survfit(cfit))
 - COOL! Лекция. [R for Survival Analysis. Mortality and survival in Game of Thrones](https://carpentries-incubator.github.io/r-survival-analysis/aio/index.html)
 - [R Markdown for Medicine](https://rmd4medicine.netlify.app/)
 - [Survival Analysis with R](https://rviews.rstudio.com/2017/09/25/survival-analysis-with-r/) by Joseph Rickert, 2017-09-25
+- [Survival Analysis in tidymodels](https://www.tidyverse.org/blog/2021/11/survival-analysis-parsnip-adjacent/)
 
 ## Еще раз про ROC-AUC, Survival
 - [Логистическая регрессия и ROC-анализ — математический аппарат](https://basegroup.ru/community/articles/logistic)
@@ -1078,6 +1079,8 @@ To rename keys recursively, see the Q defining translate_keys(f) below.
 ```
 - [jq recipes](https://remysharp.com/drafts/jq-recipes)
 - [JQ cheatsheet](https://cameronnokes.com/blog/jq-cheatsheet/) A cheatsheet of common jq commands
+- [An Introduction to JQ](https://earthly.dev/blog/jq-select/)
+
 
 - [Using jq how can I replace the name of a key with something else](https://stackoverflow.com/questions/43522133/using-jq-how-can-i-replace-the-name-of-a-key-with-something-else)
 - [Rename a key in an object #1167 {Closed}](https://github.com/stedolan/jq/issues/1167)
@@ -1190,6 +1193,44 @@ sqrt(2)^2 == 2
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - COOL! Здесь есть Rcpp код. [Double precision (64-bit) representation of numeric value in R (sign, exponent, significand)](https://stackoverflow.com/questions/50217954/double-precision-64-bit-representation-of-numeric-value-in-r-sign-exponent)
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
+
+
+# 10.11.2021
+## R
+- Clustering
+	- [vscc: Variable selection for clustering and classification](https://cran.r-project.org/web/packages/vscc/index.html)
+	- [FeatureImpCluster: Feature Importance for Partitional Clustering](https://cran.r-project.org/web/packages/FeatureImpCluster/index.html). Implements a novel approach for measuring feature importance in k-means clustering. Importance of a feature is measured by the misclassification rate relative to the baseline cluster assignment due to a random permutation of feature values. An explanation of permutation feature importance in general can be found here: [Interpretable Machine Learning. A Guide for Making Black Box Models Explainable. 8.5 Permutation Feature Importance](https://christophm.github.io/interpretable-ml-book/feature-importance.html).
+	- [FactoMineR](http://factominer.free.fr/) is an R package dedicated to multivariate Exploratory Data Analysis. It is developed and maintained by François Husson, Julie Josse, Sébastien Lê, d'Agrocampus Rennes, and J. Mazet.
+- [ETM - R package for Topic Modelling in Embedding Spaces](https://github.com/bnosac/ETM)
+- COOL! [Order data frame rows according to vector with specific order](https://stackoverflow.com/questions/11977102/order-data-frame-rows-according-to-vector-with-specific-order)
+
+
+# 08.11.2021
+## ML & DS
+- [MLJAR-supervised](https://github.com/mljar/mljar-supervised) Automated Machine Learning Pipeline with Feature Engineering and Hyper-Parameters Tuning
+- [R and Python: & ! |](https://bradweiner.info/post/r-and-python-no-longer-an-or-statement/). Solving this debate once and for all
+- [Apache Arrow R 6.0.0 Release](https://arrow.apache.org/blog/2021/11/08/r-6.0.0/)
+- COOL! [CUE Configure Unify Execute](https://cuelang.org) The new home of the CUE language! Validate and define text-based and dynamic configuration
+- [Start Asking Your Data 'Why?' - A Gentle Intro To Causal Inference (Part 1/4)](https://elzurdo.github.io/2021/09/29/start_ask_why_part1.html)
+
+## BPMN
+- [Types of Gateway in BPMN](https://www.visual-paradigm.com/tw/guide/bpmn/bpmn-gateway-types/)
+- [BPMN 2.0 Examples: 8 types of gateways: Inclusive, Exclusive and more](https://www.heflo.com/blog/bpm/exclusive-inclusive-gateway-bpmn-example/)
+- [BPMN 2.0 Symbol Reference](https://camunda.com/bpmn/reference/). All BPMN 2.0 Symbols explained with examples.
+- [Полный гайд по развилкам (шлюзам, gateway) в BPMN: развилка «ИЛИ\ИЛИ»](https://bpmn2.ru/blog/polny-guide-po-gateway-v-bpmn-ili-ili)
+- [Exclusive gateways (XOR) and tokens](https://bpmtips.com/exclusive-gateways-xor-and-tokens/)
+- [Is a BPMN XOR-Join gateway redundant?](https://stackoverflow.com/questions/60276886/is-a-bpmn-xor-join-gateway-redundant)
+
+## R
+- [tmap: the easy way to plot thematic maps and show them interactively in R](https://tlorusso.github.io/geodata_workshop/tmap_package)
+- [lambdr](https://lambdr.mdneuzerling.com/). This package provides an R runtime for the AWS Lambda serverless compute service.
+- [MatchIt](https://kosukeimai.github.io/MatchIt/): Nonparametric Preprocessing for Parametric Causal Inference
+- COOL! [How to test against almost any R version with VSCode and Docker](https://milesmcbain.micro.blog/2021/05/05/how-to-test.html)
+- COOL! [edgebundle](http://edgebundle.schochastics.net/). An R package that implements several edge bundling/flow and metro map algorithms.
+- [Embedding Shiny Apps in Tableau Dashboards Using `shinytableau`](https://blog.rstudio.com/2021/10/21/embedding-shiny-apps-in-tableau-dashboards-using-shinytableau/)
+- [parcats 0.0.3 released](https://www.datisticsblog.com/2021/10/parcats-0-0-3-released/)
+- [In R, what does a negative index do?](https://stackoverflow.com/questions/7336679/in-r-what-does-a-negative-index-do). Ответ из официальной документации. For ‘[’-indexing only: ‘i’, ‘j’, ‘...’ can be logical vectors, indicating elements/slices to select. Such vectors are recycled if necessary to match the corresponding extent. ‘i’, ‘j’, ‘...’ can also be negative integers, indicating elements/slices to leave out of the selection.
+- COOL! [remove the last element of a vector](https://stackoverflow.com/questions/12114439/remove-the-last-element-of-a-vector). Тут даже Дирк засветился в оптимизации!
 
 # 02.11.2021
 ## R
@@ -1399,6 +1440,10 @@ s.intersection(t)
 - [How to control the igraph plot layout with Fixed Positions?](https://stackoverflow.com/questions/5364264/how-to-control-the-igraph-plot-layout-with-fixed-positions)
 - [Horizontal tree diagram with igraph or ggnet2](https://stackoverflow.com/questions/48362636/horizontal-tree-diagram-with-igraph-or-ggnet2)
 - [How to compare two graphs to Identify number of same/different edges between two graph using igraph R package](https://stackoverflow.com/questions/63726493/how-to-compare-two-graphs-to-identify-number-of-same-different-edges-between-two)
+
+Разбираемся с back-edge
+- [Tree, Back, Edge and Cross Edges in DFS of Graph](https://www.geeksforgeeks.org/tree-back-edge-and-cross-edges-in-dfs-of-graph/)
+- [Back edges in a graph](https://stackoverflow.com/questions/44494426/back-edges-in-a-graph)
 
 ## DS
 - [Почему Kafka такая быстрая](https://slurm.io/tpost/l12ed28mu1-pochemu-kafka-takaya-bistraya)

@@ -577,3 +577,13 @@ Now the marks are invisible on normal work, but visible on selection only.
 ## Поиск дубликатов изображений в Windows
 - [Find visually similar images for a given image file (on Windows)](https://softwarerecs.stackexchange.com/questions/17046/find-visually-similar-images-for-a-given-image-file-on-windows)
 - [Top 5 Best Duplicate Photo Cleaners For Windows 10](https://yourstory.com/mystory/top-5-duplicate-photo-cleaners-for-windows-10/amp)
+- [TinEye Reverse Image Search](https://tineye.com/)
+TinEye browser extensions are the fastest way to search for images online.
+
+# Утилиты для синхронизации и частное облако
+- [Syncthing](https://syncthing.net/)
+	- [Создаём личное облачное хранилище. Syncthing](https://hacker-basement.ru/2019/05/26/private-cloud-syncthing/)
+	- [Nextcloud](). The self-hosted productivity platform that keeps you in control
+- [Resilio Sync](https://www.resilio.com/). Universal File Delivery for the Enterprise.
+Unify, control, and accelerate global file data, securely
+
