@@ -1195,6 +1195,12 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
+# 12.11.2021
+## R
+- [Query the mathpix API to convert math images to LaTeX](https://github.com/jonocarroll/mathpix)
+- [Beautiful Tables in R. gt and the grammar of tables](https://jthomasmock.github.io/tables-latinr/#1) by Tom Mock, 2021-11-10
+- [A short overview of the grammar of graphics](https://rfortherestofus.com/2019/07/a-short-overview-of-the-grammar-of-graphics/)
+
 # 10.11.2021
 ## R
 - Clustering
