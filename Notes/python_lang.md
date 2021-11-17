@@ -24,9 +24,20 @@ pip install -U $(pip freeze | awk -F'[=]' '{print $1}')
 Windows PowerShell update
 foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
+
+# 17.11.2021
+- COOL! [How to Use MultiIndex in Pandas to Level Up Your Analysis](https://towardsdatascience.com/how-to-use-multiindex-in-pandas-to-level-up-your-analysis-aeac7f451fce). An introduction to hierarchical indexing on DataFrames for sophisticated data analysis.
+Важное замечание!!! The Pandas documentation has this note on it:
+Indexing will work even if the data are not sorted, but will be rather inefficient (and show a PerformanceWarning). It will also return a copy of the data rather than a view.
+
+# 15.11.2021
+- COOL! [Are list-comprehensions and functional functions faster than "for loops"?](https://stackoverflow.com/questions/22108488/are-list-comprehensions-and-functional-functions-faster-than-for-loops/22108640#22108640)
+- [Top 50 Important Python Libraries!
+Every Pythonista Must Have A Glance At These Libraries](https://blog.octachart.com/top-50-important-python-libraries)
+
 # 10.11.2021
 - [A high-level app and dashboarding solution for Python](https://panel.holoviz.org/)
-
+- [Common Python Data Structures (Guide)](https://realpython.com/python-data-structures/)
 
 # 31.10.2021
 ## R

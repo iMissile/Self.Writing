@@ -224,6 +224,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [The Data Science Design Manual](https://www.data-manual.com/) by Steven Skiena
 - [R in Action](https://livebook.manning.com/book/r-in-action-second-edition/)
 	- [Source code for Kabacoff, R. R in Action (3rd edition). Manning: Boca Raton, FL.](https://github.com/Rkabacoff/RiA3)
+- [Scientific Visualization: Python + Matplotlib](https://github.com/rougier/scientific-visualization-book). An open access book on scientific visualization using python and matplotlib
 
 
 # Articles
@@ -614,7 +615,21 @@ header-includes:
 - Chunks timing
 	- [How to print RMarkdown code chunk execution times? {duplicate}](https://stackoverflow.com/questions/43434239/how-to-print-rmarkdown-code-chunk-execution-times)
 	- [Timing for chunks?](https://stackoverflow.com/questions/24595280/timing-for-chunks)
-	- [Hook to time knitr chunks](https://stackoverflow.com/questions/30530008/hook-to-time-knitr-chunks)
+	- [Hook to time knitr chunks](https://stackoverflow.com/questions/30530008/hook-to-time-knitr-chunks). Try this:
+```
+            local({
+              now = Sys.time()
+              knit_hooks$set(timeit = function(before) {
+                if (before) {
+                  now <<- Sys.time()
+                } else {
+                  x = round(Sys.time() - now, digits = 3)
+                  x = sprintf("%% Chunk rendering time: %s seconds.", x)
+                  paste('\\end{kframe}\n', x, '\n\\begin{kframe}')
+                }
+              })
+            })
+```
 - [2.6 R code chunks and inline R code](https://bookdown.org/yihui/rmarkdown/r-code.html)
 - [Troubleshooting: Printing UTF-8 (Russian) in R-markdown, knitr](https://bookdown.org/gorodnichy/utf8-markdown-problem/utf8-markdown-problem.html)
 - [Escaping % symbol when passed as a string from R chunk to knitr](https://tex.stackexchange.com/questions/430376/escaping-symbol-when-passed-as-a-string-from-r-chunk-to-knitr)
@@ -1195,6 +1210,26 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
+# 16.11.2021
+## DS
+- [ClearML](https://github.com/allegroai/clearml) is an open source platform that automates and simplifies developing and managing machine learning solutions for thousands of data science teams all over the world. It is designed as an end-to-end MLOps suite allowing you to focus on developing your ML code & automation, while ClearML ensures your work is reproducible and scalable.
+- COOL! [Curl Converter](https://curlconverter.com/). Convert curl commands to Python, JavaScript, PHP, R, Go, Rust, Elixir, Java, MATLAB, Ansible URI, Strest, Dart or JSON
+
+
+
+# 15.11.2021
+## R
+- COOL! [Introducing 'purler' - fast run-length encoding with data.frame output](https://coolbutuseless.github.io/2020/10/14/introducing-purler-fast-run-length-encoding-with-data.frame-output/)
+- COOL! [attachment](https://rtask.thinkr.fr/attachment-v0-2-3-fill-the-remotes-field/). NOTE THAT {ATTACHMENT} CAN BE USED OUT OF PACKAGE DEVELOPMENT IF YOU WANT TO EXTRACT THE LIST OF DEPENDENCIES USED IN YOUR R SCRIPTS OR RMARKDOWN FILES, WHEREVER THEY ARE STORED.
+- [Rmd first: When development starts with documentation](https://rtask.thinkr.fr/when-development-starts-with-documentation/)
+- [Search 000's of R & Python articles and packages!](https://postsyoumighthavemissed.com/search/)
+- [Introduction to summarytools](https://cran.r-project.org/web/packages/summarytools/vignettes/introduction.html)
+	- [14. Graphs in R Markdown]() When using dfSummary() in an Rmd document using markdown styling (as opposed to html rendering), three elements are needed in order to display the png graphs properly:
+- [15 Common Problems with rmarkdown (and some solutions)](https://rmd4sci.njtierney.com/common-problems-with-rmarkdown-and-some-solutions.html)
+
+## Go
+- [Go data.frame](https://pkg.go.dev/github.com/go-gota/gota/dataframe#pkg-overview)
+
 # 12.11.2021
 ## R
 - [Query the mathpix API to convert math images to LaTeX](https://github.com/jonocarroll/mathpix)
@@ -1218,6 +1253,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [Apache Arrow R 6.0.0 Release](https://arrow.apache.org/blog/2021/11/08/r-6.0.0/)
 - COOL! [CUE Configure Unify Execute](https://cuelang.org) The new home of the CUE language! Validate and define text-based and dynamic configuration
 - [Start Asking Your Data 'Why?' - A Gentle Intro To Causal Inference (Part 1/4)](https://elzurdo.github.io/2021/09/29/start_ask_why_part1.html)
+- COOL! [Random forest, Shapley values and multicollinearity](https://huijzer.xyz/posts/shapley/)
 
 ## BPMN
 - [Types of Gateway in BPMN](https://www.visual-paradigm.com/tw/guide/bpmn/bpmn-gateway-types/)
@@ -1259,11 +1295,13 @@ system('notify-send -i important "Работа скрипта" "Ахтунг!"')
 - [052. Alleviating Bloatware, First Attempt]()
 “Microsoft’s Office 97 contains 4,500 commands for features both useful and arcane.” in “Microsoft May Face Backlash Against ‘Bloatware’”—WSJ, 11/18/96
 - COOL! [An Illustrated Tour of Wav2vec 2.0](https://jonathanbgn.com/2021/09/30/illustrated-wav2vec-2.html)
+- COOL! [Bash-скрипты, часть 7: sed и обработка текстов](https://habr.com/ru/company/ruvds/blog/327530/). sed (https://www.gnu.org/software/sed/) — Stream EDitor. Продолжая рубрику #языкибываютразные, напишем про ещё один прекрасный язык и больше-таки инструмент, sed. 
+Разработан в 1973-1974 годах сотрудником Bell Labs Ли Макмэхоном под UNIX. Синтаксис с тех пор почти не изменился, а востребованность только возросла ;).
 
 ## R
 - [(R) Riding tables with {gt} and {gtExtras}](https://bjnnowak.netlify.app/2021/10/04/r-beautiful-tables-with-gt-and-gtextras/) by Benjamin Nowak | 04 Oct 2021
 - COOL! [The metafor Package](https://www.metafor-project.org/doku.php/plots:forest_plot) A Meta-Analysis Package for R
-- [How to leave the R browser() mode in the console window?](https://stackoverflow.com/questions/13052522/how-to-leave-the-r-browser-mode-in-the-console-window)
+- [How to leave the R `browser()` mode in the console window?](https://stackoverflow.com/questions/13052522/how-to-leave-the-r-browser-mode-in-the-console-window)
 
 # 15.10.2021
 ## bookdown
@@ -3592,7 +3630,7 @@ You can remove those from here and try and re-clone - it will ask for username/p
 # 21.08.2020
 ## R
 - Чтобы сохранить `vtree` картинку в файл, приходится работать через `options`. Выяснил через `traceback`.
-`options("vtree_folder" = "./output/")`
+`options("vtree_folder" = "./output")`
 
 ## Wolfram
 - [Most Efficient Way to Calculate the Product of All Items in a List?](https://mathematica.stackexchange.com/questions/1352/most-efficient-way-to-calculate-the-product-of-all-items-in-a-list). `Apply[Times, list]`

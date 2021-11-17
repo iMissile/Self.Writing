@@ -23,7 +23,8 @@
 - [Writing R in VSCode: A Fresh Start](https://renkun.me/2019/12/11/writing-r-in-vscode-a-fresh-start/)
 	- [VSCode](https://code.visualstudio.com/Download): Visual Studio Code
 	- [languageserver](): An implementation of the Language Server Protocol for R. `install.packages("languageserver")`
-	- [VSCode R Extension](https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r): An implementation of the Language Server Protocol for R by Yuki Ueda
+	- [VSCode R Extension](https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r): An implementation of the Language Server Protocol for R by Yuki Ueda. 
+	Правая кнопка на extension позволяет перейти в режим редактирования настроек.
 	- [R LSP Client for VSCode](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r-lsp): R LSP Client for Visual Studio Code
 	- [Python](https://www.python.org/downloads/)
 	- [Radian](https://github.com/randy3k/radian): A 21st century R console.
@@ -44,7 +45,7 @@
     ],
 }
 ```
-Finally, you need to change your VSCode settings to enable R within the editor. For that press Ctrl + Shift + P and type in “Preferences: Open Settings (JSON)” and press Enter. This will open the settings.json of your editor. Add the following code to the JSON file, adjust the respective path to your setup and save the file.
+Finally, you need to change your VSCode settings to enable R within the editor. For that press Ctrl + Shift + P and type in **“Preferences: Open Settings (JSON)” and press Enter. This will open the settings.json of your editor**. Add the following code to the JSON file, adjust the respective path to your setup and save the file.
 [Settings File Locations](https://vscode.readthedocs.io/en/latest/getstarted/settings/)
 Depending on your platform, the user settings file is located here:
 
@@ -71,6 +72,9 @@ Remember to leave a new line at the bottom of the file.
 - [Visual Studio Code Docs](https://code.visualstudio.com/docs)
 - [REMOTE PAIR PROGRAMMING IN R USING VISUAL STUDIO CODE AND LIVE SHARE](https://ivelasq.rbind.io/blog/vscode-live-share/)
 - [REditorSupport/vscode-R v2.3.0](https://github.com/REditorSupport/vscode-R/releases/tag/v2.3.0)
+
+## Настройка под RMarkdown
+- [R Markdown Notebook in VS code](https://yingqijing.medium.com/r-markdown-notebook-in-vs-code-3adb5a61417a)
 
 ## 20.09.2021
 - Проблема с юникодными строками в Windows. Возможно, надо задавать явно параметр `encoding` в `source` в `setting.json`
