@@ -1215,8 +1215,6 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [ClearML](https://github.com/allegroai/clearml) is an open source platform that automates and simplifies developing and managing machine learning solutions for thousands of data science teams all over the world. It is designed as an end-to-end MLOps suite allowing you to focus on developing your ML code & automation, while ClearML ensures your work is reproducible and scalable.
 - COOL! [Curl Converter](https://curlconverter.com/). Convert curl commands to Python, JavaScript, PHP, R, Go, Rust, Elixir, Java, MATLAB, Ansible URI, Strest, Dart or JSON
 
-
-
 # 15.11.2021
 ## R
 - COOL! [Introducing 'purler' - fast run-length encoding with data.frame output](https://coolbutuseless.github.io/2020/10/14/introducing-purler-fast-run-length-encoding-with-data.frame-output/)
@@ -1226,6 +1224,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [Introduction to summarytools](https://cran.r-project.org/web/packages/summarytools/vignettes/introduction.html)
 	- [14. Graphs in R Markdown]() When using dfSummary() in an Rmd document using markdown styling (as opposed to html rendering), three elements are needed in order to display the png graphs properly:
 - [15 Common Problems with rmarkdown (and some solutions)](https://rmd4sci.njtierney.com/common-problems-with-rmarkdown-and-some-solutions.html)
+- [Rssa: A Collection of Methods for Singular Spectrum Analysis](https://cran.r-project.org/web/packages/Rssa/index.html)
 
 ## Go
 - [Go data.frame](https://pkg.go.dev/github.com/go-gota/gota/dataframe#pkg-overview)
