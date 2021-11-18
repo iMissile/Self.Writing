@@ -248,4 +248,27 @@ $ git checkout -b hg
 
 ## перевод на personal_token
 - [SmartGit, unable to push, Уremote: HTTP Basic: Access deniedФ](https://stackoverflow.com/questions/60272933/smartgit-unable-to-push-remote-http-basic-access-denied)
-- [Accessing Credential Manager](https://support.microsoft.com/en-us/windows/accessing-credential-manager-1b5c916a-6a16-889f-8581-fc16e8165ac0)
+ѕри попытке в win посмотреть локацию паролей запускаем команду `git config credential.helper`
+If it returns "manager", open your Windows Credentials Manager and check if credentials are already stored for gitlab.com.
+If so, delete it, then push again: Git should ask for your credentials. Do enter your PAT (Personal Access Token) as password.
+
+- ƒл€ перезапроса токена в windows credential manager необходимо его удалить в системе.
+	- [Accessing Credential Manager](https://support.microsoft.com/en-us/windows/accessing-credential-manager-1b5c916a-6a16-889f-8581-fc16e8165ac0)
+	- [ƒоступ к диспетчеру учетных данных](https://support.microsoft.com/ru-ru/windows/%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF-%D0%BA-%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80%D1%83-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-1b5c916a-6a16-889f-8581-fc16e8165ac0)
+```
+Credential Manager lets you view and delete your saved credentials for signing in to websites, connected applications, and networks.
+To open Credential Manager, type *credential manager* in the search box on the taskbar and select Credential Manager Control panel.
+Select Web Credentials or Windows Credentials to access the credentials you want to manage.
+```
+`ѕанель управлени€ / ƒиспетчер учетных данных`
+- [microsoft/Git-Credential-Manager-Core](https://github.com/microsoft/Git-Credential-Manager-Core). Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services.
+!!! Windows
+GCM Core is included with Git for Windows, and the latest version is included in each new Git for Windows release. This is the preferred way to install GCM Core on Windows. During installation you will be asked to select a credential helper, with GCM Core being set as the default.
+!! [Git-Credential-Manager-Core/docs/usage.md](https://github.com/microsoft/Git-Credential-Manager-Core/blob/main/docs/usage.md). After installation, Git will use Git Credential Manager Core and you will only need to interact with any authentication dialogs asking for credentials. GCM Core stays invisible as much as possible, so ideally youТll forget that youТre depending on GCM at all.
+
+Assuming GCM Core has been installed, use your favorite terminal to execute the following commands to interact directly with GCM.
+```
+git credential-manager-core [<command> [<args>]]
+```
+- [How one may check whether credential manager in Git has password stored for a given domain?](https://stackoverflow.com/questions/51803825/how-one-may-check-whether-credential-manager-in-git-has-password-stored-for-a-gi)
+
