@@ -1209,11 +1209,25 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! Здесь есть Rcpp код. [Double precision (64-bit) representation of numeric value in R (sign, exponent, significand)](https://stackoverflow.com/questions/50217954/double-precision-64-bit-representation-of-numeric-value-in-r-sign-exponent)
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
+# 18.11.2021
+## R
+- [rstudio/gt. Add option to rotate column label text to appear vertically laid out {#108}](https://github.com/rstudio/gt/issues/108). kableExtra [умеет](https://haozhu233.github.io/kableExtra/awesome_table_in_html.html#group_rows_via_multi-row_cell). команда `cell_spec`
+- COOL! [Re-arranging columns in numerical order](https://community.rstudio.com/t/re-arranging-columns-in-numerical-order/55207/8)
+- COOL! [The New Base Pipe](https://michaelbarrowman.co.uk/post/the-new-base-pipe/)
+- [Numerical Mathematics](https://cran.r-project.org/web/views/NumericalMathematics.html)
+	- [Differentiation and integration in R](https://rpubs.com/venkatritch/333327)
+	- [Numerical Differentiation Introduction in R](https://rstudio-pubs-static.s3.amazonaws.com/295650_406b32cdd2d34ca3a150bbe95010d665.html)
+	- [numDeriv: Accurate Numerical Derivatives](https://cran.r-project.org/web/packages/numDeriv/)
+	- [calculus: High Dimensional Numerical and Symbolic Calculus](https://cran.r-project.org/web/packages/calculus/index.html)
+	- [pracma: Practical Numerical Math Functions](https://cran.r-project.org/web/packages/pracma/index.html)
+	- [derivatives: ESTIMATION OF THE DERIVATIVES](https://cran.r-project.org/web/packages/doremi/vignettes/derivatives.html)
+
 
 # 16.11.2021
 ## DS
 - [ClearML](https://github.com/allegroai/clearml) is an open source platform that automates and simplifies developing and managing machine learning solutions for thousands of data science teams all over the world. It is designed as an end-to-end MLOps suite allowing you to focus on developing your ML code & automation, while ClearML ensures your work is reproducible and scalable.
 - COOL! [Curl Converter](https://curlconverter.com/). Convert curl commands to Python, JavaScript, PHP, R, Go, Rust, Elixir, Java, MATLAB, Ansible URI, Strest, Dart or JSON
+- [Краткая история животных на обложках книг O’Reilly](https://habr.com/ru/post/175553/)
 
 # 15.11.2021
 ## R

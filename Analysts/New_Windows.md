@@ -518,6 +518,7 @@ Please make sure that virtualization is enabled inside of your computer's BIOS. 
 - [Install Windows Subsystem for Linux 2 in Windows 10](https://winaero.com/install-windows-subsystem-for-linux-2-in-windows-10/)
 - [Automatically Configuring WSL](https://devblogs.microsoft.com/commandline/automatically-configuring-wsl/)
 
+
 # Настройка рабочего Windows10 с нуля
 - Отключаем в ярлыках Рабочего стола тени шрифта (описано выше).
 - Ставим английский язык по умолчанию и при входе в систему (описано выше).
@@ -529,6 +530,7 @@ Please make sure that virtualization is enabled inside of your computer's BIOS. 
 	- [microsoft/cascadia-code](https://github.com/microsoft/cascadia-code)
 	- [Install with chocolatey](https://community.chocolatey.org/packages/cascadiacode). `choco install cascadiacode`
 	- [Cascadia Mono Font 2108.26](https://community.chocolatey.org/packages/cascadiamono). `choco install cascadiamono`
+	- [Конфигурируем меню Windows Termial](https://codeandkeep.com/Tmux-on-Windows/). If you want to set this as your default shell in the Windows Terminal, you can update the settings `Ctrl + ,` to do so. Replace the GUID in defaultProfile with the one for your Linux app. You can find the GUID in the list section under profiles. Set this GUID as the defaultProfile, and this will be the shell that opens by default.
 - Ставим [OpenVPN Community edition](https://openvpn.net/community-downloads/)
 - Ставим SSH клиент [Bitvise SSH Client/xShell]
 - Ставим SnagIt, блокируем его в файерволе (wf.msc) или касперском. [Best practices for configuring Защитник Windows firewall](https://docs.microsoft.com/ru-ru/windows/security/threat-protection/windows-firewall/best-practices-configuring).

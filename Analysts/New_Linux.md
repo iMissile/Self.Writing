@@ -86,3 +86,7 @@ apt-get remove --purge \
 sudo apt-get install snap
 sudo snap install pdftk
 ```
+
+# tmux
+- [Getting started with Tmux](https://linuxize.com/post/getting-started-with-tmux/)
+- [Tmux on Windows](https://codeandkeep.com/Tmux-on-Windows/). Written on August 8, 2020
