@@ -36,7 +36,7 @@ You must import the system fonts using the command:
 `font_import(paths = NULL, recursive = TRUE, prompt = TRUE,pattern = NULL)`. If you have a lot of fonts, this solution will take a long time. Use pattern="Times" or something to reduce the number of fonts loaded
 - COOL! [{mdthemes} is on CRAN: markdown powered themes for {ggplot2}](https://thomasadventure.blog/posts/mdthemes-is-on-cran-markdown-powered-themes-for-ggplot2/)
 - [Allow hms object in breaks argument to scale_*_date {closed}](https://github.com/tidyverse/ggplot2/issues/2894)
-- [ggplot2 3.3.0](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/)
+- [ggplot2 3.3.0](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/). Bi-directional geoms and stats!!!
 - COOL! [A Summer of RStudio and ggplot2](https://education.rstudio.com/blog/2019/10/a-summer-of-rstudio-and-ggplot2/) by Dewey Dunnington
 - [A List of ggplot2 extensions](https://exts.ggplot2.tidyverse.org/)
 This site tracks and lists ggplot2 extensions developed by R users in the community.
@@ -280,6 +280,12 @@ If you just want to prevent two lines from overlapping exactly, there is now a b
 - COOL! [Reorder legend to match order of plot elements in ggplot2](https://www.nsgrantham.com/reorder-legend-ggplot2)
 - [`patchwork::inset_element`](https://patchwork.data-imaginist.com/reference/inset_element.html) Create an inset to be added on top of the previous plot
 - [davidsjoberg/ggbump](https://github.com/davidsjoberg/ggbump). A geom for ggplot to create bump plots
+- COOL! [Combining inset plots with facets using ggplot](https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/)
+- [Remove all of x axis labels in ggplot](https://stackoverflow.com/questions/35090883/remove-all-of-x-axis-labels-in-ggplot)
+- [ggplot2 - The unit of size](https://stackoverflow.com/questions/17311917/ggplot2-the-unit-of-size)
+- [ggplot geom_text font size control](https://stackoverflow.com/questions/25061822/ggplot-geom-text-font-size-control)
+- [scale_x_discrete with numeric drops axis with no warning #2970 {Closed}](https://github.com/tidyverse/ggplot2/issues/2970)
+- [ggplot with 2 y axes on each side and different scales](https://stackoverflow.com/questions/3099219/ggplot-with-2-y-axes-on-each-side-and-different-scales)
 
 ## facet
 - [Useful labeller functions](https://ggplot2.tidyverse.org/reference/labellers.html). Labeller functions are in charge of formatting the strip labels of facet grids and wraps. 

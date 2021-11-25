@@ -2532,19 +2532,6 @@ Error in x[[method]](...) : attempt to apply non-function
 - [ПИТОНТЬЮТОР](http://pythontutor.ru/). УЧИТЕ ПИТОН. Бесплатный курс по программированию с нуля. Работает прямо в браузере.
 
 # 06.02.2018
-## R & regexp
-- COOL! [A Regular Expression Benchmark for R](https://github.com/jonclayden/regex-performance). jonclayden/regex-performance. A benchmark for regular expression libraries in R
-- Предыдущий результат, опубликован в виде html: [Regex Performance](https://rpubs.com/jonclayden/regex-performance)
-- COOL! [re2r Benchmark](https://qinwenfeng.com/re2r_doc/benchmark.html)
-- [How do I speed up text searches in R?](https://stackoverflow.com/questions/19458724/how-do-i-speed-up-text-searches-in-r)
-- [jonclayden/ore. An R interface to the Onigmo regular expression library](https://github.com/jonclayden/ore)
-- [regular expressions in base R: 'perl=TRUE' vs. the default (PCRE vs. TRE)](https://stackoverflow.com/questions/47240375/regular-expressions-in-base-r-perl-true-vs-the-default-pcre-vs-tre?rq=1)
-- online отладка регулярных выражений [Regex 101](https://regex101.com/)
-- [In between a rock and a conditional join](https://www.mango-solutions.com/blog/in-between-a-rock-and-a-conditional-join). Тут как раз про "Fuzzy wuzzy join".
-- COOL! [re2r: RE2 Regular Expression](https://cran.r-project.org/web/packages/re2r/index.html)
-RE2 <https://github.com/google/re2> is a primarily deterministic finite automaton based regular expression engine from Google that is very fast at matching large amounts of text.
-`show_regex("\\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}\\b", width = 670, height = 280)`
-
 ## map & ggplot
 - [Mapping in R using the ggplot2 package](http://zevross.com/blog/2014/07/16/mapping-in-r-using-the-ggplot2-package/)
 - [Making Maps with R](http://eriqande.github.io/rep-res-web/lectures/making-maps-with-R.html). Reproducible Research Course by Eric C. Anderson for (NOAA/SWFSC)

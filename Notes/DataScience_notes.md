@@ -225,6 +225,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [R in Action](https://livebook.manning.com/book/r-in-action-second-edition/)
 	- [Source code for Kabacoff, R. R in Action (3rd edition). Manning: Boca Raton, FL.](https://github.com/Rkabacoff/RiA3)
 - [Scientific Visualization: Python + Matplotlib](https://github.com/rougier/scientific-visualization-book). An open access book on scientific visualization using python and matplotlib
+- COOL! [The Hitchhiker's Guide to Responsible Machine Learning](https://betaandbit.github.io/RML/#p=1)
 
 
 # Articles
@@ -1209,6 +1210,33 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! Здесь есть Rcpp код. [Double precision (64-bit) representation of numeric value in R (sign, exponent, significand)](https://stackoverflow.com/questions/50217954/double-precision-64-bit-representation-of-numeric-value-in-r-sign-exponent)
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
+
+# 23.11.2021
+## DS
+- [Proba.ai](https://proba.ai/) Proba is a tool for A/B testing in mobile apps
+
+## Оцифровка графиков / Digitizer
+- [ankitrohatgi/digitizeR](https://github.com/ankitrohatgi/digitizeR). R package to extract data from plots and other images. Hosts WebPlotDigitizer locally.
+- [metaDigitise: Extract and Summarise Data from Published Figures](https://cran.r-project.org/web/packages/metaDigitise/)
+- [GetData](http://getdata-graph-digitizer.com/ru/screenshots.php). Программа для оцифровки графиков.
+
+# 22.11.2021
+## R
+- Slides [Big things come in small packages. Tips and tricks for your own R package](https://cosimameyer.rbind.io/slides/correlcon2021/talk#1) by Cosima Meyer
+- Time Series:
+	- [5.2 Smoothing Time Series](https://online.stat.psu.edu/stat510/lesson/5/5.2)
+	- [smooth: forecasting using state-space models](https://cran.r-project.org/web/packages/smooth/vignettes/smooth.html)
+	- [Smoothing algorithm for irregular time interval](https://stats.stackexchange.com/questions/56676/smoothing-algorithm-for-irregular-time-interval). Там упоминается [robfilter: Robust Time Series Filters](https://cran.r-project.org/web/packages/robfilter/index.html)
+- Любопытная подборка алгоритмов для сглаживания [How to smooth a curve in the right way?](https://stackoverflow.com/questions/20618804/how-to-smooth-a-curve-in-the-right-way)
+- [Fit Smooth Curve to Plot of Data in R](https://www.geeksforgeeks.org/fit-smooth-curve-to-plot-of-data-in-r/). Loess is an abbreviation for Local Regression used to fit multiple regressions in the local neighborhoods. Use of `Loess()` function: `Loess()` function is used on a numerical vector to smoothen it. It is also used to predict the Y locally.
+- [Interpolation of irregular time series #256 {Open}](https://github.com/tidyverts/fable/issues/256)
+- [Interpolation of irregular time series with R](https://stackoverflow.com/questions/61078446/interpolation-of-irregular-time-series-with-r)
+- [interpolate irregular x,y data points into regular grid for contour mapping](https://stackoverflow.com/questions/38176265/interpolate-irregular-x-y-data-points-into-regular-grid-for-contour-mapping)
+- [akima: Interpolation of Irregularly and Regularly Spaced Data](https://cran.r-project.org/web/packages/akima/)
+
+## Shiny
+- [Make R Shiny Dashboards Faster with updateInput, CSS, and JavaScript](https://appsilon.com/r-shiny-faster-updateinput-css-javascript/)
+
 # 18.11.2021
 ## R
 - [rstudio/gt. Add option to rotate column label text to appear vertically laid out {#108}](https://github.com/rstudio/gt/issues/108). kableExtra [умеет](https://haozhu233.github.io/kableExtra/awesome_table_in_html.html#group_rows_via_multi-row_cell). команда `cell_spec`
@@ -1221,7 +1249,6 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 	- [calculus: High Dimensional Numerical and Symbolic Calculus](https://cran.r-project.org/web/packages/calculus/index.html)
 	- [pracma: Practical Numerical Math Functions](https://cran.r-project.org/web/packages/pracma/index.html)
 	- [derivatives: ESTIMATION OF THE DERIVATIVES](https://cran.r-project.org/web/packages/doremi/vignettes/derivatives.html)
-
 
 # 16.11.2021
 ## DS
@@ -1933,13 +1960,14 @@ When you change document, you should again press "Show all" to show changes of n
 	- [GitHub Actions, reveal.js, and Automating the PDF Conversion](https://4comprehension.com/github-actions-reveal-js-and-automating-pdf-conversion/)
 	- [melix/deck2pdf](https://github.com/melix/deck2pdf). Converts various HTML5 slide decks to PDF
 	- [Exporting HTML Presentations to PDF](https://datawookie.dev/blog/2017/10/exporting-html-presentations-to-pdf/)
-	- [How to convert R reveal.js presentation to pdf?](https://stackoverflow.com/questions/40778333/how-to-convert-r-reveal-js-presentation-to-pdf). Любопытно: Open your HTML file in the browser and add ?print-pdf to the URL, e. g. `http://index.html?print-pdf`
+	- COOL! [How to convert R reveal.js presentation to pdf?](https://stackoverflow.com/questions/40778333/how-to-convert-r-reveal-js-presentation-to-pdf). Любопытно: Open your HTML file in the browser and add `?print-pdf` to the URL, e. g. `http://index.html?print-pdf`
 	
 С трудом попытался запустить DeckTape для конвертации презентации. Все равно получилась кривизна. Но запускал так:
 	- в директории `/home/shiny/` сделал директорию `arch`.
 	- скопировал туда все слайды
 	- поставил docker с репозитория
 	- запустил командой "sudo docker run --rm -t -v `pwd`:/slides -v ~:/home/user astefanutti/decktape arch/mt-ds-architecture.html slides.pdf"
+- COOL! [Automated Build and Publication of Slides with R Markdown, Reveal.js, DeckTape, and LibreOffice](https://sadams.io/post/rmarkdown-to-slides/)
 
 ## R
 - COOL! [Making R Markdown work better for you](https://alison.rbind.io/talk/2021-rmd-params/)
@@ -4014,7 +4042,6 @@ Also, see:
 - ML
 	- [5.10 SHAP (SHapley Additive exPlanations)](https://christophm.github.io/interpretable-ml-book/shap.html)
 	- [5.5 Permutation Feature Importance](https://christophm.github.io/interpretable-ml-book/feature-importance.html)
-- COOL! [Automated Build and Publication of Slides with R Markdown, Reveal.js, DeckTape, and LibreOffice](https://sadams.io/post/rmarkdown-to-slides/)
 - [konabee/tidy_coffee](https://github.com/konabee/tidy_coffee/blob/master/tidy1.r)
 - COOL! [@coolbutuseless](https://coolbutuseless.github.io/)
 
@@ -5027,7 +5054,7 @@ context: An environment containing active chunk options and other chunk informat
 - [ctgk/PRML](https://github.com/ctgk/PRML). PRML algorithms implemented in Python
 
 # 03.03.2020
-## Regexp
+## R & regexp
 - [Why Using the Greedy .* in Regular Expressions Is Almost Never What You Actually Want](https://mariusschulz.com/blog/why-using-the-greedy-in-regular-expressions-is-almost-never-what-you-actually-want)
 - [Performance of Greedy vs. Lazy Regex Quantifiers](http://blog.stevenlevithan.com/archives/greedy-lazy-performance)
 - [Жадные и ленивые квантификаторы](https://learn.javascript.ru/regexp-greedy-and-lazy)
@@ -5036,9 +5063,20 @@ context: An environment containing active chunk options and other chunk informat
 - [Five invaluable techniques to improve regex performance](https://www.loggly.com/blog/five-invaluable-techniques-to-improve-regex-performance/)
 - [ore: An R Interface to the Onigmo Regular Expression Library](https://cran.r-project.org/web/packages/ore/index.html)
 Provides an alternative to R's built-in functionality for handling regular expressions, based on the Onigmo library. Offers first-class compiled regex objects, partial matching and function-based substitutions, amongst other features.
-- [Regex Performance](https://rpubs.com/jonclayden/regex-performance)
 - [R pkg download stats](https://ipub.com/dev-corner/apps/r-package-downloads/)
 - [RegExr](https://regexr.com/5tsnd) is an online tool to learn, build, & test Regular Expressions (RegEx / RegExp).
+- COOL! [A Regular Expression Benchmark for R](https://github.com/jonclayden/regex-performance). jonclayden/regex-performance. A benchmark for regular expression libraries in R
+- Предыдущий результат, опубликован в виде html: [Regex Performance](https://rpubs.com/jonclayden/regex-performance)
+- COOL! [re2r Benchmark](https://qinwenfeng.com/re2r_doc/benchmark.html)
+- [How do I speed up text searches in R?](https://stackoverflow.com/questions/19458724/how-do-i-speed-up-text-searches-in-r)
+- [jonclayden/ore. An R interface to the Onigmo regular expression library](https://github.com/jonclayden/ore)
+- [regular expressions in base R: 'perl=TRUE' vs. the default (PCRE vs. TRE)](https://stackoverflow.com/questions/47240375/regular-expressions-in-base-r-perl-true-vs-the-default-pcre-vs-tre?rq=1)
+- online отладка регулярных выражений [Regex 101](https://regex101.com/)
+- [In between a rock and a conditional join](https://www.mango-solutions.com/blog/in-between-a-rock-and-a-conditional-join). Тут как раз про "Fuzzy wuzzy join".
+- COOL! [re2r: RE2 Regular Expression](https://cran.r-project.org/web/packages/re2r/index.html)
+RE2 <https://github.com/google/re2> is a primarily deterministic finite automaton based regular expression engine from Google that is very fast at matching large amounts of text.
+`show_regex("\\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}\\b", width = 670, height = 280)`
+
 
 ## R
 - [How to rename a variable in R without copying the object?](https://stackoverflow.com/questions/22951811/how-to-rename-a-variable-in-r-without-copying-the-object)

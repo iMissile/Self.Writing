@@ -17,6 +17,11 @@
 - [Simple multi-layer perceptron](https://fluxml.ai/tutorials/2021/01/26/mlp.html)
 
 
+# 23.11.2021
+- [Julia: A Fresh Approach to Computing](https://computationalthinking.mit.edu/Spring21/)
+This class uses revolutionary programmable interactivity to combine material from three fields creating an engaging, efficient learning solution to prepare students to be sophisticated and intuitive thinkers, programmers, and solution providers for the modern interconnected online world.
+Three fields, one courseю Computer Science; Mathematics; Applications
+
 # 09.11.2021
 ## Graph
 - [JuliaGraphs - Graph analysis in Julia](https://juliagraphs.org/)
