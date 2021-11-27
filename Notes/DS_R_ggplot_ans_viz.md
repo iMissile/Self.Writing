@@ -89,6 +89,7 @@ Alluvial plots are similar to sankey diagrams and visualise categorical data ove
 - Learning. Интересные примеры. [Data Visualization with ggplot2 (Part 1) - Chapter 4 and 5](https://rpubs.com/williamsurles/294957)
 - Условное форматирование меток в ggplot. [How to put ggplot2 ticks labels between dollars?](http://stackoverflow.com/questions/20326946/how-to-put-ggplot2-ticks-labels-between-dollars)
 - [gghalves](https://cran.r-project.org/web/packages/gghalves/readme/README.html) makes it easy to compose your own half-half plots via ggplot2. Think displaying a boxplot next to jittered points, or violin plots side by side with dotplots.
+- COOL! [Streamgraphs in ggplot2 with ggstream](https://r-charts.com/evolution/ggstream/)
 - COOL! [ggpage](https://emilhvitfeldt.github.io/ggpage/). ggpage is a package to create pagestyled visualizations of text based data. It uses ggplot2 and final returns are ggplot2 objects
 - COOL! [wilkelab/ungeviz](https://github.com/wilkelab/ungeviz). Tools for visualizing uncertainty with ggplot2
 - COOL! [Practical ggplot2](https://wilkelab.org/practicalgg/)
@@ -286,6 +287,9 @@ If you just want to prevent two lines from overlapping exactly, there is now a b
 - [ggplot geom_text font size control](https://stackoverflow.com/questions/25061822/ggplot-geom-text-font-size-control)
 - [scale_x_discrete with numeric drops axis with no warning #2970 {Closed}](https://github.com/tidyverse/ggplot2/issues/2970)
 - [ggplot with 2 y axes on each side and different scales](https://stackoverflow.com/questions/3099219/ggplot-with-2-y-axes-on-each-side-and-different-scales)
+- [Reordering and facetting for ggplot2](https://juliasilge.com/blog/reorder-within/)
+- COOL! [Setting the Graphics Device in a RMarkdown Document](https://www.jumpingrivers.com/blog/r-knitr-markdown-png-pdf-graphics/). The {ragg} Package
+Setting the agg_png() function from the {ragg} package as the graphics device is somewhat more tricky as it doesn’t come pre-defined within {knitr}. The {knitr} docs states that
 
 ## facet
 - [Useful labeller functions](https://ggplot2.tidyverse.org/reference/labellers.html). Labeller functions are in charge of formatting the strip labels of facet grids and wraps. 
