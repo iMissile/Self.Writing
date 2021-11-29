@@ -1211,6 +1211,11 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
+# 29.11.2021
+## R
+- Slides! [Business Reports with R Markdown. How to better theme report?](https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#1)
+- [EFFICIENT AND BEAUTIFUL DATA SYNTHESIS. TAKING YOUR TIDYVERSE SKILLS TO THE NEXT LEVEL](https://ourcodingclub.github.io/tutorials/dataviz-beautification-synthesis/)
+
 # 23.11.2021
 ## DS
 - [Proba.ai](https://proba.ai/) Proba is a tool for A/B testing in mobile apps
