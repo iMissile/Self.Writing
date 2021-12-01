@@ -332,7 +332,7 @@ flights_tb %>%
 - COOL! [When should I use setDT() instead of data.table() to create a data.table?](https://stackoverflow.com/questions/41917887/when-should-i-use-setdt-instead-of-data-table-to-create-a-data-table)
 - [R - slow performance in creating lots of data.table objects](https://stackoverflow.com/questions/28203809/r-slow-performance-in-creating-lots-of-data-table-objects)
 - [names(dt) issue](https://github.com/Rdatatable/data.table/issues/5079) When we store the column names on to a variable, e.g., DT_n = names(DT), and then add/update/delete column(s) by reference. It would also modify DT_n, unless we do copy(names(DT)). https://cloud.r-project.org/web/packages/data.table/vignettes/datatable-reference-semantics.html
-
+- COOL! [Understanding exactly when a data.table is a reference to (vs a copy of) another data.table](https://stackoverflow.com/questions/10225098/understanding-exactly-when-a-data-table-is-a-reference-to-vs-a-copy-of-another)
 
 
 ## data.table joins

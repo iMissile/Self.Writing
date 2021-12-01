@@ -25,6 +25,9 @@ Windows PowerShell update
 foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
 
+# 30.11.2021
+- Полная дичь. [3 ways to deal with `SettingWithCopyWarning` in Pandas](https://www.analyticsvidhya.com/blog/2021/11/3-ways-to-deal-with-settingwithcopywarning-in-pandas/)
+
 # 17.11.2021
 - COOL! [How to Use MultiIndex in Pandas to Level Up Your Analysis](https://towardsdatascience.com/how-to-use-multiindex-in-pandas-to-level-up-your-analysis-aeac7f451fce). An introduction to hierarchical indexing on DataFrames for sophisticated data analysis.
 Важное замечание!!! The Pandas documentation has this note on it:

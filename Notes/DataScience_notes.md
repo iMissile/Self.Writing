@@ -1210,11 +1210,24 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! Здесь есть Rcpp код. [Double precision (64-bit) representation of numeric value in R (sign, exponent, significand)](https://stackoverflow.com/questions/50217954/double-precision-64-bit-representation-of-numeric-value-in-r-sign-exponent)
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
+# 01.12.2021
+## R html tables
+- [RMarkdown: how to rotate table column headers](https://stackoverflow.com/questions/49109853/rmarkdown-how-to-rotate-table-column-headers)
+- [Rotated Table Column Headers](https://css-tricks.com/rotated-table-column-headers/)
+- [gt Basic Usage Cookbook](https://themockup.blog/static/gt-cookbook.html)
+- [gt Advanced Usage Cookbook](https://themockup.blog/static/gt-cookbook-advanced.html)
+- [Controlling renderTable column width](https://community.rstudio.com/t/controlling-rendertable-column-width/21208)
+ 
+
 
 # 29.11.2021
 ## R
 - Slides! [Business Reports with R Markdown. How to better theme report?](https://meetup-rmd-style-business-report.netlify.app/?panelset1=previous-css2#1)
 - [EFFICIENT AND BEAUTIFUL DATA SYNTHESIS. TAKING YOUR TIDYVERSE SKILLS TO THE NEXT LEVEL](https://ourcodingclub.github.io/tutorials/dataviz-beautification-synthesis/)
+- COOL! [RMarkdown Driven Development (RmdDD)](https://emilyriederer.netlify.app/post/rmarkdown-driven-development/)
+- [R Advent Of Code](https://emilhvitfeldt.github.io/rstats-adventofcode/). Emil Hvitfeldt’s solutions
+- Настраиваем RStudio. [How to increase the line height of RStudio editor?](https://stackoverflow.com/questions/67430283/how-to-increase-the-line-height-of-rstudio-editor)
+`rstudio_source_text_editor div { line-height: 1.3 !important; }`
 
 # 23.11.2021
 ## DS

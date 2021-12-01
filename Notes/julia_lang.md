@@ -16,6 +16,8 @@
 - [Number one JuliaLang beginner tip: Do not delay the active learning](https://juliaifrank.com/active-learning-in-programming/)
 - [Simple multi-layer perceptron](https://fluxml.ai/tutorials/2021/01/26/mlp.html)
 
+# 30.11.2021
+- [E-graphs in Julia (Part I)](https://www.philipzucker.com/egraph-1/)
 
 # 23.11.2021
 - [Julia: A Fresh Approach to Computing](https://computationalthinking.mit.edu/Spring21/)
