@@ -1942,17 +1942,6 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 - [Using glue_sql()](https://db.rstudio.com/best-practices/run-queries-safely/#using-glue_sql)
 Parameterized queries are generally the safest and most efficient way to pass user defined values in a query, however not every database driver supports them. The function glue_sql(), part of the the glue package, is able to handle the SQL quoting and variable placement.
 - [Командная строка EmEditor](http://www.emeditor.org/en/howto_file_file_commandline.html) (нужна для настройки AstroGrep)
-- hrbrthemes
-	- [library(extrafont)](http://blog.revolutionanalytics.com/2012/09/how-to-use-your-favorite-fonts-in-r-charts.html)
-	- при попытке использовать кастомные темы и сменить шрифт возникает ошибка: `Font family not found in Windows font database`. Решение найдено здесь: [Can't change fonts in ggplot/geom_text](http://stackoverflow.com/questions/14733732/cant-change-fonts-in-ggplot-geom-text). Доп. справочная информация [How to use your favorite fonts in R charts, September 20, 2012](http://blog.revolutionanalytics.com/2012/09/how-to-use-your-favorite-fonts-in-r-charts.html)
-```
-library(extrafont)
-font_import()
-loadfonts()
-fonts()
-# or more detailed
-fonttable()
-```
 - Проблема с tibbletime. По умолчанию он считает, что индекс в UTC. Однако есть внутренние атрибуты индекса! См. [Create tbl_time objects](https://business-science.github.io/tibbletime/reference/tbl_time.html). The information stored about `tbl_time` objects are the `index_quo` and the `index_time_zone`. These are stored as attributes, with the `index_quo` as a `rlang::quosure()` and the `time_zone` as a string.
 
 # 24.04.2018

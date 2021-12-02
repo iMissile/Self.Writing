@@ -1217,8 +1217,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [gt Basic Usage Cookbook](https://themockup.blog/static/gt-cookbook.html)
 - [gt Advanced Usage Cookbook](https://themockup.blog/static/gt-cookbook-advanced.html)
 - [Controlling renderTable column width](https://community.rstudio.com/t/controlling-rendertable-column-width/21208)
- 
-
+- [Create Awesome HTML Table with knitr::kable and kableExtra](https://haozhu233.github.io/kableExtra/awesome_table_in_html.html)
 
 # 29.11.2021
 ## R
@@ -1228,6 +1227,8 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [R Advent Of Code](https://emilhvitfeldt.github.io/rstats-adventofcode/). Emil Hvitfeldt’s solutions
 - Настраиваем RStudio. [How to increase the line height of RStudio editor?](https://stackoverflow.com/questions/67430283/how-to-increase-the-line-height-of-rstudio-editor)
 `rstudio_source_text_editor div { line-height: 1.3 !important; }`
+- COOL! [Greta](https://greta-stats.org/). Simple and scalable statistical modelling in R
+- Любопытно. [DENSITY TIMELINES](https://doodles.mountainmath.ca/blog/2019/03/27/density-timelines/). GLOBAL CITY DENSITY PATTERNS ACROSS TIME
 
 # 23.11.2021
 ## DS

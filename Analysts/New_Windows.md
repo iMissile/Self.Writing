@@ -61,6 +61,9 @@
 - [How to upgrade from a 32-bit to 64-bit version of Windows 10](https://www.windowscentral.com/how-upgrade-32-bit-64-bit-version-windows-10)
 
 # Переход на SSD
+- [Рейтинг SSD дисков, выбираем лучший SSD 2021, тест скорости SSD дисков](https://www.nix.ru/hardware-review/ssd-benchmark-performance.html)
+- [Пpoдвинутый тecт cкopocти жecткиx диcкoв - IOmeter](https://servak.com.ua/blog/rukovodstva/prodvinutyj-test-skorosti-zhestkih-diskov-iometer/)
+- [CrystalDiskMark](https://crystalmark.info/en/software/crystaldiskmark/)
 - [Samsung SSD 850 EVO 250GB – Problems And Their Solutions](http://webfrst.com/samsung-ssd-850-evo-250gb-problems-solutions/)
 - [Программа SSD Ready](https://www.ssdready.com/ssdready-ru/). Узнайте как долго у вас будет работать SSD диск
 - [RAMDisk, или что делать если у вас в компьютере 128 гигабайт оперативной памяти](https://geektimes.ru/company/kingston_technology/blog/277610/)
@@ -181,8 +184,8 @@ SP1 можно получить через web: [Service Pack and Update Center]
 - [Microsoft тайком загружает файлы Windows 10 пользователям Windows 7 и 8. Как с этим бороться](http://lifehacker.ru/2015/09/11/how-to-block-windows-10-upgrade-downloads/)
 
 - [How to install or uninstall Windows Store Apps in Windows 10](https://www.thewindowsclub.com/uninstall-windows-10-apps)
-
 - [Как очистить файлы и папки быстрого доступа в проводнике?](https://tunecom.ru/windows/143-kak-ochistit-chasto-ispolzuemye-papki-i-fajly-v-windows-10.html)
+- [Отображение значков на рабочем столе в Windows](https://support.microsoft.com/ru-ru/windows/%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B7%D0%BD%D0%B0%D1%87%D0%BA%D0%BE%D0%B2-%D0%BD%D0%B0-%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B5%D0%BC-%D1%81%D1%82%D0%BE%D0%BB%D0%B5-%D0%B2-windows-c13270f0-3812-c71d-f27e-29aa32588b20#:~:text=%D0%92%D1%8B%D0%B1%D0%B5%D1%80%D0%B8%D1%82%D0%B5%20%D0%9F%D1%83%D1%81%D0%BA%20%2C%20%D0%BE%D1%82%D0%BA%D1%80%D0%BE%D0%B9%D1%82%D0%B5%20%D0%9F%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B%20%2C%20%D0%B7%D0%B0%D1%82%D0%B5%D0%BC,%D0%BD%D0%B0%D0%B6%D0%BC%D0%B8%D1%82%D0%B5%20%D0%BA%D0%BD%D0%BE%D0%BF%D0%BA%D0%B8%20%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C%20%D0%B8%20%D0%9E%D0%9A.)
 
 ## Проблемы с реестром
 - [Event ID 10016 - The application-specific permission settings do not grant Local Activation permission for the COM Server application with CLSID](http://answers.microsoft.com/en-us/windows/forum/windows_8-performance/event-id-10016-the-application-specific-permission/9ff8796f-c352-4da2-9322-5fdf8a11c81e?auth=1) и [здесь](http://blog.ronnypot.nl/?p=843)
@@ -507,6 +510,7 @@ HKEY_USERS\.Default\Keyboard Layout\Preload
 Т.е. просто поменять местами, т.к. для русской локализации они заданы наоборот.
 
 ## Руководство по установке подсистемы Windows для Linux в Windows 10
+- [Install WSL with a single command now available in Windows 10 version 2004 and higher](https://devblogs.microsoft.com/commandline/install-wsl-with-a-single-command-now-available-in-windows-10-version-2004-and-higher/). In the latest Windows Insider Preview builds, you can install everything you need to run WSL just by running `wsl.exe --install`
 - [Возможны два варианта установки подсистемы Windows для Linux (WSL)](https://docs.microsoft.com/ru-ru/windows/wsl/install-win10)
 - [Upgrading from WSL1 to WSL2](https://dev.to/adityakanekar/upgrading-from-wsl1-to-wsl2-1fl9)
 - Сравнительная таблица [How to Update from WSL to WSL 2 in Windows 10](https://www.tenforums.com/tutorials/164301-how-update-wsl-wsl-2-windows-10-a.html)
@@ -519,12 +523,18 @@ Please make sure that virtualization is enabled inside of your computer's BIOS. 
 - [Automatically Configuring WSL](https://devblogs.microsoft.com/commandline/automatically-configuring-wsl/)
 
 
+
+
 # Настройка рабочего Windows10 с нуля
-- Отключаем в ярлыках Рабочего стола тени шрифта (описано выше).
-- Ставим английский язык по умолчанию и при входе в систему (описано выше).
-- Устанавливаем Ubuntu под Windows [WSL 1](https://docs.microsoft.com/ru-ru/windows/wsl/install-win10)
+- Отключаем в ярлыках Рабочего стола тени шрифта (описано выше, "Как отключить в ярлыках Рабочего стола тени шрифта").
+- Ставим английский язык по умолчанию и при входе в систему (описано выше, "Windows: Как изменить язык при входе в систему?").
+- Отключаем автосон (описано выше, "Компьютер уходит в сон через 2 минуты")
+- Настроим значки на рабочем столе (описано выше, "Отображение значков на рабочем столе в Windows"). `Пуск > Параметры  > Персонализация > Темы > Связанные параметры > Параметры значков рабочего стола.` 
+- Ставим Steam / Start10, Fences
+- Устанавливаем Ubuntu под Windows [WSL 2](https://docs.microsoft.com/ru-ru/windows/wsl/install-win10)
 - Ставим Package Manager [Chocolatey](https://chocolatey.org/)
-- Устанавливаем FiraCode для RStudio.
+- Ставим FarManager [`choco install far`](https://community.chocolatey.org/packages/Far)
+- Устанавливаем FiraCode для RStudio. [`choco install firacode`](https://community.chocolatey.org/packages/FiraCode)
 - Устанавливаем [Windows Terminal]() и для него шрифт `Cascadia Code`.
 	- [Update code font from Consolas to Cascadia Code with ligature](https://weblogs.asp.net/dixin/update-code-font-from-consolas-to-cascadia-code-with-ligature)
 	- [microsoft/cascadia-code](https://github.com/microsoft/cascadia-code)
@@ -533,8 +543,9 @@ Please make sure that virtualization is enabled inside of your computer's BIOS. 
 	- [Конфигурируем меню Windows Termial](https://codeandkeep.com/Tmux-on-Windows/). If you want to set this as your default shell in the Windows Terminal, you can update the settings `Ctrl + ,` to do so. Replace the GUID in defaultProfile with the one for your Linux app. You can find the GUID in the list section under profiles. Set this GUID as the defaultProfile, and this will be the shell that opens by default.
 - Ставим [OpenVPN Community edition](https://openvpn.net/community-downloads/)
 - Ставим SSH клиент [Bitvise SSH Client/xShell]
+- Ставим Zentimo xStorage Manager
 - Ставим SnagIt, блокируем его в файерволе (wf.msc) или касперском. [Best practices for configuring Защитник Windows firewall](https://docs.microsoft.com/ru-ru/windows/security/threat-protection/windows-firewall/best-practices-configuring).
-Переносим базы SangIt
+Переносим базы SnagIt
 	- [Snagit (Windows): Move Unsaved Captures to a Different Computer](https://support.techsmith.com/hc/en-us/articles/203731768-Snagit-Windows-Move-Unsaved-Captures-to-a-Different-Computer)
 	- [Snagit (Windows): Manually Restore a Datastore](https://support.techsmith.com/hc/en-us/articles/203732148-Snagit-Windows-Manually-Restore-a-Datastore)
 - Мигрируем конфигурацию Anydesk. [Backup & Restore Settings and ID](https://support.anydesk.com/AnyDesk_ID_and_Alias)

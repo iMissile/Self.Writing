@@ -33,7 +33,7 @@ ggplot(diamonds, aes(carat)) +
 - [Changing fonts in ggplot2](https://stackoverflow.com/questions/34522732/changing-fonts-in-ggplot2)
 - [Can't change fonts in ggplot/geom_text](https://stackoverflow.com/questions/14733732/cant-change-fonts-in-ggplot-geom-text)
 You must import the system fonts using the command:
-`font_import(paths = NULL, recursive = TRUE, prompt = TRUE,pattern = NULL)`. If you have a lot of fonts, this solution will take a long time. Use pattern="Times" or something to reduce the number of fonts loaded
+`font_import(paths = NULL, recursive = TRUE, prompt = TRUE, pattern = NULL)`. If you have a lot of fonts, this solution will take a long time. Use `pattern = "Times"` or something to reduce the number of fonts loaded
 - COOL! [{mdthemes} is on CRAN: markdown powered themes for {ggplot2}](https://thomasadventure.blog/posts/mdthemes-is-on-cran-markdown-powered-themes-for-ggplot2/)
 - [Allow hms object in breaks argument to scale_*_date {closed}](https://github.com/tidyverse/ggplot2/issues/2894)
 - [ggplot2 3.3.0](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/). Bi-directional geoms and stats!!!

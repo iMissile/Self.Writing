@@ -1207,6 +1207,17 @@ To reset the extrafont database, reinstall the extrafontdb package:
 ```
 install.packages("extrafontdb")
 ```
+- hrbrthemes
+	- [library(extrafont)](http://blog.revolutionanalytics.com/2012/09/how-to-use-your-favorite-fonts-in-r-charts.html)
+	- при попытке использовать кастомные темы и сменить шрифт возникает ошибка: `Font family not found in Windows font database`. Решение найдено здесь: [Can't change fonts in ggplot/geom_text](http://stackoverflow.com/questions/14733732/cant-change-fonts-in-ggplot-geom-text). Доп. справочная информация [How to use your favorite fonts in R charts, September 20, 2012](http://blog.revolutionanalytics.com/2012/09/how-to-use-your-favorite-fonts-in-r-charts.html)
+```
+library(extrafont)
+font_import()
+loadfonts()
+fonts()
+# or more detailed
+fonttable()
+```
 
 # 03.10.2017
 ## R
