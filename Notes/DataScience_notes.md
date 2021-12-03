@@ -1218,6 +1218,12 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [gt Advanced Usage Cookbook](https://themockup.blog/static/gt-cookbook-advanced.html)
 - [Controlling renderTable column width](https://community.rstudio.com/t/controlling-rendertable-column-width/21208)
 - [Create Awesome HTML Table with knitr::kable and kableExtra](https://haozhu233.github.io/kableExtra/awesome_table_in_html.html)
+- [better data.frame formatting for long column names](https://stackoverflow.com/questions/28114374/better-data-frame-formatting-for-long-column-names)
+- [How to rename few column names as 2 lines](https://community.rstudio.com/t/how-to-rename-few-column-names-as-2-lines/23762). Тут рабочие примеры.
+- [gt table - newline in cell](https://stackoverflow.com/questions/63354827/gt-table-newline-in-cell). `fmt_markdown(columns = TRUE)`
+- [Getting Column-Names to Wrap in R/Kable() HTML Table](https://stackoverflow.com/questions/44816307/getting-column-names-to-wrap-in-r-kable-html-table/44816439). Тут тоже есть решение. It is possible to create linebreaks with HTML syntax. In order for that to work, you will have to set the escape argument of kable to FALSE.
+- В gt можно подправить css для переноса слов: <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"></th>, 
+использовать `word-wrap: break-word;`. [CSS word-wrap Property](https://www.w3schools.com/cssref/css3_pr_word-wrap.asp)
 
 # 29.11.2021
 ## R
