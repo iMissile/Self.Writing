@@ -25,6 +25,9 @@ Windows PowerShell update
 foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
 
+# 06.12.2021
+- COOL! [Pandas Tutor visualizes how your Python code transforms dataframes](https://pandastutor.com/index.html)
+
 # 30.11.2021
 - Полная дичь. [3 ways to deal with `SettingWithCopyWarning` in Pandas](https://www.analyticsvidhya.com/blog/2021/11/3-ways-to-deal-with-settingwithcopywarning-in-pandas/)
 - [100 data puzzles for pandas](https://github.com/ajcr/100-pandas-puzzles), ranging from short and simple to super tricky

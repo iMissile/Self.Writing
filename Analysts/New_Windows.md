@@ -60,6 +60,10 @@
 Это возможно!
 - [How to upgrade from a 32-bit to 64-bit version of Windows 10](https://www.windowscentral.com/how-upgrade-32-bit-64-bit-version-windows-10)
 
+# RAM
+- [Single Rank vs Dual Rank RAM: Differences & Performance Impact](https://www.cgdirector.com/single-rank-vs-dual-rank-ram/). Sigle Rank рулит.
+- [SINGLE RANK MEMORY VS. DUAL RANK MEMORY (VS QUAD RANK MEMORY)](https://www.oempcworld.com/support/singlevsdualram.html). Generally Single Rank Memory is faster than Dual Rank Memory, in layman’s terms when a computer accesses Single Rank Memory it only has to go around the track once, where are Dual Rank it would have to go around the track twice.
+
 # Переход на SSD
 - [Рейтинг SSD дисков, выбираем лучший SSD 2021, тест скорости SSD дисков](https://www.nix.ru/hardware-review/ssd-benchmark-performance.html)
 - [Пpoдвинутый тecт cкopocти жecткиx диcкoв - IOmeter](https://servak.com.ua/blog/rukovodstva/prodvinutyj-test-skorosti-zhestkih-diskov-iometer/)
@@ -522,7 +526,8 @@ Please make sure that virtualization is enabled inside of your computer's BIOS. 
 - [Install Windows Subsystem for Linux 2 in Windows 10](https://winaero.com/install-windows-subsystem-for-linux-2-in-windows-10/)
 - [Automatically Configuring WSL](https://devblogs.microsoft.com/commandline/automatically-configuring-wsl/)
 
-
+## BitLocker
+- [Изучаем и вскрываем BitLocker. Как устроена защита дисков Windows и как ее взломать](https://xakep.ru/2017/02/23/bitlocker-hacking/)
 
 
 # Настройка рабочего Windows10 с нуля

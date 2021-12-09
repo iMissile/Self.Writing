@@ -1210,6 +1210,59 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! Здесь есть Rcpp код. [Double precision (64-bit) representation of numeric value in R (sign, exponent, significand)](https://stackoverflow.com/questions/50217954/double-precision-64-bit-representation-of-numeric-value-in-r-sign-exponent)
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
+# 08.12.2021
+## R
+- [vegan: Community Ecology Package](https://cran.r-project.org/web/packages/vegan/)
+Ordination methods, diversity analysis and other functions for community and vegetation ecologists.
+К вопросу "допустим, у меня есть какое-то множество точек с определенной мерой расстояний между ними. как это добро можно визуализировать в двумерном scatter plot графике?". Можно сделать mds, в пакете vegan есть, а затем ggplotом первые главные координаты визуализировать.
+- [CSV Conf 2021 "Revealing Room for Improvement in Accessibility within a Social Media Data Visualization Learning Community."](https://github.com/spcanelon/csvConf2021)
+
+## UseR! 2021
+- [sfnetworks: Tidy Geospatial Networks in R](https://sfnetworks.github.io/useR2021/slides#1)
+
+# 07.12.2021
+## R
+- [The R console is in my native language, how can I set R to English?](https://stackoverflow.com/questions/12760491/the-r-console-is-in-my-native-language-how-can-i-set-r-to-english)
+	1. Go into R installation directory, i.e. C:\Program Files\R\
+	2. From there go into the subfolder etc/
+	3. Open with a text editor (i.e. Notepad) the file Rconsole
+	4. Look into the file for the line language =
+	5. Replace such line with language = en
+	6. Save and close the Rconsole file, then run Rgui again, and the interface will be in English
+- Проблема со шрифтами. `In grid.Call(C_textBounds, as.graphicsAnnot(x$label),  ... :
+  font family not found in Windows font database`
+ - [Fonts not available in R after importing](https://stackoverflow.com/questions/56072340/fonts-not-available-in-r-after-importing)
+ - [Changing fonts in ggplot2](https://stackoverflow.com/questions/34522732/changing-fonts-in-ggplot2/51906008#51906008).
+ After intalling the package extraFont and running font_import like this (it took like 5 minutes):
+```
+library(extrafont)
+font_import()
+loadfonts(device = "win")
+```
+Another option is to use showtext package which supports more types of fonts (TrueType, OpenType, Type 1, web fonts, etc.) and more graphics devices, and avoids using external software such as Ghostscript.
+```
+# install.packages('showtext', dependencies = TRUE)
+library(showtext)
+```
+- [How can I resolve the "No Font Name" issue when importing fonts into R using extrafont?](https://stackoverflow.com/questions/61204259/how-can-i-resolve-the-no-font-name-issue-when-importing-fonts-into-r-using-ext)
+As it was mentioned by @Moritz Schwarz, the problem is traced to `Rttf2pt1`.
+
+According to a solution proposed here, downgrading it to 1.3.8 will fix the problem:
+```
+library(extrafont)
+library(remotes)
+remotes::install_version("Rttf2pt1", version = "1.3.8")
+extrafont::font_import()
+```
+- Тут [Correctly finds font directory, but says "No FontName. Skipping" for all fonts](https://issueexplorer.com/issue/wch/extrafont/88) это же решение.
+- [Custom fonts with ragg](http://www.r-graph-gallery.com/custom-fonts-in-R-and-ggplot2.html)
+
+# 06.12.2021
+- Вопрос. В статистике есть какие-нибудь наработки, позволяющие корректно сравнивать частично независимые, частично связанные выборки? Условно говоря, набрано 1000 человек, стоит вопрос, выше ли доля голосующих за Трампа среди бизнесменов, среди автовладельцев или среди глав семейства? Естественно, ничего не мешает быть одновременно бизнесменом и главой семьи, и ничего не мешает быть кем-то одним.
+Ответ: В качестве отправной точки по этой теме советую статью Testing for marginal independence between two categorical variables with multiple responses и сопровождающий ее пакет MRCV: A Package for Analyzing Categorical Variables with Multiple Response Options.
+- Вопрос. А вы не подскажете, есть ли в R пакет, чтобы он выдавал координатную ось и чтобы там можно было на нее покликать и он точки, которые ты накликал выкинул как матрицу или вектор или ещё что-то?
+Ответ: Если в обычных графиках, не `shiny`, то посмотрите `?locator` и `?identify` . Например, `locator(1)` выведет координаты клика по текущему графику
+
 # 01.12.2021
 ## R html tables
 - [RMarkdown: how to rotate table column headers](https://stackoverflow.com/questions/49109853/rmarkdown-how-to-rotate-table-column-headers)
