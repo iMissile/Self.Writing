@@ -528,7 +528,57 @@ Please make sure that virtualization is enabled inside of your computer's BIOS. 
 
 ## BitLocker
 - [Изучаем и вскрываем BitLocker. Как устроена защита дисков Windows и как ее взломать](https://xakep.ru/2017/02/23/bitlocker-hacking/)
+- Вот ведь, прямо мой случай.  [Bitlocker is off but C drive shows Bitlocker encrypted Wondows 10](https://social.technet.microsoft.com/Forums/en-US/a6c735ab-62d2-47a2-bb0c-aff9a3db1523/bitlocker-is-off-but-c-drive-shows-bitlocker-encrypted-wondows-10?forum=win10itprosecurity)
+Смотрим статус командой `manage-bde -status c:`
+Видим, что 
+```
+Том C: [Windows ]
+[Том с операционной системой]
 
+    Размер:                           237,46 ГБ
+    Версия BitLocker:                 2.0
+    Состояние преобразования:         Зашифровано только занятое место
+    Зашифровано (процентов):          100,0%
+    Метод шифрования:                 XTS-AES 128
+    Состояние защиты:                 Защита отключена
+    Состояние блокировки:             Разблокировка
+    Поле идентификации:               Неизвестный
+    Предохранители ключа:              не обнаружены
+
+
+C:\windows\system32>manage-bde -status d:
+Шифрование дисков BitLocker: версия средства настройки: 10.0.19041
+(C) Корпорация Майкрософт (Microsoft Corporation), 2013. Все права защищены.
+
+Том D: [Data]
+[Том данных]
+
+    Размер:                           931,51 ГБ
+    Версия BitLocker:                 2.0
+    Состояние преобразования:         Выполняется шифрование
+    Зашифровано (процентов):          13,3%
+    Метод шифрования:                 XTS-AES 128
+    Состояние защиты:                 Защита отключена
+    Состояние блокировки:             Разблокировка
+    Поле идентификации:               Неизвестный
+    Автоматическая разблокировка:     Отключен
+    Предохранители ключа:              не обнаружены
+```
+- [Solved for Dell](https://www.dell.com/community/Windows-10/BitLocker-need-a-key-but-I-never-installed-it/m-p/7427359#M14749)
+* Restart the system
+* At the Dell Logo keep tapping F2
+* You will enter the BIOS screen
+* Go to Secure Boot header, expand and select Expert Key Management
+* Click the Restore Settings button
+* Select Factory Settings
+* Press OK
+* Exit the BIOS and restart
+
+Windows should now launch as it did before, even my last browser session appeared and lost nothing from c:\ drive!
+- [BitLocker](https://en.wikipedia.org/wiki/BitLocker)
+- [Secure Boot: как отключить защиту или настроить правильно в UEFI](https://gamesqa.ru/kompyutery/secure-boot-kak-otklyuchit-zashhitu-ili-nastroit-pravilno-v-uefi-12565/)
+- !!! [HP PCs - BitLocker Encryption Is Enabled by Default](https://support.hp.com/in-en/document/c06458046). CAUTION: If you cannot find your BitLocker recovery key when needed, you will lose access to data on encrypted drives.
+- [HP PCs - Using BitLocker or Finding the Recovery Key (Windows 10)](https://support.hp.com/in-en/document/c06432394)
 
 # Настройка рабочего Windows10 с нуля
 - Отключаем в ярлыках Рабочего стола тени шрифта (описано выше, "Как отключить в ярлыках Рабочего стола тени шрифта").
@@ -564,7 +614,7 @@ Please make sure that virtualization is enabled inside of your computer's BIOS. 
 4. Replace the line 'ad.roster.items='
 5. Done.
 ```
-- Ставим EmEditor, отключаем в Касперском доступ в инет. 
+- Ставим EmEditor (19.9.4 проверен), отключаем в Касперском доступ в инет на `EMURASOFT`. Сетевой экран/Настройки программ.
 	- Ставим проверку русского языка [Spellcheck](https://www.emeditor.com/text-editor-features/more-features/spellcheck/). На момент установки словари жили [здесь](https://extensions.openoffice.org/en/project/slovari-dlya-russkogo-yazyka-dictionaries-russian). After download a dictionary, change the file extension from .oxt to .zip, extract the Zip file, and then copy *.dic and *.aff files into the Dictionaries sub folder of the EmEditor install folder (usually C:\Program Files\EmEditor\Dictionaries).
 	- Ставим для *.R подсветку синтаксиса [EmEditor Syntax ](https://www.emeditor.com/wpfb_file_category/syntax-files/), а именно, [R syntax file](https://www.emeditor.com/files/r-esy/). Инструкция по установке [How can I install an EmEditor syntax file?](http://www.emeditor.org/en/faq_setup_setup_syntax.html).
 	- Включаем отображение номеров строк. [EmEditor How to: To Display Line Numbers and or the Ruler](http://www.emeditor.org/en/howto_customize_usage_ruler.html) To Display Line Numbers and or the Ruler
@@ -584,7 +634,7 @@ I just realized that we can do that already at our own:
 
 Now the marks are invisible on normal work, but visible on selection only.
 - В AstroGrep настраиваем открытие файлов в emeditor: `"*" "C:\Program Files\EmEditor\EmEditor.exe" "/l %2 %1"`
-- Ставим SmartGit, переносим настройки из `%appdata%\syntevo\SmartGit\<version>\`. Читаем [How to import old settings/repositories](https://stackoverflow.com/questions/45837545/how-to-import-old-settings-repositories)
+- Ставим SmartGit, переносим настройки из `%appdata%\syntevo\SmartGit\<version>\`. Читаем [How to import old settings/repositories](https://stackoverflow.com/questions/45837545/how-to-import-old-settings-repositories) `*.yml` files
 - Настраиваем Касперского для разрешения доступа Edge в инет. [Cannot open websites in Google Chrome and Edge Chromium when working with Kaspersky Security 10 for Windows Server](https://support.kaspersky.com/15392)
 - После установки Касперского в режиме администратора отключаем штатный брандмауэр Windows `netsh advfirewall set allprofiles state off`
 - В Google Chrome включаем режим чтения. Делается это через экспериментальные настройки. `chrome://flags/#enable-reader-mode`
