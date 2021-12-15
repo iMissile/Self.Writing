@@ -290,6 +290,17 @@ If you just want to prevent two lines from overlapping exactly, there is now a b
 - [Reordering and facetting for ggplot2](https://juliasilge.com/blog/reorder-within/)
 - COOL! [Setting the Graphics Device in a RMarkdown Document](https://www.jumpingrivers.com/blog/r-knitr-markdown-png-pdf-graphics/). The {ragg} Package
 Setting the agg_png() function from the {ragg} package as the graphics device is somewhat more tricky as it doesn’t come pre-defined within {knitr}. The {knitr} docs states that
+- [Circular barplot with R and ggplot2](https://www.r-graph-gallery.com/web-circular-barplot-with-R-and-ggplot2.html)
+- COOL! [3 alternatives to a discrete color scale legend in ggplot2](https://www.nsgrantham.com/legend-alternatives-ggplot2)
+- [Using ggplot2, can I insert a break in the axis?](https://stackoverflow.com/questions/7194688/using-ggplot2-can-i-insert-a-break-in-the-axis)
+- [How do I access the data frame that has been passed to ggplot()?](https://stackoverflow.com/questions/45088454/how-do-i-access-the-data-frame-that-has-been-passed-to-ggplot)
+
+
+## palettes
+- COOL! [vankesteren/firatheme](https://github.com/vankesteren/firatheme) a ggplot2 theme with fira font
+- [Mikata-Project/ggthemr](https://github.com/Mikata-Project/ggthemr). Themes for ggplot2.
+- [BlakeRMills/MetBrewer](https://github.com/BlakeRMills/MetBrewer). Color palette package in R inspired by works at the Metropolitan Museum of Art in New York
+
 
 ## facet
 - [Useful labeller functions](https://ggplot2.tidyverse.org/reference/labellers.html). Labeller functions are in charge of formatting the strip labels of facet grids and wraps. 
@@ -323,9 +334,6 @@ storeLabeller <- function(string) {
       ggtitle(label = "Динамика совокупных остатков")
 ```
 - [Overlaying facetted histograms with normal curve using ggplot2](https://data-se.netlify.app/2021/06/23/overlaying-facetted-histograms-with-normal-curve-using-ggplot2/)
-- [Circular barplot with R and ggplot2](https://www.r-graph-gallery.com/web-circular-barplot-with-R-and-ggplot2.html)
-- COOL! [3 alternatives to a discrete color scale legend in ggplot2](https://www.nsgrantham.com/legend-alternatives-ggplot2)
-- [Using ggplot2, can I insert a break in the axis?](https://stackoverflow.com/questions/7194688/using-ggplot2-can-i-insert-a-break-in-the-axis)
 
 # extensions
 - [eulerr](https://jolars.github.io/eulerr/index.html) generates area-proportional Euler diagrams that display set relationships (intersections, unions, and disjoints) with circles or ellipses

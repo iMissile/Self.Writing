@@ -555,6 +555,15 @@ Theming in Rmarkdown can be hard. You first made some custom CSS or use a provid
 `knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, results='hold')`
 - COOL! [How to request an early exit when knitting an Rmd document?](https://stackoverflow.com/questions/33705662/how-to-request-an-early-exit-when-knitting-an-rmd-document).
 `knitr::knit_exit()` for figuring out where the deeply broken thing is by bisecting your Rmd
+- [14.7 Use `knitr::knit_expand()` to generate Rmd source](https://bookdown.org/yihui/rmarkdown-cookbook/knit-expand.html)
+- Вот такую ерунду получаем, видимо, при динамической компиляции сгенерированного кода. [R Markdown won't Knit](https://community.rstudio.com/t/r-markdown-wont-knit/34627/3)
+- [In grepl("\n", lines, fixed = TRUE) : input string 1 is invalid in this locale #396](https://github.com/swirldev/swirl/issues/396)
+- [Run RMarkdown with arguments on the command line](https://stackoverflow.com/questions/49904943/run-rmarkdown-with-arguments-on-the-command-line)
+`Rscript -e "rmarkdown::render('example.Rmd',params=list(args = myarg))"`
+- [Pandoc version 1.12.1502 or higher required](https://community.rstudio.com/t/pandoc-version-1-12-1502-or-higher-required/28870).
+This variable should be set in RStudio `Sys.getenv("RSTUDIO_PANDOC")`
+- [Setting and getting Windows environment variables from the command prompt?](https://superuser.com/questions/79612/setting-and-getting-windows-environment-variables-from-the-command-prompt/79614)
+
 
 
 
@@ -1210,6 +1219,37 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! Здесь есть Rcpp код. [Double precision (64-bit) representation of numeric value in R (sign, exponent, significand)](https://stackoverflow.com/questions/50217954/double-precision-64-bit-representation-of-numeric-value-in-r-sign-exponent)
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
+# 13.12.2021
+## R
+- [isDayOff()](https://isdayoff.ru/). API производственного календаря. 
+Проверка даты на принадлежность к нерабочему дню, согласно официальным указам и распоряжениям
+- COOL! [Используем здравый смысл в прогнозировании на R](https://investcookies.ru/post/parametric_forecast/). Автор: Дмитрий Кибальников (@Kb_Dm)
+- COOL! [Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing](https://www.autodesk.com/research/publications/same-stats-different-graphs)
+- [echarty](https://helgasoft.github.io/echarty/gallery.html#boxplot). Minimal R/Shiny Interface to ECharts.js]
+- Разбираемся с `pivot_wider`:
+	- [FR: order of columns resulting from pivot_wider #839](https://github.com/tidyverse/tidyr/issues/839)
+	- [Can you use pivot_wider to create multiple groups of alternating new columns?](https://stackoverflow.com/questions/60159132/can-you-use-pivot-wider-to-create-multiple-groups-of-alternating-new-columns)
+- [Converting two columns of a data frame to a named vector](https://stackoverflow.com/questions/19265172/converting-two-columns-of-a-data-frame-to-a-named-vector/19265431)
+- COOL! [Adapting Machine Learning Algorithms for Spatial Interpolation](https://swilke-geoscience.net/post/spatial_ml/)
+- [Tidy Data Tutor helps you visualize data analysis pipelines](https://tidydatatutor.com/)
+- [eulerr](http://eulerr.co)
+
+## Win cmd
+- [Calculate time difference in Windows batch file](https://stackoverflow.com/questions/9922498/calculate-time-difference-in-windows-batch-file)
+- [7 Ways to Measure Time Taken to Complete a Batch File or Command Line Execution](https://www.raymond.cc/blog/measure-time-taken-to-complete-a-batch-file-or-command-line-execution/). Рулит доп. утилита `ptime` весом в 20 кб.
+- [How-to: Calculate a time difference with tdiff.cmd](https://ss64.com/nt/syntax-tdiff.html)
+
+## Tables
+- [Can tab_spanner() set cols_label() for alternative names? #154](https://github.com/rstudio/gt/issues/154)
+- Slides. [Display tables with package gt. Part 1: Building basic tables](https://aosmith16.github.io/spring-r-topics/slides/week04_gt_tables.html#1) by Ariel Muldoon. April 20, 2021
+
+## DS
+- [n8n.io](https://n8n.io/). Extendable workflow automation. fair-code licensed - Apache 2.0 with Commons Clause
+- [Advent of Code](https://adventofcode.com/)
+- COOL! [Robyn](https://facebookexperimental.github.io/Robyn/). Robyn is an automated Marketing Mix Modeling (MMM) open source code.
+
+
+
 # 08.12.2021
 ## R
 - [vegan: Community Ecology Package](https://cran.r-project.org/web/packages/vegan/)
@@ -1244,6 +1284,7 @@ Another option is to use showtext package which supports more types of fonts (Tr
 # install.packages('showtext', dependencies = TRUE)
 library(showtext)
 ```
+- COOL! [yixuan/showtext](https://github.com/yixuan/showtext). Using Fonts More Easily in R Graphs
 - [How can I resolve the "No Font Name" issue when importing fonts into R using extrafont?](https://stackoverflow.com/questions/61204259/how-can-i-resolve-the-no-font-name-issue-when-importing-fonts-into-r-using-ext)
 As it was mentioned by @Moritz Schwarz, the problem is traced to `Rttf2pt1`.
 
@@ -1256,6 +1297,7 @@ extrafont::font_import()
 ```
 - Тут [Correctly finds font directory, but says "No FontName. Skipping" for all fonts](https://issueexplorer.com/issue/wch/extrafont/88) это же решение.
 - [Custom fonts with ragg](http://www.r-graph-gallery.com/custom-fonts-in-R-and-ggplot2.html)
+- COOL! [svglite 2.0.0](https://www.tidyverse.org/blog/2021/02/svglite-2-0-0/)
 
 # 06.12.2021
 - Вопрос. В статистике есть какие-нибудь наработки, позволяющие корректно сравнивать частично независимые, частично связанные выборки? Условно говоря, набрано 1000 человек, стоит вопрос, выше ли доля голосующих за Трампа среди бизнесменов, среди автовладельцев или среди глав семейства? Естественно, ничего не мешает быть одновременно бизнесменом и главой семьи, и ничего не мешает быть кем-то одним.

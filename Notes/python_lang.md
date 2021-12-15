@@ -27,6 +27,7 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 
 # 06.12.2021
 - COOL! [Pandas Tutor visualizes how your Python code transforms dataframes](https://pandastutor.com/index.html)
+- [Pandas: pad series on top or bottom](https://stackoverflow.com/questions/38743064/pandas-pad-series-on-top-or-bottom)
 
 # 30.11.2021
 - Полная дичь. [3 ways to deal with `SettingWithCopyWarning` in Pandas](https://www.analyticsvidhya.com/blog/2021/11/3-ways-to-deal-with-settingwithcopywarning-in-pandas/)
