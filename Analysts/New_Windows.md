@@ -77,7 +77,7 @@
 	- [Primo Ramdisk (VSuite Ramdisk II) - Powerful RAM Disk Emulator for Windows](http://www.romexsoftware.com/en-us/primo-ramdisk/)
 - [Отучиваем Google Chrome убивать ресурс SSD винчестера](https://habrahabr.ru/sandbox/59573/)
 Следующий вариант по-моему скромному мнению, решил все мои проблемы. Я решил использовать RAM Drive — т.е. держать все в оперативной памяти, и только лишь при выключении писать на винчестер. Учитывая что ноутбук у меня либо включен, либо в ждущем режиме, то писаться при выключении будет очень редко. Из понравившихся программ остановил выбор на Qsoft RAMDisk. Ставится как драйвер. В свойствах выбрал размер диска, файловую систему, куда писать при выключении. Под диск выделил 512 МБ (думаю разумный минимум 128 МБ).
-Можно было перенести просто папку кеша, можно было и добавить к ней папку Media Cache, но я решил полностью избавиться от всяческих записей, и перенести полносью всю папку User Data. 
+Можно было перенести просто папку кеша [`C:\Users\%USER%\AppData\Local\Google\Chrome\User Data\Default\Cache`], можно было и добавить к ней папку Media Cache, но я решил полностью избавиться от всяческих записей, и перенести полностью всю папку User Data. 
 Можно было опять же указать в параметрах ярлыка --user-data-dir=«путь к рам-диску» для перенаправления хранения профиля, можно было прописать в реестре, но при запуске без ярлыка либо обновлении, все это не работало бы. Начал думать как бы так сделать чтобы ничего не меняя перенаправить. И тут я вспомнил про символические ссылки!
 Была скачана утилита Link Shell Extension, при помощи которой я фактически на месте папки User Data создал «ярлык», ссылку которая вела на мой рам-диск. Т.е. на диске ничего не лежало, заходя в папку User Data мы сразу же перенаправлялись на рам-диск. Причем в чем плюс такого решения — ни система, ни Хром никакого подвоха не видели.
 Хром стал работать еще быстрее чем он был на SSD. Очень быстро. Я теперь наверное даже всем порекомендую хотя-бы кеш хрома вынести на небольшой рам-диск. Лично для меня загадка почему инженеры не придают внимания проблеме того что хром очень много и часто пишет. Надежность информации это хорошо, но не ценой же убийства винчестера!
@@ -599,6 +599,9 @@ Windows should now launch as it did before, even my last browser session appeare
 	- [Install with chocolatey](https://community.chocolatey.org/packages/cascadiacode). `choco install cascadiacode`
 	- [Cascadia Mono Font 2108.26](https://community.chocolatey.org/packages/cascadiamono). `choco install cascadiamono`
 	- [Конфигурируем меню Windows Termial](https://codeandkeep.com/Tmux-on-Windows/). If you want to set this as your default shell in the Windows Terminal, you can update the settings `Ctrl + ,` to do so. Replace the GUID in defaultProfile with the one for your Linux app. You can find the GUID in the list section under profiles. Set this GUID as the defaultProfile, and this will be the shell that opens by default.
+- Ставим `Link Shell Extension` с [официальной страницы](https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html)
+- Ставим [DataRAM RAMDisk](http://memory.dataram.com/products-and-services/software/ramdisk) и спасаем SSD от Chrome (см выше по тексту).
+RAM Disk на `Y:`, выделяем под кэш Хрома 512 Мб, делаем Junction кэша хрома.
 - Ставим [OpenVPN Community edition](https://openvpn.net/community-downloads/)
 - Ставим SSH клиент [Bitvise SSH Client/xShell]
 - Ставим Zentimo xStorage Manager
@@ -657,7 +660,7 @@ TinEye browser extensions are the fastest way to search for images online.
 # Утилиты для синхронизации и частное облако
 - [Syncthing](https://syncthing.net/)
 	- [Создаём личное облачное хранилище. Syncthing](https://hacker-basement.ru/2019/05/26/private-cloud-syncthing/)
-	- [Nextcloud](). The self-hosted productivity platform that keeps you in control
+	- [Nextcloud](https://nextcloud.com/). The self-hosted productivity platform that keeps you in control
 - [Resilio Sync](https://www.resilio.com/). Universal File Delivery for the Enterprise.
 Unify, control, and accelerate global file data, securely
 
