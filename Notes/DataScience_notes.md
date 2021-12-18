@@ -200,6 +200,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Interactive web-based data visualization with R, plotly, and shiny](https://plotly-r.com/)
 - [Outstanding User Interfaces with Shiny](https://divadnojnarg.github.io/outstanding-shiny-ui/) by David Granjon
 - Шитиков В. К., Мастицкий С. Э. [Классификация, регрессия и другие алгоритмы Data Mining с использованием R](https://ranalytics.github.io/data-mining/index.html)
+- А. Б. Шипунов, Е. М. Балдин, П. А. Волкова и др. [Наглядная статистика. Используем R!](https://cran.r-project.org/doc/contrib/Shipunov-rbook.pdf) 2014 год
 - ebook. [officeverse by David Gohel](https://ardata-fr.github.io/officeverse/index.html). This book deals with reporting from R with the packages {officer}, {officedown}, {flextable}, {rvg} and {mschart}.
 - [Outstanding User Interfaces with Shiny](https://unleash-shiny.rinterface.com/index.html)
 - gt Cookbook:
@@ -1233,6 +1234,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! [Adapting Machine Learning Algorithms for Spatial Interpolation](https://swilke-geoscience.net/post/spatial_ml/)
 - [Tidy Data Tutor helps you visualize data analysis pipelines](https://tidydatatutor.com/)
 - [eulerr](http://eulerr.co)
+- COOL! [HOW TO CREATE DECORATORS IN R](http://theautomatic.net/2020/03/17/how-to-create-decorators-in-r/)
 
 ## Win cmd
 - [Calculate time difference in Windows batch file](https://stackoverflow.com/questions/9922498/calculate-time-difference-in-windows-batch-file)

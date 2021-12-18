@@ -649,7 +649,12 @@ Now the marks are invisible on normal work, but visible on selection only.
 - TODO: инкорпорировать частично настройки Богдана.
 - Настраиваем Docker
 	- Ставим **Docker Desktop** по инструкции [Начало работы с удаленными контейнерами Docker в WSL 2](https://docs.microsoft.com/ru-ru/windows/wsl/tutorials/wsl-containers)
+	- Docker может жрать немало памяти (гигабайты), поэтому есть инструкции по его тушению в случае ненужности. [Stopping Vmmem from using RAM](https://stackoverflow.com/questions/64165192/stopping-vmmem-from-using-ram). just `wsl --shutdown` in PowerShell or cmd.
 	- Собираем минимальный докер в концепции `renv` по репозиторию Богдана, запускаем изнутри wsl: `docker build -f rstudio-server.Dockerfile .`
+- Настраиваем Outlook (опционально):
+	- [Создание подписи в Outlook и ее добавление в сообщения](https://support.microsoft.com/ru-ru/office/%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%B8-%D0%B2-outlook-%D0%B8-%D0%B5%D0%B5-%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2). Откройте новое сообщение. Меню Сообщение, выберите пункт Подписи> подписи.
+	- [Импорт и экспорт контактов из Outlook](https://office-apps.net/faq-office/249-import-i-eksport-kontaktov-v-outlook.html). Проводится через Экспорт/Импорт.
+- Ставим Finereader. У меня пашет 11.0.101.583 Corporate Edition (CE)
 
 ## Поиск дубликатов изображений в Windows
 - [Find visually similar images for a given image file (on Windows)](https://softwarerecs.stackexchange.com/questions/17046/find-visually-similar-images-for-a-given-image-file-on-windows)
