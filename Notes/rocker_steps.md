@@ -42,7 +42,7 @@ login/password: root/ilya-lab
 - [VOLUME секция](https://docs.docker.com/v17.09/engine/reference/builder/#volume)
 - не забываем, что в ...
 
-## Мапируем директори контейнера на хостовые
+## Мапируем директории контейнера на хостовые
 - [How To Share Data Between the Docker Container and the Host](https://www.digitalocean.com/community/tutorials/how-to-share-data-between-the-docker-container-and-the-host)
 - [Use volumes](https://docs.docker.com/storage/volumes/)
 
@@ -196,7 +196,7 @@ ExecStart=/usr/bin/dockerd -D -H tcp://127.0.0.1:2375 -H unix:///var/run/docker.
 - Загружаем demo docker для ShinyProxy
 Добавляем image командой `sudo docker pull openanalytics/shinyproxy-demo`
 
-# Запускаем констуктор в контейнере
+# Запускаем конструктор в контейнере
 1. Исходники живут за пределом контейнера. Создали ~/R/ на машине с shinyproxy
 2. Стянули внутри R ветку huawei командой `git clone -b huawei --single-branch https://gitlab.com/TV-stat/mts-tv-stat.reports.git`
 3. Собираем образ R-Shiny на базе которого будет работать приложение. [Документация по docker](https://docs.docker.com/)

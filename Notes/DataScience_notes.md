@@ -1220,6 +1220,24 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! Здесь есть Rcpp код. [Double precision (64-bit) representation of numeric value in R (sign, exponent, significand)](https://stackoverflow.com/questions/50217954/double-precision-64-bit-representation-of-numeric-value-in-r-sign-exponent)
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
+
+
+# 20.12.2021
+## R
+- COOL! [How to stop a function in R that is taking too long and give it an alternative?](https://stackoverflow.com/questions/34346619/how-to-stop-a-function-in-r-that-is-taking-too-long-and-give-it-an-alternative). For anyone who wants a lighter weight solution that does not depend on the R.utils package, I ended up using a minimal solution based on the withTimeout() code.
+Из чата: работает даже в таком виде, я в шоке малость, но се ля ви)
+```
+GA_Stat <- f_time_limit( 
+  gads_get_report( resource = "ad_group", date_from = DataStart, date_to = DataEnd,
+                   fields = c( "segments.date", "segments.ad_network_type", "campaign.id", "ad_group.id",
+                               "metrics.impressions", "metrics.clicks", "metrics.cost_micros", "metrics.all_conversions_value") ),
+  3)
+```
+- COOL! [Multi Process Task Queue in 100 Lines of R Code](https://www.tidyverse.org/blog/2019/09/callr-task-q/)
+
+## Math
+- Slides. Хорошая презентация с материалами на R. [Тестирование статистических гипотез](https://varmara.github.io/linmodr/04_hypothesis_testing.html)
+
 # 13.12.2021
 ## R
 - [isDayOff()](https://isdayoff.ru/). API производственного календаря. 
@@ -1321,6 +1339,9 @@ extrafont::font_import()
 - [Getting Column-Names to Wrap in R/Kable() HTML Table](https://stackoverflow.com/questions/44816307/getting-column-names-to-wrap-in-r-kable-html-table/44816439). Тут тоже есть решение. It is possible to create linebreaks with HTML syntax. In order for that to work, you will have to set the escape argument of kable to FALSE.
 - В gt можно подправить css для переноса слов: <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"></th>, 
 использовать `word-wrap: break-word;`. [CSS word-wrap Property](https://www.w3schools.com/cssref/css3_pr_word-wrap.asp)
+
+## Table Contest
+- COOL! [Winners of the 2021 Table Contest](https://www.rstudio.com/blog/winners-of-the-2021-table-contest/)
 
 # 29.11.2021
 ## R
