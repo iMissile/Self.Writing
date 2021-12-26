@@ -737,7 +737,7 @@ How to find, display, and use 600 built-in R colors and 2000 palettes and create
 
 
 
-# RStudio useful plugins/addins
+# RStudio useful plugins/addins/add-ins
 - COOL! [smouksassi/ggquickeda](https://github.com/smouksassi/ggquickeda). ggplot and summary statistics quick exploration of data
 - COOL! [esquisse](https://github.com/dreamRs/esquisse)
 The purpose of this add-in is to let you explore your data quickly to extract the information they hold. You can only create simple plots, you won't be able to use custom scales and all the power of ggplot2. This is just the start!
