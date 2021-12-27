@@ -525,6 +525,12 @@ HKEY_USERS\.Default\Keyboard Layout\Preload
 Please make sure that virtualization is enabled inside of your computer's BIOS. The instructions on how to do this will vary from computer to computer, and will most likely be under CPU related options.
 - [Install Windows Subsystem for Linux 2 in Windows 10](https://winaero.com/install-windows-subsystem-for-linux-2-in-windows-10/)
 - [Automatically Configuring WSL](https://devblogs.microsoft.com/commandline/automatically-configuring-wsl/)
+- Доставляем утилиты:
+```
+sudo apt update
+sudo apt install xsltproc
+sudo apt install zip
+```
 
 ## BitLocker
 - [Изучаем и вскрываем BitLocker. Как устроена защита дисков Windows и как ее взломать](https://xakep.ru/2017/02/23/bitlocker-hacking/)
@@ -579,6 +585,8 @@ Windows should now launch as it did before, even my last browser session appeare
 - [Secure Boot: как отключить защиту или настроить правильно в UEFI](https://gamesqa.ru/kompyutery/secure-boot-kak-otklyuchit-zashhitu-ili-nastroit-pravilno-v-uefi-12565/)
 - !!! [HP PCs - BitLocker Encryption Is Enabled by Default](https://support.hp.com/in-en/document/c06458046). CAUTION: If you cannot find your BitLocker recovery key when needed, you will lose access to data on encrypted drives.
 - [HP PCs - Using BitLocker or Finding the Recovery Key (Windows 10)](https://support.hp.com/in-en/document/c06432394)
+- РЕШЕНИЕ: частичное шифрование включается в WinPro при связке ее с MS аккаунтом. Отключить можно в параметрах учетной записи в win -- откатается все назад.
+`Параметры > Обновление и безопасность > Шифрование устройства`
 
 # Настройка рабочего Windows10 с нуля
 - Отключаем в ярлыках Рабочего стола тени шрифта (описано выше, "Как отключить в ярлыках Рабочего стола тени шрифта").

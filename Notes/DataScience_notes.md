@@ -410,6 +410,8 @@ df %>%
 - [Web Scraper](https://www.webscraper.io/)
 Web Scraper is a company specializing in data extraction from web pages. We offer 2 great options for our users. Our free Google Chrome Web Scraper Extension, and cloud based Web Scraper.
 - COOL! [Companies, Officials and NGO Using R](https://github.com/ThinkR-open/companies-using-r)
+- [Cloud computing made simple
+Powering next-generation applications from Machine Learning to 3D graphics.](https://www.paperspace.com/core)
 
 ## Amazon EC2
 - [What is an ECU? CPU Benchmarking in the Cloud](http://blog.cloudharmony.com/2010/05/what-is-ecu-cpu-benchmarking-in-cloud.html)
