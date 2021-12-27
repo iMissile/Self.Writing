@@ -340,6 +340,8 @@ storeLabeller <- function(string) {
 - [ggantrify](https://github.com/giocomai/ganttrify) Create beautiful Gantt charts with ggplot2
 - COOL! [gtExtras](https://jthomasmock.github.io/gtExtras/index.html). The goal of gtExtras is to provide some additional helper functions to assist in creating beautiful tables with gt.
 
+=======
+- COOL! Как эффективно применить `ggfx` [Better data communication with {ggplot2}, part 2](https://giulia-ruggeri.medium.com/better-data-communication-with-ggplot2-part-2-615a5180ccb)
 
 # other
 - COOL! [Altair: Declarative Visualization in Python](https://altair-viz.github.io/)

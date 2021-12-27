@@ -1235,8 +1235,14 @@ GA_Stat <- f_time_limit(
 ```
 - COOL! [Multi Process Task Queue in 100 Lines of R Code](https://www.tidyverse.org/blog/2019/09/callr-task-q/)
 
-## Math
+## Math & DS
 - Slides. Хорошая презентация с материалами на R. [Тестирование статистических гипотез](https://varmara.github.io/linmodr/04_hypothesis_testing.html)
+- [Marketing Data Science - Case Studies from Airbnb, Lyft, Doordash](https://blogboard.io/blog/data-science-in-marketing-optimization/)
+
+## Shiny
+- [The Basics of Shiny Apps](https://data-science-master.github.io/lectures/06_shiny/06_basic_shiny.html)
+- [Scoping rules for Shiny apps](https://shiny.rstudio.com/articles/scoping.html)
+- [Debugging Shiny applications](https://shiny.rstudio.com/articles/debugging.html)
 
 # 13.12.2021
 ## R
