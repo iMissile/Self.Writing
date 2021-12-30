@@ -60,6 +60,7 @@ You can also declare a new font family to use it in arbitrary situations:
 Get our free online math tools for graphing, geometry, 3D, and more!
 	- [TikzEdt](http://www.tikzedt.org/) is a combined WYSIWYG/text editor designed for editing Tikz code.
 	- [Yichuan Shen's tikzcd-editor](http://tikzcd.yichuanshen.de/)
+- [An Overleaf extension for recognizing symbols](https://latex.net/extexify/)
 
 ## Ошибки при запуске TeXLive
 - [! LaTeX Error: File `titling.sty' not found. #115](https://github.com/rstudio/bookdown/issues/115)

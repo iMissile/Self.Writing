@@ -294,6 +294,7 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - COOL! [3 alternatives to a discrete color scale legend in ggplot2](https://www.nsgrantham.com/legend-alternatives-ggplot2)
 - [Using ggplot2, can I insert a break in the axis?](https://stackoverflow.com/questions/7194688/using-ggplot2-can-i-insert-a-break-in-the-axis)
 - [How do I access the data frame that has been passed to ggplot()?](https://stackoverflow.com/questions/45088454/how-do-i-access-the-data-frame-that-has-been-passed-to-ggplot)
+- Slides [Cracking open the internals of ggplot. A {ggtrace} showcase](https://yjunechoe.github.io/ggtrace-talk/#1)
 
 
 ## palettes
@@ -354,6 +355,7 @@ The goal of vlbuildr is to provide an R api for building up vega-lite specs.
 - [trelliscopejs](https://hafen.github.io/trelliscopejs/). Trelliscope is a scalable, flexible, interactive approach to visualizing data.
 - COOL! [a ggplot2 grammar guide](https://evamaerey.github.io/ggplot2_grammar_guide/about)
 - COOL! Для того, чтобы `render_graph` в `DiagrammeR` работал и сохранял граф в файл, необходимо доставлять руками библиотеки `DiagrammeRSVG` и `V8`. Они отсутствуют в явных зависимостях.
+- Хорошая статья с визуализациями. [Tracking covid-19 excess deaths across countries](https://www.economist.com/graphic-detail/coronavirus-excess-deaths-tracker)
 
 
 # font

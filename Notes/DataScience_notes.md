@@ -667,6 +667,8 @@ https://rawgraphs.io/
 https://plot.ly/products/cloud/
 - [What Are Data Visualization Style Guidelines?](https://medium.com/data-visualization-society/style-guidelines-92ebe166addc)
 - COOL! [The Chartmaker Directory](http://chartmaker.visualisingdata.com/)
+- [Visidata. Data exploration at your fingertips](https://www.visidata.org/).
+VisiData is an interactive multitool for tabular data. It combines the clarity of a spreadsheet, the efficiency of the terminal, and the power of Python, into a lightweight utility which can handle millions of rows with ease.
 
 
 ## Анимация
@@ -740,6 +742,7 @@ How to find, display, and use 600 built-in R colors and 2000 palettes and create
 
 
 # RStudio useful plugins/addins/add-ins
+- COOL! [Sharing nice code with addins and IDE tools. Nice clean code made easy](https://luisdva.github.io/rstats/cleaner-code/)
 - COOL! [smouksassi/ggquickeda](https://github.com/smouksassi/ggquickeda). ggplot and summary statistics quick exploration of data
 - COOL! [esquisse](https://github.com/dreamRs/esquisse)
 The purpose of this add-in is to let you explore your data quickly to extract the information they hold. You can only create simple plots, you won't be able to use custom scales and all the power of ggplot2. This is just the start!
@@ -1223,6 +1226,19 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
+# 28.12.2021
+## R
+- COOL! [archive](https://archive.r-lib.org/index.html)
+R bindings to libarchive http://www.libarchive.org. Supports many archives formats, including tar, ZIP, 7-zip, RAR, CAB. Also supports many filters such as gzip, bzip2, compress, lzma, xz and uuencoded files, among others.
+- [idealstan](https://github.com/saudiwin/idealstan) offers item-response theory (IRT) ideal-point estimation for binary, ordinal, counts and continuous responses with time-varying and missing-data inference. Latent space model also included. Full and approximate Bayesian sampling with 'Stan' (www.mc-stan.org).
+- [November 2021: "Top 40" New CRAN Packages](https://rviews.rstudio.com/2021/12/21/november-2021-top-40-new-cran-packages/)
+	- [NetFACS: Network Applications to Facial Communication Data](https://cran.r-project.org/web/packages/NetFACS/index.html)
+	- [shinySelect: A Wrapper of the 'react-select' Library](https://cran.r-project.org/web/packages/shinySelect/index.html). Provides a select control widget for 'Shiny'. It is easily customizable, and one can easily use HTML in the items and KaTeX to type mathematics.
+Functions to analyze and visualize communication data, based on network theory and resampling methods. 
+- COOL! Интерактивно. [GitHut](https://githut.info/). A SMALL PLACE TO DISCOVER LANGUAGES IN GITHUB
+- [jsonify](https://symbolixau.github.io/jsonify/index.html). jsonify converts R objects to JSON.
+- [geomtextpath](https://allancameron.github.io/geomtextpath/). Create curved text in ggplot2
+- COOL! [R Data Science Digest December 2021](https://thedatasciencedigest.substack.com/p/-r-data-science-digest-december-2021)
 
 # 20.12.2021
 ## R
@@ -1237,7 +1253,7 @@ GA_Stat <- f_time_limit(
 ```
 - COOL! [Multi Process Task Queue in 100 Lines of R Code](https://www.tidyverse.org/blog/2019/09/callr-task-q/)
 
-## Math & DS
+## Math & DS & Other
 - Slides. Хорошая презентация с материалами на R. [Тестирование статистических гипотез](https://varmara.github.io/linmodr/04_hypothesis_testing.html)
 - [Marketing Data Science - Case Studies from Airbnb, Lyft, Doordash](https://blogboard.io/blog/data-science-in-marketing-optimization/)
 
