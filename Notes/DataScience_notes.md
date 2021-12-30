@@ -1226,6 +1226,11 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
+# 30.12.2021
+## RStudio
+- COOL! [RStudio Extensions](https://rstudio.github.io/rstudio-extensions/index.html)
+- [RStudio themes](https://r-coder.com/rstudio-themes/)
+
 # 28.12.2021
 ## R
 - COOL! [archive](https://archive.r-lib.org/index.html)
