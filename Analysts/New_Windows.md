@@ -64,6 +64,18 @@
 - [Single Rank vs Dual Rank RAM: Differences & Performance Impact](https://www.cgdirector.com/single-rank-vs-dual-rank-ram/). Sigle Rank рулит.
 - [SINGLE RANK MEMORY VS. DUAL RANK MEMORY (VS QUAD RANK MEMORY)](https://www.oempcworld.com/support/singlevsdualram.html). Generally Single Rank Memory is faster than Dual Rank Memory, in layman’s terms when a computer accesses Single Rank Memory it only has to go around the track once, where are Dual Rank it would have to go around the track twice.
 
+# Command Line
+- [Split long commands in multiple lines through Windows batch file](https://stackoverflow.com/questions/69068/split-long-commands-in-multiple-lines-through-windows-batch-file)
+```
+Example:
+copy file1.txt file2.txt
+would be written as:
+copy file1.txt^
+ file2.txt
+```
+- [Windows Command Prompt: How to pass multi-line string parameters](https://stackoverflow.com/questions/11948025/windows-command-prompt-how-to-pass-multi-line-string-parameters)
+
+
 # Переход на SSD
 - [Рейтинг SSD дисков, выбираем лучший SSD 2021, тест скорости SSD дисков](https://www.nix.ru/hardware-review/ssd-benchmark-performance.html)
 - [Пpoдвинутый тecт cкopocти жecткиx диcкoв - IOmeter](https://servak.com.ua/blog/rukovodstva/prodvinutyj-test-skorosti-zhestkih-diskov-iometer/)
@@ -201,9 +213,37 @@ SP1 можно получить через web: [Service Pack and Update Center]
 http://answers.microsoft.com/en-us/windows/forum/windows_10-security/event-id-10016-runtime-broker/18c291c6-f2a1-4f3c-b4ad-2b7ff59fd9f9?auth=1
 Закрыть
 
+# Wi-Fi
 ## Проблемы с Wi-Fi
 - [Пропадает интернет (Wi-Fi) в Windows 10 после выхода из спящего режима](https://help-wifi.com/reshenie-problem-i-oshibok/propadaet-internet-wi-fi-v-windows-10-posle-vyxoda-iz-spyashhego-rezhima/).
-Это происходит потому, что для экономии, система отключает Wi-Fi адаптер. А после включения, он уже не может нормально работать, поэтому и пропадает интернет. Эта проблема очень часто возникает только при работе от батареи.Все что нужно сделать, это запретить "десятке" отключать беспроводной сетевой адаптер.
+Это происходит потому, что для экономии, система отключает Wi-Fi адаптер. А после включения, он уже не может нормально работать, поэтому и пропадает интернет. Эта проблема очень часто возникает только при работе от батареи. Все что нужно сделать, это запретить "десятке" отключать беспроводной сетевой адаптер.
+
+## Проблемы с провалами в ping в wi-fi
+- [Regular Ping Spikes with Realtek RTL8821CE 802.11ac PCIe Adapter](https://h30434.www3.hp.com/t5/Notebook-Wireless-and-Networking/Regular-Ping-Spikes-with-Realtek-RTL8821CE-802-11ac-PCIe/td-p/7563964)
+И так вот починилось (This will definitely stop your wireless card from searching for nearby networks and updating your signal quality when you're not asking it to- which is what is causing the spikes.):
+```
+C:\Users\Ilya>netsh wlan show settings
+Параметры беспроводной локальной сети
+---------------------
+    Отображать заблокированные сети в списке видимых сетей: Нет
+    Использовать профили групповой политики только в сетях, настраиваемых групповой политикой: Нет
+    Режим размещенной сети разрешен в службе беспроводной сети: да.
+    Разрешить использование общих учетных данных пользователя для проверки подлинности сети: Да
+    Период блокировки: не задан.
+    Логика автоматической конфигурации включена для интерфейса "Беспроводная сеть"
+    Случайный выбор MAC-адресов недоступен на интерфейсе Беспроводная сеть
+C:\Users\Ilya>netsh wlan set autoconfig enabled=no interface="Wireless Network Connection"
+Данный беспроводной интерфейс в системе отсутствует.
+C:\Users\Ilya>netsh wlan set autoconfig enabled=no interface="Беспроводная сеть"
+Состояние автонастройки для интерфейса "Беспроводная сеть": запрещен.
+```
+Но так он потом сам не подключается, надо передергивать...
+- [How can I disable network search only when a specific program is running?](https://superuser.com/questions/1147878/how-can-i-disable-network-search-only-when-a-specific-program-is-running)
+- [How to Perform a Clean Boot in Windows 10 to Troubleshoot Software Conflicts](https://www.tenforums.com/tutorials/41804-perform-clean-boot-windows-10-troubleshoot-software-conflicts.html)
+- [Internet lag spikes and updating wifi driver from realtek](https://answers.microsoft.com/en-us/windows/forum/all/internet-lag-spikes-and-updating-wifi-driver-from/f3b271d6-04a3-4fcc-9371-3b310ed9a2d8)
+- [Виртуальный WiFi в Windows 7](https://sekrasoft.livejournal.com/42591.html)
+- [How to Fix Ping Spikes in Windows 11/10](https://thegeekpage.com/ping-spikes-in-windows-11-10/#Fix_9_-_Disable_Location_Tracking_Feature)
+
 
 ## Outlook
 - [Папки в Outlook отображаются на английском языке](https://www.dmosk.ru/polezno.php?review=outlook-en). 
