@@ -64,6 +64,9 @@
 - [Single Rank vs Dual Rank RAM: Differences & Performance Impact](https://www.cgdirector.com/single-rank-vs-dual-rank-ram/). Sigle Rank рулит.
 - [SINGLE RANK MEMORY VS. DUAL RANK MEMORY (VS QUAD RANK MEMORY)](https://www.oempcworld.com/support/singlevsdualram.html). Generally Single Rank Memory is faster than Dual Rank Memory, in layman’s terms when a computer accesses Single Rank Memory it only has to go around the track once, where are Dual Rank it would have to go around the track twice.
 
+# Hardware
+- [USBefuddled: Untangling the Rat’s Nest of USB-C Standards and Cables](https://tidbits.com/2021/12/03/usbefuddled-untangling-the-rats-nest-of-usb-c-standards-and-cables/)
+
 # Command Line
 - [Split long commands in multiple lines through Windows batch file](https://stackoverflow.com/questions/69068/split-long-commands-in-multiple-lines-through-windows-batch-file)
 ```
