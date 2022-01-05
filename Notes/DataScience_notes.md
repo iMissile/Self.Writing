@@ -227,6 +227,8 @@ This is a list of R developers and advocates on Github. This is to help new come
 	- [Source code for Kabacoff, R. R in Action (3rd edition). Manning: Boca Raton, FL.](https://github.com/Rkabacoff/RiA3)
 - [Scientific Visualization: Python + Matplotlib](https://github.com/rougier/scientific-visualization-book). An open access book on scientific visualization using python and matplotlib
 - COOL! [The Hitchhiker's Guide to Responsible Machine Learning](https://betaandbit.github.io/RML/#p=1)
+- COOL! [Causal Inference: The Mixtape](https://mixtape.scunning.com/index.html)
+- [Engineering Production-Grade Shiny Apps](https://engineering-shiny.org/index.html) by Colin Fay, Sébastien Rochette, Vincent Guyader and Cervan Girard
 
 
 # Articles
@@ -1226,6 +1228,17 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
+# 05.01.2021
+## Shiny
+- [Winston Chang | Making Shiny apps faster with caching | RStudio](https://www.youtube.com/watch?v=diZ4Sdn7d0Q)
+- [Engineering Production-Grade Shiny Apps](https://engineering-shiny.org/index.html) by Colin Fay, Sébastien Rochette, Vincent Guyader and Cervan Girard
+	- [16 Optimizing {shiny} Code](https://engineering-shiny.org/optimizing-shiny-code.html)
+- [Mastering Shiny](https://mastering-shiny.org/index.html)
+	- [23 Performance](https://mastering-shiny.org/performance.html)
+- [4 Tips to Make Your Shiny Dashboard Faster](https://www.rstudio.com/blog/4-tips-to-make-your-shiny-dashboard-faster/)
+- [Speeding Up R Shiny – The Definitive Guide](https://appsilon.com/speeding-up-r-shiny/)
+
+
 # 30.12.2021
 ## RStudio
 - COOL! [RStudio Extensions](https://rstudio.github.io/rstudio-extensions/index.html)
@@ -1261,6 +1274,7 @@ GA_Stat <- f_time_limit(
 ## Math & DS & Other
 - Slides. Хорошая презентация с материалами на R. [Тестирование статистических гипотез](https://varmara.github.io/linmodr/04_hypothesis_testing.html)
 - [Marketing Data Science - Case Studies from Airbnb, Lyft, Doordash](https://blogboard.io/blog/data-science-in-marketing-optimization/)
+- COOL! [A command-line tool and library for generating regular expressions from user-provided test cases](https://github.com/pemistahl/grex)
 
 ## Shiny
 - [The Basics of Shiny Apps](https://data-science-master.github.io/lectures/06_shiny/06_basic_shiny.html)
