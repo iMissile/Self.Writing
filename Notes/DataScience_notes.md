@@ -4285,6 +4285,7 @@ Import data from 'Excel' binary (.xlsb) workbooks into R.
 
 ## Rconf 2021
 - [Search RStudio Conference #rstudioglobal Tweets](http://apps.machlis.com/shiny/rstudioglobal/)
+- Slides. [Marcus Adams - Putting a GMP Shiny App into Prod](https://github.com/adamsma/the_app_we_need)
 
 ## Rconf 2019
 - [Links to slides from rstudio::conf 2019](https://github.com/kbroman/RStudioConf2019Slides)
