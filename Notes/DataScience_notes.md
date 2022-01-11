@@ -229,6 +229,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 - COOL! [The Hitchhiker's Guide to Responsible Machine Learning](https://betaandbit.github.io/RML/#p=1)
 - COOL! [Causal Inference: The Mixtape](https://mixtape.scunning.com/index.html)
 - [Engineering Production-Grade Shiny Apps](https://engineering-shiny.org/index.html) by Colin Fay, Sébastien Rochette, Vincent Guyader and Cervan Girard
+- [Apache Arrow R Cookbook](https://arrow.apache.org/cookbook/r/index.html)
 
 
 # Articles
@@ -1228,7 +1229,22 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
-# 05.01.2021
+# 10.01.2022
+## git
+- [GitFlow considered harmful](https://www.endoflineblog.com/gitflow-considered-harmful)
+
+## R
+## time-series
+- COOL! [Нестандартная кластеризация, часть 3: приёмы и метрики для кластеризации временных рядов](https://habr.com/ru/post/334220/)
+
+## DS
+- [An Introduction to Categorical Data Analysis](http://users.stat.ufl.edu/~aa/) by Alan Agresti, Distinguished Professor Emeritus
+- [Variable selection using genetic algorithm](https://tengkuhanis.netlify.app/post/variable-selection-using-genetic-algorithm/)
+- Khan Academy. [Statistics and probability](https://www.khanacademy.org/math/statistics-probability)
+- article. [The Science of Visual Data Communication: What Works](https://journals.sagepub.com/stoken/default+domain/10.1177%2F15291006211051956-FREE/full#_i55)
+- COOL! Learning. These notes accompany the Stanford CS class CS231n: [Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io/).
+
+# 05.01.2022
 ## Shiny
 - [Winston Chang | Making Shiny apps faster with caching | RStudio](https://www.youtube.com/watch?v=diZ4Sdn7d0Q)
 - [Engineering Production-Grade Shiny Apps](https://engineering-shiny.org/index.html) by Colin Fay, Sébastien Rochette, Vincent Guyader and Cervan Girard
@@ -2465,7 +2481,6 @@ Find similarities between texts using the Smith-Waterman algorithm.
 - [Alison Hill blog](https://alison.rbind.io/). Data Scientist & Professional Educator @ RStudio
 - [Say Goodbye to "Good Taste"](https://www.data-imaginist.com/2021/say-goodbye-to-good-taste/). package announcement ggfx visualization
 - [FLEXTABLE GALLERY](https://ardata-fr.github.io/flextable-gallery/gallery/). Start using the Gallery to discover {flextable} solutions and learn from others. This site lists examples developed by R users in the community.
-- [Slides and hands-on codes for my talk "ggplot Wizardry: My Favorite Tricks and Secrets for Beautiful Plots in R"](https://github.com/z3tt/outlierconf2021) at the 1st OutlierConf, February 4–7 2021.
 - [R Data Science Digest: April 2021](https://thedatasciencekernel.com/2021/03/31/r-data-science-digest-april-2021/)
 
 # 02.04.2021
@@ -4286,6 +4301,8 @@ Import data from 'Excel' binary (.xlsb) workbooks into R.
 ## Rconf 2021
 - [Search RStudio Conference #rstudioglobal Tweets](http://apps.machlis.com/shiny/rstudioglobal/)
 - Slides. [Marcus Adams - Putting a GMP Shiny App into Prod](https://github.com/adamsma/the_app_we_need)
+- [Slides and hands-on codes for my talk "ggplot Wizardry: My Favorite Tricks and Secrets for Beautiful Plots in R"](https://github.com/z3tt/outlierconf2021) at the 1st OutlierConf, February 4–7 2021.
+
 
 ## Rconf 2019
 - [Links to slides from rstudio::conf 2019](https://github.com/kbroman/RStudioConf2019Slides)

@@ -386,6 +386,17 @@ Step 4: Reopen Steam and log in, then point Steam to your new directory and veri
 	- [Steam Shortcut Generator - Automatically generate shortcuts for all installed Steam games!](https://www.reddit.com/r/Steam/comments/g26g0g/steam_shortcut_generator_automatically_generate/). Python [source](https://github.com/JeeZeh/steam-shortcut-generator)
 	- [How do I add start menu items to a Steam game after the installation?](https://gaming.stackexchange.com/questions/52485/how-do-i-add-start-menu-items-to-a-steam-game-after-the-installation)
 	- [bernstein82/SteamShortcutCreator.ps1](https://gist.github.com/bernstein82/f0e14a3d38ed1c3ba36b)
+- [Need for Speed Most Wanted PC Fullscreen](https://answers.ea.com/t5/Need-for-Speed-Most-Wanted/Need-for-Speed-Most-Wanted-PC-Fullscreen/td-p/5375272)
+```
+Slight correction to a previous answer. And if you tab out of this one and lose full screen, hit alt enter and you're back in full screen
+1. Open up the launcher
+2. Click on NFS:MW but do not launch the game
+3. Click on Settings [The Gear Icon]
+4. Go to "Game Properties"
+5. Click on "Advance Launch Settings"
+6. Copy and Paste into the bar " -fullscreen "
+```
+
 
 # Нужные утилиты
 - [1Password]()

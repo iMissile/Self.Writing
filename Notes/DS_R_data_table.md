@@ -414,3 +414,5 @@ dt[eval(as.symbol(name))< limit]
 	- [Filter data table by dynamic column name](https://stackoverflow.com/questions/29564002/filter-data-table-by-dynamic-column-name)
 - [NSE Functions with oshka](https://cran.r-project.org/web/packages/oshka/vignettes/nse-fun.html)
 
+## MacOS
+- COOL! [R data.table and Apple M1 installation on Big Sur supporting openmp multithreading](https://investcookies.ru/post/datatable_m1/data_table_arm/). Как обойти кривизну сборки OpenMP по умолчанию.
