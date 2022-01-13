@@ -1229,20 +1229,37 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
+
+
 # 10.01.2022
-## git
+## Bayes
+- [Teaching and Learning Bayesian Statistics with {bayesrules}](bit.ly/dogucu-talks)
+- Это только часть, там есть продолжение.[Bayesian power analysis: Part I. Prepare to reject  with simulation.](https://solomonkurz.netlify.app/post/bayesian-power-analysis-part-i/)
+- [Notes on the Bayesian cumulative probit](https://solomonkurz.netlify.app/post/2021-12-29-notes-on-the-bayesian-cumulative-probit/)
+
+## git & *nix
 - [GitFlow considered harmful](https://www.endoflineblog.com/gitflow-considered-harmful)
+- [crontab guru](https://crontab.guru/). The quick and simple editor for cron schedule expressions by Cronitor
 
 ## R
+- [R Data Science Digest January 2022](https://thedatasciencedigest.substack.com/p/r-data-science-digest-january-2022). A thematic list of R posts, packages 
+and tools that were popular in the last month
+- [Image Dithering in R](https://www.sumsar.net/blog/2019/01/image-dithering-in-r/)
+- [Introducing R for Saturn Cloud](https://saturncloud.io/blog/introducing-r/)
+- COOL! [How to convert a list consisting of vector of different lengths to a usable data frame in R?](https://stackoverflow.com/questions/15201305/how-to-convert-a-list-consisting-of-vector-of-different-lengths-to-a-usable-data)
+- [Using the tidyverse with Databases - Part I](https://sciencificity-blog.netlify.app/posts/2020-12-12-using-the-tidyverse-with-databases/). You don’t need to be a SQL expert to work with Databases through R
+
 ## time-series
 - COOL! [Нестандартная кластеризация, часть 3: приёмы и метрики для кластеризации временных рядов](https://habr.com/ru/post/334220/)
 
-## DS
+## DS & ML
 - [An Introduction to Categorical Data Analysis](http://users.stat.ufl.edu/~aa/) by Alan Agresti, Distinguished Professor Emeritus
 - [Variable selection using genetic algorithm](https://tengkuhanis.netlify.app/post/variable-selection-using-genetic-algorithm/)
 - Khan Academy. [Statistics and probability](https://www.khanacademy.org/math/statistics-probability)
 - article. [The Science of Visual Data Communication: What Works](https://journals.sagepub.com/stoken/default+domain/10.1177%2F15291006211051956-FREE/full#_i55)
 - COOL! Learning. These notes accompany the Stanford CS class CS231n: [Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io/).
+- COOL! Отличный туториал визуальный. [Exploring Histograms, an essay by Aran Lunzer and Amelia McNamara](https://tinlizzie.org/histograms/)
+- COOL! Отличная сводная статья. [Model evaluation, model selection, and algorithm selection in machine learning](https://sebastianraschka.com/blog/2016/model-evaluation-selection-part3.html#the-law-of-parsimony)
 
 # 05.01.2022
 ## Shiny
@@ -1253,6 +1270,8 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 	- [23 Performance](https://mastering-shiny.org/performance.html)
 - [4 Tips to Make Your Shiny Dashboard Faster](https://www.rstudio.com/blog/4-tips-to-make-your-shiny-dashboard-faster/)
 - [Speeding Up R Shiny – The Definitive Guide](https://appsilon.com/speeding-up-r-shiny/)
+- COOL! [Using databases with Shiny](https://emilyriederer.netlify.app/post/shiny-db/)
+- COOL! [Theming Shiny & R Markdown with {thematic} & {bslib}](https://talks.cpsievert.me/20201112/#1) by Carson Sievert, Software Engineer @ RStudio
 
 
 # 30.12.2021
@@ -1913,7 +1932,6 @@ A quick introduction to 10 basic graph algorithms with examples and visualisatio
 ## R
 - [rmonad](https://github.com/arendsee/rmonad)
 Chain monadic sequences into stateful, branching pipelines. As nodes in the pipeline are run, they are merged into a graph of all past operations. The resulting structure can be computed on to access not only the final results, but also node documentation, intermediate data, performance stats, and any raised messages, warnings or errors. rmonad intercepts all exceptions, which allows for pure error handling.
-- [Teaching and Learning Bayesian Statistics with {bayesrules}](bit.ly/dogucu-talks)
 
 # 08.07.2021
 ## UseR 2021!
