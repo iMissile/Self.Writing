@@ -1229,7 +1229,27 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
+# 17.01.2022
+## R
+- [How can I read email messages using R](https://stackoverflow.com/questions/62215990/how-can-i-read-email-messages-using-r)
+- [mRpostman](https://allanvc.github.io/mRpostman/). An IMAP Client for R
+- [The curl package: a modern R interface to libcurl](https://cran.r-project.org/web/packages/curl/vignettes/intro.html)
+- [Reading email](https://everything.curl.dev/usingcurl/reademail)
+- [CURL converter](https://curlconverter.com/). Convert curl commands to Python, JavaScript, PHP, R, Go, Rust, Elixir, Java, MATLAB, Ansible URI, Strest, Dart or JSON
 
+Overview
+- Uber has open-sourced over a dozen of ML projects:
+	1. Ludwig, low-code ML
+	2. Horovod, distributed training
+	3. Pyro, probabilistic programming
+	4. Manifold, debugging
+	5. This week, @Uber released a new version of Orbit for time-series.
+
+## RMarkdown
+- Неплохой компактный мануал. [Rmd Syntax](https://siobhonlegan.com/bioinfo-phylo/rmd-syntax.html)
+	
+## R conference
+- [New York R Conference](https://rstats.ai/nyr/)
 
 # 10.01.2022
 ## Bayes
@@ -1260,6 +1280,9 @@ and tools that were popular in the last month
 - COOL! Learning. These notes accompany the Stanford CS class CS231n: [Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io/).
 - COOL! Отличный туториал визуальный. [Exploring Histograms, an essay by Aran Lunzer and Amelia McNamara](https://tinlizzie.org/histograms/)
 - COOL! Отличная сводная статья. [Model evaluation, model selection, and algorithm selection in machine learning](https://sebastianraschka.com/blog/2016/model-evaluation-selection-part3.html#the-law-of-parsimony)
+- COOL! [NIM. Efficient, expressive, elegant](https://nim-lang.org/)
+Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula.
+- [Modern browsers support 140 named colors, which are listed below. Use them in your HTML and CSS by name, Hex color code or RGB value.](https://htmlcolorcodes.com/color-names/)
 
 # 05.01.2022
 ## Shiny
@@ -1272,6 +1295,7 @@ and tools that were popular in the last month
 - [Speeding Up R Shiny – The Definitive Guide](https://appsilon.com/speeding-up-r-shiny/)
 - COOL! [Using databases with Shiny](https://emilyriederer.netlify.app/post/shiny-db/)
 - COOL! [Theming Shiny & R Markdown with {thematic} & {bslib}](https://talks.cpsievert.me/20201112/#1) by Carson Sievert, Software Engineer @ RStudio
+- COOL! [Top 7 Best R Shiny Books and Courses That Are Completely Free](https://appsilon.com/best-r-shiny-books-and-courses/)
 
 
 # 30.12.2021

@@ -25,6 +25,12 @@ Windows PowerShell update
 foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
 
+# 18.01.2022
+- [Python bytecode explained](https://github.com/MoserMichael/pyasmtool/blob/master/bytecode_disasm.md)
+- [Why I Use Nim instead of Python for Data Processing](https://benjamindlee.com/posts/2021/why-i-use-nim-instead-of-python-for-data-processing/)
+- COOL! [NIM. Efficient, expressive, elegant](https://nim-lang.org/)
+Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula.
+
 # 10.01.2022
 - [Три метода Pandas, о которых вы, возможно, не знали](https://habr.com/ru/company/ruvds/blog/479276/)
 - COOL! Разобрана масса вариантов, сделан тайминг! [How do I select rows from a DataFrame based on column values?](https://stackoverflow.com/questions/17071871/how-do-i-select-rows-from-a-dataframe-based-on-column-values)

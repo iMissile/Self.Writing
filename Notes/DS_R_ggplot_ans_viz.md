@@ -295,6 +295,8 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - [Using ggplot2, can I insert a break in the axis?](https://stackoverflow.com/questions/7194688/using-ggplot2-can-i-insert-a-break-in-the-axis)
 - [How do I access the data frame that has been passed to ggplot()?](https://stackoverflow.com/questions/45088454/how-do-i-access-the-data-frame-that-has-been-passed-to-ggplot)
 - Slides [Cracking open the internals of ggplot. A {ggtrace} showcase](https://yjunechoe.github.io/ggtrace-talk/#1)
+- COOL! [Recreating the New York Times COVID-19 Spiral Graph](https://bydata.github.io/nyt-corona-spiral-chart/)
+- [ggplot: How to increase spacing between faceted plots?](https://stackoverflow.com/questions/3681647/ggplot-how-to-increase-spacing-between-faceted-plots)
 
 
 ## palettes
