@@ -236,6 +236,12 @@ and to x[,.SD,.SDcols=cols].
 - [Using variable in data.table group by clause](https://stackoverflow.com/questions/31600666/using-variable-in-data-table-group-by-clause)
 - [Summarise data.table when “by” grouping variables stored as vector of strings {duplicate}](https://stackoverflow.com/questions/62601509/summarise-data-table-when-by-grouping-variables-stored-as-vector-of-strings). !! Instead of `.(`, here we can use `c(`
 - [Use a character vector in the `by` argument](https://stackoverflow.com/questions/48442422/use-a-character-vector-in-the-by-argument).
+```
+From ?data.table in the by section it says that by accepts:
+  - a single character string containing comma separated column names (where spaces are significant since column names may contain spaces
+even at the start or end): e.g., DT[, sum(a), by="x,y,z"]
+  - a character vector of column names: e.g., DT[, sum(a), by=c("x", "y")]
+```
 - [реализация точечной функции `. ()` в пакете data.table](https://issue.life/questions/52312977)
 - аналог unnest в `data.table`:
 ```
@@ -333,12 +339,14 @@ flights_tb %>%
 - [R - slow performance in creating lots of data.table objects](https://stackoverflow.com/questions/28203809/r-slow-performance-in-creating-lots-of-data-table-objects)
 - [names(dt) issue](https://github.com/Rdatatable/data.table/issues/5079) When we store the column names on to a variable, e.g., DT_n = names(DT), and then add/update/delete column(s) by reference. It would also modify DT_n, unless we do copy(names(DT)). https://cloud.r-project.org/web/packages/data.table/vignettes/datatable-reference-semantics.html
 - COOL! [Understanding exactly when a data.table is a reference to (vs a copy of) another data.table](https://stackoverflow.com/questions/10225098/understanding-exactly-when-a-data-table-is-a-reference-to-vs-a-copy-of-another)
+- COOL! [Should nafill replace NaN values? #4020 {Closed}](https://github.com/Rdatatable/data.table/issues/4020). Решено положительно в [nafill gains nan argument #4025](https://github.com/Rdatatable/data.table/pull/4025)
 
 
 ## data.table joins
 - COOL! [R data.table: update-by-reference joins](https://r-critique.com/r_datatable_update_by_reference_joins)
 - [nacnudus/data.table-joins.R](https://gist.github.com/nacnudus/ef3b22b79164bbf9c0ebafbf558f22a0) How to do joins with data.table
 - [How to join (merge) data frames (inner, outer, left, right)?](https://jangorecki.github.io/blog/2015-12-11/Solve-common-R-problems-efficiently-with-data.table.html)
+- [R data.table Joins](https://medium.com/analytics-vidhya/r-data-table-joins-48f00b46ce29)
 - [R Tutorial: Data.Table](https://www.dezyre.com/data-science-in-r-programming-tutorial/r-data-table-tutorial)
 - [R – Data.Table Rolling Joins](https://gormanalysis.com/r-data-table-rolling-joins/)
 - COOL! [Understanding data.table Rolling Joins](https://r-norberg.blogspot.com/2016/06/understanding-datatable-rolling-joins.html)
