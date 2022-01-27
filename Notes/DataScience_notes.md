@@ -6,6 +6,7 @@
 	- [Online SQL formatter](https://sql-formatter.online/options/formatting)
 	- [Poor Man's T-SQL Formatter](https://poorsql.com/)
 - [Различные онлайн инструменты для проверки и преобразования](https://www.danstools.com/)
+- [5 Best Free Tools to Monitor Website Changes](https://www.hongkiat.com/blog/detect-website-change-notification/)
 - [PDFsam Basic](https://pdfsam.org/). PDFsam Basic is our free and open source desktop application to split, merge, extract pages, rotate and mix PDF files
 - [Телеграмм бот «Telegram Proxy (SOCKS5) Bot»](https://ru.telegram-store.com/catalog/bots/proxy_socks5_bot/)
 https://tmall.aliexpress.com/item/Edifier-W830BT-1/1000005465785.html
@@ -1229,6 +1230,17 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
+# 25.01.2022
+## Apache Arrow
+- [Apache Arrow R 6.0.0 Release](https://arrow.apache.org/blog/2021/11/08/r-6.0.0/)
+- [Binding Apache Arrow to R](https://blog.djnavarro.net/posts/2022-01-18_binding-arrow-to-r/)
+
+## R
+- [How to read files from a UNC-specified directory in R?](https://stackoverflow.com/questions/18570102/how-to-read-files-from-a-unc-specified-directory-in-r)
+- COOL! [Effectively Deploying and Scaling Shiny Apps with ShinyProxy, Traefik and Docker Swarm](https://www.databentobox.com/2020/05/31/shinyproxy-with-docker-swarm/)
+- [There is pmin and pmax each taking na.rm, why no psum?](https://stackoverflow.com/questions/13123638/there-is-pmin-and-pmax-each-taking-na-rm-why-no-psum)
+- [Using `:=` in data.table to sum the values of two columns in R, ignoring NAs](https://stackoverflow.com/questions/13106645/using-in-data-table-to-sum-the-values-of-two-columns-in-r-ignoring-nas)
+
 # 17.01.2022
 ## R
 - [How can I read email messages using R](https://stackoverflow.com/questions/62215990/how-can-i-read-email-messages-using-r)
@@ -1250,6 +1262,8 @@ Overview
 	
 ## R conference
 - [New York R Conference](https://rstats.ai/nyr/)
+## UseR! 2021
+- [sfnetworks: Tidy Geospatial Networks in R](https://sfnetworks.github.io/useR2021/slides#1)
 
 # 10.01.2022
 ## Bayes
@@ -1283,6 +1297,7 @@ and tools that were popular in the last month
 - COOL! [NIM. Efficient, expressive, elegant](https://nim-lang.org/)
 Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula.
 - [Modern browsers support 140 named colors, which are listed below. Use them in your HTML and CSS by name, Hex color code or RGB value.](https://htmlcolorcodes.com/color-names/)
+- [Principles of training multi-layer neural network using backpropagation](https://home.agh.edu.pl/~vlsi/AI/backp_t_en/backprop.html	)
 
 # 05.01.2022
 ## Shiny
@@ -1296,6 +1311,10 @@ Nim is a statically typed compiled systems programming language. It combines suc
 - COOL! [Using databases with Shiny](https://emilyriederer.netlify.app/post/shiny-db/)
 - COOL! [Theming Shiny & R Markdown with {thematic} & {bslib}](https://talks.cpsievert.me/20201112/#1) by Carson Sievert, Software Engineer @ RStudio
 - COOL! [Top 7 Best R Shiny Books and Courses That Are Completely Free](https://appsilon.com/best-r-shiny-books-and-courses/)
+
+## Debugging Shiny
+- [Debugging Shiny applications](https://shiny.rstudio.com/articles/debugging.html)
+- [A little trick for debugging Shiny](https://rtask.thinkr.fr/a-little-trick-for-debugging-shiny/)
 
 
 # 30.12.2021
@@ -1378,9 +1397,6 @@ GA_Stat <- f_time_limit(
 Ordination methods, diversity analysis and other functions for community and vegetation ecologists.
 К вопросу "допустим, у меня есть какое-то множество точек с определенной мерой расстояний между ними. как это добро можно визуализировать в двумерном scatter plot графике?". Можно сделать mds, в пакете vegan есть, а затем ggplotом первые главные координаты визуализировать.
 - [CSV Conf 2021 "Revealing Room for Improvement in Accessibility within a Social Media Data Visualization Learning Community."](https://github.com/spcanelon/csvConf2021)
-
-## UseR! 2021
-- [sfnetworks: Tidy Geospatial Networks in R](https://sfnetworks.github.io/useR2021/slides#1)
 
 # 07.12.2021
 ## R
@@ -1535,7 +1551,6 @@ extrafont::font_import()
 ## ML & DS
 - [MLJAR-supervised](https://github.com/mljar/mljar-supervised) Automated Machine Learning Pipeline with Feature Engineering and Hyper-Parameters Tuning
 - [R and Python: & ! |](https://bradweiner.info/post/r-and-python-no-longer-an-or-statement/). Solving this debate once and for all
-- [Apache Arrow R 6.0.0 Release](https://arrow.apache.org/blog/2021/11/08/r-6.0.0/)
 - COOL! [CUE Configure Unify Execute](https://cuelang.org) The new home of the CUE language! Validate and define text-based and dynamic configuration
 - [Start Asking Your Data 'Why?' - A Gentle Intro To Causal Inference (Part 1/4)](https://elzurdo.github.io/2021/09/29/start_ask_why_part1.html)
 - COOL! [Random forest, Shapley values and multicollinearity](https://huijzer.xyz/posts/shapley/)

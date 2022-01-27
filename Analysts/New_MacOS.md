@@ -174,10 +174,21 @@ https://www.hightechdad.com/2017/02/06/onedrive-sync-issues-how-to-reset-onedriv
 - [Bluetooth]
 	- [How To Fix ‘Bluetooth Not Available’ Mac OS X Problem](http://www.howtoturnitoffandonagain.com/2016/03/01/how-to-fix-bluetooth-not-available-mac-os-x-problem/)
 	- [Fixing a “Bluetooth Not Available” Error on a Mac](http://osxdaily.com/2014/02/17/fix-bluetooth-not-available-error-mac/)
+	
+# Церковнославянские шрифты
 - [Как ввести символ unicode на mac без цифровой клавиатуры?](https://coderoad.ru/48312049/%D0%9A%D0%B0%D0%BA-%D0%B2%D0%B2%D0%B5%D1%81%D1%82%D0%B8-%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB-unicode-%D0%BD%D0%B0-mac-%D0%B1%D0%B5%D0%B7-%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BE%D0%B9-%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D1%8B).
 Сначала убедитесь , что вход Unicode Hex включен в System Preferences > Keyboard > Input Sources
 Он должен появиться в левом поле с другими языковыми клавиатурами. Если ввод Unicode Hex там недоступен, нажмите кнопку + ниже, прокрутите список языков до самого низа и выберите другие, выберите ввод Unicode Hex в поле сведений справа и нажмите кнопку Добавить.
 Теперь ввод Unicode Hex должен быть доступен в строке меню среди других языков, выберите его, и вы сможете ввести unicode символа, удерживая Option во время ввода цифр.
+- [Ирмологион](http://irmologion.ru/)
+	- [Шрифты в кодировке UCS8](http://irmologion.ru/fonts.html#atop)
+
+# Менеджер пакетов
+- [Git is not working after macOS Update (xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools)]().
+The problem is that Xcode Command-line Tools needs to be updated.
+Solution #1
+Go back to your terminal and enter:
+`xcode-select --install`
 
 # Работа с фотографиями в Mac
 - [Как слить фото с камеры на Mac OS X без iPhoto?](https://www.stableit.ru/2012/03/mac-os-x-iphoto.html) Используем "Захват изображений" ('Image Capture')

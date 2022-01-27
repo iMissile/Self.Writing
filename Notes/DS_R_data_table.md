@@ -397,6 +397,7 @@ The way to read this out loud is: "Take DT, subset rows by i, then compute j gro
 - [Joins and conditional matching with data.table](https://aglhurley.rbind.io/2019/02/10/joins-with-data-table/)
 - [R Data Table - join but filter with update](https://stackoverflow.com/questions/46588340/r-data-table-join-but-filter-with-update)
 - [How to exclude one column from data.table OR convert to data.table to MTS](https://stackoverflow.com/questions/12046079/how-to-exclude-one-column-from-data-table-or-convert-to-data-table-to-mts). `dt[,-1,with=FALSE]`
+- [Why is allow.cartesian required at times when when joining data.tables with duplicate keys?](https://stackoverflow.com/questions/23087358/why-is-allow-cartesian-required-at-times-when-when-joining-data-tables-with-dupl)
 
 
 ## data.table lookup

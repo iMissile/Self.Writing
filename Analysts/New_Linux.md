@@ -47,6 +47,11 @@ The second -exec renames the zipped files to the original names
 cp- Используем команду `cp` для ручного управления процессом копирования. [`cp -irv ./<source>/* ./<destination>`](https://explainshell.com/explain?cmd=cp+-irv)
 - COOL! [Recursively copy files from one directory to another](https://askubuntu.com/questions/802238/recursively-copy-files-from-one-directory-to-another). Тут подробно разбирается, почему не получится напрямик cp испоользовать.
 	- [`find /media/MyBook/Music -type f -iname '*.mp3' -exec  cp -at /media/HDD/Music {} +`](https://explainshell.com/explain?cmd=find+%2Fmedia%2FMyBook%2FMusic+-type+f+-iname+%27*.mp3%27+-exec+cp+-at+%2Fmedia%2FHDD%2FMusic+%7B%7D+%2B)
+	
+## регулярки по файлам
+- [How to remove lines from the text file containing specific words through terminal?](https://askubuntu.com/questions/354993/how-to-remove-lines-from-the-text-file-containing-specific-words-through-termina). grep/sed/awk approach
+- [Is \d not supported by grep's basic expressions?](https://stackoverflow.com/questions/6901171/is-d-not-supported-by-greps-basic-expressions)
+
 
 ## права доступа
 - [How can I check the permissions of a specific group?](https://askubuntu.com/questions/162417/how-can-i-check-the-permissions-of-a-specific-group)
