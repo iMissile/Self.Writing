@@ -2901,6 +2901,7 @@ Unit: milliseconds
 - [tidytrees](https://github.com/bakaburg1/tidytrees): a package for a tidy representation of decision trees.
 - COOL! [USING METAFLOW TO MAKE MODEL TUNING LESS PAINFUL](https://mdneuzerling.com/post/using-metaflow-to-make-model-tuning-less-painful/)
 - [ggdist: Visualizations of distributions and uncertainty](https://mjskay.github.io/ggdist/)
+- [Splitting a large data frame into smaller segments](https://stackoverflow.com/questions/14164525/splitting-a-large-data-frame-into-smaller-segments)
 
 # 24.01.2021
 ## R
