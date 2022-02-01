@@ -1230,6 +1230,17 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
+# 31.01.2022
+## R
+- COOL! [How to use column numbers in the dplyr filter function](https://stackoverflow.com/questions/58795821/how-to-use-column-numbers-in-the-dplyr-filter-function)
+`df %>% filter_at(c(1,3,4), all_vars(.==0))`
+- [Filter by column index number data.table R](https://stackoverflow.com/questions/67331129/filter-by-column-index-number-data-table-r)
+- [Running GO code from R](https://community.rstudio.com/t/running-go-code-from-r/2340)
+- COOL! [Tidy Data Tutor helps you visualize data analysis pipelines](https://tidydatatutor.com/)
+
+## timeseries
+- [Plot time series from a tsibble](https://fabletools.tidyverts.org/reference/autoplot.tbl_ts.html)
+
 # 25.01.2022
 ## Apache Arrow
 - [Apache Arrow R 6.0.0 Release](https://arrow.apache.org/blog/2021/11/08/r-6.0.0/)
