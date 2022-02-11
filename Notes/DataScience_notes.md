@@ -673,6 +673,7 @@ https://plot.ly/products/cloud/
 - COOL! [The Chartmaker Directory](http://chartmaker.visualisingdata.com/)
 - [Visidata. Data exploration at your fingertips](https://www.visidata.org/).
 VisiData is an interactive multitool for tabular data. It combines the clarity of a spreadsheet, the efficiency of the terminal, and the power of Python, into a lightweight utility which can handle millions of rows with ease.
+- COOL! [THE ISSUE WITH PIE CHART. Bad by definition](https://www.data-to-viz.com/caveat/pie.html)
 
 
 ## Анимация
@@ -957,9 +958,6 @@ Rscript -e "options(keep.source=TRUE); p <- profvis::profvis({ profvis::pause(0.
 	- [How to debug (placing break point,etc) an installed R package in RStudio?](https://stackoverflow.com/questions/22000969/how-to-debug-placing-break-point-etc-an-installed-r-package-in-rstudio)
 	- [How do I create an object in the Global environment from a function](https://stat.ethz.ch/pipermail/r-help/2006-December/122284.html).
 `assign("b", value, envir=globalenv())`
-- COOL! [R Debugging - Cannot see which line generates warning message (Shiny)](https://stackoverflow.com/questions/29132110/r-debugging-cannot-see-which-line-generates-warning-message-shiny).
-You can tell R to treat warnings as errors with `options(warn=2)`. ...
-First turn on displaying warnings using the command `options(warn=1)` Then, you could run it by clicking on the "Source" or "Source with Echo" button (see image below). You can see the error/warning messages when any line with errors/warnings is executed.
 - [RStudio enters debug mode for every function error - how can I stop it?](https://stackoverflow.com/questions/29018842/rstudio-enters-debug-mode-for-every-function-error-how-can-i-stop-it)
 - [Debugging R code using R, RStudio and wrapper functions](https://www.youtube.com/watch?v=-P9UzQuJSH8&feature=youtu.be&list=PLAKBwakacHbQT51nPHex1on3YNCCmggZA)
 - [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
@@ -982,8 +980,6 @@ Debugger for R functions, with code display, graceful error recovery, line-numbe
 - [Using the Bizarro Pipe to Debug magrittr Pipelines in R](http://www.win-vector.com/blog/2017/01/using-the-bizarro-pipe-to-debug-magrittr-pipelines-in-r/)
 - [Debugging R Functions](http://seananderson.ca/2013/08/23/debugging-r.html)
 - [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
-- [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)` Showcase Mode!!!
-- Презентация [Debugging with Shiny](http://rpubs.com/jmcphers/149638)
 - COOL [How-to go parallel in R – basics + tips](http://gforge.se/2015/02/how-to-go-parallel-in-r-basics-tips/). См. п. "Debugging"
 Debugging is especially hard when working in a parallelized environment. You cannot simply call browser/cat/print in order to find out what the issue is.
 	- Never use set.seed(), use clusterSetRNGStream() instead, to set the cluster seed if you want reproducible results
@@ -995,21 +991,27 @@ Debugging is especially hard when working in a parallelized environment. You can
 
 ## Debug Shiny
 - [A little trick for debugging Shiny](https://rtask.thinkr.fr/blog/a-little-trick-for-debugging-shiny/)
-- [Debugging Shiny applications](https://shiny.rstudio.com/articles/debugging.html), LAST UPDATED: 30 MAY 2017
-- Статья [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html)
 - Презентация [Debugging with Shiny](http://rpubs.com/jmcphers/149638)
-- [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)`
-Showcase Mode!!!
 - [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)` Showcase Mode!!!
+- COOL! [R Debugging - Cannot see which line generates warning message (Shiny)](https://stackoverflow.com/questions/29132110/r-debugging-cannot-see-which-line-generates-warning-message-shiny).
+You can tell R to treat warnings as errors with `options(warn=2)`. ...
+First turn on displaying warnings using the command `options(warn=1)` Then, you could run it by clicking on the "Source" or "Source with Echo" button (see image below). You can see the error/warning messages when any line with errors/warnings is executed.
 - [showcase display mode for published app in shinyapps.io](http://stackoverflow.com/questions/26291523/showcase-display-mode-for-published-app-in-shinyapps-io)
 You can provide information about your app that Shiny showcase will use by creating a DESCRIPTION file.
 - [Effectively debugging Shiny apps](http://stackoverflow.com/questions/31920286/effectively-debugging-shiny-apps)
 - [Display element ids for debugging Shiny apps](http://blog.mckuhn.de/2016/04/display-element-ids-for-debugging-shiny.html)
+- [A little trick for debugging Shiny](https://rtask.thinkr.fr/a-little-trick-for-debugging-shiny/)
+- [unit testing for shiny reactivity](https://github.com/yonicd/reactor/tree/slides). yonicd.github.io/reactor
 - [Интересный кейс с дебагом от Хадли](https://mastering-shiny.org/action-workflow.html?q=workf#case-study). To demonstrate the basic debugging approach, I’ll show you a little problem I encountered when writing Section 10.1.2. I’ll first show you the basic context, then you’ll see a problem I resolved without interactive debugging tools, a problem that required interactive debugging, and discover a final suprise.
 - COOL! [mitmproxy is a free and open source interactive HTTPS proxy.](https://mitmproxy.org/)
 	- [ropenscilabs/middlechild. R interface to MITM](https://github.com/ropenscilabs/middlechild)
 	- [How To: Use mitmproxy to read and modify HTTPS traffic](https://blog.heckel.xyz/2013/07/01/how-to-use-mitmproxy-to-read-and-modify-https-traffic-of-your-phone/)
 	- [Debugging Mobile Apps with mitmproxy](https://medium.com/sean3z/debugging-mobile-apps-with-mitmproxy-4596e56b3da2)
+- [Scoping rules for Shiny apps](https://shiny.rstudio.com/articles/scoping.html)
+- COOL! [Shiny: Performance tuning with future & promises - Part 1](https://www.eoda.de/en/wissen/blog/shiny-performance-tuning-mit-future-promises-die-theorie)
+- COOL! [{shinytitle}: Change the Browser Tab Title of your Shiny App](https://ashbaldry.github.io/2021-06-17-shinytitle-0-1-0-release/)
+- [Case study: converting a Shiny app to async](https://rstudio.github.io/promises/articles/casestudy.html) by Joe Cheng (joe@rstudio.com)
+
 
 
 ## R as cmd script
@@ -1230,6 +1232,37 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
+# 04.02.2022
+## RSelenium
+- [How to get HTML source of a Web Element in Selenium WebDriver](https://www.browserstack.com/guide/get-html-source-of-web-element-in-selenium-webdriver) `innerHTML/outerHTML`
+- [XPath with multiple conditions](https://stackoverflow.com/questions/10247978/xpath-with-multiple-conditions). `xpath = "//*[@class = 'page-link' and @aria-label]"`
+- [ralger](https://github.com/feddelegrand7/ralger) makes it easy to scrape a website. Built on the shoulders of titans: rvest, xml2.
+- [Simple Easy Beginners Web Scraping in R with {ralger}](https://www.programmingwithr.com/simple-easy-beginners-web-scraping-in-r-with-ralger/)
+
+## R
+- COOL! [mclust](https://cran.r-project.org/web/packages/mclust/index.html): Gaussian Mixture Modelling for Model-Based Clustering, Classification, and Density Estimation
+- COOL! [Binding Apache Arrow to R](https://blog.djnavarro.net/posts/2022-01-18_binding-arrow-to-r/)
+I’ve been learning how to program with Apache Arrow inside R, and also I have been watching the SyFy show “The Magicians” obsessively. For no sensible reason I wrote a blog post that combines these two fixations
+- [Can you make `table` behave as it was a generic function?](https://stackoverflow.com/questions/48526610/can-you-make-table-behave-as-it-was-a-generic-function)
+
+# 02.02.2022
+## timeseries & stat & R
+- [When to log transform a time series before fitting an ARIMA model](https://stats.stackexchange.com/questions/6330/when-to-log-transform-a-time-series-before-fitting-an-arima-model).
+Plot a graph of the data against time. If it looks like the variation increases with the level of the series, take logs. Otherwise model the original data.
+- [Understanding Variance](https://www.investopedia.com/terms/v/variance.asp#:~:text=In%20statistics%2C%20variance%20measures%20variability,values%20in%20the%20data%20set.)
+- COOL! [Time Series Analysis in R Part 2: Time Series Transformations](https://datascienceplus.com/time-series-analysis-in-r-part-2-time-series-transformations/)
+- [ARIMA modelling in fable](https://otexts.com/fpp3/arima-r.html)
+- [forecasting with tsibble and fable](https://community.rstudio.com/t/forecasting-with-tsibble-and-fable/73019/20)
+- [Plot time series from a tsibble](https://fabletools.tidyverts.org/reference/autoplot.tbl_ts.html)
+- [Открытый курс машинного обучения. Тема 9. Анализ временных рядов с помощью Python](https://habr.com/ru/company/ods/blog/327242/)
+- [Seasonal ARIMA with Python](http://www.seanabu.com/2016/03/22/time-series-seasonal-ARIMA-model-in-python/). Time Series Forecasting: Creating a seasonal ARIMA model using Python and Statsmodel
+- [Tidy forecasting in R](https://robjhyndman.com/hyndsight/fable/)
+- [Introducing fable](https://www.mitchelloharawild.com/blog/fable/)
+- [Produce forecasts](https://fabletools.tidyverts.org/reference/forecast.html)
+- [5.1 A tidy forecasting workflow](https://otexts.com/fpp3/a-tidy-forecasting-workflow.html). Тут, похоже, актуально.
+- [`forecast()` documentation: obtaining point forecasts #226 {Closed}](https://github.com/tidyverts/fable/issues/226)
+- COOL! [Orbit: A Python Package for Bayesian Forecasting](https://github.com/uber/orbit)
+
 # 31.01.2022
 ## R
 - COOL! [How to use column numbers in the dplyr filter function](https://stackoverflow.com/questions/58795821/how-to-use-column-numbers-in-the-dplyr-filter-function)
@@ -1237,9 +1270,6 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [Filter by column index number data.table R](https://stackoverflow.com/questions/67331129/filter-by-column-index-number-data-table-r)
 - [Running GO code from R](https://community.rstudio.com/t/running-go-code-from-r/2340)
 - COOL! [Tidy Data Tutor helps you visualize data analysis pipelines](https://tidydatatutor.com/)
-
-## timeseries
-- [Plot time series from a tsibble](https://fabletools.tidyverts.org/reference/autoplot.tbl_ts.html)
 
 # 25.01.2022
 ## Apache Arrow
@@ -1322,10 +1352,6 @@ Nim is a statically typed compiled systems programming language. It combines suc
 - COOL! [Using databases with Shiny](https://emilyriederer.netlify.app/post/shiny-db/)
 - COOL! [Theming Shiny & R Markdown with {thematic} & {bslib}](https://talks.cpsievert.me/20201112/#1) by Carson Sievert, Software Engineer @ RStudio
 - COOL! [Top 7 Best R Shiny Books and Courses That Are Completely Free](https://appsilon.com/best-r-shiny-books-and-courses/)
-
-## Debugging Shiny
-- [Debugging Shiny applications](https://shiny.rstudio.com/articles/debugging.html)
-- [A little trick for debugging Shiny](https://rtask.thinkr.fr/a-little-trick-for-debugging-shiny/)
 
 
 # 30.12.2021
@@ -2515,7 +2541,8 @@ Run renv::restore()
 - [Check ‘Developer Tools’ First To Avoid Heavy-ish Dependencies](https://rud.is/b/2021/04/12/check-developer-tools-first-to-avoid-heavy-ish-dependencies/)
 - [Modeling and Monitoring Epidemic Phenomena](https://surveillance.r-forge.r-project.org/pkgdown/index.html)
 - [Using Github Actions & drat to Deploy R Packages](https://chemospec.org/2021/04/11/p19/)
-- [Using RSelenium to scrape a paginated HTML table](https://guillaumepressiat.github.io/blog/2021/04/RSelenium-paginated-tables)
+- COOL! [Using RSelenium to scrape a paginated HTML table](https://guillaumepressiat.github.io/blog/2021/04/RSelenium-paginated-tables-copie)
+	- https://stackoverflow.com/q/67021563/10527496
 - [LSTM Network in R](https://finnstats.com/index.php/2021/04/11/lstm-network-in-r/)
 
 
@@ -5067,7 +5094,6 @@ The {gtsummary} package provides an elegant and flexible way to create publicati
 # 20.03.2020
 
 ## R
-- COOL! [Shiny: Performance tuning with future & promises - Part 1](https://www.eoda.de/en/wissen/blog/shiny-performance-tuning-mit-future-promises-die-theorie)
 - COOL! [Extended floating point precision in R with Rmpfr](https://statisticaloddsandends.wordpress.com/2020/03/19/extended-floating-point-precision-in-r-with-rmpfr/)
 - COOL! [gmp: Multiple Precision Arithmetic](https://cran.r-project.org/web/packages/gmp/)
 Multiple Precision Arithmetic (big integers and rationals, prime number tests, matrix computation), "arithmetic without limitations" using the C library GMP (GNU Multiple Precision Arithmetic).

@@ -90,6 +90,9 @@ Alluvial plots are similar to sankey diagrams and visualise categorical data ove
 - Условное форматирование меток в ggplot. [How to put ggplot2 ticks labels between dollars?](http://stackoverflow.com/questions/20326946/how-to-put-ggplot2-ticks-labels-between-dollars)
 - [gghalves](https://cran.r-project.org/web/packages/gghalves/readme/README.html) makes it easy to compose your own half-half plots via ggplot2. Think displaying a boxplot next to jittered points, or violin plots side by side with dotplots.
 - COOL! [Streamgraphs in ggplot2 with ggstream](https://r-charts.com/evolution/ggstream/)
+- Проблемы с ggstream. [Error in data.frame(x = full_values$x, y = yy[, iStream * 2], group = as.integer(.group)) : #18 {Open}](https://github.com/davidsjoberg/ggstream/issues/18).
+Ошибка случается здесь: https://github.com/davidsjoberg/ggstream/blob/cfed4bc3d17879b061198f4594397706b6db50f6/R/min_wiggle.R#L120
+`out <- data.frame(x = full_values$x`, выяснил через `debugonce(ggstream:::new_wiggle)`
 - COOL! [ggpage](https://emilhvitfeldt.github.io/ggpage/). ggpage is a package to create pagestyled visualizations of text based data. It uses ggplot2 and final returns are ggplot2 objects
 - COOL! [wilkelab/ungeviz](https://github.com/wilkelab/ungeviz). Tools for visualizing uncertainty with ggplot2
 - COOL! [Practical ggplot2](https://wilkelab.org/practicalgg/)
@@ -297,6 +300,10 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - Slides [Cracking open the internals of ggplot. A {ggtrace} showcase](https://yjunechoe.github.io/ggtrace-talk/#1)
 - COOL! [Recreating the New York Times COVID-19 Spiral Graph](https://bydata.github.io/nyt-corona-spiral-chart/)
 - [ggplot: How to increase spacing between faceted plots?](https://stackoverflow.com/questions/3681647/ggplot-how-to-increase-spacing-between-faceted-plots)
+- Error in (function (filename = "Rplot%03d.png", width = 480, height = 480, : unable to start png() device.
+	- [Unable to initiate png device Rnotebook(https://community.rstudio.com/t/unable-to-initiate-png-device-rntebook/3658)
+	- [Error : Unable to start png() device](https://stackoverflow.com/questions/45113597/error-unable-to-start-png-device?)
+	- [Rstudio Global Changes: show chunk output in console via CLI?](https://stackoverflow.com/questions/48110571/rstudio-global-changes-show-chunk-output-in-console-via-cli)
 
 
 ## palettes
@@ -358,6 +365,7 @@ The goal of vlbuildr is to provide an R api for building up vega-lite specs.
 - COOL! [a ggplot2 grammar guide](https://evamaerey.github.io/ggplot2_grammar_guide/about)
 - COOL! Для того, чтобы `render_graph` в `DiagrammeR` работал и сохранял граф в файл, необходимо доставлять руками библиотеки `DiagrammeRSVG` и `V8`. Они отсутствуют в явных зависимостях.
 - Хорошая статья с визуализациями. [Tracking covid-19 excess deaths across countries](https://www.economist.com/graphic-detail/coronavirus-excess-deaths-tracker)
+- [Waffle chart (square pie) in ggplot2](https://r-charts.com/part-whole/waffle-chart-ggplot2/)
 
 
 # font

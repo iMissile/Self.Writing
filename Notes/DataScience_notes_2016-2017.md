@@ -4994,7 +4994,8 @@ To check whether each string consists of valid UTF-8 byte sequences, call: `all(
 1. Качаем Selenium. Берем `selenium-server-standalone-x.x.x` с сайта [Selenium Downloads](https://www.selenium.dev/downloads/)
 1. Качаем RSelenium: `devtools::install_github("ropensci/RSelenium")`
 1. Качаем WebDriver под установленные версии браузеров, кладем в PATH (проще и лучше рядом с сервером, поскольку драйвера зависят от версий браузеров).
-	- [ChromeDriver - WebDriver for Chrome](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+	- Старый сайт. [ChromeDriver - WebDriver for Chrome](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+	- Новый сайт. [ChromeDriver](https://sites.google.com/chromium.org/driver/)
 	- [Mozilla GeckoDriver](https://github.com/mozilla/geckodriver/releases)
 1. Запускаем Selenuim Server из cmd командой `java -jar selenium-server-standalone-3.141.59.jar `
 1. Запускаем `remDr <- remoteDriver(browserName = "chrome")`, описание здесь:[RSelenium: Driving OS/Browsers local and remote](https://cran.r-project.org/web/packages/RSelenium/vignettes/RSelenium-saucelabs.html). Если оказалась неправильная версия драйвера, убиваем процессы драйверов.
