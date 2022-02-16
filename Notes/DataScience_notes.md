@@ -1232,6 +1232,25 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
+# 14.02.2022
+## R
+- COOL! Joshua Kunst blog. [Data, Code and Visualization](https://jkunst.com/blog/).
+	- [R is the fastest-growing language on StackOverflow](https://blog.revolutionanalytics.com/2015/12/r-is-the-fastest-growing-language-on-stackoverflow.html)
+- gsignal. [R implementation of the Octave signal package](https://github.com/gjmvanboxtel/gsignal)
+- [How can I generate a GUID in R?](https://stackoverflow.com/questions/10492817/how-can-i-generate-a-guid-in-r)
+- [uuid: Tools for Generating and Handling of UUIDs](https://cran.r-project.org/web/packages/uuid/). Tools for generating and handling of UUIDs (Universally Unique Identifiers).
+- [Cryptographic Hashing in R](https://cran.r-project.org/web/packages/openssl/vignettes/crypto_hashing.html)
+
+## GAM
+- [Criteria for choosing a gnls model](https://stackoverflow.com/questions/60108024/criteria-for-choosing-a-gnls-model)
+- Learning! [GAM. Generalized Additive Models](https://m-clark.github.io/generalized-additive-models/application.html)
+- [GENERALISED ADDITIVE MODELS (GAMS)](https://environmentalcomputing.net/statistics/gams/)
+- COOL! [Resources for Learning About and Using GAMs in R](https://github.com/noamross/gam-resources)
+- Slides! [Introduction to Generalized Additive Models with R and mgcv](https://fromthebottomoftheheap.net/slides/gam-intro-webinar-2020/gam-intro.html#1) Gavin Simpson
+1000–1230 CST (1600–1830 UTC) July 30th, 2020. [gavinsimpson/intro-gam-webinar-2020](https://github.com/gavinsimpson/intro-gam-webinar-2020)
+- [The gratia package](https://github.com/noamross/gam-resources) by Gavin Simpson
+
+
 # 04.02.2022
 ## RSelenium
 - [How to get HTML source of a Web Element in Selenium WebDriver](https://www.browserstack.com/guide/get-html-source-of-web-element-in-selenium-webdriver) `innerHTML/outerHTML`
@@ -1241,8 +1260,6 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 
 ## R
 - COOL! [mclust](https://cran.r-project.org/web/packages/mclust/index.html): Gaussian Mixture Modelling for Model-Based Clustering, Classification, and Density Estimation
-- COOL! [Binding Apache Arrow to R](https://blog.djnavarro.net/posts/2022-01-18_binding-arrow-to-r/)
-I’ve been learning how to program with Apache Arrow inside R, and also I have been watching the SyFy show “The Magicians” obsessively. For no sensible reason I wrote a blog post that combines these two fixations
 - [Can you make `table` behave as it was a generic function?](https://stackoverflow.com/questions/48526610/can-you-make-table-behave-as-it-was-a-generic-function)
 
 # 02.02.2022
@@ -1274,7 +1291,14 @@ Plot a graph of the data against time. If it looks like the variation increases 
 # 25.01.2022
 ## Apache Arrow
 - [Apache Arrow R 6.0.0 Release](https://arrow.apache.org/blog/2021/11/08/r-6.0.0/)
-- [Binding Apache Arrow to R](https://blog.djnavarro.net/posts/2022-01-18_binding-arrow-to-r/)
+- COOL! [Binding Apache Arrow to R](https://blog.djnavarro.net/posts/2022-01-18_binding-arrow-to-r/)
+I’ve been learning how to program with Apache Arrow inside R, and also I have been watching the SyFy show “The Magicians” obsessively. For no sensible reason I wrote a blog post that combines these two fixations
+- Чтобы сделать компиляцию под убунтой надо запускать в таком виде: 
+```
+Sys.setenv(ARROW_R_DEV="true")
+Sys.setenv(NOT_CRAN="true")
+```
+
 
 ## R
 - [How to read files from a UNC-specified directory in R?](https://stackoverflow.com/questions/18570102/how-to-read-files-from-a-unc-specified-directory-in-r)
@@ -5399,7 +5423,6 @@ RE2 <https://github.com/google/re2> is a primarily deterministic finite automato
 # 26.02.2020
 ## R
 - COOL! [draw your own plot layout](https://gist.github.com/baptiste/311177e0175f3e9b87caaac9bc41b7ec)
-- COOL! [gghighlight 0.2.0](https://yutani.rbind.io/post/gghighlight-0-2-0/). gghighlight 0.2.0 is on CRAN a while ago. This post briefly introduces the three new features. For basic usages, please refer to “Introduction to gghighlight”.
 - COOL! [RStudio addins, or how to make your coding life easier](https://www.statsandr.com/blog/rstudio-addins-or-how-to-make-your-coding-life-easier/)
 - COOL! [Interactive Webapps with Shiny](https://flor14.github.io/rladies_shiny_meetup_2020/rladies_shiny_2020#1). Florencia D’Andrea (🐦cantoflor_87). Meetup R-Ladies Rcia-Ctes + R en el NEA
 21/02/2020

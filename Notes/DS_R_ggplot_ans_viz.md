@@ -271,7 +271,7 @@ If you just want to prevent two lines from overlapping exactly, there is now a b
 - [15 Tips to Customize lines in ggplot2 with element_line()](https://cmdlinetips.com/2021/05/tips-to-customize-lines-in-ggplot2-with-element_line/)
 - [8 tips to use element_blank() in ggplot2 theme](https://cmdlinetips.com/2021/06/ggplot2-theme-element_blank-tips/)
 - COOL! Как эффективно применить `ggfx` [Better data communication with {ggplot2}, part 2](https://giulia-ruggeri.medium.com/better-data-communication-with-ggplot2-part-2-615a5180ccb)
-- COOL! [gghighlight 0.3.2](https://yutani.rbind.io/post/2021-06-07-gghighlight-032/)
+- COOL! [Plotting background data for groups with ggplot2](https://drsimonj.svbtle.com/plotting-background-data-for-groups-with-ggplot2)
 - [ggsunburst](https://github.com/didacs/ggsunburst). ggsunburst offers a set of tools to plot adjacency diagrams using ggplot2.
 - [grafify](https://grafify-vignettes.netlify.app/) An R package for easy graphs, ANOVAs and post-hoc comparisons
 - [Streetmaps](https://ggplot2tutor.com/tutorials/streetmaps). Create a streetmap of your favorite city with ggplot2 and powerpoint
@@ -304,7 +304,14 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 	- [Unable to initiate png device Rnotebook(https://community.rstudio.com/t/unable-to-initiate-png-device-rntebook/3658)
 	- [Error : Unable to start png() device](https://stackoverflow.com/questions/45113597/error-unable-to-start-png-device?)
 	- [Rstudio Global Changes: show chunk output in console via CLI?](https://stackoverflow.com/questions/48110571/rstudio-global-changes-show-chunk-output-in-console-via-cli)
+- [ggplot2 3.3.0. More control over aesthetic evaluation](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/#more-control-over-aesthetic-evaluation)
 
+## highlighting
+- COOL! [gghighlight 0.3.2](https://yutani.rbind.io/post/2021-06-07-gghighlight-032/)
+	- [Highlighting with ggplot2: The Old School and New School Way](https://www.littlemissdata.com/blog/highlight)
+- COOL! [gghighlight 0.2.0](https://yutani.rbind.io/post/gghighlight-0-2-0/). gghighlight 0.2.0 is on CRAN a while ago. This post briefly introduces the three new features. For basic usages, please refer to “Introduction to gghighlight”.
+- [Anatomy of gghighlight](https://yutani.rbind.io/post/2018-06-03-anatomy-of-gghighlight/)
+- [Highlight a single "bar" in ggplot](https://stackoverflow.com/questions/45820250/highlight-a-single-bar-in-ggplot)
 
 ## palettes
 - COOL! [vankesteren/firatheme](https://github.com/vankesteren/firatheme) a ggplot2 theme with fira font

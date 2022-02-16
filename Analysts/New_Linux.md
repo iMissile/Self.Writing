@@ -38,6 +38,8 @@ The second -exec renames the zipped files to the original names
 [Zip]\[unzip](https://www.computerhope.com/unix/unzip.htm)
 - [12 Useful “df” Commands to Check Disk Space in Linux](https://www.tecmint.com/how-to-check-disk-space-in-linux/)
 - [How do I delete all but 10 newest files in Linux?](https://superuser.com/questions/268344/how-do-i-delete-all-but-10-newest-files-in-linux/268345)
+- [How do I set environment variables?](https://askubuntu.com/questions/730/how-do-i-set-environment-variables). 
+In bash you can set variables like this: `export CATALINA_HOME=/opt/catalina`
 
 ## копирование директорий
 - [Rsync (Remote Sync): 10 Practical Examples of Rsync Command in Linux](https://www.tecmint.com/rsync-local-remote-file-synchronization-commands/)

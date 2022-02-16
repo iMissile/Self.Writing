@@ -1295,7 +1295,6 @@ get_os <- function() {
 - COOL! [Teaching R to New Users - From tapply to the Tidyverse](https://simplystatistics.org/2018/07/12/use-r-keynote-2018/)
 - [No worries! Afterthoughts from UseR 2018](http://smarterpoland.pl/index.php/2018/07/no-worries-afterthoughts-from-user-2018/)
 - [Long Running Tasks With Shiny: Challenges and Solutions](http://blog.fellstat.com/?p=407)
-- [Highlighting with ggplot2: The Old School and New School Way](https://www.littlemissdata.com/blog/highlight)
 - [Tidy evaluation in ggplot2](https://www.tidyverse.org/articles/2018/07/ggplot2-tidy-evaluation/)
 - [EARL CONFERENCE 2018 – THE BEST YET!](https://www.mango-solutions.com/blog/earl-conference-2018-the-best-yet)
 - [Singularity as a software distribution / deployment tool](https://mlampros.github.io/mlampros.github.io/2018/07/26/singularity_containers/)
