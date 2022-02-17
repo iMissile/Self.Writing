@@ -305,6 +305,9 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 	- [Error : Unable to start png() device](https://stackoverflow.com/questions/45113597/error-unable-to-start-png-device?)
 	- [Rstudio Global Changes: show chunk output in console via CLI?](https://stackoverflow.com/questions/48110571/rstudio-global-changes-show-chunk-output-in-console-via-cli)
 - [ggplot2 3.3.0. More control over aesthetic evaluation](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/#more-control-over-aesthetic-evaluation)
+- [Complete themes in ggplot](https://rpubs.com/Mentors_Ubiqum/default_themes)
+- [Get, set, and modify the active theme](https://ggplot2.tidyverse.org/reference/theme_get.html)
+- COOL! [grafify](https://grafify-vignettes.netlify.app/) An R package for easy graphs, ANOVAs and post-hoc comparisons]
 
 ## highlighting
 - COOL! [gghighlight 0.3.2](https://yutani.rbind.io/post/2021-06-07-gghighlight-032/)

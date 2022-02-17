@@ -1232,6 +1232,12 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
+# 17.02.2022
+## R
+- COOL! [Programming with R {dplyr} - As I Understand It!!](https://www.vishalkatti.com/posts/2021-07-17-programmingwithdplyr/) How to create your own functions using {dplyr}
+- [plumber 1.1.0](https://www.rstudio.com/blog/plumber-v1-1-0/)
+- [Tabulate](https://mlverse.github.io/tabulate/https://mlverse.github.io/tabulate/) is a thin wrapper around the tabulate C++ library. It allows users to pretty print tables in the console, with support for different font styles, colors, borders and etc. It also supports multi-bytes characters and nesting tables.
+
 # 14.02.2022
 ## R
 - COOL! Joshua Kunst blog. [Data, Code and Visualization](https://jkunst.com/blog/).
@@ -1249,6 +1255,11 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - Slides! [Introduction to Generalized Additive Models with R and mgcv](https://fromthebottomoftheheap.net/slides/gam-intro-webinar-2020/gam-intro.html#1) Gavin Simpson
 1000–1230 CST (1600–1830 UTC) July 30th, 2020. [gavinsimpson/intro-gam-webinar-2020](https://github.com/gavinsimpson/intro-gam-webinar-2020)
 - [The gratia package](https://github.com/noamross/gam-resources) by Gavin Simpson
+- [Generalized Additive Models](https://datascienceplus.com/generalized-additive-models/)
+Пытаемся применить, начинаем собирать ошибки:
+- [GAMs in R: Fewer unique covariate combinations than df](https://stackoverflow.com/questions/62816900/gams-in-r-fewer-unique-covariate-combinations-than-df). Error in smooth.construct.tp.smooth.spec(object, dk$data, dk$knots) :  A term has fewer unique covariate combinations than specified maximum degrees of freedom
+- [Error for small datasets - A term has fewer unique covariate combinations than specified maximum degrees of freedom {#35}](https://github.com/mfasiolo/qgam/issues/35)
+- [Gam.check() and k number](https://stats.stackexchange.com/questions/429034/gam-check-and-k-number)
 
 
 # 04.02.2022
