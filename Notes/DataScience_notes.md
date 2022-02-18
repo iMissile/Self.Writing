@@ -1237,6 +1237,30 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! [Programming with R {dplyr} - As I Understand It!!](https://www.vishalkatti.com/posts/2021-07-17-programmingwithdplyr/) How to create your own functions using {dplyr}
 - [plumber 1.1.0](https://www.rstudio.com/blog/plumber-v1-1-0/)
 - [Tabulate](https://mlverse.github.io/tabulate/https://mlverse.github.io/tabulate/) is a thin wrapper around the tabulate C++ library. It allows users to pretty print tables in the console, with support for different font styles, colors, borders and etc. It also supports multi-bytes characters and nesting tables.
+- Проблемы с `renv`
+	- ['curl' error is not allowing packages installation in RStudio under renv](https://stackoverflow.com/questions/66282859/curl-error-is-not-allowing-packages-installation-in-rstudio-under-renv)
+	- Тут подробная детальная дискуссия по решению. [Can't install packages with renv](https://community.rstudio.com/t/cant-install-packages-with-renv/96696/6)
+```
+getOption("download.file.method")
+renv:::renv_download_file_method()
+```
+The solution that seems to have worked is:
+`options(renv.download.override = utils::download.file)`
+
+## R for loop
+- [Why not use a for loop?](https://stackoverflow.com/questions/48793273/why-not-use-a-for-loop/48793370)
+- [Computation time of loops — for, *apply, map](https://r-posts.com/computation-time-of-loops-for-apply-map/)
+- [purrr v.s. apply](https://jtr13.github.io/spring19/ss5593&fq2150.html)
+- [Why use purrr::map instead of lapply?](https://stackoverflow.com/questions/45101045/why-use-purrrmap-instead-of-lapply)
+- COOL! [How to see the source code of R .Internal or .Primitive function?](https://stackoverflow.com/questions/14035506/how-to-see-the-source-code-of-r-internal-or-primitive-function/14035586)
+First, with `pryr` you can use the show_c_source function which will search on GitHub the relevant piece of code in the C source files. Works for `.Internal` and `.Primitive` functions.
+```
+body(match.call)
+# .Internal(match.call(definition, call, expand.dots))
+pryr::show_c_source(.Internal(match.call(definition, call, expand.dots)))
+```
+- [Chapter 2 .Internal vs .Primitive](https://colinfay.me/r-internals/internal-vs-primitive.html)
+- [Как реализован `for`?]. Запускаем `pryr::show_c_source(.Primitive("for"))`, получаем [ответ](https://github.com/search?q=SEXP%20attribute_hidden%20do_for+repo:wch/r-source&type=Code), https://github.com/wch/r-source/blob/430360aa394b02046dd7175c0fc55e347e947f80/src/main/eval.c#L2297
 
 # 14.02.2022
 ## R
