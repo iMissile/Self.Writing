@@ -771,10 +771,12 @@ Trelliscope is a visualization approach based on the idea of “small multiples�
 - [Mining of Massive Datasets](http://www.mmds.org/)
 - [Locality Sensitive Hashing in R](https://github.com/dselivanov/LSHR)
 - [Locality-sensitive hashing (LSH[1]) — вероятностный метод понижения размерности многомерных данных.](https://ru.wikipedia.org/wiki/Locality-sensitive_hashing)
+- [Locality Sensitive Hashing (LSH): The Illustrated Guide](https://www.pinecone.io/learn/locality-sensitive-hashing/)
+- [Поиск похожих документов с MinHash + LHS](https://habr.com/ru/post/250673/)
 - [Jaccard index](https://en.m.wikipedia.org/wiki/Jaccard_index)
 - [Locality Sensitive Hashing in R](https://github.com/dselivanov/LSHR)
 LSHR - fast and memory efficient package for near-neighbor search in high-dimensional data. Two LSH schemes implemented at the moment:
- 	- Minhashing for jaccard similarity
+	- Minhashing for jaccard similarity
 	- Sketching (or random projections) for cosine similarity. Most of ideas are based on brilliant Mining of Massive Datasets book.
 - [Building a Recommendation Engine with Locality-Sensitive Hashing (LSH) in Python](https://www.learndatasci.com/tutorials/building-recommendation-engine-locality-sensitive-hashing-lsh-python/)
 - [Locality Sensitive Hashing](https://towardsdatascience.com/understanding-locality-sensitive-hashing-49f6d1f6134). An effective way of reducing the dimensionality of your data
@@ -1232,6 +1234,14 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
+# 20.02.2022
+## R
+- COOL! [BERT](https://bert-toolkit.com/) is a tool for connecting Excel with the statistics language R. Specifically, it’s designed to support running R functions from Excel spreadsheet cells. In Excel terms, it’s for writing User-Defined Functions (UDFs) in R.
+- [Python for Excel](https://www.xlwings.org/)
+- [What is the maximum length of a valid email address?](https://stackoverflow.com/questions/386294/what-is-the-maximum-length-of-a-valid-email-address)
+- [How does R handle missing values in lm?](https://stats.stackexchange.com/questions/11000/how-does-r-handle-missing-values-in-lm)
+- [There is pmin and pmax each taking na.rm, why no psum?](https://stackoverflow.com/questions/13123638/there-is-pmin-and-pmax-each-taking-na-rm-why-no-psum)
+
 # 17.02.2022
 ## R
 - COOL! [Programming with R {dplyr} - As I Understand It!!](https://www.vishalkatti.com/posts/2021-07-17-programmingwithdplyr/) How to create your own functions using {dplyr}
@@ -1364,6 +1374,8 @@ Overview
 - [New York R Conference](https://rstats.ai/nyr/)
 ## UseR! 2021
 - [sfnetworks: Tidy Geospatial Networks in R](https://sfnetworks.github.io/useR2021/slides#1)
+## UseR! 2014
+- [UseR 2014 Web Pages](https://github.com/user2014/user2014.github.io)
 
 # 10.01.2022
 ## Bayes
