@@ -308,6 +308,7 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - [Complete themes in ggplot](https://rpubs.com/Mentors_Ubiqum/default_themes)
 - [Get, set, and modify the active theme](https://ggplot2.tidyverse.org/reference/theme_get.html)
 - COOL! [grafify](https://grafify-vignettes.netlify.app/) An R package for easy graphs, ANOVAs and post-hoc comparisons]
+- Workshop. [Визуализируй это: визуализация данных в R. Балтыжакова Татьяна](https://baltti.github.io/workshop-DH21/ggplot2-tutorial-DH.html)
 
 ## highlighting
 - COOL! [gghighlight 0.3.2](https://yutani.rbind.io/post/2021-06-07-gghighlight-032/)
