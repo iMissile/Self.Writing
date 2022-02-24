@@ -64,7 +64,6 @@ This package provides rich-text (basic HTML and Markdown) support for ggplot2. R
 	- [Draw function without data in ggplot2](https://kohske.wordpress.com/2010/12/25/draw-function-without-data-in-ggplot2/)
 - COOL! [ggrough is an R package that converts your ggplot2 plots to rough/sketchy charts, using the excellent javascript roughjs library.](https://xvrdm.github.io/ggrough/)
 - [yixuan/showtext](https://github.com/yixuan/showtext). Using Fonts More Easily in R Graphs
-- COOL! [BUILDING COLOR PALETTE PROOFS OF CONCEPT WITH PURRR AND GGPLOT2](https://data-chronicler.netlify.com/2020/01/08/2019-12-30-building-color-palette-proof-of-concepts-with-purrr-and-ggplot2/)
 - COOL! [Data exploration with alluvial plots - An introduction to easyalluvial](https://www.datisticsblog.com/2018/10/intro_easyalluvial/)
 - COOL! [Visualising Model Response with easyalluvial](https://www.datisticsblog.com/2019/04/visualising-model-response-with-easyalluvial/)
 - COOL! [erblast/easyalluvial](https://github.com/erblast/easyalluvial) create alluvial plots with a single line of code
@@ -76,7 +75,6 @@ Alluvial plots are similar to sankey diagrams and visualise categorical data ove
 - [The Hitchhiker's Guide to Ggplot2 + The Hitchhiker's Guide to Plotnine](https://pacha.hk/blog/2019/12/21/the-hitchhikers-guide-to-ggplot2---the-hitchhikers-guide-to-plotnine/)
 - COOL! [R Tips: How to force the Y Axis breaks in ggplot2 to be integers from Stack Overflow: How to display only integer values on an axis using ggplot2](http://rolandtanglao.com/2018/04/30/p1-how-to-force-y-axis-breaks-to-be-integers-in-ggplot2/)
 - COOL! Learning [malcolmbarrett/designing.ggplots](https://github.com/malcolmbarrett/designing.ggplots). Install Workshop Materials for Designing ggplots
-- [ggplot: How to create a discrete color palette that fits the data automatically?](https://stackoverflow.com/questions/13995296/ggplot-how-to-create-a-discrete-color-palette-that-fits-the-data-automatically)
 - [clauswilke/ggtextures](https://github.com/clauswilke/ggtextures). Drawing textured rectangles and bars with ggplot
 - [Align axis label on the right with ggplot2](https://stackoverflow.com/questions/37488075/align-axis-label-on-the-right-with-ggplot2)
 - [Construct labelling specification](https://ggplot2.tidyverse.org/reference/labeller.html)
@@ -125,7 +123,6 @@ options(scipen=10000)
 - COOL! [How to plot fitted lines with ggplot2](https://aosmith.rbind.io/2018/11/16/plot-fitted-lines/)
 - [Adding a regression line on a ggplot](https://stackoverflow.com/questions/15633714/adding-a-regression-line-on-a-ggplot)
 - [How to plot fitted lines with ggplot2](https://aosmith.rbind.io/2018/11/16/plot-fitted-lines/)
-- [Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2](https://cran.r-project.org/web/packages/ggsci/vignettes/ggsci.html)
 - COOL! [hrbrmstr/ggalt](https://github.com/hrbrmstr/ggalt). 🌎 Extra Coordinate Systems, Geoms, Statistical Transformations & Scales for 'ggplot2' https://cran.r-project.org/web/packag…
 	- Dev версия сильно опережает CRAN. [ggalt](https://yonicd.github.io/ggalt/index.html)
 A compendium of ‘geoms’, ‘coords’, ‘stats’, scales and fonts for ‘ggplot2’, including splines, 1d and 2d densities, univariate average shifted histograms, a new map coordinate system based on the ‘PROJ.4’-library and the ‘StateFace’ open source font ‘ProPublica’.
@@ -174,7 +171,6 @@ Extra Coordinate Systems, Geoms, Statistical Transformations & Scales for 'ggplo
 - [Changing Glyph in legend in ggplot2](https://www.hvitfeldt.me/blog/changing-glyph-in-ggplot2/)
 - COOL! [lemon: Freshing Up your 'ggplot2' Plots](https://cran.rstudio.com/web/packages/lemon/)
 Functions for working with legends and axis lines of 'ggplot2', facets that repeat axis lines on all panels, and some 'knitr' extensions.
-- [colorBrewer interactive tool](https://www.computerworld.com/article/3184778/6-useful-r-functions-you-might-not-know.html). First, install tmaptools with install.packages("tmaptools"), then load tmaptools with library("tmaptools") and run palette_explorer() (or, don't load tmaptools and run tmaptools::palette_explorer() ). You'll see all available palettes as in the image above, as well as sliders to adjust options like number of colors. There's also info about basic syntax for using a color scheme below each group of palettes.
 - [ggdendro: Create Dendrograms and Tree Diagrams Using 'ggplot2'](https://cran.r-project.org/web/packages/ggdendro/index.html)
 This is a set of tools for dendrograms and tree plots using 'ggplot2'. The 'ggplot2' philosophy is to clearly separate data from the presentation. Unfortunately the plot method for dendrograms plots directly to a plot device without exposing the data. The 'ggdendro' package resolves this by making available functions that extract the dendrogram plot data. The package provides implementations for tree, rpart, as well as diana and agnes cluster diagrams.
 - [Ariel Muldoon blog](https://aosmith.rbind.io/). Там много чего есть про использование ggplot.
@@ -191,15 +187,6 @@ This is a set of tools for dendrograms and tree plots using 'ggplot2'. The 'ggpl
 - [Floating bar chart with trend line on secondary axis](https://stackoverflow.com/questions/45981366/floating-bar-chart-with-trend-line-on-secondary-axis)
 - [Label on the side of box plot in R - ggplot](https://stackoverflow.com/questions/50372943/label-on-the-side-of-box-plot-in-r-ggplot)
 - [The Complete ggplot2 Tutorial - Part1 | Introduction To ggplot2 (Full R code)](http://r-statistics.co/Complete-Ggplot2-Tutorial-Part1-With-R-Code.html)
-- [Generate Color Palettes](https://rpkgs.datanovia.com/ggpubr/reference/get_palette.html)
-Generate a palette of k colors from ggsci palettes, RColorbrewer palettes and custom color palettes. Useful to extend RColorBrewer and ggsci to support more colors.
-- [TOP R COLOR PALETTES TO KNOW FOR GREAT DATA VISUALIZATION](https://www.datanovia.com/en/blog/top-r-color-palettes-to-know-for-great-data-visualization/)
-- COOL! [How to create a color palette in R with more than 15 colors with ggplot2 #19 {Closed}](https://github.com/duttashi/visualizer/issues/19)
-- [#40 RCOLORBREWER : GET A LONGER PALETTE](https://www.r-graph-gallery.com/40-rcolorbrewer-get-a-longer-palette/)
-- [THE PAUL TOL 21-COLOR SALUTE](https://tradeblotter.wordpress.com/2013/02/28/the-paul-tol-21-color-salute/)
-- COOL! [Some thoughts about colors: Color spaces](https://clauswilke.com/art/post/colors-color-spaces). Art by Claus O. Wilke
-- COOL! [Polychrome: Qualitative Palettes with Many Colors](https://cran.rstudio.com/web/packages/Polychrome/index.html). Tools for creating, viewing, and assessing qualitative palettes with many (20-30 or more) colors.
-- [colortools: Tools for colors in a Hue-Saturation-Value (HSV) color model](https://cran.r-project.org/web/packages/colortools/index.html). R package with handy functions to help users select and play with color schemes in an HSV color model
 - [Creating plots in R using ggplot2 - part 10: boxplots](http://t-redactyl.io/blog/2016/04/creating-plots-in-r-using-ggplot2-part-10-boxplots.html)
 - COOL! [raivokolde/pheatmap](https://github.com/raivokolde/pheatmap). Pretty heatmaps
 - [GGPLOT LEGEND TITLE, POSITION AND LABELS](https://www.datanovia.com/en/blog/ggplot-legend-title-position-and-labels/)
@@ -223,8 +210,6 @@ Generate a palette of k colors from ggsci palettes, RColorbrewer palettes and cu
 	- [How the BBC Visual and Data Journalism team works with graphics in R](https://medium.com/bbc-visual-and-data-journalism/how-the-bbc-visual-and-data-journalism-team-works-with-graphics-in-r-ed0b35693535)
 	- [bbc/bbplot](https://github.com/bbc/bbplot). R package that helps create and export ggplot2 charts in the style used by the BBC News data team
 - [ggplot2. A quantile-quantile plot](https://ggplot2.tidyverse.org/reference/geom_qq.html)
-- COOL! [colorspace: New Tools for Colors and Palettes](https://eeecon.uibk.ac.at/~zeileis/news/colorspace/)
-A major update (version 1.4.0) of the R package colorspace has been released to CRAN, enhancing many of the package's capabilities, e.g., more refined palettes, named palettes, ggplot2 color scales, visualizations for assessing palettes, shiny and Tcl/Tk apps, color vision deficiency emulation, and much more.
 - [R Coding Style Guide](https://irudnyts.github.io//r-coding-style-guide/) by Iegor Rudnytskyi, PhD student in Actuarial Science at HEC Lausanne
 - [charlatan: Make Fake Data](https://cran.r-project.org/web/packages/charlatan/)
 Make fake data, supporting addresses, person names, dates, times, colors, coordinates, currencies, digital object identifiers ('DOIs'), jobs, phone numbers, 'DNA' sequences, doubles and integers from distributions and within a range.
@@ -309,6 +294,7 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - [Get, set, and modify the active theme](https://ggplot2.tidyverse.org/reference/theme_get.html)
 - COOL! [grafify](https://grafify-vignettes.netlify.app/) An R package for easy graphs, ANOVAs and post-hoc comparisons]
 - Workshop. [Визуализируй это: визуализация данных в R. Балтыжакова Татьяна](https://baltti.github.io/workshop-DH21/ggplot2-tutorial-DH.html)
+- COOL! [ggplot2/ggplot_theme_system_cheatsheet.pdf](https://github.com/claragranell/ggplot2/blob/main/ggplot_theme_system_cheatsheet.pdf)
 
 ## highlighting
 - COOL! [gghighlight 0.3.2](https://yutani.rbind.io/post/2021-06-07-gghighlight-032/)
@@ -321,6 +307,23 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - COOL! [vankesteren/firatheme](https://github.com/vankesteren/firatheme) a ggplot2 theme with fira font
 - [Mikata-Project/ggthemr](https://github.com/Mikata-Project/ggthemr). Themes for ggplot2.
 - [BlakeRMills/MetBrewer](https://github.com/BlakeRMills/MetBrewer). Color palette package in R inspired by works at the Metropolitan Museum of Art in New York
+- COOL! [cols4all](https://github.com/mtennekes/cols4all). The cols4all is a new R package for selecting color palettes. “Color for all” refers to our mission that colors should be usable for not just people with normal color vision, but also for people with color vision deficiency. Currently, this package contains palettes from several popular and lesser known color palette series: Color Brewer, Viridis, Kovesi, Paul Tol, Scico, Carto, Tableau and Wes Anderson. Own palettes series can be added as well.
+- COOL! [colorspace: New Tools for Colors and Palettes](https://eeecon.uibk.ac.at/~zeileis/news/colorspace/)
+A major update (version 1.4.0) of the R package colorspace has been released to CRAN, enhancing many of the package's capabilities, e.g., more refined palettes, named palettes, ggplot2 color scales, visualizations for assessing palettes, shiny and Tcl/Tk apps, color vision deficiency emulation, and much more.
+- [Generate Color Palettes](https://rpkgs.datanovia.com/ggpubr/reference/get_palette.html)
+Generate a palette of k colors from ggsci palettes, RColorbrewer palettes and custom color palettes. Useful to extend RColorBrewer and ggsci to support more colors.
+- [TOP R COLOR PALETTES TO KNOW FOR GREAT DATA VISUALIZATION](https://www.datanovia.com/en/blog/top-r-color-palettes-to-know-for-great-data-visualization/)
+- COOL! [How to create a color palette in R with more than 15 colors with ggplot2 #19 {Closed}](https://github.com/duttashi/visualizer/issues/19)
+- [#40 RCOLORBREWER : GET A LONGER PALETTE](https://www.r-graph-gallery.com/40-rcolorbrewer-get-a-longer-palette/)
+- [THE PAUL TOL 21-COLOR SALUTE](https://tradeblotter.wordpress.com/2013/02/28/the-paul-tol-21-color-salute/)
+- COOL! [Some thoughts about colors: Color spaces](https://clauswilke.com/art/post/colors-color-spaces). Art by Claus O. Wilke
+- COOL! [Polychrome: Qualitative Palettes with Many Colors](https://cran.rstudio.com/web/packages/Polychrome/index.html). Tools for creating, viewing, and assessing qualitative palettes with many (20-30 or more) colors.
+- [colortools: Tools for colors in a Hue-Saturation-Value (HSV) color model](https://cran.r-project.org/web/packages/colortools/index.html). R package with handy functions to help users select and play with color schemes in an HSV color model
+- [colorBrewer interactive tool](https://www.computerworld.com/article/3184778/6-useful-r-functions-you-might-not-know.html). First, install tmaptools with install.packages("tmaptools"), then load tmaptools with library("tmaptools") and run palette_explorer() (or, don't load tmaptools and run tmaptools::palette_explorer() ). You'll see all available palettes as in the image above, as well as sliders to adjust options like number of colors. There's also info about basic syntax for using a color scheme below each group of palettes.
+- [Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2](https://cran.r-project.org/web/packages/ggsci/vignettes/ggsci.html)
+- [ggplot: How to create a discrete color palette that fits the data automatically?](https://stackoverflow.com/questions/13995296/ggplot-how-to-create-a-discrete-color-palette-that-fits-the-data-automatically)
+- COOL! [BUILDING COLOR PALETTE PROOFS OF CONCEPT WITH PURRR AND GGPLOT2](https://data-chronicler.netlify.com/2020/01/08/2019-12-30-building-color-palette-proof-of-concepts-with-purrr-and-ggplot2/)
+
 
 
 ## facet
@@ -363,6 +366,7 @@ storeLabeller <- function(string) {
 
 =======
 - COOL! Как эффективно применить `ggfx` [Better data communication with {ggplot2}, part 2](https://giulia-ruggeri.medium.com/better-data-communication-with-ggplot2-part-2-615a5180ccb)
+
 
 # other
 - COOL! [Altair: Declarative Visualization in Python](https://altair-viz.github.io/)
