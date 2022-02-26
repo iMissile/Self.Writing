@@ -167,8 +167,6 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [The Tidynomicon. A Brief Introduction to R for Python Programmers](https://gvwilson.github.io/tidynomicon/)
 - [Mining of Massive Datasets](http://www.mmds.org/)
 - [Circular Visualization in R](https://jokergoo.github.io/circlize_book/book/) by Zuguang Gu. This is the documentation of the [circlize](https://cran.r-project.org/package=circlize) package. Examples in the book are generated under version 0.4.7.
-- [GAM IN R by NOAM ROSS](https://noamross.github.io/gams-in-r-course/). A Free, Interactive Course using mgcv
-	- [A practical guide and power analysis for GLMMs: detecting among treatment variation in random effects](https://peerj.com/articles/1226/)
 - [Supplement to Shiny in Production](https://kellobri.github.io/shiny-prod-book/)
 - [What They Forgot to Teach You About R](https://whattheyforgot.org/) by Jennifer Bryan, Jim Hester
 - COOL! [Data Science at the Command Line](https://www.datascienceatthecommandline.com/) by Jeroen Janssens, August 16, 2019
@@ -1285,7 +1283,9 @@ pryr::show_c_source(.Internal(match.call(definition, call, expand.dots)))
 - [Criteria for choosing a gnls model](https://stackoverflow.com/questions/60108024/criteria-for-choosing-a-gnls-model)
 - Learning! [GAM. Generalized Additive Models](https://m-clark.github.io/generalized-additive-models/application.html)
 - [GENERALISED ADDITIVE MODELS (GAMS)](https://environmentalcomputing.net/statistics/gams/)
-- COOL! [Resources for Learning About and Using GAMs in R](https://github.com/noamross/gam-resources)
+- [GAM IN R by NOAM ROSS](https://noamross.github.io/gams-in-r-course/). A Free, Interactive Course using mgcv
+	- COOL! [Resources for Learning About and Using GAMs in R](https://github.com/noamross/gam-resources)
+	- [A practical guide and power analysis for GLMMs: detecting among treatment variation in random effects](https://peerj.com/articles/1226/)
 - Slides! [Introduction to Generalized Additive Models with R and mgcv](https://fromthebottomoftheheap.net/slides/gam-intro-webinar-2020/gam-intro.html#1) Gavin Simpson
 1000–1230 CST (1600–1830 UTC) July 30th, 2020. [gavinsimpson/intro-gam-webinar-2020](https://github.com/gavinsimpson/intro-gam-webinar-2020)
 - [The gratia package](https://github.com/noamross/gam-resources) by Gavin Simpson

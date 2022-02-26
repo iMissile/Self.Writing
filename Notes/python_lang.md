@@ -27,6 +27,7 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 
 # 20.02.2022
 - [Python for Excel](https://www.xlwings.org/)
+- [Python Project Setup – Virtual Environments and Package Management](https://bas.codes/posts/python-virtualenv-venv-pip-pyenv-poetry)
 
 # 10.02.2022
 - [Ranking order per group in Pandas](https://stackoverflow.com/questions/33899369/ranking-order-per-group-in-pandas)
