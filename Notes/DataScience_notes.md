@@ -1232,6 +1232,23 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
+
+# 01.03.2022
+## R
+- COOL! [Convert string to a variable name](https://stackoverflow.com/questions/6034655/convert-string-to-a-variable-name)
+The function you are looking for is `get()`:
+```
+assign ("abc",5)
+get("abc")
+```
+Confirming that the memory address is identical:
+```
+getabc <- get("abc")
+pryr::address(abc) == pryr::address(getabc)
+# [1] TRUE
+```
+- [7.21 How can I turn a string into a variable?](https://cran.r-project.org/doc/FAQ/R-FAQ.html#How-can-I-turn-a-string-into-a-variable_003f)
+
 # 20.02.2022
 ## R
 - COOL! [BERT](https://bert-toolkit.com/) is a tool for connecting Excel with the statistics language R. Specifically, it’s designed to support running R functions from Excel spreadsheet cells. In Excel terms, it’s for writing User-Defined Functions (UDFs) in R.
@@ -1294,6 +1311,10 @@ pryr::show_c_source(.Internal(match.call(definition, call, expand.dots)))
 - [GAMs in R: Fewer unique covariate combinations than df](https://stackoverflow.com/questions/62816900/gams-in-r-fewer-unique-covariate-combinations-than-df). Error in smooth.construct.tp.smooth.spec(object, dk$data, dk$knots) :  A term has fewer unique covariate combinations than specified maximum degrees of freedom
 - [Error for small datasets - A term has fewer unique covariate combinations than specified maximum degrees of freedom {#35}](https://github.com/mfasiolo/qgam/issues/35)
 - [Gam.check() and k number](https://stats.stackexchange.com/questions/429034/gam-check-and-k-number)
+- [GAM: The Predictive Modeling Silver Bullet](https://multithreaded.stitchfix.com/blog/2015/07/30/gam/)
+- Gavin Simpson blog. [Modelling seasonal data with GAMs](https://fromthebottomoftheheap.net/2014/05/09/modelling-seasonal-data-with-gam/)
+- [How can basis functions in a GAM be described by a single parameter each?](https://stats.stackexchange.com/questions/531564/how-can-basis-functions-in-a-gam-be-described-by-a-single-parameter-each)
+- [Extrapolating with B splines and GAMs](https://fromthebottomoftheheap.net/2020/06/03/extrapolating-with-gams/)
 
 
 # 04.02.2022
@@ -1302,6 +1323,21 @@ pryr::show_c_source(.Internal(match.call(definition, call, expand.dots)))
 - [XPath with multiple conditions](https://stackoverflow.com/questions/10247978/xpath-with-multiple-conditions). `xpath = "//*[@class = 'page-link' and @aria-label]"`
 - [ralger](https://github.com/feddelegrand7/ralger) makes it easy to scrape a website. Built on the shoulders of titans: rvest, xml2.
 - [Simple Easy Beginners Web Scraping in R with {ralger}](https://www.programmingwithr.com/simple-easy-beginners-web-scraping-in-r-with-ralger/)
+- Подскажите, пожалуйста, как можно запустить RSelenium на сервере без монитора?
+Цель: парсинг новостей на динамическом сайте и запуск скрипта в VPS. 
+Со своей стороны установил Ubuntu и RStudio Server, поставил необходимые библиотеки, java, gecko-драйвер. 
+В скрипте прописал запуск firefox в headless-режиме:
+```
+exCap <- list("moz:firefoxOptions" = list(args = list('--headless')))
+rD <- rsDriver(browser="firefox", port=4541L, extraCapabilities = exCap)
+remDr <- rD[["client"]]
+```
+Такое нашел
+```
+-Xvfb :0 -screen 0 1024x768x24 2>&1 >/dev/null &
+export DISPLAY=:0
+nohup xvfb-run java -jar selenium-server-standalone.jar > selenium.log &
+```
 
 ## R
 - COOL! [mclust](https://cran.r-project.org/web/packages/mclust/index.html): Gaussian Mixture Modelling for Model-Based Clustering, Classification, and Density Estimation
@@ -3112,6 +3148,11 @@ Today, we're excited to announce H2O Wave v0.11.0, with support for responsive l
 I would say the best way I can find for now is to Go to Help > About SmartGit > Information > Settings Path then click the folder icon to get to the suitable folder. You'll most likely want to highest version number folder based. Then the settings seem to be in yml files.
 SmartGit saves all its settings under %appdata%\syntevo\SmartGit\<version>\. Copy it from your old PC to your new PC. You are interested in .xml files only.
 Not all. Some are in <user folder>\.gitconfig file.
+- [How to clone all projects of a group at once in GitLab?](https://stackoverflow.com/questions/29099456/how-to-clone-all-projects-of-a-group-at-once-in-gitlab)
+- [Gitlabber - clones or pulls entire groups tree from gitlab](https://github.com/ezbz/gitlabber)
+	- You'll need to create an access token from Gitlab with API scopes read_repository and read_api
+- [Cloning All Git Repos From GitLab Group](https://karuppiah7890.github.io/blog/posts/cloning-all-git-repos-from-gitlab-group/)
+- [How to clone all remote branches in Git](https://stackoverflow.com/questions/67699/how-to-clone-all-remote-branches-in-git)
 
 # 28.12.2020
 ## DS
