@@ -535,6 +535,7 @@ Theming in Rmarkdown can be hard. You first made some custom CSS or use a provid
 - COOL! [Demo: {crosstalk} materials for a talk at EARL London 2018](https://github.com/matt-dray/earl18-crosstalk)
 - [Crosstalk](https://rstudio.github.io/crosstalk/). Crosstalk is an add-on to the htmlwidgets package. It extends htmlwidgets with a set of classes, functions, and conventions for implementing cross-widget interactions (currently, linked brushing and filtering).
 - [crosstalk Tutorial](https://emilyriederer.github.io/demo-crosstalk/tutorial/tutorial-rmd.html). This tutorial will help you learn to use the crosstalk package to link different htmlwidgets. After completing this tutorial, you will be able to build an application like the one below, which visualizes the number of rides at a sample of Chicago train stations in 2019 versus 2020.
+- [Filter two tables with crosstalk](https://stackoverflow.com/questions/48581598/filter-two-tables-with-crosstalk)
 - COOL! [How I share knowledge around R Markdown](https://themockup.blog/posts/2020-07-25-meta-rmarkdown/). A meta collection of some R Markdown strategies.
 - COOL! Slides. [Making Websites in R Markdown](http://arm.rbind.io/slides/blogdown.html#1). Alison Hill | rstudio::conf | 2019-01-15
 - COOL! [How I Teach R Markdown](https://alison.rbind.io/post/2020-05-28-how-i-teach-r-markdown/) by Alison Hill
@@ -3695,7 +3696,6 @@ The glow package is a framework for creating plots with glowing points as an alt
 ## R
 - COOL! [A New Tidy Data Structure to Support Exploration and Modeling of Temporal Data](https://www.tandfonline.com/doi/full/10.1080/10618600.2019.1695624) by Earo Wang, Dianne Cook & Rob J. Hyndman
 - Slides [Presenting like a kunoichi kunoichi with ⚔️aringan](https://slides.earo.me/rladiesakl20/#1) by Earo Wang
-- [Filter two tables with crosstalk](https://stackoverflow.com/questions/48581598/filter-two-tables-with-crosstalk)
 
 # 05.10.2020
 ## R
