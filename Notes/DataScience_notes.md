@@ -233,6 +233,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 
 # Articles
 - [Using AWK and R to parse 25tb](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/)
+- [Command-line Tools can be 235x Faster than your Hadoop Cluster](https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html)
 - COOL! tl;dr: a gajillion dollar online game takes 4X as long to start because it parses a 10MB JSON file in a bad way. [How I cut GTA Online loading times by 70%](https://nee.lv/2021/02/28/How-I-cut-GTA-Online-loading-times-by-70/)
 - [Filter data before reading with awk and R. Using awk & R to map Fishing Effort](https://luisdva.github.io/rstats/r-awk/)
 
@@ -1316,6 +1317,8 @@ pryr::show_c_source(.Internal(match.call(definition, call, expand.dots)))
 - Gavin Simpson blog. [Modelling seasonal data with GAMs](https://fromthebottomoftheheap.net/2014/05/09/modelling-seasonal-data-with-gam/)
 - [How can basis functions in a GAM be described by a single parameter each?](https://stats.stackexchange.com/questions/531564/how-can-basis-functions-in-a-gam-be-described-by-a-single-parameter-each)
 - [Extrapolating with B splines and GAMs](https://fromthebottomoftheheap.net/2020/06/03/extrapolating-with-gams/)
+- COOL! [Cubic Spline](https://www.sciencedirect.com/topics/engineering/cubic-spline) performs linear or cubic spline or cubic Hermite polynomial interpolation. 
+From: Computational Methods in Engineering, 2014
 
 
 # 04.02.2022

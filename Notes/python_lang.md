@@ -25,6 +25,9 @@ Windows PowerShell update
 foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
 
+# 09.02.2022
+- [How to use loc and iloc for Selecting Data in Pandas (with Python code!)](https://www.analyticsvidhya.com/blog/2020/02/loc-iloc-pandas/)
+
 # 20.02.2022
 - [Python for Excel](https://www.xlwings.org/)
 - [Python Project Setup – Virtual Environments and Package Management](https://bas.codes/posts/python-virtualenv-venv-pip-pyenv-poetry)
