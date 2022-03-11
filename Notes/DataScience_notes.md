@@ -1320,6 +1320,10 @@ pryr::show_c_source(.Internal(match.call(definition, call, expand.dots)))
 - COOL! [Cubic Spline](https://www.sciencedirect.com/topics/engineering/cubic-spline) performs linear or cubic spline or cubic Hermite polynomial interpolation. 
 From: Computational Methods in Engineering, 2014
 
+## Splines
+- [Spline Regression in R](https://medium.com/analytics-vidhya/spline-regression-in-r-960ca82aa62c)
+- [2 Piecewise Regression and Splines](https://bookdown.org/tpinto_home/Beyond-Linearity/piecewise-regression-and-splines.html)
+
 
 # 04.02.2022
 ## RSelenium
