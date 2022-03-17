@@ -295,6 +295,7 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - COOL! [grafify](https://grafify-vignettes.netlify.app/) An R package for easy graphs, ANOVAs and post-hoc comparisons]
 - Workshop. [Визуализируй это: визуализация данных в R. Балтыжакова Татьяна](https://baltti.github.io/workshop-DH21/ggplot2-tutorial-DH.html)
 - COOL! [ggplot2/ggplot_theme_system_cheatsheet.pdf](https://github.com/claragranell/ggplot2/blob/main/ggplot_theme_system_cheatsheet.pdf)
+- COOL! [ragg, svglite, and the new graphics features](https://www.tidyverse.org/blog/2022/02/new-graphic-features/)
 
 ## highlighting
 - COOL! [gghighlight 0.3.2](https://yutani.rbind.io/post/2021-06-07-gghighlight-032/)

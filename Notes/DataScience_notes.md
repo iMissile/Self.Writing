@@ -5,6 +5,8 @@
 	- [SQL Formatter](https://codebeautify.org/sqlformatter)
 	- [Online SQL formatter](https://sql-formatter.online/options/formatting)
 	- [Poor Man's T-SQL Formatter](https://poorsql.com/)
+- [Air Explorer](https://www.airexplorer.net/ru/). Доступ ко всем вашим облачным хранилищам из одной программы. Air Explorer поддерживает все популярные облачные сервисы
+	- [Миграция с Google Диска на Яндекс.Диск](https://vc.ru/services/378082-migraciya-s-google-diska-na-yandeks-disk)
 - [Различные онлайн инструменты для проверки и преобразования](https://www.danstools.com/)
 - [5 Best Free Tools to Monitor Website Changes](https://www.hongkiat.com/blog/detect-website-change-notification/)
 - [PDFsam Basic](https://pdfsam.org/). PDFsam Basic is our free and open source desktop application to split, merge, extract pages, rotate and mix PDF files
@@ -1234,6 +1236,34 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
+# 17.03.2022
+## R
+- [Row-oriented workflows in R with the tidyverse](https://github.com/jennybc/row-oriented-workflows)
+- [Links and credits for a talk: Zen And The aRt Of Workflow Maintenance](https://github.com/jennybc/zen-art-workflow)
+
+# 14.03.2022
+## R
+- COOL! [Иерархия окружений](https://textbook.rintro.ru/eval.html#eval-environment-hierarchy)
+- Исправление ошибки доступа к `cran` при работе с `renv`: `options(renv.download.override = utils::download.file)`
+- [Modules in R](https://wahani.github.io/modules/). Manage dependencies between your R files / functions / modules
+- COOL! [Чем быстрее вы забудете ООП, тем лучше для вас и ваших программ](https://habr.com/ru/post/451982/)
+- rlang. [Defuse function arguments](https://rlang.r-lib.org/reference/enquo.html)
+- [RStudio 2022.02.0: What’s New](https://www.rstudio.com/blog/rstudio-2022-02-0-what-s-new/)
+- [Upcoming Changes in R 4.2 on Windows](https://developer.r-project.org/Blog/public/2021/12/07/upcoming-changes-in-r-4.2-on-windows/)
+- [Get The First Day Or The Last Day Of The Month In R Using Lubridate](https://www.roelpeters.be/get-the-first-day-or-the-last-day-of-the-month-in-r-using-lubridate/)
+```
+start_date <- floor_date(Sys.Date() %m-% months(1), 'month')
+end_date <- ceiling_date(Sys.Date() %m-% months(1), 'month') %m-% days(1)
+```
+- [First day of the month from a POSIXct date time using lubridate](https://stackoverflow.com/questions/23602706/first-day-of-the-month-from-a-posixct-date-time-using-lubridate)
+- [Convert Dates to Year/Quarter Format in R (3 Examples)](https://statisticsglobe.com/format-dates-as-year-quarter-in-r)
+
+## DS
+- DOI:10.1038/218019A0 Corpus ID: 4265138 [“Memo” Functions and Machine Learning](https://www.semanticscholar.org/paper/%E2%80%9CMemo%E2%80%9D-Functions-and-Machine-Learning-Michie/22faafeba7d7443da14c1e23e549b94e40d7d6ee) D. Michie, Published 1 April 1968, Computer Science Nature
+- [Improving the Performance of AI Software: Payoffs and Pitfalls in Using Automatic Memoization](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.69.9183&rep=rep1&type=pdf)
+
+
+
 
 # 01.03.2022
 ## R
@@ -2113,7 +2143,7 @@ A quick introduction to 10 basic graph algorithms with examples and visualisatio
 - [Google Summer of Code 2018. A Linear Time Implementation of SPQR-Trees](https://saiharsh.github.io/gsoc-spqrtree.html). Тут алгоритм на пальцах расписан. И это все ушло в SageMath!!!
 - [Tarjan's strongly connected components algorithm](https://en.wikipedia.org/wiki/Tarjan's_strongly_connected_components_algorithm). Тут алгоритм на пальцах расписан.
 - [Biconnected component](https://en.wikipedia.org/wiki/Biconnected_component#Algorithms). The classic sequential algorithm for computing biconnected components in a connected undirected graph is due to John Hopcroft and Robert Tarjan (1973).[1] It runs in linear time, and is based on depth-first search. This algorithm is also outlined as Problem 22-2 of Introduction to Algorithms (both 2nd and 3rd editions).
-- [Free-Algorithm-Books/book/Introduction to Algorithms - Third Edition.pdf](https://github.com/RbkGh/Free-Algorithm-Books/blob/master/book/Introduction%20to%20Algorithms%20-%20Third%20Edition.pdf)
+- COOL! [Thomas H. Cormen. Charles E. Leiserson. Ronald L. Rivest. Clifford Stein. Introduction to Algorithms - Third Edition.pdf](https://github.com/RbkGh/Free-Algorithm-Books/blob/master/book/Introduction%20to%20Algorithms%20-%20Third%20Edition.pdf)
 - [Handbook of Graph Drawing and Visualization](https://cs.brown.edu/people/rtamassi/gdhandbook/) Roberto  Tamassia, Editor CRC Press, June 24, 2013
 
 ## Wolfram
