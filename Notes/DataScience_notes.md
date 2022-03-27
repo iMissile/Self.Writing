@@ -33,7 +33,9 @@ https://tmall.aliexpress.com/item/Edifier-W830BT-1/1000005465785.html
 	- [Slack Deletron](https://www.slackdeletron.com/). Delete and manage files from your Slack Workspace!
 	- [How To Delete all Slack Files to Manage Disk Space](https://www.techjunkie.com/delete-all-slack-files/)
 
-
+## Google Sites
+- Копируем сайты. Copy Sites[Download HTTrack Website Copier 3.49-2](http://www.httrack.com/page/2/)
+- [Бэкап Google Sites средствами Google](https://takeout.google.com/?pli=1)
 
 [Backblaze Safety Freeze](https://help.backblaze.com/hc/en-us/articles/217666178-Safety-Freeze-Your-Backup-is-Safety-Frozen-)
 
@@ -1240,6 +1242,16 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 ## R
 - [Row-oriented workflows in R with the tidyverse](https://github.com/jennybc/row-oriented-workflows)
 - [Links and credits for a talk: Zen And The aRt Of Workflow Maintenance](https://github.com/jennybc/zen-art-workflow)
+- [FAQ: HOW DO I INTERPRET ODDS RATIOS IN LOGISTIC REGRESSION?](https://stats.oarc.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/)
+- `sats::poly`
+	- [This lab on Polynomial Regression and Step Functions in R comes from p. 288-292 of "Introduction to Statistical Learning with Applications in R" by Gareth James, Daniela](http://www.science.smith.edu/~jcrouser/SDS293/labs/lab12-r.html)
+	- COOL! [What does the R function `poly` really do?](https://stackoverflow.com/questions/19484053/what-does-the-r-function-poly-really-do)
+	- [Why prefer poly() to I() ? Are they different? {duplicate}](https://stats.stackexchange.com/questions/421988/why-prefer-poly-to-i-are-they-different)
+	- [What are multivariate orthogonal polynomials as computed in R?](https://stats.stackexchange.com/questions/253123/what-are-multivariate-orthogonal-polynomials-as-computed-in-r)
+- crossproduct
+	- [Cross product](https://en.wikipedia.org/wiki/Cross_product)
+	- [R - Compute Cross Product of Vectors (Physics)](https://stackoverflow.com/questions/36798301/r-compute-cross-product-of-vectors-physics/36802067)
+	- [Calculate the cross-product of a Matrix in R Programming – crossprod() Function](https://www.geeksforgeeks.org/calculate-the-cross-product-of-a-matrix-in-r-programming-crossprod-function/)
 
 # 14.03.2022
 ## R
@@ -1247,6 +1259,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - Исправление ошибки доступа к `cran` при работе с `renv`: `options(renv.download.override = utils::download.file)`
 - [Modules in R](https://wahani.github.io/modules/). Manage dependencies between your R files / functions / modules
 - COOL! [Чем быстрее вы забудете ООП, тем лучше для вас и ваших программ](https://habr.com/ru/post/451982/)
+	- [FizzBuzz Enterprise Edition](https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition) is a no-nonsense implementation of FizzBuzz made by serious businessmen for serious business purposes.
 - rlang. [Defuse function arguments](https://rlang.r-lib.org/reference/enquo.html)
 - [RStudio 2022.02.0: What’s New](https://www.rstudio.com/blog/rstudio-2022-02-0-what-s-new/)
 - [Upcoming Changes in R 4.2 on Windows](https://developer.r-project.org/Blog/public/2021/12/07/upcoming-changes-in-r-4.2-on-windows/)
@@ -1261,6 +1274,9 @@ end_date <- ceiling_date(Sys.Date() %m-% months(1), 'month') %m-% days(1)
 ## DS
 - DOI:10.1038/218019A0 Corpus ID: 4265138 [“Memo” Functions and Machine Learning](https://www.semanticscholar.org/paper/%E2%80%9CMemo%E2%80%9D-Functions-and-Machine-Learning-Michie/22faafeba7d7443da14c1e23e549b94e40d7d6ee) D. Michie, Published 1 April 1968, Computer Science Nature
 - [Improving the Performance of AI Software: Payoffs and Pitfalls in Using Automatic Memoization](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.69.9183&rep=rep1&type=pdf)
+- [Что же такое этот GraphQL?](https://habr.com/ru/post/326986/)
+- [A query language for your API](https://graphql.org/)
+- [Chrome Recorder: Record, replay and measure user flows](https://developer.chrome.com/docs/devtools/recorder/)
 
 
 
@@ -1349,6 +1365,25 @@ pryr::show_c_source(.Internal(match.call(definition, call, expand.dots)))
 - [Extrapolating with B splines and GAMs](https://fromthebottomoftheheap.net/2020/06/03/extrapolating-with-gams/)
 - COOL! [Cubic Spline](https://www.sciencedirect.com/topics/engineering/cubic-spline) performs linear or cubic spline or cubic Hermite polynomial interpolation. 
 From: Computational Methods in Engineering, 2014
+- [How to get only the plots from `gam.check`](https://stackoverflow.com/questions/22275610/how-to-get-only-the-plots-from-gam-check)
+- [Introducing gratia](https://fromthebottomoftheheap.net/2018/10/23/introducing-gratia/)
+- [mgcViz: visual tools for Generalized Additive Models](https://mfasiolo.github.io/mgcViz/index.html)
+- [Фильтр Калмана](https://habr.com/ru/post/166693/)
+- [Why mgcv is awesome](https://www.mainard.co.uk/post/why-mgcv-is-awesome/)
+- [When to use a GAM vs GLM](https://stats.stackexchange.com/questions/380426/when-to-use-a-gam-vs-glm)
+- [R package scam](https://cran.r-project.org/web/packages/scam/index.html). Pya, N., Wood, S.N., 2015. Shape constrained additive models. Stat. Comput. 25 (3), 543–559. 10.1007/s11222-013-9448-7
+
+## Linear Mixed Models
+- [INTRODUCTION TO LINEAR MIXED MODELS](https://ourcodingclub.github.io/tutorials/mixed-models/)
+- [Mixed Models](https://m-clark.github.io/mixed-models-with-R/random_intercepts.html)
+- [Using random effects in GAMs with mgcv](https://fromthebottomoftheheap.net/2021/02/02/random-effects-in-gams/)
+
+- R formulae
+    - [formula {stats}](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/formula.html). The generic function formula and its specific methods provide a way of extracting formulae which have been included in other objects.
+    - [Asterisk (*) vs. colon (:) in R formulas {closed}](https://stackoverflow.com/questions/40567421/asterisk-vs-colon-in-r-formulas)
+    - COOL! [Formulae in R - ANOVA and other models, mixed and fixed](https://conjugateprior.org/2013/01/formulae-in-r-anova/)
+    - [The R Formula Method: The Good Parts](https://rviews.rstudio.com/2017/02/01/the-r-formula-method-the-good-parts/). 2017-02-01 by Max Kuhn
+    - [The R Formula Method: The Bad Parts](https://rviews.rstudio.com/2017/03/01/the-r-formula-method-the-bad-parts/).  2017-03-01 by Max Kuhn
 
 ## Splines
 - [Spline Regression in R](https://medium.com/analytics-vidhya/spline-regression-in-r-960ca82aa62c)
@@ -1376,6 +1411,36 @@ remDr <- rD[["client"]]
 export DISPLAY=:0
 nohup xvfb-run java -jar selenium-server-standalone.jar > selenium.log &
 ```
+- Есть вот такой выпадающий список, я хочу нажать в нем опцию pdf. Как бы мне его нажать?
+```
+<div class="popover-inner tooltip-inner" style="position: relative;"> <div data-v-b329ee4c="" tabindex="-1" class="resize-observer"><object style="display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; pointer-events: none; z-index: -1;" aria-hidden="true" tabindex="-1" type="text/html" data="about:blank"></object></div><div><div class="flex flex--align-start flex--direction-column popover-items-container" slot="content"><span class="popover-items-container__item">
+    Видео
+  </span><span class="popover-items-container__item">
+    Документ
+  </span><span class="popover-items-container__item">
+    Лонгрид
+  </span><span class="popover-items-container__item">
+    Тест
+  </span><span class="popover-items-container__item">
+    Ссылка
+  </span><span class="popover-items-container__item">
+    PDF
+  </span><span class="popover-items-container__item">
+    SCORM
+  </span><span class="popover-items-container__item">
+    HTML5
+  </span></div></div></div>
+```
+Найдено решение: Коллеги, всем спасибо, удалось решить с помощью @Gotfr1d 
+вот такой селектор сработал
+```
+elem <- remDr$findElement(
+  using = "css selector",
+  value = ".flex.flex--align-start.flex--direction-column.popover-items-container :nth-child(6)"
+)
+
+elem$clickElement()
+```
 
 ## R
 - COOL! [mclust](https://cran.r-project.org/web/packages/mclust/index.html): Gaussian Mixture Modelling for Model-Based Clustering, Classification, and Density Estimation
@@ -1385,6 +1450,7 @@ nohup xvfb-run java -jar selenium-server-standalone.jar > selenium.log &
 ## timeseries & stat & R
 - [When to log transform a time series before fitting an ARIMA model](https://stats.stackexchange.com/questions/6330/when-to-log-transform-a-time-series-before-fitting-an-arima-model).
 Plot a graph of the data against time. If it looks like the variation increases with the level of the series, take logs. Otherwise model the original data.
+- [Fitting ARIMA to time series with missing values](https://stats.stackexchange.com/questions/346225/fitting-arima-to-time-series-with-missing-values)
 - [Understanding Variance](https://www.investopedia.com/terms/v/variance.asp#:~:text=In%20statistics%2C%20variance%20measures%20variability,values%20in%20the%20data%20set.)
 - COOL! [Time Series Analysis in R Part 2: Time Series Transformations](https://datascienceplus.com/time-series-analysis-in-r-part-2-time-series-transformations/)
 - [ARIMA modelling in fable](https://otexts.com/fpp3/arima-r.html)
@@ -1987,10 +2053,6 @@ Using evolution to fit a basic linear model
 - [Tidy Geospatial Networks in R](https://github.com/luukvdmeer/sfnetworks). 
 - Любопытно. [Speeding up parentheses (and lots more) in R](https://radfordneal.wordpress.com/2010/08/19/speeding-up-parentheses-and-lots-more-in-r/)
 
-## Google Sites
-- Копируем сайты. [Download HTTrack Website Copier 3.49-2](http://www.httrack.com/page/2/)
-- [Бэкап Google Sites средствами Google](https://takeout.google.com/?pli=1)
-
 ## DS
 - [Build Your own Deep Learning Framework - A Hands-on Introduction to Automatic Differentiation - Part 2](https://mostafa-samir.github.io/auto-diff-pt2/)
 - COOL! [Data-Science-Cheatsheet/Data_Science_Cheatsheet.pdf](https://github.com/aaronwangy/Data-Science-Cheatsheet/blob/main/Data_Science_Cheatsheet.pdf)
@@ -2366,12 +2428,6 @@ When you change document, you should again press "Show all" to show changes of n
 - COOL! [Poorman's automated translation with R and Google Sheets using {googlesheets4}](https://www.brodrigues.co/blog/2020-12-05-poorman_translate/)
 - [Как обойти блокировку API запрещенных сервисов с помощью скриптов R](https://netpeak.net/ru/blog/kak-ispol-zovat-proksi-v-skriptakh-r-obkhodim-blokirovku-api-yandeksa-mail-ru-i-vkontakte/)
 - COOL! [How to Make Beautiful Tables in R](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/)
-- R formulae
-    - [formula {stats}](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/formula.html). The generic function formula and its specific methods provide a way of extracting formulae which have been included in other objects.
-    - [Asterisk (*) vs. colon (:) in R formulas {closed}](https://stackoverflow.com/questions/40567421/asterisk-vs-colon-in-r-formulas)
-    - COOL! [Formulae in R - ANOVA and other models, mixed and fixed](https://conjugateprior.org/2013/01/formulae-in-r-anova/)
-    - [The R Formula Method: The Good Parts](https://rviews.rstudio.com/2017/02/01/the-r-formula-method-the-good-parts/). 2017-02-01 by Max Kuhn
-    - [The R Formula Method: The Bad Parts](https://rviews.rstudio.com/2017/03/01/the-r-formula-method-the-bad-parts/).  2017-03-01 by Max Kuhn
 
 # 31.05.2021
 ## R

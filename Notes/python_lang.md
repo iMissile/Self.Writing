@@ -25,8 +25,57 @@ Windows PowerShell update
 foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
 
+# 24.03.2022
+- [Daily dose of Python](https://jerry-git.github.io/daily-dose-of-python/doses/1/)
+- [Refactoring a Python Codebase with LibCST](https://engineering.instawork.com/refactoring-a-python-codebase-with-libcst-fc645ecc1f09)
+
+# 18.03.2022
+- Вопрос. Удалил папку с виртуальным окружением, во время работы в этом окружении. Все сломалось.
+Теперь при исполнении кода python в файле, интерпретатор ссылается на `/venv/bin/python3: No such file or directory`.
+Как починить?
+
+починить можно двумя путями/способами:
+1. создать виртуальное окружение вручную, через терминал/командную строку.
+2. создать новый проект в PyCharm. При создании проекта автоматически создаётся в/окружение. Перенести в проект все файлы, установить нужные библиотеки (`pip install requests, pandas, bs4`)
+Команды для создания виртуального окружения можно легко найти.
+
+Для создания в/окружения я использую библиотеку `pipenv` (нужно предварительно установить в системе, не в ВО), 
+- команда `pipenv shell` создаст ВО и автоматически активирует его
+- команда `pipenv install pandas, requests, bs4` установит внутри ВО библиотеки
+
+Вы можете использовать другие библиотеки - `venv` или `virtualenv`
+при запуске скрипта интерпретатор вернёт ошибки - так Вы поймёте каких библиотек не хватает
+ну и для начала загляните в пространство имён - верхняя часть скрипта, где перечислены импорты
+Valerii Mamontov, [18.03.2022 8:50]
+при запуске скрипта интерпретатор вернёт ошибки - так Вы поймёте каких библиотек не хватает
+ну и для начала загляните в пространство имён - верхняя часть скрипта, где перечислены импорты
+я себе создал шпаргалку с двумя типами окружений
+посмотри как их установить, глянь что за команды и используй на здоровье
+```
+pipenv shell- создать окружение
+pipenv install package_name 
+pipenv install --dev flake8 - окружения для разработки
+pipenv uninstall 
+pipenv update 
+pipenv run pip freeze
+pipenv install -r requirements.txt
+
+conda create -n data_env
+conda install pandas
+conda activate data_env
+conda deactivate
+conda remove -n data_env --all
+conda env export >data_env.yml
+conda env create -f data_env.yml
+conda list
+conda update pandas
+conda remove pandas
+```
+
 # 09.02.2022
 - [How to use loc and iloc for Selecting Data in Pandas (with Python code!)](https://www.analyticsvidhya.com/blog/2020/02/loc-iloc-pandas/)
+- Как удалить из df столбцы в котором все значения 0?
+`df.loc[:, (df != 0).any(axis=0)]`
 
 # 20.02.2022
 - [Python for Excel](https://www.xlwings.org/)
