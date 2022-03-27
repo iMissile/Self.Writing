@@ -1378,12 +1378,12 @@ From: Computational Methods in Engineering, 2014
 - [Mixed Models](https://m-clark.github.io/mixed-models-with-R/random_intercepts.html)
 - [Using random effects in GAMs with mgcv](https://fromthebottomoftheheap.net/2021/02/02/random-effects-in-gams/)
 
-- R formulae
-    - [formula {stats}](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/formula.html). The generic function formula and its specific methods provide a way of extracting formulae which have been included in other objects.
-    - [Asterisk (*) vs. colon (:) in R formulas {closed}](https://stackoverflow.com/questions/40567421/asterisk-vs-colon-in-r-formulas)
-    - COOL! [Formulae in R - ANOVA and other models, mixed and fixed](https://conjugateprior.org/2013/01/formulae-in-r-anova/)
-    - [The R Formula Method: The Good Parts](https://rviews.rstudio.com/2017/02/01/the-r-formula-method-the-good-parts/). 2017-02-01 by Max Kuhn
-    - [The R Formula Method: The Bad Parts](https://rviews.rstudio.com/2017/03/01/the-r-formula-method-the-bad-parts/).  2017-03-01 by Max Kuhn
+## R formulae
+- [formula {stats}](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/formula.html). The generic function formula and its specific methods provide a way of extracting formulae which have been included in other objects.
+- [Asterisk (*) vs. colon (:) in R formulas {closed}](https://stackoverflow.com/questions/40567421/asterisk-vs-colon-in-r-formulas)
+- COOL! [Formulae in R - ANOVA and other models, mixed and fixed](https://conjugateprior.org/2013/01/formulae-in-r-anova/)
+- [The R Formula Method: The Good Parts](https://rviews.rstudio.com/2017/02/01/the-r-formula-method-the-good-parts/). 2017-02-01 by Max Kuhn
+- [The R Formula Method: The Bad Parts](https://rviews.rstudio.com/2017/03/01/the-r-formula-method-the-bad-parts/).  2017-03-01 by Max Kuhn
 
 ## Splines
 - [Spline Regression in R](https://medium.com/analytics-vidhya/spline-regression-in-r-960ca82aa62c)
