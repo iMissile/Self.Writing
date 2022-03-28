@@ -580,7 +580,7 @@ HKEY_USERS\.Default\Keyboard Layout\Preload
 Please make sure that virtualization is enabled inside of your computer's BIOS. The instructions on how to do this will vary from computer to computer, and will most likely be under CPU related options.
 - [Install Windows Subsystem for Linux 2 in Windows 10](https://winaero.com/install-windows-subsystem-for-linux-2-in-windows-10/)
 - [Automatically Configuring WSL](https://devblogs.microsoft.com/commandline/automatically-configuring-wsl/)
-- Доставляем утилиты:
+- Доставляем утилиты(https://onstartup.ru/obrabotka-teksta/xsltproc/):
 ```
 sudo apt update
 sudo apt install xsltproc
