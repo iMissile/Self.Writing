@@ -25,9 +25,14 @@ Windows PowerShell update
 foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
 
+# 29.03.2022
+- [The Essential Protobuf Guide for Python](https://www.datascienceblog.net/post/programming/essential-protobuf-guide-python/)
+
 # 24.03.2022
 - [Daily dose of Python](https://jerry-git.github.io/daily-dose-of-python/doses/1/)
 - [Refactoring a Python Codebase with LibCST](https://engineering.instawork.com/refactoring-a-python-codebase-with-libcst-fc645ecc1f09)
+- [Pandas Tutor visualizes how your Python code transforms dataframes](https://pandastutor.com/index.html)
+- [Creating conditional columns on Pandas with Numpy `select()` and `where()` methods](https://towardsdatascience.com/creating-conditional-columns-on-pandas-with-numpy-select-and-where-methods-8ee6e2dbd5d5). Some of the most useful Pandas tricks
 
 # 18.03.2022
 - Вопрос. Удалил папку с виртуальным окружением, во время работы в этом окружении. Все сломалось.

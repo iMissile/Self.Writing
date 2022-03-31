@@ -876,6 +876,7 @@ Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'P
 - [brodieG/vetr](https://github.com/brodieG/vetr) Trust, but Verify
 - [validate 1.0.1: new features and a cookbook](http://www.markvanderloo.eu/yaRb/2020/12/08/validate-1-0-1-new-features-and-a-cookbook/)
 - ebook [The Data Validation Cookbook](https://data-cleaning.github.io/validate/) by Mark P.J. van der Loo, 2020-12-08
+- Tableau ebook. [The Power of Data Visualization by Ken Flerlage](https://public.tableau.com/app/profile/ken.flerlage/viz/ThePowerofDataVisualization/Story)
 
 
 # Logging
@@ -1238,6 +1239,12 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
+# 30.03.2022
+## R
+- COOL! [Разработка telegram ботов на языке R](https://selesnow.github.io/build_telegram_bot_using_r/)
+- Shiny App. [Tableau Zen Parser v0.1](https://tony-yanjun.shinyapps.io/Tableau_zen_parser/)
+
+
 # 17.03.2022
 ## R
 - [Row-oriented workflows in R with the tidyverse](https://github.com/jennybc/row-oriented-workflows)
@@ -1277,7 +1284,7 @@ end_date <- ceiling_date(Sys.Date() %m-% months(1), 'month') %m-% days(1)
 - [Что же такое этот GraphQL?](https://habr.com/ru/post/326986/)
 - [A query language for your API](https://graphql.org/)
 - [Chrome Recorder: Record, replay and measure user flows](https://developer.chrome.com/docs/devtools/recorder/)
-
+- COOL! [A guide to working with country-year panel data and Bayesian multilevel models](https://www.andrewheiss.com/blog/2021/12/01/multilevel-models-panel-data-guide/)
 
 
 
@@ -1372,11 +1379,19 @@ From: Computational Methods in Engineering, 2014
 - [Why mgcv is awesome](https://www.mainard.co.uk/post/why-mgcv-is-awesome/)
 - [When to use a GAM vs GLM](https://stats.stackexchange.com/questions/380426/when-to-use-a-gam-vs-glm)
 - [R package scam](https://cran.r-project.org/web/packages/scam/index.html). Pya, N., Wood, S.N., 2015. Shape constrained additive models. Stat. Comput. 25 (3), 543–559. 10.1007/s11222-013-9448-7
+- [chapter 4. Types of model outcomes. Nonlinear Modeling in R with GAMs - Noam Ross](https://projector-video-pdf-converter.datacamp.com/6413/chapter4.pdf)
+- COOL! [Notes on GAMs in R with a binary dependent variables](https://kaminsky.rocks/2020/04/notes-on-gams-in-r-with-a-binary-dependent-variables/)
+- [How to solve common problems with GAMs](https://www.seascapemodels.org/rstats/2021/03/27/common-GAM-problems.html)
+- [Gam with low E.D.F (estimated degrees of freedom) value in main effect, not interaction term](https://stats.stackexchange.com/questions/179591/gam-with-low-e-d-f-estimated-degrees-of-freedom-value-in-main-effect-not-inte)
 
 ## Linear Mixed Models
 - [INTRODUCTION TO LINEAR MIXED MODELS](https://ourcodingclub.github.io/tutorials/mixed-models/)
 - [Mixed Models](https://m-clark.github.io/mixed-models-with-R/random_intercepts.html)
 - [Using random effects in GAMs with mgcv](https://fromthebottomoftheheap.net/2021/02/02/random-effects-in-gams/)
+
+## Logistic distribution
+- [The Logistic Distribution](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/Logistic.html)
+- [Logistic Distribution in R (4 Examples) | dlogis, plogis, qlogis & rlogis Functions](https://statisticsglobe.com/logistic-distribution-in-r-dlogis-plogis-qlogis-rlogis)
 
 ## R formulae
 - [formula {stats}](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/formula.html). The generic function formula and its specific methods provide a way of extracting formulae which have been included in other objects.
@@ -2157,8 +2172,6 @@ attache a package to the search path, executes the code, then removes the packag
 - [Multi-step Time Series Forecasting with ARIMA, LightGBM, and Prophet](https://towardsdatascience.com/multi-step-time-series-forecasting-with-arima-lightgbm-and-prophet-cc9e3f95dfb0)
 Modeling with Python on different types of time series to compare the model algorithms
 - [Modeltime Ecosystem Roadmap: New Algorithms & Models #5](https://github.com/business-science/modeltime/issues/5)
-
-
 
 # 14.07.2021
 ## Regular expression (regexp)
