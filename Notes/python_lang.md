@@ -27,6 +27,8 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 
 # 29.03.2022
 - [The Essential Protobuf Guide for Python](https://www.datascienceblog.net/post/programming/essential-protobuf-guide-python/)
+- [plotnine](https://plotnine.readthedocs.io/en/stable/#) A Grammar of Graphics for Python¶. 
+plotnine is an implementation of a grammar of graphics in Python, it is based on ggplot2.
 
 # 24.03.2022
 - [Daily dose of Python](https://jerry-git.github.io/daily-dose-of-python/doses/1/)

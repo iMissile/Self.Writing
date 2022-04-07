@@ -1239,6 +1239,17 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
+# 05.04.2022
+## R
+- COOL! Learning [Data science for economists](https://github.com/uo-ec607/lectures)
+- [Understanding the native R pipe |>](https://ivelasq.rbind.io/blog/understanding-the-r-pipe/)
+- Shiny [cache scope](https://mastering-shiny.org/performance.html?q=ca#caching)
+попробовал несколько комбинаций, помогло вот это:
+`shiny::shinyOptions(cache = cachem::cache_disk(max_n = 0, destroy_on_finalize = TRUE))`
+Ларчик просто открывался, даже обидно, что как-то скипнул параграф Cache scope. 
+Пожалуй отмечу, что ожидаемо, подгружаться приложение стало дольше. Конкретно в моём случае это не страшно, но отключая по сути кэш, нужно понимать что скорость загрузки страницы может существенно измениться.
+- [R Shiny app shows old data](https://stackoverflow.com/questions/37408072/r-shiny-app-shows-old-data)
+
 # 30.03.2022
 ## R
 - COOL! [Разработка telegram ботов на языке R](https://selesnow.github.io/build_telegram_bot_using_r/)
@@ -1406,6 +1417,12 @@ From: Computational Methods in Engineering, 2014
 
 
 # 04.02.2022
+## Selenium docker
+- COOL! [Поднимаем Selenium в Docker за 2 минуты](https://www.browserstack.com/guide/run-selenium-tests-in-docker). Этот пошаговый вариант позволил поднять докер действительно за 5 минут. Только надо машину к инету подключенной держать -- докеры скачивать. Реально он работает по инструкции с [Configuration Manager](https://aerokube.com/cm/latest/) Alexander Andryashin, Ivan Krutov, Kirill Merkushev and the Aerokube community Version Latest, 2022-01-20
+- [How to run Selenium Tests in Docker](https://www.browserstack.com/guide/run-selenium-tests-in-docker)
+- [How To Run Selenium Tests In Docker ?](https://www.lambdatest.com/blog/run-selenium-tests-in-docker/)
+
+
 ## RSelenium
 - [How to get HTML source of a Web Element in Selenium WebDriver](https://www.browserstack.com/guide/get-html-source-of-web-element-in-selenium-webdriver) `innerHTML/outerHTML`
 - [XPath with multiple conditions](https://stackoverflow.com/questions/10247978/xpath-with-multiple-conditions). `xpath = "//*[@class = 'page-link' and @aria-label]"`
@@ -1456,6 +1473,7 @@ elem <- remDr$findElement(
 
 elem$clickElement()
 ```
+- COOL! [Selenium Form WebElement: TextBox, Button, sendkeys(), click()](https://www.guru99.com/accessing-forms-in-webdriver.html)
 
 ## R
 - COOL! [mclust](https://cran.r-project.org/web/packages/mclust/index.html): Gaussian Mixture Modelling for Model-Based Clustering, Classification, and Density Estimation
@@ -4187,6 +4205,14 @@ You can remove those from here and try and re-clone - it will ask for username/p
 ## R
 - Чтобы сохранить `vtree` картинку в файл, приходится работать через `options`. Выяснил через `traceback`.
 `options("vtree_folder" = "./output")`
+vtree::vtree(filter(events_dt, process == "imTask"), "type activity_id", horiz = TRUE, height = 1280, pngknit = TRUE, as.if.knit = TRUE, folder = "./output_pics/")
+
+# ggsave(here::here("vtree.png"))
+- [How to add title to and save vtree object?](https://stackoverflow.com/questions/66592541/how-to-add-title-to-and-save-vtree-object)
+`grVizToImageFile(g, width = NULL, height = NULL, format = "png", folder = ".", filename)`
+`grVizToPNG(g, width = NULL, height = NULL, folder = ".", filename)`
+
+
 
 ## Wolfram
 - [Most Efficient Way to Calculate the Product of All Items in a List?](https://mathematica.stackexchange.com/questions/1352/most-efficient-way-to-calculate-the-product-of-all-items-in-a-list). `Apply[Times, list]`

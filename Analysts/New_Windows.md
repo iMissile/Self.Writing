@@ -736,3 +736,7 @@ TinEye browser extensions are the fastest way to search for images online.
 - [Resilio Sync](https://www.resilio.com/). Universal File Delivery for the Enterprise.
 Unify, control, and accelerate global file data, securely
 
+# Миграция с gmail на yandex.mail
+- [Для выноса данных из Google: https://takeout.google.com]
+- [How to Import MBOX to Yandex.Mail – 2 Easy Methods](https://www.adviksoft.com/blog/import-mbox-to-yandex-mail/)
+- [Как лучше перенести доменную почту с gmail на yandex?](https://qna.habr.com/q/303103)
