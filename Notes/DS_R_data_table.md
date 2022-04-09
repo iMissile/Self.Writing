@@ -186,6 +186,8 @@ You were almost there: `dt[, .(Count = .N, Avg = mean(get(metric))), mget(nodes)
 - COOL! [.SDcols=function shorthand #3950 {Closed}](https://github.com/Rdatatable/data.table/issues/3950). `data.table v1.13.0 (24 Jul 2020)`. .SDcols=is.numeric now works; i.e., SDcols= accepts a function which is used to select the columns of .SD
 - [.SDcols accepts a function to filter on values #3991 {Merged}](https://github.com/Rdatatable/data.table/pull/3991)
 - [Making .SD your best friend](https://rpubs.com/josemz/SDbf)
+- [Filter by column index number data.table R](https://stackoverflow.com/questions/67331129/filter-by-column-index-number-data-table-r)
+- [What is the equivalent of mutate_at (dplyr) in data.table?](https://stackoverflow.com/questions/57386580/what-is-the-equivalent-of-mutate-at-dplyr-in-data-table)
 
 
 

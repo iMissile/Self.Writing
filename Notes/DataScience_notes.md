@@ -1239,6 +1239,18 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
 
+# 08.04.2022
+## RSelenium, продолжаем разбираться
+- [Rselenium can not click all radiobutton (only some of them)](https://stackoverflow.com/questions/56894525/rselenium-can-not-click-all-radiobutton-only-some-of-them)
+- [How to click on a button with Javascript executor in Selenium with python?](https://www.tutorialspoint.com/how-to-click-on-a-button-with-javascript-executor-in-selenium-with-python)
+- Так у меня на Налоговой заработало. [How to run javascript using RSelenium?](https://stackoverflow.com/questions/49103753/how-to-run-javascript-using-rselenium)
+```
+  search_elem <- remDrv$findElement(using = "id", value = "ctl00_ctl00_btSend")
+  # search_elem$clickElement()
+  script <-"document.getElementById('ctl00_ctl00_btSend').click();"
+  remDrv$executeScript(script, args = list(search_elem))
+```
+
 # 05.04.2022
 ## R
 - COOL! Learning [Data science for economists](https://github.com/uo-ec607/lectures)
@@ -1249,6 +1261,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 Ларчик просто открывался, даже обидно, что как-то скипнул параграф Cache scope. 
 Пожалуй отмечу, что ожидаемо, подгружаться приложение стало дольше. Конкретно в моём случае это не страшно, но отключая по сути кэш, нужно понимать что скорость загрузки страницы может существенно измениться.
 - [R Shiny app shows old data](https://stackoverflow.com/questions/37408072/r-shiny-app-shows-old-data)
+- [gganatogram: An R package for modular visualisation of anatograms and tissues based on ggplot2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6208569/)
 
 # 30.03.2022
 ## R
@@ -1503,6 +1516,7 @@ Plot a graph of the data against time. If it looks like the variation increases 
 - COOL! [How to use column numbers in the dplyr filter function](https://stackoverflow.com/questions/58795821/how-to-use-column-numbers-in-the-dplyr-filter-function)
 `df %>% filter_at(c(1,3,4), all_vars(.==0))`
 - [Filter by column index number data.table R](https://stackoverflow.com/questions/67331129/filter-by-column-index-number-data-table-r)
+- [What is the equivalent of mutate_at (dplyr) in data.table?](https://stackoverflow.com/questions/57386580/what-is-the-equivalent-of-mutate-at-dplyr-in-data-table)
 - [Running GO code from R](https://community.rstudio.com/t/running-go-code-from-r/2340)
 - COOL! [Tidy Data Tutor helps you visualize data analysis pipelines](https://tidydatatutor.com/)
 
