@@ -32,6 +32,7 @@ https://tmall.aliexpress.com/item/Edifier-W830BT-1/1000005465785.html
 - Slack tools
 	- [Slack Deletron](https://www.slackdeletron.com/). Delete and manage files from your Slack Workspace!
 	- [How To Delete all Slack Files to Manage Disk Space](https://www.techjunkie.com/delete-all-slack-files/)
+- COOL! A second brain, for you, forever. [Obsidian](https://obsidian.md/) is a powerful knowledge base on top of a local folder of plain text Markdown files.
 
 ## Google Sites
 - Копируем сайты. Copy Sites[Download HTTrack Website Copier 3.49-2](http://www.httrack.com/page/2/)
@@ -233,6 +234,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 - COOL! [Causal Inference: The Mixtape](https://mixtape.scunning.com/index.html)
 - [Engineering Production-Grade Shiny Apps](https://engineering-shiny.org/index.html) by Colin Fay, Sébastien Rochette, Vincent Guyader and Cervan Girard
 - [Apache Arrow R Cookbook](https://arrow.apache.org/cookbook/r/index.html)
+- [Rcpp: Seamless R and C++ Integration](https://www.rcpp.org/)
 
 
 # Articles
@@ -555,6 +557,8 @@ Theming in Rmarkdown can be hard. You first made some custom CSS or use a provid
 - [Shiny Inception: JavaScript in Rendered Markdown](https://datawookie.dev/blog/2021/06/shiny-inception-javascript-in-rendered-markdown/)
 - COOL! [Displaying verbatim code chunks in RMarkdown and Xaringan presentations](https://themockup.blog/posts/2021-08-27-displaying-verbatim-code-chunks-in-xaringan-presentations/)
 - [Automatic execution of setup chunk in Rmd](https://community.rstudio.com/t/automatic-execution-of-setup-chunk-in-rmd/71483)
+- Интересный момент, который ранее не замечал. Если в проекте Rmd-файл лежит не в корне, то код из .Rprofile не подгружается при генерации файла через кнопку knit. Надо юзать 
+`source(here::here(".Rprofile"), chdir = TRUE)`
 
 ## knitr
 - Jumping Rivers blog
@@ -1238,6 +1242,15 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! Здесь есть Rcpp код. [Double precision (64-bit) representation of numeric value in R (sign, exponent, significand)](https://stackoverflow.com/questions/50217954/double-precision-64-bit-representation-of-numeric-value-in-r-sign-exponent)
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
+
+# 11.04.2022
+## R
+- Shiny Contest [INTERACTIVE MAP GENERATOR FROM EXCEL TO HTML, VIA LEAFLET.JS](https://www.jla-data.net/eng/jla-leaflet-generator/)
+- [The new pipe and anonymous function syntax in R](https://towardsdatascience.com/the-new-pipe-and-anonymous-function-syntax-in-r-54d98861014c). What is it, why now, and does it really matter?
+- [Проект SQL: Исследование оттока сотрудников департамента исследований и разработок](https://rpubs.com/o_mamatkulov/849298)
+
+## git
+- [Module version numbering](https://go.dev/doc/modules/version-numbers)
 
 # 08.04.2022
 ## RSelenium, продолжаем разбираться

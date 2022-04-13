@@ -739,4 +739,6 @@ Unify, control, and accelerate global file data, securely
 # Миграция с gmail на yandex.mail
 - [Для выноса данных из Google: https://takeout.google.com]
 - [How to Import MBOX to Yandex.Mail – 2 Easy Methods](https://www.adviksoft.com/blog/import-mbox-to-yandex-mail/)
+- [Настройка почтовых программ на компьютере
+Mozilla Thunderbird](https://yandex.ru/support/mail/mail-clients/mozilla-thunderbird.html)
 - [Как лучше перенести доменную почту с gmail на yandex?](https://qna.habr.com/q/303103)
