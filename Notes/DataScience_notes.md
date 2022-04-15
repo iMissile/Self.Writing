@@ -1248,6 +1248,10 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - Shiny Contest [INTERACTIVE MAP GENERATOR FROM EXCEL TO HTML, VIA LEAFLET.JS](https://www.jla-data.net/eng/jla-leaflet-generator/)
 - [The new pipe and anonymous function syntax in R](https://towardsdatascience.com/the-new-pipe-and-anonymous-function-syntax-in-r-54d98861014c). What is it, why now, and does it really matter?
 - [Проект SQL: Исследование оттока сотрудников департамента исследований и разработок](https://rpubs.com/o_mamatkulov/849298)
+- [Getting Started with JAGS, rjags, and Bayesian Modelling](https://jeromyanglim.blogspot.com/2012/04/getting-started-with-jags-rjags-and.html) WEDNESDAY, APRIL 11, 2012
+- [To impute or not: the case of an RCT with baseline and follow-up measurements](https://www.rdatagen.net/post/2022-04-12-to-impute-or-not-the-case-of-an-rct-with-baseline-and-follow-up-measurements/)
+- [Why you should(n't) care about Monads if you're an R programmer](https://www.brodrigues.co/blog/2022-04-11-monads/)
+- [Leaflet. Lines and Shapes](https://rstudio.github.io/leaflet/shapes.html)
 
 ## git
 - [Module version numbering](https://go.dev/doc/modules/version-numbers)
