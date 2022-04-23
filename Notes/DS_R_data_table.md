@@ -349,6 +349,7 @@ flights_tb %>%
 - COOL! [R data.table: update-by-reference joins](https://r-critique.com/r_datatable_update_by_reference_joins)
 - [nacnudus/data.table-joins.R](https://gist.github.com/nacnudus/ef3b22b79164bbf9c0ebafbf558f22a0) How to do joins with data.table
 - [How to join (merge) data frames (inner, outer, left, right)?](https://jangorecki.github.io/blog/2015-12-11/Solve-common-R-problems-efficiently-with-data.table.html)
+- [Merging with data.table](https://jmsallan.netlify.app/blog/merging-with-data-table/)
 - [R data.table Joins](https://medium.com/analytics-vidhya/r-data-table-joins-48f00b46ce29)
 - [R Tutorial: Data.Table](https://www.dezyre.com/data-science-in-r-programming-tutorial/r-data-table-tutorial)
 - [R – Data.Table Rolling Joins](https://gormanalysis.com/r-data-table-rolling-joins/)

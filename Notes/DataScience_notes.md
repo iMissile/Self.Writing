@@ -1242,6 +1242,10 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! Здесь есть Rcpp код. [Double precision (64-bit) representation of numeric value in R (sign, exponent, significand)](https://stackoverflow.com/questions/50217954/double-precision-64-bit-representation-of-numeric-value-in-r-sign-exponent)
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
+# 22.04.2022
+## R
+- [Successfully Putting Shiny in Production](https://www.rstudio.com/blog/successfully-putting-shiny-in-production/)
+
 
 # 11.04.2022
 ## R
@@ -1326,7 +1330,7 @@ end_date <- ceiling_date(Sys.Date() %m-% months(1), 'month') %m-% days(1)
 - [A query language for your API](https://graphql.org/)
 - [Chrome Recorder: Record, replay and measure user flows](https://developer.chrome.com/docs/devtools/recorder/)
 - COOL! [A guide to working with country-year panel data and Bayesian multilevel models](https://www.andrewheiss.com/blog/2021/12/01/multilevel-models-panel-data-guide/)
-
+- [Что такое модульная арифметика?](https://ru.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic)
 
 
 # 01.03.2022
