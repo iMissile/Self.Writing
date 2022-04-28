@@ -242,6 +242,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Command-line Tools can be 235x Faster than your Hadoop Cluster](https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html)
 - COOL! tl;dr: a gajillion dollar online game takes 4X as long to start because it parses a 10MB JSON file in a bad way. [How I cut GTA Online loading times by 70%](https://nee.lv/2021/02/28/How-I-cut-GTA-Online-loading-times-by-70/)
 - [Filter data before reading with awk and R. Using awk & R to map Fishing Effort](https://luisdva.github.io/rstats/r-awk/)
+- [Fitting logistic regression on 100gb dataset on a laptop](https://dsnotes.com/post/2017-02-07-large-data-feature-hashing-and-online-learning-part-2/) by Dmitriy Selivanov
 
 
 # VPN
@@ -1242,10 +1243,60 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! Здесь есть Rcpp код. [Double precision (64-bit) representation of numeric value in R (sign, exponent, significand)](https://stackoverflow.com/questions/50217954/double-precision-64-bit-representation-of-numeric-value-in-r-sign-exponent)
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
-# 22.04.2022
+# Appsilon Shiny 2022
+- [2021 shiny-fluent Hackathon Appsilon/RStudio Contest SHARC!](https://github.com/mdubel/shark-attack)
+- [{shinytest2}: Regression Testing for Shiny Applications](https://github.com/schloerke/presentation-2022-04-27-appsilon-shinytest2)
+- Shiny App. 
+	- [Example: Eye Fitting Straight Lines in the Modern Era](https://emily-robinson.shinyapps.io/can-you-draw-it/)
+	- [Shiny Decisions] Shiny app: sparktuga.shinyapps.io/ShinyDecisions/ Repo: github.com/pedrocoutinhosilva/shiny.decisions
+	- [Shark Attack: Clean the Ocean] Shiny app: mdubel.shinyapps.io/shark-attack/ Repo: github.com/mdubel/shark-attack
+	- [Bikemap] Shiny app: 2exp3.shinyapps.io/mapa-ciclista/_w_6e13cdc9/ Repo: github.com/2exp3/bikemapp
+
+
+
+# 28.04.2022
+## R
+- [deggust](https://deggust.emitanaka.org/). The aim for deggust R-package is to visualise designs constructed from the edibble R-package. The visualisation are ggplot graphics.]
+- [edibble](https://edibble.emitanaka.org/). The goal of edibble R-package is to aid in the plan, design and simulation of experiments by mapping fundamental components of experiments to an object oriented system.
+- [Causal Inference in R Workshop](https://github.com/malcolmbarrett/causal_inference_r_workshop)
+- Slides (https://lucymcgowan.github.io/2022-wfu-stat-comm/slides/index.html)
+- Slides (https://lucymcgowan.github.io/cdc-stat-comm/slides/index.html)
+- COOL! [Rhino](https://appsilon.github.io/rhino/) allows you to create Shiny apps The Appsilon Way - like a fullstack software engineer. 
+- COOL! Slides [shinytest2. Regression testing for Shiny applications](https://schloerke.com/presentation-2022-04-27-appsilon-shinytest2/#0)
+	- [{shinytest2}: Regression Testing for Shiny Applications](https://github.com/schloerke/presentation-2022-04-27-appsilon-shinytest2)
+- [ivs 0.1.0](https://blog.davisvaughan.com/2022/04/20/ivs-0-1-0/). Davis Vaughan's Blog.
+I’m very excited to announce the first release of ivs (said, “eye-vees”), a package dedicated to working with intervals.
+
+# 27.04.2022
+## Линейное программирование
+- [CRAN Task View: Optimization and Mathematical Programming](https://cran.r-project.org/web/views/Optimization.html)
+- What are the best C++ packages/libraries for non-linear optimization problems?
+You can use dlib : C++ tool for non-linear optimization which includes functions for newton convex optimization etc.
+[dlib C++ Library - Introduction](http://dlib.net/intro.html)
+- [Линейное программирование](https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)
+
+
+# 25.04.2022
 ## R
 - [Successfully Putting Shiny in Production](https://www.rstudio.com/blog/successfully-putting-shiny-in-production/)
+- Проблема установки пакетов под R 4.2. "Warning in install.packages :
+  packages ‘cairoDevice’, ‘elasticsearchr’, ‘gamboostLSS’, ‘gdalUtils’, ‘googlesheets’, ‘pm4py’, ‘rattle.data’, ‘RGtk2’, ‘rredis’ are not available for this version of R"
+- Установка R 4.2. "Windows: R uses UTF-8 as the native encoding on recent Windows systems (at least Windows 10 version 1903, Windows Server 2022 or Windows Server 1903). As a part of this change, R uses UCRT as the C runtime. UCRT should be installed manually on systems older than Windows 10 or Windows Server 2016 before installing R.."
+	- [Update for Universal C Runtime in Windows](https://support.microsoft.com/en-us/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
+	- [Развертывание универсальной библиотеки CRT](https://docs.microsoft.com/ru-ru/cpp/windows/universal-crt-deployment?view=msvc-170)
 
+## DS
+- [Is Fisher Sharp Null Hypothesis testable?](https://stats.stackexchange.com/questions/281200/is-fisher-sharp-null-hypothesis-testable). К вопросу "какие есть подходы по проверке гипотезы о равенстве средних двух выборок (расходы абонентов пользующихся двумя разными тарифами), если распределение исследуемой случайной величины изначально неизвестно и (судя по тестам) не нормально.", https://t.me/rlang_ru/94166. Если не хотите предполагать homoskedasticity, то либо бутстрап, либо robust standard errors. Robust, если большая выборка. Бутстрап если маленькая
+- COOL! [A better way to adjust your standard errors](https://grantmcdermott.com/better-way-adjust-SEs/)
+
+## GNU Licensing
+- [If I use R packages licensed under GPL without any modification, do I have to publish my own software's source code when distributing commercially?](https://opensource.stackexchange.com/questions/9099/if-i-use-r-packages-licensed-under-gpl-without-any-modification-do-i-have-to-pu)
+- [How R packages are licensed (by Task View)](https://www.woutersteenbeek.nl/post/r-packages-license/)
+- [A look at the licenses used by data packages on CRAN](https://github.com/jennybc/cran-data-pkg-licenses)
+- [How R packages are licensed (by Task View)](https://www.woutersteenbeek.nl/post/r-packages-license/)
+
+## e-books
+- [Computer Age Statistical Inference. Algorithms, Evidence, and Data Science](https://hastie.su.domains/CASI_files/PDF/casi.pdf) by Bradley Efron, Trevor Hastie, Stanford University
 
 # 11.04.2022
 ## R
@@ -1256,6 +1307,8 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [To impute or not: the case of an RCT with baseline and follow-up measurements](https://www.rdatagen.net/post/2022-04-12-to-impute-or-not-the-case-of-an-rct-with-baseline-and-follow-up-measurements/)
 - [Why you should(n't) care about Monads if you're an R programmer](https://www.brodrigues.co/blog/2022-04-11-monads/)
 - [Leaflet. Lines and Shapes](https://rstudio.github.io/leaflet/shapes.html)
+- [{shinyValidator}](http://opensource.nibr.com/shinyValidator/) aims at automating the audit of a Shiny App project’s quality, particularly required during a validation/qualification process.
+- [Tensor-Puzzles: Solve puzzles. Improve your pytorch.](https://github.com/srush/Tensor-Puzzles)
 
 ## git
 - [Module version numbering](https://go.dev/doc/modules/version-numbers)
@@ -2567,10 +2620,23 @@ HedgeDoc (formerly known as CodiMD) is an open-source collaborative markdown edi
 
 # 24.05.2021
 ## R
-- [USING METAFLOW TO MAKE MODEL TUNING LESS PAINFUL](https://mdneuzerling.com/post/using-metaflow-to-make-model-tuning-less-painful/)
 - [tidystats](https://www.tidystats.io/) is a software solution designed to help researchers report the output of statistical analyses. It consists of an R package whose main function is to gather the statistics from statistical analyses and an Office add-in to reproducibly report statistics in Microsoft Word.
 - [tempdisagg: converting quarterly time series to daily](https://www.cynkra.com/blog/2020-02-09-tempdisagg/)
 - COOL! [File Transfer Based Publishing for Shiny Apps](https://hosting.analythium.io/file-transfer-based-publishing-for-shiny-apps/)
+
+## MLOps
+- [MDNEUZERLING. DATA, R, PYTHON](https://mdneuzerling.com/)
+	- [Deploying R Models with MLflow and Docker](https://mdneuzerling.com/post/deploying-r-models-with-mlflow-and-docker/). MLflow is a platform for the “machine learning cycle”.
+	- [Data Science Workflows](https://mdneuzerling.com/post/data-science-workflows/). I’m obsessed with how to structure a data science project.
+	- [MACHINE LEARNING PIPELINES WITH TIDYMODELS AND TARGETS](https://mdneuzerling.com/post/machine-learning-pipelines-with-tidymodels-and-targets/)
+	- COOL! [UPGRADE YOUR WORKFLOW WITH DRAKE](https://mdneuzerling.com/post/upgrade-your-workflow-with-drake/)
+	- COOL! [USING METAFLOW TO MAKE MODEL TUNING LESS PAINFUL](https://mdneuzerling.com/post/using-metaflow-to-make-model-tuning-less-painful/)
+	- [Tracking Tidymodels with MLflow](https://mdneuzerling.com/post/tracking-tidymodels-with-mlflow/)
+- [MLflow - A platform for the machine learning lifecycle](https://mlflow.org/). An open source platform for the end-to-end machine learning lifecycle
+- [mlflow/mlflow](https://github.com/mlflow/mlflow). Open source platform for the machine learning lifecycle - mlflow/mlflow
+- [Metaflow: фреймворк для управления data science проектами от Netflix](https://metaflow.org/)
+
+
 
 # 21.05.2021
 ## graph
@@ -2618,8 +2684,9 @@ The grammar of graphics as shown in 'ggplot2' has provided an expressive API for
 - COOL! Slides [Dataviz with R](https://www.sophie-e-hill.com/slides/2021-chips-seminar/#/section)
 - [DataEditR](https://dillonhammill.github.io/DataEditR/)
 - COOL! [git2rdata](https://ropensci.github.io/git2rdata/). The git2rdata package is an R package for writing and reading dataframes as plain text files. A metadata file stores important information.
-- COOL! [gglabeller](https://github.com/AliciaSchep/gglabeller). Shiny gadget for labeling points on ggplot
 - [htmltools](https://rstudio.github.io/htmltools/index.html). Tools for creating, manipulating, and writing HTML from R.
+- COOL! [gglabeller](https://github.com/AliciaSchep/gglabeller). Shiny gadget for labeling points on ggplot
+- [Mobile Ready shiny Apps with Standalone Capabilities](https://rinterface.github.io/shinyMobile/). Develop outstanding shiny apps for iOS, Android, desktop as well as beautiful shiny gadgets.
 
 ## Google BigQuery
 - [bigrquery](https://bigrquery.r-dbi.org/). The bigrquery package makes it easy to work with data stored in Google BigQuery 
@@ -3204,7 +3271,6 @@ Unit: milliseconds
 ## R
 - COOL! [My fav feature from the new version of {shiny}: `reactiveConsole(TRUE)`, which allows using reactive objects and observers straight in the console](https://twitter.com/_ColinFay/status/1354182862510174208?s=20)
 - [tidytrees](https://github.com/bakaburg1/tidytrees): a package for a tidy representation of decision trees.
-- COOL! [USING METAFLOW TO MAKE MODEL TUNING LESS PAINFUL](https://mdneuzerling.com/post/using-metaflow-to-make-model-tuning-less-painful/)
 - [ggdist: Visualizations of distributions and uncertainty](https://mjskay.github.io/ggdist/)
 - [Splitting a large data frame into smaller segments](https://stackoverflow.com/questions/14164525/splitting-a-large-data-frame-into-smaller-segments)
 
@@ -4561,13 +4627,6 @@ Also, see:
 - [Do anything — do](https://dplyr.tidyverse.org/reference/do.html). do() is superseded as of dplyr 1.0.0, because its syntax never really felt like it belong with the rest of dplyr.
 - [rweekly.org](https://rweekly.org/). Learn R, R tutorials, R resources, blog posts and the latest updates about the statistical programming R language.
 - [Winners of the 2nd Annual Shiny Contest](https://blog.rstudio.com/2020/07/13/winners-of-the-2nd-shiny-contest/
-- [Deploying R Models with MLflow and Docker](https://mdneuzerling.com/post/deploying-r-models-with-mlflow-and-docker/). MLflow is a platform for the “machine learning cycle”.
-- [Data Science Workflows](https://mdneuzerling.com/post/data-science-workflows/). I’m obsessed with how to structure a data science project.
-- [MACHINE LEARNING PIPELINES WITH TIDYMODELS AND TARGETS](https://mdneuzerling.com/post/machine-learning-pipelines-with-tidymodels-and-targets/)
-- [Mobile Ready shiny Apps with Standalone Capabilities](https://rinterface.github.io/shinyMobile/). Develop outstanding shiny apps for iOS, Android, desktop as well as beautiful shiny gadgets.
-- [MLflow - A platform for the machine learning lifecycle](https://mlflow.org/). An open source platform for the end-to-end machine learning lifecycle
-- [mlflow/mlflow](https://github.com/mlflow/mlflow). Open source platform for the machine learning lifecycle - mlflow/mlflow
-- [Metaflow: фреймворк для управления data science проектами от Netflix](https://metaflow.org/)
 - [gkaramanis/tidytuesday](https://github.com/gkaramanis/tidytuesday/tree/master/2020-week29). Code and plots for submissions to the #tidytuesday challenge - gkaramanis/tidytuesday
 - [See how to use the reactable R package to make an interactive table with rows that expand when clicked](https://www.infoworld.com/article/3543297/how-to-create-tables-in-r-with-expandable-rows.html)
 - [5 Obscure Python Libraries Every Data Scientist Should Know](https://towardsdatascience.com/5-obscure-python-libraries-every-data-scientist-should-know-3651bf5d3be3)
@@ -4767,7 +4826,6 @@ Cross-platform command-line argument parser written purely in R with no external
 
 # 23.06.2020
 ## R
-- COOL! [UPGRADE YOUR WORKFLOW WITH DRAKE](https://mdneuzerling.com/post/upgrade-your-workflow-with-drake/)
 - COOL! [Using SQL in RStudio](https://irene.rbind.io/post/using-sql-in-rstudio/)
 - [goodpress (or badpress?)](https://maelle.github.io/goodpress/index.html). Write to WordPress, from R Markdown, with a modern stack.
 - COOL! [New font in town — Goldman Sans (https://design.gs.com/d/story/goldman-sans/…)](https://twitter.com/hrbrmstr/status/1275753397552140289?s=20) — has some nice characteristics. It's now in dev-version of  #rstats {hrbrthemes}
@@ -7464,6 +7522,7 @@ The fourth release of the binb package just arrived on CRAN. binb regroups four 
 - [Working with files on disk. Taking the advantage of multicore machines](https://cran.r-project.org/web/packages/text2vec/vignettes/files-multicore.html)
 - [Handling large data sets in R](https://rpubs.com/msundar/large_data_analysis)
 - [Using AWK and R to parse 25tb](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/)
+- [Fitting logistic regression on 100gb dataset on a laptop](https://dsnotes.com/post/2017-02-07-large-data-feature-hashing-and-online-learning-part-2/) by Dmitriy Selivanov
 - [FastR](https://m-clark.github.io/docs/fastr.html) by Michael Clark
 - [Purrr - tips and tricks](https://www.hvitfeldt.me/blog/purrr-tips-and-tricks/) by Emil Hvitfeldt
 - [How data.table's fread can save you a lot of time and memory, and take input from shell commands](https://jozef.io/r917-fread-comparisons/)

@@ -25,8 +25,22 @@ Windows PowerShell update
 foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
 
+# 28.04.2022
+- [Top2Vec](https://github.com/ddangelov/Top2Vec) learns jointly embedded topic, document and word vectors. 
+- article [Top2Vec: Distributed Representations of Topics](https://arxiv.org/abs/2008.09470)
+- [leaftmap. 53 choropleth](https://leafmap.org/notebooks/53_choropleth/)
+
 # 17.04.2022
 - [plotly. Calculate sum totals data-table](https://community.plotly.com/t/calculate-sum-totals-data-table/45521)
+- [Using Pandas on Ray (Modin)](https://docs.ray.io/en/latest/data/modin/index.html)
+- [Scaling Pandas: Comparing Dask, Ray, Modin, Vaex, and RAPIDS](https://www.datarevenue.com/en-blog/pandas-vs-dask-vs-vaex-vs-modin-vs-rapids-vs-ray)
+	- Dask: a low-level scheduler and a high-level partial Pandas replacement, geared toward running code on compute clusters.
+	- Ray: a low-level framework for parallelizing Python code across processors or clusters.
+	- Modin: a drop-in replacement for Pandas, powered by either Dask or Ray.
+	- Vaex: a partial Pandas replacement that uses lazy evaluation and memory mapping to allow developers to work with large datasets on standard machines.
+	- RAPIDS: a collection of data-science libraries that run on GPUs and include cuDF, a partial replacement for Pandas.
+- [Comparison between Modin | Dask | Data.table | Pandas for parallel processing and out of memory csv files](https://stackoverflow.com/questions/56483996/comparison-between-modin-dask-data-table-pandas-for-parallel-processing-an)
+- COOL! [How we parallelized 600+ pandas functions with Modin](https://ponder.io/how-do-we-parallelized-600-pandas-functions-with-modin/)
 
 # 29.03.2022
 - [The Essential Protobuf Guide for Python](https://www.datascienceblog.net/post/programming/essential-protobuf-guide-python/)

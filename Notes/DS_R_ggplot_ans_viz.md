@@ -382,6 +382,8 @@ The goal of vlbuildr is to provide an R api for building up vega-lite specs.
 - COOL! Для того, чтобы `render_graph` в `DiagrammeR` работал и сохранял граф в файл, необходимо доставлять руками библиотеки `DiagrammeRSVG` и `V8`. Они отсутствуют в явных зависимостях.
 - Хорошая статья с визуализациями. [Tracking covid-19 excess deaths across countries](https://www.economist.com/graphic-detail/coronavirus-excess-deaths-tracker)
 - [Waffle chart (square pie) in ggplot2](https://r-charts.com/part-whole/waffle-chart-ggplot2/)
+- [Observable Plot](https://observablehq.com/@observablehq/plot)
+- [obsplot](https://juba.github.io/obsplot/index.html) is an experimental attempt at using Observable Plot as HTML widget in R.
 
 
 # font
@@ -390,5 +392,9 @@ The goal of vlbuildr is to provide an R api for building up vega-lite specs.
 - COOL! [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/)
 
 
+# d3
+- [Fullstack D3 and Data Visualization: Build beautiful data visualizations with D3](https://www.amazon.com/Fullstack-Data-Visualization-beautiful-visualizations/dp/0991344650)
+- [D3 TO R TO D3](https://maya.rbind.io/post/2020/d3-to-r-to-d3/)
+- COOL! [A starting point to explore data visualization using D3.js](https://github.com/TheRobBrennan/explore-data-visualization-with-D3)
 
 
