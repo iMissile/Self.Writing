@@ -1284,6 +1284,7 @@ You can use dlib : C++ tool for non-linear optimization which includes functions
 - Установка R 4.2. "Windows: R uses UTF-8 as the native encoding on recent Windows systems (at least Windows 10 version 1903, Windows Server 2022 or Windows Server 1903). As a part of this change, R uses UCRT as the C runtime. UCRT should be installed manually on systems older than Windows 10 or Windows Server 2016 before installing R.."
 	- [Update for Universal C Runtime in Windows](https://support.microsoft.com/en-us/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
 	- [Развертывание универсальной библиотеки CRT](https://docs.microsoft.com/ru-ru/cpp/windows/universal-crt-deployment?view=msvc-170)
+- COOL! [Reinstalling packages on new version of R](https://community.rstudio.com/t/reinstalling-packages-on-new-version-of-r/7670). I've just installed the R 3.5 version and need to access all the hundreds of packages I currently have in the 3.4 folder
 
 ## DS
 - [Is Fisher Sharp Null Hypothesis testable?](https://stats.stackexchange.com/questions/281200/is-fisher-sharp-null-hypothesis-testable). К вопросу "какие есть подходы по проверке гипотезы о равенстве средних двух выборок (расходы абонентов пользующихся двумя разными тарифами), если распределение исследуемой случайной величины изначально неизвестно и (судя по тестам) не нормально.", https://t.me/rlang_ru/94166. Если не хотите предполагать homoskedasticity, то либо бутстрап, либо robust standard errors. Robust, если большая выборка. Бутстрап если маленькая
