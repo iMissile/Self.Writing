@@ -272,3 +272,9 @@ git credential-manager-core [<command> [<args>]]
 ```
 - [How one may check whether credential manager in Git has password stored for a given domain?](https://stackoverflow.com/questions/51803825/how-one-may-check-whether-credential-manager-in-git-has-password-stored-for-a-gi)
 
+# Еще одно счастье с уязвимостью
+Появилась ошибка `fatal: unsafe repository (REPO is owned by someone else)`
+- [Git security vulnerability announced](https://github.blog/2022-04-12-git-security-vulnerability-announced/)
+Upgrade your local installation of Git, especially if you are using Git for Windows, or you use Git on a multi-user machine.
+- Параметр [`safe.directory`](https://git-scm.com/docs/git-config/2.35.2#Documentation/git-config.txt-safedirectory)
+`git config --global --add safe.directory D:/iwork.GL/habr-articles`

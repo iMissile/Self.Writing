@@ -5692,6 +5692,7 @@ context: An environment containing active chunk options and other chunk informat
 
 # 03.03.2020
 ## R & regexp
+- COOL! regex... CHANGES IN R 4.0.0 [There is a new syntax for specifying raw character constants similar to the one used in C++: r"(...)" with ... any character sequence not containing the sequence `)"`. This makes it easier to write strings that contain backslashes or both single and double quotes. For more details see ?Quotes.
 - [Why Using the Greedy .* in Regular Expressions Is Almost Never What You Actually Want](https://mariusschulz.com/blog/why-using-the-greedy-in-regular-expressions-is-almost-never-what-you-actually-want)
 - [Performance of Greedy vs. Lazy Regex Quantifiers](http://blog.stevenlevithan.com/archives/greedy-lazy-performance)
 - [Жадные и ленивые квантификаторы](https://learn.javascript.ru/regexp-greedy-and-lazy)

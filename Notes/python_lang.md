@@ -25,6 +25,11 @@ Windows PowerShell update
 foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
 
+# 01.05.2022
+- [ImageHash](https://pypi.org/project/ImageHash/). An image hashing library written in Python. ImageHash supports.
+- [Art3](https://johannesbuchner.github.io/imagehash/index3.html)
+- [pHash](https://www.phash.org/). The open source perceptual hash library
+
 # 28.04.2022
 - [Top2Vec](https://github.com/ddangelov/Top2Vec) learns jointly embedded topic, document and word vectors. 
 - article [Top2Vec: Distributed Representations of Topics](https://arxiv.org/abs/2008.09470)
