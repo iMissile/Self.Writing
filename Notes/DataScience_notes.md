@@ -1253,6 +1253,10 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 	- [Bikemap] Shiny app: 2exp3.shinyapps.io/mapa-ciclista/_w_6e13cdc9/ Repo: github.com/2exp3/bikemapp
 
 
+# 04.05.2022
+## R
+- COOL! [Diffify](https://www.jumpingrivers.com/blog/diffify-launch/) by Clarissa Barratt & Parisa Gregg.
+With Diffify, you can compare versions of R packages at the click of a button.
 
 # 28.04.2022
 ## R

@@ -25,6 +25,9 @@ Windows PowerShell update
 foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
 
+# 05.05.2022
+- [Split (explode) pandas dataframe string entry to separate rows](https://stackoverflow.com/questions/12680754/split-explode-pandas-dataframe-string-entry-to-separate-rows)
+
 # 01.05.2022
 - [ImageHash](https://pypi.org/project/ImageHash/). An image hashing library written in Python. ImageHash supports.
 - [Art3](https://johannesbuchner.github.io/imagehash/index3.html)
