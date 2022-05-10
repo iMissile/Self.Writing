@@ -25,8 +25,26 @@ Windows PowerShell update
 foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
 
+# 08.05.2022
+- Целая философская дискуссия. [Pandas dataframe get first row of each group](https://stackoverflow.com/questions/20067636/pandas-dataframe-get-first-row-of-each-group)
+I'd suggest to use `.nth(0)` rather than `.first()` if you need to get the first row.
+The difference between them is how they handle `NaN`s, so `.nth(0)` will return the first row of group no matter what are the values in this row, while `.first()` will eventually return the first not NaN value in each column.
+- COOL! [Bitwise Operators in Python](https://realpython.com/python-bitwise-operators/)
+- [Bitfields in Python using masks, properties, and closures](https://www.hactrn.net/blog/2020/03/21/bitfields-in-python-using-masks-properties-and-closures/)
+- [Bitfield](A Python bitfield class for easier bit manipulation of integers
+
 # 05.05.2022
 - [Split (explode) pandas dataframe string entry to separate rows](https://stackoverflow.com/questions/12680754/split-explode-pandas-dataframe-string-entry-to-separate-rows)
+- [jellyfish](https://pypi.org/project/jellyfish/) a library for doing approximate and phonetic matching of strings.
+- [jaro-winkler](https://pypi.org/project/jaro-winkler/)
+- [Jaro and Jaro-Winkler similarity](https://www.geeksforgeeks.org/jaro-and-jaro-winkler-similarity/)
+- [jellyfish vs pyjarowinkler](https://stackoverflow.com/questions/48428810/jellyfish-vs-pyjarowinkler)
+- [textdistance](https://pypi.org/project/textdistance/). Compute distance between the two texts.
+- [Fuzzy matching string comparisons with Dask DataFrames](https://coiled.io/blog/dask-fuzzy-matching-string-comparison/)
+- [Applying Jaro-Winkler distance to dataframe](https://stackoverflow.com/questions/57360343/applying-jaro-winkler-distance-to-dataframe)
+- [How can I use the apply() function for a single column?](https://stackoverflow.com/questions/34962104/how-can-i-use-the-apply-function-for-a-single-column)
+- [Super Fast String Matching in Python](https://bergvca.github.io/2017/10/14/super-fast-string-matching.html) Oct 14, 2017
+- [Applying Jaro-Winkler distance to dataframe](https://stackoverflow.com/questions/57360343/applying-jaro-winkler-distance-to-dataframe)
 
 # 01.05.2022
 - [ImageHash](https://pypi.org/project/ImageHash/). An image hashing library written in Python. ImageHash supports.
@@ -138,7 +156,7 @@ Nim is a statically typed compiled systems programming language. It combines suc
 - [Pandas: pad series on top or bottom](https://stackoverflow.com/questions/38743064/pandas-pad-series-on-top-or-bottom)
 
 # 30.11.2021
-- Полная дичь. [3 ways to deal with `SettingWithCopyWarning` in Pandas](https://www.analyticsvidhya.com/blog/2021/11/3-ways-to-deal-with-settingwithcopywarning-in-pandas/)
+- COOL! Полная дичь. [3 ways to deal with `SettingWithCopyWarning` in Pandas](https://www.analyticsvidhya.com/blog/2021/11/3-ways-to-deal-with-settingwithcopywarning-in-pandas/)
 - [100 data puzzles for pandas](https://github.com/ajcr/100-pandas-puzzles), ranging from short and simple to super tricky
 - [101 Pandas Exercises for Data Analysis](https://www.machinelearningplus.com/python/101-pandas-exercises-python/)
 
@@ -180,8 +198,11 @@ Indexing, Slicing, Stepping.
 # 21.10.2021
 ## python
 - [Here’s How to Build a Pivot Table using Pandas in Python](https://www.analyticsvidhya.com/blog/2020/03/pivot-table-pandas-python/)
+- COOL! [Is there any simple way to benchmark Python script?](https://stackoverflow.com/questions/1593019/is-there-any-simple-way-to-benchmark-python-script)
+If you don't want to write boilerplate code for timeit and get easy to analyze results, take a look at [benchmarkit](https://github.com/vgrabovets/benchmarkit). Also it saves history of previous runs, so it is easy to compare the same function over the course of development.
 - [timeit — Измерение времени выполнения небольших фрагментов кода](https://digitology.tech/docs/python_3/library/timeit.html)
 - [timeit — Measure execution time of small code snippets](https://docs.python.org/3/library/timeit.html)
+- [Python Timeit() with Examples](https://www.guru99.com/timeit-python-examples.html). Triple quotes for long code
 - [Python 101: An Intro to Benchmarking your code](https://www.blog.pythonlibrary.org/2016/05/24/python-101-an-intro-to-benchmarking-your-code/)
 И вот он, трындец по скорости:
 ```

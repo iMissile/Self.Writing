@@ -402,7 +402,7 @@ The way to read this out loud is: "Take DT, subset rows by i, then compute j gro
 - [R Data Table - join but filter with update](https://stackoverflow.com/questions/46588340/r-data-table-join-but-filter-with-update)
 - [How to exclude one column from data.table OR convert to data.table to MTS](https://stackoverflow.com/questions/12046079/how-to-exclude-one-column-from-data-table-or-convert-to-data-table-to-mts). `dt[,-1,with=FALSE]`
 - [Why is allow.cartesian required at times when when joining data.tables with duplicate keys?](https://stackoverflow.com/questions/23087358/why-is-allow-cartesian-required-at-times-when-when-joining-data-tables-with-dupl)
-
+- [Split text string in a data.table columns](https://stackoverflow.com/questions/18154556/split-text-string-in-a-data-table-columns)
 
 ## data.table lookup
 - [Joins vs case whens - speed and memory tradeoffs](https://themockup.blog/posts/2021-02-13-joins-vs-casewhen-speed-and-memory-tradeoffs/)

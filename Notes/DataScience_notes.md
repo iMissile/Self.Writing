@@ -235,6 +235,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Engineering Production-Grade Shiny Apps](https://engineering-shiny.org/index.html) by Colin Fay, Sébastien Rochette, Vincent Guyader and Cervan Girard
 - [Apache Arrow R Cookbook](https://arrow.apache.org/cookbook/r/index.html)
 - [Rcpp: Seamless R and C++ Integration](https://www.rcpp.org/)
+- [Doing Bayesian Data Analysis in brms and the tidyverse](https://bookdown.org/content/3686/) by A Solomon Kurz
 
 
 # Articles
@@ -773,6 +774,7 @@ Trelliscope is a visualization approach based on the idea of “small multiples�
 	- COOL! [Introducing trelliscopejs](https://ryanhafen.com/blog/trelliscopejs/)
 - COOL! [RStudio addin for wrapping RMarkdown paragraphs](https://github.com/tjmahr/WrapRmd). You highlight the text, and hit `Ctrl/Cmd + Shift + /` to wrap the text and get.
 - [ThinkR-open/remedy](https://github.com/ThinkR-open/remedy). RStudio Addins to Simplify Markdown Writing
+- [TODO, FIXME, CHANGED etc. comments in your code.](https://github.com/dokato/todor)
 	
 
 
@@ -1257,6 +1259,29 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 ## R
 - COOL! [Diffify](https://www.jumpingrivers.com/blog/diffify-launch/) by Clarissa Barratt & Parisa Gregg.
 With Diffify, you can compare versions of R packages at the click of a button.
+- COOL! [A guide to modeling outcomes that have lots of zeros with Bayesian hurdle lognormal and hurdle Gaussian regression models](https://www.andrewheiss.com/blog/2022/05/09/hurdle-lognormal-gaussian-brms/) by Andrew Heiss
+- COOL! [The StatQuest Illustrated Guide to Machine Learning (PDF)](https://statquest.gumroad.com/l/wvtmc)
+- COOL! [rim](https://github.com/r-lib/rim). The R Installation Manager.
+Install, remove, configure R versions.
+Works on macOS, Windows and Linux (Ubuntu and Debian, x86_64 and aarch64).
+- [unifir](https://docs.ropensci.org/unifir/): A Unifying API for Working with Unity in R
+- COOL! [Replicating “Zoom to selected features” function in ArcGIS / QGIS with R shiny](https://urbandatapalette.com/post/2022-05-shiny-zoom-selected-features/)
+Step-by-step guide on recreating "Zoom to selected features" button in shiny, with leaflet and DT
+- [countrycode](https://vincentarelbundock.github.io/countrycode/) standardizes country names, converts them into ~40 different coding schemes, and assigns region descriptors. 
+
+## DS
+- [Jaro and Jaro-Winkler similarity](https://www.geeksforgeeks.org/jaro-and-jaro-winkler-similarity/)
+- [MMIX Home Page](http://mmix.cs.hm.edu/). MMIX — 64-битная RISC архитектура компьютера, разработанная Дональдом Кнутом с существенным вкладом Джона Хеннесси и Ричарда Сайтса. По словам самого Дональда Кнута: MMIX — компьютер, цель которого проиллюстрировать аспекты программирования на машинном уровне.
+- Любопытно, стоит поглядеть. К задачам мониторинга актуально. [Introducing arcticDB: A database for Observability](https://www.polarsignals.com/blog/posts/2022/05/04/introducing-arcticdb/)
+Continuous profiling needed a columnar database, so we built it.
+- [Malloy](https://github.com/looker-open-source/malloy) is an experimental language for describing data relationships and transformations.
+- [Exploring the time geography of public transport networks with gtfs2gps](https://www.urbandemographics.org/post/time-geography-public-transport-networks-gtfs2gps/)
+
+## Viz
+- [Beatiful Business. Gauge chart design](https://public.tableau.com/views/BeautifulBusiness-GaugeCharts/GaugeCharts?:language=en-US&:display_count=n&:origin=viz_share_link:showVizHome=no)
+- [Analytics X3: Tidy Tuesday US Solar](https://kpress.dev/blog/2022-05-06-analytics-x3-tidytuesday-us-solar/)
+May 6, 2022 in Analytics X3, TidyTuesday
+Introducing Analytics Three Ways (AX3)
 
 # 28.04.2022
 ## R
@@ -1302,6 +1327,7 @@ You can use dlib : C++ tool for non-linear optimization which includes functions
 
 ## e-books
 - [Computer Age Statistical Inference. Algorithms, Evidence, and Data Science](https://hastie.su.domains/CASI_files/PDF/casi.pdf) by Bradley Efron, Trevor Hastie, Stanford University
+- [Mathematics for Machine Learning](https://mml-book.github.io/)
 
 # 11.04.2022
 ## R
