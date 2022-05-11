@@ -1276,6 +1276,7 @@ Step-by-step guide on recreating "Zoom to selected features" button in shiny, wi
 Continuous profiling needed a columnar database, so we built it.
 - [Malloy](https://github.com/looker-open-source/malloy) is an experimental language for describing data relationships and transformations.
 - [Exploring the time geography of public transport networks with gtfs2gps](https://www.urbandemographics.org/post/time-geography-public-transport-networks-gtfs2gps/)
+- В ответ на статью про VSM. [Studies On Slack](https://www.lesswrong.com/posts/GZSzMqr8hAB2dR8pk/studies-on-slack)
 
 ## Viz
 - [Beatiful Business. Gauge chart design](https://public.tableau.com/views/BeautifulBusiness-GaugeCharts/GaugeCharts?:language=en-US&:display_count=n&:origin=viz_share_link:showVizHome=no)

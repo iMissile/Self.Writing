@@ -1,4 +1,3 @@
-
 # проблемы python
 - GIL:
     - [Как устроен GIL в Python](https://habr.com/ru/post/84629/)
@@ -24,6 +23,18 @@ pip install -U $(pip freeze | awk -F'[=]' '{print $1}')
 Windows PowerShell update
 foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
+- [IPython. Interactive Computing](https://ipython.org/). Он же Jypiter.
+
+# 11.05.2022
+- Форматный вывод. 
+```
+var = 15.734
+print ("Variable as string = %06.2f" % (var))
+```
+- [Python String Formatting Best Practices](https://realpython.com/python-string-formatting/)
+- [A Guide to the Newer Python String Format Techniques](https://realpython.com/python-formatted-output/)
+- [string — Common string operations](https://docs.python.org/3/library/string.html#string-formatting)
+
 
 # 08.05.2022
 - Целая философская дискуссия. [Pandas dataframe get first row of each group](https://stackoverflow.com/questions/20067636/pandas-dataframe-get-first-row-of-each-group)
@@ -200,6 +211,9 @@ Indexing, Slicing, Stepping.
 - [Here’s How to Build a Pivot Table using Pandas in Python](https://www.analyticsvidhya.com/blog/2020/03/pivot-table-pandas-python/)
 - COOL! [Is there any simple way to benchmark Python script?](https://stackoverflow.com/questions/1593019/is-there-any-simple-way-to-benchmark-python-script)
 If you don't want to write boilerplate code for timeit and get easy to analyze results, take a look at [benchmarkit](https://github.com/vgrabovets/benchmarkit). Also it saves history of previous runs, so it is easy to compare the same function over the course of development.
+	- Требует ставить Cython для сборки пандаса на этапе инсталляции. [Cython](https://pypi.org/project/Cython/)
+	The Cython compiler for writing C extensions for the Python language. 
+	`pip install Cython`
 - [timeit — Измерение времени выполнения небольших фрагментов кода](https://digitology.tech/docs/python_3/library/timeit.html)
 - [timeit — Measure execution time of small code snippets](https://docs.python.org/3/library/timeit.html)
 - [Python Timeit() with Examples](https://www.guru99.com/timeit-python-examples.html). Triple quotes for long code
