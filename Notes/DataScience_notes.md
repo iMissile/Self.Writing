@@ -1435,7 +1435,7 @@ pryr::address(abc) == pryr::address(getabc)
 - [7.21 How can I turn a string into a variable?](https://cran.r-project.org/doc/FAQ/R-FAQ.html#How-can-I-turn-a-string-into-a-variable_003f)
 
 # 20.02.2022
-## R
+## R, Excel
 - COOL! [BERT](https://bert-toolkit.com/) is a tool for connecting Excel with the statistics language R. Specifically, it’s designed to support running R functions from Excel spreadsheet cells. In Excel terms, it’s for writing User-Defined Functions (UDFs) in R.
 - [Python for Excel](https://www.xlwings.org/)
 - [What is the maximum length of a valid email address?](https://stackoverflow.com/questions/386294/what-is-the-maximum-length-of-a-valid-email-address)
