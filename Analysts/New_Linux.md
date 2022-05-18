@@ -97,3 +97,6 @@ sudo snap install pdftk
 # tmux
 - [Getting started with Tmux](https://linuxize.com/post/getting-started-with-tmux/)
 - [Tmux on Windows](https://codeandkeep.com/Tmux-on-Windows/). Written on August 8, 2020
+
+# ubuntu не загружается, только GRUB виден
+- [How do I boot my PC from GRUB? {duplicate}](https://askubuntu.com/questions/929833/how-do-i-boot-my-pc-from-grub)

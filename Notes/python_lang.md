@@ -25,6 +25,12 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
 - [IPython. Interactive Computing](https://ipython.org/). Он же Jypiter.
 
+# 17.05.2022
+- COOL! [Python decorator patterns](https://bytepawn.com/python-decorator-patterns.html)
+- [Fundamentals of Matrix Algebra with Python | Part 1](https://towardsdatascience.com/fundamentals-of-matrix-algebra-with-python-part-1-85aaa17e3632)
+- [Using the Python match statement](https://tonybaloney.github.io/posts/python-match-statement.html)
+- [Linear Regression in Python](https://realpython.com/linear-regression-in-python/)
+
 # 11.05.2022
 - Форматный вывод. 
 ```

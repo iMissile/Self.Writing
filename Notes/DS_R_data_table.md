@@ -343,6 +343,7 @@ flights_tb %>%
 - COOL! [Understanding exactly when a data.table is a reference to (vs a copy of) another data.table](https://stackoverflow.com/questions/10225098/understanding-exactly-when-a-data-table-is-a-reference-to-vs-a-copy-of-another)
 - COOL! [Should nafill replace NaN values? #4020 {Closed}](https://github.com/Rdatatable/data.table/issues/4020). Решено положительно в [nafill gains nan argument #4025](https://github.com/Rdatatable/data.table/pull/4025)
 - [Simultaneous order, row-filter and column-select with data.table](https://stackoverflow.com/questions/30606395/simultaneous-order-row-filter-and-column-select-with-data-table)
+- [select data.table R rows based on row number and condition](https://stackoverflow.com/questions/39422316/select-data-table-r-rows-based-on-row-number-and-condition)
 
 
 ## data.table joins

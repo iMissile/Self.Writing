@@ -1041,6 +1041,7 @@ You can provide information about your app that Shiny showcase will use by creat
 
 
 ## Статистика
+- [Jamovi](https://www.jamovi.org/). free and open statistical software to bridge the gap between researcher and statistician
 - [Statistics with R. 1.7 - Confidence intervals and bootstrapping](https://arc.lib.montana.edu/book/statistics-with-r-textbook/item/49#Statistics%20with%20R++1)
 - [3.14.1 Wilcoxon rank sum test](https://bookdown.org/danieljcarter/r4steph/non-parametric-tests.html)
 - COOL! [Mann-Whitney test is not just a test of medians: differences in spread can be important](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1120984/)
@@ -1255,6 +1256,41 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 	- [Bikemap] Shiny app: 2exp3.shinyapps.io/mapa-ciclista/_w_6e13cdc9/ Repo: github.com/2exp3/bikemapp
 
 
+# 18.05.2022
+## R
+- Copy object attributes (иногда бывает нужно для грязных хаков)
+	- [R copying attributes over to another object](https://stackoverflow.com/questions/27735868/r-copying-attributes-over-to-anther-object). Wouldn't a simple `attributes(b) <- attributes(a)` work? This will just be executed after creating b from a subset of the data in a, so it's not really a single statement, but should work. DeanAttali
+	- [Getting attributes of Objects in R Language – attributes() and attr() Function](https://www.geeksforgeeks.org/getting-attributes-of-objects-in-r-language-attributes-and-attr-function/)
+- Survey analysis
+	- [Survey Raking: An Illustration](https://datawookie.dev/blog/2018/12/survey-raking-an-illustration/)
+	- [survey: Analysis of Complex Survey Samples](https://cran.r-project.org/web/packages/survey/index.html)
+	- [SURVEY DATA ANALYSIS WITH R](https://stats.oarc.ucla.edu/r/seminars/survey-data-analysis-with-r/)
+	- The Epidemiologist R Handbook. [26 Survey analysis](https://epirhandbook.com/en/survey-analysis.html)
+	- [Questionnaires and Surveys: Analyses with R](https://slcladal.github.io/surveys.html)
+	- e-book [Complex Surveys: a guide to analysis using R](http://r-survey.r-forge.r-project.org/svybook/)
+
+## DS
+- COOL! [The FWL Theorem, Or How To Make Regressions Intuitive](https://towardsdatascience.com/the-fwl-theorem-or-how-to-make-all-regressions-intuitive-59f801eb3299)
+	- [Partial Time Regressions as Compared with Individual Trends](https://www.jstor.org/stable/1907330) by Ragnar Frisch and Frederick V. Waugh
+
+# 17.05.2022
+- [Text Mining. Algorithm for Data Preparation and Model Building](https://developers.google.com/machine-learning/guides/text-classification/step-2-5)
+- [Data Cleaning in R: 2 R Packages to Clean and Validate Datasets](https://appsilon.com/data-cleaning-in-r/)
+- [easystats: Quickly investigate model performance](https://www.business-science.io/r/2021/07/13/easystats-performance-check-model.html)
+- [How to master Streamlit for data science](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/). The essential Streamlit for all your data science needs
+- [What is Deep Learning? Simple Explained](https://glweb.eu/blog/digital-transformation/201-what-is-deep-learning)
+- [Event-Driven Scalability in Data Processing Pipeline](https://towardsdatascience.com/event-driven-scalability-in-data-processing-pipeline-aa4417d7950a)
+- [Git for Professionals – Free Version Control Course](https://www.freecodecamp.org/news/git-for-professionals/)
+
+# 16.05.2022
+- [Faster R package installation](https://www.jumpingrivers.com/blog/faster-r-package-installation-rstudio/)
+- [Binary R Packages for Linux: Past, Present and Future](https://arxiv.org/pdf/2103.08069.pdf) by Iñaki Ucar and Dirk Eddelbuettel
+- [Learn by Marketing. Linear Regression in R](https://www.learnbymarketing.com/tutorials/linear-regression-in-r/)
+- Запускаем `lm` для кучи колонок:
+	- COOL! [Creating new Functions with Linear Regression in R](https://stackoverflow.com/questions/38175775/creating-new-functions-with-linear-regression-in-r)
+	- COOL! [Linear Regression in R without names of column](https://stackoverflow.com/questions/43004888/linear-regression-in-r-without-names-of-column)
+`debugonce(lm.fit)`
+
 # 04.05.2022
 ## R
 - COOL! [Diffify](https://www.jumpingrivers.com/blog/diffify-launch/) by Clarissa Barratt & Parisa Gregg.
@@ -1304,6 +1340,7 @@ I’m very excited to announce the first release of ivs (said, “eye-vees”), 
 You can use dlib : C++ tool for non-linear optimization which includes functions for newton convex optimization etc.
 [dlib C++ Library - Introduction](http://dlib.net/intro.html)
 - [Линейное программирование](https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)
+- [Introduction to Linear Programming in Python](https://mlabonne.github.io/blog/linearoptimization/). A guide to mathematical optimization with Google OR-Tools
 
 
 # 25.04.2022
