@@ -236,6 +236,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Apache Arrow R Cookbook](https://arrow.apache.org/cookbook/r/index.html)
 - [Rcpp: Seamless R and C++ Integration](https://www.rcpp.org/)
 - [Doing Bayesian Data Analysis in brms and the tidyverse](https://bookdown.org/content/3686/) by A Solomon Kurz
+- [Applied Time Series Analysis for Fisheries and Environmental Sciences](https://atsa-es.github.io/atsa-labs/) by E. E. Holmes, M. D. Scheuerell, and E. J. Ward. 2021-07-28
 
 
 # Articles
@@ -1313,6 +1314,9 @@ Continuous profiling needed a columnar database, so we built it.
 - [Malloy](https://github.com/looker-open-source/malloy) is an experimental language for describing data relationships and transformations.
 - [Exploring the time geography of public transport networks with gtfs2gps](https://www.urbandemographics.org/post/time-geography-public-transport-networks-gtfs2gps/)
 - В ответ на статью про VSM. [Studies On Slack](https://www.lesswrong.com/posts/GZSzMqr8hAB2dR8pk/studies-on-slack)
+- [Downloading an Entire Web Site with wget](https://www.linuxjournal.com/content/downloading-entire-web-site-wget)
+- [13 Website copiers that help you keep offline mirrored versions of websites](https://medevel.com/os1-3-web-copier/)
+	- [Website Cloner](https://github.com/imthaghost/goclone) - Utilizes powerful Go routines to clone websites to your computer within seconds.
 
 ## Viz
 - [Beatiful Business. Gauge chart design](https://public.tableau.com/views/BeautifulBusiness-GaugeCharts/GaugeCharts?:language=en-US&:display_count=n&:origin=viz_share_link:showVizHome=no)
@@ -1653,6 +1657,16 @@ Plot a graph of the data against time. If it looks like the variation increases 
 - [5.1 A tidy forecasting workflow](https://otexts.com/fpp3/a-tidy-forecasting-workflow.html). Тут, похоже, актуально.
 - [`forecast()` documentation: obtaining point forecasts #226 {Closed}](https://github.com/tidyverts/fable/issues/226)
 - COOL! [Orbit: A Python Package for Bayesian Forecasting](https://github.com/uber/orbit)
+- Проверка на стационарность (нужно проводить перед анализом временных рядов)
+	- [Тест Дики — Фуллера](https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D1%81%D1%82_%D0%94%D0%B8%D0%BA%D0%B8_%E2%80%94_%D0%A4%D1%83%D0%BB%D0%BB%D0%B5%D1%80%D0%B0)
+	- [Augmented Dickey-Fuller Test in Python (With Example)](https://www.statology.org/dickey-fuller-test-python/)
+	- [Augmented Dickey-Fuller Test in R (With Example)](https://www.statology.org/dickey-fuller-test-in-r/)
+	- [Augmented Dickey-Fuller (ADF) Test in R](https://kiandlee.blogspot.com/2021/12/augmented-dickey-fuller-adf-test-in-r.html)
+	- [How to Perform an Augmented Dickey-Fuller Test in R](https://www.geeksforgeeks.org/how-to-perform-an-augmented-dickey-fuller-test-in-r/)
+	- [Stationarity Tests in R, checking mean, variance and covariance](https://stats.stackexchange.com/questions/182764/stationarity-tests-in-r-checking-mean-variance-and-covariance)
+	- [How to make adf.test print more precise p-value in R](https://stackoverflow.com/questions/22031954/how-to-make-adf-test-print-more-precise-p-value-in-r)
+	- [ADF test results confusion](https://stats.stackexchange.com/questions/142003/adf-test-results-confusion)
+	- Отличная книга, глава из нее. "Applied Time Series Analysis for Fisheries and Environmental Sciences" [5.3 Dickey-Fuller and Augmented Dickey-Fuller tests](https://atsa-es.github.io/atsa-labs/sec-boxjenkins-aug-dickey-fuller.html)
 
 # 31.01.2022
 ## R

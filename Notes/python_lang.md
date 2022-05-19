@@ -8,6 +8,11 @@
 	- [What is BlockManager and why does it exist?](https://github.com/pydata/pandas-design/blob/a0f1d32094f5030cc06ec09c8582b5a7b7798065/source/internal-architecture.rst#what-is-blockmanager-and-why-does-it-exist)
 	- [Block manager rewrite](https://pandas.pydata.org/docs/development/roadmap.html#block-manager-rewrite)
 
+# недостатки python
+- [Почему будущее не за Python](https://habr.com/ru/company/edison/blog/495610/)
+- [Пока, Python. Привет, Julia❗](https://habr.com/ru/company/edison/blog/506656/)
+- [Python — это медленно. Почему?](https://habr.com/ru/company/ruvds/blog/418823/)
+
 # IDE & Installation
 - [Spyder](https://www.spyder-ide.org/) is a free and open source scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts.
 - [Using Python with the RStudio IDE](https://support.rstudio.com/hc/en-us/articles/1500007929061-Using-Python-with-the-RStudio-IDE)
@@ -30,6 +35,12 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 - [Fundamentals of Matrix Algebra with Python | Part 1](https://towardsdatascience.com/fundamentals-of-matrix-algebra-with-python-part-1-85aaa17e3632)
 - [Using the Python match statement](https://tonybaloney.github.io/posts/python-match-statement.html)
 - [Linear Regression in Python](https://realpython.com/linear-regression-in-python/)
+# 13.05.2022
+- [what is the difference between series/dataframe and ndarray?](https://stackoverflow.com/questions/44236661/what-is-the-difference-between-series-dataframe-and-ndarray).
+After some research I found the answer to my question I asked above. For anyone who needs, here it is from [pandas docs](https://pandas.pydata.org/pandas-docs/stable/dsintro.html#vectorized-operations-and-label-alignment-with-series):
+_A key difference between Series and ndarray is that operations between Series automatically align the data based on the label. Thus, you can write computations without giving consideration to whether the Series involved have the same labels._
+- [NumPy Arrays vs. Pandas Series: A Performance Comparison](https://nickmccullum.com/numpy-arrays-pandas-series-performance-comparison/). Indexing NumPy Arrays is faster than Indexing Pandas Series Objects
+- [I have 12000 known URLs, what is the fastest way to scrape them with Python?](https://stackoverflow.com/questions/63580445/i-have-12000-known-urls-what-is-the-fastest-way-to-scrape-them-with-python)
 
 # 11.05.2022
 - Форматный вывод. 
