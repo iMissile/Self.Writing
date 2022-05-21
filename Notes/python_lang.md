@@ -30,11 +30,17 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
 - [IPython. Interactive Computing](https://ipython.org/). Он же Jypiter.
 
+
+# 20.05.2022
+- [What’s in which Python](https://nedbatchelder.com/text/which-py.html). This is a summary of what features appeared in which versions of Python. Items with a star were introduced with a __future__ import.
+- [Overview of Pandas Data Types](https://pbpython.com/pandas_dtypes.html)
+
 # 17.05.2022
 - COOL! [Python decorator patterns](https://bytepawn.com/python-decorator-patterns.html)
 - [Fundamentals of Matrix Algebra with Python | Part 1](https://towardsdatascience.com/fundamentals-of-matrix-algebra-with-python-part-1-85aaa17e3632)
 - [Using the Python match statement](https://tonybaloney.github.io/posts/python-match-statement.html)
 - [Linear Regression in Python](https://realpython.com/linear-regression-in-python/)
+
 # 13.05.2022
 - [what is the difference between series/dataframe and ndarray?](https://stackoverflow.com/questions/44236661/what-is-the-difference-between-series-dataframe-and-ndarray).
 After some research I found the answer to my question I asked above. For anyone who needs, here it is from [pandas docs](https://pandas.pydata.org/pandas-docs/stable/dsintro.html#vectorized-operations-and-label-alignment-with-series):

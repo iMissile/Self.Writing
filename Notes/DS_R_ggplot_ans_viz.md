@@ -299,6 +299,7 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - [7.2 Using Mathematical Expressions in Annotations](https://r-graphics.org/recipe-annotate-text-math). Use `annotate(geom = "text")` with `parse = TRUE`
 - COOL! [Formatting Math Symbols and Expressions in ggplot Labels](https://www.benjaminackerman.com/post/2019-03-08-equation_labels/). In order to add math notation to those labels, we can use the `expression()` function to specify the label text.
 - [plotmath {grDevices}](https://stat.ethz.ch/R-manual/R-devel/library/grDevices/html/plotmath.html). Mathematical Annotation in R
+- [Визуализируй это: визуализация данных в R](https://baltti.github.io/workshop-DH21/ggplot2-tutorial-DH.html) by Балтыжакова Татьяна
 
 ## highlighting
 - COOL! [gghighlight 0.3.2](https://yutani.rbind.io/post/2021-06-07-gghighlight-032/)

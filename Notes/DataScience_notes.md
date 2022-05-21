@@ -1257,6 +1257,32 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 	- [Bikemap] Shiny app: 2exp3.shinyapps.io/mapa-ciclista/_w_6e13cdc9/ Repo: github.com/2exp3/bikemapp
 
 
+# 20.05.2022
+## R Geo
+- COOL! [Replicating “Zoom to selected features” function in ArcGIS / QGIS with R shiny](https://urbandatapalette.com/post/2022-05-shiny-zoom-selected-features/)
+Step-by-step guide on recreating "Zoom to selected features" button in shiny, with leaflet and DT
+- COOL! [Interactive dot-density maps are one of my favorite ways to explore city characteristics. The combo of tidycensus + `as_dot_density()` + tmap's view mode makes these maps straightforward to create https://t.co/OBFLd5lpA8 #rstats https://t.co/RBPgxf7aGu
+[gist](https://gist.github.com/walkerke/db2a2a90ec58918cd629ddd8e2bb689e#file-housing_dots-r)
+
+## R
+- [BiocManager. Installing and Managing Bioconductor Packages](https://cran.r-project.org/web/packages/BiocManager/vignettes/BiocManager.html)
+```
+> BiocManager::install("ggtree")
+'getOption("repos")' replaces Bioconductor standard repositories, see '?repositories' for details
+
+replacement repositories:
+    CRAN: https://cran.rstudio.com/
+```
+- [Some Additional Distributions R package](https://github.com/shabbychef/sadists)
+- [RStudio Cheat Sheets](https://github.com/rstudio/cheatsheets)
+- COOL! [Causal design patterns for data analysts](https://emilyriederer.netlify.app/post/causal-design-patterns/)
+
+
+## Kaggle solutions
+- [Yesterday I asked some Kagglers about their favorite creative ideas with real-world applicability that they found through Competitions ... ](https://twitter.com/MeganRisdal/status/1527306157383069697)
+	- [Predicting Molecular Properties with BERT](https://www.kaggle.com/c/champs-scalar-coupling/discussion/106572)
+Can you measure the magnetic interactions between a pair of atoms? 3rd solution - BERT in chemistry - End to End is all you need
+
 # 18.05.2022
 ## R
 - Copy object attributes (иногда бывает нужно для грязных хаков)
@@ -1269,10 +1295,21 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 	- The Epidemiologist R Handbook. [26 Survey analysis](https://epirhandbook.com/en/survey-analysis.html)
 	- [Questionnaires and Surveys: Analyses with R](https://slcladal.github.io/surveys.html)
 	- e-book [Complex Surveys: a guide to analysis using R](http://r-survey.r-forge.r-project.org/svybook/)
+	
+## R & graph & tree
+- [Network chart with R and igraph: chart parameters](https://r-graph-gallery.com/248-igraph-plotting-parameters.html)
+- [Tree diagrams in R](https://www.datakwery.com/post/tree-diagrams-in-r/) строят с использованием `data.tree`.
+- [Introduction to tree diagram with R and ggraph](https://r-graph-gallery.com/334-basic-dendrogram-with-ggraph.html)
+- COOL! [Visualizing and Annotating Phylogenetic Trees with R+ggtree](https://bioconnector.github.io/workshops/r-ggtree.html)
+- [ggtree](http://bioconductor.org/packages/release/bioc/html/ggtree.html). an R package for visualization of tree and annotation data
+- COOL! [a complete reference book for treeio, tidytree and ggtree packages](https://github.com/YuLab-SMU/treedata-book)
 
 ## DS
 - COOL! [The FWL Theorem, Or How To Make Regressions Intuitive](https://towardsdatascience.com/the-fwl-theorem-or-how-to-make-all-regressions-intuitive-59f801eb3299)
 	- [Partial Time Regressions as Compared with Individual Trends](https://www.jstor.org/stable/1907330) by Ragnar Frisch and Frederick V. Waugh
+- [Fast Matrix Multiplication (Animated)](https://jott.live/html/mm_impl_anim)
+- COOL! Сайт с анимацией. [The Random Forest Algorithm](https://mlu-explain.github.io/random-forest/)
+How the majority vote and well-placed randomness can enhance the decision tree model.
 
 # 17.05.2022
 - [Text Mining. Algorithm for Data Preparation and Model Building](https://developers.google.com/machine-learning/guides/text-classification/step-2-5)
@@ -1280,7 +1317,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [easystats: Quickly investigate model performance](https://www.business-science.io/r/2021/07/13/easystats-performance-check-model.html)
 - [How to master Streamlit for data science](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/). The essential Streamlit for all your data science needs
 - [What is Deep Learning? Simple Explained](https://glweb.eu/blog/digital-transformation/201-what-is-deep-learning)
-- [Event-Driven Scalability in Data Processing Pipeline](https://towardsdatascience.com/event-driven-scalability-in-data-processing-pipeline-aa4417d7950a)
+- [Event-Driven Scalability in Data Processing Pipeline](	https://towardsdatascience.com/event-driven-scalability-in-data-processing-pipeline-aa4417d7950a)
 - [Git for Professionals – Free Version Control Course](https://www.freecodecamp.org/news/git-for-professionals/)
 
 # 16.05.2022
@@ -1302,8 +1339,6 @@ With Diffify, you can compare versions of R packages at the click of a button.
 Install, remove, configure R versions.
 Works on macOS, Windows and Linux (Ubuntu and Debian, x86_64 and aarch64).
 - [unifir](https://docs.ropensci.org/unifir/): A Unifying API for Working with Unity in R
-- COOL! [Replicating “Zoom to selected features” function in ArcGIS / QGIS with R shiny](https://urbandatapalette.com/post/2022-05-shiny-zoom-selected-features/)
-Step-by-step guide on recreating "Zoom to selected features" button in shiny, with leaflet and DT
 - [countrycode](https://vincentarelbundock.github.io/countrycode/) standardizes country names, converts them into ~40 different coding schemes, and assigns region descriptors. 
 
 ## DS
@@ -1317,12 +1352,16 @@ Continuous profiling needed a columnar database, so we built it.
 - [Downloading an Entire Web Site with wget](https://www.linuxjournal.com/content/downloading-entire-web-site-wget)
 - [13 Website copiers that help you keep offline mirrored versions of websites](https://medevel.com/os1-3-web-copier/)
 	- [Website Cloner](https://github.com/imthaghost/goclone) - Utilizes powerful Go routines to clone websites to your computer within seconds.
+- COOL! [Github add math to markdown](https://github.blog/2022-05-19-math-support-in-markdown/)
+	- Sample [A quick recipe to learn all about Transformers](https://github.com/dair-ai/Transformers-Recipe)
+- [DC Programming and DCA](http://www.lita.univ-lorraine.fr/~lethi/index.php/dca.html). Theory, Algorithms and Applications. DC = Difference of Convex functions
 
 ## Viz
 - [Beatiful Business. Gauge chart design](https://public.tableau.com/views/BeautifulBusiness-GaugeCharts/GaugeCharts?:language=en-US&:display_count=n&:origin=viz_share_link:showVizHome=no)
 - [Analytics X3: Tidy Tuesday US Solar](https://kpress.dev/blog/2022-05-06-analytics-x3-tidytuesday-us-solar/)
 May 6, 2022 in Analytics X3, TidyTuesday
 Introducing Analytics Three Ways (AX3)
+- [BIL Navigator](https://www.mckinsey.com/industries/public-and-social-sector/our-insights/bil-navigator). Explore Bipartisan Infrastructure Law programs and monitor upcoming deadlines.
 
 # 28.04.2022
 ## R
@@ -1667,6 +1706,10 @@ Plot a graph of the data against time. If it looks like the variation increases 
 	- [How to make adf.test print more precise p-value in R](https://stackoverflow.com/questions/22031954/how-to-make-adf-test-print-more-precise-p-value-in-r)
 	- [ADF test results confusion](https://stats.stackexchange.com/questions/142003/adf-test-results-confusion)
 	- Отличная книга, глава из нее. "Applied Time Series Analysis for Fisheries and Environmental Sciences" [5.3 Dickey-Fuller and Augmented Dickey-Fuller tests](https://atsa-es.github.io/atsa-labs/sec-boxjenkins-aug-dickey-fuller.html)
+- [Similarity Measures and Dimensionality Reduction Techniques for Time Series Data Mining](https://www.intechopen.com/chapters/39030) 
+- [How can we quantify similarity between time series?](https://tech.gorilla.co/how-can-we-quantify-similarity-between-time-series-ed1d0b633ca0)
+- [Graph Convolutional Network for Time Series — An Intro](https://towardsdatascience.com/graph-convolutional-network-for-time-series-an-intro-6d1b01ea3bc)
+Graph convolutional network (GCN) is an absolute game-changer in the deep learning domain.
 
 # 31.01.2022
 ## R
