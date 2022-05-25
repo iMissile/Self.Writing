@@ -485,6 +485,7 @@ Slight correction to a previous answer. And if you tab out of this one and lose 
 - [Paragon HFS+ for Windows]()
 - [Passware Kit Forensic 2017 v1]()
 - [Password Agent]()
+- [PDFsam Basic](https://pdfsam.org/pdfsam-basic/) - a free, open source, multi-platform software designed to split, merge, extract pages, mix and rotate PDF files.
 - [Photoshop 2015]()
 - [Plex Media Server]()
 - [Postman]()

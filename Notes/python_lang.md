@@ -30,6 +30,9 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
 - [IPython. Interactive Computing](https://ipython.org/). Он же Jypiter.
 
+# 23.05.2022
+- [How can a class that inherits from a NumPy array change its own values?](https://stackoverflow.com/questions/27910013/how-can-a-class-that-inherits-from-a-numpy-array-change-its-own-values)
+
 
 # 20.05.2022
 - [What’s in which Python](https://nedbatchelder.com/text/which-py.html). This is a summary of what features appeared in which versions of Python. Items with a star were introduced with a __future__ import.

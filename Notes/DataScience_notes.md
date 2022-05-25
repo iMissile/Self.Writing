@@ -237,6 +237,8 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Rcpp: Seamless R and C++ Integration](https://www.rcpp.org/)
 - [Doing Bayesian Data Analysis in brms and the tidyverse](https://bookdown.org/content/3686/) by A Solomon Kurz
 - [Applied Time Series Analysis for Fisheries and Environmental Sciences](https://atsa-es.github.io/atsa-labs/) by E. E. Holmes, M. D. Scheuerell, and E. J. Ward. 2021-07-28
+- [Social Data Science with R](https://www.sds.pub/index.html) by Daniel Anderson, Brendan Cullen, Ouafaa Hmaddi, 2020-12-24
+
 
 
 # Articles
@@ -1257,6 +1259,52 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 	- [Bikemap] Shiny app: 2exp3.shinyapps.io/mapa-ciclista/_w_6e13cdc9/ Repo: github.com/2exp3/bikemapp
 
 
+# 23.05.2022
+## DS
+- [Пролистал 2-е издание Hacker's Delight в поисках занятных задач для лабника по Verilog & FPGA](https://panchul.livejournal.com/583893.html)
+- e-book [Social Data Science with R](https://www.sds.pub/index.html)
+
+## Petri Net
+- [Pnml.org](https://www.pnml.org/) is the reference site for the implementation of Petri Net Markup Language (PNML) defined by the standard ISO/IEC 15909 Part 2. Part 1 is published here.
+- [Coq](https://coq.inria.fr/) is a formal proof management system. It provides a formal language to write mathematical definitions, executable algorithms and theorems together with an environment for semi-interactive development of machine-checked proofs.
+- Масса работ. [MoVe centers](https://www.lip6.fr/recherche/team.php?acronyme=MoVe) its research on the modeling and analysis of complex and dynamic distributed systems.
+- [CPN Tools](https://cpntools.org/). A tool for editing, simulating, and analyzing Colored Petri nets
+- COOL! [A BPMN 2.0 specification compliant token simulator.](https://github.com/bpmn-io/bpmn-js-token-simulation)
+
+
+## R
+- генератор логов рвет на `debugonce(processmapR:::process_map.eventlog)`. Вот такая ошибка на последнем merge: `Error in rbindlist(l, use.names, fill, idcol) : 
+  Class attribute on column 7 of item 2 does not match with column 7 of item 1.` в коде
+```
+  base_precedence <- base_log[, `:=`(ACTIVITY_CLASSIFIER_, 
+    ordered(ACTIVITY_CLASSIFIER_, levels = c("ARTIFICIAL_START", 
+      as.character(sort(activity_labels(eventlog))), "ARTIFICIAL_END")))][, 
+    `:=`(next_act = data.table::shift(ACTIVITY_CLASSIFIER_, 
+      1, type = "lead"), next_start_time = data.table::shift(start_time, 
+      1, type = "lead"), next_end_time = data.table::shift(end_time, 
+      1, type = "lead")), by = CASE_CLASSIFIER_] %>% merge(base_nodes, 
+    by.x = c("ACTIVITY_CLASSIFIER_"), by.y = c("ACTIVITY_CLASSIFIER_"), 
+    all = TRUE) %>% merge(base_nodes, by.x = c("next_act"), 
+    by.y = c("ACTIVITY_CLASSIFIER_"), all = TRUE) %>% as.data.frame() %>% 
+    select(everything(), -n.x, -n.y, from_id = node_id.x, 
+      to_id = node_id.y)
+```
+`next_act ` в одном случае ordered factor, в другом -- просто character
+- Рвет даже на примере из документации.
+```
+patients %>%
++     process_map()
+Error in rbindlist(l, use.names, fill, idcol) : 
+  Class attribute on column 7 of item 2 does not match with column 7 of item 1.
+```
+
+## Trees
+- python. [dtreeviz](https://github.com/parrt/dtreeviz) A python library for decision tree visualization and model interpretation.
+- e-book Social Data Science with R. [33.2 Visualizing decision trees](https://www.sds.pub/visualizing-decision-trees.html)
+- COOL! Сайт с анимацией. [The Random Forest Algorithm](https://mlu-explain.github.io/random-forest/)
+How the majority vote and well-placed randomness can enhance the decision tree model.
+- [ggparty](https://github.com/martin-borkovec/ggparty): 'ggplot' Visualizations for the 'partykit' Package. [Chapter 16 Introduction to package ‘ggparty’](https://jtr13.github.io/cc19/introduction-to-package-ggparty.html). [ggparty: Graphic Partying](https://cran.r-project.org/web/packages/ggparty/vignettes/ggparty-graphic-partying.html)
+
 # 20.05.2022
 ## R Geo
 - COOL! [Replicating “Zoom to selected features” function in ArcGIS / QGIS with R shiny](https://urbandatapalette.com/post/2022-05-shiny-zoom-selected-features/)
@@ -1276,6 +1324,10 @@ replacement repositories:
 - [Some Additional Distributions R package](https://github.com/shabbychef/sadists)
 - [RStudio Cheat Sheets](https://github.com/rstudio/cheatsheets)
 - COOL! [Causal design patterns for data analysts](https://emilyriederer.netlify.app/post/causal-design-patterns/)
+- [dirichletprocess](https://dm13450.github.io/dirichletprocess/)
+The dirichletprocess package provides tools for you to build custom Dirichlet process mixture models. You can use the pre-built Normal/Weibull/Beta distributions or create your own following the instructions in the vignette.
+- Stats and R. [Koh-Lanta 2022: the ambassadors probability problem](https://statsandr.com/blog/koh-lanta-2022-ambassadors-probability-problem/)
+- [chronicler is now available on CRAN](https://www.brodrigues.co/blog/2022-05-18-cran_0_2_0/). {chronicler} allows you to create objects that carry a log with them.
 
 
 ## Kaggle solutions
@@ -1308,8 +1360,6 @@ Can you measure the magnetic interactions between a pair of atoms? 3rd solution 
 - COOL! [The FWL Theorem, Or How To Make Regressions Intuitive](https://towardsdatascience.com/the-fwl-theorem-or-how-to-make-all-regressions-intuitive-59f801eb3299)
 	- [Partial Time Regressions as Compared with Individual Trends](https://www.jstor.org/stable/1907330) by Ragnar Frisch and Frederick V. Waugh
 - [Fast Matrix Multiplication (Animated)](https://jott.live/html/mm_impl_anim)
-- COOL! Сайт с анимацией. [The Random Forest Algorithm](https://mlu-explain.github.io/random-forest/)
-How the majority vote and well-placed randomness can enhance the decision tree model.
 
 # 17.05.2022
 - [Text Mining. Algorithm for Data Preparation and Model Building](https://developers.google.com/machine-learning/guides/text-classification/step-2-5)
