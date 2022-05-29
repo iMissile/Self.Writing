@@ -1258,11 +1258,22 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 	- [Shark Attack: Clean the Ocean] Shiny app: mdubel.shinyapps.io/shark-attack/ Repo: github.com/mdubel/shark-attack
 	- [Bikemap] Shiny app: 2exp3.shinyapps.io/mapa-ciclista/_w_6e13cdc9/ Repo: github.com/2exp3/bikemapp
 
+# 27.05.2022
+## R
+- COOL! [Across (dplyr 1.0.0): applying dplyr functions simultaneously across multiple columns](https://www.rebeccabarter.com/blog/2020-07-09-across/)
+- [Why I love dplyr's across](https://willhipson.netlify.app/post/dplyr_across/dplyr_across/)
+
+## Shiny
+- [CSS ALMANAC → PROPERTIES → V → visibility](https://css-tricks.com/almanac/properties/v/visibility/#:~:text=The%20visibility%20property%20in%20CSS,element%20without%20changing%20the%20layout.&text=visibility%20has%20four%20valid%20values,hidden%20%2C%20collapse%20%2C%20and%20inherit%20.)
+- [tags$style applied to all Leaflet Maps in R shiny](https://stackoverflow.com/questions/64669524/tagsstyle-applied-to-all-leaflet-maps-in-r-shiny)
 
 # 23.05.2022
 ## DS
 - [Пролистал 2-е издание Hacker's Delight в поисках занятных задач для лабника по Verilog & FPGA](https://panchul.livejournal.com/583893.html)
 - e-book [Social Data Science with R](https://www.sds.pub/index.html)
+- COOL! [ПОЛ ЛОКХАРД. Плач математика](https://nbspace.ru/math/)
+- [NVIDIA Merlin](https://github.com/NVIDIA-Merlin/Merlin) is an open source library providing end-to-end GPU-accelerated recommender systems, from feature engineering and preprocessing to training deep learning models and running inference in production.
+	- [NVIDIA Merlin Homepage](https://developer.nvidia.com/nvidia-merlin)
 
 ## Petri Net
 - [Pnml.org](https://www.pnml.org/) is the reference site for the implementation of Petri Net Markup Language (PNML) defined by the standard ISO/IEC 15909 Part 2. Part 1 is published here.
@@ -1360,6 +1371,7 @@ Can you measure the magnetic interactions between a pair of atoms? 3rd solution 
 - COOL! [The FWL Theorem, Or How To Make Regressions Intuitive](https://towardsdatascience.com/the-fwl-theorem-or-how-to-make-all-regressions-intuitive-59f801eb3299)
 	- [Partial Time Regressions as Compared with Individual Trends](https://www.jstor.org/stable/1907330) by Ragnar Frisch and Frederick V. Waugh
 - [Fast Matrix Multiplication (Animated)](https://jott.live/html/mm_impl_anim)
+- Отличные карточки [Медиана вместо среднего](https://antonz.ru/median/)
 
 # 17.05.2022
 - [Text Mining. Algorithm for Data Preparation and Model Building](https://developers.google.com/machine-learning/guides/text-classification/step-2-5)

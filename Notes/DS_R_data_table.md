@@ -3,7 +3,7 @@
 	- COOL! [data.table vs dplyr: can one do something well the other can't or does poorly?](https://stackoverflow.com/questions/21435339/data-table-vs-dplyr-can-one-do-something-well-the-other-cant-or-does-poorly)
 	- Hadley Wickham. [My take on dplyr vs data.table](https://twitter.com/hadleywickham/status/553169339751215104):
 	- [dplyr on data.table, am I really using data.table?](https://stackoverflow.com/questions/27511604/dplyr-on-data-table-am-i-really-using-data-table/27520688)
-- COOL! [Fast data lookups in R: dplyr vs data.table](http://appsilondatascience.com/blog/rstats/2017/03/02/r-fast-lookup.html)
+- COOL! [Fast data lookups in R: dplyr vs data.table](https://appsilon.com/fast-data-lookups-in-r-dplyr-vs-data-table/)
 - [Homepage Rdatatable/data.table](https://github.com/Rdatatable/data.table/wiki)
 - COOL! [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)
 - [Solve common R problems efficiently with data.table](https://jangorecki.github.io/blog/2015-12-11/Solve-common-R-problems-efficiently-with-data.table.html)
@@ -407,7 +407,7 @@ The way to read this out loud is: "Take DT, subset rows by i, then compute j gro
 
 ## data.table lookup
 - [Joins vs case whens - speed and memory tradeoffs](https://themockup.blog/posts/2021-02-13-joins-vs-casewhen-speed-and-memory-tradeoffs/)
-- COOL! [Fast data lookups in R: dplyr vs data.table](http://appsilondatascience.com/blog/rstats/2017/03/02/r-fast-lookup.html)
+- COOL! [Fast data lookups in R: dplyr vs data.table](https://appsilon.com/fast-data-lookups-in-r-dplyr-vs-data-table/)
 - [fastmap](https://r-lib.github.io/fastmap/index.html) solves this problem by storing the keys as C++ std::string objects, and so it does not use the R symbol table at all.
 - [Text Mining: Very Fast Word Lookup in a Large Dictionary in R with data.table and matrixStats](https://ourednik.info/maps/2019/07/09/text-mining-very-fast-word-lookup-in-a-large-dictionary-in-r-with-data-table-and-matrixstats/)
 
