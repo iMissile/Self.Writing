@@ -238,6 +238,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Doing Bayesian Data Analysis in brms and the tidyverse](https://bookdown.org/content/3686/) by A Solomon Kurz
 - [Applied Time Series Analysis for Fisheries and Environmental Sciences](https://atsa-es.github.io/atsa-labs/) by E. E. Holmes, M. D. Scheuerell, and E. J. Ward. 2021-07-28
 - [Social Data Science with R](https://www.sds.pub/index.html) by Daniel Anderson, Brendan Cullen, Ouafaa Hmaddi, 2020-12-24
+- [An Introduction to R](https://intro2r.com/) by Alex Douglas, Deon Roos, Francesca Mancini, Ana Couto & David Lusseau, April 8, 2022
 
 
 

@@ -30,6 +30,9 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
 - [IPython. Interactive Computing](https://ipython.org/). Он же Jypiter.
 
+# 30.05.2022
+- [Peeking and backtracking Python generators](https://ricardoanderegg.com/posts/peeking-backtracking-python-generator/)
+
 # 27.05.2022
 - [Multi Index Sorting in Pandas](https://stackoverflow.com/questions/14733871/multi-index-sorting-in-pandas)
 - [Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/)
