@@ -36,6 +36,8 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 # 27.05.2022
 - [Multi Index Sorting in Pandas](https://stackoverflow.com/questions/14733871/multi-index-sorting-in-pandas)
 - [Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/)
+- [rounding errors in Python floor division](https://stackoverflow.com/questions/38588815/rounding-errors-in-python-floor-division)
+- [pipetools](https://0101.github.io/pipetools/doc/) enables function composition similar to using Unix pipes.
 
 # 23.05.2022
 - [How can a class that inherits from a NumPy array change its own values?](https://stackoverflow.com/questions/27910013/how-can-a-class-that-inherits-from-a-numpy-array-change-its-own-values)

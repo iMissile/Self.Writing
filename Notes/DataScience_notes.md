@@ -1259,6 +1259,22 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 	- [Shark Attack: Clean the Ocean] Shiny app: mdubel.shinyapps.io/shark-attack/ Repo: github.com/mdubel/shark-attack
 	- [Bikemap] Shiny app: 2exp3.shinyapps.io/mapa-ciclista/_w_6e13cdc9/ Repo: github.com/2exp3/bikemapp
 
+# 31.05.2022
+## R
+- [Two-sample Mann–Whitney U Test](https://rcompanion.org/handbook/F_04.html)
+- APS 240: Data Analysis and Statistics with R. [Chapter 33. Non-parametric tests](https://dzchilds.github.io/stats-for-bio/non-parametric-tests.html)
+- [Wilcoxon Test in R]((https://www.datanovia.com/en/lessons/wilcoxon-test-in-r/)
+- [Paired Samples Wilcoxon Test in R](http://www.sthda.com/english/wiki/paired-samples-wilcoxon-test-in-r)
+- [Классические методы статистики: критерий Уилкоксона](https://r-analytics.blogspot.com/2012/05/blog-post_20.html)
+- [Классические методы статистики: дисперсионный анализ по Краскелу-Уоллису](https://r-analytics.blogspot.com/2013/08/blog-post_29.html)
+- [Классические методы статистики: t-критерий Стьюдента](https://r-analytics.blogspot.com/2012/03/t.html)
+- COOL! Разбирается код на R подробно и вручную. NOTES ON STATISTICS, PROBABILITY and MATHEMATICS [Wilcoxon Signed Rank Test](https://rinterested.github.io/statistics/wilkoxon_signed_rank_test.html). `psignrank(q = 13, n = n, lower.tail = T)`
+- [Distribution of the Wilcoxon Signed Rank Statistic](https://www.math.ucla.edu/~anderson/rw1001/library/base/html/SignRank.html)
+- [Compute the value of CDF over Wilcoxon Signedrank Distribution in R Programming – psignrank() Function](https://www.geeksforgeeks.org/compute-the-value-of-cdf-over-wilcoxon-signedrank-distribution-in-r-programming-psignrank-function/)
+`psignrank(seq(0, 20, by = 1), n = 11)`
+- [Дисперсионный анализ ANalysis Of VAriance (ANOVA) просто о сложном](https://lit-review.ru/biostatistika/dispersionnyjj-analiz-anova/)
+- [`base::jitter]. ‘Jitter’ (Add Noise) to Numbers
+
 # 27.05.2022
 ## R
 - COOL! [Across (dplyr 1.0.0): applying dplyr functions simultaneously across multiple columns](https://www.rebeccabarter.com/blog/2020-07-09-across/)
