@@ -1272,6 +1272,9 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [Distribution of the Wilcoxon Signed Rank Statistic](https://www.math.ucla.edu/~anderson/rw1001/library/base/html/SignRank.html)
 - [Compute the value of CDF over Wilcoxon Signedrank Distribution in R Programming – psignrank() Function](https://www.geeksforgeeks.org/compute-the-value-of-cdf-over-wilcoxon-signedrank-distribution-in-r-programming-psignrank-function/)
 `psignrank(seq(0, 20, by = 1), n = 11)`
+- COOL! [20.2 - The Wilcoxon Signed Rank Test for a Median](https://online.stat.psu.edu/stat415/lesson/20/20.2)
+- [What is the distribution of the Wilcoxon signed-ranked test statistic?](https://stats.stackexchange.com/questions/307167/what-is-the-distribution-of-the-wilcoxon-signed-ranked-test-statistic)
+- [Wilcoxon Signed-Rank Test - an overview | ScienceDirect Topics](https://www.sciencedirect.com/topics/mathematics/wilcoxon-signed-rank-test)
 - [Дисперсионный анализ ANalysis Of VAriance (ANOVA) просто о сложном](https://lit-review.ru/biostatistika/dispersionnyjj-analiz-anova/)
 - [`base::jitter]. ‘Jitter’ (Add Noise) to Numbers
 
