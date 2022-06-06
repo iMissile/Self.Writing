@@ -1259,6 +1259,10 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 	- [Shark Attack: Clean the Ocean] Shiny app: mdubel.shinyapps.io/shark-attack/ Repo: github.com/mdubel/shark-attack
 	- [Bikemap] Shiny app: 2exp3.shinyapps.io/mapa-ciclista/_w_6e13cdc9/ Repo: github.com/2exp3/bikemapp
 
+# 06.06.2022
+# R
+- [How to Use the dist Function in R (With Examples)](https://www.statology.org/dist-function-in-r/)
+
 # 31.05.2022
 ## R
 - [Two-sample Mann–Whitney U Test](https://rcompanion.org/handbook/F_04.html)
