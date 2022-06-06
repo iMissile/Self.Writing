@@ -39,6 +39,9 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 
 # 30.05.2022
 - [Peeking and backtracking Python generators](https://ricardoanderegg.com/posts/peeking-backtracking-python-generator/)
+- [How can I remove a key from a Python dictionary?](https://stackoverflow.com/questions/11277432/how-can-i-remove-a-key-from-a-python-dictionary/32616904#32616904)
+- [Pydantic](https://pydantic-docs.helpmanual.io/). Data validation and settings management using python type annotations.
+- [Python Date and Time Functions: The Complete Tutorial](https://codesolid.com/python-date-tutorial/)
 
 # 27.05.2022
 - [Multi Index Sorting in Pandas](https://stackoverflow.com/questions/14733871/multi-index-sorting-in-pandas)

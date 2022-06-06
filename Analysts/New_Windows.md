@@ -182,7 +182,8 @@ The [Microsoft support tool NFI.exe](https://support.microsoft.com/en-us/help/25
 
 - Запуск центра обновления Windows:
    Пуск -> Параметры -> Обновления и безопасность
-
+- Убираем флажок с объектов в explorer. [Как убрать флажки в проводнике на Windows 10](https://guidepc.ru/windows/kak-ubrat-flazhki-v-provodnike-na-windows-10/). Эта функция впервые появилась в Windows Vista и обычно включалась по умолчанию в Windows 8 на устройствах с сенсорным экраном. На панели ленты в верхней части окна проводника перейдите на вкладку «Вид». Найдите «Флажки элементов» на панели инструментов Вид и щелкните по нему.
+Альтернативный метод: используйте окно параметров папки. Нажмите кнопку «Параметры», и Вы увидите окно «Параметры папки». Перейдите на вкладку «Вид». Прокручивайте список вниз, пока не увидите «Использовать флажки для выбора элементов». Снимите флажок, затем нажмите Применить.
 - [Что делать, если пропало безопасное извлечение устройства в Windows](http://remontka.pro/propalo-bezopasnoe-izvlechenie/) или [здесь](http://pomogaemkompu.temaretik.com/741888136915716896/chto-delat-esli-propalo-bezopasnoe-izvlechenie-ustrojstva-v-windows/) 
 - [«Безопасное извлечение устройства» использовать или нет?](http://nn-lab.ru/windows/bezopasnoe-izvlechenie-ustrojstva-ispolzovat-ili-net.php)
 А [тут вот] детальные изыскания по поводу пропавшей закладки "Политика"
@@ -365,6 +366,9 @@ https://chocolatey.org/packages/openconnect-gui
 - [3 Ways to Fix Camera App Not Working in Windows 10](https://www.top-password.com/blog/fix-camera-app-not-working-in-windows-10/)
 - [Как исправить ошибку веб-камеры в Windows 10](https://siniy-ekran.ru/poleznoe/kak-ispravit-oshibku-veb-kamery-v-windows-10/)
 !!! Посмотрел по фото на ваш ноутбук: там на клавише Esc случайно не значок перечеркнутой камеры? Если он, то попробуйте либо просто клавишу Esc, либо Fn+эту_клавишу.
+
+## Мышка Logitech
+- [Привязка мыши(клавиатуры) logitech (не unifying) к не родному донглу](https://www.cyberforum.ru/mouses/thread2600706.html)
 
 ## Photoshop
 - COOL! [20 Free Spray Paint Photoshop Brushes with Splatters & Drips](https://blog.spoongraphics.co.uk/freebies/20-free-spray-paint-photoshop-brushes-with-splatters-drips)

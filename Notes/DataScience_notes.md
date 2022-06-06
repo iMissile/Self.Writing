@@ -130,14 +130,13 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [R Graphics Cookbook, 2nd edition](https://r-graphics.org/)
 - [R Cookbook, 2nd Edition](https://rc2e.com/), by James (JD) Long, Paul Teetor
 - [JavaScript for Data Science](https://js4ds.org/) by Maya Gans, Toby Hodges, and Greg Wilson. Version 4.0 / January 2020
-- [Data Science Live Book](https://livebook.datascienceheroes.com/) by Pablo Casas
+- [Data Science Live Book](https://livebook.datascienceheroes.com/) by Pablo Casas, July 2018
 - [RMarkdown for Scientists](https://rmd4sci.njtierney.com/) by Nicholas Tierney, 2020-09-09
 - [Mastering Software Development in R](https://bookdown.org/rdpeng/RProgDA/) by Roger D. Peng, Sean Kross, and Brooke Anderson
 - [R Manuals as bookdown](http://colinfay.me/r-manuals/). You’ll find here a list of the R manuals converted to bookdown.
 - [Processing and Analyzing Financial Data with R](https://sites.google.com/view/pafdR/home)
 - [Introduction to R - tidyverse](https://bookdown.org/ansellbr/WEHI_tidyR_course_book/)
 - [Data Visualization for Social Science. A practical introduction with R and ggplot2](http://socviz.co/)
-- [Data Science Live Book](https://livebook.datascienceheroes.com/) by Pablo Casas, July 2018
 - [Sinew: Simple R Package Documentation](https://metrumresearchgroup.github.io/sinew/)
 - [The R Inferno](http://www.burns-stat.com/pages/Tutor/R_inferno.pdf)
 - [The Tao Of Programming](http://canonical.org/~kragen/tao-of-programming.html)
@@ -1260,8 +1259,13 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 	- [Bikemap] Shiny app: 2exp3.shinyapps.io/mapa-ciclista/_w_6e13cdc9/ Repo: github.com/2exp3/bikemapp
 
 # 06.06.2022
-# R
+## R
+- [Using String Distance {stringdist} To Handle Large Text Factors, Cluster Them Into Supersets](https://amunategui.github.io/stringdist/)
 - [How to Use the dist Function in R (With Examples)](https://www.statology.org/dist-function-in-r/)
+
+# 03.06.2022
+## DS
+- [Difference between rulefit and random forest](https://stats.stackexchange.com/questions/208930/difference-between-rulefit-and-random-forest)
 
 # 31.05.2022
 ## R
@@ -1290,6 +1294,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 ## Shiny
 - [CSS ALMANAC → PROPERTIES → V → visibility](https://css-tricks.com/almanac/properties/v/visibility/#:~:text=The%20visibility%20property%20in%20CSS,element%20without%20changing%20the%20layout.&text=visibility%20has%20four%20valid%20values,hidden%20%2C%20collapse%20%2C%20and%20inherit%20.)
 - [tags$style applied to all Leaflet Maps in R shiny](https://stackoverflow.com/questions/64669524/tagsstyle-applied-to-all-leaflet-maps-in-r-shiny)
+- COOL! [How to Connect Google Earth Engine with R Shiny](https://medium.com/appsilon-data-science/how-to-connect-google-earth-engine-with-r-shiny-df5d72d25d14)
 
 # 23.05.2022
 ## DS

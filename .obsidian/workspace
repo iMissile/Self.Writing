@@ -1,0 +1,94 @@
+{
+  "main": {
+    "id": "cd0f91b845a3871e",
+    "type": "split",
+    "children": [
+      {
+        "id": "0f76cf52d794efbe",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Notes/DataScience_notes.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "31803329d22f49b1",
+    "type": "split",
+    "children": [
+      {
+        "id": "d44cb5fc72ac8912",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "09e11b1873791cf1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "0f9738f48f49d159",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "43c45dc3ee103dfd",
+    "type": "split",
+    "children": [
+      {
+        "id": "70bd4c66891f2aaa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "abcc72c82f908468",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Notes/DataScience_notes.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "0f76cf52d794efbe",
+  "lastOpenFiles": [
+    "Notes/DataScience_notes.md",
+    "iron.io.md"
+  ]
+}
