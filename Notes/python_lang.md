@@ -30,6 +30,10 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
 - [IPython. Interactive Computing](https://ipython.org/). Он же Jypiter.
 
+# 07.06.2022
+- [How do I look inside a Python object?](https://stackoverflow.com/questions/1006169/how-do-i-look-inside-a-python-object)
+- [Is there a more effective way to generate this dataframe?](https://stackoverflow.com/questions/72523656/is-there-a-more-effective-way-to-generate-this-dataframe)
+- COOL! [How to Avoid a Pandas Pandemonium](https://towardsdatascience.com/how-to-avoid-a-pandas-pandemonium-e1bed456530)
 
 # 06.06.2022
 - [Skope-rules](https://github.com/scikit-learn-contrib/skope-rules). Machine learning with logical rules in Python
@@ -42,6 +46,7 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 - [How can I remove a key from a Python dictionary?](https://stackoverflow.com/questions/11277432/how-can-i-remove-a-key-from-a-python-dictionary/32616904#32616904)
 - [Pydantic](https://pydantic-docs.helpmanual.io/). Data validation and settings management using python type annotations.
 - [Python Date and Time Functions: The Complete Tutorial](https://codesolid.com/python-date-tutorial/)
+- [How can I make a python numpy arange of datetime](https://stackoverflow.com/questions/12137277/how-can-i-make-a-python-numpy-arange-of-datetime)
 
 # 27.05.2022
 - [Multi Index Sorting in Pandas](https://stackoverflow.com/questions/14733871/multi-index-sorting-in-pandas)
