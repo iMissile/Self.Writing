@@ -1258,10 +1258,17 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 	- [Shark Attack: Clean the Ocean] Shiny app: mdubel.shinyapps.io/shark-attack/ Repo: github.com/mdubel/shark-attack
 	- [Bikemap] Shiny app: 2exp3.shinyapps.io/mapa-ciclista/_w_6e13cdc9/ Repo: github.com/2exp3/bikemapp
 
+# 08.06.2022
+- COOL! [Practical Statistics for Data Scientists: 50+ Essential Concepts Using R and Python](https://github.com/gedeck/practical-statistics-for-data-scientists/)
+- COOL! e-book [The Truth About Linear Regression](https://www.stat.cmu.edu/~cshalizi/TALR/)
+
 # 06.06.2022
 ## R
 - [Using String Distance {stringdist} To Handle Large Text Factors, Cluster Them Into Supersets](https://amunategui.github.io/stringdist/)
 - [How to Use the dist Function in R (With Examples)](https://www.statology.org/dist-function-in-r/)
+- [parallelDist](https://cran.r-project.org/web/packages/parallelDist/index.html): Parallel Distance Matrix Computation using Multiple Threads
+- COOL! [Frustration: One Year With R](https://github.com/ReeceGoding/Frustration-One-Year-With-R)
+- COOL! [R advantages over python](https://github.com/IyarLin/R-advantages-over-python)
 
 # 03.06.2022
 ## DS

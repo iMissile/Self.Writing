@@ -30,6 +30,11 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
 - [IPython. Interactive Computing](https://ipython.org/). Он же Jypiter.
 
+# 08.06.2022
+- [Python Standard Library changes in recent years](https://antonz.org/python-stdlib-changes/)
+- [What to Expect from Python 3.11?](https://bas.codes/posts/new-features-python-3-11)
+- [Lena](https://github.com/ynikitenko/lena) is an architectural framework for data analysis. It is written in Python and works with Python versions 2, 3 and PyPy.
+
 # 07.06.2022
 - [How do I look inside a Python object?](https://stackoverflow.com/questions/1006169/how-do-i-look-inside-a-python-object)
 - [Is there a more effective way to generate this dataframe?](https://stackoverflow.com/questions/72523656/is-there-a-more-effective-way-to-generate-this-dataframe)
