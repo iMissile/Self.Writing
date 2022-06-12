@@ -30,6 +30,19 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
 - [IPython. Interactive Computing](https://ipython.org/). Он же Jypiter.
 
+# 12.06.2022
+## EDA
+- [10 полезных расширений для дата-сайентистов](https://habr.com/ru/company/skillfactory/blog/542870/)
+- [Детальный анализ данных с помощью всего нескольких строчек кода](https://zen.yandex.ru/media/machinelearning/detalnyi-analiz-dannyh-s-pomosciu-vsego-neskolkih-strochek-koda-623835b2b834125366e2af67)
+- [SweetViz](https://pypi.org/project/sweetviz/). In-depth EDA (target analysis, comparison, feature analysis, correlation) in two lines of code!
+- [pandas-profiling](https://github.com/ydataai/pandas-profiling). Create HTML profiling reports from pandas DataFrame objects
+- [DTale](https://github.com/man-group/dtale). Visualizer for pandas data structures
+
+# 10.06.2022
+- [Memray](https://github.com/bloomberg/memray) is a memory profiler for Python.
+- [Scalene](https://github.com/plasma-umass/scalene) is a high-performance CPU, GPU and memory profiler for Python that does a number of things that other Python profilers do not and cannot do
+- [imodels](https://www.marktechpost.com/2022/02/10/uc-berkeley-researchers-introduce-imodels-a-python-package-for-fitting-interpretable-machine-learning-models/): A Python Package For Fitting Interpretable Machine Learning Models
+
 # 08.06.2022
 - [Python Standard Library changes in recent years](https://antonz.org/python-stdlib-changes/)
 - [What to Expect from Python 3.11?](https://bas.codes/posts/new-features-python-3-11)
@@ -37,6 +50,7 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 
 # 07.06.2022
 - [How do I look inside a Python object?](https://stackoverflow.com/questions/1006169/how-do-i-look-inside-a-python-object)
+- [How to Inspect a Python Object](https://www.codingem.com/inspect-a-python-object/)
 - [Is there a more effective way to generate this dataframe?](https://stackoverflow.com/questions/72523656/is-there-a-more-effective-way-to-generate-this-dataframe)
 - COOL! [How to Avoid a Pandas Pandemonium](https://towardsdatascience.com/how-to-avoid-a-pandas-pandemonium-e1bed456530)
 

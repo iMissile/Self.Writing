@@ -100,3 +100,14 @@ sudo snap install pdftk
 
 # ubuntu не загружается, только GRUB виден
 - [How do I boot my PC from GRUB? {duplicate}](https://askubuntu.com/questions/929833/how-do-i-boot-my-pc-from-grub)
+
+# проблемы с менеджером пакетов
+- [Как исправить ошибку «E: Could not get lock /var/lib/dpkg/lock» в Ubuntu Linux](https://omgubuntu.ru/kak-ispravit-oshibku-e-could-not-get-lock-var-lib-dpkg-lock-v-ubuntu-linux/)
+
+# Исполнение в параллель
+- [What's the difference between nohup and ampersand](https://stackoverflow.com/questions/15595374/whats-the-difference-between-nohup-and-ampersand).
+`nohup` + `Rscript`+ `&` сработал) шикардос)
+- [PARALLELISING JOBS WITH GNU PARALLEL](https://blog.ronin.cloud/gnu-parallel/)
+- [A short tutorial on Gnu Parallel](https://www.polarmicrobes.org/a-short-tutorial-on-gnu-parallel/)
+- [Get more done at the Linux command line with GNU Parallel](https://opensource.com/article/18/5/gnu-parallel). Turn your computer into a multi-tasking powerhouse.
+- [Learn Multi-Threading Bash scripts with GNU Parallel](https://adamtheautomator.com/how-to-speed-up-bash-scripts-with-multithreading-and-gnu-parallel/)
