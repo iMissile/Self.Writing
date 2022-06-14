@@ -30,6 +30,13 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
 - [IPython. Interactive Computing](https://ipython.org/). Он же Jypiter.
 
+
+# 14.06.2022
+- [Calling R From Python With rpy2](https://rviews.rstudio.com/2022/05/25/calling-r-from-python-with-rpy2/), 2022-05-25
+- [imodels](https://github.com/csinva/imodels). Interpretable ML package 🔍 for concise, transparent, and accurate predictive modeling (sklearn-compatible).
+- [Are list-comprehensions and functional functions faster than "for loops"?](https://stackoverflow.com/questions/22108488/are-list-comprehensions-and-functional-functions-faster-than-for-loops/60254921)
+- [Are list comprehensions syntactic sugar for `list(generator expression)` in Python 3?](https://stackoverflow.com/questions/30096351/are-list-comprehensions-syntactic-sugar-for-listgenerator-expression-in-pyth/30097520)
+
 # 12.06.2022
 ## EDA
 - [10 полезных расширений для дата-сайентистов](https://habr.com/ru/company/skillfactory/blog/542870/)

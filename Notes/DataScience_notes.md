@@ -1258,9 +1258,28 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 	- [Shark Attack: Clean the Ocean] Shiny app: mdubel.shinyapps.io/shark-attack/ Repo: github.com/mdubel/shark-attack
 	- [Bikemap] Shiny app: 2exp3.shinyapps.io/mapa-ciclista/_w_6e13cdc9/ Repo: github.com/2exp3/bikemapp
 
+# 14.06.2022
+## R
+- [SDMX Technical Specifications](https://sdmx.org/?page_id=5008). The SDMX initiative sets standards to facilitate the exchange of statistical data and metadata using modern information technology. Several versions of the technical specifications have been released since 2004. SDMX has also been published as an ISO International Standard (ISO 17369).
+- [Software Tools for SDMX Implementers and Developers](https://sdmx.org/?page_id=4500)
+- [readsdmx](https://github.com/mdequeljoe/readsdmx). Read sdmx data into R dataframes
+
 # 08.06.2022
 - COOL! [Practical Statistics for Data Scientists: 50+ Essential Concepts Using R and Python](https://github.com/gedeck/practical-statistics-for-data-scientists/)
 - COOL! e-book [The Truth About Linear Regression](https://www.stat.cmu.edu/~cshalizi/TALR/)
+
+## RuleFit, Business Rules
+- [imodels](https://github.com/csinva/imodels). Interpretable ML package 🔍 for concise, transparent, and accurate predictive modeling (sklearn-compatible).
+- [Difference between rulefit and random forest](https://stats.stackexchange.com/questions/208930/difference-between-rulefit-and-random-forest)
+- [Difference between rulefit & skope-rules Python Packages](https://datascience.stackexchange.com/questions/90262/difference-between-rulefit-skope-rules-python-packages)
+- [frbs: Fuzzy Rule-Based Systems for Classification and Regression in R](https://cran.r-project.org/web/packages/frbs/vignettes/lala2015frbs.pdf)
+- [Modern Rule-Based Models](https://rviews.rstudio.com/2020/05/21/modern-rule-based-models/),  2020-05-21 by Max Kuhn
+- [Interpretable Machine Learning. 4.6 RuleFit](https://christophm.github.io/interpretable-ml-book/rulefit.html)
+- [Adaptive Rules Model : Statistical Learning for Rule-Based Systems](https://pastel.archives-ouvertes.fr/tel-01622934/document)
+- [pre: an R package for deriving prediction rule ensembles](https://github.com/marjoleinF/pre)
+- [Finding communities based on propagating labels](https://igraph.org/r/doc/cluster_label_prop.html)
+- [The nitty-gritty of the Label Propagation Algorithm](https://irene.rbind.io/post/lpa/)
+- [A Tutorial Introduction to Belief Propagation](https://www.ski.org/sites/default/files/publications/bptutorial.pdf)
 
 # 06.06.2022
 ## R
@@ -1269,10 +1288,6 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [parallelDist](https://cran.r-project.org/web/packages/parallelDist/index.html): Parallel Distance Matrix Computation using Multiple Threads
 - COOL! [Frustration: One Year With R](https://github.com/ReeceGoding/Frustration-One-Year-With-R)
 - COOL! [R advantages over python](https://github.com/IyarLin/R-advantages-over-python)
-
-# 03.06.2022
-## DS
-- [Difference between rulefit and random forest](https://stats.stackexchange.com/questions/208930/difference-between-rulefit-and-random-forest)
 
 # 31.05.2022
 ## R
@@ -3197,16 +3212,6 @@ sqlMdxOpenquery <- processSqlTemplate(
 - COOL! [ggstatsplot: ggplot2 Based Plots with Statistical Details](https://indrajeetpatil.github.io/ggstatsplot/index.html)
 - COOL! Learning [Materials for the "Advanced Shiny" course at Swiss Institute of Bioinformatics](https://github.com/rstudio-education/advanced-shiny-sib)
 - Slides. COOL! [Slides. Danielle Navarro](https://slides.djnavarro.net/)
-
-## RuleFit, Business Rules
-- [frbs: Fuzzy Rule-Based Systems for Classification and Regression in R](https://cran.r-project.org/web/packages/frbs/vignettes/lala2015frbs.pdf)
-- [Modern Rule-Based Models](https://rviews.rstudio.com/2020/05/21/modern-rule-based-models/),  2020-05-21 by Max Kuhn
-- [Interpretable Machine Learning. 4.6 RuleFit](https://christophm.github.io/interpretable-ml-book/rulefit.html)
-- [Adaptive Rules Model : Statistical Learning for Rule-Based Systems](https://pastel.archives-ouvertes.fr/tel-01622934/document)
-- [pre: an R package for deriving prediction rule ensembles](https://github.com/marjoleinF/pre)
-- [Finding communities based on propagating labels](https://igraph.org/r/doc/cluster_label_prop.html)
-- [The nitty-gritty of the Label Propagation Algorithm](https://irene.rbind.io/post/lpa/)
-- [A Tutorial Introduction to Belief Propagation](https://www.ski.org/sites/default/files/publications/bptutorial.pdf)
 
 # 17.03.2021
 ## R
