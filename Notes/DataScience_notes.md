@@ -1298,6 +1298,11 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [tsdrtools](https://lcbc-uio.github.io/tsdrtools/index.html). The goal of tsdrtools is to make it easier for R users of TSD to install packages that fail install using the TSD mini-CRAN.
 - [Using Kubernetes and the Future Package to Easily Parallelize R in the Cloud](https://www.jottr.org/2021/04/08/future-and-kubernetes/)
 
+## ML
+- [executing cv.glmnet in parallel in R](https://stackoverflow.com/questions/21698435/executing-cv-glmnet-in-parallel-in-r)
+- [Best Use of Train/Val/Test Splits, with Tips for Medical Data](https://glassboxmedicine.com/2019/09/15/best-use-of-train-val-test-splits-with-tips-for-medical-data/)
+- [Lasso and Elastic-Net Regularized Generalized Linear Models](https://glmnet.stanford.edu/index.html)
+
 
 # 24.06.2022
 ## DS
