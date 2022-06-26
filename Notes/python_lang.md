@@ -28,14 +28,53 @@ pip install -U $(pip freeze | awk -F'[=]' '{print $1}')
 Windows PowerShell update
 foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 ```
-- [IPython. Interactive Computing](https://ipython.org/). Он же Jypiter.
+- [IPython. Interactive Computing](https://ipython.org/). Он же Jupyter.
+	- [Install](https://docs.jupyter.org/en/latest/install/notebook-classic.html) `pip3 install jupyter`
+	- [Run](https://docs.jupyter.org/en/latest/running.html#running) `jupyter notebook`
+- [JupyterLab computational environment.](https://github.com/jupyterlab/jupyterlab). 
+	- [Install] `pip install jupyterlab`
+	- Start up JupyterLab using: `jupyter lab`
+	- [A visual debugger for Jupyter](https://blog.jupyter.org/a-visual-debugger-for-jupyter-914e61716559)
 
+# 23.06.2022
+- [Исключения в Python теперь считаются анти-паттерном](https://habr.com/ru/company/oleg-bunin/blog/445234/)
+
+# 21.06.2022
+- [Understanding nested list comprehension syntax in Python](https://spapas.github.io/2016/04/27/python-nested-list-comprehensions/)
+- [Nested list comprehension in python](https://www.tutorialspoint.com/nested-list-comprehension-in-python)
+- [Python List Comprehension: single, multiple, nested, & more](https://www.learndatasci.com/solutions/python-list-comprehension/)
+- [When to Use a List Comprehension in Python](https://realpython.com/list-comprehension-python/)
+
+# 20.06.2022
+- ebook. [Announcing the release of my e-book: Introduction to Empirical Bayes](http://varianceexplained.org/r/empirical-bayes-book/)
+- [Introduction to Empirical Bayes using Baseball Statistics](https://dangeles.github.io/jupyter/BaseBall_Statistics_Part1.html)
+This post draws extensively on material from the book Introduction to Empirical Bayes by David Robinson. I've found the book to be an excellent introduction to Empirical Bayes, and a great introduction to the Lahman Baseball dataset as well. You can find the book here. I strongly suggest it!
+- ebook Repo. [Introduction to Empirical Bayes: Examples from Baseball Statistics](https://github.com/dgrtwo/empirical-bayes-book)
+- [BAYESIAN REGRESSION](https://alistaire.rbind.io/blog/bayesian-regression/)
+
+
+# 19.06.2022
+- [What is the right way to debug in iPython notebook?](https://stackoverflow.com/questions/32409629/what-is-the-right-way-to-debug-in-ipython-notebook)
+- [Jupyter Tips and Tricks](https://chrieke.medium.com/jupyter-tips-and-tricks-994fdddb2057)
+- Message. [Setupterm could not find terminal, in Python program using curses](https://discuss.dizzycoding.com/setupterm-could-not-find-terminal-in-python-program-using-curses/). В частности, при использовании `from objexplore import explore`
+
+# 16.06.2022
+- [Pandas vectorization: faster code, slower code, bloated memory](https://pythonspeed.com/articles/pandas-vectorization/)
+- [How vectorization speeds up your Python code](https://pythonspeed.com/articles/vectorization-python/)
+- [Numba](https://numba.pydata.org/) is an open source JIT compiler that translates a subset of Python and NumPy code into fast machine code.
+- [How To Fix WARNING: There was an error checking the latest version of pip Error?](https://networkcult.com/fix-warning-there-was-an-error-checking-the-latest-version-of-pip-error-1520/). 
+Just Upgrade Your PIP to Latest Version using Command `python -m pip install --upgrade pip`
+If you are using the Python version 3 then use the below command to update pip version: `python3 -m pip install --upgrade pip`
+- [How to find size of an object in Python?](https://www.geeksforgeeks.org/how-to-find-size-of-an-object-in-python/)
+- [Measure the Real Size of Any Python Object](https://goshippo.com/blog/measure-real-size-any-python-object/)
 
 # 14.06.2022
 - [Calling R From Python With rpy2](https://rviews.rstudio.com/2022/05/25/calling-r-from-python-with-rpy2/), 2022-05-25
 - [imodels](https://github.com/csinva/imodels). Interpretable ML package 🔍 for concise, transparent, and accurate predictive modeling (sklearn-compatible).
 - [Are list-comprehensions and functional functions faster than "for loops"?](https://stackoverflow.com/questions/22108488/are-list-comprehensions-and-functional-functions-faster-than-for-loops/60254921)
 - [Are list comprehensions syntactic sugar for `list(generator expression)` in Python 3?](https://stackoverflow.com/questions/30096351/are-list-comprehensions-syntactic-sugar-for-listgenerator-expression-in-pyth/30097520)
+- [The Adventures of a Pythonista in Schemeland v0.1 documentation. Quoting and quasi-quoting](http://www.phyast.pitt.edu/~micheles/scheme/scheme8.html)
+- [A Brief Look at Cpython String](https://www.heurekadevs.com/a-brief-look-at-cpython-string)
 
 # 12.06.2022
 ## EDA
@@ -59,7 +98,6 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 - [How do I look inside a Python object?](https://stackoverflow.com/questions/1006169/how-do-i-look-inside-a-python-object)
 - [How to Inspect a Python Object](https://www.codingem.com/inspect-a-python-object/)
 - [Is there a more effective way to generate this dataframe?](https://stackoverflow.com/questions/72523656/is-there-a-more-effective-way-to-generate-this-dataframe)
-- COOL! [How to Avoid a Pandas Pandemonium](https://towardsdatascience.com/how-to-avoid-a-pandas-pandemonium-e1bed456530)
 
 # 06.06.2022
 - [Skope-rules](https://github.com/scikit-learn-contrib/skope-rules). Machine learning with logical rules in Python
@@ -244,6 +282,8 @@ Nim is a statically typed compiled systems programming language. It combines suc
 
 # 30.11.2021
 - COOL! Полная дичь. [3 ways to deal with `SettingWithCopyWarning` in Pandas](https://www.analyticsvidhya.com/blog/2021/11/3-ways-to-deal-with-settingwithcopywarning-in-pandas/)
+- COOL! [How to Avoid a Pandas Pandemonium](https://towardsdatascience.com/how-to-avoid-a-pandas-pandemonium-e1bed456530)
+- COOL! [Pandas vectorization: faster code, slower code, bloated memory](https://pythonspeed.com/articles/pandas-vectorization/)
 - [100 data puzzles for pandas](https://github.com/ajcr/100-pandas-puzzles), ranging from short and simple to super tricky
 - [101 Pandas Exercises for Data Analysis](https://www.machinelearningplus.com/python/101-pandas-exercises-python/)
 
@@ -272,11 +312,9 @@ Indexing, Slicing, Stepping.
 В частности, Negative step values reverse the direction in which the slicer iterates through the original list: `my_list[::-1]`
 
 # 26.10.2021
-## python
 - [The nature of pandas DataFrame](https://stackoverflow.com/questions/27374774/the-nature-of-pandas-dataframe)
 
 # 25.10.2021
-## python
 - [gslides: Creating charts in Google slides](https://michael-gracie.github.io/gslides/index.html)
 - COOL! [Understanding all of Python, through its builtins](https://sadh.life/post/builtins/#index)
 - COOL! [9 первоклассных функций Pandas Python для работы с данными](https://nuancesprog.ru/p/14300/)

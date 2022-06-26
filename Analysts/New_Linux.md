@@ -54,7 +54,6 @@ cp- Используем команду `cp` для ручного управл�
 - [How to remove lines from the text file containing specific words through terminal?](https://askubuntu.com/questions/354993/how-to-remove-lines-from-the-text-file-containing-specific-words-through-termina). grep/sed/awk approach
 - [Is \d not supported by grep's basic expressions?](https://stackoverflow.com/questions/6901171/is-d-not-supported-by-greps-basic-expressions)
 
-
 ## права доступа
 - [How can I check the permissions of a specific group?](https://askubuntu.com/questions/162417/how-can-i-check-the-permissions-of-a-specific-group)
 - [“Other” permissions on files](https://unix.stackexchange.com/questions/132245/other-permissions-on-files)
@@ -111,3 +110,17 @@ sudo snap install pdftk
 - [A short tutorial on Gnu Parallel](https://www.polarmicrobes.org/a-short-tutorial-on-gnu-parallel/)
 - [Get more done at the Linux command line with GNU Parallel](https://opensource.com/article/18/5/gnu-parallel). Turn your computer into a multi-tasking powerhouse.
 - [Learn Multi-Threading Bash scripts with GNU Parallel](https://adamtheautomator.com/how-to-speed-up-bash-scripts-with-multithreading-and-gnu-parallel/)
+
+# timing
+- [How can I measure the execution time of a terminal process?](https://askubuntu.com/questions/53444/how-can-i-measure-the-execution-time-of-a-terminal-process).
+You can use time: `time ls -R`
+For a line-by-line delta measurement, try [`gnomon`](https://askubuntu.com/questions/53444/how-can-i-measure-the-execution-time-of-a-terminal-process).
+
+# пакеты
+- [Install jq on Ubuntu 20.04](https://lindevs.com/install-jq-on-ubuntu/)
+```
+sudo apt update
+sudo apt install -y jq
+# When installation is finished, check jq version:
+jq --version
+```

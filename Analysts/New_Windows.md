@@ -747,3 +747,8 @@ Unify, control, and accelerate global file data, securely
 - [Настройка почтовых программ на компьютере
 Mozilla Thunderbird](https://yandex.ru/support/mail/mail-clients/mozilla-thunderbird.html)
 - [Как лучше перенести доменную почту с gmail на yandex?](https://qna.habr.com/q/303103)
+
+# Win timing
+- [Calculate time difference in Windows batch file](https://stackoverflow.com/questions/9922498/calculate-time-difference-in-windows-batch-file)
+- [7 Ways to Measure Time Taken to Complete a Batch File or Command Line Execution](https://www.raymond.cc/blog/measure-time-taken-to-complete-a-batch-file-or-command-line-execution/). Рулит доп. утилита `ptime` весом в 20 кб.
+- [How-to: Calculate a time difference with tdiff.cmd](https://ss64.com/nt/syntax-tdiff.html)

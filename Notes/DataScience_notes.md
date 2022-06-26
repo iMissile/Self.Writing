@@ -379,6 +379,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 	- [How to use dplyr's enquo and quo_name in a function with tidyr and ggplot2](https://stackoverflow.com/questions/43405843/how-to-use-dplyrs-enquo-and-quo-name-in-a-function-with-tidyr-and-ggplot2)
 - Learning. [Tidyverse evolutions: curly-curly operator and pivoting (feat. tidytuesday data & leaflet visuals)](https://heads0rtai1s.github.io/2019/11/07/tidy-curly-pivot-leaflet/)
 - COOL! Learning. [Practical Tidy Evaluation](https://jessecambon.github.io/2019/12/08/practical-tidy-evaluation.html), Dec 8, 2019 • Jesse Cambon
+- [Quoting Without Confusion](https://8thlight.com/blog/colin-jones/2012/05/22/quoting-without-confusion.html), Colin Jones, 22 May 2012
 
 # dplyr tricks
 - dplyr select by number/position. Переименовываем колонки (добавляем префикс)
@@ -426,6 +427,7 @@ Web Scraper is a company specializing in data extraction from web pages. We offe
 - COOL! [Companies, Officials and NGO Using R](https://github.com/ThinkR-open/companies-using-r)
 - [Cloud computing made simple
 Powering next-generation applications from Machine Learning to 3D graphics.](https://www.paperspace.com/core)
+- [Loginom как альтернатива зарубежному ПО](https://loginom.ru/blog/loginom-replacement)
 
 ## Amazon EC2
 - [What is an ECU? CPU Benchmarking in the Cloud](http://blog.cloudharmony.com/2010/05/what-is-ecu-cpu-benchmarking-in-cloud.html)
@@ -1166,6 +1168,13 @@ To rename keys recursively, see the Q defining translate_keys(f) below.
 - [Working with JSON in bash using `jq`](https://medium.com/cameron-nokes/working-with-json-in-bash-using-jq-13d76d307c4). jq is a powerful tool that lets you read, filter, and write JSON in bash
 - [Flatten nested JSON using jq](https://stackoverflow.com/questions/37540717/flatten-nested-json-using-jq)
 - [In Jq how to expand a json array of tuples into multiple elements](https://stackoverflow.com/questions/46725770/in-jq-how-to-expand-a-json-array-of-tuples-into-multiple-elements)
+- [Install jq on Ubuntu 20.04](https://lindevs.com/install-jq-on-ubuntu/)
+```
+sudo apt update
+sudo apt install -y jq
+# When installation is finished, check jq version:
+jq --version
+```
 
 ## Timezone
 - [Timezone unknown in Rstudio](https://stackoverflow.com/questions/46657826/timezone-unknown-in-rstudio)
@@ -1249,6 +1258,23 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! Здесь есть Rcpp код. [Double precision (64-bit) representation of numeric value in R (sign, exponent, significand)](https://stackoverflow.com/questions/50217954/double-precision-64-bit-representation-of-numeric-value-in-r-sign-exponent)
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
 
+# RStudio Pro
+Подвожу итоги коммуникаций
+1. RStudio Workbench как IDE является ребрендингом RStudio Server Pro, поэтому все технические видео и презентации по Server Pro также могут быть полезными.
+- [RStudio Workbench, formerly RStudio Server Pro](https://docs.rstudio.com/rsw/)
+- [FAQ regarding the name change from RStudio Server Pro to RStudio Workbench](https://support.rstudio.com/hc/en-us/articles/1500012472761)
+2. Job Launcher & RStudio API будут выступать основными вычислительными лошадками на кластере. В частности, команды [launcherSubmitR](https://rstudio.github.io/rstudioapi/reference/launcherSubmitR.html) и [launcherSubmitJob](https://rstudio.github.io/rstudioapi/reference/launcherSubmitJob.html) позволяют запускать задания на кластере. Это могут быть как отдельные тяжелые вычисления в Shiny/Rmd, так и Rmd скрипты-орекстраторы для обучения моделей. Из последней документации на [Job Launcher](https://docs.rstudio.com/job-launcher/index.html) не все 100% ясно. Однако, в [прошлых версиях](https://docs.rstudio.com/job-launcher/1.3.319-1/) было все написано четко: "The RStudio Job Launcher provides the ability for various RStudio applications, such as RStudio Server Pro and *RStudio Connect*, to start processes within various batch processing systems (e.g. IBM Spectrum LSF) and container orchestration platforms (e.g. Kubernetes)."
+3. Workbench/Connect будут выполнять небольшие компактные вычисления, поэтому для контенеров под эти задачи можно нарезать не сильно крупные машины типа 4 core, 16-20 Gb RAM.
+- [Dev/Test/Prod with RStudio Team](https://solutions.rstudio.com/data-science-admin/code-promotion/)
+- [Launcher Overview](https://solutions.rstudio.com/sys-admin/launcher/)
+- [Launcher and Kubernetes](https://solutions.rstudio.com/sys-admin/launcher/kubernetes/)
+- [The RStudio Launcher Plugin SDK](https://github.com/rstudio/rstudio-launcher-plugin-sdk) is a software development kit used to create plugins that integrate orchestration tools with the RStudio Job Launcher.
+- [RStudio Workbench Administration Guide Release 2022.02.3+492.pro3. Job Launcher. RStudio Workbench Integration.](https://docs.rstudio.com/ide/server-pro/job_launcher/configuration.html#rstudio-workbench-integration)
+- [RStudio Connect. High Availability & Load Balancing](https://docs.rstudio.com/connect/admin/load-balancing/)
+- [Example: Bike Prediction](https://solutions.rstudio.com/example/bike_predict/)
+- [Kubeflow: A Complete Solution to MLOps](https://blog.knoldus.com/kubeflow-a-complete-solution-to-mlops/)
+
+
 # Appsilon Shiny 2022
 - [2021 shiny-fluent Hackathon Appsilon/RStudio Contest SHARC!](https://github.com/mdubel/shark-attack)
 - [{shinytest2}: Regression Testing for Shiny Applications](https://github.com/schloerke/presentation-2022-04-27-appsilon-shinytest2)
@@ -1257,6 +1283,31 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 	- [Shiny Decisions] Shiny app: sparktuga.shinyapps.io/ShinyDecisions/ Repo: github.com/pedrocoutinhosilva/shiny.decisions
 	- [Shark Attack: Clean the Ocean] Shiny app: mdubel.shinyapps.io/shark-attack/ Repo: github.com/mdubel/shark-attack
 	- [Bikemap] Shiny app: 2exp3.shinyapps.io/mapa-ciclista/_w_6e13cdc9/ Repo: github.com/2exp3/bikemapp
+
+# Obsidian
+- [Zettelkasten: как один немецкий учёный стал невероятно продуктивным](https://habr.com/ru/post/508672/)
+- [Воспитание Obsidian — вашего персонального информационного менеджера](https://habr.com/ru/company/macloud/blog/560776/)
+- [Как я веду заметки в стиле Zettelkasten в Obsidian](https://venagid.ru/blog/zettelkasten-obsidian)
+- [Obsidian — IDE для Markdown базы знаний](https://vas3k.club/link/2609/)
+
+# 26.06.2022
+## HPC
+- [slurmR: A Lightweight Wrapper for Slurm](https://uscbiostats.github.io/slurmR/)
+- [rslurm: submit R code to a Slurm cluster](https://sesync-ci.github.io/rslurm/). Note that job submission is only possible on a system with access to a Slurm workload manager (i.e. a system where the command line utilities squeue or sinfo return information from a Slurm head node).
+- COOL! [WTF is Kubernetes and Should I Care as R User?](https://blog.rmhogervorst.nl/blog/2022/04/17/wtf-is-kubernetes-and-should-i-care-as-r-user/)
+- [tsdrtools](https://lcbc-uio.github.io/tsdrtools/index.html). The goal of tsdrtools is to make it easier for R users of TSD to install packages that fail install using the TSD mini-CRAN.
+- [Using Kubernetes and the Future Package to Easily Parallelize R in the Cloud](https://www.jottr.org/2021/04/08/future-and-kubernetes/)
+
+
+# 24.06.2022
+## DS
+- [Swagger: что это такое и как с ним работать?](https://highload.today/swagger-api/)
+
+# 15.06.2022
+## R
+- [Find Insights with Ranked Cross-Correlations](https://datascienceplus.com/find-insights-with-ranked-cross-correlations/)
+- [jsonlite: Return NA values for list columns with missing values {#120}](https://github.com/jeroen/jsonlite/issues/120)
+- Slides. [GPU Computing with R](https://jaredlander.com/content/2021/09/GPUComputingWithR.html#1) by Jared P. Lander
 
 # 14.06.2022
 ## R
@@ -1722,11 +1773,12 @@ From: Computational Methods in Engineering, 2014
 - COOL! [Formulae in R - ANOVA and other models, mixed and fixed](https://conjugateprior.org/2013/01/formulae-in-r-anova/)
 - [The R Formula Method: The Good Parts](https://rviews.rstudio.com/2017/02/01/the-r-formula-method-the-good-parts/). 2017-02-01 by Max Kuhn
 - [The R Formula Method: The Bad Parts](https://rviews.rstudio.com/2017/03/01/the-r-formula-method-the-bad-parts/).  2017-03-01 by Max Kuhn
+- [Changing the variable inside an R formula](https://statisticaloddsandends.wordpress.com/2019/08/24/changing-the-variable-inside-an-r-formula/)
+
 
 ## Splines
 - [Spline Regression in R](https://medium.com/analytics-vidhya/spline-regression-in-r-960ca82aa62c)
 - [2 Piecewise Regression and Splines](https://bookdown.org/tpinto_home/Beyond-Linearity/piecewise-regression-and-splines.html)
-
 
 # 04.02.2022
 ## Selenium docker
@@ -1823,6 +1875,7 @@ Plot a graph of the data against time. If it looks like the variation increases 
 - [How can we quantify similarity between time series?](https://tech.gorilla.co/how-can-we-quantify-similarity-between-time-series-ed1d0b633ca0)
 - [Graph Convolutional Network for Time Series — An Intro](https://towardsdatascience.com/graph-convolutional-network-for-time-series-an-intro-6d1b01ea3bc)
 Graph convolutional network (GCN) is an absolute game-changer in the deep learning domain.
+- From Vitalijs. [Data over Space and Time (36-467/667)](https://www.stat.cmu.edu/~cshalizi/dst/20/)
 
 # 31.01.2022
 ## R
@@ -1843,7 +1896,7 @@ I’ve been learning how to program with Apache Arrow inside R, and also I have 
 Sys.setenv(ARROW_R_DEV="true")
 Sys.setenv(NOT_CRAN="true")
 ```
-
+- Slides. [Bigger data with arrow and duckdb](https://colorado.rstudio.com/rsc/bigger-data-prez/) Tom Mock & Edgar Ruiz, 2021-10-26
 
 ## R
 - [How to read files from a UNC-specified directory in R?](https://stackoverflow.com/questions/18570102/how-to-read-files-from-a-unc-specified-directory-in-r)
@@ -5174,13 +5227,14 @@ Tools are provided to create plural, singular and regular forms of English words
 	- COOL! Stats and R. [Student's t-test in R and by hand: how to compare two groups under different scenarios](https://www.statsandr.com/blog/student-s-t-test-in-r-and-by-hand-how-to-compare-two-groups-under-different-scenarios/)
 	- COOL! Stats and R. [Correlation coefficient and correlation test in R](https://statsandr.com/blog/correlation-coefficient-and-correlation-test-in-r/)
 
-
-
 # 04.06.2020
 ## R
 Global String pool
 	- [Object size for characters in R - How does R global string pool work?](https://stackoverflow.com/questions/29701721/object-size-for-characters-in-r-how-does-r-global-string-pool-work/49040402)
 	- [Memory usage and R's global string pool](https://community.rstudio.com/t/memory-usage-and-rs-global-string-pool/4762)
+- [Joining by a character column is slow, compared to joining by a factor column. #1386
+ {Closed}](https://github.com/tidyverse/dplyr/issues/1386). Тут, кстати, идет обсуждение про сравнение строк путем сравнения ссылок на эти строки!
+
 
 # 03.06.2020
 ## R
@@ -7279,7 +7333,6 @@ Multiple Precision Arithmetic (big integers and rationals, prime number tests, m
 - [lumberjack: Track Changes in Data](https://cran.r-project.org/web/packages/lumberjack/index.html)
 A framework that allows for easy logging of changes in data. Main features: start tracking changes by adding a single line of code to an existing script. Track changes in multiple datasets, using multiple loggers. Add custom-built loggers or use loggers offered by other packages.
 - [Visualizing the relationship between multiple variables](https://statisticaloddsandends.wordpress.com/2019/08/24/visualizing-the-relationship-between-multiple-variables/)
-- [Changing the variable inside an R formula](https://statisticaloddsandends.wordpress.com/2019/08/24/changing-the-variable-inside-an-r-formula/)
 - e-book. [Open Forensic Science in R](https://sctyner.github.io/OpenForSciR/)
 - [Introducing Open Forensic Science in R](https://ropensci.org/blog/2019/08/20/forensic-science/)
 - COOL! [Kurt Hornik: S3 Method Lookup](http://developer.r-project.org/Blog/public/2019/08/19/s3-method-lookup/index.html)
