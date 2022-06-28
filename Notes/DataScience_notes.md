@@ -1176,6 +1176,35 @@ sudo apt install -y jq
 jq --version
 ```
 
+- COOL! [Speeding Up JSON Parsing in R](https://elucidatablog.wordpress.com/2016/07/13/speeding-up-json-parsing-in-r/). Combining JSON parser: Saving milliseconds of the response time
+Even after this what we had was not fast enough. Parsing JSON in R was now the rate-determining step. The two popular packages in R to handle JSON objects are ‘rjson’ and ‘jsonlite’.
+- [High performance JSON streaming in R: Part 1](https://www.opencpu.org/posts/jsonlite-streaming/)
+- [JSON serialization now even faster and prettier](https://www.opencpu.org/posts/jsonlite-release-0-9-16/)
+- [jqr -- R interface to jq, a JSON processor http://stedolan.github.io/jq/](https://github.com/ropensci/jqr). jqr makes it easy to process large amounts of json without having to convert from json to R, or without using regular expressions. This means that the eventual loading into R can be quicker.
+- [Hyperpolyglot. JSON Tools: Jq](http://hyperpolyglot.org/json)
+- [jq recipes](https://remysharp.com/drafts/jq-recipes)
+- [jq Conditional output](https://stackoverflow.com/questions/19573517/jq-conditional-output)
+- [Bash that JSON (with jq)](http://blog.librato.com/posts/jq-json)
+- [jq: Filtering missing keys](https://markhneedham.com/blog/2015/11/14/jq-filtering-missing-keys/)
+- [Return empty string instead of "null" with "jq --raw-output" ? #354 {Closed}](https://github.com/stedolan/jq/issues/354)
+- [Reshaping JSON with jq](https://programminghistorian.org/en/lessons/json-and-jq) by Matthew Lincoln
+- [Data Rectangling with jq](https://www.carlboettiger.info/2017/12/11/data-rectangling-with-jq/)
+- [Flatten JSON with jq retaining key names](https://stackoverflow.com/questions/42401073/flatten-json-with-jq-retaining-key-names)
+- [jq JSON handle missing fields](https://stackoverflow.com/questions/57069940/jq-json-handle-missing-fields)
+- [Help iterating over keys and values in an object #73 {Closed}](https://github.com/stedolan/jq/issues/73)
+- [jq - How to iterate through keys of different names](https://stackoverflow.com/questions/35086391/jq-how-to-iterate-through-keys-of-different-names)
+- [Reshaping JSON with jq](https://programminghistorian.org/en/lessons/json-and-jq)
+- COOL! [INTRODUCING ZQ. AN EASIER (AND FASTER) ALTERNATIVE TO JQ](https://www.brimdata.io/blog/introducing-zq/)
+- [zq](https://zed.brimdata.io/docs/commands/zq/)
+TL;DR zq is a command-line tool that uses the Zed language for pipeline-style search and analytics. zq can query a variety of data formats in files, over HTTP, or in S3 storage. It is particularly fast when operating on data in the Zed-native ZNG format.
+- [While unnesting an object in jq, how can I avoid restating labels at each stage in the pipeline?](https://stackoverflow.com/questions/54210566/while-unnesting-an-object-in-jq-how-can-i-avoid-restating-labels-at-each-stage)
+- [Using jq how can I replace the name of a key with something else](https://stackoverflow.com/questions/43522133/using-jq-how-can-i-replace-the-name-of-a-key-with-something-else)
+- [Is it possible to recursively change key names with jq using the with_entries method?](https://unix.stackexchange.com/questions/655253/is-it-possible-to-recursively-change-key-names-with-jq-using-the-with-entries-me)
+- [jq ~ collapse specific single object arrays?](https://stackoverflow.com/questions/70063816/jq-collapse-specific-single-object-arrays)
+- [How to check for presence of 'key' in jq before iterating over the values](https://stackoverflow.com/questions/42097410/how-to-check-for-presence-of-key-in-jq-before-iterating-over-the-values)
+
+
+
 ## Timezone
 - [Timezone unknown in Rstudio](https://stackoverflow.com/questions/46657826/timezone-unknown-in-rstudio)
 - [RStudio Server not inheriting TZ environment varibale?](https://support.rstudio.com/hc/en-us/community/posts/115007820087-RStudio-Server-not-inheriting-TZ-environment-varibale-)
@@ -1290,6 +1319,8 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [Как я веду заметки в стиле Zettelkasten в Obsidian](https://venagid.ru/blog/zettelkasten-obsidian)
 - [Obsidian — IDE для Markdown базы знаний](https://vas3k.club/link/2609/)
 
+# http://192.168.12.31:4242/client/#/
+
 # 26.06.2022
 ## HPC
 - [slurmR: A Lightweight Wrapper for Slurm](https://uscbiostats.github.io/slurmR/)
@@ -1302,6 +1333,8 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [executing cv.glmnet in parallel in R](https://stackoverflow.com/questions/21698435/executing-cv-glmnet-in-parallel-in-r)
 - [Best Use of Train/Val/Test Splits, with Tips for Medical Data](https://glassboxmedicine.com/2019/09/15/best-use-of-train-val-test-splits-with-tips-for-medical-data/)
 - [Lasso and Elastic-Net Regularized Generalized Linear Models](https://glmnet.stanford.edu/index.html)
+- [ROOT: analyzing petabytes of data, scientifically.](https://root.cern/). An open-source data analysis framework used by high energy physics and others.
+	- [ROOT R](https://root.cern/root/html606/md_bindings_r_doc_users-guide_ROOTR_Users_Guide.html) is an interface in ROOT to call R functions using an R C++ interface (Rcpp, see http://dirk.eddelbuettel.com/code/rcpp.html). This interface opens the possibility in ROOT to use the very large set of mathematical and statistical tools provided by R.
 
 
 # 24.06.2022

@@ -36,6 +36,11 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 	- Start up JupyterLab using: `jupyter lab`
 	- [A visual debugger for Jupyter](https://blog.jupyter.org/a-visual-debugger-for-jupyter-914e61716559)
 
+# 28.06.2022
+- [Is there a sessionInfo() equivalent in Python?](https://stackoverflow.com/questions/20703975/is-there-a-sessioninfo-equivalent-in-python)
+- [14 Must-Know pip Commands For Data Scientists and Engineers](https://towardsdatascience.com/14-must-know-pip-commands-for-data-scientists-and-engineers-a59ebbe0a439)
+	- List installed packages: `python -m pip list`
+
 # 23.06.2022
 - [Исключения в Python теперь считаются анти-паттерном](https://habr.com/ru/company/oleg-bunin/blog/445234/)
 
