@@ -238,6 +238,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Applied Time Series Analysis for Fisheries and Environmental Sciences](https://atsa-es.github.io/atsa-labs/) by E. E. Holmes, M. D. Scheuerell, and E. J. Ward. 2021-07-28
 - [Social Data Science with R](https://www.sds.pub/index.html) by Daniel Anderson, Brendan Cullen, Ouafaa Hmaddi, 2020-12-24
 - [An Introduction to R](https://intro2r.com/) by Alex Douglas, Deon Roos, Francesca Mancini, Ana Couto & David Lusseau, April 8, 2022
+- [Rcpp for everyone](https://teuder.github.io/rcpp4everyone_en/) by Masaki E. Tsuda, 2020-10-20
 
 
 
@@ -1336,6 +1337,33 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [ROOT: analyzing petabytes of data, scientifically.](https://root.cern/). An open-source data analysis framework used by high energy physics and others.
 	- [ROOT R](https://root.cern/root/html606/md_bindings_r_doc_users-guide_ROOTR_Users_Guide.html) is an interface in ROOT to call R functions using an R C++ interface (Rcpp, see http://dirk.eddelbuettel.com/code/rcpp.html). This interface opens the possibility in ROOT to use the very large set of mathematical and statistical tools provided by R.
 
+
+# 29.06.2022
+## R
+- [Error handling in R with tryCatchLog: Catching, logging, post-mortem analysis](https://cran.r-project.org/web/packages/tryCatchLog/vignettes/tryCatchLog-intro.html)
+- [How to write trycatch in R](https://stackoverflow.com/questions/12193779/how-to-write-trycatch-in-r)
+- [Getting R to Print English Error Messages](https://thomasadventure.blog/posts/getting-r-to-print-english-error-messages/)
+- [Производственный календарь в XML](http://www.xmlcalendar.ru/)
+- COOL! [A Future for R: Non-Exportable Objects](https://cran.r-project.org/web/packages/future/vignettes/future-4-non-exportable-objects.html)
+Certain types of objects are tied to a given R session. Such objects cannot be saved to file by one R process and then later be reloaded in another R process and expected to work correctly.
+- [How to use tryCatch with withTimeout to timeout Rcpp function without stopping execution of script](https://stackoverflow.com/questions/67636203/how-to-use-trycatch-with-withtimeout-to-timeout-rcpp-function-without-stopping-e)
+```
+# Timeout is in seconds
+# https://www.rdocumentation.org/packages/R.utils/versions/2.7.0/topics/withTimeout
+tryCatch(
+  {
+    withTimeout(some_function(), timeout = 60)                    
+  }
+  ,TimeoutException = function(ex) {
+    print("Timeout of 60 seconds reached. Function will not be completely run.")
+  }
+)
+```
+- [How to correctly catch the Rcpp exceptions?](https://stackoverflow.com/questions/63049304/how-to-correctly-catch-the-rcpp-exceptions)
+- [Suppressing Call Stack Info in Rcpp-Generated Errors and Warnings](https://gallery.rcpp.org//articles/quiet-stop-and-warning/)
+- COOL! xPATH. [Find nodes by substring matching the end of an attribute's value](https://riptutorial.com/xpath/example/10549/find-nodes-by-substring-matching-the-end-of-an-attribute-s-value) `//*[ends-with(lower-case(@type),'tar')]`
+- [Functions renamed in rvest 1.0.0](https://rvest.tidyverse.org/reference/rename.html)
+- COOL! [Analytics in R Shiny app with WebDataRocks](https://www.webdatarocks.com/blog/analytics-in-r-shiny-app-with-webdatarocks/)
 
 # 24.06.2022
 ## DS
