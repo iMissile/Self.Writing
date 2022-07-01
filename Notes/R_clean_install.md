@@ -452,3 +452,6 @@ This will probably take several minutes to run.
 References
 https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/
 https://www.r-bloggers.com/get-all-your-packages-back-on-r-4-0-0/
+
+# RHEL 8 / CentOS 8
+- [Install R & RStudio on CentOS 8 / RHEL 8 Linux](https://computingforgeeks.com/install-r-and-rstudio-on-centos-rhel-linux/)

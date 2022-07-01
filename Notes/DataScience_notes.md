@@ -33,6 +33,7 @@ https://tmall.aliexpress.com/item/Edifier-W830BT-1/1000005465785.html
 	- [Slack Deletron](https://www.slackdeletron.com/). Delete and manage files from your Slack Workspace!
 	- [How To Delete all Slack Files to Manage Disk Space](https://www.techjunkie.com/delete-all-slack-files/)
 - COOL! A second brain, for you, forever. [Obsidian](https://obsidian.md/) is a powerful knowledge base on top of a local folder of plain text Markdown files.
+- [LightTable](http://lighttable.com/). The next generation code editor
 
 ## Google Sites
 - Копируем сайты. Copy Sites[Download HTTrack Website Copier 3.49-2](http://www.httrack.com/page/2/)
@@ -1322,6 +1323,19 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 
 # http://192.168.12.31:4242/client/#/
 
+# 01.07.2022
+- [What are CN, OU, DC in an LDAP search?](https://stackoverflow.com/questions/18756688/what-are-cn-ou-dc-in-an-ldap-search)
+- [G*Power](https://www.psychologie.hhu.de/arbeitsgruppen/allgemeine-psychologie-und-arbeitspsychologie/gpower). Statistical Power Analyses for Mac and Windows
+G*Power is a tool to compute statistical power analyses for many different t tests, F tests, χ2 tests, z tests and some exact tests. G*Power can also be used to compute effect sizes and to display graphically the results of power analyses.
+
+## ML
+- [Градиентный бустинг](https://ml-handbook.ru/chapters/grad_boost/intro). Авторы:  Кирилл Лунёв, Евгения Елистратова
+Во многих компаниях, так или иначе связанных с ML, он используется для всех задач, которые не связаны с однородными данными (картинками, текстами, etc). Типичный поисковый запрос в Яндексе, выбор отеля на Booking.com или сериала на вечер в Netflix задействует несколько десятков моделей GBDT.
+- [L1-L2 регуляризация](https://itchef.ru/articles/312622/)
+
+## R
+- [Предсказание оттока сотрудников](https://rpubs.com/pavel_rafael/employee). Пономарев Павел-Рафаэль, ppponomarev
+
 # 26.06.2022
 ## HPC
 - [slurmR: A Lightweight Wrapper for Slurm](https://uscbiostats.github.io/slurmR/)
@@ -1329,6 +1343,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - COOL! [WTF is Kubernetes and Should I Care as R User?](https://blog.rmhogervorst.nl/blog/2022/04/17/wtf-is-kubernetes-and-should-i-care-as-r-user/)
 - [tsdrtools](https://lcbc-uio.github.io/tsdrtools/index.html). The goal of tsdrtools is to make it easier for R users of TSD to install packages that fail install using the TSD mini-CRAN.
 - [Using Kubernetes and the Future Package to Easily Parallelize R in the Cloud](https://www.jottr.org/2021/04/08/future-and-kubernetes/)
+- [Using Rstudio Jobs for training many models in parallel](https://edwinth.github.io/blog/parallel-jobs/)
 
 ## ML
 - [executing cv.glmnet in parallel in R](https://stackoverflow.com/questions/21698435/executing-cv-glmnet-in-parallel-in-r)
