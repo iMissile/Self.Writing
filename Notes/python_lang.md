@@ -31,6 +31,8 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 - [IPython. Interactive Computing](https://ipython.org/). Он же Jupyter.
 	- [Install](https://docs.jupyter.org/en/latest/install/notebook-classic.html) `pip3 install jupyter`
 	- [Run](https://docs.jupyter.org/en/latest/running.html#running) `jupyter notebook`
+	- [exit from ipython](https://stackoverflow.com/questions/1527689/exit-from-ipython). I like IPython a lot for working with the python interpreter. However, I continually find myself typing exit to exit, and get prompted "Type exit() to exit."
+I know I can type Ctrl-D to exit, but is there a way I can type exit without parentheses and get IPython to exit?
 - [JupyterLab computational environment.](https://github.com/jupyterlab/jupyterlab). 
 	- [Install] `pip install jupyterlab`
 	- Start up JupyterLab using: `jupyter lab`

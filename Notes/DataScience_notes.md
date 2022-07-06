@@ -1304,6 +1304,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [RStudio Connect. High Availability & Load Balancing](https://docs.rstudio.com/connect/admin/load-balancing/)
 - [Example: Bike Prediction](https://solutions.rstudio.com/example/bike_predict/)
 - [Kubeflow: A Complete Solution to MLOps](https://blog.knoldus.com/kubeflow-a-complete-solution-to-mlops/)
+- [Repositories and Sources in RStudio Package Manager](https://support.rstudio.com/hc/en-us/articles/360009983993-Repositories-and-Sources-in-RStudio-Package-Manager)
 
 
 # Appsilon Shiny 2022
@@ -1322,6 +1323,39 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [Obsidian — IDE для Markdown базы знаний](https://vas3k.club/link/2609/)
 
 # http://192.168.12.31:4242/client/#/
+
+# 04.07.2022
+## Teradata
+- [Teradata Vantage Overview](https://docs.teradata.com/r/Teradata-VantageTM-User-Guide/October-31-2020/Introduction-to-Teradata-Vantage/Teradata-Vantage-Overview)
+- [Teradata Documentation Website](https://downloads.teradata.com/download/connectivity/teradata-package-for-r-tdplyr)
+	- Teradata R Package User Guide – B700-4005
+	- Teradata R Function Reference – B700-4007
+- [Teradata Package for R - tdplyr](https://downloads.teradata.com/download/connectivity/teradata-package-for-r-tdplyr)
+- [The teradataml Package](https://docs.teradata.com/r/Teradata-Python-Package-User-Guide/February-2020/Introduction-to-Teradata-Python-Package)
+- [A fast, consistent tool for working with data frame like objects within Teradata and take advantage of the Big Data and Machine Learning analytics capabilities of Vantage.](https://github.com/Teradata/tdplyr)
+- [How do I install an R package from source?](https://stackoverflow.com/questions/1474081/how-do-i-install-an-r-package-from-source). `install.packages(path_to_file, repos = NULL, type="source")`.
+- `tdplyr` использует `dbplyr::add_op_single`, который с версии 2.2.0 не экспортируется, открыл тикет [#931](https://github.com/tidyverse/dbplyr/issues/931)
+Ставим старую версию `dbplyr`: 
+```
+require(devtools)
+install_version("dbplyr", version = "2.1.1", repos = "http://cran.us.r-project.org")
+```
+- [hoxo-m/dplyr.teradata](https://github.com/hoxo-m/dplyr.teradata). A Teradata Backend for dplyr.
+
+## A/B
+- COOL! [a/b testing](https://bytepawn.com/tag/ab-testing.html)
+
+## R
+- [Using a variable in update() in R to update formula](https://stackoverflow.com/questions/38980066/using-a-variable-in-update-in-r-to-update-formula)
+- Вставляем в Shiny из клипборда.
+	- [shinyscreenshot: Finally, an easy way to take screenshots in Shiny apps!](https://www.google.com/amp/s/www.r-bloggers.com/2020/11/shinyscreenshot-finally-an-easy-way-to-take-screenshots-in-shiny-apps/amp/)
+	- [Rich Text Editor in Shiny App](https://deeps.shinyapps.io/HTMLEditor/
+https://github.com/deepanshu88/ShinyEditor)
+
+## DS
+- [Анализ малых данных. Линейная регрессия++](https://www.google.com/amp/s/dyakonov.org/2019/10/31/%25D0%25BB%25D0%25B8%25D0%25BD%25D0%25B5%25D0%25B9%25D0%25BD%25D0%25B0%25D1%258F-%25D1%2580%25D0%25B5%25D0%25B3%25D1%2580%25D0%25B5%25D1%2581%25D1%2581%25D0%25B8%25D1%258F/amp/)
+- [Building a Pytorch Autoencoder for MNIST digits](https://bytepawn.com/building-a-pytorch-autoencoder-for-mnist-digits.html#building-a-pytorch-autoencoder-for-mnist-digits)
+- [Проверка гипотезы равенства средних при неравной дисперсии в R](https://habr.com/ru/post/556632/)
 
 # 01.07.2022
 - [What are CN, OU, DC in an LDAP search?](https://stackoverflow.com/questions/18756688/what-are-cn-ou-dc-in-an-ldap-search)
@@ -1402,6 +1436,7 @@ tryCatch(
 
 ## RuleFit, Business Rules
 - [imodels](https://github.com/csinva/imodels). Interpretable ML package 🔍 for concise, transparent, and accurate predictive modeling (sklearn-compatible).
+- [imodels: leveraging the unreasonable effectiveness of rules](https://bair.berkeley.edu/blog/2022/02/02/imodels/)
 - [Difference between rulefit and random forest](https://stats.stackexchange.com/questions/208930/difference-between-rulefit-and-random-forest)
 - [Difference between rulefit & skope-rules Python Packages](https://datascience.stackexchange.com/questions/90262/difference-between-rulefit-skope-rules-python-packages)
 - [frbs: Fuzzy Rule-Based Systems for Classification and Regression in R](https://cran.r-project.org/web/packages/frbs/vignettes/lala2015frbs.pdf)

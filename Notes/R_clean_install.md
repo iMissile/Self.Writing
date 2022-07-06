@@ -190,7 +190,7 @@ libpcre2-dev \
 ncdu \
 glances
 ```
-   # r-cran-littler
+# r-cran-littler
 
 - [library missing cannot find -lbz2 in arch](https://stackoverflow.com/questions/49841635/library-missing-cannot-find-lbz2-in-arch)
 `/usr/bin/ld: cannot find -lbz2`
