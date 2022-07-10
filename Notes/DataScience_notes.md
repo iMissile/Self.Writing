@@ -1324,6 +1324,22 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 
 # http://192.168.12.31:4242/client/#/
 
+# 08.07.2022
+## R reference semantics
+- [Reference semantics](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-reference-semantics.html)
+- [Notes on References, External Objects, or Mutable State for R](https://homepage.divms.uiowa.edu/~luke/R/references.html)
+- [Reference semantics](https://cran.rstudio.com/web/packages/container/vignettes/reference-semantics.html)
+- [Reference semantics in R](https://www.r-bloggers.com/2016/06/reference-semantics-in-r/)
+
+## knitr
+- [Bookdown. 3.1.6 Data frame printing](https://bookdown.org/yihui/rmarkdown/html-document.html#data-frame-printing)
+- [Define an R Markdown output format](https://rmarkdown.rstudio.com/docs/reference/output_format.html)
+- [Per-chunk override of global df_print specification: default, kable, tibble, or paged #1403 {Open}](https://github.com/rstudio/rmarkdown/issues/1403) `paged.print = TRUE/FALSE`
+- [How to set df_print to tibble in markdown for a single R code chunk](https://stackoverflow.com/questions/51536346/how-to-set-df-print-to-tibble-in-markdown-for-a-single-r-code-chunk)
+
+## git
+- COOL! [Adding Zip Files to Github Gists](https://blog.ouseful.info/2019/02/12/adding-zip-files-to-github-gists/)
+
 # 04.07.2022
 ## Teradata
 - [Teradata Vantage Overview](https://docs.teradata.com/r/Teradata-VantageTM-User-Guide/October-31-2020/Introduction-to-Teradata-Vantage/Teradata-Vantage-Overview)
@@ -1352,10 +1368,23 @@ install_version("dbplyr", version = "2.1.1", repos = "http://cran.us.r-project.o
 	- [Rich Text Editor in Shiny App](https://deeps.shinyapps.io/HTMLEditor/
 https://github.com/deepanshu88/ShinyEditor)
 
+## R & trees
+- Tree visualization
+	- COOL! [Tree diagrams in R](https://www.datakwery.com/post/tree-diagrams-in-r/)
+	- [Introduction to tree diagram with R and ggraph](https://r-graph-gallery.com/334-basic-dendrogram-with-ggraph.html)
+	- [Exploring data subsets with vtree](https://arxiv.org/abs/2010.13252)
+- [The Monad.Reader/Issue5/Practical Graph Handling](https://wiki.haskell.org/The_Monad.Reader/Issue5/Practical_Graph_Handling)
+- [Working with tree-based hierarchies using data.tree](https://rstats-tips.net/2021/07/31/working-with-tree-based-hierarchies-using-data-tree/)
+- [Обход графа: поиск в глубину и поиск в ширину простыми словами на примере JavaScript](https://habr.com/ru/post/504374/)
+- [Algorithms on Graphs: Let’s talk Depth-First Search (DFS) and Breadth-First Search (BFS)](https://trykv.medium.com/algorithms-on-graphs-lets-talk-depth-first-search-dfs-and-breadth-first-search-bfs-5250c31d831a).
+
 ## DS
 - [Анализ малых данных. Линейная регрессия++](https://www.google.com/amp/s/dyakonov.org/2019/10/31/%25D0%25BB%25D0%25B8%25D0%25BD%25D0%25B5%25D0%25B9%25D0%25BD%25D0%25B0%25D1%258F-%25D1%2580%25D0%25B5%25D0%25B3%25D1%2580%25D0%25B5%25D1%2581%25D1%2581%25D0%25B8%25D1%258F/amp/)
 - [Building a Pytorch Autoencoder for MNIST digits](https://bytepawn.com/building-a-pytorch-autoencoder-for-mnist-digits.html#building-a-pytorch-autoencoder-for-mnist-digits)
-- [Проверка гипотезы равенства средних при неравной дисперсии в R](https://habr.com/ru/post/556632/)
+- [Проверка гипотезы равенства средних при неравной дисперсии в R](https://habr.com/ru/post/556632/). Шапиро тест
+- [Этот несовершенный мир](https://investcookies.ru/post/business_uncertainty/)
+- [Welcome to Quarto](https://quarto.org/)
+Quarto® is an open-source scientific and technical publishing system built on Pandoc
 
 # 01.07.2022
 - [What are CN, OU, DC in an LDAP search?](https://stackoverflow.com/questions/18756688/what-are-cn-ou-dc-in-an-ldap-search)
@@ -2738,6 +2767,7 @@ A quick introduction to 10 basic graph algorithms with examples and visualisatio
 ## Wolfram
 - [What is the simplest way to plot a decomposition tree in Mathematica?](https://stackoverflow.com/questions/5647268/what-is-the-simplest-way-to-plot-a-decomposition-tree-in-mathematica)
 - [The inverse of moving from a map to a network topology](https://community.wolfram.com/groups/-/m/t/1358396?sortMsg=Flat)
+- [Nested list to graph](https://mathematica.stackexchange.com/questions/43930/nested-list-to-graph)
 
 ## R
 - [rmonad](https://github.com/arendsee/rmonad)
