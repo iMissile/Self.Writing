@@ -1306,6 +1306,9 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [Kubeflow: A Complete Solution to MLOps](https://blog.knoldus.com/kubeflow-a-complete-solution-to-mlops/)
 - [Repositories and Sources in RStudio Package Manager](https://support.rstudio.com/hc/en-us/articles/360009983993-Repositories-and-Sources-in-RStudio-Package-Manager)
 
+# R packages
+- [Building, Testing, and Distributing Packages](https://support.rstudio.com/hc/en-us/articles/200486508-Building-Testing-and-Distributing-Packages)
+
 
 # Appsilon Shiny 2022
 - [2021 shiny-fluent Hackathon Appsilon/RStudio Contest SHARC!](https://github.com/mdubel/shark-attack)
@@ -2042,6 +2045,7 @@ Sys.setenv(ARROW_R_DEV="true")
 Sys.setenv(NOT_CRAN="true")
 ```
 - Slides. [Bigger data with arrow and duckdb](https://colorado.rstudio.com/rsc/bigger-data-prez/) Tom Mock & Edgar Ruiz, 2021-10-26
+- [Apache Arrow vs. Parquet and ORC: Do we really need a third Apache project for columnar data representation?](https://dbmsmusings.blogspot.com/2017/10/apache-arrow-vs-parquet-and-orc-do-we.html). October 31, 2017
 
 ## R
 - [How to read files from a UNC-specified directory in R?](https://stackoverflow.com/questions/18570102/how-to-read-files-from-a-unc-specified-directory-in-r)
@@ -2618,6 +2622,8 @@ Using evolution to fit a basic linear model
 # 31.08.2021
 ## Process mining
 - [msa](https://bioconductor.org/packages/msa) An R Package for Multiple Sequence Alignment]
+- [Fodina: Robust and Flexible Process Discovery](http://www.processmining.be/fodina/)
+- [Fodina Miner](https://icpmconference.org/2020/2020/01/24/fodina-miner/)
 
 # 30.08.2021
 ## R
@@ -2825,7 +2831,7 @@ Easily Build BI Applications with Open Source, Interactive SQL
 ## R
 - [Convert Markdown to HTML](https://markdowntohtml.com/)
 - COOL! [{shinytitle}: Change the Browser Tab Title of your Shiny App](https://ashbaldry.github.io/2021-06-17-shinytitle-0-1-0-release/)
-- [trackdown - R package for improving collaborative writing](https://ekothe.github.io/trackdown/)
+- [trackdown - R package for improving collaborative writing](https://claudiozandonella.github.io/trackdown/)
 - COOL! [★ wizard zines ★ programming zines by Julia Evans (@b0rk)](https://wizardzines.com/)
 - [Efficient simulations in R](https://grantmcdermott.com/efficient-simulations-in-r/)
 - [gratia](https://gavinsimpson.github.io/gratia/). Graceful ‘ggplot’-based graphics and utility functions for working with generalized additive models (GAMs) fitted using the ‘mgcv’ package.
