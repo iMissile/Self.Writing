@@ -14,11 +14,12 @@
 - [Python — это медленно. Почему?](https://habr.com/ru/company/ruvds/blog/418823/)
 
 # IDE & Installation
-- [Spyder](https://www.spyder-ide.org/) is a free and open source scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts.
+- [Spyder](https://www.spyder-ide.org/) is a free and open source scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts. Our standalone installers for Windows and macOS are available from Spyder 4.2 onwards. [We recommend using this installation method](https://docs.spyder-ide.org/current/installation.html) on those platforms, but we offer several other options for Linux, advanced users and specific needs, so keep reading if that’s the case for you.
+	- [Official repository for Spyder - The Scientific Python Development Environment](https://github.com/spyder-ide/spyder).
 - [Using Python with the RStudio IDE](https://support.rstudio.com/hc/en-us/articles/1500007929061-Using-Python-with-the-RStudio-IDE)
 - [How do I install pip on macOS or OS X?](https://stackoverflow.com/questions/17271319/how-do-i-install-pip-on-macos-or-os-x)
-- [How to upgrade all Python packages with pip](https://stackoverflow.com/questions/2720014/how-to-upgrade-all-python-packages-with-pip)
-	 - Не работает так: The shortest and easiest on Windows.
+- COOL! [How to upgrade all Python packages with pip](https://stackoverflow.com/questions/2720014/how-to-upgrade-all-python-packages-with-pip)
+	 - The shortest and easiest on Windows. Запускаем именно в классической командной строке:
 `pip freeze > requirements.txt && pip install --upgrade -r requirements.txt && rm requirements.txt`
 	- Еще решение (работает, запускаем под WT и бед не знаем). [And for python 3... pip3 install]
 ```
@@ -27,6 +28,11 @@ pip install -U $(pip freeze | awk -F'[=]' '{print $1}')
 
 Windows PowerShell update
 foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
+```
+	- Еще решение (надо проверять): 
+```
+$ pip install pipupgrade
+$ pipupgrade --verbose --latest --yes
 ```
 - [IPython. Interactive Computing](https://ipython.org/). Он же Jupyter.
 	- [Install](https://docs.jupyter.org/en/latest/install/notebook-classic.html) `pip3 install jupyter`
@@ -37,6 +43,7 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 	- [Install] `pip install jupyterlab`
 	- Start up JupyterLab using: `jupyter lab`
 	- [A visual debugger for Jupyter](https://blog.jupyter.org/a-visual-debugger-for-jupyter-914e61716559)
+- [Orange](https://orangedatamining.com/). Open source machine learning and data visualization.
 
 # 28.06.2022
 - [Is there a sessionInfo() equivalent in Python?](https://stackoverflow.com/questions/20703975/is-there-a-sessioninfo-equivalent-in-python)

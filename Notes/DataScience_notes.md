@@ -1343,6 +1343,10 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 ## git
 - COOL! [Adding Zip Files to Github Gists](https://blog.ouseful.info/2019/02/12/adding-zip-files-to-github-gists/)
 
+## RStudio IDE
+- ["Find in Files" always finds nothing in package development mode](https://community.rstudio.com/t/find-in-files-always-finds-nothing-in-package-development-mode/10056)
+Do you have indexing disabled for this project? See in `Tools` -> `Project Options`
+
 # 04.07.2022
 ## Teradata
 - [Teradata Vantage Overview](https://docs.teradata.com/r/Teradata-VantageTM-User-Guide/October-31-2020/Introduction-to-Teradata-Vantage/Teradata-Vantage-Overview)

@@ -7,6 +7,7 @@
 `c:\> choco upgrade chocolatey`
 - [List All Installed Packages with Chocolatey](https://mangolassi.it/topic/18334/list-all-installed-packages-with-chocolatey)
 `choco list --local-only`. Там же примеры команд на апгрейд.
+- [How to Use Chocolatey to Easily Install and Update Windows Programs](https://www.maketecheasier.com/use-chocolatey-to-install-update-windows-programs/). Тут упоминается про Chocolatey GUI. `choco install chocolateygui`
 
 # Бесплатные лицензии
 - [COMSS1](https://www.comss.ru/list.php?c=club)
