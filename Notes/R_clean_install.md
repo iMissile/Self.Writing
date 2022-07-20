@@ -51,7 +51,7 @@ chooseCRANmirror(graphics=FALSE, ind=37)
 pacman::p_load("gWidgetstcltk")
 
 
-# Offfline Инсталляция
+# Offline Инсталляция
 ## Создаем репозиторий miniCRAN
 - Используем пакет miniCRAN для инициализации репозитория. 
 Считаем, что локальная директория /opt/miniCRAN уже создана.

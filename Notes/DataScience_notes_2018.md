@@ -353,7 +353,7 @@ Provides functionality for client-side navigation of the server side file system
 ## R
 - [gsubfn: Utilities for Strings and Function Arguments](https://cran.r-project.org/web/packages/gsubfn/index.html)
 - COOL!! [Faster way to trim a long character vector in R {closed}](https://stackoverflow.com/questions/39152317/faster-way-to-trim-a-long-character-vector-in-r). !!! **It's just that `strtrim()` is fairly slow.** Answer: Use `(substr(x, 1, 3))`
-- ряд полезных функций: `stringi::stri_trim_both`, `stringr::str_squish()`, `rlang::squash_chr()`
+- ряд полезных функций: `stringi::stri_trim_both`, `stringr::str_squish`, `stringr::str_trunc`, `rlang::squash_chr`
 - [Recode values with character subsetting](https://tjmahr.github.io/recode-values-with-character-subsetting/)
 - Разбивка на диапазоны. Ключевое слово -- "ДИСКРЕТИЗАЦИЯ". См. область из машинного обучения.
 	- `discretize {arules}`, см. [Convert a Continuous Variable into a Categorical Variable](http://www.inside-r.org/packages/cran/arules/docs/discretize)
@@ -1593,7 +1593,7 @@ Base 36 or hexatridecimal is a positional numeral system using 36 as the radix. 
 
 # 15.06.2018
 ## R
-- ряд полезных функций: `stringi::stri_trim_both`, `stringr::str_squish()`, `rlang::squash_chr()`
+- ряд полезных функций: `stringi::stri_trim_both`, `stringr::str_squish`, `stringr::str_trunc`, `rlang::squash_chr`
 - ["Busy..." / "Done!" / "Error" feedback after pressing a button](https://github.com/daattali/advanced-shiny/tree/master/busy-indicator)
 - Infosec. [toolsmith #133 - Anomaly Detection & Threat Hunting with Anomalize](https://holisticinfosec.blogspot.com/2018/06/toolsmith-133-anomaly-detection-threat.html)
 - [Generate a set of random unique integers from an interval](https://stackoverflow.com/questions/17773080/generate-a-set-of-random-unique-integers-from-an-interval)

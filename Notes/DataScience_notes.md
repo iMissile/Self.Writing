@@ -1327,6 +1327,12 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 
 # http://192.168.12.31:4242/client/#/
 
+# 18.07.2022
+## R
+- [Search and replace in files](https://github.com/s-fleck/sifr)
+	- [Get the results from `Find in Files` function into a `data.frame`.](https://community.rstudio.com/t/get-the-results-from-find-in-files-function-into-a-data-frame/16908)
+- [How to install packages in R?](https://r-coder.com/install-r-packages/#Installing_packages_in_R_from_zip_source)
+
 # 08.07.2022
 ## R reference semantics
 - [Reference semantics](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-reference-semantics.html)
