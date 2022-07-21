@@ -1345,6 +1345,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [Define an R Markdown output format](https://rmarkdown.rstudio.com/docs/reference/output_format.html)
 - [Per-chunk override of global df_print specification: default, kable, tibble, or paged #1403 {Open}](https://github.com/rstudio/rmarkdown/issues/1403) `paged.print = TRUE/FALSE`
 - [How to set df_print to tibble in markdown for a single R code chunk](https://stackoverflow.com/questions/51536346/how-to-set-df-print-to-tibble-in-markdown-for-a-single-r-code-chunk)
+- [Conditionally display a block of text in R Markdown](https://stackoverflow.com/questions/25407102/conditionally-display-a-block-of-text-in-r-markdown)
 
 ## git
 - COOL! [Adding Zip Files to Github Gists](https://blog.ouseful.info/2019/02/12/adding-zip-files-to-github-gists/)
