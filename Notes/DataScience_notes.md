@@ -1327,6 +1327,19 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 
 # http://192.168.12.31:4242/client/#/
 
+# 21.07.2022
+## Tree visualization
+- Визуализация деревьев. [Chapter 9: Decision Trees](https://koalaverse.github.io/homlr/notebooks/09-decision-trees.nb.html)
+- [ggparty: Graphic Partying](https://cran.r-project.org/web/packages/ggparty/vignettes/ggparty-graphic-partying.html)
+- [How to visualize decision trees](https://explained.ai/decision-tree-viz/) Terence Parr and Prince Grover
+	- [dtreeviz: a great decision tree visualization and model interpretability tool](https://programmer.group/dtreeviz-a-great-decision-tree-visualization-and-model-interpretability-tool.html)
+- [treeheatr](https://cran.r-project.org/web/packages/treeheatr/vignettes/explore.html) displays a more interpretable decision tree visualization by integrating a heatmap at its terminal nodes. Let’s explore the package treeheatr a little deeper and see what it can do!
+- [visNetwork](https://cran.r-project.org/web/packages/visNetwork/vignettes/Introduction-to-visNetwork.html) is a R package for network visualization, using vis.js javascript library (https://visjs.org). All the remarks and bugs returns are welcome on github : https://github.com/datastorm-open/visNetwork.
+
+## ebooks
+- COOL! [Statistical Rethinking course winter 2022](https://github.com/rmcelreath/stat_rethinking_2022). И [лекции на ютубе](https://www.youtube.com/playlist?list=PLDcUM9US4XdMROZ57-OIRtIK0aOynbgZN)
+- [Statistical rethinking with brms, ggplot2, and the tidyverse: Second edition](https://bookdown.org/content/4857/) by A Solomon Kurz
+
 # 18.07.2022
 ## R
 - [Search and replace in files](https://github.com/s-fleck/sifr)
