@@ -174,6 +174,7 @@ https://www.hightechdad.com/2017/02/06/onedrive-sync-issues-how-to-reset-onedriv
 - [Bluetooth]
 	- [How To Fix ‘Bluetooth Not Available’ Mac OS X Problem](http://www.howtoturnitoffandonagain.com/2016/03/01/how-to-fix-bluetooth-not-available-mac-os-x-problem/)
 	- [Fixing a “Bluetooth Not Available” Error on a Mac](http://osxdaily.com/2014/02/17/fix-bluetooth-not-available-error-mac/)
+- [How to Check Package File for Malware Before You Install It in Mac](https://www.maketecheasier.com/check-dmg-malware-mac/)
 	
 # Церковнославянские шрифты
 - [Как ввести символ unicode на mac без цифровой клавиатуры?](https://coderoad.ru/48312049/%D0%9A%D0%B0%D0%BA-%D0%B2%D0%B2%D0%B5%D1%81%D1%82%D0%B8-%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB-unicode-%D0%BD%D0%B0-mac-%D0%B1%D0%B5%D0%B7-%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BE%D0%B9-%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D1%8B).
@@ -205,5 +206,13 @@ http://louise.hu/poet/midnight-commander-for-mac-os-x/
 - [SciDAVis](http://scidavis.sourceforge.net/index.html) is a free application for Scientific Data Analysis and Visualization.
 - [QtiPlot](https://www.qtiplot.com/) - Data Analysis and Scientific Visualisation
 
-
-
+# Проблемы с перемонтированием дисков
+- [Make Mac eject external drives when going to slumber or sleep/wake](https://apple.stackexchange.com/questions/362847/make-mac-eject-external-drives-when-going-to-slumber-or-sleep-wake)
+- [Is there any way to re-mount an ejected USB device on a Mac?](https://superuser.com/questions/960058/is-there-any-way-to-re-mount-an-ejected-usb-device-on-a-mac/969320#969320)
+- [USB flash drive doesn't remount automatically](https://apple.stackexchange.com/questions/381037/usb-flash-drive-doesnt-remount-automatically)
+- [Mount & Unmount Drives from the Command Line in Mac OS X](https://osxdaily.com/2013/05/13/mount-unmount-drives-from-the-command-line-in-mac-os-x/)
+```
+diskutil apfs list
+diskutil mount /dev/disk1
+```
+- [Automatically eject external disks on sleep and reconnect after on OS X](https://www.atpeaz.com/automaticlly-eject-external-disks-on-sleep-reconnect-after-os-x/)

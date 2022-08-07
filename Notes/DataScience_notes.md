@@ -1327,6 +1327,19 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 
 # http://192.168.12.31:4242/client/#/
 
+# 05.08.2022
+## R
+- [Webscraping, `read_html()` - Error in `open.connection(x, "rb")` : SSL certificate problem: certificate has expired](https://stackoverflow.com/questions/62106074/webscraping-read-html-error-in-open-connectionx-rb-ssl-certificate-p)
+`httr::GET(config = httr::config(ssl_verifypeer = FALSE))`
+- [NA NaN Inf NULL | Rcpp for everyone](https://teuder.github.io/rcpp4everyone_en/240_na_nan_inf.html)
+- [Shiny UI Editor](https://rstudio.github.io/shinyuieditor/index.html). A visual tool for building the UI portion of a Shiny application that generates clean and human-readable code.
+- [A Quarto tip a day. Hello Quarto](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/31-hello-quarto/)
+	- COOL! Slides [Hello Quarto. share • collaborate • teach • reimagine](https://mine.quarto.pub/hello-quarto/)
+- [Вглядываясь в зеркала или еще раз о проблеме гетероскедастичности](https://habr.com/ru/post/678834/)
+- [In R, how do you dereference/decompose/expand a list to fill multiple arguments](https://stackoverflow.com/questions/37819365/in-r-how-do-you-dereference-decompose-expand-a-list-to-fill-multiple-arguments)
+- [A new R trick ... for me at least](http://oddhypothesis.blogspot.com/2013/08/a-new-r-trick-for-me-at-least.html)
+- [Use function to reduce or expand arguments](https://winvector.github.io/wrapr/reference/reduceexpand.html)
+
 # 21.07.2022
 ## Tree visualization
 - Визуализация деревьев. [Chapter 9: Decision Trees](https://koalaverse.github.io/homlr/notebooks/09-decision-trees.nb.html)
@@ -5483,6 +5496,7 @@ The goal of waldo is to find and concisely describe the difference between a pai
 ## RStudio
 - [How to remove a project name from the Rstudio Projects menu @RStudio IDE?](https://community.rstudio.com/t/how-to-remove-a-project-name-from-the-rstudio-projects-menu/6820)
 If you're on Windows you can find the projects MRU in `C:\Users\<your user>\AppData\Local\RStudio-Desktop\monitored\lists\project_mru`.
+В новых редакциях `C:\Users\<your user>\AppData\Local\RStudio\monitored\lists\project_mru`
 If you're on *nix your milage may vary, but on my Ubuntu 16.04LTS you can find the MRU in `~/.rstudio/monitored/lists/project_mru`. This is for a local rstudio server installation, but I suspect that a rstudio desktop installation will put the MRU in the same location.
 The project_mru file is just a text file that you can edit manually. You don't even have to restart RStudio to see the changes
 На нашем сервере - `nano /home/ruser/.rstudio/monitored/lists/project_mru`

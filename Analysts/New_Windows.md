@@ -753,3 +753,9 @@ Mozilla Thunderbird](https://yandex.ru/support/mail/mail-clients/mozilla-thunder
 - [Calculate time difference in Windows batch file](https://stackoverflow.com/questions/9922498/calculate-time-difference-in-windows-batch-file)
 - [7 Ways to Measure Time Taken to Complete a Batch File or Command Line Execution](https://www.raymond.cc/blog/measure-time-taken-to-complete-a-batch-file-or-command-line-execution/). Рулит доп. утилита `ptime` весом в 20 кб.
 - [How-to: Calculate a time difference with tdiff.cmd](https://ss64.com/nt/syntax-tdiff.html)
+
+# Настройка приложений из MS Store
+- [Как создать ярлык приложения из Microsoft Store на рабочем столе](https://comp-security.net/%D0%BA%D0%B0%D0%BA-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D1%8F%D1%80%D0%BB%D1%8B%D0%BA-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8%D0%B7-microsoft-store/)
+После установки такого приложения из Microsoft Store оно появляется в списке приложений в меню «Пуск». Оттуда приложение можно закрепить на начальном экране или на панели задач. Но, из меню «Пуск» нельзя создавать ярлык на рабочем столе, что создает неудобства для пользователей, которые привыкли запускать программы именно с помощью ярлыков.
+	1. `Win-R` и в открывшемся окне выполнить команду `shell:AppsFolder`
+	2. Чтобы создать ярлык на рабочем столе нужно найти здесь нужную программу, кликнуть по ней правой кнопкой мышки и выбрать пункт «Создать ярлык».
