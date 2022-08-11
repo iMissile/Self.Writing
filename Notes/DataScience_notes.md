@@ -1309,8 +1309,9 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 # R packages
 - [Building, Testing, and Distributing Packages](https://support.rstudio.com/hc/en-us/articles/200486508-Building-Testing-and-Distributing-Packages)
 
+# R conferences
 
-# Appsilon Shiny 2022
+## Appsilon Shiny 2022
 - [2021 shiny-fluent Hackathon Appsilon/RStudio Contest SHARC!](https://github.com/mdubel/shark-attack)
 - [{shinytest2}: Regression Testing for Shiny Applications](https://github.com/schloerke/presentation-2022-04-27-appsilon-shinytest2)
 - Shiny App. 
@@ -1318,6 +1319,21 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 	- [Shiny Decisions] Shiny app: sparktuga.shinyapps.io/ShinyDecisions/ Repo: github.com/pedrocoutinhosilva/shiny.decisions
 	- [Shark Attack: Clean the Ocean] Shiny app: mdubel.shinyapps.io/shark-attack/ Repo: github.com/mdubel/shark-attack
 	- [Bikemap] Shiny app: 2exp3.shinyapps.io/mapa-ciclista/_w_6e13cdc9/ Repo: github.com/2exp3/bikemapp
+
+## Rconf 2022
+- [rstudio::conf(2022, "program")](https://github.com/rstudio/rstudio-conf-2022-program)
+
+## Rconf 2021
+- [Search RStudio Conference #rstudioglobal Tweets](http://apps.machlis.com/shiny/rstudioglobal/)
+- Slides. [Marcus Adams - Putting a GMP Shiny App into Prod](https://github.com/adamsma/the_app_we_need)
+- [Slides and hands-on codes for my talk "ggplot Wizardry: My Favorite Tricks and Secrets for Beautiful Plots in R"](https://github.com/z3tt/outlierconf2021) at the 1st OutlierConf, February 4–7 2021.
+
+## Rconf 2019
+- [Links to slides from rstudio::conf 2019](https://github.com/kbroman/RStudioConf2019Slides)
+- ["Applied Machine Learning" at Rstudio::conf 2019 (January 15 & 16, Austin, Texas)](https://github.com/topepo/rstudio-conf-2019)
+
+## Rconf 2017
+- [Конспект докладов](https://tazinho.github.io/rstudio_conf_notes.html)
 
 # Obsidian
 - [Zettelkasten: как один немецкий учёный стал невероятно продуктивным](https://habr.com/ru/post/508672/)
@@ -1327,6 +1343,10 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 
 # http://192.168.12.31:4242/client/#/
 
+# 11.08.2022
+## R
+- [Shiny and Arrow](https://www.rstudio.com/blog/shiny-and-arrow/)
+
 # 05.08.2022
 ## R
 - [Webscraping, `read_html()` - Error in `open.connection(x, "rb")` : SSL certificate problem: certificate has expired](https://stackoverflow.com/questions/62106074/webscraping-read-html-error-in-open-connectionx-rb-ssl-certificate-p)
@@ -1335,6 +1355,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [Shiny UI Editor](https://rstudio.github.io/shinyuieditor/index.html). A visual tool for building the UI portion of a Shiny application that generates clean and human-readable code.
 - [A Quarto tip a day. Hello Quarto](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/31-hello-quarto/)
 	- COOL! Slides [Hello Quarto. share • collaborate • teach • reimagine](https://mine.quarto.pub/hello-quarto/)
+- [Quarto tip a day](rstd.io/quartotip)
 - [Вглядываясь в зеркала или еще раз о проблеме гетероскедастичности](https://habr.com/ru/post/678834/)
 - [In R, how do you dereference/decompose/expand a list to fill multiple arguments](https://stackoverflow.com/questions/37819365/in-r-how-do-you-dereference-decompose-expand-a-list-to-fill-multiple-arguments)
 - [A new R trick ... for me at least](http://oddhypothesis.blogspot.com/2013/08/a-new-r-trick-for-me-at-least.html)
@@ -1372,6 +1393,13 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [Per-chunk override of global df_print specification: default, kable, tibble, or paged #1403 {Open}](https://github.com/rstudio/rmarkdown/issues/1403) `paged.print = TRUE/FALSE`
 - [How to set df_print to tibble in markdown for a single R code chunk](https://stackoverflow.com/questions/51536346/how-to-set-df-print-to-tibble-in-markdown-for-a-single-r-code-chunk)
 - [Conditionally display a block of text in R Markdown](https://stackoverflow.com/questions/25407102/conditionally-display-a-block-of-text-in-r-markdown)
+- [How to wrap code and the output in markdown (.Rmd)](https://stackoverflow.com/questions/33481271/how-to-wrap-code-and-the-output-in-markdown-rmd).
+I had this same issue until I realized that one needs to install the R package `formatR`. Once you install and load this package, use `tidy=TRUE, tidy.opts=list(width.cutoff=60)` in your chunk, or use the following line of code to set it globally:
+```
+knitr::opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
+```
+- [Chunk options and package options](https://yihui.org/knitr/options/)
+- [13.4 Show the chunk header in the output](https://bookdown.org/yihui/rmarkdown-cookbook/show-header.html). Set up a chunk hook named `wrapper` to wrap the chunk output inside the original chunk header and footer.
 
 ## git
 - COOL! [Adding Zip Files to Github Gists](https://blog.ouseful.info/2019/02/12/adding-zip-files-to-github-gists/)
@@ -2783,6 +2811,7 @@ Mission: Creating a viable free open source alternative to Magma, Maple, Mathema
 - [Find the Dominators for every vertex in a given DAG (Directed Acyclic Graph)](https://www.geeksforgeeks.org/find-the-dominators-for-every-vertex-in-a-given-dag-directed-acyclic-graph/)
 - [Алгоритм Тарьяна — алгоритм поиска компонент сильной связности в орграфе, работающий за линейное время.](https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%A2%D0%B0%D1%80%D1%8C%D1%8F%D0%BD%D0%B0)
 - [Gephi](https://gephi.org/) is the leading visualization and exploration software for all kinds of graphs and networks. Gephi is open-source and free.
+- [Libraries for finding the Refined Process Structure Tree or Tri-connected components of a graph](https://stackoverflow.com/questions/71173251/libraries-for-finding-the-refined-process-structure-tree-or-tri-connected-compon). Sagemath has the second implemented https://doc.sagemath.org/html/en/reference/graphs/sage/graphs/connectivity.html
 
 ## SPQR
 - [SPQR-дерево](https://ru.wikipedia.org/wiki/SPQR-%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE)
@@ -2792,6 +2821,9 @@ Mission: Creating a viable free open source alternative to Magma, Maple, Mathema
 - [How can I find spqr tree using sage?](https://stackoverflow.com/questions/66975050/how-can-i-find-spqr-tree-using-sage)
 - [sage.graphs.connectivity.spqr_tree(G, algorithm='Hopcroft_Tarjan', solver=None, verbose=0)](https://doc.sagemath.org/html/en/reference/graphs/sage/graphs/connectivity.html#sage.graphs.connectivity.spqr_tree)
 Return an SPQR-tree representing the triconnected components of the graph.
+- Ставим [докер с SageMath](https://doc.sagemath.org/html/en/installation/index.html).
+	- [sagemath/sagemath docker](https://hub.docker.com/r/sagemath/sagemath/). SageMath is a free open-source mathematics software system. Запускаем. You can start a graphical Jupyter Notebook at http://localhost:8888 instead. To use the notebook, follow the instructions printed when you run: `docker run -p8888:8888 sagemath/sagemath:latest sage-jupyter`
+
 - [SPQR TREE - DATA STRUCTURES](https://www.wisdomjobs.com/e-university/data-structures-tutorial-290/spqr-tree-7267.html)
 - [SPQR Tree slides](https://slideplayer.com/slide/15954108/)
 - [LightGraphsFlows.jl: flow algorithms for LightGraphs](https://juliagraphs.org/LightGraphsFlows.jl/latest/)
@@ -2806,6 +2838,9 @@ A quick introduction to 10 basic graph algorithms with examples and visualisatio
 - [Biconnected component](https://en.wikipedia.org/wiki/Biconnected_component#Algorithms). The classic sequential algorithm for computing biconnected components in a connected undirected graph is due to John Hopcroft and Robert Tarjan (1973).[1] It runs in linear time, and is based on depth-first search. This algorithm is also outlined as Problem 22-2 of Introduction to Algorithms (both 2nd and 3rd editions).
 - COOL! [Thomas H. Cormen. Charles E. Leiserson. Ronald L. Rivest. Clifford Stein. Introduction to Algorithms - Third Edition.pdf](https://github.com/RbkGh/Free-Algorithm-Books/blob/master/book/Introduction%20to%20Algorithms%20-%20Third%20Edition.pdf)
 - [Handbook of Graph Drawing and Visualization](https://cs.brown.edu/people/rtamassi/gdhandbook/) Roberto  Tamassia, Editor CRC Press, June 24, 2013
+- Alternative RPST
+	- [gProAnalyzer Source code](https://github.com/ngoclongha/PBR)
+	- [Stepwise structural verification of cyclic workflow models with acyclic decomposition and reduction of loops](https://www.researchgate.net/publication/269725298_Stepwise_structural_verification_of_cyclic_workflow_models_with_acyclic_decomposition_and_reduction_of_loops
 
 ## Wolfram
 - [What is the simplest way to plot a decomposition tree in Mathematica?](https://stackoverflow.com/questions/5647268/what-is-the-simplest-way-to-plot-a-decomposition-tree-in-mathematica)
@@ -5203,18 +5238,6 @@ Import data from 'Excel' binary (.xlsb) workbooks into R.
 - [tidylog](https://github.com/elbersb/tidylog). The goal of tidylog is to provide feedback about dplyr and tidyr operations. It provides simple wrapper functions for almost all dplyr and tidyr functions, such as filter, mutate, select, full_join, and group_by.
 - COOL! [valueBoxes and Sparklines](http://jkunst.com/blog/posts/2020-06-26-valuebox-and-sparklines/)
 
-## Rconf 2021
-- [Search RStudio Conference #rstudioglobal Tweets](http://apps.machlis.com/shiny/rstudioglobal/)
-- Slides. [Marcus Adams - Putting a GMP Shiny App into Prod](https://github.com/adamsma/the_app_we_need)
-- [Slides and hands-on codes for my talk "ggplot Wizardry: My Favorite Tricks and Secrets for Beautiful Plots in R"](https://github.com/z3tt/outlierconf2021) at the 1st OutlierConf, February 4–7 2021.
-
-
-## Rconf 2019
-- [Links to slides from rstudio::conf 2019](https://github.com/kbroman/RStudioConf2019Slides)
-- ["Applied Machine Learning" at Rstudio::conf 2019 (January 15 & 16, Austin, Texas)](https://github.com/topepo/rstudio-conf-2019)
-
-## Rconf 2017
-- [Конспект докладов](https://tazinho.github.io/rstudio_conf_notes.html)
 
 # 05.07.2020
 - COOL! Вместе с кодом. [The tale of two charts combined](http://jkunst.com/blog/posts/2020-06-15-when-2-charts-are-more-than-1/). streamgraph on the top of a stacked column chart.
