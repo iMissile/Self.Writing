@@ -1346,6 +1346,18 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 # 11.08.2022
 ## R
 - [Shiny and Arrow](https://www.rstudio.com/blog/shiny-and-arrow/)
+- COOL! [gctorture {base}](https://stat.ethz.ch/R-manual/R-devel/library/base/html/gctorture.html). Torture Garbage Collector. Provokes garbage collection on (nearly) every memory allocation. Intended to ferret out memory protection bugs. Also makes R run very slowly, unfortunately.
+- [R / RStudio Painfully Slow](https://stackoverflow.com/questions/55271646/r-rstudio-painfully-slow)
+- [debugger controls disappear after console action {#10045}](https://github.com/rstudio/rstudio/issues/10045)
+
+## Stats and R
+- [Stats and R](https://www.statsandr.com/blog/)
+	- COOL! Stats and R. [Wilcoxon test in R: how to compare 2 groups under the non-normality assumption](https://www.statsandr.com/blog/wilcoxon-test-in-r-how-to-compare-2-groups-under-the-non-normality-assumption/)
+	- COOL! Stats and R. [Student's t-test in R and by hand: how to compare two groups under different scenarios](https://www.statsandr.com/blog/student-s-t-test-in-r-and-by-hand-how-to-compare-two-groups-under-different-scenarios/)
+	- COOL! Stats and R. [Correlation coefficient and correlation test in R](https://statsandr.com/blog/correlation-coefficient-and-correlation-test-in-r/)
+
+## CSS
+- COOL! [Web Style Sheets CSS tips & tricks. CENTERING THINGS](https://www.w3.org/Style/Examples/007/center.en.html)
 
 # 05.08.2022
 ## R
@@ -1400,6 +1412,7 @@ knitr::opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
 ```
 - [Chunk options and package options](https://yihui.org/knitr/options/)
 - [13.4 Show the chunk header in the output](https://bookdown.org/yihui/rmarkdown-cookbook/show-header.html). Set up a chunk hook named `wrapper` to wrap the chunk output inside the original chunk header and footer.
+- COOL! [Generating multiple "blank" .Rmd child files from a list of names in a for loop (or similar)](https://community.rstudio.com/t/generating-multiple-blank-rmd-child-files-from-a-list-of-names-in-a-for-loop-or-similar/115925)
 
 ## git
 - COOL! [Adding Zip Files to Github Gists](https://blog.ouseful.info/2019/02/12/adding-zip-files-to-github-gists/)
@@ -5432,12 +5445,6 @@ Tools are provided to create plural, singular and regular forms of English words
 - COOL! [(JUST RELEASED) timetk 2.0.0: Visualize Time Series Data in 1-Line of Code](https://www.business-science.io/code-tools/2020/06/05/timetk-vesion-2-announcement.html)
 - [A slice tour for finding hollowness in high-dimensional data](https://amstat.tandfonline.com/doi/abs/10.1080/10618600.2020.1777140)
 - [R dyplr: Get index of column by its name](https://stackoverflow.com/questions/35768451/r-dyplr-get-index-of-column-by-its-name/35768651)
-
-## Stats and R
-- [Stats and R](https://www.statsandr.com/blog/)
-	- COOL! Stats and R. [Wilcoxon test in R: how to compare 2 groups under the non-normality assumption](https://www.statsandr.com/blog/wilcoxon-test-in-r-how-to-compare-2-groups-under-the-non-normality-assumption/)
-	- COOL! Stats and R. [Student's t-test in R and by hand: how to compare two groups under different scenarios](https://www.statsandr.com/blog/student-s-t-test-in-r-and-by-hand-how-to-compare-two-groups-under-different-scenarios/)
-	- COOL! Stats and R. [Correlation coefficient and correlation test in R](https://statsandr.com/blog/correlation-coefficient-and-correlation-test-in-r/)
 
 # 04.06.2020
 ## R

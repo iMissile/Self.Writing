@@ -45,6 +45,9 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 	- [A visual debugger for Jupyter](https://blog.jupyter.org/a-visual-debugger-for-jupyter-914e61716559)
 - [Orange](https://orangedatamining.com/). Open source machine learning and data visualization.
 
+# 13.08.2022
+- [Uncommon Uses of Python in Commonly Used Libraries](https://eugeneyan.com/writing/uncommon-python/)ю To learn how to build more maintainable and usable Python libraries, I’ve been reading some of the most widely used Python packages. Along the way, I learned some things about Python that are off the beaten path. Here are a few things I didn’t know before.
+
 # 06.08.2022
 - [How to create a Python package in 2022](https://mathspp.com/blog/how-to-create-a-python-package-in-2022)
 - [How to Choose the Right Python Concurrency API](https://superfastpython.com/python-concurrency-choose-api/)
