@@ -1344,11 +1344,21 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 # http://192.168.12.31:4242/client/#/
 
 # 11.08.2022
+## graph
+- [Weak and Strong components of graph](https://math.stackexchange.com/questions/3452386/weak-and-strong-components-of-graph)
+- from book "Handbook of Graph Theory, Combinatorial Optimization, and Algorithms (2015) - Thulasiraman K." A path (directed path) is a walk in which all the vertices are distinct. A cycle (directed cycle or circuit) is a nontrivial closed path whose origin and internal vertices are distinct. If there is a path from u to v then v is said to be reachable from u. A digraph is called strongly connected or strong if every pair of vertices are mutually reachable. A digraph is called unilaterally connected or unilateral if for every pair of vertices, at least one is reachable from the other. A digraph is called weakly connected or weak if the underlying graph is connected. A digraph is called disconnected if the underlying graph is disconnected.
+- "Cormen - Introduction to Algorithms, 3rd ed"
+
 ## R
 - [Shiny and Arrow](https://www.rstudio.com/blog/shiny-and-arrow/)
 - COOL! [gctorture {base}](https://stat.ethz.ch/R-manual/R-devel/library/base/html/gctorture.html). Torture Garbage Collector. Provokes garbage collection on (nearly) every memory allocation. Intended to ferret out memory protection bugs. Also makes R run very slowly, unfortunately.
 - [R / RStudio Painfully Slow](https://stackoverflow.com/questions/55271646/r-rstudio-painfully-slow)
 - [debugger controls disappear after console action {#10045}](https://github.com/rstudio/rstudio/issues/10045)
+
+## CPU cache
+- [Sorting is fast and useful](https://lemire.me/blog/2010/05/20/sorting-is-fast-and-useful/)
+- [Gallery of Processor Cache Effects](http://igoro.com/archive/gallery-of-processor-cache-effects/)
+- [Зачем процессорам нужен кэш и чем отличаются уровни L1, L2, L3](https://habr.com/ru/company/vdsina/blog/515660/)
 
 ## Stats and R
 - [Stats and R](https://www.statsandr.com/blog/)
