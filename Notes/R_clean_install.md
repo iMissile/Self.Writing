@@ -455,3 +455,6 @@ https://www.r-bloggers.com/get-all-your-packages-back-on-r-4-0-0/
 
 # RHEL 8 / CentOS 8
 - [Install R & RStudio on CentOS 8 / RHEL 8 Linux](https://computingforgeeks.com/install-r-and-rstudio-on-centos-rhel-linux/)
+
+# Ubuntu
+- COOL! [Installation of R 4.2 on Ubuntu 22.04.1 LTS and tips for spatial packages](https://rtask.thinkr.fr/installation-of-r-4-2-on-ubuntu-22-04-lts-and-tips-for-spatial-packages)

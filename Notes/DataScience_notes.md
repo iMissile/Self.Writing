@@ -1322,6 +1322,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 
 ## Rconf 2022
 - [rstudio::conf(2022, "program")](https://github.com/rstudio/rstudio-conf-2022-program)
+- [Becoming Creative: How I Designed a Quilt with R](https://www.rstudio.com/conference/2022/talks/quilting-in-r-becoming-creative/) by Alice Walsh
 
 ## Rconf 2021
 - [Search RStudio Conference #rstudioglobal Tweets](http://apps.machlis.com/shiny/rstudioglobal/)
@@ -1343,17 +1344,76 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 
 # http://192.168.12.31:4242/client/#/
 
+# 20.08.2022
+## Best Free Kubernetes K8s courses
+1. Just enough kubernetes  - https://bit.ly/3cnHzUE
+2. Learn DevOps Kubernetes - https://bit.ly/3PgZk6X
+3. Introduction to Kubernetes - https://bit.ly/3O8ds0Z
+4. Containers 101 - https://bit.ly/3PDEJcR
+5. more - https://bit.ly/3zMFpHD
+
+## 100+ Data structure & Algorithms questions
+1. Array - https://bit.ly/3vM1JP5
+2. Linked List - https://bit.ly/3zFatrn
+3. String - https://bit.ly/3vM1JP5
+4. Binary tree - https://bit.ly/3JIsn1i
+5. Dynamic Progming - https://bit.ly/3vLwjs5
+6. Recursion - https://bit.ly/3JDhUnv
+
+## Best DevOps Resources
+1. DevOps Culture - https://bit.ly/3mhTNjv
+2. CI/CD -  https://bit.ly/34G2eNe
+3. DevOps and K8s- https://bit.ly/3f0M7PK
+4. DevOps Bootcamp - https://bit.ly/3Q4DcgX
+5. DevOps: The Big Picture - https://bit.ly/3zjTDQl
+more - https://bit.ly/3PE1zAO
+
+Наикрутейший инструмент - [конструктор ML Ops стека на базе open-source инструментов](https://mymlops.com/).  Позволяет посмотреть плюсы и минусы и итеративно выбрать любой из имеющихся в open-source инструментов для всех ключевых шагов MLOps (Experiment Tracking, Experimentation, Data Versioning, Code versioning, Pipeline orchestration, Runtime Engine, Artifact Tracking, Model Registry, Model Serving, Model Monitoring). Далее, получаем красивую схему архитектуры вашего MLOps стека и рекомендации по его установке.
+
+## R
+- COOL! Много решений и концептуальных подходов. [Is there any way to break out of a foreach loop?](https://stackoverflow.com/questions/16079882/is-there-any-way-to-break-out-of-a-foreach-loop)
+- COOL! [A Q-Q Plot Dissection Kit](https://seankross.com/2016/02/29/A-Q-Q-Plot-Dissection-Kit.html)
+- COOL! [Installation of R 4.2 on Ubuntu 22.04.1 LTS and tips for spatial packages](https://rtask.thinkr.fr/installation-of-r-4-2-on-ubuntu-22-04-lts-and-tips-for-spatial-packages)
+- [Academic conference posters using {posterdown}](https://shilaan.rbind.io/post/academic-conference-posters-using-posterdown/)
+A quick guide to generating reproducible and automatically formatted conference posters in R Markdown
+- COOL! [Data science interview questions and answers](https://github.com/alexeygrigorev/data-science-interviews). ds-interviews.org
+- COOL! [Redis Explained](https://architecturenotes.co/redis/)
+A deep technical dive into all things Redis. Covering various Redis topologies, data persistence and process forking.
+- [Load balancing gRPC in Kubernetes with Istio](https://www.useanvil.com/blog/engineering/load-balancing-grpc-in-kubernetes-with-istio/)
+- [Minerva: Solving Quantitative Reasoning Problems with Language Models](https://ai.googleblog.com/2022/06/minerva-solving-quantitative-reasoning.html)
+- COOL! [The 14 most important data science skills (To get a $50,000 increase in salary)](https://www.business-science.io/careers/2022/03/11/which-data-science-skills-are-important.html)
+- COOL! [How to access the last value in a vector?](https://stackoverflow.com/questions/77434/how-to-access-the-last-value-in-a-vector). С бенчмарками.
+- [Never Use Floats for Money](https://husobee.github.io/money/float/2016/09/23/never-use-floats-for-currency.html) Sep 23, 2016
+- [Order data frame rows according to vector with specific order](https://stackoverflow.com/questions/11977102/order-data-frame-rows-according-to-vector-with-specific-order)
+- [Примеры смешанных моделей на lme4, inla, stan, brms и mgcv](https://github.com/julianfaraway/rexamples)
+
+## xpath
+- [locating element with one class out of multiple classes inside a div using xpath in selenium](https://sqa.stackexchange.com/questions/46205/locating-element-with-one-class-out-of-multiple-classes-inside-a-div-using-xpath)
+
 # 11.08.2022
 ## graph
 - [Weak and Strong components of graph](https://math.stackexchange.com/questions/3452386/weak-and-strong-components-of-graph)
 - from book "Handbook of Graph Theory, Combinatorial Optimization, and Algorithms (2015) - Thulasiraman K." A path (directed path) is a walk in which all the vertices are distinct. A cycle (directed cycle or circuit) is a nontrivial closed path whose origin and internal vertices are distinct. If there is a path from u to v then v is said to be reachable from u. A digraph is called strongly connected or strong if every pair of vertices are mutually reachable. A digraph is called unilaterally connected or unilateral if for every pair of vertices, at least one is reachable from the other. A digraph is called weakly connected or weak if the underlying graph is connected. A digraph is called disconnected if the underlying graph is disconnected.
 - "Cormen - Introduction to Algorithms, 3rd ed"
+- [igraph - get all edges which form a path between two vertex - Is there a better solution?](https://stackoverflow.com/questions/55373099/igraph-get-all-edges-which-form-a-path-between-two-vertex-is-there-a-better)
 
 ## R
 - [Shiny and Arrow](https://www.rstudio.com/blog/shiny-and-arrow/)
 - COOL! [gctorture {base}](https://stat.ethz.ch/R-manual/R-devel/library/base/html/gctorture.html). Torture Garbage Collector. Provokes garbage collection on (nearly) every memory allocation. Intended to ferret out memory protection bugs. Also makes R run very slowly, unfortunately.
 - [R / RStudio Painfully Slow](https://stackoverflow.com/questions/55271646/r-rstudio-painfully-slow)
 - [debugger controls disappear after console action {#10045}](https://github.com/rstudio/rstudio/issues/10045)
+- [Mixed effect models](https://github.com/julianfaraway/rexamples)
+These are all the mixed effect model examples from two chapters of my book Extending the Linear Model with R. Each model is fit using several different methods:
+    - lme4
+    - INLA
+    - STAN
+    - BRMS
+    - MGCV
+I have focused on the computation rather than the interpretation of the models.
+- Windows EVTX:
+	- [Is there a Powershell way to convert evt to csv?](https://superuser.com/questions/1332580/is-there-a-powershell-way-to-convert-evt-to-csv)
+	- [How to convert .evtx eventlog to csv](https://stackoverflow.com/questions/12348679/how-to-convert-evtx-eventlog-to-csv)
+	- The [event log parser](https://www.logviewplus.com/docs/event_log_parser.html) can be used to parse *.evtx files. 
 
 ## CPU cache
 - [Sorting is fast and useful](https://lemire.me/blog/2010/05/20/sorting-is-fast-and-useful/)
@@ -1423,6 +1483,8 @@ knitr::opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
 - [Chunk options and package options](https://yihui.org/knitr/options/)
 - [13.4 Show the chunk header in the output](https://bookdown.org/yihui/rmarkdown-cookbook/show-header.html). Set up a chunk hook named `wrapper` to wrap the chunk output inside the original chunk header and footer.
 - COOL! [Generating multiple "blank" .Rmd child files from a list of names in a for loop (or similar)](https://community.rstudio.com/t/generating-multiple-blank-rmd-child-files-from-a-list-of-names-in-a-for-loop-or-similar/115925)
+- [16.4 Child documents (*)](https://bookdown.org/yihui/rmarkdown-cookbook/child-document.html)
+- [Child documents. Input child files into the main document](https://yihui.org/knitr/demo/child/)
 
 ## git
 - COOL! [Adding Zip Files to Github Gists](https://blog.ouseful.info/2019/02/12/adding-zip-files-to-github-gists/)
@@ -1468,6 +1530,7 @@ https://github.com/deepanshu88/ShinyEditor)
 - [Working with tree-based hierarchies using data.tree](https://rstats-tips.net/2021/07/31/working-with-tree-based-hierarchies-using-data-tree/)
 - [Обход графа: поиск в глубину и поиск в ширину простыми словами на примере JavaScript](https://habr.com/ru/post/504374/)
 - [Algorithms on Graphs: Let’s talk Depth-First Search (DFS) and Breadth-First Search (BFS)](https://trykv.medium.com/algorithms-on-graphs-lets-talk-depth-first-search-dfs-and-breadth-first-search-bfs-5250c31d831a).
+- [delete igraph vertices but retain all edges in R](https://stackoverflow.com/questions/55992896/delete-igraph-vertices-but-retain-all-edges-in-r)
 
 ## DS
 - [Анализ малых данных. Линейная регрессия++](https://www.google.com/amp/s/dyakonov.org/2019/10/31/%25D0%25BB%25D0%25B8%25D0%25BD%25D0%25B5%25D0%25B9%25D0%25BD%25D0%25B0%25D1%258F-%25D1%2580%25D0%25B5%25D0%25B3%25D1%2580%25D0%25B5%25D1%2581%25D1%2581%25D0%25B8%25D1%258F/amp/)

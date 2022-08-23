@@ -183,6 +183,23 @@ https://www.hightechdad.com/2017/02/06/onedrive-sync-issues-how-to-reset-onedriv
 Теперь ввод Unicode Hex должен быть доступен в строке меню среди других языков, выберите его, и вы сможете ввести unicode символа, удерживая Option во время ввода цифр.
 - [Ирмологион](http://irmologion.ru/)
 	- [Шрифты в кодировке UCS8](http://irmologion.ru/fonts.html#atop)
+	
+## Установка для работы Лиды
+1. Смотрим содержимое шрифта и юникод символы
+- [FontDrop!](https://fontdrop.info/)
+Simple and easy way to view the content of font files.
+- [Fun With Fonts With FontDrop!](https://viktornuebel.medium.com/fun-with-fonts-bdc1b5e5d4b9)
+
+2. 
+
+3. Доп ссылки
+- [Старославянские кириллические шрифты.. Обсуждение на LiveInternet](https://www.liveinternet.ru/users/5406319/post430118925/)
+- [Ссылка от Ольги](http://tapenik.ru/shrifti/Flavius.ttf). [Страничка со шрифтами](https://tapenik.ru/shrifti.html)
+
+- [Как ввести символ unicode на mac без цифровой клавиатуры?](https://coderoad.ru/48312049/%D0%9A%D0%B0%D0%BA-%D0%B2%D0%B2%D0%B5%D1%81%D1%82%D0%B8-%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB-unicode-%D0%BD%D0%B0-mac-%D0%B1%D0%B5%D0%B7-%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BE%D0%B9-%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D1%8B).
+Сначала убедитесь , что вход Unicode Hex включен в System Preferences > Keyboard > Input Sources
+Он должен появиться в левом поле с другими языковыми клавиатурами. Если ввод Unicode Hex там недоступен, нажмите кнопку + ниже, прокрутите список языков до самого низа и выберите другие, выберите ввод Unicode Hex в поле сведений справа и нажмите кнопку Добавить.
+Теперь ввод Unicode Hex должен быть доступен в строке меню среди других языков, выберите его, и вы сможете ввести unicode символа, удерживая Option во время ввода цифр.
 
 # Менеджер пакетов
 - [Git is not working after macOS Update (xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools)]().

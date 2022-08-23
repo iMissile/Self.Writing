@@ -401,4 +401,8 @@ The goal of vlbuildr is to provide an R api for building up vega-lite specs.
 - [D3 TO R TO D3](https://maya.rbind.io/post/2020/d3-to-r-to-d3/)
 - COOL! [A starting point to explore data visualization using D3.js](https://github.com/TheRobBrennan/explore-data-visualization-with-D3)
 
+# ggplot tutorial
+- [Graphic Design with ggplot2](https://rstudio-conf-2022.github.io/ggplot2-graphic-design/). How to Create Engaging and Complex Visualizations in R
+An rstudio::conf(2022) Workshop by Cédric Scherer
+
 

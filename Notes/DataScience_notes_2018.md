@@ -385,8 +385,6 @@ Provides functionality for client-side navigation of the server side file system
 - COOL! [R - parallel computing in 5 minutes (with foreach and doParallel)](http://blog.aicry.com/r-parallel-computing-in-5-minutes/index.html)
 - COOL! [GNU Parallel Tutorial](https://www.gnu.org/software/parallel/parallel_tutorial.html): `sudo yum install parallel`
 
-
-
 # 08.11.2018
 ## R JIT
 - "Efficient R programming". [7.4 The byte compiler](https://csgillespie.github.io/efficientR/7-4-the-byte-compiler.html)
