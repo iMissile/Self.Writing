@@ -1344,6 +1344,11 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 
 # http://192.168.12.31:4242/client/#/
 
+# 25.08.2022
+## R
+- COOL! [Why should I use the here package when I'm already using projects?](https://malco.io/2018/11/05/why-should-i-use-the-here-package-when-i-m-already-using-projects/) by Malcolm Barrett
+- [Project-oriented workflow](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
+
 # 20.08.2022
 ## Best Free Kubernetes K8s courses
 1. Just enough kubernetes  - https://bit.ly/3cnHzUE
