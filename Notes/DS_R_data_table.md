@@ -344,6 +344,9 @@ flights_tb %>%
 - COOL! [Should nafill replace NaN values? #4020 {Closed}](https://github.com/Rdatatable/data.table/issues/4020). Решено положительно в [nafill gains nan argument #4025](https://github.com/Rdatatable/data.table/pull/4025)
 - [Simultaneous order, row-filter and column-select with data.table](https://stackoverflow.com/questions/30606395/simultaneous-order-row-filter-and-column-select-with-data-table)
 - [select data.table R rows based on row number and condition](https://stackoverflow.com/questions/39422316/select-data-table-r-rows-based-on-row-number-and-condition)
+- [Using `names(obj) <- names(dt)` could be problematic (#5079)](https://github.com/Rdatatable/data.table/issues/5079#issuecomment-901981788).
+Ноги растут из [`data.table` reference semantic](https://cloud.r-project.org/web/packages/data.table/vignettes/datatable-reference-semantics.html)
+When we store the column names on to a variable, e.g., DT_n = names(DT), and then add/update/delete column(s) by reference. It would also modify DT_n, unless we do copy(names(DT)).
 
 
 ## data.table joins

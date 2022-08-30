@@ -45,8 +45,18 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 	- [A visual debugger for Jupyter](https://blog.jupyter.org/a-visual-debugger-for-jupyter-914e61716559)
 - [Orange](https://orangedatamining.com/). Open source machine learning and data visualization.
 
+# 27.08.22
+- COOL! [nbdev+Quarto: A new secret weapon for productivity](https://www.fast.ai/2022/07/28/nbdev-v2/)
+- [nbdev](https://nbdev.fast.ai/). Create delightful software. with Jupyter Notebooks. Write, test, document, and distribute software packages and technical articles — all in one place, your notebook.
+- COOL! [Reshaping a DataFrame with Pandas `stack()` and `unstack()`](https://towardsdatascience.com/reshaping-a-dataframe-with-pandas-stack-and-unstack-925dc9ce1289). 7 tricks to effectively use the Pandas `stack()` and `unstack()`
+- Текущее время в микросекундах.
+	- [How do I get the current time in milliseconds in Python?](https://stackoverflow.com/questions/5998245/how-do-i-get-the-current-time-in-milliseconds-in-python)
+	- [How can I get millisecond and microsecond-resolution timestamps in Python? {duplicate}](https://stackoverflow.com/questions/38319606/how-can-i-get-millisecond-and-microsecond-resolution-timestamps-in-python)
+	- [High-precision clock in Python](https://stackoverflow.com/questions/1938048/high-precision-clock-in-python). Python 3.7 introduces 6 new time functions with nanosecond resolution, for example instead of `time.time()` you can use `time.time_ns()` to avoid floating point imprecision issues.
+
+
 # 13.08.2022
-- [Uncommon Uses of Python in Commonly Used Libraries](https://eugeneyan.com/writing/uncommon-python/)ю To learn how to build more maintainable and usable Python libraries, I’ve been reading some of the most widely used Python packages. Along the way, I learned some things about Python that are off the beaten path. Here are a few things I didn’t know before.
+- [Uncommon Uses of Python in Commonly Used Libraries](https://eugeneyan.com/writing/uncommon-python/). To learn how to build more maintainable and usable Python libraries, I’ve been reading some of the most widely used Python packages. Along the way, I learned some things about Python that are off the beaten path. Here are a few things I didn’t know before.
 
 # 06.08.2022
 - [How to create a Python package in 2022](https://mathspp.com/blog/how-to-create-a-python-package-in-2022)

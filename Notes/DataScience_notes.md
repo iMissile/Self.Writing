@@ -1344,10 +1344,27 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 
 # http://192.168.12.31:4242/client/#/
 
+# 29.08.2022
+## Quarto
+- COOL! [Welcome to Quarto](https://quarto.org). A scientific and technical publishing system built on Pandoc (RStudio)
+- [Component Layout](https://quarto.org/docs/interactive/layout.html). Тут активно упоминается про `:::`.
+```::: {.classname}
+Div
+:::
+```
+will [generate html `div`](https://quarto.org/docs/authoring/markdown-basics.html#other-blocks).
+- [Quarto, Python, and VS Code: Quarto Reports In VS Code](https://appsilon.com/quarto-python-and-vscode/)
+- COOL! [Notes on Changing from Rmarkdown/Bookdown to Quarto](https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/) by Nicholas Tierney
+
+## dev
+- [Гексагональная архитектура, и как я к ней пришёл](https://alexkosarev.name/2020/06/12/hexagonal-architecture/)
+- [Гексагональная архитектура](https://habr.com/ru/post/267125/)
+
 # 25.08.2022
 ## R
 - COOL! [Why should I use the here package when I'm already using projects?](https://malco.io/2018/11/05/why-should-i-use-the-here-package-when-i-m-already-using-projects/) by Malcolm Barrett
 - [Project-oriented workflow](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
+- [Resolving Rcpp_precious_remove error](https://support.rstudio.com/hc/en-us/articles/4415936301335-Resolving-Rcpp-precious-remove-error). Rcpp 1.0.7 should be backwards compatible with older versions of Rcpp and packages built against those versions of Rcpp. Upgrading to Rcpp 1.0.7 should generally be safe, and is the simplest resolution to this issue.
 
 # 20.08.2022
 ## Best Free Kubernetes K8s courses
@@ -1490,6 +1507,8 @@ knitr::opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
 - COOL! [Generating multiple "blank" .Rmd child files from a list of names in a for loop (or similar)](https://community.rstudio.com/t/generating-multiple-blank-rmd-child-files-from-a-list-of-names-in-a-for-loop-or-similar/115925)
 - [16.4 Child documents (*)](https://bookdown.org/yihui/rmarkdown-cookbook/child-document.html)
 - [Child documents. Input child files into the main document](https://yihui.org/knitr/demo/child/)
+- [A Brief History of R Markdown](https://slides.yihui.org/2021-Brazilian-R-Day.html#1) by Yihui Xie
+- [reveal.js PDF Export](https://revealjs.com/pdf-export/). Presentations can be exported to PDF via a special print stylesheet. 
 
 ## git
 - COOL! [Adding Zip Files to Github Gists](https://blog.ouseful.info/2019/02/12/adding-zip-files-to-github-gists/)
@@ -1544,6 +1563,7 @@ https://github.com/deepanshu88/ShinyEditor)
 - [Этот несовершенный мир](https://investcookies.ru/post/business_uncertainty/)
 - [Welcome to Quarto](https://quarto.org/)
 Quarto® is an open-source scientific and technical publishing system built on Pandoc
+ -[Проектируем сессионную таблицу при помощи SQL в BigQuery](https://medium.com/@aleksandrosiyuk/%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D1%83%D0%B5%D0%BC-%D1%81%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%BD%D1%83%D1%8E-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%83-%D0%BF%D1%80%D0%B8-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D0%B8-sql-%D0%B2-bigquery-c2e9b75de88c)
 
 # 01.07.2022
 - [What are CN, OU, DC in an LDAP search?](https://stackoverflow.com/questions/18756688/what-are-cn-ou-dc-in-an-ldap-search)
@@ -2710,7 +2730,6 @@ or You can try filtering on `lengths(df$var2) > 0` or `The function drop_na() fr
 ## DS
 - [Introducing ClickHouse, Inc.](https://clickhouse.com/blog/en/2021/clickhouse-inc/)
 - COOL! [Deep attractors: Where deep learning meets chaos](https://blogs.rstudio.com/ai/posts/2020-06-24-deep-attractors/)
-- COOL! [Welcome to Quarto](https://quarto.org). A scientific and technical publishing system built on Pandoc (RStudio)
 - [Разложение числа на простые множители (факторизация). Делители числа](https://brestprog.by/topics/factorization/)
 
 # 13.09.2021
