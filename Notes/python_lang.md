@@ -45,6 +45,22 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 	- [A visual debugger for Jupyter](https://blog.jupyter.org/a-visual-debugger-for-jupyter-914e61716559)
 - [Orange](https://orangedatamining.com/). Open source machine learning and data visualization.
 
+# 01.09.2022
+- [Selecting multiple columns in a Pandas dataframe](https://stackoverflow.com/questions/11285613/selecting-multiple-columns-in-a-pandas-dataframe)
+With Pandas,
+with column names
+```
+dataframe[['column1','column2']]
+```
+to select by iloc and specific columns with index number:
+```
+dataframe.iloc[:,[1,2]]
+```
+with loc column names can be used like
+```
+dataframe.loc[:,['column1','column2']]
+```
+
 # 27.08.22
 - COOL! [nbdev+Quarto: A new secret weapon for productivity](https://www.fast.ai/2022/07/28/nbdev-v2/)
 - [nbdev](https://nbdev.fast.ai/). Create delightful software. with Jupyter Notebooks. Write, test, document, and distribute software packages and technical articles — all in one place, your notebook.
@@ -53,6 +69,7 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 	- [How do I get the current time in milliseconds in Python?](https://stackoverflow.com/questions/5998245/how-do-i-get-the-current-time-in-milliseconds-in-python)
 	- [How can I get millisecond and microsecond-resolution timestamps in Python? {duplicate}](https://stackoverflow.com/questions/38319606/how-can-i-get-millisecond-and-microsecond-resolution-timestamps-in-python)
 	- [High-precision clock in Python](https://stackoverflow.com/questions/1938048/high-precision-clock-in-python). Python 3.7 introduces 6 new time functions with nanosecond resolution, for example instead of `time.time()` you can use `time.time_ns()` to avoid floating point imprecision issues.
+- [Pandas And Multiprocessing Memory Management Splitting A Dataframe Into Multiple Chunks](https://www.faqcode4u.com/faq/176176/pandas-and-multiprocessing-memory-management-splitting-a-dataframe-into-multiple-chunks). Вопрос нетривиальный, касается передачи данных в дочерние потоки.
 
 
 # 13.08.2022

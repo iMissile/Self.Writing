@@ -1323,6 +1323,8 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 ## Rconf 2022
 - [rstudio::conf(2022, "program")](https://github.com/rstudio/rstudio-conf-2022-program)
 - [Becoming Creative: How I Designed a Quilt with R](https://www.rstudio.com/conference/2022/talks/quilting-in-r-becoming-creative/) by Alice Walsh
+- [rstudio::conf(2022) materials](https://github.com/rstudio/rstudio-conf/blob/master/2022/README.md#keynotes-and-talks)
+This is where we will store all of the materials and links for rstudio::conf 2022!
 
 ## Rconf 2021
 - [Search RStudio Conference #rstudioglobal Tweets](http://apps.machlis.com/shiny/rstudioglobal/)
@@ -1343,6 +1345,16 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [Obsidian — IDE для Markdown базы знаний](https://vas3k.club/link/2609/)
 
 # http://192.168.12.31:4242/client/#/
+
+# 31.08.2022
+## R
+- [Articles - Principal Component Methods in R: Practical Guide. Principal Component Analysis in R: `prcomp` vs `princomp`](http://www.sthda.com/english/articles/31-principal-component-methods-in-r-practical-guide/118-principal-component-analysis-in-r-prcomp-vs-princomp/)
+- COOL! [Demystifying stat_ layers in {ggplot2}](https://yjunechoe.github.io/posts/2020-09-26-demystifying-stat-layers-ggplot2/) geom_stat 
+- [New statistical geoms in {ggxmean}](https://www.rstudio.com/blog/new-statistical-geoms-in-ggxmean)
+
+## DS
+- COOL! [Excel. Суммирование только видимых ячеек](https://www.planetaexcel.ru/techniques/2/222/). `СУММ (SUM)` – тупо суммирует все в выделенном диапазоне без разбора, т.е. и скрытые строки в том числе. Если хотя бы в одной ячейке есть любая ошибка – перестает считать и тоже выдает ошибку на выходе.
+`ПРОМЕЖУТОЧНЫЕ.ИТОГИ (SUBTOTALS)` с кодом 9 в первом аргументе
 
 # 29.08.2022
 ## Quarto
@@ -1645,6 +1657,7 @@ tryCatch(
 ## RuleFit, Business Rules
 - [imodels](https://github.com/csinva/imodels). Interpretable ML package 🔍 for concise, transparent, and accurate predictive modeling (sklearn-compatible).
 - [imodels: leveraging the unreasonable effectiveness of rules](https://bair.berkeley.edu/blog/2022/02/02/imodels/)
+	- [RuleFit: A Modeling Method for Automatically Extracting Interactions](https://hacarus.com/ai-lab/20211208-rulefit/). Примеры кода.
 - [Difference between rulefit and random forest](https://stats.stackexchange.com/questions/208930/difference-between-rulefit-and-random-forest)
 - [Difference between rulefit & skope-rules Python Packages](https://datascience.stackexchange.com/questions/90262/difference-between-rulefit-skope-rules-python-packages)
 - [frbs: Fuzzy Rule-Based Systems for Classification and Regression in R](https://cran.r-project.org/web/packages/frbs/vignettes/lala2015frbs.pdf)
@@ -4541,7 +4554,6 @@ The glow package is a framework for creating plots with glowing points as an alt
 # 05.10.2020
 ## R
 - [downloadthis](https://fmmattioni.github.io/downloadthis/) The goal of downloadthis is to implement download buttons in HTML output from RMarkdown without the need for runtime:shiny.
-- COOL! [Demystifying stat_ layers in {ggplot2}](https://yjunechoe.github.io/posts/2020-09-26-demystifying-stat-layers-ggplot2/) geom_stat 
 - [Companies Using R • A Curated list of R uses in enterprise](https://github.com/ThinkR-open/companies-using-r)
 - [strboul/supreme](https://strboul.github.io/supreme/). Modeling tool helping users better structure 'Shiny applications' developed with 'Shiny' modules
 - [Grammar of Graphics for Linear Model Diagnostic Plots](https://github.com/graysonwhite/gglm)
