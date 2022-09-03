@@ -1356,6 +1356,10 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - COOL! [Excel. Суммирование только видимых ячеек](https://www.planetaexcel.ru/techniques/2/222/). `СУММ (SUM)` – тупо суммирует все в выделенном диапазоне без разбора, т.е. и скрытые строки в том числе. Если хотя бы в одной ячейке есть любая ошибка – перестает считать и тоже выдает ошибку на выходе.
 `ПРОМЕЖУТОЧНЫЕ.ИТОГИ (SUBTOTALS)` с кодом 9 в первом аргументе
 
+## ML Feature Selection
+- [The 5 Feature Selection Algorithms every Data Scientist should know](https://towardsdatascience.com/the-5-feature-selection-algorithms-every-data-scientist-need-to-know-3a6b566efd2)
+- [Построение и отбор признаков. Часть 2: feature selection](https://proglib.io/p/postroenie-i-otbor-priznakov-chast-2-feature-selection-2021-09-25)
+
 # 29.08.2022
 ## Quarto
 - COOL! [Welcome to Quarto](https://quarto.org). A scientific and technical publishing system built on Pandoc (RStudio)
