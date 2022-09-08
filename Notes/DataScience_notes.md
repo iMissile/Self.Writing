@@ -1351,6 +1351,7 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Articles - Principal Component Methods in R: Practical Guide. Principal Component Analysis in R: `prcomp` vs `princomp`](http://www.sthda.com/english/articles/31-principal-component-methods-in-r-practical-guide/118-principal-component-analysis-in-r-prcomp-vs-princomp/)
 - COOL! [Demystifying stat_ layers in {ggplot2}](https://yjunechoe.github.io/posts/2020-09-26-demystifying-stat-layers-ggplot2/) geom_stat 
 - [New statistical geoms in {ggxmean}](https://www.rstudio.com/blog/new-statistical-geoms-in-ggxmean)
+- [Docker in Docker](https://github.com/jpetazzo/dind)
 
 ## DS
 - COOL! [Excel. Суммирование только видимых ячеек](https://www.planetaexcel.ru/techniques/2/222/). `СУММ (SUM)` – тупо суммирует все в выделенном диапазоне без разбора, т.е. и скрытые строки в том числе. Если хотя бы в одной ячейке есть любая ошибка – перестает считать и тоже выдает ошибку на выходе.
@@ -1371,6 +1372,7 @@ Div
 will [generate html `div`](https://quarto.org/docs/authoring/markdown-basics.html#other-blocks).
 - [Quarto, Python, and VS Code: Quarto Reports In VS Code](https://appsilon.com/quarto-python-and-vscode/)
 - COOL! [Notes on Changing from Rmarkdown/Bookdown to Quarto](https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/) by Nicholas Tierney
+- COOL! [Making Slides in Quarto with reveal.js](https://meghan.rbind.io/blog/quarto-slides/) by Meghan Hall
 
 ## dev
 - [Гексагональная архитектура, и как я к ней пришёл](https://alexkosarev.name/2020/06/12/hexagonal-architecture/)
@@ -1573,6 +1575,7 @@ https://github.com/deepanshu88/ShinyEditor)
 - [delete igraph vertices but retain all edges in R](https://stackoverflow.com/questions/55992896/delete-igraph-vertices-but-retain-all-edges-in-r)
 
 ## DS
+- [Расстояние между двумя точками на поверхности Земли](https://congyuzhou.medium.com/%D1%80%D0%B0%D1%81%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-%D0%B4%D0%B2%D1%83%D0%BC%D1%8F-%D1%82%D0%BE%D1%87%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B7%D0%B5%D0%BC%D0%BB%D0%B8-a398352bfbde)/ Формула гаверсинуса.
 - [Анализ малых данных. Линейная регрессия++](https://www.google.com/amp/s/dyakonov.org/2019/10/31/%25D0%25BB%25D0%25B8%25D0%25BD%25D0%25B5%25D0%25B9%25D0%25BD%25D0%25B0%25D1%258F-%25D1%2580%25D0%25B5%25D0%25B3%25D1%2580%25D0%25B5%25D1%2581%25D1%2581%25D0%25B8%25D1%258F/amp/)
 - [Building a Pytorch Autoencoder for MNIST digits](https://bytepawn.com/building-a-pytorch-autoencoder-for-mnist-digits.html#building-a-pytorch-autoencoder-for-mnist-digits)
 - [Проверка гипотезы равенства средних при неравной дисперсии в R](https://habr.com/ru/post/556632/). Шапиро тест
