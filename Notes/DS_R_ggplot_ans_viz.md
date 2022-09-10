@@ -106,6 +106,8 @@ Alluvial plots are similar to sankey diagrams and visualise categorical data ove
 	- [Error in grid.Call(L_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : Polygon edge not found](https://stackoverflow.com/questions/10581440/error-in-grid-calll-textbounds-as-graphicsannotxlabel-xx-xy-polygon)
 	- [Ggplot2: Fonts and cross-platform reproducibility](https://community.rstudio.com/t/ggplot2-fonts-and-cross-platform-reproducibility/3565)
 ```
+library(extrafont)
+#font_import() only do this one time - it takes a while
 loadfonts(dev="win")
 windowsFonts()
 ```

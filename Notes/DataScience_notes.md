@@ -1373,6 +1373,34 @@ will [generate html `div`](https://quarto.org/docs/authoring/markdown-basics.htm
 - [Quarto, Python, and VS Code: Quarto Reports In VS Code](https://appsilon.com/quarto-python-and-vscode/)
 - COOL! [Notes on Changing from Rmarkdown/Bookdown to Quarto](https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/) by Nicholas Tierney
 - COOL! [Making Slides in Quarto with reveal.js](https://meghan.rbind.io/blog/quarto-slides/) by Meghan Hall
+- COOL! [The ultimate guide to starting a Quarto blog](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html)
+This blog post is an in-depth guide on how to start blogging with Quarto.
+- [Porting a distill blog to quarto](https://blog.djnavarro.net/posts/2022-04-20_porting-to-quarto/https://blog.djnavarro.net/posts/2022-04-20_porting-to-quarto/)
+- Разбираемся с темами и шириной текста:
+	- [Page Layout](https://quarto.org/docs/output-formats/page-layout.html)
+	- [HTML Theming](https://quarto.org/docs/output-formats/html-themes.html)
+- [Experimenting with Quarto](https://tshafer.com/blog/2022/06/experimenting-with-quarto)
+- [Using multiple font sizes for code chunks](https://community.rstudio.com/t/using-multiple-font-sizes-for-code-chunks/26405)
+- [Chunk Options](https://quarto.org/docs/computations/r.html). Есть специфика межу Quarto YAML и Rmarkdown опциями!!
+
+## Quarto & fonts
+- COOL! [Setting up and debugging custom fonts](https://yjunechoe.github.io/posts/2021-06-24-setting-up-and-debugging-custom-fonts/)
+In quarto, you can set the custom ragg_png device (defined above) in the YAML, like so:
+```
+  knitr:
+    opts_chunk: 
+      dev: "ragg_png"
+```
+- Мучаемся с ошибкой `Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
+семейство шрифтов не найдено в базе данных шрифтов Windows`
+	- [Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font width unknown for character 0x20](https://stackoverflow.com/questions/62067139/warning-in-grid-callc-textbounds-as-graphicsannotxlabel-xx-xy-font-w)
+
+## knitr textwidth
+- xaringan. [Font size of code {#69}](https://github.com/yihui/xaringan/issues/69)
+- [5.3 Control the width of text output](https://bookdown.org/yihui/rmarkdown-cookbook/text-width.html)
+- `fig-align` в YAML header не срабатывает в Quarto, а в чанках срабатывает... пока непонятно почему.
+- [align multiple figures with `fig.align`](https://stackoverflow.com/questions/63731766/align-multiple-figures-with-fig-align)
+- [R Markdown Tips: Code, Images, Comments, Tables, and more](https://appsilon.com/r-markdown-tips/amp/	)
 
 ## dev
 - [Гексагональная архитектура, и как я к ней пришёл](https://alexkosarev.name/2020/06/12/hexagonal-architecture/)
@@ -1675,6 +1703,7 @@ tryCatch(
 - [Finding communities based on propagating labels](https://igraph.org/r/doc/cluster_label_prop.html)
 - [The nitty-gritty of the Label Propagation Algorithm](https://irene.rbind.io/post/lpa/)
 - [A Tutorial Introduction to Belief Propagation](https://www.ski.org/sites/default/files/publications/bptutorial.pdf)
+- [print.pre](https://github.com/marjoleinF/pre/blob/b8a4e11a066f47f95a411c119edcdc40f6470fbc/R/pre.R#L1635)
 
 # 06.06.2022
 ## R
