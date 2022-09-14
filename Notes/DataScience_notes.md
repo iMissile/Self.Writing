@@ -1346,6 +1346,15 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 12.09.2022
+## R
+- [How to Embed htmlwidgets into Documents](https://communicate-data-with-r.netlify.app/docs/communicate/htmlwidgets-in-documents/)
+- [Insert raw html iframe into RMarkdown](https://community.rstudio.com/t/insert-raw-html-iframe-into-rmarkdown/94334)
+- [iframes don't work in rmarkdown {#2027} Closed](https://github.com/rstudio/rmarkdown/issues/2027)
+- [knitr. 9.3 Embed a web page](https://bookdown.org/yihui/rmarkdown-cookbook/include-url.html)
+- COOL! [How to Embed a Google Sheet in a Website](https://www.groovypost.com/howto/embed-a-google-sheet-in-a-website/)
+- [8. Add Line Breaks in R Markdown](https://www.dataquest.io/blog/r-markdown-tips-tricks-and-shortcuts/#:~:text=To%20break%20a%20line%20in,spaces%20and%20then%20hit%20return%20.). To break a line in R Markdown and have it appear in your output, use two trailing spaces and then hit return.
+
 # 31.08.2022
 ## R
 - [Articles - Principal Component Methods in R: Practical Guide. Principal Component Analysis in R: `prcomp` vs `princomp`](http://www.sthda.com/english/articles/31-principal-component-methods-in-r-practical-guide/118-principal-component-analysis-in-r-prcomp-vs-princomp/)
@@ -1382,6 +1391,14 @@ This blog post is an in-depth guide on how to start blogging with Quarto.
 - [Experimenting with Quarto](https://tshafer.com/blog/2022/06/experimenting-with-quarto)
 - [Using multiple font sizes for code chunks](https://community.rstudio.com/t/using-multiple-font-sizes-for-code-chunks/26405)
 - [Chunk Options](https://quarto.org/docs/computations/r.html). Есть специфика межу Quarto YAML и Rmarkdown опциями!!
+- [Creating a website using Quarto and RStudio](https://quarto-workshop.netlify.app/)
+- [How to publish a website FOR FREE in under 60 seconds using Quarto](https://www.youtube.com/watch?v=nuYNCPRf8Js)
+- [Creating a blog with Quarto in 10 steps](https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/en/)
+In this post, I introduce you to my new blog and show how you can create a blog with Quarto for R users.
+- [Quarto Pub](https://quarto.org/docs/publishing/quarto-pub.html)
+	- Может здесь кроется ответ на часть вопросов по ошибке 404. [Quarto - GitHub Pages](https://quarto.org/docs/publishing/github-pages.html)
+- COOL! [R Markdown Tips, Tricks, and Shortcuts](https://www.dataquest.io/blog/r-markdown-tips-tricks-and-shortcuts)
+- COOL! [RMarkdown collapsible panel](https://stackoverflow.com/questions/52576626/rmarkdown-collapsible-panel)
 
 ## Quarto & fonts
 - COOL! [Setting up and debugging custom fonts](https://yjunechoe.github.io/posts/2021-06-24-setting-up-and-debugging-custom-fonts/)
