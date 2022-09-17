@@ -45,6 +45,9 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 	- [A visual debugger for Jupyter](https://blog.jupyter.org/a-visual-debugger-for-jupyter-914e61716559)
 - [Orange](https://orangedatamining.com/). Open source machine learning and data visualization.
 
+# 17.09.2022
+- [Coalesce values from 2 columns into a single column in a pandas dataframe](https://stackoverflow.com/questions/38152389/coalesce-values-from-2-columns-into-a-single-column-in-a-pandas-dataframe)
+
 # 01.09.2022
 - [Selecting multiple columns in a Pandas dataframe](https://stackoverflow.com/questions/11285613/selecting-multiple-columns-in-a-pandas-dataframe)
 With Pandas,
