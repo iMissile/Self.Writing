@@ -1395,10 +1395,12 @@ This blog post is an in-depth guide on how to start blogging with Quarto.
 - [How to publish a website FOR FREE in under 60 seconds using Quarto](https://www.youtube.com/watch?v=nuYNCPRf8Js)
 - [Creating a blog with Quarto in 10 steps](https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/en/)
 In this post, I introduce you to my new blog and show how you can create a blog with Quarto for R users.
+- [A Step-by-Step Guide: Deploying on Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/)
 - [Quarto Pub](https://quarto.org/docs/publishing/quarto-pub.html)
 	- Может здесь кроется ответ на часть вопросов по ошибке 404. [Quarto - GitHub Pages](https://quarto.org/docs/publishing/github-pages.html)
 - COOL! [R Markdown Tips, Tricks, and Shortcuts](https://www.dataquest.io/blog/r-markdown-tips-tricks-and-shortcuts)
 - COOL! [RMarkdown collapsible panel](https://stackoverflow.com/questions/52576626/rmarkdown-collapsible-panel)
+- [Quarto self-contained](https://quarto.org/docs/output-formats/html-basics.html#self-contained). Кроме yaml заголовка можно в командной строке еще написать `--embed-resources --standalone`
 
 ## Quarto & fonts
 - COOL! [Setting up and debugging custom fonts](https://yjunechoe.github.io/posts/2021-06-24-setting-up-and-debugging-custom-fonts/)
@@ -3686,6 +3688,7 @@ sqlMdxOpenquery <- processSqlTemplate(
 
 ## DS
 - COOL! [Database-like ops benchmark](https://h2oai.github.io/db-benchmark/)
+- COOL! [ClickBench — a Benchmark For Analytical DBMS](https://benchmark.clickhouse.com/)
 - [Why are tar.xz files 15x smaller when using Python's tar library compared to macOS tar?](https://superuser.com/questions/1633073/why-are-tar-xz-files-15x-smaller-when-using-pythons-tar-library-compared-to-mac)
 - COOL! [ezrosent/frawk](https://github.com/ezrosent/frawk) an efficient awk-like language
 - COOL! [Как включить перевод в Google Sheets и еще 6 лайфхаков в Google Docs](https://ain.ua/2019/04/06/lajfxaki-v-google-docs/)
