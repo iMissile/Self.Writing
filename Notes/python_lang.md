@@ -45,6 +45,14 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 	- [A visual debugger for Jupyter](https://blog.jupyter.org/a-visual-debugger-for-jupyter-914e61716559)
 - [Orange](https://orangedatamining.com/). Open source machine learning and data visualization.
 
+# 22.09.2022
+- [How to Install Python 3.9 on Ubuntu 20.04](https://linuxize.com/post/how-to-install-python-3-9-on-ubuntu-20-04/)
+sudo apt update
+sudo apt install software-properties-common
+sudo apt install python3.9
+python3.9 --version
+```
+
 # 17.09.2022
 - [Coalesce values from 2 columns into a single column in a pandas dataframe](https://stackoverflow.com/questions/38152389/coalesce-values-from-2-columns-into-a-single-column-in-a-pandas-dataframe)
 
