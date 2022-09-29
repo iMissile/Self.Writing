@@ -568,6 +568,10 @@ Theming in Rmarkdown can be hard. You first made some custom CSS or use a provid
 - [Automatic execution of setup chunk in Rmd](https://community.rstudio.com/t/automatic-execution-of-setup-chunk-in-rmd/71483)
 - Интересный момент, который ранее не замечал. Если в проекте Rmd-файл лежит не в корне, то код из .Rprofile не подгружается при генерации файла через кнопку knit. Надо юзать 
 `source(here::here(".Rprofile"), chdir = TRUE)`
+- COOL! [suppress console output in r markdown, but keep plot](https://stackoverflow.com/questions/30810476/suppress-console-output-in-r-markdown-but-keep-plot). Simply having  
+`{r, results = 'hide'}` or  `{r, results = FALSE}` for your chunk options suppresses R output but not warnings, messages or errors. No extra functions are needed.
+
+More details can be found here. https://yihui.org/knitr/options/#text-output
 
 ## knitr
 - Jumping Rivers blog
@@ -1346,6 +1350,13 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 26.09.2022
+## R
+- [R 4.2.0 native pipe and placeholder](https://www.reddit.com/r/rstats/comments/uatfmp/r_420_native_pipe_and_placeholder/)
+- [R 4.2.0 Native Placeholder](https://davidbudzynski.github.io/general/2022/04/23/r-native-placeholder.html)
+- [R 4.2: Support new pipe placeholder syntax {#10757} (Closed)](https://github.com/rstudio/rstudio/issues/10757)
+- Косяк с цветами в теме cobalt. [prevent xtermColor8 from being set to black #11637 {Merged}](https://github.com/rstudio/rstudio/pull/11637)
+
 # 12.09.2022
 ## R
 - [How to Embed htmlwidgets into Documents](https://communicate-data-with-r.netlify.app/docs/communicate/htmlwidgets-in-documents/)
@@ -1401,6 +1412,7 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 - COOL! [R Markdown Tips, Tricks, and Shortcuts](https://www.dataquest.io/blog/r-markdown-tips-tricks-and-shortcuts)
 - COOL! [RMarkdown collapsible panel](https://stackoverflow.com/questions/52576626/rmarkdown-collapsible-panel)
 - [Quarto self-contained](https://quarto.org/docs/output-formats/html-basics.html#self-contained). Кроме yaml заголовка можно в командной строке еще написать `--embed-resources --standalone`
+- [embed-resources works from command line, not from rstudio #2364 {Closed}](https://github.com/quarto-dev/quarto-cli/issues/2364)
 
 ## Quarto & fonts
 - COOL! [Setting up and debugging custom fonts](https://yjunechoe.github.io/posts/2021-06-24-setting-up-and-debugging-custom-fonts/)
@@ -1581,6 +1593,16 @@ knitr::opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
 ## RStudio IDE
 - ["Find in Files" always finds nothing in package development mode](https://community.rstudio.com/t/find-in-files-always-finds-nothing-in-package-development-mode/10056)
 Do you have indexing disabled for this project? See in `Tools` -> `Project Options`
+- COOL! Нашел проблему неработоспособности Find in Files в RStudio IDE. [Find in Files no longer works after updating to 2202.07.1 #11680
+ {Closed}](https://github.com/rstudio/rstudio/issues/11680). If you run the code `setenv(RSTUDIO_GREP_DEBUG = 1)` in the console, and then perform the search, what debug output do you see in the console?
+Включаем дебаг командой `setenv(RSTUDIO_GREP_DEBUG = 1)` и видим проблему с правами доступа git. И там же способ лечения. Меняем владельца папок.
+
+Иногда в RStudio IDE на отдельных проектах не работает "Find in Files" под Windows.
+
+Решение достаточно простое. Подсмотрено здесь: https://github.com/rstudio/rstudio/issues/11680. Поиск выполняется grep утилитами гита — отсюда ряд проблем.
+1. Включаем дебаг режим Sys.setenv(RSTUDIO_GREP_DEBUG = 1) 
+2. Смотрим сообщения в консоли после проведения поиска.
+3. Исправляем ошибки. В частности, могут быть ошибки, связанные в недоверенными директориями (новинки гита) или неправильным владельцем.
 
 # 04.07.2022
 ## Teradata
