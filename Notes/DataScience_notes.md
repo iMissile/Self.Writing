@@ -570,8 +570,8 @@ Theming in Rmarkdown can be hard. You first made some custom CSS or use a provid
 `source(here::here(".Rprofile"), chdir = TRUE)`
 - COOL! [suppress console output in r markdown, but keep plot](https://stackoverflow.com/questions/30810476/suppress-console-output-in-r-markdown-but-keep-plot). Simply having  
 `{r, results = 'hide'}` or  `{r, results = FALSE}` for your chunk options suppresses R output but not warnings, messages or errors. No extra functions are needed.
-
 More details can be found here. https://yihui.org/knitr/options/#text-output
+- [R markdown df_print options](https://stackoverflow.com/questions/40893742/r-markdown-df-print-options). `knitr::opts_chunk$set(echo = TRUE, rows.print=25)`
 
 ## knitr
 - Jumping Rivers blog
@@ -1350,6 +1350,17 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 04.10.2022
+## DS
+- [Beneath and Beyond the Cox Model](https://rviews.rstudio.com/2022/09/06/deep-survival), 2022-09-06 by Joseph Rickert
+- [Changing the Default Library in Rstudio to a Different Default Library (Temporary)](https://www.accelebrate.com/library/how-to-articles/r-rstudio-library)
+
+## R
+- [Customizing your package-library location](https://andresrcs.rbind.io/2020/10/26/customizing_library_path/)
+- [Change R default library path using .libPaths in Rprofile.site fails to work](https://stackoverflow.com/questions/15170399/change-r-default-library-path-using-libpaths-in-rprofile-site-fails-to-work). 282
+The proper solution is to set environment variable `R_LIBS_USER` to the value of the file path to your desired library folder as opposed to getting RStudio to recognize a Rprofile.site file.
+- [AST - parsing code of R programming language](https://stackoverflow.com/questions/72022649/ast-parsing-code-of-r-programming-language)
+
 # 26.09.2022
 ## R
 - [R 4.2.0 native pipe and placeholder](https://www.reddit.com/r/rstats/comments/uatfmp/r_420_native_pipe_and_placeholder/)
@@ -1406,6 +1417,7 @@ This blog post is an in-depth guide on how to start blogging with Quarto.
 - [How to publish a website FOR FREE in under 60 seconds using Quarto](https://www.youtube.com/watch?v=nuYNCPRf8Js)
 - [Creating a blog with Quarto in 10 steps](https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/en/)
 In this post, I introduce you to my new blog and show how you can create a blog with Quarto for R users.
+- [Building with Quarto](https://robertmitchellv.com/blog/2022-08-building-with-quarto/building-with-quarto.html)
 - [A Step-by-Step Guide: Deploying on Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/)
 - [Quarto Pub](https://quarto.org/docs/publishing/quarto-pub.html)
 	- Может здесь кроется ответ на часть вопросов по ошибке 404. [Quarto - GitHub Pages](https://quarto.org/docs/publishing/github-pages.html)
@@ -1413,6 +1425,7 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 - COOL! [RMarkdown collapsible panel](https://stackoverflow.com/questions/52576626/rmarkdown-collapsible-panel)
 - [Quarto self-contained](https://quarto.org/docs/output-formats/html-basics.html#self-contained). Кроме yaml заголовка можно в командной строке еще написать `--embed-resources --standalone`
 - [embed-resources works from command line, not from rstudio #2364 {Closed}](https://github.com/quarto-dev/quarto-cli/issues/2364)
+- COOL! [Iterating to create tabs with gt in quarto](https://stackoverflow.com/questions/73585417/iterating-to-create-tabs-with-gt-in-quarto)
 
 ## Quarto & fonts
 - COOL! [Setting up and debugging custom fonts](https://yjunechoe.github.io/posts/2021-06-24-setting-up-and-debugging-custom-fonts/)
