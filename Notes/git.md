@@ -141,6 +141,11 @@ unlist(stri_split_lines(sha$stdout, omit_empty = TRUE)) %>%
       # print()
   })
 ```
+- ѕолучил проблему случайно [Updates Were Rejected Because the Tip of Your Current Branch Is Behind: Solution](https://www.positioniseverything.net/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind)
+- [Fix git Уtip of your current branch is behind its remote counterpartФ - 4 real-world solutions](https://codewithhugo.com/fix-git-failed-to-push-updates-were-rejected/)
+- SmartGit. [Modifying the History](https://docs.syntevo.com/SmartGit/HowTos/Modifying-the-History.html)
+- SmartGit. [Interactive Rebase](https://docs.syntevo.com/SmartGit/Latest/Rebase-Interactive.html)
+- [Rewriting history](https://www.atlassian.com/git/tutorials/rewriting-history). `Git commit --amend` and other methods of rewriting history
 
 # GitHub authentication
 - [Git push results in УAuthentication FailedФ](https://stackoverflow.com/questions/17659206/git-push-results-in-authentication-failed). —нимаем галочки при инсталл€ции, чистим Windows Credential Manager
