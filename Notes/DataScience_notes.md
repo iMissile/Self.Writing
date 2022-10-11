@@ -1360,6 +1360,7 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Change R default library path using .libPaths in Rprofile.site fails to work](https://stackoverflow.com/questions/15170399/change-r-default-library-path-using-libpaths-in-rprofile-site-fails-to-work). 282
 The proper solution is to set environment variable `R_LIBS_USER` to the value of the file path to your desired library folder as opposed to getting RStudio to recognize a Rprofile.site file.
 - [AST - parsing code of R programming language](https://stackoverflow.com/questions/72022649/ast-parsing-code-of-r-programming-language)
+- COOL! Performance benchmarks. [How to access the last value in a vector?](https://stackoverflow.com/questions/77434/how-to-access-the-last-value-in-a-vector)
 
 # 26.09.2022
 ## R
@@ -1438,6 +1439,7 @@ In quarto, you can set the custom ragg_png device (defined above) in the YAML, l
 - Мучаемся с ошибкой `Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
 семейство шрифтов не найдено в базе данных шрифтов Windows`
 	- [Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font width unknown for character 0x20](https://stackoverflow.com/questions/62067139/warning-in-grid-callc-textbounds-as-graphicsannotxlabel-xx-xy-font-w)
+- [A beginner's guide to using Observable JavaScript, R, and Python with Quarto](https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html)
 
 ## knitr textwidth
 - xaringan. [Font size of code {#69}](https://github.com/yihui/xaringan/issues/69)
