@@ -303,6 +303,7 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - [plotmath {grDevices}](https://stat.ethz.ch/R-manual/R-devel/library/grDevices/html/plotmath.html). Mathematical Annotation in R
 - [Визуализируй это: визуализация данных в R](https://baltti.github.io/workshop-DH21/ggplot2-tutorial-DH.html) by Балтыжакова Татьяна
 - [Overlaying histograms with ggplot2 in R](https://stackoverflow.com/questions/6957549/overlaying-histograms-with-ggplot2-in-r)
+- COOL! [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/)
 
 ## highlighting
 - COOL! [gghighlight 0.3.2](https://yutani.rbind.io/post/2021-06-07-gghighlight-032/)

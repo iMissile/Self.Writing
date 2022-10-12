@@ -1208,6 +1208,7 @@ TL;DR zq is a command-line tool that uses the Zed language for pipeline-style se
 - [Is it possible to recursively change key names with jq using the with_entries method?](https://unix.stackexchange.com/questions/655253/is-it-possible-to-recursively-change-key-names-with-jq-using-the-with-entries-me)
 - [jq ~ collapse specific single object arrays?](https://stackoverflow.com/questions/70063816/jq-collapse-specific-single-object-arrays)
 - [How to check for presence of 'key' in jq before iterating over the values](https://stackoverflow.com/questions/42097410/how-to-check-for-presence-of-key-in-jq-before-iterating-over-the-values)
+- COOL! [Flatten array objects with parent values? #646 {Closed}](https://github.com/stedolan/jq/issues/646)
 
 
 
@@ -1427,6 +1428,7 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 - [Quarto self-contained](https://quarto.org/docs/output-formats/html-basics.html#self-contained). Кроме yaml заголовка можно в командной строке еще написать `--embed-resources --standalone`
 - [embed-resources works from command line, not from rstudio #2364 {Closed}](https://github.com/quarto-dev/quarto-cli/issues/2364)
 - COOL! [Iterating to create tabs with gt in quarto](https://stackoverflow.com/questions/73585417/iterating-to-create-tabs-with-gt-in-quarto)
+- [How can I specify global and local chunk options for a quarto pdf book?](https://stackoverflow.com/questions/73264233/how-can-i-specify-global-and-local-chunk-options-for-a-quarto-pdf-book)
 
 ## Quarto & fonts
 - COOL! [Setting up and debugging custom fonts](https://yjunechoe.github.io/posts/2021-06-24-setting-up-and-debugging-custom-fonts/)
@@ -1446,7 +1448,8 @@ In quarto, you can set the custom ragg_png device (defined above) in the YAML, l
 - [5.3 Control the width of text output](https://bookdown.org/yihui/rmarkdown-cookbook/text-width.html)
 - `fig-align` в YAML header не срабатывает в Quarto, а в чанках срабатывает... пока непонятно почему.
 - [align multiple figures with `fig.align`](https://stackoverflow.com/questions/63731766/align-multiple-figures-with-fig-align)
-- [R Markdown Tips: Code, Images, Comments, Tables, and more](https://appsilon.com/r-markdown-tips/amp/	)
+- [R Markdown Tips: Code, Images, Comments, Tables, and more](https://appsilon.com/r-markdown-tips/amp/)
+- knitr [11.7 Hide code, text output, messages, or plots](https://bookdown.org/yihui/rmarkdown-cookbook/hide-one.html)
 
 ## dev
 - [Гексагональная архитектура, и как я к ней пришёл](https://alexkosarev.name/2020/06/12/hexagonal-architecture/)
