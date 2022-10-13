@@ -1351,6 +1351,21 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 13.10.2022
+## R
+- Проблемы с подключение к нашей Jira. Выплыла ошибка 'InitializeSecurityContext failed: SEC_E_ILLEGAL_MESSAGE (0x80090326)'. Решение связано с SSL библиотеками в Windows:
+	- [httr::GET returns error for a specific website](https://stackoverflow.com/questions/71736855/httrget-returns-error-for-a-specific-website)
+	- [Error running weathercan package - fatal SSL/TLS alert (e.g. handshake failed))](https://stackoverflow.com/questions/64147821/error-running-weathercan-package-fatal-ssl-tls-alert-e-g-handshake-failed)
+	- Ответ: 
+```
+CURL_SSL_BACKEND=openssl
+
+# If you're unsure how to edit your .Renviron file, you can use the usethis package to find/create and open # it for you (restart R afterwards):
+
+install.packages("usethis")
+usethis::edit_r_environ()
+```
+
 # 04.10.2022
 ## DS
 - [Beneath and Beyond the Cox Model](https://rviews.rstudio.com/2022/09/06/deep-survival), 2022-09-06 by Joseph Rickert
