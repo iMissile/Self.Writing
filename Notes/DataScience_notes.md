@@ -1209,6 +1209,21 @@ TL;DR zq is a command-line tool that uses the Zed language for pipeline-style se
 - [jq ~ collapse specific single object arrays?](https://stackoverflow.com/questions/70063816/jq-collapse-specific-single-object-arrays)
 - [How to check for presence of 'key' in jq before iterating over the values](https://stackoverflow.com/questions/42097410/how-to-check-for-presence-of-key-in-jq-before-iterating-over-the-values)
 - COOL! [Flatten array objects with parent values? #646 {Closed}](https://github.com/stedolan/jq/issues/646)
+- [Flattening nested JSON objects with jq](https://til.simonwillison.net/jq/flatten-nested-json-objects-jq)
+- [Flatten nested JSON using jq](https://stackoverflow.com/questions/37540717/flatten-nested-json-using-jq/37555908#37555908)
+- COOL! [search JSON using JQ, printing full path/flattened results](https://github.com/NorthboundTrain/jqg). Разворачивает все, даже массивы
+```
+. as $in 
+| reduce leaf_paths as $path ({};
+     . + { ($path | map(tostring) | join(".")): $in | getpath($path) })
+```
+- [Flatten nested JSON using jq](https://codehunter.cc/a/elasticsearch/flatten-nested-json-using-jq)
+- [jq recipes](https://remysharp.com/drafts/jq-recipes)
+- Переименовываем все вложенные объекты: `[.[] | with_entries(.key as $path | .value |= walk(if type == "object" then with_entries(.key |= $path + "." + . ) else . end))]`
+И еще конструкция (не все оставляет???): `.[] | [ [paths([scalars] != []) as $path | {"key": $path | join("_"), "value": getpath($path)}] | from_entries ]`
+- [Error selecting values using paths(node_filter) #2288 {Open}](https://github.com/stedolan/jq/issues/2288)
+- [paths(scalars) bug? #1163 {Open}](https://github.com/stedolan/jq/issues/1163	)
+- [Select path that is not an object #2303 {Closed}](https://github.com/stedolan/jq/issues/2303)
 
 
 
@@ -1365,6 +1380,7 @@ CURL_SSL_BACKEND=openssl
 install.packages("usethis")
 usethis::edit_r_environ()
 ```
+- [CRAN and the Isoband Incident – Is Your Project at Risk and How to Fix It](https://appsilon.com/cran-and-the-isoband-incident/)
 
 # 04.10.2022
 ## DS
