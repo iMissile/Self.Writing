@@ -1374,13 +1374,13 @@ This is where we will store all of the materials and links for rstudio::conf 202
 	- Ответ: 
 ```
 CURL_SSL_BACKEND=openssl
-
 # If you're unsure how to edit your .Renviron file, you can use the usethis package to find/create and open # it for you (restart R afterwards):
-
 install.packages("usethis")
 usethis::edit_r_environ()
 ```
 - [CRAN and the Isoband Incident – Is Your Project at Risk and How to Fix It](https://appsilon.com/cran-and-the-isoband-incident/)
+- [text](https://r-text.org/)
+An R-package for analyzing natural language with transformers from HuggingFace using Natural Language Processing and Machine Learning.]
 
 # 04.10.2022
 ## DS

@@ -45,6 +45,11 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 	- [A visual debugger for Jupyter](https://blog.jupyter.org/a-visual-debugger-for-jupyter-914e61716559)
 - [Orange](https://orangedatamining.com/). Open source machine learning and data visualization.
 
+# 17.10.2022
+- [Python – An Introduction to NumPy Arrays](https://www.askpython.com/python-modules/numpy/python-numpy-arrays)
+- [numpy get index where value is true](https://stackoverflow.com/questions/16094563/numpy-get-index-where-value-is-true)
+- Любопытно. [Fast lags calculation concept using numpy arrays](https://www.kaggle.com/code/nareyko/fast-lags-calculation-concept-using-numpy-arrays)
+
 # 03.10.2022
 - COOL! [A tidyverse R and polars Python side-by-side](https://robertmitchellv.com/blog/2022-07-r-python-side-by-side/r-python-side-by-side.html)
 - [Lark](https://github.com/lark-parser/lark) is a parsing toolkit for Python, built with a focus on ergonomics, performance and modularity.
