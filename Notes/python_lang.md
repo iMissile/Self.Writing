@@ -45,6 +45,12 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 	- [A visual debugger for Jupyter](https://blog.jupyter.org/a-visual-debugger-for-jupyter-914e61716559)
 - [Orange](https://orangedatamining.com/). Open source machine learning and data visualization.
 
+# 21.10.2022
+- [Interesting Ways to Select Pandas DataFrame Columns](https://towardsdatascience.com/interesting-ways-to-select-pandas-dataframe-columns-b29b82bbfb33)
+- [Pandas Select Columns by Name or Index](https://sparkbyexamples.com/pandas/pandas-select-columns-by-name-or-index/)
+- [How to Rename Column by Index in pandas](https://sparkbyexamples.com/pandas/pandas-rename-column-by-index/)
+- [Indexing and selecting data](https://pandas.pydata.org/docs/user_guide/indexing.html)
+
 # 17.10.2022
 - [Python – An Introduction to NumPy Arrays](https://www.askpython.com/python-modules/numpy/python-numpy-arrays)
 - [numpy get index where value is true](https://stackoverflow.com/questions/16094563/numpy-get-index-where-value-is-true)

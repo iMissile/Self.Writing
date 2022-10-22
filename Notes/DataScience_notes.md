@@ -1224,6 +1224,8 @@ TL;DR zq is a command-line tool that uses the Zed language for pipeline-style se
 - [Error selecting values using paths(node_filter) #2288 {Open}](https://github.com/stedolan/jq/issues/2288)
 - [paths(scalars) bug? #1163 {Open}](https://github.com/stedolan/jq/issues/1163	)
 - [Select path that is not an object #2303 {Closed}](https://github.com/stedolan/jq/issues/2303)
+- [How can I replace a null value in a json document by a specific value with jq?](https://stackoverflow.com/questions/33128365/how-can-i-replace-a-null-value-in-a-json-document-by-a-specific-value-with-jq). `walk(if type == "array" then sort else . end)`
+- [jq, replace null values on any level, not touching non-null or not existing](https://stackoverflow.com/questions/51272561/jq-replace-null-values-on-any-level-not-touching-non-null-or-not-existing). The answer is walk!
 
 
 
@@ -1365,6 +1367,13 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Obsidian — IDE для Markdown базы знаний](https://vas3k.club/link/2609/)
 
 # http://192.168.12.31:4242/client/#/
+
+# 21.10.2022
+## R
+- [Converting nested XML to dataframe in R - a tidyverse approach](https://urbandatapalette.com/post/2021-03-xml-dataframe-r/)
+- [How to Convert XML to Dataframe Using Xlm2](https://www.robwiederstein.org/2021/03/05/xml-to-dataframe/)
+- [Awesome R Markdown Word report with programmatically inserted headings, outputs and cross-references](https://towardsdatascience.com/awesome-r-markdown-word-report-with-programmatically-inserted-headings-outputs-and-19ad0de29a22)
+How to automate reporting in Word to focus on challenging problem solving
 
 # 13.10.2022
 ## R
@@ -2741,7 +2750,6 @@ system('notify-send -i important "Работа скрипта" "Ахтунг!"')
 - [NikNakk/forestmodel](https://github.com/NikNakk/forestmodel/). лажовый пакет
 - [ECharts 5 for R](https://github.com/JohnCoene/echarts4r)
 - [Fuzzy sets for qualitative comparative analysis (QCA) using R](https://jmsallan.netlify.app/blog/fuzzy-sets-for-qualitative-comparative-analysis-qca-using-r/)
-- [stephenturner/qqman](https://github.com/stephenturner/qqman). An R package for creating Q-Q and manhattan plots from GWAS results
 - [Introducing rpp](https://blog.q-lang.org/posts/2021-10-13-release/). Launching the rpp Project
 - [RVowpalWabbit 0.0.16: One More CRAN Request](http://dirk.eddelbuettel.com/blog/2021/10/18/)
 
@@ -2827,7 +2835,6 @@ as -chi2- distribution differ from the Gaussian, the normal based 95% CI bounds 
 	- sendmailR
 	- emayili
 статья: https://datawookie.dev/blog/2019/05/emayili-sending-email-from-r/
-- [Q-Q Plots. От чайника до профессионала за один гайд](https://habr.com/ru/post/578754/)
 - [Choice-based conjoint surveys in R with formr](https://www.jhelvy.com/posts/2021-09-18-choice-based-conjoint-surveys-in-r-with-formr/)
 - COOL! [PCA with tidyverse](https://bjnnowak.netlify.app/2021/09/15/r-pca-with-tidyverse/)
 - COOL! [Releasing r2pptx on CRAN](https://mattle24.github.io/mattle24_blog/public/releasing-r2pptx-on-cran/). r2pptx is a wrapper around officer
@@ -9604,9 +9611,12 @@ Benchmark your CPU and compare against other CPUs. Also provides functions for o
 - Практические примеры с использованием fitdistrplus. [Fitting Distributions](http://www.di.fc.ul.pt/~jpn/r/distributions/fitting.html) by João Neto, October 2015
 - [Fitting a lognormal distribution to truncated data in R](https://stackoverflow.com/questions/16947799/fitting-a-lognormal-distribution-to-truncated-data-in-r)
 - [ggplot2. A quantile-quantile plot](https://ggplot2.tidyverse.org/reference/geom_qq.html)
-- [How to interpret a QQ plot](https://stats.stackexchange.com/questions/101274/how-to-interpret-a-qq-plot)
+- [How to interpret a Q-Q plot](https://stats.stackexchange.com/questions/101274/how-to-interpret-a-qq-plot)
 - [Does this Q-Q plot indicates leptokurtic or platykurtic distribution?](https://stats.stackexchange.com/questions/262453/does-this-q-q-plot-indicates-leptokurtic-or-platykurtic-distribution/354076#354076)
 - [Understanding Q-Q Plots](https://data.library.virginia.edu/understanding-q-q-plots/)
+- [stephenturner/qqman](https://github.com/stephenturner/qqman). An R package for creating Q-Q and manhattan plots from GWAS results
+- [Q-Q Plots. От чайника до профессионала за один гайд](https://habr.com/ru/post/578754/)
+
 
 ## R formula
 - COOL! [StatQuest: Quantile-Quantile (QQ) Plots, Clearly Explained!!!](https://statquest.org/2017/11/13/statquest-quantile-quantile-qq-plots-clearly-explained/)

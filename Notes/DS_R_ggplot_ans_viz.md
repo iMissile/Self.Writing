@@ -409,4 +409,17 @@ The goal of vlbuildr is to provide an R api for building up vega-lite specs.
 - [Graphic Design with ggplot2](https://rstudio-conf-2022.github.io/ggplot2-graphic-design/). How to Create Engaging and Complex Visualizations in R
 An rstudio::conf(2022) Workshop by Cédric Scherer
 
+# Tables
+
+## DT DataTable
+- [changing font size in R DataTables (DT)](https://stackoverflow.com/questions/44101055/changing-font-size-in-r-datatables-dt)
+- [Change Text Size in DataTable](https://datatables.net/forums/discussion/66743/change-text-size-in-datatable)
+
+## gt
+- [Create interactive links in gt table (in rmarkdown)](https://community.rstudio.com/t/create-interactive-links-in-gt-table-in-rmarkdown/70266/2)
+- [Embed links to cells of R's gt tables](https://stackoverflow.com/questions/68720533/embed-links-to-cells-of-rs-gt-tables)
+- [Embedding custom HTML in gt tables](https://themockup.blog/posts/2020-10-31-embedding-custom-features-in-gt-tables/index.html)
+- [Adding images to group headers using text_transform in a gt table](https://stackoverflow.com/questions/73068835/adding-images-to-group-headers-using-text-transform-in-a-gt-table)
+
+
 
