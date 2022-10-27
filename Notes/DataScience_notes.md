@@ -1368,12 +1368,35 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 25.10.2022
+## Math. Truncated distribution
+- [TruncatedDistribution](https://reference.wolfram.com/language/ref/TruncatedDistribution.html)
+- [Stan. 4.2 Truncated data](https://mc-stan.org/docs/stan-users-guide/truncated-data.html)
+- COOL! [Generating data from a truncated distribution](https://www.rdatagen.net/post/generating-data-from-a-truncated-distribution/)
+- COOL! [Copulas and correlated data generation: getting beyond the normal distribution](https://www.rdatagen.net/post/correlated-data-copula/)
+- [Probability Distributions in R (Stat 5101, Geyer)](https://www.stat.umn.edu/geyer/old/5101/rlook.html)
+- [Introduction to dnorm, pnorm, qnorm, and rnorm for new biostatisticians](https://seankross.com/notes/dpqr/)
+
 # 21.10.2022
-## R
+## R & XML
 - [Converting nested XML to dataframe in R - a tidyverse approach](https://urbandatapalette.com/post/2021-03-xml-dataframe-r/)
 - [How to Convert XML to Dataframe Using Xlm2](https://www.robwiederstein.org/2021/03/05/xml-to-dataframe/)
 - [Awesome R Markdown Word report with programmatically inserted headings, outputs and cross-references](https://towardsdatascience.com/awesome-r-markdown-word-report-with-programmatically-inserted-headings-outputs-and-19ad0de29a22)
 How to automate reporting in Word to focus on challenging problem solving
+- [How to handle JSON input with Saxon XSLT](https://stackoverflow.com/questions/73789005/how-to-handle-json-input-with-saxon-xslt)
+- COOL! [XML to JSON Conversion in R](https://stackoverflow.com/questions/50383745/xml-to-json-conversion-in-r). My personal choice would be to use XSLT 3.0 to convert the XML to maps and arrays, and then serialize the result as JSON
+- [SAXON Extensions](https://saxon.sourceforge.net/saxon6.5.1/extensions.html)
+This page describes the extension functions and extension elements supplied with the SAXON product.
+- [hrbrmstr/blackmagic](https://github.com/hrbrmstr/blackmagic) Automagically Convert XML to JSON an JSON to XML
+- [Процессор Saxon](http://www.xmlhack.ru/books/xslt/app_01_05.html)
+- [XSLT 3.0 by example](http://xslt-3-by-example.blogspot.com/)
+- [XSL Transformations (XSLT) Version 3.0](https://www.w3.org/TR/xslt-30/). W3C Recommendation 8 June 2017
+- [Справочник XSLT 1.0](https://xsltdev.ru/xslt/)
+- [How to convert an XML with attributes into a data frame in R?](https://stackoverflow.com/questions/66254089/how-to-convert-an-xml-with-attributes-into-a-data-frame-in-r)
+- [0007 How to Convert XML Attributes into Elements](https://www.etl-tools.com/automation/0007-how-to-convert-xml-attributes.html)
+
+## PMO simulation
+- [AutomatedProcessImprovement/prosimos-docker](https://github.com/AutomatedProcessImprovement/prosimos-docker). Prosimos Web Application that allows running business process simulation with the support of differentiated resources
 
 # 13.10.2022
 ## R
@@ -6437,7 +6460,7 @@ context: An environment containing active chunk options and other chunk informat
 
 # 03.03.2020
 ## R & regexp
-- COOL! regex... CHANGES IN R 4.0.0 [There is a new syntax for specifying raw character constants similar to the one used in C++: r"(...)" with ... any character sequence not containing the sequence `)"`. This makes it easier to write strings that contain backslashes or both single and double quotes. For more details see ?Quotes.
+- COOL! regex... regular expression CHANGES IN R 4.0.0 [There is a new syntax for specifying raw character constants similar to the one used in C++: r"(...)" with ... any character sequence not containing the sequence `)"`. This makes it easier to write strings that contain backslashes or both single and double quotes. For more details see ?Quotes.
 - [Why Using the Greedy .* in Regular Expressions Is Almost Never What You Actually Want](https://mariusschulz.com/blog/why-using-the-greedy-in-regular-expressions-is-almost-never-what-you-actually-want)
 - [Performance of Greedy vs. Lazy Regex Quantifiers](http://blog.stevenlevithan.com/archives/greedy-lazy-performance)
 - [Жадные и ленивые квантификаторы](https://learn.javascript.ru/regexp-greedy-and-lazy)
