@@ -1368,6 +1368,19 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 31.10.2022
+## R & parallel
+- [Do I have to `registerDoParallel()` and `stopCluster()` every time I want to use `foreach()` in R?](https://stackoverflow.com/questions/52980793/do-i-have-to-registerdoparallel-and-stopcluster-every-time-i-want-to-use-for)
+- ["un-register" a doParallel cluster](https://stackoverflow.com/questions/25097729/un-register-a-doparallel-cluster)
+
+## ML in R (STC)
+- [R: using ranger with caret, tuneGrid argument](https://stackoverflow.com/questions/48334929/r-using-ranger-with-caret-tunegrid-argument)
+- [Random Forest `mtry Question](https://stats.stackexchange.com/questions/102867/random-forest-mtry-question)
+- [MyStem](https://yandex.ru/dev/mystem/) умеет строить гипотетические разборы для множества слов — включая те слова, которых нет в словаре.
+
+## DMBOK
+- [How to Ace the Most Underrated Certification for Data Scientists](https://towardsdatascience.com/cdmp-exam-d65e1255016b)
+
 # 25.10.2022
 ## Math. Truncated distribution
 - [TruncatedDistribution](https://reference.wolfram.com/language/ref/TruncatedDistribution.html)
@@ -1376,6 +1389,12 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - COOL! [Copulas and correlated data generation: getting beyond the normal distribution](https://www.rdatagen.net/post/correlated-data-copula/)
 - [Probability Distributions in R (Stat 5101, Geyer)](https://www.stat.umn.edu/geyer/old/5101/rlook.html)
 - [Introduction to dnorm, pnorm, qnorm, and rnorm for new biostatisticians](https://seankross.com/notes/dpqr/)
+
+## Math. Mixture distributions
+- [Fitting mixture distributions with the R package mixtools](https://www.r-bloggers.com/2011/08/fitting-mixture-distributions-with-the-r-package-mixtools/)
+- [An Algorithm for the Decomposition of a Distribution into Gaussian Components](https://www.jstor.org/stable/2528680) by J. Gregor
+Biometrics, Vol. 25, No. 1 (Mar., 1969)
+- [How to decompose a mixed distribution using MCMC](https://stackoverflow.com/questions/66407576/how-to-decompose-a-mixed-distribution-using-mcmc)
 
 # 21.10.2022
 ## R & XML
@@ -1397,6 +1416,11 @@ This page describes the extension functions and extension elements supplied with
 
 ## PMO simulation
 - [AutomatedProcessImprovement/prosimos-docker](https://github.com/AutomatedProcessImprovement/prosimos-docker). Prosimos Web Application that allows running business process simulation with the support of differentiated resources
+- подход для аналитического оценивания компонентов времени ожидания:
+	- https://github.com/AutomatedProcessImprovement/waiting-time-analysis
+	- https://github.com/AutomatedProcessImprovement/waiting-time-frontend
+	- https://github.com/AutomatedProcessImprovement/prosimos-docker/blob/main/user_manual.md
+- [12.5. Закон распределения суммы двух случайных величин. Композиция законов распределения](https://scask.ru/a_book_tp.php?id=60)
 
 # 13.10.2022
 ## R
@@ -1418,6 +1442,8 @@ An R-package for analyzing natural language with transformers from HuggingFace u
 ## DS
 - [Beneath and Beyond the Cox Model](https://rviews.rstudio.com/2022/09/06/deep-survival), 2022-09-06 by Joseph Rickert
 - [Changing the Default Library in Rstudio to a Different Default Library (Temporary)](https://www.accelebrate.com/library/how-to-articles/r-rstudio-library)
+- [Число делителей числа N](https://codeforces.com/blog/entry/651?locale=ru)
+- [1782. Сумма делителей](https://site.ada.edu.az/~medv/acm/Docs%20e-olimp/Volume%2018/1782.htm)
 
 ## R
 - [Customizing your package-library location](https://andresrcs.rbind.io/2020/10/26/customizing_library_path/)
@@ -1492,6 +1518,7 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 - [embed-resources works from command line, not from rstudio #2364 {Closed}](https://github.com/quarto-dev/quarto-cli/issues/2364)
 - COOL! [Iterating to create tabs with gt in quarto](https://stackoverflow.com/questions/73585417/iterating-to-create-tabs-with-gt-in-quarto)
 - [How can I specify global and local chunk options for a quarto pdf book?](https://stackoverflow.com/questions/73264233/how-can-i-specify-global-and-local-chunk-options-for-a-quarto-pdf-book)
+- [10+ Guidelines for Better Tables in R](https://themockup.blog/posts/2020-09-04-10-table-rules-in-r/)
 
 ## Quarto & fonts
 - COOL! [Setting up and debugging custom fonts](https://yjunechoe.github.io/posts/2021-06-24-setting-up-and-debugging-custom-fonts/)

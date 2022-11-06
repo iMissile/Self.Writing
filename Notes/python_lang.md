@@ -45,6 +45,39 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 	- [A visual debugger for Jupyter](https://blog.jupyter.org/a-visual-debugger-for-jupyter-914e61716559)
 - [Orange](https://orangedatamining.com/). Open source machine learning and data visualization.
 
+# 04.11.2022
+- [“Quacks like a duck” — why you probably should use pydantic more in Python apps](https://polarpersonal.medium.com/quacks-like-a-duck-why-you-probably-should-use-pydantic-more-in-your-python-apps-197accf1fdfc)
+
+# 27.10.2022
+- [ENH: Create dataframes using every combination of given values, like R's `expand.grid()` {#7426}](https://github.com/pandas-dev/pandas/issues/7426)
+- COOL! [`expand.grid` equivalent to get pandas data frame for prediction in Python](https://stackoverflow.com/questions/71116437/expand-grid-equivalent-to-get-pandas-data-frame-for-prediction-in-python)
+- [How to merge dataframes to every row in a second dataframe?](https://stackoverflow.com/questions/71710731/how-to-merge-dataframes-to-every-row-in-a-second-dataframe)
+- [R `expand.grid()` function in Python](https://stackoverflow.com/questions/12130883/r-expand-grid-function-in-python):
+```
+from sklearn.model_selection import ParameterGrid
+param_grid = {'a': [1,2,3], 'b': [5,7,9]}
+expanded_grid = ParameterGrid(param_grid)
+```
+or
+```
+import janitor as jn
+
+jn.expand_grid(others = {
+    'x': range(0, 4),
+    'y': ['a', 'b', 'c'],
+    'z': [False, True]
+})
+```
+or
+```
+>>> from datar.base import c, expandgrid
+>>> expandgrid(a = c(1,2,3), b = c(4,5))
+```
+и еще `itertools`
+- [pyjanitor](https://pypi.org/project/pyjanitor/#history). Tools for cleaning pandas DataFrames
+- Site: [pyjanitor](https://pyjanitor-devs.github.io/pyjanitor/) is a Python implementation of the R package janitor, and provides a clean API for cleaning data.
+- [datar](https://pwwang.github.io/datar/). A Grammar of Data Manipulation in python
+
 # 21.10.2022
 - [Interesting Ways to Select Pandas DataFrame Columns](https://towardsdatascience.com/interesting-ways-to-select-pandas-dataframe-columns-b29b82bbfb33)
 - [Pandas Select Columns by Name or Index](https://sparkbyexamples.com/pandas/pandas-select-columns-by-name-or-index/)
