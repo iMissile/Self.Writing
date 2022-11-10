@@ -82,7 +82,7 @@ A simpler, faster alternative to git-filter-branch for deleting big files and re
 - COOL [Take GitHub to the command line](https://cli.github.com/)
 - [How to update your Git credentials on Windows](https://cmatskas.com/how-to-update-your-git-credentials-on-windows/)
 `Control Panel -> Credential Manager -> Generic Credentials`,
-`Панель управления -> Все элементы панели управления -> Диспетчер учетных данных`
+`Панель управления -> Все элементы панели управления -> Диспетчер учетных данных->Учетные данные Windows`
 - [Доступ к диспетчеру учетных данных](https://support.microsoft.com/ru-ru/help/4026814/windows-accessing-credential-manager)
 - [7.14 Git Tools - Credential Storage](https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage)
 
@@ -283,3 +283,25 @@ git credential-manager-core [<command> [<args>]]
 Upgrade your local installation of Git, especially if you are using Git for Windows, or you use Git on a multi-user machine.
 - Параметр [`safe.directory`](https://git-scm.com/docs/git-config/2.35.2#Documentation/git-config.txt-safedirectory)
 `git config --global --add safe.directory D:/iwork.GL/habr-articles`
+
+# Отключаем проверку сертификата
+- [Server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none](https://stackoverflow.com/questions/21181231/server-certificate-verification-failed-cafile-etc-ssl-certs-ca-certificates-c)
+Eventually, add the `http.sslverify` to your `.git/config`.
+```
+[http]
+        sslVerify = false
+```
+- [Git push requires username and password](https://stackoverflow.com/questions/6565357/git-push-requires-username-and-password)
+When you use https for Git pull & push, just configure remote.origin.url for your project, to avoid input username (or/and password) every time you push.
+
+How to configure remote.origin.url:
+```
+URL format:
+    https://{username:password@}github.com/{owner}/{repo}
+```
+What worked for me was to edit .git/config and use
+```
+[remote "origin"]
+        url = https://<login>:<password>@gitlab.com(...).git
+```
+It goes without saying that this is an insecure way of storing your password but there are environments/cases where this may not be a problem.

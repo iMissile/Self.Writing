@@ -1368,6 +1368,11 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 09.11.2022
+## R & DB
+- [PostgreSQL](https://solutions.rstudio.com/db/databases/postgresql/)
+- [RPostgreSQL: Connect R and PostgreSQL in 4 Easy Steps](https://hevodata.com/learn/rpostgresql/)
+
 # 31.10.2022
 ## R & parallel
 - [Do I have to `registerDoParallel()` and `stopCluster()` every time I want to use `foreach()` in R?](https://stackoverflow.com/questions/52980793/do-i-have-to-registerdoparallel-and-stopcluster-every-time-i-want-to-use-for)
@@ -3152,6 +3157,12 @@ A quick introduction to 10 basic graph algorithms with examples and visualisatio
 - [What is the simplest way to plot a decomposition tree in Mathematica?](https://stackoverflow.com/questions/5647268/what-is-the-simplest-way-to-plot-a-decomposition-tree-in-mathematica)
 - [The inverse of moving from a map to a network topology](https://community.wolfram.com/groups/-/m/t/1358396?sortMsg=Flat)
 - [Nested list to graph](https://mathematica.stackexchange.com/questions/43930/nested-list-to-graph)
+- COOL! [Краеугольные камни уничтожения медленного кода в Wolfram Language: ускоряем код в десятки, сотни и тысячи раз](https://habr.com/ru/company/wolfram/blog/473220/)
+- [Postfix with two arguments](https://mathematica.stackexchange.com/questions/56882/postfix-with-two-arguments)
+- [Substituting a Value into an Expression](https://mathematica.stackexchange.com/questions/109127/substituting-a-value-into-an-expression)
+`g /. y -> 1`
+- [Preventing evaluation of Mathematica expressions](https://stackoverflow.com/questions/4856177/preventing-evaluation-of-mathematica-expressions)
+- [Mathematica: Unevaluated vs Defer vs Hold vs HoldForm vs HoldAllComplete vs etc etc](https://stackoverflow.com/questions/1616592/mathematica-unevaluated-vs-defer-vs-hold-vs-holdform-vs-holdallcomplete-vs-etc)
 
 ## R
 - [rmonad](https://github.com/arendsee/rmonad)
