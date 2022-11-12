@@ -347,6 +347,7 @@ flights_tb %>%
 - [Using `names(obj) <- names(dt)` could be problematic (#5079)](https://github.com/Rdatatable/data.table/issues/5079#issuecomment-901981788).
 Ноги растут из [`data.table` reference semantic](https://cloud.r-project.org/web/packages/data.table/vignettes/datatable-reference-semantics.html)
 When we store the column names on to a variable, e.g., DT_n = names(DT), and then add/update/delete column(s) by reference. It would also modify DT_n, unless we do copy(names(DT)).
+- COOL! [Fast way to replace all blanks with `NA` in R `data.table`](https://stackoverflow.com/questions/31516192/fast-way-to-replace-all-blanks-with-na-in-r-data-table)
 
 
 ## data.table joins

@@ -421,5 +421,8 @@ An rstudio::conf(2022) Workshop by Cédric Scherer
 - [Embedding custom HTML in gt tables](https://themockup.blog/posts/2020-10-31-embedding-custom-features-in-gt-tables/index.html)
 - [Adding images to group headers using text_transform in a gt table](https://stackoverflow.com/questions/73068835/adding-images-to-group-headers-using-text-transform-in-a-gt-table)
 
+## reactable
+- [A couple useful JavaScript aggregation and formatting functions for {reactable}](https://www.zajichekstats.com/post/reactable-javascript/)
+- [Interactive Drill-down Tables using {reactable}](https://rpubs.com/StevenDuttRoss/flextable2)
 
 
