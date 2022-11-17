@@ -424,5 +424,6 @@ An rstudio::conf(2022) Workshop by Cédric Scherer
 ## reactable
 - [A couple useful JavaScript aggregation and formatting functions for {reactable}](https://www.zajichekstats.com/post/reactable-javascript/)
 - [Interactive Drill-down Tables using {reactable}](https://rpubs.com/StevenDuttRoss/flextable2)
+- [Conditional Styling](https://glin.github.io/reactable/articles/conditional-styling.html)
 
 

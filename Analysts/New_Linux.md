@@ -124,3 +124,12 @@ sudo apt install -y jq
 # When installation is finished, check jq version:
 jq --version
 ```
+
+# grep/sed
+- COOL! [How can I replace each newline (\n) with a space using sed?](https://stackoverflow.com/questions/1251999/how-can-i-replace-each-newline-n-with-a-space-using-sed)
+GNU sed has an option, `-z`, for null-separated records (lines). You can just call:
+```
+sed -z 's/\n/ /g'
+!! NOTE: на windows файлах `[\r\n]` !!
+```
+- [Replace string containing newline in huge file](https://unix.stackexchange.com/questions/137391/replace-string-containing-newline-in-huge-file)

@@ -1368,6 +1368,34 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 15.11.2022
+## R anonymous functions
+- [The new pipe and anonymous function syntax in R](https://towardsdatascience.com/the-new-pipe-and-anonymous-function-syntax-in-r-54d98861014c). What is it, why now, and does it really matter?
+- COOL! [Anonymous Functions in R - Part 1](https://coolbutuseless.github.io/2019/03/13/anonymous-functions-in-r-part-1/)
+*   Base R
+    *   Built-in support for anonymous functions i.e. `function(x) x + 1`
+*   CRAN
+    *   [rlang package](https://cran.r-project.org/package=rlang)
+    *   [wrapr package (CRAN)](https://cran.r-project.org/package=wrapr)
+    *   [gsubfn package](https://cran.r-project.org/package=gsubfn)
+    *   [nofrills package](https://github.com/egnha/nofrills)
+*   Non-CRAN package
+    *   [jimhester’s lambda package](https://github.com/jimhester/lambda)
+    *   [lambdass - lambda syntax sugar](https://github.com/TobCap/lambdass)
+*   Not packaged
+    *   Edward Visel blog post: [Part 1](https://alistaire.rbind.io/blog/anonymous-functions/) and [Part 2](https://alistaire.rbind.io/blog/anonymous-functions-2)
+*   Defunct
+    *   [lionel henry blogpost on updated R syntax](https://lionel-.github.io/2016/02/15/ideas-for-an-updated-r-syntax/)
+    *   [lambdaR package](https://rpubs.com/hoxo_m/lambdaR)
+    *   [Old magrittr branch](https://github.com/tidyverse/magrittr/tree/lambda)
+
+
+
+## Performance & UI
+- [ГОСТ Р ИСО 11064-5—2015. А.3.5 Время отклика системы](https://meganorm.ru/Data2/1/4293759/4293759234.pdf)
+- [Response Times: The 3 Important Limits](https://www.nngroup.com/articles/response-times-3-important-limits/)
+
+
 # 09.11.2022
 ## R & DB
 - [PostgreSQL](https://solutions.rstudio.com/db/databases/postgresql/)
@@ -1427,8 +1455,17 @@ This page describes the extension functions and extension elements supplied with
 	- https://github.com/AutomatedProcessImprovement/prosimos-docker/blob/main/user_manual.md
 - [12.5. Закон распределения суммы двух случайных величин. Композиция законов распределения](https://scask.ru/a_book_tp.php?id=60)
 
+## MS Office
+- [Расширения Reporting Services для трансформации отчетов в формат Excel](https://ru.products.aspose.com/cells/reporting-services)
+С легкостью выгружайте отчеты RDL и RDLC в форматы Excel, включая более чем 8 файловых форматов
+- [Convert ( xlsx or xml ) File to RDL](https://learn.microsoft.com/en-us/answers/questions/768437/convert-xlsx-or-xml-file-to-rdl.html)
+
+
 # 13.10.2022
 ## R
+- [Making a string concatenation operator in R](https://stackoverflow.com/questions/4730551/making-a-string-concatenation-operator-in-r)
+E.g.  `%+%` <- function(a, b) paste(a, b, sep="")
+- COOL [Summarize different Columns with different Functions](https://stackoverflow.com/questions/36822672/summarize-different-columns-with-different-functions)
 - Проблемы с подключение к нашей Jira. Выплыла ошибка 'InitializeSecurityContext failed: SEC_E_ILLEGAL_MESSAGE (0x80090326)'. Решение связано с SSL библиотеками в Windows:
 	- [httr::GET returns error for a specific website](https://stackoverflow.com/questions/71736855/httrget-returns-error-for-a-specific-website)
 	- [Error running weathercan package - fatal SSL/TLS alert (e.g. handshake failed))](https://stackoverflow.com/questions/64147821/error-running-weathercan-package-fatal-ssl-tls-alert-e-g-handshake-failed)
@@ -1524,6 +1561,7 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 - COOL! [Iterating to create tabs with gt in quarto](https://stackoverflow.com/questions/73585417/iterating-to-create-tabs-with-gt-in-quarto)
 - [How can I specify global and local chunk options for a quarto pdf book?](https://stackoverflow.com/questions/73264233/how-can-i-specify-global-and-local-chunk-options-for-a-quarto-pdf-book)
 - [10+ Guidelines for Better Tables in R](https://themockup.blog/posts/2020-09-04-10-table-rules-in-r/)
+- [Testing methods for df_print-like custom table printing in quarto](https://gist.github.com/debruine/01b4ce274733a4a99622365e8c6df701)
 
 ## Quarto & fonts
 - COOL! [Setting up and debugging custom fonts](https://yjunechoe.github.io/posts/2021-06-24-setting-up-and-debugging-custom-fonts/)
