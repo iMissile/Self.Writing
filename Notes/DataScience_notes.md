@@ -1389,12 +1389,9 @@ This is where we will store all of the materials and links for rstudio::conf 202
     *   [lambdaR package](https://rpubs.com/hoxo_m/lambdaR)
     *   [Old magrittr branch](https://github.com/tidyverse/magrittr/tree/lambda)
 
-
-
 ## Performance & UI
 - [ГОСТ Р ИСО 11064-5—2015. А.3.5 Время отклика системы](https://meganorm.ru/Data2/1/4293759/4293759234.pdf)
 - [Response Times: The 3 Important Limits](https://www.nngroup.com/articles/response-times-3-important-limits/)
-
 
 # 09.11.2022
 ## R & DB
@@ -3721,10 +3718,12 @@ Run renv::restore()
 - [Using Kubernetes and the Future Package to Easily Parallelize R in the Cloud](https://www.jottr.org/2021/04/08/future-and-kubernetes/)
 
 ## R: итерация по строкам data.frame. 
+- COOL! [Row-oriented workflows in R with the tidyverse](https://github.com/jennybc/row-oriented-workflows#readme) by Jenny Brian
+	- [Turn data frame into a list, one component per row](https://github.com/jennybc/row-oriented-workflows/blob/master/iterate-over-rows.md)
 - Крутейший сравнительный анализ доступных методов, включая purrr [Applying a function over rows of a data frame](https://rpubs.com/wch/200398) by Winston Chang. Охвачены методы `nrow`, `apply`, `split_lapply`, `lapply_row`, `lapply_lapply`, `by_row`, `pmap`, `pmap_aslist`, `rowwise`.
 - [Исходник](https://gist.github.com/wch/0e564def155d976c04dd28a876dc04b4)
 - [by_row vs rowwise iteration](https://stackoverflow.com/questions/43218761/by-row-vs-rowwise-iteration). Lastly, there is your separate question about `by_row()/rowwise()` First, note that `by_row` has been removed from the development version of `purrr`, and moved to a separate package, `purrrlyr`, where it's deprecated anyway, and it's recommended to "use a combination of: `tidyr::nest()`; `dplyr::mutate()`; `purrr::map()`"
-- COOL! [Row-oriented workflows in R with the tidyverse](https://github.com/jennybc/row-oriented-workflows#readme) by Jenny Brian
+- COOL! [`data.frame` rows to a list](https://stackoverflow.com/questions/3492379/data-frame-rows-to-a-list)
 - COOL! Dplyr rowwise. 
 	- [Using filter() with across() to keep all rows of a data frame that include a missing value for any variable](https://community.rstudio.com/t/using-filter-with-across-to-keep-all-rows-of-a-data-frame-that-include-a-missing-value-for-any-variable/68442)
 	- [dplyr 1.0.0: working within rows](https://www.tidyverse.org/blog/2020/04/dplyr-1-0-0-rowwise/)

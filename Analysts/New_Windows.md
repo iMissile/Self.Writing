@@ -218,7 +218,7 @@ SP1 можно получить через web: [Service Pack and Update Center]
 http://answers.microsoft.com/en-us/windows/forum/windows_10-security/event-id-10016-runtime-broker/18c291c6-f2a1-4f3c-b4ad-2b7ff59fd9f9?auth=1
 Закрыть
 
-# Wi-Fi
+# Интернет
 ## Проблемы с Wi-Fi
 - [Пропадает интернет (Wi-Fi) в Windows 10 после выхода из спящего режима](https://help-wifi.com/reshenie-problem-i-oshibok/propadaet-internet-wi-fi-v-windows-10-posle-vyxoda-iz-spyashhego-rezhima/).
 Это происходит потому, что для экономии, система отключает Wi-Fi адаптер. А после включения, он уже не может нормально работать, поэтому и пропадает интернет. Эта проблема очень часто возникает только при работе от батареи. Все что нужно сделать, это запретить "десятке" отключать беспроводной сетевой адаптер.
@@ -249,6 +249,10 @@ C:\Users\Ilya>netsh wlan set autoconfig enabled=no interface="Беспровод
 - [Виртуальный WiFi в Windows 7](https://sekrasoft.livejournal.com/42591.html)
 - [How to Fix Ping Spikes in Windows 11/10](https://thegeekpage.com/ping-spikes-in-windows-11-10/#Fix_9_-_Disable_Location_Tracking_Feature)
 
+## Проблемы с интернетом
+- [Интернет есть, но пишет "Без доступа к интернету" (Windows 10, 8, 7): чем грозит и как исправить](https://vladimirbelev.ru/internet-est-no-pishet-bez-dostupa-k-internetu-windows-10)
+- [Исправляем ошибку «msftconnecttest redirect» в Windows 10](https://tehnichka.pro/error-msftconnecttest-redirect-windows-10/)
+`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet` ставим в 0
 
 ## Outlook
 - [Папки в Outlook отображаются на английском языке](https://www.dmosk.ru/polezno.php?review=outlook-en). 
