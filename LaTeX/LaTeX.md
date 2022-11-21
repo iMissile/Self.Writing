@@ -52,7 +52,7 @@ You can also declare a new font family to use it in arbitrary situations:
 [Extension = .ttf, UprightFont = *-Regular, ...]
 {\crimson This text uses the CrimsonText font}
 ```
-- Редакторы картинок для LaTeX:
+## Редакторы картинок для LaTeX:
 	- [Detexify](http://detexify.kirelabs.org/classify.html)
 	- [LaTeXDraw](http://latexdraw.sourceforge.net/) is a graphical drawing editor for LaTeX. LaTeXDraw can be used to 1) generate PSTricks code; 2) directly create PDF or PS pictures. LaTeXDraw is developed in Java and thus runs on top of Linux, Windows, and Mac OS X. You need Java 8 to launch LaTeXDraw.
 	- [Math](https://www.mathcha.io/) Online Mathematics Editor, a fast way to write and share mathematics
@@ -61,6 +61,23 @@ Get our free online math tools for graphing, geometry, 3D, and more!
 	- [TikzEdt](http://www.tikzedt.org/) is a combined WYSIWYG/text editor designed for editing Tikz code.
 	- [Yichuan Shen's tikzcd-editor](http://tikzcd.yichuanshen.de/)
 - [An Overleaf extension for recognizing symbols](https://latex.net/extexify/)
+- [List of TikZ Editor {duplicate}](https://tex.stackexchange.com/questions/80418/list-of-tikz-editor)
+- COOL! [LaTeX Graphics using TikZ: A Tutorial for Beginners (Part 2)—Generating TikZ Code from GeoGebra](https://ru.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ%3A_A_Tutorial_for_Beginners_(Part_2)%E2%80%94Generating_TikZ_Code_from_GeoGebra)
+- [GeoGebra. Export to LaTeX (PGF, PSTricks) and Asymptote Tools](https://wiki.geogebra.org/en/Export_to_LaTeX_(PGF,_PSTricks)_and_Asymptote)
+- [Need help to export tikz code from geogebra](https://tex.stackexchange.com/questions/445331/need-help-to-export-tikz-code-from-geogebra)
+
+## TikZ
+1.1
+https://texample.net/tikz/examples/angles-quotes/
+
+1.28, 1.29, 1.30 
+https://texample.net/tikz/examples/animated-distributions/
+https://texample.net/tikz/examples/complex-plane/
+https://texample.net/tikz/examples/is-lm-diagram/
+
+- COOL! [TikZ. Gaussian distributions & statistical tests](https://tikz.net/gaussians/)
+- [Plotting bell shaped curve in TikZ-PGF](https://tex.stackexchange.com/questions/43610/plotting-bell-shaped-curve-in-tikz-pgf)
+
 
 ## Ошибки при запуске TeXLive
 - [! LaTeX Error: File `titling.sty' not found. #115](https://github.com/rstudio/bookdown/issues/115)
