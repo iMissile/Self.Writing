@@ -1368,6 +1368,10 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 22.11.2022
+## R
+- COOL! Разбор различных вариантов для разных версий dplyr. [dplyr filter with condition on multiple columns](https://stackoverflow.com/questions/43938863/dplyr-filter-with-condition-on-multiple-columns)
+
 # 15.11.2022
 ## R anonymous functions
 - [The new pipe and anonymous function syntax in R](https://towardsdatascience.com/the-new-pipe-and-anonymous-function-syntax-in-r-54d98861014c). What is it, why now, and does it really matter?

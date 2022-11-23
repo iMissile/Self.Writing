@@ -166,6 +166,7 @@ Also, in case you would not wish to change the data.table, but merely return the
 ```
 dt[, .SD, .SDcols = !c('b', 'c')]
 ```
+- [Select subset of columns in data.table R {duplicate}](https://stackoverflow.com/questions/28094645/select-subset-of-columns-in-data-table-r). You can do `dt[, !c("V1","V2","V3","V5")]` to get anti-select.
 - COOL! [A data.table and dplyr tour](https://atrebas.github.io/post/2019-03-03-datatable-dplyr/) Written by Atrebas on March 3, 2019
 - [R : DATA.TABLE TUTORIAL (WITH 50 EXAMPLES)](https://www.listendata.com/2016/10/r-data-table.html)
 - COOL! [Using .I to return row numbers with data.table package](https://stackoverflow.com/questions/22408306/using-i-to-return-row-numbers-with-data-table-package)
@@ -223,8 +224,8 @@ dt1 <- mydt[, ..mycols]
 Why two dots? That seemed kind of random to me until I read the explanation. Think of it like the two dots in a Unix command-line terminal that move you up one directory. Here, you’re moving up one namespace, from the environment inside data.table brackets up to the global environment. (That really does help me remember it!)
 - [data.table double dot.](https://cran.r-project.org/web/packages/data.table/data.table.pdf)
 When j is a character vector of column names, a numeric vector of column positions to select or of the form startcol:endcol, and the value returned is always
-a data.table. with=FALSE is not necessary anymore to select columns dynamically. Note that x[,cols] is equivalent to x[,..cols] and to x[,cols,with=FALSE]
-and to x[,.SD,.SDcols=cols].
+a data.table. with=FALSE is not necessary anymore to select columns dynamically. Note that `x[,cols]` is equivalent to `x[,..cols]` and to `x[,cols,with=FALSE]`
+and to `x[,.SD,.SDcols=cols]`.
 - [Why does “..” work to pass column names in a character vector variable?](https://stackoverflow.com/questions/45380628/why-does-work-to-pass-column-names-in-a-character-vector-variable)
 - [Select subset of columns in data.table R {duplicate}](https://stackoverflow.com/questions/28094645/select-subset-of-columns-in-data-table-r/28094726#28094726)
 - [How to expand an ellipsis (…) argument without evaluating it in R](https://stackoverflow.com/questions/13353847/how-to-expand-an-ellipsis-argument-without-evaluating-it-in-r)

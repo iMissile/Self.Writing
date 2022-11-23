@@ -146,6 +146,11 @@ unlist(stri_split_lines(sha$stdout, omit_empty = TRUE)) %>%
 - SmartGit. [Modifying the History](https://docs.syntevo.com/SmartGit/HowTos/Modifying-the-History.html)
 - SmartGit. [Interactive Rebase](https://docs.syntevo.com/SmartGit/Latest/Rebase-Interactive.html)
 - [Rewriting history](https://www.atlassian.com/git/tutorials/rewriting-history). `Git commit --amend` and other methods of rewriting history
+- COOL! [How do I make Git ignore file mode (chmod) changes?]()https://stackoverflow.com/questions/1580596/how-do-i-make-git-ignore-file-mode-chmod-changes	
+
+## ”пражнени€ по возврату назад
+- [—равнение 5 команд Git: revert, checkout, reset, merge и rebase](https://proglib.io/p/sravnenie-5-komand-git-revert-checkout-reset-merge-i-rebase-2020-05-25)
+- [Git Revert](https://www.atlassian.com/git/tutorials/undoing-changes/git-revert)
 
 # GitHub authentication
 - [Git push results in УAuthentication FailedФ](https://stackoverflow.com/questions/17659206/git-push-results-in-authentication-failed). —нимаем галочки при инсталл€ции, чистим Windows Credential Manager

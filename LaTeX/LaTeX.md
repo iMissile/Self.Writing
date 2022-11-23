@@ -77,6 +77,7 @@ https://texample.net/tikz/examples/is-lm-diagram/
 
 - COOL! [TikZ. Gaussian distributions & statistical tests](https://tikz.net/gaussians/)
 - [Plotting bell shaped curve in TikZ-PGF](https://tex.stackexchange.com/questions/43610/plotting-bell-shaped-curve-in-tikz-pgf)
+- COOL! Отличное решение по позиционированию якорей для прямоугольника (rectangle anchor). [How to establish node-anchor-like points on a (tikz) rectangle path (is there a better method than the one described)?](https://tex.stackexchange.com/questions/47704/how-to-establish-node-anchor-like-points-on-a-tikz-rectangle-path-is-there-a)
 
 
 ## Ошибки при запуске TeXLive
