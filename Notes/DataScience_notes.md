@@ -1796,7 +1796,9 @@ https://github.com/deepanshu88/ShinyEditor)
 - [delete igraph vertices but retain all edges in R](https://stackoverflow.com/questions/55992896/delete-igraph-vertices-but-retain-all-edges-in-r)
 
 ## DS
-- [Расстояние между двумя точками на поверхности Земли](https://congyuzhou.medium.com/%D1%80%D0%B0%D1%81%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-%D0%B4%D0%B2%D1%83%D0%BC%D1%8F-%D1%82%D0%BE%D1%87%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B7%D0%B5%D0%BC%D0%BB%D0%B8-a398352bfbde)/ Формула гаверсинуса.
+- [Расстояние между двумя точками на поверхности Земли](https://congyuzhou.medium.com/%D1%80%D0%B0%D1%81%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-%D0%B4%D0%B2%D1%83%D0%BC%D1%8F-%D1%82%D0%BE%D1%87%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B7%D0%B5%D0%BC%D0%BB%D0%B8-a398352bfbde) / Формула гаверсинуса.
+- [Clickhouse. Функции для работы с географическими координатами](https://clickhouse.com/docs/ru/sql-reference/functions/geo/coordinates/)
+- [Функции для работы с географическими координатами](https://clickhouse.com/docs/ru/sql-reference/functions/geo/coordinates/)
 - [Анализ малых данных. Линейная регрессия++](https://www.google.com/amp/s/dyakonov.org/2019/10/31/%25D0%25BB%25D0%25B8%25D0%25BD%25D0%25B5%25D0%25B9%25D0%25BD%25D0%25B0%25D1%258F-%25D1%2580%25D0%25B5%25D0%25B3%25D1%2580%25D0%25B5%25D1%2581%25D1%2581%25D0%25B8%25D1%258F/amp/)
 - [Building a Pytorch Autoencoder for MNIST digits](https://bytepawn.com/building-a-pytorch-autoencoder-for-mnist-digits.html#building-a-pytorch-autoencoder-for-mnist-digits)
 - [Проверка гипотезы равенства средних при неравной дисперсии в R](https://habr.com/ru/post/556632/). Шапиро тест
