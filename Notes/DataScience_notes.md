@@ -1796,6 +1796,8 @@ https://github.com/deepanshu88/ShinyEditor)
 - [delete igraph vertices but retain all edges in R](https://stackoverflow.com/questions/55992896/delete-igraph-vertices-but-retain-all-edges-in-r)
 
 ## DS
+- COOL! [Is Correlation Transitive? {duplicate}](https://stats.stackexchange.com/questions/181376/is-correlation-transitive)
+- COOL! [Time and Space Complexity of Hash Table operations](https://iq.opengenus.org/time-complexity-of-hash-table/)
 - [Расстояние между двумя точками на поверхности Земли](https://congyuzhou.medium.com/%D1%80%D0%B0%D1%81%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-%D0%B4%D0%B2%D1%83%D0%BC%D1%8F-%D1%82%D0%BE%D1%87%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B7%D0%B5%D0%BC%D0%BB%D0%B8-a398352bfbde) / Формула гаверсинуса.
 - [Clickhouse. Функции для работы с географическими координатами](https://clickhouse.com/docs/ru/sql-reference/functions/geo/coordinates/)
 - [Функции для работы с географическими координатами](https://clickhouse.com/docs/ru/sql-reference/functions/geo/coordinates/)

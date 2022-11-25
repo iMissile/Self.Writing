@@ -78,7 +78,17 @@ https://texample.net/tikz/examples/is-lm-diagram/
 - COOL! [TikZ. Gaussian distributions & statistical tests](https://tikz.net/gaussians/)
 - [Plotting bell shaped curve in TikZ-PGF](https://tex.stackexchange.com/questions/43610/plotting-bell-shaped-curve-in-tikz-pgf)
 - COOL! Отличное решение по позиционированию якорей для прямоугольника (rectangle anchor). [How to establish node-anchor-like points on a (tikz) rectangle path (is there a better method than the one described)?](https://tex.stackexchange.com/questions/47704/how-to-establish-node-anchor-like-points-on-a-tikz-rectangle-path-is-there-a)
-
+- [How to make a label near the corners of a rectangle in Tikz?](https://tex.stackexchange.com/questions/651752/how-to-make-a-label-near-the-corners-of-a-rectangle-in-tikz)
+- COOL! [LaTeX course. TikZ](http://uva-fnwi.github.io/LaTeX/extra1/Tikz/)
+- [Positioning node on tikz path](https://tex.stackexchange.com/questions/428923/positioning-node-on-tikz-path)
+- COOL! [PGF/TikZ Manual](https://tikz.dev/tikz-shapes)
+- [Tikz: function and node's position](https://tex.stackexchange.com/questions/160327/tikz-function-and-nodes-position)
+- [Define a variable in TikZ](https://tex.stackexchange.com/questions/12859/define-a-variable-in-tikz)
+- [How do I use pgfmathdeclarefunction to create define a new pgf function?](https://tex.stackexchange.com/questions/15435/how-do-i-use-pgfmathdeclarefunction-to-create-define-a-new-pgf-function)
+- [Specifying the width and height of a tikzpicture](https://tex.stackexchange.com/questions/75449/specifying-the-width-and-height-of-a-tikzpicture)
+- [LaTeX - Scale and change aspect ratio of PGFPlots tikzpicture](https://gordonlesti.com/latex-scale-and-change-aspect-ratio-of-pgfplots-tikzpicture/)
+- [How to set plot box aspect ratio](https://tex.stackexchange.com/questions/303213/how-to-set-plot-box-aspect-ratio)
+- Нашел как позиционировал подпись к оси. [Latex pgfplots loglogaxis scaling](https://stackoverflow.com/questions/35077667/latex-pgfplots-loglogaxis-scaling)
 
 ## Ошибки при запуске TeXLive
 - [! LaTeX Error: File `titling.sty' not found. #115](https://github.com/rstudio/bookdown/issues/115)
