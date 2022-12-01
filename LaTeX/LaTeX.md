@@ -89,6 +89,25 @@ https://texample.net/tikz/examples/is-lm-diagram/
 - [LaTeX - Scale and change aspect ratio of PGFPlots tikzpicture](https://gordonlesti.com/latex-scale-and-change-aspect-ratio-of-pgfplots-tikzpicture/)
 - [How to set plot box aspect ratio](https://tex.stackexchange.com/questions/303213/how-to-set-plot-box-aspect-ratio)
 - Нашел как позиционировал подпись к оси. [Latex pgfplots loglogaxis scaling](https://stackoverflow.com/questions/35077667/latex-pgfplots-loglogaxis-scaling)
+- [pgfplots - How to draw zero line for y (from xmin to xmax) when one uses symbolic x coords?](https://tex.stackexchange.com/questions/192074/pgfplots-how-to-draw-zero-line-for-y-from-xmin-to-xmax-when-one-uses-symboli)
+- [PGFPlots how to add a label "0" to the origin](https://tex.stackexchange.com/questions/78763/pgfplots-how-to-add-a-label-0-to-the-origin)
+- !!! /pgfplots/every axis x label (style, no value)
+/pgfplots/every axis y label (style, no value)
+/pgfplots/every axis z label (style, no value)
+Used only for x, y, or z labels, respectively and installed after ‘every axis label’.
+The initial settings are set by xlabel absolute and its variants (if the initial configuration compat=pre
+1.3 is active) or xlabel near ticks which provides the better spacing as it incorporates the tick label
+sizes to compute the position.
+Attention: These styles will be overwritten by axis x line and/or axis y line. Please remember
+to place your modifications after the axis line variations.
+- COOL! relative positioning
+	- [TikZ: Node at same x-coordinate as another node, but specified y-coordinate?](https://tex.stackexchange.com/questions/18389/tikz-node-at-same-x-coordinate-as-another-node-but-specified-y-coordinate)
+	- [How to get one component of a tikz/PGF coordinate?](https://stackoverflow.com/questions/1588568/how-to-get-one-component-of-a-tikz-pgf-coordinate)
+	- [Extract x, y coordinate of an arbitrary point on curve in TikZ](https://www.latex4technics.com/?note=17MG)
+
+### pgf intersection
+- [Intersections in PGFplots](https://tex.stackexchange.com/questions/21408/intersections-in-pgfplots)
+- [pgf Intersections] sample](https://www.latex4technics.com/?note=997UG3)
 
 ## Ошибки при запуске TeXLive
 - [! LaTeX Error: File `titling.sty' not found. #115](https://github.com/rstudio/bookdown/issues/115)

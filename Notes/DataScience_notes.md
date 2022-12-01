@@ -1371,6 +1371,9 @@ This is where we will store all of the materials and links for rstudio::conf 202
 # 22.11.2022
 ## R
 - COOL! Разбор различных вариантов для разных версий dplyr. [dplyr filter with condition on multiple columns](https://stackoverflow.com/questions/43938863/dplyr-filter-with-condition-on-multiple-columns)
+- [Operator "[<-" in RStudio and R](https://stackoverflow.com/questions/15559387/operator-in-rstudio-and-r)
+- COOL! [plumber not releasing memory #496](https://github.com/rstudio/plumber/issues/496). A little more context: the `pryr::mem_used()` function reports the amount of memory consumed by R objects. The `memuse::Sys.procmem()` function reports how much memory is used by the process, according to the operating system.
+As a solution I recommend to switch to another implementation of malloc (such as jemalloc). This is exactly what we do in RestRserve.
 
 # 15.11.2022
 ## R anonymous functions
@@ -1487,6 +1490,7 @@ An R-package for analyzing natural language with transformers from HuggingFace u
 - [Changing the Default Library in Rstudio to a Different Default Library (Temporary)](https://www.accelebrate.com/library/how-to-articles/r-rstudio-library)
 - [Число делителей числа N](https://codeforces.com/blog/entry/651?locale=ru)
 - [1782. Сумма делителей](https://site.ada.edu.az/~medv/acm/Docs%20e-olimp/Volume%2018/1782.htm)
+- COOL! [facebook/duckling](https://github.com/facebook/duckling) Language, engine, and tooling for expressing, testing, and evaluating composable language rules on input strings.
 
 ## R
 - [Customizing your package-library location](https://andresrcs.rbind.io/2020/10/26/customizing_library_path/)
@@ -3206,6 +3210,8 @@ A quick introduction to 10 basic graph algorithms with examples and visualisatio
 `g /. y -> 1`
 - [Preventing evaluation of Mathematica expressions](https://stackoverflow.com/questions/4856177/preventing-evaluation-of-mathematica-expressions)
 - [Mathematica: Unevaluated vs Defer vs Hold vs HoldForm vs HoldAllComplete vs etc etc](https://stackoverflow.com/questions/1616592/mathematica-unevaluated-vs-defer-vs-hold-vs-holdform-vs-holdallcomplete-vs-etc)
+- [How to invert Expand](https://mathematica.stackexchange.com/questions/211762/how-to-invert-expand). `HornerForm`
+- [How to | Rearrange the Terms of a Polynomial](https://reference.wolfram.com/language/howto/RearrangeTheTermsOfAPolynomial.html)
 
 ## R
 - [rmonad](https://github.com/arendsee/rmonad)
@@ -4026,6 +4032,7 @@ FEniCS is a popular open-source (LGPLv3) computing platform for solving partial 
 - [Machine Learning with R: A Complete Guide to Decision Trees](https://appsilon.com/r-decision-treees/)
 - COOL! [Modern Text Features in R](https://www.tidyverse.org/blog/2021/02/modern-text-features/)
 - COOL! [reactablefmtr](https://github.com/kcuilla/reactablefmtr). An R package to simplify formatting and customization of tables made with {reactable}
+- Slides! [{reactablefmtr}. Streamlined Table Styling and Formatting for {reactable}](https://rpubs.com/kcuilla/reactablefmtr-socal-presentation)
 - datamods. [Shiny modules to import data into an application or addin](https://github.com/dreamRs/datamods) Shiny modules to import and manipulate data into an application or addin.
 
 

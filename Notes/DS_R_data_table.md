@@ -349,6 +349,8 @@ flights_tb %>%
 Ноги растут из [`data.table` reference semantic](https://cloud.r-project.org/web/packages/data.table/vignettes/datatable-reference-semantics.html)
 When we store the column names on to a variable, e.g., DT_n = names(DT), and then add/update/delete column(s) by reference. It would also modify DT_n, unless we do copy(names(DT)).
 - COOL! [Fast way to replace all blanks with `NA` in R `data.table`](https://stackoverflow.com/questions/31516192/fast-way-to-replace-all-blanks-with-na-in-r-data-table)
+- [Binding list of data.tables by columns, and by reference](https://stackoverflow.com/questions/48333523/binding-list-of-data-tables-by-columns-and-by-reference)
+`setDT(unlist(L, recursive = FALSE), check.names = TRUE)`
 
 
 ## data.table joins
