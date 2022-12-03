@@ -104,10 +104,16 @@ to place your modifications after the axis line variations.
 	- [TikZ: Node at same x-coordinate as another node, but specified y-coordinate?](https://tex.stackexchange.com/questions/18389/tikz-node-at-same-x-coordinate-as-another-node-but-specified-y-coordinate)
 	- [How to get one component of a tikz/PGF coordinate?](https://stackoverflow.com/questions/1588568/how-to-get-one-component-of-a-tikz-pgf-coordinate)
 	- [Extract x, y coordinate of an arbitrary point on curve in TikZ](https://www.latex4technics.com/?note=17MG)
+- [Latex, PgfPlots - Filling areas under and between curves](https://www.sqlpac.com/en/documents/latex-pgfplots-tikz-filling-areas-under-and-between-curves.html)
+- COOL! [tikz, How to define a constant and then use it in drawing {duplicate}](https://tex.stackexchange.com/questions/235444/tikz-how-to-define-a-constant-and-then-use-it-in-drawing)
+- [Hatch a rectangle in TikZ](https://tex.stackexchange.com/questions/54464/hatch-a-rectangle-in-tikz)
+- [How to add a node in the middle of the line with tikz?](https://tex.stackexchange.com/questions/17136/how-to-add-a-node-in-the-middle-of-the-line-with-tikz)
 
 ### pgf intersection
 - [Intersections in PGFplots](https://tex.stackexchange.com/questions/21408/intersections-in-pgfplots)
-- [pgf Intersections] sample](https://www.latex4technics.com/?note=997UG3)
+- [pgf Intersections sample](https://www.latex4technics.com/?note=997UG3)
+- [pgf intersections sample 2](https://www.latex4technics.com/?note=2T3T)
+- [TikZ, refer to intersection with x-axis](https://tex.stackexchange.com/questions/574555/tikz-refer-to-intersection-with-x-axis)
 
 ## Ошибки при запуске TeXLive
 - [! LaTeX Error: File `titling.sty' not found. #115](https://github.com/rstudio/bookdown/issues/115)

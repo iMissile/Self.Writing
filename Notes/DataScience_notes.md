@@ -1513,6 +1513,8 @@ The proper solution is to set environment variable `R_LIBS_USER` to the value of
 - [iframes don't work in rmarkdown {#2027} Closed](https://github.com/rstudio/rmarkdown/issues/2027)
 - [knitr. 9.3 Embed a web page](https://bookdown.org/yihui/rmarkdown-cookbook/include-url.html)
 - COOL! [How to Embed a Google Sheet in a Website](https://www.groovypost.com/howto/embed-a-google-sheet-in-a-website/)
+- [Вставка гугл-презентации в Rmarkdown](https://t.me/rlang_ru/111883). нашел способ — если выбрать в меню экспорта publish to web, он вообще выдает iframe
+и так можно гуглопрезы в фуллскрине втыкать сразу https://support.google.com/edu/classroom/thread/11104308/how-can-i-share-slides-in-presentation-mode?hl=en
 - [8. Add Line Breaks in R Markdown](https://www.dataquest.io/blog/r-markdown-tips-tricks-and-shortcuts/#:~:text=To%20break%20a%20line%20in,spaces%20and%20then%20hit%20return%20.). To break a line in R Markdown and have it appear in your output, use two trailing spaces and then hit return.
 
 # 31.08.2022
