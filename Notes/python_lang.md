@@ -48,6 +48,11 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 # Conferences
 - [EuroPython Conference](https://www.youtube.com/c/EuroPythonConference/playlists)
 
+# 07.12.2022
+- [Появляется установочная библиотека Python3 `pandas` Не удалось импортировать модуль `lzma`.](https://www.programmerclick.com/article/3650407895/)
+- [Reshaping a DataFrame with Pandas `stack()` and `unstack()`](https://towardsdatascience.com/reshaping-a-dataframe-with-pandas-stack-and-unstack-925dc9ce1289). 7 tricks to effectively use the Pandas `stack()` and `unstack()`.
+- Разбираются нюансы с группированными датафреймами. Какие методы работают с заполненными элементами, а какие учитывают и NaN. [5 Pandas Group By Tricks You Should Know in Python](https://towardsdatascience.com/5-pandas-group-by-tricks-you-should-know-in-python-f53246c92c94). All you need to know about Pandas DataFrame Group By to use it efficiently.
+
 # 04.11.2022
 - [“Quacks like a duck” — why you probably should use pydantic more in Python apps](https://polarpersonal.medium.com/quacks-like-a-duck-why-you-probably-should-use-pydantic-more-in-your-python-apps-197accf1fdfc)
 

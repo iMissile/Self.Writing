@@ -426,4 +426,8 @@ An rstudio::conf(2022) Workshop by Cédric Scherer
 - [Interactive Drill-down Tables using {reactable}](https://rpubs.com/StevenDuttRoss/flextable2)
 - [Conditional Styling](https://glin.github.io/reactable/articles/conditional-styling.html)
 
-
+# ECharts
+- [Форматирование меток осей](https://echarts.apache.org/en/option.html#xAxis.axisLabel.formatter)
+- [R echarts4r - format dates in axis](https://stackoverflow.com/questions/63838914/r-echarts4r-format-dates-in-axis)
+- [Mark area](https://echarts.apache.org/examples/en/editor.html?c=line-sections)
+- [Multple mark area style #52 {Open}](https://github.com/JohnCoene/echarts4r/issues/52)

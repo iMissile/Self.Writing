@@ -64,6 +64,9 @@ Usually this was not intended and the join needs to be changed. The word 'cartes
 Sorry, you've misunderstood the documentation. Maybe the wording needs to be cleaned up.
 The names of the vector passed to on must be column names in x, and the values must be columns in i: `d1[d2, on = c(A = "W")]`
 You can also do `d1[d2, on = "A==W"]`
+- [R Data Table - join but filter with update](https://stackoverflow.com/questions/46588340/r-data-table-join-but-filter-with-update)
+- [Benchmarking the six most used manipulations for data.tables in R](https://opremic.com/benchmarking-the-six-most-used-manipulations-for-data-tables-in-r/)
+- [R data.table Joins](https://medium.com/analytics-vidhya/r-data-table-joins-48f00b46ce29)
 
 - [Find complement of a data frame (anti - join)](https://stackoverflow.com/questions/28702960/find-complement-of-a-data-frame-anti-join). Масса различных вариантов.
 - А как сделать сэмплы по группам? Не все так просто
@@ -433,6 +436,9 @@ dt[eval(as.symbol(name))< limit]
 ```
 	- [Select rows in data table using a variable {duplicate}](https://stackoverflow.com/questions/39005117/select-rows-in-data-table-using-a-variable)
 	- [Filter data table by dynamic column name](https://stackoverflow.com/questions/29564002/filter-data-table-by-dynamic-column-name)
+- [Distinguishing between an external variable and a column in a data table {duplicate}](https://stackoverflow.com/questions/50711849/distinguishing-between-an-external-variable-and-a-column-in-a-data-table)
+- [Subsetting data.table using variables with same name as column](https://stackoverflow.com/questions/21658893/subsetting-data-table-using-variables-with-same-name-as-column)
+`dt[eval(.(a))] # identical to dt["b"]`
 - [NSE Functions with oshka](https://cran.r-project.org/web/packages/oshka/vignettes/nse-fun.html)
 
 ## MacOS

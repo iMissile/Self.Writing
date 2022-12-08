@@ -100,20 +100,65 @@ The initial settings are set by xlabel absolute and its variants (if the initial
 sizes to compute the position.
 Attention: These styles will be overwritten by axis x line and/or axis y line. Please remember
 to place your modifications after the axis line variations.
-- COOL! relative positioning
-	- [TikZ: Node at same x-coordinate as another node, but specified y-coordinate?](https://tex.stackexchange.com/questions/18389/tikz-node-at-same-x-coordinate-as-another-node-but-specified-y-coordinate)
-	- [How to get one component of a tikz/PGF coordinate?](https://stackoverflow.com/questions/1588568/how-to-get-one-component-of-a-tikz-pgf-coordinate)
-	- [Extract x, y coordinate of an arbitrary point on curve in TikZ](https://www.latex4technics.com/?note=17MG)
-- [Latex, PgfPlots - Filling areas under and between curves](https://www.sqlpac.com/en/documents/latex-pgfplots-tikz-filling-areas-under-and-between-curves.html)
 - COOL! [tikz, How to define a constant and then use it in drawing {duplicate}](https://tex.stackexchange.com/questions/235444/tikz-how-to-define-a-constant-and-then-use-it-in-drawing)
-- [Hatch a rectangle in TikZ](https://tex.stackexchange.com/questions/54464/hatch-a-rectangle-in-tikz)
+- [Clipping a path using a node](https://tex.stackexchange.com/questions/46541/clipping-a-path-using-a-node)
+- [Strutting around: What's the difference between \strut, \mathstrut and \vphantom?](https://tex.stackexchange.com/questions/41185/strutting-around-whats-the-difference-between-strut-mathstrut-and-vphantom)
+- [Connecting 2 coordinates in tikz](https://tex.stackexchange.com/questions/615839/connecting-2-coordinates-in-tikz)
+- [How can I force the pgfplots coordinate system and the tikz coordinate system to match and why do they not match by default?](https://tex.stackexchange.com/questions/101166/how-can-i-force-the-pgfplots-coordinate-system-and-the-tikz-coordinate-system-to)
+- [Merging plots in TikZ](https://tex.stackexchange.com/questions/113783/merging-plots-in-tikz)
+
+
+
+- [How to rotate a pgfplot?](https://tex.stackexchange.com/questions/134904/how-to-rotate-a-pgfplot)
+- [Tikz : rotate a fill pattern]()
+- [pgfplots mark opacity](https://tex.stackexchange.com/questions/355052/pgfplots-mark-opacity)
+
+
+### relative positioning & alignment
+- [TikZ: Node at same x-coordinate as another node, but specified y-coordinate?](https://tex.stackexchange.com/questions/18389/tikz-node-at-same-x-coordinate-as-another-node-but-specified-y-coordinate)
+- [How to get one component of a tikz/PGF coordinate?](https://stackoverflow.com/questions/1588568/how-to-get-one-component-of-a-tikz-pgf-coordinate)
+- [Extract x, y coordinate of an arbitrary point on curve in TikZ](https://www.latex4technics.com/?note=17MG)
 - [How to add a node in the middle of the line with tikz?](https://tex.stackexchange.com/questions/17136/how-to-add-a-node-in-the-middle-of-the-line-with-tikz)
+- [Moving a node a bit](https://tex.stackexchange.com/questions/198831/moving-a-node-a-bit)
+- [How to align tikzpicture by their axis?](https://tex.stackexchange.com/questions/522704/how-to-align-tikzpicture-by-their-axis)
 
 ### pgf intersection
 - [Intersections in PGFplots](https://tex.stackexchange.com/questions/21408/intersections-in-pgfplots)
 - [pgf Intersections sample](https://www.latex4technics.com/?note=997UG3)
 - [pgf intersections sample 2](https://www.latex4technics.com/?note=2T3T)
 - [TikZ, refer to intersection with x-axis](https://tex.stackexchange.com/questions/574555/tikz-refer-to-intersection-with-x-axis)
+
+### filling
+- [Filling an Area Between Two Curves](https://latexdraw.com/filling-an-area-between-two-curves/)
+- [Hatch a rectangle in TikZ](https://tex.stackexchange.com/questions/54464/hatch-a-rectangle-in-tikz)
+- [Latex, PgfPlots - Filling areas under and between curves](https://www.sqlpac.com/en/documents/latex-pgfplots-tikz-filling-areas-under-and-between-curves.html)
+- [Fill between and soft clipping doesn't work as expected {duplicate}](https://tex.stackexchange.com/questions/295104/fill-between-and-soft-clipping-doesnt-work-as-expected)
+- [Filling an area with a pattern between two curves (without an equation)](https://tex.stackexchange.com/questions/228630/filling-an-area-with-a-pattern-between-two-curves-without-an-equation)
+- [Pgfplots: fillbetween, enlargelimits and soft clip have interesting interactions](https://tex.stackexchange.com/questions/449829/pgfplots-fillbetween-enlargelimits-and-soft-clip-have-interesting-interactions)
+- [Filling surface between a line and an arc in tikz](https://tex.stackexchange.com/questions/647306/filling-surface-between-a-line-and-an-arc-in-tikz)
+- [Warning Tikzfillbetween and change pattern](https://tex.stackexchange.com/questions/411568/warning-tikzfillbetween-and-change-pattern).
+	- `'fill between': Could not activate graphics layer 'pre main'. Filled path will be on top of the other ones. Please ensure that 'premain' is somewhere in the layer list (or set '/tikz/fill between/on layer=').`
+	EDIT: The warning is fixed by this:
+On Preambler:
+```
+\pgfdeclarelayer{ft}
+\pgfdeclarelayer{bg}
+\pgfsetlayers{bg,main,ft}
+```
+On Tikz
+```
+\tikzfillbetween[of=Consume and Income, on layer=ft]
+```
+
+### foreach
+- [\foreach not behaving in axis environment](https://tex.stackexchange.com/questions/170664/foreach-not-behaving-in-axis-environment)
+- [How to use the Foreach Loop in LaTeX](https://latexdraw.com/how-to-use-the-foreach-loop-in-latex/)
+
+
+### labelling
+- [Move label of an angle in Tikz](https://tex.stackexchange.com/questions/502638/move-label-of-an-angle-in-tikz)
+- [Angle between two vectors tikz LaTeX](https://tex.stackexchange.com/questions/590735/angle-between-two-vectors-tikz-latex)
+- [pgfplots: extra x tick; tick length; affecting axis label position](https://tex.stackexchange.com/questions/592056/pgfplots-extra-x-tick-tick-length-affecting-axis-label-position)
 
 ## Ошибки при запуске TeXLive
 - [! LaTeX Error: File `titling.sty' not found. #115](https://github.com/rstudio/bookdown/issues/115)
