@@ -420,6 +420,15 @@ An rstudio::conf(2022) Workshop by Cédric Scherer
 - [Embed links to cells of R's gt tables](https://stackoverflow.com/questions/68720533/embed-links-to-cells-of-rs-gt-tables)
 - [Embedding custom HTML in gt tables](https://themockup.blog/posts/2020-10-31-embedding-custom-features-in-gt-tables/index.html)
 - [Adding images to group headers using text_transform in a gt table](https://stackoverflow.com/questions/73068835/adding-images-to-group-headers-using-text-transform-in-a-gt-table)
+- Как не красить ячейки с `NA`. [R gt table make NA values not appear](https://stackoverflow.com/questions/73599951/r-gt-table-make-na-values-not-appear)
+```
+colors = scales::col_numeric(
+      palette = pal,
+      domain = c(0, 20),
+      na.color = "transparent"
+    )
+```
+- [R gt_table adjust row height](https://stackoverflow.com/questions/64127905/r-gt-table-adjust-row-height)
 
 ## reactable
 - [A couple useful JavaScript aggregation and formatting functions for {reactable}](https://www.zajichekstats.com/post/reactable-javascript/)

@@ -48,6 +48,28 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 # Conferences
 - [EuroPython Conference](https://www.youtube.com/c/EuroPythonConference/playlists)
 
+# 11.12.2022
+- [Run-length Encoding for PandasPermalink](https://tech.blueyonder.com/rle-array/)
+- [Все доброго утра , каким инструментом пользуются data scientists для визуализации данных , достаточно ли знания power bi?](https://t.me/pydata_chat/40737)
+
+```100500 вариантов
+начинают с 
+- https://matplotlib.org/
+- https://seaborn.pydata.org/
+- https://plotnine.readthedocs.io/en/stable/
+- https://echarts.apache.org/en/index.html
+- https://observablehq.com/
+- [Vega-Altair: Declarative Visualization in Python](https://altair-viz.github.io/)
+- [Bokeh](https://docs.bokeh.org/en/latest/)
+- [Plotly Open Source Graphing Library for Python](https://plotly.com/python/)
+```
+
+## Мутная история с Python Integer & bitwise operations.
+- [class `int`](https://docs.python.org/3/library/functions.html#int)
+- [A Python Integer Is More Than Just an Integer](https://jakevdp.github.io/PythonDataScienceHandbook/02.01-understanding-data-types.html#A-Python-Integer-Is-More-Than-Just-an-Integer)
+- [In Python 3, there is effectively no limit to how long an integer value can be.](https://realpython.com/python-data-types/#integers)
+- [Bitwise Operations on Integer Types](https://docs.python.org/3/library/stdtypes.html#bitwise-operations-on-integer-types)
+
 # 07.12.2022
 - [Появляется установочная библиотека Python3 `pandas` Не удалось импортировать модуль `lzma`.](https://www.programmerclick.com/article/3650407895/)
 - [Reshaping a DataFrame with Pandas `stack()` and `unstack()`](https://towardsdatascience.com/reshaping-a-dataframe-with-pandas-stack-and-unstack-925dc9ce1289). 7 tricks to effectively use the Pandas `stack()` and `unstack()`.
@@ -177,7 +199,8 @@ This post draws extensively on material from the book Introduction to Empirical 
 - Message. [Setupterm could not find terminal, in Python program using curses](https://discuss.dizzycoding.com/setupterm-could-not-find-terminal-in-python-program-using-curses/). В частности, при использовании `from objexplore import explore`
 
 # 16.06.2022
-- [Pandas vectorization: faster code, slower code, bloated memory](https://pythonspeed.com/articles/pandas-vectorization/)
+- COOL! [Pandas vectorization: faster code, slower code, bloated memory](https://pythonspeed.com/articles/pands-vectorization/)
+- COOL! [](https://www.analyticsvidhya.com/blog/2021/11/3-ways-to-deal-with-settingwithcopywarning-in-pandas/)
 - [How vectorization speeds up your Python code](https://pythonspeed.com/articles/vectorization-python/)
 - [Numba](https://numba.pydata.org/) is an open source JIT compiler that translates a subset of Python and NumPy code into fast machine code.
 - [How To Fix WARNING: There was an error checking the latest version of pip Error?](https://networkcult.com/fix-warning-there-was-an-error-checking-the-latest-version-of-pip-error-1520/). 
@@ -400,6 +423,7 @@ Nim is a statically typed compiled systems programming language. It combines suc
 - [Pandas: pad series on top or bottom](https://stackoverflow.com/questions/38743064/pandas-pad-series-on-top-or-bottom)
 
 # 30.11.2021
+## pandas дичь
 - COOL! Полная дичь. [3 ways to deal with `SettingWithCopyWarning` in Pandas](https://www.analyticsvidhya.com/blog/2021/11/3-ways-to-deal-with-settingwithcopywarning-in-pandas/)
 - COOL! [How to Avoid a Pandas Pandemonium](https://towardsdatascience.com/how-to-avoid-a-pandas-pandemonium-e1bed456530)
 - COOL! [Pandas vectorization: faster code, slower code, bloated memory](https://pythonspeed.com/articles/pandas-vectorization/)

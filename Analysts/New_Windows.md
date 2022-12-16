@@ -269,6 +269,19 @@ C:\Users\Ilya>netsh wlan set autoconfig enabled=no interface="Беспровод
 - [Интернет есть, но пишет "Без доступа к интернету" (Windows 10, 8, 7): чем грозит и как исправить](https://vladimirbelev.ru/internet-est-no-pishet-bez-dostupa-k-internetu-windows-10)
 - [Исправляем ошибку «msftconnecttest redirect» в Windows 10](https://tehnichka.pro/error-msftconnecttest-redirect-windows-10/)
 `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet` ставим в 0
+- [Windows 10 показывает, что интернета нет, но по факту интернет есть](https://answers.microsoft.com/ru-ru/windows/forum/all/windows-10/889c8fb0-db37-47c0-99f6-1ca86a4e5e78).
+Похоже у Вас возникает проблема с доступом к серверам DNS, из-за чего система не находит сервисы Microsoft, которые она использует для контроля подключения к сети Интернет.
+
+Пожалуйста попробуйте в свойства сетевого подключения, которое Вы используете для доступа к сети Интернет добавить публичные DNS-сервера Google 8.8.8.8 и 4.4.4.4, либо публичные сервера например Яндекса.
+
+Если это не поможет, Пожалуйста попробуйте перезапустить сетевое соединение, выполнив поочерёдно в командной строке, запущенной с правами администратора команды:
+```
+netsh winsock reset  и нажмите Enter.
+netsh int ip reset  и нажмите Enter.
+ipconfig /release  и нажмите Enter.
+ipconfig /renew  и нажмите Enter.
+ipconfig /flushdns  и нажмите Enter.
+```
 
 ## Outlook
 - [Папки в Outlook отображаются на английском языке](https://www.dmosk.ru/polezno.php?review=outlook-en). 

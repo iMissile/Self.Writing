@@ -52,6 +52,8 @@ You can also declare a new font family to use it in arbitrary situations:
 [Extension = .ttf, UprightFont = *-Regular, ...]
 {\crimson This text uses the CrimsonText font}
 ```
+- [Putting two images beside each other](https://tex.stackexchange.com/questions/148438/putting-two-images-beside-each-other)
+
 ## Редакторы картинок для LaTeX:
 	- [Detexify](http://detexify.kirelabs.org/classify.html)
 	- [LaTeXDraw](http://latexdraw.sourceforge.net/) is a graphical drawing editor for LaTeX. LaTeXDraw can be used to 1) generate PSTricks code; 2) directly create PDF or PS pictures. LaTeXDraw is developed in Java and thus runs on top of Linux, Windows, and Mac OS X. You need Java 8 to launch LaTeXDraw.

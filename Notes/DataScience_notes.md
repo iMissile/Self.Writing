@@ -1368,12 +1368,21 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 13.12.2022
+## Tools
+- [Pipelined Relational Query Language, pronounced “Prequel”](https://prql-lang.org/). PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement
+
 # 22.11.2022
 ## R
+- COOL! [jimhester/lookup](https://github.com/jimhester/lookup). Lookup R full function definitions, including compiled code, S3 and S4 methods.
 - COOL! Разбор различных вариантов для разных версий dplyr. [dplyr filter with condition on multiple columns](https://stackoverflow.com/questions/43938863/dplyr-filter-with-condition-on-multiple-columns)
 - [Operator "[<-" in RStudio and R](https://stackoverflow.com/questions/15559387/operator-in-rstudio-and-r)
 - COOL! [plumber not releasing memory #496](https://github.com/rstudio/plumber/issues/496). A little more context: the `pryr::mem_used()` function reports the amount of memory consumed by R objects. The `memuse::Sys.procmem()` function reports how much memory is used by the process, according to the operating system.
 As a solution I recommend to switch to another implementation of malloc (such as jemalloc). This is exactly what we do in RestRserve.
+- [Read all CSV columns as character](https://community.rstudio.com/t/read-all-csv-columns-as-character/84516)
+```
+readr::read_csv(readr_example("mtcars.csv"), col_types = cols(.default = "c"))
+```
 
 # 15.11.2022
 ## R anonymous functions
