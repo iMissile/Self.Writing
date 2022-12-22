@@ -429,11 +429,13 @@ colors = scales::col_numeric(
     )
 ```
 - [R gt_table adjust row height](https://stackoverflow.com/questions/64127905/r-gt-table-adjust-row-height)
+- [Basic gt Styling Reference](https://adrumm.quarto.pub/basic-gt-styling-reference/)
 
 ## reactable
 - [A couple useful JavaScript aggregation and formatting functions for {reactable}](https://www.zajichekstats.com/post/reactable-javascript/)
 - [Interactive Drill-down Tables using {reactable}](https://rpubs.com/StevenDuttRoss/flextable2)
 - [Conditional Styling](https://glin.github.io/reactable/articles/conditional-styling.html)
+- Офигенский пример таблички, с картинками, спарклайнами и немного js. [Tidyverse in Numbers](https://szymanskir.quarto.pub/tidyverse_in_numbers/)
 
 # ECharts
 - [Форматирование меток осей](https://echarts.apache.org/en/option.html#xAxis.axisLabel.formatter)

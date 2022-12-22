@@ -28,6 +28,7 @@ The second -exec renames the zipped files to the original names
 - COOL! [How to Remove (Delete) Directory in Linux](https://linuxize.com/post/remove-directory-linux/)
 `$ find . -type d -name '*_cache' -exec rm -r {} +`
 `$ find /dir -type d -empty -delete`
+- [How to ignore certain filenames using “find”?](https://superuser.com/questions/397307/how-to-ignore-certain-filenames-using-find)
 
 
 - Чтобы забрать архив. [Архивирование файлов в Linux](https://losst.ru/arhivatsiya-v-linux). Архив != сжатие.
@@ -40,6 +41,7 @@ The second -exec renames the zipped files to the original names
 - [How do I delete all but 10 newest files in Linux?](https://superuser.com/questions/268344/how-do-i-delete-all-but-10-newest-files-in-linux/268345)
 - [How do I set environment variables?](https://askubuntu.com/questions/730/how-do-i-set-environment-variables). 
 In bash you can set variables like this: `export CATALINA_HOME=/opt/catalina`
+- [How to Check your Ubuntu Version](https://linuxize.com/post/how-to-check-your-ubuntu-version/). `lsb_release -a`
 
 ## копирование директорий
 - [Rsync (Remote Sync): 10 Practical Examples of Rsync Command in Linux](https://www.tecmint.com/rsync-local-remote-file-synchronization-commands/)
@@ -103,13 +105,50 @@ sudo snap install pdftk
 # проблемы с менеджером пакетов
 - [Как исправить ошибку «E: Could not get lock /var/lib/dpkg/lock» в Ubuntu Linux](https://omgubuntu.ru/kak-ispravit-oshibku-e-could-not-get-lock-var-lib-dpkg-lock-v-ubuntu-linux/)
 
-# Исполнение в параллель
-- [What's the difference between nohup and ampersand](https://stackoverflow.com/questions/15595374/whats-the-difference-between-nohup-and-ampersand).
-`nohup` + `Rscript`+ `&` сработал) шикардос)
+# zip
+- [Zip all files in directory?](https://unix.stackexchange.com/questions/57013/zip-all-files-in-directory)
+- [How to tell gzip to keep original file?](https://unix.stackexchange.com/questions/46786/how-to-tell-gzip-to-keep-original-file)
+- [Example Uses of the Linux gzip Command](https://www.lifewire.com/example-uses-of-the-linux-gzip-command-4078675)
+- [Сжатие и архивация файлов с помощью Gzip, Zip и Tar](http://www.rhd.ru/docs/manuals/enterprise/RHEL-AS-2.1-Manual/getting-started-guide/s1-zip-tar.html)
+- [GZip every file separately](https://stackoverflow.com/questions/1792078/gzip-every-file-separately)
+- [Check validity of gz file](https://unix.stackexchange.com/questions/359303/check-validity-of-gz-file). `gzip -v -t file.gz`
+- [How do I gunzip all files recursively in a target directory?](https://askubuntu.com/questions/620571/how-do-i-gunzip-all-files-recursively-in-a-target-directory)
+- [Script to create individual zip files for each .txt file it finds and move them after](https://stackoverflow.com/questions/12321167/script-to-create-individual-zip-files-for-each-txt-file-it-finds-and-move-them)
+- [Test integrity of ZIP file?](https://unix.stackexchange.com/questions/197127/test-integrity-of-zip-file). `unzip -t file`
+- [Example Uses Of The Linux "gzip" Command](https://www.lifewire.com/example-uses-of-the-linux-gzip-command-4078675)
+- [Linux zip command](https://www.computerhope.com/unix/zip.htm)
+- [How to zip multiple files into separate archives?](https://superuser.com/questions/430388/how-to-zip-multiple-files-into-separate-archives)
+```
+find . -name '*.txt.*' -print -exec zip '{}'.zip '{}' \; -exec mv '{}'.zip '{}' \;
+```
+Find the .txt files
+The first -exec zips the files
+The second -exec renames the zipped files to the original names
+- [Bash get filename from given path on Linux or Unix](https://www.cyberciti.biz/faq/bash-get-filename-from-given-path-on-linux-or-unix/)
+- [Create zip file and ignore directory structure](https://stackoverflow.com/questions/9710141/create-zip-file-and-ignore-directory-structure)
+- [How to zip files with same name but different extension?](https://unix.stackexchange.com/questions/417163/how-to-zip-files-with-same-name-but-different-extension)
+- [Linux 101 Hacks. Hack 45. Advanced compression using zip command](https://linux.101hacks.com/archive-compression/advanced-compression-using-zip-command/)
+- [How to Use zip Command in Linux](https://tecadmin.net/how-to-use-zip-command-line-linux/)
+- [How To: Disk Full? - Check Your Trash](https://ubuntuforums.org/showthread.php?t=898573). Гуляем командами по директориям
+```
+df -Th | sort
+du -sh * | sort -n
+```
+- [How to split a gzip file to several small ones on Linux?](https://www.systutorials.com/how-to-split-a-gzip-file-to-several-small-ones-on-linux/)
+
+# GNU parallel, Исполнение в параллель
 - [PARALLELISING JOBS WITH GNU PARALLEL](https://blog.ronin.cloud/gnu-parallel/)
 - [A short tutorial on Gnu Parallel](https://www.polarmicrobes.org/a-short-tutorial-on-gnu-parallel/)
 - [Get more done at the Linux command line with GNU Parallel](https://opensource.com/article/18/5/gnu-parallel). Turn your computer into a multi-tasking powerhouse.
 - [Learn Multi-Threading Bash scripts with GNU Parallel](https://adamtheautomator.com/how-to-speed-up-bash-scripts-with-multithreading-and-gnu-parallel/)
+- `parallel gzip ::: *`
+GNU Parallel is a fantastic tool that should be used far more in this world where CPUs are only getting more cores rather than more speed. There are loads of examples that we would all do well to take 10 minutes to read
+[GNU Parallel Tutorial](https://www.gnu.org/software/parallel/parallel_tutorial.html)
+- [What's the difference between nohup and ampersand](https://stackoverflow.com/questions/15595374/whats-the-difference-between-nohup-and-ampersand).
+`nohup` + `Rscript`+ `&` сработал) шикардос)
+- [Differences Between GNU Parallel And Alternatives](https://www.gnu.org/software/parallel/parallel_alternatives.pdf)
+- [Run a specifiable number of commands in parallel - contrasting xargs -P, GNU parallel, and "moreutils" parallel](https://stackoverflow.com/questions/42651475/run-a-specifiable-number-of-commands-in-parallel-contrasting-xargs-p-gnu-par)
+- [How can I install GNU Parallel alongside Moreutils on Ubuntu/Debian?](https://superuser.com/questions/917577/how-can-i-install-gnu-parallel-alongside-moreutils-on-ubuntu-debian)
 
 # timing
 - [How can I measure the execution time of a terminal process?](https://askubuntu.com/questions/53444/how-can-i-measure-the-execution-time-of-a-terminal-process).

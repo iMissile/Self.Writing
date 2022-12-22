@@ -371,6 +371,14 @@ Reboot your computer.
 - [How to disable images in firefox](https://support.mozilla.org/en-US/questions/981640)
 - [How to turn off images in Firefox](https://www.ghacks.net/2015/03/24/how-to-turn-off-images-in-firefox/)
 - [Image Block add-on](https://addons.mozilla.org/en-US/firefox/addon/image-block/)
+- COOL! Поднимаем свой собственный VPN.
+	- [Как создать свой собственный VPN-сервер прямо на iPhone за 5 минут](https://www.iphones.ru/iNotes/kak-na-iphone-nastroit-svoy-vpn-i-avtomaticheskoe-podklyuchenie-servisa-09-06-2022)
+`pivpn` --  вывести список доступных команд для настройки сервера.
+`pivpn -a` -- создание нового пользователя.
+`pivpn -qr` -- отображение QR-кода конфигурации.
+	- [PiVPN](https://pivpn.io/) The simplest way to setup and manage a VPN, designed for Raspberry Pi™.
+	- [WireGuard](https://www.wireguard.com/): fast, modern, secure VPN tunnel
+WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
 
 ## Проблемы с сетевым подключением
 - [Неопознанная сеть без доступа к Интернету - причины и решение](https://ocomp.info/neopoznannaya-set-bez-interneta.html)

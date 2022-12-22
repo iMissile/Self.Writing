@@ -45,8 +45,26 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 	- [A visual debugger for Jupyter](https://blog.jupyter.org/a-visual-debugger-for-jupyter-914e61716559)
 - [Orange](https://orangedatamining.com/). Open source machine learning and data visualization.
 
+# Internal object structure
+- [How do I look inside a Python object?](https://stackoverflow.com/questions/1006169/how-do-i-look-inside-a-python-object)
+	- If you're interested in a GUI for this, take a look at [objbrowser](https://pypi.org/project/objbrowser/). It uses the inspect module from the Python standard library for the object introspection underneath. First install [PyQt](https://www.riverbankcomputing.com/software/pyqt/download) or [PySide2](https://wiki.qt.io/Qt_for_Python). Важно соблюдать версии PyQT!!! 5-ый, значит 5-ый.
+	- There is a very cool tool called [objexplore](https://github.com/kylepollina/objexplore). Here is a simple example on how to use its explore function on a pandas DataFrame.
+
+
 # Conferences
 - [EuroPython Conference](https://www.youtube.com/c/EuroPythonConference/playlists)
+
+# 21.12.22
+- [How to sum all the values in a dictionary?](https://stackoverflow.com/questions/4880960/how-to-sum-all-the-values-in-a-dictionary)
+For python 3:
+```
+d = {'key1': 1,'key2': 14,'key3': 47}
+sum(list(d.values()))
+```
+
+# 19.12.2022
+- [Guido van Rossum on Types, Speed and the Future of Python ](https://thenewstack.io/guido-van-rossum-on-types-speed-and-the-future-of-python)
+- [Sorting a Python Dictionary: Values, Keys, and More](https://realpython.com/sort-python-dictionary/)
 
 # 11.12.2022
 - [Run-length Encoding for PandasPermalink](https://tech.blueyonder.com/rle-array/)
@@ -264,7 +282,7 @@ If you are using the Python version 3 then use the below command to update pip v
 - [How to create a reprex containing Python code from R/RStudio?](https://community.rstudio.com/t/how-to-create-a-reprex-containing-python-code-from-r-rstudio/95348)
 
 # 20.05.2022
-- [What’s in which Python](https://nedbatchelder.com/text/which-py.html). This is a summary of what features appeared in which versions of Python. Items with a star were introduced with a __future__ import.
+- COOL! [What’s in which Python](https://nedbatchelder.com/text/which-py.html). This is a summary of what features appeared in which versions of Python. Items with a star were introduced with a __future__ import.
 - [Overview of Pandas Data Types](https://pbpython.com/pandas_dtypes.html)
 
 # 17.05.2022

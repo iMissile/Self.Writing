@@ -1369,8 +1369,26 @@ This is where we will store all of the materials and links for rstudio::conf 202
 # http://192.168.12.31:4242/client/#/
 
 # 13.12.2022
+## R
+- Отличный демопример по генерации календаря на R [NYC flights calendar plot](https://gist.github.com/AlbertRapp/9a33fcc4bcb10bd9f25d704c03893832)
+- И еще [календарик](https://karbartolome-blog.netlify.app/posts/calendarplots/)
+- [Touching the 3rd Rail of Data Science: “R or Python?”](https://win-vector.com/2022/12/13/touching-the-3rd-rail-of-data-science-r-or-python/)
+
 ## Tools
 - [Pipelined Relational Query Language, pronounced “Prequel”](https://prql-lang.org/). PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement
+- [Awesome ChatGPT Prompts](https://prompts.chat/)
+- [Is R 4.2.2 available for installation on Ubuntu 22.04 LT?](https://community.rstudio.com/t/is-r-4-2-2-available-for-installation-on-ubuntu-22-04-lt/152489)
+I installed 4.2.2 on an Ubuntu 22.04 system. As suggested here:
+https://cloud.r-project.org/bin/linux/ubuntu/fullREADME.html
+I modified `/etc/apt/sources.list` to list the R repository and a backports repository.
+```
+sudo apt-get update
+sudo apt-get install r-base
+sudo apt-get install r-base-dev
+```
+
+## ФП
+- COOL! [Reduce, Filter, Find and more: R's unknown heroes?](https://hohenfeld.is/posts/reduce-filter-find-and-more-r-s-unknown-heroes/)
 
 # 22.11.2022
 ## R
@@ -1591,6 +1609,12 @@ In quarto, you can set the custom ragg_png device (defined above) in the YAML, l
 семейство шрифтов не найдено в базе данных шрифтов Windows`
 	- [Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font width unknown for character 0x20](https://stackoverflow.com/questions/62067139/warning-in-grid-callc-textbounds-as-graphicsannotxlabel-xx-xy-font-w)
 - [A beginner's guide to using Observable JavaScript, R, and Python with Quarto](https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html)
+
+## Quarto & blogdown
+- [Using Quarto in Blogdown](https://stackoverflow.com/questions/72072249/using-quarto-in-blogdown). Migrating from Rmd to Qmd has no really advantage as you can't really use Quarto feature in a Hugo website, or at least it will be limited
+- COOL! [From Blogdown to Quarto](https://www.incidentalfindings.org/posts/2022-08-30_from-blogdown-to-quarto/)
+	- [Creating a blog with Quarto in 10 steps](https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/en/)
+In this post, I introduce you to my new blog and show how you can create a blog with Quarto for R users.
 
 ## knitr textwidth
 - xaringan. [Font size of code {#69}](https://github.com/yihui/xaringan/issues/69)
@@ -2707,6 +2731,7 @@ extrafont::font_import()
 
 ## Table Contest
 - COOL! [Winners of the 2021 Table Contest](https://www.rstudio.com/blog/winners-of-the-2021-table-contest/)
+- COOL! [Winners of the 2022 Table Contest](https://posit.co/blog/winners-of-the-2022-table-contest/)
 
 # 29.11.2021
 ## R
@@ -3243,6 +3268,7 @@ Chain monadic sequences into stateful, branching pipelines. As nodes in the pipe
 - [Working with a sparse matrix in R](https://slowkow.com/notes/sparse-matrix/)
 - [converting a dgCMatrix to data frame](https://stackoverflow.com/questions/53486135/converting-a-dgcmatrix-to-data-frame)
 - [RcppArmadillo: Sparse Matrix Support](https://cran.r-project.org/web/packages/RcppArmadillo/vignettes/RcppArmadillo-sparseMatrix.pdf)
+- [Equivalent of rowsum function for Matrix-class (dgCMatrix)](https://stackoverflow.com/questions/51025979/equivalent-of-rowsum-function-for-matrix-class-dgcmatrix)
 
 ## R
 - [readr 2.0 planned improvments](https://github.com/tidyverse/readr/blob/master/NEWS.md)
@@ -9178,41 +9204,6 @@ The cyphr package seems to provide a good choice for small research group that s
 
 
 # 24.03.2019
-## Linux
-- [How to ignore certain filenames using “find”?](https://superuser.com/questions/397307/how-to-ignore-certain-filenames-using-find)
-- [Zip all files in directory?](https://unix.stackexchange.com/questions/57013/zip-all-files-in-directory)
-- [How to tell gzip to keep original file?](https://unix.stackexchange.com/questions/46786/how-to-tell-gzip-to-keep-original-file)
-- [Example Uses of the Linux gzip Command](https://www.lifewire.com/example-uses-of-the-linux-gzip-command-4078675)
-- [Сжатие и архивация файлов с помощью Gzip, Zip и Tar](http://www.rhd.ru/docs/manuals/enterprise/RHEL-AS-2.1-Manual/getting-started-guide/s1-zip-tar.html)
-- [GZip every file separately](https://stackoverflow.com/questions/1792078/gzip-every-file-separately)
-- [Check validity of gz file](https://unix.stackexchange.com/questions/359303/check-validity-of-gz-file). `gzip -v -t file.gz`
-- [How do I gunzip all files recursively in a target directory?](https://askubuntu.com/questions/620571/how-do-i-gunzip-all-files-recursively-in-a-target-directory)
-- [Script to create individual zip files for each .txt file it finds and move them after](https://stackoverflow.com/questions/12321167/script-to-create-individual-zip-files-for-each-txt-file-it-finds-and-move-them)
-- [Test integrity of ZIP file?](https://unix.stackexchange.com/questions/197127/test-integrity-of-zip-file). `unzip -t file`
-- `parallel gzip ::: *`
-GNU Parallel is a fantastic tool that should be used far more in this world where CPUs are only getting more cores rather than more speed. There are loads of examples that we would all do well to take 10 minutes to read
-[GNU Parallel Tutorial](https://www.gnu.org/software/parallel/parallel_tutorial.html)
-- [Example Uses Of The Linux "gzip" Command](https://www.lifewire.com/example-uses-of-the-linux-gzip-command-4078675)
-- [Linux zip command](https://www.computerhope.com/unix/zip.htm)
-- [How to zip multiple files into separate archives?](https://superuser.com/questions/430388/how-to-zip-multiple-files-into-separate-archives)
-```
-find . -name '*.txt.*' -print -exec zip '{}'.zip '{}' \; -exec mv '{}'.zip '{}' \;
-```
-Find the .txt files
-The first -exec zips the files
-The second -exec renames the zipped files to the original names
-- [Bash get filename from given path on Linux or Unix](https://www.cyberciti.biz/faq/bash-get-filename-from-given-path-on-linux-or-unix/)
-- [Create zip file and ignore directory structure](https://stackoverflow.com/questions/9710141/create-zip-file-and-ignore-directory-structure)
-- [How to zip files with same name but different extension?](https://unix.stackexchange.com/questions/417163/how-to-zip-files-with-same-name-but-different-extension)
-- [Linux 101 Hacks. Hack 45. Advanced compression using zip command](https://linux.101hacks.com/archive-compression/advanced-compression-using-zip-command/)
-- [How to Use zip Command in Linux](https://tecadmin.net/how-to-use-zip-command-line-linux/)
-- [How To: Disk Full? - Check Your Trash](https://ubuntuforums.org/showthread.php?t=898573). Гуляем командами по директориям
-```
-df -Th | sort
-du -sh * | sort -n
-```
-- [How to split a gzip file to several small ones on Linux?](https://www.systutorials.com/how-to-split-a-gzip-file-to-several-small-ones-on-linux/)
-
 
 ## R
 - Permutations
