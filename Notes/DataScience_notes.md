@@ -2201,7 +2201,6 @@ You can use dlib : C++ tool for non-linear optimization which includes functions
 
 # 11.04.2022
 ## R
-- Shiny Contest [INTERACTIVE MAP GENERATOR FROM EXCEL TO HTML, VIA LEAFLET.JS](https://www.jla-data.net/eng/jla-leaflet-generator/)
 - [The new pipe and anonymous function syntax in R](https://towardsdatascience.com/the-new-pipe-and-anonymous-function-syntax-in-r-54d98861014c). What is it, why now, and does it really matter?
 - [Проект SQL: Исследование оттока сотрудников департамента исследований и разработок](https://rpubs.com/o_mamatkulov/849298)
 - [Getting Started with JAGS, rjags, and Bayesian Modelling](https://jeromyanglim.blogspot.com/2012/04/getting-started-with-jags-rjags-and.html) WEDNESDAY, APRIL 11, 2012
@@ -2753,7 +2752,9 @@ extrafont::font_import()
 - [Winners of the 3rd annual Shiny Contest](https://blog.rstudio.com/2021/06/24/winners-of-the-3rd-annual-shiny-contest/), 2021-06-24
 - [Winners of the 2nd Annual Shiny Contest](https://blog.rstudio.com/2020/07/13/winners-of-the-2nd-shiny-contest/), 2020-07-13
 - [Winners of the 1st Shiny Contest](https://blog.rstudio.com/2019/04/05/first-shiny-contest-winners/), 2019-04-05
-	
+
+- Shiny Contest [INTERACTIVE MAP GENERATOR FROM EXCEL TO HTML, VIA LEAFLET.JS](https://www.jla-data.net/eng/jla-leaflet-generator/)
+
 
 # 29.11.2021
 ## R
