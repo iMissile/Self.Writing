@@ -1368,6 +1368,15 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 22.12.2022
+## R
+- [How to Perform a Granger-Causality Test in R](https://www.statology.org/granger-causality-test-in-r/)
+The Granger Causality test is used to determine whether or not one time series is useful for forecasting another.
+- [How to Perform Correlation Analysis in Time Series data using R?](https://www.lobdata.com.br/2020/09/15/how-to-perform-correlation-analysis-in-time-series-data-using-r/)
+- [An Introduction to Hierarchical Modeling](http://mfviz.com/hierarchical-models/)
+This visual explanation introduces the statistical concept of Hierarchical Modeling, also known as Mixed Effects Modeling or by these other terms.
+- [Fast Fixed-Effects Estimation: Short Introduction](https://cran.r-project.org/web/packages/fixest/vignettes/fixest_walkthrough.html) by Laurent Berge and Grant McDermott
+
 # 13.12.2022
 ## R
 - Отличный демопример по генерации календаря на R [NYC flights calendar plot](https://gist.github.com/AlbertRapp/9a33fcc4bcb10bd9f25d704c03893832)
@@ -1615,6 +1624,13 @@ In quarto, you can set the custom ragg_png device (defined above) in the YAML, l
 - COOL! [From Blogdown to Quarto](https://www.incidentalfindings.org/posts/2022-08-30_from-blogdown-to-quarto/)
 	- [Creating a blog with Quarto in 10 steps](https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/en/)
 In this post, I introduce you to my new blog and show how you can create a blog with Quarto for R users.
+- [The ultimate guide to starting a Quarto blog](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html)
+
+## Quarto & css
+- [Down the front-end rabbit hole](https://quartoand.me/front-end)
+- [Define a new callout in quarto](https://stackoverflow.com/questions/74647399/define-a-new-callout-in-quarto)
+- [How to apply CSS style to Quarto output](https://stackoverflow.com/questions/74026514/how-to-apply-css-style-to-quarto-output)
+- [Add a CSS class to single code chunks in RMarkdown](https://stackoverflow.com/questions/37944197/add-a-css-class-to-single-code-chunks-in-rmarkdown)
 
 ## knitr textwidth
 - xaringan. [Font size of code {#69}](https://github.com/yihui/xaringan/issues/69)
@@ -2730,8 +2746,14 @@ extrafont::font_import()
 использовать `word-wrap: break-word;`. [CSS word-wrap Property](https://www.w3schools.com/cssref/css3_pr_word-wrap.asp)
 
 ## Table Contest
-- COOL! [Winners of the 2021 Table Contest](https://www.rstudio.com/blog/winners-of-the-2021-table-contest/)
-- COOL! [Winners of the 2022 Table Contest](https://posit.co/blog/winners-of-the-2022-table-contest/)
+- [Winners of the 2022 Table Contest](https://posit.co/blog/winners-of-the-2022-table-contest/)
+- [Winners of the 2021 Table Contest](https://www.rstudio.com/blog/winners-of-the-2021-table-contest/)
+
+## Shiny Contest
+- [Winners of the 3rd annual Shiny Contest](https://blog.rstudio.com/2021/06/24/winners-of-the-3rd-annual-shiny-contest/), 2021-06-24
+- [Winners of the 2nd Annual Shiny Contest](https://blog.rstudio.com/2020/07/13/winners-of-the-2nd-shiny-contest/), 2020-07-13
+- [Winners of the 1st Shiny Contest](https://blog.rstudio.com/2019/04/05/first-shiny-contest-winners/), 2019-04-05
+	
 
 # 29.11.2021
 ## R
@@ -2897,13 +2919,6 @@ system('notify-send -i important "Работа скрипта" "Ахтунг!"')
 - [Your first D3 visualisation with {r2d3} and Scooby-Doo](https://www.jumpingrivers.com/blog/r-d3-intro-r2d3/)
 - COOL! [Fastest way to multiply matrix columns with vector elements in R](https://stackoverflow.com/questions/17080099/fastest-way-to-multiply-matrix-columns-with-vector-elements-in-r). Не все так просто, есть разные варианты.
 
-## Shiny
-- Shiny Contest
-	- [Winners of the 1st Shiny Contest](https://blog.rstudio.com/2019/04/05/first-shiny-contest-winners/), 2019-04-05
-	- [Winners of the 2nd Annual Shiny Contest](https://blog.rstudio.com/2020/07/13/winners-of-the-2nd-shiny-contest/), 2020-07-13
-	- [Winners of the 3rd annual Shiny Contest](https://blog.rstudio.com/2021/06/24/winners-of-the-3rd-annual-shiny-contest/), 2021-06-24
-- COOL! [A beginner's guide to Shiny modules](https://rviews.rstudio.com/2021/10/20/a-beginner-s-guide-to-shiny-modules/),  2021-10-20 by Emily Riederer
-	
 # 11.10.2021
 ## DS
 - COOL! [COUNT BAYESIE. The Logit-Normal: A ubiquitous but strange distribution!](https://www.countbayesie.com/blog/2021/9/30/the-logit-normal-a-ubitiqutious-but-strange-distribution)
@@ -3885,6 +3900,7 @@ sqlMdxOpenquery <- processSqlTemplate(
 - https://rstudio-education.github.io/advanced-shiny-sib/03-react-prog/slides/03-react-prog.pdf
 - COOL! [Reactive object bindings in a non-shiny context](https://stackoverflow.com/questions/25900626/reactive-object-bindings-in-a-non-shiny-context)
 - [imager: an R package for image processing](http://dahtah.github.io/imager/)
+- COOL! [A beginner's guide to Shiny modules](https://rviews.rstudio.com/2021/10/20/a-beginner-s-guide-to-shiny-modules/),  2021-10-20 by Emily Riederer
 
 
 # 18.03.2021
