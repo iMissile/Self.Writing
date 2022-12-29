@@ -430,6 +430,9 @@ colors = scales::col_numeric(
 ```
 - [R gt_table adjust row height](https://stackoverflow.com/questions/64127905/r-gt-table-adjust-row-height)
 - [Basic gt Styling Reference](https://adrumm.quarto.pub/basic-gt-styling-reference/)
+- gt & js
+	- [JavaScript onClick event - HTML table](https://stackoverflow.com/questions/21033368/javascript-onclick-event-html-table)
+	- [Find table cell value on cell (table) click using JavaScript](http://dotnetlearners.com/javascript/find-table-cell-value-on-cell-table-click-using-javascript)
 
 ## reactable
 - [A couple useful JavaScript aggregation and formatting functions for {reactable}](https://www.zajichekstats.com/post/reactable-javascript/)

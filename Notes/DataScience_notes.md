@@ -1369,7 +1369,7 @@ This is where we will store all of the materials and links for rstudio::conf 202
 # http://192.168.12.31:4242/client/#/
 
 # 22.12.2022
-## R
+## Mixed Models with R
 - [How to Perform a Granger-Causality Test in R](https://www.statology.org/granger-causality-test-in-r/)
 The Granger Causality test is used to determine whether or not one time series is useful for forecasting another.
 - [How to Perform Correlation Analysis in Time Series data using R?](https://www.lobdata.com.br/2020/09/15/how-to-perform-correlation-analysis-in-time-series-data-using-r/)
