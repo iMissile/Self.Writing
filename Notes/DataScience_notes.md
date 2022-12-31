@@ -1368,6 +1368,10 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 30.12.2022
+## R
+- [Dots (...) vs arg lists for function 'forwarding'](https://community.rstudio.com/t/dots-vs-arg-lists-for-function-forwarding/4995). По вопросу Богдана [incorrect concept of ellipsis in imap](https://github.com/tidyverse/purrr/issues/1032)
+
 # 22.12.2022
 ## Mixed Models with R
 - [How to Perform a Granger-Causality Test in R](https://www.statology.org/granger-causality-test-in-r/)
@@ -1625,6 +1629,8 @@ In quarto, you can set the custom ragg_png device (defined above) in the YAML, l
 	- [Creating a blog with Quarto in 10 steps](https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/en/)
 In this post, I introduce you to my new blog and show how you can create a blog with Quarto for R users.
 - [The ultimate guide to starting a Quarto blog](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html)
+- [Migration from Hugo/blogdown/Wowchemy to Quarto](https://www.andreashandel.com/posts/2022-10-01-hugo-to-quarto-migration/) by Andreas Handel
+- [Hugo](https://quarto.org/docs/output-formats/hugo.html)
 
 ## Quarto & css
 - [Down the front-end rabbit hole](https://quartoand.me/front-end)
