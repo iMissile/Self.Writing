@@ -54,6 +54,11 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 # Conferences
 - [EuroPython Conference](https://www.youtube.com/c/EuroPythonConference/playlists)
 
+# 03.01.23
+- [How do I split a string into a list of characters?](https://stackoverflow.com/questions/4978787/how-do-i-split-a-string-into-a-list-of-characters)
+- [Pandas Drop Rows From DataFrame Examples](https://sparkbyexamples.com/pandas/pandas-drop-rows-from-dataframe/)
+- [Combine two columns of text in pandas dataframe](https://stackoverflow.com/questions/19377969/combine-two-columns-of-text-in-pandas-dataframe)
+
 # 21.12.22
 - [How to sum all the values in a dictionary?](https://stackoverflow.com/questions/4880960/how-to-sum-all-the-values-in-a-dictionary)
 For python 3:

@@ -11,4 +11,6 @@ println!("{}", type_name_of_val(&x));
 let y = 1.0;
 println!("{}", type_name_of_val(&y));
 ```
-	- Use the typename crate. [typename v0.1.2](https://crates.io/crates/typename). Stable alternative to Rust's type_name intrinsic
+	- Use the typename crate. [typename v0.1.2](https://crates.io/crates/typename). Stable alternative to Rust's type_name intrinsic.
+	Однако! DEPRECATION NOTICE: This crate has been deprecated. The `type_name` intrinsic has been stablized in Rust 1.38. Users of this crate are asked to migrate to `std::any::type_name`.
+	- [Tracking issue for any::type_name_of_val #66359 {Open}](https://github.com/rust-lang/rust/issues/66359)

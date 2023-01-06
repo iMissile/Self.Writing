@@ -1368,6 +1368,24 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 06.01.2023
+## Shiny Dynamic interface
+- [Shiny: Operations With Dynamically Created Inputs](https://rpubs.com/Heitor_Mont/dyn_var) by Heitor Gabriel S. Monteiro, 2022-09-11
+- [Appsilon R Shiny Demo Gallery](https://demo.appsilon.com/)
+- ["Mastering Shiny" 10.3 Creating UI with code](https://mastering-shiny.org/action-dynamic.html)
+- [Build a dynamic UI that reacts to user input}(https://shiny.rstudio.com/articles/dynamic-ui.html)
+- [Modularizing Shiny app code](https://shiny.rstudio.com/articles/modules.html)
+- [Introducing {qbr}](https://www.hfshr.xyz/posts/2021-06-20-qbr/)
+- [R interface to jquery queryBuilder](https://github.com/hfshr/qbr). [packet homepage](https://hfshr.github.io/qbr/#/)
+- [webpack + npm + R = ❤️](https://github.com/JohnCoene/packer).
+	- [packer](https://packer.john-coene.com/#/). An opinionated framework for using JavaScript with R.
+- [R htmlwidget for jQuery QueryBuilder filtering of data frames](https://github.com/harveyl888/queryBuilder)
+- [shiny dynamically add input fields and data without getting re-rendered](https://stackoverflow.com/questions/60818727/shiny-dynamically-add-input-fields-and-data-without-getting-re-rendered)
+- [Dynamically adding a user interface with multiple inputs](https://stackoverflow.com/questions/62757112/dynamically-adding-a-user-interface-with-multiple-inputs)
+- [R shiny: building query using dynamic UI](https://stackoverflow.com/questions/23679953/r-shiny-building-query-using-dynamic-ui)
+- [For loop in observe Event](https://stackoverflow.com/questions/68255716/for-loop-in-observe-event)
+- [User-friendly query builder for React](https://github.com/ukrbublik/react-awesome-query-builder)
+
 # 30.12.2022
 ## R
 - [Dots (...) vs arg lists for function 'forwarding'](https://community.rstudio.com/t/dots-vs-arg-lists-for-function-forwarding/4995). По вопросу Богдана [incorrect concept of ellipsis in imap](https://github.com/tidyverse/purrr/issues/1032)
