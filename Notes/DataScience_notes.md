@@ -683,13 +683,24 @@ header-includes:
 
 # Visualization
 Когда спрашивают про визуализацию:
-https://ggplot2.tidyverse.org/index.html
-http://www.ggplot2-exts.org/gallery/
-http://gallery.htmlwidgets.org/
-https://www.r-graph-gallery.com/
-https://www.data-to-viz.com/
-https://rawgraphs.io/
-https://plot.ly/products/cloud/
+- https://ggplot2.tidyverse.org/index.html
+- http://www.ggplot2-exts.org/gallery/
+- http://gallery.htmlwidgets.org/
+- https://www.r-graph-gallery.com/
+- https://www.data-to-viz.com/
+- https://rawgraphs.io/
+- https://plot.ly/products/cloud/
+
++ Python
+- https://matplotlib.org/
+- https://seaborn.pydata.org/
+- https://plotnine.readthedocs.io/en/stable/
+- https://echarts.apache.org/en/index.html
+- https://observablehq.com/
+- [Vega-Altair: Declarative Visualization in Python](https://altair-viz.github.io/)
+- [Bokeh](https://docs.bokeh.org/en/latest/)
+- [Plotly Open Source Graphing Library for Python](https://plotly.com/python/)
+
 - [What Are Data Visualization Style Guidelines?](https://medium.com/data-visualization-society/style-guidelines-92ebe166addc)
 - COOL! [The Chartmaker Directory](http://chartmaker.visualisingdata.com/)
 - [Visidata. Data exploration at your fingertips](https://www.visidata.org/).
@@ -1331,6 +1342,13 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 # R packages
 - [Building, Testing, and Distributing Packages](https://support.rstudio.com/hc/en-us/articles/200486508-Building-Testing-and-Distributing-Packages)
 
+## A/B
+- COOL! [a/b testing](https://bytepawn.com/tag/ab-testing.html)
+- [Online Experiments Tricks — Variance Reduction](https://towardsdatascience.com/online-experiments-tricks-variance-reduction-291b6032dcd7)
+Stratification, CUPED, Variance-Weighted Estimators, and ML-based methods CUPAC and MLRATE
+- COOL! [From Power Calculations to P-Values: A/B Testing at Stack Overflow](https://juliasilge.com/blog/ab-testing/)
+
+
 # R conferences
 
 ## Appsilon Shiny 2022
@@ -1367,6 +1385,26 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Obsidian — IDE для Markdown базы знаний](https://vas3k.club/link/2609/)
 
 # http://192.168.12.31:4242/client/#/
+
+# 11.01.2023
+## R & GPU
+- [Accelerate R Applications with CUDA](https://developer.nvidia.com/blog/accelerate-r-applications-cuda/)
+- [ACCELERATE R APPLICATIONS WITH CUDA](https://parallelr.com/slides/ParallelR-Accelerating%20R%20Applications%20with%20CUDA.pdf)
+- [GPU-accelerated computing](https://riptutorial.com/r/topic/4680/gpu-accelerated-computing)
+- [H2O4GPU: Machine Learning with GPUs in R](https://cran.r-project.org/web/packages/h2o4gpu/vignettes/getting_started.html)
+- [Slurm Workload Manager](https://slurm.schedmd.com/overview.html)
+- [Slurm vs LSF vs Kubernetes Scheduler](https://www.run.ai/guides/slurm/slurm-vs-lsf-vs-kubernetes-scheduler-which-is-right-for-you)
+
+## JSON
+- [JSON Schema Validator](https://json-schema.org/implementations.html#validator-python)
+
+
+# 09.01.2023
+## R
+- COOL! JIT. [Why does wrapping this loop in a function speed it up by 8x?](https://stackoverflow.com/questions/75012100/why-does-wrapping-this-loop-in-a-function-speed-it-up-by-8x)
+- [Rcpp Gallery](https://gallery.rcpp.org/)
+- [Best practices for generating parsers in R](https://community.rstudio.com/t/best-practices-for-generating-parsers-in-r/5906)
+- [piton: Parsing Expression Grammars in Rcpp](https://cran.r-project.org/web/packages/piton/). A wrapper around the 'Parsing Expression Grammar Template Library'
 
 # 06.01.2023
 ## Shiny Dynamic interface
@@ -1628,6 +1666,14 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 - [10+ Guidelines for Better Tables in R](https://themockup.blog/posts/2020-09-04-10-table-rules-in-r/)
 - [Testing methods for df_print-like custom table printing in quarto](https://gist.github.com/debruine/01b4ce274733a4a99622365e8c6df701)
 
+## Quarto parametrization
+- [How to use Quarto for Parameterized Reporting](https://www.mm218.dev/posts/2022-08-04-how-to-use-quarto-for-parameterized-reporting/). You know. If you wanna.
+```{r}
+#| eval: !expr params$state == "NY"
+```
+- [Quarto: Parsing an expression to chunk labels](https://stackoverflow.com/questions/74402963/quarto-parsing-an-expression-to-chunk-labels)
+You could use `!expr` in your `fig-cap`: to parse an R expression like this: `#| fig-cap: !expr cap`
+
 ## Quarto & fonts
 - COOL! [Setting up and debugging custom fonts](https://yjunechoe.github.io/posts/2021-06-24-setting-up-and-debugging-custom-fonts/)
 In quarto, you can set the custom ragg_png device (defined above) in the YAML, like so:
@@ -1852,9 +1898,6 @@ require(devtools)
 install_version("dbplyr", version = "2.1.1", repos = "http://cran.us.r-project.org")
 ```
 - [hoxo-m/dplyr.teradata](https://github.com/hoxo-m/dplyr.teradata). A Teradata Backend for dplyr.
-
-## A/B
-- COOL! [a/b testing](https://bytepawn.com/tag/ab-testing.html)
 
 ## R
 - [Using a variable in update() in R to update formula](https://stackoverflow.com/questions/38980066/using-a-variable-in-update-in-r-to-update-formula)
@@ -3276,18 +3319,6 @@ A quick introduction to 10 basic graph algorithms with examples and visualisatio
 	- [gProAnalyzer Source code](https://github.com/ngoclongha/PBR)
 	- [Stepwise structural verification of cyclic workflow models with acyclic decomposition and reduction of loops](https://www.researchgate.net/publication/269725298_Stepwise_structural_verification_of_cyclic_workflow_models_with_acyclic_decomposition_and_reduction_of_loops
 
-## Wolfram
-- [What is the simplest way to plot a decomposition tree in Mathematica?](https://stackoverflow.com/questions/5647268/what-is-the-simplest-way-to-plot-a-decomposition-tree-in-mathematica)
-- [The inverse of moving from a map to a network topology](https://community.wolfram.com/groups/-/m/t/1358396?sortMsg=Flat)
-- [Nested list to graph](https://mathematica.stackexchange.com/questions/43930/nested-list-to-graph)
-- COOL! [Краеугольные камни уничтожения медленного кода в Wolfram Language: ускоряем код в десятки, сотни и тысячи раз](https://habr.com/ru/company/wolfram/blog/473220/)
-- [Postfix with two arguments](https://mathematica.stackexchange.com/questions/56882/postfix-with-two-arguments)
-- [Substituting a Value into an Expression](https://mathematica.stackexchange.com/questions/109127/substituting-a-value-into-an-expression)
-`g /. y -> 1`
-- [Preventing evaluation of Mathematica expressions](https://stackoverflow.com/questions/4856177/preventing-evaluation-of-mathematica-expressions)
-- [Mathematica: Unevaluated vs Defer vs Hold vs HoldForm vs HoldAllComplete vs etc etc](https://stackoverflow.com/questions/1616592/mathematica-unevaluated-vs-defer-vs-hold-vs-holdform-vs-holdallcomplete-vs-etc)
-- [How to invert Expand](https://mathematica.stackexchange.com/questions/211762/how-to-invert-expand). `HornerForm`
-- [How to | Rearrange the Terms of a Polynomial](https://reference.wolfram.com/language/howto/RearrangeTheTermsOfAPolynomial.html)
 
 ## R
 - [rmonad](https://github.com/arendsee/rmonad)
@@ -5112,7 +5143,6 @@ The easiest way to quickly build DAGs and find adjustment sets and testable impl
 ## R
 - COOL! [trinker/numform](https://github.com/trinker/numform). tools to assist in the formatting of numbers and plots for publication
 - [Embedding flexdashboard in pkgdown site](https://ramikrispin.github.io/2020/09/embedding-flexdashboard-in-pkgdown-site/)
-- COOL! [From Power Calculations to P-Values: A/B Testing at Stack Overflow](https://juliasilge.com/blog/ab-testing/)
 - COOL! [10+ Guidelines for Better Tables in R](https://themockup.blog/posts/2020-09-04-10-table-rules-in-r/). Make tables people ACTUALLY want to read.
 - COOL! [dplyr 1.0.0: working across columns](https://www.tidyverse.org/blog/2020/04/dplyr-1-0-0-colwise/)
 - [Interesting new features appearing in #rstats r-devel.](https://twitter.com/BrodieGaslam/status/1303413550950612992?s=20)  We can now inspect doubles directly in R (note this was _just_ added).
@@ -5266,11 +5296,6 @@ vtree::vtree(filter(events_dt, process == "imTask"), "type activity_id", horiz =
 `grVizToImageFile(g, width = NULL, height = NULL, format = "png", folder = ".", filename)`
 `grVizToPNG(g, width = NULL, height = NULL, folder = ".", filename)`
 
-
-
-## Wolfram
-- [Most Efficient Way to Calculate the Product of All Items in a List?](https://mathematica.stackexchange.com/questions/1352/most-efficient-way-to-calculate-the-product-of-all-items-in-a-list). `Apply[Times, list]`
-
 ## python
 - COOL! [This repository enumerates all the reasons why R is better than python for DS](https://github.com/IyarLin/R-advantages-over-python)
 - [Comparison with R / R libraries](https://pandas.pydata.org/docs/getting_started/comparison/comparison_with_r.html)
@@ -5278,7 +5303,6 @@ vtree::vtree(filter(events_dt, process == "imTask"), "type activity_id", horiz =
 - [How to store a dataframe using Pandas](https://stackoverflow.com/questions/17098654/how-to-store-a-dataframe-using-pandas)
 - [R + Python = Rython](https://eranraviv.com/r-python-rython/)
 - [MANY MODELS WORKFLOWS IN PYTHON: PART I](https://www.alexpghayes.com/blog/many-models-workflows-in-python-part-i/)
-
 
 ## pandas @ python
 - [Apache Arrow and the "10 Things I Hate About pandas"](https://wesmckinney.com/blog/apache-arrow-pandas-internals/)
@@ -7993,19 +8017,6 @@ A framework that allows for easy logging of changes in data. Main features: star
 - [jennybc/pkg-dev-tutorial](https://github.com/jennybc/pkg-dev-tutorial). GitHub is home to over 40 million developers working together to host and review code, manage projects, and build software together. Package Development tutorial for useR! 2019 Toulouse https://rstd.io/pkg-dev
 - [Improvements to RSwitch in v1.3.0](https://rud.is/b/2019/08/23/improvements-to-rswitch-in-v1-3-0/)
 - [Quick Hit: A new 64-bit Swift 5 RSwitch App](https://rud.is/b/2019/08/22/quick-hit-a-new-64-bit-swift-5-rswitch-app/)
-
-## Wolfram
-- [How to make use of Associations?](https://mathematica.stackexchange.com/questions/52393/how-to-make-use-of-associations)
-- [Create a Dataset object, Association or SparesArray from a matrix {closed}](https://mathematica.stackexchange.com/questions/114081/create-a-dataset-object-association-or-sparesarray-from-a-matrix)
-- [Does anybody know the meaning of the operator & /@?](https://community.wolfram.com/groups/-/m/t/132905?sortMsg=Flat)
-- [Convert association to Matrix / List](https://mathematica.stackexchange.com/questions/176895/convert-association-to-matrix-list)
-- [Changing Values in an Association using Map](https://mathematica.stackexchange.com/questions/55494/changing-values-in-an-association-using-map?rq=1)
-- [How can I add a column into a existing Dataset?](https://mathematica.stackexchange.com/questions/51472/how-can-i-add-a-column-into-a-existing-dataset/51473#51473)
-- [Pattern Matching with Associations](https://www.wolfram.com/language/11/core-language/pattern-matching-with-associations.html)
-- [An Elementary Introduction to the Wolfram Language. 45. Datasets](https://www.wolfram.com/language/elementary-introduction/2nd-ed/45-datasets.html)
-- [Select Elements in a Dataset](https://reference.wolfram.com/language/workflow/SelectElementsInADataset.html)
-- [Assigning new value in association](https://mathematica.stackexchange.com/questions/72747/assigning-new-value-in-association)
-- [«Игра престолов»: строим инфографику об убийствах, сексе, путешествиях по Вестеросу и многое другое](https://habr.com/ru/company/wolfram/blog/451640/)
 
 # 25.08.2019
 ## R

@@ -54,6 +54,9 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 # Conferences
 - [EuroPython Conference](https://www.youtube.com/c/EuroPythonConference/playlists)
 
+# 09.01.23
+- [Why Python uses 0-based indexing](http://python-history.blogspot.com/2013/10/why-python-uses-0-based-indexing.html). Thursday, October 24, 2013
+
 # 03.01.23
 - [How do I split a string into a list of characters?](https://stackoverflow.com/questions/4978787/how-do-i-split-a-string-into-a-list-of-characters)
 - [Pandas Drop Rows From DataFrame Examples](https://sparkbyexamples.com/pandas/pandas-drop-rows-from-dataframe/)

@@ -233,3 +233,11 @@ diskutil apfs list
 diskutil mount /dev/disk1
 ```
 - [Automatically eject external disks on sleep and reconnect after on OS X](https://www.atpeaz.com/automaticlly-eject-external-disks-on-sleep-reconnect-after-os-x/)
+
+# Mac, python & homebrew
+- https://docs.brew.sh/Homebrew-and-Python
+- https://formulae.brew.sh/formula/brew-pip
+- https://gist.github.com/Daeinar/4383663
+- https://www.freecodecamp.org/news/python-version-on-mac-update/
+- https://apple.stackexchange.com/questions/284824/remove-and-reinstall-python-on-mac-can-i-trust-these-old-references
+- https://stackoverflow.com/questions/52175456/how-to-fix-missing-dependencies-for-python-homebrew

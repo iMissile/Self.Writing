@@ -1,3 +1,8 @@
+# 09.01.2023
+- [ANTLR4 parser generator runtime for Rust programming laguage](https://github.com/rrevenantt/antlr4rust)
+- [Polars](https://www.pola.rs/). Lightning-fast DataFrame library for Rust and Python
+- [Machine Learning and Rust (Part 3): Smartcore, Dataframe, and Linear Regression](https://levelup.gitconnected.com/machine-learning-and-rust-part-3-smartcore-dataframe-and-linear-regression-10451fdc2e60)
+
 # 06.01.2023
 - [How check type of variable](https://users.rust-lang.org/t/how-check-type-of-variable/33845)
 	- Also, you can use an IDE for this. A free solution that works exceptionally well is VSCode + rust-analyzer
