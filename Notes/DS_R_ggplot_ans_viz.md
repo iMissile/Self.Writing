@@ -398,7 +398,12 @@ The goal of vlbuildr is to provide an R api for building up vega-lite specs.
 - COOL! [Taking Control of Plot Scaling](https://www.tidyverse.org/blog/2020/08/taking-control-of-plot-scaling/)
 - [Modern Text Features in R](https://www.tidyverse.org/blog/2021/02/modern-text-features/)
 - COOL! [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/)
-
+- Меняем шрифт вывода кода в Quarto с помощью CSS:
+```{css, echo=FALSE}
+.cell-output-stdout {
+  font-size: 14px;
+}
+```
 
 # d3
 - [Fullstack D3 and Data Visualization: Build beautiful data visualizations with D3](https://www.amazon.com/Fullstack-Data-Visualization-beautiful-visualizations/dp/0991344650)
@@ -433,6 +438,18 @@ colors = scales::col_numeric(
 - gt & js
 	- [JavaScript onClick event - HTML table](https://stackoverflow.com/questions/21033368/javascript-onclick-event-html-table)
 	- [Find table cell value on cell (table) click using JavaScript](http://dotnetlearners.com/javascript/find-table-cell-value-on-cell-table-click-using-javascript)
+- [The table.font.size option has no effect on column labels #337 {Closed}](https://github.com/rstudio/gt/issues/337)
+- Quarto. [07 - Plots, Graphics, and tables](https://rstudio-conf-2022.github.io/get-started-quarto/materials/07-plots-tables.html#/plots-graphics-and-tables).
+- [Set {gt} table header height](https://stackoverflow.com/questions/73588003/set-gt-table-header-height). Есть такое магическое слово `inherited`, которое перекрывает настройки!
+Но для всех таблиц!!! `table.gt_table` переопределяет!
+- Slides! [Beautiful Tables in R. gt and the grammar of tables](https://themockup.blog/static/slides/intro-tables.html#1) by Tom Mock, 2021-08-30
+- COOL! [New Features and Serious Upgrades in {gt} 0.8.0](https://posit.co/blog/new-features-upgrades-in-gt-0-8-0/)
+The v0.8.0 release of gt is quite exciting so we want to show you all the things you can now do when making tables!
+- [gt tables in Quarto Pub without slide CSS styling](https://stackoverflow.com/questions/72904794/gt-tables-in-quarto-pub-without-slide-css-styling)
+
+### font issues gt + quarto
+- [Change in Quarto from Rstudio RStudio 2022.07.1+554 to 2022.07.2+576 #3357](https://github.com/quarto-dev/quarto-cli/discussions/3357). Probably caused by some CSS overwriting the table CSS.
+If you don't want Quarto or anything actually to take over the styling, then you should consider to use `gt::as_raw_html(data, inline_css = TRUE)` (https://gt.rstudio.com/reference/as_raw_html.html).
 
 ## reactable
 - [A couple useful JavaScript aggregation and formatting functions for {reactable}](https://www.zajichekstats.com/post/reactable-javascript/)

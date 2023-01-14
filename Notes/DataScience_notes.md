@@ -1386,6 +1386,11 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 12.01.2023
+## R Graphics
+- [Ragg Performance](https://rpubs.com/jeroenooms/ragg), [он же](https://ragg.r-lib.org/articles/ragg_performance.html)
+- [Saving R Graphics across OSs](https://www.jumpingrivers.com/blog/r-graphics-cairo-png-pdf-saving/)
+
 # 11.01.2023
 ## R & GPU
 - [Accelerate R Applications with CUDA](https://developer.nvidia.com/blog/accelerate-r-applications-cuda/)
@@ -1405,6 +1410,7 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Rcpp Gallery](https://gallery.rcpp.org/)
 - [Best practices for generating parsers in R](https://community.rstudio.com/t/best-practices-for-generating-parsers-in-r/5906)
 - [piton: Parsing Expression Grammars in Rcpp](https://cran.r-project.org/web/packages/piton/). A wrapper around the 'Parsing Expression Grammar Template Library'
+- [Show edge attributes as label with igraph](https://stackoverflow.com/questions/44077403/show-edge-attributes-as-label-with-igraph). `plot(pg, edge.label = nod$wt)`
 
 # 06.01.2023
 ## Shiny Dynamic interface
