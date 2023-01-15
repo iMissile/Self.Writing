@@ -1391,6 +1391,9 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Ragg Performance](https://rpubs.com/jeroenooms/ragg), [он же](https://ragg.r-lib.org/articles/ragg_performance.html)
 - [Saving R Graphics across OSs](https://www.jumpingrivers.com/blog/r-graphics-cairo-png-pdf-saving/)
 
+## XML
+- [pugixml](https://pugixml.org/). Light-weight, simple and fast XML parser for C++ with XPath support
+
 # 11.01.2023
 ## R & GPU
 - [Accelerate R Applications with CUDA](https://developer.nvidia.com/blog/accelerate-r-applications-cuda/)
