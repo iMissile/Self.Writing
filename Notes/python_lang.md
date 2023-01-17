@@ -54,6 +54,9 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 # Conferences
 - [EuroPython Conference](https://www.youtube.com/c/EuroPythonConference/playlists)
 
+# 16.01.2023
+- [Saxonica. XSLT and XQuery Processing](https://pypi.org/user/saxonica/)
+
 # 09.01.23
 - [Why Python uses 0-based indexing](http://python-history.blogspot.com/2013/10/why-python-uses-0-based-indexing.html). Thursday, October 24, 2013
 

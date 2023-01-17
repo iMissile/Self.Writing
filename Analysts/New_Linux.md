@@ -61,6 +61,8 @@ cp- Используем команду `cp` для ручного управл�
 - [“Other” permissions on files](https://unix.stackexchange.com/questions/132245/other-permissions-on-files)
 - [How to Copy Files Between Servers via SSH Using Midnight Commander](https://www.lampdocs.com/how-to-copy-files-via-ssh-using-midnight-commander/)
 - [Заходим по ssh через Midnight Commander](http://softhelp.org.ua/?p=6889)
+- Натолкнулись на проблему управления правами в проекте с Workbench. Оказалось, что система ACL куда шире, чем показывается в `ls -al`. Есть спец. утилиты `setfacl`.
+[ACL Linux с использованием setfacl](https://itsecforu.ru/2019/03/14/%F0%9F%9A%A7-acl-linux-%D1%81-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%D0%BC-setfacl/)
 
 # Windows + Linux
 - [Windows for a Linux guy](https://dev.to/azure/windows-for-a-linux-guy-390p)
