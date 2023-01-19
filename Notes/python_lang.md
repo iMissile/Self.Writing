@@ -50,9 +50,28 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 	- If you're interested in a GUI for this, take a look at [objbrowser](https://pypi.org/project/objbrowser/). It uses the inspect module from the Python standard library for the object introspection underneath. First install [PyQt](https://www.riverbankcomputing.com/software/pyqt/download) or [PySide2](https://wiki.qt.io/Qt_for_Python). Важно соблюдать версии PyQT!!! 5-ый, значит 5-ый.
 	- There is a very cool tool called [objexplore](https://github.com/kylepollina/objexplore). Here is a simple example on how to use its explore function on a pandas DataFrame.
 
+# Memory management
+- [Memory Management](https://docs.python.org/3/c-api/memory.html)
+- COOL! [Memory Management in Python](https://realpython.com/python-memory-management/)
+- [Memory Management in Python](https://www.honeybadger.io/blog/memory-management-in-python/)
+Understanding memory management is a superpower that will help you design memory-efficient applications and make it easier to debug memory issues. Join Rupesh Mishra for a deep dive into the internals of CPython.
+- [Python Memory Management: The Essential Guide](https://scoutapm.com/blog/python-memory-management)
+
 
 # Conferences
 - [EuroPython Conference](https://www.youtube.com/c/EuroPythonConference/playlists)
+
+
+
+# 18.01.2023
+- [Read data from a pandas DataFrame and create a tree using anytree in python](https://stackoverflow.com/questions/64084786/read-data-from-a-pandas-dataframe-and-create-a-tree-using-anytree-in-python)
+- [Select rows from table using tree order](https://stackoverflow.com/questions/3709292/select-rows-from-table-using-tree-order)
+- [6 Ways To Get The Last Element Of A List In Python](https://thispointer.com/6-ways-to-get-the-last-element-of-a-list-in-python/)
+- [Python: Get Index of Max Item in List](https://datagy.io/python-index-of-max-item-list/)
+- [Remove an item from a list in Python (clear, pop, remove, del)](https://note.nkmk.me/en/python-list-clear-pop-remove-del/)
+- [Python `del` statement](https://docs.python.org/3/reference/simple_stmts.html#the-del-statement)
+- [Python List `insert()`](https://www.programiz.com/python-programming/methods/list/insert)
+- [Python: Count Unique Values in a List (4 Ways)](https://datagy.io/python-count-unique-values-list/)
 
 # 16.01.2023
 - [Saxonica. XSLT and XQuery Processing](https://pypi.org/user/saxonica/)

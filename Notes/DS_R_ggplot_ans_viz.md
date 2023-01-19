@@ -304,6 +304,7 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - [Визуализируй это: визуализация данных в R](https://baltti.github.io/workshop-DH21/ggplot2-tutorial-DH.html) by Балтыжакова Татьяна
 - [Overlaying histograms with ggplot2 in R](https://stackoverflow.com/questions/6957549/overlaying-histograms-with-ggplot2-in-r)
 - COOL! [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/)
+- [The path to {ggpath}](https://posit.co/blog/the-path-to-ggpath). A 2.5 year long story about the open source R community and the #nflverse.
 
 ## highlighting
 - COOL! [gghighlight 0.3.2](https://yutani.rbind.io/post/2021-06-07-gghighlight-032/)
@@ -332,6 +333,9 @@ Generate a palette of k colors from ggsci palettes, RColorbrewer palettes and cu
 - [Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2](https://cran.r-project.org/web/packages/ggsci/vignettes/ggsci.html)
 - [ggplot: How to create a discrete color palette that fits the data automatically?](https://stackoverflow.com/questions/13995296/ggplot-how-to-create-a-discrete-color-palette-that-fits-the-data-automatically)
 - COOL! [BUILDING COLOR PALETTE PROOFS OF CONCEPT WITH PURRR AND GGPLOT2](https://data-chronicler.netlify.com/2020/01/08/2019-12-30-building-color-palette-proof-of-concepts-with-purrr-and-ggplot2/)
+- [Multiple color (and fill) scales with ggplot2](https://eliocamp.github.io/codigo-r/2018/09/multiple-color-and-fill-scales-with-ggplot2/)
+	- [`ggnewscale`](https://eliocamp.github.io/ggnewscale/) tries to make it painless to use multiple scales in `ggplot2`.
+	- [Distinct color palettes for two different groups in ggplot2](https://stackoverflow.com/questions/47901720/distinct-color-palettes-for-two-different-groups-in-ggplot2)
 
 
 

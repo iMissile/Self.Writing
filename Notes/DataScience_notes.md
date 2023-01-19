@@ -1386,10 +1386,28 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 18.01.2023
+## R
+- [{reactable} Podium – How to Build a Leaderboard in R Shiny](https://appsilon.com/reactable-podium-r-shiny/)
+
+## graph
+- [Read data from a pandas DataFrame and create a tree using anytree in python](https://stackoverflow.com/questions/64084786/read-data-from-a-pandas-dataframe-and-create-a-tree-using-anytree-in-python)
+- [Select rows from table using tree order](https://stackoverflow.com/questions/3709292/select-rows-from-table-using-tree-order)
+
+## Performance
+- [Transcoding Unicode with AVX-512: AMD Zen 4 vs. Intel Ice Lake](https://lemire.me/blog/2023/01/05/transcoding-unicode-with-avx-512-amd-zen-4-vs-intel-ice-lake/)
+- [AMD Zen 4 AVX-512 Performance Analysis On The Ryzen 9 7950X](https://www.phoronix.com/review/amd-zen4-avx512/2)
+- [Daniel Lemire's blog](https://lemire.me/blog/).
+Daniel Lemire is a computer science professor at the University of Quebec (TELUQ) in Montreal. His research is focused on software performance and data engineering. He is a techno-optimist and a free-speech advocate.
+- [AoS and SoA](https://en.wikipedia.org/wiki/AoS_and_SoA)
+- [Why is 0.1 + 0.2 not equal to 0.3?](https://lemire.me/blog/2020/10/10/why-is-0-1-0-2-not-equal-to-0-3/)
+- [A review of elementary data types : numbers and strings](https://lemire.me/blog/2022/09/30/a-review-of-elementary-data-types-numbers-and-strings/)
+
 # 12.01.2023
 ## R Graphics
 - [Ragg Performance](https://rpubs.com/jeroenooms/ragg), [он же](https://ragg.r-lib.org/articles/ragg_performance.html)
 - [Saving R Graphics across OSs](https://www.jumpingrivers.com/blog/r-graphics-cairo-png-pdf-saving/)
+- [colorRamp {grDevices}](https://stat.ethz.ch/R-manual/R-devel/library/grDevices/html/colorRamp.html). These functions return functions that interpolate a set of given colors to create new color palettes (like topo.colors) and color ramps, functions that map the interval [0, 1] to colors (like grey).
 
 ## XML
 - [pugixml](https://pugixml.org/). Light-weight, simple and fast XML parser for C++ with XPath support
@@ -5454,7 +5472,7 @@ Functions for the creation/generation and analysis of multilayer social networks
 - [wch/writetest.Rmd](https://gist.github.com/wch/9233873). String collection speed tests
 
 ## DS
-- COOL! [Data Science Meets Devops: MLOps with Jupyter, Git, & Kubernetes](https://blog.kubeflow.org/mlops/)
+- COOL! [Data Science Meets Devops: MLOps with Jupyter, Git & Kubernetes](https://blog.kubeflow.org/mlops/)
 - [Finding the New Age, for Your Age](https://flowingdata.com/2020/08/04/finding-the-new-age-for-your-age/)
 - COOL! [loadtest](https://github.com/alexfernandez/loadtest). Runs a load test on the selected HTTP or WebSockets URL. The API allows for easy integration in your own tests.
 	- [loadtest-plotter](https://github.com/ahsan/loadtest-plotter). Visualize results of npm's loadtest module.
