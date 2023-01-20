@@ -1386,9 +1386,17 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 20.01.2023
+## R
+- [Различные виды тестирования ПО](https://www.atlassian.com/ru/continuous-delivery/software-testing/types-of-software-testing)
+- COOL! [Книга «Тестирование программного обеспечения. Базовый курс.»](https://svyatoslav.biz/software_testing_book/)
+- [Тестирование программного продукта](https://www.tadviser.ru/index.php/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D1%8F:%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0)
+
 # 18.01.2023
 ## R
 - [{reactable} Podium – How to Build a Leaderboard in R Shiny](https://appsilon.com/reactable-podium-r-shiny/)
+- COOL! [R transform a list of vectors with differing lengths into a matrix](https://stackoverflow.com/questions/73168471/r-transform-a-list-of-vectors-with-differing-lengths-into-a-matrix). 
+You could also use `stri_list2matrix` function from `stringi` package. This converts the vectors of list to character matrix so you should convert it to numeric if necessary like this:
 
 ## graph
 - [Read data from a pandas DataFrame and create a tree using anytree in python](https://stackoverflow.com/questions/64084786/read-data-from-a-pandas-dataframe-and-create-a-tree-using-anytree-in-python)

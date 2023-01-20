@@ -61,7 +61,8 @@ Understanding memory management is a superpower that will help you design memory
 # Conferences
 - [EuroPython Conference](https://www.youtube.com/c/EuroPythonConference/playlists)
 
-
+# 20.01.2023
+- [Python Graph Libraries](https://wiki.python.org/moin/PythonGraphLibraries). These libraries are concerned with graphs and networks, not the plotting of numeric data in graphical form.
 
 # 18.01.2023
 - [Read data from a pandas DataFrame and create a tree using anytree in python](https://stackoverflow.com/questions/64084786/read-data-from-a-pandas-dataframe-and-create-a-tree-using-anytree-in-python)
