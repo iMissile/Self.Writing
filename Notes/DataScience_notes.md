@@ -1386,6 +1386,24 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 26.01.2023
+## R
+- [Pipes in R Tutorial For Beginners](https://www.datacamp.com/tutorial/pipe-r-tutorial)
+Learn more about the famous pipe operator %>% and other pipes in R, why and how you should use them and what alternatives you can consider!
+- [Plumbers, chains, and famous painters: The (updated) history of the pipe operator in R](http://adolfoalvarez.cl/blog/2021-09-16-plumbers-chains-and-famous-painters-the-history-of-the-pipe-operator-in-r/)
+- [How does the new native pipe placeholder works, exactly?](https://stackoverflow.com/questions/72474660/how-does-the-new-native-pipe-placeholder-works-exactly)
+- [Fix leaky pipes in R](https://www.rostrum.blog/2019/04/07/fix-leaky-pipes/)
+- COOL! отличный бенчмарк пайпов. [Magrittr pipe in R functions](https://stackoverflow.com/questions/45150225/magrittr-pipe-in-r-functions)
+- [magrittr and the %>% pipe](https://r4ds.hadley.nz/workflow-pipes.html#magrittr-and-the-pipe)
+
+# 23.01.2023
+## R
+- [Revisit .env_globals argument #153 {Closed}](https://github.com/DavisVaughan/furrr/issues/153)
+- [Options to fine tune furrr](https://furrr.futureverse.org/reference/furrr_options.html)
+- COOL! [Извлечение признаков из временных рядов](https://r-analytics.blogspot.com/2019/12/feasts.html). Пакет `feasts`.
+- [Speedups in operations with regular expressions](https://blog.r-project.org/2022/07/12/speedups-in-operations-with-regular-expressions/) by Tomas Kalibera
+- [stringi: Fast and Portable Character String Processing in R](https://stringi.gagolewski.com/)
+
 # 20.01.2023
 ## R
 - [Различные виды тестирования ПО](https://www.atlassian.com/ru/continuous-delivery/software-testing/types-of-software-testing)

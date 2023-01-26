@@ -61,8 +61,30 @@ Understanding memory management is a superpower that will help you design memory
 # Conferences
 - [EuroPython Conference](https://www.youtube.com/c/EuroPythonConference/playlists)
 
+# 25.01.2023
+- [How To Concatenate String and Int in Python](https://www.digitalocean.com/community/tutorials/python-concatenate-string-and-int)
+- [Python Unicode HOWTO](https://docs.python.org/3/howto/unicode.html)
+- [Python list comprehension using if-else](https://pythonguides.com/python-list-comprehension-using-if-else/)
+- [Python ‘If…Else’ In A List Comprehension (Examples)](https://www.codingem.com/python-if-else-in-list-comprehension/)
+- [How To Use Break, Continue, and Pass Statements when Working with Loops in Python 3](https://www.digitalocean.com/community/tutorials/how-to-use-break-continue-and-pass-statements-when-working-with-loops-in-python-3)
+
+# 24.01.2023
+webassembly
+- [Shiny for Python](https://shiny.rstudio.com/py/)
+- [Compile Python to WebAssembly (WASM)](https://pythondev.readthedocs.io/wasm.html)
+- [Running Python in the Browser with WebAssembly](https://testdriven.io/blog/python-webassembly/)
+- [Running Python in WebAssembly](https://www.fermyon.com/blog/python-wagi)
+
+# 22.01.2023
+- COOL! Подробный разбор [How do I count the occurrences of a list item?](https://stackoverflow.com/questions/2600191/how-do-i-count-the-occurrences-of-a-list-item)
+- [Python | Get the Index of first element greater than K](https://www.geeksforgeeks.org/python-get-the-index-of-first-element-greater-than-k/)
+- [Python | Get the Index of first element greater than K](https://www.geeksforgeeks.org/python-program-to-replace-list-elements-within-a-range-with-a-given-number/)
+- [Python - change value of items within specific range](https://dirask.com/posts/Python-change-value-of-items-within-specific-range-jE6y91)
+
 # 20.01.2023
 - [Python Graph Libraries](https://wiki.python.org/moin/PythonGraphLibraries). These libraries are concerned with graphs and networks, not the plotting of numeric data in graphical form.
+- COOL! [Performance of Python Types](https://bradfieldcs.com/algos/analysis/performance-of-python-types/)
+- COOL! [Python List `append()` vs `extend()`](https://blog.finxter.com/python-list-append-vs-extend/)
 
 # 18.01.2023
 - [Read data from a pandas DataFrame and create a tree using anytree in python](https://stackoverflow.com/questions/64084786/read-data-from-a-pandas-dataframe-and-create-a-tree-using-anytree-in-python)
@@ -71,6 +93,7 @@ Understanding memory management is a superpower that will help you design memory
 - [Python: Get Index of Max Item in List](https://datagy.io/python-index-of-max-item-list/)
 - [Remove an item from a list in Python (clear, pop, remove, del)](https://note.nkmk.me/en/python-list-clear-pop-remove-del/)
 - [Python `del` statement](https://docs.python.org/3/reference/simple_stmts.html#the-del-statement)
+- COOL! [Is there a simple way to delete a list element by value?](https://stackoverflow.com/questions/2793324/is-there-a-simple-way-to-delete-a-list-element-by-value)
 - [Python List `insert()`](https://www.programiz.com/python-programming/methods/list/insert)
 - [Python: Count Unique Values in a List (4 Ways)](https://datagy.io/python-count-unique-values-list/)
 
