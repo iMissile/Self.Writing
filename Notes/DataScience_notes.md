@@ -683,30 +683,34 @@ header-includes:
 
 # Visualization
 Когда спрашивают про визуализацию:
-- https://ggplot2.tidyverse.org/index.html
-- http://www.ggplot2-exts.org/gallery/
-- http://gallery.htmlwidgets.org/
-- https://www.r-graph-gallery.com/
-- https://www.data-to-viz.com/
-- https://rawgraphs.io/
-- https://plot.ly/products/cloud/
+- [ggplot2](https://ggplot2.tidyverse.org/index.html) is a system for declaratively creating graphics, based on The Grammar of Graphics.
+- [A List of ggplot2 extensions](https://exts.ggplot2.tidyverse.org/).
+- [htmlwidgets for R - gallery](http://gallery.htmlwidgets.org/)
+- [The R Graph Gallery](https://www.r-graph-gallery.com/). A collection of charts made with the R programming language.
+- [esquisse addin](https://dreamrs.github.io/esquisse/index.html) allows you to interactively explore your data by visualizing it with the ggplot2 package.
+- [Apache ECharts](https://echarts.apache.org/en/index.html). An Open Source JavaScript Visualization Library
+- [Observable Plot](https://observablehq.com/plot)
+- [Plotly Open Source Graphing Libraries](https://plotly.com/graphing-libraries/). Interactive charts and maps for Python, R, Julia, Javascript, ggplot2, F#, MATLAB®, and Dash.
 
-+ Python
-- https://matplotlib.org/
-- https://seaborn.pydata.org/
-- https://plotnine.readthedocs.io/en/stable/
-- https://echarts.apache.org/en/index.html
-- https://observablehq.com/
+Python
+- [Matplotlib](https://matplotlib.org/) is a comprehensive library for creating static, animated, and interactive visualizations in Python.
+- [Seaborn](https://seaborn.pydata.org/) is a Python data visualization library based on matplotlib.
+- [plotnine](https://plotnine.readthedocs.io/en/stable/) is an implementation of a grammar of graphics in Python, it is based on `ggplot2`.
 - [Vega-Altair: Declarative Visualization in Python](https://altair-viz.github.io/)
-- [Bokeh](https://docs.bokeh.org/en/latest/)
+- [Bokeh](https://docs.bokeh.org/en/latest/) is a Python library for creating interactive visualizations for modern web browsers.
 - [Plotly Open Source Graphing Library for Python](https://plotly.com/python/)
+- [Visidata. Data exploration at your fingertips](https://www.visidata.org/). VisiData is an interactive multitool for tabular data. It combines the clarity of a spreadsheet, the efficiency of the terminal, and the power of Python, into a lightweight utility which can handle millions of rows with ease.
+
+Общеполезное
+- [From Data to Viz](https://www.data-to-viz.com/) leads you to the most appropriate graph for your data. It links to the code to build it and lists common caveats you should avoid.
+- [The Chartmaker Directory](http://chartmaker.visualisingdata.com/) is an attempt to gather and organise a useful catalogue of references that will offer an answer to one of the most common questions in data visualisation: 'which tool do you need to make that chart?’.
+- [RAWGraphs](https://app.rawgraphs.io/) is an open source data visualization framework built with the goal of making the visual representation of complex data easy for everyone.
+
+На закуску
+- [Save the Pies for Dessert](https://www.perceptualedge.com/articles/visual_business_intelligence/save_the_pies_for_dessert.pdf) by Stephen Few
+- [The issue with pie chart](https://www.data-to-viz.com/caveat/pie.html). Bad by definition
 
 - [What Are Data Visualization Style Guidelines?](https://medium.com/data-visualization-society/style-guidelines-92ebe166addc)
-- COOL! [The Chartmaker Directory](http://chartmaker.visualisingdata.com/)
-- [Visidata. Data exploration at your fingertips](https://www.visidata.org/).
-VisiData is an interactive multitool for tabular data. It combines the clarity of a spreadsheet, the efficiency of the terminal, and the power of Python, into a lightweight utility which can handle millions of rows with ease.
-- COOL! [THE ISSUE WITH PIE CHART. Bad by definition](https://www.data-to-viz.com/caveat/pie.html)
-
 
 ## Анимация
 - COOL! [gganimate](https://gganimate.com/). gganimate extends the grammar of graphics as implemented by ggplot2 to include the description of animation. It does this by providing a range of new grammar classes that can be added to the plot object in order to customise how it should change with time.
@@ -1386,8 +1390,12 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
-# 26.01.2023
+# 29.01.2023
 ## R
+- [ROW WISE SUM – ROW SUM IN R DATAFRAME](https://www.datasciencemadesimple.com/row-wise-sum-row-sum-in-r-dataframe-2/). `base::rowSums()`
+
+# 26.01.2023
+## R pipes
 - [Pipes in R Tutorial For Beginners](https://www.datacamp.com/tutorial/pipe-r-tutorial)
 Learn more about the famous pipe operator %>% and other pipes in R, why and how you should use them and what alternatives you can consider!
 - [Plumbers, chains, and famous painters: The (updated) history of the pipe operator in R](http://adolfoalvarez.cl/blog/2021-09-16-plumbers-chains-and-famous-painters-the-history-of-the-pipe-operator-in-r/)
@@ -1403,7 +1411,7 @@ Learn more about the famous pipe operator %>% and other pipes in R, why and how 
 - COOL! [Извлечение признаков из временных рядов](https://r-analytics.blogspot.com/2019/12/feasts.html). Пакет `feasts`.
 - [Speedups in operations with regular expressions](https://blog.r-project.org/2022/07/12/speedups-in-operations-with-regular-expressions/) by Tomas Kalibera
 - [stringi: Fast and Portable Character String Processing in R](https://stringi.gagolewski.com/)
-
+- [ppsr - Predictive Power Score](https://github.com/paulvanderlaken/ppsr). The PPS is an asymmetric, data-type-agnostic score that can detect linear or non-linear relationships between two variables. The score ranges from 0 (no predictive power) to 1 (perfect predictive power). The general concept of PPS is useful for data exploration purposes, in the same way correlation analysis is.
 # 20.01.2023
 ## R
 - [Различные виды тестирования ПО](https://www.atlassian.com/ru/continuous-delivery/software-testing/types-of-software-testing)
@@ -2813,34 +2821,6 @@ Ordination methods, diversity analysis and other functions for community and veg
 	4. Look into the file for the line language =
 	5. Replace such line with language = en
 	6. Save and close the Rconsole file, then run Rgui again, and the interface will be in English
-- Проблема со шрифтами. `In grid.Call(C_textBounds, as.graphicsAnnot(x$label),  ... :
-  font family not found in Windows font database`
- - [Fonts not available in R after importing](https://stackoverflow.com/questions/56072340/fonts-not-available-in-r-after-importing)
- - [Changing fonts in ggplot2](https://stackoverflow.com/questions/34522732/changing-fonts-in-ggplot2/51906008#51906008).
- After intalling the package extraFont and running font_import like this (it took like 5 minutes):
-```
-library(extrafont)
-font_import()
-loadfonts(device = "win")
-```
-Another option is to use showtext package which supports more types of fonts (TrueType, OpenType, Type 1, web fonts, etc.) and more graphics devices, and avoids using external software such as Ghostscript.
-```
-# install.packages('showtext', dependencies = TRUE)
-library(showtext)
-```
-- COOL! [yixuan/showtext](https://github.com/yixuan/showtext). Using Fonts More Easily in R Graphs
-- [How can I resolve the "No Font Name" issue when importing fonts into R using extrafont?](https://stackoverflow.com/questions/61204259/how-can-i-resolve-the-no-font-name-issue-when-importing-fonts-into-r-using-ext)
-As it was mentioned by @Moritz Schwarz, the problem is traced to `Rttf2pt1`.
-
-According to a solution proposed here, downgrading it to 1.3.8 will fix the problem:
-```
-library(extrafont)
-library(remotes)
-remotes::install_version("Rttf2pt1", version = "1.3.8")
-extrafont::font_import()
-```
-- Тут [Correctly finds font directory, but says "No FontName. Skipping" for all fonts](https://issueexplorer.com/issue/wch/extrafont/88) это же решение.
-- [Custom fonts with ragg](http://www.r-graph-gallery.com/custom-fonts-in-R-and-ggplot2.html)
 - COOL! [svglite 2.0.0](https://www.tidyverse.org/blog/2021/02/svglite-2-0-0/)
 
 # 06.12.2021

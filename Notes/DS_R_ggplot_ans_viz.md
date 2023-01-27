@@ -9,6 +9,40 @@ The benchmark was carried out using a Google Compute n1-standard-16 instance (16
  - snap
 ```
 
+# fonts
+- Проблема со шрифтами. `In grid.Call(C_textBounds, as.graphicsAnnot(x$label),  ... :
+  font family not found in Windows font database`
+ - [Fonts not available in R after importing](https://stackoverflow.com/questions/56072340/fonts-not-available-in-r-after-importing)
+ - [Changing fonts in ggplot2](https://stackoverflow.com/questions/34522732/changing-fonts-in-ggplot2/51906008#51906008).
+ After intalling the package extraFont and running font_import like this (it took like 5 minutes):
+```
+library(extrafont)
+font_import()
+loadfonts(device = "win")
+```
+Another option is to use showtext package which supports more types of fonts (TrueType, OpenType, Type 1, web fonts, etc.) and more graphics devices, and avoids using external software such as Ghostscript.
+```
+# install.packages('showtext', dependencies = TRUE)
+library(showtext)
+```
+- COOL! [yixuan/showtext](https://github.com/yixuan/showtext). Using Fonts More Easily in R Graphs
+- [How can I resolve the "No Font Name" issue when importing fonts into R using extrafont?](https://stackoverflow.com/questions/61204259/how-can-i-resolve-the-no-font-name-issue-when-importing-fonts-into-r-using-ext)
+As it was mentioned by @Moritz Schwarz, the problem is traced to `Rttf2pt1`.
+
+According to a solution proposed here, downgrading it to 1.3.8 will fix the problem:
+```
+library(extrafont)
+library(remotes)
+remotes::install_version("Rttf2pt1", version = "1.3.8")
+extrafont::font_import()
+```
+- Тут [Correctly finds font directory, but says "No FontName. Skipping" for all fonts](https://issueexplorer.com/issue/wch/extrafont/88) это же решение.
+- [Custom fonts with ragg](http://www.r-graph-gallery.com/custom-fonts-in-R-and-ggplot2.html)
+- [Changing fonts in ggplot2](https://stackoverflow.com/questions/34522732/changing-fonts-in-ggplot2)
+- [Can't change fonts in ggplot/geom_text](https://stackoverflow.com/questions/14733732/cant-change-fonts-in-ggplot-geom-text)
+You must import the system fonts using the command:
+`font_import(paths = NULL, recursive = TRUE, prompt = TRUE, pattern = NULL)`. If you have a lot of fonts, this solution will take a long time. Use `pattern = "Times"` or something to reduce the number of fonts loaded
+
 # ggplot
 - COOL! Slides. [Designing ggplots. making clear figures that communicate](https://designing-ggplots.netlify.app/#1)
 - Slides. [Creating Beautiful Data Visualizations in R: a ggplot2 Crash Course](https://sctyner.github.io/talks/Conferences/user2020/#1)
@@ -30,10 +64,7 @@ ggplot(diamonds, aes(carat)) +
 ```
 - COOL! [giocomai/ganttrify](https://github.com/giocomai/ganttrify). Create beautiful Gantt charts with ggplot2 https://apps.europeandatajournalism.e…
 - `ggplot::geom_curve`. Красиво делают стрелочки для надписей на графике. [eRum 2020. Tips from an R Journalist](http://www.machlis.com/eRum2020/#17)
-- [Changing fonts in ggplot2](https://stackoverflow.com/questions/34522732/changing-fonts-in-ggplot2)
-- [Can't change fonts in ggplot/geom_text](https://stackoverflow.com/questions/14733732/cant-change-fonts-in-ggplot-geom-text)
-You must import the system fonts using the command:
-`font_import(paths = NULL, recursive = TRUE, prompt = TRUE, pattern = NULL)`. If you have a lot of fonts, this solution will take a long time. Use `pattern = "Times"` or something to reduce the number of fonts loaded
+
 - COOL! [{mdthemes} is on CRAN: markdown powered themes for {ggplot2}](https://thomasadventure.blog/posts/mdthemes-is-on-cran-markdown-powered-themes-for-ggplot2/)
 - [Allow hms object in breaks argument to scale_*_date {closed}](https://github.com/tidyverse/ggplot2/issues/2894)
 - [ggplot2 3.3.0](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/). Bi-directional geoms and stats!!!
