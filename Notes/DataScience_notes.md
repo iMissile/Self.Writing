@@ -683,6 +683,7 @@ header-includes:
 
 # Visualization
 Когда спрашивают про визуализацию:
+|> Когда хотят поговорить про визуализацию | R part
 - [ggplot2](https://ggplot2.tidyverse.org/index.html) is a system for declaratively creating graphics, based on The Grammar of Graphics.
 - [A List of ggplot2 extensions](https://exts.ggplot2.tidyverse.org/).
 - [htmlwidgets for R - gallery](http://gallery.htmlwidgets.org/)
@@ -692,21 +693,21 @@ header-includes:
 - [Observable Plot](https://observablehq.com/plot)
 - [Plotly Open Source Graphing Libraries](https://plotly.com/graphing-libraries/). Interactive charts and maps for Python, R, Julia, Javascript, ggplot2, F#, MATLAB®, and Dash.
 
-Python
+|> Когда хотят поговорить про визуализацию | Python part
 - [Matplotlib](https://matplotlib.org/) is a comprehensive library for creating static, animated, and interactive visualizations in Python.
 - [Seaborn](https://seaborn.pydata.org/) is a Python data visualization library based on matplotlib.
 - [plotnine](https://plotnine.readthedocs.io/en/stable/) is an implementation of a grammar of graphics in Python, it is based on `ggplot2`.
 - [Vega-Altair: Declarative Visualization in Python](https://altair-viz.github.io/)
 - [Bokeh](https://docs.bokeh.org/en/latest/) is a Python library for creating interactive visualizations for modern web browsers.
-- [Plotly Open Source Graphing Library for Python](https://plotly.com/python/)
+- [Plotly Open Source Graphing Libraries](https://plotly.com/graphing-libraries/). Interactive charts and maps for Python, R, Julia, Javascript, ggplot2, F#, MATLAB®, and Dash.
 - [Visidata. Data exploration at your fingertips](https://www.visidata.org/). VisiData is an interactive multitool for tabular data. It combines the clarity of a spreadsheet, the efficiency of the terminal, and the power of Python, into a lightweight utility which can handle millions of rows with ease.
 
-Общеполезное
+|> Когда хотят поговорить про визуализацию | Generic part
 - [From Data to Viz](https://www.data-to-viz.com/) leads you to the most appropriate graph for your data. It links to the code to build it and lists common caveats you should avoid.
 - [The Chartmaker Directory](http://chartmaker.visualisingdata.com/) is an attempt to gather and organise a useful catalogue of references that will offer an answer to one of the most common questions in data visualisation: 'which tool do you need to make that chart?’.
 - [RAWGraphs](https://app.rawgraphs.io/) is an open source data visualization framework built with the goal of making the visual representation of complex data easy for everyone.
 
-На закуску
+|> Когда хотят поговорить про визуализацию | Dessert
 - [Save the Pies for Dessert](https://www.perceptualedge.com/articles/visual_business_intelligence/save_the_pies_for_dessert.pdf) by Stephen Few
 - [The issue with pie chart](https://www.data-to-viz.com/caveat/pie.html). Bad by definition
 
@@ -1403,6 +1404,7 @@ Learn more about the famous pipe operator %>% and other pipes in R, why and how 
 - [Fix leaky pipes in R](https://www.rostrum.blog/2019/04/07/fix-leaky-pipes/)
 - COOL! отличный бенчмарк пайпов. [Magrittr pipe in R functions](https://stackoverflow.com/questions/45150225/magrittr-pipe-in-r-functions)
 - [magrittr and the %>% pipe](https://r4ds.hadley.nz/workflow-pipes.html#magrittr-and-the-pipe)
+- [Create tabs of View() output for each chained pipe](https://github.com/daranzolin/ViewPipeSteps)
 
 # 23.01.2023
 ## R
