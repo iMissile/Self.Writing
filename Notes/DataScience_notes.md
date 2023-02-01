@@ -244,7 +244,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 
 
 # Articles
-- [Using AWK and R to parse 25tb](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/)
+- [Using AWK and R to parse 25tb](https://livefreeordichotomize.com/posts/2019-06-04-using-awk-and-r-to-parse-25tb/)
 - [Command-line Tools can be 235x Faster than your Hadoop Cluster](https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html)
 - COOL! tl;dr: a gajillion dollar online game takes 4X as long to start because it parses a 10MB JSON file in a bad way. [How I cut GTA Online loading times by 70%](https://nee.lv/2021/02/28/How-I-cut-GTA-Online-loading-times-by-70/)
 - [Filter data before reading with awk and R. Using awk & R to map Fishing Effort](https://luisdva.github.io/rstats/r-awk/)
@@ -8504,7 +8504,7 @@ The fourth release of the binb package just arrived on CRAN. binb regroups four 
 - [Fast data loading from files to R](https://appsilon.com/fast-data-loading-from-files-to-r/)
 - [Working with files on disk. Taking the advantage of multicore machines](https://cran.r-project.org/web/packages/text2vec/vignettes/files-multicore.html)
 - [Handling large data sets in R](https://rpubs.com/msundar/large_data_analysis)
-- [Using AWK and R to parse 25tb](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/)
+- [Using AWK and R to parse 25tb](https://livefreeordichotomize.com/posts/2019-06-04-using-awk-and-r-to-parse-25tb/)
 - [Fitting logistic regression on 100gb dataset on a laptop](https://dsnotes.com/post/2017-02-07-large-data-feature-hashing-and-online-learning-part-2/) by Dmitriy Selivanov
 - [FastR](https://m-clark.github.io/docs/fastr.html) by Michael Clark
 - [Purrr - tips and tricks](https://www.hvitfeldt.me/blog/purrr-tips-and-tricks/) by Emil Hvitfeldt
@@ -8656,7 +8656,7 @@ The power spectral density (PSD) is a function that describes the distribution o
  - Machine learning: Feed data into cool algorithms. Insights will be obvious!
  - Statistics: The insights will never obvious.
 ```
-- COOL! COOL! [Using AWK and R to parse 25tb](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/)
+- COOL! COOL! [Using AWK and R to parse 25tb](https://livefreeordichotomize.com/posts/2019-06-04-using-awk-and-r-to-parse-25tb/)
 
 ## R
 - COOL! [Add row to dataframe](https://stackoverflow.com/questions/28467068/add-row-to-dataframe)

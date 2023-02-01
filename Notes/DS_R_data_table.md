@@ -96,6 +96,8 @@ A[B, on = 'a', bb := i.b]
 	- [JOINing data in R using data.table](https://rstudio-pubs-static.s3.amazonaws.com/52230_5ae0d25125b544caab32f75f0360e775.html) by Ronald Stalder
 	- Тут иллюстрированный пример. [What does < stand for in data.table joins with on=](https://stackoverflow.com/questions/52793037/what-does-stand-for-in-data-table-joins-with-on)
 	- COOL! [Notes on data.table in R](http://jeffmax.io/notes-on-datatable-in-r.html)
+	- [Recode a variable using data.table](https://stackoverflow.com/questions/44590935/recode-a-variable-using-data-table)
+	`DT[.(V1 = 1:2, to = 0:1), on = "V1", V1 := i.to]`
 - [How to extract the first n rows per group?](https://stackoverflow.com/questions/16325641/how-to-extract-the-first-n-rows-per-group)
 `DT[, .SD[1:2], by=date]` or `DT[DT[, .I[1:2], by = date]$V1]`
 - COOL! Варианты с бенчмарками. [How to apply same function to every specified column in a data.table](https://stackoverflow.com/questions/16846380/how-to-apply-same-function-to-every-specified-column-in-a-data-table)

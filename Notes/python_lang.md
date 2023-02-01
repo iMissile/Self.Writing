@@ -61,6 +61,41 @@ Understanding memory management is a superpower that will help you design memory
 # Conferences
 - [EuroPython Conference](https://www.youtube.com/c/EuroPythonConference/playlists)
 
+# XPROM
+- [clickhouse-driver](https://clickhouse-driver.readthedocs.io/en/latest/). Python driver for ClickHouse.
+	- Ставим в конфигурации `pip install clickhouse-driver[lz4,zstd]`
+	- [API](https://clickhouse-driver.readthedocs.io/en/latest/api.html). This part of the documentation covers basic classes of the driver: Client, Connection and others.
+- [ClickHouse and Python: Getting to Know the Clickhouse-driver Client](https://altinity.com/blog/clickhouse-and-python-getting-to-know-the-clickhouse-driver-client)
+- [Python Integration with ClickHouse Connect](https://clickhouse.com/docs/en/integrations/language-clients/python/intro/)
+- [Pola.rs](https://pola-rs.github.io/polars-book/user-guide/quickstart/intro.html)
+	- Ставим `pip install polars`
+- Polars. [Read from MySQL, Postgres, Sqlite, Redshift, Clickhouse](https://pola-rs.github.io/polars-book/user-guide/howcani/io/read_db.html)
+- [ConnectorX: The fastest library for loading your Python data frame](https://towardsdatascience.com/connectorx-the-fastest-way-to-load-data-from-databases-a65d4d4062d5)
+- [connectorx](https://pypi.org/project/connectorx/). ConnectorX enables you to load data from databases into Python in the fastest and most memory efficient way.
+	- [Строки подключения](https://sfu-db.github.io/connector-x/databases.html)
+	- Clickhouse (through mysql protocol). `text`: MySQL Text protocol, slower than binary, recommend to use only when binary protocol is not supported by the source (e.g. Clickhouse).
+- [Polars Python API reference](https://pola-rs.github.io/polars/py-polars/html/reference/index.html)
+
+# Pola.rs
+- [Polars: Create column with fixed value from variable](https://stackoverflow.com/questions/71340260/polars-create-column-with-fixed-value-from-variable)
+- [Polars. Adding Columns](https://calmcode.io/polars/with_columns.html). 
+In pandas you may be used to calling `.assign()` when you want to add a new column. In polars you'd use the `with_columns` method instead.
+- [`With_columns`](https://pola-rs.github.io/polars-book/user-guide/quickstart/quick-exploration-guide.html?highlight=with_columns#with_columns]
+- [Cheatsheet for Pandas to Polars](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/)
+- [Tips and Tricks for Working with Strings in Polars](https://towardsdatascience.com/tips-and-tricks-for-working-with-strings-in-polars-ec6bb74aeec2). From sorting column names to splitting columns
+
+
+# 30.01.2023
+- [Print lists in Python (5 Different Ways)](https://www.geeksforgeeks.org/print-lists-in-python-4-different-ways/)
+	- Without using loops: `*` symbol is use to print the list elements in a single line with space. To print all elements in new lines or separated by comma use `sep=”\n”` or `sep=”, ”` respectively. `print(*a, sep = ", ")`
+- Use List Comprehension and the `enumerate()` Function to Get the Indices of All Occurrences of an Item in A List
+```
+programming_languages = ["JavaScript","Python","Java","Python","C++","Python"]
+python_indices  = [index for (index, item) in enumerate(programming_languages) if item == "Python"]
+print(python_indices)
+```
+- COOL! [Check if element exists in list in Python](https://www.geeksforgeeks.org/check-if-element-exists-in-list-in-python/)
+
 # 25.01.2023
 - [How To Concatenate String and Int in Python](https://www.digitalocean.com/community/tutorials/python-concatenate-string-and-int)
 - [Python Unicode HOWTO](https://docs.python.org/3/howto/unicode.html)
@@ -522,8 +557,7 @@ Every Pythonista Must Have A Glance At These Libraries](https://blog.octachart.c
 
 # 29.10.2021
 ## python
-- [The Basics of Indexing and Slicing Python Lists](https://towardsdatascience.com/the-basics-of-indexing-and-slicing-python-lists-2d12c90a94cf). A guide for beginners, by a beginner.
-Indexing, Slicing, Stepping.
+- COOL! [The Basics of Indexing and Slicing Python Lists](https://towardsdatascience.com/the-basics-of-indexing-and-slicing-python-lists-2d12c90a94cf). A guide for beginners, by a beginner. Indexing, Slicing, Stepping.
 В частности, Negative step values reverse the direction in which the slicer iterates through the original list: `my_list[::-1]`
 
 # 26.10.2021
