@@ -1394,6 +1394,8 @@ This is where we will store all of the materials and links for rstudio::conf 202
 # 29.01.2023
 ## R
 - [ROW WISE SUM – ROW SUM IN R DATAFRAME](https://www.datasciencemadesimple.com/row-wise-sum-row-sum-in-r-dataframe-2/). `base::rowSums()`
+- [fastmatch: Fast 'match()' Function](https://cran.r-project.org/web/packages/fastmatch/index.html)
+- [fasttime: Fast Utility Function for Time Parsing and Conversion](https://cran.r-project.org/web/packages/fasttime/index.html)
 
 # 26.01.2023
 ## R pipes
