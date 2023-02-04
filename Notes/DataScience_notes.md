@@ -1391,6 +1391,11 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 02.02.2023
+## R
+- [R: select columns in matrix without col. `X`](https://stackoverflow.com/questions/18082176/r-select-columns-in-matrix-without-col-x)
+
+
 # 29.01.2023
 ## R
 - [ROW WISE SUM – ROW SUM IN R DATAFRAME](https://www.datasciencemadesimple.com/row-wise-sum-row-sum-in-r-dataframe-2/). `base::rowSums()`

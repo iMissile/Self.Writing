@@ -7,6 +7,13 @@
 	- [The one pandas internal I teach all my new colleagues: the BlockManager](https://uwekorn.com/2020/05/24/the-one-pandas-internal.html)
 	- [What is BlockManager and why does it exist?](https://github.com/pydata/pandas-design/blob/a0f1d32094f5030cc06ec09c8582b5a7b7798065/source/internal-architecture.rst#what-is-blockmanager-and-why-does-it-exist)
 	- [Block manager rewrite](https://pandas.pydata.org/docs/development/roadmap.html#block-manager-rewrite)
+- Сборка
+	- [What the f*ck Python!](https://github.com/satwikkansal/wtfpython). Exploring and understanding Python through surprising snippets
+	- [python-code-disasters](https://github.com/sobolevn/python-code-disasters)
+- pandas дичь
+	- Полная дичь. [3 ways to deal with `SettingWithCopyWarning` in Pandas](https://www.analyticsvidhya.com/blog/2021/11/3-ways-to-deal-with-settingwithcopywarning-in-pandas/)
+	- [How to Avoid a Pandas Pandemonium](https://towardsdatascience.com/how-to-avoid-a-pandas-pandemonium-e1bed456530)
+	- [Pandas vectorization: faster code, slower code, bloated memory](https://pythonspeed.com/articles/pandas-vectorization/)
 
 # недостатки python
 - [Почему будущее не за Python](https://habr.com/ru/company/edison/blog/495610/)
@@ -87,6 +94,22 @@ In pandas you may be used to calling `.assign()` when you want to add a new colu
 - COOL!!! This is a guest post by Vincent D. Warmerdam. [The Expressions API in Polars is Amazing](https://www.pola.rs/posts/the-expressions-api-in-polars-is-amazing/)
 - COOL!!! [Window functions 🚀🚀](https://pola-rs.github.io/polars-book/user-guide/dsl/window_functions.html)
 - [How to perform computations easily between every column in a polars DataFrame and the mean of that column](https://stackoverflow.com/questions/72539701/how-to-perform-computations-easily-between-every-column-in-a-polars-dataframe-an)
+- [Pandas vs Polar - A look at performance](https://studioterabyte.nl/en/blog/polars-vs-pandas)
+- [Pandas vs. Polars: A Syntax and Speed Comparison](https://towardsdatascience.com/pandas-vs-polars-a-syntax-and-speed-comparison-5aa54e27497e)
+- polars literal
+	- [Extract value of Polars literal](https://stackoverflow.com/questions/71721497/extract-value-of-polars-literal).
+```
+import polars as pl
+expr = pl.lit(0.5)
+val = pl.select(expr)[0, 0]
+```
+Explanation: a polars literal is an `Expr` object. An `Expr` object can be evaluated using `pl.select()`. That returns a DataFrame. To get the value in the first row and column of that DataFrame, use `[0, 0]`
+- [window agg over one value, but return another via Polars](https://stackoverflow.com/questions/72019524/window-agg-over-one-value-but-return-another-via-polars).
+- [Py Polars: How to filter using 'in' and 'not in' like in SQL](https://stackoverflow.com/questions/71850031/py-polars-how-to-filter-using-in-and-not-in-like-in-sql)
+- [How to filter df by value list with Polars?](https://stackoverflow.com/questions/74856449/how-to-filter-df-by-value-list-with-polars)
+- [Lightweight syntax for filtering a polars DataFrame on a multi-column key?](https://stackoverflow.com/questions/72546690/lightweight-syntax-for-filtering-a-polars-dataframe-on-a-multi-column-key)
+- [What is the recommended way for retrieving row numbers (index) for polars?](https://stackoverflow.com/questions/72474673/what-is-the-recommended-way-for-retrieving-row-numbers-index-for-polars). Use `with_row_count()`
+
 
 # 30.01.2023
 - [Print lists in Python (5 Different Ways)](https://www.geeksforgeeks.org/print-lists-in-python-4-different-ways/)
