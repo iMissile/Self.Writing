@@ -356,6 +356,17 @@ When we store the column names on to a variable, e.g., DT_n = names(DT), and the
 - COOL! [Fast way to replace all blanks with `NA` in R `data.table`](https://stackoverflow.com/questions/31516192/fast-way-to-replace-all-blanks-with-na-in-r-data-table)
 - [Binding list of data.tables by columns, and by reference](https://stackoverflow.com/questions/48333523/binding-list-of-data-tables-by-columns-and-by-reference)
 `setDT(unlist(L, recursive = FALSE), check.names = TRUE)`
+- Проблема с передачей `:=` в пакеты. Выплыло из вопроса Константина Казарина:
+```
+ webshot2::rmdshot("./support/quarto/data_table_in_qmd.qmd", file = "tst.png")
+
+ При вызове генератора из командной строки получаем ошибку
+ Error in `:=`(value, gear + carb) : 
+   Check that is.data.table(DT) == TRUE. Otherwise, := and `:=`(...) are defined for use in j, once only and in particular ways. See help(":=").
+```
+	- [Using data.table package inside my own package](https://stackoverflow.com/questions/10527072/using-data-table-package-inside-my-own-package/10529888#10529888)
+	- [R data.table ':=' works in direct call, but same function in a package fails](https://stackoverflow.com/questions/27980835/r-data-table-works-in-direct-call-but-same-function-in-a-package-fails)
+	- [Importing data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-importing.html)
 
 
 ## data.table joins

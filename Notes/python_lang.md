@@ -14,6 +14,9 @@
 	- Полная дичь. [3 ways to deal with `SettingWithCopyWarning` in Pandas](https://www.analyticsvidhya.com/blog/2021/11/3-ways-to-deal-with-settingwithcopywarning-in-pandas/)
 	- [How to Avoid a Pandas Pandemonium](https://towardsdatascience.com/how-to-avoid-a-pandas-pandemonium-e1bed456530)
 	- [Pandas vectorization: faster code, slower code, bloated memory](https://pythonspeed.com/articles/pandas-vectorization/)
+- Base Python:
+- А вот еще сказочный треш от питона, все забывал его упомянуть.
+пункт ["Method 2 Creating a 2-D list"](https://www.geeksforgeeks.org/python-using-2d-arrays-lists-the-right-way/), наивный способ инициализации массива
 
 # недостатки python
 - [Почему будущее не за Python](https://habr.com/ru/company/edison/blog/495610/)
@@ -41,6 +44,8 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 $ pip install pipupgrade
 $ pipupgrade --verbose --latest --yes
 ```
+- [8 Best Ways to Check the Package Version in Python](https://blog.finxter.com/check-the-package-version-in-python)
+`pip show my_package`
 - [IPython. Interactive Computing](https://ipython.org/). Он же Jupyter.
 	- [Install](https://docs.jupyter.org/en/latest/install/notebook-classic.html) `pip3 install jupyter`
 	- [Run](https://docs.jupyter.org/en/latest/running.html#running) `jupyter notebook`
@@ -74,6 +79,8 @@ Understanding memory management is a superpower that will help you design memory
 	- [API](https://clickhouse-driver.readthedocs.io/en/latest/api.html). This part of the documentation covers basic classes of the driver: Client, Connection and others.
 - [ClickHouse and Python: Getting to Know the Clickhouse-driver Client](https://altinity.com/blog/clickhouse-and-python-getting-to-know-the-clickhouse-driver-client)
 - [Python Integration with ClickHouse Connect](https://clickhouse.com/docs/en/integrations/language-clients/python/intro/)
+- [clickhouse client and clickhouse local](https://clickhouse.com/docs/en/integrations/sql-clients/clickhouse-client-local/)
+
 - [Pola.rs](https://pola-rs.github.io/polars-book/user-guide/quickstart/intro.html)
 	- Ставим `pip install polars`
 - Polars. [Read from MySQL, Postgres, Sqlite, Redshift, Clickhouse](https://pola-rs.github.io/polars-book/user-guide/howcani/io/read_db.html)
@@ -85,15 +92,17 @@ Understanding memory management is a superpower that will help you design memory
 
 # Pola.rs
 - [Polars: Create column with fixed value from variable](https://stackoverflow.com/questions/71340260/polars-create-column-with-fixed-value-from-variable)
-- [Polars. Adding Columns](https://calmcode.io/polars/with_columns.html). 
+- [Polars. Adding Columns](https://calmcode.io/polars/with_columns.html).
 In pandas you may be used to calling `.assign()` when you want to add a new column. In polars you'd use the `with_columns` method instead.
 - [`With_columns`](https://pola-rs.github.io/polars-book/user-guide/quickstart/quick-exploration-guide.html?highlight=with_columns#with_columns]
 - [Cheatsheet for Pandas to Polars](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/)
 - [Tips and Tricks for Working with Strings in Polars](https://towardsdatascience.com/tips-and-tricks-for-working-with-strings-in-polars-ec6bb74aeec2). From sorting column names to splitting columns
 - [How to get row_count for a group in polars?](https://stackoverflow.com/questions/70044520/how-to-get-row-count-for-a-group-in-polars)
 - COOL!!! This is a guest post by Vincent D. Warmerdam. [The Expressions API in Polars is Amazing](https://www.pola.rs/posts/the-expressions-api-in-polars-is-amazing/)
+	- [A benchmark with Polars](https://gist.github.com/koaning/5a0f3f27164859c42da5f20148ef3856)
 - COOL!!! [Window functions 🚀🚀](https://pola-rs.github.io/polars-book/user-guide/dsl/window_functions.html)
 - [How to perform computations easily between every column in a polars DataFrame and the mean of that column](https://stackoverflow.com/questions/72539701/how-to-perform-computations-easily-between-every-column-in-a-polars-dataframe-an)
+
 - [Pandas vs Polar - A look at performance](https://studioterabyte.nl/en/blog/polars-vs-pandas)
 - [Pandas vs. Polars: A Syntax and Speed Comparison](https://towardsdatascience.com/pandas-vs-polars-a-syntax-and-speed-comparison-5aa54e27497e)
 - polars literal
@@ -110,6 +119,56 @@ Explanation: a polars literal is an `Expr` object. An `Expr` object can be evalu
 - [Lightweight syntax for filtering a polars DataFrame on a multi-column key?](https://stackoverflow.com/questions/72546690/lightweight-syntax-for-filtering-a-polars-dataframe-on-a-multi-column-key)
 - [What is the recommended way for retrieving row numbers (index) for polars?](https://stackoverflow.com/questions/72474673/what-is-the-recommended-way-for-retrieving-row-numbers-index-for-polars). Use `with_row_count()`
 
+=======
+- COOL! [polars equivalent to pandas groupby shift()](https://stackoverflow.com/questions/73101521/polars-equivalent-to-pandas-groupby-shift)
+- [Grouping Rows in Polars](https://stackoverflow.com/questions/72520291/grouping-rows-in-polars)
+- [polars equivalent to `groupby.last`](https://stackoverflow.com/questions/73113290/polars-equivalent-to-groupby-last)
+```
+    df
+    .select(['index', 'value'])
+    .unique(subset='index', keep="last")
+```
+- [Filter DataFrame using within-group expression](https://music.yandex.ru/album/9062303/track/59241827)
+`df.filter((pl.col("y") == pl.max("y").over("x")))`
+- [Set multiple values simultaneously #1160 {Closed}](https://github.com/pola-rs/polars/issues/1160)
+- [Polars: how to add a column with numerical?](https://stackoverflow.com/questions/72245243/polars-how-to-add-a-column-with-numerical)
+- [Py Polars: How to filter using 'in' and 'not in' like in SQL](https://stackoverflow.com/questions/71850031/py-polars-how-to-filter-using-in-and-not-in-like-in-sql).
+You were close.
+```
+df.filter(~pl.col('fruits').is_in(exclude_fruit))
+```
+- [Removing null values on selected columns only in Polars dataframe](https://stackoverflow.com/questions/73933043/removing-null-values-on-selected-columns-only-in-polars-dataframe)
+The `~` in front of the `pl.all` stands for negation. Notice that we didn't need the `col_list`.
+- [In polars, can I create a categorical type with levels myself?](https://stackoverflow.com/questions/70934789/in-polars-can-i-create-a-categorical-type-with-levels-myself)
+- [Apply function to all columns of a Polars-DataFrame](https://stackoverflow.com/questions/67834912/apply-function-to-all-columns-of-a-polars-dataframe)
+```
+df.select([
+    np.log2(pl.all())
+])
+```
+- [How to select columns by data type in Polars?](https://stackoverflow.com/questions/72359181/how-to-select-columns-by-data-type-in-polars). `print(df.select([pl.col(pl.Utf8), pl.col(pl.Int64)]))`
+- [Add a method to extract a column as a series #1346 {Closed}](https://github.com/pola-rs/polars/issues/1346)
+- [Get column as `pl.Series` not as `pl.Dataframe` in polars](https://stackoverflow.com/questions/69916200/get-column-as-pl-series-not-as-pl-dataframe-in-polars)
+- [`polars.Series.to_list`](https://pola-rs.github.io/polars/py-polars/html/reference/series/api/polars.Series.to_list.html#polars.Series.to_list). Convert this Series to a Python List. This operation clones data.
+
+
+# 08.02.2023
+- [Difference Between Multithreading vs Multiprocessing in Python](https://www.geeksforgeeks.org/difference-between-multithreading-vs-multiprocessing-in-python/)
+- [Асинхронное программирование для начинающих](https://python-scripts.com/async)
+- [Асинхронное программирование в Python](https://tproger.ru/translations/asynchronous-programming-in-python/)
+
+# 06.02.2023
+- [Python | Using 2D arrays/lists the right way](https://www.geeksforgeeks.org/python-using-2d-arrays-lists-the-right-way/). Тут куча граблей указана!!!
+- COOL! [printing a two dimensional array in python](https://stackoverflow.com/questions/17870612/printing-a-two-dimensional-array-in-python)
+```
+for i in A:
+    print('\t'.join(map(str, i)))
+```
+or `print('\n'.join('\t'.join(map(str, row)) for row in A))`
+- [Two-dimensional lists (arrays)](https://snakify.org/en/lessons/two_dimensional_lists_arrays/). Тут пошаговый разбор и исполнение.
+- [Python – Flatten a list of lists to a single list](https://datascienceparichay.com/article/python-flatten-a-list-of-lists-to-a-single-list/)
+- [6 Ways to Concatenate Lists in Python](https://www.digitalocean.com/community/tutorials/concatenate-lists-python).
+Python’s `'*'` operator can be used to easily concatenate two lists in Python. The `‘*’` operator in Python basically unpacks the collection of items at the index arguments.
 
 # 30.01.2023
 - [Print lists in Python (5 Different Ways)](https://www.geeksforgeeks.org/print-lists-in-python-4-different-ways/)
@@ -128,6 +187,7 @@ print(python_indices)
 - [Python list comprehension using if-else](https://pythonguides.com/python-list-comprehension-using-if-else/)
 - [Python ‘If…Else’ In A List Comprehension (Examples)](https://www.codingem.com/python-if-else-in-list-comprehension/)
 - [How To Use Break, Continue, and Pass Statements when Working with Loops in Python 3](https://www.digitalocean.com/community/tutorials/how-to-use-break-continue-and-pass-statements-when-working-with-loops-in-python-3)
+- [Break out of nested loops in Python](https://note.nkmk.me/en/python-break-nested-loops/). 5 ways
 
 # 24.01.2023
 webassembly

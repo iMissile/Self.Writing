@@ -1401,6 +1401,7 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [ROW WISE SUM – ROW SUM IN R DATAFRAME](https://www.datasciencemadesimple.com/row-wise-sum-row-sum-in-r-dataframe-2/). `base::rowSums()`
 - [fastmatch: Fast 'match()' Function](https://cran.r-project.org/web/packages/fastmatch/index.html)
 - [fasttime: Fast Utility Function for Time Parsing and Conversion](https://cran.r-project.org/web/packages/fasttime/index.html)
+- [Understanding the Basics of Package Writing in R](https://cosimameyer.com/post/understanding-the-basics-of-package-writing-in-r/)
 
 # 26.01.2023
 ## R pipes
@@ -1575,6 +1576,8 @@ readr::read_csv(readr_example("mtcars.csv"), col_types = cols(.default = "c"))
 ## R & parallel
 - [Do I have to `registerDoParallel()` and `stopCluster()` every time I want to use `foreach()` in R?](https://stackoverflow.com/questions/52980793/do-i-have-to-registerdoparallel-and-stopcluster-every-time-i-want-to-use-for)
 - ["un-register" a doParallel cluster](https://stackoverflow.com/questions/25097729/un-register-a-doparallel-cluster)
+- COOL! Lession. [Teaching Website for Advanced R. R Futures and Parallel Processing](https://dcgerard.github.io/advancedr/09_future.html). David Gerard
+- COOL! Утечка памяти в `future_walk`. Разбор деталей. [Return NULL from each function call when using future_walk() #205 {Closed}](https://github.com/DavisVaughan/furrr/issues/205)
 
 ## ML in R (STC)
 - [R: using ranger with caret, tuneGrid argument](https://stackoverflow.com/questions/48334929/r-using-ranger-with-caret-tunegrid-argument)

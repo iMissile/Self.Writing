@@ -337,6 +337,15 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - COOL! [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/)
 - [The path to {ggpath}](https://posit.co/blog/the-path-to-ggpath). A 2.5 year long story about the open source R community and the #nflverse.
 
+## Dual axes
+- [Dual axes time series plots may be ok sometimes after all](http://ellisp.github.io/blog/2016/08/18/dualaxes). Dual axis time series charts are often deprecated, but the standard alternatives have weaknesses too. In some circumstances, if done carefully, dual axis time series charts may be ok after all. In particular, you can choose two vertical scales so the drawing on the page is equivalent to drawing two indexed series, but retaining the meaningful mapping to the scale of the original variables.
+- [Dual axes time series plots with various more awkward data](http://ellisp.github.io/blog/2016/08/28/dualaxes2). TL;DR Summary:
+I finish enhancements of the dual axes time series plotting function in R so it handles reasonably well series that may start at different times, have different frequencies, or include negatives.
+- [Two Y-Axes](https://kieranhealy.org/blog/archives/2016/01/16/two-y-axes/). Matt remarked that “Friends don’t let friends use two y-axes”. It’s a good rule. The topic came up a couple of times during the data visualization short course I taught last semester. Using two y-axes makes it even easier than usual to fool yourself (or someone else) about the degree of association between two variables. This is because you can adjust the scaling of the axes to relative to one another in way that moves the data series around more or less however you like.
+- [Dual axes for ggplot2](https://gist.github.com/jslefche/e4c0e9f57f0af49fca87). Modified from: [ggplot2-adding-secondary-transformed-x-axis-on-top-of-plot](https://stackoverflow.com/questions/21026598/ggplot2-adding-secondary-transformed-x-axis-on-top-of-plot) & [dual_axis_in_ggplot2](https://rpubs.com/kohske/dual_axis_in_ggplot2)
+- [R: single plot with two different y-axes](http://www.gettinggeneticsdone.com/2015/04/r-single-plot-with-two-different-y-axes.html)
+- [Dual axes charts in ggplot2 - why they can be useful and how to make them](https://www.johnmackintosh.net/blog/2022-03-13-dual-axis/)
+
 ## highlighting
 - COOL! [gghighlight 0.3.2](https://yutani.rbind.io/post/2021-06-07-gghighlight-032/)
 	- [Highlighting with ggplot2: The Old School and New School Way](https://www.littlemissdata.com/blog/highlight)
