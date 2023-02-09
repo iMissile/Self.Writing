@@ -119,7 +119,6 @@ Explanation: a polars literal is an `Expr` object. An `Expr` object can be evalu
 - [Lightweight syntax for filtering a polars DataFrame on a multi-column key?](https://stackoverflow.com/questions/72546690/lightweight-syntax-for-filtering-a-polars-dataframe-on-a-multi-column-key)
 - [What is the recommended way for retrieving row numbers (index) for polars?](https://stackoverflow.com/questions/72474673/what-is-the-recommended-way-for-retrieving-row-numbers-index-for-polars). Use `with_row_count()`
 
-=======
 - COOL! [polars equivalent to pandas groupby shift()](https://stackoverflow.com/questions/73101521/polars-equivalent-to-pandas-groupby-shift)
 - [Grouping Rows in Polars](https://stackoverflow.com/questions/72520291/grouping-rows-in-polars)
 - [polars equivalent to `groupby.last`](https://stackoverflow.com/questions/73113290/polars-equivalent-to-groupby-last)
@@ -150,6 +149,8 @@ df.select([
 - [Add a method to extract a column as a series #1346 {Closed}](https://github.com/pola-rs/polars/issues/1346)
 - [Get column as `pl.Series` not as `pl.Dataframe` in polars](https://stackoverflow.com/questions/69916200/get-column-as-pl-series-not-as-pl-dataframe-in-polars)
 - [`polars.Series.to_list`](https://pola-rs.github.io/polars/py-polars/html/reference/series/api/polars.Series.to_list.html#polars.Series.to_list). Convert this Series to a Python List. This operation clones data.
+- [Select all columns where column name starts with string](https://stackoverflow.com/questions/72920189/select-all-columns-where-column-name-starts-with-string)
+`.select(pl.exclude('^prefix_.*$'))`
 
 
 # 08.02.2023
