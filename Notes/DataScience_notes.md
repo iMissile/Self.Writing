@@ -1394,7 +1394,9 @@ This is where we will store all of the materials and links for rstudio::conf 202
 # 02.02.2023
 ## R
 - [R: select columns in matrix without col. `X`](https://stackoverflow.com/questions/18082176/r-select-columns-in-matrix-without-col-x)
-
+- COOL! [mage-ai](https://github.com/mage-ai/mage-ai). The modern replacement for Airflow. Build, run, and manage data pipelines for integrating and transforming data. 
+www.mage.ai
+- В кластер можно собирать машины и через ssgh [parallelly::makeClusterPSOCK()](https://parallelly.futureverse.org/reference/makeClusterPSOCK.html)
 
 # 29.01.2023
 ## R
@@ -1402,6 +1404,8 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [fastmatch: Fast 'match()' Function](https://cran.r-project.org/web/packages/fastmatch/index.html)
 - [fasttime: Fast Utility Function for Time Parsing and Conversion](https://cran.r-project.org/web/packages/fasttime/index.html)
 - [Understanding the Basics of Package Writing in R](https://cosimameyer.com/post/understanding-the-basics-of-package-writing-in-r/)
+- [Creating High-Quality 3D Visuals with Rayshader](https://spencerschien.info/post/data_viz_how_to/high_quality_rayshader_visuals/)
+- [Tutorial: Adding Open Street Map Data to Rayshader Maps in R](https://www.tylermw.com/adding-open-street-map-data-to-rayshader-maps-in-r/)
 
 # 26.01.2023
 ## R pipes

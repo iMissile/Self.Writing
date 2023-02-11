@@ -367,6 +367,7 @@ When we store the column names on to a variable, e.g., DT_n = names(DT), and the
 	- [Using data.table package inside my own package](https://stackoverflow.com/questions/10527072/using-data-table-package-inside-my-own-package/10529888#10529888)
 	- [R data.table ':=' works in direct call, but same function in a package fails](https://stackoverflow.com/questions/27980835/r-data-table-works-in-direct-call-but-same-function-in-a-package-fails)
 	- [Importing data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-importing.html)
+- [How to pretty print data tables using the same pretty printing of tibbles?](https://stackoverflow.com/questions/68738066/how-to-pretty-print-data-tables-using-the-same-pretty-printing-of-tibbles)
 
 
 ## data.table joins

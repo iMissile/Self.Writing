@@ -69,6 +69,21 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 Understanding memory management is a superpower that will help you design memory-efficient applications and make it easier to debug memory issues. Join Rupesh Mishra for a deep dive into the internals of CPython.
 - [Python Memory Management: The Essential Guide](https://scoutapm.com/blog/python-memory-management)
 
+# Profiling & benchmarking
+- [Python 101: An Intro To Benchmarking Your Code](https://www.blog.pythonlibrary.org/2016/05/24/python-101-an-intro-to-benchmarking-your-code/)
+- [4 Simple Libraries to Quickly Benchmark Python Code](https://medium.com/swlh/4-simple-libraries-to-quickly-benchmark-python-code-8d3dfd288d7a)
+- [How to Benchmark (Python) Code](https://switowski.com/blog/how-to-benchmark-python-code/)
+	- `python -m timeit`
+	- `rich-bench`
+	- `pyperf`
+	- `hyperfine`
+- [The Python Performance Benchmark Suite](https://pyperformance.readthedocs.io/)
+- [Scalene](https://github.com/plasma-umass/scalene): a high-performance, high-precision CPU, GPU, and memory profiler for Python with AI-powered optimization proposals
+	- [Scalene - CPU and Memory Profiler for Python Code](https://coderzcolumn.com/tutorials/python/scalene-cpu-and-memory-profiler-for-python-code)
+- [cProfile – How to profile your python code](https://www.machinelearningplus.com/python/cprofile-how-to-profile-your-python-code/)
+- [Profiling and Analyzing Performance of Python Programs](https://martinheinz.dev/blog/64)
+	- `python -m cProfile -s cumulative some-code.py`
+- [How should I understand the output of dis.dis?](https://stackoverflow.com/questions/12673074/how-should-i-understand-the-output-of-dis-dis/47529318#47529318). I would like to understand how to use dis (the dissembler of Python bytecode). Specifically, how should one interpret the output of dis.dis (or dis.disassemble)?
 
 # Conferences
 - [EuroPython Conference](https://www.youtube.com/c/EuroPythonConference/playlists)
@@ -151,12 +166,21 @@ df.select([
 - [`polars.Series.to_list`](https://pola-rs.github.io/polars/py-polars/html/reference/series/api/polars.Series.to_list.html#polars.Series.to_list). Convert this Series to a Python List. This operation clones data.
 - [Select all columns where column name starts with string](https://stackoverflow.com/questions/72920189/select-all-columns-where-column-name-starts-with-string)
 `.select(pl.exclude('^prefix_.*$'))`
-
+- [polars.LazyFrame.drop_nulls](https://pola-rs.github.io/polars/py-polars/html/reference/lazyframe/api/polars.LazyFrame.drop_nulls.html). Return a new LazyFrame where rows with null values are dropped.
+- COOL! [In Polars how do I print all elements of a list column?](https://stackoverflow.com/questions/74301064/in-polars-how-do-i-print-all-elements-of-a-list-column)
+ [Config options](https://pola-rs.github.io/polars/py-polars/html/reference/config.html) `pl.Config.set_tbl_rows(100)`
+- [How can i concat in polars dataframes that have different columns vertically](https://stackoverflow.com/questions/72642575/how-can-i-concat-in-polars-dataframes-that-have-different-columns-vertically). If you want polars to add the columns, you can by setting the direction of the concatenation to `"diagonal"`.
+- [Why is use_pyarrow in function pl.read_ipc set to default False?](https://stackoverflow.com/questions/72656470/why-is-use-pyarrow-in-function-pl-read-ipc-set-to-default-false)
+- [Eager join multiple DataFrames on Categorical data](https://pola-rs.github.io/polars-book/user-guide/performance/strings.html)
+- [polars.toggle_string_cache](https://pola-rs.github.io/polars/py-polars/html/reference/api/polars.toggle_string_cache.html)
+- [how to limit number of threads in polars](https://stackoverflow.com/questions/71179317/how-to-limit-number-of-threads-in-polars)
+- [Python Polars join on column with greater or equal](https://stackoverflow.com/questions/73176563/python-polars-join-on-column-with-greater-or-equal)
 
 # 08.02.2023
 - [Difference Between Multithreading vs Multiprocessing in Python](https://www.geeksforgeeks.org/difference-between-multithreading-vs-multiprocessing-in-python/)
 - [Асинхронное программирование для начинающих](https://python-scripts.com/async)
 - [Асинхронное программирование в Python](https://tproger.ru/translations/asynchronous-programming-in-python/)
+- [Unicode & Character Encodings in Python: A Painless Guide](https://realpython.com/python-encodings-guide/)
 
 # 06.02.2023
 - [Python | Using 2D arrays/lists the right way](https://www.geeksforgeeks.org/python-using-2d-arrays-lists-the-right-way/). Тут куча граблей указана!!!
