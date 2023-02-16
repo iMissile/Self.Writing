@@ -56,6 +56,9 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 	- Start up JupyterLab using: `jupyter lab`
 	- [A visual debugger for Jupyter](https://blog.jupyter.org/a-visual-debugger-for-jupyter-914e61716559)
 - [Orange](https://orangedatamining.com/). Open source machine learning and data visualization.
+- [Setting Up Run by Line and Debugging for Notebooks](https://github.com/microsoft/vscode-jupyter/wiki/Setting-Up-Run-by-Line-and-Debugging-for-Notebooks)
+Run `pip install -U ipykernel`
+- [VSCode. Python Interactive window](https://code.visualstudio.com/docs/python/jupyter-support-py)
 
 # Internal object structure
 - [How do I look inside a Python object?](https://stackoverflow.com/questions/1006169/how-do-i-look-inside-a-python-object)
@@ -175,6 +178,16 @@ df.select([
 - [polars.toggle_string_cache](https://pola-rs.github.io/polars/py-polars/html/reference/api/polars.toggle_string_cache.html)
 - [how to limit number of threads in polars](https://stackoverflow.com/questions/71179317/how-to-limit-number-of-threads-in-polars)
 - [Python Polars join on column with greater or equal](https://stackoverflow.com/questions/73176563/python-polars-join-on-column-with-greater-or-equal)
+- COOL! Кастуем время [Casting from integer timestamps to pl.Datetime #3318 {Closed}](https://github.com/pola-rs/polars/issues/3318).
+Смотрим в сторону `dt.with_time_unit`
+- [Python Polars Parse Date from Epoch](https://stackoverflow.com/questions/71641045/python-polars-parse-date-from-epoch)
+
+# 13.02.2023
+- [Modifying a list inside a function](https://stackoverflow.com/questions/22054698/modifying-a-list-inside-a-function)
+- [How do I pass a variable by reference?](https://stackoverflow.com/questions/986006/how-do-i-pass-a-variable-by-reference)
+- [Get the length of a 2D Array in Python](https://bobbyhadz.com/blog/python-get-length-of-2d-array)
+- [Is there a short contains function for lists?](https://stackoverflow.com/questions/12934190/is-there-a-short-contains-function-for-lists)
+
 
 # 08.02.2023
 - [Difference Between Multithreading vs Multiprocessing in Python](https://www.geeksforgeeks.org/difference-between-multithreading-vs-multiprocessing-in-python/)

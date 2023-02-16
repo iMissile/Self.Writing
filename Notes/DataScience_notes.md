@@ -1397,6 +1397,8 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - COOL! [mage-ai](https://github.com/mage-ai/mage-ai). The modern replacement for Airflow. Build, run, and manage data pipelines for integrating and transforming data. 
 www.mage.ai
 - В кластер можно собирать машины и через ssgh [parallelly::makeClusterPSOCK()](https://parallelly.futureverse.org/reference/makeClusterPSOCK.html)
+- [R: Swap two variables without using a third](https://stackoverflow.com/questions/32585753/r-swap-two-variables-without-using-a-third/44851448)
+- С бенчмарками. [fast large matrix multiplication in R](https://stackoverflow.com/questions/35923787/fast-large-matrix-multiplication-in-r)
 
 # 29.01.2023
 ## R
