@@ -490,6 +490,7 @@ colors = scales::col_numeric(
 - COOL! [New Features and Serious Upgrades in {gt} 0.8.0](https://posit.co/blog/new-features-upgrades-in-gt-0-8-0/)
 The v0.8.0 release of gt is quite exciting so we want to show you all the things you can now do when making tables!
 - [gt tables in Quarto Pub without slide CSS styling](https://stackoverflow.com/questions/72904794/gt-tables-in-quarto-pub-without-slide-css-styling)
+- COOL! [Graphing in gt](https://jthomasmock.github.io/gtExtras/articles/plots-in-gt.html)
 
 ### font issues gt + quarto
 - [Change in Quarto from Rstudio RStudio 2022.07.1+554 to 2022.07.2+576 #3357](https://github.com/quarto-dev/quarto-cli/discussions/3357). Probably caused by some CSS overwriting the table CSS.

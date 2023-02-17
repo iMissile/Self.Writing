@@ -134,22 +134,22 @@ libxt-dev \
 gtk2-engines \
 libv8-dev \
 libudunits2-0 \
-unixODBC* \
 postgresql \
-libmariadb-dev \
 libmysqlclient-dev \
-gfortran-6 \
 texlive* \
 ufw \
 dejavu* \
 rrdtool \
 psmisc \
 lrzsz \
-gdal* \
 libproj-dev \
 r-cran-rprotobuf \
 libprotobuf-dev \
-libgeos-dev
+libgeos-dev \
+libmariadb-dev \
+gfortran-6 \
+unixODBC* \
+gdal*
 ```
 
 ```
@@ -173,6 +173,13 @@ fonts-roboto
 ```
 
 Ставим вместе с рекомендованными пакетами
+
+[Installing GCC on Ubuntu 20.04](https://linuxize.com/post/how-to-install-gcc-on-ubuntu-20-04/)
+```
+sudo apt update
+sudo apt install build-essential
+```
+
 ```
 sudo apt-get -y install \
 gcc \
@@ -189,6 +196,14 @@ libmagick++-dev \
 libpcre2-dev \
 ncdu \
 glances
+```
+
+Для установки `tidyverse`
+```
+sudo apt-get -y install \
+liblz4-dev \
+libxml2-dev \
+libcurl4-openssl-dev
 ```
 # r-cran-littler
 
@@ -238,7 +253,14 @@ sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic
 sudo apt update
 sudo apt install r-base
 ```
+- [How To Install R on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-r-on-ubuntu-20-04)
 
+```
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
+sudo apt update
+sudo apt install r-base
+```
 
 Ставим пакет [`littler`](http://dirk.eddelbuettel.com/code/littler.html)
 И включаем его в путь:

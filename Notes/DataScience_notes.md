@@ -1391,6 +1391,12 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 17.02.2023
+## DS
+- [What is “Big Data” — Understanding the History](https://towardsdatascience.com/what-is-big-data-understanding-the-history-32078f3b53ce)
+- [Compute Express Link CXL Latency How Much is Added at HC34](https://www.servethehome.com/compute-express-link-cxl-latency-how-much-is-added-at-hc34/)
+- COOL! [Approximate cost to access various caches and main memory?](https://stackoverflow.com/questions/4087280/approximate-cost-to-access-various-caches-and-main-memory:)
+
 # 02.02.2023
 ## R
 - [R: select columns in matrix without col. `X`](https://stackoverflow.com/questions/18082176/r-select-columns-in-matrix-without-col-x)
