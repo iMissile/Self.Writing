@@ -182,6 +182,19 @@ df.select([
 Смотрим в сторону `dt.with_time_unit`
 - [Python Polars Parse Date from Epoch](https://stackoverflow.com/questions/71641045/python-polars-parse-date-from-epoch)
 
+# 20.02.2023
+- [Subtract a value from every number in a list in Python?](https://stackoverflow.com/questions/4918425/subtract-a-value-from-every-number-in-a-list-in-python)
+The list comprehension solution is much more pythonic. `a = [x - 13 for x in a]`
+- [Python | Accessing all elements at given list of indexes](https://www.geeksforgeeks.org/python-accessing-all-elements-at-given-list-of-indexes/)
+
+## от XPROM
+- [Python 3's f-Strings: An Improved String Formatting Syntax (Guide)](https://realpython.com/python-f-strings/)
+- [How to write a Python dictionary into a json file?](https://www.easytweaks.com/write-dictionary-json-file-python/). `json.dump(hr_data, j)`
+- [How To Save A Python Dictionary As A JSON File](https://predictivehacks.com/?all-tips=how-to-save-a-python-dictionary-as-a-json-file)
+- [Что такое venv и virtualenv в Python, и как их использовать](https://blog.sedicomm.com/2021/06/29/chto-takoe-venv-i-virtualenv-v-python-i-kak-ih-ispolzovat/)
+- [Питон в коробке – venv в python 3.3](https://habr.com/ru/post/157287/). 5 ноя 2012
+- [Using Virtual Environments in Jupyter Notebook and Python](https://janakiev.com/blog/jupyter-virtual-envs/#add-virtual-environment-to-jupyter-notebook)
+
 # 13.02.2023
 - [Modifying a list inside a function](https://stackoverflow.com/questions/22054698/modifying-a-list-inside-a-function)
 - [How do I pass a variable by reference?](https://stackoverflow.com/questions/986006/how-do-i-pass-a-variable-by-reference)

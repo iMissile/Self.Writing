@@ -1396,6 +1396,8 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [What is “Big Data” — Understanding the History](https://towardsdatascience.com/what-is-big-data-understanding-the-history-32078f3b53ce)
 - [Compute Express Link CXL Latency How Much is Added at HC34](https://www.servethehome.com/compute-express-link-cxl-latency-how-much-is-added-at-hc34/)
 - COOL! [Approximate cost to access various caches and main memory?](https://stackoverflow.com/questions/4087280/approximate-cost-to-access-various-caches-and-main-memory:)
+- [Please don’t make me use Databricks notebooks](https://medium.com/@seade03/please-dont-make-me-use-databricks-notebooks-3d07a4a332ae). Databricks notebooks do not encourage well-built machine learning projects
+- [Audacity ffmpeg](https://support.audacityteam.org/basics/installing-ffmpeg)
 
 # 02.02.2023
 ## R
@@ -1405,6 +1407,8 @@ www.mage.ai
 - В кластер можно собирать машины и через ssgh [parallelly::makeClusterPSOCK()](https://parallelly.futureverse.org/reference/makeClusterPSOCK.html)
 - [R: Swap two variables without using a third](https://stackoverflow.com/questions/32585753/r-swap-two-variables-without-using-a-third/44851448)
 - С бенчмарками. [fast large matrix multiplication in R](https://stackoverflow.com/questions/35923787/fast-large-matrix-multiplication-in-r)
+- [Acoustic complexity index time series output](https://stackoverflow.com/questions/75499727/acoustic-complexity-index-time-series-output)
+- COOL! [~ an R package dedicated to sound analysis and synthesis ~](https://rug.mnhn.fr/seewave/)
 
 # 29.01.2023
 ## R
@@ -1434,6 +1438,7 @@ Learn more about the famous pipe operator %>% and other pipes in R, why and how 
 - [Speedups in operations with regular expressions](https://blog.r-project.org/2022/07/12/speedups-in-operations-with-regular-expressions/) by Tomas Kalibera
 - [stringi: Fast and Portable Character String Processing in R](https://stringi.gagolewski.com/)
 - [ppsr - Predictive Power Score](https://github.com/paulvanderlaken/ppsr). The PPS is an asymmetric, data-type-agnostic score that can detect linear or non-linear relationships between two variables. The score ranges from 0 (no predictive power) to 1 (perfect predictive power). The general concept of PPS is useful for data exploration purposes, in the same way correlation analysis is.
+
 # 20.01.2023
 ## R
 - [Различные виды тестирования ПО](https://www.atlassian.com/ru/continuous-delivery/software-testing/types-of-software-testing)
