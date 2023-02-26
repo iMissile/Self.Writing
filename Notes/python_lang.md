@@ -56,9 +56,15 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 	- Start up JupyterLab using: `jupyter lab`
 	- [A visual debugger for Jupyter](https://blog.jupyter.org/a-visual-debugger-for-jupyter-914e61716559)
 - [Orange](https://orangedatamining.com/). Open source machine learning and data visualization.
+
+## VScode
 - [Setting Up Run by Line and Debugging for Notebooks](https://github.com/microsoft/vscode-jupyter/wiki/Setting-Up-Run-by-Line-and-Debugging-for-Notebooks)
 Run `pip install -U ipykernel`
 - [VSCode. Python Interactive window](https://code.visualstudio.com/docs/python/jupyter-support-py)
+- [How to separate changed files from untracked files in vscode?](https://stackoverflow.com/questions/52410100/how-to-separate-changed-files-from-untracked-files-in-vscode)
+`Settings/untracked`
+- [EFFICIENTLY REMOVE UNTRACKED FILES FROM VISUAL STUDIO CODE REPOSITORY](https://whatismarkdown.com/efficiently-remove-untracked-files-from-visual-studio-code-repository/)
+- [Refactoring](https://code.visualstudio.com/docs/editor/refactoring)
 
 # Internal object structure
 - [How do I look inside a Python object?](https://stackoverflow.com/questions/1006169/how-do-i-look-inside-a-python-object)
@@ -182,10 +188,26 @@ df.select([
 Смотрим в сторону `dt.with_time_unit`
 - [Python Polars Parse Date from Epoch](https://stackoverflow.com/questions/71641045/python-polars-parse-date-from-epoch)
 
+# 25.03.2023
+- [Find the memory size of a NumPy array](https://www.geeksforgeeks.org/find-the-memory-size-of-a-numpy-array/)
+	- `size`: This attribute gives the number of elements present in the NumPy array.
+	- `itemsize`: This attribute gives the memory size of one element of NumPy array in bytes.
+	- `nbytes`: This attribute gives the total bytes consumed by the elements of the NumPy array.
+- [Python memory usage of numpy arrays](https://stackoverflow.com/questions/11784329/python-memory-usage-of-numpy-arrays)
+- Любопытная статья, затрагивает вычислительные сложности алгоритмов в т.ч. [How to Find the Memory Size of a Numpy Array?](https://www.scaler.com/topics/how-to-find-the-memory-size-of-a-numpy-array/)
+- [How to use Python `numpy.where()` Method](https://www.digitalocean.com/community/tutorials/python-numpy-where)
+- [Numpy `Argwhere` With Examples In Python](https://www.pythonpool.com/numpy-argwhere/)
+- В картинках. [Reshape numpy arrays in Python — a step-by-step pictorial tutorial](https://towardsdatascience.com/reshaping-numpy-arrays-in-python-a-step-by-step-pictorial-tutorial-aed5f471cf0b)
+- [How to Get Size of Object in Python](https://fedingo.com/how-to-get-size-of-object-in-python/). If you want to get size of nested and complex objects, you can use asizeof function in `Pympler` package. `from pympler import asizeof`
+- [How to Get the First Match From a Python List or Iterable](https://realpython.com/python-first-match/)
+
+
 # 20.02.2023
 - [Subtract a value from every number in a list in Python?](https://stackoverflow.com/questions/4918425/subtract-a-value-from-every-number-in-a-list-in-python)
 The list comprehension solution is much more pythonic. `a = [x - 13 for x in a]`
 - [Python | Accessing all elements at given list of indexes](https://www.geeksforgeeks.org/python-accessing-all-elements-at-given-list-of-indexes/)
+- [Python | Convert set into a list](https://www.geeksforgeeks.org/python-convert-set-into-a-list/)
+- [How do I make a flat list out of a list of lists?](https://stackoverflow.com/questions/952914/how-do-i-make-a-flat-list-out-of-a-list-of-lists)
 
 ## от XPROM
 - [Python 3's f-Strings: An Improved String Formatting Syntax (Guide)](https://realpython.com/python-f-strings/)

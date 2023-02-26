@@ -1755,6 +1755,7 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 - [How can I specify global and local chunk options for a quarto pdf book?](https://stackoverflow.com/questions/73264233/how-can-i-specify-global-and-local-chunk-options-for-a-quarto-pdf-book)
 - [10+ Guidelines for Better Tables in R](https://themockup.blog/posts/2020-09-04-10-table-rules-in-r/)
 - [Testing methods for df_print-like custom table printing in quarto](https://gist.github.com/debruine/01b4ce274733a4a99622365e8c6df701)
+- [Multi-Format Publishing](https://quarto.org/docs/prerelease/1.3/multi-format.html)
 
 ## Quarto parametrization
 - [How to use Quarto for Parameterized Reporting](https://www.mm218.dev/posts/2022-08-04-how-to-use-quarto-for-parameterized-reporting/). You know. If you wanna.
@@ -2744,7 +2745,7 @@ and tools that were popular in the last month
 - COOL! [NIM. Efficient, expressive, elegant](https://nim-lang.org/)
 Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula.
 - [Modern browsers support 140 named colors, which are listed below. Use them in your HTML and CSS by name, Hex color code or RGB value.](https://htmlcolorcodes.com/color-names/)
-- [Principles of training multi-layer neural network using backpropagation](https://home.agh.edu.pl/~vlsi/AI/backp_t_en/backprop.html	)
+- [Principles of training multi-layer neural network using backpropagation](https://home.agh.edu.pl/~vlsi/AI/backp_t_en/backprop.html)
 
 # 05.01.2022
 ## Shiny
