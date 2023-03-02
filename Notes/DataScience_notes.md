@@ -1391,6 +1391,13 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 28.02.2023
+## R
+- [Multidimensional Array in R](https://music.yandex.ru/home)
+- COOL! [How to sum array along 3rd dimension](https://stackoverflow.com/questions/36980483/how-to-sum-array-along-3rd-dimension)
+Use `rowSums`. It offers a dims parameter which specifies "[w]hich dimensions are regarded as ‘rows’ or ‘columns’ to sum over. For row*, the sum or mean is over dimensions dims+1".
+- [Calculate the Sum of Matrix or Array columns in R Programming – colSums() Function](https://www.geeksforgeeks.org/calculate-the-sum-of-matrix-or-array-columns-in-r-programming-colsums-function/)
+
 # 17.02.2023
 ## DS
 - [What is “Big Data” — Understanding the History](https://towardsdatascience.com/what-is-big-data-understanding-the-history-32078f3b53ce)

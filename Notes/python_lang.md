@@ -122,11 +122,14 @@ In pandas you may be used to calling `.assign()` when you want to add a new colu
 - [Cheatsheet for Pandas to Polars](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/)
 - [Tips and Tricks for Working with Strings in Polars](https://towardsdatascience.com/tips-and-tricks-for-working-with-strings-in-polars-ec6bb74aeec2). From sorting column names to splitting columns
 - [How to get row_count for a group in polars?](https://stackoverflow.com/questions/70044520/how-to-get-row-count-for-a-group-in-polars)
+- [What is the recommended way for retrieving row numbers (index) for polars?](https://stackoverflow.com/questions/72474673/what-is-the-recommended-way-for-retrieving-row-numbers-index-for-polars). Use `with_row_count()`
+- [python-polars split string column into many columns by delimiter](https://stackoverflow.com/questions/73699500/python-polars-split-string-column-into-many-columns-by-delimiter)
 - COOL!!! This is a guest post by Vincent D. Warmerdam. [The Expressions API in Polars is Amazing](https://www.pola.rs/posts/the-expressions-api-in-polars-is-amazing/)
 	- [A benchmark with Polars](https://gist.github.com/koaning/5a0f3f27164859c42da5f20148ef3856)
 - COOL!!! [Window functions 🚀🚀](https://pola-rs.github.io/polars-book/user-guide/dsl/window_functions.html)
 - [How to perform computations easily between every column in a polars DataFrame and the mean of that column](https://stackoverflow.com/questions/72539701/how-to-perform-computations-easily-between-every-column-in-a-polars-dataframe-an)
 
+- [Replacing Pandas with Polars. A Practical Guide](https://www.confessionsofadataguy.com/replacing-pandas-with-polars-a-practical-guide/)
 - [Pandas vs Polar - A look at performance](https://studioterabyte.nl/en/blog/polars-vs-pandas)
 - [Pandas vs. Polars: A Syntax and Speed Comparison](https://towardsdatascience.com/pandas-vs-polars-a-syntax-and-speed-comparison-5aa54e27497e)
 - polars literal
@@ -141,8 +144,6 @@ Explanation: a polars literal is an `Expr` object. An `Expr` object can be evalu
 - [Py Polars: How to filter using 'in' and 'not in' like in SQL](https://stackoverflow.com/questions/71850031/py-polars-how-to-filter-using-in-and-not-in-like-in-sql)
 - [How to filter df by value list with Polars?](https://stackoverflow.com/questions/74856449/how-to-filter-df-by-value-list-with-polars)
 - [Lightweight syntax for filtering a polars DataFrame on a multi-column key?](https://stackoverflow.com/questions/72546690/lightweight-syntax-for-filtering-a-polars-dataframe-on-a-multi-column-key)
-- [What is the recommended way for retrieving row numbers (index) for polars?](https://stackoverflow.com/questions/72474673/what-is-the-recommended-way-for-retrieving-row-numbers-index-for-polars). Use `with_row_count()`
-
 - COOL! [polars equivalent to pandas groupby shift()](https://stackoverflow.com/questions/73101521/polars-equivalent-to-pandas-groupby-shift)
 - [Grouping Rows in Polars](https://stackoverflow.com/questions/72520291/grouping-rows-in-polars)
 - [polars equivalent to `groupby.last`](https://stackoverflow.com/questions/73113290/polars-equivalent-to-groupby-last)
@@ -187,6 +188,14 @@ df.select([
 - COOL! Кастуем время [Casting from integer timestamps to pl.Datetime #3318 {Closed}](https://github.com/pola-rs/polars/issues/3318).
 Смотрим в сторону `dt.with_time_unit`
 - [Python Polars Parse Date from Epoch](https://stackoverflow.com/questions/71641045/python-polars-parse-date-from-epoch)
+- [Python-Polars: How to filter categorical column with string list](https://stackoverflow.com/questions/73519899/python-polars-how-to-filter-categorical-column-with-string-list)
+- [How to increase values of polars dataframe column by index](https://stackoverflow.com/questions/72352725/how-to-increase-values-of-polars-dataframe-column-by-index)
+- [Enumerate each group](https://stackoverflow.com/questions/74981501/enumerate-each-group). You're looking to `.rank()` your data - in particular - a "dense" ranking.
+
+
+# Python & R
+- [How to use R and Python in the same notebook?](https://www.askpython.com/python/examples/use-r-and-python-in-the-same-notebook)
+- [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 
 # 25.03.2023
 - [Find the memory size of a NumPy array](https://www.geeksforgeeks.org/find-the-memory-size-of-a-numpy-array/)
