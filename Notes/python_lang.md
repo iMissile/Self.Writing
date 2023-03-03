@@ -44,8 +44,16 @@ foreach($p in $(pip freeze)){ pip install -U $p.Split("=")[0]}
 $ pip install pipupgrade
 $ pipupgrade --verbose --latest --yes
 ```
+- [How To Update All Python Packages](https://www.activestate.com/resources/quick-reads/how-to-update-all-python-packages/)
 - [8 Best Ways to Check the Package Version in Python](https://blog.finxter.com/check-the-package-version-in-python)
 `pip show my_package`
+- [pip's dependency resolver does not currently take into account all the packages that are installed](https://bobbyhadz.com/blog/python-error-pips-dependency-resolver-does-not-currently-take)
+	- Install and upgrade `wheel`, `setuptools`and `pip`.
+	- Optionally create a virtual environment and install the package in it.
+	- Make sure your Python version is supported by the package.
+- [How to Update All of Your Python Packages With pip Using One Simple Command](https://dougie.io/answers/pip-update-all-packages/)
+`pip freeze | cut -d'=' -f1 | xargs -n1 pip install -U`
+- [How to find a Python package's dependencies](https://stackoverflow.com/questions/29751572/how-to-find-a-python-packages-dependencies)
 - [IPython. Interactive Computing](https://ipython.org/). Он же Jupyter.
 	- [Install](https://docs.jupyter.org/en/latest/install/notebook-classic.html) `pip3 install jupyter`
 	- [Run](https://docs.jupyter.org/en/latest/running.html#running) `jupyter notebook`
@@ -197,7 +205,10 @@ df.select([
 - [How to use R and Python in the same notebook?](https://www.askpython.com/python/examples/use-r-and-python-in-the-same-notebook)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 
-# 25.03.2023
+# 03.03.2023
+- [Process escape sequences in a string in Python](https://stackoverflow.com/questions/4020539/process-escape-sequences-in-a-string-in-python)
+
+# 25.02.2023
 - [Find the memory size of a NumPy array](https://www.geeksforgeeks.org/find-the-memory-size-of-a-numpy-array/)
 	- `size`: This attribute gives the number of elements present in the NumPy array.
 	- `itemsize`: This attribute gives the memory size of one element of NumPy array in bytes.
@@ -209,6 +220,7 @@ df.select([
 - В картинках. [Reshape numpy arrays in Python — a step-by-step pictorial tutorial](https://towardsdatascience.com/reshaping-numpy-arrays-in-python-a-step-by-step-pictorial-tutorial-aed5f471cf0b)
 - [How to Get Size of Object in Python](https://fedingo.com/how-to-get-size-of-object-in-python/). If you want to get size of nested and complex objects, you can use asizeof function in `Pympler` package. `from pympler import asizeof`
 - [How to Get the First Match From a Python List or Iterable](https://realpython.com/python-first-match/)
+- [Python list comprehension using if-else](https://pythonguides.com/python-list-comprehension-using-if-else/)
 
 
 # 20.02.2023

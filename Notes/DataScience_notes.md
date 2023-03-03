@@ -1383,6 +1383,9 @@ This is where we will store all of the materials and links for rstudio::conf 202
 ## Rconf 2017
 - [Конспект докладов](https://tazinho.github.io/rstudio_conf_notes.html)
 
+## UseR! 2022
+- [Improvements in text preprocessing using textrecipes](https://emilhvitfeldt.github.io/useR2022-textrecipes/#/section)
+
 # Obsidian
 - [Zettelkasten: как один немецкий учёный стал невероятно продуктивным](https://habr.com/ru/post/508672/)
 - [Воспитание Obsidian — вашего персонального информационного менеджера](https://habr.com/ru/company/macloud/blog/560776/)
@@ -1397,6 +1400,8 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - COOL! [How to sum array along 3rd dimension](https://stackoverflow.com/questions/36980483/how-to-sum-array-along-3rd-dimension)
 Use `rowSums`. It offers a dims parameter which specifies "[w]hich dimensions are regarded as ‘rows’ or ‘columns’ to sum over. For row*, the sum or mean is over dimensions dims+1".
 - [Calculate the Sum of Matrix or Array columns in R Programming – colSums() Function](https://www.geeksforgeeks.org/calculate-the-sum-of-matrix-or-array-columns-in-r-programming-colsums-function/)
+- Slides [Outrageously efficient exploratory data analysis with Apache Arrow and dplyr](https://jthomasmock.github.io/arrow-dplyr/#/) Tom Mock, Customer Enablement Lead at RStudio, 2022-06-03
+
 
 # 17.02.2023
 ## DS
@@ -8692,6 +8697,7 @@ The power spectral density (PSD) is a function that describes the distribution o
  - Statistics: The insights will never obvious.
 ```
 - COOL! COOL! [Using AWK and R to parse 25tb](https://livefreeordichotomize.com/posts/2019-06-04-using-awk-and-r-to-parse-25tb/)
+- COOL! [Большие данные мертвы. Это нужно принять](https://habr.com/ru/company/first/blog/720058/)
 
 ## R
 - COOL! [Add row to dataframe](https://stackoverflow.com/questions/28467068/add-row-to-dataframe)
