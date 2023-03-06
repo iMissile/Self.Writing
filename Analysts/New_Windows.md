@@ -791,3 +791,16 @@ Mozilla Thunderbird](https://yandex.ru/support/mail/mail-clients/mozilla-thunder
 После установки такого приложения из Microsoft Store оно появляется в списке приложений в меню «Пуск». Оттуда приложение можно закрепить на начальном экране или на панели задач. Но, из меню «Пуск» нельзя создавать ярлык на рабочем столе, что создает неудобства для пользователей, которые привыкли запускать программы именно с помощью ярлыков.
 	1. `Win-R` и в открывшемся окне выполнить команду `shell:AppsFolder`
 	2. Чтобы создать ярлык на рабочем столе нужно найти здесь нужную программу, кликнуть по ней правой кнопкой мышки и выбрать пункт «Создать ярлык».
+	
+# curl
+- [curl](https://curl.se/) command line tool and library for transferring data with URLs (since 1998)
+- [Windows 10](https://everything.curl.dev/get/windows) comes with the curl tool bundled with the operating system since version 1804. If you have an older Windows version or just want to upgrade to the latest version shipped by the curl project, download the latest official curl release for Windows from curl.se/windows and install that.
+  Скачал последнюю версию `curl` и просто всунул ее в `Windows/System32`. Но все равно не заработало, пошла ошибка `0x60`. Не находил сертификат.
+  [По инструкции](https://curl.se/docs/sslcerts.html) засунул из этого же дистрибутива свежий сертификат туда же.
+  If you are using the curl command line tool, you can specify your own CA cert file by setting the environment variable CURL_CA_BUNDLE to the path of your choice.
+If you are using the curl command line tool on Windows, curl will search for a CA cert file named "curl-ca-bundle.crt" in these directories and in this order:
+	- application's directory
+	- current working directory
+	- Windows System directory (e.g. C:\windows\system32)
+	- Windows Directory (e.g. C:\windows)
+	- all directories along %PATH%

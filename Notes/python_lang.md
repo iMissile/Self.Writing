@@ -64,6 +64,13 @@ I know I can type Ctrl-D to exit, but is there a way I can type exit without par
 	- Start up JupyterLab using: `jupyter lab`
 	- [A visual debugger for Jupyter](https://blog.jupyter.org/a-visual-debugger-for-jupyter-914e61716559)
 - [Orange](https://orangedatamining.com/). Open source machine learning and data visualization.
+- MacOS. [Switching Python version installed by Homebrew](https://stackoverflow.com/questions/64362772/switching-python-version-installed-by-homebrew)
+```
+brew unlink python@3.9
+brew unlink python@3.8
+brew link --force python@3.9
+```
+
 
 ## VScode
 - [Setting Up Run by Line and Debugging for Notebooks](https://github.com/microsoft/vscode-jupyter/wiki/Setting-Up-Run-by-Line-and-Debugging-for-Notebooks)
@@ -199,6 +206,20 @@ df.select([
 - [Python-Polars: How to filter categorical column with string list](https://stackoverflow.com/questions/73519899/python-polars-how-to-filter-categorical-column-with-string-list)
 - [How to increase values of polars dataframe column by index](https://stackoverflow.com/questions/72352725/how-to-increase-values-of-polars-dataframe-column-by-index)
 - [Enumerate each group](https://stackoverflow.com/questions/74981501/enumerate-each-group). You're looking to `.rank()` your data - in particular - a "dense" ranking.
+- [Polars: assign existing category](https://stackoverflow.com/questions/73699982/polars-assign-existing-category)
+- [Using Patito for DataFrame Validation](https://patito.readthedocs.io/en/latest/tutorial/dataframe-validation.html)
+	- [kolonialno/patito](https://github.com/kolonialno/patito). A data modelling layer built on top of polars and pydantic
+	- [Static Typing with Python](https://typing.readthedocs.io/en/latest/)
+	- В файле [pydantic.py](https://github.com/kolonialno/patito/blob/main/src/patito/pydantic.py) живет описание допустимых типов в модели.
+```
+class tracesSchema(pt.Model):
+    pattern: str = pt.Field(dtype = pl.Categorical)
+    n: int
+    cases: List[str] = pt.Field(dtype = pl.List)
+    cum_n: int
+    cum_ratio: float
+```
+- [The great Python dataframe showdown, part 3: Lightning-fast queries with Polars](https://www.orchest.io/blog/the-great-python-dataframe-showdown-part-3-lightning-fast-queries-with-polars)
 
 
 # Python & R
@@ -207,6 +228,11 @@ df.select([
 
 # 03.03.2023
 - [Process escape sequences in a string in Python](https://stackoverflow.com/questions/4020539/process-escape-sequences-in-a-string-in-python)
+- [How to Make Python Statically Typed — The Essential Guide](https://betterdatascience.com/python-statically-typed/)
+- [Best Python Data Validation Library : In 2022](https://www.datasciencelearner.com/top-5-python-data-validation-library/)
+- [Pandas DataFrame Validation with Pydantic](https://www.inwt-statistics.com/read-blog/pandas-dataframe-validation-with-pydantic.html)
+- [Validate Your pandas DataFrame with Pandera](https://towardsdatascience.com/validate-your-pandas-dataframe-with-pandera-2995910e564). Make Sure Your Data Matches Your Expectation
+- [Pandera. DataFrame Schemas](https://pandera.readthedocs.io/en/stable/dataframe_schemas.html)
 
 # 25.02.2023
 - [Find the memory size of a NumPy array](https://www.geeksforgeeks.org/find-the-memory-size-of-a-numpy-array/)

@@ -1242,7 +1242,31 @@ TL;DR zq is a command-line tool that uses the Zed language for pipeline-style se
 - [Select path that is not an object #2303 {Closed}](https://github.com/stedolan/jq/issues/2303)
 - [How can I replace a null value in a json document by a specific value with jq?](https://stackoverflow.com/questions/33128365/how-can-i-replace-a-null-value-in-a-json-document-by-a-specific-value-with-jq). `walk(if type == "array" then sort else . end)`
 - [jq, replace null values on any level, not touching non-null or not existing](https://stackoverflow.com/questions/51272561/jq-replace-null-values-on-any-level-not-touching-non-null-or-not-existing). The answer is walk!
+- jq regex
+	- [JQ: how can I remove keys based on regex?](https://stackoverflow.com/questions/52184815/jq-how-can-i-remove-keys-based-on-regex)
+	- [How can I exclude all keys with a specific value inside a JSON with jq?](https://unix.stackexchange.com/questions/654725/how-can-i-exclude-all-keys-with-a-specific-value-inside-a-json-with-jq)
+	- [Using jq, remove keys that match a regular expression](https://stackoverflow.com/questions/61859923/using-jq-remove-keys-that-match-a-regular-expression)
 
+
+## xml, xml-to-json
+- [yq](https://mikefarah.gitbook.io/yq/). a lightweight and portable command-line YAML processor. yq uses  like syntax but works with yaml files as well as json. 
+	- [yq. Working with XML](https://mikefarah.gitbook.io/yq/usage/xml)
+- Другой [yq](https://kislyuk.github.io/yq/#): Command-line YAML/XML/TOML processor - jq wrapper for YAML, XML, TOML documents¶
+- [XmlStarlet Command Line XML Toolkit User's Guide](https://xmlstar.sourceforge.net/doc/UG/xmlstarlet-ug.html)
+	- [How to convert multi level xml to a single line containing all levels using XMLSTARLET](https://unix.stackexchange.com/questions/294395/how-to-convert-multi-level-xml-to-a-single-line-containing-all-levels-using-xmls)
+	- [How to flatten XML with xmlstarlet?](https://stackoverflow.com/questions/75235161/how-to-flatten-xml-with-xmlstarlet)
+	- [Transforming an XML Document into a CSV using XMLStarlet](https://www.joyofdata.de/blog/transforming-xml-document-into-csv-using-xmlstarlet/)
+- COOL! [The yaml document from hell](https://ruudvanasseldonk.com/2023/01/11/the-yaml-document-from-hell)
+- [Parsing XML via xq (jq) with GNU Parallel](https://stackoverflow.com/questions/74882763/parsing-xml-via-xq-jq-with-gnu-parallel)
+- [Querying JSON and XML with jq and xq](https://www.ashbyhq.com/blog/engineering/jq-and-yq)
+- [Flatten XML array to a single row in Snowflake](https://stackoverflow.com/questions/71102368/flatten-xml-array-to-a-single-row-in-snowflake)
+- [How To : Flatten out a Recursive XML Document](https://odieweblog.wordpress.com/2017/01/17/how-to-flatten-out-a-recursive-xml-document/)
+
+- Haskel [xml-to-json: Library and command line tool for converting XML files to json](https://hackage.haskell.org/package/xml-to-json). The original purpose was to convert legacy XML-based data into a format that can be imported into JSON databases such as CouchDB and MongoDB.The package also includes an executable to directly invoke the library on files (or urls on non-windows platforms).
+	- [hexpat: XML parser/formatter based on expat](https://hackage.haskell.org/package/hexpat).
+	Получил ошибку при сборке `v0.20.13`, ищем workaround [build error with stack for hexpat 0.20.13 #9 {Open}](https://github.com/the-real-blackh/hexpat/issues/9)
+	`cabal install -f bundle hexpat`
+	- [Expat XML parser](https://libexpat.github.io/)
 
 
 ## Timezone
@@ -1393,6 +1417,14 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Obsidian — IDE для Markdown базы знаний](https://vas3k.club/link/2609/)
 
 # http://192.168.12.31:4242/client/#/
+
+# 06.03.2023
+## Haskel
+- [GHCup](https://www.haskell.org/ghcup/). GHCup is the main installer for the general purpose language Haskell.
+	Кира советовал ставить в 'C:\Users\<name>\AppData\Local\Programs\Haskell`
+
+## R
+- [Using Amazon S3 with R](https://blog.djnavarro.net/posts/2022-03-17_using-aws-s3-in-r/) by Danielle Navarro, PUBLISHED March 17, 2022
 
 # 28.02.2023
 ## R
@@ -1740,6 +1772,7 @@ Div
 ```
 will [generate html `div`](https://quarto.org/docs/authoring/markdown-basics.html#other-blocks).
 - [Quarto, Python, and VS Code: Quarto Reports In VS Code](https://appsilon.com/quarto-python-and-vscode/)
+- [VSCode vs RStudio — Worth the Switch?](https://towardsdatascience.com/vscode-vs-rstudio-worth-the-switch-7a4415fc3275)
 - COOL! [Notes on Changing from Rmarkdown/Bookdown to Quarto](https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/) by Nicholas Tierney
 - COOL! [Making Slides in Quarto with reveal.js](https://meghan.rbind.io/blog/quarto-slides/) by Meghan Hall
 - COOL! [The ultimate guide to starting a Quarto blog](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html)
@@ -1768,6 +1801,7 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 - [10+ Guidelines for Better Tables in R](https://themockup.blog/posts/2020-09-04-10-table-rules-in-r/)
 - [Testing methods for df_print-like custom table printing in quarto](https://gist.github.com/debruine/01b4ce274733a4a99622365e8c6df701)
 - [Multi-Format Publishing](https://quarto.org/docs/prerelease/1.3/multi-format.html)
+- [What I've learned making an .epub Ebook with Quarto](https://www.brodrigues.co/blog/2023-03-03-quarto_books/)
 
 ## Quarto parametrization
 - [How to use Quarto for Parameterized Reporting](https://www.mm218.dev/posts/2022-08-04-how-to-use-quarto-for-parameterized-reporting/). You know. If you wanna.
