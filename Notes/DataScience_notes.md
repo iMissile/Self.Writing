@@ -423,6 +423,7 @@ df %>%
 
 # DS
 - COOL! [Машинное обучение для людей. Разбираемся простыми словами](https://vas3k.ru/blog/machine_learning/)
+- COOL! [The Waluigi Effect (mega-post)](https://www.lesswrong.com/posts/D7PumeYTDPfBTp3i7/the-waluigi-effect-mega-post). Если упростить -  в каждой LLM (большой языковой модели) живет антогонист, готовый врать, беспредельничать и  манипулировать
 - [SmartGit non-commercial](https://www.syntevo.com/blog/?p=3669)
 - [Web Scraper](https://www.webscraper.io/)
 Web Scraper is a company specializing in data extraction from web pages. We offer 2 great options for our users. Our free Google Chrome Web Scraper Extension, and cloud based Web Scraper.
@@ -1268,6 +1269,14 @@ TL;DR zq is a command-line tool that uses the Zed language for pipeline-style se
 	`cabal install -f bundle hexpat`
 	- [Expat XML parser](https://libexpat.github.io/)
 
+### xml-xslt
+- [XSLT Transformation Online Tool](https://www.online-toolz.com/tools/xslt-transformation.php)
+- [adding attribute to the node](https://stackoverflow.com/questions/4824843/adding-attribute-to-the-node)
+- [XML to CSV Using XSLT](https://stackoverflow.com/questions/365312/xml-to-csv-using-xslt)
+- [Converting nested XML to dataframe in R - a tidyverse approach](https://urbandatapalette.com/post/2021-03-xml-dataframe-r/)
+- [How to Convert XML to Dataframe Using Xlm2](https://www.robwiederstein.org/2021/03/05/xml-to-dataframe/)
+- [How to convert XML to a DataFrame using BeautifulSoup](https://www.educative.io/answers/how-to-convert-xml-to-a-dataframe-using-beautifulsoup)
+- [concatenation two fields in xsl](https://stackoverflow.com/questions/10215605/concatenation-two-fields-in-xsl)
 
 ## Timezone
 - [Timezone unknown in Rstudio](https://stackoverflow.com/questions/46657826/timezone-unknown-in-rstudio)
@@ -1425,6 +1434,7 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 ## R
 - [Using Amazon S3 with R](https://blog.djnavarro.net/posts/2022-03-17_using-aws-s3-in-r/) by Danielle Navarro, PUBLISHED March 17, 2022
+- [Copilot for R](https://github.com/revodavid/copilot-for-r)
 
 # 28.02.2023
 ## R
@@ -1442,6 +1452,7 @@ Use `rowSums`. It offers a dims parameter which specifies "[w]hich dimensions ar
 - COOL! [Approximate cost to access various caches and main memory?](https://stackoverflow.com/questions/4087280/approximate-cost-to-access-various-caches-and-main-memory:)
 - [Please don’t make me use Databricks notebooks](https://medium.com/@seade03/please-dont-make-me-use-databricks-notebooks-3d07a4a332ae). Databricks notebooks do not encourage well-built machine learning projects
 - [Audacity ffmpeg](https://support.audacityteam.org/basics/installing-ffmpeg)
+- [Диаграмма Вороного и её применения](https://habr.com/ru/post/309252/)
 
 # 02.02.2023
 ## R
@@ -2754,6 +2765,7 @@ Overview
 	
 ## R conference
 - [New York R Conference](https://rstats.ai/nyr/)
+- [New York R meetup](https://nyhackr.org/)
 ## UseR! 2021
 - [sfnetworks: Tidy Geospatial Networks in R](https://sfnetworks.github.io/useR2021/slides#1)
 ## UseR! 2014

@@ -621,6 +621,37 @@ sudo apt install xsltproc
 sudo apt install zip
 ```
 
+### сжимаем диск, занятый WSL
+- [How do I get back unused disk space from Ubuntu on WSL2?](https://superuser.com/questions/1606213/how-do-i-get-back-unused-disk-space-from-ubuntu-on-wsl2)
+	- [wslcompact](https://github.com/okibcn/wslcompact)
+- WSL data partition. `docker-desktop-data.vhdx`
+- [How to reduce size of docker data volume in Docker Desktop for Windows v2](https://dev.to/marzelin/how-to-reduce-size-of-docker-data-volume-in-docker-desktop-for-windows-v2-5d38)
+- [Docker Desktop WSL ext4.vhdx too large](https://stackoverflow.com/questions/70946140/docker-desktop-wsl-ext4-vhdx-too-large).
+If you're willing to wipe all of your docker data, open the Docker Desktop client, click the bug icon in the top bar, and then click Clean/Purge data:
+- Рабочее решение! [Docker Desktop WSL ext4.vhdx too large](https://stackoverflow.com/questions/70946140/docker-desktop-wsl-ext4-vhdx-too-large)
+```
+I am putting the gist of the instructions below for reference but the guide above is more complete.
+First make sure all WSL instances are shut down by opening an administrator command window, and typing:
+>> wsl --shutdown 
+Verify everything is stopped by:
+>> wsl.exe --list --verbose
+Then start diskpart:
+>> diskpart
+and inside diskpart type:
+DISKPART> select vdisk file="<path to vhdx file>"
+For example:
+DISKPART> select vdisk file="C:\Users\user\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu22.04LTS_12rqwer1sdgsda\LocalState\ext4.vhdx"
+it should respond by saying DiskPart successfully selected the virtual disk file.
+Then to shrink
+DISKPART> compact vdisk
+```
+- REM Чистка кэша (3ий сигнал, самая глубокая очистка)
+REM https://unix.stackexchange.com/questions/87908/how-do-you-empty-the-buffers-and-cache-on-a-linux-system
+```
+echo (Echo) Clean cache
+%WINDOWS_INK%\_ubuntu.exe run "sudo sh -c 'sync && echo 3 > /proc/sys/vm/drop_caches'"
+```
+
 ## BitLocker
 - [Изучаем и вскрываем BitLocker. Как устроена защита дисков Windows и как ее взломать](https://xakep.ru/2017/02/23/bitlocker-hacking/)
 - Вот ведь, прямо мой случай.  [Bitlocker is off but C drive shows Bitlocker encrypted Wondows 10](https://social.technet.microsoft.com/Forums/en-US/a6c735ab-62d2-47a2-bb0c-aff9a3db1523/bitlocker-is-off-but-c-drive-shows-bitlocker-encrypted-wondows-10?forum=win10itprosecurity)
@@ -688,6 +719,8 @@ Windows should now launch as it did before, even my last browser session appeare
 	- Назначить wsl2 сетевой диск (например, `W`): Найти `\\wsl$\` в проводнике и перейти в папку `Ubuntu-хх.хх` Правой кнопкой нажать на название и выбрать в выпадающем меню – Подключить сетевой диск.
 	- Корневая папка проектов: `/opt`. Для удобства ее стоит сделать доступной всем пользователям: `sudo chmod -R 777 /opt`
 - Ставим Package Manager [Chocolatey](https://chocolatey.org/)
+   or/and 
+- [Scoop](https://scoop.sh/) A command-line installer for Windows
 - Ставим FarManager [`choco install far`](https://community.chocolatey.org/packages/Far)
 - Устанавливаем FiraCode для RStudio. [`choco install firacode`](https://community.chocolatey.org/packages/FiraCode)
 - Устанавливаем [Windows Terminal]() и для него шрифт `Cascadia Code`.

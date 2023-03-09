@@ -80,6 +80,50 @@ Run `pip install -U ipykernel`
 `Settings/untracked`
 - [EFFICIENTLY REMOVE UNTRACKED FILES FROM VISUAL STUDIO CODE REPOSITORY](https://whatismarkdown.com/efficiently-remove-untracked-files-from-visual-studio-code-repository/)
 - [Refactoring](https://code.visualstudio.com/docs/editor/refactoring)
+- COOL! [How can you export the Visual Studio Code extension list?](https://stackoverflow.com/questions/35773299/how-can-you-export-the-visual-studio-code-extension-list)
+```
+Dump extensions:
+code --list-extensions > extensions.txt
+
+Install extensions with Bash (Linux, OS X and WSL):
+cat extensions.txt | xargs code --list-extensions {}
+
+Install extensions on Windows with PowerShell:
+cat extensions.txt |% { code --install-extension $_}
+```
+or
+Generate a Windows command file (batch) for installing extensions:
+```
+for /F "tokens=*" %i in ('code --list-extensions')
+   do @echo call code --install-extension %i >> install.cmd
+```
+- Мой список установленных расширений
+```
+1YiB.rust-bundle
+bungcip.better-toml
+dustypomerleau.rust-syntax
+eamodio.gitlens
+ms-azuretools.vscode-docker
+MS-CEINTL.vscode-language-pack-ru
+ms-python.isort
+ms-python.pylint
+ms-python.python
+ms-python.vscode-pylance
+ms-toolsai.jupyter
+ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
+ms-toolsai.vscode-jupyter-cell-tags
+ms-toolsai.vscode-jupyter-slideshow
+ms-vscode-remote.remote-containers
+ms-vscode-remote.remote-wsl
+quarto.quarto
+RDebugger.r-debugger
+REditorSupport.r
+rust-lang.rust-analyzer
+serayuzgur.crates
+Swellaby.rust-pack
+```
+
 
 # Internal object structure
 - [How do I look inside a Python object?](https://stackoverflow.com/questions/1006169/how-do-i-look-inside-a-python-object)
@@ -220,6 +264,8 @@ class tracesSchema(pt.Model):
     cum_ratio: float
 ```
 - [The great Python dataframe showdown, part 3: Lightning-fast queries with Polars](https://www.orchest.io/blog/the-great-python-dataframe-showdown-part-3-lightning-fast-queries-with-polars)
+- Polars [Missing data](https://pola-rs.github.io/polars-book/user-guide/howcani/missing_data.html)
+- [Idiomatic replacement of empty string '' with pl.Null (null) in polars](https://stackoverflow.com/questions/72292048/idiomatic-replacement-of-empty-string-with-pl-null-null-in-polars)
 
 
 # Python & R
