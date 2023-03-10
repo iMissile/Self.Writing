@@ -288,6 +288,17 @@ git credential-manager-core [<command> [<args>]]
 Upgrade your local installation of Git, especially if you are using Git for Windows, or you use Git on a multi-user machine.
 - Параметр [`safe.directory`](https://git-scm.com/docs/git-config/2.35.2#Documentation/git-config.txt-safedirectory)
 `git config --global --add safe.directory D:/iwork.GL/habr-articles`
+- [How to add directory recursively on git safe.directory?](https://stackoverflow.com/questions/71855882/how-to-add-directory-recursively-on-git-safe-directory)
+	- вариант 1
+	From Git 2.36, you can also add * representing 'all' to the safe.directory. It's not recursive as you asked, but it may help depending upon your situation i.e.
+```
+git config --global --add safe.directory *
+```
+	- вариант 2
+What I did for now, but may not be the perfect solution, is to find all .git folders and add them through a find command.
+```
+find /full/path -name '.git' -type d -exec bash -c 'git config --global --add safe.directory ${0%/.git}' {} \;
+```
 
 # Отключаем проверку сертификата
 - [Server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none](https://stackoverflow.com/questions/21181231/server-certificate-verification-failed-cafile-etc-ssl-certs-ca-certificates-c)

@@ -509,3 +509,8 @@ If you don't want Quarto or anything actually to take over the styling, then you
 - [R echarts4r - format dates in axis](https://stackoverflow.com/questions/63838914/r-echarts4r-format-dates-in-axis)
 - [Mark area](https://echarts.apache.org/examples/en/editor.html?c=line-sections)
 - [Multple mark area style #52 {Open}](https://github.com/JohnCoene/echarts4r/issues/52)
+
+# Observable
+- [Wrangling data in JavaScript with Arquero: a primer for R users](https://observablehq.com/@observablehq/data-wrangling-with-arquero-from-r)
+- [An Illustrated Guide to Arquero Verbs](https://observablehq.com/@uwdata/an-illustrated-guide-to-arquero-verbs)
+- [Plot from ggplot2](https://observablehq.com/@observablehq/plot-from-ggplot2)

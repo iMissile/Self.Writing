@@ -1435,6 +1435,9 @@ This is where we will store all of the materials and links for rstudio::conf 202
 ## R
 - [Using Amazon S3 with R](https://blog.djnavarro.net/posts/2022-03-17_using-aws-s3-in-r/) by Danielle Navarro, PUBLISHED March 17, 2022
 - [Copilot for R](https://github.com/revodavid/copilot-for-r)
+- COOL! [`webR` 0.1.0 has been released](https://www.tidyverse.org/blog/2023/03/webr-0-1-0/)
+- [How to replace all NA in a dataframe using `tidyr::replace_na`?](https://stackoverflow.com/questions/45576805/how-to-replace-all-na-in-a-dataframe-using-tidyrreplace-na)
+- [How to substitute NA by 0 in 20 columns?](https://stackoverflow.com/questions/33067547/how-to-substitute-na-by-0-in-20-columns)
 
 # 28.02.2023
 ## R
@@ -1813,6 +1816,7 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 - [Testing methods for df_print-like custom table printing in quarto](https://gist.github.com/debruine/01b4ce274733a4a99622365e8c6df701)
 - [Multi-Format Publishing](https://quarto.org/docs/prerelease/1.3/multi-format.html)
 - [What I've learned making an .epub Ebook with Quarto](https://www.brodrigues.co/blog/2023-03-03-quarto_books/)
+- Евгений Матеров. [Серия митапов по Quarto, проводимых 4, 11 и 18 марта 2023 года](https://github.com/materov/quarto-meetup-begin)
 
 ## Quarto parametrization
 - [How to use Quarto for Parameterized Reporting](https://www.mm218.dev/posts/2022-08-04-how-to-use-quarto-for-parameterized-reporting/). You know. If you wanna.
