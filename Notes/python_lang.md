@@ -123,7 +123,7 @@ rust-lang.rust-analyzer
 serayuzgur.crates
 Swellaby.rust-pack
 ```
-
+- [SonarLint for Visual Studio Code](https://github.com/SonarSource/sonarlint-vscode)
 
 # Internal object structure
 - [How do I look inside a Python object?](https://stackoverflow.com/questions/1006169/how-do-i-look-inside-a-python-object)
@@ -266,11 +266,20 @@ class tracesSchema(pt.Model):
 - [The great Python dataframe showdown, part 3: Lightning-fast queries with Polars](https://www.orchest.io/blog/the-great-python-dataframe-showdown-part-3-lightning-fast-queries-with-polars)
 - Polars [Missing data](https://pola-rs.github.io/polars-book/user-guide/howcani/missing_data.html)
 - [Idiomatic replacement of empty string '' with pl.Null (null) in polars](https://stackoverflow.com/questions/72292048/idiomatic-replacement-of-empty-string-with-pl-null-null-in-polars)
+- [Number of unique items in a group](https://stackoverflow.com/questions/74001954/number-of-unique-items-in-a-group)
 
 
 # Python & R
 - [How to use R and Python in the same notebook?](https://www.askpython.com/python/examples/use-r-and-python-in-the-same-notebook)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
+
+# 13.03.2023
+- [Overhead of Python Asyncio tasks](https://textual.textualize.io/blog/2023/03/08/overhead-of-python-asyncio-tasks/)
+- [Codon](https://github.com/exaloop/codon) is a high-performance Python compiler that compiles Python code to native machine code without any runtime overhead.
+- [ETNA](https://etna-docs.netlify.app/) is the first python open source framework of Tinkoff.ru AI Center. It is designed to make working with time series simple, productive, and fun
+
+## Pandas 2.0
+- [pandas 2.0 and the Arrow revolution (part I)](https://datapythonista.me/blog/pandas-20-and-the-arrow-revolution-part-i)
 
 # 03.03.2023
 - [Process escape sequences in a string in Python](https://stackoverflow.com/questions/4020539/process-escape-sequences-in-a-string-in-python)

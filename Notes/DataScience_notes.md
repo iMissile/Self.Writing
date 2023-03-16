@@ -1247,6 +1247,7 @@ TL;DR zq is a command-line tool that uses the Zed language for pipeline-style se
 	- [JQ: how can I remove keys based on regex?](https://stackoverflow.com/questions/52184815/jq-how-can-i-remove-keys-based-on-regex)
 	- [How can I exclude all keys with a specific value inside a JSON with jq?](https://unix.stackexchange.com/questions/654725/how-can-i-exclude-all-keys-with-a-specific-value-inside-a-json-with-jq)
 	- [Using jq, remove keys that match a regular expression](https://stackoverflow.com/questions/61859923/using-jq-remove-keys-that-match-a-regular-expression)
+- [Sorting strings in an array with jq](https://stackoverflow.com/questions/69110148/sorting-strings-in-an-array-with-jq)
 
 
 ## xml, xml-to-json
@@ -1427,6 +1428,16 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 13.03.2023
+## R
+- COOL! [A Practical Guide to Statistical Power and Sample Size Calculations in R](https://cran.r-project.org/web/packages/pwrss/vignettes/examples.html)
+- [ComplexHeatmap](https://jokergoo.github.io/ComplexHeatmap-reference/book/index.html). Complex heatmaps are efficient to visualize associations between different sources of data sets and reveal potential patterns. Here the ComplexHeatmap package provides a highly flexible way to arrange multiple heatmaps and supports various annotation graphics.
+
+## Jira API
+- [How do I get a list of specific Jira Issues (Key) using the advanced search feature?](https://community.atlassian.com/t5/Jira-questions/How-do-I-get-a-list-of-specific-Jira-Issues-Key-using-the/qaq-p/1472868)
+`project = SP and key in ("SP-406","SP-395") ORDER BY key ASC`
+- [How to get Jira issue id from issue key](https://community.atlassian.com/t5/Jira-questions/How-to-get-Jira-issue-id-from-issue-key/qaq-p/1156675)
+
 # 06.03.2023
 ## Haskel
 - [GHCup](https://www.haskell.org/ghcup/). GHCup is the main installer for the general purpose language Haskell.
@@ -1456,6 +1467,7 @@ Use `rowSums`. It offers a dims parameter which specifies "[w]hich dimensions ar
 - [Please don’t make me use Databricks notebooks](https://medium.com/@seade03/please-dont-make-me-use-databricks-notebooks-3d07a4a332ae). Databricks notebooks do not encourage well-built machine learning projects
 - [Audacity ffmpeg](https://support.audacityteam.org/basics/installing-ffmpeg)
 - [Диаграмма Вороного и её применения](https://habr.com/ru/post/309252/)
+- [Four Transformers-related papers that will help you understand them](https://medium.com/@leonardo.tanzi/four-transformers-related-papers-that-will-help-you-understand-them-94e9e557e1ae). Presented with short summaries
 
 # 02.02.2023
 ## R
@@ -1714,7 +1726,7 @@ This page describes the extension functions and extension elements supplied with
 - [Making a string concatenation operator in R](https://stackoverflow.com/questions/4730551/making-a-string-concatenation-operator-in-r)
 E.g.  `%+%` <- function(a, b) paste(a, b, sep="")
 - COOL [Summarize different Columns with different Functions](https://stackoverflow.com/questions/36822672/summarize-different-columns-with-different-functions)
-- Проблемы с подключение к нашей Jira. Выплыла ошибка 'InitializeSecurityContext failed: SEC_E_ILLEGAL_MESSAGE (0x80090326)'. Решение связано с SSL библиотеками в Windows:
+- Проблемы с подключением к нашей Jira. Выплыла ошибка 'InitializeSecurityContext failed: SEC_E_ILLEGAL_MESSAGE (0x80090326)'. Решение связано с SSL библиотеками в Windows:
 	- [httr::GET returns error for a specific website](https://stackoverflow.com/questions/71736855/httrget-returns-error-for-a-specific-website)
 	- [Error running weathercan package - fatal SSL/TLS alert (e.g. handshake failed))](https://stackoverflow.com/questions/64147821/error-running-weathercan-package-fatal-ssl-tls-alert-e-g-handshake-failed)
 	- Ответ: 
@@ -1817,6 +1829,7 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 - [Multi-Format Publishing](https://quarto.org/docs/prerelease/1.3/multi-format.html)
 - [What I've learned making an .epub Ebook with Quarto](https://www.brodrigues.co/blog/2023-03-03-quarto_books/)
 - Евгений Матеров. [Серия митапов по Quarto, проводимых 4, 11 и 18 марта 2023 года](https://github.com/materov/quarto-meetup-begin)
+- [webR Code Extension for Quarto HTML Documents](https://github.com/coatless/quarto-webr)
 
 ## Quarto parametrization
 - [How to use Quarto for Parameterized Reporting](https://www.mm218.dev/posts/2022-08-04-how-to-use-quarto-for-parameterized-reporting/). You know. If you wanna.

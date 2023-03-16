@@ -422,6 +422,13 @@ storeLabeller <- function(string) {
 =======
 - COOL! Как эффективно применить `ggfx` [Better data communication with {ggplot2}, part 2](https://giulia-ruggeri.medium.com/better-data-communication-with-ggplot2-part-2-615a5180ccb)
 
+# upset graph
+- COOL! [UpSet Homepage](https://upset.app/). Visualizing Intersecting Sets
+- [UpSet: Visualization of Intersecting Sets](https://vdl.sci.utah.edu/publications/2014_infovis_upset/)
+- [UpSetR: An R Package For The Visualization Of Intersecting Sets And Their Properties](https://vdl.sci.utah.edu/publications/2017_bioinformatics_upsetr/)
+- [UpSetR](https://github.com/hms-dbmi/UpSetR) generates static UpSet plots.
+- [ComplexHeatmap. UpSet plot](https://jokergoo.github.io/ComplexHeatmap-reference/book/upset-plot.html)
+UpSet plot provides an efficient way to visualize intersections of multiple sets compared to the traditional approaches, i.e. the Venn Diagram. 
 
 # other
 - COOL! [Altair: Declarative Visualization in Python](https://altair-viz.github.io/)
