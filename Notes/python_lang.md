@@ -277,6 +277,10 @@ class tracesSchema(pt.Model):
 - [Overhead of Python Asyncio tasks](https://textual.textualize.io/blog/2023/03/08/overhead-of-python-asyncio-tasks/)
 - [Codon](https://github.com/exaloop/codon) is a high-performance Python compiler that compiles Python code to native machine code without any runtime overhead.
 - [ETNA](https://etna-docs.netlify.app/) is the first python open source framework of Tinkoff.ru AI Center. It is designed to make working with time series simple, productive, and fun
+- COOL! [Append values to a set in Python](https://stackoverflow.com/questions/3392354/append-values-to-a-set-in-python). 
+Use `add` to append single values.
+Use `update` to add elements from tuples, sets, lists or frozen-sets
+You can also use the `|` operator to concatenate two sets (union in set theory) or a shorter form using |=:
 
 ## Pandas 2.0
 - [pandas 2.0 and the Arrow revolution (part I)](https://datapythonista.me/blog/pandas-20-and-the-arrow-revolution-part-i)

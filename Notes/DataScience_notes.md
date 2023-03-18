@@ -1437,6 +1437,14 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [How do I get a list of specific Jira Issues (Key) using the advanced search feature?](https://community.atlassian.com/t5/Jira-questions/How-do-I-get-a-list-of-specific-Jira-Issues-Key-using-the/qaq-p/1472868)
 `project = SP and key in ("SP-406","SP-395") ORDER BY key ASC`
 - [How to get Jira issue id from issue key](https://community.atlassian.com/t5/Jira-questions/How-to-get-Jira-issue-id-from-issue-key/qaq-p/1156675)
+- [How to get all issues of a project using Rest API](https://community.atlassian.com/t5/Jira-questions/How-to-get-all-issues-of-a-project-using-Rest-API/qaq-p/832316). Прямым запросом не дает поле `worklog`.
+- [Get specific fields for each issue in a project](https://community.developer.atlassian.com/t/get-specific-fields-for-each-issue-in-a-project/43208)
+`https://{{yourinstance}}/rest/api/latest/search?jql=project=10900&maxResults=50&fields=summary,created,customfield_10030`
+- [Get all fields including comments in search rest api results](https://community.developer.atlassian.com/t/get-all-fields-including-comments-in-search-rest-api-results/11452)
+- [Rest API - get issues between dates](https://community.atlassian.com/t5/Jira-questions/Rest-API-get-issues-between-dates/qaq-p/1236687)
+`https://jira.media-tel.ru/rest/api/latest/search?jql=project="VIVA Mobile"&maxResults=10`, ' ' в строке запроса должен меняться на %20
+- [Using rvest when login is required](https://riptutorial.com/r/example/23955/using-rvest-when-login-is-required)
+- [Using rvest to scrape a website w/ a login page](https://stackoverflow.com/questions/43700708/using-rvest-to-scrape-a-website-w-a-login-page)
 
 # 06.03.2023
 ## Haskel
@@ -2456,6 +2464,7 @@ You can use dlib : C++ tool for non-linear optimization which includes functions
   script <-"document.getElementById('ctl00_ctl00_btSend').click();"
   remDrv$executeScript(script, args = list(search_elem))
 ```
+- [How to use RSelenium to Login to a Website on Windows machine](https://stackoverflow.com/questions/43580133/how-to-use-rselenium-to-login-to-a-website-on-windows-machine)
 
 # 05.04.2022
 ## R
