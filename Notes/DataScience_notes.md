@@ -1428,6 +1428,11 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 20.02.2023
+## R
+- [How to find RStudio Preview in the new Posit.co site?](https://community.rstudio.com/t/how-to-find-rstudio-preview-in-the-new-posit-co-site/155376)
+- COOL! [How to create a consecutive group number](https://stackoverflow.com/questions/6112803/how-to-create-a-consecutive-group-number)
+
 # 13.03.2023
 ## R
 - COOL! [A Practical Guide to Statistical Power and Sample Size Calculations in R](https://cran.r-project.org/web/packages/pwrss/vignettes/examples.html)
@@ -1476,6 +1481,7 @@ Use `rowSums`. It offers a dims parameter which specifies "[w]hich dimensions ar
 - [Audacity ffmpeg](https://support.audacityteam.org/basics/installing-ffmpeg)
 - [Диаграмма Вороного и её применения](https://habr.com/ru/post/309252/)
 - [Four Transformers-related papers that will help you understand them](https://medium.com/@leonardo.tanzi/four-transformers-related-papers-that-will-help-you-understand-them-94e9e557e1ae). Presented with short summaries
+- COOL! [Deno is a secure TypeScript runtime built on V8, the Google runtime engine for JavaScript.](https://deno.land/)
 
 # 02.02.2023
 ## R

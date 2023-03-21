@@ -652,6 +652,11 @@ echo (Echo) Clean cache
 %WINDOWS_INK%\_ubuntu.exe run "sudo sh -c 'sync && echo 3 > /proc/sys/vm/drop_caches'"
 ```
 
+## Ubuntu в WSL:
+- [WSL mount external and network drives](https://www.scivision.dev/mount-usb-drives-windows-subsystem-for-linux/).
+Для внешнего диска такая команда отрабатывает: `mount -t drvfs s: /mnt/s`
+- [Is there a way to mount an external drive when it becomes available in WSL?](https://superuser.com/questions/1734353/is-there-a-way-to-mount-an-external-drive-when-it-becomes-available-in-wsl)
+
 ## BitLocker
 - [Изучаем и вскрываем BitLocker. Как устроена защита дисков Windows и как ее взломать](https://xakep.ru/2017/02/23/bitlocker-hacking/)
 - Вот ведь, прямо мой случай.  [Bitlocker is off but C drive shows Bitlocker encrypted Wondows 10](https://social.technet.microsoft.com/Forums/en-US/a6c735ab-62d2-47a2-bb0c-aff9a3db1523/bitlocker-is-off-but-c-drive-shows-bitlocker-encrypted-wondows-10?forum=win10itprosecurity)

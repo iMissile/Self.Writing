@@ -79,6 +79,16 @@ A simpler, faster alternative to git-filter-branch for deleting big files and re
 - [How can I delete a commit in Git?](https://www.git-tower.com/learn/git/faq/delete-commits)
 - [17. Удаление коммитов из ветки](https://githowto.com/ru/removing_commits_from_a_branch)
 - COOL! [Remove files from Git commit](https://stackoverflow.com/questions/12481639/remove-files-from-git-commit)
+- [How can I delete all of my Git stashes at once?](https://stackoverflow.com/questions/11369375/how-can-i-delete-all-of-my-git-stashes-at-once).
+```
+git stash list
+git stash clear
+```
+- [`git prune`] спас от мусора в `objects`
+- [Quickly rewrite git repository history (filter-branch replacement)](https://github.com/newren/git-filter-repo)
+- [Команда `git gc`](https://www.atlassian.com/ru/git/tutorials/git-gc)
+`git gc` — это команда для технического обслуживания репозитория. gc расшифровывается как garbage collection, то есть «сбор мусора». 
+- [Keep your git directory clean with `git clean` and `git trash`](https://coderwall.com/p/g16jpq/keep-your-git-directory-clean-with-git-clean-and-git-trash)
 - COOL [Take GitHub to the command line](https://cli.github.com/)
 - [How to update your Git credentials on Windows](https://cmatskas.com/how-to-update-your-git-credentials-on-windows/)
 `Control Panel -> Credential Manager -> Generic Credentials`,
@@ -86,7 +96,11 @@ A simpler, faster alternative to git-filter-branch for deleting big files and re
 - [Доступ к диспетчеру учетных данных](https://support.microsoft.com/ru-ru/help/4026814/windows-accessing-credential-manager)
 - [7.14 Git Tools - Credential Storage](https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage)
 
+## Remove large files
+- [List all Git repository objects by size](https://gist.github.com/magnetikonline/dd5837d597722c9c2d5dfa16d8efe5b9). shell script
+
 # Git
+- [How to Update Git to a Newest Version on Linux(Ubuntu 20.04 LTS)](https://www.cyberithub.com/how-to-update-git-to-a-newest-version-on-linux-ubuntu-20-04-lts/)
 - [Git cheat sheet, extended edition](https://jan-krueger.net/git-cheat-sheet-extended-edition)
 - [Clone at Git Repo to a Different Directory](https://til.hashrocket.com/posts/z0f393xq0s-clone-at-git-repo-to-a-different-directory)
 `$ git clone https://github.com/cool_user/codez.git ~/codez-v2`

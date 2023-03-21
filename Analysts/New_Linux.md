@@ -84,6 +84,7 @@ apt-get remove --purge \
   texlive-latex-recommended-doc texlive-pictures-doc texlive-pstricks-doc
 ```
 - [Check Debian/Ubuntu Linux package version using apt-get/aptitude command](https://www.cyberciti.biz/faq/debian-ubuntu-linux-apt-get-aptitude-show-package-version-command/)
+- [How to Update Git to a Newest Version on Linux(Ubuntu 20.04 LTS)](https://www.cyberithub.com/how-to-update-git-to-a-newest-version-on-linux-ubuntu-20-04-lts/)
 
 ## Изменение владельца папке (рекурсивное)
 `chown shiny:shiny /ext -R`
