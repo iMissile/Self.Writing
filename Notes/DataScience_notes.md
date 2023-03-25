@@ -1432,6 +1432,15 @@ This is where we will store all of the materials and links for rstudio::conf 202
 ## R
 - [How to find RStudio Preview in the new Posit.co site?](https://community.rstudio.com/t/how-to-find-rstudio-preview-in-the-new-posit-co-site/155376)
 - COOL! [How to create a consecutive group number](https://stackoverflow.com/questions/6112803/how-to-create-a-consecutive-group-number)
+- [Group by a selection of variables](https://dplyr.tidyverse.org/reference/group_by_all.html)
+```
+df <- inner_join(dat_df, cmb_df) %>%
+  group_by(pick(everything())) %>%
+  summarise(cnt = n(), .groups = "drop")
+```
+- [+ (plus) with substitute and pipelines works incorrect](https://stackoverflow.com/questions/75813367/plus-with-substitute-and-pipelines-works-incorrect)
+- [How to sort each row of an R data frame in increasing order?](https://www.tutorialspoint.com/how-to-sort-each-row-of-an-r-data-frame-in-increasing-order)
+- [Rfast: A Collection of Efficient and Extremely Fast R Functions](https://cran.r-project.org/web/packages/Rfast/index.html)
 
 # 13.03.2023
 ## R
@@ -1844,6 +1853,8 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 - [What I've learned making an .epub Ebook with Quarto](https://www.brodrigues.co/blog/2023-03-03-quarto_books/)
 - Евгений Матеров. [Серия митапов по Quarto, проводимых 4, 11 и 18 марта 2023 года](https://github.com/materov/quarto-meetup-begin)
 - [webR Code Extension for Quarto HTML Documents](https://github.com/coatless/quarto-webr)
+- [vtree object is renderred in Rmarkdown but not in quarto](https://stackoverflow.com/questions/72671641/vtree-object-is-renderred-in-rmarkdown-but-not-in-quarto). Quarto works a bit differently than R Markdown as it will run R only for the knitting process, and not for the conversion to output format, here HTML.
+- [How to resize figures in Quarto (PDF output)?](https://stackoverflow.com/questions/73844454/how-to-resize-figures-in-quarto-pdf-output)
 
 ## Quarto parametrization
 - [How to use Quarto for Parameterized Reporting](https://www.mm218.dev/posts/2022-08-04-how-to-use-quarto-for-parameterized-reporting/). You know. If you wanna.
@@ -1880,6 +1891,14 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 - [Define a new callout in quarto](https://stackoverflow.com/questions/74647399/define-a-new-callout-in-quarto)
 - [How to apply CSS style to Quarto output](https://stackoverflow.com/questions/74026514/how-to-apply-css-style-to-quarto-output)
 - [Add a CSS class to single code chunks in RMarkdown](https://stackoverflow.com/questions/37944197/add-a-css-class-to-single-code-chunks-in-rmarkdown)
+
+## Quarto & observable
+- [Observable JS](https://quarto.org/docs/interactive/ojs/)
+- [Wrangling data in JavaScript with Arquero: a primer for R users](https://observablehq.com/@observablehq/data-wrangling-with-arquero-from-r)
+- [Introducing Arquero](https://observablehq.com/@uwdata/introducing-arquero)
+- [Pass R object to Observable in Quarto](https://stackoverflow.com/questions/73873681/pass-r-object-to-observable-in-quarto)
+- [Observable Imports in Quarto](https://timelyportfolio.github.io/quarto_tests/examples/quarto_observable_imports/quarto_observable_imports.html)
+- [A beginner's guide to using Observable JavaScript, R, and Python with Quarto](https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html)
 
 ## knitr textwidth
 - xaringan. [Font size of code {#69}](https://github.com/yihui/xaringan/issues/69)
@@ -2084,6 +2103,7 @@ install_version("dbplyr", version = "2.1.1", repos = "http://cran.us.r-project.o
 	- [shinyscreenshot: Finally, an easy way to take screenshots in Shiny apps!](https://www.google.com/amp/s/www.r-bloggers.com/2020/11/shinyscreenshot-finally-an-easy-way-to-take-screenshots-in-shiny-apps/amp/)
 	- [Rich Text Editor in Shiny App](https://deeps.shinyapps.io/HTMLEditor/
 https://github.com/deepanshu88/ShinyEditor)
+- Lection. [a gRadual intRoduction to Shiny](https://laderast.github.io/gradual_shiny/). Introductory Workshop to Basic Shiny Concepts
 
 ## R & trees
 - Tree visualization

@@ -202,6 +202,8 @@ Extra Coordinate Systems, Geoms, Statistical Transformations & Scales for 'ggplo
 - [How to Turn Your ggplot2 Visualization into an Interactive Tweet](https://datatitian.com/how-to-turn-your-ggplot2-visualization-into-an-interactive-tweet/)
 - [cowplot – Streamlined plot theme and plot annotations for ggplot2](https://github.com/wilkelab/cowplot)
 - [Changing Glyph in legend in ggplot2](https://www.hvitfeldt.me/blog/changing-glyph-in-ggplot2/)
+- [Add legend for stroke points ggplot2](https://stackoverflow.com/questions/58290389/add-legend-for-stroke-points-ggplot2)
+- [Changing shapes used for scale_shape() in ggplot2](https://stackoverflow.com/questions/1478532/changing-shapes-used-for-scale-shape-in-ggplot2)
 - COOL! [lemon: Freshing Up your 'ggplot2' Plots](https://cran.rstudio.com/web/packages/lemon/)
 Functions for working with legends and axis lines of 'ggplot2', facets that repeat axis lines on all panels, and some 'knitr' extensions.
 - [ggdendro: Create Dendrograms and Tree Diagrams Using 'ggplot2'](https://cran.r-project.org/web/packages/ggdendro/index.html)
@@ -439,6 +441,12 @@ The goal of ggvega is to translate a ggplot2 object to a Vega-Lite specification
 	- [vlbuildr](https://vegawidget.github.io/vlbuildr/index.html)
 The goal of vlbuildr is to provide an R api for building up vega-lite specs.
 - [trelliscopejs](https://hafen.github.io/trelliscopejs/). Trelliscope is a scalable, flexible, interactive approach to visualizing data.
+	- [Better examples of how you export a Trelliscope object {#24}](https://github.com/hafen/trelliscopejs/issues/24).
+```
+facet_trelliscope(~ country + continent, nrow = 2, ncol = 7, width = 300, path = "/tmp/gap")
+list.files("/tmp/gap")
+```
+	
 - COOL! [a ggplot2 grammar guide](https://evamaerey.github.io/ggplot2_grammar_guide/about)
 - COOL! Для того, чтобы `render_graph` в `DiagrammeR` работал и сохранял граф в файл, необходимо доставлять руками библиотеки `DiagrammeRSVG` и `V8`. Они отсутствуют в явных зависимостях.
 - Хорошая статья с визуализациями. [Tracking covid-19 excess deaths across countries](https://www.economist.com/graphic-detail/coronavirus-excess-deaths-tracker)

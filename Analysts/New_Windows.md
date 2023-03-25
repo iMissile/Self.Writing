@@ -266,6 +266,7 @@ C:\Users\Ilya>netsh wlan set autoconfig enabled=no interface="Беспровод
 - [How to Fix Ping Spikes in Windows 11/10](https://thegeekpage.com/ping-spikes-in-windows-11-10/#Fix_9_-_Disable_Location_Tracking_Feature)
 
 ## Проблемы с интернетом
+- [Неопознанная сеть без доступа к Интернету - причины и решение](https://ocomp.info/neopoznannaya-set-bez-interneta.html)
 - [Интернет есть, но пишет "Без доступа к интернету" (Windows 10, 8, 7): чем грозит и как исправить](https://vladimirbelev.ru/internet-est-no-pishet-bez-dostupa-k-internetu-windows-10)
 - [Исправляем ошибку «msftconnecttest redirect» в Windows 10](https://tehnichka.pro/error-msftconnecttest-redirect-windows-10/)
 `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet` ставим в 0
@@ -282,6 +283,7 @@ ipconfig /release  и нажмите Enter.
 ipconfig /renew  и нажмите Enter.
 ipconfig /flushdns  и нажмите Enter.
 ```
+
 
 ## Outlook
 - [Папки в Outlook отображаются на английском языке](https://www.dmosk.ru/polezno.php?review=outlook-en). 
@@ -380,8 +382,6 @@ Reboot your computer.
 	- [WireGuard](https://www.wireguard.com/): fast, modern, secure VPN tunnel
 WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
 
-## Проблемы с сетевым подключением
-- [Неопознанная сеть без доступа к Интернету - причины и решение](https://ocomp.info/neopoznannaya-set-bez-interneta.html)
 
 ## RDP
 - [Как нажать Ctrl+Alt+Del работая удаленно через RDP ?](https://sysadmin.ru/articles/kak-nazhat-ctrlaltdel-rabotaya-udalenno-cherez-rdp). На помощь нам придет другая комбинация клавиш. Чтобы добиться аналогичного эффекта на удаленном компьютере, нужно нажать комбинацию клавиш `Control+Alt+End` (сокр. `Ctrl+Alt+End`).
