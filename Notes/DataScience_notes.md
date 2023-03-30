@@ -1492,6 +1492,7 @@ Use `rowSums`. It offers a dims parameter which specifies "[w]hich dimensions ar
 - [Диаграмма Вороного и её применения](https://habr.com/ru/post/309252/)
 - [Four Transformers-related papers that will help you understand them](https://medium.com/@leonardo.tanzi/four-transformers-related-papers-that-will-help-you-understand-them-94e9e557e1ae). Presented with short summaries
 - COOL! [Deno is a secure TypeScript runtime built on V8, the Google runtime engine for JavaScript.](https://deno.land/)
+- COOL! [Common statistical tests are linear models (or: how to teach stats)](https://lindeloev.github.io/tests-as-linear/)
 
 # 02.02.2023
 ## R
@@ -2140,6 +2141,8 @@ G*Power is a tool to compute statistical power analyses for many different t tes
 - [Градиентный бустинг](https://ml-handbook.ru/chapters/grad_boost/intro). Авторы:  Кирилл Лунёв, Евгения Елистратова
 Во многих компаниях, так или иначе связанных с ML, он используется для всех задач, которые не связаны с однородными данными (картинками, текстами, etc). Типичный поисковый запрос в Яндексе, выбор отеля на Booking.com или сериала на вечер в Netflix задействует несколько десятков моделей GBDT.
 - [L1-L2 регуляризация](https://itchef.ru/articles/312622/)
+- COOL! [Intuitive understanding of 1D, 2D, and 3D convolutions in convolutional neural networks {closed}](https://stackoverflow.com/questions/42883547/intuitive-understanding-of-1d-2d-and-3d-convolutions-in-convolutional-neural-n)
+- Для видео. [A Closer Look at Spatiotemporal Convolutions for Action Recognition](https://arxiv.org/abs/1711.11248v3)
 
 ## R
 - [Предсказание оттока сотрудников](https://rpubs.com/pavel_rafael/employee). Пономарев Павел-Рафаэль, ppponomarev
@@ -2260,6 +2263,10 @@ tryCatch(
 - [CSS ALMANAC → PROPERTIES → V → visibility](https://css-tricks.com/almanac/properties/v/visibility/#:~:text=The%20visibility%20property%20in%20CSS,element%20without%20changing%20the%20layout.&text=visibility%20has%20four%20valid%20values,hidden%20%2C%20collapse%20%2C%20and%20inherit%20.)
 - [tags$style applied to all Leaflet Maps in R shiny](https://stackoverflow.com/questions/64669524/tagsstyle-applied-to-all-leaflet-maps-in-r-shiny)
 - COOL! [How to Connect Google Earth Engine with R Shiny](https://medium.com/appsilon-data-science/how-to-connect-google-earth-engine-with-r-shiny-df5d72d25d14)
+- COOL! [Web Socket error {#118}](https://github.com/rstudio/shiny-server/issues/118)
+Hi, I just deployed my app on an amazon server and using Nginx. I am getting the following error
+WebSocket connection to 'ws://webaddress.here/__sockjs__/613/2_g_1rfa/websocket' failed: Error during WebSocket handshake: Unexpected response code: 400
+I can't seem to find any solution online. When I run the app on my local machine, everything runs smoothly.
 
 # 23.05.2022
 ## DS
@@ -4261,7 +4268,6 @@ This visual explanation introduces the statistical concept of Hierarchical Model
 - COOL! [Joins vs case whens - speed and memory tradeoffs](https://themockup.blog/posts/2021-02-13-joins-vs-casewhen-speed-and-memory-tradeoffs/)
 - COOL! [Getting Into the Rhythm of Chart Typography with {ragg} and {hrbragg} (a.k.a. It’s {ragg}-time}](https://rud.is/b/2021/02/19/getting-into-the-rhythm-of-chart-typography-with-ragg-and-hrbragg-a-k-a-its-ragg-time/)
 - [Awesome R Shiny Resources & Extensions](https://paulvanderlaken.com/2021/02/16/awesome-r-shiny-resources-extensions/)
-- COOL! [User Guide: 1 Debugging ggplots](https://cran.r-project.org/web/packages/gginnards/vignettes/user-guide-1.html)
 - Slides [aRt + ggplot: exploring radial visualizations](https://ijeamakaanyene.github.io/aRt_ggplot/index.html#1)
 - [tastypie](https://paolodalena.github.io/tastypie/). Pie chart in R.
 - COOL! [FAQ for RStudio Public Package Manager](https://support.rstudio.com/hc/en-us/articles/360046703913-FAQ-for-Public-RStudio-Package-Manager)

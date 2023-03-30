@@ -273,6 +273,10 @@ class tracesSchema(pt.Model):
 - [How to use R and Python in the same notebook?](https://www.askpython.com/python/examples/use-r-and-python-in-the-same-notebook)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 
+# 29.03.2023
+- COOL! [Tutorial: Why Functions Modify Lists and Dictionaries in Python](https://www.dataquest.io/blog/tutorial-functions-modify-lists-dictionaries-python/)
+- [What is the difference between arguments and parameters?](https://docs.python.org/3.3/faq/programming.html#faq-argument-vs-parameter)
+
 # 13.03.2023
 - [Overhead of Python Asyncio tasks](https://textual.textualize.io/blog/2023/03/08/overhead-of-python-asyncio-tasks/)
 - [Codon](https://github.com/exaloop/codon) is a high-performance Python compiler that compiles Python code to native machine code without any runtime overhead.

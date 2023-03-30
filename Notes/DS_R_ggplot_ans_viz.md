@@ -234,7 +234,6 @@ This is a set of tools for dendrograms and tree plots using 'ggplot2'. The 'ggpl
 - [ZOOMING IN ON MAPS WITH SF AND GGPLOT2](https://datascience.blog.wzb.eu/2019/04/30/zooming-in-on-maps-with-sf-and-ggplot2/)
 - [Detailed Guide to the Bar Chart in R with ggplot](https://michaeltoth.me/detailed-guide-to-the-bar-chart-in-r-with-ggplot.html)
 - [A Detailed Guide to the ggplot Scatter Plot in R](https://michaeltoth.me/a-detailed-guide-to-the-ggplot-scatter-plot-in-r.html)
-- [ggpmisc 0.2.13. Debugging ggplots](https://cran.r-project.org/web/packages/ggpmisc/vignettes/debug.html)
 - COOL! [Adding Custom Fonts to ggplot in R](http://gradientdescending.com/adding-custom-fonts-to-ggplot-in-r/)
 - Можно ли посадить Shiny приложение на локальные шрифты?
 	- [RC font not rendering in shiny #19 {Open}](https://github.com/hrbrmstr/hrbrthemes/issues/19)
@@ -343,6 +342,16 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - [ggplot2::scale_x_time: Formatting hms objects](https://stackoverflow.com/questions/58395236/ggplot2scale-x-time-formatting-hms-objects)
 - []
 
+## ggplot debug
+- [ggpmisc 0.2.13. Debugging ggplots](https://cran.r-project.org/web/packages/ggpmisc/vignettes/debug.html)
+- [gginnards](https://docs.r4photobiology.info/gginnards/). Package ‘gginnards’ (Explore the innards of ‘ggplot2’) is a set of extensions to R package ‘ggplot2’ and tools specially useful when learning how to write extensions and when debugging newly defined stats and geoms.
+- COOL! [User Guide: 1 Debugging ggplots](https://cran.r-project.org/web/packages/gginnards/vignettes/user-guide-1.html)
+- [`ggdebug` - a package for debugging ggplot stats](https://coolbutuseless.github.io/2019/03/26/ggdebug-a-package-for-debugging-ggplot-stats/)
+- [Gggplot2 Internals - An Unofficial Reference](https://htmlpreview.github.io/?https://github.com/brodieG/ggbg/blob/development/inst/doc/extensions.html)
+- [pter 1 Demystifying ggplot2](https://rud.is/books/creating-ggplot2-extensions/demystifying-ggplot2.html)
+- [Internals of ggplot2](https://ggplot2-book.org/internals.html)
+
+
 ## Dual axes
 - [Dual axes time series plots may be ok sometimes after all](http://ellisp.github.io/blog/2016/08/18/dualaxes). Dual axis time series charts are often deprecated, but the standard alternatives have weaknesses too. In some circumstances, if done carefully, dual axis time series charts may be ok after all. In particular, you can choose two vertical scales so the drawing on the page is equivalent to drawing two indexed series, but retaining the meaningful mapping to the scale of the original variables.
 - [Dual axes time series plots with various more awkward data](http://ellisp.github.io/blog/2016/08/28/dualaxes2). TL;DR Summary:
@@ -435,6 +444,7 @@ storeLabeller <- function(string) {
 UpSet plot provides an efficient way to visualize intersections of multiple sets compared to the traditional approaches, i.e. the Venn Diagram. 
 
 # other
+- [ggplot2 Version of Figures in Lattice: Multivariate Data. Visualization with R](https://learnr.files.wordpress.com/2009/08/latbook.pdf)
 - COOL! [Altair: Declarative Visualization in Python](https://altair-viz.github.io/)
 	- [vegawidget](https://vegawidget.github.io/vegawidget/index.html)
 The goal of vegawidget is to render Vega-Lite and Vega specifications as htmlwidgets, and to provide you a means to communicate with a Vega chart using JavaScript or Shiny.
