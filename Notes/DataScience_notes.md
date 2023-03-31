@@ -1428,7 +1428,7 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
-# 20.02.2023
+# 20.03.2023
 ## R
 - [How to find RStudio Preview in the new Posit.co site?](https://community.rstudio.com/t/how-to-find-rstudio-preview-in-the-new-posit-co-site/155376)
 - COOL! [How to create a consecutive group number](https://stackoverflow.com/questions/6112803/how-to-create-a-consecutive-group-number)
@@ -1441,6 +1441,7 @@ df <- inner_join(dat_df, cmb_df) %>%
 - [+ (plus) with substitute and pipelines works incorrect](https://stackoverflow.com/questions/75813367/plus-with-substitute-and-pipelines-works-incorrect)
 - [How to sort each row of an R data frame in increasing order?](https://www.tutorialspoint.com/how-to-sort-each-row-of-an-r-data-frame-in-increasing-order)
 - [Rfast: A Collection of Efficient and Extremely Fast R Functions](https://cran.r-project.org/web/packages/Rfast/index.html)
+- COOL! [R Documentation. Operator Syntax and Precedence](https://stat.ethz.ch/R-manual/R-devel/library/base/html/Syntax.html)
 
 # 13.03.2023
 ## R

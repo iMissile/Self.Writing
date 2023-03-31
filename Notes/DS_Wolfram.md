@@ -1,5 +1,10 @@
 
-# 09.01.23
+# 31.03.2023
+- [Function to view N-th digit of large number?](https://community.wolfram.com/groups/-/m/t/1700638)
+`IntegerLength`, `9^(9^9) // IntegerDigits // Last`, `NumberDigit[x,n]` returns the digit corresponding to 10n in the real-valued number x.
+
+
+# 09.01.2023
 - [Polynomial Factoring & Decomposition](https://reference.wolfram.com/language/guide/PolynomialFactoring.html)
 - [How to | Factor a Polynomial](https://reference.wolfram.com/language/howto/FactorAPolynomial.html)
 - [Substituting a Value into an Expression](https://mathematica.stackexchange.com/questions/109127/substituting-a-value-into-an-expression)

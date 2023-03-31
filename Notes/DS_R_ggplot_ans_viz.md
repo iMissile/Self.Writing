@@ -318,6 +318,8 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - [Using ggplot2, can I insert a break in the axis?](https://stackoverflow.com/questions/7194688/using-ggplot2-can-i-insert-a-break-in-the-axis)
 - [How do I access the data frame that has been passed to ggplot()?](https://stackoverflow.com/questions/45088454/how-do-i-access-the-data-frame-that-has-been-passed-to-ggplot)
 - Slides [Cracking open the internals of ggplot. A {ggtrace} showcase](https://yjunechoe.github.io/ggtrace-talk/#1)
+- Slides also. [Beyond Bar and Box Plots. Hands–on code to create and style chart alternatives with ggplot2](https://z3tt.github.io/beyond-bar-and-box-plots/)
+- [I’ve Stopped Using Box Plots. Should You?](https://nightingaledvs.com/ive-stopped-using-box-plots-should-you/)
 - COOL! [Recreating the New York Times COVID-19 Spiral Graph](https://bydata.github.io/nyt-corona-spiral-chart/)
 - [ggplot: How to increase spacing between faceted plots?](https://stackoverflow.com/questions/3681647/ggplot-how-to-increase-spacing-between-faceted-plots)
 - Error in (function (filename = "Rplot%03d.png", width = 480, height = 480, : unable to start png() device.
