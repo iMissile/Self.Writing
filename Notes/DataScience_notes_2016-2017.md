@@ -10,7 +10,6 @@
 - [Combined outlier detection with dplyr and ruler](http://www.questionflow.org/2017/12/26/combined-outlier-detection-with-dplyr-and-ruler/)
 - [Tiny Art in Less Than 280 Characters](https://fronkonstin.com/2017/12/23/tiny-art-in-less-than-280-characters/)
 - [Nov 2017: New Package Picks](https://rviews.rstudio.com/2017/12/22/nov-2017-new-package-picks/)
-- [Building formulae](http://www.brodrigues.co/blog/2017-12-27-build_formulae/)
 - [Visualising US Voting Records with shinydashboard](https://www.gokhanciflikli.com/post/adavis/)
 - COOL! [SIX REASONS TO LEARN R FOR BUSINESS](http://www.business-science.io/business/2017/12/27/six-reasons-to-use-R-for-business.html)
 
@@ -1842,11 +1841,6 @@ They can be purged by running this:
 	- [Object corruption](https://git.seveas.net/repairing-and-recovering-broken-git-repositories.html). This repository was intentionally broken by modifying some files with a hex editor. `git fsck` detects this and tells you which files have been tampered with. Any corrupt loose objects can simply be removed, but corrupt packfiles probably also contain some recoverable objects, so we try to recover those before removing the file.
 
 ## R
-- Повтор. [Use quick formula functions in purrr::map (+ base vs tidtyverse idiom comparisons/examples)](https://rud.is/b/2016/07/26/use-quick-formula-functions-in-purrrmap-base-vs-tidtyverse-idiom-comparisonsexamples/)
-- Применение формул. Навеяно из документации tmaptools.pdf: `sp::coordinates(five_cities_geocode) <- ~lon+lat`
-	- [The R Formula Method: The Good Parts](https://rviews.rstudio.com/2017/02/01/the-r-formula-method-the-good-parts/)
-	- [The R Formula Method: The Bad Parts](https://rviews.rstudio.com/2017/03/01/the-r-formula-method-the-bad-parts/)
-	- [What does the R formula y~1 mean?](https://stackoverflow.com/questions/13366755/what-does-the-r-formula-y1-mean)
 - Трансферинг части агрегатных функций на сторону DB. [Visualizations with R and Databases](https://rviews.rstudio.com/2017/08/16/visualizations-with-r-and-databases/)
 - [rOpenSci packages](https://ropensci.org/packages/)
 - [Crowd sourced benchmarks](https://cran.r-project.org/web/packages/benchmarkme/vignettes/a_introduction.html)
@@ -3851,7 +3845,6 @@ The Arvados core is a platform for production data science with very large data 
 
 # 02.02.2017
 ## R
-- RStudio blog. [The R Formula Method: The Good Parts](https://www.rstudio.com/rviews/2017/02/01/the-r-formula-method-the-good-parts/)
 - RStudio Blog. [roxygen2 6.0.0](https://blog.rstudio.org/2017/02/01/roxygen2-6-0-0/)
 - [Why swirl? Learn R, in R.](https://jonmcalder.github.io/2017-01-09-why-swirl)
 - [Halite. May the best bot win](https://jonmcalder.github.io/2017-02-02-halite/)

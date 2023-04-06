@@ -98,6 +98,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 	- [Hasklig - a code font with monospaced ligatures](https://github.com/i-tu/Hasklig) (in my opinion a nicer base font) which is more conservative with the ligatures it introduces.
 	- [tonsky/FiraCode. Monospaced font with programming ligatures](https://github.com/tonsky/FiraCode)
 	- [FiraCode RStudio instructions](https://github.com/tonsky/FiraCode/wiki/RStudio-instructions)
+	- [Add editor font support to RStudio Server #2534 {Closed}](https://github.com/rstudio/rstudio/issues/2534)
 - [JetBrains Mono. A typeface for developers_](https://www.jetbrains.com/lp/mono/)
 - [JetBrains Mono — a new typeface made for developers](https://blog.jetbrains.com/blog/2020/01/15/jetbrains-mono-a-new-font-made-for-developers/)
 
@@ -240,7 +241,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Social Data Science with R](https://www.sds.pub/index.html) by Daniel Anderson, Brendan Cullen, Ouafaa Hmaddi, 2020-12-24
 - [An Introduction to R](https://intro2r.com/) by Alex Douglas, Deon Roos, Francesca Mancini, Ana Couto & David Lusseau, April 8, 2022
 - [Rcpp for everyone](https://teuder.github.io/rcpp4everyone_en/) by Masaki E. Tsuda, 2020-10-20
-
+- [Deep Learning and Scientific Computing with R torch](https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/) by Sigrid Keydana
 
 
 # Articles
@@ -1390,6 +1391,10 @@ Stratification, CUPED, Variance-Weighted Estimators, and ML-based methods CUPAC 
 
 # R conferences
 
+## Appsilon Shiny 2023
+- [Asynchronous programming in Shiny](https://github.com/hypebright/async_shiny)
+	- [Examples to implement asynchronous programming in Shiny](https://github.com/hypebright/async_shiny)
+	
 ## Appsilon Shiny 2022
 - [2021 shiny-fluent Hackathon Appsilon/RStudio Contest SHARC!](https://github.com/mdubel/shark-attack)
 - [{shinytest2}: Regression Testing for Shiny Applications](https://github.com/schloerke/presentation-2022-04-27-appsilon-shinytest2)
@@ -1428,6 +1433,28 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 03.04.2023
+## Tidymodels
+- [How I Taught Tidymodels, Virtually](https://www.apreshill.com/blog/2020-06-how-i-taught-tidymodels-virtually/) by Alison Hill
+[Session 00 - Session 06]
+- [Applied Machine Learnring](https://rstudio-conf-2020.github.io/applied-ml/README.html) by Max Kuhn, [Part 1-6]
+- [Machine learning with tidymodels](https://workshops.tidymodels.org/)
+- [Julia Silge blog](https://juliasilge.com/blog/), [video](https://www.youtube.com/JuliaSilge)
+- [Andrew Couch](https://www.youtube.com/@AndrewCouch/videos)
+- [Пошаговое введение от авторов tidymodels](https://www.tidymodels.org/start/models/)
+
+## R & ML
+- COOL! [Настройка рабочей среды для deep learning в Ubuntu 18](http://biostat-r.blogspot.com/2018/08/deep-learning-ubuntu-18.html)
+- [Машинное обучение на языке R с использованием пакета mlr3](https://habr.com/ru/companies/ods/articles/491566/)
+
+## Tools
+- [Quadratic](https://www.quadratichq.com/). The spreadsheet with Python, SQL, and Formulas.
+Quadratic enables your team to work together on data analysis to deliver better results, faster.
+
+## FFT
+- [FFT to spectrum in decibel](https://dsp.stackexchange.com/questions/32076/fft-to-spectrum-in-decibel)
+- [Что такое децибел? Перевод из децибел в разы и обратно](https://go-radio.ru/decibel.html)
+
 # 20.03.2023
 ## R
 - [How to find RStudio Preview in the new Posit.co site?](https://community.rstudio.com/t/how-to-find-rstudio-preview-in-the-new-posit-co-site/155376)
@@ -1442,6 +1469,8 @@ df <- inner_join(dat_df, cmb_df) %>%
 - [How to sort each row of an R data frame in increasing order?](https://www.tutorialspoint.com/how-to-sort-each-row-of-an-r-data-frame-in-increasing-order)
 - [Rfast: A Collection of Efficient and Extremely Fast R Functions](https://cran.r-project.org/web/packages/Rfast/index.html)
 - COOL! [R Documentation. Operator Syntax and Precedence](https://stat.ethz.ch/R-manual/R-devel/library/base/html/Syntax.html)
+- [dataxray](https://github.com/agstn/dataxray). An interactive table interface for data summaries
+- COOL! [ShinyProxy vs Posit Connect: Benchmark Test for Scaling Shiny Apps](https://appsilon.com/shinyproxy-vs-posit-connect/)
 
 # 13.03.2023
 ## R
@@ -2100,7 +2129,6 @@ install_version("dbplyr", version = "2.1.1", repos = "http://cran.us.r-project.o
 - [hoxo-m/dplyr.teradata](https://github.com/hoxo-m/dplyr.teradata). A Teradata Backend for dplyr.
 
 ## R
-- [Using a variable in update() in R to update formula](https://stackoverflow.com/questions/38980066/using-a-variable-in-update-in-r-to-update-formula)
 - Вставляем в Shiny из клипборда.
 	- [shinyscreenshot: Finally, an easy way to take screenshots in Shiny apps!](https://www.google.com/amp/s/www.r-bloggers.com/2020/11/shinyscreenshot-finally-an-easy-way-to-take-screenshots-in-shiny-apps/amp/)
 	- [Rich Text Editor in Shiny App](https://deeps.shinyapps.io/HTMLEditor/
@@ -2143,6 +2171,8 @@ G*Power is a tool to compute statistical power analyses for many different t tes
 - [L1-L2 регуляризация](https://itchef.ru/articles/312622/)
 - COOL! [Intuitive understanding of 1D, 2D, and 3D convolutions in convolutional neural networks {closed}](https://stackoverflow.com/questions/42883547/intuitive-understanding-of-1d-2d-and-3d-convolutions-in-convolutional-neural-n)
 - Для видео. [A Closer Look at Spatiotemporal Convolutions for Action Recognition](https://arxiv.org/abs/1711.11248v3)
+- Хорошие картинки. [The Comprehensive Guide to Understand Machine Learning and Deep Learning](https://gemvietnam.com/artificial-intelligence/machine-learning-vs-deep-learning/)
+- [What Does Machine Learning (ML) Mean?](https://www.techopedia.com/definition/8181/machine-learning-ml)
 
 ## R
 - [Предсказание оттока сотрудников](https://rpubs.com/pavel_rafael/employee). Пономарев Павел-Рафаэль, ppponomarev
@@ -2673,11 +2703,31 @@ From: Computational Methods in Engineering, 2014
 - [The R Formula Method: The Good Parts](https://rviews.rstudio.com/2017/02/01/the-r-formula-method-the-good-parts/). 2017-02-01 by Max Kuhn
 - [The R Formula Method: The Bad Parts](https://rviews.rstudio.com/2017/03/01/the-r-formula-method-the-bad-parts/).  2017-03-01 by Max Kuhn
 - [Changing the variable inside an R formula](https://statisticaloddsandends.wordpress.com/2019/08/24/changing-the-variable-inside-an-r-formula/)
+- COOL! [Formulas in R Tutorial](https://www.datacamp.com/community/tutorials/r-formula-tutorial)
+- [Advanced R. 20.3.4 Under the hood](https://adv-r.hadley.nz/evaluation.html#quosure-impl) Quosures were inspired by R’s formulas, because formulas capture an expression and an environment
+- [Formula: Extended Model Formulas](https://cran.r-project.org/web/packages/Formula/index.html)
+- [Expressing design formula in R](http://genomicsclass.github.io/book/pages/expressing_design_formula.html)
+- [Condition ( | ) in R formula](https://stackoverflow.com/questions/42417963/condition-in-r-formula)
+- [How to write a linear model formula with 100 variables in R](https://stats.stackexchange.com/questions/29477/how-to-write-a-linear-model-formula-with-100-variables-in-r)
+- [anova test fails on lme fits created with pasted formula](https://stackoverflow.com/questions/7666807/anova-test-fails-on-lme-fits-created-with-pasted-formula/7668846#7668846)
+- [Use of ~ (tilde) in R programming Language](https://stackoverflow.com/questions/14976331/use-of-tilde-in-r-programming-language)
+	- [The 'formulas' section of the lazyeval vignette gives a good introduction to what a formula is](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
+- [formula From stats v3.5.2](https://www.rdocumentation.org/packages/stats/versions/3.5.2/topics/formula) Model Formulae
+- Повтор. [Use quick formula functions in purrr::map (+ base vs tidtyverse idiom comparisons/examples)](https://rud.is/b/2016/07/26/use-quick-formula-functions-in-purrrmap-base-vs-tidtyverse-idiom-comparisonsexamples/)
+- Применение формул. Навеяно из документации tmaptools.pdf: `sp::coordinates(five_cities_geocode) <- ~lon+lat`
+	- [The R Formula Method: The Good Parts](https://rviews.rstudio.com/2017/02/01/the-r-formula-method-the-good-parts/)
+	- [The R Formula Method: The Bad Parts](https://rviews.rstudio.com/2017/03/01/the-r-formula-method-the-bad-parts/)
+	- [What does the R formula y~1 mean?](https://stackoverflow.com/questions/13366755/what-does-the-r-formula-y1-mean)
+- [Building formulae](http://www.brodrigues.co/blog/2017-12-27-build_formulae/)
+- [Using a variable in update() in R to update formula](https://stackoverflow.com/questions/38980066/using-a-variable-in-update-in-r-to-update-formula)
+
 
 
 ## Splines
 - [Spline Regression in R](https://medium.com/analytics-vidhya/spline-regression-in-r-960ca82aa62c)
 - [2 Piecewise Regression and Splines](https://bookdown.org/tpinto_home/Beyond-Linearity/piecewise-regression-and-splines.html)
+- [How to Perform Piecewise Regression in R (Step-by-Step)](https://www.statology.org/piecewise-regression-in-r/)
+
 
 # 04.02.2022
 ## Selenium docker
@@ -2775,6 +2825,7 @@ Plot a graph of the data against time. If it looks like the variation increases 
 - [Graph Convolutional Network for Time Series — An Intro](https://towardsdatascience.com/graph-convolutional-network-for-time-series-an-intro-6d1b01ea3bc)
 Graph convolutional network (GCN) is an absolute game-changer in the deep learning domain.
 - From Vitalijs. [Data over Space and Time (36-467/667)](https://www.stat.cmu.edu/~cshalizi/dst/20/)
+- [Show Me the Data: 8 Awesome Time Series Sources](https://odsc.medium.com/show-me-the-data-8-awesome-time-series-sources-802349fab5ce)
 
 # 31.01.2022
 ## R
@@ -3018,11 +3069,18 @@ Ordination methods, diversity analysis and other functions for community and veg
 # 23.11.2021
 ## DS
 - [Proba.ai](https://proba.ai/) Proba is a tool for A/B testing in mobile apps
+- COOL! Markov regime switching model
+	- [Introduction to Markov-Switching Models](https://www.aptech.com/blog/introduction-to-markov-switching-models/)
+	- [Markov Switching Model for Quick Detection of Event Related Desynchronization in EEG](https://www.frontiersin.org/articles/10.3389/fnins.2018.00024/full)
+
 
 ## Оцифровка графиков / Digitizer
+- [GetData](http://getdata-graph-digitizer.com/ru/screenshots.php). Программа для оцифровки графиков.
+- [WebPlotDigitizer](https://automeris.io/WebPlotDigitizer/). Web based tool to extract data from plots, images, and maps
+- [graphreader](http://www.graphreader.com/). Use the online graphreader tool to extract values from graph images. For 2D plots use the 2D Reader
 - [ankitrohatgi/digitizeR](https://github.com/ankitrohatgi/digitizeR). R package to extract data from plots and other images. Hosts WebPlotDigitizer locally.
 - [metaDigitise: Extract and Summarise Data from Published Figures](https://cran.r-project.org/web/packages/metaDigitise/)
-- [GetData](http://getdata-graph-digitizer.com/ru/screenshots.php). Программа для оцифровки графиков.
+- [The juicr R package](https://github.com/mjlajeunesse/juicr)  is a GUI interface to automated, semi-automated, and manual tools for extracting data from scientific images -- like scatter or bar plots that contain data, or other images with information that can be converted numerically or coordinates classified.
 
 # 22.11.2021
 ## R
@@ -9964,24 +10022,7 @@ Benchmark your CPU and compare against other CPUs. Also provides functions for o
 - [Understanding Q-Q Plots](https://data.library.virginia.edu/understanding-q-q-plots/)
 - [stephenturner/qqman](https://github.com/stephenturner/qqman). An R package for creating Q-Q and manhattan plots from GWAS results
 - [Q-Q Plots. От чайника до профессионала за один гайд](https://habr.com/ru/post/578754/)
-
-
-## R formula
 - COOL! [StatQuest: Quantile-Quantile (QQ) Plots, Clearly Explained!!!](https://statquest.org/2017/11/13/statquest-quantile-quantile-qq-plots-clearly-explained/)
-- COOL! [Formulas in R Tutorial](https://www.datacamp.com/community/tutorials/r-formula-tutorial)
-- [The R Formula Method: The Good Parts](https://rviews.rstudio.com/2017/02/01/the-r-formula-method-the-good-parts/) by Max Kuhn
-- [The R Formula Method: The Bad Parts](https://rviews.rstudio.com/2017/03/01/the-r-formula-method-the-bad-parts/) by Max Kuhn
-- [Advanced R. 20.3.4 Under the hood](https://adv-r.hadley.nz/evaluation.html#quosure-impl)
-Quosures were inspired by R’s formulas, because formulas capture an expression and an environment
-- [Formula: Extended Model Formulas](https://cran.r-project.org/web/packages/Formula/index.html)
-- [Expressing design formula in R](http://genomicsclass.github.io/book/pages/expressing_design_formula.html)
-- [Condition ( | ) in R formula](https://stackoverflow.com/questions/42417963/condition-in-r-formula)
-- [How to write a linear model formula with 100 variables in R](https://stats.stackexchange.com/questions/29477/how-to-write-a-linear-model-formula-with-100-variables-in-r)
-- [anova test fails on lme fits created with pasted formula](https://stackoverflow.com/questions/7666807/anova-test-fails-on-lme-fits-created-with-pasted-formula/7668846#7668846)
-- [Use of ~ (tilde) in R programming Language](https://stackoverflow.com/questions/14976331/use-of-tilde-in-r-programming-language)
-	- [The 'formulas' section of the lazyeval vignette gives a good introduction to what a formula is](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
-- [formula From stats v3.5.2](https://www.rdocumentation.org/packages/stats/versions/3.5.2/topics/formula) Model Formulae
-
 
 # 24.01.2019
 ## R

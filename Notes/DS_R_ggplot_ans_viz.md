@@ -89,7 +89,6 @@ This package provides rich-text (basic HTML and Markdown) support for ggplot2. R
 - Делаем вторую ось для дискрета
 	- [Duplicating (and modifying) discrete axis in ggplot2](https://stackoverflow.com/questions/48964760/duplicating-discrete-x-axis-for-ggplot)
 	- [Duplicating discrete x-axis for ggplot {duplicate}](https://stackoverflow.com/questions/45361904/duplicating-and-modifying-discrete-axis-in-ggplot2)
-- Интересно. [Formula Interface for ggplot2](https://cran.r-project.org/web/packages/ggformula/vignettes/ggformula.html)
 - Отображение функций в ggplot
 	- [Compute function for each x value](https://ggplot2.tidyverse.org/reference/stat_function.html)
 	- [Draw function without data in ggplot2](https://kohske.wordpress.com/2010/12/25/draw-function-without-data-in-ggplot2/)
@@ -165,6 +164,8 @@ A compendium of ‘geoms’, ‘coords’, ‘stats’, scales and fonts for ‘
 	- [facetscales](https://github.com/zeehio/facetscales)
 The goal of facetscales is to let you use facet_grid with different scales per plot. This is useful for instance to display in different facets magnitudes with different units.
 - [ggrepel examples](https://cran.r-project.org/web/packages/ggrepel/vignettes/ggrepel.html) by Kamil Slowikowski, 2019-05-06
+- [Remove 'a' from legend when using aesthetics and geom_text](https://stackoverflow.com/questions/18337653/remove-a-from-legend-when-using-aesthetics-and-geom-text)
+- [How do I remove the 'a' in legends when I use geom_label_repel?](https://community.rstudio.com/t/how-do-i-remove-the-a-in-legends-when-i-use-geom-label-repel/68895)
 - [Add row in each group using dplyr and add_row()](https://stackoverflow.com/questions/43403282/add-row-in-each-group-using-dplyr-and-add-row)
 - `geom-smooth`: [Understanding the confidence band from a polynomial regression](https://stats.stackexchange.com/questions/82603/understanding-the-confidence-band-from-a-polynomial-regression)
 - [Center bars of histogram using ggplot2](https://stackoverflow.com/questions/34180300/center-bars-of-histogram-using-ggplot2)
@@ -271,6 +272,8 @@ Make fake data, supporting addresses, person names, dates, times, colors, coordi
 - [ggridges: Ridgeline Plots in 'ggplot2'](https://cran.r-project.org/web/packages/ggridges/index.html)
 Ridgeline plots provide a convenient way of visualizing changes in distributions over time or space. This package enables the creation of such plots in 'ggplot2'.
 - [ggformula: Formula Interface to the Grammar of Graphics](https://cran.r-project.org/web/packages/ggformula/). Provides a formula interface to 'ggplot2' graphics.
+- [ggformula](http://www.mosaic-web.org/ggformula/index.html). ggformula introduces a family of graphics functions, `gf_point()`, `gf_density()`, and so on, bring the formula interface to `ggplot()`.
+- Интересно. [Formula Interface for ggplot2](https://cran.r-project.org/web/packages/ggformula/vignettes/ggformula.html)
 - [The Problem – Binning for Length Frequency Histograms](http://derekogle.com/fishR/2016-03-10-Histograms-with-w)
 - [jitter geom_line()](https://stackoverflow.com/questions/10866047/jitter-geom-line). `geom_line(position = position_jitter(w = 0.02, h = 0))` or
 If you just want to prevent two lines from overlapping exactly, there is now a better way: `position_dodge()`, which "adjusts position by dodging overlaps to the side". This is nicer than adding jitter to any line, even when it's not needed.
@@ -282,7 +285,6 @@ If you just want to prevent two lines from overlapping exactly, there is now a b
 	- [Remove extra legends in ggplot2](https://stackoverflow.com/questions/11714951/remove-extra-legends-in-ggplot2). `geom_point(aes(colour=group, alpha = .8), show.legend = F)`
 	- [How to specify legend width in ggplot](https://community.rstudio.com/t/how-to-specify-legend-width-in-ggplot/23060). `theme(legend.key.width = unit(4, "cm"))`
 - COOL! [The Evolution of a ggplot (Ep. 1)](https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/#polish) Posted by Cédric on Friday, May 17, 2019 
-- [ggformula](http://www.mosaic-web.org/ggformula/index.html). ggformula introduces a family of graphics functions, `gf_point()`, `gf_density()`, and so on, bring the formula interface to `ggplot()`.
 - [Aesthetic specifications](https://ggplot2.tidyverse.org/articles/ggplot2-specs.html). Здесь также про то, как работать с кастомными шрифтами.
 - [Cookbook for R GraphsFonts](http://www.cookbook-r.com/Graphs/Fonts/)
 - [12 Extensions to ggplot2 for More Powerful R Visualizations](https://mode.com/blog/r-ggplot-extension-packages/)
@@ -350,6 +352,13 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - [Gggplot2 Internals - An Unofficial Reference](https://htmlpreview.github.io/?https://github.com/brodieG/ggbg/blob/development/inst/doc/extensions.html)
 - [pter 1 Demystifying ggplot2](https://rud.is/books/creating-ggplot2-extensions/demystifying-ggplot2.html)
 - [Internals of ggplot2](https://ggplot2-book.org/internals.html)
+- [`geom_smooth` with `facet_grid` and different fitting functions](https://stackoverflow.com/questions/44912496/geom-smooth-with-facet-grid-and-different-fitting-functions)
+- [supplying custom knot values to `geom_smooth()` by facet](https://stackoverflow.com/questions/63388121/supplying-custom-knot-values-to-geom-smooth-by-facet)
+- [Ggplot change "k" in "gam" formula of `geom_smooth()`](https://community.rstudio.com/t/ggplot-change-k-in-gam-formula-of-geom-smooth/1948)
+- [How to use a custom method in ggplot2 for fitting smooth line {closed}](https://stats.stackexchange.com/questions/432132/how-to-use-a-custom-method-in-ggplot2-for-fitting-smooth-line)
+- [Piecewise Regression and Splines](https://bookdown.org/tpinto_home/Beyond-Linearity/piecewise-regression-and-splines.html)
+- [Smooth terms in GAM](https://stat.ethz.ch/R-manual/R-devel/library/mgcv/html/smooth.terms.html) smooth.terms {mgcv}.
+- [HOW CAN I EXPLORE DIFFERENT SMOOTHS IN GGPLOT2? | R FAQ](https://stats.oarc.ucla.edu/r/faq/how-can-i-explore-different-smooths-in-ggplot2/)
 
 
 ## Dual axes
@@ -463,8 +472,7 @@ list.files("/tmp/gap")
 - COOL! Для того, чтобы `render_graph` в `DiagrammeR` работал и сохранял граф в файл, необходимо доставлять руками библиотеки `DiagrammeRSVG` и `V8`. Они отсутствуют в явных зависимостях.
 - Хорошая статья с визуализациями. [Tracking covid-19 excess deaths across countries](https://www.economist.com/graphic-detail/coronavirus-excess-deaths-tracker)
 - [Waffle chart (square pie) in ggplot2](https://r-charts.com/part-whole/waffle-chart-ggplot2/)
-- [Observable Plot](https://observablehq.com/@observablehq/plot)
-- [obsplot](https://juba.github.io/obsplot/index.html) is an experimental attempt at using Observable Plot as HTML widget in R.
+- [The juicr R package](https://github.com/mjlajeunesse/juicr) is a GUI interface to automated, semi-automated, and manual tools for extracting data from scientific images -- like scatter or bar plots that contain data, or other images with information that can be converted numerically or coordinates classified.
 
 
 # font
@@ -541,3 +549,9 @@ If you don't want Quarto or anything actually to take over the styling, then you
 - [Wrangling data in JavaScript with Arquero: a primer for R users](https://observablehq.com/@observablehq/data-wrangling-with-arquero-from-r)
 - [An Illustrated Guide to Arquero Verbs](https://observablehq.com/@uwdata/an-illustrated-guide-to-arquero-verbs)
 - [Plot from ggplot2](https://observablehq.com/@observablehq/plot-from-ggplot2)
+- [Observable Plot](https://observablehq.com/@observablehq/plot)
+- [obsplot](https://juba.github.io/obsplot/index.html) is an experimental attempt at using Observable Plot as HTML widget in R.
+
+
+# Graph
+- COOL! [cyjShiny: Cytoscape.js Shiny Widget (cyjShiny)](https://cran.r-project.org/web/packages/cyjShiny/index.html)

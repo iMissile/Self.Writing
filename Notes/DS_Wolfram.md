@@ -1,4 +1,8 @@
 
+# 05.04.2023
+- [Diophantine Equations](https://reference.wolfram.com/language/guide/DiophantineEquations.html)
+- [FrobeniusSolve[{a1,…,an},b]](https://reference.wolfram.com/language/ref/FrobeniusSolve.html) gives a list of all solutions of the Frobenius equation .
+
 # 31.03.2023
 - [Function to view N-th digit of large number?](https://community.wolfram.com/groups/-/m/t/1700638)
 `IntegerLength`, `9^(9^9) // IntegerDigits // Last`, `NumberDigit[x,n]` returns the digit corresponding to 10n in the real-valued number x.

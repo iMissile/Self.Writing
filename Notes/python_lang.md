@@ -273,6 +273,12 @@ class tracesSchema(pt.Model):
 - [How to use R and Python in the same notebook?](https://www.askpython.com/python/examples/use-r-and-python-in-the-same-notebook)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 
+# 03.04.20232
+- [How to split a dataframe string column into two columns?](https://stackoverflow.com/questions/14745022/how-to-split-a-dataframe-string-column-into-two-columns)
+- Проблемы `numpy` и `DL`: [module 'numpy.distutils.__config__' has no attribute 'blas_opt_info'](https://stackoverflow.com/questions/70839312/module-numpy-distutils-config-has-no-attribute-blas-opt-info)
+- COOL! [Алгоритм Евклида - нахождение наибольшего общего делителя](https://younglinux.info/algorithm/euclidean)
+- [Python Slice Assignment](https://blog.finxter.com/python-slice-assignment/)
+
 # 29.03.2023
 - COOL! [Tutorial: Why Functions Modify Lists and Dictionaries in Python](https://www.dataquest.io/blog/tutorial-functions-modify-lists-dictionaries-python/)
 - [What is the difference between arguments and parameters?](https://docs.python.org/3.3/faq/programming.html#faq-argument-vs-parameter)

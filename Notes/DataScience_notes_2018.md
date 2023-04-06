@@ -1850,8 +1850,6 @@ Warning messages:
 
 # 07.05.2018
 ## R
-- [The R Formula Method: The Good Parts](https://rviews.rstudio.com/2017/02/01/the-r-formula-method-the-good-parts/), 2017-02-01 by Max Kuhn
-- [The R Formula Method: The Bad Parts](https://rviews.rstudio.com/2017/03/01/the-r-formula-method-the-bad-parts/), 2017-03-01 by Max Kuhn
 - [Checking (G)LM model assumptions in R](https://biologyforfun.wordpress.com/2014/04/16/checking-glm-model-assumptions-in-r/)
 - [Calculating optimal number of bins in a histogram](https://stats.stackexchange.com/questions/798/calculating-optimal-number-of-bins-in-a-histogram)
 - COOL! [Data Binning and Plotting](http://www.jdatalab.com/data_science_and_data_mining/2017/01/30/data-binning-plot.html)
