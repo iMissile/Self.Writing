@@ -1409,6 +1409,7 @@ Stratification, CUPED, Variance-Weighted Estimators, and ML-based methods CUPAC 
 - [Becoming Creative: How I Designed a Quilt with R](https://www.rstudio.com/conference/2022/talks/quilting-in-r-becoming-creative/) by Alice Walsh
 - [rstudio::conf(2022) materials](https://github.com/rstudio/rstudio-conf/blob/master/2022/README.md#keynotes-and-talks)
 This is where we will store all of the materials and links for rstudio::conf 2022!
+- COOL! [rstudio::conf(2022). Highlights and Notes from the Conference](https://rpubs.com/tysonstanley/conf2022) by Tyson S. Barrett, PhD, August 4, 2022
 
 ## Rconf 2021
 - [Search RStudio Conference #rstudioglobal Tweets](http://apps.machlis.com/shiny/rstudioglobal/)
@@ -1450,6 +1451,7 @@ This is where we will store all of the materials and links for rstudio::conf 202
 ## Tools
 - [Quadratic](https://www.quadratichq.com/). The spreadsheet with Python, SQL, and Formulas.
 Quadratic enables your team to work together on data analysis to deliver better results, faster.
+- [Programming without if-statements? {closed}](https://stackoverflow.com/questions/16099948/programming-without-if-statements)
 
 ## FFT
 - [FFT to spectrum in decibel](https://dsp.stackexchange.com/questions/32076/fft-to-spectrum-in-decibel)
