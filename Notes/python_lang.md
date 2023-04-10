@@ -278,6 +278,12 @@ class tracesSchema(pt.Model):
 - Проблемы `numpy` и `DL`: [module 'numpy.distutils.__config__' has no attribute 'blas_opt_info'](https://stackoverflow.com/questions/70839312/module-numpy-distutils-config-has-no-attribute-blas-opt-info)
 - COOL! [Алгоритм Евклида - нахождение наибольшего общего делителя](https://younglinux.info/algorithm/euclidean)
 - [Python Slice Assignment](https://blog.finxter.com/python-slice-assignment/)
+- [Checking fuzzy/approximate substring existing in a longer string, in Python?](https://stackoverflow.com/questions/17740833/checking-fuzzy-approximate-substring-existing-in-a-longer-string-in-python)
+
+## Quarto
+- Quarto. [R htmltools browsable HTML does not view without explicit print()](https://stackoverflow.com/questions/75353004/r-htmltools-browsable-html-does-not-view-without-explicit-print)
+- [How to add HTML code to a Quarto website?](https://stackoverflow.com/questions/74445505/how-to-add-html-code-to-a-quarto-website)
+`{=html}`
 
 # 29.03.2023
 - COOL! [Tutorial: Why Functions Modify Lists and Dictionaries in Python](https://www.dataquest.io/blog/tutorial-functions-modify-lists-dictionaries-python/)

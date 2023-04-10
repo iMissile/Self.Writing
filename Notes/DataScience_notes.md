@@ -1434,6 +1434,19 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 10.04.2023
+## R
+- [CRYPTOGRAPHY IS MORE FUN WITH R!](https://vladdsm.github.io/myblog_attempt/topics/topics-Keep-Your-Secret.html). USE PUBLIC KEY CRYPTOGRAPHY WITH R STATISTICAL SOFTWARE [7 MIN READ]
+- [The Basics of Cryptography](https://towardsdatascience.com/the-basics-of-cryptography-80c7906ba2f7). With Applications in R
+- COOL! [A Crazy Little Thing Called {purrr} - Part 4: mappers](https://colinfay.me/purrr-mappers/)
+
+## R API
+- [Creating APIs for data science with plumber](https://posit.co/blog/creating-apis-for-data-science-with-plumber/)
+- [R Plumber. Tips & Tricks](https://www.rplumber.io/articles/tips-and-tricks.html)
+
+## ML
+- [Deep Learning Paper Implementations: Spatial Transformer Networks - Part II](https://kevinzakka.github.io/2017/01/18/stn-part2/)
+
 # 03.04.2023
 ## Tidymodels
 - [How I Taught Tidymodels, Virtually](https://www.apreshill.com/blog/2020-06-how-i-taught-tidymodels-virtually/) by Alison Hill
@@ -6272,7 +6285,7 @@ The goal of datadrivencv is to ease the burden of maintaining a CV by separating
 - [How I Learned to Stop Worrying and Love R CMD Check](https://juliasilge.com/blog/how-i-stopped/)
 - [r-lib/rcmdcheck](https://github.com/r-lib/rcmdcheck). Run R CMD check from R and collect the results
 - [Advanced R Markdown Workshop](https://arm.rbind.io/). This is the website for a two-day hands-on workshop based on the book “R Markdown: The Definitive Guide.”
-- COOL! [A Crazy Little Thing Called {purrr} - Part 4: mappers](https://colinfay.me/purrr-mappers/)
+
 
 ## DS
 - COOL! [Seven Techniques for Data Dimensionality Reduction](https://www.datasciencecentral.com/profiles/blogs/seven-techniques-for-data-dimensionality-reduction)

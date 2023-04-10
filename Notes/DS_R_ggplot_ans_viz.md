@@ -551,6 +551,11 @@ If you don't want Quarto or anything actually to take over the styling, then you
 - [Plot from ggplot2](https://observablehq.com/@observablehq/plot-from-ggplot2)
 - [Observable Plot](https://observablehq.com/@observablehq/plot)
 - [obsplot](https://juba.github.io/obsplot/index.html) is an experimental attempt at using Observable Plot as HTML widget in R.
+- Sample. [Connected Scatter](https://observablehq.com/@observablehq/connected-scatter)
+- COOL! [outlier 2022](https://observablehq.com/collection/@observablehq/outlier-2022)
+- Painting with Data: D3.js [Interacting with Data](https://observablehq.com/@observablehq/pwd3-interacting-with-data)
+- COOL! [Interactive filtering](https://observablehq.com/@observablehq/arsc-part-2-interactive-filtering). Building an advanced report from simple components.
+- [Introduction to inputs](https://observablehq.com/@observablehq/inputs?collection=@observablehq/observable-libraries-for-visualization)
 
 
 # Graph
