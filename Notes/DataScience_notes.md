@@ -1439,6 +1439,13 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [CRYPTOGRAPHY IS MORE FUN WITH R!](https://vladdsm.github.io/myblog_attempt/topics/topics-Keep-Your-Secret.html). USE PUBLIC KEY CRYPTOGRAPHY WITH R STATISTICAL SOFTWARE [7 MIN READ]
 - [The Basics of Cryptography](https://towardsdatascience.com/the-basics-of-cryptography-80c7906ba2f7). With Applications in R
 - COOL! [A Crazy Little Thing Called {purrr} - Part 4: mappers](https://colinfay.me/purrr-mappers/)
+- COOL! с бенчмарками [How to split a string into substrings of a given length? {duplicate}](https://stackoverflow.com/questions/11619616/how-to-split-a-string-into-substrings-of-a-given-length).
+```
+Edit: This is much, much faster
+sst <- strsplit(text, "")[[1]]
+out <- paste0(sst[c(TRUE, FALSE)], sst[c(FALSE, TRUE)])
+```
+- COOL! [Top 5 RStudio Addins for productivity and quality of life](https://claudiu.psychlab.eu/post/top-5-rstudio-addins-for-productivity-and-quality-of-life/)
 
 ## R API
 - [Creating APIs for data science with plumber](https://posit.co/blog/creating-apis-for-data-science-with-plumber/)
@@ -1446,6 +1453,9 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 ## ML
 - [Deep Learning Paper Implementations: Spatial Transformer Networks - Part II](https://kevinzakka.github.io/2017/01/18/stn-part2/)
+
+## Stat
+- [Are P Values Error Probabilities? or, “It’s the methods, stupid!” (2nd install)](https://errorstatistics.com/2014/08/17/are-p-values-error-probabilities-installment-1/)
 
 # 03.04.2023
 ## Tidymodels
@@ -3521,6 +3531,11 @@ Modeling with Python on different types of time series to compare the model algo
 # 14.07.2021
 ## Regular expression (regexp)
 - COOL! [Regex Legends: The People Behind the Magic](https://blog.stevenlevithan.com/archives/regex-legends)
+- [Perl Regex superpowers - execute code in substitution - what are /e and /ee ?](https://perlmaven.com/regex-superpowers-execute-code-in-substitution)
+- [gsubfn](https://cran.r-project.org/web/packages/gsubfn/index.html): Utilities for Strings and Function Arguments
+- [R - How to replace a string from multiple matches (in a data frame)](https://stackoverflow.com/questions/42998632/r-how-to-replace-a-string-from-multiple-matches-in-a-data-frame)
+- [Match and replace multiple strings in a vector of text without looping in R](https://stackoverflow.com/questions/29403080/match-and-replace-multiple-strings-in-a-vector-of-text-without-looping-in-r)
+- [Is there an R function to escape a string for regex characters](https://stackoverflow.com/questions/14836754/is-there-an-r-function-to-escape-a-string-for-regex-characters)
 
 ## DS
 - [Feather V2 with Compression Support in Apache Arrow 0.17.0](https://ursalabs.org/blog/2020-feather-v2/)

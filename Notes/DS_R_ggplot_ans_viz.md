@@ -503,6 +503,8 @@ An rstudio::conf(2022) Workshop by Cédric Scherer
 
 ## gt
 - [Create interactive links in gt table (in rmarkdown)](https://community.rstudio.com/t/create-interactive-links-in-gt-table-in-rmarkdown/70266/2)
+- `html()` will tell gt to deal with the text as html content. You can create the text yourself. I used htmltools helper
+- `md()` will tell get to consider the text as markdown, and it will process it to render as html.
 - [Embed links to cells of R's gt tables](https://stackoverflow.com/questions/68720533/embed-links-to-cells-of-rs-gt-tables)
 - [Embedding custom HTML in gt tables](https://themockup.blog/posts/2020-10-31-embedding-custom-features-in-gt-tables/index.html)
 - [Adding images to group headers using text_transform in a gt table](https://stackoverflow.com/questions/73068835/adding-images-to-group-headers-using-text-transform-in-a-gt-table)
@@ -522,7 +524,33 @@ colors = scales::col_numeric(
 - [The table.font.size option has no effect on column labels #337 {Closed}](https://github.com/rstudio/gt/issues/337)
 - Quarto. [07 - Plots, Graphics, and tables](https://rstudio-conf-2022.github.io/get-started-quarto/materials/07-plots-tables.html#/plots-graphics-and-tables).
 - [Set {gt} table header height](https://stackoverflow.com/questions/73588003/set-gt-table-header-height). Есть такое магическое слово `inherited`, которое перекрывает настройки!
-Но для всех таблиц!!! `table.gt_table` переопределяет!
+Но для всех таблиц!!! `table.gt_table` переопределяет! Найдено такое решение `as_raw_html(inline_css = TRUE)`:
+```{r}
+#| label: plot traces with gt (debug)
+#| column: page
+#| results: asis
+
+events_dt %>%
+  .[event != "Probing"] %>%
+  .[, open_date := as.Date(min(start)), by = case_id] %>%
+  .[open_date >= as.Date(g_probing_time) - 30] %>%
+  buildBPTraces() %>%
+  setDT() %>%
+  tableBPTraces(max_psteps = 12) %>%
+  tab_options(table.font.size = "small") %>%
+  # чтобы не было inherited параметров и tab_options работал в полную при рендере
+  as_raw_html(inline_css = TRUE)
+  # tab_options(table.font.size = px(4L))
+  # opt_css(
+  #   css = "
+  #   .gt_table {
+  #     font-size: 12px !important;
+  #   }",
+  #   add = FALSE
+  # )
+  # table.additional_css
+```
+
 - Slides! [Beautiful Tables in R. gt and the grammar of tables](https://themockup.blog/static/slides/intro-tables.html#1) by Tom Mock, 2021-08-30
 - COOL! [New Features and Serious Upgrades in {gt} 0.8.0](https://posit.co/blog/new-features-upgrades-in-gt-0-8-0/)
 The v0.8.0 release of gt is quite exciting so we want to show you all the things you can now do when making tables!
