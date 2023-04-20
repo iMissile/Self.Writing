@@ -552,10 +552,11 @@ events_dt %>%
 ```
 
 - Slides! [Beautiful Tables in R. gt and the grammar of tables](https://themockup.blog/static/slides/intro-tables.html#1) by Tom Mock, 2021-08-30
-- COOL! [New Features and Serious Upgrades in {gt} 0.8.0](https://posit.co/blog/new-features-upgrades-in-gt-0-8-0/)
-The v0.8.0 release of gt is quite exciting so we want to show you all the things you can now do when making tables!
 - [gt tables in Quarto Pub without slide CSS styling](https://stackoverflow.com/questions/72904794/gt-tables-in-quarto-pub-without-slide-css-styling)
 - COOL! [Graphing in gt](https://jthomasmock.github.io/gtExtras/articles/plots-in-gt.html)
+- COOL! [New Features and Serious Upgrades in {gt} 0.8.0](https://posit.co/blog/new-features-upgrades-in-gt-0-8-0/)
+The v0.8.0 release of gt is quite exciting so we want to show you all the things you can now do when making tables!
+- COOL! [New formatting functions in {gt} 0.9.0](https://posit.co/blog/new-formatting-functions-in-gt-0-9-0/)
 
 ### font issues gt + quarto
 - [Change in Quarto from Rstudio RStudio 2022.07.1+554 to 2022.07.2+576 #3357](https://github.com/quarto-dev/quarto-cli/discussions/3357). Probably caused by some CSS overwriting the table CSS.
@@ -587,4 +588,4 @@ If you don't want Quarto or anything actually to take over the styling, then you
 
 
 # Graph
-- COOL! [cyjShiny: Cytoscape.js Shiny Widget (cyjShiny)](https://cran.r-project.org/web/packages/cyjShiny/index.html)
+- COOL! [cyjShiny: Cytoscape.js Shiny Widget (cyjShiny)](https://cran.r-project.org/web/packages/cyjShiny/index.html). Для него необходимо ставить пакет [`graph`](http://www.bioconductor.org/packages/release/bioc/html/graph.html) с Биокондуктора.

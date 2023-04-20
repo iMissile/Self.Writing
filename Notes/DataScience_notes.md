@@ -1054,6 +1054,7 @@ You can provide information about your app that Shiny showcase will use by creat
 - COOL! [Shiny: Performance tuning with future & promises - Part 1](https://www.eoda.de/en/wissen/blog/shiny-performance-tuning-mit-future-promises-die-theorie)
 - COOL! [{shinytitle}: Change the Browser Tab Title of your Shiny App](https://ashbaldry.github.io/2021-06-17-shinytitle-0-1-0-release/)
 - [Case study: converting a Shiny app to async](https://rstudio.github.io/promises/articles/casestudy.html) by Joe Cheng (joe@rstudio.com)
+- [Chrome Lighthouse extension](https://developers.google.com/web/tools/lighthouse/). Lighthouse is an open-source, automated tool for improving the performance, quality, and correctness of your web apps.
 
 
 
@@ -1391,9 +1392,16 @@ Stratification, CUPED, Variance-Weighted Estimators, and ML-based methods CUPAC 
 
 # R conferences
 
+## R conference
+- [New York R Conference](https://rstats.ai/nyr/)
+- [New York R meetup](https://nyhackr.org/)
+
 ## Appsilon Shiny 2023
 - [Asynchronous programming in Shiny](https://github.com/hypebright/async_shiny)
 	- [Examples to implement asynchronous programming in Shiny](https://github.com/hypebright/async_shiny)
+- Marcin Dubel. [shiny-conf-sharing-app-state](https://github.com/mdubel/shiny-conf-sharing-app-state). Repository storing code for the ShinyConf by Appsilon 2023 presentation: Sharing app state between Shiny modules.
+	- Переосмысление статьи [Communication between modules](https://shiny.rstudio.com/articles/communicate-bet-modules.html), 09 NOV 2018
+- [Barret Schloerke. Lessons learned from testing 2500+ Shiny Apps every day](https://github.com/schloerke/presentation-2023-03-15-appsilon-nightly-testing)
 	
 ## Appsilon Shiny 2022
 - [2021 shiny-fluent Hackathon Appsilon/RStudio Contest SHARC!](https://github.com/mdubel/shark-attack)
@@ -1426,6 +1434,29 @@ This is where we will store all of the materials and links for rstudio::conf 202
 ## UseR! 2022
 - [Improvements in text preprocessing using textrecipes](https://emilhvitfeldt.github.io/useR2022-textrecipes/#/section)
 
+## UseR! 2021
+- [Slides for my regular talk on the "R Developer's Guide" at the '1A - Community and Outreach 1' session of the useR! 2021 Conference.](https://github.com/SaranjeetKaur/useR2021_Slides_Regular_Talk)
+- [Professional, Polished, Presentable](https://presentable-user2021.netlify.app/). MAKING GREAT SLIDES WITH XARINGAN
+- [The Grammar of Experimental Design](http://emitanaka.org/slides-useR2021/#1)
+- [Slides for useR 2021 conference - pARI package](https://github.com/angeella/useR_2021)
+- [Solving Big Data Problems With Apache Arrow](https://enpiar.com/talks/user-2021/)
+- [unit testing for shiny reactivity](https://github.com/yonicd/reactor/tree/slides). yonicd.github.io/reactor
+- [How to build a package following the 'Rmd First' method?](https://statnmap.github.io/user2021.rmdd/stagiaire_complet.html#1) Sébastien Rochette, Emily Riederer
+- [sfnetworks: Tidy Geospatial Networks in R](https://sfnetworks.github.io/useR2021/slides#1)
+
+## UseR! 2020
+- [Computational Reproducibility: from theory to practice](https://annakrystalli.me/talks/user2020.html#1)
+- [Sharing on Short Notice](https://rstudio-education.github.io/sharing-short-notice/#1) - Alison Hill
+- [Your Slides are So Extra! Extra-Special Presentations with xaringanExtra](https://slides.garrickadenbuie.com/extra-special-xaringan/#1) by Garrick Aden-Buie
+- [Course material for useR! 2020 Rspatial tutorial](https://github.com/statnmap/user2020_rspatial_tutorial) by S. Rochette, D. Scott, J. Nowosad
+
+## UseR! 2015
+- [Streaming Data IO in R. curl, jsonlite, mongolite](http://bit.ly/mongo-slides) by Jeroen Ooms - UCLA
+
+## UseR! 2014
+- [UseR 2014 Web Pages](https://github.com/user2014/user2014.github.io)
+
+
 # Obsidian
 - [Zettelkasten: как один немецкий учёный стал невероятно продуктивным](https://habr.com/ru/post/508672/)
 - [Воспитание Obsidian — вашего персонального информационного менеджера](https://habr.com/ru/company/macloud/blog/560776/)
@@ -1433,6 +1464,22 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Obsidian — IDE для Markdown базы знаний](https://vas3k.club/link/2609/)
 
 # http://192.168.12.31:4242/client/#/
+
+# 17.04.2023
+## R
+- актуально для применения `summarytools::dfSummary`:
+	- [How to make `options(width = 60)` persist across code chunks in R Markdown used as notebook in RStudio?](https://stackoverflow.com/questions/69151368/how-to-make-optionswidth-60-persist-across-code-chunks-in-r-markdown-used-as)
+	- R Cookbook [5.3 Control the width of text output](https://bookdown.org/yihui/rmarkdown-cookbook/text-width.html)
+	- [Adjust the output width of R Markdown HTML output](https://stackoverflow.com/questions/15385696/adjust-the-output-width-of-r-markdown-html-output)
+Also, you can temporarily change the local R options for a code chunk:
+```{r my-chunk, R.options = list(width = SOME-BIG-VALUE)}
+```
+	- [R Markdown code chunk options](https://rpubs.com/Lingling912/870659)
+	- [Why does `dfSummary` (R) sometimes plot factor levels in one line?](https://stackoverflow.com/questions/61878582/why-does-dfsummary-r-sometimes-plot-factor-levels-in-one-line)
+`dfSummary(df, max.string.width = 50)`
+	- [A word in favor of summarytools](https://driftlessdata.space/post/summarytools/)
+	- Документация с трюками по пакету: https://github.com/dcomtois/summarytools/tree/master/doc
+	- [Specify column widths {#57}](https://github.com/dcomtois/summarytools/issues/57)
 
 # 10.04.2023
 ## R
@@ -1660,6 +1707,7 @@ Daniel Lemire is a computer science professor at the University of Quebec (TELUQ
 - [R shiny: building query using dynamic UI](https://stackoverflow.com/questions/23679953/r-shiny-building-query-using-dynamic-ui)
 - [For loop in observe Event](https://stackoverflow.com/questions/68255716/for-loop-in-observe-event)
 - [User-friendly query builder for React](https://github.com/ukrbublik/react-awesome-query-builder)
+- [Improving the responsiveness of Shiny applications](https://www.jumpingrivers.com/blog/improving-responsiveness-shiny-applications/)
 
 # 30.12.2022
 ## R
@@ -1955,6 +2003,10 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 - [Pass R object to Observable in Quarto](https://stackoverflow.com/questions/73873681/pass-r-object-to-observable-in-quarto)
 - [Observable Imports in Quarto](https://timelyportfolio.github.io/quarto_tests/examples/quarto_observable_imports/quarto_observable_imports.html)
 - [A beginner's guide to using Observable JavaScript, R, and Python with Quarto](https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html)
+
+## Quarto & tables
+- quartoExtra. [Table printing demo](https://debruine.github.io/quarto_demo/table.html) by Lisa DeBruine
+This code is meant to replicate (and extend) the df_print option in rmarkdown. The code for kable or paged tables is relatively simple, and I have created a more complex function that prints short tables with kableExtra::kable() and longer tables with DT::datatable(). You have to source in the file with the knit_print.data.frame() function for each page in a website or each chapter in a book.
 
 ## knitr textwidth
 - xaringan. [Font size of code {#69}](https://github.com/yihui/xaringan/issues/69)
@@ -2899,13 +2951,6 @@ Overview
 ## RMarkdown
 - Неплохой компактный мануал. [Rmd Syntax](https://siobhonlegan.com/bioinfo-phylo/rmd-syntax.html)
 	
-## R conference
-- [New York R Conference](https://rstats.ai/nyr/)
-- [New York R meetup](https://nyhackr.org/)
-## UseR! 2021
-- [sfnetworks: Tidy Geospatial Networks in R](https://sfnetworks.github.io/useR2021/slides#1)
-## UseR! 2014
-- [UseR 2014 Web Pages](https://github.com/user2014/user2014.github.io)
 
 # 10.01.2022
 ## Bayes
@@ -3430,6 +3475,7 @@ Using evolution to fit a basic linear model
 - [msa](https://bioconductor.org/packages/msa) An R Package for Multiple Sequence Alignment]
 - [Fodina: Robust and Flexible Process Discovery](http://www.processmining.be/fodina/)
 - [Fodina Miner](https://icpmconference.org/2020/2020/01/24/fodina-miner/)
+- [What is object-centric process mining?](https://www.celonis.com/blog/what-is-object-centric-process-mining-ocpm/)
 
 # 30.08.2021
 ## R
@@ -3594,14 +3640,6 @@ A quick introduction to 10 basic graph algorithms with examples and visualisatio
 Chain monadic sequences into stateful, branching pipelines. As nodes in the pipeline are run, they are merged into a graph of all past operations. The resulting structure can be computed on to access not only the final results, but also node documentation, intermediate data, performance stats, and any raised messages, warnings or errors. rmonad intercepts all exceptions, which allows for pure error handling.
 
 # 08.07.2021
-## UseR 2021!
-- [Slides for my regular talk on the "R Developer's Guide" at the '1A - Community and Outreach 1' session of the useR! 2021 Conference.](https://github.com/SaranjeetKaur/useR2021_Slides_Regular_Talk)
-- [Professional, Polished, Presentable](https://presentable-user2021.netlify.app/). MAKING GREAT SLIDES WITH XARINGAN
-- [The Grammar of Experimental Design](http://emitanaka.org/slides-useR2021/#1)
-- [Slides for useR 2021 conference - pARI package](https://github.com/angeella/useR_2021)
-- [Solving Big Data Problems With Apache Arrow](https://enpiar.com/talks/user-2021/)
-- [unit testing for shiny reactivity](https://github.com/yonicd/reactor/tree/slides). yonicd.github.io/reactor
-- [How to build a package following the 'Rmd First' method?](https://statnmap.github.io/user2021.rmdd/stagiaire_complet.html#1) Sébastien Rochette, Emily Riederer
 
 # 05.07.2021
 ## R Sparse Matrix
@@ -5935,13 +5973,6 @@ Also, see:
 - [ColinFay/golemshinydash](https://github.com/ColinFay/golemshinydash)
 - [Sharing on Short Notice](https://education.rstudio.com/blog/2020/04/sharing-on-short-notice/)
 
-
-## UseR! 2020
-- [Computational Reproducibility: from theory to practice](https://annakrystalli.me/talks/user2020.html#1)
-- [Sharing on Short Notice](https://rstudio-education.github.io/sharing-short-notice/#1) - Alison Hill
-- [Your Slides are So Extra! Extra-Special Presentations with xaringanExtra](https://slides.garrickadenbuie.com/extra-special-xaringan/#1) by Garrick Aden-Buie
-- [Course material for useR! 2020 Rspatial tutorial](https://github.com/statnmap/user2020_rspatial_tutorial) by S. Rochette, D. Scott, J. Nowosad
-
 # 09.07.2020
 
 ## DS graph
@@ -6761,6 +6792,7 @@ Implements clustering techniques such as Proximus and Rock, utility functions fo
 
 ## Shiny
 - COOL! Одно из приложений-победителей 2019 Shiny Contest. [An App to Visualize and Share My Dogs' Medical History](https://shiny.rstudio.com/gallery/dog-medical-history.html)
+- 2021 Shiny Contest [2021 shiny-fluent Hackathon Appsilon/RStudio Contest SHARC!](https://github.com/mdubel/shark-attack)
 
 ## Predictive maintenance
 - [Machine learning for predictive maintenance: where to start?](https://medium.com/bigdatarepublic/machine-learning-for-predictive-maintenance-where-to-start-5f3b7586acfb)
