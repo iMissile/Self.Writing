@@ -1480,6 +1480,8 @@ Also, you can temporarily change the local R options for a code chunk:
 	- [A word in favor of summarytools](https://driftlessdata.space/post/summarytools/)
 	- Документация с трюками по пакету: https://github.com/dcomtois/summarytools/tree/master/doc
 	- [Specify column widths {#57}](https://github.com/dcomtois/summarytools/issues/57)
+- [How to get the selected max/min value (i.e. second largest/smallest) across row by dplyr](https://stackoverflow.com/questions/74124565/how-to-get-the-selected-max-min-value-i-e-second-largest-smallest-across-row)
+- [What's new in R 4.3.0?](https://www.jumpingrivers.com/blog/whats-new-r43/)
 
 # 10.04.2023
 ## R
