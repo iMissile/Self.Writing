@@ -180,3 +180,4 @@ sed -z 's/\n/ /g'
 !! NOTE: на windows файлах `[\r\n]` !!
 ```
 - [Replace string containing newline in huge file](https://unix.stackexchange.com/questions/137391/replace-string-containing-newline-in-huge-file)
+- Отличный поток по обсуждению принципиальных подходов по замене новой строки. `sed` не самый лучший инструмент для этого. [How can I replace each newline (\n) with a space using sed?ъ(https://stackoverflow.com/questions/1251999/how-can-i-replace-each-newline-n-with-a-space-using-sed)

@@ -1465,6 +1465,16 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 25.04.2023
+## Tools
+- [MinIO](https://min.io/) is a high-performance, S3 compatible object store. It is built for large scale AI/ML, data lake and database workloads.
+- [MinIo для самых маленьких](https://habr.com/ru/companies/veeam/articles/517392/)
+- [2023-04-14, Tom Ebergen, The Return of the H2O.ai Database-like Ops Benchmark](https://duckdb.org/2023/04/14/h2oai.html)
+
+## R
+- [Trimming the Fat from `glm()` Models in R](https://win-vector.com/2014/05/30/trimming-the-fat-from-glm-models-in-r/) by Nina Zumel on May 30, 2014
+- COOL! [Transpose a data frame](https://stackoverflow.com/questions/6778908/transpose-a-data-frame)
+
 # 17.04.2023
 ## R
 - актуально для применения `summarytools::dfSummary`:
@@ -2002,13 +2012,16 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 - [Observable JS](https://quarto.org/docs/interactive/ojs/)
 - [Wrangling data in JavaScript with Arquero: a primer for R users](https://observablehq.com/@observablehq/data-wrangling-with-arquero-from-r)
 - [Introducing Arquero](https://observablehq.com/@uwdata/introducing-arquero)
-- [Pass R object to Observable in Quarto](https://stackoverflow.com/questions/73873681/pass-r-object-to-observable-in-quarto)
+- COOL! [Pass R object to Observable in Quarto](https://stackoverflow.com/questions/73873681/pass-r-object-to-observable-in-quarto)
 - [Observable Imports in Quarto](https://timelyportfolio.github.io/quarto_tests/examples/quarto_observable_imports/quarto_observable_imports.html)
 - [A beginner's guide to using Observable JavaScript, R, and Python with Quarto](https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html)
 
 ## Quarto & tables
 - quartoExtra. [Table printing demo](https://debruine.github.io/quarto_demo/table.html) by Lisa DeBruine
 This code is meant to replicate (and extend) the df_print option in rmarkdown. The code for kable or paged tables is relatively simple, and I have created a more complex function that prints short tables with kableExtra::kable() and longer tables with DT::datatable(). You have to source in the file with the knit_print.data.frame() function for each page in a website or each chapter in a book.
+
+## Quarto & html widgets
+- ['printing' HTML widgets in programmatically generated Rmarkdown](https://stackoverflow.com/questions/64430375/printing-html-widgets-in-programmatically-generated-rmarkdown)
 
 ## knitr textwidth
 - xaringan. [Font size of code {#69}](https://github.com/yihui/xaringan/issues/69)

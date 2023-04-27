@@ -575,6 +575,12 @@ If you don't want Quarto or anything actually to take over the styling, then you
 - [Multple mark area style #52 {Open}](https://github.com/JohnCoene/echarts4r/issues/52)
 
 # Observable
+- [A beginner's guide to using Observable JavaScript, R, and Python with Quarto](https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html)
+- [Observable JS](https://quarto.org/docs/interactive/ojs/)
+- [Wrangling data in JavaScript with Arquero: a primer for R users](https://observablehq.com/@observablehq/data-wrangling-with-arquero-from-r)
+- [Introducing Arquero](https://observablehq.com/@uwdata/introducing-arquero)
+- COOL! [Pass R object to Observable in Quarto](https://stackoverflow.com/questions/73873681/pass-r-object-to-observable-in-quarto)
+- [Observable Imports in Quarto](https://timelyportfolio.github.io/quarto_tests/examples/quarto_observable_imports/quarto_observable_imports.html)
 - [Wrangling data in JavaScript with Arquero: a primer for R users](https://observablehq.com/@observablehq/data-wrangling-with-arquero-from-r)
 - [An Illustrated Guide to Arquero Verbs](https://observablehq.com/@uwdata/an-illustrated-guide-to-arquero-verbs)
 - [Plot from ggplot2](https://observablehq.com/@observablehq/plot-from-ggplot2)
@@ -585,7 +591,26 @@ If you don't want Quarto or anything actually to take over the styling, then you
 - Painting with Data: D3.js [Interacting with Data](https://observablehq.com/@observablehq/pwd3-interacting-with-data)
 - COOL! [Interactive filtering](https://observablehq.com/@observablehq/arsc-part-2-interactive-filtering). Building an advanced report from simple components.
 - [Introduction to inputs](https://observablehq.com/@observablehq/inputs?collection=@observablehq/observable-libraries-for-visualization)
+In Observable, though, cells run in the order they’re needed—what’s called a reactive dataflow.
+	- [Observable's not JavaScript](https://observablehq.com/@observablehq/observable-javascript). JavaScript on Observable is almost — but not entirely — vanilla
+	- [Reactive Dataflow](https://observablehq.com/@observablehq/reactive-dataflow)
+- [Debugging a function in observable](https://talk.observablehq.com/t/debugging-a-function-in-observable/2246)
 
+## ojs_define
+- [OJS Data Sources](https://quarto.org/docs/interactive/ojs/data-sources.html)
+- [Use dataframe created in R codechunk in ojs codechunk in quarto](https://stackoverflow.com/questions/73080070/use-dataframe-created-in-r-codechunk-in-ojs-codechunk-in-quarto)
+Solution: Use the `ojs_define()` function to make data processed in Python or R available to `{ojs}` cells (this function should be called in the R or Python cell).
+- [`ojs_define()` in Quarto Book to define variable in all chapters {#3587}](https://github.com/quarto-dev/quarto-cli/discussions/3587).
+Solution: Use imports across pages instead:
+```{ojs}
+import { x } from "./foo.qmd";
+```
+
+
+## API & manuals
+- [Observable Inputs](https://github.com/observablehq/inputs)
+- [Input: Table](https://observablehq.com/@observablehq/input-table)
+- [Hello, Inputs!](https://observablehq.com/@observablehq/hello-inputs)
 
 # Graph
 - COOL! [cyjShiny: Cytoscape.js Shiny Widget (cyjShiny)](https://cran.r-project.org/web/packages/cyjShiny/index.html). Для него необходимо ставить пакет [`graph`](http://www.bioconductor.org/packages/release/bioc/html/graph.html) с Биокондуктора.

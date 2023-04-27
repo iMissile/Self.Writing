@@ -1,4 +1,38 @@
 
+# 26.04.2023
+- COOL! [Where can I find examples of good Mathematica programming practice?](https://mathematica.stackexchange.com/questions/18/where-can-i-find-examples-of-good-mathematica-programming-practice)
+
+# 25.04.2023
+- [How to solve Mod equation with mathematica {closed}](https://mathematica.stackexchange.com/questions/71438/how-to-solve-mod-equation-with-mathematica)
+- [Modulus](https://reference.wolfram.com/language/ref/Modulus.html). `Modulus -> n` is an option that can be given in certain algebraic functions to specify that integers should be treated modulo n.
+- [Solving a system of linear equations modulo n](https://mathematica.stackexchange.com/questions/31696/solving-a-system-of-linear-equations-modulo-n)
+Один из вариантов `Reduce[{a + b + c == 31, 4 a + 2 b + c == 3, 9 a + 3 b + c == 11}, {a, b, c},   Modulus -> 54]`
+- Тут даже с интерактивом. [Linear Solve with Modular Arithmetic](https://mathematica.stackexchange.com/questions/11580/linear-solve-with-modular-arithmetic)
+- [How to solve this system of Modular equations?](https://mathematica.stackexchange.com/questions/165523/how-to-solve-this-system-of-modular-equations)
+- [Solving/Reducing equations in ℤ/𝑝ℤ](https://mathematica.stackexchange.com/questions/16001/solving-reducing-equations-in-mathbbz-p-mathbbz/16003#16003)
+I was trying to find all the numbers 𝑛 for which  2𝑛=𝑛
+Instead of solving it as a modular equation, convert it to an explicit Diophantine equation:
+```
+Solve[ 2^n - n - q 10^k == 0 && 1 <= k <= 3 && 0 <= n < If[ k == 1, 2, 1] 10^k,
+       {k, n, q}, Integers]
+```
+- COOL! Масса примеров. [Equation Solving](https://www.wolframalpha.com/examples/EquationSolving-content.html)
+- [Examples for Equation Solving](https://www.wolframalpha.com/examples/mathematics/algebra/equation-solving/)
+
+### Systems of Congruences
+- Solve a single congruence equation:
+[solve 5x =2 (mod 3)](https://www.wolframalpha.com/input/?i=solve+5x+%3D2+(mod+3)&lk=3)
+- Solve systems of congruences:
+[solve 2x = 10 (mod 12), 3x = 9 (mod 12)](https://www.wolframalpha.com/input/?i=solve+2x+%3D+10+(mod+12)%2C+3x+%3D+9+(mod+12)&lk=3)
+- Check if values are equivalent under a given modulus:
+(17 = 7 mod 10)[https://www.wolframalpha.com/input/?i=17+%3D+7+mod+10&lk=3]
+- Solve a congruence involving variables in the modulus:
+[solve 22 = 10 mod n](https://www.wolframalpha.com/input/?i=solve+22+%3D+10+mod+n&lk=3)
+- Solve systems with each equation under a different modulus:
+[x = 1 mod 2, x=3 mod 6, x=3 mod 7](https://www.wolframalpha.com/input/?i=x+%3D+1+mod+2%2C+x%3D3+mod+6%2C+x%3D3+mod+7&lk=3)
+- Solve multivariate systems of congruences:
+[x^2 = y^3 mod 2, x=3 mod 7, y=4 mod 7](https://www.wolframalpha.com/input/?i=x%5E2+%3D+y%5E3+mod+2%2C+x%3D3+mod+7%2C+y%3D4+mod+7&lk=3)
+
 # 05.04.2023
 - [Diophantine Equations](https://reference.wolfram.com/language/guide/DiophantineEquations.html)
 - [FrobeniusSolve[{a1,…,an},b]](https://reference.wolfram.com/language/ref/FrobeniusSolve.html) gives a list of all solutions of the Frobenius equation .
