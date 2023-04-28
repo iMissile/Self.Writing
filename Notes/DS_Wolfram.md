@@ -1,4 +1,10 @@
 
+# 27.04.2023
+- Ищем обратные элементы в кольце вычетов.
+	- [WolframAlpha](https://www.wolframalpha.com/input?i=5%5E-1+mod13)
+	- Wolfram [ModularInverse](https://reference.wolfram.com/language/ref/ModularInverse.html)
+	- Пример [виджета](https://planetcalc.ru/3311/)
+
 # 26.04.2023
 - COOL! [Where can I find examples of good Mathematica programming practice?](https://mathematica.stackexchange.com/questions/18/where-can-i-find-examples-of-good-mathematica-programming-practice)
 

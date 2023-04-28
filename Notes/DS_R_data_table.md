@@ -368,6 +368,7 @@ When we store the column names on to a variable, e.g., DT_n = names(DT), and the
 	- [R data.table ':=' works in direct call, but same function in a package fails](https://stackoverflow.com/questions/27980835/r-data-table-works-in-direct-call-but-same-function-in-a-package-fails)
 	- [Importing data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-importing.html)
 - [How to pretty print data tables using the same pretty printing of tibbles?](https://stackoverflow.com/questions/68738066/how-to-pretty-print-data-tables-using-the-same-pretty-printing-of-tibbles)
+- Проблемы с `future`. [Issue with indexing data.tables passed to future_map_* #182 {Closed}](https://github.com/DavisVaughan/furrr/issues/182). Обсуждали [здесь](https://t.me/rlang_ru/130615)
 
 
 ## data.table joins
