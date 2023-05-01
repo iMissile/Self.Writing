@@ -1358,10 +1358,13 @@ is probably the most famous FAQ, so it deserves its own 📦 to help you 🕵️
 sqrt(2)^2 == 2
 #> [1] FALSE
 ```
-- [binaryLogic: Binary Logic](https://cran.r-project.org/web/packages/binaryLogic/)
+- [binaryLogic: Binary Logic](http://d4ndo.github.io/binaryLogic/)
 Provides the binary S3 class. The instance of binary is used to convert a decimal number (Base10) to a binary number (Base2). The Class provides some features e.G. shift(), rotate(), summary(). Based on logical vectors.
 - COOL! Здесь есть Rcpp код. [Double precision (64-bit) representation of numeric value in R (sign, exponent, significand)](https://stackoverflow.com/questions/50217954/double-precision-64-bit-representation-of-numeric-value-in-r-sign-exponent)
 - [binary or hex representation](https://community.rstudio.com/t/binary-or-hex-representation/108404)
+- baseR [Bitwise Logical Operations](https://stat.ethz.ch/R-manual/R-devel/library/base/html/bitwise.html)
+- [bitops: Bitwise Operations](https://cran.r-project.org/web/packages/bitops/index.html). Functions for bitwise operations on integer vectors.
+
 
 # RStudio Pro
 Подвожу итоги коммуникаций
