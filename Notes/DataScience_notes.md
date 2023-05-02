@@ -1468,6 +1468,22 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 02.05.2023
+## R
+- Из диалога Филиппа выплыли ссылки на разные пакеты по поиску кластеров:
+	- [cluster](https://cran.r-project.org/web/packages/cluster/index.html): "Finding Groups in Data": Cluster Analysis Extended Rousseeuw et al.
+	`pam` -- Partitioning Around Medoids. Partitioning (clustering) of the data into k clusters “around medoids”, a more robust version of
+K-means.
+	`clara` -- Clustering Large Applications.
+	- [flexclust: Flexible Cluster Algorithms](https://cran.r-project.org/web/packages/flexclust/index.html)
+	- А еще интересный подход ["Geometric Stratification"](https://2011.isiproceedings.org/papers/650259.pdf).
+- Подскажите, пожалуйста, хорошие руководства по 3-Way ANOVA. 
+Модель сделал, диагностику прошла. Значимо взаимодействие 3 факторов. Но что делать дальше, ума не приложу. В интернетах говорят, сравнивай попарно всё со всем. Но я и не собирался прям всё со всем. А как задавать контрасты правильно, так и не понял.
+Ответ. В пакете multcomp для этого всё сделано: [multcomp: Simultaneous Inference in General Parametric Models](https://cran.r-project.org/web/packages/multcomp/)
+Simultaneous tests and confidence intervals for general linear hypotheses in parametric models, including linear, generalized linear, linear mixed effects, and survival models. The package includes demos reproducing analyzes presented in the book "Multiple Comparisons Using R" (Bretz, Hothorn, Westfall, 2010, CRC Press).
+
+
+
 # 25.04.2023
 ## Tools
 - [MinIO](https://min.io/) is a high-performance, S3 compatible object store. It is built for large scale AI/ML, data lake and database workloads.
