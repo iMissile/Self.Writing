@@ -1483,7 +1483,9 @@ K-means.
 Simultaneous tests and confidence intervals for general linear hypotheses in parametric models, including linear, generalized linear, linear mixed effects, and survival models. The package includes demos reproducing analyzes presented in the book "Multiple Comparisons Using R" (Bretz, Hothorn, Westfall, 2010, CRC Press).
 
 ## Fourier transform
-
+- [Fourier Transform: A R Tutorial](http://www.di.fc.ul.pt/~jpn/r/fourier/fourier.html)
+- [Discrete Fourier Transform - with torch](https://blogs.rstudio.com/ai/posts/2022-10-20-dft/)
+- COOL! [Signal Processing in R](https://cran.r-project.org/web/packages/gsignal/vignettes/gsignal.html)
 
 
 # 25.04.2023
