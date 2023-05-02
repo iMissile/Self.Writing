@@ -1482,6 +1482,8 @@ K-means.
 Ответ. В пакете multcomp для этого всё сделано: [multcomp: Simultaneous Inference in General Parametric Models](https://cran.r-project.org/web/packages/multcomp/)
 Simultaneous tests and confidence intervals for general linear hypotheses in parametric models, including linear, generalized linear, linear mixed effects, and survival models. The package includes demos reproducing analyzes presented in the book "Multiple Comparisons Using R" (Bretz, Hothorn, Westfall, 2010, CRC Press).
 
+## Fourier transform
+
 
 
 # 25.04.2023
@@ -2937,6 +2939,7 @@ Plot a graph of the data against time. If it looks like the variation increases 
 Graph convolutional network (GCN) is an absolute game-changer in the deep learning domain.
 - From Vitalijs. [Data over Space and Time (36-467/667)](https://www.stat.cmu.edu/~cshalizi/dst/20/)
 - [Show Me the Data: 8 Awesome Time Series Sources](https://odsc.medium.com/show-me-the-data-8-awesome-time-series-sources-802349fab5ce)
+- ebook [A Very Short Course on Time Series Analysis](https://bookdown.org/rdpeng/timeseriesbook/) by Roger D. Peng, 2020-04-02
 
 # 31.01.2022
 ## R
