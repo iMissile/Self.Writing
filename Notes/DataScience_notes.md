@@ -1468,6 +1468,25 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 04.05.2023
+## R
+- [10 Ways to View Correlation from a Noisy Scatter Plot](https://itnext.io/10-ways-to-view-correlation-from-a-noisy-scatter-plot-f744a6527ea6)
+- [Reduce noise in a raster (DEM) with R](https://gis.stackexchange.com/questions/339173/reduce-noise-in-a-raster-dem-with-r)
+- [How to remove noise from already smoothed graph](https://stackoverflow.com/questions/68863372/how-to-remove-noise-from-already-smoothed-graph)
+- [Detrended fluctuation analysis](https://en.wikipedia.org/wiki/Detrended_fluctuation_analysis)
+- [`cardidates::peakwindow`](https://search.r-project.org/CRAN/refmans/cardidates/html/peakwindow.html). Identify Peaks in Time Series
+- [`quantmod::findPeaks`](https://search.r-project.org/CRAN/refmans/quantmod/html/peak.html) Find Peaks and Valleys In A Series
+- [`pracma::findpeaks`](https://search.r-project.org/CRAN/refmans/pracma/html/findpeaks.html) Find peaks (maxima) in a time series.
+- [Data Smoothing and Peak Detection](https://rpubs.com/mengxu/peak_detection), Mon Jan 4 PST 2016. This is a demonstration of smoothing noisy time series data and identify local maxima (peaks).
+- [pracma: Practical Numerical Math Functions](https://cran.r-project.org/web/packages/pracma/index.html)
+Provides a large number of functions from numerical analysis and linear algebra, numerical optimization, differential equations, time series, plus some well-known special mathematical functions.
+- [Using B-Splines and K-means to Cluster Time Series](https://towardsdatascience.com/using-b-splines-and-k-means-to-cluster-time-series-16468f588ea6). Finding trends in time series data just got easier
+- [Time Series with Spline Based Models](https://asbates.rbind.io/2019/04/19/time-series-with-spline-based-models/)
+- [Smoothing Time Series Data](https://www.displayr.com/smoothing-time-series-data/)
+- [Smoothing Spline Regression in R](http://users.stat.umn.edu/~helwig/notes/smooth-spline-notes.html)
+- [`stats::smooth.spline`](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/smooth.spline.html) Fit a Smoothing Spline
+- [Ggplot change "k" in "gam" formula of `geom_smooth()`](https://community.rstudio.com/t/ggplot-change-k-in-gam-formula-of-geom-smooth/1948)
+
 # 02.05.2023
 ## R
 - Из диалога Филиппа выплыли ссылки на разные пакеты по поиску кластеров:
@@ -2141,10 +2160,12 @@ I have focused on the computation rather than the interpretation of the models.
 - [Зачем процессорам нужен кэш и чем отличаются уровни L1, L2, L3](https://habr.com/ru/company/vdsina/blog/515660/)
 
 ## Stats and R
-- [Stats and R](https://www.statsandr.com/blog/)
-	- COOL! Stats and R. [Wilcoxon test in R: how to compare 2 groups under the non-normality assumption](https://www.statsandr.com/blog/wilcoxon-test-in-r-how-to-compare-2-groups-under-the-non-normality-assumption/)
-	- COOL! Stats and R. [Student's t-test in R and by hand: how to compare two groups under different scenarios](https://www.statsandr.com/blog/student-s-t-test-in-r-and-by-hand-how-to-compare-two-groups-under-different-scenarios/)
-	- COOL! Stats and R. [Correlation coefficient and correlation test in R](https://statsandr.com/blog/correlation-coefficient-and-correlation-test-in-r/)
+[Stats and R](https://www.statsandr.com/blog/)
+
+- COOL! Stats and R. [Wilcoxon test in R: how to compare 2 groups under the non-normality assumption](https://www.statsandr.com/blog/wilcoxon-test-in-r-how-to-compare-2-groups-under-the-non-normality-assumption/)
+- COOL! Stats and R. [Student's t-test in R and by hand: how to compare two groups under different scenarios](https://www.statsandr.com/blog/student-s-t-test-in-r-and-by-hand-how-to-compare-two-groups-under-different-scenarios/)
+- COOL! Stats and R. [Correlation coefficient and correlation test in R](https://statsandr.com/blog/correlation-coefficient-and-correlation-test-in-r/)
+- [Outliers detection in R](https://statsandr.com/blog/outliers-detection-in-r/)
 
 ## CSS
 - COOL! [Web Style Sheets CSS tips & tricks. CENTERING THINGS](https://www.w3.org/Style/Examples/007/center.en.html)

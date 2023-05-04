@@ -595,6 +595,7 @@ In Observable, though, cells run in the order they’re needed—what’s called
 	- [Observable's not JavaScript](https://observablehq.com/@observablehq/observable-javascript). JavaScript on Observable is almost — but not entirely — vanilla
 	- [Reactive Dataflow](https://observablehq.com/@observablehq/reactive-dataflow)
 - [Debugging a function in observable](https://talk.observablehq.com/t/debugging-a-function-in-observable/2246)
+- [Peak Detection for Data Visualization](https://observablehq.com/@yurivish/peak-detection)
 
 ## ojs_define
 - [OJS Data Sources](https://quarto.org/docs/interactive/ojs/data-sources.html)
