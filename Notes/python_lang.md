@@ -273,7 +273,15 @@ class tracesSchema(pt.Model):
 - [How to use R and Python in the same notebook?](https://www.askpython.com/python/examples/use-r-and-python-in-the-same-notebook)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 
-# 03.04.20232
+# 07.05.2023
+- [Check if a Variable is or is not None in Python](https://sebhastian.com/python-not-none/) `is not None`
+- [Dictionaries in Python](https://realpython.com/python-dicts/#dgetkey-default)
+
+# 04.05.2023
+- [Kats](https://facebookresearch.github.io/Kats/). One stop shop for time series analysis in Python
+- [Looking for a good package for anomaly detection in time series](https://datascience.stackexchange.com/questions/32126/looking-for-a-good-package-for-anomaly-detection-in-time-series)
+
+# 03.04.2023
 - [How to split a dataframe string column into two columns?](https://stackoverflow.com/questions/14745022/how-to-split-a-dataframe-string-column-into-two-columns)
 - Проблемы `numpy` и `DL`: [module 'numpy.distutils.__config__' has no attribute 'blas_opt_info'](https://stackoverflow.com/questions/70839312/module-numpy-distutils-config-has-no-attribute-blas-opt-info)
 - COOL! [Алгоритм Евклида - нахождение наибольшего общего делителя](https://younglinux.info/algorithm/euclidean)

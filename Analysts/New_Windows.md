@@ -414,6 +414,20 @@ https://chocolatey.org/packages/openconnect-gui
 
 ## Photoshop
 - COOL! [20 Free Spray Paint Photoshop Brushes with Splatters & Drips](https://blog.spoongraphics.co.uk/freebies/20-free-spray-paint-photoshop-brushes-with-splatters-drips)
+- Descreen/Remove pattern [Pattern Suppressor v2.7](http://ft.rognemedia.no/) Free tool for easily removing repeating patterns using Photoshop. Based on FFT
+- [ImageJ. FFT filter](https://imagej.net/)
+- Manual Descreen step-by-step:
+Please follow the below steps that might help you:
+1.    The first thing you want to do is scan the newspaper in at a very high resolution.(600dpi). Sometimes you will want to scan the image at an angle to help avoid as much of a moire pattern as possible.
+2.    In Photoshop, duplicate the layer and make it a Smart Object – not necessary to do both.
+3.    Add a Gaussian Blur of 3.7 pixels to essentially merge the dots and create smoother gradients. This amount may vary depending on the size of the dots and the resolution at which you scanned.
+4.    Then apply the Unsharp Mask filter with settings:
+	o Amount: 120%
+	o Radius: 5px
+	o Threshold: 1 level
+         Applying too much sharpening will introduce halos around the edges which will take away from the impact of the image and will look very unprofessional.
+5.    Resample the image to your end resolution. The resampling will help remove some of the apparent blurriness of the image as well.
+6.    At the end, just add a simple Curves Adjustment Layer to add some contrast.
 
 ## Steam
 - [How to move Single or Multiple Steam Games to another Drive or Folder](https://www.thewindowsclub.com/move-steam-games-another-drive-folder)

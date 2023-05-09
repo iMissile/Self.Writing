@@ -46,6 +46,7 @@ You must import the system fonts using the command:
 # ggplot
 - COOL! Slides. [Designing ggplots. making clear figures that communicate](https://designing-ggplots.netlify.app/#1)
 - Slides. [Creating Beautiful Data Visualizations in R: a ggplot2 Crash Course](https://sctyner.github.io/talks/Conferences/user2020/#1)
+- Slides. [Plot a lot with ggplot2 to find plots](https://prital.netlify.app/talks/rladies2021/rladies-ggplot2#1)
 - [ggplot2 aesthetic cheatsheet](https://tinyurl.com/y3y8wyap)
 - [Use prismatic with after_scale() for finer control of colors in ggplot2](https://www.hvitfeldt.me/blog/use-prismatic-with-after_scale-for-finer-control-of-colors-in-ggplot2/)
 - COOL! [ggplot tweaks](https://twitter.com/yutannihilat_en/status/1287402204987396096) or [doc](https://ggplot2.tidyverse.org/reference/scale_colour_continuous.html). Did you know the latest version of ggplot2 allows you to set the default colour/fill scale functions via global options? Since the version was a minor update, there was no release blog post, so you might not notice this big news...
@@ -342,9 +343,10 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - COOL! [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/)
 - [The path to {ggpath}](https://posit.co/blog/the-path-to-ggpath). A 2.5 year long story about the open source R community and the #nflverse.
 - [ggplot2::scale_x_time: Formatting hms objects](https://stackoverflow.com/questions/58395236/ggplot2scale-x-time-formatting-hms-objects)
-- []
 
-## ggplot debug
+
+
+## ggplot debug & performance
 - [ggpmisc 0.2.13. Debugging ggplots](https://cran.r-project.org/web/packages/ggpmisc/vignettes/debug.html)
 - [gginnards](https://docs.r4photobiology.info/gginnards/). Package ‘gginnards’ (Explore the innards of ‘ggplot2’) is a set of extensions to R package ‘ggplot2’ and tools specially useful when learning how to write extensions and when debugging newly defined stats and geoms.
 - COOL! [User Guide: 1 Debugging ggplots](https://cran.r-project.org/web/packages/gginnards/vignettes/user-guide-1.html)
@@ -352,6 +354,11 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - [Gggplot2 Internals - An Unofficial Reference](https://htmlpreview.github.io/?https://github.com/brodieG/ggbg/blob/development/inst/doc/extensions.html)
 - [pter 1 Demystifying ggplot2](https://rud.is/books/creating-ggplot2-extensions/demystifying-ggplot2.html)
 - [Internals of ggplot2](https://ggplot2-book.org/internals.html)
+- [ggplot2. Profiling Performance](https://ggplot2.tidyverse.org/articles/profiling.html)
+- [Benchmark plot creation time. Broken down into construct, build, render and draw times.](https://ggplot2.tidyverse.org/reference/benchplot.html)
+- Отличная подборка тестирования различных драйверов и функций по отрисовке графических примитивов. [High-level Graphics Benchmarking](https://github.com/thomasp85/plotting_benchmark)
+
+## ggplot smooth
 - [`geom_smooth` with `facet_grid` and different fitting functions](https://stackoverflow.com/questions/44912496/geom-smooth-with-facet-grid-and-different-fitting-functions)
 - [supplying custom knot values to `geom_smooth()` by facet](https://stackoverflow.com/questions/63388121/supplying-custom-knot-values-to-geom-smooth-by-facet)
 - [Ggplot change "k" in "gam" formula of `geom_smooth()`](https://community.rstudio.com/t/ggplot-change-k-in-gam-formula-of-geom-smooth/1948)
@@ -359,7 +366,6 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - [Piecewise Regression and Splines](https://bookdown.org/tpinto_home/Beyond-Linearity/piecewise-regression-and-splines.html)
 - [Smooth terms in GAM](https://stat.ethz.ch/R-manual/R-devel/library/mgcv/html/smooth.terms.html) smooth.terms {mgcv}.
 - [HOW CAN I EXPLORE DIFFERENT SMOOTHS IN GGPLOT2? | R FAQ](https://stats.oarc.ucla.edu/r/faq/how-can-i-explore-different-smooths-in-ggplot2/)
-
 
 ## Dual axes
 - [Dual axes time series plots may be ok sometimes after all](http://ellisp.github.io/blog/2016/08/18/dualaxes). Dual axis time series charts are often deprecated, but the standard alternatives have weaknesses too. In some circumstances, if done carefully, dual axis time series charts may be ok after all. In particular, you can choose two vertical scales so the drawing on the page is equivalent to drawing two indexed series, but retaining the meaningful mapping to the scale of the original variables.

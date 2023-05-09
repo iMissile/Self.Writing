@@ -1460,6 +1460,11 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [UseR 2014 Web Pages](https://github.com/user2014/user2014.github.io)
 
 
+## ISF Conference
+- Slides. [Tidy Time Series Anomaly Detection for Load Forecasting](https://prital.netlify.app/talks/isf2021/isf-2021#1)
+- Slides. [Probabilistic forecasting of hourly Emergency Department arrivals](https://www.bahmanrt.com/slides/isf2022.html#1)
+
+
 # Obsidian
 - [Zettelkasten: как один немецкий учёный стал невероятно продуктивным](https://habr.com/ru/post/508672/)
 - [Воспитание Obsidian — вашего персонального информационного менеджера](https://habr.com/ru/company/macloud/blog/560776/)
@@ -1469,7 +1474,7 @@ This is where we will store all of the materials and links for rstudio::conf 202
 # http://192.168.12.31:4242/client/#/
 
 # 04.05.2023
-## R
+## R, Gam, Change detection
 - [10 Ways to View Correlation from a Noisy Scatter Plot](https://itnext.io/10-ways-to-view-correlation-from-a-noisy-scatter-plot-f744a6527ea6)
 - [Reduce noise in a raster (DEM) with R](https://gis.stackexchange.com/questions/339173/reduce-noise-in-a-raster-dem-with-r)
 - [How to remove noise from already smoothed graph](https://stackoverflow.com/questions/68863372/how-to-remove-noise-from-already-smoothed-graph)
@@ -1486,6 +1491,38 @@ Provides a large number of functions from numerical analysis and linear algebra,
 - [Smoothing Spline Regression in R](http://users.stat.umn.edu/~helwig/notes/smooth-spline-notes.html)
 - [`stats::smooth.spline`](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/smooth.spline.html) Fit a Smoothing Spline
 - [Ggplot change "k" in "gam" formula of `geom_smooth()`](https://community.rstudio.com/t/ggplot-change-k-in-gam-formula-of-geom-smooth/1948)
+- [Detecting changes in time series (R example)](https://stats.stackexchange.com/questions/139660/detecting-changes-in-time-series-r-example)
+- [Peak signal detection in realtime timeseries data](https://stackoverflow.com/questions/22583391/peak-signal-detection-in-realtime-timeseries-data)
+- [An Evaluation of Change Point Detection Algorithms](https://arxiv.org/abs/2003.06222)
+- [strucchange: Testing, Monitoring, and Dating Structural Changes](https://cran.r-project.org/web/packages/strucchange/index.html)
+- [changepoint: Methods for Changepoint Detection](https://cran.r-project.org/web/packages/changepoint/index.html)
+- [Anomaly detection in univariate time series incorporating active learning](https://www.sciencedirect.com/science/article/pii/S2772415822000323?via%3Dihub)
+- COOL! [CRAN Task View: Time Series Analysis](https://cran.r-project.org/web/views/TimeSeries.html)
+
+## AnomalyDetection
+- COOL! [CRAN Task View: Anomaly Detection with R](https://github.com/pridiltal/ctv-AnomalyDetection)
+- [Anomaly Detection](https://business-science.github.io/timetk/articles/TK08_Automatic_Anomaly_Detection.html) by Matt Dancho
+- [anomaly: Detecting Anomalies in Data](https://cran.r-project.org/web/packages/anomaly/index.html)
+	- [`anomaly::scapa.uv`](https://search.r-project.org/CRAN/refmans/anomaly/html/scapa.uv.html) Detection of univariate anomalous segments using SCAPA.
+	- Откуда достаются параметры смотрим в src `anomaly/R/capa.R` summary.
+- [PRIYANGA DILINI TALAGALA blog](https://prital.netlify.app/talk/)
+	- [oddstream: Outlier Detection in Data Streams](https://cran.r-project.org/web/packages/oddstream/). В сооавторстве с Rob J. Hyndman
+	- [stray: Anomaly Detection in High Dimensional and Temporal Data](https://cran.r-project.org/web/packages/stray/). В сооавторстве с Rob J. Hyndman
+	- [Anomalous time series package for R](https://github.com/robjhyndman/anomalous)
+- [OutliersO3: Draws Overview of Outliers (O3) Plots](https://cran.r-project.org/web/packages/OutliersO3/)
+- [What's Trending in Difference-in-Differences? A Synthesis of the Recent Econometrics Literature](https://arxiv.org/abs/2201.01194)
+- [List of tools & datasets for anomaly detection on time-series data](https://github.com/rob-med/awesome-TS-anomaly-detection)
+- [Detecting Outliers in Time Series (LS/AO/TC) using tsoutliers package in R.](https://stats.stackexchange.com/questions/104882/detecting-outliers-in-time-series-ls-ao-tc-using-tsoutliers-package-in-r-how)
+- [Ответы](https://rstudio-pubs-static.s3.amazonaws.com/946661_1c4fbb65d96a4e2692344369ac815034.html) на вопросы [3.7 Exercises](https://otexts.com/fpp3/decomposition-exercises.html)
+
+## Piecewise
+- [Piecewise Regression in R](https://www.delftstack.com/howto/r/piecewise-regression-in-r/)
+- [segmented](https://cran.r-project.org/web/packages/segmented/index.html): Regression Models with Break-Points / Change-Points (with Possibly Random Effects) Estimation
+- [`scan::plm`](https://search.r-project.org/CRAN/refmans/scan/html/plm.html). Piecewise linear model / piecewise regression
+- [Piecewise Regression](https://brunaw.com/ce092/piecewise/piecewise.html)
+- [earth: Multivariate Adaptive Regression Splines](https://cran.r-project.org/web/packages/earth/index.html)
+- [Using segmented regression to analyse world record running times](https://blog.revolutionanalytics.com/2015/12/using-segmented-regression-to-analyse-world-record-running-times.html)
+- COOL! [scan](https://jazznbass.github.io/scan/) - Single-Case Data Analyses for Single and Multiple Baseline Designs
 
 # 02.05.2023
 ## R
@@ -1512,6 +1549,33 @@ Simultaneous tests and confidence intervals for general linear hypotheses in par
 - [MinIO](https://min.io/) is a high-performance, S3 compatible object store. It is built for large scale AI/ML, data lake and database workloads.
 - [MinIo для самых маленьких](https://habr.com/ru/companies/veeam/articles/517392/)
 - [2023-04-14, Tom Ebergen, The Return of the H2O.ai Database-like Ops Benchmark](https://duckdb.org/2023/04/14/h2oai.html)
+
+## Remark.js
+- Классный пример слайдов и возможностей. [WELCOME TO SLIDES. Academic](https://prital.netlify.app/slides/example/)
+- [remarkjs.com](https://github.com/gnab/remark) A simple, in-browser, markdown-driven slideshow tool. Press 'H' for help.
+- [Remark Slides Starter](https://tjaddison.com/blog/2020/01/remark-slide-starter/)
+- [revealjs PDF Export](https://revealjs.com/pdf-export/). Open your presentation with print-pdf included in the query string, for example: http://localhost:8000/?print-pdf
+- [DeckTape. PDF exporter for HTML presentations](https://github.com/astefanutti/decktape)
+It seems that the problems with exporting to PDF can be easily fixed by small modifications in CSS. Add following:
+- [remark.js. Export to PDF #50 {Closed}](https://github.com/gnab/remark/issues/50). Добавил в иснтрументах Хрома и все реально заработало!!!!
+```
+@page {
+  size: 1210px 681px;
+  margin: 0;
+}
+
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+For 4:3 provide size: 908px 681px;. It still has some scaling issues to be fixed though.
+```
+
 
 ## R
 - [Trimming the Fat from `glm()` Models in R](https://win-vector.com/2014/05/30/trimming-the-fat-from-glm-models-in-r/) by Nina Zumel on May 30, 2014
@@ -2822,6 +2886,13 @@ From: Computational Methods in Engineering, 2014
 - COOL! [Notes on GAMs in R with a binary dependent variables](https://kaminsky.rocks/2020/04/notes-on-gams-in-r-with-a-binary-dependent-variables/)
 - [How to solve common problems with GAMs](https://www.seascapemodels.org/rstats/2021/03/27/common-GAM-problems.html)
 - [Gam with low E.D.F (estimated degrees of freedom) value in main effect, not interaction term](https://stats.stackexchange.com/questions/179591/gam-with-low-e-d-f-estimated-degrees-of-freedom-value-in-main-effect-not-inte)
+- Старые слайды лекций по GAM на Datacamp: [chapter 1](https://s3.amazonaws.com/assets.datacamp.com/production/course_6413/slides/chapter1.pdf)
+- [GAM: The Predictive Modeling Silver Bullet](https://multithreaded.stitchfix.com/blog/2015/07/30/gam/)
+Из серии [отличных воркшопов](https://r.qcbs.ca/Workshops/): 
+- Slides. [Workshop 8: Generalized additive models](https://r.qcbs.ca/Workshops/workshop08/workshop08-en/workshop08-en.html#1)
+- [Plotting output of GAM model](https://stackoverflow.com/questions/67077306/plotting-output-of-gam-model)
+- [Quick modeling of power load of Dominion Virginia Power](https://rpubs.com/DarrenKeeley/504432). Two models will be fit and compared for forecasting: TBATS, an automatic procedure, and then a GAM
+- [Error in `gam` function in `names(x) <- value`: 'names' attribute must be the same length as the vector](https://stackoverflow.com/questions/54033437/error-in-gam-function-in-namesx-value-names-attribute-must-be-the-same-l)
 
 ## Linear Mixed Models
 - [INTRODUCTION TO LINEAR MIXED MODELS](https://ourcodingclub.github.io/tutorials/mixed-models/)
