@@ -1,4 +1,11 @@
 
+# 10.05.2023
+- [Examples for Combinatorics](https://www.wolframalpha.com/examples/mathematics/discrete-mathematics/combinatorics/)
+Combinatorics is a branch of mathematics dealing primarily with combinations, permutations and enumerations of elements of sets. It has practical applications ranging widely from studies of card games to studies of discrete structures. Wolfram|Alpha is well equipped for use analyzing counting problems of various kinds that are central to the field.
+- Wolfram [Combinatorial Functions](https://reference.wolfram.com/language/guide/CombinatorialFunctions.html)
+- [Permutations](https://reference.wolfram.com/language/guide/Permutations.html)
+- [Combination](https://mathworld.wolfram.com/Combination.html). The number of combinations (n; k) can be computed in the Wolfram Language using Binomial[n, k], and the combinations themselves can be enumerated in the Wolfram Language using Subsets[Range[n],{k}].
+
 # 27.04.2023
 - Ищем обратные элементы в кольце вычетов.
 	- [WolframAlpha](https://www.wolframalpha.com/input?i=5%5E-1+mod13)

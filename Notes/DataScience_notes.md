@@ -1473,6 +1473,20 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+
+# 10.05.2023
+## R
+- COOL! [How does R access the package namespace without a call to library?](https://stackoverflow.com/questions/71509665/how-does-r-access-the-package-namespace-without-a-call-to-library/71510870#71510870)
+```
+with(asNamespace("dplyr"),
+     select(mtcars, cyl) %>%
+         mutate(cyl_two = cyl * 2)
+)
+```
+А также, пакет `withr`: `withr::with_package("ggplot2"`...
+- Causal inference with count regression. [Part 5 of the GLM and causal inference series.](https://solomonkurz.netlify.app/blog/2023-05-07-causal-inference-with-count-regression/) By A. Solomon Kurz
+- [Tidying Multi-Header Excel Data with R](https://paul.rbind.io/2019/02/01/tidying-multi-header-excel-data-with-r/)
+
 # 04.05.2023
 ## R, Gam, Change detection
 - [10 Ways to View Correlation from a Noisy Scatter Plot](https://itnext.io/10-ways-to-view-correlation-from-a-noisy-scatter-plot-f744a6527ea6)
@@ -2035,6 +2049,8 @@ The proper solution is to set environment variable `R_LIBS_USER` to the value of
 
 # 29.08.2022
 ## Quarto
+- [Quarto prs & issues](https://rpubs.com/rich_i/quarto-prs-issues)
+- COOL! [6 Productivity Hacks for Quarto](https://posit.co/blog/6-productivity-hacks-for-quarto/)
 - COOL! [Welcome to Quarto](https://quarto.org). A scientific and technical publishing system built on Pandoc (RStudio)
 - [Component Layout](https://quarto.org/docs/interactive/layout.html). Тут активно упоминается про `:::`.
 ```::: {.classname}
@@ -2121,13 +2137,26 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 - COOL! [Pass R object to Observable in Quarto](https://stackoverflow.com/questions/73873681/pass-r-object-to-observable-in-quarto)
 - [Observable Imports in Quarto](https://timelyportfolio.github.io/quarto_tests/examples/quarto_observable_imports/quarto_observable_imports.html)
 - [A beginner's guide to using Observable JavaScript, R, and Python with Quarto](https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html)
+- [How do I increase the width of the content column in Quarto](https://stackoverflow.com/questions/73611184/how-do-i-increase-the-width-of-the-content-column-in-quarto)
 
 ## Quarto & tables
 - quartoExtra. [Table printing demo](https://debruine.github.io/quarto_demo/table.html) by Lisa DeBruine
 This code is meant to replicate (and extend) the df_print option in rmarkdown. The code for kable or paged tables is relatively simple, and I have created a more complex function that prints short tables with kableExtra::kable() and longer tables with DT::datatable(). You have to source in the file with the knit_print.data.frame() function for each page in a website or each chapter in a book.
+- Размер таблиц тоже надо бы подгонять. Спасает простой html, так говорят: [How to adjust HTML tables width to content in quarto documents?](https://community.rstudio.com/t/how-to-adjust-html-tables-width-to-content-in-quarto-documents/149395)
+Add `as_raw_html()` to avoid Quarto modifying the HTML table.
+	iris %>% 
+	  count(Species) %>% 
+	  gt() %>%
+	  as_raw_html()
 
 ## Quarto & html widgets
 - ['printing' HTML widgets in programmatically generated Rmarkdown](https://stackoverflow.com/questions/64430375/printing-html-widgets-in-programmatically-generated-rmarkdown)
+- [Auto adjust height of widget to screen height {#3191}](https://github.com/quarto-dev/quarto-cli/discussions/3191)
+Solved by discovering viewport units!
+`widget.layout.height = "100vh"`
+Or to account for the already occupied screen real estate, in my case a 90 pixel high header:
+`widget.layout.height = "calc(100vh - 90px)"`
+- COOL! [HTML block](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/). Want to embed an iframe on a webpage or a slide deck? Plop the sharing code in a raw html block!
 
 ## knitr textwidth
 - xaringan. [Font size of code {#69}](https://github.com/yihui/xaringan/issues/69)

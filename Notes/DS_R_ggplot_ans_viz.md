@@ -598,6 +598,7 @@ If you don't want Quarto or anything actually to take over the styling, then you
 - COOL! [Interactive filtering](https://observablehq.com/@observablehq/arsc-part-2-interactive-filtering). Building an advanced report from simple components.
 - [Introduction to inputs](https://observablehq.com/@observablehq/inputs?collection=@observablehq/observable-libraries-for-visualization)
 In Observable, though, cells run in the order they’re needed—what’s called a reactive dataflow.
+	- [OBSERVABLE INPUTS › TABLE · API](https://observablehq.com/@observablehq/input-table)
 	- [Observable's not JavaScript](https://observablehq.com/@observablehq/observable-javascript). JavaScript on Observable is almost — but not entirely — vanilla
 	- [Reactive Dataflow](https://observablehq.com/@observablehq/reactive-dataflow)
 - [Debugging a function in observable](https://talk.observablehq.com/t/debugging-a-function-in-observable/2246)
