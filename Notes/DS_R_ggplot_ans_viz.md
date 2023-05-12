@@ -587,7 +587,6 @@ If you don't want Quarto or anything actually to take over the styling, then you
 - [Introducing Arquero](https://observablehq.com/@uwdata/introducing-arquero)
 - COOL! [Pass R object to Observable in Quarto](https://stackoverflow.com/questions/73873681/pass-r-object-to-observable-in-quarto)
 - [Observable Imports in Quarto](https://timelyportfolio.github.io/quarto_tests/examples/quarto_observable_imports/quarto_observable_imports.html)
-- [Wrangling data in JavaScript with Arquero: a primer for R users](https://observablehq.com/@observablehq/data-wrangling-with-arquero-from-r)
 - [An Illustrated Guide to Arquero Verbs](https://observablehq.com/@uwdata/an-illustrated-guide-to-arquero-verbs)
 - [Plot from ggplot2](https://observablehq.com/@observablehq/plot-from-ggplot2)
 - [Observable Plot](https://observablehq.com/@observablehq/plot)
@@ -600,6 +599,7 @@ If you don't want Quarto or anything actually to take over the styling, then you
 In Observable, though, cells run in the order they’re needed—what’s called a reactive dataflow.
 	- [OBSERVABLE INPUTS › TABLE · API](https://observablehq.com/@observablehq/input-table)
 	- [Observable's not JavaScript](https://observablehq.com/@observablehq/observable-javascript). JavaScript on Observable is almost — but not entirely — vanilla
+	- [How Observable Runs](https://observablehq.com/@observablehq/how-observable-runs)
 	- [Reactive Dataflow](https://observablehq.com/@observablehq/reactive-dataflow)
 - [Debugging a function in observable](https://talk.observablehq.com/t/debugging-a-function-in-observable/2246)
 - [Peak Detection for Data Visualization](https://observablehq.com/@yurivish/peak-detection)

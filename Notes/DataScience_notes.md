@@ -1486,6 +1486,7 @@ with(asNamespace("dplyr"),
 А также, пакет `withr`: `withr::with_package("ggplot2"`...
 - Causal inference with count regression. [Part 5 of the GLM and causal inference series.](https://solomonkurz.netlify.app/blog/2023-05-07-causal-inference-with-count-regression/) By A. Solomon Kurz
 - [Tidying Multi-Header Excel Data with R](https://paul.rbind.io/2019/02/01/tidying-multi-header-excel-data-with-r/)
+- [papeR](https://github.com/hofnerb/papeR) provides a toolbox for writing knitr, Sweave or other LaTeX- or markdown-based papers and reports and to prettify the output of various estimated models.
 
 # 04.05.2023
 ## R, Gam, Change detection
