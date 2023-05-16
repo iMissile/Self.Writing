@@ -1474,6 +1474,16 @@ This is where we will store all of the materials and links for rstudio::conf 202
 # http://192.168.12.31:4242/client/#/
 
 
+# 15.05.2023
+## DS
+- [(Not Just) Data Version Control](https://dvc.org/)
+- [Dolt is a SQL database you can fork, clone, branch, merge, push and pull just like a Git repository.](https://www.dolthub.com/)
+- [lakeFS: Git for Data](https://lakefs.io/).
+
+## R
+- COOL! [ellipsis ... as function in substitute?](https://stackoverflow.com/questions/70602963/ellipsis-as-function-in-substitute)
+- COOL! [How to use `foreach` and `%dopar%` with an `R6` class in R?](https://stackoverflow.com/questions/57349958/how-to-use-foreach-and-dopar-with-an-r6-class-in-r)
+
 # 10.05.2023
 ## R
 - COOL! [How does R access the package namespace without a call to library?](https://stackoverflow.com/questions/71509665/how-does-r-access-the-package-namespace-without-a-call-to-library/71510870#71510870)
@@ -2060,7 +2070,6 @@ Div
 ```
 will [generate html `div`](https://quarto.org/docs/authoring/markdown-basics.html#other-blocks).
 - [Quarto, Python, and VS Code: Quarto Reports In VS Code](https://appsilon.com/quarto-python-and-vscode/)
-- [VSCode vs RStudio — Worth the Switch?](https://towardsdatascience.com/vscode-vs-rstudio-worth-the-switch-7a4415fc3275)
 - COOL! [Notes on Changing from Rmarkdown/Bookdown to Quarto](https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/) by Nicholas Tierney
 - COOL! [Making Slides in Quarto with reveal.js](https://meghan.rbind.io/blog/quarto-slides/) by Meghan Hall
 - COOL! [The ultimate guide to starting a Quarto blog](https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html)

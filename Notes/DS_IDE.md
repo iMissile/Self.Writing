@@ -17,6 +17,8 @@
 	- install the Python extension for VS Code from the Visual Studio Marketplace. [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 ## R VScode
+- [VSCode vs RStudio — Worth the Switch?](https://towardsdatascience.com/vscode-vs-rstudio-worth-the-switch-7a4415fc3275)
+- [VSCode Snippets for R and R Markdown](https://github.com/SidhuK/r-snippets)
 - Analytics Vidhya. [A fresh start for R in VSCode](https://medium.com/analytics-vidhya/a-fresh-start-for-r-in-vscode-ec61ed108cf6). Setting up Visual Studio Code for R development
 - [How to integrate Python and R in Visual Studio Code](https://towardsdatascience.com/how-to-integrate-python-and-r-in-visual-studio-code-496a47c90422)
 - COOL! [R in 2021 with VSCode](https://datamares.netlify.app/en/post/r-vscode/)

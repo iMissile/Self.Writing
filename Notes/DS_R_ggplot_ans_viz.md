@@ -357,6 +357,11 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - [ggplot2. Profiling Performance](https://ggplot2.tidyverse.org/articles/profiling.html)
 - [Benchmark plot creation time. Broken down into construct, build, render and draw times.](https://ggplot2.tidyverse.org/reference/benchplot.html)
 - Отличная подборка тестирования различных драйверов и функций по отрисовке графических примитивов. [High-level Graphics Benchmarking](https://github.com/thomasp85/plotting_benchmark)
+- [Ragg Performance](https://rpubs.com/jeroenooms/ragg)
+- [Working with R, Cairo graphics, custom fonts, and ggplot](https://www.andrewheiss.com/blog/2017/09/27/working-with-r-cairo-graphics-custom-fonts-and-ggplot/)
+The Cairo graphics library makes it easy to embed custom fonts in PDFs and create high resolution PNGs (with either AGG or Cairo).
+- [Saving R Graphics across OSs](https://www.jumpingrivers.com/blog/r-graphics-cairo-png-pdf-saving/)
+- [Package 'grDevices'](https://r-universe.dev/manuals/grDevices.html)
 
 ## ggplot smooth
 - [`geom_smooth` with `facet_grid` and different fitting functions](https://stackoverflow.com/questions/44912496/geom-smooth-with-facet-grid-and-different-fitting-functions)
