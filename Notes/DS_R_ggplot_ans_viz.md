@@ -608,6 +608,7 @@ In Observable, though, cells run in the order they’re needed—what’s called
 	- [Reactive Dataflow](https://observablehq.com/@observablehq/reactive-dataflow)
 - [Debugging a function in observable](https://talk.observablehq.com/t/debugging-a-function-in-observable/2246)
 - [Peak Detection for Data Visualization](https://observablehq.com/@yurivish/peak-detection)
+- [Recreating an Altman-Gardner Plot in Javascript based on the dabest package in R](https://observablehq.com/@lorenasandoval88/altman-gardner-plot)
 
 ## ojs_define
 - [OJS Data Sources](https://quarto.org/docs/interactive/ojs/data-sources.html)

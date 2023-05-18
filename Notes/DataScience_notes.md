@@ -1474,6 +1474,14 @@ This is where we will store all of the materials and links for rstudio::conf 202
 # http://192.168.12.31:4242/client/#/
 
 
+# 18.05.2023
+## DS & R
+- COOL! [Fast Fixed-Effects Estimation: Short Introduction](https://cran.r-project.org/web/packages/fixest/vignettes/fixest_walkthrough.html) by Laurent Berge and Grant McDermott
+- [A Guide on Data Analysis](https://bookdown.org/mike/data_analysis/index.html)
+	- [31.4 fixest package](https://bookdown.org/mike/data_analysis/fixest-package.html)
+	- [25 Difference-in-differences](https://bookdown.org/mike/data_analysis/difference-in-differences.html#difference-in-differences)
+	- [12.4.2.2 Fixed Effects Estimator](https://bookdown.org/mike/data_analysis/data.html#fixed-effects-estimator)
+
 # 15.05.2023
 ## DS
 - [(Not Just) Data Version Control](https://dvc.org/)
@@ -4524,6 +4532,7 @@ Provides a simple and efficient wrapper around the fastest Fourier transform in 
 - Slides [Customization of web pages with CSS](https://dataviz-2021.netlify.app/slides/w9p2.html#1) by Daniel Anderson, Week 9, Class 2
 - [#gosling](https://gosling.js.org/) is a declarative grammar for interactive (epi)genomics #dataviz on the web. Check out https://gosling.js.org to play or keep reading.
 - COOL! [Understanding p-values Through Simulations](https://rpsychologist.com/pvalue/). An Interactive Visualization. Created by Kristoffer Magnusson
+- [Green dice are loaded (welcome to p-hacking)](https://github.com/jfpuget/p-hacking) by Jean-François Puget
 - COOL! Отличный [онлайн визуальный редактор - модификатор dplyr пайпов](https://nshrest.shinyapps.io/datawhats/)
 - COOL! [A minimal benchmark of various tools (statistical software, databases etc.) for working with tabular data of moderately large sizes (interactive data analysis).](https://github.com/szilard/benchm-databases)
 - COOL! [Benchmarks : Grouping](https://github.com/Rdatatable/data.table/wiki/Benchmarks-:-Grouping). Тут детальные прояснения как готовить тест на производительность
@@ -5199,6 +5208,10 @@ Convert SQL Server DateTime to milliseconds Since 1970 (UNIX Epoch Time).
 - [Test fixtures](https://testthat.r-lib.org/articles/test-fixtures.html)
 
 ## R
+- simdJson:
+	- COOL! [simdjson : Parsing gigabytes of JSON per second](https://github.com/simdjson/simdjson)
+	- COOL! Query object use RFC [JavaScript Object Notation (JSON) Pointer](https://datatracker.ietf.org/doc/html/rfc6901). Details: [add support for query language (e.g., a simple subset of JSONPath) #95 {Closed}](https://github.com/simdjson/simdjson/issues/95)
+	- [An overview of JSON Pointer](https://gregsdennis.github.io/Manatee.Json/usage/pointer.html)
 - RcppSimdJson
 	- [Change in behavoir of query argument of fparse between version 0.1.1 and 0.1.2 #51 {Closed}](https://github.com/eddelbuettel/rcppsimdjson/issues/51)
 	- [Parsing error @ Windows & RcppSimdJson 0.1.2 #56 {Closed}](https://github.com/eddelbuettel/rcppsimdjson/issues/56)
@@ -6269,7 +6282,6 @@ Cross-platform command-line argument parser written purely in R with no external
 - COOL! [JerryLead/SparkInternals]. Spark Internals
 - COOL! [Introducing Koalas 1.0](https://databricks.com/blog/2020/06/24/introducing-koalas-1-0.html)
 - COOL! [7 Interesting JavaScript Features in ES2020 That You Should Know](https://kriss.io/7-interesting-javascript-features-in-es2020-that-you-should-know/)
-- COOL! [simdjson : Parsing gigabytes of JSON per second](https://github.com/simdjson/simdjson)
 - [AT&T Archives: Seeing the Digital Future (1961)](https://www.youtube.com/watch?v=avHo0-qU8xo)
 
 ## Process Mining
@@ -7405,6 +7417,10 @@ A delightful series of modules to learn statistics and R coding for students, sc
 
 ## Math
 - [GeoGebra](https://www.geogebra.org/geometry)
+- [Entering polar coordinates and curves](https://www.geogebra.org/m/DRTYZZC6)
+- [Polar Function Graphing](https://www.geogebra.org/m/xr8Y8zwF#material/tarhQXs6)
+- [Polar Graphs](https://www.geogebra.org/m/xr8Y8zwF)
+
 ## R
 - [RStudio Projects and Working Directories: A Beginner's Guide](https://martinctc.github.io/blog/rstudio-projects-and-working-directories-a-beginner's-guide/)
 - COOL! [aws.signature: Amazon Web Services Request Signatures](https://cran.r-project.org/web/packages/aws.signature/index.html)

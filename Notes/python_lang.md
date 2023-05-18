@@ -53,6 +53,7 @@ $ pipupgrade --verbose --latest --yes
 	- Make sure your Python version is supported by the package.
 - [How to Update All of Your Python Packages With pip Using One Simple Command](https://dougie.io/answers/pip-update-all-packages/)
 `pip freeze | cut -d'=' -f1 | xargs -n1 pip install -U`
+- COOL! Еще интересное решение: `pip install changedetection.io --upgrade`
 - [How to find a Python package's dependencies](https://stackoverflow.com/questions/29751572/how-to-find-a-python-packages-dependencies)
 - [IPython. Interactive Computing](https://ipython.org/). Он же Jupyter.
 	- [Install](https://docs.jupyter.org/en/latest/install/notebook-classic.html) `pip3 install jupyter`
@@ -272,6 +273,18 @@ class tracesSchema(pt.Model):
 # Python & R
 - [How to use R and Python in the same notebook?](https://www.askpython.com/python/examples/use-r-and-python-in-the-same-notebook)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
+
+# 17.05.2023
+- COOL! [All Pandas json_normalize() you should know for flattening JSON](https://towardsdatascience.com/all-pandas-json-normalize-you-should-know-for-flattening-json-13eae1dfb7dd). Some of the most useful Pandas tricks
+- [easy-tictoc 0.0.1](https://pypi.org/project/easy-tictoc/)
+
+## jq
+- [ERROR: Could not build wheels for pycairo, which is required to install pyproject.toml-based 
+projects](https://stackoverflow.com/questions/70508775/error-could-not-build-wheels-for-pycairo-which-is-required-to-install-pyprojec). Ошибка возникла при инсталляции `pyjq`.
+- [Transforming nested json with pyjq: recommended for a deep night sleep](https://blog.devgenius.io/transforming-nested-json-with-pyjq-recommended-for-a-deep-night-sleep-3870b1c88091)
+- [Installing pyjq package (note to self)](https://www.nicholasdejong.com/install-pyjq-note-to-self/) `sudo apt-get install autoconf libtool`
+- "pyjq doesn't work on Windows." [how do I install pyjq on python running on windows? #9 {Closed}](https://github.com/doloopwhile/pyjq/issues/9)
+- [ERROR: Could not build wheels for pyjq which use PEP 517 and cannot be installed directly #67 {Open}](https://github.com/doloopwhile/pyjq/issues/67)
 
 # 07.05.2023
 - [Check if a Variable is or is not None in Python](https://sebhastian.com/python-not-none/) `is not None`

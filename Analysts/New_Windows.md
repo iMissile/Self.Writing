@@ -324,6 +324,8 @@ Far.exe /import settings.cfg
 Элементы «F2 User Menu» не были экспортированы.
 Меню F2 здесь:"%APPDATA%\Far Manager\Profile\FarMenu.ini"
 - [Упрощаем себе работу в ОС Windows с Microsoft PowerToys](https://dtf.ru/howto/1124539-uproshchaem-sebe-rabotu-v-os-windows-s-microsoft-powertoys)
+- [Equivalent to the htop command on Windows](https://serverfault.com/questions/815207/equivalent-to-the-htop-command-on-windows)
+	- [btop++ for windows](https://github.com/aristocratos/btop4win)
 
 ## Tips
 - [Бесплатно продлеваем Kiwi for Gmail](https://dailysoftwaredeal.com/seller/giveaway-kiwi-for-gmail-windows-mac-1-year-license/). Тут идет покупка, если из приложения не доступно пока. https://www.kiwiforgmail.com/. Code: KiwiForFree
