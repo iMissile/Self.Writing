@@ -222,6 +222,8 @@ On Tikz
 \graphicspath{{../images/}{./images/}}
 
 ```
+- [How to change paragraph spacing in LaTeX](https://www.overleaf.com/learn/latex/Articles/How_to_change_paragraph_spacing_in_LaTeX)
+- [хOptimising very large image files](https://www.overleaf.com/learn/how-to/Optimising_very_large_image_files)
 - [Адаптация шаблона отчета о НИР в XeTeX](http://dkhramov.dp.ua/Comp.NIRReportXeTeX#.XbijF5ozaUk)
 - [LaTeX: Numero sign ('№') {duplicate}](https://tex.stackexchange.com/questions/40564/latex-numero-sign). `\textnumero`
 - [What's the best way to write e-mail addresses?](https://tex.stackexchange.com/questions/268/whats-the-best-way-to-write-e-mail-addresses).

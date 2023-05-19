@@ -827,6 +827,11 @@ TinEye browser extensions are the fastest way to search for images online.
 	- [Nextcloud](https://nextcloud.com/). The self-hosted productivity platform that keeps you in control
 - [Resilio Sync](https://www.resilio.com/). Universal File Delivery for the Enterprise.
 Unify, control, and accelerate global file data, securely
+- copy
+	- [robocopy](https://learn.microsoft.com/ru-ru/windows-server/administration/windows-commands/robocopy) Копирует данные файла из одного расположения в другое.
+	- [Robocopy](https://ru.wikipedia.org/wiki/Robocopy) (от англ. Robust File Copy) — утилита командной строки для репликации (не просто копирования) каталогов (папок). Она была доступна как часть Windows Resource Kit и представлена как стандартный компонент Windows Vista, Windows 7 и Windows Server 2008. Robocopy функционально заменяет Xcopy, с большим количеством опций.
+	- [Использование Robocopy для синхронизации и резервного копирования файлов, примеры](https://winitpro.ru/index.php/2020/05/13/robocopy-sinxronizaciya-i-rezervnoe-kopirovanie-fajlov/)
+
 
 # Миграция с gmail на yandex.mail
 - [Для выноса данных из Google: https://takeout.google.com]
@@ -839,6 +844,9 @@ Mozilla Thunderbird](https://yandex.ru/support/mail/mail-clients/mozilla-thunder
 - [Calculate time difference in Windows batch file](https://stackoverflow.com/questions/9922498/calculate-time-difference-in-windows-batch-file)
 - [7 Ways to Measure Time Taken to Complete a Batch File or Command Line Execution](https://www.raymond.cc/blog/measure-time-taken-to-complete-a-batch-file-or-command-line-execution/). Рулит доп. утилита `ptime` весом в 20 кб.
 - [How-to: Calculate a time difference with tdiff.cmd](https://ss64.com/nt/syntax-tdiff.html)
+- [7 способов измерить время, необходимое для выполнения командного файла или выполнения командной строки](https://culhu.ru/archives/31596):
+	- [ptime.exe](http://www.pc-tools.net/win32/ptime/) - Accurately measure program execution time
+	- TimeThis.exe -- официальный инструмент Microsoft из комплекта ресурсов Windows 2000
 
 # Настройка приложений из MS Store
 - [Как создать ярлык приложения из Microsoft Store на рабочем столе](https://comp-security.net/%D0%BA%D0%B0%D0%BA-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D1%8F%D1%80%D0%BB%D1%8B%D0%BA-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8%D0%B7-microsoft-store/)
@@ -858,3 +866,15 @@ If you are using the curl command line tool on Windows, curl will search for a C
 	- Windows System directory (e.g. C:\windows\system32)
 	- Windows Directory (e.g. C:\windows)
 	- all directories along %PATH%
+
+# image magick
+- [Install ImageMagick @ Ubuntu] `sudo apt install imagemagick`
+- [Image Resizer Утилита](https://learn.microsoft.com/ru-ru/windows/powertoys/image-resizer)
+- [Mogrify subfolders and keep original directory structure](https://stackoverflow.com/questions/27518256/mogrify-subfolders-and-keep-original-directory-structure)
+- [Resize multiple images with imagemagick from a folder to other (and keep the name) with a command](https://askubuntu.com/questions/1068850/resize-multiple-images-with-imagemagick-from-a-folder-to-other-and-keep-the-nam)
+- [Mogrify subfolders and keep original directory structure](https://stackoverflow.com/questions/27518256/mogrify-subfolders-and-keep-original-directory-structure)
+- [Inline Image Modification](https://imagemagick.org/script/mogrify.php)
+- [Resize all images in subdirectories](https://www.davd.io/resize-all-images-in-subdirectories/) `find . -name "*.jpg" -print0 | xargs -0 mogrify -resize 2200x2200`
+- [Batch resize images and output images to new folder with ImageMagick](https://stackoverflow.com/questions/14304480/batch-resize-images-and-output-images-to-new-folder-with-imagemagick)
+- [How do I batch-resize images in ImageMagick while maintaining aspect ratio and a max width and height?](https://stackoverflow.com/questions/56305138/how-do-i-batch-resize-images-in-imagemagick-while-maintaining-aspect-ratio-and-a)
+- [Command-line Basics: Resizing Images with ImageMagick](https://www.digitalocean.com/community/tutorials/workflow-resizing-images-with-imagemagick)
