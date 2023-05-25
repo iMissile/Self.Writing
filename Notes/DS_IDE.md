@@ -1,3 +1,20 @@
+# RStudio
+
+## RStudio fonts
+- COOL! [Ligature fonts for R](https://benjaminlmoore.wordpress.com/2017/07/19/ligature-fonts-for-r/)
+	- [Monospaced Programming Fonts with Ligatures](https://www.hanselman.com/blog/MonospacedProgrammingFontsWithLigatures.aspx)
+	- [Hasklig - a code font with monospaced ligatures](https://github.com/i-tu/Hasklig) (in my opinion a nicer base font) which is more conservative with the ligatures it introduces.
+	- [tonsky/FiraCode. Monospaced font with programming ligatures](https://github.com/tonsky/FiraCode)
+	- [FiraCode RStudio instructions](https://github.com/tonsky/FiraCode/wiki/RStudio-instructions)
+	- [Add editor font support to RStudio Server #2534 {Closed}](https://github.com/rstudio/rstudio/issues/2534)
+- [JetBrains Mono. A typeface for developers_](https://www.jetbrains.com/lp/mono/)
+- [JetBrains Mono — a new typeface made for developers](https://blog.jetbrains.com/blog/2020/01/15/jetbrains-mono-a-new-font-made-for-developers/)
+
+
+## Other
+- [How to get unsaved script tabs](https://stackoverflow.com/questions/35223435/how-to-get-unsaved-script-tabs)
+
+
 # VScode
 
 ## Common
@@ -17,8 +34,24 @@
 	- install the Python extension for VS Code from the Visual Studio Marketplace. [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 ## R VScode
+
+## Kun Ren
+- [Kun Ren - Using R in VS Code](https://www.youtube.com/watch?v=9xXBDU2z_8Y)
+- [My recommendations of VS Code extensions for R](https://renkun.me/2022/03/06/my-recommendations-of-vs-code-extensions-for-r/). 2022-03-06
+- [Writing R in VSCode: A Fresh Start](https://renkun.me/2019/12/11/writing-r-in-vscode-a-fresh-start/). 2019-12-11. This article will be updated to reflect the latest languageserver features.
+- [R Extension for Visual Studio Code](https://github.com/REditorSupport/vscode-R)
+
+Настраиваем просто по инструкциям к плагинам:
+- [R Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)
+- [R Debugger](https://marketplace.visualstudio.com/items?itemName=RDebugger.r-debugger)
+- [Quarto](https://marketplace.visualstudio.com/items?itemName=quarto.quarto)
+
+## Другие
 - [VSCode vs RStudio — Worth the Switch?](https://towardsdatascience.com/vscode-vs-rstudio-worth-the-switch-7a4415fc3275)
+- [Using R in VS Code](https://schiff.co.nz/blog/r-and-vscode/). Some things I learned while trying out R in VS Code
 - [VSCode Snippets for R and R Markdown](https://github.com/SidhuK/r-snippets)
+- [YAML Intelligence](https://quarto.org/docs/tools/vscode.html#yaml-intelligence)
+- [VS Code setup for R](https://gist.github.com/strengejacke/82e8d7b869bd9f961d12b4091c145b88) gist различных настроек и пояснения.
 - Analytics Vidhya. [A fresh start for R in VSCode](https://medium.com/analytics-vidhya/a-fresh-start-for-r-in-vscode-ec61ed108cf6). Setting up Visual Studio Code for R development
 - [How to integrate Python and R in Visual Studio Code](https://towardsdatascience.com/how-to-integrate-python-and-r-in-visual-studio-code-496a47c90422)
 - COOL! [R in 2021 with VSCode](https://datamares.netlify.app/en/post/r-vscode/)
@@ -30,6 +63,7 @@
 	- [R LSP Client for VSCode](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r-lsp): R LSP Client for Visual Studio Code
 	- [Python](https://www.python.org/downloads/)
 	- [Radian](https://github.com/randy3k/radian): A 21st century R console.
+		- [Add support for Windows UTF-8 version of R #269 {Closed}](https://github.com/randy3k/radian/issues/269)
 	- [ManuelHentschel/vscDebugger](https://github.com/ManuelHentschel/vscDebugger/) R Debugger Protocol. Ставим из zip файла 
 	`install.packages(path_to_source, repos = NULL, type="source")`
 	- In Windows, please go to VSCode settings, and set up the following entries:

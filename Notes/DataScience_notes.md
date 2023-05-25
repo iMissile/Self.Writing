@@ -92,16 +92,6 @@ https://www.crowdgames.ru/page/plany-crowd-games
 
 - Bookmate [Изменить данные карты, с которой происходят списания за подписку](https://support.bookmate.com/hc/ru/articles/219428628-%D0%98%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BA%D0%B0%D1%80%D1%82%D1%8B-%D1%81-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D1%8F%D1%82-%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B7%D0%B0-%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%BA%D1%83)
 
-# RStudio fonts
-- COOL! [Ligature fonts for R](https://benjaminlmoore.wordpress.com/2017/07/19/ligature-fonts-for-r/)
-	- [Monospaced Programming Fonts with Ligatures](https://www.hanselman.com/blog/MonospacedProgrammingFontsWithLigatures.aspx)
-	- [Hasklig - a code font with monospaced ligatures](https://github.com/i-tu/Hasklig) (in my opinion a nicer base font) which is more conservative with the ligatures it introduces.
-	- [tonsky/FiraCode. Monospaced font with programming ligatures](https://github.com/tonsky/FiraCode)
-	- [FiraCode RStudio instructions](https://github.com/tonsky/FiraCode/wiki/RStudio-instructions)
-	- [Add editor font support to RStudio Server #2534 {Closed}](https://github.com/rstudio/rstudio/issues/2534)
-- [JetBrains Mono. A typeface for developers_](https://www.jetbrains.com/lp/mono/)
-- [JetBrains Mono — a new typeface made for developers](https://blog.jetbrains.com/blog/2020/01/15/jetbrains-mono-a-new-font-made-for-developers/)
-
 # R general
 - COOL! [Upgrading to R 3.6.0 on a Mac – May 14, 2019](https://ibecav.github.io/update_libraries/).
 - Launch R/Rstudio and type `.libPaths()` and you should see the new path to your personal library.
@@ -1399,6 +1389,9 @@ Stratification, CUPED, Variance-Weighted Estimators, and ML-based methods CUPAC 
 - [New York R Conference](https://rstats.ai/nyr/)
 - [New York R meetup](https://nyhackr.org/)
 
+## New York R 2023
+- [Copilot for R, a supporting repository for a presentation](https://github.com/revodavid/copilot-for-r). Presenter & Author: David Smith, Principal Cloud Advocate at Microsoft
+
 ## Appsilon Shiny 2023
 - [Asynchronous programming in Shiny](https://github.com/hypebright/async_shiny)
 	- [Examples to implement asynchronous programming in Shiny](https://github.com/hypebright/async_shiny)
@@ -1465,6 +1458,9 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - Slides. [Probabilistic forecasting of hourly Emergency Department arrivals](https://www.bahmanrt.com/slides/isf2022.html#1)
 
 
+## TED Talks
+- [https://www.ted.com/talks](https://www.ted.com/talks)
+
 # Obsidian
 - [Zettelkasten: как один немецкий учёный стал невероятно продуктивным](https://habr.com/ru/post/508672/)
 - [Воспитание Obsidian — вашего персонального информационного менеджера](https://habr.com/ru/company/macloud/blog/560776/)
@@ -1472,6 +1468,24 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Obsidian — IDE для Markdown базы знаний](https://vas3k.club/link/2609/)
 
 # http://192.168.12.31:4242/client/#/
+
+# 25.05.2023
+- А.П. Репьев [Убожество SWOT](https://tushavin.ru/swot-analiz/)
+- [Announcing DuckDB 0.8.0](https://duckdb.org/2023/05/17/announcing-duckdb-080.html). pivot/unpivot, asof join
+
+## Matrix
+- [fast large matrix multiplication in R](https://stackoverflow.com/questions/35923787/fast-large-matrix-multiplication-in-r)
+- [How does BLAS get such extreme performance?](https://stackoverflow.com/questions/1303182/how-does-blas-get-such-extreme-performance)
+- [BLAS (Basic Linear Algebra Subprograms)](https://netlib.org/blas/)
+
+- Matrix Performance
+	- [A.3 Linear algebra](https://cran.r-project.org/doc/manuals/r-release/R-admin.html#BLAS)
+	- [Benchmarking Single- and Multi-Core BLAS Implementations and GPUs for use with R](https://cran.r-project.org/web/packages/gcbd/vignettes/gcbd.pdf) by Dirk Eddelbuettel
+	- COOL! [Short tutorial for setting up OpenBLAS in R for Windows](https://github.com/david-cortes/R-openblas-in-windows)
+	- [Faster BLAS in R](https://brettklamer.com/diversions/statistical/faster-blas-in-r/) by Brett Klamer
+	- [Assessing R performance with optimized BLAS across three operating systems](https://thomasmcrow.com/blog/2021-08-optimized-blas-in-r/)
+	- [Improving R Perfomance by installing optimized BLAS/LAPACK libraries](https://csantill.github.io/RPerformanceWBLAS/)
+
 
 
 # 18.05.2023
@@ -1481,6 +1495,9 @@ This is where we will store all of the materials and links for rstudio::conf 202
 	- [31.4 fixest package](https://bookdown.org/mike/data_analysis/fixest-package.html)
 	- [25 Difference-in-differences](https://bookdown.org/mike/data_analysis/difference-in-differences.html#difference-in-differences)
 	- [12.4.2.2 Fixed Effects Estimator](https://bookdown.org/mike/data_analysis/data.html#fixed-effects-estimator)
+- [Колмогоровская сложность](https://ru.m.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BB%D0%BC%D0%BE%D0%B3%D0%BE%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C)
+
+- COOL! Lesson [Introduction to Reproducible Publications with RStudio. Reproducible & Efficient Methods of Using Code Chunks](https://ucsbcarpentry.github.io/Reproducible-Publications-with-RStudio-Quarto/08-code-chunks/index.html)
 
 # 15.05.2023
 ## DS
@@ -2068,6 +2085,8 @@ The proper solution is to set environment variable `R_LIBS_USER` to the value of
 
 # 29.08.2022
 ## Quarto
+- [rstudio::conf 2022 Workshop](https://rstudio-conf-2022.github.io/get-started-quarto/) Getting Started with Quarto by Tom Mock
+- [Quarto Troubleshooting](https://quarto.org/docs/troubleshooting/). Если нужно из не-интерактивной сессии трейс получить и всё такое.
 - [Quarto prs & issues](https://rpubs.com/rich_i/quarto-prs-issues)
 - COOL! [6 Productivity Hacks for Quarto](https://posit.co/blog/6-productivity-hacks-for-quarto/)
 - COOL! [Welcome to Quarto](https://quarto.org). A scientific and technical publishing system built on Pandoc (RStudio)
@@ -2147,6 +2166,13 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 - [Define a new callout in quarto](https://stackoverflow.com/questions/74647399/define-a-new-callout-in-quarto)
 - [How to apply CSS style to Quarto output](https://stackoverflow.com/questions/74026514/how-to-apply-css-style-to-quarto-output)
 - [Add a CSS class to single code chunks in RMarkdown](https://stackoverflow.com/questions/37944197/add-a-css-class-to-single-code-chunks-in-rmarkdown)
+- [How to hide CSS chunks in Quarto (qmd)](https://community.rstudio.com/t/how-to-hide-css-chunks-in-quarto-qmd/158904)
+```{css}
+/*| echo: false */
+h1 {
+  color: blue;
+}
+```
 
 ## Quarto & observable
 - [Observable JS](https://quarto.org/docs/interactive/ojs/)

@@ -454,6 +454,7 @@ storeLabeller <- function(string) {
 
 =======
 - COOL! Как эффективно применить `ggfx` [Better data communication with {ggplot2}, part 2](https://giulia-ruggeri.medium.com/better-data-communication-with-ggplot2-part-2-615a5180ccb)
+- [Introducing {ggflowchart}](https://nrennie.rbind.io/blog/introducing-ggflowchart/)
 
 # upset graph
 - COOL! [UpSet Homepage](https://upset.app/). Visualizing Intersecting Sets
@@ -511,6 +512,10 @@ An rstudio::conf(2022) Workshop by Cédric Scherer
 ## DT DataTable
 - [changing font size in R DataTables (DT)](https://stackoverflow.com/questions/44101055/changing-font-size-in-r-datatables-dt)
 - [Change Text Size in DataTable](https://datatables.net/forums/discussion/66743/change-text-size-in-datatable)
+- [R shiny datatable with HTML Tags](https://stackoverflow.com/questions/53503833/r-shiny-datatable-with-html-tags)
+- [Embed HTML #45 {Closed}](https://github.com/rstudio/DT/issues/45)
+- [DT table not rendering when using HTML tag](https://community.rstudio.com/t/dt-table-not-rendering-when-using-html-tag/139525/9)
+- [Datatable is not displayed in RMarkdown when using <details> #931 {Closed}](https://github.com/rstudio/DT/issues/931). Тут есть workaround.
 
 ## gt
 - [Create interactive links in gt table (in rmarkdown)](https://community.rstudio.com/t/create-interactive-links-in-gt-table-in-rmarkdown/70266/2)

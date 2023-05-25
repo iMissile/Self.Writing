@@ -274,6 +274,9 @@ class tracesSchema(pt.Model):
 - [How to use R and Python in the same notebook?](https://www.askpython.com/python/examples/use-r-and-python-in-the-same-notebook)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 
+# 25.05.2023
+- [Faiss](https://faiss.ai/). Faiss is a library for efficient similarity search and clustering of dense vectors.
+
 # 17.05.2023
 - COOL! [All Pandas json_normalize() you should know for flattening JSON](https://towardsdatascience.com/all-pandas-json-normalize-you-should-know-for-flattening-json-13eae1dfb7dd). Some of the most useful Pandas tricks
 - [easy-tictoc 0.0.1](https://pypi.org/project/easy-tictoc/)

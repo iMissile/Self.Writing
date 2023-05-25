@@ -12,6 +12,11 @@
 - Артефакты babel. 'miktex "\bbl@beforestart"'.
 - [ShareLaTeX XeLaTeX user guide](https://ru.sharelatex.com/learn/latex/XeLaTeX)
 - [Multilingual typesetting on Overleaf using polyglossia and fontspec](https://ru.overleaf.com/learn/latex/Multilingual_typesetting_on_Overleaf_using_polyglossia_and_fontspec)
+- [Overleaf's polyglossia package with Cyrillic fonts](https://tex.stackexchange.com/questions/539296/overleafs-polyglossia-package-with-cyrillic-fonts)
+```
+Package polyglossia Error: The current latin font LiberationMono(0) does not contain the "Cyrillic" script!
+(polyglossia)                Please define \cyrillicfont with \newfontfamily command.
+```
 - [Overleaf: What OTF/TTF fonts are supported via fontspec?](https://www.overleaf.com/help/193-what-otf-slash-ttf-fonts-are-supported-via-fontspec#.W6EG_Gj7SUk)
 - [Overleaf: Gallery — Fonts](https://www.overleaf.com/gallery/tagged/fonts#.W6EG-mj7SUk)
 - [Overleaf: I have a custom font I'd like to load to my document. How can I do this?](https://www.overleaf.com/help/73-i-have-a-custom-font-id-like-to-load-to-my-document-how-can-i-do-this#.W6EHzGj7SUk)
@@ -261,3 +266,9 @@ New documents should use the regular `caption' package v3.x instead.`
 
 ## Управление с проектами
 - [Management in a large project](https://ru.overleaf.com/learn/latex/Management_in_a_large_project)
+
+## Пакеты
+- [How to set fontsize of 14pt in article class {duplicate}](https://tex.stackexchange.com/questions/628936/how-to-set-fontsize-of-14pt-in-article-class)
+	- Opt 1: `\documentclass[14pt]{extarticle}`
+	- Opt 2: With the fontsize package you can set arbitrary sizes and adjust the line spacing accordingly. For example, you can set `\normalisze` to `14.4pt` with:
+`\usepackage[fontsize=14.4]{fontsize}`
