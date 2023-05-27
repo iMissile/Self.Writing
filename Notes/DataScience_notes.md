@@ -1477,11 +1477,12 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [fast large matrix multiplication in R](https://stackoverflow.com/questions/35923787/fast-large-matrix-multiplication-in-r)
 - [How does BLAS get such extreme performance?](https://stackoverflow.com/questions/1303182/how-does-blas-get-such-extreme-performance)
 - [BLAS (Basic Linear Algebra Subprograms)](https://netlib.org/blas/)
+- e-book. [The Science of Programming Matrix Computations {TSoPMC}](https://www.cs.utexas.edu/users/rvdg/tmp/TSoPMC.pdf)
 
 - Matrix Performance
 	- [A.3 Linear algebra](https://cran.r-project.org/doc/manuals/r-release/R-admin.html#BLAS)
 	- [Benchmarking Single- and Multi-Core BLAS Implementations and GPUs for use with R](https://cran.r-project.org/web/packages/gcbd/vignettes/gcbd.pdf) by Dirk Eddelbuettel
-	- COOL! [Short tutorial for setting up OpenBLAS in R for Windows](https://github.com/david-cortes/R-openblas-in-windows)
+	- COOL! Рабочий вариант! [Short tutorial for setting up OpenBLAS in R for Windows](https://github.com/david-cortes/R-openblas-in-windows)
 	- [Faster BLAS in R](https://brettklamer.com/diversions/statistical/faster-blas-in-r/) by Brett Klamer
 	- [Assessing R performance with optimized BLAS across three operating systems](https://thomasmcrow.com/blog/2021-08-optimized-blas-in-r/)
 	- [Improving R Perfomance by installing optimized BLAS/LAPACK libraries](https://csantill.github.io/RPerformanceWBLAS/)
@@ -1504,6 +1505,7 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [(Not Just) Data Version Control](https://dvc.org/)
 - [Dolt is a SQL database you can fork, clone, branch, merge, push and pull just like a Git repository.](https://www.dolthub.com/)
 - [lakeFS: Git for Data](https://lakefs.io/).
+- [ChatGPT Gets Its “Wolfram Superpowers”!](https://writings.stephenwolfram.com/2023/03/chatgpt-gets-its-wolfram-superpowers/)
 
 ## R
 - COOL! [ellipsis ... as function in substitute?](https://stackoverflow.com/questions/70602963/ellipsis-as-function-in-substitute)

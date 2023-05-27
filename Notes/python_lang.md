@@ -274,8 +274,15 @@ class tracesSchema(pt.Model):
 - [How to use R and Python in the same notebook?](https://www.askpython.com/python/examples/use-r-and-python-in-the-same-notebook)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 
+# 29.05.2023
+- [Why Shiny for Python?](https://posit.co/blog/why-shiny-for-python)
+Streamlit’s architecture allows you to write apps the same way you write plain Python scripts. To unlock this, Streamlit apps have a unique data flow: any time something must be updated on the screen, Streamlit reruns your entire Python script from top to bottom.
+– Streamlit documentation, Main concepts
+
 # 25.05.2023
 - [Faiss](https://faiss.ai/). Faiss is a library for efficient similarity search and clustering of dense vectors.
+- [How to Get the length of a Queue in Python](https://bobbyhadz.com/blog/python-get-length-of-queue)
+- [Queue in Python](https://www.geeksforgeeks.org/queue-in-python/)
 
 # 17.05.2023
 - COOL! [All Pandas json_normalize() you should know for flattening JSON](https://towardsdatascience.com/all-pandas-json-normalize-you-should-know-for-flattening-json-13eae1dfb7dd). Some of the most useful Pandas tricks
