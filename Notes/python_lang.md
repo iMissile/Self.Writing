@@ -274,6 +274,12 @@ class tracesSchema(pt.Model):
 - [How to use R and Python in the same notebook?](https://www.askpython.com/python/examples/use-r-and-python-in-the-same-notebook)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 
+
+# 30.05.2023
+- Guido van Rossum [Why Python uses 0-based indexing](http://python-history.blogspot.com/2013/10/why-python-uses-0-based-indexing.html)
+- [Why 1-based indexing is *OK*.](https://craftofcoding.wordpress.com/2017/03/12/why-1-based-indexing-is-ok/)
+- Edsger Wybe Dijkstra [Why numbering should start at zero](https://www.cs.utexas.edu/users/EWD/ewd08xx/EWD831.PDF)
+
 # 29.05.2023
 - [Why Shiny for Python?](https://posit.co/blog/why-shiny-for-python)
 Streamlit’s architecture allows you to write apps the same way you write plain Python scripts. To unlock this, Streamlit apps have a unique data flow: any time something must be updated on the screen, Streamlit reruns your entire Python script from top to bottom.
@@ -310,11 +316,6 @@ projects](https://stackoverflow.com/questions/70508775/error-could-not-build-whe
 - COOL! [Алгоритм Евклида - нахождение наибольшего общего делителя](https://younglinux.info/algorithm/euclidean)
 - [Python Slice Assignment](https://blog.finxter.com/python-slice-assignment/)
 - [Checking fuzzy/approximate substring existing in a longer string, in Python?](https://stackoverflow.com/questions/17740833/checking-fuzzy-approximate-substring-existing-in-a-longer-string-in-python)
-
-## Quarto
-- Quarto. [R htmltools browsable HTML does not view without explicit print()](https://stackoverflow.com/questions/75353004/r-htmltools-browsable-html-does-not-view-without-explicit-print)
-- [How to add HTML code to a Quarto website?](https://stackoverflow.com/questions/74445505/how-to-add-html-code-to-a-quarto-website)
-`{=html}`
 
 # 29.03.2023
 - COOL! [Tutorial: Why Functions Modify Lists and Dictionaries in Python](https://www.dataquest.io/blog/tutorial-functions-modify-lists-dictionaries-python/)

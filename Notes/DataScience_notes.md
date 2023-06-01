@@ -1469,9 +1469,25 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 31.05.2023
+## R
+- COOL! Article [Evaluating a logistic regression based prediction tool in R](https://darrendahly.github.io/post/homr/)
+- [markovmix](https://github.com/zhuxr11/markovmix). A package that fits mixture of Markov chains and predicts new sequences with them.
+- R Special Functions of Mathematics (base). Тут и биномиальная функция живет. `choose`
+- [An R Package for Fast Sampling from von Mises Fisher Distribution](https://cran.microsoft.com/web/packages/vMF/vignettes/vMF.pdf)
+- COOL! Benchmarks [Which rows/columns are duplicates of which others in R matrices?](https://stackoverflow.com/questions/70557817/which-rows-columns-are-duplicates-of-which-others-in-r-matrices). `rank/frank`
+
+## Dev
+- [OpenTelemetry](https://opentelemetry.io/) is a collection of tools, APIs, and SDKs. Use it to instrument, generate, collect, and export telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior.
+
 # 25.05.2023
+## DS
 - А.П. Репьев [Убожество SWOT](https://tushavin.ru/swot-analiz/)
 - [Announcing DuckDB 0.8.0](https://duckdb.org/2023/05/17/announcing-duckdb-080.html). pivot/unpivot, asof join
+
+## DS, LLM
+- [Как работают языковые модели](https://sysblok.ru/knowhow/kak-rabotajut-jazykovye-modeli/)
+- [Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)
 
 ## Matrix
 - [fast large matrix multiplication in R](https://stackoverflow.com/questions/35923787/fast-large-matrix-multiplication-in-r)
@@ -1486,7 +1502,7 @@ This is where we will store all of the materials and links for rstudio::conf 202
 	- [Faster BLAS in R](https://brettklamer.com/diversions/statistical/faster-blas-in-r/) by Brett Klamer
 	- [Assessing R performance with optimized BLAS across three operating systems](https://thomasmcrow.com/blog/2021-08-optimized-blas-in-r/)
 	- [Improving R Perfomance by installing optimized BLAS/LAPACK libraries](https://csantill.github.io/RPerformanceWBLAS/)
-
+- [GPUmatrix: Basic Linear Algebra with GPU](https://cran.r-project.org/web/packages/GPUmatrix/index.html)
 
 
 # 18.05.2023
@@ -2153,6 +2169,11 @@ In quarto, you can set the custom ragg_png device (defined above) in the YAML, l
 семейство шрифтов не найдено в базе данных шрифтов Windows`
 	- [Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font width unknown for character 0x20](https://stackoverflow.com/questions/62067139/warning-in-grid-callc-textbounds-as-graphicsannotxlabel-xx-xy-font-w)
 - [A beginner's guide to using Observable JavaScript, R, and Python with Quarto](https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html)
+- [Slidecraft 101: Colors and Fonts](https://www.emilhvitfeldt.com/post/slidecraft-colors-fonts/)
+- [Slidecraft 101: Code and Output](https://www.emilhvitfeldt.com/post/slidecraft-code-output/)
+	- COOL! [Use fonts with ligatures](https://www.emilhvitfeldt.com/post/slidecraft-code-output/#use-fonts-with-ligatures)
+- COOL! [reveal-fonts-reprex](https://github.com/gadenbuie/reveal-fonts-reprex)
+- [Quarto Sass Variables](https://quarto.org/docs/presentations/revealjs/themes.html#sass-variables)
 
 ## Quarto & blogdown
 - [Using Quarto in Blogdown](https://stackoverflow.com/questions/72072249/using-quarto-in-blogdown). Migrating from Rmd to Qmd has no really advantage as you can't really use Quarto feature in a Hugo website, or at least it will be limited
@@ -2175,6 +2196,19 @@ h1 {
   color: blue;
 }
 ```
+## Quarto & Reveal.js
+- [Advanced Reveal](https://quarto.org/docs/presentations/revealjs/advanced.html)
+- [Repeat title slide at end of reveal.js presentation](https://stackoverflow.com/questions/76215257/repeat-title-slide-at-end-of-reveal-js-presentation)
+- [Tunable title page for slides {#2948}](https://github.com/quarto-dev/quarto-cli/discussions/2948)
+- [Presentations](https://quarto.org/docs/presentations/)
+
+## Quarto tweaks
+- Quarto. [R htmltools browsable HTML does not view without explicit print()](https://stackoverflow.com/questions/75353004/r-htmltools-browsable-html-does-not-view-without-explicit-print)
+- [How to add HTML code to a Quarto website?](https://stackoverflow.com/questions/74445505/how-to-add-html-code-to-a-quarto-website)
+`{=html}`
+- [How to change code block height and width in quarto presentation](https://github.com/quarto-dev/quarto-cli/discussions/2073)
+- [Quarto r set max height for text output or figures](https://stackoverflow.com/questions/75204803/quarto-r-set-max-height-for-text-output-or-figures)
+
 
 ## Quarto & observable
 - [Observable JS](https://quarto.org/docs/interactive/ojs/)
