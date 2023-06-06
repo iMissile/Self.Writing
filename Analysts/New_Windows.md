@@ -811,7 +811,7 @@ Now the marks are invisible on normal work, but visible on selection only.
 	- [Создание подписи в Outlook и ее добавление в сообщения](https://support.microsoft.com/ru-ru/office/%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%B8-%D0%B2-outlook-%D0%B8-%D0%B5%D0%B5-%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2). Откройте новое сообщение. Меню Сообщение, выберите пункт Подписи> подписи.
 	- [Импорт и экспорт контактов из Outlook](https://office-apps.net/faq-office/249-import-i-eksport-kontaktov-v-outlook.html). Проводится через Экспорт/Импорт.
 - Ставим FineReader. У меня пашет 11.0.101.583 Corporate Edition (CE)
-- [Удаленное управление Kaspersky Free](https://forum.kasperskyclub.ru/topic/80660-udalennoe-upravlenie-kaspersky-free/). 
+- [Удаленное управление Kaspersky Free](https://forum.kasperskyclub.ru/topic/80660-udalennoe-upravlenie-kaspersky-free/). Важно для возможности настройки с помощью AnyDesk и др.
 Разрешение на удаленное управление антивирусом включила (галочку поставили) - квадратик стал зеленый ... )))
 добавить программу в список Доверенных программ https://support.kaspersky.com/KFA/21.3/ru-RU/201385.htm и включить исключение Разрешить взаимодействие с интерфейсом Kaspersky Free. 
 

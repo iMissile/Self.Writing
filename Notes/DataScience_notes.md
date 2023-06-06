@@ -231,7 +231,11 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Social Data Science with R](https://www.sds.pub/index.html) by Daniel Anderson, Brendan Cullen, Ouafaa Hmaddi, 2020-12-24
 - [An Introduction to R](https://intro2r.com/) by Alex Douglas, Deon Roos, Francesca Mancini, Ana Couto & David Lusseau, April 8, 2022
 - [Rcpp for everyone](https://teuder.github.io/rcpp4everyone_en/) by Masaki E. Tsuda, 2020-10-20
+
+## e-books ML
 - [Deep Learning and Scientific Computing with R torch](https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/) by Sigrid Keydana
+- [Dive into Deep Learning](https://d2l.ai/index.html). Interactive deep learning book with code, math, and discussions. Implemented with PyTorch, NumPy/MXNet, JAX, and TensorFlow
+Adopted at 400 universities from 60 countries
 
 
 # Articles
@@ -1469,6 +1473,13 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 07.06.2023
+- COOL [Upcoming changes to popular R packages for spatial data: what you need to do](https://geocompx.org/post/2023/rgdal-retirement/). С CRAN уедут `rgdal`, `rgeos`, `maptools`
+- Slides. [What’s new in the tidyverse in 2023?](https://mine.quarto.pub/tidyverse-2023/), 2023-05-30
+- COOL! [Google Fonts helper](https://gwfh.mranftl.com/fonts)
+- [fastqq](https://github.com/gumeo/fastqq) is intended for creating quantile-quantile plots.
+
+
 # 31.05.2023
 ## R
 - COOL! Article [Evaluating a logistic regression based prediction tool in R](https://darrendahly.github.io/post/homr/)
@@ -1476,6 +1487,7 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - R Special Functions of Mathematics (base). Тут и биномиальная функция живет. `choose`
 - [An R Package for Fast Sampling from von Mises Fisher Distribution](https://cran.microsoft.com/web/packages/vMF/vignettes/vMF.pdf)
 - COOL! Benchmarks [Which rows/columns are duplicates of which others in R matrices?](https://stackoverflow.com/questions/70557817/which-rows-columns-are-duplicates-of-which-others-in-r-matrices). `rank/frank`
+- Детальное объяснение опции `frank`: [frank dense option needs to be explained more and more examples. #2226 {Closed}](https://github.com/Rdatatable/data.table/issues/2226)
 
 ## Dev
 - [OpenTelemetry](https://opentelemetry.io/) is a collection of tools, APIs, and SDKs. Use it to instrument, generate, collect, and export telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior.
