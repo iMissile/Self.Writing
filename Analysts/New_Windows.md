@@ -86,6 +86,7 @@ copy file1.txt^
 - [CrystalDiskMark](https://crystalmark.info/en/software/crystaldiskmark/)
 - [Samsung SSD 850 EVO 250GB – Problems And Their Solutions](http://webfrst.com/samsung-ssd-850-evo-250gb-problems-solutions/)
 - [Программа SSD Ready](https://www.ssdready.com/ssdready-ru/). Узнайте как долго у вас будет работать SSD диск
+- [Как создать RAM диск в Windows 11 и Windows 10](https://remontka.pro/create-ram-disk-windows/)
 - [RAMDisk, или что делать если у вас в компьютере 128 гигабайт оперативной памяти](https://geektimes.ru/company/kingston_technology/blog/277610/)
 - RAMDisks:
 	- [SoftPerfect RAM Disk](http://forum.ru-board.com/topic.cgi?forum=35&topic=47817&start=40#lt)

@@ -234,8 +234,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 
 ## e-books ML
 - [Deep Learning and Scientific Computing with R torch](https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/) by Sigrid Keydana
-- [Dive into Deep Learning](https://d2l.ai/index.html). Interactive deep learning book with code, math, and discussions. Implemented with PyTorch, NumPy/MXNet, JAX, and TensorFlow
-Adopted at 400 universities from 60 countries
+- [Dive into Deep Learning](https://d2l.ai/index.html). Interactive deep learning book with code, math, and discussions. Implemented with PyTorch, NumPy/MXNet, JAX, and TensorFlow. Adopted at 400 universities from 60 countries
 
 
 # Articles
@@ -1488,6 +1487,16 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [An R Package for Fast Sampling from von Mises Fisher Distribution](https://cran.microsoft.com/web/packages/vMF/vignettes/vMF.pdf)
 - COOL! Benchmarks [Which rows/columns are duplicates of which others in R matrices?](https://stackoverflow.com/questions/70557817/which-rows-columns-are-duplicates-of-which-others-in-r-matrices). `rank/frank`
 - Детальное объяснение опции `frank`: [frank dense option needs to be explained more and more examples. #2226 {Closed}](https://github.com/Rdatatable/data.table/issues/2226)
+- [Speed Trick: `unlist(…, use.names=FALSE)` is Heaps Faster!](https://r-craft.org/r-news/speed-trick-unlist-use-namesfalse-is-heaps-faster/)
+- COOL! [challenge: optimize unlisting {easy}](https://stackoverflow.com/questions/4012772/challenge-optimize-unlisting-easy)
+```
+microbenchmark::microbenchmark(
+  unlist = unlist(l, FALSE, FALSE),
+  c = c(l, recursive = TRUE, use.names = FALSE)
+)
+```
+- COOL! Benchmarks [Counting the number of elements with the values of x in a vector](https://stackoverflow.com/questions/1923273/counting-the-number-of-elements-with-the-values-of-x-in-a-vector). Любопытная конструкция `vctrs::vec_count(grp)`.
+- [Introducing 'purler' - fast run-length encoding with data.frame output](https://coolbutuseless.github.io/2020/10/14/introducing-purler-fast-run-length-encoding-with-data.frame-output/)
 
 ## Dev
 - [OpenTelemetry](https://opentelemetry.io/) is a collection of tools, APIs, and SDKs. Use it to instrument, generate, collect, and export telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior.
@@ -1496,6 +1505,8 @@ This is where we will store all of the materials and links for rstudio::conf 202
 ## DS
 - А.П. Репьев [Убожество SWOT](https://tushavin.ru/swot-analiz/)
 - [Announcing DuckDB 0.8.0](https://duckdb.org/2023/05/17/announcing-duckdb-080.html). pivot/unpivot, asof join
+- [mlverse](https://github.com/mlverse). Open source libraries to scale Data Science
+- Кто будет разбираться с `torch` и `luz`, обязательно чекните статью https://mlverse.github.io/luz/articles/custom-loop.html и хелп ?ctx, много углов можно срезать, про которые в https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/ не сказано
 
 ## DS, LLM
 - [Как работают языковые модели](https://sysblok.ru/knowhow/kak-rabotajut-jazykovye-modeli/)
@@ -4183,7 +4194,7 @@ HedgeDoc (formerly known as CodiMD) is an open-source collaborative markdown edi
 	- [Tracking Tidymodels with MLflow](https://mdneuzerling.com/post/tracking-tidymodels-with-mlflow/)
 - [MLflow - A platform for the machine learning lifecycle](https://mlflow.org/). An open source platform for the end-to-end machine learning lifecycle
 - [mlflow/mlflow](https://github.com/mlflow/mlflow). Open source platform for the machine learning lifecycle - mlflow/mlflow
-- [Metaflow: фреймворк для управления data science проектами от Netflix](https://metaflow.org/)
+- COOL! [Metaflow: фреймворк для управления data science проектами от Netflix](https://metaflow.org/). Data Pipeline/Workflow
 
 
 
