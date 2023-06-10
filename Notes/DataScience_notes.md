@@ -1475,6 +1475,9 @@ This is where we will store all of the materials and links for rstudio::conf 202
 # 07.06.2023
 - COOL [Upcoming changes to popular R packages for spatial data: what you need to do](https://geocompx.org/post/2023/rgdal-retirement/). С CRAN уедут `rgdal`, `rgeos`, `maptools`
 - Slides. [What’s new in the tidyverse in 2023?](https://mine.quarto.pub/tidyverse-2023/), 2023-05-30
+- Slides. [Seven essential Excel data visualization tips. In R!](https://ivelasq.quarto.pub/excel-data-viz-tips-in-r)
+
+
 - COOL! [Google Fonts helper](https://gwfh.mranftl.com/fonts)
 - [fastqq](https://github.com/gumeo/fastqq) is intended for creating quantile-quantile plots.
 
@@ -1537,14 +1540,13 @@ microbenchmark::microbenchmark(
 	- [12.4.2.2 Fixed Effects Estimator](https://bookdown.org/mike/data_analysis/data.html#fixed-effects-estimator)
 - [Колмогоровская сложность](https://ru.m.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BB%D0%BC%D0%BE%D0%B3%D0%BE%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C)
 
-- COOL! Lesson [Introduction to Reproducible Publications with RStudio. Reproducible & Efficient Methods of Using Code Chunks](https://ucsbcarpentry.github.io/Reproducible-Publications-with-RStudio-Quarto/08-code-chunks/index.html)
-
 # 15.05.2023
 ## DS
 - [(Not Just) Data Version Control](https://dvc.org/)
 - [Dolt is a SQL database you can fork, clone, branch, merge, push and pull just like a Git repository.](https://www.dolthub.com/)
 - [lakeFS: Git for Data](https://lakefs.io/).
 - [ChatGPT Gets Its “Wolfram Superpowers”!](https://writings.stephenwolfram.com/2023/03/chatgpt-gets-its-wolfram-superpowers/)
+- Юрий Кацер. [О проблемах в промышленных данных](https://vc.ru/u/1167333-yuriy-katser/413163-o-problemah-v-promyshlennyh-dannyh)
 
 ## R
 - COOL! [ellipsis ... as function in substitute?](https://stackoverflow.com/questions/70602963/ellipsis-as-function-in-substitute)
@@ -1638,8 +1640,11 @@ Simultaneous tests and confidence intervals for general linear hypotheses in par
 # 25.04.2023
 ## Tools
 - [MinIO](https://min.io/) is a high-performance, S3 compatible object store. It is built for large scale AI/ML, data lake and database workloads.
-- [MinIo для самых маленьких](https://habr.com/ru/companies/veeam/articles/517392/)
+- [Simple UI for MinIO Object Storage ](https://github.com/minio/console)
+- [MinIO для самых маленьких](https://habr.com/ru/companies/veeam/articles/517392/)
+- [Play MinIO](https://play.min.io:9443/login)
 - [2023-04-14, Tom Ebergen, The Return of the H2O.ai Database-like Ops Benchmark](https://duckdb.org/2023/04/14/h2oai.html)
+
 
 ## Remark.js
 - Классный пример слайдов и возможностей. [WELCOME TO SLIDES. Academic](https://prital.netlify.app/slides/example/)
@@ -2125,6 +2130,11 @@ The proper solution is to set environment variable `R_LIBS_USER` to the value of
 - [Построение и отбор признаков. Часть 2: feature selection](https://proglib.io/p/postroenie-i-otbor-priznakov-chast-2-feature-selection-2021-09-25)
 
 # 29.08.2022
+## Quarto slides
+- COOL! Lesson [Introduction to Reproducible Publications with RStudio. Reproducible & Efficient Methods of Using Code Chunks](https://ucsbcarpentry.github.io/Reproducible-Publications-with-RStudio-Quarto/08-code-chunks/index.html)
+- Slides [Intro to Quarto](https://github.com/ivelasq/2022-10-27_intro-to-quarto), 2022-10-27 R-Ladies St. Louis Presentation
+- COOL! Meetup [Building a blog with Quarto. RStudio Enterprise Community Meetup](https://github.com/ivelasq/2022-08-30_building-a-blog-with-quarto) Presented by Isabella Velásquez
+
 ## Quarto
 - [rstudio::conf 2022 Workshop](https://rstudio-conf-2022.github.io/get-started-quarto/) Getting Started with Quarto by Tom Mock
 - [Quarto Troubleshooting](https://quarto.org/docs/troubleshooting/). Если нужно из не-интерактивной сессии трейс получить и всё такое.
@@ -3903,6 +3913,9 @@ A quick introduction to 10 basic graph algorithms with examples and visualisatio
 Chain monadic sequences into stateful, branching pipelines. As nodes in the pipeline are run, they are merged into a graph of all past operations. The resulting structure can be computed on to access not only the final results, but also node documentation, intermediate data, performance stats, and any raised messages, warnings or errors. rmonad intercepts all exceptions, which allows for pure error handling.
 
 # 08.07.2021
+## FFT
+- COOL! [Signal Processing: Why do we need taper in FFT](http://qingkaikong.blogspot.com/2016/10/signal-processing-why-do-we-need-taper.html). Обработка сигналов: Зачем нам нужно использовать окно в преобразовании Фурье?
+- [Introduction to Fourier analysis of time series](https://fischerbach.medium.com/introduction-to-fourier-analysis-of-time-series-42151703524a)
 
 # 05.07.2021
 ## R Sparse Matrix

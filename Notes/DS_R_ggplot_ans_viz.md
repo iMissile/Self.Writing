@@ -605,9 +605,7 @@ If you don't want Quarto or anything actually to take over the styling, then you
 - COOL! [outlier 2022](https://observablehq.com/collection/@observablehq/outlier-2022)
 - Painting with Data: D3.js [Interacting with Data](https://observablehq.com/@observablehq/pwd3-interacting-with-data)
 - COOL! [Interactive filtering](https://observablehq.com/@observablehq/arsc-part-2-interactive-filtering). Building an advanced report from simple components.
-- [Introduction to inputs](https://observablehq.com/@observablehq/inputs?collection=@observablehq/observable-libraries-for-visualization)
 In Observable, though, cells run in the order they’re needed—what’s called a reactive dataflow.
-	- [OBSERVABLE INPUTS › TABLE · API](https://observablehq.com/@observablehq/input-table)
 	- [Observable JavaScript](https://observablehq.com/@observablehq/observable-javascript). JavaScript on Observable is almost — but not entirely — vanilla
 	- [How Observable Runs](https://observablehq.com/@observablehq/how-observable-runs)
 	- [Reactive Dataflow](https://observablehq.com/@observablehq/reactive-dataflow)
@@ -616,11 +614,27 @@ In Observable, though, cells run in the order they’re needed—what’s called
 - [Recreating an Altman-Gardner Plot in Javascript based on the dabest package in R](https://observablehq.com/@lorenasandoval88/altman-gardner-plot)
 - [Plot Exploration: Penguins](https://observablehq.com/@observablehq/plot-exploration-penguins)
 - Пояснения по поводу `view` операторов, в частности, `viewof`: [Introduction to views](https://observablehq.com/@observablehq/views)
+
+## Избранное из JavaScript
 - [Дока/JavaScript/.filter()](https://doka.guide/js/array-filter/)
-- Arquero
-	- [Wrangling data in JavaScript with Arquero: a primer for R users](https://observablehq.com/@observablehq/data-wrangling-with-arquero-from-r)
-	- [Introducing Arquero](https://observablehq.com/@uwdata/introducing-arquero)
-	- [Arquero API Reference](https://uwdata.github.io/arquero/api/table.html)
+- [Arrow functions, the basics](https://javascript.info/arrow-functions-basics)
+- [Стрелочные функции, основы](https://learn.javascript.ru/arrow-functions-basics)
+- [Arrow function expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
+Тут есть про редуцированную форму `param => expression`
+
+## Inputs
+- [Introduction to inputs](https://observablehq.com/@observablehq/inputs?collection=@observablehq/observable-libraries-for-visualization)
+- [Input: Table](https://observablehq.com/@observablehq/input-table)
+- [OBSERVABLE INPUTS › TABLE · API](https://github.com/observablehq/inputs/blob/main/README.md#table)
+
+
+## Arquero
+- [Wrangling data in JavaScript with Arquero: a primer for R users](https://observablehq.com/@observablehq/data-wrangling-with-arquero-from-r)
+- [Introducing Arquero](https://observablehq.com/@uwdata/introducing-arquero)
+- [Arquero Cookbook](https://observablehq.com/@uwdata/arquero-cookbook)
+- [Arquero API Reference](https://uwdata.github.io/arquero/api/table.html)
+- Keep in mind that the `view()` method is not part of the main Arquero repository, but it is defined directly in Observable (github.com). This means that any future updates to the view() method might not be reflected in the main Arquero repository.
+- [Table view() with sortable columns and lazy browsing #89 {Closed}](https://github.com/uwdata/arquero/issues/89)
 
 
 ## ojs_define
