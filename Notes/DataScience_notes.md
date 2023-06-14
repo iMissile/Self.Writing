@@ -1472,6 +1472,18 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 16.06.2023
+## R
+- [How to create a reprex containing Python code from R/RStudio?](https://community.rstudio.com/t/how-to-create-a-reprex-containing-python-code-from-r-rstudio/95348)
+- [Creating a Reproducible Example](https://www.jumpingrivers.com/blog/creating-reproducible-example-r/). Soon after posting we received a response from one of the {reticulate} developers. Their response revealed that matplotlib was nothing but an innocent bystander in our issue, and that the real culprits were the incompatible BLAS (Basic Linear Algebra Subprograms) libraries being used by R and numpy!
+- COOL! [Charting Our Adventures: How I Created a Personalized Map with R, JavaScript, and more](https://www.visualcinnamon.com/2023/04/personal-map-norway-with-javascript/)
+- [Infinite generators in R](https://cartesianfaith.com/2013/01/05/infinite-generators-in-r/)
+- [`coro`](https://coro.r-lib.org/). `coro` implements coroutines for `R`, i.e. functions that can be suspended and resumed later on. 
+
+
+## Shiny
+- [Towards easy, delightful, and customizable dashboards in Shiny for R with {bslib}](https://shiny.posit.co/blog/posts/bslib-dashboards/)
+
 # 07.06.2023
 - COOL [Upcoming changes to popular R packages for spatial data: what you need to do](https://geocompx.org/post/2023/rgdal-retirement/). С CRAN уедут `rgdal`, `rgeos`, `maptools`
 - Slides. [What’s new in the tidyverse in 2023?](https://mine.quarto.pub/tidyverse-2023/), 2023-05-30
@@ -1514,6 +1526,7 @@ microbenchmark::microbenchmark(
 ## DS, LLM
 - [Как работают языковые модели](https://sysblok.ru/knowhow/kak-rabotajut-jazykovye-modeli/)
 - [Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)
+- [LLaMA in R with Keras and TensorFlow](https://blogs.rstudio.com/ai/posts/2023-05-25-llama-tensorflow-keras)
 
 ## Matrix
 - [fast large matrix multiplication in R](https://stackoverflow.com/questions/35923787/fast-large-matrix-multiplication-in-r)
