@@ -273,7 +273,11 @@ class tracesSchema(pt.Model):
 # Python & R
 - [How to use R and Python in the same notebook?](https://www.askpython.com/python/examples/use-r-and-python-in-the-same-notebook)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
+- [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
 
+# 17.06.2023
+- Tools. [Evidently](https://github.com/evidentlyai/evidently) is an open-source Python library for data scientists and ML engineers. It helps evaluate, test, and monitor the performance of ML models from validation to production. It works with tabular, text data and embeddings.
+- [ML system design: 200 case studies to learn from](https://www.evidentlyai.com/ml-system-design)
 
 # 30.05.2023
 - Guido van Rossum [Why Python uses 0-based indexing](http://python-history.blogspot.com/2013/10/why-python-uses-0-based-indexing.html)

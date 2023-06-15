@@ -1480,6 +1480,12 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Infinite generators in R](https://cartesianfaith.com/2013/01/05/infinite-generators-in-r/)
 - [`coro`](https://coro.r-lib.org/). `coro` implements coroutines for `R`, i.e. functions that can be suspended and resumed later on. 
 
+## Streamlit
+- [Why Shiny for Python?](https://posit.co/blog/why-shiny-for-python)
+Streamlit’s architecture allows you to write apps the same way you write plain Python scripts. To unlock this, Streamlit apps have a unique data flow: any time something must be updated on the screen, Streamlit reruns your entire Python script from top to bottom.
+- COOL! [Streamlit vs. Dash vs. Shiny vs. Voila vs. Flask vs. Jupyter](https://www.datarevenue.com/en-blog/data-dashboarding-streamlit-vs-dash-vs-shiny-vs-voila). Comparing data dashboarding tools and frameworks
+- COOL! [Streamlit](https://www.streamlit.io/). The fastest way to build data apps Streamlit’s open-source app framework is the easiest way for data scientists and machine learning engineers to create beautiful, performant apps in only a few hours!  All in pure Python. All for free.
+- [How to master Streamlit for data science](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/). The essential Streamlit for all your data science needs
 
 ## Shiny
 - [Towards easy, delightful, and customizable dashboards in Shiny for R with {bslib}](https://shiny.posit.co/blog/posts/bslib-dashboards/)
@@ -2763,7 +2769,6 @@ Can you measure the magnetic interactions between a pair of atoms? 3rd solution 
 - [Text Mining. Algorithm for Data Preparation and Model Building](https://developers.google.com/machine-learning/guides/text-classification/step-2-5)
 - [Data Cleaning in R: 2 R Packages to Clean and Validate Datasets](https://appsilon.com/data-cleaning-in-r/)
 - [easystats: Quickly investigate model performance](https://www.business-science.io/r/2021/07/13/easystats-performance-check-model.html)
-- [How to master Streamlit for data science](https://blog.streamlit.io/how-to-master-streamlit-for-data-science/). The essential Streamlit for all your data science needs
 - [What is Deep Learning? Simple Explained](https://glweb.eu/blog/digital-transformation/201-what-is-deep-learning)
 - [Event-Driven Scalability in Data Processing Pipeline](	https://towardsdatascience.com/event-driven-scalability-in-data-processing-pipeline-aa4417d7950a)
 - [Git for Professionals – Free Version Control Course](https://www.freecodecamp.org/news/git-for-professionals/)
@@ -5452,8 +5457,6 @@ Predicted Class
 
 # 14.10.2020
 ## R
-- COOL! [Streamlit vs. Dash vs. Shiny vs. Voila vs. Flask vs. Jupyter](https://www.datarevenue.com/en-blog/data-dashboarding-streamlit-vs-dash-vs-shiny-vs-voila). Comparing data dashboarding tools and frameworks
-- COOL! [Streamlit](https://www.streamlit.io/). The fastest way to build data apps Streamlit’s open-source app framework is the easiest way for data scientists and machine learning engineers to create beautiful, performant apps in only a few hours!  All in pure Python. All for free.
 - [Rhumba: a faster R distribution](https://medium.com/@mari_meir/rhumba-a-faster-r-distribution-d619fb93043a). Leveraging Mamba and conda-forge for R-package management
 - [JohnCoene/charter](https://github.com/JohnCoene/charter). Chart.js for R
 - [STACKS - TIDY MODEL STACKING](https://stacks.tidymodels.org/)
