@@ -53,7 +53,8 @@ $ pipupgrade --verbose --latest --yes
 	- Make sure your Python version is supported by the package.
 - [How to Update All of Your Python Packages With pip Using One Simple Command](https://dougie.io/answers/pip-update-all-packages/)
 `pip freeze | cut -d'=' -f1 | xargs -n1 pip install -U`
-- COOL! Еще интересное решение: `pip install changedetection.io --upgrade`
+- COOL! Еще интересное решение: `pip install changedetection.io --upgrade`.
+UPD: Похоже, что это не то. См. https://pypi.org/project/changedetection.io/, "Web Site Change Detection, Monitoring and Notification".
 - [How to find a Python package's dependencies](https://stackoverflow.com/questions/29751572/how-to-find-a-python-packages-dependencies)
 - [IPython. Interactive Computing](https://ipython.org/). Он же Jupyter.
 	- [Install](https://docs.jupyter.org/en/latest/install/notebook-classic.html) `pip3 install jupyter`
@@ -268,6 +269,9 @@ class tracesSchema(pt.Model):
 - Polars [Missing data](https://pola-rs.github.io/polars-book/user-guide/howcani/missing_data.html)
 - [Idiomatic replacement of empty string '' with pl.Null (null) in polars](https://stackoverflow.com/questions/72292048/idiomatic-replacement-of-empty-string-with-pl-null-null-in-polars)
 - [Number of unique items in a group](https://stackoverflow.com/questions/74001954/number-of-unique-items-in-a-group)
+- [How to get row_count for a group in polars?](https://stackoverflow.com/questions/70044520/how-to-get-row-count-for-a-group-in-polars) `row_count()`
+- [What is the recommended way for retrieving row numbers (index) for polars?](https://stackoverflow.com/questions/72474673/what-is-the-recommended-way-for-retrieving-row-numbers-index-for-polars) 
+Use `with_row_count():`
 
 
 # Python & R

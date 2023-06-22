@@ -1472,6 +1472,15 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 24.06.2023
+## R
+- COOL! [seasonal: R Interface to X-13-ARIMA-SEATS](https://cran.r-project.org/web/packages/seasonal/index.html) by Dirk Eddelbuettel. Там даже ссылка на web приложение
+- [RJDemetra](https://jdemetra.github.io/rjdemetra/) is an R interface to JDemetra+, the seasonal adjustment software officially recommended` to the members of the European Statistical System (ESS) and the European System of Central Banks.
+- COOL! [Debugging in RStudio. Developing code with `browser()`](https://mjfrigaard.github.io/posts/debugging/)
+
+## Process mining
+- [Nirdizati](https://github.com/nirdizati). A dashboard-based predictive process monitoring engine
+
 # 16.06.2023
 ## R
 - [How to create a reprex containing Python code from R/RStudio?](https://community.rstudio.com/t/how-to-create-a-reprex-containing-python-code-from-r-rstudio/95348)
