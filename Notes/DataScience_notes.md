@@ -1472,11 +1472,15 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# 30.06.2023
+ - [Trie](https://en.m.wikipedia.org/wiki/Trie). In computer science, a trie, also called digital tree or prefix tree,[1] is a type of k-ary search tree, a tree data structure used for locating specific keys from within a set.
+
 # 24.06.2023
 ## R
 - COOL! [seasonal: R Interface to X-13-ARIMA-SEATS](https://cran.r-project.org/web/packages/seasonal/index.html) by Dirk Eddelbuettel. Там даже ссылка на web приложение
 - [RJDemetra](https://jdemetra.github.io/rjdemetra/) is an R interface to JDemetra+, the seasonal adjustment software officially recommended` to the members of the European Statistical System (ESS) and the European System of Central Banks.
 - COOL! [Debugging in RStudio. Developing code with `browser()`](https://mjfrigaard.github.io/posts/debugging/)
+- [HDBSCAN](https://hdbscan.readthedocs.io/en/latest/how_hdbscan_works.html) is a clustering algorithm developed by Campello, Moulavi, and Sander. It extends DBSCAN by converting it into a hierarchical clustering algorithm, and then using a technique to extract a flat clustering based in the stability of clusters. 
 
 ## Process mining
 - [Nirdizati](https://github.com/nirdizati). A dashboard-based predictive process monitoring engine

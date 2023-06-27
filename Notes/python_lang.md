@@ -272,12 +272,42 @@ class tracesSchema(pt.Model):
 - [How to get row_count for a group in polars?](https://stackoverflow.com/questions/70044520/how-to-get-row-count-for-a-group-in-polars) `row_count()`
 - [What is the recommended way for retrieving row numbers (index) for polars?](https://stackoverflow.com/questions/72474673/what-is-the-recommended-way-for-retrieving-row-numbers-index-for-polars) 
 Use `with_row_count():`
+- [Dataframe conversion from pandas to polars -- difference in the final dimensions](https://stackoverflow.com/questions/75384451/dataframe-conversion-from-pandas-to-polars-difference-in-the-final-dimensions).
+The default polars wheel retrieved with `pip install polars` "only" allows for 2^32 e.g. ~4.2 billion rows.
+Do you need more than that install `pip install polars-u64-idx` and uninstall the previous installation.
+- [Convert DataFrame to Series in Polars](https://stuffbyyuki.com/convert-dataframe-to-series-in-polars/)
 
 
 # Python & R
 - [How to use R and Python in the same notebook?](https://www.askpython.com/python/examples/use-r-and-python-in-the-same-notebook)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
+
+# 28.06.2023
+- [Convert columns to string in Pandas](https://stackoverflow.com/questions/22005911/convert-columns-to-string-in-pandas). 
+`pandas >= 1.0: It's time to stop using astype(str)!`
+- [pm4py](https://pm4py.fit.fraunhofer.de/documentation)
+- [`pm4py.format_dataframe` is deprecated](https://stackoverflow.com/questions/76300000/pm4py-for-business-process-management-format-dataframe-is-deprecated)
+- [Source code for pm4py.util.pandas_utils](https://pm4py-source.readthedocs.io/en/stable/_modules/pm4py/util/pandas_utils.html)
+- Надо поставить Graphviz для pm4py [Stable Windows install packages, built with Microsoft Visual Studio 16 2019](https://graphviz.org/download/)
+- [Python Tree Implementation with BigTree](https://towardsdatascience.com/python-tree-implementation-with-bigtree-13cdabd77adc)
+Integrating trees with Python lists, dictionaries, and pandas DataFrames
+- [Big Tree Documentation](https://bigtree.readthedocs.io/en/latest/)
+
+## boosting
+- [How to Speed Up XGBoost Model Training](https://www.anyscale.com/blog/how-to-speed-up-xgboost-model-training)
+- [Do You Use XGBoost? There is a 200x Faster Way](https://towardsdatascience.com/do-you-use-xgboost-heres-how-to-make-it-200x-faster-16cb6039a16e)
+In this article, I’ll show you four ways to train XGBoost. We’ll achieve a 200x speed-up compared to XGBoost by-default settings.
+Ага, GPU
+- [How XGBoost Works](https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost-HowItWorks.html)
+- [What is the best way (cheapest / fastest option) to train an model on massive dataset (400GB+, 100m rows x 200 columns)?](https://datascience.stackexchange.com/questions/90809/what-is-the-best-way-cheapest-fastest-option-to-train-an-model-on-massive-da)
+- [Три подхода к ускорению обучения XGBoost-моделей](https://habr.com/ru/companies/wunderfund/articles/665278/)
+- [Complete guide on how to Use LightGBM in Python](https://www.analyticsvidhya.com/blog/2021/08/complete-guide-on-how-to-use-lightgbm-in-python/)
+- [CatBoost vs. LightGBM vs. XGBoost](https://towardsdatascience.com/catboost-vs-lightgbm-vs-xgboost-c80f40662924). Which is the best algorithm?
+- [LightGBM vs XGBoost](https://stephenallwright.com/lightgbm-vs-xgboost/)
+Learn the difference between two popular gradient boosting models, LightGBM and XGBoost.
+- [XGBOOST против LightGBM: Какой алгоритм выигрывает гонку !!!](https://machinelearningmastery.ru/lightgbm-vs-xgboost-which-algorithm-win-the-race-1ff7dd4917d/)
+- [Welcome to LightGBM’s documentation!](https://lightgbm.readthedocs.io/en/latest/index.html)
 
 # 17.06.2023
 - Tools. [Evidently](https://github.com/evidentlyai/evidently) is an open-source Python library for data scientists and ML engineers. It helps evaluate, test, and monitor the performance of ML models from validation to production. It works with tabular, text data and embeddings.
