@@ -1473,7 +1473,9 @@ This is where we will store all of the materials and links for rstudio::conf 202
 # http://192.168.12.31:4242/client/#/
 
 # 30.06.2023
- - [Trie](https://en.m.wikipedia.org/wiki/Trie). In computer science, a trie, also called digital tree or prefix tree,[1] is a type of k-ary search tree, a tree data structure used for locating specific keys from within a set.
+- [Trie](https://en.m.wikipedia.org/wiki/Trie). In computer science, a trie, also called digital tree or prefix tree,[1] is a type of k-ary search tree, a tree data structure used for locating specific keys from within a set.
+- COOL! [Albert Rapp Blog](https://albert-rapp.de/blog.html)
+	- [The ultimate beginner’s guide to generalized linear models (GLMs)](https://albert-rapp.de/blog.html)
 
 # 24.06.2023
 ## R
@@ -2168,6 +2170,7 @@ The proper solution is to set environment variable `R_LIBS_USER` to the value of
 - COOL! Meetup [Building a blog with Quarto. RStudio Enterprise Community Meetup](https://github.com/ivelasq/2022-08-30_building-a-blog-with-quarto) Presented by Isabella Velásquez
 
 ## Quarto
+- [awesome quarto](https://github.com/mcanouil/awesome-quarto). A curated list of Quarto talks, tools, examples & articles! Contributions welcome!
 - [rstudio::conf 2022 Workshop](https://rstudio-conf-2022.github.io/get-started-quarto/) Getting Started with Quarto by Tom Mock
 - [Quarto Troubleshooting](https://quarto.org/docs/troubleshooting/). Если нужно из не-интерактивной сессии трейс получить и всё такое.
 - [Quarto prs & issues](https://rpubs.com/rich_i/quarto-prs-issues)
@@ -2302,6 +2305,9 @@ Solved by discovering viewport units!
 Or to account for the already occupied screen real estate, in my case a 90 pixel high header:
 `widget.layout.height = "calc(100vh - 90px)"`
 - COOL! [HTML block](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/). Want to embed an iframe on a webpage or a slide deck? Plop the sharing code in a raw html block!
+
+## Quarto & Shiny
+- COOL! [Combining Shiny and Quarto. A love story.](https://rappa.shinyapps.io/shiny_quarto/)
 
 ## knitr textwidth
 - xaringan. [Font size of code {#69}](https://github.com/yihui/xaringan/issues/69)

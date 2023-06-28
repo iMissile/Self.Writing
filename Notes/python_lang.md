@@ -283,6 +283,18 @@ Do you need more than that install `pip install polars-u64-idx` and uninstall th
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
 
+# 30.06.2023
+- [Convert Jupyter Notebook to Python script in 3 ways](https://mljar.com/blog/convert-jupyter-notebook-python/)
+	1. Download as .py using GUI
+	2. Convert Jupyter Notebook to Python in the command line
+	3. Use jupytext to pair the notebook with the Python script
+	```
+# convert to Python script with light format
+jupytext --to py notebook.ipynb             
+# convert to Python script with percent format
+jupytext --to py:percent notebook.ipynb 
+```
+
 # 28.06.2023
 - [Convert columns to string in Pandas](https://stackoverflow.com/questions/22005911/convert-columns-to-string-in-pandas). 
 `pandas >= 1.0: It's time to stop using astype(str)!`
@@ -293,6 +305,7 @@ Do you need more than that install `pip install polars-u64-idx` and uninstall th
 - [Python Tree Implementation with BigTree](https://towardsdatascience.com/python-tree-implementation-with-bigtree-13cdabd77adc)
 Integrating trees with Python lists, dictionaries, and pandas DataFrames
 - [Big Tree Documentation](https://bigtree.readthedocs.io/en/latest/)
+- [Working with Categorical Data in Pandas](https://www.scaler.com/topics/pandas/categorical-data/)
 
 ## boosting
 - [How to Speed Up XGBoost Model Training](https://www.anyscale.com/blog/how-to-speed-up-xgboost-model-training)
@@ -308,6 +321,12 @@ In this article, I’ll show you four ways to train XGBoost. We’ll achieve a 2
 Learn the difference between two popular gradient boosting models, LightGBM and XGBoost.
 - [XGBOOST против LightGBM: Какой алгоритм выигрывает гонку !!!](https://machinelearningmastery.ru/lightgbm-vs-xgboost-which-algorithm-win-the-race-1ff7dd4917d/)
 - [Welcome to LightGBM’s documentation!](https://lightgbm.readthedocs.io/en/latest/index.html)
+	- [categorical_feature](https://lightgbm.readthedocs.io/en/latest/Parameters.html#categorical_feature)
+- [Why does `categorical_feature` of lightgbm not work?](https://stackoverflow.com/questions/56070396/why-does-categorical-feature-of-lightgbm-not-work).
+Note: You should convert your categorical features to int type before you construct Dataset.
+- [Beware of categorical features in LGBM!](https://www.kaggle.com/code/mlisovyi/beware-of-categorical-features-in-lgbm). How to understand feature importance of categorical features reported by LightGBM?
+	- [Let's try SHAP](https://www.kaggle.com/code/mlisovyi/beware-of-categorical-features-in-lgbm?scriptVersionId=4789941&cellId=24)
+- [Multiclass Classification with LightGBM](https://stackoverflow.com/questions/47370240/multiclass-classification-with-lightgbm)
 
 # 17.06.2023
 - Tools. [Evidently](https://github.com/evidentlyai/evidently) is an open-source Python library for data scientists and ML engineers. It helps evaluate, test, and monitor the performance of ML models from validation to production. It works with tabular, text data and embeddings.
