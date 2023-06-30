@@ -276,6 +276,37 @@ Use `with_row_count():`
 The default polars wheel retrieved with `pip install polars` "only" allows for 2^32 e.g. ~4.2 billion rows.
 Do you need more than that install `pip install polars-u64-idx` and uninstall the previous installation.
 - [Convert DataFrame to Series in Polars](https://stuffbyyuki.com/convert-dataframe-to-series-in-polars/)
+- [Corr of one column with all other numeric ones](https://stackoverflow.com/questions/74742626/corr-of-one-column-with-all-other-numeric-ones/74746738#74746738)
+Преобразуем все колонки махом: `pl.col(pl.Int64).cast(pl.Float64)`
+- [Where can I find datatypes to which I can cast in polars?](https://stackoverflow.com/questions/71533338/where-can-i-find-datatypes-to-which-i-can-cast-in-polars/71536290#71536290)
+```
+import polars as pl
+
+# available data types
+pl.Int8
+pl.Int16
+pl.Int32
+pl.Int64
+pl.UInt8
+pl.UInt16
+pl.UInt32
+pl.UInt64
+pl.Float32
+pl.Float64
+pl.Boolean
+pl.Utf8
+pl.List
+pl.Date
+pl.Datetime
+pl.Duration
+pl.Time
+pl.Struct
+pl.Object
+```
+- [Polars Data types](https://pola-rs.github.io/polars-book/user-guide/concepts/data-types/)
+- Categorical
+	- COOL! [In polars, can I create a categorical type with levels myself?](https://stackoverflow.com/questions/70934789/in-polars-can-i-create-a-categorical-type-with-levels-myself)
+	- [`polars.Expr.to_physical`](https://pola-rs.github.io/polars/py-polars/html/reference/expressions/api/polars.Expr.to_physical.html#polars.Expr.to_physical)
 
 
 # Python & R
@@ -292,8 +323,18 @@ Do you need more than that install `pip install polars-u64-idx` and uninstall th
 # convert to Python script with light format
 jupytext --to py notebook.ipynb             
 # convert to Python script with percent format
-jupytext --to py:percent notebook.ipynb 
+jupytext --to py:percent notebook.ipynb
 ```
+
+# 29.06.2023
+- [How to Write Clean Codes by Using Pipe Operations in Python?](https://www.turing.com/kb/write-clean-codes-by-using-pipe-operations-in-python)
+- [Pipe function in Python Polars. Don't leave the pipe flow!](https://typethepipe.com/vizs-and-tips/python-polars-pipe-function-to-one-more-columns/)
+- [Updating code that uses seaborn.distplot](https://gist.github.com/mwaskom/de44147ed2974457ad6372750bbe5751)
+`distplot` is a deprecated function and will be removed in seaborn v0.14.0.
+Please adapt your code to use either `displot` (a figure-level function with
+similar flexibility) or `histplot` (an axes-level function for histograms).
+For a guide to updating your code to use the new functions, please see
+https://gist.github.com/mwaskom/de44147ed2974457ad6372750bbe5751
 
 # 28.06.2023
 - [Convert columns to string in Pandas](https://stackoverflow.com/questions/22005911/convert-columns-to-string-in-pandas). 

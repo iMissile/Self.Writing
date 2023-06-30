@@ -1476,6 +1476,8 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Trie](https://en.m.wikipedia.org/wiki/Trie). In computer science, a trie, also called digital tree or prefix tree,[1] is a type of k-ary search tree, a tree data structure used for locating specific keys from within a set.
 - COOL! [Albert Rapp Blog](https://albert-rapp.de/blog.html)
 	- [The ultimate beginner’s guide to generalized linear models (GLMs)](https://albert-rapp.de/blog.html)
+- GIS [Upcoming changes to popular R packages for spatial data: what you need to do](https://geocompx.org/post/2023/rgdal-retirement/)
+- Стартовая публикация [Spatial Data Sources in R]
 
 # 24.06.2023
 ## R

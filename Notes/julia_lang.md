@@ -16,6 +16,9 @@
 - [Number one JuliaLang beginner tip: Do not delay the active learning](https://juliaifrank.com/active-learning-in-programming/)
 - [Simple multi-layer perceptron](https://fluxml.ai/tutorials/2021/01/26/mlp.html)
 
+# 30.06.2023
+- [Makie](https://makie.org/) is a modern plotting library for Julia.
+
 # 10.05.2022
 - [Some special cases of method dispatch in Julia](https://bkamins.github.io/julialang/2022/04/15/dispatch.html) Blog by Bogumił Kamiński
 
