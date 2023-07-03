@@ -952,6 +952,8 @@ A lightweight, modern and flexibly logging utility for R – heavily inspired by
 - [Establish handlers on the stack](https://rlang.r-lib.org/reference/with_handlers.html)
 
 ## Debuggging
+- [Debugging with the RStudio IDE](https://support.posit.co/hc/en-us/articles/205612627-Debugging-with-the-RStudio-IDE) by Jonathan McPherson, June 01, 2023
+- COOL! [Debugging in RStudio. Developing code with `browser()`](https://mjfrigaard.github.io/posts/debugging/)
 - [Recover is the apex R debugging method](https://milesmcbain.micro.blog/2020/09/03/recover-is-the.html). `options(error = recover)`
 - COOL! Сборная публикация [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
 - [flow](https://moodymudskipper.github.io/flow/index.html). Visualize as flow diagrams the logic of functions, expressions or scripts and ease debugging.
@@ -1471,6 +1473,11 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Obsidian — IDE для Markdown базы знаний](https://vas3k.club/link/2609/)
 
 # http://192.168.12.31:4242/client/#/
+
+# 05.07.2023
+- [What is the `sink()` function? Capturing Output to External Files](https://www.spsanderson.com/steveondata/posts/2023-05-23/)
+- [maximum size of a matrix in R](https://stackoverflow.com/questions/9984283/maximum-size-of-a-matrix-in-r)
+- [cubble](https://huizezhang-sherry.github.io/cubble/index.html). The term spatio-temporal data can incorporate various spatial and temporal characteristics and different data may require different data structures for wrangling and analysis.
 
 # 30.06.2023
 - [Trie](https://en.m.wikipedia.org/wiki/Trie). In computer science, a trie, also called digital tree or prefix tree,[1] is a type of k-ary search tree, a tree data structure used for locating specific keys from within a set.
@@ -2042,6 +2049,7 @@ readr::read_csv(readr_example("mtcars.csv"), col_types = cols(.default = "c"))
 - ["un-register" a doParallel cluster](https://stackoverflow.com/questions/25097729/un-register-a-doparallel-cluster)
 - COOL! Lession. [Teaching Website for Advanced R. R Futures and Parallel Processing](https://dcgerard.github.io/advancedr/09_future.html). David Gerard
 - COOL! Утечка памяти в `future_walk`. Разбор деталей. [Return NULL from each function call when using future_walk() #205 {Closed}](https://github.com/DavisVaughan/furrr/issues/205)
+- Slides [Edmonton R User Group Meetup: Futureverse - A Unifying Parallelization Framework in R for Everyone](https://www.jottr.org/2023/05/22/future-yegrug-2023-slides/)
 
 ## ML in R (STC)
 - [R: using ranger with caret, tuneGrid argument](https://stackoverflow.com/questions/48334929/r-using-ranger-with-caret-tunegrid-argument)
