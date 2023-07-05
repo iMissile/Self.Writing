@@ -1474,10 +1474,25 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # http://192.168.12.31:4242/client/#/
 
+# Bootstrapping
+- [The Nonparametric Bootstrap](https://bookdown.org/compfinezbook/introcompfinr/The-Nonparametric-Bootstrap.html)
+- [Nonparametric Bootstrap in R](http://users.stat.umn.edu/~helwig/notes/npboot-notes.html) by Nathaniel E. Helwig
+- Package [`bcaboot`: Bias Corrected Bootstrap Confidence Intervals](https://cran.r-project.org/web/packages/bcaboot/)
+	- [Automatic Construction of Bootstrap Confidence Intervals](https://cran.r-project.org/web/packages/bcaboot/vignettes/bcaboot.html) by Bradley Efron and Balasubramanian Narasimhan
+- COOL! Slides! [Bootstrap Confidence Intervals](https://www.tau.ac.il/~saharon/StatisticsSeminar_files/Bootstrap%20Confidence%20Intervals%20-%20Yair%20Wexler.pdf) by Yair Wexler Based on: 'An Introduction to the Bootstrap' Bradley Efron and Robert J. Tibshirani, Chapters 12-13
+- [Degrees of Freedom in Statistics Explained: Formula and Example](https://www.investopedia.com/terms/d/degrees-of-freedom.asp)
+- [Calculate accelerated bootstrap interval in R](https://stats.stackexchange.com/questions/437477/calculate-accelerated-bootstrap-interval-in-r)
+- [Bootstrapping (statistics)](https://en.wikipedia.org/wiki/Bootstrapping_(statistics)#History)
+- [Chapter 17 Randomization, Jackknife, and Bootstrap](https://bio723-class.github.io/Bio723-book/randomization-jackknife-and-bootstrap.html)
+
 # 05.07.2023
+## R
 - [What is the `sink()` function? Capturing Output to External Files](https://www.spsanderson.com/steveondata/posts/2023-05-23/)
 - [maximum size of a matrix in R](https://stackoverflow.com/questions/9984283/maximum-size-of-a-matrix-in-r)
 - [cubble](https://huizezhang-sherry.github.io/cubble/index.html). The term spatio-temporal data can incorporate various spatial and temporal characteristics and different data may require different data structures for wrangling and analysis.
+- [Shiny on Hugging Face](https://shiny.posit.co/blog/posts/shiny-on-hugging-face/)
+- [zonohedra User Guide](https://cran.r-project.org/web/packages/zonohedra/vignettes/zonohedra-guide.html)
+- [Circular Graph Layout](https://www.yworks.com/pages/circular-graph-layout). The different options of arranging diagram elements in circles
 
 # 30.06.2023
 - [Trie](https://en.m.wikipedia.org/wiki/Trie). In computer science, a trie, also called digital tree or prefix tree,[1] is a type of k-ary search tree, a tree data structure used for locating specific keys from within a set.

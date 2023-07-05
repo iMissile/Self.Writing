@@ -314,6 +314,39 @@ pl.Object
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
 
+# 06.07.2023
+- [arch](https://github.com/bashtage/arch/). Autoregressive Conditional Heteroskedasticity (ARCH) and other tools for financial econometrics, written in Python (with Cython and/or Numba used to improve performance)
+- [Fast way to get bootstrap means from long list](https://stackoverflow.com/questions/70282665/fast-way-to-get-bootstrap-means-from-long-list)
+
+# 05.07.2023
+- [Pydantic V2 Is Here!](https://docs.pydantic.dev/2.0/blog/pydantic-v2-final/)
+- [Ускоряем Python в сто раз при помощи менее чем ста строк на Rust](https://habr.com/ru/companies/ruvds/articles/732530/)
+- [Compare R and Python: workflows](https://kevinwang09.github.io/compare-r-python/workflows.html).  `scikit-learn` vs `tidymodels`
+- [ML Pipelines | Tidy Models Vs Scikit Learn](https://amitvkulkarni.medium.com/ml-pipelines-tidy-models-vs-scikit-learn-76847167c4fa)
+- [Support other dataframes like polars and pyarrow not just pandas #25896 {Open}](https://github.com/scikit-learn/scikit-learn/issues/25896)
+- [How to use polars dataframes with scikit-learn?](https://stackoverflow.com/questions/74398563/how-to-use-polars-dataframes-with-scikit-learn)
+
+## bootstraping and CI
+- [Python Tutorial : Bootstrap confidence intervals](https://www.youtube.com/watch?v=J2TWB2OI_rs)
+- [boot() equivalent in python?](https://stackoverflow.com/questions/49522226/boot-equivalent-in-python)
+```
+import numpy as np
+import bootstrapped.bootstrap as bs
+import bootstrapped.stats_functions as bs_stats
+
+from resample.bootstrap import bootstrap_ci
+bootstrap_ci(a=data, f=bootfun, b=10000)
+```
+- [`resample`. Randomization-based inference in Python](https://github.com/scikit-hep/resample)
+- [`confidenceinterval`](https://github.com/jacobgil/confidenceinterval). The long missing library for python confidence intervals
+- Разобраны ошибки в понимании. [Trying to understand Bootstrapping w/ Python](https://stats.stackexchange.com/questions/584649/trying-to-understand-bootstrapping-w-python)
+- COOL! [dabest. Bootstrap Confidence Intervals](https://acclab.github.io/DABEST-python-docs/bootstraps.html). Sampling from Populations
+- [`scipy.stats.bootstrap`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html)
+- [`pingouin.compute_bootci`](https://pingouin-stats.org/build/html/generated/pingouin.compute_bootci.html) Bootstrapped confidence intervals of univariate and bivariate functions.
+Since version 1.7, `SciPy` also includes a built-in bootstrap function `scipy.stats.bootstrap()`. The `SciPy` implementation has two advantages over Pingouin: it is faster when using `vectorized=True`, and it supports the bias-corrected and accelerated (BCa) confidence intervals for univariate functions. However, unlike Pingouin, it does not return the bootstrap distribution.
+- [`arch`. Confidence Intervals](https://arch.readthedocs.io/en/latest/bootstrap/confidence-intervals.html)
+- [Implementing the bias-corrected and accelerated bootstrap in Python](https://www.erikdrysdale.com/bca_python/). Тут идет сравнение BCa с реализацией в `arch`.
+
 # 30.06.2023
 - [Convert Jupyter Notebook to Python script in 3 ways](https://mljar.com/blog/convert-jupyter-notebook-python/)
 	1. Download as .py using GUI
@@ -325,6 +358,12 @@ jupytext --to py notebook.ipynb
 # convert to Python script with percent format
 jupytext --to py:percent notebook.ipynb
 ```
+You can
+ * pair a notebook with `jupytext --set-formats ipynb,py:percent notebook.ipynb`
+ * synchronize the paired files with `jupytext --sync notebook.py` (the inputs are loaded from the most recent paired file)
+ * convert a notebook in one format to another with `jupytext --to ipynb notebook.py` (use -o if you want a specific output file)
+ * pipe a notebook to a linter with e.g. `jupytext --pipe black notebook.ipynb`
+
 
 # 29.06.2023
 - [How to Write Clean Codes by Using Pipe Operations in Python?](https://www.turing.com/kb/write-clean-codes-by-using-pipe-operations-in-python)
