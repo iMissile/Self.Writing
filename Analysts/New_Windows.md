@@ -141,6 +141,8 @@ The [Microsoft support tool NFI.exe](https://support.microsoft.com/en-us/help/25
 •Только для некоммерческого использования
 ```
 - [Ошибка 0xC0000225, 0xC00000E, Missing Winload.efi после копирования или миграции ОС](https://kb.paragon-software.com/ru/article/423)
+- [Ошибка chkdsk : проверка диска не работает](https://computer76.ru/2017/10/20/chkdsk-errors/)
+	- `sfc /scannow` -- проверка целостности файловой системы, починка файлов.
 
 # WebDAV
 - [Как в Windows подключить облачное хранилище в качестве сетевого диска по протоколу WebDav](https://remontcompa.ru/windows/funkcional-windows/1832-kak-v-windows-podklyuchit-oblachnoe-hranilische-v-kachestve-setevogo-diska-po-protokolu-webdav.html)

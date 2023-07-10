@@ -485,7 +485,7 @@ list.files("/tmp/gap")
 - Хорошая статья с визуализациями. [Tracking covid-19 excess deaths across countries](https://www.economist.com/graphic-detail/coronavirus-excess-deaths-tracker)
 - [Waffle chart (square pie) in ggplot2](https://r-charts.com/part-whole/waffle-chart-ggplot2/)
 - [The juicr R package](https://github.com/mjlajeunesse/juicr) is a GUI interface to automated, semi-automated, and manual tools for extracting data from scientific images -- like scatter or bar plots that contain data, or other images with information that can be converted numerically or coordinates classified.
-
+- [DECK.GL](https://deck.gl/) WebGL2-powered visualization framework for large-scale datasets
 
 # font
 - COOL! [Taking Control of Plot Scaling](https://www.tidyverse.org/blog/2020/08/taking-control-of-plot-scaling/)
@@ -578,6 +578,20 @@ The v0.8.0 release of gt is quite exciting so we want to show you all the things
 ### font issues gt + quarto
 - [Change in Quarto from Rstudio RStudio 2022.07.1+554 to 2022.07.2+576 #3357](https://github.com/quarto-dev/quarto-cli/discussions/3357). Probably caused by some CSS overwriting the table CSS.
 If you don't want Quarto or anything actually to take over the styling, then you should consider to use `gt::as_raw_html(data, inline_css = TRUE)` (https://gt.rstudio.com/reference/as_raw_html.html).
+
+### R html tables
+- [RMarkdown: how to rotate table column headers](https://stackoverflow.com/questions/49109853/rmarkdown-how-to-rotate-table-column-headers)
+- [Rotated Table Column Headers](https://css-tricks.com/rotated-table-column-headers/)
+- [gt Basic Usage Cookbook](https://themockup.blog/static/gt-cookbook.html)
+- [gt Advanced Usage Cookbook](https://themockup.blog/static/gt-cookbook-advanced.html)
+- [Controlling renderTable column width](https://community.rstudio.com/t/controlling-rendertable-column-width/21208)
+- [Create Awesome HTML Table with knitr::kable and kableExtra](https://haozhu233.github.io/kableExtra/awesome_table_in_html.html)
+- [better data.frame formatting for long column names](https://stackoverflow.com/questions/28114374/better-data-frame-formatting-for-long-column-names)
+- [How to rename few column names as 2 lines](https://community.rstudio.com/t/how-to-rename-few-column-names-as-2-lines/23762). Тут рабочие примеры.
+- [gt table - newline in cell](https://stackoverflow.com/questions/63354827/gt-table-newline-in-cell). `fmt_markdown(columns = TRUE)`
+- [Getting Column-Names to Wrap in R/Kable() HTML Table](https://stackoverflow.com/questions/44816307/getting-column-names-to-wrap-in-r-kable-html-table/44816439). Тут тоже есть решение. It is possible to create linebreaks with HTML syntax. In order for that to work, you will have to set the escape argument of kable to FALSE.
+- В gt можно подправить css для переноса слов: <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"></th>, 
+использовать `word-wrap: break-word;`. [CSS word-wrap Property](https://www.w3schools.com/cssref/css3_pr_word-wrap.asp)
 
 ## reactable
 - [A couple useful JavaScript aggregation and formatting functions for {reactable}](https://www.zajichekstats.com/post/reactable-javascript/)
