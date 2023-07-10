@@ -454,6 +454,15 @@ Tidying and splitting model summaries for inline reporting
 - [show quarto-code example in quarto document with inline code](https://community.rstudio.com/t/show-quarto-code-example-in-quarto-document-with-inline-code/155231)
 - [6 Productivity Hacks for Quarto](https://posit.co/blog/6-productivity-hacks-for-quarto/)
 	- [Write verbatim code chunks with echo: fenced](https://posit.co/wp-content/themes/Posit/public/markdown-blogs/6-productivity-hacks-for-quarto/index.html#write-verbatim-code-chunks-with-echo-fenced)
+	- [How to resize image in Quarto revealjs presentation #5701](https://github.com/quarto-dev/quarto-cli/discussions/5701). By default, figures are stretched, meaning the width/height are set by this feature. See two ways to make it work....
+EDIT: see https://quarto.org/docs/presentations/revealjs/advanced.html#stretch.
+- [Vertical Align of images in Quarto Presentations](https://stackoverflow.com/questions/72941210/vertical-align-of-images-in-quarto-presentations)
+```
+::: {layout="[[-1], [1], [-1]]"}
+![](https://placeholder.pics/svg/200){fig-align="center"}
+:::
+```
+This is an option, though `{.absolute top=50 right=50 width="450" height="250"}`
 
 # 29.08.2022
 ## Quarto slides
