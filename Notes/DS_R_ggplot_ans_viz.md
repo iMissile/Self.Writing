@@ -466,6 +466,7 @@ UpSet plot provides an efficient way to visualize intersections of multiple sets
 
 # other
 - [ggplot2 Version of Figures in Lattice: Multivariate Data. Visualization with R](https://learnr.files.wordpress.com/2009/08/latbook.pdf)
+- COOL! [What is the difference between the "+" operator in ggplot2 and the "%>%" operator in magrittr?](https://stackoverflow.com/questions/35332861/what-is-the-difference-between-the-operator-in-ggplot2-and-the-operato)
 - COOL! [Altair: Declarative Visualization in Python](https://altair-viz.github.io/)
 	- [vegawidget](https://vegawidget.github.io/vegawidget/index.html)
 The goal of vegawidget is to render Vega-Lite and Vega specifications as htmlwidgets, and to provide you a means to communicate with a Vega chart using JavaScript or Shiny.
