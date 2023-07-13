@@ -1242,6 +1242,10 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Bootstrapping (statistics)](https://en.wikipedia.org/wiki/Bootstrapping_(statistics)#History)
 - [Chapter 17 Randomization, Jackknife, and Bootstrap](https://bio723-class.github.io/Bio723-book/randomization-jackknife-and-bootstrap.html)
 
+# 15.07.2023
+## R
+- Learning [Data Science Workshop. British Society for Proteomic Research Meeting 2018](https://ab604.github.io/docs/bspr_workshop_2018/index.html). Отличные картинки и код
+
 # 07.07.2023
 ## R
 - COOL! [R is still fast: a salty reaction to a salty blog post](https://josiahparry.com/posts/2023-07-06-r-is-still-fast.html)

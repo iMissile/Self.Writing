@@ -449,6 +449,12 @@ Tidying and splitting model summaries for inline reporting
 
 # ==================================================
 
+# 15.07.2023
+- [Quarto fails to render htmlwidgets when running {knitr} 1.43 with Error in add_html_caption(): #5702 {Closed}](https://github.com/quarto-dev/quarto-cli/issues/5702)
+- [Slide Visibility](https://quarto.org/docs/presentations/revealjs/advanced.html#slide-visibility)
+- [Uncounted Slides](https://quarto.org/docs/presentations/revealjs/advanced.html#uncounted-slides)
+- [Way to remove slide-number for n^th slide in a revealjs presentation? #5566](https://github.com/quarto-dev/quarto-cli/discussions/5566)
+
 # 10.07.2023
 - [r inline code not executed? #4855 {Closed}](https://github.com/quarto-dev/quarto-cli/discussions/4855)
 - [show quarto-code example in quarto document with inline code](https://community.rstudio.com/t/show-quarto-code-example-in-quarto-document-with-inline-code/155231)
@@ -463,6 +469,19 @@ EDIT: see https://quarto.org/docs/presentations/revealjs/advanced.html#stretch.
 :::
 ```
 This is an option, though `{.absolute top=50 right=50 width="450" height="250"}`
+- [Two columns layout in Quarto](https://stackoverflow.com/questions/74162212/two-columns-layout-in-quarto)
+- [How to place *multiple* code chunks side by side in Quarto -> HTML?](https://stackoverflow.com/questions/74543398/how-to-place-multiple-code-chunks-side-by-side-in-quarto-html)
+- [How to place code chunks side by side, letting Quarto handle page layout (e.g., mobile vs. desktop)](https://github.com/quarto-dev/quarto-cli/discussions/3423)
+You can use a div with the same attribute to layout blocks in this way. For example:
+
+:::{layout-ncol="2"}
+```{r}
+plot(iris)
+```
+```{r}
+plot(ToothGrowth)
+```
+:::
 
 # 29.08.2022
 ## Quarto slides
