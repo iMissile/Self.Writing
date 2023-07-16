@@ -1208,6 +1208,10 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Your Slides are So Extra! Extra-Special Presentations with xaringanExtra](https://slides.garrickadenbuie.com/extra-special-xaringan/#1) by Garrick Aden-Buie
 - [Course material for useR! 2020 Rspatial tutorial](https://github.com/statnmap/user2020_rspatial_tutorial) by S. Rochette, D. Scott, J. Nowosad
 
+## UseR! 2018
+- [20180713 useR ! 2018 のまとめと(雑な)感想](https://y-mattu.hatenablog.com/entry/2018/07/13/232928)
+- [Glue strings to data in R](https://github.com/jimhester/presentations/tree/master/2018_07_13-Glue_strings_to_data_with_glue#readme)
+
 ## UseR! 2015
 - [Streaming Data IO in R. curl, jsonlite, mongolite](http://bit.ly/mongo-slides) by Jeroen Ooms - UCLA
 
@@ -1245,6 +1249,17 @@ This is where we will store all of the materials and links for rstudio::conf 202
 # 15.07.2023
 ## R
 - Learning [Data Science Workshop. British Society for Proteomic Research Meeting 2018](https://ab604.github.io/docs/bspr_workshop_2018/index.html). Отличные картинки и код
+- Learning. Отличный cheatsheet [Data transformation with dplyr 1.0](https://github.com/courtiol/Rguides)
+- Learning, Slides. [Introduction to the Tidyverse, How to be a tidy data scientist](https://oliviergimenez.github.io/intro_tidyverse/#1) by Olivier Gimenez, Novembre 2020
+-	[Data processing with R tidyverse. RWorkshop](https://rworkshop.uni.lu/#Introduction)
+	- Learning, Slides. [String manipulation. Reproducible data munging](https://rworkshop.uni.lu/preview/lectures/stringr.html#1) by Roland Krause | rworkshop | 8 February 2023. [Roland Krause](https://github.com/rolandkrause?tab=repositories)
+	- [Reproducible manuscripts. RMarkdown examples](https://rworkshop.uni.lu/lectures/rmarkdown.html#1) by Roland Krause | rworkshop | 7 February 2023
+- COOL! [GWalkR](https://github.com/Kanaries/GWalkR): Your One-Stop R Package for Exploratory Data Analysis with Visualization
+- [How to Overcome Messy Excel Sheets in R](https://medium.com/@SportSciData/how-to-overcome-messy-excel-sheets-in-r-34a8d452a34)
+- [rounding, tabulation, and inline presentation with table.glue - Table Contest Submission](https://community.rstudio.com/t/rounding-tabulation-and-inline-presentation-with-table-glue-table-contest-submission/85851)
+- COOL! [Transformers, glue!](http://www.questionflow.org/2018/08/21/transformers-glue/)
+- [Glue strings to data in R](https://www.youtube.com/watch?v=XQmBcpQl8K8)
+- [Notes from rstudio::conf(2020L). What I learned (or at least wrote down) at the RStudio Conference](https://dldsblog.netlify.app/post/2020-02-04-notes-from-rstudio-conf-2020l/)
 
 # 07.07.2023
 ## R

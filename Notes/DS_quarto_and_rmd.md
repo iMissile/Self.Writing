@@ -10,7 +10,8 @@
 - COOL! [6 Productivity Hacks for Quarto](https://posit.co/blog/6-productivity-hacks-for-quarto/)
 - COOL! [Welcome to Quarto](https://quarto.org). A scientific and technical publishing system built on Pandoc (RStudio)
 - [Component Layout](https://quarto.org/docs/interactive/layout.html). Тут активно упоминается про `:::`.
-```::: {.classname}
+```
+::: {.classname}
 Div
 :::
 ```
@@ -454,6 +455,21 @@ Tidying and splitting model summaries for inline reporting
 - [Slide Visibility](https://quarto.org/docs/presentations/revealjs/advanced.html#slide-visibility)
 - [Uncounted Slides](https://quarto.org/docs/presentations/revealjs/advanced.html#uncounted-slides)
 - [Way to remove slide-number for n^th slide in a revealjs presentation? #5566](https://github.com/quarto-dev/quarto-cli/discussions/5566)
+- [In RStudio, how to print tibble in quarto/rmarkdown chunk as in console?](https://stackoverflow.com/questions/74861009/in-rstudio-how-to-print-tibble-in-quarto-rmarkdown-chunk-as-in-console)
+- [Code line highlighting in Quarto revealjs presentations](https://www.pipinghotdata.com/posts/2022-05-12-code-line-highlighting-in-quarto-revealjs-presentations/). Three methods make your code lines stand out
+- [Making Slides in Quarto with `reveal.js`](https://meghan.rbind.io/blog/quarto-slides/) by Meghan Hall
+- [Code location in column layout in Quarto revealjs](https://stackoverflow.com/questions/76414456/code-location-in-column-layout-in-quarto-revealjs)
+```{r}
+#| output-location: column
+#| results: hold
+#| echo: true
+1:10
+
+10:1 #This should be on the left side
+```
+- Beamer. [How to change font size for code chunks in Quarto?](https://stackoverflow.com/questions/75891446/how-to-change-font-size-for-code-chunks-in-quarto)- [Slidecraft 101: Code and Output](https://www.emilhvitfeldt.com/post/slidecraft-code-output/). All about styling code and output in slidecrafting.
+- [Quarto revealjs: increase relative font size of code chunks](https://stackoverflow.com/questions/75907436/quarto-revealjs-increase-relative-font-size-of-code-chunks)
+- [Quarto tips I’ve found around the Web](https://apps.machlis.com/shiny/quartotips/)
 
 # 10.07.2023
 - [r inline code not executed? #4855 {Closed}](https://github.com/quarto-dev/quarto-cli/discussions/4855)

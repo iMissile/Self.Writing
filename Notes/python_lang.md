@@ -314,6 +314,10 @@ pl.Object
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
 
+
+# 17.07.2023
+- [Lets-Plot 3.2.0](https://lets-plot.org/). An Open-source Plotting Library for Statistical Data. Based on ggplot grammar.
+
 # 06.07.2023
 - [arch](https://github.com/bashtage/arch/). Autoregressive Conditional Heteroskedasticity (ARCH) and other tools for financial econometrics, written in Python (with Cython and/or Numba used to improve performance)
 - [Fast way to get bootstrap means from long list](https://stackoverflow.com/questions/70282665/fast-way-to-get-bootstrap-means-from-long-list)
