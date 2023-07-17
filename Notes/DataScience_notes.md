@@ -1182,6 +1182,15 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - Slides. [Marcus Adams - Putting a GMP Shiny App into Prod](https://github.com/adamsma/the_app_we_need)
 - [Slides and hands-on codes for my talk "ggplot Wizardry: My Favorite Tricks and Secrets for Beautiful Plots in R"](https://github.com/z3tt/outlierconf2021) at the 1st OutlierConf, February 4–7 2021.
 
+## Rconf 2020
+- COOL! [Links to slides from rstudio::conf 2020](https://github.com/EmilHvitfeldt/RStudioConf2020Slides/blob/master/README.md)
+- rstudio/rstudio-conf. [rstudio-conf/2020/](https://github.com/rstudio/rstudio-conf/tree/master/2020)
+- [Taking visualizations to the next level with the scales package](https://www.danaseidel.com/rstudioconf2020#1) by Dana Seidel (@dpseidel)
+- [Practical Plumber Patterns: An opinionated approach to writing APIs in R with Plumber](https://github.com/blairj09-talks/ppp)
+- [renv Project Environments to R](https://github.com/kevinushey/2020-rstudio-conf)
+- [How to win an AI Hackathon. Without using AI](https://www.jumpingrivers.com/t/2019-budbi/#1)
+- [Get started with Quarto. 08 - Advanced Quarto +knitr](https://rstudio-conf-2022.github.io/get-started-quarto/materials/08-advanced-knitr.html#/section)
+
 ## Rconf 2019
 - [Links to slides from rstudio::conf 2019](https://github.com/kbroman/RStudioConf2019Slides)
 - ["Applied Machine Learning" at Rstudio::conf 2019 (January 15 & 16, Austin, Texas)](https://github.com/topepo/rstudio-conf-2019)
@@ -1247,11 +1256,11 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Chapter 17 Randomization, Jackknife, and Bootstrap](https://bio723-class.github.io/Bio723-book/randomization-jackknife-and-bootstrap.html)
 
 # 15.07.2023
-## R
+## R Learning
 - Learning [Data Science Workshop. British Society for Proteomic Research Meeting 2018](https://ab604.github.io/docs/bspr_workshop_2018/index.html). Отличные картинки и код
 - Learning. Отличный cheatsheet [Data transformation with dplyr 1.0](https://github.com/courtiol/Rguides)
 - Learning, Slides. [Introduction to the Tidyverse, How to be a tidy data scientist](https://oliviergimenez.github.io/intro_tidyverse/#1) by Olivier Gimenez, Novembre 2020
--	[Data processing with R tidyverse. RWorkshop](https://rworkshop.uni.lu/#Introduction)
+- [Data processing with R tidyverse. RWorkshop](https://rworkshop.uni.lu/#Introduction)
 	- Learning, Slides. [String manipulation. Reproducible data munging](https://rworkshop.uni.lu/preview/lectures/stringr.html#1) by Roland Krause | rworkshop | 8 February 2023. [Roland Krause](https://github.com/rolandkrause?tab=repositories)
 	- [Reproducible manuscripts. RMarkdown examples](https://rworkshop.uni.lu/lectures/rmarkdown.html#1) by Roland Krause | rworkshop | 7 February 2023
 - COOL! [GWalkR](https://github.com/Kanaries/GWalkR): Your One-Stop R Package for Exploratory Data Analysis with Visualization
@@ -1260,6 +1269,13 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - COOL! [Transformers, glue!](http://www.questionflow.org/2018/08/21/transformers-glue/)
 - [Glue strings to data in R](https://www.youtube.com/watch?v=XQmBcpQl8K8)
 - [Notes from rstudio::conf(2020L). What I learned (or at least wrote down) at the RStudio Conference](https://dldsblog.netlify.app/post/2020-02-04-notes-from-rstudio-conf-2020l/)
+- Learning [R/Tidyverse/Quarto - get started](https://intro2r.library.duke.edu/viz.html)
+- [A workshop to learn lots about the gt R package](https://github.com/rich-iannone/gt-workshop)
+- [The MockUp Blog. Resources](https://themockup.blog/static/resources/resources.html)
+- [2023-02-11 - Anything is Plotsible - Tanya Shapiro](https://github.com/tashapiro/anything-is-plotsible)
+- [Beautiful tables with gt and gtExtras by Tom Mock](https://thomasmock.quarto.pub/gtextras-overview/#/)
+- [[R] Riding tables with {gt} and {gtExtras}](https://bjnnowak.netlify.app/2021/10/04/r-beautiful-tables-with-gt-and-gtextras/)
+
 
 # 07.07.2023
 ## R
@@ -6288,14 +6304,6 @@ The goal of datadrivencv is to ease the burden of maintaining a CV by separating
 - Max Kuhn @topepos. All of the analysis R code for our Feature Engineering and Selection book is now [on GitHub at](https://github.com/topepo/FES)
 
 # 17.05.2020
-## Rconf 2020
-- COOL! [Links to slides from rstudio::conf 2020](https://github.com/EmilHvitfeldt/RStudioConf2020Slides/blob/master/README.md)
-- rstudio/rstudio-conf. [rstudio-conf/2020/](https://github.com/rstudio/rstudio-conf/tree/master/2020)
-- [Taking visualizations to the next level with the scales package](https://www.danaseidel.com/rstudioconf2020#1) by Dana Seidel (@dpseidel)
-- [Practical Plumber Patterns: An opinionated approach to writing APIs in R with Plumber](https://github.com/blairj09-talks/ppp)
-- [renv Project Environments to R](https://github.com/kevinushey/2020-rstudio-conf)
-- [How to win an AI Hackathon. Without using AI](https://www.jumpingrivers.com/t/2019-budbi/#1)
-
 ## CH
 - COOL! [ClickHouse для продвинутых пользователей в вопросах и ответах]()https://habr.com/ru/company/avito/blog/500678/ По умолчанию ответы Алексея Миловидова, если не написано иное.
 - [Clickhouse sampling on MergeTree engine](https://3manuek.com/blog/2017-07/clickhouse-sampling-on-mergetree-engine./)

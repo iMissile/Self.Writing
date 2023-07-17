@@ -450,6 +450,9 @@ Tidying and splitting model summaries for inline reporting
 
 # ==================================================
 
+# 17.07.2023
+- [rstudio::conf 2022 Workshop. Getting Started with Quarto](https://rstudio-conf-2022.github.io/get-started-quarto/) by Tom Mock
+
 # 15.07.2023
 - [Quarto fails to render htmlwidgets when running {knitr} 1.43 with Error in add_html_caption(): #5702 {Closed}](https://github.com/quarto-dev/quarto-cli/issues/5702)
 - [Slide Visibility](https://quarto.org/docs/presentations/revealjs/advanced.html#slide-visibility)
