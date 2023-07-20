@@ -1273,8 +1273,13 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [A workshop to learn lots about the gt R package](https://github.com/rich-iannone/gt-workshop)
 - [The MockUp Blog. Resources](https://themockup.blog/static/resources/resources.html)
 - [2023-02-11 - Anything is Plotsible - Tanya Shapiro](https://github.com/tashapiro/anything-is-plotsible)
-- [Beautiful tables with gt and gtExtras by Tom Mock](https://thomasmock.quarto.pub/gtextras-overview/#/)
+- [10+ Guidelines for Better Tables in R](https://themockup.blog/posts/2020-09-04-10-table-rules-in-r/)
+	- [2021-08-30. Beautiful tables with gt and gtExtras by Tom Mock](https://thomasmock.quarto.pub/gtextras-overview/#/)
+	- [2021-11-10. Beautiful Tables in R. gt and the grammar of tables](https://jthomasmock.github.io/tables-latinr/#1) by Tom Mock. github.com/jthomasmock/tables-latinr 
 - [[R] Riding tables with {gt} and {gtExtras}](https://bjnnowak.netlify.app/2021/10/04/r-beautiful-tables-with-gt-and-gtextras/)
+- [Demystifying Regular Expressions in R](https://blog.rsquaredacademy.com/regular-expression-in-r/) 2019/05/27
+- [Using APIs. RStudio Team admin training](https://colorado.posit.co/rsc/team-admin/deploy-plumber/p053_deploy_plumber.html#1) by Andrie de Vries, 2020-04-30
+- [Larger-Than-Memory Data Workflows with Apache Arrow Workshop](https://arrow-user2022.netlify.app/)
 
 
 # 07.07.2023

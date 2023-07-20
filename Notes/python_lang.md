@@ -317,6 +317,7 @@ pl.Object
 
 # 17.07.2023
 - [Lets-Plot 3.2.0](https://lets-plot.org/). An Open-source Plotting Library for Statistical Data. Based on ggplot grammar.
+- [Siuba](https://siuba.org/). Python Data Analysis from Start to Finish
 
 # 06.07.2023
 - [arch](https://github.com/bashtage/arch/). Autoregressive Conditional Heteroskedasticity (ARCH) and other tools for financial econometrics, written in Python (with Cython and/or Numba used to improve performance)
