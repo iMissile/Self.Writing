@@ -22,6 +22,7 @@
 - [Почему будущее не за Python](https://habr.com/ru/company/edison/blog/495610/)
 - [Пока, Python. Привет, Julia❗](https://habr.com/ru/company/edison/blog/506656/)
 - [Python — это медленно. Почему?](https://habr.com/ru/company/ruvds/blog/418823/)
+- [Я люблю питон, и вот почему он меня бесит](https://habr.com/ru/articles/753672/)
 
 # IDE & Installation
 - [Spyder](https://www.spyder-ide.org/) is a free and open source scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts. Our standalone installers for Windows and macOS are available from Spyder 4.2 onwards. [We recommend using this installation method](https://docs.spyder-ide.org/current/installation.html) on those platforms, but we offer several other options for Linux, advanced users and specific needs, so keep reading if that’s the case for you.
@@ -318,6 +319,8 @@ pl.Object
 # 17.07.2023
 - [Lets-Plot 3.2.0](https://lets-plot.org/). An Open-source Plotting Library for Statistical Data. Based on ggplot grammar.
 - [Siuba](https://siuba.org/). Python Data Analysis from Start to Finish
+- [How do I clear all variables in the middle of a Python script?](https://stackoverflow.com/questions/3543833/how-do-i-clear-all-variables-in-the-middle-of-a-python-script)
+- [Remove all object in Python environment #8750 {Open}](https://github.com/rstudio/rstudio/issues/8750)
 
 # 06.07.2023
 - [arch](https://github.com/bashtage/arch/). Autoregressive Conditional Heteroskedasticity (ARCH) and other tools for financial econometrics, written in Python (with Cython and/or Numba used to improve performance)

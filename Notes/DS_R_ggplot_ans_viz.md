@@ -343,6 +343,7 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - COOL! [Quick and easy ways to deal with long labels in ggplot2](https://www.andrewheiss.com/blog/2022/06/23/long-labels-ggplot/)
 - [The path to {ggpath}](https://posit.co/blog/the-path-to-ggpath). A 2.5 year long story about the open source R community and the #nflverse.
 - [ggplot2::scale_x_time: Formatting hms objects](https://stackoverflow.com/questions/58395236/ggplot2scale-x-time-formatting-hms-objects)
+- [One Weird Trick to Make Ggplot2 Columns the Same Width](https://pacha.dev/blog/2023/07/31/ggplot-columns/index.html)
 
 
 
@@ -575,6 +576,7 @@ events_dt %>%
 The v0.8.0 release of gt is quite exciting so we want to show you all the things you can now do when making tables!
 - COOL! [New formatting functions in {gt} 0.9.0](https://posit.co/blog/new-formatting-functions-in-gt-0-9-0/)
 - COOL! [Merging columns together and fixing up column labels in {gt} 0.9.0](https://posit.co/blog/columns-in-gt-0-9-0/)
+- COOL! [New in {gt} 0.9.0: Interactive tables](https://posit.co/blog/new-in-gt-0-9-0-interactive-tables/)
 
 ### font issues gt + quarto
 - [Change in Quarto from Rstudio RStudio 2022.07.1+554 to 2022.07.2+576 #3357](https://github.com/quarto-dev/quarto-cli/discussions/3357). Probably caused by some CSS overwriting the table CSS.
@@ -607,6 +609,7 @@ If you don't want Quarto or anything actually to take over the styling, then you
 - [Multple mark area style #52 {Open}](https://github.com/JohnCoene/echarts4r/issues/52)
 
 # Observable
+- [Observable for R Users](https://observablehq.com/@slopp/observable-for-r-users)
 - InfoWorld
 	- [A beginner's guide to using Observable JavaScript, R, and Python with Quarto](https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html)
 	- [Data visualization with Observable JavaScript](https://www.infoworld.com/article/3674852/data-visualization-with-observable-javascript.html)
@@ -617,7 +620,6 @@ If you don't want Quarto or anything actually to take over the styling, then you
 - [Plot from ggplot2](https://observablehq.com/@observablehq/plot-from-ggplot2)
 - [Observable Plot](https://observablehq.com/@observablehq/plot)
 - [obsplot](https://juba.github.io/obsplot/index.html) is an experimental attempt at using Observable Plot as HTML widget in R.
-- Sample. [Connected Scatter](https://observablehq.com/@observablehq/connected-scatter)
 - COOL! [outlier 2022](https://observablehq.com/collection/@observablehq/outlier-2022)
 - Painting with Data: D3.js [Interacting with Data](https://observablehq.com/@observablehq/pwd3-interacting-with-data)
 - COOL! [Interactive filtering](https://observablehq.com/@observablehq/arsc-part-2-interactive-filtering). Building an advanced report from simple components.
@@ -630,6 +632,12 @@ In Observable, though, cells run in the order they’re needed—what’s called
 - [Recreating an Altman-Gardner Plot in Javascript based on the dabest package in R](https://observablehq.com/@lorenasandoval88/altman-gardner-plot)
 - [Plot Exploration: Penguins](https://observablehq.com/@observablehq/plot-exploration-penguins)
 - Пояснения по поводу `view` операторов, в частности, `viewof`: [Introduction to views](https://observablehq.com/@observablehq/views)
+
+## Примеры
+- [Crossfilter](http://crossfilter.github.io/crossfilter/). Fast Multidimensional Filtering for Coordinated Views
+	- [Vega-Lite Cross-Filter Example](https://observablehq.com/vega/vega-lite-cross-filter-example). A variation on the Crossfilter flights demo, made with the Vega-Lite API.
+- Sample. [Connected Scatter](https://observablehq.com/@observablehq/connected-scatter)
+- COOL! ggplot vs obs. [Weekend Project Edition — Plot](https://rud.is/wpe-plot/)
 
 ## Избранное из JavaScript
 - [Дока/JavaScript/.filter()](https://doka.guide/js/array-filter/)

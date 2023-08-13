@@ -1152,7 +1152,17 @@ Stratification, CUPED, Variance-Weighted Estimators, and ML-based methods CUPAC 
 - [New York R meetup](https://nyhackr.org/)
 
 ## New York R 2023
-- [Copilot for R, a supporting repository for a presentation](https://github.com/revodavid/copilot-for-r). Presenter & Author: David Smith, Principal Cloud Advocate at Microsoft
+- David Smith, Principal Cloud Advocate at Microsoft. [Copilot for R, a supporting repository for a presentation](https://github.com/revodavid/copilot-for-r)
+- Mitchell O’Hara-Wild, Nectric. [From forecast to fable, design decisions for statistical software](https://slides.mitchelloharawild.com/nyr2023/)
+- Bob Rudis. [Into the WebR-Verse. Bringing the power of R to your browser and beyond](https://rud.is/w/2023-nyr-webr/?print-pdf=#/things-before-we-begin)
+- Emil Hvitfeldt. [Slidecraft: The Art of Creating Pretty Presentations](https://emilhvitfeldt.github.io/talk-nyr-slidecraft/)
+- Max Kuhn (Posit). [The Post-Modeling Model to Fix the Model](https://topepo.github.io/2023-07-NYR/)
+
+
+
+
+
+
 
 ## Appsilon Shiny 2023
 - [Asynchronous programming in Shiny](https://github.com/hypebright/async_shiny)
@@ -1210,6 +1220,12 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [unit testing for shiny reactivity](https://github.com/yonicd/reactor/tree/slides). yonicd.github.io/reactor
 - [How to build a package following the 'Rmd First' method?](https://statnmap.github.io/user2021.rmdd/stagiaire_complet.html#1) Sébastien Rochette, Emily Riederer
 - [sfnetworks: Tidy Geospatial Networks in R](https://sfnetworks.github.io/useR2021/slides#1)
+- [Binary R Packages for Linux: Past, Present and Future](https://enchufa2.github.io/bspm/slides/20210709-useR2021_talk.html#1). cran2copr project and bspm
+- [Peter Meißner – Going Big and Fast – {kafkaesque} for Kafka Access](https://github.com/petermeissner/kafkaesque/blob/master/demo_user2021/peter_meissner_user_2021_kafkaesque_HTML_PDF.zip)
+- [mlr3automl - Automated Machine Learning in R](https://a-hanf.github.io/useR_presentation/useR_2021_mlr3automl.pdf)
+- [A fresh look at unit testing with tinytest](https://docs.google.com/presentation/d/1GT61zwXHE1W5vEHaXDeuSbY9FtMWtulrAVUVszcS-eo/edit#slide=id.p1) by Mark van der Loo
+- [autotest. A package for automatic testing of R packages](https://userconf.github.io/talks-2021/session3C_talk1.html#1) by Mark Padgham
+
 
 ## UseR! 2020
 - [Computational Reproducibility: from theory to practice](https://annakrystalli.me/talks/user2020.html#1)
@@ -1254,6 +1270,29 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Calculate accelerated bootstrap interval in R](https://stats.stackexchange.com/questions/437477/calculate-accelerated-bootstrap-interval-in-r)
 - [Bootstrapping (statistics)](https://en.wikipedia.org/wiki/Bootstrapping_(statistics)#History)
 - [Chapter 17 Randomization, Jackknife, and Bootstrap](https://bio723-class.github.io/Bio723-book/randomization-jackknife-and-bootstrap.html)
+
+# 11.08.2023
+## R
+- [Four ways to write assertion checks in R](https://blog.djnavarro.net/posts/2023-08-08_being-assertive/)
+- [Tips for debugging and cleaning broken code](https://datavizs23.classes.andrewheiss.com/news/2023-07-05_messy-broken-code-tips.html)
+- COOL! [The ultimate practical guide to multilevel multinomial conjoint analysis with R](https://www.andrewheiss.com/blog/2023/08/12/conjoint-multilevel-multinomial-guide/)
+Learn how to use R, {brms}, {marginaleffects}, and {tidybayes} to analyze discrete choice conjoint data with fully specified hierarchical multilevel multinomial models
+- [It’s the interactions](https://lorentzen.ch/index.php/2023/08/01/its-the-interactions/)
+What makes a ML model a black-box? It is the interactions. Without any interactions, the ML model is additive and can be exactly described.
+- [R Functions for Getting Objects](https://www.spsanderson.com/steveondata/posts/2023-08-01/index.html)
+- [GPT-2 from scratch with torch](https://blogs.rstudio.com/ai/posts/2023-06-20-gpt2-torch/#end-to-end-usage-using-pre-trained-weights)
+- [Kafka R Bindings via ‘rJava’](https://github.com/petermeissner/kafkaesque)
+- COOL! [Running an R Script on a Schedule: Overview](https://blog.rmhogervorst.nl/blog/2020/09/26/running-an-r-script-on-a-schedule-overview/)
+	- [R (rstats) templates for OpenFaaS](https://github.com/analythium/openfaas-rstats-templates)
+- COOL! [Functions for data science with R templates for OpenFaaS {Function as a Service}](https://www.openfaas.com/blog/r-templates/)
+Learn how to combine the power of R with Serverless for data science.
+
+## DuckDB
+- [Querying Postgres Tables Directly From DuckDB](https://duckdb.org/2022/09/30/postgres-scanner)
+
+## Apache Kafka
+- Куча отличных материалов. [Markus Günther repos](https://github.com/mguenther?tab=repositories). Freelance Software Engineer / Architect
+	- COOL! Slides. [APACHE KAFKA FOR FAST DATA PIPELINES](http://mguenther.github.io/presentations/scala_rhein_main-kafka_for_fast_data_pipelines.html#/)
 
 # 15.07.2023
 ## R Learning
@@ -1605,10 +1644,6 @@ out <- paste0(sst[c(TRUE, FALSE)], sst[c(FALSE, TRUE)])
 - [Quadratic](https://www.quadratichq.com/). The spreadsheet with Python, SQL, and Formulas.
 Quadratic enables your team to work together on data analysis to deliver better results, faster.
 - [Programming without if-statements? {closed}](https://stackoverflow.com/questions/16099948/programming-without-if-statements)
-
-## FFT
-- [FFT to spectrum in decibel](https://dsp.stackexchange.com/questions/32076/fft-to-spectrum-in-decibel)
-- [Что такое децибел? Перевод из децибел в разы и обратно](https://go-radio.ru/decibel.html)
 
 # 20.03.2023
 ## R
@@ -3593,6 +3628,9 @@ Chain monadic sequences into stateful, branching pipelines. As nodes in the pipe
 ## FFT
 - COOL! [Signal Processing: Why do we need taper in FFT](http://qingkaikong.blogspot.com/2016/10/signal-processing-why-do-we-need-taper.html). Обработка сигналов: Зачем нам нужно использовать окно в преобразовании Фурье?
 - [Introduction to Fourier analysis of time series](https://fischerbach.medium.com/introduction-to-fourier-analysis-of-time-series-42151703524a)
+- [FFT to spectrum in decibel](https://dsp.stackexchange.com/questions/32076/fft-to-spectrum-in-decibel)
+- [Что такое децибел? Перевод из децибел в разы и обратно](https://go-radio.ru/decibel.html)
+
 
 # 05.07.2021
 ## R Sparse Matrix
