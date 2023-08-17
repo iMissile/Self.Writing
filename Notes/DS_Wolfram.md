@@ -1,4 +1,8 @@
 
+# 17.08.2023
+- [Implement a recursive formula with internal sum](https://mathematica.stackexchange.com/questions/207288/implement-a-recursive-formula-with-internal-sum)
+- [Examples for Recurrences](https://www.wolframalpha.com/examples/mathematics/discrete-mathematics/recurrences)
+
 # 10.05.2023
 - [Examples for Combinatorics](https://www.wolframalpha.com/examples/mathematics/discrete-mathematics/combinatorics/)
 Combinatorics is a branch of mathematics dealing primarily with combinations, permutations and enumerations of elements of sets. It has practical applications ranging widely from studies of card games to studies of discrete structures. Wolfram|Alpha is well equipped for use analyzing counting problems of various kinds that are central to the field.

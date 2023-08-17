@@ -313,6 +313,12 @@ What I did for now, but may not be the perfect solution, is to find all .git fol
 ```
 find /full/path -name '.git' -type d -exec bash -c 'git config --global --add safe.directory ${0%/.git}' {} \;
 ```
+- [Fix that damn Git Unsafe Repository](https://weblog.west-wind.com/posts/2023/Jan/05/Fix-that-damn-Git-Unsafe-Repository). There are a number of solutions for this problem.
+  * `git config` Command
+  * `.gitconfig` Safe Folder List
+  * Developer Tools can set Safe Repo Status
+  * Change Folder Ownership
+ - Не всегда помогает `safe.directory` *. [git submodule update failed with 'fatal: detected dubious ownership in repository at'](https://stackoverflow.com/questions/72978485/git-submodule-update-failed-with-fatal-detected-dubious-ownership-in-repositor)
 
 # Отключаем проверку сертификата
 - [Server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none](https://stackoverflow.com/questions/21181231/server-certificate-verification-failed-cafile-etc-ssl-certs-ca-certificates-c)

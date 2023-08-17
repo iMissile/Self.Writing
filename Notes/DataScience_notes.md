@@ -1271,6 +1271,30 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Bootstrapping (statistics)](https://en.wikipedia.org/wiki/Bootstrapping_(statistics)#History)
 - [Chapter 17 Randomization, Jackknife, and Bootstrap](https://bio723-class.github.io/Bio723-book/randomization-jackknife-and-bootstrap.html)
 
+# 16.08.2023
+## Проблема с `renv::restore`. `[curl: (35) schannel: next InitializeSecurityContext failed: Unknown error (0x80092012)`.
+- [`renv:restore()` always fails in windows](https://stackoverflow.com/questions/67228070/renvrestore-always-fails-in-windows)
+	- See also this <github.com/rstudio/renv/issues/301> for a solution with `renv::equip()`
+- [Inability to install packages after updating R and R Studio](https://community.rstudio.com/t/inability-to-install-packages-after-updating-r-and-r-studio/164954)
+- [Can't install packages with renv](https://community.rstudio.com/t/cant-install-packages-with-renv/96696/13)
+	- !!! Мне помогло `Sys.setenv(RENV_DOWNLOAD_FILE_METHOD = "libcurl")`
+- [Renv restore failed to find binary or source for all packages #1063 {Closed}](https://github.com/rstudio/renv/issues/1063)
+	- `options(renv.download.trace = TRUE)`
+- [Installing older versions of packages](https://support.posit.co/hc/en-us/articles/219949047-Installing-older-versions-of-packages)
+
+-  Настраиваем [RTools](https://github.com/r-windows/docs/blob/master/rtools40.md#readme)
+	1. Список доступных пакетов `$ pacman -Sly | grep 'boost'`
+	2. Ставим boost: `pacman -Sy mingw-w64-ucrt-x86_64-boost`
+	3. Не получилось собрать `Matrix`, ставим еще: `pacman -Sy mingw-w64-{i686,x86_64}-boost`
+Так что если не удается внутри `renv` поставить пакет с помощью `renv::install` или `install.packages()`, то надо изменить метод загрузки.
+
+## R
+- [`rlang`. Unlock an environment](https://rlang.r-lib.org/reference/env_unlock.html?q=env_u#ref-usage)
+- [Why is env_unlock() dangerous? #1139 {Closed}](https://github.com/r-lib/rlang/issues/1139)
+
+## R reusable code
+- Appsilon. [Best Practices for Durable R Code](https://appsilon.com/best-practices-for-durable-r-code/)
+
 # 11.08.2023
 ## R
 - [Four ways to write assertion checks in R](https://blog.djnavarro.net/posts/2023-08-08_being-assertive/)
@@ -2177,6 +2201,18 @@ Do you have indexing disabled for this project? See in `Tools` -> `Project Optio
 1. Включаем дебаг режим Sys.setenv(RSTUDIO_GREP_DEBUG = 1) 
 2. Смотрим сообщения в консоли после проведения поиска.
 3. Исправляем ошибки. В частности, могут быть ошибки, связанные в недоверенными директориями (новинки гита) или неправильным владельцем.
+
+- [How to add directory recursively on git safe.directory?](https://stackoverflow.com/questions/71855882/how-to-add-directory-recursively-on-git-safe-directory)
+	- вариант 1
+	From Git 2.36, you can also add * representing 'all' to the safe.directory. It's not recursive as you asked, but it may help depending upon your situation i.e.
+```
+git config --global --add safe.directory *
+```
+	- вариант 2
+What I did for now, but may not be the perfect solution, is to find all .git folders and add them through a find command.
+```
+find /full/path -name '.git' -type d -exec bash -c 'git config --global --add safe.directory ${0%/.git}' {} \;
+```
 
 # 04.07.2022
 ## Teradata
