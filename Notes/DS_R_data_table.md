@@ -232,6 +232,10 @@ When j is a character vector of column names, a numeric vector of column positio
 a data.table. with=FALSE is not necessary anymore to select columns dynamically. Note that `x[,cols]` is equivalent to `x[,..cols]` and to `x[,cols,with=FALSE]`
 and to `x[,.SD,.SDcols=cols]`.
 - [Why does “..” work to pass column names in a character vector variable?](https://stackoverflow.com/questions/45380628/why-does-work-to-pass-column-names-in-a-character-vector-variable)
+- [Distinguishing between an external variable and a column in a data table {duplicate}](https://stackoverflow.com/questions/50711849/distinguishing-between-an-external-variable-and-a-column-in-a-data-table)
+How do I get the following code to recognize the second a in `dt[a == a,]` as an external variable with value `3`?
+- [data.table `:=` assignments when variable has same name as a column](https://stackoverflow.com/questions/32738499/data-table-assignments-when-variable-has-same-name-as-a-column)
+`dt1[1, a := get("a", envir = .GlobalEnv)]` or use `..`
 - [Select subset of columns in data.table R {duplicate}](https://stackoverflow.com/questions/28094645/select-subset-of-columns-in-data-table-r/28094726#28094726)
 - [How to expand an ellipsis (…) argument without evaluating it in R](https://stackoverflow.com/questions/13353847/how-to-expand-an-ellipsis-argument-without-evaluating-it-in-r)
 - [Data.Table – everything you need to know to get you started in R](https://hutsons-hacks.info/data-table-everything-you-need-to-know-to-get-you-started-in-r)
@@ -369,6 +373,9 @@ When we store the column names on to a variable, e.g., DT_n = names(DT), and the
 	- [Importing data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-importing.html)
 - [How to pretty print data tables using the same pretty printing of tibbles?](https://stackoverflow.com/questions/68738066/how-to-pretty-print-data-tables-using-the-same-pretty-printing-of-tibbles)
 - Проблемы с `future`. [Issue with indexing data.tables passed to future_map_* #182 {Closed}](https://github.com/DavisVaughan/furrr/issues/182). Обсуждали [здесь](https://t.me/rlang_ru/130615)
+- [How to create an empty datatable with columns names and then append datatables to it?](https://stackoverflow.com/questions/37376398/how-to-create-an-empty-datatable-with-columns-names-and-then-append-datatables-t)
+	- [How to create a list with names but no entries in R/Splus?](https://stackoverflow.com/questions/5688020/how-to-create-a-list-with-names-but-no-entries-in-r-splus)
+	- [Create an Empty List of Specific Length in R](https://www.tutorialkart.com/r-tutorial/r-create-empty-list-of-specific-length/#gsc.tab=0)
 
 
 ## data.table joins

@@ -166,6 +166,11 @@ unlist(stri_split_lines(sha$stdout, omit_empty = TRUE)) %>%
 - [—равнение 5 команд Git: revert, checkout, reset, merge и rebase](https://proglib.io/p/sravnenie-5-komand-git-revert-checkout-reset-merge-i-rebase-2020-05-25)
 - [Git Revert](https://www.atlassian.com/git/tutorials/undoing-changes/git-revert)
 
+## ќткаты на специфические версии
+- [How can I switch my git repository to a particular commit](https://stackoverflow.com/questions/4940054/how-can-i-switch-my-git-repository-to-a-particular-commit)
+–аньше: `git checkout -b new_branch 6e559cb`
+“еперь можно проще: `git switch --detach revison`
+
 # GitHub authentication
 - [Git push results in УAuthentication FailedФ](https://stackoverflow.com/questions/17659206/git-push-results-in-authentication-failed). —нимаем галочки при инсталл€ции, чистим Windows Credential Manager
 

@@ -1271,6 +1271,22 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Bootstrapping (statistics)](https://en.wikipedia.org/wiki/Bootstrapping_(statistics)#History)
 - [Chapter 17 Randomization, Jackknife, and Bootstrap](https://bio723-class.github.io/Bio723-book/randomization-jackknife-and-bootstrap.html)
 
+# 21.08.2023
+## R
+- [How to create an empty datatable with columns names and then append datatables to it?](https://stackoverflow.com/questions/37376398/how-to-create-an-empty-datatable-with-columns-names-and-then-append-datatables-t)
+- [Create Empty DataFrame in R](https://sparkbyexamples.com/r-programming/r-create-an-empty-dataframe/)
+- [How to create a list with names but no entries in R/Splus?](https://stackoverflow.com/questions/5688020/how-to-create-a-list-with-names-but-no-entries-in-r-splus)
+- [Create an Empty List of Specific Length in R](https://www.tutorialkart.com/r-tutorial/r-create-empty-list-of-specific-length/#gsc.tab=0)
+- [How to Create Empty Vector in R](https://sparkbyexamples.com/r-programming/create-empty-vector-in-r/)
+- [winch](https://r-prof.github.io/winch/)
+Winch provides stack traces for call chains that cross between R and C function calls. This is a useful tool for developers of R packages where a substantial portion of the code is C or C++.
+- [Faucet](https://github.com/andyquinterom/Faucet) is an asynchronous runtime for running Plumber APIs. Faucet enables guaranteed concurrency and parallelism for Plumber APIs without the need for a promise based API. Faucet can run either locally or in a Kubernetes cluster.
+- COOL! [qgisprocess](https://r-spatial.github.io/qgisprocess/)
+The goal of qgisprocess is to provide an R interface to the geoprocessing algorithms of QGIS, a popular and open source desktop geographic information system (GIS) program.
+- [The Journey of Bringing webR into Shiny: Boost Performance, Improve Scalability](https://appsilon.com/bringing-webr-into-shiny/)
+
+- [What do I think about Community Notes?](https://vitalik.eth.limo/general/2023/08/16/communitynotes.html)
+
 # 16.08.2023
 ## Проблема с `renv::restore`. `[curl: (35) schannel: next InitializeSecurityContext failed: Unknown error (0x80092012)`.
 - [`renv:restore()` always fails in windows](https://stackoverflow.com/questions/67228070/renvrestore-always-fails-in-windows)
@@ -1294,6 +1310,8 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 ## R reusable code
 - Appsilon. [Best Practices for Durable R Code](https://appsilon.com/best-practices-for-durable-r-code/)
+- [Unable to install box with renv=1.0.0 #333 {Closed}](https://github.com/klmr/box/issues/333).
+Anyway, a simpler workaround is as follows: `renv::install("box", rebuild = FALSE)`
 
 # 11.08.2023
 ## R
