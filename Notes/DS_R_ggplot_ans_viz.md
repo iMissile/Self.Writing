@@ -534,6 +534,7 @@ colors = scales::col_numeric(
       na.color = "transparent"
     )
 ```
+- [How to customize background colors based on (characters, NA) contents in multiple columns using gt](https://stackoverflow.com/questions/71152567/how-to-customize-background-colors-based-on-characters-na-contents-in-multipl)
 - [R gt_table adjust row height](https://stackoverflow.com/questions/64127905/r-gt-table-adjust-row-height)
 - [Basic gt Styling Reference](https://adrumm.quarto.pub/basic-gt-styling-reference/)
 - gt & js

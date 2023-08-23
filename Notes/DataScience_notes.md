@@ -1002,6 +1002,15 @@ TL;DR zq is a command-line tool that uses the Zed language for pipeline-style se
 	- [How can I exclude all keys with a specific value inside a JSON with jq?](https://unix.stackexchange.com/questions/654725/how-can-i-exclude-all-keys-with-a-specific-value-inside-a-json-with-jq)
 	- [Using jq, remove keys that match a regular expression](https://stackoverflow.com/questions/61859923/using-jq-remove-keys-that-match-a-regular-expression)
 - [Sorting strings in an array with jq](https://stackoverflow.com/questions/69110148/sorting-strings-in-an-array-with-jq)
+- Удаляем ключи из JSON
+	- [How to remove a specific JSON object from a file?](https://unix.stackexchange.com/questions/700580/how-to-remove-a-specific-json-object-from-a-file). To delete any entry under .packages whose .name key has the value code: `jq 'del(.packages[] | select(.name == "code"))' file.json`
+	- COOL! Масса примеров реализации. [How can I delete all keys that don't match certain names with JQ?](https://stackoverflow.com/questions/71851534/how-can-i-delete-all-keys-that-dont-match-certain-names-with-jq)
+	- [How can I exclude all keys with a specific value inside a JSON with jq?](https://unix.stackexchange.com/questions/654725/how-can-i-exclude-all-keys-with-a-specific-value-inside-a-json-with-jq)
+	`del(..|select(. == null))`
+	- [jq: easiest way to recursively remove objects based on object value condition](https://stackoverflow.com/questions/34098002/jq-easiest-way-to-recursively-remove-objects-based-on-object-value-condition)
+	`walk(if (type == "object" and .delete_me) then del(.) else . end )`
+	- [jq Recipes](https://www.ditig.com/jq-recipes).
+		- [Delete keys from all JSON objects in document](https://www.ditig.com/jq-recipes#delete-objects)
 
 
 ## xml, xml-to-json
@@ -1154,14 +1163,9 @@ Stratification, CUPED, Variance-Weighted Estimators, and ML-based methods CUPAC 
 ## New York R 2023
 - David Smith, Principal Cloud Advocate at Microsoft. [Copilot for R, a supporting repository for a presentation](https://github.com/revodavid/copilot-for-r)
 - Mitchell O’Hara-Wild, Nectric. [From forecast to fable, design decisions for statistical software](https://slides.mitchelloharawild.com/nyr2023/)
-- Bob Rudis. [Into the WebR-Verse. Bringing the power of R to your browser and beyond](https://rud.is/w/2023-nyr-webr/?print-pdf=#/things-before-we-begin)
+- Bob Rudis. [Into the WebR-Verse. Bringing the power of R to your browser and beyond](https://rud.is/w/2023-nyr-webr/)
 - Emil Hvitfeldt. [Slidecraft: The Art of Creating Pretty Presentations](https://emilhvitfeldt.github.io/talk-nyr-slidecraft/)
 - Max Kuhn (Posit). [The Post-Modeling Model to Fix the Model](https://topepo.github.io/2023-07-NYR/)
-
-
-
-
-
 
 
 ## Appsilon Shiny 2023
@@ -1271,8 +1275,27 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Bootstrapping (statistics)](https://en.wikipedia.org/wiki/Bootstrapping_(statistics)#History)
 - [Chapter 17 Randomization, Jackknife, and Bootstrap](https://bio723-class.github.io/Bio723-book/randomization-jackknife-and-bootstrap.html)
 
+# webR
+- [How to run R code in the browser with webR](https://blog.djnavarro.net/posts/2023-04-09_webr/). In which the author gets unreasonably excited about a new thing.
+- Bob Rudis. [Into the WebR-Verse. Bringing the power of R to your browser and beyond](https://rud.is/w/2023-nyr-webr/)
+- [Building a Single Page Application with Python and Pyodide - Part 1](https://testdriven.io/blog/build-spa-with-python-part-1/)
+
+# 24.08.2023
+- [Инициализация переменной `lgr` при загрузке пакета](https://github.com/s-fleck/lgr/blob/cd21d695008e9adc0061c2e4eb44174388d364ce/R/lgr-package.R#L130). Ресет логгера
+```
+library(lgr)
+tf <- tempfile(fileext = ".info")
+lgr$add_appender(AppenderFile$new(tf), name = "file")
+logger_tree()
+# reset to default config
+basic_config()
+logger_tree()
+```
+
 # 21.08.2023
 ## R
+- COOL! [How to Display or Print Contents of Environment in R](https://stackoverflow.com/questions/50207263/how-to-display-or-print-contents-of-environment-in-r)
+`mget(ls(e1), envir = e1)` or `lapply(ls(),function(x)get(x))`
 - [How to create an empty datatable with columns names and then append datatables to it?](https://stackoverflow.com/questions/37376398/how-to-create-an-empty-datatable-with-columns-names-and-then-append-datatables-t)
 - [Create Empty DataFrame in R](https://sparkbyexamples.com/r-programming/r-create-an-empty-dataframe/)
 - [How to create a list with names but no entries in R/Splus?](https://stackoverflow.com/questions/5688020/how-to-create-a-list-with-names-but-no-entries-in-r-splus)

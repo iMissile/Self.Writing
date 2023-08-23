@@ -316,6 +316,9 @@ pl.Object
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
 
 
+# 24.08.2023
+- [fast_bitrix24](https://github.com/leshchenko1979/fast_bitrix24). API wrapper для Питона для быстрого получения данных от Битрикс24 через REST API.
+
 # 17.07.2023
 - [Lets-Plot 3.2.0](https://lets-plot.org/). An Open-source Plotting Library for Statistical Data. Based on ggplot grammar.
 - [Siuba](https://siuba.org/). Python Data Analysis from Start to Finish
