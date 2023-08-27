@@ -316,8 +316,14 @@ pl.Object
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
 
 
+# 26.08.2023
+- [pade](https://pypi.org/project/pade/). PADE its a framework for developing, executing and mannaging multi-agent systems in distributed computing enviroments. PADE code is 100% Python and has its core in Twisted, a python package for implementing distributed applications.
+
 # 24.08.2023
 - [fast_bitrix24](https://github.com/leshchenko1979/fast_bitrix24). API wrapper для Питона для быстрого получения данных от Битрикс24 через REST API.
+- [The Ibis Project](https://ibis-project.org/)
+The flexibility of Python analytics with the scale and performance of modern SQL.
+- [mo-sql-parsing](https://github.com/klahnakoski/mo-sql-parsing)Let's make a SQL parser so we can provide a familiar interface to non-sql datastores!
 
 # 17.07.2023
 - [Lets-Plot 3.2.0](https://lets-plot.org/). An Open-source Plotting Library for Statistical Data. Based on ggplot grammar.

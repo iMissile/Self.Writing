@@ -899,6 +899,11 @@ Yes, Bootstrapping method is an ideal way to do this. Basically for each median,
 	- [How to create a timeline of your CV in R](https://www.statsandr.com/blog/how-to-create-a-timeline-of-your-cv-in-r/)
 
 ## jq
+- Roadmap
+	- [Denotational Semantics and a Fast Interpreter for jq](https://arxiv.org/abs/2302.10576) by Michael Färber, 21 Feb 2023
+	- [About the jq's release process (Was: Is jq is still alive/maintained ?) #2305 {Open}](https://github.com/jqlang/jq/issues/2305)
+	- [jaq. A jq clone focussed on correctness, speed, and simplicity](https://github.com/01mf02/jaq)
+
 - [jq Language Description](https://github.com/stedolan/jq/wiki/jq-Language-Description)
 - [jqplay](https://jqplay.org/)
 - [jqterm](https://jqterm.com/). An alternative interactive jq web terminal with autocomplete
@@ -1002,6 +1007,9 @@ TL;DR zq is a command-line tool that uses the Zed language for pipeline-style se
 	- [How can I exclude all keys with a specific value inside a JSON with jq?](https://unix.stackexchange.com/questions/654725/how-can-i-exclude-all-keys-with-a-specific-value-inside-a-json-with-jq)
 	- [Using jq, remove keys that match a regular expression](https://stackoverflow.com/questions/61859923/using-jq-remove-keys-that-match-a-regular-expression)
 - [Sorting strings in an array with jq](https://stackoverflow.com/questions/69110148/sorting-strings-in-an-array-with-jq)
+- COOL! [Understanding jq's SQL style operators JOIN and INDEX](https://qmacro.org/blog/posts/2022/06/23/understanding-jq's-sql-style-operators-join-and-index/)
+	- [Определение функций INDEX/JOIN в коде jq](https://github.com/jqlang/jq/blob/080471b2a0b28f7435921789dfed25aed08eff81/src/builtin.jq#L267C1-L267C1)
+- [Understanding jq's reduce function](https://qmacro.org/blog/posts/2022/03/25/understanding-jq's-reduce-function/)
 - Удаляем ключи из JSON
 	- [How to remove a specific JSON object from a file?](https://unix.stackexchange.com/questions/700580/how-to-remove-a-specific-json-object-from-a-file). To delete any entry under .packages whose .name key has the value code: `jq 'del(.packages[] | select(.name == "code"))' file.json`
 	- COOL! Масса примеров реализации. [How can I delete all keys that don't match certain names with JQ?](https://stackoverflow.com/questions/71851534/how-can-i-delete-all-keys-that-dont-match-certain-names-with-jq)
@@ -1280,6 +1288,25 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - Bob Rudis. [Into the WebR-Verse. Bringing the power of R to your browser and beyond](https://rud.is/w/2023-nyr-webr/)
 - [Building a Single Page Application with Python and Pyodide - Part 1](https://testdriven.io/blog/build-spa-with-python-part-1/)
 
+## duckDB
+- [DBeaver SQL IDE](https://duckdb.org/docs/guides/sql_editors/dbeaver.html)
+- [Querying Postgres Tables Directly From DuckDB](https://duckdb.org/2022/09/30/postgres-scanner)
+- [DuckDB for Quarto](https://observablehq.com/@rlesur/quarto-duckdb)
+- [An introduction to SQL with DuckDB](https://observablehq.com/@rlesur/quarto-duckdb)
+- [R API](https://duckdb.org/docs/api/r.html)
+- [Create a (virtual) DuckDB table from an Arrow object](https://arrow.apache.org/docs/r/reference/to_duckdb.html)
+- [DuckDB quacks Arrow: A zero-copy data integration between Apache Arrow and DuckDB](https://duckdb.org/2021/12/03/duck-arrow.html)
+
+### duckDB articles
+- [R duckdb examples](https://github.com/duckdb/duckdb/commit/a2c4a58b7a92ab023a3b353ed970004f32f1423d)
+- [My thoughts on DuckDB and R with examples](https://bwlewis.github.io/duckdb_and_r/). Много сравнений различных подходов в R.
+	- Slides! Отличная презентация. [On DuckDB and R](https://bwlewis.github.io/duckdb_and_r/talk/talk.html) by Bryan W. Lewis for the Cleveland R User Group, June 2021
+- [A Beginner’s Guide to Using DuckDB with Stock Price Data in R](https://robotwealth.com/a-beginners-guide-to-using-duckdb-with-stock-price-data-in-r/)
+- [Vite + 🦆 DuckDB via Observable's Standard Library](https://rud.is/w/vite-duckdb/)
+- [DuckDB/SQL: Pivot - 0 if null](https://www.markhneedham.com/blog/2023/06/07/duckdb-sql-pivot-0-if-null/)
+
+
+
 # 24.08.2023
 - [Инициализация переменной `lgr` при загрузке пакета](https://github.com/s-fleck/lgr/blob/cd21d695008e9adc0061c2e4eb44174388d364ce/R/lgr-package.R#L130). Ресет логгера
 ```
@@ -1291,6 +1318,27 @@ logger_tree()
 basic_config()
 logger_tree()
 ```
+- SQL connection. [sql code cells feature #26 {Open}](https://github.com/quarto-dev/quarto/issues/26)
+[yihui commented on Sep 8, 2022 • ](https://github.com/quarto-dev/quarto/issues/26#issuecomment-1353609830)
+!!! so any of the following syntax variants should work:
+- [Using sql chunks in Rmarkdown with query parameters](https://stackoverflow.com/questions/62466760/using-sql-chunks-in-rmarkdown-with-query-parameters).
+`{sql, connection=wcon, output.var="x"}`
+
+## shiny
+- COOL! [Good way to create a "reactive-aware" R6 class](https://community.rstudio.com/t/good-way-to-create-a-reactive-aware-r6-class/84890)
+- [Create a reactive trigger](https://github.com/daattali/advanced-shiny/tree/master/reactive-trigger)
+- [How to run an observer chain _exactly_ once on application startup](https://community.rstudio.com/t/how-to-run-an-observer-chain-exactly-once-on-application-startup/92775)
+- [increment reactivevalue inside invalidatelater observer](https://stackoverflow.com/questions/54364680/increment-reactivevalue-inside-invalidatelater-observer)
+So, something like this seems to work:
+```	
+  vals = reactiveValues(df = init, i=0)
+  output$question <- renderText({vals$df[vals$i, "question"]})
+  observe({
+    invalidateLater(5000)
+    isolate(vals$i <- vals$i + 1)
+  })
+```
+- [Mastering Shiny. 16 Escaping the graph](https://mastering-shiny.org/reactivity-components.html#reactivity-components)
 
 # 21.08.2023
 ## R
@@ -1307,6 +1355,8 @@ Winch provides stack traces for call chains that cross between R and C function 
 - COOL! [qgisprocess](https://r-spatial.github.io/qgisprocess/)
 The goal of qgisprocess is to provide an R interface to the geoprocessing algorithms of QGIS, a popular and open source desktop geographic information system (GIS) program.
 - [The Journey of Bringing webR into Shiny: Boost Performance, Improve Scalability](https://appsilon.com/bringing-webr-into-shiny/)
+- Весьма любопытно: [ABM: Agent Based Model Simulation Framework](https://cran.r-project.org/web/packages/ABM/index.html)
+- [A multi-agent-based system for two-stage scheduling problem of offshore project](https://journals.sagepub.com/doi/full/10.1177/1687814017720882)
 
 - [What do I think about Community Notes?](https://vitalik.eth.limo/general/2023/08/16/communitynotes.html)
 
@@ -1351,9 +1401,6 @@ What makes a ML model a black-box? It is the interactions. Without any interacti
 	- [R (rstats) templates for OpenFaaS](https://github.com/analythium/openfaas-rstats-templates)
 - COOL! [Functions for data science with R templates for OpenFaaS {Function as a Service}](https://www.openfaas.com/blog/r-templates/)
 Learn how to combine the power of R with Serverless for data science.
-
-## DuckDB
-- [Querying Postgres Tables Directly From DuckDB](https://duckdb.org/2022/09/30/postgres-scanner)
 
 ## Apache Kafka
 - Куча отличных материалов. [Markus Günther repos](https://github.com/mguenther?tab=repositories). Freelance Software Engineer / Architect
@@ -5085,6 +5132,7 @@ Convert SQL Server DateTime to milliseconds Since 1970 (UNIX Epoch Time).
 - [Test fixtures](https://testthat.r-lib.org/articles/test-fixtures.html)
 
 ## R
+- [yyjson: the fastest JSON library in C](https://github.com/ibireme/yyjson), бьет даже rcppsimdjson
 - simdJson:
 	- COOL! [simdjson : Parsing gigabytes of JSON per second](https://github.com/simdjson/simdjson)
 	- COOL! Query object use RFC [JavaScript Object Notation (JSON) Pointer](https://datatracker.ietf.org/doc/html/rfc6901). Details: [add support for query language (e.g., a simple subset of JSONPath) #95 {Closed}](https://github.com/simdjson/simdjson/issues/95)
