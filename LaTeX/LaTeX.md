@@ -60,13 +60,14 @@ You can also declare a new font family to use it in arbitrary situations:
 - [Putting two images beside each other](https://tex.stackexchange.com/questions/148438/putting-two-images-beside-each-other)
 
 ## Редакторы картинок для LaTeX:
-	- [Detexify](http://detexify.kirelabs.org/classify.html)
-	- [LaTeXDraw](http://latexdraw.sourceforge.net/) is a graphical drawing editor for LaTeX. LaTeXDraw can be used to 1) generate PSTricks code; 2) directly create PDF or PS pictures. LaTeXDraw is developed in Java and thus runs on top of Linux, Windows, and Mac OS X. You need Java 8 to launch LaTeXDraw.
-	- [Math](https://www.mathcha.io/) Online Mathematics Editor, a fast way to write and share mathematics
-	- [GeoGebra Math Apps](https://www.geogebra.org/)
+- [Detexify](http://detexify.kirelabs.org/classify.html)
+- [LaTeXDraw](http://latexdraw.sourceforge.net/) is a graphical drawing editor for LaTeX. LaTeXDraw can be used to 1) generate PSTricks code; 2) directly create PDF or PS pictures. LaTeXDraw is developed in Java and thus runs on top of Linux, Windows, and Mac OS X. You need Java 8 to launch LaTeXDraw.
+- [Math](https://www.mathcha.io/) Online Mathematics Editor, a fast way to write and share mathematics
+- [GeoGebra Math Apps](https://www.geogebra.org/)
 Get our free online math tools for graphing, geometry, 3D, and more!
-	- [TikzEdt](http://www.tikzedt.org/) is a combined WYSIWYG/text editor designed for editing Tikz code.
-	- [Yichuan Shen's tikzcd-editor](http://tikzcd.yichuanshen.de/)
+- [TikZEdt](http://www.tikzedt.org/) is a combined WYSIWYG/text editor designed for editing Tikz code.
+- COOL! [TikZiT](https://tikzit.github.io/). TikZiT is a super simple GUI editor for graphs and string diagrams. Its native file format is a subset of PGF/TikZ, which means TikZiT files can be included directly in papers typeset using LaTeX. 
+- [Yichuan Shen's tikzcd-editor](http://tikzcd.yichuanshen.de/)
 - [An Overleaf extension for recognizing symbols](https://latex.net/extexify/)
 - [List of TikZ Editor {duplicate}](https://tex.stackexchange.com/questions/80418/list-of-tikz-editor)
 - COOL! [LaTeX Graphics using TikZ: A Tutorial for Beginners (Part 2)—Generating TikZ Code from GeoGebra](https://ru.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ%3A_A_Tutorial_for_Beginners_(Part_2)%E2%80%94Generating_TikZ_Code_from_GeoGebra)
@@ -74,6 +75,11 @@ Get our free online math tools for graphing, geometry, 3D, and more!
 - [Need help to export tikz code from geogebra](https://tex.stackexchange.com/questions/445331/need-help-to-export-tikz-code-from-geogebra)
 
 ## TikZ
+
+### TikZ & R
+- [tikzDevice](https://daqana.github.io/tikzDevice/). The tikzDevice package provides a graphics output device for R that records plots in a LaTeX-friendly format. 
+	- COOL! [tikzDevice v0.12.3](https://stubner.me/2019/08/tikzdevice-v0-12-3/)
+
 1.1
 https://texample.net/tikz/examples/angles-quotes/
 

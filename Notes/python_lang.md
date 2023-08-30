@@ -318,6 +318,11 @@ pl.Object
 
 # 26.08.2023
 - [pade](https://pypi.org/project/pade/). PADE its a framework for developing, executing and mannaging multi-agent systems in distributed computing enviroments. PADE code is 100% Python and has its core in Twisted, a python package for implementing distributed applications.
+- [py_yyjson](https://pypi.org/project/yyjson/). yyjson bindings for python
+- [Ponder](https://ponder.io/). Enterprise-Ready Data Science at Your Fingertips
+Ponder helps you run your Python data workflows at scale directly in your data warehouse. Seamlessly move from prototype to production using the tools that data teams know and love.
+	- [Professional Pandas: Indexing with Pandas Iloc](https://ponder.io/professional-pandas-indexing-with-pandas-iloc/)
+	- [Professional Pandas: Indexing with Pandas Loc](https://ponder.io/professional-pandas-indexing-with-pandas-loc/)
 
 # 24.08.2023
 - [fast_bitrix24](https://github.com/leshchenko1979/fast_bitrix24). API wrapper для Питона для быстрого получения данных от Битрикс24 через REST API.

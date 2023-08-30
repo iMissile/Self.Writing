@@ -1296,6 +1296,8 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [R API](https://duckdb.org/docs/api/r.html)
 - [Create a (virtual) DuckDB table from an Arrow object](https://arrow.apache.org/docs/r/reference/to_duckdb.html)
 - [DuckDB quacks Arrow: A zero-copy data integration between Apache Arrow and DuckDB](https://duckdb.org/2021/12/03/duck-arrow.html)
+- [Fastest table sort in the West - Redesigning DuckDB’s sort](https://duckdb.org/2021/08/27/external-sorting.html)
+- [Modern Data Stack in a Box with DuckDB](https://duckdb.org/2022/10/12/modern-data-stack-in-a-box.html)
 
 ### duckDB articles
 - [R duckdb examples](https://github.com/duckdb/duckdb/commit/a2c4a58b7a92ab023a3b353ed970004f32f1423d)
@@ -1304,8 +1306,24 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [A Beginner’s Guide to Using DuckDB with Stock Price Data in R](https://robotwealth.com/a-beginners-guide-to-using-duckdb-with-stock-price-data-in-r/)
 - [Vite + 🦆 DuckDB via Observable's Standard Library](https://rud.is/w/vite-duckdb/)
 - [DuckDB/SQL: Pivot - 0 if null](https://www.markhneedham.com/blog/2023/06/07/duckdb-sql-pivot-0-if-null/)
+- [Insert into duckdb table using dplyr](https://stackoverflow.com/questions/72792818/insert-into-duckdb-table-using-dplyr) or [Is it possible to insert (add) a row to a SQLite db table using dplyr package?](https://stackoverflow.com/questions/26568182/is-it-possible-to-insert-add-a-row-to-a-sqlite-db-table-using-dplyr-package/26784801#26784801)
+Use SQL statements such as `INSERT INTO`. "You can, but you shouldn't. dplyr is designed specifically for retrieving data from databases, not modifying in place. This answer uses internal functions - I strongly recommend against using these functions." – Hadley
+- [yyjson. The fastest JSON library in C](https://github.com/ibireme/yyjson)
+- [Use dbt and Duckdb instead of Spark in data pipelines](https://medium.com/datamindedbe/use-dbt-and-duckdb-instead-of-spark-in-data-pipelines-9063a31ea2b5)
+- [dbt-duckdb](https://github.com/jwills/dbt-duckdb).
+dbt (http://getdbt.com) adapter for DuckDB (http://duckdb.org)
 
 
+
+# 30.08.2023
+## DS
+- COOL! [Watching Neural Networks Learn](https://www.youtube.com/watch?v=TkwXa7Cvfr8)
+- [KalDB](https://github.com/slackhq/kaldb) is a cloud-native search and analytics engine for log, trace, and audit data
+- [Malloy](https://www.malloydata.dev/). The new, elegant, modern open source language for analyzing, transforming, and modeling data.
+- Обнаружилась ошибка при запуске в браузере VsCode с примерами Malloy. [Error loading webview: Service Workers are not enabled in browser. Webviews will not work. #2038 {Closed}](https://github.com/coder/code-server/issues/2038). Решение: What ultimately solved the issue for me is disabling this new feature in Firefox meant to stop inter-site tracking. Other browsers may have similar features, so if anyone else is having issues with webview, try disabling features like Total Cookie Protection. The screenshot below is off the checkbox I unticked to make Codespaces work.
+	- Содержательная дискуссия [Malloy – A Better SQL, from Looker (github.com/looker-open-source)](https://news.ycombinator.com/item?id=30053860)
+- [dbt™](https://www.getdbt.com/product/what-is-dbt/) is a SQL-first transformation workflow that lets teams quickly and collaboratively deploy analytics code following software engineering best practices like modularity, portability, CI/CD, and documentation. Now anyone on the data team can safely contribute to production-grade data pipelines.
+- COOL! [Miller](https://miller.readthedocs.io/en/6.8.0/). Miller is a command-line tool for querying, shaping, and reformatting data files in various formats including CSV, TSV, JSON, and JSON Lines.
 
 # 24.08.2023
 - [Инициализация переменной `lgr` при загрузке пакета](https://github.com/s-fleck/lgr/blob/cd21d695008e9adc0061c2e4eb44174388d364ce/R/lgr-package.R#L130). Ресет логгера
@@ -4948,9 +4966,6 @@ Last update: 2020-12-02
 # 30.11.2020
 ## R
 - [Miller](https://github.com/johnkerl/miller) is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON
-## LaTeX
-- COOL! [TikZiT](https://tikzit.github.io/)
-TikZiT is a super simple GUI editor for graphs and string diagrams. Its native file format is a subset of PGF/TikZ, which means TikZiT files can be included directly in papers typeset using LaTeX. 
 
 # 27.11.2020
 ## Random Forest
@@ -8434,7 +8449,6 @@ This is the new home for experimental binaries and documentation related to R fo
 
 # 09.08.2019
 ## R
-- COOL! [tikzDevice v0.12.3](https://stubner.me/2019/08/tikzdevice-v0-12-3/)
 - [Speeding up Bayesian sampling with map_rect](https://www.briancallander.com/posts/map_rect/speeding_up_bayesian_sampling_with_map_rect.html)
 
 # 08.08.2019

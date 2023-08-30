@@ -1,4 +1,12 @@
 
+# 30.08.2023
+- [Векторный анализ и визуализация](https://www.wolfram.com/language/fast-introduction-for-math-students/ru/vector-analysis-and-visualization/). В Языке Wolfram n-мерные вектора представляются в виде списков длиной n.
+Вычислим скалярное произведение двух векторов:
+```
+In[1]:=	{1, 2, 3}.{a, b, c}
+Out[1]=	2 + 2b + 3c
+```
+
 # 17.08.2023
 - [Implement a recursive formula with internal sum](https://mathematica.stackexchange.com/questions/207288/implement-a-recursive-formula-with-internal-sum)
 - [Examples for Recurrences](https://www.wolframalpha.com/examples/mathematics/discrete-mathematics/recurrences)
