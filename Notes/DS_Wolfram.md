@@ -6,6 +6,32 @@
 In[1]:=	{1, 2, 3}.{a, b, c}
 Out[1]=	2 + 2b + 3c
 ```
+- Решение в целых числах (диофантовы уравнения)
+	- [Diophantine Equations](https://reference.wolfram.com/language/guide/DiophantineEquations.html)
+	- [Getting actual integer solutions to an equation in Mathematica?](https://stackoverflow.com/questions/26411763/getting-actual-integer-solutions-to-an-equation-in-mathematica)
+	I'm trying to solve an equation using Mathematica but I can't seem to get any actual answers.
+`Solve[(5*d) + (216*b) == 1, {d, b}, Integers]`
+	Solve gives you **the** solution. If you want **a** solution, change that to FindInstance:
+`FindInstance[(5*d) + (216*b) == 1, {d, b}, Integers]`
+which would be:
+`{{d -> 173, b -> -4}}`
+	- Нелинейный случай. [How to find integer solutions?](https://mathematica.stackexchange.com/questions/42359/how-to-find-integer-solutions)
+	См. `Reduce`, `ToRules`
+
+## Считаем площадь плоской фигуры
+- [Triangle Area](https://mathworld.wolfram.com/TriangleArea.html)
+- [Polygon Area](https://mathworld.wolfram.com/PolygonArea.html
+- [Calculate area of a triangle](https://mathematica.stackexchange.com/questions/172871/calculate-area-of-a-triangle)
+- [How do I calculate the area of a polygon given its coordinates?](https://mathematica.stackexchange.com/questions/31241/how-do-i-calculate-the-area-of-a-polygon-given-its-coordinates)
+In version 10, many graphics primitives, including `Polygon`, can be treated as geometric regions. Use `RegionMeasure`:
+```
+poly=Polygon[{{0, 200 }, {200, 100}, {500, 300}, {100, 700}}];
+
+RegionMeasure[poly]
+(* 155000 *)
+```
+- [How do I calculate area in polygon from x and y points in R?](https://stackoverflow.com/questions/61975159/how-do-i-calculate-area-in-polygon-from-x-and-y-points-in-r)
+- [Площадь простого многоульника](http://contester.ddns.is74.ru:82/gribennik/)
 
 # 17.08.2023
 - [Implement a recursive formula with internal sum](https://mathematica.stackexchange.com/questions/207288/implement-a-recursive-formula-with-internal-sum)
@@ -46,7 +72,7 @@ Solve[ 2^n - n - q 10^k == 0 && 1 <= k <= 3 && 0 <= n < If[ k == 1, 2, 1] 10^k,
 
 ### Systems of Congruences
 - Solve a single congruence equation:
-[solve 5x =2 (mod 3)](https://www.wolframalpha.com/input/?i=solve+5x+%3D2+(mod+3)&lk=3)
+[solve 5x = 2 (mod 3)](https://www.wolframalpha.com/input/?i=solve+5x+%3D2+(mod+3)&lk=3)
 - Solve systems of congruences:
 [solve 2x = 10 (mod 12), 3x = 9 (mod 12)](https://www.wolframalpha.com/input/?i=solve+2x+%3D+10+(mod+12)%2C+3x+%3D+9+(mod+12)&lk=3)
 - Check if values are equivalent under a given modulus:

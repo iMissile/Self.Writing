@@ -1221,6 +1221,7 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Конспект докладов](https://tazinho.github.io/rstudio_conf_notes.html)
 
 ## UseR! 2022
+- [Conference Program Schedule](https://user2022.r-project.org/program/overview/)
 - [Improvements in text preprocessing using textrecipes](https://emilhvitfeldt.github.io/useR2022-textrecipes/#/section)
 
 ## UseR! 2021
@@ -1313,7 +1314,13 @@ Use SQL statements such as `INSERT INTO`. "You can, but you shouldn't. dplyr is 
 - [dbt-duckdb](https://github.com/jwills/dbt-duckdb).
 dbt (http://getdbt.com) adapter for DuckDB (http://duckdb.org)
 
-
+# 06.09.2023
+## R
+- COOL! Сам пока не пробовал, но Макс Кун хвалил [hstats](https://mayer79.github.io/hstats/). Fast, model-agnostic interaction statistics of Friedman and Popescu (2008)
+- [list members can be accessed with partial name? Is this a feature?](https://stackoverflow.com/questions/48525972/list-members-can-be-accessed-with-partial-name-is-this-a-feature)
+Yes, $ will do partial matching. Check the R document of the $ function by typing in the console
+?`$`.
+According to Hadley Wickham's book "Advanced R", you can turn off the partial matching of $ by setting the global option warnPartialMatchDollar to TRUE, but it may affect behavior in other code you have loaded, e.g. from a package.
 
 # 30.08.2023
 ## DS
@@ -1324,6 +1331,13 @@ dbt (http://getdbt.com) adapter for DuckDB (http://duckdb.org)
 	- Содержательная дискуссия [Malloy – A Better SQL, from Looker (github.com/looker-open-source)](https://news.ycombinator.com/item?id=30053860)
 - [dbt™](https://www.getdbt.com/product/what-is-dbt/) is a SQL-first transformation workflow that lets teams quickly and collaboratively deploy analytics code following software engineering best practices like modularity, portability, CI/CD, and documentation. Now anyone on the data team can safely contribute to production-grade data pipelines.
 - COOL! [Miller](https://miller.readthedocs.io/en/6.8.0/). Miller is a command-line tool for querying, shaping, and reformatting data files in various formats including CSV, TSV, JSON, and JSON Lines.
+
+## GIS
+- article [Maps, Coordinate Reference Systems and Visualising Geographic Data with mapmisc (2016)](https://journal.r-project.org/archive/2016-1/brown.pdf)
+- [Coordinate Reference Systems (CRS)](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/coordinate_reference_systems.html#coordinate-reference-systems)
+- [Geographic coordinate system (GCS)](https://kodu.ut.ee/~kmoch/geopython2020/L2/crs-projections.html#geographic-coordinate-system-gcs)
+- [Adding convex hull to ggplot map](https://stackoverflow.com/questions/48690755/adding-convex-hull-to-ggplot-map)
+	- I came here to admire the `slice(chull())`. Elegant, nice!
 
 # 24.08.2023
 - [Инициализация переменной `lgr` при загрузке пакета](https://github.com/s-fleck/lgr/blob/cd21d695008e9adc0061c2e4eb44174388d364ce/R/lgr-package.R#L130). Ресет логгера
@@ -1394,6 +1408,10 @@ The goal of qgisprocess is to provide an R interface to the geoprocessing algori
 	2. Ставим boost: `pacman -Sy mingw-w64-ucrt-x86_64-boost`
 	3. Не получилось собрать `Matrix`, ставим еще: `pacman -Sy mingw-w64-{i686,x86_64}-boost`
 Так что если не удается внутри `renv` поставить пакет с помощью `renv::install` или `install.packages()`, то надо изменить метод загрузки.
+- renv cellar
+	- [The package cellar](https://rstudio.github.io/renv/articles/package-sources.html?q=cellar#the-package-cellar)
+	- [The Package Cellar](https://rstudio.github.io/renv/articles/cellar.html)
+In some cases, your project may depend on R packages which are not available from any external source, or that external source may not accessible from the machine calling `renv::restore()`.
 
 ## R
 - [`rlang`. Unlock an environment](https://rlang.r-lib.org/reference/env_unlock.html?q=env_u#ref-usage)
