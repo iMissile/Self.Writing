@@ -1098,6 +1098,7 @@ Simplifies regression tests by comparing objects produced by test code with earl
 
 
 ## R и 64 бит
+- [RcppInt64](https://dirk.eddelbuettel.com/code/rcpp.int64.html): Bindings for Passing integer64 To And From C++
 - [REALLY LARGE NUMBERS IN R](http://theautomatic.net/2019/08/16/really-large-numbers-in-r/). This post will discuss ways of handling huge numbers in R using the gmp package.
 - [In R is it better to use integer64, numeric, or character for large integer id numbers?](https://stackoverflow.com/questions/35171760/in-r-is-it-better-to-use-integer64-numeric-or-character-for-large-integer-id-n)
 - [R in a 64 bit world](http://www.win-vector.com/blog/2015/06/r-in-a-64-bit-world/)
@@ -1314,6 +1315,16 @@ Use SQL statements such as `INSERT INTO`. "You can, but you shouldn't. dplyr is 
 - [dbt-duckdb](https://github.com/jwills/dbt-duckdb).
 dbt (http://getdbt.com) adapter for DuckDB (http://duckdb.org)
 
+# ML
+- Andrej Karpathy blog
+	- [Deep Neural Nets: 33 years ago and 33 years from now](https://karpathy.github.io/2022/03/14/lecun1989/). Перевод: [Andrej Karpathy: глубокие нейросети 33 года назад и 33 года спустя](https://habr.com/ru/articles/724286/)
+	- [Hacker's guide to Neural Networks](https://karpathy.github.io/neuralnets/)
+- [CS231n Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io/). These notes accompany the Stanford CS class CS231n
+- [Yes you should understand backprop](https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b)
+- [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html). A course by Andrej Karpathy on building neural networks, from scratch, in code.
+	- Neural Networks: Zero to Hero [Repo](https://github.com/karpathy/nn-zero-to-hero)
+- [Exponentially Weighted Moving Average (EWMA)](https://corporatefinanceinstitute.com/resources/capital-markets/exponentially-weighted-moving-average-ewma/). Используется в подстройке Learning Rate в Gradient descent.
+
 # 06.09.2023
 ## R
 - COOL! Сам пока не пробовал, но Макс Кун хвалил [hstats](https://mayer79.github.io/hstats/). Fast, model-agnostic interaction statistics of Friedman and Popescu (2008)
@@ -1333,6 +1344,10 @@ According to Hadley Wickham's book "Advanced R", you can turn off the partial ma
 - COOL! [Miller](https://miller.readthedocs.io/en/6.8.0/). Miller is a command-line tool for querying, shaping, and reformatting data files in various formats including CSV, TSV, JSON, and JSON Lines.
 
 ## GIS
+- COOL! Robin Lovelace [OpenGeoHub Summer School 2023](https://ogh23.robinlovelace.net/)
+- COOL! [Geographic data analysis in `R` and `Python`: comparing code and outputs for vector data](https://geocompx.org/post/2023/ogh23/)
+	Отсюда идут две ссылки на материалы семинаров Rю Lovelace!, см выше.
+- Slides [Spatial Data Science with R](https://www.paulamoraga.com/presentation-course/#1) by Paula Moraga, Ph.D.
 - article [Maps, Coordinate Reference Systems and Visualising Geographic Data with mapmisc (2016)](https://journal.r-project.org/archive/2016-1/brown.pdf)
 - [Coordinate Reference Systems (CRS)](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/coordinate_reference_systems.html#coordinate-reference-systems)
 - [Geographic coordinate system (GCS)](https://kodu.ut.ee/~kmoch/geopython2020/L2/crs-projections.html#geographic-coordinate-system-gcs)

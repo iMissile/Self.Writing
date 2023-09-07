@@ -1383,7 +1383,6 @@ get_os <- function() {
 
 ## DS
 - [Regex was taking 5 days to run. So I built a tool that did it in 15 minutes.](https://medium.freecodecamp.org/regex-was-taking-5-days-flashtext-does-it-in-15-minutes-55f04411025f)
-- [Back-Propagation is very simple. Who made it Complicated ?](https://medium.com/@14prakash/back-propagation-is-very-simple-who-made-it-complicated-97b794c97e5c)
 - COOL! [RethinkDB. The open-source database for the realtime web](https://www.rethinkdb.com/)
 - COOL! [22 Free and Open Source Data Visualization Tools to Grow Your Business](https://blog.capterra.com/free-and-open-source-data-visualization-tools/)
 	- COOL! [RAW Graphs](https://rawgraphs.io/). The missing link between spreadsheets and data visualization.

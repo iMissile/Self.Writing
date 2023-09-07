@@ -11,6 +11,10 @@
 - [Ubuntu. Boot has 0 Mb](https://askubuntu.com/questions/218783/the-volume-boot-has-only-0-bytes-disk-space-remaining)
 `sudo apt-get autoclean && sudo apt-get autoremove`
 
+# Upgrade
+- [How to upgrade](https://ubuntu.com/server/docs/upgrade-introduction). This article details how to upgrade an Ubuntu Server or Ubuntu cloud image to the next release.
+- [How to upgrade from Ubuntu 20.04 LTS to 22.04 LTS](https://www.cyberciti.biz/faq/upgrade-ubuntu-20-04-lts-to-22-04-lts/)
+
 # shell commands
 - [Linux cp command](https://www.computerhope.com/unix/ucp.htm)
 - [Linux Rename File Command](https://www.cyberciti.biz/faq/linux-rename-file/)

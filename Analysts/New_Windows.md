@@ -894,3 +894,6 @@ If you are using the curl command line tool on Windows, curl will search for a C
 - [Batch resize images and output images to new folder with ImageMagick](https://stackoverflow.com/questions/14304480/batch-resize-images-and-output-images-to-new-folder-with-imagemagick)
 - [How do I batch-resize images in ImageMagick while maintaining aspect ratio and a max width and height?](https://stackoverflow.com/questions/56305138/how-do-i-batch-resize-images-in-imagemagick-while-maintaining-aspect-ratio-and-a)
 - [Command-line Basics: Resizing Images with ImageMagick](https://www.digitalocean.com/community/tutorials/workflow-resizing-images-with-imagemagick)
+
+# эмулятор Android на Windows
+- [BlueStack](https://www.bluestacks.com/)
