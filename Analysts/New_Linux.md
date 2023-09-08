@@ -1,6 +1,9 @@
 # Блоги и сборники рецептов
 - [Linux Tips, Tricks and Tutorials | Linuxize](https://linuxize.com/)
 
+# другие дистрибутивы
+- [Reasons for which I don't use Manjaro anymore](https://github.com/arindas/manjarno)
+
 # SSD
 - [Настройка Ubuntu для работы с SSD](http://help.ubuntu.ru/wiki/ssd)
 - [Ubuntu Gnome 16.04 LTS{How-to} установка на SSD или SSD+HDD в UEFI, часть 1](https://www.youtube.com/watch?v=F_QtH-0eZB8)

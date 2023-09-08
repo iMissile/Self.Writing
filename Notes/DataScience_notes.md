@@ -1332,6 +1332,15 @@ dbt (http://getdbt.com) adapter for DuckDB (http://duckdb.org)
 Yes, $ will do partial matching. Check the R document of the $ function by typing in the console
 ?`$`.
 According to Hadley Wickham's book "Advanced R", you can turn off the partial matching of $ by setting the global option warnPartialMatchDollar to TRUE, but it may affect behavior in other code you have loaded, e.g. from a package.
+- tidyeval, `:=`
+	- [Tidy eval now supports glue strings](https://www.tidyverse.org/blog/2020/02/glue-strings-and-tidy-eval/). You can now use glue strings in result names. Note that for technical reasons you need the Walrus operator `:=` instead of the usual `=`.
+	- [Dynamic dots features](https://rlang.r-lib.org/reference/dyn-dots.html)
+	- [Programming with dplyr](https://dplyr.tidyverse.org/articles/programming.html)
+- [pak 0.6.0](https://www.tidyverse.org/blog/2023/09/pak-0-6-0/)
+
+## Stat
+- COOL! [marginaleffects](https://github.com/vincentarelbundock/marginaleffects). R package to compute and plot predictions, slopes, marginal means, and comparisons (contrasts, risk ratios, odds, etc.) for over 80 classes of statistical models. Conduct linear and non-linear hypothesis tests, or equivalence tests. Calculate uncertainty estimates using the delta method, bootstrapping, or simulation-based inference.
+- COOL! [emmeans](https://cran.r-project.org/web/packages/emmeans/index.html): Estimated Marginal Means, aka Least-Squares Means
 
 # 30.08.2023
 ## DS
