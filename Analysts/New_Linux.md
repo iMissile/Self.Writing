@@ -117,6 +117,22 @@ sudo snap install pdftk
 # ubuntu не загружается, только GRUB виден
 - [How do I boot my PC from GRUB? {duplicate}](https://askubuntu.com/questions/929833/how-do-i-boot-my-pc-from-grub)
 
+# установка на изолированной машине
+С помощью доп. ключей установщика можно подготовить полные сборки бинарников на билд машине и перетащить их потом на машину в закрытом контуре.
+Информация от Игоря по centos, наработки из STC:
+```
+dnf install --downloadonly --downloaddir=/root/epel-packages/gdal-devel/ gdal-devel
+cd /root/epel-packages/gdal-devel/ && rpm -ivh *.rpm
+```
+Детально можно читать в инете, например:
+- centos
+	- [Download RPM Package Using DNF without Installing it](https://linuxopsys.com/topics/download-rpm-using-dnf)
+	- [Download RPM packages locally with DNF](https://nts.strzibny.name/download-rpm-packages-locally-with-dnf/)
+- ubuntu
+	- [How to download deb packages using apt in Ubuntu and Debian](https://www.simplified.guide/ubuntu/apt-download-only)
+	- [How to download package not install it with apt-get command?](https://unix.stackexchange.com/questions/408346/how-to-download-package-not-install-it-with-apt-get-command)
+
+
 # проблемы с менеджером пакетов
 - [Как исправить ошибку «E: Could not get lock /var/lib/dpkg/lock» в Ubuntu Linux](https://omgubuntu.ru/kak-ispravit-oshibku-e-could-not-get-lock-var-lib-dpkg-lock-v-ubuntu-linux/)
 

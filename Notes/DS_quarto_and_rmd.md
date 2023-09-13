@@ -450,6 +450,11 @@ Tidying and splitting model summaries for inline reporting
 
 # ==================================================
 
+# 14.09.2023
+## quarto plugins
+- [highlightword Extension For Quarto](https://github.com/EmilHvitfeldt/quarto-revealjs-highlightword). Revealjs plugin to highlight specific parts of code.
+- [codewindow Extension For Quarto](https://github.com/EmilHvitfeldt/quarto-revealjs-codewindow). Add styled codeblock windows for code.
+
 # 17.07.2023
 - [rstudio::conf 2022 Workshop. Getting Started with Quarto](https://rstudio-conf-2022.github.io/get-started-quarto/) by Tom Mock
 

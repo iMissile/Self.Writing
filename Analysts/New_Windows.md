@@ -897,3 +897,7 @@ If you are using the curl command line tool on Windows, curl will search for a C
 
 # эмулятор Android на Windows
 - [BlueStack](https://www.bluestacks.com/)
+
+# wake-up
+- [How To Automatically Turn On Computer and/or Wake Computer Up](https://learn.microsoft.com/en-us/answers/questions/422921/how-to-automatically-turn-on-computer-and-or-wake)
+- [How to Schedule Windows 10 Wake from Sleep](https://www.ubackup.com/windows-10/windows-10-schedule-sleep-and-wake.html)

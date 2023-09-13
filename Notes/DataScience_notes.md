@@ -97,6 +97,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - Launch R/Rstudio and type `.libPaths()` and you should see the new path to your personal library.
 - После переноса используем `update.packages(checkBuilt=TRUE, ask=FALSE)`, чтобы перестроить пакеты под новую версию.
 - COOL! COOL! [A comprehensive survey of the types of things in R. 'mode' and 'class' and 'typeof' are insufficient](https://stackoverflow.com/questions/8855589/a-comprehensive-survey-of-the-types-of-things-in-r-mode-and-class-and-type)
+	- 2022: [...] at this point, mode and storage.mode are legacy features left over from S. You should only ever need to care about `class()` and `typeof()`.
 
 
 # e-books
@@ -231,6 +232,8 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Social Data Science with R](https://www.sds.pub/index.html) by Daniel Anderson, Brendan Cullen, Ouafaa Hmaddi, 2020-12-24
 - [An Introduction to R](https://intro2r.com/) by Alex Douglas, Deon Roos, Francesca Mancini, Ana Couto & David Lusseau, April 8, 2022
 - [Rcpp for everyone](https://teuder.github.io/rcpp4everyone_en/) by Masaki E. Tsuda, 2020-10-20
+- [The Hitchhiker’s Guide to Linear Models is now complete](https://pacha.dev/blog/2023/09/08/index.html)
+- [The Clean Code Blog](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) by Robert C. Martin (Uncle Bob)
 
 ## e-books ML
 - [Deep Learning and Scientific Computing with R torch](https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/) by Sigrid Keydana
@@ -762,7 +765,7 @@ Rscript -e "options(keep.source=TRUE); p <- profvis::profvis({ profvis::pause(0.
 - [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
 - [Debugme](https://github.com/gaborcsardi/debugme). Easy and efficient debugging for R packages. gaborcsardi/debugme
 - [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio), September 11, 2017
-- [Debugging methods in R6 objects](https://cran.r-project.org/web/packages/R6/vignettes/Debugging.html)
+- [Debugging methods in R6 objects](https://r6.r-lib.org/articles/Debugging.html)
 - [debugme: Debug R Packages](https://cran.r-project.org/web/packages/debugme/index.html). Specify debug messages as special string constants, and control debugging of packages via environment variables.
 	- [r-lib/debugme](https://github.com/r-lib/debugme). Easy and efficient debugging for R packages
 	- [Debugme](https://github.com/gaborcsardi/debugme). Easy and efficient debugging for R packages. gaborcsardi/debugme
@@ -772,6 +775,7 @@ Debugger for R functions, with code display, graceful error recovery, line-numbe
 - [Debugging, condition handling, and defensive programming](http://adv-r.had.co.nz/Exceptions-Debugging.html)
 - "Mastering Software Development in R". [2.6 Debugging](https://bookdown.org/rdpeng/RProgDA/debugging.html)
 - [ggpmisc 0.2.13. Debugging ggplots](https://cran.r-project.org/web/packages/ggpmisc/vignettes/debug.html)
+	- Переехало в [`‘gginnards’`](https://docs.r4photobiology.info/gginnards/)
 - [Using the Bizarro Pipe to Debug magrittr Pipelines in R](http://www.win-vector.com/blog/2017/01/using-the-bizarro-pipe-to-debug-magrittr-pipelines-in-r/)
 - [Debugging R Functions](http://seananderson.ca/2013/08/23/debugging-r.html)
 - [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
@@ -1163,6 +1167,10 @@ Stratification, CUPED, Variance-Weighted Estimators, and ML-based methods CUPAC 
 - COOL! [From Power Calculations to P-Values: A/B Testing at Stack Overflow](https://juliasilge.com/blog/ab-testing/)
 
 
+# Dev
+- [The Clean Code Blog](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) by Robert C. Martin (Uncle Bob)
+- [Заблуждения Clean Architecture](https://habr.com/ru/companies/mobileup/articles/335382/)
+
 # R conferences
 
 ## R conference
@@ -1324,6 +1332,9 @@ dbt (http://getdbt.com) adapter for DuckDB (http://duckdb.org)
 - [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html). A course by Andrej Karpathy on building neural networks, from scratch, in code.
 	- Neural Networks: Zero to Hero [Repo](https://github.com/karpathy/nn-zero-to-hero)
 - [Exponentially Weighted Moving Average (EWMA)](https://corporatefinanceinstitute.com/resources/capital-markets/exponentially-weighted-moving-average-ewma/). Используется в подстройке Learning Rate в Gradient descent.
+- [Large difference in accuracy for sigmoid vs softmax](https://stats.stackexchange.com/questions/511722/large-difference-in-accuracy-for-sigmoid-vs-softmax).
+**The sigmoid network is a special case of the softmax network.**
+	- [Sigmoid and SoftMax Functions in 5 minutes](https://towardsdatascience.com/sigmoid-and-softmax-functions-in-5-minutes-f516c80ea1f9). The math behind two of the most used activation functions in Machine Learning
 
 # 06.09.2023
 ## R
