@@ -316,6 +316,10 @@ pl.Object
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
 
 
+# 15.09.2023
+- COOL! Курс [Python Pandas For Your Grandpa](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-3-8-dataframe-aggregation/)/ Видео + упражнения!!!
+	- [Practice Probs](https://www.practiceprobs.com/problemsets/python-pandas/dataframe/)
+
 # 26.08.2023
 - [pade](https://pypi.org/project/pade/). PADE its a framework for developing, executing and mannaging multi-agent systems in distributed computing enviroments. PADE code is 100% Python and has its core in Twisted, a python package for implementing distributed applications.
 - [py_yyjson](https://pypi.org/project/yyjson/). yyjson bindings for python

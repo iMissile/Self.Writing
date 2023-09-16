@@ -323,7 +323,8 @@ find /full/path -name '.git' -type d -exec bash -c 'git config --global --add sa
   * `.gitconfig` Safe Folder List
   * Developer Tools can set Safe Repo Status
   * Change Folder Ownership
- - Не всегда помогает `safe.directory` *. [git submodule update failed with 'fatal: detected dubious ownership in repository at'](https://stackoverflow.com/questions/72978485/git-submodule-update-failed-with-fatal-detected-dubious-ownership-in-repositor)
+ - Не всегда помогает `safe.directory` *. [git submodule update failed with 'fatal: 	'](https://stackoverflow.com/questions/72978485/git-submodule-update-failed-with-fatal-detected-dubious-ownership-in-repositor)
+ - [How to correct `git` reporting `detected dubious ownership in repository` without adding `safe.directory` when using WSL?](https://stackoverflow.com/questions/73485958/how-to-correct-git-reporting-detected-dubious-ownership-in-repository-withou)
 
 # Отключаем проверку сертификата
 - [Server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none](https://stackoverflow.com/questions/21181231/server-certificate-verification-failed-cafile-etc-ssl-certs-ca-certificates-c)

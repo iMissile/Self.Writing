@@ -387,6 +387,10 @@ When we store the column names on to a variable, e.g., DT_n = names(DT), and the
 - [R Tutorial: Data.Table](https://www.dezyre.com/data-science-in-r-programming-tutorial/r-data-table-tutorial)
 - [R – Data.Table Rolling Joins](https://gormanalysis.com/r-data-table-rolling-joins/)
 - COOL! [Understanding data.table Rolling Joins](https://r-norberg.blogspot.com/2016/06/understanding-datatable-rolling-joins.html)
+- [R – Data.Table Rolling Joins](https://www.gormanalysis.com/blog/r-data-table-rolling-joins/). July 26, 2014. R tutorial
+	- Архив: [R – Data.Table Rolling Joins](https://web.archive.org/web/20230607163717/https://www.gormanalysis.com/blog/r-data-table-rolling-joins/)
+- COOL! Тут есть про rolling join тоже. [Introduction to data.table](https://rpubs.com/kykimeng/intro-to-data-table) by Haema Nilakanta & Kim Ky
+	- Slides [Introduction to data.table](https://kykimeng.com/slides/rnorth_data_table.html#1)
 - [non-equi merge in data.table and epidemiology](https://scitilab.com/post_data/non_equi_joins/2020_11_17_non_equi_merge/)
 - COOL! [The unequalled joy of non-equi joins](https://selbydavid.com/2021/02/13/joins/)
 - [How does one do a full join using data.table?](https://stackoverflow.com/questions/15170741/how-does-one-do-a-full-join-using-data-table)
@@ -420,9 +424,6 @@ The way to read this out loud is: "Take DT, subset rows by i, then compute j gro
     merge(dt1, dt2, by = "CustomerId", all = TRUE)
     # see ?merge.data.table arguments for other cases
 ```
-- [R – Data.Table Rolling Joins](https://www.gormanalysis.com/blog/r-data-table-rolling-joins/). July 26, 2014. R tutorial
-- COOL! Тут есть про rolling join тоже. [Introduction to data.table](https://rpubs.com/kykimeng/intro-to-data-table) by Haema Nilakanta & Kim Ky
-	- Slides [Introduction to data.table](https://kykimeng.com/slides/rnorth_data_table.html#1)
 - [Joining verbs for data.table](https://cran.r-project.org/web/packages/table.express/vignettes/joins.html)
 - [JOINing data in R using data.table](https://rstudio-pubs-static.s3.amazonaws.com/52230_5ae0d25125b544caab32f75f0360e775.html)
 - [How to perform merges (joins) on two or more data frames with base R, tidyverse and data.table](https://jozef.io/r006-merge/)

@@ -428,6 +428,8 @@ Web Scraper is a company specializing in data extraction from web pages. We offe
 - [Cloud computing made simple
 Powering next-generation applications from Machine Learning to 3D graphics.](https://www.paperspace.com/core)
 - [Loginom как альтернатива зарубежному ПО](https://loginom.ru/blog/loginom-replacement)
+- [«Индекс дятла». Телеграм-канал, который приносит клиентов](https://productgames.ru/tg)
+
 
 ## Amazon EC2
 - [What is an ECU? CPU Benchmarking in the Cloud](http://blog.cloudharmony.com/2010/05/what-is-ecu-cpu-benchmarking-in-cloud.html)
@@ -1406,6 +1408,12 @@ So, something like this seems to work:
   })
 ```
 - [Mastering Shiny. 16 Escaping the graph](https://mastering-shiny.org/reactivity-components.html#reactivity-components)
+- [Engineering Production-Grade Shiny Apps. 15.1 Reactivity anti-patterns](https://engineering-shiny.org/common-app-caveats.html)
+- [Slow down a reactive expression with debounce/throttle — debounce](https://shiny.posit.co/r/reference/shiny/latest/debounce.html)
+- [Have shiny load from a file not named `app.R`](https://stackoverflow.com/questions/53022176/have-shiny-load-from-a-file-not-named-app-r)
+- [Shiny: what is the difference between observeEvent and eventReactive?](https://stackoverflow.com/questions/33519816/shiny-what-is-the-difference-between-observeevent-and-eventreactive)
+- [`observeEvent()` with multiple inputs](https://community.rstudio.com/t/observeevent-with-multiple-inputs/105171)
+- [How to listen for more than one event expression within a Shiny `observeEvent`](https://stackoverflow.com/questions/41960953/how-to-listen-for-more-than-one-event-expression-within-a-shiny-observeevent)
 
 # 21.08.2023
 ## R
@@ -2351,8 +2359,8 @@ I have focused on the computation rather than the interpretation of the models.
 - ["Find in Files" always finds nothing in package development mode](https://community.rstudio.com/t/find-in-files-always-finds-nothing-in-package-development-mode/10056)
 Do you have indexing disabled for this project? See in `Tools` -> `Project Options`
 - COOL! Нашел проблему неработоспособности Find in Files в RStudio IDE. [Find in Files no longer works after updating to 2202.07.1 #11680
- {Closed}](https://github.com/rstudio/rstudio/issues/11680). If you run the code `setenv(RSTUDIO_GREP_DEBUG = 1)` in the console, and then perform the search, what debug output do you see in the console?
-Включаем дебаг командой `setenv(RSTUDIO_GREP_DEBUG = 1)` и видим проблему с правами доступа git. И там же способ лечения. Меняем владельца папок.
+ {Closed}](https://github.com/rstudio/rstudio/issues/11680). If you run the code `Sys.setenv(RSTUDIO_GREP_DEBUG = 1)` in the console, and then perform the search, what debug output do you see in the console?
+Включаем дебаг командой `Sys.setenv(RSTUDIO_GREP_DEBUG = 1)` и видим проблему с правами доступа git. И там же способ лечения. Меняем владельца папок.
 
 Иногда в RStudio IDE на отдельных проектах не работает "Find in Files" под Windows.
 

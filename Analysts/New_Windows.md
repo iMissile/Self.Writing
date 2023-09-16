@@ -360,7 +360,7 @@ Reboot your computer.
 `dir /b *.csv *.xsl *.txt > results.txt`
 	- [Dir](https://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/dir.mspx?mfr=true). Displays a list of a directory's files and subdirectories.
 - Утилиты командной строки для работы с ACL: `takeown.exe` & `icacl.exe`
-Пример использования `icacls` и `takeown` для получения доступа ко всем файлам несистемного диска..
+Пример использования `icacls` и `takeown` для получения доступа ко всем файлам несистемного диска.
 `takeown /f H: /r /d y`
 `/r` - нужен для обработки всех вложенных папок
 `/d y` - положительно отвечает на стандартный запрос да/нет, который появляется в том случае, если у пользователя нет прав для доступа к подпапкам.
@@ -901,3 +901,9 @@ If you are using the curl command line tool on Windows, curl will search for a C
 # wake-up
 - [How To Automatically Turn On Computer and/or Wake Computer Up](https://learn.microsoft.com/en-us/answers/questions/422921/how-to-automatically-turn-on-computer-and-or-wake)
 - [How to Schedule Windows 10 Wake from Sleep](https://www.ubackup.com/windows-10/windows-10-schedule-sleep-and-wake.html)
+
+# log viewer
+- [Tailviewer](https://kittyfisto.github.io/Tailviewer/). A fast, free and open source log viewer for Windows
+- [LogExpert](https://github.com/zarunbal/LogExpert). Windows tail program and log file analyzer.
+- Платный [LogViewPlus](https://www.logviewplus.com/tail-for-windows.html)
+
