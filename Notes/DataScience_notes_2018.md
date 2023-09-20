@@ -1901,24 +1901,6 @@ In practice, `%>%` tends to be re-exported, which can be done in a couple ways, 
 - [An Introduction to Time Series Forecasting with Prophet Package in Exploratory](https://blog.exploratory.io/an-introduction-to-time-series-forecasting-with-prophet-package-in-exploratory-129ed0c12112)
 - [Time Series Forecasting with KNN in R: the tsfknn Package](https://cran.r-project.org/web/packages/tsfknn/vignettes/tsfknn.html)
 
-# 27.04.2018
-## R & certificates
-- [Peer certificate cannot be authenticated with given CA certificates {#44}](https://github.com/jimhester/gmailr/issues/44). Плохое, но грубое решение: `httr::set_config( config( ssl_verifypeer = 0L ) )`
-- [Getting an error "curl: (60) Peer certificate cannot be authenticated with known CA certificates" when trying to curl a site that has a VALID SSL certificate](https://access.redhat.com/solutions/523823)
-- [Getting error in Curl - Peer certificate cannot be authenticated with known CA certificates](https://stackoverflow.com/questions/14682894/getting-error-in-curl-peer-certificate-cannot-be-authenticated-with-known-ca-c)
-- Смотрим сертификаты в Linux: `curl -v https://cran.r-project.org`
-- [R Server: install.packages() certificate error](https://stackoverflow.com/questions/48698532/r-server-install-packages-certificate-error). As an alternative, you can download the package first, and install it. For example with Cairo package :
-```
-curl -kO https://cran.r-project.org/src/contrib/Cairo_1.5-8.tar.gz
-R CMD INSTALL Cairo_1.5-8.tar.gz
-```
-- [Secure Package Downloads for R](https://support.rstudio.com/hc/en-us/articles/206827897-Secure-Package-Downloads-for-R)
-- COOL!! Грубое решение: `install.packages("httr", method="wget", extra="--no-check-certificate")`. Устанавливаем параметры для `download.file`. Обновление делаем командой `update.packages(ask=FALSE, method="wget", extra="--no-check-certificate")`
-- В случае проблемы с сертификатами напрямую из RStudio clone проекта также не получается сделать. Надо обходить через командную строку:
-`git -c http.sslVerify=false clone https://gitlab.com/repo.git <dir>` (решение найдено здесь:[SSL certificate rejected trying to access GitHub over HTTPS behind firewall](https://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall) или здесь:[github: server certificate verification failed](https://stackoverflow.com/questions/35821245/github-server-certificate-verification-failed/35824116)).
-Можно потом в конфиг этого репозитория отключить `git config http.sslVerify false`
-
-
 # 25.04.2018
 ## R
 - [Using glue_sql()](https://db.rstudio.com/best-practices/run-queries-safely/#using-glue_sql)

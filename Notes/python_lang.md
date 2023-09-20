@@ -308,13 +308,30 @@ pl.Object
 - Categorical
 	- COOL! [In polars, can I create a categorical type with levels myself?](https://stackoverflow.com/questions/70934789/in-polars-can-i-create-a-categorical-type-with-levels-myself)
 	- [`polars.Expr.to_physical`](https://pola-rs.github.io/polars/py-polars/html/reference/expressions/api/polars.Expr.to_physical.html#polars.Expr.to_physical)
-
+- Решил проблему сломанной валидации данных `polars` средствами `patito`.
+```
+shape: (1, 5)
+┌───────────────────────────────────┬─────┬───────────┬───────┬───────────┐
+│ pattern                           ┆ n   ┆ cases     ┆ cum_n ┆ cum_ratio │
+│ ---                               ┆ --- ┆ ---       ┆ ---   ┆ ---       │
+│ cat                               ┆ u32 ┆ list[cat] ┆ u32   ┆ f64       │
+╞═══════════════════════════════════╪═════╪═══════════╪═══════╪═══════════╡
+│ __START__-A-A-A-B-C-D-A-A-A-B-C-… ┆ 1   ┆ ["1"]     ┆ 1     ┆ 1.0       │
+└───────────────────────────────────┴─────┴───────────┴───────┴───────────┘
+```
+Была версия `patito 0.4.4`, там была такая валидация списка категориалов
+`cases: List[str] = pt.Field(dtype = pl.List)`
+Меняем на 
+`cases: List[Literal['a']] = pt.Field(dtype = pl.List(pl.Categorical))`
+Решение нашел путем детального изучения исходников `tests\test_model.py`
 
 # Python & R
 - [How to use R and Python in the same notebook?](https://www.askpython.com/python/examples/use-r-and-python-in-the-same-notebook)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
 
+# 19.09.2023
+- COOL! [pipdeptree](https://github.com/tox-dev/pipdeptree). A command line utility to display dependency tree of the installed Python packages
 
 # 15.09.2023
 - COOL! Курс [Python Pandas For Your Grandpa](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-3-8-dataframe-aggregation/)/ Видео + упражнения!!!

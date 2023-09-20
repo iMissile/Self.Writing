@@ -1203,6 +1203,10 @@ Stratification, CUPED, Variance-Weighted Estimators, and ML-based methods CUPAC 
 	- [Shark Attack: Clean the Ocean] Shiny app: mdubel.shinyapps.io/shark-attack/ Repo: github.com/mdubel/shark-attack
 	- [Bikemap] Shiny app: 2exp3.shinyapps.io/mapa-ciclista/_w_6e13cdc9/ Repo: github.com/2exp3/bikemapp
 
+## Posit::Conf(2023)
+- [Reliable maintenance of machine learning models](https://juliasilge.github.io/ml-maintenance-2023/#/title-slide)
+
+
 ## Rconf 2022
 - [rstudio::conf(2022, "program")](https://github.com/rstudio/rstudio-conf-2022-program)
 - [Becoming Creative: How I Designed a Quilt with R](https://www.rstudio.com/conference/2022/talks/quilting-in-r-becoming-creative/) by Alice Walsh
@@ -1338,6 +1342,36 @@ dbt (http://getdbt.com) adapter for DuckDB (http://duckdb.org)
 **The sigmoid network is a special case of the softmax network.**
 	- [Sigmoid and SoftMax Functions in 5 minutes](https://towardsdatascience.com/sigmoid-and-softmax-functions-in-5-minutes-f516c80ea1f9). The math behind two of the most used activation functions in Machine Learning
 
+## R & certificates
+- Если есть сетевые проблемы с установкой пакетов, смотрим на SSL сертификаты:
+```
+Sys.setenv(CURL_SSL_BACKEND = "openssl")
+httr::GET(config = httr::config(ssl_verifypeer = FALSE))
+httr::set_config(config(ssl_verifypeer = FALSE))
+options(renv.download.trace = TRUE)
+Sys.setenv(RENV_DOWNLOAD_FILE_METHOD = "libcurl")
+```
+- [Peer certificate cannot be authenticated with given CA certificates {#44}](https://github.com/jimhester/gmailr/issues/44). Плохое, но грубое решение: `httr::set_config( config( ssl_verifypeer = 0L ) )`
+- [Getting an error "curl: (60) Peer certificate cannot be authenticated with known CA certificates" when trying to curl a site that has a VALID SSL certificate](https://access.redhat.com/solutions/523823)
+- [Getting error in Curl - Peer certificate cannot be authenticated with known CA certificates](https://stackoverflow.com/questions/14682894/getting-error-in-curl-peer-certificate-cannot-be-authenticated-with-known-ca-c)
+- Смотрим сертификаты в Linux: `curl -v https://cran.r-project.org`
+- [R Server: install.packages() certificate error](https://stackoverflow.com/questions/48698532/r-server-install-packages-certificate-error). As an alternative, you can download the package first, and install it. For example with Cairo package :
+```
+curl -kO https://cran.r-project.org/src/contrib/Cairo_1.5-8.tar.gz
+R CMD INSTALL Cairo_1.5-8.tar.gz
+```
+- [Secure Package Downloads for R](https://support.rstudio.com/hc/en-us/articles/206827897-Secure-Package-Downloads-for-R)
+- COOL!! Грубое решение: `install.packages("httr", method="wget", extra="--no-check-certificate")`. Устанавливаем параметры для `download.file`. Обновление делаем командой `update.packages(ask=FALSE, method="wget", extra="--no-check-certificate")`
+- В случае проблемы с сертификатами напрямую из RStudio clone проекта также не получается сделать. Надо обходить через командную строку:
+`git -c http.sslVerify=false clone https://gitlab.com/repo.git <dir>` (решение найдено здесь:[SSL certificate rejected trying to access GitHub over HTTPS behind firewall](https://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall) или здесь:[github: server certificate verification failed](https://stackoverflow.com/questions/35821245/github-server-certificate-verification-failed/35824116)).
+Можно потом в конфиг этого репозитория отключить `git config http.sslVerify false`
+
+
+
+# 19.09.2023
+## R
+- [dplyr 1.1.0: pick(), reframe(), and arrange()](https://www.tidyverse.org/blog/2023/02/dplyr-1-1-0-pick-reframe-arrange/)
+
 # 06.09.2023
 ## R
 - COOL! Сам пока не пробовал, но Макс Кун хвалил [hstats](https://mayer79.github.io/hstats/). Fast, model-agnostic interaction statistics of Friedman and Popescu (2008)
@@ -1414,6 +1448,8 @@ So, something like this seems to work:
 - [Shiny: what is the difference between observeEvent and eventReactive?](https://stackoverflow.com/questions/33519816/shiny-what-is-the-difference-between-observeevent-and-eventreactive)
 - [`observeEvent()` with multiple inputs](https://community.rstudio.com/t/observeevent-with-multiple-inputs/105171)
 - [How to listen for more than one event expression within a Shiny `observeEvent`](https://stackoverflow.com/questions/41960953/how-to-listen-for-more-than-one-event-expression-within-a-shiny-observeevent)
+- [gfonts](https://dreamrs.github.io/gfonts/)
+Download ‘Google’ fonts (via google-webfonts-helper) and generate CSS to use in rmarkdown documents and shiny applications. Some popular fonts are included and ready to use.
 
 # 21.08.2023
 ## R
@@ -1451,6 +1487,15 @@ The goal of qgisprocess is to provide an R interface to the geoprocessing algori
 	2. Ставим boost: `pacman -Sy mingw-w64-ucrt-x86_64-boost`
 	3. Не получилось собрать `Matrix`, ставим еще: `pacman -Sy mingw-w64-{i686,x86_64}-boost`
 Так что если не удается внутри `renv` поставить пакет с помощью `renv::install` или `install.packages()`, то надо изменить метод загрузки.
+- Проблемы с `renv`
+	- ['curl' error is not allowing packages installation in RStudio under renv](https://stackoverflow.com/questions/66282859/curl-error-is-not-allowing-packages-installation-in-rstudio-under-renv)
+	- Тут подробная детальная дискуссия по решению. [Can't install packages with renv](https://community.rstudio.com/t/cant-install-packages-with-renv/96696/6)
+```
+getOption("download.file.method")
+renv:::renv_download_file_method()
+```
+The solution that seems to have worked is:
+`options(renv.download.override = utils::download.file)`
 - renv cellar
 	- [The package cellar](https://rstudio.github.io/renv/articles/package-sources.html?q=cellar#the-package-cellar)
 	- [The Package Cellar](https://rstudio.github.io/renv/articles/cellar.html)
@@ -2890,15 +2935,6 @@ pryr::address(abc) == pryr::address(getabc)
 - COOL! [Programming with R {dplyr} - As I Understand It!!](https://www.vishalkatti.com/posts/2021-07-17-programmingwithdplyr/) How to create your own functions using {dplyr}
 - [plumber 1.1.0](https://www.rstudio.com/blog/plumber-v1-1-0/)
 - [Tabulate](https://mlverse.github.io/tabulate/https://mlverse.github.io/tabulate/) is a thin wrapper around the tabulate C++ library. It allows users to pretty print tables in the console, with support for different font styles, colors, borders and etc. It also supports multi-bytes characters and nesting tables.
-- Проблемы с `renv`
-	- ['curl' error is not allowing packages installation in RStudio under renv](https://stackoverflow.com/questions/66282859/curl-error-is-not-allowing-packages-installation-in-rstudio-under-renv)
-	- Тут подробная детальная дискуссия по решению. [Can't install packages with renv](https://community.rstudio.com/t/cant-install-packages-with-renv/96696/6)
-```
-getOption("download.file.method")
-renv:::renv_download_file_method()
-```
-The solution that seems to have worked is:
-`options(renv.download.override = utils::download.file)`
 
 ## R for loop
 - [Why not use a for loop?](https://stackoverflow.com/questions/48793273/why-not-use-a-for-loop/48793370)
@@ -2972,32 +3008,6 @@ From: Computational Methods in Engineering, 2014
 ## Logistic distribution
 - [The Logistic Distribution](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/Logistic.html)
 - [Logistic Distribution in R (4 Examples) | dlogis, plogis, qlogis & rlogis Functions](https://statisticsglobe.com/logistic-distribution-in-r-dlogis-plogis-qlogis-rlogis)
-
-## R formulae
-- [formula {stats}](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/formula.html). The generic function formula and its specific methods provide a way of extracting formulae which have been included in other objects.
-- [Asterisk (*) vs. colon (:) in R formulas {closed}](https://stackoverflow.com/questions/40567421/asterisk-vs-colon-in-r-formulas)
-- COOL! [Formulae in R - ANOVA and other models, mixed and fixed](https://conjugateprior.org/2013/01/formulae-in-r-anova/)
-- [The R Formula Method: The Good Parts](https://rviews.rstudio.com/2017/02/01/the-r-formula-method-the-good-parts/). 2017-02-01 by Max Kuhn
-- [The R Formula Method: The Bad Parts](https://rviews.rstudio.com/2017/03/01/the-r-formula-method-the-bad-parts/).  2017-03-01 by Max Kuhn
-- [Changing the variable inside an R formula](https://statisticaloddsandends.wordpress.com/2019/08/24/changing-the-variable-inside-an-r-formula/)
-- COOL! [Formulas in R Tutorial](https://www.datacamp.com/community/tutorials/r-formula-tutorial)
-- [Advanced R. 20.3.4 Under the hood](https://adv-r.hadley.nz/evaluation.html#quosure-impl) Quosures were inspired by R’s formulas, because formulas capture an expression and an environment
-- [Formula: Extended Model Formulas](https://cran.r-project.org/web/packages/Formula/index.html)
-- [Expressing design formula in R](http://genomicsclass.github.io/book/pages/expressing_design_formula.html)
-- [Condition ( | ) in R formula](https://stackoverflow.com/questions/42417963/condition-in-r-formula)
-- [How to write a linear model formula with 100 variables in R](https://stats.stackexchange.com/questions/29477/how-to-write-a-linear-model-formula-with-100-variables-in-r)
-- [anova test fails on lme fits created with pasted formula](https://stackoverflow.com/questions/7666807/anova-test-fails-on-lme-fits-created-with-pasted-formula/7668846#7668846)
-- [Use of ~ (tilde) in R programming Language](https://stackoverflow.com/questions/14976331/use-of-tilde-in-r-programming-language)
-	- [The 'formulas' section of the lazyeval vignette gives a good introduction to what a formula is](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
-- [formula From stats v3.5.2](https://www.rdocumentation.org/packages/stats/versions/3.5.2/topics/formula) Model Formulae
-- Повтор. [Use quick formula functions in purrr::map (+ base vs tidtyverse idiom comparisons/examples)](https://rud.is/b/2016/07/26/use-quick-formula-functions-in-purrrmap-base-vs-tidtyverse-idiom-comparisonsexamples/)
-- Применение формул. Навеяно из документации tmaptools.pdf: `sp::coordinates(five_cities_geocode) <- ~lon+lat`
-	- [The R Formula Method: The Good Parts](https://rviews.rstudio.com/2017/02/01/the-r-formula-method-the-good-parts/)
-	- [The R Formula Method: The Bad Parts](https://rviews.rstudio.com/2017/03/01/the-r-formula-method-the-bad-parts/)
-	- [What does the R formula y~1 mean?](https://stackoverflow.com/questions/13366755/what-does-the-r-formula-y1-mean)
-- [Building formulae](http://www.brodrigues.co/blog/2017-12-27-build_formulae/)
-- [Using a variable in update() in R to update formula](https://stackoverflow.com/questions/38980066/using-a-variable-in-update-in-r-to-update-formula)
-
 
 
 ## Splines

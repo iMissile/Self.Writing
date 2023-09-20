@@ -1,4 +1,21 @@
 
+# 19.09.2023
+- Ищем коэффициенты при степенях полинома. 
+	- [`Coefficient`](https://reference.wolfram.com/language/ref/Coefficient.html?q=Coefficient) gives the coefficient of form in the polynomial expr.
+```
+Coefficient[(x + y + z)^10, x^5 y^2 z^3]
+CoefficientRules[(x + y + z)^10]
+(x + y + z)^10 // Expand
+```
+	- [`CoefficientList`](https://reference.wolfram.com/language/ref/CoefficientList.html)
+	- Много написано, надо разбираться: [Easiest way to extract the coefficient of a polynomial](https://mathematica.stackexchange.com/questions/115006/easiest-way-to-extract-the-coefficient-of-a-polynomial)
+	- [Examples for Polynomials](https://www.wolframalpha.com/examples/mathematics/algebra/polynomials)
+	- [Extracting coefficients from `g=a*x+b*y+c*x*y`](https://mathematica.stackexchange.com/questions/39088/extracting-coefficients-from-g-axbycxy)
+	`{1, 0} /. CoefficientRules[g, {x, y}]`
+
+# 18.09.2023
+- [total differential for x*y/(x+y) - Wolfram|Alpha](https://www.wolframalpha.com/input?i=total+differential+for+x*y%2F%28x%2By%29)
+
 # 30.08.2023
 - [Векторный анализ и визуализация](https://www.wolfram.com/language/fast-introduction-for-math-students/ru/vector-analysis-and-visualization/). В Языке Wolfram n-мерные вектора представляются в виде списков длиной n.
 Вычислим скалярное произведение двух векторов:

@@ -344,8 +344,19 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - [The path to {ggpath}](https://posit.co/blog/the-path-to-ggpath). A 2.5 year long story about the open source R community and the #nflverse.
 - [ggplot2::scale_x_time: Formatting hms objects](https://stackoverflow.com/questions/58395236/ggplot2scale-x-time-formatting-hms-objects)
 - [One Weird Trick to Make Ggplot2 Columns the Same Width](https://pacha.dev/blog/2023/07/31/ggplot-columns/index.html)
+- [ggplot2 : Adding two errorbars to each point in scatterplot](https://stackoverflow.com/questions/9231702/ggplot2-adding-two-errorbars-to-each-point-in-scatterplot)
 
-
+## ggplot & units
+- `units` работают в `ggplot`, но возникли проблемы с `lims`!. Решается через `units::scale_x_units(limits = c(0, NA), unit = "cm")`:
+	-  `scale_x_units(unit = "W") + scale_y_units(unit = "km/l")`
+	- COOL! [May the force be with the units](https://www.back2code.me/2020/04/may-the-force-be-with-the-units/)
+	- [Is it possible to use ggplot with the units package in R?](https://stackoverflow.com/questions/61209769/is-it-possible-to-use-ggplot-with-the-units-package-in-r)
+	- [Cannot Use ggplot2 with units #164 {Closed}](https://github.com/r-quantities/units/issues/164)
+	- chatGPT дал такой ответ: 
+```
+# Set limits on the x-axis with units
+p + lims(x = unit(c(2, 8), "cm"))
+```
 
 ## ggplot debug & performance
 - [ggpmisc 0.2.13. Debugging ggplots](https://cran.r-project.org/web/packages/ggpmisc/vignettes/debug.html)
