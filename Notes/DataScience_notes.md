@@ -1314,6 +1314,7 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [DuckDB quacks Arrow: A zero-copy data integration between Apache Arrow and DuckDB](https://duckdb.org/2021/12/03/duck-arrow.html)
 - [Fastest table sort in the West - Redesigning DuckDB’s sort](https://duckdb.org/2021/08/27/external-sorting.html)
 - [Modern Data Stack in a Box with DuckDB](https://duckdb.org/2022/10/12/modern-data-stack-in-a-box.html)
+- [Harlequin](https://harlequin.sh/). The DuckDB IDE for Your Terminal. A drop-in replacement for the DuckDB CLI.
 
 ### duckDB articles
 - [R duckdb examples](https://github.com/duckdb/duckdb/commit/a2c4a58b7a92ab023a3b353ed970004f32f1423d)

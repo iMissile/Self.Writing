@@ -330,8 +330,10 @@ shape: (1, 5)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
 
+
 # 19.09.2023
 - COOL! [pipdeptree](https://github.com/tox-dev/pipdeptree). A command line utility to display dependency tree of the installed Python packages
+- COOL! [PROFILING PYTHON PROGRAMS PROMPTLY](https://benjamin.computer/posts/2023-09-19-python-profiling.html) 19-09-2023
 
 # 15.09.2023
 - COOL! Курс [Python Pandas For Your Grandpa](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-3-8-dataframe-aggregation/)/ Видео + упражнения!!!
