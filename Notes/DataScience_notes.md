@@ -3604,6 +3604,7 @@ or You can try filtering on `lengths(df$var2) > 0` or `The function drop_na() fr
 
 ## DS
 - [Introducing ClickHouse, Inc.](https://clickhouse.com/blog/en/2021/clickhouse-inc/)
+- COOL! [Is ClickHouse Moving Away from Open Source?](https://altinity.com/blog/is-clickhouse-moving-away-from-open-source)
 - COOL! [Deep attractors: Where deep learning meets chaos](https://blogs.rstudio.com/ai/posts/2020-06-24-deep-attractors/)
 - [Разложение числа на простые множители (факторизация). Делители числа](https://brestprog.by/topics/factorization/)
 

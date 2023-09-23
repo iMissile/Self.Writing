@@ -512,6 +512,7 @@ plot(ToothGrowth)
 - COOL! Lesson [Introduction to Reproducible Publications with RStudio. Reproducible & Efficient Methods of Using Code Chunks](https://ucsbcarpentry.github.io/Reproducible-Publications-with-RStudio-Quarto/08-code-chunks/index.html)
 - Slides [Intro to Quarto](https://github.com/ivelasq/2022-10-27_intro-to-quarto), 2022-10-27 R-Ladies St. Louis Presentation
 - COOL! Meetup [Building a blog with Quarto. RStudio Enterprise Community Meetup](https://github.com/ivelasq/2022-08-30_building-a-blog-with-quarto) Presented by Isabella Velásquez
+- [What's new in Quarto {1.4}?](https://cwickham.github.io/whats-new-in-quarto/) by Charlotte Wickham	
 
 
 # 12.09.2022

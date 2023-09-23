@@ -347,3 +347,7 @@ What worked for me was to edit .git/config and use
         url = https://<login>:<password>@gitlab.com(...).git
 ```
 It goes without saying that this is an insecure way of storing your password but there are environments/cases where this may not be a problem.
+- [Unable to clone Git repository due to self signed certificate](https://confluence.atlassian.com/fishkb/unable-to-clone-git-repository-due-to-self-signed-certificate-376838977.html)
+`git -c http.sslVerify=false clone <repository-name>`
+or
+`git config --global http.sslVerify false`

@@ -1,4 +1,19 @@
 
+# 22.09.2023
+- [Rules](https://reference.wolfram.com/language/guide/Rules.html)
+- [How to filter list of list of rules on certain condition?](https://mathematica.stackexchange.com/questions/86821/how-to-filter-list-of-list-of-rules-on-certain-condition)
+- [Condition /;](https://reference.wolfram.com/language/ref/Condition.html)
+- И вот, вразумительные ответы: [Constraints on Solve results](https://mathematica.stackexchange.com/questions/98525/constraints-on-solve-results/98527#98527)
+
+https://beta.theb.ai/home 
+PROMPT: `How to filter in Wolfram Mathematica from Solve function rules based on additional criteria`
+PROMPT: `I have a function of two variables and want to filter Solve rules`
+`Cases[solutions, {x -> n_ /; n > 0}]` подходит только для одного правила.
+To filter out the solutions that do not satisfy the requirements, you can use the Select function with a function that returns True only for the solutions that satisfy all the requirements:
+`Select[solutions, Function[{rule}, rule[[2]] > 0 && rule[[1, 2]]^2 + rule[[2, 2]]^2 \lt 1]]`
+Но если попытать chatbot-а, то можно получить такой ответ:
+`Cases[solutions, {x_ /; x > 2, y_ /; y \lt 6}]`, но так не работает!!!
+
 # 19.09.2023
 - Ищем коэффициенты при степенях полинома. 
 	- [`Coefficient`](https://reference.wolfram.com/language/ref/Coefficient.html?q=Coefficient) gives the coefficient of form in the polynomial expr.
