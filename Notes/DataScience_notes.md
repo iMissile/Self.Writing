@@ -1369,9 +1369,15 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 
 
 
-# 19.09.2023
+# 27.09.2023
 ## R
 - [dplyr 1.1.0: pick(), reframe(), and arrange()](https://www.tidyverse.org/blog/2023/02/dplyr-1-1-0-pick-reframe-arrange/)
+- COOL! [UTF-8 Support on Windows](https://blog.r-project.org/2020/05/02/utf-8-support-on-windows/)
+- [{emphatic}](https://coolbutuseless.github.io/package/emphatic/index.html) augments the output of data.frames, matrices and simple vectors in R by adding user-defined ANSI highlighting.
+- [Convert an integer to base36](https://stackoverflow.com/questions/36036404/convert-an-integer-to-base36)
+- В новой версии ShinyWidgets включили флаг для активации старой версии sweetalert2: https://github.com/dreamRs/shinyWidgets/issues/618
+Хотя бы так, но это половинчатое решение. Даже в NEWS.md не описано.
+- Любопытная переписка. [What are the differences between "=" and "\ll-" assignment operators?](https://stackoverflow.com/questions/1741820/what-are-the-differences-between-and-assignment-operators/51564252#51564252)
 
 # 06.09.2023
 ## R

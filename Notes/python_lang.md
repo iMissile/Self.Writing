@@ -330,6 +330,13 @@ shape: (1, 5)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
 
+# 27.09.2023
+- [Poetry](https://python-poetry.org/). Python packaging and dependency management made easy
+- Multiple list comprehension:
+	- [How to Flatten a List of Lists in Python](https://realpython.com/python-flatten-list/)
+- [How to check if a list is empty in Python?](https://flexiple.com/python/check-if-list-is-empty-python)
+- [Python – How to convert int to a binary string?](https://mkyong.com/python/python-how-to-convert-int-to-a-binary-string/)
+
 
 # 19.09.2023
 - COOL! [pipdeptree](https://github.com/tox-dev/pipdeptree). A command line utility to display dependency tree of the installed Python packages

@@ -1,3 +1,8 @@
+# 27.09.2023
+- [Calculate the value of a number as if it were represented in binary](https://mathematica.stackexchange.com/questions/275304/calculate-the-value-of-a-number-as-if-it-were-represented-in-binary)
+`BinaryToDecimal[num_] := FromDigits[RealDigits[num, 10], 2]`
+- [Doing arithmetic with binary numbers](https://mathematica.stackexchange.com/questions/44908/doing-arithmetic-with-binary-numbers)
+- [Представление чисел суммой двух квадратов и эллиптические кривые](https://habr.com/ru/articles/189618/)
 
 # 22.09.2023
 - [Rules](https://reference.wolfram.com/language/guide/Rules.html)

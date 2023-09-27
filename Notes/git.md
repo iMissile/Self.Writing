@@ -192,6 +192,9 @@ data/*
 output/*
 !output/.gitkeep
 
+# Миграция gitlab-gitlab
+- [How to copy a Gitlab project to another Gitlab repository?](https://stackoverflow.com/questions/53155915/how-to-copy-a-gitlab-project-to-another-gitlab-repository)
+
 # Миграция с Mercurial (Bitbucket кинул)
 Рабочая процедура, конвертировал локальный репозиторий и поместил в `https://github.com/iMissile/bb-import/`
 1. Ставим TortoseHG 5.0.2. Включаем в контекстном меню плагины `hg-git` и `convert`.
