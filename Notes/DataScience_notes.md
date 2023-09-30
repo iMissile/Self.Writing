@@ -1329,6 +1329,7 @@ Use SQL statements such as `INSERT INTO`. "You can, but you shouldn't. dplyr is 
 - [Use dbt and Duckdb instead of Spark in data pipelines](https://medium.com/datamindedbe/use-dbt-and-duckdb-instead-of-spark-in-data-pipelines-9063a31ea2b5)
 - [dbt-duckdb](https://github.com/jwills/dbt-duckdb).
 dbt (http://getdbt.com) adapter for DuckDB (http://duckdb.org)
+- [Manipulate big data with Arrow & DuckDB | Christophe Nicault](https://www.christophenicault.com/post/large_dataframe_arrow_duckdb/)
 
 # ML
 - Andrej Karpathy blog
@@ -1378,6 +1379,8 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 - В новой версии ShinyWidgets включили флаг для активации старой версии sweetalert2: https://github.com/dreamRs/shinyWidgets/issues/618
 Хотя бы так, но это половинчатое решение. Даже в NEWS.md не описано.
 - Любопытная переписка. [What are the differences between "=" and "\ll-" assignment operators?](https://stackoverflow.com/questions/1741820/what-are-the-differences-between-and-assignment-operators/51564252#51564252)
+- [Bind rows of data frames with some factor columns](https://stackoverflow.com/questions/42278020/bind-rows-of-data-frames-with-some-factor-columns)
+	- [dplyr 1.0.0 and vctrs](https://www.tidyverse.org/blog/2020/04/dplyr-1-0-0-and-vctrs/)
 
 # 06.09.2023
 ## R

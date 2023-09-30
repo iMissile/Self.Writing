@@ -377,6 +377,9 @@ When we store the column names on to a variable, e.g., DT_n = names(DT), and the
 	- [How to create a list with names but no entries in R/Splus?](https://stackoverflow.com/questions/5688020/how-to-create-a-list-with-names-but-no-entries-in-r-splus)
 	- [Create an Empty List of Specific Length in R](https://www.tutorialkart.com/r-tutorial/r-create-empty-list-of-specific-length/#gsc.tab=0)
 
+## data.table tech
+- [Warning: 'Invalid .internal.selfref detected' when adding a column to a data.table returned from a function](https://stackoverflow.com/questions/20687235/warning-invalid-internal-selfref-detected-when-adding-a-column-to-a-data-tab). To understand how data.table detects copies using .internal.selfref, we'll dive into some history of data.table.
+`data.table:::selfrefok(DT)`
 
 ## data.table joins
 - COOL! [R data.table: update-by-reference joins](https://r-critique.com/r_datatable_update_by_reference_joins)
