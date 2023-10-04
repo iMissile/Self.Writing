@@ -1,3 +1,6 @@
+# 02.10.2023
+- [`Rationalize`](https://reference.wolfram.com/language/ref/Rationalize.html?q=Rationalize) converts an approximate number x to a nearby rational with small denominator.
+
 # 27.09.2023
 - [Calculate the value of a number as if it were represented in binary](https://mathematica.stackexchange.com/questions/275304/calculate-the-value-of-a-number-as-if-it-were-represented-in-binary)
 `BinaryToDecimal[num_] := FromDigits[RealDigits[num, 10], 2]`

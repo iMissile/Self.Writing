@@ -143,6 +143,11 @@ Add `as_raw_html()` to avoid Quarto modifying the HTML table.
 	  count(Species) %>% 
 	  gt() %>%
 	  as_raw_html()
+	  
+## Quarto & word
+- [Changing math formulas font size in RPres](https://stackoverflow.com/questions/36531820/changing-math-formulas-font-size-in-rpres/36533612#36533612)
+- [changing rmarkdown "table of contents" default title](https://stackoverflow.com/questions/52977363/changing-rmarkdown-table-of-contents-default-title/52978463#52978463)
+`toc-title: "INDICE"`
 
 ## Quarto & html widgets
 - ['printing' HTML widgets in programmatically generated Rmarkdown](https://stackoverflow.com/questions/64430375/printing-html-widgets-in-programmatically-generated-rmarkdown)

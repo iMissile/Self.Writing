@@ -234,6 +234,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Rcpp for everyone](https://teuder.github.io/rcpp4everyone_en/) by Masaki E. Tsuda, 2020-10-20
 - [The Hitchhiker’s Guide to Linear Models is now complete](https://pacha.dev/blog/2023/09/08/index.html)
 - [The Clean Code Blog](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) by Robert C. Martin (Uncle Bob)
+- [Software Design by Example](https://third-bit.com/sdxpy/) by Greg Wilson. A tool-based introduction with Python
 
 ## e-books ML
 - [Deep Learning and Scientific Computing with R torch](https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/) by Sigrid Keydana
@@ -1368,7 +1369,12 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 `git -c http.sslVerify=false clone https://gitlab.com/repo.git <dir>` (решение найдено здесь:[SSL certificate rejected trying to access GitHub over HTTPS behind firewall](https://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall) или здесь:[github: server certificate verification failed](https://stackoverflow.com/questions/35821245/github-server-certificate-verification-failed/35824116)).
 Можно потом в конфиг этого репозитория отключить `git config http.sslVerify false`
 
-
+# 04.10.2023
+- COOL! [yihui/servr](https://github.com/yihui/servr): A simple HTTP server in R
+- [Typewriter Chartography](https://charts.substack.com/p/typewriter-chartography)
+- [Variables declared outside function](https://stackoverflow.com/questions/8943933/variables-declared-outside-function)
+- [split function in R](https://r-coder.com/split-r/)
+- [
 
 # 27.09.2023
 ## R
@@ -1868,6 +1874,7 @@ out <- paste0(sst[c(TRUE, FALSE)], sst[c(FALSE, TRUE)])
 
 ## ML
 - [Deep Learning Paper Implementations: Spatial Transformer Networks - Part II](https://kevinzakka.github.io/2017/01/18/stn-part2/)
+- [M5 Forecast: Keras Embeddings with R](https://www.kaggle.com/code/mayer79/m5-forecast-keras-embeddings-with-r)
 
 ## Stat
 - [Are P Values Error Probabilities? or, “It’s the methods, stupid!” (2nd install)](https://errorstatistics.com/2014/08/17/are-p-values-error-probabilities-installment-1/)
@@ -3871,6 +3878,9 @@ Chain monadic sequences into stateful, branching pipelines. As nodes in the pipe
 - [Tex math rendering in R](https://docs.ropensci.org/katex/reference/katex.html)
 - [How to find common elements from multiple vectors?](https://stackoverflow.com/questions/3695677/how-to-find-common-elements-from-multiple-vectors)
 - COOL! [Efficient Ways to Find the Intersection of Lists](https://www.baeldung.com/cs/list-intersection)
+	`Reduce(intersect, Filter(Negate(is.null), lst))`
+	- [Negation of Filter not working as expected in R](https://stackoverflow.com/questions/66879883/negation-of-filter-not-working-as-expected-in-r)
+	- [Using Filter(Negate(is.na), x) on a list results in unexpected behaviour](https://stackoverflow.com/questions/53277029/using-filternegateis-na-x-on-a-list-results-in-unexpected-behaviour)
 - [RVenn: An R package for set operations on multiple sets](https://cran.r-project.org/web/packages/RVenn/vignettes/vignette.html)
 
 

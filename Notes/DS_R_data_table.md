@@ -376,6 +376,7 @@ When we store the column names on to a variable, e.g., DT_n = names(DT), and the
 - [How to create an empty datatable with columns names and then append datatables to it?](https://stackoverflow.com/questions/37376398/how-to-create-an-empty-datatable-with-columns-names-and-then-append-datatables-t)
 	- [How to create a list with names but no entries in R/Splus?](https://stackoverflow.com/questions/5688020/how-to-create-a-list-with-names-but-no-entries-in-r-splus)
 	- [Create an Empty List of Specific Length in R](https://www.tutorialkart.com/r-tutorial/r-create-empty-list-of-specific-length/#gsc.tab=0)
+- Набор бенчмарков включен. [Apply a function to every specified column in a data.table and update by reference](https://stackoverflow.com/questions/16846380/apply-a-function-to-every-specified-column-in-a-data-table-and-update-by-referen)
 
 ## data.table tech
 - [Warning: 'Invalid .internal.selfref detected' when adding a column to a data.table returned from a function](https://stackoverflow.com/questions/20687235/warning-invalid-internal-selfref-detected-when-adding-a-column-to-a-data-tab). To understand how data.table detects copies using .internal.selfref, we'll dive into some history of data.table.
@@ -427,6 +428,7 @@ The way to read this out loud is: "Take DT, subset rows by i, then compute j gro
     merge(dt1, dt2, by = "CustomerId", all = TRUE)
     # see ?merge.data.table arguments for other cases
 ```
+- [Join data.tables in R – Inner, Outer, Left & Right (4 Examples)](https://statisticsglobe.com/join-data-tables-r-inner-outer-left-right)
 - [Joining verbs for data.table](https://cran.r-project.org/web/packages/table.express/vignettes/joins.html)
 - [JOINing data in R using data.table](https://rstudio-pubs-static.s3.amazonaws.com/52230_5ae0d25125b544caab32f75f0360e775.html)
 - [How to perform merges (joins) on two or more data frames with base R, tidyverse and data.table](https://jozef.io/r006-merge/)

@@ -619,6 +619,8 @@ If you don't want Quarto or anything actually to take over the styling, then you
 - [R echarts4r - format dates in axis](https://stackoverflow.com/questions/63838914/r-echarts4r-format-dates-in-axis)
 - [Mark area](https://echarts.apache.org/examples/en/editor.html?c=line-sections)
 - [Multple mark area style #52 {Open}](https://github.com/JohnCoene/echarts4r/issues/52)
+- [ECharts: dataset with bars colored based on category name?](https://stackoverflow.com/questions/72004873/echarts-dataset-with-bars-colored-based-on-category-name)
+	- [Color palette picking strategy](https://echarts.apache.org/handbook/en/basics/release-note/5-2-0/#color-palette-picking-strategy)
 
 # Observable
 - [Observable for R Users](https://observablehq.com/@slopp/observable-for-r-users)
