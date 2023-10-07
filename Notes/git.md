@@ -48,6 +48,12 @@ Commit-ы на этом этапе уже не нужны.
 1. Экспорт. Project’s homepage. Click Settings in the sidebar. -> General/Export
 2. Projects/Gitlab Import
 
+# Затаскивание изменений из мастера к себе в ветку
+```
+git fetch
+git rebase origin/master
+```
+
 # Q&A
 - [GitLab Docs](https://docs.gitlab.com/ee/README.html)
 - Как сделать реплику в несколько репозиториев? `git remote add X5` (ссылка)

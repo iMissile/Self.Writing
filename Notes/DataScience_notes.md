@@ -440,6 +440,9 @@ Powering next-generation applications from Machine Learning to 3D graphics.](htt
 
 
 # Visualization
+- [Introducing the Graphic Walker](https://docs.kanaries.net/graphic-walker): an avant-garde, open-source alternative to Tableau that empowers data aficionados to delve into data and reveal intriguing patterns through effortless drag-and-drop wizardry!
+
+
 Когда спрашивают про визуализацию:
 |> Когда хотят поговорить про визуализацию | R part
 - [ggplot2](https://ggplot2.tidyverse.org/index.html) is a system for declaratively creating graphics, based on The Grammar of Graphics.
@@ -3153,6 +3156,8 @@ Sys.setenv(NOT_CRAN="true")
 ```
 - Slides. [Bigger data with arrow and duckdb](https://colorado.rstudio.com/rsc/bigger-data-prez/) Tom Mock & Edgar Ruiz, 2021-10-26
 - [Apache Arrow vs. Parquet and ORC: Do we really need a third Apache project for columnar data representation?](https://dbmsmusings.blogspot.com/2017/10/apache-arrow-vs-parquet-and-orc-do-we.html). October 31, 2017
+- [Show the details of an Arrow Execution Plan](https://arrow.apache.org/docs/r/reference/show_exec_plan.html)
+`show_exec_plan(x)`
 
 ## R
 - [How to read files from a UNC-specified directory in R?](https://stackoverflow.com/questions/18570102/how-to-read-files-from-a-unc-specified-directory-in-r)
