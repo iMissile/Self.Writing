@@ -1,3 +1,6 @@
+# 11.10.2023
+- [Решение линейных диофантовых уравнений с любым числом неизвестных](https://habr.com/ru/articles/330632/)
+
 # 02.10.2023
 - [`Rationalize`](https://reference.wolfram.com/language/ref/Rationalize.html?q=Rationalize) converts an approximate number x to a nearby rational with small denominator.
 

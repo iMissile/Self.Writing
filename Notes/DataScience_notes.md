@@ -1347,6 +1347,8 @@ dbt (http://getdbt.com) adapter for DuckDB (http://duckdb.org)
 - [Large difference in accuracy for sigmoid vs softmax](https://stats.stackexchange.com/questions/511722/large-difference-in-accuracy-for-sigmoid-vs-softmax).
 **The sigmoid network is a special case of the softmax network.**
 	- [Sigmoid and SoftMax Functions in 5 minutes](https://towardsdatascience.com/sigmoid-and-softmax-functions-in-5-minutes-f516c80ea1f9). The math behind two of the most used activation functions in Machine Learning
+- COOL! Slides. [Generative AI exists because of the transformer](https://ig.ft.com/generative-ai/)
+- Slides [GitHub Copilot in RStudio, it’s finally here!](https://colorado.posit.co/rsc/rstudio-copilot/#/TitleSlide) by Tom Mock, 2023-10-04
 
 ## R & certificates
 - Если есть сетевые проблемы с установкой пакетов, смотрим на SSL сертификаты:
@@ -1372,12 +1374,16 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 `git -c http.sslVerify=false clone https://gitlab.com/repo.git <dir>` (решение найдено здесь:[SSL certificate rejected trying to access GitHub over HTTPS behind firewall](https://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall) или здесь:[github: server certificate verification failed](https://stackoverflow.com/questions/35821245/github-server-certificate-verification-failed/35824116)).
 Можно потом в конфиг этого репозитория отключить `git config http.sslVerify false`
 
+# 13.10.2023
+## R
+- COOL! Slides [Level up your plots](https://cararthompson.github.io/nhsr-2023-level-up-workshop/level-up-workshop.html), NHS-R Conference 2023 | 4th October 2023
+
 # 04.10.2023
+## R
 - COOL! [yihui/servr](https://github.com/yihui/servr): A simple HTTP server in R
 - [Typewriter Chartography](https://charts.substack.com/p/typewriter-chartography)
 - [Variables declared outside function](https://stackoverflow.com/questions/8943933/variables-declared-outside-function)
 - [split function in R](https://r-coder.com/split-r/)
-- [
 
 # 27.09.2023
 ## R
@@ -1459,6 +1465,14 @@ So, something like this seems to work:
     invalidateLater(5000)
     isolate(vals$i <- vals$i + 1)
   })
+```
+- [Create a reactive value that only triggers when its value changes](https://github.com/daattali/advanced-shiny/blob/master/reactive-dedupe/README.md)
+```
+dedupe <- function(r) {
+  makeReactiveBinding("val")
+  observe(val <<- r(), priority = 10)
+  reactive(val)
+}
 ```
 - [Mastering Shiny. 16 Escaping the graph](https://mastering-shiny.org/reactivity-components.html#reactivity-components)
 - [Engineering Production-Grade Shiny Apps. 15.1 Reactivity anti-patterns](https://engineering-shiny.org/common-app-caveats.html)

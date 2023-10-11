@@ -907,3 +907,6 @@ If you are using the curl command line tool on Windows, curl will search for a C
 - [LogExpert](https://github.com/zarunbal/LogExpert). Windows tail program and log file analyzer.
 - Платный [LogViewPlus](https://www.logviewplus.com/tail-for-windows.html)
 
+# захват и запись экрана
+- [LightShot](https://app.prntscr.com/ru/). Самый быстрый и удобный способ сделать скриншот
+- [OBS Studio](https://obsproject.com/ru). Бесплатная программа с открытым исходным кодом для записи видео и потокового вещания.
