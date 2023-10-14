@@ -330,13 +330,21 @@ shape: (1, 5)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
 
+# 14.10.2023
+- [Create an empty list with certain size in Python](https://stackoverflow.com/questions/10712002/create-an-empty-list-with-certain-size-in-python)
+- [Python: Initialize List of Size N](https://careerkarma.com/blog/python-initialize-list-of-size-n/)
+`[type] * N` or `list(range(N))`
+- [How to convert list to set Python (4 Easy Ways)](https://myprogrammingtutorial.com/convert-list-to-set-python/)
+- [Sort Set of Values in Python](https://sparkbyexamples.com/python/sort-set-of-values-in-python/)
+- [Python List Methods – append( ) vs extend( ) in Python Explained with Code Examples](https://www.freecodecamp.org/news/python-list-methods-append-vs-extend/)
+- [Packing and Unpacking Arguments in Python](https://www.geeksforgeeks.org/packing-and-unpacking-arguments-in-python/)
+
 # 27.09.2023
 - [Poetry](https://python-poetry.org/). Python packaging and dependency management made easy
 - Multiple list comprehension:
 	- [How to Flatten a List of Lists in Python](https://realpython.com/python-flatten-list/)
 - [How to check if a list is empty in Python?](https://flexiple.com/python/check-if-list-is-empty-python)
 - [Python – How to convert int to a binary string?](https://mkyong.com/python/python-how-to-convert-int-to-a-binary-string/)
-
 
 # 19.09.2023
 - COOL! [pipdeptree](https://github.com/tox-dev/pipdeptree). A command line utility to display dependency tree of the installed Python packages

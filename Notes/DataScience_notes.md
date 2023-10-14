@@ -1377,6 +1377,10 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 # 13.10.2023
 ## R
 - COOL! Slides [Level up your plots](https://cararthompson.github.io/nhsr-2023-level-up-workshop/level-up-workshop.html), NHS-R Conference 2023 | 4th October 2023
+- [zoomerjoin](http://beniamino.org/zoomerjoin/) fuzzy-join powered by high-performance implementations of Locality Sensitive Hashing.
+- COOL! Python. [Small data analysis and viz projects](https://github.com/Lisa-Ho/small-data-projects/tree/main). Repository of small data analysis and visualisation projects to try out new libraries and create new types of visualisations. Mostly using Python.
+- COOL! [Why is it Bad to Discretize a Continuous Variable? {duplicate}](https://stats.stackexchange.com/questions/592246/why-is-it-bad-to-discretize-a-continuous-variable)
+- [R round to nearest .5 or .1](https://stackoverflow.com/questions/8664976/r-round-to-nearest-5-or-1)
 
 # 04.10.2023
 ## R

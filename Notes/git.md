@@ -53,6 +53,7 @@ Commit-ы на этом этапе уже не нужны.
 git fetch
 git rebase origin/master
 ```
+- [`Git rebase` — перебазирование коммитов и веток](https://selectel.ru/blog/tutorials/how-to-rebase-commits-and-branches/)/ Знакомим с `git rebase`: рассказываем о преимуществах команды и показываем, в каких случаях ее стоит использовать и почему.
 
 # Q&A
 - [GitLab Docs](https://docs.gitlab.com/ee/README.html)
