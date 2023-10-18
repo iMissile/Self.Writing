@@ -110,6 +110,9 @@ h1 {
 - Для настройки локальных шрифтов (FiraCode) я пошел по другому пути
 	- https://github.com/quarto-dev/quarto-cli/discussions/3064
 	- https://github.com/gadenbuie/reveal-fonts-reprex
+- [Block Code with revealjs {#4943}](https://github.com/quarto-dev/quarto-cli/discussions/4943)
+`.reveal pre.sourceCode code { ...`
+- [Slidecraft 101: Code and Output. All about styling code and output in slidecrafting](https://emilhvitfeldt.com/post/slidecraft-code-output/)
 
 ## Quarto tweaks
 - Quarto. [R htmltools browsable HTML does not view without explicit `print()`](https://stackoverflow.com/questions/75353004/r-htmltools-browsable-html-does-not-view-without-explicit-print)

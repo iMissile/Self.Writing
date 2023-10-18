@@ -908,5 +908,9 @@ If you are using the curl command line tool on Windows, curl will search for a C
 - Платный [LogViewPlus](https://www.logviewplus.com/tail-for-windows.html)
 
 # захват и запись экрана
-- [LightShot](https://app.prntscr.com/ru/). Самый быстрый и удобный способ сделать скриншот
+- [LightShot](https://app.prntscr.com/ru/). Самый быстрый и удобный способ сделать скриншот.
 - [OBS Studio](https://obsproject.com/ru). Бесплатная программа с открытым исходным кодом для записи видео и потокового вещания.
+
+# Работа с облачными хранилищами
+- [RaiDrive](https://www.raidrive.com/)
+- [Air Explorer](https://www.airexplorer.net/ru/pro/)

@@ -913,6 +913,7 @@ Yes, Bootstrapping method is an ideal way to do this. Basically for each median,
 	- [Denotational Semantics and a Fast Interpreter for jq](https://arxiv.org/abs/2302.10576) by Michael Färber, 21 Feb 2023
 	- [About the jq's release process (Was: Is jq is still alive/maintained ?) #2305 {Open}](https://github.com/jqlang/jq/issues/2305)
 	- [jaq. A jq clone focussed on correctness, speed, and simplicity](https://github.com/01mf02/jaq)
+- [jq 1.7!](https://github.com/jqlang/jq/releases/tag/jq-1.7)
 
 - [jq Language Description](https://github.com/stedolan/jq/wiki/jq-Language-Description)
 - [jqplay](https://jqplay.org/)
@@ -1374,6 +1375,14 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 `git -c http.sslVerify=false clone https://gitlab.com/repo.git <dir>` (решение найдено здесь:[SSL certificate rejected trying to access GitHub over HTTPS behind firewall](https://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall) или здесь:[github: server certificate verification failed](https://stackoverflow.com/questions/35821245/github-server-certificate-verification-failed/35824116)).
 Можно потом в конфиг этого репозитория отключить `git config http.sslVerify false`
 
+# 19.10.2023
+● Библиотеки 📦 для работы с географическими данными {maptools}, {rgdal}, {rgeos} и {rgrass7} 🗺️ уходят с сегодняшнего дня на пенсию (https://stat.ethz.ch/pipermail/r-sig-geo/2023-October/029350.html). Они будут заархивированы в CRAN.
+● Коллеги (Krzysztof Dyba) предлагают следующую альтернативу помимо известных библиотек {sf} и {terra}:
+1. {rgdal} -> {gdalraster} и {vapour}
+2. {rgeos} -> {geos} и {rsgeo}
+- [Hayashi, T. and Yoshida, N. (2005). On covariance estimation of non-synchronously observed diffusion processes. Bernoulli, 11, 359-379.](https://search.r-project.org/CRAN/refmans/highfrequency/html/rHYCov.html)
+- Из терок про стационарные временные ряды и дискретность появилась ссылка на работу [The YUIMA Project: A Computational Framework for Simulation and Inference of Stochastic Differential Equations](https://www.jstatsoft.org/article/view/v057i04)
+
 # 13.10.2023
 ## R
 - COOL! Slides [Level up your plots](https://cararthompson.github.io/nhsr-2023-level-up-workshop/level-up-workshop.html), NHS-R Conference 2023 | 4th October 2023
@@ -1457,6 +1466,10 @@ logger_tree()
 `{sql, connection=wcon, output.var="x"}`
 
 ## shiny
+- COOL! [Display element ids for debugging Shiny apps](https://biocs-blog.blogspot.com/2016/04/display-element-ids-for-debugging-shiny.html). Тащим на букмарк
+```
+javascript:$("div[id]").each(function(t){$(this).prepend("<span style='color: red'>"+$(this).attr("id")+"<br/></span>")}),$("input[id]").each(function(t){$(this).before("<span style='color: red'>"+$(this).attr("id")+"<br/></span>")});
+```
 - COOL! [Good way to create a "reactive-aware" R6 class](https://community.rstudio.com/t/good-way-to-create-a-reactive-aware-r6-class/84890)
 - [Create a reactive trigger](https://github.com/daattali/advanced-shiny/tree/master/reactive-trigger)
 - [How to run an observer chain _exactly_ once on application startup](https://community.rstudio.com/t/how-to-run-an-observer-chain-exactly-once-on-application-startup/92775)
@@ -1510,6 +1523,8 @@ The goal of qgisprocess is to provide an R interface to the geoprocessing algori
 
 # 16.08.2023
 ## Проблема с `renv::restore`. `[curl: (35) schannel: next InitializeSecurityContext failed: Unknown error (0x80092012)`.
+- Вот мега разбор [Can't install packages with renv](https://community.rstudio.com/t/cant-install-packages-with-renv/96696/13) и найденное решение:
+`options(renv.download.override = utils::download.file)`
 - [`renv:restore()` always fails in windows](https://stackoverflow.com/questions/67228070/renvrestore-always-fails-in-windows)
 	- See also this <github.com/rstudio/renv/issues/301> for a solution with `renv::equip()`
 - [Inability to install packages after updating R and R Studio](https://community.rstudio.com/t/inability-to-install-packages-after-updating-r-and-r-studio/164954)
@@ -1537,6 +1552,17 @@ The solution that seems to have worked is:
 	- [The package cellar](https://rstudio.github.io/renv/articles/package-sources.html?q=cellar#the-package-cellar)
 	- [The Package Cellar](https://rstudio.github.io/renv/articles/cellar.html)
 In some cases, your project may depend on R packages which are not available from any external source, or that external source may not accessible from the machine calling `renv::restore()`.
+- [R Tip: Check What Repos You are Using](https://win-vector.com/2020/02/02/r-tip-check-what-repos-you-are-using/)
+```
+> options('repos')
+$repos
+                       CRAN 
+"https://cran.rstudio.com/" 
+```
+- [How to change R repository CRAN from renv.lock to get packages from an internal/corporate repository?](https://stackoverflow.com/questions/65326540/how-to-change-r-repository-cran-from-renv-lock-to-get-packages-from-an-internal)
+- [`renv` FAQ](https://rstudio.github.io/renv/articles/faq.html)
+
+
 
 ## R
 - [`rlang`. Unlock an environment](https://rlang.r-lib.org/reference/env_unlock.html?q=env_u#ref-usage)

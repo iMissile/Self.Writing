@@ -330,6 +330,11 @@ shape: (1, 5)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
 
+
+# 19.10.2023
+- Много вариантов. Benchmarks! [Count the uppercase letters in a string with Python](https://stackoverflow.com/questions/18129830/count-the-uppercase-letters-in-a-string-with-python)
+- [Python 3.11 vs Python 3.12 – performance testing](https://en.lewoniewski.info/2023/python-3-11-vs-python-3-12-performance-testing/)
+
 # 14.10.2023
 - [Create an empty list with certain size in Python](https://stackoverflow.com/questions/10712002/create-an-empty-list-with-certain-size-in-python)
 - [Python: Initialize List of Size N](https://careerkarma.com/blog/python-initialize-list-of-size-n/)
