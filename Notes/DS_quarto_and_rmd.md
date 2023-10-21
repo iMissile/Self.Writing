@@ -50,6 +50,8 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 - [webR Code Extension for Quarto HTML Documents](https://github.com/coatless/quarto-webr)
 - [vtree object is renderred in Rmarkdown but not in quarto](https://stackoverflow.com/questions/72671641/vtree-object-is-renderred-in-rmarkdown-but-not-in-quarto). Quarto works a bit differently than R Markdown as it will run R only for the knitting process, and not for the conversion to output format, here HTML.
 - [How to resize figures in Quarto (PDF output)?](https://stackoverflow.com/questions/73844454/how-to-resize-figures-in-quarto-pdf-output)
+- [Switching to quarto](https://jollydata.blog/posts/2022-08-06-_switching-to-quarto/switching-to-quarto.html)
+I recently ported my blog to quarto. In this post I highlight the key features, that I like about quarto and that I implemented for this website.
 
 ## Quarto parametrization
 - [How to use Quarto for Parameterized Reporting](https://www.mm218.dev/posts/2022-08-04-how-to-use-quarto-for-parameterized-reporting/). You know. If you wanna.
@@ -88,6 +90,7 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 
 ## Quarto & css
 - [Down the front-end rabbit hole](https://quartoand.me/front-end)
+- COOL! [CSS Tweaks for Quarto](https://jmclawson.net/posts/quarto-css/)
 - [Define a new callout in quarto](https://stackoverflow.com/questions/74647399/define-a-new-callout-in-quarto)
 - [How to apply CSS style to Quarto output](https://stackoverflow.com/questions/74026514/how-to-apply-css-style-to-quarto-output)
 - [Add a CSS class to single code chunks in RMarkdown](https://stackoverflow.com/questions/37944197/add-a-css-class-to-single-code-chunks-in-rmarkdown)
@@ -98,6 +101,20 @@ h1 {
   color: blue;
 }
 ```
+- [Use a css code chunk to embed the CSS rules directly in your quarto document {#1402}](https://github.com/quarto-dev/quarto-cli/discussions/1402)
+```{css, echo=FALSE}
+p {
+  font-size: 32px;
+}
+```
+or raw html
+```{=html}
+<style>
+...
+</style>
+```
+
+
 ## Quarto & Reveal.js
 - [Reveal Themes](https://quarto.org/docs/presentations/revealjs/themes.html)
 - [Advanced Reveal](https://quarto.org/docs/presentations/revealjs/advanced.html)
@@ -110,15 +127,20 @@ h1 {
 - Для настройки локальных шрифтов (FiraCode) я пошел по другому пути
 	- https://github.com/quarto-dev/quarto-cli/discussions/3064
 	- https://github.com/gadenbuie/reveal-fonts-reprex
-- [Block Code with revealjs {#4943}](https://github.com/quarto-dev/quarto-cli/discussions/4943)
+- [Block Code with revealjs {#4943}](https://github.com/quarto-dev/quarto-cli/discussions/4	943)
 `.reveal pre.sourceCode code { ...`
 - [Slidecraft 101: Code and Output. All about styling code and output in slidecrafting](https://emilhvitfeldt.com/post/slidecraft-code-output/)
+- [Change color and background of chunk ouput in Quarto document](https://stackoverflow.com/questions/76610798/change-color-and-background-of-chunk-ouput-in-quarto-document)
+Quarto code chunk output is wrapped within a Div with class cell-output. If you want to style specific chunk output, use classes chunk option to assign a class and add/modify css styles for cell-output within that <classes> class.
+- [Qarto cell output params](https://quarto.org/docs/reference/cells/cells-knitr.html#cell-output)
+- [Quarto: Howto use a custom (Web)font?](https://stackoverflow.com/questions/73659027/quarto-howto-use-a-custom-webfont)
 
 ## Quarto tweaks
 - Quarto. [R htmltools browsable HTML does not view without explicit `print()`](https://stackoverflow.com/questions/75353004/r-htmltools-browsable-html-does-not-view-without-explicit-print)
 - [How to add HTML code to a Quarto website?](https://stackoverflow.com/questions/74445505/how-to-add-html-code-to-a-quarto-website)
 `{=html}`
-- [How to change code block height and width in quarto presentation](https://github.com/quarto-dev/quarto-cli/discussions/2073)
+- [Quarto HTML Code Blocks](https://quarto.org/docs/output-formats/html-code.html)
+- [How to change code block height and width in quarto presentation](https://github.com/quarto-dev/quarto-cli/discussions/	2073)
 - [Quarto r set max height for text output or figures](https://stackoverflow.com/questions/75204803/quarto-r-set-max-height-for-text-output-or-figures)
 - [Custom Quarto Project Types](https://quarto.org/docs/extensions/project-types.html)
 - [Metadata Merging](https://quarto.org/docs/projects/quarto-projects.html#metadata-includes).
@@ -126,6 +148,7 @@ Metadata defined within `_quarto.yml`, `_metadata.yml`, and document-level YAML 
 	- [Metadata Includes](https://quarto.org/docs/projects/quarto-projects.html#metadata-includes)
 You might find it convenient to break your metadata into multiple files. You can do this using the metadata-files option. For example, here we include some website options within a `_quarto.yml`
 - [How can I use inline code in a quarto document?](https://community.rstudio.com/t/how-can-i-use-inline-code-in-a-quarto-document/160575)
+- [Quarto pr's](https://rpubs.com/rich_i/quarto-prs-issues)
 
 
 ## Quarto & observable
@@ -151,6 +174,9 @@ Add `as_raw_html()` to avoid Quarto modifying the HTML table.
 - [Changing math formulas font size in RPres](https://stackoverflow.com/questions/36531820/changing-math-formulas-font-size-in-rpres/36533612#36533612)
 - [changing rmarkdown "table of contents" default title](https://stackoverflow.com/questions/52977363/changing-rmarkdown-table-of-contents-default-title/52978463#52978463)
 `toc-title: "INDICE"`
+
+## Quarto & pdf
+- [Making Pretty PDFs with Quarto](https://nrennie.rbind.io/blog/making-pretty-pdf-quarto/)
 
 ## Quarto & html widgets
 - ['printing' HTML widgets in programmatically generated Rmarkdown](https://stackoverflow.com/questions/64430375/printing-html-widgets-in-programmatically-generated-rmarkdown)
@@ -300,6 +326,7 @@ Theming in Rmarkdown can be hard. You first made some custom CSS or use a provid
 `{r, results = 'hide'}` or  `{r, results = FALSE}` for your chunk options suppresses R output but not warnings, messages or errors. No extra functions are needed.
 More details can be found here. https://yihui.org/knitr/options/#text-output
 - [R markdown df_print options](https://stackoverflow.com/questions/40893742/r-markdown-df-print-options). `knitr::opts_chunk$set(echo = TRUE, rows.print=25)`
+- [Rmarkdown. 7.3 Style code blocks and text output](https://bookdown.org/yihui/rmarkdown-cookbook/chunk-styling.html)
 
 ## knitr
 - Jumping Rivers blog
@@ -416,6 +443,8 @@ header-includes:
 - [align multiple figures with `fig.align`](https://stackoverflow.com/questions/63731766/align-multiple-figures-with-fig-align)
 - [R Markdown Tips: Code, Images, Comments, Tables, and more](https://appsilon.com/r-markdown-tips/amp/)
 - knitr [11.7 Hide code, text output, messages, or plots](https://bookdown.org/yihui/rmarkdown-cookbook/hide-one.html)
+- [Introducing the {renderthis} package](https://www.jhelvy.com/posts/2022-06-28-introducing-renderthis/)
+A brief introduction to the {renderthis} package for rendering {xaringan} slides to different output types (previously called {xaringanBuilder})
 
 ## knitr
 - [Bookdown. 3.1.6 Data frame printing](https://bookdown.org/yihui/rmarkdown/html-document.html#data-frame-printing)

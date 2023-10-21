@@ -1210,6 +1210,7 @@ Stratification, CUPED, Variance-Weighted Estimators, and ML-based methods CUPAC 
 
 ## Posit::Conf(2023)
 - [Reliable maintenance of machine learning models](https://juliasilge.github.io/ml-maintenance-2023/#/title-slide)
+- [Styling and Templating Quarto Documents](https://emilhvitfeldt.github.io/talk-quarto-theming-positconf/#/section) by Emil hvitfeldt @ posit::conf 2023
 
 
 ## Rconf 2022
@@ -1376,12 +1377,15 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 Можно потом в конфиг этого репозитория отключить `git config http.sslVerify false`
 
 # 19.10.2023
+## R
 ● Библиотеки 📦 для работы с географическими данными {maptools}, {rgdal}, {rgeos} и {rgrass7} 🗺️ уходят с сегодняшнего дня на пенсию (https://stat.ethz.ch/pipermail/r-sig-geo/2023-October/029350.html). Они будут заархивированы в CRAN.
 ● Коллеги (Krzysztof Dyba) предлагают следующую альтернативу помимо известных библиотек {sf} и {terra}:
 1. {rgdal} -> {gdalraster} и {vapour}
 2. {rgeos} -> {geos} и {rsgeo}
 - [Hayashi, T. and Yoshida, N. (2005). On covariance estimation of non-synchronously observed diffusion processes. Bernoulli, 11, 359-379.](https://search.r-project.org/CRAN/refmans/highfrequency/html/rHYCov.html)
 - Из терок про стационарные временные ряды и дискретность появилась ссылка на работу [The YUIMA Project: A Computational Framework for Simulation and Inference of Stochastic Differential Equations](https://www.jstatsoft.org/article/view/v057i04)
+- Управляем шириной печати `tibble`. [Show All Columns In a Tibble In Console Output](https://stackoverflow.com/questions/68897511/show-all-columns-in-a-tibble-in-console-output). [tibble printing](https://r4ds.had.co.nz/tibbles.html#printing)
+`print(n = 10, width = Inf)`
 
 # 13.10.2023
 ## R
@@ -1465,13 +1469,22 @@ logger_tree()
 - [Using sql chunks in Rmarkdown with query parameters](https://stackoverflow.com/questions/62466760/using-sql-chunks-in-rmarkdown-with-query-parameters).
 `{sql, connection=wcon, output.var="x"}`
 
+## shiny CRUD
+- ["crudtable"](https://github.com/beerda/crudtable) is an R package that provides an easy tabular data input user interface in Shiny web applications.
+- [editbl: DT extension for CRUD applications](https://github.com/openanalytics/editbl), есть на CRAN
+- [Shiny CRUD](https://www.tychobra.com/posts/2020-01-29-shiny-crud-traditional/)
+- [DTedit](https://github.com/jbryer/DTedit). Editable DataTables for shiny apps
+- [crudr](https://rpubs.com/Eauleaf/crudr). This package is a (create-read-update-delete) CRUD app built on DT in R.
+
 ## shiny
+- COOL! [Shiny tips & tricks for improving your apps and solving common problems](https://deanattali.com/blog/advanced-shiny-tips/) by Dean Attali
+- [Better Than Excel: Use These R Shiny Packages Instead](https://appsilon.com/forget-about-excel-use-r-shiny-packages-instead/)
 - COOL! [Display element ids for debugging Shiny apps](https://biocs-blog.blogspot.com/2016/04/display-element-ids-for-debugging-shiny.html). Тащим на букмарк
 ```
 javascript:$("div[id]").each(function(t){$(this).prepend("<span style='color: red'>"+$(this).attr("id")+"<br/></span>")}),$("input[id]").each(function(t){$(this).before("<span style='color: red'>"+$(this).attr("id")+"<br/></span>")});
 ```
 - COOL! [Good way to create a "reactive-aware" R6 class](https://community.rstudio.com/t/good-way-to-create-a-reactive-aware-r6-class/84890)
-- [Create a reactive trigger](https://github.com/daattali/advanced-shiny/tree/master/reactive-trigger)
+- [shinySignals](https://github.com/hadley/shinySignals)
 - [How to run an observer chain _exactly_ once on application startup](https://community.rstudio.com/t/how-to-run-an-observer-chain-exactly-once-on-application-startup/92775)
 - [increment reactivevalue inside invalidatelater observer](https://stackoverflow.com/questions/54364680/increment-reactivevalue-inside-invalidatelater-observer)
 So, something like this seems to work:
@@ -1491,6 +1504,7 @@ dedupe <- function(r) {
   reactive(val)
 }
 ```
+- [Create a reactive value that only triggers when its value changes](https://deanattali.com/blog/advanced-shiny-tips/#reactive-dedupe)
 - [Mastering Shiny. 16 Escaping the graph](https://mastering-shiny.org/reactivity-components.html#reactivity-components)
 - [Engineering Production-Grade Shiny Apps. 15.1 Reactivity anti-patterns](https://engineering-shiny.org/common-app-caveats.html)
 - [Slow down a reactive expression with debounce/throttle — debounce](https://shiny.posit.co/r/reference/shiny/latest/debounce.html)
@@ -3145,6 +3159,7 @@ elem$clickElement()
 
 # 02.02.2022
 ## timeseries & stat & R
+- [How does facebook prophet handle missing data?](https://stats.stackexchange.com/questions/393402/how-does-facebook-prophet-handle-missing-data)
 - [When to log transform a time series before fitting an ARIMA model](https://stats.stackexchange.com/questions/6330/when-to-log-transform-a-time-series-before-fitting-an-arima-model).
 Plot a graph of the data against time. If it looks like the variation increases with the level of the series, take logs. Otherwise model the original data.
 - [Fitting ARIMA to time series with missing values](https://stats.stackexchange.com/questions/346225/fitting-arima-to-time-series-with-missing-values)
