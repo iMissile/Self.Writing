@@ -1387,6 +1387,20 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 - Управляем шириной печати `tibble`. [Show All Columns In a Tibble In Console Output](https://stackoverflow.com/questions/68897511/show-all-columns-in-a-tibble-in-console-output). [tibble printing](https://r4ds.had.co.nz/tibbles.html#printing)
 `print(n = 10, width = Inf)`
 
+# 25.10.2023
+## R
+- COOL! [Releasing collapse 2.0: Blazing Fast Joins, Reshaping, and Enhanced R](https://sebkrantz.github.io/Rblog/2023/10/17/releasing-collapse-2-0-blazing-fast-joins-reshaping-and-enhanced-r/)
+- [Show the details of an Arrow Execution Plan](https://arrow.apache.org/docs/r/reference/show_exec_plan.html)
+```
+dplyr::explain()
+dplyr::show_query()
+arrow::show_exec_plan()
+```
+- COOL! [Apply different functions to columns of a dataframe selecting functions by name](https://stackoverflow.com/questions/70410408/apply-different-functions-to-columns-of-a-dataframe-selecting-functions-by-name)
+`df |> mutate(across(names(trans), ~trans[[cur_column()]](.x)))`
+`~ methods::getFunction(cur_column())(.x))`
+- [Apply a Function (or functions) across Multiple Columns using dplyr in R](https://www.geeksforgeeks.org/apply-a-function-or-functions-across-multiple-columns-using-dplyr-in-r/)
+
 # 13.10.2023
 ## R
 - COOL! Slides [Level up your plots](https://cararthompson.github.io/nhsr-2023-level-up-workshop/level-up-workshop.html), NHS-R Conference 2023 | 4th October 2023
@@ -1575,8 +1589,12 @@ $repos
 ```
 - [How to change R repository CRAN from renv.lock to get packages from an internal/corporate repository?](https://stackoverflow.com/questions/65326540/how-to-change-r-repository-cran-from-renv-lock-to-get-packages-from-an-internal)
 - [`renv` FAQ](https://rstudio.github.io/renv/articles/faq.html)
-
-
+- [renv Alternative downloaders](https://rstudio.github.io/renv/articles/package-install.html?_gl=1*61nngt*_ga*NzU5Njg3NTQ4LjE2OTc1MzU0NzU.*_ga_8PLL5FXR9M*MTY5ODA3NDA5MC42LjEuMTY5ODA3NDQ5NS4wLjAuMA..*_ga_2C0WZ1JHG0*MTY5ODA3NDA5MC42LjEuMTY5ODA3NDQ5NS4wLjAuMA..#alternative-downloaders)
+In my case following helped:
+```
+options(repos="http://cran.rstudio.com/")
+Sys.setenv("RENV_CONFIG_REPOS_OVERRIDE" = "http://cran.rstudio.com")
+```
 
 ## R
 - [`rlang`. Unlock an environment](https://rlang.r-lib.org/reference/env_unlock.html?q=env_u#ref-usage)

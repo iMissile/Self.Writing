@@ -331,6 +331,20 @@ shape: (1, 5)
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
 
 
+# 27.10.2023
+- [Sorting a Python Dictionary: Values, Keys, and More](https://realpython.com/sort-python-dictionary/)
+- Множество вариантов. [How to convert an integer to a string in any base?](https://stackoverflow.com/questions/2267362/how-to-convert-an-integer-to-a-string-in-any-base)
+```
+int(str, base)
+
+>>> numpy.base_repr(10, base=3)
+'101'
+
+"{0:b}".format(100) # bin: 1100100
+"{0:x}".format(100) # hex: 64
+"{0:o}".format(100) # oct: 144
+```
+- [How To add Elements to a List in Python](https://www.digitalocean.com/community/tutorials/python-add-to-list)
 # 19.10.2023
 - Много вариантов. Benchmarks! [Count the uppercase letters in a string with Python](https://stackoverflow.com/questions/18129830/count-the-uppercase-letters-in-a-string-with-python)
 - [Python 3.11 vs Python 3.12 – performance testing](https://en.lewoniewski.info/2023/python-3-11-vs-python-3-12-performance-testing/)

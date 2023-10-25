@@ -189,6 +189,7 @@ Or to account for the already occupied screen real estate, in my case a 90 pixel
 
 ## Quarto & Shiny
 - COOL! [Combining Shiny and Quarto. A love story.](https://rappa.shinyapps.io/shiny_quarto/)
+- COOL! [Quarto Dashboards](https://quarto.org/docs/dashboards/)
 
 
 ## RMarkdown & knitr
