@@ -345,6 +345,9 @@ int(str, base)
 "{0:o}".format(100) # oct: 144
 ```
 - [How To add Elements to a List in Python](https://www.digitalocean.com/community/tutorials/python-add-to-list)
+- [What is the best way to remove a dictionary item by value in python?](https://stackoverflow.com/questions/29218750/what-is-the-best-way-to-remove-a-dictionary-item-by-value-in-python)
+- [Python: Get Dictionary Key with the Max Value (4 Ways)](https://datagy.io/python-get-dictionary-key-with-max-value)
+
 # 19.10.2023
 - Много вариантов. Benchmarks! [Count the uppercase letters in a string with Python](https://stackoverflow.com/questions/18129830/count-the-uppercase-letters-in-a-string-with-python)
 - [Python 3.11 vs Python 3.12 – performance testing](https://en.lewoniewski.info/2023/python-3-11-vs-python-3-12-performance-testing/)

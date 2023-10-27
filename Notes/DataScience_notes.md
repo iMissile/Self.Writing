@@ -934,6 +934,7 @@ To rename keys recursively, see the Q defining translate_keys(f) below.
 
 - [Using jq how can I replace the name of a key with something else](https://stackoverflow.com/questions/43522133/using-jq-how-can-i-replace-the-name-of-a-key-with-something-else)
 - [Rename a key in an object #1167 {Closed}](https://github.com/stedolan/jq/issues/1167)
+- [Arrays in jq](https://exercism.org/tracks/jq/concepts/arrays)
 - [Reshaping JSON with jq](https://programminghistorian.org/en/lessons/json-and-jq)
 - [Flatten array objects with parent values? #646 {Closed}](https://github.com/stedolan/jq/issues/646)
 - [Hyperpolyglot. JSON Tools: JQ](http://hyperpolyglot.org/json)
@@ -1386,6 +1387,7 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 - Из терок про стационарные временные ряды и дискретность появилась ссылка на работу [The YUIMA Project: A Computational Framework for Simulation and Inference of Stochastic Differential Equations](https://www.jstatsoft.org/article/view/v057i04)
 - Управляем шириной печати `tibble`. [Show All Columns In a Tibble In Console Output](https://stackoverflow.com/questions/68897511/show-all-columns-in-a-tibble-in-console-output). [tibble printing](https://r4ds.had.co.nz/tibbles.html#printing)
 `print(n = 10, width = Inf)`
+- [nischalshrestha/Unravel](https://github.com/nischalshrestha/Unravel). A fluent code explorer for R. 🔍
 
 # 25.10.2023
 ## R
