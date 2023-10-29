@@ -1424,8 +1424,6 @@ arrow::show_exec_plan()
 - COOL! [UTF-8 Support on Windows](https://blog.r-project.org/2020/05/02/utf-8-support-on-windows/)
 - [{emphatic}](https://coolbutuseless.github.io/package/emphatic/index.html) augments the output of data.frames, matrices and simple vectors in R by adding user-defined ANSI highlighting.
 - [Convert an integer to base36](https://stackoverflow.com/questions/36036404/convert-an-integer-to-base36)
-- В новой версии ShinyWidgets включили флаг для активации старой версии sweetalert2: https://github.com/dreamRs/shinyWidgets/issues/618
-Хотя бы так, но это половинчатое решение. Даже в NEWS.md не описано.
 - Любопытная переписка. [What are the differences between "=" and "\ll-" assignment operators?](https://stackoverflow.com/questions/1741820/what-are-the-differences-between-and-assignment-operators/51564252#51564252)
 - [Bind rows of data frames with some factor columns](https://stackoverflow.com/questions/42278020/bind-rows-of-data-frames-with-some-factor-columns)
 	- [dplyr 1.0.0 and vctrs](https://www.tidyverse.org/blog/2020/04/dplyr-1-0-0-and-vctrs/)
@@ -1491,6 +1489,9 @@ logger_tree()
 - [Shiny CRUD](https://www.tychobra.com/posts/2020-01-29-shiny-crud-traditional/)
 - [DTedit](https://github.com/jbryer/DTedit). Editable DataTables for shiny apps
 - [crudr](https://rpubs.com/Eauleaf/crudr). This package is a (create-read-update-delete) CRUD app built on DT in R.
+- COOL! [Shiny CRUD](https://www.tychobra.com/posts/2020-01-29-shiny-crud-traditional/)
+- [Building CRUD with Shiny](https://community.rstudio.com/t/building-crud-with-shiny/2881)
+
 
 ## shiny
 - COOL! [Shiny tips & tricks for improving your apps and solving common problems](https://deanattali.com/blog/advanced-shiny-tips/) by Dean Attali
@@ -1499,6 +1500,8 @@ logger_tree()
 ```
 javascript:$("div[id]").each(function(t){$(this).prepend("<span style='color: red'>"+$(this).attr("id")+"<br/></span>")}),$("input[id]").each(function(t){$(this).before("<span style='color: red'>"+$(this).attr("id")+"<br/></span>")});
 ```
+- В новой версии ShinyWidgets включили флаг для активации старой версии sweetalert2: https://github.com/dreamRs/shinyWidgets/issues/618
+Хотя бы так, но это половинчатое решение. Даже в NEWS.md не описано.
 - COOL! [Good way to create a "reactive-aware" R6 class](https://community.rstudio.com/t/good-way-to-create-a-reactive-aware-r6-class/84890)
 - [shinySignals](https://github.com/hadley/shinySignals)
 - [How to run an observer chain _exactly_ once on application startup](https://community.rstudio.com/t/how-to-run-an-observer-chain-exactly-once-on-application-startup/92775)
@@ -3693,8 +3696,6 @@ or You can try filtering on `lengths(df$var2) > 0` or `The function drop_na() fr
 ## R
 - COOL! [clipboard for xaringan](https://pkg.garrickadenbuie.com/xaringanExtra/clipboard/#1)
 - COOL! [Making Shiny apps faster with caching](https://resources.rstudio.com/resources/rstudioglobal-2021/making-shiny-apps-faster-with-caching/) by Winston Chang
-- COOL! [Shiny CRUD](https://www.tychobra.com/posts/2020-01-29-shiny-crud-traditional/)
-- [Building CRUD with Shiny](https://community.rstudio.com/t/building-crud-with-shiny/2881)
 - [piggyback](https://docs.ropensci.org/piggyback/). This package provides a simple work-around by allowing larger (up to 2 GB per file) data files to piggyback on a repository as assets attached to individual GitHub releases.
 - [markvanderloo/hashr](https://github.com/markvanderloo/hashr). Quicly compute hash values for R objects
 
