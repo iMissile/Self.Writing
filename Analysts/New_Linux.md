@@ -54,6 +54,7 @@ In bash you can set variables like this: `export CATALINA_HOME=/opt/catalina`
 e.g 
 `for i in */.git; do ( echo $i; cd $i/..; git pull; ); done`
 `ls | xargs -P10 -I{} git -C {} pull`
+- Посмотреть размер директорий: `du -h --max-depth=1`
 
 ## копирование директорий
 - [Rsync (Remote Sync): 10 Practical Examples of Rsync Command in Linux](https://www.tecmint.com/rsync-local-remote-file-synchronization-commands/)

@@ -278,3 +278,7 @@ New documents should use the regular `caption' package v3.x instead.`
 	- Opt 1: `\documentclass[14pt]{extarticle}`
 	- Opt 2: With the fontsize package you can set arbitrary sizes and adjust the line spacing accordingly. For example, you can set `\normalisze` to `14.4pt` with:
 `\usepackage[fontsize=14.4]{fontsize}`
+
+# Word
+- [Craft beautiful equations in Word with LaTeX](https://www.nature.com/articles/d41586-019-01796-1)
+- [LATEX EQUATION TO WORD (2007 TO 365): 3 METHODS [2022]](https://www.pickupbrain.com/ms-word/latex-equation-to-word/)

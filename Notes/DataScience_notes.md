@@ -1377,6 +1377,13 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 `git -c http.sslVerify=false clone https://gitlab.com/repo.git <dir>` (решение найдено здесь:[SSL certificate rejected trying to access GitHub over HTTPS behind firewall](https://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall) или здесь:[github: server certificate verification failed](https://stackoverflow.com/questions/35821245/github-server-certificate-verification-failed/35824116)).
 Можно потом в конфиг этого репозитория отключить `git config http.sslVerify false`
 
+# 05.11.2023
+## R
+- [Removing NULL elements from a list {duplicate}](https://stackoverflow.com/questions/33004238/removing-null-elements-from-a-list)
+`mylist[lengths(mylist) != 0]`
+`purrr::compact()`
+`rlist::list.clean(myNestedlist ,recursive = T)`
+
 # 19.10.2023
 ## R
 ● Библиотеки 📦 для работы с географическими данными {maptools}, {rgdal}, {rgeos} и {rgrass7} 🗺️ уходят с сегодняшнего дня на пенсию (https://stat.ethz.ch/pipermail/r-sig-geo/2023-October/029350.html). Они будут заархивированы в CRAN.
