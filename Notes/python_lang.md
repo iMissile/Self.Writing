@@ -331,6 +331,14 @@ shape: (1, 5)
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
 
 
+# 06.11.2023
+- [How to Split String on Multiple Delimiters in Python](https://www.geeksforgeeks.org/python-split-multiple-characters-from-string/)
+- [Python List `index()`](https://www.programiz.com/python-programming/methods/list/index)
+- [Python – Sort Dictionary by Values and Keys](https://www.geeksforgeeks.org/python-sort-dictionary-by-values-and-keys/)
+- [Different ways of sorting Dictionary by Values and Reverse sorting by values](https://www.geeksforgeeks.org/different-ways-of-sorting-dictionary-by-values-and-reverse-sorting-by-values/)
+- Решение взял отсюда: [How to sort a dictionary by value (DESC) then by key (ASC)?](https://stackoverflow.com/questions/15371691/how-to-sort-a-dictionary-by-value-desc-then-by-key-asc)
+- [Python print 2 decimal places `[%.2f in Python]`](https://pythonguides.com/python-print-2-decimal-places/)
+
 # 27.10.2023
 - [Sorting a Python Dictionary: Values, Keys, and More](https://realpython.com/sort-python-dictionary/)
 - Множество вариантов. [How to convert an integer to a string in any base?](https://stackoverflow.com/questions/2267362/how-to-convert-an-integer-to-a-string-in-any-base)
