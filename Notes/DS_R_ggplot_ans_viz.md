@@ -621,6 +621,7 @@ If you don't want Quarto or anything actually to take over the styling, then you
 - [Multple mark area style #52 {Open}](https://github.com/JohnCoene/echarts4r/issues/52)
 - [ECharts: dataset with bars colored based on category name?](https://stackoverflow.com/questions/72004873/echarts-dataset-with-bars-colored-based-on-category-name)
 	- [Color palette picking strategy](https://echarts.apache.org/handbook/en/basics/release-note/5-2-0/#color-palette-picking-strategy)
+- [Proxies](https://echarts4r.john-coene.com/articles/proxies). This essentially covers a consequential new feature of echarts4r that allows using any function that adds a serie to a chart (e.g.: e_bar) as a proxy.
 
 # Observable
 - [Observable for R Users](https://observablehq.com/@slopp/observable-for-r-users)

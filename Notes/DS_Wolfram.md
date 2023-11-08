@@ -1,3 +1,17 @@
+# 08.11.2023
+## Немного аналитической геометрии
+- [`FullSimplify` with assumptions](https://mathematica.stackexchange.com/questions/54931/fullsimplify-with-assumptions)
+`... //FullSimplify[#, ...]&`
+- Несколько различных способов решения. [Another way to write equation of the line passing through two points? {closed}](https://mathematica.stackexchange.com/questions/186285/another-way-to-write-equation-of-the-line-passing-through-two-points)
+- [Triangle—Wolfram Language Documentation](https://reference.wolfram.com/language/ref/Triangle.html)
+- [How to get a perpendicular segment inside of a triangle](https://mathematica.stackexchange.com/questions/124933/how-to-get-a-perpendicular-segment-inside-of-a-triangle)
+- [Orthogonal vector in two dimensions](https://mathematica.stackexchange.com/questions/60739/orthogonal-vector-in-two-dimensions)
+It's already built-in. It's called `Cross`.
+```
+Cross[{1, 2}]
+```
+- [Orthogonal Vectors](https://mathworld.wolfram.com/OrthogonalVectors.html)
+
 # 11.10.2023
 - [Решение линейных диофантовых уравнений с любым числом неизвестных](https://habr.com/ru/articles/330632/)
 

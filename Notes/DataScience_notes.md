@@ -1377,12 +1377,19 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 `git -c http.sslVerify=false clone https://gitlab.com/repo.git <dir>` (решение найдено здесь:[SSL certificate rejected trying to access GitHub over HTTPS behind firewall](https://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall) или здесь:[github: server certificate verification failed](https://stackoverflow.com/questions/35821245/github-server-certificate-verification-failed/35824116)).
 Можно потом в конфиг этого репозитория отключить `git config http.sslVerify false`
 
-# 05.11.2023
+# 11.11.2023
+- [What is the purpose of the `fa-fw` class?](https://stackoverflow.com/questions/41140132/what-is-the-purpose-of-the-fa-fw-class). `fa-fw` class will align icons vertically center with fixed margin. so the size of each icon will not vary and they aligned below each other in the center.
+
+# 07.11.2023
 ## R
 - [Removing NULL elements from a list {duplicate}](https://stackoverflow.com/questions/33004238/removing-null-elements-from-a-list)
 `mylist[lengths(mylist) != 0]`
 `purrr::compact()`
 `rlist::list.clean(myNestedlist ,recursive = T)`
+- [Programming with dplyr](https://dplyr.tidyverse.org/articles/programming.html). direct `.data`
+- [When programming with dplyr, what is the correct way to avoid undefined global variables?](https://community.rstudio.com/t/when-programming-with-dplyr-what-is-the-correct-way-to-avoid-undefined-global-variables/55946). `utils::globalVariables('data', 'group_var', 'weight_var')`
+- [pandoc & rmarkdown](https://mpn.metworx.com/packages/rmarkdown/2.3/index.html). A recent version of Pandoc (>= 1.12.3) is required to use the rmarkdown package. RStudio also automatically includes this so you do not need to download Pandoc if you plan to use rmarkdown from the RStudio IDE.
+- [Top 5 tips for efficient programming](https://bookdown.org/csgillespie/efficientR/programming.html#top-5-tips-for-efficient-programming)
 
 # 19.10.2023
 ## R
