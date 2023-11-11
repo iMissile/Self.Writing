@@ -1508,6 +1508,7 @@ logger_tree()
 
 
 ## shiny
+- COOL! [Activate reactivity in the console — reactiveConsole](https://shiny.posit.co/r/reference/shiny/1.7.0/reactiveconsole)
 - COOL! [Shiny tips & tricks for improving your apps and solving common problems](https://deanattali.com/blog/advanced-shiny-tips/) by Dean Attali
 - [Better Than Excel: Use These R Shiny Packages Instead](https://appsilon.com/forget-about-excel-use-r-shiny-packages-instead/)
 - COOL! [Display element ids for debugging Shiny apps](https://biocs-blog.blogspot.com/2016/04/display-element-ids-for-debugging-shiny.html). Тащим на букмарк
