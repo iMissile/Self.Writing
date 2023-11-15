@@ -74,7 +74,8 @@ You can also do `d1[d2, on = "A==W"]`
 	- [from data table, randomly select one row per group](https://stackoverflow.com/questions/33887083/from-data-table-randomly-select-one-row-per-group). 
 Fast solution: `dt[dt[ , .I[sample(.N,1)] , by = z]$V1]`
 - [Subset data frame based on number of rows per group](https://stackoverflow.com/questions/20204257/subset-data-frame-based-on-number-of-rows-per-group)
-`dt[, if (.N < 3) .SD, by = name]` or `dt[dt[, .I[.N < 3], name]$V1]`
+`dt[, if (.N \lq 3) .SD, by = name]` or `dt[dt[, .I[.N \lq 3], name]$V1]`
+
 - Проблемки с кавычками внутри строк в delimited файле:
 	- [fread: quotes in quoted string fields #1299 {Closed}](https://github.com/Rdatatable/data.table/issues/1299)
 	- [fread should un-escape escaped quotes in fields #1109 {Open}](https://github.com/Rdatatable/data.table/issues/1109)

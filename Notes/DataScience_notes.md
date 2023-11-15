@@ -341,6 +341,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 - [Non-standard evaluation, how tidy eval builds on base R](https://edwinth.github.io/blog/nse/)
 - [Programming with dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/programming.html)
 - [Programming with dplyr](https://dplyr.tidyverse.org/articles/programming.html)
+- [What are quosures and when are they needed?](https://rlang.r-lib.org/reference/topic-quosure.html)
 - [wrapr: R Code Sweeteners](http://www.win-vector.com/blog/2017/08/wrapr-r-code-sweeteners/)
 - [Why I find tidyeval useful](http://www.brodrigues.co/blog/2017-08-27-why_tidyeval/)
 - COOL! [MilesMcBain/friendlyeval](https://github.com/MilesMcBain/friendlyeval). A friendly interface to tidyeval/rlang that will excuse itself when you're done.
@@ -352,7 +353,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 	- Перепечатка на Mango Solution: [What is tidy eval and why should I care?](https://www.mango-solutions.com/blog/what-is-tidy-eval-and-why-should-i-care)
 	- [Using Tidy Eval with dplyr::filter](https://thisisnic.github.io/2018/03/27/using-tidy-eval-with-dplyr-filter/)
 	- [Exploring Tidy Eval at a Snail's Pace](https://thisisnic.github.io/2018/02/20/exploring-tidy-eval-snails-pace/)
-- [Theory free tidyeval](https://www.johnmackintosh.com/2018-02-19-theory-free-tidyeval/). Getting our feet wet with dplyr programming
+- [Theory free tidyeval](https://www.johnmackintosh.com/blog/2018-02-19-theory-free-tidyeval/). Getting our feet wet with dplyr programming
 - Разбираемся с NSE в ggplot:
 	- [Using tidyeval method with ggplot in R](https://stackoverflow.com/questions/45109238/using-tidyeval-method-with-ggplot-in-r)
 	- [pass function arguments to both dplyr and ggplot](https://stackoverflow.com/questions/45439813/pass-function-arguments-to-both-dplyr-and-ggplot)
@@ -361,6 +362,8 @@ Survival analysis is long-established within actuarial science but infrequently 
 	- [dplyr and ggplot in a function: use reorder in aes function](https://stackoverflow.com/questions/35933199/dplyr-and-ggplot-in-a-function-use-reorder-in-aes-function)
 	- [R/ggplot2 tip: aes_string](https://nsaunders.wordpress.com/2013/02/26/rggplot2-tip-aes_string/)
 	- COOL! [How do I combine aes() and aes_string() options](https://stackoverflow.com/questions/28777626/how-do-i-combine-aes-and-aes-string-options)
+	- [Tidily evaluated ggplot2](https://www.johnmackintosh.com/blog/2018-07-04-tidily-evaluated-ggplot2/)
+	- [More tidy evaluation with ggplot2](https://www.johnmackintosh.com/blog/2018-07-05-more-tidy-evaluation-with-ggplot2/)
 - dplyr & operator ~ (tilde). NSE = [non-standard evaulation](http://cran.r-project.org/web/packages/dplyr/vignettes/nse.html)
 - [Non-standard evaluation](https://cran.r-project.org/web/packages/lazyeval/vignettes/lazyeval.html)
 - COOL! [Mara's tidyeval resource roundup](https://maraaverick.rbind.io/2017/08/tidyeval-resource-roundup/)
@@ -380,6 +383,9 @@ Survival analysis is long-established within actuarial science but infrequently 
 - Learning. [Tidyverse evolutions: curly-curly operator and pivoting (feat. tidytuesday data & leaflet visuals)](https://heads0rtai1s.github.io/2019/11/07/tidy-curly-pivot-leaflet/)
 - COOL! Learning. [Practical Tidy Evaluation](https://jessecambon.github.io/2019/12/08/practical-tidy-evaluation.html), Dec 8, 2019 • Jesse Cambon
 - [Quoting Without Confusion](https://8thlight.com/blog/colin-jones/2012/05/22/quoting-without-confusion.html), Colin Jones, 22 May 2012
+- [Programming with dplyr](https://dplyr.tidyverse.org/articles/programming.html). direct `.data`
+- [When programming with dplyr, what is the correct way to avoid undefined global variables?](https://community.rstudio.com/t/when-programming-with-dplyr-what-is-the-correct-way-to-avoid-undefined-global-variables/55946). `utils::globalVariables('data', 'group_var', 'weight_var')`
+
 
 # dplyr tricks
 - dplyr select by number/position. Переименовываем колонки (добавляем префикс)
@@ -718,27 +724,37 @@ A lightweight, modern and flexibly logging utility for R – heavily inspired by
 - [Establish handlers on the stack](https://rlang.r-lib.org/reference/with_handlers.html)
 
 ## Debuggging
-- [Debugging with the RStudio IDE](https://support.posit.co/hc/en-us/articles/205612627-Debugging-with-the-RStudio-IDE) by Jonathan McPherson, June 01, 2023
+- COOL! Сборная публикация [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio) by Jonathan McPherson, June 01, 2023
 - COOL! [Debugging in RStudio. Developing code with `browser()`](https://mjfrigaard.github.io/posts/debugging/)
 - [Recover is the apex R debugging method](https://milesmcbain.micro.blog/2020/09/03/recover-is-the.html). `options(error = recover)`
-- COOL! Сборная публикация [Debugging with RStudio](https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio)
 - [flow](https://moodymudskipper.github.io/flow/index.html). Visualize as flow diagrams the logic of functions, expressions or scripts and ease debugging.
 - [For troubleshooting, you can get more details on what's going on under the hood by setting `option(future.debug = TRUE)`.](https://stackoverflow.com/questions/48131779/execution-of-future-package-in-r-results-in-an-endless-waiting-time)
 - [Debugging R in VSCode](https://renkun.me/2020/09/13/debugging-r-in-vscode/)
-- [Debugging: Signals and Subprocesses](https://blog.r-hub.io/2020/02/20/processx-blocked-sigchld/)
+- [Docker image for debugging R memory problems](https://github.com/wch/r-debug#readme). hub.docker.com/r/wch1/r-debug
+- COOL! [Debugging: Signals and Subprocesses](https://blog.r-hub.io/2020/02/20/processx-blocked-sigchld/). Там масса ссылок.
 - COOL! Debug pipe
 	- [What's currently the recommended way to debug pipe chains?](https://community.rstudio.com/t/whats-currently-the-recommended-way-to-debug-pipe-chains/14724/3)
 	- [Fix leaky pipes in R](https://www.rostrum.blog/2019/04/07/fix-leaky-pipes/)
 	- [debug_pipe: Debugging function for magrittr pipelines.](https://rdrr.io/cran/magrittr/man/debug_pipe.html)
+	- [Debugging magrittr pipes](https://magrittr.tidyverse.org/reference/index.html#other-helpers)
 - COOL! [Video: Debugging JavaScript You Wrote in R](https://www.garrickadenbuie.com/blog/video-debug-js-from-r/) by Garrick Aden‑Buie. Monday, 20 July 2020
 - COOL! [Debugging in R: How to Easily and Efficiently Conquer Errors in Your Code](https://www.inwt-statistics.com/read-blog/debugging-in-r.html)
 - COOL! [pi: predict/infer. Errors and Debugging in RStudio](https://blog.methodsconsultants.com/posts/errors-and-debugging-in-rstudio/)
 
+- Profiling
+	- [Profvis — Interactive Visualizations for Profiling R Code](https://rstudio.github.io/profvis/)
+	- [Introduction to profvis](https://rpubs.com/wch/profvis-intro) by Winston Chang, 2017-05-12
+	- [Profiling R code](https://dept.stat.lsa.umich.edu/~jerrick/courses/stat701/notes/profiling.html) by Josh Errickson
+	- [Profiling your Shiny app](https://shiny.posit.co/r/articles/improve/profiling/)
+- [Are you Data Scientists or Software Developers?! I think the best Data Scientists are both.](https://milesmcbain.micro.blog/2022/10/18/are-you-data.html)
+- [Debugging R with restore points](https://cran.r-project.org/web/packages/restorepoint/vignettes/Guide_restorepoint.html)
+
 ## R debug
-- [r-lib/debugme](https://github.com/r-lib/debugme). Easy and efficient debugging for R packages
+- Эффективное управление дебаг сообщениями в коде. [r-lib/debugme](https://r-lib.github.io/debugme/). Easy and efficient debugging for R packages
 - [debug-package](https://www.rdocumentation.org/packages/debug/versions/1.3.1/topics/debug-package) by Mark Bravington
 - [How to debug (placing break point,etc) an installed R package in RStudio?](https://stackoverflow.com/questions/22000969/how-to-debug-placing-break-point-etc-an-installed-r-package-in-rstudio)
-- Profvis. But see [this FAQ]() if you want package code to show up in the code panel.)
+[`base::trace`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/trace.html).
+- Profvis. But see [this FAQ](https://rstudio-pubs-static.s3.amazonaws.com/123888_184f1274483e4970b0a366a8573cfa9f.html#how-do-i-get-code-from-an-r-package-to-show-in-the-code-panel) if you want package code to show up in the code panel.)
 - [Introduction to profvis](https://rstudio-pubs-static.s3.amazonaws.com/123888_184f1274483e4970b0a366a8573cfa9f.html) by Winston Chang, 2016-05-05
 - COOL!!! [How do I get code from an R package to show in the code panel?](https://rstudio-pubs-static.s3.amazonaws.com/123888_184f1274483e4970b0a366a8573cfa9f.html#how-do-i-get-code-from-an-r-package-to-show-in-the-code-panel)
 In typical use, only code written by the user is shown in the code panel. (This is code for which source references are available.) Yellow blocks in the flame graph have corresponding lines of code in the code panel, and when moused over, the line of code will be highlighted. White blocks in the flame graph don’t have corresponding lines in the code panel. In most cases, the calls represented by the white blocks are to functions that are in base R and other packages.
@@ -752,6 +768,17 @@ E.g. `install.packages("ggplot2", type="source", INSTALL_opts="--with-keep.sourc
 Rscript -e "options(keep.source=TRUE); p <- profvis::profvis({ profvis::pause(0.2) }); htmlwidgets::saveWidget(p, 'test.html')"
 ```
 - [R:case4base - code profiling with base R](https://jozef.io/r004-profiling/)
+	- [Memory profiling in R](https://developer.r-project.org/memory-profiling.html) 
+			- `tracemem()` - Tracing copies of an object
+			- `Rprofmem()` - Tracking memory allocations
+- R profiling
+	- [Memory profiling in R](https://developer.r-project.org/memory-profiling.html) `tracemem()`
+- [3 Tidying and profiling R code](https://cran.r-project.org/doc/manuals/r-release/R-exts.html#Tidying-and-profiling-R-code):
+	- Tidying R code
+	- Profiling R code for speed
+	- Profiling R code for memory use
+	- Profiling compiled code
+- [R manuals. Writing R Extensions. 4 Debugging](https://cran.r-project.org/doc/manuals/r-release/R-exts.html#Debugging)
 - COOL! Learning [daranzolin/ViewPipeSteps](https://github.com/daranzolin/ViewPipeSteps). Create tabs of `View()` output for each chained pipe
 - COOL! [How to interactively examine any R code - 4 ways to not just read the code, but delve into it step-by-step](https://jozef.io/r916-exploring-r-code-interactively/)
 - [r-lib/debugme](https://github.com/r-lib/debugme). Easy and efficient debugging for R packages
@@ -776,28 +803,32 @@ Rscript -e "options(keep.source=TRUE); p <- profvis::profvis({ profvis::pause(0.
 	- [r-lib/debugme](https://github.com/r-lib/debugme). Easy and efficient debugging for R packages
 	- [Debugme](https://github.com/gaborcsardi/debugme). Easy and efficient debugging for R packages. gaborcsardi/debugme
 - [wrapr: Wrap R Functions for Debugging and Parametric Programming](https://cran.r-project.org/web/packages/wrapr/index.html)
-- [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Published: 2013-02-07.
-Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
 - [Debugging, condition handling, and defensive programming](http://adv-r.had.co.nz/Exceptions-Debugging.html)
 - "Mastering Software Development in R". [2.6 Debugging](https://bookdown.org/rdpeng/RProgDA/debugging.html)
 - [ggpmisc 0.2.13. Debugging ggplots](https://cran.r-project.org/web/packages/ggpmisc/vignettes/debug.html)
 	- Переехало в [`‘gginnards’`](https://docs.r4photobiology.info/gginnards/)
 - [Using the Bizarro Pipe to Debug magrittr Pipelines in R](http://www.win-vector.com/blog/2017/01/using-the-bizarro-pipe-to-debug-magrittr-pipelines-in-r/)
 - [Debugging R Functions](http://seananderson.ca/2013/08/23/debugging-r.html)
-- [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
 - COOL [How-to go parallel in R – basics + tips](http://gforge.se/2015/02/how-to-go-parallel-in-r-basics-tips/). См. п. "Debugging"
 Debugging is especially hard when working in a parallelized environment. You cannot simply call browser/cat/print in order to find out what the issue is.
 	- Never use set.seed(), use clusterSetRNGStream() instead, to set the cluster seed if you want reproducible results
 - Miles McBain. My main weapons in R:
-	1. error = recover
-	2. debugonce(otherpkg:::internal_fn)
-	3. assignInNameSpace() - for duck punching
+	1. `options(error = recover)`
+	2. `debugonce(otherpkg:::internal_fn)`
+	3. `utils::assignInNameSpace()` - for duck punching
 `utils::getFromNamespace`. Utility functions to access and replace the non-exported functions in a namespace, for use in developing packages with namespaces.
+- [Adding RStudio Addins to VSCode](https://www.milesmcbain.com/posts/adding-addins-to-vscode/) by Miles McBain.
+Technical details and select highlights of my project to bring RStudio addins to VSCode.
+
+- Deprecated [debug: MVB's debugger for R](https://cran.r-project.org/web/packages/debug/index.html). Published: 2013-02-07.
+Debugger for R functions, with code display, graceful error recovery, line-numbered conditional breakpoints, access to exit code, flow control, and full keyboard input.
+
 
 ## Debug Shiny
 - [A little trick for debugging Shiny](https://rtask.thinkr.fr/blog/a-little-trick-for-debugging-shiny/)
 - Презентация [Debugging with Shiny](http://rpubs.com/jmcphers/149638)
 - [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)` Showcase Mode!!!
+- COOL! [Activate reactivity in the console — reactiveConsole](https://shiny.posit.co/r/reference/shiny/1.7.0/reactiveconsole) `reactiveConsole(TRUE)`
 - COOL! [R Debugging - Cannot see which line generates warning message (Shiny)](https://stackoverflow.com/questions/29132110/r-debugging-cannot-see-which-line-generates-warning-message-shiny).
 You can tell R to treat warnings as errors with `options(warn=2)`. ...
 First turn on displaying warnings using the command `options(warn=1)` Then, you could run it by clicking on the "Source" or "Source with Echo" button (see image below). You can see the error/warning messages when any line with errors/warnings is executed.
@@ -1185,6 +1216,9 @@ Stratification, CUPED, Variance-Weighted Estimators, and ML-based methods CUPAC 
 - [New York R Conference](https://rstats.ai/nyr/)
 - [New York R meetup](https://nyhackr.org/)
 
+## R Ladies 2023
+- [R Ladies Rome](https://github.com/rladies/meetup-presentations_rome). Meetup presentations and material from R-Ladies Rome
+
 ## New York R 2023
 - David Smith, Principal Cloud Advocate at Microsoft. [Copilot for R, a supporting repository for a presentation](https://github.com/revodavid/copilot-for-r)
 - Mitchell O’Hara-Wild, Nectric. [From forecast to fable, design decisions for statistical software](https://slides.mitchelloharawild.com/nyr2023/)
@@ -1377,6 +1411,20 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 `git -c http.sslVerify=false clone https://gitlab.com/repo.git <dir>` (решение найдено здесь:[SSL certificate rejected trying to access GitHub over HTTPS behind firewall](https://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall) или здесь:[github: server certificate verification failed](https://stackoverflow.com/questions/35821245/github-server-certificate-verification-failed/35824116)).
 Можно потом в конфиг этого репозитория отключить `git config http.sslVerify false`
 
+# 17.11.2023
+## R
+```
+h04 <- function(x = 1, y = x * 2, z = a + b) {
+    a <- 10
+    b <- 100
+    c(x, y, z)}
+h04()
+#> [1]   1   2  110
+```
+- [Force evaluation of all lazy function arguments](https://stackoverflow.com/questions/47040771/force-evaluation-of-all-lazy-function-arguments)
+- [How to not fall into R's 'lazy evaluation trap'](https://stackoverflow.com/questions/29084193/how-to-not-fall-into-rs-lazy-evaluation-trap). 
+R has a function that helps safeguard against lazy evaluation, in situations like closure creation: `forceAndCall()`.
+
 # 11.11.2023
 - [What is the purpose of the `fa-fw` class?](https://stackoverflow.com/questions/41140132/what-is-the-purpose-of-the-fa-fw-class). `fa-fw` class will align icons vertically center with fixed margin. so the size of each icon will not vary and they aligned below each other in the center.
 
@@ -1385,9 +1433,7 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 - [Removing NULL elements from a list {duplicate}](https://stackoverflow.com/questions/33004238/removing-null-elements-from-a-list)
 `mylist[lengths(mylist) != 0]`
 `purrr::compact()`
-`rlist::list.clean(myNestedlist ,recursive = T)`
-- [Programming with dplyr](https://dplyr.tidyverse.org/articles/programming.html). direct `.data`
-- [When programming with dplyr, what is the correct way to avoid undefined global variables?](https://community.rstudio.com/t/when-programming-with-dplyr-what-is-the-correct-way-to-avoid-undefined-global-variables/55946). `utils::globalVariables('data', 'group_var', 'weight_var')`
+`rlist::list.clean(myNestedlist, recursive = T)`
 - [pandoc & rmarkdown](https://mpn.metworx.com/packages/rmarkdown/2.3/index.html). A recent version of Pandoc (>= 1.12.3) is required to use the rmarkdown package. RStudio also automatically includes this so you do not need to download Pandoc if you plan to use rmarkdown from the RStudio IDE.
 - [Top 5 tips for efficient programming](https://bookdown.org/csgillespie/efficientR/programming.html#top-5-tips-for-efficient-programming)
 
@@ -1548,6 +1594,8 @@ dedupe <- function(r) {
 - [How to listen for more than one event expression within a Shiny `observeEvent`](https://stackoverflow.com/questions/41960953/how-to-listen-for-more-than-one-event-expression-within-a-shiny-observeevent)
 - [gfonts](https://dreamrs.github.io/gfonts/)
 Download ‘Google’ fonts (via google-webfonts-helper) and generate CSS to use in rmarkdown documents and shiny applications. Some popular fonts are included and ready to use.
+- [How to change 'Maximum upload size exceeded' restriction in Shiny and save user file inputs?](https://stackoverflow.com/questions/18037737/how-to-change-maximum-upload-size-exceeded-restriction-in-shiny-and-save-user)
+`options(shiny.maxRequestSize=30*1024^2)`
 
 # 21.08.2023
 ## R

@@ -1,3 +1,6 @@
+# 15.11.2023
+- [How to | Compute a Limit](https://reference.wolfram.com/language/howto/ComputeALimit.html)
+
 # 08.11.2023
 ## Немного аналитической геометрии
 - [`FullSimplify` with assumptions](https://mathematica.stackexchange.com/questions/54931/fullsimplify-with-assumptions)
