@@ -1412,6 +1412,8 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 Можно потом в конфиг этого репозитория отключить `git config http.sslVerify false`
 
 # 17.11.2023
+- COOL! [vhs. Your CLI home video recorder 📼](https://github.com/charmbracelet/vhs). Write terminal GIFs as code for integration testing and demoing your CLI tools.
+
 ## R
 ```
 h04 <- function(x = 1, y = x * 2, z = a + b) {
@@ -1424,6 +1426,7 @@ h04()
 - [Force evaluation of all lazy function arguments](https://stackoverflow.com/questions/47040771/force-evaluation-of-all-lazy-function-arguments)
 - [How to not fall into R's 'lazy evaluation trap'](https://stackoverflow.com/questions/29084193/how-to-not-fall-into-rs-lazy-evaluation-trap). 
 R has a function that helps safeguard against lazy evaluation, in situations like closure creation: `forceAndCall()`.
+- COOL! [Distinct enclosing environment, function environment, etc. in R](https://stackoverflow.com/questions/44427752/distinct-enclosing-environment-function-environment-etc-in-r). В дополнение к [7.4.2 The function environment](https://adv-r.hadley.nz/environments.html#function-environments) и [Function environments](http://adv-r.had.co.nz/Environments.html#function-envs)
 
 # 11.11.2023
 - [What is the purpose of the `fa-fw` class?](https://stackoverflow.com/questions/41140132/what-is-the-purpose-of-the-fa-fw-class). `fa-fw` class will align icons vertically center with fixed margin. so the size of each icon will not vary and they aligned below each other in the center.

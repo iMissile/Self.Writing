@@ -648,6 +648,7 @@ In Observable, though, cells run in the order they’re needed—what’s called
 - [Recreating an Altman-Gardner Plot in Javascript based on the dabest package in R](https://observablehq.com/@lorenasandoval88/altman-gardner-plot)
 - [Plot Exploration: Penguins](https://observablehq.com/@observablehq/plot-exploration-penguins)
 - Пояснения по поводу `view` операторов, в частности, `viewof`: [Introduction to views](https://observablehq.com/@observablehq/views)
+- Slides! + demo notebook + Quarto dashboard example [Intro to Observable Plot](https://github.com/tashapiro/intro-observable) by Tanya Shapiro
 
 ## Примеры
 - [Crossfilter](http://crossfilter.github.io/crossfilter/). Fast Multidimensional Filtering for Coordinated Views
