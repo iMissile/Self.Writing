@@ -282,3 +282,4 @@ New documents should use the regular `caption' package v3.x instead.`
 # Word
 - [Craft beautiful equations in Word with LaTeX](https://www.nature.com/articles/d41586-019-01796-1)
 - [LATEX EQUATION TO WORD (2007 TO 365): 3 METHODS [2022]](https://www.pickupbrain.com/ms-word/latex-equation-to-word/)
+- [Rmarkdown. Equations not appearing in word](https://community.rstudio.com/t/equations-not-appearing-in-word/40228)

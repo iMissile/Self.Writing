@@ -1601,14 +1601,17 @@ Download ‘Google’ fonts (via google-webfonts-helper) and generate CSS to use
 `options(shiny.maxRequestSize=30*1024^2)`
 
 # 21.08.2023
+# R. Create empty dataframe
+- COOL! [Create an empty data.frame](https://stackoverflow.com/questions/10689055/create-an-empty-data-frame)
+- COOL! [Create Empty DataFrame in R](https://sparkbyexamples.com/r-programming/r-create-an-empty-dataframe/)
+- [How to create a list with names but no entries in R/Splus?](https://stackoverflow.com/questions/5688020/how-to-create-a-list-with-names-but-no-entries-in-r-splus)
+- [Create an Empty List of Specific Length in R](https://www.tutorialkart.com/r-tutorial/r-create-empty-list-of-specific-length/#gsc.tab=0)
+- [How to Create Empty Vector in R](https://sparkbyexamples.com/r-programming/create-empty-vector-in-r/)
+
 ## R
 - COOL! [How to Display or Print Contents of Environment in R](https://stackoverflow.com/questions/50207263/how-to-display-or-print-contents-of-environment-in-r)
 `mget(ls(e1), envir = e1)` or `lapply(ls(),function(x)get(x))`
 - [How to create an empty datatable with columns names and then append datatables to it?](https://stackoverflow.com/questions/37376398/how-to-create-an-empty-datatable-with-columns-names-and-then-append-datatables-t)
-- [Create Empty DataFrame in R](https://sparkbyexamples.com/r-programming/r-create-an-empty-dataframe/)
-- [How to create a list with names but no entries in R/Splus?](https://stackoverflow.com/questions/5688020/how-to-create-a-list-with-names-but-no-entries-in-r-splus)
-- [Create an Empty List of Specific Length in R](https://www.tutorialkart.com/r-tutorial/r-create-empty-list-of-specific-length/#gsc.tab=0)
-- [How to Create Empty Vector in R](https://sparkbyexamples.com/r-programming/create-empty-vector-in-r/)
 - [winch](https://r-prof.github.io/winch/)
 Winch provides stack traces for call chains that cross between R and C function calls. This is a useful tool for developers of R packages where a substantial portion of the code is C or C++.
 - [Faucet](https://github.com/andyquinterom/Faucet) is an asynchronous runtime for running Plumber APIs. Faucet enables guaranteed concurrency and parallelism for Plumber APIs without the need for a promise based API. Faucet can run either locally or in a Kubernetes cluster.
