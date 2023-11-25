@@ -235,6 +235,10 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [The Hitchhiker’s Guide to Linear Models is now complete](https://pacha.dev/blog/2023/09/08/index.html)
 - [The Clean Code Blog](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) by Robert C. Martin (Uncle Bob)
 - [Software Design by Example](https://third-bit.com/sdxpy/) by Greg Wilson. A tool-based introduction with Python
+- Casual Inference
+	- [Causal Inference in R](https://www.r-causal.org/) by Malcolm Barrett + инструменты и пакеты [Causal Inference in R. Tools and educational material for causal inference in R](https://github.com/r-causal) +[Workshop](https://github.com/r-causal/causal_inference_r_workshop)
+	- [Causal Inference. The Mixtape](https://mixtape.scunning.com/) by Scott Cunningham
+	- [The Effect: An Introduction to Research Design and Causality](https://theeffectbook.net/index.html) by Nick Huntington-Klein
 
 ## e-books ML
 - [Deep Learning and Scientific Computing with R torch](https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/) by Sigrid Keydana
@@ -1410,6 +1414,19 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 - В случае проблемы с сертификатами напрямую из RStudio clone проекта также не получается сделать. Надо обходить через командную строку:
 `git -c http.sslVerify=false clone https://gitlab.com/repo.git <dir>` (решение найдено здесь:[SSL certificate rejected trying to access GitHub over HTTPS behind firewall](https://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall) или здесь:[github: server certificate verification failed](https://stackoverflow.com/questions/35821245/github-server-certificate-verification-failed/35824116)).
 Можно потом в конфиг этого репозитория отключить `git config http.sslVerify false`
+
+
+
+# 23.11.2023
+## R
+- [Remove All Attributes From A Variables In R](https://www.w3schools.blog/remove-all-attributes-from-a-variables-in-r). 
+`attributes(x) <- NULL` >
+- [Remove data.table column labels/attributes (imported data)](https://stackoverflow.com/questions/56248829/remove-data-table-column-labels-attributes-imported-data)
+- [tidy eval vs base or get() vs sym() vs as.symbol()](https://stackoverflow.com/questions/55929490/tidy-eval-vs-base-or-get-vs-sym-vs-as-symbol)
+- [How to swap the names and values of a named vector in R?](https://stackoverflow.com/questions/64931905/how-to-swap-the-names-and-values-of-a-named-vector-in-r)
+`setNames(names(y), y)`
+- COOL! [Spectrograms in R](https://hansenjohnson.org/post/spectrograms-in-r/)
+- COOL! [Imputation in R: Top 3 Ways for Imputing Missing Data](https://appsilon.com/imputation-in-r/)
 
 # 17.11.2023
 - COOL! [vhs. Your CLI home video recorder 📼](https://github.com/charmbracelet/vhs). Write terminal GIFs as code for integration testing and demoing your CLI tools.

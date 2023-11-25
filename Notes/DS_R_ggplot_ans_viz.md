@@ -346,6 +346,8 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - [ggplot2::scale_x_time: Formatting hms objects](https://stackoverflow.com/questions/58395236/ggplot2scale-x-time-formatting-hms-objects)
 - [One Weird Trick to Make Ggplot2 Columns the Same Width](https://pacha.dev/blog/2023/07/31/ggplot-columns/index.html)
 - [ggplot2 : Adding two errorbars to each point in scatterplot](https://stackoverflow.com/questions/9231702/ggplot2-adding-two-errorbars-to-each-point-in-scatterplot)
+- [Adding social media icons to charts with {ggplot2}](https://nrennie.rbind.io/blog/adding-social-media-icons-ggplot2/). With `ggtext`
+
 
 ## ggplot & units
 - `units` работают в `ggplot`, но возникли проблемы с `lims`!. Решается через `units::scale_x_units(limits = c(0, NA), unit = "cm")`:
