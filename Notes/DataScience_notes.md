@@ -1645,7 +1645,13 @@ The goal of qgisprocess is to provide an R interface to the geoprocessing algori
 - Вот мега разбор [Can't install packages with renv](https://community.rstudio.com/t/cant-install-packages-with-renv/96696/13) и найденное решение:
 `options(renv.download.override = utils::download.file)`
 - [`renv:restore()` always fails in windows](https://stackoverflow.com/questions/67228070/renvrestore-always-fails-in-windows)
+```
+Update renv to last version (currently, 0.13.2)
+Run Sys.setenv(RENV_DOWNLOAD_METHOD = "wininet")
+Run renv::restore()
+```
 	- See also this <github.com/rstudio/renv/issues/301> for a solution with `renv::equip()`
+- [`renv` fails on `install.packages()` and `restore()`](https://community.rstudio.com/t/renv-fails-on-install-packages-and-restore/160136/2). Можно прямо указать репозиторий без переменных окружения: `renv::restore(repos="https://cloud.r-project.org")`
 - [Inability to install packages after updating R and R Studio](https://community.rstudio.com/t/inability-to-install-packages-after-updating-r-and-r-studio/164954)
 - [Can't install packages with renv](https://community.rstudio.com/t/cant-install-packages-with-renv/96696/13)
 	- !!! Мне помогло `Sys.setenv(RENV_DOWNLOAD_FILE_METHOD = "libcurl")`
@@ -4491,12 +4497,6 @@ scales::show_col(pal)
 - [Use DataExplorer for EDA (Exploratory Data Analysis)](https://www.business-science.io/code-tools/2021/03/02/use-dataexplorer-for-EDA.html)
 - [dataReporter](https://github.com/ekstroem/dataReporter), ранее [dataMaid](https://github.com/ekstroem/dataMaid)
 `dataReporter` is an R package for documenting and creating reports on data cleanliness.
-- [`renv::restore()` always fails in windows](https://stackoverflow.com/questions/67228070/renvrestore-always-fails-in-windows)
-```
-Update renv to last version (currently, 0.13.2)
-Run Sys.setenv(RENV_DOWNLOAD_METHOD = "wininet")
-Run renv::restore()
-```
 
 # 22.04.2021
 ## R
