@@ -243,6 +243,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 ## e-books ML
 - [Deep Learning and Scientific Computing with R torch](https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/) by Sigrid Keydana
 - [Dive into Deep Learning](https://d2l.ai/index.html). Interactive deep learning book with code, math, and discussions. Implemented with PyTorch, NumPy/MXNet, JAX, and TensorFlow. Adopted at 400 universities from 60 countries
+- COOL! [Understanding Deep Learning](https://udlbook.github.io/udlbook/) by Simon J.D. Prince. To be published by MIT Press Dec 5th 2023.
 
 
 # Articles
@@ -1616,6 +1617,8 @@ dedupe <- function(r) {
 Download ‘Google’ fonts (via google-webfonts-helper) and generate CSS to use in rmarkdown documents and shiny applications. Some popular fonts are included and ready to use.
 - [How to change 'Maximum upload size exceeded' restriction in Shiny and save user file inputs?](https://stackoverflow.com/questions/18037737/how-to-change-maximum-upload-size-exceeded-restriction-in-shiny-and-save-user)
 `options(shiny.maxRequestSize=30*1024^2)`
+- [RStudio Server + Shiny - (No stack trace available)](https://stackoverflow.com/questions/68818771/rstudio-server-shiny-no-stack-trace-available)
+`options(error = traceback)`. Also see [Mastering Shiny 5.2.2 Tracebacks in Shiny](https://mastering-shiny.org/action-workflow.html#tracebacks-in-shiny)
 
 # 21.08.2023
 # R. Create empty dataframe
