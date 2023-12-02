@@ -703,3 +703,6 @@ import { x } from "./foo.qmd";
 
 # Graph
 - COOL! [cyjShiny: Cytoscape.js Shiny Widget (cyjShiny)](https://cran.r-project.org/web/packages/cyjShiny/index.html). Для него необходимо ставить пакет [`graph`](http://www.bioconductor.org/packages/release/bioc/html/graph.html) с Биокондуктора.
+
+# plotly
+- COOL! [Zoom on a Plotly heatmap](https://stackoverflow.com/questions/75792497/zoom-on-a-plotly-heatmap). Дима тут нашел решение как минимальный зум ограничить.

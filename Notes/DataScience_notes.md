@@ -1446,6 +1446,15 @@ h04()
 R has a function that helps safeguard against lazy evaluation, in situations like closure creation: `forceAndCall()`.
 - COOL! [Distinct enclosing environment, function environment, etc. in R](https://stackoverflow.com/questions/44427752/distinct-enclosing-environment-function-environment-etc-in-r). В дополнение к [7.4.2 The function environment](https://adv-r.hadley.nz/environments.html#function-environments) и [Function environments](http://adv-r.had.co.nz/Environments.html#function-envs)
 
+# 01.12.2023
+## R & maps
+- Slides! 'Map making with R' by Benjamin Nowak
+	- [Part 1. Choropleths and cartograms](https://bjnnowak.github.io/Lessons/map_making_part1#1)
+	- [Part 2. How to make bivariate maps](https://bjnnowak.github.io/Lessons/map_making_part2#1)
+	- [Part 3. Point valued maps](https://bjnnowak.github.io/Lessons/map_making_part3#1)
+- [Geospatial Data Science for Public Health Surveillance](https://www.paulamoraga.com/presentation-geohealth/#1) by Paula Moraga, Ph.D.
+- [Analysis of Spatial Patterns: Current State and Future Challenges](https://jakubnowosad.com/iiasa2023/#/title-slide) by Jakub Nowosad, IIASA. Laxenburg, Austria, 2023-09-28
+
 # 11.11.2023
 - [What is the purpose of the `fa-fw` class?](https://stackoverflow.com/questions/41140132/what-is-the-purpose-of-the-fa-fw-class). `fa-fw` class will align icons vertically center with fixed margin. so the size of each icon will not vary and they aligned below each other in the center.
 
