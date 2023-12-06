@@ -1416,7 +1416,14 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 `git -c http.sslVerify=false clone https://gitlab.com/repo.git <dir>` (решение найдено здесь:[SSL certificate rejected trying to access GitHub over HTTPS behind firewall](https://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall) или здесь:[github: server certificate verification failed](https://stackoverflow.com/questions/35821245/github-server-certificate-verification-failed/35824116)).
 Можно потом в конфиг этого репозитория отключить `git config http.sslVerify false`
 
-
+# 12.11.2023
+## R
+- [Cliff notes about the cli package](https://blog.r-hub.io/2023/11/30/cliff-notes-about-cli/)
+- [Maximizing Efficiency: A Guide to Benchmarking Memory Usage in Shiny Apps](https://appsilon.com/benchmarking-memory-usage-in-shiny-apps/)
+- [R Client for access to multiple data repository services](https://github.com/ropenscilabs/deposits)
+	- [deposits R Package Delivers a Common Workflow for R Users](https://www.r-consortium.org/blog/2023/11/30/deposits-r-package-delivers-a-common-workflow-for-r-users)
+	- ebooks. [Geocomputation with R comptetition: book cover for the 2nd edition](https://geocompx.org/post/2023/map-cover-competition/index.html)
+- [Trying out timeplyr](https://alan-y.netlify.app/post/trying-out-timeplyr/)
 
 # 23.11.2023
 ## R
@@ -1628,6 +1635,7 @@ Download ‘Google’ fonts (via google-webfonts-helper) and generate CSS to use
 `options(shiny.maxRequestSize=30*1024^2)`
 - [RStudio Server + Shiny - (No stack trace available)](https://stackoverflow.com/questions/68818771/rstudio-server-shiny-no-stack-trace-available)
 `options(error = traceback)`. Also see [Mastering Shiny 5.2.2 Tracebacks in Shiny](https://mastering-shiny.org/action-workflow.html#tracebacks-in-shiny)
+- COOL! [shinyauthr](https://paulc91.github.io/shinyauthr/) is an R package providing module functions that can be used to add an authentication layer to your shiny apps.
 
 # 21.08.2023
 # R. Create empty dataframe
