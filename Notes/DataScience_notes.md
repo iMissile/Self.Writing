@@ -1418,6 +1418,7 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 
 # 12.11.2023
 ## R
+- COOL! [The R Installation Manager](https://github.com/r-lib/rig)
 - [Cliff notes about the cli package](https://blog.r-hub.io/2023/11/30/cliff-notes-about-cli/)
 - [Maximizing Efficiency: A Guide to Benchmarking Memory Usage in Shiny Apps](https://appsilon.com/benchmarking-memory-usage-in-shiny-apps/)
 - [R Client for access to multiple data repository services](https://github.com/ropenscilabs/deposits)
@@ -1588,6 +1589,9 @@ logger_tree()
 - [crudr](https://rpubs.com/Eauleaf/crudr). This package is a (create-read-update-delete) CRUD app built on DT in R.
 - COOL! [Shiny CRUD](https://www.tychobra.com/posts/2020-01-29-shiny-crud-traditional/)
 - [Building CRUD with Shiny](https://community.rstudio.com/t/building-crud-with-shiny/2881)
+- Slides. [Using drag-and-drop in your shiny apps. Introduction to sortable](https://colorado.posit.co/rsc/intro-to-sortable/intro_to_sortable.html#1)
+- [How to add checkbox in datatable in a shiny module?](https://stackoverflow.com/questions/73118218/how-to-add-checkbox-in-datatable-in-a-shiny-module)
+- [Select rows using checkboxes #93 {Closed}](https://github.com/rstudio/DT/issues/93)
 
 
 ## shiny
@@ -1636,6 +1640,9 @@ Download ‘Google’ fonts (via google-webfonts-helper) and generate CSS to use
 - [RStudio Server + Shiny - (No stack trace available)](https://stackoverflow.com/questions/68818771/rstudio-server-shiny-no-stack-trace-available)
 `options(error = traceback)`. Also see [Mastering Shiny 5.2.2 Tracebacks in Shiny](https://mastering-shiny.org/action-workflow.html#tracebacks-in-shiny)
 - COOL! [shinyauthr](https://paulc91.github.io/shinyauthr/) is an R package providing module functions that can be used to add an authentication layer to your shiny apps.
+- [Shiny: Is there a way to trigger an observeEvent() by switching between tabsPanel()'s](https://stackoverflow.com/questions/58402873/shiny-is-there-a-way-to-trigger-an-observeevent-by-switching-between-tabspane)
+- [Outputting multiple lines of text with renderText() in R shiny](https://stackoverflow.com/questions/23233497/outputting-multiple-lines-of-text-with-rendertext-in-r-shiny)
+- [How to customize shiny sliderInput](https://divadnojnarg.github.io/post/customsliderinput/)
 
 # 21.08.2023
 # R. Create empty dataframe
