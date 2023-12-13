@@ -532,6 +532,10 @@ An rstudio::conf(2022) Workshop by Cédric Scherer
 - [Embed HTML #45 {Closed}](https://github.com/rstudio/DT/issues/45)
 - [DT table not rendering when using HTML tag](https://community.rstudio.com/t/dt-table-not-rendering-when-using-html-tag/139525/9)
 - [Datatable is not displayed in RMarkdown when using <details> #931 {Closed}](https://github.com/rstudio/DT/issues/931). Тут есть workaround.
+- [Header and footer fixed](https://datatables.net/extensions/fixedheader/examples/options/header_footer.html)
+	- [The FixedHeader Extension](https://rstudio.github.io/DT/001-fixedheader.html)
+	- [Issue with FixedHeader extension #389 {Closed}](https://github.com/rstudio/DT/issues/389)
+	- [Freeze Header and Footer in Datatable - shiny](https://stackoverflow.com/questions/50922686/freeze-header-and-footer-in-datatable-shiny)
 
 ## gt
 - [Create interactive links in gt table (in rmarkdown)](https://community.rstudio.com/t/create-interactive-links-in-gt-table-in-rmarkdown/70266/2)
@@ -706,3 +710,10 @@ import { x } from "./foo.qmd";
 
 # plotly
 - COOL! [Zoom on a Plotly heatmap](https://stackoverflow.com/questions/75792497/zoom-on-a-plotly-heatmap). Дима тут нашел решение как минимальный зум ограничить.
+
+# css
+- Умещаем элементы в контейнер. Ключевое слово -- Viewport.
+- [How to give a div tag 100% height of the browser window using CSS](https://www.geeksforgeeks.org/how-to-give-a-div-tag-100-height-of-the-browser-window-using-css/)
+- [Element to take remaining height of viewport](https://stackoverflow.com/questions/37725840/element-to-take-remaining-height-of-viewport) `100% -> 100vh`
+- COOL! [How to make the div fill the height of the remaining screen space](https://www.educative.io/answers/how-to-make-the-div-fill-the-height-of-the-remaining-screen-space)
+- [Using CSS to Make an Element Occupy the Remaining Height](https://copyprogramming.com/howto/css-make-element-take-remaining-height-css). `height: -webkit-calc(100% - 40px);`

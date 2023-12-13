@@ -1,5 +1,22 @@
+# 13.12.2023
+- [Mathematica: Determine if all integers in a list are less than a number?](https://stackoverflow.com/questions/1184995/mathematica-determine-if-all-integers-in-a-list-are-less-than-a-number)
+- [Alternatives to procedural loops and iterating over lists in Mathematica](https://mathematica.stackexchange.com/questions/7924/alternatives-to-procedural-loops-and-iterating-over-lists-in-mathematica)
+- [Another way to avoid nested loops is with Tuples, as discussed [here](https://mathematica.stackexchange.com/questions/7915/assigning-a-particular-value-to-array-elements/7919#7919). This nested For loop Can be rewritten faster as:
+`Xarray = A @@@ Tuples[Range[0, 9], 3];`
+- [How to generate flattened tables?](https://mathematica.stackexchange.com/questions/170756/how-to-generate-flattened-tables)
+e.g. `f @@@ Tuples[{Range[10], Range[5], Range[2]}]`
+- [Polynomial Degree](https://mathworld.wolfram.com/PolynomialDegree.html). А еще есть тут: [PolynomialDegree. Compute the degree of a polynomial in any number of variables](https://resources.wolframcloud.com/FunctionRepository/resources/PolynomialDegree/)
+- [Extract variable and coefficient from equation elegantly](https://mathematica.stackexchange.com/questions/126553/extract-variable-and-coefficient-from-equation-elegantly)
+
+## Code conventions
+- [General strategies to write big code in Mathematica?](https://mathematica.stackexchange.com/questions/109888/general-strategies-to-write-big-code-in-mathematica)
+- [How to write a long function in Mathematica? Using Notebook as function?](https://stackoverflow.com/questions/8377750/how-to-write-a-long-function-in-mathematica-using-notebook-as-function)
+
 # 15.11.2023
 - [How to | Compute a Limit](https://reference.wolfram.com/language/howto/ComputeALimit.html)
+- Полиномы, стартовая страница. [Algebraic Manipulation](https://reference.wolfram.com/language/tutorial/AlgebraicManipulation.html)
+- Стартовая страница. [Manipulating Equations and Inequalities](https://reference.wolfram.com/language/tutorial/ManipulatingEquationsAndInequalities.html)
+
 
 # 08.11.2023
 ## Немного аналитической геометрии
