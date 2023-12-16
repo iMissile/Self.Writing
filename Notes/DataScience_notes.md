@@ -244,6 +244,10 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Deep Learning and Scientific Computing with R torch](https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/) by Sigrid Keydana
 - [Dive into Deep Learning](https://d2l.ai/index.html). Interactive deep learning book with code, math, and discussions. Implemented with PyTorch, NumPy/MXNet, JAX, and TensorFlow. Adopted at 400 universities from 60 countries
 - COOL! [Understanding Deep Learning](https://udlbook.github.io/udlbook/) by Simon J.D. Prince. To be published by MIT Press Dec 5th 2023.
+- [Deep Learning: Foundations and Concepts 1st ed. 2024 Edition](https://www.amazon.com/Deep-Learning-Foundations-Christopher-Bishop/dp/3031454677/)
+by Christopher M. Bishop (Author), Hugh Bishop (Author)
+
+- [Modern Deep Learning for Tabular Data. Novel Approaches to Common Modeling Problems](https://link.springer.com/book/10.1007/978-1-4842-8692-0)
 
 
 # Articles
