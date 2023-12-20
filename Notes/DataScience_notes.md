@@ -1420,10 +1420,18 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 `git -c http.sslVerify=false clone https://gitlab.com/repo.git <dir>` (решение найдено здесь:[SSL certificate rejected trying to access GitHub over HTTPS behind firewall](https://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall) или здесь:[github: server certificate verification failed](https://stackoverflow.com/questions/35821245/github-server-certificate-verification-failed/35824116)).
 Можно потом в конфиг этого репозитория отключить `git config http.sslVerify false`
 
-# 12.11.2023
+# 22.12.2023
+## rhino
+- [{rhino} vs {golem} vs {leprechaun}: Which R/Shiny Library is Right for You?](https://appsilon.com/rhino-vs-golem-vs-leprechaun/)
+- [Explanation: What is Rhino?](https://appsilon.github.io/rhino/articles/explanation/what-is-rhino.html)
+
+# 12.12.2023
 ## R
 - COOL! [The R Installation Manager](https://github.com/r-lib/rig)
+Environment](https://appsilon.com/renv-with-docker/)
+- [Nix notes](https://www.brodrigues.co/tags/nix/)
 - [Cliff notes about the cli package](https://blog.r-hub.io/2023/11/30/cliff-notes-about-cli/)
+- COOL! [Renv with Docker: How to Dockerize a Shiny Application with an Reproducible 
 - [Maximizing Efficiency: A Guide to Benchmarking Memory Usage in Shiny Apps](https://appsilon.com/benchmarking-memory-usage-in-shiny-apps/)
 - [R Client for access to multiple data repository services](https://github.com/ropenscilabs/deposits)
 	- [deposits R Package Delivers a Common Workflow for R Users](https://www.r-consortium.org/blog/2023/11/30/deposits-r-package-delivers-a-common-workflow-for-r-users)
@@ -2228,6 +2236,7 @@ You could also use `stri_list2matrix` function from `stringi` package. This conv
 ## graph
 - [Read data from a pandas DataFrame and create a tree using anytree in python](https://stackoverflow.com/questions/64084786/read-data-from-a-pandas-dataframe-and-create-a-tree-using-anytree-in-python)
 - [Select rows from table using tree order](https://stackoverflow.com/questions/3709292/select-rows-from-table-using-tree-order)
+- [Алгоритм Краскала, также алгоритм Крускала](https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%9A%D1%80%D0%B0%D1%81%D0%BA%D0%B0%D0%BB%D0%B0) — эффективный алгоритм построения минимального остовного дерева взвешенного связного неориентированного графа. Т
 
 ## Performance
 - [Transcoding Unicode with AVX-512: AMD Zen 4 vs. Intel Ice Lake](https://lemire.me/blog/2023/01/05/transcoding-unicode-with-avx-512-amd-zen-4-vs-intel-ice-lake/)

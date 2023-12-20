@@ -710,6 +710,20 @@ import { x } from "./foo.qmd";
 
 # plotly
 - COOL! [Zoom on a Plotly heatmap](https://stackoverflow.com/questions/75792497/zoom-on-a-plotly-heatmap). Дима тут нашел решение как минимальный зум ограничить.
+- Проблема с доп. атрибутом `options(htmlwidgets.TOJSON_ARGS = list(na = 'string'))`.
+Вместо тепловой карты plotly на экране появлялось сообщение об ошибке:
+Error: formal argument "na" matched by multiple actual arguments .
+Пример появления подобной ошибки описан, например, в
+https://stackoverflow.com/questions/49988047/conflict-between-dt-and-plotly-to-show-na-in-table
+Кроме того, в [introduce a new option DT.TOJSON_ARGS #536 {Merged}](https://github.com/rstudio/DT/pull/536) приведена рекомендация использования альтернативного ключа DT, например:
+`options("DT.TOJSON_ARGS" = list(na = input$na_inf))`
+В настоящее время для обеспечения функционирования модуля «Доступность» перед вызовом функции отрисовки тепловой карты выполняется сброс глобальной настройки `htmlwidgets.TOJSON_ARGS`: 
+`options(htmlwidgets.TOJSON_ARGS = NULL)`.
+К сожалению, локальное переопределение опций при помощи пакета `withr` не помогает, так как само преобразование в JSON идёт уже после на уровне пакета DT или `htmlwidgets`. Причём в DT также влияет, активирован ли серверный режим (запрос каждой страницы данных с сервера).
+[Custom JSON serializer](https://www.htmlwidgets.org/develop_advanced.html#custom-json-serializer)
+[Setting htmlwidgets.TOJSON_ARGS may cause errors for other widgets #533 {Closed}](https://github.com/rstudio/DT/issues/533)
+
+Так что проблема не такая простая, как хотелось бы.
 
 # css
 - Умещаем элементы в контейнер. Ключевое слово -- Viewport.
@@ -717,3 +731,7 @@ import { x } from "./foo.qmd";
 - [Element to take remaining height of viewport](https://stackoverflow.com/questions/37725840/element-to-take-remaining-height-of-viewport) `100% -> 100vh`
 - COOL! [How to make the div fill the height of the remaining screen space](https://www.educative.io/answers/how-to-make-the-div-fill-the-height-of-the-remaining-screen-space)
 - [Using CSS to Make an Element Occupy the Remaining Height](https://copyprogramming.com/howto/css-make-element-take-remaining-height-css). `height: -webkit-calc(100% - 40px);`
+
+# nodejs
+- [Руководство. Node.js для начинающих](https://habr.com/ru/articles/779186/)
+- [Сборка мусора в JavaScript](https://habr.com/ru/articles/779186/)
