@@ -331,6 +331,9 @@ shape: (1, 5)
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
 
 
+# 25.12.2023
+-[PyScaffold](https://pyscaffold.org/en/stable/index.html) is a project generator for bootstrapping high-quality Python packages, ready to be shared on PyPI and installable via pip.
+
 # 06.11.2023
 - [How to Split String on Multiple Delimiters in Python](https://www.geeksforgeeks.org/python-split-multiple-characters-from-string/)
 - [Python List `index()`](https://www.programiz.com/python-programming/methods/list/index)

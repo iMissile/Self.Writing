@@ -1437,6 +1437,7 @@ Environment](https://appsilon.com/renv-with-docker/)
 	- [deposits R Package Delivers a Common Workflow for R Users](https://www.r-consortium.org/blog/2023/11/30/deposits-r-package-delivers-a-common-workflow-for-r-users)
 	- ebooks. [Geocomputation with R comptetition: book cover for the 2nd edition](https://geocompx.org/post/2023/map-cover-competition/index.html)
 - [Trying out timeplyr](https://alan-y.netlify.app/post/trying-out-timeplyr/)
+- [Applying a Custom Function with Multiple Parameters to Each Column Individually in Dplyr's Mutate](https://copyprogramming.com/howto/dplyr-s-mutate-at-each-column-separately-with-a-custom-function-of-several-parametrs)
 
 # 23.11.2023
 ## R
