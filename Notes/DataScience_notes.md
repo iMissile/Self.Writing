@@ -846,7 +846,6 @@ You can provide information about your app that Shiny showcase will use by creat
 - [Effectively debugging Shiny apps](http://stackoverflow.com/questions/31920286/effectively-debugging-shiny-apps)
 - [Display element ids for debugging Shiny apps](http://blog.mckuhn.de/2016/04/display-element-ids-for-debugging-shiny.html)
 - [A little trick for debugging Shiny](https://rtask.thinkr.fr/a-little-trick-for-debugging-shiny/)
-- [unit testing for shiny reactivity](https://github.com/yonicd/reactor/tree/slides). yonicd.github.io/reactor
 - [Интересный кейс с дебагом от Хадли](https://mastering-shiny.org/action-workflow.html?q=workf#case-study). To demonstrate the basic debugging approach, I’ll show you a little problem I encountered when writing Section 10.1.2. I’ll first show you the basic context, then you’ll see a problem I resolved without interactive debugging tools, a problem that required interactive debugging, and discover a final suprise.
 - COOL! [mitmproxy is a free and open source interactive HTTPS proxy.](https://mitmproxy.org/)
 	- [ropenscilabs/middlechild. R interface to MITM](https://github.com/ropenscilabs/middlechild)
@@ -858,7 +857,9 @@ You can provide information about your app that Shiny showcase will use by creat
 - [Case study: converting a Shiny app to async](https://rstudio.github.io/promises/articles/casestudy.html) by Joe Cheng (joe@rstudio.com)
 - [Chrome Lighthouse extension](https://developers.google.com/web/tools/lighthouse/). Lighthouse is an open-source, automated tool for improving the performance, quality, and correctness of your web apps.
 
-
+## Test shiny
+- [reactor](https://github.com/yonicd/reactor/tree/slides). yonicd.github.io/reactor. unit testing for shiny reactivity
+- [Cypress](https://www.cypress.io/). With Cypress, you can easily create tests for your modern web applications, debug them visually, and automatically run them in your continuous integration builds.
 
 ## R as cmd script
 - [Startup. Initialization At Start Of An R Session](https://www.rdocumentation.org/packages/base/versions/3.4.3/topics/Startup)
@@ -1420,6 +1421,10 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 `git -c http.sslVerify=false clone https://gitlab.com/repo.git <dir>` (решение найдено здесь:[SSL certificate rejected trying to access GitHub over HTTPS behind firewall](https://stackoverflow.com/questions/3777075/ssl-certificate-rejected-trying-to-access-github-over-https-behind-firewall) или здесь:[github: server certificate verification failed](https://stackoverflow.com/questions/35821245/github-server-certificate-verification-failed/35824116)).
 Можно потом в конфиг этого репозитория отключить `git config http.sslVerify false`
 
+# Dev
+- [OpenTelemetry](https://opentelemetry.io/) is a collection of tools, APIs, and SDKs. Use it to instrument, generate, collect, and export telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior.
+- [Заблуждения Clean Architecture](https://habr.com/ru/companies/mobileup/articles/335382/)
+
 # 22.12.2023
 ## rhino
 - [{rhino} vs {golem} vs {leprechaun}: Which R/Shiny Library is Right for You?](https://appsilon.com/rhino-vs-golem-vs-leprechaun/)
@@ -1732,6 +1737,9 @@ In my case following helped:
 options(repos="http://cran.rstudio.com/")
 Sys.setenv("RENV_CONFIG_REPOS_OVERRIDE" = "http://cran.rstudio.com")
 ```
+- [renv. Ignoring files](https://rstudio.github.io/renv/reference/dependencies.html)
+By default, renv will read your project's .gitignores (if present) to determine whether certain files or folders should be included when traversing directories.
+
 
 ## R
 - [`rlang`. Unlock an environment](https://rlang.r-lib.org/reference/env_unlock.html?q=env_u#ref-usage)
@@ -1875,9 +1883,6 @@ microbenchmark::microbenchmark(
 ```
 - COOL! Benchmarks [Counting the number of elements with the values of x in a vector](https://stackoverflow.com/questions/1923273/counting-the-number-of-elements-with-the-values-of-x-in-a-vector). Любопытная конструкция `vctrs::vec_count(grp)`.
 - [Introducing 'purler' - fast run-length encoding with data.frame output](https://coolbutuseless.github.io/2020/10/14/introducing-purler-fast-run-length-encoding-with-data.frame-output/)
-
-## Dev
-- [OpenTelemetry](https://opentelemetry.io/) is a collection of tools, APIs, and SDKs. Use it to instrument, generate, collect, and export telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior.
 
 # 25.05.2023
 ## DS
