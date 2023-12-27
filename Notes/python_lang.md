@@ -331,8 +331,26 @@ shape: (1, 5)
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
 
 
+# 29.12.2023
+## Попытки поставить tk/tkinter под macos
+Там свой путь самурая. `brew install python-tk`
+- [Why does Python installed via Homebrew not include Tkinter {duplicate}](https://stackoverflow.com/questions/36760839/why-does-python-installed-via-homebrew-not-include-tkinter)
+- [Remove and Reinstall Python on Mac -- Can I trust these old references?](https://apple.stackexchange.com/questions/284824/remove-and-reinstall-python-on-mac-can-i-trust-these-old-references)
+- [How to Install Tkinter on MacOS?](https://www.geeksforgeeks.org/how-to-install-tkinter-on-macos/)
+
+## tkinter
+- [Tkinter's Grid Geometry Manager](https://blog.teclado.com/tkinters-grid-geometry-manager/)
+- [Tkinter Grid](https://www.pythontutorial.net/tkinter/tkinter-grid/)
+- [Why are my Tkinter column widths misaligned?](https://stackoverflow.com/questions/63119802/why-are-my-tkinter-column-widths-misaligned)
+- [Tkinter color chart](https://cs111.wellesley.edu/archive/cs111_fall14/public_html/labs/lab12/tkintercolor.html)
+- […and MORE COLORS (PSG)](https://www.wikipython.com/tkinter-ttk-tix/summary-information/and-more-colors-psg/)
+- [How to set the text/value/content of an `Entry` widget using a button in tkinter](https://stackoverflow.com/questions/16373887/how-to-set-the-text-value-content-of-an-entry-widget-using-a-button-in-tkinter)
+	* Method A: Use delete and insert
+	* Method B: Use StringVar
+
 # 25.12.2023
 -[PyScaffold](https://pyscaffold.org/en/stable/index.html) is a project generator for bootstrapping high-quality Python packages, ready to be shared on PyPI and installable via pip.
+- [Преобразование строки в число в Python. Особенности преобразования числа в строку](https://otus.ru/nest/post/993/)
 
 # 06.11.2023
 - [How to Split String on Multiple Delimiters in Python](https://www.geeksforgeeks.org/python-split-multiple-characters-from-string/)
