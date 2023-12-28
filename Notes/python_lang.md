@@ -350,6 +350,7 @@ shape: (1, 5)
 
 # 25.12.2023
 -[PyScaffold](https://pyscaffold.org/en/stable/index.html) is a project generator for bootstrapping high-quality Python packages, ready to be shared on PyPI and installable via pip.
+- [What's up Python? Epic CPython commit, Django 5 and 2FA for pypi...](https://www.bitecode.dev/p/whats-up-python-epic-cpython-commit)
 - [Преобразование строки в число в Python. Особенности преобразования числа в строку](https://otus.ru/nest/post/993/)
 
 # 06.11.2023
