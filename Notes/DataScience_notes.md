@@ -1425,6 +1425,13 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 - [OpenTelemetry](https://opentelemetry.io/) is a collection of tools, APIs, and SDKs. Use it to instrument, generate, collect, and export telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior.
 - [Заблуждения Clean Architecture](https://habr.com/ru/companies/mobileup/articles/335382/)
 
+
+# 05.11.2024
+- Определяем stacktrace
+	- [R: Get function name called with package::function as string in R](https://stackoverflow.com/questions/50904272/r-get-function-name-called-with-packagefunction-as-string-in-r)
+	- [How to get the name of the calling function inside the called routine?](https://stackoverflow.com/questions/15595478/how-to-get-the-name-of-the-calling-function-inside-the-called-routine)
+	- COOL! [this.path: Get Executing Script's Path](https://cran.r-project.org/web/packages/this.path/index.html)
+
 # 22.12.2023
 ## rhino
 - [{rhino} vs {golem} vs {leprechaun}: Which R/Shiny Library is Right for You?](https://appsilon.com/rhino-vs-golem-vs-leprechaun/)
