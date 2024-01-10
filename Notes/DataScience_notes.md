@@ -837,6 +837,7 @@ Debugger for R functions, with code display, graceful error recovery, line-numbe
 - [A little trick for debugging Shiny](https://rtask.thinkr.fr/blog/a-little-trick-for-debugging-shiny/)
 - Презентация [Debugging with Shiny](http://rpubs.com/jmcphers/149638)
 - [Debugging Shiny applications](http://shiny.rstudio.com/articles/debugging.html). `options(shiny.error = browser)` Showcase Mode!!!
+- [Debugging Shiny applications, OCTOBER 15, 2019](https://shiny.posit.co/r/articles/improve/debugging/)
 - COOL! [Activate reactivity in the console — reactiveConsole](https://shiny.posit.co/r/reference/shiny/1.7.0/reactiveconsole) `reactiveConsole(TRUE)`
 - COOL! [R Debugging - Cannot see which line generates warning message (Shiny)](https://stackoverflow.com/questions/29132110/r-debugging-cannot-see-which-line-generates-warning-message-shiny).
 You can tell R to treat warnings as errors with `options(warn=2)`. ...
@@ -856,10 +857,14 @@ You can provide information about your app that Shiny showcase will use by creat
 - COOL! [{shinytitle}: Change the Browser Tab Title of your Shiny App](https://ashbaldry.github.io/2021-06-17-shinytitle-0-1-0-release/)
 - [Case study: converting a Shiny app to async](https://rstudio.github.io/promises/articles/casestudy.html) by Joe Cheng (joe@rstudio.com)
 - [Chrome Lighthouse extension](https://developers.google.com/web/tools/lighthouse/). Lighthouse is an open-source, automated tool for improving the performance, quality, and correctness of your web apps.
+- [Id conflict and shiny 'server' function doesn't start, why?](https://community.rstudio.com/t/id-conflict-and-shiny-server-function-doesnt-start-why/3966)
+	- [Reuse the same output binding on different tab panels #867 {Closed}](https://github.com/rstudio/shiny/issues/867)
 
 ## Test shiny
 - [reactor](https://github.com/yonicd/reactor/tree/slides). yonicd.github.io/reactor. unit testing for shiny reactivity
 - [Cypress](https://www.cypress.io/). With Cypress, you can easily create tests for your modern web applications, debug them visually, and automatically run them in your continuous integration builds.
+
+- [shiny-options](https://shiny.posit.co/r/reference/shiny/1.3.0/shiny-options.html)
 
 ## R as cmd script
 - [Startup. Initialization At Start Of An R Session](https://www.rdocumentation.org/packages/base/versions/3.4.3/topics/Startup)
@@ -1426,16 +1431,25 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 - [Заблуждения Clean Architecture](https://habr.com/ru/companies/mobileup/articles/335382/)
 
 
-# 05.11.2024
+# 05.01.2024
+## Math
+- [Рекурсивное название небольшой статьи о рекурсии](https://habr.com/ru/articles/717818/). Простая рекурсия – рекурсивный вызов, встречающийся не более одного раза в каждой ветви кода функции. Чандра в [Chandra1972] показал, что простая рекурсия всегда может быть сведена компилятором к итеративному циклу. Хвостовая рекурсия является частным случаем простой рекурсии. Оптимизация хвостовой рекурсии, или оптимизация хвостового вызова – преобразование транслятором хвостового вызова функции (необязательно рекурсивного) в линейный (циклический) код.
+- [Чем хвостовая рекурсия отличается от обычной?](https://dzen.ru/a/Xolo6d3I5SBnPc6Y)
+- [Demystifying Tail Call Optimization](https://dev.to/rohit/demystifying-tail-call-optimization-5bf3)
+- COOL! [tailr — Tail Recursion Optimisation](https://mailund.github.io/r-programmer-blog/2018/03/02/tailr--tail-recursion-optimisation/)
+
+## R
 - Определяем stacktrace
 	- [R: Get function name called with package::function as string in R](https://stackoverflow.com/questions/50904272/r-get-function-name-called-with-packagefunction-as-string-in-r)
 	- [How to get the name of the calling function inside the called routine?](https://stackoverflow.com/questions/15595478/how-to-get-the-name-of-the-calling-function-inside-the-called-routine)
 	- COOL! [this.path: Get Executing Script's Path](https://cran.r-project.org/web/packages/this.path/index.html)
+- [Check if R is running in RStudio](https://stackoverflow.com/questions/12389158/check-if-r-is-running-in-rstudio)
 
 # 22.12.2023
 ## rhino
 - [{rhino} vs {golem} vs {leprechaun}: Which R/Shiny Library is Right for You?](https://appsilon.com/rhino-vs-golem-vs-leprechaun/)
 - [Explanation: What is Rhino?](https://appsilon.github.io/rhino/articles/explanation/what-is-rhino.html)
+- logger. [add helper functions to automatically log messages/warnings/errors](https://github.com/daroczig/logger/issues/6)
 
 # 12.12.2023
 ## R

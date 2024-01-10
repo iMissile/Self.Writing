@@ -331,6 +331,10 @@ shape: (1, 5)
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
 
 
+# 12.01.2024
+- [NumPy: оттачивайте навыки Data Science на практике](https://habr.com/ru/articles/784978/)
+- [Shiny for Python with VSCode from A to Z](https://rpubs.com/LoanRobinson/shiny_python)
+
 # 29.12.2023
 ## Попытки поставить tk/tkinter под macos
 Там свой путь самурая. `brew install python-tk`

@@ -36,10 +36,12 @@
 ## R VScode
 
 ## Kun Ren
+- Base. [R Extension for Visual Studio Code](https://github.com/REditorSupport/vscode-R)
+	- [Option to lunch a Shiny app in the browser by default #1195 {Closed}](https://github.com/REditorSupport/vscode-R/issues/1195)
+	- [R Session Watcher: Shiny apps in webviewer without local storage #154 {Closed}](https://github.com/REditorSupport/vscode-R/issues/154)
 - [Kun Ren - Using R in VS Code](https://www.youtube.com/watch?v=9xXBDU2z_8Y)
 - [My recommendations of VS Code extensions for R](https://renkun.me/2022/03/06/my-recommendations-of-vs-code-extensions-for-r/). 2022-03-06
 - [Writing R in VSCode: A Fresh Start](https://renkun.me/2019/12/11/writing-r-in-vscode-a-fresh-start/). 2019-12-11. This article will be updated to reflect the latest languageserver features.
-- [R Extension for Visual Studio Code](https://github.com/REditorSupport/vscode-R)
 
 Настраиваем просто по инструкциям к плагинам:
 - [R Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)
