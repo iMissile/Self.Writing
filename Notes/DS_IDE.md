@@ -46,6 +46,7 @@
 Настраиваем просто по инструкциям к плагинам:
 - [R Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)
 - [R Debugger](https://marketplace.visualstudio.com/items?itemName=RDebugger.r-debugger)
+- [Changing R version in VS Code](https://stackoverflow.com/questions/72707869/changing-r-version-in-vs-code)
 - [Quarto](https://marketplace.visualstudio.com/items?itemName=quarto.quarto)
 
 ## Другие

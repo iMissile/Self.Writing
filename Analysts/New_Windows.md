@@ -118,6 +118,23 @@ http://it-like.ru/kak-perenesti-windows-7-na-ssd-disk/
 - [жесткий диск SSD 500ГБ, mSATA, SATA III, Samsung 850 EVO Series, MZ-M5E500BW](https://www.ulmart.ru/goods/3498218#tab-properties)
 - [Технология Over-Provisioning в SSD](http://www.nix.ru/computer_hardware_news/hardware_news_viewer.html?id=178629)
 
+# Изменение типа дисков MBR/GPT
+Телевизор вот не видит разделы диска GPT если их несколько. Ищем решение. Либо конвертировать в MBR, либо оставить только один GPT раздел
+- [How Can You Convert GPT to MBR without Data Loss Using Command Prompt?](https://www.diskpart.com/gpt-mbr/convert-gpt-to-mbr-without-data-loss-using-command-prompt.html)
+- [Изменение схемы разделов диска с GPT на MBR](https://learn.microsoft.com/ru-ru/windows-server/storage/disk-management/change-a-gpt-disk-into-an-mbr-disk)
+- [MBR2GPT.EXE](https://learn.microsoft.com/ru-ru/windows/deployment/mbr-to-gpt?source=recommendations)
+
+# Работа с партициями
+- [Viewing Partition Information on a Windows System](https://support.moonpoint.com/os/windows/commands/partitions/)
+`diskpart`, `wmic`
+- [Get Windows NTFS Block Size](https://www.bytesizedalex.com/get-windows-ntfs-block-size/)
+`fsutil fsinfo ntfsinfo f:`
+- [Advanced Format (AF) Technology](https://idema.org/initiatives/advanced-format/). Ключевая фраза "512 byte emulation (AF 512e)"
+- [512-byte Emulation (512e) Disk Compatibility Update](https://learn.microsoft.com/en-us/windows/win32/win7appqual/512-byte-emulation--512e--disk-compatibility-update)
+- [Диски, контроллеры, ОС и Advanced Format](https://habr.com/ru/articles/245085/)
+- [How to 'fix' disk with 512-byte sectors, formatted using an enclosure that translated to 4k sectors](https://superuser.com/questions/1562160/how-to-fix-disk-with-512-byte-sectors-formatted-using-an-enclosure-that-trans)
+- [How to reformat HDD & SSD to 512B Sector Size](https://forums.servethehome.com/index.php?threads/how-to-reformat-hdd-ssd-to-512b-sector-size.4968/page-20). Идет очень длинный диалог.
+- [An update that improves the compatibility of Windows 7 and Windows Server 2008 R2 with Advanced Format Disks is available](https://support.microsoft.com/en-us/topic/an-update-that-improves-the-compatibility-of-windows-7-and-windows-server-2008-r2-with-advanced-format-disks-is-available-004a02e4-7812-e14f-9dd7-d5e61c3ee20e)
 
 # Локализация bad sector у АВ
 - [Bad Block Copy for Windows](http://alter.org.ua/en/soft/win/bb_recover/)

@@ -1371,6 +1371,7 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Fastest table sort in the West - Redesigning DuckDB’s sort](https://duckdb.org/2021/08/27/external-sorting.html)
 - [Modern Data Stack in a Box with DuckDB](https://duckdb.org/2022/10/12/modern-data-stack-in-a-box.html)
 - [Harlequin](https://harlequin.sh/). The DuckDB IDE for Your Terminal. A drop-in replacement for the DuckDB CLI.
+- [Every 2048th inserted date is incorrect #10180 {Open}](https://github.com/duckdb/duckdb/issues/10180)
 
 ### duckDB articles
 - [R duckdb examples](https://github.com/duckdb/duckdb/commit/a2c4a58b7a92ab023a3b353ed970004f32f1423d)
@@ -1450,6 +1451,32 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 - [{rhino} vs {golem} vs {leprechaun}: Which R/Shiny Library is Right for You?](https://appsilon.com/rhino-vs-golem-vs-leprechaun/)
 - [Explanation: What is Rhino?](https://appsilon.github.io/rhino/articles/explanation/what-is-rhino.html)
 - logger. [add helper functions to automatically log messages/warnings/errors](https://github.com/daroczig/logger/issues/6)
+
+## cypress
+Есс-но, возникли проблемы с инсталляцией.
+- Сначала понеслась проблема `npm install problems Exit status -1`. 
+[How to solve npm install error “npm ERR! code 1”](https://stackoverflow.com/questions/67399785/how-to-solve-npm-install-error-npm-err-code-1).
+Разобрал функцию `rhino::test_e2e`, запустил вручную первичную установку командой `rhino:::npm_raw("install", "--no-audit", "--no-fund")`
+- Поставил, запускаю. Возникает ошибка [Cypress - Failed to deserialize the V8 snapshot blob](https://stackoverflow.com/questions/66340131/cypress-failed-to-deserialize-the-v8-snapshot-blob), также, [Failed to deserialize the V8 snapshot blob error during 'run' and 'open in Windows - 3.5.0 #5440 {Closed}](https://github.com/cypress-io/cypress/issues/5440)
+Не работает: Удалил `%USERPROFILE%\AppData\Local\Cypress\Cache`, запустил из командной строки `npm install cypress`
+
+Поскольку я ставил все в rhino и renv, то актуальный cypress живет в директории приложения. В папке `.rhino` запускаем
+`".\node_modules\.bin\cypress.cmd" install --force`, обошлось без адин прав, а кэш обновлялся по пути выше.
+[Детали](https://stackoverflow.com/a/69109624). A note to Windows (10 in my case) users: to run the commands above you have to allow console scripts execution policies with `Set-ExecutionPolicy RemoteSigned -Scope Process` issued at your terminal. The terminal must run with admin privileges for this.
+
+ВСЕ ЗАПУСТИЛОСЬ!
+Что делать с этим пока не ясно
+```
+  Running:  app.spec.js                                                                     (1 of 1)
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+```
+
+Run `npx browserslist` in a project directory to see which browsers were selected by your queries. -- Да, запускается и вижу список браузеров.
+`npm ls` не дает инфы по этому пакету. Ладно, поставил руками из проектной директории `npm install caniuse-lite`, не помогло.
 
 # 12.12.2023
 ## R
