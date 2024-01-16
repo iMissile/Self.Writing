@@ -361,3 +361,12 @@ It goes without saying that this is an insecure way of storing your password but
 `git -c http.sslVerify=false clone <repository-name>`
 or
 `git config --global http.sslVerify false`
+
+## ѕереиспользование веток
+- [How do I reuse an existing branch name as a new branch?](https://stackoverflow.com/questions/27853471/how-do-i-reuse-an-existing-branch-name-as-a-new-branch)
+- [How to rename a branch, delete a branch, and find the author of a branch in Git](https://opensource.com/article/22/5/git-branch-rename-delete-find-author)
+- [Git Delete Remote Branch Ц How to Remove a Remote Branch in Git](https://www.freecodecamp.org/news/git-delete-remote-branch/)
+```
+git branch -a
+git push origin -d branch-name
+```

@@ -334,7 +334,11 @@ shape: (1, 5)
 # 12.01.2024
 - [NumPy: оттачивайте навыки Data Science на практике](https://habr.com/ru/articles/784978/)
 - [Shiny for Python with VSCode from A to Z](https://rpubs.com/LoanRobinson/shiny_python)
-- COOL! [NumPy 2 is coming: preventing breakage, updating your code](https://pythonspeed.com/articles/numpy-2/) by Itamar Turner-Trauring. Last updated 09 Jan 2024,
+- COOL! [NumPy 2 is coming: preventing breakage, updating your code](https://pythonspeed.com/articles/numpy-2/) by Itamar Turner-Trauring. Last updated 09 Jan 2024
+- [NumPy 2.0.0 Release Notes](https://numpy.org/devdocs/release/2.0.0-notes.html)
+- [NumPy 2.0 migration guide](https://numpy.org/devdocs/numpy_2_0_migration_guide.html)
+- COOL! [Ruff](https://docs.astral.sh/ruff/). An extremely fast Python linter and code formatter, written in Rust.
+	- [numpy2-deprecation (NPY201)](https://docs.astral.sh/ruff/rules/numpy2-deprecation/)
 
 # 29.12.2023
 ## Попытки поставить tk/tkinter под macos

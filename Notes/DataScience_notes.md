@@ -1432,6 +1432,19 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 - [Заблуждения Clean Architecture](https://habr.com/ru/companies/mobileup/articles/335382/)
 
 
+# 19.01.2024
+## R
+- [SciViews R](https://cran.r-project.org/web/packages/tcltk2/index.html)
+SciViews-R is a series of packages providing a GUI API on top of R, a free (Open Source) statistical software based on the S language.
+В частности, [svDialogs](https://www.sciviews.org/svDialogs/index.html) дает простой ответ на простой вопрос: "Надо просто одно окошко сделать, чтобы туда вставить путь до папки для определенной функции. readline хорошо, но надо в виде GUI че-нить."
+```
+user <- svDialogs::dlgInput("Who are you?", Sys.info()["user"])$res
+```
+- [gWidgets2: Rewrite of gWidgets API for Simplified GUI Construction](https://cran.r-project.org/web/packages/gWidgets2/index.html)
+- Интересный альтернативный пайплайн. [svFlow - Workflow management and alternate pipe operator](https://github.com/SciViews/svFlow)
+- [The SciViews Box](https://www.sciviews.org) - A Reproducible Software Environment for Data Science
+
+
 # 05.01.2024
 ## Math
 - [Рекурсивное название небольшой статьи о рекурсии](https://habr.com/ru/articles/717818/). Простая рекурсия – рекурсивный вызов, встречающийся не более одного раза в каждой ветви кода функции. Чандра в [Chandra1972] показал, что простая рекурсия всегда может быть сведена компилятором к итеративному циклу. Хвостовая рекурсия является частным случаем простой рекурсии. Оптимизация хвостовой рекурсии, или оптимизация хвостового вызова – преобразование транслятором хвостового вызова функции (необязательно рекурсивного) в линейный (циклический) код.
@@ -1451,6 +1464,7 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 - [{rhino} vs {golem} vs {leprechaun}: Which R/Shiny Library is Right for You?](https://appsilon.com/rhino-vs-golem-vs-leprechaun/)
 - [Explanation: What is Rhino?](https://appsilon.github.io/rhino/articles/explanation/what-is-rhino.html)
 - logger. [add helper functions to automatically log messages/warnings/errors](https://github.com/daroczig/logger/issues/6)
+- [rhino-showcase](https://github.com/Appsilon/rhino-showcase). An example app built with Rhino to showcase its features
 
 ## cypress
 Есс-но, возникли проблемы с инсталляцией.
@@ -1709,6 +1723,7 @@ Download ‘Google’ fonts (via google-webfonts-helper) and generate CSS to use
 - [Shiny: Is there a way to trigger an observeEvent() by switching between tabsPanel()'s](https://stackoverflow.com/questions/58402873/shiny-is-there-a-way-to-trigger-an-observeevent-by-switching-between-tabspane)
 - [Outputting multiple lines of text with renderText() in R shiny](https://stackoverflow.com/questions/23233497/outputting-multiple-lines-of-text-with-rendertext-in-r-shiny)
 - [How to customize shiny sliderInput](https://divadnojnarg.github.io/post/customsliderinput/)
+- Интересные изыскания по теме переиспользования контролов. [Reuse the same output binding on different tab panels #867 {Closed}](https://github.com/rstudio/shiny/issues/867)
 
 # 21.08.2023
 # R. Create empty dataframe
@@ -2144,6 +2159,7 @@ out <- paste0(sst[c(TRUE, FALSE)], sst[c(FALSE, TRUE)])
 ## ML
 - [Deep Learning Paper Implementations: Spatial Transformer Networks - Part II](https://kevinzakka.github.io/2017/01/18/stn-part2/)
 - [M5 Forecast: Keras Embeddings with R](https://www.kaggle.com/code/mayer79/m5-forecast-keras-embeddings-with-r)
+- COOL! [Ранняя остановка при обучении бустингов с mlr3, или Шах и мат, sklearn](http://biostat-r.blogspot.com/2024/01/mlr3-sklearn.html)
 
 ## Stat
 - [Are P Values Error Probabilities? or, “It’s the methods, stupid!” (2nd install)](https://errorstatistics.com/2014/08/17/are-p-values-error-probabilities-installment-1/)
