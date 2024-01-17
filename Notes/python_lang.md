@@ -356,6 +356,15 @@ shape: (1, 5)
 - [How to set the text/value/content of an `Entry` widget using a button in tkinter](https://stackoverflow.com/questions/16373887/how-to-set-the-text-value-content-of-an-entry-widget-using-a-button-in-tkinter)
 	* Method A: Use delete and insert
 	* Method B: Use StringVar
+- [Create Buttons In Tkinter](https://www.pythonguis.com/tutorials/create-buttons-in-tkinter/). Add button widgets to your Tkinter GUI
+- Удобная табличка с параметрами. [Tkinter/Button](https://python.fandom.com/ru/wiki/Tkinter/Button)
+- Решение вопроса с зависающей кнопкой:
+	- [Python Tkinter button stuck down after press](https://stackoverflow.com/questions/38735643/python-tkinter-button-stuck-down-after-press). `bf1.config(relief="raised")` did the trick for me
+	- [Pressed button after leaving messagebox in tkinter](https://stackoverflow.com/questions/24721047/pressed-button-after-leaving-messagebox-in-tkinter). УРА!!!
+	To achieve the desired effect use the <ButtonRelease-1> event, instead of <Button-1> event:
+`button_drop.bind("<ButtonRelease-1>", on_click_button_drop)` This button-won't-return-after-messagebox issue seems to be wide-spread problem for people. It has taken me a lot of searching and various failures to find this perfect and simple solution, so brilliant to have such a simple answer.
+	- [Tkinter Relief styles](https://www.tutorialspoint.com/python/tk_relief.htm)
+	- [GUI help! TKInter keeps freezing when button is pressed](https://www.reddit.com/r/learnpython/comments/8lv3fe/gui_help_tkinter_keeps_freezing_when_button_is/)
 
 # 25.12.2023
 -[PyScaffold](https://pyscaffold.org/en/stable/index.html) is a project generator for bootstrapping high-quality Python packages, ready to be shared on PyPI and installable via pip.

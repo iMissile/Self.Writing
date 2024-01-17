@@ -239,6 +239,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 	- [Causal Inference in R](https://www.r-causal.org/) by Malcolm Barrett + инструменты и пакеты [Causal Inference in R. Tools and educational material for causal inference in R](https://github.com/r-causal) +[Workshop](https://github.com/r-causal/causal_inference_r_workshop)
 	- [Causal Inference. The Mixtape](https://mixtape.scunning.com/) by Scott Cunningham
 	- [The Effect: An Introduction to Research Design and Causality](https://theeffectbook.net/index.html) by Nick Huntington-Klein
+- [Визуализация и анализ географических данных на языке R](https://tsamsonov.github.io/r-geo-course/)
 
 ## e-books ML
 - [Deep Learning and Scientific Computing with R torch](https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/) by Sigrid Keydana
@@ -1443,6 +1444,14 @@ user <- svDialogs::dlgInput("Who are you?", Sys.info()["user"])$res
 - [gWidgets2: Rewrite of gWidgets API for Simplified GUI Construction](https://cran.r-project.org/web/packages/gWidgets2/index.html)
 - Интересный альтернативный пайплайн. [svFlow - Workflow management and alternate pipe operator](https://github.com/SciViews/svFlow)
 - [The SciViews Box](https://www.sciviews.org) - A Reproducible Software Environment for Data Science
+- [revtools](https://revtools.net/) is an R package to support researchers working on evidence synthesis projects.
+
+## dev
+- COOL! NN/g Nielsen Norman Group.
+World Leaders in Research-Based User Experience [Response Times: The 3 Important Limits](https://www.nngroup.com/articles/response-times-3-important-limits/)
+- Remove Trailing whitespaces in RStudio. `Project Options / Code Editing / Strip trailing ...` или `Global Options / Code / Saving / Strip trailing ...`
+	- [О трэйлинг вайтспейсах замолвите слово](https://habr.com/ru/articles/77155/)
+	- [Why is trailing whitespace a big deal? {closed}](https://softwareengineering.stackexchange.com/questions/121555/why-is-trailing-whitespace-a-big-deal)
 
 
 # 05.01.2024
@@ -1465,6 +1474,8 @@ user <- svDialogs::dlgInput("Who are you?", Sys.info()["user"])$res
 - [Explanation: What is Rhino?](https://appsilon.github.io/rhino/articles/explanation/what-is-rhino.html)
 - logger. [add helper functions to automatically log messages/warnings/errors](https://github.com/daroczig/logger/issues/6)
 - [rhino-showcase](https://github.com/Appsilon/rhino-showcase). An example app built with Rhino to showcase its features
+- `rhino::app` добавляет командой `shiny::addResourcePath("static", fs::path_wd("app", "static"))` ресурсную директорию при запуске, переносим туда картинки и пр.
+- [rhino jss](Note: Rhino tools for JS require Node.js. You can still use JavaScript code like in a regular Shiny application, but instead of using www directory, you should add your files to static/js and call them using full path, e.g. tags$script(src = "static/js/app.min.js").). Note: Rhino tools for JS require Node.js. You can still use JavaScript code like in a regular Shiny application, but instead of using www directory, you should add your files to static/js and call them using full path, e.g. tags$script(src = "static/js/app.min.js").
 
 ## cypress
 Есс-но, возникли проблемы с инсталляцией.
@@ -4662,6 +4673,7 @@ scales::show_col(pal)
 - [What does the [@[bar foo]] operator do in Excel, in particular the at sign?](https://superuser.com/questions/501691/what-does-the-bar-foo-operator-do-in-excel-in-particular-the-at-sign#:~:text=The%20%40%20is%20new%20notation%20in,table%20heading%20contains%20a%20space.)
 - [Excel 365 - Functions preceded by "@" in formulas](https://answers.microsoft.com/en-us/msoffice/forum/msoffice_excel-mso_win10-mso_365hp/excel-365-functions-preceded-by-in-formulas/4c0cc0f1-ed2b-4d37-83ff-a1aca3b3fac2)
 - [Using structured references with Excel tables](https://support.microsoft.com/en-us/office/using-structured-references-with-excel-tables-f5ed2452-2337-4f71-bed3-c8ae6d2b276e?ui=en-us&rs=en-us&ad=us)
+- [Одновременная работа нескольких пользователей над книгами Excel с помощью функции совместного редактирования](https://support.microsoft.com/ru-ru/office/%D0%BE%D0%B4%D0%BD%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%B8%D1%85-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9-%D0%BD%D0%B0%D0%B4-%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0%D0%BC%D0%B8-excel-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8-%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%B3%D0%BE-%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-7152aa8b-b791-414c-a3bb-3024e46fb104)
 
 # 13.04.2021
 ## R

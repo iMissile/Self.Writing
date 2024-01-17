@@ -17,7 +17,7 @@
 - [Simple multi-layer perceptron](https://fluxml.ai/tutorials/2021/01/26/mlp.html)
 
 # 12.01.2024
-- [Почему я больше не рекомендую Julia](https://habr.com/ru/articles/666332/)
+- [РџРѕС‡РµРјСѓ СЏ Р±РѕР»СЊС€Рµ РЅРµ СЂРµРєРѕРјРµРЅРґСѓСЋ Julia](https://habr.com/ru/articles/666332/)
 
 # 30.06.2023
 - [Makie](https://makie.org/) is a modern plotting library for Julia.
