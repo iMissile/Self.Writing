@@ -195,10 +195,9 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Principles of Econometrics with R](https://bookdown.org/ccolonescu/RPoE4/panel-data-models.html)
 - [Interactive web-based data visualization with R, plotly, and shiny](https://plotly-r.com/)
 - [Outstanding User Interfaces with Shiny](https://divadnojnarg.github.io/outstanding-shiny-ui/) by David Granjon
-- Шитиков В. К., Мастицкий С. Э. [Классификация, регрессия и другие алгоритмы Data Mining с использованием R](https://ranalytics.github.io/data-mining/index.html)
+- [Outstanding User Interfaces with Shiny](https://unleash-shiny.rinterface.com/index.html)- Шитиков В. К., Мастицкий С. Э. [Классификация, регрессия и другие алгоритмы Data Mining с использованием R](https://ranalytics.github.io/data-mining/index.html)
 - А. Б. Шипунов, Е. М. Балдин, П. А. Волкова и др. [Наглядная статистика. Используем R!](https://cran.r-project.org/doc/contrib/Shipunov-rbook.pdf) 2014 год
 - ebook. [officeverse by David Gohel](https://ardata-fr.github.io/officeverse/index.html). This book deals with reporting from R with the packages {officer}, {officedown}, {flextable}, {rvg} and {mschart}.
-- [Outstanding User Interfaces with Shiny](https://unleash-shiny.rinterface.com/index.html)
 - gt Cookbook:
 	- [Basic Usage](https://themockup.blog/static/gt-cookbook.html)
 	- [Advanced Usage](https://themockup.blog/static/gt-cookbook-advanced.html)
@@ -766,6 +765,15 @@ A lightweight, modern and flexibly logging utility for R – heavily inspired by
 [`base::trace`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/trace.html).
 - Profvis. But see [this FAQ](https://rstudio-pubs-static.s3.amazonaws.com/123888_184f1274483e4970b0a366a8573cfa9f.html#how-do-i-get-code-from-an-r-package-to-show-in-the-code-panel) if you want package code to show up in the code panel.)
 - [Introduction to profvis](https://rstudio-pubs-static.s3.amazonaws.com/123888_184f1274483e4970b0a366a8573cfa9f.html) by Winston Chang, 2016-05-05
+- [R/Shiny: View full stack/execution log](https://stackoverflow.com/questions/63018324/r-shiny-view-full-stack-execution-log). Любопытное решение: 
+I finally found the `profvis` package that does more-or-less exactly what I want by taking a snapshot of the execution stack at a fixed time interval (default 10ms).
+```
+library(profvis)
+exec_log <- profvis(runApp("myShinyApp"))
+# ...interact with the myShinyApp web page enough to trigger the bug, then interrupt execution...
+print(exec_log)
+```
+- COOL! [Stack traces in R](https://github.com/rstudio/shiny/wiki/Stack-traces-in-R) by Joe Cheng 
 - COOL!!! [How do I get code from an R package to show in the code panel?](https://rstudio-pubs-static.s3.amazonaws.com/123888_184f1274483e4970b0a366a8573cfa9f.html#how-do-i-get-code-from-an-r-package-to-show-in-the-code-panel)
 In typical use, only code written by the user is shown in the code panel. (This is code for which source references are available.) Yellow blocks in the flame graph have corresponding lines of code in the code panel, and when moused over, the line of code will be highlighted. White blocks in the flame graph don’t have corresponding lines in the code panel. In most cases, the calls represented by the white blocks are to functions that are in base R and other packages.
 
@@ -1445,6 +1453,11 @@ user <- svDialogs::dlgInput("Who are you?", Sys.info()["user"])$res
 - Интересный альтернативный пайплайн. [svFlow - Workflow management and alternate pipe operator](https://github.com/SciViews/svFlow)
 - [The SciViews Box](https://www.sciviews.org) - A Reproducible Software Environment for Data Science
 - [revtools](https://revtools.net/) is an R package to support researchers working on evidence synthesis projects.
+
+## Static type checking in R
+- R package [typeChecker](https://github.com/kcf-jackson/typeChecker).
+	- Annotation syntax proposed in [DSC 2017 Syntax Extensions to R](https://www.r-project.org/dsc/2017/slides/syntax-extensions.html#/type-annotations) 
+- [Types for R](https://github.com/jimhester/types)
 
 ## dev
 - COOL! NN/g Nielsen Norman Group.

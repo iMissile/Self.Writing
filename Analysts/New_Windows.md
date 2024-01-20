@@ -933,6 +933,4 @@ If you are using the curl command line tool on Windows, curl will search for a C
 - [Air Explorer](https://www.airexplorer.net/ru/pro/)
 
 # пропал Alt-Tab
-# 29.12.2023
-## R
 - [How to Fix Alt-Tab Shortcut Not Working on Windows 10](https://softwarekeep.com/help-center/how-to-fix-alt-tab-shortcut-not-working-on-windows-10)

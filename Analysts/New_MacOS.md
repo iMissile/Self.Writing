@@ -176,7 +176,9 @@ https://www.hightechdad.com/2017/02/06/onedrive-sync-issues-how-to-reset-onedriv
 	- [Fixing a “Bluetooth Not Available” Error on a Mac](http://osxdaily.com/2014/02/17/fix-bluetooth-not-available-error-mac/)
 - [How to Check Package File for Malware Before You Install It in Mac](https://www.maketecheasier.com/check-dmg-malware-mac/)
 	
-# Церковнославянские шрифты
+	
+# Настройка клавиатуры и шрифтов
+## Церковнославянские шрифты
 - [Как ввести символ unicode на mac без цифровой клавиатуры?](https://coderoad.ru/48312049/%D0%9A%D0%B0%D0%BA-%D0%B2%D0%B2%D0%B5%D1%81%D1%82%D0%B8-%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB-unicode-%D0%BD%D0%B0-mac-%D0%B1%D0%B5%D0%B7-%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BE%D0%B9-%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D1%8B).
 Сначала убедитесь , что вход Unicode Hex включен в System Preferences > Keyboard > Input Sources
 Он должен появиться в левом поле с другими языковыми клавиатурами. Если ввод Unicode Hex там недоступен, нажмите кнопку + ниже, прокрутите список языков до самого низа и выберите другие, выберите ввод Unicode Hex в поле сведений справа и нажмите кнопку Добавить.
@@ -200,6 +202,11 @@ Simple and easy way to view the content of font files.
 Сначала убедитесь , что вход Unicode Hex включен в System Preferences > Keyboard > Input Sources
 Он должен появиться в левом поле с другими языковыми клавиатурами. Если ввод Unicode Hex там недоступен, нажмите кнопку + ниже, прокрутите список языков до самого низа и выберите другие, выберите ввод Unicode Hex в поле сведений справа и нажмите кнопку Добавить.
 Теперь ввод Unicode Hex должен быть доступен в строке меню среди других языков, выберите его, и вы сможете ввести unicode символа, удерживая Option во время ввода цифр.
+
+
+## Трюки
+- [Как изменить расположение точки и запятой на клавиатуре Mac (macOS)?](https://dzen.ru/a/XwRE3IpexVf_swv3)
+Все просто: в настройках клавиатуры язык "Русский" поменять на "Русский ПК"
 
 # Менеджер пакетов
 - [Git is not working after macOS Update (xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools)]().
@@ -241,3 +248,10 @@ diskutil mount /dev/disk1
 - https://www.freecodecamp.org/news/python-version-on-mac-update/
 - https://apple.stackexchange.com/questions/284824/remove-and-reinstall-python-on-mac-can-i-trust-these-old-references
 - https://stackoverflow.com/questions/52175456/how-to-fix-missing-dependencies-for-python-homebrew
+
+# NTFS
+- [How do I convert an NTFS external HDD to exFAT without formatting](https://answers.microsoft.com/en-us/windows/forum/all/how-do-i-convert-an-ntfs-external-hdd-to-exfat/9d833d2e-35fb-49f9-a88b-1db089e5fa6d).
+
+You can use FUSE for macOS to write over NTFS formatted disk by following these steps:
+- Download osxfuse.
+- Install it.
