@@ -195,7 +195,8 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - [Principles of Econometrics with R](https://bookdown.org/ccolonescu/RPoE4/panel-data-models.html)
 - [Interactive web-based data visualization with R, plotly, and shiny](https://plotly-r.com/)
 - [Outstanding User Interfaces with Shiny](https://divadnojnarg.github.io/outstanding-shiny-ui/) by David Granjon
-- [Outstanding User Interfaces with Shiny](https://unleash-shiny.rinterface.com/index.html)- Шитиков В. К., Мастицкий С. Э. [Классификация, регрессия и другие алгоритмы Data Mining с использованием R](https://ranalytics.github.io/data-mining/index.html)
+- [Outstanding User Interfaces with Shiny](https://unleash-shiny.rinterface.com/index.html)
+- Шитиков В. К., Мастицкий С. Э. [Классификация, регрессия и другие алгоритмы Data Mining с использованием R](https://ranalytics.github.io/data-mining/index.html)
 - А. Б. Шипунов, Е. М. Балдин, П. А. Волкова и др. [Наглядная статистика. Используем R!](https://cran.r-project.org/doc/contrib/Shipunov-rbook.pdf) 2014 год
 - ebook. [officeverse by David Gohel](https://ardata-fr.github.io/officeverse/index.html). This book deals with reporting from R with the packages {officer}, {officedown}, {flextable}, {rvg} and {mschart}.
 - gt Cookbook:
@@ -224,6 +225,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 - COOL! [The Hitchhiker's Guide to Responsible Machine Learning](https://betaandbit.github.io/RML/#p=1)
 - COOL! [Causal Inference: The Mixtape](https://mixtape.scunning.com/index.html)
 - [Engineering Production-Grade Shiny Apps](https://engineering-shiny.org/index.html) by Colin Fay, Sébastien Rochette, Vincent Guyader and Cervan Girard
+- [Building Web Apps with R Shiny](https://debruine.github.io/shinyintro/index.html)
 - [Apache Arrow R Cookbook](https://arrow.apache.org/cookbook/r/index.html)
 - [Rcpp: Seamless R and C++ Integration](https://www.rcpp.org/)
 - [Doing Bayesian Data Analysis in brms and the tidyverse](https://bookdown.org/content/3686/) by A Solomon Kurz
@@ -1381,6 +1383,7 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Modern Data Stack in a Box with DuckDB](https://duckdb.org/2022/10/12/modern-data-stack-in-a-box.html)
 - [Harlequin](https://harlequin.sh/). The DuckDB IDE for Your Terminal. A drop-in replacement for the DuckDB CLI.
 - [Every 2048th inserted date is incorrect #10180 {Open}](https://github.com/duckdb/duckdb/issues/10180)
+- [Frequently Asked Questions](https://duckdb.org/faq.html). Тут ответы про concurrency.
 
 ### duckDB articles
 - [R duckdb examples](https://github.com/duckdb/duckdb/commit/a2c4a58b7a92ab023a3b353ed970004f32f1423d)
@@ -1439,6 +1442,53 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 # Dev
 - [OpenTelemetry](https://opentelemetry.io/) is a collection of tools, APIs, and SDKs. Use it to instrument, generate, collect, and export telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior.
 - [Заблуждения Clean Architecture](https://habr.com/ru/companies/mobileup/articles/335382/)
+
+
+# R установка proffer
+1. На Windows Go, при наличии прав, по умолчанию ставится в `C:\Program Files\Go\`, а в  переменные окружения запихивается в пользовательскую директорию. Естественно, что все не находится. Надо править руками. `GOPATH` и `PATH`.
+`PATH` -> `%ProgramFiles%\go\bin`, `GOPATH` -> с `%USERPROFILE%\go` на `%ProgramFiles%\go`
+2. Правим `.Renviron`
+```
+CURL_SSL_BACKEND=openssl
+PROFFER_PPROF_BIN=C:/PROGRA~1/Go/pkg/tool/windows_amd64/pprof.exe
+PROFFER_GO_BIN=C:/PROGRA~1/Go/bin/go.exe
+PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
+```
+3. Проверяем переменные:
+`Sys.getenv("PROFFER_PPROF_BIN")`.
+
+# 25.01.2024
+## R
+- [RPostgreSQL: Connect R and PostgreSQL in 4 Easy Steps](https://hevodata.com/learn/rpostgresql/)
+- [pickleR](https://github.com/d-sharpe/pickleR) provides for the serializing and de-serializing of an R object structure. pickleR traverses the object hierarchy, keeping track of any sub-objects it has already encountered so that they will not be stored again. Therefore, recursive, nested and shared objects are handled by pickleR.
+- [PostgreSQL против SQLite: окончательное противостояние баз данных](https://www.astera.com/ru/knowledge-center/postgresql-vs-sqlite/)
+- [Using dplyr with databases](https://solutions.posit.co/connections/db/r-packages/dplyr/)
+- [Introduction to MySQL with R](https://programminghistorian.org/en/lessons/getting-started-with-mysql-using-r)
+- [RMySQL: Database Interface and 'MySQL' Driver for R](https://cran.r-project.org/web/packages/RMySQL/index.html)
+Legacy 'DBI' interface to 'MySQL' / 'MariaDB' based on old code ported from S-PLUS. A modern 'MySQL' client written in 'C++' is available from the 'RMariaDB' package.
+- [chDB is an embedded SQL OLAP Engine powered by ClickHouse®](https://doc.chdb.io/#/)
+- COOL! [How can I view the source code for a function?](https://stackoverflow.com/questions/19226816/how-can-i-view-the-source-code-for-a-function)
+```
+methods(t)
+getAnywhere()
+showMethods
+```
+## SQlite
+- [Datatypes In SQLite](https://www.sqlite.org/datatype3.html). SQLite does not have a storage class set aside for storing dates and/or times.
+- [Connect to an SQLite database](https://rsqlite.r-dbi.org/reference/SQLite.html). When parameter extended_types = TRUE date and time columns are directly mapped to corresponding R-types.
+- [Хранение дат и времени в базе данных SQLite](https://metanit.com/sql/sqlite/6.3.php)
+
+
+
+## R6 etc
+- [Object-Oriented Programming (OOP) in R with R6 – The Complete Guide](https://appsilon.com/oop-in-r-with-r6/)
+- [R6 and shared objects](https://colinfay.me/r6-shared-objects/)
+- ['How-to' Share content between several R6 instances](https://rtask.thinkr.fr/share-content-between-several-r6-instances/). Делается через окружения.
+- [R6 instances are copied using FORK shared memory parallelization #115 {Closed}](https://github.com/r-lib/R6/issues/115). Отличный ответ про копирование иерархии окружений.
+- [Serializing R6 classes? #157 {Open}](https://github.com/r-lib/R6/issues/157). Интересные размышления.
+- [Advanced R. OOP Trade-offs](https://adv-r.hadley.nz/oo-tradeoffs.html)
+- [A Future for R: Common Issues with Solutions](https://cran.r-project.org/web/packages/future/vignettes/future-4-issues.html)
+
 
 
 # 19.01.2024

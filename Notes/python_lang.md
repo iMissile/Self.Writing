@@ -332,6 +332,7 @@ shape: (1, 5)
 
 # 19.01.2024
 - [lonboard](https://developmentseed.org/lonboard/latest/). A Python library for fast, interactive geospatial vector data visualization in Jupyter.
+- [Qt Designer and Python: Build Your GUI Applications Faster](https://realpython.com/qt-designer-python/)
 
 # 12.01.2024
 - [NumPy: оттачивайте навыки Data Science на практике](https://habr.com/ru/articles/784978/)
@@ -367,6 +368,15 @@ shape: (1, 5)
 `button_drop.bind("<ButtonRelease-1>", on_click_button_drop)` This button-won't-return-after-messagebox issue seems to be wide-spread problem for people. It has taken me a lot of searching and various failures to find this perfect and simple solution, so brilliant to have such a simple answer.
 	- [Tkinter Relief styles](https://www.tutorialspoint.com/python/tk_relief.htm)
 	- [GUI help! TKInter keeps freezing when button is pressed](https://www.reddit.com/r/learnpython/comments/8lv3fe/gui_help_tkinter_keeps_freezing_when_button_is/)
+- [tkinter Canvas window size](https://stackoverflow.com/questions/40780634/tkinter-canvas-window-size)
+- [winfo_width() returns 1 even after using pack()](https://stackoverflow.com/questions/34373533/winfo-width-returns-1-even-after-using-pack)
+- [How do I remove the light grey border around my Canvas widget?](https://stackoverflow.com/questions/4310489/how-do-i-remove-the-light-grey-border-around-my-canvas-widget)
+Secondly, why is the top left most position in the Canvas (2,2)? It seems like it should be (0,0).
+- [Canvas](https://metanit.com/python/tkinter/7.1.php)
+- [tkinter grid not resizing based on window size](https://stackoverflow.com/questions/46898749/tkinter-grid-not-resizing-based-on-window-size)
+- [If I'm using grid(), why the widgets don't scale when I resize the window?](https://stackoverflow.com/questions/31507948/if-im-using-grid-why-the-widgets-dont-scale-when-i-resize-the-window)Python Tkinter - resize widgets evenly in a window](https://stackoverflow.com/questions/24644339/python-tkinter-resize-widgets-evenly-in-a-window/24654428#24654428)
+- [Python Tkinter как ввести текст в виджет пользовательского ввода заранее? {дубликат}](https://ru.stackoverflow.com/questions/1066647/python-tkinter-%D0%BA%D0%B0%D0%BA-%D0%B2%D0%B2%D0%B5%D1%81%D1%82%D0%B8-%D1%82%D0%B5%D0%BA%D1%81%D1%82-%D0%B2-%D0%B2%D0%B8%D0%B4%D0%B6%D0%B5%D1%82-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%B3%D0%BE-%D0%B2%D0%B2%D0%BE%D0%B4%D0%B0-%D0%B7%D0%B0%D1%80%D0%B0%D0%BD%D0%B5%D0%B5)
+- [Converting list to *args when calling function {duplicate}](https://stackoverflow.com/questions/3941517/converting-list-to-args-when-calling-function)
 
 # 25.12.2023
 -[PyScaffold](https://pyscaffold.org/en/stable/index.html) is a project generator for bootstrapping high-quality Python packages, ready to be shared on PyPI and installable via pip.
