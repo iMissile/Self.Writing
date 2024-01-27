@@ -1457,7 +1457,13 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 3. Проверяем переменные:
 `Sys.getenv("PROFFER_PPROF_BIN")`.
 
+# R & Macos
+- COOL!!! [R-universe now builds MacOS ARM64 binaries for use on Apple Silicon (aka M1/M2/M3) systems](https://ropensci.org/blog/2024/01/14/runiverse-arm64/)
+
 # 25.01.2024
+## DS & phys
+- Любопытно. Про задачки по электричеству [Нелинейные цепи постоянного тока. Графические методы расчета.](https://www.ups-info.ru/for_partners/library/teoreticheskie_osnove_ilektrotehniki_dlya_ibp_ups_/nelineynee_tsepi_postoyannogo_toka_graficheskie_me/). Там много еще чего.
+
 ## R
 - [RPostgreSQL: Connect R and PostgreSQL in 4 Easy Steps](https://hevodata.com/learn/rpostgresql/)
 - [pickleR](https://github.com/d-sharpe/pickleR) provides for the serializing and de-serializing of an R object structure. pickleR traverses the object hierarchy, keeping track of any sub-objects it has already encountered so that they will not be stored again. Therefore, recursive, nested and shared objects are handled by pickleR.
@@ -1478,7 +1484,29 @@ showMethods
 - [Connect to an SQLite database](https://rsqlite.r-dbi.org/reference/SQLite.html). When parameter extended_types = TRUE date and time columns are directly mapped to corresponding R-types.
 - [Хранение дат и времени в базе данных SQLite](https://metanit.com/sql/sqlite/6.3.php)
 
-
+## PostgreSQL
+- [Установка и настройка PostgreSQL в Docker](https://selectel.ru/blog/postgresql-docker-setup/)
+- Запускаем на Windows [How to Install and Set Up Docker PostgreSQL Environment](https://www.commandprompt.com/education/how-to-install-and-set-up-docker-postgresql-environment/)
+`docker pull postgres:latest`
+- [Setup PostgreSQL on Windows with Docker](https://elanderson.net/2018/02/setup-postgresql-on-windows-with-docker/)
+- [Creating a PostgreSQL Docker Container with a Volume on Windows](https://voiceofthedba.com/2023/01/09/creating-a-postgresql-docker-container-with-a-volume-on-windows/)
+```
+get the Docker image: docker pull postgresql:latest
+Run the container, command below:
+docker run --name pgdev -e POSTGRES_PASSWORD=Str0ngP@ssword -d -p 5432:5432 -v C:\Docker\pgdev:/var/lib/postgresql/data  postgres
+docker stats
+```
+Ставим клиента:
+```
+sudo apt install postgresql-client
+psql -h 127.0.0.1 -U postgres -d postgres
+```
+- [PostgreSQL – Psql commands](https://www.geeksforgeeks.org/postgresql-psql-commands/)
+- [Setup Postgres Using Docker Image on Windows](https://linuxhint.com/setup-postgres-using-docker-image-windows/). Тут вместе с pgadmin4
+- [What Is the Default Postgres Password and How to Change It](https://monovm.com/blog/default-postgres-password/).
+The default Postgres password is `postgres`.
+- [copy_to causes PostgreSQL to be memory hungry with large dataframes #3355 {Closed}](https://github.com/tidyverse/dplyr/issues/3355)
+- [dbplyr 1.2.0](https://www.tidyverse.org/blog/2018/01/dbplyr-1-2/)
 
 ## R6 etc
 - [Object-Oriented Programming (OOP) in R with R6 – The Complete Guide](https://appsilon.com/oop-in-r-with-r6/)
@@ -1750,6 +1778,10 @@ logger_tree()
 
 ## shiny
 - COOL! [Activate reactivity in the console — reactiveConsole](https://shiny.posit.co/r/reference/shiny/1.7.0/reactiveconsole)
+- COOL! [Using global input values inside of R Shiny modules](https://tbradley1013.github.io/2018/07/20/r-shiny-modules--using-global-inputs/)
+	- [observeEvent Shiny function used in a module does not work](https://stackoverflow.com/questions/45169876/observeevent-shiny-function-used-in-a-module-does-not-work) 
+	- [How to access reactive value in parent module?](https://stackoverflow.com/questions/68411305/how-to-access-reactive-value-in-parent-module)
+	- [Shiny Module that Invokes a Reactive Data Set from Parent Shiny Server](https://copyprogramming.com/howto/shiny-module-that-calls-a-reactive-data-set-in-parent-shiny-server)
 - COOL! [Shiny tips & tricks for improving your apps and solving common problems](https://deanattali.com/blog/advanced-shiny-tips/) by Dean Attali
 - [Better Than Excel: Use These R Shiny Packages Instead](https://appsilon.com/forget-about-excel-use-r-shiny-packages-instead/)
 - COOL! [Display element ids for debugging Shiny apps](https://biocs-blog.blogspot.com/2016/04/display-element-ids-for-debugging-shiny.html). Тащим на букмарк
