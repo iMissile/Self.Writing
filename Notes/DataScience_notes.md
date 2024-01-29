@@ -2165,6 +2165,7 @@ Provides a large number of functions from numerical analysis and linear algebra,
 - [Piecewise Regression](https://brunaw.com/ce092/piecewise/piecewise.html)
 - [earth: Multivariate Adaptive Regression Splines](https://cran.r-project.org/web/packages/earth/index.html)
 - [Using segmented regression to analyse world record running times](https://blog.revolutionanalytics.com/2015/12/using-segmented-regression-to-analyse-world-record-running-times.html)
+- [Breakpoint analysis, segmented regression](https://rpubs.com/MarkusLoew/12164)
 - COOL! [scan](https://jazznbass.github.io/scan/) - Single-Case Data Analyses for Single and Multiple Baseline Designs
 
 # 02.05.2023

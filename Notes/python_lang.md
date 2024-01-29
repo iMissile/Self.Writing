@@ -330,6 +330,9 @@ shape: (1, 5)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
 
+# 29.01.2024
+- [Python Packaging, One Year Later: A Look Back at 2023 in Python Packaging](https://chriswarrick.com/blog/2024/01/15/python-packaging-one-year-later/)
+
 # 19.01.2024
 - [lonboard](https://developmentseed.org/lonboard/latest/). A Python library for fast, interactive geospatial vector data visualization in Jupyter.
 - [Qt Designer and Python: Build Your GUI Applications Faster](https://realpython.com/qt-designer-python/)
