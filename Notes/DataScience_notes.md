@@ -1460,6 +1460,15 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 # R & Macos
 - COOL!!! [R-universe now builds MacOS ARM64 binaries for use on Apple Silicon (aka M1/M2/M3) systems](https://ropensci.org/blog/2024/01/14/runiverse-arm64/)
 
+# 02.02.2024
+## R
+- [System Dependencies in R Packages & Automatic Testing](https://epiverse-trace.github.io/posts/system-dependencies/)
+- [Using benchmarking to guide the adoption of dependencies in R packages](https://epiverse-trace.github.io/posts/benchmarking_design_decisions/)
+- COOL! `data.table v1.15.0`
+	- [data.table v1.15.0 (14 Jan 2024)](https://cran.r-project.org/web/packages/data.table/news/news.html)
+	- [Upcoming versions of base R eliminate the need for DT() functionality - consider eliminating? #5621 {Open}](https://github.com/Rdatatable/data.table/issues/5621)
+```As an experimental feature the placeholder _ can now also be used in the ‘rhs’ of a forward pipe |> expression as the first argument in an extraction call, such as _$coef. More generally, it can be used as the head of a chain of extractions, such as _$coef[[2]].```
+
 # 25.01.2024
 ## DS & phys
 - Любопытно. Про задачки по электричеству [Нелинейные цепи постоянного тока. Графические методы расчета.](https://www.ups-info.ru/for_partners/library/teoreticheskie_osnove_ilektrotehniki_dlya_ibp_ups_/nelineynee_tsepi_postoyannogo_toka_graficheskie_me/). Там много еще чего.
@@ -2384,6 +2393,8 @@ www.mage.ai
 Learn more about the famous pipe operator %>% and other pipes in R, why and how you should use them and what alternatives you can consider!
 - [Plumbers, chains, and famous painters: The (updated) history of the pipe operator in R](http://adolfoalvarez.cl/blog/2021-09-16-plumbers-chains-and-famous-painters-the-history-of-the-pipe-operator-in-r/)
 - [How does the new native pipe placeholder works, exactly?](https://stackoverflow.com/questions/72474660/how-does-the-new-native-pipe-placeholder-works-exactly)
+- [New features in R 4.1.0](https://www.jumpingrivers.com/blog/new-features-r410-pipe-anonymous-functions/)
+- [Understanding the native R pipe |>](https://ivelasq.rbind.io/blog/understanding-the-r-pipe/)
 - [Fix leaky pipes in R](https://www.rostrum.blog/2019/04/07/fix-leaky-pipes/)
 - COOL! отличный бенчмарк пайпов. [Magrittr pipe in R functions](https://stackoverflow.com/questions/45150225/magrittr-pipe-in-r-functions)
 - [magrittr and the %>% pipe](https://r4ds.hadley.nz/workflow-pipes.html#magrittr-and-the-pipe)
@@ -2673,6 +2684,8 @@ The proper solution is to set environment variable `R_LIBS_USER` to the value of
 ## dev
 - [Гексагональная архитектура, и как я к ней пришёл](https://alexkosarev.name/2020/06/12/hexagonal-architecture/)
 - [Гексагональная архитектура](https://habr.com/ru/post/267125/)
+- [В.Э. Карпов. КЛАССИЧЕСКАЯ ТЕОРИЯ КОМПИЛЯТОРОВ](http://rema44.ru/resurs/study/compiler1/Compiler1.pdf)
+
 
 # 25.08.2022
 ## R
