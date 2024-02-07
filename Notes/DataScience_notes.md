@@ -1488,6 +1488,7 @@ methods(t)
 getAnywhere()
 showMethods
 ```
+- [Lookup](https://github.com/jimhester/lookup) R full function definitions, including compiled code, S3 and S4 methods.
 ## SQlite
 - [Datatypes In SQLite](https://www.sqlite.org/datatype3.html). SQLite does not have a storage class set aside for storing dates and/or times.
 - [Connect to an SQLite database](https://rsqlite.r-dbi.org/reference/SQLite.html). When parameter extended_types = TRUE date and time columns are directly mapped to corresponding R-types.
