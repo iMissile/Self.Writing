@@ -470,5 +470,22 @@ dt[eval(as.symbol(name))< limit]
 `dt[eval(.(a))] # identical to dt["b"]`
 - [NSE Functions with oshka](https://cran.r-project.org/web/packages/oshka/vignettes/nse-fun.html)
 
+# data.table 1.15. Many new features!
+- COOL! с примерами кода [#RStats {data.table} has recently received a major update with v1.15!](https://fosstodon.org/@TimTeaFan/111864136817472707)
+This version ships 41 new features - below are my personal top 5 (the last one will blow your mind™ 😏)
+	1. The rather cryptic walrus operator `:=` has a new alias called `let()`, making `data.table` calls less arcane and more readable.
+	2. data.table’s special symbol `.I` (row index) is now available in the `by` argument of `[.data.table`, making rowwise operations clearer.
+	3. `tstrsplit`, data.table’s equivalent to `tidyr::separate()`, now accepts a named list of functions in its `type.convert` argument, which will convert the new columns into the specified types.
+	4. `melt()`, data.table’s equivalent to `tidyr::pivot_longer()`, now supports multiple output columns by using `measure()` or `measurev()` in its `measure.vars` argument.
+	5. A new interface for programming on data.table has been added. It is built using base R's substitute-like interface via a new `env` argument to `[.data.table`.
+I expect a lot of new custom data.table functions and packages that are build on-top of this interface.
+
+- [New governance, release with new features](https://rdatatable-community.github.io/The-Raft/posts/2024-01-30-new_governance_new_release-toby_hocking/).
+I am proud to report that today, the first major new data.table features in several years have been released to CRAN!
+This new release, version 1.15.0, is remarkable because it is the first new feature release using the new community governance, which was adopted last month. Here is a brief timeline of the recent activities.
+Функция `measure`.
+- [new programming with data.table](https://johnmackintosh.net/blog/2024-02-05-dt-programming/)
+
+
 ## MacOS
 - COOL! [R data.table and Apple M1 installation on Big Sur supporting openmp multithreading](https://investcookies.ru/post/datatable_m1/data_table_arm/). Как обойти кривизну сборки OpenMP по умолчанию.

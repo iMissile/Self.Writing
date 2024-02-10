@@ -1,4 +1,6 @@
 # Quarto
+## releases
+- [quarto webR 0.4.0: Ball of Yarn (02-05-2024)](https://quarto-webr.thecoatlessprofessor.com/qwebr-release-notes.html#ball-of-yarn-02-05-2024)
 
 ## Quarto general
 - [awesome quarto](https://github.com/mcanouil/awesome-quarto). A curated list of Quarto talks, tools, examples & articles! Contributions welcome!

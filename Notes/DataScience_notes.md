@@ -241,6 +241,8 @@ This is a list of R developers and advocates on Github. This is to help new come
 	- [Causal Inference. The Mixtape](https://mixtape.scunning.com/) by Scott Cunningham
 	- [The Effect: An Introduction to Research Design and Causality](https://theeffectbook.net/index.html) by Nick Huntington-Klein
 - [Визуализация и анализ географических данных на языке R](https://tsamsonov.github.io/r-geo-course/)
+- [Tidy Finance](https://www.tidy-finance.org/) is an opinionated approach to empirical research in financial economics - a fully transparent, open-source code base in multiple programming languages.
+- [Making Portable CLIs With WebR](https://rud.is/books/webr-cli-book/)
 
 ## e-books ML
 - [Deep Learning and Scientific Computing with R torch](https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/) by Sigrid Keydana
@@ -1468,6 +1470,8 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 	- [data.table v1.15.0 (14 Jan 2024)](https://cran.r-project.org/web/packages/data.table/news/news.html)
 	- [Upcoming versions of base R eliminate the need for DT() functionality - consider eliminating? #5621 {Open}](https://github.com/Rdatatable/data.table/issues/5621)
 ```As an experimental feature the placeholder _ can now also be used in the ‘rhs’ of a forward pipe |> expression as the first argument in an extraction call, such as _$coef. More generally, it can be used as the head of a chain of extractions, such as _$coef[[2]].```
+- ebook! [Making Portable CLIs With WebR 🚀](https://rud.is/books/webr-cli-book/)
+Bob Rudis написал небольшую книгу Making Portable CLIs With WebR (https://rud.is/books/webr-cli-book/) как всеобъемлющее руководство по созданию приложений CLI (интерфейса командной строки, от англ. Command Line Interface) с помощью WebR (https://docs.r-wasm.org/webr/latest/) 0.2.2+ и Node.js. 
 
 # 25.01.2024
 ## DS & phys
@@ -1787,8 +1791,10 @@ logger_tree()
 
 
 ## shiny
+- COOL! Столнулся с тихим падением приложения без записи в логах. Чрезмерное увлечение `req` даже на этапе инициализации переменных. Генерится тихое исключение `shiny.silent.error`. [Getting silent error when checking value of uninitialized reactive variable](https://community.rstudio.com/t/getting-silent-error-when-checking-value-of-uninitialized-reactive-variable/129713)
 - COOL! [Activate reactivity in the console — reactiveConsole](https://shiny.posit.co/r/reference/shiny/1.7.0/reactiveconsole)
 - COOL! [Using global input values inside of R Shiny modules](https://tbradley1013.github.io/2018/07/20/r-shiny-modules--using-global-inputs/)
+- [Shiny Fundamentals: Introduction to Shiny Modules](https://tilburgsciencehub.com/topics/visualization/data-visualization/dashboarding/shiny-modules/). Как доступаться из внешнего модуля к данным внутреннего.
 	- [observeEvent Shiny function used in a module does not work](https://stackoverflow.com/questions/45169876/observeevent-shiny-function-used-in-a-module-does-not-work) 
 	- [How to access reactive value in parent module?](https://stackoverflow.com/questions/68411305/how-to-access-reactive-value-in-parent-module)
 	- [Shiny Module that Invokes a Reactive Data Set from Parent Shiny Server](https://copyprogramming.com/howto/shiny-module-that-calls-a-reactive-data-set-in-parent-shiny-server)

@@ -328,7 +328,12 @@ shape: (1, 5)
 # Python & R
 - [How to use R and Python in the same notebook?](https://www.askpython.com/python/examples/use-r-and-python-in-the-same-notebook)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
-- [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript. 
+- [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript.
+
+# 09.02.2024
+- [Python - Read a File Line-by-Line](https://able.bio/rhett/python-read-a-file-line-by-line--116rey6)
+- [How To Add to a Dictionary in Python](https://www.digitalocean.com/community/tutorials/python-add-to-dictionary)
+- [How to implement stack in Python](https://www.educative.io/answers/how-to-implement-stack-in-python)
 
 # 29.01.2024
 - [Python Packaging, One Year Later: A Look Back at 2023 in Python Packaging](https://chriswarrick.com/blog/2024/01/15/python-packaging-one-year-later/)
