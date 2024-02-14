@@ -330,6 +330,9 @@ shape: (1, 5)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript.
 
+# 16.02.2024
+- [Add text to Existing PDF using Python](https://stackoverflow.com/questions/1180115/add-text-to-existing-pdf-using-python)
+
 # 09.02.2024
 - [Python - Read a File Line-by-Line](https://able.bio/rhett/python-read-a-file-line-by-line--116rey6)
 - [How To Add to a Dictionary in Python](https://www.digitalocean.com/community/tutorials/python-add-to-dictionary)

@@ -243,6 +243,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Визуализация и анализ географических данных на языке R](https://tsamsonov.github.io/r-geo-course/)
 - [Tidy Finance](https://www.tidy-finance.org/) is an opinionated approach to empirical research in financial economics - a fully transparent, open-source code base in multiple programming languages.
 - [Making Portable CLIs With WebR](https://rud.is/books/webr-cli-book/)
+- [Deep R Programming](https://deepr.gagolewski.com/) by by Marek Gagolewski
 
 ## e-books ML
 - [Deep Learning and Scientific Computing with R torch](https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/) by Sigrid Keydana
@@ -1237,6 +1238,9 @@ Stratification, CUPED, Variance-Weighted Estimators, and ML-based methods CUPAC 
 # Dev
 - [The Clean Code Blog](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) by Robert C. Martin (Uncle Bob)
 - [Заблуждения Clean Architecture](https://habr.com/ru/companies/mobileup/articles/335382/)
+- [dagster](https://dagster.io/). Ship data pipelines with extraordinary velocity
+- [reactflow](https://reactflow.dev/). A customizable React component for building node-based editors and interactive diagrams
+- [The Case for BPMN Token Simulation](https://bpmn.io/blog/posts/2023-the-case-for-bpmn-token-simulation)
 
 # R conferences
 
@@ -1462,6 +1466,12 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 # R & Macos
 - COOL!!! [R-universe now builds MacOS ARM64 binaries for use on Apple Silicon (aka M1/M2/M3) systems](https://ropensci.org/blog/2024/01/14/runiverse-arm64/)
 
+
+# 16.02.2024
+## R
+- COOL! [genieclust: Fast and Robust Hierarchical Clustering with Noise Point Detection](https://genieclust.gagolewski.com/)
+
+
 # 02.02.2024
 ## R
 - [System Dependencies in R Packages & Automatic Testing](https://epiverse-trace.github.io/posts/system-dependencies/)
@@ -1557,6 +1567,10 @@ World Leaders in Research-Based User Experience [Response Times: The 3 Important
 - Remove Trailing whitespaces in RStudio. `Project Options / Code Editing / Strip trailing ...` или `Global Options / Code / Saving / Strip trailing ...`
 	- [О трэйлинг вайтспейсах замолвите слово](https://habr.com/ru/articles/77155/)
 	- [Why is trailing whitespace a big deal? {closed}](https://softwareengineering.stackexchange.com/questions/121555/why-is-trailing-whitespace-a-big-deal)
+- [BIG DATA IS DEAD](https://motherduck.com/blog/big-data-is-dead/), 2023/02/07, BY JORDAN TIGANI
+- COOL! [Embedded databases (1): The harmony of DuckDB, KùzuDB and LanceDB](https://thedataquarry.com/posts/embedded-db-1/#duckdb)
+	- [lance](lancedb.github.io/lance/). Modern columnar data format for ML and LLMs implemented in Rust.
+	- [Tantivy](https://github.com/quickwit-oss/tantivy). Tantivy is a full-text search engine library inspired by Apache Lucene and written in Rust
 
 
 # 05.01.2024
