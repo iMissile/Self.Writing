@@ -1278,6 +1278,7 @@ Stratification, CUPED, Variance-Weighted Estimators, and ML-based methods CUPAC 
 ## Posit::Conf(2023)
 - [Reliable maintenance of machine learning models](https://juliasilge.github.io/ml-maintenance-2023/#/title-slide)
 - [Styling and Templating Quarto Documents](https://emilhvitfeldt.github.io/talk-quarto-theming-positconf/#/section) by Emil hvitfeldt @ posit::conf 2023
+- [{epoxy}. super glue for data-driven reports and Shiny apps](https://slides.garrickadenbuie.com/epoxy-super-glue/) by Garrick Aden-Buie
 
 
 ## Rconf 2022
