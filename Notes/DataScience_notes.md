@@ -1468,9 +1468,16 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 - COOL!!! [R-universe now builds MacOS ARM64 binaries for use on Apple Silicon (aka M1/M2/M3) systems](https://ropensci.org/blog/2024/01/14/runiverse-arm64/)
 
 
+# 23.02.2024
+## R
+- Дафреймы покоя не дают никому. [C++ DataFrame for statistical, Financial, and ML analysis -- in modern C++ using native types and contiguous memory storage](https://github.com/hosseinmoein/DataFrame)
+
 # 16.02.2024
 ## R
 - COOL! [genieclust: Fast and Robust Hierarchical Clustering with Noise Point Detection](https://genieclust.gagolewski.com/)
+- COOL! [A collection of themes for RStudio](https://github.com/max-alletsee/rstudio-themes?tab=readme-ov-file)
+- [Soothing pastel theme for the high-spirited!](https://github.com/catppuccin/catppuccin)
+- [rsthemes](https://www.garrickadenbuie.com/project/rsthemes/). Full RStudio IDE and Syntax Themes
 
 
 # 02.02.2024
