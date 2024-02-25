@@ -1471,6 +1471,8 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 # 23.02.2024
 ## R
 - Дафреймы покоя не дают никому. [C++ DataFrame for statistical, Financial, and ML analysis -- in modern C++ using native types and contiguous memory storage](https://github.com/hosseinmoein/DataFrame)
+- [dbtplyr](https://www.emilyriederer.com/project/dbtplyr/). `dbt` package bringing `dplyr` semantics to SQL
+- [Operationalizing Column-Name Contracts with dbtplyr](https://www.getdbt.com/coalesce-2021/operationalizing-columnname-contracts-with-dbtplyr)
 
 # 16.02.2024
 ## R
