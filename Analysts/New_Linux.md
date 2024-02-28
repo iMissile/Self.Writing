@@ -68,6 +68,10 @@ cp- Используем команду `cp` для ручного управл�
 ## регулярки по файлам
 - [How to remove lines from the text file containing specific words through terminal?](https://askubuntu.com/questions/354993/how-to-remove-lines-from-the-text-file-containing-specific-words-through-termina). grep/sed/awk approach
 - [Is \d not supported by grep's basic expressions?](https://stackoverflow.com/questions/6901171/is-d-not-supported-by-greps-basic-expressions)
+- Подробно [How to use grep command In Linux / UNIX with examples](https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/)
+- [How can I grep recursively, but only in files with certain extensions?](https://stackoverflow.com/questions/12516937/how-can-i-grep-recursively-but-only-in-files-with-certain-extensions)
+`grep -r --include=\*.json -E -o 'evt_type.{60}'`
+- [Regular expressions in grep ( regex ) with examples](https://www.cyberciti.biz/faq/grep-regular-expressions/)
 
 ## права доступа
 - [How can I check the permissions of a specific group?](https://askubuntu.com/questions/162417/how-can-i-check-the-permissions-of-a-specific-group)

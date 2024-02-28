@@ -1473,6 +1473,9 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 - Дафреймы покоя не дают никому. [C++ DataFrame for statistical, Financial, and ML analysis -- in modern C++ using native types and contiguous memory storage](https://github.com/hosseinmoein/DataFrame)
 - [dbtplyr](https://www.emilyriederer.com/project/dbtplyr/). `dbt` package bringing `dplyr` semantics to SQL
 - [Operationalizing Column-Name Contracts with dbtplyr](https://www.getdbt.com/coalesce-2021/operationalizing-columnname-contracts-with-dbtplyr)
+- [Substitute empty values in a list with NA](https://copyprogramming.com/howto/replace-null-is-list-with-na)
+- [map_* doesn't use .null when .f is a function #233](https://github.com/tidyverse/purrr/issues/233)
+- COOL! [chronos](https://schochastics.github.io/chronos/). A fast general purpose date/time converter written in Rust with crates dateparser and chrono.
 
 # 16.02.2024
 ## R
