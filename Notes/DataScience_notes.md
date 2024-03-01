@@ -1476,6 +1476,9 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 - [Substitute empty values in a list with NA](https://copyprogramming.com/howto/replace-null-is-list-with-na)
 - [map_* doesn't use .null when .f is a function #233](https://github.com/tidyverse/purrr/issues/233)
 - COOL! [chronos](https://schochastics.github.io/chronos/). A fast general purpose date/time converter written in Rust with crates dateparser and chrono.
+- Slides. [Visualizing Survival Data with the {ggsurvfit} R Package](https://www.danieldsjoberg.com/ggsurvfit-rmed-webinar-2024/slides/#/title-slide) by Daniel D. Sjoberg
+- COOL! [Why are these numbers not equal?](https://stackoverflow.com/questions/9508518/why-are-these-numbers-not-equal)
+- [Using the output of `purrr::safely()`](https://stackoverflow.com/questions/57192955/using-the-output-of-purrrsafely)
 
 # 16.02.2024
 ## R
@@ -1499,6 +1502,7 @@ Bob Rudis написал небольшую книгу Making Portable CLIs With
 # 25.01.2024
 ## DS & phys
 - Любопытно. Про задачки по электричеству [Нелинейные цепи постоянного тока. Графические методы расчета.](https://www.ups-info.ru/for_partners/library/teoreticheskie_osnove_ilektrotehniki_dlya_ibp_ups_/nelineynee_tsepi_postoyannogo_toka_graficheskie_me/). Там много еще чего.
+- [Rill. Dashboards that move as fast as your business](https://www.rilldata.com/)
 
 ## R
 - [RPostgreSQL: Connect R and PostgreSQL in 4 Easy Steps](https://hevodata.com/learn/rpostgresql/)
