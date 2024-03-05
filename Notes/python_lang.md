@@ -330,6 +330,9 @@ shape: (1, 5)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript.
 
+# 04.03.2024
+- [Ten Python datetime pitfalls, and what libraries are (not) doing about it](https://dev.arie.bovenberg.net/blog/python-datetime-pitfalls/)
+
 # 16.02.2024
 - [Add text to Existing PDF using Python](https://stackoverflow.com/questions/1180115/add-text-to-existing-pdf-using-python)
 

@@ -1468,6 +1468,12 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 - COOL!!! [R-universe now builds MacOS ARM64 binaries for use on Apple Silicon (aka M1/M2/M3) systems](https://ropensci.org/blog/2024/01/14/runiverse-arm64/)
 
 
+# 09.03.2024
+## R
+- [R Shiny showModal and removeModal for all users](https://stackoverflow.com/questions/47447795/r-shiny-showmodal-and-removemodal-for-all-users)
+- [Shiny session-global variable](https://community.rstudio.com/t/shiny-session-global-variable/5089)
+- [Using global input values inside of R Shiny modules](https://tbradley1013.github.io/2018/07/20/r-shiny-modules--using-global-inputs/)
+
 # 23.02.2024
 ## R
 - Дафреймы покоя не дают никому. [C++ DataFrame for statistical, Financial, and ML analysis -- in modern C++ using native types and contiguous memory storage](https://github.com/hosseinmoein/DataFrame)
