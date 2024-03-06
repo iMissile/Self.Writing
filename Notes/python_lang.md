@@ -1284,3 +1284,12 @@ In Python 3+, the default encoding of source files is already UTF-8 and that lin
 - [Pandas Cheat Sheet — Python for Data Science](https://www.dataquest.io/blog/pandas-cheat-sheet/)
 - [MyST - Markedly Structured Text](https://myst-parser.readthedocs.io/en/latest/). A fully-functional markdown flavor and parser for Sphinx. MyST allows you to write Sphinx documentation entirely in markdown.
 - [MyST cheat sheet](https://jupyterbook.org/reference/cheatsheet.html)
+
+# C++
+
+# 2024.03.06
+- [bool to int conversion](https://stackoverflow.com/questions/5369770/bool-to-int-conversion)
+Section 6.5.8.6 of the C standard says:
+```
+Each of the operators < (less than), > (greater than), <= (less than or equal to), and >= (greater than or equal to) shall yield 1 if the specified relation is true and 0 if it is false.) The result has type int.
+```

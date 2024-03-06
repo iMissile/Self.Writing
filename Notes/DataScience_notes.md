@@ -1510,6 +1510,7 @@ Bob Rudis написал небольшую книгу Making Portable CLIs With
 - Любопытно. Про задачки по электричеству [Нелинейные цепи постоянного тока. Графические методы расчета.](https://www.ups-info.ru/for_partners/library/teoreticheskie_osnove_ilektrotehniki_dlya_ibp_ups_/nelineynee_tsepi_postoyannogo_toka_graficheskie_me/). Там много еще чего.
 - [Rill. Dashboards that move as fast as your business](https://www.rilldata.com/)
 
+
 ## R
 - [RPostgreSQL: Connect R and PostgreSQL in 4 Easy Steps](https://hevodata.com/learn/rpostgresql/)
 - [pickleR](https://github.com/d-sharpe/pickleR) provides for the serializing and de-serializing of an R object structure. pickleR traverses the object hierarchy, keeping track of any sub-objects it has already encountered so that they will not be stored again. Therefore, recursive, nested and shared objects are handled by pickleR.

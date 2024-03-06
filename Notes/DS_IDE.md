@@ -1,3 +1,7 @@
+# C++
+- [15 лучших бесплатных IDE C++ (редактор и компилятор) для Windows (2024 г.)](https://www.guru99.com/ru/best-cpp-ide-editor-free.html)
+- Онлайн компилятор (какой найдете), например: https://www.onlinegdb.com/
+
 # RStudio
 
 ## RStudio fonts
