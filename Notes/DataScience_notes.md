@@ -1473,6 +1473,9 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 - [R Shiny showModal and removeModal for all users](https://stackoverflow.com/questions/47447795/r-shiny-showmodal-and-removemodal-for-all-users)
 - [Shiny session-global variable](https://community.rstudio.com/t/shiny-session-global-variable/5089)
 - [Using global input values inside of R Shiny modules](https://tbradley1013.github.io/2018/07/20/r-shiny-modules--using-global-inputs/)
+- [Limit of workers in future::plan() function higher than available CPUs cores](https://stackoverflow.com/questions/77244972/limit-of-workers-in-futureplan-function-higher-than-available-cpus-cores)
+- COOL! [R Web Frameworks Benchmark](https://web-frameworks-benchmark.netlify.app/result?l=r)
+- [parallel processing and logger #67 {Closed}](https://github.com/daroczig/logger/issues/67)
 
 # 23.02.2024
 ## R
@@ -1509,6 +1512,8 @@ Bob Rudis написал небольшую книгу Making Portable CLIs With
 ## DS & phys
 - Любопытно. Про задачки по электричеству [Нелинейные цепи постоянного тока. Графические методы расчета.](https://www.ups-info.ru/for_partners/library/teoreticheskie_osnove_ilektrotehniki_dlya_ibp_ups_/nelineynee_tsepi_postoyannogo_toka_graficheskie_me/). Там много еще чего.
 - [Rill. Dashboards that move as fast as your business](https://www.rilldata.com/)
+- COOL! [Интересные алгоритмы кластеризации, часть вторая: DBSCAN](https://habr.com/ru/articles/322034/)
+- [New Breakthrough Brings Matrix Multiplication Closer to Ideal](https://www.quantamagazine.org/new-breakthrough-brings-matrix-multiplication-closer-to-ideal-20240307/)
 
 
 ## R
