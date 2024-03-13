@@ -538,6 +538,14 @@ An rstudio::conf(2022) Workshop by Cédric Scherer
 	- [The FixedHeader Extension](https://rstudio.github.io/DT/001-fixedheader.html)
 	- [Issue with FixedHeader extension #389 {Closed}](https://github.com/rstudio/DT/issues/389)
 	- [Freeze Header and Footer in Datatable - shiny](https://stackoverflow.com/questions/50922686/freeze-header-and-footer-in-datatable-shiny)
+- Проблема с набегающими фиксированными заголовками Fixed Header. 
+	Всем привет. Данная проблема является общеизвестной - https://github.com/rstudio/DT/issues/389, проблема на стороне js библиотеки - https://github.com/DataTables/FixedHeader/issues/97
+Нашел несколько путей исправления, либо задать фиксированную высоту содержимого таблицы (закрепить header и footer), тогда будет вот так:
+* либо смахинировать с заданием горизонтальной прокрутки, но будет небольшой сдвиг шапки таблицы в процессе работы, который будет исчезать при взаимодействии с функционалом таблицы (сортировка, фильтрация, пагинация):
+* В итоге оставил первый вариант с случае если таблица занимает большую часть страницы (Список документов), второй вариант при наличии большого количества элементов на странице (Пакеты документов ->Аналитика работ КС-2)
+	- [Issue with FixedHeader extension #389 {Closed}](https://github.com/rstudio/DT/issues/389)
+	- [Fixed Header show also if Table is hidden #97 {Closed}](https://github.com/DataTables/FixedHeader/issues/97)
+
 
 ## gt
 - [Create interactive links in gt table (in rmarkdown)](https://community.rstudio.com/t/create-interactive-links-in-gt-table-in-rmarkdown/70266/2)
@@ -598,6 +606,7 @@ The v0.8.0 release of gt is quite exciting so we want to show you all the things
 - COOL! [New formatting functions in {gt} 0.9.0](https://posit.co/blog/new-formatting-functions-in-gt-0-9-0/)
 - COOL! [Merging columns together and fixing up column labels in {gt} 0.9.0](https://posit.co/blog/columns-in-gt-0-9-0/)
 - COOL! [New in {gt} 0.9.0: Interactive tables](https://posit.co/blog/new-in-gt-0-9-0-interactive-tables/)
+- [All the new features in {gt} 0.10.0](https://posit.co/blog/new-features-in-gt-0-10-0/). gt 0.10.0 introduces nanoplots, units notation, and so much more.
 
 ### font issues gt + quarto
 - [Change in Quarto from Rstudio RStudio 2022.07.1+554 to 2022.07.2+576 #3357](https://github.com/quarto-dev/quarto-cli/discussions/3357). Probably caused by some CSS overwriting the table CSS.

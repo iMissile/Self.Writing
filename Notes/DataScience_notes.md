@@ -1401,7 +1401,6 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [DuckDB/SQL: Pivot - 0 if null](https://www.markhneedham.com/blog/2023/06/07/duckdb-sql-pivot-0-if-null/)
 - [Insert into duckdb table using dplyr](https://stackoverflow.com/questions/72792818/insert-into-duckdb-table-using-dplyr) or [Is it possible to insert (add) a row to a SQLite db table using dplyr package?](https://stackoverflow.com/questions/26568182/is-it-possible-to-insert-add-a-row-to-a-sqlite-db-table-using-dplyr-package/26784801#26784801)
 Use SQL statements such as `INSERT INTO`. "You can, but you shouldn't. dplyr is designed specifically for retrieving data from databases, not modifying in place. This answer uses internal functions - I strongly recommend against using these functions." – Hadley
-- [yyjson. The fastest JSON library in C](https://github.com/ibireme/yyjson)
 - [Use dbt and Duckdb instead of Spark in data pipelines](https://medium.com/datamindedbe/use-dbt-and-duckdb-instead-of-spark-in-data-pipelines-9063a31ea2b5)
 - [dbt-duckdb](https://github.com/jwills/dbt-duckdb).
 dbt (http://getdbt.com) adapter for DuckDB (http://duckdb.org)
@@ -1464,9 +1463,14 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 3. Проверяем переменные:
 `Sys.getenv("PROFFER_PPROF_BIN")`.
 
-# R & Macos
+# R & MacOS
 - COOL!!! [R-universe now builds MacOS ARM64 binaries for use on Apple Silicon (aka M1/M2/M3) systems](https://ropensci.org/blog/2024/01/14/runiverse-arm64/)
 
+
+# 18.03.2024
+## Dev
+- [Shen](https://shen-language.github.io/) is a portable functional programming language by Mark Tarver. It is the successor to the award-winning Qi language, with the added goal of being highly portable across platforms.
+More information is available on the [official website](http://shenlanguage.org/) and in The Book of Shen.
 
 # 09.03.2024
 ## R
@@ -1476,6 +1480,7 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 - [Limit of workers in future::plan() function higher than available CPUs cores](https://stackoverflow.com/questions/77244972/limit-of-workers-in-futureplan-function-higher-than-available-cpus-cores)
 - COOL! [R Web Frameworks Benchmark](https://web-frameworks-benchmark.netlify.app/result?l=r)
 - [parallel processing and logger #67 {Closed}](https://github.com/daroczig/logger/issues/67)
+- COOL! [Make an SSH tunnel to another computer via R to access postgreSQL table](https://stackoverflow.com/questions/38212693/make-an-ssh-tunnel-to-another-computer-via-r-to-access-postgresql-table)
 
 # 23.02.2024
 ## R
@@ -1514,6 +1519,7 @@ Bob Rudis написал небольшую книгу Making Portable CLIs With
 - [Rill. Dashboards that move as fast as your business](https://www.rilldata.com/)
 - COOL! [Интересные алгоритмы кластеризации, часть вторая: DBSCAN](https://habr.com/ru/articles/322034/)
 - [New Breakthrough Brings Matrix Multiplication Closer to Ideal](https://www.quantamagazine.org/new-breakthrough-brings-matrix-multiplication-closer-to-ideal-20240307/)
+- [Что такое отжиг и зачем его имитировать](https://thecode.media/simulated-annealing/)
 
 
 ## R
@@ -1608,6 +1614,8 @@ World Leaders in Research-Based User Experience [Response Times: The 3 Important
 - [Чем хвостовая рекурсия отличается от обычной?](https://dzen.ru/a/Xolo6d3I5SBnPc6Y)
 - [Demystifying Tail Call Optimization](https://dev.to/rohit/demystifying-tail-call-optimization-5bf3)
 - COOL! [tailr — Tail Recursion Optimisation](https://mailund.github.io/r-programmer-blog/2018/03/02/tailr--tail-recursion-optimisation/)
+- [Группы и теория гомотопий, курс](https://www.lektorium.tv/course/22939) Математичеcкая лаборатория им. П.Л. Чебышева СПбГУ. Лектор:	Роман Михайлов
+- [Оффтоп на тему гомологий](https://www.pgpru.com/forum/offtopik/offtopnatemugomologijj)
 
 ## R
 - Определяем stacktrace
@@ -1889,6 +1897,17 @@ Download ‘Google’ fonts (via google-webfonts-helper) and generate CSS to use
 - [Outputting multiple lines of text with renderText() in R shiny](https://stackoverflow.com/questions/23233497/outputting-multiple-lines-of-text-with-rendertext-in-r-shiny)
 - [How to customize shiny sliderInput](https://divadnojnarg.github.io/post/customsliderinput/)
 - Интересные изыскания по теме переиспользования контролов. [Reuse the same output binding on different tab panels #867 {Closed}](https://github.com/rstudio/shiny/issues/867)
+- [Observe Function in R Shiny - How to Implement a Reactive Observer](https://www.appsilon.com/post/observe-function-r-shiny)
+- COOL! Разбор трех вариантов. [Long Running Tasks With Shiny: Challenges and Solutions](https://blog.fellstat.com/?p=407)
+- COOL! [15 Common Application Caveats. 15.1 Reactivity anti-patterns](https://engineering-shiny.org/common-app-caveats.html)
+- [Progress indicators](https://shiny.posit.co/r/articles/build/progress/) WINSTON CHANG, SEPTEMBER 10, 2014
+
+### shiny + parallel + progress
+- [Using standard R shiny progress bar in parallel foreach calculations](https://stackoverflow.com/questions/54532486/using-standard-r-shiny-progress-bar-in-parallel-foreach-calculations)
+- COOL! [ipc: Tools for Message Passing Between Processes](https://cran.r-project.org/web/packages/ipc/index.html)
+- [Async: Display progress when actionButton is hit and disable other operations for the same user but allow concurrent users](https://community.rstudio.com/t/async-display-progress-when-actionbutton-is-hit-and-disable-other-operations-for-the-same-user-but-allow-concurrent-users/16682)
+- [Ian Fellows | Don’t let long running tasks hang users: introducing IPC for Shiny | RStudio (2019)](https://www.youtube.com/watch?v=3mDqgAYH22s)
+- [Case study: converting a Shiny app to async](https://rstudio.github.io/promises/articles/promises_08_casestudy.html#revisiting-the-data-reactive-progress-support)
 
 # 21.08.2023
 # R. Create empty dataframe
@@ -2504,8 +2523,9 @@ Daniel Lemire is a computer science professor at the University of Quebec (TELUQ
 - [Slurm vs LSF vs Kubernetes Scheduler](https://www.run.ai/guides/slurm/slurm-vs-lsf-vs-kubernetes-scheduler-which-is-right-for-you)
 
 ## JSON
+- [Understanding JSON Schema](https://json-schema.org/understanding-json-schema#understanding-json-schema)
 - [JSON Schema Validator](https://json-schema.org/implementations.html#validator-python)
-
+- [yyjson. The fastest JSON library in C](https://github.com/ibireme/yyjson)
 
 # 09.01.2023
 ## R

@@ -332,6 +332,8 @@ shape: (1, 5)
 
 # 04.03.2024
 - [Ten Python datetime pitfalls, and what libraries are (not) doing about it](https://dev.arie.bovenberg.net/blog/python-datetime-pitfalls/)
+- [How to find all the functions that has been *used* in a python script?](https://stackoverflow.com/questions/73095952/how-to-find-all-the-functions-that-has-been-used-in-a-python-script)
+- ebook [Python 101!](https://python101.pythonlibrary.org/index.html)
 
 # 16.02.2024
 - [Add text to Existing PDF using Python](https://stackoverflow.com/questions/1180115/add-text-to-existing-pdf-using-python)
