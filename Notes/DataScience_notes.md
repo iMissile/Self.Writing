@@ -1471,6 +1471,7 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 ## Dev
 - [Shen](https://shen-language.github.io/) is a portable functional programming language by Mark Tarver. It is the successor to the award-winning Qi language, with the added goal of being highly portable across platforms.
 More information is available on the [official website](http://shenlanguage.org/) and in The Book of Shen.
+- [Zed](https://zed.dev/) is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter. It's also open source.
 
 # 09.03.2024
 ## R
@@ -1481,6 +1482,8 @@ More information is available on the [official website](http://shenlanguage.org/
 - COOL! [R Web Frameworks Benchmark](https://web-frameworks-benchmark.netlify.app/result?l=r)
 - [parallel processing and logger #67 {Closed}](https://github.com/daroczig/logger/issues/67)
 - COOL! [Make an SSH tunnel to another computer via R to access postgreSQL table](https://stackoverflow.com/questions/38212693/make-an-ssh-tunnel-to-another-computer-via-r-to-access-postgresql-table)
+- [The tabr package](https://leonawicz.github.io/tabr/) provides a music notation syntax and a collection of music programming functions for generating, manipulating, organizing and analyzing musical information in R.
+- Slides! [Web APIs in R with httr2](https://github.com/hadley/talk-httr2)
 
 # 23.02.2024
 ## R

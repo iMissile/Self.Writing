@@ -1,3 +1,7 @@
+# 14.03.2024
+- Хитро же рисуют модуль в Математике! [Absolute value's vertical bar symbol in Text cell formula](https://mathematica.stackexchange.com/questions/171753/absolute-values-vertical-bar-symbol-in-text-cell-formula)
+If you want to type the expression into a cell, use `Esc l | Esc` instead of just `|` for the left side of the absolute value expression, and similarly `Esc r | Esc` instead of `|` for the right side. 
+
 # 13.12.2023
 - [Mathematica: Determine if all integers in a list are less than a number?](https://stackoverflow.com/questions/1184995/mathematica-determine-if-all-integers-in-a-list-are-less-than-a-number)
 - [Alternatives to procedural loops and iterating over lists in Mathematica](https://mathematica.stackexchange.com/questions/7924/alternatives-to-procedural-loops-and-iterating-over-lists-in-mathematica)

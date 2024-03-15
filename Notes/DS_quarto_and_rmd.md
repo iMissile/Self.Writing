@@ -171,7 +171,19 @@ Add `as_raw_html()` to avoid Quarto modifying the HTML table.
 	  count(Species) %>% 
 	  gt() %>%
 	  as_raw_html()
-	  
+- COOL! [changing font size in R DataTables (DT)](https://stackoverflow.com/questions/44101055/changing-font-size-in-r-datatables-dt)
+```
+dt_font_size <- "9pt"
+
+mtcars %>%
+  DT::datatable(options=list(
+    initComplete = htmlwidgets::JS(
+      "function(settings, json) {",
+      paste0("$(this.api().table().container()).css({'font-size': '", dt_font_size, "'});"),
+      "}")
+  ))
+```
+
 ## Quarto & word
 - [Changing math formulas font size in RPres](https://stackoverflow.com/questions/36531820/changing-math-formulas-font-size-in-rpres/36533612#36533612)
 - [changing rmarkdown "table of contents" default title](https://stackoverflow.com/questions/52977363/changing-rmarkdown-table-of-contents-default-title/52978463#52978463)
