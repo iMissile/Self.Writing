@@ -1475,9 +1475,6 @@ More information is available on the [official website](http://shenlanguage.org/
 
 # 09.03.2024
 ## R
-- [R Shiny showModal and removeModal for all users](https://stackoverflow.com/questions/47447795/r-shiny-showmodal-and-removemodal-for-all-users)
-- [Shiny session-global variable](https://community.rstudio.com/t/shiny-session-global-variable/5089)
-- [Using global input values inside of R Shiny modules](https://tbradley1013.github.io/2018/07/20/r-shiny-modules--using-global-inputs/)
 - [Limit of workers in future::plan() function higher than available CPUs cores](https://stackoverflow.com/questions/77244972/limit-of-workers-in-futureplan-function-higher-than-available-cpus-cores)
 - COOL! [R Web Frameworks Benchmark](https://web-frameworks-benchmark.netlify.app/result?l=r)
 - [parallel processing and logger #67 {Closed}](https://github.com/daroczig/logger/issues/67)
@@ -1903,7 +1900,20 @@ Download ‘Google’ fonts (via google-webfonts-helper) and generate CSS to use
 - [Observe Function in R Shiny - How to Implement a Reactive Observer](https://www.appsilon.com/post/observe-function-r-shiny)
 - COOL! Разбор трех вариантов. [Long Running Tasks With Shiny: Challenges and Solutions](https://blog.fellstat.com/?p=407)
 - COOL! [15 Common Application Caveats. 15.1 Reactivity anti-patterns](https://engineering-shiny.org/common-app-caveats.html)
-- [Progress indicators](https://shiny.posit.co/r/articles/build/progress/) WINSTON CHANG, SEPTEMBER 10, 2014
+- [R Shiny showModal and removeModal for all users](https://stackoverflow.com/questions/47447795/r-shiny-showmodal-and-removemodal-for-all-users)
+- [Shiny session-global variable](https://community.rstudio.com/t/shiny-session-global-variable/5089)
+- [Using global input values inside of R Shiny modules](https://tbradley1013.github.io/2018/07/20/r-shiny-modules--using-global-inputs/)
+- [CSS for Shiny](https://unleash-shiny.rinterface.com/beautify-css)
+- [Using custom CSS in your app](https://shiny.posit.co/r/articles/build/css/)
+	* The function `includeCSS()` is an amalgamation of inline and file-based CSS.
+- [How to Use CSS to Style Your R Shiny Dashboards](https://www.appsilon.com/post/howto-css-and-shiny)
+	* Add stylings directly to HTML tags
+	* Add CSS to HTML header
+	* Add stylesheets to the www directory
+- [CSS применительно к дашборду](https://rstudio.github.io/shinydashboard/appearance.html#css)
+- Shiny `www` folder
+	- [Publishing Shiny App Package with www/ Folder](https://forum.posit.co/t/publishing-shiny-app-package-with-www-folder/157170)
+	- [Shiny app as a package - directory structure and www folder](https://forum.posit.co/t/shiny-app-as-a-package-directory-structure-and-www-folder/135323)
 
 ### shiny + parallel + progress
 - [Using standard R shiny progress bar in parallel foreach calculations](https://stackoverflow.com/questions/54532486/using-standard-r-shiny-progress-bar-in-parallel-foreach-calculations)
@@ -1911,6 +1921,8 @@ Download ‘Google’ fonts (via google-webfonts-helper) and generate CSS to use
 - [Async: Display progress when actionButton is hit and disable other operations for the same user but allow concurrent users](https://community.rstudio.com/t/async-display-progress-when-actionbutton-is-hit-and-disable-other-operations-for-the-same-user-but-allow-concurrent-users/16682)
 - [Ian Fellows | Don’t let long running tasks hang users: introducing IPC for Shiny | RStudio (2019)](https://www.youtube.com/watch?v=3mDqgAYH22s)
 - [Case study: converting a Shiny app to async](https://rstudio.github.io/promises/articles/promises_08_casestudy.html#revisiting-the-data-reactive-progress-support)
+- [Progress indicators](https://shiny.posit.co/r/articles/build/progress/) WINSTON CHANG, SEPTEMBER 10, 2014
+
 
 # 21.08.2023
 # R. Create empty dataframe

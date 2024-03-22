@@ -545,7 +545,9 @@ An rstudio::conf(2022) Workshop by Cédric Scherer
 * В итоге оставил первый вариант с случае если таблица занимает большую часть страницы (Список документов), второй вариант при наличии большого количества элементов на странице (Пакеты документов ->Аналитика работ КС-2)
 	- [Issue with FixedHeader extension #389 {Closed}](https://github.com/rstudio/DT/issues/389)
 	- [Fixed Header show also if Table is hidden #97 {Closed}](https://github.com/DataTables/FixedHeader/issues/97)
-
+- [DT extensions](https://rstudio.github.io/DT/extensions.html)	
+- [colvis](https://datatables.net/reference/button/colvis). A button collection that provides column visibility control.
+- [Bootstrap styles overwritten #517 {Open}](https://github.com/rstudio/DT/issues/517)
 
 ## gt
 - [Create interactive links in gt table (in rmarkdown)](https://community.rstudio.com/t/create-interactive-links-in-gt-table-in-rmarkdown/70266/2)
