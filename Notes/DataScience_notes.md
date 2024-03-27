@@ -1467,6 +1467,15 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 - COOL!!! [R-universe now builds MacOS ARM64 binaries for use on Apple Silicon (aka M1/M2/M3) systems](https://ropensci.org/blog/2024/01/14/runiverse-arm64/)
 
 
+# 30.03.2024
+## R
+- [lite](https://paulnorthrop.github.io/lite/). Likelihood-Based Inference for Time Series Extremes
+- [litr](https://jacobbien.github.io/litr-project/). Writing R packages via literate programming
+- Бенчмарки [Fastest way to sort each row of a large matrix in R](https://stackoverflow.com/questions/9506442/fastest-way-to-sort-each-row-of-a-large-matrix-in-r)
+- Бенчмарки [How do I replace NA values with zeros in an R dataframe?](https://stackoverflow.com/questions/8161836/how-do-i-replace-na-values-with-zeros-in-an-r-dataframe)
+- Бенчмарки [Which rows/columns are duplicates of which others in R matrices?](https://stackoverflow.com/questions/70557817/which-rows-columns-are-duplicates-of-which-others-in-r-matrices)
+
+
 # 18.03.2024
 ## Dev
 - [Shen](https://shen-language.github.io/) is a portable functional programming language by Mark Tarver. It is the successor to the award-winning Qi language, with the added goal of being highly portable across platforms.
@@ -1914,6 +1923,7 @@ Download ‘Google’ fonts (via google-webfonts-helper) and generate CSS to use
 - Shiny `www` folder
 	- [Publishing Shiny App Package with www/ Folder](https://forum.posit.co/t/publishing-shiny-app-package-with-www-folder/157170)
 	- [Shiny app as a package - directory structure and www folder](https://forum.posit.co/t/shiny-app-as-a-package-directory-structure-and-www-folder/135323)
+- [Column visibility in DT in a shiny app](https://forum.posit.co/t/column-visibility-in-dt-in-a-shiny-app/124696)
 
 ### shiny + parallel + progress
 - [Using standard R shiny progress bar in parallel foreach calculations](https://stackoverflow.com/questions/54532486/using-standard-r-shiny-progress-bar-in-parallel-foreach-calculations)
