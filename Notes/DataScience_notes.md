@@ -1475,6 +1475,8 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 - Бенчмарки [How do I replace NA values with zeros in an R dataframe?](https://stackoverflow.com/questions/8161836/how-do-i-replace-na-values-with-zeros-in-an-r-dataframe)
 - Бенчмарки [Which rows/columns are duplicates of which others in R matrices?](https://stackoverflow.com/questions/70557817/which-rows-columns-are-duplicates-of-which-others-in-r-matrices)
 - [urltools](https://github.com/Ironholds/urltools/). A package for elegantly handling and parsing URLs from within R.
+- [How to avoid warning when introducing NAs by coercion](https://stackoverflow.com/questions/14984989/how-to-avoid-warning-when-introducing-nas-by-coercion). Вопрос с 2013, решения до 2023 года идут
+- [Suppress reader parse problems in r](https://stackoverflow.com/questions/37462725/suppress-reader-parse-problems-in-r)
 
 # 18.03.2024
 ## Dev

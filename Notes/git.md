@@ -370,3 +370,7 @@ or
 git branch -a
 git push origin -d branch-name
 ```
+
+## Редактор сообщений в git
+- [How to Modify Git Commit Messages](https://www.baeldung.com/ops/git-commit-message-changes)
+- [Для новичков: 5 советов по GitHub](https://habr.com/ru/companies/goto/articles/352500/)
