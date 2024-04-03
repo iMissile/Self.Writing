@@ -349,6 +349,9 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - [One Weird Trick to Make Ggplot2 Columns the Same Width](https://pacha.dev/blog/2023/07/31/ggplot-columns/index.html)
 - [ggplot2 : Adding two errorbars to each point in scatterplot](https://stackoverflow.com/questions/9231702/ggplot2-adding-two-errorbars-to-each-point-in-scatterplot)
 - [Adding social media icons to charts with {ggplot2}](https://nrennie.rbind.io/blog/adding-social-media-icons-ggplot2/). With `ggtext`
+- [ggproto API](https://cran.r-project.org/web/packages/spinifex/vignettes/ggproto_api.html)
+- [19.4 Introducing ggproto](https://bookdown.dongzhuoer.com/hadley/ggplot2-book/introducing-ggproto)
+- [Base ggproto classes for ggplot2](https://ggplot2.tidyverse.org/reference/ggplot2-ggproto.html)
 
 
 ## ggplot & units

@@ -1466,6 +1466,24 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 # R & MacOS
 - COOL!!! [R-universe now builds MacOS ARM64 binaries for use on Apple Silicon (aka M1/M2/M3) systems](https://ropensci.org/blog/2024/01/14/runiverse-arm64/)
 
+# 05.04.2024
+## R
+- [Get row and column indices of matches using `which()`](https://stackoverflow.com/questions/7507765/get-row-and-column-indices-of-matches-using-which)
+Ответ: `which(m == 1, arr.ind = TRUE)`
+- [Selecting specific elements from a matrix all at once](https://stackoverflow.com/questions/11993810/selecting-specific-elements-from-a-matrix-all-at-once)
+```
+> rows <- c(1,2,3,4,5)
+> cols <- c(2,3,4,5,6)
+> call <- cbind(rows,cols)
+> 
+> mat[call]
+```
+- [Remove rows in R matrix where all data is NA {duplicate}](https://stackoverflow.com/questions/6471689/remove-rows-in-r-matrix-where-all-data-is-na)
+`m[rowSums(is.na(m)) != ncol(m), ]`
+
+## stringdist
+- [Hirschberg's Algorithm. Edit-Distance Revisited](https://users.monash.edu/~lloyd/tildeAlgDS/Dynamic/Hirsch/)
+
 
 # 30.03.2024
 ## R
@@ -1549,6 +1567,7 @@ getAnywhere()
 showMethods
 ```
 - [Lookup](https://github.com/jimhester/lookup) R full function definitions, including compiled code, S3 and S4 methods.
+
 ## SQlite
 - [Datatypes In SQLite](https://www.sqlite.org/datatype3.html). SQLite does not have a storage class set aside for storing dates and/or times.
 - [Connect to an SQLite database](https://rsqlite.r-dbi.org/reference/SQLite.html). When parameter extended_types = TRUE date and time columns are directly mapped to corresponding R-types.
@@ -2014,6 +2033,10 @@ Sys.setenv("RENV_CONFIG_REPOS_OVERRIDE" = "http://cran.rstudio.com")
 - [renv. Ignoring files](https://rstudio.github.io/renv/reference/dependencies.html)
 By default, renv will read your project's .gitignores (if present) to determine whether certain files or folders should be included when traversing directories.
 
+## проблема с установкой пакетов в github
+- [Error Failed to install 'unknown package' from GitHub Bad credentials Rate limit](https://forum.posit.co/t/error-failed-to-install-unknown-package-from-github-bad-credentials-rate-limit/113550)
+As the error message indicates use `usethis::browse_github_pat()` to create an access token and add it to your R environment file as `GITHUB_PAT=xyz using usethis::edit_r_environ()`
+`gitcreds::gitcreds_set()`
 
 ## R
 - [`rlang`. Unlock an environment](https://rlang.r-lib.org/reference/env_unlock.html?q=env_u#ref-usage)
@@ -2161,6 +2184,7 @@ microbenchmark::microbenchmark(
 # 25.05.2023
 ## DS
 - А.П. Репьев [Убожество SWOT](https://tushavin.ru/swot-analiz/)
+- [duckplyr: dplyr powered by DuckDB](https://duckdb.org/2024/04/02/duckplyr.html)
 - [Announcing DuckDB 0.8.0](https://duckdb.org/2023/05/17/announcing-duckdb-080.html). pivot/unpivot, asof join
 - [mlverse](https://github.com/mlverse). Open source libraries to scale Data Science
 - Кто будет разбираться с `torch` и `luz`, обязательно чекните статью https://mlverse.github.io/luz/articles/custom-loop.html и хелп ?ctx, много углов можно срезать, про которые в https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/ не сказано
@@ -4373,6 +4397,7 @@ Chain monadic sequences into stateful, branching pipelines. As nodes in the pipe
 - [converting a dgCMatrix to data frame](https://stackoverflow.com/questions/53486135/converting-a-dgcmatrix-to-data-frame)
 - [RcppArmadillo: Sparse Matrix Support](https://cran.r-project.org/web/packages/RcppArmadillo/vignettes/RcppArmadillo-sparseMatrix.pdf)
 - [Equivalent of rowsum function for Matrix-class (dgCMatrix)](https://stackoverflow.com/questions/51025979/equivalent-of-rowsum-function-for-matrix-class-dgcmatrix)
+- [Работа с разреженными матрицами в программировании на R](https://www.geeksforgeeks.org/working-with-sparse-matrices-in-r-programming/)
 
 ## R
 - [readr 2.0 planned improvments](https://github.com/tidyverse/readr/blob/master/NEWS.md)
