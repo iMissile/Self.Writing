@@ -147,6 +147,10 @@ cd /root/epel-packages/gdal-devel/ && rpm -ivh *.rpm
 - [Example Uses of the Linux gzip Command](https://www.lifewire.com/example-uses-of-the-linux-gzip-command-4078675)
 - [Сжатие и архивация файлов с помощью Gzip, Zip и Tar](http://www.rhd.ru/docs/manuals/enterprise/RHEL-AS-2.1-Manual/getting-started-guide/s1-zip-tar.html)
 - [GZip every file separately](https://stackoverflow.com/questions/1792078/gzip-every-file-separately)
+```
+parallel gzip ::: *
+gzip -r .
+```
 - [Check validity of gz file](https://unix.stackexchange.com/questions/359303/check-validity-of-gz-file). `gzip -v -t file.gz`
 - [How do I gunzip all files recursively in a target directory?](https://askubuntu.com/questions/620571/how-do-i-gunzip-all-files-recursively-in-a-target-directory)
 - [Script to create individual zip files for each .txt file it finds and move them after](https://stackoverflow.com/questions/12321167/script-to-create-individual-zip-files-for-each-txt-file-it-finds-and-move-them)

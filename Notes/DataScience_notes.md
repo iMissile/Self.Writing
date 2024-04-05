@@ -244,6 +244,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Tidy Finance](https://www.tidy-finance.org/) is an opinionated approach to empirical research in financial economics - a fully transparent, open-source code base in multiple programming languages.
 - [Making Portable CLIs With WebR](https://rud.is/books/webr-cli-book/)
 - [Deep R Programming](https://deepr.gagolewski.com/) by by Marek Gagolewski
+- [R for Social Network Analysis](https://schochastics.github.io/R4SNA/)
 
 ## e-books ML
 - [Deep Learning and Scientific Computing with R torch](https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/) by Sigrid Keydana
@@ -1483,6 +1484,9 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 
 ## stringdist
 - [Hirschberg's Algorithm. Edit-Distance Revisited](https://users.monash.edu/~lloyd/tildeAlgDS/Dynamic/Hirsch/)
+
+## math
+- [smacof: Multidimensional Scaling](https://cran.r-project.org/web/packages/smacof/index.html). Implements the following approaches for multidimensional scaling (MDS) based on stress minimization using majorization (smacof)
 
 
 # 30.03.2024
