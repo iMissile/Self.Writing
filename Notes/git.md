@@ -371,6 +371,13 @@ git branch -a
 git push origin -d branch-name
 ```
 
-## Редактор сообщений в git
+## откат веток назад при кривом мердже
+```
+git reset --hard origin/master
+git push --force-with-lease origin ilya
+```
+
+## Редактор сообщений в git (vim)
 - [How to Modify Git Commit Messages](https://www.baeldung.com/ops/git-commit-message-changes)
 - [Для новичков: 5 советов по GitHub](https://habr.com/ru/companies/goto/articles/352500/)
+- [Associating text editors with Git](https://docs.github.com/en/get-started/getting-started-with-git/associating-text-editors-with-git)

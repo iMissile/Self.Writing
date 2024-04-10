@@ -1467,6 +1467,10 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 # R & MacOS
 - COOL!!! [R-universe now builds MacOS ARM64 binaries for use on Apple Silicon (aka M1/M2/M3) systems](https://ropensci.org/blog/2024/01/14/runiverse-arm64/)
 
+# 15.04.2024
+## R
+- [Remove objects in .GlobalEnv from within a function](https://stackoverflow.com/questions/4837477/remove-objects-in-globalenv-from-within-a-function)
+
 # 05.04.2024
 ## R
 - [Get row and column indices of matches using `which()`](https://stackoverflow.com/questions/7507765/get-row-and-column-indices-of-matches-using-which)
