@@ -1481,6 +1481,7 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 - [areal: Areal Weighted Interpolation](https://chris-prener.github.io/areal/)
 - [Chapter 4 Spatial Interpolation | GEOG3915 GeoComputation and Spatial Analysis practicals](https://bookdown.org/lexcomber/GEOG3195/week3.html)
 - [Chapter 12  Spatial Interpolation | Spatial Data Science](https://r-spatial.org/book/12-Interpolation.html)
+- e-book [Spatial Data Science With Applications in R](https://r-spatial.org/book/)
 
 # 15.04.2024
 ## R
