@@ -262,6 +262,7 @@ by Christopher M. Bishop (Author), Hugh Bishop (Author)
 - COOL! tl;dr: a gajillion dollar online game takes 4X as long to start because it parses a 10MB JSON file in a bad way. [How I cut GTA Online loading times by 70%](https://nee.lv/2021/02/28/How-I-cut-GTA-Online-loading-times-by-70/)
 - [Filter data before reading with awk and R. Using awk & R to map Fishing Effort](https://luisdva.github.io/rstats/r-awk/)
 - [Fitting logistic regression on 100gb dataset on a laptop](https://dsnotes.com/post/2017-02-07-large-data-feature-hashing-and-online-learning-part-2/) by Dmitriy Selivanov
+- [Disband the analytics team. I mean, no, surely not. But maybe?](https://benn.substack.com/p/disband-the-analytics-team?trk=feed_main-feed-card_reshare_feed-article-content)
 
 
 # VPN
@@ -1466,6 +1467,20 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 
 # R & MacOS
 - COOL!!! [R-universe now builds MacOS ARM64 binaries for use on Apple Silicon (aka M1/M2/M3) systems](https://ropensci.org/blog/2024/01/14/runiverse-arm64/)
+
+# 22.04.2024
+# R
+- COOL! [Code and slides for RStudio webinars](https://github.com/rstudio/webinars). resources.rstudio.com/webinars
+- COOL! [Convert decimals to fractions in R](https://fracture.rossellhayes.com/)
+- [Print number as reduced fraction in R](https://stackoverflow.com/questions/5046026/print-number-as-reduced-fraction-in-r)
+- [How to convert a decimal value or a vector of decimal values to fractional form in R?](https://www.tutorialspoint.com/how-to-convert-a-decimal-value-or-a-vector-of-decimal-values-to-fractional-form-in-r) `MASS::fractions(0.14)`
+
+## GIS
+- [Триангуляция Делоне](https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D0%B8%D0%B0%D0%BD%D0%B3%D1%83%D0%BB%D1%8F%D1%86%D0%B8%D1%8F_%D0%94%D0%B5%D0%BB%D0%BE%D0%BD%D0%B5)
+- [Inverse distance weighting](https://en.wikipedia.org/wiki/Inverse_distance_weighting)
+- [areal: Areal Weighted Interpolation](https://chris-prener.github.io/areal/)
+- [Chapter 4 Spatial Interpolation | GEOG3915 GeoComputation and Spatial Analysis practicals](https://bookdown.org/lexcomber/GEOG3195/week3.html)
+- [Chapter 12  Spatial Interpolation | Spatial Data Science](https://r-spatial.org/book/12-Interpolation.html)
 
 # 15.04.2024
 ## R
@@ -3017,6 +3032,7 @@ https://github.com/deepanshu88/ShinyEditor)
 ## DS
 - COOL! [Is Correlation Transitive? {duplicate}](https://stats.stackexchange.com/questions/181376/is-correlation-transitive)
 - COOL! [Time and Space Complexity of Hash Table operations](https://iq.opengenus.org/time-complexity-of-hash-table/)
+- [Вычисление расстояния и начального азимута между двумя точками на сфере](https://gis-lab.info/qa/great-circles.html#%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0_%D0%B3%D0%B0%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%BD%D1%83%D1%81%D0%BE%D0%B2)
 - [Расстояние между двумя точками на поверхности Земли](https://congyuzhou.medium.com/%D1%80%D0%B0%D1%81%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-%D0%B4%D0%B2%D1%83%D0%BC%D1%8F-%D1%82%D0%BE%D1%87%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B7%D0%B5%D0%BC%D0%BB%D0%B8-a398352bfbde) / Формула гаверсинуса.
 - [Clickhouse. Функции для работы с географическими координатами](https://clickhouse.com/docs/ru/sql-reference/functions/geo/coordinates/)
 - [Функции для работы с географическими координатами](https://clickhouse.com/docs/ru/sql-reference/functions/geo/coordinates/)
