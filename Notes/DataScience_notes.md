@@ -1474,8 +1474,14 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 - COOL! [Convert decimals to fractions in R](https://fracture.rossellhayes.com/)
 - [Print number as reduced fraction in R](https://stackoverflow.com/questions/5046026/print-number-as-reduced-fraction-in-r)
 - [How to convert a decimal value or a vector of decimal values to fractional form in R?](https://www.tutorialspoint.com/how-to-convert-a-decimal-value-or-a-vector-of-decimal-values-to-fractional-form-in-r) `MASS::fractions(0.14)`
+- e-book [Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/)
+- [`anova()` for clmm objects doesn’t work inside functions (looks for objects in the wrong env?) #38 {Closed}](https://github.com/runehaubo/ordinal/issues/38)
+	- COOL! [Capturing the current call](https://adv-r.hadley.nz/evaluation.html#base-evaluation)
+	- [20.6 Base evaluation](https://adv-r.hadley.nz/evaluation.html)
+- COOL! [The juicr R package](https://github.com/mjlajeunesse/juicr) is a GUI interface to automated, semi-automated, and manual tools for extracting data from scientific images
 
 ## GIS
+- [Современный подход к вычислению объемов горных и земляных работ](https://moltgeo.ru/gorn)
 - [Триангуляция Делоне](https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D0%B8%D0%B0%D0%BD%D0%B3%D1%83%D0%BB%D1%8F%D1%86%D0%B8%D1%8F_%D0%94%D0%B5%D0%BB%D0%BE%D0%BD%D0%B5)
 - [Inverse distance weighting](https://en.wikipedia.org/wiki/Inverse_distance_weighting)
 - [areal: Areal Weighted Interpolation](https://chris-prener.github.io/areal/)
@@ -1501,12 +1507,15 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 ```
 - [Remove rows in R matrix where all data is NA {duplicate}](https://stackoverflow.com/questions/6471689/remove-rows-in-r-matrix-where-all-data-is-na)
 `m[rowSums(is.na(m)) != ncol(m), ]`
+- [Extract matrix column values by matrix column name](https://stackoverflow.com/questions/5744694/extract-matrix-column-values-by-matrix-column-name)
+`myMatrix[, "A"]`
 
 ## stringdist
 - [Hirschberg's Algorithm. Edit-Distance Revisited](https://users.monash.edu/~lloyd/tildeAlgDS/Dynamic/Hirsch/)
 
 ## math
 - [smacof: Multidimensional Scaling](https://cran.r-project.org/web/packages/smacof/index.html). Implements the following approaches for multidimensional scaling (MDS) based on stress minimization using majorization (smacof)
+- COOL! [GRAPH LAYOUT STABILITY IN PROCESS MINING](https://robinmennens.github.io/Portfolio/stablegraphlayouts.html)
 
 
 # 30.03.2024
