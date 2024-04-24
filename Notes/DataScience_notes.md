@@ -1468,8 +1468,52 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 # R & MacOS
 - COOL!!! [R-universe now builds MacOS ARM64 binaries for use on Apple Silicon (aka M1/M2/M3) systems](https://ropensci.org/blog/2024/01/14/runiverse-arm64/)
 
+# 27.04.2024
+## Math
+- COOL! [Understanding UMAP](https://pair-code.github.io/understanding-umap/) by Andy Coenen, Adam Pearce | Google PAIR
+- [How to Use t-SNE Effectively](https://distill.pub/2016/misread-tsne/)
+- К T-SNE и UMAP претензия няглядно показана в этой статье [The Specious Art of Single-Cell Genomics](https://www.biorxiv.org/content/10.1101/2021.08.25.457696v1)
+
+## GIS
+Книги для работы с географическими данными в R 🌏
+
+Язык R отлично подходит для работы с пространственными данными. В R есть практически все, что нужно, начиная от необходимых типов данных, способных хранить большие объемы географических данных, заканчивая моделированием методами машинного обучения.
+
+Здесь собраны некоторые актуальные книги 📙 по пространственному анализу 🗺️, использующие язык программирования R и доступные в открытом доступе. Конечно, это далеко не все(!), но вполне достаточно чтобы войти в курс дела.
+
+Особо стоит выделить две книги Тимофея Евгеньевича Самсонова ✨, основанных на материалах курсов географического факультета МГУ им. М.В. Ломоносова, с которых я рекомендую начинать новичкам:
+
+📌 (https://tsamsonov.github.io/r-geo-course/) Визуализация и анализ географических данных на языке R (https://tsamsonov.github.io/r-geo-course/) и Пространственная статистика на языке R (https://tsamsonov.github.io/r-spatstat-course/)
+
+Книги на английском языке:
+
+📌 (https://tsamsonov.github.io/r-geo-course/) Geocomputation with R (https://r.geocompx.org/), авторы Robin Lovelace, Jakub Nowosad and Jannes Muenchow. Обратите внимание: если нажать на launch binder (https://mybinder.org/v2/gh/geocompx/geocompr/main?urlpath=rstudio) на титульной странице (https://r.geocompx.org/#reproducibility), откроется RStudio в браузере и можно воспроизвести код из книги! (+R4DS Geocomputation Book Club (https://www.youtube.com/watch?v=lDl4pcanH-w&list=PL3x6DOfs2NGju1IQd7gZ1Zmq-Y23uBX37&pp=iAQB))
+
+📌 (https://tsamsonov.github.io/r-geo-course/) Spatial Data Science With Applications in R (https://r-spatial.org/book/), авторы Edzer Pebesma and Roger Bivand (+R4DS spatial Book Club (https://www.youtube.com/watch?v=MF5XN-0n-K4&list=PL3x6DOfs2NGhADsCdfFtmaUsMglp2WDTp&pp=iAQB))
+
+📌 (https://tsamsonov.github.io/r-geo-course/) Geospatial Health Data: Modeling and Visualization with R-INLA and Shiny (https://www.paulamoraga.com/book-geospatial/), автор Paula Moraga (https://akademietforyngreforskere.no/the-letten-prize-for-2023-to-dr-paula-morega/)
+
+📌 (https://tsamsonov.github.io/r-geo-course/) Spatial Statistics for Data Science: Theory and Practice with R (https://www.paulamoraga.com/book-spatial/index.html), автор Paula Moraga
+
+📌 (https://tsamsonov.github.io/r-geo-course/) Introduction to Spatial Data Programming with R (https://geobgu.xyz/r/), автор Michael Dorman
+
+📌 (https://tsamsonov.github.io/r-geo-course/) Analyzing US Census Data: Methods, Maps, and Models in R (https://walker-data.com/census-r/), автор Kyle Walker
+
+📌 (https://tsamsonov.github.io/r-geo-course/) An Introduction to Spatial Data Analysis and Statistics: A Course in R (https://paezha.github.io/spatial-analysis-r/), автор Antonio Paez
+
+📌 (https://tsamsonov.github.io/r-geo-course/) Spatial Modelling for Data Scientists (https://gdsl-ul.github.io/san/), авторы Francisco Rowe and Dani Arribas-Bel
+
+📌 (https://tsamsonov.github.io/r-geo-course/) Introduction to urban accessibility (a practical guide with R) (https://ipeagit.github.io/intro_access_book/), авторы Rafael H. M. Pereira and Daniel Herszenhut
+
+📌 (https://tsamsonov.github.io/r-geo-course/) Intro to GIS and Spatial Analysis (https://mgimond.github.io/Spatial/index.html), автор Manuel Gimond
+
+📌 (https://tsamsonov.github.io/r-geo-course/) Geographic Data Science with R (https://bookdown.org/mcwimberly/gdswr-book/), автор Michael C. Wimberly
+
+🚀 Бонус: Awesome Geospatial R (https://github.com/sacridini/Awesome-Geospatial#r) 🌏 + CRAN Task View: Analysis of Spatial Data (https://cran.r-project.org/web/views/Spatial.html)
+
 # 22.04.2024
 # R
+- Markdown. COOL! [R Markdown Tips and Tricks #3: Time-savers & Trouble-shooters](https://posit.co/blog/r-markdown-tips-and-tricks-3-time-savers/)
 - COOL! [Code and slides for RStudio webinars](https://github.com/rstudio/webinars). resources.rstudio.com/webinars
 - COOL! [Convert decimals to fractions in R](https://fracture.rossellhayes.com/)
 - [Print number as reduced fraction in R](https://stackoverflow.com/questions/5046026/print-number-as-reduced-fraction-in-r)
