@@ -1376,8 +1376,10 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Chapter 17 Randomization, Jackknife, and Bootstrap](https://bio723-class.github.io/Bio723-book/randomization-jackknife-and-bootstrap.html)
 
 # webR
-- [How to run R code in the browser with webR](https://blog.djnavarro.net/posts/2023-04-09_webr/). In which the author gets unreasonably excited about a new thing.
+- [Making Portable CLIs With WebR](https://rud.is/books/webr-cli-book/)
+- [The Journey of Bringing webR into Shiny: Boost Performance, Improve Scalability](https://www.appsilon.com/post/bringing-webr-into-shiny)
 - Bob Rudis. [Into the WebR-Verse. Bringing the power of R to your browser and beyond](https://rud.is/w/2023-nyr-webr/)
+- [How to run R code in the browser with webR](https://blog.djnavarro.net/posts/2023-04-09_webr/). In which the author gets unreasonably excited about a new thing.
 - [Building a Single Page Application with Python and Pyodide - Part 1](https://testdriven.io/blog/build-spa-with-python-part-1/)
 
 ## duckDB
@@ -2451,6 +2453,7 @@ Also, you can temporarily change the local R options for a code chunk:
 	- [Specify column widths {#57}](https://github.com/dcomtois/summarytools/issues/57)
 - [How to get the selected max/min value (i.e. second largest/smallest) across row by dplyr](https://stackoverflow.com/questions/74124565/how-to-get-the-selected-max-min-value-i-e-second-largest-smallest-across-row)
 - [What's new in R 4.3.0?](https://www.jumpingrivers.com/blog/whats-new-r43/)
+- [What's new in R 4.4.0?](https://www.jumpingrivers.com/blog/whats-new-r44/)
 
 # 10.04.2023
 ## R
