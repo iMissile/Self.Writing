@@ -1382,6 +1382,10 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [How to run R code in the browser with webR](https://blog.djnavarro.net/posts/2023-04-09_webr/). In which the author gets unreasonably excited about a new thing.
 - [Building a Single Page Application with Python and Pyodide - Part 1](https://testdriven.io/blog/build-spa-with-python-part-1/)
 
+# Shiny for Python
+- [SQL database explorer](https://shiny.posit.co/py/templates/database-explorer/)
+
+
 ## duckDB
 - [DBeaver SQL IDE](https://duckdb.org/docs/guides/sql_editors/dbeaver.html)
 - [Querying Postgres Tables Directly From DuckDB](https://duckdb.org/2022/09/30/postgres-scanner)
@@ -1475,6 +1479,13 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 - COOL! [Understanding UMAP](https://pair-code.github.io/understanding-umap/) by Andy Coenen, Adam Pearce | Google PAIR
 - [How to Use t-SNE Effectively](https://distill.pub/2016/misread-tsne/)
 - К T-SNE и UMAP претензия няглядно показана в этой статье [The Specious Art of Single-Cell Genomics](https://www.biorxiv.org/content/10.1101/2021.08.25.457696v1)
+
+## R
+- Интересные репозитории от Andrés Felipe Quintero Moreano, рассказывающего про применение webR в Shiny
+	- [An Async Reader in R](https://github.com/ixpantia/asyncio)
+	- [Bundle Shiny Applications for serving with WebR](https://github.com/Appsilon/webr.bundle)
+- С конфы Posit::2023 [Using DuckDB-WASM and Plot.js to create fast, flexible interactive plots in Shiny apps](https://github.com/joekirincic/app02)
+- [Demonstration of using a JavaScript ServiceWorker to communicate with a running Shiny/httpuv session in webR.](https://github.com/georgestagg/shiny-standalone-webr-demo)
 
 ## GIS
 Книги для работы с географическими данными в R 🌏
