@@ -245,6 +245,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Making Portable CLIs With WebR](https://rud.is/books/webr-cli-book/)
 - [Deep R Programming](https://deepr.gagolewski.com/) by by Marek Gagolewski
 - [R for Social Network Analysis](https://schochastics.github.io/R4SNA/)
+- Basecamp. [Shape Up. Stop Running in Circles and Ship Work that Matters](https://basecamp.com/shapeup) by Ryan Singer
 
 ## e-books ML
 - [Deep Learning and Scientific Computing with R torch](https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/) by Sigrid Keydana
@@ -2249,7 +2250,6 @@ Streamlit’s architecture allows you to write apps the same way you write plain
 
 
 - COOL! [Google Fonts helper](https://gwfh.mranftl.com/fonts)
-- [fastqq](https://github.com/gumeo/fastqq) is intended for creating quantile-quantile plots.
 
 
 # 31.05.2023
@@ -2386,6 +2386,8 @@ Provides a large number of functions from numerical analysis and linear algebra,
 - [Using segmented regression to analyse world record running times](https://blog.revolutionanalytics.com/2015/12/using-segmented-regression-to-analyse-world-record-running-times.html)
 - [Breakpoint analysis, segmented regression](https://rpubs.com/MarkusLoew/12164)
 - COOL! [scan](https://jazznbass.github.io/scan/) - Single-Case Data Analyses for Single and Multiple Baseline Designs
+- А вот прям случай аппроксимации под переключения. [Piecewise linear with constraints with the segmented function on R](https://stats.stackexchange.com/questions/415993/piecewise-linear-with-constraints-with-the-segmented-function-on-r)
+- COOL! [mcp: Regression with Multiple Change Points](https://lindeloev.github.io/mcp/)
 
 # 02.05.2023
 ## R
@@ -2933,7 +2935,6 @@ more - https://bit.ly/3PE1zAO
 
 ## R
 - COOL! Много решений и концептуальных подходов. [Is there any way to break out of a foreach loop?](https://stackoverflow.com/questions/16079882/is-there-any-way-to-break-out-of-a-foreach-loop)
-- COOL! [A Q-Q Plot Dissection Kit](https://seankross.com/2016/02/29/A-Q-Q-Plot-Dissection-Kit.html)
 - COOL! [Installation of R 4.2 on Ubuntu 22.04.1 LTS and tips for spatial packages](https://rtask.thinkr.fr/installation-of-r-4-2-on-ubuntu-22-04-lts-and-tips-for-spatial-packages)
 - [Academic conference posters using {posterdown}](https://shilaan.rbind.io/post/academic-conference-posters-using-posterdown/)
 A quick guide to generating reproducible and automatically formatted conference posters in R Markdown

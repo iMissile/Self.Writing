@@ -5406,6 +5406,9 @@ Benchmark your CPU and compare against other CPUs. Also provides functions for o
 - [stephenturner/qqman](https://github.com/stephenturner/qqman). An R package for creating Q-Q and manhattan plots from GWAS results
 - [Q-Q Plots. От чайника до профессионала за один гайд](https://habr.com/ru/post/578754/)
 - COOL! [StatQuest: Quantile-Quantile (QQ) Plots, Clearly Explained!!!](https://statquest.org/2017/11/13/statquest-quantile-quantile-qq-plots-clearly-explained/)
+	- [new link](https://statquest.org/statquest-quantile-quantile-qq-plots-clearly-explained/)
+- COOL! [A Q-Q Plot Dissection Kit](https://seankross.com/2016/02/29/A-Q-Q-Plot-Dissection-Kit.html)
+- [fastqq](https://github.com/gumeo/fastqq) is intended for creating quantile-quantile plots.
 
 # 24.01.2019
 ## R
