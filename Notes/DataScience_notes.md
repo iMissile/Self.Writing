@@ -1475,6 +1475,10 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 # R & MacOS
 - COOL!!! [R-universe now builds MacOS ARM64 binaries for use on Apple Silicon (aka M1/M2/M3) systems](https://ropensci.org/blog/2024/01/14/runiverse-arm64/)
 
+# 08.05.2024
+## Viz
+- COOL! Cédric Scherer [Exploring "The Simpsons" with DataWrapper for the 30DayChartChallenge 2024](https://www.cedricscherer.com/2024/04/01/contributions-30daychartchallenge-2024/)
+
 # 27.04.2024
 ## Math
 - COOL! [Understanding UMAP](https://pair-code.github.io/understanding-umap/) by Andy Coenen, Adam Pearce | Google PAIR
