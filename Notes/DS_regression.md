@@ -1,4 +1,67 @@
 
+# Linear Regression
+## blogs
+- COOL! e-book [The Truth About Linear Regression](https://www.stat.cmu.edu/~cshalizi/TALR/)
+- [Learn by Marketing. Linear Regression in R](https://www.learnbymarketing.com/tutorials/linear-regression-in-r/)
+
+- Запускаем `lm` для кучи колонок:
+	- COOL! [Creating new Functions with Linear Regression in R](https://stackoverflow.com/questions/38175775/creating-new-functions-with-linear-regression-in-r)
+	- COOL! [Linear Regression in R without names of column](https://stackoverflow.com/questions/43004888/linear-regression-in-r-without-names-of-column)
+`debugonce(lm.fit)`
+
+- [Fitting & Interpreting Linear Models in R](http://blog.yhat.com/posts/r-lm-summary.html)
+- [Slides from my talk on the broom package](http://varianceexplained.org/r/broom-slides/)
+- [broom: a package for tidying statistical models into data frames](http://varianceexplained.org/r/broom-intro/)
+- [Estimated Simple Regression Equation](http://www.r-tutor.com/elementary-statistics/simple-linear-regression/estimated-simple-regression-equation)
+- [PARALLELIZING LINEAR REGRESSION OR USING MULTIPLE SOURCES](https://freakonometrics.hypotheses.org/53283)
+- [Machine Learning with R: A Complete Guide to Linear Regression](https://appsilon.com/r-linear-regression/)
+- COOL! Ответ Хадли. [Extract Slopes by group, Broom? Dplyr?](https://community.rstudio.com/t/extract-slopes-by-group-broom-dplyr/2751)
+```
+library(tidyverse) #for purrr, tidyr and dplyr
+library(broom)
+
+Orange %>%
+  split(.$Tree) %>%
+  map(~lm(age ~ 1 + circumference, data = .x)) %>%
+  map_df(tidy) %>%
+  filter(term == 'circumference')
+```
+- [broom: a package for tidying statistical models into data frames](http://varianceexplained.org/r/broom-intro/)
+- [QUICK GUIDE: INTERPRETING SIMPLE LINEAR MODEL OUTPUT IN R](https://feliperego.github.io/blog/2015/10/23/Interpreting-Model-Output-In-R)
+- [Interpret R Linear/Multiple Regression output (lm output point by point), also with Python](https://medium.com/@vineetjaiswal/interpret-r-linear-multiple-regression-output-lm-output-point-by-point-also-with-python-8e53b2ee2a40)
+- COOL! [Using Linear Regression for Predictive Modeling in R](https://www.dataquest.io/blog/statistical-learning-for-predictive-modeling-r/)
+- [Fitting & Interpreting Linear Models in R](http://blog.yhat.com/posts/r-lm-summary.html) by yhat | May 18, 2013
+- COOL! [How do I interpret the summary of a linear model in R?](https://www.quora.com/How-do-I-interpret-the-summary-of-a-linear-model-in-R)
+```
+In general, to interpret a (linear) model involves the following steps.
+
+1. Assess the assumptions of the model. In a linear model, we’d like to check whether there severe violations of linearity, normality, and homoskedasticity. In addition, we may want to check whether the predictors are not too severely intercorrelated (look at multicollinearity-measures such as tolerances, VIFs, or condition indices), and whether there are influential cases or outliers that unduly distort the model (look at standardized residuals, Cook’s distances, etc.)
+2. Assess the fit and significance of the model as a whole. In a linear model, we’d inspect the amount of variance explained, that is the R2 or the adjusted R2, and the ANOVA-test on the model’s significance.
+3. Assess the direction, magnitude, and significance of the individual predictors that comprise the model. In a linear model, we’d interpret the direction and magnitude of the predictors directly via the b-coefficients, that is: “a one unit increase on X1 predicts an increase of b1 on Y”, etc. Note that in non-linear models such as models that contain quadratic terms or interaction effects, the interpretation of effects is trickier. Finally, for any term, it’s significance can be interpreted via p-values reported in the output.
+```
+- [R Tensorflow Multiple Linear Regression](https://blog.alpha-analysis.com/2019/08/r-tensorflow-multiple-linear-regression.html)
+- [Many ways to do the same thing: linear regression](https://statisticaloddsandends.wordpress.com/2019/04/08/many-ways-to-do-the-same-thing-linear-regression/)
+- [Pushing Ordinary Least Squares to the limit with Xy()](https://www.statworx.com/de/blog/pushing-ordinary-least-squares-to-the-limit-with-xy/)
+- COOL! [Forecast double seasonal time series with multiple linear regression in R](https://petolau.github.io/Forecast-double-seasonal-time-series-with-multiple-linear-regression-in-R/)
+
+## ols
+- [Are linear regression and least squares regression necessarily the same thing?](https://stats.stackexchange.com/questions/523708/are-linear-regression-and-least-squares-regression-necessarily-the-same-thing)
+- [Understanding Ordinary Least Squares (OLS) Regression](https://builtin.com/data-science/ols-regression)
+Linear regression is employed in supervised machine learning tasks. OLS regression can be used to obtain a straight line as close as possible to your data points.
+
+## fixed slope
+- [Linear regression with specified slope](https://stackoverflow.com/questions/33292969/linear-regression-with-specified-slope)
+- [set slope to 1 in linear regression in r {closed}](https://stats.stackexchange.com/questions/158821/set-slope-to-1-in-linear-regression-in-r)
+- [Linear fit with a previously known slope {duplicate}](https://stackoverflow.com/questions/20709432/linear-fit-with-a-previously-known-slope)
+
+## fixed interception
+- [Regression with fixed intercept](https://stats.stackexchange.com/questions/393414/regression-with-fixed-intercept)
+- [Linear Regression with a known fixed intercept in R](https://stackoverflow.com/questions/7333203/linear-regression-with-a-known-fixed-intercept-in-r)
+
+## viz
+- [ggside: Plot Linear Regression using Marginal Distributions (ggplot2 extension)](https://www.business-science.io/code-tools/2021/05/18/marginal_distributions.html)
+
+
 # 18.09.2023
 - [mixedup](https://m-clark.github.io/mixedup/index.html). a package for extracting clean results from mixed models
 - [LME4 Tutorial: Popularity Data](https://www.rensvandeschoot.com/tutorials/lme4/)

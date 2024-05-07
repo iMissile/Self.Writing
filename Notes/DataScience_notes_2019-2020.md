@@ -21,7 +21,6 @@
 - [How to convert fitdistrplus::fitdist summary into tidy format?](https://stackoverflow.com/questions/51434417/how-to-convert-fitdistrplusfitdist-summary-into-tidy-format)
 - COOL! [Survival Analysis - Fitting Weibull Models for Improving Device Reliability in R](https://rileyking.netlify.app/post/bayesian-modeling-of-censored-and-uncensored-fatigue-data-in-r/)
 - [Use fitdist parameters in variables](https://stats.stackexchange.com/questions/23539/use-fitdist-parameters-in-variables)
-- [Machine Learning with R: A Complete Guide to Linear Regression](https://appsilon.com/r-linear-regression/)
 
 # 23.12.2020
 ## R
@@ -32,7 +31,7 @@
 - [How to create color-coded calendars in R](https://www.infoworld.com/article/3331605/how-to-create-color-coded-calendars-in-r.html)
 
 ## Survival
-- [reconstructKM](https://cran.r-project.org/web/packages/reconstructKM/index.html): Reconstruct Individual-Level Data from Published KM Plots]
+- [reconstructKM](https://cran.r-project.org/web/packages/reconstructKM/index.html): Reconstruct Individual-Level Data from Published KM Plots
 
 ## linux
 - [The Definitive Guide to Bash Command Line History](https://catonmat.net/the-definitive-guide-to-bash-command-line-history)
@@ -2699,7 +2698,6 @@ This repo was created at rOpenSci #ozunconf19 at University of Sydney Dec 11-13 
 # 13.12.2019
 ## R
 - [data.table and parallel computing](https://stackoverflow.com/questions/14759905/data-table-and-parallel-computing)
-- [PARALLELIZING LINEAR REGRESSION OR USING MULTIPLE SOURCES](https://freakonometrics.hypotheses.org/53283)
 - [future.apply - Parallelize Any Base R Apply Function](https://www.jottr.org/2018/06/23/future.apply_1.0.0/)
 - Есть большие нюансы по применению lm вместе в lapply. [Using lapply and the lm function together in R](https://stackoverflow.com/questions/44735052/using-lapply-and-the-lm-function-together-in-r).
 	- [lapply lm r. Advanced R, Second Edition](https://books.google.ru/books?id=5PycDwAAQBAJ&pg=PA222&lpg=PA222&dq=lapply+lm+r&source=bl&ots=2khHY3DPMG&sig=ACfU3U1a2JZPxRAJaG9kCEdjqDYin_UNyQ&hl=ru&sa=X&ved=2ahUKEwibjqSV8bLmAhVhhosKHYbiDq0Q6AEwBHoECAkQAQ#v=onepage&q=lapply%20lm%20r&f=false)
@@ -2818,34 +2816,8 @@ Functions to set CPU and/or elapsed time limits for top-level computations or th
 
 
 # 22.11.2019
-## R. Modelling
-- COOL! Ответ Хадли. [Extract Slopes by group, Broom? Dplyr?](https://community.rstudio.com/t/extract-slopes-by-group-broom-dplyr/2751)
-```
-library(tidyverse) #for purrr, tidyr and dplyr
-library(broom)
-
-Orange %>%
-  split(.$Tree) %>%
-  map(~lm(age ~ 1 + circumference, data = .x)) %>%
-  map_df(tidy) %>%
-  filter(term == 'circumference')
-```
-- [broom: a package for tidying statistical models into data frames](http://varianceexplained.org/r/broom-intro/)
-
 ## R
 - [For datasets with many columns, skimr v2 does not behave as documented {#376}](https://github.com/ropensci/skimr/issues/376)
-- [QUICK GUIDE: INTERPRETING SIMPLE LINEAR MODEL OUTPUT IN R](https://feliperego.github.io/blog/2015/10/23/Interpreting-Model-Output-In-R)
-- [Interpret R Linear/Multiple Regression output (lm output point by point), also with Python](https://medium.com/@vineetjaiswal/interpret-r-linear-multiple-regression-output-lm-output-point-by-point-also-with-python-8e53b2ee2a40)
-- COOL! [Using Linear Regression for Predictive Modeling in R](https://www.dataquest.io/blog/statistical-learning-for-predictive-modeling-r/)
-- [Fitting & Interpreting Linear Models in R](http://blog.yhat.com/posts/r-lm-summary.html) by yhat | May 18, 2013
-- COOL! [How do I interpret the summary of a linear model in R?](https://www.quora.com/How-do-I-interpret-the-summary-of-a-linear-model-in-R)
-```
-In general, to interpret a (linear) model involves the following steps.
-
-1. Assess the assumptions of the model. In a linear model, we’d like to check whether there severe violations of linearity, normality, and homoskedasticity. In addition, we may want to check whether the predictors are not too severely intercorrelated (look at multicollinearity-measures such as tolerances, VIFs, or condition indices), and whether there are influential cases or outliers that unduly distort the model (look at standardized residuals, Cook’s distances, etc.)
-2. Assess the fit and significance of the model as a whole. In a linear model, we’d inspect the amount of variance explained, that is the R2 or the adjusted R2, and the ANOVA-test on the model’s significance.
-3. Assess the direction, magnitude, and significance of the individual predictors that comprise the model. In a linear model, we’d interpret the direction and magnitude of the predictors directly via the b-coefficients, that is: “a one unit increase on X1 predicts an increase of b1 on Y”, etc. Note that in non-linear models such as models that contain quadratic terms or interaction effects, the interpretation of effects is trickier. Finally, for any term, it’s significance can be interpreted via p-values reported in the output.
-```
 
 # xaringan
 - [xaringan Tip: Add A Logo to All of Your Slides](https://www.garrickadenbuie.com/blog/xaringan-tip-logo-all-slides/). Here’s a quick tip to help solve a common xaringan problem: adding a logo to all of your slides.
@@ -3587,7 +3559,6 @@ scales::scientific(numb, digits = 3)
 
 # 29.08.2019
 ## R
-- [R Tensorflow Multiple Linear Regression](https://blog.alpha-analysis.com/2019/08/r-tensorflow-multiple-linear-regression.html)
 - [THE R FACTOR](https://www.mango-solutions.com/blog/the-r-factor)
 - Hadley Wickham [What’s next for the popular programming language R?](https://qz.com/1661487/hadley-wickham-on-the-future-of-r-python-and-the-tidyverse/)
 
@@ -4763,7 +4734,6 @@ Some people, when faced with a problem, think, “I know, I’ll use binary.” 
 ## R
 - [r-lib/crayon](https://github.com/r-lib/crayon). R package for colored terminal output
 - COOL! [Winners of the 1st Shiny Contest](https://blog.rstudio.com/2019/04/05/first-shiny-contest-winners/)
-- [Many ways to do the same thing: linear regression](https://statisticaloddsandends.wordpress.com/2019/04/08/many-ways-to-do-the-same-thing-linear-regression/)
 - [Coke vs. Pepsi? data.table vs. tidy? Examining Consumption Preferences for Data Scientists](https://r-posts.com/coke-vs-pepsi-data-table-vs-tidy-examining-consumption-preferences-for-data-scientists/)
 - COOL! [Martingale strategies don’t work, but we knew that – Simulation analysis in R](http://gradientdescending.com/martingale-strategies-dont-work-but-we-knew-that-simulation-analysis-in-r/)
 - [What are the Popular R Packages?](http://www.win-vector.com/blog/2019/04/what-are-the-popular-r-packages/)

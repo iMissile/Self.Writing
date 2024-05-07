@@ -330,6 +330,16 @@ shape: (1, 5)
 - [R and Python Together in Jupyter Notebooks](https://www.joveactuarial.com/r-and-python-working-together/)
 - [ReactPy](https://reactpy.dev/docs/index.html). ReactPy is a library for building user interfaces in Python without Javascript.
 
+# Package Managers
+- [Poetry](https://python-poetry.org/). Python packaging and dependency management made easy
+- [Python Package Manager Comparison](https://dev.to/adamghill/python-package-manager-comparison-1g98)
+
+# 07.05.2024
+- [Installing gdal for beginners](https://mapscaping.com/installing-gdal-for-beginners/)
+- [How to Install GDAL for Python with pip on Windows](https://opensourceoptions.com/how-to-install-gdal-for-python-with-pip-on-windows/)
+- [Geospatial library wheels for Python on Windows](https://github.com/cgohlke/geospatial-wheels)
+- [GDAL 3.8.5](https://pypi.org/project/GDAL/)
+
 # 04.03.2024
 - [Ten Python datetime pitfalls, and what libraries are (not) doing about it](https://dev.arie.bovenberg.net/blog/python-datetime-pitfalls/)
 - [How to find all the functions that has been *used* in a python script?](https://stackoverflow.com/questions/73095952/how-to-find-all-the-functions-that-has-been-used-in-a-python-script)
@@ -439,7 +449,6 @@ int(str, base)
 - [Packing and Unpacking Arguments in Python](https://www.geeksforgeeks.org/packing-and-unpacking-arguments-in-python/)
 
 # 27.09.2023
-- [Poetry](https://python-poetry.org/). Python packaging and dependency management made easy
 - Multiple list comprehension:
 	- [How to Flatten a List of Lists in Python](https://realpython.com/python-flatten-list/)
 - [How to check if a list is empty in Python?](https://flexiple.com/python/check-if-list-is-empty-python)

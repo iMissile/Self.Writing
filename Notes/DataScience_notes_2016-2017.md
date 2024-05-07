@@ -6140,11 +6140,6 @@ with_config(use_proxy(...), install_github(...))
 
 # 15.06.16
 ## R
-- Linear Regression
-	- [Fitting & Interpreting Linear Models in R](http://blog.yhat.com/posts/r-lm-summary.html)
-	- [Slides from my talk on the broom package](http://varianceexplained.org/r/broom-slides/)
-	- [broom: a package for tidying statistical models into data frames](http://varianceexplained.org/r/broom-intro/)
-	- [Estimated Simple Regression Equation](http://www.r-tutor.com/elementary-statistics/simple-linear-regression/estimated-simple-regression-equation)
 - [Size of each object in R’s workspace](http://isomorphism.es/post/92559575719/size-of-each-object-in-rs-workspace)
 
 # 14.06.16

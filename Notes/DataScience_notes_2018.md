@@ -1405,10 +1405,7 @@ get_os <- function() {
 
 # 02.07.2018
 ## R
-- COOL! [Forecast double seasonal time series with multiple linear regression in R](https://petolau.github.io/Forecast-double-seasonal-time-series-with-multiple-linear-regression-in-R/)
-- COOL! [Doing magic and analyzing seasonal time series with GAM (Generalized Additive Model) in R](https://petolau.github.io/Analyzing-double-seasonal-time-series-with-GAM-in-R/)
 - [modelDown: a website generator for your predictive models](http://smarterpoland.pl/index.php/2018/06/modeldown-a-website-generator-for-your-predictive-models/)
-- [Pushing Ordinary Least Squares to the limit with Xy()](https://www.statworx.com/de/blog/pushing-ordinary-least-squares-to-the-limit-with-xy/)
 - [A Comparative Review of the Rattle GUI for R](http://r4stats.com/2018/07/02/a-comparative-review-of-the-rattle-gui-for-r/)
 - COOL! [Factfulness: Building Gapminder Income Mountains](http://staff.math.su.se/hoehle/blog/2018/07/02/factfulness.html)
 - [Handling Outliers with R](https://madstatbr.wordpress.com/2018/07/02/handling-outliers-with-r/)

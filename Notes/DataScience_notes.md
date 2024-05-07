@@ -1479,6 +1479,10 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 ## Viz
 - COOL! Cédric Scherer [Exploring "The Simpsons" with DataWrapper for the 30DayChartChallenge 2024](https://www.cedricscherer.com/2024/04/01/contributions-30daychartchallenge-2024/)
 
+## DB
+- [DBI for R](https://r-dbi.org/)
+R’s interface to databases, with a testable and human-readable specification, a selection of backend packages to connect with various databases, and a boilerplate for developing new backends.
+
 # 27.04.2024
 ## Math
 - COOL! [Understanding UMAP](https://pair-code.github.io/understanding-umap/) by Andy Coenen, Adam Pearce | Google PAIR
@@ -3196,7 +3200,6 @@ tryCatch(
 
 # 08.06.2022
 - COOL! [Practical Statistics for Data Scientists: 50+ Essential Concepts Using R and Python](https://github.com/gedeck/practical-statistics-for-data-scientists/)
-- COOL! e-book [The Truth About Linear Regression](https://www.stat.cmu.edu/~cshalizi/TALR/)
 
 ## RuleFit, Business Rules
 - [imodels](https://github.com/csinva/imodels). Interpretable ML package 🔍 for concise, transparent, and accurate predictive modeling (sklearn-compatible).
@@ -3372,11 +3375,6 @@ Can you measure the magnetic interactions between a pair of atoms? 3rd solution 
 # 16.05.2022
 - [Faster R package installation](https://www.jumpingrivers.com/blog/faster-r-package-installation-rstudio/)
 - [Binary R Packages for Linux: Past, Present and Future](https://arxiv.org/pdf/2103.08069.pdf) by Iñaki Ucar and Dirk Eddelbuettel
-- [Learn by Marketing. Linear Regression in R](https://www.learnbymarketing.com/tutorials/linear-regression-in-r/)
-- Запускаем `lm` для кучи колонок:
-	- COOL! [Creating new Functions with Linear Regression in R](https://stackoverflow.com/questions/38175775/creating-new-functions-with-linear-regression-in-r)
-	- COOL! [Linear Regression in R without names of column](https://stackoverflow.com/questions/43004888/linear-regression-in-r-without-names-of-column)
-`debugonce(lm.fit)`
 
 # 04.05.2022
 ## R
@@ -3640,6 +3638,10 @@ From: Computational Methods in Engineering, 2014
 - [Plotting output of GAM model](https://stackoverflow.com/questions/67077306/plotting-output-of-gam-model)
 - [Quick modeling of power load of Dominion Virginia Power](https://rpubs.com/DarrenKeeley/504432). Two models will be fit and compared for forecasting: TBATS, an automatic procedure, and then a GAM
 - [Error in `gam` function in `names(x) <- value`: 'names' attribute must be the same length as the vector](https://stackoverflow.com/questions/54033437/error-in-gam-function-in-namesx-value-names-attribute-must-be-the-same-l)
+- COOL! [GAMbler](https://ecogambler.netlify.app/blog/).
+This is a growing collection of interesting and (hopefully) useful tips for ecological modeling, with (perhaps too much) emphasis on Generalized Additive Models.
+- COOL! [Doing magic and analyzing seasonal time series with GAM (Generalized Additive Model) in R](https://petolau.github.io/Analyzing-double-seasonal-time-series-with-GAM-in-R/)
+
 
 ## Linear Mixed Models
 - [INTRODUCTION TO LINEAR MIXED MODELS](https://ourcodingclub.github.io/tutorials/mixed-models/)
