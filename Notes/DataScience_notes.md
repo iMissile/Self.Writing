@@ -1495,6 +1495,11 @@ R’s interface to databases, with a testable and human-readable specification, 
 	- [Bundle Shiny Applications for serving with WebR](https://github.com/Appsilon/webr.bundle)
 - С конфы Posit::2023 [Using DuckDB-WASM and Plot.js to create fast, flexible interactive plots in Shiny apps](https://github.com/joekirincic/app02)
 - [Demonstration of using a JavaScript ServiceWorker to communicate with a running Shiny/httpuv session in webR.](https://github.com/georgestagg/shiny-standalone-webr-demo)
+- Вопрос от Тараса, но там есть про rules, выцепляемые с ramdomForest. [How to force a model to use a variable](https://stackoverflow.com/questions/78450279/how-to-force-a-model-to-use-a-variable)
+- `$` partial matching
+	- [Aside from partial matching, can the $ operator do anything that `[` and `[[` cannot?](https://stackoverflow.com/questions/66466866/aside-from-partial-matching-can-the-operator-do-anything-that-and-cannot)
+	- [Extract {base}](https://stat.ethz.ch/R-manual/R-patched/library/base/html/Extract.html) Extract or Replace Parts of an Object
+	- [Advanced R. 4.3.2 $](https://adv-r.hadley.nz/subsetting.html?q=partial#section-1). `options(warnPartialMatchDollar = TRUE)`
 
 ## GIS
 Книги для работы с географическими данными в R 🌏
@@ -3641,22 +3646,13 @@ From: Computational Methods in Engineering, 2014
 - COOL! [GAMbler](https://ecogambler.netlify.app/blog/).
 This is a growing collection of interesting and (hopefully) useful tips for ecological modeling, with (perhaps too much) emphasis on Generalized Additive Models.
 - COOL! [Doing magic and analyzing seasonal time series with GAM (Generalized Additive Model) in R](https://petolau.github.io/Analyzing-double-seasonal-time-series-with-GAM-in-R/)
+- Gavin Simpson blog
+	- [Modelling seasonal data with GAMs](https://fromthebottomoftheheap.net/2014/05/09/modelling-seasonal-data-with-gam/)
+	- [Additive modelling and the HadCRUT3v global mean temperature series](https://fromthebottomoftheheap.net/2011/06/12/additive-modelling-and-the-hadcrut3v-global-mean-temperature-series/)
+	- [Smoothing temporally correlated data](https://fromthebottomoftheheap.net/2011/07/21/smoothing-temporally-correlated-data/)
+	- [Identifying periods of change in time series with GAMs](https://fromthebottomoftheheap.net/2014/05/15/identifying-periods-of-change-with-gams/)
+	- COOL! [Extrapolating with B splines and GAMs](https://fromthebottomoftheheap.net/2020/06/03/extrapolating-with-gams/)
 
-
-## Linear Mixed Models
-- [INTRODUCTION TO LINEAR MIXED MODELS](https://ourcodingclub.github.io/tutorials/mixed-models/)
-- [Mixed Models](https://m-clark.github.io/mixed-models-with-R/random_intercepts.html)
-- [Using random effects in GAMs with mgcv](https://fromthebottomoftheheap.net/2021/02/02/random-effects-in-gams/)
-
-## Logistic distribution
-- [The Logistic Distribution](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/Logistic.html)
-- [Logistic Distribution in R (4 Examples) | dlogis, plogis, qlogis & rlogis Functions](https://statisticsglobe.com/logistic-distribution-in-r-dlogis-plogis-qlogis-rlogis)
-
-
-## Splines
-- [Spline Regression in R](https://medium.com/analytics-vidhya/spline-regression-in-r-960ca82aa62c)
-- [2 Piecewise Regression and Splines](https://bookdown.org/tpinto_home/Beyond-Linearity/piecewise-regression-and-splines.html)
-- [How to Perform Piecewise Regression in R (Step-by-Step)](https://www.statology.org/piecewise-regression-in-r/)
 
 
 # 04.02.2022

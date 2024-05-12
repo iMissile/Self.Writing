@@ -1523,7 +1523,6 @@ Tools are provided to create plural, singular and regular forms of English words
 - COOL! [Improved Clipping in the R Graphics Engine](https://www.stat.auckland.ac.nz/~paul/Reports/GraphicsEngine/r-clipping/r-clipping.html)
 - [Building a search page over large documente dataset based in elasticsearch](https://rafaelmenmell.netlify.app/2020/06/08/building-a-search-page-over-large-documente-dataset-based-in-elasticsearch/)
 - Хороший обучающий пример. [Expressing size in bananas a dive into {vctrs}](https://blog.rmhogervorst.nl/blog/2020/06/08/expressing-size-in-bananas-a-dive-into-vctrs/)
-- COOL! [Extrapolating with B splines and GAMs](https://fromthebottomoftheheap.net/2020/06/03/extrapolating-with-gams/)
 - COOL! [(JUST RELEASED) timetk 2.0.0: Visualize Time Series Data in 1-Line of Code](https://www.business-science.io/code-tools/2020/06/05/timetk-vesion-2-announcement.html)
 - [A slice tour for finding hollowness in high-dimensional data](https://amstat.tandfonline.com/doi/abs/10.1080/10618600.2020.1777140)
 - [R dyplr: Get index of column by its name](https://stackoverflow.com/questions/35768451/r-dyplr-get-index-of-column-by-its-name/35768651)

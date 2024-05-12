@@ -62,8 +62,13 @@ Linear regression is employed in supervised machine learning tasks. OLS regressi
 - [ggside: Plot Linear Regression using Marginal Distributions (ggplot2 extension)](https://www.business-science.io/code-tools/2021/05/18/marginal_distributions.html)
 
 
+## Splines
+- [Spline Regression in R](https://medium.com/analytics-vidhya/spline-regression-in-r-960ca82aa62c)
+- [2 Piecewise Regression and Splines](https://bookdown.org/tpinto_home/Beyond-Linearity/piecewise-regression-and-splines.html)
+- [How to Perform Piecewise Regression in R (Step-by-Step)](https://www.statology.org/piecewise-regression-in-r/)
+
+
 # 18.09.2023
-- [mixedup](https://m-clark.github.io/mixedup/index.html). a package for extracting clean results from mixed models
 - [LME4 Tutorial: Popularity Data](https://www.rensvandeschoot.com/tutorials/lme4/)
 - COOL! Тут всякие новомодные концепты разбираются в глаголах tidyverse. [How to perform group-wise linear regression for a data frame in R](https://community.rstudio.com/t/how-to-perform-group-wise-linear-regression-for-a-data-frame-in-r/158783)
 - [Multiple linear regression made simple](https://statsandr.com/blog/multiple-linear-regression-made-simple/)
@@ -71,10 +76,19 @@ Linear regression is employed in supervised machine learning tasks. OLS regressi
 - [Standard error of the regression](https://statisticsbyjim.com/glossary/standard-error-regression/) by Jim Frost. Approximately 95% of the observations should fall within plus/minus 2*standard error of the regression from the regression line, which is also a quick approximation of a 95% prediction interval.
 - [Regression Analysis: How to Interpret S, the Standard Error of the Regression](https://blog.minitab.com/en/adventures-in-statistics-2/regression-analysis-how-to-interpret-s-the-standard-error-of-the-regression)
 
-# 17.09.2023
+## Logistic distribution
+- [The Logistic Distribution](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/Logistic.html)
+- [Logistic Distribution in R (4 Examples) | dlogis, plogis, qlogis & rlogis Functions](https://statisticsglobe.com/logistic-distribution-in-r-dlogis-plogis-qlogis-rlogis)
+
+
+## Linear Mixed Effect Model (aka Hierarchical Modeling)
 - COOL! сделана отличная анимация на react-е для пояснения принципов. [An Introduction to Hierarchical Modeling](https://mfviz.com/hierarchical-models/).
 This visual explanation introduces the statistical concept of Hierarchical Modeling, also known as _Mixed Effects Modeling_ or by these other terms. This is an approach for modeling nested data. Keep reading to learn how to translate an understanding of your data into a hierarchical model specification.
 	- Hierarchical Models. [Исходный код для расчетов](https://github.com/mkfreeman/hierarchical-models/)
+- [Mixed Models with R](https://m-clark.github.io/mixed-models-with-R/) by Michael Clark
+- [mixedup](https://m-clark.github.io/mixedup/index.html). a package for extracting clean results from mixed models
+- [INTRODUCTION TO LINEAR MIXED MODELS](https://ourcodingclub.github.io/tutorials/mixed-models/)
+- [Using random effects in GAMs with mgcv](https://fromthebottomoftheheap.net/2021/02/02/random-effects-in-gams/)
 
 
 ## R formulae
