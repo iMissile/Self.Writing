@@ -1,3 +1,8 @@
+# 15.05.2024
+Разбираемся как из системы уравнений получать одно, развертывая подстановки.
+- [Substitution of an expression into another expression](https://mathematica.stackexchange.com/questions/195396/substitution-of-an-expression-into-another-expression)
+- [Eliminate [{x = 2cos(t)/(1+a sin(t)), y = 2sin(t)/(1+a sin(t))},t]](https://www.wolframalpha.com/input?i=Eliminate+%5B%7Bx+%3D+2cos%28t%29%2F%281%2Ba+sin%28t%29%29%2C+y+%3D+2sin%28t%29%2F%281%2Ba+sin%28t%29%29%7D%2Ct%5D)
+
 # 14.03.2024
 - Хитро же рисуют модуль в Математике! [Absolute value's vertical bar symbol in Text cell formula](https://mathematica.stackexchange.com/questions/171753/absolute-values-vertical-bar-symbol-in-text-cell-formula)
 If you want to type the expression into a cell, use `Esc l | Esc` instead of just `|` for the left side of the absolute value expression, and similarly `Esc r | Esc` instead of `|` for the right side. 

@@ -329,6 +329,7 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 	- [Unable to initiate png device Rnotebook(https://community.rstudio.com/t/unable-to-initiate-png-device-rntebook/3658)
 	- [Error : Unable to start png() device](https://stackoverflow.com/questions/45113597/error-unable-to-start-png-device?)
 	- [Rstudio Global Changes: show chunk output in console via CLI?](https://stackoverflow.com/questions/48110571/rstudio-global-changes-show-chunk-output-in-console-via-cli)
+- [ggplot2 2.2.0](https://posit.co/blog/ggplot2-2-2-0/), 2016-11-14. Тут много про размещение и настройку осей.
 - [ggplot2 3.3.0. More control over aesthetic evaluation](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/#more-control-over-aesthetic-evaluation)
 - [ggplot2 3.5.0](https://www.tidyverse.org/blog/2024/02/ggplot2-3-5-0/)
 - [ggplot2 3.5.0: Legends](https://www.tidyverse.org/blog/2024/02/ggplot2-3-5-0-legends/)

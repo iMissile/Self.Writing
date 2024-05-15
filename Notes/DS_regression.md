@@ -53,6 +53,11 @@ Linear regression is employed in supervised machine learning tasks. OLS regressi
 - [Linear regression with specified slope](https://stackoverflow.com/questions/33292969/linear-regression-with-specified-slope)
 - [set slope to 1 in linear regression in r {closed}](https://stats.stackexchange.com/questions/158821/set-slope-to-1-in-linear-regression-in-r)
 - [Linear fit with a previously known slope {duplicate}](https://stackoverflow.com/questions/20709432/linear-fit-with-a-previously-known-slope)
+- [Set one or more of coefficients to a specific integer](https://stackoverflow.com/questions/10027664/set-one-or-more-of-coefficients-to-a-specific-integer)
+```
+df<-data.frame(aa=1:6,bb=2:7,cc=c(4,2,7,5,8,3))
+lm(cc ~ aa + offset(647*bb), data = df)
+```
 
 ## fixed interception
 - [Regression with fixed intercept](https://stats.stackexchange.com/questions/393414/regression-with-fixed-intercept)

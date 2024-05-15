@@ -359,6 +359,9 @@ This is an important distinction. When you install conda, it brings its own vers
 
 And as always, make sure to save the installation commands with version-locked dependencies for both conda and pip for every project where they are used.
 
+# 17.05.2024
+- [GluonTS is a Python package for probabilistic time series modeling, focusing on deep learning based models, based on PyTorch and MXNet.](https://ts.gluon.ai/stable/)
+- [AutoGluon](https://auto.gluon.ai/stable/index.html) Fast and Accurate ML in 3 Lines of Code
 
 # 07.05.2024
 - [Installing gdal for beginners](https://mapscaping.com/installing-gdal-for-beginners/)

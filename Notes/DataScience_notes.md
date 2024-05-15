@@ -246,6 +246,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Deep R Programming](https://deepr.gagolewski.com/) by by Marek Gagolewski
 - [R for Social Network Analysis](https://schochastics.github.io/R4SNA/)
 - Basecamp. [Shape Up. Stop Running in Circles and Ship Work that Matters](https://basecamp.com/shapeup) by Ryan Singer
+- Home page for the book [Regression and Other Stories](https://avehtari.github.io/ROS-Examples/) by Andrew Gelman, Jennifer Hill, and Aki Vehtari, including the code and data for the examples.
 
 ## e-books ML
 - [Deep Learning and Scientific Computing with R torch](https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/) by Sigrid Keydana
@@ -1382,6 +1383,9 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - Bob Rudis. [Into the WebR-Verse. Bringing the power of R to your browser and beyond](https://rud.is/w/2023-nyr-webr/)
 - [How to run R code in the browser with webR](https://blog.djnavarro.net/posts/2023-04-09_webr/). In which the author gets unreasonably excited about a new thing.
 - [Building a Single Page Application with Python and Pyodide - Part 1](https://testdriven.io/blog/build-spa-with-python-part-1/)
+- Slides! [Dynamic Interactions for R and Python Using Quarto and WebAssembly](https://talks.thecoatlessprofessor.com/stats352-guest-lectures-on-dynamic-interactions-wasm/day01a-wasm.html#/title-slide) by James Balamuta, May 1, 2024
+
+
 
 # Shiny for Python
 - [SQL database explorer](https://shiny.posit.co/py/templates/database-explorer/)
@@ -1475,6 +1479,12 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 # R & MacOS
 - COOL!!! [R-universe now builds MacOS ARM64 binaries for use on Apple Silicon (aka M1/M2/M3) systems](https://ropensci.org/blog/2024/01/14/runiverse-arm64/)
 
+# 17.05.2024
+## DS
+- [Грэм, Пол](https://ru.wikipedia.org/wiki/%D0%93%D1%80%D1%8D%D0%BC,_%D0%9F%D0%BE%D0%BB)
+	- Парадокс Блаба» описан в очерке «Побеждая посредственность
+	- Иерархия аргументов в споре («Пирамида Грэма»)
+
 # 08.05.2024
 ## Viz
 - COOL! Cédric Scherer [Exploring "The Simpsons" with DataWrapper for the 30DayChartChallenge 2024](https://www.cedricscherer.com/2024/04/01/contributions-30daychartchallenge-2024/)
@@ -1500,6 +1510,7 @@ R’s interface to databases, with a testable and human-readable specification, 
 	- [Aside from partial matching, can the $ operator do anything that `[` and `[[` cannot?](https://stackoverflow.com/questions/66466866/aside-from-partial-matching-can-the-operator-do-anything-that-and-cannot)
 	- [Extract {base}](https://stat.ethz.ch/R-manual/R-patched/library/base/html/Extract.html) Extract or Replace Parts of an Object
 	- [Advanced R. 4.3.2 $](https://adv-r.hadley.nz/subsetting.html?q=partial#section-1). `options(warnPartialMatchDollar = TRUE)`
+- [R Waters My Garden](https://niemannross.com/2024/03/24/r-waters-my-garden/)
 
 ## GIS
 Книги для работы с географическими данными в R 🌏
@@ -2049,6 +2060,8 @@ Download ‘Google’ fonts (via google-webfonts-helper) and generate CSS to use
 	- [Publishing Shiny App Package with www/ Folder](https://forum.posit.co/t/publishing-shiny-app-package-with-www-folder/157170)
 	- [Shiny app as a package - directory structure and www folder](https://forum.posit.co/t/shiny-app-as-a-package-directory-structure-and-www-folder/135323)
 - [Column visibility in DT in a shiny app](https://forum.posit.co/t/column-visibility-in-dt-in-a-shiny-app/124696)
+- [shinyFiles](https://github.com/thomasp85/shinyFiles)
+This package extends the functionality of shiny by providing an API for client side access to the server file system. 
 
 ### shiny + parallel + progress
 - [Using standard R shiny progress bar in parallel foreach calculations](https://stackoverflow.com/questions/54532486/using-standard-r-shiny-progress-bar-in-parallel-foreach-calculations)
@@ -2515,6 +2528,7 @@ out <- paste0(sst[c(TRUE, FALSE)], sst[c(FALSE, TRUE)])
 - [Julia Silge blog](https://juliasilge.com/blog/), [video](https://www.youtube.com/JuliaSilge)
 - [Andrew Couch](https://www.youtube.com/@AndrewCouch/videos)
 - [Пошаговое введение от авторов tidymodels](https://www.tidymodels.org/start/models/)
+- [Неплохие статьи](https://jameshwade.com/#category=modeling), которые написал James H Wade с использованием `brulee`.
 
 ## R & ML
 - COOL! [Настройка рабочей среды для deep learning в Ubuntu 18](http://biostat-r.blogspot.com/2018/08/deep-learning-ubuntu-18.html)
