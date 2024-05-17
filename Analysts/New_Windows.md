@@ -78,6 +78,13 @@ copy file1.txt^
  file2.txt
 ```
 - [Windows Command Prompt: How to pass multi-line string parameters](https://stackoverflow.com/questions/11948025/windows-command-prompt-how-to-pass-multi-line-string-parameters)
+- [Change working directory to network share](https://superuser.com/questions/1014248/change-working-directory-to-network-share)
+	Solution: Use `pushd` or use PowerShell where `cd \\Server\path`.
+	Alternate Solution: Map the UNC path to a drive letter. `net use Y: \\myServer\myShare`
+- [How to recursively list files (and only files) in Windows Command Prompt?](https://superuser.com/questions/1010287/how-to-recursively-list-files-and-only-files-in-windows-command-prompt) `dir /A-D /S /B`
+- [Is it possible to get a recursive directory listing with details in Windows?](https://superuser.com/questions/1631829/is-it-possible-to-get-a-recursive-directory-listing-with-details-in-windows)
+`for /f %F in ('dir /s /r /b /a-d *.*') do @echo %~zF %F`
+`for /f %F in ('dir /s /b /a-d') do @echo %~zF %F`
 
 
 # Переход на SSD

@@ -1484,6 +1484,11 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 - [Грэм, Пол](https://ru.wikipedia.org/wiki/%D0%93%D1%80%D1%8D%D0%BC,_%D0%9F%D0%BE%D0%BB)
 	- Парадокс Блаба» описан в очерке «Побеждая посредственность
 	- Иерархия аргументов в споре («Пирамида Грэма»)
+	
+## R
+- COOL! [nanonext](https://shikokuchuo.net/nanonext/)
+R binding for NNG (Nanomsg Next Gen), a successor to ZeroMQ. NNG is a socket library implementing ‘Scalability Protocols’, a reliable, high-performance standard for common communications patterns including publish/subscribe, request/reply and service discovery, over in-process, IPC, TCP, WebSocket and secure TLS transports.
+- COOL! [mirai](https://shikokuchuo.net/mirai/index.html) Minimalist Async Evaluation Framework for R. Lightweight parallel code execution and distributed computing.
 
 # 08.05.2024
 ## Viz

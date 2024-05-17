@@ -85,6 +85,7 @@ cp- Используем команду `cp` для ручного управл�
 - [Windows for a Linux guy](https://dev.to/azure/windows-for-a-linux-guy-390p)
 - [How to tell the difference between apt-get upgrade, apt-get dist-upgrade, and do-release-upgrade](https://www.techrepublic.com/article/how-to-tell-the-difference-between-apt-get-upgrade-apt-get-dist-upgrade-and-do-release-upgrade/)
 
+
 # Ubuntu, управление пакетами
 - [How to install/repair texlive-doc on Ubuntu?](https://tex.stackexchange.com/questions/470019/how-to-install-repair-texlive-doc-on-ubuntu)
 - [How to install packages without documentation?](https://askubuntu.com/questions/221241/how-to-install-packages-without-documentation)
