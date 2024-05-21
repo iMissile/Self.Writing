@@ -1476,8 +1476,30 @@ PROFFER_GRAPHVIZ_BIN=C:/PROGRA~1/Graphviz/bin/dot.exe
 3. Проверяем переменные:
 `Sys.getenv("PROFFER_PPROF_BIN")`.
 
+# time-series
+- COOL! [Нестандартная кластеризация, часть 3: приёмы и метрики для кластеризации временных рядов](https://habr.com/ru/post/334220/)
+- e-book [Time Series Analysis](https://bookdown.org/mpfoley1973/time-series/) by Michael Foley, 2021-11-06
+Preface
+These notes are based on the Time Series with R skill track at DataCamp and Rob Hyndman’s Forecasting: Principles and Practice (Rob J Hyndman 2021).
+	- [Пример на вопрос с чата по TSLM](https://bookdown.org/mpfoley1973/time-series/regression.html#nonlinear-regression)
+- [Time Series Basic/Intermediate](https://rpubs.com/arubio017/tslm) by Angel Rubio, 04/10/2022
+Introduction
+These are exercises on chapter #7 from “Forecasting Principles and Practice”
+
+
+
 # R & MacOS
 - COOL!!! [R-universe now builds MacOS ARM64 binaries for use on Apple Silicon (aka M1/M2/M3) systems](https://ropensci.org/blog/2024/01/14/runiverse-arm64/)
+
+# 25.05.2024
+## R
+- Distance matrix. Это не матрица в обычном понимании. Поэтому классический матричный выбор по элементам работать не будет. Возможно, стоит глядеть на пакеты типа [usedist: Distance Matrix Utilities](https://cran.r-project.org/web/packages/usedist/). Functions to re-arrange, extract, and work with distances.
+- [philentropy](https://drostlab.github.io/philentropy/). Similarity and Distance Quantification between Probability Functions Describe and understand the world through data.
+- [Using Arrow for data transport](https://r-dbi.org/blog/dbi-4-3/). What would DBI look like if implemented today?
+
+## text alignment
+- [text.alignment: Text Alignment with Smith-Waterman](https://cran.r-project.org/web/packages/text.alignment/index.html)
+
 
 # 17.05.2024
 ## DS
@@ -2419,6 +2441,7 @@ Provides a large number of functions from numerical analysis and linear algebra,
 - COOL! [scan](https://jazznbass.github.io/scan/) - Single-Case Data Analyses for Single and Multiple Baseline Designs
 - А вот прям случай аппроксимации под переключения. [Piecewise linear with constraints with the segmented function on R](https://stats.stackexchange.com/questions/415993/piecewise-linear-with-constraints-with-the-segmented-function-on-r)
 - COOL! [mcp: Regression with Multiple Change Points](https://lindeloev.github.io/mcp/)
+- [2 Piecewise Regression and Splines](https://bookdown.org/tpinto_home/Beyond-Linearity/piecewise-regression-and-splines.html)
 
 # 02.05.2023
 ## R
@@ -3841,9 +3864,6 @@ and tools that were popular in the last month
 - [Introducing R for Saturn Cloud](https://saturncloud.io/blog/introducing-r/)
 - COOL! [How to convert a list consisting of vector of different lengths to a usable data frame in R?](https://stackoverflow.com/questions/15201305/how-to-convert-a-list-consisting-of-vector-of-different-lengths-to-a-usable-data)
 - [Using the tidyverse with Databases - Part I](https://sciencificity-blog.netlify.app/posts/2020-12-12-using-the-tidyverse-with-databases/). You don’t need to be a SQL expert to work with Databases through R
-
-## time-series
-- COOL! [Нестандартная кластеризация, часть 3: приёмы и метрики для кластеризации временных рядов](https://habr.com/ru/post/334220/)
 
 ## DS & ML
 - [An Introduction to Categorical Data Analysis](http://users.stat.ufl.edu/~aa/) by Alan Agresti, Distinguished Professor Emeritus

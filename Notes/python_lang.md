@@ -1327,6 +1327,10 @@ In Python 3+, the default encoding of source files is already UTF-8 and that lin
 
 # C++
 
+## 21.05.2024
+- [Get the Size of an Array](https://www.w3schools.com/cpp/cpp_arrays_size.asp)
+- [How to print size of array parameter in C++?](https://www.geeksforgeeks.org/how-to-print-size-of-an-array-in-a-function-in-c/)
+
 ## 11.05.2024
 - [Initializing strings as null vs. empty string](https://stackoverflow.com/questions/11556394/initializing-strings-as-null-vs-empty-string)
 - [error: invalid conversion from ‘const char*’ to ‘char’ {-fpermissive}](https://stackoverflow.com/questions/12026567/error-invalid-conversion-from-const-char-to-char-fpermissive)
