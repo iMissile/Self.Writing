@@ -1496,16 +1496,26 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 - Distance matrix. Это не матрица в обычном понимании. Поэтому классический матричный выбор по элементам работать не будет. Возможно, стоит глядеть на пакеты типа [usedist: Distance Matrix Utilities](https://cran.r-project.org/web/packages/usedist/). Functions to re-arrange, extract, and work with distances.
 - [philentropy](https://drostlab.github.io/philentropy/). Similarity and Distance Quantification between Probability Functions Describe and understand the world through data.
 - [Using Arrow for data transport](https://r-dbi.org/blog/dbi-4-3/). What would DBI look like if implemented today?
+- [Dynamic Programming](https://www.rpubs.com/sw424/dp)
 
 ## text alignment
 - [text.alignment: Text Alignment with Smith-Waterman](https://cran.r-project.org/web/packages/text.alignment/index.html)
 
+
+## Dev
+- [Half-precision floats](https://enoki.readthedocs.io/en/master/half.html)
+- [Introducing the Half type!](https://devblogs.microsoft.com/dotnet/introducing-the-half-type/)
+- [SIMD Quicktip: Understanding 16 Byte Memory Alignment Detection](https://philippegroarke.com/blog/2017/02/19/quicktip-understanding-16-byte-memory-alignment-detection/)
+- [Why does `numpy.einsum` work faster with `float32` than `float16` or `uint16`?](https://stackoverflow.com/questions/44103815/why-does-numpy-einsum-work-faster-with-float32-than-float16-or-uint16)
+- [Why should data be aligned to 16 bytes for SSE instructions?](https://community.intel.com/t5/Software-Tuning-Performance/Why-should-data-be-aligned-to-16-bytes-for-SSE-instructions/td-p/1164004)
+- [Ускоряем неускоряемое или знакомимся с SIMD](https://habr.com/ru/articles/440566/)
 
 # 17.05.2024
 ## DS
 - [Грэм, Пол](https://ru.wikipedia.org/wiki/%D0%93%D1%80%D1%8D%D0%BC,_%D0%9F%D0%BE%D0%BB)
 	- Парадокс Блаба» описан в очерке «Побеждая посредственность
 	- Иерархия аргументов в споре («Пирамида Грэма»)
+- [Visual Guides for Causal Inference](https://www.khstats.com/art/illustrations_viz)
 	
 ## R
 - COOL! [nanonext](https://shikokuchuo.net/nanonext/)
