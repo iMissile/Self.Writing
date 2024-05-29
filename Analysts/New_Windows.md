@@ -707,11 +707,19 @@ REM https://unix.stackexchange.com/questions/87908/how-do-you-empty-the-buffers-
 echo (Echo) Clean cache
 %WINDOWS_INK%\_ubuntu.exe run "sudo sh -c 'sync && echo 3 > /proc/sys/vm/drop_caches'"
 ```
+- Переносим docker образы с системного диска
+	- [How To Change Docker Data Path On Windows 10](https://devops.tutorials24x7.com/blog/how-to-change-docker-data-path-on-windows-10)
+	- [On Windows 10, what is the proper way to install docker on another drive (not C:\)?](https://forums.docker.com/t/on-windows-10-what-is-the-proper-way-to-install-docker-on-another-drive-not-c/120428)
+	- [Docker Engine on Windows](https://learn.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon)
+	- [Change Docker Desktop settings on Windows](https://docs.docker.com/desktop/settings/windows/#features-in-development)
 
-## Ubuntu в WSL:
+## Ubuntu в WSL
 - [WSL mount external and network drives](https://www.scivision.dev/mount-usb-drives-windows-subsystem-for-linux/).
 Для внешнего диска такая команда отрабатывает: `mount -t drvfs s: /mnt/s`
 - [Is there a way to mount an external drive when it becomes available in WSL?](https://superuser.com/questions/1734353/is-there-a-way-to-mount-an-external-drive-when-it-becomes-available-in-wsl)
+- Переносим WSL на другой диск
+	- [Move WSL to Another Drive](https://blog.iany.me/2020/06/move-wsl-to-another-drive/)
+	- [Move WSL File System to another Drive](https://dev.to/equiman/move-wsl-file-system-to-another-drive-2a3d)
 
 ## BitLocker
 - [Изучаем и вскрываем BitLocker. Как устроена защита дисков Windows и как ее взломать](https://xakep.ru/2017/02/23/bitlocker-hacking/)

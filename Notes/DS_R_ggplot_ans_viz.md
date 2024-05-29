@@ -112,6 +112,7 @@ Alluvial plots are similar to sankey diagrams and visualise categorical data ove
 - [Construct labelling specification](https://ggplot2.tidyverse.org/reference/labeller.html)
 - COOL! [JohnCoene/grapher](https://github.com/JohnCoene/grapher). ✍️ Interactive graphs https://grapher.network
 - COOL! [How to change facet labels?](https://stackoverflow.com/questions/3472980/how-to-change-facet-labels)
+- [Multiple titles in facet_wrap (ggplot2)](https://stackoverflow.com/questions/31776079/multiple-titles-in-facet-wrap-ggplot2)
 - COOL! [ggparty](https://github.com/martin-borkovec/ggparty) ggplot2 visualizations for the partykit package.
 - [ggparty: Graphic Partying](https://cran.r-project.org/web/packages/ggparty/vignettes/ggparty-graphic-partying.html) ggparty aims to extend ggplot2 functionality to the partykit package. It provides the necessary tools to create clearly structured and highly customizable visualizations for tree-objects of the class 'party'.
 - Learning. [HOW TO SAVE A GGPLOT](https://www.datanovia.com/en/blog/how-to-save-a-ggplot/)

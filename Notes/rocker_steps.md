@@ -31,6 +31,8 @@ login/password: root/ilya-lab
 - удалим dangling images (с тегом none) командой `docker image prune`. Взял [отсюда](https://stackoverflow.com/questions/33913020/docker-remove-none-tag-images)
 - удаляем отдельный образ: `docker image rm my_r`
 
+- [Running RStudio Server with Docker](https://davetang.org/muse/2021/04/24/running-rstudio-server-with-docker/)
+
 ## Делаем свой docker
 - Создаем Dockerfile
 - В директории запускаем `docker build --rm true -t my_r .` -t <tag> 

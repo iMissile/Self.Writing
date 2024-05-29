@@ -1501,6 +1501,10 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 ## text alignment
 - [text.alignment: Text Alignment with Smith-Waterman](https://cran.r-project.org/web/packages/text.alignment/index.html)
 
+## GAM
+- Slides [Yes! You can do that in mgcv](https://converged.yt/talks/SAFS-think-tank), 2024-05-07
+- [GAMbler](https://ecogambler.netlify.app/blog/). This is a growing collection of interesting and (hopefully) useful tips for ecological modeling, with (perhaps too much) emphasis on Generalized Additive Models.
+	- В частности, [How to interpret and report nonlinear effects from Generalized Additive Models](https://ecogambler.netlify.app/blog/interpreting-gams/)
 
 ## Dev
 - [Half-precision floats](https://enoki.readthedocs.io/en/master/half.html)
@@ -3938,6 +3942,10 @@ GA_Stat <- f_time_limit(
 - Slides. Хорошая презентация с материалами на R. [Тестирование статистических гипотез](https://varmara.github.io/linmodr/04_hypothesis_testing.html)
 - [Marketing Data Science - Case Studies from Airbnb, Lyft, Doordash](https://blogboard.io/blog/data-science-in-marketing-optimization/)
 - COOL! [A command-line tool and library for generating regular expressions from user-provided test cases](https://github.com/pemistahl/grex)
+- Симплекс метод
+	- [Подробный разбор симплекс-метода](https://habr.com/ru/articles/474286/)
+	- Книги Д. Данциг "линейное программирование", «Таха Х.А. 2005. Вильямс. Введение в исследование операций», «Салмин И.Д. Математические методы решения оптимизационных задач»
+	- Ашманов С. А. Линейное программирование, М: Наука, 1998г., Вентцель Е.С. Исследование операций, М: Советское радио, 2001г., Кузнецов Ю.Н., Кузубов В.И., Волошенко А.Б. Математическое программирование, М: Высшая школа, 1986г.
 
 ## Shiny
 - [The Basics of Shiny Apps](https://data-science-master.github.io/lectures/06_shiny/06_basic_shiny.html)
