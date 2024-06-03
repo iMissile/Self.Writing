@@ -1497,6 +1497,9 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 - [philentropy](https://drostlab.github.io/philentropy/). Similarity and Distance Quantification between Probability Functions Describe and understand the world through data.
 - [Using Arrow for data transport](https://r-dbi.org/blog/dbi-4-3/). What would DBI look like if implemented today?
 - [Dynamic Programming](https://www.rpubs.com/sw424/dp)
+- COOL! С жирафиком. [The Spread of the Data: VARIANCE & STANDARD DEVIATION](https://tinystats.github.io/teacups-giraffes-and-statistics/04_variance.html)
+- [How to print tibble without row.names / row numbers](https://stackoverflow.com/questions/65460421/how-to-print-tibble-without-row-names-row-numbers). Тут кастомную функцию написали.
+`knitr::kable(mtcars, format = "simple")`
 
 ## text alignment
 - [text.alignment: Text Alignment with Smith-Waterman](https://cran.r-project.org/web/packages/text.alignment/index.html)
