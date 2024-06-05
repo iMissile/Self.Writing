@@ -1487,9 +1487,14 @@ Introduction
 These are exercises on chapter #7 from “Forecasting Principles and Practice”
 
 
-
 # R & MacOS
 - COOL!!! [R-universe now builds MacOS ARM64 binaries for use on Apple Silicon (aka M1/M2/M3) systems](https://ropensci.org/blog/2024/01/14/runiverse-arm64/)
+
+
+# 08.06.2024
+## R
+- [Lessons Learned From Running R in Production](https://matthewrkaye.com/posts/2023-06-29-lessons-learned-from-running-r-in-production/lessons-learned-from-running-r-in-production.html). And why I probably won’t be doing it again
+- [R is still fast: a salty reaction to a salty blog post](https://josiahparry.com/posts/2023-07-06-r-is-still-fast)
 
 # 25.05.2024
 ## R
