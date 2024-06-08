@@ -1712,7 +1712,16 @@ Bob Rudis написал небольшую книгу Making Portable CLIs With
 - [Rill. Dashboards that move as fast as your business](https://www.rilldata.com/)
 - COOL! [Интересные алгоритмы кластеризации, часть вторая: DBSCAN](https://habr.com/ru/articles/322034/)
 - [New Breakthrough Brings Matrix Multiplication Closer to Ideal](https://www.quantamagazine.org/new-breakthrough-brings-matrix-multiplication-closer-to-ideal-20240307/)
-- [Что такое отжиг и зачем его имитировать](https://thecode.media/simulated-annealing/)
+
+- Код. Журнал Яндекс-Практикума
+	- [Часть 1. Что такое «задача коммивояжёра»](https://thecode.media/komm/)
+	- [Часть 2. Решаем задачу коммивояжёра простым перебором](https://thecode.media/path-js/)
+	- [Часть 3. Как работает доставка товаров в России](https://thecode.media/sberloga/)
+	- [Часть 4. Как автомобильный навигатор находит самый быстрый путь](https://thecode.media/shortest-path/)
+	- [Часть 5. Метод Монте-Карло — один из самых полезных алгоритмов в ИТ](https://thecode.media/monte-carlo/)
+	- [Часть 6. Что такое отжиг и зачем его имитировать](https://thecode.media/simulated-annealing/)
+	- [Часть 7. Как устроен алгоритм поиска с возвратом](https://thecode.media/backtracking/)
+	- [Часть 8. Красиво расставляем 8 ферзей на доске](https://thecode.media/8-queens/)
 
 
 ## R
