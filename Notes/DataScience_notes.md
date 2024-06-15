@@ -246,7 +246,9 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Deep R Programming](https://deepr.gagolewski.com/) by by Marek Gagolewski
 - [R for Social Network Analysis](https://schochastics.github.io/R4SNA/)
 - Basecamp. [Shape Up. Stop Running in Circles and Ship Work that Matters](https://basecamp.com/shapeup) by Ryan Singer
-- Home page for the book [Regression and Other Stories](https://avehtari.github.io/ROS-Examples/) by Andrew Gelman, Jennifer Hill, and Aki Vehtari, including the code and data for the examples.
+- Andrew Gelman and Aki Vehtari
+	- Home page for the book [Regression and Other Stories](https://avehtari.github.io/ROS-Examples/) by Andrew Gelman, Jennifer Hill, and Aki Vehtari, including the code and data for the examples.
+	- Web page for the book [Active Statistics](https://avehtari.github.io/ActiveStatistics/) by Andrew Gelman and Aki Vehtari.
 
 ## e-books ML
 - [Deep Learning and Scientific Computing with R torch](https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/) by Sigrid Keydana
@@ -439,7 +441,7 @@ df %>%
      arrange_at(2:3, desc) %>%
      arrange(match(Reg, c("C", "A", "B")))
 ```
-
+- [column names as variables in dplyr: select v filter](https://stackoverflow.com/questions/72673381/column-names-as-variables-in-dplyr-select-v-filter/72673742)
 
 
 
@@ -1491,10 +1493,20 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 - COOL!!! [R-universe now builds MacOS ARM64 binaries for use on Apple Silicon (aka M1/M2/M3) systems](https://ropensci.org/blog/2024/01/14/runiverse-arm64/)
 
 
+# 13.06.2024
+## R
+- [R - Longest common substring](https://stackoverflow.com/questions/1429476/r-longest-common-substring)
+- Тут очень длинный тред с поиском решения. [longest common substring in R finding non-contiguous matches between the two strings](https://stackoverflow.com/questions/28261825/longest-common-substring-in-r-finding-non-contiguous-matches-between-the-two-str)
+- [PTXQC: Quality Report Generation for MaxQuant and mzTab Results](https://cran.r-project.org/web/packages/PTXQC/index.html)
+- COOL! Подоборка кратчайших решений на массе языков. [Greatest common substring](https://codegolf.stackexchange.com/questions/182134/greatest-common-substring)
+- [Подсчитать общую подпоследовательность в двух строках](https://www.geeksforgeeks.org/count-common-subsequence-in-two-strings/)
+
+
 # 08.06.2024
 ## R
 - [Lessons Learned From Running R in Production](https://matthewrkaye.com/posts/2023-06-29-lessons-learned-from-running-r-in-production/lessons-learned-from-running-r-in-production.html). And why I probably won’t be doing it again
 - [R is still fast: a salty reaction to a salty blog post](https://josiahparry.com/posts/2023-07-06-r-is-still-fast)
+- [LogAnalyzer: An Easy-to-Use Log Monitoring Tool for R/Shiny Applications]()
 
 # 25.05.2024
 ## R

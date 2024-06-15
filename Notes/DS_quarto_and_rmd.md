@@ -54,6 +54,11 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 - [How to resize figures in Quarto (PDF output)?](https://stackoverflow.com/questions/73844454/how-to-resize-figures-in-quarto-pdf-output)
 - [Switching to quarto](https://jollydata.blog/posts/2022-08-06-_switching-to-quarto/switching-to-quarto.html)
 I recently ported my blog to quarto. In this post I highlight the key features, that I like about quarto and that I implemented for this website.
+- [Auto adjust height of widget to screen height {#3191}](https://github.com/quarto-dev/quarto-cli/discussions/3191) `widget.layout.height = "100vh"`
+	- [16.4 Widget sizing](https://bookdown.org/yihui/rmarkdown/htmlwidgets-size.html)
+	- [HTML Widget Sizing](https://cran.r-project.org/web/packages/htmlwidgets/vignettes/develop_sizing.html)
+	- [Plotly not correctly scaled based on width and height {#4836}](https://github.com/quarto-dev/quarto-cli/issues/4836)
+	- [Why is the layout of a graph from visnetwork in html too small](https://stackoverflow.com/questions/50250060/why-is-the-layout-of-a-graph-from-visnetwork-in-html-too-small)
 
 ## Quarto parametrization
 - [How to use Quarto for Parameterized Reporting](https://www.mm218.dev/posts/2022-08-04-how-to-use-quarto-for-parameterized-reporting/). You know. If you wanna.
