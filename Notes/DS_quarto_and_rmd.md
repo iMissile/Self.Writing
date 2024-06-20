@@ -156,7 +156,8 @@ Metadata defined within `_quarto.yml`, `_metadata.yml`, and document-level YAML 
 You might find it convenient to break your metadata into multiple files. You can do this using the metadata-files option. For example, here we include some website options within a `_quarto.yml`
 - [How can I use inline code in a quarto document?](https://community.rstudio.com/t/how-can-i-use-inline-code-in-a-quarto-document/160575)
 - [Quarto pr's](https://rpubs.com/rich_i/quarto-prs-issues)
-
+- [Quarto Dates and Date Formatting](https://quarto.org/docs/reference/dates.html)
+	- [Custom date for Quarto YAML header pdf document](https://stackoverflow.com/questions/75315010/custom-date-for-quarto-yaml-header-pdf-document)
 
 ## Quarto & observable
 - [Observable JS](https://quarto.org/docs/interactive/ojs/)

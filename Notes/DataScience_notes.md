@@ -1,5 +1,6 @@
 - [The JSON Formatter](https://jsonformatter.curiousconcept.com/)
 - [JSON Editor Online](http://jsoneditoronline.org/)
+- [JSON Schema](https://restfulapi.net/json-schema/)
 - [XML Formatter](https://jsonformatter.org/xml-formatter)
 - SQL
 	- [SQL Formatter](https://codebeautify.org/sqlformatter)
@@ -1492,6 +1493,30 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 # R & MacOS
 - COOL!!! [R-universe now builds MacOS ARM64 binaries for use on Apple Silicon (aka M1/M2/M3) systems](https://ropensci.org/blog/2024/01/14/runiverse-arm64/)
 
+# Optimization
+- [Симплекс-метод решения производственной задачи](https://www.matburo.ru/mart_sub.php?p=art_lp_212)
+- [Путешествие в космос или введение в симплекс-метод для школьников](https://habr.com/ru/articles/718460/)
+
+## Optimization. Z3 solver
+- [Justified SMT 1: The Minikanren inside Z3](https://www.philipzucker.com/minikanren_inside_z3/)
+- [Z3 Tutorial.ipynb](https://github.com/philzook58/z3_tutorial/blob/master/Z3%20Tutorial.ipynb)
+- [Programming Z3](https://theory.stanford.edu/~nikolaj/programmingz3.html)
+- [IVy is a research tool intended to allow interactive development of protocols and their proofs of correctness](https://github.com/Microsoft/ivy)
+- [generates time table using z3 solver](https://github.com/surabhiljose/time-table-using-smt-solver-)
+- [SAT solving: a sample scheduler](https://www.javiercasas.com/articles/sat-solver-scheduler)
+- [Dimple is a simple SAT solver written in Java](https://github.com/ronmrdechai/dimple)
+- [SAT solving: Introduction to SAT (part 1)](https://www.royvanrijn.com/blog/2019/05/sat-solving-part-one/)
+- [Software Verification and Analysis Using Z3 – NCC Group Research](https://research.nccgroup.com/2021/01/29/software-verification-and-analysis-using-z3/)
+- [SAT/SMT by Example](https://smt.st/)
+- [SAT solving: Creating a solver in Java (part 2)](https://www.royvanrijn.com/blog/2019/11/sat-solver-in-java/)
+- [Modern SAT solvers: fast, neat and underused (part 1 of N)](https://codingnest.com/modern-sat-solvers-fast-neat-underused-part-1-of-n/)
+- [Modern SAT solvers: fast, neat and underused (part 2 of N)](https://codingnest.com/modern-sat-solvers-fast-neat-and-underused-part-2-of-n/)
+- [Modern SAT solvers: fast, neat and underused (part 3 of N)](https://codingnest.com/modern-sat-solvers-fast-neat-and-underused-part-3-of-n/)
+- [Create a Sudoku Solver in Java](https://www.baeldung.com/java-sudoku)
+- [Clang Static Analyzer and the Z3 constraint solver | Frederic Cambus](https://www.cambus.net/clang-static-analyzer-and-the-z3-constraint-solver/)
+
+## big-M formulation
+- [Dealing with big-M constraints](https://www.gurobi.com/documentation/current/refman/dealing_with_big_m_constra.html)
 
 # 13.06.2024
 ## R
@@ -1500,13 +1525,18 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 - [PTXQC: Quality Report Generation for MaxQuant and mzTab Results](https://cran.r-project.org/web/packages/PTXQC/index.html)
 - COOL! Подоборка кратчайших решений на массе языков. [Greatest common substring](https://codegolf.stackexchange.com/questions/182134/greatest-common-substring)
 - [Подсчитать общую подпоследовательность в двух строках](https://www.geeksforgeeks.org/count-common-subsequence-in-two-strings/)
+- [One more way to deal with large-than-RAM data](https://www.kaggle.com/code/ogurtsov/one-more-way-to-deal-with-large-than-ram-data)
 
 
 # 08.06.2024
 ## R
 - [Lessons Learned From Running R in Production](https://matthewrkaye.com/posts/2023-06-29-lessons-learned-from-running-r-in-production/lessons-learned-from-running-r-in-production.html). And why I probably won’t be doing it again
 - [R is still fast: a salty reaction to a salty blog post](https://josiahparry.com/posts/2023-07-06-r-is-still-fast)
-- [LogAnalyzer: An Easy-to-Use Log Monitoring Tool for R/Shiny Applications]()
+- [LogAnalyzer: An Easy-to-Use Log Monitoring Tool for R/Shiny Applications](https://www.appsilon.com/post/introducing-loganalyzer)
+
+## Math
+- [The lavaan package](https://lavaan.ugent.be/) is developed to provide useRs, researchers and teachers a free open-source, but commercial-quality package for latent variable modeling. You can use lavaan to estimate a large variety of multivariate statistical models, including path analysis, confirmatory factor analysis, structural equation modeling and growth curve models.
+
 
 # 25.05.2024
 ## R
