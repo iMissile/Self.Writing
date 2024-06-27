@@ -311,6 +311,8 @@ ipconfig /renew  и нажмите Enter.
 ipconfig /flushdns  и нажмите Enter.
 ```
 
+## Word
+- [Reduce the file size of a picture in Microsoft Office](https://support.microsoft.com/en-us/office/reduce-the-file-size-of-a-picture-in-microsoft-office-8db7211c-d958-457c-babd-194109eb9535)
 
 ## Outlook
 - [Папки в Outlook отображаются на английском языке](https://www.dmosk.ru/polezno.php?review=outlook-en). 
@@ -354,6 +356,12 @@ Far.exe /import settings.cfg
 - [Equivalent to the htop command on Windows](https://serverfault.com/questions/815207/equivalent-to-the-htop-command-on-windows)
 	- [btop++ for windows](https://github.com/aristocratos/btop4win)
 - [RunAsDate v1.41 - Run a program with the specified date/time](https://www.nirsoft.net/utils/run_as_date.html). Copyright (c) 2007 - 2022 Nir Sofer
+- Emulate keystroke
+	- [KeyTyperSimulator](https://github.com/mszeu/KeyTyperSimulator)
+	- [AutoIt v3](https://www.autoitscript.com/site/autoit/) is a freeware BASIC-like scripting language designed for automating the Windows GUI and general scripting. It uses a combination of simulated keystrokes, mouse movement and window/control manipulation in order to automate tasks in a way not possible or reliable with other languages (e.g. VBScript and SendKeys). AutoIt is also very small, self-contained and will run on all versions of Windows out-of-the-box with no annoying “runtimes” required!
+	- [AutoTyper](https://github.com/mathlon26/AutoTyper). This is a Python program that simulates keystrokes based on the contents of a text file. The program uses the pyautogui library to send keystrokes to the active window. You can use this program for various purposes, such as automating text input or testing applications that rely on keyboard input.
+
+
 
 ## Tips
 - [Бесплатно продлеваем Kiwi for Gmail](https://dailysoftwaredeal.com/seller/giveaway-kiwi-for-gmail-windows-mac-1-year-license/). Тут идет покупка, если из приложения не доступно пока. https://www.kiwiforgmail.com/. Code: KiwiForFree

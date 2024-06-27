@@ -1518,6 +1518,11 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 ## big-M formulation
 - [Dealing with big-M constraints](https://www.gurobi.com/documentation/current/refman/dealing_with_big_m_constra.html)
 
+# 29.06.2024
+## R
+- [A easy way to read all columns as character #148 {Closed}](https://github.com/tidyverse/readr/issues/148). hadley commented on Sep 23, 2015 
+`You can now do col_types = cols(.default = "c")`
+
 # 13.06.2024
 ## R
 - [R - Longest common substring](https://stackoverflow.com/questions/1429476/r-longest-common-substring)
@@ -1536,6 +1541,7 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 
 ## Math
 - [The lavaan package](https://lavaan.ugent.be/) is developed to provide useRs, researchers and teachers a free open-source, but commercial-quality package for latent variable modeling. You can use lavaan to estimate a large variety of multivariate statistical models, including path analysis, confirmatory factor analysis, structural equation modeling and growth curve models.
+- COOL! [Conveyal R5 Routing Engine](https://github.com/conveyal/r5). R5: Rapid Realistic Routing on Real-world and Reimagined networks
 
 
 # 25.05.2024
