@@ -1523,6 +1523,20 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 - [A easy way to read all columns as character #148 {Closed}](https://github.com/tidyverse/readr/issues/148). hadley commented on Sep 23, 2015 
 `You can now do col_types = cols(.default = "c")`
 
+## arrow & parquet
+- [Why PySpark append and overwrite write operations are safer in Delta Lake than Parquet tables](https://delta.io/blog/2022-11-01-pyspark-save-mode-append-overwrite-error/)
+- [Appending to parquet files #4150 {Unanswered}](https://github.com/apache/arrow-rs/discussions/4150)
+- [appending to parquet file with {arrow}](https://forum.posit.co/t/appending-to-parquet-file-with-arrow/68383)
+- [{R} Add append option to write_parquet #32708 {Closed}](https://github.com/apache/arrow/issues/32708)
+- [R - write_parquet in loop](https://stackoverflow.com/questions/70088915/r-write-parquet-in-loop)
+- [What are the differences between feather and parquet?](https://stackoverflow.com/questions/48083405/what-are-the-differences-between-feather-and-parquet)
+- [Feather File Format](https://arrow.apache.org/docs/python/feather.html)
+- COOL! [Feather V2 with Compression Support in Apache Arrow 0.17.0](https://ursalabs.org/blog/2020-feather-v2/). Wes McKinney (@wesmckinn), Neal Richardson (@enpiar)б April 23, 2020
+- [Feather: A Fast On-Disk Format for Data Frames for R and Python, powered by Apache Arrow](https://posit.co/blog/feather/) by Hadley Wickham, 2016-05-29
+- [Feather](https://github.com/wesm/feather): fast, interoperable binary data frame storage for Python, R, and more powered by Apache Arrow
+- [Recommended file extension for Feather files #329 {Open}](https://github.com/apache/arrow-cookbook/issues/329). Arrow docs suggest `.arrow` instead of `.feather` https://arrow.apache.org/docs/format/Columnar.html#ipc-file-format
+
+
 # 13.06.2024
 ## R
 - [R - Longest common substring](https://stackoverflow.com/questions/1429476/r-longest-common-substring)

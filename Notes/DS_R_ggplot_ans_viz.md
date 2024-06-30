@@ -616,6 +616,12 @@ The v0.8.0 release of gt is quite exciting so we want to show you all the things
 - COOL! [New in {gt} 0.9.0: Interactive tables](https://posit.co/blog/new-in-gt-0-9-0-interactive-tables/)
 - [All the new features in {gt} 0.10.0](https://posit.co/blog/new-features-in-gt-0-10-0/). gt 0.10.0 introduces nanoplots, units notation, and so much more.
 
+### two gt tables side-by-side
+- [Create a gt_group container for holding multiple gt table objects](https://gt.rstudio.com/reference/gt_group.html)
+- [DISPLAYING TWO GT TABLES SIDE BY SIDE IN R MARKDOWN FOR PDF RENDERING](https://www.joscelinrocha.com/scihub/r-skills-portfolio/posts/2023/09/11/side-by-side-tables)
+- [Create a two-column layout from a list of two gt tables](https://search.r-project.org/CRAN/refmans/gtExtras/html/gt_two_column_layout.html)
+- [Arrange gt tables side by side or in a grid or table of tables](https://stackoverflow.com/questions/65835639/arrange-gt-tables-side-by-side-or-in-a-grid-or-table-of-tables)
+
 ### font issues gt + quarto
 - [Change in Quarto from Rstudio RStudio 2022.07.1+554 to 2022.07.2+576 #3357](https://github.com/quarto-dev/quarto-cli/discussions/3357). Probably caused by some CSS overwriting the table CSS.
 If you don't want Quarto or anything actually to take over the styling, then you should consider to use `gt::as_raw_html(data, inline_css = TRUE)` (https://gt.rstudio.com/reference/as_raw_html.html).

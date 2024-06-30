@@ -816,6 +816,7 @@ sum(list(d.values()))
 - [Vega-Altair: Declarative Visualization in Python](https://altair-viz.github.io/)
 - [Bokeh](https://docs.bokeh.org/en/latest/)
 - [Plotly Open Source Graphing Library for Python](https://plotly.com/python/)
+- [Lets-Plot — multiplatform plotting library built on the principles of the Grammar of Graphics](https://lets-plot.org/)
 ```
 
 ## Мутная история с Python Integer & bitwise operations.
