@@ -32,6 +32,9 @@
 - [VScode: Changing the Display Language](https://code.visualstudio.com/docs/getstarted/locales). Press Ctrl+Shift+P to bring up the Command Palette then start typing "display" to filter and display the Configure Display Language command.
 - [Debugging in VSCode](https://code.visualstudio.com/docs/editor/debugging)
 
+## Fonts
+- [Fira code. VS Code Instructions](https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions)
+
 ## Julia VScode
 - [Julia for VSCode](https://www.julia-vscode.org/)
 - [Using GDB & VSCode to debug Julia code on Windows](https://vchuravy.dev/notes/2021/09/vscode-gdb/)

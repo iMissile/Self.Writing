@@ -723,8 +723,21 @@ Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'P
 	- [Printing from mclapply in R Studio](https://stackoverflow.com/questions/17345837/printing-from-mclapply-in-r-studio)
 	- [For troubleshooting, you can get more details on what's going on under the hood by setting `option(future.debug = TRUE)`.](https://stackoverflow.com/questions/48131779/execution-of-future-package-in-r-results-in-an-endless-waiting-time)
 - [lgr](https://s-fleck.github.io/lgr/) is a logging package for R built on the back of R6 classes. It is designed to be flexible, performant and extensible. The package vignette contains a comprehensive description of the features of lgr (some of them unique among R logging packages) along with many code examples.
-- [logger](https://daroczig.github.io/logger/)
-A lightweight, modern and flexibly logging utility for R – heavily inspired by the futile.logger R package and logging Python module.
+- [logger](https://daroczig.github.io/logger/). A lightweight, modern and flexibly logging utility for R – heavily inspired by the futile.logger R package and logging Python module.
+	- Где же он хранит имена файлов для логирования? Похоже, что здесь: `ls(logger:::namespaces)`. 
+	`str(logger:::namespaces$global)` дает
+```	
+	List of 1
+ $ default:List of 4
+  ..$ threshold: 'loglevel' int 400
+  .. ..- attr(*, "level")= chr "INFO"
+  ..$ layout   :function (level, msg, namespace = NA_character_, .logcall = sys.call(), .topcall = sys.call(-1), .topenv = parent.frame())  
+  .. ..- attr(*, "generator")= chr "logger::layout_glue_generator(format = \"[{time}] {level} {namespace}/{fn}/ {msg}\")"
+  ..$ formatter:function (..., .logcall = sys.call(), .topcall = sys.call(-1), .topenv = parent.frame())  
+  .. ..- attr(*, "generator")= language formatter_glue()
+  ..$ appender :function (lines)  
+  .. ..- attr(*, "generator")= chr "logger::appender_file(file = log_file)"
+```	
 - [jangorecki/logR](https://github.com/jangorecki/logR). Extended logging solution for R http://jangorecki.gitlab.io/logR
 - Logging function name
 	- [Logging current function name](https://stackoverflow.com/questions/7307987/logging-current-function-name)
@@ -1522,6 +1535,8 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 ## R
 - [A easy way to read all columns as character #148 {Closed}](https://github.com/tidyverse/readr/issues/148). hadley commented on Sep 23, 2015 
 `You can now do col_types = cols(.default = "c")`
+- [Typst](https://typst.app/). Compose papers faster. Focus on your text and let Typst take care of layout and formatting.
+- [texreg](https://github.com/leifeld/texreg). Conversion of R Regression Output to LaTeX or HTML Tables.
 
 ## arrow & parquet
 - [Why PySpark append and overwrite write operations are safer in Delta Lake than Parquet tables](https://delta.io/blog/2022-11-01-pyspark-save-mode-append-overwrite-error/)
@@ -1531,10 +1546,14 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 - [R - write_parquet in loop](https://stackoverflow.com/questions/70088915/r-write-parquet-in-loop)
 - [What are the differences between feather and parquet?](https://stackoverflow.com/questions/48083405/what-are-the-differences-between-feather-and-parquet)
 - [Feather File Format](https://arrow.apache.org/docs/python/feather.html)
-- COOL! [Feather V2 with Compression Support in Apache Arrow 0.17.0](https://ursalabs.org/blog/2020-feather-v2/). Wes McKinney (@wesmckinn), Neal Richardson (@enpiar)б April 23, 2020
+- [Feather format update: Whence and Whither?](https://wesmckinney.com/blog/feather-arrow-future/) by Wes McKinney, October 16, 2017
+- COOL! [Feather V2 with Compression Support in Apache Arrow 0.17.0](https://ursalabs.org/blog/2020-feather-v2/). Wes McKinney (@wesmckinn), Neal Richardson (@enpiar), April 23, 2020
+- [Apache Parquet](https://parquet.apache.org/#td-block-1)
 - [Feather: A Fast On-Disk Format for Data Frames for R and Python, powered by Apache Arrow](https://posit.co/blog/feather/) by Hadley Wickham, 2016-05-29
 - [Feather](https://github.com/wesm/feather): fast, interoperable binary data frame storage for Python, R, and more powered by Apache Arrow
 - [Recommended file extension for Feather files #329 {Open}](https://github.com/apache/arrow-cookbook/issues/329). Arrow docs suggest `.arrow` instead of `.feather` https://arrow.apache.org/docs/format/Columnar.html#ipc-file-format
+- [Feather or Parquet](https://pnavaro.github.io/big-data/14-FileFormats.html#feather-or-parquet)
+- [{Python} Feature to append row groups to existing parquet file #33362 {Open}](https://github.com/apache/arrow/issues/33362)
 
 
 # 13.06.2024
@@ -1583,6 +1602,8 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 - [Why does `numpy.einsum` work faster with `float32` than `float16` or `uint16`?](https://stackoverflow.com/questions/44103815/why-does-numpy-einsum-work-faster-with-float32-than-float16-or-uint16)
 - [Why should data be aligned to 16 bytes for SSE instructions?](https://community.intel.com/t5/Software-Tuning-Performance/Why-should-data-be-aligned-to-16-bytes-for-SSE-instructions/td-p/1164004)
 - [Ускоряем неускоряемое или знакомимся с SIMD](https://habr.com/ru/articles/440566/)
+- [Pipe Operator (|>) for JavaScript](https://github.com/tc39/proposal-pipeline-operator). A proposal for adding a useful pipe operator to JavaScript.
+- [Typst. Compose papers faster](https://typst.app/). Focus on your text and let Typst take care of layout and formatting.
 
 # 17.05.2024
 ## DS
@@ -1767,6 +1788,7 @@ More information is available on the [official website](http://shenlanguage.org/
 ```As an experimental feature the placeholder _ can now also be used in the ‘rhs’ of a forward pipe |> expression as the first argument in an extraction call, such as _$coef. More generally, it can be used as the head of a chain of extractions, such as _$coef[[2]].```
 - ebook! [Making Portable CLIs With WebR 🚀](https://rud.is/books/webr-cli-book/)
 Bob Rudis написал небольшую книгу Making Portable CLIs With WebR (https://rud.is/books/webr-cli-book/) как всеобъемлющее руководство по созданию приложений CLI (интерфейса командной строки, от англ. Command Line Interface) с помощью WebR (https://docs.r-wasm.org/webr/latest/) 0.2.2+ и Node.js. 
+- [webR 0.4.0](https://github.com/r-wasm/webr/releases/tag/v0.4.0)
 
 # 25.01.2024
 ## DS & phys
