@@ -31,9 +31,14 @@
 - [janisdd/vscode-edit-csv](https://github.com/janisdd/vscode-edit-csv). vs code extension to edit csv files with an excel like table ui
 - [VScode: Changing the Display Language](https://code.visualstudio.com/docs/getstarted/locales). Press Ctrl+Shift+P to bring up the Command Palette then start typing "display" to filter and display the Configure Display Language command.
 - [Debugging in VSCode](https://code.visualstudio.com/docs/editor/debugging)
+- [How to separate changed files from untracked files in vscode?](https://stackoverflow.com/questions/52410100/how-to-separate-changed-files-from-untracked-files-in-vscode). Git: Improved untracked files management
+You can now manage untracked files separately by using the Git: Untracked Changes setting.
+Choose the `separate` option, if you'd like to see untracked files in a separate group in the Source Control view.
+Choose `hidden` if you'd like to never see them.
 
 ## Fonts
 - [Fira code. VS Code Instructions](https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions)
+- [Iosevka](https://github.com/be5invis/Iosevka). Versatile typeface for code, from code.
 
 ## Julia VScode
 - [Julia for VSCode](https://www.julia-vscode.org/)

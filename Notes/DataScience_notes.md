@@ -1537,6 +1537,7 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 `You can now do col_types = cols(.default = "c")`
 - [Typst](https://typst.app/). Compose papers faster. Focus on your text and let Typst take care of layout and formatting.
 - [texreg](https://github.com/leifeld/texreg). Conversion of R Regression Output to LaTeX or HTML Tables.
+- COOL! [Efficient list recursion in R with {rrapply}](https://jchau.org/2022/07/26/efficient-list-recursion-in-r-with-rrapply/)
 
 ## arrow & parquet
 - [Why PySpark append and overwrite write operations are safer in Delta Lake than Parquet tables](https://delta.io/blog/2022-11-01-pyspark-save-mode-append-overwrite-error/)
@@ -1611,7 +1612,8 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 	- Парадокс Блаба» описан в очерке «Побеждая посредственность
 	- Иерархия аргументов в споре («Пирамида Грэма»)
 - [Visual Guides for Causal Inference](https://www.khstats.com/art/illustrations_viz)
-	
+- [PID tuning using Machine Learning](https://medium.com/@maohar502/pid-tuning-using-machine-learning-6cf6f7fe5690)
+
 ## R
 - COOL! [nanonext](https://shikokuchuo.net/nanonext/)
 R binding for NNG (Nanomsg Next Gen), a successor to ZeroMQ. NNG is a socket library implementing ‘Scalability Protocols’, a reliable, high-performance standard for common communications patterns including publish/subscribe, request/reply and service discovery, over in-process, IPC, TCP, WebSocket and secure TLS transports.
@@ -4112,6 +4114,7 @@ Ordination methods, diversity analysis and other functions for community and veg
 # 01.12.2021
 
 ## Table Contest
+- [Winners of the 2024 Table Contest](https://posit.co/blog/2024-table-contest-winners/)
 - [Winners of the 2022 Table Contest](https://posit.co/blog/winners-of-the-2022-table-contest/)
 - [Winners of the 2021 Table Contest](https://www.rstudio.com/blog/winners-of-the-2021-table-contest/)
 

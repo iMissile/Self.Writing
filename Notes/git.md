@@ -55,6 +55,10 @@ git rebase origin/master
 ```
 - [`Git rebase` — перебазирование коммитов и веток](https://selectel.ru/blog/tutorials/how-to-rebase-commits-and-branches/)/ Знакомим с `git rebase`: рассказываем о преимуществах команды и показываем, в каких случаях ее стоит использовать и почему.
 
+# Git в картинках
+- [A Visual Git Reference](https://marklodato.github.io/visual-git-guide/index-en.html)
+- [Understanding Git through images](https://dev.to/nopenoshishi/understanding-git-through-images-4an1)
+
 # Q&A
 - [GitLab Docs](https://docs.gitlab.com/ee/README.html)
 - Как сделать реплику в несколько репозиториев? `git remote add X5` (ссылка)
