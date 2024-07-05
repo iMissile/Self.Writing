@@ -1113,7 +1113,7 @@ TL;DR zq is a command-line tool that uses the Zed language for pipeline-style se
 		- [Delete keys from all JSON objects in document](https://www.ditig.com/jq-recipes#delete-objects)
 
 
-## xml, xml-to-json
+### xml, xml-to-json, xq/yq
 - [yq](https://mikefarah.gitbook.io/yq/). a lightweight and portable command-line YAML processor. yq uses  like syntax but works with yaml files as well as json. 
 	- [yq. Working with XML](https://mikefarah.gitbook.io/yq/usage/xml)
 - Другой [yq](https://kislyuk.github.io/yq/#): Command-line YAML/XML/TOML processor - jq wrapper for YAML, XML, TOML documents¶
@@ -1530,6 +1530,12 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 
 ## big-M formulation
 - [Dealing with big-M constraints](https://www.gurobi.com/documentation/current/refman/dealing_with_big_m_constra.html)
+
+# 12.07.2024
+- Slides! [Faster R code with Rust](https://nrennie.rbind.io/talks/manchester-r-rust/slides.html#/comparison-of-speed) by Nicola Rennie, Lancaster University
+Manchester R, 27 June 2024
+- COOL! [piecepackr: Board game graphics](https://trevorldavis.com/piecepackr/)
+- [xmlconvert](https://github.com/jsugarelli/xmlconvert/). Comfortably converting XML documents to dataframes and vice versa
 
 # 29.06.2024
 ## R
