@@ -130,6 +130,11 @@ Remember to leave a new line at the bottom of the file.
 ## Настройка под RMarkdown
 - [R Markdown Notebook in VS code](https://yingqijing.medium.com/r-markdown-notebook-in-vs-code-3adb5a61417a)
 
+# Positron
+- COOL! [Fun with Positron](https://www.andrewheiss.com/blog/2024/07/08/fun-with-positron/)
+Combine the best of RStudio and Visual Studio Code in Posit’s new Positron IDE
+- [Positron](https://github.com/posit-dev/positron), a next-generation data science IDE
+
 ## 20.09.2021
 - Проблема с юникодными строками в Windows. Возможно, надо задавать явно параметр `encoding` в `source` в `setting.json`
 ```

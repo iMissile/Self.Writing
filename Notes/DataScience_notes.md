@@ -1329,6 +1329,9 @@ This is where we will store all of the materials and links for rstudio::conf 202
 ## Rconf 2017
 - [Конспект докладов](https://tazinho.github.io/rstudio_conf_notes.html)
 
+## UseR! 2024
+- [Reproducible data science with WebAssembly and webR](https://reproducible-data-science-wasm-use-r.netlify.app/#/title-slide) by George Stagg, Posit, PBC
+
 ## UseR! 2022
 - [Conference Program Schedule](https://user2022.r-project.org/program/overview/)
 - [Improvements in text preprocessing using textrecipes](https://emilhvitfeldt.github.io/useR2022-textrecipes/#/section)
@@ -1534,8 +1537,11 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 # 12.07.2024
 - Slides! [Faster R code with Rust](https://nrennie.rbind.io/talks/manchester-r-rust/slides.html#/comparison-of-speed) by Nicola Rennie, Lancaster University
 Manchester R, 27 June 2024
+- Slides [The right tool for the job](https://juliasilge.github.io/scipy2024/#/title-slide), SciPy 2024 | Julia Silge
 - COOL! [piecepackr: Board game graphics](https://trevorldavis.com/piecepackr/)
 - [xmlconvert](https://github.com/jsugarelli/xmlconvert/). Comfortably converting XML documents to dataframes and vice versa
+- COOL! [Fun with Positron](https://www.andrewheiss.com/blog/2024/07/08/fun-with-positron/)
+Combine the best of RStudio and Visual Studio Code in Posit’s new Positron IDE
 
 # 29.06.2024
 ## R

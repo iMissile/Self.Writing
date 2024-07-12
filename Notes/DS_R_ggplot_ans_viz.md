@@ -355,6 +355,15 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - [19.4 Introducing ggproto](https://bookdown.dongzhuoer.com/hadley/ggplot2-book/introducing-ggproto)
 - [Base ggproto classes for ggplot2](https://ggplot2.tidyverse.org/reference/ggplot2-ggproto.html)
 
+## aes tricks
+- [Position related aesthetics: x, y, xmin, xmax, ymin, ymax, xend, yend](https://ggplot2.tidyverse.org/reference/aes_position.html)
+- [Control aesthetic evaluation](https://ggplot2.tidyverse.org/reference/aes_eval.html)
+- [Using after_stat in GGPLOT in r](https://rpubs.com/techanswers88/after_stat_in_ggplot)
+- COOL! [Demystifying delayed aesthetic evaluation: Part 1](https://yjunechoe.github.io/posts/2022-03-10-ggplot2-delayed-aes-1/). Тут еще отличная функция написана `inspect_after_stat()` wraps around `base::trace()`
+- COOL! [Demystifying delayed aesthetic evaluation: Part 2](https://yjunechoe.github.io/posts/2022-07-06-ggplot2-delayed-aes-2/)
+
+## plotly
+- Сравнение рендеринга изображений. [GGPLOT - aes_position](https://plotly.com/ggplot2/aesthetics/aes_position/)
 
 ## ggplot & units
 - `units` работают в `ggplot`, но возникли проблемы с `lims`!. Решается через `units::scale_x_units(limits = c(0, NA), unit = "cm")`:

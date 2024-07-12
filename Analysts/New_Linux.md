@@ -147,7 +147,7 @@ cd /root/epel-packages/gdal-devel/ && rpm -ivh *.rpm
 - [How to tell gzip to keep original file?](https://unix.stackexchange.com/questions/46786/how-to-tell-gzip-to-keep-original-file)
 - [Example Uses of the Linux gzip Command](https://www.lifewire.com/example-uses-of-the-linux-gzip-command-4078675)
 - [Сжатие и архивация файлов с помощью Gzip, Zip и Tar](http://www.rhd.ru/docs/manuals/enterprise/RHEL-AS-2.1-Manual/getting-started-guide/s1-zip-tar.html)
-- [GZip every file separately](https://stackoverflow.com/questions/1792078/gzip-every-file-separately)
+- [GZip every file separately](https://stackoverflow.com/questions/1792078/gzip-every-file-separately). `gzip -r .`
 ```
 parallel gzip ::: *
 gzip -r .
