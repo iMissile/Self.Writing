@@ -359,6 +359,11 @@ This is an important distinction. When you install conda, it brings its own vers
 
 And as always, make sure to save the installation commands with version-locked dependencies for both conda and pip for every project where they are used.
 
+
+# 19.07.2024
+- [NumPy 2.0: an evolutionary milestone](https://blog.scientific-python.org/numpy/numpy2/)
+
+
 # 17.05.2024
 - [GluonTS is a Python package for probabilistic time series modeling, focusing on deep learning based models, based on PyTorch and MXNet.](https://ts.gluon.ai/stable/)
 - [AutoGluon](https://auto.gluon.ai/stable/index.html) Fast and Accurate ML in 3 Lines of Code

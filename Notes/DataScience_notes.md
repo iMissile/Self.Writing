@@ -1330,7 +1330,8 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Конспект докладов](https://tazinho.github.io/rstudio_conf_notes.html)
 
 ## UseR! 2024
-- [Reproducible data science with WebAssembly and webR](https://reproducible-data-science-wasm-use-r.netlify.app/#/title-slide) by George Stagg, Posit, PBC
+- [Supporting material for useR! 2024 presentations](https://github.com/gorinsimon/user2024-talks-files)
+	- [Reproducible data science with WebAssembly and webR](https://reproducible-data-science-wasm-use-r.netlify.app/#/title-slide) by George Stagg, Posit, PBC
 
 ## UseR! 2022
 - [Conference Program Schedule](https://user2022.r-project.org/program/overview/)
@@ -1533,6 +1534,21 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 
 ## big-M formulation
 - [Dealing with big-M constraints](https://www.gurobi.com/documentation/current/refman/dealing_with_big_m_constra.html)
+
+# 19.07.2024
+## R
+- COOL! [Complete Guide to gm](https://flujoo.github.io/gm/articles/gm.html)
+- [Euclidean Rhythms and circulating sequences with information theory concepts](https://homophony.quest/blog/44_2_10_24_euclid/)
+
+## Читаем материалы UseR! conf и связанные
+- [Shiny Extended Task](https://rstudio.github.io/shiny/reference/ExtendedTask.html) Task or computation that proceeds in the background
+- [Shiny for R updates: Extended tasks, JavaScript errors, and many bslib improvements](https://shiny.posit.co/blog/posts/shiny-r-1.8.1/) CARSON SIEVERT. MARCH 27, 2024
+- Тестирование модулей Shiny. [Working With Legacy Code: Extending Shiny Modules With The Sprout Technique And Test Driven Development](https://www.appsilon.com/post/extending-shiny-modules-sprout-technique)
+- [nanonext](https://shikokuchuo.net/nanonext/). R binding for NNG (Nanomsg Next Gen), a successor to ZeroMQ. NNG is a socket library implementing ‘Scalability Protocols’, a reliable, high-performance standard for common communications patterns including publish/subscribe, request/reply and service discovery, over in-process, IPC, TCP, WebSocket and secure TLS transports.
+- [crew: A Distributed Worker Launcher Framework](https://wlandau.github.io/crew/)
+
+- [NNG: Lightweight Messaging Library](https://nng.nanomsg.org/). A lightweight, broker-less library
+- [Rationale: Or why am I bothering to rewrite nanomsg?](https://nng.nanomsg.org/RATIONALE.html)
 
 # 12.07.2024
 - Slides! [Faster R code with Rust](https://nrennie.rbind.io/talks/manchester-r-rust/slides.html#/comparison-of-speed) by Nicola Rennie, Lancaster University
@@ -3206,8 +3222,6 @@ I have focused on the computation rather than the interpretation of the models.
 
 # 18.07.2022
 ## R
-- [Search and replace in files](https://github.com/s-fleck/sifr)
-	- [Get the results from `Find in Files` function into a `data.frame`.](https://community.rstudio.com/t/get-the-results-from-find-in-files-function-into-a-data-frame/16908)
 - [How to install packages in R?](https://r-coder.com/install-r-packages/#Installing_packages_in_R_from_zip_source)
 
 # 08.07.2022
@@ -3221,6 +3235,9 @@ I have focused on the computation rather than the interpretation of the models.
 - COOL! [Adding Zip Files to Github Gists](https://blog.ouseful.info/2019/02/12/adding-zip-files-to-github-gists/)
 
 ## RStudio IDE
+- [Search and replace in files](https://github.com/s-fleck/sifr). 
+sifr is a tool for searching text strings and regular expression patterns recursively in directory trees from within R. It is mainly a convenience utility for interactive use.
+	- [Get the results from `Find in Files` function into a `data.frame`.](https://community.rstudio.com/t/get-the-results-from-find-in-files-function-into-a-data-frame/16908)
 - ["Find in Files" always finds nothing in package development mode](https://community.rstudio.com/t/find-in-files-always-finds-nothing-in-package-development-mode/10056)
 Do you have indexing disabled for this project? See in `Tools` -> `Project Options`
 - COOL! Нашел проблему неработоспособности Find in Files в RStudio IDE. [Find in Files no longer works after updating to 2202.07.1 #11680
