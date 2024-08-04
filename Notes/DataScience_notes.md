@@ -1535,6 +1535,38 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 ## big-M formulation
 - [Dealing with big-M constraints](https://www.gurobi.com/documentation/current/refman/dealing_with_big_m_constra.html)
 
+
+# 09.08.2024
+## R
+- Различные примеры. [Use rlang to create a named list programmatically](https://stackoverflow.com/questions/52720292/use-rlang-to-create-a-named-list-programmatically)
+- [14.4 Other purrr Higher-Order Functions. 14.4.1 `keep()` and `discard()`](https://homerhanumat.github.io/r-notes/other-purrr-higher-order-functions.html)
+- [Feature request: ability to keep/discard list elements by name #817 {Closed}](https://github.com/tidyverse/purrr/issues/817)
+
+## Shiny e2e
+- [Automating End-to-End Cypress Tests in Rhino: A Guide to Seamless UI Testing for Shiny Apps](https://www.appsilon.com/post/automating-end-to-end-cypress-tests-in-rhino-a-guide-to-seamless-ui-testing-for-shiny-apps)
+- [Tutorial: Write end-to-end tests with Cypress](https://appsilon.github.io/rhino/articles/tutorial/write-end-to-end-tests-with-cypress.html)
+- [shinytest2 vs Cypress: End-to-End (E2E) Testing in Shiny](https://www.appsilon.com/post/shinytest2-vs-cypress-e2e-testing)
+- [shiny.benchmark - How to Measure Performance Improvements in R Shiny Apps](https://www.appsilon.com/post/shiny-benchmark-measuring-app-performance)
+- [How to detect 'shinytest' is running a Shiny app?](https://stackoverflow.com/questions/69234900/how-to-detect-shinytest-is-running-a-shiny-app)
+Run 'shinytest' as follows:
+```
+library(shinytest)
+app <- ShinyDriver$new(".", loadTimeout = 1e+05,
+                       shinyOptions = list(test.mode = TRUE))
+```
+Then `getOption("shiny.testmode")` is `TRUE` when 'shinytest' is running the app.
+- [How to Write Tests with shiny::testServer Similar to shinytest2](https://www.appsilon.com/post/how-to-write-tests-with-shiny-testserver)
+
+
+### cypress
+`rhino::test_e2e(interactive = TRUE)`
+- [Uploading html5 files made easy with the .selectFile command](https://www.cypress.io/blog/2022/01/19/uploading-files-with-selectfile)
+- Очень подробное объяснение. [Cypress basics: Uploading a file](https://filiphric.com/cypress-basics-uploading-file)
+- [Set Form Inputs](https://glebbahmutov.com/cypress-examples/recipes/set-form-inputs.html). Единичный и пакет.
+- [Select an <option> within a <select>](https://docs.cypress.io/api/commands/select)
+- [Working with Select elements and Select2 widgets in Cypress](https://www.cypress.io/blog/working-with-select-elements-and-select2-widgets-in-cypress)
+- [Cypress: selecting and iterating over R shiny selectizeInput elements](https://stackoverflow.com/questions/69710350/cypress-selecting-and-iterating-over-r-shiny-selectizeinput-elements)
+
 # 19.07.2024
 ## R
 - COOL! [Complete Guide to gm](https://flujoo.github.io/gm/articles/gm.html)

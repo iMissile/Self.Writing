@@ -715,19 +715,44 @@ REM https://unix.stackexchange.com/questions/87908/how-do-you-empty-the-buffers-
 echo (Echo) Clean cache
 %WINDOWS_INK%\_ubuntu.exe run "sudo sh -c 'sync && echo 3 > /proc/sys/vm/drop_caches'"
 ```
-- Переносим docker образы с системного диска
-	- [How To Change Docker Data Path On Windows 10](https://devops.tutorials24x7.com/blog/how-to-change-docker-data-path-on-windows-10)
-	- [On Windows 10, what is the proper way to install docker on another drive (not C:\)?](https://forums.docker.com/t/on-windows-10-what-is-the-proper-way-to-install-docker-on-another-drive-not-c/120428)
-	- [Docker Engine on Windows](https://learn.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon)
-	- [Change Docker Desktop settings on Windows](https://docs.docker.com/desktop/settings/windows/#features-in-development)
+
+### Переносим WSL на другой диск
+- [Basic commands for WSL](https://learn.microsoft.com/en-us/windows/wsl/basic-commands)
+- [Move WSL to Another Drive](https://blog.iany.me/2020/06/move-wsl-to-another-drive/)
+- Рабочий вариант с подробными объяснениями !!! [Move WSL File System to another Drive](https://dev.to/equiman/move-wsl-file-system-to-another-drive-2a3d)
+```
+wsl --list --verbose
+wsl --shutdown
+wsl --export Ubuntu D:\backup\ubuntu.tar
+wsl --unregister Ubuntu
+wsl --import Ubuntu D:\WSL\Ubuntu D:\backup\ubuntu.tar
+```
+Точно также перетаскиваем образы Docker Desktop (не работает, не запускается потом докер !!!)
+```
+wsl --export docker-desktop-data d:\backup\docker-desktop-data.tar
+wsl --unregister docker-desktop-data
+wsl --import docker-desktop-data D:\WSL\DockerDesktopWSL D:\backup\docker-desktop-data.tar
+```
+овторно импортировать можно выполнив в директории `%USERPROFILE%\AppData\Local\Docker\wsl\data`
+```
+wsl --import-in-place docker-desktop-data ext4.vhdx
+```
+Но можно перетащить в интерфейсе Docker Desktop: `Settings/Resources/Disk Image Location`. Он сам создаст директорию и перетащит образ диска.
+И я понял почему не перетаскивался. Он поместил образ в подпапку `D:/WSL/DockerDesktopWSL/data` !!!
+На эту тему есть отдельная статейка [Move docker-desktop-data distro out of System Drive](https://dev.to/kim-ch/move-docker-desktop-data-distro-out-of-system-drive-4cg2)
+НЕОБХОДИМА ПЕРЕЗАГРУЗКА WINDOWS!!!
+Есть масса подводных камней, читаем [Disk image location is not changing #13345 {Open}](https://github.com/docker/for-win/issues/13345)
+
+### Переносим docker образы с системного диска
+- [How To Change Docker Data Path On Windows 10](https://devops.tutorials24x7.com/blog/how-to-change-docker-data-path-on-windows-10)
+- [On Windows 10, what is the proper way to install docker on another drive (not C:\)?](https://forums.docker.com/t/on-windows-10-what-is-the-proper-way-to-install-docker-on-another-drive-not-c/120428)
+- [Docker Engine on Windows](https://learn.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/configure-docker-daemon)
+- [Change Docker Desktop settings on Windows](https://docs.docker.com/desktop/settings/windows/#features-in-development)
 
 ## Ubuntu в WSL
 - [WSL mount external and network drives](https://www.scivision.dev/mount-usb-drives-windows-subsystem-for-linux/).
 Для внешнего диска такая команда отрабатывает: `mount -t drvfs s: /mnt/s`
 - [Is there a way to mount an external drive when it becomes available in WSL?](https://superuser.com/questions/1734353/is-there-a-way-to-mount-an-external-drive-when-it-becomes-available-in-wsl)
-- Переносим WSL на другой диск
-	- [Move WSL to Another Drive](https://blog.iany.me/2020/06/move-wsl-to-another-drive/)
-	- [Move WSL File System to another Drive](https://dev.to/equiman/move-wsl-file-system-to-another-drive-2a3d)
 
 ## BitLocker
 - [Изучаем и вскрываем BitLocker. Как устроена защита дисков Windows и как ее взломать](https://xakep.ru/2017/02/23/bitlocker-hacking/)

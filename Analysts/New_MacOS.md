@@ -99,13 +99,18 @@ https://www.hightechdad.com/2017/02/06/onedrive-sync-issues-how-to-reset-onedriv
 ## Tools
 - [AppZapper](http://www.appzapper.com/). The Unistaller Apple forgot
 - [A look back at 2015: My Top Mac Apps](http://brettterpstra.com/2016/02/17/a-look-back-at-2015-my-top-mac-apps/)
-- [Homebrew. The missing package manager for OS X](http://brew.sh/)
 - [Default Folder X](http://www.stclairsoft.com/DefaultFolderX/index.html)
 - [Alfred](https://www.alfredapp.com/). Spotlight replacement & extension
 
+## Homebrew
+- [Homebrew. The missing package manager for OS X](http://brew.sh/)
+	- Error 'Another active Homebrew process is already in progress'. 
+Сработало https://stackoverflow.com/questions/39797078/another-active-homebrew-process-is-already-in-progress
+`rm -rf "$(brew --prefix)/var/homebrew/locks"`
+
+
 ## Текстовые редакторы
 - [Выбор текстового редактора или «хочу все в одном»](http://habrahabr.ru/post/260865/). Победил Brackets
-
 
 # Запуск Windows программ под Mac
 - [Как легко запускать Windows-приложения на Mac? Приложение Wineskin](http://lifehacker.ru/2014/03/03/kak-legko-zapuskat-windows-prilozhenie-na-mac-prilozhenie-wineskin/)
@@ -248,6 +253,7 @@ diskutil mount /dev/disk1
 - https://www.freecodecamp.org/news/python-version-on-mac-update/
 - https://apple.stackexchange.com/questions/284824/remove-and-reinstall-python-on-mac-can-i-trust-these-old-references
 - https://stackoverflow.com/questions/52175456/how-to-fix-missing-dependencies-for-python-homebrew
+
 
 # NTFS
 - [How do I convert an NTFS external HDD to exFAT without formatting](https://answers.microsoft.com/en-us/windows/forum/all/how-do-i-convert-an-ntfs-external-hdd-to-exfat/9d833d2e-35fb-49f9-a88b-1db089e5fa6d).

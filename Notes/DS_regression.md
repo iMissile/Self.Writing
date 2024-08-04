@@ -63,6 +63,59 @@ lm(cc ~ aa + offset(647*bb), data = df)
 - [Regression with fixed intercept](https://stats.stackexchange.com/questions/393414/regression-with-fixed-intercept)
 - [Linear Regression with a known fixed intercept in R](https://stackoverflow.com/questions/7333203/linear-regression-with-a-known-fixed-intercept-in-r)
 
+## Linear Regression With Errors in Both Variables
+
+Статьи
+- [Linear Regression With Errors in Both Variables](https://vp.phys.ethz.ch/DataAnalysis/pdf/14Nov2016.pdf)
+- [Least Squares Methods for Treating Problems with Uncertainty in xand y](https://pubs.acs.org/doi/epdf/10.1021/acs.analchem.0c02178)
+
+Размышления на тему
+- [Regression when x and y each have uncertainties](https://stats.stackexchange.com/questions/422566/regression-when-x-and-y-each-have-uncertainties)
+- [](https://cran.r-project.org/web/packages/pls/vignettes/pls-manual.pdf)
+- [Матрица Якоби и якобиан](http://vmath.ru/vf5/algebra2/dets/jacobian)
+- [Linear model where the data has uncertainty, using R](https://stats.stackexchange.com/questions/235693/linear-model-where-the-data-has-uncertainty-using-r)
+- [The `metafor` Package: A Meta-Analysis Package for R](https://www.metafor-project.org/doku.php/metafor). `rma` method
+
+!!! Отличный мини-учебник по статистике с масой примеров на R
+https://mgimond.github.io/Stats-in-R/regression.html
+
+### «Fit» or «chi-squared»
+https://www.scribbr.com/frequently-asked-questions/how-do-i-perform-a-chi-square-goodness-of-fit-test-in-r/
+https://stats.stackexchange.com/questions/235693/linear-model-where-the-data-has-uncertainty-using-r
+https://vp.phys.ethz.ch/DataAnalysis/DataAnalysisToolbox/Lecture_5.pdf
+https://cran.r-project.org/web/packages/discretefit/vignettes/package_introduction.html
+https://cran.r-project.org/doc/contrib/Ricci-distributions-en.pdf
+https://lbbe-software.github.io/fitdistrplus/
+https://github.com/JorisChau/gslnls
+- [RcppGSL](https://cran.r-project.org/web/packages/RcppGSL/index.html): 'Rcpp' Integration for 'GNU GSL' Vectors and Matrices
+- https://cran.r-project.org/web/packages/gsl/index.html
+- https://cran.r-project.org/web/packages/RcppZiggurat/index.html
+- [In Scipy how and why does curve_fit calculate the covariance of the parameter estimates](https://stackoverflow.com/questions/14854339/in-scipy-how-and-why-does-curve-fit-calculate-the-covariance-of-the-parameter-es/14857441#14857441)
+https://www2.ph.ed.ac.uk/~mim/least_squares_poster.pdf
+- [How do you weight a chi square for uncertainties in x and y (different units)?](https://physics.stackexchange.com/questions/681680/how-do-you-weight-a-chi-square-for-uncertainties-in-x-and-y-different-units)
+https://www.astro.umd.edu/~miller/teaching/astr288a/lecture12.pdf
+https://faculty1.coloradocollege.edu/~sburns/LinearFitting/SimpleDataFittingWithError.html
+
+### York
+- [Regression when each point has its own uncertainty in both $x$ and $y$](https://stats.stackexchange.com/questions/201859/regression-when-each-point-has-its-own-uncertainty-in-both-x-and-y) Функция `yorkfit`.
+- Пакетик R package `bfsl`: Best-fit Straight Line (York algo) https://cran.r-project.org/web/packages/bfsl/readme/README.html
+- Perform linear regression fit using the algorithm presented by York et al. (2004), [`fit_bivariate.py` ](https://gist.github.com/mikkopitkanen/ce9cd22645a9e93b6ca48ba32a3c85d0)
+- OriginLab 15.2.6 Algorithms (Fit Linear with X Error) https://www.originlab.com/doc/en/Origin-Help/Ref-Linear-XErr
+- york {geostats} R Documentation
+Linear regression of X,Y-variables with correlated errors
+https://search.r-project.org/CRAN/refmans/geostats/html/york.html
+Тут все на R реализовано, любопытно почитать.
+
+https://cran.r-project.org/web/packages/IsoplotR/index.html
+https://www.ucl.ac.uk/~ucfbpve/isoplotr/home/
+`IsoplotR::york`
+
+Почитать
+https://github.com/JENScoding/yorkregression
+https://stats.stackexchange.com/questions/574027/chi-square-fit-fitting-data-to-a-straight-line-incomplete-gamma-function-as-go
+https://www.physicsforums.com/threads/chi-squared-fit-with-errors-on-both-x-and-y.980490/
+
+
 ## viz
 - [ggside: Plot Linear Regression using Marginal Distributions (ggplot2 extension)](https://www.business-science.io/code-tools/2021/05/18/marginal_distributions.html)
 
