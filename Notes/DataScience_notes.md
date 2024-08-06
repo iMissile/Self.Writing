@@ -1541,6 +1541,17 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 - Различные примеры. [Use rlang to create a named list programmatically](https://stackoverflow.com/questions/52720292/use-rlang-to-create-a-named-list-programmatically)
 - [14.4 Other purrr Higher-Order Functions. 14.4.1 `keep()` and `discard()`](https://homerhanumat.github.io/r-notes/other-purrr-higher-order-functions.html)
 - [Feature request: ability to keep/discard list elements by name #817 {Closed}](https://github.com/tidyverse/purrr/issues/817)
+- [stringfish: Alt String Implementation](https://cran.r-project.org/web/packages/stringfish/index.html)
+- Slides! [rix: reproducible development environments for R programmers](https://raw.githack.com/b-rodrigues/fosdem2024_pres/targets-runs/rendered_slides/fosdem_pres.html#/title-slide) by Bruno Rodrigues
+- Slides. [rix: an R package for reproducible dev environments with Nix] (https://fosdem.org/2024/schedule/event/fosdem-2024-1767-rix-an-r-package-for-reproducible-dev-environments-with-nix/)
+	- Касательно Floating-point & IEEE754
+		- [What Every Computer Scientist Should Know About Floating-Point Arithmetic (1991) -  David Goldberg](https://dl.acm.org/doi/10.1145/103162.103163)
+		- [Floating-Point Determinism](https://randomascii.wordpress.com/2013/07/16/floating-point-determinism/)
+		- [numpy.tanh gives different results on Windows and Linux #9187 {Closed}](https://github.com/numpy/numpy/issues/9187)
+
+## S3 AWS
+- [aws.s3: 'AWS S3' Client Package](https://cran.r-project.org/web/packages/aws.s3/index.html)
+- [Paws, an AWS SDK for R ](https://paws-r.github.io/)
 
 ## Shiny e2e
 - [Automating End-to-End Cypress Tests in Rhino: A Guide to Seamless UI Testing for Shiny Apps](https://www.appsilon.com/post/automating-end-to-end-cypress-tests-in-rhino-a-guide-to-seamless-ui-testing-for-shiny-apps)
@@ -1556,6 +1567,8 @@ app <- ShinyDriver$new(".", loadTimeout = 1e+05,
 ```
 Then `getOption("shiny.testmode")` is `TRUE` when 'shinytest' is running the app.
 - [How to Write Tests with shiny::testServer Similar to shinytest2](https://www.appsilon.com/post/how-to-write-tests-with-shiny-testserver)
+- [End-to-end testing with shinytest2: Part 1](https://www.jumpingrivers.com/blog/end-to-end-testing-shinytest2-part-1/)
+- [Choosing a selectize value that's not initially loaded (because of maxOptions) #232 {Open}](https://github.com/rstudio/shinytest2/issues/232)
 
 
 ### cypress
@@ -1673,6 +1686,7 @@ Combine the best of RStudio and Visual Studio Code in Posit’s new Positron IDE
 	- Иерархия аргументов в споре («Пирамида Грэма»)
 - [Visual Guides for Causal Inference](https://www.khstats.com/art/illustrations_viz)
 - [PID tuning using Machine Learning](https://medium.com/@maohar502/pid-tuning-using-machine-learning-6cf6f7fe5690)
+- [Why the collapse of the Generative AI bubble may be imminent](https://garymarcus.substack.com/p/why-the-collapse-of-the-generative). An update from the person who first called the bubble. Gary Marcus
 
 ## R
 - COOL! [nanonext](https://shikokuchuo.net/nanonext/)

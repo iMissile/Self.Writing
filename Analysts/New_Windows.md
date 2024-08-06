@@ -431,6 +431,7 @@ icacls.exe "E:\" /reset /T
 	- [PiVPN](https://pivpn.io/) The simplest way to setup and manage a VPN, designed for Raspberry Pi™.
 	- [WireGuard](https://www.wireguard.com/): fast, modern, secure VPN tunnel
 WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
+- [Wireguard с веб-интерфейсом](https://mishatugushev.ru/blog/?go=all/wireguard-dashboard/)
 
 
 ## RDP

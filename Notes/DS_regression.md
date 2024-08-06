@@ -87,9 +87,10 @@ https://cran.r-project.org/web/packages/discretefit/vignettes/package_introducti
 https://cran.r-project.org/doc/contrib/Ricci-distributions-en.pdf
 https://lbbe-software.github.io/fitdistrplus/
 https://github.com/JorisChau/gslnls
-- [RcppGSL](https://cran.r-project.org/web/packages/RcppGSL/index.html): 'Rcpp' Integration for 'GNU GSL' Vectors and Matrices
-- https://cran.r-project.org/web/packages/gsl/index.html
-- https://cran.r-project.org/web/packages/RcppZiggurat/index.html
+- [GSL - GNU Scientific Library](https://www.gnu.org/software/gsl/)
+	- [RcppGSL](https://cran.r-project.org/web/packages/RcppGSL/index.html): 'Rcpp' Integration for 'GNU GSL' Vectors and Matrices
+	- [gsl](https://cran.r-project.org/web/packages/gsl/index.html): Wrapper for the Gnu Scientific Library
+	- [RcppZiggurat](https://cran.r-project.org/web/packages/RcppZiggurat/index.html): 'Rcpp' Integration of Different "Ziggurat" Normal RNG Implementations
 - [In Scipy how and why does curve_fit calculate the covariance of the parameter estimates](https://stackoverflow.com/questions/14854339/in-scipy-how-and-why-does-curve-fit-calculate-the-covariance-of-the-parameter-es/14857441#14857441)
 https://www2.ph.ed.ac.uk/~mim/least_squares_poster.pdf
 - [How do you weight a chi square for uncertainties in x and y (different units)?](https://physics.stackexchange.com/questions/681680/how-do-you-weight-a-chi-square-for-uncertainties-in-x-and-y-different-units)
