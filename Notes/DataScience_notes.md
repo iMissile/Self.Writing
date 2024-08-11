@@ -3385,6 +3385,8 @@ G*Power is a tool to compute statistical power analyses for many different t tes
 - [tsdrtools](https://lcbc-uio.github.io/tsdrtools/index.html). The goal of tsdrtools is to make it easier for R users of TSD to install packages that fail install using the TSD mini-CRAN.
 - [Using Kubernetes and the Future Package to Easily Parallelize R in the Cloud](https://www.jottr.org/2021/04/08/future-and-kubernetes/)
 - [Using Rstudio Jobs for training many models in parallel](https://edwinth.github.io/blog/parallel-jobs/)
+- [adapting 'future' to 'future_promise'](https://stackoverflow.com/questions/74413807/adapting-future-to-future-promise)
+- [future promise](https://rstudio.github.io/promises/reference/future_promise.html)
 
 ## ML
 - [executing cv.glmnet in parallel in R](https://stackoverflow.com/questions/21698435/executing-cv-glmnet-in-parallel-in-r)
