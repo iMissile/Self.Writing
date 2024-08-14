@@ -1,70 +1,70 @@
-# Перенос кода во внутреннюю сеть Заказчика через внутренний git Заказчика
-Создать проект в нашей группе на GitLab (https://gitlab.com/X5-logs)
-Клонировать проект к себе на ноутбук
+# РџРµСЂРµРЅРѕСЃ РєРѕРґР° РІРѕ РІРЅСѓС‚СЂРµРЅРЅСЋСЋ СЃРµС‚СЊ Р—Р°РєР°Р·С‡РёРєР° С‡РµСЂРµР· РІРЅСѓС‚СЂРµРЅРЅРёР№ git Р—Р°РєР°Р·С‡РёРєР°
+РЎРѕР·РґР°С‚СЊ РїСЂРѕРµРєС‚ РІ РЅР°С€РµР№ РіСЂСѓРїРїРµ РЅР° GitLab (https://gitlab.com/X5-logs)
+РљР»РѕРЅРёСЂРѕРІР°С‚СЊ РїСЂРѕРµРєС‚ Рє СЃРµР±Рµ РЅР° РЅРѕСѓС‚Р±СѓРє
 
 git clone https://gitlab.com/X5-logs/x5-scan-n-go.git
-Подключить VPN к сети Заказчика (если это необходимо).
+РџРѕРґРєР»СЋС‡РёС‚СЊ VPN Рє СЃРµС‚Рё Р—Р°РєР°Р·С‡РёРєР° (РµСЃР»Рё СЌС‚Рѕ РЅРµРѕР±С…РѕРґРёРјРѕ).
 
-Добавить связь с дополнительным удаленным репозиторием (внутренний git Заказчика)
+Р”РѕР±Р°РІРёС‚СЊ СЃРІСЏР·СЊ СЃ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рј СѓРґР°Р»РµРЅРЅС‹Рј СЂРµРїРѕР·РёС‚РѕСЂРёРµРј (РІРЅСѓС‚СЂРµРЅРЅРёР№ git Р—Р°РєР°Р·С‡РёРєР°)
 
 git remote add x5scm https://scm.x5.ru/bms/x5-scan-n-go.git
-Список удаленных репозиториев можно увидеть так:
+РЎРїРёСЃРѕРє СѓРґР°Р»РµРЅРЅС‹С… СЂРµРїРѕР·РёС‚РѕСЂРёРµРІ РјРѕР¶РЅРѕ СѓРІРёРґРµС‚СЊ С‚Р°Рє:
 
 git remote -v
-Отправляем проект во внутренний git Заказчика
+РћС‚РїСЂР°РІР»СЏРµРј РїСЂРѕРµРєС‚ РІРѕ РІРЅСѓС‚СЂРµРЅРЅРёР№ git Р—Р°РєР°Р·С‡РёРєР°
 
 git push x5scm master
-Будет запрошен логин и пароль.
-При их успешном вводе на https://scm.x5.ru/bms/ появится копия проекта.
+Р‘СѓРґРµС‚ Р·Р°РїСЂРѕС€РµРЅ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ.
+РџСЂРё РёС… СѓСЃРїРµС€РЅРѕРј РІРІРѕРґРµ РЅР° https://scm.x5.ru/bms/ РїРѕСЏРІРёС‚СЃСЏ РєРѕРїРёСЏ РїСЂРѕРµРєС‚Р°.
 
 
-Клонируем проект на аналитическую машину из RStudio, запущенного из Docker:
+РљР»РѕРЅРёСЂСѓРµРј РїСЂРѕРµРєС‚ РЅР° Р°РЅР°Р»РёС‚РёС‡РµСЃРєСѓСЋ РјР°С€РёРЅСѓ РёР· RStudio, Р·Р°РїСѓС‰РµРЅРЅРѕРіРѕ РёР· Docker:
 
 git clone https://scm.x5.ru/bms/x5-scan-n-go.git
-Для аналитической машины данная ссылка будет основной (origin)
+Р”Р»СЏ Р°РЅР°Р»РёС‚РёС‡РµСЃРєРѕР№ РјР°С€РёРЅС‹ РґР°РЅРЅР°СЏ СЃСЃС‹Р»РєР° Р±СѓРґРµС‚ РѕСЃРЅРѕРІРЅРѕР№ (origin)
 
-Получение кода из внутренней сети Заказчика через внутренний git Заказчика
-Сделать все commit
+РџРѕР»СѓС‡РµРЅРёРµ РєРѕРґР° РёР· РІРЅСѓС‚СЂРµРЅРЅРµР№ СЃРµС‚Рё Р—Р°РєР°Р·С‡РёРєР° С‡РµСЂРµР· РІРЅСѓС‚СЂРµРЅРЅРёР№ git Р—Р°РєР°Р·С‡РёРєР°
+РЎРґРµР»Р°С‚СЊ РІСЃРµ commit
 
-Отправить изменения с аналитической машины во внутренний git Заказчика
+РћС‚РїСЂР°РІРёС‚СЊ РёР·РјРµРЅРµРЅРёСЏ СЃ Р°РЅР°Р»РёС‚РёС‡РµСЃРєРѕР№ РјР°С€РёРЅС‹ РІРѕ РІРЅСѓС‚СЂРµРЅРЅРёР№ git Р—Р°РєР°Р·С‡РёРєР°
 
 git push origin master
-Или с помощью кнопки Push на вкладке Git в RStudio.
+РР»Рё СЃ РїРѕРјРѕС‰СЊСЋ РєРЅРѕРїРєРё Push РЅР° РІРєР»Р°РґРєРµ Git РІ RStudio.
 
-Подключить VPN к сети Заказчика (если это необходимо).
+РџРѕРґРєР»СЋС‡РёС‚СЊ VPN Рє СЃРµС‚Рё Р—Р°РєР°Р·С‡РёРєР° (РµСЃР»Рё СЌС‚Рѕ РЅРµРѕР±С…РѕРґРёРјРѕ).
 
-Получить изменения в проекте из внутреннего git Заказчика на свой ноутбук
+РџРѕР»СѓС‡РёС‚СЊ РёР·РјРµРЅРµРЅРёСЏ РІ РїСЂРѕРµРєС‚Рµ РёР· РІРЅСѓС‚СЂРµРЅРЅРµРіРѕ git Р—Р°РєР°Р·С‡РёРєР° РЅР° СЃРІРѕР№ РЅРѕСѓС‚Р±СѓРє
 
 git pull x5scm master
-Отправить изменения в проекте со своего ноутбука в наш GitLab
+РћС‚РїСЂР°РІРёС‚СЊ РёР·РјРµРЅРµРЅРёСЏ РІ РїСЂРѕРµРєС‚Рµ СЃРѕ СЃРІРѕРµРіРѕ РЅРѕСѓС‚Р±СѓРєР° РІ РЅР°С€ GitLab
 
 git push origin master
-Commit-ы на этом этапе уже не нужны.
+Commit-С‹ РЅР° СЌС‚РѕРј СЌС‚Р°РїРµ СѓР¶Рµ РЅРµ РЅСѓР¶РЅС‹.
 
-# Перенос репозитория из одного гитлаба в другой
-- Процедура примерно такая. Экспорт и последующий импорт.
+# РџРµСЂРµРЅРѕСЃ СЂРµРїРѕР·РёС‚РѕСЂРёСЏ РёР· РѕРґРЅРѕРіРѕ РіРёС‚Р»Р°Р±Р° РІ РґСЂСѓРіРѕР№
+- РџСЂРѕС†РµРґСѓСЂР° РїСЂРёРјРµСЂРЅРѕ С‚Р°РєР°СЏ. Р­РєСЃРїРѕСЂС‚ Рё РїРѕСЃР»РµРґСѓСЋС‰РёР№ РёРјРїРѕСЂС‚.
 	- [Project import/export](https://docs.gitlab.com/ee/user/project/settings/import_export.html)
 	- [Migrating projects to a GitLab instance](https://docs.gitlab.com/ee/user/project/import/)
-1. Экспорт. Project’s homepage. Click Settings in the sidebar. -> General/Export
+1. Р­РєСЃРїРѕСЂС‚. ProjectвЂ™s homepage. Click Settings in the sidebar. -> General/Export
 2. Projects/Gitlab Import
 
-# Затаскивание изменений из мастера к себе в ветку
+# Р—Р°С‚Р°СЃРєРёРІР°РЅРёРµ РёР·РјРµРЅРµРЅРёР№ РёР· РјР°СЃС‚РµСЂР° Рє СЃРµР±Рµ РІ РІРµС‚РєСѓ
 ```
 git fetch
 git rebase origin/master
 ```
-- [`Git rebase` — перебазирование коммитов и веток](https://selectel.ru/blog/tutorials/how-to-rebase-commits-and-branches/)/ Знакомим с `git rebase`: рассказываем о преимуществах команды и показываем, в каких случаях ее стоит использовать и почему.
+- [`Git rebase` вЂ” РїРµСЂРµР±Р°Р·РёСЂРѕРІР°РЅРёРµ РєРѕРјРјРёС‚РѕРІ Рё РІРµС‚РѕРє](https://selectel.ru/blog/tutorials/how-to-rebase-commits-and-branches/)/ Р—РЅР°РєРѕРјРёРј СЃ `git rebase`: СЂР°СЃСЃРєР°Р·С‹РІР°РµРј Рѕ РїСЂРµРёРјСѓС‰РµСЃС‚РІР°С… РєРѕРјР°РЅРґС‹ Рё РїРѕРєР°Р·С‹РІР°РµРј, РІ РєР°РєРёС… СЃР»СѓС‡Р°СЏС… РµРµ СЃС‚РѕРёС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ Рё РїРѕС‡РµРјСѓ.
 
-# Git в картинках
+# Git РІ РєР°СЂС‚РёРЅРєР°С…
 - [A Visual Git Reference](https://marklodato.github.io/visual-git-guide/index-en.html)
 - [Understanding Git through images](https://dev.to/nopenoshishi/understanding-git-through-images-4an1)
-- [Git. Скачем между ветками как древесные лягушки](https://habr.com/ru/articles/826260/)
+- [Git. РЎРєР°С‡РµРј РјРµР¶РґСѓ РІРµС‚РєР°РјРё РєР°Рє РґСЂРµРІРµСЃРЅС‹Рµ Р»СЏРіСѓС€РєРё](https://habr.com/ru/articles/826260/)
 
 # Q&A
 - [GitLab Docs](https://docs.gitlab.com/ee/README.html)
-- Как сделать реплику в несколько репозиториев? `git remote add X5` (ссылка)
+- РљР°Рє СЃРґРµР»Р°С‚СЊ СЂРµРїР»РёРєСѓ РІ РЅРµСЃРєРѕР»СЊРєРѕ СЂРµРїРѕР·РёС‚РѕСЂРёРµРІ? `git remote add X5` (СЃСЃС‹Р»РєР°)
 - [git. Adding a remote](https://docs.github.com/en/free-pro-team@latest/github/using-git/adding-a-remote)
-- COOL! [git stash – это то, что я искал](http://stepansuvorov.com/blog/2012/11/git-stash-%D1%8D%D1%82%D0%BE-%D1%82%D0%BE-%D1%87%D1%82%D0%BE-%D1%8F-%D0%B8%D1%81%D0%BA%D0%B0%D0%BB/)
+- COOL! [git stash вЂ“ СЌС‚Рѕ С‚Рѕ, С‡С‚Рѕ СЏ РёСЃРєР°Р»](http://stepansuvorov.com/blog/2012/11/git-stash-%D1%8D%D1%82%D0%BE-%D1%82%D0%BE-%D1%87%D1%82%D0%BE-%D1%8F-%D0%B8%D1%81%D0%BA%D0%B0%D0%BB/)
 ```
 git stash
 git pull
@@ -79,33 +79,33 @@ git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 ```
 - [Clone at Git Repo to a Different Directory](https://til.hashrocket.com/posts/z0f393xq0s-clone-at-git-repo-to-a-different-directory)
 
-Итого, вытаскиваем ветку 'huawei' командой
+РС‚РѕРіРѕ, РІС‹С‚Р°СЃРєРёРІР°РµРј РІРµС‚РєСѓ 'huawei' РєРѕРјР°РЅРґРѕР№
 `git clone -b huawei https://gitlab.com/TV-stat/mts-tv-stat.reports.git ./mts-tv-stat.reports.hw`
-- [7.12 Инструменты Git - Создание пакетов](https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2). В этих случаях вам может помочь команда `git bundle`.
+- [7.12 РРЅСЃС‚СЂСѓРјРµРЅС‚С‹ Git - РЎРѕР·РґР°РЅРёРµ РїР°РєРµС‚РѕРІ](https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2). Р’ СЌС‚РёС… СЃР»СѓС‡Р°СЏС… РІР°Рј РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РєРѕРјР°РЅРґР° `git bundle`.
 - [Reducing the repository size using Git](https://docs.gitlab.com/ee/user/project/repository/reducing_the_repo_size_using_git.html)
 	- COOL! [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/)
 Removes large or troublesome blobs like git-filter-branch does, but faster. And written in Scala
-- [Как удалить файлы из истории Git-а, или git filter-branch и переписывание истории](https://det-random.livejournal.com/43291.html)
+- [РљР°Рє СѓРґР°Р»РёС‚СЊ С„Р°Р№Р»С‹ РёР· РёСЃС‚РѕСЂРёРё Git-Р°, РёР»Рё git filter-branch Рё РїРµСЂРµРїРёСЃС‹РІР°РЅРёРµ РёСЃС‚РѕСЂРёРё](https://det-random.livejournal.com/43291.html)
 - [BFG Repo-Cleaner by rtyley](https://rtyley.github.io/bfg-repo-cleaner/)
 A simpler, faster alternative to git-filter-branch for deleting big files and removing passwords from Git history.
 - [How can I delete a commit in Git?](https://www.git-tower.com/learn/git/faq/delete-commits)
-- [17. Удаление коммитов из ветки](https://githowto.com/ru/removing_commits_from_a_branch)
+- [17. РЈРґР°Р»РµРЅРёРµ РєРѕРјРјРёС‚РѕРІ РёР· РІРµС‚РєРё](https://githowto.com/ru/removing_commits_from_a_branch)
 - COOL! [Remove files from Git commit](https://stackoverflow.com/questions/12481639/remove-files-from-git-commit)
 - [How can I delete all of my Git stashes at once?](https://stackoverflow.com/questions/11369375/how-can-i-delete-all-of-my-git-stashes-at-once).
 ```
 git stash list
 git stash clear
 ```
-- [`git prune`] спас от мусора в `objects`
+- [`git prune`] СЃРїР°СЃ РѕС‚ РјСѓСЃРѕСЂР° РІ `objects`
 - [Quickly rewrite git repository history (filter-branch replacement)](https://github.com/newren/git-filter-repo)
-- [Команда `git gc`](https://www.atlassian.com/ru/git/tutorials/git-gc)
-`git gc` — это команда для технического обслуживания репозитория. gc расшифровывается как garbage collection, то есть «сбор мусора». 
+- [РљРѕРјР°РЅРґР° `git gc`](https://www.atlassian.com/ru/git/tutorials/git-gc)
+`git gc` вЂ” СЌС‚Рѕ РєРѕРјР°РЅРґР° РґР»СЏ С‚РµС…РЅРёС‡РµСЃРєРѕРіРѕ РѕР±СЃР»СѓР¶РёРІР°РЅРёСЏ СЂРµРїРѕР·РёС‚РѕСЂРёСЏ. gc СЂР°СЃС€РёС„СЂРѕРІС‹РІР°РµС‚СЃСЏ РєР°Рє garbage collection, С‚Рѕ РµСЃС‚СЊ В«СЃР±РѕСЂ РјСѓСЃРѕСЂР°В». 
 - [Keep your git directory clean with `git clean` and `git trash`](https://coderwall.com/p/g16jpq/keep-your-git-directory-clean-with-git-clean-and-git-trash)
 - COOL [Take GitHub to the command line](https://cli.github.com/)
 - [How to update your Git credentials on Windows](https://cmatskas.com/how-to-update-your-git-credentials-on-windows/)
 `Control Panel -> Credential Manager -> Generic Credentials`,
-`Панель управления -> Все элементы панели управления -> Диспетчер учетных данных->Учетные данные Windows`
-- [Доступ к диспетчеру учетных данных](https://support.microsoft.com/ru-ru/help/4026814/windows-accessing-credential-manager)
+`РџР°РЅРµР»СЊ СѓРїСЂР°РІР»РµРЅРёСЏ -> Р’СЃРµ СЌР»РµРјРµРЅС‚С‹ РїР°РЅРµР»Рё СѓРїСЂР°РІР»РµРЅРёСЏ -> Р”РёСЃРїРµС‚С‡РµСЂ СѓС‡РµС‚РЅС‹С… РґР°РЅРЅС‹С…->РЈС‡РµС‚РЅС‹Рµ РґР°РЅРЅС‹Рµ Windows`
+- [Р”РѕСЃС‚СѓРї Рє РґРёСЃРїРµС‚С‡РµСЂСѓ СѓС‡РµС‚РЅС‹С… РґР°РЅРЅС‹С…](https://support.microsoft.com/ru-ru/help/4026814/windows-accessing-credential-manager)
 - [7.14 Git Tools - Credential Storage](https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage)
 
 ## Remove large files
@@ -116,16 +116,16 @@ git stash clear
 - [Git cheat sheet, extended edition](https://jan-krueger.net/git-cheat-sheet-extended-edition)
 - [Clone at Git Repo to a Different Directory](https://til.hashrocket.com/posts/z0f393xq0s-clone-at-git-repo-to-a-different-directory)
 `$ git clone https://github.com/cool_user/codez.git ~/codez-v2`
-- Как сделать клон бранча в git:
+- РљР°Рє СЃРґРµР»Р°С‚СЊ РєР»РѕРЅ Р±СЂР°РЅС‡Р° РІ git:
 `git clone --branch phase_2 https://gitlab.com/TV-stat/mts-tv-stat.reports.git mts-tv-stat.reports.ph2`
-- Где хранятся конфигурации репозиториев в SmartGit? Смотрим здесь: 'C:\Users\<user>\AppData\Roaming\syntevo\SmartGit\18.1\repositories.xml'
+- Р“РґРµ С…СЂР°РЅСЏС‚СЃСЏ РєРѕРЅС„РёРіСѓСЂР°С†РёРё СЂРµРїРѕР·РёС‚РѕСЂРёРµРІ РІ SmartGit? РЎРјРѕС‚СЂРёРј Р·РґРµСЃСЊ: 'C:\Users\<user>\AppData\Roaming\syntevo\SmartGit\18.1\repositories.xml'
 - [Not possibly to explicitly disable Auto DevOps on a project?](https://gitlab.com/gitlab-org/gitlab-ce/issues/51760)
 - [Enabling/disabling Auto DevOps](https://docs.gitlab.com/ee/topics/autodevops/)
 - [How can I switch to another branch in git?](https://stackoverflow.com/questions/47630950/how-can-i-switch-to-another-branch-in-git)
 - [How do you clone a Git repository into a specific folder?](https://stackoverflow.com/questions/651038/how-do-you-clone-a-git-repository-into-a-specific-folder). `git clone git@github.com:whatever folder-name`
-- COOL! Полная команда клонирования репозитория на удаленной машине: `git clone -c http.sslverify=false -b "dev" https://gitlab.com/ishutov/beluga-distr.git beluga-distr-dev`
-- Изменение ссылки на внешний репозиторий: `git remote set-url x5scm https://scm.x5.ru/bms-analytics/x5-bms-diagnostics2.git`
-В итоге должно получиться:
+- COOL! РџРѕР»РЅР°СЏ РєРѕРјР°РЅРґР° РєР»РѕРЅРёСЂРѕРІР°РЅРёСЏ СЂРµРїРѕР·РёС‚РѕСЂРёСЏ РЅР° СѓРґР°Р»РµРЅРЅРѕР№ РјР°С€РёРЅРµ: `git clone -c http.sslverify=false -b "dev" https://gitlab.com/ishutov/beluga-distr.git beluga-distr-dev`
+- РР·РјРµРЅРµРЅРёРµ СЃСЃС‹Р»РєРё РЅР° РІРЅРµС€РЅРёР№ СЂРµРїРѕР·РёС‚РѕСЂРёР№: `git remote set-url x5scm https://scm.x5.ru/bms-analytics/x5-bms-diagnostics2.git`
+Р’ РёС‚РѕРіРµ РґРѕР»Р¶РЅРѕ РїРѕР»СѓС‡РёС‚СЊСЃСЏ:
 ```
 git remote -v
 origin  https://gitlab.com/X5-logs/x5-bms-diagnostics2.git (fetch)
@@ -136,7 +136,7 @@ x5scm   https://scm.x5.ru/bms-analytics/x5-bms-diagnostics2.git (push)
 - [How To Switch Branch on Git](https://devconnected.com/how-to-switch-branch-on-git/)
 - [Git: Pull All Branches](https://careerkarma.com/blog/git-pull-all-branches/)
 `git fetch --all`, `git pull --all`
-- [A3.8 Appendix C: Команды Git - Внесение исправлений](https://git-scm.com/book/ru/v2/Appendix-C%3A-%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9)
+- [A3.8 Appendix C: РљРѕРјР°РЅРґС‹ Git - Р’РЅРµСЃРµРЅРёРµ РёСЃРїСЂР°РІР»РµРЅРёР№](https://git-scm.com/book/ru/v2/Appendix-C%3A-%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-Git-%D0%92%D0%BD%D0%B5%D1%81%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9)
 - [remote: fatal: pack exceeds maximum allowed size after migrate #3758](https://github.com/git-lfs/git-lfs/issues/3758)
 `git rev-list --reverse master | ruby -ne 'i ||= 0; i += 1; puts $_ if i % 2000 == 0' | xargs -I{} git push origin +{}:refs/heads/master`
 	- COOL! [git push up to a certain commit](https://pradeeppant.com/2019/05/06/git-push-up-to-a-certain-commit/)
@@ -146,8 +146,8 @@ x5scm   https://scm.x5.ru/bms-analytics/x5-bms-diagnostics2.git (push)
 de7e2a469a28d4d74fd4597369cebabd0832636a Test commit for new post
 f61b48cb8b1877721e2596a6aa65648a68bb605e new post
 ```
-Команда `git rev-list --reverse master` дает список коммитов в прямом хронологическом порядке, от начала до текущего момента
-Дальше помещаем коммит за коммитом: `git push x5scm 10955ac50fb90220c03d077d2cb4e79d01a3bea0:refs/heads/master`. Важная добавка -- в конце после :
+РљРѕРјР°РЅРґР° `git rev-list --reverse master` РґР°РµС‚ СЃРїРёСЃРѕРє РєРѕРјРјРёС‚РѕРІ РІ РїСЂСЏРјРѕРј С…СЂРѕРЅРѕР»РѕРіРёС‡РµСЃРєРѕРј РїРѕСЂСЏРґРєРµ, РѕС‚ РЅР°С‡Р°Р»Р° РґРѕ С‚РµРєСѓС‰РµРіРѕ РјРѕРјРµРЅС‚Р°
+Р”Р°Р»СЊС€Рµ РїРѕРјРµС‰Р°РµРј РєРѕРјРјРёС‚ Р·Р° РєРѕРјРјРёС‚РѕРј: `git push x5scm 10955ac50fb90220c03d077d2cb4e79d01a3bea0:refs/heads/master`. Р’Р°Р¶РЅР°СЏ РґРѕР±Р°РІРєР° -- РІ РєРѕРЅС†Рµ РїРѕСЃР»Рµ :
 ```
 library(tidyverse)
 library(processx)
@@ -155,38 +155,38 @@ library(stringi)
 
 
 # m <- processx::run("git", args = c("log", "--pretty=oneline"))
-# получаем список коммитов от даты создания и до текущего момента
+# РїРѕР»СѓС‡Р°РµРј СЃРїРёСЃРѕРє РєРѕРјРјРёС‚РѕРІ РѕС‚ РґР°С‚С‹ СЃРѕР·РґР°РЅРёСЏ Рё РґРѕ С‚РµРєСѓС‰РµРіРѕ РјРѕРјРµРЅС‚Р°
 sha <- processx::run("git", args = c("rev-list", "--reverse", "master"))
 
 unlist(stri_split_lines(sha$stdout, omit_empty = TRUE)) %>%
   # walk(~{print(.x)})
   walk(~{
     processx::run("git", args = c("push", "x5scm", paste0(.x, ":refs/heads/master")),
-                  # если коммиты идут поверх, пропускаем ошибки
+                  # РµСЃР»Рё РєРѕРјРјРёС‚С‹ РёРґСѓС‚ РїРѕРІРµСЂС…, РїСЂРѕРїСѓСЃРєР°РµРј РѕС€РёР±РєРё
                   error_on_status = FALSE, echo_cmd = TRUE, echo = TRUE)
       # print()
   })
 ```
-- Получил проблему случайно [Updates Were Rejected Because the Tip of Your Current Branch Is Behind: Solution](https://www.positioniseverything.net/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind)
-- [Fix git “tip of your current branch is behind its remote counterpart” - 4 real-world solutions](https://codewithhugo.com/fix-git-failed-to-push-updates-were-rejected/)
+- РџРѕР»СѓС‡РёР» РїСЂРѕР±Р»РµРјСѓ СЃР»СѓС‡Р°Р№РЅРѕ [Updates Were Rejected Because the Tip of Your Current Branch Is Behind: Solution](https://www.positioniseverything.net/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind)
+- [Fix git вЂњtip of your current branch is behind its remote counterpartвЂќ - 4 real-world solutions](https://codewithhugo.com/fix-git-failed-to-push-updates-were-rejected/)
 - SmartGit. [Modifying the History](https://docs.syntevo.com/SmartGit/HowTos/Modifying-the-History.html)
 - SmartGit. [Interactive Rebase](https://docs.syntevo.com/SmartGit/Latest/Rebase-Interactive.html)
 - [Rewriting history](https://www.atlassian.com/git/tutorials/rewriting-history). `Git commit --amend` and other methods of rewriting history
 - COOL! [How do I make Git ignore file mode (chmod) changes?]()https://stackoverflow.com/questions/1580596/how-do-i-make-git-ignore-file-mode-chmod-changes	
 
-## Упражнения по возврату назад
-- [Сравнение 5 команд Git: revert, checkout, reset, merge и rebase](https://proglib.io/p/sravnenie-5-komand-git-revert-checkout-reset-merge-i-rebase-2020-05-25)
+## РЈРїСЂР°Р¶РЅРµРЅРёСЏ РїРѕ РІРѕР·РІСЂР°С‚Сѓ РЅР°Р·Р°Рґ
+- [РЎСЂР°РІРЅРµРЅРёРµ 5 РєРѕРјР°РЅРґ Git: revert, checkout, reset, merge Рё rebase](https://proglib.io/p/sravnenie-5-komand-git-revert-checkout-reset-merge-i-rebase-2020-05-25)
 - [Git Revert](https://www.atlassian.com/git/tutorials/undoing-changes/git-revert)
 
-## Откаты на специфические версии
+## РћС‚РєР°С‚С‹ РЅР° СЃРїРµС†РёС„РёС‡РµСЃРєРёРµ РІРµСЂСЃРёРё
 - [How can I switch my git repository to a particular commit](https://stackoverflow.com/questions/4940054/how-can-i-switch-my-git-repository-to-a-particular-commit)
-Раньше: `git checkout -b new_branch 6e559cb`
-Теперь можно проще: `git switch --detach revison`
+Р Р°РЅСЊС€Рµ: `git checkout -b new_branch 6e559cb`
+РўРµРїРµСЂСЊ РјРѕР¶РЅРѕ РїСЂРѕС‰Рµ: `git switch --detach revison`
 
 # GitHub authentication
-- [Git push results in “Authentication Failed”](https://stackoverflow.com/questions/17659206/git-push-results-in-authentication-failed). Снимаем галочки при инсталляции, чистим Windows Credential Manager
+- [Git push results in вЂњAuthentication FailedвЂќ](https://stackoverflow.com/questions/17659206/git-push-results-in-authentication-failed). РЎРЅРёРјР°РµРј РіР°Р»РѕС‡РєРё РїСЂРё РёРЅСЃС‚Р°Р»Р»СЏС†РёРё, С‡РёСЃС‚РёРј Windows Credential Manager
 
-## Настрока `.gitignore`
+## РќР°СЃС‚СЂРѕРєР° `.gitignore`
 - [gitignore - Specifies intentionally untracked files to ignore](https://git-scm.com/docs/gitignore)
 - [gitignore.io](https://www.gitignore.io). Create useful .gitignore files for your project
 
@@ -204,35 +204,35 @@ data/*
 output/*
 !output/.gitkeep
 
-# Миграция gitlab-gitlab
+# РњРёРіСЂР°С†РёСЏ gitlab-gitlab
 - [How to copy a Gitlab project to another Gitlab repository?](https://stackoverflow.com/questions/53155915/how-to-copy-a-gitlab-project-to-another-gitlab-repository)
 
-# Миграция с Mercurial (Bitbucket кинул)
-Рабочая процедура, конвертировал локальный репозиторий и поместил в `https://github.com/iMissile/bb-import/`
-1. Ставим TortoseHG 5.0.2. Включаем в контекстном меню плагины `hg-git` и `convert`.
-2. Копируем текущий Mercurial репозиторий в резервную папку.
-3. Прогоняем в ней ниже приведенный питоновский скрипт для подготовки матчинга имен файлов в разных кодировках.
+# РњРёРіСЂР°С†РёСЏ СЃ Mercurial (Bitbucket РєРёРЅСѓР»)
+Р Р°Р±РѕС‡Р°СЏ РїСЂРѕС†РµРґСѓСЂР°, РєРѕРЅРІРµСЂС‚РёСЂРѕРІР°Р» Р»РѕРєР°Р»СЊРЅС‹Р№ СЂРµРїРѕР·РёС‚РѕСЂРёР№ Рё РїРѕРјРµСЃС‚РёР» РІ `https://github.com/iMissile/bb-import/`
+1. РЎС‚Р°РІРёРј TortoseHG 5.0.2. Р’РєР»СЋС‡Р°РµРј РІ РєРѕРЅС‚РµРєСЃС‚РЅРѕРј РјРµРЅСЋ РїР»Р°РіРёРЅС‹ `hg-git` Рё `convert`.
+2. РљРѕРїРёСЂСѓРµРј С‚РµРєСѓС‰РёР№ Mercurial СЂРµРїРѕР·РёС‚РѕСЂРёР№ РІ СЂРµР·РµСЂРІРЅСѓСЋ РїР°РїРєСѓ.
+3. РџСЂРѕРіРѕРЅСЏРµРј РІ РЅРµР№ РЅРёР¶Рµ РїСЂРёРІРµРґРµРЅРЅС‹Р№ РїРёС‚РѕРЅРѕРІСЃРєРёР№ СЃРєСЂРёРїС‚ РґР»СЏ РїРѕРґРіРѕС‚РѕРІРєРё РјР°С‚С‡РёРЅРіР° РёРјРµРЅ С„Р°Р№Р»РѕРІ РІ СЂР°Р·РЅС‹С… РєРѕРґРёСЂРѕРІРєР°С….
 `hg manifest --all | C:\Rtools\mingw_64\opt\bin\python.exe rename.py > rename.txt`
-4. Создаем локально bare репозиторий git (в какой-нибудь папке)
+4. РЎРѕР·РґР°РµРј Р»РѕРєР°Р»СЊРЅРѕ bare СЂРµРїРѕР·РёС‚РѕСЂРёР№ git (РІ РєР°РєРѕР№-РЅРёР±СѓРґСЊ РїР°РїРєРµ)
 `git init --bare bare_repo`
-5. В директории с Mercurail репозиторием навешиваем бранч `hg` на репозиторий и делаем коммит в bare git репозиторий
+5. Р’ РґРёСЂРµРєС‚РѕСЂРёРё СЃ Mercurail СЂРµРїРѕР·РёС‚РѕСЂРёРµРј РЅР°РІРµС€РёРІР°РµРј Р±СЂР°РЅС‡ `hg` РЅР° СЂРµРїРѕР·РёС‚РѕСЂРёР№ Рё РґРµР»Р°РµРј РєРѕРјРјРёС‚ РІ bare git СЂРµРїРѕР·РёС‚РѕСЂРёР№
 `hg bookmarks hg`
 `hg push path\to\bare_repo`
-6. Делаем обычный клон non-bare репозитория, ключевой момент -- вытягиваем бранч hg, чтобы не получить ошибку 'remote HEAD refers to nonexisting ref, unable to checkout'
-`git clone -b hg git_bare_repo git_regular_repo`, например, `git clone -b hg D:\tmp\0\bare_repo D:\tmp\0\bb_import`
-7. Создаем чистый репозиторий в GitHub
-8. Переносим remote в локальном репозитории на github: 
+6. Р”РµР»Р°РµРј РѕР±С‹С‡РЅС‹Р№ РєР»РѕРЅ non-bare СЂРµРїРѕР·РёС‚РѕСЂРёСЏ, РєР»СЋС‡РµРІРѕР№ РјРѕРјРµРЅС‚ -- РІС‹С‚СЏРіРёРІР°РµРј Р±СЂР°РЅС‡ hg, С‡С‚РѕР±С‹ РЅРµ РїРѕР»СѓС‡РёС‚СЊ РѕС€РёР±РєСѓ 'remote HEAD refers to nonexisting ref, unable to checkout'
+`git clone -b hg git_bare_repo git_regular_repo`, РЅР°РїСЂРёРјРµСЂ, `git clone -b hg D:\tmp\0\bare_repo D:\tmp\0\bb_import`
+7. РЎРѕР·РґР°РµРј С‡РёСЃС‚С‹Р№ СЂРµРїРѕР·РёС‚РѕСЂРёР№ РІ GitHub
+8. РџРµСЂРµРЅРѕСЃРёРј remote РІ Р»РѕРєР°Р»СЊРЅРѕРј СЂРµРїРѕР·РёС‚РѕСЂРёРё РЅР° github: 
 `git remote set-url origin https://github.com/iMissile/bb-import.git`
-9. Загоняем все в облако
+9. Р—Р°РіРѕРЅСЏРµРј РІСЃРµ РІ РѕР±Р»Р°РєРѕ
 `git push -u --all`
-10. Переименуем в облаке бранч hg в master, пользуемся подсказками github для перенастройки локального репозитория тоже:
+10. РџРµСЂРµРёРјРµРЅСѓРµРј РІ РѕР±Р»Р°РєРµ Р±СЂР°РЅС‡ hg РІ master, РїРѕР»СЊР·СѓРµРјСЃСЏ РїРѕРґСЃРєР°Р·РєР°РјРё github РґР»СЏ РїРµСЂРµРЅР°СЃС‚СЂРѕР№РєРё Р»РѕРєР°Р»СЊРЅРѕРіРѕ СЂРµРїРѕР·РёС‚РѕСЂРёСЏ С‚РѕР¶Рµ:
 ```
 git branch -m hg master
 git fetch origin
 git branch -u origin/master master
 git remote set-head origin -a
 ```
-11. ВСЁ, победа! Файлы на русском языке, комментарии тоже.
+11. Р’РЎРЃ, РїРѕР±РµРґР°! Р¤Р°Р№Р»С‹ РЅР° СЂСѓСЃСЃРєРѕРј СЏР·С‹РєРµ, РєРѕРјРјРµРЅС‚Р°СЂРёРё С‚РѕР¶Рµ.
 
 - [Free Mercurial Hosting With Helix TeamHub](https://www.perforce.com/hth/mercurial-hosting)
 	- [Migrating existing Mercurial (HG) repositories to Helix TeamHub](https://www.perforce.com/manuals/teamhub-user/Content/HTH-User/mercurial.html)
@@ -242,10 +242,10 @@ git remote set-head origin -a
 - [the Hg-Git mercurial plugin](https://hg-git.github.io/)
 - [About GitHub Importer](https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/about-github-importer)
 If you have source code in Subversion, Mercurial, Team Foundation Version Control (TFVC), or another Git repository, you can move it to GitHub using GitHub Importer.
-- [Переход с Mercurial на GIT в Atlassian Bitbucket с сохранением файлов в кириллице](https://habr.com/ru/post/483454/). В комментариях:
-Получилось сконвертировать из Mercurial в Git репозиторий, содержащий русскоязычные имена файлов, и созданный на TortoiseHg 3.5.2 под Windows.
+- [РџРµСЂРµС…РѕРґ СЃ Mercurial РЅР° GIT РІ Atlassian Bitbucket СЃ СЃРѕС…СЂР°РЅРµРЅРёРµРј С„Р°Р№Р»РѕРІ РІ РєРёСЂРёР»Р»РёС†Рµ](https://habr.com/ru/post/483454/). Р’ РєРѕРјРјРµРЅС‚Р°СЂРёСЏС…:
+РџРѕР»СѓС‡РёР»РѕСЃСЊ СЃРєРѕРЅРІРµСЂС‚РёСЂРѕРІР°С‚СЊ РёР· Mercurial РІ Git СЂРµРїРѕР·РёС‚РѕСЂРёР№, СЃРѕРґРµСЂР¶Р°С‰РёР№ СЂСѓСЃСЃРєРѕСЏР·С‹С‡РЅС‹Рµ РёРјРµРЅР° С„Р°Р№Р»РѕРІ, Рё СЃРѕР·РґР°РЅРЅС‹Р№ РЅР° TortoiseHg 3.5.2 РїРѕРґ Windows.
 
-Конвертация удалась на версии TortoiseHg 5.0.2 (на многих других версиях, как более старых, так и более новых, конвертация оказывалась невозможна, где то расширение hg-git не работает, где то ещё что то). Эта версия под винду включает в себя расширение hg-git, никаких других расширений устанавливать не было необходимости.
+РљРѕРЅРІРµСЂС‚Р°С†РёСЏ СѓРґР°Р»Р°СЃСЊ РЅР° РІРµСЂСЃРёРё TortoiseHg 5.0.2 (РЅР° РјРЅРѕРіРёС… РґСЂСѓРіРёС… РІРµСЂСЃРёСЏС…, РєР°Рє Р±РѕР»РµРµ СЃС‚Р°СЂС‹С…, С‚Р°Рє Рё Р±РѕР»РµРµ РЅРѕРІС‹С…, РєРѕРЅРІРµСЂС‚Р°С†РёСЏ РѕРєР°Р·С‹РІР°Р»Р°СЃСЊ РЅРµРІРѕР·РјРѕР¶РЅР°, РіРґРµ С‚Рѕ СЂР°СЃС€РёСЂРµРЅРёРµ hg-git РЅРµ СЂР°Р±РѕС‚Р°РµС‚, РіРґРµ С‚Рѕ РµС‰С‘ С‡С‚Рѕ С‚Рѕ). Р­С‚Р° РІРµСЂСЃРёСЏ РїРѕРґ РІРёРЅРґСѓ РІРєР»СЋС‡Р°РµС‚ РІ СЃРµР±СЏ СЂР°СЃС€РёСЂРµРЅРёРµ hg-git, РЅРёРєР°РєРёС… РґСЂСѓРіРёС… СЂР°СЃС€РёСЂРµРЅРёР№ СѓСЃС‚Р°РЅР°РІР»РёРІР°С‚СЊ РЅРµ Р±С‹Р»Рѕ РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё.
 `hg manifest --all | C:\Rtools\mingw_64\opt\bin\python.exe rename.py > rename.txt`
 
 ```
@@ -258,16 +258,16 @@ for path in sys.stdin:
     new = old.decode("cp1251").encode("utf-8")
     print 'rename "%s" "%s"' % (old, new)
 ```
-- `hg convert --filemap rename.txt D:\tmp\0\iwork.HG.clone D:\tmp\0\hg_temp`. Только convert надо включать в extension HG или TortoisehHG
+- `hg convert --filemap rename.txt D:\tmp\0\iwork.HG.clone D:\tmp\0\hg_temp`. РўРѕР»СЊРєРѕ convert РЅР°РґРѕ РІРєР»СЋС‡Р°С‚СЊ РІ extension HG РёР»Рё TortoisehHG
 - `hg push D:\tmp\0\bare_repo`
-- `git clone D:\tmp\0\bare_repo -b hg D:\tmp\0\bb_import` # клонируем конкретную ветку
-- меняем внешний репозиторий на облачный гит
-- делаем пуш всех веток: `git push -u --all`
-получаем ошибку "remote HEAD refers to nonexisting ref, unable to checkout". [warning: remote HEAD refers to nonexistent ref, unable to checkout](https://stackoverflow.com/questions/11893678/warning-remote-head-refers-to-nonexistent-ref-unable-to-checkout)
-Смотрим с помощью `git branch -a`. Видим букмарк `hg`
-[Изыскания](https://stackoverflow.com/questions/10710250/converting-mercurial-folder-to-a-git-repository/31827990#31827990)
+- `git clone D:\tmp\0\bare_repo -b hg D:\tmp\0\bb_import` # РєР»РѕРЅРёСЂСѓРµРј РєРѕРЅРєСЂРµС‚РЅСѓСЋ РІРµС‚РєСѓ
+- РјРµРЅСЏРµРј РІРЅРµС€РЅРёР№ СЂРµРїРѕР·РёС‚РѕСЂРёР№ РЅР° РѕР±Р»Р°С‡РЅС‹Р№ РіРёС‚
+- РґРµР»Р°РµРј РїСѓС€ РІСЃРµС… РІРµС‚РѕРє: `git push -u --all`
+РїРѕР»СѓС‡Р°РµРј РѕС€РёР±РєСѓ "remote HEAD refers to nonexisting ref, unable to checkout". [warning: remote HEAD refers to nonexistent ref, unable to checkout](https://stackoverflow.com/questions/11893678/warning-remote-head-refers-to-nonexistent-ref-unable-to-checkout)
+РЎРјРѕС‚СЂРёРј СЃ РїРѕРјРѕС‰СЊСЋ `git branch -a`. Р’РёРґРёРј Р±СѓРєРјР°СЂРє `hg`
+[РР·С‹СЃРєР°РЅРёСЏ](https://stackoverflow.com/questions/10710250/converting-mercurial-folder-to-a-git-repository/31827990#31827990)
 The hg bookmark is necessary to prevent problems as otherwise hg-git pushes to the currently checked out branch confusing Git. This will create a branch named hg in the Git repository. To get the changes in master use the following commands (only necessary in the first run, later just use git merge or rebase):
-Делаем в клоне репозитория
+Р”РµР»Р°РµРј РІ РєР»РѕРЅРµ СЂРµРїРѕР·РёС‚РѕСЂРёСЏ
 ```
 $ cd git-repo
 $ git checkout -b hg
@@ -276,39 +276,39 @@ $ git checkout -b hg
 - [Mercurial convert with --filemap fails with any dummy rename](https://stackoverflow.com/questions/57430015/mercurial-convert-with-filemap-fails-with-any-dummy-rename)
 
 - [How to Convert a Mercurial Repository to Git on Windows](https://markheath.net/post/how-to-convert-mercurial-repository-to)
- 	- Step 1 – Clone hg-git
+ 	- Step 1 вЂ“ Clone hg-git
  	- Step 2 - Add hg-git as an extension
-	- Step 3 – Create a bare git repo to convert into
+	- Step 3 вЂ“ Create a bare git repo to convert into
 		`git init --bare git_repo`
-	- Step 4 – Push to Git from Mercurial
+	- Step 4 вЂ“ Push to Git from Mercurial
 		`hg bookmarks hg`
 		`hg push path\to\git_repo`
-	- Step 5 – Get a non-bare git repository
+	- Step 5 вЂ“ Get a non-bare git repository
 		`git clone git_bare_repo git_regular_repo`
-- **Решение**
-	- Был hg репозиторий на локальной машине, запушил его на Helix TeamHub
-	- GitHub Importer -- импортируем с Helix на GH
+- **Р РµС€РµРЅРёРµ**
+	- Р‘С‹Р» hg СЂРµРїРѕР·РёС‚РѕСЂРёР№ РЅР° Р»РѕРєР°Р»СЊРЅРѕР№ РјР°С€РёРЅРµ, Р·Р°РїСѓС€РёР» РµРіРѕ РЅР° Helix TeamHub
+	- GitHub Importer -- РёРјРїРѕСЂС‚РёСЂСѓРµРј СЃ Helix РЅР° GH
 
 
-## перевод на personal_token
-- [SmartGit, unable to push, “remote: HTTP Basic: Access denied”](https://stackoverflow.com/questions/60272933/smartgit-unable-to-push-remote-http-basic-access-denied)
-При попытке в win посмотреть локацию паролей запускаем команду `git config credential.helper`
+## РїРµСЂРµРІРѕРґ РЅР° personal_token
+- [SmartGit, unable to push, вЂњremote: HTTP Basic: Access deniedвЂќ](https://stackoverflow.com/questions/60272933/smartgit-unable-to-push-remote-http-basic-access-denied)
+РџСЂРё РїРѕРїС‹С‚РєРµ РІ win РїРѕСЃРјРѕС‚СЂРµС‚СЊ Р»РѕРєР°С†РёСЋ РїР°СЂРѕР»РµР№ Р·Р°РїСѓСЃРєР°РµРј РєРѕРјР°РЅРґСѓ `git config credential.helper`
 If it returns "manager", open your Windows Credentials Manager and check if credentials are already stored for gitlab.com.
 If so, delete it, then push again: Git should ask for your credentials. Do enter your PAT (Personal Access Token) as password.
 
-- Для перезапроса токена в windows credential manager необходимо его удалить в системе.
+- Р”Р»СЏ РїРµСЂРµР·Р°РїСЂРѕСЃР° С‚РѕРєРµРЅР° РІ windows credential manager РЅРµРѕР±С…РѕРґРёРјРѕ РµРіРѕ СѓРґР°Р»РёС‚СЊ РІ СЃРёСЃС‚РµРјРµ.
 	- [Accessing Credential Manager](https://support.microsoft.com/en-us/windows/accessing-credential-manager-1b5c916a-6a16-889f-8581-fc16e8165ac0)
-	- [Доступ к диспетчеру учетных данных](https://support.microsoft.com/ru-ru/windows/%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF-%D0%BA-%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80%D1%83-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-1b5c916a-6a16-889f-8581-fc16e8165ac0)
+	- [Р”РѕСЃС‚СѓРї Рє РґРёСЃРїРµС‚С‡РµСЂСѓ СѓС‡РµС‚РЅС‹С… РґР°РЅРЅС‹С…](https://support.microsoft.com/ru-ru/windows/%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF-%D0%BA-%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%82%D1%87%D0%B5%D1%80%D1%83-%D1%83%D1%87%D0%B5%D1%82%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-1b5c916a-6a16-889f-8581-fc16e8165ac0)
 ```
 Credential Manager lets you view and delete your saved credentials for signing in to websites, connected applications, and networks.
 To open Credential Manager, type *credential manager* in the search box on the taskbar and select Credential Manager Control panel.
 Select Web Credentials or Windows Credentials to access the credentials you want to manage.
 ```
-`Панель управления / Диспетчер учетных данных`
+`РџР°РЅРµР»СЊ СѓРїСЂР°РІР»РµРЅРёСЏ / Р”РёСЃРїРµС‚С‡РµСЂ СѓС‡РµС‚РЅС‹С… РґР°РЅРЅС‹С…`
 - [microsoft/Git-Credential-Manager-Core](https://github.com/microsoft/Git-Credential-Manager-Core). Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services.
 !!! Windows
 GCM Core is included with Git for Windows, and the latest version is included in each new Git for Windows release. This is the preferred way to install GCM Core on Windows. During installation you will be asked to select a credential helper, with GCM Core being set as the default.
-!! [Git-Credential-Manager-Core/docs/usage.md](https://github.com/microsoft/Git-Credential-Manager-Core/blob/main/docs/usage.md). After installation, Git will use Git Credential Manager Core and you will only need to interact with any authentication dialogs asking for credentials. GCM Core stays invisible as much as possible, so ideally you’ll forget that you’re depending on GCM at all.
+!! [Git-Credential-Manager-Core/docs/usage.md](https://github.com/microsoft/Git-Credential-Manager-Core/blob/main/docs/usage.md). After installation, Git will use Git Credential Manager Core and you will only need to interact with any authentication dialogs asking for credentials. GCM Core stays invisible as much as possible, so ideally youвЂ™ll forget that youвЂ™re depending on GCM at all.
 
 Assuming GCM Core has been installed, use your favorite terminal to execute the following commands to interact directly with GCM.
 ```
@@ -316,19 +316,19 @@ git credential-manager-core [<command> [<args>]]
 ```
 - [How one may check whether credential manager in Git has password stored for a given domain?](https://stackoverflow.com/questions/51803825/how-one-may-check-whether-credential-manager-in-git-has-password-stored-for-a-gi)
 
-# Еще одно счастье с уязвимостью
-Появилась ошибка `fatal: unsafe repository (REPO is owned by someone else)`
+# Р•С‰Рµ РѕРґРЅРѕ СЃС‡Р°СЃС‚СЊРµ СЃ СѓСЏР·РІРёРјРѕСЃС‚СЊСЋ
+РџРѕСЏРІРёР»Р°СЃСЊ РѕС€РёР±РєР° `fatal: unsafe repository (REPO is owned by someone else)`
 - [Git security vulnerability announced](https://github.blog/2022-04-12-git-security-vulnerability-announced/)
 Upgrade your local installation of Git, especially if you are using Git for Windows, or you use Git on a multi-user machine.
-- Параметр [`safe.directory`](https://git-scm.com/docs/git-config/2.35.2#Documentation/git-config.txt-safedirectory)
+- РџР°СЂР°РјРµС‚СЂ [`safe.directory`](https://git-scm.com/docs/git-config/2.35.2#Documentation/git-config.txt-safedirectory)
 `git config --global --add safe.directory D:/iwork.GL/habr-articles`
 - [How to add directory recursively on git safe.directory?](https://stackoverflow.com/questions/71855882/how-to-add-directory-recursively-on-git-safe-directory)
-	- вариант 1
+	- РІР°СЂРёР°РЅС‚ 1
 	From Git 2.36, you can also add * representing 'all' to the safe.directory. It's not recursive as you asked, but it may help depending upon your situation i.e.
 ```
 git config --global --add safe.directory *
 ```
-	- вариант 2
+	- РІР°СЂРёР°РЅС‚ 2
 What I did for now, but may not be the perfect solution, is to find all .git folders and add them through a find command.
 ```
 find /full/path -name '.git' -type d -exec bash -c 'git config --global --add safe.directory ${0%/.git}' {} \;
@@ -338,10 +338,10 @@ find /full/path -name '.git' -type d -exec bash -c 'git config --global --add sa
   * `.gitconfig` Safe Folder List
   * Developer Tools can set Safe Repo Status
   * Change Folder Ownership
- - Не всегда помогает `safe.directory` *. [git submodule update failed with 'fatal: 	'](https://stackoverflow.com/questions/72978485/git-submodule-update-failed-with-fatal-detected-dubious-ownership-in-repositor)
+ - РќРµ РІСЃРµРіРґР° РїРѕРјРѕРіР°РµС‚ `safe.directory` *. [git submodule update failed with 'fatal: 	'](https://stackoverflow.com/questions/72978485/git-submodule-update-failed-with-fatal-detected-dubious-ownership-in-repositor)
  - [How to correct `git` reporting `detected dubious ownership in repository` without adding `safe.directory` when using WSL?](https://stackoverflow.com/questions/73485958/how-to-correct-git-reporting-detected-dubious-ownership-in-repository-withou)
 
-# Отключаем проверку сертификата
+# РћС‚РєР»СЋС‡Р°РµРј РїСЂРѕРІРµСЂРєСѓ СЃРµСЂС‚РёС„РёРєР°С‚Р°
 - [Server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none](https://stackoverflow.com/questions/21181231/server-certificate-verification-failed-cafile-etc-ssl-certs-ca-certificates-c)
 Eventually, add the `http.sslverify` to your `.git/config`.
 ```
@@ -367,22 +367,22 @@ It goes without saying that this is an insecure way of storing your password but
 or
 `git config --global http.sslVerify false`
 
-## Переиспользование веток
+## РџРµСЂРµРёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РІРµС‚РѕРє
 - [How do I reuse an existing branch name as a new branch?](https://stackoverflow.com/questions/27853471/how-do-i-reuse-an-existing-branch-name-as-a-new-branch)
 - [How to rename a branch, delete a branch, and find the author of a branch in Git](https://opensource.com/article/22/5/git-branch-rename-delete-find-author)
-- [Git Delete Remote Branch – How to Remove a Remote Branch in Git](https://www.freecodecamp.org/news/git-delete-remote-branch/)
+- [Git Delete Remote Branch вЂ“ How to Remove a Remote Branch in Git](https://www.freecodecamp.org/news/git-delete-remote-branch/)
 ```
 git branch -a
 git push origin -d branch-name
 ```
 
-## откат веток назад при кривом мердже
+## РѕС‚РєР°С‚ РІРµС‚РѕРє РЅР°Р·Р°Рґ РїСЂРё РєСЂРёРІРѕРј РјРµСЂРґР¶Рµ
 ```
 git reset --hard origin/master
 git push --force-with-lease origin ilya
 ```
 
-## Редактор сообщений в git (vim)
+## Р РµРґР°РєС‚РѕСЂ СЃРѕРѕР±С‰РµРЅРёР№ РІ git (vim)
 - [How to Modify Git Commit Messages](https://www.baeldung.com/ops/git-commit-message-changes)
-- [Для новичков: 5 советов по GitHub](https://habr.com/ru/companies/goto/articles/352500/)
+- [Р”Р»СЏ РЅРѕРІРёС‡РєРѕРІ: 5 СЃРѕРІРµС‚РѕРІ РїРѕ GitHub](https://habr.com/ru/companies/goto/articles/352500/)
 - [Associating text editors with Git](https://docs.github.com/en/get-started/getting-started-with-git/associating-text-editors-with-git)

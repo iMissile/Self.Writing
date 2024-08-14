@@ -56,6 +56,14 @@ e.g
 `ls | xargs -P10 -I{} git -C {} pull`
 - Посмотреть размер директорий: `du -h --max-depth=1`
 
+# docker
+- [Get Docker run parameters from a running container](https://medium.com/@ddwen/get-docker-run-parameters-from-a-running-container-d352c5cef876)
+	The Runlike provides a packaged container image [assaflavie/runlike].
+	First we pull the image.
+`docker pull assaflavie/runlike`
+Its usage is simple.
+`docker run --rm -v /var/run/docker.sock:/var/run/docker.sock assaflavie/runlike YOUR-CONTAINER`
+
 ## копирование директорий
 - [Rsync (Remote Sync): 10 Practical Examples of Rsync Command in Linux](https://www.tecmint.com/rsync-local-remote-file-synchronization-commands/)
 `rsync -avzP 'root@10.0.0.224:/home/data/mt_admin/files/1002\ External-share/6\ x5/2\ POS/gk_202005/' /ext/logs_202005/`

@@ -104,7 +104,7 @@ https://www.hightechdad.com/2017/02/06/onedrive-sync-issues-how-to-reset-onedriv
 
 ## Homebrew
 - [Homebrew. The missing package manager for OS X](http://brew.sh/)
-	- Error 'Another active Homebrew process is already in progress'. 
+- Error 'Another active Homebrew process is already in progress'. 
 Сработало https://stackoverflow.com/questions/39797078/another-active-homebrew-process-is-already-in-progress
 `rm -rf "$(brew --prefix)/var/homebrew/locks"`
 

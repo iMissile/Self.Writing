@@ -1536,6 +1536,10 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 - [Dealing with big-M constraints](https://www.gurobi.com/documentation/current/refman/dealing_with_big_m_constra.html)
 
 
+# 17.08.2024
+## R
+- [Simon Urbanek](https://s-u.r-universe.dev/packages)
+
 # 09.08.2024
 ## R
 - Различные примеры. [Use rlang to create a named list programmatically](https://stackoverflow.com/questions/52720292/use-rlang-to-create-a-named-list-programmatically)
