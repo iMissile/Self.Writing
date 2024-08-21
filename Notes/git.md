@@ -386,3 +386,9 @@ git push --force-with-lease origin ilya
 - [How to Modify Git Commit Messages](https://www.baeldung.com/ops/git-commit-message-changes)
 - [Для новичков: 5 советов по GitHub](https://habr.com/ru/companies/goto/articles/352500/)
 - [Associating text editors with Git](https://docs.github.com/en/get-started/getting-started-with-git/associating-text-editors-with-git)
+
+# Разбор команд
+## git push
+- [Опасность `git push —force` и полезность `git push —force-with-lease`](https://urvanov.ru/2017/09/19/%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C-git-push-force-%D0%B8-%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D0%BE%D1%81%D1%82%D1%8C-git-push-force-with-lease/)
+- [Что такое git push и как его использовать](https://selectel.ru/blog/tutorials/what-is-git-push-and-how-to-use-it/). В инструкции рассказываем о наиболее частых сценариях использования git push.
+- [Understanding the Differences Between Git Push Force and Git Push Force-With-Lease](https://safjan.com/understanding-the-differences-between-git-push-force-and-git-push-force-with-lease/)

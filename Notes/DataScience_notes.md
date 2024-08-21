@@ -1295,7 +1295,12 @@ Stratification, CUPED, Variance-Weighted Estimators, and ML-based methods CUPAC 
 	- [Shark Attack: Clean the Ocean] Shiny app: mdubel.shinyapps.io/shark-attack/ Repo: github.com/mdubel/shark-attack
 	- [Bikemap] Shiny app: 2exp3.shinyapps.io/mapa-ciclista/_w_6e13cdc9/ Repo: github.com/2exp3/bikemapp
 
-## Posit::Conf(2023)
+## Posit::conf(2024)
+- [Allen Downey’s keynote at posit::conf(2024)](https://bitsofanalytics.org/posts/dow24pos/dow24pos). Maybe things aren’t as bad as I think. Or, maybe they are. Who knows?]
+	- Slides. [A future of datascience](http://tinyurl.com/dow24pos)
+
+## Posit::conf(2023)
+- [Documenting things & Posit Conference Debrief](https://openscapes.org/blog/2023-09-27-documenting-things-posit-conf/)
 - [Reliable maintenance of machine learning models](https://juliasilge.github.io/ml-maintenance-2023/#/title-slide)
 - [Styling and Templating Quarto Documents](https://emilhvitfeldt.github.io/talk-quarto-theming-positconf/#/section) by Emil hvitfeldt @ posit::conf 2023
 - [{epoxy}. super glue for data-driven reports and Shiny apps](https://slides.garrickadenbuie.com/epoxy-super-glue/) by Garrick Aden-Buie
@@ -1531,6 +1536,7 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 - [Modern SAT solvers: fast, neat and underused (part 3 of N)](https://codingnest.com/modern-sat-solvers-fast-neat-and-underused-part-3-of-n/)
 - [Create a Sudoku Solver in Java](https://www.baeldung.com/java-sudoku)
 - [Clang Static Analyzer and the Z3 constraint solver | Frederic Cambus](https://www.cambus.net/clang-static-analyzer-and-the-z3-constraint-solver/)
+- [Advancing OPEN-SOURCE ai FOR MATH](https://projectnumina.ai/)
 
 ## big-M formulation
 - [Dealing with big-M constraints](https://www.gurobi.com/documentation/current/refman/dealing_with_big_m_constra.html)
@@ -1539,6 +1545,21 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 # 17.08.2024
 ## R
 - [Simon Urbanek](https://s-u.r-universe.dev/packages)
+
+## tidyxl
+- COOL! [Tidying messy Excel data (tidyxl)](https://webbedfeet.netlify.com/post/tidying-messy-excel-data-tidyxl/)
+	- [unpivotr](https://nacnudus.github.io/unpivotr/index.html). unpivotr deals with non-tabular data, especially from spreadsheets.
+	- [tidyxl](https://nacnudus.github.io/tidyxl/). tidyxl imports non-tabular data from Excel files into R.
+- Как детектировать объединенные ячейки (merged cells)?
+	- [Optionally apply merged cells across their range #40 {Open}](https://github.com/nacnudus/tidyxl/issues/40)
+	- [Пример расщепления данных объединенных ячеек](https://github.com/ianmoran11/tidyABS/blob/moreoptions/R/01_unmerge_cells.R)
+	- [Identify Grouped Rows in Excel #77 {Closed}](https://github.com/nacnudus/tidyxl/issues/77)
+- [Going from a human readable Excel file to a machine-readable csv with {tidyxl}](http://www.brodrigues.co/blog/2018-09-11-human_to_machine/)
+
+
+## ML
+- [Transformer в картинках](https://habr.com/ru/articles/486358/)
+- [Attention Is All You Need](https://arxiv.org/pdf/1706.03762)
 
 # 09.08.2024
 ## R
@@ -1549,7 +1570,7 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 - Slides! [rix: reproducible development environments for R programmers](https://raw.githack.com/b-rodrigues/fosdem2024_pres/targets-runs/rendered_slides/fosdem_pres.html#/title-slide) by Bruno Rodrigues
 - Slides. [rix: an R package for reproducible dev environments with Nix] (https://fosdem.org/2024/schedule/event/fosdem-2024-1767-rix-an-r-package-for-reproducible-dev-environments-with-nix/)
 	- Касательно Floating-point & IEEE754
-		- [What Every Computer Scientist Should Know About Floating-Point Arithmetic (1991) -  David Goldberg](https://dl.acm.org/doi/10.1145/103162.103163)
+		- [What Every Computer Scientist Should Know About Floating-Point Arithmetic (1991) - David Goldberg](https://dl.acm.org/doi/10.1145/103162.103163)
 		- [Floating-Point Determinism](https://randomascii.wordpress.com/2013/07/16/floating-point-determinism/)
 		- [numpy.tanh gives different results on Windows and Linux #9187 {Closed}](https://github.com/numpy/numpy/issues/9187)
 
@@ -3239,6 +3260,7 @@ I have focused on the computation rather than the interpretation of the models.
 - COOL! Stats and R. [Student's t-test in R and by hand: how to compare two groups under different scenarios](https://www.statsandr.com/blog/student-s-t-test-in-r-and-by-hand-how-to-compare-two-groups-under-different-scenarios/)
 - COOL! Stats and R. [Correlation coefficient and correlation test in R](https://statsandr.com/blog/correlation-coefficient-and-correlation-test-in-r/)
 - [Outliers detection in R](https://statsandr.com/blog/outliers-detection-in-r/)
+- [Web scraping in R](https://statsandr.com/blog/web-scraping-in-r/)
 
 ## CSS
 - COOL! [Web Style Sheets CSS tips & tricks. CENTERING THINGS](https://www.w3.org/Style/Examples/007/center.en.html)
@@ -4949,6 +4971,10 @@ When you change document, you should again press "Show all" to show changes of n
 # 27.05.2021
 ## DS
 - [Чудесный мир Word Embeddings: какие они бывают и зачем нужны?](https://habr.com/ru/company/ods/blog/329410/)
+- [Что такое эмбеддинги и как они помогают искусственному интеллекту понять мир людей](https://www.nkj.ru/open/36052/)
+- [ML: Embedding слов](https://qudata.com/ml/ru/NN_Embedding.html)
+- [Transformer в картинках](https://habr.com/ru/articles/486358/)
+
 - [Introducing WebContainers: Run Node.js natively in your browser](https://blog.stackblitz.com/posts/introducing-webcontainers/)
 - [Чем отличаются ссылки от указателей в С++](https://ru.stackoverflow.com/questions/349/%D0%A7%D0%B5%D0%BC-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B0%D1%8E%D1%82%D1%81%D1%8F-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8-%D0%BE%D1%82-%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9-%D0%B2-%D0%A1)
 - COOL! [What are the differences between a pointer variable and a reference variable in C++?](https://stackoverflow.com/questions/57483/what-are-the-differences-between-a-pointer-variable-and-a-reference-variable-in). Все разложено по полочкам.

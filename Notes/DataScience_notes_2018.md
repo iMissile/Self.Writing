@@ -1831,10 +1831,6 @@ A 'SQL' query generator based on Edgar F. Codd's relational algebra and experien
 # 10.05.2018
 ## R
 - COOL! [Creating new data with max values for each subject](https://webbedfeet.netlify.com/post/creating-new-data-with-max-values-for-each-subject-2/)
-- COOL! [Tidying messy Excel data (tidyxl)](https://webbedfeet.netlify.com/post/tidying-messy-excel-data-tidyxl/)
-	- [unpivotr](https://nacnudus.github.io/unpivotr/index.html). unpivotr deals with non-tabular data, especially from spreadsheets.
-	- [tidyxl](https://nacnudus.github.io/tidyxl/). tidyxl imports non-tabular data from Excel files into R.
-- [Going from a human readable Excel file to a machine-readable csv with {tidyxl}](http://www.brodrigues.co/blog/2018-09-11-human_to_machine/)
 - Как поставить пакеты в R, если есть проблемы с https сертификатами. Выдает ошибку:
 ```
 Warning messages:
