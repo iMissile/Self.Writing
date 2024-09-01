@@ -123,7 +123,7 @@ Alluvial plots are similar to sankey diagrams and visualise categorical data ove
 - COOL! [Streamgraphs in ggplot2 with ggstream](https://r-charts.com/evolution/ggstream/)
 - Проблемы с ggstream. [Error in data.frame(x = full_values$x, y = yy[, iStream * 2], group = as.integer(.group)) : #18 {Open}](https://github.com/davidsjoberg/ggstream/issues/18).
 Ошибка случается здесь: https://github.com/davidsjoberg/ggstream/blob/cfed4bc3d17879b061198f4594397706b6db50f6/R/min_wiggle.R#L120
-`out <- data.frame(x = full_values$x`, выяснил через `debugonce(ggstream:::new_wiggle)`
+`out <- data.frame(x = full_values$x`, выяснил через `debugonce(ggstream:::new\_wiggle)`
 - COOL! [ggpage](https://emilhvitfeldt.github.io/ggpage/). ggpage is a package to create pagestyled visualizations of text based data. It uses ggplot2 and final returns are ggplot2 objects
 - COOL! [wilkelab/ungeviz](https://github.com/wilkelab/ungeviz). Tools for visualizing uncertainty with ggplot2
 - COOL! [Practical ggplot2](https://wilkelab.org/practicalgg/)
@@ -530,10 +530,17 @@ list.files("/tmp/gap")
 }
 ```
 
+# Another widgets & libs
+- [rbokeh](https://hafen.github.io/rbokeh/index.html)
+A native R plotting library that provides a flexible declarative interface for creating interactive web-based graphics, backed by the Bokeh visualization library.
+- [CanvasXpress](https://www.canvasxpress.org/index.html): A JavaScript Library for Data Analytics with Full Audit Trail Capabilities.
+- [rAmCharts](https://datastorm-open.github.io/introduction_ramcharts/index.html) is an R package for interactive charts.
+
 # d3
 - [Fullstack D3 and Data Visualization: Build beautiful data visualizations with D3](https://www.amazon.com/Fullstack-Data-Visualization-beautiful-visualizations/dp/0991344650)
 - [D3 TO R TO D3](https://maya.rbind.io/post/2020/d3-to-r-to-d3/)
 - COOL! [A starting point to explore data visualization using D3.js](https://github.com/TheRobBrennan/explore-data-visualization-with-D3)
+
 
 # ggplot tutorial
 - [Graphic Design with ggplot2](https://rstudio-conf-2022.github.io/ggplot2-graphic-design/). How to Create Engaging and Complex Visualizations in R
@@ -769,3 +776,6 @@ https://stackoverflow.com/questions/49988047/conflict-between-dt-and-plotly-to-s
 # nodejs
 - [Руководство. Node.js для начинающих](https://habr.com/ru/articles/779186/)
 - [Сборка мусора в JavaScript](https://habr.com/ru/articles/779186/)
+
+# Courses
+- [Data Visualization with R](https://datavizf24.classes.andrewheiss.com/resource/ai-bs.html) by Andrew Heiss. Use R, ggplot2, and the principles of graphic design to create beautiful and truthful visualizations of data. 

@@ -250,6 +250,8 @@ This is a list of R developers and advocates on Github. This is to help new come
 - Andrew Gelman and Aki Vehtari
 	- Home page for the book [Regression and Other Stories](https://avehtari.github.io/ROS-Examples/) by Andrew Gelman, Jennifer Hill, and Aki Vehtari, including the code and data for the examples.
 	- Web page for the book [Active Statistics](https://avehtari.github.io/ActiveStatistics/) by Andrew Gelman and Aki Vehtari.
+- [Scaling Up With R and Arrow](https://arrowrbook.com/). Bigger Data, Easier Workflows
+Authors: Nic Crane, Jonathan Keane, and Neal Richardson
 
 ## e-books ML
 - [Deep Learning and Scientific Computing with R torch](https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/) by Sigrid Keydana
@@ -790,15 +792,6 @@ Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'P
 [`base::trace`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/trace.html).
 - Profvis. But see [this FAQ](https://rstudio-pubs-static.s3.amazonaws.com/123888_184f1274483e4970b0a366a8573cfa9f.html#how-do-i-get-code-from-an-r-package-to-show-in-the-code-panel) if you want package code to show up in the code panel.)
 - [Introduction to profvis](https://rstudio-pubs-static.s3.amazonaws.com/123888_184f1274483e4970b0a366a8573cfa9f.html) by Winston Chang, 2016-05-05
-- [R/Shiny: View full stack/execution log](https://stackoverflow.com/questions/63018324/r-shiny-view-full-stack-execution-log). Любопытное решение: 
-I finally found the `profvis` package that does more-or-less exactly what I want by taking a snapshot of the execution stack at a fixed time interval (default 10ms).
-```
-library(profvis)
-exec_log <- profvis(runApp("myShinyApp"))
-# ...interact with the myShinyApp web page enough to trigger the bug, then interrupt execution...
-print(exec_log)
-```
-- COOL! [Stack traces in R](https://github.com/rstudio/shiny/wiki/Stack-traces-in-R) by Joe Cheng 
 - COOL!!! [How do I get code from an R package to show in the code panel?](https://rstudio-pubs-static.s3.amazonaws.com/123888_184f1274483e4970b0a366a8573cfa9f.html#how-do-i-get-code-from-an-r-package-to-show-in-the-code-panel)
 In typical use, only code written by the user is shown in the code panel. (This is code for which source references are available.) Yellow blocks in the flame graph have corresponding lines of code in the code panel, and when moused over, the line of code will be highlighted. White blocks in the flame graph don’t have corresponding lines in the code panel. In most cases, the calls represented by the white blocks are to functions that are in base R and other packages.
 
@@ -893,12 +886,23 @@ You can provide information about your app that Shiny showcase will use by creat
 - [Chrome Lighthouse extension](https://developers.google.com/web/tools/lighthouse/). Lighthouse is an open-source, automated tool for improving the performance, quality, and correctness of your web apps.
 - [Id conflict and shiny 'server' function doesn't start, why?](https://community.rstudio.com/t/id-conflict-and-shiny-server-function-doesnt-start-why/3966)
 	- [Reuse the same output binding on different tab panels #867 {Closed}](https://github.com/rstudio/shiny/issues/867)
+- [R/Shiny: View full stack/execution log](https://stackoverflow.com/questions/63018324/r-shiny-view-full-stack-execution-log). Любопытное решение: 
+I finally found the `profvis` package that does more-or-less exactly what I want by taking a snapshot of the execution stack at a fixed time interval (default 10ms).
+```
+library(profvis)
+exec_log <- profvis(runApp("myShinyApp"))
+# ...interact with the myShinyApp web page enough to trigger the bug, then interrupt execution...
+print(exec_log)
+```
+- COOL! [Stack traces in R](https://github.com/rstudio/shiny/wiki/Stack-traces-in-R) by Joe Cheng 
 
 ## Test shiny
 - [reactor](https://github.com/yonicd/reactor/tree/slides). yonicd.github.io/reactor. unit testing for shiny reactivity
 - [Cypress](https://www.cypress.io/). With Cypress, you can easily create tests for your modern web applications, debug them visually, and automatically run them in your continuous integration builds.
 
 - [shiny-options](https://shiny.posit.co/r/reference/shiny/1.3.0/shiny-options.html)
+- [Maximizing Efficiency: A Guide to Benchmarking Memory Usage in Shiny Apps](https://appsilon.com/benchmarking-memory-usage-in-shiny-apps/)
+- [Make R Shiny Dashboards Faster with updateInput, CSS, and JavaScript](https://www.appsilon.com/post/r-shiny-faster-updateinput-css-javascript)
 
 ## R as cmd script
 - [Startup. Initialization At Start Of An R Session](https://www.rdocumentation.org/packages/base/versions/3.4.3/topics/Startup)
@@ -1488,6 +1492,7 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 - [Заблуждения Clean Architecture](https://habr.com/ru/companies/mobileup/articles/335382/)
 
 
+
 # R установка proffer
 1. На Windows Go, при наличии прав, по умолчанию ставится в `C:\Program Files\Go\`, а в  переменные окружения запихивается в пользовательскую директорию. Естественно, что все не находится. Надо править руками. `GOPATH` и `PATH`.
 `PATH` -> `%ProgramFiles%\go\bin`, `GOPATH` -> с `%USERPROFILE%\go` на `%ProgramFiles%\go`
@@ -1541,10 +1546,24 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 ## big-M formulation
 - [Dealing with big-M constraints](https://www.gurobi.com/documentation/current/refman/dealing_with_big_m_constra.html)
 
+# 31.08.2024
+## R
+- [Iterate over list of Functions in R](https://stackoverflow.com/questions/40780353/iterate-over-list-of-functions-in-r)
+- [purrr. Invoke functions](https://purrr.tidyverse.org/reference/invoke.html) These functions were superded in purrr 0.3.0 and deprecated in purrr 1.0.0.
+- [purrr:list_rbind() versus `dplyr::bind_rows()`](https://forum.posit.co/t/purrr-list-rbind-versus-dplyr-bind-rows/164411)
+	* `dplyr::bind_rows()` can take multiple dataframes, lists of dataframes, lists containing named items, lists of lists containing named items, or any combination of these types
+	* `purrr::list_rbind()` can only take a list of dataframes / NULLs
+- [How to sort a tibble by column order? (first column, second column, third...)](https://stackoverflow.com/questions/68722592/how-to-sort-a-tibble-by-column-order-first-column-second-column-third)
+`x |> arrange(across(everything()))`
+- [dplyr: order columns alphabetically in R](https://stackoverflow.com/questions/29873293/dplyr-order-columns-alphabetically-in-r)
 
 # 17.08.2024
 ## R
 - [Simon Urbanek](https://s-u.r-universe.dev/packages)
+- COOL! [R kernel for Jupyter Notebook](https://irkernel.github.io/)
+
+## Dev
+- [Об архитекторе](https://blog.gelin.ru/2014/02/blog-post.html)
 
 ## tidyxl
 - COOL! [Tidying messy Excel data (tidyxl)](https://webbedfeet.netlify.com/post/tidying-messy-excel-data-tidyxl/)
@@ -1594,6 +1613,8 @@ Then `getOption("shiny.testmode")` is `TRUE` when 'shinytest' is running the app
 - [How to Write Tests with shiny::testServer Similar to shinytest2](https://www.appsilon.com/post/how-to-write-tests-with-shiny-testserver)
 - [End-to-end testing with shinytest2: Part 1](https://www.jumpingrivers.com/blog/end-to-end-testing-shinytest2-part-1/)
 - [Choosing a selectize value that's not initially loaded (because of maxOptions) #232 {Open}](https://github.com/rstudio/shinytest2/issues/232)
+- BUG! [ChromoteSession$screenshot() triggers a page resize before screenshot. #96 {Open}](https://github.com/rstudio/chromote/issues/96)
+	- [Update shinytest2 screenshot defaults to avoid relayout issues #367 {Open}](https://github.com/rstudio/shinytest2/issues/367)
 
 
 ### cypress
@@ -2054,7 +2075,6 @@ Environment](https://appsilon.com/renv-with-docker/)
 - [Nix notes](https://www.brodrigues.co/tags/nix/)
 - [Cliff notes about the cli package](https://blog.r-hub.io/2023/11/30/cliff-notes-about-cli/)
 - COOL! [Renv with Docker: How to Dockerize a Shiny Application with an Reproducible 
-- [Maximizing Efficiency: A Guide to Benchmarking Memory Usage in Shiny Apps](https://appsilon.com/benchmarking-memory-usage-in-shiny-apps/)
 - [R Client for access to multiple data repository services](https://github.com/ropenscilabs/deposits)
 	- [deposits R Package Delivers a Common Workflow for R Users](https://www.r-consortium.org/blog/2023/11/30/deposits-r-package-delivers-a-common-workflow-for-r-users)
 	- ebooks. [Geocomputation with R comptetition: book cover for the 2nd edition](https://geocompx.org/post/2023/map-cover-competition/index.html)
@@ -4270,8 +4290,6 @@ Ordination methods, diversity analysis and other functions for community and veg
 - [interpolate irregular x,y data points into regular grid for contour mapping](https://stackoverflow.com/questions/38176265/interpolate-irregular-x-y-data-points-into-regular-grid-for-contour-mapping)
 - [akima: Interpolation of Irregularly and Regularly Spaced Data](https://cran.r-project.org/web/packages/akima/)
 
-## Shiny
-- [Make R Shiny Dashboards Faster with updateInput, CSS, and JavaScript](https://appsilon.com/r-shiny-faster-updateinput-css-javascript/)
 
 # 18.11.2021
 ## R

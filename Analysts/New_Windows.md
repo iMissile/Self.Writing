@@ -336,6 +336,7 @@ ipconfig /flushdns  и нажмите Enter.
 - [Clover 3](http://en.ejie.me/). Wings for your Windows Explorer! Clover is an extension of the Windows Explorer, to add multi-tab functionality similar to Google Chrome browser. After install Clover, you will be able to open multiple folders within the same window, and you can also add folder bookmarks.
 
 - [6 Best Free Video Metadata Editor Software For Windows](https://listoffreeware.com/free-video-metadata-editor-software-windows/)
+- [How to strip audio streams from an MKV file?](https://superuser.com/questions/77504/how-to-strip-audio-streams-from-an-mkv-file)
 
 - [GUIformat: FAT32 format](http://www.ridgecrop.demon.co.uk/index.htm?guiformat.htm) I finally got round to doing a Windows GUI version of fat32format.
 - [Hard disk information from command prompt](https://social.technet.microsoft.com/Forums/windowsserver/en-US/a2f8e48e-38fc-4bc6-9e0e-e7cedea83d66/hard-disk-information-from-command-prompt?forum=winservergen)

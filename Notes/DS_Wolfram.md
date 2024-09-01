@@ -1,3 +1,8 @@
+# 27.08.2024
+А как же работать в Wolfram с размерными величинами?
+- [Units & Quantities](https://reference.wolfram.com/language/guide/Units.html)
+- [Units Overview](https://reference.wolfram.com/language/tutorial/UnitsOverview.html)
+
 # 15.05.2024
 Разбираемся как из системы уравнений получать одно, развертывая подстановки.
 - [Substitution of an expression into another expression](https://mathematica.stackexchange.com/questions/195396/substitution-of-an-expression-into-another-expression)
