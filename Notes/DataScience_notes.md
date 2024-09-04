@@ -1302,6 +1302,9 @@ Stratification, CUPED, Variance-Weighted Estimators, and ML-based methods CUPAC 
 ## Posit::conf(2024)
 - [Allen Downey’s keynote at posit::conf(2024)](https://bitsofanalytics.org/posts/dow24pos/dow24pos). Maybe things aren’t as bad as I think. Or, maybe they are. Who knows?]
 	- Slides. [A future of datascience](http://tinyurl.com/dow24pos)
+- [Five highlights from posit::conf(2024)](https://posit.co/blog/five-highlights-from-posit-conf-2024/), 2024-08-22
+- [posit::conf(2024)](https://github.com/rstudio/rstudio-conf/blob/master/2024/README.md)
+This is where we will store all of the materials and links for posit::conf(2024)!
 
 ## Posit::conf(2023)
 - [Documenting things & Posit Conference Debrief](https://openscapes.org/blog/2023-09-27-documenting-things-posit-conf/)

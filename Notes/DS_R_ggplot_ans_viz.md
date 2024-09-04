@@ -482,10 +482,17 @@ storeLabeller <- function(string) {
 - [eulerr](https://jolars.github.io/eulerr/index.html) generates area-proportional Euler diagrams that display set relationships (intersections, unions, and disjoints) with circles or ellipses
 - [ggantrify](https://github.com/giocomai/ganttrify) Create beautiful Gantt charts with ggplot2
 - COOL! [gtExtras](https://jthomasmock.github.io/gtExtras/index.html). The goal of gtExtras is to provide some additional helper functions to assist in creating beautiful tables with gt.
+- [scattermore](https://exaexa.github.io/scattermore/index.html). Scatterplots with more datapoints. If you want to plot bazillions of points without much waiting, use this.
 
 =======
 - COOL! Как эффективно применить `ggfx` [Better data communication with {ggplot2}, part 2](https://giulia-ruggeri.medium.com/better-data-communication-with-ggplot2-part-2-615a5180ccb)
 - [Introducing {ggflowchart}](https://nrennie.rbind.io/blog/introducing-ggflowchart/)
+
+## treemap
+- [Treemaps in ggplot2 with treemapify](https://r-charts.com/part-whole/treemapify/)
+- [Plotting treemaps with {treemap} and {ggplot2}](https://yjunechoe.github.io/posts/2020-06-30-treemap-with-ggplot/)
+- [Replicating the poverty treemap](https://rawgit.com/econandrew/ggtreemap/master/poverty-treemap.html)
+- [Draw the rectangles in a treemap](https://ggraph.data-imaginist.com/reference/geom_node_tile.html)
 
 # upset graph
 - COOL! [UpSet Homepage](https://upset.app/). Visualizing Intersecting Sets
