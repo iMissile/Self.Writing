@@ -1549,6 +1549,10 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 ## big-M formulation
 - [Dealing with big-M constraints](https://www.gurobi.com/documentation/current/refman/dealing_with_big_m_constra.html)
 
+# 13.09.2024
+## R
+- [Function using sym() and deparse(substitute()) not working as expected](https://stackoverflow.com/questions/73416552/function-using-sym-and-deparsesubstitute-not-working-as-expected)
+
 # 31.08.2024
 ## R
 - [Iterate over list of Functions in R](https://stackoverflow.com/questions/40780353/iterate-over-list-of-functions-in-r)
