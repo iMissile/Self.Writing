@@ -2579,6 +2579,7 @@ microbenchmark::microbenchmark(
 - [Как работают языковые модели](https://sysblok.ru/knowhow/kak-rabotajut-jazykovye-modeli/)
 - [Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)
 - [LLaMA in R with Keras and TensorFlow](https://blogs.rstudio.com/ai/posts/2023-05-25-llama-tensorflow-keras)
+- COOL! COOL! [LLM Visualization](https://bbycroft.net/llm)
 
 ## Matrix
 - [fast large matrix multiplication in R](https://stackoverflow.com/questions/35923787/fast-large-matrix-multiplication-in-r)
