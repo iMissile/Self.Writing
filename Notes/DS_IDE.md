@@ -35,6 +35,7 @@
 You can now manage untracked files separately by using the Git: Untracked Changes setting.
 Choose the `separate` option, if you'd like to see untracked files in a separate group in the Source Control view.
 Choose `hidden` if you'd like to never see them.
+- [How can I see local history changes in Visual Studio Code?](https://stackoverflow.com/questions/46446901/how-can-i-see-local-history-changes-in-visual-studio-code)
 
 ## Fonts
 - [Fira code. VS Code Instructions](https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions)

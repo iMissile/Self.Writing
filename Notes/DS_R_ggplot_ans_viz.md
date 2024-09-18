@@ -577,6 +577,7 @@ An rstudio::conf(2022) Workshop by Cédric Scherer
 - [colvis](https://datatables.net/reference/button/colvis). A button collection that provides column visibility control.
 - [Bootstrap styles overwritten #517 {Open}](https://github.com/rstudio/DT/issues/517)
 - [R Shiny making DataTable columns manuallly resizable](https://stackoverflow.com/questions/72169187/r-shiny-making-datatable-columns-manuallly-resizable)
+- [Editable data tables in Shiny for Python 0.9.0](https://shiny.posit.co/blog/posts/shiny-python-0.9.0)
 
 ## gt
 - [Create interactive links in gt table (in rmarkdown)](https://community.rstudio.com/t/create-interactive-links-in-gt-table-in-rmarkdown/70266/2)

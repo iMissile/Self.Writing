@@ -75,6 +75,7 @@ Get our free online math tools for graphing, geometry, 3D, and more!
 - [Need help to export tikz code from geogebra](https://tex.stackexchange.com/questions/445331/need-help-to-export-tikz-code-from-geogebra)
 
 ## TikZ
+- COOL! e-book [Unlocking LaTeX Graphics](https://latex-graphics.com/)
 
 ### TikZ & R
 - [tikzDevice](https://daqana.github.io/tikzDevice/). The tikzDevice package provides a graphics output device for R that records plots in a LaTeX-friendly format. 

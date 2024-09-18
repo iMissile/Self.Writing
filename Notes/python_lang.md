@@ -324,6 +324,7 @@ shape: (1, 5)
 Меняем на 
 `cases: List[Literal['a']] = pt.Field(dtype = pl.List(pl.Categorical))`
 Решение нашел путем детального изучения исходников `tests\test_model.py`
+- [Why 20.5_f64.round() do not eq with np.round(20.5)?](https://users.rust-lang.org/t/why-20-5-f64-round-do-not-eq-with-np-round-20-5/83966)
 
 # Python & R
 - [How to use R and Python in the same notebook?](https://www.askpython.com/python/examples/use-r-and-python-in-the-same-notebook)

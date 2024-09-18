@@ -1213,6 +1213,10 @@ Simplifies regression tests by comparing objects produced by test code with earl
 - [Controlling number of decimal digits in print output in R](https://stackoverflow.com/questions/2287616/controlling-number-of-decimal-digits-in-print-output-in-r)
 - [IEEE Standard 754 Floating Point Numbers](https://tutorialspoint.dev/computer-science/computer-organization-and-architecture/ieee-standard-754-floating-point-numbers)
 - [IEEE 754 - стандарт двоичной арифметики с плавающей точкой](https://www.softelectro.ru/ieee754.html)
+	- [Rounding](https://en.wikipedia.org/wiki/Rounding)
+- [Floating Point and IEEE 754 Compliance for NVIDIA GPUs](https://docs.nvidia.com/cuda/floating-point/index.html)
+- [Rounding to Decimal Digits in Binary](https://cran.r-project.org/web/packages/round/vignettes/Rounding.html) by Martin Mächler, July 4, 2020
+	- [Round numbers in R correctly {duplicate}](https://stackoverflow.com/questions/66422564/round-numbers-in-r-correctly)
 - COOL! Learning. [romainfrancois/seven31](https://github.com/romainfrancois/seven31). This branch is even with ThinkR-open:master.
 	- COOL! [Rounding to Decimal Digits in Binary](https://cran.r-project.org/web/packages/round/vignettes/Rounding.html)
 	- [twitt](https://twitter.com/romain_francois/status/1281113818874220544?s=20)
@@ -1549,9 +1553,17 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 ## big-M formulation
 - [Dealing with big-M constraints](https://www.gurobi.com/documentation/current/refman/dealing_with_big_m_constra.html)
 
-# 13.09.2024
+# 20.09.2024
 ## R
 - [Function using sym() and deparse(substitute()) not working as expected](https://stackoverflow.com/questions/73416552/function-using-sym-and-deparsesubstitute-not-working-as-expected)
+- [Rounding in R: Common Data Wrangling Frustrations and Workarounds in R, Julia, and Python](https://www.appsilon.com/post/rounding-issues-in-r-julia-and-python)
+- [round: Rounding to Decimal Digits](https://cran.r-project.org/web/packages/round/index.html). Decimal rounding is non-trivial in binary arithmetic.
+- Сериализация в текст:
+	- [base64 {jsonlite}](https://search.r-project.org/CRAN/refmans/jsonlite/html/base64.html). Encode/decode base64
+Simple in-memory base64 encoder and decoder. Used internally for converting raw vectors to text. Interchangeable with encoder from base64enc or openssl package.
+	- [Simple R object to base64 conversion. Free to a good home in your R package! If you put it in your package, let me know](https://gist.github.com/noamross/0cb3708e72c4f18c5ab747a1609468b7)
+	- `dput_binary.R` [`dput()` but with compressed binary serialized to 7-bit character text ¯\_(ツ)_/¯](https://gist.github.com/noamross/ee9e38089b51e7dacdd2caebbec3a6de/)
+	- [R: serialize base64 encode/decode of text not exactly matching](https://stackoverflow.com/questions/3119037/r-serialize-base64-encode-decode-of-text-not-exactly-matching)
 
 # 31.08.2024
 ## R
@@ -1571,6 +1583,12 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 
 ## Dev
 - [Об архитекторе](https://blog.gelin.ru/2014/02/blog-post.html)
+
+### ER диаграммы
+- [Создание схемы с нотацией базы данных вороньей ноги (Crow's Foot)]https://support.microsoft.com/ru-ru/topic/%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D1%85%D0%B5%D0%BC%D1%8B-%D1%81-%D0%BD%D0%BE%D1%82%D0%B0%D1%86%D0%B8%D0%B5%D0%B9-%D0%B1%D0%B0%D0%B7%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B2%D0%BE%D1%80%D0%BE%D0%BD%D1%8C%D0%B5%D0%B9-%D0%BD%D0%BE%D0%B3%D0%B8-1ec22af9-3bd3-4354-b2b5-ed5752af6769)
+- [Entity Relationship Diagrams (ERDs) with draw.io](https://drawio-app.com/blog/entity-relationship-diagrams-with-draw-io/)
+
+
 
 ## tidyxl
 - COOL! [Tidying messy Excel data (tidyxl)](https://webbedfeet.netlify.com/post/tidying-messy-excel-data-tidyxl/)
@@ -2331,7 +2349,8 @@ Download ‘Google’ fonts (via google-webfonts-helper) and generate CSS to use
 	- [Shiny app as a package - directory structure and www folder](https://forum.posit.co/t/shiny-app-as-a-package-directory-structure-and-www-folder/135323)
 - [Column visibility in DT in a shiny app](https://forum.posit.co/t/column-visibility-in-dt-in-a-shiny-app/124696)
 - [shinyFiles](https://github.com/thomasp85/shinyFiles)
-This package extends the functionality of shiny by providing an API for client side access to the server file system. 
+This package extends the functionality of shiny by providing an API for client side access to the server file system.
+- [Persistent data storage in Shiny apps](https://shiny.posit.co/r/articles/build/persistent-data-storage/)
 
 ### shiny + parallel + progress
 - [Using standard R shiny progress bar in parallel foreach calculations](https://stackoverflow.com/questions/54532486/using-standard-r-shiny-progress-bar-in-parallel-foreach-calculations)
@@ -2433,6 +2452,8 @@ As the error message indicates use `usethis::browse_github_pat()` to create an a
 - Appsilon. [Best Practices for Durable R Code](https://appsilon.com/best-practices-for-durable-r-code/)
 - [Unable to install box with renv=1.0.0 #333 {Closed}](https://github.com/klmr/box/issues/333).
 Anyway, a simpler workaround is as follows: `renv::install("box", rebuild = FALSE)`
+- Как приаттачиваются имена, смотрим содержимое родительского окружения: `rlang::env_names(rlang::env_parent()) |> sort()`
+`rlang::env_parent() |> rlang::env_names() |> sort()`
 
 # 11.08.2023
 ## R
