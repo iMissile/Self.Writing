@@ -1553,9 +1553,13 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 ## big-M formulation
 - [Dealing with big-M constraints](https://www.gurobi.com/documentation/current/refman/dealing_with_big_m_constra.html)
 
+# 27.09.2024
+## R
+- COOL! [Creating a memoised function via pipe #148 {Closed}](https://github.com/r-lib/memoise/issues/148)
+
 # 20.09.2024
 ## R
-- [Function using sym() and deparse(substitute()) not working as expected](https://stackoverflow.com/questions/73416552/function-using-sym-and-deparsesubstitute-not-working-as-expected)
+- [Function using `sym()` and `deparse(substitute())` not working as expected](https://stackoverflow.com/questions/73416552/function-using-sym-and-deparsesubstitute-not-working-as-expected)
 - [Rounding in R: Common Data Wrangling Frustrations and Workarounds in R, Julia, and Python](https://www.appsilon.com/post/rounding-issues-in-r-julia-and-python)
 - [round: Rounding to Decimal Digits](https://cran.r-project.org/web/packages/round/index.html). Decimal rounding is non-trivial in binary arithmetic.
 - Сериализация в текст:
@@ -1564,6 +1568,9 @@ Simple in-memory base64 encoder and decoder. Used internally for converting raw 
 	- [Simple R object to base64 conversion. Free to a good home in your R package! If you put it in your package, let me know](https://gist.github.com/noamross/0cb3708e72c4f18c5ab747a1609468b7)
 	- `dput_binary.R` [`dput()` but with compressed binary serialized to 7-bit character text ¯\_(ツ)_/¯](https://gist.github.com/noamross/ee9e38089b51e7dacdd2caebbec3a6de/)
 	- [R: serialize base64 encode/decode of text not exactly matching](https://stackoverflow.com/questions/3119037/r-serialize-base64-encode-decode-of-text-not-exactly-matching)
+- [pracma: Practical Numerical Math Functions](https://cran.r-project.org/web/packages/pracma/index.html)
+Provides a large number of functions from numerical analysis and linear algebra, numerical optimization, differential equations, time series, plus some well-known special mathematical functions. Uses 'MATLAB' function names where appropriate to simplify porting.
+- COOL! [Assigning NULL to a list element in R?](https://stackoverflow.com/questions/7944809/assigning-null-to-a-list-element-in-r)
 
 # 31.08.2024
 ## R

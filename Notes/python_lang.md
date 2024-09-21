@@ -1334,6 +1334,10 @@ In Python 3+, the default encoding of source files is already UTF-8 and that lin
 
 # C++
 
+# 20.09.2024
+- [How to initialize a string set in C++?](https://stackoverflow.com/questions/12333783/how-to-initialize-a-string-set-in-c)
+- [How to redirect cin and cout to files?](https://stackoverflow.com/questions/10150468/how-to-redirect-cin-and-cout-to-files)
+
 ## 21.05.2024
 - [Get the Size of an Array](https://www.w3schools.com/cpp/cpp_arrays_size.asp)
 - [How to print size of array parameter in C++?](https://www.geeksforgeeks.org/how-to-print-size-of-an-array-in-a-function-in-c/)

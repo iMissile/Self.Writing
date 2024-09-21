@@ -1,7 +1,18 @@
+# 21.09.2024
+- [Assign the results from a Solve to variable(s)](https://mathematica.stackexchange.com/questions/6669/assign-the-results-from-a-solve-to-variables)
+Version 10 built-in function `Values` does value extraction conveniently for rules appearing in lists of arbitrary lengths and depths:
+Here's a painless solution:
+`s = Solve[y^2 == 13 x + 17 && y == 193 x + 29, {x, y}];`
+Assign the four results of the solution s above to a variable each, in sequence
+`{X1, Y1, X2, Y2} = s // Values // Flatten;`
+
+
 # 27.08.2024
 А как же работать в Wolfram с размерными величинами?
 - [Units & Quantities](https://reference.wolfram.com/language/guide/Units.html)
 - [Units Overview](https://reference.wolfram.com/language/tutorial/UnitsOverview.html)
+- [Degree](https://reference.wolfram.com/language/ref/Degree.html). Degree can be entered as deg: `Esc deg Esc`
+- [Convert Radian to Degree?](https://community.wolfram.com/groups/-/m/t/1260622)
 
 # 15.05.2024
 Разбираемся как из системы уравнений получать одно, развертывая подстановки.
