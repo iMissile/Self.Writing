@@ -1334,6 +1334,16 @@ In Python 3+, the default encoding of source files is already UTF-8 and that lin
 
 # C++
 
+# 26.09.2024
+- [`std::map`](https://en.cppreference.com/w/cpp/container/map)
+- [Using pair<int, int> as key for map](https://stackoverflow.com/questions/15016646/using-pairint-int-as-key-for-map)
+- [Что такое pair и где использовать?](https://ru.stackoverflow.com/questions/228541/%D0%A7%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-pair-%D0%B8-%D0%B3%D0%B4%D0%B5-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C)
+- [How to read until EOF from cin in C++](https://stackoverflow.com/questions/201992/how-to-read-until-eof-from-cin-in-c)
+- [How to update std::map after using the find method?](https://stackoverflow.com/questions/4527686/how-to-update-stdmap-after-using-the-find-method)
+- [Как заменить пару ключ-значение в карте в C++?](https://www.geeksforgeeks.org/how-to-replace-a-key-value-pair-in-a-map-in-cpp/)
+- [std::tolower](https://en.cppreference.com/w/cpp/string/byte/tolower)
+- [How to Split a String in C++? 6 Easy Methods (with Codes)](https://favtutor.com/blogs/split-string-cpp)
+
 # 20.09.2024
 - [How to initialize a string set in C++?](https://stackoverflow.com/questions/12333783/how-to-initialize-a-string-set-in-c)
 - [How to redirect cin and cout to files?](https://stackoverflow.com/questions/10150468/how-to-redirect-cin-and-cout-to-files)
