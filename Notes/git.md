@@ -392,3 +392,13 @@ git push --force-with-lease origin ilya
 - [Опасность `git push —force` и полезность `git push —force-with-lease`](https://urvanov.ru/2017/09/19/%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C-git-push-force-%D0%B8-%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D0%BE%D1%81%D1%82%D1%8C-git-push-force-with-lease/)
 - [Что такое git push и как его использовать](https://selectel.ru/blog/tutorials/what-is-git-push-and-how-to-use-it/). В инструкции рассказываем о наиболее частых сценариях использования git push.
 - [Understanding the Differences Between Git Push Force and Git Push Force-With-Lease](https://safjan.com/understanding-the-differences-between-git-push-force-and-git-push-force-with-lease/)
+
+## git stash
+- [git stash](https://www.atlassian.com/git/tutorials/saving-changes/git-stash) temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on.
+- [How to resolve the Git error "cannot pull with rebase you have unstaged changes"](https://graphite.dev/guides/resolve-git-rebase-error)
+```
+git status
+git stash
+git pull --rebase
+git stash pop
+```

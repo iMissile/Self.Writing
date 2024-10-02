@@ -252,6 +252,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 	- Web page for the book [Active Statistics](https://avehtari.github.io/ActiveStatistics/) by Andrew Gelman and Aki Vehtari.
 - [Scaling Up With R and Arrow](https://arrowrbook.com/). Bigger Data, Easier Workflows
 Authors: Nic Crane, Jonathan Keane, and Neal Richardson
+- [Model-Based Clustering, Classification, and Density Estimation Using mclust in R](https://mclust-org.github.io/mclust-book/)
 
 ## e-books ML
 - [Deep Learning and Scientific Computing with R torch](https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/) by Sigrid Keydana
@@ -1949,6 +1950,8 @@ Bob Rudis написал небольшую книгу Making Portable CLIs With
 - Любопытно. Про задачки по электричеству [Нелинейные цепи постоянного тока. Графические методы расчета.](https://www.ups-info.ru/for_partners/library/teoreticheskie_osnove_ilektrotehniki_dlya_ibp_ups_/nelineynee_tsepi_postoyannogo_toka_graficheskie_me/). Там много еще чего.
 - [Rill. Dashboards that move as fast as your business](https://www.rilldata.com/)
 - COOL! [Интересные алгоритмы кластеризации, часть вторая: DBSCAN](https://habr.com/ru/articles/322034/)
+- [Кластеризация пространственных данных – плотностные алгоритмы и DBCSAN](https://cartetika.ru/tpost/k05o2ndpf1-klasterizatsiya-prostranstvennih-dannih)
+
 - [New Breakthrough Brings Matrix Multiplication Closer to Ideal](https://www.quantamagazine.org/new-breakthrough-brings-matrix-multiplication-closer-to-ideal-20240307/)
 
 - Код. Журнал Яндекс-Практикума
@@ -2815,6 +2818,10 @@ out <- paste0(sst[c(TRUE, FALSE)], sst[c(FALSE, TRUE)])
 - [Deep Learning Paper Implementations: Spatial Transformer Networks - Part II](https://kevinzakka.github.io/2017/01/18/stn-part2/)
 - [M5 Forecast: Keras Embeddings with R](https://www.kaggle.com/code/mayer79/m5-forecast-keras-embeddings-with-r)
 - COOL! [Ранняя остановка при обучении бустингов с mlr3, или Шах и мат, sklearn](http://biostat-r.blogspot.com/2024/01/mlr3-sklearn.html)
+- Transformers
+	- [Яндекс Образование. 6.3. Трансформеры](https://education.yandex.ru/handbook/ml/article/transformery)
+	- [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
+	- [Как работают трансформеры — крутейшие нейросети наших дней](https://sysblok.ru/knowhow/kak-rabotajut-transformery-krutejshie-nejroseti-nashih-dnej/)
 
 ## Stat
 - [Are P Values Error Probabilities? or, “It’s the methods, stupid!” (2nd install)](https://errorstatistics.com/2014/08/17/are-p-values-error-probabilities-installment-1/)
@@ -3182,7 +3189,7 @@ usethis::edit_r_environ()
 ```
 - [CRAN and the Isoband Incident – Is Your Project at Risk and How to Fix It](https://appsilon.com/cran-and-the-isoband-incident/)
 - [text](https://r-text.org/)
-An R-package for analyzing natural language with transformers from HuggingFace using Natural Language Processing and Machine Learning.]
+An R-package for analyzing natural language with transformers from HuggingFace using Natural Language Processing and Machine Learning.
 
 # 04.10.2022
 ## DS
