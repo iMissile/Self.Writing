@@ -133,7 +133,6 @@ Alluvial plots are similar to sankey diagrams and visualise categorical data ove
 - COOL! [Using ggplot2 for functional time series](https://robjhyndman.com/hyndsight/ftsviz/)
 - [An updated version of The Hitchhiker's Guide to Ggplot2](https://pacha.hk/blog/2019/09/08/an-updated-version-of-the-hitchhikers-guide-to-ggplot2/)
 	- [The Hitchhiker's Guide to Ggplot2](https://leanpub.com/hitchhikers_ggplot2)
-- COOL! [Calendar Heatmaps in ggplot](https://ryanplant.netlify.com/post/calendar-heatmaps-in-ggplot/)
 - [ggplot2. the R Graph Gallery](http://r-graph-gallery.com/ggplot2-package.html)
 - решаем проблемы со шрифтами в R в windows
 	- [Error in grid.Call(L_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : Polygon edge not found](https://stackoverflow.com/questions/10581440/error-in-grid-calll-textbounds-as-graphicsannotxlabel-xx-xy-polygon)
@@ -227,7 +226,6 @@ This is a set of tools for dendrograms and tree plots using 'ggplot2'. The 'ggpl
 - [Label on the side of box plot in R - ggplot](https://stackoverflow.com/questions/50372943/label-on-the-side-of-box-plot-in-r-ggplot)
 - [The Complete ggplot2 Tutorial - Part1 | Introduction To ggplot2 (Full R code)](http://r-statistics.co/Complete-Ggplot2-Tutorial-Part1-With-R-Code.html)
 - [Creating plots in R using ggplot2 - part 10: boxplots](http://t-redactyl.io/blog/2016/04/creating-plots-in-r-using-ggplot2-part-10-boxplots.html)
-- COOL! [raivokolde/pheatmap](https://github.com/raivokolde/pheatmap). Pretty heatmaps
 - [GGPLOT LEGEND TITLE, POSITION AND LABELS](https://www.datanovia.com/en/blog/ggplot-legend-title-position-and-labels/)
 - COOL! [ggforce](https://ggforce.data-imaginist.com/index.html) is a package aimed at providing missing functionality to ggplot2 through the extension system introduced with ggplot2 v2.0.0. Broadly speaking ggplot2 has been aimed primarily at explorative data visualization in order to investigate the data at hand, and less at providing utilities for composing custom plots a la D3.js. ggforce is mainly an attempt to address these “shortcoming” (design choices might be a better description). The goal is to provide a repository of geoms, stats, etc. that are as well documented and implemented as the official ones found in ggplot2.
 	- [The ggforce Awakens (again)](https://www.data-imaginist.com/2019/the-ggforce-awakens-again/) Mar 7, 2019
@@ -501,6 +499,13 @@ storeLabeller <- function(string) {
 - [UpSetR](https://github.com/hms-dbmi/UpSetR) generates static UpSet plots.
 - [ComplexHeatmap. UpSet plot](https://jokergoo.github.io/ComplexHeatmap-reference/book/upset-plot.html)
 UpSet plot provides an efficient way to visualize intersections of multiple sets compared to the traditional approaches, i.e. the Venn Diagram. 
+
+# heatmap
+- [funkyheatmap](https://funkyheatmap.github.io/funkyheatmap/)
+- [ComplexHeatmap. UpSet plot](https://jokergoo.github.io/ComplexHeatmap-reference/book/upset-plot.html)
+- COOL! [raivokolde/pheatmap](https://github.com/raivokolde/pheatmap). Pretty heatmaps
+- COOL! [Calendar Heatmaps in ggplot](https://ryanplant.netlify.com/post/calendar-heatmaps-in-ggplot/)
+
 
 # other
 - [ggplot2 Version of Figures in Lattice: Multivariate Data. Visualization with R](https://learnr.files.wordpress.com/2009/08/latbook.pdf)

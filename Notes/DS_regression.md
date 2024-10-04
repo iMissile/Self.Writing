@@ -175,4 +175,12 @@ This visual explanation introduces the statistical concept of Hierarchical Model
 - [Building formulae](http://www.brodrigues.co/blog/2017-12-27-build_formulae/)
 - [Using a variable in update() in R to update formula](https://stackoverflow.com/questions/38980066/using-a-variable-in-update-in-r-to-update-formula)
 
-
+# A/B
+- COOL! [a/b testing](https://bytepawn.com/tag/ab-testing.html)
+- [Online Experiments Tricks — Variance Reduction](https://towardsdatascience.com/online-experiments-tricks-variance-reduction-291b6032dcd7)
+Stratification, CUPED, Variance-Weighted Estimators, and ML-based methods CUPAC and MLRATE
+- COOL! [From Power Calculations to P-Values: A/B Testing at Stack Overflow](https://juliasilge.com/blog/ab-testing/)
+## A/B as a form of regression
+- e-book [Causal Inference for The Brave and True](https://matheusfacure.github.io/python-causality-handbook/landing-page.html)
+- [50 оттенков линейной регрессии, или почему всё, что вы знаете об A/B тестах, помещается в одно уравнение](https://habr.com/ru/companies/X5Tech/articles/846298/)
+- [Variance reduction with CUPED/CUPAC#](https://tea-tasting.e10v.me/user-guide/#variance-reduction-with-cupedcupac)

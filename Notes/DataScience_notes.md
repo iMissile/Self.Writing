@@ -1257,12 +1257,6 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 # R packages
 - [Building, Testing, and Distributing Packages](https://support.rstudio.com/hc/en-us/articles/200486508-Building-Testing-and-Distributing-Packages)
 
-## A/B
-- COOL! [a/b testing](https://bytepawn.com/tag/ab-testing.html)
-- [Online Experiments Tricks — Variance Reduction](https://towardsdatascience.com/online-experiments-tricks-variance-reduction-291b6032dcd7)
-Stratification, CUPED, Variance-Weighted Estimators, and ML-based methods CUPAC and MLRATE
-- COOL! [From Power Calculations to P-Values: A/B Testing at Stack Overflow](https://juliasilge.com/blog/ab-testing/)
-
 
 # Dev
 - [The Clean Code Blog](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) by Robert C. Martin (Uncle Bob)
@@ -1270,6 +1264,9 @@ Stratification, CUPED, Variance-Weighted Estimators, and ML-based methods CUPAC 
 - [dagster](https://dagster.io/). Ship data pipelines with extraordinary velocity
 - [reactflow](https://reactflow.dev/). A customizable React component for building node-based editors and interactive diagrams
 - [The Case for BPMN Token Simulation](https://bpmn.io/blog/posts/2023-the-case-for-bpmn-token-simulation)
+- Defensive and Offensive programming
+	- [Defensive & offensive programming](https://programmingduck.com/articles/defensive-programming)
+	- [Defensive Programming - Friend or Foe?](https://interrupt.memfault.com/blog/defensive-and-offensive-programming)
 
 # R conferences
 
@@ -1554,9 +1551,15 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 ## big-M formulation
 - [Dealing with big-M constraints](https://www.gurobi.com/documentation/current/refman/dealing_with_big_m_constra.html)
 
+# 04.10.2024
+## R
+- [How to retrieve error message from failing {dplyr} command?](https://forum.posit.co/t/how-to-retrieve-error-message-from-failing-dplyr-command/143911)
+`tryCatch(dplyr::select(mtcars, "test"),  error = function(e) cli::ansi_strip(conditionMessage(e)))`
+
 # 27.09.2024
 ## R
 - COOL! [Creating a memoised function via pipe #148 {Closed}](https://github.com/r-lib/memoise/issues/148)
+` (f()) |> memoise()`
 
 # 20.09.2024
 ## R
