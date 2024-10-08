@@ -1551,10 +1551,27 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 ## big-M formulation
 - [Dealing with big-M constraints](https://www.gurobi.com/documentation/current/refman/dealing_with_big_m_constra.html)
 
+# DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
+- [Machine Learning Text Clustering with DBSCAN](https://dev.to/wmisingo/machine-learning-text-clustering-with-dbscan-399n)
+
+# RAG (Retrieval-Augmented Generation)
+- [The First Rule of Machine Learning](https://applyingml.com/resources/first-rule-of-ml/)
+- [The Best RAG Stack to Date](https://pub.towardsai.net/the-best-rag-stack-to-date-8dc035075e13). exploring every component
+- [Он победил LLM RAG: реализуем BM25+ с самых азов](https://habr.com/ru/articles/823568/)
+- [Full-Text Search is an extension to DuckDB](https://duckdb.org/docs/extensions/full_text_search.html)
+
+# text embedding
+- COOL! [An intuitive introduction to text embeddings](https://stackoverflow.blog/2023/11/09/an-intuitive-introduction-to-text-embeddings/)
+
+
 # 04.10.2024
 ## R
 - [How to retrieve error message from failing {dplyr} command?](https://forum.posit.co/t/how-to-retrieve-error-message-from-failing-dplyr-command/143911)
 `tryCatch(dplyr::select(mtcars, "test"),  error = function(e) cli::ansi_strip(conditionMessage(e)))`
+
+## SASS
+- [@import](https://sass-lang.com/documentation/at-rules/import/). Читаем про relative file
+- [When using SASS how can I import a file from a different directory?](https://stackoverflow.com/questions/6502313/when-using-sass-how-can-i-import-a-file-from-a-different-directory)
 
 # 27.09.2024
 ## R

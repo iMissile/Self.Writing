@@ -11,6 +11,7 @@ Assign the four results of the solution s above to a variable each, in sequence
 А как же работать в Wolfram с размерными величинами?
 - [Units & Quantities](https://reference.wolfram.com/language/guide/Units.html)
 - [Units Overview](https://reference.wolfram.com/language/tutorial/UnitsOverview.html)
+- [MixedUnit](https://reference.wolfram.com/language/ref/MixedUnit.html). represents a mixed-unit expression consisting of units unit_1 through unit_n.
 - [Degree](https://reference.wolfram.com/language/ref/Degree.html). Degree can be entered as deg: `Esc deg Esc`
 - [Convert Radian to Degree?](https://community.wolfram.com/groups/-/m/t/1260622)
 
