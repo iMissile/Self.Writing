@@ -1307,6 +1307,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [Five highlights from posit::conf(2024)](https://posit.co/blog/five-highlights-from-posit-conf-2024/), 2024-08-22
 - [posit::conf(2024)](https://github.com/rstudio/rstudio-conf/blob/master/2024/README.md)
 This is where we will store all of the materials and links for posit::conf(2024)!
+- [{mirai} and {crew}: next-generation async to supercharge {promises}, Plumber, Shiny, and {targets}](https://wlandau.github.io/posit2024) by Charlie Gao and Will Landau
 
 ## Posit::conf(2023)
 - [Documenting things & Posit Conference Debrief](https://openscapes.org/blog/2023-09-27-documenting-things-posit-conf/)
@@ -1562,12 +1563,27 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 
 # text embedding
 - COOL! [An intuitive introduction to text embeddings](https://stackoverflow.blog/2023/11/09/an-intuitive-introduction-to-text-embeddings/)
+- [Implementing Vector Embedding in R: A Step-by-Step Guide](https://myscale.com/blog/implementing-vector-embedding-in-r-step-by-step-guide/)
 
+# Symbolic Calculation
+- [Ryacas](https://yacas.readthedocs.io/en/latest/)
+- [Doing Maths Symbolically: R as a Computer Algebra System (CAS)](https://blog.ephorie.de/doing-maths-symbolically-r-as-a-computer-algebra-system-cas)
+- [simplify algebraic expressions in R](https://stackoverflow.com/questions/74101562/simplify-algebraic-expressions-in-r)
+- [Ryacas](https://cran.r-project.org/web/packages/Ryacas/index.html): R Interface to the 'Yacas' Computer Algebra System
+Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
+- [Ryacas0](https://cran.r-project.org/web/packages/Ryacas0/index.html): Legacy 'Ryacas' (Interface to 'Yacas' Computer Algebra System)
+- RJ-2023-090 [Computer Algebra in R Bridges a Gap Between Symbolic Mathematics and Data in the Teaching of Statistics and Data Science](https://journal.r-project.org/articles/RJ-2023-090/)
+- [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
+- [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
 # 04.10.2024
 ## R
 - [How to retrieve error message from failing {dplyr} command?](https://forum.posit.co/t/how-to-retrieve-error-message-from-failing-dplyr-command/143911)
 `tryCatch(dplyr::select(mtcars, "test"),  error = function(e) cli::ansi_strip(conditionMessage(e)))`
+- [What specifically are the dangers of eval(parse(...))?](https://stackoverflow.com/questions/13649979/what-specifically-are-the-dangers-of-evalparse)
+- [A simple workflow for async {shiny} with {callr}](https://discindo.org/post/an-opiniated-workflow-for-async-shiny-with-callr/)
+- [RKWard](https://rkward.kde.org/) RKWard is an easy to use and easily extensible IDE/GUI for R.
+- COOL! [The importance of kernel density estimation bandwidth](https://aakinshin.net/posts/kde-bw/)
 
 ## SASS
 - [@import](https://sass-lang.com/documentation/at-rules/import/). Читаем про relative file
@@ -2390,6 +2406,9 @@ This package extends the functionality of shiny by providing an API for client s
 - [Case study: converting a Shiny app to async](https://rstudio.github.io/promises/articles/promises_08_casestudy.html#revisiting-the-data-reactive-progress-support)
 - [Progress indicators](https://shiny.posit.co/r/articles/build/progress/) WINSTON CHANG, SEPTEMBER 10, 2014
 
+
+### shiny + sortable
+- [Adding to a sortable bucketlist](https://www.harveyl888.com/post/2023-11-10_sortable_add/)
 
 # 21.08.2023
 # R. Create empty dataframe

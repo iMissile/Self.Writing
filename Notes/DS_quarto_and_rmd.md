@@ -158,6 +158,7 @@ You might find it convenient to break your metadata into multiple files. You can
 - [Quarto pr's](https://rpubs.com/rich_i/quarto-prs-issues)
 - [Quarto Dates and Date Formatting](https://quarto.org/docs/reference/dates.html)
 	- [Custom date for Quarto YAML header pdf document](https://stackoverflow.com/questions/75315010/custom-date-for-quarto-yaml-header-pdf-document)
+- [How do I increase the width of the content column in Quarto](https://stackoverflow.com/questions/73611184/how-do-i-increase-the-width-of-the-content-column-in-quarto)
 
 ## Quarto & observable
 - [Observable JS](https://quarto.org/docs/interactive/ojs/)
@@ -166,7 +167,18 @@ You might find it convenient to break your metadata into multiple files. You can
 - COOL! [Pass R object to Observable in Quarto](https://stackoverflow.com/questions/73873681/pass-r-object-to-observable-in-quarto)
 - [Observable Imports in Quarto](https://timelyportfolio.github.io/quarto_tests/examples/quarto_observable_imports/quarto_observable_imports.html)
 - [A beginner's guide to using Observable JavaScript, R, and Python with Quarto](https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html)
+- [Page layout](https://quarto.org/docs/output-formats/page-layout.html#page-layout) позволяет указывать ширины блоков текста.
 - [How do I increase the width of the content column in Quarto](https://stackoverflow.com/questions/73611184/how-do-i-increase-the-width-of-the-content-column-in-quarto)
+Quarto version 1.3 allows setting the width of the sidebar, the body of the document, the margin of the document, and the margins between these elements (gutters) with sidebar-width, body-width, margin-width, and gutter-width options. Read [Article Grid Customization](https://quarto.org/docs/prerelease/1.3/grid.html#background) from quarto docs for details.
+```
+format:
+  html:
+    grid: 
+      body-width: 2000px
+      sidebar-width: 200px
+      margin-width: 200px
+    toc: true
+```
 
 ## Quarto & tables
 - quartoExtra. [Table printing demo](https://debruine.github.io/quarto_demo/table.html) by Lisa DeBruine

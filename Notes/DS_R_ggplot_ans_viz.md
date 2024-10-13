@@ -352,6 +352,7 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - [ggproto API](https://cran.r-project.org/web/packages/spinifex/vignettes/ggproto_api.html)
 - [19.4 Introducing ggproto](https://bookdown.dongzhuoer.com/hadley/ggplot2-book/introducing-ggproto)
 - [Base ggproto classes for ggplot2](https://ggplot2.tidyverse.org/reference/ggplot2-ggproto.html)
+- [Density plot in ggplot2 with geom_density](https://r-charts.com/distribution/density-plot-ggplot2/)
 
 ## aes tricks
 - [Position related aesthetics: x, y, xmin, xmax, ymin, ymax, xend, yend](https://ggplot2.tidyverse.org/reference/aes_position.html)
@@ -668,6 +669,18 @@ If you don't want Quarto or anything actually to take over the styling, then you
 - [Getting Column-Names to Wrap in R/Kable() HTML Table](https://stackoverflow.com/questions/44816307/getting-column-names-to-wrap-in-r-kable-html-table/44816439). Тут тоже есть решение. It is possible to create linebreaks with HTML syntax. In order for that to work, you will have to set the escape argument of kable to FALSE.
 - В gt можно подправить css для переноса слов: <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"></th>, 
 использовать `word-wrap: break-word;`. [CSS word-wrap Property](https://www.w3schools.com/cssref/css3_pr_word-wrap.asp)
+- [Feature - Suppress inclusion of the default gt CSS into the generated HTML both inline and in a style block {#816}](https://github.com/rstudio/gt/issues/816)
+```
+remove_css <- function(x) {
+  x <- gsub("<style>.*</style>", "", x)
+  htmltools::HTML(x)
+}
+
+gtcars |> 
+  gt() |> 
+  as_raw_html(inline_css = FALSE) |>
+  remove_css()
+```
 
 ## reactable
 - [A couple useful JavaScript aggregation and formatting functions for {reactable}](https://www.zajichekstats.com/post/reactable-javascript/)
