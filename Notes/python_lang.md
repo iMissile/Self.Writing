@@ -361,6 +361,9 @@ This is an important distinction. When you install conda, it brings its own vers
 And as always, make sure to save the installation commands with version-locked dependencies for both conda and pip for every project where they are used.
 
 
+# 14.10.2024
+- [The Walrus Operator: Python's Assignment Expressions](https://realpython.com/python-walrus-operator/)
+
 # 19.07.2024
 - [NumPy 2.0: an evolutionary milestone](https://blog.scientific-python.org/numpy/numpy2/)
 

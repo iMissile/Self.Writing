@@ -1,3 +1,10 @@
+# 18.10.2024
+- [How to do substitution of a function in mathematica](https://stackoverflow.com/questions/4975136/how-to-do-substitution-of-a-function-in-mathematica)
+I have the expression `D[f[x, y], x]`, and I want to substitute `f[x,y]` with `x*y`
+- [Substitution of an expression into another expression](https://mathematica.stackexchange.com/questions/195396/substitution-of-an-expression-into-another-expression)
+- [What is a Gröbner Basis](https://math.berkeley.edu/~bernd/what-is.pdf)
+- [Gröbner basis](https://en.wikipedia.org/wiki/Gr%C3%B6bner_basis)
+
 # 21.09.2024
 - [Assign the results from a Solve to variable(s)](https://mathematica.stackexchange.com/questions/6669/assign-the-results-from-a-solve-to-variables)
 Version 10 built-in function `Values` does value extraction conveniently for rules appearing in lists of arbitrary lengths and depths:

@@ -1576,6 +1576,13 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
+# 18.10.2024
+## KDE
+- [The importance of kernel density estimation bandwidth](https://aakinshin.net/posts/kde-bw/)
+- [Kernel Density Estimation](https://mathisonian.github.io/kde/) by Matthew Conlen. JS анимация
+- [The Fundamentals of Kernel Density Estimation](https://www.aptech.com/blog/the-fundamentals-of-kernel-density-estimation/)
+- [Multivariate Kernel Smoothing and Its Applications](https://www.mvstat.net/mvksa/)
+
 # 04.10.2024
 ## R
 - [How to retrieve error message from failing {dplyr} command?](https://forum.posit.co/t/how-to-retrieve-error-message-from-failing-dplyr-command/143911)
