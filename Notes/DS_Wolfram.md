@@ -1,3 +1,6 @@
+# 20.10.2024
+- [Removing Abs from Abs\[a + Exp\[I*c\]b\]^2](https://mathematica.stackexchange.com/questions/31485/removing-abs-from-absa-expicb2)
+
 # 18.10.2024
 - [How to do substitution of a function in mathematica](https://stackoverflow.com/questions/4975136/how-to-do-substitution-of-a-function-in-mathematica)
 I have the expression `D[f[x, y], x]`, and I want to substitute `f[x,y]` with `x*y`
