@@ -1337,6 +1337,10 @@ In Python 3+, the default encoding of source files is already UTF-8 and that lin
 
 # C++
 
+# 21.10.2024
+- [Рекурсивное вычисление определителя квадратной матрицы на C/C++](http://mindhalls.ru/matrix-determinant-calculation-recursive/)
+- [Формула разложения определителя и формула Лапласа](https://mathhelpplanet.com/static.php?p=formula-razlozheniya-opredelitelya)
+
 # 10.10.2024
 - [Русский язык в консоли](https://ru.stackoverflow.com/questions/459154/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D1%8F%D0%B7%D1%8B%D0%BA-%D0%B2-%D0%BA%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D0%B8)
 Разобрано множество вариантов. Правильных и не очень.

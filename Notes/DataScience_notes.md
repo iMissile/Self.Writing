@@ -5473,6 +5473,7 @@ sqlMdxOpenquery <- processSqlTemplate(
 - COOL! [Reactive object bindings in a non-shiny context](https://stackoverflow.com/questions/25900626/reactive-object-bindings-in-a-non-shiny-context)
 - [imager: an R package for image processing](http://dahtah.github.io/imager/)
 - COOL! [A beginner's guide to Shiny modules](https://rviews.rstudio.com/2021/10/20/a-beginner-s-guide-to-shiny-modules/),  2021-10-20 by Emily Riederer
+- COOL! [Shiny Assistant](https://shiny.posit.co/blog/posts/shiny-assistant/) by Winston Chang, October 9, 2024
 
 
 # 18.03.2021
