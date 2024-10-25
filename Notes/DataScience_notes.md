@@ -2016,7 +2016,6 @@ Bob Rudis написал небольшую книгу Making Portable CLIs With
 - [Introduction to MySQL with R](https://programminghistorian.org/en/lessons/getting-started-with-mysql-using-r)
 - [RMySQL: Database Interface and 'MySQL' Driver for R](https://cran.r-project.org/web/packages/RMySQL/index.html)
 Legacy 'DBI' interface to 'MySQL' / 'MariaDB' based on old code ported from S-PLUS. A modern 'MySQL' client written in 'C++' is available from the 'RMariaDB' package.
-- [chDB is an embedded SQL OLAP Engine powered by ClickHouse®](https://doc.chdb.io/#/)
 - COOL! [How can I view the source code for a function?](https://stackoverflow.com/questions/19226816/how-can-i-view-the-source-code-for-a-function)
 ```
 methods(t)
@@ -2024,6 +2023,10 @@ getAnywhere()
 showMethods
 ```
 - [Lookup](https://github.com/jimhester/lookup) R full function definitions, including compiled code, S3 and S4 methods.
+
+## Clickhouse
+- [chDB is an embedded SQL OLAP Engine powered by ClickHouse®](https://doc.chdb.io/#/)
+- [How we built a new powerful JSON data type for ClickHouse](https://clickhouse.com/blog/a-new-powerful-json-data-type-for-clickhouse)
 
 ## SQlite
 - [Datatypes In SQLite](https://www.sqlite.org/datatype3.html). SQLite does not have a storage class set aside for storing dates and/or times.
