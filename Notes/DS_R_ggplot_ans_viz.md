@@ -687,6 +687,8 @@ gtcars |>
 - [Interactive Drill-down Tables using {reactable}](https://rpubs.com/StevenDuttRoss/flextable2)
 - [Conditional Styling](https://glin.github.io/reactable/articles/conditional-styling.html)
 - Офигенский пример таблички, с картинками, спарклайнами и немного js. [Tidyverse in Numbers](https://szymanskir.quarto.pub/tidyverse_in_numbers/)
+- COOL! [Creating interactive tables with reactable](https://albert-rapp.de/posts/28_reactable_intro/28_reactable_intro.html) by Albert Rapp
+
 
 # ECharts
 - [Форматирование меток осей](https://echarts.apache.org/en/option.html#xAxis.axisLabel.formatter)

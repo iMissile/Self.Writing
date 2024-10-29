@@ -472,6 +472,7 @@ dt[eval(as.symbol(name))< limit]
 - [Subsetting data.table using variables with same name as column](https://stackoverflow.com/questions/21658893/subsetting-data-table-using-variables-with-same-name-as-column)
 `dt[eval(.(a))] # identical to dt["b"]`
 - [NSE Functions with oshka](https://cran.r-project.org/web/packages/oshka/vignettes/nse-fun.html)
+- [Another thing is security when doing eval-parse for user provided input. Computing on the language is much safer in this case:](https://github.com/Rdatatable/data.table/issues/2655). jangorecki commented on Mar 28, 2018 • 
 
 # data.table 1.15. Many new features!
 - COOL! с примерами кода [#RStats {data.table} has recently received a major update with v1.15!](https://fosstodon.org/@TimTeaFan/111864136817472707)

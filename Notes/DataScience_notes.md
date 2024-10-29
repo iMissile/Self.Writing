@@ -1576,6 +1576,11 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
+# 30.10.2024
+- [UTF-8, UTF-16, and UTF-32](https://stackoverflow.com/questions/496321/utf-8-utf-16-and-utf-32)
+- [Using iconv to convert the text encoding of a file](https://til.simonwillison.net/linux/iconv)
+	- Конвертируем в командной строке: `iconv -f UTF-16LE -t UTF-8 file-in-utf16le.csv > file-in-utf8.csv`
+
 # 18.10.2024
 ## KDE
 - [The importance of kernel density estimation bandwidth](https://aakinshin.net/posts/kde-bw/)

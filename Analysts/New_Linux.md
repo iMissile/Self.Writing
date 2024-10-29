@@ -216,6 +216,12 @@ sudo apt install -y jq
 # When installation is finished, check jq version:
 jq --version
 ```
+- Install libgit2 on Ubunti 20.04
+```
+sudo add-apt-repository ppa:git-core/git
+sudo apt update
+sudo apt install libgit
+```
 
 # grep/sed
 - COOL! [How can I replace each newline (\n) with a space using sed?](https://stackoverflow.com/questions/1251999/how-can-i-replace-each-newline-n-with-a-space-using-sed)
