@@ -23,7 +23,7 @@
 - [Linux Rename File Command](https://www.cyberciti.biz/faq/linux-rename-file/)
 - [Linux 101 Hacks. Hack 45. Advanced compression using zip command](https://linux.101hacks.com/archive-compression/advanced-compression-using-zip-command/)
 - [How to Use zip Command in Linux](https://tecadmin.net/how-to-use-zip-command-line-linux/)
-- [Example Uses Of The Linux "gzip" Command](https://www.lifewire.com/example-	uses-of-the-linux-gzip-command-4078675)
+- [Example Uses Of The Linux "gzip" Command](https://www.lifewire.com/example-uses-of-the-linux-gzip-command-4078675)
 - [Linux zip command](https://www.computerhope.com/unix/zip.htm)
 - [How to zip multiple files into separate archives?](https://superuser.com/questions/430388/how-to-zip-multiple-files-into-separate-archives)
 ```

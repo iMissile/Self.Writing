@@ -159,6 +159,14 @@ You might find it convenient to break your metadata into multiple files. You can
 - [Quarto Dates and Date Formatting](https://quarto.org/docs/reference/dates.html)
 	- [Custom date for Quarto YAML header pdf document](https://stackoverflow.com/questions/75315010/custom-date-for-quarto-yaml-header-pdf-document)
 - [How do I increase the width of the content column in Quarto](https://stackoverflow.com/questions/73611184/how-do-i-increase-the-width-of-the-content-column-in-quarto)
+- [Quarto Project specify port for localhost](https://stackoverflow.com/questions/75715950/quarto-project-specify-port-for-localhost)
+```
+project:    
+     preview: 
+       port: 4200
+```
+- [Project specify port for localhost {#8965}](https://github.com/quarto-dev/quarto-cli/issues/8965)
+- [Why does quarto preview always choose a new port? {#2083}](https://github.com/quarto-dev/quarto-cli/discussions/2083)
 
 ## Quarto & observable
 - [Observable JS](https://quarto.org/docs/interactive/ojs/)

@@ -603,9 +603,6 @@ colors = scales::col_numeric(
 - [How to customize background colors based on (characters, NA) contents in multiple columns using gt](https://stackoverflow.com/questions/71152567/how-to-customize-background-colors-based-on-characters-na-contents-in-multipl)
 - [R gt_table adjust row height](https://stackoverflow.com/questions/64127905/r-gt-table-adjust-row-height)
 - [Basic gt Styling Reference](https://adrumm.quarto.pub/basic-gt-styling-reference/)
-- gt & js
-	- [JavaScript onClick event - HTML table](https://stackoverflow.com/questions/21033368/javascript-onclick-event-html-table)
-	- [Find table cell value on cell (table) click using JavaScript](http://dotnetlearners.com/javascript/find-table-cell-value-on-cell-table-click-using-javascript)
 - [The table.font.size option has no effect on column labels #337 {Closed}](https://github.com/rstudio/gt/issues/337)
 - Quarto. [07 - Plots, Graphics, and tables](https://rstudio-conf-2022.github.io/get-started-quarto/materials/07-plots-tables.html#/plots-graphics-and-tables).
 - [Set {gt} table header height](https://stackoverflow.com/questions/73588003/set-gt-table-header-height). Есть такое магическое слово `inherited`, которое перекрывает настройки!
@@ -639,12 +636,21 @@ events_dt %>%
 - Slides! [Beautiful Tables in R. gt and the grammar of tables](https://themockup.blog/static/slides/intro-tables.html#1) by Tom Mock, 2021-08-30
 - [gt tables in Quarto Pub without slide CSS styling](https://stackoverflow.com/questions/72904794/gt-tables-in-quarto-pub-without-slide-css-styling)
 - COOL! [Graphing in gt](https://jthomasmock.github.io/gtExtras/articles/plots-in-gt.html)
+- [How to add sparklines to a {gt} table](https://rfortherestofus.com/2024/02/sparklines-gt)
+
 - COOL! [New Features and Serious Upgrades in {gt} 0.8.0](https://posit.co/blog/new-features-upgrades-in-gt-0-8-0/)
 The v0.8.0 release of gt is quite exciting so we want to show you all the things you can now do when making tables!
 - COOL! [New formatting functions in {gt} 0.9.0](https://posit.co/blog/new-formatting-functions-in-gt-0-9-0/)
 - COOL! [Merging columns together and fixing up column labels in {gt} 0.9.0](https://posit.co/blog/columns-in-gt-0-9-0/)
 - COOL! [New in {gt} 0.9.0: Interactive tables](https://posit.co/blog/new-in-gt-0-9-0-interactive-tables/)
+	- [Feature request (shiny): Allow pagination #207 {Closed}](https://github.com/rstudio/gt/issues/207)
+	- [shiny get selected row from GT #354 {Open}](https://github.com/rstudio/gt/issues/354)
 - [All the new features in {gt} 0.10.0](https://posit.co/blog/new-features-in-gt-0-10-0/). gt 0.10.0 introduces nanoplots, units notation, and so much more.
+- [Everything new that’s in {gt} 0.11.0](https://posit.co/blog/everything-new-thats-in-gt-0-11-0/)
+
+### gt & js
+- [JavaScript onClick event - HTML table](https://stackoverflow.com/questions/21033368/javascript-onclick-event-html-table)
+- [Find table cell value on cell (table) click using JavaScript](http://dotnetlearners.com/javascript/find-table-cell-value-on-cell-table-click-using-javascript)
 
 ### two gt tables side-by-side
 - [Create a gt_group container for holding multiple gt table objects](https://gt.rstudio.com/reference/gt_group.html)
@@ -671,7 +677,7 @@ If you don't want Quarto or anything actually to take over the styling, then you
 использовать `word-wrap: break-word;`. [CSS word-wrap Property](https://www.w3schools.com/cssref/css3_pr_word-wrap.asp)
 - [Feature - Suppress inclusion of the default gt CSS into the generated HTML both inline and in a style block {#816}](https://github.com/rstudio/gt/issues/816)
 ```
-remove_css <- function(x) {
+removeCSS <- function(x) {
   x <- gsub("<style>.*</style>", "", x)
   htmltools::HTML(x)
 }
@@ -688,6 +694,7 @@ gtcars |>
 - [Conditional Styling](https://glin.github.io/reactable/articles/conditional-styling.html)
 - Офигенский пример таблички, с картинками, спарклайнами и немного js. [Tidyverse in Numbers](https://szymanskir.quarto.pub/tidyverse_in_numbers/)
 - COOL! [Creating interactive tables with reactable](https://albert-rapp.de/posts/28_reactable_intro/28_reactable_intro.html) by Albert Rapp
+- [reactable.extras 0.2.0 Release: Enhanced Interactivity and Efficiency for Shiny Apps](https://www.appsilon.com/post/reactable-extras-enhancing-shiny-applications)
 
 
 # ECharts

@@ -1337,6 +1337,12 @@ In Python 3+, the default encoding of source files is already UTF-8 and that lin
 
 # C++
 
+# 01.11.2024
+- [Initialize multidimensional array with zeros](https://stackoverflow.com/questions/31114644/initialize-multidimensional-array-with-zeros)
+use vector instead of array it will give you more flexibility in declaration and in any other operation
+`vector<vector<int> > myarray(rows,vector<int>(columns, initial_value));`
+you can access them same as you access array, and if u still want to use array then use `std::fill`
+
 # 21.10.2024
 - [Рекурсивное вычисление определителя квадратной матрицы на C/C++](http://mindhalls.ru/matrix-determinant-calculation-recursive/)
 - [Формула разложения определителя и формула Лапласа](https://mathhelpplanet.com/static.php?p=formula-razlozheniya-opredelitelya)

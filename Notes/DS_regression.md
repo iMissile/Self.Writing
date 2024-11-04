@@ -71,7 +71,7 @@ lm(cc ~ aa + offset(647*bb), data = df)
 
 Размышления на тему
 - [Regression when x and y each have uncertainties](https://stats.stackexchange.com/questions/422566/regression-when-x-and-y-each-have-uncertainties)
-- [](https://cran.r-project.org/web/packages/pls/vignettes/pls-manual.pdf)
+- [Introduction to the pls Package](https://cran.r-project.org/web/packages/pls/vignettes/pls-manual.pdf)
 - [Матрица Якоби и якобиан](http://vmath.ru/vf5/algebra2/dets/jacobian)
 - [Linear model where the data has uncertainty, using R](https://stats.stackexchange.com/questions/235693/linear-model-where-the-data-has-uncertainty-using-r)
 - [The `metafor` Package: A Meta-Analysis Package for R](https://www.metafor-project.org/doku.php/metafor). `rma` method

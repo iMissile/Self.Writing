@@ -1,3 +1,12 @@
+# 04.11.2024
+- [Using Assuming with Reduce](https://mathematica.stackexchange.com/questions/179820/using-assuming-with-reduce)
+Assumptions is not an option for Reduce: `Options[Reduce]`
+The perfect method is written as follows.
+```
+Reduce[expr && $Assumptions, vars] // Simplify
+```
+
+
 # 20.10.2024
 - [Removing Abs from Abs\[a + Exp\[I*c\]b\]^2](https://mathematica.stackexchange.com/questions/31485/removing-abs-from-absa-expicb2)
 

@@ -271,6 +271,7 @@ by Christopher M. Bishop (Author), Hugh Bishop (Author)
 - [Filter data before reading with awk and R. Using awk & R to map Fishing Effort](https://luisdva.github.io/rstats/r-awk/)
 - [Fitting logistic regression on 100gb dataset on a laptop](https://dsnotes.com/post/2017-02-07-large-data-feature-hashing-and-online-learning-part-2/) by Dmitriy Selivanov
 - [Disband the analytics team. I mean, no, surely not. But maybe?](https://benn.substack.com/p/disband-the-analytics-team?trk=feed_main-feed-card_reshare_feed-article-content)
+- [Greatest common substring](https://codegolf.stackexchange.com/questions/182134/greatest-common-substring)
 
 
 # VPN
@@ -4339,12 +4340,15 @@ Ordination methods, diversity analysis and other functions for community and veg
 - [Winners of the 2021 Table Contest](https://www.rstudio.com/blog/winners-of-the-2021-table-contest/)
 
 ## Shiny Contest
+- [Winners of the 2024 Shiny Contest](https://posit.co/blog/winners-of-the-2024-shiny-contest/)
 - [Winners of the 3rd annual Shiny Contest](https://blog.rstudio.com/2021/06/24/winners-of-the-3rd-annual-shiny-contest/), 2021-06-24
 - [Winners of the 2nd Annual Shiny Contest](https://blog.rstudio.com/2020/07/13/winners-of-the-2nd-shiny-contest/), 2020-07-13
 - [Winners of the 1st Shiny Contest](https://blog.rstudio.com/2019/04/05/first-shiny-contest-winners/), 2019-04-05
 
 - Shiny Contest [INTERACTIVE MAP GENERATOR FROM EXCEL TO HTML, VIA LEAFLET.JS](https://www.jla-data.net/eng/jla-leaflet-generator/)
 
+## Plotting Contest
+- [Winners of the 2024 Plotnine Plotting Contest](https://posit.co/blog/winner-of-the-2024-plotnine-plotting-contest/)
 
 # 29.11.2021
 ## R
