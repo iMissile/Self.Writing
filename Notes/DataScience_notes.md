@@ -1577,6 +1577,22 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
+# 09.11.2024
+- [How to zip multiple CSV files in R?](https://stackoverflow.com/questions/47370686/how-to-zip-multiple-csv-files-in-r)
+- [How to install JDK 11 under Ubuntu?](https://stackoverflow.com/questions/52504825/how-to-install-jdk-11-under-ubuntu)
+```
+sudo apt-get install openjdk-11-jdk
+sudo R CMD javareconf
+```
+- [Display / print all rows of a tibble (tbl_df)](https://stackoverflow.com/questions/23188900/display-print-all-rows-of-a-tibble-tbl-df)
+This will always print all rows:
+`options(pillar.print_max = Inf)`
+This will not actually limit the printing to 50 lines:
+`options(pillar.print_max = 50)`
+But this will restrict printing to 50 lines:
+`options(pillar.print_max = 50, pillar.print_min = 50)`
+- [Changing the Size of a Matrix with R](https://dataxom.com/changing-the-size-of-a-matrix-with-r/). См. 'Changing Matrix Size Dynamically'
+
 # 30.10.2024
 - [UTF-8, UTF-16, and UTF-32](https://stackoverflow.com/questions/496321/utf-8-utf-16-and-utf-32)
 - [Using iconv to convert the text encoding of a file](https://til.simonwillison.net/linux/iconv)
