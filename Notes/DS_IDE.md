@@ -41,6 +41,9 @@ Choose `hidden` if you'd like to never see them.
 - [Fira code. VS Code Instructions](https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions)
 - [Iosevka](https://github.com/be5invis/Iosevka). Versatile typeface for code, from code.
 
+## Extensions
+- [Data Wrangler](https://code.visualstudio.com/docs/datascience/data-wrangler) is a code-centric data viewing and cleaning tool that is integrated into VS Code and VS Code Jupyter Notebooks.
+
 ## Julia VScode
 - [Julia for VSCode](https://www.julia-vscode.org/)
 - [Using GDB & VSCode to debug Julia code on Windows](https://vchuravy.dev/notes/2021/09/vscode-gdb/)
@@ -135,6 +138,11 @@ Remember to leave a new line at the bottom of the file.
 - COOL! [Fun with Positron](https://www.andrewheiss.com/blog/2024/07/08/fun-with-positron/)
 Combine the best of RStudio and Visual Studio Code in Posit’s new Positron IDE
 - [Positron](https://github.com/posit-dev/positron), a next-generation data science IDE
+
+## extensions
+- Расширение [pastum](https://marketplace.visualstudio.com/items?itemName=atsyplenkov.pastum). Pastum: paste as ... dataframe
+	- [Сайт разработчика](https://pastum.anatolii.nz/). This VS Code extension allows you to quickly transform any text table from your clipboard into a dataframe object in your favorite language — R , Python , Julia  or JavaScript
+	- [HTML Table to DataFrame Tool](https://web-apps.thecoatlessprofessor.com/data/html-table-to-dataframe-tool.html)
 
 ## 20.09.2021
 - Проблема с юникодными строками в Windows. Возможно, надо задавать явно параметр `encoding` в `source` в `setting.json`
