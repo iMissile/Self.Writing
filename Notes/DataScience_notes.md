@@ -1577,6 +1577,9 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
+# 17.11.2024
+- COOL! [Iconography of the X Window System: The Boot Stipple](https://matttproud.com/blog/posts/x-window-system-boot-stipple.html)
+
 # 09.11.2024
 - [How to zip multiple CSV files in R?](https://stackoverflow.com/questions/47370686/how-to-zip-multiple-csv-files-in-r)
 - [How to install JDK 11 under Ubuntu?](https://stackoverflow.com/questions/52504825/how-to-install-jdk-11-under-ubuntu)
@@ -1900,6 +1903,8 @@ R’s interface to databases, with a testable and human-readable specification, 
 📌 (https://tsamsonov.github.io/r-geo-course/) Geographic Data Science with R (https://bookdown.org/mcwimberly/gdswr-book/), автор Michael C. Wimberly
 
 🚀 Бонус: Awesome Geospatial R (https://github.com/sacridini/Awesome-Geospatial#r) 🌏 + CRAN Task View: Analysis of Spatial Data (https://cran.r-project.org/web/views/Spatial.html)
+
+- COOL! [Интересная свалка статей и проектов Martin Isenburg](https://www.cs.unc.edu/~isenburg/). Тут есть всякие LAStools CLI.
 
 # 22.04.2024
 # R

@@ -1337,6 +1337,35 @@ In Python 3+, the default encoding of source files is already UTF-8 and that lin
 
 # C++
 
+# 11.11.2024
+- [Choice between `vector::resize()` and `vector::reserve()`](https://stackoverflow.com/questions/7397768/choice-between-vectorresize-and-vectorreserve)
+The two functions do vastly different things!
+	* The `resize()` method (and passing argument to constructor is equivalent to that) will insert or delete appropriate number of elements to the vector to make it given size (it has optional second argument to specify their value). It will affect the size(), iteration will go over all those elements, push_back will insert after them and you can directly access them using the operator[].
+	* The `reserve()` method only allocates memory, but leaves it uninitialized. It only affects capacity(), but size() will be unchanged. There is no value for the objects, because nothing is added to the vector. If you then insert the elements, no reallocation will happen, because it was done in advance, but that's the only effect.
+
+Немного бенчмарков:
+- [C++ Core Guidelines - Prefer using STL vector by default unless you have a reason to use a different container](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#slcon2-prefer-using-stl-vector-by-default-unless-you-have-a-reason-to-use-a-different-container)
+- [`resize()` and `reserve()` of `std::vector`](https://cplusplus.com/forum/general/285017/)
+Adding elements to the end of a `std::vector` is relatively efficient.
+
+Adding 10 ints (std::vector 1.8 times faster)
+https://quick-bench.com/q/kTvBEoz__I9oytClwshDo1hks_Q
+
+Adding 100 ints (std::vector 9.8 times faster)
+https://quick-bench.com/q/1_n31-X2JUin3g0SGgbrCu6MPX8
+
+Adding 1000 ints (std::vector 27 times faster)
+https://quick-bench.com/q/LvOsRF2Jv5IukcEjrOI0D53r40Q
+
+Adding 1000 std::string "short" (std::vector 1.8 times faster)
+https://quick-bench.com/q/1k_v2Pb1_IoSHpGiBXrR63RR0Ik
+
+Adding 1000 std::string "a much longer string this time" (std::vector 1.1 times faster)
+https://quick-bench.com/q/StCGlxWlUy38VFyQD5WxKrlyqEo
+
+Adding 1000 std::array<int, 100> (std::list 3.8 times faster)
+https://quick-bench.com/q/v9pvbQTThjauw7ex9VAzoT2TaIY
+
 # 01.11.2024
 - [Initialize multidimensional array with zeros](https://stackoverflow.com/questions/31114644/initialize-multidimensional-array-with-zeros)
 use vector instead of array it will give you more flexibility in declaration and in any other operation
