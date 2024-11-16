@@ -360,6 +360,12 @@ This is an important distinction. When you install conda, it brings its own vers
 
 And as always, make sure to save the installation commands with version-locked dependencies for both conda and pip for every project where they are used.
 
+# 15.11.2024
+- [CSnakes - a tool for embedding Python code into .NET projects](https://tonybaloney.github.io/CSnakes/)
+Подкаст Talk Python обсуджали этот проект с core dev-ами CPython, которые работает в MS - https://www.youtube.com/watch?v=Ur3kLHxG3Gc
+- [Интересные истории о том как устроены dequeue, dict, string и т.д.](https://www.laurentluce.com/posts/tag/python/)
+- Некий короший человек, пишуший на английском, китайском и корейском собрал интересную коллекцию [info про CPython Internals](https://github.com/zpoint/CPython-Internals?tab=readme-ov-file)
+- [Неплохой учебный пример добавленя в CPython нового оператора (pipe)](https://www.youtube.com/watch?v=f8nTJp_k7U8)
 
 # 14.10.2024
 - [The Walrus Operator: Python's Assignment Expressions](https://realpython.com/python-walrus-operator/)

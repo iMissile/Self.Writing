@@ -272,6 +272,7 @@ by Christopher M. Bishop (Author), Hugh Bishop (Author)
 - [Fitting logistic regression on 100gb dataset on a laptop](https://dsnotes.com/post/2017-02-07-large-data-feature-hashing-and-online-learning-part-2/) by Dmitriy Selivanov
 - [Disband the analytics team. I mean, no, surely not. But maybe?](https://benn.substack.com/p/disband-the-analytics-team?trk=feed_main-feed-card_reshare_feed-article-content)
 - [Greatest common substring](https://codegolf.stackexchange.com/questions/182134/greatest-common-substring)
+- [Lisp: побеждая посредственность](https://nestor.minsk.by/sr/2003/07/30710.html)
 
 
 # VPN

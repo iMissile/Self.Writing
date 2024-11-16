@@ -3,6 +3,7 @@
 	- COOL! [data.table vs dplyr: can one do something well the other can't or does poorly?](https://stackoverflow.com/questions/21435339/data-table-vs-dplyr-can-one-do-something-well-the-other-cant-or-does-poorly)
 	- Hadley Wickham. [My take on dplyr vs data.table](https://twitter.com/hadleywickham/status/553169339751215104):
 	- [dplyr on data.table, am I really using data.table?](https://stackoverflow.com/questions/27511604/dplyr-on-data-table-am-i-really-using-data-table/27520688)
+- [data.table and parallel computing](https://stackoverflow.com/questions/14759905/data-table-and-parallel-computing/14763642#14763642)
 - COOL! [Fast data lookups in R: dplyr vs data.table](https://appsilon.com/fast-data-lookups-in-r-dplyr-vs-data-table/)
 - [Homepage Rdatatable/data.table](https://github.com/Rdatatable/data.table/wiki)
 - COOL! [Advanced tips and tricks with data.table](http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/)
