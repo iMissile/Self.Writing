@@ -1578,8 +1578,10 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
-# 17.11.2024
+
+# 19.11.2024
 - COOL! [Iconography of the X Window System: The Boot Stipple](https://matttproud.com/blog/posts/x-window-system-boot-stipple.html)
+- [Rayverse Blog](https://www.tylermw.com/)
 
 # 09.11.2024
 - [How to zip multiple CSV files in R?](https://stackoverflow.com/questions/47370686/how-to-zip-multiple-csv-files-in-r)
