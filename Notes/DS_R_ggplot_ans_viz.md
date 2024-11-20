@@ -482,6 +482,7 @@ storeLabeller <- function(string) {
 - [ggantrify](https://github.com/giocomai/ganttrify) Create beautiful Gantt charts with ggplot2
 - COOL! [gtExtras](https://jthomasmock.github.io/gtExtras/index.html). The goal of gtExtras is to provide some additional helper functions to assist in creating beautiful tables with gt.
 - [scattermore](https://exaexa.github.io/scattermore/index.html). Scatterplots with more datapoints. If you want to plot bazillions of points without much waiting, use this.
+- [camcorder](https://thebioengineer.github.io/camcorder/) is an R package to track and automatically save graphics generated with ggplot2 that are created across one or multiple sessions with the eventual goal of creating a GIF showing all the plots saved sequentially during the design process.
 
 =======
 - COOL! Как эффективно применить `ggfx` [Better data communication with {ggplot2}, part 2](https://giulia-ruggeri.medium.com/better-data-communication-with-ggplot2-part-2-615a5180ccb)

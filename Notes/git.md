@@ -177,6 +177,7 @@ unlist(stri_split_lines(sha$stdout, omit_empty = TRUE)) %>%
 ## Упражнения по возврату назад
 - [Сравнение 5 команд Git: revert, checkout, reset, merge и rebase](https://proglib.io/p/sravnenie-5-komand-git-revert-checkout-reset-merge-i-rebase-2020-05-25)
 - [Git Revert](https://www.atlassian.com/git/tutorials/undoing-changes/git-revert)
+- [How do I revert all local changes in Git managed project to previous state?](https://stackoverflow.com/questions/1146973/how-do-i-revert-all-local-changes-in-git-managed-project-to-previous-state)
 
 ## Откаты на специфические версии
 - [How can I switch my git repository to a particular commit](https://stackoverflow.com/questions/4940054/how-can-i-switch-my-git-repository-to-a-particular-commit)

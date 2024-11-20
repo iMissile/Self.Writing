@@ -151,13 +151,13 @@ This visual explanation introduces the statistical concept of Hierarchical Model
 
 
 ## R formulae
+- [An Introduction to R. Ch. 11 Statistical models in R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Statistical-models-in-R-1)
 - [formula {stats}](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/formula.html). The generic function formula and its specific methods provide a way of extracting formulae which have been included in other objects.
 - COOL! [Formulae in R - ANOVA and other models, mixed and fixed](https://conjugateprior.org/2013/01/formulae-in-r-anova/)
 - [The R Formula Method: The Good Parts](https://rviews.rstudio.com/2017/02/01/the-r-formula-method-the-good-parts/). 2017-02-01 by Max Kuhn
 - [The R Formula Method: The Bad Parts](https://rviews.rstudio.com/2017/03/01/the-r-formula-method-the-bad-parts/).  2017-03-01 by Max Kuhn
 - [Asterisk (*) vs. colon (:) in R formulas {closed}](https://stackoverflow.com/questions/40567421/asterisk-vs-colon-in-r-formulas)
 - [Condition ( | ) in R formula](https://stackoverflow.com/questions/42417963/condition-in-r-formula)
-- [Changing the variable inside an R formula](https://statisticaloddsandends.wordpress.com/2019/08/24/changing-the-variable-inside-an-r-formula/)
 - COOL! [Formulas in R Tutorial](https://www.datacamp.com/community/tutorials/r-formula-tutorial)
 - [Advanced R. 20.3.4 Under the hood](https://adv-r.hadley.nz/evaluation.html#quosure-impl) Quosures were inspired by R’s formulas, because formulas capture an expression and an environment
 - [Formula: Extended Model Formulas](https://cran.r-project.org/web/packages/Formula/index.html)
@@ -173,6 +173,7 @@ This visual explanation introduces the statistical concept of Hierarchical Model
 	- [The R Formula Method: The Bad Parts](https://rviews.rstudio.com/2017/03/01/the-r-formula-method-the-bad-parts/)
 	- [What does the R formula y~1 mean?](https://stackoverflow.com/questions/13366755/what-does-the-r-formula-y1-mean)
 - [Building formulae](http://www.brodrigues.co/blog/2017-12-27-build_formulae/)
+- [Changing the variable inside an R formula](https://statisticaloddsandends.wordpress.com/2019/08/24/changing-the-variable-inside-an-r-formula/)
 - [Using a variable in update() in R to update formula](https://stackoverflow.com/questions/38980066/using-a-variable-in-update-in-r-to-update-formula)
 
 # A/B

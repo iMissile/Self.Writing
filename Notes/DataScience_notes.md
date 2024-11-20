@@ -1310,6 +1310,11 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [posit::conf(2024)](https://github.com/rstudio/rstudio-conf/blob/master/2024/README.md)
 This is where we will store all of the materials and links for posit::conf(2024)!
 - [{mirai} and {crew}: next-generation async to supercharge {promises}, Plumber, Shiny, and {targets}](https://wlandau.github.io/posit2024) by Charlie Gao and Will Landau
+- [Using the Kyber R package to connect Google Sheets, RMarkdown, GitHub, and Agenda docs for open education](https://openscapes.org/events/2024-08-13-positconf-2024/). Lightning Talk by Stefanie Butland at posit::conf 2024
+
+### Workshops at posit::conf(2024)
+- [Workshops at posit::conf(2024)](https://posit.co/blog/workshops-at-posit-conf-2024/)
+- [Workshops at posit::conf(2024)](https://github.com/posit-conf-2024/workshops)
 
 ## Posit::conf(2023)
 - [Documenting things & Posit Conference Debrief](https://openscapes.org/blog/2023-09-27-documenting-things-posit-conf/)
@@ -1582,6 +1587,7 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 # 19.11.2024
 - COOL! [Iconography of the X Window System: The Boot Stipple](https://matttproud.com/blog/posts/x-window-system-boot-stipple.html)
 - [Rayverse Blog](https://www.tylermw.com/)
+- COOL! Workshop. [Next-Gen Shiny Apps](https://pkg.garrickadenbuie.com/rmedicine-2024-bslib/workshop-01.html)
 
 # 09.11.2024
 - [How to zip multiple CSV files in R?](https://stackoverflow.com/questions/47370686/how-to-zip-multiple-csv-files-in-r)
