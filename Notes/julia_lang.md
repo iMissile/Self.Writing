@@ -16,6 +16,9 @@
 - [Number one JuliaLang beginner tip: Do not delay the active learning](https://juliaifrank.com/active-learning-in-programming/)
 - [Simple multi-layer perceptron](https://fluxml.ai/tutorials/2021/01/26/mlp.html)
 
+# 23.11.2024
+- [Review of the Julia language](https://danluu.com/julialang/) by Dan Luu.
+
 # 12.01.2024
 - [Почему я больше не рекомендую Julia](https://habr.com/ru/articles/666332/)
 

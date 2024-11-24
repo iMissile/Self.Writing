@@ -364,7 +364,6 @@ There is also a performance difference. Xgboost used second derivatives to find 
 ## R
 - [Please inspect your dplyr+database code](http://www.win-vector.com/blog/2017/12/please-inspect-your-dplyrdatabase-code/)
 - [Analysing iOS App Store iTunes Reviews in R](https://datascienceplus.com/analysing-ios-app-store-itunes-reviews-in-r/)
-- [Example data from Shiny reactlog](https://github.com/wch/shiny-reactlog-examples)
 
 ## DS in HR
 - [Applying Survival Analysis to Reduce Employee Turnover: A Practical Case](https://www.analyticsinhr.com/blog/applying-survival-analysis-reduce-employee-turnover-practical-case/)

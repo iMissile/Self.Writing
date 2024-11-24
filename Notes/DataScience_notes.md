@@ -898,6 +898,22 @@ exec_log <- profvis(runApp("myShinyApp"))
 print(exec_log)
 ```
 - COOL! [Stack traces in R](https://github.com/rstudio/shiny/wiki/Stack-traces-in-R) by Joe Cheng 
+- COOL! [Using Chrome, how to find to which events are bound to an element](https://stackoverflow.com/questions/7338193/using-chrome-how-to-find-to-which-events-are-bound-to-an-element)
+
+
+### Shiny reactlog
+- COOL! [Shiny Reactlog](https://rstudio.github.io/reactlog/articles/reactlog.html) by Carson Sievert, Joe Cheng, and Barret Schloerke
+- [Export reactlog #37 {Open}](https://github.com/rstudio/reactlog/issues/37). My shiny app is so large that the reactlog is unresponsive and hangs for several minutes trying to render every step of a zoom - is there a way to save the reactlog and open it in another program?
+```
+dput(shiny::reactlog(), file = "FILE.txt")
+
+"FILE.txt" |>
+  dget() |>
+  reactlog::reactlog_show()
+```
+- [reactlog 1.1.0 2020-09-12](https://rstudio.github.io/reactlog/news/#reactlog-1-1-0-2020-09-12)
+- [Example data from Shiny reactlog](https://github.com/wch/shiny-reactlog-examples)
+
 
 ## Test shiny
 - [reactor](https://github.com/yonicd/reactor/tree/slides). yonicd.github.io/reactor. unit testing for shiny reactivity

@@ -605,6 +605,9 @@ colors = scales::col_numeric(
 - [R gt_table adjust row height](https://stackoverflow.com/questions/64127905/r-gt-table-adjust-row-height)
 - [Basic gt Styling Reference](https://adrumm.quarto.pub/basic-gt-styling-reference/)
 - [The table.font.size option has no effect on column labels #337 {Closed}](https://github.com/rstudio/gt/issues/337)
+- Как скрыть заголовки колонок. [Add option to remove column labels #225 {Closed}](https://github.com/rstudio/gt/issues/225). 
+`tab_options(data, column_labels.hidden = TRUE)`
+- [How to style cells in a gt table based on their content.](https://forum.posit.co/t/how-to-style-cells-in-a-gt-table-based-on-their-content/167872)
 - Quarto. [07 - Plots, Graphics, and tables](https://rstudio-conf-2022.github.io/get-started-quarto/materials/07-plots-tables.html#/plots-graphics-and-tables).
 - [Set {gt} table header height](https://stackoverflow.com/questions/73588003/set-gt-table-header-height). Есть такое магическое слово `inherited`, которое перекрывает настройки!
 Но для всех таблиц!!! `table.gt_table` переопределяет! Найдено такое решение `as_raw_html(inline_css = TRUE)`:
@@ -696,6 +699,9 @@ gtcars |>
 - Офигенский пример таблички, с картинками, спарклайнами и немного js. [Tidyverse in Numbers](https://szymanskir.quarto.pub/tidyverse_in_numbers/)
 - COOL! [Creating interactive tables with reactable](https://albert-rapp.de/posts/28_reactable_intro/28_reactable_intro.html) by Albert Rapp
 - [reactable.extras 0.2.0 Release: Enhanced Interactivity and Efficiency for Shiny Apps](https://www.appsilon.com/post/reactable-extras-enhancing-shiny-applications)
+- [Add "clicked" state to Shiny reactives #116 {Open}](https://github.com/glin/reactable/issues/116)
+- [Reactable onClick not working within module, even when properly namespaced](https://forum.posit.co/t/reactable-onclick-not-working-within-module-even-when-properly-namespaced/177864)
+- [React onClick event handlers: A complete guide](https://blog.logrocket.com/react-onclick-event-handlers-guide/)
 
 
 # ECharts

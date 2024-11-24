@@ -726,7 +726,6 @@ When I removed the indentation from runtime:shiny, things got back to normal. So
 - [rstudio/swagger](https://github.com/rstudio/swagger). Swagger is a collection of HTML, Javascript, and CSS assets that dynamically generate beautiful documentation from a Swagger-compliant API.
 - [plumber 1.0.0. New features. Plumber router](https://www.rplumber.io/news/)
 - [JBGruber/rwhatsapp](https://github.com/JBGruber/rwhatsapp). An R package for working with WhatsApp data
-- [reactlog 1.1.0 2020-09-12](https://rstudio.github.io/reactlog/news/#reactlog-1-1-0-2020-09-12)
 - [Preloader for flexdashboard](https://community.rstudio.com/t/preloader-for-flexdashboard/17985)
 - COOL! Slides. [Building Dashboardswith Shiny and RMarkdown](https://goo.gl/SFrnpy). [Slides на печать](hackmd.io/p/S1511oQAx#/) [Repo](github.com/leoluyi/ptt_give_dashboard)
 - [How do you do block comments in YAML?](https://stackoverflow.com/questions/2276572/how-do-you-do-block-comments-in-yaml)
@@ -4709,7 +4708,6 @@ Some people, when faced with a problem, think, “I know, I’ll use binary.” 
 - [Indie Prize Showcase Awards](http://www.indieprize.org/london2019/index.html)
 # 12.04.2019
 ## R
-- COOL! [Shiny Reactlog](https://rstudio.github.io/reactlog/articles/reactlog.html) by Carson Sievert, Joe Cheng, and Barret Schloerke
 - COOL! [jbryer/DTedit](https://github.com/jbryer/DTedit). Editable DataTables for shiny apps
 
 
