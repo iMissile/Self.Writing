@@ -209,6 +209,14 @@ mtcars %>%
       "}")
   ))
 ```
+- В quarto таблицы становятся чересполосными. Отключение `opt_row_striping(row_striping = FALSE)` в gt не помогает. Конфликт со стилями quarto.
+В частности с `.table`: `--bs-table-striped-bg: rgba(0, 0, 0, 0.05);`
+Это вообще общая проблема конфликта стилей.
+- [Remove shading from HTML tables generated using Quarto](https://forum.posit.co/t/remove-shading-from-html-tables-generated-using-quarto/183398)
+- Тут подробный диалог по способам решения. [Option to disable table striping in computational tables? #6945 {Closed}](https://github.com/quarto-dev/quarto-cli/issues/6945)
+As a reminder, you can try opting out Quarto HTML table processing.
+You can do that for the whole document, or at the cell level (https://quarto.org/docs/authoring/tables.html#disabling-quarto-table-processing) or even do it at gt level with options quarto.disable_processing (https://gt.rstudio.com/reference/tab_options.html)
+
 
 ## Quarto & word
 - [Changing math formulas font size in RPres](https://stackoverflow.com/questions/36531820/changing-math-formulas-font-size-in-rpres/36533612#36533612)

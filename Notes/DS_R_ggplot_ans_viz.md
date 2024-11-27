@@ -694,6 +694,7 @@ gtcars |>
 
 ## reactable
 - [A couple useful JavaScript aggregation and formatting functions for {reactable}](https://www.zajichekstats.com/post/reactable-javascript/)
+- [How to use buttons in a Reactable widget for navigation in a Shiny application](https://discindo.org/post/reactable-buttons/)
 - [Interactive Drill-down Tables using {reactable}](https://rpubs.com/StevenDuttRoss/flextable2)
 - [Conditional Styling](https://glin.github.io/reactable/articles/conditional-styling.html)
 - Офигенский пример таблички, с картинками, спарклайнами и немного js. [Tidyverse in Numbers](https://szymanskir.quarto.pub/tidyverse_in_numbers/)
@@ -702,7 +703,7 @@ gtcars |>
 - [Add "clicked" state to Shiny reactives #116 {Open}](https://github.com/glin/reactable/issues/116)
 - [Reactable onClick not working within module, even when properly namespaced](https://forum.posit.co/t/reactable-onclick-not-working-within-module-even-when-properly-namespaced/177864)
 - [React onClick event handlers: A complete guide](https://blog.logrocket.com/react-onclick-event-handlers-guide/)
-
+- [let expand button execute a renderPlot function #367 {Open}](https://github.com/glin/reactable/issues/367)
 
 # ECharts
 - [Форматирование меток осей](https://echarts.apache.org/en/option.html#xAxis.axisLabel.formatter)

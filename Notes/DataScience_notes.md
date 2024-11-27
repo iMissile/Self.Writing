@@ -899,6 +899,9 @@ print(exec_log)
 ```
 - COOL! [Stack traces in R](https://github.com/rstudio/shiny/wiki/Stack-traces-in-R) by Joe Cheng 
 - COOL! [Using Chrome, how to find to which events are bound to an element](https://stackoverflow.com/questions/7338193/using-chrome-how-to-find-to-which-events-are-bound-to-an-element)
+- [Testing of shiny modules containing other modules](https://stackoverflow.com/questions/67498225/testing-of-shiny-modules-containing-other-modules)
+	- [Exported values](https://rstudio.github.io/shinytest2/articles/robust.html)
+- COOL! [How To Use Tests To Develop Shiny Modules](https://jakubsob.github.io/blog/how-to-use-tests-to-develop-shiny-modules/). How to get things done faster
 
 
 ### Shiny reactlog
@@ -1599,6 +1602,9 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
+
+# 30.11.2024
+- COOL! Blog. [Building quality by testing.](https://jakubsob.github.io/#blog). I’m a software engineer specialising in R. I teach and preach using testing to efficiently develop code.
 
 # 19.11.2024
 - COOL! [Iconography of the X Window System: The Boot Stipple](https://matttproud.com/blog/posts/x-window-system-boot-stipple.html)
@@ -2459,6 +2465,9 @@ Download ‘Google’ fonts (via google-webfonts-helper) and generate CSS to use
 - [shinyFiles](https://github.com/thomasp85/shinyFiles)
 This package extends the functionality of shiny by providing an API for client side access to the server file system.
 - [Persistent data storage in Shiny apps](https://shiny.posit.co/r/articles/build/persistent-data-storage/)
+
+### shiny + bs4Dash
+- [Height of the box in R Shiny](https://stackoverflow.com/questions/56965843/height-of-the-box-in-r-shiny)
 
 ### shiny + parallel + progress
 - [Using standard R shiny progress bar in parallel foreach calculations](https://stackoverflow.com/questions/54532486/using-standard-r-shiny-progress-bar-in-parallel-foreach-calculations)
