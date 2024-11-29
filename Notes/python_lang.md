@@ -360,6 +360,9 @@ This is an important distinction. When you install conda, it brings its own vers
 
 And as always, make sure to save the installation commands with version-locked dependencies for both conda and pip for every project where they are used.
 
+# 28.11.2024
+- [RDKit: Open-Source Cheminformatics Software](https://www.rdkit.org/)
+
 # 15.11.2024
 - [CSnakes - a tool for embedding Python code into .NET projects](https://tonybaloney.github.io/CSnakes/)
 Подкаст Talk Python обсуждали этот проект с core dev-ами CPython, которые работает в MS - https://www.youtube.com/watch?v=Ur3kLHxG3Gc

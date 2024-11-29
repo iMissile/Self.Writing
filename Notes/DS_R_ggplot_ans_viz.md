@@ -641,6 +641,16 @@ events_dt %>%
 - [gt tables in Quarto Pub without slide CSS styling](https://stackoverflow.com/questions/72904794/gt-tables-in-quarto-pub-without-slide-css-styling)
 - COOL! [Graphing in gt](https://jthomasmock.github.io/gtExtras/articles/plots-in-gt.html)
 - [How to add sparklines to a {gt} table](https://rfortherestofus.com/2024/02/sparklines-gt)
+- [Applying text formatting to group name labels in gt package](https://stackoverflow.com/questions/76020772/applying-text-formatting-to-group-name-labels-in-gt-package)
+One option would be to use `gt::text_transform` which allows for formatting via a custom function. To this end we can split the row_group string into pieces and format each piece individually using markdown or HTML
+- [We’ve added](https://gt.rstudio.com/news/index.html) the ability to treat columns containing row names or group names as Markdown text. This provides the process_md argument in the gt() function. If this option is taken (example below) then the supplied names will be treated to ensure that there are unique IDs for later targeting (for tab_style(), tab_footnote(), etc.) (#694). (#1097)
+- В quarto таблицы становятся чересполосными. Отключение `opt_row_striping(row_striping = FALSE)` в gt не помогает. Конфликт со стилями quarto.
+В частности с `.table`: `--bs-table-striped-bg: rgba(0, 0, 0, 0.05);`
+Это вообще общая проблема конфликта стилей.
+- [Remove shading from HTML tables generated using Quarto](https://forum.posit.co/t/remove-shading-from-html-tables-generated-using-quarto/183398)
+- Тут подробный диалог по способам решения. [Option to disable table striping in computational tables? #6945 {Closed}](https://github.com/quarto-dev/quarto-cli/issues/6945)
+As a reminder, you can try opting out Quarto HTML table processing.
+You can do that for the whole document, or at the cell level (https://quarto.org/docs/authoring/tables.html#disabling-quarto-table-processing) or even do it at gt level with options quarto.disable_processing (https://gt.rstudio.com/reference/tab_options.html)
 
 - COOL! [New Features and Serious Upgrades in {gt} 0.8.0](https://posit.co/blog/new-features-upgrades-in-gt-0-8-0/)
 The v0.8.0 release of gt is quite exciting so we want to show you all the things you can now do when making tables!
