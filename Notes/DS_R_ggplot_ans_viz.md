@@ -651,6 +651,9 @@ One option would be to use `gt::text_transform` which allows for formatting via 
 - Тут подробный диалог по способам решения. [Option to disable table striping in computational tables? #6945 {Closed}](https://github.com/quarto-dev/quarto-cli/issues/6945)
 As a reminder, you can try opting out Quarto HTML table processing.
 You can do that for the whole document, or at the cell level (https://quarto.org/docs/authoring/tables.html#disabling-quarto-table-processing) or even do it at gt level with options quarto.disable_processing (https://gt.rstudio.com/reference/tab_options.html)
+- [Can't use alpha argument in data_color()? #250 {Closed}](https://github.com/rstudio/gt/issues/250)
+	Выяснилось, что если палитра не набор `character`, а класс `colours` (получаем из ggthemes, например, то тут начинает рвать Ошибка в col2rgb(col, alpha = TRUE) : 
+  неправильное название цвета 'rgba(242,142,43,0.7)')
 
 - COOL! [New Features and Serious Upgrades in {gt} 0.8.0](https://posit.co/blog/new-features-upgrades-in-gt-0-8-0/)
 The v0.8.0 release of gt is quite exciting so we want to show you all the things you can now do when making tables!

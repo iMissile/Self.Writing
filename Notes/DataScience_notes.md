@@ -1605,6 +1605,9 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 
 # 30.11.2024
 - COOL! Blog. [Building quality by testing.](https://jakubsob.github.io/#blog). I’m a software engineer specialising in R. I teach and preach using testing to efficiently develop code.
+- COOL! S7 [S7 & Options objects](https://josiahparry.com/posts/2024-11-21-s7-options-objects). reimagining `readr::read_csv()`
+- [Large Language Model-Based Agents for Software Engineering; A Survey](https://arxiv.org/pdf/2409.02977v1)
+- [Горький урок ABBYY: как лингвисты проиграли последнюю битву за NLP](https://sysblok.ru/blog/gorkij-urok-abbyy-kak-lingvisty-proigrali-poslednjuju-bitvu-za-nlp/)
 
 # 19.11.2024
 - COOL! [Iconography of the X Window System: The Boot Stipple](https://matttproud.com/blog/posts/x-window-system-boot-stipple.html)

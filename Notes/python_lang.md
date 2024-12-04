@@ -1347,7 +1347,16 @@ In Python 3+, the default encoding of source files is already UTF-8 and that lin
 - [MyST - Markedly Structured Text](https://myst-parser.readthedocs.io/en/latest/). A fully-functional markdown flavor and parser for Sphinx. MyST allows you to write Sphinx documentation entirely in markdown.
 - [MyST cheat sheet](https://jupyterbook.org/reference/cheatsheet.html)
 
+
+
+# =====================================================================================
 # C++
+
+# 03.12.2024
+- [The Day The Standard Library Died](https://cor3ntin.github.io/posts/abi/). In Prague, the C++ committee took a series of polls on whether to break ABI, and decided not to.
+ABI (Application Binary Interface)
+- [Глубина кроличьей норы: бинарная граница и ABI C++](https://habr.com/ru/articles/710658/)
+
 
 # 11.11.2024
 - [Choice between `vector::resize()` and `vector::reserve()`](https://stackoverflow.com/questions/7397768/choice-between-vectorresize-and-vectorreserve)
