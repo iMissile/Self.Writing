@@ -1351,6 +1351,7 @@ In Python 3+, the default encoding of source files is already UTF-8 and that lin
 
 # =====================================================================================
 # C++
+- [Is there any shortcut for CodeBlocks to format the code?](https://stackoverflow.com/questions/26278082/is-there-any-shortcut-for-codeblocks-to-format-the-code)
 
 # 03.12.2024
 - [The Day The Standard Library Died](https://cor3ntin.github.io/posts/abi/). In Prague, the C++ committee took a series of polls on whether to break ABI, and decided not to.

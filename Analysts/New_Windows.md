@@ -311,6 +311,9 @@ ipconfig /renew  и нажмите Enter.
 ipconfig /flushdns  и нажмите Enter.
 ```
 
+## Раздача интернета
+- [Как изменить TTL в Windows 10 и раздать безлимитный интернет со смартфона на компьютер](https://timeweb.com/ru/community/articles/kak-izmenit-ttl-v-windows-10-i-razdat-bezlimitnyy-internet-so-smartfona-na-kompyuter)
+
 ## Word
 - [Reduce the file size of a picture in Microsoft Office](https://support.microsoft.com/en-us/office/reduce-the-file-size-of-a-picture-in-microsoft-office-8db7211c-d958-457c-babd-194109eb9535)
 

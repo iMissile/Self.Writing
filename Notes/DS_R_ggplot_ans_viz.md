@@ -707,6 +707,7 @@ gtcars |>
 
 ## reactable
 - [A couple useful JavaScript aggregation and formatting functions for {reactable}](https://www.zajichekstats.com/post/reactable-javascript/)
+- [Removing higher-order aggregation text in {reactable}](https://www.zajichekstats.com/post/quickly-removing-higher-order-aggregation-text-in-reactable/)
 - [How to use buttons in a Reactable widget for navigation in a Shiny application](https://discindo.org/post/reactable-buttons/)
 - [Interactive Drill-down Tables using {reactable}](https://rpubs.com/StevenDuttRoss/flextable2)
 - [Conditional Styling](https://glin.github.io/reactable/articles/conditional-styling.html)

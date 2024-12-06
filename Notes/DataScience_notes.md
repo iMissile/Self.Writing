@@ -4599,15 +4599,6 @@ Instant deployment, sharing and API access for your data science projects.
 
 # 07.10.2021
 ## R
-- COOL! [CHANGES IN R 4.0.0. SIGNIFICANT USER-VISIBLE CHANGES]
-There is a new syntax for specifying raw character constants similar to the one used in C++: r"(...)" with ... any character sequence not containing the sequence )". This makes it easier to write strings that contain backslashes or both single and double quotes. For more details see ?Quotes.
-- COOL! [Strings in R 4.x vs 3.x (and earlier)](https://mpopov.com/blog/2020/05/22/strings-in-r-4.x/)
-- COOL! [Reserved Words in R](https://stat.ethz.ch/R-manual/R-devel/library/base/html/Reserved.html). The reserved words in R's parser are
-```
-if else repeat while function for in next break
-TRUE FALSE NULL Inf NaN NA NA_integer_ NA_real_ NA_complex_ NA_character_
-... and ..1, ..2 etc, which are used to refer to arguments passed down from a calling function, see ....
-```
 - [brms](https://paul-buerkner.github.io/brms/). Bayesian regression models using Stan
 The brms package provides an interface to fit Bayesian generalized (non-)linear multivariate multilevel models using Stan.
 - COOL! [Using data.table with OpenMP support @ Mac](https://firas.io/post/data.table_openmp/) Posted on 2021, Apr 26 by Firas Sadiyah
@@ -4862,6 +4853,16 @@ Modeling with Python on different types of time series to compare the model algo
 - [R - How to replace a string from multiple matches (in a data frame)](https://stackoverflow.com/questions/42998632/r-how-to-replace-a-string-from-multiple-matches-in-a-data-frame)
 - [Match and replace multiple strings in a vector of text without looping in R](https://stackoverflow.com/questions/29403080/match-and-replace-multiple-strings-in-a-vector-of-text-without-looping-in-r)
 - [Is there an R function to escape a string for regex characters](https://stackoverflow.com/questions/14836754/is-there-an-r-function-to-escape-a-string-for-regex-characters)
+- COOL! [CHANGES IN R 4.0.0. SIGNIFICANT USER-VISIBLE CHANGES]
+There is a new syntax for specifying raw character constants similar to the one used in C++: r"(...)" with ... any character sequence not containing the sequence )". This makes it easier to write strings that contain backslashes or both single and double quotes. For more details see ?Quotes.
+- COOL! [Strings in R 4.x vs 3.x (and earlier)](https://mpopov.com/blog/2020/05/22/strings-in-r-4.x/)
+- COOL! [Reserved Words in R](https://stat.ethz.ch/R-manual/R-devel/library/base/html/Reserved.html). The reserved words in R's parser are
+```
+if else repeat while function for in next break
+TRUE FALSE NULL Inf NaN NA NA_integer_ NA_real_ NA_complex_ NA_character_
+... and ..1, ..2 etc, which are used to refer to arguments passed down from a calling function, see ....
+```
+
 
 ## DS
 - [Feather V2 with Compression Support in Apache Arrow 0.17.0](https://ursalabs.org/blog/2020-feather-v2/)
