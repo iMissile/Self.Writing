@@ -1603,6 +1603,12 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
 
+# 10.12.2024
+## Viz
+- [#30DayChartChallenge](https://x.com/hashtag/30DayChartChallenge?src=hashtag_click)
+## R
+- Learning. [Benjamin Nowak](https://bjnnowak.netlify.app/). My name is Benjamin Nowak and I am a French lecturer in agronomy. This website is for sharing my research projects and courses with engineering students.
+
 # 30.11.2024
 - COOL! Blog. [Building quality by testing.](https://jakubsob.github.io/#blog). I’m a software engineer specialising in R. I teach and preach using testing to efficiently develop code.
 - COOL! S7 [S7 & Options objects](https://josiahparry.com/posts/2024-11-21-s7-options-objects). reimagining `readr::read_csv()`

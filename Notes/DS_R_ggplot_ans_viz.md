@@ -654,6 +654,12 @@ You can do that for the whole document, or at the cell level (https://quarto.org
 - [Can't use alpha argument in data_color()? #250 {Closed}](https://github.com/rstudio/gt/issues/250)
 	Выяснилось, что если палитра не набор `character`, а класс `colours` (получаем из ggthemes, например, то тут начинает рвать Ошибка в col2rgb(col, alpha = TRUE) : 
   неправильное название цвета 'rgba(242,142,43,0.7)')
+  
+### gt & ggplot
+- [Getting started with {gt} tables](https://nrennie.rbind.io/blog/getting-started-with-gt-tables/)
+{gt} is an R package designed to make it easy to make good looking tables. This blog post demonstrates how to add plots as a column in a {gt} table.
+- [One Farm by Benjamin Nowak](https://posit.co/blog/winners-of-the-2021-table-contest/). Winners of the 2021 Table Contest
+- [Helper function for adding a ggplot](https://gt.rstudio.com/reference/ggplot_image.html)
 
 - COOL! [New Features and Serious Upgrades in {gt} 0.8.0](https://posit.co/blog/new-features-upgrades-in-gt-0-8-0/)
 The v0.8.0 release of gt is quite exciting so we want to show you all the things you can now do when making tables!
