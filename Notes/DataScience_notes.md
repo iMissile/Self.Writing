@@ -1495,6 +1495,10 @@ dbt (http://getdbt.com) adapter for DuckDB (http://duckdb.org)
 - COOL! Slides. [Generative AI exists because of the transformer](https://ig.ft.com/generative-ai/)
 - Slides [GitHub Copilot in RStudio, it’s finally here!](https://colorado.posit.co/rsc/rstudio-copilot/#/TitleSlide) by Tom Mock, 2023-10-04
 
+## ML System Design
+- Ирина Голощапова https://github.com/IrinaGoloshchapova/ml_system_design_doc_ru/blob/main/ML_System_Design_Doc_Template.md
+- Валерий Бабушкин https://github.com/ML-SystemDesign/MLSystemDesign
+
 ## R & certificates
 - Если есть сетевые проблемы с установкой пакетов, смотрим на SSL сертификаты:
 ```
@@ -1608,6 +1612,15 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [#30DayChartChallenge](https://x.com/hashtag/30DayChartChallenge?src=hashtag_click)
 ## R
 - Learning. [Benjamin Nowak](https://bjnnowak.netlify.app/). My name is Benjamin Nowak and I am a French lecturer in agronomy. This website is for sharing my research projects and courses with engineering students.
+- [The pal package](https://simonpcouch.github.io/pal/) provides a library of ergonomic LLM assistants designed to help you complete repetitive, hard-to-automate tasks quickly.
+
+## Explainers
+Мне нравится интерактивная подача материала и иллюстрации по таким сложным вопросам как искуственные нейронные сети и машинное обучение. Примеры можно посмотреть в известной статье Generative AI exists because of the transformer (https://ig.ft.com/generative-ai/) (FT), The Illustrated Machine Learning (https://illustrated-machine-learning.github.io/) или LLM Visualization (https://bbycroft.net/llm). 
+
+Вот еще один класс "объяснялок" от Polo Club of Data Science (https://poloclub.github.io/):
+🔸 CNN Explainer (https://poloclub.github.io/cnn-explainer/)
+🔹 Transformer Explainer (https://poloclub.github.io/transformer-explainer/)
+🔸 Diffusion Explainer (https://poloclub.github.io/diffusion-explainer/)
 
 # 30.11.2024
 - COOL! Blog. [Building quality by testing.](https://jakubsob.github.io/#blog). I’m a software engineer specialising in R. I teach and preach using testing to efficiently develop code.
@@ -2477,6 +2490,10 @@ This package extends the functionality of shiny by providing an API for client s
 
 ### shiny + bs4Dash
 - [Height of the box in R Shiny](https://stackoverflow.com/questions/56965843/height-of-the-box-in-r-shiny)
+- [How to show a different icon with the collapsed sidebar? #6 {Closed}](https://github.com/RinteRface/shinydashboardPlus/issues/6)
+@racheldsoh : now this is done with the dashboardHeader function and controlbarIcon parameter. This feature has been aligned with {bs4Dash} recently.
+- [Accessing the sidebar state using bs4Dash](https://stackoverflow.com/questions/74233261/accessing-the-sidebar-state-using-bs4dash).
+I was just wondering the same thing and, upon searching the bs4Dash how-to-start guide, found the answer. So, if you set the id of your sidebar to be 'my_sidebar', then you can access the state of sidebar with input$my_sidebar.
 
 ### shiny + parallel + progress
 - [Using standard R shiny progress bar in parallel foreach calculations](https://stackoverflow.com/questions/54532486/using-standard-r-shiny-progress-bar-in-parallel-foreach-calculations)

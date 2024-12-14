@@ -651,6 +651,14 @@ One option would be to use `gt::text_transform` which allows for formatting via 
 - Тут подробный диалог по способам решения. [Option to disable table striping in computational tables? #6945 {Closed}](https://github.com/quarto-dev/quarto-cli/issues/6945)
 As a reminder, you can try opting out Quarto HTML table processing.
 You can do that for the whole document, or at the cell level (https://quarto.org/docs/authoring/tables.html#disabling-quarto-table-processing) or even do it at gt level with options quarto.disable_processing (https://gt.rstudio.com/reference/tab_options.html)
+- [6  Quarto and {gt}](https://gt.albert-rapp.de/quarto_gt). This chapter is (hopefully) obsolete. Радикально решает преамбула в YAML.
+```
+---
+format:
+  html:
+    html-table-processing: none
+---
+```
 - [Can't use alpha argument in data_color()? #250 {Closed}](https://github.com/rstudio/gt/issues/250)
 	Выяснилось, что если палитра не набор `character`, а класс `colours` (получаем из ggthemes, например, то тут начинает рвать Ошибка в col2rgb(col, alpha = TRUE) : 
   неправильное название цвета 'rgba(242,142,43,0.7)')
