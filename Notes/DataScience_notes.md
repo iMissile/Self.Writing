@@ -1613,6 +1613,7 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 ## R
 - Learning. [Benjamin Nowak](https://bjnnowak.netlify.app/). My name is Benjamin Nowak and I am a French lecturer in agronomy. This website is for sharing my research projects and courses with engineering students.
 - [The pal package](https://simonpcouch.github.io/pal/) provides a library of ergonomic LLM assistants designed to help you complete repetitive, hard-to-automate tasks quickly.
+- [tidyplots](https://tidyplots.org/) is an R package to generate publication-ready plots for scientific papers.
 
 ## Explainers
 Мне нравится интерактивная подача материала и иллюстрации по таким сложным вопросам как искуственные нейронные сети и машинное обучение. Примеры можно посмотреть в известной статье Generative AI exists because of the transformer (https://ig.ft.com/generative-ai/) (FT), The Illustrated Machine Learning (https://illustrated-machine-learning.github.io/) или LLM Visualization (https://bbycroft.net/llm). 

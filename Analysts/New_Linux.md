@@ -232,3 +232,11 @@ sed -z 's/\n/ /g'
 ```
 - [Replace string containing newline in huge file](https://unix.stackexchange.com/questions/137391/replace-string-containing-newline-in-huge-file)
 - Отличный поток по обсуждению принципиальных подходов по замене новой строки. `sed` не самый лучший инструмент для этого. [How can I replace each newline (\n) with a space using sed?ъ(https://stackoverflow.com/questions/1251999/how-can-i-replace-each-newline-n-with-a-space-using-sed)
+
+# Plex
+- [Установка Plex на Ubuntu 20.04](https://losst.pro/ustanovka-plex-na-ubuntu-18-04)
+- [Установка Plex Media Server на Ubuntu 22.04](https://dzen.ru/a/ZDB-_FlRVVz6nEoU)
+
+## Minicomp
+- [Мини-компьютер на Intel N100 — создаём игровую консоль своими руками](https://www.ixbt.com/live/platform/mini-kompyuter-na-intel-n100-sozdaem-igrovuyu-konsol-svoimi-rukami.html)
+- [Mini Pc Ninkear T9 Intel Alder Lake N100 DDR5](https://ru.ninkear.com/products/mini-pc-ninkear-t9-intel-alder-lake-n100-ddr5?variant=1dfaa472-be25-47b5-8741-a410ac5e1667)
