@@ -1353,6 +1353,12 @@ In Python 3+, the default encoding of source files is already UTF-8 and that lin
 # C++
 - [Is there any shortcut for CodeBlocks to format the code?](https://stackoverflow.com/questions/26278082/is-there-any-shortcut-for-codeblocks-to-format-the-code)
 
+# 20.12.2024
+- [How to navigate through a vector using iterators? (C++)](https://stackoverflow.com/questions/2395275/how-to-navigate-through-a-vector-using-iterators-c)
+- COOL! [Range-based for loop (since C++11)](https://en.cppreference.com/w/cpp/language/range-for)
+- [Iterators in C++ STL](https://www.geeksforgeeks.org/iterators-c-stl/)
+- [History of C++](https://en.cppreference.com/w/cpp/language/history)
+
 # 03.12.2024
 - [The Day The Standard Library Died](https://cor3ntin.github.io/posts/abi/). In Prague, the C++ committee took a series of polls on whether to break ABI, and decided not to.
 ABI (Application Binary Interface)

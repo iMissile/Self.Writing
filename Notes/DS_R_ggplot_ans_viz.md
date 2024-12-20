@@ -483,6 +483,7 @@ storeLabeller <- function(string) {
 - COOL! [gtExtras](https://jthomasmock.github.io/gtExtras/index.html). The goal of gtExtras is to provide some additional helper functions to assist in creating beautiful tables with gt.
 - [scattermore](https://exaexa.github.io/scattermore/index.html). Scatterplots with more datapoints. If you want to plot bazillions of points without much waiting, use this.
 - [camcorder](https://thebioengineer.github.io/camcorder/) is an R package to track and automatically save graphics generated with ggplot2 that are created across one or multiple sessions with the eventual goal of creating a GIF showing all the plots saved sequentially during the design process.
+- [legendry](https://teunbrand.github.io/legendry/) позволяет делать пузырьковые легенды для графиков.
 
 =======
 - COOL! Как эффективно применить `ggfx` [Better data communication with {ggplot2}, part 2](https://giulia-ruggeri.medium.com/better-data-communication-with-ggplot2-part-2-615a5180ccb)
@@ -723,6 +724,19 @@ gtcars |>
 - [A couple useful JavaScript aggregation and formatting functions for {reactable}](https://www.zajichekstats.com/post/reactable-javascript/)
 - [Removing higher-order aggregation text in {reactable}](https://www.zajichekstats.com/post/quickly-removing-higher-order-aggregation-text-in-reactable/)
 - [How to use buttons in a Reactable widget for navigation in a Shiny application](https://discindo.org/post/reactable-buttons/)
+- [How to add button to reactable row](https://glin.github.io/reactable/articles/examples.html#custom-action)
+```
+plot_action = colDef(
+  name = "",
+  sortable = FALSE,
+  # cell = function() htmltools::tags$button("График")
+  cell = function(value, index) {
+    # Create a button for each row
+    actionButton(ns(paste0("plot_", index)), "Plot",
+                 onclick = glue::glue("Shiny.onInputChange('{plot_id_str}', {index})"))
+  }
+)
+```
 - [Interactive Drill-down Tables using {reactable}](https://rpubs.com/StevenDuttRoss/flextable2)
 - [Conditional Styling](https://glin.github.io/reactable/articles/conditional-styling.html)
 - Офигенский пример таблички, с картинками, спарклайнами и немного js. [Tidyverse in Numbers](https://szymanskir.quarto.pub/tidyverse_in_numbers/)
@@ -732,6 +746,7 @@ gtcars |>
 - [Reactable onClick not working within module, even when properly namespaced](https://forum.posit.co/t/reactable-onclick-not-working-within-module-even-when-properly-namespaced/177864)
 - [React onClick event handlers: A complete guide](https://blog.logrocket.com/react-onclick-event-handlers-guide/)
 - [let expand button execute a renderPlot function #367 {Open}](https://github.com/glin/reactable/issues/367)
+- [Why is the reactable index of rows in my filtered table wrong?](https://stackoverflow.com/questions/76862055/why-is-the-reactable-index-of-rows-in-my-filtered-table-wrong) Очень полезный набор ответов по теме отработки выделения строк в таблице.
 
 # ECharts
 - [Форматирование меток осей](https://echarts.apache.org/en/option.html#xAxis.axisLabel.formatter)
