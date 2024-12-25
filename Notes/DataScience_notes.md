@@ -1606,6 +1606,11 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
+# 26.12.2024
+- [litedown: R Markdown Reimagined](https://yihui.org/litedown/) by Yihui Xie
+- [R XGBoost - xgb.save or xgb.load loss of data](https://stackoverflow.com/questions/48925358/r-xgboost-xgb-save-or-xgb-load-loss-of-data)
+- [xgboost not providing reproducible predictions after saving in bin format](https://stackoverflow.com/questions/71401330/xgboost-not-providing-reproducible-predictions-after-saving-in-bin-format/71429092#71429092)
+
 
 # 10.12.2024
 ## Viz
@@ -2493,6 +2498,18 @@ Download ‘Google’ fonts (via google-webfonts-helper) and generate CSS to use
 - [shinyFiles](https://github.com/thomasp85/shinyFiles)
 This package extends the functionality of shiny by providing an API for client side access to the server file system.
 - [Persistent data storage in Shiny apps](https://shiny.posit.co/r/articles/build/persistent-data-storage/)
+
+### shiny & Rstudio IDE
+- [Change size of RStudio Window on start of Shiny app](https://stackoverflow.com/questions/42491673/change-size-of-rstudio-window-on-start-of-shiny-app). You can try the `runGadget` option.
+```
+# Run in a dialog within R Studio
+runGadget(ui, server, viewer = dialogViewer("Dialog Title", width = 1200, height = 600))
+# Run in Viewer pane
+runGadget(ui, server, viewer = paneViewer(minHeight = 500))
+# Run in browser
+runGadget(ui, server, viewer = browserViewer(browser = getOption("browser")))
+```
+- [set window size of Shiny App #8070 {Closed}](https://github.com/rstudio/rstudio/issues/8070)
 
 ### shiny + bs4Dash
 - [Height of the box in R Shiny](https://stackoverflow.com/questions/56965843/height-of-the-box-in-r-shiny)

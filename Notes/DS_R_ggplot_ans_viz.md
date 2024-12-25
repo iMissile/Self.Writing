@@ -748,6 +748,13 @@ plot_action = colDef(
 - [let expand button execute a renderPlot function #367 {Open}](https://github.com/glin/reactable/issues/367)
 - [Why is the reactable index of rows in my filtered table wrong?](https://stackoverflow.com/questions/76862055/why-is-the-reactable-index-of-rows-in-my-filtered-table-wrong) Очень полезный набор ответов по теме отработки выделения строк в таблице.
 
+### tooltip
+- [Tooltip on a cell reactable R](https://stackoverflow.com/questions/62044595/tooltip-on-a-cell-reactable-r)
+- [Tippy](https://tippy.john-coene.com/). Include tooltips in Rmarkdown documents and Shiny applications.
+- [`reactablefmtr::tooltip`](https://kcuilla.github.io/reactablefmtr/reference/tooltip.html). Apply a tooltip to cells.
+- [`reactable.extras::tooltip_extra`](https://appsilon.github.io/reactable.extras/reference/tooltip_extra.html). Tool-tip for table headers
+- [Using tippy on cells #220 {Open}](https://github.com/glin/reactable/issues/220)
+
 # ECharts
 - [Форматирование меток осей](https://echarts.apache.org/en/option.html#xAxis.axisLabel.formatter)
 - [R echarts4r - format dates in axis](https://stackoverflow.com/questions/63838914/r-echarts4r-format-dates-in-axis)
