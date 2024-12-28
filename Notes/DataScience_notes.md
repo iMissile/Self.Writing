@@ -1610,6 +1610,8 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [litedown: R Markdown Reimagined](https://yihui.org/litedown/) by Yihui Xie
 - [R XGBoost - xgb.save or xgb.load loss of data](https://stackoverflow.com/questions/48925358/r-xgboost-xgb-save-or-xgb-load-loss-of-data)
 - [xgboost not providing reproducible predictions after saving in bin format](https://stackoverflow.com/questions/71401330/xgboost-not-providing-reproducible-predictions-after-saving-in-bin-format/71429092#71429092)
+- [Building User-Friendly DSLs](https://www.manning.com/books/building-user-friendly-dsls)
+- [foreach: Keep names](https://stackoverflow.com/questions/27276269/foreach-keep-names). Но `.final` не будет работать в истории с отбрасыванием ошибочных итераций
 
 
 # 10.12.2024
