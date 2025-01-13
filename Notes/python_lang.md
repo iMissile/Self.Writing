@@ -1358,6 +1358,14 @@ In Python 3+, the default encoding of source files is already UTF-8 and that lin
 # C++
 - [Is there any shortcut for CodeBlocks to format the code?](https://stackoverflow.com/questions/26278082/is-there-any-shortcut-for-codeblocks-to-format-the-code)
 
+# 13.01.2025
+- [Initialize a std::pair in C++](https://www.techiedelight.com/initialize-a-stdpair-cpp/)
+- [How do I flush the cin buffer?](https://stackoverflow.com/questions/257091/how-do-i-flush-the-cin-buffer)
+```
+std::cin.clear();
+std::cin.ignore(INT_MAX);
+```
+
 # 20.12.2024
 - [How to navigate through a vector using iterators? (C++)](https://stackoverflow.com/questions/2395275/how-to-navigate-through-a-vector-using-iterators-c)
 - COOL! [Range-based for loop (since C++11)](https://en.cppreference.com/w/cpp/language/range-for)

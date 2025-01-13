@@ -1606,6 +1606,19 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
+# 17.01.2025
+- [Making art with R](https://github.com/gkaramanis/aRtist/tree/main)
+
+# 10.01.2025
+- [GitHub - BurntSushi/xsv](https://github.com/BurntSushi/xsv): A fast CSV command line toolkit written in Rust.
+- [GitHub - benhoyt/goawk](https://github.com/benhoyt/goawk): A POSIX-compliant AWK interpreter written in Go, with CSV support
+- Для того, чтобы войти в курс дела, можно посмотреть подборку С чего начать свой путь в causal inference? (https://t.me/causal_channel/49) и Оценка причинно-следственных связей (https://github.com/annastavniychuk/econometrics_library) от наших уважаемых коллег из МГУ им. М.В. Ломоносова, а также Causal Inference in R (https://t.me/naukaidannye/249) у нас на канале.
+
+## text analysis
+- [golgotha](https://github.com/bnosac/golgotha) - Contextualised Embeddings and Language Modelling using BERT and Friends using R. Немного старая.
+- [text](https://r-text.org/). An R-package for analyzing natural language with transformers-based large language models. The text package is part of the R Language Analysis Suite, including talk, text and topics.
+- вдогонку: пожалуй, самая важная вещь, которую нужно понимать про BERT https://datascience.stackexchange.com/questions/66207/what-is-purpose-of-the-cls-token-and-why-is-its-encoding-output-important
+
 # 26.12.2024
 - [litedown: R Markdown Reimagined](https://yihui.org/litedown/) by Yihui Xie
 - [R XGBoost - xgb.save or xgb.load loss of data](https://stackoverflow.com/questions/48925358/r-xgboost-xgb-save-or-xgb-load-loss-of-data)
@@ -2915,7 +2928,7 @@ Simultaneous tests and confidence intervals for general linear hypotheses in par
 - [revealjs PDF Export](https://revealjs.com/pdf-export/). Open your presentation with print-pdf included in the query string, for example: http://localhost:8000/?print-pdf
 - [DeckTape. PDF exporter for HTML presentations](https://github.com/astefanutti/decktape)
 It seems that the problems with exporting to PDF can be easily fixed by small modifications in CSS. Add following:
-- [remark.js. Export to PDF #50 {Closed}](https://github.com/gnab/remark/issues/50). Добавил в иснтрументах Хрома и все реально заработало!!!!
+- [remark.js. Export to PDF #50 {Closed}](https://github.com/gnab/remark/issues/50). Добавил в инструментах Хрома и все реально заработало!!!!
 ```
 @page {
   size: 1210px 681px;
@@ -2933,7 +2946,25 @@ It seems that the problems with exporting to PDF can be easily fixed by small mo
 }
 For 4:3 provide size: 908px 681px;. It still has some scaling issues to be fixed though.
 ```
-
+- [good recipe on using docker decktape: #7018 (reply in thread)](https://github.com/quarto-dev/quarto-cli/discussions/7018#discussioncomment-7897967)
+I'm a little late to the party here, but just in case somebody else comes across this, the decktape docker images can be used to eliminate the pain of installing.
+If you `cd` to your directory with your `revealjs.html` file you can run the following. Just change `PRESENTATIONNAME`
+"docker run --rm -t -v `pwd`:/slides -v $(pwd):/home/user astefanutti/decktape --screenshots-size 1920x1080 /home/user/PRESENTATIONNAME.html slides.pdf"
+Note that this maps your host working directory to `/home/user` in the container, so don't change the `/home/user` path for the html file.
+- [Конвертация презентации, созданной в `impress.js` в PDF](https://github.com/impress/impress.js/issues/99): I am using https://github.com/melix/deck2pdf with the command deck2pdf --profile=impressjs input.html output.pdf to convert my presentations into PDF.
+	- [astefanutti/decktape](https://github.com/astefanutti/decktape). PDF exporter for HTML presentations
+	- [GitHub Actions, reveal.js, and Automating the PDF Conversion](https://4comprehension.com/github-actions-reveal-js-and-automating-pdf-conversion/)
+	- [melix/deck2pdf](https://github.com/melix/deck2pdf). Converts various HTML5 slide decks to PDF
+	- [Exporting HTML Presentations to PDF](https://datawookie.dev/blog/2017/10/exporting-html-presentations-to-pdf/)
+	- COOL! [How to convert R reveal.js presentation to pdf?](https://stackoverflow.com/questions/40778333/how-to-convert-r-reveal-js-presentation-to-pdf). Любопытно: Open your HTML file in the browser and add `?print-pdf` to the URL, e. g. `http://index.html?print-pdf`
+	
+С трудом попытался запустить DeckTape для конвертации презентации. Все равно получилась кривизна. Но запускал так:
+	- в директории `/home/shiny/` сделал директорию `arch`.
+	- скопировал туда все слайды
+	- поставил docker с репозитория
+	- запустил командой "sudo docker run --rm -t -v `pwd`:/slides -v ~:/home/user astefanutti/decktape arch/mt-ds-architecture.html slides.pdf"
+	- если выдает "docker : invalid reference format" -- в имени пути есть пробелы
+- COOL! [Automated Build and Publication of Slides with R Markdown, Reveal.js, DeckTape, and LibreOffice](https://sadams.io/post/rmarkdown-to-slides/)
 
 ## R
 - [Trimming the Fat from `glm()` Models in R](https://win-vector.com/2014/05/30/trimming-the-fat-from-glm-models-in-r/) by Nina Zumel on May 30, 2014
@@ -5208,19 +5239,7 @@ When you change document, you should again press "Show all" to show changes of n
 - [Introducing TensorFlow Decision Forests](https://blog.tensorflow.org/2021/05/introducing-tensorflow-decision-forests.html)
 - [Prefect](https://www.prefect.io/) is the new standard in dataflow automation , trusted to build, run, and monitor millions of data workflows and pipelines.
 - [Combining tree-boosting with Gaussian process and mixed effects models](https://github.com/fabsig/GPBoost)
-- [Конвертация презентации, созданной в `impress.js` в PDF](https://github.com/impress/impress.js/issues/99): I am using https://github.com/melix/deck2pdf with the command deck2pdf --profile=impressjs input.html output.pdf to convert my presentations into PDF.
-	- [astefanutti/decktape](https://github.com/astefanutti/decktape). PDF exporter for HTML presentations
-	- [GitHub Actions, reveal.js, and Automating the PDF Conversion](https://4comprehension.com/github-actions-reveal-js-and-automating-pdf-conversion/)
-	- [melix/deck2pdf](https://github.com/melix/deck2pdf). Converts various HTML5 slide decks to PDF
-	- [Exporting HTML Presentations to PDF](https://datawookie.dev/blog/2017/10/exporting-html-presentations-to-pdf/)
-	- COOL! [How to convert R reveal.js presentation to pdf?](https://stackoverflow.com/questions/40778333/how-to-convert-r-reveal-js-presentation-to-pdf). Любопытно: Open your HTML file in the browser and add `?print-pdf` to the URL, e. g. `http://index.html?print-pdf`
-	
-С трудом попытался запустить DeckTape для конвертации презентации. Все равно получилась кривизна. Но запускал так:
-	- в директории `/home/shiny/` сделал директорию `arch`.
-	- скопировал туда все слайды
-	- поставил docker с репозитория
-	- запустил командой "sudo docker run --rm -t -v `pwd`:/slides -v ~:/home/user astefanutti/decktape arch/mt-ds-architecture.html slides.pdf"
-- COOL! [Automated Build and Publication of Slides with R Markdown, Reveal.js, DeckTape, and LibreOffice](https://sadams.io/post/rmarkdown-to-slides/)
+
 
 ## R
 - COOL! [Making R Markdown work better for you](https://alison.rbind.io/talk/2021-rmd-params/)

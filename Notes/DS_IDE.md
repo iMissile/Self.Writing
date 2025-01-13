@@ -52,7 +52,9 @@ Choose `hidden` if you'd like to never see them.
 - [Getting Started with Python in VS Code](https://code.visualstudio.com/docs/python/python-tutorial)
 	- install the Python extension for VS Code from the Visual Studio Marketplace. [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
-## R VScode
+## R VScode & Positron
+- [VS Code Remote Development](https://code.visualstudio.com/docs/remote/remote-overview)
+- [Positron has experimental support for Remote SSH sessions.](https://positron.posit.co/remote-ssh.html)
 
 ## Kun Ren
 - Base. [R Extension for Visual Studio Code](https://github.com/REditorSupport/vscode-R)
@@ -138,6 +140,7 @@ Remember to leave a new line at the bottom of the file.
 - COOL! [Fun with Positron](https://www.andrewheiss.com/blog/2024/07/08/fun-with-positron/)
 Combine the best of RStudio and Visual Studio Code in Posit’s new Positron IDE
 - [Positron](https://github.com/posit-dev/positron), a next-generation data science IDE
+- [R code formatting #5534 {Closed}](https://github.com/posit-dev/positron/issues/5534)
 
 ## extensions
 - Расширение [pastum](https://marketplace.visualstudio.com/items?itemName=atsyplenkov.pastum). Pastum: paste as ... dataframe

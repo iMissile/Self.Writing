@@ -225,6 +225,7 @@ You can do that for the whole document, or at the cell level (https://quarto.org
 
 ## Quarto & pdf
 - [Making Pretty PDFs with Quarto](https://nrennie.rbind.io/blog/making-pretty-pdf-quarto/)
+- [Clipped footnotes for PDF print of revealjs #5998 {Open}](https://github.com/quarto-dev/quarto-cli/issues/5998)
 
 ## Quarto & html widgets
 - ['printing' HTML widgets in programmatically generated Rmarkdown](https://stackoverflow.com/questions/64430375/printing-html-widgets-in-programmatically-generated-rmarkdown)
@@ -535,6 +536,13 @@ Tidying and splitting model summaries for inline reporting
 
 
 # ==================================================
+
+# 08.01.2025
+- COOL! [Sharing and Remixing content across Revealjs slides with Quarto Includes](https://www.cynthiahqy.com/posts/slides-quarto-includes)
+How I reused content and metadata across slides for a multi-day workshop with Quarto.
+```
+Since all my slides were in different folders, sharing YAML options using the directory metadata file _metadata.yml wasn’t an option. Instead I used the metadata-files: YAML option to share the same _slides.yml file across all of my slides. The only thing I had to be careful about was making sure I got the relative references correct. Even though _slides.yml and the style/ folder were both in the root directory of my repo, I had to use ../style/slides.scss to reference the custom CSS file. This is because the relative links are evaluated from the location of the slides.qmd file (i.e. inside the module folder 01a-hello-quarto/) not the root directory of the repo.
+```
 
 # 14.09.2023
 ## quarto plugins
