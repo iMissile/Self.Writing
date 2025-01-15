@@ -1608,6 +1608,7 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 
 # 17.01.2025
 - [Making art with R](https://github.com/gkaramanis/aRtist/tree/main)
+- [Browser use](https://github.com/browser-use/browser-use) is the easiest way to connect your AI agents with the browser.
 
 # 10.01.2025
 - [GitHub - BurntSushi/xsv](https://github.com/BurntSushi/xsv): A fast CSV command line toolkit written in Rust.
@@ -1618,6 +1619,7 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [golgotha](https://github.com/bnosac/golgotha) - Contextualised Embeddings and Language Modelling using BERT and Friends using R. Немного старая.
 - [text](https://r-text.org/). An R-package for analyzing natural language with transformers-based large language models. The text package is part of the R Language Analysis Suite, including talk, text and topics.
 - вдогонку: пожалуй, самая важная вещь, которую нужно понимать про BERT https://datascience.stackexchange.com/questions/66207/what-is-purpose-of-the-cls-token-and-why-is-its-encoding-output-important
+- [Как устроена нейросеть BERT от Google](https://sysblok.ru/knowhow/kak-ustroena-nejroset-bert-ot-google/)
 
 # 26.12.2024
 - [litedown: R Markdown Reimagined](https://yihui.org/litedown/) by Yihui Xie

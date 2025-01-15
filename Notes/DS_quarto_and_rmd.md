@@ -235,6 +235,8 @@ Solved by discovering viewport units!
 Or to account for the already occupied screen real estate, in my case a 90 pixel high header:
 `widget.layout.height = "calc(100vh - 90px)"`
 - COOL! [HTML block](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/12-html-block/). Want to embed an iframe on a webpage or a slide deck? Plop the sharing code in a raw html block!
+- [Quarto Report Example With Plotly and Trelliscopejs](https://jauntyjjs.github.io/Trelliscopejs_In_Quarto_Example/)
+- [TrelliscopeJS with Plotly](https://ryanhafen.com/blog/trelliscopejs-plotly/)
 
 ## Quarto & Shiny
 - COOL! [Combining Shiny and Quarto. A love story.](https://rappa.shinyapps.io/shiny_quarto/)

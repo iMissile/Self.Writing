@@ -1,3 +1,6 @@
+# 17.01.2025
+- [Eliminating variables in Mathematica](https://stackoverflow.com/questions/45555605/eliminating-variables-in-mathematica)
+
 # 04.11.2024
 - [Using Assuming with Reduce](https://mathematica.stackexchange.com/questions/179820/using-assuming-with-reduce)
 Assumptions is not an option for Reduce: `Options[Reduce]`
