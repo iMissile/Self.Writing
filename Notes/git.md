@@ -403,3 +403,11 @@ git stash
 git pull --rebase
 git stash pop
 ```
+
+# работа с конфигурациями git
+- [How do I show my global Git configuration?](https://stackoverflow.com/questions/12254076/how-do-i-show-my-global-git-configuration)
+`git config --global --list`
+- Git configuration variables can be stored at three different levels. Each level overrides values at the previous level.
+How do I view all settings?
+Run `git config --list`, showing system, global, and (if inside a repository) local configs
+Run `git config --list --show-origin`, also shows the origin file of each config item

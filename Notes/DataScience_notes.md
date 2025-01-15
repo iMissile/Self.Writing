@@ -1609,6 +1609,8 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 # 17.01.2025
 - [Making art with R](https://github.com/gkaramanis/aRtist/tree/main)
 - [Browser use](https://github.com/browser-use/browser-use) is the easiest way to connect your AI agents with the browser.
+- [Is it possible to insert (add) a row to a SQLite db table using dplyr package?](https://stackoverflow.com/questions/26568182/is-it-possible-to-insert-add-a-row-to-a-sqlite-db-table-using-dplyr-package)
+- [RSQLite](https://rsqlite.r-dbi.org/)
 
 # 10.01.2025
 - [GitHub - BurntSushi/xsv](https://github.com/BurntSushi/xsv): A fast CSV command line toolkit written in Rust.
@@ -1620,6 +1622,7 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [text](https://r-text.org/). An R-package for analyzing natural language with transformers-based large language models. The text package is part of the R Language Analysis Suite, including talk, text and topics.
 - вдогонку: пожалуй, самая важная вещь, которую нужно понимать про BERT https://datascience.stackexchange.com/questions/66207/what-is-purpose-of-the-cls-token-and-why-is-its-encoding-output-important
 - [Как устроена нейросеть BERT от Google](https://sysblok.ru/knowhow/kak-ustroena-nejroset-bert-ot-google/)
+- [BERT: прорыв в NLP-технологиях или очередной хайп на теме Deep Learning?](https://chernobrovov.ru/articles/bert-proryv-v-nlp-tehnologiyah-ili-ocherednoj-hajp-na-teme-deep-learning.html)
 
 # 26.12.2024
 - [litedown: R Markdown Reimagined](https://yihui.org/litedown/) by Yihui Xie
