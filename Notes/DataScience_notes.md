@@ -253,6 +253,8 @@ This is a list of R developers and advocates on Github. This is to help new come
 - [Scaling Up With R and Arrow](https://arrowrbook.com/). Bigger Data, Easier Workflows
 Authors: Nic Crane, Jonathan Keane, and Neal Richardson
 - [Model-Based Clustering, Classification, and Density Estimation Using mclust in R](https://mclust-org.github.io/mclust-book/)
+- [The openxlsx2 book](https://janmarvin.github.io/ox2-book/)
+
 
 ## e-books ML
 - [Deep Learning and Scientific Computing with R torch](https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/) by Sigrid Keydana
@@ -1590,6 +1592,7 @@ These are exercises on chapter #7 from “Forecasting Principles and Practice”
 - [The Best RAG Stack to Date](https://pub.towardsai.net/the-best-rag-stack-to-date-8dc035075e13). exploring every component
 - [Он победил LLM RAG: реализуем BM25+ с самых азов](https://habr.com/ru/articles/823568/)
 - [Full-Text Search is an extension to DuckDB](https://duckdb.org/docs/extensions/full_text_search.html)
+- [Everything you need to know to build your own RAG application](https://github.com/bRAGAI/bRAG-langchain)
 
 # text embedding
 - COOL! [An intuitive introduction to text embeddings](https://stackoverflow.blog/2023/11/09/an-intuitive-introduction-to-text-embeddings/)
@@ -1611,6 +1614,7 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [Browser use](https://github.com/browser-use/browser-use) is the easiest way to connect your AI agents with the browser.
 - [Is it possible to insert (add) a row to a SQLite db table using dplyr package?](https://stackoverflow.com/questions/26568182/is-it-possible-to-insert-add-a-row-to-a-sqlite-db-table-using-dplyr-package)
 - [RSQLite](https://rsqlite.r-dbi.org/)
+- [dbWriteTable performance with MariaDB](https://forum.posit.co/t/dbwritetable-performance-with-mariadb/77594). Legacy 'DBI' interface to 'MySQL' / 'MariaDB' based on old code ported from S-PLUS. A modern 'MySQL' client written in 'C++' is available from the 'RMariaDB' package.
 
 # 10.01.2025
 - [GitHub - BurntSushi/xsv](https://github.com/BurntSushi/xsv): A fast CSV command line toolkit written in Rust.
@@ -1880,6 +1884,7 @@ Combine the best of RStudio and Visual Studio Code in Posit’s new Positron IDE
 ## Math
 - [The lavaan package](https://lavaan.ugent.be/) is developed to provide useRs, researchers and teachers a free open-source, but commercial-quality package for latent variable modeling. You can use lavaan to estimate a large variety of multivariate statistical models, including path analysis, confirmatory factor analysis, structural equation modeling and growth curve models.
 - COOL! [Conveyal R5 Routing Engine](https://github.com/conveyal/r5). R5: Rapid Realistic Routing on Real-world and Reimagined networks
+- [SageMath](https://www.sagemath.org/) is a free open-source mathematics software system licensed under the GPL. It builds on top of many existing open-source packages: NumPy, SciPy, matplotlib, Sympy, Maxima, GAP, FLINT, R and many more.
 
 
 # 25.05.2024

@@ -360,6 +360,10 @@ This is an important distinction. When you install conda, it brings its own vers
 
 And as always, make sure to save the installation commands with version-locked dependencies for both conda and pip for every project where they are used.
 
+# 19.01.2025
+- [What's Lazy Evaluation in Python?](https://realpython.com/python-lazy-evaluation/#in-short-python-lazy-evaluation-generates-objects-only-when-needed)
+- [Python 3 Metaprogramming](https://dabeaz.com/py3meta/Py3Meta.pdf)
+
 # 27.12.2024
 - [uv](https://github.com/astral-sh/uv). An extremely fast Python package and project manager, written in Rust.
 	- [#044 - Python Environments, Again | uv: A Guide to Python Package Management](https://flocode.substack.com/p/044-python-environments-again-uv). A Streamlined Method to Get Up and Running with Jupyter Notebooks in VS Code
