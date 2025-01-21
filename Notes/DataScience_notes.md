@@ -305,6 +305,7 @@ by Christopher M. Bishop (Author), Hugh Bishop (Author)
 	- [You're Calculating CAC Wrong](https://blog.profitwell.com/youre-calculating-cac-wrong)
 	- [Customer Lifetime Value: How to Avoid Common Pitfalls and Build Smarter Metrics](https://www.strong.io/blog/customer-lifetime-value-avoid-common-pitfalls-and-build-smarter-metrics)
 	- [Customer Lifetime Value Part 1: Survival Analysis](https://looker.com/blog/survival-analysis)
+- [Handbook of Regression Modeling in People Analytics: With Examples in R, Python and Julia](https://peopleanalytics-regression-book.org/)
 
 ## Survival in R
 - COOL [Survival Analysis with R](https://rviews.rstudio.com/2017/09/25/survival-analysis-with-r/) by Joseph Rickert, 2017-09-25
@@ -1609,6 +1610,9 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
+# 20.01.25
+- [Tutorial: Visualizing Saturn’s Changing Appearance from Earth in R](https://www.tylermw.com/posts/data_visualization/tutorial-visualizing-saturns-appearance-from-earth-in-r.html)
+
 # 17.01.2025
 - [Making art with R](https://github.com/gkaramanis/aRtist/tree/main)
 - [Browser use](https://github.com/browser-use/browser-use) is the easiest way to connect your AI agents with the browser.
@@ -1627,6 +1631,7 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - вдогонку: пожалуй, самая важная вещь, которую нужно понимать про BERT https://datascience.stackexchange.com/questions/66207/what-is-purpose-of-the-cls-token-and-why-is-its-encoding-output-important
 - [Как устроена нейросеть BERT от Google](https://sysblok.ru/knowhow/kak-ustroena-nejroset-bert-ot-google/)
 - [BERT: прорыв в NLP-технологиях или очередной хайп на теме Deep Learning?](https://chernobrovov.ru/articles/bert-proryv-v-nlp-tehnologiyah-ili-ocherednoj-hajp-na-teme-deep-learning.html)
+- [Как я настроил саммаризацию постов с помощью YandexGPT](https://teletype.in/@h0h1_hr_analytics/P8YWLr0fPiZ)
 
 # 26.12.2024
 - [litedown: R Markdown Reimagined](https://yihui.org/litedown/) by Yihui Xie
