@@ -39,6 +39,7 @@ In this post, I introduce you to my new blog and show how you can create a blog 
 - [Quarto Pub](https://quarto.org/docs/publishing/quarto-pub.html)
 	- Может здесь кроется ответ на часть вопросов по ошибке 404. [Quarto - GitHub Pages](https://quarto.org/docs/publishing/github-pages.html)
 - COOL! [R Markdown Tips, Tricks, and Shortcuts](https://www.dataquest.io/blog/r-markdown-tips-tricks-and-shortcuts)
+- [Line break in Markdown](https://szymonkrajewski.pl/line-break-in-markdown/)
 - COOL! [RMarkdown collapsible panel](https://stackoverflow.com/questions/52576626/rmarkdown-collapsible-panel)
 - [Quarto self-contained](https://quarto.org/docs/output-formats/html-basics.html#self-contained). Кроме yaml заголовка можно в командной строке еще написать `--embed-resources --standalone`
 - [embed-resources works from command line, not from rstudio #2364 {Closed}](https://github.com/quarto-dev/quarto-cli/issues/2364)

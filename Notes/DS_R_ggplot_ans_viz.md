@@ -589,10 +589,12 @@ An rstudio::conf(2022) Workshop by Cédric Scherer
 
 ## gt
 - [Create interactive links in gt table (in rmarkdown)](https://community.rstudio.com/t/create-interactive-links-in-gt-table-in-rmarkdown/70266/2)
-- `html()` will tell gt to deal with the text as html content. You can create the text yourself. I used htmltools helper
-- `md()` will tell get to consider the text as markdown, and it will process it to render as html.
+	- `html()` will tell gt to deal with the text as html content. You can create the text yourself. I used `htmltool`s helper
+	- `md()` will tell get to consider the text as markdown, and it will process it to render as html.
 - [Embed links to cells of R's gt tables](https://stackoverflow.com/questions/68720533/embed-links-to-cells-of-rs-gt-tables)
 - [Embedding custom HTML in gt tables](https://themockup.blog/posts/2020-10-31-embedding-custom-features-in-gt-tables/index.html)
+- [gt: how to modify line spacing in cells with mutli-line text](https://forum.posit.co/t/gt-how-to-modify-line-spacing-in-cells-with-mutli-line-text/103831/2)
+Solution 1: Here is what I found works if you use <br> instead of \n and add css.
 - [Adding images to group headers using text_transform in a gt table](https://stackoverflow.com/questions/73068835/adding-images-to-group-headers-using-text-transform-in-a-gt-table)
 - Как не красить ячейки с `NA`. [R gt table make NA values not appear](https://stackoverflow.com/questions/73599951/r-gt-table-make-na-values-not-appear)
 ```
