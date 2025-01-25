@@ -1,4 +1,6 @@
 # Quarto
+- [Docusaurus + MDX](https://docusaurus.io/showcase)ю Build optimized websites quickly, focus on your content
+
 ## releases
 - [quarto webR 0.4.0: Ball of Yarn (02-05-2024)](https://quarto-webr.thecoatlessprofessor.com/qwebr-release-notes.html#ball-of-yarn-02-05-2024)
 

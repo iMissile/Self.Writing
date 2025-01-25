@@ -597,7 +597,6 @@ Trelliscope is a visualization approach based on the idea of â€œsmall multiplesâ
 	- COOL! [Introducing trelliscopejs](https://ryanhafen.com/blog/trelliscopejs/)
 - COOL! [RStudio addin for wrapping RMarkdown paragraphs](https://github.com/tjmahr/WrapRmd). You highlight the text, and hit `Ctrl/Cmd + Shift + /` to wrap the text and get.
 - [ThinkR-open/remedy](https://github.com/ThinkR-open/remedy). RStudio Addins to Simplify Markdown Writing
-- [Line break in Markdown](https://szymonkrajewski.pl/line-break-in-markdown/)
 - [TODO, FIXME, CHANGED etc. comments in your code.](https://github.com/dokato/todor)
 	
 
