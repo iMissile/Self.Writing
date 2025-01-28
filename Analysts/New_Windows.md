@@ -669,6 +669,14 @@ Slight correction to a previous answer. And if you tab out of this one and lose 
 - [19 команд ffmpeg для любых нужд](https://habr.com/ru/post/171213/)
 - [Windows `.bat` script that checks video file integrity using `ffmpeg.exe`](https://github.com/describe19/check-video)
 - [How to remove one track from video file using ffmpeg?](https://stackoverflow.com/questions/38161697/how-to-remove-one-track-from-video-file-using-ffmpeg)
+- [FFmpeg Builds](https://www.gyan.dev/ffmpeg/builds/) binaries for Windows.
+```
+The following builds are also available through package managers:
+release essentials: choco install ffmpeg winget install "FFmpeg (Essentials Build)"
+release full: choco install ffmpeg-full scoop install ffmpeg winget install ffmpeg
+release full shared: scoop install ffmpeg-shared winget install "FFmpeg (Shared)"
+git master: scoop install ffmpeg-gyan-nightly
+```
 
 
 ## Руководство по установке подсистемы Windows для Linux в Windows 10

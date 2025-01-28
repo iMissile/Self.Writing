@@ -99,6 +99,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - После переноса используем `update.packages(checkBuilt=TRUE, ask=FALSE)`, чтобы перестроить пакеты под новую версию.
 - COOL! COOL! [A comprehensive survey of the types of things in R. 'mode' and 'class' and 'typeof' are insufficient](https://stackoverflow.com/questions/8855589/a-comprehensive-survey-of-the-types-of-things-in-r-mode-and-class-and-type)
 	- 2022: [...] at this point, mode and storage.mode are legacy features left over from S. You should only ever need to care about `class()` and `typeof()`.
+- [A personal history of the tidyverse](https://hadley.github.io/25-tidyverse-history/) by Hadley Wickham, January 27, 2025
 
 
 # e-books
@@ -1611,7 +1612,30 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
 # 20.01.25
+## R
 - [Tutorial: Visualizing Saturn’s Changing Appearance from Earth in R](https://www.tylermw.com/posts/data_visualization/tutorial-visualizing-saturns-appearance-from-earth-in-r.html)
+- [Psychometrics with R](https://deondb1967.github.io/Deon_blog/)
+- [What is lavaan?](https://lavaan.ugent.be/)
+The lavaan package is developed to provide useRs, researchers and teachers a free open-source, but commercial-quality package for latent variable modeling.
+
+## LLM
+- [Remembering what I did this week with LLMs](https://www.garrickadenbuie.com/blog/llm-work-summary/)
+Using the GitHub API and {ellmer} to remember what I did this week.
+- [Как правильно оформлять постскриптумы?](https://bureau.ru/soviet/20120107/) Правильный вариант -- без двоеточия и с заглавной: 
+P. S. Не пытайтесь с нами связаться.
+- [Повтор балета R1 в исполнении simpleRL-reason.](https://ailev.livejournal.com/1751437.html)
+
+## Shiny
+- [Using systemd to Run Shiny Apps](https://hosting.analythium.io/using-systemd-to-run-shiny-apps/)
+- Hyperbright blog:
+	- [Mastering Asynchronous Programming in R Shiny: A Comprehensive Guide](https://hypebright.nl/en/shiny-en/mastering-async-programming/) by Veerle van LeemputSeptember 5, 2023
+	- [Shiny Source Code Explained: Busy Indicators](https://hypebright.nl/en/shiny-en/shiny-source-code-explained-busy-indicators-2/) by Veerle van LeemputDecember 10, 2024
+	- [JavaScript for Shiny: The Ultimate Cheatsheet](https://hypebright.nl/en/shiny-en/javascript-for-shiny-the-ultimate-cheatsheet-2/) by Veerle van LeemputNovember 20, 2024
+- [Basic JavaScript lessons for Shiny users](https://forum.posit.co/t/basic-javascript-lessons-for-shiny-users/44725)
+- [Communicating with Shiny via JavaScript](https://shiny.posit.co/r/articles/build/communicating-with-js/) Joe Cheng, May 1, 2018
+- Discindo blog
+	- [A simple workflow for async {shiny} with {mirai}](https://discindo.org/posts/shiny/2024-01-15-a-simple-workflow-for-async-shiny-with-mirai/). A module-based approach to simplify async calls in {shiny} apps using {mirai}
+	- [A simple workflow for async {shiny} with {callr}](https://discindo.org/posts/shiny/2024-01-12-an-opiniated-workflow-for-async-shiny-with-callr/). An approach to simplify and standardize async calls in {shiny} apps using {callr}
 
 # 17.01.2025
 - [Making art with R](https://github.com/gkaramanis/aRtist/tree/main)
