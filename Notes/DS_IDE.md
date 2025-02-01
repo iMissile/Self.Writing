@@ -1,6 +1,9 @@
 # ZED
 - [Zed](https://zed.dev/) is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter. It's also open source.
 
+# AI IDE
+- [Windsurf AI IDE](https://codeium.com/windsurf)
+
 # C++
 - [15 лучших бесплатных IDE C++ (редактор и компилятор) для Windows (2024 г.)](https://www.guru99.com/ru/best-cpp-ide-editor-free.html)
 - Онлайн компилятор (какой найдете), например: https://www.onlinegdb.com/

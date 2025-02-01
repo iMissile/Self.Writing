@@ -749,6 +749,10 @@ plot_action = colDef(
 - [React onClick event handlers: A complete guide](https://blog.logrocket.com/react-onclick-event-handlers-guide/)
 - [let expand button execute a renderPlot function #367 {Open}](https://github.com/glin/reactable/issues/367)
 - [Why is the reactable index of rows in my filtered table wrong?](https://stackoverflow.com/questions/76862055/why-is-the-reactable-index-of-rows-in-my-filtered-table-wrong) Очень полезный набор ответов по теме отработки выделения строк в таблице.
+- fontawesome. [How to add an icon in front of specific column name of reactable](https://stackoverflow.com/questions/73657375/how-to-add-an-icon-in-front-of-specific-column-name-of-reactable)
+- [Getting Started with Icon Sets](https://kcuilla.github.io/reactablefmtr/articles/icon_sets.html)
+- [How I can center the header columns on reactable (r-package)?](https://stackoverflow.com/questions/69049193/how-i-can-center-the-header-columns-on-reactable-r-package). Тут предлагают через css.
+- [How I can center the header of columns?  #195 {Open}](https://github.com/glin/reactable/issues/195). Тут предлагают через `headerStyle`, разные варианты.
 
 ### tooltip
 - [Tooltip on a cell reactable R](https://stackoverflow.com/questions/62044595/tooltip-on-a-cell-reactable-r)

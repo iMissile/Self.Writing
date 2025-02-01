@@ -666,6 +666,7 @@ Slight correction to a previous answer. And if you tab out of this one and lose 
 - [Xshell 6]()
 
 ## Video
+- [FFmpeg Explorer](https://ffmpeg.lav.io/)
 - [19 команд ffmpeg для любых нужд](https://habr.com/ru/post/171213/)
 - [Windows `.bat` script that checks video file integrity using `ffmpeg.exe`](https://github.com/describe19/check-video)
 - [How to remove one track from video file using ffmpeg?](https://stackoverflow.com/questions/38161697/how-to-remove-one-track-from-video-file-using-ffmpeg)

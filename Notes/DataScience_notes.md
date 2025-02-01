@@ -1611,7 +1611,10 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
-# 20.01.25
+# 31.01.2025
+- [Style your code output with {epoxy}](https://albert-rapp.de/posts/17_epoxy/17_epoxy)
+
+# 20.01.2025
 ## R
 - [Tutorial: Visualizing Saturn’s Changing Appearance from Earth in R](https://www.tylermw.com/posts/data_visualization/tutorial-visualizing-saturns-appearance-from-earth-in-r.html)
 - [Psychometrics with R](https://deondb1967.github.io/Deon_blog/)
@@ -1636,6 +1639,17 @@ P. S. Не пытайтесь с нами связаться.
 - Discindo blog
 	- [A simple workflow for async {shiny} with {mirai}](https://discindo.org/posts/shiny/2024-01-15-a-simple-workflow-for-async-shiny-with-mirai/). A module-based approach to simplify async calls in {shiny} apps using {mirai}
 	- [A simple workflow for async {shiny} with {callr}](https://discindo.org/posts/shiny/2024-01-12-an-opiniated-workflow-for-async-shiny-with-callr/). An approach to simplify and standardize async calls in {shiny} apps using {callr}
+- fontawesome
+	- [R Shiny: how to use fontawesome pro version with the icon function?](https://stackoverflow.com/questions/55163719/r-shiny-how-to-use-fontawesome-pro-version-with-the-icon-function)
+	- [The fontawesome R package](https://rstudio.github.io/fontawesome/) makes it very easy to insert Font Awesome icons into R Markdown documents and Shiny apps (or, anywhere else you need to put them).
+	- [use solid fontawesome icons in `reactablefmtr::icon_assign()`](https://stackoverflow.com/questions/74444991/use-solid-fontawesome-icons-in-reactablefmtricon-assign)
+	- [R Shiny & FontAwesome Icons - How to Use Them in Your Dashboards](https://www.appsilon.com/post/r-shiny-fontawesome-icons)
+	- [`shiny::icon`](https://shiny.posit.co/r/reference/shiny/latest/icon.html)
+- [shinyfilter](https://cran.r-project.org/web/packages/shinyfilter/). Use interdependent filters on table columns in shiny apps as in spreadsheet applications
+- Подробный ответ Colin Fay [Shiny modules inside other modules](https://stackoverflow.com/questions/69172472/shiny-modules-inside-other-modules). 
+- [How to get list of all output elements in R Shiny](https://stackoverflow.com/questions/48431845/how-to-get-list-of-all-output-elements-in-r-shiny). `outputOptions(output)`
+- COOL-COOL! Столкнулся с проблемой при утягивании мультифильтров во вложенные модули: [`uiOutput` does not work in nested shiny modules #2862 {Closed}](https://github.com/rstudio/shiny/issues/2862)
+Multiple levels of nested Shiny modules do not work with uiOutput and renderUI. Namespacing is treated differently on the UI and server side of the house. One repeating parent namespacing `(1-1-2-1-1-2-3 = 1 + 1-2 + 1-1-2-3)` the other only repeating the parents ids `(1-2-3)`
 
 # 17.01.2025
 - [Making art with R](https://github.com/gkaramanis/aRtist/tree/main)
