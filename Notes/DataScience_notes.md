@@ -1344,6 +1344,7 @@ This is where we will store all of the materials and links for posit::conf(2024)
 - [Reliable maintenance of machine learning models](https://juliasilge.github.io/ml-maintenance-2023/#/title-slide)
 - [Styling and Templating Quarto Documents](https://emilhvitfeldt.github.io/talk-quarto-theming-positconf/#/section) by Emil hvitfeldt @ posit::conf 2023
 - [{epoxy}. super glue for data-driven reports and Shiny apps](https://slides.garrickadenbuie.com/epoxy-super-glue/) by Garrick Aden-Buie
+	- [Seamless data-driven reporting with {epoxy}](https://slides.garrickadenbuie.com/seamless-epoxy/) by Garrick Aden-Buie, R/Medicine: 2023-06-08
 
 
 ## Rconf 2022
