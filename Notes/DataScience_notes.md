@@ -1241,6 +1241,7 @@ Simplifies regression tests by comparing objects produced by test code with earl
 - [IEEE 754 - стандарт двоичной арифметики с плавающей точкой](https://www.softelectro.ru/ieee754.html)
 	- [Rounding](https://en.wikipedia.org/wiki/Rounding)
 - [Floating Point and IEEE 754 Compliance for NVIDIA GPUs](https://docs.nvidia.com/cuda/floating-point/index.html)
+- [Fast inverse square root, sometimes referred to as `Fast InvSqrt()`](https://en.wikipedia.org/wiki/Fast_inverse_square_root#Overview_of_the_code) or by the hexadecimal constant `0x5F3759DF`, is an algorithm that estimates $\frac 1{\sqrt x}$, the reciprocal (or multiplicative inverse) of the square root of a 32-bit floating-point number x in IEEE 754 floating-point format. 
 - [Rounding to Decimal Digits in Binary](https://cran.r-project.org/web/packages/round/vignettes/Rounding.html) by Martin Mächler, July 4, 2020
 	- [Round numbers in R correctly {duplicate}](https://stackoverflow.com/questions/66422564/round-numbers-in-r-correctly)
 - COOL! Learning. [romainfrancois/seven31](https://github.com/romainfrancois/seven31). This branch is even with ThinkR-open:master.
@@ -1651,6 +1652,8 @@ P. S. Не пытайтесь с нами связаться.
 - [How to get list of all output elements in R Shiny](https://stackoverflow.com/questions/48431845/how-to-get-list-of-all-output-elements-in-r-shiny). `outputOptions(output)`
 - COOL-COOL! Столкнулся с проблемой при утягивании мультифильтров во вложенные модули: [`uiOutput` does not work in nested shiny modules #2862 {Closed}](https://github.com/rstudio/shiny/issues/2862)
 Multiple levels of nested Shiny modules do not work with uiOutput and renderUI. Namespacing is treated differently on the UI and server side of the house. One repeating parent namespacing `(1-1-2-1-1-2-3 = 1 + 1-2 + 1-1-2-3)` the other only repeating the parents ids `(1-2-3)`
+- [How to trigger session$onSessionEnded in R Shiny using code?](https://stackoverflow.com/questions/68457962/how-to-trigger-sessiononsessionended-in-r-shiny-using-code)
+- [ObserveEvent with several trigger expressions : know which one happened](https://stackoverflow.com/questions/65236204/observeevent-with-several-trigger-expressions-know-which-one-happened). Отправили в [Get the event which is fired in Shiny?](https://stackoverflow.com/questions/56770222/get-the-event-which-is-fired-in-shiny/56771353#56771353), там есть совет "You can use shiny's JS event shiny:inputchanged to check which input changed:"
 
 # 17.01.2025
 - [Making art with R](https://github.com/gkaramanis/aRtist/tree/main)

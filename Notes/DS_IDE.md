@@ -39,6 +39,8 @@ You can now manage untracked files separately by using the Git: Untracked Change
 Choose the `separate` option, if you'd like to see untracked files in a separate group in the Source Control view.
 Choose `hidden` if you'd like to never see them.
 - [How can I see local history changes in Visual Studio Code?](https://stackoverflow.com/questions/46446901/how-can-i-see-local-history-changes-in-visual-studio-code)
+- [How do I turn on text wrapping by default in VS Code](https://stackoverflow.com/questions/38561881/how-do-i-turn-on-text-wrapping-by-default-in-vs-code)
+For version 1.81.1, the path is `File -> Preferences -> Settings`. Search for word wrap on the search bar and select On from the dropdown.
 
 ## Fonts
 - [Fira code. VS Code Instructions](https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions)
@@ -144,6 +146,7 @@ Remember to leave a new line at the bottom of the file.
 Combine the best of RStudio and Visual Studio Code in Posit’s new Positron IDE
 - [Positron](https://github.com/posit-dev/positron), a next-generation data science IDE
 - [R code formatting #5534 {Closed}](https://github.com/posit-dev/positron/issues/5534)
+
 
 ## extensions
 - Расширение [pastum](https://marketplace.visualstudio.com/items?itemName=atsyplenkov.pastum). Pastum: paste as ... dataframe

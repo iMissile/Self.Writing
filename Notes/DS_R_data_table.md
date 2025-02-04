@@ -240,6 +240,8 @@ and to `x[,.SD,.SDcols=cols]`.
 How do I get the following code to recognize the second a in `dt[a == a,]` as an external variable with value `3`?
 - [data.table `:=` assignments when variable has same name as a column](https://stackoverflow.com/questions/32738499/data-table-assignments-when-variable-has-same-name-as-a-column)
 `dt1[1, a := get("a", envir = .GlobalEnv)]` or use `..`
+- [When column name is name of variable get(variable) generates an error and eval(variable) returnes the incorrect values #4878 {Open}](https://github.com/Rdatatable/data.table/issues/4878)
+- [deprecate programming interfaces: get, mget, eval #5886 {Open}](https://github.com/Rdatatable/data.table/issues/5886)
 - [Select subset of columns in data.table R {duplicate}](https://stackoverflow.com/questions/28094645/select-subset-of-columns-in-data-table-r/28094726#28094726)
 - [How to expand an ellipsis (…) argument without evaluating it in R](https://stackoverflow.com/questions/13353847/how-to-expand-an-ellipsis-argument-without-evaluating-it-in-r)
 - [Data.Table – everything you need to know to get you started in R](https://hutsons-hacks.info/data-table-everything-you-need-to-know-to-get-you-started-in-r)
