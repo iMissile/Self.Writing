@@ -314,6 +314,18 @@ ipconfig /flushdns  и нажмите Enter.
 ## Раздача интернета
 - [Как изменить TTL в Windows 10 и раздать безлимитный интернет со смартфона на компьютер](https://timeweb.com/ru/community/articles/kak-izmenit-ttl-v-windows-10-i-razdat-bezlimitnyy-internet-so-smartfona-na-kompyuter)
 
+
+# Audio
+- [Is there a way to restart audio without restarting a Windows 7 computer?](https://superuser.com/questions/521955/is-there-a-way-to-restart-audio-without-restarting-a-windows-7-computer)
+Open up a command prompt as administrator and run:
+```
+net stop audiosrv
+net start audiosrv
+```
+This restarts the Windows service responsible for handling audio.
+
+# Software
+
 ## Word
 - [Reduce the file size of a picture in Microsoft Office](https://support.microsoft.com/en-us/office/reduce-the-file-size-of-a-picture-in-microsoft-office-8db7211c-d958-457c-babd-194109eb9535)
 
