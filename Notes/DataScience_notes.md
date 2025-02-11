@@ -35,6 +35,7 @@ https://tmall.aliexpress.com/item/Edifier-W830BT-1/1000005465785.html
 	- [How To Delete all Slack Files to Manage Disk Space](https://www.techjunkie.com/delete-all-slack-files/)
 - COOL! A second brain, for you, forever. [Obsidian](https://obsidian.md/) is a powerful knowledge base on top of a local folder of plain text Markdown files.
 - [LightTable](http://lighttable.com/). The next generation code editor
+- [Nushell](https://www.nushell.sh/). A new type of shell
 
 ## Google Sites
 - Копируем сайты. Copy Sites[Download HTTrack Website Copier 3.49-2](http://www.httrack.com/page/2/)
@@ -1614,7 +1615,14 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
 # 31.01.2025
+## R
 - [Style your code output with {epoxy}](https://albert-rapp.de/posts/17_epoxy/17_epoxy)
+- COOL! [Assigning NULL to a list element in R?](https://stackoverflow.com/questions/7944809/assigning-null-to-a-list-element-in-r)
+- [create list programmatically with tags from character vector](https://stackoverflow.com/questions/17169475/create-list-programmatically-with-tags-from-character-vector)
+`structure(as.list(values.vector), names=character.vector)`
+- [TanStack](https://tanstack.com/)
+High-quality open-source software for web developers.
+Headless, type-safe, & powerful utilities for Web Applications, Routing, State Management, Data Visualization, Datagrids/Tables, and more.
 
 # 20.01.2025
 ## R
@@ -1654,6 +1662,13 @@ P. S. Не пытайтесь с нами связаться.
 Multiple levels of nested Shiny modules do not work with uiOutput and renderUI. Namespacing is treated differently on the UI and server side of the house. One repeating parent namespacing `(1-1-2-1-1-2-3 = 1 + 1-2 + 1-1-2-3)` the other only repeating the parents ids `(1-2-3)`
 - [How to trigger session$onSessionEnded in R Shiny using code?](https://stackoverflow.com/questions/68457962/how-to-trigger-sessiononsessionended-in-r-shiny-using-code)
 - [ObserveEvent with several trigger expressions : know which one happened](https://stackoverflow.com/questions/65236204/observeevent-with-several-trigger-expressions-know-which-one-happened). Отправили в [Get the event which is fired in Shiny?](https://stackoverflow.com/questions/56770222/get-the-event-which-is-fired-in-shiny/56771353#56771353), там есть совет "You can use shiny's JS event shiny:inputchanged to check which input changed:"
+- [Shinyjs functions are not working when Shiny module is loaded with insertUI() or renderUI() #204 {Closed}](https://github.com/daattali/shinyjs/issues/204)
+- [Engineering Production-Grade Shiny Apps. 17 Using JavaScript](https://engineering-shiny.org/using-javascript.html)
+- [JavaScript Events in Shiny](https://shiny.posit.co/r/articles/build/js-events/) by Yihui Xie, September 4, 2015
+
+## shiny & js
+- [Event reference](https://developer.mozilla.org/en-US/docs/Web/Events)
+- [How do I view events fired on an element in Chrome DevTools?](https://stackoverflow.com/questions/10213703/how-do-i-view-events-fired-on-an-element-in-chrome-devtools). Тут в гифке показывают как в консоли можно поглядеть кусочек или все. `monitorEvents(document.body)`
 
 # 17.01.2025
 - [Making art with R](https://github.com/gkaramanis/aRtist/tree/main)
@@ -1774,7 +1789,6 @@ Simple in-memory base64 encoder and decoder. Used internally for converting raw 
 	- [R: serialize base64 encode/decode of text not exactly matching](https://stackoverflow.com/questions/3119037/r-serialize-base64-encode-decode-of-text-not-exactly-matching)
 - [pracma: Practical Numerical Math Functions](https://cran.r-project.org/web/packages/pracma/index.html)
 Provides a large number of functions from numerical analysis and linear algebra, numerical optimization, differential equations, time series, plus some well-known special mathematical functions. Uses 'MATLAB' function names where appropriate to simplify porting.
-- COOL! [Assigning NULL to a list element in R?](https://stackoverflow.com/questions/7944809/assigning-null-to-a-list-element-in-r)
 
 # 31.08.2024
 ## R

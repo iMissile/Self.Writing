@@ -233,8 +233,7 @@ dt1 <- mydt[, ..mycols]
 Why two dots? That seemed kind of random to me until I read the explanation. Think of it like the two dots in a Unix command-line terminal that move you up one directory. Here, you’re moving up one namespace, from the environment inside data.table brackets up to the global environment. (That really does help me remember it!)
 - [data.table double dot.](https://cran.r-project.org/web/packages/data.table/data.table.pdf)
 When j is a character vector of column names, a numeric vector of column positions to select or of the form startcol:endcol, and the value returned is always
-a data.table. with=FALSE is not necessary anymore to select columns dynamically. Note that `x[,cols]` is equivalent to `x[,..cols]` and to `x[,cols,with=FALSE]`
-and to `x[,.SD,.SDcols=cols]`.
+a `data.table`. `with=FALSE` is not necessary anymore to select columns dynamically. Note that `x[,cols]` is equivalent to `x[,..cols]` and to `x[,cols,with=FALSE]` and to `x[,.SD,.SDcols=cols]`.
 - [Why does “..” work to pass column names in a character vector variable?](https://stackoverflow.com/questions/45380628/why-does-work-to-pass-column-names-in-a-character-vector-variable)
 - [Distinguishing between an external variable and a column in a data table {duplicate}](https://stackoverflow.com/questions/50711849/distinguishing-between-an-external-variable-and-a-column-in-a-data-table)
 How do I get the following code to recognize the second a in `dt[a == a,]` as an external variable with value `3`?

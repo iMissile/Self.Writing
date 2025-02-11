@@ -665,6 +665,18 @@ format:
 - [Can't use alpha argument in data_color()? #250 {Closed}](https://github.com/rstudio/gt/issues/250)
 	Выяснилось, что если палитра не набор `character`, а класс `colours` (получаем из ggthemes, например, то тут начинает рвать Ошибка в col2rgb(col, alpha = TRUE) : 
   неправильное название цвета 'rgba(242,142,43,0.7)')
+
+### gt & html
+- COOL! [Ability to embed shiny inputs within gt tables #723 {Closed}](https://github.com/rstudio/gt/issues/723). 
+Currently with the `gt::html()` function and some creativity I could achieve this same functionality from shiny.
+Here is a small reprex of my code.
+- [Render tables with HTML columns #146 {Closed}](https://github.com/rstudio/gt/issues/146). This now works with `fmt_markdown()`. Here's a working example:
+```
+dplyr::tibble(A = "Text", B = "<em>Text</em>") %>%
+  gt() %>%
+  fmt_markdown(columns = vars(B))
+```
+- [Enable HTML content inside a gt table R](https://stackoverflow.com/questions/74826801/enable-html-content-inside-a-gt-table-r). To render your `HTML` columns you have to format them using `gt::fmt_markdown`
   
 ### gt & ggplot
 - [Getting started with {gt} tables](https://nrennie.rbind.io/blog/getting-started-with-gt-tables/)

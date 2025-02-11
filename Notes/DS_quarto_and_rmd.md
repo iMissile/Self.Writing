@@ -144,6 +144,7 @@ or raw html
 Quarto code chunk output is wrapped within a Div with class cell-output. If you want to style specific chunk output, use classes chunk option to assign a class and add/modify css styles for cell-output within that <classes> class.
 - [Qarto cell output params](https://quarto.org/docs/reference/cells/cells-knitr.html#cell-output)
 - [Quarto: Howto use a custom (Web)font?](https://stackoverflow.com/questions/73659027/quarto-howto-use-a-custom-webfont)
+- [embedio](https://quarto.thecoatlessprofessor.com/embedio/qembedio-embed-revealjs.html) Embed RevealJS Slides
 
 ## Quarto tweaks
 - Quarto. [R htmltools browsable HTML does not view without explicit `print()`](https://stackoverflow.com/questions/75353004/r-htmltools-browsable-html-does-not-view-without-explicit-print)
