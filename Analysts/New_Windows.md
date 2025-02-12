@@ -331,7 +331,7 @@ This restarts the Windows service responsible for handling audio.
 
 ## Outlook
 - [Папки в Outlook отображаются на английском языке](https://www.dmosk.ru/polezno.php?review=outlook-en). 
-`C:\Program Files\Microsoft Office\root\Office16\outlook.exe /resetfoldernames` переименовают папки на русский (под русской локалью) и теперь их надо синхронизировать по IMAP с русскими папками на сервере.
+`C:\Program Files\Microsoft Office\root\Office16\outlook.exe /resetfoldernames` переименовывает папки на русский (под русской локалью) и теперь их надо синхронизировать по IMAP с русскими папками на сервере.
 - [Переименование папок почты в Outlook 2016](https://answers.microsoft.com/ru-ru/msoffice/forum/msoffice_outlook-mso_win10-mso_365hp/%D0%BF%D0%B5%D1%80%D0%B5%D0%B8%D0%BC%D0%B5%D0%BD/09bb0f12-8dda-4a5c-bd3d-657efde45595)
 
 ## Tools
