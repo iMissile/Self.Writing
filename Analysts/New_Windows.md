@@ -261,6 +261,13 @@ SP1 можно получить через web: [Service Pack and Update Center]
 http://answers.microsoft.com/en-us/windows/forum/windows_10-security/event-id-10016-runtime-broker/18c291c6-f2a1-4f3c-b4ad-2b7ff59fd9f9?auth=1
 Закрыть
 
+## Проблемы с Explorer
+- [SOLVED: Slow Windows Explorer (spinning blue circle ONLY in File Explorer)](https://www.reddit.com/r/WindowsHelp/comments/1ao71l6/solved_slow_windows_explorer_spinning_blue_circle/)
+This is a problem being cause by Adobe Creative Cloud.
+Apparently there is a hot fix, so you can update Creative Cloud... HOWEVER
+This isn't working all the time - so there is another work around directly from Adobe:
+"Note: If you are facing any issue in applying the latest update or still see this problem on your machine, please navigate to C:\Program Files\Common Files\Adobe\Adobe OS Extension and rename the file (if present) 'AdobeExplorerExtensionCore.dll' to 'temp_AdobeExplorerExtensionCore.dll'"
+
 # Интернет
 ## Проблемы с Wi-Fi
 - [Пропадает интернет (Wi-Fi) в Windows 10 после выхода из спящего режима](https://help-wifi.com/reshenie-problem-i-oshibok/propadaet-internet-wi-fi-v-windows-10-posle-vyxoda-iz-spyashhego-rezhima/).

@@ -964,6 +964,8 @@ The Mann-Whitney test compares the distributions of ranks in two groups. If you 
 - [Исследуем утверждение центральной предельной теоремы с помощью экспоненциального распределения](https://habr.com/ru/post/471198/). В статье описывается исследование, проведенное с целью проверки утверждения центральной предельной теоремы о том, что сумма N независимых и одинаково распределенных случайных величин, отобранных практически из любого распределения, имеет распределение, близкое к нормальному.
 - [Центральная предельная теорема](https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0)
 - [Bootstrap Confidence Interval with R Programming](https://www.geeksforgeeks.org/bootstrap-confidence-interval-with-r-programming/)
+- COOL! [Статистика и пульверизация](https://vk.com/@dmitry_penzar-stats-and-pulverization) by Дмитрий Пензар. Разбор популярных курсов по статистике.
+- [Разбор курса ‘Основы статистики’](https://ubogoeva.github.io/R4Analytics/posts/review_of_statistics_course.html)
 
 ## CI for median
 - COOL! Тут с правильным кодом. [Bootstrap hypothesis test for median of differences](https://stats.stackexchange.com/questions/458775/bootstrap-hypothesis-test-for-median-of-differences)
@@ -1457,6 +1459,7 @@ This is where we will store all of the materials and links for rstudio::conf 202
 
 # Shiny for Python
 - [SQL database explorer](https://shiny.posit.co/py/templates/database-explorer/)
+- [Is it possible to connect Shiny for Python with React?](https://www.reddit.com/r/datascience/comments/143wno4/is_it_possible_to_connect_shiny_for_python_with/)
 
 
 ## duckDB
