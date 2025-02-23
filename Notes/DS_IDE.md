@@ -41,6 +41,7 @@ Choose `hidden` if you'd like to never see them.
 - [How can I see local history changes in Visual Studio Code?](https://stackoverflow.com/questions/46446901/how-can-i-see-local-history-changes-in-visual-studio-code)
 - [How do I turn on text wrapping by default in VS Code](https://stackoverflow.com/questions/38561881/how-do-i-turn-on-text-wrapping-by-default-in-vs-code)
 For version 1.81.1, the path is `File -> Preferences -> Settings`. Search for word wrap on the search bar and select On from the dropdown.
+- [Send code selection to debug console #14494 {Closed}](https://github.com/microsoft/vscode-python/issues/14494)
 
 ## Fonts
 - [Fira code. VS Code Instructions](https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions)

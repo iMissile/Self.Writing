@@ -1536,6 +1536,8 @@ R CMD INSTALL Cairo_1.5-8.tar.gz
 # Dev
 - [OpenTelemetry](https://opentelemetry.io/) is a collection of tools, APIs, and SDKs. Use it to instrument, generate, collect, and export telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior.
 - [Заблуждения Clean Architecture](https://habr.com/ru/companies/mobileup/articles/335382/)
+- [Программа "Организационное развитие" на пороге 2025](https://ailev.livejournal.com/1744904.html)
+- [Foreword to Building Evolutionary Architectures](https://martinfowler.com/articles/evo-arch-forward.html) by Martin Fowler, 05 October 2017
 
 
 
@@ -1626,6 +1628,7 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [TanStack](https://tanstack.com/)
 High-quality open-source software for web developers.
 Headless, type-safe, & powerful utilities for Web Applications, Routing, State Management, Data Visualization, Datagrids/Tables, and more.
+- [Air, an extremely fast R formatter](https://www.tidyverse.org/blog/2025/02/air/)
 
 # 20.01.2025
 ## R
@@ -1673,12 +1676,27 @@ Multiple levels of nested Shiny modules do not work with uiOutput and renderUI. 
 - [Event reference](https://developer.mozilla.org/en-US/docs/Web/Events)
 - [How do I view events fired on an element in Chrome DevTools?](https://stackoverflow.com/questions/10213703/how-do-i-view-events-fired-on-an-element-in-chrome-devtools). Тут в гифке показывают как в консоли можно поглядеть кусочек или все. `monitorEvents(document.body)`
 
+# 19.02.2025
+- [Simple Parquet storage service with Arrow Flight](https://arrow.apache.org/cookbook/py/flight.html)
+- [pyarrow.flight.FlightServerBase](https://arrow.apache.org/docs/python/generated/pyarrow.flight.FlightServerBase.html)
+- COOL! Описание протокола обмена. [Arrow Flight RPC](https://arrow.apache.org/docs/format/Flight.html#)
+- [How many threads is DuckDB using?](https://stackoverflow.com/questions/75475994/how-many-threads-is-duckdb-using)
+```
+-- show a list of all available settings
+SELECT * FROM duckdb_settings();
+-- return the current value of a specific setting
+SELECT current_setting('threads')
+```
+- [How to set duckdb threads to 1 from default 16](https://stackoverflow.com/questions/78722732/how-to-set-duckdb-threads-to-1-from-default-16)
+
 # 17.01.2025
 - [Making art with R](https://github.com/gkaramanis/aRtist/tree/main)
 - [Browser use](https://github.com/browser-use/browser-use) is the easiest way to connect your AI agents with the browser.
 - [Is it possible to insert (add) a row to a SQLite db table using dplyr package?](https://stackoverflow.com/questions/26568182/is-it-possible-to-insert-add-a-row-to-a-sqlite-db-table-using-dplyr-package)
 - [RSQLite](https://rsqlite.r-dbi.org/)
 - [dbWriteTable performance with MariaDB](https://forum.posit.co/t/dbwritetable-performance-with-mariadb/77594). Legacy 'DBI' interface to 'MySQL' / 'MariaDB' based on old code ported from S-PLUS. A modern 'MySQL' client written in 'C++' is available from the 'RMariaDB' package.
+- e-book 'Scaling Up With R and Arrow' [8  Sharing Data and Interoperability](https://arrowrbook.com/processes.html)
+- [Set read only connection to duckdb in dbeaver](https://stackoverflow.com/questions/74411716/set-read-only-connection-to-duckdb-in-dbeaver)
 
 # 10.01.2025
 - [GitHub - BurntSushi/xsv](https://github.com/BurntSushi/xsv): A fast CSV command line toolkit written in Rust.

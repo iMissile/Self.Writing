@@ -360,6 +360,23 @@ This is an important distinction. When you install conda, it brings its own vers
 
 And as always, make sure to save the installation commands with version-locked dependencies for both conda and pip for every project where they are used.
 
+# 20.02.2025
+- [PEP 678 – Enriching Exceptions with Notes](https://peps.python.org/pep-0678/)
+- [raise `Err()` from `e` and `e.add_note()` lose information in validation errors #6498 {Closed}](https://github.com/pydantic/pydantic/issues/6498)
+- [A Tail Calling Interpreter For Python (And Other Updates)](https://blog.reverberate.org/2025/02/10/tail-call-updates.html). А в ней упоминается эта - https://arxiv.org/abs/2411.11469 и вот похоже реализация https://github.com/luajit-remake/luajit-remake?tab=readme-ov-file и утвержается, что автосгенерированный jit для lua Across 44 benchmarks, LJR's interpreter is on average 179% faster than the official PUC Lua interpreter, and 31% faster than LuaJIT's interpreter. LJR's baseline JIT has negligible startup delay, and its execution performance is on average 360% faster than PUC Lua and only 33% slower (but faster on 13/44 benchmarks) than LuaJIT's optimizing JIT.
+
+
+# 17.02.2025
+- [How to return data in JSON format using FastAPI?](https://stackoverflow.com/questions/73972660/how-to-return-data-in-json-format-using-fastapi)
+- [Reading request data using `orjson` & Returning response data using `orjson`](https://stackoverflow.com/questions/74168582/how-to-read-the-request-body-using-orjson-library-in-fastapi/74173023#74173023)
+- [How to use Apache Arrow IPC from multiple processes (possibly from different languages)?](https://stackoverflow.com/questions/75392769/how-to-use-apache-arrow-ipc-from-multiple-processes-possibly-from-different-lan)
+- [resource tracker destroys shared memory segments when other processes should still have valid access #82300 {Open}](https://github.com/python/cpython/issues/82300). Весьма сложная дискуссия с 2019 года.
+Add a `track=True` parameter to `SharedMemory`
+- [Handling and Sharing Data Between Threads](https://pythonforthelab.com/blog/handling-and-sharing-data-between-threads/)
+- SuperFast Python. [How to Use SharedMemory in Python](https://superfastpython.com/multiprocessing-sharedmemory/)
+- [Python-Shared-Memory project](https://github.com/Tinker-Twins/Python-Shared-Memory). This project uses the multiprocessing.shared_memory.SharedMemory class, which allows a block of memory to be used by multiple Python processes. Since Python 2.6, multiprocessing is a built-in module. It ships with Python2 (>= Python 2.6) as well as Python3, no specific installation step is needed.
+- [Plasma is deprecated #34738 {Closed}](https://github.com/apache/arrow/issues/34738)
+
 # 19.01.2025
 - [What's Lazy Evaluation in Python?](https://realpython.com/python-lazy-evaluation/#in-short-python-lazy-evaluation-generates-objects-only-when-needed)
 - [Python 3 Metaprogramming](https://dabeaz.com/py3meta/Py3Meta.pdf)
