@@ -353,6 +353,13 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 - [19.4 Introducing ggproto](https://bookdown.dongzhuoer.com/hadley/ggplot2-book/introducing-ggproto)
 - [Base ggproto classes for ggplot2](https://ggplot2.tidyverse.org/reference/ggplot2-ggproto.html)
 - [Density plot in ggplot2 with geom_density](https://r-charts.com/distribution/density-plot-ggplot2/)
+- Кастомные легенды в ggplot:
+	- [legendry](https://teunbrand.github.io/legendry/index.html)
+The goal of legendry is to provide additional guide functionality to the ggplot2 ecosystem.
+	- COOL! [How to use a histogram as a legend in {ggplot2}](https://www.andrewheiss.com/blog/2025/02/19/ggplot-histogram-legend/)
+Land isn’t unemployed—people are. Here’s how to use R, {ggplot2}, {sf}, and {patchwork} to create a histogram legend in a choropleth map to better see the distribution of values.
+	- [scico](https://github.com/thomasp85/scico). Palettes for R based on the Scientific Colour-Maps
+	- [Alex Engler - Better DataViz in ggplot2: Tips, Tricks & Examples](https://www.youtube.com/watch?v=h_QMd2d_o98) by Lander Analytics
 
 ## aes tricks
 - [Position related aesthetics: x, y, xmin, xmax, ymin, ymax, xend, yend](https://ggplot2.tidyverse.org/reference/aes_position.html)

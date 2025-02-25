@@ -325,6 +325,7 @@ shape: (1, 5)
 `cases: List[Literal['a']] = pt.Field(dtype = pl.List(pl.Categorical))`
 Решение нашел путем детального изучения исходников `tests\test_model.py`
 - [Why 20.5_f64.round() do not eq with np.round(20.5)?](https://users.rust-lang.org/t/why-20-5-f64-round-do-not-eq-with-np-round-20-5/83966)
+- [Polars & Multiprocessing](https://docs.pola.rs/user-guide/misc/multiprocessing/)
 
 # Python & R
 - [How to use R and Python in the same notebook?](https://www.askpython.com/python/examples/use-r-and-python-in-the-same-notebook)
@@ -359,6 +360,29 @@ second, and WITH CONDA ACTIVATED, you use the version of pip included with conda
 This is an important distinction. When you install conda, it brings its own version of pip (and Python) that will automatically become available when you activate conda, and will automatically install packages into your currently activated conda env. If you don't believe me or want to double check, then activate conda and run which pip and see for yourself. As long as you use conda's pip to install packages into your active conda env, then you will not have issues.
 
 And as always, make sure to save the installation commands with version-locked dependencies for both conda and pip for every project where they are used.
+
+# 25.02.2025
+- How to print short sample of all fields of polars data.frame?
+ 	- Q: How to print short sample of all fields of polars data.frame?
+I'm looking for analogue of R functions like `dplyr::glimpse` or `lobstr::tree`.
+I want to use ready package, not to write custom function
+	- A: While there's no exact Python package equivalent to R's dplyr::glimpse, you can use Polars' built-in tools:
+`df.schema` and `df.describe()` for schema and summary.
+`df.glimpse()` (experimental) for a structured preview.
+`df.head(n)` to limit rows.
+`df.show(vertical=True)` for row-wise formatting.
+These methods require no custom code and are part of Polars' core functionality.
+Use `pl.Config` for Pretty-Printing
+Configure Polars to display nested structures (e.g., lists) and truncated data more clearly:
+```
+pl.Config.set_verbose(True) # Enable experimental features (for pl.glimpse e.g.)
+pl.Config.set_tbl_formatting("UTF8_FULL")  # Better table formatting
+pl.Config.set_tbl_rows(5)  # Limit rows displayed
+pl.Config.set_tbl_cols(10)  # Limit columns displayed
+```
+- [How to conver Pydantic model to dict](https://docs.pydantic.dev/1.10/usage/exporting_models/)
+- Все совсем нетривиально. [what happens if you import a decorated python function from another script?](https://stackoverflow.com/questions/55124278/what-happens-if-you-import-a-decorated-python-function-from-another-script)
+
 
 # 20.02.2025
 - [PEP 678 – Enriching Exceptions with Notes](https://peps.python.org/pep-0678/)

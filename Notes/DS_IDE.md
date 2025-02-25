@@ -41,7 +41,10 @@ Choose `hidden` if you'd like to never see them.
 - [How can I see local history changes in Visual Studio Code?](https://stackoverflow.com/questions/46446901/how-can-i-see-local-history-changes-in-visual-studio-code)
 - [How do I turn on text wrapping by default in VS Code](https://stackoverflow.com/questions/38561881/how-do-i-turn-on-text-wrapping-by-default-in-vs-code)
 For version 1.81.1, the path is `File -> Preferences -> Settings`. Search for word wrap on the search bar and select On from the dropdown.
-- [Send code selection to debug console #14494 {Closed}](https://github.com/microsoft/vscode-python/issues/14494)
+- [Send code selection to debug console #14494 {Closed}](https://github.com/microsoft/vscode-python/issues/14494).
+You can actually customize your own shortcut to send selection to the debug console! Open the command palette (View > Command Palette...) and run "Preferences: Open Keyboard Shortcuts". Then look for "Evaluate in Debug Console" and add a short cut for it. For example, I added `Alt + D` for mine:
+- [How to Remove Trailing Whitespace in VS Code](https://www.codexcafe.com/blog/remove-trailing-whitespace/)
+
 
 ## Fonts
 - [Fira code. VS Code Instructions](https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions)

@@ -1619,6 +1619,12 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
+# 25.02.2025
+## Dev
+- [The fastest production-ready image resize. Part 0](https://uploadcare.com/blog/the-fastest-image-resize/)
+- [speedtest-resize](https://github.com/fawick/speedtest-resize). Compare various Image resize algorithms for the Go language
+- [How Tensorflow’s tf.image.resize stole 60 days of my life](https://medium.com/hackernoon/how-tensorflows-tf-image-resize-stole-60-days-of-my-life-aba5eb093f35)
+
 # 31.01.2025
 ## R
 - [Style your code output with {epoxy}](https://albert-rapp.de/posts/17_epoxy/17_epoxy)
@@ -4578,6 +4584,10 @@ Ordination methods, diversity analysis and other functions for community and veg
 
 ## Plotting Contest
 - [Winners of the 2024 Plotnine Plotting Contest](https://posit.co/blog/winner-of-the-2024-plotnine-plotting-contest/)
+
+## Others
+- [Subway Stories](https://subwaystories.nyc/)
+Every year, New Yorkers take more than a billion trips on the subway. Using data from the MTA, we mapped out how riders flow between stations at every hour. Each story explores a slice of city life.
 
 # 29.11.2021
 ## R
