@@ -361,6 +361,16 @@ This is an important distinction. When you install conda, it brings its own vers
 
 And as always, make sure to save the installation commands with version-locked dependencies for both conda and pip for every project where they are used.
 
+# 26.02.2025
+- COOL! [Profiling a Polars query](https://www.rhosignal.com/posts/polars-query-profiling/).
+DataPolars now has a profiling tool to show you what it’s getting up to.
+You can get this data by calling `.profile` on any lazy query. Even better, we can get a plot visualising the time spent on each step.
+!!! The `.profile()` method is applied to a LazyFrame, not a DataFrame. If you're working with an eager DataFrame, you need to convert it to a LazyFrame first using `.lazy()`.
+
+## polars lazyFrame
+- [What are the advantages of a polars LazyFrame over a Dataframe?](https://stackoverflow.com/questions/76612163/what-are-the-advantages-of-a-polars-lazyframe-over-a-dataframe)
+- [LazyFrame vs DataFrame in Polars – Performance Comparison](https://stuffbyyuki.com/lazyframe-vs-dataframe-in-polars-performance-comparison/)
+
 # 25.02.2025
 - How to print short sample of all fields of polars data.frame?
  	- Q: How to print short sample of all fields of polars data.frame?

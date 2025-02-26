@@ -491,6 +491,7 @@ storeLabeller <- function(string) {
 - [scattermore](https://exaexa.github.io/scattermore/index.html). Scatterplots with more datapoints. If you want to plot bazillions of points without much waiting, use this.
 - [camcorder](https://thebioengineer.github.io/camcorder/) is an R package to track and automatically save graphics generated with ggplot2 that are created across one or multiple sessions with the eventual goal of creating a GIF showing all the plots saved sequentially during the design process.
 - [legendry](https://teunbrand.github.io/legendry/) позволяет делать пузырьковые легенды для графиков.
+- [ggalign](https://yunuuuu.github.io/ggalign/) This package extends ggplot2 by providing advanced tools for aligning and organizing multiple plots, particularly those that automatically reorder observations, such as dendrogram. 
 
 =======
 - COOL! Как эффективно применить `ggfx` [Better data communication with {ggplot2}, part 2](https://giulia-ruggeri.medium.com/better-data-communication-with-ggplot2-part-2-615a5180ccb)

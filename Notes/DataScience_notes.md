@@ -256,6 +256,7 @@ This is a list of R developers and advocates on Github. This is to help new come
 Authors: Nic Crane, Jonathan Keane, and Neal Richardson
 - [Model-Based Clustering, Classification, and Density Estimation Using mclust in R](https://mclust-org.github.io/mclust-book/)
 - [The openxlsx2 book](https://janmarvin.github.io/ox2-book/)
+- [ggalign: Bridging the Grammar of Graphics and Complex layout](https://yunuuuu.github.io/ggalign-book/)
 
 
 ## e-books ML
