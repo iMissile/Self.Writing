@@ -361,11 +361,66 @@ This is an important distinction. When you install conda, it brings its own vers
 
 And as always, make sure to save the installation commands with version-locked dependencies for both conda and pip for every project where they are used.
 
+# 02.03.2025
+Общее резюме: не надо дефолнтый питон в системе переключаь с нативного, всё рушится.
+Ставить рядом зоопарк -- на любителей.
+- [How to Install Python 3.12 on Ubuntu 24.04, 22.04 or 20.04](https://linuxcapable.com/install-python-3-12-on-ubuntu-linux/)
+- [Как установить Python 3.12 на Ubuntu 22.04](https://zomro.com/rus/blog/faq/475-how-to-install-python-312-on-ubuntu-2204)
+- Собираем из исходников, не совсем очевидно и правильно? [I'm using WSL how I upgrade Python to the last version through the console?](I'm using WSL how I upgrade Python to the last version through the console?)
+`wget https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tgz`
+
+# 01.03.2025
+- If your project is complex, consider using a Python refactoring tool like Rope or Bowler:
+	- `Rope`: Install via `pip install rope`, then use the `rope.refactor.rename` functionality.
+	- `Bowler`: Install via `pip install bowler`, then use the bowler command-line tool to rename functions.
+These tools provide more advanced refactoring capabilities and can handle edge cases better.
+- [Bowler](https://pybowler.io/). Safe code refactoring for modern Python
+Без пинка эта птица под виндой не полетела. А все потому, что ему нужно руками кодировку utf-8 патчить, иначе в cp1251 читает
+2. Identify the Problematic File
+The error occurs when Bowler reads a file with incompatible encoding. To find the exact file causing the issue:
+
+Modify Bowler's `tool.py` (located in `site-packages/bowler/tool.py`):
+In the `apply_hunks` method, add a `print(filename)` before reading the file:
+```
+def apply_hunks(self, hunks, filename):
+    print(f"Processing file: {filename}")  # <-- Add this line
+    with open(filename, "r", encoding="utf-8") as f:  # Ensure encoding is set
+        data = f.read()
+```
+Re-run the script to see which file triggers the error.
+
+5. Alternative: Monkey-Patch File Opening
+If modifying Bowler’s code isn’t ideal, use a wrapper script to override Python’s open function. Add this to the top of refactor.py:
+```
+import builtins
+_original_open = builtins.open
+
+def _open_with_encoding(*args, **kwargs):
+    kwargs["encoding"] = "utf-8"  # Force UTF-8
+    return _original_open(*args, **kwargs)
+
+builtins.open = _open_with_encoding
+
+# Rest of your Bowler script
+from bowler import Query
+
+(
+    Query(".")
+    .select_function("readEventData")
+    .rename("read_event_data")
+    # .diff() # to preview changes
+    .write()
+)
+```
+
 # 26.02.2025
 - COOL! [Profiling a Polars query](https://www.rhosignal.com/posts/polars-query-profiling/).
 DataPolars now has a profiling tool to show you what it’s getting up to.
 You can get this data by calling `.profile` on any lazy query. Even better, we can get a plot visualising the time spent on each step.
 !!! The `.profile()` method is applied to a LazyFrame, not a DataFrame. If you're working with an eager DataFrame, you need to convert it to a LazyFrame first using `.lazy()`.
+- [Python Polars Read Zipped CSV](https://stackoverflow.com/questions/71625214/python-polars-read-zipped-csv).
+`pl.read_csv('data.csv.gz')` работает прямо.
+- [Syrupy](https://syrupy-project.github.io/syrupy/) is a pytest snapshot plugin. It enables developers to write tests which assert immutability of computed results.
 
 ## polars lazyFrame
 - [What are the advantages of a polars LazyFrame over a Dataframe?](https://stackoverflow.com/questions/76612163/what-are-the-advantages-of-a-polars-lazyframe-over-a-dataframe)
