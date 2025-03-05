@@ -261,13 +261,6 @@ SP1 можно получить через web: [Service Pack and Update Center]
 http://answers.microsoft.com/en-us/windows/forum/windows_10-security/event-id-10016-runtime-broker/18c291c6-f2a1-4f3c-b4ad-2b7ff59fd9f9?auth=1
 Закрыть
 
-## Проблемы с Explorer
-- [SOLVED: Slow Windows Explorer (spinning blue circle ONLY in File Explorer)](https://www.reddit.com/r/WindowsHelp/comments/1ao71l6/solved_slow_windows_explorer_spinning_blue_circle/)
-This is a problem being cause by Adobe Creative Cloud.
-Apparently there is a hot fix, so you can update Creative Cloud... HOWEVER
-This isn't working all the time - so there is another work around directly from Adobe:
-"Note: If you are facing any issue in applying the latest update or still see this problem on your machine, please navigate to C:\Program Files\Common Files\Adobe\Adobe OS Extension and rename the file (if present) 'AdobeExplorerExtensionCore.dll' to 'temp_AdobeExplorerExtensionCore.dll'"
-
 # Интернет
 ## Проблемы с Wi-Fi
 - [Пропадает интернет (Wi-Fi) в Windows 10 после выхода из спящего режима](https://help-wifi.com/reshenie-problem-i-oshibok/propadaet-internet-wi-fi-v-windows-10-posle-vyxoda-iz-spyashhego-rezhima/).
@@ -332,6 +325,22 @@ net start audiosrv
 This restarts the Windows service responsible for handling audio.
 
 # Software
+
+## Adobe
+- [Selecting files in explorer with Acrobat Reader installed make computer freeze](https://community.adobe.com/t5/acrobat-discussions/selecting-files-in-explorer-with-acrobat-reader-installed-make-computer-freeze/td-p/14333903)
+Альтернативы:
+	- [Sumatra PDF](https://www.sumatrapdfreader.org/free-pdf-reader). PDF, eBook (epub, mobi), comic book (cbz/cbr), DjVu, XPS, CHM, image viewer for Windows.
+Fast, small, packed with features, customizable, free.
+	- [PDFgear](https://www.pdfgear.com/). Read, edit, convert, merge, and sign PDF files across devices, for completely free and without signing up.
+	- [PDF-XChange Editor](https://www.pdf-xchange.com/)
+### Проблемы с Explorer
+- [SOLVED: Slow Windows Explorer (spinning blue circle ONLY in File Explorer)](https://www.reddit.com/r/WindowsHelp/comments/1ao71l6/solved_slow_windows_explorer_spinning_blue_circle/)
+This is a problem being cause by Adobe Creative Cloud.
+Apparently there is a hot fix, so you can update Creative Cloud... HOWEVER
+This isn't working all the time - so there is another work around directly from Adobe:
+"Note: If you are facing any issue in applying the latest update or still see this problem on your machine, please navigate to C:\Program Files\Common Files\Adobe\Adobe OS Extension and rename the file (if present) 'AdobeExplorerExtensionCore.dll' to 'temp_AdobeExplorerExtensionCore.dll'"
+
+
 
 ## Word
 - [Reduce the file size of a picture in Microsoft Office](https://support.microsoft.com/en-us/office/reduce-the-file-size-of-a-picture-in-microsoft-office-8db7211c-d958-457c-babd-194109eb9535)
@@ -863,7 +872,8 @@ Windows should now launch as it did before, even my last browser session appeare
 	- [microsoft/cascadia-code](https://github.com/microsoft/cascadia-code)
 	- [Install with chocolatey](https://community.chocolatey.org/packages/cascadiacode). `choco install cascadiacode`
 	- [Cascadia Mono Font 2108.26](https://community.chocolatey.org/packages/cascadiamono). `choco install cascadiamono`
-	- [Конфигурируем меню Windows Termial](https://codeandkeep.com/Tmux-on-Windows/). If you want to set this as your default shell in the Windows Terminal, you can update the settings `Ctrl + ,` to do so. Replace the GUID in defaultProfile with the one for your Linux app. You can find the GUID in the list section under profiles. Set this GUID as the defaultProfile, and this will be the shell that opens by default.
+	- [Конфигурируем меню Windows Terminal](https://codeandkeep.com/Tmux-on-Windows/). If you want to set this as your default shell in the Windows Terminal, you can update the settings `Ctrl + ,` to do so. Replace the GUID in defaultProfile with the one for your Linux app. You can find the GUID in the list section under profiles. Set this GUID as the defaultProfile, and this will be the shell that opens by default.
+	- [Oh My Posh](https://ohmyposh.dev/). A prompt theme engine for any shell.
 - Ставим `Link Shell Extension` с [официальной страницы](https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html)
 - Ставим [DataRAM RAMDisk](http://memory.dataram.com/products-and-services/software/ramdisk) и спасаем SSD от Chrome (см выше по тексту).
 RAM Disk на `Y:`, выделяем под кэш Хрома 512 Мб, делаем Junction кэша хрома.

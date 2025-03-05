@@ -361,8 +361,27 @@ This is an important distinction. When you install conda, it brings its own vers
 
 And as always, make sure to save the installation commands with version-locked dependencies for both conda and pip for every project where they are used.
 
+# 05.03.2025
+## polars
+- [polars.from_arrow](https://docs.pola.rs/api/python/dev/reference/api/polars.from_arrow.html). Create a DataFrame or Series from an Arrow Table or Array.
+This operation will be *zero copy* for the most part. Types that are not supported by Polars may be cast to the closest supported type.
+- [Arrow producer/consumer](https://docs.pola.rs/user-guide/misc/arrow/). Using pyarrow. Polars can move data in and out of arrow zero copy.
+- [Databases](https://docs.pola.rs/user-guide/io/database/). Polars can read from a database using the `pl.read_database_uri` and `pl.read_database` functions.
+- [Make column of all matching substrings from a list that are found within a Polars string column](https://stackoverflow.com/questions/77389199/make-column-of-all-matching-substrings-from-a-list-that-are-found-within-a-polar)
+```
+# Filter rows where any column contains the substring
+filtered_pl = tables_pl.filter(
+    pl.any_horizontal(pl.col(pl.Utf8).str.contains("itsm_dvt_support_requests"))
+)
+```
+- [Does conversion from arrow format to pandas dataframe duplicate data on the heap?](https://stackoverflow.com/questions/70267522/does-conversion-from-arrow-format-to-pandas-dataframe-duplicate-data-on-the-heap)
+- [How do I determine the size of an object in Python?](https://stackoverflow.com/questions/449560/how-do-i-determine-the-size-of-an-object-in-python)
+- [How to filter a lazy polars dataframe with arbitrary expressions?](https://stackoverflow.com/questions/77512892/how-to-filter-a-lazy-polars-dataframe-with-arbitrary-expressions)
+	- [JsonLogic](https://jsonlogic.com/play.html)
+Build complex rules, serialize them as JSON, share them between front-end and back-end
+
 # 02.03.2025
-Общее резюме: не надо дефолнтый питон в системе переключаь с нативного, всё рушится.
+Общее резюме: не надо дефолтный питон в системе переключать с нативного, всё рушится.
 Ставить рядом зоопарк -- на любителей.
 - [How to Install Python 3.12 on Ubuntu 24.04, 22.04 or 20.04](https://linuxcapable.com/install-python-3-12-on-ubuntu-linux/)
 - [Как установить Python 3.12 на Ubuntu 22.04](https://zomro.com/rus/blog/faq/475-how-to-install-python-312-on-ubuntu-2204)
@@ -389,30 +408,6 @@ def apply_hunks(self, hunks, filename):
 ```
 Re-run the script to see which file triggers the error.
 
-5. Alternative: Monkey-Patch File Opening
-If modifying Bowler’s code isn’t ideal, use a wrapper script to override Python’s open function. Add this to the top of refactor.py:
-```
-import builtins
-_original_open = builtins.open
-
-def _open_with_encoding(*args, **kwargs):
-    kwargs["encoding"] = "utf-8"  # Force UTF-8
-    return _original_open(*args, **kwargs)
-
-builtins.open = _open_with_encoding
-
-# Rest of your Bowler script
-from bowler import Query
-
-(
-    Query(".")
-    .select_function("readEventData")
-    .rename("read_event_data")
-    # .diff() # to preview changes
-    .write()
-)
-```
-
 # 26.02.2025
 - COOL! [Profiling a Polars query](https://www.rhosignal.com/posts/polars-query-profiling/).
 DataPolars now has a profiling tool to show you what it’s getting up to.
@@ -421,6 +416,7 @@ You can get this data by calling `.profile` on any lazy query. Even better, we c
 - [Python Polars Read Zipped CSV](https://stackoverflow.com/questions/71625214/python-polars-read-zipped-csv).
 `pl.read_csv('data.csv.gz')` работает прямо.
 - [Syrupy](https://syrupy-project.github.io/syrupy/) is a pytest snapshot plugin. It enables developers to write tests which assert immutability of computed results.
+- [Шпаргалка: fixture в pytest](https://habr.com/ru/articles/731296/)
 
 ## polars lazyFrame
 - [What are the advantages of a polars LazyFrame over a Dataframe?](https://stackoverflow.com/questions/76612163/what-are-the-advantages-of-a-polars-lazyframe-over-a-dataframe)

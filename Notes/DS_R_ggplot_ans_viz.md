@@ -448,7 +448,12 @@ Generate a palette of k colors from ggsci palettes, RColorbrewer palettes and cu
 - [Multiple color (and fill) scales with ggplot2](https://eliocamp.github.io/codigo-r/2018/09/multiple-color-and-fill-scales-with-ggplot2/)
 	- [`ggnewscale`](https://eliocamp.github.io/ggnewscale/) tries to make it painless to use multiple scales in `ggplot2`.
 	- [Distinct color palettes for two different groups in ggplot2](https://stackoverflow.com/questions/47901720/distinct-color-palettes-for-two-different-groups-in-ggplot2)
-
+- [Regenbogen](https://simson.io/regenbogen/). Это отличный сайт (автор Jan Simson) с более чем 2400 палитрами. 
+Страница очень удобно устроена: 
+	▫️ можно скопировать HEX-код отдельного цвета или сразу всей палитры 🌟
+	▫️ посмореть визуально, как все будет выглядеть на графиках 🎉
+	▫️ преобразовать текущую палитру в Colorblindness-версию 🔥
+	▫️ посмотреть примеры кода использования в R и Python
 
 
 ## facet
@@ -898,3 +903,6 @@ https://stackoverflow.com/questions/49988047/conflict-between-dt-and-plotly-to-s
 
 # Courses
 - [Data Visualization with R](https://datavizf24.classes.andrewheiss.com/resource/ai-bs.html) by Andrew Heiss. Use R, ggplot2, and the principles of graphic design to create beautiful and truthful visualizations of data. 
+
+# Query builder
+- [User-friendly query builder for React](https://github.com/ukrbublik/react-awesome-query-builder)

@@ -1620,6 +1620,11 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
+# 07.03.2025
+- Новый курс Transport Data Science (https://itsleeds.github.io/tds/), который создает Robin, призван научить современным и перспективным навыкам для решения транспортных проблем с практическими примерами и воспроизводимыми рабочими процессами с использованием стандартных отраслевых инструментов науки о данных. 
+Robin Lovelace (https://www.robinlovelace.net/), Professor of Transport Data Science (University of Leeds Institute for Transport Studies, UK) - это такой же титан в мире транспортных технологий и науке о данных в R, как, скажем, Geoff Boeing (https://geoffboeing.com/) (автор OSMnx (https://osmnx.readthedocs.io/en/stable/)) в мире Python.
+
+
 # 25.02.2025
 ## Dev
 - [The fastest production-ready image resize. Part 0](https://uploadcare.com/blog/the-fastest-image-resize/)
