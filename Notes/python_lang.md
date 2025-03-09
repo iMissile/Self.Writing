@@ -379,6 +379,7 @@ filtered_pl = tables_pl.filter(
 - [How to filter a lazy polars dataframe with arbitrary expressions?](https://stackoverflow.com/questions/77512892/how-to-filter-a-lazy-polars-dataframe-with-arbitrary-expressions)
 	- [JsonLogic](https://jsonlogic.com/play.html)
 Build complex rules, serialize them as JSON, share them between front-end and back-end
+- [Is there a way to add a column of numpy random values to a polars dataframe while one column is an input to `numpy.random`?](https://stackoverflow.com/questions/77471197/is-there-a-way-to-add-a-column-of-numpy-random-values-to-a-polars-dataframe-whil)
 
 # 02.03.2025
 Общее резюме: не надо дефолтный питон в системе переключать с нативного, всё рушится.
