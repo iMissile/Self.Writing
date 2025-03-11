@@ -361,6 +361,26 @@ This is an important distinction. When you install conda, it brings its own vers
 
 And as always, make sure to save the installation commands with version-locked dependencies for both conda and pip for every project where they are used.
 
+# 14.03.2025
+- [How do I disable a test using pytest?](https://stackoverflow.com/questions/38442897/how-do-i-disable-a-test-using-pytest).
+The skip decorator would do the job:
+```
+@pytest.mark.skip(reason="no way of currently testing this")
+def test_func_one():
+    # ...
+```
+(reason argument is optional, but it is always a good idea to specify why a test is skipped).
+There is also `skipif()` that allows to disable a test if some specific condition is met.
+- [BufferError: memoryview has 1 exported buffer trying to close a shared memory where I put a dataframe of pyarrow data type values](https://stackoverflow.com/questions/76481829/buffererror-memoryview-has-1-exported-buffer-trying-to-close-a-shared-memory-wh)
+- [How to activate a virtual environment in Ubuntu?](https://askubuntu.com/questions/1328392/how-to-activate-a-virtual-environment-in-ubuntu)
+You need to install python3-venv:
+`sudo apt install python3-venv`
+Then:
+
+```python3 -m venv vvv
+source vvv/bin/activate
+```
+
 # 05.03.2025
 ## polars
 - [polars.from_arrow](https://docs.pola.rs/api/python/dev/reference/api/polars.from_arrow.html). Create a DataFrame or Series from an Arrow Table or Array.

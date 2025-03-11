@@ -879,6 +879,7 @@ Windows should now launch as it did before, even my last browser session appeare
 RAM Disk на `Y:`, выделяем под кэш Хрома 512 Мб, делаем Junction кэша хрома.
 - Ставим [OpenVPN Community edition](https://openvpn.net/community-downloads/)
 - Ставим SSH клиент [Bitvise SSH Client/xShell]
+	- [Tabby](https://tabby.sh/) is an infinitely customizable cross-platform terminal app for local shells, serial, SSH and Telnet connections.
 - Ставим Zentimo xStorage Manager
 - Ставим SnagIt, блокируем его в файерволе (wf.msc) или касперском. [Best practices for configuring Защитник Windows firewall](https://docs.microsoft.com/ru-ru/windows/security/threat-protection/windows-firewall/best-practices-configuring).
 Переносим базы SnagIt

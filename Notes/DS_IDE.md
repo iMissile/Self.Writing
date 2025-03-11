@@ -66,6 +66,9 @@ You can actually customize your own shortcut to send selection to the debug cons
 	- Add the Encoding Command `[Console]::OutputEncoding = [System.Text.Encoding]::UTF8`
 	- Save and Restart
 
+## Remote sesson
+- [Remote Development using SSH](https://code.visualstudio.com/docs/remote/ssh)
+- [Remote - SSH. Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
 
 ## Fonts
 - [Fira code. VS Code Instructions](https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions)

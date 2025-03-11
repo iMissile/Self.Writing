@@ -240,3 +240,11 @@ sed -z 's/\n/ /g'
 ## Minicomp
 - [Мини-компьютер на Intel N100 — создаём игровую консоль своими руками](https://www.ixbt.com/live/platform/mini-kompyuter-na-intel-n100-sozdaem-igrovuyu-konsol-svoimi-rukami.html)
 - [Mini Pc Ninkear T9 Intel Alder Lake N100 DDR5](https://ru.ninkear.com/products/mini-pc-ninkear-t9-intel-alder-lake-n100-ddr5?variant=1dfaa472-be25-47b5-8741-a410ac5e1667)
+
+## Перенос ACL между директориями
+Этот вариант сработал
+```
+sudo sh -c "getfacl RProjects > /opt/RProjects.acl"
+sudo setfacl --set-file=/opt/RProjects.acl pyProjects
+getfacl pyProjects
+```
