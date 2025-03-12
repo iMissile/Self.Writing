@@ -867,7 +867,14 @@ Windows should now launch as it did before, even my last browser session appeare
 - [Scoop](https://scoop.sh/) A command-line installer for Windows
 - Ставим FarManager [`choco install far`](https://community.chocolatey.org/packages/Far)
 - Устанавливаем FiraCode для RStudio. [`choco install firacode`](https://community.chocolatey.org/packages/FiraCode)
-- Устанавливаем [Windows Terminal]() и для него шрифт `Cascadia Code`.
+- Устанавливаем новый PowerShell. [Installing PowerShell on Windows](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5#winget)
+Настраиваем дефолтный профиль всех интересующих PowerShell (если не создает, то можно поглядеть путь где профиль должен лежать через вывод переменной `$PROFILE`:
+```
+notepad $PROFILE
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+oh-my-posh init pwsh | Invoke-Expression
+```
+- Устанавливаем [Windows Terminal](https://github.com/microsoft/terminal/releases) и для него шрифт `Cascadia Code`. Можно ставить и с [MS Store Preview](https://apps.microsoft.com/search?query=windows+terminal&hl=ru-ru&gl=RU).
 	- [Update code font from Consolas to Cascadia Code with ligature](https://weblogs.asp.net/dixin/update-code-font-from-consolas-to-cascadia-code-with-ligature)
 	- [microsoft/cascadia-code](https://github.com/microsoft/cascadia-code)
 	- [Install with chocolatey](https://community.chocolatey.org/packages/cascadiacode). `choco install cascadiacode`
