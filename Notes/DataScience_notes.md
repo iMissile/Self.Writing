@@ -1476,6 +1476,8 @@ This is where we will store all of the materials and links for rstudio::conf 202
 - [Harlequin](https://harlequin.sh/). The DuckDB IDE for Your Terminal. A drop-in replacement for the DuckDB CLI.
 - [Every 2048th inserted date is incorrect #10180 {Open}](https://github.com/duckdb/duckdb/issues/10180)
 - [Frequently Asked Questions](https://duckdb.org/faq.html). Тут ответы про concurrency.
+- [The DuckDB Local UI](https://duckdb.org/2025/03/12/duckdb-ui)
+- [DuckDB execution plan visualizer](https://db.cs.uni-tuebingen.de/explain/)
 
 ### duckDB articles
 - [R duckdb examples](https://github.com/duckdb/duckdb/commit/a2c4a58b7a92ab023a3b353ed970004f32f1423d)
@@ -1619,6 +1621,15 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - RJ-2023-090 [Computer Algebra in R Bridges a Gap Between Symbolic Mathematics and Data in the Teaching of Statistics and Data Science](https://journal.r-project.org/articles/RJ-2023-090/)
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
+
+# 15.03.2025
+## R
+- [qs2: a framework for efficient serialization](https://github.com/qsbase/qs2)
+qs2 is the successor to the qs package.
+- changepoint detection
+- COOL! [mcp: Regression with Multiple Change Points](https://lindeloev.github.io/mcp/index.html)
+	- [An overview of change point packages in R](https://lindeloev.github.io/mcp/articles/packages.html)
+- [Browse State-of-the-Art. Change Point Detection](https://paperswithcode.com/task/change-point-detection)
 
 # 07.03.2025
 - Новый курс Transport Data Science (https://itsleeds.github.io/tds/), который создает Robin, призван научить современным и перспективным навыкам для решения транспортных проблем с практическими примерами и воспроизводимыми рабочими процессами с использованием стандартных отраслевых инструментов науки о данных. 
