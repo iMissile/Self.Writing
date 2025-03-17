@@ -497,6 +497,8 @@ storeLabeller <- function(string) {
 - [camcorder](https://thebioengineer.github.io/camcorder/) is an R package to track and automatically save graphics generated with ggplot2 that are created across one or multiple sessions with the eventual goal of creating a GIF showing all the plots saved sequentially during the design process.
 - [legendry](https://teunbrand.github.io/legendry/) позволяет делать пузырьковые легенды для графиков.
 - [ggalign](https://yunuuuu.github.io/ggalign/) This package extends ggplot2 by providing advanced tools for aligning and organizing multiple plots, particularly those that automatically reorder observations, such as dendrogram. 
+- [ggrgl](https://coolbutuseless.github.io/package/ggrgl/index.html) extends ggplot2 into the third dimension. 
+`ggrgl` does this by adding a new z aesthetic which is respected when a plot is rendered to the {devoutrgl} device which renders to OpenGL via {rgl}.
 
 =======
 - COOL! Как эффективно применить `ggfx` [Better data communication with {ggplot2}, part 2](https://giulia-ruggeri.medium.com/better-data-communication-with-ggplot2-part-2-615a5180ccb)
@@ -548,6 +550,7 @@ list.files("/tmp/gap")
 - [DECK.GL](https://deck.gl/) WebGL2-powered visualization framework for large-scale datasets
 
 # font
+- [Updates to Text Rendering in R Graphics](https://www.tidyverse.org/blog/2025/01/text-rendering-updates/)
 - COOL! [Taking Control of Plot Scaling](https://www.tidyverse.org/blog/2020/08/taking-control-of-plot-scaling/)
 - [Modern Text Features in R](https://www.tidyverse.org/blog/2021/02/modern-text-features/)
 - COOL! [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/)

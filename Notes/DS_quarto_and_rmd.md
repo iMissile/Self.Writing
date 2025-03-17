@@ -543,6 +543,9 @@ Tidying and splitting model summaries for inline reporting
 
 # ==================================================
 
+# 17.03.2025
+- Slides [Brand your Quarto projects with brand.yml](https://ivelasq-branded-quarto.share.connect.posit.cloud/#/section)
+
 # 08.01.2025
 - COOL! [Sharing and Remixing content across Revealjs slides with Quarto Includes](https://www.cynthiahqy.com/posts/slides-quarto-includes)
 How I reused content and metadata across slides for a multi-day workshop with Quarto.
