@@ -265,6 +265,7 @@ Authors: Nic Crane, Jonathan Keane, and Neal Richardson
 - COOL! [Understanding Deep Learning](https://udlbook.github.io/udlbook/) by Simon J.D. Prince. To be published by MIT Press Dec 5th 2023.
 - [Deep Learning: Foundations and Concepts 1st ed. 2024 Edition](https://www.amazon.com/Deep-Learning-Foundations-Christopher-Bishop/dp/3031454677/)
 by Christopher M. Bishop (Author), Hugh Bishop (Author)
+- [Large Language Model tools for R](https://luisdva.github.io/llmsr-book/)
 
 - [Modern Deep Learning for Tabular Data. Novel Approaches to Common Modeling Problems](https://link.springer.com/book/10.1007/978-1-4842-8692-0)
 

@@ -361,6 +361,10 @@ This is an important distinction. When you install conda, it brings its own vers
 
 And as always, make sure to save the installation commands with version-locked dependencies for both conda and pip for every project where they are used.
 
+# 17.03.2025
+- [pandas: Find the quantile with `quantile()`](https://note.nkmk.me/en/python-pandas-quantile/). А вот в polars какая-то бесконечная засада с квантилями. Дает `null`
+- [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
+
 # 14.03.2025
 - [How do I disable a test using pytest?](https://stackoverflow.com/questions/38442897/how-do-i-disable-a-test-using-pytest).
 The skip decorator would do the job:
@@ -698,6 +702,7 @@ Since version 1.7, `SciPy` also includes a built-in bootstrap function `scipy.st
 - [Implementing the bias-corrected and accelerated bootstrap in Python](https://www.erikdrysdale.com/bca_python/). Тут идет сравнение BCa с реализацией в `arch`.
 
 # 30.06.2023
+- [jupytext](https://pypi.org/project/jupytext/)
 - [Convert Jupyter Notebook to Python script in 3 ways](https://mljar.com/blog/convert-jupyter-notebook-python/)
 	1. Download as .py using GUI
 	2. Convert Jupyter Notebook to Python in the command line
