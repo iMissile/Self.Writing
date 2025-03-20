@@ -1623,6 +1623,12 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
+# 23.03.2025
+## Clickhouse
+- [How we built a new powerful JSON data type for ClickHouse](https://clickhouse.com/blog/a-new-powerful-json-data-type-for-clickhouse)
+- [The billion docs JSON Challenge: ClickHouse vs. MongoDB, Elasticsearch, and more](https://clickhouse.com/blog/json-bench-clickhouse-vs-mongodb-elasticsearch-duckdb-postgresql)
+- [JSONBench — a Benchmark For Data Analytics On JSON](https://jsonbench.com/)
+
 # 15.03.2025
 ## R
 - [qs2: a framework for efficient serialization](https://github.com/qsbase/qs2)
@@ -1631,6 +1637,9 @@ qs2 is the successor to the qs package.
 - COOL! [mcp: Regression with Multiple Change Points](https://lindeloev.github.io/mcp/index.html)
 	- [An overview of change point packages in R](https://lindeloev.github.io/mcp/articles/packages.html)
 - [Browse State-of-the-Art. Change Point Detection](https://paperswithcode.com/task/change-point-detection)
+- [Let the {styler} package help you reformat your code](https://rfortherestofus.com/2024/03/styler-package)
+- [Reindent & Reformat Lines stopped working in Quarto Callout Blocks #14640 {Closed}](https://github.com/rstudio/rstudio/issues/14640)
+	- [support exit from nested state in chunk #14558 {Closed}](https://github.com/rstudio/rstudio/pull/14558)
 
 # 07.03.2025
 - Новый курс Transport Data Science (https://itsleeds.github.io/tds/), который создает Robin, призван научить современным и перспективным навыкам для решения транспортных проблем с практическими примерами и воспроизводимыми рабочими процессами с использованием стандартных отраслевых инструментов науки о данных. 

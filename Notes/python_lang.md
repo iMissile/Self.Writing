@@ -404,6 +404,8 @@ filtered_pl = tables_pl.filter(
 	- [JsonLogic](https://jsonlogic.com/play.html)
 Build complex rules, serialize them as JSON, share them between front-end and back-end
 - [Is there a way to add a column of numpy random values to a polars dataframe while one column is an input to `numpy.random`?](https://stackoverflow.com/questions/77471197/is-there-a-way-to-add-a-column-of-numpy-random-values-to-a-polars-dataframe-whil)
+- [Add row count per group in polars](https://stackoverflow.com/questions/76884896/add-row-count-per-group-in-polars)
+`pl.col("j").cumcount().over("g")` or `df.with_columns(rn = pl.int_range(pl.len()).over("g"))`
 
 # 02.03.2025
 Общее резюме: не надо дефолтный питон в системе переключать с нативного, всё рушится.
