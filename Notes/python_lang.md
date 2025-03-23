@@ -364,6 +364,10 @@ And as always, make sure to save the installation commands with version-locked d
 # 17.03.2025
 - [pandas: Find the quantile with `quantile()`](https://note.nkmk.me/en/python-pandas-quantile/). А вот в polars какая-то бесконечная засада с квантилями. Дает `null`
 - [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
+- [pylint 1.4 reports E1101(no-member) on all C extensions](https://stackoverflow.com/questions/28437071/pylint-1-4-reports-e1101no-member-on-all-c-extensions)
+- [logging-too-many-args / E1205](https://pylint.readthedocs.io/en/latest/user_guide/messages/error/logging-too-many-args.html)
+	- [What's the difference between %s and %d in string formatting?](https://stackoverflow.com/questions/4288973/whats-the-difference-between-s-and-d-in-string-formatting)
+- [Safer logging methods for f-strings and new-style formatting](https://discuss.python.org/t/safer-logging-methods-for-f-strings-and-new-style-formatting/13802/20)
 
 # 14.03.2025
 - [How do I disable a test using pytest?](https://stackoverflow.com/questions/38442897/how-do-i-disable-a-test-using-pytest).

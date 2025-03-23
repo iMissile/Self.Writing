@@ -1629,6 +1629,10 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [The billion docs JSON Challenge: ClickHouse vs. MongoDB, Elasticsearch, and more](https://clickhouse.com/blog/json-bench-clickhouse-vs-mongodb-elasticsearch-duckdb-postgresql)
 - [JSONBench — a Benchmark For Data Analytics On JSON](https://jsonbench.com/)
 
+## R & JSON
+- Benchmarks [RcppSimdJSON: Rcpp Bindings for the simdjson Header Library](https://dirk.eddelbuettel.com/code/rcpp.simdjson.html).
+Тут есть ссылки на другие пакеты.
+
 # 15.03.2025
 ## R
 - [qs2: a framework for efficient serialization](https://github.com/qsbase/qs2)
