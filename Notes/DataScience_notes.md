@@ -279,6 +279,7 @@ by Christopher M. Bishop (Author), Hugh Bishop (Author)
 - [Disband the analytics team. I mean, no, surely not. But maybe?](https://benn.substack.com/p/disband-the-analytics-team?trk=feed_main-feed-card_reshare_feed-article-content)
 - [Greatest common substring](https://codegolf.stackexchange.com/questions/182134/greatest-common-substring)
 - [Lisp: побеждая посредственность](https://nestor.minsk.by/sr/2003/07/30710.html)
+- [GOTOphobia considered harmful](https://jorenar.com/blog/gotophobia-harmful)
 
 
 # VPN
@@ -1628,6 +1629,8 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [How we built a new powerful JSON data type for ClickHouse](https://clickhouse.com/blog/a-new-powerful-json-data-type-for-clickhouse)
 - [The billion docs JSON Challenge: ClickHouse vs. MongoDB, Elasticsearch, and more](https://clickhouse.com/blog/json-bench-clickhouse-vs-mongodb-elasticsearch-duckdb-postgresql)
 - [JSONBench — a Benchmark For Data Analytics On JSON](https://jsonbench.com/)
+- Типы данных JSON, Variant и Dynamic объявлены production-ready в Clickhouse версии 25.3 LTS:
+https://github.com/ClickHouse/ClickHouse/blob/master/CHANGELOG.md#-clickhouse-release-253-lts-2025-03-20
 
 ## R & JSON
 - Benchmarks [RcppSimdJSON: Rcpp Bindings for the simdjson Header Library](https://dirk.eddelbuettel.com/code/rcpp.simdjson.html).
