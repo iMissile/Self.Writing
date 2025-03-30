@@ -1624,11 +1624,19 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
-# 31.03.2025
+# 01.04.2025
 ## R
 - [geotargets](https://docs.ropensci.org/geotargets/) extends targets to work with geospatial data formats, such as rasters and vectors (e.g., shapefiles)
 - [rixpress](https://brodrigues.co/posts/2025-03-20-announcing_rixpress.html), a package to define reproducible analytical pipelines
 - [maize](https://github.com/frankiethull/maize). tidymodels extension package; binding specialty kernels & support vector machines to {parsnip} and {recipes}
+
+# 31.03.2025
+- COOL! [Xee: A Modern XPath and XSLT Engine in Rust](https://blog.startifact.com/posts/xee/)
+- [pipeflow](https://rpahl.github.io/pipeflow/index.html)
+A lightweight yet powerful framework for building robust data analysis pipelines.
+- [Render with Parameters GUI (similar to .Rmd Knit with Parameters) #7581 {Closed}](https://github.com/quarto-dev/quarto-cli/discussions/7581)
+- [miniUI](https://github.com/rstudio/miniUI)
+- [Parse command-line arguments](https://jokergoo.github.io/2020/06/06/parse-command-line-arguments/)
 
 # 23.03.2025
 ## Clickhouse

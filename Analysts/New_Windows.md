@@ -880,7 +880,7 @@ oh-my-posh init pwsh | Invoke-Expression
 	- [Install with chocolatey](https://community.chocolatey.org/packages/cascadiacode). `choco install cascadiacode`
 	- [Cascadia Mono Font 2108.26](https://community.chocolatey.org/packages/cascadiamono). `choco install cascadiamono`
 	- [Конфигурируем меню Windows Terminal](https://codeandkeep.com/Tmux-on-Windows/). If you want to set this as your default shell in the Windows Terminal, you can update the settings `Ctrl + ,` to do so. Replace the GUID in defaultProfile with the one for your Linux app. You can find the GUID in the list section under profiles. Set this GUID as the defaultProfile, and this will be the shell that opens by default.
-	- [Oh My Posh](https://ohmyposh.dev/). A prompt theme engine for any shell.
+	- [Oh My Posh](https://ohmyposh.dev/). A prompt theme engine for any shell. Use **MesloLGM Nerd Font** 
 - Ставим `Link Shell Extension` с [официальной страницы](https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html)
 - Ставим [DataRAM RAMDisk](http://memory.dataram.com/products-and-services/software/ramdisk) и спасаем SSD от Chrome (см выше по тексту).
 RAM Disk на `Y:`, выделяем под кэш Хрома 512 Мб, делаем Junction кэша хрома.

@@ -370,6 +370,8 @@ Tuples are fixed size in nature whereas lists are dynamic. In other words, a tup
 	- You can't remove elements from a tuple. Tuples have no remove or pop method.
 	- You can find elements in a tuple, since this doesn’t change the tuple.
 	- You can also use the in operator to check if an element exists in the tuple.
+- COOL! [Rich](https://github.com/Textualize/rich) is a Python library for rich text and beautiful formatting in the terminal.
+
 
 # 17.03.2025
 - [pandas: Find the quantile with `quantile()`](https://note.nkmk.me/en/python-pandas-quantile/). А вот в polars какая-то бесконечная засада с квантилями. Дает `null`
@@ -388,6 +390,7 @@ def test_func_one():
     # ...
 ```
 (reason argument is optional, but it is always a good idea to specify why a test is skipped).
+- [3 Simple Ways To Ignore Test Directories in Pytest](https://pytest-with-eric.com/getting-started/pytest-ignore-directory)
 There is also `skipif()` that allows to disable a test if some specific condition is met.
 - [BufferError: memoryview has 1 exported buffer trying to close a shared memory where I put a dataframe of pyarrow data type values](https://stackoverflow.com/questions/76481829/buffererror-memoryview-has-1-exported-buffer-trying-to-close-a-shared-memory-wh)
 - [How to activate a virtual environment in Ubuntu?](https://askubuntu.com/questions/1328392/how-to-activate-a-virtual-environment-in-ubuntu)
