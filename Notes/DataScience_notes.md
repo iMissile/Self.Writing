@@ -1624,6 +1624,12 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
+# 31.03.2025
+## R
+- [geotargets](https://docs.ropensci.org/geotargets/) extends targets to work with geospatial data formats, such as rasters and vectors (e.g., shapefiles)
+- [rixpress](https://brodrigues.co/posts/2025-03-20-announcing_rixpress.html), a package to define reproducible analytical pipelines
+- [maize](https://github.com/frankiethull/maize). tidymodels extension package; binding specialty kernels & support vector machines to {parsnip} and {recipes}
+
 # 23.03.2025
 ## Clickhouse
 - [How we built a new powerful JSON data type for ClickHouse](https://clickhouse.com/blog/a-new-powerful-json-data-type-for-clickhouse)

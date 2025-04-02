@@ -364,6 +364,12 @@ And as always, make sure to save the installation commands with version-locked d
 # 28.03.2025
 - [Mocking External APIs in Python](https://realpython.com/testing-third-party-apis-with-mocks/)
 - [Testing APIs with PyTest: how to effectively use mocks in Python](https://codilime.com/blog/testing-apis-with-pytest-mocks-in-python/)
+- [List vs tuple, when to use each?](https://stackoverflow.com/questions/1708510/list-vs-tuple-when-to-use-each)
+Tuples are fixed size in nature whereas lists are dynamic. In other words, a tuple is immutable whereas a list is mutable.
+	- You can't add elements to a tuple. Tuples have no append or extend method.
+	- You can't remove elements from a tuple. Tuples have no remove or pop method.
+	- You can find elements in a tuple, since this doesn’t change the tuple.
+	- You can also use the in operator to check if an element exists in the tuple.
 
 # 17.03.2025
 - [pandas: Find the quantile with `quantile()`](https://note.nkmk.me/en/python-pandas-quantile/). А вот в polars какая-то бесконечная засада с квантилями. Дает `null`
