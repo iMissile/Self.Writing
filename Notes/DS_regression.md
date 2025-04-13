@@ -175,6 +175,7 @@ This visual explanation introduces the statistical concept of Hierarchical Model
 - [Building formulae](http://www.brodrigues.co/blog/2017-12-27-build_formulae/)
 - [Changing the variable inside an R formula](https://statisticaloddsandends.wordpress.com/2019/08/24/changing-the-variable-inside-an-r-formula/)
 - [Using a variable in update() in R to update formula](https://stackoverflow.com/questions/38980066/using-a-variable-in-update-in-r-to-update-formula)
+- В survival есть несколько [специальных форм](https://stat.ethz.ch/pipermail/r-devel/2025-March/083891.html), например, cluster, которые выглядят как вызовы функций, но таковыми не являются. Ими нужно пользоваться с осторожностью, как написано в документации. Если написать по-другому (c :: или с переименованием функции) молча получится неправильный ответ.
 
 # A/B
 - COOL! [a/b testing](https://bytepawn.com/tag/ab-testing.html)

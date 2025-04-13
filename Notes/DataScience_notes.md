@@ -1624,6 +1624,10 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
+# 05.04.2025
+## R
+- [Introducing dockitect: Making Docker Feel More Native to R](https://blog.thecoatlessprofessor.com/programming/r/introducing-dockitect-making-docker-feel-more-native-to-r/). `Docker + R = dockitect`
+
 # 01.04.2025
 ## R
 - [geotargets](https://docs.ropensci.org/geotargets/) extends targets to work with geospatial data formats, such as rasters and vectors (e.g., shapefiles)

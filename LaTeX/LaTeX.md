@@ -273,6 +273,7 @@ New documents should use the regular `caption' package v3.x instead.`
 - [sort biblatex bibliography by appearance of cites in the document {duplicate}](https://tex.stackexchange.com/questions/116088/sort-biblatex-bibliography-by-appearance-of-cites-in-the-document)
 - [Biblatex citation order](https://tex.stackexchange.com/questions/51434/biblatex-citation-order)
 - [How do I cite range of references? {duplicate}](https://tex.stackexchange.com/questions/103792/how-do-i-cite-range-of-references?noredirect=1&lq=1). The tags you used suggest that you use `biblatex`. In this case you could use one of the styles anding on `-comp`.
+- [JabRef](https://www.jabref.org/) is the real open source bibliography reference manager. It uses BibTeX as its native format. It is an excellent editor for BibTeX files allowing you to perform several actions when dealing with such data.
 
 ## Управление с проектами
 - [Management in a large project](https://ru.overleaf.com/learn/latex/Management_in_a_large_project)
