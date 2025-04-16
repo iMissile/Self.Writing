@@ -1,6 +1,9 @@
 - [The JSON Formatter](https://jsonformatter.curiousconcept.com/)
 - [JSON Editor Online](http://jsoneditoronline.org/)
 - [JSON Schema](https://restfulapi.net/json-schema/)
+- JSON semantic Diff
+	- [Online JSON Diff](https://semanticdiff.com/online-diff/json/). Use our free online JSON diff to perform a semantic comparison between two data sets. Get a glimpse of what SemanticDiff can do.
+	- [JSON Diff](https://jsondiff.com/). The semantic JSON compare tool
 - [XML Formatter](https://jsonformatter.org/xml-formatter)
 - SQL
 	- [SQL Formatter](https://codebeautify.org/sqlformatter)
@@ -1627,6 +1630,9 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 # 05.04.2025
 ## R
 - [Introducing dockitect: Making Docker Feel More Native to R](https://blog.thecoatlessprofessor.com/programming/r/introducing-dockitect-making-docker-feel-more-native-to-r/). `Docker + R = dockitect`
+- [charcoal](https://carbon.now.sh/) Create and share beautiful images of your source code. Start typing or drop a file into the text area to get started.
+- [jQuery File Upload Demo](https://blueimp.github.io/jQuery-File-Upload/)
+File Upload widget with multiple file selection, drag&drop support, progress bars, validation and preview images, audio and video for jQuery.
 
 # 01.04.2025
 ## R
