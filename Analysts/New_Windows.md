@@ -1033,3 +1033,8 @@ If you are using the curl command line tool on Windows, curl will search for a C
 
 # пропал Alt-Tab
 - [How to Fix Alt-Tab Shortcut Not Working on Windows 10](https://softwarekeep.com/help-center/how-to-fix-alt-tab-shortcut-not-working-on-windows-10)
+
+# Emulators
+- [PCjs Machines](https://www.pcjs.org/software/pcx86/sys/windows/3.10/). Home of the original IBM PC emulator for browsers.
+	- Запустил в браузере 3.1 и поставил Графер: https://www.pcjs.org/software/pcx86/sys/windows/3.10/
+- [Floppy disk imaging - what program to use?](https://www.vogons.org/viewtopic.php?t=74270)

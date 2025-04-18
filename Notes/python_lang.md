@@ -361,6 +361,13 @@ This is an important distinction. When you install conda, it brings its own vers
 
 And as always, make sure to save the installation commands with version-locked dependencies for both conda and pip for every project where they are used.
 
+# 19.04.2025
+- Нюансы polars hash & Uint64. 
+	- [polars.Expr.hash](https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.Expr.hash.html). The hash value is of type UInt64.
+	- [polars.datatypes.UInt64](https://docs.pola.rs/api/python/stable/reference/api/polars.datatypes.UInt64.html)
+	- Проверяем на конвертере: https://www.simonv.fr/TypesConvert/?integers
+
+
 # 28.03.2025
 - [Mocking External APIs in Python](https://realpython.com/testing-third-party-apis-with-mocks/)
 - [Testing APIs with PyTest: how to effectively use mocks in Python](https://codilime.com/blog/testing-apis-with-pytest-mocks-in-python/)
