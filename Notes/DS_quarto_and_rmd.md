@@ -82,7 +82,6 @@ In quarto, you can set the custom ragg_png device (defined above) in the YAML, l
 - Мучаемся с ошибкой `Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, :
 семейство шрифтов не найдено в базе данных шрифтов Windows`
 	- [Warning in grid.Call(C_textBounds, as.graphicsAnnot(x$label), x$x, x$y, : font width unknown for character 0x20](https://stackoverflow.com/questions/62067139/warning-in-grid-callc-textbounds-as-graphicsannotxlabel-xx-xy-font-w)
-- [A beginner's guide to using Observable JavaScript, R, and Python with Quarto](https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html)
 - [Slidecraft 101: Colors and Fonts](https://www.emilhvitfeldt.com/post/slidecraft-colors-fonts/)
 - [Slidecraft 101: Code and Output](https://www.emilhvitfeldt.com/post/slidecraft-code-output/)
 	- COOL! [Use fonts with ligatures](https://www.emilhvitfeldt.com/post/slidecraft-code-output/#use-fonts-with-ligatures)
@@ -173,7 +172,7 @@ project:
 - [Why does quarto preview always choose a new port? {#2083}](https://github.com/quarto-dev/quarto-cli/discussions/2083)
 
 ## Quarto & observable
-- [Observable JS](https://quarto.org/docs/interactive/ojs/)
+- [Observable JS. {ojs} cells](https://quarto.org/docs/interactive/ojs/)
 - [Wrangling data in JavaScript with Arquero: a primer for R users](https://observablehq.com/@observablehq/data-wrangling-with-arquero-from-r)
 - [Introducing Arquero](https://observablehq.com/@uwdata/introducing-arquero)
 - COOL! [Pass R object to Observable in Quarto](https://stackoverflow.com/questions/73873681/pass-r-object-to-observable-in-quarto)
@@ -191,6 +190,18 @@ format:
       margin-width: 200px
     toc: true
 ```
+- [A beginner's guide to using Observable JavaScript, R, and Python with Quarto](https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html)
+- [Big-Scale Data Dashboards With Observable Framework](https://www.appsilon.com/post/observable-framework-data-science-dashboards)
+- [Using Observable with reactable in Quarto](https://glin.quarto.pub/observable-reactable/)
+
+## Quarto & duckdb
+- [DuckDB for Quarto](https://observablehq.com/@rlesur/quarto-duckdb)
+- [Using Quarto with OJS and DuckDB](https://forum.posit.co/t/using-quarto-with-ojs-and-duckdb/190311/2)
+- [DuckDB + Observable Handbook](https://www.intentando.dev/posts/duckdb-observable-handbook/)
+- [SQL Notebooks with Quarto](https://danielroelfs.com/posts/sql-notebooks-with-quarto/)
+
+
+
 
 ## Quarto & tables
 - quartoExtra. [Table printing demo](https://debruine.github.io/quarto_demo/table.html) by Lisa DeBruine
@@ -542,6 +553,9 @@ Tidying and splitting model summaries for inline reporting
 
 
 # ==================================================
+
+# 23.04.2025
+- [Quarto Extensions](https://m.canouil.dev/quarto-extensions/)
 
 # 17.03.2025
 - Slides [Brand your Quarto projects with brand.yml](https://ivelasq-branded-quarto.share.connect.posit.cloud/#/section)

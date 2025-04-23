@@ -1627,12 +1627,18 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
+# 28.04.2025
+## DS
+- [Как вырастить филогенетический лес?](https://pcr.news/stati/kak-vyrastit-filogeneticheskiy-les/)
+
 # 05.04.2025
 ## R
 - [Introducing dockitect: Making Docker Feel More Native to R](https://blog.thecoatlessprofessor.com/programming/r/introducing-dockitect-making-docker-feel-more-native-to-r/). `Docker + R = dockitect`
 - [charcoal](https://carbon.now.sh/) Create and share beautiful images of your source code. Start typing or drop a file into the text area to get started.
 - [jQuery File Upload Demo](https://blueimp.github.io/jQuery-File-Upload/)
 File Upload widget with multiple file selection, drag&drop support, progress bars, validation and preview images, audio and video for jQuery.
+- COOL! [Getting Started in R: Tinyverse 2nd Edition](https://eddelbuettel.github.io/gsir-te/Getting-Started-in-R-2e.pdf). Saghir Bashir and Dirk Eddelbuettel
+- [R Dplyr vs. DuckDB - How to Enhance Your Data Processing Pipelines with R DuckDB](https://www.appsilon.com/post/r-dplyr-vs-duckdb)
 
 # 01.04.2025
 ## R
@@ -1707,6 +1713,8 @@ Using the GitHub API and {ellmer} to remember what I did this week.
 - [Как правильно оформлять постскриптумы?](https://bureau.ru/soviet/20120107/) Правильный вариант -- без двоеточия и с заглавной: 
 P. S. Не пытайтесь с нами связаться.
 - [Повтор балета R1 в исполнении simpleRL-reason.](https://ailev.livejournal.com/1751437.html)
+- BLOG [Some Pitters and Patters with R](https://www.simonpcouch.com/blog/)
+- [vitals](https://vitals.tidyverse.org/index.html) is a framework for large language model evaluation in R. It’s specifically aimed at ellmer users who want to measure the effectiveness of their LLM-based apps.
 
 ## Shiny
 - [Using systemd to Run Shiny Apps](https://hosting.analythium.io/using-systemd-to-run-shiny-apps/)

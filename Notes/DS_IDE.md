@@ -181,6 +181,7 @@ Combine the best of RStudio and Visual Studio Code in Posit’s new Positron IDE
 	- [Сайт разработчика](https://pastum.anatolii.nz/). This VS Code extension allows you to quickly transform any text table from your clipboard into a dataframe object in your favorite language — R , Python , Julia  or JavaScript
 	- [HTML Table to DataFrame Tool](https://web-apps.thecoatlessprofessor.com/data/html-table-to-dataframe-tool.html)
 - [Visual Studio Code - is there a Compare feature like that plugin for Notepad ++?](https://stackoverflow.com/questions/30139597/visual-studio-code-is-there-a-compare-feature-like-that-plugin-for-notepad)
+- COOL! [Quarto Wizard](https://github.com/mcanouil/quarto-wizard) is a Visual Studio Code extension that assists you in managing Quarto projects.
 
 ## 20.09.2021
 - Проблема с юникодными строками в Windows. Возможно, надо задавать явно параметр `encoding` в `source` в `setting.json`
