@@ -1497,6 +1497,7 @@ Use SQL statements such as `INSERT INTO`. "You can, but you shouldn't. dplyr is 
 - [dbt-duckdb](https://github.com/jwills/dbt-duckdb).
 dbt (http://getdbt.com) adapter for DuckDB (http://duckdb.org)
 - [Manipulate big data with Arrow & DuckDB | Christophe Nicault](https://www.christophenicault.com/post/large_dataframe_arrow_duckdb/)
+- [DuckDB's CSV Reader and the Pollock Robustness Benchmark: Into the CSV Abyss](https://duckdb.org/2025/04/16/duckdb-csv-pollock-benchmark.html)
 
 # ML
 - Andrej Karpathy blog
@@ -1631,6 +1632,10 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 ## DS
 - [Как вырастить филогенетический лес?](https://pcr.news/stati/kak-vyrastit-filogeneticheskiy-les/)
 
+## JS
+- [Elkjs Tree](https://reactflow.dev/examples/layout/elkjs)
+- [ELK's layout algorithms for JavaScript](https://github.com/kieler/elkjs)
+
 # 05.04.2025
 ## R
 - [Introducing dockitect: Making Docker Feel More Native to R](https://blog.thecoatlessprofessor.com/programming/r/introducing-dockitect-making-docker-feel-more-native-to-r/). `Docker + R = dockitect`
@@ -1639,6 +1644,7 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 File Upload widget with multiple file selection, drag&drop support, progress bars, validation and preview images, audio and video for jQuery.
 - COOL! [Getting Started in R: Tinyverse 2nd Edition](https://eddelbuettel.github.io/gsir-te/Getting-Started-in-R-2e.pdf). Saghir Bashir and Dirk Eddelbuettel
 - [R Dplyr vs. DuckDB - How to Enhance Your Data Processing Pipelines with R DuckDB](https://www.appsilon.com/post/r-dplyr-vs-duckdb)
+- COOL! [Sensitivity to C math library and mingw-w64 v12](https://blog.r-project.org/2025/04/24/sensitivity-to-c-math-library-and-mingw-w64-v12/index.html) by Tomas Kalibera
 
 # 01.04.2025
 ## R
