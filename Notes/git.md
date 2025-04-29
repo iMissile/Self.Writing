@@ -48,6 +48,8 @@ Commit-ы на этом этапе уже не нужны.
 1. Экспорт. Project’s homepage. Click Settings in the sidebar. -> General/Export
 2. Projects/Gitlab Import
 
+[Еще инструкция](https://gitlab.jaytaala.com/help/user/project/settings/import_export.md)
+
 # Затаскивание изменений из мастера к себе в ветку
 ```
 git fetch
