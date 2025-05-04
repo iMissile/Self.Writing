@@ -289,3 +289,10 @@ New documents should use the regular `caption' package v3.x instead.`
 - [Craft beautiful equations in Word with LaTeX](https://www.nature.com/articles/d41586-019-01796-1)
 - [LATEX EQUATION TO WORD (2007 TO 365): 3 METHODS [2022]](https://www.pickupbrain.com/ms-word/latex-equation-to-word/)
 - [Rmarkdown. Equations not appearing in word](https://community.rstudio.com/t/equations-not-appearing-in-word/40228)
+
+# Конвертация html -> LaTeX
+- [How to convert HTML with mathjax into Latex using Pandoc?](https://stackoverflow.com/questions/11338049/how-to-convert-html-with-mathjax-into-latex-using-pandoc)
+With the latest version of pandoc (1.12.2), you can do this:
+```pandoc -f html+tex_math_dollars+tex_math_single_backslash -t latex```
+Much nicer! If you don't want to convert math delimited by \( and \), just do
+```pandoc -f html+tex_math_dollars -t latex```
