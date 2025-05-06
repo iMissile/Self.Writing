@@ -177,6 +177,7 @@ Understanding memory management is a superpower that will help you design memory
 - [Polars Python API reference](https://pola-rs.github.io/polars/py-polars/html/reference/index.html)
 
 # Pola.rs
+- e-book [Python Polars: The Definitive Guide](https://polarsguide.com/)
 - [Polars: Create column with fixed value from variable](https://stackoverflow.com/questions/71340260/polars-create-column-with-fixed-value-from-variable)
 - [Polars. Adding Columns](https://calmcode.io/polars/with_columns.html).
 In pandas you may be used to calling `.assign()` when you want to add a new column. In polars you'd use the `with_columns` method instead.
@@ -326,6 +327,12 @@ shape: (1, 5)
 Решение нашел путем детального изучения исходников `tests\test_model.py`
 - [Why 20.5_f64.round() do not eq with np.round(20.5)?](https://users.rust-lang.org/t/why-20-5-f64-round-do-not-eq-with-np-round-20-5/83966)
 - [Polars & Multiprocessing](https://docs.pola.rs/user-guide/misc/multiprocessing/)
+
+## Polars caching
+- [How does Polars auto-cache mechanism work on LazyFrames?](https://stackoverflow.com/questions/77561774/how-does-polars-auto-cache-mechanism-work-on-lazyframes)
+- [How does caching on LazyFrame work? {#22143}](https://github.com/pola-rs/polars/issues/22143)
+	- https://docs.pola.rs/user-guide/lazy/execution/#execution-on-the-full-dataset
+	- https://docs.pola.rs/user-guide/lazy/execution/#diverging-queries Интересный подход `collect_all`
 
 # Python & R
 - [How to use R and Python in the same notebook?](https://www.askpython.com/python/examples/use-r-and-python-in-the-same-notebook)

@@ -342,6 +342,8 @@ This isn't working all the time - so there is another work around directly from 
 "Note: If you are facing any issue in applying the latest update or still see this problem on your machine, please navigate to C:\Program Files\Common Files\Adobe\Adobe OS Extension and rename the file (if present) 'AdobeExplorerExtensionCore.dll' to 'temp_AdobeExplorerExtensionCore.dll'"
 
 
+## Reader
+- [FBReader 2.1.3] from WindowsStore для чтения epub
 
 ## Word
 - [Reduce the file size of a picture in Microsoft Office](https://support.microsoft.com/en-us/office/reduce-the-file-size-of-a-picture-in-microsoft-office-8db7211c-d958-457c-babd-194109eb9535)
@@ -883,6 +885,7 @@ oh-my-posh init pwsh | Invoke-Expression
 	- [Конфигурируем меню Windows Terminal](https://codeandkeep.com/Tmux-on-Windows/). If you want to set this as your default shell in the Windows Terminal, you can update the settings `Ctrl + ,` to do so. Replace the GUID in defaultProfile with the one for your Linux app. You can find the GUID in the list section under profiles. Set this GUID as the defaultProfile, and this will be the shell that opens by default.
 	- [Oh My Posh](https://ohmyposh.dev/). A prompt theme engine for any shell. Use **MesloLGM Nerd Font** 
 - Ставим `Link Shell Extension` с [официальной страницы](https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html)
+	- `choco install linkshellextension`
 - Ставим [DataRAM RAMDisk](http://memory.dataram.com/products-and-services/software/ramdisk) и спасаем SSD от Chrome (см выше по тексту).
 RAM Disk на `Y:`, выделяем под кэш Хрома 512 Мб, делаем Junction кэша хрома.
 - Ставим [OpenVPN Community edition](https://openvpn.net/community-downloads/)
@@ -1039,3 +1042,6 @@ If you are using the curl command line tool on Windows, curl will search for a C
 - [PCjs Machines](https://www.pcjs.org/software/pcx86/sys/windows/3.10/). Home of the original IBM PC emulator for browsers.
 	- Запустил в браузере 3.1 и поставил Графер: https://www.pcjs.org/software/pcx86/sys/windows/3.10/
 - [Floppy disk imaging - what program to use?](https://www.vogons.org/viewtopic.php?t=74270)
+
+# Замена Stardock
+- [Transform your Windows desktop with Cairo](https://cairoshell.com/)

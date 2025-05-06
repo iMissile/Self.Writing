@@ -182,6 +182,8 @@ Combine the best of RStudio and Visual Studio Code in Posit’s new Positron IDE
 	- [HTML Table to DataFrame Tool](https://web-apps.thecoatlessprofessor.com/data/html-table-to-dataframe-tool.html)
 - [Visual Studio Code - is there a Compare feature like that plugin for Notepad ++?](https://stackoverflow.com/questions/30139597/visual-studio-code-is-there-a-compare-feature-like-that-plugin-for-notepad)
 - COOL! [Quarto Wizard](https://github.com/mcanouil/quarto-wizard) is a Visual Studio Code extension that assists you in managing Quarto projects.
+- [Use agent mode in VS Code](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode)
+- Это оказалось для мака! [How to install the Work with Apps Visual Studio Code extension](https://help.openai.com/en/articles/10128592-how-to-install-the-work-with-apps-visual-studio-code-extension)
 
 ## 20.09.2021
 - Проблема с юникодными строками в Windows. Возможно, надо задавать явно параметр `encoding` в `source` в `setting.json`

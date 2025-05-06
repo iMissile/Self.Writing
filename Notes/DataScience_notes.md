@@ -1628,9 +1628,37 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
+# 05.05.2025
+## Нештатная установка R
+- Используем rig для установки новых версий R
+- Переносим библиотеки R на диск, отличный от C, не забываем про renv cache! Увы, назад потом без бубна не откатить!!!
+```
+Sys.getenv("R_LIBS_USER")  # Путь к библиотеке
+Sys.getenv("R_USER")       # Домашний каталог
+renv::paths$cache()		   # Путь к кэшу renv
+```
+- Run `usethis::edit_r_environ()`
+- Add `R_LIBS_USER="D:/R/library/%p/%v"`, where the `%p` and `%v` in the path automatically insert the platform (e.g., "x86_64-w64-mingw32") and R version (e.g., "4.3"). В случае с виндой переносим параллельно в `d:/R/user/win-library/%v`
+- Add `RENV_PATHS_CACHE="D:/renv/cache"`
+	- [2.13 What are HOME and working directories?](https://cran.r-project.org/bin/windows/base/rw-FAQ.html#What-are-HOME-and-working-directories_003f-1)
+Итого, мой конфиг
+```
+CURL_SSL_BACKEND=openssl
+PROFFER_PPROF_BIN=C:\PROGRA~1\Go\pkg\tool\windows_amd64\pprof.exe
+PROFFER_GO_BIN=C:\PROGRA~1\Go\bin\go.exe
+PROFFER_GRAPHVIZ_BIN=C:\PROGRA~1\Graphviz\bin\dot.exe
+d:/R/user/win-library/%v%
+```
+Но можно ничего и не менять, просто сделать симлинки. Может так и проще даже, если админ на машине.
+- Назад не откатывается, упарывается в `.lib.loc` .Library is a character string giving the location of the default library, the ``library'' subdirectory of RHOME. .lib.loc is a character vector with the locations of all library trees that R should use. It is initialized at startup from the environment variable RLIBS, which should be a colon-separated list of directories at which R library trees are rooted, and .Library.
+
 # 28.04.2025
 ## DS
 - [Как вырастить филогенетический лес?](https://pcr.news/stati/kak-vyrastit-filogeneticheskiy-les/)
+- T-Digest
+	- [The t-digest: Efficient estimates of distributions Author links open overlay panel](https://doi.org/10.1016/j.simpa.2020.100049) by Ted Dunning
+	- [t-digest-paper/](https://github.com/tdunning/t-digest/tree/main/docs/t-digest-paper)
+	- [Tantor PipelineDB. Вероятностные структуры данных и алгоритмы](https://docs.tantorlabs.ru/pipelinedb/ru/1.2-ru/probabilistic.html)
 
 ## JS
 - [Elkjs Tree](https://reactflow.dev/examples/layout/elkjs)
