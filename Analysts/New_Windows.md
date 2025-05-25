@@ -340,6 +340,15 @@ This is a problem being cause by Adobe Creative Cloud.
 Apparently there is a hot fix, so you can update Creative Cloud... HOWEVER
 This isn't working all the time - so there is another work around directly from Adobe:
 "Note: If you are facing any issue in applying the latest update or still see this problem on your machine, please navigate to C:\Program Files\Common Files\Adobe\Adobe OS Extension and rename the file (if present) 'AdobeExplorerExtensionCore.dll' to 'temp_AdobeExplorerExtensionCore.dll'"
+- Еще один вариант исправления -- перезапуск службы индексирования. 
+	- [Windows Explorer Not Responding But Crashes or Restarts (Windows 11)](https://superuser.com/questions/1826711/windows-explorer-not-responding-but-crashes-or-restarts-windows-11)
+	Another way if you are want to do it with CMD. It should be run as Administrator
+```
+net stop wsearch <Enter>
+del "%ProgramData%\Microsoft\Search\Data\Applications\Windows\Windows.edb" <ENTER>
+net start wsearch <ENTER>
+```
+	- [How to Disable Indexing in Windows 10 & 11]
 
 
 ## Reader
@@ -352,6 +361,11 @@ This isn't working all the time - so there is another work around directly from 
 - [Папки в Outlook отображаются на английском языке](https://www.dmosk.ru/polezno.php?review=outlook-en). 
 `C:\Program Files\Microsoft Office\root\Office16\outlook.exe /resetfoldernames` переименовывает папки на русский (под русской локалью) и теперь их надо синхронизировать по IMAP с русскими папками на сервере.
 - [Переименование папок почты в Outlook 2016](https://answers.microsoft.com/ru-ru/msoffice/forum/msoffice_outlook-mso_win10-mso_365hp/%D0%BF%D0%B5%D1%80%D0%B5%D0%B8%D0%BC%D0%B5%D0%BD/09bb0f12-8dda-4a5c-bd3d-657efde45595)
+
+## Uninstall
+- [Uninstall new apps](). That is a Windows 10 UWP App and those don't appear in the old Control Panel - Programs and Features Section
+Open the Settings App (gear icon on your Start Menu)
+Go to Apps, then scroll down to find that app in the list of installed Apps and applications and form there, you can uninstall it ...
 
 ## Tools
 - [7 best tabbed command line tools for Windows 10](https://windowsreport.com/tabbed-command-line-windows-10/)
@@ -1045,3 +1059,7 @@ If you are using the curl command line tool on Windows, curl will search for a C
 
 # Замена Stardock
 - [Transform your Windows desktop with Cairo](https://cairoshell.com/)
+- Проблема с Language Bar. [A workaround before Cairo implement language bar functionality](https://github.com/cairoshell/cairoshell/issues/212#issuecomment-720018859). Тут расписано как можно Windows донастроить. Или You could use third party apps that provide tray icons and advanced switching options like the following https://github.com/iamkarlson/Mahou, переключатель раскладок.
+
+# Загрузка видеозаписей конференций
+- [M3U8 Downloader](https://m3u8.dev/)

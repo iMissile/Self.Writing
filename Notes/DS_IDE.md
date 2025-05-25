@@ -24,6 +24,9 @@
 ## Other
 - [How to get unsaved script tabs](https://stackoverflow.com/questions/35223435/how-to-get-unsaved-script-tabs)
 
+# AI IDE
+- [Windsurf](https://windsurf.com/editor)
+- [Cursor]()
 
 # VScode
 

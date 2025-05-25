@@ -178,6 +178,11 @@ Understanding memory management is a superpower that will help you design memory
 
 # Pola.rs
 - e-book [Python Polars: The Definitive Guide](https://polarsguide.com/)
+- [A bird's eye view of Polars](https://pola.rs/posts/polars_birds_eye_view/)
+- Lazy Frame
+	- [Optimizations](https://docs.pola.rs/user-guide/lazy/optimizations/)
+* the `sigma` stands for SELECTION and indicates any filter conditions
+* the `pi` stands for PROJECTION and indicates choosing a subset of columns
 - [Polars: Create column with fixed value from variable](https://stackoverflow.com/questions/71340260/polars-create-column-with-fixed-value-from-variable)
 - [Polars. Adding Columns](https://calmcode.io/polars/with_columns.html).
 In pandas you may be used to calling `.assign()` when you want to add a new column. In polars you'd use the `with_columns` method instead.
@@ -327,6 +332,8 @@ shape: (1, 5)
 Решение нашел путем детального изучения исходников `tests\test_model.py`
 - [Why 20.5_f64.round() do not eq with np.round(20.5)?](https://users.rust-lang.org/t/why-20-5-f64-round-do-not-eq-with-np-round-20-5/83966)
 - [Polars & Multiprocessing](https://docs.pola.rs/user-guide/misc/multiprocessing/)
+- DeprecationWarning: `is_in` with a collection of the same datatype is ambiguous and deprecated.
+  Please use `implode` to return to previous behavior. [Tracking issue for fixing problematic collection-based functions #22149 {Closed}](https://github.com/pola-rs/polars/issues/22149)
 
 ## Polars caching
 - [How does Polars auto-cache mechanism work on LazyFrames?](https://stackoverflow.com/questions/77561774/how-does-polars-auto-cache-mechanism-work-on-lazyframes)
@@ -372,6 +379,15 @@ And as always, make sure to save the installation commands with version-locked d
 # 25.04.2025
 - [Inspect](https://inspect.aisi.org.uk/). An open-source framework for large language model evaluations
 - COOL! [How to Work With Polars LazyFrames](https://realpython.com/polars-lazyframe/)
+- [How to check if the string is empty in Python?](https://stackoverflow.com/questions/9573244/how-to-check-if-the-string-is-empty-in-python)
+```
+ >>> bool("")
+ False
+ >>> bool("   ")
+ True
+ >>> bool("   ".strip())
+ False
+ ```
 
 
 # 19.04.2025

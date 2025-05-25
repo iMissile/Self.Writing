@@ -4622,6 +4622,7 @@ PLEASE NOTE: Refer to your license terms for Microsoft SQL Server 2016 Enterpris
 - [A List of ggplot2 extensions](https://www.ggplot2-exts.org/). This site tracks and lists ggplot2 extensions developed by R users in the community. The aim is to make it easy for R users to find developed extensions.
 - [Recreating the vaccination heatmaps in R](https://benjaminlmoore.wordpress.com/2015/04/09/recreating-the-vaccination-heatmaps-in-r/)
 - [Making Faceted Heatmaps with ggplot2](https://rud.is/b/2016/02/14/making-faceted-heatmaps-with-ggplot2/)
+	[Новая ссылка](https://rud.is/projects/facetedheatmaps.html).
 
 ## DS
 - [Статистика ожиданий SQL Server'а или пожалуйста, скажите мне, где болит](https://habrahabr.ru/post/216309/#comment_8863343)

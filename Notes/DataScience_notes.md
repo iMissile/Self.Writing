@@ -1628,6 +1628,20 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
+# 15.05.2025
+## R
+- Интересная интерференция `box` & `targets`: [Rprofile, callr, and setting options – compatibility with box #936 {Closed}](https://github.com/ropensci/targets/discussions/936)
+- COOL! имбовый мануал по сверткам. [Intuitive understanding of 1D, 2D, and 3D convolutions in convolutional neural networks {closed}](https://stackoverflow.com/questions/42883547/intuitive-understanding-of-1d-2d-and-3d-convolutions-in-convolutional-neural-n)
+
+## R shared memory
+- [SharedObject](https://bioconductor.org/packages/release/bioc/html/SharedObject.html). Sharing R objects across multiple R processes without memory duplication
+- [ff: Memory-Efficient Storage of Large Data on Disk and Fast Access Functions](https://cran.r-project.org/web/packages/ff/index.html)
+- [Shared memory parallel programming in R](https://apiacoa.org/teaching/big-data/R-smp.en.html)
+- [Shared memory in parallel foreach in R](https://stackoverflow.com/questions/31575585/shared-memory-in-parallel-foreach-in-r)
+
+## R ML
+- [DoubleML](https://docs.doubleml.org/stable/index.html). The Python and R package DoubleML provide an implementation of the double / debiased machine learning framework of Chernozhukov et al. (2018). 
+
 # 05.05.2025
 ## Нештатная установка R
 - Используем rig для установки новых версий R
