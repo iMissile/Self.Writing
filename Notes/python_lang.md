@@ -376,6 +376,10 @@ This is an important distinction. When you install conda, it brings its own vers
 And as always, make sure to save the installation commands with version-locked dependencies for both conda and pip for every project where they are used.
 
 
+
+# 27.05.2025
+- [Meaning of `@classmethod` and `@staticmethod` for beginner](https://stackoverflow.com/questions/12179271/meaning-of-classmethod-and-staticmethod-for-beginner)
+
 # 25.04.2025
 - [Inspect](https://inspect.aisi.org.uk/). An open-source framework for large language model evaluations
 - COOL! [How to Work With Polars LazyFrames](https://realpython.com/polars-lazyframe/)
