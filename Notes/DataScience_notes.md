@@ -271,6 +271,7 @@ by Christopher M. Bishop (Author), Hugh Bishop (Author)
 - [Large Language Model tools for R](https://luisdva.github.io/llmsr-book/)
 
 - [Modern Deep Learning for Tabular Data. Novel Approaches to Common Modeling Problems](https://link.springer.com/book/10.1007/978-1-4842-8692-0)
+- [Introduction to Robotics and Perception](https://www.roboticsbook.org/intro.html)
 
 
 # Articles
@@ -1627,6 +1628,17 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - RJ-2023-090 [Computer Algebra in R Bridges a Gap Between Symbolic Mathematics and Data in the Teaching of Statistics and Data Science](https://journal.r-project.org/articles/RJ-2023-090/)
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
+
+# 30.05.2025
+- Запускаем тесты РЭКС
+```r
+rhino::test_r()
+testthat::test_file(fs::path("tests", "testthat", "test_xl_parser.R"))
+# https://jakubsob.github.io/blog/how-to-use-tests-to-develop-shiny-modules/
+testthat::snapshot_accept('xl_parser')
+testthat::snapshot_review('xl_parser')
+```
+
 
 # 15.05.2025
 ## R
