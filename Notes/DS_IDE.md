@@ -69,6 +69,9 @@ You can actually customize your own shortcut to send selection to the debug cons
 	- Add the Encoding Command `[Console]::OutputEncoding = [System.Text.Encoding]::UTF8`
 	- Save and Restart
 
+## Themes
+- Решаем проблему невидимости курсора мыши при светлых темах. Путем настройки windows. [How to fix mouse cursor disappearing in Visual Studio & Visual Studio Code](https://camerondwyer.com/2017/09/19/how-to-fix-mouse-cursor-disappearing-in-visual-studio-visual-studio-code/)
+
 ## Remote sesson
 - [Remote Development using SSH](https://code.visualstudio.com/docs/remote/ssh)
 - [Remote - SSH. Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)

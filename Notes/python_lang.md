@@ -334,6 +334,10 @@ shape: (1, 5)
 - [Polars & Multiprocessing](https://docs.pola.rs/user-guide/misc/multiprocessing/)
 - DeprecationWarning: `is_in` with a collection of the same datatype is ambiguous and deprecated.
   Please use `implode` to return to previous behavior. [Tracking issue for fixing problematic collection-based functions #22149 {Closed}](https://github.com/pola-rs/polars/issues/22149)
+  - [Conversion between Polars -> Patito DataFrames and back #10 {Open}](https://github.com/JakobGM/patito/issues/10)
+  	- `to_polars()`, но пока еще не выкатили. [Add patito.DataFrame.to_polars #133 {Open}](https://github.com/JakobGM/patito/pull/133)
+  	Зато реализовали в виде функции `as_polars`
+- [Polars - Select columns not exist with no error](https://stackoverflow.com/questions/74502898/polars-select-columns-not-exist-with-no-error)
 
 ## Polars caching
 - [How does Polars auto-cache mechanism work on LazyFrames?](https://stackoverflow.com/questions/77561774/how-does-polars-auto-cache-mechanism-work-on-lazyframes)
@@ -376,6 +380,8 @@ This is an important distinction. When you install conda, it brings its own vers
 And as always, make sure to save the installation commands with version-locked dependencies for both conda and pip for every project where they are used.
 
 
+# 05.06.2025
+- [Automatically merging multiple Pydantic models with overlapping fields](https://stackoverflow.com/questions/76421664/automatically-merging-multiple-pydantic-models-with-overlapping-fields)
 
 # 29.05.2025
 - [Meaning of `@classmethod` and `@staticmethod` for beginner](https://stackoverflow.com/questions/12179271/meaning-of-classmethod-and-staticmethod-for-beginner)

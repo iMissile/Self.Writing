@@ -1629,6 +1629,15 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [caracas: Computer Algebra](https://cran.r-project.org/web/packages/caracas/index.html). Computer algebra via the 'SymPy' library (<https://www.sympy.org/>).
 - [DEEP LEARNING FOR SYMBOLIC MATHEMATICS](https://arxiv.org/pdf/1912.01412)
 
+
+# Monolith
+- [What is a Modular Monolith?](https://newsletter.techworld-with-milan.com/p/what-is-a-modular-monolith). Microservices are dead, monoliths are the future!
+- [Stack Overflow Architecture](https://newsletter.techworld-with-milan.com/p/stack-overflow-architecture) is not what you think it is.
+- [Monolith First](https://martinfowler.com/bliki/MonolithFirst.html)
+
+# Process Mining
+- [Process Mining Workshops](https://link.springer.com/search?query=Process+Mining+Workshops)
+
 # 30.05.2025
 - Запускаем тесты РЭКС
 ```r
