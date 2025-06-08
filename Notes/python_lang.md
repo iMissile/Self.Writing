@@ -338,6 +338,9 @@ shape: (1, 5)
   	- `to_polars()`, но пока еще не выкатили. [Add patito.DataFrame.to_polars #133 {Open}](https://github.com/JakobGM/patito/pull/133)
   	Зато реализовали в виде функции `as_polars`
 - [Polars - Select columns not exist with no error](https://stackoverflow.com/questions/74502898/polars-select-columns-not-exist-with-no-error)
+- [python-polars split string column into many columns by delimiter](https://stackoverflow.com/questions/73699500/python-polars-split-string-column-into-many-columns-by-delimiter)
+You can convert to a struct datatype: `.list.to_struct()`
+
 
 ## Polars caching
 - [How does Polars auto-cache mechanism work on LazyFrames?](https://stackoverflow.com/questions/77561774/how-does-polars-auto-cache-mechanism-work-on-lazyframes)

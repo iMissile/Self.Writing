@@ -1638,6 +1638,11 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 # Process Mining
 - [Process Mining Workshops](https://link.springer.com/search?query=Process+Mining+Workshops)
 
+# 15.06.2025
+## R
+- COOL! [Why do we use arrow as an assignment operator?](https://colinfay.me/r-assignment/) by Colin FAY
+- [Data types in Arrow and R](https://blog.djnavarro.net/posts/2022-03-04_data-types-in-arrow-and-r/)
+
 # 30.05.2025
 - Запускаем тесты РЭКС
 ```r
