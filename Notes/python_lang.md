@@ -260,18 +260,6 @@ df.select([
 - [How to increase values of polars dataframe column by index](https://stackoverflow.com/questions/72352725/how-to-increase-values-of-polars-dataframe-column-by-index)
 - [Enumerate each group](https://stackoverflow.com/questions/74981501/enumerate-each-group). You're looking to `.rank()` your data - in particular - a "dense" ranking.
 - [Polars: assign existing category](https://stackoverflow.com/questions/73699982/polars-assign-existing-category)
-- [Using Patito for DataFrame Validation](https://patito.readthedocs.io/en/latest/tutorial/dataframe-validation.html)
-	- [kolonialno/patito](https://github.com/kolonialno/patito). A data modelling layer built on top of polars and pydantic
-	- [Static Typing with Python](https://typing.readthedocs.io/en/latest/)
-	- В файле [pydantic.py](https://github.com/kolonialno/patito/blob/main/src/patito/pydantic.py) живет описание допустимых типов в модели.
-```
-class tracesSchema(pt.Model):
-    pattern: str = pt.Field(dtype = pl.Categorical)
-    n: int
-    cases: List[str] = pt.Field(dtype = pl.List)
-    cum_n: int
-    cum_ratio: float
-```
 - [The great Python dataframe showdown, part 3: Lightning-fast queries with Polars](https://www.orchest.io/blog/the-great-python-dataframe-showdown-part-3-lightning-fast-queries-with-polars)
 - Polars [Missing data](https://pola-rs.github.io/polars-book/user-guide/howcani/missing_data.html)
 - [Idiomatic replacement of empty string '' with pl.Null (null) in polars](https://stackoverflow.com/questions/72292048/idiomatic-replacement-of-empty-string-with-pl-null-null-in-polars)
@@ -314,6 +302,29 @@ pl.Object
 - Categorical
 	- COOL! [In polars, can I create a categorical type with levels myself?](https://stackoverflow.com/questions/70934789/in-polars-can-i-create-a-categorical-type-with-levels-myself)
 	- [`polars.Expr.to_physical`](https://pola-rs.github.io/polars/py-polars/html/reference/expressions/api/polars.Expr.to_physical.html#polars.Expr.to_physical)
+- [Why 20.5_f64.round() do not eq with np.round(20.5)?](https://users.rust-lang.org/t/why-20-5-f64-round-do-not-eq-with-np-round-20-5/83966)
+- [Polars & Multiprocessing](https://docs.pola.rs/user-guide/misc/multiprocessing/)
+- [Polars - Select columns not exist with no error](https://stackoverflow.com/questions/74502898/polars-select-columns-not-exist-with-no-error)
+- [python-polars split string column into many columns by delimiter](https://stackoverflow.com/questions/73699500/python-polars-split-string-column-into-many-columns-by-delimiter)
+You can convert to a struct datatype: `.list.to_struct()`
+- How to create polars dataframe with 0 rows? [`polars.DataFrame.clear`](https://docs.pola.rs/api/python/stable/reference/dataframe/api/polars.DataFrame.clear.html#polars.DataFrame.clear)
+Create an empty (n=0) or n-row null-filled (n>0) copy of the DataFrame.
+Или Create empty DataFrame with the schema
+`df = pl.DataFrame(schema=schema)`
+
+## Polars validation
+- [Using Patito for DataFrame Validation](https://patito.readthedocs.io/en/latest/tutorial/dataframe-validation.html)
+	- [kolonialno/patito](https://github.com/kolonialno/patito). A data modelling layer built on top of polars and pydantic
+	- [Static Typing with Python](https://typing.readthedocs.io/en/latest/)
+	- В файле [pydantic.py](https://github.com/kolonialno/patito/blob/main/src/patito/pydantic.py) живет описание допустимых типов в модели.
+```
+class tracesSchema(pt.Model):
+    pattern: str = pt.Field(dtype = pl.Categorical)
+    n: int
+    cases: List[str] = pt.Field(dtype = pl.List)
+    cum_n: int
+    cum_ratio: float
+```
 - Решил проблему сломанной валидации данных `polars` средствами `patito`.
 ```
 shape: (1, 5)
@@ -330,16 +341,14 @@ shape: (1, 5)
 Меняем на 
 `cases: List[Literal['a']] = pt.Field(dtype = pl.List(pl.Categorical))`
 Решение нашел путем детального изучения исходников `tests\test_model.py`
-- [Why 20.5_f64.round() do not eq with np.round(20.5)?](https://users.rust-lang.org/t/why-20-5-f64-round-do-not-eq-with-np-round-20-5/83966)
-- [Polars & Multiprocessing](https://docs.pola.rs/user-guide/misc/multiprocessing/)
 - DeprecationWarning: `is_in` with a collection of the same datatype is ambiguous and deprecated.
   Please use `implode` to return to previous behavior. [Tracking issue for fixing problematic collection-based functions #22149 {Closed}](https://github.com/pola-rs/polars/issues/22149)
   - [Conversion between Polars -> Patito DataFrames and back #10 {Open}](https://github.com/JakobGM/patito/issues/10)
   	- `to_polars()`, но пока еще не выкатили. [Add patito.DataFrame.to_polars #133 {Open}](https://github.com/JakobGM/patito/pull/133)
   	Зато реализовали в виде функции `as_polars`
-- [Polars - Select columns not exist with no error](https://stackoverflow.com/questions/74502898/polars-select-columns-not-exist-with-no-error)
-- [python-polars split string column into many columns by delimiter](https://stackoverflow.com/questions/73699500/python-polars-split-string-column-into-many-columns-by-delimiter)
-You can convert to a struct datatype: `.list.to_struct()`
+
+- COOL! [Dataframely](https://dataframely.readthedocs.io/en/latest/) is a Python package to validate the schema and content of polars data frames. Its purpose is to make data pipelines more robust by ensuring that data meet expectations and more readable by adding schema information to data frame type hints.
+- [dataframely — A declarative, 🐻‍❄️-native data frame validation library](https://tech.quantco.com/blog/dataframely)
 
 
 ## Polars caching

@@ -891,6 +891,7 @@ notepad $PROFILE
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 oh-my-posh init pwsh | Invoke-Expression
 ```
+	- PowerShell tricks. [about_Character_Encoding](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_character_encoding?view=powershell-7.5&viewFallbackFrom=powershell-7.2)
 - Устанавливаем [Windows Terminal](https://github.com/microsoft/terminal/releases) и для него шрифт `Cascadia Code`. Можно ставить и с [MS Store Preview](https://apps.microsoft.com/search?query=windows+terminal&hl=ru-ru&gl=RU).
 	- [Update code font from Consolas to Cascadia Code with ligature](https://weblogs.asp.net/dixin/update-code-font-from-consolas-to-cascadia-code-with-ligature)
 	- [microsoft/cascadia-code](https://github.com/microsoft/cascadia-code)

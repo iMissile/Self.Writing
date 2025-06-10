@@ -269,6 +269,7 @@ Authors: Nic Crane, Jonathan Keane, and Neal Richardson
 - [Deep Learning: Foundations and Concepts 1st ed. 2024 Edition](https://www.amazon.com/Deep-Learning-Foundations-Christopher-Bishop/dp/3031454677/)
 by Christopher M. Bishop (Author), Hugh Bishop (Author)
 - [Large Language Model tools for R](https://luisdva.github.io/llmsr-book/)
+- COOL! [Компьютерный анализ текста](https://locusclassicus.github.io/text_analysis_2024/)
 
 - [Modern Deep Learning for Tabular Data. Novel Approaches to Common Modeling Problems](https://link.springer.com/book/10.1007/978-1-4842-8692-0)
 - [Introduction to Robotics and Perception](https://www.roboticsbook.org/intro.html)
