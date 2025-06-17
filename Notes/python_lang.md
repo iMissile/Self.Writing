@@ -156,6 +156,23 @@ Understanding memory management is a superpower that will help you design memory
 	- `python -m cProfile -s cumulative some-code.py`
 - [How should I understand the output of dis.dis?](https://stackoverflow.com/questions/12673074/how-should-i-understand-the-output-of-dis-dis/47529318#47529318). I would like to understand how to use dis (the dissembler of Python bytecode). Specifically, how should one interpret the output of dis.dis (or dis.disassemble)?
 
+- [Top 7 Python Profiling Tools for Performance](https://daily.dev/blog/top-7-python-profiling-tools-for-performance), Feb 7, 2025
+- Austin
+	- [Austin extension for VS Code](https://marketplace.visualstudio.com/items?itemName=p403n1x87.austin-vscode)
+- [Welcome to pytest-benchmark’s documentation!](https://pytest-benchmark.readthedocs.io/en/stable/)
+
+- [pyinstrument](https://github.com/joerick/pyinstrument) Call stack profiler for Python. Shows you why your code is slow!
+	`pyinstrument -m pytest test.py`
+- [pytest-profiling](https://pypi.org/project/pytest-profiling/?)
+
+- `line_profiler`
+```
+pip install line_profiler
+kernprof -l -v some-code.py  # Это может занять некоторое время...
+kernprof -l -v python -m pytest tests/test_ks_3_parser.py
+Wrote profile results to some-code.py.lprof
+```
+
 # Conferences
 - [EuroPython Conference](https://www.youtube.com/c/EuroPythonConference/playlists)
 
@@ -311,6 +328,7 @@ You can convert to a struct datatype: `.list.to_struct()`
 Create an empty (n=0) or n-row null-filled (n>0) copy of the DataFrame.
 Или Create empty DataFrame with the schema
 `df = pl.DataFrame(schema=schema)`
+- [evaluate Expr outside DataFrame context #12914 {Closed}](https://github.com/pola-rs/polars/issues/12914). There is the pl.select() helper.
 
 ## Polars validation
 - [Using Patito for DataFrame Validation](https://patito.readthedocs.io/en/latest/tutorial/dataframe-validation.html)
