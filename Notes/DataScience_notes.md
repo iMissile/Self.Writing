@@ -261,6 +261,9 @@ Authors: Nic Crane, Jonathan Keane, and Neal Richardson
 - [The openxlsx2 book](https://janmarvin.github.io/ox2-book/)
 - [ggalign: Bridging the Grammar of Graphics and Complex layout](https://yunuuuu.github.io/ggalign-book/)
 
+- [Learning analytics methods and tutorials](https://lamethods.github.io/book1/). A practical guide using R
+- [Advanced learning analytics methods](https://lamethods.github.io/book2/). AI, Precision and Complexity
+
 
 ## e-books ML
 - [Deep Learning and Scientific Computing with R torch](https://skeydan.github.io/Deep-Learning-and-Scientific-Computing-with-R-torch/) by Sigrid Keydana
@@ -475,6 +478,7 @@ Web Scraper is a company specializing in data extraction from web pages. We offe
 Powering next-generation applications from Machine Learning to 3D graphics.](https://www.paperspace.com/core)
 - [Loginom как альтернатива зарубежному ПО](https://loginom.ru/blog/loginom-replacement)
 - [«Индекс дятла». Телеграм-канал, который приносит клиентов](https://productgames.ru/tg)
+- [Pitfalls of premature closure with LLM assisted coding](https://www.shayon.dev/post/2025/164/pitfalls-of-premature-closure-with-llm-assisted-coding/)
 
 
 ## Amazon EC2
@@ -1639,6 +1643,11 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 # Process Mining
 - [Process Mining Workshops](https://link.springer.com/search?query=Process+Mining+Workshops)
 
+# Digital Twin
+- [Цифровые двойники: физика ведёт математику, математика ведёт компьютерную науку](https://ailev.livejournal.com/1549559.html)
+- [Modelica](https://modelica.org/). Model complex systems more efficiently.
+
+
 # 15.06.2025
 ## R
 - COOL! [Why do we use arrow as an assignment operator?](https://colinfay.me/r-assignment/) by Colin FAY
@@ -1659,6 +1668,7 @@ testthat::snapshot_review('xl_parser')
 ## R
 - Интересная интерференция `box` & `targets`: [Rprofile, callr, and setting options – compatibility with box #936 {Closed}](https://github.com/ropensci/targets/discussions/936)
 - COOL! имбовый мануал по сверткам. [Intuitive understanding of 1D, 2D, and 3D convolutions in convolutional neural networks {closed}](https://stackoverflow.com/questions/42883547/intuitive-understanding-of-1d-2d-and-3d-convolutions-in-convolutional-neural-n)
+- COOL! по R <—> Python воспроизводимости стат. тестов см. https://psiaims.github.io/CAMIS/
 
 ## R shared memory
 - [SharedObject](https://bioconductor.org/packages/release/bioc/html/SharedObject.html). Sharing R objects across multiple R processes without memory duplication
