@@ -1652,6 +1652,7 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 ## R
 - COOL! [Why do we use arrow as an assignment operator?](https://colinfay.me/r-assignment/) by Colin FAY
 - [Data types in Arrow and R](https://blog.djnavarro.net/posts/2022-03-04_data-types-in-arrow-and-r/)
+- COOL! [Manim](https://www.manim.community/). A community maintained Python library for creating mathematical animations.
 
 # 30.05.2025
 - Запускаем тесты РЭКС

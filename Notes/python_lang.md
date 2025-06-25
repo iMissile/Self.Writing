@@ -149,6 +149,7 @@ Understanding memory management is a superpower that will help you design memory
 	- `pyperf`
 	- `hyperfine`
 - [The Python Performance Benchmark Suite](https://pyperformance.readthedocs.io/)
+	- [Python Benchmarking With pyperf](https://superfastpython.com/python-benchmark-pyperf/)
 - [Scalene](https://github.com/plasma-umass/scalene): a high-performance, high-precision CPU, GPU, and memory profiler for Python with AI-powered optimization proposals
 	- [Scalene - CPU and Memory Profiler for Python Code](https://coderzcolumn.com/tutorials/python/scalene-cpu-and-memory-profiler-for-python-code)
 - [cProfile – How to profile your python code](https://www.machinelearningplus.com/python/cprofile-how-to-profile-your-python-code/)
@@ -159,13 +160,18 @@ Understanding memory management is a superpower that will help you design memory
 - [Top 7 Python Profiling Tools for Performance](https://daily.dev/blog/top-7-python-profiling-tools-for-performance), Feb 7, 2025
 - Austin
 	- [Austin extension for VS Code](https://marketplace.visualstudio.com/items?itemName=p403n1x87.austin-vscode)
+You can run the same command that VS Code is trying to run from a terminal, e.g.
+```
+sudo austin -i 100 -o /path/to/austin/output.austin python -m pytest
+```
+and then open the `/path/to/austin/output.austin` from VS Code by clicking the OPEN button in the Flame Graph panel (or using the `Cmd + Shift + A` shortcut). This is equivalent to running the task.
 - [Welcome to pytest-benchmark’s documentation!](https://pytest-benchmark.readthedocs.io/en/stable/)
 
 - [pyinstrument](https://github.com/joerick/pyinstrument) Call stack profiler for Python. Shows you why your code is slow!
 	`pyinstrument -m pytest test.py`
 - [pytest-profiling](https://pypi.org/project/pytest-profiling/?)
 
-- `line_profiler`
+- `line_profiler`, добавляем к функции декоратор `@profile`
 ```
 pip install line_profiler
 kernprof -l -v some-code.py  # Это может занять некоторое время...
@@ -409,6 +415,12 @@ This is an important distinction. When you install conda, it brings its own vers
 
 And as always, make sure to save the installation commands with version-locked dependencies for both conda and pip for every project where they are used.
 
+
+# 25.06.2025
+## Python & Excel
+- [Fast xlsx parsing with Python](https://www.adimian.com/blog/fast-xlsx-parsing-with-python/), 4 September 2019. XML + XSLT
+- [Processing Excel XLSX files with Python](https://simonduff.net/processing_excel_xlsx_files_with_python/)
+Using Python’s ElementTree XML Parser, its possible to quickly parse data within a Microsoft Excel .XLSX file.
 
 # 05.06.2025
 - [Automatically merging multiple Pydantic models with overlapping fields](https://stackoverflow.com/questions/76421664/automatically-merging-multiple-pydantic-models-with-overlapping-fields)
