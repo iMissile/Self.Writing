@@ -415,6 +415,10 @@ This is an important distinction. When you install conda, it brings its own vers
 
 And as always, make sure to save the installation commands with version-locked dependencies for both conda and pip for every project where they are used.
 
+# Python & DS
+- COOL! [Manim](https://www.manim.community/). A community maintained Python library for creating mathematical animations.
+- COOL! [Marimo](https://marimo.io/) is an open-source reactive notebook for Python — reproducible, Git-friendly, AI-native, SQL built-in, executable as a script, shareable as an app.
+
 
 # 25.06.2025
 ## Python & Excel
