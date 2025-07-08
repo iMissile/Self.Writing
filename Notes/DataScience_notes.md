@@ -619,7 +619,7 @@ Trelliscope is a visualization approach based on the idea of “small multiples�
 - [Mining of Massive Datasets](http://www.mmds.org/)
 - [Locality Sensitive Hashing in R](https://github.com/dselivanov/LSHR)
 - [Locality-sensitive hashing (LSH[1]) — вероятностный метод понижения размерности многомерных данных.](https://ru.wikipedia.org/wiki/Locality-sensitive_hashing)
-- [Locality Sensitive Hashing (LSH): The Illustrated Guide](https://www.pinecone.io/learn/locality-sensitive-hashing/)
+- COOL! [Locality Sensitive Hashing (LSH): The Illustrated Guide](https://www.pinecone.io/learn/series/faiss/locality-sensitive-hashing/)
 - [Поиск похожих документов с MinHash + LHS](https://habr.com/ru/post/250673/)
 - [Jaccard index](https://en.m.wikipedia.org/wiki/Jaccard_index)
 - [Locality Sensitive Hashing in R](https://github.com/dselivanov/LSHR)
