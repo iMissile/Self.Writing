@@ -555,6 +555,9 @@ Tidying and splitting model summaries for inline reporting
 
 # ==================================================
 
+# 18.07.2025
+- [Echarts4r in programmatically created tabsets in quarto not rendering?](https://stackoverflow.com/questions/78478331/echarts4r-in-programmatically-created-tabsets-in-quarto-not-rendering)
+
 # 24.05.2025
 - [flextable 0.9.8 makes corrupted docx documents when used with quarto #685 {Open}](https://github.com/davidgohel/flextable/issues/685)
 

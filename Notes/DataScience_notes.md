@@ -260,6 +260,7 @@ Authors: Nic Crane, Jonathan Keane, and Neal Richardson
 - [Model-Based Clustering, Classification, and Density Estimation Using mclust in R](https://mclust-org.github.io/mclust-book/)
 - [The openxlsx2 book](https://janmarvin.github.io/ox2-book/)
 - [ggalign: Bridging the Grammar of Graphics and Complex layout](https://yunuuuu.github.io/ggalign-book/)
+- [DevOps for Data Science](https://do4ds.com/) by Alex K Gold
 
 - [Learning analytics methods and tutorials](https://lamethods.github.io/book1/). A practical guide using R
 - [Advanced learning analytics methods](https://lamethods.github.io/book2/). AI, Precision and Complexity
@@ -1647,6 +1648,16 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [Цифровые двойники: физика ведёт математику, математика ведёт компьютерную науку](https://ailev.livejournal.com/1549559.html)
 - [Modelica](https://modelica.org/). Model complex systems more efficiently.
 
+# Tools
+- [SmoothCSV](https://smoothcsv.com/) is a powerful and intuitive tool for editing CSV files.
+- [Прощайте, базы данных, да здравствуют векторные базы данных](https://habr.com/ru/articles/791930/)
+
+
+# 15.07.2025
+## R
+- [`summarise()` has grouped output by 'X'. You can override using the `.groups` argument.](https://forum.posit.co/t/summarise-has-grouped-output-by-x-you-can-override-using-the-groups-argument/174520)
+	- [override using .groups argument](https://stackoverflow.com/questions/71914704/override-using-groups-argument)
+- COOL! Slides [Making Project Work Better with R](https://topepo.github.io/2025-ncb-workshop/#/title-slide) by Max Kuhn, E. David Aja, and others
 
 # 15.06.2025
 ## R
@@ -1682,6 +1693,8 @@ testthat::snapshot_review('xl_parser')
 # 05.05.2025
 ## Нештатная установка R
 - Используем rig для установки новых версий R
+	- [A very tidy advent 2022. Day 10: rig](https://mara.quarto.pub/tidy-advent-2022/posts/10-rig.html)
+Install, remove, and configure R versions on your machine with rig: the R installation manager.
 - Переносим библиотеки R на диск, отличный от C, не забываем про renv cache! Увы, назад потом без бубна не откатить!!!
 ```
 Sys.getenv("R_LIBS_USER")  # Путь к библиотеке
