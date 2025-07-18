@@ -420,6 +420,9 @@ And as always, make sure to save the installation commands with version-locked d
 - COOL! [Marimo](https://marimo.io/) is an open-source reactive notebook for Python — reproducible, Git-friendly, AI-native, SQL built-in, executable as a script, shareable as an app.
 
 
+# 10.07.2025
+- [faiss-cpu](https://pypi.org/project/faiss-cpu/). Это вместо `faiss`. A library for efficient similarity search and clustering of dense vectors.
+
 # 25.06.2025
 ## Python & Excel
 - [Fast xlsx parsing with Python](https://www.adimian.com/blog/fast-xlsx-parsing-with-python/), 4 September 2019. XML + XSLT
