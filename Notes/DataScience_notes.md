@@ -1658,6 +1658,10 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [`summarise()` has grouped output by 'X'. You can override using the `.groups` argument.](https://forum.posit.co/t/summarise-has-grouped-output-by-x-you-can-override-using-the-groups-argument/174520)
 	- [override using .groups argument](https://stackoverflow.com/questions/71914704/override-using-groups-argument)
 - COOL! Slides [Making Project Work Better with R](https://topepo.github.io/2025-ncb-workshop/#/title-slide) by Max Kuhn, E. David Aja, and others
+- COOL! Замена Табло
+	- [GWalkR](https://github.com/Kanaries/GWalkR): Your One-Stop R Package for Exploratory Data Analysis with Visualization
+	- [PyGWalker](https://kanaries.net/pygwalker) turns your data into interactive visualization apps with one line of code, and enables you to share your apps with one click.
+	- [Esquisse online](https://dreamrs.shinyapps.io/esquisse/)
 
 # 15.06.2025
 ## R
