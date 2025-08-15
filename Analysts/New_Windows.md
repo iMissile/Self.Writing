@@ -966,6 +966,15 @@ Now the marks are invisible on normal work, but visible on selection only.
 Разрешение на удаленное управление антивирусом включила (галочку поставили) - квадратик стал зеленый ... )))
 добавить программу в список Доверенных программ https://support.kaspersky.com/KFA/21.3/ru-RU/201385.htm и включить исключение Разрешить взаимодействие с интерфейсом Kaspersky Free. 
 
+## Аналоги программ Stardock Fences/Start10
+- [Transform your Windows desktop with Cairo](https://cairoshell.com/)
+	- Проблема с Language Bar. [A workaround before Cairo implement language bar functionality](https://github.com/cairoshell/cairoshell/issues/212#issuecomment-720018859). Тут расписано как можно Windows донастроить. Или You could use third party apps that provide tray icons and advanced switching options like the following https://github.com/iamkarlson/Mahou, переключатель раскладок.
+- [Portals](https://portals-app.com/) Desktop organization.
+- [DesktopFences](https://github.com/limbo666/DesktopFences). An alternative to Stardock Fences. Open Source
+- [NoFences](https://github.com/Twometer/NoFences). Open Source Stardock Fences alternative
+- [Best 7 Stardock Fences Alternatives for Windows Desktop Organization](https://quasa.io/media/best-7-stardock-fences-alternatives-for-windows-desktop-organization)
+
+
 ## Поиск дубликатов изображений в Windows
 - [Find visually similar images for a given image file (on Windows)](https://softwarerecs.stackexchange.com/questions/17046/find-visually-similar-images-for-a-given-image-file-on-windows)
 - [Top 5 Best Duplicate Photo Cleaners For Windows 10](https://yourstory.com/mystory/top-5-duplicate-photo-cleaners-for-windows-10/amp)
@@ -1057,10 +1066,6 @@ If you are using the curl command line tool on Windows, curl will search for a C
 - [PCjs Machines](https://www.pcjs.org/software/pcx86/sys/windows/3.10/). Home of the original IBM PC emulator for browsers.
 	- Запустил в браузере 3.1 и поставил Графер: https://www.pcjs.org/software/pcx86/sys/windows/3.10/
 - [Floppy disk imaging - what program to use?](https://www.vogons.org/viewtopic.php?t=74270)
-
-# Замена Stardock
-- [Transform your Windows desktop with Cairo](https://cairoshell.com/)
-- Проблема с Language Bar. [A workaround before Cairo implement language bar functionality](https://github.com/cairoshell/cairoshell/issues/212#issuecomment-720018859). Тут расписано как можно Windows донастроить. Или You could use third party apps that provide tray icons and advanced switching options like the following https://github.com/iamkarlson/Mahou, переключатель раскладок.
 
 # Загрузка видеозаписей конференций
 - [M3U8 Downloader](https://m3u8.dev/)

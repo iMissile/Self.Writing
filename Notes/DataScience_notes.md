@@ -1392,6 +1392,12 @@ This is where we will store all of the materials and links for rstudio::conf 202
 ## Rconf 2017
 - [Конспект докладов](https://tazinho.github.io/rstudio_conf_notes.html)
 
+## UseR! 2025
+- [Visualising Uncertainty with ggdibbler](https://harriet-mason.github.io/talk_useR-2025/#/title-slide) by Harriet Mason, Dianne Cook, Sarah Goodwin, Susan Vanderplas
+Monash University, Australia
+- [Adding models to tidyclust](https://kbodwin.github.io/Talks-and-Presentations/UseR_2025/slides.html#/title-slide) by Kelly Bodwin, California Polytechnic State University
+- [Sparsity support in tidymodels](https://emilhvitfeldt.github.io/talk-user-sparsity/) (faster and less memory hungry models) by Emil Hvitfeldt
+
 ## UseR! 2024
 - [Supporting material for useR! 2024 presentations](https://github.com/gorinsimon/user2024-talks-files)
 	- [Reproducible data science with WebAssembly and webR](https://reproducible-data-science-wasm-use-r.netlify.app/#/title-slide) by George Stagg, Posit, PBC
@@ -1399,6 +1405,7 @@ This is where we will store all of the materials and links for rstudio::conf 202
 ## UseR! 2022
 - [Conference Program Schedule](https://user2022.r-project.org/program/overview/)
 - [Improvements in text preprocessing using textrecipes](https://emilhvitfeldt.github.io/useR2022-textrecipes/#/section)
+- [Generating interesting high-dimensional data structures](https://jayani-user2025.netlify.app/#/title-slide) by Jayani P. G. Lakshika
 
 ## UseR! 2021
 - [Slides for my regular talk on the "R Developer's Guide" at the '1A - Community and Outreach 1' session of the useR! 2021 Conference.](https://github.com/SaranjeetKaur/useR2021_Slides_Regular_Talk)
@@ -1653,6 +1660,18 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [Прощайте, базы данных, да здравствуют векторные базы данных](https://habr.com/ru/articles/791930/)
 
 
+# 14.08.2025
+## R
+- [Introducing sfhotspot, a package for identifying hotspots](https://lesscrime.info/post/sfhotspot-1-0-0/)
+- Slides. [Web APIs for useRs. Getting data from websites, databases, and LLMs](https://dru.quarto.pub/web-apis/#/section) by Umair Durrani (Data Scientist at Presage Group)
+- Slides. [Don’t be dense! Embracing sparsity in tidymodels](https://emilhvitfeldt.github.io/talk-slc-sparsity/#/section) by Emil Hvitfeldt
+- [Improved sparsity support in tidymodels](https://www.tidyverse.org/blog/2025/03/tidymodels-sparsity/)
+- [Announcing Positron, a new Data Science IDE](https://posit.co/blog/positron-product-announcement-aug-2025/)
+
+## A/B
+- [R Package for Montgomery's Design and Analysis of Experiments 10th Ed.](https://github.com/ehassler/MontgomeryDAE)
+- [Миф №3: Ненормальное распределение требует ненормальных решений | Матвей Славенко](https://www.youtube.com/watch?v=ASjiMpP4nT0)
+
 # 15.07.2025
 ## R
 - [`summarise()` has grouped output by 'X'. You can override using the `.groups` argument.](https://forum.posit.co/t/summarise-has-grouped-output-by-x-you-can-override-using-the-groups-argument/174520)
@@ -1740,6 +1759,7 @@ d:/R/user/win-library/%v%
 File Upload widget with multiple file selection, drag&drop support, progress bars, validation and preview images, audio and video for jQuery.
 - COOL! [Getting Started in R: Tinyverse 2nd Edition](https://eddelbuettel.github.io/gsir-te/Getting-Started-in-R-2e.pdf). Saghir Bashir and Dirk Eddelbuettel
 - [R Dplyr vs. DuckDB - How to Enhance Your Data Processing Pipelines with R DuckDB](https://www.appsilon.com/post/r-dplyr-vs-duckdb)
+- [{duckdb} or {duckplyr}? DuckDB and the R ecosystem](https://josiahparry.com/posts/2024-05-24-duckdb-and-r)
 - COOL! [Sensitivity to C math library and mingw-w64 v12](https://blog.r-project.org/2025/04/24/sensitivity-to-c-math-library-and-mingw-w64-v12/index.html) by Tomas Kalibera
 
 # 01.04.2025

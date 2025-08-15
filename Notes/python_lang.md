@@ -821,7 +821,7 @@ Since version 1.7, `SciPy` also includes a built-in bootstrap function `scipy.st
 	1. Download as .py using GUI
 	2. Convert Jupyter Notebook to Python in the command line
 	3. Use jupytext to pair the notebook with the Python script
-	```
+```
 # convert to Python script with light format
 jupytext --to py notebook.ipynb             
 # convert to Python script with percent format

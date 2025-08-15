@@ -47,6 +47,7 @@ For version 1.81.1, the path is `File -> Preferences -> Settings`. Search for wo
 - [Send code selection to debug console #14494 {Closed}](https://github.com/microsoft/vscode-python/issues/14494).
 You can actually customize your own shortcut to send selection to the debug console! Open the command palette (View > Command Palette...) and run "Preferences: Open Keyboard Shortcuts". Then look for "Evaluate in Debug Console" and add a short cut for it. For example, I added `Alt + D` for mine:
 - [How to Remove Trailing Whitespace in VS Code](https://www.codexcafe.com/blog/remove-trailing-whitespace/)
+- Настраиваем удобный дебаг кода в терминале. В shortcuts вешаю `Alt + D` на `Debug: Evaluate in Debug Console`
 
 ## Terminal issues
 Изучая вывод json в консоль VsCode под Windows выяснилось, что консолька PowerShell то работает под кодировкой cp866.
