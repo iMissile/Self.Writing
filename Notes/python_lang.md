@@ -419,6 +419,9 @@ And as always, make sure to save the installation commands with version-locked d
 - COOL! [Manim](https://www.manim.community/). A community maintained Python library for creating mathematical animations.
 - COOL! [Marimo](https://marimo.io/) is an open-source reactive notebook for Python — reproducible, Git-friendly, AI-native, SQL built-in, executable as a script, shareable as an app.
 
+# 24.08.2025
+- [How can I assert lists equality with pytest](https://stackoverflow.com/questions/46914222/how-can-i-assert-lists-equality-with-pytest). В середине очень детальный разбор ситуаций.
+- [Sets in Python](https://realpython.com/python-sets/)
 
 # 10.07.2025
 - [faiss-cpu](https://pypi.org/project/faiss-cpu/). Это вместо `faiss`. A library for efficient similarity search and clustering of dense vectors.

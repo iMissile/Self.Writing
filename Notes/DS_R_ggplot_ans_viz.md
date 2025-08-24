@@ -503,6 +503,8 @@ storeLabeller <- function(string) {
 =======
 - COOL! Как эффективно применить `ggfx` [Better data communication with {ggplot2}, part 2](https://giulia-ruggeri.medium.com/better-data-communication-with-ggplot2-part-2-615a5180ccb)
 - [Introducing {ggflowchart}](https://nrennie.rbind.io/blog/introducing-ggflowchart/)
+- [ggdiagram](https://wjschne.github.io/ggdiagram/index.html). The ggdiagram package takes an object-oriented approach to making diagrams and plots the results using ggplot2.
+My motivation in making ggdiagram was to find a way to approach the functionality of TikZ but with the flexibility and convenience of R.
 
 ## treemap
 - [Treemaps in ggplot2 with treemapify](https://r-charts.com/part-whole/treemapify/)
