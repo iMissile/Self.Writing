@@ -1659,6 +1659,12 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [SmoothCSV](https://smoothcsv.com/) is a powerful and intuitive tool for editing CSV files.
 - [Прощайте, базы данных, да здравствуют векторные базы данных](https://habr.com/ru/articles/791930/)
 
+# 27.08.2025
+## DB
+- Отличные материалы в текстовом и видео формате. [Учебные курсы PostgresPro](https://postgrespro.ru/education/courses)
+
+## LLM
+- [A-Paper-List-of-Awesome-Tabular-LLMs](https://github.com/SpursGoZmy/Awesome-Tabular-LLMs). Сборник статей по теме использования LLM для анализа табличных данных.
 
 # 14.08.2025
 ## R
@@ -5564,6 +5570,7 @@ HedgeDoc (formerly known as CodiMD) is an open-source collaborative markdown edi
 - COOL! [File Transfer Based Publishing for Shiny Apps](https://hosting.analythium.io/file-transfer-based-publishing-for-shiny-apps/)
 
 ## MLOps
+- [Build your open-source MLOps stack](https://mllops.vercel.app/). Explore tools and components of the MLOps stack. Select any tool to find more about it. Add it to build your own stack.
 - [MDNEUZERLING. DATA, R, PYTHON](https://mdneuzerling.com/)
 	- [Deploying R Models with MLflow and Docker](https://mdneuzerling.com/post/deploying-r-models-with-mlflow-and-docker/). MLflow is a platform for the “machine learning cycle”.
 	- [Data Science Workflows](https://mdneuzerling.com/post/data-science-workflows/). I’m obsessed with how to structure a data science project.

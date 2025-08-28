@@ -5,6 +5,7 @@
 - Pandas BlockManager:
 	- [Apache Arrow and the "10 Things I Hate About pandas"](https://wesmckinney.com/blog/apache-arrow-pandas-internals/)
 	- [The one pandas internal I teach all my new colleagues: the BlockManager](https://uwekorn.com/2020/05/24/the-one-pandas-internal.html)
+	- [Internal Structure of Pandas DataFrames](https://dkharazi.github.io/blog/blockmanager), 2020-05-15
 	- [What is BlockManager and why does it exist?](https://github.com/pydata/pandas-design/blob/a0f1d32094f5030cc06ec09c8582b5a7b7798065/source/internal-architecture.rst#what-is-blockmanager-and-why-does-it-exist)
 	- [Block manager rewrite](https://pandas.pydata.org/docs/development/roadmap.html#block-manager-rewrite)
 - Сборка
@@ -418,6 +419,22 @@ And as always, make sure to save the installation commands with version-locked d
 # Python & DS
 - COOL! [Manim](https://www.manim.community/). A community maintained Python library for creating mathematical animations.
 - COOL! [Marimo](https://marimo.io/) is an open-source reactive notebook for Python — reproducible, Git-friendly, AI-native, SQL built-in, executable as a script, shareable as an app.
+
+# Introspection in python
+- [Python. Get structure from a data.frame](https://stackoverflow.com/questions/36482559/python-get-structure-from-a-data-frame)
+- [How do I look inside a Python object?](https://stackoverflow.com/questions/1006169/how-do-i-look-inside-a-python-object)
+- Применительно к pandas dataframe:
+	- смотрим типы колонок `df.dtypes`
+
+# 27.08.2025
+- It is recommended to use Gunicorn in production ( with Uvicorn workers). [Server Workers - Uvicorn with Workers](https://fastapi.tiangolo.com/deployment/server-workers/)
+- Весьма сложная дискуссия. Упоминается еще и PEP-484. [What does "i" represent in Python .pyi extension?](https://stackoverflow.com/questions/41734836/what-does-i-represent-in-python-pyi-extension)
+
+## pandas
+- [Essential basic functionality](https://pandas.pydata.org/pandas-docs/stable/user_guide/basics.html)
+- [Pandas: what does object type really mean?](https://stackoverflow.com/questions/48503192/pandas-what-does-object-type-really-mean):
+`objects` are used to store strings in pandas. @Scott Boston already pointed at the documentation. Quoting from the pandas doc on text-types:
+
 
 # 24.08.2025
 - [How can I assert lists equality with pytest](https://stackoverflow.com/questions/46914222/how-can-i-assert-lists-equality-with-pytest). В середине очень детальный разбор ситуаций.
