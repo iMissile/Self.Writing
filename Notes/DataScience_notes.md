@@ -1659,6 +1659,9 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [SmoothCSV](https://smoothcsv.com/) is a powerful and intuitive tool for editing CSV files.
 - [Прощайте, базы данных, да здравствуют векторные базы данных](https://habr.com/ru/articles/791930/)
 
+# 30.08.2025
+- Крутейшая подборка изменений за месяц. [posit::glimpse() Newsletter – August 2025](https://posit.co/blog/posit-glimpse-newsletter-august-2025/)
+
 # 27.08.2025
 ## DB
 - Отличные материалы в текстовом и видео формате. [Учебные курсы PostgresPro](https://postgrespro.ru/education/courses)
