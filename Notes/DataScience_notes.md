@@ -1659,6 +1659,14 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [SmoothCSV](https://smoothcsv.com/) is a powerful and intuitive tool for editing CSV files.
 - [Прощайте, базы данных, да здравствуют векторные базы данных](https://habr.com/ru/articles/791930/)
 
+
+# 01.09.2025
+## R
+- COOL! [Counting Digits Quickly](https://jcarroll.com.au/2025/06/29/counting-digits-quickly/)
+- [quickr](https://github.com/t-kalinowski/quickr). The goal of quickr is to make your R code run quicker.
+- [ragnar 0.2](https://www.tidyverse.org/blog/2025/08/ragnar-0-2/)
+We’re happy to announce the release of ragnar 0.2, a new R package for building trustworthy Retrieval-Augmented Generation (RAG) workflows.
+
 # 30.08.2025
 - Крутейшая подборка изменений за месяц. [posit::glimpse() Newsletter – August 2025](https://posit.co/blog/posit-glimpse-newsletter-august-2025/)
 

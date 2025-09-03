@@ -1008,6 +1008,9 @@ The list comprehension solution is much more pythonic. `a = [x - 13 for x in a]`
 - [Difference Between Multithreading vs Multiprocessing in Python](https://www.geeksforgeeks.org/difference-between-multithreading-vs-multiprocessing-in-python/)
 - [Асинхронное программирование для начинающих](https://python-scripts.com/async)
 - [Асинхронное программирование в Python](https://tproger.ru/translations/asynchronous-programming-in-python/)
+- [Асинхронный код на Python: синтаксис и особенности](https://thecode.media/asinkhronnyj-kod-na-python-sintaksis-i-osobennosti/)
+- [Асинхронный python без головной боли (часть 1)](https://habr.com/ru/articles/667630/)
+- [Python: как сделать многопоточную программу](https://thecode.media/python-time-2/)
 - [Unicode & Character Encodings in Python: A Painless Guide](https://realpython.com/python-encodings-guide/)
 
 # 06.02.2023
