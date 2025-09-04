@@ -157,20 +157,10 @@ Understanding memory management is a superpower that will help you design memory
 - [Profiling and Analyzing Performance of Python Programs](https://martinheinz.dev/blog/64)
 	- `python -m cProfile -s cumulative some-code.py`
 - [How should I understand the output of dis.dis?](https://stackoverflow.com/questions/12673074/how-should-i-understand-the-output-of-dis-dis/47529318#47529318). I would like to understand how to use dis (the dissembler of Python bytecode). Specifically, how should one interpret the output of dis.dis (or dis.disassemble)?
-
-- [Top 7 Python Profiling Tools for Performance](https://daily.dev/blog/top-7-python-profiling-tools-for-performance), Feb 7, 2025
-- Austin
-	- [Austin extension for VS Code](https://marketplace.visualstudio.com/items?itemName=p403n1x87.austin-vscode)
-You can run the same command that VS Code is trying to run from a terminal, e.g.
-```
-sudo austin -i 100 -o /path/to/austin/output.austin python -m pytest
-```
-and then open the `/path/to/austin/output.austin` from VS Code by clicking the OPEN button in the Flame Graph panel (or using the `Cmd + Shift + A` shortcut). This is equivalent to running the task.
 - [Welcome to pytest-benchmark’s documentation!](https://pytest-benchmark.readthedocs.io/en/stable/)
 
 - [pyinstrument](https://github.com/joerick/pyinstrument) Call stack profiler for Python. Shows you why your code is slow!
 	`pyinstrument -m pytest test.py`
-- [pytest-profiling](https://pypi.org/project/pytest-profiling/?)
 
 - `line_profiler`, добавляем к функции декоратор `@profile`
 ```
@@ -179,6 +169,33 @@ kernprof -l -v some-code.py  # Это может занять некоторое
 kernprof -l -v python -m pytest tests/test_ks_3_parser.py
 Wrote profile results to some-code.py.lprof
 ```
+## Python Profiling Tools for Performance
+- [Top 7 Python Profiling Tools for Performance](https://daily.dev/blog/top-7-python-profiling-tools-for-performance), Feb 7, 2025
+- Austin
+	- [Austin extension for VS Code](https://marketplace.visualstudio.com/items?itemName=p403n1x87.austin-vscode)
+You can run the same command that VS Code is trying to run from a terminal, e.g.
+```
+sudo austin -i 100 -o /path/to/austin/output.austin python -m pytest
+```
+and then open the `/path/to/austin/output.austin` from VS Code by clicking the OPEN button in the Flame Graph panel (or using the `Cmd + Shift + A` shortcut). This is equivalent to running the task.
+- [pytest-profiling](https://pypi.org/project/pytest-profiling/?)
+```
+	# Запуск с профилированием
+	pytest
+	# Запуск без профилирования
+	pytest --no-profile
+	# Запуск с HTML отчетом профилирования
+	pytest --profile --profile-format=html
+	# Запуск с минимальным временем 0.5 секунды
+	pytest --profile --profile-min-duration=0.5
+	# Показать топ-10 функций
+	pytest --profile --element-number=10
+	# Показать топ-50 функций  
+	pytest --profile --element-number=50
+	# Показать топ-5 функций
+	pytest --profile --element-number=5
+```
+
 
 # Conferences
 - [EuroPython Conference](https://www.youtube.com/c/EuroPythonConference/playlists)
