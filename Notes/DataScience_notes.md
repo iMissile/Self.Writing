@@ -1660,6 +1660,47 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [Прощайте, базы данных, да здравствуют векторные базы данных](https://habr.com/ru/articles/791930/)
 
 
+# 10.09.2025
+## R & H2O
+- Заново устанавливаем на Ubuntu
+1. download, install and initialize the H2O package for R.
+```
+options(timeout = 300)
+install.packages("h2o", 
+                 repos = "https://h2o-release.s3.amazonaws.com/h2o/rel-3.46.0/7/R", 
+                 type = "source",
+                 method = "wget")   # or "curl"
+```
+2. Restart H2O with IP binding
+By default, `h2o.init()` binds to localhost (`127.0.0.1`), which is not accessible from other machines.
+```
+library(h2o)
+# Stop current cluster
+h2o.shutdown(prompt = FALSE)
+
+# Start new cluster bound to all interfaces
+h2o.init(ip = "0.0.0.0", port = 54321)
+# or (for security reason 0.0.0.0 can be forbidden)
+h2o.init(ip = "10.0.1.238", port = 54321)
+# OR NOT use h2o.init() — it tries to START a new cluster.
+# Instead, CONNECT to the one you just launched:
+h2o.connect(ip = "10.0.1.238", port = 54321)
+
+h2o.version()  # Should return "3.46.0.7"
+h2o.clusterInfo()
+```
+3. Allow Port in Firewall (Ubuntu)
+```
+sudo ufw allow 54321
+# or if using iptables:
+sudo iptables -A INPUT -p tcp --dport 54321 -j ACCEPT
+```
+4. 
+One-Liner to Start H2O Directly (No Path Needed)
+```
+java -jar $(Rscript -e 'cat(list.files(system.file("java", package = "h2o"), pattern = "h2o.*jar$", full.names = TRUE))') -ip 10.0.1.238 -port 54321
+```
+
 # 01.09.2025
 ## R
 - COOL! [Counting Digits Quickly](https://jcarroll.com.au/2025/06/29/counting-digits-quickly/)
@@ -1669,6 +1710,7 @@ We’re happy to announce the release of ragnar 0.2, a new R package for buildin
 
 # 30.08.2025
 - Крутейшая подборка изменений за месяц. [posit::glimpse() Newsletter – August 2025](https://posit.co/blog/posit-glimpse-newsletter-august-2025/)
+- [Разбираем алгоритм полнотекстового поиска BM25](https://habr.com/ru/articles/860830/)
 
 # 27.08.2025
 ## DB

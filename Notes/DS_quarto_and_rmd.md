@@ -555,6 +555,9 @@ Tidying and splitting model summaries for inline reporting
 
 # ==================================================
 
+# 10.09.2025
+- Весьма детальный разбор по программной генерации quarto кода. [Struggeling with creating code chunks prgramatically (why not cat everthing, and how to include execute options?) {#8560}](https://github.com/quarto-dev/quarto-cli/discussions/8560)
+
 # 18.07.2025
 - [Echarts4r in programmatically created tabsets in quarto not rendering?](https://stackoverflow.com/questions/78478331/echarts4r-in-programmatically-created-tabsets-in-quarto-not-rendering)
 
