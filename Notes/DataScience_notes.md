@@ -1719,6 +1719,12 @@ One-Liner to Start H2O Directly (No Path Needed)
 java -jar $(Rscript -e 'cat(list.files(system.file("java", package = "h2o"), pattern = "h2o.*jar$", full.names = TRUE))') -ip 10.0.1.238 -port 54321
 ```
 
+Под Win читаем документацию, там советуют 
+`install.packages("h2o", type="source", repos=(c("http://h2o-release.s3.amazonaws.com/h2o/latest_stable_R")))`
+Но он скачивает весь дистрибутив.
+Поставим только клиента из скаченного заранее дистрибутива.
+`install.packages("D:/H2O_ML/h2o-3.46.0.7/R/h2o_client_3.46.0.7.tar.gz", repos = NULL, type = "source")`
+
 # 01.09.2025
 ## R
 - COOL! [Counting Digits Quickly](https://jcarroll.com.au/2025/06/29/counting-digits-quickly/)

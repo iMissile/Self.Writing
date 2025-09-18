@@ -44,6 +44,15 @@ You must import the system fonts using the command:
 `font_import(paths = NULL, recursive = TRUE, prompt = TRUE, pattern = NULL)`. If you have a lot of fonts, this solution will take a long time. Use `pattern = "Times"` or something to reduce the number of fonts loaded
 
 # ggplot
+- [ggplot2 4.0.0](https://www.tidyverse.org/blog/2025/09/ggplot2-4-0-0/)
+- [ggplot2 3.5.0](https://www.tidyverse.org/blog/2024/02/ggplot2-3-5-0/). Guide rewrite. Patterns and gradients.
+- [ggplot2 3.5.0: Legends](https://www.tidyverse.org/blog/2024/02/ggplot2-3-5-0-legends/)
+- [ggplot2 3.3.0](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/). Bi-directional geoms and stats!!!
+- [ggplot2 3.3.0. More control over aesthetic evaluation](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/#more-control-over-aesthetic-evaluation)
+- [ggplot2 2.2.0](https://posit.co/blog/ggplot2-2-2-0/), 2016-11-14. Тут много про размещение и настройку осей.
+
+
+
 - COOL! Slides. [Designing ggplots. making clear figures that communicate](https://designing-ggplots.netlify.app/#1)
 - Slides. [Creating Beautiful Data Visualizations in R: a ggplot2 Crash Course](https://sctyner.github.io/talks/Conferences/user2020/#1)
 - Slides. [Plot a lot with ggplot2 to find plots](https://prital.netlify.app/talks/rladies2021/rladies-ggplot2#1)
@@ -69,7 +78,6 @@ ggplot(diamonds, aes(carat)) +
 
 - COOL! [{mdthemes} is on CRAN: markdown powered themes for {ggplot2}](https://thomasadventure.blog/posts/mdthemes-is-on-cran-markdown-powered-themes-for-ggplot2/)
 - [Allow hms object in breaks argument to scale_*_date {closed}](https://github.com/tidyverse/ggplot2/issues/2894)
-- [ggplot2 3.3.0](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/). Bi-directional geoms and stats!!!
 - COOL! [A Summer of RStudio and ggplot2](https://education.rstudio.com/blog/2019/10/a-summer-of-rstudio-and-ggplot2/) by Dewey Dunnington
 - [A List of ggplot2 extensions](https://exts.ggplot2.tidyverse.org/)
 This site tracks and lists ggplot2 extensions developed by R users in the community.
@@ -259,7 +267,6 @@ Make fake data, supporting addresses, person names, dates, times, colors, coordi
 - COOL! [tidyexplain. Tidy Animated Verbs](https://www.garrickadenbuie.com/project/tidyexplain/)
 - [ggdist](https://mjskay.github.io/ggdist/) Visualizations of Distributions and Uncertainty
 - COOL! [A bar chart 5 ways in ggplot2](https://themockup.blog/posts/2020-08-05-a-bar-chart-5-ways/)
-- [ggplot2 3.3.0](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/)
 - COOL! Попытка нарисовать контуры в полярных координатах привела к массе вопросов. Частичные ответы про интерполяцию по сетке: [Contour levels corresponding to variable levels in ggplot2](https://stackoverrun.com/ru/q/9812655)
 ```
    # теперь готовим матрицу для градиентной заливки
@@ -328,10 +335,6 @@ Setting the agg_png() function from the {ragg} package as the graphics device is
 	- [Unable to initiate png device Rnotebook(https://community.rstudio.com/t/unable-to-initiate-png-device-rntebook/3658)
 	- [Error : Unable to start png() device](https://stackoverflow.com/questions/45113597/error-unable-to-start-png-device?)
 	- [Rstudio Global Changes: show chunk output in console via CLI?](https://stackoverflow.com/questions/48110571/rstudio-global-changes-show-chunk-output-in-console-via-cli)
-- [ggplot2 2.2.0](https://posit.co/blog/ggplot2-2-2-0/), 2016-11-14. Тут много про размещение и настройку осей.
-- [ggplot2 3.3.0. More control over aesthetic evaluation](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/#more-control-over-aesthetic-evaluation)
-- [ggplot2 3.5.0](https://www.tidyverse.org/blog/2024/02/ggplot2-3-5-0/). Guide rewrite. Patterns and gradients.
-- [ggplot2 3.5.0: Legends](https://www.tidyverse.org/blog/2024/02/ggplot2-3-5-0-legends/)
 - [Complete themes in ggplot](https://rpubs.com/Mentors_Ubiqum/default_themes)
 - [Get, set, and modify the active theme](https://ggplot2.tidyverse.org/reference/theme_get.html)
 - COOL! [grafify](https://grafify-vignettes.netlify.app/) An R package for easy graphs, ANOVAs and post-hoc comparisons]
