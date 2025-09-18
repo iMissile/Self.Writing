@@ -83,6 +83,7 @@ You can actually customize your own shortcut to send selection to the debug cons
 
 ## Extensions
 - [Data Wrangler](https://code.visualstudio.com/docs/datascience/data-wrangler) is a code-centric data viewing and cleaning tool that is integrated into VS Code and VS Code Jupyter Notebooks.
+- [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager). Easily switch between projects
 
 ## Julia VScode
 - [Julia for VSCode](https://www.julia-vscode.org/)
@@ -95,6 +96,8 @@ You can actually customize your own shortcut to send selection to the debug cons
 ## R VScode & Positron
 - [VS Code Remote Development](https://code.visualstudio.com/docs/remote/remote-overview)
 - [Positron has experimental support for Remote SSH sessions.](https://positron.posit.co/remote-ssh.html)
+- [Settings, Keybindings, and Extensions for Positron](https://christophertkenny.com/posts/2024-06-29-positron-settings/) by Christopher T. Kenny, June 29, 2024
+My initial keybindings, settings, and extensions for Positron, Posit’s new IDE built on “Code - OSS” (aka Visual Studio Code aka VS Code).
 
 ## Kun Ren
 - Base. [R Extension for Visual Studio Code](https://github.com/REditorSupport/vscode-R)

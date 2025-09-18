@@ -443,6 +443,13 @@ And as always, make sure to save the installation commands with version-locked d
 - Применительно к pandas dataframe:
 	- смотрим типы колонок `df.dtypes`
 
+# 16.09.2025
+- [LLM](https://llm.datasette.io/en/stable/index.html) A CLI tool and Python library for interacting with OpenAI, Anthropic’s Claude, Google’s Gemini, Meta’s Llama and dozens of other Large Language Models, both via remote APIs and with models that can be installed and run on your own machine.]
+- [Markitdown - Convert files and MS Office documents to Markdown](https://www.avonture.be/blog/markitdown/)
+- [MarkItDown](https://github.com/microsoft/markitdown). MarkItDown is a lightweight Python utility for converting various files to Markdown for use with LLMs and related text analysis pipelines. 
+- [Deep Dive into Microsoft MarkItDown](https://dev.to/leapcell/deep-dive-into-microsoft-markitdown-4if5)
+- [openize-markitdown-python 25.6.1](https://pypi.org/project/openize-markitdown-python/#description)
+
 # 27.08.2025
 - It is recommended to use Gunicorn in production ( with Uvicorn workers). [Server Workers - Uvicorn with Workers](https://fastapi.tiangolo.com/deployment/server-workers/)
 - Весьма сложная дискуссия. Упоминается еще и PEP-484. [What does "i" represent in Python .pyi extension?](https://stackoverflow.com/questions/41734836/what-does-i-represent-in-python-pyi-extension)

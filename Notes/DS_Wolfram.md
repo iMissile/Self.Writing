@@ -1,5 +1,7 @@
 [A little bit of Mathematica history](https://www.12000.org/my_notes/compare_mathematica/index.htm) by Nasser M. Abbasi
 
+# 15.09.2029
+- [Source code of Savchenko Solutions](https://github.com/savchenko-physics/savchenko-solutions)
 
 # 17.01.2025
 - [Eliminating variables in Mathematica](https://stackoverflow.com/questions/45555605/eliminating-variables-in-mathematica)

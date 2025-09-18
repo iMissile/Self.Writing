@@ -1319,6 +1319,9 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 ## R Ladies 2023
 - [R Ladies Rome](https://github.com/rladies/meetup-presentations_rome). Meetup presentations and material from R-Ladies Rome
 
+## New York R 2025
+- [Measuring LLM Effectiveness](https://topepo.github.io/2025_NYR/#/title-slide) by Max Kuhn and Simon Couch, New York Data Science & AI Conference 
+
 ## New York R 2023
 - David Smith, Principal Cloud Advocate at Microsoft. [Copilot for R, a supporting repository for a presentation](https://github.com/revodavid/copilot-for-r)
 - Mitchell O’Hara-Wild, Nectric. [From forecast to fable, design decisions for statistical software](https://slides.mitchelloharawild.com/nyr2023/)
@@ -1343,6 +1346,9 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 	- [Shark Attack: Clean the Ocean] Shiny app: mdubel.shinyapps.io/shark-attack/ Repo: github.com/mdubel/shark-attack
 	- [Bikemap] Shiny app: 2exp3.shinyapps.io/mapa-ciclista/_w_6e13cdc9/ Repo: github.com/2exp3/bikemapp
 
+## Posit::conf(2025)
+- [Is that LLM feature any good?](https://simonpcouch.github.io/conf-25/#/is-that-llm-feature-any-good) by Simon P. Couch - Posit PBC
+
 ## Posit::conf(2024)
 - [Allen Downey’s keynote at posit::conf(2024)](https://bitsofanalytics.org/posts/dow24pos/dow24pos). Maybe things aren’t as bad as I think. Or, maybe they are. Who knows?]
 	- Slides. [A future of datascience](http://tinyurl.com/dow24pos)
@@ -1362,7 +1368,6 @@ This is where we will store all of the materials and links for posit::conf(2024)
 - [Styling and Templating Quarto Documents](https://emilhvitfeldt.github.io/talk-quarto-theming-positconf/#/section) by Emil hvitfeldt @ posit::conf 2023
 - [{epoxy}. super glue for data-driven reports and Shiny apps](https://slides.garrickadenbuie.com/epoxy-super-glue/) by Garrick Aden-Buie
 	- [Seamless data-driven reporting with {epoxy}](https://slides.garrickadenbuie.com/seamless-epoxy/) by Garrick Aden-Buie, R/Medicine: 2023-06-08
-
 
 ## Rconf 2022
 - [rstudio::conf(2022, "program")](https://github.com/rstudio/rstudio-conf-2022-program)
@@ -1438,6 +1443,13 @@ Monash University, Australia
 
 ## UseR! 2014
 - [UseR 2014 Web Pages](https://github.com/user2014/user2014.github.io)
+
+## Posit Unspecified
+- [From One Notebook to Many Reports: Automating with Quarto](https://cwickham.github.io/one-notebook-many-reports/#/from-one-notebook-to-many-reports-automating-with-quarto) by Charlotte Wickham
+- [</ Flexiblefeature engineering using {recipes} />](https://emilhvitfeldt.github.io/talk-Kaiser-recipes/#/section) by Emil Hvitfeldt
+
+
+
 
 
 ## ISF Conference
@@ -1659,6 +1671,12 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [SmoothCSV](https://smoothcsv.com/) is a powerful and intuitive tool for editing CSV files.
 - [Прощайте, базы данных, да здравствуют векторные базы данных](https://habr.com/ru/articles/791930/)
 
+
+# 15.09.2025
+## R
+- COOL! [Simon P. Couch](https://github.com/simonpcouch). I'm Simon (he/him), an R developer and data scientist. I build tools for data scientists at Posit PBC (formerly RStudio).
+- [I was wrong about tidymodels and LLMs](https://www.simonpcouch.com/blog/2025-08-26-predictive/) by Simon P. Couch.
+Today’s frontier LLMs know much more about tidymodels than I thought.
 
 # 10.09.2025
 ## R & H2O
