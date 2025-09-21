@@ -2,7 +2,16 @@
 ## LLM
 - [How to Install LM Studio - A Graphical Application for Running Large Language Models (LLMs)](https://docs.vultr.com/how-to-install-lm-studio-a-graphical-application-for-running-large-language-models-llms)
 - [How I Install LM Studio 0.3.2 on Ubuntu Studio 24.04 Linux](https://dimensionquest.net/2024/09/how-i-install-lm-studio-0.3.2-on-ubuntu-studio-24.04-linux/)
+- [masgari/ollama-cli](https://github.com/masgari/ollama-cli. A simple CLI tool for interacting with multiple remote Ollama servers, no Ollama installation required)
 
+## Claude
+- [Claude Code Model Configuration](https://support.claude.com/en/articles/11940350-claude-code-model-configuration)
+- [Claude API Pricing Calculator](https://invertedstone.com/calculators/claude-pricing)
+- [Models & pricing. Choosing the right model](https://docs.claude.com/en/docs/about-claude/models/choosing-a-model)
+- [Models overivew](https://docs.claude.com/en/docs/about-claude/models/overview)
+
+## Grok
+- [Models and Pricing](https://docs.x.ai/docs/models)
 
 # 17.09.2025
 ## Antropic API

@@ -1348,6 +1348,9 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 
 ## Posit::conf(2025)
 - [Is that LLM feature any good?](https://simonpcouch.github.io/conf-25/#/is-that-llm-feature-any-good) by Simon P. Couch - Posit PBC
+- Workshop [Programming with LLMs](https://posit-conf-2025.github.io/llm/)
+- [How I got unstuck with Python](https://juliasilge.github.io/get-unstuck-with-python/#/title-slide) by Julia Silge
+- [practical {renv}](https://github.com/shannonpileggi/practical-renv)
 
 ## Posit::conf(2024)
 - [Allen Downey’s keynote at posit::conf(2024)](https://bitsofanalytics.org/posts/dow24pos/dow24pos). Maybe things aren’t as bad as I think. Or, maybe they are. Who knows?]
