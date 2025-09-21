@@ -25,6 +25,7 @@ After creating an account, click your Profile in the top right corner and select
 - [How to get your Claude API key: A step-by-step guide](https://pickaxe.co/post/how-to-get-your-claude-api-key-a-step-by-step-guide)
 
 # 15.09.2025
+## LLM
 - [Structured data extraction from unstructured content using LLM schemas](https://simonw.substack.com/p/structured-data-extraction-from-unstructured)
 - [От слов к векторам: как эмбеддинги помогают моделям понимать нас - Блоги Epsilon Metrics] https://blogs.epsilonmetrics.ru/kak-embeddingi-pomogayut-llm-ponyat-nas/)
 - COOL! [Defeating Nondeterminism in LLM Inference](https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/)
