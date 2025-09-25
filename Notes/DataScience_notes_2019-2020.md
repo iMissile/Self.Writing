@@ -982,11 +982,6 @@ vtree::vtree(filter(events_dt, process == "imTask"), "type activity_id", horiz =
 - [The C4 model for visualising software architecture. Context, Containers, Components and Code](https://c4model.com/)
 	- [Draw.io template/diagram containing C4 Model shapes. Drawio](https://github.com/kaminzo/c4-draw.io)
 	- [Structurizr](https://structurizr.com/) is a collection of tooling to create software architecture diagrams and documentation based upon the C4 model.
-- [Understanding Docker in sketchnotes (4 Part Series)]
-    - [Part 1 – Retrieve & Pull images](https://dev.to/aurelievache/understanding-docker-part-1-retrieve-pull-images-3ccn)
-    - [Part 2 – Tools: Dive](https://dev.to/aurelievache/understanding-docker-part-2-tools-dive-2m7a)
-    - [Part 3 – Run a container](https://dev.to/aurelievache/understanding-docker-part-3-run-a-container-44gp)
-    - [Part 4 – Docker images](https://dev.to/aurelievache/understanding-docker-part-4-docker-images-3eo1)
 - [SciDAVis](http://scidavis.sourceforge.net/index.html) is a free application for Scientific Data Analysis and Visualization.
 - [QtiPlot](https://www.qtiplot.com/) - Data Analysis and Scientific Visualisation
 

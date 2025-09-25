@@ -1,3 +1,8 @@
+# 23.09.2025
+- [LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale](https://arxiv.org/pdf/2208.07339)
+- [Quantization Deep Dive, или Введение в современную квантизацию](https://habr.com/ru/companies/yandex/articles/800945/)
+
+
 # 18.09.2025
 ## LLM
 - [How to Install LM Studio - A Graphical Application for Running Large Language Models (LLMs)](https://docs.vultr.com/how-to-install-lm-studio-a-graphical-application-for-running-large-language-models-llms)

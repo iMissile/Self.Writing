@@ -264,6 +264,7 @@ Authors: Nic Crane, Jonathan Keane, and Neal Richardson
 
 - [Learning analytics methods and tutorials](https://lamethods.github.io/book1/). A practical guide using R
 - [Advanced learning analytics methods](https://lamethods.github.io/book2/). AI, Precision and Complexity
+- COOL! [Slidecrafting](https://slidecrafting-book.com/). Making beautiful slides with reveal.js and Quarto. Author: Emil Hvitfeldt
 
 
 ## e-books ML
@@ -1310,6 +1311,15 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 	- [Defensive & offensive programming](https://programmingduck.com/articles/defensive-programming)
 	- [Defensive Programming - Friend or Foe?](https://interrupt.memfault.com/blog/defensive-and-offensive-programming)
 
+# Docker
+- [Docker изнутри: исчерпывающее руководство. Механизмы контейнеризации + примеры, эксперименты и реализация](https://habr.com/ru/articles/935178/)
+- [Understanding Docker in sketchnotes (4 Part Series)]
+    - [Part 1 – Retrieve & Pull images](https://dev.to/aurelievache/understanding-docker-part-1-retrieve-pull-images-3ccn)
+    - [Part 2 – Tools: Dive](https://dev.to/aurelievache/understanding-docker-part-2-tools-dive-2m7a)
+    - [Part 3 – Run a container](https://dev.to/aurelievache/understanding-docker-part-3-run-a-container-44gp)
+    - [Part 4 – Docker images](https://dev.to/aurelievache/understanding-docker-part-4-docker-images-3eo1)
+
+
 # R conferences
 
 ## R conference
@@ -1955,6 +1965,11 @@ Multiple levels of nested Shiny modules do not work with uiOutput and renderUI. 
 ## shiny & js
 - [Event reference](https://developer.mozilla.org/en-US/docs/Web/Events)
 - [How do I view events fired on an element in Chrome DevTools?](https://stackoverflow.com/questions/10213703/how-do-i-view-events-fired-on-an-element-in-chrome-devtools). Тут в гифке показывают как в консоли можно поглядеть кусочек или все. `monitorEvents(document.body)`
+
+# Unleash Shiny. R/Pharma - Advanced Shiny Workshop
+- [Unleash Shiny](https://rinpharma2020.rinterface.com/) R/Pharma - Advanced Shiny Workshop
+David Granjon (Novartis) & John Coene (World Economic Forum) 09-10-2020
+- [How to properly manage JS code in a Shiny project?](https://github.com/RinteRface/unleash-shiny-2021), rinpharma2021.rinterface.com/#1
 
 # 19.02.2025
 - [Simple Parquet storage service with Arrow Flight](https://arrow.apache.org/cookbook/py/flight.html)

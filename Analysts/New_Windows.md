@@ -813,6 +813,11 @@ wsl --import-in-place docker-desktop-data ext4.vhdx
 Для внешнего диска такая команда отрабатывает: `mount -t drvfs s: /mnt/s`
 - [Is there a way to mount an external drive when it becomes available in WSL?](https://superuser.com/questions/1734353/is-there-a-way-to-mount-an-external-drive-when-it-becomes-available-in-wsl)
 
+### Upgrade
+- [Upgrade Ubuntu in WSL2 from 20.04 to 22.04](https://askubuntu.com/questions/1428423/upgrade-ubuntu-in-wsl2-from-20-04-to-22-04)
+- [Upgrade from Ubuntu 22.04 to 24.04 LTS on Windows Subsystem for Linux (WSL2)](https://4sysops.com/archives/upgrade-from-ubuntu-2204-to-2404-lts-on-windows-subsystem-for-linux-wsl2/)
+
+
 ## BitLocker
 - [Изучаем и вскрываем BitLocker. Как устроена защита дисков Windows и как ее взломать](https://xakep.ru/2017/02/23/bitlocker-hacking/)
 - Вот ведь, прямо мой случай.  [Bitlocker is off but C drive shows Bitlocker encrypted Wondows 10](https://social.technet.microsoft.com/Forums/en-US/a6c735ab-62d2-47a2-bb0c-aff9a3db1523/bitlocker-is-off-but-c-drive-shows-bitlocker-encrypted-wondows-10?forum=win10itprosecurity)
