@@ -1998,13 +1998,17 @@ SELECT current_setting('threads')
 - [GitHub - benhoyt/goawk](https://github.com/benhoyt/goawk): A POSIX-compliant AWK interpreter written in Go, with CSV support
 - Для того, чтобы войти в курс дела, можно посмотреть подборку С чего начать свой путь в causal inference? (https://t.me/causal_channel/49) и Оценка причинно-следственных связей (https://github.com/annastavniychuk/econometrics_library) от наших уважаемых коллег из МГУ им. М.В. Ломоносова, а также Causal Inference in R (https://t.me/naukaidannye/249) у нас на канале.
 
-## text analysis
+## text analysis & NLP
 - [golgotha](https://github.com/bnosac/golgotha) - Contextualised Embeddings and Language Modelling using BERT and Friends using R. Немного старая.
 - [text](https://r-text.org/). An R-package for analyzing natural language with transformers-based large language models. The text package is part of the R Language Analysis Suite, including talk, text and topics.
 - вдогонку: пожалуй, самая важная вещь, которую нужно понимать про BERT https://datascience.stackexchange.com/questions/66207/what-is-purpose-of-the-cls-token-and-why-is-its-encoding-output-important
 - [Как устроена нейросеть BERT от Google](https://sysblok.ru/knowhow/kak-ustroena-nejroset-bert-ot-google/)
 - [BERT: прорыв в NLP-технологиях или очередной хайп на теме Deep Learning?](https://chernobrovov.ru/articles/bert-proryv-v-nlp-tehnologiyah-ili-ocherednoj-hajp-na-teme-deep-learning.html)
 - [Как я настроил саммаризацию постов с помощью YandexGPT](https://teletype.in/@h0h1_hr_analytics/P8YWLr0fPiZ)
+- [Томита-парсер](https://yandex.ru/dev/tomita). Предназначен для извлечения структурированных данных из текста на естественном языке.
+- [Проект Natasha. Набор качественных открытых инструментов для обработки естественного русского языка (NLP)](https://habr.com/ru/articles/516098/)
+- [Yargy-парсер и библиотека Natasha. Извлечения структурированной информации из текстов на русском языке](https://habr.com/ru/articles/349864/)
+- [Natasha](https://github.com/natasha/natasha). Solves basic Russian NLP tasks, API for lower level Natasha projects
 
 # 26.12.2024
 - [litedown: R Markdown Reimagined](https://yihui.org/litedown/) by Yihui Xie
