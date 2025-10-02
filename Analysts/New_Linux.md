@@ -49,6 +49,7 @@ The second -exec renames the zipped files to the original names
 - [How do I set environment variables?](https://askubuntu.com/questions/730/how-do-i-set-environment-variables). 
 In bash you can set variables like this: `export CATALINA_HOME=/opt/catalina`
 - [How to Check your Ubuntu Version](https://linuxize.com/post/how-to-check-your-ubuntu-version/). `lsb_release -a`
+Если не установлено, то можно проще: `cat /etc/os-release`
 - [Writing Comments in Bash Scripts](https://linuxize.com/post/bash-comments/)
 - [Run git pull over all subdirectories {duplicate}](https://stackoverflow.com/questions/3497123/run-git-pull-over-all-subdirectories)
 e.g 

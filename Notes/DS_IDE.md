@@ -29,6 +29,9 @@
 - [Cursor]()
 
 # VScode
+## VScode web
+- [Visual Studio Code for the Web](https://code.visualstudio.com/docs/setup/vscode-web)
+Visual Studio Code for the Web provides a free, zero-install Microsoft Visual Studio Code experience running entirely in your browser, allowing you to quickly and safely browse source code repositories and make lightweight code changes. To get started, go to https://vscode.dev in your browser.
 
 ## Common
 - COOL! [VSCode Customization: Supercharge Your IDE](https://dev.to/iashin/vscode-customization-supercharge-your-ide-43fn)

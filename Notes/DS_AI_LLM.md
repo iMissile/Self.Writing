@@ -1,3 +1,7 @@
+# 30.09.2025
+## LLM
+- COOL! [LLM Context Management: How to Improve Performance and Lower Costs](https://eval.16x.engineer/blog/llm-context-management-guide)
+
 # 23.09.2025
 - [LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale](https://arxiv.org/pdf/2208.07339)
 - [Quantization Deep Dive, или Введение в современную квантизацию](https://habr.com/ru/companies/yandex/articles/800945/)
@@ -39,6 +43,9 @@ After creating an account, click your Profile in the top right corner and select
 # 10.09.2025
 ## Vector database
 - COOL [An Introduction to Vector Databases](https://qdrant.tech/articles/what-is-a-vector-database/). С диаграммами и схемами.
+- Qdrant bulk upload
+	- [Bulk Upload Vectors to a Qdrant Collection](https://qdrant.tech/documentation/database-tutorials/bulk-upload/)
+	- [Uploading a large dataset to Qdrant - Data Loader slowing down](https://community.n8n.io/t/uploading-a-large-dataset-to-qdrant-data-loader-slowing-down/166481/2)
 
 # 08.09.2025
 ## LLM

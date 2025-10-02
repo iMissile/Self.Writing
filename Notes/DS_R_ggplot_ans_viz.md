@@ -794,6 +794,11 @@ plot_action = colDef(
 - [`reactable.extras::tooltip_extra`](https://appsilon.github.io/reactable.extras/reference/tooltip_extra.html). Tool-tip for table headers
 - [Using tippy on cells #220 {Open}](https://github.com/glin/reactable/issues/220)
 
+## Other table packages
+- [gridify](https://pharmaverse.github.io/gridify/index.html) builds on the base R grid package and makes it easy to add flexible and customizable information around a figure or table using a pre-defined or custom layout.
+- [tinytable](https://vincentarelbundock.github.io/tinytable/) is a small but powerful R package to draw beautiful tables in a variety of formats: HTML, LaTeX, Word1, PDF, PNG, Markdown, and Typst. The user interface is minimalist and easy to learn, while giving users access to powerful frameworks to create endlessly customizable tables.
+
+
 # ECharts
 - [Форматирование меток осей](https://echarts.apache.org/en/option.html#xAxis.axisLabel.formatter)
 - [R echarts4r - format dates in axis](https://stackoverflow.com/questions/63838914/r-echarts4r-format-dates-in-axis)

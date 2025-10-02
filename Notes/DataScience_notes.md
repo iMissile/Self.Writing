@@ -278,7 +278,10 @@ by Christopher M. Bishop (Author), Hugh Bishop (Author)
 
 - [Modern Deep Learning for Tabular Data. Novel Approaches to Common Modeling Problems](https://link.springer.com/book/10.1007/978-1-4842-8692-0)
 - [Introduction to Robotics and Perception](https://www.roboticsbook.org/intro.html)
-
+- [Patterns, Predictions, and Actions. A story about machine learning](https://mlstory.org/). Princeton University Press
+Книга Patterns, Predictions, and Actions (https://mlstory.org/) написана для тех, кто хочет разобраться в математических основах и фундаментальных принципах, связанных с ML, авторы Moritz Hardt и Benjamin Recht. В книге также показаны взаимосвязи с такими областями, как динамическое программирование и Causal inference.
+- [Alice’s Adventures in a differentiable wonderland](https://www.sscardapane.it/alice-book/)
+Учебник, который написал Simone Scardapane, дает введение в область так называемого дифференцируемого программирования, которое лежит в основе принципов работы искусственных нейронных сетей. Действительно, нейронные сети по сути представляют собой композиции дифференцируемых примитивов. 
 
 # Articles
 - [Using AWK and R to parse 25tb](https://livefreeordichotomize.com/posts/2019-06-04-using-awk-and-r-to-parse-25tb/)
