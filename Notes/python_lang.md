@@ -443,6 +443,12 @@ And as always, make sure to save the installation commands with version-locked d
 - Применительно к pandas dataframe:
 	- смотрим типы колонок `df.dtypes`
 
+# 04.10.2025
+- [Equivalent for R / dplyr's glimpse() function in Python for Panda dataframes?](https://stackoverflow.com/questions/74414355/equivalent-for-r-dplyrs-glimpse-function-in-python-for-panda-dataframes)
+- [ENH: Implement dplyr::glimpse() in pandas #51668 {Open}](https://github.com/pandas-dev/pandas/issues/51668)
+- [Web Client for Visualizing Pandas Objects](https://pypi.org/project/dtale/)
+- [Skimpy](https://aeturrell.github.io/skimpy/). A light weight tool for creating summary statistics from dataframes.
+
 # 16.09.2025
 - [LLM](https://llm.datasette.io/en/stable/index.html) A CLI tool and Python library for interacting with OpenAI, Anthropic’s Claude, Google’s Gemini, Meta’s Llama and dozens of other Large Language Models, both via remote APIs and with models that can be installed and run on your own machine.]
 - [Markitdown - Convert files and MS Office documents to Markdown](https://www.avonture.be/blog/markitdown/)
