@@ -1,3 +1,6 @@
+# 07.10.2025
+- [Giga-Embeddings](https://huggingface.co/ai-sage/Giga-Embeddings-instruct) топит всех на ruMTEB (http://mteb-leaderboard.hf.space/?benchmark_name=MTEB%28rus%2C+v1%29) с результатом 74.1 и при этом не жертвует качеством при работе с английским. Заточена под RAG-системы — даёт точный семантический поиск и не галлюцинирует. Это делает её идеальной для FAQ ботов и поиска по документации, но и для других задач, вроде дедупликации и кластеризации, она тоже подходит. А открытая лицензия и 3B параметров позволяют быстро интегрировать модель в прод.
+
 # 30.09.2025
 ## LLM
 - COOL! [LLM Context Management: How to Improve Performance and Lower Costs](https://eval.16x.engineer/blog/llm-context-management-guide)

@@ -1310,6 +1310,7 @@ Provides the binary S3 class. The instance of binary is used to convert a decima
 - [dagster](https://dagster.io/). Ship data pipelines with extraordinary velocity
 - [reactflow](https://reactflow.dev/). A customizable React component for building node-based editors and interactive diagrams
 - [The Case for BPMN Token Simulation](https://bpmn.io/blog/posts/2023-the-case-for-bpmn-token-simulation)
+- [BPMN Assistant](https://github.com/jtlicardo/bpmn-assistant/) is an application that uses Large Language Models (LLMs) to assist with creating, editing, and interpreting Business Process Model and Notation (BPMN) diagrams.
 - Defensive and Offensive programming
 	- [Defensive & offensive programming](https://programmingduck.com/articles/defensive-programming)
 	- [Defensive Programming - Friend or Foe?](https://interrupt.memfault.com/blog/defensive-and-offensive-programming)
@@ -1688,11 +1689,24 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [Прощайте, базы данных, да здравствуют векторные базы данных](https://habr.com/ru/articles/791930/)
 
 
+# 06.10.2025
+## R Stat
+- COOL! [Common statistical tests are linear models (or: how to teach stats)](https://lindeloev.github.io/tests-as-linear/). By Jonas Kristoffer Lindeløv (blog, profile).
+
+## R & Mac
+- [OpenMP on macOS with Xcode tools](https://mac.r-project.org/openmp/)
+Warning! Everything described on this page is strictly experimental and not officially supported by Apple. It may break at any time. The information is provided in the hope of being useful to some tech-savvy people. It is not intended for the regular R user.
+- [R + OpenMP + vecLib on Apple Silicon](https://ajsw.info/resources/r-openmp-veclib-on-apple-silicon)
+
+## NLP
+- [Working with Text data](https://amueller.github.io/aml/05-advanced-topics/13-text-data.html)
+
 # 15.09.2025
 ## R
 - COOL! [Simon P. Couch](https://github.com/simonpcouch). I'm Simon (he/him), an R developer and data scientist. I build tools for data scientists at Posit PBC (formerly RStudio).
 - [I was wrong about tidymodels and LLMs](https://www.simonpcouch.com/blog/2025-08-26-predictive/) by Simon P. Couch.
 Today’s frontier LLMs know much more about tidymodels than I thought.
+
 
 # 10.09.2025
 ## R & H2O
