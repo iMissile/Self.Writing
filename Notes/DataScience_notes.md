@@ -1689,6 +1689,10 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [Прощайте, базы данных, да здравствуют векторные базы данных](https://habr.com/ru/articles/791930/)
 
 
+# 14.10.2025
+## R
+- [Marquee](https://marquee.r-lib.org/articles/marquee.html) is collectively a markdown dialect, a parser for the dialect and a grid renderer for text written in the dialect.
+
 # 06.10.2025
 ## R Stat
 - COOL! [Common statistical tests are linear models (or: how to teach stats)](https://lindeloev.github.io/tests-as-linear/). By Jonas Kristoffer Lindeløv (blog, profile).

@@ -714,6 +714,7 @@ The v0.8.0 release of gt is quite exciting so we want to show you all the things
 	- [shiny get selected row from GT #354 {Open}](https://github.com/rstudio/gt/issues/354)
 - [All the new features in {gt} 0.10.0](https://posit.co/blog/new-features-in-gt-0-10-0/). gt 0.10.0 introduces nanoplots, units notation, and so much more.
 - [Everything new that’s in {gt} 0.11.0](https://posit.co/blog/everything-new-thats-in-gt-0-11-0/)
+- [Render tables as gtable #1563 {Merged}](https://github.com/rstudio/gt/pull/1563). Тут идеи по превращению в grob.
 
 ### gt & js
 - [JavaScript onClick event - HTML table](https://stackoverflow.com/questions/21033368/javascript-onclick-event-html-table)
