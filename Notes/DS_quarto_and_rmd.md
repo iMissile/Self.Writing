@@ -548,6 +548,18 @@ Tidying and splitting model summaries for inline reporting
 
 
 
+# typst
+- [Переносы длинных строк в таблице](https://forum.typst.app/t/how-to-wrap-long-unbreakable-text-in-a-table-cell/1224)
+```{=typst}
+#set text(hyphenate: true)
+#show raw: it => {
+show regex("[()]"): it => it + sym.zws
+it
+}
+// #show regex("\w+"): it => {
+// it.text.codepoints().join(sym.zws)
+// }
+```
 
 
 

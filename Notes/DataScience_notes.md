@@ -5679,7 +5679,6 @@ When you change document, you should again press "Show all" to show changes of n
 ## R
 - [HedgeDoc](https://hedgedoc.org/). The best platform to write and share markdown.
 HedgeDoc (formerly known as CodiMD) is an open-source collaborative markdown editor. With HedgeDoc you can easily collaborate on notes, graphs and even presentations in real-time. All you need to do is to share your note-link to your co-workers, and they’re ready to go.
-- [Modern Text Features in R](https://www.tidyverse.org/blog/2021/02/modern-text-features/). `ragg`, `systemfont`, `textshaping`
 - COOL! [Everything You Always Wanted to Know About ANOVA*](https://shouldbewriting.netlify.app/posts/2021-05-25-everything-about-anova/)
 (*But Were Afraid to Ask)
 
@@ -6211,7 +6210,6 @@ FEniCS is a popular open-source (LGPLv3) computing platform for solving partial 
 - COOL! [Adding Labels to a {ggplot2} Bar Chart](https://thomasadventure.blog/posts/labels-ggplot2-bar-chart/)
 - [DESCRIBING CATEGORICAL RASTERS WITH SPATIAL SIGNATURES](https://nowosad.github.io/post/motif-bp2/)
 - [Machine Learning with R: A Complete Guide to Decision Trees](https://appsilon.com/r-decision-treees/)
-- COOL! [Modern Text Features in R](https://www.tidyverse.org/blog/2021/02/modern-text-features/)
 - COOL! [reactablefmtr](https://github.com/kcuilla/reactablefmtr). An R package to simplify formatting and customization of tables made with {reactable}
 - Slides! [{reactablefmtr}. Streamlined Table Styling and Formatting for {reactable}](https://rpubs.com/kcuilla/reactablefmtr-socal-presentation)
 - datamods. [Shiny modules to import data into an application or addin](https://github.com/dreamRs/datamods) Shiny modules to import and manipulate data into an application or addin.

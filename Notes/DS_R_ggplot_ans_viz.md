@@ -45,13 +45,12 @@ You must import the system fonts using the command:
 
 # ggplot
 - [ggplot2 4.0.0](https://www.tidyverse.org/blog/2025/09/ggplot2-4-0-0/)
+- [ggplot2 4.0.0: Styling](https://tidyverse.org/blog/2025/10/ggplot2-styling/)
 - [ggplot2 3.5.0](https://www.tidyverse.org/blog/2024/02/ggplot2-3-5-0/). Guide rewrite. Patterns and gradients.
 - [ggplot2 3.5.0: Legends](https://www.tidyverse.org/blog/2024/02/ggplot2-3-5-0-legends/)
 - [ggplot2 3.3.0](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/). Bi-directional geoms and stats!!!
-- [ggplot2 3.3.0. More control over aesthetic evaluation](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/#more-control-over-aesthetic-evaluation)
+- [ggplot2 3.3.0: More control over aesthetic evaluation](https://www.tidyverse.org/blog/2020/03/ggplot2-3-3-0/#more-control-over-aesthetic-evaluation)
 - [ggplot2 2.2.0](https://posit.co/blog/ggplot2-2-2-0/), 2016-11-14. Тут много про размещение и настройку осей.
-
-
 
 - COOL! Slides. [Designing ggplots. making clear figures that communicate](https://designing-ggplots.netlify.app/#1)
 - Slides. [Creating Beautiful Data Visualizations in R: a ggplot2 Crash Course](https://sctyner.github.io/talks/Conferences/user2020/#1)
@@ -557,7 +556,8 @@ list.files("/tmp/gap")
 # font
 - [Updates to Text Rendering in R Graphics](https://www.tidyverse.org/blog/2025/01/text-rendering-updates/)
 - COOL! [Taking Control of Plot Scaling](https://www.tidyverse.org/blog/2020/08/taking-control-of-plot-scaling/)
-- [Modern Text Features in R](https://www.tidyverse.org/blog/2021/02/modern-text-features/)
+- COOL! [Modern Text Features in R](https://www.tidyverse.org/blog/2021/02/modern-text-features/). `ragg`, `systemfont`, `textshaping`
+
 - COOL! [Understanding text size and resolution in ggplot2](https://www.christophenicault.com/post/understand_size_dimension_ggplot2/)
 - Меняем шрифт вывода кода в Quarto с помощью CSS:
 ```{css, echo=FALSE}

@@ -1,6 +1,16 @@
 [A little bit of Mathematica history](https://www.12000.org/my_notes/compare_mathematica/index.htm) by Nasser M. Abbasi
 
-# 15.09.2029
+
+# 23.10.2025
+- [Get a "step-by-step" evaluation in Mathematica](https://mathematica.stackexchange.com/questions/148/get-a-step-by-step-evaluation-in-mathematica)
+- Использование подстановок для преобразования:
+```
+eq = 1 + 7*Cos[x]^2 == 3*Sin[2*x];
+simplifiedEq = eq /. Sin[2*x] -> 2*Sin[x]*Cos[x] // Simplify;
+Solve[simplifiedEq, x, Reals]
+```
+
+# 15.09.2025
 - [Source code of Savchenko Solutions](https://github.com/savchenko-physics/savchenko-solutions)
 
 # 17.01.2025

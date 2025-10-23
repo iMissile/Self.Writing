@@ -28,6 +28,17 @@
 - [Windsurf](https://windsurf.com/editor)
 - [Cursor]()
 
+# Cursor
+## Terminal hanging
+- [Cursor Terminal Hanging](https://forum.cursor.com/t/cursor-terminal-hanging/137595).
+Try enabling the Legacy Terminal Tool:
+	Go to: Cursor Settings > Chat > Inline Editing & Terminal
+	Enable “Legacy Terminal Tool”
+	Restart Cursor
+	Test terminal commands again
+- [{BUG} Terminal tool gets stuck after exit code](https://forum.cursor.com/t/bug-terminal-tool-gets-stuck-after-exit-code/57651/51)
+- [Cursor agent mode - when running terminal commands often hangs up the terminal, requirin](https://forum.cursor.com/t/cursor-agent-mode-when-running-terminal-commands-often-hangs-up-the-terminal-requiring-a-click-to-pop-it-out-in-order-to-continue-commands/59969/32)
+
 # VScode
 ## VScode web
 - [Visual Studio Code for the Web](https://code.visualstudio.com/docs/setup/vscode-web)
