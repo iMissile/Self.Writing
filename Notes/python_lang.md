@@ -447,6 +447,7 @@ And as always, make sure to save the installation commands with version-locked d
 - [Что нового в Python 3.14. Разбираем главные изменения](https://thecode.media/chto-novogo-v-python-3-14/)
 - [pip-tool](https://github.com/jazzband/pip-tools). A set of tools to keep your pinned Python dependencies fresh.
 - [Upgrade python packages from requirements.txt using pip command](https://stackoverflow.com/questions/24764549/upgrade-python-packages-from-requirements-txt-using-pip-command)
+`pip install --upgrade -r requirements.txt`
 
 # 04.10.2025
 - [Equivalent for R / dplyr's glimpse() function in Python for Panda dataframes?](https://stackoverflow.com/questions/74414355/equivalent-for-r-dplyrs-glimpse-function-in-python-for-panda-dataframes)
