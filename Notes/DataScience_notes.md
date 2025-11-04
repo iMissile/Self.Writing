@@ -1705,6 +1705,9 @@ Warning! Everything described on this page is strictly experimental and not offi
 ## NLP
 - [Working with Text data](https://amueller.github.io/aml/05-advanced-topics/13-text-data.html)
 
+# 05.10.2025
+- COOL! [Your URL Is Your State](https://alfy.blog/2025/10/31/your-url-is-your-state.html), https://t.me/systemswing/852
+
 # 15.09.2025
 ## R
 - COOL! [Simon P. Couch](https://github.com/simonpcouch). I'm Simon (he/him), an R developer and data scientist. I build tools for data scientists at Posit PBC (formerly RStudio).
