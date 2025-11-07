@@ -1084,3 +1084,12 @@ If you are using the curl command line tool on Windows, curl will search for a C
 
 # Загрузка видеозаписей конференций
 - [M3U8 Downloader](https://m3u8.dev/)
+
+# Excel
+- Ошибка "Слишком много различных форматов ячеек"
+Почему это происходит
+Такая ошибка возникает, если в рабочей книге превышается предельно допустимое количество форматов, которое Excel может сохранять:
+
+для Excel 2003 и старше - это 4000 форматов
+для Excel 2007 и новее - это 64000 форматов
+[Чиним макросом](https://www.excelguide.ru/2021/07/remove-extra-style-excel.html)
