@@ -38,6 +38,15 @@ Try enabling the Legacy Terminal Tool:
 	Test terminal commands again
 - [{BUG} Terminal tool gets stuck after exit code](https://forum.cursor.com/t/bug-terminal-tool-gets-stuck-after-exit-code/57651/51)
 - [Cursor agent mode - when running terminal commands often hangs up the terminal, requirin](https://forum.cursor.com/t/cursor-agent-mode-when-running-terminal-commands-often-hangs-up-the-terminal-requiring-a-click-to-pop-it-out-in-order-to-continue-commands/59969/32)
+- Открываем настройки терминала: `Ctrl+,`, `@feature:terminal`
+- Добавляем в терминал нужные шрифты: 
+```
+Откройте настройки (Ctrl+,)
+Найдите "Terminal › Integrated: Font Family"
+Установите значение: 'Cascadia Code PL', 'FiraCode Nerd Font', Consolas, 'Courier New', monospace
+```
+Включил smooth scrolling и все заработало.
+
 
 # VScode
 ## VScode web

@@ -507,6 +507,7 @@ storeLabeller <- function(string) {
 - [Introducing {ggflowchart}](https://nrennie.rbind.io/blog/introducing-ggflowchart/)
 - [ggdiagram](https://wjschne.github.io/ggdiagram/index.html). The ggdiagram package takes an object-oriented approach to making diagrams and plots the results using ggplot2.
 My motivation in making ggdiagram was to find a way to approach the functionality of TikZ but with the flexibility and convenience of R.
+- [ggview](https://github.com/idmn/ggview). Choose the right picture size for a ggplot without leaving your IDE.
 
 ## treemap
 - [Treemaps in ggplot2 with treemapify](https://r-charts.com/part-whole/treemapify/)
