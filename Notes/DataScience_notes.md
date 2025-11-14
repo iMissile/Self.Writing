@@ -4893,9 +4893,10 @@ Ordination methods, diversity analysis and other functions for community and veg
 # 01.12.2021
 
 ## Table Contest
+- [Winners of the 2025 Table Contest](https://posit.co/blog/2025-table-contest-winners/)
 - [Winners of the 2024 Table Contest](https://posit.co/blog/2024-table-contest-winners/)
 - [Winners of the 2022 Table Contest](https://posit.co/blog/winners-of-the-2022-table-contest/)
-- [Winners of the 2021 Table Contest](https://www.rstudio.com/blog/winners-of-the-2021-table-contest/)
+- [Winners of the 2021 Table Contest](https://posit.co/blog/winners-of-the-2021-table-contest/)
 
 ## Shiny Contest
 - [Winners of the 2024 Shiny Contest](https://posit.co/blog/winners-of-the-2024-shiny-contest/)
