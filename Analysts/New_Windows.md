@@ -361,6 +361,7 @@ net start wsearch <ENTER>
 - [Папки в Outlook отображаются на английском языке](https://www.dmosk.ru/polezno.php?review=outlook-en). 
 `C:\Program Files\Microsoft Office\root\Office16\outlook.exe /resetfoldernames` переименовывает папки на русский (под русской локалью) и теперь их надо синхронизировать по IMAP с русскими папками на сервере.
 - [Переименование папок почты в Outlook 2016](https://answers.microsoft.com/ru-ru/msoffice/forum/msoffice_outlook-mso_win10-mso_365hp/%D0%BF%D0%B5%D1%80%D0%B5%D0%B8%D0%BC%D0%B5%D0%BD/09bb0f12-8dda-4a5c-bd3d-657efde45595)
+- [Guide to change OST file location for Outlook 365 account](https://www.recoveryfix.com/blog/guide-to-change-ost-file-location-outlook-365/)
 
 ## Uninstall
 - [Uninstall new apps](). That is a Windows 10 UWP App and those don't appear in the old Control Panel - Programs and Features Section
@@ -1093,3 +1094,16 @@ If you are using the curl command line tool on Windows, curl will search for a C
 для Excel 2003 и старше - это 4000 форматов
 для Excel 2007 и новее - это 64000 форматов
 [Чиним макросом](https://www.excelguide.ru/2021/07/remove-extra-style-excel.html)
+Разработчик -> VBA -> Insert Module
+```
+Sub StyleKiller()
+Dim N As Long, i As Long
+With ActiveWorkbook
+    N = .Styles.Count
+    For i = N To 1 Step -1
+        If Not .Styles(i).BuiltIn Then .Styles(i).Delete
+    Next i
+End With
+MsgBox ("Extra styles is removed")
+End Sub
+```

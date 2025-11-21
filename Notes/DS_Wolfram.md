@@ -1,6 +1,14 @@
 [A little bit of Mathematica history](https://www.12000.org/my_notes/compare_mathematica/index.htm) by Nasser M. Abbasi
 
 
+# 18.11.2025
+- [Analyze an Electric Circuit](https://www.wolfram.com/mathematica/new-in-10/enhanced-graphs-and-networks/analyze-an-electric-circuit.html)
+- [Circuit drawing in Mathematica](https://mathematica.stackexchange.com/questions/8614/circuit-drawing-in-mathematica)
+- [Draw Your Own Electrical Circuit](https://demonstrations.wolfram.com/DrawYourOwnElectricalCircuit/)
+- [Electric Circuits Made Simple with Wolfram](https://blog.wolfram.com/2024/08/20/electric-circuits-made-simple-with-wolfram/)
+- [ElectricCircuit](https://reference.wolfram.com/system-modeler/libraries/IntroductoryExamples/IntroductoryExamples.ComponentBased.ElectricCircuit.html).
+A component based model of an electrical circuit
+
 # 23.10.2025
 - [Get a "step-by-step" evaluation in Mathematica](https://mathematica.stackexchange.com/questions/148/get-a-step-by-step-evaluation-in-mathematica)
 - Использование подстановок для преобразования:

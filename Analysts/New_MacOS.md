@@ -171,6 +171,8 @@ https://www.hightechdad.com/2017/02/06/onedrive-sync-issues-how-to-reset-onedriv
 	- [[Mac для чайников] №29 Переименование](http://i-ekb.ru/2010/11/mak-dlya-chajnikov-29-pereimenovanie/). Если вы хотите, открыть файл, вы можете либо дважды щелкнуть по нему, либо выбрать его и нажать Command + O или Command + Стрелка Вниз на клавиатуре. А, отнюдь, не Enter, как в Windows.
 	- [Как открыть программу на Mac](http://appleprofi.ru/kak-otkryt-programmu-na-mac/)
 - [Запятая и точка на русской клавиатуре Mac. Удобное сочетание клавиш](http://yablyk.com/037778-lajfxak-udobnyj-sposob-nabora-zapyatoj-i-tochki-na-os-x/)
+	Способ 1 – установка в macOS клавиатуры «Русская – ПК»
+	Если вы не хотите переучиваться, установите в качестве русской клавиатуры не обычную «Русская», а «Русская – ПК», для этого:
 - [Finder минималиста](http://macosworld.ru/finder-minimalista/)
 - [OS X Mavericks: Как открыть программу от неустановленного разработчика](https://support.apple.com/kb/PH14369?locale=ru_RU&viewlocale=ru_RU). 1) В Finder найдите программу, которую нужно открыть. Не используйте для этого Launchpad. В Launchpad нельзя использовать контекстное меню.
 2) Нажмите клавишу Control, затем нажмите значок программы. 3) В контекстном меню выберите «Открыть». 4) Нажмите «Открыть».
@@ -261,3 +263,18 @@ diskutil mount /dev/disk1
 You can use FUSE for macOS to write over NTFS formatted disk by following these steps:
 - Download osxfuse.
 - Install it.
+
+# Firewall
+- [Murus](https://www.murusfirewall.com/murus/). macOS Firewall Unchained
+- [Vallum](https://www.vallumfirewall.com/index.php) macOS Application Firewall
+- [LuLu](https://objective-see.org/products/lulu.html)
+- [Little Snitch](https://www.obdev.at/products/littlesnitch/download.html)
+	- [How can I uninstall Little Snitch?](https://www.obdev.at/support/littlesnitch/u2j6s)
+```
+The instructions below currently don’t work on macOS 15.3 due to bugs in macOS. You first have to manually delete the Little Snitch system extension in System Settings > Login Items & Extensions.
+See this FAQ entry for detailed instructions.
+Just move the Little Snitch application in Finder from your Applications folder to the trash.
+This will completely remove all components of Little Snitch, including all its system extensions and helper tools.
+Do not remove the Little Snitch app by any other means (like Terminal or some third party app-removal tool) because otherwise macOS won’t remove the Little Snitch system extension!
+Your configuration data (which is stored at /Library/Application Support/Objective Development/Little Snitch) will not be deleted. So if you decide to reinstall Little Snitch at a later point, your rules and settings will still be in place.
+```
