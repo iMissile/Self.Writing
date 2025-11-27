@@ -278,3 +278,9 @@ This will completely remove all components of Little Snitch, including all its s
 Do not remove the Little Snitch app by any other means (like Terminal or some third party app-removal tool) because otherwise macOS won’t remove the Little Snitch system extension!
 Your configuration data (which is stored at /Library/Application Support/Objective Development/Little Snitch) will not be deleted. So if you decide to reinstall Little Snitch at a later point, your rules and settings will still be in place.
 ```
+
+# Проблема с декомпозицией Unicode символов в файлах (NFC/NFD)
+- [BandiNamer](https://en.bandisoft.com/bandinamer/) 
+Fix Mac filenames for Windows compatibility
+BandiNamer is a tool normalizing Unicode filenames generated on macOS, preventing display and compatibility issues.
+It ensures such filenames display correctly on Windows and across other different platforms.

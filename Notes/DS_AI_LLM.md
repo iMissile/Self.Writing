@@ -1,3 +1,10 @@
+# 24.11.2025
+## LLM
+- [Тревога в мире LLM](https://telegra.ph/Trevoga-v-mire-LLM-11-10)
+- COOL! [Defeating Nondeterminism in LLM Inference](https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/)
+- COOL! [On-Policy Distillation](https://thinkingmachines.ai/blog/on-policy-distillation/).
+
+
 # 23.10.2025
 - [Cursor bug](https://forum.cursor.com/t/cursor-agent-mode-when-running-terminal-commands-often-hangs-up-the-terminal-requiring-a-click-to-pop-it-out-in-order-to-continue-commands/59969). Cursor agent mode - when running terminal commands often hangs up the terminal, requiring a click to pop it out in order to continue commands
 
@@ -43,7 +50,6 @@ After creating an account, click your Profile in the top right corner and select
 ## LLM
 - [Structured data extraction from unstructured content using LLM schemas](https://simonw.substack.com/p/structured-data-extraction-from-unstructured)
 - [От слов к векторам: как эмбеддинги помогают моделям понимать нас - Блоги Epsilon Metrics] https://blogs.epsilonmetrics.ru/kak-embeddingi-pomogayut-llm-ponyat-nas/)
-- COOL! [Defeating Nondeterminism in LLM Inference](https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/)
 - [The lethal trifecta for AI agents: private data, untrusted content, and external communication](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/)
 
 # 10.09.2025

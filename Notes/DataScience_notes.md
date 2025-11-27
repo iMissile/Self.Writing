@@ -1692,6 +1692,7 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 # 15.11.2025
 ## R
 - Slides. COOL! [Automating Repetitive Reports with Quarto](https://ivelasq-automating-quarto.share.connect.posit.cloud/#/title-slide) by Isabella Velásquez, 2025 MAPOR Fall Webinar Series
+- Slides. COOL! [Predictive Performance Discrimination](https://predictionperformancediscrimination.netlify.app/#/discrimination). Очень прикольно сделанный сайт, позволяющий критически переосмыслить такие незыблемые вещи как ROC и AUC
 
 # 05.11.2025
 - COOL! [Your URL Is Your State](https://alfy.blog/2025/10/31/your-url-is-your-state.html), https://t.me/systemswing/852
