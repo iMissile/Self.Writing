@@ -1008,6 +1008,11 @@ Unify, control, and accelerate global file data, securely
 	- [Robocopy](https://ru.wikipedia.org/wiki/Robocopy) (от англ. Robust File Copy) — утилита командной строки для репликации (не просто копирования) каталогов (папок). Она была доступна как часть Windows Resource Kit и представлена как стандартный компонент Windows Vista, Windows 7 и Windows Server 2008. Robocopy функционально заменяет Xcopy, с большим количеством опций.
 	- [Использование Robocopy для синхронизации и резервного копирования файлов, примеры](https://winitpro.ru/index.php/2020/05/13/robocopy-sinxronizaciya-i-rezervnoe-kopirovanie-fajlov/)
 
+# Проблема с декомпозицией Unicode символов в файлах (NFC/NFD)
+- [BandiNamer](https://en.bandisoft.com/bandinamer/) 
+Fix Mac filenames for Windows compatibility
+BandiNamer is a tool normalizing Unicode filenames generated on macOS, preventing display and compatibility issues.
+It ensures such filenames display correctly on Windows and across other different platforms.
 
 # Миграция с gmail на yandex.mail
 - [Для выноса данных из Google: https://takeout.google.com]
