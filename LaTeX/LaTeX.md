@@ -172,9 +172,10 @@ On Tikz
 ### labelling, also angles
 - [Move label of an angle in Tikz](https://tex.stackexchange.com/questions/502638/move-label-of-an-angle-in-tikz)
 - [Angle between two vectors tikz LaTeX](https://tex.stackexchange.com/questions/590735/angle-between-two-vectors-tikz-latex)
-- [pgfplots: extra x tick; tick length; affecting axis label position](https://tex.stackexchange.com/questions/592056/pgfplots-extra-x-tick-tick-length-affecting-axis-label-position)
 - [Label angle with tikz](https://tex.stackexchange.com/questions/20826/label-angle-with-tikz), tzplot package
 - [How to label angle](https://www.reddit.com/r/LaTeX/comments/1izgk49/how_to_label_angle/), tkz-euclide package
+
+- [pgfplots: extra x tick; tick length; affecting axis label position](https://tex.stackexchange.com/questions/592056/pgfplots-extra-x-tick-tick-length-affecting-axis-label-position)
 
 
 ## Ошибки при запуске TeXLive
