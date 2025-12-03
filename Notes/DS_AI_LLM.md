@@ -3,7 +3,9 @@
 - [Тревога в мире LLM](https://telegra.ph/Trevoga-v-mire-LLM-11-10)
 - COOL! [Defeating Nondeterminism in LLM Inference](https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/)
 - COOL! [On-Policy Distillation](https://thinkingmachines.ai/blog/on-policy-distillation/).
-
+- [TOON](https://toonformat.dev/) Token-Oriented Object Notation
+A compact, human-readable encoding of the JSON data model for LLM prompts.
+- [Tokenization Experiment: Format Comparison](https://www.curiouslychase.com/playground/format-tokenization-exploration?mode=preset&size=small-simple&structure=uniform-flat)
 
 # 23.10.2025
 - [Cursor bug](https://forum.cursor.com/t/cursor-agent-mode-when-running-terminal-commands-often-hangs-up-the-terminal-requiring-a-click-to-pop-it-out-in-order-to-continue-commands/59969). Cursor agent mode - when running terminal commands often hangs up the terminal, requiring a click to pop it out in order to continue commands

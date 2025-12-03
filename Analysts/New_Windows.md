@@ -126,6 +126,10 @@ http://it-like.ru/kak-perenesti-windows-7-na-ssd-disk/
 - [жесткий диск SSD 500ГБ, mSATA, SATA III, Samsung 850 EVO Series, MZ-M5E500BW](https://www.ulmart.ru/goods/3498218#tab-properties)
 - [Технология Over-Provisioning в SSD](http://www.nix.ru/computer_hardware_news/hardware_news_viewer.html?id=178629)
 
+## hdd repair
+- [«Victoria HDD/SSD»](https://hdd.by/victoria/) — лучшая бесплатная программа для диагностики, исследования, тестирования и мелкого ремонта жёстких дисков, SSD-накопителей, карт памяти, а также любых других накопителей в операционной системе Windows.
+
+
 # Изменение типа дисков MBR/GPT
 Телевизор вот не видит разделы диска GPT если их несколько. Ищем решение. Либо конвертировать в MBR, либо оставить только один GPT раздел
 - [How Can You Convert GPT to MBR without Data Loss Using Command Prompt?](https://www.diskpart.com/gpt-mbr/convert-gpt-to-mbr-without-data-loss-using-command-prompt.html)
@@ -996,6 +1000,9 @@ Now the marks are invisible on normal work, but visible on selection only.
 - [Top 5 Best Duplicate Photo Cleaners For Windows 10](https://yourstory.com/mystory/top-5-duplicate-photo-cleaners-for-windows-10/amp)
 - [TinEye Reverse Image Search](https://tineye.com/)
 TinEye browser extensions are the fastest way to search for images online.
+
+## Поиск дубликатов аудиофайлов
+- Хорошая замена Similarity. [Czkawka](https://czkawka.com/) is a fast, free, and open-source file cleaning tool designed to help users find and remove unnecessary files from their systems. It is built to be lightweight, efficient, and user-friendly, making it an excellent alternative to more complex or outdated cleaning utilities.
 
 # Утилиты для синхронизации и частное облако
 - [Syncthing](https://syncthing.net/)

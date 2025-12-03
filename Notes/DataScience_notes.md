@@ -1693,6 +1693,8 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 ## R
 - Slides. COOL! [Automating Repetitive Reports with Quarto](https://ivelasq-automating-quarto.share.connect.posit.cloud/#/title-slide) by Isabella Velásquez, 2025 MAPOR Fall Webinar Series
 - Slides. COOL! [Predictive Performance Discrimination](https://predictionperformancediscrimination.netlify.app/#/discrimination). Очень прикольно сделанный сайт, позволяющий критически переосмыслить такие незыблемые вещи как ROC и AUC
+- Slides COOL! [Welcome to your year in {ggplot2!}](https://charliejhadley.github.io/ggplot2wrapped-2025-example/)
+Interactive report built with love by {ggplot2wrapped} from Charlotte Hadley
 - COOL! [Python is not a great language for data science. Part 1: The experience](https://blog.genesmindsmachines.com/p/python-is-not-a-great-language-for)
 - COOL! [Python is not a great language for data science. Part 2: Language features](https://blog.genesmindsmachines.com/p/python-is-not-a-great-language-for-2e0)
 
