@@ -1689,6 +1689,9 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [Прощайте, базы данных, да здравствуют векторные базы данных](https://habr.com/ru/articles/791930/)
 - COOL! [Networking Toolbox](https://networking-toolbox.as93.net/). Your companion for all-things networking
 
+# 10.12.2025
+- DiD [13 - Difference-in-Differences](https://matheusfacure.github.io/python-causality-handbook/13-Difference-in-Differences.html)
+
 # 15.11.2025
 ## R
 - Slides. COOL! [Automating Repetitive Reports with Quarto](https://ivelasq-automating-quarto.share.connect.posit.cloud/#/title-slide) by Isabella Velásquez, 2025 MAPOR Fall Webinar Series
