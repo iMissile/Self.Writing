@@ -1120,3 +1120,9 @@ End With
 MsgBox ("Extra styles is removed")
 End Sub
 ```
+
+# Зачищаем системный диск
+- [Can I delete the Chrome's OptGuideOnDeviceModel safely? It's taking up 4GB](https://superuser.com/questions/1930445/can-i-delete-the-chromes-optguideondevicemodel-safely-its-taking-up-4gb)
+- [How to move .OST file to another location](https://learn.microsoft.com/en-us/answers/questions/5131480/how-to-move-ost-file-to-another-location)
+- [My Windows folder takes up too much space - how can I reduce it?](https://superuser.com/questions/378695/my-windows-folder-takes-up-too-much-space-how-can-i-reduce-it)
+- [Clean Up the WinSxS Folder](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/clean-up-the-winsxs-folder?view=windows-11)
