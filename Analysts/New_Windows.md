@@ -373,6 +373,7 @@ Open the Settings App (gear icon on your Start Menu)
 Go to Apps, then scroll down to find that app in the list of installed Apps and applications and form there, you can uninstall it ...
 
 ## Tools
+- [SmoothCSV](https://smoothcsv.com/) is a powerful and intuitive tool for editing CSV files. CSV editor
 - [7 best tabbed command line tools for Windows 10](https://windowsreport.com/tabbed-command-line-windows-10/)
 	- Console2
 	- PowerCmd

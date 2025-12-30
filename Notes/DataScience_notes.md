@@ -1685,7 +1685,7 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [Modelica](https://modelica.org/). Model complex systems more efficiently.
 
 # Tools
-- [SmoothCSV](https://smoothcsv.com/) is a powerful and intuitive tool for editing CSV files.
+- [SmoothCSV](https://smoothcsv.com/) is a powerful and intuitive tool for editing CSV files. CSV editor
 - [Прощайте, базы данных, да здравствуют векторные базы данных](https://habr.com/ru/articles/791930/)
 - COOL! [Networking Toolbox](https://networking-toolbox.as93.net/). Your companion for all-things networking
 

@@ -46,6 +46,13 @@ Try enabling the Legacy Terminal Tool:
 Установите значение: 'Cascadia Code PL', 'FiraCode Nerd Font', Consolas, 'Courier New', monospace
 ```
 Включил smooth scrolling и все заработало.
+- [It would be great to have a “Data Wrangler” extension for Cursor](https://forum.cursor.com/t/it-would-be-great-to-have-a-data-wrangler-extension-for-cursor/110307/5)
+As an aside the downloading of the VSIX and then > Extension: Install VSIX in Cursor worked for me and now I have Data Wrangler!
+```
+	I think I did something longer but works also. I followed the steps of this Stack Overflow post and en up with this Power Shell script:
+	Invoke-WebRequest -Uri "``https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-toolsai/vsextensions/datawrangler/1.24.0/vspackage``" -OutFile "datawrangler-1.24.0.vsix"
+	After that in cursor with the command (Ctrl + Shift + P) Install from VSIX I can select and install the extension. Hope it works for y’all.
+````
 
 
 # VScode
