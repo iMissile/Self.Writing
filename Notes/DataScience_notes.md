@@ -435,6 +435,7 @@ Survival analysis is long-established within actuarial science but infrequently 
 
 
 # dplyr tricks
+
 - dplyr select by number/position. Переименовываем колонки (добавляем префикс)
 	- [dplyr: Renaming variables with rename_](https://stackoverflow.com/questions/41921094/dplyr-renaming-variables-with-rename)
 	- [Copy a column and add a prefix to new column in R with dplyr](https://stackoverflow.com/questions/40929674/copy-a-column-and-add-a-prefix-to-new-column-in-r-with-dplyr)
@@ -444,12 +445,13 @@ Survival analysis is long-established within actuarial science but infrequently 
 	- [Selecting with dplyr by variable name, some column names are numbers](https://stackoverflow.com/questions/42854958/selecting-with-dplyr-by-variable-name-some-column-names-are-numbers)
 	- [Select multiple columns with `dplyr::select()` with numbers as names](https://stackoverflow.com/questions/38093584/select-multiple-columns-with-dplyrselect-with-numbers-as-names/38093676)
 	- [dplyr: select columns by position in NSE](https://stackoverflow.com/questions/42493381/dplyr-select-columns-by-position-in-nse). Another solution with dplyr :
-```
-DF %>%
-  select(!!c(1, 28:31))
-```
-	- COOL! Весьма детально разобрано. [How to dplyr rename a column, by column index?](https://stackoverflow.com/questions/42769650/how-to-dplyr-rename-a-column-by-column-index)
-	- [R: dplyr - Rename column name by position instead of name](https://stackoverflow.com/questions/29586219/r-dplyr-rename-column-name-by-position-instead-of-name/46223401)
+		```r
+		DF %>%
+		  select(!!c(1, 28:31))
+		```
+
+    - COOL! Весьма детально разобрано. [How to dplyr rename a column, by column index?](https://stackoverflow.com/questions/42769650/how-to-dplyr-rename-a-column-by-column-index)
+    - [R: dplyr - Rename column name by position instead of name](https://stackoverflow.com/questions/29586219/r-dplyr-rename-column-name-by-position-instead-of-name/46223401)
 - [Conditional replacement of column name in tibble using dplyr](https://stackoverflow.com/questions/43578723/conditional-replacement-of-column-name-in-tibble-using-dplyr)
 cf : https://www.rdocumentation.org/packages/dplyr/versions/0.7.6/topics/select
 - [Exclude columns by names in mutate_at in dplyr](https://stackoverflow.com/questions/44532888/exclude-columns-by-names-in-mutate-at-in-dplyr)
@@ -458,8 +460,7 @@ cf : https://www.rdocumentation.org/packages/dplyr/versions/0.7.6/topics/select
 - Существенный апдейт в dplyr 1.0 в выборе колонок, которых не существует в данных
 	- COOL! [dplyr 1.0.0: select, rename, relocate](https://www.tidyverse.org/blog/2020/03/dplyr-1-0-0-select-rename-relocate/)
 	- [dplyr::select() with some variables that may not exist in the data frame?](https://stackoverflow.com/questions/51529294/dplyrselect-with-some-variables-that-may-not-exist-in-the-data-frame)
-	- [Select helpers](https://tidyselect.r-lib.org/reference/select_helpers.html). `any_of()`: Same as `all_of()`, except that no error is thrown for names
-that don't exist.
+	- [Select helpers](https://tidyselect.r-lib.org/reference/select_helpers.html). `any_of()`: Same as `all_of()`, except that no error is thrown for names that don't exist.
 	- [tidyr 1.1.0](https://www.tidyverse.org/blog/2020/05/tidyr-1.1.0/)
 - Сортировка строк с указанием индексов колонок
 	- [Arranging rows in custom order using dplyr](https://stackoverflow.com/questions/46129322/arranging-rows-in-custom-order-using-dplyr)

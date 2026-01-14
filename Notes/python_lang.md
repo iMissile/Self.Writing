@@ -171,8 +171,13 @@ Wrote profile results to some-code.py.lprof
 ```
 ## Python Profiling Tools for Performance
 - [Top 7 Python Profiling Tools for Performance](https://daily.dev/blog/top-7-python-profiling-tools-for-performance), Feb 7, 2025
-- Austin
-	- [Austin extension for VS Code](https://marketplace.visualstudio.com/items?itemName=p403n1x87.austin-vscode)
+### Austin
+- [Austin releases](https://github.com/P403n1x87/austin/releases)
+- [Austin extension for VS Code](https://marketplace.visualstudio.com/items?itemName=p403n1x87.austin-vscode)
+
+Установите один раз
+`pip install austin-python austin-tui rich-cli`
+
 You can run the same command that VS Code is trying to run from a terminal, e.g.
 ```
 sudo austin -i 100 -o /path/to/austin/output.austin python -m pytest
@@ -196,7 +201,21 @@ and then open the `/path/to/austin/output.austin` from VS Code by clicking the O
 	pytest --profile --element-number=5
 ```
 
+`*.austin` содержит данные в бинарном виде.
+Чтобы превратить их в текст можно воспользоваться следующими командами под Windows:
+```
+# Windows (если есть Git Bash или Cygwin)
+strings output.austin > profile.txt
 
+# Или через PowerShell (медленно для больших файлов)
+Get-Content output.austin -Encoding Byte | 
+    ForEach-Object { if ($_ -ge 32 -and $_ -le 126) { [char]$_ } else { " " } } | 
+    Out-File -FilePath ascii_profile.txt
+```    
+### Austin viz
+- [Austin TUI](https://github.com/P403n1x87/austin-tui). The top-like text-based user interface for Austin. Пока требует 3.x версию Austin, MOJO формат данных, введенный в Austin версии 4.0, не поддерживает.
+  `austin-tui output.austin`
+- [Speedscope](https://www.speedscope.app/), an interactive [flamegraph](http://www.brendangregg.com/FlameGraphs/cpuflamegraphs.html) visualizer.
 # Conferences
 - [EuroPython Conference](https://www.youtube.com/c/EuroPythonConference/playlists)
 
@@ -442,6 +461,16 @@ And as always, make sure to save the installation commands with version-locked d
 - [How do I look inside a Python object?](https://stackoverflow.com/questions/1006169/how-do-i-look-inside-a-python-object)
 - Применительно к pandas dataframe:
 	- смотрим типы колонок `df.dtypes`
+
+# 12.11.2026
+- `pytest-xdist` — плагин для параллельного запуска тестов на нескольких CPU-ядрах или машинах.
+Установка:
+`pip install pytest-xdist`
+Использование:
+```
+pytest -n auto      # авто-определение числа ядер
+pytest -n 4         # явно 4 процесса
+```
 
 # 20.10.2025
 - [Что нового в Python 3.14. Разбираем главные изменения](https://thecode.media/chto-novogo-v-python-3-14/)

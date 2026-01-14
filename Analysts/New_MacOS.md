@@ -102,6 +102,13 @@ https://www.hightechdad.com/2017/02/06/onedrive-sync-issues-how-to-reset-onedriv
 - [Default Folder X](http://www.stclairsoft.com/DefaultFolderX/index.html)
 - [Alfred](https://www.alfredapp.com/). Spotlight replacement & extension
 
+## Еще новых tools, нарыл на M4
+- [Mounty](https://mounty.app/)
+- TextMate
+- Moped
+- Little Snitch
+- V2Box
+
 ## Homebrew
 - [Homebrew. The missing package manager for OS X](http://brew.sh/)
 - Error 'Another active Homebrew process is already in progress'. 
