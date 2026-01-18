@@ -974,7 +974,7 @@ Now the marks are invisible on normal work, but visible on selection only.
 	- Ставим **Docker Desktop** по инструкции [Начало работы с удаленными контейнерами Docker в WSL 2](https://docs.microsoft.com/ru-ru/windows/wsl/tutorials/wsl-containers)
 	- Docker может жрать немало памяти (гигабайты), поэтому есть инструкции по его тушению в случае ненужности. [Stopping Vmmem from using RAM](https://stackoverflow.com/questions/64165192/stopping-vmmem-from-using-ram). just `wsl --shutdown` in PowerShell or cmd.
 	- Собираем минимальный докер в концепции `renv` по репозиторию Богдана, запускаем изнутри wsl: `docker build -f rstudio-server.Dockerfile .` Можно добавить `-t rstudio-server.v1:4.1.2` - будет тэг к образу. Можно добавить `-v /opt:/opt` - будет зеркало папки из WSL в контейнер.
-	- Тэг надо вешать, иначе потом проблемы с запуском. [How to run the docker image with <none> tag](https://stackoverflow.com/questions/55115622/how-to-run-the-docker-image-with-none-tag). Команды по переименование тэгов можно посмотреть здесь: [docker tag](https://docs.docker.com/engine/reference/commandline/tag/), в частности `docker tag 0e5574283393 fedora/httpd:version1.0`
+	- Тэг надо вешать, иначе потом проблемы с запуском. [How to run the docker image with <none\> tag](https://stackoverflow.com/questions/55115622/how-to-run-the-docker-image-with-none-tag). Команды по переименование тэгов можно посмотреть здесь: [docker tag](https://docs.docker.com/engine/reference/commandline/tag/), в частности    `docker tag 0e5574283393 fedora/httpd:version1.0`
 	- Запускаем R командой `docker run -ti rstudio-server:4.1.2 /usr/local/bin/R` (или `/bin/bash` для консоли).
 	- [Изучаем Docker, часть 5: команды](https://habr.com/ru/company/ruvds/blog/440660/). Нашел проблемку с `with-contenv` [run script when dockercontainer starts?](https://askubuntu.com/questions/1054664/run-script-when-dockercontainer-starts)
 	- [WSL2 (docker) ports are not openend on host](https://stackoverflow.com/questions/69838995/wsl2-docker-ports-are-not-openend-on-host)
@@ -1127,3 +1127,65 @@ End Sub
 - [How to move .OST file to another location](https://learn.microsoft.com/en-us/answers/questions/5131480/how-to-move-ost-file-to-another-location)
 - [My Windows folder takes up too much space - how can I reduce it?](https://superuser.com/questions/378695/my-windows-folder-takes-up-too-much-space-how-can-i-reduce-it)
 - [Clean Up the WinSxS Folder](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/clean-up-the-winsxs-folder?view=windows-11)
+
+# Настройка Keenetic Giga
+## Настройка SSH на Keenetic Ultra KN-1811
+
+Понадобилось управлять Keenetic Ultra KN-1811 с версией прошивки 4.2.1 через SSH, однако [инструкция](https://help.keenetic.com/hc/en-us/articles/360000387189-SSH-remote-access-to-the-Keenetic-command-line) по его настройке оказалась не актуальной, пришлось слегка дополнить и упростить:
+
+1. Подключиться на Веб-интерфейс
+2. Перейти в раздел Management -> System Setting
+3. Выбрать пункт Component options
+4. Установить SSH-сервер и, при желании, SFTP-сервер
+5. Перезагрузить роутер
+6. По умолчанию SSH-сервер работает в private-сетях, то есть из локальной сети доступ по 22 порту должен быть из коробки, но у меня его не было, хотя сеть отвечала требованиям (и telnet из неё работал) - `show interface Home` показал `security-level: private`
+7. Проверить, что служба SSH запущена, можно выполнив команду `show processes`, либо перейдя по ссылке - [http://<router_ip>/rci/show/processes](http://%3Crouter_ip%3E/rci/show/processes), и найдя там "id": "SSH server" (должен быть в статусе RUNNING)
+
+8. Если компонент в статусе STOPPED, надо подключиться к роутеру с помощью telnet и выполнить команду `service ssh`
+9. Либо ту же самую команду выполнить в webcli по адресу [http://<router_ip/a](http://%3Crouter_ip/a)
+
+10. Подключиться к роутеру командой `ssh <user>@<router_ip>`. Пользователь должен быть таким же, как в административном интерфейсе.
+
+## Настраиваю в Опалихе
+
+На 2022 порту
+
+```
+ssh admin@192.168.1.1
+configure
+
+# 1. Conntrack
+ip conntrack max-entries 65536
+
+# 2. Ping-check
+ping-check profile _WEBADMIN_CdcEthernet0
+  update-interval 60
+  max-fails 3
+
+
+# 3. WifiMaster0 channel
+(config)> interface WifiMaster0
+(config-if)> channel auto-rescan 02:00 interval 24
+(config-if)> exit
+
+
+# 4. WifiMaster1 channel
+(config)> interface WifiMaster1
+(config-if)> channel auto-rescan 02:00 interval 24
+(config-if)> exit
+
+# 5. WifiMaster0 WPS
+interface WifiMaster0/AccessPoint0
+  no wps
+
+# 6. WifiMaster1 WPS
+interface WifiMaster1/AccessPoint0
+  no wps
+  
+# 7. Отключить WebDAV 
+no ip http webdav
+
+# 7-9. Сохраните все
+system configuration save
+exit
+```

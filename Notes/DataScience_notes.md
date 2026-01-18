@@ -753,8 +753,9 @@ Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'P
 - [lgr](https://s-fleck.github.io/lgr/) is a logging package for R built on the back of R6 classes. It is designed to be flexible, performant and extensible. The package vignette contains a comprehensive description of the features of lgr (some of them unique among R logging packages) along with many code examples.
 - [logger](https://daroczig.github.io/logger/). A lightweight, modern and flexibly logging utility for R – heavily inspired by the futile.logger R package and logging Python module.
 	- Где же он хранит имена файлов для логирования? Похоже, что здесь: `ls(logger:::namespaces)`. 
-	`str(logger:::namespaces$global)` дает
-```	
+	 `str(logger:::namespaces$global)` дает
+	
+```
 	List of 1
  $ default:List of 4
   ..$ threshold: 'loglevel' int 400
@@ -766,6 +767,9 @@ Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'P
   ..$ appender :function (lines)  
   .. ..- attr(*, "generator")= chr "logger::appender_file(file = log_file)"
 ```	
+
+
+
 - [jangorecki/logR](https://github.com/jangorecki/logR). Extended logging solution for R http://jangorecki.gitlab.io/logR
 - Logging function name
 	- [Logging current function name](https://stackoverflow.com/questions/7307987/logging-current-function-name)
