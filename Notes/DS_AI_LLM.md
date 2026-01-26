@@ -1,3 +1,8 @@
+
+# 26.01.2026
+## LLM
+- [# Внутри vLLM: Анатомия системы инференса LLM с высокой пропускной способностью](https://habr.com/ru/articles/957748/)
+- [# Что такое vLLM и зачем он нужен: серверный движок для инференса LLM](https://serverflow.ru/blog/stati/chto-takoe-vllm-i-zachem-on-nuzhen-servernyy-dvizhok-dlya-inferensa-llm/)
 # 24.11.2025
 ## LLM
 - [Тревога в мире LLM](https://telegra.ph/Trevoga-v-mire-LLM-11-10)

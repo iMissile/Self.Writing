@@ -755,7 +755,7 @@ Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'P
 	- Где же он хранит имена файлов для логирования? Похоже, что здесь: `ls(logger:::namespaces)`. 
 	 `str(logger:::namespaces$global)` дает
 	
-```
+```r
 	List of 1
  $ default:List of 4
   ..$ threshold: 'loglevel' int 400
@@ -764,11 +764,8 @@ Validate data in data frames, 'tibble' objects, and in database tables (e.g., 'P
   .. ..- attr(*, "generator")= chr "logger::layout_glue_generator(format = \"[{time}] {level} {namespace}/{fn}/ {msg}\")"
   ..$ formatter:function (..., .logcall = sys.call(), .topcall = sys.call(-1), .topenv = parent.frame())  
   .. ..- attr(*, "generator")= language formatter_glue()
-  ..$ appender :function (lines)  
-  .. ..- attr(*, "generator")= chr "logger::appender_file(file = log_file)"
-```	
-
-
+    .. ..- attr(*, "generator")= chr "logger::appender_file(file = log_file)"
+```
 
 - [jangorecki/logR](https://github.com/jangorecki/logR). Extended logging solution for R http://jangorecki.gitlab.io/logR
 - Logging function name
@@ -1694,6 +1691,10 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [Прощайте, базы данных, да здравствуют векторные базы данных](https://habr.com/ru/articles/791930/)
 - COOL! [Networking Toolbox](https://networking-toolbox.as93.net/). Your companion for all-things networking
 
+
+# 26.01.2026
+## R
+- COOL! [Performance Optimization for Plumber APIs: Async](https://joekirincic.com/posts/performance-optimization-for-plumber-apis-async/index.html). How async programming can improve API performance.
 # 10.12.2025
 - DiD [13 - Difference-in-Differences](https://matheusfacure.github.io/python-causality-handbook/13-Difference-in-Differences.html)
 
@@ -2235,7 +2236,7 @@ Then `getOption("shiny.testmode")` is `TRUE` when 'shinytest' is running the app
 - [Uploading html5 files made easy with the .selectFile command](https://www.cypress.io/blog/2022/01/19/uploading-files-with-selectfile)
 - Очень подробное объяснение. [Cypress basics: Uploading a file](https://filiphric.com/cypress-basics-uploading-file)
 - [Set Form Inputs](https://glebbahmutov.com/cypress-examples/recipes/set-form-inputs.html). Единичный и пакет.
-- [Select an <option> within a <select>](https://docs.cypress.io/api/commands/select)
+- [Select an \<option> within a \<select>](https://docs.cypress.io/api/commands/select)
 - [Working with Select elements and Select2 widgets in Cypress](https://www.cypress.io/blog/working-with-select-elements-and-select2-widgets-in-cypress)
 - [Cypress: selecting and iterating over R shiny selectizeInput elements](https://stackoverflow.com/questions/69710350/cypress-selecting-and-iterating-over-r-shiny-selectizeinput-elements)
 

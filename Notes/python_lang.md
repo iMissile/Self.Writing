@@ -462,6 +462,30 @@ And as always, make sure to save the installation commands with version-locked d
 - Применительно к pandas dataframe:
 	- смотрим типы колонок `df.dtypes`
 
+# 26.01.2026
+## API testing
+- `locust`
+```
+# Как использовать:
+# Сохраните этот код в файле process_graph_load_test.py
+
+# Установите Locust, если еще не установлен:
+
+# bash
+# pip install locust
+# Запустите тест:
+
+# bash
+# locust -f process_graph_load_test.py
+# locust -f ./lab/locust_test.py
+# Откройте веб-интерфейс в браузере: http://localhost:8089
+
+# Укажите:
+# Number of users (количество виртуальных пользователей)
+# Spawn rate (скорость создания пользователей в секунду)
+# Host (должен быть предустановлен в коде)
+```
+
 # 12.11.2026
 - `pytest-xdist` — плагин для параллельного запуска тестов на нескольких CPU-ядрах или машинах.
 Установка:
