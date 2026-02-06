@@ -1691,6 +1691,9 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 - [Прощайте, базы данных, да здравствуют векторные базы данных](https://habr.com/ru/articles/791930/)
 - COOL! [Networking Toolbox](https://networking-toolbox.as93.net/). Your companion for all-things networking
 
+# 07.02.2026
+# Dev
+- COOL! [gorules/zen-engine](https://gorules.io). Open-source Business Rules Engine for your Rust, NodeJS, Python, Go, Java, Kotlin (JVM), Kotlin (Android) and Swift (iOS) applications.
 
 # 26.01.2026
 ## R

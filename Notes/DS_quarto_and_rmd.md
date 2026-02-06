@@ -140,7 +140,7 @@ or raw html
 `.reveal pre.sourceCode code { ...`
 - [Slidecraft 101: Code and Output. All about styling code and output in slidecrafting](https://emilhvitfeldt.com/post/slidecraft-code-output/)
 - [Change color and background of chunk ouput in Quarto document](https://stackoverflow.com/questions/76610798/change-color-and-background-of-chunk-ouput-in-quarto-document)
-Quarto code chunk output is wrapped within a Div with class cell-output. If you want to style specific chunk output, use classes chunk option to assign a class and add/modify css styles for cell-output within that <classes> class.
+Quarto code chunk output is wrapped within a Div with class cell-output. If you want to style specific chunk output, use classes chunk option to assign a class and add/modify css styles for cell-output within that `<classes>` class.
 - [Qarto cell output params](https://quarto.org/docs/reference/cells/cells-knitr.html#cell-output)
 - [Quarto: Howto use a custom (Web)font?](https://stackoverflow.com/questions/73659027/quarto-howto-use-a-custom-webfont)
 - [embedio](https://quarto.thecoatlessprofessor.com/embedio/qembedio-embed-revealjs.html) Embed RevealJS Slides

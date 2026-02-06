@@ -197,10 +197,10 @@ The [Microsoft support tool NFI.exe](https://support.microsoft.com/en-us/help/25
 Перезагружаемся и все.
 
 Способ второй:
-Для этого нужно перейти в реестр Windows (запускаем через сочетание клавиш Windows + R, там прописываем regedit и жмём Enter).
+Для этого нужно перейти в реестр Windows (запускаем через сочетание клавиш `Windows + R`, там прописываем regedit и жмём Enter).
 Заходим в раздел
 
-HKEY_USERS\.Default\Keyboard Layout\Preload
+`HKEY_USERS\.Default\Keyboard Layout\Preload`
 Там два ключа, 1 и 2.
 В ключе 1 надо задать значение 409 (англ) в ключе 2 значение 419 (рус).
 Т.е. просто поменять местами, т.к. для русской локализации они заданы наоборот.
@@ -374,6 +374,13 @@ Go to Apps, then scroll down to find that app in the list of installed Apps and 
 
 ## Tools
 - [SmoothCSV](https://smoothcsv.com/) is a powerful and intuitive tool for editing CSV files. CSV editor
+- [rpigrep](https://github.com/BurntSushi/ripgrep). ripgrep is a line-oriented search tool that recursively searches the current directory for a regex pattern. [ripgrep: Not Just a Faster grep, but a Sharper One](https://dev.to/lovestaco/ripgrep-not-just-a-faster-grep-but-a-sharper-one-pe)
+```
+  choco install ripgrep
+  # in PWS
+  winget install BurntSushi.ripgrep.MSVC
+  rg --version
+```
 - [7 best tabbed command line tools for Windows 10](https://windowsreport.com/tabbed-command-line-windows-10/)
 	- Console2
 	- PowerCmd
@@ -896,9 +903,11 @@ Windows should now launch as it did before, even my last browser session appeare
 - Ставим FarManager [`choco install far`](https://community.chocolatey.org/packages/Far)
 - Устанавливаем FiraCode для RStudio. [`choco install firacode`](https://community.chocolatey.org/packages/FiraCode)
 - Устанавливаем новый PowerShell. [Installing PowerShell on Windows](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5#winget)
-Настраиваем дефолтный профиль всех интересующих PowerShell (если не создает, то можно поглядеть путь где профиль должен лежать через вывод переменной `$PROFILE`:
+Настраиваем дефолтный профиль всех интересующих PowerShell (если не создает, то можно поглядеть путь где профиль должен лежать через вывод переменной `$PROFILE`).
+Тут же настраиваем кэш uv на диск с проектами чтобы hadrlinks работали:
 ```
 notepad $PROFILE
+$env:UV_CACHE_DIR = "D:\uv-cache"
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 oh-my-posh init pwsh | Invoke-Expression
 ```

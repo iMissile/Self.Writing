@@ -414,6 +414,12 @@ How do I view all settings?
 Run `git config --list`, showing system, global, and (if inside a repository) local configs
 Run `git config --list --show-origin`, also shows the origin file of each config item
 
+## Удаление неактуальных локальных веток
+```bash
+git fetch --prune
+git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -d
+```
+
 # SmartGit
 ## Сравнение веток/коммитов
 - [How to compare two branches/commits?](https://docs.syntevo.com/SmartGit/Latest/HowTos/How-to-compare-two-branches-commits-)
