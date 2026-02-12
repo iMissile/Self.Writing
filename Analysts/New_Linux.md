@@ -252,3 +252,7 @@ getfacl pyProjects
 
 # Полезные утилитки
 - Крутой инструмент для работы с историей команд. Тулза называется [hiSHtory](https://github.com/ddworken/hishtory) и у нее очень богатый функционал: умеет хранить статистику выполнения команд, сохраняет дополнительную информацию о них (например, код завершения, или время выполнения команды), и позволяет синхронизировать данные между другими машинами. Удобно!
+# Performance
+- [Chapter 19. Profiling CPU usage in real time with perf top](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/monitoring_and_managing_system_status_and_performance/profiling-cpu-usage-in-real-time-with-top_monitoring-and-managing-system-status-and-performance)
+- [Chapter 18. Getting started with perf](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/monitoring_and_managing_system_status_and_performance/getting-started-with-perf_monitoring-and-managing-system-status-and-performance#installing-perf_getting-started-with-perf)
+- 

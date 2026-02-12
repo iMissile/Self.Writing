@@ -565,7 +565,39 @@ it
 
 
 
-# ==================================================
+# =======================================
+
+# 10.02.2026
+# Нюансы по запуску python кода в quarto
+При запуске надо правильно определяться в рабочей директорией, иначе ничего нормально не импортируется.
+Есть опция [project: executer-dir](https://quarto.org/docs/projects/code-execution.html#working-dir)
+Even if you didn't create a quarto project per se, but a simple quarto document within an R project, manually make a separate yml file. To do this, create a new text file, copy the text below and save as `_quarto.yml` [in the root directory](https://stackoverflow.com/questions/73186150/setting-the-directories-for-quarto-documents-in-rstudio).
+
+Решил следующим набором:
+1. `_quarto.yml` в корне с поддержкой рабочей директории
+2. функции поддержки в ./lib внутри, добавляя еще `__init__.py`
+3. setup chunk
+```python
+#| label: setup
+import sys
+from pathlib import Path
+import polars as pl
+import polars.selectors as cs
+from great_tables import GT, loc, style, md
+
+from lab.lib.refguide_helpers import (
+    find_root, load_fer, load_gesn,
+    column_stats, base_type_distribution, hierarchy_stats,
+    text_length_stats, measure_units_distribution,
+)
+
+ROOT = find_root("fer_gesn_analysis.qmd")
+INPUT_DIR = ROOT / "input_data"
+
+print(f"📁 Корень проекта: {ROOT}")
+```
+
+```
 
 # 10.09.2025
 - Весьма детальный разбор по программной генерации quarto кода. [Struggeling with creating code chunks prgramatically (why not cat everthing, and how to include execute options?) {#8560}](https://github.com/quarto-dev/quarto-cli/discussions/8560)
