@@ -1526,8 +1526,12 @@ Monash University, Australia
 - [Harlequin](https://harlequin.sh/). The DuckDB IDE for Your Terminal. A drop-in replacement for the DuckDB CLI.
 - [Every 2048th inserted date is incorrect #10180 {Open}](https://github.com/duckdb/duckdb/issues/10180)
 - [Frequently Asked Questions](https://duckdb.org/faq.html). Тут ответы про concurrency.
+- - [DuckDB execution plan visualizer](https://db.cs.uni-tuebingen.de/explain/)
+### duckDB UI
 - [The DuckDB Local UI](https://duckdb.org/2025/03/12/duckdb-ui)
-- [DuckDB execution plan visualizer](https://db.cs.uni-tuebingen.de/explain/)
+- [[l1xnan](https://github.com/l1xnan)/**[duckling](https://github.com/l1xnan/duckling)**](https://github.com/l1xnan/duckling). A fast viewer for CSV/Parquet files and databases such as DuckDB, SQLite, PostgreSQL, MySQL, Clickhouse, etc., base on Tauri
+- [Beekeeper Studio](https://www.beekeeperstudio.io/db/duckdb-client/). DuckDB GUI client for MacOS, Linux, and Windows
+
 
 ### duckDB articles
 - [R duckdb examples](https://github.com/duckdb/duckdb/commit/a2c4a58b7a92ab023a3b353ed970004f32f1423d)
@@ -1543,6 +1547,10 @@ Use SQL statements such as `INSERT INTO`. "You can, but you shouldn't. dplyr is 
 dbt (http://getdbt.com) adapter for DuckDB (http://duckdb.org)
 - [Manipulate big data with Arrow & DuckDB | Christophe Nicault](https://www.christophenicault.com/post/large_dataframe_arrow_duckdb/)
 - [DuckDB's CSV Reader and the Pollock Robustness Benchmark: Into the CSV Abyss](https://duckdb.org/2025/04/16/duckdb-csv-pollock-benchmark.html)
+
+# Document conversion
+- [Docling](https://www.docling.ai/) converts messy documents into structured data and simplifies downstream document and AI processing by detecting tables, formulas, reading order, OCR, and much more.
+- [Duckling UI](https://duckling-ui.org/). A modern, user-friendly graphical interface for [Docling](https://github.com/docling-project/docling) - the powerful document conversion library by IBM.
 
 # ML
 - Andrej Karpathy blog
