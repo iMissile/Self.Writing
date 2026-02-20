@@ -836,6 +836,9 @@ In Observable, though, cells run in the order they’re needed—what’s called
 - Пояснения по поводу `view` операторов, в частности, `viewof`: [Introduction to views](https://observablehq.com/@observablehq/views)
 - Slides! + demo notebook + Quarto dashboard example [Intro to Observable Plot](https://github.com/tashapiro/intro-observable) by Tanya Shapiro
 
+- COOL! Nicolas Lambert (Research Engineer in Geographical Information Sciences) анонсировал версию 1.0 JavaScript библиотеки [Geoviz](https://github.com/riatelab/geoviz) для создания тематических карт. Эта библиотека предоставляет набор функций для D3 и блокнотов Observable, позволяя управлять различными географическими слоями. 
+Если кто-то занимается цифровой географией и до сих пор не встречал Geoviz, то это большое упущение, посмотрите [галерею карт](https://observablehq.com/@neocartocnrs/geoviz).
+
 ## Примеры
 - [Crossfilter](http://crossfilter.github.io/crossfilter/). Fast Multidimensional Filtering for Coordinated Views
 	- [Vega-Lite Cross-Filter Example](https://observablehq.com/vega/vega-lite-cross-filter-example). A variation on the Crossfilter flights demo, made with the Vega-Lite API.

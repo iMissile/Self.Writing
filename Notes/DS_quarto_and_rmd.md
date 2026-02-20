@@ -571,7 +571,7 @@ it
 # Нюансы по запуску python кода в quarto
 При запуске надо правильно определяться в рабочей директорией, иначе ничего нормально не импортируется.
 Есть опция [project: executer-dir](https://quarto.org/docs/projects/code-execution.html#working-dir)
-Even if you didn't create a quarto project per se, but a simple quarto document within an R project, manually make a separate yml file. To do this, create a new text file, copy the text below and save as `_quarto.yml` [in the root directory](https://stackoverflow.com/questions/73186150/setting-the-directories-for-quarto-documents-in-rstudio).
+Even if you didn't create a quarto project per se, but a simple quarto document within an R project, manually make a separate yml file. To do this, create a new text file, copy the text below and save as `_quarto.yml` [in the root directory](https://stackoverflow.com/questions/73186150/setting-the-directories-for-quarto-documents-in-rstudio). https://stackoverflow.com/a/79369032
 
 Решил следующим набором:
 1. `_quarto.yml` в корне с поддержкой рабочей директории
@@ -596,7 +596,26 @@ INPUT_DIR = ROOT / "input_data"
 
 print(f"📁 Корень проекта: {ROOT}")
 ```
+4. Оказалось, что этого совсем недостаточно. Есть еще python магия!
+`Создать файл: D:\Python313\_libdocks3.pth`
+Создать файл .pth в глобальном site-packages (или в .venv, если используется venv) со следующим содержимым:
+`D:\iwork.MT\gpn-reks-python\libdocks3`
+Этот файл автоматически добавит корень проекта в `sys.path` при каждом запуске Python, что позволит импортировать модуль lab без дополнительного кода в setup блоке.
+Альтернативное решение (если используется venv)
+Создать файл `.venv\Lib\site-packages\_libdocks3.pth` с тем же содержимым.
 
+Объяснение
+Файлы `.pth (path configuration files)` - это специальные файлы Python, которые автоматически добавляют пути в sys.path при импорте модуля site. Они должны находиться в директории site-packages и содержать пути (по одному на строку), которые нужно добавить в sys.path.
+Это стандартный способ настройки путей Python без изменения кода приложения.
+
+Штатный способ реализации `editable install`:
+`pip install -e .`
+Это создаст .pth файл автоматически. При изменении кода переустановка не нужна.
+
+Вот что Cursor сказал: 
+```
+Правильное решение: build_py hook
+Рекомендуемый подход - использовать build_py hook вместо install:
 ```
 
 # 10.09.2025

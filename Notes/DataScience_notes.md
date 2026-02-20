@@ -1527,10 +1527,17 @@ Monash University, Australia
 - [Every 2048th inserted date is incorrect #10180 {Open}](https://github.com/duckdb/duckdb/issues/10180)
 - [Frequently Asked Questions](https://duckdb.org/faq.html). Тут ответы про concurrency.
 - - [DuckDB execution plan visualizer](https://db.cs.uni-tuebingen.de/explain/)
-### duckDB UI
+
+### duckDB & parquet UI
 - [The DuckDB Local UI](https://duckdb.org/2025/03/12/duckdb-ui)
-- [[l1xnan](https://github.com/l1xnan)/**[duckling](https://github.com/l1xnan/duckling)**](https://github.com/l1xnan/duckling). A fast viewer for CSV/Parquet files and databases such as DuckDB, SQLite, PostgreSQL, MySQL, Clickhouse, etc., base on Tauri
-- [Beekeeper Studio](https://www.beekeeperstudio.io/db/duckdb-client/). DuckDB GUI client for MacOS, Linux, and Windows
+- [duckling](https://github.com/l1xnan/duckling). A fast viewer for CSV/Parquet files and databases such as DuckDB, SQLite, PostgreSQL, MySQL, Clickhouse, etc., base on Tauri.
+Требует [Web2View](https://developer.microsoft.com/ru-ru/microsoft-edge/webview2/?form=MA13LH#download)
+Install `.CAB` file: `“DISM.exe /Online /Add-Package /PackagePath:c:\KBnumber.cab“`
+- [Duck-UI](https://duckui.com/)  makes working with data easy. Run SQL queries directly in your browser with DuckDB WASM - no server required!
+- Шлак. [Beekeeper Studio](https://www.beekeeperstudio.io/db/duckdb-client/). DuckDB GUI client for MacOS, Linux, and Windows
+
+- [Parquet Reader](https://parquetreader.app/). Transform how you work with Apache Parquet files. One double-click replaces dozens of command lines. Now available on macOS, Windows & Linux.
+
 
 
 ### duckDB articles
@@ -1551,6 +1558,7 @@ dbt (http://getdbt.com) adapter for DuckDB (http://duckdb.org)
 # Document conversion
 - [Docling](https://www.docling.ai/) converts messy documents into structured data and simplifies downstream document and AI processing by detecting tables, formulas, reading order, OCR, and much more.
 - [Duckling UI](https://duckling-ui.org/). A modern, user-friendly graphical interface for [Docling](https://github.com/docling-project/docling) - the powerful document conversion library by IBM.
+- [Stop Fighting With OCR: Convert Any Document to Markdown, HTML, or JSON Using SmolDocling](https://bibek-poudel.medium.com/stop-fighting-with-ocr-convert-any-document-to-markdown-html-or-json-using-smoldoclin-ca4281f2ed22)
 
 # ML
 - Andrej Karpathy blog
@@ -1696,9 +1704,16 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 
 # Tools
 - [SmoothCSV](https://smoothcsv.com/) is a powerful and intuitive tool for editing CSV files. CSV editor
+- [Tad](https://www.tadviewer.com/). A better way to view & analyze data. A fast viewer for **CSV** and **Parquet** files and **SQLite** and **DuckDb** databases that supports large files.
 - [Прощайте, базы данных, да здравствуют векторные базы данных](https://habr.com/ru/articles/791930/)
 - COOL! [Networking Toolbox](https://networking-toolbox.as93.net/). Your companion for all-things networking
+- [Beautiful Mermaid](https://agents.craft.do/mermaid). Mermaid Rendering, made beautiful.
+An open source library for rendering diagrams, designed for the age of AI: beautiful-mermaid. Ultra-fast, fully themeable, and outputs to both SVG and ASCII.
+Built by the team at Craft — because diagrams deserve great design too.
 
+# GraphQL
+- [GraphQL](https://graphql.org/). The query language for modern APIs
+- [Введение в GraphQL](https://systems.education/graphql-intro)
 # 07.02.2026
 # Dev
 - COOL! [gorules/zen-engine](https://gorules.io). Open-source Business Rules Engine for your Rust, NodeJS, Python, Go, Java, Kotlin (JVM), Kotlin (Android) and Swift (iOS) applications.

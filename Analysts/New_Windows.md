@@ -381,6 +381,7 @@ Go to Apps, then scroll down to find that app in the list of installed Apps and 
   winget install BurntSushi.ripgrep.MSVC
   rg --version
 ```
+- [Microsoft PowerToys](https://github.com/microsoft/PowerToys) is a collection of utilities that supercharge productivity and customization on Windows]
 - [7 best tabbed command line tools for Windows 10](https://windowsreport.com/tabbed-command-line-windows-10/)
 	- Console2
 	- PowerCmd
@@ -1136,6 +1137,18 @@ End Sub
 - [How to move .OST file to another location](https://learn.microsoft.com/en-us/answers/questions/5131480/how-to-move-ost-file-to-another-location)
 - [My Windows folder takes up too much space - how can I reduce it?](https://superuser.com/questions/378695/my-windows-folder-takes-up-too-much-space-how-can-i-reduce-it)
 - [Clean Up the WinSxS Folder](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/clean-up-the-winsxs-folder?view=windows-11)
+## Настройка µTorrent
+Достало мерцание и redraw в версии µTorrent 3.6
+Решил следующими изменениями
+```
+Настройки → Расширенные (Advanced)
+Найдите и установите следующие параметры:
+- offers.left_rail_offer_enabled → false
+- offers.sponsored_torrent_offer_enabled → false
+- gui.show_plus_upsell → false
+- bt.enable_pulse → false
+- sponsored_torrent_offer_enabled → false
+```
 
 # Настройка Keenetic Giga
 ## Настройка SSH на Keenetic Ultra KN-1811

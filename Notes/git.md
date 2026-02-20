@@ -415,6 +415,8 @@ Run `git config --list`, showing system, global, and (if inside a repository) lo
 Run `git config --list --show-origin`, also shows the origin file of each config item
 
 ## Удаление неактуальных локальных веток
+
+Запускаем в `git bash`
 ```bash
 git fetch --prune
 git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -d
