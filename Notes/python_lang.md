@@ -462,6 +462,29 @@ And as always, make sure to save the installation commands with version-locked d
 - Применительно к pandas dataframe:
 	- смотрим типы колонок `df.dtypes`
 
+# 25.02.2026
+## python, uv, quarto
+- Project initialization.
+1. Set `uv` cache on the same disk as project
+```
+notepad $PROFILE
+$env:UV_CACHE_DIR = "D:\uv-cache"
+```
+check in active PWS session: `$env:UV_CACHE_DIR`
+
+2. Install `uv`:
+`pip install uv`
+
+3. Set up a virtual environment and restore dependencies from uv.lock (including dev dependencies)
+`uv sync`
+
+- Convert .ipynb in .qmd
+From a terminal in the folder with your notebook, run:
+```
+quarto convert your_notebook.ipynb
+```
+
+
 # 26.01.2026
 ## API testing
 - `locust`
