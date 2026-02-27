@@ -216,6 +216,74 @@ Combine the best of RStudio and Visual Studio Code in Posit’s new Positron IDE
 - [Positron](https://github.com/posit-dev/positron), a next-generation data science IDE
 - [R code formatting #5534 {Closed}](https://github.com/posit-dev/positron/issues/5534)
 
+## Настройка debug в Positron
+Positron already includes the **Python Debugger** extension, but you still need `debugpy` installed in the *same Python environment* that Quarto uses to run your `.qmd`.[^1]
+
+### 1) Install `debugpy` into Quarto’s Python
+
+1) In Positron, select the Python interpreter you use for Quarto/Jupyter (Status bar → interpreter picker).[^1]
+2) Open a terminal in Positron (it should activate that interpreter), then run:
+```bash
+python -m pip install --upgrade debugpy
+```
+
+This is the standard installation method for `debugpy`.[^1]
+
+Notes:
+
+- If you use Conda/Mamba, you can also install via conda-forge/anaconda channels, but `pip` is fine for most setups.[^2][^1]
+- The key requirement is that the environment that executes Quarto’s Python chunks can `import debugpy`.[^1]
+
+
+### 2) Add a debug “server” cell in your `.qmd`
+
+Put this in an early Python chunk and execute it once per fresh kernel/session:
+
+```python
+import debugpy
+debugpy.listen(5678)
+debugpy.wait_for_client()  # pause until Positron attaches
+```
+
+This pattern (listen + wait + then attach from the IDE) is how Quarto+Jupyter workflows typically get a reliable debugger connection.[^3][^1]
+
+When you want to stop later, you can insert:
+
+```python
+debugpy.breakpoint()
+```
+
+Calling `debugpy.breakpoint()` is a supported way to trigger a breakpoint from code.[^1]
+
+### 3) Configure “Remote Attach” in Positron (`launch.json`)
+
+Create `.vscode/launch.json` in your project folder with an attach config like:
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python Debugger: Remote Attach (Quarto)",
+      "type": "debugpy",
+      "request": "attach",
+      "connect": { "host": "localhost", "port": 5678 },
+      "pathMappings": [
+        { "localRoot": "${workspaceFolder}", "remoteRoot": "." }
+      ]
+    }
+  ]
+}
+```
+
+VS Code-style debug configurations live in `launch.json`, and `type: "debugpy"` + `request: "attach"` is the standard attach mechanism.[^3][^1]
+
+Then go to **Run and Debug** → pick your config → Start; your `.qmd` will resume past `wait_for_client()`.[^3]
+
+### 4) Common gotchas (Quarto + kernels)
+
+- If it “hangs”, it’s usually paused at `debugpy.wait_for_client()`—attach once, then remove/disable that line when you’re done.[^1]
+- If you get `ModuleNotFoundError: debugpy`, you installed into a different interpreter than the one Quarto is using; re-select the interpreter and reinstall there.[^1]
 
 ## extensions
 - Расширение [pastum](https://marketplace.visualstudio.com/items?itemName=atsyplenkov.pastum). Pastum: paste as ... dataframe
