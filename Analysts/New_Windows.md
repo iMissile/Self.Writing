@@ -338,6 +338,7 @@ This restarts the Windows service responsible for handling audio.
 Fast, small, packed with features, customizable, free.
 	- [PDFgear](https://www.pdfgear.com/). Read, edit, convert, merge, and sign PDF files across devices, for completely free and without signing up.
 	- [PDF-XChange Editor](https://www.pdf-xchange.com/)
+- [PDFsam Basic](https://pdfsam.org/pdfsam-basic/) - a free, open source, multi-platform software designed to split, merge, extract pages, mix and rotate PDF files.- 
 ### Проблемы с Explorer
 - [SOLVED: Slow Windows Explorer (spinning blue circle ONLY in File Explorer)](https://www.reddit.com/r/WindowsHelp/comments/1ao71l6/solved_slow_windows_explorer_spinning_blue_circle/)
 This is a problem being cause by Adobe Creative Cloud.
@@ -997,6 +998,10 @@ Now the marks are invisible on normal work, but visible on selection only.
 Разрешение на удаленное управление антивирусом включила (галочку поставили) - квадратик стал зеленый ... )))
 добавить программу в список Доверенных программ https://support.kaspersky.com/KFA/21.3/ru-RU/201385.htm и включить исключение Разрешить взаимодействие с интерфейсом Kaspersky Free. 
 
+# Мониторинг активности
+- [ActivityWatch](https://activitywatch.net/) is an app that automatically tracks how you spend time on your devices. 
+It is **open source**, **privacy-first**, **cross-platform**, and a great alternative to services like RescueTime, ManicTime, and WakaTime. 
+It can be used to keep track of your productivity, time spent on different projects, bad screen habits, or just to understand how you spend your time]
 ## Аналоги программ Stardock Fences/Start10
 - [Transform your Windows desktop with Cairo](https://cairoshell.com/)
 	- Проблема с Language Bar. [A workaround before Cairo implement language bar functionality](https://github.com/cairoshell/cairoshell/issues/212#issuecomment-720018859). Тут расписано как можно Windows донастроить. Или You could use third party apps that provide tray icons and advanced switching options like the following https://github.com/iamkarlson/Mahou, переключатель раскладок.
