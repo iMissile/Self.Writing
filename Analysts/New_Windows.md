@@ -497,6 +497,11 @@ icacls.exe "E:\" /reset /T
 WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
 - [Wireguard с веб-интерфейсом](https://mishatugushev.ru/blog/?go=all/wireguard-dashboard/)
 
+### VLES
+- [Настройка надежного VPN сервера на протоколе VLESS + Reality](https://igancev.ru/2024-12-30-vless-reality-3x-ui-vpn)
+- [Установка 3X UI на Debian/Ubuntu](https://vdska.ru/page/ustanovka-paneli-3x-ui/)
+- [Personal proxy for dummies: a universal way to bypass censorship using VPS, 3X-UI, Reality/CDN and Warp](https://habr.com/ru/articles/990542/)
+- [Как ТСПУ ловит VLESS в 2026 и почему XHTTP — следующий шаг](https://habr.com/ru/articles/1009542/)
 
 ## RDP
 - [Как нажать Ctrl+Alt+Del работая удаленно через RDP ?](https://sysadmin.ru/articles/kak-nazhat-ctrlaltdel-rabotaya-udalenno-cherez-rdp). На помощь нам придет другая комбинация клавиш. Чтобы добиться аналогичного эффекта на удаленном компьютере, нужно нажать комбинацию клавиш `Control+Alt+End` (сокр. `Ctrl+Alt+End`).

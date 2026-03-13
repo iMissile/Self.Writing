@@ -1633,6 +1633,10 @@ These notes are based on the Time Series with R skill track at DataCamp and Rob 
 - [Time Series Basic/Intermediate](https://rpubs.com/arubio017/tslm) by Angel Rubio, 04/10/2022
 Introduction
 These are exercises on chapter #7 from “Forecasting Principles and Practice”
+- COOL! e-book [Mastering Modern Time Series Forecasting by Valery Manokhin ](https://leanpub.com/mastering_modern_time_series_forecasting)
+A Comprehensive Guide to Statistical, Machine Learning, and Deep Learning Models in Python]
+	- The [repo for Mastering Modern Time Series Forecasting](https://github.com/valeman/Mastering-Modern-Time-Series-Forecasting-The-Complete-Guide): The Complete Guide to Statistical, Machine Learning & Deep Learning Models in Python book https://valeman.gumroad.com/l/MasteringModernTimeSeriesForecasting
+	- Перевод. [Современное прогнозирование временных рядов](https://dmkpress.com/catalog/computer/statistics/978-5-93700-423-9/)
 
 
 # R & MacOS
