@@ -941,8 +941,10 @@ oh-my-posh init pwsh | Invoke-Expression
 - Ставим [DataRAM RAMDisk](http://memory.dataram.com/products-and-services/software/ramdisk) и спасаем SSD от Chrome (см выше по тексту).
 RAM Disk на `Y:`, выделяем под кэш Хрома 512 Мб, делаем Junction кэша хрома.
 - Ставим [OpenVPN Community edition](https://openvpn.net/community-downloads/)
-- Ставим SSH клиент [Bitvise SSH Client/xShell]
-	- [Tabby](https://tabby.sh/) is an infinitely customizable cross-platform terminal app for local shells, serial, SSH and Telnet connections.
+- Ставим SSH клиент 
+	- [Bitvise SSH Client/xShell]
+	- [Tabby](https://tabby.sh/) is an infinitely customizable cross-platform terminal app for local shells, serial, SSH and Telnet connections. И создаем профили для подключения через `tmux`.
+		- Закладка `LOGIN SCRIPTS`: Для Ubuntu `Expect = $`, `Send = tmux new-session -A -s work\r`
 - Ставим Zentimo xStorage Manager
 - Ставим SnagIt, блокируем его в файерволе (wf.msc) или касперском. [Best practices for configuring Защитник Windows firewall](https://docs.microsoft.com/ru-ru/windows/security/threat-protection/windows-firewall/best-practices-configuring).
 Переносим базы SnagIt
@@ -1221,3 +1223,14 @@ no ip http webdav
 system configuration save
 exit
 ```
+
+## Работа с процессами
+### Быстро снимаем процессы в Windows
+- PWS:  `Get-Process R,Rterm,quarto -ErrorAction SilentlyContinue | Stop-Process -Force`
+### Поиск залоченного процесса
+- [LockHunter](https://lockhunter.com/) by CrystalRich
+- [IObit Unlocker](https://www.iobit.com/en/iobit-unlocker.php)
+- `handle.exe` с сайта Microsoft Sysinternals. PWS: `.\handle.exe duckdb.dll`
+- Монитор ресурсов Windows
+	- `Win + R`, введите `resmon`. Вкладка **ЦП** (CPU) /  раздел **Связанные дескрипторы** (Associated Handles) / Поиск.
+- [SysInternals Process Explorer](https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer).

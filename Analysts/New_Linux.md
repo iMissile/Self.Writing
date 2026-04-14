@@ -131,6 +131,16 @@ sudo snap install pdftk
 
 # tmux
 - [Getting started with Tmux](https://linuxize.com/post/getting-started-with-tmux/)
+  ```
+  sudo apt install tmux 
+  ssh user@host 
+  tmux new -s work
+  ```
+Внутри `tmux` работайте как обычно, а чтобы “отцепиться” от сессии и оставить её жить, нажмите `Ctrl+b`, затем `d`.[](https://www.tecmint.com/keep-remote-ssh-sessions-running-after-disconnection/)​
+
+Вернуться потом можно так:[](https://www.tecmint.com/keep-remote-ssh-sessions-running-after-disconnection/)
+`ssh user@host tmux attach -t work`​
+
 - [Tmux on Windows](https://codeandkeep.com/Tmux-on-Windows/). Written on August 8, 2020
 
 # ubuntu не загружается, только GRUB виден

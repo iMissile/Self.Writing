@@ -462,6 +462,11 @@ And as always, make sure to save the installation commands with version-locked d
 - Применительно к pandas dataframe:
 	- смотрим типы колонок `df.dtypes`
 
+
+# 09.04.2026
+- [reactable-py](https://machow.github.io/reactable-py)reactable generates interactive tables in Python. It's a port of the R package [reactable](https://github.com/glin/reactable) by [@glin](https://github.com/glin).
+# 26.03.2026
+- [Jinja](https://jinja.palletsprojects.com/en/stable/) is a fast, expressive, extensible templating engine. Special placeholders in the template allow writing code similar to Python syntax. Then the template is passed data to render the final document.
 # 25.02.2026
 ## python, uv, quarto
 - Project initialization.

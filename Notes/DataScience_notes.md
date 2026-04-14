@@ -1529,7 +1529,10 @@ Monash University, Australia
 - - [DuckDB execution plan visualizer](https://db.cs.uni-tuebingen.de/explain/)
 
 ### duckDB & parquet UI
-- [The DuckDB Local UI](https://duckdb.org/2025/03/12/duckdb-ui)
+- [The DuckDB Local UI](https://duckdb.org/2025/03/12/duckdb-ui) `duck -ui`
+	- [Download](https://duckdb.org/install/)
+	- Notebook из DuckDB UI можно экспортировать, потому что UI хранит ноутбуки в локальной базе `ui.db` в каталоге `~/.duckdb/extension_data/ui/`
+	
 - [duckling](https://github.com/l1xnan/duckling). A fast viewer for CSV/Parquet files and databases such as DuckDB, SQLite, PostgreSQL, MySQL, Clickhouse, etc., base on Tauri.
 Требует [Web2View](https://developer.microsoft.com/ru-ru/microsoft-edge/webview2/?form=MA13LH#download)
 Install `.CAB` file: `“DISM.exe /Online /Add-Package /PackagePath:c:\KBnumber.cab“`
@@ -1721,6 +1724,13 @@ Built by the team at Craft — because diagrams deserve great design too.
 # 07.02.2026
 # Dev
 - COOL! [gorules/zen-engine](https://gorules.io). Open-source Business Rules Engine for your Rust, NodeJS, Python, Go, Java, Kotlin (JVM), Kotlin (Android) and Swift (iOS) applications.
+
+# 03.04.2026
+## R
+- Slides. [Working smarter with dplyr 1.2.0](https://ivelasq-dplyr-1-2-0.share.connect.posit.cloud/#/title-slide) by Isabella Velásquez
+- [R Mailing List Archives](https://r-mailing-lists.thecoatlessprofessor.com/)
+Browse and search 631,398 messages from 32 R mailing lists, dating back to 1997.
+		- [Preserving 29 Years of R Community Knowledge](https://blog.thecoatlessprofessor.com/posts/r-mailing-list-archives/) A searchable archive and analysis-ready dataset of 631,000+ messages from 32 R mailing lists.
 
 # 26.01.2026
 ## R

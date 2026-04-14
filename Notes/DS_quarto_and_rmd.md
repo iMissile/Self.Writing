@@ -178,6 +178,13 @@ project:
 - COOL! [Pass R object to Observable in Quarto](https://stackoverflow.com/questions/73873681/pass-r-object-to-observable-in-quarto)
 - [Observable Imports in Quarto](https://timelyportfolio.github.io/quarto_tests/examples/quarto_observable_imports/quarto_observable_imports.html)
 - [A beginner's guide to using Observable JavaScript, R, and Python with Quarto](https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html)
+- [How to publish with Quarto. Embedding Observable](https://jsoma.github.io/quarto-tutorial/)
+- [Guide > Interactivity > Observable JS](https://quarto.org/docs/interactive/ojs/) 
+- [A beginner's guide to using Observable JavaScript, R, and Python with Quarto](https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html)
+- [Big-Scale Data Dashboards With Observable Framework](https://www.appsilon.com/post/observable-framework-data-science-dashboards)
+- [Using Observable with reactable in Quarto](https://glin.quarto.pub/observable-reactable/)
+
+
 - [Page layout](https://quarto.org/docs/output-formats/page-layout.html#page-layout) позволяет указывать ширины блоков текста.
 - [How do I increase the width of the content column in Quarto](https://stackoverflow.com/questions/73611184/how-do-i-increase-the-width-of-the-content-column-in-quarto)
 Quarto version 1.3 allows setting the width of the sidebar, the body of the document, the margin of the document, and the margins between these elements (gutters) with sidebar-width, body-width, margin-width, and gutter-width options. Read [Article Grid Customization](https://quarto.org/docs/prerelease/1.3/grid.html#background) from quarto docs for details.
@@ -190,10 +197,7 @@ format:
       margin-width: 200px
     toc: true
 ```
-- [A beginner's guide to using Observable JavaScript, R, and Python with Quarto](https://www.infoworld.com/article/3674789/a-beginners-guide-to-using-observable-javascript-r-and-python-with-quarto.html)
-- [Big-Scale Data Dashboards With Observable Framework](https://www.appsilon.com/post/observable-framework-data-science-dashboards)
-- [Using Observable with reactable in Quarto](https://glin.quarto.pub/observable-reactable/)
-
+ 
 ## Quarto & duckdb
 - [DuckDB for Quarto](https://observablehq.com/@rlesur/quarto-duckdb)
 - [Using Quarto with OJS and DuckDB](https://forum.posit.co/t/using-quarto-with-ojs-and-duckdb/190311/2)
