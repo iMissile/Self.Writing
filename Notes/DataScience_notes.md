@@ -1721,6 +1721,11 @@ Built by the team at Craft — because diagrams deserve great design too.
 # GraphQL
 - [GraphQL](https://graphql.org/). The query language for modern APIs
 - [Введение в GraphQL](https://systems.education/graphql-intro)
+
+# 24.04.2026
+## R
+- [ggsql](https://ggsql.org/) brings the elegance of the [Grammar of Graphics](https://ggsql.org/get_started/grammar.html) to SQL.
+- [ggsql: A grammar of graphics for SQL](https://opensource.posit.co/blog/2026-04-20_ggsql_alpha_release/)
 # 03.04.2026
 ## R
 - Slides. [Working smarter with dplyr 1.2.0](https://ivelasq-dplyr-1-2-0.share.connect.posit.cloud/#/title-slide) by Isabella Velásquez
