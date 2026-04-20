@@ -14,7 +14,7 @@
 ```
 sudo apt update -qq 
 
-sudo apt install -y --no-install-recommends tmux wget curl git tree ncdu mc glances software-properties-common dirmngr htop
+sudo apt install -y --no-install-recommends tmux wget curl git tree ncdu mc glances software-properties-common dirmngr htop cmake
 ```
 
 ### Репозиторий CRAN для R (Ubuntu 24.04 noble)

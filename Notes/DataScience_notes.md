@@ -1721,16 +1721,18 @@ Built by the team at Craft — because diagrams deserve great design too.
 # GraphQL
 - [GraphQL](https://graphql.org/). The query language for modern APIs
 - [Введение в GraphQL](https://systems.education/graphql-intro)
-# 07.02.2026
-# Dev
-- COOL! [gorules/zen-engine](https://gorules.io). Open-source Business Rules Engine for your Rust, NodeJS, Python, Go, Java, Kotlin (JVM), Kotlin (Android) and Swift (iOS) applications.
-
 # 03.04.2026
 ## R
 - Slides. [Working smarter with dplyr 1.2.0](https://ivelasq-dplyr-1-2-0.share.connect.posit.cloud/#/title-slide) by Isabella Velásquez
 - [R Mailing List Archives](https://r-mailing-lists.thecoatlessprofessor.com/)
 Browse and search 631,398 messages from 32 R mailing lists, dating back to 1997.
 		- [Preserving 29 Years of R Community Knowledge](https://blog.thecoatlessprofessor.com/posts/r-mailing-list-archives/) A searchable archive and analysis-ready dataset of 631,000+ messages from 32 R mailing lists.
+ - [rplaywright](https://erikaris.github.io/rplaywright/) is designed to seamlessly bridge with the NodeJS library, [Playwright](https://playwright.dev/), enabling simplified web testing and automation for R users. 
+ - [Chromote](https://rstudio.github.io/chromote/) is an R implementation of the [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/). It works with Chrome, Chromium, Opera, Vivaldi, and other browsers based on [Chromium](https://www.chromium.org/).
+
+# 07.02.2026
+# Dev
+- COOL! [gorules/zen-engine](https://gorules.io). Open-source Business Rules Engine for your Rust, NodeJS, Python, Go, Java, Kotlin (JVM), Kotlin (Android) and Swift (iOS) applications.
 
 # 26.01.2026
 ## R

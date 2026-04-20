@@ -462,7 +462,10 @@ And as always, make sure to save the installation commands with version-locked d
 - Применительно к pandas dataframe:
 	- смотрим типы колонок `df.dtypes`
 
-
+# 16.04.2026
+## Python & pdf
+- [Comparing 6 Frameworks for Rule-based PDF parsing](https://www.ai-bites.net/comparing-6-frameworks-for-rule-based-pdf-parsing/)
+- [Python PDF Table Extraction: pdfplumber vs Camelot vs Tabula](https://invoicedataextraction.com/blog/python-pdf-table-extraction-invoices)
 # 09.04.2026
 - [reactable-py](https://machow.github.io/reactable-py)reactable generates interactive tables in Python. It's a port of the R package [reactable](https://github.com/glin/reactable) by [@glin](https://github.com/glin).
 # 26.03.2026

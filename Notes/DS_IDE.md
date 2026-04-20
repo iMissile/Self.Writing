@@ -210,6 +210,9 @@ Remember to leave a new line at the bottom of the file.
 ## Настройка под RMarkdown
 - [R Markdown Notebook in VS code](https://yingqijing.medium.com/r-markdown-notebook-in-vs-code-3adb5a61417a)
 
+## Vscode & AI
+- [Настройка MiniMax для работы в VScode](https://platform.minimax.io/docs/token-plan/claude-code)
+- [We Tested MiniMax M2.7 Against Claude Opus 4.6](https://blog.kilo.ai/p/we-tested-minimax-m27-against-claude)
 # Positron
 - COOL! [Fun with Positron](https://www.andrewheiss.com/blog/2024/07/08/fun-with-positron/)
 Combine the best of RStudio and Visual Studio Code in Posit’s new Positron IDE
