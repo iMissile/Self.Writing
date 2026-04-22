@@ -1726,6 +1726,10 @@ Built by the team at Craft — because diagrams deserve great design too.
 ## R
 - [ggsql](https://ggsql.org/) brings the elegance of the [Grammar of Graphics](https://ggsql.org/get_started/grammar.html) to SQL.
 - [ggsql: A grammar of graphics for SQL](https://opensource.posit.co/blog/2026-04-20_ggsql_alpha_release/)
+## Python
+- [Great Docs](https://posit-dev.github.io/great-docs/). An easy-to-use documentation site generator for Python packages
+- [Introducing Great Docs: Beautiful Documentation for Python Packages](https://opensource.posit.co/blog/2026-04-15_great-docs-introduction/)
+
 # 03.04.2026
 ## R
 - Slides. [Working smarter with dplyr 1.2.0](https://ivelasq-dplyr-1-2-0.share.connect.posit.cloud/#/title-slide) by Isabella Velásquez

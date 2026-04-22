@@ -462,6 +462,25 @@ And as always, make sure to save the installation commands with version-locked d
 - Применительно к pandas dataframe:
 	- смотрим типы колонок `df.dtypes`
 
+# 24.04.2024
+## Testing
+Настройка визуализации списка тестов в Cusrosr:
+
+1. Открыть правильную папку проекта
+    - `File -> Open Folder...`
+    - выбрать путь: `D:\iwork.MT\gpn-reks-python\mdms`
+2. Выбрать Python из venv
+    - `Ctrl+Shift+P` -> `Python: Select Interpreter`
+    - выбери `D:\iwork.MT\gpn-reks-python\mdms\.venv\Scripts\python.exe`
+3. Перенастроить discovery тестов
+    - `Ctrl+Shift+P` -> `Python: Configure Tests`
+    - framework: `pytest`
+    - test folder: `tests`
+4. Обновить тесты
+    - `Ctrl+Shift+P` -> `Testing: Refresh Tests`
+5. Если иконки Testing нет в левом сайдбаре
+    - правый клик по Activity Bar (где Explorer/Run/Source Control)
+    - включить пункт `Testing`
 # 16.04.2026
 ## Python & pdf
 - [Comparing 6 Frameworks for Rule-based PDF parsing](https://www.ai-bites.net/comparing-6-frameworks-for-rule-based-pdf-parsing/)
