@@ -1726,9 +1726,13 @@ Built by the team at Craft — because diagrams deserve great design too.
 ## R
 - [ggsql](https://ggsql.org/) brings the elegance of the [Grammar of Graphics](https://ggsql.org/get_started/grammar.html) to SQL.
 - [ggsql: A grammar of graphics for SQL](https://opensource.posit.co/blog/2026-04-20_ggsql_alpha_release/)
+- [mori](https://shikokuchuo.net/mori/). Shared Memory for R Objects
+- [mori: Shared memory for R objects](https://opensource.posit.co/blog/2026-04-23_mori-0-1-0/). mori is a new R package for sharing R objects across processes via OS-level shared memory. Parallel workers get zero-copy, lazy ALTREP access to the same physical pages — share once, read anywhere
 ## Python
 - [Great Docs](https://posit-dev.github.io/great-docs/). An easy-to-use documentation site generator for Python packages
 - [Introducing Great Docs: Beautiful Documentation for Python Packages](https://opensource.posit.co/blog/2026-04-15_great-docs-introduction/)
+## Dev
+- [pnpm](https://pnpm.io/): Save time. Save disk space. Supercharge your monorepos.] 
 
 # 03.04.2026
 ## R
