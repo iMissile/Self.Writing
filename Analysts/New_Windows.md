@@ -320,7 +320,7 @@ ipconfig /flushdns  и нажмите Enter.
 - [Как изменить TTL в Windows 10 и раздать безлимитный интернет со смартфона на компьютер](https://timeweb.com/ru/community/articles/kak-izmenit-ttl-v-windows-10-i-razdat-bezlimitnyy-internet-so-smartfona-na-kompyuter)
 
 
-# Audio
+# Audio/Звук
 - [Is there a way to restart audio without restarting a Windows 7 computer?](https://superuser.com/questions/521955/is-there-a-way-to-restart-audio-without-restarting-a-windows-7-computer)
 Open up a command prompt as administrator and run:
 ```
@@ -328,6 +328,22 @@ net stop audiosrv
 net start audiosrv
 ```
 This restarts the Windows service responsible for handling audio.
+
+Вот готовые команды PowerShell (запускать от администратора):
+```
+# Надежный вариант: стоп/старт по очереди
+Stop-Service -Name Audiosrv -Force -ErrorAction SilentlyContinue
+Stop-Service -Name AudioEndpointBuilder -Force -ErrorAction SilentlyContinue
+
+Start-Service -Name AudioEndpointBuilder
+Start-Service -Name Audiosrv
+```
+Проверка статуса:
+```
+Get-Service Audiosrv, AudioEndpointBuilder | Select-Object Name, Status, StartType
+```
+
+Если завис микшер -- передернуть Explorer.
 
 # Software
 
@@ -1234,3 +1250,8 @@ exit
 - Монитор ресурсов Windows
 	- `Win + R`, введите `resmon`. Вкладка **ЦП** (CPU) /  раздел **Связанные дескрипторы** (Associated Handles) / Поиск.
 - [SysInternals Process Explorer](https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer).
+
+# Terminal Trove
+
+[TUI Terminal Tools](https://terminaltrove.com/categories/tui/). 
+[Text User Interfaces](https://en.m.wikipedia.org/wiki/Text-based_user_interface "Text User Interfaces") (TUIs) emerged with early computing era, providing a text based layout, instead of graphical user interfaces (GUIs). They are useful in resource-constrained environments notably in server management, system administration programming, and file management.

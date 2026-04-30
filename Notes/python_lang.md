@@ -462,6 +462,9 @@ And as always, make sure to save the installation commands with version-locked d
 - Применительно к pandas dataframe:
 	- смотрим типы колонок `df.dtypes`
 
+# 30.04.2026
+- [Pendulum](https://pendulum.eustace.io/) Python datetimes made easy. Некий аналог `lubridate`
+
 # 24.04.2024
 ## Testing
 Настройка визуализации списка тестов в Cusrosr:
@@ -849,8 +852,8 @@ Add a `track=True` parameter to `SharedMemory`
 - Решение вопроса с зависающей кнопкой:
 	- [Python Tkinter button stuck down after press](https://stackoverflow.com/questions/38735643/python-tkinter-button-stuck-down-after-press). `bf1.config(relief="raised")` did the trick for me
 	- [Pressed button after leaving messagebox in tkinter](https://stackoverflow.com/questions/24721047/pressed-button-after-leaving-messagebox-in-tkinter). УРА!!!
-	To achieve the desired effect use the <ButtonRelease-1> event, instead of <Button-1> event:
-`button_drop.bind("<ButtonRelease-1>", on_click_button_drop)` This button-won't-return-after-messagebox issue seems to be wide-spread problem for people. It has taken me a lot of searching and various failures to find this perfect and simple solution, so brilliant to have such a simple answer.
+	To achieve the desired effect use the `<ButtonRelease-1>` event, instead of `<Button-1>` event:
+`button_drop.bind("<<ButtonRelease-1>>", on_click_button_drop)` This button-won't-return-after-messagebox issue seems to be wide-spread problem for people. It has taken me a lot of searching and various failures to find this perfect and simple solution, so brilliant to have such a simple answer.
 	- [Tkinter Relief styles](https://www.tutorialspoint.com/python/tk_relief.htm)
 	- [GUI help! TKInter keeps freezing when button is pressed](https://www.reddit.com/r/learnpython/comments/8lv3fe/gui_help_tkinter_keeps_freezing_when_button_is/)
 - [tkinter Canvas window size](https://stackoverflow.com/questions/40780634/tkinter-canvas-window-size)

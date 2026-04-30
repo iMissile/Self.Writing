@@ -1529,15 +1529,22 @@ Monash University, Australia
 - - [DuckDB execution plan visualizer](https://db.cs.uni-tuebingen.de/explain/)
 
 ### duckDB & parquet UI
+ - COOL! 
+[A curated list of awesome DuckDB resources](https://github.com/davidgasquez/awesome-duckdb)
+  
 - [The DuckDB Local UI](https://duckdb.org/2025/03/12/duckdb-ui) `duck -ui`
 	- [Download](https://duckdb.org/install/)
 	- Notebook из DuckDB UI можно экспортировать, потому что UI хранит ноутбуки в локальной базе `ui.db` в каталоге `~/.duckdb/extension_data/ui/`
-	
-- [duckling](https://github.com/l1xnan/duckling). A fast viewer for CSV/Parquet files and databases such as DuckDB, SQLite, PostgreSQL, MySQL, Clickhouse, etc., base on Tauri.
-Требует [Web2View](https://developer.microsoft.com/ru-ru/microsoft-edge/webview2/?form=MA13LH#download)
-Install `.CAB` file: `“DISM.exe /Online /Add-Package /PackagePath:c:\KBnumber.cab“`
+
+- [Harlequin](https://harlequin.sh/) An easy, fast, and beautiful database client for the terminal.
+- [xlDuckDb](https://github.com/RusselWebber/xlDuckDb). Use DuckDB within Excel with the xlDuckDb addin
+- [duckling](https://github.com/l1xnan/duckling). A fast viewer for CSV/Parquet files and databases such as DuckDB, SQLite, PostgreSQL, MySQL, Clickhouse, etc., base on Tauri. Требует [Web2View](https://developer.microsoft.com/ru-ru/microsoft-edge/webview2/?form=MA13LH#download):
+	- Install `.CAB` file: `“DISM.exe /Online /Add-Package /PackagePath:c:\KBnumber.cab“`
+	- Evergreen Standalone Installer: [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/)
+	- Если не запускается, а такое было: удаляем скобки из имени файла, очищаем директории `C:\Users\Ilya\AppData\Local\com.duckling.dev`, `C:\Users\Ilya\AppData\Roaming\com.duckling.dev`
 - [Duck-UI](https://duckui.com/)  makes working with data easy. Run SQL queries directly in your browser with DuckDB WASM - no server required!
 - Шлак. [Beekeeper Studio](https://www.beekeeperstudio.io/db/duckdb-client/). DuckDB GUI client for MacOS, Linux, and Windows
+
 
 - [Parquet Reader](https://parquetreader.app/). Transform how you work with Apache Parquet files. One double-click replaces dozens of command lines. Now available on macOS, Windows & Linux.
 
@@ -1722,6 +1729,12 @@ Built by the team at Craft — because diagrams deserve great design too.
 - [GraphQL](https://graphql.org/). The query language for modern APIs
 - [Введение в GraphQL](https://systems.education/graphql-intro)
 
+
+# 30.04.2026
+## Dev
+- [Yazi](https://yazi-rs.github.io/)⚡️ Blazing fast terminal file manager written in Rust, based on async I/O.]
+	-  [duckdb.yazi](https://github.com/wylie102/duckdb.yazi#duckdbyazi)
+**Uses [duckdb](https://github.com/duckdb/duckdb) to quickly preview and summarize data files in [yazi](https://github.com/sxyazi/yazi)!**]
 # 24.04.2026
 ## R
 - [ggsql](https://ggsql.org/) brings the elegance of the [Grammar of Graphics](https://ggsql.org/get_started/grammar.html) to SQL.
