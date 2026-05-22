@@ -325,3 +325,6 @@ Then go to **Run and Debug** → pick your config → Start; your `.qmd` will re
 - Настройка окружения для R. [Setup your environment](https://www.jetbrains.com/help/dataspell/setup-r-environment.html).
 Сначала надо поставить плагин для R. [Manage plugins](https://www.jetbrains.com/help/dataspell/managing-plugins.html)
 - [R plugin support](https://www.jetbrains.com/help/dataspell/r-plugin-support.html)
+
+# IDE LLM Agents
+- [Dirac] для работы с Deepseek

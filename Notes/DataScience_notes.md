@@ -104,6 +104,7 @@ https://www.crowdgames.ru/page/plany-crowd-games
 - COOL! COOL! [A comprehensive survey of the types of things in R. 'mode' and 'class' and 'typeof' are insufficient](https://stackoverflow.com/questions/8855589/a-comprehensive-survey-of-the-types-of-things-in-r-mode-and-class-and-type)
 	- 2022: [...] at this point, mode and storage.mode are legacy features left over from S. You should only ever need to care about `class()` and `typeof()`.
 - [A personal history of the tidyverse](https://hadley.github.io/25-tidyverse-history/) by Hadley Wickham, January 27, 2025
+- [S at 50](https://blog.r-project.org/2026/05/05/s-at-50/index.html) by Martyn Plummer. A poster by Balasubramanian Narasimhan summarizes 50 years of S and R.
 
 
 # e-books
@@ -1735,6 +1736,16 @@ Built by the team at Craft — because diagrams deserve great design too.
 - [Yazi](https://yazi-rs.github.io/)⚡️ Blazing fast terminal file manager written in Rust, based on async I/O.]
 	-  [duckdb.yazi](https://github.com/wylie102/duckdb.yazi#duckdbyazi)
 **Uses [duckdb](https://github.com/duckdb/duckdb) to quickly preview and summarize data files in [yazi](https://github.com/sxyazi/yazi)!**]
+- COOL! [SlothDB](https://slothdb.org/) is an embedded SQL database that runs everywhere: on your laptop, on a server, and in the browser. Built from scratch. **Up to 5× faster** where it counts.
+- [Ripgrep](https://ripgrep.org/) is a powerful command-line search tool that recursively scans directories for regex patterns. It provides lightning-fast search results, respects `.gitignore` rules, and ensures efficient code navigation.
+- [ripgrep Documentation](https://ripgrep.dev/docs/)
+Everything you need to get the most out of the fastest search tool for developers. From first install to advanced configuration.
+- [karpathy](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f#file-llm-wiki-md)  LLM Wiki. A pattern for building personal knowledge bases using LLMs.
+
+
+## R
+- [A collection of Claude Skills from Posit](https://github.com/posit-dev/skills)
+- [r-cursorrules-prompt-file-best-practices](https://github.com/PatrickJS/awesome-cursorrules/tree/main/rules/r-cursorrules-prompt-file-best-practices)
 # 24.04.2026
 ## R
 - [ggsql](https://ggsql.org/) brings the elegance of the [Grammar of Graphics](https://ggsql.org/get_started/grammar.html) to SQL.

@@ -484,6 +484,9 @@ And as always, make sure to save the installation commands with version-locked d
 5. Если иконки Testing нет в левом сайдбаре
     - правый клик по Activity Bar (где Explorer/Run/Source Control)
     - включить пункт `Testing`
+6. Если Testing всё ещё не появился:
+	- `Ctrl+Shift+P` → Python: Discover Tests
+	- `Ctrl+Shift+P` → Python: Select Interpreter → выбери `.\.venv\Scripts\python.exe`     
 # 16.04.2026
 ## Python & pdf
 - [Comparing 6 Frameworks for Rule-based PDF parsing](https://www.ai-bites.net/comparing-6-frameworks-for-rule-based-pdf-parsing/)
@@ -609,7 +612,7 @@ Using Python’s ElementTree XML Parser, its possible to quickly parse data with
  True
  >>> bool("   ".strip())
  False
- ```
+```
 
 
 # 19.04.2025
