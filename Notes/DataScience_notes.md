@@ -1969,6 +1969,10 @@ d:/R/user/win-library/%v%
 ## JS
 - [Elkjs Tree](https://reactflow.dev/examples/layout/elkjs)
 - [ELK's layout algorithms for JavaScript](https://github.com/kieler/elkjs)
+- [https://robinmennens.github.io/Portfolio/stableprocessgraphs.html](https://robinmennens.github.io/Portfolio/stableprocessgraphs.html "https://robinmennens.github.io/Portfolio/stableprocessgraphs.html")
+- Статьи по раскладке я собирал здесь: [https://wiki.media-tel.ru/pages/viewpage.action?pageId=170754099](https://wiki.media-tel.ru/pages/viewpage.action?pageId=170754099 "https://wiki.media-tel.ru/pages/viewpage.action?pageId=170754099")
+ - А ELK кратко описан здесь: [https://eclipse.dev/elk/blog/posts/2025/25-08-21-layered.html](https://eclipse.dev/elk/blog/posts/2025/25-08-21-layered.html "https://eclipse.dev/elk/blog/posts/2025/25-08-21-layered.html")
+ - Но это только основные этапы, опций там очень много: [https://eclipse.dev/elk/reference/algorithms/org-eclipse-elk-layered.html](https://eclipse.dev/elk/reference/algorithms/org-eclipse-elk-layered.html "https://eclipse.dev/elk/reference/algorithms/org-eclipse-elk-layered.html")
 
 # 05.04.2025
 ## R

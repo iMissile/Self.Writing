@@ -413,6 +413,7 @@ Go to Apps, then scroll down to find that app in the list of installed Apps and 
 - [Direct Folders — экономим клики при работе с файлами в Windows](https://lifehacker.ru/direct-folders-ekonomim-kliki-pri-rabote-s-fajlami-v-windows/)
 - [Listary](https://www.listary.com/) is a revolutionary search utility for Windows that makes finding your files and launching applications blazing fast, for casual and power users alike!
 - [Clover 3](http://en.ejie.me/). Wings for your Windows Explorer! Clover is an extension of the Windows Explorer, to add multi-tab functionality similar to Google Chrome browser. After install Clover, you will be able to open multiple folders within the same window, and you can also add folder bookmarks.
+- [System Informer](https://systeminformer.sourceforge.io/). A **free**, powerful, multi-purpose tool that helps you **monitor system resources**, **debug software** and **detect malware**.
 
 - [6 Best Free Video Metadata Editor Software For Windows](https://listoffreeware.com/free-video-metadata-editor-software-windows/)
 - [How to strip audio streams from an MKV file?](https://superuser.com/questions/77504/how-to-strip-audio-streams-from-an-mkv-file)

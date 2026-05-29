@@ -1,5 +1,6 @@
 # ZED
 - [Zed](https://zed.dev/) is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter. It's also open source.
+- [LLM Providers](https://zed.dev/docs/ai/llm-providers#llm-providers)
 
 # AI IDE
 - [Windsurf AI IDE](https://codeium.com/windsurf)

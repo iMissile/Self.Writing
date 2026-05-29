@@ -38,6 +38,7 @@ A compact, human-readable encoding of the JSON data model for LLM prompts.
 - [Claude API Pricing Calculator](https://invertedstone.com/calculators/claude-pricing)
 - [Models & pricing. Choosing the right model](https://docs.claude.com/en/docs/about-claude/models/choosing-a-model)
 - [Models overivew](https://docs.claude.com/en/docs/about-claude/models/overview)
+- [Claude desktop app silently downloads a 13 GB file on every launch — and you can't stop it](https://www.reddit.com/r/ClaudeAI/comments/1rlc71n/claude_desktop_app_silently_downloads_a_13_gb/). It's a sandbox
 
 ## Grok
 - [Models and Pricing](https://docs.x.ai/docs/models)
