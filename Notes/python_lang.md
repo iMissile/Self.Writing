@@ -462,6 +462,8 @@ And as always, make sure to save the installation commands with version-locked d
 - Применительно к pandas dataframe:
 	- смотрим типы колонок `df.dtypes`
 
+# 10.06.2026
+- [Libraries for your Python Polars workflows](https://opensource.posit.co/blog/2026-06-04_libraries-for-python-polars/)
 # 30.04.2026
 - [Pendulum](https://pendulum.eustace.io/) Python datetimes made easy. Некий аналог `lubridate`
 

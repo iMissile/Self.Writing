@@ -262,6 +262,41 @@ Or to account for the already occupied screen real estate, in my case a 90 pixel
 - COOL! [Combining Shiny and Quarto. A love story.](https://rappa.shinyapps.io/shiny_quarto/)
 - COOL! [Quarto Dashboards](https://quarto.org/docs/dashboards/)
 
+## Quarto & logging
+как мне сохранить весь лог quarto render в файл? все потоки
+
+
+Взвесил варианты перенаправления потоков для Windows и Unix систем
+Зависит от оболочки. У вас в консоли был `PS …>`, значит PowerShell — для него так:
+```powershell
+quarto render *> render.log
+```
+
+`*>` перенаправляет **все** потоки (stdout, stderr, warning, verbose) в файл. Если хотите видеть лог на экране и одновременно писать в файл:
+```powershell
+quarto render *>&1 | Tee-Object -FilePath render.log
+```
+
+Важный нюанс PowerShell 5.1: `>`/`*>` пишут файл в UTF-16, и кириллица потом может выглядеть криво в других программах. Чтобы получить UTF-8:
+```powershell
+quarto render *>&1 | Out-File -Encoding utf8 render.log
+```
+
+Для **cmd.exe** (если вдруг там):
+```cmd
+quarto render > render.log 2>&1
+```
+
+Для **bash / Git Bash / WSL**:
+```bash
+quarto render > render.log 2>&1          # только в файл
+quarto render 2>&1 | tee render.log      # и на экран, и в файл
+```
+
+Во всех случаях `2>&1` / `*>` захватывают и вывод R/knitr, и pandoc, и саму Quarto — то есть та же ошибка `kbl`, что вы видели, попала бы в файл целиком.
+
+Отдельно: у Quarto есть и собственный флаг логирования — `quarto render --log render.log --log-level info`. Но он пишет только лог самой Quarto и не всегда содержит полный консольный вывод R-чанков, поэтому для «всех потоков» надёжнее перенаправление оболочки выше. Можно совмещать: `quarto render --log quarto.log *>&1 | Tee-Object full.log`.
+
 
 ## RMarkdown & knitr
 - COOL! [Meta RMarkdown - Taxonomy and Use cases](https://themockup.blog/posts/2020-07-25-meta-rmarkdown/)
