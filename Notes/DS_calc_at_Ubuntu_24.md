@@ -65,6 +65,8 @@ sudo apt install -y --no-install-recommends r-base libcurl4-openssl-dev libssl-d
 ```
 sudo useradd -m ruser 
 sudo passwd ruser
+# настроить запуск bash при логине
+sudo chsh -s /bin/bash ruser
 ```
 
 `UID > 100` у `useradd с -m` будет по умолчанию, так что всё ок.[](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/156316841/70bd59d4-d0a0-4c1b-b229-64fed3319011/DS_calc_at_Ubuntu_24.md)

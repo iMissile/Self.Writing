@@ -962,6 +962,8 @@ RAM Disk на `Y:`, выделяем под кэш Хрома 512 Мб, дела
 	- [Bitvise SSH Client/xShell]
 	- [Tabby](https://tabby.sh/) is an infinitely customizable cross-platform terminal app for local shells, serial, SSH and Telnet connections. И создаем профили для подключения через `tmux`.
 		- Закладка `LOGIN SCRIPTS`: Для Ubuntu `Expect = $`, `Send = tmux new-session -A -s work\r`
+	-  Конфиг живет по адресу `%APPDATA%\tabby\config.yaml`
+	
 - Ставим Zentimo xStorage Manager
 - Ставим SnagIt, блокируем его в файерволе (wf.msc) или касперском. [Best practices for configuring Защитник Windows firewall](https://docs.microsoft.com/ru-ru/windows/security/threat-protection/windows-firewall/best-practices-configuring).
 Переносим базы SnagIt
