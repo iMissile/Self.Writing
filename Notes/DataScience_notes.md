@@ -1544,6 +1544,7 @@ Monash University, Australia
 	- Evergreen Standalone Installer: [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/)
 	- Если не запускается, а такое было: удаляем скобки из имени файла, очищаем директории `C:\Users\Ilya\AppData\Local\com.duckling.dev`, `C:\Users\Ilya\AppData\Roaming\com.duckling.dev`
 - [Duck-UI](https://duckui.com/)  makes working with data easy. Run SQL queries directly in your browser with DuckDB WASM - no server required!
+- - [Random Fractals, Inc.](https://marketplace.visualstudio.com/publishers/RandomFractalsInc) created two DuckDB Visual Studio Code IDE extensions that allow you to view and query local data, DuckDB files, and remote data sources: [DuckDB Pro Tools](https://randomfractals.github.io/pro-data-tools/#duckdb-pro-tools) and [DuckDB SQL Tools](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.duckdb-sql-tools).
 - Шлак. [Beekeeper Studio](https://www.beekeeperstudio.io/db/duckdb-client/). DuckDB GUI client for MacOS, Linux, and Windows
 
 

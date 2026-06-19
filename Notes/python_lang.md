@@ -464,6 +464,7 @@ And as always, make sure to save the installation commands with version-locked d
 
 # 10.06.2026
 - [Libraries for your Python Polars workflows](https://opensource.posit.co/blog/2026-06-04_libraries-for-python-polars/)
+- [Introducing pointblank: Data Validation in Python](https://posit.co/blog/introducing-pointblank-for-python)
 # 30.04.2026
 - [Pendulum](https://pendulum.eustace.io/) Python datetimes made easy. Некий аналог `lubridate`
 
