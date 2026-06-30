@@ -1,0 +1,165 @@
+{
+  "main": {
+    "id": "7b852aebc41754ca",
+    "type": "split",
+    "children": [
+      {
+        "id": "1bce0493bfb77731",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "844f10d866acd543",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/python_lang.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "python_lang"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ece658501fa90459",
+    "type": "split",
+    "children": [
+      {
+        "id": "2550b72bbf0647f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5a651bab3404747b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "565ffacb45cac679",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "0253a304af3110ce",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "558dd0cb4a8eec84",
+    "type": "split",
+    "children": [
+      {
+        "id": "53d50d245c854500",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3478fe31e448e1bc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Notes/DS_quarto_and_rmd.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для DS_quarto_and_rmd"
+            }
+          },
+          {
+            "id": "802b37553c09493f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-ghost",
+              "title": "all-properties"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "command-palette:Открыть палитру команд": false,
+      "markdown-importer:Импорт Markdown-файлов": false,
+      "bases:Создать новую базу": false
+    }
+  },
+  "active": "565ffacb45cac679",
+  "lastOpenFiles": [
+    "Notes/VPN/instructions_3x-ui.md",
+    "Notes/VPN/instructions_hysteria.md",
+    "Notes/VPN",
+    "Notes/Новая папка",
+    "Notes/git.md",
+    "Notes/python_lang.md",
+    "Analysts/IoT.md",
+    "Notes/DataScience_notes.md",
+    "Notes/DS_calc_at_Ubuntu_24.md",
+    "Analysts/New_Windows.md",
+    "Pasted image 20260611130546.png",
+    "Usefull tools/34 Top Free Data Mining Software - Predictive Analytics Today.md",
+    "Notes/DS_AI_LLM.md",
+    "Notes/DS_IDE.md",
+    "Analysts/New_Linux.md",
+    "Notes/DataScience_notes_2018.md",
+    "Notes/R_clean_install.md",
+    "Notes/R_clean_install - Copy.md",
+    "Notes/R_create_packages.md",
+    "Notes/DS_quarto_and_rmd.md"
+  ]
+}
