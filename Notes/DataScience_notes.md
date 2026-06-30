@@ -1731,6 +1731,9 @@ Built by the team at Craft — because diagrams deserve great design too.
 - [GraphQL](https://graphql.org/). The query language for modern APIs
 - [Введение в GraphQL](https://systems.education/graphql-intro)
 
+# 23.06.2026
+## R
+- [tidymodels Cheatsheets](https://opensource.posit.co/blog/2026-04-29_tidymodels-cheatsheets/)
 # 15.06.2026
 ## R
 - COOL! [ggcube]([matthewkling.github.io/ggcube/](https://matthewkling.github.io/ggcube/ "https://matthewkling.github.io/ggcube/")) lets you build 3D figures using ggplot2

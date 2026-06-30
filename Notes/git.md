@@ -60,7 +60,7 @@ git rebase origin/master
 # Git в картинках
 - [A Visual Git Reference](https://marklodato.github.io/visual-git-guide/index-en.html)
 - [Understanding Git through images](https://dev.to/nopenoshishi/understanding-git-through-images-4an1)
-- [Git. Скачем между ветками как древесные лягушки](https://habr.com/ru/articles/826260/)
+- [Git. Скачем между ветками как древесные лягушки](https://habr.com/ru/articles/826260/) `git worktree add`
 
 # Q&A
 - [GitLab Docs](https://docs.gitlab.com/ee/README.html)
