@@ -329,3 +329,7 @@ Then go to **Run and Debug** → pick your config → Start; your `.qmd` will re
 
 # IDE LLM Agents
 - [Dirac] для работы с Deepseek
+- [DeepSeek V4 for Copilot Chat](https://marketplace.visualstudio.com/items?itemName=Vizards.deepseek-v4-for-copilot)
+- Positron
+	- [Add DeepSeek authentication provider {13898}](https://github.com/posit-dev/positron/pull/13898)
+	- [# Assistant: support DeepSeek as a provider {13652}](https://github.com/posit-dev/positron/issues/13652)
