@@ -63,6 +63,14 @@ I recently ported my blog to quarto. In this post I highlight the key features, 
 	- [Plotly not correctly scaled based on width and height {#4836}](https://github.com/quarto-dev/quarto-cli/issues/4836)
 	- [Why is the layout of a graph from visnetwork in html too small](https://stackoverflow.com/questions/50250060/why-is-the-layout-of-a-graph-from-visnetwork-in-html-too-small)
 
+## Quarto & IDE
+- Чтобы не было flash сообщений в закладке `Problems` вносим  правку в `pyproject.toml`: добавил секцию `pylint`, чтобы Quarto-временные файлы игнорировались.
+
+Изменение:
+
+- В `pyproject.toml` добавлен блок:
+    - `[tool.pylint.main]`
+    - `ignore-patterns = ["^\\.vdoc\\..*\\.py$"]`
 ## Quarto parametrization
 - [How to use Quarto for Parameterized Reporting](https://www.mm218.dev/posts/2022-08-04-how-to-use-quarto-for-parameterized-reporting/). You know. If you wanna.
 ```{r}

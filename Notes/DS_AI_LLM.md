@@ -39,6 +39,17 @@ A compact, human-readable encoding of the JSON data model for LLM prompts.
 - [Models & pricing. Choosing the right model](https://docs.claude.com/en/docs/about-claude/models/choosing-a-model)
 - [Models overivew](https://docs.claude.com/en/docs/about-claude/models/overview)
 - [Claude desktop app silently downloads a 13 GB file on every launch — and you can't stop it](https://www.reddit.com/r/ClaudeAI/comments/1rlc71n/claude_desktop_app_silently_downloads_a_13_gb/). It's a sandbox
+- [Работаем с Claude Code на десктопе из России](https://habr.com/ru/companies/ruvds/articles/1020062/)
+- [Почему я ухожу из Timeweb Cloud: 46 часов простоя в Амстердаме за два месяца — по данным самого хостера](https://habr.com/ru/articles/1053872/)
+- Проверяем доступность Claude с VPS
+  ```
+  # Проверка доступа в интернет с сервера
+curl -I https://claude.ai
+curl -I https://google.com
+# Проверка DNS
+nslookup claude.ai
+nslookup google.com
+  ```
 
 ## Grok
 - [Models and Pricing](https://docs.x.ai/docs/models)
