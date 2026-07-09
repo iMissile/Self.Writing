@@ -1731,6 +1731,20 @@ Built by the team at Craft — because diagrams deserve great design too.
 - [GraphQL](https://graphql.org/). The query language for modern APIs
 - [Введение в GraphQL](https://systems.education/graphql-intro)
 
+# 10.07.2026
+## R & AI
+- [mcptools](https://posit-dev.github.io/mcptools/) implements the [Model Context Protocol](https://modelcontextprotocol.io/) in R. There are two sides to mcptools:
+	- **R as an MCP server**
+	- **R as an MCP client**
+## Стягиваем с Youtube
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp). A feature-rich command-line audio/video downloader
+  `winget install yt-dlp.yt-dlp`
+## AI SDLC tools
+- [Headroom](https://headroomlabs.ai/). Compress everything  your AI agent reads. 
+Every tool call, DB query, file read, and RAG retrieval is 70–95% boilerplate. Headroom compresses it away before it hits the model. Same answers, fraction of the tokens.
+- [Open Notebook](https://www.open-notebook.ai/). Take Control of Your Learning. Privately.
+A powerful open-source, AI-powered note-taking/research platform that respects your privacy]
+- [5 инструментов для саммаризации YouTube](https://www.unite.ai/ru/youtube-summarizer-tools/)
 # 23.06.2026
 ## R
 - [tidymodels Cheatsheets](https://opensource.posit.co/blog/2026-04-29_tidymodels-cheatsheets/)
