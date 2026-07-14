@@ -1736,6 +1736,13 @@ Built by the team at Craft — because diagrams deserve great design too.
 - [mcptools](https://posit-dev.github.io/mcptools/) implements the [Model Context Protocol](https://modelcontextprotocol.io/) in R. There are two sides to mcptools:
 	- **R as an MCP server**
 	- **R as an MCP client**
+## R
+- COOL! [vellumverse](https://r-vellum.github.io/vellumverse/) installs and loads the _vellum_ graphics ecosystem in one step, the way [tidyverse](https://www.tidyverse.org/) does for data science. 
+	  - [**vellum**](https://github.com/r-vellum/vellum) -- low-level graphics backend, a Rust scene graph, unit/layout engine, and PNG/SVG/PDF renderer
+- COOL! [ggcube]([matthewkling.github.io/ggcube/](https://matthewkling.github.io/ggcube/ "https://matthewkling.github.io/ggcube/")) lets you build 3D figures using ggplot2
+- [watcher 0.2.0](# watcher 0.2.0: filesystem watching for R, and the engine behind Shiny auto-reload) filesystem watching for R, and the engine behind Shiny auto-reload
+## Dev
+- COOL! [ImGui](https://github.com/ocornut/imgui) is a **bloat-free graphical user interface library for C++**.
 ## Стягиваем с Youtube
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp). A feature-rich command-line audio/video downloader
   `winget install yt-dlp.yt-dlp`
@@ -1748,10 +1755,6 @@ A powerful open-source, AI-powered note-taking/research platform that respects y
 # 23.06.2026
 ## R
 - [tidymodels Cheatsheets](https://opensource.posit.co/blog/2026-04-29_tidymodels-cheatsheets/)
-# 15.06.2026
-## R
-- COOL! [ggcube]([matthewkling.github.io/ggcube/](https://matthewkling.github.io/ggcube/ "https://matthewkling.github.io/ggcube/")) lets you build 3D figures using ggplot2
-
 # 30.04.2026
 ## Dev
 - [Yazi](https://yazi-rs.github.io/)⚡️ Blazing fast terminal file manager written in Rust, based on async I/O.]

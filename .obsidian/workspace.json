@@ -140,6 +140,7 @@
   },
   "active": "844f10d866acd543",
   "lastOpenFiles": [
+    "LLM/set_user_ml_cache_env.ps1",
     "LLM/cursor_rules_gpn.md",
     "LLM/cursor_rules.md",
     "LLM",
