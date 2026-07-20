@@ -823,13 +823,28 @@ wsl --export Ubuntu D:\backup\ubuntu.tar
 wsl --unregister Ubuntu
 wsl --import Ubuntu D:\WSL\Ubuntu D:\backup\ubuntu.tar
 ```
+Перенос доп. Ubuntu 24 при сохранении 20:
+```
+# 1. Останавливаем всё
+wsl --shutdown
+
+# 2. Экспортируем 24.04
+wsl --export Ubuntu-24.04 D:\ubuntu24_backup.tar
+
+# 3. Удаляем старую
+wsl --unregister Ubuntu-24.04
+
+# 4. Импортируем на D
+wsl --import Ubuntu-24.04 D:\WSL\Ubuntu24 D:\ubuntu24_backup.tar --version 2
+```
+
 Точно также перетаскиваем образы Docker Desktop (не работает, не запускается потом докер !!!)
 ```
 wsl --export docker-desktop-data d:\backup\docker-desktop-data.tar
 wsl --unregister docker-desktop-data
 wsl --import docker-desktop-data D:\WSL\DockerDesktopWSL D:\backup\docker-desktop-data.tar
 ```
-овторно импортировать можно выполнив в директории `%USERPROFILE%\AppData\Local\Docker\wsl\data`
+Повторно импортировать можно выполнив в директории `%USERPROFILE%\AppData\Local\Docker\wsl\data`
 ```
 wsl --import-in-place docker-desktop-data ext4.vhdx
 ```
