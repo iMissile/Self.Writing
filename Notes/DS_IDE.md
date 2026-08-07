@@ -55,6 +55,11 @@ As an aside the downloading of the VSIX and then > Extension: Install VSIX in Cu
 	After that in cursor with the command (Ctrl + Shift + P) Install from VSIX I can select and install the extension. Hope it works for y’all.
 ````
 
+- Отключаем серую зону в правом сайдбаре агентов ( пустой сайдбар списка агентов справа (под multi-agent), а не весь Agents Window). Как убрать:
+	1. Ctrl+E — переключить Agent layout → Editor
+	2. Или иконка раскладки слева от шестерёнки (квадрат с боковой панелью) → выбрать Editor
+	3. Или Cursor Settings → Editor / Layout → Editor
+  После этого серая колонка справа должна пропасть, чат останется как обычная панель.
 
 # VScode
 ## VScode web

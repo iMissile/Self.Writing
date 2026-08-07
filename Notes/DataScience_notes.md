@@ -1752,6 +1752,9 @@ Every tool call, DB query, file read, and RAG retrieval is 70–95% boilerplate.
 - [Open Notebook](https://www.open-notebook.ai/). Take Control of Your Learning. Privately.
 A powerful open-source, AI-powered note-taking/research platform that respects your privacy]
 - [5 инструментов для саммаризации YouTube](https://www.unite.ai/ru/youtube-summarizer-tools/)
+
+# 08.08.2026
+- COOL! [Lean](https://lean-lang.org/) is an open-source programming language and proof assistant that enables correct, maintainable, and formally verified code
 # 23.06.2026
 ## R
 - [tidymodels Cheatsheets](https://opensource.posit.co/blog/2026-04-29_tidymodels-cheatsheets/)

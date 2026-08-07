@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Analysts/New_Windows.md",
+                "file": "Infra/New_Windows.md",
                 "mode": "source",
                 "source": false
               },
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Файловый менеджер"
@@ -53,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "New Windows",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -140,17 +142,22 @@
   },
   "active": "844f10d866acd543",
   "lastOpenFiles": [
+    "Notes/DataScience_notes.md",
+    "Infra/New_MacOS.md",
+    "Infra/New_Linux.md",
+    "Infra/New_Windows.md",
+    "Infra",
+    "Новая папка",
     "Notes/DS_IDE.md",
+    "Analysts/New_Windows.md",
     "LLM/quarto_vdoc_linter_ignore.md",
     "Notes/DS_quarto_and_rmd.md",
     "Notes/python_lang.md",
-    "Notes/DataScience_notes.md",
     "LLM/set_user_ml_cache_env.ps1",
     "LLM/cursor_rules_gpn.md",
     "LLM/cursor_rules.md",
     "LLM",
     "Notes/DS_AI_LLM.md",
-    "Analysts/New_Windows.md",
     "Notes/VPN/instructions_3x-ui.md",
     "Notes/VPN/instructions_hysteria.md",
     "Notes/VPN",
