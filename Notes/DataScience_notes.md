@@ -1731,6 +1731,9 @@ Built by the team at Craft — because diagrams deserve great design too.
 - [GraphQL](https://graphql.org/). The query language for modern APIs
 - [Введение в GraphQL](https://systems.education/graphql-intro)
 
+# 10.08.2026
+- [Meet Gizmos](https://gizmos.explorelearning.com/). The world's largest library of math and science simulations.
+- COOL! [Lean](https://lean-lang.org/) is an open-source programming language and proof assistant that enables correct, maintainable, and formally verified code
 # 10.07.2026
 ## R & AI
 - [mcptools](https://posit-dev.github.io/mcptools/) implements the [Model Context Protocol](https://modelcontextprotocol.io/) in R. There are two sides to mcptools:
@@ -1753,8 +1756,6 @@ Every tool call, DB query, file read, and RAG retrieval is 70–95% boilerplate.
 A powerful open-source, AI-powered note-taking/research platform that respects your privacy]
 - [5 инструментов для саммаризации YouTube](https://www.unite.ai/ru/youtube-summarizer-tools/)
 
-# 08.08.2026
-- COOL! [Lean](https://lean-lang.org/) is an open-source programming language and proof assistant that enables correct, maintainable, and formally verified code
 # 23.06.2026
 ## R
 - [tidymodels Cheatsheets](https://opensource.posit.co/blog/2026-04-29_tidymodels-cheatsheets/)
