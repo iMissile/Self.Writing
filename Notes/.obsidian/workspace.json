@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DataScience_notes.md",
+                "file": "python_lang.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DataScience_notes"
+              "title": "python_lang"
             }
           }
         ]
@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "kernel",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -185,13 +185,13 @@
   },
   "active": "b1620c454f30fbb3",
   "lastOpenFiles": [
-    "DS_quarto_and_rmd.md",
+    "DS_IDE.md",
     "python_lang.md",
-    "Untitled 1.base",
     "DataScience_notes.md",
+    "DS_quarto_and_rmd.md",
+    "Untitled 1.base",
     "git.md",
     "DS_AI_LLM.md",
-    "DS_IDE.md",
     "Untitled.base"
   ]
 }
