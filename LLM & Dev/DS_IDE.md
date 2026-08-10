@@ -225,6 +225,15 @@ Combine the best of RStudio and Visual Studio Code in Posit’s new Positron IDE
 - [Positron](https://github.com/posit-dev/positron), a next-generation data science IDE
 - [R code formatting #5534 {Closed}](https://github.com/posit-dev/positron/issues/5534)
 
+## Data Connections (DuckDB) — экспериментальный превью (2026.07+)
+- Включить: Settings (Ctrl+,) → поиск "Data Connections" → **Data Connections: Enabled**, либо в `settings.json`: `"dataConnections.enabled": true`
+- Перезагрузить окно: Ctrl+Shift+P → **Developer: Reload Window**
+- В сайдбаре появится панель **Data Connections** → Add Connection (+) → **DuckDB** → указать `.duckdb` файл (абсолютный / относительный к воркспейсу / `~/`) → опционально **Read Only** → имя → Save
+- Двойной клик по таблице/вью — открыть в Data Explorer; меню «···» → **Connect With** — код подключения Python/R
+- Для Connect With нужен пакет `duckdb` в активном окружении: `uv add duckdb` (или `pip install duckdb`)
+- Пока только read-only, свой SQL выполнять нельзя
+- [Data Connections discussion #14571](https://github.com/posit-dev/positron/discussions/14571)
+
 ## Настройка debug в Positron
 Positron already includes the **Python Debugger** extension, but you still need `debugpy` installed in the *same Python environment* that Quarto uses to run your `.qmd`.[^1]
 
