@@ -1734,6 +1734,10 @@ Built by the team at Craft — because diagrams deserve great design too.
 # 10.08.2026
 - [Meet Gizmos](https://gizmos.explorelearning.com/). The world's largest library of math and science simulations.
 - COOL! [Lean](https://lean-lang.org/) is an open-source programming language and proof assistant that enables correct, maintainable, and formally verified code
+## AI
+- COOL! [Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident](https://huggingface.co/blog/agent-intrusion-technical-timeline)
+## OCR & LLM
+- [PyMuPDF4LLM](https://pymupdf.readthedocs.io/en/latest/pymupdf4llm/) is a lightweight extension for PyMuPDF that turns PDFs into clean, structured data with minimal setup. It includes layout analysis _without_ any GPU requirement.
 # 10.07.2026
 ## R & AI
 - [mcptools](https://posit-dev.github.io/mcptools/) implements the [Model Context Protocol](https://modelcontextprotocol.io/) in R. There are two sides to mcptools:

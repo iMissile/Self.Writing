@@ -409,6 +409,7 @@ Go to Apps, then scroll down to find that app in the list of installed Apps and 
 	- PowerShell ISE
 - [Windows Command Line Tools For Developers. Tabbed Console starts here](https://blogs.msdn.microsoft.com/commandline/2018/04/13/tabbed-console-starts-here/)
 - COOL! [Windows Terminal 1.0](https://devblogs.microsoft.com/commandline/windows-terminal-1-0/)
+- [Directory Opus](https://www.gpsoft.com.au/) is a complete replacement for Explorer, with far more functionality than any other file manager available today.
 - [MSIX Tutorial: A comprehensive 24-chapter guide](https://www.advancedinstaller.com/msix-introduction.html)
 - [Direct Folders — экономим клики при работе с файлами в Windows](https://lifehacker.ru/direct-folders-ekonomim-kliki-pri-rabote-s-fajlami-v-windows/)
 - [Listary](https://www.listary.com/) is a revolutionary search utility for Windows that makes finding your files and launching applications blazing fast, for casual and power users alike!
@@ -444,6 +445,7 @@ Far.exe /import settings.cfg
 
 - [Windhawk](https://windhawk.net/). The customization marketplace for Windows and programs
 	- «Better file sizes in Explorer» - Показываем размеры папок в Проводнике Windows 11
+- [Typora](https://typora.io/) Markdown Editor
 
 ## Tips
 - [Бесплатно продлеваем Kiwi for Gmail](https://dailysoftwaredeal.com/seller/giveaway-kiwi-for-gmail-windows-mac-1-year-license/). Тут идет покупка, если из приложения не доступно пока. https://www.kiwiforgmail.com/. Code: KiwiForFree
