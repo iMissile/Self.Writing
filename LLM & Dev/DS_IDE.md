@@ -60,6 +60,9 @@ As an aside the downloading of the VSIX and then > Extension: Install VSIX in Cu
 	2. Или иконка раскладки слева от шестерёнки (квадрат с боковой панелью) → выбрать Editor
 	3. Или Cursor Settings → Editor / Layout → Editor
   После этого серая колонка справа должна пропасть, чат останется как обычная панель.
+## Rules & Skills
+- [Agent Skills](https://cursor.com/docs/skills)
+- [Как использовать навыки Cursor: полное руководство](https://www.kimi.ai/ru/resources/cursor-skills)
 
 # VScode
 ## VScode web

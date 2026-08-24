@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Infra/New_Windows.md",
+                "file": "LLM & Dev/DS_IDE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "New_Windows"
+              "title": "DS_IDE"
             }
           }
         ],
@@ -155,15 +155,15 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "6b190ebbd68b08ed",
+  "active": "5a651bab3404747b",
   "lastOpenFiles": [
+    "Notes/DataScience_notes.md",
+    "Infra/New_Windows.md",
     "LLM & Dev/DS_IDE.md",
     "Notes/SOI_reverse.md",
     "Notes/wireshark.md",
     "Infra/DS_calc_at_Ubuntu_24.md",
     "LLM & Dev/DS_AI_LLM.md",
-    "Infra/New_Windows.md",
-    "Notes/DataScience_notes.md",
     "Infra/New_MacOS.md",
     "Infra/New_Linux.md",
     "Infra",

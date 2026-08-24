@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "MuPDF",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,8 +76,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -183,7 +182,7 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "0bfe402ebaf0a25f",
+  "active": "3988471af9523ccf",
   "lastOpenFiles": [
     "python_lang.md",
     "DS_IDE.md",

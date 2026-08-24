@@ -1731,6 +1731,11 @@ Built by the team at Craft — because diagrams deserve great design too.
 - [GraphQL](https://graphql.org/). The query language for modern APIs
 - [Введение в GraphQL](https://systems.education/graphql-intro)
 
+# 20.08.2026
+- COOL! [Pandia](https://www.pandia.app/) The JSON _workbench_.
+Open any JSON instantly — even a **multi-gigabyte** file. See it five ways, generate types for **nine languages**, compare, repair, and export — all in one fast, native, **offline** app. Free and open source.]
+## ML
+- [Neural networks in Orbital for Python 0.6.0: PyTorch straight to your database](https://opensource.posit.co/blog/2026-08-17_pyorbital-0-6-0/)
 # 10.08.2026
 - [Meet Gizmos](https://gizmos.explorelearning.com/). The world's largest library of math and science simulations.
 - COOL! [Lean](https://lean-lang.org/) is an open-source programming language and proof assistant that enables correct, maintainable, and formally verified code
