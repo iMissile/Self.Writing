@@ -1527,11 +1527,10 @@ Monash University, Australia
 - [Harlequin](https://harlequin.sh/). The DuckDB IDE for Your Terminal. A drop-in replacement for the DuckDB CLI.
 - [Every 2048th inserted date is incorrect #10180 {Open}](https://github.com/duckdb/duckdb/issues/10180)
 - [Frequently Asked Questions](https://duckdb.org/faq.html). Тут ответы про concurrency.
-- - [DuckDB execution plan visualizer](https://db.cs.uni-tuebingen.de/explain/)
+- [DuckDB execution plan visualizer](https://db.cs.uni-tuebingen.de/explain/)
 
 ### duckDB & parquet UI
- - COOL! 
-[A curated list of awesome DuckDB resources](https://github.com/davidgasquez/awesome-duckdb)
+ - COOL! [A curated list of awesome DuckDB resources](https://github.com/davidgasquez/awesome-duckdb)
   
 - [The DuckDB Local UI](https://duckdb.org/2025/03/12/duckdb-ui) `duck -ui`
 	- [Download](https://duckdb.org/install/)
