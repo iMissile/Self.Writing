@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/DataScience_notes.md",
+                "file": "LLM & Dev/DS_AI_LLM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DataScience_notes"
+              "title": "DS_AI_LLM"
             }
           }
         ],
@@ -70,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Duckdb",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,8 +91,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -156,10 +155,10 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "565ffacb45cac679",
+  "active": "6b190ebbd68b08ed",
   "lastOpenFiles": [
-    "LLM & Dev/DS_IDE.md",
     "Notes/DataScience_notes.md",
+    "LLM & Dev/DS_IDE.md",
     "Infra/New_Windows.md",
     "Notes/SOI_reverse.md",
     "Notes/wireshark.md",

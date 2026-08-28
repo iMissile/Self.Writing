@@ -1,4 +1,12 @@
 
+# 26.08.2026
+## AI
+- [DeepSeek Harness developer preview](https://deepseek.com/harness/en/)
+- [The AI-Native SDLC playbook](https://claude.com/blog/the-ai-native-sdlc-playbook). How to transform your software development lifecycle with AI—stage by stage.
+- [A deep dive into Grok Bot](https://flaviocopes.com/grok-bot/) by [Flavio Copes](https://flaviocopes.com/about/), Aug 22, 2026
+- [LLM Wiki Карпатого: ИИ-агент, который сам ведёт вашу базу знаний](https://aibot.direct/blog/karpathy-llm-wiki)
+- [Harness Engineering for Self-Improvement](https://lilianweng.github.io/posts/2026-07-04-harness/)
+- [Harness engineering for coding agent users](https://martinfowler.com/articles/harness-engineering.html)
 # 26.01.2026
 ## LLM
 - [# Внутри vLLM: Анатомия системы инференса LLM с высокой пропускной способностью](https://habr.com/ru/articles/957748/)
