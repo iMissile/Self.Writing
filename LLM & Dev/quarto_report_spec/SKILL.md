@@ -91,6 +91,12 @@ Python 3.13, `uv`, единое `.venv` в корне, запуск через `
 комментарий «почему она». Полный разбор состава и запретов —
 `references/stack.md`.
 
+**Windows: UTF-8 в CLI.** Консоль по умолчанию cp1251; инструмент с `print("→")`
+или таблицей Polars падает после расчёта. В начале `main()` каждого
+`lab/tools/*.py` — `stdout`/`stderr.reconfigure(encoding="utf-8")` (с `hasattr`).
+Не полагаться только на `$env:PYTHONIOENCODING` или профиль PowerShell.
+Подробно — `references/tooling.md`, раздел «Консоль Windows и UTF-8».
+
 ### 3. `paths.py` — единственная точка переноса
 
 Корни данных и артефактов в одном модуле. Ни один другой файл не знает путей
@@ -146,7 +152,7 @@ Python 3.13, `uv`, единое `.venv` в корне, запуск через `
 | `references/runs.md` | прогоны, манифест, кэши, воспроизводимость |
 | `references/html_output.md` | **два графических стека**, контракт Quarto+HTML |
 | `references/visual_language.md` | палитра, знаменатель, пустые состояния, ширины |
-| `references/tooling.md` | инструменты, цикл правки, меняющей числа |
+| `references/tooling.md` | инструменты, **UTF-8 в CLI на Windows**, цикл правки |
 | `references/error_kinds.md` | роды ошибок, которые отчёт обязан не повторять |
 
 Шаблоны в `assets/` — рабочие, не иллюстративные:
