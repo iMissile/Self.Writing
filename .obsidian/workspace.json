@@ -70,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "harnes",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,7 +91,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -155,7 +156,7 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "6b190ebbd68b08ed",
+  "active": "565ffacb45cac679",
   "lastOpenFiles": [
     "Notes/DataScience_notes.md",
     "LLM & Dev/DS_IDE.md",

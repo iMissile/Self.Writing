@@ -384,6 +384,39 @@ net start wsearch <ENTER>
 - [Переименование папок почты в Outlook 2016](https://answers.microsoft.com/ru-ru/msoffice/forum/msoffice_outlook-mso_win10-mso_365hp/%D0%BF%D0%B5%D1%80%D0%B5%D0%B8%D0%BC%D0%B5%D0%BD/09bb0f12-8dda-4a5c-bd3d-657efde45595)
 - [Guide to change OST file location for Outlook 365 account](https://www.recoveryfix.com/blog/guide-to-change-ost-file-location-outlook-365/)
 
+### Зависает синхронизация после клонирования диска C на SSD
+Симптомы: при старте Outlook синхронизируется, потом висит «Синхронизация…»; при закрытии не выходит из трея; в журнале Windows (Outlook, Application) — *The store was last opened on a different machine*.
+
+Причина не обязательно «другой компьютер». После **клонирования системного диска на новый SSD** меняется идентификатор машины в OST (GUID тома, оборудование). Outlook считает кэш чужим и уходит в бесконечную выверку. Симлинк OST/PST на другой том (`D:\Users\...\Outlook`) иногда усугубляет задержки при закрытии.
+
+**Порядок починки** (Outlook закрыт, процесс `OUTLOOK.EXE` в диспетчере задач отсутствует):
+
+1. **SCANPST** — основной шаг. Office 365 / 16.x поддерживает тихий режим с несколькими проходами:
+```
+"C:\Program Files\Microsoft Office\Root\Office16\SCANPST.EXE" -file "ПУТЬ\к\файлу.ost" -silent -force -rescan 10 -log replace
+"C:\Program Files\Microsoft Office\Root\Office16\SCANPST.EXE" -file "ПУТЬ\к\файлу.pst" -silent -force -rescan 10 -log replace
+```
+Логи появляются рядом с файлом: `имяфайла.log` (кодировка UTF-16). Устойчивое состояние — последний проход только *Finished Scanning*, без *Start Repairing*. На OST ~8 ГБ — 5–15 мин; на PST ~3,5 ГБ — 3–5 мин.
+
+2. **Перенос OST/PST на штатное место** — *опционально*, только если на `C:` хватает места (~12 ГБ для типичного профиля). Штатные пути:
+   - OST: `%LOCALAPPDATA%\Microsoft\Outlook\*.ost`
+   - PST: тот же каталог или отдельная папка по выбору
+
+   Если OST уже на `D:` через симлинк и места на `C:` нет — **симлинк можно оставить**. Починка SCANPST работает и по пути симлинка. Перенос имеет смысл, когда хотите убрать лишний уровень indirection или освободить `D:`.
+
+   Перенос (когда делаем):
+   - удалить симлинк: `del /F /A "C:\Users\%USERNAME%\AppData\Local\Microsoft\Outlook\имя.ost"` (удаляется только ссылка, не файл на `D:`)
+   - `robocopy D:\Users\...\Outlook C:\Users\...\AppData\Local\Microsoft\Outlook имя.ost /MOV`
+   - для PST обновить путь в реестре: `HKCU\Software\Microsoft\Office\16.0\Outlook\Profiles\Outlook\<store-key>\001f6700` и в `%APPDATA%\Microsoft\Outlook\Outlook.xml`
+
+3. **Первый запуск после починки** — может занять несколько минут (повторная выверка с сервером). Письма на сервере не теряются: OST — локальный кэш.
+
+4. **Если снова висит при закрытии** — один раз `outlook.exe /safe`. Если в безопасном режиме закрывается нормально, отключить надстройки Google Drive / Google Meet (Файл → Параметры → Надстройки → COM-надстройки).
+
+5. **Зависший процесс в трее** — завершить `OUTLOOK.EXE` в диспетчере задач; после SCANPST это безопасно.
+
+Проверка в журнале: `Get-WinEvent -FilterHashtable @{LogName='Application'; ProviderName='Outlook'; StartTime=(Get-Date).AddHours(-1)} | Where-Object Id -in 30,38`
+
 ## Uninstall
 - [Uninstall new apps](). That is a Windows 10 UWP App and those don't appear in the old Control Panel - Programs and Features Section
 Open the Settings App (gear icon on your Start Menu)

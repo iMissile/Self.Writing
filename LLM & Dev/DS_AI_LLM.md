@@ -5,12 +5,13 @@
 - [The AI-Native SDLC playbook](https://claude.com/blog/the-ai-native-sdlc-playbook). How to transform your software development lifecycle with AI—stage by stage.
 - [A deep dive into Grok Bot](https://flaviocopes.com/grok-bot/) by [Flavio Copes](https://flaviocopes.com/about/), Aug 22, 2026
 - [LLM Wiki Карпатого: ИИ-агент, который сам ведёт вашу базу знаний](https://aibot.direct/blog/karpathy-llm-wiki)
-- [Harness Engineering for Self-Improvement](https://lilianweng.github.io/posts/2026-07-04-harness/)
+- COOL! [Harness Engineering for Self-Improvement](https://lilianweng.github.io/posts/2026-07-04-harness/)
+- [Harness engineering: leveraging Codex in an agent-first world](https://openai.com/index/harness-engineering/) By Ryan Lopopolo, Member of the Technical Staff
 - [Harness engineering for coding agent users](https://martinfowler.com/articles/harness-engineering.html)
 # 26.01.2026
 ## LLM
-- [# Внутри vLLM: Анатомия системы инференса LLM с высокой пропускной способностью](https://habr.com/ru/articles/957748/)
-- [# Что такое vLLM и зачем он нужен: серверный движок для инференса LLM](https://serverflow.ru/blog/stati/chto-takoe-vllm-i-zachem-on-nuzhen-servernyy-dvizhok-dlya-inferensa-llm/)
+- [Внутри vLLM: Анатомия системы инференса LLM с высокой пропускной способностью](https://habr.com/ru/articles/957748/)
+- [Что такое vLLM и зачем он нужен: серверный движок для инференса LLM](https://serverflow.ru/blog/stati/chto-takoe-vllm-i-zachem-on-nuzhen-servernyy-dvizhok-dlya-inferensa-llm/)
 # 24.11.2025
 ## LLM
 - [Тревога в мире LLM](https://telegra.ph/Trevoga-v-mire-LLM-11-10)
