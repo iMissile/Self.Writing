@@ -1,0 +1,77 @@
+---
+title: "<Название отчёта>"
+subtitle: "<объект>, прогон <ГГГГ-ММ-ДД>"
+lang: ru
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    embed-resources: true      # отчёт уносят с машины без сети и без папки _files
+    code-fold: true
+    code-tools: false
+jupyter: <project>
+---
+
+<!--
+Шапка целиком внутри файла: `_quarto.yml` не заводится — так отчёт
+переносится и рендерится поодиночке.
+
+Графический стек выбирается ЗДЕСЬ, один на весь файл. Смена стека — это
+переписывание всех графиков отчёта, а не добавление одного.
+-->
+
+```{python}
+#| label: setup
+#| include: false
+from pathlib import Path
+import polars as pl
+
+from lib import paths
+from lib.render import inject_css, react, gt_table, cards, legend, show, bar, pie
+from lib.runs import load_run
+
+# ОДИН движок на отчёт. Жанр здесь — категории и доли, значит стек A.
+inject_css(engine="echarts")
+
+RUN = load_run(paths.ARTIFACTS)        # датированный прогон, а не «последнее»
+```
+
+## Вопрос
+
+Что этот отчёт отвечает и по какому критерию. Числа в прозе не пишутся:
+проза не пересчитывается.
+
+## Условия прогона
+
+```{python}
+#| label: tbl-run
+show(gt_table(RUN.thresholds_frame(), title="Пороги прогона",
+              labels={"key": "порог", "value": "значение", "why": "основание"}))
+```
+
+## Витрина
+
+```{python}
+#| label: tbl-main
+df = RUN.table("main")
+if df.height == 0:
+    # Пустой раздел выглядит как отсутствие нарушений — поэтому пустая
+    # витрина показывается строкой, а не исчезает.
+    show(gt_table(df, title="Посчитана и пуста"))
+else:
+    show(react(df, names={"state": "состояние", "amount": "сумма, ₽"}))
+```
+
+## График
+
+```{python}
+#| label: fig-by-state
+#| fig-cap: "Сумма по состоянию"
+by_state = (df.group_by("state").agg(amount=pl.col("amount").sum())
+              .sort("amount", descending=True))     # порядок задаётся ДО графика
+show(bar(by_state, "state", "amount", title="Сумма по состоянию", horizontal=True))
+```
+
+## Что осталось открытым
+
+Перечень строится из модели, а не набирается руками.

@@ -1,6 +1,6 @@
 ---
 name: report-project-init
-description: Bootstrap and maintain a reproducible research-report project in Python — Quarto .qmd reports over Polars/DuckDB with a domain model in JSON, dated run artifacts, and a single graphics engine per report (ECharts or Plotly). Use this skill whenever the work involves starting a new analytics or report repository, laying out lab/core/model layers, writing or revising project conventions (conventions.md, tech_conventions.md, AGENTS.md), adding a rendering library, wiring runs and manifests, choosing between ECharts and Plotly, or reviewing an existing report project against these rules — including when the user says "инициализация проекта", "новый отчёт", "конвенции", "правила проекта", "стек отчёта", or asks why a chart or reactable table renders empty in Quarto HTML. Pandas is not part of the stack.
+description: Bootstrap and maintain a reproducible research-report project in Python — Quarto .qmd reports over Polars/DuckDB with a domain model in JSON, dated run artifacts, and a single graphics engine per report (ECharts or Plotly). Use this skill whenever the work involves starting a new analytics or report repository, laying out lab/core/model layers, writing or revising project conventions (conventions.md, tech_conventions.md, AGENTS.md), adding a rendering library, wiring runs and manifests, choosing between ECharts and Plotly, or reviewing an existing report project against these rules — including when the user says "инициализация проекта", "новый отчёт", "конвенции", "правила проекта", "стек отчёта", or asks why a chart or reactable table renders empty in Quarto HTML, why markdown in a great_tables header is not rendered, how to build nested/expandable reactable rows, how numbers should be formatted in report tables, or whether Observable/OJS belongs in a Quarto report. Pandas is not part of the stack.
 ---
 
 # Инициализация проекта разработки отчётов
@@ -17,7 +17,7 @@ description: Bootstrap and maintain a reproducible research-report project in Py
 
 ## Инварианты
 
-Двенадцать правил, нарушение которых означает, что устройство сломано, а не
+Тринадцать правил, нарушение которых означает, что устройство сломано, а не
 что случай особый.
 
 1. **Ссылки идут только вверх.** Ядро → предметный слой → лаборатория → отчёты.
@@ -37,6 +37,9 @@ description: Bootstrap and maintain a reproducible research-report project in Py
 11. **Пороги — параметры прогона, не свойства предмета.** Они в манифесте.
 12. **Правило без исполнителя — намерение.** У каждого правила либо инструмент,
     либо исключение в библиотеке.
+13. **Число печатается одним хелпером.** Разряды неразрывным пробелом, десятичная
+    точка — точкой, разрядность по роду величины. Формат, собранный на месте,
+    расходится от таблицы к таблице и читается как разные величины.
 
 ---
 
@@ -117,7 +120,15 @@ Python 3.13, `uv`, единое `.venv` в корне, запуск через `
 
 Контракт вывода в HTML, почему он именно такой, и различия ECharts/Plotly —
 `references/html_output.md`. Прочитать до первой строки кода отрисовки:
-там четыре наблюдения, каждое из которых стоило пустого холста.
+там пять наблюдений, каждое из которых стоило пустого холста или оборванного
+чанка.
+
+Библиотека отвечает и за **формат числа** — один на весь отчёт
+(`references/numbers.md`), и за **таблицы**: разметку в шапке, развороты строк,
+цветовую легенду, ширины (`references/tables.md`). Оба документа про дефекты,
+которые не роняют сборку: таблица рисуется, тесты зелёные, неверна только
+вёрстка. Заметить их можно единственным способом — глазами на собранном HTML,
+и потому у каждого запрета там есть механический исполнитель.
 
 ### 6. Прогоны и манифест
 
@@ -126,9 +137,14 @@ Python 3.13, `uv`, единое `.venv` в корне, запуск через `
 
 ### 7. Инструменты
 
-Минимум четыре: `validate_model.py`, `render_smoke.py`, `diff_runs.py`,
-`pytest`. Что каждый ловит и почему без них правила не держатся —
-`references/tooling.md`. Скелеты — `assets/tools/`.
+Минимум пять: `validate_model.py`, `render_smoke.py`, `diff_runs.py`,
+`lint_report_style.py`, `pytest`. Что каждый ловит и почему без них правила
+не держатся — `references/tooling.md`. Скелеты — `assets/tools/`.
+
+**Пятый заведён последним и по необходимости.** Дым ловит падение чанка, но
+молчит про вёрстку: разметка в шапке без `md()` и число мимо общего форматтера
+сборку не роняют. Правило без механического исполнителя такие дефекты
+не удерживает — они тиражируются копированием соседней ячейки.
 
 ### 8. Первый отчёт
 
@@ -151,6 +167,9 @@ Python 3.13, `uv`, единое `.venv` в корне, запуск через `
 | `references/model_as_data.md` | предметный слой, `why` / `measured` / `status` |
 | `references/runs.md` | прогоны, манифест, кэши, воспроизводимость |
 | `references/html_output.md` | **два графических стека**, контракт Quarto+HTML |
+| `references/tables.md` | разметка в шапке, **развороты строк**, легенда цвета, ширины |
+| `references/numbers.md` | **единый формат числа**: разряды, десятичная точка, мантисса |
+| `references/observable.md` | OJS: когда уместен, что ломает, как передавать данные |
 | `references/visual_language.md` | палитра, знаменатель, пустые состояния, ширины |
 | `references/tooling.md` | инструменты, **UTF-8 в CLI на Windows**, цикл правки |
 | `references/error_kinds.md` | роды ошибок, которые отчёт обязан не повторять |
@@ -162,12 +181,28 @@ Python 3.13, `uv`, единое `.venv` в корне, запуск через `
 | `assets/pyproject.toml.template` | состав с комментариями «почему она»; стек B закомментирован до первого потребителя |
 | `assets/lib/paths.py` | единственная точка переноса, ошибка называет, где искали |
 | `assets/lib/runs.py` | прогон, манифест, дозапись, баланс шагов |
-| `assets/lib/render.py` | таблицы и **оба графических стека**; движок — параметр, второй даёт исключение |
+| `assets/lib/render.py` | таблицы, **развороты строк**, единый формат числа и **оба графических стека**; движок — параметр, второй даёт исключение |
 | `assets/tools/render_smoke.py` | исполняет чанки и ловит два движка в одном файле |
 | `assets/tools/validate_model.py` | объявление без `why`, гипотеза без замера, замер без даты |
 | `assets/tools/diff_runs.py` | разность манифестов, предупреждение о неподключённой правке |
+| `assets/tools/lint_report_style.py` | разметка в шапке без `md()`, число мимо `nfmt()`; проверен отрицательно |
 | `assets/docs/report_template.qmd` | шапка, setup с объявлением движка, пустая витрина |
 | `assets/docs/AGENTS.md.template` | границы полномочий и обязательный цикл |
+
+## Внешние справочники
+
+Не копировать к себе: они обновляются вместе с библиотекой, а копия устареет
+молча. Ссылки достаточно.
+
+| источник | что даёт | чего не даёт |
+|---|---|---|
+| [Great Tables · Skills](https://posit-dev.github.io/great-tables/skills.html) | обзор API `great_tables` для агента: структурные части, форматтеры, стили, `opt_*()`, экспорт, встроенные наборы | разметку в шапке, формат числа, развороты, подключение в Quarto — всё это в `references/tables.md` и `numbers.md` |
+
+Правило про внешние справочники общее: **ссылка вместо копии, и рядом сказано,
+чего в ней нет.** Иначе через полгода никто не отличит, что взято оттуда,
+а что решено здесь.
+
+---
 
 Ревизия чужого проекта по этим правилам: пройти инварианты сверху вниз,
 на каждом назвать файл, где правило нарушено, и наблюдение, которым правило
