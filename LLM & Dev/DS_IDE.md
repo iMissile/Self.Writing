@@ -60,6 +60,48 @@ As an aside the downloading of the VSIX and then > Extension: Install VSIX in Cu
 	2. Или иконка раскладки слева от шестерёнки (квадрат с боковой панелью) → выбрать Editor
 	3. Или Cursor Settings → Editor / Layout → Editor
   После этого серая колонка справа должна пропасть, чат останется как обычная панель.
+
+## Proxy (модели через SOCKS5 / HTTP)
+Официально Cursor документирует HTTP-прокси; SOCKS5 через `http.proxy` иногда работает, но для AI-трафика чаще стабильнее HTTP (mixed-порт клиента или конвертер).
+
+### Где посмотреть в интерфейсе
+1. **Диагностика сети:** шестерёнка Cursor Settings (не VS Code Settings) → слева **Network** → **Run Diagnostics**; при обрывах стрима — **HTTP Compatibility Mode = HTTP/1.1**.
+2. **Значения прокси:** `Ctrl+Shift+P` → **Preferences: Open User Settings (JSON)** — ключи `http.proxy`, `http.proxySupport`, `cursor.general.disableHttp2`. Либо `Ctrl+,` → поиск `proxy`.
+3. Файл на диске: `%APPDATA%\Cursor\User\settings.json`.
+
+### 1) Прямой SOCKS5 (например `127.0.0.1:1080`)
+```json
+{
+  "http.proxy": "socks5://127.0.0.1:1080",
+  "http.proxySupport": "override",
+  "http.proxyStrictSSL": false,
+  "cursor.general.disableHttp2": true
+}
+```
+- С логином: `"socks5://user:pass@127.0.0.1:1080"`.
+- Полностью закрыть Cursor и запустить снова (Reload Window недостаточно).
+- **Cursor Settings → Network → Run Diagnostics**; при обрывах стрима — **HTTP Compatibility Mode = HTTP/1.1**.
+
+### 2) Предпочтительно: HTTP/mixed-порт того же клиента
+У Clash / V2RayN / sing-box обычно есть mixed/HTTP-порт (часто `7890`, `10809`), а SOCKS — `1080`:
+```json
+{
+  "http.proxy": "http://127.0.0.1:<HTTP_PORT>",
+  "http.proxySupport": "override",
+  "http.proxyStrictSSL": false,
+  "cursor.general.disableHttp2": true
+}
+```
+
+### 3) Только SOCKS — локальный SOCKS→HTTP
+`gost` / Privoxy / mixed-port слушает, например, `http://127.0.0.1:8080` и форвардит на `socks5://127.0.0.1:1080`. В Cursor: `"http.proxy": "http://127.0.0.1:8080"`.
+
+Замечания:
+- `http.proxySupport: "override"` — Cursor использует только `http.proxy`, не системный прокси ОС.
+- В новых версиях процесс `always-local-singleton` иногда игнорирует app-level proxy; тогда нужен TUN/system proxy на уровне ОС.
+- Env (`HTTPS_PROXY`, `ALL_PROXY`) задавать до запуска Cursor; при `override` решающим обычно остаётся `http.proxy` в settings.
+- [Network troubleshooting](https://cursor.com/help/troubleshooting/network), [Enterprise network configuration](https://cursor.com/docs/enterprise/network-configuration)
+
 ## Rules & Skills
 - [Agent Skills](https://cursor.com/docs/skills)
 - [Как использовать навыки Cursor: полное руководство](https://www.kimi.ai/ru/resources/cursor-skills)
