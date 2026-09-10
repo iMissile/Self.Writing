@@ -1,4 +1,8 @@
 
+# 10.09.2026
+## AI
+- [Как Claude запоминает ваш проект](https://code.claude.com/docs/ru/memory)
+- [AI Newsletter: You probably don’t want to fine-tune](https://opensource.posit.co/blog/2026-09-04_ai-newsletter/). You’re usually better off doing plain old prompt engineering
 # 26.08.2026
 ## AI
 - [DeepSeek Harness developer preview](https://deepseek.com/harness/en/)
