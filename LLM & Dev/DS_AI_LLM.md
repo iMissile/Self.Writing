@@ -55,14 +55,14 @@ A compact, human-readable encoding of the JSON data model for LLM prompts.
 - [Работаем с Claude Code на десктопе из России](https://habr.com/ru/companies/ruvds/articles/1020062/)
 - [Почему я ухожу из Timeweb Cloud: 46 часов простоя в Амстердаме за два месяца — по данным самого хостера](https://habr.com/ru/articles/1053872/)
 - Проверяем доступность Claude с VPS
-  ```
+```
   # Проверка доступа в интернет с сервера
-curl -I https://claude.ai
-curl -I https://google.com
-# Проверка DNS
-nslookup claude.ai
-nslookup google.com
-  ```
+  curl -I https://claude.ai
+  curl -I https://google.com
+  # Проверка DNS
+  nslookup claude.ai
+  nslookup google.com
+```
 
 ## Grok
 - [Models and Pricing](https://docs.x.ai/docs/models)
@@ -72,9 +72,9 @@ nslookup google.com
 - Временный USA WireGuard VPN. [Create Free VPN WireGuard USA 6](https://www.vpnjantit.com/create-free-account)
 - [How to get your Anthropic API key (3 steps)](https://www.merge.dev/blog/anthropic-api-key)
 	Step 1: Create an account. 
-Sign up for an account [here](https://console.anthropic.com/login). Нынче это [Platform console](https://platform.claude.com/dashboard)
+	Sign up for an account [here](https://console.anthropic.com/login). Нынче это [Platform console](https://platform.claude.com/dashboard)
 	Step 2: Generate an API Key 
-After creating an account, click your Profile in the top right corner and select API Keys
+	After creating an account, click your Profile in the top right corner and select API Keys
 
 - [How to get your Claude API key: A step-by-step guide](https://pickaxe.co/post/how-to-get-your-claude-api-key-a-step-by-step-guide)
 
