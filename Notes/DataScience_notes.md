@@ -1730,6 +1730,10 @@ Built by the team at Craft — because diagrams deserve great design too.
 - [GraphQL](https://graphql.org/). The query language for modern APIs
 - [Введение в GraphQL](https://systems.education/graphql-intro)
 
+# 17.09.2026
+## R
+- [Guide to the ggplotplus Package](https://maisrc.github.io/ggplotplus/)
+- [hyperverse](https://hyperverse.world/) A modular R ecosystem for building modern web applications, the web way.
 # 20.08.2026
 - COOL! [Pandia](https://www.pandia.app/) The JSON _workbench_.
 Open any JSON instantly — even a **multi-gigabyte** file. See it five ways, generate types for **nine languages**, compare, repair, and export — all in one fast, native, **offline** app. Free and open source.]
