@@ -1,4 +1,12 @@
 
+# 23.09.2026
+## AI
+- [Introducing System One Models & Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev)
+- [Jev Explained: Typesafe AI's Non-Autoregressive System-1 Model](https://www.mindstudio.ai/blog/jev-system-one-model-launch)
+- [Building a Harness with Jev](https://www.langchain.com/blog/building-a-harness-with-jev)
+- [12 Jev Use Cases Tested: Where This Decision-Only AI Actually Fits](https://www.mindstudio.ai/blog/jev-use-cases-automation)
+- [Тест Jev в качестве реранкера против LLM на классификации товаров по справочнику из 78 тысяч кодов](https://habr.com/ru/articles/1084672/)
+- [Jev: как устроен его API решений и что на нём уже строят](https://habr.com/ru/articles/1084030/)
 # 10.09.2026
 ## AI
 - [Как Claude запоминает ваш проект](https://code.claude.com/docs/ru/memory)
