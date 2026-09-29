@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLM & Dev/DS_AI_LLM.md",
-                "mode": "source",
+                "file": "LCG/Android Netrunner.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DS_AI_LLM"
+              "title": "Android Netrunner"
             }
           }
         ],
@@ -70,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "proxy",
+                "query": "LCG",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -157,37 +157,42 @@
   },
   "active": "6b190ebbd68b08ed",
   "lastOpenFiles": [
+    "LCG/Warhammer 40K Conquest.md",
+    "LCG/_nr_backup_Android_Netrunner.md",
+    "LCG/_verify_out.txt",
+    "LCG/_bak_20260929_proxynexus/Warhammer 40K Conquest.md.bak",
+    "LCG/_bak_20260929_proxynexus/Lord of the Rings.md.bak",
+    "LCG/_bak_20260929_proxynexus/Android Netrunner.md.bak",
+    "LCG/_bak_20260929_proxynexus",
+    "LCG/Android Netrunner.md.bak-20260929",
+    "LCG/_check.txt",
+    "LCG/_fix_snip.txt",
+    "LCG/README.md",
+    "LCG/_bookmarks_extracted.txt",
+    "LCG/Lord of the Rings.md",
+    "LCG/Call of Cthulhu.md",
+    "LCG/Android Netrunner.md",
+    "Notes/дети.md",
+    "LCG",
+    "LLM & Dev/DS_AI_LLM.md",
     "LLM & Dev/DS_IDE.md",
     "Notes/DataScience_notes.md",
-    "LLM & Dev/DS_AI_LLM.md",
     "Infra/New_Windows.md",
     "Notes/SOI_reverse.md",
     "Notes/wireshark.md",
     "Infra/DS_calc_at_Ubuntu_24.md",
     "Infra/New_MacOS.md",
     "Infra/New_Linux.md",
-    "Infra",
-    "Новая папка",
     "Analysts/New_Windows.md",
     "LLM & Dev/quarto_vdoc_linter_ignore.md",
     "Notes/DS_quarto_and_rmd.md",
     "Notes/python_lang.md",
-    "LLM & Dev/set_user_ml_cache_env.ps1",
     "LLM & Dev/cursor_rules_gpn.md",
     "LLM/cursor_rules.md",
-    "LLM & Dev",
     "Notes/VPN/instructions_3x-ui.md",
     "Notes/VPN/instructions_hysteria.md",
-    "Notes/VPN",
-    "Notes/Новая папка",
     "LLM & Dev/git.md",
     "Analysts/IoT.md",
-    "Pasted image 20260611130546.png",
-    "Usefull tools/34 Top Free Data Mining Software - Predictive Analytics Today.md",
-    "Analysts/New_Linux.md",
-    "Notes/DataScience_notes_2018.md",
-    "Notes/R_clean_install.md",
-    "Notes/R_clean_install - Copy.md",
-    "Notes/R_create_packages.md"
+    "Pasted image 20260611130546.png"
   ]
 }
