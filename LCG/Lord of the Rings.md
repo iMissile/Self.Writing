@@ -17,9 +17,9 @@
 - [Tolkien Gateway: The Card Game](https://tolkiengateway.net/wiki/The_Lord_of_the_Rings:_The_Card_Game) — EN (из закладок; иногда 403 для ботов).
 
 ## Базы карт / колодостроение
-- [RingsDB](https://ringsdb.com/) — EN, **основной** декбилдер + публичные деклисты + поиск карт (из закладок). Учёт своих Adventure Packs в аккаунте → фильтр «allowed packs» / Revised Content Only (`#RCO`). Зеркало [ringsdb.net](https://ringsdb.net/) — SSL у хоста часто ругается; предпочтите **ringsdb.com** (проверено 200).
+- [RingsDB](https://ringsdb.com/) — EN, **основной** декбилдер + публичные деклисты + поиск карт (из закладок). Учёт своих Adventure Packs в аккаунте → фильтр «allowed packs» / Revised Content Only (`#RCO`). Зеркало [ringsdb.net (оригинал мёртв — Wayback)](https://web.archive.org/web/20250714205803/http://ringsdb.net/) — оригинал не работает (SSL/502); используйте живой **ringsdb.com** (проверено 200, сент. 2026 MSK).
 - [Hall of Beorn](http://hallofbeorn.com/LotR) — EN, карта/квест-база, сценарии, encounter-листы, сложность (из закладок). Поиск: [LotR/Search](https://hallofbeorn.com/LotR/Search) (проверено 200). Данные Hall of Beorn исторически питали RingsDB.
-- [Quest Companion (Wayback)](https://web.archive.org/web/20220825184657/https://lotr-lcg-quest-companion.gamersdungeon.net/) — EN, архив онлайн-компаньона квестов (живой сайт умер; из закладок).
+- [Quest Companion](https://www.lotr-lcg-quest-companion.gamersdungeon.net/) — EN, онлайн-компаньон квестов (зеркало **gamersdungeon**, проверено 200); оригинальный [lotr-lcg-quest-companion.com (мёртв — Wayback)](https://web.archive.org/web/20180127030750/http://lotr-lcg-quest-companion.com/) — DNS нет; снимок ~2018 (поздние = parking/spam).
 - [BGG thread: Quest Companion printable (489 pages)](https://boardgamegeek.com/thread/1173788/quest-companion-printable-version-489-pages-lotr-l) — EN (из закладок).
 - [lotrlcg.com database (Wayback)](https://web.archive.org/web/20220106223417/http://lotrlcg.com/) — EN, архив старой базы карт (из закладок).
 - **CardGameDB** (исторический) — мёртв; искать snapshots через [Wayback cardgamedb.com](https://web.archive.org/web/*/http://www.cardgamedb.com/).
@@ -63,7 +63,7 @@
 - [Vision of the Palantir — Quest Analysis](https://visionofthepalantir.com/quest-analysis/) — EN, разборы квестов (в т.ч. заметки по скалированию solo / player count); уже в блоке обзоров выше.
 - [Hall of Beorn](http://hallofbeorn.com/LotR) — EN, сценарии, encounter-листы, сложность; удобно готовить соло-прогон.
 - [RingsDB](https://ringsdb.com/) — EN, искать колоды с пометками solo / true solo / two-handed под конкретный квест.
-- [Quest Companion (Wayback)](https://web.archive.org/web/20220825184657/https://lotr-lcg-quest-companion.gamersdungeon.net/) + [printable thread (BGG)](https://boardgamegeek.com/thread/1173788/quest-companion-printable-version-489-pages-lotr-l) — EN, компаньон квестов (живой сайт умер; архив/печать).
+- [Quest Companion](https://www.lotr-lcg-quest-companion.gamersdungeon.net/) + [printable thread (BGG)](https://boardgamegeek.com/thread/1173788/quest-companion-printable-version-489-pages-lotr-l) — EN, компаньон квестов (зеркало gamersdungeon, проверено 200; оригинал .com мёртв) / печать.
 - Кампании Revised Core / циклов — играть progression-style в true solo или two-handed; nightmare/campaign-логи — в файлах BGG и на RingsDB (смотреть актуальные PDF под ваш цикл).
 
 **Практика:** новичкам часто советуют сначала true solo на Passage to Mirkwood / Journey Along the Anduin, а two-handed подключать, когда захочется специализации колод или упрётесь в «стену» конкретного квеста.

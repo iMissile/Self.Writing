@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LCG/Android Netrunner.md",
+                "file": "LCG/Blue Moon.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Android Netrunner"
+              "title": "Blue Moon"
             }
           }
         ],
@@ -57,7 +57,7 @@
               "state": {
                 "sortOrder": "alphabetical",
                 "autoReveal": false,
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
@@ -157,6 +157,10 @@
   },
   "active": "6b190ebbd68b08ed",
   "lastOpenFiles": [
+    "LCG/Lord of the Rings.md.bak_linkfix_20260929_182452",
+    "LCG/Lord of the Rings.md",
+    "LCG/Blue Moon.md",
+    "LCG/Android Netrunner.md",
     "LCG/Warhammer 40K Conquest.md",
     "LCG/_nr_backup_Android_Netrunner.md",
     "LCG/_verify_out.txt",
@@ -169,9 +173,7 @@
     "LCG/_fix_snip.txt",
     "LCG/README.md",
     "LCG/_bookmarks_extracted.txt",
-    "LCG/Lord of the Rings.md",
     "LCG/Call of Cthulhu.md",
-    "LCG/Android Netrunner.md",
     "Notes/дети.md",
     "LCG",
     "LLM & Dev/DS_AI_LLM.md",
@@ -191,8 +193,6 @@
     "LLM/cursor_rules.md",
     "Notes/VPN/instructions_3x-ui.md",
     "Notes/VPN/instructions_hysteria.md",
-    "LLM & Dev/git.md",
-    "Analysts/IoT.md",
     "Pasted image 20260611130546.png"
   ]
 }
