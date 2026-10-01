@@ -11,6 +11,7 @@
 - [5 Things I Wish I Would’ve Known When I Started (Tales from the Cards)](https://talesfromthecards.wordpress.com/2013/01/03/5-things-i-wish-i-wouldve-known-when-i-started-playing-lotr-lcg/) — EN, отличный вводный пост (из закладок).
 
 ## Обзоры / сценарии / walkthroughs
+- [Master of Lore — tag LotR LCG](https://masteroflore.wordpress.com/tag/lotr-lcg/) — EN, статьи/разборы по квестам и картам (блог).
 - [Tales from the Cards](https://talesfromthecards.wordpress.com/) — EN, блог (из закладок).
 - [Vision of the Palantir — Scenario / Quest Analysis](https://visionofthepalantir.com/quest-analysis/) — EN, разборы квестов (из закладок).
 - [Cardboard of the Rings (подкаст)](https://cardboardoftherings.com/) — EN (из закладок); Discord CotR часто упоминают на r/lotrlcg как главный хаб новичков.
