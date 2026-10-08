@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LCG/Call of Cthulhu.md",
+                "file": "LCG/Lord of the Rings.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Call of Cthulhu"
+              "title": "Lord of the Rings"
             }
           }
         ],
@@ -157,6 +157,7 @@
   },
   "active": "6b190ebbd68b08ed",
   "lastOpenFiles": [
+    "LCG/Call of Cthulhu.md",
     "LCG/Lord of the Rings.md",
     "LLM & Dev/DS_AI_LLM.md",
     "LCG/_bak_20260929_proxynexus/Warhammer 40K Conquest.md.bak",
@@ -165,7 +166,6 @@
     "LCG/_bak_20260929_proxynexus",
     "LCG/Warhammer 40K Conquest.md",
     "LCG/README.md",
-    "LCG/Call of Cthulhu.md",
     "LCG/Android Netrunner.md.bak-20260929",
     "LCG/Blue Moon.md",
     "LCG/Android Netrunner.md",
