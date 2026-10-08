@@ -1,4 +1,23 @@
 
+# 08.10.2026
+## Claude Code — учёт расхода (ccusage)
+Ставить ничего не нужно, утилита запускается напрямую из npm. Нужен только Node.js; если `node -v` ничего не выводит, установите его с [nodejs.org](https://nodejs.org). Запускать на том компьютере, где вы работаете в Claude Code:
+
+```bash
+npx ccusage@latest            # разбивка по дням
+npx ccusage@latest monthly    # итог по месяцам
+npx ccusage@latest session    # по отдельным сессиям
+npx ccusage@latest blocks     # по 5-часовым окнам лимита
+```
+
+Можно добавить `--breakdown`, тогда появится разбивка по моделям (Opus/Sonnet/Fable).
+
+Исходники лежат на GitHub: [ryoppippi/ccusage](https://github.com/ryoppippi/ccusage). Это сторонний открытый проект, не от Anthropic.
+
+Утилита читает локальные логи Claude Code (`~/.claude/projects`), поэтому учитывает только работу в терминале или IDE на этой машине. Чат в claude.ai и облачные сессии в эти логи не попадают.
+
+Пришлите вывод `monthly --breakdown`, и я посчитаю, что выгоднее для вас.
+
 # 23.09.2026
 ## Jev
 - [Introducing System One Models & Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev)
