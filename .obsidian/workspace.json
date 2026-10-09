@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LCG/Lord of the Rings.md",
+                "file": "Infra/New_MacOS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lord of the Rings"
+              "title": "New_MacOS"
             }
           }
         ],
@@ -70,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "proxy",
+                "query": ".ws",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,7 +91,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -157,8 +158,11 @@
   },
   "active": "6b190ebbd68b08ed",
   "lastOpenFiles": [
-    "LCG/Call of Cthulhu.md",
+    "LLM & Dev/Opencode_tweaks/OpenCode_Desktop_2.0.26_Windows_port_49374_fix_2026-10-09.md",
+    "LLM & Dev/Opencode_tweaks",
+    "LLM & Dev/Новая папка",
     "LCG/Lord of the Rings.md",
+    "LCG/Call of Cthulhu.md",
     "LLM & Dev/DS_AI_LLM.md",
     "LCG/_bak_20260929_proxynexus/Warhammer 40K Conquest.md.bak",
     "LCG/_bak_20260929_proxynexus/Lord of the Rings.md.bak",
@@ -184,10 +188,8 @@
     "LLM & Dev/quarto_vdoc_linter_ignore.md",
     "Notes/DS_quarto_and_rmd.md",
     "Notes/python_lang.md",
-    "LLM & Dev/set_user_ml_cache_env.ps1",
     "LLM & Dev/cursor_rules_gpn.md",
     "LLM/cursor_rules.md",
-    "LLM & Dev",
     "Notes/VPN/instructions_3x-ui.md",
     "Notes/VPN/instructions_hysteria.md",
     "LLM & Dev/git.md",
