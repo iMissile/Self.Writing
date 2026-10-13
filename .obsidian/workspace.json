@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Infra/New_MacOS.md",
+                "file": "LCG/Blue Moon.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "New_MacOS"
+              "title": "Blue Moon"
             }
           }
         ],
@@ -91,8 +91,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -152,12 +151,13 @@
       "graph:Граф": false,
       "canvas:Создать новый холст": false,
       "command-palette:Открыть палитру команд": false,
-      "markdown-importer:Импорт Markdown-файлов": false,
       "bases:Создать новую базу": false
     }
   },
   "active": "6b190ebbd68b08ed",
   "lastOpenFiles": [
+    "Без названия.base",
+    "Infra/New_MacOS.md",
     "LLM & Dev/Opencode_tweaks/OpenCode_Desktop_2.0.26_Windows_port_49374_fix_2026-10-09.md",
     "LLM & Dev/Opencode_tweaks",
     "LLM & Dev/Новая папка",
@@ -180,10 +180,8 @@
     "Notes/SOI_reverse.md",
     "Notes/wireshark.md",
     "Infra/DS_calc_at_Ubuntu_24.md",
-    "Infra/New_MacOS.md",
     "Infra/New_Linux.md",
     "Infra",
-    "Новая папка",
     "Analysts/New_Windows.md",
     "LLM & Dev/quarto_vdoc_linter_ignore.md",
     "Notes/DS_quarto_and_rmd.md",
@@ -193,7 +191,6 @@
     "Notes/VPN/instructions_3x-ui.md",
     "Notes/VPN/instructions_hysteria.md",
     "LLM & Dev/git.md",
-    "Analysts/IoT.md",
     "Pasted image 20260611130546.png"
   ]
 }
