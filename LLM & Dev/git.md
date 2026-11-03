@@ -189,6 +189,46 @@ unlist(stri_split_lines(sha$stdout, omit_empty = TRUE)) %>%
 # GitHub authentication
 - [Git push results in “Authentication Failed”](https://stackoverflow.com/questions/17659206/git-push-results-in-authentication-failed). Снимаем галочки при инсталляции, чистим Windows Credential Manager
 
+# GitHub: HTTPS + PAT на Windows (одна учётка)
+Для одной учётки GitHub, нескольких org/репо и клонов на портативном диске.
+Remote оставляем `https://github.com/...`. Токен живёт на **машине**, не на диске.
+SSH не нужен: не переписываем remote и не таскаем ключи между ПК.
+
+1. Создать classic PAT: https://github.com/settings/tokens → **Generate new token (classic)**
+   - scope: **`repo`**
+   - скопировать `ghp_...` сразу
+   - если у org включён SSO (напр. `science-activity`): у токена **Configure SSO → Authorize**
+2. Стереть старый кэш GitHub.
+
+PowerShell:
+```powershell
+@"
+protocol=https
+host=github.com
+"@ | & "C:\Program Files\Git\ucrt64\bin\git-credential-manager.exe" erase
+```
+
+Git Bash (не `echo` с `\n` — в bash он часто ломается):
+```bash
+printf "protocol=https\nhost=github.com\n" | git credential-manager erase
+```
+
+Либо вручную: Диспетчер учётных данных → Учётные данные Windows → удалить `git:https://github.com*`.
+
+3. Сохранить PAT (GCM спросит логин/пароль):
+```bash
+git ls-remote https://github.com/<org-or-user>/<repo>.git
+```
+- Username: логин GitHub
+- Password: **PAT** (`ghp_...`), не пароль сайта
+
+4. `git push` / `git pull` — тот же токен покрывает личные репо и org этой учётки.
+5. Другая машина + тот же портативный диск: повторить шаги 2–3 на этой машине.
+
+Симптом `remote: Repository not found` у **приватного** репо почти всегда = нет валидного PAT / истек / нет SSO Authorize. GitHub так маскирует «нет доступа», это не «репо удалили» и не «нужна вторая учётка».
+
+Почему не SSH здесь: удобнее на одном ПК; на портативном диске между машинами каждый раз нужен ключ на каждой машине и часто смена remote. HTTPS+PAT — один URL везде, логин локально.
+
 ## Настрока `.gitignore`
 - [gitignore - Specifies intentionally untracked files to ignore](https://git-scm.com/docs/gitignore)
 - [gitignore.io](https://www.gitignore.io). Create useful .gitignore files for your project
