@@ -101,6 +101,9 @@ https://www.hightechdad.com/2017/02/06/onedrive-sync-issues-how-to-reset-onedriv
 - [A look back at 2015: My Top Mac Apps](http://brettterpstra.com/2016/02/17/a-look-back-at-2015-my-top-mac-apps/)
 - [Default Folder X](http://www.stclairsoft.com/DefaultFolderX/index.html)
 - [Alfred](https://www.alfredapp.com/). Spotlight replacement & extension
+- [Windows App](https://apps.apple.com/us/app/windows-app/id1295203466). Microsoft RDP client for Mac.
+- [MarkText](https://www.marktext.cc/). Markdown-редактор.
+- [Pandia](https://pandia.ai/). AI-клиент для работы с чатом.
 
 ## Еще новых tools, нарыл на M4
 - [Mounty](https://mounty.app/)

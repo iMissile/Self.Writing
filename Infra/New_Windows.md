@@ -448,6 +448,10 @@ Go to Apps, then scroll down to find that app in the list of installed Apps and 
 - [Listary](https://www.listary.com/) is a revolutionary search utility for Windows that makes finding your files and launching applications blazing fast, for casual and power users alike!
 - [Clover 3](http://en.ejie.me/). Wings for your Windows Explorer! Clover is an extension of the Windows Explorer, to add multi-tab functionality similar to Google Chrome browser. After install Clover, you will be able to open multiple folders within the same window, and you can also add folder bookmarks.
 - [System Informer](https://systeminformer.sourceforge.io/). A **free**, powerful, multi-purpose tool that helps you **monitor system resources**, **debug software** and **detect malware**.
+- [MarkText](https://www.marktext.cc/). Markdown-редактор.
+- [Pandia](https://pandia.ai/). AI-клиент для работы с чатом.
+- [MobaXterm](https://mobaxterm.mobatek.net/). Терминал, SSH- и удалённый доступ для Windows.
+- [dnGREP](https://dngrep.github.io/). Поиск и замена по содержимому файлов.
 
 - [6 Best Free Video Metadata Editor Software For Windows](https://listoffreeware.com/free-video-metadata-editor-software-windows/)
 - [How to strip audio streams from an MKV file?](https://superuser.com/questions/77504/how-to-strip-audio-streams-from-an-mkv-file)
@@ -468,8 +472,8 @@ Far.exe /import settings.cfg
 Элементы «F2 User Menu» не были экспортированы.
 Меню F2 здесь:"%APPDATA%\Far Manager\Profile\FarMenu.ini"
 - [Упрощаем себе работу в ОС Windows с Microsoft PowerToys](https://dtf.ru/howto/1124539-uproshchaem-sebe-rabotu-v-os-windows-s-microsoft-powertoys)
-- [Equivalent to the htop command on Windows](https://serverfault.com/questions/815207/equivalent-to-the-htop-command-on-windows)
-	- [btop++ for windows](https://github.com/aristocratos/btop4win)
+- [Equivalent to the htop command on Windows](https://serverfault.com/questions/815207/equivalent-to-htop-command-on-windows)
+	- [btop4win](https://github.com/aristocratos/btop4win). Монитор ресурсов в терминале.
 - [RunAsDate v1.41 - Run a program with the specified date/time](https://www.nirsoft.net/utils/run_as_date.html). Copyright (c) 2007 - 2022 Nir Sofer
 - Emulate keystroke
 	- [KeyTyperSimulator](https://github.com/mszeu/KeyTyperSimulator)
