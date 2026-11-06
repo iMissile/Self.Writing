@@ -606,6 +606,18 @@ ssh Wolfram-EPS-labops
 route -p add 5.253.61.17 mask 255.255.255.255 192.168.1.1
 ```
 
+Тот же обход для `153.80.246.207`: через Happ баннер SSH не приходит, напрямую сервер отвечает `SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.20`.
+
+```powershell
+route -p add 153.80.246.207 mask 255.255.255.255 192.168.1.1
+```
+
+`10.0.1.239` (и `10.0.1.238`) в домашнюю сеть не входят. Это сеть Media-Tel, она появляется только после OpenVPN-профиля `media-tel.msk-dc` (`msk-openvpn.media-tel.ru`, `82.144.69.120`, UDP `11194`). Пока UDP этого адреса идёт в Happ, рукопожатие обрывается через 60 секунд: `TLS key negotiation failed`. Маршрут на сам `10.0.1.239` через `192.168.1.1` не ставить: роутер туда не ходит. Обход нужен серверу OpenVPN, затем в трее OpenVPN нажать Connect у `media-tel.msk-dc`.
+
+```powershell
+route -p add 82.144.69.120 mask 255.255.255.255 192.168.1.1
+```
+
 ## RDP
 - [Как нажать Ctrl+Alt+Del работая удаленно через RDP ?](https://sysadmin.ru/articles/kak-nazhat-ctrlaltdel-rabotaya-udalenno-cherez-rdp). На помощь нам придет другая комбинация клавиш. Чтобы добиться аналогичного эффекта на удаленном компьютере, нужно нажать комбинацию клавиш `Control+Alt+End` (сокр. `Ctrl+Alt+End`).
 
