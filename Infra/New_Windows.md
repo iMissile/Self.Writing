@@ -560,6 +560,52 @@ WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-o
 - [Personal proxy for dummies: a universal way to bypass censorship using VPS, 3X-UI, Reality/CDN and Warp](https://habr.com/ru/articles/990542/)
 - [Как ТСПУ ловит VLESS в 2026 и почему XHTTP — следующий шаг](https://habr.com/ru/articles/1009542/)
 
+### SSH к wolfram-server.ru при включённом Happ
+
+Туннель Happ (`happ-xray`) забирает весь трафик. HTTP на `wolfram-server.ru` (`138.16.224.248`) при этом открывается, SSH обрывается: `Connection timed out during banner exchange`. Список Direct в правилах маршрутизации Happ маршрут не создаёт: в журнал `happd` уходит только перезапуск xray, обхода `bypass-ips` нет.
+
+Обход — постоянный маршрут Windows на этот один адрес, через шлюз Ethernet. Его видят и `ssh`, и MobaXterm. Остальной трафик остаётся в туннеле.
+
+Посмотреть:
+
+```powershell
+route print -4 138.16.224.248
+```
+
+Ожидаемые строки (активная и постоянная):
+
+```text
+138.16.224.248  255.255.255.255  192.168.1.1
+```
+
+Постоянная копия: `HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\PersistentRoutes`, значение `138.16.224.248,255.255.255.255,192.168.1.1,1`.
+
+Добавить (PowerShell от администратора). Шлюз — текущий адрес роутера, сейчас `192.168.1.1`:
+
+```powershell
+route -p add 138.16.224.248 mask 255.255.255.255 192.168.1.1
+```
+
+Убрать:
+
+```powershell
+route -p delete 138.16.224.248
+```
+
+Проверка входа по ключу `~/.ssh/wolfram-labops-win` (хост `Wolfram-EPS-labops` в `~/.ssh/config`):
+
+```powershell
+ssh Wolfram-EPS-labops
+```
+
+Если у роутера сменится адрес, старую строку удалить и добавить с новым шлюзом.
+
+Тот же обрыв у HTML-консоли VNC AdminVPS. noVNC ходит на `wss://vps.adminvps.net:7706` (`5.253.61.17`). Через Happ TCP открывается, TLS обрывается, в консоли браузера `Server disconnected (code: 1006)`. Строки `ws://localhost:17523/` — неудачная локальная попытка noVNC, к туннелю отношения не имеют. Напрямую порт отвечает сертификатом `CN=*.adminvps.net`.
+
+```powershell
+route -p add 5.253.61.17 mask 255.255.255.255 192.168.1.1
+```
+
 ## RDP
 - [Как нажать Ctrl+Alt+Del работая удаленно через RDP ?](https://sysadmin.ru/articles/kak-nazhat-ctrlaltdel-rabotaya-udalenno-cherez-rdp). На помощь нам придет другая комбинация клавиш. Чтобы добиться аналогичного эффекта на удаленном компьютере, нужно нажать комбинацию клавиш `Control+Alt+End` (сокр. `Ctrl+Alt+End`).
 
