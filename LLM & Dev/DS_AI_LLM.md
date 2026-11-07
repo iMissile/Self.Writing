@@ -1,3 +1,12 @@
+# 07.11.2026
+## Grok Bot — local-exec root
+Ошибка `Path is outside the allowed local-exec root`: `Read` / `CopyToBox` / `CopyFromBox` только внутри `C:\Users\…`; `Shell` этим не ограничен. Allow / Always allow не расширяет корень. Junction на другой диск не помогает.
+
+Staff (Cursor forum):
+- https://forum.cursor.com/t/grok-bot-copytobox-read-refuse-d-paths-outside-the-allowed-local-exec-root-while-shell-works/176555
+- https://forum.cursor.com/t/copyfrombox-and-read-refuse-paths-outside-user-profile-after-0-57-1-outside-the-allowed-local-exec-root/172349
+
+Обход: для путей вне профиля сразу Shell (`Get-Content`, `Copy-Item`); для бокса — сначала в профиль, потом CopyToBox. Отказ Read ≠ запрет Shell.
 
 # 08.10.2026
 ## Claude Code — учёт расхода (ccusage)
