@@ -227,6 +227,17 @@ git ls-remote https://github.com/<org-or-user>/<repo>.git
 
 Симптом `remote: Repository not found` у **приватного** репо почти всегда = нет валидного PAT / истек / нет SSO Authorize. GitHub так маскирует «нет доступа», это не «репо удалили» и не «нужна вторая учётка».
 
+Проверка 08.11.2026 (`S:\iwork-GH-2`, без сохранённого PAT): public `i-shutov/flowbridge` и `whereisit-ai` клонируются; private `i-shutov/wolfram-server` даёт тот же `Repository not found`.
+
+### GitHub CLI (`gh`) на Windows
+```powershell
+winget install --id GitHub.cli
+# новый PowerShell:
+gh --version
+gh auth login
+```
+Альтернатива: `choco install gh`. В `auth login` — GitHub.com → HTTPS → browser или paste PAT.
+
 Почему не SSH здесь: удобнее на одном ПК; на портативном диске между машинами каждый раз нужен ключ на каждой машине и часто смена remote. HTTPS+PAT — один URL везде, логин локально.
 
 ## Настрока `.gitignore`

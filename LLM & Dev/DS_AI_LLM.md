@@ -1,4 +1,19 @@
 # 08.11.2026
+## GitHub: public clone vs private `Repository not found`
+На машине без сохранённого PAT:
+- `git clone https://github.com/i-shutov/flowbridge.git` и `whereisit-ai` — ок (public)
+- `git clone https://github.com/i-shutov/wolfram-server.git` → `remote: Repository not found` (private / нет доступа; GitHub так маскирует отказ)
+
+Публичные репо клонируются без логина. Для private нужен PAT той учётки, у которой есть доступ (password = `ghp_...`, не пароль сайта). См. `LLM & Dev/git.md` → «GitHub: HTTPS + PAT на Windows».
+
+Установка GitHub CLI, если нет `gh`:
+```powershell
+winget install --id GitHub.cli
+```
+Новый PowerShell → `gh --version` → `gh auth login` (или paste PAT). Chocolatey: `choco install gh`.
+
+PAT, свеченный в чат, сразу отозвать и выпустить новый.
+
 ## GitLab plugin for OpenAI (ChatGPT / Codex)
 Источник: [GitLab plugin for OpenAI](https://docs.gitlab.com/integration/openai/)
 - Tier: Free, Premium, Ultimate
