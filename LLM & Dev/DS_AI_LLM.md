@@ -14,6 +14,33 @@ winget install --id GitHub.cli
 
 PAT, свеченный в чат, сразу отозвать и выпустить новый.
 
+## GitLab MCP в OpenCode Desktop V2 на Windows
+
+GitLab Duo в списке провайдеров подключает модели, а для доступа к проектам, issues и merge requests используется отдельный GitLab MCP-сервер. Проверено в OpenCode Desktop 2.0.26: после настройки подключение заработало.
+
+1. В **Settings → Extensions → MCPs** показаны настроенные серверы; надпись **Manage in opencode.json** означает, что сервер добавляется через файл конфигурации.
+2. Открыть или создать в Блокноте `%USERPROFILE%\.config\opencode\opencode.json`. Для нового файла вставить:
+
+   ```json
+   {
+     "$schema": "https://opencode.ai/config.json",
+     "mcp": {
+       "servers": {
+         "gitlab": {
+           "type": "remote",
+           "url": "https://gitlab.com/api/v4/mcp"
+         }
+       }
+     }
+   }
+   ```
+
+   При сохранении в Блокноте выбрать тип **Все файлы**, чтобы не получить расширение `.txt`. Если конфигурация уже существует, добавить сервер в `mcp.servers`, сохранив остальные настройки; не перезаписывать файл целиком. Для GitLab Self-Managed заменить `gitlab.com` на адрес своего сервера.
+3. Перезапустить OpenCode Desktop, открыть **Settings → Extensions → MCPs**, выбрать `gitlab` и авторизоваться в браузере через OAuth. Токен в конфигурационный файл записывать не нужно.
+4. После подключения можно, например, попросить OpenCode показать открытые merge requests проекта. Доступ ограничен правами пользователя GitLab. MCP должен быть разрешён для группы на GitLab.com или для инстанса Self-Managed.
+
+Источники: [OpenCode V2: MCP servers](https://opencode.ai/v2/docs/mcp-servers), [GitLab MCP server](https://docs.gitlab.com/user/model_context_protocol/mcp_server/).
+
 ## GitLab plugin for OpenAI (ChatGPT / Codex)
 Источник: [GitLab plugin for OpenAI](https://docs.gitlab.com/integration/openai/)
 - Tier: Free, Premium, Ultimate
