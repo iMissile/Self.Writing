@@ -156,6 +156,10 @@
   },
   "active": "6b190ebbd68b08ed",
   "lastOpenFiles": [
+    "_tmp_links.py",
+    "_tmp_gitlab_openai.md",
+    "_tmp_extract.py",
+    "_tmp_gitlab_openai.html",
     "LLM & Dev/onboard/MASTER_TZ_BOARDGAME_KB_STANDARD_v1_0_RU.md",
     "LLM & Dev/onboard/BOARDGAME_OSINT_RESEARCH_MANUAL_RU_v2_0.md",
     "LLM & Dev/onboard",
@@ -175,10 +179,8 @@
     "LCG/_bak_20260929_proxynexus",
     "LCG/Warhammer 40K Conquest.md",
     "LCG/README.md",
-    "LCG/Android Netrunner.md.bak-20260929",
     "LCG/Blue Moon.md",
     "LCG/Android Netrunner.md",
-    "LCG",
     "LLM & Dev/DS_IDE.md",
     "Notes/DataScience_notes.md",
     "Infra/New_Windows.md",
@@ -190,8 +192,6 @@
     "LLM & Dev/quarto_vdoc_linter_ignore.md",
     "Notes/DS_quarto_and_rmd.md",
     "Notes/python_lang.md",
-    "LLM & Dev/cursor_rules_gpn.md",
-    "LLM/cursor_rules.md",
     "Pasted image 20260611130546.png"
   ]
 }
