@@ -1,3 +1,27 @@
+# 08.11.2026
+## GitLab plugin for OpenAI (ChatGPT / Codex)
+Источник: [GitLab plugin for OpenAI](https://docs.gitlab.com/integration/openai/)
+- Tier: Free, Premium, Ultimate
+- Offering: GitLab.com, GitLab Self-Managed
+- Status: **Beta**
+
+Плагин связывает GitLab с ChatGPT и Codex: из чата можно смотреть project / file / merge request / issue / pipeline и запрашивать разрешённые действия. Доступ только к тем проектам и группам, к которым есть доступ у подключённого пользователя GitLab (OAuth от его имени).
+
+### Related topics (с той же страницы docs)
+- [Connecting GitLab to ChatGPT and Codex](https://help.openai.com/en/articles/20001486-connecting-gitlab-to-chatgpt-and-codex) — обзор, что читает/пишет плагин, setup для GitLab.com
+- [Setting up the GitLab Self-Managed app template](https://help.openai.com/en/articles/20001487-setting-up-the-gitlab-self-managed-app-template-for-chatgpt-and-codex) — workspace admin публикует app из шаблона; OAuth scopes: `api`, `write_repository`, `openid`
+- [Review GitLab merge requests with Codex](https://learn.chatgpt.com/docs/third-party/gitlab) — code review в MR через `@codex review` (beta, Codex cloud)
+
+### GitLab.com — подключение
+1. ChatGPT → Plugin directory → GitLab → Install Plugin → Connect
+2. Авторизовать ChatGPT в GitLab
+3. Дальше в ChatGPT / Codex запрашивать инспекцию или действие
+
+### Self-Managed / Dedicated
+Сначала admin workspace публикует app из Self-Managed template (hostname + OAuth Application ID/Secret). Потом члены workspace ставят плагин и коннектятся к этому app. Availability / actions / approvals — в настройках workspace (Configure actions, Configure approvals; в Enterprise/Edu ещё Role access).
+
+Старый GitLab Issues app с индивидуальным sync больше не доступен — нужен текущий GitLab plugin (данные по API под prompt).
+
 # 07.11.2026
 ## Grok Bot — local-exec root
 Ошибка `Path is outside the allowed local-exec root`: `Read` / `CopyToBox` / `CopyFromBox` только внутри `C:\Users\…`; `Shell` этим не ограничен. Allow / Always allow не расширяет корень. Junction на другой диск не помогает.
