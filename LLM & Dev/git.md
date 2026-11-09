@@ -190,44 +190,79 @@ unlist(stri_split_lines(sha$stdout, omit_empty = TRUE)) %>%
 - [Git push results in “Authentication Failed”](https://stackoverflow.com/questions/17659206/git-push-results-in-authentication-failed). Снимаем галочки при инсталляции, чистим Windows Credential Manager
 
 # GitHub: HTTPS + PAT на Windows (одна учётка)
-Для одной учётки GitHub, нескольких org/репо и клонов на портативном диске.
-Remote оставляем `https://github.com/...`. Токен живёт на **машине**, не на диске.
-SSH не нужен: не переписываем remote и не таскаем ключи между ПК.
+Для одной учётки GitHub, нескольких org/репо и клонов на портативном диске. Remote остаётся вида `https://github.com/...`; токен хранится в учётных данных текущего пользователя Windows на конкретной машине, а не в репозитории.
 
-1. Создать classic PAT: https://github.com/settings/tokens → **Generate new token (classic)**
-   - scope: **`repo`**
-   - скопировать `ghp_...` сразу
-   - если у org включён SSO (напр. `science-activity`): у токена **Configure SSO → Authorize**
-2. Стереть старый кэш GitHub.
+### Git Credential Manager (GCM) на Windows
 
-PowerShell:
+GCM обычно устанавливается вместе с Git for Windows. Запустить в PowerShell:
+
 ```powershell
-@"
-protocol=https
-host=github.com
-"@ | & "C:\Program Files\Git\ucrt64\bin\git-credential-manager.exe" erase
+# Проверить, установлен ли GCM, и посмотреть активный helper
+git credential-manager --version
+git config --show-origin --get-all credential.helper
+
+# Если GCM установлен, но Git его не использует:
+git credential-manager configure
+
+# Открыть диспетчер учётных данных Windows
+control.exe /name Microsoft.CredentialManager
 ```
 
-Git Bash (не `echo` с `\n` — в bash он часто ломается):
-```bash
-printf "protocol=https\nhost=github.com\n" | git credential-manager erase
+`configure` меняет пользовательский Git config; выполнять его только при необходимости. Если GCM отсутствует, установить или обновить [Git for Windows](https://git-scm.com/install/windows), затем открыть новый терминал. GCM вызывается Git автоматически при обращении к HTTPS-репозиторию; отдельный постоянный запуск не нужен. Команда ниже вызывает вход с PAT для конкретного приватного репозитория.
+
+### Настроить PAT через Git Credential Manager (GCM)
+
+1. Создать [personal access token](https://github.com/settings/tokens) с доступом к нужным репозиториям и правами на нужные операции. Для classic PAT доступ к приватным репозиториям обычно требует scope `repo`. Если организация использует SSO и этого требует, у classic PAT выбрать **Configure SSO → Authorize**. Не вставлять токен в URL, команду или файл репозитория.
+2. Проверить, что Git использует GCM:
+
+   ```powershell
+   git config --show-origin --get-all credential.helper
+   ```
+
+   Ожидаемый helper — `manager`. Если GCM установлен, но helper не настроен, можно включить его для пользователя командой `git config --global credential.helper manager`. Если задано несколько helper, проверить все выводимые значения: они могут объединяться.
+3. Запустить запрос к **приватному** репозиторию, к которому токен должен давать доступ:
+
+   ```powershell
+   git -c credential.gitHubAuthModes=pat ls-remote https://github.com/<owner>/<private-repo>.git
+   ```
+
+   Вместо `<owner>/<private-repo>` подставить реальные значения. Выбрать в диалоге GCM вход через **Personal access token** и ввести PAT в запросе приложения; при запросе имени указать свой GitHub-логин. Ключ `-c` выбирает режим PAT только для этой команды. После успешной аутентификации GCM сохранит учётные данные в Windows Credential Manager. Если диалог не появился, возможно, уже используются сохранённые данные или выбранный Git/GCM не поддерживает этот режим; доступ к публичному репозиторию сам по себе не проверяет PAT.
+4. Повторить `git ls-remote` для второго приватного репозитория. Один PAT подойдёт для обоих, если его владелец и разрешения токена дают доступ к обоим. При смене компьютера аутентификацию нужно настроить на нём отдельно.
+
+Альтернатива ручного сохранения через Windows Credential Manager: в **Диспетчер учётных данных → Учётные данные Windows → Добавить общие учётные данные** указать адрес `git:https://github.com`, имя `PersonalAccessToken`, пароль — PAT. Или в интерактивном `cmd.exe` выполнить `cmdkey /generic:git:https://github.com /user:PersonalAccessToken /pass` и ввести PAT только в появившемся запросе. Это способ записи непосредственно в Windows Credential Manager; токен не должен попадать в историю команд.
+
+Старую запись не нужно удалять заранее. Если Git продолжает использовать неверные сохранённые данные, найдите соответствующую запись `git:https://github.com` в Windows Credential Manager, удалите её и повторите аутентификацию; это может затронуть и другие GitHub-репозитории этого пользователя Windows. `Repository not found` для приватного репозитория может означать отсутствие доступа у пользователя или токена, недостающую SSO-авторизацию либо неверный URL.
+
+Источники: [настройка GCM и режим PAT](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/configuration.md), [сохранение PAT в Windows Credential Manager](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/github-apideprecation.md), [аутентификация GitHub через GCM](https://docs.github.com/en/get-started/git-basics/caching-your-github-credentials-in-git).
+
+Проверка 08.11.2026 (`S:\iwork-GH-2`, без сохранённого PAT): public `i-shutov/flowbridge` и `whereisit-ai` клонируются; private `i-shutov/wolfram-server` даёт `Repository not found`.
+
+### Несколько аккаунтов GitHub: привязка клона к учётной записи
+
+GCM различает аккаунты по имени в HTTPS-адресе remote. Это настройка конкретного клона: другие репозитории сохраняют свои remote и могут продолжать использовать другой аккаунт. В адрес включается только имя пользователя, не PAT. Изменение `user.name` или `user.email` влияет на автора коммитов, а не на выбор учётной записи для входа.
+
+Пример: для клона `S:\iwork-GH-2\tikzarium` использовать аккаунт `i-shutov` вместо `iMissile`:
+
+```powershell
+cd S:\iwork-GH-2\tikzarium
+
+# Посмотреть аккаунты, сохранённые в GCM
+git credential-manager github list
+
+# Если i-shutov ещё нет: вход через браузер
+git credential-manager github login --username i-shutov --browser
+
+# Выбрать аккаунт для этого origin (имя пользователя, без токена)
+git remote set-url origin https://i-shutov@github.com/i-shutov/tikzarium.git
+git remote -v
+
+# Проверить право отправки без публикации коммитов
+git push --dry-run origin main
+# Если проверка прошла:
+git push origin main
 ```
 
-Либо вручную: Диспетчер учётных данных → Учётные данные Windows → удалить `git:https://github.com*`.
-
-3. Сохранить PAT (GCM спросит логин/пароль):
-```bash
-git ls-remote https://github.com/<org-or-user>/<repo>.git
-```
-- Username: логин GitHub
-- Password: **PAT** (`ghp_...`), не пароль сайта
-
-4. `git push` / `git pull` — тот же токен покрывает личные репо и org этой учётки.
-5. Другая машина + тот же портативный диск: повторить шаги 2–3 на этой машине.
-
-Симптом `remote: Repository not found` у **приватного** репо почти всегда = нет валидного PAT / истек / нет SSO Authorize. GitHub так маскирует «нет доступа», это не «репо удалили» и не «нужна вторая учётка».
-
-Проверка 08.11.2026 (`S:\iwork-GH-2`, без сохранённого PAT): public `i-shutov/flowbridge` и `whereisit-ai` клонируются; private `i-shutov/wolfram-server` даёт тот же `Repository not found`.
+У выбранного аккаунта и токена или OAuth-доступа должны быть права записи. Если репозиторий публичный, успешный `pull` ещё не подтверждает право на `push`: для `tikzarium` GitHub ранее вернул `Permission ... denied to iMissile` (HTTP 403). Авторизацию другого аккаунта нужно выполнить один раз интерактивно; GCM обычно использует сохранённые данные повторно, пока доступ действителен. Не удалять учётные данные другого аккаунта без необходимости. [Документация GCM: несколько пользователей](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/multiple-users.md).
 
 ### GitHub CLI (`gh`) на Windows
 ```powershell
