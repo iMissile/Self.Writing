@@ -1,3 +1,15 @@
+## ChatGPT Desktop: отключение автозапуска в Windows
+
+[disable-chatgpt-autostart.ps1](ChatGPT_tweaks/disable-chatgpt-autostart.ps1) отключает для текущего пользователя StartupTask Store-приложения `OpenAI.Codex`: ищет его записи в `HKCU` и устанавливает `State = 0` и `LastDisabledTime`. Права администратора не нужны. После этого ChatGPT можно запускать вручную после подключения VPN. После обновления или переустановки приложения настройку стоит проверить повторно.
+
+Из корня репозитория выполнить в PowerShell:
+
+```powershell
+& '.\LLM & Dev\ChatGPT_tweaks\disable-chatgpt-autostart.ps1'
+```
+
+Это отключение автозапуска, а не исправление самого VPN или падения приложения. Скрипт распространяется по [лицензии MIT](ChatGPT_tweaks/LICENSE.astrill-chatgpt-fix); автор Theudos Gao, [исходный проект astrill-chatgpt-fix](https://github.com/mondalafighting/astrill-chatgpt-fix/blob/main/disable-chatgpt-autostart.ps1).
+
 # 08.11.2026
 ## GitHub: public clone vs private `Repository not found`
 На машине без сохранённого PAT:
