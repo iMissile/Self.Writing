@@ -1730,6 +1730,9 @@ Built by the team at Craft — because diagrams deserve great design too.
 - [GraphQL](https://graphql.org/). The query language for modern APIs
 - [Введение в GraphQL](https://systems.education/graphql-intro)
 
+# 10.11.2026
+## R
+- [An Introduction to xfun](https://yihui.org/xfun/).  A Collection of Miscellaneous Functions
 # 17.09.2026
 ## R
 - [Guide to the ggplotplus Package](https://maisrc.github.io/ggplotplus/)
