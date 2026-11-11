@@ -1485,6 +1485,7 @@ Monash University, Australia
 - [Воспитание Obsidian — вашего персонального информационного менеджера](https://habr.com/ru/company/macloud/blog/560776/)
 - [Как я веду заметки в стиле Zettelkasten в Obsidian](https://venagid.ru/blog/zettelkasten-obsidian)
 - [Obsidian — IDE для Markdown базы знаний](https://vas3k.club/link/2609/)
+- OSS рядом: [Zettlr](https://www.zettlr.com/), [Joplin](https://joplinapp.org/).
 
 # http://192.168.12.31:4242/client/#/
 
@@ -1716,6 +1717,7 @@ Interface to the 'yacas' computer algebra system (<http://www.yacas.org/>).
 # Digital Twin
 - [Цифровые двойники: физика ведёт математику, математика ведёт компьютерную науку](https://ailev.livejournal.com/1549559.html)
 - [Modelica](https://modelica.org/). Model complex systems more efficiently.
+- OSS IDE: [OpenModelica](https://openmodelica.org/).
 
 # Tools
 - [SmoothCSV](https://smoothcsv.com/) is a powerful and intuitive tool for editing CSV files. CSV editor

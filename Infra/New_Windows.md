@@ -446,6 +446,7 @@ Go to Apps, then scroll down to find that app in the list of installed Apps and 
 - [MSIX Tutorial: A comprehensive 24-chapter guide](https://www.advancedinstaller.com/msix-introduction.html)
 - [Direct Folders — экономим клики при работе с файлами в Windows](https://lifehacker.ru/direct-folders-ekonomim-kliki-pri-rabote-s-fajlami-v-windows/)
 - [Listary](https://www.listary.com/) is a revolutionary search utility for Windows that makes finding your files and launching applications blazing fast, for casual and power users alike!
+- OSS: [Flow Launcher](https://www.flowlauncher.com/) — см. «Open-source замены платного софта».
 - [Clover 3](http://en.ejie.me/). Wings for your Windows Explorer! Clover is an extension of the Windows Explorer, to add multi-tab functionality similar to Google Chrome browser. After install Clover, you will be able to open multiple folders within the same window, and you can also add folder bookmarks.
 - [System Informer](https://systeminformer.sourceforge.io/). A **free**, powerful, multi-purpose tool that helps you **monitor system resources**, **debug software** and **detect malware**.
 - [MarkText](https://www.marktext.cc/). Markdown-редактор.
@@ -483,6 +484,7 @@ Far.exe /import settings.cfg
 - [Windhawk](https://windhawk.net/). The customization marketplace for Windows and programs
 	- «Better file sizes in Explorer» - Показываем размеры папок в Проводнике Windows 11
 - [Typora](https://typora.io/) Markdown Editor
+- OSS: [Zettlr](https://www.zettlr.com/), [Joplin](https://joplinapp.org/) — см. «Open-source замены платного софта».
 
 ## Tips
 - [Бесплатно продлеваем Kiwi for Gmail](https://dailysoftwaredeal.com/seller/giveaway-kiwi-for-gmail-windows-mac-1-year-license/). Тут идет покупка, если из приложения не доступно пока. https://www.kiwiforgmail.com/. Code: KiwiForFree
@@ -711,6 +713,7 @@ https://chocolatey.org/packages/openconnect-gui
 - [Привязка мыши(клавиатуры) logitech (не unifying) к не родному донглу](https://www.cyberforum.ru/mouses/thread2600706.html)
 
 ## Photoshop
+- OSS каталог/просмотр: [digiKam](https://www.digikam.org/), [nomacs](https://nomacs.org/) — см. «Open-source замены платного софта».
 - COOL! [20 Free Spray Paint Photoshop Brushes with Splatters & Drips](https://blog.spoongraphics.co.uk/freebies/20-free-spray-paint-photoshop-brushes-with-splatters-drips)
 - Descreen/Remove pattern [Pattern Suppressor v2.7](http://ft.rognemedia.no/) Free tool for easily removing repeating patterns using Photoshop. Based on FFT
 - [ImageJ. FFT filter](https://imagej.net/)
@@ -789,7 +792,9 @@ Slight correction to a previous answer. And if you tab out of this one and lose 
 - [Dropbox]()
 - [Duplicate Cleaner Pro]()
 - [EmEditor]()
+- OSS: [Kate](https://kate-editor.org/), [CudaText](https://cudatext.github.io/) — см. «Open-source замены платного софта».
 - [Evernote]()
+- OSS: [Joplin](https://joplinapp.org/), [Zettlr](https://www.zettlr.com/) — см. «Open-source замены платного софта».
 - [Everything]()
 - [EXIF ReName]()
 - [Falcon SQL Client]()
@@ -841,6 +846,7 @@ Slight correction to a previous answer. And if you tab out of this one and lose 
 - [ORPALIS PDF Reducer Pro 3]()
 - [Outlook 2016]()
 - [Paragon HFS+ for Windows]()
+- OSS: [HFSExplorer](https://www.catacombae.org/hfsexplorer/) — см. «Open-source замены платного софта».
 - [Passware Kit Forensic 2017 v1]()
 - [Password Agent]()
 - [PDFsam Basic](https://pdfsam.org/pdfsam-basic/) - a free, open source, multi-platform software designed to split, merge, extract pages, mix and rotate PDF files.
@@ -876,6 +882,7 @@ Slight correction to a previous answer. And if you tab out of this one and lose 
 - [SyncToy 2.1(x64)]()
 - [Tag&Rename]()
 - [TeamViewer 14]()
+- OSS: [RustDesk](https://rustdesk.com/) — см. «Open-source замены платного софта».
 - [Telegram]()
 - [TextPipe Pro Evaluation]()
 - [TigoTago]()
@@ -908,7 +915,53 @@ Slight correction to a previous answer. And if you tab out of this one and lose 
 - [Xshell 5]()
 - [Xshell 6]()
 
-## Video
+# Open-source замены платного софта
+Отдельный перечень хороших OSS-замен; ниже — по роду задачи. Что именно заменяет — в скобках.
+
+## Лаунчер и оболочка Windows
+- [Flow Launcher](https://www.flowlauncher.com/) — лаунчер приложений/файлов (Listary, PowerToys Run, Alfred).
+- [Open-Shell Menu](https://github.com/Open-Shell/Open-Shell-Menu) — классическое меню «Пуск» (Start10 / Classic Shell).
+- [Seelen UI](https://github.com/eythaann/Seelen-UI) — кастомизация оболочки Windows (Stardock / Start11 / Fences-сценарии).
+
+## Удалённый доступ
+- [RustDesk](https://rustdesk.com/) — удалённый рабочий стол (TeamViewer, AnyDesk); можно self-host.
+
+## Текстовые и Markdown-редакторы, заметки
+- [Kate](https://kate-editor.org/) — мощный текстовый редактор KDE (EmEditor / Notepad++ / Sublime на часть сценариев).
+- [CudaText](https://cudatext.github.io/) — быстрый кроссплатформенный редактор с плагинами (EmEditor / Sublime).
+- [Zettlr](https://www.zettlr.com/) — Markdown + Zettelkasten / академическое письмо (Typora, Obsidian на часть сценариев).
+- [Joplin](https://joplinapp.org/) — заметки с синхронизацией и шифрованием (Evernote, OneNote).
+
+## Данные: таблицы, SQL, логи
+- [VisiData](https://www.visidata.org/) — интерактивный разбор табличных данных в терминале (Excel / Tableau на разведке).
+- [Harlequin](https://github.com/tconbeer/harlequin) — SQL IDE в терминале, в т.ч. DuckDB (DataGrip / DBeaver / Falcon на CLI).
+- [Logdy](https://logdy.dev/) — веб-UI для логов из stdin/файлов (LogViewPlus и прочие платные tail/log UI).
+- [lnav](https://lnav.org/) — продвинутый просмотрщик логов в терминале (LogExpert / mTail / LogViewPlus).
+
+## Диски, облака, файловые системы
+- [HFSExplorer](https://www.catacombae.org/hfsexplorer/) — чтение HFS/HFS+ томов на Windows (Paragon HFS+ for Windows).
+- [rclone](https://rclone.org/) — синхронизация и монтирование облаков из CLI (RaiDrive, Air Explorer, rsync-сценарии).
+- [WinFsp](https://winfsp.dev/) — FUSE-подобный слой ФС для Windows; нужен для `rclone mount` и подобных драйверов.
+
+## Моделирование
+- [OpenModelica](https://openmodelica.org/) — Modelica-моделирование (Wolfram System Modeler / коммерческие Modelica IDE).
+
+## Фото и изображения
+- [digiKam](https://www.digikam.org/) — каталог и обработка фото (Lightroom / Luminar на каталог и базовую правку).
+- [nomacs](https://nomacs.org/) — просмотрщик изображений (XnView / IrfanView / штатный Photos).
+
+## Видео: монтаж, конвертация, загрузка
+- [Kdenlive](https://kdenlive.org/) — нелинейный монтаж (Premiere / Camtasia / VideoPad).
+- [Shotcut](https://shotcut.org/) — кроссплатформенный видеоредактор (Premiere / VideoPad).
+- [HandBrake](https://handbrake.fr/) — конвертация/перекодирование видео (VidCoder / VideoProc / коммерческие конвертеры).
+- [Tartube](https://github.com/axcore/tartube) — GUI к yt-dlp для загрузки с YouTube и др. (KeepVid, Softorino YouTube Converter).
+
+## Торренты
+- [qBittorrent](https://www.qbittorrent.org/) — торрент-клиент без рекламы (µTorrent).
+- [Transmission](https://transmissionbt.com/) — лёгкий торрент-клиент (µTorrent / BitTorrent).
+
+# Video
+- OSS монтаж/конверт/загрузка: [Kdenlive](https://kdenlive.org/), [Shotcut](https://shotcut.org/), [HandBrake](https://handbrake.fr/), [Tartube](https://github.com/axcore/tartube) — см. «Open-source замены платного софта».
 - [FFmpeg Explorer](https://ffmpeg.lav.io/)
 - [19 команд ffmpeg для любых нужд](https://habr.com/ru/post/171213/)
 - [Windows `.bat` script that checks video file integrity using `ffmpeg.exe`](https://github.com/describe19/check-video)
@@ -1202,6 +1255,8 @@ Now the marks are invisible on normal work, but visible on selection only.
 Разрешение на удаленное управление антивирусом включила (галочку поставили) - квадратик стал зеленый ... )))
 добавить программу в список Доверенных программ https://support.kaspersky.com/KFA/21.3/ru-RU/201385.htm и включить исключение Разрешить взаимодействие с интерфейсом Kaspersky Free. 
 
+OSS вместо TeamViewer/AnyDesk: [RustDesk](https://rustdesk.com/) — см. «Open-source замены платного софта».
+
 # Мониторинг активности
 - [ActivityWatch](https://activitywatch.net/) is an app that automatically tracks how you spend time on your devices. 
 It is **open source**, **privacy-first**, **cross-platform**, and a great alternative to services like RescueTime, ManicTime, and WakaTime. 
@@ -1213,6 +1268,7 @@ It can be used to keep track of your productivity, time spent on different proje
 - [DesktopFences](https://github.com/limbo666/DesktopFences). An alternative to Stardock Fences. Open Source
 - [NoFences](https://github.com/Twometer/NoFences). Open Source Stardock Fences alternative
 - [Best 7 Stardock Fences Alternatives for Windows Desktop Organization](https://quasa.io/media/best-7-stardock-fences-alternatives-for-windows-desktop-organization)
+- OSS: [Open-Shell Menu](https://github.com/Open-Shell/Open-Shell-Menu), [Seelen UI](https://github.com/eythaann/Seelen-UI) — см. «Open-source замены платного софта».
 
 
 ## Поиск дубликатов изображений в Windows
@@ -1226,6 +1282,7 @@ TinEye browser extensions are the fastest way to search for images online.
 
 # Утилиты для синхронизации и частное облако
 - [Syncthing](https://syncthing.net/)
+- OSS облака/монтирование: [rclone](https://rclone.org/) + [WinFsp](https://winfsp.dev/) — см. «Open-source замены платного софта».
 	- [Создаём личное облачное хранилище. Syncthing](https://hacker-basement.ru/2019/05/26/private-cloud-syncthing/)
 	- [Nextcloud](https://nextcloud.com/). The self-hosted productivity platform that keeps you in control
 - [Resilio Sync](https://www.resilio.com/). Universal File Delivery for the Enterprise.
@@ -1298,6 +1355,7 @@ If you are using the curl command line tool on Windows, curl will search for a C
 - [Tailviewer](https://kittyfisto.github.io/Tailviewer/). A fast, free and open source log viewer for Windows
 - [LogExpert](https://github.com/zarunbal/LogExpert). Windows tail program and log file analyzer.
 - Платный [LogViewPlus](https://www.logviewplus.com/tail-for-windows.html)
+- OSS: [Logdy](https://logdy.dev/), [lnav](https://lnav.org/) — см. «Open-source замены платного софта».
 
 # захват и запись экрана
 - [LightShot](https://app.prntscr.com/ru/). Самый быстрый и удобный способ сделать скриншот.
@@ -1329,6 +1387,7 @@ If you are using the curl command line tool on Windows, curl will search for a C
 - [RaiDrive](https://www.raidrive.com/)
 - [Air Explorer](https://www.airexplorer.net/ru/pro/)
 - [Cryptomator](https://cryptomator.org/) With Cryptomator, the key to your data is in your hands.
+- OSS: [rclone](https://rclone.org/) (+ [WinFsp](https://winfsp.dev/) для mount) — см. «Open-source замены платного софта».
 
 # пропал Alt-Tab
 - [How to Fix Alt-Tab Shortcut Not Working on Windows 10](https://softwarekeep.com/help-center/how-to-fix-alt-tab-shortcut-not-working-on-windows-10)
@@ -1380,6 +1439,8 @@ End Sub
 - bt.enable_pulse → false
 - sponsored_torrent_offer_enabled → false
 ```
+
+OSS вместо µTorrent: [qBittorrent](https://www.qbittorrent.org/), [Transmission](https://transmissionbt.com/) — см. «Open-source замены платного софта».
 
 # Настройка Keenetic Giga
 ## Настройка SSH на Keenetic Ultra KN-1811
