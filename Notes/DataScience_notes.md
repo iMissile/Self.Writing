@@ -1733,6 +1733,7 @@ Built by the team at Craft — because diagrams deserve great design too.
 # 10.11.2026
 ## R
 - [An Introduction to xfun](https://yihui.org/xfun/).  A Collection of Miscellaneous Functions
+- [portable](https://github.com/r-lib/portable) — новое графическое устройство для генерации PDF-файлов в R.
 # 17.09.2026
 ## R
 - [Guide to the ggplotplus Package](https://maisrc.github.io/ggplotplus/)

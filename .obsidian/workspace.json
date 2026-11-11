@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LCG/Blue Moon.md",
+                "file": "Notes/DataScience_notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Blue Moon"
+              "title": "DataScience_notes"
             }
           }
         ],
@@ -70,12 +70,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": ".ws",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "alphabetical"
+                "sortOrder": "byModifiedTime"
               },
               "icon": "lucide-search",
               "title": "Поиск"
@@ -156,6 +156,9 @@
   },
   "active": "6b190ebbd68b08ed",
   "lastOpenFiles": [
+    "LLM & Dev/git.md",
+    "LLM & Dev/DS_AI_LLM.md",
+    "LCG/Blue Moon.md",
     "_tmp_links.py",
     "_tmp_gitlab_openai.md",
     "_tmp_extract.py",
@@ -172,14 +175,11 @@
     "LLM & Dev/Opencode_tweaks",
     "LCG/Lord of the Rings.md",
     "LCG/Call of Cthulhu.md",
-    "LLM & Dev/DS_AI_LLM.md",
     "LCG/_bak_20260929_proxynexus/Warhammer 40K Conquest.md.bak",
     "LCG/_bak_20260929_proxynexus/Lord of the Rings.md.bak",
     "LCG/_bak_20260929_proxynexus/Android Netrunner.md.bak",
-    "LCG/_bak_20260929_proxynexus",
     "LCG/Warhammer 40K Conquest.md",
     "LCG/README.md",
-    "LCG/Blue Moon.md",
     "LCG/Android Netrunner.md",
     "LLM & Dev/DS_IDE.md",
     "Notes/DataScience_notes.md",
