@@ -925,6 +925,8 @@ Slight correction to a previous answer. And if you tab out of this one and lose 
 
 ## Удалённый доступ
 - [RustDesk](https://rustdesk.com/) — удалённый рабочий стол (TeamViewer, AnyDesk); можно self-host.
+	- WOL в клиенте: только **та же локальная сеть**. Настройка NIC/BIOS + LAN discovery, скан **Discovered** при включённой цели, затем WOL с той же вкладки (у Flutter не из Favorites). Пошагово: `Infra/RustDesk_wolfram-server.md` §8; обсуждение: [#1249](https://github.com/rustdesk/rustdesk/discussions/1249). Прочие утилиты — «Wake-on-LAN».
+	- Самохост на wolfram-server: `Infra/RustDesk_wolfram-server.md`.
 
 ## Текстовые и Markdown-редакторы, заметки
 - [Kate](https://kate-editor.org/) — мощный текстовый редактор KDE (EmEditor / Notepad++ / Sublime на часть сценариев).
@@ -1347,9 +1349,31 @@ If you are using the curl command line tool on Windows, curl will search for a C
 # эмулятор Android на Windows
 - [BlueStack](https://www.bluestacks.com/)
 
-# wake-up
+# Wake-on-LAN
+Magic packet по MAC целевой NIC. Нужна поддержка WOL в **BIOS/UEFI** и в свойствах адаптера ОС («Wake on magic packet» / аналог). Кратко: [Wake-on-LAN (Wikipedia)](https://en.wikipedia.org/wiki/Wake-on-LAN).
+
+## Расписание пробуждения (не WOL)
 - [How To Automatically Turn On Computer and/or Wake Computer Up](https://learn.microsoft.com/en-us/answers/questions/422921/how-to-automatically-turn-on-computer-and-or-wake)
 - [How to Schedule Windows 10 Wake from Sleep](https://www.ubackup.com/windows-10/windows-10-schedule-sleep-and-wake.html)
+
+## Утилиты и обходы
+Сводка из [RustDesk discussion #1249](https://github.com/rustdesk/rustdesk/discussions/1249) (официальный ответ: WOL в RustDesk — same LAN; для интернета — отдельные решения):
+- [UpSnap](https://github.com/seriousm4x/UpSnap) (ранее pSnap) — веб-UI для WOL, удобно держать на always-on машине в той же LAN.
+- [WakeMeOnLAN](https://www.nirsoft.net/utils/wake_on_lan.html) (NirSoft) — список машин и magic packet на Windows.
+- [PingTool](https://ping-tool.com/) — мониторинг сети + WOL.
+- Роутер с WOL / проброс magic packet (часть MikroTik и др.; MAC + статический IP на LAN) — см. [комментарий в r/rustdesk](https://www.reddit.com/r/rustdesk/comments/1ox1oxv/comment/noun2rj/).
+- CLI-тест: [wol-rs](https://github.com/fengyc/wol-rs) ([готовые бинарники v1.1.0](https://github.com/fengyc/wol-rs/releases/tag/v1.1.0)); на Linux часто достаточно `wakeonlan aa:bb:cc:dd:ee:ff`.
+
+## RustDesk — настройка и использование WOL
+Полный разбор под self-host: `Infra/RustDesk_wolfram-server.md` §8. Кратко:
+
+**На цели:** BIOS/UEFI WOL; в ОС у NIC — Wake on magic packet; в RustDesk не включать Deny LAN discovery; служба/автозапуск после бута.
+
+**Один раз при включённой цели:** с управляющей машины в той же LAN открыть **Discovered** (навигатор) и дождаться скана — запоминается MAC.
+
+**Будить:** та же LAN → снова **Discovered** → WOL на плитке цели → Connect. У Flutter пункта WOL нет в Favorites/Recent ([#12274](https://github.com/rustdesk/rustdesk/discussions/12274)).
+
+**Ограничение:** пакет шлёт только локальный клиент-отправитель; `hbbs`/`hbbr` и «второй online peer в LAN цели» из UI OSS этого не делают (у AnyDesk paid — да). Обсуждение: [#1249](https://github.com/rustdesk/rustdesk/discussions/1249). Если UI молчит — проверить WOL вне RustDesk (`wol-rs` / `wakeonlan`), затем MAC в Discovered и same-LAN.
 
 # log viewer
 - [Tailviewer](https://kittyfisto.github.io/Tailviewer/). A fast, free and open source log viewer for Windows

@@ -303,18 +303,56 @@ tar -czf /root/rustdesk-data-$(date +%F).tgz -C /opt/rustdesk data
 
 ---
 
-## 8. Чего сознательно нет
+## 8. WOL (Wake-on-LAN)
+
+Magic packet уходит **только из той же LAN**, что и машина-отправитель (как у бесплатного AnyDesk). Self-hosted `hbbs`/`hbbr` на wolfram-server.ru **не** шлёт WOL: сервер — ID/relay, не «always-on сосед» в LAN цели. Источник: [discussion #1249](https://github.com/rustdesk/rustdesk/discussions/1249). Сводка сторонних утилит — в `New_Windows.md` → **Wake-on-LAN**.
+
+### 8.1. Настройка цели (машина, которую будят)
+
+1. **BIOS/UEFI** — включить Wake-on-LAN / Wake on PCI-E / Power On by PCI-E (название зависит от платы).
+2. **Windows, NIC** — Диспетчер устройств → сетевой адаптер → Свойства → Управление электропитанием:
+   - разрешить устройству выводить компьютер из ждущего режима;
+   - «Только при помощи волшебного пакета» / **Wake on magic packet** (если есть отдельная вкладка Advanced — тоже).
+3. **RustDesk на цели** — не запрещать LAN discovery:
+   - Settings → Security → снять **Deny LAN discovery** / «Отклонять обнаружение в LAN» (если стояло);
+   - либо опция `enable-lan-discovery=Y` при кастомной установке.
+4. Клиент на цели лучше как служба + автозапуск, чтобы после пробуждения сразу принимал соединение (§5.3).
+5. Один раз пока цель **включена**: с управляющей машины в той же LAN открыть вкладку **Discovered** (иконка навигатора / «Обнаруженные») и дождаться скана — RustDesk запомнит **MAC** (без этого WOL из UI не из чего слать).
+
+### 8.2. Использование (Flutter-клиент)
+
+1. Управляющая и целевая машины — **одна L2/LAN** (или один broadcast-домен). Из другой сети / через интернет пункт WOL в OSS не доставит пакет.
+2. Главное окно → вкладка **Discovered** (не Favorites / Recent: у Flutter пункт WOL только здесь, даже если цель в избранном — [discussion #12274](https://github.com/rustdesk/rustdesk/discussions/12274)).
+3. На плитке цели → **WOL** / Wake on LAN → ждать загрузки NIC и старта ОС/службы RustDesk → Connect по ID как обычно.
+4. Sciter-клиент (старый UI) показывал WOL и на обычных remotes; актуальный Flutter — ориентироваться на Discovered.
+
+### 8.3. Если не будит
+
+| Проверка | Как |
+|----------|-----|
+| WOL на железе/ОС | BIOS + «Wake on magic packet»; тест вне RustDesk: [wol-rs](https://github.com/fengyc/wol-rs/releases/tag/v1.1.0) или `wakeonlan aa:bb:cc:dd:ee:ff` |
+| MAC известен клиенту | Цель хоть раз была online в **Discovered** с этой управляющей машины |
+| Same LAN | Отправитель не за VPN/другой подсетью без broadcast |
+| Сон vs выключение | Часть NIC будит из sleep/hibernate, но не из soft-off (S5) — смотреть документацию платы |
+| Избранное без WOL | Искать цель во вкладке Discovered, не в Favorites |
+
+С другой сети — не через UI RustDesk: UpSnap / WakeMeOnLAN / WOL на роутере / always-on хост *в LAN цели* (`New_Windows.md`).
+
+---
+
+## 9. Чего сознательно нет
 
 - **RustDesk Server Pro** (веб-консоль, адресная книга, SSO) — не ставили; это отдельный продукт.
 - Nginx перед 21116/21117 не нужен: это не HTTP-сервис.
 - API Server в клиенте пустой — у OSS нет своего API endpoint.
+- Удалённый WOL «через сервер / через другой online-peer в LAN цели» из UI OSS — нет; только same-LAN с отправителя (§8).
 
 Официальная документация:  
 [Self-host / Docker](https://rustdesk.com/docs/en/self-host/rustdesk-server-oss/docker/)
 
 ---
 
-## 9. Краткая шпаргалка клиента
+## 10. Краткая шпаргалка клиента
 
 ```
 ID Server:    wolfram-server.ru
