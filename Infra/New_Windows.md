@@ -875,6 +875,7 @@ Slight correction to a previous answer. And if you tab out of this one and lose 
 - [Smart Switch]()
 - [SmartDown]()
 - [SmartGit]()
+- OSS: [SourceGit](https://sourcegit-scm.github.io/), [Gittyup](https://murmele.github.io/Gittyup/), [git-cola](https://git-cola.github.io/) — см. «Open-source замены» → Git GUI.
 - [Snagit 13]()
 - [SoftorinoYoutubeConverter2]()
 - [SourceTree]()
@@ -923,6 +924,15 @@ Slight correction to a previous answer. And if you tab out of this one and lose 
 - [Open-Shell Menu](https://github.com/Open-Shell/Open-Shell-Menu) — классическое меню «Пуск» (Start10 / Classic Shell).
 - [Seelen UI](https://github.com/eythaann/Seelen-UI) — кастомизация оболочки Windows (Stardock / Start11 / Fences-сценарии).
 
+## Git GUI (SmartGit / SourceTree / Tower)
+- [SourceGit](https://sourcegit-scm.github.io/) ([GitHub](https://github.com/sourcegit-scm/sourcegit)) — кроссплатформенный MIT-клиент: граф, interactive rebase, stash/submodule/worktree, LFS, blame, image diff, PR на GitHub/GitLab/Gitea… Нужен **Git for Windows** (≥2.25; MSYS Git не поддерживается). `scoop bucket add extras; scoop install sourcegit`. На 11.2026 автор ищет преемника maintainer — следить за releases.
+- [Gittyup](https://murmele.github.io/Gittyup/) ([GitHub](https://github.com/Murmele/Gittyup)) — Qt, продолжение GitAhead; история и line-level staging.
+- [git-cola](https://git-cola.github.io/) ([GitHub](https://github.com/git-cola/git-cola)) — лёгкий кроссплатформенный staging/DAG без раздутого UI.
+- Ещё:
+	- [Git Extensions](https://gitextensions.github.io/) — плотный Windows power-user GUI; ближе всего к «тяжёлому» SmartGit на Windows.
+	- [TortoiseGit](https://tortoisegit.org/) — интеграция в Проводник Windows.
+	- TUI: [lazygit](https://github.com/jesseduffield/lazygit), [gitui](https://github.com/gitui-org/gitui).
+
 ## Удалённый доступ
 - [RustDesk](https://rustdesk.com/) — удалённый рабочий стол (TeamViewer, AnyDesk); можно self-host.
 	- WOL в клиенте: только **та же локальная сеть**. Настройка NIC/BIOS + LAN discovery, скан **Discovered** при включённой цели, затем WOL с той же вкладки (у Flutter не из Favorites). Пошагово: `Infra/RustDesk_wolfram-server.md` §8; обсуждение: [#1249](https://github.com/rustdesk/rustdesk/discussions/1249). Прочие утилиты — «Wake-on-LAN».
@@ -942,6 +952,7 @@ Slight correction to a previous answer. And if you tab out of this one and lose 
 
 ## Диски, облака, файловые системы
 - [HFSExplorer](https://www.catacombae.org/hfsexplorer/) — чтение HFS/HFS+ томов на Windows (Paragon HFS+ for Windows).
+- COOL! [Syncthing](https://syncthing.net/) — непрерывная P2P-синхронизация папок между своими машинами без облака-посредника (Resilio Sync / Dropbox на сценарии «свои устройства»). Open source, шифрование в транзите, без аккаунта у вендора.
 - [rclone](https://rclone.org/) — синхронизация и монтирование облаков из CLI (RaiDrive, Air Explorer, rsync-сценарии).
 - [WinFsp](https://winfsp.dev/) — FUSE-подобный слой ФС для Windows; нужен для `rclone mount` и подобных драйверов.
 
@@ -1234,6 +1245,7 @@ I just realized that we can do that already at our own:
 Now the marks are invisible on normal work, but visible on selection only.
 - В AstroGrep настраиваем открытие файлов в emeditor: `"*" "C:\Program Files\EmEditor\EmEditor.exe" "/l %2 %1"`
 - Ставим SmartGit, переносим настройки из `%appdata%\syntevo\SmartGit\<version>\`. Читаем [How to import old settings/repositories](https://stackoverflow.com/questions/45837545/how-to-import-old-settings-repositories) `*.yml` files
+- OSS GUI: [SourceGit](https://sourcegit-scm.github.io/), [Gittyup](https://murmele.github.io/Gittyup/), [git-cola](https://git-cola.github.io/) — см. «Open-source замены» → Git GUI.
 - Настраиваем Касперского для разрешения доступа Edge в инет. [Cannot open websites in Google Chrome and Edge Chromium when working with Kaspersky Security 10 for Windows Server](https://support.kaspersky.com/15392)
 - После установки Касперского в режиме администратора отключаем штатный брандмауэр Windows `netsh advfirewall set allprofiles state off`
 - В Google Chrome включаем режим чтения. Делается это через экспериментальные настройки. `chrome://flags/#enable-reader-mode`
@@ -1283,11 +1295,12 @@ TinEye browser extensions are the fastest way to search for images online.
 - Хорошая замена Similarity. [Czkawka](https://czkawka.com/) is a fast, free, and open-source file cleaning tool designed to help users find and remove unnecessary files from their systems. It is built to be lightweight, efficient, and user-friendly, making it an excellent alternative to more complex or outdated cleaning utilities.
 
 # Утилиты для синхронизации и частное облако
-- [Syncthing](https://syncthing.net/)
+- COOL! [Syncthing](https://syncthing.net/) — open-source P2P sync папок между своими устройствами (замена Resilio Sync / «своё Dropbox без облака»). См. также «Open-source замены» → Диски, облака.
 - OSS облака/монтирование: [rclone](https://rclone.org/) + [WinFsp](https://winfsp.dev/) — см. «Open-source замены платного софта».
 	- [Создаём личное облачное хранилище. Syncthing](https://hacker-basement.ru/2019/05/26/private-cloud-syncthing/)
 	- [Nextcloud](https://nextcloud.com/). The self-hosted productivity platform that keeps you in control
 - [Resilio Sync](https://www.resilio.com/). Universal File Delivery for the Enterprise.
+- OSS вместо Resilio: [Syncthing](https://syncthing.net/) — см. выше / «Open-source замены».
 Unify, control, and accelerate global file data, securely
 - copy
 	- [robocopy](https://learn.microsoft.com/ru-ru/windows-server/administration/windows-commands/robocopy) Копирует данные файла из одного расположения в другое.

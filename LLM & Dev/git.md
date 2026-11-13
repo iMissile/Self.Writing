@@ -509,6 +509,13 @@ git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -d
 ```
 
 # SmartGit
+OSS GUI-замены (подробнее в `Infra/New_Windows.md` → Open-source замены → Git GUI):
+- [SourceGit](https://sourcegit-scm.github.io/) — главный кандидат вместо SmartGit/SourceTree (MIT, Win/macOS/Linux; нужен Git for Windows).
+- [Gittyup](https://murmele.github.io/Gittyup/) — Qt, история и line-level staging (наследник GitAhead).
+- [git-cola](https://git-cola.github.io/) — лёгкий staging/DAG.
+- [Git Extensions](https://gitextensions.github.io/) — Windows power-user.
+- [TortoiseGit](https://tortoisegit.org/) — из Проводника; TUI: [lazygit](https://github.com/jesseduffield/lazygit), [gitui](https://github.com/gitui-org/gitui).
+
 ## Сравнение веток/коммитов
 - [How to compare two branches/commits?](https://docs.syntevo.com/SmartGit/Latest/HowTos/How-to-compare-two-branches-commits-)
 Open the Log for your repository; there you will have two possible ways:
