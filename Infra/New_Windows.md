@@ -441,7 +441,7 @@ Go to Apps, then scroll down to find that app in the list of installed Apps and 
 	- ConEmu
 	- PowerShell ISE
 - [Windows Command Line Tools For Developers. Tabbed Console starts here](https://blogs.msdn.microsoft.com/commandline/2018/04/13/tabbed-console-starts-here/)
-- COOL! [Windows Terminal 1.0](https://devblogs.microsoft.com/commandline/windows-terminal-1-0/)
+- COOL! [Windows Terminal 1.0](https://devblogs.microsoft.com/commandline/windows-terminal-1-0/) — см. `# Remote Access`.
 - [Directory Opus](https://www.gpsoft.com.au/) is a complete replacement for Explorer, with far more functionality than any other file manager available today.
 - [MSIX Tutorial: A comprehensive 24-chapter guide](https://www.advancedinstaller.com/msix-introduction.html)
 - [Direct Folders — экономим клики при работе с файлами в Windows](https://lifehacker.ru/direct-folders-ekonomim-kliki-pri-rabote-s-fajlami-v-windows/)
@@ -451,7 +451,7 @@ Go to Apps, then scroll down to find that app in the list of installed Apps and 
 - [System Informer](https://systeminformer.sourceforge.io/). A **free**, powerful, multi-purpose tool that helps you **monitor system resources**, **debug software** and **detect malware**.
 - [MarkText](https://www.marktext.cc/). Markdown-редактор.
 - [Pandia](https://pandia.ai/). AI-клиент для работы с чатом.
-- [MobaXterm](https://mobaxterm.mobatek.net/). Терминал, SSH- и удалённый доступ для Windows. Keygen: [zarfadev/MobaXterm-Keygen](https://github.com/zarfadev/MobaXterm-Keygen).
+- [MobaXterm](https://mobaxterm.mobatek.net/) — см. `# Remote Access` (клиенты, OSS-альтернативы, keygen).
 - [dnGREP](https://dngrep.github.io/). Поиск и замена по содержимому файлов.
 
 - [6 Best Free Video Metadata Editor Software For Windows](https://listoffreeware.com/free-video-metadata-editor-software-windows/)
@@ -693,8 +693,99 @@ route -p add 153.80.246.207 mask 255.255.255.255 10.0.0.254
 На момент проверки эти маршруты не были добавлены. Для `193.178.170.30` настроено исключение в Happ; отдельный жёсткий маршрут Windows не добавлен. Маршрут к серверу OpenVPN в офисе не нужен.
 
 
-## RDP
-- [Как нажать Ctrl+Alt+Del работая удаленно через RDP ?](https://sysadmin.ru/articles/kak-nazhat-ctrlaltdel-rabotaya-udalenno-cherez-rdp). На помощь нам придет другая комбинация клавиш. Чтобы добиться аналогичного эффекта на удаленном компьютере, нужно нажать комбинацию клавиш `Control+Alt+End` (сокр. `Ctrl+Alt+End`).
+# Remote Access
+
+Терминалы, SSH/SFTP, RDP/VNC и менеджеры удалённых подключений на Windows.
+Сводка 16.11.2026: полноценного open-source аналога **MobaXterm** (SSH + X11-сервер +
+Unix-окружение + менеджер подключений в одном портативном приложении) нет; ниже —
+ближайшие кандидаты и связки, плюс то, что уже встречалось в этом файле.
+
+## Матрица OSS-кандидатов (замена / рядом с MobaXterm)
+
+Матрица по документации разработчиков, не по собственному полному прогону.
+Версия electerm на 10.11.2026 — **5.10.0**.
+
+| Программа | Главные возможности | Ограничения |
+|---|---|---|
+| [electerm](https://electerm.org/) ([GitHub](https://github.com/electerm/electerm)) | SSH, SFTP, FTP, RDP, VNC, SPICE, Serial, туннели, прокси, мультиввод; MIT; Win/macOS/Linux | Нет встроенного X-сервера; Electron |
+| [1Remote](https://github.com/1Remote/1Remote) | SSH, RDP, VNC, SFTP, Telnet, RemoteApp, вкладки, быстрый запуск; GPL-3.0 | Только Windows; нет X-сервера |
+| [mRemoteNG](https://github.com/mRemoteNG/mRemoteNG) | SSH, RDP, VNC, Telnet, HTTP, PowerShell Remoting, дерево подключений; GPL-2.0 | Нет собственного X11 и полноценного встроенного SFTP |
+| [Tabby](https://tabby.sh/) ([GitHub](https://github.com/Eugeny/tabby)) | SSH, SFTP, Serial, Telnet, локальные оболочки, X11 forwarding, SSH-туннели / jump hosts; MIT | Нет встроенных RDP/VNC и X-сервера |
+| [Reach](https://github.com/alexandrosnt/Reach) | SSH, SFTP, RDP, VNC, Serial, мониторинг, туннели; Rust/Tauri; MIT | Менее зрелый; нужна практическая проверка |
+| [Submarine](https://github.com/SinaXhpm/Submarine) | SSH, SFTP, VNC, RDP, SOCKS5, синхронизация; импорт сессий MobaXterm; Rust/Tauri; MIT | RDP по умолчанию внешний; встроенный экспериментальный |
+
+**Главный кандидат на замену MobaXterm — electerm** (почти весь основной набор протоколов,
+кроссплатформа, активная разработка). Для RDP-тяжёлого Windows-парка рядом смотреть
+**1Remote**; для «терминал прежде всего» — **Tabby**; для большого дерева серверов —
+**mRemoteNG**. Reach и Submarine — пилотные Rust-кандидаты, не безусловная замена.
+
+## Кандидаты подробнее
+
+### electerm
+MIT, Windows/macOS/Linux, стек Electron/React. SSH-туннели, глобальные и индивидуальные
+прокси, массовый ввод команд, сохранение сессий, интеграция с MCP/ИИ. Для X11 — внешний
+X-сервер (см. связку ниже).
+
+### 1Remote
+GPL-3.0, Windows, стек .NET. Дерево сессий, запуск по `Alt+M`, вкладки, RemoteApp,
+портативность, импорт mRemoteNG. Удобен, если часто RDP на Windows-серверы.
+
+### Tabby
+MIT, Windows/macOS/Linux, стек Electron/TypeScript. Split panes, темы, PowerShell / WSL /
+Git Bash, SSH, SFTP, Serial, jump hosts. Конфиг: `%APPDATA%\tabby\config.yaml`.
+Login script под tmux (закладка LOGIN SCRIPTS): Expect `$`,
+Send `tmux new-session -A -s work\r`.
+
+### mRemoteNG
+GPL-2.0, Windows, .NET. Сильный менеджер подключений (RDP, VNC, SSH, Telnet и др.);
+как универсальная терминальная среда слабее electerm/Tabby.
+
+### Reach и Submarine (Rust / Tauri)
+Оба MIT. Reach заявляет вкладки RDP/VNC и serial; Submarine — SOCKS, sync папок и импорт
+сессий MobaXterm. Брать третьим на пилот после electerm / 1Remote.
+
+## Связка «почти как MobaXterm» на Windows
+
+| Роль | Инструмент |
+|---|---|
+| Основной GUI (SSH/RDP/VNC/SFTP/туннели/сессии) | [electerm](https://electerm.org/) |
+| X11-сервер | [VcXsrv](https://github.com/marchaesen/vcxsrv) (форвард через SSH X11) |
+| Unix-утилиты (bash, grep, awk, rsync, sed…) | [MSYS2](https://www.msys2.org/) |
+
+Компромисс: X11 настраивается отдельно; нет одного портативного exe «всё в одном».
+У VcXsrv с отключённым контролем доступа ограничивать X-сервер локальной машиной.
+
+## Вне основного OSS-рейтинга
+- [WindTerm](https://github.com/kingToolbox/WindTerm) — публикует только часть исходников.
+- [XPipe](https://github.com/xpipe-io/xpipe) — open-core, закрытые расширения.
+
+## Уже в стеке / знакомые клиенты
+- [MobaXterm](https://mobaxterm.mobatek.net/) — текущий «комбайн»; keygen:
+  [zarfadev/MobaXterm-Keygen](https://github.com/zarfadev/MobaXterm-Keygen).
+- [Windows Terminal](https://github.com/microsoft/terminal) — локальные вкладки/профили;
+  шрифт Cascadia Code / MesloLGM Nerd Font + [Oh My Posh](https://ohmyposh.dev/).
+  Preview в MS Store; настройка defaultProfile под WSL/tmux:
+  [Tmux on Windows](https://codeandkeep.com/Tmux-on-Windows/).
+- [Tabby](https://tabby.sh/) — см. выше; в чеклисте новой машины рядом с Bitvise/Xshell.
+- Bitvise SSH Client / [Xshell](https://www.netsarang.com/en/xshell/) — коммерческие SSH GUI
+  из списка «Нужные утилиты».
+- [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/) — классический SSH/Telnet.
+- [WinSCP](https://winscp.net/) — SFTP/SCP GUI (+ CLI); также в `Infra/cli-tui-tools.md`.
+- ConEmu / Console2 / PowerCmd — старые tabbed-консоли из обзора
+  [7 best tabbed command line tools](https://windowsreport.com/tabbed-command-line-windows-10/).
+- [RustDesk](https://rustdesk.com/) — удалённый рабочий стол (не SSH-менеджер); self-host и WOL:
+  `Infra/RustDesk_wolfram-server.md`, также «Open-source замены» → Удалённый доступ.
+- Каталог TUI: `# Terminal Trove` в конце файла; исследование CLI/TUI — `Infra/cli-tui-tools.md`.
+
+## RDP (штатный клиент Windows)
+- [Как нажать Ctrl+Alt+Del работая удаленно через RDP ?](https://sysadmin.ru/articles/kak-nazhat-ctrlaltdel-rabotaya-udalenno-cherez-rdp):
+  на клиенте — `Ctrl+Alt+End` (эквивалент Ctrl+Alt+Del на удалённой машине).
+- Маршруты/исключения Happ для RDP `193.178.170.30` — в «Настройка VPN и браузеров» →
+  Маршрутизация при включённом Happ.
+
+## Практическая приёмка (Windows 10 Pro)
+Сравнить **electerm** и **1Remote**, третьим — **Reach**. Проверять: SSH через SOCKS5 /
+jump host, SFTP, RDP, X11 (с VcXsrv), сохранение ключей, восстановление сессии после обрыва.
 
 ## Password Manager
 - [Достаём мастер-пароль из заблокированного менеджера паролей 1Password 4](https://habr.com/ru/post/441166/)
@@ -786,7 +877,7 @@ Slight correction to a previous answer. And if you tab out of this one and lose 
 - [Aurora HDR 2018]()
 - [Balsamiq Mockups 3]()
 - [Bash на Ubuntu]()
-- [Bitvise SSH Client]()
+- [Bitvise SSH Client]() — см. `# Remote Access`.
 - [Bitwarden]()
 - [Brackets]()
 - [Bulk Rename Utility]()
@@ -869,7 +960,7 @@ Slight correction to a previous answer. And if you tab out of this one and lose 
 - [PowerShell-6.0.0-beta.2]()
 - [Process Hacker 2]()
 - [Project 2016]()
-- [PuTTY]()
+- [PuTTY]() — см. `# Remote Access`.
 - [R i386 3.6.1]()
 - [R x64 3.6.1]()
 - [RAMDisk Configuration Utility]()
@@ -917,14 +1008,14 @@ Slight correction to a previous answer. And if you tab out of this one and lose 
 - [Windscribe]()
 - [WinEdt 10]()
 - [Wing IDE 6.0]()
-- [WinSCP]()
+- [WinSCP]() — см. `# Remote Access` / `Infra/cli-tui-tools.md`.
 - [Wireshark]()
 - [Wolfram Mathematica 11.3]()
 - [Word 2016]()
 - [XmlPad]()
 - [XnView]()
-- [Xshell 5]()
-- [Xshell 6]()
+- [Xshell 5]() — см. `# Remote Access`.
+- [Xshell 6]() — см. `# Remote Access`.
 
 # Open-source замены платного софта
 Отдельный перечень хороших OSS-замен; ниже — по роду задачи. Что именно заменяет — в скобках.
@@ -944,6 +1035,8 @@ Slight correction to a previous answer. And if you tab out of this one and lose 
 	- TUI: [lazygit](https://github.com/jesseduffield/lazygit), [gitui](https://github.com/gitui-org/gitui).
 
 ## Удалённый доступ
+SSH/RDP/VNC/SFTP-менеджеры и альтернативы MobaXterm (electerm, 1Remote, Tabby, mRemoteNG,
+Reach, Submarine, связка с VcXsrv/MSYS2) — см. `# Remote Access`.
 - [RustDesk](https://rustdesk.com/) — удалённый рабочий стол (TeamViewer, AnyDesk); можно self-host.
 	- WOL в клиенте: только **та же локальная сеть**. Настройка NIC/BIOS + LAN discovery, скан **Discovered** при включённой цели, затем WOL с той же вкладки (у Flutter не из Favorites). Пошагово: `Infra/RustDesk_wolfram-server.md` §8; обсуждение: [#1249](https://github.com/rustdesk/rustdesk/discussions/1249). Прочие утилиты — «Wake-on-LAN».
 	- Самохост на wolfram-server: `Infra/RustDesk_wolfram-server.md`.
@@ -1199,25 +1292,21 @@ oh-my-posh init pwsh | Invoke-Expression
 Так, берем настройки `$PROFILE` из файла рядом: `Microsoft.PowerShell_profile.ps1`
 
 	- PowerShell tricks. [about_Character_Encoding](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_character_encoding?view=powershell-7.5&viewFallbackFrom=powershell-7.2)
-- Устанавливаем [Windows Terminal](https://github.com/microsoft/terminal/releases) и для него шрифт `Cascadia Code`. Можно ставить и с [MS Store Preview](https://apps.microsoft.com/search?query=windows+terminal&hl=ru-ru&gl=RU).
+- Устанавливаем [Windows Terminal](https://github.com/microsoft/terminal/releases) и для него шрифт `Cascadia Code`. Можно ставить и с [MS Store Preview](https://apps.microsoft.com/search?query=windows+terminal&hl=ru-ru&gl=RU). Детали, Oh My Posh, Cascadia/Nerd Font, defaultProfile под WSL/tmux — `# Remote Access`.
 	- [Update code font from Consolas to Cascadia Code with ligature](https://weblogs.asp.net/dixin/update-code-font-from-consolas-to-cascadia-code-with-ligature)
 	- [microsoft/cascadia-code](https://github.com/microsoft/cascadia-code)
 	- [Install with chocolatey](https://community.chocolatey.org/packages/cascadiacode). `choco install cascadiacode`
 	- [Cascadia Mono Font 2108.26](https://community.chocolatey.org/packages/cascadiamono). `choco install cascadiamono`
-	- [Конфигурируем меню Windows Terminal](https://codeandkeep.com/Tmux-on-Windows/). If you want to set this as your default shell in the Windows Terminal, you can update the settings `Ctrl + ,` to do so. Replace the GUID in defaultProfile with the one for your Linux app. You can find the GUID in the list section under profiles. Set this GUID as the defaultProfile, and this will be the shell that opens by default.
-	- [Oh My Posh](https://ohmyposh.dev/). A prompt theme engine for any shell. Use **MesloLGM Nerd Font** 
+	- [Oh My Posh](https://ohmyposh.dev/). A prompt theme engine for any shell. Use **MesloLGM Nerd Font**
 	- [Oh My Posh. Upgrade](https://ohmyposh.dev/docs/installation/upgrade). `oh-my-posh upgrade --force`
 - Ставим `Link Shell Extension` с [официальной страницы](https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html)
 	- `choco install linkshellextension`
 - Ставим [DataRAM RAMDisk](http://memory.dataram.com/products-and-services/software/ramdisk) и спасаем SSD от Chrome (см выше по тексту).
 RAM Disk на `Y:`, выделяем под кэш Хрома 512 Мб, делаем Junction кэша хрома.
 - Ставим [OpenVPN Community edition](https://openvpn.net/community-downloads/)
-- Ставим SSH клиент 
-	- [Bitvise SSH Client/xShell]
-	- [Tabby](https://tabby.sh/) is an infinitely customizable cross-platform terminal app for local shells, serial, SSH and Telnet connections. И создаем профили для подключения через `tmux`.
-		- Закладка `LOGIN SCRIPTS`: Для Ubuntu `Expect = $`, `Send = tmux new-session -A -s work\r`
-	-  Конфиг живет по адресу `%APPDATA%\tabby\config.yaml`
-	
+- Ставим SSH / remote-клиент — Bitvise / Xshell / Tabby / electerm и пр.: `# Remote Access`
+	(у Tabby конфиг `%APPDATA%\tabby\config.yaml`, login script под tmux — там же).
+
 - Ставим Zentimo xStorage Manager
 - Ставим SnagIt, блокируем его в файерволе (wf.msc) или касперском. [Best practices for configuring Защитник Windows firewall](https://docs.microsoft.com/ru-ru/windows/security/threat-protection/windows-firewall/best-practices-configuring).
 Переносим базы SnagIt
@@ -1564,5 +1653,8 @@ exit
 
 # Terminal Trove
 
-[TUI Terminal Tools](https://terminaltrove.com/categories/tui/). 
+Каталог TUI. GUI-терминалы и менеджеры SSH/RDP/VNC — `# Remote Access`;
+исследование CLI/TUI на Windows — `Infra/cli-tui-tools.md`.
+
+[TUI Terminal Tools](https://terminaltrove.com/categories/tui/).
 [Text User Interfaces](https://en.m.wikipedia.org/wiki/Text-based_user_interface "Text User Interfaces") (TUIs) emerged with early computing era, providing a text based layout, instead of graphical user interfaces (GUIs). They are useful in resource-constrained environments notably in server management, system administration programming, and file management.

@@ -39,7 +39,7 @@ URL без трекеров. После личных проб — сокраща
 | [FreeFileSync](https://freefilesync.org/) | GUI | `[кандидат]` | Визуальное сравнение каталогов, зеркало |
 | [restic](https://restic.net/) | CLI | `[кандидат]` | Снимки, дедуп, шифрование |
 | [Kopia](https://kopia.io/) / KopiaUI | GUI+CLI | `[кандидат]` | Бэкап со снимками и расписанием |
-| [WinSCP](https://winscp.net/) | GUI+CLI | `[знакомо]` | SFTP/SCP |
+| [WinSCP](https://winscp.net/) | GUI+CLI | `[знакомо]` | SFTP/SCP; GUI SSH/RDP-менеджеры — `New_Windows.md` → `# Remote Access` |
 | [LocalSend](https://localsend.org/) | GUI | `[кандидат]` | Файлы по LAN без облака |
 | [aria2](https://github.com/aria2/aria2) | CLI | `[кандидат]` | Многопоточные загрузки |
 
