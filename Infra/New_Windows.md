@@ -451,7 +451,7 @@ Go to Apps, then scroll down to find that app in the list of installed Apps and 
 - [System Informer](https://systeminformer.sourceforge.io/). A **free**, powerful, multi-purpose tool that helps you **monitor system resources**, **debug software** and **detect malware**.
 - [MarkText](https://www.marktext.cc/). Markdown-редактор.
 - [Pandia](https://pandia.ai/). AI-клиент для работы с чатом.
-- [MobaXterm](https://mobaxterm.mobatek.net/). Терминал, SSH- и удалённый доступ для Windows.
+- [MobaXterm](https://mobaxterm.mobatek.net/). Терминал, SSH- и удалённый доступ для Windows. Keygen: [zarfadev/MobaXterm-Keygen](https://github.com/zarfadev/MobaXterm-Keygen).
 - [dnGREP](https://dngrep.github.io/). Поиск и замена по содержимому файлов.
 
 - [6 Best Free Video Metadata Editor Software For Windows](https://listoffreeware.com/free-video-metadata-editor-software-windows/)
@@ -575,6 +575,7 @@ WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-o
 | `153.80.246.207` | SSH; проверять получение баннера и вход. |
 | `193.178.170.30` | RDP, обычно TCP `3389`. Не делать вывод о RDP по недоступности SSH на порту 22. |
 | `10.0.1.238`, `10.0.1.239` | Внутренние серверы Media-Tel; способ доступа зависит от сети. |
+| `87.238.96.18` | `jira.media-tel.ru`; HTTPS. Через Happ TUN TLS к Jira падал (`SSL connection could not be established`); обход — Exclude `/32` и WinINET `ProxyOverride`. |
 | `tc1`–`tc9.pp.gazprom-neft.ru` | Конференц-серверы; в Exclude Routes только CIDR по таблице ниже. |
 
 #### Настройка через Happ
@@ -597,23 +598,32 @@ WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-o
 213.221.41.183/32
 94.140.204.16/32
 94.140.204.17/32
+87.238.96.18/32
 ```
 
-Соответствие конференц-хостов (DNS на 11.11.2026; при смене A-записи обновить CIDR):
+Соответствие хостов (DNS; при смене A-записи обновить CIDR):
 
-| хост | IP в Exclude |
-|---|---|
-| `tc1.pp.gazprom-neft.ru` | `213.221.41.138/32` |
-| `tc2.pp.gazprom-neft.ru` | `213.221.41.139/32` |
-| `tc3.pp.gazprom-neft.ru` | `213.221.41.200/32` |
-| `tc4.pp.gazprom-neft.ru` | `213.221.41.170/32` |
-| `tc5.pp.gazprom-neft.ru` | `213.221.41.171/32` |
-| `tc6.pp.gazprom-neft.ru` | `213.221.41.182/32` |
-| `tc7.pp.gazprom-neft.ru` | `213.221.41.183/32` |
-| `tc8.pp.gazprom-neft.ru` | `94.140.204.16/32` |
-| `tc9.pp.gazprom-neft.ru` | `94.140.204.17/32` |
+| хост | IP в Exclude | DNS проверен |
+|---|---|---|
+| `jira.media-tel.ru` | `87.238.96.18/32` | 16.11.2026 |
+| `tc1.pp.gazprom-neft.ru` | `213.221.41.138/32` | 11.11.2026 |
+| `tc2.pp.gazprom-neft.ru` | `213.221.41.139/32` | 11.11.2026 |
+| `tc3.pp.gazprom-neft.ru` | `213.221.41.200/32` | 11.11.2026 |
+| `tc4.pp.gazprom-neft.ru` | `213.221.41.170/32` | 11.11.2026 |
+| `tc5.pp.gazprom-neft.ru` | `213.221.41.171/32` | 11.11.2026 |
+| `tc6.pp.gazprom-neft.ru` | `213.221.41.182/32` | 11.11.2026 |
+| `tc7.pp.gazprom-neft.ru` | `213.221.41.183/32` | 11.11.2026 |
+| `tc8.pp.gazprom-neft.ru` | `94.140.204.16/32` | 11.11.2026 |
+| `tc9.pp.gazprom-neft.ru` | `94.140.204.17/32` | 11.11.2026 |
 
-После изменения переподключить Happ. 09.11.2026 в офисе при работающем Happ обычные соединения получили SSH-баннеры от `138.16.224.248:22` и `153.80.246.207:22`; TLS 1.3 к `5.253.61.17:7706` установился с проверенным сертификатом `*.adminvps.net`. Сам SSH-вход и работа веб-консоли при этой проверке не подтверждались. До исключений соединения через Happ зависали, а при принудительном выходе через Ethernet работали. Действие исключений в Опалихе ещё требуется проверить. В интерфейсе Happ указано, что премиум-подписка может добавить записи или заменить список исключений — после обновления подписки проверять его содержимое. 11.11.2026 добавлены `/32` для `tc1`–`tc9.pp.gazprom-neft.ru` (конференц-серверы).
+Дополнительно для клиентов WinINET (когда системный HTTP-прокси включён): в
+`HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ProxyOverride`
+добавлены `jira.media-tel.ru` и `*.media-tel.ru` (рядом с уже стоявшим `*.local`).
+На 16.11.2026 `ProxyEnable=0`, а обход TUN идёт через Exclude Routes; `ProxyOverride`
+нужен, если снова включат прокси `127.0.0.1:10801`. Жёсткий `route -p add` для
+Jira не добавлялся: в офисе при рабочих исключениях Happ он не требовался.
+
+После изменения переподключить Happ. 09.11.2026 в офисе при работающем Happ обычные соединения получили SSH-баннеры от `138.16.224.248:22` и `153.80.246.207:22`; TLS 1.3 к `5.253.61.17:7706` установился с проверенным сертификатом `*.adminvps.net`. Сам SSH-вход и работа веб-консоли при этой проверке не подтверждались. До исключений соединения через Happ зависали, а при принудительном выходе через Ethernet работали. Действие исключений в Опалихе ещё требуется проверить. В интерфейсе Happ указано, что премиум-подписка может добавить записи или заменить список исключений — после обновления подписки проверять его содержимое. 11.11.2026 добавлены `/32` для `tc1`–`tc9.pp.gazprom-neft.ru` (конференц-серверы). 16.11.2026 добавлен `87.238.96.18/32` для `jira.media-tel.ru` (запись в `excludedRoutes` и `ProxyOverride`; нужен reconnect Happ).
 
 **Прямое подключение к серверу и другие поддерживаемые подписки.** Для прямого подключения к серверу можно включить маршрутизацию и настроить список Direct в соответствующем профиле, если интерфейс это позволяет. Профили относятся к своему списку серверов или подписке: профиль из списка отдельных серверов не обязательно действует для другой подписки. После выбора или изменения профиля переподключиться и проверить реальный протокол. Правило Direct внутри Happ и системное исключение маршрута — разные механизмы; отсутствие `/32` в таблице Windows само по себе не доказывает, что Direct не работает. Профили и ограничения подписок: [документация Happ](https://github.com/HappDev/happ_su/blob/main/dev-docs/routing.md).
 
