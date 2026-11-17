@@ -57,6 +57,7 @@ URL без трекеров. После личных проб — сокраща
 | [grepWin](https://github.com/stefankueng/grepWin) | GUI | `[кандидат]` | Компактный поиск/замена |
 | [fd](https://github.com/sharkdp/fd) | CLI | `[кандидат]` | Поиск файлов по имени (удобнее `find`) |
 | [fzf](https://github.com/junegunn/fzf) | TUI | `[кандидат]` | Fuzzy-отбор из любого списка |
+| [PSFzf](https://www.powershellgallery.com/packages/PSFzf/2.0.0) | PS module | `[кандидат]` | Тонкая обёртка fzf для PowerShell; при PSReadLine — chord Ctrl+t. `Install-Module -Name PSFzf` |
 | [sd](https://github.com/chmln/sd) | CLI | `[кандидат]` | Удобные regex-замены вместо `sed` |
 | [ast-grep](https://github.com/ast-grep/ast-grep) | CLI | `[кандидат]` | Поиск/правка по AST кода |
 | [Everything](https://www.voidtools.com/) | GUI | `[знакомо]` / `[не OSS]` | Мгновенный поиск по имени; не замена `rg` |
@@ -289,6 +290,7 @@ winget install -e --id Microsoft.PowerToys
 | Дата | Что оставил / выкинул | Почему |
 |---|---|---|
 | 13.11.2026 | Каталог создан | Сводка из обзора CLI/TUI/GUI; файл автономный, без правок и выноса из New_Windows |
+| 17.11.2026 | + PSFzf рядом с fzf | PowerShell Gallery; обёртка fzf / Ctrl+t |
 |  |  |  |
 
 После каждой волны тестов — одна строка в таблицу и правка ★ / статусов выше.

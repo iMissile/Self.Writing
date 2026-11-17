@@ -105,6 +105,8 @@ As an aside the downloading of the VSIX and then > Extension: Install VSIX in Cu
 ## Rules & Skills
 - [Agent Skills](https://cursor.com/docs/skills)
 - [Как использовать навыки Cursor: полное руководство](https://www.kimi.ai/ru/resources/cursor-skills)
+- Каталог архива скиллов: `Agent_skills/`
+- Организация сложных задач (Generic; субагенты, выбор модели, проверка): `Agent_skills/Generic/complex-tasks/AGENTS.md`
 
 # VScode
 ## VScode web

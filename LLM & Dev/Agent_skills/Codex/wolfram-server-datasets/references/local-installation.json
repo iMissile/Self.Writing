@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "release": "1a231c4a4789c95568327d053f02c7e99505eb40",
+  "api_origin": "https://wolfram-server.ru",
+  "client_root": "C:/Users/Ilya/AppData/Local/WolframServer/clients/1a231c4a4789c95568327d053f02c7e99505eb40",
+  "uv_path": "D:/Python313/Scripts/uv.exe",
+  "python_path": "C:/Users/Ilya/AppData/Local/WolframServer/clients/1a231c4a4789c95568327d053f02c7e99505eb40/.venv/Scripts/python.exe",
+  "credential_file": "C:/Users/Ilya/AppData/Local/WolframServer/credentials/operator.json",
+  "mcp_config": "C:/Users/Ilya/AppData/Local/WolframServer/config/mcp.json",
+  "max_frame_bytes": 1048576,
+  "timeout_seconds": 180,
+  "credentials_rule": "Содержимое credential-файла читает только процесс клиента; агент использует путь.",
+  "key_admin_credential_file": "C:/Users/Ilya/AppData/Local/WolframServer/credentials/key-admin.json",
+  "skill_revision": "1a231c4a4789c95568327d053f02c7e99505eb40",
+  "runtime_limits": {
+    "python": 3,
+    "wolfram": 3
+  },
+  "shared_capacity": 3,
+  "remote_mcp_url": "https://wolfram-server.ru/mcp",
+  "sdk_archive_sha256": "77c0bd0bbcb855e7ed863fa443cb64314ece9e4e8ffa2e152eec3830ef522dfe",
+  "sdk_version": "0.2.0"
+}
