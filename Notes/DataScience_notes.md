@@ -1732,9 +1732,11 @@ Built by the team at Craft — because diagrams deserve great design too.
 - [GraphQL](https://graphql.org/). The query language for modern APIs
 - [Введение в GraphQL](https://systems.education/graphql-intro)
 
+# 19.11.2026
+## R / AI agents
+- [commons 0.2.0](https://opensource.posit.co/blog/2026-11-19_commons-0-2-0/). Share to Connect, Quarto artifacts; `commons()` отделён от `agent()` для интеропа с Posit Assistant / Claude Code / Codex. R на CRAN; Python на PyPI позже.
 # 10.11.2026
-## R
-- [An Introduction to xfun](https://yihui.org/xfun/).  A Collection of Miscellaneous Functions
+## R- [An Introduction to xfun](https://yihui.org/xfun/).  A Collection of Miscellaneous Functions
 - [portable](https://github.com/r-lib/portable) — новое графическое устройство для генерации PDF-файлов в R.
 # 17.09.2026
 ## R
