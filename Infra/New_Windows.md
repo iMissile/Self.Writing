@@ -450,6 +450,7 @@ Go to Apps, then scroll down to find that app in the list of installed Apps and 
 - [Clover 3](http://en.ejie.me/). Wings for your Windows Explorer! Clover is an extension of the Windows Explorer, to add multi-tab functionality similar to Google Chrome browser. After install Clover, you will be able to open multiple folders within the same window, and you can also add folder bookmarks.
 - [System Informer](https://systeminformer.sourceforge.io/). A **free**, powerful, multi-purpose tool that helps you **monitor system resources**, **debug software** and **detect malware**.
 - [MarkText](https://www.marktext.cc/). Markdown-редактор.
+- [Oryx](https://github.com/wmahfoudh/oryx) — нативный Markdown/code editor & viewer (PDF, eBooks); см. «Open-source замены» → Markdown.
 - [Pandia](https://pandia.ai/). AI-клиент для работы с чатом.
 - [MobaXterm](https://mobaxterm.mobatek.net/) — см. `# Remote Access` (клиенты, OSS-альтернативы, keygen).
 - [dnGREP](https://dngrep.github.io/). Поиск и замена по содержимому файлов.
@@ -484,7 +485,7 @@ Far.exe /import settings.cfg
 - [Windhawk](https://windhawk.net/). The customization marketplace for Windows and programs
 	- «Better file sizes in Explorer» - Показываем размеры папок в Проводнике Windows 11
 - [Typora](https://typora.io/) Markdown Editor
-- OSS: [Zettlr](https://www.zettlr.com/), [Joplin](https://joplinapp.org/) — см. «Open-source замены платного софта».
+- OSS: [Oryx](https://github.com/wmahfoudh/oryx), [Zettlr](https://www.zettlr.com/), [Joplin](https://joplinapp.org/) — см. «Open-source замены платного софта».
 
 ## Tips
 - [Бесплатно продлеваем Kiwi for Gmail](https://dailysoftwaredeal.com/seller/giveaway-kiwi-for-gmail-windows-mac-1-year-license/). Тут идет покупка, если из приложения не доступно пока. https://www.kiwiforgmail.com/. Code: KiwiForFree
@@ -1112,6 +1113,7 @@ Reach, Submarine, связка с VcXsrv/MSYS2) — см. `# Remote Access`.
 ## Текстовые и Markdown-редакторы, заметки
 - [Kate](https://kate-editor.org/) — мощный текстовый редактор KDE (EmEditor / Notepad++ / Sublime на часть сценариев).
 - [CudaText](https://cudatext.github.io/) — быстрый кроссплатформенный редактор с плагинами (EmEditor / Sublime).
+- [Oryx](https://github.com/wmahfoudh/oryx) — быстрый нативный Markdown/code editor & viewer, PDF export и рендер eBooks; keyboard-driven, Win/Linux/macOS (Typora / MarkText).
 - [Zettlr](https://www.zettlr.com/) — Markdown + Zettelkasten / академическое письмо (Typora, Obsidian на часть сценариев).
 - [Joplin](https://joplinapp.org/) — заметки с синхронизацией и шифрованием (Evernote, OneNote).
 
