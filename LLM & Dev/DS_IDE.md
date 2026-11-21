@@ -107,6 +107,7 @@ As an aside the downloading of the VSIX and then > Extension: Install VSIX in Cu
 - [Как использовать навыки Cursor: полное руководство](https://www.kimi.ai/ru/resources/cursor-skills)
 - Каталог архива скиллов: `Agent_skills/`
 - Организация сложных задач (Generic; субагенты, выбор модели, проверка): `Agent_skills/Generic/complex-tasks/AGENTS.md`
+- Живое для всех чатов Cursor: always-apply правило `~\.cursor\plugins\local\complex-tasks\rules\complex-tasks.mdc` + skill `~\.cursor\skills\complex-tasks\` (`/complex-tasks`). После установки — Reload Window. Codex: `~\.codex\AGENTS.md`.
 
 # VScode
 ## VScode web
