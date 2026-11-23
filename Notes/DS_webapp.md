@@ -7,6 +7,9 @@
 	- SPA -- Single Page Application
 - [SSR или SPA веб-сайты: что выбрать для вас и вашего бизнеса](https://tproger.ru/articles/ssr-ili-spa-veb-sajty-chto-vybrat-dlya-vas-i-vawego-biznesa)
 
+# JavaScript / TypeScript tooling
+- [Bun](https://bun.com/) — среда выполнения JavaScript/TypeScript и набор инструментов: менеджер пакетов, сборщик и тестовый раннер. Альтернатива Node.js/npm; совместимость с конкретным проектом стоит проверять.
+
 # React
 - [Create React App](https://create-react-app.dev)
 	- [Sunsetting Create React App](https://react.dev/blog/2025/02/14/sunsetting-create-react-app). February 14, 2025 by Matt Carroll and Ricky Hanlon
