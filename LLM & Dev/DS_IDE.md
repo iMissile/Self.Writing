@@ -35,8 +35,8 @@
 
 Два разных класса — не путать:
 
-1. **ADE (Agent Development Environment)** — клиенты/среды *управления* агентами: запускают Codex, Claude Code, OpenCode, Gemini CLI и др. в одном интерфейсе. Сюда: Ghostex, TernaryCode, Jean, Vibe Kanban, MonoCode, Codeg, ccgui, Sheprd, Construct.
-2. **Coding-агенты** — самостоятельные движки: сами правят код, вызывают tools, выполняют команды. Сюда: Codewhale, Goose, Codex CLI, opencode-rust, Agent Code, Crab Code.
+1. **ADE (Agent Development Environment)** — клиенты/среды *управления* агентами: запускают Codex, Claude Code, OpenCode, Gemini CLI, Pi и др. в одном интерфейсе. Сюда: Ghostex, TernaryCode, Jean, Vibe Kanban, MonoCode, Codeg, ccgui, Sheprd, Construct.
+2. **Coding-агенты** — самостоятельные движки: сами правят код, вызывают tools, выполняют команды. Сюда: Codewhale, Goose, Codex CLI, opencode-rust, Agent Code, Crab Code, **Pi**, **Mistral Vibe** (не путать с Vibe Kanban).
 
 Для нескольких проектов и агентов приоритетнее **ADE с параллельными сессиями, Git worktrees, visual diff, управлением разрешениями и сохранением контекста**. «Красивый терминал» уже недостаточен. Особенно интересны native Rust/GPUI, а не Electron-оболочки.
 
@@ -49,7 +49,7 @@
 | [**Ghostex**](https://ghostex.dev/) ([repo](https://github.com/maddada/Ghostex)) | Rust + GPUI, MIT | Первый кандидат на замену TernaryCode: нативный UI, много агентов/проектов, worktrees, diff-review, терминал/редактор/браузер, remote, телефон; Codex / Claude Code / OpenCode / Pi и др. |
 | [**TernaryCode**](https://ilhamnadhif.github.io/ternarycode/) | Rust + egui, MIT | Минимальный native-клиент поверх существующих CLI; Inbox разрешений; без lock-in аккаунтов |
 | [**Jean**](https://github.com/coollabsio/jean) | Tauri 2 + Rust, Apache-2.0 | Параллельная работа по репо: worktree на задачу, review, GitHub, remote Linux; **Windows у авторов пока не полностью протестирован** |
-| [**Vibe Kanban**](https://github.com/BloopAI/vibe-kanban) | Rust backend + Web UI, Apache-2.0 | Диспетчер задач: kanban, агенты в изолированных worktrees, visual diff/комменты, PR, браузер; скорее оркестратор, чем замена терминала |
+| [**Vibe Kanban**](https://github.com/BloopAI/vibe-kanban) | Rust backend + Web UI, Apache-2.0 | Диспетчер задач: kanban, агенты в изолированных worktrees, visual diff/комменты, PR, браузер; скорее оркестратор, чем замена терминала. **Не** путать с [Mistral Vibe](https://mistral.ai/products/vibe/) |
 | [**MonoCode**](https://github.com/hardbeat920/monocode) | Tauri; эксп. Rust+GPUI, MIT | Компактная GUI-оболочка над CLI: сессии, панели, редактор/Git; интересен эксперимент с fully-native Rust UI |
 | [**Codeg**](https://github.com/xintaofei/codeg) | Tauri + Rust server, Apache-2.0 | Мультиагентная среда: объединённые сессии, делегирование, ACP, HTTP/WebSocket-сервер — для экспериментов с оркестрацией |
 | [**Desktop CC GUI (ccgui)**](https://github.com/zhukunpenglinyutong/desktop-cc-gui) | Tauri + Rust, MIT | Унифицированный чат для многих CLI-движков: адаптеры протоколов, stream tool calls, история, Git-панель, редактор |
@@ -61,13 +61,15 @@
 | Проект | Реализация | Сильная сторона (по заявке) |
 |---|---|---|
 | [**Codewhale**](https://github.com/codewhale-hq/Codewhale) | Rust, MIT | Мультипровайдер, TUI, MCP, субагенты, роли с разными моделями, headless для CI |
+| [**Pi**](https://pi.dev/) (`@earendil-works/pi-coding-agent`) | минимальный agent harness | Адаптируемый harness: extensions/skills/prompt templates/themes; 15+ провайдеров; дерево сессий; interactive / print·JSON / RPC / SDK; субагенты и plan mode — через расширения, не в ядре. Ghostex уже перечисляет Pi как движок |
+| [**Mistral Vibe**](https://mistral.ai/products/vibe/) | продукт Mistral (бывш. Le Chat) | Coding-агент + chat: long-horizon задачи, CLI / VS Code·JetBrains·Zed через ACP, remote agents + teleport в CLI, MCP/connectors; планы Free/Pro/Team/Enterprise. **Не** Vibe Kanban |
 | [**Goose**](https://github.com/aaif-goose/goose) | Rust, Apache-2.0 | Универсальная агентная платформа: MCP, desktop + CLI + ACP |
 | [**Codex CLI**](https://github.com/openai/codex) | Rust, Apache-2.0 | Зрелый терминальный агент OpenAI |
 | [**opencode-rust**](https://github.com/vakandi/opencode-rust) | Rust, MIT | Независимая реализация OpenCode: CLI, TUI, HTTP, MCP, LSP |
 | [**Agent Code**](https://github.com/avala-ai/agent-code) | Rust, MIT | Fullscreen TUI, несколько провайдеров, ACP, headless |
 | [**Crab Code**](https://github.com/lingcoder/crab-code) | Rust, MIT | Модель работы близка к Claude Code: tools и разрешения |
 
-Codewhale — сильный кандидат именно как *движок*: роли на разных моделях + headless, а не только оболочка над чужим CLI.
+Codewhale — сильный кандидат именно как *движок*: роли на разных моделях + headless, а не только оболочка над чужим CLI. Pi — если нужен *свой* тонкий harness с пакетами, а не sealed product. Mistral Vibe — если ок закрытый продукт Mistral с ACP/CLI, а не OSS-движок.
 
 ### 3. Что брать под задачу
 
@@ -80,13 +82,15 @@ Codewhale — сильный кандидат именно как *движок*
 | Оркестрация и серверный режим | **Codeg** |
 | Сохранение терминальных сессий через daemon | **Sheprd / Construct** |
 | Замена собственно OpenCode на Rust | **Codewhale** |
+| Минимальный свой harness (расширения вместо baked-in фич) | **Pi** |
+| Закрытый coding-агент вендора + ACP в IDE | **Mistral Vibe** |
 | Редактор + внешние агенты через ACP | [**Zed**](https://zed.dev/docs/ai/agents) (см. блок `# ZED` выше) |
 
 Zed — полноценный Rust-редактор с ACP (Codex, Claude, OpenCode, Pi и др.): брать, если нужен не только диспетчер агентов, но и качественный editor.
 
 ### 4. Короткий список на практику (Windows 10 + macOS ARM)
 
-**Ghostex, Jean, Vibe Kanban, MonoCode, Codewhale.**
+**Ghostex, Jean, Vibe Kanban, MonoCode, Codewhale, Pi, Mistral Vibe.**
 
 Критерии при пробе:
 - реальные независимые процессы агентов;
