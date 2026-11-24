@@ -175,6 +175,7 @@ rg --files | fzf
 | [Angry IP Scanner](https://angryip.org/) | `[кандидат]` | Скан LAN |
 | [RustDesk](https://rustdesk.com/) | `[знакомо]` | (есть отдельная заметка по self-host) |
 | [HTTP Toolkit](https://httptoolkit.com/) | `[кандидат]` / open core | GUI HTTP debug |
+| [QCCOM](https://www.zenghi.com/en/) | `[кандидат]` | Serial/UART монитор + VT100 / SSH / TCP·UDP·MQTT·BLE·Modbus; auto baud; portable exe; OSS Apache-2.0 (альтернатива SSCOM) |
 | Proxifier | `[не OSS]` | Только если системного прокси мало |
 
 ---
