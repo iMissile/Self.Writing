@@ -107,10 +107,10 @@ rg --files | fzf
 
 | Инструмент | Статус | Заметка |
 |---|---|---|
-| [SourceGit](https://sourcegit-scm.github.io/) | `[знакомо]` | OSS vs SmartGit |
+| [SourceGit](https://sourcegit-scm.github.io/) ([org](https://github.com/sourcegit-org/sourcegit)) | `[знакомо]` | Главный OSS vs SmartGit (сводка 25.11.2026 → `New_Windows` § Git GUI) |
 | [Gittyup](https://murmele.github.io/Gittyup/) | `[знакомо]` | История, line staging |
 | [git-cola](https://git-cola.github.io/) | `[знакомо]` | Лёгкий staging/DAG |
-| [Git Extensions](https://gitextensions.github.io/) | `[знакомо]` (упомянут) | Windows power-user |
+| [Git Extensions](https://gitextensions.github.io/) | `[знакомо]` | Windows #2 vs SmartGit |
 | [TortoiseGit](https://tortoisegit.org/) | `[знакомо]` (упомянут) | Из Проводника |
 | SmartGit / SourceTree / Tower | `[знакомо]` платные в чеклисте | Оставить как эталон сравнения |
 

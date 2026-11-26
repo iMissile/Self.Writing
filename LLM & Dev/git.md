@@ -509,11 +509,11 @@ git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -d
 ```
 
 # SmartGit
-OSS GUI-замены (подробнее в `Infra/New_Windows.md` → Open-source замены → Git GUI):
-- [SourceGit](https://sourcegit-scm.github.io/) — главный кандидат вместо SmartGit/SourceTree (MIT, Win/macOS/Linux; нужен Git for Windows).
+OSS GUI-замены (подробнее в `Infra/New_Windows.md` → Open-source замены → Git GUI; сводка 25.11.2026):
+- [SourceGit](https://sourcegit-scm.github.io/) ([GitHub `sourcegit-org`](https://github.com/sourcegit-org/sourcegit)) — главный кандидат вместо SmartGit (MIT, Win/macOS/Linux; нужен Git for Windows; org с 19.11.2026).
+- [Git Extensions](https://gitextensions.github.io/) — Windows #2: плотный power-user GUI.
 - [Gittyup](https://murmele.github.io/Gittyup/) — Qt, история и line-level staging (наследник GitAhead).
 - [git-cola](https://git-cola.github.io/) — лёгкий staging/DAG.
-- [Git Extensions](https://gitextensions.github.io/) — Windows power-user.
 - [TortoiseGit](https://tortoisegit.org/) — из Проводника; TUI: [lazygit](https://github.com/jesseduffield/lazygit), [gitui](https://github.com/gitui-org/gitui).
 
 ## Сравнение веток/коммитов

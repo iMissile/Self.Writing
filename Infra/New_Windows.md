@@ -1008,7 +1008,7 @@ Slight correction to a previous answer. And if you tab out of this one and lose 
 - [MobileBalance]()
 - [MTC TB]()
 - [mTail]()
-- [mTorrent]()
+- [mTorrent]() — OSS: [qBittorrent](https://www.qbittorrent.org/) (первый), [Transmission](https://transmissionbt.com/) — см. «Open-source замены» → Торренты.
 - [NCH Suite]()
 - [Nokia PC Suite]()
 - [OpenConnect-GUI VPN client]()
@@ -1045,9 +1045,9 @@ Slight correction to a previous answer. And if you tab out of this one and lose 
 - [Smart Switch]()
 - [SmartDown]()
 - [SmartGit]()
-- OSS: [SourceGit](https://sourcegit-scm.github.io/), [Gittyup](https://murmele.github.io/Gittyup/), [git-cola](https://git-cola.github.io/) — см. «Open-source замены» → Git GUI.
+- OSS: [SourceGit](https://sourcegit-scm.github.io/) ([org](https://github.com/sourcegit-org/sourcegit)), [Git Extensions](https://gitextensions.github.io/), [Gittyup](https://murmele.github.io/Gittyup/) — см. «Open-source замены» → Git GUI.
 - [Snagit 13]()
-- [SoftorinoYoutubeConverter2]()
+- [SoftorinoYoutubeConverter2]() — OSS: [VidBee](https://vidbee.org/), [Parabolic](https://github.com/NickvisionApps/Parabolic) — см. «Open-source замены» → Видео.
 - [SourceTree]()
 - [Steam]()
 - [SyncToy 2.1(x64)]()
@@ -1095,13 +1095,15 @@ Slight correction to a previous answer. And if you tab out of this one and lose 
 - [Seelen UI](https://github.com/eythaann/Seelen-UI) — кастомизация оболочки Windows (Stardock / Start11 / Fences-сценарии).
 
 ## Git GUI (SmartGit / SourceTree / Tower)
-- [SourceGit](https://sourcegit-scm.github.io/) ([GitHub](https://github.com/sourcegit-scm/sourcegit)) — кроссплатформенный MIT-клиент: граф, interactive rebase, stash/submodule/worktree, LFS, blame, image diff, PR на GitHub/GitLab/Gitea… Нужен **Git for Windows** (≥2.25; MSYS Git не поддерживается). `scoop bucket add extras; scoop install sourcegit`. На 11.2026 автор ищет преемника maintainer — следить за releases.
-- [Gittyup](https://murmele.github.io/Gittyup/) ([GitHub](https://github.com/Murmele/Gittyup)) — Qt, продолжение GitAhead; история и line-level staging.
+Обзор кандидатов по официальным источникам **25.11.2026**; удобство — качественная оценка, без полного сравнительного прогона на моей машине. Первая тройка для Windows-пробы: **SourceGit** (+ при желании Git Extensions).
+- [SourceGit](https://sourcegit-scm.github.io/) ([GitHub `sourcegit-org`](https://github.com/sourcegit-org/sourcegit)) — главный OSS-кандидат вместо SmartGit: граф, line staging, merge/rebase/interactive rebase, worktrees/submodules/LFS, blame, image diff, GitHub/GitLab. Нужен **Git for Windows**; 19.11.2026 сопровождение передано org `sourcegit-org` (JC-Chung). Встроенный базовый merge для конфликтов уже есть (2026), внешний merge-tool по желанию — сложные конфликты всё равно стоит проверить на знакомом репо.
+- [Git Extensions](https://gitextensions.github.io/) — сильный второй кандидат **на Windows**: плотный power-user GUI (история, partial staging, rebase, worktrees, submodules). Актуально это Windows-приложение; interactive rebase часто через текстовый список, конфликты — через внешний merge-tool. Бери, если важнее глубина операций, чем визуальная цельность SourceGit.
+- [Gittyup](https://murmele.github.io/Gittyup/) ([GitHub](https://github.com/Murmele/Gittyup)) — Qt, продолжение GitAhead; вкладки репо, история, line staging. Для сложной истории предпочтительнее SourceGit / Git Extensions.
 - [git-cola](https://git-cola.github.io/) ([GitHub](https://github.com/git-cola/git-cola)) — лёгкий кроссплатформенный staging/DAG без раздутого UI.
 - Ещё:
-	- [Git Extensions](https://gitextensions.github.io/) — плотный Windows power-user GUI; ближе всего к «тяжёлому» SmartGit на Windows.
-	- [TortoiseGit](https://tortoisegit.org/) — интеграция в Проводник Windows.
+	- [TortoiseGit](https://tortoisegit.org/) — из Проводника; мощно, но формат ≠ единое окно SmartGit.
 	- TUI: [lazygit](https://github.com/jesseduffield/lazygit), [gitui](https://github.com/gitui-org/gitui).
+	- GitHub Desktop / GitButler на первое место не ставлю: Desktop ориентирован на GitHub и базовые сценарии; GitButler — FSL с отложенным MIT, не строгое OSS для актуальной версии.
 
 ## Удалённый доступ
 SSH/RDP/VNC/SFTP-менеджеры и альтернативы MobaXterm (electerm, 1Remote, Tabby, mRemoteNG,
@@ -1140,14 +1142,20 @@ Reach, Submarine, связка с VcXsrv/MSYS2) — см. `# Remote Access`.
 - [Kdenlive](https://kdenlive.org/) — нелинейный монтаж (Premiere / Camtasia / VideoPad).
 - [Shotcut](https://shotcut.org/) — кроссплатформенный видеоредактор (Premiere / VideoPad).
 - [HandBrake](https://handbrake.fr/) — конвертация/перекодирование видео (VidCoder / VideoProc / коммерческие конвертеры).
-- [Tartube](https://github.com/axcore/tartube) — GUI к yt-dlp для загрузки с YouTube и др. (KeepVid, Softorino YouTube Converter).
+- Загрузчики вместо MediaHuman / Softorino / KeepVid (сводка **25.11.2026**; первая проба на Windows: **VidBee + Parabolic**):
+	- [VidBee](https://vidbee.org/) ([about](https://vidbee.org/about/)) — первый выбор: MIT, Win/macOS/Linux, yt-dlp+FFmpeg; плейлисты/каналы, очередь, субтитры/метаданные, cookies; **подписки с автозагрузкой** через RSS/RSSHub (пока приложение запущено). Electron; Pricing на сайте — только опциональные AI-кредиты, десктопный загрузчик бесплатный. Экспорт в iTunes/Music.app как у MediaHuman не подтверждён.
+	- [Parabolic](https://github.com/NickvisionApps/Parabolic) (Nickvision, MIT) — второй кандидат: WinUI на Windows, GTK на Linux, есть macOS; параллельные загрузки, форматы, субтитры, клип по времени. Лучше для «ссылка → формат → скачать»; штатных подписок MediaHuman в доках не видно.
+	- [Media Downloader](https://github.com/mhogomchungu/media-downloader) (mhogomchungu, GPL, Qt) — максимум гибкости: профили, плейлисты/watch, yt-dlp + gallery-dl/aria2c/wget, RU UI. Тяжелее по интерфейсу — брать ради контроля, не ради красоты.
+	- [Tartube](https://github.com/axcore/tartube) — ещё один GUI к yt-dlp (старый знакомый в списке).
 
 ## Торренты
-- [qBittorrent](https://www.qbittorrent.org/) — торрент-клиент без рекламы (µTorrent).
-- [Transmission](https://transmissionbt.com/) — лёгкий торрент-клиент (µTorrent / BitTorrent).
+Вместо µTorrent (**25.11.2026**): на Windows первым — **qBittorrent**.
+- [qBittorrent](https://www.qbittorrent.org/) — прямая OSS-замена µTorrent (GPL): очередь/приоритеты, magnet, DHT/PEX, RSS-фильтры, плагины поиска (нужен Python), лимиты/расписание, sequential, Web UI, без рекламы. UI привычный табличный; macOS-релизы отстают (на проверке Win/Linux 5.3.x vs macOS 5.2.x) — кроссплатформенность с оговоркой.
+- [Transmission](https://transmissionbt.com/) — минимализм (GPL): нативно на Mac (Apple Silicon), Qt на Windows; watch-folder, лимиты, Web UI. RSS — скорее через FlexGet; для встроенных фильтров/поиска удобнее qBittorrent.
+- [BiglyBT](https://www.biglybt.com/) ([GitHub](https://github.com/BiglySoftware/BiglyBT)) — наследник Azureus: теги/пути/лимиты, RSS, расширения, swarm merging. Много настроек; для обычной замены µTorrent не стартовать с него.
 
 # Video
-- OSS монтаж/конверт/загрузка: [Kdenlive](https://kdenlive.org/), [Shotcut](https://shotcut.org/), [HandBrake](https://handbrake.fr/), [Tartube](https://github.com/axcore/tartube) — см. «Open-source замены платного софта».
+- OSS монтаж/конверт/загрузка: [Kdenlive](https://kdenlive.org/), [Shotcut](https://shotcut.org/), [HandBrake](https://handbrake.fr/), [VidBee](https://vidbee.org/), [Parabolic](https://github.com/NickvisionApps/Parabolic), [Tartube](https://github.com/axcore/tartube) — см. «Open-source замены платного софта».
 - [FFmpeg Explorer](https://ffmpeg.lav.io/)
 - [19 команд ffmpeg для любых нужд](https://habr.com/ru/post/171213/)
 - [Windows `.bat` script that checks video file integrity using `ffmpeg.exe`](https://github.com/describe19/check-video)
@@ -1646,7 +1654,7 @@ End Sub
 - sponsored_torrent_offer_enabled → false
 ```
 
-OSS вместо µTorrent: [qBittorrent](https://www.qbittorrent.org/), [Transmission](https://transmissionbt.com/) — см. «Open-source замены платного софта».
+OSS вместо µTorrent: [qBittorrent](https://www.qbittorrent.org/) (первый выбор), [Transmission](https://transmissionbt.com/), [BiglyBT](https://www.biglybt.com/) — см. «Open-source замены» → Торренты.
 
 # Настройка Keenetic Giga
 ## Настройка SSH на Keenetic Ultra KN-1811
