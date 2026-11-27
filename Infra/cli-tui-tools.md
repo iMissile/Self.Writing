@@ -21,10 +21,10 @@ URL без трекеров. После личных проб — сокраща
 | Файлы в терминале | `fd` + `Yazi` + `zoxide` |
 | Git | `lazygit` + `delta` (+ SourceGit/Gittyup GUI) |
 | Данные | DuckDB / VisiData / `jq`/`yq` / Harlequin |
-| Перенос | Syncthing (живое) · rclone/rsync (пакетно) · restic/Kopia (снимки) |
+| Перенос | Syncthing (живое) · rclone/rsync (пакетно) · restic/rustic/Kopia (снимки) |
 | Воспроизводимость машины | `chezmoi` + `just` + `uv`/`Pixi` + winget/Scoop |
 
-Важно: **синхронизация ≠ бэкап**. `rclone sync` умеет удалять лишнее на приёмнике — сначала `--dry-run`; версии — через restic/Kopia.
+Важно: **синхронизация ≠ бэкап**. `rclone sync` умеет удалять лишнее на приёмнике — сначала `--dry-run`; версии — через restic/rustic/Kopia.
 
 ---
 
@@ -38,12 +38,13 @@ URL без трекеров. После личных проб — сокраща
 | [rsync](https://rsync.samba.org/) | CLI | `[кандидат]` | Через MSYS2; инкремент/дельта по SSH |
 | [FreeFileSync](https://freefilesync.org/) | GUI | `[кандидат]` | Визуальное сравнение каталогов, зеркало |
 | [restic](https://restic.net/) | CLI | `[кандидат]` | Снимки, дедуп, шифрование |
+| [rustic](https://rustic.cli.rs/) | CLI | `[кандидат]` | Rust-бэкап: дедуп + шифрование; workflows как у restic; экосистема — core / scheduler / server (REST, совместим с restic). Beta — не в прод без своей проверки |
 | [Kopia](https://kopia.io/) / KopiaUI | GUI+CLI | `[кандидат]` | Бэкап со снимками и расписанием |
 | [WinSCP](https://winscp.net/) | GUI+CLI | `[знакомо]` | SFTP/SCP; GUI SSH/RDP-менеджеры — `New_Windows.md` → `# Remote Access` |
 | [LocalSend](https://localsend.org/) | GUI | `[кандидат]` | Файлы по LAN без облака |
 | [aria2](https://github.com/aria2/aria2) | CLI | `[кандидат]` | Многопоточные загрузки |
 
-Предвыбор из обзора: `Syncthing` + `rclone` + `FreeFileSync` + `restic` (или Kopia).
+Предвыбор из обзора: `Syncthing` + `rclone` + `FreeFileSync` + `restic`/`rustic` (или Kopia).
 
 ---
 
@@ -262,7 +263,7 @@ rg --files | fzf
 3. lazygit + delta
 4. Yazi + zoxide
 5. jq + yq (+ jnv)
-6. Syncthing + rclone (+ restic или Kopia)
+6. Syncthing + rclone (+ restic/rustic или Kopia)
 7. FreeFileSync
 8. Everything `[не OSS]` + WinMerge
 9. DuckDB (+ Harlequin/VisiData — уже есть)
