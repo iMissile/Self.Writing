@@ -1,0 +1,14 @@
+[[items]]
+url = "https://discord.gg/WRUWENZnzQ"
+image = "/assets/discord-mark-white.svg"
+title = "Discord"
+
+[[items]]
+url = "https://github.com/rustic-rs/rustic/discussions"
+image = "/assets/GitHub_Logo_White.png"
+title = "Discussions"
+
+[[items]]
+url = "https://github.com/rustic-rs/rustic/issues"
+image = "/assets/GitHub_Logo_White.png"
+title = "Issues"

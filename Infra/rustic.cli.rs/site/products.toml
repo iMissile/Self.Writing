@@ -1,0 +1,23 @@
+[[items]]
+url = "ecosystem/rustic"
+image = "https://raw.githubusercontent.com/rustic-rs/assets/main/logos/readme_header.png"
+title = "rustic"
+subtitle = "deduplicated, encrypted backups"
+
+[[items]]
+url = "ecosystem/rustic-scheduler"
+image = "https://raw.githubusercontent.com/rustic-rs/assets/main/logos/readme_header_scheduler.png"
+title = "rustic scheduler"
+subtitle = "centrally schedule rustic backups"
+
+[[items]]
+url = "ecosystem/rustic-server"
+image = "https://raw.githubusercontent.com/rustic-rs/assets/main/logos/readme_header_server.png"
+title = "rustic server"
+subtitle = "REST server for rustic and restic"
+
+[[items]]
+url = "ecosystem/rustic-core"
+image = "https://raw.githubusercontent.com/rustic-rs/assets/main/logos/readme_header_core.png"
+title = "rustic core"
+subtitle = "the library powering rustic"

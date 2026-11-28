@@ -1,0 +1,252 @@
+# Breaking Changes
+
+This document lists all user facing breaking changes in `rustic` and provides
+guidance on how to migrate from one version to another.
+
+## 0.12.0
+
+### Changed default behavior
+
+The `prune` command will now not recover marked-but-still-used packs directly,
+but instead mark them for recovery. This is needed to prevent potential data
+loss when multiple `prune` and `backup` runs run in parallel.
+
+The chunker now will produce slightly different chunks in some rare situations.
+This fixes a bug where the restic and rustic chunkers did not behave
+identically.
+
+If you specify multiple paths for a backup, subpaths won't be merged any longer.
+Instead the paths are backup'ed as given. This fixes a bug where backup of a
+subdir on a different drive was not possible with the `one-file-system` option.
+
+### Changed options
+
+The `prune` option `--keep-delete` has been renamed to `--keep-marked`. This
+time span is used for deletion as well as for recovery.
+
+The backend options to set a root certificate and a client certificate are
+renamed. Instead of
+
+```toml
+cacert = "cert-file"
+tls-client-cert = "client-cert-file"
+```
+
+use now
+
+```toml
+http-cacert = "cert-file"
+http-tls-client-cert = "client-cert-file"
+```
+
+Note that these options are now also available for opendal and other options
+have been added, too.
+
+## 0.11.4
+
+### Changed default behavior
+
+During restores from cold storage, rustic now captures your warm-up command's
+stdout and parses it as [JSON Lines](https://jsonlines.org) to report restore
+progress, rather than passing it straight through to the terminal.
+
+Output that is not valid JSON is no longer printed directly to the terminal;
+instead it is logged at info level with a `[warmup]` prefix, visible with
+`--log-level info` or the appropriate `RUST_LOG` setting.
+
+## 0.11.0
+
+### Changed default behavior
+
+The devid is now by default only saved for hardlinks; this option however can be
+changed using `set-devid` which allows `"yes"/"no"/"hardlink"` as possible
+values. To get the old behavior, use `set-devid = "yes"`.
+
+The timestamps saved in trees have been changed and should now produce exactly
+the same format used in restic. This however can couse new trees to be saved
+even if they actually didn't change.
+
+If you want to rewrite the trees of your existing snapshots, use the new
+`rewrite` command, e.g.
+
+```console
+rustic rewrite --all-trees --forget
+```
+
+Moreover, the rewrite command now by default creates new snapshots and leaves
+the existing ones untouched. If you want to remove the "old" snapshot for
+modified ones, use the new option `--forget`.
+
+### Changed options
+
+The option `with-atime` has been refactored and is now called `set-atime`.
+`ignore-devid` must be substituted by `set-devid = "no"` (see above).
+
+For example, instead of
+
+```toml
+with-atime = true
+ignore-devid = true
+```
+
+use
+
+```toml
+set-atime = "yes"
+set-devid = "no"
+```
+
+Parsing durations where 'M' is used for 'months' no longer works, but instead
+'mo' or `months` should be used. For example
+
+```toml
+keep-weekly-within = "3M"
+```
+
+must be changed to something like
+
+```toml
+keep-weekly-within = "3 months" # or "3mo"
+```
+
+Moreover, some duration options like timeouts (which typically have durations
+below 1 day) now no longer support durations in days/weeks/months in order to
+not run into ambiguities due to daylight saving (a day is not always 24h).
+Specifying more than 24h, however, still works.
+
+### Removed options
+
+The option `quiet` has been removed for the `backup` and `forget` command;
+please use the `log-level-*` (see below) options for fine-tuning the output.
+
+### Configuration File
+
+As rustic now allows to use multiple parents, the option in the config profile
+has been renamed from `parent` to `parents` and now needs to be given as list.
+
+Instead of
+
+```toml
+parent = "abc"
+```
+
+please use
+
+```toml
+parents = ["abc"]
+```
+
+### Logging options
+
+Logging has been refactored allowing to fine-tune logging for the console
+(stderr) output and log-file output separately using `log-level` and
+`log-level-logfile`, respectively. Moreover, the log-level for dependency crates
+can be directly set using `log-level-dependencies` to reduce log flooding.
+Logging in dry-run mode can be set using `log-level-dryrun`.
+
+This may result in a changed logging behavior depending on your setup; you may
+need to fine-tune the logging options to suit your needs.
+
+## 0.10.0
+
+### Renamed/changed opions
+
+The `skip-identical-parent` option of `backup` has been renamed to
+`skip-if-unchanged` (like it's named in restic).
+
+The `filter-fn` option is no longer included in the official release builds and
+will be deprecated and removed. Try to use `filter-jq` instead.
+
+## 0.9.0
+
+### Configuration File
+
+#### Using String in `password-command` and `warm-up-command`
+
+Using a String for `password-command` or `warm-up-command` have been re-allowed.
+
+Note: The former version to give the command in an array is no longer supported.
+Instead of
+
+```toml
+password-command = ["echo", "password"]
+```
+
+please use either of
+
+```toml
+password-command = "echo password"
+password-command = { command = "echo", args = ["password"] }
+```
+
+#### Copy Command
+
+Targets for the copy command must now be given by using existing rustic config
+profile(s).
+
+```toml
+[copy]
+targets = ["full", "rustic"]
+```
+
+#### Key Naming Conventions
+
+Consistently apply singular and plural naming conventions for keys in the
+configuration file that accept an array of values. This change affects the
+following keys:
+
+For `[global]`:
+
+- `use-profile`-> `use-profiles` in config profile
+
+For `[snapshot-filter]` and `[forget]`:
+
+- `filter-host` -> `filter-hosts` in config profile
+- `filter-label` -> `filter-labels` in config profile
+
+For `[backup]`:
+
+- `glob` -> `globs` in config profile
+- `iglob` -> `iglobs` in config profile
+- `glob-file` -> `glob-files` in config profile
+- `iglob-file` -> `iglob-files` in config profile
+- `custom-ignore-file` -> `custom-ignore-files` in config profile
+- `tag`-> `tags` in config profile
+- `source` -> `sources` in config profile
+- `[[backup.sources]]` -> `[[backup.snapshots]]` in config profile
+
+For `[forget]`:
+
+- `keep-tags` -> now only array
+- `keep-ids` -> now only array
+
+Update your configuration file accordingly, changing the key names from singular
+to plural. For cases, where the key name was plural before, the value must be
+wrapped in an array.
+
+So, for example
+
+```toml
+[[backup.sources]]
+tag = "important"
+source = "~/folder1 ~/folder2"
+```
+
+becomes:
+
+```toml
+[[backup.snapshots]]
+tags = ["important"]
+sources = ["~/folder1", "~/folder2"]
+```
+
+Filters being affected are:
+
+```toml
+filter-hosts = ["host2"] # Default: []
+filter-labels = ["label1"] # Default: []
+```
+
+The changes can be also derived from the
+[PR](https://github.com/rustic-rs/rustic/pull/1240) that introduced this change.
+So you may want to take a look at the PR for more details.

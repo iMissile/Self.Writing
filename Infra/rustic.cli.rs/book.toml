@@ -1,0 +1,42 @@
+[book]
+authors = ["the rustic authors"]
+description = "rustic - fast, encrypted, and deduplicated backups"
+language = "en"
+multilingual = false
+src = "src"
+title = "rustic user documentation"
+
+# [preprocessor.last-changed]
+# command = "mdbook-last-changed"
+# renderer = ["html"]
+
+[output.html]
+curly-quotes = true
+default-theme = "ayu"
+site-url = "/docs/"
+git-repository-url = "https://github.com/rustic-rs/docs"
+git-repository-icon = "fa-github"
+edit-url-template = "https://github.com/rustic-rs/docs/edit/main/{path}"
+cname = "rustic.cli.rs"
+additional-css = ["./styles/last-changed.css"]
+
+[output.html.fold]
+enable = true
+level = 0
+
+# [output.pandoc]
+# optional = true
+# hosted-html = "https://rustic.cli.rs/docs/"
+
+# [output.pandoc.profile.pdf]
+# output-file = "rustic-user-docs.pdf"
+# pdf-engine = "lualatex"
+
+# [output.pandoc.profile.pdf.variables]
+# mainfont = "Noto Serif"
+# sansfont = "Noto Sans"
+# monofont = "Noto Sans Mono"
+# mainfontfallback = ["NotoSerifCJKSC:"]
+# geometry = ["margin=1in"]
+# linkcolor = "blue"
+# urlcolor = "red"

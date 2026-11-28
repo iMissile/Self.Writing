@@ -1,0 +1,14 @@
+[[items]]
+url = "https://rustic.cli.rs/docs"
+image = "https://raw.githubusercontent.com/rustic-rs/assets/main/logos/readme_header_docs.png"
+title = "User Documentation"
+
+[[items]]
+url = "https://rustic.cli.rs/dev-docs"
+image = "https://raw.githubusercontent.com/rustic-rs/assets/main/logos/readme_header_dev.png"
+title = "Developer Documentation"
+
+[[items]]
+url = "https://github.com/rustic-rs/rustic/blob/main/config/README.md"
+image = "https://raw.githubusercontent.com/rustic-rs/assets/main/logos/readme_header_config.png"
+title = "Config File Documentation"

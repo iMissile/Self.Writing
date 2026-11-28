@@ -38,7 +38,7 @@ URL без трекеров. После личных проб — сокраща
 | [rsync](https://rsync.samba.org/) | CLI | `[кандидат]` | Через MSYS2; инкремент/дельта по SSH |
 | [FreeFileSync](https://freefilesync.org/) | GUI | `[кандидат]` | Визуальное сравнение каталогов, зеркало |
 | [restic](https://restic.net/) | CLI | `[кандидат]` | Снимки, дедуп, шифрование |
-| [rustic](https://rustic.cli.rs/) | CLI | `[кандидат]` | Rust-бэкап: дедуп + шифрование; workflows как у restic; экосистема — core / scheduler / server (REST, совместим с restic). Beta — не в прод без своей проверки |
+| [rustic](https://rustic.cli.rs/) | CLI | `[кандидат]` | Rust-бэкап: дедуп + шифрование; workflows как у restic; экосистема — core / scheduler / server (REST, совместим с restic). Beta — не в прод без своей проверки. Локальное зеркало сайта/доков: [`rustic.cli.rs/`](./rustic.cli.rs/) |
 | [Kopia](https://kopia.io/) / KopiaUI | GUI+CLI | `[кандидат]` | Бэкап со снимками и расписанием |
 | [WinSCP](https://winscp.net/) | GUI+CLI | `[знакомо]` | SFTP/SCP; GUI SSH/RDP-менеджеры — `New_Windows.md` → `# Remote Access` |
 | [LocalSend](https://localsend.org/) | GUI | `[кандидат]` | Файлы по LAN без облака |
